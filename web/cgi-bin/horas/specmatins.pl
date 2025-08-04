@@ -718,9 +718,9 @@ sub lectio : ScriptFunc {
     $rule =~ s/in 1 Nocturno L.*loco//;
   }
 
-  if ($nocturn == 1 && $commemoratio{Rank} =~ /Quattuor/i && $month == 9) {
-    $w = '';
-  }    # Q.T. Septembris...
+  #  if ($nocturn == 1 && $commemoratio{Rank} =~ /Quattuor/i && $month == 9) {
+  #    $w = '';
+  #  }    # Q.T. Septembris...
 
   if ( $rule =~ /12 lectiones/i
     && $rule !~ /Lectio1 (Oct|Temp)(Nat|ora)/i
@@ -817,8 +817,9 @@ sub lectio : ScriptFunc {
       $w{Responsory1} = $w{Responsory2} = '';
     }
     if ($w && $num == 1) { setbuild2("Lectio1 ex scriptura"); }
-  } elsif (!$w && $num == 4 && exists($commemoratio{"Lectio$num"}) && ($version =~ /1960/i))
-  {    # handle diverged 3rd lesson in 1960
+  } elsif (!$w && $num == 4 && exists($commemoratio{"Lectio$num"}) && ($version =~ /1960/i)) {
+
+    # handle diverged 3rd lesson in 1960
     %w = (columnsel($lang)) ? %commemoratio : %commemoratio2;
     $w = $w{"Lectio$num"};
     if ($w && $num == 4) { setbuild2("Lectio3 ex commemoratio"); }
