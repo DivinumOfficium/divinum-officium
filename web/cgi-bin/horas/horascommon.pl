@@ -368,7 +368,7 @@ sub occurrence {
     %saint = %{setupstring('Latin', $sname)};
     $srank = $saint{Rank};
     @srank = split(";;", $srank);
-  } elsif ($dayname[0] =~ /Adv|Quad/ && $srank[2] > 6 && $saint{Rule} !~ /Patronus/) {
+  } elsif ($dayname[0] =~ /Adv|Quad/ && $srank[2] > 6 && $sname !~ /12-24/ && $saint{Rule} !~ /Patronus/) {
 
     # Making sure Duplex I. classis only outranks Major Sundays (after 1897) or Ferias when it is allowed by the rubrics
     $srank[2] = 6.01;
