@@ -1,0 +1,19 @@
+[Lectio1]
+@Tempora/082-6::1-4 s/-3/-2/
+
+[Responsory1]
+@TemporaOP/081-3
+
+[Lectio2]
+@Tempora/082-6::1 s/4-9/3-5/
+@Tempora/082-6:Lectio1:5
+@Tempora/082-6::2-3
+
+[Responsory2]
+@TemporaOP/081-3
+
+[Lectio3]
+@Tempora/082-6:Lectio2:!2-3 s/4-/6-/
+
+[Responsory3]
+@TemporaOP/081-3
