@@ -695,7 +695,9 @@ sub lectio : ScriptFunc {
       %w = resolveitable(\%w, $file, $lang);
       setbuild("Lectiones in I Nocturno de Scriptura", $file, "subst") if $num == 1;
     }
-  } elsif ($num < 4 && $rule =~ /StJamesRule=((?:1 )?[a-z,\|á]+)\s/i) {
+  }
+
+  if ($num < 4 && $rule =~ /StJamesRule=((?:1 )?[a-z,\|á]+)\s/i) {
 
     # StJamesRule: should rather be called St. Apostles or St. James and St. Johns rule:
     # On May 1st and 6th, if occuring scripture is from the respective Apostle, then it's read
