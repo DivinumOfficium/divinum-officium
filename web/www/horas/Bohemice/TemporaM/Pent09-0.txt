@@ -1,0 +1,19 @@
+[Lectio5]
+@Tempora/Pent09-0:Lectio4:s/ Všechno.*//s
+
+[Lectio6]
+@Tempora/Pent09-0:Lectio4:s/.* Všechno/Všechno/s s/$/~/
+@Tempora/Pent09-0:Lectio5:s/(opovrhován\.) .*/$1/s
+
+[Lectio7]
+@Tempora/Pent09-0:Lectio5:s/.*opovrhován. //s
+
+[Lectio8]
+@Tempora/Pent09-0:Lectio6
+
+[Lectio9]
+@Tempora/Pent09-0:Lectio7:s/A dokonce .*//
+
+[Lectio10]
+@Tempora/Pent09-0:Lectio7:s/.* (A dokonce)/$1/s
+
