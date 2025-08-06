@@ -1,13 +1,26 @@
 @Sancti/11-21
 
 [Rule]
+(nisi rubrica 1963) 12 lectiones
 Doxology=Nat
 
-[Responsory Vespera]
-@CommuneM/C10
-
-[Responsory3]
+[Responsory3] (rubrica 1963)
 @Commune/C11:Responsory1
 
-[Responsory Laudes]
-@CommuneM/C10
+[Lectio5]
+@Sancti/11-21:Lectio4:s/ In lucem.*//
+
+[Lectio6]
+@Sancti/11-21:Lectio4:s/.* (?=In lucem)//s
+
+[Lectio7]
+@Sancti/11-21:Lectio5
+
+[Responsory7]
+@CommuneM/C11
+
+[Lectio8]
+@Sancti/11-21:Lectio6
+
+[Responsory9]
+@Commune/C11:Responsory7:s/festivitátem/Præsentatiónem/
