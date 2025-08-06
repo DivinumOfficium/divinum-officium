@@ -16,6 +16,22 @@
 [Lectio4]
 @Tempora/Pent10-0:Lectio3
 
+[Lectio1] (rubrica cisterciensis)
+@Tempora/Pent10-0::s/34/31/ s/.32 .*//s
+
+[Lectio2] (rubrica cisterciensis)
+@Tempora/Pent10-0:Lectio1:2 s/29-34/32-33/ 
+@Tempora/Pent10-0:Lectio1:6-7
+
+[Lectio3] (rubrica cisterciensis)
+@Tempora/Pent10-0:Lectio1:2 s/29-34/34-36/ 
+@Tempora/Pent10-0:Lectio1:8
+@Tempora/Pent10-0:Lectio2:2-3:s/Et ait.*//
+
+[Lectio4] (rubrica cisterciensis)
+@Tempora/Pent10-0:Lectio1:2 s/29-34/36-37/ 
+@Tempora/Pent10-0:Lectio2:3-4:s/.* (Et ait)/36 $1/
+
 [Responsory4]
 @Tempora/Pent03-1Feria:Responsory1
 
@@ -39,6 +55,19 @@
 
 [Lectio8]
 @Tempora/Pent10-0:Lectio6:s/.* exiérunt. //
+
+[Lectio5] (rubrica cisterciensis)
+@Tempora/Pent10-0:Lectio4:s/Neque enim.*//
+
+[Lectio6] (rubrica cisterciensis)
+@Tempora/Pent10-0:Lectio4:s/.* (Neque enim)/$1/s s/$/~/
+@Tempora/Pent10-0:Lectio5:s/Sed dices.*//
+
+[Lectio7] (rubrica cisterciensis)
+@Tempora/Pent10-0:Lectio5:s/.*(Sed dices)/$1/
+
+[Lectio8] (rubrica cisterciensis)
+@Tempora/Pent10-0:Lectio6:s/exiérunt. .*/exiérunt./
 
 [Responsory8]
 @Tempora/Pent01-3:Responsory2
