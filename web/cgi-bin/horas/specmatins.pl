@@ -622,7 +622,7 @@ sub lectio : ScriptFunc {
   #Lectio1 OctNat/TempNat: special rule for Dec 29 through Jan 05
   if ($nocturn == 1 && $rule =~ /Lectio1 (Oct|Temp)Nat/i) {
     my %temp;
-    setbuild1("Lectiones I Nocturno ex Tempora Nativitatis") if $num == 1;
+    setbuild1("Lectiones in I Nocturno ex Tempora Nativitatis") if $num == 1;
 
     if ($month == 12 && $day < 29) {
 
@@ -690,7 +690,11 @@ sub lectio : ScriptFunc {
   #** handle initia table (Str$ver$year)
   if ($nocturn == 1 && $version !~ /1963/ && $winner !~ /C12/) {
     my $file = initiarule($month, $day, $year);
-    if ($file) { %w = resolveitable(\%w, $file, $lang); }
+
+    if ($file) {
+      %w = resolveitable(\%w, $file, $lang);
+      setbuild("Lectiones in I Nocturno de Scriptura", $file, "subst") if $num == 1;
+    }
   } elsif ($num < 4 && $rule =~ /StJamesRule=((?:1 )?[a-z,\|á]+)\s/i) {
 
     # StJamesRule: should rather be called St. Apostles or St. James and St. Johns rule:
