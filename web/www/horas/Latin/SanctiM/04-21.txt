@@ -1,5 +1,9 @@
 @Sancti/04-21
 
+[Rule]
+(rubrica 1930) 12 lectiones
+vide C4a;
+
 [Hymnus Vespera]
 Fortis en præsul, monachus fidélis,
 Láurea doctor redimítus astat:
@@ -45,11 +49,76 @@ Amen.
 [Hymnus Matutinum]
 @:Hymnus Vespera
 
-[Responsory1]
+[Ant Matutinum 3N]
+Ansélmus, * mansuetúdine agnus, fortitúdine leo, cælésti doctrína superéffluens, mentes hóminum illustrávit, allelúja.
+
+[Responsory1] (rubrica 1963)
 @Commune/C4a:Responsory8
 
+[Lectio5]
+@Sancti/04-21:Lectio4
+
+[Lectio6]
+@Sancti/04-21:Lectio5:s/ Mortuo .*//
+
+[Lectio7]
+@Sancti/04-21:Lectio5:s/.* (?=Mortuo)// s/$/~/
+@Sancti/04-21:Lectio6:s/ Sed .*//
+
+[Lectio8]
+@Sancti/04-21:Lectio6:s/.* (?=Sed)//
+
+[AltLectio5]
+Ansélmus Augústæ Prætóriæ in Itália natus, a puerítia stúdia litterárum sectátus, cum brevi ádmodum plúrimum in eis profecísset, relícta pátria, ad Beccénse monastérium Ordinis sancti Benedícti se cóntulit, ubi præceptóre usus Lanfránco, cœnóbii prióre, viro præstánti religióne et sapiéntia, sæculári litteratúræ sacram adjúnxit, ac in eódem cœnóbio vigésimo séptimo ætátis suæ anno mónachus effícitur: sed Lanfranco ad Cadoménsis cœnóbii régimen assúmpto, in ejus locum succéssit Ansélmus, sicque ampliórem Deo serviéndi nactus occasiónem, totum se ei múneri, fratrúmque necessitátibus impéndit. Divinárum ínterim rerum contemplatióni ádeo déditus fuit, ut obscuríssimas et ante id témporis inaudítas de Divinitáte quæstiónes, Deo reseránte, claríssime perspéxerit et explicáverit.
+
+[AltLectio6]
+Abstinéntiæ et continéntiæ tante fuit, ut ab initio priorátus, illécebra in eo pénitus exstíncta sit; ádeo corpus inédia. maceráverat. Somnus illi parcíssimus, proptérea, quod die pro dandis consíliis non sufficiénte, noctis bonam áddere partem cogerétur; deínde, quod bibliothécæ monastérii libros, qui eo témpore péssime scripti erant, nocte corrigébat; demum, quod in sanctis meditatiónibus se exércens, lacrimárum imbres fundens plerúmque ante noctúrnas vigílias parum aut nihil somni capiébat. Æmulos quosdam ægre feréntes, júvenem sibi, qui senióres in monastério erant, in prioris officio prælátum, ádeo humilitáte et caritáte vicit, ut ex inimícis sibi benévolos et amicíssimos rédderet. Infirmórum domum frequentíssime invisébat, quæque síngulis opus erant, ipse per se ministrábat.
+
+[AltLectio7]
+Defuncto Herluíno Beccénsi abbáte, in ejus locum ómnium suffragiis suffícitur Ansélmus, qui, cum pédibus eórum provolútus, ut a se útpote indígno id óneris avérterent, obsecráret, ab eísdem páriter in terram se prosternéntibus, ut assénsum præbéret, coáctus est. Qui mox monastérii negotiis sollicitúdini fratrum, quos ipse strénuos et idóneos nóverat, delegátis, totus eruditióni, admonitióni et correctióni fratrum,divinæque contemplatióni vacáre cœpit. Hóspitum suscipiendórum juxta præscríptum Régulæ ádeo studiósus fuit, ut nonnúmquam cibos de mensis fratrum jússerit auférri, ut hospítibus apponeréntur, Deo semper monachórum indigéntiæ frequéntibus miráculis subveniénte.
+
+[AltLectio8]
+Mortuo deinde Lanfranco, qui ex abbate Cadomensi factus fuerat archiepiscopus Cantuariensis, et etiam successit Anselmus, magna totius regni gratulatione anno millesimo nonagesimo tercio. Sed mox dissidio orto inter Willelmum Angliæ regem, Ecclesiae jura inique sibi vindicantem, et Anselmum, Ecclesiae libertatem tuentem semel et iterum exsulare compulsus, Roman venit, honorificeque ab Urbano secundo exceptus, Concilio Barensis interfuit. Graecosque ibi, circa processionem Spiritus Sancti errantes, doctrina sua robore coercuit. Tandem sub Paschale secundo, qui successit Urbano, horrenda morte ex humanis sublato Willelmmo Angliæ rege, ab Henrico ejus fratre in Angliam revocatur, et libertatem Ecclesiae, pro qua laboraverat, adeptus est. Favit plurimum festivitati Conceptionis Virginis Mariae, paulo ante in Anglia ab Elpino abbate divina revelatione admonito,celebrari coeptae, de qua etiam egrégium edidit commentarium. Móritur demum undecimo Kalendas Maji, anno Domini millésimo centesimo nono, doctrina et miraculis clarus.
+
+[Lectio9]
+@Commune/C4a:Lectio7:1-4
+Homilía sancti Ansélmi Epíscopi
+!Cur Deus Homo, Commend. ad Urbanum Pp.
+Quamvis post Aρόstolos sancti Patres et Doctóres nostri multi tot et tanta de fidei nostræ ratióne dicant ad confutándum insipiéntiam et frangéndum durítiam infidélium, et ad pascéndum eos, qui, jam corde fide mundáto, eiúsdem fídei ratióne, quam post ejus certitúdinem debémus esuríre, delectántur; ut nec nostris nec futúris tempóribus ullum illis parem in veritátis contemplatióne sperémus: nullum tamen reprehendéndum árbitror, si fide stabilítus, in ratiónis ejus indágine se volúerit exercére. Nam et illi, quia breves dies hóminis sunt, non ómnia quæ possent, si diútius vixíssent, dícere potuérunt; et veritátis rátio tam ampla tamque profúnda est, ut a mortálibus néqueat exhauríri; et Dóminus in Ecclésia sua, cum qua se esse usque ad consummatiónem sæculi promíttit, grátiæ suæ dona non désinit impertíri.
+
+[Responsory9]
+R. Hic est † Ansélmus, Doctor præclárus, sub disciplína Lanfránci institútus: qui cum esset monachorum pater amábilis, ad pontificáles ínfulas vocátus est;
+* Et pro libertáte sanctæ Ecclésiæ strénue decertávit, allelúja.
+V. Non ancillam, sed liberam esse Christi sponsam, invícta voce asserébat.
+R. Et pro libertáte sanctæ Ecclésiæ strénue decertávit, allelúja.
+
+[Lectio10]
+Et, ut alia taceam, quibus sacra pagina nos ad investigandum rationem invitat, ubi dicit: Nisi cre-didéritis, non intellegetis, aperte nos monet intentionem ad intellectum extendere, cum docet qualiter ad illum debeamus profícere. Dénique quoniam inter fidem et speciem in-telléctum, quem in hac vita cápimus, esse médium intellego: quanto aliquís ad illum profícit, tanto eum propinquare speciéi, ad quam omnes anhelá-mus, existimo. Hac igitur ego consideratióne, licet sim homo parvæ nimis scientiæ, confortátus, ad eórum quæ crédimus, ra-tiónem intuendam, quantum supérna grátia mihi dare dignátur, aliquántum conor assúrgere; et cum aliquod, quod prius non videbam, repério, id áliis libénter apério, quátenus, quid secúre tenére débe-am, aliéno discam judício.
+
+[Lectio11]
+!Epist. de Incarn. Verbi I
+Sed priúsquam de quæstióne disseram, aliquid præmittam ad compescéndam præsumptiónem eórum, qui nefánda temeritáte audent disputáre contra áliquid eórum, quæ fides christiána confitétur, quóniam id intelléctu cápere néqueunt, et pótius insipiénti supérbia júdicant nullátenus posse esse, quod nequeunt intellégere, quam húmili sapiéntia fateántur esse multa posse, quæ ipsi non váleant comprehendere. Nullus quippe christiánus debet disputáre, quómodo, quod cathólica Ecclésia corde credit et ore confitétur, non sit; sed semper eandem fidem indubitánter tenéndo, amándo et secúndum illam vivéndo, humíliter quantum potest, quærere ratiónem, quómodo sit. Si potest intellégere, Deo grátias agat; si non potest, non immíttat córnua ad ventilándum, sed submíttat caput ad venerándum.
+
+[Responsory11]
+R. Beátus Ansélmus † dixit mærens ad epíscopos Indómitum taurum et ovem débilem ad arátrum conjungere dispónitis: ovem per spinas et tríbulos raptátam taurus mísere dilacerábit;
+* Et gáudium vestrum mox in mæstítiam convertétur, allelúja.
+V. Tribulatiónes me manent; sed nihil horum véreor, dúmmodo consúmmem cursum meum.
+R. Et gáudium vestrum mox in mæstítiam convertétur, allelúja.
+
+[Lectio12]
+Prius ergo fide mundandum est cor, sicut dicitur de Deo: Fide mundans corda eórum; et prius per præceptórum Dómini custódiam illuminándi sunt óculi, quia præcéptum Dómini lúcidum illúminans óculos; et prius per húmilem obedientiam testimoniórum Dei debémus fíeri párvuli, ut discámus sapiéntiam, quam dat testimónium Dómini fidéle, sapiéntiam præstans párvulis. Unde Dóminus: Confiteor tibi, Pater, Dómine cæli et terræ, quia abscondísti hæc a sapiéntibus et prudéntibus, et revelásti ea párvulis. Prius, inquam, ea, quæ carnis sunt, postponéntes, secúndum spíritum vivámus, quam profúnda fidei diiudicándo discutiámus; nam qui secundum carnem vivit, carnalis sive animalis est, de quo dicitur: Animalis homo non percipit ea, quæ sunt Spiritus Dei. Qui vero spiritu facta carnis mortificat, spiritualis efficitur; de quo legitur, quia spiritualis omnia júdicat, et ipse a nemine judicatur.
+
+[Responsory12]
+R. Cum essent † Patres in synodo congregati, Urbanus Pontifex clamavit: Pater et magister Anselme, Anglorum archiepiscope, ubi es?
+* Ascende usque ad nos; et pugnans pro Matre tua et nostra, adjuva nos, alleluja.
+V. Benedictus sit sensus tuus, et sermo oris tui sit benedictus.
+R. Ascende usque ad nos; et pugnans pro Matre tua et nostra, adjuva nos, alleluja.
+
+[Evangelium]
+@Commune/C4a
+
 [Ant 2]
-Beátus Ansélmus * sǽculi príncipes docébat, dicens: Nihil ámplius díligit Deus in hoc mundo, quam Ecclésiæ suæ † libertátem.
+Beátus Ansélmus * sǽculi príncipes docébat, dicens: Nihil ámplius díligit Deus in hoc mundo, quam Ecclésiæ suæ libertátem, allelúja.
 
 [Ant 3]
 @Commune/C4a:Ant 1:s/N\./Ansélme/

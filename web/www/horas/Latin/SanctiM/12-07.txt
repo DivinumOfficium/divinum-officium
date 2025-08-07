@@ -1,8 +1,8 @@
 @Sancti/12-07
 
-[Rule] (rubrica divino)
+[Rule]
+(nisi rubrica 1963) 12 lectiones
 vide C4a;mtv
-12 lectiones
 
 [Lectio1] (rubrica tridentina)
 @CommuneM/C4:Lectio1
@@ -31,15 +31,3 @@ vide C4a;mtv
 
 [Lectio8]
 @Sancti/12-07:Lectio6: s/.* Ergo sanctus/Ergo sanctus/s
-
-[Lectio9]
-@CommuneM/C4a
-
-[Lectio10]
-@CommuneM/C4a
-
-[Lectio11]
-@CommuneM/C4a
-
-[Lectio12]
-@CommuneM/C4a
