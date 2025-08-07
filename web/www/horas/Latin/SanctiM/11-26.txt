@@ -1,1 +1,19 @@
 @Sancti/11-26
+
+[Rule] (rubrica tridentina)
+ex C5b;
+12 lectiones
+In 1 Nocturno lectiones ex Commune in 2 loco
+
+[Lectio5]
+@Sancti/11-26:Lectio4
+
+[Lectio6]
+@Sancti/11-26:Lectio5:s/Ut autem.*//s
+
+[Lectio7]
+@Sancti/11-26:Lectio5:s/.*(Ut autem)/$1/s s/$/~/
+@Sancti/11-26:Lectio6:s/Spíritu.*//s
+
+[Lectio8]
+@Sancti/11-26:Lectio6:s/.*(Spíritu)/$1/s

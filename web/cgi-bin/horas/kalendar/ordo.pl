@@ -49,7 +49,7 @@ sub ordo_entry {
         && $winner{Lectio1} !~ /\@Commune/i
         && $winner{Lectio1} !~ /\!(Matt|Marc|Luc|Joannes)\s+[0-9]+\:[0-9]+\-[0-9]+/i
       )
-      || ($winner{Rule} =~ /In 1 nocturno lectiones ex commune/i)
+      || $winner{Rule} =~ /In 1 nocturno lectiones ex C/i
     )
     && !($winner{Rule} =~ /Lectio1 Quad/i && $dayname[0] !~ /Quad(\d|p3\-[3456])/i)
   ) {

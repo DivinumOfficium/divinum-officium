@@ -9,6 +9,7 @@ S. Clementis Papæ et Martyris
 [Rule]
 vide C2b;
 9 lectiones
+(rubrica tridentina)In 1 nocturno lectiones ex Commune in 1 loco
 
 [Name]
 Cleméntem
@@ -27,9 +28,6 @@ Orémus omnes * ad Dóminum Jesum Christum, ut Confessóribus suis fontis venam 
 Deus, qui nos ánnua beáti Cleméntis Mártyris tui atque Pontíficis solemnitáte lætíficas: concéde propítius; ut cujus natalítia cólimus, virtútem quoque passiónis imitémur.
 $Per Dominum
 
-[Lectio1] (rubrica tridentina)
-@Commune/C2
-
 [Responsory1]
 @:Responsory1o
 
@@ -42,9 +40,6 @@ R. Oránte sancto Cleménte, appáruit ei Agnus Dei,
 V. Vidi supra montem Agnum stantem.
 R. De sub cujus pede fons vivus emánat: flúminis ímpetus lætíficat civitátem Dei.
 
-[Lectio2] (rubrica tridentina)
-@Commune/C2
-
 [Responsory2]
 @:Responsory2o
 
@@ -56,9 +51,6 @@ R. Omnes una voce dixérunt: Ora pro nobis, sancte Clemens;
 * Ut digni efficiámur promissiónibus Christi.
 V. Non meis méritis ad vos me misit Dóminus vestris corónis partícipem fíeri.
 R. Ut digni efficiámur promissiónibus Christi.
-
-[Lectio3] (rubrica tridentina)
-@Commune/C2
 
 [Responsory3]
 @:Responsory3o

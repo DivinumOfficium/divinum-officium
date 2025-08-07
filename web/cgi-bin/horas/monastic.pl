@@ -485,7 +485,7 @@ sub lectioE {
   my $evang = "Evangelium";
 
   if ($rule =~ qr/in 3 Nocturno Lectiones ex Commune in (\d+) loco/i) {
-    $evang .= " in $1 loco";
+    $evang .= " in $1 loco" if $1 > 1;
   }
 
   $win =~ s/(?:M|OP)//g;    # no M or OP folder in missa
