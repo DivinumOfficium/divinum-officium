@@ -1585,7 +1585,8 @@ sub precedence {
     if ( $version =~ /monastic/i
       && $scriptura =~ /(?:Pasc|Pent)/
       && $month < 11
-      && $dayname[1] !~ /Vigilia/);
+      && $dayname[1] !~ /Vigilia/
+      && $dayofweek > 0);
 
   if ($scriptura) {
     %scriptura = %{officestring($lang1, $scriptura)};
