@@ -6,37 +6,17 @@
 [Oratio]
 @Commune/C5b
 
-[Lectio1] (rubrica cisterciensis)
-@CommuneM/C4:Lectio1 in 2 loco
-
-[Lectio2] (rubrica cisterciensis)
-@CommuneM/C4:Lectio2 in 2 loco
-
-[Lectio3] (rubrica cisterciensis)
-@CommuneM/C4:Lectio3 in 2 loco
-
-[Lectio4] (rubrica cisterciensis)
-@CommuneM/C4:Lectio4 in 2 loco
-
 [Lectio9]
 @Commune/C1:Lectio7
-(sed rubrica cisterciensis)
-@Commune/C1:Lectio7:s/Jesus autem.*//
 
 [Lectio10]
 @Commune/C1:Lectio8:s/ Locus .*//s
-(sed rubrica cisterciensis)
-@Commune/C1:Lectio7:s/.*Jesus autem/Jesus autem/
 
 [Lectio11]
 @Commune/C1:Lectio8:s/.* Locus /Locus /s
-(sed rubrica cisterciensis)
-@Commune/C1:Lectio8:s/ Locus .*//s
 
 [Lectio12]
 @Commune/C1:Lectio9
-(sed rubrica cisterciensis)
-@Commune/C1:Lectio8:s/.* Locus /Locus /s
 
 [Evangelium]
 @Commune/C5b

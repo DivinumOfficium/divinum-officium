@@ -77,43 +77,45 @@ S. Barnabæ Apostoli
 
 [Responsory4]
 @CommuneM/C1
+(sed rubrica cisterciensis)
+@CommuneCist/C1
 
 [Responsory5]
 @Commune/C1:Responsory4
 (sed rubrica cisterciensis)
-@CommuneM/C1
+@CommuneCist/C1
 
 [Responsory6]
 @Commune/C1:Responsory5
 (sed rubrica cisterciensis)
-@CommuneM/C1:Responsory6
+@CommuneCist/C1:Responsory6
 
 [Responsory7]
 @Commune/C1:Responsory6
 (sed rubrica cisterciensis)
-@CommuneM/C1
+@CommuneCist/C1
 
 [Responsory8]
 @Tempora/Pasc3-1:Responsory1
 (sed rubrica cisterciensis)
-@CommuneM/C1
+@CommuneCist/C1
 
 [Responsory9]
 @Commune/C1:Responsory7
 (sed rubrica cisterciensis)
-@CommuneM/C1
+@CommuneCist/C1
 
 [Responsory10]
 @Commune/C1:Responsory8
 (sed rubrica cisterciensis)
-@CommuneM/C1
+@CommuneCist/C1
 
 [Responsory11]
 @Tempora/Pasc0-2:Responsory2
 (sed rubrica cisterciensis)
-@CommuneM/C1
+@CommuneCist/C1
 
 [Responsory12]
 @Tempora/Pasc7-5:Responsory1
 (sed rubrica cisterciensis)
-@CommuneM/C1
+@CommuneCist/C1

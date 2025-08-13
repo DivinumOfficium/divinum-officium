@@ -1,6 +1,6 @@
 @Commune/C11
 
-[Responsory Vespera_]
+[Responsory Vespera]
 R.br. Ave María, grátia plena, * Dóminus tecum.
 R. Ave María, grátia plena, * Dóminus tecum.
 V. Benedícta tu in muliéribus, et benedíctus fructus ventris tui
@@ -8,21 +8,13 @@ R. Dóminus tecum.
 &Gloria
 R. Ave María, grátia plena, * Dóminus tecum.
 
-[Responsory Vespera]
-@:Responsory Vespera_
-(sed rubrica cisterciensis)
-@Commune/C6:Responsory Breve Tertia
-
-[Versum 1] (rubrica cisterciensis)
-@Commune/C11
-
-[Ant Matutinum 3N]
-Hortus conclúsus * es Dei Génitrix, hortus conclúsus, fons signátus: † surge própera, amíca mea, et veni.
-
 [AntMatutinumM]
 Favus distíllans * lábia tua, Sponsa, mel et lac sub lingua tua: † et odor vestimentórum tuórum sicut odor thuris.;;47
 Fons hortórum, * púteus aquárum vivéntium, † quæ fluunt ímpetu de Líbano.;;84
 Descéndi * in hortum nucum, ut vidérem poma convállium, † et inspícerem, si floruísset vinea, et germinássent mala púnica, allelúja.;;98
+
+[Ant Matutinum 3N]
+Hortus conclúsus * es Dei Génitrix, hortus conclúsus, fons signátus: † surge própera, amíca mea, et veni.
 
 [Ant Matutinum]
 @Commune/C11:Ant MatutinumBMV:1-3
@@ -31,24 +23,6 @@ Descéndi * in hortum nucum, ut vidérem poma convállium, † et inspícerem, s
 @Commune/C11:Ant MatutinumBMV:4-7
 @:AntMatutinumM:3
 ;;249;250;251
-
-[Ant Matutinum] (rubrica cisterciensis)
-Ecce tu pulchra es, * amíca mea, ecce tu pulchra es; óculi tui columbárum.;;8
-Sicut lílium * inter spinas, sic amíca mea inter fílias.;;18
-Favus distíllans * lábia tua, Sponsa, et odor vestimentórum tuórum sicut odor thuris.;;23
-Emissiónes tuæ * paradísus malórum punicórum, cum pomórum frúctibus.;;44
-Fons hortórum, * púteus aquárum vivéntium, quæ fluunt ímpetu de Líbano.;;45
-Véniat * diléctus meus in hortum suum, et cómedat fructum pomórum suórum.;;47
-Veni * in hortum meum, soror mea sponsa, méssui myrrham meam cum aromátibus meis.;;84
-Comédi favum * cum melle meo, bibi vinum meum cum lacte meo.;;86
-Anima mea * liquefácta est, ut diléctus locútus est: quæsívi, et non invéni illum; vocávi, et non respóndit mihi: invenérunt me custódes civitátis, percussérunt me, et vulneravérunt me, tulérunt pállium meum custódes murórum: fíliæ Jerúsalem, nuntiáte dilécto, quia amóre lángueo.;;95
-Talis est * diléctus meus, et ipse est amícus meus, fíliæ Jerúsalem.;;96
-Descéndi * in hortum nucum, ut vidérem poma convállium, et inspícerem, si floruísset vínea, et germinássent mala púnica: revértere, tevértere, Sulamítis, revértere, revértere, ut intueámur te.;;97
-Hortus conclúsus es, * Dei Génitrix, hortus conclúsus, fons signátus: surge própera, amíca mea, et veni.;;98
-Regáli ex progénie * María exórta refúlget; cujus précibus nos adjuvári, mente et spíritu devotíssime póscimus.;;249;250;251
-
-[Ant Matutinum] (tempore paschali et rubrica cisterciensis)
-@CommuneM/C6
 
 [Lectio2]
 @Commune/C11:Lectio2:s/-25/-22/ :s/23 .*//s
@@ -131,14 +105,6 @@ _
 
 [Responsory Laudes]
 @:Responsory Vespera
-(sed rubrica cisterciensis)
-@:Responsory Vespera_: s/^(V\..*)\,.*$/$1./m
 
 [Hymnus Laudes]
 @Commune/C10:HymnusM Laudes
-
-[Versum 2] (rubrica cisterciensis)
-@:Versum 1
-
-[Versum 3] (rubrica cisterciensis)
-@:Versum 1

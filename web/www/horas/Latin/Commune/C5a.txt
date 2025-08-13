@@ -58,12 +58,9 @@ Gloria
 @Commune/C2:Lectio8 in 2 loco
 
 [Lectio9 in 4 loco]
-@Commune/C2
+@Commune/C2:Lectio9 in 2 loco
 
 [Introitus]
-@Commune/C4a
-
-[Lectio in 2 loco]
 @Commune/C4a
 
 [Lectio]
@@ -94,3 +91,6 @@ $Per Dominum
 [Postcommunio]
 Ut nobis, Dómine, tua sacrifícia dent salútem: beátus N. Conféssor tuus et Doctor egrégius, quǽsumus, precátor accédat.
 $Per Dominum
+
+[Lectio in 2 loco]
+@Commune/C4a

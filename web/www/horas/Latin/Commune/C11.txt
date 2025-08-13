@@ -19,13 +19,6 @@ Prefatio=Maria=Festivitate
 @Commune/C7::3 s/121/126/
 @:Ant VesperaBMV:2
 
-[Ant Vespera] (rubrica cisterciensis)
-Dum esset Rex * in accúbitu suo, nardus mea dedit odórem suum.;;109
-Unguéntum effúsum * nomen tuum, ídeo adolescéntulæ dilexérunt te nimis.;;112
-Nigra sum, * sed formósa, fíliæ Jerúsalem: ídeo diléxit me Rex, et introdúxit me in cubículum suum.;;121
-Benedícta tu * in muliéribus, et benedíctus fructus ventris tui.;;126
-Pulchra es, et decóra, * fília Jerúsalem, terríbilis ut castrórum ácies ordináta.;;147
-
 [Ant VesperaBMV]
 Læva ejus * sub cápite meo, et déxtera illíus amplexábitur me.;;112
 Speciósa * facta es et suávis in delíciis tuis, sancta Dei Génetrix.;;147
@@ -75,13 +68,8 @@ Amen.
 V. Dignáre me laudáre te, Virgo sacráta.
 R. Da mihi virtútem contra hostes tuos.
 
-[Ant 1_]
-Sancta María, * succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam festivitátem.
-
 [Ant 1]
-@:Ant 1_
-(sed rubrica cisterciensis)
-@:Ant 1_: s/\s*\:.*$/./ s/femíneo/fœmíneo/
+Sancta María, * succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam festivitátem.
 
 [Oratio]
 Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére: et, gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia.
@@ -89,8 +77,6 @@ $Per Dominum
 
 [Invit]
 Sancta María, Dei Génetrix Virgo, * Intercéde pro nobis.
-(sed tempore paschali et rubrica cisterciensis)
-@Commune/C2p
 
 [Hymnus Matutinum]
 {:H-Quemterra:}v. Quem terra, pontus, sídera
@@ -122,6 +108,11 @@ Amen.
 [HymnusM Matutinum]
 @:Hymnus Matutinum:s/sídera/ǽthera/
 
+[Ant Matutinum]
+@:Ant MatutinumBMV:1-3
+@Commune/C6::4-5
+@:Ant MatutinumBMV:4-7
+
 [Ant MatutinumBMV]
 Benedícta tu * in muliéribus, et benedíctus fructus ventris tui.;;8
 Sicut myrrha * elécta, odórem dedísti suavitátis, sancta Dei Génetrix.;;18
@@ -131,11 +122,6 @@ Gaude, María Virgo: * cunctas hǽreses sola interemísti in univérso mundo.;;9
 Dignáre me * laudáre te, Virgo sacráta: da mihi virtútem contra hostes tuos.;;96
 Post partum, * Virgo, invioláta permansísti: Dei Génetrix, intercéde pro nobis.;;97
 
-[Ant Matutinum]
-@:Ant MatutinumBMV:1-3
-@Commune/C6::4-5
-@:Ant MatutinumBMV:4-7
-
 [Nocturn 1 Versum]
 @Commune/C6:Versum 1
 
@@ -144,8 +130,6 @@ Post partum, * Virgo, invioláta permansísti: Dei Génetrix, intercéde pro nob
 
 [Nocturn 3 Versum]
 @Commune/C6
-(sed rubrica cisterciensis)
-@CommuneM/C6
 
 [Lectio1]
 De Parábolis Salomónis
@@ -271,9 +255,6 @@ R. Ut digni efficiámur promissiónibus Christi.
 @Commune/C7:Ant Vespera:3 s/;;.*//
 @:Ant VesperaBMV:2 s/;;.*//
 
-[Ant Laudes] (rubrica cisterciensis)
-@:Ant Vespera:s/;;.*//g
-
 [Capitulum Laudes]
 !Sir 24:14
 v. Ab inítio et ante sǽcula creáta sum, et usque ad futúrum sǽculum non désinam, et in habitatióne sancta coram ipso ministrávi.
@@ -340,21 +321,11 @@ v. In platéis sicut cinnamómum et bálsamum aromatízans odórem dedi: quasi m
 v. Et sic in Sion firmáta sum, et in civitáte sanctificáta simíliter requiévi, et in Jerúsalem potéstas mea. Et radicávi in pópulo honorificáto, et in parte Dei mei heréditas illíus, et in plenitúdine sanctórum deténtio mea.
 $Deo gratias.
 
-[Capitulum Sexta] (rubrica cisterciensis)
-!Cant. 6:9.
-v. Vidérunt eam fíliæ Sion, et beatíssimam prædicavérunt: * et regínæ laudavérunt eam.
-$Deo gratias
-
 [Responsory Breve Sexta]
 @Commune/C6
 
 [Capitulum Nona]
 @:Lectio Prima
-$Deo gratias
-
-[Capitulum Nona] (rubrica cisterciensis)
-!Cant. 6:10.
-v. Quæ est ista, quæ progréditur quasi auróra consúrgens, § pulchra ut luna, elécta ut sol, * terríbilis ut castrórum ácies ordináta?
 $Deo gratias
 
 [Responsory Breve Nona]

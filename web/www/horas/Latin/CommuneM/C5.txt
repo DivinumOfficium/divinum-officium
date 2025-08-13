@@ -4,115 +4,20 @@
 Monastic Commune Confessoris non pontificis 
 
 [Rule]
-Psalmi Dominica
-(sed rubrica cisterciensis omittitur)
+Psalmi Dominica 
 Antiphonas horas
-
-[Ant Vespera] (rubrica cisterciensis)
-Collaudábunt multi * sapiéntiam ejus, et usque in sæculum non delébitur.
-Cognóvit eum Dóminus * in benedictiónibus suis, et invénit grátiam coram óculis Dómini.
-Justum dedúxit Dóminus * per vias rectas, et osténdit illi regnum Dei, et dedit illi sciéntiam Sanctórum: honestávit illum in labóribus, et complévit labóres illíus.
-Justus * cor suum tradet ad vigilándum dilúculo ad Dóminum, qui fecit illum, et in conspéctu Altíssimi deprecábitur.
-Serve bone, * et fidélis, quia super pauca fuísti fidélis, supra multa te constítuam, intra in gáudium Dómini tui.
-
-[Ant Vespera] (tempore paschali et rubrica cisterciensis)
-Allelúia, * allelúia, allelúia.
-
-[Versum 1] (rubrica cisterciensis)
-@Commune/C4:Versum 1
-
-[Versum 2] (rubrica cisterciensis)
-@:Versum 1
-
-[Versum 3] (rubrica cisterciensis)
-@:Versum 1
-
-[Ant 1] (rubrica cisterciensis)
-Iste cognóvit * justítiam, et vidit mirabília magna, et exorávit Altíssimum, et invéntus est in número Sanctórum.
-
-[Ant 1] (tempore paschali et rubrica cisterciensis)
-Beátus vir, * qui métuit Dóminum, allelúia, in mandátis ejus cupit nimis, allelúia.
-
-[Ant Laudes] (rubrica cisterciensis)
-@:Ant Vespera
-
-[Ant 2] (rubrica cisterciensis)
-@Commune/C5:Ant 1
-
-[Ant 2] (tempore paschali et rubrica cisterciensis)
-Qui manet in me: * et ego in eo, hic fert fructum multum, allelúia.
-
-[Responsory Breve Tertia] (rubrica cisterciensis)
-@Commune/C5:Responsory Breve Sexta
-
-[Responsory Breve Sexta] (rubrica cisterciensis)
-R.br. Justum dedúxit Dóminus * Per vias rectas.
-R. Justum dedúxit Dóminus * Per vias rectas.
-V. Et osténdit illi regnum Dei.
-R. Per vias rectas.
-
-[Capitulum Sexta] (rubrica cisterciensis)
-@Commune/C5:Capitulum Nona
-
-[Capitulum Nona] (rubrica cisterciensis)
-@Commune/C5:Capitulum Sexta
-
-[Ant 3] (rubrica cisterciensis)
-Iste Sanctus * digne in memóriam vértitur hóminum, qui ad gáudium tránsiit Angelórum; quia in hac peregrinatióne solo córpore constitútus, cogitatióne et aviditáte in illa aetérna patria, conversátus est.
-
-[Ant 3] (tempore paschali et rubrica cisterciensis)
-Hic vir despíciens mundum * et terréna triúmphans, divítias cœlo cóndidit ore, manu, allelúia, allelúia.
 
 [Ant Matutinum]
 @CommuneM/C4
 
-[Nocturn 1 Versum] (rubrica cisterciensis)
-@Commune/C5:Nocturn 2 Versum
-
-[Nocturn 2 Versum] (rubrica cisterciensis)
-@Commune/C5:Nocturn 3 Versum
-
-[Nocturn 3 Versum] (rubrica cisterciensis)
-V. Justus ut palma florébit.
-R. Sicut cedrus Líbani multiplicábitur.
-
-[Lectio1 pro plurium]
-@CommuneM/C4:Lectio1 in 2 loco
-
-[Lectio2 pro plurium]
-@CommuneM/C4:Lectio2 in 2 loco
-
 [Lectio2]
 @Commune/C5:Lectio2:s/; 33:1-3// s/1 .*//s
-
-[Lectio3 pro plurium]
-@CommuneM/C4:Lectio3 in 2 loco
 
 [Lectio3]
 @Commune/C5:Lectio2:s/32:18-20; 32:28; // s/18 .*1 /1 /s
 
-[Lectio4 pro plurium]
-@CommuneM/C4:Lectio4 in 2 loco
-
 [Lectio4]
 @Commune/C5:Lectio3
-
-[Lectio1] (rubrica cisterciensis)
-@Commune/C5:Lectio1 in 2 loco:1-7:s/7-14/7-11/
-
-[Lectio2] (rubrica cisterciensis)
-@Commune/C5:Lectio1 in 2 loco:2:s/7-14/12-15/
-@Commune/C5:Lectio1 in 2 loco:8-10
-@Commune/C5:Lectio2 in 2 loco:2-3
-
-[Lectio3] (rubrica cisterciensis)
-@Commune/C5:Lectio2 in 2 loco:1:s/14-19/16-18/
-@Commune/C5:Lectio2 in 2 loco:4-6
-
-[Lectio4] (rubrica cisterciensis)
-@Commune/C5:Lectio2 in 2 loco:1:s/14-19/19-20/
-@Commune/C5:Lectio2 in 2 loco:7
-@Commune/C5:Lectio3 in 2 loco:2-3
 
 [Responsory4]
 R. Dómine, prævenísti eum in benedictiónibus dulcédinis,
@@ -120,104 +25,56 @@ R. Dómine, prævenísti eum in benedictiónibus dulcédinis,
 V. Vitam pétiit a te, et tribuísti ei, Dómine.
 R. Posuísti in cápite ejus corónam de lápide pretióso.
 
-[Responsory4] (rubrica cisterciensis)
-@CommuneM/C2:Responsory4C
-(sed tempore paschali)
-@CommuneM/C1p:Responsory11
-
 [Lectio5]
 @Commune/C5:Lectio4
-(sed rubrica cisterciensis)
-@:Lectio5 in 2 loco
 
-[Responsory5] (nisi rubrica cisterciensis)
+[Responsory5]
 @Commune/C5:Responsory4
 
 [Lectio6]
 @Commune/C5:Lectio5
-(sed rubrica cisterciensis)
-@:Lectio6 in 2 loco
 
 [Responsory6]
 @Commune/C5:Responsory5
-(sed rubrica cisterciensis)
-@CommuneM/C4:Responsory9
 
 [Lectio7]
 @Commune/C5:Lectio6:s/ Étenim .*//s
-(sed rubrica cisterciensis)
-@:Lectio7 in 2 loco
 
 [Responsory7]
 @Commune/C5:Responsory6
-(sed rubrica cisterciensis)
-@:Responsory8_
 
 [Lectio8]
 @Commune/C5:Lectio6:s/.* Étenim /Étenim /s
-(sed rubrica cisterciensis)
-@:Lectio8 in 2 loco
 
-[Responsory8_]
+[Responsory8]
 R. Desidérium ánimæ ejus tribuísti ei, Dómine:
 * Et voluntáte labiórum ejus non fraudásti eum.
 V. Vitam pétiit a te, et tribuísti ei, Dómine.
 R. Et voluntáte labiórum ejus non fraudásti eum.
 
-[Responsory8]
-@:Responsory8_
-(sed rubrica cisterciensis)
-@CommuneM/C4:Responsory4
-(sed tempore paschali et rubrica cisterciensis)
-@Tempora/Pasc0-2:Responsory2
-
 [Lectio9]
 @Commune/C5:Lectio7:s/ Sed quia .*//s
-(sed rubrica cisterciensis)
-@Commune/C5:Lectio7:s/Sancti Evangélii,.*onerósa. //s
 
 [Responsory9]
 @Commune/C5:Responsory7
-(sed rubrica cisterciensis)
-@CommuneM/C4:Responsory10
 
 [Lectio10]
 @Commune/C5:Lectio7:s/.* Sed quia /Sed quia /s
-(sed rubrica cisterciensis)	
-@Commune/C5:Lectio8:s/Nec cástitas.*//s
 
 [Responsory10]
 @Commune/C4:Responsory8
-(sed rubrica cisterciensis)
-@:Responsory11_
 
 [Lectio11]
 @Commune/C5:Lectio8
-(sed rubrica cisterciensis)	
-@Commune/C5:Lectio8:s/.*Nec cástitas/Nec cástitas/s s/contíneat\./contíneat; sed totam spem in Redemptóris sui advéntum constítuat, unde et prótinus súbditur:/  s/$/~/s
-@Commune/C5:Lectio9:s/Venit quippe.*//
 
-[Responsory11_]
+[Responsory11]
 R. Beátus vir, qui invéntus est sine mácula, et qui post aurum non ábiit, nec sperávit in thesáuris pecúniæ:
 * Ideo stabilíta sunt bona ipsíus in Dómino.
 V. Pótuit enim tránsgredi, et non est transgréssus; fácere mala, et non fecit.
 R. Ideo stabilíta sunt bona ipsíus in Dómino.
 
-[Responsory11C]
-R. Stola jucunditátis índuit eum Dóminus:
-* Et corónam pulchritúdinis pósuit super caput ejus.
-V. Cibávit illum Dóminus pane vitæ et intelléctus: et aqua sapiéntiæ salutáris potávit illum.
-R. Et corónam pulchritúdinis pósuit super caput ejus.
-
-[Responsory11]
-@:Responsory11_
-(sed rubrica cisterciensis)
-@:Responsory11C
-
 [Lectio12]
 @Commune/C5:Lectio9
-(sed rubrica cisterciensis)
-@Commune/C5:Lectio9:s/.*Venit quippe/Venit quippe/
 
 [Responsory12]
 R. O beáti viri N. sancta præcónia! o inæstimábilis diléctio caritátis! qui, dum sæculi pompam contémpsit,
@@ -225,65 +82,36 @@ R. O beáti viri N. sancta præcónia! o inæstimábilis diléctio caritátis! q
 V. Cui vívere Christus fuit, et mori lucrum.
 R. Ætérnæ vitæ conjúnctus est.
 
-[Responsory12] (rubrica cisterciensis)
-R. O beáti viri N. sancta præcónia, o inæstimábilis diléctio charitátis! 
-* Qui, dum sæculi pompam contémpsit, ætérnæ vitæ conjúnctus est.
-V. Cui vívere Christus fuit, et mori lucrum.
-R. Qui, dum sæculi pompam contémpsit, ætérnæ vitæ conjúnctus est.
-
-[Responsory12] (tempore paschali et rubrica cisterciensis)
-R. O beáti viri N. sancta præcónia, o inæstimábilis diléctio charitátis! 
-* Qui, dum sæculi pompam contémpsit, ætérnæ vitæ conjúnctus est. * Allelúia, allelúia.
-V. Cui vívere Christus fuit, et mori lucrum.
-R. Qui, dum sæculi pompam contémpsit, ætérnæ vitæ conjúnctus est. 
-&Gloria
-R. Allelúia, allelúia.
-
-[Comment]
-For Office of 3 Lessons (Simplex)
-
-[Lectio1S]
-@CommuneM/C5:Lectio3 in 2 loco
-
-[Lectio1S2]
-@Commune/C5:Lectio3:s/14-20/16-20/ s/14 .*16/16/s
-
-[Responsory3S]
-@:Responsory12
-
 [MM Capitulum]
 @Commune/C5:Capitulum Sexta
 _
 @CommuneM/C4::s/.*_.//s
 
-[MM Capitulum] (rubrica cisterciensis)
-@Commune/C5:Capitulum Nona
-_
-@Commune/C5:Nocturn 3 Versum
+[Lectio1 pro plurium]
+@CommuneM/C4:Lectio1 in 2 loco
+
+[Lectio2 pro plurium]
+@CommuneM/C4:Lectio2 in 2 loco
+
+[Lectio3 pro plurium]
+@CommuneM/C4:Lectio3 in 2 loco
+
+[Lectio4 pro plurium]
+@CommuneM/C4:Lectio4 in 2 loco
 
 [Lectio1 in 2 loco]
 @Commune/C5:Lectio1 in 2 loco:1-8 s/-14/-12/
-(sed rubrica cisterciensis)
-@Commune/C5:Lectio1
 
 [Lectio2 in 2 loco]
 @Commune/C5:Lectio1 in 2 loco:s/7-14/13-16/ s/7 .*13 /13 /s
 @Commune/C5:Lectio2 in 2 loco:2-4
 
-[Lectio2 in 2 loco] (rubrica cisterciensis)
-@Commune/C5:Lectio2:s/ 32:28; 33:1-3// s/28 .*//s
-
 [Lectio3 in 2 loco]
 @Commune/C5:Lectio2 in 2 loco:!2-4 s/14-19/17-20/ s/\.\s*$/:\n/
 @Commune/C5:Lectio3 in 2 loco:2-3 s/ (.)/ \l$1/
 
-[Lectio3 in 2 loco] (rubrica cisterciensis)
-@Commune/C5:Lectio2:s/32:18-20; // s/18 .*28 /28 /s
-
 [Lectio4 in 2 loco]
 @Commune/C5:Lectio3 in 2 loco:!2-3 s/4:19-20; //
-(sed rubrica cisterciensis)
-@Commune/C5:Lectio3:s/14-20/14-19/ s/\: protéctor.*|; obrana.*/./s
 
 [Lectio5 in 2 loco]
 @Commune/C5:Lectio4 in 2 loco:s/ Hæc sibi .*//s
@@ -292,18 +120,11 @@ _
 @Commune/C5:Lectio4 in 2 loco:s/16/29/ s/.* Hæc sibi /Hæc sibi /s s/$/~/
 @Commune/C5:Lectio5 in 2 loco:s/ Sed hæc .*//s
 
-[Lectio6 in 2 loco] (rubrica cisterciensis)
-@Commune/C5:Lectio4 in 2 loco:s/16/29/ s/.* Hæc sibi /Hæc sibi /s 
-
 [Lectio7 in 2 loco]
 @Commune/C5:Lectio5 in 2 loco:s/.* Sed hæc /Sed hæc /s
-(sed rubrica cisterciensis)
-@Commune/C5:Lectio5 in 2 loco:s/Omne enim.*//
 
 [Lectio8 in 2 loco]
 @Commune/C5:Lectio6 in 2 loco:s/17 post init/30 circa med/
-(sed rubrica cisterciensis)
-@Commune/C5:Lectio5 in 2 loco:s/.* Omne enim/Omne enim/
 
 [Lectio9 in 2 loco]
 @Commune/C5:Lectio7 in 2 loco:s/ Ideóque .*//s
@@ -311,13 +132,9 @@ _
 [Lectio10 in 2 loco]
 @Commune/C5:Lectio7 in 2 loco:s/.* Ideóque /Ideóque /s s/$/~/
 @Commune/C5:Lectio8 in 2 loco:s/ Unde gloriátur .*//s
-(sed rubrica cisterciensis)
-@Commune/C5:Lectio8 in 2 loco:s/ Quod tunc .*//s
 
 [Lectio11 in 2 loco]
 @Commune/C5:Lectio8 in 2 loco:s/.* Unde gloriátur /Unde gloriátur /s
-(sed rubrica cisterciensis)
-@Commune/C5:Lectio8 in 2 loco:s/.* Quod tunc/Quod tunc/s
 
 [Lectio12 in 2 loco]
 @Commune/C5:Lectio9 in 2 loco
@@ -337,8 +154,6 @@ _
 
 [Lectio12 in 3 loco]
 @Sancti/02-24:Lectio9
-(sed rubrica cisterciensis)
-@Sancti/02-24:Lectio9:s/Nam, qui.*//
 
 [Evangelium in 3 loco]
 @Sancti/02-24:Evangelium

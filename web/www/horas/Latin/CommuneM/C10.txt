@@ -3,40 +3,12 @@
 [Responsory Vespera]
 @CommuneM/C11
 
-[Responsory Vespera] (rubrica cisterciensis)
-R.br. Post partum Virgo, * Invioláta permansísti.
-R. Post partum Virgo, * Invioláta permansísti.
-V. Dei Génitrix intercéde pro nobis.
-R. Invioláta permansísti.
-
-[Responsory Vespera] (tempore Adventus et rubrica cisterciensis)
-R.br. Angelus Dómini * Nuntiávit Maríæ.
-R. Angelus Dómini * Nuntiávit Maríæ.
-V. Et concépit de Spíritu Sancto.
-R. Nuntiávit Maríæ.
-
-[Versum 1] (rubrica cisterciensis)
-@Commune/C11
-
-[Versum 1a]
-@:MM Capitulum_:s/.*_//s
-
-[Ant 1] (rubrica cisterciensis)
-@Commune/C11:Ant 3
-(sed tempore paschali)
-@:Ant 1_Pasch
-
-[Nocturn 1 Versum] (rubrica cisterciensis)
-@Commune/C6:Versum 1
-
-[Lectio21]
-!from tempora
-
-[Responsory3]
-@Commune/C12
-
-[Lectio11]
-!from tempora
+[Lectio1_8]
+!Cant 5:4-7
+4 Diléctus meus misit manum suam per forámen, et venter meus intrémuit ad tactum ejus.
+5 Surréxi ut aperírem dilécto meo: manus meæ stillavérunt myrrham, et dígiti mei pleni myrrha probatíssima.
+6 Péssulum óstii mei apérui dilécto meo, at ille declináverat, atque transíerat. Anima mea liquefácta est, ut locútus est: quæsívi, et non invéni illum: vocávi, et non respóndit mihi.
+7 Invenérunt me custódes qui circúmeunt civitátem: percussérunt me, et vulneravérunt me. Tulérunt pállium meum mihi custódes murórum.
 
 [Lectio1] (mense 4 aut mense 5 aut mense 6 aut mense 7 aut mense 8 aut mense 9 aut mense 10)
 (nisi mense 4 et mense 6) De Canticis canticorum
@@ -56,6 +28,12 @@ R. Nuntiávit Maríæ.
 (sed mense 10)
 @Sancti/08-21bmv:Lectio2:1-5 s/-13/-9/
 
+[Lectio2_7]
+!Cant 5:1-3
+1 Véniat diléctus meus in hortum suum, et cómedat fructum pomórum suórum. Veni in hortum meum soror mea sponsa, méssui myrrham meam cum aromátibus meis: comédi favum cum melle meo, bibi vinum meum cum lacte meo: comédite amíci, et bíbite, et inebriámini caríssimi.
+2 Ego dórmio, et cor meum vígilat. Vox dilécti mei pulsántis: Aperi mihi soror mea, amíca mea, colúmba mea, immaculáta mea: quia caput meum plenum est rore, et cincínni mei guttis nóctium.
+3 Exspoliávi me túnica mea, quómodo índuar illa? lavi pedes meos, quómodo inquinábo illos?
+
 [Lectio2] (mense 4 aut mense 5 aut mense 6 aut mense 7 aut mense 8 aut mense 9 aut mense 10)
 __1617 only__
 (sed mense 4)
@@ -73,34 +51,13 @@ __1617 only__
 (sed mense 10)
 @Sancti/08-21bmv:Lectio2:!2-5 s/6-/10-/
 
-[Lectio2_7]
-!Cant 5:1-3
-1 Véniat diléctus meus in hortum suum, et cómedat fructum pomórum suórum. Veni in hortum meum soror mea sponsa, méssui myrrham meam cum aromátibus meis: comédi favum cum melle meo, bibi vinum meum cum lacte meo: comédite amíci, et bíbite, et inebriámini caríssimi.
-2 Ego dórmio, et cor meum vígilat. Vox dilécti mei pulsántis: Aperi mihi soror mea, amíca mea, colúmba mea, immaculáta mea: quia caput meum plenum est rore, et cincínni mei guttis nóctium.
-3 Exspoliávi me túnica mea, quómodo índuar illa? lavi pedes meos, quómodo inquinábo illos?
+[Responsory3]
+@Commune/C12
 
-[Lectio1_8]
-!Cant 5:4-7
-4 Diléctus meus misit manum suam per forámen, et venter meus intrémuit ad tactum ejus.
-5 Surréxi ut aperírem dilécto meo: manus meæ stillavérunt myrrham, et dígiti mei pleni myrrha probatíssima.
-6 Péssulum óstii mei apérui dilécto meo, at ille declináverat, atque transíerat. Anima mea liquefácta est, ut locútus est: quæsívi, et non invéni illum: vocávi, et non respóndit mihi.
-7 Invenérunt me custódes qui circúmeunt civitátem: percussérunt me, et vulneravérunt me. Tulérunt pállium meum mihi custódes murórum.
+[Lectio11]
+!from tempora
 
-[Lectio1] (rubrica cisterciensis)
-@Sancti/07-02:Lectio1:s/1-7/1-5/ s/6.*//s
-
-[Lectio2] (rubrica cisterciensis)
-Sermo sancti Bernárdi Abbátis.
-!Ex Serm. 2. de Virgine Deipara‚ alias, de Aquæductu.
-Altius intuémini, fratres mei, quanto devotiónis afféctu a nobis Mariam volúerit honorári, qui totius boni plenitúdinem pósuit in María: ut proinde si quid spei in nobis est, si quid grátiæ, si quid salútis, ab ea novérimus redundáre, quæ ascéndit delíciis áffluens. Hortus plane deliciárum, quem non modo affláverit véniens‚ sed et perfláverit supervéniens auster ille divínus, ut úndique fluant et áffluant arómata ejus‚ charísmata scílicet gratiárum.
-
-[Responsory2] (rubrica cisterciensis)
-@Commune/C11:Responsory3
-
-[Lectio3] (rubrica cisterciensis)
-Tolle corpus hoc soláre, quod illúminat mundum, ubi dies? Tolle Mariam hanc maris stellam, maris útique magni et spatiósi, quid nisi calígo invólvens, et umbra mortis, ac densíssimæ ténebræ relinquúntur? Totis ergo medúllis córdium, totis præcordiórum afféctibus‚ et votis ómnibus Mariam hanc venerémur: quia sic est volúntas ejus, qui totum nos habére vóluit per Maríam.
-
-[MM Capitulum_]
+[MM Capitulum]
 !Eccli 24:26-28
 v. Transíte ad me, omnes qui concupíscitis me, et a generatiónibus meis implémini: spíritus enim meus super mel dulcis, et heréditas mea super mel et favum: memória mea in generatióne sæculórum.
 $Deo gratias
@@ -108,73 +65,32 @@ _
 V. Speciósa facta es et suávis.
 R. In delíciis tuis, sancta Dei Génetrix.
 
-[MM CapitulumC]
-!Eccli. 24, 18
-v. Ego mater pulchræ dilectiónis, et timóris, et agnitiónis, et sanctæ spei.
-$Deo gratias
-_
-@Commune/C6:Nocturn 2 Versum
-
-[MM Capitulum]
-@:MM Capitulum_
-(sed rubrica cisterciensis)
-@:MM CapitulumC
-
 [Responsory Laudes]
 @:Responsory Vespera
 
-[Responsory Laudes] (rubrica cisterciensis)
-@CommuneM/C11
-
-[Versum 2] (rubrica cisterciensis)
-@:Versum 1
-
-[Ant 2] (rubrica cisterciensis)
-@Commune/C11::s/, allel[uú][ij]a//i
-(sed tempore paschali)
-@Commune/C10:Ant 1_Pasch
+[Lectio21]
+!from tempora
 
 [Ant Prima]
 @Commune/C7:Ant Vespera:1
-(sed rubrica cisterciensis)
-@Commune/C11:Ant Vespera:2
-(sed tempore paschali et rubrica cisterciensis)
-@Psalterium/Psalmi/Psalmi minor:Pasch:2
 
 [Ant Tertia]
 @Commune/C11:Ant VesperaBMV:1
-(sed rubrica cisterciensis)
-@Commune/C11:Ant Vespera:3
-(sed tempore paschali et rubrica cisterciensis)
-@Psalterium/Psalmi/Psalmi minor:Pasch:3
 
 [Responsory TertiaM]
 @Commune/C6:Versum 1
 
 [Ant Sexta]
 @Commune/C6:Ant Matutinum:7
-(sed rubrica cisterciensis)
-@Commune/C11:Ant Vespera:4
-(sed tempore paschali et rubrica cisterciensis)
-@Psalterium/Psalmi/Psalmi minor:Pasch:4
 
 [Responsory SextaM]
 @Commune/C6:Nocturn 2 Versum
 
 [Ant Nona]
 @Commune/C11:Ant VesperaBMV:2
-(sed rubrica cisterciensis)
-@Commune/C11:Ant Vespera:5
-(sed tempore paschali et rubrica cisterciensis)
-@Psalterium/Psalmi/Psalmi minor:Pasch:5
-
-[Capitulum Nona] (rubrica cisterciensis)
-@CommuneM/C11
 
 [Responsory NonaM]
 @Commune/C6:Nocturn 3 Versum
-(sed rubrica cisterciensis)
-@CommuneM/C6:Nocturn 3 Versum
 
 [Lectio M011]
 Ex Epístola sancti Ambrósii Epíscopi ad Sirícium Papam

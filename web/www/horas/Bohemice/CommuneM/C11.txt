@@ -1,4 +1,4 @@
-[Responsory Vespera_]
+[Responsory Vespera]
 R.br. Zdrávas Maria, milosti plná, * Pán s tebou.
 R. Zdrávas Maria, milosti plná, * Pán s tebou.
 V. Požehnaná ty mezi ženami, a požehnaný plod života tvého.
@@ -8,21 +8,6 @@ R. Zdrávas Maria, milosti plná, * Pán s tebou.
 
 [Ant Matutinum 3N]
 Zahrada zapečetěná jsi, * Boží Rodičko, zahrada zapečetěná, pramen označený; povstaň a pospěš, má přítelkyně, a přijď.
-
-[Ant Matutinum] (rubrica cisterciensis)
-Hle, jak jsi krásná, * má přítelkyně, hle, jak jsi krásná; tvé oči jsou jako oči holubice.;;8
-Jako lilie * mezi trním, taková je má přítelkyně mezi ostatními dívkami.;;18
-Plástev přetékající medem * jsou tvé rty, nevěsto, a vůně tvých šatů je jako vůně kadidla.;;23
-Tvá vůně * je jako sad granátových jablek, së zralými plody.;;44
-Pramen v zahradách * je studna vod živých, jež jako bystřiny běží do Libanonu.;;45
-Nechť přijde * můj milovaný do mé zahrady, a pojí ze svých plodů.;;47
-Přijď * do mé zahrady, sestro má a nevěsto, smísil jsem svou myrhu se svými vonnými mastmi.;;84
-Pojedl jsem plástev * se svým medem, popil jsem víno se svým mlékem.;;86
-Duše má * se rozplynula, když promluvil můj milovaný; hledala jsem, avšak nenalezla jsem jej; volala jsem, ale neodpověděl mi; našli mě však strážci města, zbili mě, i zranili mě, sebrali mi plášť, strážci hradeb; dcery jerusalémské, vyřiďte mému milému, že láskou chřadnu.;;95
-Takový je * můj miláček, a on je můj přítel, dcery jerusalémské.;;96
-Sestoupil jsem * do mandlové zahrady, abych viděl údolní jablíčka, a přesvědčil se, že rozkvetla vinice, a urodila se granátová jablka; navrať se, navrať se, Šulamítko, navrať se, navrať se, abychom na tebe popatřili.;;97
-Zahrada zapečetěná jsi, * Boží Rodičko, zahrada zapečetěná, pramen označený; povstaň a pospěš, má přítelkyně, a přijď.;;98
-Z královského pokolení * vzešla Maria a září; abychom obdrželi pomoc jejích přímluv, o to v mysli i duchu nadmíru oddaně prosíme.;;249;250;251
 
 [Responsory4]
 R. Blažené pokolení, z něhož se Kristus narodil.
@@ -40,6 +25,12 @@ R. Rozlila se milost na tvých rtech,
 V. Myrha, kadidlo a kasie voní z tvých rouch, ze slonovinových paláců; dcery královské tě těší svým půvabem, ve tvé slávě.
 R. Proto ti požehnal Bůh navěky.
 
+[Lectio10]
+@Commune/C11:Lectio8:s/My tedy.*//s
+
+[Lectio11]
+@Commune/C11:Lectio8:s/.* My tedy/My tedy/s
+
 [Responsory11]
 R. Požehnaná a úctyhodná jsi, Panno Maria,
 * Jejíž lůno si zasloužilo nosit Krista Pána.
@@ -51,9 +42,3 @@ R. Blažená jsi, Panno Maria, Boží Rodičko, neboť jsi uvěřila Hospodinu; 
 * Přimlouvej se za nás u Pána našeho Boha.
 V. Zdrávas Maria, milostiplná, Pán s tebou.
 R. Přimlouvej se za nás u Pána našeho Boha.
-
-[Lectio10]
-@Commune/C11:Lectio8:s/My tedy.*//s
-
-[Lectio11]
-@Commune/C11:Lectio8:s/.* My tedy/My tedy/s

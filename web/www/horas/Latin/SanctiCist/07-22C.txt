@@ -25,12 +25,12 @@ Venit María * núntians discípulis, quia vidi Dóminum, allelúia.
 
 [Ant Matutinum]
 @Commune/C6::9:s/;;97/;;8/
-@CommuneM/C6::2-5
-@CommuneM/C6::8:s/;;86/;;47/
-@CommuneM/C6::10:s/;;96/;;84/
-@CommuneM/C6:Ant Vespera:3:s/;;121/;;86/
-@CommuneM/C6:Ant 2:s/$/;;95/
-@CommuneM/C6::12:s/;;98/;;96/
+@CommuneCist/C6::2-5
+@CommuneCist/C6::8:s/;;86/;;47/
+@CommuneCist/C6::10:s/;;96/;;84/
+@CommuneCist/C6:Ant Vespera:3:s/;;121/;;86/
+@CommuneCist/C6:Ant 2:s/$/;;95/
+@CommuneCist/C6::12:s/;;98/;;96/
 @Tempora/Quad5-4:Ant 2:s/$/;;97/
 @Tempora/Quad5-4:Ant 3C:s/$/;;98/
 @Tempora/093-5:Ant 2:s/$/;;249;250;251/
@@ -54,10 +54,10 @@ V. Cito eúntes dícite discípulis ejus, et Petro, quia surréxit Dóminus:
 R. Præcédet vos in Galilǽam, ibi eum vidébitis.
 
 [Responsory2]
-@CommuneM/C6:Responsory1
+@CommuneCist/C6:Responsory1
 
 [Responsory3]
-@CommuneM/C6:Responsory2
+@CommuneCist/C6:Responsory2
 
 [Responsory4]
 R. Dum transísset Sábbatum, María Magdaléne, et María Jacóbi, et Salóme emérunt arómata,
@@ -79,16 +79,16 @@ R. Ut veniéntes úngerent Jesum.
 @Sancti/07-22:Lectio6:s/.* (Quæréntes)/$1/
 
 [Responsory5]
-@CommuneM/C6:Responsory3
+@CommuneCist/C6:Responsory3
 
 [Responsory6]
-@CommuneM/C6:Responsory11
+@CommuneCist/C6:Responsory11
 
 [Responsory7]
-@CommuneM/C6:Responsory5
+@CommuneCist/C6:Responsory5
 
 [Responsory8]
-@CommuneM/C7
+@CommuneCist/C7
 
 [Lectio9]
 @SanctiM/07-22
@@ -109,10 +109,10 @@ V. Dum ergo fleret, inclinávit se, et prospéxit in monuméntum: et vidit duos 
 R. Noli flére, Maria, surréxit sicut dixit, præcédet vos in Galilǽam, ibi eum vidébitis.
 
 [Responsory10]
-@CommuneM/C6
+@CommuneCist/C6
 
 [Responsory11]
-@CommuneM/C6:Responsory12
+@CommuneCist/C6:Responsory12
 
 [Responsory12]
 R. Et valde mane una Sabbatórum véniunt ad monuméntum,
@@ -124,10 +124,7 @@ R. Orto jam sole.
 @Tempora/Quad5-4
 
 [MM Capitulum]
-@Commune/C7a:Capitulum Sexta
-_
-R. Dilexísti justítiam, et odísti iniquitátem:
-V. Proptérea unxit te Deus, Deus tuus, oleo lætítiæ.
+@CommuneM/C7a
 
 [Ant Laudes]
 @:Ant Vespera:s/;;.*//g

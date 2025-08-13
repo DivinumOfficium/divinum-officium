@@ -6,7 +6,6 @@ Loquebar
 
 [Rule]
 Psalmi Dominica
-(sed rubrica cisterciensis omittitur)
 Antiphonas horas
 
 [Ant Vespera]
@@ -59,8 +58,6 @@ $Per Dominum
 
 [Invit]
 Regem Vírginum Dóminum, * Veníte, adorémus.
-(sed tempore paschali et rubrica cisterciensis)
-@Commune/C2p
 
 [Hymnus Matutinum]
 {:H-Virginisproles:}v. Vírginis Proles Opiféxque Matris,
@@ -159,6 +156,12 @@ R. Et cum Ángelis in paradísum introísti.
 34 Et múlier innúpta et virgo cógitat quæ Dómini sunt, ut sit sancta córpore et spíritu. Quæ autem nupta est, cógitat quæ sunt mundi, quómodo pláceat viro.
 35 Porro hoc ad utilitátem vestram dico, non ut láqueum vobis iníciam, sed ad id, quod honéstum est, et quod facultátem prǽbeat sine impediménto Dóminum obsecrándi.
 
+[Responsory2]
+R. Diffúsa est grátia in lábiis tuis,
+* Proptérea benedíxit te Deus in ætérnum.
+V. Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna.
+R. Proptérea benedíxit te Deus in ætérnum.
+
 [Lectio3]
 !1 Cor 7:36-40
 36 Si quis autem turpem se vidéri exístimat super vírgine sua, quod sit superadúlta, et ita opórtet fíeri; quod vult fáciat: non peccat, si nubat.
@@ -235,12 +238,6 @@ R. Ecce sponsus venit, exíte óbviam ei.
 [Lectio9]
 In quinque autem córporis sénsibus unusquísque subsístit;  geminátus autem quinárius denárium pérficit. Et, quia ex utróque sexu fidélium multitúdo collígitur, sancta Ecclésia decem virgínibus símilis esse denuntiátur. In qua quia mali cum bonis et réprobi cum eléctis admíxti sunt, recte símilis virgínibus prudéntibus et fátuis esse perhibétur. Sunt namque pleríque continéntes, qui ab appetítu se exterióri custódiunt et spe ad interióra rapiúntur, carnem mácerant, et toto desidério ad supérnam pátriam anhélant, ætérna prǽmia éxpetunt, pro labóribus suis recípere laudes humánas nolunt. Hi nimírum glóriam suam non in ore hóminum ponunt, sed intra consciéntiam cóntegunt. Et sunt pleríque, qui corpus per abstinéntiam afflígunt, sed de ipsa sua abstinéntia humános favóres éxpetunt.
 &teDeum
-
-[Responsory2]
-R. Diffúsa est grátia in lábiis tuis,
-* Proptérea benedíxit te Deus in ætérnum.
-V. Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna.
-R. Proptérea benedíxit te Deus in ætérnum.
 
 [Versum 0]
 V. Ora pro nobis, beáta N..

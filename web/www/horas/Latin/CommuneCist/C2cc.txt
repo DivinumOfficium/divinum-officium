@@ -1,17 +1,17 @@
 [Officium]
 Commune Unius Martyris Commemorati
 
+[Versum 1]
+@CommuneCist/C2:Nocturn 1 Versum
+
 [Ant 1]
-@CommuneM/C2:Ant 2
+@CommuneCist/C2:Ant 2
 
-[Ant 2]
-@CommuneM/C2:Ant 3
-
-[Versum 1] 
-@CommuneM/C2:Nocturn 1 Versum
-
-[Versum 2] 
+[Versum 2]
 @:Versum 1
 
-[Versum 3] 
+[Ant 2]
+@CommuneCist/C2:Ant 3
+
+[Versum 3]
 @:Versum 1

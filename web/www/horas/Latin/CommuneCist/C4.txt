@@ -1,0 +1,165 @@
+@CommuneM/C4
+
+[Rule]
+Antiphonas horas
+
+[Comment]
+Lectiones 1..4 in 3 loco: 
+Aliæ Lectiones ex Communi Confessoris Pontificis ex Breviario Cisterciensi (pag. 87*)
+
+[Ant Vespera]
+Ecce sacérdos magnus, * qui in diébus suis plácuit Deo, et invéntus est justus.
+Euge serve bone, * in módico fidélis, intra in gáudium Dómini tui.
+Fidélis servus, et prudens, * quem constítuit Dóminus super famíliam suam.
+Beátus ille servus, * cum vénerit Dóminus ejus, et pulsáverit jánuam, et invénerit eum vigilántem.
+Ecce vere * Israëlita, in quo dolus non est.
+
+[Ant Vespera] (tempore paschali)
+@CommuneCist/C1p
+
+[Versum 1]
+@Commune/C4:Versum 2
+
+[Invit] (tempore paschali)
+@CommuneCist/C2p
+
+[Ant Matutinum]
+@CommuneCist/C2::1-12
+Amávit eum Dóminus, * et ornávit eum: stolam glóriæ índuit eum, et ad portas paradísi coronávit eum.;;256;257;258
+(sed tempore paschali)
+Allelúia, * allelúia, allelúia.;;256;257;258
+
+[Nocturn 1 Versum]
+V. Ecce sacérdos magnus.
+R. Qui in diébus suis plácuit Deo, et invéntus est justus.
+
+[Lectio2]
+@Commune/C4:Lectio1:s/.*5 /!1 Tim 3:5-9\n5 /s
+
+[Lectio3]
+!1 Tim 4:12-16
+12 Exémplum esto fidélium in verbo, in conversatióne, in charitáte, in fide, in castitáte.
+13 Dum vénio, atténde lectióni, exhortatióni, et doctrínæ.
+14 Noli neglígere grátiam, quæ in te est, quæ data est tibi per prophetíam, cum impositióne mánuum presbytérii.
+15 Hæc meditáre, in his esto: ut proféctus tuus maniféstus sit ómnibus.
+16 Atténde tibi, et doctrínæ: insta in illis. Hoc enim fáciens, et teípsum salvum fácies, et eos qui te áudiunt.
+
+[Lectio4]
+!1 Tim 6:13-16
+13 Præcípio tibi coram Deo, qui vivíficat ómnia, et Christo Jesu, qui testimónium réddidit sub Póntio Piláto, bonam confessiónem,
+14 ut serves mandátum sine mácula, irreprehensíbile usque in advéntum Dómini nostri Jesu Christi,
+15 quem suis tempóribus osténdet beátus et solus potens, Rex regum, et Dóminus dominántium:
+16 qui solus habet immortalitátem, et lucem inhábitat inaccessíbilem: quem nullus hóminum vidit, sed nec vidére potest: cui honor, et impérium sempitérnum. Amen.
+
+[Responsory4]
+R. Iste Sanctus digne in memóriam vértitur hóminum, qui ad gáudium tránsiit Angelórum; 
+* Quia in hac peregrinatióne solo córpore constitútus, cogitatióne et aviditáte in illa ætérna pátria conversátus est.
+V. Vínculis carnis absolútus taléntum, sibi créditum Dómino suo duplicátum reportávit.
+R. Quia in hac peregrinatióne solo córpore constitútus, cogitatióne et aviditáte in illa ætérna pátria conversátus est.
+
+[Responsory4] (tempore paschali)
+@CommuneCist/C1p:Responsory11
+
+[Lectio5]
+@CommuneM/C4:Lectio5 in 2 loco
+
+[Responsory5]
+@Commune/C4
+
+[Lectio6]
+@CommuneM/C4:Lectio6 in 2 loco
+
+[Responsory6]
+@Commune/C4:Responsory4
+
+[Lectio7]
+@CommuneM/C4:Lectio7 in 2 loco
+
+[Responsory7]
+@Commune/C4
+
+[Lectio8]
+@:Lectio8 in 2 loco
+
+[Responsory8]
+R. Fidélis namque, ac prudens dispensátor in magni patrisfamílias domo constitútus erat, 
+* Ut consérvis suis in témpore mensúram trítici erogáret.
+V. Pro salúte, et augménto gregis sibi commíssi cura pervígili sollícitus erat:
+R. Ut consérvis suis in témpore mensúram trítici erogáret.
+
+[Responsory8] (tempore paschali)
+@Tempora/Pasc0-2:Responsory2
+
+[Responsory9]
+R. Magnificávit eum in conspéctu regum,
+* Et dedit illi corónam glóriæ.
+V. Státuit illi testaméntum sempitérnum, et beatificávit illum.
+R. Et dedit illi corónam glóriæ.
+
+[Responsory10]
+R. Justum dedúxit Dóminus per vias rectas, † et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum;
+* Honestávit illum in labóribus suis.
+V. Magnificávit eum in conspéctu regum, et dedit illi corónam glóriæ.
+R. Honestávit illum in labóribus suis.
+
+[Responsory11]
+@CommuneM/C5:Responsory11
+
+[Lectio12]
+@Commune/C4:Lectio9:s/Et sunt.*//
+
+[Responsory12]
+@Commune/C4:Responsory8
+
+[Responsory12] (tempore paschali)
+R. In diadémate cápitis Aaron lápides pretiósi fulgébant,
+* Dum perficerétur opus Dei, * Allelúia, allelúia, allelúia.
+V. Coróna áurea super caput ejus, expréssa signo sanctitátis.
+R. Dum perficerétur opus Dei.
+&Gloria
+R. Allelúia, allelúia, allelúia.
+
+[MM Capitulum]
+@Commune/C4:Capitulum Sexta
+_
+@Commune/C4:Nocturn 2 Versum
+
+[Ant Laudes]
+@:Ant Vespera
+
+[Capitulum Laudes]
+!Sir 44:25
+v. Benedictiónem ómnium Géntium dedit illi Dóminus, * et testaméntum suum confirmávit super caput ejus.
+$Deo gratias
+
+[Versum 2]
+@:Versum 1
+
+[Responsory Breve Tertia]
+@Commune/C4:Responsory Breve Sexta
+
+[Responsory Breve Sexta]
+@Commune/C4:Responsory Breve Tertia
+
+[Ant Vespera 3]
+@:Ant Vespera
+
+[Versum 3]
+@:Versum 1
+
+[Lectio1 in 3 loco]
+De Epístola beáti Pauli Apóstoli ad Titum.
+!Cap. 1: 7-9
+Opórtet Epíscopum sine crímine esse, sicut Dei dispensatórem: non supérbum, non iracúndum, non vinoléntum, non percussórem, non turpis lucri cúpidum: sed hospitálem, benígnum, sóbrium, justum, sanctum, continéntem, amplecténtem eum, qui secúndum doctrínam est, fidélem sermónem: ut potens sit exhortári in doctrína sana, et eos, qui contradícunt‚ argúere.
+
+[Lectio2 in 3 loco]
+!Cap. 1: 10-11,13
+Sunt enim multi étiam inobediéntes vaníloqui, et seductóres: máxime qui de circumcisióne sunt: quos opórtet redárgui: qui univérsas domos subvértunt, docéntes quæ non opórtet‚ turpis lucri grátia. Quam ob causam íncrepa illos dure, ut sani sint in fide, non intendéntes Judáicis fábulis, et mandátis hóminum, aversántium se a veritáte.
+
+[Lectio3 in 3 loco]
+!Cap. 2, 1-6
+Tu autem lóquere quæ decent sanam doctrínam: Senes ut sóbrii sint, pudíci, prudéntes, sani in fide, in dilectióne, in patiéntia: Anus simíliter in hábitu sancto, non criminatríces, non multo vino serviéntes, bene docéntes: ut prudéntiam dóceant adolescéntulas, ut viros suos ament, fílios suos díligant, prudéntes, castas, sóbrias, domus curam habéntes, benígnas, súbditas viris suis, ut non blasphemétur verbum Dei: Júvenes simíliter hortáre ut sóbrii sint.
+
+[Lectio4 in 3 loco]
+!Cap. 2,7-8,14
+In ómnibus teípsum præbe exémplum bonórum óperum, in doctrína, in integritáte, in gravitáte, verbum sanum, irreprehensíbile: ut is, qui ex advérso est, vereátur, nihil habens malum dícere de nobis. Fidélis sermo est: et de his volo te confirmáre: ut curent bonis opéribus præésse qui credunt Deo. Hæc sunt bona, et utília homínibus.

@@ -1,0 +1,152 @@
+@CommuneM/C1p
+
+[Rule]
+Antiphonas horas
+Una antiphona
+
+[Ant Vespera]
+Allelúia, * allelúia, allelúia.
+
+[Versum 1]
+@Commune/C1:Nocturn 3 Versum:s/\.$/, allelúia./gm s/(\s\w+\,)/,$1/
+
+[Ant 1]
+@Commune/C1p:Ant 2
+
+[Invit]
+Allelúia, allelúia, * Allelúia.
+
+[Ant Matutinum]
+Allelúia, * allelúia, Allelúia.;;18
+;;23
+;;32
+;;33
+;;44
+;;46
+Allelúia, * allelúia, Allelúia.;;60
+;;63
+;;64
+;;74
+;;96
+;;98
+Allelúia, * allelúia, Allelúia.;;253;254;255
+
+[Nocturn 1 Versum]
+@CommuneCist/C1::s/\.$/, allelúia./gm
+
+[Nocturn 2 Versum]
+@CommuneCist/C1::s/\.$/, allelúia./gm
+
+[Nocturn 3 Versum]
+@CommuneCist/C1::s/\.$/, allelúia./gm
+
+[Lectio1]
+@CommuneCist/C1
+
+[Responsory1]
+@Commune/C1p:Responsory5
+
+[Lectio2]
+@CommuneCist/C1
+
+[Responsory2]
+@CommuneM/C1p:Responsory4:s/Apóstoli // s/Apoštolové //i
+
+[Lectio3]
+@CommuneCist/C1
+
+[Responsory3]
+@Commune/C1p:Responsory7:1-2
+V. Manéte in dilectióne mea, sicut diléxi vos.
+@Commune/C1p:Responsory7:4
+
+[Lectio4]
+@CommuneCist/C1
+
+[Responsory4]
+R. Docéte fílios vestros, allelúia.
+* Ut memóriter téneant, allelúia, et ore decántent, * Allelúia, allelúia.
+V. Fílii qui nascéntur et exúrgent, enarrábunt fíliis suis: 
+R. Ut memóriter téneant, allelúia, et ore decántent.
+&Gloria
+R. Allelúia, allelúia.
+
+[Responsory5]
+@Tempora/Pasc7-5:Responsory1
+
+[Responsory6]
+R. Gaudéte justi in Dómino, allelúia, rectos decet collaudátio,
+* Allelúia, allelúia.
+V. Cantáte ei cánticum novum: bene psállite ei in jubilatióne.
+R. Allelúia, allelúia.
+
+[Responsory7]
+@Commune/C1p:Responsory3:1-2
+V. In conspéctu omnis pópuli ejus.
+@Commune/C1p:Responsory3:4
+
+[Responsory8]
+@Commune/C1p:Responsory2
+
+[Responsory9]
+@Commune/C2p:Responsory6:1-2
+V. Induit eos Dóminus stola glóriæ, et coronávit eos:
+@Commune/C2p:Responsory6:4
+
+[Responsory10]
+@Commune/C1p:Responsory4:1-2
+V. Vox exsultatiónis, et salútis in tabernáculis justórum.
+@Commune/C1p:Responsory4:4
+
+[Responsory11]
+R. Beátus vir qui métuit Dóminum, allelúia: In mandátis ejus cupit nimis, allelúia.
+* Allelúia, allelúia.
+V. Potens in terra erit semen ejus: generátio rectórum benedicétur.
+R. Allelúia, allelúia.
+
+[Responsory12]
+@Tempora/Pasc0-2:Responsory2
+
+[Responsory12 duo]
+R. Isti sunt duæ olívæ, et duo candelábra lucéntia ante Dóminum, allelúia.
+* Habent potestátem cláudere cœlum núbibus, et aperíre portas ejus, quia linguæ eórum claves cœli factæ sunt, allelúia.
+V. Isti sunt duo fílii splendóris, qui assístunt Dominatóri terræ:
+R. Habent potestátem cláudere cœlum núbibus, et aperíre portas ejus, quia linguæ eórum claves cœli factæ sunt, allelúia.
+
+[MM Capitulum]
+@CommuneCist/C1p:Capitulum Sexta
+_
+@CommuneCist/C1p:Versum 2
+
+[Ant Laudes]
+@:Ant Vespera
+
+[Versum 2]
+@:Versum 1
+
+[Ant 2]
+@Commune/C1p:Ant 1:s/llelúja/llelúia/gi s/llelú[ij]a\./llelúia, allelúia./ s/Dómine,/Dómine, allelúia,/
+
+[Responsory Breve Tertia]
+R.br. In omnem terram exívit sonus eórum, Allelúia, allelúia.
+R. In omnem terram exívit sonus eórum, Allelúia, allelúia.
+V. Et in fines orbis terræ verba eórum.
+R. Allelúia, allelúia.
+
+[Responsory Breve Sexta]
+R.br. Constítues eos Príncipes super omnem terram, allelúia, allelúia.
+R. Constítues eos Príncipes super omnem terram, allelúia, allelúia.
+V. Mémores erunt nóminis tui, Dómine.
+R. Allelúia, allelúia.
+
+[Ant Vespera 3]
+@:Ant Vespera:s/$/;;109/
+;;112
+;;115
+;;125
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+In cœléstibus regnis * Sanctórum habitátio est, allelúia, et in ætérnum réquies eórum, allelúia.

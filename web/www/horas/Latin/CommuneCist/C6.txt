@@ -1,0 +1,168 @@
+@CommuneM/C6
+
+[Rule]
+Antiphonas horas
+
+[Ant Vespera]
+Hæc est Virgo sápiens, * et una de número prudéntum.;;109
+Hæc est Virgo sápiens, * quam Dóminus vigilántem invénit.;;112
+Invénta bona margaríta, * dedit ómnia sua, et comparávit eam.;;121
+Média nocte * clamor factus est: Ecce sponsus venit, exíte óbviam ei.;;126
+Tunc surrexérunt omnes * Vírgines illæ, et ornavérunt lámpades suas.
+
+[Ant Vespera] (tempore paschali)
+@CommuneCist/C1p
+
+[Versum 1]
+@Commune/C6:Versum 2
+
+[Ant 1] (tempore paschali)
+Veni, Sponsa Christi, * áccipe corónam, quam tibi Dóminus præparávit in ætérnum. Allelúia, allelúia.
+
+[Invit] (tempore paschali)
+@CommuneCist/C2p
+
+[Ant Matutinum]
+O quam pulchra * est casta generátio cum claritáte!;;8
+Nigra sum, * sed formósa, fíliæ Jerúsalem; ídeo diléxit me Rex, et introdúxit me in cubículum suum.;;18
+Pulchra es * et decóra fília Jerúsalem, terríbilis ut castrórum ácies ordináta.;;23
+Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna.;;44
+Adjuvábit eam * Deus vultu suo: Deus in médio ejus, non commovébitur.;;45
+Hæc est quæ nescívit, * thorum in delícto, habébit fructum in respectióne animárum sanctárum.;;47
+Unguéntum effúsum * nomen tuum; ideo adolescéntulæ dilexérunt te nimis.;;84
+Revértere, * revértere, Sunamítis; revértere, ut intueámur te.;;86
+Dum esset Rex * in accúbitu suo, nardus mea dedit odórem suum.;;95
+Símile est * regnum cælórum hómini negotiatóri quærénti bonas margarítas: invénta una pretiósa, dedit ómnia sua, et comparávit eam.;;96
+Veniénte sponso, * prudens Virgo præparáta introívit cum eo ad núptias.;;97
+Veni * elécta mea, et ponam in te thronum meum, quia concupívit Rex spéciem tuam.;;98
+Prudéntes Vírgines, * aptáte vestras lámpades: ecce sponsus venit, exíte óbviam ei.;;249;250;251
+
+[Ant Matutinum] (tempore paschali)
+Allelúia, * allelúia, Allelúia;;8
+;;18
+;;23
+;;44
+;;45
+;;47
+Allelúia, * allelúia, Allelúia;;84
+;;86
+;;95
+;;96
+;;97
+;;98
+Allelúia, * allelúia, Allelúia;;249;250;251
+
+[Nocturn 1 Versum]
+@Commune/C6:Versum 1
+
+[Nocturn 3 Versum]
+V. Elégit eam Dóminus.
+R. In hæreditátem sibi.
+
+[Responsory1]
+@Commune/C6:Responsory2:1-2
+@Commune/C6:Responsory5:1 s/^R/V/
+@Commune/C6:Responsory2:4
+
+[Responsory2]
+@Commune/C6:Responsory3:1-2
+@Commune/C6:Responsory5:3
+@Commune/C6:Responsory3:4
+
+[Responsory3]
+@Commune/C6:Responsory4:1-2
+V. Audi fília, et vide, et inclína aurem tuam: et oblivíscere pópulum tuum, et domum patris tui:
+@Commune/C6:Responsory4:4
+
+[Lectio4]
+@Commune/C6:Lectio3:s/36-40/36-38/ s/39.*//s
+
+[Responsory4]
+R. Quinque prudéntes vírgines accepérunt óleum in vasis suis,
+* Cum lampádibus.
+V. Média autem nocte clamor factus est: Ecce, sponsus venit: exíte óbviam ei.
+R. Cum lampádibus.
+&Gloria
+R. Cum lampádibus.
+
+[Responsory5]
+@Commune/C6:Responsory5:1-2
+@Commune/C6:Responsory3:3:s/tuis,.*/tuis:/
+@Commune/C6:Responsory5:4
+
+[Responsory6]
+R. Veni Sponsa Christi, áccipe corónam, quam tibi Dóminus præparávit,
+* Pro cujus amóre sánguinem tuum fudísti, et cum Ángelis in paradísum introísti.
+V. Veni, elécta mea, et ponam in te thronum meum;  quia concupívit Rex spéciem tuam.
+R. Pro cujus amóre sánguinem tuum fudísti, et cum Ángelis in paradísum introísti.
+
+[Responsory7]
+@Commune/C6::1-2
+V. Accínxit fortitúdine lumbos suos, et roborávit bráchium suum:
+@Commune/C6::4
+
+[Responsory8]
+R. Afferéntur Regi Vírgines post eam, próximæ ejus afferéntur tibi,
+* In lætítia et exsultatióne.
+V. Prudéntes Vírgines, aptáte lámpades vestras: ecce sponsus venit, exíte óbviam ei:
+R. In lætítia et exsultatióne.
+&Gloria
+R. In lætítia et exsultatióne.
+
+[Responsory9]
+@CommuneM/C6:Responsory12
+
+[Responsory10]
+R. Veni, elécta mea, et ponam in te thronum meum:
+* Quia concupívit Rex spéciem tuam.
+V. Surge, própera, amíca mea, veni de Líbano, et coronáberis.
+R. Quia concupívit Rex spéciem tuam.
+
+[Responsory11]
+R. Surge, própera, amíca mea, et veni: jam enim hiems tránsiit, imber ábiit et recéssit:
+* Flores apparuérunt in terra.
+V. Vox túrturis audíta est in terra nostra, ficus prótulit grossos suos.
+R. Flores apparuérunt in terra.
+
+[Lectio12]
+@Commune/C6:Lectio9:s/Sunt namque.*//
+
+[Responsory12]
+R. Audi, fília, et vide, et inclína aurem tuam, et oblivíscere pópulum tuum, et domum Patris tui, et concupíscet Rex spéciem tuam:
+* Quóniam ipse est Dóminus Deus tuus.
+V. Induit te Dóminus vestiméntis salútis, et induménto lætítiæ circúmdedit te:
+R. Quóniam ipse est Dóminus Deus tuus.
+&Gloria
+R. Quóniam ipse est Dóminus Deus tuus.
+
+[MM Capitulum]
+@Commune/C6:Capitulum Sexta
+_
+@Commune/C6:Nocturn 2 Versum
+
+[Ant Laudes]
+@:Ant Vespera:s/;;.*//g
+
+[Versum 2]
+@:Versum 1
+
+[Ant 2]
+Símile est * regnum cœlórum sagénæ, missæ in mare, et ex omni génere píscium cóngreganti: quam, cum impléta esset, educéntes, et secus littus sedéntes, elegérunt bonos in vasa sua, malos autem foras misérunt.
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+Quinque prudéntes Vírgines * accepérunt óleum in vasis suis cum lampádibus: média autem nocte clamor factus est: Ecce sponsus venit, exite óbviam Christo Dómino.
+
+[Comment]
+Aliæ Lectiones Pro Virginibus ex Brev. Cist., pag. 145*
+
+[Lectio5 in 2 loco]
+@Commune/C6:Lectio4 in 2 loco:s/Gaudet .*//
+
+[Lectio6 in 2 loco]
+@Commune/C6:Lectio4 in 2 loco:s/.* Gaudet/Gaudet/s
+
+[Lectio7 in 2 loco]
+@Commune/C6:Lectio5 in 2 loco:s/.* Neque inánis/Neque inánis/ s/Sunt enim.*//

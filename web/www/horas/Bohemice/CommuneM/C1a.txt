@@ -6,15 +6,10 @@
 
 [Lectio5]
 @Commune/C1a:Lectio4:s/A právě díky kontemplaci.*//s
-(sed rubrica cisterciensis)
-@Commune/C1a:Lectio4:s/Tvář tedy.*//s
 
 [Lectio6]
 @Commune/C1a:Lectio4:s/.*A právě díky kontemplaci/A právě díky kontemplaci/s s/$/~/
 @Commune/C1a:Lectio5:s/Tyto čtyři tváře.*//
-
-[Lectio6] (rubrica cisterciensis)
-@Commune/C1a:Lectio4:s/.*Tvář tedy/Tvář tedy/s
 
 [Lectio7]
 @Commune/C1a:Lectio5:s/.*Tyto čtyři tváře/Tyto čtyři tváře/s s/$/~/
@@ -35,11 +30,3 @@
 
 [Lectio12]
 @Commune/C1a:Lectio9
-(sed rubrica cisterciensis)
-@Commune/C1a:Lectio9:s/Jemu tedy.*//
-
-[Evangelium]
-@Sancti/10-18
-
-[Capitulum Laudes]
-@Commune/C1

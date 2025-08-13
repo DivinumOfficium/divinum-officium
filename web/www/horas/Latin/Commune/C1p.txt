@@ -17,9 +17,6 @@ In velaménto * clamábant Sancti tui, Dómine, allelúja, allelúja, allelúja.
 Spíritus et ánimæ * justórum hymnum dícite Deo nostro, allelúja, allelúja.
 Fulgébunt justi * sicut sol in conspéctu Dei, allelúja.
 
-[Ant Vespera] (rubrica cisterciensis)
-Allelúia, * allelúia, allelúia.
-
 [Hymnus Vespera]
 {:H-Tristeserantapostoli:}v. Tristes erant Apóstoli
 De Christi acérbo fúnere,
@@ -88,18 +85,11 @@ Amen.
 V. Sancti et justi in Dómino gaudéte, allelúja.
 R. Vos elégit Deus in hereditátem sibi, allelúja.
 
-[Versum 1] (rubrica cisterciensis)
-V. Nimis honoráti sunt amíci tui, Deus, allelúia.
-R. Nimis confortátus est principátus eórum, allelúia.
-
 [Ant 1]
 Lux perpétua * lucébit Sanctis tuis, Dómine, et ætérnitas témporum, allelúja.
 
 [Invit]
 Regem Apostolórum Dóminum, * Veníte, adorémus, allelúja.
-
-[Invit] (rubrica cisterciensis)
-Allelúia, allelúia, * Allelúia.
 
 [Hymnus Matutinum]
 @:Hymnus Vespera
@@ -118,11 +108,11 @@ Lux perpétua * lucébit Sanctis tuis, Dómine, et ætérnitas témporum, allel�
 ;;96
 ;;98
 
-[Nocturn 2 Versum] (nisi rubrica cisterciensis)
+[Nocturn 2 Versum]
 V. Lux perpétua lucébit Sanctis tuis, Dómine, allelúja.
 R. Et ætérnitas témporum, allelúja.
 
-[Nocturn 3 Versum] (nisi rubrica cisterciensis)
+[Nocturn 3 Versum]
 V. Lætítia sempitérna super cápita eórum, allelúja.
 R. Gáudium et exsultatiónem obtinébunt, allelúja.
 
@@ -246,9 +236,6 @@ Amen.
 V. Pretiósa in conspéctu Dómini, allelúja.
 R. Mors Sanctórum ejus, allelúja.
 
-[Versum 2] (rubrica cisterciensis)
-@:Versum 1
-
 [Ant 2]
 Fíliæ Jerúsalem, * veníte et vidéte Mártyres cum corónis, quibus coronávit eos Dóminus in die solemnitátis et lætítiæ, allelúja, allelúja.
 
@@ -264,12 +251,6 @@ v. Scimus quóniam diligéntibus Deum ómnia cooperántur in bonum, iis qui sec�
 &Gloria
 @:Versum 1:1 s/V./R./ s/\, al.*/./
 
-[Responsory Breve Tertia] (rubrica cisterciensis)
-R.br. In omnem terram exívit sonus eórum, Allelúia, allelúia.
-R. In omnem terram exívit sonus eórum, Allelúia, allelúia.
-V. Et in fines orbis terræ verba eórum.
-R. Allelúia, allelúia.
-
 [Capitulum Sexta]
 !Sap. 5:5
 v. Ecce quómodo computáti sunt inter fílios Dei, et inter sanctos sors illórum est.
@@ -282,12 +263,6 @@ $Deo gratias
 @Psalterium/Common/Prayers:Alleluia Duplex: s/^/R. /
 &Gloria
 @:Nocturn 2 Versum:1 s/V./R./ s/\, al.*/./
-
-[Responsory Breve Sexta] (rubrica cisterciensis)
-R.br. Constítues eos Príncipes super omnem terram, allelúia, allelúia.
-R. Constítues eos Príncipes super omnem terram, allelúia, allelúia.
-V. Mémores erunt nóminis tui, Dómine.
-R. Allelúia, allelúia.
 
 [Capitulum Nona]
 @:Lectio Prima
@@ -313,6 +288,3 @@ $Deo gratias
 
 [Ant 3]
 Sancti et justi * in Dómino gaudéte, allelúja: vos elégit Deus in hereditátem sibi, allelúja.
-
-[Ant 3] (rubrica cisterciensis)
-In cœléstibus regnis * Sanctórum habitátio est, allelúia, et in ætérnum réquies eórum, allelúia.
