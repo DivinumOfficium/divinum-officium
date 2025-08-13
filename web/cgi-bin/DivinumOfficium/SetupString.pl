@@ -759,7 +759,13 @@ sub checklatinfile {
 
   my $redirect = $datafolder =~ /missa/i && $file =~ /C1[a-z]?/ ? '/../horas' : '';
 
+  # Hierarchy for Folder dependency:
+  # OCist => OSB (a.k.a. "M")
+  # OSB & OP => Roman
   -e "$datafolder$redirect/Latin/$file.txt"
+    || $file =~ s/(Sancti|Tempora|Commune)(?:Cist)(.*)/$1M$2/
+    && (-e "$datafolder$redirect/Latin/$file.txt")
+    && ($$file_ref = "$file$txt")
     || $file =~ s/(Sancti|Tempora|Commune)(?:M|OP)(.*)/$1$2/
     && (-e "$datafolder$redirect/Latin/$file.txt")
     && ($$file_ref = "$file$txt");

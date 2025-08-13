@@ -1353,10 +1353,12 @@ sub extract_common {
       my $divfolder = $datafolder;
       $divfolder =~ s/missa/horas/g if $commune =~ /C[1-5](?!\d)[a-z]?/;
       my $paschal_fname = "$divfolder/Latin/" . subdirname('Commune', $version) . "$commune" . 'p.txt';
-      $commune .= 'p' if -e $paschal_fname;
+      my $temp_fname = $paschal_fname;    # temp_fname solution to be removed again once CommuneCist is filled
+      $temp_fname =~ s/Cist/M/;
+      $commune .= 'p' if -e $paschal_fname || -e $temp_fname;
     }
     $commune = subdirname('Commune', $version) . "$commune.txt" if ($commune);
-  } elsif ($common_field =~ /(ex|vide)\s*Sancti(?:M|OP)?\/(.*)\s*$/i) {
+  } elsif ($common_field =~ /(ex|vide)\s*Sancti(?:M|OP|Cist)?\/(.*)\s*$/i) {
 
     # Another sanctoral office used as a pseudo-common.
     $communetype = $1;
@@ -1365,7 +1367,7 @@ sub extract_common {
   } elsif ($common_field =~ /(ex|vide)\s*(.*)\s*$/i) {
     $communetype = $1;
     my $name = $2;
-    $name =~ s/Tempora(?:M|OP)?\///i;    # ensure consistency also for Monastic
+    $name =~ s/Tempora(?:M|OP|Cist)?\///i;    # ensure consistency also for Monastic
 
     if ($name !~ /Sancti|Commune/i) {
       $commune = subdirname('Tempora', $version) . "$name.txt";
@@ -1855,6 +1857,7 @@ sub rankname {
 
 sub subdirname {
   my ($subdir, $version) = @_;
+  return "${subdir}Cist/" if $version =~ /Cisterciensis/;
   return "${subdir}M/" if $version =~ /^Monastic/;
   return "${subdir}OP/" if $version =~ /^Ordo Praedicatorum/;
   "$subdir/";
