@@ -22,6 +22,7 @@ Content-type: text/html; charset=utf-8
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML><HEAD>
+  <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
   <META NAME="Resource-type" CONTENT="Document">
   <META NAME="description" CONTENT="Divine Office">
   <META NAME="keywords" CONTENT="Divine Office, Breviarium, Liturgy, Traditional, Zsolozsma">
