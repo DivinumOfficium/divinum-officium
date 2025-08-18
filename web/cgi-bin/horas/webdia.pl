@@ -18,7 +18,7 @@ sub htmlHead {
   $onload && ($onload = " onload=\"$onload\";");
 
   my $is_mobile = ($officium eq 'Pofficium.pl');
-  my $viewport_tag = $is_mobile ? '  <META NAME="viewport" CONTENT="width=device-width, initial-scale=0.75">' : '';
+  my $viewport_tag = $is_mobile ? '  <META NAME="viewport" CONTENT="width=device-width, initial-scale=0.5">' : '';
 
   print <<"PrintTag";
 Content-type: text/html; charset=utf-8
