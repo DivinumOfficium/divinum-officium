@@ -1,0 +1,20 @@
+@Tempora/Pent11-4
+
+[Lectio1]
+@Tempora/Pent11-2::s/rex /rex (Josías) /
+
+[Responsory1]
+@Tempora/Pent01-1:Responsory2
+
+[Lectio2]
+@Tempora/Pent11-2::1-2 s/-5//
+
+[Responsory2]
+@Tempora/Pent01-1:Responsory3
+
+[Lectio3]
+@Tempora/Pent11-2:Lectio2:!2 s/4-5/5-6/
+@Tempora/Pent11-2::2
+
+[Responsory3]
+@TemporaOP/Pent03-1:Responsory3
