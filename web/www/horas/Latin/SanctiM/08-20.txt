@@ -3,7 +3,7 @@
 [Rule] (nisi rubrica 1963)
 12 lectiones
 
-[Hymnus Vespera] (rubrica 1930)
+[Hymnus Vespera] (nisi rubrica 1617)
 v. Jam Regína discúbuit,
 Sedens post Unigénitum:
 Nardus odórem tríbuit,
@@ -39,6 +39,9 @@ Per quam triúmphus Vírginis
 Et Bernárdi felícitas
 Manent in cæli cúria.
 Amen.
+
+[Hymnus Matutinum] (nisi rubrica 1617)
+@:Hymnus Vespera
 
 [Responsory1] (rubrica 1963)
 @Commune/C4a:Responsory8
@@ -85,7 +88,7 @@ Amen.
 @SanctiM/07-11M:Lectio11:s/.* (?=Et )// s/$/~/
 @SanctiM/07-11M::s/: ejus.*/./
 
-[Hymnus Laudes] (rubrica 1930)
+[Hymnus Laudes] (nisi rubrica 1617)
 v. Lacte quondam profluéntes,
 Ite, montes vos procul:
 Ite, colles, fusa quondam
