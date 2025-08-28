@@ -23,6 +23,16 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+<script>
+  // Send 5% of traffic to new infra
+  rand = Math.random()*100
+  percent_to_redirect = 5
+  console.log(rand)
+  if (rand < percent_to_redirect) {
+    const newUrl = window.location.protocol + "//www2.divinumofficium.com" + window.location.pathname + window.location.search + window.location.hash;
+    window.location.href = newUrl;
+  }
+</script>
 <title>Divinum Officium</title>
 </head>
 <body style="background-color:white;color:black">
