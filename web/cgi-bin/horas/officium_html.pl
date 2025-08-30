@@ -15,11 +15,11 @@ sub html_dayhead_c {
 
 #*** headline($head) prints headline for main and pray
 sub headline {
-  my ($head, $variant, $version1, $version2) = @_;
+  my ($head, $compare, $version1, $version2) = @_;
   my $compone;
   my $vers = version_displayname($version1);
 
-  if ($variant eq 'C') {
+  if ($compare) {
     $head = html_dayhead_c($head, $version1, $version2);
     $compone = "<A HREF='#' onclick=\"callbrevi(\'$date1\')\">One version</A>";
     $vers .= '/' . version_displayname($version2);
@@ -27,6 +27,8 @@ sub headline {
     $compone = '<A HREF="#" onclick="callcompare()">Compare</A>';
   }
   my $output = par_c($head);
+  return $output if our $content;
+
   $output .=
     "<H1><FONT COLOR='MAROON' SIZE='+1'><B><I>Divinum Officium</I></B></FONT>&nbsp;<FONT COLOR='RED' SIZE='+1'>$vers</FONT></H1>\n";
 
