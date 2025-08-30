@@ -27,6 +27,8 @@ sub headline {
     $compone = '<A HREF="#" onclick="callcompare()">Compare</A>';
   }
   my $output = par_c($head);
+  return $output if our $content;
+
   $output .=
     "<H1><FONT COLOR='MAROON' SIZE='+1'><B><I>Divinum Officium</I></B></FONT>&nbsp;<FONT COLOR='RED' SIZE='+1'>$vers</FONT></H1>\n";
 

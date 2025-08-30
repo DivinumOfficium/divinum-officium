@@ -95,8 +95,9 @@ our %translate;     #translation of the skeleton label for 2nd language
 
 our $command = strictparam('command');
 our $browsertime = strictparam('browsertime');
-our $buildscript = '';    #build script
+our $buildscript = '';                    #build script
 our $searchvalue = strictparam('searchvalue');
+our $content = strictparam('content');    # if set output only content wihout html headers menus etc
 
 if (!$searchvalue) { $searchvalue = '0'; }
 
@@ -149,8 +150,8 @@ if ($command =~ s/^pray//) {
 }
 our $hora = (@horas > 0) ? $horas[0] : '';
 
-setcookies('horasp', 'parameters');
-setcookies("horasg$cookies_suffix", 'general');
+setcookies('horasp', 'parameters') unless $content;
+setcookies("horasg$cookies_suffix", 'general') unless $content;
 
 if ($Ck) {
   $version1 = $version;    # save value for use in horas
@@ -242,6 +243,8 @@ if ($command =~ /setup(.*)/i) {
         }
         horas($hora);
       }
+
+      exit if $content;
 
       if ($officium ne 'Pofficium.pl' && @horas == 1) {
         print par_c("<INPUT TYPE='SUBMIT' VALUE='$hora persolut.' onclick='okbutton();'>");
