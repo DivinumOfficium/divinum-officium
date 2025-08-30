@@ -11,9 +11,9 @@ $REGULAR_VERSUS
 (sed tempore Nativitatis)
 V. Verbum caro factum est, alleluja.
 (sed die Sabbato Sancto)
-V. Vespere autem sabbati, quae lucescit in prima sabbati, alleluja.
+V. Vespere autem sabbati, quæ lucescit in prima sabbati, alleluja.
 (sed tempore Octava Paschæ)
-V. Haec dies quam fecit Dominus, alleluja.
+V. Hæc dies quam fecit Dominus, alleluja.
 (sed tempore Octava Ascensionis)
 V. Ascendit Deus in jubilatione, alleluja.
 (sed tempore Octava Pentecostes)
@@ -24,9 +24,9 @@ V. Et habitavit in nobis, alleluja
 (sed die Sabbato Sancto)
 R. Venit Maria Magdalene, et altera Maria, videre sepulcrum, alleluja.
 (sed tempore Octava Paschæ)
-R. Exsultemus et laetemur in ea, alleluja.
+R. Exsultemus et lætemur in ea, alleluja.
 (sed tempore Octava Ascensionis)
-R. Et Dominus in voce tubae, alleluja.
+R. Et Dominus in voce tubæ, alleluja.
 (sed tempore Octava Pentecostes)
 R. Et hoc quod continet omnia, scientiam habet vocis, alleluja.
 
@@ -34,7 +34,7 @@ R. Et hoc quod continet omnia, scientiam habet vocis, alleluja.
 @:Versus Ante:s/\$REGULAR_VERSUS/V. Oculi omnium, * in te sperant, Domine, et tu das escam illorum in tempore opportuno. Aperis tu manum tuam, et imples omne animal benedictione./
 
 [Versus Ante Coenam]
-@:Versus Ante:s/\$REGULAR_VERSUS/V. Edent pauperes, et saturabuntur, et laudabunt Dominum, qui requirunt eum : vivent corda eorum in saeculum saeculi./
+@:Versus Ante:s/\$REGULAR_VERSUS/V. Edent pauperes, et saturabuntur, et laudabunt Dominum, qui requirunt eum : vivent corda eorum in sæculum sæculi./
 
 [Oratio Ante]
 /: Postea :/~
@@ -43,23 +43,23 @@ R. Et hoc quod continet omnia, scientiam habet vocis, alleluja.
 /: Superior vel Sacerdos hebdomadarius :/~
 /: dicit: :/
 $Oremus
-Benedic, Domine, nos, et haec tua dona, quae de tua largitate sumus sumpturi. Per Christum Dominum nostrum,
+Benedic, Domine, nos, et hæc tua dona, quæ de tua largitate sumus sumpturi. Per Christum Dominum nostrum,
 R. Amen.
 
 [Benedictio Ante Prandium]
 /: Deinde Lector :/
 $Jube domne
-Benedictio. Mensae coelestis participes faciat nos Rex aeternae gloriae,
+Benedictio. Mensæ cœlestis participes faciat nos Rex æternæ gloriæ,
 R. Amen.
 
 [Benedictio Ante coenam]
 /: Deinde Lector :/
 $Jube domne
-Benedictio. Ad coenam vitae aeternae perducat nos Rex aeternae gloriae.
+Benedictio. Ad cœnam vitæ æternæ perducat nos Rex æternæ gloriæ.
 R. Amen.
 
 [Incipit Post]
-/: Aguntur gratiae hoc modo. :/
+/: Aguntur gratiæ hoc modo. :/
 /: Dicto a Lectore :/
 Tu autem, Domine, miserere nobis,
 R. Deo gratias.
@@ -74,9 +74,9 @@ $REGULAR_VERSUS1
 (sed tempore Nativitatis)
 V. Notum fecit Dominus, alleluja. 
 (sed die Sabbato Sancto)
-V. Vespere autem sabbati, quae lucescit in prima sabbati, alleluja.
+V. Vespere autem sabbati, quæ lucescit in prima sabbati, alleluja.
 (sed tempore Octava Paschæ)
-V. Haec dies quam fecit Dominus, alleluja.
+V. Hæc dies quam fecit Dominus, alleluja.
 (sed tempore Octava Ascensionis)
 V. Ascendens Christus in altum, alleluja.
 (sed tempore Octava Pentecostes)
@@ -87,11 +87,11 @@ R. Salutare suum, alleluja.
 (sed die Sabbato Sancto)
 R. Venit Maria Magdalene, et altera Maria, videre sepulcrum, alleluja.
 (sed tempore Octava Paschæ)
-R. Exsultemus et laetemur in ea, alleluja.
+R. Exsultemus et lætemur in ea, alleluja.
 (sed tempore Octava Ascensionis)
 R. Captivam duxit captivitatem, alleluja.
 (sed tempore Octava Pentecostes)
-R. Et coeperunt loqui, alleluja.
+R. Et cœperunt loqui, alleluja.
 
 [Versus Post Prandium]
 @:Versus Post:s/\$REGULAR_VERSUS1/V. Confiteantur tibi, Domine, omnia opera tua./ s/\$REGULAR_VERSUS2/R. Et Sancti tui benedicant tibi./
@@ -101,23 +101,23 @@ R. Et coeperunt loqui, alleluja.
 
 [Oratio Post]
 V. Dispersit, dedit pauperibus.
-R. Justitia ejus manet in saeculum saeculi.
+R. Justitia ejus manet in sæculum sæculi.
 V. Benedicam Dominum in omni tempore.
 R. Semper laus ejus in ore meo.
 V. In Domino laudabitur anima mea.
-R. Audiant mansueti, et laetentur,
+R. Audiant mansueti, et lætentur,
 V. Magnificate Dominum mecum.
 R. Et exaltemus nomen ejus in idipsum.
 V. Sit nomen Domini benedictum.
-R. Ex hoc nunc et usque in saeculum.
+R. Ex hoc nunc et usque in sæculum.
 /: Deinde sine Oremus. :/
-V. Retribuere dignare, Domine, omnibus nobis bona facientibus propter nomen tuum vitam aeternam,
+V. Retribuere dignare, Domine, omnibus nobis bona facientibus propter nomen tuum vitam æternam,
 R. Amen.
 V. Benedicamus Domino.
 R. Deo gratias.
-V. Fidelium animae per misericordiam Dei requiescant in pace.
+V. Fidelium animæ per misericordiam Dei requiescant in pace.
 R. Amen.
-$Pater noster
+$Pater totum secreto
 /: Quo finito, dicit Sacerdos : :/
 V. Deus det nobis suam pacem,
 R. Amen.
@@ -128,13 +128,13 @@ R. Amen.
 (sed rubrica Monastica)
 /: Superior vel Sacerdos hebdomadarius :/~
 /: absolute dicat : :/
-v. Agimus tibi gratias omnipotens Deus, pro universis beneficiis tuis : Qui vivis et regnas in saecula saeculorum.
+v. Agimus tibi gratias omnipotens Deus, pro universis beneficiis tuis : Qui vivis et regnas in sæcula sæculorum.
 R. Amen.
 /: Deinde alternatim dicitur :/
 
 [Gratiarum Coenam]
 /: Sacerdos dicat : :/
-v. Benedictus Deus in donis suis, et sanctus in omnibus operibus suis : Qui vivit et regnat in saecula saeculorum.
+v. Benedictus Deus in donis suis, et sanctus in omnibus operibus suis : Qui vivit et regnat in sæcula sæculorum.
 R. Amen.
 /: Deinde alternatim dicitur :/
 
@@ -171,8 +171,8 @@ V. Christus factus est pro nobis obediens usque ad mortem.
 $Pater noster.
 /: Deinde Sacerdos dicit absolute Orationem. :/
 /: Oratio. :/
-v. Respice, quaesumus Domine, super hanc familiam tuam, pro qua Dominus noster Jesus Christus non dubitavit manibus tradi nocentium, et crucis subire tormentum.
-/: Et non pronuntiatur Qui tecum. nec Fidelium animae, sed secreto dicitur  :/
+v. Respice, quæsumus Domine, super hanc familiam tuam, pro qua Dominus noster Jesus Christus non dubitavit manibus tradi nocentium, et crucis subire tormentum.
+/: Et non pronuntiatur Qui tecum. nec Fidelium animæ, sed secreto dicitur  :/
 $Pater noster
 /: nec additur Deus det nobis suam pacem. :/
 
@@ -189,7 +189,7 @@ $Pater noster
 @:Incipit
 @:Versus Ante Prandium
 &Gloria
-$mLitany
+$mLitany2
 @:Oratio Ante
 @:Benedictio Ante Prandium
 
@@ -208,7 +208,7 @@ $mLitany
 &psalm(46)
 (sed tempore Octava Pentecostes)
 &psalm(47)
-$mLitany
+$mLitany2
 @:Oratio Post
 
 [ANTE COENAM]
@@ -216,7 +216,7 @@ $mLitany
 @:Incipit
 @:Versus Ante Coenam
 &Gloria
-$mLitany
+$mLitany2
 @:Oratio Ante
 @:Benedictio Ante coenam
 
@@ -227,5 +227,5 @@ $mLitany
 &Gloria
 @:Gratiarum Coenam
 &psalm(116)
-$mLitany
+$mLitany2
 @:Oratio Post
