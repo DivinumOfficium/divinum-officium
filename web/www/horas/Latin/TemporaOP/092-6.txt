@@ -1,0 +1,22 @@
+@Tempora/092-6
+
+[Lectio1]
+@Tempora/092-6::1
+@Tempora/092-6:Lectio2:!2 s/, et dedérunt.*//
+
+[Responsory1]
+@TemporaOP/091-3
+
+[Lectio2]
+@Tempora/092-6:Lectio3:1 s/12-16/11-14/
+@Tempora/092-6::4 s/.* (et dedérunt)/11 \u$1/
+@Tempora/092-6:Lectio3:2-4
+
+[Responsory2]
+@TemporaOP/091-3
+
+[Lectio3]
+@Tempora/092-6::!2-4
+
+[Responsory3]
+@TemporaOP/091-0:Responsory3
