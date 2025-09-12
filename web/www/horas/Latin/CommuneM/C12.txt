@@ -98,19 +98,6 @@ $Oremus
 _
 $Dulce nomen
 
-[Prelude Matutinum]
-# Incipit
-
-$Ave Maria
-(sed rubrica cisterciensis)
-$Ave Maria Parvum
-(sed rubrica 1963 omittitur)
-$Domine labia
-$Deus in adjutorium
-(deinde dicitur)
-&Alleluia
-(sed rubrica cisterciensis omittitur)
-
 [Ant Laudes]
 @Commune/C12::s/$/;;148/s
 (sed rubrica cisterciensis)
@@ -204,3 +191,16 @@ $Oremus
 @:Oratio Sexta: s/$/~/m s/Per eumdem/Per eumdem Christum\n\$Amen/
 _
 $Dulce nomen
+
+[Prelude Matutinum]
+# Incipit
+
+$Ave Maria
+(sed rubrica cisterciensis)
+$Ave Maria Parvum
+(sed rubrica 1963 omittitur)
+$Domine labia
+$Deus in adjutorium
+(deinde dicitur)
+&Alleluia
+(sed rubrica cisterciensis omittitur)

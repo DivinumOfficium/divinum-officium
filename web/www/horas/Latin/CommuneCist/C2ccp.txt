@@ -1,19 +1,19 @@
-@CommuneM/C2p
+@CommuneCist/C2p
 
 [Officium]
 Commune Unius Martyris Commemorati T.P.
 
-[Ant 1]
-@CommuneM/C2p:Ant 2
-
-[Ant 2]
-@CommuneM/C2p:Ant 1
-
 [Versum 1]
-@CommuneM/C3:Nocturn 1 Versum
+@CommuneCist/C3:Nocturn 1 Versum
+
+[Ant 1]
+@CommuneCist/C2p:Ant 2
 
 [Versum 2]
 @:Versum 1
+
+[Ant 2]
+@CommuneCist/C2p:Ant 1
 
 [Versum 3]
 @:Versum 1

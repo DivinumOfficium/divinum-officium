@@ -2,30 +2,7 @@
 
 [Rule]
 Psalmi Dominica
-(sed rubrica cisterciensis omittitur)
 Antiphonas horas
-
-[Ant Vespera] (rubrica cisterciensis)
-@Commune/C3::s/Omnes Sancti/Sancti Mártyres/ s/cæl/cœl/g
-
-[Versum 1] (rubrica cisterciensis)
-V. Justi in perpétuum vivent.
-R. Et apud Dóminum est merces eórum.
-
-[Versum 2] (rubrica cisterciensis)
-@:Versum 1
-
-[Versum 3] (rubrica cisterciensis)
-@:Versum 1
-
-[Ant 1] (rubrica cisterciensis)
-Isti sunt sancti * qui pro testaménto Dei sua córpora tradidérunt, et in sánguine Agni lavérunt stolas suas.
-
-[Ant 2] (rubrica cisterciensis)
-Fulgébunt justi: * et tamquam scintíllæ in arundinéto discúrrent. Judicábunt natiónes, et regnábunt in ætérnum.
-
-[Ant Laudes]
-@Commune/C3:Ant Vespera:s/Omnes Sancti/Sancti Mártyres/ s/cæl/cœl/g
 
 [AntMatutinumM]
 Oculi Dómini * respexérunt in páuperes, † cum peccatóres arcus suos in eos inténderent.;;10
@@ -40,47 +17,8 @@ Beáti, * qui persecutiónem patiúntur propter justítiam, quóniam ipsórum es
 @Commune/C3::4-9
 @:AntMatutinumM:2-5
 
-[Ant Matutinum] (rubrica cisterciensis)
-Secus decúrsus aquárum * plantávit víneam justórum, et in lege Dómini fuit volúntas eórum.;;1
-Prædicántes * præcéptum Dómini constitúti sunt in monte sancto ejus.;;2
-@Commune/C2::4:s/sanctum suum/sanctos suos/
-Læténtur omnes, * qui sperant in te, Dómine, quóniam tu benedixísti justis: scuto bonæ voluntátis tuæ coronásti eos.;;5
-@Commune/C2::6:s/eum/eos/
-Sanctis, qui in terra sunt ejus, * mirificávit omnes voluntátes meas inter illos.;;15
-@:Ant Vespera 3:4:s/$/;;23/
-Justi autem * in perpétuum vivent, et apud Dóminum est merces eórum.;;32
-Justórum autem ánimæ * in manu Dei sunt, et non tanget illos torméntum mortis.;;33
-Fulgébunt justi * sicut sol in regno Patris eórum, allelúia.;;45
-@Commune/C3::4:s/;1/;6/
-@Commune/C3:Ant Vespera 3:2:s/;;110/;;78/
-@Sancti/06-26:Ant 2:s/$/;;259;254;255/
-
-[Nocturn 1 Versum] (rubrica cisterciensis)
-@Commune/C3:Nocturn 2 Versum
-
-[Nocturn 2 Versum] (rubrica cisterciensis)
-@:MM Capitulum:s/.*[V℣]\./V./s
-
-[MM Capitulum]
-@Commune/C3:Capitulum Sexta
-_
-V. Justórum ánimæ in manu Dei sunt.
-R. Et non tanget illos torméntum mortis.
-
-[Nocturn 3 Versum] (rubrica cisterciensis)
-V. Gloriósus Deus in Sanctis suis.
-R. Mirábilis in Majestáte sua.
-
-[Lectio1] (rubrica cisterciensis)
-@Commune/C3:Lectio1:s/-19/-17/ :s/18 .*//s
-
 [Lectio2]
 @Commune/C3:Lectio2:s/-34/-30/ :s/31 .*//s
-
-[Lectio2] (rubrica cisterciensis)
-@Commune/C3:Lectio1:2:s/12-19/18-19, 28-30/
-@Commune/C3:Lectio1:s/.*18/18/s
-@Commune/C3:Lectio2:2-4
 
 [Lectio3]
 @Commune/C3:Lectio2:s/28-/31-/ s/28 .*31 /31 /s
@@ -88,22 +26,11 @@ R. Mirábilis in Majestáte sua.
 [Lectio4]
 @Commune/C3:Lectio3
 
-[Responsory4_]
+[Responsory4]
 R. Sancti per fidem vicérunt regna, operáti sunt justítiam, adépti sunt promissiónes, et fortes facti sunt in bello:
 * Omnes testimónio fídei probáti.
 V. Castra vertérunt exterórum, effugavérunt áciem gládii.
 R. Omnes testimónio fídei probáti.
-
-[Responsory4C]
-R. Sancti tui, Dómine, mirábile consecúti sunt iter, serviéntes præcéptis tuis, 
-* Ut inveniréntur illǽsi in aquis válidis: terra appáruit árida: et in Mari Rubro via sine impediménto.
-V. Victrícem manum tuam laudavérunt páriter, et decantavérunt, Dómine, nomen sanctum tuum.
-R. Ut inveniréntur illǽsi in aquis válidis: terra appáruit árida: et in Mari Rubro via sine impediménto.
-
-[Responsory4]
-@:Responsory4_
-(sed rubrica cisterciensis)
-@:Responsory4C
 
 [Lectio5]
 @Commune/C3:Lectio4:s/Solemnitátes .*//s
@@ -117,19 +44,12 @@ R. Ut inveniréntur illǽsi in aquis válidis: terra appáruit árida: et in Mar
 
 [Responsory6]
 @Commune/C3:Responsory5
-(sed rubrica cisterciensis)
-@Commune/C3:Responsory8 in 2 loco
 
 [Lectio7]
 @Commune/C3:Lectio5:s/.* Sed et Paulus /Sed et Paulus /s
 
 [Responsory7]
 @Commune/C3:Responsory6
-
-[Responsory7] (rubrica cisterciensis)
-@Commune/C3:Responsory7:1-2
-V. Memória eórum non derelinquétur, et nomen eórum in ætérnum manet:
-@Commune/C3:Responsory7:4
 
 [Lectio8]
 @Commune/C3:Lectio6
@@ -140,53 +60,28 @@ R. Certámen magnum habuérunt Sancti Dei: transiérunt per ignem at aquam, et s
 V. Immánia enim pro Christo in suis corpóribus pertulérunt torménta.
 R. Et corónas accepérunt a Dómino Deo.
 
-[Responsory8] (rubrica cisterciensis)
-R. Justi in perpétuum vivent, et apud Dóminum est merces eórum, et cogitátio illórum apud Altíssimum:
-* Ideóque accípient regnum decóris de manu Dómini.
-V. Deus tentávit illos et invénit eos dignos se:
-R. Ideóque accípient regnum decóris de manu Dómini.
-&Gloria
-R. Ideóque accípient regnum decóris de manu Dómini.
-
 [Lectio9]
 @Commune/C3:Lectio7:s/Pensánda .*//s
 
 [Responsory9]
 @Commune/C3:Responsory7
-(sed rubrica cisterciensis)
-@:Responsory4_
 
 [Lectio10]
 @Commune/C3:Lectio7:s/.* Pensánda /Pensánda /s s/$/~/
 @Commune/C3:Lectio8:s/Última .*//s
-(sed rubrica cisterciensis)
-@Commune/C3:Lectio8:s/, et regnum .*/./s
 
 [Responsory10]
 @Commune/C3:Responsory8
-(sed rubrica cisterciensis)
-@:Responsory11_
 
 [Lectio11]
 @Commune/C3:Lectio8:s/.* Última /Última /s s/$/~/
 @Commune/C3:Lectio9:s/Ait .*//s
 
-[Responsory11_]
+[Responsory11]
 R. Córpora Sanctórum in pace sepúlta sunt,
 * Et nómina eórum vivent in generatiónem et generatiónem.
 V. Sapiéntiam Sanctórum narrent pópuli, et laudem eórum pronúntiet omnis Ecclésia.
 R. Et nómina eórum vivent in generatiónem et generatiónem.
-
-[Responsory11C]
-R. Justórum ánimæ in manu Dei sunt,
-* Et non tanget illos torméntum mortis. 
-V. Visi sunt óculis insipiéntium mori, illi autem sunt in pace.
-R. Et non tanget illos torméntum mortis. 
-
-[Responsory11]
-@:Responsory11_
-(sed rubrica cisterciensis)
-@:Responsory11C
 
 [Lectio12]
 @Commune/C3:Lectio9:s/.* Ait /Ait /s s/\&teDeum .*//s
@@ -199,43 +94,14 @@ R. Illi autem sunt in pace.
 &Gloria
 R. Illi autem sunt in pace.
 
-[Responsory12] (rubrica cisterciensis)
-@CommuneM/C2p:Responsory12Cist:s/, [Aa]llel[úu][ij]a//g
-
 [MM Capitulum]
 @Commune/C3:Capitulum Sexta
 _
 V. Justórum ánimæ in manu Dei sunt.
 R. Et non tanget illos torméntum mortis.
 
-[Comment]
-Section for Office of 3-Lessons (Simplex)
-
-[Lectio1S]
-@CommuneM/C2p:Lectio1
-
-[Responsory1S]
-@Commune/C3:Responsory3:1-2
-V. Immánia enim pro Christo in suis corpóribus pertulérunt torménta:
-@Commune/C3:Responsory3:4
-
-[Responsory2S]
-@Commune/C3:Responsory5
-
-[Responsory3S]
-@Commune/C3:Responsory8 in 2 loco
-
 [Ant Vespera 3]
 @Commune/C3::s/112/115/ s/111/112/ s/110/111/
-
-[Ant Vespera 3] (rubrica cisterciensis)
-Si coram homínibus * torménta passi sunt, spes electórum est immortális in ætérnum.
-Tamquam aurum in fornáce * probávit eléctos Dóminus, et quasi holocáusti hóstiam accépit illos.
-Istórum est enim * regnum cœlórum, qui contempsérunt vitam mundi, et pervenérunt ad præmia regni, et lavérunt stolas suas in sánguine Agni.
-Via Justórum * recta facta est, et iter Sanctórum præparátum est.
-
-[Ant 3] (rubrica cisterciensis)
-Tradidérunt * córpora sua ad supplícia: ídeo coronántur, et accípiunt palmas.
 
 [Lectio5 in 2 loco]
 @Commune/C3:Lectio4 in 2 loco
@@ -244,7 +110,7 @@ Tradidérunt * córpora sua ad supplícia: ídeo coronántur, et accípiunt palm
 @Commune/C3:Lectio5 in 2 loco
 
 [Lectio7 in 2 loco]
-@Commune/C3:Lectio6 in 2 loco:s/Habes.*// 
+@Commune/C3:Lectio6 in 2 loco:s/Habes.*//
 
 [Lectio8 in 2 loco_]
 His te jamdúdum Dóminus per grátiam ímbuit, et póstmodum Apóstolus Paulus armávit. Hæc sunt arma, quibus dimicárunt Sancti, quorum virtútes díligis et victórias admiráris. Imitáre, christiáne, quos díligis Sanctos; et quorum virtútes frequéntas, eórum vitam et institúta sectáre. Esto talis de eórum exémplo; quia et hi de superiórum tales effécti sunt. Nec enim virtus ab eo póterit imitári cujúsquam, qui ejus vitam non fúerit imitátus.
@@ -265,13 +131,8 @@ His te jamdúdum Dóminus per grátiam ímbuit, et póstmodum Apóstolus Paulus 
 [Lectio12 in 2 loco]
 @Commune/C3:Lectio9 in 2 loco:s/\&teDeum .*//s
 
-[Evangelium in 2 loco]
-@Commune/C3a:Evangelium
-
 [Lectio9 in 3 loco]
 @Sancti/06-26:Lectio7
-(sed rubrica cisterciensis)
-@Sancti/06-26:Lectio7:s/Est ergo.*//
 
 [Lectio10 in 3 loco]
 @Sancti/06-26:Lectio8:s/Ne terreámini .*//s
@@ -281,11 +142,6 @@ His te jamdúdum Dóminus per grátiam ímbuit, et póstmodum Apóstolus Paulus 
 
 [Lectio12 in 3 loco]
 @Sancti/06-26:Lectio9:s/\&teDeum .*//s
-(sed rubrica cisterciensis)
-@Sancti/06-26:Lectio9:s/Nonne quinque.*//
-
-[Evangelium in 3 loco]
-@Sancti/06-26:Evangelium
 
 [Lectio9 in 4 loco]
 @Sancti/09-19:Lectio7:s/Respondétur .*//s
@@ -299,9 +155,6 @@ His te jamdúdum Dóminus per grátiam ímbuit, et póstmodum Apóstolus Paulus 
 [Lectio12 in 4 loco]
 @Sancti/09-19:Lectio9:s/\&teDeum .*//s
 
-[Evangelium in 4 loco]
-@Sancti/09-19:Evangelium
-
 [Lectio9 in 5 loco]
 @Sancti/06-05:Lectio7:s/Beáti pacífici.*//s
 
@@ -314,9 +167,6 @@ His te jamdúdum Dóminus per grátiam ímbuit, et póstmodum Apóstolus Paulus 
 [Lectio12 in 5 loco]
 @Sancti/06-05:Lectio9:s/\&teDeum .*//s
 
-[Evangelium in 5 loco]
-@Sancti/06-05:Evangelium
-
 [Lectio9 in 6 loco]
 @CommuneM/C5:Lectio9 in 3 loco
 
@@ -328,9 +178,6 @@ His te jamdúdum Dóminus per grátiam ímbuit, et póstmodum Apóstolus Paulus 
 
 [Lectio12 in 6 loco]
 @CommuneM/C5:Lectio12 in 3 loco
-
-[Evangelium in 6 loco]
-@Sancti/02-24:Evangelium
 
 [Lectio9 in 7 loco]
 Léctio sancti Evangélii secúndum Lucam.
@@ -349,6 +196,21 @@ Ecce dedi vobis potestátem, calcándi supra serpéntes et scorpiónes, hoc est,
 
 [Lectio12 in 7 loco]
 Hoc sane inter serpéntes, qui dente, et scorpiónes, qui cauda nocent, distáre árbitror: quod serpéntes apérte sæviéntes, scorpiónes clánculo insidiántes, vel hómines, vel dæmones signíficent: serpéntes, qui inchoándis virtútibus venéna pravæ persuasiónis objíciunt: scorpiónes, qui consummátas virtútes ad finem vitiáre conténdunt. Verúmtamen in hoc nolíte gaudére, quia spíritus ejícere, sicut et virtútes álias fácere, intérdum non est ejus mériti, qui operátur; sed invocátio nóminis Christi hoc agit.
+
+[Evangelium in 2 loco]
+@Commune/C3a:Evangelium
+
+[Evangelium in 3 loco]
+@Sancti/06-26:Evangelium
+
+[Evangelium in 4 loco]
+@Sancti/09-19:Evangelium
+
+[Evangelium in 5 loco]
+@Sancti/06-05:Evangelium
+
+[Evangelium in 6 loco]
+@Sancti/02-24:Evangelium
 
 [Evangelium in 7 loco]
 @Sancti/06-15:Evangelium

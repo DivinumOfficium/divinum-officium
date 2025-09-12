@@ -27,21 +27,6 @@
 ;;78
 @Commune/C1p::7 s/;;74/;;259;254;255/
 
-[Ant Matutinum] (rubrica cisterciensis)
-Allelúia, * allelúia, Allelúia.;;1
-;;2
-;;4
-;;5
-;;8
-;;15
-Allelúia, * allelúia, Allelúia.;;23
-;;32
-;;33
-;;45
-;;64
-;;78
-Allelúia, * allelúia, Allelúia.;;259;254;255
-
 [Lectio9] (nisi rubrica cisterciensis)
 @CommuneM/C2p:Lectio9 in 2 loco
 
@@ -54,8 +39,8 @@ Allelúia, * allelúia, Allelúia.;;259;254;255
 [Lectio12] (nisi rubrica cisterciensis)
 @CommuneM/C2p:Lectio12 in 2 loco
 
-[Evangelium] (nisi rubrica cisterciensis)
-@Commune/C3p
-
 [HymnusM Laudes]
 @Commune/C3
+
+[Evangelium] (nisi rubrica cisterciensis)
+@Commune/C3p

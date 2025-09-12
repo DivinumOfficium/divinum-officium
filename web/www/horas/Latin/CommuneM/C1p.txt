@@ -2,15 +2,8 @@
 
 [Rule]
 Psalmi Dominica
-(sed rubrica cisterciensis omittitur)
 Antiphonas horas
 Una antiphona
-
-[Ant 1] (rubrica cisterciensis)
-@Commune/C1p:Ant 2
-
-[Ant 2] (rubrica cisterciensis)
-@Commune/C1p:Ant 1:s/llelúja/llelúia/gi s/llelú[ij]a\./llelúia, allelúia./ s/Dómine,/Dómine, allelúia,/
 
 [Ant Matutinum]
 @Commune/C1p::1-3
@@ -25,146 +18,35 @@ Una antiphona
 ;;100
 @Commune/C1p::9 s/74/253;254;255/
 
-[Ant Matutinum] (rubrica cisterciensis)
-Allelúia, * allelúia, Allelúia.;;18
-;;23
-;;32
-;;33
-;;44
-;;46
-Allelúia, * allelúia, Allelúia.;;60
-;;63
-;;64
-;;74
-;;96
-;;98
-Allelúia, * allelúia, Allelúia.;;253;254;255
-
-[Nocturn 1 Versum] (rubrica cisterciensis)
-@CommuneM/C1::s/\.$/, allelúia./gm
-
-[Nocturn 2 Versum] (rubrica cisterciensis)
-@Commune/C1::s/\.$/, allelúia./gm
-
-[Nocturn 3 Versum] (rubrica cisterciensis)
-@Commune/C1::s/\.$/, allelúia./gm
-
-[Lectio1] (rubrica cisterciensis)
-@CommuneM/C1
-
-[Lectio2] (rubrica cisterciensis)
-@CommuneM/C1
-
-[Lectio3] (rubrica cisterciensis)
-@CommuneM/C1
-
-[Lectio4] (rubrica cisterciensis)
-@CommuneM/C1
-
-[Lectio5] (rubrica cisterciensis)
-@CommuneM/C1
-
-[Lectio6] (rubrica cisterciensis)
-@CommuneM/C1
-
-[Lectio7] (rubrica cisterciensis)
-@CommuneM/C1
-
-[Lectio8] (rubrica cisterciensis)
-@CommuneM/C1
-
-[Responsory1] (rubrica cisterciensis)
-@Commune/C1p:Responsory5
-
-[Responsory2] (rubrica cisterciensis)
-@:Responsory4_:s/Apóstoli // s/Apoštolové //i
-
-[Responsory3] (rubrica cisterciensis)
-@Commune/C1p:Responsory7:1-2
-V. Manéte in dilectióne mea, sicut diléxi vos.
-@Commune/C1p:Responsory7:4
-
 [Responsory4]
-@:Responsory4_
-(sed rubrica cisterciensis)
-@:Responsory4C
-
-[Responsory4_]
 R. Ibant Apóstoli gaudéntes a conspéctu concílii, 
 * Quóniam digni hábiti sunt pro nómine Jesu contuméliam pati, † allelúja, allelúja, allelúja.
 V. Non sunt loquélæ, neque sermónes, quorum non audiántur voces eórum.
 R. Quóniam digni hábiti sunt pro nómine Jesu contuméliam pati, † allelúja, allelúja, allelúja.
 
-[Responsory4C]
-R. Docéte fílios vestros, allelúia.
-* Ut memóriter téneant, allelúia, et ore decántent, * Allelúia, allelúia.
-V. Fílii qui nascéntur et exúrgent, enarrábunt fíliis suis: 
-R. Ut memóriter téneant, allelúia, et ore decántent.
-&Gloria
-R. Allelúia, allelúia.
-
 [Responsory5]
 @Commune/C1p:Responsory4
-(sed rubrica cisterciensis)
-@Tempora/Pasc7-5:Responsory1
 
 [Responsory6]
 @Commune/C1p:Responsory5
 
-[Responsory6] (rubrica cisterciensis)
-R. Gaudéte justi in Dómino, allelúia, rectos decet collaudátio,
-* Allelúia, allelúia.
-V. Cantáte ei cánticum novum: bene psállite ei in jubilatióne.
-R. Allelúia, allelúia.
-
 [Responsory7]
 @Commune/C1p:Responsory6
 
-[Responsory7] (rubrica cisterciensis)
-@Commune/C1p:Responsory3:1-2
-V. In conspéctu omnis pópuli ejus.
-@Commune/C1p:Responsory3:4
-
 [Responsory8]
 @Tempora/Pasc3-1:Responsory1
-(sed rubrica cisterciensis)
-@Commune/C1p:Responsory2
 
 [Responsory9]
 @Commune/C1p:Responsory7
 
-[Responsory9] (rubrica cisterciensis)
-@Commune/C2p:Responsory6:1-2
-V. Induit eos Dóminus stola glóriæ, et coronávit eos:
-@Commune/C2p:Responsory6:4
-
 [Responsory10]
 @Commune/C1p:Responsory8
-
-[Responsory10] (rubrica cisterciensis)
-@Commune/C1p:Responsory4:1-2
-V. Vox exsultatiónis, et salútis in tabernáculis justórum.
-@Commune/C1p:Responsory4:4
 
 [Responsory11]
 @Tempora/Pasc0-2:Responsory2
 
-[Responsory11] (rubrica cisterciensis)
-R. Beátus vir qui métuit Dóminum, allelúia: In mandátis ejus cupit nimis, allelúia.
-* Allelúia, allelúia.
-V. Potens in terra erit semen ejus: generátio rectórum benedicétur.
-R. Allelúia, allelúia.
-
 [Responsory12]
 @Tempora/Pasc7-5:Responsory1
-(sed rubrica cisterciensis)
-@Tempora/Pasc0-2:Responsory2
-
-[Responsory12 duo]
-R. Isti sunt duæ olívæ, et duo candelábra lucéntia ante Dóminum, allelúia.
-* Habent potestátem cláudere cœlum núbibus, et aperíre portas ejus, quia linguæ eórum claves cœli factæ sunt, allelúia.
-V. Isti sunt duo fílii splendóris, qui assístunt Dominatóri terræ:
-R. Habent potestátem cláudere cœlum núbibus, et aperíre portas ejus, quia linguæ eórum claves cœli factæ sunt, allelúia.
 
 [MM Capitulum]
 @Commune/C1p:Capitulum Sexta
@@ -173,4 +55,3 @@ _
 
 [Ant Vespera 3]
 @Commune/C1p::s/125/138/
-(sed rubrica cisterciensis omittitur)

@@ -11,15 +11,23 @@
 
 [Lectio1]
 @CommuneM/C4a
+(sed rubrica cisterciensis)
+@CommuneCist/C4a
 
 [Lectio2]
 @CommuneM/C4a
+(sed rubrica cisterciensis)
+@CommuneCist/C4a
 
 [Lectio3]
 @CommuneM/C4a
+(sed rubrica cisterciensis)
+@CommuneCist/C4a
 
 [Lectio4]
 @CommuneM/C4a
+(sed rubrica cisterciensis)
+@CommuneCist/C4a
 
 [Lectio5]
 @Sancti/09-30:Lectio4:s/ Tum religiónis .*//

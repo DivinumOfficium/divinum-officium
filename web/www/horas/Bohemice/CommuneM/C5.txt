@@ -1,109 +1,26 @@
-[Ant Vespera] (rubrica cisterciensis)
-Mnozí budou chválit * jeho moudrost, a až navěky nebude vymazán z paměti.
-Poznal jej Hospodin * ve svých požehnáních, a nalezl milost v očích Hospodinových.
-Spravedlivého vedl Hospodin * po přímých cestách, a ukázal mu království Boží, a dal mu poznat to, co znají Svatí: poctil ho útrapami, a jeho dílo dokončil.
-Spravedlivý * své srdce za úsvitu oddá k bdění v Pánu, který jej stvořil, a pod zrakem Nejvyššího prosí.
-Služebníku dobrý * a věrný, protože jsi byl věrný nad málem, ustanovím tě nad mnohými věcmi, vejdi to radosti svého Pána.
-
-[Ant Vespera] (tempore paschali et rubrica cisterciensis)
-Alleluja, * alleluja, alleluja.
-
-[Ant 1] (rubrica cisterciensis)
-Tento poznal * spravedlnost, a uzřel veliké zázraky, a modlil se k Nejvyššímu, a shledán byl v počtu Svatých.
-
-[Ant 1] (tempore paschali et rubrica cisterciensis)
-Blažen je muž, * který má bázeň před Hospodinem, alleluja, a po jeho přikázáních velmi touží, alleluja.
-
-[Nocturn 3 Versum] (rubrica cisterciensis)
-V. Spravedlivý pokvete jako palma.
-R. Bude rozmnožen jako libanonský cedr.
-
-[Responsory8_]
+[Responsory8]
 R. Touhu jeho duše jsi mu vyplnil, Hospodine;
 * A vůli jeho rtů jsi nezpronevěřil.
 V. Život od tebe žádal, a ty jsi mu jej dal, Hospodine.
 R. A vůli jeho rtů jsi nezpronevěřil.
 
-[Responsory8]
-@:Responsory8_
-(sed rubrica cisterciensis)
-@CommuneM/C4:Responsory4
-(sed tempore paschali et rubrica cisterciensis)
-@Tempora/Pasc0-2:Responsory2
+[Lectio9]
+@Commune/C5:Lectio7:s/ Ale protože .*//s
 
-[Responsory11_]
+[Lectio10]
+@Commune/C5:Lectio7:s/.* Ale protože /Ale protože /s
+
+[Responsory11]
 R. Blažen je muž, jenž shledán byl bez poskvrny, a který se za zlatem nepachtil, ani nespoléhal na poklady v penězích;
 * Proto upevněna byla jeho dobra v Hospodinu.
 V. Mohl sice spáchat zločin, ale nespáchal; konat zlé věci, ale nekonal.
 R. Proto upevněna byla jeho dobra v Hospodinu.
-
-[Responsory11C]
-R. Štolou radosti oběl jej Hospodin,
-* A korunu krásy postavil na hlavu jeho.
-V. Za pokrm mu dal Hospodin chléb života a poznání; a vodu spásné moudrosti mu dal za nápoj.
-R. A korunu krásy postavil na hlavu jeho.
-
-[Responsory11]
-@:Responsory11_
-(sed rubrica cisterciensis)
-@:Responsory11C
 
 [Responsory12]
 R. Ó, jak velebná slavnost blaženého muže N.! Jak nevýslovná bratrská láska! On, když zavrhl světskou slávu,
 * K věčnému životu byl připojen.
 V. Žití byl pro něj Kristus, a smrt vítězstvím.
 R. K věčnému životu byl připojen.
-
-[Responsory12] (rubrica cisterciensis)
-R. Ó, jak velebná slavnost blaženého muže N., jak nevýslovná bratrská láska! 
-* On, když zavrhl světskou slávu, připojen byl k věčnému životu.
-V. Žití byl pro něj Kristus, a smrt vítězstvím.
-R. On, když zavrhl světskou slávu, připojen byl k věčnému životu.
-
-[Responsory12] (tempore paschali et rubrica cisterciensis)
-R. Ó, jak velebná slavnost blaženého muže N., jak nevýslovná bratrská láska! 
-* On, když zavrhl světskou slávu, připojen byl k věčnému životu. * Alleluja, alleluja.
-V. Žití byl pro něj Kristus, a smrt vítězstvím.
-R. On, když zavrhl světskou slávu, připojen byl k věčnému životu. 
-&Gloria
-R. Alleluja, alleluja.
-
-[Lectio9]
-@Commune/C5:Lectio7:s/ Ale protože .*//s
-(sed rubrica cisterciensis)
-@Commune/C5:Lectio7:s/Nejdražší bratři.*zbytečně dlouhý. //s
-
-[Lectio10]
-@Commune/C5:Lectio7:s/.* Ale protože /Ale protože /s
-(sed rubrica cisterciensis)	
-@Commune/C5:Lectio8:s/Tedy čistota.*//s
-
-[Lectio11]
-@Commune/C5:Lectio8
-(sed rubrica cisterciensis)	
-@Commune/C5:Lectio8:s/.*Tedy čistota/Tedy čistota/s s/světa\./světa, ale veškerou svou naději vložil v příchod svého Spasitele./  s/$/~/s
-@Commune/C5:Lectio9:s/Pán totiž.*//
-
-[Lectio12]
-@Commune/C5:Lectio9
-(sed rubrica cisterciensis)
-@Commune/C5:Lectio9:s/.*Pán totiž/Pán totiž/
-
-
-[Ant 2] (tempore paschali et rubrica cisterciensis)
-Kdo zůstává ve mě: * a já v něm, ten přinese hojnou úrodu, alleluja.
-
-[Responsory Breve Sexta] (rubrica cisterciensis)
-R.br. Spravedlivého vedl Hospodin * Po správných cestách.
-R. Spravedlivého vedl Hospodin * Po správných cestách
-V. A ukázal mu království Boží.
-R. Po správných cestách.
-
-[Ant 3] (rubrica cisterciensis)
-Tento Svatý * se právem vtiskl do paměti lidí, neboť odešel do radosti Andělů; neboť v tomto putování v těle pouze přebýval, myšlením a touhou se obracel k oné věčné vlasti.
-
-[Ant 3] (tempore paschali et rubrica cisterciensis)
-Tento muž pohrdnul světem * a přemohl věci pozemské, bohatství si tak uložil v nebi ústy i rukama, alleluja, alleluja.
 
 [Lectio5 in 2 loco]
 @Commune/C5:Lectio4 in 2 loco:s/ Tato „vytříbenost“ .*//s
@@ -112,18 +29,11 @@ Tento muž pohrdnul světem * a přemohl věci pozemské, bohatství si tak ulo�
 @Commune/C5:Lectio4 in 2 loco:s/16/29/ s/.* Tato „vytříbenost“ /Tato „vytříbenost“ /s s/$/~/
 @Commune/C5:Lectio5 in 2 loco:s/ Avšak tato .*//s
 
-[Lectio6 in 2 loco] (rubrica cisterciensis)
-@Commune/C5:Lectio4 in 2 loco:s/16/29/ s/.* Tato „vytříbenost“ /Tato „vytříbenost“ /s 
-
 [Lectio7 in 2 loco]
 @Commune/C5:Lectio5 in 2 loco:s/.* Avšak tato /Avšak tato /s
-(sed rubrica cisterciensis)
-@Commune/C5:Lectio5 in 2 loco:s/Totiž všechno.*//
 
 [Lectio8 in 2 loco]
 @Commune/C5:Lectio6 in 2 loco:s/17 post init/30 circa med/
-(sed rubrica cisterciensis)
-@Commune/C5:Lectio5 in 2 loco:s/.* Totiž všechno/Totiž všechno/
 
 [Lectio9 in 2 loco]
 @Commune/C5:Lectio7 in 2 loco:s/ Proto ji .*//s
@@ -131,13 +41,9 @@ Tento muž pohrdnul světem * a přemohl věci pozemské, bohatství si tak ulo�
 [Lectio10 in 2 loco]
 @Commune/C5:Lectio7 in 2 loco:s/.* Proto ji /Proto ji /s s/$/~/
 @Commune/C5:Lectio8 in 2 loco:s/ Proto se chlubí .*//s
-(sed rubrica cisterciensis)
-@Commune/C5:Lectio8 in 2 loco:s/ Patří se tedy.*//s
 
 [Lectio11 in 2 loco]
 @Commune/C5:Lectio8 in 2 loco:s/.* Proto se chlubí /Proto se chlubí /s
-(sed rubrica cisterciensis)
-@Commune/C5:Lectio8 in 2 loco:s/.* Patří se tedy/Patří se tedy/s
 
 [Lectio9 in 3 loco]
 @Sancti/02-24:Lectio7:s/ Vezměte .*//s
@@ -148,11 +54,6 @@ Tento muž pohrdnul světem * a přemohl věci pozemské, bohatství si tak ulo�
 
 [Lectio11 in 3 loco]
 @Sancti/02-24:Lectio8:s/.* A čím /A čím /s
-
-[Lectio12 in 3 loco]
-@Sancti/02-24:Lectio9
-(sed rubrica cisterciensis)
-@Sancti/02-24:Lectio9:s/Neboť ti, kdo.*//
 
 [Lectio11 in 4 loco]
 @Commune/C5:Lectio9 in 3 loco:s/ Je tedy dobře.*//s

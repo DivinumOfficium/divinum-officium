@@ -1,0 +1,130 @@
+@CommuneM/C1
+
+[Ant Vespera]
+Hoc est præcéptum meum, * ut diligátis ínvicem, sicut diléxi vos.
+Majórem charitátem * nemo habet, ut ánimam suam ponat quis pro amícis suis.
+Vos amíci mei estis, * si fecéritis quæ præcípio vobis, dicit Dóminus.
+Beáti mundo corde: * quóniam ipsi Deum vidébunt.
+Beáti, * qui persecutiónem patiúntur propter justítiam.
+
+[Versum 1]
+@Commune/C1:Nocturn 3 Versum
+
+[Ant 1]
+Ecce ego mitto vos * sicut oves in médio lupórum, dicit Dóminus. Estóte prudéntes sicut serpéntes, et símplices sicut colúmbæ.
+
+[Invit]
+Gaudéte, et exultáte: * Quia nómina vestra scripta sunt in cœlis.
+
+[Ant Matutinum]
+In omnem terram * exívit sonus eórum, et in fines orbis terræ verba eórum.;;18
+Hæc est generátio * quæréntium Dóminum, quæréntium fáciem Dei Jacob.;;23
+Verbo * Dómini cœli firmáti sunt: et spíritu oris ejus omnis virtus eórum.;;32
+Clamavérunt justi, * et Dóminus exaudívit eos.;;33
+Constítues eos * príncipes super omnem terram: mémores erunt nóminis tui, Dómine.;;44
+Príncipes populórum * congregáti sunt cum Deo Ábraham.;;46
+Dedísti hereditátem * timéntibus nomen tuum, Dómine.;;60
+Annuntiavérunt * ópera Dei, et facta ejus intellexérunt.;;63
+Beáti, * quos elegísti, Dómine, habitábunt in átriis tuis.;;64
+Peccatórum * confríngam córnua, et exaltabúntur córnua justi.;;74
+Lux orta est * justo, rectis corde lætítia, allelúja.;;96
+Custodiébant * testimónia ejus, et præcépta ejus, allelúja.;;98
+In patiéntia vestra * possidébitis ánimas vestras.;;253;254;255
+
+[Nocturn 1 Versum]
+@Commune/C1:Versum 1
+
+[Nocturn 3 Versum]
+@Commune/C1:Versum 2
+
+[Lectio1]
+@Commune/C1:Lectio1:1-6
+
+[Lectio4]
+@Commune/C1:Lectio3:s/10-/11-/ s/10 .*11 /11 /s s/-15/-14/ s/15 .*//
+
+[Responsory4]
+R. O quam pulchri super montes pedes: 
+* Annuntiántium pacem, annuntiántium bona!
+V. In omnem terram exívit sonus eórum: et in fines orbis terræ verba eórum.
+R. Annuntiántium pacem, annuntiántium bona!
+&Gloria
+R. Annuntiántium pacem, annuntiántium bona!
+
+[Lectio5]
+@Commune/C1:Lectio4 in 2 loco:s/Sacraméntum magnum.*//
+
+[RespVers5]
+V. Cæli enárrant glóriam Dei, et ópera mánuum ejus annúntiat firmaméntum.
+
+[Responsory5]
+@CommuneM/C1:Responsory8:1-2
+@:RespVers5
+@CommuneM/C1:Responsory8:4
+
+[Lectio6]
+@Commune/C1:Lectio4 in 2 loco:s/.*Sacraméntum magnum/Sacraméntum magnum/s s/$/~/
+@Commune/C1:Lectio5 in 2 loco:s/Respondéret ergo .*//s
+
+[Responsory6]
+@Commune/C1:Responsory6
+
+[Lectio7]
+@Commune/C1:Lectio5 in 2 loco:s/.*Duódecim ergo sedes/Duódecim ergo sedes/s s/$/~/
+@Commune/C1:Lectio6 in 2 loco:s/Non solum ergo .*//s
+
+[Responsory7]
+@CommuneM/C1:Responsory12
+
+[Lectio8]
+@Commune/C1:Lectio6 in 2 loco:s/.* Non solum ergo/Non solum ergo/s s/Partes enim mundi .*//s
+
+[Responsory8]
+@CommuneM/C1:Responsory11:s/In .* verba eórum/Candidióres nive, nitidióres lacte, rubicundióres ébore antíquo/
+
+[Responsory9]
+R. In omnem terram exívit sonus eórum: 
+* Et in fines orbis terræ verba eórum.
+V. Non sunt loquélæ neque sermónes, quorum non audiántur voces eórum.
+R. Et in fines orbis terræ verba eórum.
+
+[Responsory11]
+R. Vos estis, qui permansístis mecum in tentatiónibus meis, dicit Dóminus, et ego dispóno vobis regnum:
+* Ut edátis, et bibátis super mensam meam in regno meo, et sedeátis super thronos judicántes duódecim tribus Israël.
+V. Non vos me elegístis, sed ego elégi vos, et pósui vos:
+R. Ut edátis, et bibátis super mensam meam in regno meo, et sedeátis super thronos judicántes duódecim tribus Israël.
+
+[Responsory12]
+R. Vos estis lux mundi, dicit Dóminus:
+* Qui in patiéntia vestra possidébitis ánimas vestras.
+V. Et ego dispóno vobis, sicut dispósuit mihi Pater meus regnum:
+R. Qui in patiéntia vestra possidébitis ánimas vestras.
+&Gloria
+R. Qui in patiéntia vestra possidébitis ánimas vestras.
+
+[Responsory12 duo]
+R. Isti sunt duæ olívæ, et duo candelábra lucéntia ante Dóminum.
+* Habent potestátem cláudere cœlum núbibus, et aperíre portas ejus, quia linguæ eórum claves cœli factæ sunt.
+V. Isti sunt duo fílii splendóris, qui assístunt Dominatóri terræ:
+R. Habent potestátem cláudere cœlum núbibus, et aperíre portas ejus, quia linguæ eórum claves cœli factæ sunt.
+
+[Ant Laudes]
+@:Ant Vespera
+
+[Versum 2]
+@:Versum 1
+
+[Ant 2 duo]
+Isti sunt * duæ olívæ, et duo candelábra lucéntia ante Dóminum, habent potestátem cláudere cœlum núbibus, et aperíre portas ejus, quia linguæ eórum claves cœli factæ sunt, allelúia.
+
+[Ant 2]
+Dum stetéritis * ante reges et prǽsides, nolíte præmeditári quáliter respondeátis; dábitur enim vobis in illa hora, quid loquámini.
+
+[Ant Vespera 3]
+Jam non dicam * vos servos, sed amícos meos: quia ómnia quæcúmque audívi a Patre meo, nota feci vobis.;;109
+Tóllite * jugum meum super vos, quia mitis sum et húmilis corde.;;112
+Jugum enim meum * suáve est, et onus meum leve, dicit Dóminus.;;115
+Tradent enim vos * in concíliis, et in synagógis suis flagellábunt vos: et ante reges et præsides ducémini proper me in testimónium illis, et Géntibus.;;125
+
+[Ant 3]
+Beáti éritis, * cum vos óderint hómines, et cum separáverint vos, et exprobráverint, et ejécerint nomen vestrum tamquam malum propter Fílium hóminis: gaudéte et exsultáte, ecce enim merces vestra multa est in cœlo.

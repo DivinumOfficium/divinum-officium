@@ -1,0 +1,99 @@
+[Ant Vespera]
+Alleluja, * alleluja, alleluja.
+
+[Versum 1]
+@Commune/C1:Nocturn 3 Versum:s/\.$/, alleluja./gm
+
+[Ant 1]
+@Commune/C1p:Ant 2
+
+[Invit]
+Alleluja, alleluja, * Alleluja.
+
+[Ant Matutinum]
+Alleluja, * alleluja, Alleluja.;;18
+;;23
+;;32
+;;33
+;;44
+;;46
+Alleluja, * alleluja, Alleluja.;;60
+;;63
+;;64
+;;74
+;;96
+;;98
+Alleluja, * alleluja, Alleluja.;;253;254;255
+
+[Nocturn 1 Versum]
+@CommuneCist/C1::s/\.$/, alleluja./gm
+
+[Nocturn 2 Versum]
+@CommuneCist/C1::s/\.$/, alleluja./gm
+
+[Nocturn 3 Versum]
+@CommuneCist/C1::s/\.$/, alleluja./gm
+
+[Responsory3]
+@Commune/C1p:Responsory7:1-2
+V. Zůstávejte v mé lásce, jako jsem si zamiloval vás.
+@Commune/C1p:Responsory7:4
+
+[Responsory4]
+R. Učte své děti, alleluja.
+* Aby si dobře zapamatovali, alleluja, a ústy prohlašovali, * Alleluja, alleluja.
+V. Děti, které se narodí a vyrostou, a budou vyprávět svým dětem: 
+R. Aby si dobře zapamatovali, alleluja, a ústy prohlašovali
+&Gloria
+R. Alleluja, alleluja.
+
+[Responsory6]
+R. Radujte se spravedliví v Pánu, alleluja, upřímným náleží chvála,
+* Alleluja, alleluja.
+V. Zpívejte jemu novou píseň: dobře mu pějte chválu v jásotu.
+R. Alleluja, alleluja.
+
+[Responsory7]
+@Commune/C1p:Responsory3:1-2
+V. Před zrakem veškerého jeho lidu.
+@Commune/C1p:Responsory3:4
+
+[Responsory9]
+@Commune/C2p:Responsory6:1-2
+V. Oděl je Hospodin štolou slávy, a korunoval je:
+@Commune/C2p:Responsory6:4
+
+[Responsory10]
+@Commune/C1p:Responsory4:1-2
+V. Hlas jásotu a spásy zní ve stanech spravedlivých.
+@Commune/C1p:Responsory4:4
+
+[Responsory11]
+R. Blažen je muž, který má bázeň před Hospodinem, alleluja. Po jeho přikázáních velmi touží, alleluja.
+* Alleluja, alleluia.
+V. Mocné bude na zemi jeho sémě; pokolení spravedlivých bude požehnáno. 
+R. Alleluja, alleluia.
+
+[Responsory12 duo]
+R. Tito jsou dvě olivy, a dva svícny, které září před Hospodinem, alleluja.
+* Mají moc zahalit nebe oblaky, i otevřít jeho brány, neboť jejich jazyky jsou klíče k nebi, alleluja.
+V. Tito jsou dva zářiví synové, jež slouží Panovníku země;
+R. Mají moc zahalit nebe oblaky, i otevřít jeho brány, neboť jejich jazyky jsou klíče k nebi, alleluja.
+
+[Ant 2]
+@Commune/C1p:Ant 1:s/lleluja\./lleluja, alleluja./ s/Pane,/Pane, alleluja,/
+
+[Responsory Breve Tertia]
+R.br. Do celé země vyšel zvuk jejich učení. * Alleluja, alleluja. 
+R. Do celé země vyšel zvuk jejich učení. * Alleluja, alleluja. 
+V. A do všech končin okrsku zemského jejich slova.
+R. Alleluja, alleluja.
+
+[Responsory Breve Sexta]
+R.br. Ustanovuješ je Knížaty nad celou zemí, alleluja, alleluja.
+R. Ustanovuješ je Knížaty nad celou zemí, alleluja, alleluja.
+V. Pamětlivi budou tvého jména, Pane.
+R. Alleluja, alleluja.
+
+[Ant 3]
+V nebeském království * je příbytek Svatých, alleluja, a jejich spočinutí navěky, alleluja.

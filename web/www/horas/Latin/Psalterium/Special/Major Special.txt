@@ -1670,9 +1670,9 @@ Ant. Crucem sanctam súbiit, qui inférnum confrégit; accínctus est poténtia,
 
 [Suffragium BMV Ant]
 !De Beata Maria
-@Commune/C11:Ant 1_:s/^/Ant. / s/\* // s/festivitátem/commemoratiónem/
+@Commune/C11:Ant 1:s/^/Ant. / s/\* // s/festivitátem/commemoratiónem/
 (sed rubrica cisterciensis)
-@Commune/C11:Ant 1_:s/^/Ant. / s/\* // s/festivitátem/commemoratiónem/ s/femíneo/fœmíneo/ s/:.*//
+@Commune/C11:Ant 1:s/^/Ant. / s/\* // s/festivitátem/commemoratiónem/ s/femíneo/fœmíneo/ s/:.*//
 
 [Suffragium BMV]
 @:Suffragium BMV Ant
