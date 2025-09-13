@@ -343,6 +343,8 @@ sub oratio {
         {
           if (exists($c{"Commemoratio $cvespera"})) {
             $c = getrefs($c{"Commemoratio $cvespera"}, $lang, $cvespera, $c{Rule});
+          } elsif ($octvespera && exists($c{"Commemoratio $octvespera"})) {
+            $c = getrefs($c{"Commemoratio $octvespera"}, $lang, $octvespera, $c{Rule});
           } elsif (exists($c{Commemoratio})
             && ($cvespera != 3 || $cwinner =~ /Tempora/i || $c{Commemoratio} =~ /!.*O[ckt]ta/i))
           {
@@ -509,7 +511,7 @@ sub oratio {
                   : $version !~ /altovadensis/i ? 7100    # Dom. min.
                   : 6100                                  # Sundays are below MM.maj. commemorations for Altovado
                 )
-                : ($ic =~ /$octavestring/i) ? 7900
+                : ($ic =~ /$octavestring/i) ? $ccind + 7900
                 : $ccind + 9900;
               $cc{$key} = $ic;
               setbuild2("Commemorated: $key");

@@ -831,7 +831,7 @@ sub concurrence {
   {
 
     # if tomorrow is a Sunday, get rid of today's tempora completely; necessary Commemorations are handled in the Sunday database file
-    if ($sanctoraloffice && $srank[0] !~ /infra octavam Nat/i) {
+    if ($sanctoraloffice && $srank[0] !~ /infra octavam Nativitatis$/i) {
       if ($commemoentries[0] =~ /tempora/i) {
         shift @commemoentries;
       }
