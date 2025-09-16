@@ -964,9 +964,11 @@ sub getrefs {
 
           # Confessor-Popes have a common Magnificat antiphon at second Vespers.
           if ($popeclass && $popeclass =~ /C/ && $ind == 3) { $a = papal_antiphon_dum_esset($lang); }
-        } else {
-          if ($o =~ /N\./) { $o = replaceNdot($o, $lang, $name); }
+        } elsif ($o =~ /N\./) {
+          $o = replaceNdot($o, $lang, $name);
         }
+      } elsif ($o =~ /N\./ && $s{Name}) {
+        $o = replaceNdot($o, $lang, $s{Name});
       }
       do_inclusion_substitutions($a, $substitutions);
       do_inclusion_substitutions($v, $substitutions);
