@@ -592,7 +592,7 @@ $Per eumdem
 
 [Suffragium BMV Ant]
 !Gedächtnis Unserer Lieben Frau
-@Commune/C11:Ant 1_:s/^/Ant. / s/\* // s/deine heilige Festlichkeit/dein heiliges Gedächtnis/
+@Commune/C11:Ant 1:s/^/Ant. / s/\* // s/deine heilige Festlichkeit/dein heiliges Gedächtnis/
 
 [Suffragium BMV AntL]
 @:Suffragium BMV Ant:1
