@@ -8,23 +8,6 @@ Divinum auxilium
 [Ant Vespera]
 @Commune/C8::s/112/147/
 
-[Ant Vespera] (rubrica cisterciensis)
-@Commune/C8::1-3
-@Commune/C8::5 s/112/147/
-@Commune/C8::4
-
-[Ant Vespera] (tempore paschali et rubrica cisterciensis)
-Allelúia, * allelúia, allelúia.;;109
-;;110
-;;111
-;;147
-
-[Versum 1] (rubrica cisterciensis)
-@Commune/C8:Nocturn 2 Versum
-
-[Ant 1] (rubrica cisterciensis)
-Pax æterna * ab ætérno Patre, huic domui pax perénnis, Verbum Patris sit pax huic dómui, pacem pius consolátor huic præstet dómui.
-
 [AntMatutinumM]
 Introíbo * in domum tuam, Dómine, † et adorábo ad templum sanctum tuum.;;5
 Dóminus * in templo sancto suo, † Dóminus in cælo sedes ejus.;;10
@@ -44,110 +27,30 @@ Beáti, * qui hábitant in domo tua, Dómine; † in sǽcula sæculórum laudáb
 @Commune/C8::9
 @Commune/C8::5 s/86/260;261;262/
 
-[Ant Matutinum] (rubrica cisterciensis)
-Tóllite portas, * príncipes vestras, et elevámini, portæ æternáles.;;23
-Introíbo * ad Altáre Dei, ad Deum, qui lætíficat juventútem meam.;;42
-Sanctificávit * Dóminus tabernáculum suum.;;45
-Erit mihi Dóminus * in Deum, et lapis iste vocábitur domus Dei.;;46
-Ædificávit * Móyses altáre Dómino Deo.;;47
-Non est hic áliud, * nisi domus Dei, et porta cæli.;;64
-Vidit Jacob scalam, * súmmitas ejus cælos tangébat, et descendéntes Angelos, et dixit: Vere locus iste sanctus est.;;83
-Eréxit Jacob * lápidem in títulum, fundens óleum désuper.;;86
-Templum Dómini * sanctum est, Dei structúra est, Dei ædificátio est.;;87
-Qui hábitat * in adjutório Altíssimi, in protectióne Dei cæli commorábitur.;;90
-Benedícta * glória Dómini, de loco sancto suo.;;95
-Cum evigilásset * Jacob a somno, ait:  Vere Dóminus est in loco isto.;;98
-Fundaménta * templi hujus sapiéntia sua fundávit Deus, in quo Dóminum cæli colláudant Angeli; si írruant venti et fluant flúmina, non possunt illud movére umquam: fundátum enim est supra petram.;;260;261;262
-
-[Ant Matutinum] (tempore paschali et rubrica cisterciensis)
-Allelúia, * allelúia, Allelúia.;;23
-;;42
-;;45
-;;46
-;;47
-;;64
-Allelúia, * allelúia, Allelúia.;;83
-;;86
-;;87
-;;90
-;;95
-;;98
-Allelúia, * allelúia, Allelúia.;;260;261;262
-
-[Nocturn 1 Versum] (rubrica cisterciensis)
-V. Fundáta est domus Dómini.
-R. Supra vérticem móntium.
-
-[Nocturn 2 Versum] (rubrica cisterciensis)
-@Commune/C8:Versum 3
-
-[Nocturn 3 Versum] (rubrica cisterciensis)
-V. Beáti, qui hábitant in domo tua, Dómine.
-R. In sæcula sæculórum laudábunt te.
-
 [Lectio1]
 @Commune/C8::1-5 s/-5/-3/
-(sed rubrica cisterciensis)
-@Commune/C8::1-4 s/-5/-2/
 
 [Lectio2]
 @Commune/C8:Lectio1:s/1-5/4-6/ s/1.*4/4/s
 @Commune/C8::2
 
-[Lectio2] (rubrica cisterciensis)
-@Commune/C8:Lectio1:2 s/1-5/3/
-@Commune/C8:Lectio1:5
-
 [Lectio3]
 @Commune/C8:Lectio2:s/6-9/7-9/ s/6.*//
 
-[Lectio3] (rubrica cisterciensis)
-@Commune/C8:Lectio1:s/1-5/4-6/ s/1.*4/4/s
-@Commune/C8:Lectio2:2:s/\: Quóniam.*/./s
-
 [Lectio4]
 @Commune/C8:Lectio3
-(sed rubrica cisterciensis)
-@Commune/C8:Lectio2:1-3:s/-9/-7/ s/6 .*porro/6 Porro/s
 
-[Responsory1] (rubrica cisterciensis)
-@Tempora/101-1:Responsory2
-
-[Responsory2] (rubrica cisterciensis)
-@Tempora/101-1:Responsory3
-
-[Responsory3] (rubrica cisterciensis)
-@Tempora/111-0:Responsory4:1-2
-V. Qui reminiscímini Dómini, ne taceátis, et ne detis siléntium ei.
-@Tempora/111-0:Responsory4:4
-
-[Responsory4_]
+[Responsory4]
 R. Terríbilis est locus iste: † non est hic áliud nisi domus Dei et porta cæli:
 * Vere étenim Dóminus est in loco isto, et ego nesciébam.
 V. Vidit Jacob in somnis scalam, súmmitas ejus cælos tangébat, † et Ángelos Dei descendéntes et ascendéntes per eam, et ait.
 R. Vere étenim Dóminus est in loco isto, et ego nesciébam.
-
-[Responsory4C]
-@:Responsory4_:1-2
-@Commune/C8:Responsory6:3
-@:Responsory4_:4
-
-[Responsory4]
-@:Responsory4_
-(sed rubrica cisterciensis)
-@:Responsory4C
 
 [Lectio5]
 @Commune/C8:Lectio4:s/Et ideo.*//
 
 [Responsory5]
 @Commune/C8:Responsory4
-
-[Responsory5] (rubrica cisterciensis)
-R. Vidi portam civitátis ad Oriéntem pósitam, et Apostolórum nómina et Agni super eam scripta:
-* Et super muros ejus Angelórum custódiam.
-V. Vidi sanctam civitátem Jerúsalem novam, parátam sicut sponsam ornátam viro suo.
-R. Et super muros ejus Angelórum custódiam.
 
 [Lectio6]
 @Commune/C8:Lectio4:3 s/.*(Et ideo)/$1/ s/$/~/
@@ -156,22 +59,11 @@ R. Et super muros ejus Angelórum custódiam.
 [Responsory6]
 @Commune/C8:Responsory5
 
-[Responsory6] (rubrica cisterciensis)
-R. Dum exíret Jacob de terra sua, vidit glóriam Dei, et ait:
-* Quam terríbilis est locus iste! Non est hic áliud, nisi domus Dei, et porta cæli.
-V. Vere Dóminus est in loco isto, et ego nesciébam.
-R. Quam terríbilis est locus iste! Non est hic áliud, nisi domus Dei, et porta cæli.
-
 [Lectio7]
 @Commune/C8:Lectio5:s/.*(Sicut)/$1/
 
 [Responsory7]
 @Commune/C8:Responsory6
-
-[Responsory7] (rubrica cisterciensis)
-@Tempora/Quad2-0:Responsory6:1-2
-V. Si Dóminus Deus meus fúerit mecum in via ista, per quam ego ámbulo, et custodíerit me,
-@Tempora/Quad2-0:Responsory6:4
 
 [Lectio8]
 @Commune/C8:Lectio6
@@ -182,27 +74,17 @@ R. Quam dilécta tabernácula tua, Dómine, virtútum! † concupíscit et défi
 V. Qui hábitant in domo tua, Dómine; in sǽculum sǽculi laudábunt te.
 R. In átria Dómini.
 
-[Responsory8] (rubrica cisterciensis)
-R. Domus mea, domus oratiónis vocábitur, dicit Dóminus: 
-* In ea omnis qui petit, áccipit; et qui quærit, ínvenit: et pulsánti aperiétur.
-@Commune/C8:Responsory5:3
-R. In ea omnis qui petit, áccipit; et qui quærit, ínvenit: et pulsánti aperiétur.
-
 [Lectio9]
 @Commune/C8:Lectio7
 
 [Responsory9]
 @Commune/C8:Responsory7
-(sed rubrica cisterciensis)
-@Tempora/Pent01-3:Responsory2
 
 [Lectio10]
 @Commune/C8:Lectio8:s/Zachǽus .*//s
 
 [Responsory10]
 @Commune/C8:Responsory8
-(sed rubrica cisterciensis)
-@Tempora/Pent03-2Feria:Responsory1
 
 [Lectio11]
 @Commune/C8:Lectio8:s/.* Zachǽus /Zachǽus /s
@@ -213,9 +95,6 @@ R. Benedíctus es in templo sancto glóriæ tuæ quod ædificátum est
 V. Bénedic domum istam quam ædificávi.
 R. Ad laudem et glóriam nóminis tui Dómine.
 
-[Responsory11] (rubrica cisterciensis)
-@Tempora/Pent01-3:Responsory3
-
 [Lectio12]
 @Commune/C8:Lectio9
 
@@ -225,44 +104,13 @@ R. Vidi civitátem sanctam Jerúsalem novam, † descendéntem de cælo a Deo pa
 V. Et ipsi pópulus ejus erunt, † et ipse Deus cum eis erit eórum Deus.
 R. Et audívi vocem de throno dicéntem: Ecce tabernáculam Dei cum homínibus, et habitábit cum eis.
 
-[Responsory12] (rubrica cisterciensis)
-R. Beáta vere mater Ecclésia quam sic honor divínæ dignatiónis illúminat, † quam victoriosórum gloriósus Mártyrum sanguis exórnat
-* Quam invioláta confessiónis cándida índuit virgínitas.
-V. Flóribus ejus nec rosæ nec lília desunt.
-R. Quam invioláta confessiónis cándida índuit virgínitas.
-
 [MM Capitulum]
 @Commune/C8:Capitulum Sexta
 _
 @Commune/C8:Versum Tertia
 
-[Responsorium] (rubrica cisterciensis)
-@:Responsory4C
-
 [Capitulum Laudes]
 @Commune/C8
 
-[Versum 2] (rubrica cisterciensis)
-@:Versum 1
-
-[Ant Sexta] (rubrica cisterciensis)
-@Commune/C8:Ant Vespera:5
-(sed tempore paschali)
-@Psalterium/Psalmi/Psalmi minor:Pasch:4
-
-[Responsory Breve Sexta] (rubrica cisterciensis)
-@:Responsory Breve Nona
-
 [Responsory SextaM]
 @Commune/C8:Versum Tertia
-
-[Ant Nona] (rubrica cisterciensis)
-@Commune/C8:Ant Vespera:4
-(sed tempore paschali)
-@Psalterium/Psalmi/Psalmi minor:Pasch:5
-
-[Ant Laudes] (tempore paschali et rubrica cisterciensis)
-@Psalterium/Psalmi/Psalmi minor:Pasch
-
-[Versum 3] (rubrica cisterciensis)
-@:Versum 1
