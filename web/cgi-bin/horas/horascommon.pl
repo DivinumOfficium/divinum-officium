@@ -593,7 +593,8 @@ sub occurrence {
       $laudesonly =
         (    $dayname[0] =~ /(Adv|Quad[0-6])/i
           || ($dayname[0] =~ /Quadp3/i && $dayofweek >= 4)
-          || ($dayname[0] =~ /Quadp/i && $version =~ /Monastic.*Divino/i))
+          || ($dayname[0] =~ /Quadp/i && $version =~ /Monastic.*Divino/i)
+          || $trank[0] =~ /Quattuor Temporum Sept/)
         ? ' ad Missam tantum'
         : ' ad Laudes tantum';
     } else {
