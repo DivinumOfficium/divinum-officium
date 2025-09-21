@@ -1,0 +1,101 @@
+@CommuneM/C9
+
+[Rule]
+@CommuneM/C9
+Omit Invitatorium
+
+[Ant Vespera]
+@Commune/C9::s/Hei mihi Dómine/Heu mihi/
+
+[Ant 1]
+Audívi vocem * de cœlo dicéntem: Beáti mórtui qui in Dómino moriúntur.
+
+[Oratio 1]
+@:Oratio_a_porta
+@:Oratio_Cist:s/§/†/g
+
+[Oratio Matutinum]
+@:Oratio 1
+
+[Oratio_a_porta]
+$Pater totum secreto
+_
+&psalm(145)
+$A porta inferi
+
+[Oratio_Cist]
+v. Deus, cui próprium est miseréri semper et párcere: § propitiáre animábus famulórum famularúmque tuárum, et ómnia eórum peccáta dimítte; * ut mortalitátis vínculis absolútæ, transíre mereántur ad vitam. § 
+v. Deus, véniæ largítor, et humánæ salútis amátor: § quæsumus cleméntiam tuam, * ut nostræ congregatiónis fratres, propínquos et benefactóres, qui ex hoc sæculo transiérunt, § beáta María semper Vírgine intercedénte cum ómnibus Sanctis tuis, ad perpétuæ beatitúdinis consórtium perveníre concédas. §
+v. Fidélium Deus ómnium Cónditor, et Redémptor § animábus famulórum famularúmque tuárum remissiónem cunctórum tríbue peccatórum: * ut indulgéntiam, quam semper optavérunt, § piis supplicatiónibus consequántur. 
+v. Qui vivis et regnas in sæcula sæculórum.
+R. Amen.
+
+[Ant Matutinum]
+@Commune/C9::s/erípias/éruas/
+
+[Nocturn 1 Versum]
+V. Anima mea turbáta est valde. 
+R. Sed tu, Dómine, succúrre ei.
+
+[Nocturn 2 Versum]
+V. Convértere, Dómine, et éripe ánimam meam.
+R. Salvum me fac propter misericórdiam tuam.
+
+[Nocturn 3 Versum]
+V. In memória ætérna erunt justi.
+R. Ab auditióne mala non timébunt.
+
+[Responsory3 Versum]
+V. Et non revertétur óculus meus, ut vídeat bona.
+
+[Responsory3]
+@Commune/C9:Responsory4:1-2
+@:Responsory3 Versum
+@Commune/C9:Responsory4:4
+$Requiem
+@Commune/C9:Responsory4:4
+
+[Responsory4]
+@Commune/C9:Responsory5:s/Hei/Heu/
+
+[Responsory5]
+@Commune/C9:Responsory6:1-2
+V. Non intres in judícium cum servis tuis, Dómine.
+@Commune/C9:Responsory6:4
+
+[Responsory6]
+@Commune/C9:Responsory91:1:s/, qui.*/./
+@Commune/C9:Responsory91:1-2:s/.*, qui/* Qui/ s/te:.* Qui/te, qui/s
+@Commune/C9:Responsory91:3
+@Commune/C9:Responsory91:1-2:s/.*, qui/R. Qui/ s/te:.* Qui/te, qui/s
+$Requiem
+@Commune/C9:Responsory91:1-2:s/.*, qui/R. Qui/ s/te:.* Qui/te, qui/s
+
+[Responsory8]
+@Commune/C9::1:s/; ídeo.*/./
+@Commune/C9::1-2:s/.*; ídeo/* Ideo/ s/tuam,.* Ut/tuam, ut/s s/majestátem/Majestátem/
+@Commune/C9::3:s/me\./me, tibi soli peccávi./
+@Commune/C9::1-2:s/.*; ídeo/* Ideo/ s/tuam,.* Ut/tuam, ut/s s/majestátem/Majestátem/
+
+[Lectio9]
+!2. Machab, 12:43-46
+43 Vir fortíssimus Judas, facta collatióne, duódecim míllia drachmas argénti misit Jerosólymam offérri pro peccátis mortuórum sacrifícium, bene et religióse de resurrectióne cógitans
+44 (nisi enim eos qui cecíderant resurrectúros speráret, supérfluum viderétur et vanum oráre pro mórtuis),
+45 et quia considerábat quod hi qui cum pietáte dormitiónem accéperant, óptimam habérent repósitam grátiam.
+46 Sancta ergo et salúbris est cogitátio pro defúnctis exoráre, ut a peccátis solvántur.
+
+[Ant Laudes]
+@Commune/C9:Ant Laudes_:1-3 s/;;62/;;62;66/ 
+Eruísti, Dómine, * ánimam meam ne períret.;;222
+@Commune/C9:Ant Laudes_:5 s/;;150/;;148;149;150/
+
+[Oratio 2]
+@:Oratio_a_porta:s/145/129/s
+@:Oratio_Cist:s/§/†/g
+
+[Responsory91]
+@Commune/C9:Responsory9:1-2
+@Commune/C9:Responsory9:5
+@Commune/C9:Responsory9:4
+@Commune/C9:Responsory9:3
+@Commune/C9:Responsory9:6-9
