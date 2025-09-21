@@ -1185,8 +1185,8 @@ sub Ultimaev : ScriptFunc {
 
   foreach my $commemo (@commemoentries) {
     if (!(-e "$datafolder/$lang/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
-    %comlat = %{setupstring('Latin', $commemo)};
-    %com = $lang eq 'Latin' ? %comlat : %{setupstring($lang, $commemo)};
+    %comlat = %{officestring('Latin', $commemo)};
+    %com = $lang eq 'Latin' ? %comlat : %{officestring($lang, $commemo)};
     if (exists($com{Evangelium}) && $com{Rule} !~ /Evangelium non appropriatum/i) { last; }
   }
 
