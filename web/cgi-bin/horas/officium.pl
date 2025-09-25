@@ -95,9 +95,8 @@ our %translate;     #translation of the skeleton label for 2nd language
 
 our $command = strictparam('command');
 our $browsertime = strictparam('browsertime');
-our $buildscript = '';                    #build script
+our $buildscript = '';    #build script
 our $searchvalue = strictparam('searchvalue');
-our $content = strictparam('content');    # if set output only content wihout html headers menus etc
 
 if (!$searchvalue) { $searchvalue = '0'; }
 
@@ -150,8 +149,8 @@ if ($command =~ s/^pray//) {
 }
 our $hora = (@horas > 0) ? $horas[0] : '';
 
-setcookies('horasp', 'parameters') unless $content;
-setcookies("horasg$cookies_suffix", 'general') unless $content;
+setcookies('horasp', 'parameters');
+setcookies("horasg$cookies_suffix", 'general');
 
 if ($Ck) {
   $version1 = $version;    # save value for use in horas
@@ -216,7 +215,7 @@ if ($command =~ /setup(.*)/i) {
   print setuptable($command, "Divinum Officium setup");
   $command = "change" . $command . strictparam('pcommand');
 } else {
-  print headline($html_dayhead, $Ck, $version, $version2);
+  print headline($html_dayhead, substr($officium, 0, 1), $version, $version2);
   load_languages_data($lang1, $lang2, $langfb, $version, $missa);
 
   if ($command =~ /appendix/i) {
@@ -243,8 +242,6 @@ if ($command =~ /setup(.*)/i) {
         }
         horas($hora);
       }
-
-      exit if $content;
 
       if ($officium ne 'Pofficium.pl' && @horas == 1) {
         print par_c("<INPUT TYPE='SUBMIT' VALUE='$hora persolut.' onclick='okbutton();'>");
