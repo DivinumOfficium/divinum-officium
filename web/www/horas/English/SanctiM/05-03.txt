@@ -1,0 +1,17 @@
+[Lectio7]
+@Sancti/05-03:Lectio6:s/She also.*//s
+
+[Lectio8]
+@Sancti/05-03:Lectio6:s/.*(She also)/$1/s
+
+[Lectio9]
+@Sancti/05-03:Lectio7:s/And now.*//s
+
+[Lectio10]
+@Sancti/05-03:Lectio7:s/.* (And now)/$1/s
+
+[Lectio11]
+@Sancti/05-03:Lectio8:s/Now I.*//s
+
+[Lectio12]
+@Sancti/05-03:Lectio8:s/.*(Now I)/$1/s
