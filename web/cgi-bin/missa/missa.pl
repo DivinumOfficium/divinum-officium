@@ -90,6 +90,7 @@ our $Propers = strictparam('Propers');
 our $command = strictparam('command');
 our $browsertime = strictparam('browsertime');
 our $searchvalue = strictparam('searchvalue');
+our $content = strictparam('content');    # if set output only content wihout html headers menus etc
 
 if (!$searchvalue) { $searchvalue = '0'; }
 our $missanumber = strictparam('missanumber');
@@ -115,8 +116,8 @@ $lang1 = check_language($lang1) || (error("Unknown language: $lang1") && 'Latin'
 $lang2 = check_language($lang2) || 'English';
 $langfb = check_language($langfb) || 'English';
 
-setcookies('missap', 'parameters');
-setcookies('missag', 'general');
+setcookies('missap', 'parameters') unless $content;
+setcookies('missag', 'general') unless $content;
 
 # save parameters
 $setupsave = savesetup(1);
@@ -158,6 +159,9 @@ if ($command =~ /setup(.*)/is) {
   #eval($setup{'parameters'});
   $background = ($whitebground) ? ' class="contrastbg"' : '';
   ordo();
+
+  exit if $content;
+
   print <<"PrintTag";
 <INPUT TYPE=HIDDEN NAME=expandnum VALUE="">
 PrintTag
@@ -232,8 +236,10 @@ sub headline {
   my $numsel = setmissanumber();
   $numsel = "<BR/><BR/>$numsel<BR/>" if $numsel;
   my $headline = html_dayhead(setheadline(), $dayname[2]);
+  print qq(<P ALIGN="CENTER">$headline</P>\n);
+  return if our $content;
+
   print <<"PrintTag";
-<P ALIGN="CENTER">$headline</P>
 <P ALIGN="CENTER"><FONT COLOR="MAROON" SIZE="+1"><B><I>$head</I></B>&nbsp;<FONT COLOR="RED" SIZE="+1">$version</FONT></FONT></P>
 <P ALIGN="CENTER"><A HREF="#" onclick="callcompare()">Compare</A>
 &ensp;<A HREF="#" onclick="callofficium();">Divinum Officium</A>
