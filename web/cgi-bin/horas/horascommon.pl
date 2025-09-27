@@ -854,11 +854,12 @@ sub concurrence {
 
     # In 1960, II. cl. feasts have I. Vespers if and only if they're feasts of the Lord on a Sunday.
     # Barroux differs: all II. cl. feasts and C10 have I. Vespers
-    || ( $version =~ /196/ && $version !~ /Barroux/
+    || ( $version =~ /196/
+      && $version !~ /Barroux/
       && $cwrank[2] <
       (($cwrank[0] =~ /Dominica/i || ($cwinner{Rule} =~ /Festum Domini/i && $dayofweek == 6)) ? 5 : 6))
 
-    || ( $version =~ /Barroux/ && $cwrank[2] < 5 && $cwinner{Rank} !~ /C10/)
+    || ($version =~ /Barroux/ && $cwrank[2] < 5 && $cwinner{Rank} !~ /C10/)
 
     # no Ferias, Vigils and infra Oct days
     || ( $cwinner{Rank} =~ /Feria|Sabbato|Vigilia|Quat[t]*uor/i
