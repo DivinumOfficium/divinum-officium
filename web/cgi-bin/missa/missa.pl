@@ -116,6 +116,8 @@ $lang1 = check_language($lang1) || (error("Unknown language: $lang1") && 'Latin'
 $lang2 = check_language($lang2) || 'English';
 $langfb = check_language($langfb) || 'English';
 
+$content = 0 unless $command =~ /^pray/;
+
 setcookies('missap', 'parameters') unless $content;
 setcookies('missag', 'general') unless $content;
 

@@ -150,6 +150,8 @@ if ($command =~ s/^pray//) {
 }
 our $hora = (@horas > 0) ? $horas[0] : '';
 
+$content = 0 unless $command =~ /^pray/;
+
 setcookies('horasp', 'parameters') unless $content;
 setcookies("horasg$cookies_suffix", 'general') unless $content;
 
