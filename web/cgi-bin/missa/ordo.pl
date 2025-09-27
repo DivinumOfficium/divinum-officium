@@ -14,6 +14,7 @@ $a = 1;
 # resolves the references (formatting characters, prayers hash references and subs)
 #and prints the result
 sub ordo {
+  print "<H2 ID='Missatop'>Sancta Missa</H2>\n" if $content;
   my $savesolemn = $solemn;
   if ($winner =~ /Quad6-[456]/i) { $solemn = 1; }
   $column = 1;
@@ -111,6 +112,7 @@ sub resolve_refs {
         $line = expand($line, $lang, $t[$it - 1]);
       } else {
         $line = expand($line, $lang);
+        next if $line =~ /^\s*$/;
       }
 
       if ($line !~ /\<input/i) {

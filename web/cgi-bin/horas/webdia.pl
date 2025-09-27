@@ -825,7 +825,7 @@ sub print_content {
   my ($ind1, $ind2);
 
   table_start();
-  ante_post('Ante') if $antepost;
+  ante_post('Ante') if $antepost && !$content;
 
   while ($ind1 < @$script1 || $ind2 < @$script2) {
     $column = 1;
@@ -844,7 +844,7 @@ sub print_content {
       $ind2 = $ind1;
     }
   }
-  ante_post('Post') if $antepost;
+  ante_post('Post') if $antepost && !$content;
   table_end();
 }
 
