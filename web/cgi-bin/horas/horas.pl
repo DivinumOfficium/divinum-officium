@@ -26,9 +26,8 @@ sub adhoram {
 #*** horas($hora)
 # collects and prints the officium for the given $hora
 sub horas {
-  my $command = shift;
-  $hora = $command;
-  $hora = 'Vespera' if $hora =~ /vesper/i;
+  our $hora = shift;
+  $hora = 'Vespera' if $hora eq 'Vesperae';
   print "<H2 ID='${hora}top'>" . adhoram($hora) . "</H2>\n";
   my (@script1, @script2);
   our ($lang1, $lang2, $column);
@@ -39,7 +38,7 @@ sub horas {
     precedence();
   }
 
-  @script1 = getordinarium($lang1, $command);
+  @script1 = getordinarium($lang1, $hora);
   @script1 = specials(\@script1, $lang1);
   $column = 2;    # This prevents the duplications in the Building Script
 
@@ -51,7 +50,7 @@ sub horas {
   }
 
   if (!$only) {
-    @script2 = getordinarium($lang2, $command);
+    @script2 = getordinarium($lang2, $hora);
     @script2 = specials(\@script2, $lang2);
   }
 
