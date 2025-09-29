@@ -11,10 +11,16 @@ R. Hódie sciétis * Quia véniet Dóminus.
 &Gloria
 R. Hódie sciétis * Quia véniet Dóminus.
 
-[Responsory Vespera 1] (rubrica cisterciensis)
-<FONT COLOR=RED>Responsorium</FONT> O Juda et Jerúsalem, nolíte timére: * Cras egrediémini, et Dóminus erit vobíscum.
+[RV1]
+Responsorium. O Juda et Jerúsalem, nolíte timére: * Cras egrediémini, et Dóminus erit vobíscum.
 V. Constántes estóte, vidébitis auxílium Dómini super vos.
 R. Cras egrediémini, et Dóminus erit vobíscum.
+
+[Responsory Vespera 1] (rubrica cisterciensis)
+@:RV1
+
+[Responsory Vespera 1] (rubrica Barroux)
+@:RV1:s/Responsorium. O Juda/R. Judæa/ s/ \*/\n*/
 
 [Responsory Vespera]
 @:Responsory Breve Tertia

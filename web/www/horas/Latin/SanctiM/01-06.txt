@@ -6,6 +6,17 @@ Psalmi Dominica
 Doxology=Epi
 Festum Domini
 
+[RV1]
+Responsorium. Illumináre, illumináre Jerúsalem, quia venit lux tua: * Et glória Dómini super te orta est.
+V. Et ambulábunt Gentes in lúmine tuo, et reges in splendóre ortus tui:
+R. Et glória Dómini super te orta est.
+
+[Responsory Vespera 1] (rubrica cisterciensis)
+@:RV1
+
+[Responsory Vespera 1] (rubrica Barroux)
+@:RV1:s/Responsorium/R/ s/ \*/\n*/
+
 [HymnusM Matutinum]
 @Sancti/01-06:HymnusM Vespera
 
