@@ -5,6 +5,17 @@
 Psalmi Dominica
 Antiphonas horas
 
+[RV1]
+Responsorium. Repléti sunt omnes Spíritu sancto, et cœpérunt loqui, prout Spíritus sanctus dabat éloqui illos: * Et convénit multitúdo dicéntium, allelúia.
+V. Loquebántur váriis linguis Apóstoli magnália Dei:
+R. Et convénit multitúdo dicéntium, allelúia.
+
+[Responsory Vespera 1] (rubrica cisterciensis)
+@:RV1
+
+[Responsory Vespera 1] (rubrica Barroux)
+@:RV1:s/Responsorium/R/ s/ \*/\n*/
+
 [Hymnus Vespera] (rubrica cisterciensis)
 @Tempora/Pasc7-0:Hymnus Laudes
 
