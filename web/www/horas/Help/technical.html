@@ -45,7 +45,7 @@
 				For easier understanding and handling, they are organized into folders. All files use UTF-8 encoding. If adding files, please be aware of this, as it can and will effect the appearance of text.</P>
 				
 				<P>The top level folders are folders for the languages (Latin, English, French, etc.). The basic rule is that if a file is missing for a specific (modern) language, the program automatically selects the language text from the English. <I>(Exception: Hyphenated language folders (e.g., Polski-Newer) first select the un-hyphenated folder of that language first.</I></P>
-				<P>Each language folder contains the same set of subfolders, which represents the parts of the printed breviary volumes: Psalterium, Tempora, Sancti, Commune. For technical reasons, there are separate folders for the Psalterium and for the Martyrologium. Folders marked "M" are used to display the Monastic version of the Office. Whenever separate files in the "M"-folders are unnecssary, the script defaults to that same folder without "M".</P>
+				<P>Each language folder contains the same set of subfolders, which represents the parts of the printed breviary volumes: Psalterium, Tempora, Sancti, Commune. For technical reasons, there are separate folders for the Psalterium and for the Martyrologium. Folders marked "M" are used to display the Monastic version of the Office. Whenever separate files in the "M"-folders are unnecessary, the script defaults to that same folder without "M".</P>
 				<P>The style and punctuation used within the text is that of the 1962 liturgical books (i.e. natalicio is preferred to natalitio, abicere to abjicere, etc.), with the exception that one space is used between sentences, and no space is placed before a colon or other punctuation. In accordance with the principles sent to the typographers of the 1960 <I>editiones typicae</I>, the letter J in the 1960 rubrics is transformed to the letter I. (<I>Sacrae Congregatio Rituum, "Ordinationes ad librorum liturgicorum editores", 26.VI.1960</I>) The code is capable of automatically making certain typographical and rubrical changes to account for these and other variations in the 1960 rubrics.</P>
 				<P>The files itself usually are converted into <span class=prma>hash elements</span>, e.g. [Ant Matutinum], [Capitulum Nona], etc.</P>
 				<P>The <span class=prma>key</span> is enclosed within square brackets <span class=pram>[ ... ]</span> which is a separate line followed by the body of the element. For instance, [Ant 2] refers to the Benedictus antiphon at Lauds, while [Lectio93] normally refers to the 9th (hagiographical) reading of a commemorated saint (pre-1960), which became the 3rd reading at Matins on 3rd class feasts under 1960 rubrics.</P>
@@ -59,12 +59,12 @@
 							<LI><CODE>Kalendaria</CODE> sanctoral kalendar files.
 								<UL>
 									<LI>Lines starting with <code>*</code> or <CODE>#-</CODE> signs are comments.</LI>
-									<LI>Other lines are devided in multiple parts by the <CODE>=</CODE> char. Within the second section, multiple offices can be assigned to a single day, the latter ones by way of commemoration. These are divided by the <CODE>~</CODE> char.<BR />
+									<LI>Other lines are divided into multiple parts by the <CODE>=</CODE> char. Within the second section, multiple offices can be assigned to a single day, the latter ones by way of commemoration. These are divided by the <CODE>~</CODE> char.<BR />
 										<LI><I>Please note that everything after the second <CODE>=</CODE> is for information only and not used by the code itself.</I></LI>
 								</UL>
 								Meaning is explained in example from file <CODE>1888.txt</CODE> : <BR />
 								<CODE>01-11=01-11~01-11cc=Sexta die infra Octavam Epiphaniae=2=S. Hygini Pap&aelig; et Martyris=1=</CODE> <BR />
-								On January 11, there is the office contained in file <CODE>01-11</CODE> (the 6th day of the octave of the Epiphany) with a commemoration of S. Hyginus Pope and Martyr contained in the seperate file <CODE>01-11cc</CODE>.
+								On January 11, there is the office contained in file <CODE>01-11</CODE> (the 6th day of the octave of the Epiphany) with a commemoration of S. Hyginus Pope and Martyr contained in the separate file <CODE>01-11cc</CODE>.
 							</LI>
 							<LI><CODE>Tempora</CODE> perpetually-transfers of the Tempora (Divino Afflatu is used as base).</LI>
 							<LI><CODE>Transfer</CODE> transfers based on Easter date.
