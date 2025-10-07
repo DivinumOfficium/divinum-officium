@@ -1903,6 +1903,8 @@ sub spell_var {
   } else {
     $t =~ s/Génetrix/Génitrix/g;
     $t =~ s/Genetrí/Genitrí/g;
+    $t =~ s/(I|i)ntellég/$1ntellíg/g if $version =~ /cist/i;
+    $t =~ s/(I|i)ntélleg/$1ntéllig/g if $version =~ /cist/i;
     $t =~ s/\bco(t[ií]d[ií])/quo$1/g;
     $t =~ s/(allelú)ja/$1ia/gi if $version =~ /cist/i;
     $t =~ s/(c)(æ|ae)l/$1œl/gi if $version =~ /cist/i;
