@@ -102,7 +102,7 @@ sub hymnusmajor {
           || $dayname[0] =~ /Epi1/i && $version =~ /cist/i
           || $dayname[0] =~ /Quadp/i
           || $winner{Rank} =~ /Novembris/i
-          || (($month > 9 || $month < 5) && $version =~ /cist/i)
+          || ($month < 5 && $version =~ /cist/i)
           || ($winner{Rank} =~ /Octobris/i && $version !~ /cist/i))
       );
     setbuild1('Hymnus', $name);
