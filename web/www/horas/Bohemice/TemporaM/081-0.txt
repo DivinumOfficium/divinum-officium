@@ -1,0 +1,11 @@
+[Lectio4]
+@Tempora/081-0:Lectio3:s/15/17/ s/19/22/ s/15 .*17/17/s
+20 Moudrost pronikavě volá na ulici, na náměstích vydává svůj hlas. 
+21 Volá na nároží plném hluku, pronáší své výroky u vchodů do městských bran:
+22 „Dokdy budete, prostoduší, milovat prostoduchost, posměvači budou mít zálibu v posmívání, hlupáci poznání nenávidět? 
+
+[Lectio5]
+@Tempora/081-0:Lectio4:s/ Přestože.*//s
+
+[Lectio6]
+@Tempora/081-0:Lectio4:s/.* Přestože/Přestože/s
