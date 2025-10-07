@@ -3,8 +3,99 @@
 [Rank] (rubrica 1963)
 Beatæ Mariæ Virginis a Rosario;;Duplex;;3;;ex C11
 
+[Rule] (rubrica 1930)
+12 lectiones
+
 [Responsory Vespera]
 @Sancti/10-07:Responsory Sexta:s/._.*//s
+
+[AntMatutinumM]
+Conservábat María * ómnia verba hæc, cþnferens in corde suo.;;47
+Crucis impérium * super húmerum ejus: livóre ejus sanáti sumus.;;96
+Dícite * in géntibus: quia Dóminus regnávit a ligno;;97
+
+[Ant Matutinum]
+@Sancti/10-07::1-5
+@:AntMatutinumM:1
+@Sancti/10-07::6-9 s/86/84/ s/95/86/ s/96/95/
+@:AntMatutinumM:2-3
+;;249;250;251
+
+[Ant Matutinum 3N]
+@Sancti/12-08:Responsory3:3 s/V. // s/, /$&*
+
+[Lectio1]
+@Sancti/10-07::1-5 s/-16/-13/
+
+[Lectio2]
+@Sancti/10-07:Lectio1:2 s/11-/14-/
+@Sancti/10-07:Lectio1:6-8
+
+[Lectio3]
+@Sancti/10-07:Lectio2
+
+[Lectio4]
+@Sancti/10-07:Lectio3
+
+[Responsory4]
+R. Gaude, † Maria Virgo:
+* Cunctas hǽreses sola interemísti in univérso mundo.
+V. Virgam hanc sume in manu tua, in qua factúrus es signa.
+R. Cunctas hǽreses sola interemísti in univérso mundo.
+
+[Lectio5]
+@Sancti/10-07:Lectio4
+
+[Responsory5]
+@Sancti/10-07:Responsory4
+
+[Lectio6]
+@Sancti/10-07:Lectio5
+
+[Responsory6]
+@Sancti/10-07:Responsory5
+
+[Lectio7]
+@Sancti/10-07:Lectio6:s/ Quam .*//
+
+[Responsory7]
+@Sancti/10-07:Responsory6
+
+[Lectio8]
+@Sancti/10-07:Lectio6:s/.* (?=Quam)//
+
+[Responsory8]
+R. Pulchra es † ed decóra, fília Jerúsalem,
+* Terríbilis ut castrórum ácies ordináta.
+V. Dignáre me laudáre te, Virgo sacráta. da mihi virtútem contra hostes tuos.
+R. Terríbilis ut castrórum ácies ordináta.
+
+[Lectio9]
+@Sancti/10-07:Lectio7:s/ Heva .*//
+
+[Responsory9]
+@Sancti/10-07:Responsory7
+
+[Lectio10]
+@Sancti/10-07:Lectio7:s/.*? (?=Heva)//s
+
+[Responsory10]
+@Sancti/10-07:Responsory8
+
+[Lectio11]
+@Sancti/10-07:Lectio8_1
+
+[Responsory11]
+@Commune/C11:Responsory7:s/sanctam festivitátem/sacratíssimi Rosárii solemnitátem/
+
+[Lectio12]
+@Sancti/10-07:Lectio8_2
+
+[Responsory12]
+R. Ne tímeas, María, † invenísti enim grátiam apud Dóminum:
+* Ecce concípies, et páries, et vocábis nomen ejus Jesus.
+V. Spiritus Sanctus supervéniet in te, et virtus Altíssimi obumbrávit tibi.
+R. Ecce concípies, et páries, et vocábis nomen ejus Jesus.
 
 [Lectio94]
 @Sancti/10-07:Lectio7:s/.*_//s s/!.*//s
@@ -14,7 +105,7 @@ Beatæ Mariæ Virginis a Rosario;;Duplex;;3;;ex C11
 [MM Capitulum]
 @Sancti/10-07:Capitulum Sexta
 _
-@Sancti/10-07:Responsory Tertia:s/.*_//s
+@Sancti/10-07:Nocturn 2 Versum
 
 [Responsory Laudes]
 @Sancti/10-07:Responsory Nona:s/._.*//s
@@ -23,11 +114,10 @@ _
 @Sancti/10-07::s/Nat/NatT/
 
 [Responsory TertiaM]
-V. Sancta Dei Génetrix, semper Virgo Maria.
-R. Intercéde pro nobis ad Dóminum, Deum nostrum.
+@Sancti/10-07:Nocturn 1 Versum
 
 [Responsory SextaM]
-@Sancti/10-07:Responsory Tertia:s/.*_.//s
+@Sancti/10-07:Nocturn 2 Versum
 
 [Responsory NonaM]
-@Sancti/10-07:Responsory Sexta:s/.*_.//s
+@Sancti/10-07:Nocturn 3 Versum
