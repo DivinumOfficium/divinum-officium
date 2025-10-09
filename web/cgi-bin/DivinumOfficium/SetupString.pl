@@ -620,8 +620,9 @@ sub setupstring($$%) {
     # do [Rule] first, if it exists: we need to use the rule to work
     # out some subsequent substitutions.
     foreach my $key ((exists $sections{'Rule'}) ? 'Rule' : (), sort(keys(%sections))) {
-      if ($key !~ /Commemoratio/
-        && ($key !~ /LectioE|Evangelium/i || $missa || $basedir =~ /missa/ || $sections{$key} =~ /Commune/))
+      if ( ($key !~ /Commemoratio/ && ($key !~ /LectioE|Evangelium/i || $sections{$key} =~ /Commune/))
+        || $missa
+        || $basedir =~ /missa/)
       {
         my $iiij = 0;
         my $iiiT = $sections{$key};
