@@ -4,7 +4,7 @@ R. The Lord loved Gertrude in perpetual charity, therefore he drew her to him fr
 V. He espoused her to himself forever in faith and mercy.
 R. And spoke to her in her heart.
 
-[Lectio2]
+[Lectio_Pone]
 !Song 8:6-7
 6 Put me as a seal upon thy heart, as a seal upon thy arm, for love is strong as death, jealousy as hard as hell, the lamps thereof are fire and flames. 
 7 Many waters cannot quench charity, neither can the floods drown it: if a man should give all the substance of his house for love, he shall despise it as nothing.
@@ -15,6 +15,10 @@ R. Gertrude, speaking to her spouse, said:
 V. Then the Lord leaning towards her, looked with desire, saying, And for you to cling to me, is always sweet, my beloved.
 R. But it is good for me to ling to you alone, my beloved.
 
+[Lectio3] (rubrica 1930 aut rubrica Barroux)
+@Sancti/07-22:Lectio2:!2-3 s/1-4/3-5/
+@Sancti/07-22::2 s/ Under .*//
+
 [Responsory3]
 R. The Most High placed Gertrude in his tabernacle,
 * God is in the midst thereof, she shall not be moved.
@@ -22,5 +26,5 @@ V. God will help her early in the morning.
 R. God is in the midst thereof, she shall not be moved.
 
 [Capitulum Sexta]
-@:Lectio2:s/-7// s/6 /v. / s/, jealousy.*/.\n/s
+@:Lectio_Pone:1-2 s/-7// s/6 /v. / s/, jealousy.*/./
 $Deo gratias
