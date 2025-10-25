@@ -1,5 +1,16 @@
 @Commune/C10
 
+[HymnusM Matutinum]
+@Commune/C11:Hymnus Matutinum:1-20 s/sídera/ǽthera/
+@Commune/C12:HymnusM minor:8-12 s/r. //
+@Commune/C11:Hymnus Matutinum:21-25
+
+[Benedictio]
+
+Oret voce pia pro nobis Virgo María.
+In omni tribulatióne et angústia subvéniat nobis pia Virgo Maria.
+Ad societátem cívium supernórum perdúcat nos Regína Angelórum.
+
 [Responsory3]
 R. Virgo parens Christi, paritúra Deum genuísti: fúlgida stella maris, nos prótege, nos tueáris:
 * Dum paris, et gaudes, Cantant cæli ágmina laudes.
@@ -7,3 +18,63 @@ V. Intercéde pia pro nobis Virgo María.
 R. Dum paris, et gaudes, Cantant cæli ágmina laudes.
 &Gloria
 R. Cantant cæli ágmina laudes.
+
+[Capitulum Laudes]
+@Commune/C12:Lectio3:1 s/17-//
+@Commune/C12:Lectio3:5 s/20 /v. / s/:$/./
+$Deo gratias
+
+[HymnusM Laudes]
+@Commune/C11:HymnusM Laudes:1-15
+@Commune/C12:HymnusM minor:8-12 s/r. //
+@Commune/C11:HymnusM Laudes:16-20
+
+[Versum 2]
+V. Elégit eam Deus, et præelégit eam.
+R. Et habitáre eam fecit in tabernáculo suo.
+
+[Ant 2_]
+Ave stella matutína, peccatórum medicína, mundi princeps et regína, sola Virgo digna dici: contra tela inimíci clipeum pone salútis, tuæ títulum virtútis. O sponsa Dei elécta, esto nobis via recta ad ætérna gáudia.
+
+[Ant 2]
+@:Ant 2_
+(sed tempore paschali)
+@Commune/C10:Ant 2_:s/sola/tu sola/ s/: (.)/. \u$1/
+
+[Responsory Breve Tertia]
+R.br. Sancta María, Mater Christi, * Audi rogántes sérvulos.
+R. Sancta María, Mater Christi, * Audi rogántes sérvulos.
+V. Et impetrátam nobis cælitus tu defer indulgéntiam.
+R. Audi rogántes sérvulos.
+&Gloria
+R. Sancta María, Mater Christi, * Audi rogántes sérvulos.
+
+[Versum Tertia]
+@Commune/C11:Versum 0
+
+[Capitulum Sexta]
+@Commune/C11::s/v. .*?\. /v. /
+
+[Responsory Breve Sexta]
+R.br. Ora pro nobis, * Sancta Dei Génetrix.
+R. Ora pro nobis, * Sancta Dei Génetrix.
+V. Ut digni efficiámur promissiónibus Christi.
+R. Sancta Dei Génetrix.
+&Gloria
+R. Ora pro nobis, * Sancta Dei Génetrix.
+
+[Versum Sexta]
+@:Versum 2
+
+[Capitulum Nona]
+@Commune/C12:Lectio3:1-3 s/-20/-18/ s/17 /v. / s/\n18 // s/:$/./
+$Deo gratias
+
+[Responsory Breve Nona]
+@Commune/C6:Responsory Breve Nona:1-2
+@:Versum 2:2:s/R./V./
+@Commune/C6:Responsory Breve Nona:4-6
+
+[Versum Nona]
+V. Sancta Dei Génetrix, semper Virgo María.
+R. Intercéde pro nobis ad Dóminum, Deum nostrum.
