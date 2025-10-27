@@ -3,6 +3,8 @@ Omnium Sanctorum
 
 [Rank]
 ;;Duplex I classis cum octava communi;;6.4;;vide C3
+(sed rubrica divino)
+;;Duplex I classis cum octava communi;;6.51;;vide C3
 
 [Rule]
 vide C3;
@@ -15,6 +17,9 @@ Psalm5 Vespera3=115
 (deinde dicitur)
 Vesperae Defunctorum
 (sed feria 7 aut rubrica 196 omittitur)
+
+[Doxology] (rubrica divino et mense 10 et feria 2)
+@Sancti/10-DU
 
 [Ant Vespera]
 Vidi turbam magnam, * quam dinumeráre nemo póterat, ex ómnibus géntibus, stantes ante thronum.
@@ -66,7 +71,7 @@ Credéntium de fínibus,
 Ut unus omnes únicum
 Ovíle nos Pastor regat.
 _
-Deo Patri sit glória,
+* Deo Patri sit glória,
 Natóque Patris único,
 Sancto simul Paráclito,
 In sempitérna sǽcula.
@@ -103,7 +108,7 @@ Credéntium de fínibus,
 Ut Christo laudes débitas
 Persolvámus alácriter.
 _
-Glória Patr[i] ingénito,
+* Glória Patr[i] ingénito,
 Ejúsque Unigénito,
 Una cum Sancto Spíritu,
 In sempitérna sǽcula.
