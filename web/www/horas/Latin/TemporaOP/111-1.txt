@@ -1,0 +1,26 @@
+@Tempora/111-1
+
+[In Finem Lectio]
+@TemporaOP/Quad5-0
+
+[Lectio1]
+@Tempora/111-1::1-4 s/2-5/1-3/ s/2 E/1 Et vidi, et cécidi in fáciem meam, et audívi vocem loquéntis, et dixit ad me: Fili hóminis, sta super pedes tuos, et loquar tecum.\n2 Et ingréssus est in me spíritus postquam locútus est mihi, et státuit me supra pedes meos: e/ s/; .*/./
+@:In Finem Lectio
+
+[Responsory1]
+@Tempora/111-0
+
+[Lectio2]
+@Tempora/111-1:Lectio1:2
+@Tempora/111-1:Lectio1:4-6 s/.*; /3 /
+@:In Finem Lectio
+
+[Responsory2]
+@Tempora/111-0
+
+[Lectio3]
+@Tempora/111-1:Lectio2
+@:In Finem Lectio
+
+[Responsory3]
+@Tempora/111-0
