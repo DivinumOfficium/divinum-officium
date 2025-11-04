@@ -2,5 +2,5 @@
 @Tempora/Pent21-0:Lectio7:s/Jeśli .*//s
 
 [Lectio10]
-@Tempora/Pent21-0:Lectio7:s/.* Jeśli /Jeśli /s
+@Tempora/Pent21-0:Lectio7:s/.* Jeśli /Jeśli /s s/$/~/
 @Tempora/Pent21-0:Lectio8:s/But if .*//s
