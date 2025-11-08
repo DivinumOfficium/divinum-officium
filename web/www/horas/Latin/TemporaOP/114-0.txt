@@ -1,0 +1,26 @@
+@Tempora/114-0
+
+[Ant 1]
+Sustinúimus pacem, et non venit, Dómine: quæsívimus bona, et ecce turbátio: cognóvimus, Dómine, peccáta nostra; ne in ætérnum obliviscáris nos, Deus Israël.
+
+[In Finem Lectio]
+@TemporaOP/Quad5-0
+
+[Lectio1]
+@Tempora/114-0
+@:In Finem Lectio
+
+[Lectio2]
+@Tempora/114-0::1-4 s/-7/-6/
+
+[Responsory2]
+@Tempora/111-0:Responsory3
+
+[Lectio3]
+@Tempora/114-0::1 s/8-11/7-10/
+@Tempora/114-0:Lectio2:5
+@Tempora/114-0::2-4 :s/ Et erit, .*//
+@:In Finem Lectio
+
+[Responsory3]
+@TemporaOP/Pent01-0:Responsory6
