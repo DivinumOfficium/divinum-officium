@@ -152,8 +152,6 @@ sub hiddenfields {
 <INPUT TYPE="HIDDEN" NAME="compare" VALUE=$Ck>
 <INPUT TYPE="HIDDEN" NAME="plures" VALUE="$plures">
 <INPUT TYPE="HIDDEN" NAME="kmonth" VALUE="">
-</FORM>
-</BODY></HTML>
 PrintTag
 }
 
