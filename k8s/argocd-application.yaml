@@ -1,0 +1,32 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: divinum-officium
+  namespace: argocd  # ArgoCD applications typically live in the argocd namespace
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  
+  source:
+    repoURL: https://github.com/hcblassingame/divinum-officium.git
+    targetRevision: master
+    path: k8s  # This is where you'll put your Kubernetes manifests in the repo
+  
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  
+  syncPolicy:
+    automated:
+      prune: true  # Automatically delete resources that are no longer in git
+      selfHeal: true  # Automatically sync when the cluster state differs from git
+      allowEmpty: false
+    syncOptions:
+    - CreateNamespace=true
+    retry:
+      limit: 5
+      backoff:
+        duration: 5s
+        factor: 2
+        maxDuration: 3m
