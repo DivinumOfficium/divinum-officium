@@ -1502,7 +1502,12 @@ sub tferifile {
   my %winit = %$winit;
   $w{"Lectio$start"} = $winit{"Lectio$i"};
 
-  if (($winit{Rule} =~ /Initia cum Responsory/i || $winit{Rank} =~ /Dominica/i) && exists($winit{"Responsory$i"})) {
+  if (
+    exists($winit{"Responsory$i"})
+    && ( $winit{Rule} =~ /Initia cum Responsory/i
+      || $winit{Rank} =~ /Dominica/i
+      || $winit{Scriptura} =~ /Dominica/i)
+  ) {
     $w{"Responsory$start"} = $winit{"Responsory$i"};
   } elsif (!exists($w{"Responsory$start"})) {
     my %s = (columnsel($lang)) ? %scriptura : %scriptura2;
