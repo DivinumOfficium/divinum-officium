@@ -1652,9 +1652,9 @@ sub precedence {
         || ($month == 2 && $day < 3))
       {
         $vtv = 'C12N';
-      } elsif ($dayname[0] =~ /adv/i || $winner =~ /03-25/) {
+      } elsif ($dayname[0] =~ /adv/i || ($winner =~ /03-25/i && $version !~ /Praedicatorum/)) {
         $vtv = 'C12A';
-      } elsif ($dayname[0] =~ /(Quadp|Quad)/i) {
+      } elsif ($dayname[0] =~ /(Quadp|Quad)/i && $version !~ /Praedicatorum/) {
         $vtv = 'C12Q';
       }
     }

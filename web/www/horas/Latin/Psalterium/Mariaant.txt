@@ -80,7 +80,8 @@ V. Ora pro nobis, beate Pater Dominice. (Allelúja.)
 R. Ut digni efficiamur promissionibus Christi. (Allelúja.)
 _
 $Oremus
-v. Concede, quaesumus omnipotens Deus, ut qui peccatorum nostrorum pondere premimur, beati Dominici confessoris tui Patris nostri patrocinio sublevemur. $Per Christum
+v. Concede, quaesumus omnipotens Deus, ut qui peccatorum nostrorum pondere premimur, beati Dominici confessoris tui Patris nostri patrocinio sublevemur.~
+$Per Christum
 _
 $Fidelium animae
 
@@ -90,7 +91,7 @@ _
 @:Quadragesimae:s/.*_.V\./V./s 1-2 s/\.$/. (Allelúja.)/gm
 _
 $Oremus
-@Commune/C10:Oratio:1 s/$/~/ s/^(?:v\.)?/v. /
+@Commune/C11:Oratio:1 s/$/~/ s/^(?:v\.)?/v. /
 $Per Christum
 _
 @:Ant ad S_Dominicum

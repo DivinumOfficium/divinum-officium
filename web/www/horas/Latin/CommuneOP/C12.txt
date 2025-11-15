@@ -1,0 +1,238 @@
+@Commune/C12
+
+[Invit]
+Regem Vírginis Fílium, * Veníte adorémus.
+
+[Hymnus Matutinum]
+@CommuneOP/C10
+
+[Ant Matutinum]
+@Commune/C11:Ant MatutinumBMV:1
+@Commune/C11:Ant MatutinumBMV:2-3 s/.*;;/;;/g
+@Commune/C11:Ant MatutinumBMV:1
+@Commune/C11:Ant MatutinumBMV:2-3 s/.*;;/;;/g
+@Commune/C11:Ant MatutinumBMV:1
+@Commune/C11:Ant MatutinumBMV:2-3 s/.*;;/;;/g
+
+[Benedictio]
+_
+@Commune/C10:Benedictio:3 s/Ipsa/Alma/
+Sancta Dei Génetrix sit nobis auxiliátrix.
+@Commune/C10:Benedictio:2
+
+[Lectio1]
+Sancta María, Virgo virginum, mater et filia Regis regum ómnium, tuum nobis impénde solátium: ut cæléstis regni per te mereámur habére præmium, et cum eléctis Dei regnáre in perpétuum.
+
+[Lectio2]
+Sancta María, piárum piíssima, intercéde pro nobis, sanctárum sanctíssima: per te, Virgo, nostra sumat precámina qui pro nobis ex te natus regnat super æthera: ut sua caritáte nostra deleántur peccámina.
+
+[Lectio3]
+Sancta Dei Génetrix, quæ digne meruísti concipere quem totus orbis nequit comprehendere, tuo pio intervéntu culpas nostras áblue: ut redémpti perénnis sedem glóriæ per te valeámus scándere, ubi regnas cum eódem Filio tuo sine témpore.
+
+[Ant Laudes]
+@Commune/C11:Ant MatutinumBMV:7 s/;;.*//
+;;
+;;
+;;
+;;
+
+[Capitulum Laudes]
+!Eccli. 24:17
+v. Ego quasi vitis fructificávi suavitátem odóris: et flores mei fructus honóris et honestátis.
+$Deo gratias
+
+[Hymnus Laudes]
+@CommuneOP/C10
+
+[Versum 2]
+@CommuneOP/C10
+
+[Ant 2]
+O gloriósa Dei Génetrix, Virgo semper María, quæ Dóminum ómnium meruísti portáre, et Regem Angelórum sola Virgo lactáre: nostri, quæsumus, pia memoráre, et pro nobis Christum deprecáre: ut tuis fulti patrocíniis ad cæléstia regna mereámur perveníre.
+(sed tempore paschali)
+Beáta Dei Génetrix María, Virgo perpétua, templum Dómini, sacrárium Spíritus Sancti, tu sola sine exémplo placuísti Dómino nostro Jesu Christo. Ora pro pópulo, intérveni pro clero, intercéde pro devóto femineo sexu, allelúja, allelúja.
+
+[_Oratio Nat]
+@Sancti/01-01:Oratio:s/ Jesum.*//
+
+[Oratio]
+@Commune/C11:Oratio
+(sed tempore Adventus)
+@Commune/C12:Oratio 2
+(sed tempore Nativitatis)
+@:_Oratio Nat
+
+[Oratio 2]
+@:Oratio
+
+[Minor intro]
+#Incipit
+@Commune/C10:Invit:s/^/V. / s/..\*.*/./
+$Deus in adjutorium
+
+[Special Prima]
+@:Minor intro
+@:Hymnus minor
+
+#Psalmi
+@Commune/C11:Ant MatutinumBMV:6 s/;;.*// s/^/Ant. /
+&psalm(119)
+&psalm(120)
+&psalm(121)
+@Commune/C11:Ant MatutinumBMV:6 s/;;.*// s/^/Ant. /
+
+#Capitulum Responsorium Versus
+@Commune/C11:Capitulum Laudes
+_
+@Sancti/10-07:Responsory Sexta:1-6
+_
+@Commune/C10:Versum 2
+
+#Oratio
+@:Pre oratio
+@Commune/C10a:Postcommunio
+
+@:Minor final
+
+[Special Tertia]
+@:Minor intro
+@:Hymnus minor
+
+#Psalmi
+@Commune/C11:Ant MatutinumBMV:5 s/^/Ant. / s/;;.*//
+&psalm(122)
+&psalm(123)
+&psalm(124)
+_
+@Commune/C11:Ant MatutinumBMV:5 s/^/Ant. / s/;;.*//
+
+#Capitulum Responsorium Versus
+@:Capitulum Tertia
+_
+@CommuneOP/C10:Responsory Breve Tertia
+_
+@CommuneOP/C10:Versum 0
+
+#Oratio
+@:Pre oratio
+@:Oratio 2
+@:Minor final
+
+[Oratio Sexta]
+v. Prótege, Dómine, fámulos tuos subsidiis pacis: et, beátæ Mariæ semper Vírginis patrocíniis confidéntes, a cunctis hóstibus redde secúros.
+$Per Dominum
+
+[Special Sexta]
+@:Minor intro
+@:Hymnus minor
+
+#Psalmi
+Ant. In prole mater, in partu virgo, gaude et lætáre, Virgo Mater Dómini.
+&psalm(125)
+&psalm(126)
+&psalm(127)
+_
+Ant. In prole mater, in partu virgo, gaude et lætáre, Virgo Mater Dómini.
+
+#Capitulum Responsorium Versus
+@:Capitulum Sexta
+_
+@CommuneOP/C10:Responsory Breve Sexta
+_
+@CommuneOP/C10:Versum 2
+
+#Oratio
+@:Pre oratio
+@:Oratio Sexta
+@:Minor final
+
+[Capitulum Nona]
+@Sancti/10-07:Lectio Prima
+
+[Special Nona]
+@:Minor intro
+@:Hymnus minor
+
+#Psalmi
+@Commune/C10:Ant 1_:s/^/Ant. /
+&psalm(128)
+&psalm(129)
+&psalm(130)
+_
+@Commune/C10:Ant 1_:s/^/Ant. /
+
+#Capitulum Responsorium Versus
+@:Capitulum Nona
+_
+@CommuneOP/C10:Responsory Breve Nona
+_
+@CommuneOP/C10:Versum Nona
+
+#Oratio
+@:Pre oratio
+@:Oratio Nona
+@:Minor final
+
+[Ant Vespera]
+@Psalterium/Special/Major Special:Suffragium BMV AntL:2 s/Ant. // s/ \(.*/;;109;112;121;126;147/
+
+[Capitulum Vespera]
+@Commune/C12:Lectio3:1 s/17-//
+@Commune/C12:Lectio3:5 s/20 /v. / s/:$/./
+$Deo gratias
+
+[Ant 3]
+@Commune/C11:Ant 1:s/: .*/./
+(sed tempore paschali)
+@Commune/C10:Ant 1_Pasch
+(sed tempore Octava Ascensionis)
+@Commune/C10:Ant 1_Pasch:s/resurréxit/jam ascéndit/
+
+[Ant Completorium]
+Ant. Super psalmos ant. Virgo María, non est tibi símilis nata in mundo inter mulieres, florens un rosa, fragrans sicut lilium: ora pro nobis, sancta De Génetrix.
+
+[Special Completorium]
+#Incipit
+@Commune/C10:Invit:s/^/V. / s/..\*.*/./
+$Converte nos
+$Deus in adjutorium
+(deinde dicitur)
+&Alleluia
+(sed rubrica cisterciensis omittitur)
+
+#Psalmi
+@:Ant Completorium
+&psalm(131)
+&psalm(132)
+&psalm(133)
+@:Ant Completorium
+
+#Capitulum Responsorium
+@Commune/C12:Capitulum Completorium_:1-3
+_
+R. Intercéde pro nobis, sancta Virgo vírginum, * Mater Dei, María.
+R. Intercéde pro nobis, sancta Virgo vírginum,
+V. Ut digni efficiámur promissiónibus Christi.
+R. Mater Dei, María.
+&Gloria
+R. Intercéde pro nobis, sancta Virgo vírginum,
+
+#Hymnus
+@Commune/C11:Hymnus Vespera:22-36 s/^/v. /
+
+#Canticum: Nunc dimittis
+@Commune/C12:Ant Completorium
+&psalm(233)
+@Commune/C12:Ant Completorium
+
+#Oratio
+@:Pre oratio
+@Commune/C12:Oratio Sexta
+
+#Conclusio
+&Dominus_vobiscum
+&Benedicamus_Domino
+$Benedictio Completorium2
+
+#Antiphona finalis
+@Psalterium/Mariaant:Ant Finalis OP
