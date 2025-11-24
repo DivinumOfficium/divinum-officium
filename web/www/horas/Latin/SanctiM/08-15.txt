@@ -10,14 +10,17 @@ Doxology=Nat
 [Responsory Vespera 1] (rubrica Barroux)
 @Sancti/08-15t:Responsory1
 
+[Responsory Vespera] (rubrica cisterciensis)
+@Sancti/08-15t:Responsory Breve Tertia
+
+[Hymnus Vespera]
+@Sancti/08-15:Hymnus Vespera:s/Jesu, tibi sit glória/Glória tibi, Dómine/
+
 [Versum 1] (rubrica cisterciensis)
 @CommuneCist/C10:Versum 1a
 
 [Ant 1] (rubrica cisterciensis)
 Ascéndit Christus * super cœlos, et præparávit suæ castíssimæ Matri immortalitátis locum; et hæc est illa præclára festívitas ómnium Sanctórum festivitátibus incomparábilis, in qua gloriósa et felix, mirántibus cœléstis cúriæ ordínibus, ad æthéreum pervénit thálamum, quo pia sui mémorum ímmemor nequáquam exístat.
-
-[Hymnus Vespera]
-@Sancti/08-15:Hymnus Vespera:s/Jesu, tibi sit glória/Glória tibi, Dómine/
 
 [Oratio]
 @Sancti/08-15
@@ -67,6 +70,9 @@ Ascéndit Christus * super cœlos, et præparávit suæ castíssimæ Matri immor
 (sed rubrica cisterciensis)
 @Sancti/08-15t
 
+[Responsory Laudes] (rubrica cisterciensis)
+@CommuneCist/C11
+
 [Hymnus Laudes]
 @Sancti/08-15
 (sed rubrica cisterciensis)
@@ -74,9 +80,6 @@ Ascéndit Christus * super cœlos, et præparávit suæ castíssimæ Matri immor
 
 [Versum 2] (rubrica cisterciensis)
 @:Versum 1
-
-[Responsory Laudes] (rubrica cisterciensis)
-@CommuneCist/C11
 
 [Responsory TertiaM] (rubrica cisterciensis)
 @Sancti/08-15t:Versum 1
@@ -90,9 +93,6 @@ Ascéndit Christus * super cœlos, et præparávit suæ castíssimæ Matri immor
 @Sancti/08-15
 (sed rubrica cisterciensis)
 @Sancti/01-23AV
-
-[Responsory Vespera] (rubrica cisterciensis)
-@Sancti/08-15t:Responsory Tertia
 
 [Hymnus Vespera 3] (nisi rubrica cisterciensis)
 @Commune/C11:Hymnus Vespera

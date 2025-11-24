@@ -104,7 +104,10 @@ V. Justus germinábit sicut lílium.
 R. Et florébit in ætérnum ante Dóminum.
 
 [Ant Vespera 3]
-@Commune/C4:Ant Vespera:s/$/_/gm s/_/;;109/ s/_/;;111/ s/_/;;112/ s/_/;;131/ s/_//
+@Commune/C4:Ant Vespera:1 s/$/;;109/
+@Commune/C4:Ant Vespera:2 s/$/;;111/
+@Commune/C4:Ant Vespera:3 s/$/;;112/
+@Commune/C4:Ant Vespera:5 s/$/;;131/
 
 [Lectio1 in 2 loco]
 @Commune/C4:Lectio1 in 2 loco:s/-5/-4/ s/5 .*//s

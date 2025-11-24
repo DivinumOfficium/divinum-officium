@@ -29,6 +29,9 @@ Angeli, Archángeli, * Throni et Dominatiónes, Principátus et Potestátes, Vir
 [Ant Vespera] (rubrica cisterciensis)
 Allelúia, * allelúia, allelúia.
 
+[Responsory Vespera] (rubrica cisterciensis)
+@Sancti/08-06:Responsory Breve Tertia
+
 [Hymnus Vespera]
 v. Te, splendor et virtus Patris,
 Te vita, Jesu, córdium,
@@ -86,15 +89,12 @@ Qui trinus et unus Deus
 Exstat ante sǽcula.
 Amen.
 
-[Responsory Vespera] (rubrica cisterciensis)
-@Sancti/08-06:Responsory Tertia
-
 [Versum 1]
 V. Stetit Angelus juxta aram templi.
 R. Habens thuríbulum áureum in manu sua.
 
 [Versum 1] (rubrica cisterciensis)
-@Sancti/05-08:Versum 3
+@:Versum 3
 
 [Ant 1]
 Dum sacrum mystérium * cérneret Joánnes, Archángelus Míchaël tuba cécinit: Ignósce, Dómine, Deus noster, qui áperis librum, et solvis signácula ejus, allelúja.
@@ -119,30 +119,32 @@ Regem Archangelórum Dóminum, * Veníte, adorémus. (Allelúja.)
 Concússum est mare, * et contrémuit terra, ubi Archángelus Míchaël descendébat de cælo, allelúja.;;8
 ;;10
 ;;14
-V. Stetit Angelus juxta aram templi, allelúja.
-R. Habens thuríbulum áureum in manu sua, allelúja.
 Míchaël Archángele, * veni in adjutórium pópulo Dei, allelúja.;;18
 ;;23
 ;;33
-V. Ascéndit fumus arómatum in conspéctu Dómini, allelúja.
-R. De manu Angeli, allelúja.
 Angelus Archángelus Míchaël, * Dei núntius pro animábus justis, allelúja, allelúja.;;95
 ;;96
 ;;102
-V. In conspéctu Angelórum psallam tibi, Deus meus, allelúja.
-R. Adorábo ad templum sanctum tuum, et confitébor nómini tuo, allelúja.
 
 [Nocturn 1 Versum]
-V. Stetit Angelus juxta aram templi, allelúja.
-R. Habens thuríbulum áureum in manu sua, allelúja.
+@:Versum 1
+
+[Nocturn 2 Versum_]
+V. Ascéndit fumus arómatum in conspéctu Dómini.
+R. De manu Angeli.
+
+[Nocturn 2 Versum]
+@:Nocturn 2 Versum_
 
 [Nocturn 2 Versum] (rubrica cisterciensis)
 V. Data sunt ei incénsa multa.
 R. Ut adoléret ea ante altáre áureum.
 
+[Nocturn 3 Versum]
+@:Versum 3
+
 [Nocturn 3 Versum] (rubrica cisterciensis)
-V. Ascéndit fumus arómatum in conspéctu Dómini.
-R. De manu Angeli.
+@:Nocturn 2 Versum_
 
 [Lectio1]
 De Daniéle Prophéta
@@ -265,7 +267,7 @@ v. Significávit Deus, quæ opórtet fíeri cito, loquens per Angelum suum servo
 $Deo gratias
 
 [Responsory Laudes] (rubrica cisterciensis)
-@:Responsory Tertia
+@:Responsory Breve Tertia
 
 [Hymnus Laudes]
 v. Christe, sanctórum decus Angelórum,
@@ -334,7 +336,7 @@ Glória mundo. Amen.
 @:Versum 1
 
 [Versum 2] (rubrica cisterciensis)
-@:Responsory Nona:8-9:s/Deum/Dóminum/ s/Bohu/Hospodinu/
+@:Versum Nona:s/Deum/Dóminum/ s/Bohu/Hospodinu/
 
 [Ant 2]
 Factum est * siléntium in cælo, dum draco commítteret bellum; et Míchaël pugnávit cum eo, et fecit victóriam, allelúja.
@@ -343,44 +345,46 @@ Factum est * siléntium in cælo, dum draco commítteret bellum; et Míchaël pu
 !Apo 12:7-8
 v. Factum est prǽlium magnum in cælo: Míchaël et Angeli ejus præliabántur cum dracóne, et draco pugnábat et ángeli ejus: et non prævaluérunt, neque locus invéntus est eórum ámplius in cælo.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Stetit Angelus * Juxta aram templi.
 R. Stetit Angelus * Juxta aram templi.
 V. Habens thuríbulum áureum in manu sua.
 R. Juxta aram templi.
 &Gloria
 R. Stetit Angelus * Juxta aram templi.
-_
-V. Ascéndit fumus arómatum in conspéctu Dómini.
-R. De manu Angeli. 
+
+[Versum Tertia]
+@:Nocturn 2 Versum_
 
 [Capitulum Sexta]
 !Apo 5:11-12
 v. Audívi vocem Angelórum multórum in circúitu throni, et animálium et seniórum; et erat númerus eórum míllia míllium, voce magna dicéntium: Salus Deo nostro.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Ascéndit fumus arómatum * In conspéctu Dómini.
 R. Ascéndit fumus arómatum * In conspéctu Dómini.
 V. De manu Angeli.
 R. In conspéctu Dómini.
 &Gloria
 R. Ascéndit fumus arómatum * In conspéctu Dómini.
-_
+
+[Versum Sexta]
 @:Versum 3
 
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. In conspéctu Angelórum * Psallam tibi, Deus meus.
 R. In conspéctu Angelórum * Psallam tibi, Deus meus.
 V. Adorábo ad templum sanctum tuum, et confitébor nómini tuo.
 R. Psallam tibi, Deus meus.
 &Gloria
 R. In conspéctu Angelórum * Psallam tibi, Deus meus.
-_
+
+[Versum Nona]
 V. Adoráte Deum.
 R. Omnes Angeli ejus.
 

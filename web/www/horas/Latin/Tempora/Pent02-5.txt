@@ -123,16 +123,21 @@ Amen.
 Cogitatiónes * Cordis ejus in generatióne et generatiónem.;;32
 Apud te * est fons vitæ; torrénte voluptátis tuæ potábis nos, Dómine.;;35
 Homo * pacis meæ, qui edébat panes meos, magnificávit super me supplantatiónem.;;40
-V. Tóllite jugum meum super vos et díscite a me.
-R. Quia mitis sum et húmilis Corde.
 Rex omnis terræ * Deus; regnábit super gentes.;;46;
 Dum anxiarétur * Cor meum, in petra exaltásti me.;;60
 Secúndum multitúdinem * dolórum meórum in Corde meo, consolatiónes tuæ lætificavérunt ánimam meam.;;93
-V. Ego dixi, Dómine, miserére mei.
-R. Sana ánimam meam quia peccávi tibi.
 Qui dilígitis Dóminum, * confitémini memóriæ sanctificatiónis ejus.;;96
 Vidérunt * omnes términi terræ salutáre Dei nostri.;;97
 Psallam tibi * in natiónibus, quia magna est super cælos misericórdia tua.;;107
+
+[Nocturn 1 Versum]
+@:Versum 1
+
+[Nocturn 2 Versum]
+V. Ego dixi, Dómine, miserére mei.
+R. Sana ánimam meam quia peccávi tibi.
+
+[Nocturn 3 Versum]
 V. Memóriam fecit mirabílium suórum miserátor Dóminus.
 R. Escam dedit timéntibus se.
 
@@ -315,48 +320,48 @@ $Per eumdem
 !Eph 3:17-19
 v. In caritáte radicáti et fundáti, ut possítis comprehéndere cum ómnibus sanctis, quæ sit latitúdo et longitúdo, et sublímitas et profúndum; scire étiam supereminéntem sciéntiæ caritátem Christi, ut impleámini in omnem plenitúdinem Dei.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Tóllite jugum meum super vos * Et díscite a me.
 R. Tóllite jugum meum super vos * Et díscite a me.
 V. Quia mitis sum et húmilis Corde.
 R. Et díscite a me.
 &Gloria
 R. Tóllite jugum meum super vos * Et díscite a me.
-_
-V. Ego dixi: Dómine, miserére mei.
-R. Sana ánimam meam quia peccávi tibi.
+
+[Versum Tertia]
+@:Nocturn 2 Versum
 
 [Capitulum Sexta]
 !Eph 3:14-17
 v. Hujus rei grátia flecto génua mea ad Patrem Dómini nostri Jesu Christi, ut det vobis secúndum divítias glóriæ suæ virtúte corroborári per Spíritum ejus in interiórem hóminem: Christum habitáre per fidem in córdibus vestris.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Ego dixi: Dómine, * Miserére mei.
 R. Ego dixi: Dómine, * Miserére mei.
 V. Sana ánimam meam quia peccávi tibi.
 R. Miserére mei.
 &Gloria
 R. Ego dixi: Dómine, * Miserére mei.
-_
-V. Memóriam fecit mirabílium suórum miserátor Dóminus.
-R. Escam dedit timéntibus se.
+
+[Versum Sexta]
+@:Nocturn 3 Versum
 
 [Capitulum Nona]
 !Eph 3:17-19
 v. In caritáte radicáti et fundáti, ut possítis comprehéndere cum ómnibus sanctis, quæ sit latitúdo et longitúdo, et sublímitas et profúndum; scire étiam supereminéntem sciéntiæ caritátem Christi, ut impleámini in omnem plenitúdinem Dei.
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Memóriam fecit mirabílium suórum * Miserátor Dóminus.
 R. Memóriam fecit mirabílium suórum * Miserátor Dóminus.
 V. Escam dedit timéntibus se.
 R. Miserátor Dóminus.
 &Gloria
 R. Memóriam fecit mirabílium suórum * Miserátor Dóminus.
-_
-V. Hauriétis aquas in gáudio.
-R. De fóntibus Salvatóris.
+
+[Versum Nona]
+@:Versum 2
 
 [Ant Vespera 3]
 Unus mílitum * láncea latus ejus apéruit et contínuo exívit sanguis et aqua.;;109
@@ -366,8 +371,7 @@ Veníte ad me * omnes qui laborátis et oneráti estis et ego refíciam vos.;;12
 Fili, * præbe mihi cor tuum, et óculi tui custódiant vias meas.;;147
 
 [Versum 3]
-V. Hauriétis aquas in gáudio.
-R. De fóntibus Salvatóris.
+@:Versum 2
 
 [Ant 3]
 Ad Jesum autem * cum veníssent, ut vidérunt eum jam mórtuum, non fregérunt ejus crura, sed unus mílitum láncea latus ejus apéruit et contínuo exívit sanguis et aqua.

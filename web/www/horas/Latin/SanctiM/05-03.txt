@@ -11,14 +11,13 @@ Psalmi Dominica
 ;;5
 ;;8
 ;;14
-@Sancti/05-03::4-6 s/4/22/
+@Sancti/05-03::4 s/4/22/
 ;;26
 ;;75
 ;;95
 ;;96
 ;;97
-@Sancti/05-03::9-11 s/95/246;247;248/
-@Sancti/05-03::14-15
+@Sancti/05-03::7 s/;;95/\n;;246;247;248/
 
 [Lectio3]
 @Sancti/05-03::1-6 s/-15/-12/
@@ -77,20 +76,20 @@ Psalmi Dominica
 [Responsory12]
 @SanctiM/09-14
 
-[Evangelium]
-@Sancti/05-03
-
 [Ant 2] (rubrica cisterciensis)
 Ecce Crucem Dómini, * fúgite, partes advérsæ, vicit Leo de tribu Juda, radix David, allelúia.
 
 [Responsory TertiaM]
-@Sancti/05-03:Responsory Nona:8-9
+@Sancti/05-03:Versum 1
 
 [Responsory SextaM]
-@Sancti/05-03:Responsory Tertia:8-9
+@Sancti/05-03:Versum 2
 
 [Responsory NonaM]
-@Sancti/05-03:Responsory Sexta:8-9
+@Sancti/05-03:Nocturn 3 Versum
 
 [Versum 3] (nisi rubrica cisterciensis)
-@Sancti/05-03:Responsory Nona:8-9
+@Sancti/05-03:Versum 1
+
+[Evangelium]
+@Sancti/05-03

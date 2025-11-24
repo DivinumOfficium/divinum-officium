@@ -3,16 +3,13 @@
 [Rule] (nisi rubrica 1963)
 12 lectiones
 
-[Responsory1]
-@Commune/C4a:Responsory8
-
-[Ant 3]
-@Commune/C4a:Ant 1:s/N\./Hierónyme/
-
 [Lectio1]
 @CommuneM/C4a
 (sed rubrica cisterciensis)
 @CommuneCist/C4a
+
+[Responsory1]
+@Commune/C4a:Responsory8
 
 [Lectio2]
 @CommuneM/C4a
@@ -56,6 +53,9 @@
 [Lectio12]
 @Sancti/09-30:Lectio9:s/.* (?=Donec)// s/$/~/
 Quod autem sequitur : Jota unum aut unus apex non praeteribit a lege, donec omnia fiant; ex figura litterae ostenditur,quod etiam quae minima putantur in lege, sacramentis spiritualibus plena sint, et omnia recapitulentur in Evangelio.
+
+[Ant 3]
+@Commune/C4a:Ant 1:s/N\./Hierónyme/
 
 [Evangelium]
 Sequéntia ++ sancti Evangélii secúndum Matthǽum

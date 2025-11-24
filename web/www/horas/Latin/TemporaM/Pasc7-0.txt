@@ -5,16 +5,11 @@
 Psalmi Dominica
 Antiphonas horas
 
-[RV1]
-Responsorium. Repléti sunt omnes Spíritu sancto, et cœpérunt loqui, prout Spíritus sanctus dabat éloqui illos: * Et convénit multitúdo dicéntium, allelúia.
-V. Loquebántur váriis linguis Apóstoli magnália Dei:
-R. Et convénit multitúdo dicéntium, allelúia.
+[Responsory Vespera 1] (rubrica Barroux)
+@:RV1:s/Responsorium/R/ s/ \*/\n*/
 
 [Responsory Vespera 1] (rubrica cisterciensis)
 @:RV1
-
-[Responsory Vespera 1] (rubrica Barroux)
-@:RV1:s/Responsorium/R/ s/ \*/\n*/
 
 [Hymnus Vespera] (rubrica cisterciensis)
 @Tempora/Pasc7-0:Hymnus Laudes
@@ -33,7 +28,7 @@ R. Et convénit multitúdo dicéntium, allelúia.
 ;;47
 ;;95
 ;;97
-@Tempora/Pasc7-0:Responsory Tertia:s/.*_.//s
+@Tempora/Pasc7-0:Versum Tertia
 @Tempora/Pasc7-0::3 s/103/243;244;245/
 @Tempora/Pasc7-0:Versum 1
 
@@ -121,6 +116,11 @@ $Deo gratias
 _
 @Tempora/Pasc7-0:Versum 3
 
+[RV1]
+Responsorium. Repléti sunt omnes Spíritu sancto, et cœpérunt loqui, prout Spíritus sanctus dabat éloqui illos: * Et convénit multitúdo dicéntium, allelúia.
+V. Loquebántur váriis linguis Apóstoli magnália Dei:
+R. Et convénit multitúdo dicéntium, allelúia.
+
 [Ant Laudes]
 @Tempora/Pasc7-0:Ant Vespera:s/;;.*//
 
@@ -131,11 +131,11 @@ _
 @Tempora/Pasc7-0:Ant Matutinum:4-5
 
 [Responsory SextaM]
-@Tempora/Pasc7-0:Responsory Tertia:8-9
+@Tempora/Pasc7-0:Versum Tertia
 (sed rubrica cisterciensis)
-@Tempora/Pasc7-0:Responsory Sexta:8-9
+@Tempora/Pasc7-0:Versum Sexta
 
 [Responsory NonaM]
 @Tempora/Pasc7-0:Versum 1
 (sed rubrica cisterciensis)
-@Tempora/Pasc7-0:Responsory Tertia:8-9
+@Tempora/Pasc7-0:Versum Tertia

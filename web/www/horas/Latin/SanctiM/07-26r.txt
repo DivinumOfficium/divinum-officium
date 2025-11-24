@@ -9,12 +9,6 @@ Ss. Joachim et Annæ Parentum B.M.V.
 [Rule] (rubrica 1930)
 12 lectiones
 
-[Ant 1]
-Benedictiónem * ómnium géntium dedit illi Dóminus, et testaméntum suum confirmávit super cápita eórum.
-
-[Versum 1]
-@Commune/C3
-
 [Ant Vespera]
 @:Ant Laudes
 
@@ -44,6 +38,12 @@ Qui natus es de Vírgine,
 Cum Patre et Sancto Spíritu
 In sempitérna sǽcula.
 Amen.
+
+[Versum 1]
+@Commune/C3
+
+[Ant 1]
+Benedictiónem * ómnium géntium dedit illi Dóminus, et testaméntum suum confirmávit super cápita eórum.
 
 [Oratio]
 Deus, qui sanctos Jóachim et Annam glorióse Matris Unigéniti tui paréntes elegísti: da nobis eórum précibus, in tuórum consórtio electórum cleméntiam tuam perpétuo collaudáre.
@@ -79,13 +79,13 @@ Spirítui Sancto
 Tribus honor unus.
 Amen.
 
-[Ant Matutinum 3N]
-@Tempora/Adv3-1:Ant 2
-
 [AntMatutinumM]
 Beáti, * quóniam confísi sunt Dómino.;;2
 Glóriam * et magnum decórem imposuísti super eos.;;20
 Recordátus est * Dóminus misericórdiæ suæ, et veritátis suæ dómui Israël.;;97
+
+[Ant Matutinum 3N]
+@Tempora/Adv3-1:Ant 2
 
 [Ant Matutinum]
 @Commune/C3::1
@@ -111,6 +111,9 @@ R. Adhuc † módicum et con summábitur indignátio:
 * Et in illa die auferétur onus de húmero nostro, et jugum de collo nostro.
 V. Vídeant páuperes et læténtur: quǽrite Dóminum, et vivet ánima vestra.
 R. Et in illa die auferétur onus de húmero nostro, et jugum de collo nostro.
+
+[Responsory1] (rubrica 1963)
+@:Responsory4
 
 [Lectio2]
 !Jer 33:15-17
@@ -143,6 +146,10 @@ R. Te enim exspéctat omnis Israël.
 24 Numquid non vidísti quid pópulus hic locútus sit, dicens: Duæ cognatiónes quas elégerat Dóminus abiéctæ sunt: et pópulum meum despexérunt, eo quod non sit ultra gens coram eis?
 25 Hæc dicit Dóminus: Si pactum meum inter diem et noctem, et leges cælo et terræ non pósui:
 26 équidem et semen Jacob et David servi mei proíciam, ut non assúmam de sémine ejus príncipes séminis , Isaac, et Jacob: redúcam enim conversiónem eórum, et miserébor eis.
+
+[Lectio4] (rubrica 1963)
+@:Lectio9:2-4 s/Homilía/Sermo/ s/$/~/
+@:Lectio11:s/.* (?=Hinc)//
 
 [Responsory4]
 R. O clara † stirps Davídica, micans quasi jubar solis
@@ -227,16 +234,6 @@ R. In circúitu tuo, † Dómine, lumen est, quod numquam defíciet, ubi constit
 V. Magnus Dóminus et laudábilis nimis, in civitáte Dei nostri, in monte sancto ejus.
 R. Ibi requiéscunt Sanctórum ánimæ.
 
-[Evangelium]
-@Sancti/09-08
-
-[Lectio4] (rubrica 1963)
-@:Lectio9:2-4 s/Homilía/Sermo/ s/$/~/
-@:Lectio11:s/.* (?=Hinc)//
-
-[Responsory1] (rubrica 1963)
-@:Responsory4
-
 [MM Capitulum]
 @:Capitulum Sexta
 _
@@ -295,3 +292,5 @@ $Deo gratias
 [Ant 3]
 Inclyta stirps Jesse * virgam prodúxit hmœ́nam de qua procéssit flos miro plenus odóre.
 
+[Evangelium]
+@Sancti/09-08

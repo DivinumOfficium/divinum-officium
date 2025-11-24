@@ -18,9 +18,6 @@ Psalm5 Vespera3=115
 Vesperae Defunctorum
 (sed feria 7 aut rubrica 196 omittitur)
 
-[Doxology] (rubrica divino et mense 10 et feria 2)
-@Sancti/10-DU
-
 [Ant Vespera]
 Vidi turbam magnam, * quam dinumeráre nemo póterat, ex ómnibus géntibus, stantes ante thronum.
 Et omnes Ángeli * stabant in circúitu throni, et cecidérunt in conspéctu throni in fácies suas, et adoravérunt Deum.
@@ -113,6 +110,9 @@ Ejúsque Unigénito,
 Una cum Sancto Spíritu,
 In sempitérna sǽcula.
 Amen.
+
+[Doxology] (rubrica divino et mense 10 et feria 2)
+@Sancti/10-DU
 
 [Ant 1]
 Ángeli, * Archángeli, Throni et Dominatiónes, Principátus et Potestátes, Virtútes cælórum, Chérubim atque Séraphim, Patriárchæ et Prophétæ, sancti legis Doctóres, Apóstoli, omnes Christi Mártyres, sancti Confessóres, Vírgines Dómini, Anachorítæ, Sanctíque omnes, intercédite pro nobis.
@@ -317,13 +317,13 @@ Amen.
 [Ant 2_]
 Te gloriósus * Apostolórum chorus, te Prophetárum laudábilis númerus, te Mártyrum candidátus laudat exércitus, te omnes Sancti et elécti voce confiténtur unánimes, beáta Trínitas, unus Deus.
 
-[Ant 2C]
-Beáti estis * Sancti Dei omnes, qui meruístis consórtes fíeri cæléstium virtútum, et pérfrui ætérnæ claritátis glória: idéoque precámur, ut mémores nostri, intercédere dignémini pro nobis ad Dóminum Deum nostrum.
-
 [Ant 2]
 @:Ant 2_
 (sed rubrica cisterciensis)
 @:Ant 2C
+
+[Ant 2C]
+Beáti estis * Sancti Dei omnes, qui meruístis consórtes fíeri cæléstium virtútum, et pérfrui ætérnæ claritátis glória: idéoque precámur, ut mémores nostri, intercédere dignémini pro nobis ad Dóminum Deum nostrum.
 
 [Lectio Prima]
 !Apo 7:12

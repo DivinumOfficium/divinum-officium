@@ -141,7 +141,7 @@ Cum Spíritu Paráclito,
 Et nunc et in perpétuum.
 Amen.
 
-[HymnusM Day0 Laudes hiemalis] 
+[HymnusM Day0 Laudes hiemalis]
 @:HymnusM Day0 Laudes hiemalis_
 (sed rubrica cisterciensis)
 @:HymnusM Day1 Laudes
@@ -770,6 +770,9 @@ Respexísti * humilitátem meam Dómine Deus meus.
 [Feria4 Ant 3]
 Respéxit Dóminus * humilitátem meam, et fecit in me magna, qui potens est.
 
+[Feria4C Ant 3]
+Quia fecit * mihi Dóminus magna qui potens est, et sanctum nomen ejus.
+
 [Feria5 Ant 3]
 Fecit Deus * poténtiam in brácchio suo: dispérsit supérbos mente cordis sui.
 (sed rubrica tridentina aut rubrica monastica)
@@ -787,6 +790,22 @@ Depósuit poténtes, * Sanctos persequéntes: et exaltávit húmiles, Christum c
 Suscépit Deus * Israël, púerum suum: sicut locútus est ad Ábraham, et semen ejus usque in sǽculum.
 (sed rubrica tridentina aut rubrica monastica)
 Suscépit Deus * Israël, púerum suum: sicut locútus est ad Ábraham, et semen ejus: exaltáre húmiles usque in sǽculum.
+
+[Feria Ant 3]
+(feria 2) @:Feria2 Ant 3
+(feria 3) @:Feria3 Ant 3
+(feria 4) @:Feria4 Ant 3
+(feria 5) @:Feria5 Ant 3
+(feria 6) @:Feria6 Ant 3
+(feria 7) @:Feria7 Ant 3
+
+[Feria Ant 3] (rubrica cisterciensis)
+(feria 2) @:Feria2C Ant 3
+(feria 3) @:Feria3C Ant 3
+(feria 4) @:Feria4C Ant 3
+(feria 5) @:Feria6 Ant 3
+(feria 6) @:Feria6C Ant 3
+(feria 7) @:Dominica Ant 3
 
 [Adv Laudes_]
 !Isa 2:3
@@ -1881,19 +1900,17 @@ $Per eumdem
 (sed tempore post pentecosten) $Per Dominum
 
 [Comment] (rubrica cisterciensis)
-In Suffragium Vespera, the original regex included "s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg"
+In Suffragium Vespera, the original regex included “s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg”
 However, this made the Antiphons very confusing and ugly, therefore deleting.
 
 [Preces feriales Laudes]
 $Kyrie
-$rubrica Pater secreto
 $Pater noster Et
 $Preces feriales Laudes
 $Domine exaudi
 
 [Preces feriales Vespera]
 $Kyrie
-$rubrica Pater secreto
 $Pater noster Et
 $Preces feriales Vespera
 $Domine exaudi
@@ -1940,22 +1957,3 @@ R. Et renovábis fáciem terræ, allelúja.
 [Suffragium DePatrono]
 !De Patrono vel Titulo Ecclesiæ
 /:fiat com. consueata ante vel post Commemorationes prædictas, pro dignitate illius, et ultimo loco::/
-
-[Feria Ant 3]
-(feria 2) @:Feria2 Ant 3
-(feria 3) @:Feria3 Ant 3
-(feria 4) @:Feria4 Ant 3
-(feria 5) @:Feria5 Ant 3
-(feria 6) @:Feria6 Ant 3
-(feria 7) @:Feria7 Ant 3
-
-[Feria Ant 3] (rubrica cisterciensis)
-(feria 2) @:Feria2C Ant 3
-(feria 3) @:Feria3C Ant 3
-(feria 4) @:Feria4C Ant 3
-(feria 5) @:Feria6 Ant 3
-(feria 6) @:Feria6C Ant 3
-(feria 7) @:Dominica Ant 3
-
-[Feria4C Ant 3]
-Quia fecit * mihi Dóminus magna qui potens est, et sanctum nomen ejus.

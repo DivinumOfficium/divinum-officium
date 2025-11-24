@@ -56,16 +56,21 @@ Veníte, adorémus Regem regum, * Cujus hódie ad æthéreum Virgo Mater assúmp
 Exaltáta est * sancta Dei Génetrix super choros Angelórum ad cæléstia regna.;;8
 Paradísi portæ * per te nobis apértæ sunt, quæ hódie gloriósa cum Angelis triúmphas.;;18
 Benedícta tu * in muliéribus, et benedíctus fructus ventris tui.;;23
-V. Exaltáta est sancta Dei Génetrix.
-R. Super choros Angelórum ad cæléstia regna.
 Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna.;;44
 Adjuvábit eam * Deus vultu suo: Deus in medio ejus, non commovébitur;;45
 Sicut lætántium * omnium nostrum habitátio est in te, sancta Dei Genitrix;;86
-V. Assúmpta est María in cælum: gaudent Angeli.
-R. Laudántes benedícunt Dóminum.
 Gaude, María Virgo: * cunctas hǽreses sola interemísti in univérso mundo.;;95
 Dignáre me * laudare te, Virgo sacrata: da mihi virtútem contra hostes tuos;;96
 Post partum * Virgo invioláta permansisti, Dei Genitrix intercéde pro nobis;;97
+
+[Nocturn 1 Versum]
+@:Versum 1
+
+[Nocturn 2 Versum]
+V. Assúmpta est María in cælum: gaudent Angeli.
+R. Laudántes benedícunt Dóminum.
+
+[Nocturn 3 Versum]
 V. María Virgo assúmpta est ad æthéreum thálamum.
 R. In quo Rex regum stelláto sedet sólio.
 
@@ -199,41 +204,42 @@ $Oremus
 Famulórum tuorum, quǽsumus, Domine, delíctis ignósce: utqui tibi plácere de áctibus nostris non valémus; Genitrícis Fílii tui Dómini nostri intercessióne salvémur:
 $Qui tecum
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Exaltáta est * Sancta Dei Génetrix.
 R. Exaltáta est * Sancta Dei Génetrix.
 V. Super choros Angelórum ad cæléstia regna.
 R. Sancta Dei Génetrix.
 &Gloria
 R. Exaltáta est * Sancta Dei Génetrix.
-_
-V. Assúmpta est María in cælum: gaudent Angeli.
-R. Laudántes benedícunt Dóminum.
+
+[Versum Tertia]
+@:Nocturn 2 Versum
 
 [Capitulum Sexta]
 @Commune/C10:Capitulum Sexta
 (sed rubrica cisterciensis)
 @CommuneCist/C10:Capitulum Sexta
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Assúmpta est María in cælum: * Gaudent Angeli.
 R. Assúmpta est María in cælum: * Gaudent Angeli.
 V. Laudántes benedícunt Dóminum.
 R. Gaudent Angeli.
 &Gloria
 R. Assúmpta est María in cælum: * Gaudent Angeli.
-_
-V. María Virgo assúmpta est ad æthéreum thálamum.
-R. In quo Rex regum stelláto sedet sólio.
 
-[Responsory Nona]
+[Versum Sexta]
+@:Nocturn 3 Versum
+
+[Responsory Breve Nona]
 R.br. María Virgo assúmpta est * Ad æthéreum thálamum.
 R. María Virgo assúmpta est * Ad æthéreum thálamum.
 V. In quo Rex regum stelláto sedet sólio.
 R. Ad æthéreum thálamum.
 &Gloria
 R. María Virgo assúmpta est * Ad æthéreum thálamum.
-_
+
+[Versum Nona]
 V. Dignáre me laudáre te, Virgo sacráta.
 R. Da mihi virtútem contra hostes tuos.
 

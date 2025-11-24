@@ -3,6 +3,9 @@
 [Rank]
 @Tempora/Pasc0-6
 
+[Oratio]
+@Tempora/Pasc0-6
+
 [Ant Matutinum]
 @TemporaOP/Pasc0-1::1 s/4/22/
 ;;23
@@ -27,9 +30,6 @@
 
 [Responsory3]
 @TemporaOP/Pasc0-3
-
-[Oratio]
-@Tempora/Pasc0-6
 
 [Versum 2]
 @Psalterium/Common/Translate:Alleluia:s/$/~/

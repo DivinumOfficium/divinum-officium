@@ -13,17 +13,11 @@ vide sancti/08-15;
 [Ant Vespera] (rubrica cisterciensis)
 @Sancti/08-15t::s/;;.*//g
 
-[Ant 1] (rubrica cisterciensis)
-@Sancti/08-16bmv
-
-[Ant 2] (rubrica cisterciensis)
-@Sancti/08-16bmv
-
 [Versum 1] (rubrica cisterciensis)
 @SanctiM/08-15
 
-[Versum 2] (rubrica cisterciensis)
-@:Versum 1
+[Ant 1] (rubrica cisterciensis)
+@Sancti/08-16bmv
 
 [Lectio1]
 !Cant 5:8-12
@@ -108,3 +102,9 @@ Videtis ergo, carissimi, et quantum arbitror, jam intelligitis in his duabus mul
 [Lectio9]
 Duæ sunt vitæ: de illis vos copiosius cogitate. Quid habeat hæc vita, non dico mala, non iniqua, non nefaria, non luxuriosa, non impia; sed laboriosa, et ærumnis plena, timoribus castigata, tentationibus sollicita: hanc ipsam innocentem vitam dico, qualem decebat habere Martham. Hanc ergo, quantum potestis, inspicite: et de hac, ut dixi, copiosius quam loquimur, cogitate. Vita vero iniqua deerat ab illa domo, nec cum Martha erat, nec cum Maria: et si aliquando fuit, Domino intrante fugit.
 &teDeum
+
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
+[Ant 2] (rubrica cisterciensis)
+@Sancti/08-16bmv

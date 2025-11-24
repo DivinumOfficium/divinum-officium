@@ -22,6 +22,9 @@ Feria
 [Ant Vespera]
 @Tempora/Quad6-4
 
+[Oratio Matutinum]
+@Tempora/Quad6-4
+
 [Oratio]
 @Tempora/Quad6-4::s/usque ad mortem/usque ad mortem, mortem autem crucis/
 
@@ -32,16 +35,22 @@ Feria
 Astitérunt reges terræ, * et príncipes convenérunt in unum, advérsus Dóminum, et advérsus Christum ejus.;;2
 Divisérunt sibi * vestiménta mea, et super vestem meam misérunt sortem.;;21
 Insurrexérunt in me * testes iníqui, et mentíta est iníquitas sibi.;;26
-V. Divisérunt sibi vestiménta mea.
-R. Et super vestem meam misérunt sortem.
 Vim faciébant, * qui quærébant ánimam meam.;;37
 Confundántur * et revereántur, qui quærunt ánimam meam, ut áuferant eam.;;39
 Aliéni * insurrexérunt in me, et fortes quæsiérunt ánimam meam.;;53
-V. Insurrexérunt in me testes iníqui.
-R. Et mentíta est iníquitas sibi.
 Ab insurgéntibus in me * líbera me, Dómine, quia occupavérunt ánimam meam.;;58
 Longe fecísti * notos meos a me: tráditus sum, et non egrediébar.;;87
 Captábunt * in ánimam justi, et sánguinem innocéntem condemnábunt.;;93
+
+[Nocturn 1 Versum]
+V. Divisérunt sibi vestiménta mea.
+R. Et super vestem meam misérunt sortem.
+
+[Nocturn 2 Versum]
+V. Insurrexérunt in me testes iníqui.
+R. Et mentíta est iníquitas sibi.
+
+[Nocturn 3 Versum]
 V. Locúti sunt advérsum me lingua dolósa.
 R. Et sermónibus ódii circumdedérunt me, et expugnavérunt me gratis.
 
@@ -171,9 +180,6 @@ V. O vos omnes, qui transítis per viam, atténdite et vidéte.
 R. Si est dolor símilis sicut dolor meus.
 &Gloria
 R. Caligavérunt óculi mei a fletu meo: quia elongátus est a me, qui consolabátur me: Vidéte omnes pópuli, * Si est dolor símilis sicut dolor meus.
-
-[Oratio Matutinum]
-@Tempora/Quad6-4
 
 [Ant Laudes]
 Próprio * Fílio suo non pepércit Deus, sed pro nobis ómnibus trádidit illum.

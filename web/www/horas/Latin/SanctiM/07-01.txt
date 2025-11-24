@@ -8,7 +8,7 @@ Psalmi Dominica
 @Sancti/07-01::1-4
 
 [Responsory Vespera]
-@Sancti/07-01:Responsory Tertia
+@Sancti/07-01:Responsory Breve Tertia
 
 [AntMatutinumM]
 Sanguis * Jesu Christi, Fílii Dei, emúndat nos.;;115
@@ -20,21 +20,18 @@ Tórcular * calcávi solus, et de géntibus non est vir mecum.
 
 [Ant Matutinum]
 @Sancti/07-01::1-3 s/;;3/;;4/
-@Sancti/07-01::11-13
-@Sancti/07-01::4-5
-@Sancti/07-01::6-8
+@Sancti/07-01::7-9
+@Sancti/07-01::4-6
 @:AntMatutinumM
-@Sancti/07-01::9-10
 ;;246;247;248
-@Sancti/07-01::14-15
 
 [Ant Matutinum] (rubrica cisterciensis)
 @Sancti/07-01::1-3:s/;;3/;;4/
-@Sancti/07-01::7-8:s/;;29/;;22/ s/;;63/;;29/
+@Sancti/07-01::5-6:s/;;29/;;22/ s/;;63/;;29/
 @:AntMatutinumM:1:s/;;115/;;42/
-@Sancti/07-01::11:s/;;7/;;5/
-@Sancti/07-01::6:s/;;22/;;63/
-@Sancti/07-01::12-13:s/;;87/;;73/ s/;;93/;;87/
+@Sancti/07-01::7:s/;;7/;;5/
+@Sancti/07-01::4:s/;;22/;;63/
+@Sancti/07-01::8-9:s/;;87/;;73/ s/;;93/;;87/
 Hæc est * Sánguinis aspérsio mélius loquens quam Abel.;;93
 @:AntMatutinumM:2:s/;;119/;;97/
 ;;246;247;248
@@ -55,9 +52,9 @@ Hæc est * Sánguinis aspérsio mélius loquens quam Abel.;;93
 @Sancti/07-01:Lectio3
 
 [Responsory4]
-@Sancti/07-01:Responsory Nona:2-3:s/ \* (.)/\l$1/ s/V./*/
-@Sancti/07-01:Responsory Nona:8-9:s/\.\nR. (.)/, \l$1/
-@Sancti/07-01:Responsory Nona:3:s/V./R./
+@Sancti/07-01:Responsory Breve Nona:2-3:s/ \* (.)/\l$1/ s/V./*/
+@Sancti/07-01:Versum Nona:s/\.\nR. (.)/, \l$1/
+@Sancti/07-01:Responsory Breve Nona:3:s/V./R./
 
 [Lectio5]
 @Sancti/07-01:Lectio4
@@ -117,13 +114,13 @@ V. Hæc est Sánguinis aspérsio, mélius loquens quam Abel.
 R. Benedícta terra, quæ apéruit os suum, et suscépit Sánguinem Redemptóris.
 
 [Responsory Laudes]
-@Sancti/07-01:Responsory Nona
+@Sancti/07-01:Responsory Breve Nona
 
 [Responsory TertiaM] (nisi rubrica cisterciensis)
-@Sancti/07-01:Responsory Tertia:8-9
+@Sancti/07-01:Nocturn 2 Versum
 
 [Responsory SextaM] (nisi rubrica cisterciensis)
-@Sancti/07-01:Responsory Sexta:8-9
+@Sancti/07-01:Nocturn 3 Versum
 
 [Responsory NonaM] (nisi rubrica cisterciensis)
-@Sancti/07-01:Responsory Nona:8-9
+@Sancti/07-01:Versum 2

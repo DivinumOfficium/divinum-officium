@@ -6,6 +6,9 @@ Ss. Cyrilli et Methodii Pont. et Conf. Europæ Patronum;;Duplex;;5;;vide C3
 [Rule]
 Psalmi Dominica
 
+[Ant Vespera]
+@:Ant Laudes:s/$/_/gm s/_/;;109/ s/_/;;111/ s/_/;;112/ s/_/;;131/ s/_//
+
 [Ant Laudes]
 Sapiéntiam * sanctórum narrent pópuli, et laudes eórum núntiet Ecclésia.
 Dabo sanctis meis * locum nominátum in regno Patris mei, dicit Dóminus.
@@ -18,7 +21,7 @@ Nomen sempitérnum * dabo sanctis meis, dicit Dóminus: gáudium et lætítiam o
 v. Illi viri misericórdiæ sunt, quorum pietátes non defuérunt. Cum sémine eórum pérmanent bona.
 $Deo gratias
 
-[Responsory Tertia]
+[Responsory TertiaM]
 @Commune/C3:Versum 1
 
 [Capitulum Sexta]
@@ -26,16 +29,13 @@ $Deo gratias
 v. Heréditas sancta nepótes eórum, et in testaméntis stetit semen eórum.
 $Deo gratias
 
-[Responsory Sexta]
-@Commune/C3:Responsory Tertia:s/.*_.//s
+[Responsory SextaM]
+@Commune/C3:Nocturn 2 Versum
 
 [Capitulum Nona]
 !Sir 49:14
 v. In diébus suis ædificavérunt domum, et exaltavérunt templum sanctum Dómino, parátum in glóriam sempitérnam.
 $Deo gratias
 
-[Responsory Nona]
-@Commune/C3:Responsory Sexta:s/.*_.//s
-
-[Ant Vespera]
-@:Ant Laudes:s/$/_/gm s/_/;;109/ s/_/;;111/ s/_/;;112/ s/_/;;131/ s/_//
+[Responsory NonaM]
+@Commune/C3:Nocturn 3 Versum

@@ -16,6 +16,9 @@ Beáti éritis, * cum vos óderint hómines, et cum separáverint vos, et exprob
 Sancti Dómini * Dóminum benedícite in ætérnum.
 O quam gloriósum est regnum, * in quo cum Christo gaudent omnes Sancti! amícti stolis albis sequúntur Agnum quocúmque íerit!
 
+[Hymnus Vespera]
+@:Hymnus Laudes
+
 [Versum 1]
 V. Exultábunt Sancti in glória. 
 R. Lætabúntur in cubílibus suis.
@@ -23,34 +26,35 @@ R. Lætabúntur in cubílibus suis.
 [Ant 1]
 @:Ant 3
 
-[Hymnus Vespera]
-@:Hymnus Laudes
+[Oratio]
+Concéde, quǽsumus omnípotens Deus: * ut ad meliórem vitam Sanctórum tuórum exémpla nos próvocent: § quátenus, quorum solémnia ágimus, étiam actus imitémur.
+$Per Dominum
 
 [Invit]
 @Sancti/11-01
 
-[Ant Matutinum]
-@SanctiM/11-01
-
 [Hymnus Matutinum]
 @SanctiM/11-01:HymnusM Laudes:s/Cœtus.*Monachórum/Monachórum/s
 
+[Ant Matutinum]
+@SanctiM/11-01
+
 [Lectio1]
-@Commune/C4:Lectio11:s/-5/-4/ s/5 .*//s
+@Commune/C4:Lectio1 in 2 loco:s/-5/-4/ s/5 .*//s
 
 [Responsory1]
 @SanctiM/11-01:Responsory8
 
 [Lectio2]
-@Commune/C4:Lectio11:s/1-5/5-7/ s/1 .*5/5/s
-@Commune/C4:Lectio21:s/!.*// s/8 .*//s
+@Commune/C4:Lectio1 in 2 loco:s/1-5/5-7/ s/1 .*5/5/s
+@Commune/C4:Lectio2 in 2 loco:s/!.*// s/8 .*//s
 
 [Responsory2]
 @Commune/C1
 
 [Lectio3]
-@Commune/C4:Lectio21:s/6-9/8-11/ s/6 .*8/8/s
-@Commune/C4:Lectio31:s/!.*// s/12 .*//s
+@Commune/C4:Lectio2 in 2 loco:s/6-9/8-11/ s/6 .*8/8/s
+@Commune/C4:Lectio3 in 2 loco:s/!.*// s/12 .*//s
 
 [Responsory3]
 R. Haec est vera fratérnitas, quae numquam pótuit violári certámine: † qui, effúso súnguine secúti sunt Dóminum:
@@ -59,7 +63,7 @@ V. Ecce quam bonum et quam iucúndum habitáre fratres in unum!
 R. Contemnéntes aulam régiam, pervenérunt ad regna caeléstia.
 
 [Lectio4]
-@Commune/C4:Lectio31:s/10-/12-/ s/10 .*12/12/s
+@Commune/C4:Lectio3 in 2 loco:s/10-/12-/ s/10 .*12/12/s
 
 [Responsory4]
 @Commune/C3
@@ -126,9 +130,6 @@ R. Córpora Sanctórum in pace sepúlta sunt,
 V. Sapiéntiam Sanctórum narrent pópuli, † et laudem eórum pronúntiet Ecclésia.
 R. Et nómina eórum vivent in generatiónem et generatiónem.
 
-[Evangelium]
-@Commune/C5b
-
 [Ant Laudes]
 @:Ant Vespera
 
@@ -175,10 +176,6 @@ Amen.
 [Ant 2]
 @Commune/C1
 
-[Oratio]
-Concéde, quǽsumus omnípotens Deus: * ut ad meliórem vitam Sanctórum tuórum exémpla nos próvocent: § quátenus, quorum solémnia ágimus, étiam actus imitémur.
-$Per Dominum
-
 [Capitulum Sexta]
 !Sir 44:7
 v. Omnes isti in generatiónibus gentis suæ glóriam adépti sunt, et in diébus suis habéntur in láudibus.
@@ -194,3 +191,6 @@ $Deo gratias
 
 [Ant 3]
 In regeneratióne, * cum séderit Fílius hóminis in sede Majestátis suæ, sedébitis et vos, super sedes duódecim, judicántes duódecim tribus Israël, dicit Dóminus.
+
+[Evangelium]
+@Commune/C5b

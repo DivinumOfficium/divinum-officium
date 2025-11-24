@@ -18,7 +18,7 @@ No secunda vespera (rubrica cisterciensis)
 ;;
 ;;
 ;;
-@Tempora/Pent01-4::9-10
+@Tempora/Pent01-4:Nocturn 2 Versum
 @TemporaM/Pent01-4:AntMatutinumM:3 s/;;.*//
 ;;
 ;;
@@ -27,9 +27,6 @@ No secunda vespera (rubrica cisterciensis)
 ;;
 
 [Ant Matutinum] (rubrica cisterciensis)
-@TemporaM/Pent01-5
-
-[MM LB] (rubrica cisterciensis)
 @TemporaM/Pent01-5
 
 [Lectio1]
@@ -51,4 +48,7 @@ No secunda vespera (rubrica cisterciensis)
 @TemporaM/Pent01-4:Responsory11
 
 [MM Capitulum] (rubrica tridentina aut rubrica divino)
+@TemporaM/Pent01-5
+
+[MM LB] (rubrica cisterciensis)
 @TemporaM/Pent01-5

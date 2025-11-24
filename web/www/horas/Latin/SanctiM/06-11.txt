@@ -16,48 +16,97 @@ S. Barnabæ Apostoli
 [Lectio1]
 @Sancti/06-11::1-5 s/-47/-42/
 
+[Responsory1]
+@Commune/C1
+
 [Lectio2]
 @Sancti/06-11:Lectio1:2 s/43-/46-/
 @Sancti/06-11:Lectio1:6-7
 
+[Responsory2]
+@Commune/C1
+
 [Lectio3]
 @Sancti/06-11:Lectio2
 
+[Responsory3]
+@Commune/C1
+
 [Lectio4]
 @Sancti/06-11:Lectio3
+
+[Responsory4]
+@CommuneM/C1
+(sed rubrica cisterciensis)
+@CommuneCist/C1
 
 [Lectio5]
 @Sancti/06-11:Lectio4
 (sed rubrica cisterciensis)
 @Sancti/06-11:Lectio4:s/Qua cohortatióne.*//
 
+[Responsory5]
+@Commune/C1:Responsory4
+(sed rubrica cisterciensis)
+@CommuneCist/C1
+
 [Lectio6]
 @Sancti/06-11:Lectio5
 (sed rubrica cisterciensis)
 @Sancti/06-11:Lectio5:s/Qui perfúncti.*//
+
+[Responsory6]
+@Commune/C1:Responsory5
+(sed rubrica cisterciensis)
+@CommuneCist/C1:Responsory6
 
 [Lectio7]
 @Sancti/06-11:Lectio6:s/Postrémo.*//
 
 [Lectio7] (rubrica cisterciensis)
 @Sancti/06-11:Lectio5:s/.*(Qui perfúncti)/$1/s s/$/~/
-@Sancti/06-11:Lectio6:s/Itaque Seleucíam.*// 
+@Sancti/06-11:Lectio6:s/Itaque Seleucíam.*//
+
+[Responsory7]
+@Commune/C1:Responsory6
+(sed rubrica cisterciensis)
+@CommuneCist/C1
 
 [Lectio8]
 @Sancti/06-11:Lectio6:s/.* (?=Postrémo)//
 (sed rubrica cisterciensis)
 @Sancti/06-11:Lectio6:s/.*(Itaque Seleucíam)/$1/ s/Ejus corpus.*//
 
+[Responsory8]
+@Tempora/Pasc3-1:Responsory1
+(sed rubrica cisterciensis)
+@CommuneCist/C1
+
 [Lectio9]
 @Sancti/06-11:Lectio7:s/Multa .*//s
 
+[Responsory9]
+@Commune/C1:Responsory7
+(sed rubrica cisterciensis)
+@CommuneCist/C1
+
 [Lectio10]
 @Sancti/06-11:Lectio7:s/.* (?=Multa)//s
+
+[Responsory10]
+@Commune/C1:Responsory8
+(sed rubrica cisterciensis)
+@CommuneCist/C1
 
 [Lectio11]
 @Sancti/06-11:Lectio8
 (sed rubrica cisterciensis)
 @Sancti/06-11:Lectio8:s/: \(neque.*/./
+
+[Responsory11]
+@Tempora/Pasc0-2:Responsory2
+(sed rubrica cisterciensis)
+@CommuneCist/C1
 
 [Lectio12]
 @Sancti/06-11:Lectio8
@@ -65,55 +114,6 @@ S. Barnabæ Apostoli
 [Lectio12] (rubrica cisterciensis)
 @Sancti/06-11:Lectio8:s/.*: \(neque/Neque/ s/$/~/
 @Sancti/06-11:Lectio9:s/.*(Erubescámus)/$1/
-
-[Responsory1]
-@Commune/C1
-
-[Responsory2]
-@Commune/C1
-
-[Responsory3]
-@Commune/C1
-
-[Responsory4]
-@CommuneM/C1
-(sed rubrica cisterciensis)
-@CommuneCist/C1
-
-[Responsory5]
-@Commune/C1:Responsory4
-(sed rubrica cisterciensis)
-@CommuneCist/C1
-
-[Responsory6]
-@Commune/C1:Responsory5
-(sed rubrica cisterciensis)
-@CommuneCist/C1:Responsory6
-
-[Responsory7]
-@Commune/C1:Responsory6
-(sed rubrica cisterciensis)
-@CommuneCist/C1
-
-[Responsory8]
-@Tempora/Pasc3-1:Responsory1
-(sed rubrica cisterciensis)
-@CommuneCist/C1
-
-[Responsory9]
-@Commune/C1:Responsory7
-(sed rubrica cisterciensis)
-@CommuneCist/C1
-
-[Responsory10]
-@Commune/C1:Responsory8
-(sed rubrica cisterciensis)
-@CommuneCist/C1
-
-[Responsory11]
-@Tempora/Pasc0-2:Responsory2
-(sed rubrica cisterciensis)
-@CommuneCist/C1
 
 [Responsory12]
 @Tempora/Pasc7-5:Responsory1

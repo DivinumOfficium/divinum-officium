@@ -26,17 +26,17 @@
 @Sancti/12-10bmv:Lectio4:s/$/~/
 @Sancti/12-10bmv:Lectio5:s/Enim.*//s
 
-[Lectio2]
-@Sancti/12-10bmv:Lectio5:s/.*(Enim)/$1/s
-
-[Lectio3]
-@Sancti/12-10bmv:Lectio6
-
 [Responsory1]
 @SanctiM/12-09bmv
 
+[Lectio2]
+@Sancti/12-10bmv:Lectio5:s/.*(Enim)/$1/s
+
 [Responsory2]
 @SanctiM/12-09bmv
+
+[Lectio3]
+@Sancti/12-10bmv:Lectio6
 
 [Responsory3]
 @SanctiM/12-09bmv
