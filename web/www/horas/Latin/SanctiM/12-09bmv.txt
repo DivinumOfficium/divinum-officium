@@ -23,12 +23,6 @@ No prima Vespera
 [Lectio1]
 @Sancti/12-09bmv:Lectio4
 
-[Lectio2]
-@Sancti/12-09bmv:Lectio5
-
-[Lectio3]
-@Sancti/12-09bmv:Lectio6
-
 [Responsory1]
 @Sancti/12-08:Responsory1
 (sed feria 3 aut feria 6)
@@ -36,12 +30,18 @@ No prima Vespera
 (sed feria 4 aut feria 7)
 @Sancti/12-08:Responsory7
 
+[Lectio2]
+@Sancti/12-09bmv:Lectio5
+
 [Responsory2]
 @Sancti/12-08:Responsory2
 (sed feria 3 aut feria 6)
 @Sancti/12-08:Responsory5
 (sed feria 4 aut feria 7)
 @Sancti/12-08:Responsory8
+
+[Lectio3]
+@Sancti/12-09bmv:Lectio6
 
 [Responsory3]
 @Sancti/12-08:Responsory3

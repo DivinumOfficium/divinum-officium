@@ -1,13 +1,7 @@
 @Sancti/10-DUr
 
-[Doxology]
-@Sancti/10-DU::s/Jesu, tibi sit glória/Glória tibi, Dómine/ s/almo/Sancto/
-
 [Ant Vespera]
 @Sancti/10-DU::1 s/$/;;112;116;145;146;147/
-
-[Capitulum Laudes]
-@Sancti/10-DU::s/Fratres: //
 
 [Responsory Vespera 1]
 @Tempora/101-0:Responsory6:1-4
@@ -17,11 +11,17 @@
 [Hymnus Vespera]
 @SanctiM/10-DU
 
+[Doxology]
+@Sancti/10-DU::s/Jesu, tibi sit glória/Glória tibi, Dómine/ s/almo/Sancto/
+
 [Hymnus Matutinum]
 @SanctiM/10-DU
 
 [Responsory9]
 @:Responsory Vespera 1
+
+[Capitulum Laudes]
+@Sancti/10-DU::s/Fratres: //
 
 [Hymnus Laudes]
 @SanctiM/10-DU

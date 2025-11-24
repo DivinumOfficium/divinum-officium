@@ -3,6 +3,13 @@
 [Hymnus Matutinum]
 @Sancti/12-08::s/Jesu, tibi sit glória/Glória tibi Dómine/ s/almo/Sancto/
 
+[Ant Laudes]
+@Sancti/12-12n:Ant Vespera:1 s/;.*//
+@Sancti/12-12n:Ant Vespera:2 s/;.*//
+@Sancti/02-11::2 s/;.*//
+Laudemus * laudaverunt in terra nostra, et laudamus super Dei Genitrix.
+@Sancti/02-11::1 s/;.*//
+
 [Capitulum Laudes]
 @Sancti/02-11:Lectio Prima
 
@@ -17,6 +24,12 @@ R. Quasi arcus refúlgens inter nébulas glóriæ.
 [Hymnus Laudes]
 @Sancti/08-15
 
+[Versum 2]
+@Commune/C10
+
+[Ant 2]
+@:Ant 1
+
 [Responsory TertiaM]
 @:Responsory Laudes: 2 s/R\./V./
 @:Responsory Laudes: 3 s/V\./R./
@@ -27,16 +40,3 @@ R. Quasi arcus refúlgens inter nébulas glóriæ.
 [Capitulum Nona]
 @Sancti/12-08:Lectio Prima
 $Deo gratias
-
-[Ant Laudes]
-@Sancti/12-12n:Ant Vespera:1 s/;.*//
-@Sancti/12-12n:Ant Vespera:2 s/;.*//
-@Sancti/02-11::2 s/;.*//
-Laudemus * laudaverunt in terra nostra, et laudamus super Dei Genitrix.
-@Sancti/02-11::1 s/;.*//
-
-[Ant 2]
-@:Ant 1
-
-[Versum 2]
-@Commune/C10

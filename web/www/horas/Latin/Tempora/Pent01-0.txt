@@ -33,7 +33,7 @@ V. Trinitáti lux perénnis, Unitáti sit decus pérpetim.
 R. In perénni sæculórum témpore.
 
 [Responsory Vespera] (rubrica cisterciensis)
-@:Responsory Sexta:1-6
+@:Responsory Breve Sexta:1-6
 
 [Hymnus Vespera]
 {:H-VespFeria:}v. Jam sol recédit ígneus:
@@ -136,16 +136,21 @@ Amen.
 Adésto, unus Deus * omnípotens, Pater, Fílius, et Spíritus Sanctus.;;8
 Te unum * in substántia, Trinitátem in persónis confitémur.;;18
 Te semper idem * esse, vívere, et intellégere profitémur.;;23
-V. Benedicámus Patrem et Fílium cum Sancto Spíritu.
-R. Laudémus et superexaltémus eum in sǽcula.
 Te invocámus, * te laudámus, te adorámus, o beáta Trínitas.;;46
 Spes nostra, * salus nostra, honor noster, o beáta Trínitas.;;47
 Líbera nos, * salva nos, vivífica nos, o beáta Trínitas.;;71
-V. Benedíctus es, Dómine, in firmaménto cæli.
-R. Et laudábilis et gloriósus in sǽcula.
 Cáritas * Pater est, grátia Fílius, communicátio Spíritus Sanctus, o beáta Trínitas.;;95
 Verax est * Pater, véritas Fílius, véritas Spíritus Sanctus, o beáta Trínitas.;;96
 Pater, * et Fílius, et Spíritus Sanctus una substántia est, o beáta Trínitas.;;97
+
+[Nocturn 1 Versum]
+@:Versum 1
+
+[Nocturn 2 Versum]
+V. Benedíctus es, Dómine, in firmaménto cæli.
+R. Et laudábilis et gloriósus in sǽcula.
+
+[Nocturn 3 Versum]
 V. Verbo Dómini cæli firmáti sunt.
 R. Et Spíritu oris ejus omnis virtus eórum.
 
@@ -338,45 +343,46 @@ $Per Dominum
 !1 Joann. 5:7
 v. Tres sunt, qui testimónium dant in cælo: Pater, Verbum et Spíritus Sanctus, et hi tres unum sunt.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Benedicámus Patrem et Fílium * Cum Sancto Spíritu.
 R. Benedicámus Patrem et Fílium * Cum Sancto Spíritu.
 V. Laudémus et superexaltémus eum in sǽcula.
 R. Cum Sancto Spíritu.
 &Gloria
 R. Benedicámus Patrem et Fílium * Cum Sancto Spíritu.
-_
-V. Benedíctus es, Dómine, in firmaménto cæli.
-R. Et laudábilis et gloriósus in sǽcula.
+
+[Versum Tertia]
+@:Nocturn 2 Versum
 
 [Capitulum Sexta]
 !2 Cor 13:13
 v. Grátia Dómini nostri Jesu Christi et cáritas Dei et communicátio Sancti Spíritus sit cum ómnibus vobis. Amen.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Benedíctus es, Dómine, * In firmaménto cæli.
 R. Benedíctus es, Dómine, * In firmaménto cæli.
 V. Et laudábilis et gloriósus in sǽcula.
 R. In firmaménto cæli.
 &Gloria
 R. Benedíctus es, Dómine, * In firmaménto cæli.
-_
-V. Verbo Dómini cæli firmáti sunt.
-R. Et Spíritu oris ejus omnis virtus eórum.
+
+[Versum Sexta]
+@:Nocturn 3 Versum
 
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Verbo Dómini * Cæli firmáti sunt.
 R. Verbo Dómini * Cæli firmáti sunt.
 V. Et Spíritu oris ejus omnis virtus eórum.
 R. Cæli firmáti sunt.
 &Gloria
 R. Verbo Dómini * Cæli firmáti sunt.
-_
+
+[Versum Nona]
 V. Sit nomen Dómini benedíctum.
 R. Ex hoc nunc, et usque in sǽculum.
 

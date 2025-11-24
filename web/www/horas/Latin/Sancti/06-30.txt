@@ -64,18 +64,21 @@ Amen.
 Qui operátus est * Petro in apostolátum, operátus est et mihi inter gentes: et cognovérunt grátiam, quæ data est mihi a Christo Dómino.;;18
 Scio cui crédidi, * et certus sum quia potens est depósitum meum serváre in illum diem justus judex.;;33
 Mihi vívere Christus est, * et mori lucrum: gloriári me opórtet in cruce Dómini nostri Jesu Christi.;;44
-V. In omnem terram exívit sonus eórum.
-R. Et in fines orbis terræ verba eórum.
 Tu es vas electiónis, * sancte Paule Apóstole, prædicátor veritátis in univérso mundo.;;46
 Magnus sanctus Paulus * vas electiónis, vere digne est glorificándus, qui et méruit thronum duodécimum possidére.;;60
 Bonum certámen * certávi, cursum consummávi, fidem servávi.;;63
-V. Constítues eos príncipes super omnem terram.
-R. Mémores erunt nóminis tui, Dómine.
 Saulus, qui et Paulus, * magnus prædicátor, a Deo confortátus convalescébat, et confundébat Judǽos.;;74
 Ne magnitúdo * revelatiónum extóllat me, datus est mihi stímulus carnis meæ, ángelus sátanæ, qui me colaphízet: propter quod ter Dóminum rogávi ut auferrétur a me, et dixit mihi Dóminus: Súfficit tibi, Paule, grátia mea.;;96
 Repósita est mihi * coróna justítiæ, quam reddet mihi Dóminus in illa die justus judex.;;98
-V. Nimis honoráti sunt amíci tui, Deus.
-R. Nimis confortátus est principátus eórum.
+
+[Nocturn 1 Versum]
+@Commune/C1:Versum 1
+
+[Nocturn 2 Versum]
+@Commune/C1
+
+[Nocturn 3 Versum]
+@Commune/C1
 
 [Lectio1]
 De Actibus Apostolórum
@@ -214,13 +217,13 @@ $Deo gratias
 [Ant 2_]
 Vos qui secúti estis me, * sedébitis super sedes, judicántes duódecim tribus Israël, dicit Dóminus.
 
-[Ant 2C]
-Evangélium meum, * quod evangelizátum est, non est a me, neque ab hómine accépi illud, sed per revelatiónem Dómini nostri Jesu Christi.
-
 [Ant 2]
 @:Ant 2_
 (sed rubrica cisterciensis)
 @:Ant 2C
+
+[Ant 2C]
+Evangélium meum, * quod evangelizátum est, non est a me, neque ab hómine accépi illud, sed per revelatiónem Dómini nostri Jesu Christi.
 
 [Lectio Prima]
 !1 Cor 15:9-10

@@ -128,16 +128,22 @@ Amen.
 Astiterunt reges terræ, * et principes convenerunt in unum adversus Dominum, et adversus Christum ejus.;;2
 Voce mea * ad Dominum clamavi, et exaudivit me de monte sancto suo.;;3
 Factum est cor meum * tamquam cera liquescens in medio ventris mei.;;12
-V. Posuit me desolatam.
-R. Tota die mærore confectam.
 Inimici mei, * dixerunt mala mihi: Quando morietur, et peribit nomen ejus?;;40
 Deus, vitam meam * annuntiavi tibi: posuisti lacrimas meas in conspectu tuo.;;55
 Filii hominum, * dentes eorum arma et sagittæ: et lingua eorum gladius acutus.;;56
-V. Facies mea intumuit a fletu.
-R. Et palpebræ meæ caligaverunt.
 Intenderunt arcum, * rem amaram, ut sagittent in occultis immaculatum.;;63
 Factus sum * sicut homo sine adjutorio, inter mortuos liber.;;87
 Replevit me amaritudine, * inebriavit me absynthio.;;108
+
+[Nocturn 1 Versum]
+V. Posuit me desolatam.
+R. Tota die mærore confectam.
+
+[Nocturn 2 Versum]
+V. Facies mea intumuit a fletu.
+R. Et palpebræ meæ caligaverunt.
+
+[Nocturn 3 Versum]
 V. Deus vitam meam annuntiavi tibi.
 R. Posuisti lacrimas meas in conspectu tuo.
 
@@ -254,7 +260,7 @@ v. Quis crédidit audítui nostro? et bráchium Dómini cui revelátum est? Et a
 $Deo gratias
 
 [Responsory Laudes] (rubrica cisterciensis)
-@:Responsory Nona:1-4
+@:Responsory Breve Nona:1-4
 
 [Hymnus Laudes]
 {:H-Stabatmater:}v. Virgo vírginum præclára,
@@ -306,57 +312,57 @@ Generatiónem ejus quis enarrábit, quia abscíssus est de terra vivéntium; pro
 [Versum Prima]
 Qui passus es propter nostram salútem.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Pósuit me * Desolátam.
 R. Pósuit me * Desolátam.
 V. Tota die mæróre conféctam.
 R. Desolátam.
 &Gloria
 R. Pósuit me * Desolátam.
-_
-V. Fácies mea intúmuit a fletu.
-R. Et pálpebræ meæ caligavérunt.
+
+[Versum Tertia]
+@:Nocturn 2 Versum
 
 [Responsory TertiaM] (rubrica cisterciensis)
-@:Responsory Tertia:2-3:s/\* D/d/ s/\* Z/z/ s/V./R./ s/R./V./
+@:Nocturn 1 Versum
 
 [Capitulum Sexta]
 !Isa 53:5
 v. Ipse vulnerátus est propter iniquitátes nostras, attrítus est propter scélera nostra: disciplína pacis nostræ super eum, et livóre ejus sanáti sumus.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Fácies mea * Intúmuit a fletu.
 R. Fácies mea * Intúmuit a fletu.
 V. Et pálpebræ meæ caligavérunt.
 R. Intúmuit a fletu
 &Gloria
 R. Fácies mea * Intúmuit a fletu.
-_
-V. Deus vitam meam annuntiávi tibi.
-R. Posuísti lácrimas meas in conspéctu tuo.
+
+[Versum Sexta]
+@:Nocturn 3 Versum
 
 [Responsory SextaM] (rubrica cisterciensis)
-@:Responsory Tertia:8-9
+@:Nocturn 2 Versum
 
 [Capitulum Nona]
 !Isa 53:8
 v. Generatiónem ejus quis enarrábit, quia abscíssus est de terra vivéntium; propter scelus pópuli mei percússi eum.
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Deus vitam meam * Annuntiávi tibi.
 R. Deus vitam meam * Annuntiávi tibi.
 V. Posuísti lácrimas meas in conspéctu tuo.
 R. Annuntiávi tibi
 &Gloria
 R. Deus vitam meam * Annuntiávi tibi.
-_
-V. Ora pro nobis Virgo dolorosíssima.
-R. Ut digni efficiámur promissiónibus Christi.
+
+[Versum Nona]
+@:Versum 1
 
 [Responsory NonaM] (rubrica cisterciensis)
-@:Responsory Sexta:8-9
+@:Nocturn 3 Versum
 
 [Versum 3]
 @:Versum 1

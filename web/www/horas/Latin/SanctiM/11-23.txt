@@ -19,6 +19,9 @@ R. Ut de beneficiis suis gratulemur.
 [Lectio6]
 @Sancti/11-23:Lectio5
 
+[Lectio94]
+@Sancti/11-23:Lectio94
+
 [Lectio7]
 @Sancti/11-23:Lectio6:s/est\..*//s 
 erat, et juxta illud anchoram qua mersus fuerat, invenerunt. Quo miraculo incolæ permoti, Christi fidem susceperunt.
@@ -26,9 +29,6 @@ erat, et juxta illud anchoram qua mersus fuerat, invenerunt. Quo miraculo incol�
 [Lectio8]
 Ejus corpus postea Romam Nicolao Primo Pontifice translatum, in Ecclesia ipsius sancti Clementis conditum est. ~ 
 @Sancti/11-23:Lectio6:s/.*(Ecclésia)/$1/s
-
-[Lectio94]
-@Sancti/11-23:Lectio94
 
 [Ant Vespera 3] (nisi rubrica cisterciensis)
 @Sancti/11-23:Ant Vespera:s/112/115/ s/111/112/ s/110/111/

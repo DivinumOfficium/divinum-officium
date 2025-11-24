@@ -107,16 +107,21 @@ Amen.
 Multiplicáti sunt * qui tríbulant me, multi insúrgunt advérsum me.;;3
 Paravérunt sagíttas suas * in pháretra, ut sagíttent in obscúro rectos corde.;;10
 Defécit in dolóre * vita mea, et anni mei in gemítibus.;;30
-V. Regína Mártyrum, ora pro nobis.
-R. Quæ juxta crucem Jesu constitísti.
 Factum est cor meum * tamquam cera liquéscens in médio ventris mei.;;21
 Deus, vitam meam * annuntiávi tibi: posuísti lácrimas meas in conspéctu tuo.;;55
 Fuérunt mihi * lácrimæ meæ panes die ac nocte.;;41
-V. Fascículus myrrhæ diléctus meus mihi.
-R. Inter úbera mea commorábitur.
 Intendérunt arcum * rem amáram, ut sagíttent in occúltis immaculátum.;;63
 Ánima mea * turbáta est valde: sed tu, Dómine, úsquequo?;;6
 Deus adjútor * in tribulatiónibus quæ invenérunt nos nimis.;;45
+
+[Nocturn 1 Versum]
+@:Versum 1
+
+[Nocturn 2 Versum]
+V. Fascículus myrrhæ diléctus meus mihi.
+R. Inter úbera mea commorábitur.
+
+[Nocturn 3 Versum]
 V. Per te salútem hauriámus, Virgo María.
 R. Ex vulnéribus Christi.
 
@@ -262,14 +267,15 @@ v. Deduc quasi torréntem lácrimas per diem et noctem; non des réquiem tibi, n
 [Versum Prima]
 @Tempora/Quad5-5
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. O vos omnes, * Qui transítis per viam.
 R. O vos omnes, * Qui transítis per viam.
 V. Atténdite et vidéte, si est dolor, sicut dolor meus.
 R. Qui transítis per viam.
 &Gloria
 R. O vos omnes, * Qui transítis per viam.
-_
+
+[Versum Tertia]
 V. Defecérunt præ lácrimis óculi mei.
 R. Conturbáta sunt ómnia víscera mea.
 
@@ -278,29 +284,30 @@ R. Conturbáta sunt ómnia víscera mea.
 v. Plorans plorávit in nocte, et lácrimæ ejus in maxíllis ejus: non est qui consolétur eam ex ómnibus caris ejus.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Defecérunt * Præ lácrimis óculi mei.
 R. Defecérunt * Præ lácrimis óculi mei.
 V. Conturbáta sunt ómnia víscera mea.
 R. Præ lácrimis óculi mei.
 &Gloria
 R. Defecérunt * Præ lácrimis óculi mei.
-_
-V. Fascículus myrrhæ diléctus meus mihi.
-R. Inter úbera mea commorábitur.
+
+[Versum Sexta]
+@:Nocturn 2 Versum
 
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Fascículus myrrhæ * Diléctus meus mihi.
 R. Fascículus myrrhæ * Diléctus meus mihi.
 V. Inter úbera mea commorábitur.
 R. Diléctus meus mihi.
 &Gloria
 R. Fascículus myrrhæ * Diléctus meus mihi.
-_
+
+[Versum Nona]
 V. Anima mea liquefácta est.
 R. Ut diléctus locútus est.
 

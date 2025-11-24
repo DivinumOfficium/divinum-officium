@@ -8,7 +8,7 @@ In Assumptione Beatæ Mariæ Virginis;;Duplex I classis cum Octava Communi;;7;;e
 Doxology=Nat
 
 [Responsory Vespera]
-@Sancti/08-15t:Responsory Sexta:1-6
+@Sancti/08-15t:Responsory Breve Sexta
 
 [AntMatutinumM]
 Sicut lætántium * ómnium nostrum habitátio est in te, † sancta Dei Génetrix.;;86
@@ -17,17 +17,13 @@ Sicut lætántium * ómnium nostrum habitátio est in te, † sancta Dei Génetr
 Hortus conclúsus * es Dei Génitrix, hortus conclúsus, fons signátus: † surge própera, amíca mea, et veni.
 
 [Ant Matutinum]
-@Sancti/08-15t::1-3
-@Sancti/08-15t::6-7
+@Sancti/08-15t::1-5
 @CommuneM/C11:AntMatutinumM:1
-@Sancti/08-15t::4-5
 @CommuneM/C11:AntMatutinumM:2
 @:AntMatutinumM:1
-@Sancti/08-15t::11-13
+@Sancti/08-15t::7-9
 @CommuneM/C11:AntMatutinumM:3
-@Sancti/08-15t::9-10
 ;;249;250;251
-@Sancti/08-15t::14-15
 
 [Lectio1]
 @Sancti/08-15t:Lectio1:1-5 s/-4/-3/
@@ -109,21 +105,20 @@ R. Quia cum Christo regnat in ætérnum.
 [Responsory12]
 @Commune/C11:Responsory7
 
-[Responsory Laudes]
-@Sancti/08-15t:Responsory Nona:s/._.*//s
-
-[Responsory TertiaM]
-@:Versum 1
-
-[Responsory SextaM]
-@Sancti/08-15t:Responsory Tertia:8-9
-
-[Responsory NonaM]
-@Sancti/08-15t:Responsory Sexta:8-9
-
 [MM Capitulum]
 @Commune/C12:Lectio1:!2-3 s/11-// s/13 .*:/v./
 $Deo gratias
 _
 @Commune/C10:Versum 1
 
+[Responsory Laudes]
+@Sancti/08-15t:Responsory Breve Nona
+
+[Responsory TertiaM]
+@:Versum 1
+
+[Responsory SextaM]
+@Sancti/08-15t:Versum Tertia
+
+[Responsory NonaM]
+@Sancti/08-15t:Versum Sexta

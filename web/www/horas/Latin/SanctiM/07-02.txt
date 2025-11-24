@@ -16,17 +16,14 @@ Gaude María * Mater Christi, quæ singulári privilégio meruísti portáre Chr
 @Sancti/07-02:Lectio1:2-9 s/1-7/6-9/ s/1 .*6 /6 /s
 @Sancti/07-02:Lectio2:2-3
 
-[Lectio3]
-@Sancti/07-02:Lectio2:s/8-/10-/ s/8 .*10 /10 /s
-
-[Lectio4]
-@Sancti/07-02:Lectio3
-
 [Responsory2] (rubrica cisterciensis)
 R. En diléctus meus lóquitur mihi: 
 * Intra præcórdia mea dat vocem suam.
 V. Quam dúlcia fáucibus meis elóquia tua, Dómine, super mel ori meo.
 R. Intra præcórdia mea dat vocem suam.
+
+[Lectio3]
+@Sancti/07-02:Lectio2:s/8-/10-/ s/8 .*10 /10 /s
 
 [Responsory3] (rubrica cisterciensis)
 R. Ibo ad montem myrrhæ festinánter, et vidébo verbum hoc,
@@ -34,22 +31,25 @@ R. Ibo ad montem myrrhæ festinánter, et vidébo verbum hoc,
 V. Viam mandatórum tuórum cucúrri, juxta verbum tuum.
 R. Quod factum est in áuribus meis ab Angelo salutánte.
 
+[Lectio4]
+@Sancti/07-02:Lectio3
+
 [Responsory4_]
 R. Magníficat ánima mea Dóminum: † et exsultávit spíritus meus in Deo, salutári meo,
 * Quia respéxit humilitátem ancíllæ suæ.
 V. Ecce enim ex hoc beátam me dicent omnes generatiónes.
 R. Quia respéxit humilitátem ancíllæ suæ.
 
+[Responsory4]
+@:Responsory4_
+(sed rubrica cisterciensis)
+@:Responsory4C
+
 [Responsory4C]
 R. Vox túrturis audíta est, surge, própera, amíca mea, et veni, colúmba mea, in foramínibus petræ, in cavérna macériæ.
 * Osténde mihi fáciem tuam, sonet vox tua in áuribus meis.
 V. Vox enim tua dulcis, et fácies tua decóra.
 R. Osténde mihi fáciem tuam, sonet vox tua in áuribus meis.
-
-[Responsory4]
-@:Responsory4_
-(sed rubrica cisterciensis)
-@:Responsory4C
 
 [Lectio5]
 @Sancti/07-02:Lectio4
@@ -67,26 +67,26 @@ R. Osténde mihi fáciem tuam, sonet vox tua in áuribus meis.
 [Responsory6]
 @Sancti/07-02:Responsory5
 
-[Lectio7]
-@Sancti/07-02:Lectio6:s/Vídeo, .*//s
-
-[Responsory7]
-@Sancti/07-02:Responsory6
-
-[Lectio8]
-@Sancti/07-02:Lectio6:s/.* Vídeo, /Vídeo, /s
-
 [Responsory6] (rubrica cisterciensis)
 R. Felíces matres, sed et nati felicióres:
 * Et quæ géssere felícia facta fuére.
 V. Felix domus, felix família, quibus sunt visa tot mirabília.
 R. Et quæ géssere felícia facta fuére.
 
+[Lectio7]
+@Sancti/07-02:Lectio6:s/Vídeo, .*//s
+
+[Responsory7]
+@Sancti/07-02:Responsory6
+
 [Responsory7] (rubrica cisterciensis)
 R. O dies omni voto recolénda! o dies omni stúdio veneránda!
 * In qua tot mísero fulsérunt gáudia mundo.
 V. Hæc dies quam fecit Dóminus, exultémus et lætémur in ea.
 R. In qua tot mísero fulsérunt gáudia mundo.
+
+[Lectio8]
+@Sancti/07-02:Lectio6:s/.* Vídeo, /Vídeo, /s
 
 [Responsory8]
 R. Hódie visitávit Elízabeth beáta Virgo María ex progénie David; † per quam salus mundi credéntibus appáruit,
@@ -108,6 +108,12 @@ R. Te præcámur in hoc festo, sis solámen omni mœsto, fuga mortem, confer sor
 [Responsory9]
 @Sancti/07-02:Responsory7
 
+[Responsory9] (rubrica cisterciensis)
+R. Speciósas fílias cumulántes divítias,
+* Thesáuro ventris grávidi transcéndit Mater Dómini.
+V. Exúlta, et lauda, habitátio Sion, quia magnus in médio tui Sanctus Israël.
+R. Thesáuro ventris grávidi transcéndit Mater Dómini.
+
 [Lectio10]
 @Sancti/07-02:Lectio7:s/.* Illa natúræ/Illa natúræ/s
 (sed rubrica cisterciensis)
@@ -115,6 +121,12 @@ R. Te præcámur in hoc festo, sis solámen omni mœsto, fuga mortem, confer sor
 
 [Responsory10]
 @Sancti/07-02:Responsory8
+
+[Responsory10] (rubrica cisterciensis)
+R. Ait autem María: Fecit mihi magna qui potens est: 
+* Et sanctum nomen ejus.
+V. Et misericórdia ejus, a progénie in progénies timéntibus eum.
+R. Et sanctum nomen ejus.
 
 [Lectio11]
 @Sancti/07-02:Lectio8
@@ -129,27 +141,15 @@ R. Cum jucunditáte Visitatiónem sanctæ Maríæ celebrémus,
 V. Gloriósæ Virginis Maríæ Visitatiónem digníssime recolámus.
 R. Ut ipsa pro nobis intercédat ad Dóminum Jesum Christum.
 
+[Responsory11] (rubrica cisterciensis)
+@:Responsory4_
+
 [Lectio12]
 @Sancti/07-02:Lectio9
 
 [Lectio12] (rubrica cisterciensis)
 @Sancti/07-02:Lectio8:s/.*(Mansit autem)/$1/s s/$/~/
 @Sancti/07-02:Lectio9:s/Ungebátur ítaque.*//
-
-[Responsory9] (rubrica cisterciensis)
-R. Speciósas fílias cumulántes divítias,
-* Thesáuro ventris grávidi transcéndit Mater Dómini.
-V. Exúlta, et lauda, habitátio Sion, quia magnus in médio tui Sanctus Israël.
-R. Thesáuro ventris grávidi transcéndit Mater Dómini.
-
-[Responsory10] (rubrica cisterciensis)
-R. Ait autem María: Fecit mihi magna qui potens est: 
-* Et sanctum nomen ejus.
-V. Et misericórdia ejus, a progénie in progénies timéntibus eum.
-R. Et sanctum nomen ejus.
-
-[Responsory11] (rubrica cisterciensis)
-@:Responsory4_
 
 [Responsory12]
 R. Sancta et immaculáta virgínitas, † quibus te láudibus éfferam, néscio: 

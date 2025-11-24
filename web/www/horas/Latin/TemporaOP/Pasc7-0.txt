@@ -56,8 +56,11 @@ Qui ergo Deum vere diligit, qui ejus mandáta custódit, in ejus corde Dóminus 
 [Ant Tertia]
 @Tempora/Pasc7-0:Ant Vespera:2
 
-[Responsory Tertia]
-@Tempora/Pasc7-0:Responsory Nona
+[Responsory Breve Tertia]
+@Tempora/Pasc7-0:Responsory Breve Nona
+
+[Versum Tertia]
+@Tempora/Pasc7-0:Versum Nona
 
 [Ant Sexta]
 @Tempora/Pasc7-0:Ant Vespera:3
@@ -67,14 +70,15 @@ Qui ergo Deum vere diligit, qui ejus mandáta custódit, in ejus corde Dóminus 
 v. Apparuérunt Apóstolis dispertítæ linguæ tamquam ignis, sedítque supra síngulos eórum Spíritus Sanctus.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 @Tempora/Pasc7-0:Versum 3:1 s/, /, * Allelúja, / s/V/R.br/
 @Tempora/Pasc7-0:Versum 3:1 s/, /, * Allelúja, / s/V/R/
 @Tempora/Pasc7-0:Versum 3:2 s/R/V/
 @Psalterium/Common/Prayers:Alleluia Duplex:s/^/R./
 &Gloria
 @Tempora/Pasc7-0:Versum 3:1 s/, /, * Allelúja, / s/V/R/
-_
+
+[Versum Sexta]
 @Tempora/Pasc7-0:Ant Matutinum:4-5
 
 [Ant Nona]
@@ -85,8 +89,11 @@ _
 v. Facta autem hac voce, convénit multitúdo, et mente confúsa est, quóniam audiébat unusquísque lingua sua illos loquéntes.
 $Deo gratias
 
-[Responsory Nona]
-@Tempora/Pasc7-0:Responsory Tertia
+[Responsory Breve Nona]
+@Tempora/Pasc7-0:Responsory Breve Tertia
+
+[Versum Nona]
+@Tempora/Pasc7-0:Versum Tertia
 
 [Ant Vespera 3]
 @Tempora/Pasc7-0:Ant Vespera:1 s/Cum/Dum/ s/$/;;109;110;111/

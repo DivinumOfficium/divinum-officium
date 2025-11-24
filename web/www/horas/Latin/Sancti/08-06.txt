@@ -84,17 +84,22 @@ Summum Regem glóriæ, * Christum adorémus.
 Paulo minus * ab Angelis minorátus, glória et honóre coronátus est, et constitútus super ópera mánuum Dei.;;8
 Revelávit Dóminus * condénsa, et in templo ejus omnes dicent glóriam.;;28
 Speciósus forma * præ fíliis hóminum, diffúsa est grátia in lábiis tuis.;;44
-V. Gloriósus apparuísti in conspéctu Dómini.
-R. Proptérea decórem índuit te Dóminus.
 Illúminans * tu mirabíliter a móntibus ætérnis: turbáti sunt omnes insipiéntes corde.;;75
 Mélior est * dies una in átriis tuis, super míllia.;;83
 Gloriósa * dicta sunt de te, cívitas Dei.;;86
-V. Glória et honóre coronásti eum, Dómine.
-R. Et constituísti eum super ópera mánuum tuárum.
 Thabor et Hermon * in nómine tuo exsultábunt: tuum brácchium cum poténtia.;;88
 (sed rubrica 1960) Thabor et Hermon * in nómine tuo exsultábunt: tuum brácchium cum poténtia.;;88(2-19)
 Lux orta est * justo, et rectis corde lætítia.;;96
 Confessiónem * et decórem índuit, amíctus lúmine sicut vestiménto.;;103
+
+[Nocturn 1 Versum]
+@:Versum 1
+
+[Nocturn 2 Versum]
+V. Glória et honóre coronásti eum, Dómine.
+R. Et constituísti eum super ópera mánuum tuárum.
+
+[Nocturn 3 Versum]
 V. Magna est glória ejus in salutári tuo.
 R. Glóriam et magnum decórem impónes super eum.
 
@@ -273,47 +278,47 @@ Et ecce, * vox de nube dicens: Hic est Fílius meus diléctus, in quo mihi compl
 !Apoc 21:10-11; 21:23
 v. Sústulit me in spíritu in montem magnum et altum, et osténdit mihi civitátem sanctam Jerúsalem, descendéntem de cælo a Deo, habéntem claritátem Dei; et lucérna ejus est Agnus.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Gloriósus apparuísti in conspéctu Dómini, * Allelúja, allelúja.
 R. Gloriósus apparuísti in conspéctu Dómini, * Allelúja, allelúja.
 V. Proptérea decórem índuit te Dóminus.
 R. Allelúja, allelúja.
 &Gloria
 R. Gloriósus apparuísti in conspéctu Dómini, * Allelúja, allelúja.
-_
-V. Glória et honóre coronásti eum, Dómine, allelúja.
-R. Et constituísti eum super ópera mánuum tuárum, allelúja.
+
+[Versum Tertia]
+@:Nocturn 2 Versum
 
 [Capitulum Sexta]
 !2 Cor 3:18
 v. Nos omnes reveláta fácie glóriam Dómini speculántes, in eándem imáginem transformámur a claritáte in claritátem, tamquam a Dómini Spíritu.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Glória et honóre coronásti eum, Dómine, * Allelúja, allelúja.
 R. Glória et honóre coronásti eum, Dómine, * Allelúja, allelúja.
 V. Et constituísti eum super ópera mánuum tuárum.
 R. Allelúja, allelúja.
 &Gloria
 R. Glória et honóre coronásti eum, Dómine, * Allelúja, allelúja.
-_
-V. Magna est glória ejus in salutári tuo, allelúja.
-R. Glóriam et magnum decórem impónes super eum, allelúja.
+
+[Versum Sexta]
+@:Nocturn 3 Versum
 
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Magna est glória ejus in salutári tuo, * Allelúja, allelúja.
 R. Magna est glória ejus in salutári tuo, * Allelúja, allelúja.
 V. Glóriam et magnum decórem impónes super eum.
 R. Allelúja, allelúja.
 &Gloria
 R. Magna est glória ejus in salutári tuo, * Allelúja, allelúja.
-_
-V. Coróna áurea super caput ejus, allelúja.
-R. Expréssa signo sanctitátis, glóriæ et honóris, allelúja.
+
+[Versum Nona]
+@:Versum 2 
 
 [Ant 3]
 Et audiéntes * discípuli cecidérunt in fáciem suam et timuérunt valde: et accéssit Jesus, et tétigit eos dixítque eis: Súrgite et nolíte timére, allelúja.

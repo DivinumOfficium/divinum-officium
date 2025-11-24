@@ -43,6 +43,7 @@ Sancto decus Paráclito,
 Qui cord[a] amóre sáuciat,
 Vires et auget lánguidis.
 Amen.
+
 [Versum 1]
 V. Méritis et précibus Beátæ Joánnæ.
 R. Propítius esto Dómine pópulo tuo.
@@ -88,6 +89,21 @@ Accépit * benedictiónem a Dómino, et misericórdiam a Deo salutári suo.;;23
 Propter veritátem, * et mansuetúdinem, et justítiam: dedúcet te mirabíliter déxtera tua.;;44
 Arcum cónteret, * et confrínget arma, et scuta combúret igni.;;45
 Justítia et misericórdia * plena est déxtera tua.;;47
+;;84
+;;86
+Conféssio et pulchritúdo * in conspéctu ejus, sánctitas et magnificéntia in sanctificatióne ejus.;;95
+Annuntiavérunt cæli * justítiam ejus, et vidérunt omnes pópuli glóriam ejus.;;96
+Judicávit in justítia, et pópulos in æquitáte.;;97
+;;98
+;;249;250;251
+
+[Ant Matutinum]
+Eleváta est * magnificéntia Joánnæ super cælos.;;8
+Veni, elécta mea,  * et ponam in te thronum meum, quia concupívit Rex spéciem tuam.;;18
+Accépit * benedictiónem a Dómino, et misericórdiam a Deo salutári suo.;;23
+Propter veritátem, * et mansuetúdinem, et justítiam: dedúcet te mirabíliter déxtera tua.;;44
+Arcum cónteret, * et confrínget arma, et scuta combúret igni.;;45
+Justítia et misericórdia * plena est déxtera tua.;;47
 V. Méritis et précibus beátæ Joánnæ.
 R. Propítius esto, Dómine, pópulo tuo.
 ;;84
@@ -99,6 +115,18 @@ Judicávit in justítia, et pópulos in æquitáte.;;97
 V. Factus est Dóminus suscéptor meus.
 R. Et refúgium meum in die tribulatiónis.
 ;;249;250;251
+V. Posuísti, Dómine, super caput ejus.
+R. Corónam de lápide pretióso.
+
+[Nocturn 1 Versum]
+V. Méritis et précibus beátæ Joánnæ.
+R. Propítius esto, Dómine, pópulo tuo.
+
+[Nocturn 2 Versum]
+V. Factus est Dóminus suscéptor meus.
+R. Et refúgium meum in die tribulatiónis.
+
+[Nocturn 3 Versum]
 V. Posuísti, Dómine, super caput ejus.
 R. Corónam de lápide pretióso.
 
@@ -196,7 +224,7 @@ Grave onus infirmáti humánæ imposúerat, ut cum sensum vitæ hómines ex viv�
 [Lectio12]
 --nodivision--
 
-[LectioE]
+[Evangelium]
 @Commune/C2b
 
 [Ant Laudes]
@@ -256,8 +284,7 @@ v. Propósui sapiéntiam addúcere mihi ad convivéndum: † sciens quóniam mec
 $Deo gratias
 
 [Responsory Tertia]
-V. Méritis et précibus beátæ Joánnæ.
-R. Propítius esto, Dómine, pópulo tuo.
+@:Nocturn 1 Versum
 
 [Capitulum Sexta]
 !Sap 8:12
@@ -265,16 +292,14 @@ v. Tacéntem me sustinébunt, et loquéntem me respícient, et sermocinánte me 
 $Deo gratias
 
 [Responsory Sexta]
-V. Factus est Dóminus suscéptor meus.
-R. Et refúgium meum in die tribulatiónis.
+@:Nocturn 2 Versum
 
 [Capitulum Nona]
 !Sap. 8:13
 v. Habébo, per hanc, immortalitátem, et memóriam ætérnam his, qui post me futúri sunt, relínquam.
 
 [Responsory Nona]
-V. Posuísti, Dómine, super caput ejus.
-R. Corónam de lápide pretióso.
+@:Nocturn 3 Versum
 
 [Versum 3]
 @:Versum 1

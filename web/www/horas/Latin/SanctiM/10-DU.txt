@@ -8,6 +8,9 @@ Psalmi Dominica
 [Responsory Vespera 1] (rubrica Barroux)
 @Tempora/101-0:Responsory6
 
+[Responsory Vespera] (rubrica cisterciensis)
+@Sancti/10-DU:Responsory Breve Sexta
+
 [Hymnus Vespera]
 @Sancti/10-DU::1-35
 @Sancti/10-DU:Doxology:s/Jesu, tibi sit glória/Glória tibi, Dómine/ s/almo/Sancto/
@@ -31,13 +34,9 @@ Exaltáte * Dóminum Deum nostrum, † et adoráte in monte sancto ejus.;;98
 Christo * datus est principátus et honor regni: omnis pópulus et tribus et linguæ sérvient ei in ætérnum.
 
 [Ant Matutinum]
-@Sancti/10-DU::1-3
-@Sancti/10-DU::6-8
-@Sancti/10-DU::4-5
+@Sancti/10-DU::1-6
 @:AntMatutinumM
-@Sancti/10-DU::9-10
 ;;211;223(1-8);223(9-16)
-@Sancti/10-DU::14-15
 
 [Lectio1]
 @Sancti/10-DU:Lectio1:
@@ -94,21 +93,18 @@ R. Vidi Dóminum sedéntem super sólium excélsum et elevátum, † et plena er
 V. Séraphim stabant super illud: † sex alæ uni, et sex alæ álteri.
 R. Et ea, quæ sub ipso erant, replébant templum.
 
+[Responsory Laudes] (rubrica cisterciensis)
+@Sancti/10-DU:Responsory Breve Tertia
+
 [Hymnus Laudes]
 @Sancti/10-DU::1-30
 @:Doxology
 
-[Responsory Laudes] (rubrica cisterciensis)
-@Sancti/10-DU:Responsory Tertia
-
 [Responsory TertiaM]
-@Sancti/10-DU:Responsory Tertia:s/.*_.//s
+@Sancti/10-DU:Nocturn 2 Versum
 
 [Responsory SextaM]
-@Sancti/10-DU:Responsory Sexta:s/.*_.//s
+@Sancti/10-DU:Nocturn 3 Versum
 
 [Responsory NonaM]
 @Sancti/10-DU:Versum 2
-
-[Responsory Vespera] (rubrica cisterciensis)
-@Sancti/10-DU:Responsory Sexta

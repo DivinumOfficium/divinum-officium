@@ -16,7 +16,7 @@ sv. Barnabáše, Apoštola
 
 [Lectio7] (rubrica cisterciensis)
 @Sancti/06-11:Lectio5:s/.*(Když vykonali)/$1/s s/$/~/
-@Sancti/06-11:Lectio6:s/Tak tedy přišli.*// 
+@Sancti/06-11:Lectio6:s/Tak tedy přišli.*//
 
 [Lectio8]
 @Sancti/06-11:Lectio6:s/.* (?=Pak Barnabáš)//
@@ -37,5 +37,3 @@ sv. Barnabáše, Apoštola
 [Lectio12] (rubrica cisterciensis)
 @Sancti/06-11:Lectio8:s/.*(Také jim)/$1/ s/$/~/
 @Sancti/06-11:Lectio9:s/.*(Zastyďme)/$1/
-
-

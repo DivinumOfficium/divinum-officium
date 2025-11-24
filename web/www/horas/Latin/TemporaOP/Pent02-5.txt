@@ -30,7 +30,7 @@ Hauriétis aquas in gáudio, allelúja, de fóntibus Salvatóris, allelúja, all
 [Responsory9]
 @TemporaM/Pent02-5:Responsory11
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 @Tempora/Pent02-5::1 s/\* (.)/ \l$1/ s/$/~/
 @Psalterium/Common/Prayers:Alleluia Duplex:s/^/* /
 @Tempora/Pent02-5::2 s/\* (.)/ \l$1/ s/$/~/
@@ -40,10 +40,8 @@ Hauriétis aquas in gáudio, allelúja, de fóntibus Salvatóris, allelúja, all
 &Gloria
 @Tempora/Pent02-5::2 s/\* (.)/ \l$1/ s/$/~/
 @Psalterium/Common/Prayers:Alleluia Duplex:s/^/* /
-_
-@Tempora/Pent02-5::8-9
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 @Tempora/Pent02-5::1 s/\* (.)/ \l$1/ s/$/~/
 @Psalterium/Common/Prayers:Alleluia Duplex:s/^/* /
 @Tempora/Pent02-5::2 s/\* (.)/ \l$1/ s/$/~/
@@ -53,10 +51,8 @@ _
 &Gloria
 @Tempora/Pent02-5::2 s/\* (.)/ \l$1/ s/$/~/
 @Psalterium/Common/Prayers:Alleluia Duplex:s/^/* /
-_
-@Tempora/Pent02-5::8-9
 
-[Responsory Nona]
+[Responsory Breve Nona]
 @Tempora/Pent02-5::1 s/\* (.)/ \l$1/ s/$/~/
 @Psalterium/Common/Prayers:Alleluia Duplex:s/^/* /
 @Tempora/Pent02-5::2 s/\* (.)/ \l$1/ s/$/~/
@@ -66,8 +62,6 @@ _
 &Gloria
 @Tempora/Pent02-5::2 s/\* (.)/ \l$1/ s/$/~/
 @Psalterium/Common/Prayers:Alleluia Duplex:s/^/* /
-_
-@Tempora/Pent02-5::8-9
 
 [Ant Vespera 3]
 @Tempora/Pent02-5:Ant Laudes:1 s/(?:;;.*)?$/;;109;110;115;127;147/

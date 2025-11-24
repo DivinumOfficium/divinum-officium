@@ -3,16 +3,13 @@
 [MM Capitulum]
 @Sancti/12-24:Capitulum Sexta
 _
-@Sancti/12-24:Responsory Tertia:s/.*_//s
-
-[Responsory Laudes]
-@Sancti/12-24:Responsory Tertia:s/._.*//s
+@Sancti/12-24:Versum Tertia
 
 [Responsory TertiaM]
-@Sancti/12-24:Responsory Tertia:s/.*_.//s
+@Sancti/12-24:Versum Tertia
 
 [Responsory SextaM]
-@Sancti/12-24:Responsory Sexta:s/.*_.//s
+@Sancti/12-24:Versum Sexta
 
 [Responsory NonaM]
-@Sancti/12-24:Responsory Nona:s/.*_.//s
+@Sancti/12-24:Versum Nona

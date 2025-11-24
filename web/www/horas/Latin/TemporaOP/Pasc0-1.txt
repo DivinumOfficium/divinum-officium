@@ -8,6 +8,9 @@ Capitulum Versum 2 nisi ad Laudes;
 Psalmi Dominica;
 no prima vespera
 
+[Oratio]
+@Tempora/Pasc0-1
+
 [Invit]
 @Psalterium/Special/Matutinum Special:Invit Pasch_
 
@@ -28,9 +31,6 @@ V. Cito euntes dicíte discípuli ejus et Petro quia surréxit Dóminus.
 [Responsory3]
 @Tempora/Pasc0-4:Responsory2:1-5
 @TemporaOP/Pasc0-0:Responsory3:2
-
-[Oratio]
-@Tempora/Pasc0-1
 
 [Ant Laudes]
 @Tempora/Pasc0-0::1 s/$/;;92;99;62;210;148/

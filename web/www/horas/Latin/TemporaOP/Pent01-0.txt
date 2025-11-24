@@ -42,9 +42,8 @@ Amen.
 @:HymnusM Vespera
 
 [Ant Matutinum]
-@Tempora/Pent01-0::1-12
+@Tempora/Pent01-0::1-8
 Una ígitur Pater, Logos, Paraclitúsque substántia est: o beáta Trínitas.;;97
-@Tempora/Pent01-0::14-15
 
 [Responsory1]
 @Tempora/Pent01-0:Responsory3
@@ -123,9 +122,9 @@ Trino Deo et símplici.
 Amen.
 
 [Versum 2]
-@Tempora/Pent01-0:Responsory Nona:8-9
+@Tempora/Pent01-0:Versum Nona
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 @Tempora/Pent01-0::1 s/\* (.)/ \l$1/ s/$/ * ~/
 @Psalterium/Common/Prayers:Alleluia Duplex
 @Tempora/Pent01-0::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
@@ -135,21 +134,8 @@ Amen.
 &Gloria
 @Tempora/Pent01-0::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
 @Psalterium/Common/Prayers:Alleluia Duplex
-@Tempora/Pent01-0::7-9
 
-[Responsory Sexta]
-@Tempora/Pent01-0::1 s/\* (.)/ \l$1/ s/$/ * ~/
-@Psalterium/Common/Prayers:Alleluia Duplex
-@Tempora/Pent01-0::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluia Duplex
-@Tempora/Pent01-0::3
-@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
-&Gloria
-@Tempora/Pent01-0::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluia Duplex
-@Tempora/Pent01-0::7-9
-
-[Responsory Nona]
+[Responsory Breve Sexta]
 @Tempora/Pent01-0::1 s/\* (.)/ \l$1/ s/$/ * ~/
 @Psalterium/Common/Prayers:Alleluia Duplex
 @Tempora/Pent01-0::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
@@ -159,7 +145,17 @@ Amen.
 &Gloria
 @Tempora/Pent01-0::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
 @Psalterium/Common/Prayers:Alleluia Duplex
-@Tempora/Pent01-0::7-9
+
+[Responsory Breve Nona]
+@Tempora/Pent01-0::1 s/\* (.)/ \l$1/ s/$/ * ~/
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Tempora/Pent01-0::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Tempora/Pent01-0::3
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
+&Gloria
+@Tempora/Pent01-0::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
 
 [Ant Vespera 3]
 @Tempora/Pent01-0:Ant Vespera:1 s/(?:;;.*)?$/;;109;110;111;112;116/

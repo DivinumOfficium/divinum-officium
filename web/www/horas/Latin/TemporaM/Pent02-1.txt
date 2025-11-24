@@ -17,7 +17,7 @@ Psalmi Feria (rubrica cisterciensis)
 ;;
 ;;
 ;;
-@Tempora/Pent01-4::4-5
+@Tempora/Pent01-4:Nocturn 1 Versum
 @Tempora/Pent01-4::8 s/;;.*//
 ;;
 ;;
@@ -26,9 +26,6 @@ Psalmi Feria (rubrica cisterciensis)
 ;;
 
 [Ant Matutinum] (rubrica cisterciensis)
-@TemporaM/Pent01-5
-
-[MM LB] (rubrica cisterciensis)
 @TemporaM/Pent01-5
 
 [Lectio1]
@@ -50,4 +47,7 @@ Psalmi Feria (rubrica cisterciensis)
 @Tempora/Pent01-4:Responsory3
 
 [MM Capitulum] (rubrica tridentina aut rubrica divino)
+@TemporaM/Pent01-5
+
+[MM LB] (rubrica cisterciensis)
 @TemporaM/Pent01-5

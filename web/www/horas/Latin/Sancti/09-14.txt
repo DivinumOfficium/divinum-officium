@@ -24,7 +24,7 @@ Ecce Crucem Dómini, * fúgite, partes advérsæ, vicit Leo de tribu Juda, radix
 Per signum Crucis * de inimícis nostris líbera nos, Deus noster.
 
 [Responsory Vespera] (rubrica cisterciensis)
-@Sancti/05-03:Responsory Sexta:s/._.*//s s/, allelúja//g s/(et benedícimus tibi:? \* )?Allelúja/* Et benedícimus tibi/g s/\. \*/./
+@:Responsory Breve Sexta:1-4
 
 [Ant 1] (rubrica cisterciensis)
 Crux fidélis, * inter omnes arbor una nóbilis, nulla silva talem profert, fronde, flore, gérmine: dulce lignum, dulces clavos, dulce pondus sústinet.
@@ -44,18 +44,13 @@ Christum Regem pro nobis in Cruce exaltátum, * Veníte, adorémus.
 Nóbile lignum * exaltátur, Christi fides rútilat, dum Crux ab ómnibus venerátur.;;1
 Sancta Crux * extóllitur a cunctis régibus, virga régia erígitur, in qua Salvátor triumphávit.;;2
 O Crux venerábilis, * quæ salútem attulísti míseris, quibus te éfferam præcóniis, quóniam vitam nobis cǽlitem præparásti.;;3
-V. Hoc signum Crucis erit in cælo.
-R. Cum Dóminus ad judicándum vénerit.
 O Crucis victória * et admirábile signum, in cælésti cúria fac nos captáre triúmphum.;;4
 Funéstæ mortis * damnátur supplícium, dum Christus, in Cruce, nostra destrúxit víncula críminum.;;10
 Rex exaltátur * in ǽthera, cum nóbile trophǽum Crucis ab univérsis christícolis adorátur per sǽcula.;;20
-V. Adorámus te, Christe, et benedícimus tibi.
-R. Quia per Crucem tuam redemísti mundum.
 Adorámus te, Christe, * et benedícimus tibi, quia per Crucem tuam redemísti mundum.;;95
 Per lignum * servi facti sumus, et per sanctam Crucem liberáti sumus: fructus árboris sedúxit nos, Fílius Dei redémit nos, allelúja.;;96
 Salvátor mundi, * salva nos: qui per Crucem et sánguinem tuum redemísti nos, auxiliáre nobis, te deprecámur, Deus noster.;;97
-V. Omnis terra adóret te, et psallat tibi.
-R. Psalmum dicat nómini tuo, Dómine.
+
 
 [Lectio1]
 De libro Númeri
@@ -124,16 +119,31 @@ R. Quia Dóminus regnávit a ligno.
 @:Ant Vespera
 
 [Responsory Laudes] (rubrica cisterciensis)
-@Sancti/05-03:Responsory Tertia:s/._.*//s s/, allelúja//g s/(erit in cælo,? \* )?Allelúja/* Erit in cælo/g s/\. \*/./
+@:Responsory Breve Tertia:1-4
 
-[Responsory Tertia]
-@Sancti/05-03::s/, allelúja//g s/(erit in cælo,? \* )?Allelúja/* Erit in cælo/g s/\. \*/./
+[Responsory Breve Tertia]
+R.br. Hoc signum Crucis: * Erit in cælo.
+R. Hoc signum Crucis: * Erit in cælo.
+V. Cum Dóminus ad judicándum vénerit.
+R. Erit in cælo.
+&Gloria
+R. Hoc signum Crucis: * Erit in cælo.
 
-[Responsory Sexta]
-@Sancti/05-03::s/, allelúja//g s/(et benedícimus tibi:? \* )?Allelúja/* Et benedícimus tibi/g s/\. \*/./
+[Responsory Breve Sexta]
+R.br. Adorámus te, Christe: * Et benedícimus tibi.
+R. Adorámus te, Christe: * Et benedícimus tibi.
+V. Quia per Crucem tuam redemísti mundum.
+R. Et benedícimus tibi.
+&Gloria
+R. Adorámus te, Christe: * Et benedícimus tibi.
 
-[Responsory Nona]
-@Sancti/05-03::s/, allelúja//g s/(et psallat tibi,? \* )?Allelúja/* Et psallat tibi/g s/\. \*/./
+[Responsory Breve Nona]
+R.br. Omnis terra adóret te: * Et psallat tibi.
+R. Omnis terra adóret te: * Et psallat tibi.
+V. Psalmum dicat nómini tuo, Dómine.
+R. Et psallat tibi.
+&Gloria
+R. Omnis terra adóret te: * Et psallat tibi.
 
 [Ant 3]
 O Crux benedícta, * quæ sola fuísti digna portáre Regem cælórum et Dóminum, allelúja.

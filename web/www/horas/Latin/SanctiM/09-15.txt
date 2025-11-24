@@ -7,7 +7,7 @@ Septem Dolorum Beatæ Mariæ Virginis;;Duplex;;3
 Psalmi Dominica
 
 [Responsory Vespera]
-@Sancti/09-15:Responsory Nona:s/._.*//s
+@Sancti/09-15:Responsory Breve Nona
 
 [Hymnus Vespera]
 @:Hymnus Laudes
@@ -25,20 +25,20 @@ Psalmi Dominica
 [MM Capitulum]
 @Sancti/09-15:Capitulum Sexta
 _
-@Sancti/09-15:Responsory Sexta:s/.*_//s
+@Sancti/09-15:Versum Sexta
 
 [Responsory Laudes]
-@Sancti/09-15:Responsory Sexta:s/._.*//s
+@Sancti/09-15:Responsory Breve Sexta
 
 [Hymnus Laudes]
 @Sancti/09-15::1-15
 @:Doxology
 
 [Responsory TertiaM]
-@Sancti/09-15:Responsory Tertia:s/.*_.//s
+@Sancti/09-15:Versum Tertia
 
 [Responsory SextaM]
-@Sancti/09-15:Responsory Sexta:s/.*_.//s
+@Sancti/09-15:Nocturn 2 Versum
 
 [Responsory NonaM]
-@Sancti/09-15:Responsory Nona:s/.*_.//s
+@Sancti/09-15:Versum Nona

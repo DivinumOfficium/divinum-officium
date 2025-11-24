@@ -93,14 +93,14 @@ Amen.
 V. Ascéndit Deus in jubilatióne, allelúja.
 R. Et Dóminus in voce tubæ, allelúja.
 
-[Versum 1OP]
-V. Eleváta est, magnificéntia tua, allelúja.
-R. Super cælos, Deus, allelúja.
-
 [Versum 1]
 @:Versum 1_
 (sed rubrica praedicatorum)
 @:Versum 1OP
+
+[Versum 1OP]
+V. Eleváta est, magnificéntia tua, allelúja.
+R. Super cælos, Deus, allelúja.
 
 [Ant 1]
 Pater, * manifestávi nomen tuum homínibus quos dedísti mihi: nunc autem pro eis rogo, non pro mundo, quia ad te vénio, allelúja.
@@ -167,6 +167,27 @@ Ascéndit Deus * in jubilatióne, et Dóminus in voce tubæ, allelúja.;;46
 Nimis exaltátus est, * allelúja: super omnes deos, allelúja.;;96
 Dóminus in Sion, * allelúja: magnus et excélsus, allelúja.;;98
 Dóminus in cælo, * allelúja: parávit sedem suam, allelúja.;;102
+
+[Nocturn 1 Versum]
+@:Versum 1
+
+[Nocturn 2 Versum_]
+V. Ascéndens Christus in altum, allelúja.
+R. Captívam duxit captivitátem, allelúja.
+
+[Nocturn 2 Versum]
+@:Nocturn 2 Versum_
+(sed rubrica praedicatorum)
+@:Versum 1_
+
+[Nocturn 3 Versum_]
+V. Ascéndo ad Patrem meum, et Patrem vestrum, allelúja.
+R. Deum meum, et Deum vestrum, allelúja.
+
+[Nocturn 3 Versum]
+@:Nocturn 3 Versum_
+(sed rubrica praedicatorum)
+@:Nocturn 2 Versum_
 
 [Lectio1]
 Incipit liber Actuum Apostolórum
@@ -418,24 +439,3 @@ _
 $Oremus
 Concéde, quǽsumus, omnípotens Deus: ut, qui hodiérna die Unigénitum tuum, Redemptórem nostrum, ad cælos ascendísse crédimus; ipsi quoque mente in cæléstibus habitémus.
 $Per eumdem
-
-[Nocturn 1 Versum]
-@:Versum 1
-
-[Nocturn 2 Versum_]
-V. Ascéndens Christus in altum, allelúja.
-R. Captívam duxit captivitátem, allelúja.
-
-[Nocturn 2 Versum]
-@:Nocturn 2 Versum_
-(sed rubrica praedicatorum)
-@:Versum 1_
-
-[Nocturn 3 Versum_]
-V. Ascéndo ad Patrem meum, et Patrem vestrum, allelúja.
-R. Deum meum, et Deum vestrum, allelúja.
-
-[Nocturn 3 Versum]
-@:Nocturn 3 Versum_
-(sed rubrica praedicatorum)
-@:Nocturn 2 Versum_

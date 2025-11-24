@@ -29,13 +29,19 @@ Adhuc loquénte Petro, * cécidit Spíritus sanctus super omnes, qui audiébant 
 (sed rubrica cisterciensis)
 @Sancti/06-29:Lectio1:1-5
 
+[Responsory1] (rubrica cisterciensis)
+@Sancti/02-22:Responsory7
+
 [Lectio2]
 @Sancti/06-29:Lectio2:1-4 s/-10/-8/
 
 [Lectio2] (rubrica cisterciensis)
 @Sancti/06-29:Lectio1:2:s/1-5/4-8/
 @Sancti/06-29:Lectio1:6-7
-@Sancti/06-29:Lectio2:2-4 
+@Sancti/06-29:Lectio2:2-4
+
+[Responsory2] (rubrica cisterciensis)
+@:Responsory12_
 
 [Lectio3]
 @Sancti/06-29:Lectio2:s/6-10/9-11/ s/6 .*9 /9 /s
@@ -43,12 +49,6 @@ Adhuc loquénte Petro, * cécidit Spíritus sanctus super omnes, qui audiébant 
 
 [Lectio4]
 @Sancti/06-29:Lectio3:s/11-/12-/ s/11 .*12 /12 /s
-
-[Responsory1] (rubrica cisterciensis)
-@Sancti/02-22:Responsory7
-
-[Responsory2] (rubrica cisterciensis)
-@:Responsory12_
 
 [Responsory4]
 R. Petre, amas me? † Tu scis, Dómine, quia amo te.
@@ -65,18 +65,37 @@ R. Et quodcúmque sólveris super terram, erit solútum et in cælis.
 [Lectio5]
 @Sancti/06-29:Lectio4
 
+[Lectio5] (rubrica cisterciensis)
+Sermo sancti Leónis Papæ.
+!Ex Serm. 1. de Natali Apostolorum Petri et Pauli.
+Pretiósa est in conspéctu Dómini mors Sanctórum ejus. Nec ullo crudelitátis génere déstrui potest sacraménto Crucis Christi fundáta relígio. Non minúitur persecutiónibus Ecclésia, sed augétur: et semper Domínicus ager ségete ditióri vestítur, dum grana, quæ síngula cadunt, multiplicáta nascúntur.
+
 [Responsory5]
 @Sancti/06-29:Responsory4
 
 [Lectio6]
 @Sancti/06-29:Lectio5:s/Quamvis .*//s
 
+[Lectio6] (rubrica cisterciensis)
+Unde duo ista præclára divíni séminis gérmina, in quantam sóbolem germinárint, beatórum míllia Mártyrum protestántur: qui Apostolicórum æmuli triumphórum, urbem nostram purpurátis et longe latéque rutilántibus pópulis ambiérunt, et quasi ex multárum honóre gemmárum consérto uno diadémate coronárunt.
+	
+
 [Responsory6]
 @Sancti/06-29:Responsory5
+
+[Responsory6] (rubrica cisterciensis)
+R. Petrus quidem servabátur in cárcere;
+* Orátio autem fiébat sine intermissióne ab Ecclésia ad Deum pro eo.
+V. Erat Petrus dórmiens inter duos mílites, vinctus caténis duábus:
+R. Orátio autem fiébat sine intermissióne ab Ecclésia ad Deum pro eo.
 
 [Lectio7]
 @Sancti/06-29:Lectio5:s/.* Quamvis /Quamvis /s s/$/~/
 @Sancti/06-29:Lectio6:s/Hæc autem .*//s
+
+[Lectio7] (rubrica cisterciensis)
+De quorum præsídio, dilectíssimi, divínitus nobis ad exémplum patiéntiæ et confirmatiónem fídei præparáto; universáliter quidem in ómnium Sanctórum commemoratióne lætándum est, sed in horum excelléntia patrum mérito est excelléntius gloriándum, quos grátia Dei in tantum ápicem inter ómnia Ecclésiæ membra provéxit, ut eos in córpore, cui caput est Christus, quasi géminum constitúerit lumen oculórum.
+	
 
 [Responsory7]
 @Sancti/06-29:Responsory6
@@ -86,25 +105,8 @@ R. Et quodcúmque sólveris super terram, erit solútum et in cælis.
 [Lectio8]
 @Sancti/06-29:Lectio6:s/.* Hæc autem /Hæc autem /s
 
-[Lectio5] (rubrica cisterciensis)
-Sermo sancti Leónis Papæ.
-!Ex Serm. 1. de Natali Apostolorum Petri et Pauli.
-Pretiósa est in conspéctu Dómini mors Sanctórum ejus. Nec ullo crudelitátis génere déstrui potest sacraménto Crucis Christi fundáta relígio. Non minúitur persecutiónibus Ecclésia, sed augétur: et semper Domínicus ager ségete ditióri vestítur, dum grana, quæ síngula cadunt, multiplicáta nascúntur.
-	
-[Lectio6] (rubrica cisterciensis)
-Unde duo ista præclára divíni séminis gérmina, in quantam sóbolem germinárint, beatórum míllia Mártyrum protestántur: qui Apostolicórum æmuli triumphórum, urbem nostram purpurátis et longe latéque rutilántibus pópulis ambiérunt, et quasi ex multárum honóre gemmárum consérto uno diadémate coronárunt.
-	
-[Lectio7] (rubrica cisterciensis)
-De quorum præsídio, dilectíssimi, divínitus nobis ad exémplum patiéntiæ et confirmatiónem fídei præparáto; universáliter quidem in ómnium Sanctórum commemoratióne lætándum est, sed in horum excelléntia patrum mérito est excelléntius gloriándum, quos grátia Dei in tantum ápicem inter ómnia Ecclésiæ membra provéxit, ut eos in córpore, cui caput est Christus, quasi géminum constitúerit lumen oculórum.
-	
 [Lectio8] (rubrica cisterciensis)
 De quorum méritis atque virtútibus, quæ omnem loquéndi súperant facultátem, nihil divérsum, nihil debémus sentíre discrétum: quia illos eléctio pares, et labor similes, et finis fecit æquáles. Sicut autem et nos expérti sumus‚ et nostri probavére majóres‚ crédimus atque confídimus, inter omnes labóres istíus vitæ ad obtinéndam misericórdiam Dei, semper nos nos speciálium patronórum oratiónibus adjuvándos: ut quantum própriis peccátis deprímimur tantum Apostólicis méritis erigámur. 
-
-[Responsory6] (rubrica cisterciensis)
-R. Petrus quidem servabátur in cárcere;
-* Orátio autem fiébat sine intermissióne ab Ecclésia ad Deum pro eo.
-V. Erat Petrus dórmiens inter duos mílites, vinctus caténis duábus:
-R. Orátio autem fiébat sine intermissióne ab Ecclésia ad Deum pro eo.
 
 [Responsory8]
 R. Solve, jubénte Deo terrárum Petre caténas,
@@ -162,16 +164,16 @@ R. Beátus es Simon Bar Jona: quia caro et sanguis non revelávit tibi, sed Pate
 V. Et ego dico tibi, quia tu es Petrus, et super hanc petram ædificábo Ecclésiam meam.
 R. Dicit Dóminus.
 
+[Responsory12]
+@:Responsory12_
+(sed rubrica cisterciensis)
+@:Responsory12C
+
 [Responsory12C]
 R. Cornélius Centúrio, vir religiósus, ac timens Deum, vidit maniféste Angelum Dei, dicéntem sibi: 
 * Cornéli, mitte et accérsi Simónem, qui cognominátur Petrus; hic dicet tibi quid te opórteat fácere.
 V. Cum orásset Cornélius, nondum in Christo renátus, appáruit ei Angelus, dicens:
 R. Cornéli, mitte et accérsi Simónem, qui cognominátur Petrus; hic dicet tibi quid te opórteat fácere.
-
-[Responsory12]
-@:Responsory12_
-(sed rubrica cisterciensis)
-@:Responsory12C
 
 [Evangelium] (rubrica cisterciensis)
 @SanctiM/07-08C

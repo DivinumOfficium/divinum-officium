@@ -56,17 +56,22 @@ Amen.
 [Ant Matutinum]
 Benedicta tu * in muliéribus, et benedíctus fructus ventris tui. (Allelúja.);;8
 Sicut myrrha * electa, odórem dedísti suavitátis, sancta Dei Génetrix. (Allelúja.);;18
-Ante torum * hujus Vírginis frequentáte nobis dúlcia cántica drámatis. (Allelúja.);;23
-V. Salve, Regína misericórdiæ. (Allelúja.)
-R. Ex qua natus est Christus, Rex noster. (Allelúja.)
+Ante torum * hujus Vírginis frequentáte nobis dúlcia cántica drámatis. (Allelúja.);;23 (Allelúja.)
 Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna. (Allelúja.);;44
 Adjuvábit eam * Deus vultu suo: Deus in médio ejus, non commovébitur. (Allelúja.);;45
-Sicut lætántium * ómnium nostrum habitátio est in te, sancta Dei Génetrix. (Allelúja.);;86
-V. Stabat juxta crucem Jesu Mater ejus. (Allelúja.)
-R. In passióne sócia, totíus mundi Regína. (Allelúja.)
+Sicut lætántium * ómnium nostrum habitátio est in te, sancta Dei Génetrix. (Allelúja.);;86 (Allelúja.)
 Gaude, Maria Virgo: * cunctas hǽreses sola interemísti in univérso mundo. (Allelúja.);;95
 Dignáre me * laudáre te, Virgo sacráta: da mihi virtútem contra hostes tuos. (Allelúja.);;96
 Post partum, * Virgo, invioláta permansísti: Dei Génetrix, intercéde pro nobis. (Allelúja.);;97
+
+[Nocturn 1 Versum]
+@:Versum 1
+
+[Nocturn 2 Versum]
+V. Stabat juxta crucem Jesu Mater ejus. (Allelúja.)
+R. In passióne sócia, totíus mundi Regína. (Allelúja.)
+
+[Nocturn 3 Versum]
 V. Beátam me dicent omnes generatiónes. (Allelúja.)
 R. Quia fecit mihi magna qui potens est. (Allelúja.)
 
@@ -199,6 +204,14 @@ Regína mundi digníssima, * María, Virgo perpétua, intercéde pro nostra pace
 !Sir 24:30-31
 v. Qui audit me, non confundétur, et qui operántur in me, non peccábunt: qui elúcidant me, vitam ætérnam habébunt.
 
+[Responsory Breve Tertia]
+R.br. Salve, * Regína misericórdiæ.
+R. Salve, * Regína misericórdiæ.
+V. Ex qua natus est Christus, Rex noster.
+R. Regína misericórdiæ.
+&Gloria
+R. Salve, * Regína misericórdiæ.
+
 [Responsory Tertia]
 R.br. Salve, * Regína misericórdiæ.
 R. Salve, * Regína misericórdiæ.
@@ -210,40 +223,42 @@ _
 V. Stabat juxta crucem Jesu Mater ejus. (Allelúja.)
 R. In passióne sócia, totíus mundi Regína. (Allelúja.)
 
+[Versum Tertia]
+@:Nocturn 2 Versum
+
 [Capitulum Sexta]
 !Sir 24:9-11
 v. In omni terra steti et in omni pópulo, et in omni gente primátum hábui, et ómnium excelléntium et humílium corda virtúte calcávi.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Stabat juxta crucem Jesu * Mater ejus.
 R. Stabat juxta crucem Jesu * Mater ejus.
 V. In passióne sócia, totíus mundi Regína.
 R. Mater ejus.
 &Gloria
 R. Stabat juxta crucem Jesu * Mater ejus.
-_
-V. Beátam me dicent omnes generatiónes. (Allelúja.)
-R. Quia fecit mihi magna qui potens est. (Allelúja.)
+
+[Versum Sexta]
+@:Nocturn 3 Versum
 
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Beátam me dicent * Omnes generatiónes.
 R. Beátam me dicent * Omnes generatiónes.
 V. Quia fecit mihi magna qui potens est.
 R. Omnes generatiónes.
 &Gloria
 R. Beátam me dicent omnes generatiónes.
-_
-V. María Virgo cælos ascéndit. (Allelúja.)
-R. Cum Christo regnat in ætérnum. (Allelúja.)
+
+[Versum Nona]
+@:Versum 2
 
 [Versum 3]
-V. María Virgo cælos ascéndit. (Allelúja.)
-R. Cum Christo regnat in ætérnum. (Allelúja.)
+@:Versum 2
 
 [Ant 3]
 Beáta Mater * et intácta Virgo María, gloriósa Regína mundi, intercéde pro nobis ad Dóminum. (Allelúja.)

@@ -6,20 +6,16 @@ S. Mariæ Magdalenæ Pœnitentis;;I class Duplex;;6;;ex C7
 [Rule]
 12 lectiones
 
-[Responsory Vespera]
-@Tempora/Pasc0-4:Responsory1
-&Gloria1
-@Tempora/Pasc0-4:Responsory1:4
-
 [Ant Vespera]
 María ergo * unxit pedes Jesu et extérsit capíllis suis et domus impléta est ex odóre unguénti.;;109
 Quid molésti estis * huic muliéri opus enim bonum operáta est in me.;;112
 Mittens haec múlier * in corpus meum hoc unguéntum ad sepeliéndum me fecit;;121
 Nominabitur * quod fecit múlier ista in generatióne ómnium seculórum;;126
 
-[Versum 1]
-V. Remíssa sunt ei peccáta multa.
-R. Quóniam diléxit multum.
+[Responsory Vespera]
+@Tempora/Pasc0-4:Responsory1
+&Gloria1
+@Tempora/Pasc0-4:Responsory1:4
 
 [HymnusM Vespera]
 v. Lauda mater Ecclésia,
@@ -53,8 +49,15 @@ Peccántium qui crímina
 Remíttit, et dat prǽmia.
 Amen.
 
+[Versum 1]
+V. Remíssa sunt ei peccáta multa.
+R. Quóniam diléxit multum.
+
 [Ant 1]
 In diébus illis, * múlier quæ erat in civitáte peccátrix, ut cognóvit quod Jesus accúbuit in domo Simónis leprósi, áttulit alabástrum unguénti: et stans retro secus pedes Dómini Jesu, lácrimis cœpit rigáre pedes éjus, et capíllis cápitis sui tergébat: et osculabátur pedes éjus, et unguénto ungébat. 
+
+[Ant4]
+Dum flerem * ad monuméntum vidi dóminum meum allelúja.
 
 [Ant Laudes]
 @Tempora/Pasc0-4:Ant 2
@@ -62,13 +65,6 @@ In diébus illis, * múlier quæ erat in civitáte peccátrix, ut cognóvit quod
 @Tempora/Pasc0-4:Ant 3
 @:Ant4 
 @:Ant Nona
-
-[Ant4]
-Dum flerem * ad monuméntum vidi dóminum meum allelúja.
-
-[Versum 2]
-V. Noli fleri María.
-R. Resuréxit Dóminus.
 
 [Capitulum Laudes]
 !Cant 3:1-2
@@ -82,6 +78,10 @@ V. Quóniam diléxit multum.
 R. Peccáta multa.
 &Gloria1
 R. Remíssa sunt ei * peccáta multa
+
+[Versum 2]
+V. Noli fleri María.
+R. Resuréxit Dóminus.
 
 [Ant 2]
 @Tempora/Pasc1-1:Ant 2

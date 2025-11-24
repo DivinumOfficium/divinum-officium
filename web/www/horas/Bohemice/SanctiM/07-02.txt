@@ -21,16 +21,16 @@ R. Velebí duše má Hospodina; a zajásal můj duch v Bohu, mém spasiteli,
 V. Ejhle, od této chvíle mě budou blahoslavit všechna pokolení.
 R. Neboť shlédl na nepatrnost své služebnice.
 
+[Responsory4]
+@:Responsory4_
+(sed rubrica cisterciensis)
+@:Responsory4C
+
 [Responsory4C]
 R. Hlas hrdličky je slyšet, vstaň, pospěš, má přítelkyně, a přijď, má holubičko, ve skalním výklenku, v otvoru ve zdi.
 * Ukaž mi svou tvář, ať zazní tvůj hlas v mých uších.
 V. Tvůj hlas je totiž sladký, a tvá tvář krásná.
 R. Ukaž mi svou tvář, ať zazní tvůj hlas v mých uších.
-
-[Responsory4]
-@:Responsory4_
-(sed rubrica cisterciensis)
-@:Responsory4C
 
 [Lectio5]
 @Sancti/07-02:Lectio4
@@ -42,23 +42,23 @@ R. Ukaž mi svou tvář, ať zazní tvůj hlas v mých uších.
 (sed rubrica cisterciensis)
 @Sancti/07-02:Lectio5:s/(příchod Spasitele\.).*/$1/
 
-[Lectio7]
-@Sancti/07-02:Lectio6:s/Vidím, .*//s
-
-[Lectio8]
-@Sancti/07-02:Lectio6:s/.* Vidím, /Vidím, /s
-
 [Responsory6] (rubrica cisterciensis)
 R. Šťastné matky, ale děti jsou ještě šťastnější;
 * I ty, jež nosily štěstí, se staly šťastnými.
 V. Šťastný je dům, šťastná rodina, kterým se staly tak podivuhodné věci.
 R. I ty, jež nosily štěstí, se staly šťastnými.
 
+[Lectio7]
+@Sancti/07-02:Lectio6:s/Vidím, .*//s
+
 [Responsory7] (rubrica cisterciensis)
 R. Ó, dni hodný každého připomenutí! Ó, dni hodný nejvyšší úcty!
 * Neboť v tak ubohém dni zazářily radosti světu.
 V. Toto je den, který učinil Hospodin, jásejme a radujme se v něm.
 R. Neboť v tak ubohém dni zazářily radosti světu.
+
+[Lectio8]
+@Sancti/07-02:Lectio6:s/.* Vidím, /Vidím, /s
 
 [Responsory8]
 R. Hódie visitávit Elízabeth beáta Virgo María ex progénie David; † per quam salus mundi credéntibus appáruit,
@@ -80,6 +80,12 @@ R. Tě prosíme v tomto svátku, buď útěchou ve všem smutku, smrt odežeň a
 [Responsory9]
 @Sancti/07-02:Responsory7
 
+[Responsory9] (rubrica cisterciensis)
+R. Krásné dívky hromadící bohatství,
+* Pokladem těhotného lůna překonala Matka Páně.
+V. Jásejte a chvalte, obyvatelé Sionu, neboť ten veliký uprostřed vás je Svatý Israele.
+R. Pokladem těhotného lůna překonala Matka Páně.
+
 [Lectio10]
 @Sancti/07-02:Lectio7:s/.* Alžběta jej/Alžběta jej/s
 (sed rubrica cisterciensis)
@@ -87,6 +93,12 @@ R. Tě prosíme v tomto svátku, buď útěchou ve všem smutku, smrt odežeň a
 
 [Responsory10]
 @Sancti/07-02:Responsory8
+
+[Responsory10] (rubrica cisterciensis)
+R. Řekla však Maria: Veliké věci mi učinil ten, který je mocný. 
+* A svaté jest jeho jméno.
+V. A milosrdenství jeho od pokolení do pokolení k těm, kdo se ho bojí.
+R. A svaté jest jeho jméno.
 
 [Lectio11]
 @Sancti/07-02:Lectio8
@@ -110,18 +122,6 @@ R. Aby se sama za nás přimlouvala u Pána Ježíše Krista.
 [Lectio12] (rubrica cisterciensis)
 @Sancti/07-02:Lectio8:s/.*(Maria s ní zůstala)/$1/s s/$/~/
 @Sancti/07-02:Lectio9:s/Byl tedy pomazán.*//
-
-[Responsory9] (rubrica cisterciensis)
-R. Krásné dívky hromadící bohatství,
-* Pokladem těhotného lůna překonala Matka Páně.
-V. Jásejte a chvalte, obyvatelé Sionu, neboť ten veliký uprostřed vás je Svatý Israele.
-R. Pokladem těhotného lůna překonala Matka Páně.
-
-[Responsory10] (rubrica cisterciensis)
-R. Řekla však Maria: Veliké věci mi učinil ten, který je mocný. 
-* A svaté jest jeho jméno.
-V. A milosrdenství jeho od pokolení do pokolení k těm, kdo se ho bojí.
-R. A svaté jest jeho jméno.
 
 [Responsory12]
 R. Svaté a neposkvrněné Panenství, nevím, jaké ti mohu snést chvály! 

@@ -22,7 +22,11 @@ Secúndum multitúdinem * dolórum meórum in corde meo, consolatiónes tuæ læ
 Pone me * ut signáculum super cor tuum, ut signáculum super bráchium tuum;;129
 
 [Responsory Vespera] (rubrica cisterciensis)
-@:Responsory Sexta
+@:Responsory Breve Sexta
+
+[Hymnus Vespera]
+@Tempora/Pent02-5:Hymnus Matutinum:1-25
+@:Doxology_
 
 [Doxology_]
 Decus Parénti, et Fílio,
@@ -30,10 +34,6 @@ Sanctóque sit Spirítui,
 Quibus potéstas, glória,
 Regnúmque in omne est sǽculum.
 Amen.
-
-[Hymnus Vespera]
-@Tempora/Pent02-5:Hymnus Matutinum:1-25
-@:Doxology_
 
 [Versum 1]
 V. Ignem veni míttere in terram.
@@ -61,16 +61,22 @@ Amen.
 Quid est homo quia magníficas eum, aut quid appónis erga eum cor tuum?;;8
 Meditátio cordis mei in conspéctu tuo semper;;18
 Elevámini portæ æternáles, et introíbit Rex glóriæ. incurvábit habitántes in excélso;;23
-V. Dómine dabis pacem nobis.
-R. Omnia enim ópera nostra operátus es nobis.
 Afferéntur in lætítia et exsultatióne: adducéntur in templum Regis;;44;
 Sanctificávit tabernáculum suum Altíssimus;;45
 Sicut lætántium ómnium habitátio est in te;;86
-V. Convérsus est furor tuus.
-R. Et consolátus es me.
 Annuntiáte de die in diem salutáre ejus;;96
 Adoráte eum omnes Angeli ejus: audívit, et lætáta est Sion;;97
 Vidérunt omnes términi terræ salutáre Dei nostri;;107
+
+[Nocturn 1 Versum]
+V. Dómine dabis pacem nobis.
+R. Omnia enim ópera nostra operátus es nobis.
+
+[Nocturn 2 Versum]
+V. Convérsus est furor tuus.
+R. Et consolátus es me.
+
+[Nocturn 3 Versum]
 V. Ex Sion spécies decóris ejus.
 R. Deus noster maniféste véniet.
 
@@ -175,7 +181,7 @@ v. Ecce Deus Salvátor meus, fiduciáliter agam, et non timébo: quia fortitúdo
 $Deo gratias
 
 [Responsory Laudes] (rubrica cisterciensis)
-@:Responsory Nona
+@:Responsory Breve Nona
 
 [Hymnus Laudes]
 @Tempora/Pent02-5:Hymnus Laudes:1-25
@@ -196,57 +202,60 @@ $Per eumdem
 !Isa 12:5
 v. Cantáte Dómino quóniam magnífice fecit, annuntiáte hoc in univérsa terra. Exsúlta et lauda habitátio Sion, quia magnus in médio tui sanctus Israël.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Vere * Languóres nostros ipse tulit.
 R. Vere * Languóres nostros ipse tulit.
 V. Et dolóres nostros ipse portávit.
 R. Languóres nostros ipse tulit.
 &Gloria
 R. Vere * Languóres nostros ipse tulit.
-_
-V. Pósuit fines tuos pacem.
-R. Et ádipe fruménti sátiat te.
 
 [Responsory TertiaM] (rubrica cisterciensis)
-@:Responsory Tertia:8-9
+@:Versum Tertia
+
+[Versum Tertia]
+V. Pósuit fines tuos pacem.
+R. Et ádipe fruménti sátiat te.
 
 [Capitulum Sexta]
 !Isa 12:4
 v. Dicétis in die illa: Confitémini Dómino, et invocáte nomen ejus: et mementate quóniam excélsum est nomen ejus.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Pósuit * Fines tuos pacem.
 R. Pósuit * Fines tuos pacem.
 V. Et ádipe fruménti sátiat te.
 R. Fines tuos paces
 &Gloria
 R. Pósuit * Fines tuos pacem.
-_
-V. Dirupísti Dómine víncula mea.
-R. Tibi sacrificábo hóstiam laudis.
 
 [Responsory SextaM] (rubrica cisterciensis)
-@:Responsory Sexta:8-9
+@:Versum Sexta
+
+[Versum Sexta]
+V. Dirupísti Dómine víncula mea.
+R. Tibi sacrificábo hóstiam laudis.
 
 [Capitulum Nona]
 !Isa 12:5
 v. Cantáte Dómino quóniam magnífice fecit, annuntiáte hoc in univérsa terra. Exsúlta et lauda habitátio Sion, quia magnus in médio tui sanctus Israël.
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Dirupísti Dómine, * Víncula mea.
 R. Dirupísti Dómine, * Víncula mea.
 V. Tibi sacrificábo hóstiam laudis.
 R. Víncula mea
 &Gloria
 R. Dirupísti Dómine, * Víncula mea.
-_
-V. Erit Dóminus nominátus in signum ætérnum.
-R. Quod non auferétur.
 
 [Responsory NonaM] (rubrica cisterciensis)
-@:Responsory Nona:8-9
+@:Versum Nona
+
+[Versum Nona]
+V. Erit Dóminus nominátus in signum ætérnum.
+R. Quod non auferétur.
 
 [Ant Vespera 3] (rubrica cisterciensis)
 @:Ant Vespera:s/;;115/;;127/ s/;;111/;;115/

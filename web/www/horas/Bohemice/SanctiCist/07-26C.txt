@@ -1,10 +1,6 @@
 [Name]
 Anny
 
-[Oratio]
-Bože, jenž jsi svaté Anně ráčil udělit milost, aby se mohla stát Matkou Rodičky tvého Jednorozeného Syna; uděl laskavě, abychom, když slavíme její slavnost, obdrželi pomoc jejích přímluv u tebe.
-$Per eumdem
-
 [Responsory Vespera 1] (rubrica altovadensis)
 R. Blažené pokolení, z něhož se Maria narodila.
 * Ó, jak slavná je matka, jež nebes Královnu zrodila!
@@ -41,38 +37,9 @@ Amen.
 [Ant 1]
 Raduj se, * matko velké dcery, z tebe nám totiž vzešla jitřní hvězna nejvyššího slunce.
 
-[Hymnus Laudes]
-v. Radostmi přejasného dne
-Oděla se matka Církev, 
-I Annu, ozdobu Židů, 
-Matkum Marie opěvá.
-_
-S krví laskavých králů
-Pojí se kněžští otcové,
-Přejasná Anna krásnými
-Přemáhá rod svými ctnostmi. 
-_
-Cœlo favente, cóntrahit 
-Thori fidélis vínculum: 
-Effœta dudum córpore
-Prolem beátam cóncipit.
-_
-Audit monéntis Angeli
-Felix parens oráculum:
-Castóque format péctore
-Perénne sidus vírginum.
-_
-Deo Patri sit glória,
-Ejúsque soli Fílio,
-Cum Spíritu Paráclito,
-Et nunc, et in perpétuum.
-Amen.
-
-[Ant 2]
-Nebeské dobro * vstoupilo do Anny, a z ní se nám narodila laskavá Panna Maria.
-
-[Ant 3]
-Raduj se, rodičko * Marie, jež jako Panna porodila Boha, a je Matkou Mesiáše.
+[Oratio]
+Bože, jenž jsi svaté Anně ráčil udělit milost, aby se mohla stát Matkou Rodičky tvého Jednorozeného Syna; uděl laskavě, abychom, když slavíme její slavnost, obdrželi pomoc jejích přímluv u tebe.
+$Per eumdem
 
 [Hymnus Matutinum]
 v. Plodnou tu z Jesse kořene
@@ -109,6 +76,36 @@ Amen.
 @Sancti/07-26:Lectio5:s/.*(Společnou)/$1/ s/$/~/
 @Sancti/07-26:Lectio6:s/jménem;.*/jménem.“/
 
+[Hymnus Laudes]
+v. Radostmi přejasného dne
+Oděla se matka Církev, 
+I Annu, ozdobu Židů, 
+Matkum Marie opěvá.
+_
+S krví laskavých králů
+Pojí se kněžští otcové,
+Přejasná Anna krásnými
+Přemáhá rod svými ctnostmi. 
+_
+Cœlo favente, cóntrahit 
+Thori fidélis vínculum: 
+Effœta dudum córpore
+Prolem beátam cóncipit.
+_
+Audit monéntis Angeli
+Felix parens oráculum:
+Castóque format péctore
+Perénne sidus vírginum.
+_
+Deo Patri sit glória,
+Ejúsque soli Fílio,
+Cum Spíritu Paráclito,
+Et nunc, et in perpétuum.
+Amen.
+
+[Ant 2]
+Nebeské dobro * vstoupilo do Anny, a z ní se nám narodila laskavá Panna Maria.
+
 [Capitulum Sexta]
 !Isa 56:7
 v. I will bring them into my holy mount, and will make them joyful in my house of prayer: their holocausts, and their victims shall please me upon my altar.
@@ -118,3 +115,6 @@ $Deo gratias
 !Eccli. 2:19
 v. They that fear the Lord, will seek after the things that are well pleasing to him: and they that love him, shall be filled with his law.
 $Deo gratias
+
+[Ant 3]
+Raduj se, rodičko * Marie, jež jako Panna porodila Boha, a je Matkou Mesiáše.

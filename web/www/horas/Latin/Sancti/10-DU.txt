@@ -123,16 +123,21 @@ _
 Ego autem * constitútus sum Rex ab eo super Sion montem sanctum ejus, prǽdicans præcéptum ejus.;;2
 Glória * et honóre coronásti eum, Dómine: ómnia subjecísti sub pédibus ejus.;;8
 Elevámini, * portæ æternáles, et introíbit Rex glóriæ.;;23
-V. Data est mihi omnis potéstas.
-R. In cælo et in terra.
 Sedébit * Dóminus Rex in ætérnum: Dóminus benedícet pópulo suo in pace.;;28
 Virga directiónis, * virga regni tui: proptérea pópuli confitebúntur tibi in ætérnum, et in sǽculum sǽculi.;;44
 Psállite * Regi nostro, psállite: quóniam Rex magnus super omnem terram.;;46
-V. Afférte Dómino, famíliæ populórum.
-R. Afférte Dómino glóriam et impérium.
 Benedicéntur in ipso * omnes tribus terræ; omnes gentes magnificábunt eum.;;71
 Et ego primogénitum * ponam illum: excélsum præ régibus terræ.;;88(2-30)
 Thronus ejus * sicut sol in conspéctu meo: et sicut luna perfécta in ætérnum.;;88(31-53)
+
+[Nocturn 1 Versum]
+@:Versum 1
+
+[Nocturn 2 Versum]
+V. Afférte Dómino, famíliæ populórum.
+R. Afférte Dómino glóriam et impérium.
+
+[Nocturn 3 Versum]
 V. Adorábunt eum omnes reges terræ.
 R. Omnes gentes sérvient ei.
 
@@ -308,48 +313,48 @@ v. In ipso complácuit omnem plenitúdinem inhabitáre, et per eum reconciliáre
 [Versum Prima]
 Qui primátum in ómnibus tenes.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Data est mihi * Omnis potéstas.
 R. Data est mihi * Omnis potéstas.
 V. In cælo et in terra.
 R. Omnis potéstas.
 &Gloria
 R. Data est mihi * Omnis potéstas.
-_
-V. Afférte Dómino, famíliæ populórum.
-R. Afférte Dómino glóriam et impérium.
+
+[Versum Tertia]
+@:Nocturn 2 Versum
 
 [Capitulum Sexta]
 !Col 1;16-18
 v. Omnia per ipsum et in ipso creáta sunt, et ipse est ante omnes, et ómnia in ipso constant. Et ipse est caput córporis Ecclésiæ, qui est princípium, primogénitus ex mórtuis, ut sit in ómnibus ipse primátum tenens.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Afférte Dómino, * Famíliæ populórum.
 R. Afférte Dómino, * Famíliæ populórum.
 V. Afférte Dómino glóriam et impérium.
 R. Famíliæ populórum.
 &Gloria
 R. Afférte Dómino, * Famíliæ populórum.
-_
-V. Adorábunt eum omnes reges terræ.
-R. Omnes gentes sérvient ei.
+
+[Versum Sexta]
+@:Nocturn 3 Versum
 
 [Capitulum Nona]
 !Col 1:19-20
 v. In ipso complácuit omnem plenitúdinem inhabitáre, et per eum reconciliáre ómnia in ipsum, pacíficans per sánguinem crucis ejus sive quæ in terris, sive quæ in cælis sunt, in Christo Jesu Dómino nostro.
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Adorábunt eum * Omnes reges terræ.
 R. Adorábunt eum * Omnes reges terræ.
 V. Omnes gentes sérvient ei.
 R. Omnes reges terræ.
 &Gloria
 R. Adorábunt eum * Omnes reges terræ.
-_
-V. Multiplicábitur ejus impérium.
-R. Et pacis non erit finis.
+
+[Versum Nona]
+@:Versum 2
 
 [Versum 3]
 @:Versum 2

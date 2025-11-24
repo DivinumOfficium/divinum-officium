@@ -7,12 +7,15 @@ Beatæ Mariæ Virginis a Rosario;;Duplex;;3;;ex C11
 12 lectiones
 
 [Responsory Vespera]
-@Sancti/10-07:Responsory Sexta:s/._.*//s
+@Sancti/10-07:Responsory Breve Sexta
 
 [AntMatutinumM]
 Conservábat María * ómnia verba hæc, cþnferens in corde suo.;;47
 Crucis impérium * super húmerum ejus: livóre ejus sanáti sumus.;;96
 Dícite * in géntibus: quia Dóminus regnávit a ligno;;97
+
+[Ant Matutinum 3N]
+@Sancti/12-08:Responsory3:3 s/V. // s/, /$&*
 
 [Ant Matutinum]
 @Sancti/10-07::1-5
@@ -20,9 +23,6 @@ Dícite * in géntibus: quia Dóminus regnávit a ligno;;97
 @Sancti/10-07::6-9 s/86/84/ s/95/86/ s/96/95/
 @:AntMatutinumM:2-3
 ;;249;250;251
-
-[Ant Matutinum 3N]
-@Sancti/12-08:Responsory3:3 s/V. // s/, /$&*
 
 [Lectio1]
 @Sancti/10-07::1-5 s/-16/-13/
@@ -54,6 +54,11 @@ R. Cunctas hǽreses sola interemísti in univérso mundo.
 
 [Responsory6]
 @Sancti/10-07:Responsory5
+
+[Lectio94]
+@Sancti/10-07:Lectio7:s/.*_//s s/!.*//s
+@Sancti/10-07:Lectio8_1: s/$/~/
+@Sancti/10-07:Lectio8_2
 
 [Lectio7]
 @Sancti/10-07:Lectio6:s/ Quam .*//
@@ -97,18 +102,13 @@ R. Ne tímeas, María, † invenísti enim grátiam apud Dóminum:
 V. Spiritus Sanctus supervéniet in te, et virtus Altíssimi obumbrávit tibi.
 R. Ecce concípies, et páries, et vocábis nomen ejus Jesus.
 
-[Lectio94]
-@Sancti/10-07:Lectio7:s/.*_//s s/!.*//s
-@Sancti/10-07:Lectio8_1: s/$/~/
-@Sancti/10-07:Lectio8_2
-
 [MM Capitulum]
 @Sancti/10-07:Capitulum Sexta
 _
 @Sancti/10-07:Nocturn 2 Versum
 
 [Responsory Laudes]
-@Sancti/10-07:Responsory Nona:s/._.*//s
+@Sancti/10-07:Responsory Breve Nona
 
 [Hymnus Laudes]
 @Sancti/10-07::s/Nat/NatT/

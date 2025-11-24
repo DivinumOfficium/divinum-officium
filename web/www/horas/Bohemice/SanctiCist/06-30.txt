@@ -8,6 +8,15 @@ Běž, Ananiáši, * a najdi Saula, hle, on se již modlí; neboť je to má vyv
 [Responsory2] (rubrica cisterciensis)
 @:Responsory8_
 
+[Lectio3] (rubrica cisterciensis)
+@Sancti/06-30:Lectio2:1:s/5-8/6-8/
+@Sancti/06-30:Lectio2:3-5
+
+[Lectio4]
+@Sancti/06-30:Lectio3:!2-3 s/9-/11-/ s/ .*?(?= Et)//
+(sed rubrica cisterciensis)
+@Sancti/06-30:Lectio3:1-5:s/9-13/9-12/
+
 [Responsory4_]
 R. Slyšeli jste totiž o mém jednání ještě když jsem byl Židem, neboť jsem byl úspěšnější
 * Než mnoho mých vrstevníků v mém rodu. 
@@ -19,26 +28,11 @@ R. Než mnoho mých vrstevníků v mém rodu.
 (sed rubrica cisterciensis)
 @:Responsory12_
 
-[Lectio3] (rubrica cisterciensis)
-@Sancti/06-30:Lectio2:1:s/5-8/6-8/
-@Sancti/06-30:Lectio2:3-5
-
-[Lectio4]
-@Sancti/06-30:Lectio3:!2-3 s/9-/11-/ s/ .*?(?= Et)//
-(sed rubrica cisterciensis)
-@Sancti/06-30:Lectio3:1-5:s/9-13/9-12/
-
 [Lectio5]
 @Sancti/06-30:Lectio4:s/ Pohleďte.*//s
 
 [Lectio6]
 @Sancti/06-30:Lectio4:s/.* (?=Pohleďte)//s
-
-[Lectio7]
-@Sancti/06-30:Lectio5
-
-[Lectio8]
-@Sancti/06-30:Lectio6
 
 [Responsory6] (rubrica cisterciensis)
 R. Když se však zalíbilo tomu, jenž si mě oddělil z lůna mé matky a povolal mě svou milostí, aby zjevil svého Syna skrze mě,
@@ -46,11 +40,22 @@ R. Když se však zalíbilo tomu, jenž si mě oddělil z lůna mé matky a povo
 V. Ihned jsem se neradil s tělem a krví, ani jsem nešel do Jerusaléma k předchůdcům svým Apoštolům,
 R. Abych jej hlásal mezi Pohany.
 
+[Lectio7]
+@Sancti/06-30:Lectio5
+
+[Lectio8]
+@Sancti/06-30:Lectio6
+
 [Responsory8_]
 R. Vím, komu jsem uvěřil, a jsem si jistý, že má moc zachovat můj poklad.
 * Do onoho dne, spravedlivý soudce.
 V. Uložena je mi koruna spravedlnosti, kterou mi nasadí Hospodin.
 R. Do onoho dne, spravedlivý soudce.
+
+[Responsory8]
+@:Responsory8_
+(sed rubrica cisterciensis)
+@:Responsory8C
 
 [Responsory8C]
 R. Saul však čím dál více nabýval síly, a uváděl v rozpak Židy, kteří přebývali v Damašku,
@@ -58,13 +63,14 @@ R. Saul však čím dál více nabýval síly, a uváděl v rozpak Židy, kteř�
 V. A hned, jak vešel Pavel do synagogy, hlásal Ježíše,
 R. Tvrdil, že on je Kristus, Pomazaný.
 
-[Responsory8]
-@:Responsory8_
-(sed rubrica cisterciensis)
-@:Responsory8C
-
 [Lectio9]
 @Sancti/06-30:Lectio7
+
+[Responsory9] (rubrica cisterciensis)
+R. Aby mne nevynášela velikost zjevení, dán mi byl trn do těla, posel satanův, jenž mne má políčkovat, a třikrát jsem prosil Pána, aby byl ode mne odňat; avšak Pán mi řekl: Stačí ti, Pavle, má milost.
+* Neboť ctnost se zdokonaluje ve slabosti.
+V. Rád se tedy budu chlubit ve svých slabostech, aby ve mě přebývala síla Kristova.
+R. Neboť ctnost se zdokonaluje ve slabosti.
 
 [Lectio10]
 @Sancti/06-30:Lectio8:s/Proto.*//
@@ -72,12 +78,6 @@ R. Tvrdil, že on je Kristus, Pomazaný.
 [Lectio11]
 @Sancti/06-30:Lectio8:s/.* (?=Proto)// s/$/~/
 @Sancti/06-30:Lectio9:s/ Neboť.*//
-
-[Responsory9] (rubrica cisterciensis)
-R. Aby mne nevynášela velikost zjevení, dán mi byl trn do těla, posel satanův, jenž mne má políčkovat, a třikrát jsem prosil Pána, aby byl ode mne odňat; avšak Pán mi řekl: Stačí ti, Pavle, má milost.
-* Neboť ctnost se zdokonaluje ve slabosti.
-V. Rád se tedy budu chlubit ve svých slabostech, aby ve mě přebývala síla Kristova.
-R. Neboť ctnost se zdokonaluje ve slabosti.
 
 [Responsory11]
 R. Veliký je svatý Pavel, nádoba vyvolená, a vpravdě je hoden oslavení.
@@ -96,13 +96,13 @@ R. Žít je pro mě Kristus, a zemřít výhra;
 V. Skrze něj je mi svět ukřižován, a já světu.
 R. Chlubit se mi náleží pouze v kříži mého Pána Ježíše Krista.
 
+[Responsory12]
+@:Responsory12_
+(sed rubrica cisterciensis)
+@:Responsory12C
+
 [Responsory12C]
 R. Svatý Pavle Apoštole, hlasateli pravdy a Učiteli Národů,
 * Přimlouvej se za nás u Boha, který si tě vyvolil,
 V. Abychom hodnými byli učiněni milosti Boží.
 R. Přimlouvej se za nás u Boha, který si tě vyvolil.
-
-[Responsory12]
-@:Responsory12_
-(sed rubrica cisterciensis)
-@:Responsory12C

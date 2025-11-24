@@ -89,9 +89,6 @@ Duódecim * paupéribus ad mensam invitátis, † Angelum Dómini convívam tred
 [Lectio12]
 @Sancti/03-12:Lectio9:s/.*(Coróna)/$1/s
 
-[Evangelium]
-@Commune/C4b
-
 [Ant Laudes]
 Beátus Gregórius * in cáthedra Petri sublimátus, Vigilántis nomen factis implévit.
 Pastor exímius * pastorális vitæ spécimen trádidit et régulam.
@@ -152,3 +149,6 @@ Gregórius, * monachórum spéculum, pater Urbis, orbis delíciæ.;;131
 
 [Ant 3]
 @Commune/C4a:Ant 1:s/N\./Gregóri/
+
+[Evangelium]
+@Commune/C4b

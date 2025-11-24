@@ -5,15 +5,26 @@ Purissimi Cordis BMV;;Duplex II classis;;6;vide C11
 Doxology=Nat
 Antiphonas horas
 
-[Ant 1]
-Exsultávit Cor meum in Dómino * et exaltatum est cornu meum in Deo meo, quia láetata sum in salutári tuo.
-
 [Ant Vespera]
 @:Ant Laudes:s/$/_/gm s/_/;;109/ s/_/;;112/ s/_/;;121/ s/_/;;126/ s/_//
+
+[Responsory Vespera]
+R.br. Factum est cor meum * tamquam cera liquéscens.
+R. Factum est cor meum * tamquam cera liquéscens.
+V. In médio ventris mei.
+R. Tamquam cera liquéscens.
+&Gloria
+R. Factum est cor meum * tamquam cera liquéscens.
 
 [Versus 1]
 V. Exulta in omni corde, filia Jerúsalem.
 R. Rex Israël Dóminus in medio tui.
+
+[Ant 1]
+Exsultávit Cor meum in Dómino * et exaltatum est cornu meum in Deo meo, quia láetata sum in salutári tuo.
+
+[Oratio]
+@Sancti/08-22::s/immaculáti/puríssimi/
 
 [Ant Laudes]
 Trahe me * post te currémus in odórem unguentórum tuórum.
@@ -41,9 +52,6 @@ R. Et háuriet salútem a Dómino
 [Ant 2]
 Extóllens * quædam múlier vocem de turba dixit: Beátus venter qui te portávit, et úbera quæ suxísti.
 
-[Oratio]
-@Sancti/08-22::s/immaculáti/puríssimi/
-
 [Responsory TertiaM]
 R. Anima mea liquefácta est
 V. Ut locútus est diléctus.
@@ -65,17 +73,9 @@ $Deo gratias
 R. Ego dilécto meo.
 V. Et ad me convérsio ejus.
 
-[Responsory Vespera]
-R.br. Factum est cor meum * tamquam cera liquéscens.
-R. Factum est cor meum * tamquam cera liquéscens.
-V. In médio ventris mei.
-R. Tamquam cera liquéscens.
-&Gloria
-R. Factum est cor meum * tamquam cera liquéscens.
-
-[Ant 3]
-Exsultávit Cor meum: * in Deo, salutári meo, quia fecit mihi magna qui potens est.
-
 [Versum 3]
 V. Viam mandatórum tuórum cucúrri.
 R. Cum dilatásti Cor meum.
+
+[Ant 3]
+Exsultávit Cor meum: * in Deo, salutári meo, quia fecit mihi magna qui potens est.

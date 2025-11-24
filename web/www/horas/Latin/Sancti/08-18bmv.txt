@@ -14,17 +14,11 @@ Doxology=Nat
 [Ant Vespera] (rubrica cisterciensis)
 @Sancti/08-15t::s/;;.*//g
 
-[Ant 1] (rubrica cisterciensis)
-@Sancti/08-16bmv
-
-[Ant 2] (rubrica cisterciensis)
-@Sancti/08-16bmv
-
 [Versum 1] (rubrica cisterciensis)
 @SanctiM/08-15
 
-[Versum 2] (rubrica cisterciensis)
-@:Versum 1
+[Ant 1] (rubrica cisterciensis)
+@Sancti/08-16bmv
 
 [Lectio1]
 De Canticis canticorum
@@ -64,6 +58,13 @@ De Canticis canticorum
 @Sancti/08-15:Responsory3
 (sed rubrica 1955 omittitur)
 
+[Lectio4]
+@:Lectio4r
+(sed rubrica tridentina aut rubrica 1939)
+@:Lectio4t
+(sed rubrica 1570)
+@:Lectio4o
+
 [Lectio4o]
 Sermo sancti Joannis Damasceni
 !Orat. 2 de drom. Deiparæ
@@ -79,15 +80,15 @@ De Sermone sancti Joannis Damasceni
 !Orat. 2 de Dormitione Deiparæ, sub finem
 Ex antíqua accépimus traditióne, quod témpore gloriósæ dormitiónis beátæ Virginis, univérsi quidem sancti Apóstoli, qui orbem terræ ad salútem Géntium peragrábant, moménto témporis in sublíme eláti, convenérunt Jerosólymis. Cumque illic essent, eis vísio appáruit angélica, et audíta est psalmodía cæléstium Potestátum; et sic cum divína glória in manus Dei sanctam trádidit ánimam. Ejus autem corpus, quod Deum ineffábili quadam ratióne suscépit, cum angélica et apostólica hymnodía elátum, in lóculo fuit depósitum Gethsemane; quo in loco Angelórum cantus mansit tres dies contínuos.
 
-[Lectio4]
-@:Lectio4r
-(sed rubrica tridentina aut rubrica 1939)
-@:Lectio4t
-(sed rubrica 1570)
-@:Lectio4o
-
 [Responsory4]
 @Sancti/08-15:Responsory4
+
+[Lectio5]
+@:Lectio5r
+(sed rubrica tridentina aut rubrica 1939)
+@:Lectio5t
+(sed rubrica 1570)
+@:Lectio5o
 
 [Lectio5o]
 Tu vero o sacrorum sepulcrorum sacratissimum, post domini quidem sepulcrum, quod uitæ dedit principium, quod fuit fons resurrectionis, (tecum enim loquar tamquam cum animato) ubinam est aurum illud purum, quod manus apostolorum in te condiderunt! Ubi divitiæ, quæ consumi nequeunt! Ubi novum uolumen, in quo ineffabiliter deus uerbum sine manu inscriptum fuit! Ubi abyssus gratiæ? Ubi pelagus curationum? Ubi est desiderabile illud deiparæ uirginis corpus?
@@ -98,15 +99,15 @@ Maxime autem illud memorandum est, inde a sæculo secundo, Mariam Virginem a san
 [Lectio5t]
 Post tres autem dies angélico cantu cessante, qui áderant Apóstoli (cum unus Thomas, qui abfúerat, post tértium diem venísset, et, quod Deum suscéperat, corpus adoráre voluísset), túmulum aperuérunt; sed omni ex parte sacrum ejus corpus nequáquam inveníre potuérunt. Cum ea autem tantum inveníssent, in quibus fúerat compósitum, et ineffabili, qui ex iis proficiscebátur, essent odóre repléti, lóculum clausérunt. Ejus mystérii obstupefácti miráculo, hoc solum cogitáre potuerunt, quod, cui plácuit ex María Vírgine carnem súmere, et hóminem fíeri et nasci, cum esset Deus Verbum, et Dóminus glóriæ, quique post partum incorrúptam servávit ejus virginitátem; eídem étiam plácuit, et ipsíus, postquam migrávit, immaculátum corpus, incorrúptum servátum, translatióne honoráre ante commúnem et universálem resurrectiónem.
 
-[Lectio5]
-@:Lectio5r
-(sed rubrica tridentina aut rubrica 1939)
-@:Lectio5t
-(sed rubrica 1570)
-@:Lectio5o
-
 [Responsory5]
 @Sancti/08-15:Responsory5
+
+[Lectio6]
+@:Lectio6r
+(sed rubrica tridentina aut rubrica 1939)
+@:Lectio6t
+(sed rubrica 1570)
+@:Lectio6o
 
 [Lectio6o]
 Quid quæritis in sepulcro eam, quæ ad cælestia translata est tabernacula? cur a me custodiæ rationem exposcitis? Non possum ego divinis jussis resistere. Sacrosanctum corpus mihi quoque sanctitatem impertivit quod me pretiosissimi unguenti fragrantia replevit, et divinum templum effecit relictis sindonibus, abiit raptum sublime, comitantibus angelis, archangelis, et omnibus cælestibus potentiis. Nunc me circumdant angeli; nunc divina in me habitat gratia. Ergo evasi officina medicinæ ægrotantibus. Ego sum fons perennis curationum: Ego remedium aduersus dæmones: Ego civitas refugii omnibus ad me confugientibus.
@@ -116,13 +117,6 @@ Idcirco augusta Dei Mater, Jesu Christo, inde ab omni æternitate, « uno eodemq
 
 [Lectio6t]
 Aderant tunc cum Apóstolis sanctíssimus Timotheus, primus epíscopus Ephesiórum, et Dionysius Areopagíta, sicut ipse testátur in iis, quæ de beáto Hierótheo, qui ipse quoque tunc áderat, scripsit ad prædíctum Timótheum, sic dicens: Nam étiam apud ipsos a Deo afflátos Sacrórum antístites, quando nos quoque, ut nosti, et multi ex sanctis nostris frátribus, ad contuéndum corpus, quod Vitæ princípium dedit, et Deum suscépit, convenissémus (áderat autem et Dómini frater Jacóbus, et Petrus, supréma et antiquíssima theologórum súmmitas): et viso sacro córpore, plácuit ómnibus, prout quisque póterat, hymnis celebráre infínitam bonitátem divínæ poténtiæ.
-
-[Lectio6]
-@:Lectio6r
-(sed rubrica tridentina aut rubrica 1939)
-@:Lectio6t
-(sed rubrica 1570)
-@:Lectio6o
 
 [Responsory6]
 @Sancti/08-15:Responsory6
@@ -156,3 +150,9 @@ Circa unum Maria se voluit occupari. Jam tenebat: Mihi autem adhærere Deo bonum
 
 [Responsory8]
 @Sancti/08-15:Responsory8
+
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
+[Ant 2] (rubrica cisterciensis)
+@Sancti/08-16bmv

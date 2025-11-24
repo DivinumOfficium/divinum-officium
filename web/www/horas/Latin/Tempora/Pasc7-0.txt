@@ -9,13 +9,15 @@ Dominica Pentecostes
 Psalmi Dominica;
 Antiphonas horas
 Prima=53
+Psalm5 Vespera=116
+Psalm5 Vespera3=113
 
 [Ant Vespera]
 Cum compleréntur * dies Pentecóstes, erant omnes páriter in eódem loco, allelúja.
 Spíritus Dómini * replévit orbem terrárum, allelúja.
 Repléti sunt omnes * Spíritu Sancto, et cœpérunt loqui, allelúja, allelúja.
 Fontes, et ómnia * quæ movéntur in aquis, hymnum dícite Deo, allelúja.
-Loquebántur * váriis linguis Apóstoli magnália Dei, allelúja, allelúja, allelúja.;;116
+Loquebántur * váriis linguis Apóstoli magnália Dei, allelúja, allelúja, allelúja.
 
 [Hymnus Vespera]
 @Psalterium/Special/Minor Special:Hymnus Pasc7 Tertia
@@ -145,6 +147,15 @@ Emítte Spíritum tuum, * et creabúntur: et renovábis fáciem terræ, allelúj
 V. Spíritus Dómini replévit orbem terrárum, allelúja.
 R. Et hoc quod cóntinet ómnia, sciéntiam habet vocis, allelúja.
 
+[Nocturn 1 Versum] (rubrica cisterciensis)
+@Tempora/Pasc7-0:Ant Matutinum:4-5
+
+[Nocturn 2 Versum] (rubrica cisterciensis)
+@Tempora/Pasc7-0:Versum Sexta
+
+[Nocturn 3 Versum] (rubrica cisterciensis)
+@Tempora/Pasc7-0:Versum Tertia
+
 [Lectio1]
 Léctio sancti Evangélii secúndum Joánnem
 !Joannes 14:23-31
@@ -176,7 +187,7 @@ Et Pater meus díliget eum, et ad eum veniémus, et mansiónem apud eum faciému
 &teDeum
 
 [Ant Laudes]
-@:Ant Vespera:s/;.*//
+@:Ant Vespera
 
 [Capitulum Laudes]
 !Act. 2:1-2
@@ -184,7 +195,7 @@ v. Cum compleréntur dies Pentecóstes, erant omnes discípuli páriter in eóde
 $Deo gratias
 
 [Responsory Laudes] (rubrica cisterciensis)
-@:Responsory Nona
+@:Responsory Breve Nona
 
 [Hymnus Laudes]
 {:H-Beatanobisgaudia:}v. Beáta nobis gáudia
@@ -230,7 +241,7 @@ Amen.
 @:Versum 1
 
 [Versum 2] (rubrica cisterciensis)
-@:Responsory Nona:8-9
+@:Versum Nona
 
 [Ant 2]
 Accípite * Spíritum Sanctum: quorum remiséritis peccáta, remittúntur eis, allelúja.
@@ -239,14 +250,15 @@ Accípite * Spíritum Sanctum: quorum remiséritis peccáta, remittúntur eis, a
 !Act. 2:11
 v. Judǽi quoque et Prosélyti, Cretes et Arabes: audívimus eos loquéntes nostris linguis magnália Dei.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Spíritus Dómini replévit orbem terrárum, * Allelúja, allelúja.
 R. Spíritus Dómini replévit orbem terrárum, * Allelúja, allelúja.
 V. Et hoc quod cóntinet ómnia, sciéntiam habet vocis.
 R. Allelúja, allelúja.
 &Gloria
 R. Spíritus Dómini replévit orbem terrárum, * Allelúja, allelúja.
-_
+
+[Versum Tertia]
 V. Spíritus Paráclitus, allelúja.
 R. Docébit vos ómnia, allelúja.
 
@@ -255,31 +267,31 @@ R. Docébit vos ómnia, allelúja.
 v. Facta autem hac voce, convénit multitúdo, et mente confúsa est, quóniam audiébat unusquísque lingua sua illos loquéntes.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Spíritus Paráclitus, * Allelúja, allelúja.
 R. Spíritus Paráclitus, * Allelúja, allelúja.
 V. Docébit vos ómnia. 
 R. Allelúja, allelúja.
 &Gloria
 R. Spíritus Paráclitus, * Allelúja, allelúja.
-_
-V. Repléti sunt omnes Spíritu Sancto, allelúja.
-R. Et cœpérunt loqui, allelúja.
+
+[Versum Sexta]
+@:Versum 1
 
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Repléti sunt omnes Spíritu Sancto, * Allelúja, allelúja.
 R. Repléti sunt omnes Spíritu Sancto, * Allelúja, allelúja.
 V. Et cœpérunt loqui.
 R. Allelúja, allelúja.
 &Gloria
 R. Repléti sunt omnes Spíritu Sancto, * Allelúja, allelúja.
-_
-V. Loquebántur váriis linguis Apóstoli, allelúja.
-R. Magnália Dei, allelúja.
+
+[Versum Nona]
+@:Versum 3
 
 [Ant Vespera 3]
 @:Ant Vespera:s/;.*//
@@ -293,12 +305,3 @@ R. Magnália Dei, allelúja.
 
 [Ant 3]
 Hódie * compléti sunt dies Pentecóstes, allelúja: hódie Spíritus Sanctus in igne discípulis appáruit, et tríbuit eis charísmatum dona: misit eos in univérsum mundum prædicáre, et testificári: Qui credíderit et baptizátus fúerit, salvus erit, allelúja.
-
-[Nocturn 1 Versum] (rubrica cisterciensis)
-@Tempora/Pasc7-0:Ant Matutinum:4-5
-
-[Nocturn 2 Versum] (rubrica cisterciensis)
-@Tempora/Pasc7-0:Responsory Sexta:8-9
-
-[Nocturn 3 Versum] (rubrica cisterciensis)
-@Tempora/Pasc7-0:Responsory Tertia:8-9

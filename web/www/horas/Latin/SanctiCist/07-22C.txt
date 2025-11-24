@@ -38,26 +38,26 @@ Venit María * núntians discípulis, quia vidi Dóminum, allelúia.
 [Lectio1]
 @SanctiM/07-22
 
-[Lectio2]
-@SanctiM/07-22
-
-[Lectio3]
-@SanctiM/07-22
-
-[Lectio4]
-@SanctiM/07-22
-
 [Responsory1]
 R. María Magdaléne, et áltera María ibant dilúculo ad monuméntum, et dicit illis Angelus: Quem quǽritis non est hic, surréxit sicut locútus est:
 * Præcédet vos in Galilǽam, ibi eum vidébitis.
 V. Cito eúntes dícite discípulis ejus, et Petro, quia surréxit Dóminus:
 R. Præcédet vos in Galilǽam, ibi eum vidébitis.
 
+[Lectio2]
+@SanctiM/07-22
+
 [Responsory2]
 @CommuneCist/C6:Responsory1
 
+[Lectio3]
+@SanctiM/07-22
+
 [Responsory3]
 @CommuneCist/C6:Responsory2
+
+[Lectio4]
+@SanctiM/07-22
 
 [Responsory4]
 R. Dum transísset Sábbatum, María Magdaléne, et María Jacóbi, et Salóme emérunt arómata,
@@ -68,24 +68,24 @@ R. Ut veniéntes úngerent Jesum.
 [Lectio5]
 @Sancti/07-22:Lectio4:s/Unde .*//
 
+[Responsory5]
+@CommuneCist/C6:Responsory3
+
 [Lectio6]
 @Sancti/07-22:Lectio5:s/Diléctum .*//s
+
+[Responsory6]
+@CommuneCist/C6:Responsory11
 
 [Lectio7]
 @Sancti/07-22:Lectio5:s/.* (Diléctum )/$1/ s/$/~/
 @Sancti/07-22:Lectio6:s/Quæréntes.*// s/; per .* exquírat//
 
-[Lectio8]
-@Sancti/07-22:Lectio6:s/.* (Quæréntes)/$1/
-
-[Responsory5]
-@CommuneCist/C6:Responsory3
-
-[Responsory6]
-@CommuneCist/C6:Responsory11
-
 [Responsory7]
 @CommuneCist/C6:Responsory5
+
+[Lectio8]
+@Sancti/07-22:Lectio6:s/.* (Quæréntes)/$1/
 
 [Responsory8]
 @CommuneCist/C7
@@ -93,35 +93,32 @@ R. Ut veniéntes úngerent Jesum.
 [Lectio9]
 @SanctiM/07-22
 
-[Lectio10]
-@SanctiM/07-22
-
-[Lectio11]
-@SanctiM/07-22
-
-[Lectio12]
-@Sancti/07-22:Lectio9:s/Hæc enim .* mundus sum.//
-
 [Responsory9]
 R. Tulérunt Dóminum meum, et néscio, ubi posuérunt eum: ait ei Angelus: 
 * Noli flére, Maria, surréxit sicut dixit, præcédet vos in Galilǽam, ibi eum vidébitis.
 V. Dum ergo fleret, inclinávit se, et prospéxit in monuméntum: et vidit duos Angelos in albis, sedéntes, qui dicunt ei.
 R. Noli flére, Maria, surréxit sicut dixit, præcédet vos in Galilǽam, ibi eum vidébitis.
 
+[Lectio10]
+@SanctiM/07-22
+
 [Responsory10]
 @CommuneCist/C6
 
+[Lectio11]
+@SanctiM/07-22
+
 [Responsory11]
 @CommuneCist/C6:Responsory12
+
+[Lectio12]
+@Sancti/07-22:Lectio9:s/Hæc enim .* mundus sum.//
 
 [Responsory12]
 R. Et valde mane una Sabbatórum véniunt ad monuméntum,
 * Orto jam sole.
 V. María Magdaléne, et María Jacóbi, et Salóme venérunt dilúculo ad monuméntum,
 R. Orto jam sole.
-
-[Evangelium]
-@Tempora/Quad5-4
 
 [MM Capitulum]
 @CommuneM/C7a
@@ -140,3 +137,6 @@ R. Orto jam sole.
 
 [Ant 3]
 @Tempora/Pasc0-4:Ant 3
+
+[Evangelium]
+@Tempora/Quad5-4

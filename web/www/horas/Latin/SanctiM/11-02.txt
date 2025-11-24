@@ -20,6 +20,13 @@ Requiem gloria
 [Oratio mortuorum2]
 @Sancti/11-02
 
+[Special Prima]
+#Psalmi
+@:Psalmi Prima_
+
+_
+@Sancti/11-02::s/.*&special\('O/&special('O/s
+
 [Psalmi Prima_]
 &psalm(1)
 (sed feria 3)
@@ -54,13 +61,6 @@ Requiem gloria
 &psalm(17,2,25)
 (sed feria 7)
 &psalm(19)
-
-[Special Prima]
-#Psalmi
-@:Psalmi Prima_
-
-_
-@Sancti/11-02::s/.*&special\('O/&special('O/s
 
 [Special Tertia]
 #Psalmi

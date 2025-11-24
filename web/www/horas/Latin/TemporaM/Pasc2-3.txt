@@ -13,7 +13,7 @@ Antiphonas horas
 Psalmi Dominica
 
 [Versum 1] (nisi rubrica cisterciensis)
-@Tempora/Pasc2-3:Responsory Tertia:s/.*_.//s
+@Tempora/Pasc2-3:Nocturn 1 Versum
 
 [Ant Matutinum]
 @Tempora/Pasc2-3::1-2
@@ -21,15 +21,13 @@ Psalmi Dominica
 ;;5
 ;;8
 ;;10
-@Tempora/Pasc2-3::4-5
-@Tempora/Pasc2-3::6 s/;;4/;;14/
+@Tempora/Pasc2-3::4 s/;;4/;;14/
 ;;20
 ;;23
 ;;95
 ;;96
 ;;97
-@Tempora/Pasc2-3::9-11 s/;;14/;;256;257;258/
-@Tempora/Pasc2-3::14-15
+@Tempora/Pasc2-3::7 s/;;14/;;256;257;258/
 
 [Lectio3]
 @Tempora/Pasc2-3:Lectio3:s/-49/-45a/ s/ Egréssus.*//s
@@ -91,14 +89,14 @@ Psalmi Dominica
 [Responsory12]
 @SanctiM/03-19
 
-[Evangelium]
-@Tempora/Pasc2-3
-
 [Responsory TertiaM] (nisi rubrica cisterciensis)
-@Tempora/Pasc2-3:Responsory Tertia:s/.*_.//s
+@Tempora/Pasc2-3:Nocturn 1 Versum
 
 [Responsory SextaM] (nisi rubrica cisterciensis)
-@Tempora/Pasc2-3:Responsory Sexta:s/.*_.//s
+@Tempora/Pasc2-3:Versum Sexta
 
 [Responsory NonaM] (nisi rubrica cisterciensis)
-@Tempora/Pasc2-3:Responsory Nona:s/.*_.//s
+@Tempora/Pasc2-3:Versum Nona
+
+[Evangelium]
+@Tempora/Pasc2-3

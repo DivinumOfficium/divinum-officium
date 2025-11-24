@@ -4,6 +4,9 @@
 3 lectio
 no secunda vespera (rubrica cisterciensis)
 
+[Responsory Vespera]
+@Commune/C1:Responsory Breve Tertia
+
 [Ant Matutinum]
 @Commune/C1::5 s/;;.*//
 ;;
@@ -12,6 +15,11 @@ no secunda vespera (rubrica cisterciensis)
 ;;
 ;;
 @Commune/C1::6 s/;;.*//
+;;
+;;
+;;
+;;
+;;
 
 [Lectio1]
 @Sancti/07-05oct:Lectio4
@@ -27,6 +35,3 @@ no secunda vespera (rubrica cisterciensis)
 
 [Responsory Laudes]
 @Commune/C1:Responsory Breve Sexta
-
-[Responsory Vespera]
-@Commune/C1:Responsory Breve Tertia

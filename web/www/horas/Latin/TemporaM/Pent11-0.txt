@@ -7,8 +7,16 @@
 @Tempora/Pent11-0:Lectio1:
 @Tempora/Pent11-0:Lectio2:s/!.*//:s/4 .*//s
 
+[Lectio1] (rubrica cisterciensis)
+@Tempora/Pent11-0:Lectio1:s/Flevit.*//
+
 [Lectio2]
 @Tempora/Pent11-0:Lectio2:s/-7/-6/ :s/7 .*//s
+
+[Lectio2] (rubrica cisterciensis)
+@Tempora/Pent11-0:Lectio1:2:s/1-3/3-5/
+@Tempora/Pent11-0:Lectio1:s/.*(Flevit)/3 $1/s
+@Tempora/Pent11-0:Lectio2:2-3:s/Dómini,/Dómini./
 
 [Lectio3]
 @Tempora/Pent11-0:Lectio2:s/-7/-8/ s/4-/7-/ s/[^!]4 .*7 /\n7 /s
@@ -16,14 +24,6 @@
 
 [Lectio4]
 @Tempora/Pent11-0:Lectio3:
-
-[Lectio1] (rubrica cisterciensis)
-@Tempora/Pent11-0:Lectio1:s/Flevit.*//
-
-[Lectio2] (rubrica cisterciensis)
-@Tempora/Pent11-0:Lectio1:2:s/1-3/3-5/
-@Tempora/Pent11-0:Lectio1:s/.*(Flevit)/3 $1/s
-@Tempora/Pent11-0:Lectio2:2-3:s/Dómini,/Dómini./
 
 [Responsory4]
 @Tempora/Pent03-1Feria:Responsory1

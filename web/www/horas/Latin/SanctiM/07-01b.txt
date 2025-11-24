@@ -3,19 +3,19 @@
 [Rank]
 Pretiosissimi Sanguinis Domini Nostri Jesu Christi;;Duplex;;3;;
 
-[Responsory Laudes]
-@:Responsory Nona
-
-[Responsory TertiaM]
-@Sancti/07-01:Responsory Tertia:8-9
-
-[Responsory SextaM]
-@Sancti/07-01:Responsory Sexta:8-9
-
-[Responsory NonaM]
-@Sancti/07-01:Responsory Nona:8-9
-
 [MM Capitulum]
 @:Capitulum Sexta
 _
 @:Responsory TertiaM
+
+[Responsory Laudes]
+@:Responsory Breve Nona
+
+[Responsory TertiaM]
+@Sancti/07-01:Nocturn 2 Versum
+
+[Responsory SextaM]
+@Sancti/07-01:Nocturn 3 Versum
+
+[Responsory NonaM]
+@Sancti/07-01:Versum 2

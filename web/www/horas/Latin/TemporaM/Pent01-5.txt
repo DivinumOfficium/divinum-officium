@@ -9,6 +9,7 @@ Psalmi Feria (rubrica cisterciensis)
 
 [Rule] (rubrica 196)
 
+
 [Ant Vespera]  (rubrica tridentina aut rubrica divino)
 @Tempora/Pent01-4::1-4
 
@@ -19,7 +20,7 @@ Psalmi Feria (rubrica cisterciensis)
 ;;
 ;;
 ;;
-@Tempora/Pent01-4::9-10
+@Tempora/Pent01-4:Nocturn 2 Versum
 @Tempora/Pent01-4::2 s/;;.*//
 ;;
 ;;
@@ -42,17 +43,7 @@ Allelúia, * allelúia, allelúia.
 ;;
 ;;
 
-[MM LB] (rubrica cisterciensis)
-!Psalm 77:23-25
-v. Mandávit Dóminus núbibus désuper: * et jánuas cæli apéruit. Et pluit illis manna ad manducándum: * et panem cæli dedit eis. Panem Angelórum manducávit homo, * cibária misit eis in abundántia.
-$Tu autem
-_
-R.br. Panis iste verus est, * Qui de cælo descéndit.
-R. Panis iste verus est, * Qui de cælo descéndit.
-V. Et dat vitam mundo.
-R. Qui de cælo descéndit.
-
-[Lectio1] 
+[Lectio1]
 @Tempora/Pent01-5:Lectio7
 
 [Responsory1]
@@ -78,3 +69,13 @@ _
 @Tempora/Pent01-4:Versum 2
 (sed rubrica cisterciensis)
 @TemporaM/Pent01-4:Responsory SextaM
+
+[MM LB] (rubrica cisterciensis)
+!Psalm 77:23-25
+v. Mandávit Dóminus núbibus désuper: * et jánuas cæli apéruit. Et pluit illis manna ad manducándum: * et panem cæli dedit eis. Panem Angelórum manducávit homo, * cibária misit eis in abundántia.
+$Tu autem
+_
+R.br. Panis iste verus est, * Qui de cælo descéndit.
+R. Panis iste verus est, * Qui de cælo descéndit.
+V. Et dat vitam mundo.
+R. Qui de cælo descéndit.

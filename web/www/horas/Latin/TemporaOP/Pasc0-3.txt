@@ -3,6 +3,9 @@
 [Rank]
 @Tempora/Pasc0-3
 
+[Oratio]
+@Tempora/Pasc0-3
+
 [Ant Matutinum]
 @TemporaOP/Pasc0-1::1 s/4/11/
 ;;12
@@ -29,16 +32,13 @@ V. Et unus de senióribus dixit mihi: Ne fléveris: dignus est Agnus, qui occís
 [Lectio3]
 @Tempora/Pasc0-3
 
-[Responsory3] 
+[Responsory3]
 R. Surréxit Pastor bonus, qui pósuit ánimam suam pro óvibus suis,
 * Et pro suo grege mori dignátus est, Allelúja, allelúja.
 V. Etenim Pascha nostrum immolátus est Christus. 
 R. Et pro suo grege mori dignátus est, Allelúja, allelúja.
 &Gloria
 V. Alleluja, allelúja.
-
-[Oratio]
-@Tempora/Pasc0-3
 
 [Ant 2]
 @Tempora/Pasc0-3
