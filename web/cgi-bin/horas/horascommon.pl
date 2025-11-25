@@ -988,7 +988,7 @@ sub concurrence {
       ? ($rank < ($tomorrowname[0] =~ /Adv1|Quad[156]/ ? 4.9 : $version =~ /altovadensis/i ? 3.9 : 2.9) ? 2 : $rank)
       : $version =~ /trident/i ? (
           ($rank < 2.9 && !($rank == 2.1 && $winner{Rank} !~ /infra Octavam/i)) ? 2
-        : ($rank >= 3 && $rank < 4.9 && $rank != 4 && $rank != 3.9 && $rank != 3.2) ? 3
+        : ((($rank >= 3 && $rank < 3.9) || ($rank >= 4.1 && $rank < 4.9)) && $rank != 3.9 && $rank != 3.2) ? 3
         : $rank
       )
       : $rank;
@@ -998,7 +998,9 @@ sub concurrence {
       : $version =~ /trident/i ? (
         $crank < 2.91
         ? ($crank > 2 ? 2 : $crank)
-        : ($cwinner{Rank} =~ /Dominica/i ? 2.99 : ($crank < 4.9 && $crank != 4) ? 3 : $crank)
+        : ( $cwinner{Rank} =~ /Dominica/i ? 2.99
+          : ($crank < 3.9 || ($crank >= 4.1 && $crank < 4.9)) ? 3
+          : $crank)
       )
       : ($version =~ /divino/i && $cwinner{Rank} =~ /Dominica/i) ? 4.9
       : $crank;
