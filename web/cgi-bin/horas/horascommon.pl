@@ -998,9 +998,11 @@ sub concurrence {
       : $version =~ /trident/i ? (
         $crank < 2.91
         ? ($crank > 2 ? 2 : $crank)
-        : ( $cwinner{Rank} =~ /Dominica/i ? 2.99
+        : (
+            $cwinner{Rank} =~ /Dominica/i ? 2.99
           : ($crank < 3.9 || ($crank >= 4.1 && $crank < 4.9)) ? 3
-          : $crank)
+          : $crank
+        )
       )
       : ($version =~ /divino/i && $cwinner{Rank} =~ /Dominica/i) ? 4.9
       : $crank;
