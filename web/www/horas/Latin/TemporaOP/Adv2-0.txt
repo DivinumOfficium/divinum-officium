@@ -1,0 +1,40 @@
+@Tempora/Adv2-0
+
+[Capitulum Laudes]
+@TemporaOP/Adv1-0
+
+[Responsory Vespera 1]
+@Tempora/Adv2-0:Responsory2
+
+[Invit]
+@Psalterium/Psalmi/Psalmi matutinum:Adv 0 Ant Matutinum:7 s/;;.*// s/\* // s/, (.)/: * \u$1/
+
+[In Finem Lectio]
+@TemporaOP/Quad5-0
+
+[Lectio1]
+@Tempora/Adv2-2
+@:In Finem Lectio
+
+[Responsory1]
+@Tempora/Adv2-0:Responsory1:1-2
+@Tempora/Quad4-0:Responsory8:3
+@Tempora/Adv2-0:Responsory1:4
+
+[Lectio2]
+@Tempora/Adv2-2
+
+[Responsory2]
+@Tempora/Adv2-0:Responsory3
+
+[Lectio3]
+@Tempora/Adv2-2
+@:In Finem Lectio
+
+[Responsory3]
+@Tempora/Adv1-3:Responsory1
+&Gloria
+@Tempora/Adv1-3:Responsory1:4
+
+[Ant 3]
+Ite, et dicíte Joánni: Cæci vident et surdi áudiunt: claudi ámbulantur, leprósi mundántur.
