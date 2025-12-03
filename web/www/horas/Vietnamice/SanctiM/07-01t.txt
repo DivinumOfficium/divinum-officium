@@ -1,0 +1,17 @@
+@Sancti/07-01t
+
+[Rule]
+12 lectiones
+
+[Lectio5]
+@Sancti/07-01t:Lectio4:s/ Hic.*//
+
+[Lectio6]
+@Sancti/07-01t:Lectio4:s/.* (?=Hic)//s s/$/~/
+@Sancti/07-01t:Lectio5:s/ Hic est ille.*//
+
+[Lectio7]
+@Sancti/07-01t:Lectio5:s/.* (?=Hic est ille)//
+
+[Lectio8]
+@Sancti/07-01t:Lectio6

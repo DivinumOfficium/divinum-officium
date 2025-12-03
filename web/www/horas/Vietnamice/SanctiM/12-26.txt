@@ -1,0 +1,89 @@
+@Sancti/12-26
+
+[Rule]
+12 lectiones
+
+[Ant Matutinum 3N]
+Jerúsalem, * Jerúsalem, quæ occídis prophétas, † et lápidas eos, qui ad te missi sunt.
+
+[Lectio1]
+@Sancti/12-26:Lectio1:s/-6/-4/ s/5 .*//s
+
+[Lectio2]
+@Sancti/12-26:Lectio1:2-20 s/1-/5-/ s/1 .*5 /5 /s
+
+[Lectio3]
+@Sancti/12-26:Lectio2
+
+[Lectio4]
+@Sancti/12-26:Lectio3
+
+[Responsory4]
+R. Cum esset plenus Spíritu Sancto beátus Stéphanus, † inténdens in cælum vidit glóriam Dei,
+* Et Jesum stantem a dextris Dei.
+V. Et clamans voce magna dixit † Ecce vídeo cælos apértos.
+R. Et Jesum stantem a dextris Dei.
+
+[Lectio5]
+@Sancti/12-26:Lectio4
+
+[Responsory5]
+@Sancti/12-26:Responsory4
+
+[Lectio6]
+@Sancti/12-26:Lectio5:s/Heri Christus.*//s
+
+[Responsory6]
+@Sancti/12-26:Responsory5
+
+[Lectio7]
+@Sancti/12-26:Lectio5:s/.* Heri Christus/Heri Christus/s s/$/~/
+@Sancti/12-26:Lectio6:s/Stéphanus ergo.*//s
+
+[Responsory7]
+@Sancti/12-26:Responsory6
+
+[Lectio8]
+@Sancti/12-26:Lectio6:s/.* Stéphanus ergo/Stéphanus ergo/s
+
+[Responsory8]
+R. Surrexérunt quidam de synagóga, disputántes cum Stéphano,
+* Et non póterunt resístere sapiéntiæ et Spirítui qui loquebátur.
+V. Commovérunt ítaque plebem, † et concurréntes rapuérunt eum, et adduxérunt in concílium.
+R. Et non póterunt resístere sapiéntiæ et Spirítui qui loquebátur.
+
+[Lectio9]
+@Sancti/12-26:Lectio7
+
+[Responsory9]
+@Sancti/12-26:Responsory7
+
+[Lectio10]
+@Sancti/12-26:Lectio8:s/Alii Zacharíam patrem.*//s
+
+[Responsory10]
+@Sancti/12-26:Responsory8
+
+[Lectio11]
+@Sancti/12-26:Lectio8:s/.* Alii Zacharíam patrem/Alii Zacharíam patrem/s s/$/~/
+@Sancti/12-26:Lectio9:s/Cum ergo .*//s
+
+[Responsory11]
+R. Hestérna die Dóminus natus est in terris, ut Stéphanus nascerétur in cælis: † ingréssus est Dóminus mundum,
+* Ut Stéphanus ingrederétur in cælum.
+V. Heri enim rex noster trábea carnis indútus, † de aula úteri virginális egrédiens visitáre dignátus est mundum.
+R. Ut Stéphanus ingrederétur in cælum.
+
+[Lectio12]
+@Sancti/12-26:Lectio9:s/.* Cum ergo /Cum ergo /s
+
+[Responsory12]
+R. Sepeliérunt Stéphanum viri timoráti, † et fecérunt planctum magnum super eum.
+* Facta est persecútio magna advérsus Ecclésiam, quæ erat Jerosólymis.
+V. Saulus autem conséntiens neci ejus, devastábat Ecclésiam.
+R. Facta est persecútio magna advérsus Ecclésiam, quæ erat Jerosólymis.
+
+[Ant Vespera 3]
+@Sancti/12-25::s/129/131/
+(sed rubrica cisterciensis)
+@Sancti/12-26:Ant Laudes

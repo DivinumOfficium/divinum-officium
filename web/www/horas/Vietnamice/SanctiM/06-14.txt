@@ -1,0 +1,50 @@
+@Sancti/06-14
+
+[Rule] (rubrica 1617 aut rubrica 1930)
+12 lectiones
+
+[Responsory1]
+@CommuneM/C4:Responsory10
+
+[Responsory1] (rubrica cisterciensis)
+@CommuneCist/C4:Responsory2
+
+[Lectio2]
+Basilíus nóbilis Cáppadox, Athénis una cum Gregório Nazianzéno, ejus amicíssimo, sæculáribus lítteris, deínde in Monastério sacris erudítus, ad prædicándum Jesu Christi Evangélium in Pontum fuit accersítus. Mox ab Eusébio Cæsaréæ Epíscopo, adjútor adhíbitus, in ejus locum succéssit. Fílium Patri consubstantiálem esse deféndit, ac Valéntem imperatórem sibi irátum, miráculis ádeo flexit, ut ab exílii senténtia discédere coégerit.
+
+[Responsory2] (rubrica cisterciensis)
+@ CommuneCist/C4:Responsory3
+
+[Lectio3]
+Abstinéntia et continéntia fuit admirábili: única túnica conténtus erat: in jejúnio et oratióne assíduus, virginitátem perpétuo cóluit. Monastériis extrúctis, ita Monachórum institútum temperá­vit‚ ut solitáriæ atque actuósæ vitæ utilitátes præcláre simul conjúngeret. Multa erudíte scripsit, ac nemo, teste Gregório Nazianzéno, sacræ Scriptúræ libros vérius aut ubérius explicávit. Obiit Kaléndis Januárii, cum tantum spíritu vivens, præter ossa et pellem, nulla prætérea córporis parte constáre viderétur.
+
+[Responsory3] (rubrica cisterciensis)
+@CommuneCist/C4a:Responsory12
+
+[Ant 3] (nisi rubrica cisterciensis)
+@Commune/C4a:Ant 1:s/N\./Basíli/
+
+[Lectio5]
+@Sancti/06-14:Lectio4
+
+[Lectio6]
+@Sancti/06-14:Lectio5:s/ Quibus.*//
+
+[Lectio7]
+@Sancti/06-14:Lectio5:s/.* (?=Quibus)// s/$/~/
+@Sancti/06-14:Lectio6:s/ Virginitátem.*//
+
+[Lectio8]
+@Sancti/06-14:Lectio6:s/.* (?=Virginitátem)//
+
+[Lectio9]
+@Sancti/06-14:Lectio7
+
+[Lectio10]
+Paulo autem univérsus mundus crucifíxus erat, et ipse mundo. Sic, qui veheménter cupiditáte sequéndi Christum tenétur, ad nihil ámplius hujus vitæ convérti potest: non ad paréntum aut cognatórum amórem, ubi præcéptis Dómini contrárius fúerit; (tunc enim occasiónem habet illud: Si quis venit ad me, et non ódio habet patrem suum et matrem et réliqua); non ad humánum timórem, ut propter ipsum subtrahámus áliquid utílium, id quod perpetrárunt Sancti, qui dixérunt: Obedíre opórtet Deo magis quam homínibus.
+
+[Lectio11]
+@Sancti/06-14:Lectio8
+
+[Lectio12]
+@Sancti/06-14:Lectio9

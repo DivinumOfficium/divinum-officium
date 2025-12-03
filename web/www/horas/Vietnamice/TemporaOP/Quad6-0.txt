@@ -1,0 +1,67 @@
+@Tempora/Quad6-0r
+
+[Officium]
+Dominica II Passione seu in ramis palmarum
+
+[Responsory Vespera 1]
+@TemporaOP/Quad5-0
+
+[Invit]
+Ipsi vero non cognovérunt vias meas: * Quibus jurávi in ira mea: Si introíbunt in réquiem meam.
+
+[In Finem Lectio]
+@TemporaOP/Quad5-0:In Finem Lectio
+
+[Lectio1]
+@Tempora/Quad6-0::1
+@Tempora/Quad6-2:Lectio2:1-4 s/-4/-3/
+@:In Finem Lectio
+
+[Responsory1]
+@Tempora/Quad6-0::1-3 s/\n\*// s/, Deus/.\n* Deus/
+@Tempora/Quad6-0::2 s/.*, Deus/R. Deus/
+
+[Lectio2]
+!Jer 12:5-10
+4 Usquequo lugébit terra, et herba omnis regiónis siccábitur, propter malítiam habitántium in ea? consúmptum est ánimal et vólucre, quóniam dixérunt: Non vidébit novíssima nostra.
+5 Si cum pedítibus currens laborásti, quómodo conténdere póteris cum equis? cum autem in terra pacis secúrus fúeris, quid fácies in supérbia Jordánis?
+6 Nam et fratres tui, et domus patris tui, étiam ipsi pugnavérunt advérsum te, et clamavérunt post te plena voce: ne credas eis, cum locúti fúerint tibi bona.
+7 Relíqui domum meam: dimísi hereditátem meam: dedi diléctam ánimam meam in manu inimicórum.
+8 Facta est mihi heréditas mea quasi leo in silva: dedit contra me vocem, ídeo odívi eam.
+9 Numquid avis díscolor heréditas mea mihi? numquid avis tincta per totum? Veníte, congregámini omnes béstiæ terræ, properáte ad devorándum.
+10 Pastóres multi demolíti sunt víneam meam, conculcavérunt partem meam, dedérunt portiónem meam desiderábilem in desértum solitúdinis.
+@:In Finem Lectio
+
+[Responsory2]
+@Tempora/Quad6-0:Responsory3
+
+[Lectio3]
+ 
+
+[Lectio7]
+Léctio sancti Evangélii secúndum Matthǽum
+!Matt 21:1-9
+In illo témpore: Cum appropinquásset Jesus Jerosólymis, et venísset Béthphage ad montem Olivéti: tunc misit duos discípulos, dicens eis. Ite in castéllum, quod contra vos est, et statim inveniétis ásinam alligátam et pullum cum ea: sólvite, et addúcite mihi. Et réliqua.
+_
+Homilía sancti Bedæ Venerabilis Presbýteri
+!In Dominica Palmarum
+Mediátor Dei et hóminum, homo Christus Jesus (qui pro humáni géneris salúte passúrus de cælo descénderat ad terras) appropinquánte hora passiónis, appropinquáre vóluit loco passiónis, ut étiam per hoc clarésceret, quia non invítus, sed sponte paterétur. In ásino veníre, et a turbis Rex appellári ac laudári vóluit, ut étiam per hoc erudítus quisque cognósceret ipsum esse Christum, quem sic illo ventúrum prophetía olim præmissa signáverat. Ante quinque dies Paschæ veníre vóluit, sicut ex Joánnis Evangélio didícimus: ut étiam per hoc osténderet se esse Agnum immaculatum, qui peccáta tólleret mundi.
+
+[Responsory3]
+@Tempora/Quad6-0:Responsory9
+
+[Capitulum Laudes]
+@Psalterium/Special/Major Special:Quad5 Vespera
+
+[Ant Sexta]
+@:Ant Prima
+
+[Capitulum Sexta]
+@Psalterium/Special/Prima Special:Quad5
+$Deo gratias
+
+[Ant Nona]
+Occúrrunt turbæ cum flóribus et palmis Redemptóri óbviam, et victóri triumphánti digna dant obséquia: Filium Dei ore gentes prǽdicant, et in laudem Christi voces tonant per núbila: Hosánna!
+
+[Capitulum Nona]
+@Psalterium/Special/Minor Special:Quad5 Sexta_

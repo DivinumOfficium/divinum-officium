@@ -1,0 +1,157 @@
+@CommuneM/C7
+
+[Rule]
+Antiphonas horas
+
+[Ant Vespera]
+Dum esset Rex * in accúbitu suo, nardus mea dedit odórem suum.;;109
+Unguéntum effúsum * nomen tuum, ídeo adolescéntulæ dilexérunt te nimis.;;112
+Veni, * elécta mea, et ponam in te thronum meum, quia concupívit Rex spéciem tuam.;;121
+Nigra sum, * sed formósa, fíliæ Jerúsalem; ídeo diléxit me Rex, et introdúxit me in cubículum suum.;;126
+Pulchra es * et decóra, fília Jerúsalem, terríbilis ut castrórum ácies ordináta.
+
+[Ant Vespera] (tempore paschali)
+@CommuneCist/C1p
+
+[Versum 1]
+@Commune/C6:Versum 2
+
+[Invit] (tempore paschali)
+@CommuneCist/C2p
+
+[Ant Matutinum]
+@CommuneCist/C6::1-5
+Veni, Sponsa Christi, * áccipe corónam, quam tibi Dóminus præparávit in ætérnum.;;47
+@CommuneCist/C6::7-10
+Média nocte * clamor factus est: Ecce sponsus venit, exíte óbviam ei.;;97
+@CommuneCist/C6::12
+Invénta bona margaríta, * dedit ómnia sua, et comparávit eam.;;249;250;251
+
+[Ant Matutinum] (tempore paschali)
+@CommuneCist/C6
+
+[Nocturn 1 Versum]
+@Commune/C6:Versum 1
+
+[Nocturn 3 Versum]
+@CommuneCist/C6
+
+[Lectio1]
+De Parábolis Salomónis.
+!Prov 31:10-15
+10 Mulíerem fortem quis invéniet? procul, et de últimis fínibus prétium ejus. 
+11 Confídit in ea cor viri sui, et spóliis non indigébit. 
+12 Reddet ei bonum, et non malum, ómnibus diébus vitæ suæ. 
+13 Quæsívit lanam et linum, et operáta est consílio mánuum suárum. 
+14 Facta est quasi navis institóris, de longe portans panem suum. 
+15 Et de nocte surréxit, dedítque prædam domésticis suis, et cibária ancíllis suis.
+
+[Responsory1]
+@CommuneCist/C6
+
+[Lectio2]
+!Prov 31:16-20
+16 Considerávit agrum, et emit eum: de fructu mánuum suárum plantávit víneam. 
+17 Accínxit fortitúdine lumbos suos, et roborávit bráchium suum. 
+18 Gustávit, et vidit quia bona est negotiátio ejus: non extinguétur in nocte lucérna ejus. 
+19 Manum suam misit ad fórtia, et dígiti ejus apprehendérunt fusum. 
+20 Manum suam apéruit ínopi, et palmas suas exténdit ad páuperem.
+
+[Responsory2]
+@CommuneCist/C6
+
+[Lectio3]
+!Prov 31:21-26
+21 Non timébit dómui suæ a frigóribus nivis: omnes enim doméstici ejus vestíti sunt duplícibus.
+22 Stragulátam vestem fecit sibi: byssus, et púrpura induméntum ejus.
+23 Nóbilis in portis vir ejus, quando séderit cum senatóribus terræ.
+24 Síndonem fecit, et véndidit, et cíngulum trádidit Chananæo.
+25 Fortitúdo et decor induméntum ejus, et ridébit in die novíssimo.
+26 Os suum apéruit sapiéntiæ, et lex cleméntiæ in lingua ejus.
+
+[Responsory3]
+@CommuneCist/C6
+
+[Lectio4]
+!Prov 31:27-31
+27 Considerávit semitas domus suæ, et panem otiósa non comédit.
+28 Surrexérunt fílii ejus, et beatíssimam prædicavérunt: vir ejus. et laudávit eam. 
+29 Multæ fíliæ congregavérunt divítias: tu supergréssa es univérsas.
+30 Fallax grátia, et vana est pulchritúdo: múlier timens Dóminum ipsa laudábitur. 
+31 Date ei de fructu mánuum suárum: et laudent eam in portis ópera ejus.
+
+[Responsory4]
+R. Fulcíte me flóribus, stipáte me malis:
+* Quia amóre lángueo.
+V. Adjúro vos, fíliæ Jerúsalem, si invenéritis diléctum, ut annuntiétis ei.
+R. Quia amóre lángueo.
+&Gloria
+R. Quia amóre lángueo.
+
+[Responsory5]
+@CommuneCist/C6
+
+[Responsory6]
+@Commune/C11::1-3:s/ \* / /
+@Commune/C11::2::s/ \* / /
+
+[Responsory7]
+@CommuneM/C7:Responsory8:1-2
+V. Sicut vitta coccínea lábia tua, et elóquium tuum dulce.
+@CommuneM/C7:Responsory8:4
+
+[Lectio8]
+@Commune/C7:Lectio6:s/gubérnat.*dispónit/gubérnat/
+
+[Responsory8]
+@CommuneCist/C6a:Responsory6:1
+@CommuneCist/C6a:Responsory6:2:s/ Vírginis//s
+@CommuneCist/C6a:Responsory6:3
+@CommuneCist/C6a:Responsory6:4:s/ Vírginis//s
+
+[Responsory9]
+R. Dum esset Rex in accúbitu suo, 
+* Nardus mea dedit odórem suum.
+V. Pulchra sum, et decóra, fília Jerúsalem:
+R. Nardus mea dedit odórem suum.
+
+[Responsory10]
+@CommuneCist/C6
+
+[Responsory11]
+@CommuneCist/C6
+
+[Responsory12]
+@CommuneCist/C6
+
+[MM Capitulum]
+@Commune/C7:Capitulum Sexta
+_
+@Commune/C6:Nocturn 2 Versum
+
+[Ant Laudes]
+@:Ant Vespera:s/;;.*//g
+
+[Versum 2]
+@:Versum 1
+
+[Ant 2]
+@CommuneCist/C6
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+@Commune/C7:Ant 1
+
+[Lectio1 in 2 loco]
+@CommuneCist/C6
+
+[Lectio2 in 2 loco]
+@CommuneCist/C6
+
+[Lectio3 in 2 loco]
+@CommuneCist/C6
+
+[Lectio4 in 2 loco]
+@CommuneCist/C6

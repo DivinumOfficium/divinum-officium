@@ -1,0 +1,42 @@
+[Officium]
+S. Alexii Confessoris
+
+[Rank]
+;;Semiduplex;;2.2;;vide C5
+(sed rubrica 1570 aut rubrica 1617 aut rubrica 1960 aut rubrica cisterciensis)
+;;Simplex;;1.1;;vide C5
+
+[Rule]
+vide C5;
+9 lectiones;
+
+[Name]
+Aléxii
+
+[Ant 1] (rubrica 1951)
+@CommuneCist/C5:Ant 2
+
+[Ant 2] (rubrica 1951)
+@CommuneCist/C5:Ant 1
+
+[Lectio4]
+Aléxius, Romanórum nobilíssimus, propter exímium Jesu Christi amórem prima nocte nuptiárum peculiari Dei mónitu relínquens intactam sponsam, illustrium orbis terræ ecclesiárum peregrinatiónem suscépit. Quibus in itinéribus cum ignotus septémdecim annos fuísset, aliquándo apud Edessam, Syriæ urbem, per imáginem sanctíssimæ Maríæ Vírginis, ejus nómine divulgato, inde navi discessit. Ad portum Romanum appulsus, a patre suo tamquam alienus pauper hospítio accipitur; apud quem, ómnibus incógnitus, cum decem et septem annos vixísset, relícto scripto sui nóminis, sánguinis, ac totius vitæ cursus, migrávit in cælum, Innocentio primo summo Pontifice.
+
+[Lectio5]
+@Commune/C5:Lectio4 in 2 loco
+
+[Lectio6]
+@Commune/C5:Lectio5 in 2 loco
+
+[Lectio94]
+Aléxius, Romanórum nobilíssimus, propter exímium Jesu Christi amórem prima nocte nuptiárum peculiári Dei mónitu relínquens intáctam sponsam, illústrium orbis terræ ecclesiárum peregrinatiónem suscépit. Quibus in itinéribus cum ignótus septémdecim annos fuísset, aliquándo apud Edéssam, Syriæ urbem, per imáginem sanctíssimæ Maríæ Vírginis, ejus nómine divulgáto, inde navi discéssit. Ad portum Románum appúlsus, a patre suo tamquam aliénus pauper hospítio accípitur; apud quem, ómnibus incógnitus, cum decem et septem annos vixísset, relícto scripto sui nóminis, sánguinis, ac totíus vitæ cursus, migrávit in cælum, Innocéntio primo summo Pontífice.
+&teDeum
+
+[Lectio7]
+@Commune/C1:Lectio7
+
+[Lectio8]
+@Commune/C1:Lectio8
+
+[Lectio9]
+@Commune/C1:Lectio9

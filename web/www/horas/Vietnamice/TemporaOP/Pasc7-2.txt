@@ -1,0 +1,37 @@
+@Tempora/Pasc7-2
+
+[Invit]
+@Tempora/Pasc7-0:Responsory Nona:1 s/R.br. //
+
+[Ant Matutinum]
+@Tempora/Pasc7-0::2 s/67/47;67;103/
+@Tempora/Pasc7-0:Versum 3
+
+[Responsory1]
+@Tempora/Pasc7-2:Responsory2:1-4
+
+[Lectio2]
+@Tempora/Pasc7-2::s/.* (?=Fuérunt)// s/$/~/
+
+[Responsory2]
+@Tempora/Pasc7-2:Responsory1:1-2
+@Tempora/Pasc7-4:Responsory2:1 s/R/V/ s/:.*/ sedéntes./
+@Tempora/Pasc7-2:Responsory1:2 s/\*/R./
+
+[Lectio3]
+@Tempora/Pasc7-2::s/.*\? // s/$/~/
+Forte ipsi per jánuam intravérunt? Absit.
+
+[Responsory3]
+@Tempora/Pasc7-5:Responsory2:1-4
+&Gloria
+@Psalterium/Common/Prayers:Alleluia Duplex: s/^/R. /
+
+[Ant Laudes]
+@Tempora/Pasc7-0:Ant Vespera:1 s/$/;;92;99;62;210;148/ s/Cum/Dum/
+
+[Ant 2]
+@Tempora/Pasc7-2:Ant 3
+
+[Ant 3]
+@Tempora/Pasc7-2:Ant 2

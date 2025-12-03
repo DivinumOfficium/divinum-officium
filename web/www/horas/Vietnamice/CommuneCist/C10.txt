@@ -1,0 +1,93 @@
+@CommuneM/C10
+
+[Responsory Vespera]
+R.br. Post partum Virgo, * Invioláta permansísti.
+R. Post partum Virgo, * Invioláta permansísti.
+V. Dei Génitrix intercéde pro nobis.
+R. Invioláta permansísti.
+
+[Responsory Vespera] (tempore Adventus)
+R.br. Angelus Dómini * Nuntiávit Maríæ.
+R. Angelus Dómini * Nuntiávit Maríæ.
+V. Et concépit de Spíritu Sancto.
+R. Nuntiávit Maríæ.
+
+[Versum 1]
+@Commune/C11
+
+[Versum 1a]
+@CommuneM/C10:MM Capitulum:s/.*_//s
+
+[Ant 1]
+@Commune/C11:Ant 3
+(sed tempore paschali)
+@Commune/C10:Ant 1_Pasch
+
+[Nocturn 1 Versum]
+@Commune/C6:Versum 1
+
+[Lectio1]
+@Sancti/07-02:Lectio1:s/1-7/1-5/ s/6.*//s
+
+[Lectio2]
+Sermo sancti Bernárdi Abbátis.
+!Ex Serm. 2. de Virgine Deipara‚ alias, de Aquæductu.
+Altius intuémini, fratres mei, quanto devotiónis afféctu a nobis Mariam volúerit honorári, qui totius boni plenitúdinem pósuit in María: ut proinde si quid spei in nobis est, si quid grátiæ, si quid salútis, ab ea novérimus redundáre, quæ ascéndit delíciis áffluens. Hortus plane deliciárum, quem non modo affláverit véniens‚ sed et perfláverit supervéniens auster ille divínus, ut úndique fluant et áffluant arómata ejus‚ charísmata scílicet gratiárum.
+
+[Responsory2]
+@Commune/C11:Responsory3
+
+[Lectio3]
+Tolle corpus hoc soláre, quod illúminat mundum, ubi dies? Tolle Mariam hanc maris stellam, maris útique magni et spatiósi, quid nisi calígo invólvens, et umbra mortis, ac densíssimæ ténebræ relinquúntur? Totis ergo medúllis córdium, totis præcordiórum afféctibus‚ et votis ómnibus Mariam hanc venerémur: quia sic est volúntas ejus, qui totum nos habére vóluit per Maríam.
+
+[MM Capitulum]
+!Eccli. 24, 18
+v. Ego mater pulchræ dilectiónis, et timóris, et agnitiónis, et sanctæ spei.
+$Deo gratias
+_
+@Commune/C6:Nocturn 2 Versum
+
+[Ant Laudes]
+@CommuneCist/C11
+(sed tempore paschali)
+@CommuneCist/C1p:Ant Vespera
+
+[Responsory Laudes]
+@CommuneCist/C11
+
+[Versum 2]
+@:Versum 1
+
+[Ant 2]
+@Commune/C11::s/, allel[uú][ij]a//i
+(sed tempore paschali)
+@Commune/C10:Ant 1_Pasch
+
+[Ant Prima]
+@CommuneCist/C11:Ant Vespera:2
+(sed tempore paschali)
+@Psalterium/Psalmi/Psalmi minor:Pasch:2
+
+[Ant Tertia]
+@CommuneCist/C11:Ant Vespera:3
+(sed tempore paschali)
+@Psalterium/Psalmi/Psalmi minor:Pasch:3
+
+[Ant Sexta]
+@CommuneCist/C11:Ant Vespera:4
+(sed tempore paschali)
+@Psalterium/Psalmi/Psalmi minor:Pasch:4
+
+[Capitulum Sexta]
+@CommuneCist/C11
+
+[Ant Nona]
+@CommuneCist/C11:Ant Vespera:5
+(sed tempore paschali)
+@Psalterium/Psalmi/Psalmi minor:Pasch:5
+
+[Capitulum Nona]
+@CommuneCist/C11
+
+[Responsory NonaM]
+@CommuneCist/C6:Nocturn 3 Versum

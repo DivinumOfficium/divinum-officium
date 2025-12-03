@@ -1,0 +1,28 @@
+[Officium]
+@Tempora/Pasc6-1
+
+[Rule]
+no Te Deum
+
+[Lectio1]
+@Tempora/Pasc1-2::1
+@Tempora/Pasc1-2:Lectio2:1-5
+
+[Responsory1]
+@TemporaOP/Pasc5-4
+
+[Lectio2]
+@Tempora/Pasc1-2::!2-5 s/14-/18-/
+
+[Responsory2]
+@TemporaOP/Pasc5-4
+
+[Lectio3]
+@Tempora/Pasc1-2:
+28 Notas mihi fecísti vias vitæ: et replébis me jucunditáte cum fácie tua.
+
+[Ant 2]
+@TemporaOP/Pasc5-5
+
+[Ant 3]
+@TemporaOP/Pasc5-5

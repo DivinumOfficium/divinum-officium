@@ -1,0 +1,39 @@
+@TemporaOP/Pasc0-1
+
+[Rank]
+@Tempora/Pasc0-6
+
+[Ant Matutinum]
+@TemporaOP/Pasc0-1::1 s/4/22/
+;;23
+;;25
+@Tempora/Pasc0-0::4-5
+
+[Lectio1]
+@Tempora/Pasc0-6::s/ Adhuc.*//
+
+[Responsory1]
+@TemporaOP/Pasc0-3
+
+[Lectio2]
+@Tempora/Pasc0-6:Lectio1:s/.*(?=Adhuc)//s s/$/~/
+@Tempora/Pasc0-6
+
+[Responsory2]
+@TemporaOP/Pasc0-3
+
+[Lectio3]
+@Tempora/Pasc0-6
+
+[Responsory3]
+@TemporaOP/Pasc0-3
+
+[Oratio]
+@Tempora/Pasc0-6
+
+[Versum 2]
+@Psalterium/Common/Translate:Alleluia:s/$/~/
+@Tempora/Pasc0-0::s/Ant/V/ s/\*//
+
+[Ant 2]
+@Tempora/Pasc0-6

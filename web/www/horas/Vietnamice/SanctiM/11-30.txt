@@ -1,0 +1,106 @@
+@Sancti/11-30
+
+[Rule]
+12 lectiones
+
+[AntMatutinumM]
+Christus me misit, * ad istam provínciam, in qua non parvum pópulum aquisívi;;46
+Ego si crucis * patíbulum expavéscerem, † crucis glóriam non prædicárem.;;60
+Videns Andréas * crucem, cum gáudio dicébat: † Quia amátor tui semper fui, et desiderávi te amplécti, o bona crux.;;74
+
+[Ant Matutinum 3N]
+Unus ex duóbus, * qui secúti sunt Dóminum, erat Andréas, frater Simónis Petri, allelúja.
+
+[Ant Matutinum]
+@Sancti/11-30::1-3
+@:AntMatutinumM:1-2
+@Sancti/11-30::6 s/46/63/
+@Sancti/11-30::4-5
+@:AntMatutinumM:3
+@Sancti/11-30::7-8 s/60/95/ s/63/96/
+@Sancti/11-30::11-13 s/74/97/ s/98/100/ s/96/98/
+@Sancti/11-30::9-10
+;;253;254;255
+@Sancti/11-30::14-15
+
+[Lectio1]
+@Sancti/11-30:Lectio1:
+
+[Lectio2]
+@Sancti/11-30:Lectio2:s/-15/-13/ s/14 .*//s
+
+[Lectio3]
+@Sancti/11-30:Lectio2:s/-15/-17/ s/10-/14-/ s/10 .*14 /14 /s
+@Sancti/11-30:Lectio3:s/!.*// s/18 .*//s
+
+[Lectio4]
+@Sancti/11-30:Lectio3:s/16-/18-/ s/16 .*18 /18 /s
+
+[Responsory4]
+R. Cum vidísset beátus Andréas crucem, exclamávit et dixit: † Salve crux quámdiu fatigáris?
+* Exspécta me sicut exspectásti Dóminum et magístrum meum.
+V. O bona crux diu desideráta et jam concupiscénti ánimo præparáta.
+R. Exspécta me sicut exspectásti Dóminum et magístrum meum.
+
+[Lectio5]
+@Sancti/11-30:Lectio4:s/Post,.*//s
+
+[Responsory5]
+@Sancti/11-30:Responsory4
+
+[Lectio6]
+@Sancti/11-30:Lectio4:s/.* Post,/Post,/s s/$/~/
+@Sancti/11-30:Lectio5:s/Quam .*//s
+
+[Responsory6]
+@Sancti/11-30:Responsory5
+
+[Lectio7]
+@Sancti/11-30:Lectio5:s/.* Quam/Quam/s s/$/~/
+@Sancti/11-30:Lectio6:s/Addúctus .*//s
+
+[Responsory7]
+@Sancti/11-30:Responsory6
+
+[Lectio8]
+@Sancti/11-30:Lectio6:s/.* Addúctus/Addúctus/s
+
+[Responsory8]
+R. Beátus Andréas de cruce clamábat, dicens: † Dómine Jesu Christe, magíster bone,
+* Non júbeas me depóni de ista cruce, nisi prius accípias spíritum meum.
+V. Quóniam tu es protéctor meus, Christe, † in manus tuas comméndo spíritum meum.
+R. Non júbeas me depóni de ista cruce, nisi prius accípias spíritum meum.
+
+[Lectio9]
+@Sancti/11-30:Lectio7
+
+[Responsory9]
+@Sancti/11-30:Responsory7
+
+[Lectio10]
+@Sancti/11-30:Lectio8:s/Quid .*//s
+
+[Responsory10]
+@Sancti/11-30:Responsory8
+
+[Lectio11]
+@Sancti/11-30:Lectio8:s/.* Quid/Quid/s s/$/~/
+@Sancti/11-30:Lectio9:s/Sed hac.*//s
+
+[Responsory11]
+R. Vir iste in pópulo suo mitíssimus appáruit, † sanctitáte autem et grátia plenus
+* Iste est qui assídue orat pro pópulo et pro civitáte ista.
+V. Pro eo, ut me dilígerent, detrahébant mihi: † ego autem orábam.
+R. Iste est qui assídue orat pro pópulo et pro civitáte ista.
+
+[Lectio12]
+@Sancti/11-30:Lectio9:s/.*Sed hac/Sed hac/s
+
+[Responsory12]
+R. Diléxit Andréam Dóminus in odórem suavitátis, dum pendéret in cruce, † dignum sibi computávit Mártyrem, quem vocábit Apóstolum, dum esset in mari
+* Et ídeo amícus Dei appellátus est.
+V. Andréas, Christi fámulus, dignus Dei Apóstolus, germánus Petri, et is possessióne sócius.
+R. Et ídeo amícus Dei appellátus est.
+
+[Ant Vespera 3] (nisi rubrica cisterciensis)
+@Sancti/11-30:Ant Vespera:s/\.$/.;;109/m s/\.$/.;;112/m s/\.$/.;;115/m s/\.$/.;;138/m

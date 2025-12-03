@@ -1,0 +1,100 @@
+@Sancti/11-11
+
+[Rule]
+12 lectiones
+(rubrica cisterciensis) Psalmi Dominica
+
+[AntMatutinumM]
+Dum sacraménta * offérret beátus Martínus, † globus ígneus appáruit super caput ejus.;;20
+Sínite me, * inquit, cælum vidére ut spíritus dirigátur ad Dóminum: † nihil in me repériet inimícus, sed sinus Abrahæ me suscípiet.;;23
+Beáti * viri corpus usque ad locum sepúlcri, † hymnis canóra cæléstibus turba proséquitur.;;97
+
+[Ant Matutinum 3N]
+O vere beátum, * o ineffábilem pietáte, misericórdia caritáte! † quarum ut viscéribus semper totus affluébat in Dómino, sic non desit nobis non desit in ævum.
+
+[Ant Matutinum]
+@Sancti/11-11::1-7 s/10/14/ s/8/10/ s/5/8/ s/4/5/ s/3/4/
+@:AntMatutinumM:1-2
+@Sancti/11-11::8-9 s/14/95/ s/20/96/
+@:AntMatutinumM:3
+;;256;257;258
+
+[Lectio1]
+@CommuneM/C4
+(sed rubrica cisterciensis)
+@CommuneCist/C4
+
+[Lectio2]
+@CommuneM/C4
+(sed rubrica cisterciensis)
+@CommuneCist/C4
+
+[Lectio3]
+@CommuneM/C4
+(sed rubrica cisterciensis)
+@CommuneCist/C4
+
+[Lectio4]
+@CommuneM/C4
+(sed rubrica cisterciensis)
+@CommuneCist/C4
+
+[Responsory4]
+R. Dum sacraménta offérret beatus Martínus,
+* Globus ígneus appáruit super caput ejus.
+V. Sum enim ad Deum preces emítteret, † et pro univérso grege sibi commísso deprecarétur.
+R. Globus ígneus appáruit super caput ejus.
+
+[Lectio5]
+@Sancti/11-11:Lectio4
+
+[Responsory5]
+@Sancti/11-11:Responsory4
+
+[Lectio6]
+@Sancti/11-11:Lectio5:s/Qui, .*//s
+
+[Responsory6]
+@Sancti/11-11:Responsory5
+
+[Lectio7]
+@Sancti/11-11:Lectio5:s/.* Qui, /Qui, /s
+
+[Responsory7]
+@Sancti/11-11:Responsory6
+
+[Lectio8]
+@Sancti/11-11:Lectio6
+
+[Responsory8]
+R. O virum ineffábilem, nec labóre victum nec morte vincéndum,
+* Qui nec mori tímuit nec vívere recusávit!
+V. O vere beátum in cujus ore dolus non fuit, † numquam in illíus lingua, nisi Christus, nisi pax, nisi misercórdia ínerat.
+R. Qui nec mori tímuit nec vívere recusávit!
+
+[Lectio9]
+@Sancti/11-11:Lectio7
+
+[Responsory9]
+@Sancti/11-11:Responsory7
+
+[Lectio10]
+@Sancti/11-11:Lectio8:s/Dénique .*//s
+
+[Responsory10]
+@Sancti/11-11:Responsory8
+
+[Lectio11]
+@Sancti/11-11:Lectio8:s/.* Dénique /Dénique /s s/Illa.*//s
+
+[Responsory11]
+R. Martínus sacérdos Dei cui post Apóstolos tantam grátiam Dóminus cóntulit, † ut tres mórtuos suscitáret, et álias virtútes præcláras osténderet, inter álios Confessóres et Mártyres
+* Et rosa fulget in Gállia.
+V. Córpore quidem virgíneo blandum habébat elóquium gravis erat in móribus inténta mente cælo suspénsus.
+R. Et rosa fulget in Gállia.
+
+[Lectio12]
+@Sancti/11-11:Lectio8:s/.* Illa /Illa /s
+
+[Ant Vespera 3] (nisi rubrica cisterciensis)
+@Sancti/11-11:Ant Laudes:s/$/_/gm s/_/;;109/ s/_/;;111/ s/_/;;112/ s/_/;;131/ s/_//

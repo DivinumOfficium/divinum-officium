@@ -1,0 +1,22 @@
+@TemporaOP/104-2
+
+[Lectio1]
+@Tempora/105-0::1
+@Tempora/105-0:Lectio3:1-5 s/-5/-4/
+
+[Responsory1]
+@Tempora/101-0:Responsory3:1-4
+
+[Lectio2]
+@Tempora/105-0:Lectio3:1 s/1-5/5-6/
+@Tempora/105-0:Lectio3:6 s/\.$/:/
+6 dicéntes: Dóminus Deus aspíciet veritátem, et consolábitur in nobis, quemádmodum in protestatióne cántici declarávit Móyses: Et in servis suis consolábitur.
+
+[Responsory2]
+@Tempora/101-0:Responsory4
+
+[Lectio3]
+@Tempora/105-1:Lectio1Tridentina:2-4 s/-12/-8/ s/:$/./
+
+[Responsory3]
+@Tempora/101-0:Responsory7

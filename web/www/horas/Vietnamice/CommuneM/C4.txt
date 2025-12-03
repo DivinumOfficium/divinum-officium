@@ -1,0 +1,156 @@
+@Commune/C4
+
+[Rule]
+Psalmi Dominica 
+Antiphonas horas
+
+[AntMatutinumM]
+Justus Dóminus * et justítiam diléxit: æquitátem vidit vultus ejus;;10
+Cognóvit eum Dóminus * in benedictiónibus suis, et invénit grátiam coram óculis Dómini;;95
+In fide * et lenitáte ípsius Sanctum fecit illum Dóminus, et osténdit illi glóriam suam;;96
+Justus * germinábit sicut lílium: et florébit in ætérnum ante Dóminum;;97
+Sint lumbi vestri * præcíncti et lucérnæ ardéntes in mánibus vestris;;256;257;258
+
+[Ant Matutinum]
+@Commune/C4::1-2
+@Commune/C4::4-6
+@:AntMatutinumM:1
+@Commune/C4::7-9
+@:AntMatutinumM:2-5
+
+[Lectio1]
+@Commune/C4:Lectio1:s/-7/-4/ s/5 .*//s
+
+[Lectio2]
+@Commune/C4:Lectio1:s/.*5 /!1 Tim 3:5-9\n5 /s
+8 Diáconos simíliter pudícos, non bilíngues, non multo vino déditos, non turpe lucrum sectántes:
+9 habéntes mystérium fídei in consciéntia pura.
+
+[Lectio3]
+@Commune/C4:Lectio2
+
+[Lectio4]
+@Commune/C4:Lectio3
+
+[Responsory4]
+R. Ecce vere Isrælíta, in quo dolus non est invéntus: † qui probátus repértus est sacérdos magnus
+* Juxta órdinem Melchísedech.
+V. Státuit ei Dóminus testaméntum sempitérnum, † et dedit illi sacerdótium magnum.
+R. Juxta órdinem Melchísedech.
+
+[Lectio5]
+@Commune/C4:Lectio4
+
+[Responsory5]
+@Commune/C4:Responsory4
+
+[Lectio6]
+@Commune/C4:Lectio5
+
+[Responsory6]
+@Commune/C4:Responsory5
+
+[Lectio7]
+@Commune/C4:Lectio6:s/ Dúplici .*//s
+
+[Responsory7]
+@Commune/C4:Responsory6
+
+[Lectio8]
+@Commune/C4:Lectio6:s/.* Dúplici /Dúplici /s s/$/~/
+Lauda ergo post perículum, prǽdica secúrum. Lauda navigántis felicitátem, sed cum pervénit ad portum; lauda ducis virtútem, sed cum perdúctus est ad triúmphum.
+
+[Responsory8]
+R. Justum dedúxit Dóminus per vias rectas, † et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum;
+* Honestávit illum in labóribus suis.
+V. Custodívit eum ab inimícis et a seductóribus tutávit illum.
+R. Honestávit illum in labóribus suis.
+
+[Lectio9]
+@Commune/C4:Lectio7:s/ Ecce .*//s
+
+[Responsory9]
+@Commune/C4:Responsory7
+
+[Lectio10]
+@Commune/C4:Lectio7:s/.* Ecce /Ecce /s s/$/~/
+@Commune/C4:Lectio8:s/ Sed homo .*//s
+
+[Responsory10]
+@Commune/C4:Responsory8
+
+[Lectio11]
+@Commune/C4:Lectio8:s/.* Sed homo /Sed homo /s
+
+[Responsory11]
+R. Iste sanctus digne in memóriam vértitur hóminum, qui ad gáudium tránsiit angelórum; † quóniam in hac peregrinatióne solo córpore constitútus, cogitatióne et aviditáte
+* In illa ætérna pátria conversátus est.
+V. Vínculis carnis absolútus taléntum, sibi créditum Dómino suo duplicátum reportávit.
+R. In illa ætérna pátria conversátus est.
+
+[Lectio12]
+@Commune/C4:Lectio9
+
+[Responsory12]
+R. Elégit te Dóminus sacerdótem sibi
+* Ad sacrificándum ei hóstiam laudis.
+V. Ímmola Deo sacrifícium laudis, et redde Altíssimo vota tua.
+R. Ad sacrificándum ei hóstiam laudis.
+
+[MM Capitulum]
+@Commune/C4:Capitulum Sexta
+_
+V. Justus germinábit sicut lílium.
+R. Et florébit in ætérnum ante Dóminum.
+
+[Ant Vespera 3]
+@Commune/C4:Ant Vespera:s/$/_/gm s/_/;;109/ s/_/;;111/ s/_/;;112/ s/_/;;131/ s/_//
+
+[Lectio1 in 2 loco]
+@Commune/C4:Lectio1 in 2 loco:s/-5/-4/ s/5 .*//s
+
+[Lectio2 in 2 loco]
+@Commune/C4:Lectio1 in 2 loco:s/.*!/!/s s/1-5/5-7/ s/^1 .*5 /5 /sm 
+@Commune/C4:Lectio2 in 2 loco:s/!.*// s/8 .*//s
+
+[Lectio3 in 2 loco]
+@Commune/C4:Lectio2 in 2 loco:s/.*!/!/s s/6-9/8-11/ s/^6 .*8 /8 /sm 
+@Commune/C4:Lectio3 in 2 loco:s/!.*// s/12 .*//s
+
+[Lectio4 in 2 loco]
+@Commune/C4:Lectio3 in 2 loco:s/.*!/!/s s/10-/12-/ s/^10 .*12 /12 /sm
+
+[Lectio5 in 2 loco]
+@Commune/C4:Lectio4 in 2 loco: s/Quid enim .*//
+
+[Lectio6 in 2 loco]
+@Commune/C4:Lectio4 in 2 loco: s/.*Quid enim/Quid enim/
+@Commune/C4:Lectio5 in 2 loco: s/Quantórum .*//
+
+[Lectio7 in 2 loco]
+@Commune/C4:Lectio5 in 2 loco: s/.*Quantórum/Quantórum/
+
+[Lectio8 in 2 loco]
+@Commune/C4:Lectio6 in 2 loco
+
+[Lectio9 in 2 loco]
+Léctio sancti Evangélii secúndum Matthǽum
+!Matt 24:42-47
+In illo témpore: Dixit Jesus discípulis suis: Vigiláte, quia nescítis qua hora Dóminus vester ventúrus sit. Et réliqua.
+_
+Homilía sancti Hilárii Epíscopi
+!Comment. in Matth., cap. 26 in fine‚
+Ut ignorántiam illam diéi ómnibus táciti, non sine útilis siléntii ratióne esse scirémus, vigiláre nos Dóminus propter advéntum furis admónuit, et oratíonum assiduitáte deténtos ómnibus præceptórum suórum opéribus inhærére. Furem enim esse osténdit zábulum, ad detrahénda ex nobis spólia pervígilem, et córporum nostrórum dómibus insidiántem: ut ea incuriósis nobis, et somno déditis, consiliórum suórum atque illecebrárum jáculis perfódiat. Parátos ígitur esse nos cónvenit: quia diéi ignorátio inténtam sollicitúdinem suspénsæ exspectatiónis exágitet.
+
+[Lectio10 in 2 loco]
+!Cap. 27
+Quisnam est fidélis servus et prudens, quem constítuit Dóminus super famíliam suam? Quamquam in commúne nos ad indeféssam vigilántiæ curam adhortétur: speciálem tamen pópuli princípibus, id est, epíscopis, in exspectatióne adventúque suo sollicitúdinem mandat. Hunc enim servum fidélem atque prudéntem, præpósitum famíliæ signíficat, cómmoda atque utilitátes commíssi sibi pópuli curántem.
+
+[Lectio11 in 2 loco]
+Qui si dicto áudiens, et præcéptis obédiens erit, id est, si doctrínæ opportunitáte et veritáte infírma confírmet, disrúpta consólidet, depraváta convértat, et verbum vitæ in æternitátis cibum aléndæ famíliæ dispéndat, atque hæc agens, hisque ímmorans deprehendátur: glóriam a Dómino tamquam dispensátor fidélis et víllicus útilis consequétur, et super ómnia bona constituétur; id est, in Dei glória collocábitur, quia nihil sit ultra, quod mélius sit.
+
+[Lectio12 in 2 loco]
+Quod, si cóntuens longam Dei patiéntiam, quæ in proféctum humánæ salútis exténditur, advérsum consérvos insoléscet, et sæculi malus vitiísque se tradet, præséntium tantum curam in cultu ventris exércens; desperáta die Dóminus advéniet, eúmque a bonis, quæ spopónderat, dívidet, portionémque ejus cum hypócritis in pœnæ æternitáte constítuet: quia advéntum desperávit, quia mandátis non obtemperáverit, quia præséntibus studúerit, quia vita Géntium víxerit, quia desperatióne judícii commíssam sibi famíliam fame, siti, cæde vexáverit.
+
+[Evangelium in 2 loco]
+@Commune/C4-1:Evangelium

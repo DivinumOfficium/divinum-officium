@@ -1,0 +1,13 @@
+@Tempora/Adv3-6
+
+[Lectio1]
+@Tempora/Adv3-6::s/$/~/
+@Tempora/Adv3-6:Lectio2:s/ Apte .*//
+
+[Lectio2]
+@Tempora/Adv3-6::s/.*Apte/Apte/ s/.$/:~/
+@Tempora/Adv3-6:Lectio3:s/Notándum.*//
+
+[Lectio3]
+@Tempora/Adv3-6::s/.*Notándum/Notándum/ s/$/~/
+Ut quia ejus sermo praecurrebat praesentiam Redemptoris, ipsum quoque ejus baptisma praecedendo fieret umbra veritatis. Sequitur: Sicut scriptum est in libro sermonum Isaiae prophetae: Vox clamantis in deserto, Parate viam Domini, rectas facite semitas ejus. Idem vero Joannes Baptista requisitus quis esset, respondit, dicens: Ego vox clamantis in deserto. Qui, sicut ante per nos dictum est, ideo vox a propheta vocatus est, quia verbum praeibat. Quid autem clamaret aperitur cum subditur: Parate viam Domini, rectas facite semitas ejus. Omnis qui fidem rectam et bona opera praedicat, quid aliud quam venienti Domino ad corda audientium viam parat?

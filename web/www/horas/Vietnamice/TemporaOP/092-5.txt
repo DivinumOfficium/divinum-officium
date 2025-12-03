@@ -1,0 +1,22 @@
+@Tempora/092-5
+
+[Lectio1]
+@Tempora/092-5::1
+@Tempora/092-5:Lectio3
+
+[Responsory1]
+@Tempora/091-0:Responsory3
+
+[Lectio2]
+@Tempora/092-6:Lectio1:!1 s/; .*/./
+
+[Responsory2]
+@Tempora/091-0:Responsory4
+
+[Lectio3]
+@Tempora/092-6:Lectio2:1 s/9-11/8-9/
+@Tempora/092-6:Lectio1:4 s/.*?; /8 /
+@Tempora/092-6:Lectio2:2
+
+[Responsory3]
+@TemporaOP/091-2

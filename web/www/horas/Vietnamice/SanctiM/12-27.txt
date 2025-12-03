@@ -1,0 +1,90 @@
+@Sancti/12-27
+
+[Rule]
+12 lectiones
+
+[Ant Matutinum 3N]
+Dedit * illi Dóminus claritátem ætérnam, † et nómine ætérno hæreditábit illum.
+
+[Lectio1]
+@Sancti/12-27:Lectio1:s/-5/-3/ s/4 .*//s
+
+[Lectio2]
+@Sancti/12-27:Lectio1:s/.*// s/-5/-7/ s/1-/4-/ s/^1 .*4 /4 /sm
+@Sancti/12-27:Lectio2:s/!.*// s/8 .*//s
+
+[Lectio3]
+@Sancti/12-27:Lectio2:s/6-/8-/ s/6 .*8 /8 /s
+
+[Lectio4]
+@Sancti/12-27:Lectio3
+
+[Responsory4]
+R. Ecce puer meus quem elégi, dicit Dóminus, † eléctus meus
+* Complácuit sibi in illo ánimæ meæ.
+V. Pósui super eum spíritum meum, † judícium géntibus nuntiábit.
+R. Complácuit sibi in illo ánimæ meæ.
+
+[Lectio5]
+@Sancti/12-27:Lectio4
+
+[Responsory5]
+@Sancti/12-27:Responsory4
+
+[Lectio6]
+@Sancti/12-27:Lectio5:s/Interfécto .*//s
+
+[Responsory6]
+@Sancti/12-27:Responsory5
+
+[Lectio7]
+@Sancti/12-27:Lectio5:s/.* Interfécto /Interfécto /s
+
+[Responsory7]
+@Sancti/12-27:Responsory6
+
+[Lectio8]
+@Sancti/12-27:Lectio6
+
+[Responsory8]
+R. Cibávit illum pane vitæ et intelléctus † et aqua sapiéntiæ salutáris potávit eum.
+* Et exaltávit eum apud próximos suos.
+V. In médio Ecclésiæ apéruit os ejus, † et implévit eum Dóminus spíritu sapiéntiæ et intelléctus.
+R. Et exaltávit eum apud próximos suos.
+
+[Lectio9]
+@Sancti/12-27:Lectio7:s/Una declínat .*//s
+
+[Responsory9]
+@Sancti/12-27:Responsory7
+
+[Lectio10]
+@Sancti/12-27:Lectio7:s/.* Una declínat /Una declínat /s s/$/~/
+@Sancti/12-27:Lectio8:s/Una flagellátur .*//s
+
+[Responsory10]
+@Sancti/12-27:Responsory8
+
+[Lectio11]
+@Sancti/12-27:Lectio8:s/.* Una flagellátur /Una flagellátur /s s/$/~/
+@Sancti/12-27:Lectio9:s/Tota .*//s
+
+[Responsory11]
+R. Virgo est eléctus a Dómino atque inter céteros magis diléctus, † qui supra pectus ejus recúmbens Evangélii fluénta de ipso sacro domínici péctoris fonte potávit,
+* Et verbi Dei grátiam in toto terrárum orbe diffúdit.
+V. Spíritus sancti grátia inebriátus, † céteris áltius divinitátis patefécit arcána.
+R. Et verbi Dei grátiam in toto terrárum orbe diffúdit.
+
+[Lectio12]
+@Sancti/12-27:Lectio9:s/.* Tota /Tota /s
+
+[Responsory12]
+R. Sic eum volo manére, donec véniam:
+* Quid ad te, tu me séquere.
+V. Hunc ergo cum vidísset Petrus, dixit ad Jesum: † Dómine hic autem quid?
+R. Quid ad te, tu me séquere.
+
+[Ant Vespera 3]
+@Sancti/12-25::s/129.*/129/s
+(sed rubrica cisterciensis)
+@Sancti/12-27:Ant Laudes

@@ -1,0 +1,408 @@
+[Officium]
+In Festis Beatae Mariae Virginis
+
+[Missa]
+Salve Sancta Parens
+
+[Rule]
+Psalmi Dominica
+Antiphonas horas
+Doxology=Nat
+Gloria
+Credo
+Prefatio=Maria=Festivitate
+
+[Ant Vespera]
+@Commune/C7::1
+@:Ant VesperaBMV:1
+@Commune/C6:Ant Matutinum:7 s/95/121/
+@Commune/C7::3 s/121/126/
+@:Ant VesperaBMV:2
+
+[Ant VesperaBMV]
+Læva ejus * sub cápite meo, et déxtera illíus amplexábitur me.;;112
+Speciósa * facta es et suávis in delíciis tuis, sancta Dei Génetrix.;;147
+
+[Hymnus Vespera]
+/:Prima stropha sequentis hymni dicitur flexis genibus.:/
+v. Ave maris stella,
+Dei Mater alma,
+Atque semper Virgo,
+Felix cæli porta.
+_
+Sumens illud Ave
+Gabriélis ore,
+Funda nos in pace,
+Mutans Hevæ nomen.
+_
+Solve vincla reis,
+Profer lumen cæcis,
+Mala nostra pelle,
+Bona cuncta posce.
+_
+Monstra te esse matrem,
+Sumat per te preces,
+Qui pro nobis natus,
+Tulit esse tuus.
+_
+Virgo singuláris,
+Inter omnes mitis,
+Nos culpis solútos
+Mites fac et castos.
+_
+Vitam præsta puram,
+Iter para tutum,
+Ut vidéntes Jesum,
+Semper collætémur.
+_
+Sit laus Deo Patri,
+Summo Christo decus,
+Spirítui Sancto,
+Tribus honor unus.
+Amen.
+
+[HymnusM Vespera]
+@:Hymnus Vespera
+
+[Versum 1]
+V. Dignáre me laudáre te, Virgo sacráta.
+R. Da mihi virtútem contra hostes tuos.
+
+[Ant 1]
+Sancta María, * succúrre míseris, juva pusillánimes, réfove flébiles, ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam festivitátem.
+
+[Oratio]
+Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére: et, gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia.
+$Per Dominum
+
+[Invit]
+Sancta María, Dei Génetrix Virgo, * Intercéde pro nobis.
+
+[Hymnus Matutinum]
+{:H-Quemterra:}v. Quem terra, pontus, sídera
+Colunt, adórant, prædicant,
+Trinam regéntem máchinam,
+Claustrum Maríæ bájulat.
+_
+Cui luna, sol, et ómnia
+Desérviunt per témpora,
+Perfúsa cæli grátia,
+Gestant puéllæ víscera.
+_
+Beáta Mater múnere,
+Cujus supérnus ártifex
+Mundum pugíllo cóntinens,
+Ventris sub arca clausus est.
+_
+Beáta cæli núntio,
+Fœcúnda sancto Spíritu,
+Desiderátus géntibus,
+Cujus per alvum fusus est.
+_
+* Jesu, tibi sit glória,
+Qui natus es de Vírgine,
+Cum Patre, et almo Spíritu
+In sempitérna sǽcula.
+Amen.
+
+[HymnusM Matutinum]
+@:Hymnus Matutinum:s/sídera/ǽthera/
+
+[Ant Matutinum]
+@:Ant MatutinumBMV:1-3
+@Commune/C6::4-5
+@:Ant MatutinumBMV:4-7
+
+[Ant MatutinumBMV]
+Benedícta tu * in muliéribus, et benedíctus fructus ventris tui.;;8
+Sicut myrrha * elécta, odórem dedísti suavitátis, sancta Dei Génetrix.;;18
+Ante torum * hujus Vírginis frequentáte nobis dúlcia cántica drámatis.;;23
+Sicut lætántium * ómnium nostrum habitátio est in te, sancta Dei Génetrix.;;86
+Gaude, María Virgo: * cunctas hǽreses sola interemísti in univérso mundo.;;95
+Dignáre me * laudáre te, Virgo sacráta: da mihi virtútem contra hostes tuos.;;96
+Post partum, * Virgo, invioláta permansísti: Dei Génetrix, intercéde pro nobis.;;97
+
+[Nocturn 1 Versum]
+@Commune/C6:Versum 1
+
+[Nocturn 2 Versum]
+@Commune/C6
+
+[Nocturn 3 Versum]
+@Commune/C6
+
+[Lectio1]
+De Parábolis Salomónis
+!Prov 8:12-17
+12 Ego sapiéntia hábito in consílio et erudítis intérsum cogitatiónibus. 
+13 Timor Dómini odit malum: arrogántiam, et supérbiam, et viam pravam, et os bilíngue detéstor. 
+14 Meum est consílium et ǽquitas, mea est prudéntia, mea est fortitúdo.
+15 Per me reges regnant, et legum conditóres justa decérnunt;
+16 per me príncipes ímperant, et poténtes decérnunt justítiam.
+17 Ego diligéntes me díligo; et qui mane vígilant ad me, invénient me.
+
+[Responsory1]
+R. Sancta et immaculáta virgínitas, quibus te láudibus éfferam, néscio: 
+* Quia quem cæli cápere non póterant, tuo grémio contulísti.
+V. Benedícta tu in muliéribus, et benedíctus fructus ventris tui.
+R. Quia quem cæli cápere non póterant, tuo grémio contulisti.
+
+[Lectio2]
+!Prov 8:18-25
+18 Mecum sunt divítiæ et glória, opes supérbæ et justítia. 
+19 Mélior est enim fructus meus auro et lápide pretióso, et genímina mea argénto elécto. 
+20 In viis justítiæ ámbulo, in médio semitárum judícii, 
+21 ut ditem diligéntes me et thesáuros eórum répleam. 
+22 Dóminus possidébit me in inítio viárum suárum, ántequam quidquam fáceret a princípio.
+23 Ab ætérno ordináta sum et ex antíquis, ántequam terra fíeret. 
+24 Nondum erant abýssi, et ego jam concépta eram; 
+25 necdum fontes aquárum erúperant, necdum montes gravi mole constíterant; ante colles ego parturiébar.
+
+[Responsory2]
+R. Congratulámini mihi, omnes qui dilígitis Dóminum: quia cum essem párvula, plácui Altíssimo, 
+* Et de meis viscéribus génui Deum et hóminem.
+V. Beátam me dicent omnes generatiónes, quia ancíllam húmilem respéxit Deus.
+R. Et de meis viscéribus génui Deum et hóminem.
+
+[Lectio3]
+!Prov 8:34-36; 9:1-5
+34 Beátus homo qui audit me, et qui vígilat ad fores meas cotídie, et obsérvat ad postes óstii mei. 
+35 Qui me invénerit, invéniet vitam, et háuriet salútem a Dómino; 
+36 qui autem in me peccáverit, lædet ánimam suam. Omnes, qui me odérunt, díligunt mortem.
+1 Sapiéntia ædificávit sibi domum, excídit colúmnas septem. 
+2 Immolávit víctimas suas, míscuit vinum et propósuit mensam suam.
+3 Misit ancíllas suas ut vocárent ad arcem et ad mœ́nia civitátis:
+4 Si quis est párvulus, véniat ad me. Et insipiéntibus locúta est: 
+5 Veníte, comédite panem meum, et bíbite vinum quod míscui vobis.
+
+[Responsory3]
+R. Beáta es, Virgo María, quæ Dóminum portásti, Creatórem mundi: 
+* Genuísti qui te fecit, et in ætérnum pérmanes Virgo.
+V. Ave, María, grátia plena; Dóminus tecum.
+R. Genuísti qui te fecit, et in ætérnum pérmanes Virgo.
+&Gloria
+R. Genuísti qui te fecit, et in ætérnum pérmanes Virgo.
+
+[Lectio4]
+Sermo sancti Joánnis Chrysóstomi
+!Apud Metaphrasten
+Dei Fílius non dívitem aut locuplétem áliquam féminam sibi matrem elégit, sed beátam Vírginem illam, cujus ánima virtútibus ornáta erat. Cum enim beáta María supra omnem humánam natúram castitátem serváret, proptérea Christum Dóminum in ventre concépit. Ad hanc ígitur sanctíssimam Vírginem et Dei Matrem accurréntes, ejus patrocínii utilitátem assequámur. Itaque, quæcúmque estis vírgines, ad Matrem Dómini confúgite; illa enim pulchérrimam, pretiosíssimam et incorruptíbilem possessiónem, patrocínio suo, vobis conservábit.
+
+[Responsory4]
+R. Sicut cedrus exaltáta sum in Líbano, et sicut cypréssus in monte Sion: quasi myrrha elécta, 
+* Dedi suavitátem odóris.
+V. Et sicut cinnamómum et bálsamum aromatízans.
+R. Dedi suavitátem odóris.
+
+[Lectio5]
+Magnum revéra miráculum, fratres dilectíssimi, fuit beáta semper Virgo María. Quid namque illa majus aut illústrius ullo umquam témpore invéntum est, seu aliquándo inveníri póterit? Hæc sola cælum ac terram amplitúdine superávit. Quidnam illa sánctius? Non Prophétæ, non Apóstoli, non Mártyres, non Patriárchæ, non Angeli, non Throni, non Dominatiónes, non Séraphim, non Chérubim; non deníque áliud quidpíam, inter creátas res visíbiles aut invisíbiles, majus aut excelléntius inveníri potest. Eádem ancílla Dei est et mater; eádem Virgo et Génetrix.
+
+[Responsory5]
+R. Quæ est ista quæ procéssit sicut sol, et formósa tamquam Jerúsalem? 
+* Vidérunt eam fíliæ Sion, et beátam dixérunt, et regínæ laudavérunt eam.
+V. Et sicut dies verni circúmdabant eam flores rosárum et lília convállium.
+R. Vidérunt eam fíliæ Sion, et beátam dixérunt, et regínæ laudavérunt eam.
+
+[Lectio6]
+Hæc ejus mater est, qui a Patre ante omne princípium génitus fuit; quem Angeli et hómines agnóscunt Dóminum rerum ómnium. Visne cognóscere quanto Virgo hæc præstántior sit cæléstibus Poténtiis? Illæ cum timóre et tremóre assístunt, fáciem velántes suam: hæc humánum genus illi offert, quem génuit. Per hanc et peccatórum véniam conséquimur. Ave ígitur, mater, cælum, puélla, virgo, thronus. Ecclésiæ nostræ decus, glória et firmaméntum: assídue pro nobis precáre Jesum, Fílium tuum et Dóminum nostrum, ut per te misericórdiam inveníre in die judícii, et quæ repósita sunt iis qui díligunt Deum bona cónsequi possímus, grátia et benignitáte Dómini nostri Jesu Christi: cum quo Patri simul et Sancto Spirítui glória, et honor, et impérium, nunc et semper in sǽcula sæculórum. Amen.
+
+[Responsory6]
+R. Ornátam monílibus fíliam Jerúsalem Dóminus concupívit: 
+* Et vidéntes eam fíliæ Sion, beatíssimam prædicavérunt, dicéntes: * Unguéntum effúsum nomen tuum.
+V. Astitit regína a dextris tuis in vestítu deauráto, circúmdata varietáte.
+R. Et vidéntes eam fíliæ Sion, beatíssimam prædicavérunt, dicéntes:
+&Gloria
+R. Unguéntum effúsum nomen tuum.
+
+[Lectio7]
+Léctio sancti Evangélii secúndum Lucam
+!Luc 11:27-28
+In illo témpore: Loquénte Jesu ad turbas, extóllens vocem quædam múlier de turba dixit illi: Beátus venter qui te portávit. Et réliqua.
+_
+Homilía sancti Bedæ Venerábilis Presbýteri 
+!Lib 4. cap. 49. in Luc. 11.
+Magnæ devotiónis et fídei hæc múlier osténditur, quæ, scribis et pharisǽis Dóminum tentántibus simul et blasphemántibus, tanta ejus incarnatiónem præ ómnibus sinceritáte cognóscit, tanta fidúcia confitétur, ut et præséntium prócerum calúmniam, et futurórum confúndat hæreticórum perfídiam. Nam, sicut tunc Judǽi, Sancti Spíritus ópera blasphemándo, verum consubstantialémque Patri Dei Fílium negábant; sic hærétici póstea, negándo Maríam semper Vírginem, Sancti Spíritus operánte virtúte, nascitúro cum humánis membris Unigénito Dei, carnis suæ matériam ministrásse, verum consubstantialémque matri Fílium hóminis fatéri non debére dixérunt.
+
+[Responsory7]
+R. Felix namque es, sacra Virgo María, et omni laude digníssima:
+* Quia ex te ortus est sol justítiæ, Christus, Deus noster.
+V. Ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam festivitátem.
+R. Quia ex te ortus est sol justítiæ, Christus, Deus noster.
+
+[Lectio8]
+Sed, si caro Verbi Dei secúndum carnem nascéntis a carne Vírginis matris pronuntiátur extránea, sine causa venter qui eam portásset, úbera quæ lactássent, beatificántur. Dicit autem Apóstolus: Quia misit Deus Fílium suum, factum ex mulíere, factum sub lege. Neque audiéndi sunt, qui legéndum putant: Natum ex mulíere, factum sub lege, sed Factum ex mulíere; quia concéptus ex útero virgináli, carnem non de níhilo, non aliúnde, sed matérna traxit ex carne. Alióquin nec vere Fílius hóminis dicerétur, qui oríginem non habéret ex hómine. Et nos ígitur, his contra Eutychen dictis, extollámus vocem cum Ecclésia cathólica, cujus hæc múlier typum gessit, extollámus et mentem de médio turbárum, dicamúsque Salvatóri: Beátus venter qui te portávit, et úbera quæ suxísti. Vere enim beáta parens, quæ, sicut quidam ait, Eníxa est puérpera Regem, qui cælum terrámque tenet per sǽcula.
+
+[Responsory8]
+R. Beátam me dicent omnes generatiónes, 
+* Quia fecit mihi Dóminus magna qui potens est, et sanctum nomen ejus.
+V. Et misericórdia ejus a progénie in progénies timéntibus eum.
+R. Quia fecit mihi Dóminus magna qui potens est, et sanctum nomen ejus.
+&Gloria
+R. Quia fecit mihi Dóminus magna qui potens est, et sanctum nomen ejus.
+
+[Lectio9]
+Quinímmo beáti qui áudiunt verbum Dei et custódiunt. Pulchre Salvátor attestatióni mulíeris ánnuit, non eam tantúmmodo quæ Verbum Dei corporáliter generáre merúerat, sed et omnes qui idem Verbum spiritáliter audítu fídei concípere, et boni óperis custódia vel in suo vel in proximórum corde párere et quasi álere studúerint, asséverans esse beátos; quia, et éadem Dei Génetrix, et inde quidem beáta quia Verbi incarnándi minístra facta est temporális, sed inde multo beátior quia ejúsdem semper amándi custos manébat ætérna.
+&teDeum
+
+[Versum 0]
+V. Ora pro nobis sancta Dei Génetrix.
+R. Ut digni efficiámur promissiónibus Christi.
+
+[Ant Laudes]
+@Commune/C7:Ant Vespera:1 s/;;.*//g
+@:Ant VesperaBMV:1 s/;;.*//g
+@Commune/C6:Ant Matutinum:7 s/;;.*//
+@Commune/C7:Ant Vespera:3 s/;;.*//
+@:Ant VesperaBMV:2 s/;;.*//
+
+[Capitulum Laudes]
+!Sir 24:14
+v. Ab inítio et ante sǽcula creáta sum, et usque ad futúrum sǽculum non désinam, et in habitatióne sancta coram ipso ministrávi.
+$Deo gratias.
+
+[Hymnus Laudes]
+{:Ogloriosavirginum:}v. O gloriósa vírginum,
+Sublímis inter sídera,
+Qui te creávit, párvulum
+Lacténte nutris úbere.
+_
+Quod Heva tristis ábstulit,
+Tu reddis almo gérmine:
+Intrent ut astra flébiles,
+Cæli reclúdis cárdines.
+_
+Tu Regis alti jánua
+Et aula lucis fúlgida:
+Vitam datam per Vírginem,
+Gentes redémptæ, pláudite.
+_
+* Jesu tibi sit glória,
+Qui natus es de Vírgine,
+Cum Patre, et almo Spíritu,
+In sempitérna sǽcula.
+Amen.
+
+[HymnusM Laudes]
+v. O gloriósa Dómina,
+Excélsa super sídera:
+Qui te creávit, próvide
+Lactásti sacro úbere.
+_
+Quod Heva tristis ábstulit,
+Tu reddis almo gérmine:
+Intrent ut astra flébiles,
+Cæli fenéstra facta es.
+_
+Tu Regis alti jánua,
+Et porta lucis fúlgida:
+Vitam datam per Vírginem,
+Gentes redémptæ, pláudite.
+_
+Glória tibi Dómine,
+Qui natus es de Vírgine,
+Cum Patr[e] et Sancto Spíritu,
+In sempitérna sǽcula. Amen.
+
+[Versum 2]
+@Commune/C6
+
+[Ant 2]
+Beáta es, * María, quæ credidísti: perficiéntur in te, quæ dicta sunt tibi a Dómino, allelúja.
+
+[Lectio Prima]
+!Sir 24:19-20
+v. In platéis sicut cinnamómum et bálsamum aromatízans odórem dedi: quasi myrrha elécta, dedi suavitátem odóris.
+
+[Responsory Breve Tertia]
+@Commune/C6
+
+[Capitulum Sexta]
+!Sir 24:15-16
+v. Et sic in Sion firmáta sum, et in civitáte sanctificáta simíliter requiévi, et in Jerúsalem potéstas mea. Et radicávi in pópulo honorificáto, et in parte Dei mei heréditas illíus, et in plenitúdine sanctórum deténtio mea.
+$Deo gratias.
+
+[Responsory Breve Sexta]
+@Commune/C6
+
+[Capitulum Nona]
+@:Lectio Prima
+$Deo gratias
+
+[Responsory Breve Nona]
+@Commune/C6
+
+[Versum Nona]
+@Commune/C6:Versum 2
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+Beátam me dicent * omnes generatiónes, quia ancíllam húmilem respéxit Deus.
+
+[Ant 43] (rubrica Ordo Praedicatorum)
+Corde et ánimo Christo canámus glóriam, in hac sacra solemnitáte præcélsæ Genitrícis Dei Maríæ.
+
+[Ant 44] (rubrica Ordo Praedicatorum)
+@:Ant 43
+
+[Introitus]
+!Sedulius
+v. Salve, sancta parens, eníxa puérpera Regem: qui cælum terrámque regit in sǽcula sæculórum.
+!Ps 44:2
+Eructávit cor meum verbum bonum: dico ego ópera mea Regi.
+&Gloria
+v. Salve, sancta parens, eníxa puérpera Regem: qui cælum terrámque regit in sǽcula sæculórum.
+
+[Lectio]
+Léctio libri Sapiéntiæ
+!Eccli 24:14-16
+Ab inítio et ante sǽcula creáta sum, et usque ad futúrum sǽculum non désinam, et in habitatióne sancta coram ipso ministrávi. Et sic in Sion firmáta sum, et in civitáte sanctificáta simíliter requiévi, et in Jerúsalem potéstas mea. Et radicávi in pópulo honorificáto, et in parte Dei mei heréditas illíus, et in plenitúdine sanctórum deténtio mea.
+
+[Graduale]
+Benedícta et venerábilis es, Virgo María: quæ sine tactu pudóris invénta es Mater Salvatóris.
+V. Virgo, Dei Génetrix, quem totus non capit orbis, in tua se clausit víscera factus homo. Allelúja, allelúja.
+V. Post partum, Virgo, invioláta permansísti: Dei Génetrix, intercéde pro nobis. Allelúja.
+
+[Graduale] (tempore Adventus)
+Benedícta et venerábilis es, Virgo María: quæ sine tactu pudóris invénia es Mater Salvatóris.
+V. Virgo, Dei Génetrix, quem totus non capit orbis, in tua se clausit víscera factus homo. Allelúja, allelúja.
+!Luc 1:28
+Ave, María, grátia plena; Dóminus tecum: benedícta tu in muliéribus. Allelúja.
+
+[GradualeP]
+Allelúja, allelúja.
+!Num 17:8
+v. Virga Jesse flóruit: Virgo Deum et hóminem génuit: pacem Deus réddidit, in se reconcílians ima summis. Allelúja.
+!Luc 1:28
+Ave, María, grátia plena; Dóminus tecum: benedícta tu in muliéribus. Allelúja.
+
+[Tractus]
+Benedícta et venerábilis es, Virgo María: quæ sine tactu pudóris invénia es Mater Salvatóris.
+V. Virgo, Dei Génetrix, quem totus non capit orbis, in tua se clausit víscera factus homo. 
+_
+!Tractus
+Gaude, María Virgo, cunctas hǽreses sola interemísti.
+V. Quæ Gabriélis Archángeli dictis credidísti.
+V. Dum Virgo Deum et hóminem genuísti: et post partum, Virgo, invioláta permansísti.
+V. Dei Génetrix, intercéde pro nobis.
+
+[Evangelium]
+Sequéntia ++ sancti Evangélii secúndum Lucam
+!Luc 11:27-28
+In illo témpore: Loquénte Jesu ad turbas, extóllens vocem quædam múlier de turba, dixit illi: Beátus venter, qui te portávit, et úbera, quæ suxísti. At ille dixit: Quinímmo beáti, qui áudiunt verbum Dei, et custódiunt illud.
+
+[Offertorium]
+!Luc 1:28 1:42
+Ave, María, grátia plena; Dóminus tecum: benedícta tu in muliéribus, et benedíctus fructus ventris tui. (Allelúja.)
+
+[Secreta]
+Tua, Dómine, propitiatióne, et beátæ Maríæ semper Vírginis intercessióne, ad perpétuam atque præséntem hæc oblátio nobis profíciat prosperitátem et pacem.
+$Per Dominum
+
+[Communio]
+Beáta víscera Maríæ Vírginis, quæ portavérunt ætérni Patris Fílium. (Allelúja.)
+
+[Postcommunio]
+Sumptis, Dómine, salútis nostræ subsídiis: da, quǽsumus, beátæ Maríæ semper Vírginis patrocíniis nos ubíque prótegi; in cujus veneratióne hæc tuæ obtúlimus majestáti.
+$Per Dominum

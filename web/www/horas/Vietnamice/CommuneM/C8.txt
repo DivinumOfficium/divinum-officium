@@ -1,0 +1,116 @@
+@Commune/C8
+
+[Rule]
+12 lectiones
+Antiphonas horas
+Divinum auxilium
+
+[Ant Vespera]
+@Commune/C8::s/112/147/
+
+[AntMatutinumM]
+Introíbo * in domum tuam, Dómine, † et adorábo ad templum sanctum tuum.;;5
+Dóminus * in templo sancto suo, † Dóminus in cælo sedes ejus.;;10
+Adoráte * Dóminum in aula sancta ejus.;;28
+Beáti, * qui hábitant in domo tua, Dómine; † in sǽcula sæculórum laudábunt te.;;83
+
+[Ant Matutinum]
+@:AntMatutinumM:1-2
+@Commune/C8::1
+@:AntMatutinumM:3
+@Commune/C8::2-3
+@:AntMatutinumM:4
+@Commune/C8::4 s/83/86/
+@Commune/C8::8 s/95/87/
+@Commune/C8::7
+@Commune/C8::6 s/87/95/
+@Commune/C8::9
+@Commune/C8::5 s/86/260;261;262/
+
+[Lectio1]
+@Commune/C8::1-5 s/-5/-3/
+
+[Lectio2]
+@Commune/C8:Lectio1:s/1-5/4-6/ s/1.*4/4/s
+@Commune/C8::2
+
+[Lectio3]
+@Commune/C8:Lectio2:s/6-9/7-9/ s/6.*//
+
+[Lectio4]
+@Commune/C8:Lectio3
+
+[Responsory4]
+R. Terríbilis est locus iste: † non est hic áliud nisi domus Dei et porta cæli:
+* Vere étenim Dóminus est in loco isto, et ego nesciébam.
+V. Vidit Jacob in somnis scalam, súmmitas ejus cælos tangébat, † et Ángelos Dei descendéntes et ascendéntes per eam, et ait.
+R. Vere étenim Dóminus est in loco isto, et ego nesciébam.
+
+[Lectio5]
+@Commune/C8:Lectio4:s/Et ideo.*//
+
+[Responsory5]
+@Commune/C8:Responsory4
+
+[Lectio6]
+@Commune/C8:Lectio4:3 s/.*(Et ideo)/$1/ s/$/~/
+@Commune/C8:Lectio5:s/Sicut.*//
+
+[Responsory6]
+@Commune/C8:Responsory5
+
+[Lectio7]
+@Commune/C8:Lectio5:s/.*(Sicut)/$1/
+
+[Responsory7]
+@Commune/C8:Responsory6
+
+[Lectio8]
+@Commune/C8:Lectio6
+
+[Responsory8]
+R. Quam dilécta tabernácula tua, Dómine, virtútum! † concupíscit et déficit ánima mea
+* In átria Dómini.
+V. Qui hábitant in domo tua, Dómine; in sǽculum sǽculi laudábunt te.
+R. In átria Dómini.
+
+[Lectio9]
+@Commune/C8:Lectio7
+
+[Responsory9]
+@Commune/C8:Responsory7
+
+[Lectio10]
+@Commune/C8:Lectio8:s/Zachǽus .*//s
+
+[Responsory10]
+@Commune/C8:Responsory8
+
+[Lectio11]
+@Commune/C8:Lectio8:s/.* Zachǽus /Zachǽus /s
+
+[Responsory11]
+R. Benedíctus es in templo sancto glóriæ tuæ quod ædificátum est
+* Ad laudem et glóriam nóminis tui Dómine.
+V. Bénedic domum istam quam ædificávi.
+R. Ad laudem et glóriam nóminis tui Dómine.
+
+[Lectio12]
+@Commune/C8:Lectio9
+
+[Responsory12]
+R. Vidi civitátem sanctam Jerúsalem novam, † descendéntem de cælo a Deo parátam:
+* Et audívi vocem de throno dicéntem: * Ecce tabernáculam Dei cum homínibus, et habitábit cum eis.
+V. Et ipsi pópulus ejus erunt, † et ipse Deus cum eis erit eórum Deus.
+R. Et audívi vocem de throno dicéntem: Ecce tabernáculam Dei cum homínibus, et habitábit cum eis.
+
+[MM Capitulum]
+@Commune/C8:Capitulum Sexta
+_
+@Commune/C8:Versum Tertia
+
+[Capitulum Laudes]
+@Commune/C8
+
+[Responsory SextaM]
+@Commune/C8:Versum Tertia

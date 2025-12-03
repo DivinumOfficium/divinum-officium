@@ -1,0 +1,32 @@
+@Tempora/Nat12
+
+[Rank]
+@Tempora/Nat12::s/16/15 et 16/
+
+[Rule]
+vide SanctiM/01-01
+Feria Te Deum
+
+[Lectio1]
+!Rom 15:17-21
+17 Hábeo ígitur glóriam in Christo Jesu ad Deum.
+18 Non enim áudeo áliquid loqui eórum, quæ per me non éfficit Christus in obediéntiam géntium, verbo et factis:
+19 in virtúte signórum, et prodigiórum, in virtúte Spíritus Sancti: ita ut ab Jerúsalem per circúitum usque ad Illýricum repléverim Evangélium Christi.
+20 Sic autem prædicávi Evangélium hoc, non ubi nominátus est Christus, ne super aliénum fundaméntum ædificárem:
+21 sed sicut scriptum est: Quibus non est annuntiátum de eo, vidébunt: et qui non audiérunt, intélligent.
+
+[Lectio2]
+!Rom 15:30-33
+30 Obsecro ergo vos fratres per Dóminum nostrum Jesum Christum, et per caritátem Sancti Spíritus, ut adjuvétis me in oratiónibus vestris pro me ad Deum,
+31 ut líberer ab infidélibus, qui sunt in Judǽa, et obséquii mei oblátio accépta fiat in Jerúsalem sanctis,
+32 ut véniam ad vos in gáudio per voluntátem Dei, et refrígerer vobíscum.
+33 Deus autem pacis sit cum ómnibus vobis. Amen.
+
+[Lectio3_]
+25 Ei autem, qui potens est vos confirmáre juxta Evangélium meum, et prædicatiónem Jesu Christi, secúndum revelatiónem mystérii tempóribus ætérnis táciti
+26 (quod nunc patefáctum est per Scriptúras prophetárum secúndum præcéptum ætérni Dei, ad obeditiónem fídei), in cunctis géntibus cógniti,
+27 soli sapiénti Deo, per Jesum Christum, cui honor et glória in sǽcula sæculórum. Amen.
+
+[Lectio3]
+@Tempora/Nat12:Lectio2:s/$/; 25-27/m
+@:Lectio3_

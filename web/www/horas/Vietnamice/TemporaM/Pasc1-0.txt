@@ -1,0 +1,76 @@
+@Tempora/Pasc1-0
+
+[Rule]
+12 lectiones
+
+[Ant Matutinum 3N]
+Allelúja, * noli flere, María, allelúja: † resurréxit Dóminus, † allelúja, allelúja.
+
+[Lectio1]
+@Tempora/Pasc1-0:Lectio1:s/-7/-4/ s/5 .*//s
+
+[Responsory1]
+@Tempora/Pasc0-0
+
+[Lectio2]
+@Tempora/Pasc1-0:Lectio1:2-9 s/1-7/5-8/ s/1 .*5 /5 /s
+@Tempora/Pasc1-0:Lectio2:2
+
+[Lectio3]
+@Tempora/Pasc1-0:Lectio2:s/8-/9-/ s/8 .*9 /9 /s
+
+[Lectio4]
+@Tempora/Pasc1-0:Lectio3
+
+[Responsory4]
+@Tempora/Pasc0-1:Responsory1
+
+[Lectio5]
+@Tempora/Pasc1-0:Lectio4
+
+[Responsory5]
+@Tempora/Pasc0-2:Responsory1
+
+[Lectio6]
+@Tempora/Pasc1-0:Lectio5:s/Apostólicis .*//s
+
+[Responsory6]
+@Tempora/Pasc0-2:Responsory2
+
+[Lectio7]
+@Tempora/Pasc1-0:Lectio5:s/.* Apostólicis /Apostólicis /s s/$/~/
+@Tempora/Pasc1-0:Lectio6:s/Sint .*//s
+
+[Responsory7]
+@Tempora/Pasc0-3:Responsory1
+
+[Lectio8]
+@Tempora/Pasc1-0:Lectio6:s/.* Sint /Sint /s
+
+[Responsory8]
+@Tempora/Pasc0-3:Responsory2
+
+[Lectio9]
+@Tempora/Pasc1-0:Lectio7:s/Illud .*//s
+
+[Responsory9]
+@Tempora/Pasc0-4:Responsory1
+
+[Lectio10]
+@Tempora/Pasc1-0:Lectio7:s/.* Illud /Illud /s s/$/~/
+@Tempora/Pasc1-0:Lectio8:s/Qua in .*//s
+
+[Responsory10]
+@Tempora/Pasc0-4:Responsory2
+
+[Lectio11]
+@Tempora/Pasc1-0:Lectio8:s/.* Qua in /Qua in /s
+
+[Responsory11]
+@Tempora/Pasc0-5:Responsory1
+
+[Lectio12]
+@Tempora/Pasc1-0:Lectio9
+
+[Responsory12]
+@Tempora/Pasc0-5:Responsory2

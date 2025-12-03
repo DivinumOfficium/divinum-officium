@@ -1,0 +1,139 @@
+@Sancti/08-20
+
+[Rule] (nisi rubrica 1963)
+12 lectiones
+
+[Hymnus Vespera] (nisi rubrica 1617)
+v. Jam Regína discúbuit,
+Sedens post Unigénitum:
+Nardus odórem tríbuit,
+Bernárdus tradens spíritum.
+_
+Dulcis Regínæ gústui
+Fructus sui suávitas:
+Dulcis ejus olfáctui
+Nardi Bernárdi sánctitas.
+_
+Veni sponsa de Líbano,
+Coronánda divínitus,
+Ut Bernárdus de clíbano
+Veníret Sancti Spíritus.
+_
+Quæ est ista progrédiens
+Velut auróra rútilans?
+Quis est iste transíliens
+Colles, sanctis conjúbilans?
+_
+Hæc glória terríbilis,
+Sicut castrórum ácies:
+Hic grátia mirábilis,
+Ut Assuéri fácies.
+_
+Ora pro nobis Dóminum,
+Prædúlcis fumi vírgula:
+Inclína Patrem lúminum,
+Pastor, ardens ut fácula.
+_
+Sit Trinitáti glória,
+Per quam triúmphus Vírginis
+Et Bernárdi felícitas
+Manent in cæli cúria.
+Amen.
+
+[Hymnus Matutinum] (nisi rubrica 1617)
+@:Hymnus Vespera
+
+[Responsory1] (rubrica 1963)
+@Commune/C4a:Responsory8
+
+[Lectio1] (rubrica 1617)
+@CommuneM/C5:Lectio1 in 2 loco
+
+[Lectio2] (rubrica 1617)
+@CommuneM/C5:Lectio2 in 2 loco
+
+[Lectio3] (rubrica 1617)
+@CommuneM/C5:Lectio3 in 2 loco
+
+[Lectio4] (rubrica 1617)
+@CommuneM/C5:Lectio4 in 2 loco
+
+[Lectio5]
+@Sancti/08-20:Lectio4:s/ Mónachus.*//
+
+[Lectio6]
+@Sancti/08-20:Lectio4:s/.* (?=Mónachus)// s/$/~/
+@Sancti/08-20:Lectio5:s/ Abbas.*//
+
+[Lectio7]
+@Sancti/08-20:Lectio5:s/.* (?=Abbas)// s/$/~/
+@Sancti/08-20:Lectio6:1 s/ In .*//
+
+[Lectio8]
+@Sancti/08-20:Lectio6:s/.* (?=In )//
+
+[Lectio8] (rubrica 1617)
+@Sancti/08-20:Lectio6:1 s/.* (?=In )// s/~//
+
+[Lectio9] (rubrica 1617)
+@SanctiM/07-11M::s/, et cétera.*/./
+
+[Lectio10] (rubrica 1617)
+@SanctiM/07-11M
+
+[Lectio11] (rubrica 1617)
+@SanctiM/07-11M::s/ Et .*//
+
+[Lectio12] (rubrica 1617)
+@SanctiM/07-11M:Lectio11:s/.* (?=Et )// s/$/~/
+@SanctiM/07-11M::s/: ejus.*/./
+
+[Hymnus Laudes] (nisi rubrica 1617)
+v. Lacte quondam profluéntes,
+Ite, montes vos procul:
+Ite, colles, fusa quondam
+Unde mellis flúmina;
+Israël, jactáre late
+Manna priscum désine.
+_
+Ecce cujus corde sudant,
+Cujus ore prófluunt
+Dulcióres lacte fontes,
+Mellis amnes ǽmuli:
+Ore tanto, corde tanto
+Manna nullum dúlcius.
+_
+Quæris unde duxit ortum
+Tanta lactis cópia;
+Unde favus, unde prompta
+Tanta mellis s[u]ávitas;
+Unde tantum manna fluxit,
+Unde tot dulcédines.
+_
+Lactis imbres Virgo fudit
+Cǽlitus puérpera:
+Mellis amnes os leónis
+Excitávit mórtui:
+Manna sylvæ, cælitúmque
+Solitúdo próxima.
+_
+Doctor o Bernárde, tantis
+Aucte cæli dótibus,
+Lactis hujus, mellis hujus,
+Funde rores désuper;
+Funde stillas, plenióre
+Jam potítus gúrgite.
+_
+Summa summo laus Parénti,
+Summa laus et Fílio:
+Far tibi sit, sancte, manans
+Ex utróque, Spíritus;
+Ut fuit, nunc et per ævum
+Compar semper glória.
+Amen.
+
+[Ant 2] (rubrica 1930)
+Bernárdus, * Doctor mellífluus, amícus Sponsi, Vírginis Matris præco miríficus, in clara valle pastor effúlsit claríssimus.
+
+[Ant 3] (nisi rubrica 1617)
+@Commune/C4a:Ant 1:s/N\./Bernárde/

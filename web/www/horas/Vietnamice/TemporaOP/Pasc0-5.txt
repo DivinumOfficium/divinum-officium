@@ -1,0 +1,44 @@
+@TemporaOP/Pasc0-1
+
+[Rank]
+@Tempora/Pasc0-5
+
+[Ant Matutinum]
+@TemporaOP/Pasc0-1::1 s/4/18/
+;;19
+;;20
+@Psalterium/Psalmi/Psalmi matutinum:Pasch 2 Versum
+
+[Lectio1]
+@Tempora/Pasc0-5::s/ in terris./ in terra./
+
+[Responsory1]
+@TemporaOP/Pasc0-2
+
+[Lectio2]
+@Tempora/Pasc0-5
+
+[Responsory2]
+@TemporaOP/Pasc0-2
+
+[Lectio3]
+@Tempora/Pasc0-5::s/ Qui.*//
+
+[Responsory3]
+@TemporaOP/Pasc0-2
+
+[Oratio]
+@Tempora/Pasc0-5
+
+[Ant 2]
+@Tempora/Pasc0-5
+
+[Ant 3]
+@Tempora/Pasc0-5
+
+[Oratio 3]
+@Tempora/Pasc0-5:Oratio
+_
+@TemporaOP/Pasc0-0:Post Oratio Vespera:1-2 s/R/Ant/ s/\n\*//
+_
+@Psalterium/Special/Major Special:Suffragium Paschale:3-8

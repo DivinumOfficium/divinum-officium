@@ -1,0 +1,50 @@
+@Sancti/10-28
+
+[Rule]
+12 lectiones
+
+[Oratio]
+@Sancti/10-28
+
+[Lectio1]
+@Tempora/Pasc6-6:LectioJudae1
+
+[Lectio2]
+@Tempora/Pasc6-6:LectioJudae2
+
+[Lectio3]
+@Tempora/Pasc6-6:LectioJudae3:s/-13/-10/ s/.11.*//s
+
+[Lectio4]
+@Tempora/Pasc6-6:LectioJudae3:s/9-/11-/ s/9 .*11/11/s
+
+[Lectio5]
+@Sancti/10-28:Lectio4
+
+[Lectio6]
+@CommuneM/C1:Lectio5
+(sed rubrica cisterciensis)
+@CommuneCist/C1:Lectio5
+
+[Lectio7]
+@CommuneM/C1:Lectio6
+(sed rubrica cisterciensis)
+@CommuneCist/C1:Lectio6
+
+[Lectio8]
+@CommuneM/C1:Lectio7
+(sed rubrica cisterciensis)
+@CommuneCist/C1:Lectio7
+
+[Lectio9]
+@Sancti/10-28:Lectio7:s/Et quod.*//s
+
+[Lectio10]
+@Sancti/10-28:Lectio7:s/.*Et quod/Et quod/s s/$/~/
+@Sancti/10-28:Lectio8:s/De fructu.*//s
+
+[Lectio11]
+@Sancti/10-28:Lectio8:s/.*De fructu/De fructu/s
+
+[Lectio12]
+@Sancti/10-28:Lectio9

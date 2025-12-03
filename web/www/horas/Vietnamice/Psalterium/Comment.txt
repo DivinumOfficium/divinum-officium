@@ -1,0 +1,125 @@
+[Source]
+Lấy từ sách Ca vịnh theo ngày
+Lấy từ sách Ca vịnh theo mùa
+Lấy từ phần riêng theo mùa
+Lấy từ phần riêng các thánh
+Lấy từ phần chung các thánh
+Quanh năm
+Ca vịnh và Câu xướng ngày Chủ nhật
+Ngoại lịch
+
+[Preces]
+phải có
+phải bỏ
+đặc biệt
+
+[Prima_Special]
+ngày lễ
+ngày thường
+
+[Suffragium]
+phải bỏ
+quanh năm
+mùa Phục sinh
+nghi tiết Tridentinô
+nghi tiết Xitô
+altovadense
+
+[Lectio]
+Nhớ ngày thường
+Nhớ ngày Chúa nhật
+Nhớ vị thánh
+Nhớ ngày Áp lễ Ba Vua
+
+[Martyrologium]
+đọc trước cho hôm sau
+
+[Menses]
+tháng Tám
+tháng Chín
+tháng Mười
+tháng Mười một
+tháng Mười hai
+
+[Festa]
+không có
+bậc lễ Đơn
+bậc lễ bán Kép
+(sed rubrica 1955)
+bậc lễ Đơn
+bậc lễ Kép
+bậc lễ Kép cả
+(sed rubrica 1570)
+bậc lễ Kép
+bậc lễ Kép bậc Nhì
+bậc lễ Kép bậc Nhất
+bậc lễ Kép bậc Nhất
+
+[Festa] (rubrica 196)
+Ngày thường
+Bậc IV
+Bậc III
+Bậc III
+Bậc III
+Bậc II
+Bậc I
+Bậc I
+
+[Festa] (rubrica cisterciensis)
+none
+iij. Lect. et M.
+xij. Lect. et M.
+MM. min.
+MM. maj.
+Serm. min.
+Serm. maj.
+Serm. maj.
+
+[Dominicae]
+bậc lễ Kép bậc Nhất
+Chủ nhật bậc lễ bán Kép bậc Nhất
+Chủ nhật bậc lễ bán Kép bậc Nhì
+Chủ nhật bậc lễ bán Kép mừng trước
+(sed rubrica Tridentina)
+Chủ nhật bậc lễ Đơn mừng trước
+Chủ nhật bậc lễ bán Kép mọn
+
+[Feriae]
+Ngày thường
+Ngày thường
+Ngày thường cả
+(sed rubrica Monastic.*Divino)
+Ngày thường ưu tiên bậc III
+Ngày thường cả
+(sed rubrica Monastic.*Divino)
+Ngày thường ưu tiên bậc II
+Ngày thường cả
+(sed rubrica Monastic.*Divino)
+Ngày thường ưu tiên bậc II
+Ngày thường cả
+Ngày thường cả
+Ngày thường cả
+
+[Vigilia]
+Kinh Canh thức
+
+[Dies Octavæ]
+Tuần Bát nhật
+
+[ordinis]
+bậc
+
+[classis]
+bậc
+
+[privilegiata]
+ưu tiên
+
+[bissextal note]
+{In anno bissextili Februarius est dierum} 29, {et Festum S. Matthiæ celebratur die} 25,
+(rubrica 195)
+{ac Festum S. Gabrielis a Virgo Perdolente die} 28 {Februarii,}
+{et bis dicitur} Sexto Kalendas, {id est die} 24 {et die} 25 {et littera Dominicalis, quæ assumpta fuit in mense Januario, mutatur in præcedentem; ut, si in Januario littera Dominicalis fuerit} A, {mutetur in præcedentem, quæ est} g {etc.; et littera} f {bis servit,} 24 {et} 25.
+
+[nigra19 note]
+{Hæc Epacta} 19 {nigra nunquam est in usu, nisi quando eadem anna concurrit cum Aurea numero} xix.

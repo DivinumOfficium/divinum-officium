@@ -1,0 +1,37 @@
+@Sancti/07-04oct
+
+[Rule]
+3 lectio
+
+[Ant Matutinum]
+@Commune/C1::3 s/;;.*//
+;;
+;;
+;;
+;;
+;;
+@Commune/C1::4 s/;;.*//
+
+[Lectio1]
+@Sancti/07-04oct:Lectio4
+
+[Lectio2]
+@Sancti/07-04oct:Lectio5
+
+[Lectio3]
+@Sancti/07-04oct:Lectio6
+
+[MM Capitulum]
+@SanctiM/07-03oct
+
+[Responsory Laudes]
+@Commune/C1:Responsory Breve Sexta
+
+[Responsory Vespera]
+@Commune/C1:Responsory Breve Tertia
+
+[Versum 3]
+@Commune/C1:Nocturn 2 Versum
+
+[Ant 3]
+@Sancti/07-03oct:Ant 1

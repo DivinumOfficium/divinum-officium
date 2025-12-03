@@ -1,0 +1,32 @@
+[Officium]
+@Tempora/Pasc5-3
+
+[Rule]
+no Te Deum
+
+[Oratio 2]
+v. Præsta, quǽsumus, omnípotens Deus: ut nostræ mentis inténtio quo solemnitátis ventúræ gloriósus Auctor ingréssus est semper inténdat; et quo fide pergit, conversatióne perveniat.
+$Per eundem
+
+[Lectio1]
+@Tempora/Pasc5-3::s/: et.*/./
+
+[Responsory1]
+@Tempora/Pasc5-3
+
+[Lectio2]
+@Tempora/Pasc5-3
+
+[Responsory2]
+@TemporaM/Pasc4-0:Responsory11:s/Introívimus/Introíbimus/
+
+[Lectio3]
+@Tempora/Pasc5-3::s/: ut.*//
+
+[Responsory3]
+@TemporaM/Pasc4-0:Responsory12
+&Gloria
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. / s/(, a.*)./$1$1./
+
+[Ant 2]
+@Tempora/Quad6-0:Ant 1

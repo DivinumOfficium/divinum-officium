@@ -1,0 +1,71 @@
+@Tempora/Quad5-0
+
+[Rule]
+12 lectiones
+
+[Ant Matutinum 3N]
+Ego * glóriam meam non quæro: † est qui quærat, et júdicet.
+
+[Lectio3]
+@Tempora/Quad5-0:Lectio3:s/-19/-16/ s/17 .*//s
+
+[Lectio4]
+@Tempora/Quad5-0:Lectio3:s/14-/17-/ s/14.*17/17/s
+
+[Responsory4]
+@Tempora/Quad5-1:Responsory1
+&Gloria
+@Tempora/Quad5-1:Responsory1:1-2 s/\n/ /
+
+[Lectio5]
+@Tempora/Quad5-0:Lectio4
+
+[Responsory5]
+@Tempora/Quad5-0:Responsory4
+
+[Lectio6]
+@Tempora/Quad5-0:Lectio5:s/Nec dubit.re .*//s
+
+[Responsory6]
+@Tempora/Quad5-0:Responsory5
+
+[Lectio7]
+@Tempora/Quad5-0:Lectio5:s/.* Nec dubit.re /Nec dubitáre /s s/$/~/
+@Tempora/Quad5-0:Lectio6:s/Beátus .*//s
+
+[Responsory7]
+@Tempora/Quad5-0:Responsory6
+
+[Lectio8]
+@Tempora/Quad5-0:Lectio6:s/.* Beátus /Beátus /s
+
+[Responsory8]
+@Tempora/Quad5-1:Responsory2
+&Gloria
+@Tempora/Quad5-1:Responsory2:1-2 s/\n/ /s
+
+[Lectio9]
+@Tempora/Quad5-0:Lectio7:s/Cæléstem .*//s
+
+[Responsory9]
+@Tempora/Quad5-0:Responsory7
+
+[Lectio10]
+@Tempora/Quad5-0:Lectio7:s/.* Cæléstem /Cæléstem /s s/$/~/
+@Tempora/Quad5-0:Lectio8:s/Hi profecto .*//s
+
+[Responsory10]
+@Tempora/Quad5-0:Responsory8
+
+[Lectio11]
+@Tempora/Quad5-0:Lectio8:s/.* Hi profecto /Hi profecto /s s/$/~/
+@Tempora/Quad5-0:Lectio9:s/Accepta .*//s
+
+[Responsory11]
+@Tempora/Quad5-0:Responsory9
+
+[Lectio12]
+@Tempora/Quad5-0:Lectio9:s/.* Accepta /Accepta /s
+
+[Responsory12]
+@Tempora/Quad5-1:Responsory3

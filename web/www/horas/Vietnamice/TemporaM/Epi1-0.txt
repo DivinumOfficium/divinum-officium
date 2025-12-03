@@ -1,0 +1,43 @@
+@Tempora/Epi1-0
+
+[Rule]
+12 lectiones
+Doxology=Epi
+
+[Ant Vespera] (rubrica cisterciensis)
+Jacob autem * génuit Joseph virum Maríæ; de qua natus est Jesus, qui vocátur Christus.;;109
+Angelus Dómini * appáruit in somnis Joseph, dicens: Joseph, fili David, noli timére accípere Maríam cónjugem tuam; quod enim in ea natum est, de Spíritu Sancto est.;;112
+Pastóres venérunt * festinántes, et invenérunt Maríam, et Joseph, et Infántem pósitum in præsépio.;;121
+Mirabántur omnes * in verbis grátiæ, quæ procedébant de ore ipsíus, et decébant: Nonne hic est fílius Joseph?;;126
+Magi, intrántes domum, * invenérunt Púerum cum María, matre ejus.
+
+[Commemoratio]
+@Tempora/Epi1-0a:Oratio
+(sed die Baptismatis)
+
+
+[Nocturn 1 Versum] (rubrica cisterciensis)
+V. Propter nos egénus factus est cum esset dives.
+R. Ut illíus inópia nos dívites essémus.
+
+[Nocturn 2 Versum] (rubrica cisterciensis)
+@Tempora/Epi1-0:Responsory Tertia:8-9
+
+[Nocturn 3 Versum] (rubrica cisterciensis)
+@Tempora/Epi1-0:Responsory Nona:8-9
+
+[Ant Laudes] (rubrica cisterciensis)
+@:Ant Vespera 3:s/;;.*//g
+
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
+[Ant Vespera 3] (rubrica cisterciensis)
+Fili, * quid fecísti nobis sic? Ecce pater tuus et ego doléntes quærebámus te. Quid est quod me quærebátis? nesciebátis quia in his, quæ Patris mei sunt, opórtet me esse?;;109
+Descéndit Jesus * cum eis, et venit Názareth, et erat súbditus illis.;;112
+Et Jesus proficiébat * sapiéntia, et ætate, et grátia apud Deum et hómines.;;121
+Mirábantur omnes * in verbis grátiæ, quæ procedébat de ore ipsíus, et dicébant: Nonne hic est fílius Joseph?;;126
+Et dicébant: * Unde huic sapiéntia hæc, et virtútes? Nonne hic est fabri fílius?;;147
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1

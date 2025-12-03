@@ -1,0 +1,122 @@
+[Officium]
+S. Annæ, Matris B.M.V.
+
+[Rank]
+;;Serm. min.;;5;;ex C7a
+(sed rubrica 1951)
+;;Duplex;;4;;ex C7a
+
+[Rule]
+ex C7a;
+12 lectiones
+
+[Name]
+Annæ
+
+[Oratio]
+Deus, qui beátæ Annæ grátiam conferre dignátus es, ut Genitrícis Unigéniti Fílii tui Mater éffici mererétur, § concéde propítius: * ut cujus solémnia celebrámus, § ejus apud te patrocíniis adjuvémur.
+$Per eumdem
+
+[Responsory Vespera 1] (rubrica altovadensis)
+R. Beáta progénies, unde María nata est.
+* O quam gloriósa est mater, quæ cæli Regínam génuit!
+V. Regáli ex progénie María exórta refúlget.
+R. O quam gloriósa est mater, quæ cæli Regínam génuit!
+
+[Hymnus Vespera]
+v. Orbis exúltans célebret hoc festum, 
+Prósequens Annam matrem Matris Christi, 
+Quam sacris credit áctibus adéptam, 
+Gáudia vitæ.
+_ 
+Abrahæ proles sacerdótum semen, 
+Fília regum, spéciem Hebræum, 
+stirpem Sanctórum méritis et vita 
+Nobilitávit. 
+_
+Stérili ventre prius infœcúnda, 
+Nutu divíno péperit Maríam 
+Dóminam rerum, títulum, florémque 
+Virginitatis. 
+_
+Hac mediánte Jesu Christe, nostros 
+Terge reátus, nóxia propulsans,
+Fíliæ suæ, tuæ Matris prece,
+Propitiátus.
+_
+Donet hoc nobis píetas Patérna,
+Simul cum Nato, Spiritúque sancto:
+Ut Matris Annæ précibus juvémur
+Tempus in omne.
+Amen.
+
+[Ant 1]
+Gaude, * mater magnæ prolis, ex te enim procéssit rútillans stella summi solis.
+
+[Hymnus Matutinum]
+v. Fœcúnda radix Isai 
+Florem pudícum gérminat, 
+Dei datúram Fílium 
+Orbi dat Anna Vírginem. 
+_
+Jam sperat humánum genus 
+Caput tenébris éxcitans, 
+Lucémque primam cónspicit 
+Annæ coruscántem sinu. 
+_
+Hanc vota puri péctoris
+Zelóque concéptæ preces
+Prolem meréntur ómnium
+Matrem salútis gígnere.
+_
+Deo Patri sit glória,
+Ejúsque soli Fílio,
+Cum Spíritu Paráclito,
+Et nunc, et in perpétuum.
+Amen.
+
+[Lectio5]
+@Sancti/07-26:Lectio4:s/Mérito.*//
+
+[Lectio6]
+@Sancti/07-26:Lectio4:s/.*(Mérito)/$1/s
+
+[Lectio7]
+@Sancti/07-26:Lectio5:s/Cónsonam.*//
+
+[Lectio8]
+@Sancti/07-26:Lectio5:s/.*(Cónsonam)/$1/ s/$/~/
+@Sancti/07-26:Lectio6:s/peperísti;.*/peperísti./
+
+[Hymnus Laudes]
+v. Claræ diéi gáudiis
+Gestit parens Ecclésia, 
+Annámque Judææ decus 
+Matrem Maríæ cóncinit.
+_
+Regum piórum sánguini 
+Jungens sacerdótes avos, 
+Illustris Anna spléndidis 
+Vincit genus virtútibus. 
+_
+Cœlo favente, cóntrahit 
+Thori fidélis vínculum: 
+Effœta dudum córpore
+Prolem beátam cóncipit.
+_
+Audit monéntis Angeli
+Felix parens oráculum:
+Castóque format péctore
+Perénne sidus vírginum.
+_
+Deo Patri sit glória,
+Ejúsque soli Fílio,
+Cum Spíritu Paráclito,
+Et nunc, et in perpétuum.
+Amen.
+
+[Ant 2]
+Cœléste benefícium * introívit in Annam, de qua nata est nobis pia Virgo María.
+
+[Ant 3]
+Jucundáre génitrix * Maríæ, quæ Virgo Deum péperit, et Mater est Messíæ.

@@ -1,0 +1,54 @@
+@TemporaOP/Pasc0-1
+
+[Rank]
+@Tempora/Pasc0-3
+
+[Ant Matutinum]
+@TemporaOP/Pasc0-1::1 s/4/11/
+;;12
+;;13
+@Tempora/Pasc0-0::4-5
+
+[Lectio1]
+@Tempora/Pasc0-3
+
+[Responsory1]
+@Tempora/Pasc0-3::1-2
+V. Et unus de senióribus dixit mihi: Ne fléveris: dignus est Agnus, qui occísus est, accípere virtútem, et fortitúdinem.
+@Tempora/Pasc0-3::4
+
+[Lectio2]
+@Tempora/Pasc0-3
+
+[Responsory2]
+@Tempora/Pasc1-0:Lectio1:3 s/^1 /R. /
+@Tempora/Pasc1-0:Lectio1:4 s/^2 (.*)/* \u\1/
+@Tempora/Pasc1-0:Lectio1:5 s/^3 /V. /
+@Tempora/Pasc1-0:Lectio1:4 s/^2 (.*?),.*/* \u\1./
+
+[Lectio3]
+@Tempora/Pasc0-3
+
+[Responsory3] 
+R. Surréxit Pastor bonus, qui pósuit ánimam suam pro óvibus suis,
+* Et pro suo grege mori dignátus est, Allelúja, allelúja.
+V. Etenim Pascha nostrum immolátus est Christus. 
+R. Et pro suo grege mori dignátus est, Allelúja, allelúja.
+&Gloria
+V. Alleluja, allelúja.
+
+[Oratio]
+@Tempora/Pasc0-3
+
+[Ant 2]
+@Tempora/Pasc0-3
+
+[Ant 3]
+@Tempora/Pasc0-3:Ant 3C
+
+[Oratio 3]
+@Tempora/Pasc0-3:Oratio
+_
+@TemporaOP/Pasc0-0:Post Oratio Vespera:1-2 s/R/Ant/ s/\n\*//
+_
+@Psalterium/Special/Major Special:Suffragium Paschale:3-8
