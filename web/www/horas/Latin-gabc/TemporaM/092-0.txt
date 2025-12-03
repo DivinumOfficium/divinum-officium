@@ -1,0 +1,21 @@
+[Lectio1]
+@Tempora/092-0:Lectio1:
+@Tempora/092-0:Lectio2:s/!.*// s/6 .*//s
+
+[Lectio2]
+@Tempora/092-0:Lectio2:s/-10/-9/ s/10 .*//s
+
+[Lectio3]
+@Tempora/092-0:Lectio2:1 s/6-10/10-13/
+@Tempora/092-0:Lectio2:6 s/\p{Letter}/\u$&/
+@Tempora/092-0:Lectio3:2-4
+
+[Lectio4]
+@Tempora/092-0:Lectio3:1 s/11-/14-/
+@Tempora/092-0:Lectio3:5-8 s/\p{Letter}/\u$&/
+
+[Lectio5]
+@Tempora/092-0:Lectio4:s/Sanctus .*//s
+
+[Lectio6]
+@Tempora/092-0:Lectio4:s/.* Sanctus /Sanctus /s

@@ -1,0 +1,11 @@
+[Lectio3]
+@Tempora/082-0:Lectio3:s/17/14/ s/.15 .*//s
+
+[Lectio4]
+@Tempora/082-0:Lectio3:s/12/15/ s/12 .*15/15/s
+
+[Lectio7]
+@Tempora/082-0:Lectio6:s/Nos .*//s
+
+[Lectio8]
+@Tempora/082-0:Lectio6:s/.* Nos/Nos/s

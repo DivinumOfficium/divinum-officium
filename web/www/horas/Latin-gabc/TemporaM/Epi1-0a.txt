@@ -1,0 +1,28 @@
+[Ant Matutinum 3N]
+Allelúja, * allelúja, allelúja.;;263;264;265
+
+[Lectio1]
+@Tempora/Epi1-0a:Lectio1:
+@Tempora/Epi1-0a:Lectio2:s/!.*// s/4 .*//s
+
+[Lectio2]
+@Tempora/Epi1-0a:Lectio2:
+@Tempora/Epi1-0a:Lectio3:s/!.*// s/10 .*//s
+
+[Lectio3]
+@Tempora/Epi1-0a:Lectio3:s/-13/-11/ s/12 .*//s
+
+[Lectio4]
+@Tempora/Epi1-0a:Lectio3:s/10-/12-/ s/10.*12/12/s
+
+[Lectio6]
+@Tempora/Epi1-0a:Lectio5:s/Hoc enim .*//s
+
+[Lectio7]
+@Tempora/Epi1-0a:Lectio5:s/.* Hoc enim /Hoc enim /s
+
+[Lectio10]
+@Tempora/Epi1-0a:Lectio8:s/Alibi .*//s
+
+[Lectio11]
+@Tempora/Epi1-0a:Lectio8:s/.* Alibi /Alibi /s

@@ -1,0 +1,45 @@
+[Lectio1]
+@Tempora/Adv3-0:Lectio1:s/-6/-3/ s/4 .*//s
+
+[Lectio2]
+@Tempora/Adv3-0:Lectio1:2-8 s/1-/4-/ s/1 .*4 /4 /s
+
+[Responsory4]
+R. Ecce véniet Dóminus princeps regum terræ;
+* Beáti qui paráti sunt occúrrere illi, † habébunt partem in civitáte Jerúsalem.
+V. Veniens veniet Dominus, et non tardabit.
+R. Beáti qui paráti sunt occúrrere illi, † habébunt partem in civitáte Jerúsalem.
+
+[Lectio5]
+@Tempora/Adv3-0:Lectio4:s/Quid .*//s
+
+[Lectio6]
+@Tempora/Adv3-0:Lectio4:s/.* Quid /Quid /s s/$/~/
+@Tempora/Adv3-0:Lectio5:s/Sed quia .*//s
+
+[Lectio7]
+@Tempora/Adv3-0:Lectio5:s/.* Sed quia /Sed quia /s s/$/~/
+@Tempora/Adv3-0:Lectio6:s/Quarta .*//s
+
+[Lectio8]
+@Tempora/Adv3-0:Lectio6:s/.* Quarta /Quarta /s
+
+[Responsory8]
+R. Egrediétur virga de radíce Jesse, et flos de radíce ejus ascendet:
+* Et erit justítia cíngulum lumbórum ejus, † et fides cinctórium renum ejus.
+V. Et requiéscet super eum spíritus Dómini: † spíritus sapiéntiæ, et intelléctus: spíritus consílii, et fortitúdinis.
+R. Et erit justítia cíngulum lumbórum ejus, † et fides cinctórium renum ejus.
+
+[Lectio9]
+@Tempora/Adv3-0:Lectio7:s/Cum ergo .*//s
+
+[Lectio10]
+@Tempora/Adv3-0:Lectio7:s/.* Cum ergo /Cum ergo /s s/$/~/
+@Tempora/Adv3-0:Lectio8:s/Requisítus .*//s
+
+[Lectio11]
+@Tempora/Adv3-0:Lectio8:s/.* Requisítus /Requisítus /s s/$/~/
+@Tempora/Adv3-0:Lectio9:s/Ad Zacharíam .*//s
+
+[Lectio12]
+@Tempora/Adv3-0:Lectio9:s/.* Ad Zacharíam /Ad Zacharíam /s

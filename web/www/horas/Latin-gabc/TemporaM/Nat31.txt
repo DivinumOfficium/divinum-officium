@@ -1,0 +1,29 @@
+[Lectio1] (rubrica 1963)
+@Tempora/Nat30:Lectio7:s/_.*/_\n/s
+@Tempora/Nat30:Lectio4
+
+[Lectio1] (rubrica divino)
+@Tempora/Nat29::s/\-7/-10/
+@Tempora/Nat29:Lectio2:2-4 
+(sed feria 2 aut feria 3 omittitur)
+(feria 2 aut feria 3 dicitur)
+@Tempora/Nat30
+
+[Lectio1] (rubrica tridentina)
+@TemporaM/Nat1-0
+(sed feria 2 aut feria 3)
+@Tempora/Nat30::1-4 s/\-4/-2/
+
+[Lectio2] (rubrica divino)
+@Tempora/Nat29:Lectio2:s/8-12/11-19/ s/8 .*11 /11 /s
+@Tempora/Nat29:Lectio3:2-8
+(sed feria 2 aut feria 3 omittitur)
+(feria 2 aut feria 3 dicuntur)
+@Tempora/Nat30::s/\-8/-13/
+@Tempora/Nat30:Lectio3:2-6
+
+[Lectio2] (rubrica tridentina)
+@TemporaM/Nat1-0
+(sed feria 2 aut feria 3 dicuntur)
+@Tempora/Nat30:Lectio1:2 s/1/3/
+@Tempora/Nat30:Lectio1:5-6

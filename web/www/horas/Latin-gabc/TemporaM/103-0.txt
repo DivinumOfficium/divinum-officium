@@ -1,0 +1,23 @@
+[Lectio1]
+@Tempora/103-0:Lectio1:s/-6/-4/ s/5 .*//s
+
+[Lectio2]
+@Tempora/103-0:Lectio1:2-8 s/-6/-9/ s/1-/5-/ s/1 [^M].*5 /5 /s
+@Tempora/103-0:Lectio2:s/!.*// s/10 .*//s
+
+[Lectio3]
+@Tempora/103-0:Lectio2:s/-11/-13/ s/7-/10-/ s/7 .*10 /10 /s
+@Tempora/103-0:Lectio3:s/!.*// s/14 .*//s
+
+[Lectio4]
+@Tempora/103-0:Lectio3:s/12-/14-/ s/12 .*14/14/s
+
+[Lectio5]
+@Tempora/103-0:Lectio4:s/Ita commísso .*//s
+
+[Lectio6]
+@Tempora/103-0:Lectio4:s/.* Ita commísso /Ita commísso /s s/$/~/
+@Tempora/103-0:Lectio5:s/Habes .*//s
+
+[Lectio7]
+@Tempora/103-0:Lectio5:s/.* Habes /Habes /s

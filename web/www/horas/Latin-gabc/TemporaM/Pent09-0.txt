@@ -1,0 +1,21 @@
+[Lectio1]
+@Tempora/Pent09-0::s/-4/-2/ s/3.*//s
+
+[Lectio2]
+@Tempora/Pent09-0:Lectio1:s/.*!/!/s s/1-/3-/ s/1 .*3 /3 /s
+
+[Lectio5]
+@Tempora/Pent09-0:Lectio4:s/ Illa .*//s
+
+[Lectio6]
+@Tempora/Pent09-0:Lectio4:s/.* Illa/Illa/s s/$/~/
+@Tempora/Pent09-0:Lectio5:s/contémptus. .*/contémptus./s
+
+[Lectio7]
+@Tempora/Pent09-0:Lectio5:s/.*contémptus. //s
+
+[Lectio9]
+@Tempora/Pent09-0:Lectio7:s/vallo. .*/vallo./
+
+[Lectio10]
+@Tempora/Pent09-0:Lectio7:s/.* vallo. //s

@@ -1,0 +1,80 @@
+[Oratio]
+{(c3) Con(h)cé(h)de,(h) quǽ(h)su(h)mus(h) om(h)ní(h)pot(h)ens(h) De(h)us,(h) ut(h) ad(h) me(h)li(h)ó(h)rem(h) vi(h)tam(h) sanc(h)tó(h)rum(h) Mo(h)na(h)chó(h)rum(h) ex(h)ém(h)pla(h) nos(h) pró(h)vo(f)cent:(f.) †(,) quá(h)te(h)nus,(h) quo(h)rum(h) so(h)lém(h)ni(g)a(f) á(h)gi(hr)mus,(h.) *(;) ét(h)i(h)am(h) ac(h)tus(h) i(h)mi(h)té(h dr)mur.(d.) (::)}
+$Per Dominum
+
+[Hymnus Matutinum]
+@Sancti/11-01:HymnusM Laudes:1-5
+@Sancti/11-01:HymnusM Laudes:21-30
+
+[Responsory3]
+R. Hæc est vera fratérnitas, quæ numquam pótuit violári certámine: † qui, effúso sánguine secúti sunt Dóminum:
+* Contemnéntes aulam régiam, pervenérunt ad regna cæléstia.
+V. Ecce quam bonum et quam jucúndum habitáre fratres in unum!
+R. Contemnéntes aulam régiam, pervenérunt ad regna cæléstia.
+
+[Responsory5]
+R. Sacerdótes Dei, benedícite Deum
+* Sancti et húmiles corde laudáte Deum.
+V. Spíritus et ánimæ justárum, hymnum dícite Deo nostro.
+R. Sancti et húmiles corde laudáte Deum.
+
+[Responsory12]
+R. Córpora Sanctórum in pace sepúlta sunt,
+* Et nómina eórum vivent in generatiónem et generatiónem.
+V. Sapiéntiam Sanctórum narrent pópuli, † et laudem eórum pronúntiet Ecclésia.
+R. Et nómina eórum vivent in generatiónem et generatiónem.
+
+[Ant Laudes]
+Fulgébunt justi * sicut sol in regno Patris eórum, dicit Dóminus.
+Beáti éritis, * cum vos óderint hómines, et cum separáverint vos, et exprobráverint, et ejécerint nomen vestrum tamquam malum propter Fílium hóminis: gaudéte et exsultáte; ecce enim merces vestra multa est in cælis.
+Gaudent in cælis * ánimæ Sanctórum, qui Christi vestígia sunt secúti: et quia pro ejus amóre sánguinem suum fudérunt, ídeo cum Christo exsúltant sine fine.
+Sancti Dómini * Dóminum benedcite in ætérnum.
+O quam gloriósum est regnum * in quo cum Christo gaudent omnes Sancti, amícti stolis albis sequúntur Agnum quocúmque íerit!
+
+[Capitulum Laudes]
+!Isa 8:18
+{(c3) Ec(h)ce(h) e(h)go(h) et(h) pú(h)e(h)ri(h) me(h)i(h) quos(h) de(h)dit(h) mi(h)hi(h) Dó(h)mi(h)nus(h) in(h) si(h)gnum,(f.) †(;) et(h) in(h) por(h)tén(h)tum(h) Is(h)ra(h)ël(h) a(h) Dó(h)mi(h)no(h) ex(g)er(f)cí(h)tu(hr)um,(h.) *(;) qui(h) há(h)bi(h)tat(h) in(h) mon(h)te(h) Si(f)on.(ef..) (::)}
+$Deo gratias
+
+[Hymnus Laudes]
+Salvéte, cedri Líbani,
+Plantæ viréntes Ordinis,
+Quæ prata nunc cæléstia
+Implétis almo gérmine.
+_
+Vos Trinitátis glória
+Ætérna circumpléctitur:
+Vos aura Matris Vírginis
+Mulcet piis favóniis.
+_
+Vos Angelórum cúriæ
+Cingunt choréa pérpetim,
+Et írrigant puríssimi
+Æternitátis rívuli.
+_
+O ínclytæ propágines,
+Vestros juváte fílios:
+In valle mæsta débiles
+Nos roboráte súrculos.
+_
+Sit laus Patri, cum Fílio,
+Simúlque dulci Flámini,
+Læti quibúscum vívitis
+In sempitérno lúmine.
+Amen.
+
+[Capitulum Sexta]
+!Sir 44:7
+{(c3) Om(h)nes(h) is(h)ti(h) in(h) ge(h)ne(h)ra(h)ti(h)ó(h)ni(h)bus(h) gen(h)tis(h) su(h)æ(h) gló(h)ri(h)am(g) ad(f)ép(h)ti(hr) sunt,(h.) *(;) et(h) in(h) di(h)é(h)bus(h) su(h)is(h) ha(h)bén(h)tur(h) in(h) láu(h)di(f)bus.(ef..) (::)}
+$Deo gratias
+
+[Capitulum Nona]
+!Sir 44:13
+{(c3) Fí(h)li(h)i(h) e(h)ó(h)rum(h) prop(h)ter(h) il(h)los(h) us(h)que(h) in(h) æ(h)tér(g)num(f) ma(h hr)nent:(h.) *(;) se(h)men(h) e(h)ó(h)rum(h) et(h) gló(h)ri(h)a(h) e(h)ó(h)rum(h) non(h) de(h)re(h)lin(h)qué(f)tur.(ef..) (::)}
+$Deo gratias
+
+[Ant Vespera 3]
+@:Ant Laudes:s/$/_/gm s/_/;;109/ s/_/;;111/ s/_/;;112/ s/_/;;115/ s/_//
+
+[Ant 3]
+In regeneratióne, cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos, super sedes duódecim, judicántes duódecim tribus Israël.

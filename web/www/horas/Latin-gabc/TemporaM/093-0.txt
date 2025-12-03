@@ -1,0 +1,47 @@
+[Lectio1]
+@Tempora/093-0:Lectio1:
+@Tempora/093-0:Lectio2:s/!.*// s/5 .*//s
+
+[Lectio2]
+@Tempora/093-0:Lectio2:s/-10/-8/ s/9 .*//s
+
+[Lectio3]
+@Tempora/093-0:Lectio2:s/-10/-12/ s/5-/9-/ s/5 .*9 /9 /s
+@Tempora/093-0:Lectio3:s/!.*// s/13 .*//s
+
+[Lectio4]
+@Tempora/093-0:Lectio3:s/11-/13-/ s/11 .*13 /13 /s
+
+[Responsory4]
+R. Omníbus diébus vitæ tuæ in mente habéto Deum:
+* Et cave, ne aliquándo peccáto conséntias, † et prætermíttas præcépta Dómini Dei nostri.
+V. Ex substántia tua fac eleemósynam, † et noli avértere fáciem tuam ab ullo páupere.
+R. Et cave, ne aliquándo peccáto conséntias, † et prætermíttas præcépta Dómini Dei nostri.
+
+[Lectio6]
+@Tempora/093-0:Lectio5:s/Esuriámus .*//s
+
+[Lectio7]
+@Tempora/093-0:Lectio5:s/.* Esuriámus /Esuriámus /s s/$/~/
+@Tempora/093-0:Lectio6:s/Quarta .*//s
+
+[Lectio8]
+@Tempora/093-0:Lectio6:s/.* Quarta /Quarta /s
+
+[Responsory8]
+R. Bona est orátio cum jejúnio, et eleemósyna
+* Quóniam ipsa est quæ purgat peccáta.
+V. Et facit inveníre misericórdiam et viam ætérnam.
+R. Quóniam ipsa est quæ purgat peccáta.
+
+[Responsory10]
+R. Audíte, fílii mei, patrem vestrum: † servíte Dómino in veritáte, et inquírite ut faciátis quæ plácita sunt illi: et fíliis vestris mandáte
+* Ut fáciant justítias et eleemósynas.
+V. Ut sint mémores Dei, et benedícant eum in omni témpore † in veritáte, et in tota virtúte sua.
+R. Ut fáciant justítias et eleemósynas.
+
+[Responsory11]
+R. Benedícat te Dóminus in virtúte sua, † qui per te ad níhilum redégit inimícos nostros:
+* Ut non defíciat laus tua de ore hóminum.
+V. Benedíctus Dóminus qui creávit cælum et terram: † quia hódie nomen tuum ita magnificávit.
+R. Ut non defíciat laus tua de ore hóminum.

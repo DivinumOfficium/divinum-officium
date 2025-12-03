@@ -1,0 +1,42 @@
+[Lectio1]
+@Tempora/Pent03-0:Lectio1:1-5 s/-21/-20/
+
+[Lectio2]
+@Tempora/Pent03-0:Lectio1:2-6 s/18-21/21-22/ s/18 .*21 /21 /s 
+@Tempora/Pent03-0:Lectio2:2
+
+[Lectio3]
+@Tempora/Pent03-0:Lectio2:s/22-/23-/ s/22 .*23 /23 /s
+
+[Lectio4]
+@Tempora/Pent03-0:Lectio3
+(sed rubrica cisterciensis)
+@Tempora/Pent03-0:Lectio3:s/26-// s/26 .*//
+
+[Lectio5]
+@Tempora/Pent03-0o:Lectio4:s/ Oleum .*//
+
+[Lectio6]
+@Tempora/Pent03-0o:Lectio4:s/.* (?=Oleum)//s s/$/~/
+@Tempora/Pent03-0o:Lectio5:s/ Ungátur .*//
+
+[Lectio7]
+@Tempora/Pent03-0o:Lectio5:s/.* (?=Ungátur)//
+
+[Lectio9]
+@Tempora/Pent03-0:Lectio7:s/Quamvis .*//s
+(sed rubrica cisterciensis)
+@Tempora/Pent03-0:Lectio7:s/dedignári:.*/dedignári./s
+
+[Lectio10]
+@Tempora/Pent03-0:Lectio7:s/.* Quamvis /Quamvis /s s/$/~/
+(sed rubrica cisterciensis)
+@Tempora/Pent03-0:Lectio7:s/.* sed áliud/Sed áliud/s s/$/~/
+@Tempora/Pent03-0:Lectio8:s/Præpónunt .*//s
+
+[Lectio11]
+@Tempora/Pent03-0:Lectio8:s/.* Præpónunt /Præpónunt /s s/$/~/
+@Tempora/Pent03-0:Lectio9:s/De quorum .*//s
+
+[Lectio12]
+@Tempora/Pent03-0:Lectio9:s/.* De quorum /De quorum /s

@@ -1,0 +1,8 @@
+[Lectio1]
+@Tempora/Nat01o::1-6 s/\-6/-4/
+
+[Lectio2]
+@Tempora/Nat01o:Lectio1:2 s/1/5/ s/6/6, 29-31/
+@Tempora/Nat01o:Lectio1:7-8
+@Tempora/Nat31:Lectio3:4-6 s/$/¶/
+@Tempora/Nat01:Lectio1:2-9 s/8/7/

@@ -1,0 +1,9 @@
+[Lectio9]
+@Tempora/Pent16-0:Lectio7:s/Huic .*//s
+
+[Lectio10]
+@Tempora/Pent16-0:Lectio7:s/.*Huic /Huic /s s/$/~/
+@Tempora/Pent16-0:Lectio8:s/: nec .*/./s
+
+[Lectio11]
+@Tempora/Pent16-0:Lectio8:s/.*: nec /Nec /s

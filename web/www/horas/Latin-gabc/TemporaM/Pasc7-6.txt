@@ -1,0 +1,9 @@
+[Responsory Vespera]
+@TemporaM/Pasc7-1
+
+[Ant Matutinum]
+@Tempora/Pasc7-0::1 s/;;47//
+@Psalterium/Psalmi/Psalmi matutinum:Daym6:2-6 s/.*;;/;;/g
+@Tempora/Pasc7-0:Versum 1
+@TemporaM/Pasc7-3:AntMatutinumM
+@Psalterium/Psalmi/Psalmi matutinum:Daym6:10-14 s/.*;;/;;/g

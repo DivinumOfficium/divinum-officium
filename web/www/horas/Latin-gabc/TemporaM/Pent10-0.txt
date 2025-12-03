@@ -1,0 +1,25 @@
+[Lectio1]
+@Tempora/Pent10-0::s/34/33/ s/.34 .*//s
+
+[Lectio2]
+@Tempora/Pent10-0:Lectio1:2-8 s/29-34/34-37/ s/29 .*34/34/s
+@Tempora/Pent10-0:Lectio2:s/!.*// s/1 .*//s
+
+[Lectio3]
+@Tempora/Pent10-0:Lectio2:s/9:35-37; // s/35 .*1 /1 /s
+
+[Lectio7]
+@Tempora/Pent10-0:Lectio6:s/exiérunt. .*/exiérunt./
+
+[Lectio8]
+@Tempora/Pent10-0:Lectio6:s/.* exiérunt. //
+
+[Lectio10]
+@Tempora/Pent10-0:Lectio8:s/ Publicánus.*//
+
+[Lectio11]
+@Tempora/Pent10-0:Lectio8:s/.*? Publicánus/Publicánus/ s/$/~/
+@Tempora/Pent10-0:Lectio9:s/Adhuc .*//
+
+[Lectio12]
+@Tempora/Pent10-0:Lectio9:s/.*? Adhuc/Adhuc/
