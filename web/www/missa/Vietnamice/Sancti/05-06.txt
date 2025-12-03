@@ -1,0 +1,45 @@
+[Officium]
+S. Joannis Apostoli ante Portam Latinam
+
+[Rank]
+;;Duplex majus;;4;;ex C1
+
+[Rule]
+Gloria
+Credo
+Prefatio=Apostolis
+
+[Introitus]
+@Commune/C2p
+
+[Oratio]
+Deus, qui cónspicis, quia nos úndique mala nostra pertúrbant: præsta, quǽsumus; ut beáti Joánnis Apóstoli tui et Evangelístæ intercéssio gloriósa nos prótegat.
+$Per Dominum.
+
+[Lectio]
+@Commune/C2p
+
+[Graduale]
+Allelúja, allelúja
+!Ps 91:13
+Justus ut palma florébit: sicut cedrus Líbani multiplicábitur. Allelúja
+!Ps 14:6
+V. Justus germinábit sicut lílium: et florébit in ætérnum ante Dóminum. Allelúja.
+
+[Evangelium]
+Sequéntia ++ sancti Evangélii secúndum Matthǽum
+!Matt 20:20-23
+In illo témpore: Accessit ad Jesum mater filiórum Zebedæi cum fíliis suis, adórans et petens áliquid ab eo. Qui dixit ei: Quid vis? Ait illi: Dic, ut sédeant hi duo fílii mei, unus ad déxteram tuam et unus ad sinístram in regno tuo. Respóndens autem Jesus, dixit: Néscitis, quid petátis. Potéstis bíbere cálicem, quem ego bibitúrus sum? Dicunt ei: Póssumus. Ait illis: Cálicem quidem meum bibétis: sedére autem ad déxteram meam vel sinístram, non est meum dare vobis, sed quibus parátum est a Patre meo.
+
+[Offertorium]
+@Commune/C2p
+
+[Secreta]
+@Commune/C2-1
+
+[Communio]
+@Commune/C2p
+
+[Postcommunio]
+Refécti, Dómine, pane cœlésti: ad vitam, quǽsumus, nutriámur ætérnam.
+$Per Dominum

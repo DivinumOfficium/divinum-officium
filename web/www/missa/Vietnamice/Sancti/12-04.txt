@@ -1,0 +1,46 @@
+[Officium]
+S. Petri Chrysologi Episcopi Confessoris et Ecclesiæ Doctoris
+
+[Rank]
+;;Duplex;;3;;vide C4a
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C4a
+(sed rubrica cisterciensis)
+;;Simplex;;1.2;;vide C4a
+
+[Rule]
+vide C4a;
+Gloria
+CredoDA
+
+[Name]
+Petrum Chrysólogum
+Secreta=Petri Chrysólogi
+Postcommunio=Petrus Chrysólogus
+
+[Introitus]
+@Commune/C4a
+
+[Oratio]
+Deus, qui beátum Petrum Chrysólogum Doctórem egrégium, divínitus præmonstrátum, ad regéndam et instruéndam Ecclésiam tuam éligi voluísti: præsta, quǽsumus; ut, quem Doctórem vitæ habúimus in terris, intercessórem habére mereámur in cœlis.
+$Per Dominum
+
+[Lectio]
+@Commune/C4a
+
+[Graduale]
+!Eccli 44:16
+Ecce sacérdos magnus, qui in diébus suis plácuit Deo.
+!Eccli 44:20
+Non est invéntus símilis illi, qui conservaret legem Excélsi. Allelúja, allelúja.
+!Ps 109:4
+Tu es sacérdos in ætérnum, secúndum órdinem Melchísedech. Allelúja.
+
+[Evangelium]
+@Commune/C4a
+
+[Offertorium]
+@Commune/C4a
+
+[Communio]
+@Sancti/07-23

@@ -1,142 +1,142 @@
 [Incipit]
-/: Sacerdos :/~
+/: Thầy cả :/~
 (sed rubrica Monastica)
-/: Superior vel Sacerdos hebdomadarius :/~
-/: benedicturus mensam, incipit :/
-Benedicite. /:et alii repetunt:/ Benedicite.
-/: Deinde incipit Versum. :/
+/: Bề trên hay là Thầy trực tuần :/~
+/: làm phép bàn ăn, thì khởi sự :/
+Hãy chúc tụng. /:và các kẻ khác lặp lại:/ Hãy chúc tụng.
+/: Đoạn thì khởi sự Câu xướng. :/
 
 [Versus Ante]
 $REGULAR_VERSUS
 (sed tempore Nativitatis)
-V. Verbum caro factum est, alleluja.
+v. Lời đã làm người, allêluia.
 (sed die Sabbato Sancto)
-V. Vespere autem sabbati, quæ lucescit in prima sabbati, alleluja.
+v. Chiều ngày thứ bảy, rạng ngày thứ nhất, allêluia.
 (sed tempore Octava Paschæ)
-V. Hæc dies quam fecit Dominus, alleluja.
+v. Ngày này là ngày Chúa đã làm ra, allêluia.
 (sed tempore Octava Ascensionis)
-V. Ascendit Deus in jubilatione, alleluja.
+v. Đức Chúa Lời lên nơi vui vẻ, allêluia.
 (sed tempore Octava Pentecostes)
-V. Spiritus Domini replevit orbem terrarum, alleluja.
+v. Thánh Thần Chúa đã đầy dẫy khắp hoàn cầu, allêluia.
 _
 (sed tempore Nativitatis)
-V. Et habitavit in nobis, alleluja
+v. Và ở cùng chúng tôi, allêluia.
 (sed die Sabbato Sancto)
-R. Venit Maria Magdalene, et altera Maria, videre sepulcrum, alleluja.
+R. Maria Mađalêna và Maria khác đến xem mồ, allêluia.
 (sed tempore Octava Paschæ)
-R. Exsultemus et lætemur in ea, alleluja.
+R. Chúng tôi hãy mừng rỡ và vui vẻ trong ngày ấy, allêluia.
 (sed tempore Octava Ascensionis)
-R. Et Dominus in voce tubæ, alleluja.
+R. Và Chúa ngự lên trong tiếng kèn thổi, allêluia.
 (sed tempore Octava Pentecostes)
-R. Et hoc quod continet omnia, scientiam habet vocis, alleluja.
+R. Và Đấng bao trùm mọi sự, thì thông biết mọi tiếng nói, allêluia.
 
 [Versus Ante Prandium]
-@:Versus Ante:s/\$REGULAR_VERSUS/V. Oculi omnium, * in te sperant, Domine, et tu das escam illorum in tempore opportuno. Aperis tu manum tuam, et imples omne animal benedictione./
+@:Versus Ante:s/\$REGULAR_VERSUS/v. Lạy Chúa, con mắt mọi loài * ngửa trông lên Chúa, và Chúa ban lương thực cho chúng nó đúng thì giờ. Chúa mở tay Chúa ra, và làm cho mọi sinh vật được no nê./
 
 [Versus Ante Coenam]
-@:Versus Ante:s/\$REGULAR_VERSUS/V. Edent pauperes, et saturabuntur, et laudabunt Dominum, qui requirunt eum : vivent corda eorum in sæculum sæculi./
+@:Versus Ante:s/\$REGULAR_VERSUS/v. Kẻ nghèo khó sẽ ăn, và được no nê, và kẻ tìm kiếm Chúa sẽ ngượi khen Người : lòng chúng nó sẽ sống đời đời./
 
 [Oratio Ante]
-/: Postea :/~
-/: Sacerdos :/~
+/: Sau đó :/~
+/: Thầy cả :/~
 (sed rubrica Monastica)
-/: Superior vel Sacerdos hebdomadarius :/~
-/: dicit: :/
-$Oremus
-Benedic, Domine, nos, et hæc tua dona, quæ de tua largitate sumus sumpturi. Per Christum Dominum nostrum,
+/: Bề trên hay là Thầy trực tuần :/~
+/: đọc: :/
+$Chúng tôi hãy cầu nguyện
+Lạy Chúa, xin Chúa ban phép lành cho chúng tôi, và các của này, mà chúng tôi sẽ chịu lấy bởi lòng rộng rãi Chúa. Vì Đức Chúa Jêsu Kirixitô là Chúa chúng tôi,
 R. Amen.
 
 [Benedictio Ante Prandium]
-/: Deinde Lector :/
-$Jube domne
-Benedictio. Mensæ cœlestis participes faciat nos Rex æternæ gloriæ,
+/: Đoạn Kẻ đọc sách :/
+$Xin Thầy cả ban phép lành cho
+Phép lành. Xin Vua vinh hiển đời đời cho chúng tôi được dự phần bàn tiệc trên trời,
 R. Amen.
 
 [Benedictio Ante coenam]
-/: Deinde Lector :/
-$Jube domne
-Benedictio. Ad cœnam vitæ æternæ perducat nos Rex æternæ gloriæ.
+/: Đoạn Kẻ đọc sách :/
+$Xin Thầy cả ban phép lành cho
+Phép lành. Xin Vua vinh hiển đời đời dẫn đưa chúng tôi đến tiệc sự sống đời đời.
 R. Amen.
 
 [Incipit Post]
-/: Aguntur gratiæ hoc modo. :/
-/: Dicto a Lectore :/
-Tu autem, Domine, miserere nobis,
-R. Deo gratias.
-/: Omnes surgunt et :/~
-/: Sacerdos :/~
+/: Cám ơn cách này. :/
+/: Kẻ đọc sách đọc :/
+Nhưng mà lạy Chúa, xin thương xót chúng tôi,
+R. Tạ ơn Đức Chúa Lời.
+/: Mọi người đứng dậy và :/~
+/: Thầy cả :/~
 (sed rubrica Monastica)
-/: Superior vel Sacerdos hebdomadarius :/~
-/: incipit : :/
+/: Bề trên hay là Thầy trực tuần :/~
+/: khởi sự : :/
 
 [Versus Post]
 $REGULAR_VERSUS1
 (sed tempore Nativitatis)
-V. Notum fecit Dominus, alleluja. 
+v. Chúa đã tỏ ra, allêluia.
 (sed die Sabbato Sancto)
-V. Vespere autem sabbati, quæ lucescit in prima sabbati, alleluja.
+v. Chiều ngày thứ bảy, rạng ngày thứ nhất, allêluia.
 (sed tempore Octava Paschæ)
-V. Hæc dies quam fecit Dominus, alleluja.
+v. Ngày này là ngày Chúa đã làm ra, allêluia.
 (sed tempore Octava Ascensionis)
-V. Ascendens Christus in altum, alleluja.
+v. Chúa Kirixitô lên nơi cao, allêluia.
 (sed tempore Octava Pentecostes)
-V. Repleti sunt omnes Spiritu sancto, alleluja.
+v. Mọi người đều đầy dẫy Đức Chúa Thánh Thần, allêluia.
 $REGULAR_VERSUS2
 (sed tempore Nativitatis)
-R. Salutare suum, alleluja.
+R. Sự cứu độ của Người, allêluia.
 (sed die Sabbato Sancto)
-R. Venit Maria Magdalene, et altera Maria, videre sepulcrum, alleluja.
+R. Maria Mađalêna và Maria khác đến xem mồ, allêluia.
 (sed tempore Octava Paschæ)
-R. Exsultemus et lætemur in ea, alleluja.
+R. Chúng tôi hãy mừng rỡ và vui vẻ trong ngày ấy, allêluia.
 (sed tempore Octava Ascensionis)
-R. Captivam duxit captivitatem, alleluja.
+R. Người đã dẫn tù đày làm phu tù, allêluia.
 (sed tempore Octava Pentecostes)
-R. Et cœperunt loqui, alleluja.
+R. Và bắt đầu nói, allêluia.
 
 [Versus Post Prandium]
-@:Versus Post:s/\$REGULAR_VERSUS1/V. Confiteantur tibi, Domine, omnia opera tua./ s/\$REGULAR_VERSUS2/R. Et Sancti tui benedicant tibi./
+@:Versus Post:s/\$REGULAR_VERSUS1/v. Lạy Chúa, mọi việc Chúa làm hãy xưng tụng Chúa./ s/\$REGULAR_VERSUS2/R. Và các thánh Chúa hãy chúc tụng Chúa./
 
 [Versus Post Coenam]
-@:Versus Post:s/\$REGULAR_VERSUS1/V. Memoriam fecit mirabilium suorum misericors et miserator Dominus,/ s/\$REGULAR_VERSUS2/R. Escam dedit timentibus se./
+@:Versus Post:s/\$REGULAR_VERSUS1/v. Chúa hay thương xót và hay làm ơn, đã làm kỷ niệm những phép lạ Người,/ s/\$REGULAR_VERSUS2/R. Người đã ban lương thực cho kẻ kính sợ Người./
 
 [Oratio Post]
-V. Dispersit, dedit pauperibus.
-R. Justitia ejus manet in sæculum sæculi.
-V. Benedicam Dominum in omni tempore.
-R. Semper laus ejus in ore meo.
-V. In Domino laudabitur anima mea.
-R. Audiant mansueti, et lætentur,
-V. Magnificate Dominum mecum.
-R. Et exaltemus nomen ejus in idipsum.
-V. Sit nomen Domini benedictum.
-R. Ex hoc nunc et usque in sæculum.
-/: Deinde sine Oremus. :/
-V. Retribuere dignare, Domine, omnibus nobis bona facientibus propter nomen tuum vitam æternam,
+v. Người đã phân phát, đã ban cho kẻ nghèo khó.
+R. Đức công chính Người còn đời đời.
+v. Tôi sẽ chúc tụng Chúa mọi lúc.
+R. Miệng tôi hằng ngượi khen Người liên.
+v. Linh hồn tôi sẽ được khen ngợi trong Chúa.
+R. Kẻ hiền lành hãy nghe và hãy vui mừng,
+v. Hãy cùng tôi ngượi khen Chúa.
+R. Và chúng ta hãy nhảy mừng suy tôn danh Người.
+v. Đáng chúc tụng danh Chúa.
+R. Từ rày về sau cho đến đời đời.
+/: Đoạn đọc chẳng có "Chúng tôi hãy cầu nguyện". :/
+v. Lạy Chúa, xin Chúa đoái thương trả phần thưởng sự sống đời đời cho hết thảy những kẻ làm ơn cho chúng tôi vì danh Chúa,
 R. Amen.
-V. Benedicamus Domino.
-R. Deo gratias.
-V. Fidelium animæ per misericordiam Dei requiescant in pace.
+v. Chúng tôi hãy chúc tụng Chúa.
+R. Tạ ơn Đức Chúa Lời.
+v. Xin cho linh hồn các kẻ tin nhờ lượng hay thương xót Đức Chúa Lời được nghỉ ngơi bằng yên.
 R. Amen.
-$Pater totum secreto
-/: Quo finito, dicit Sacerdos : :/
-V. Deus det nobis suam pacem,
+$Kinh Lạy Cha đọc thầm
+/: Đọc đoạn, thì Thầy cả đọc : :/
+v. Xin Đức Chúa Lời ban sự bằng yên Người cho chúng tôi,
 R. Amen.
 
 [Gratiarum Prandium]
-/: Postea :/~
-/: Sacerdos :/~
+/: Sau đó :/~
+/: Thầy cả :/~
 (sed rubrica Monastica)
-/: Superior vel Sacerdos hebdomadarius :/~
-/: absolute dicat : :/
-v. Agimus tibi gratias omnipotens Deus, pro universis beneficiis tuis : Qui vivis et regnas in sæcula sæculorum.
+/: Bề trên hay là Thầy trực tuần :/~
+/: đọc ngay rằng : :/
+v. Chúng tôi cám ơn Đức Chúa Lời toàn năng, vì mọi ơn lành Chúa ban : Là Đấng hằng sống hằng trị đời đời chẳng cùng.
 R. Amen.
-/: Deinde alternatim dicitur :/
+/: Đoạn đọc luân phiên :/
 
 [Gratiarum Coenam]
-/: Sacerdos dicat : :/
-v. Benedictus Deus in donis suis, et sanctus in omnibus operibus suis : Qui vivit et regnat in sæcula sæculorum.
+/: Thầy cả đọc : :/
+v. Đáng chịu lấy phép lành là Đức Chúa Lời trong các quà Người ban, và là Đấng thánh trong mọi việc Người làm : Là Đấng hằng sống hằng trị đời đời chẳng cùng.
 R. Amen.
-/: Deinde alternatim dicitur :/
+/: Đoạn đọc luân phiên :/
 
 [Benedictio mensae]
 @:ANTE PRANDIUM
@@ -156,36 +156,36 @@ _
 
 
 [Benedictio mensae in CD et P]
-#ANTE COENAM
-/: Dicitur absolute et sine nota. :/
-V. Christus factus est pro nobis obediens usque ad mortem.
-/: Deinde totum secreto. :/
-$Pater noster
-/: Quo dicto, sine pronuntiatione aliqua, Sacerdos signo Crucis benedicit mensam, nec dicitur Jube, domne nec Tu autem. :/
+#TRƯỚC BỮA TỐI
+/: Đọc ngay và chẳng có ngâm. :/
+v. Chúa Kirixitô đã vâng lời vì chúng tôi cho đến chết.
+/: Đoạn đọc thầm hết. :/
+$Kinh Lạy Cha
+/: Đọc đoạn, chẳng có rao gì cả, Thầy cả làm dấu Câu rút ban phép lành bàn ăn, cũng chẳng đọc Xin Thầy cả, cũng chẳng đọc Nhưng mà lạy Chúa. :/
 
 _
-#IN FINE COENAE
-V. Christus factus est pro nobis obediens usque ad mortem.
+#SAU BỮA TỐI
+v. Chúa Kirixitô đã vâng lời vì chúng tôi cho đến chết.
 &psalm(50,1)
-/: secreto dicitur  :/
-$Pater noster.
-/: Deinde Sacerdos dicit absolute Orationem. :/
-/: Oratio. :/
-v. Respice, quæsumus Domine, super hanc familiam tuam, pro qua Dominus noster Jesus Christus non dubitavit manibus tradi nocentium, et crucis subire tormentum.
-/: Et non pronuntiatur Qui tecum. nec Fidelium animæ, sed secreto dicitur  :/
-$Pater noster
-/: nec additur Deus det nobis suam pacem. :/
+/: đọc thầm :/
+$Kinh Lạy Cha.
+/: Đoạn Thầy cả đọc ngay Lời nguyện. :/
+/: Lời nguyện. :/
+v. Lạy Chúa, chúng tôi xin Chúa thương xem gia quyến này, vì nó mà Chúa Jêsu Kirixitô Chúa chúng tôi chẳng nề nộp mình trong tay kẻ dữ, và chịu sự khốn khó nơi cây Câu rút.
+/: Và chẳng đọc Đấng hằng sống. cũng chẳng đọc Xin cho linh hồn, song đọc thầm :/
+$Kinh Lạy Cha
+/: cũng chẳng thêm Xin Đức Chúa Lời ban sự bằng yên. :/
 
 [Benedictio mensae] (sed die in Cœna Domini dicitur)
 @:Benedictio mensae in CD et P
 
 [Benedictio mensae] (sed die in Parasceve dicitur)
-@:Benedictio mensae in CD et P:s/mortem./mortem, mortem autem crucis./g
+@:Benedictio mensae in CD et P:s/chết./chết, mà là chết trên cây Câu rút./g
 
 [Do not include below in vernacular]
 
 [ANTE PRANDIUM]
-#ANTE PRANDIUM
+#TRƯỚC BỮA ĂN TRƯA
 @:Incipit
 @:Versus Ante Prandium
 &Gloria
@@ -194,14 +194,14 @@ $mLitany2
 @:Benedictio Ante Prandium
 
 [POST PRANDIUM]
-#POST PRANDIUM
+#SAU BỮA ĂN TRƯA
 @:Incipit Post
 @:Versus Post Prandium
 &Gloria
 @:Gratiarum Prandium
 &psalm(50)
 (sed tempore Nativitatis)
-&psalm(97) 
+&psalm(97) 
 (sed tempore Octava Paschæ aut tempore post Octavam Paschæ)
 &psalm(117)
 (sed tempore Octava Ascensionis)
@@ -212,7 +212,7 @@ $mLitany2
 @:Oratio Post
 
 [ANTE COENAM]
-#ANTE COENAM
+#TRƯỚC BỮA ĂN TỐI
 @:Incipit
 @:Versus Ante Coenam
 &Gloria
@@ -221,7 +221,7 @@ $mLitany2
 @:Benedictio Ante coenam
 
 [IN FINE COENAE]
-#IN FINE COENAE
+#CUỐI BỮA ĂN TỐI
 @:Incipit Post
 @:Versus Post Coenam
 &Gloria

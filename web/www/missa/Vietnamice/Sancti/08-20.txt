@@ -1,0 +1,34 @@
+[Officium]
+S. Bernardi Abbatis et Ecclesiæ Doctoris
+(sed rubrica 1930 aut rubrica 1963)
+S. Bernardi, Abbatis et Ecclesiæ Doctoris, O. N.
+(sed rubrica 1570 aut rubrica 1617)
+S. Bernardi Abbatis
+
+[Rank]
+;;Duplex;;3;;vide C5a
+(sed rubrica 1930)
+;;Duplex majus;;4;;vide C5a
+(sed rubrica 1570 aut rubrica 1617)
+;;Duplex;;3;;vide C5b
+
+[Rule]
+vide C5a;
+(sed rubrica 1570 aut rubrica 1617)
+vide C5b
+Gloria
+CredoDA
+
+[Name]
+Bernárdum
+(sed rubrica 1570 aut rubrica 1617)
+Bernárdi
+Secreta=Bernárdi
+(sed rubrica 1570 aut rubrica 1617)
+Secreta=Bernárdus
+Postcommunio=Bernárdus
+
+[Lectio]
+@Commune/C5a:Lectio in 2 loco
+(sed rubrica 1570 aut rubrica 1617)
+@Commune/C5b
