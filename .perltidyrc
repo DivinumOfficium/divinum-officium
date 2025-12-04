@@ -1,37 +1,37 @@
--b
--bext=/
--i=2
---cuddled-blocks
---cuddled-paren-brace
---cuddled-break-option=2
--nsbl
---nospace-for-semicolon
---nooutdent-long-lines
--l=120
---paren-tightness=2
---brace-tightness=2
---square-bracket-tightness=2
---block-brace-tightness=1
--novalign
---valign-side-comments
---valign-block-comments
---opening-token-right
---add-newlines
---delete-old-newlines
---blank-lines-after-opening-block=0
---blanks-before-blocks
---long-block-line-count=1
---blanks-before-comments
---blanks-before-subs
---blank-lines-before-subs=1
---comma-arrow-breakpoints=0
---keep-old-blank-lines=1
---keyword-group-blanks
---extended-continuation-indentation
---want-trailing-commas=m
---add-trailing-commas
---delete-trailing-commas
---delete-weld-interfering-commas
---one-line-block-nesting=0
---output-line-ending=unix
---add-terminal-newline
+-b																	# Backup the original file and overwrite
+-bext=/															# No backup
+-i=2																# Set the number of spaces per indentation level to 2
+--cuddled-blocks										# Place the opening brace of a block on the same line as the keyword that introduced it
+--cuddled-paren-brace								# Place the opening brace of a block on the same line as the closing parenthesis of the condition
+--cuddled-break-option=2						# Break open all blocks for maximal cuddled formatting.
+-nsbl																# No opening sub brace on new line
+--nospace-for-semicolon							# Prevent adding a space before a semicolon
+--nooutdent-long-lines							# Prevent outdenting of long quoted strings
+-l=120															# Set the maximum line length to 120 characters
+--paren-tightness=2									# Control the amount of space inside parentheses (2=nospace)
+--brace-tightness=2									# Control the amount of space inside braces (2=nospace)
+--square-bracket-tightness=2				# Control the amount of space inside square brackets (2=nospace)
+--block-brace-tightness=1						# Control the amount of space inside block braces
+-novalign														# Prevent vertical alignment
+--valign-side-comments							# Vertically align side comments
+--valign-block-comments							# Vertically align block comments
+--opening-token-right								# Place the opening token on the right
+--add-newlines											# Add newlines at the end of each statement
+--delete-old-newlines								# Delete old newlines
+--blank-lines-after-opening-block=0	# Control the number of blank lines after an opening block
+--blanks-before-blocks							# Add blank lines before blocks
+--long-block-line-count=1						# Set the threshold for the number of lines in a block to be considered long
+--blanks-before-comments						# Add blank lines before comments
+--blanks-before-subs								# Add blank lines before subroutines
+--blank-lines-before-subs=1					# Set the number of blank lines before subroutines
+--comma-arrow-breakpoints=0					# Control the breakpoints for comma arrows: break at all commas after =>
+--keep-old-blank-lines=1						# Keep the old blank lines (stable: keep old blanks, but limited by the value of the B<-mbl=n> flag)
+--keyword-group-blanks							# Add blank lines between groups of keywords
+--extended-continuation-indentation	# Extend the continuation indentation
+--want-trailing-commas=m						# Control the addition of trailing commas (m = multi-line lists)
+--add-trailing-commas								# Add trailing commas
+--delete-trailing-commas						# Delete trailing commas
+--delete-weld-interfering-commas		# Delete commas that interfere with welding
+--one-line-block-nesting=0					# Control the nesting level of one-line blocks
+--output-line-ending=unix						# Set the line ending to Unix style
+--add-terminal-newline							# Add a newline at the end of the file

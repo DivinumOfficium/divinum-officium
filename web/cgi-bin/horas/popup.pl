@@ -61,6 +61,7 @@ require "$Bin/../DivinumOfficium/dialogcommon.pl";
 require "$Bin/webdia.pl";
 require "$Bin/../DivinumOfficium/setup.pl";
 require "$Bin/horas.pl";
+require "$Bin/horasjs.pl";
 require "$Bin/horasscripts.pl";
 require "$Bin/specials.pl";
 require "$Bin/specmatins.pl";

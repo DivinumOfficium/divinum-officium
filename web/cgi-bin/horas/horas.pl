@@ -29,8 +29,27 @@ sub horas {
   our $hora = shift;
   $hora = 'Vespera' if $hora eq 'Vesperae';
   print "<H2 ID='${hora}top'>" . adhoram($hora) . "</H2>\n";
+
   my (@script1, @script2);
   our ($lang1, $lang2, $column);
+
+  # GABC: Save Language and "only" settings for later
+  my $templang1 = $lang1;
+  my $templang2 = $lang2;
+  my $temponly = $only;
+
+  # GABC: Ensure no chant is displayed at the little hours during the Triduum
+  # And (for the time being) Chant is deactivated if OCist or OP version is displayed
+  if ($version =~ /Cisterciensis|Praedicatorum/
+    || (triduum_gloria_omitted() && $hora =~ /Prima|Tertia|Sexta|Nona|Completorium/i))
+  {
+    $lang1 =~ s/\-gabc//;                  # Remove -gabc from Language
+    $lang2 =~ s/\-gabc//;                  # Remove -gabc from Language
+    $only = !$Ck && ($lang1 eq $lang2);    # Re-evaluate "only"
+    precedence();
+    setsecondcol();                        # fills our hashes et variables
+  }
+
   $column = 1;    # The 'setbuild' functions in specials.pl check for this to set the Building Script
 
   if ($Ck) {
@@ -54,7 +73,14 @@ sub horas {
     @script2 = specials(\@script2, $lang2);
   }
 
+  # Call of print_content from webdia.pl
+  # Fifth argument: Flag if 'Ante/Post Divinum Officium' is printed
   print_content($lang1, \@script1, $lang2, \@script2, $version !~ /(1570|1955|196|Altovadensis)/);
+
+  # GABC: Restore original values for language and only to be used if selections are changed
+  $lang1 = $templang1;
+  $lang2 = $templang2;
+  $only = $temponly;
 }
 
 #*** resolve refs($text_of_block, $lang)
@@ -447,6 +473,7 @@ sub ant123_special {
   my $lang = shift;
 
   my $ant, $duplexf;
+  our $canticaTone;    # GABC: PsalmTone for Canticum at Major Hours
 
   if ($month == 12 && ($day > 16 && $day < 24) && $winner =~ /tempora/i) {
     my %specials = %{setupstring($lang, 'Psalterium/Special/Major Special.txt')};
@@ -470,6 +497,8 @@ sub ant123_special {
       setbuild2('subst: Special Magnificat Ant. Dum esset');
     }
   }
+  ($ant, $canticaTone) = split(";;", $ant) if $lang =~ /gabc/i;    # GABC: strip PsalmTone from Antiphone "...;;1D"
+  $canticaTone =~ s/\s*$//;                                        # GABC: Remove trailing white space from CanticaTone
   ($ant, $duplexf);
 }
 
@@ -488,6 +517,7 @@ sub canticum {
     : 3;
 
   my $ant, $ant2;
+  our $canticaTone;    # GABC: PsalmTone for Canticum at Major Hours
   my $duplexf = $version =~ /196/;
 
   if ($hora eq 'Completorium') {
@@ -508,6 +538,8 @@ sub canticum {
         $ant2 = "$ant\n$ant2";
       }
     }
+    ($ant, $canticaTone) = split(";;", $ant) if $lang =~ /gabc/i;   # GABC: strip PsalmTone from Antiphone "...;;1D"
+    $canticaTone =~ s/\s*$//;                                       # GABC: Remove trailing white space from CanticaTone
   } else {
     $comment = ($winner =~ /sancti/i) ? 3 : 2;
     setcomment($item, 'Source', $comment, $lang, translate('Antiphona', $lang));
@@ -523,7 +555,11 @@ sub canticum {
       $duplexf ||= $df;
     }
   }
-  my @psalmi = ("$ant;;" . (229 + $num));
+
+  # Standard: Add canticle number 230–232 to antiphone like "Antiphone;;230"
+  # GABC: Re-assemble Antiphone in format "Antiphone;;'230,1D'"
+  my @psalmi =
+    ($canticaTone && $lang =~ /gabc/i) ? ("$ant;;'" . (229 + $num) . ",$canticaTone'") : ("$ant;;" . (229 + $num));
   antetpsalm(\@psalmi, $duplexf, $lang);
   $s[-1] = "Ant. $ant2" if $ant2;
 }
@@ -548,6 +584,13 @@ sub getordinarium {
 
   my @script = process_conditional_lines(do_read($fname));
   $error = "$fname cannot be opened or gives an empty script." unless @script;
+
+  # GABC: Psalms without Antiphone in Ordinarium (e.g., Monastic 3 and 66) are assigned PsalmTone "in directum"
+  if ($lang =~ /gabc/i) {
+    foreach my $line (@script) {
+      $line =~ s/^\&psalm\((\d+)\)/\&psalm(\'$1,in-dir\')/;
+    }
+  }
 
   # Prelude pseudo-item.
   unshift @script, '#Prelude', '';
@@ -616,7 +659,16 @@ sub postprocess_ant(\$$) {
 
   # Don't do anything to null antiphons.
   return unless $$ant;
-  ensure_single_alleluia($ant, $lang) if alleluia_required($dayname[0], $votive);
+
+  if ($lang =~ /gabc/i && $$ant =~ /;;(.*)/) {
+
+    # Strip tone from Antiphone and save it unless this is called for Commemorations and $canticaTone is already set
+    our $canticaTone ||= $1;
+    $$ant =~ s/;;.*//;
+  }
+
+  # GABC: Alleluja for T.P. needs to be input in database
+  ensure_single_alleluia($ant, $lang) if alleluia_required($dayname[0], $votive) && $lang !~ /gabc/;
 }
 
 #*** postprocess_vr($vr, $lang)
@@ -640,9 +692,11 @@ sub postprocess_vr(\$$) {
 # Performs necessary adjustments to a short responsory.
 sub postprocess_short_resp(\@$) {
   my ($capit, $lang) = @_;
-  our (@dayname, $votive);
 
+  our (@dayname, $votive);
   s/&Gloria1?/&Gloria1/ for (@$capit);
+
+  return $capit if $lang =~ /gabc/i;    # GABC: Deactivated
 
   if (alleluia_required($dayname[0], $votive)) {
     my $rlines = 0;

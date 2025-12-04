@@ -55,6 +55,10 @@ sub gethymn {
   $hymn =~ s/\*\s*//g;                          # remove star
   $hymn =~ s/_\n(?!!)/_\nr. /g;                 # start stropha with red letter
 
+  # GABC: Versicula are given in Roman Tonus cum Neuma, i.e., g_'/hvGF'E!fgf.
+  # For Ant. Monastic changed to Tonus communis, i.e., g_0h/GF'E!fgf.
+  if ($lang =~ /gabc/ && $version =~ /monastic/i) { $versum =~ s/g\_\d?\'\/hv?/g\_0h\//g; }
+
   my $output = "$section\n$hymn";
   $output .= "_\n$versum" if $versum;
   $output;
@@ -97,7 +101,7 @@ sub hymnusmajor {
     $name .= ' hiemalis'
       if (
            $name =~ /Day0/i
-        && ($name =~ /Laudes/i || $version =~ /cist/i)
+        && ($name =~ /Laudes/i || $version =~ /cist/i || $lang =~ /gabc/i)
         && ( $dayname[0] =~ /Epi[2-6]/
           || $dayname[0] =~ /Epi1/i && $version =~ /cist/i
           || $dayname[0] =~ /Quadp/i

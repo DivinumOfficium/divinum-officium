@@ -217,6 +217,36 @@ sub psalmi_matutinum_monastic {
   }
   setcomment($label, 'Source', $comment, $lang, $prefix);
 
+  if ($lang =~ /gabc/i) {
+    my $psalmTone = '';
+
+    foreach my $psalmline (@psalmi) {
+      if ($psalmline =~ /[VR]\/?\./) {
+
+        #skip over Versicles
+        $psalmTone = '';
+        next;
+      }
+
+      my @a = split(';;', $psalmline);    # Retrieve psalmtone given behind second ';;'
+
+      $psalmTone = chompd($a[2]) if (@a > 2);    # Update psalmtone if present
+
+      my $ant0 = chompd($a[0]);                  # Retrieve Antiphon
+      my $psalm0 = chompd($a[1]);                # Retrieve Psalms
+
+      if ($psalmTone) {
+        my @psalm0 = split(';', $psalm0);        # Split multiple Psalms
+
+        foreach my $ps0 (@psalm0) {
+          $ps0 = "'$ps0,$psalmTone'";            # combine psalm tone with all psalms
+        }
+        my $psalm0 = join(';', @psalm0);
+      }
+
+      $psalmline = "$ant0;;$psalm0";    # Recombine antiphone line
+    }
+  }
   nocturn(1, $lang, \@psalmi, (0 .. 7));
 
   if (
