@@ -158,6 +158,8 @@ sub psalmi_minor {
         }
         $name = "Adv4$i";
       }
+
+      $name =~ s/\d+$/OP/ if $version =~ /praedicatorum/i;
     }
 
     $ind = 0 if ($hora eq 'Completorium' && $name eq 'Pasch');
