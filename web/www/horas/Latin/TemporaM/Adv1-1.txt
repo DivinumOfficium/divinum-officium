@@ -1,7 +1,20 @@
 @Tempora/Adv1-1
 
+[Lectio1] (rubrica cisterciensis)
+@Tempora/Adv1-1::1-4
+@Tempora/Adv1-1::5:s/[\:\;\.].*/./
+
+[Lectio2] (rubrica cisterciensis)
+@Tempora/Adv1-1:Lectio2:1:s/19-23/18-20/
+@Tempora/Adv1-1:Lectio1:5:s/Et .*\: si/Si/
+@Tempora/Adv1-1::2-3
+
 [Lectio3]
 @Tempora/Adv1-1::s/\n26 / ¶\n26 /
+
+[Lectio3] (rubrica cisterciensis)
+@Tempora/Adv1-1:Lectio2:1:s/19-/21-/
+@Tempora/Adv1-1:Lectio2:4-6
 
 [Responsory4]
 @Tempora/Adv1-2:Responsory3

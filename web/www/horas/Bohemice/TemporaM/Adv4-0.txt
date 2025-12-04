@@ -1,0 +1,15 @@
+[Lectio7]
+@Tempora/Adv4-0:Lectio6:s/For His .*//s
+
+[Lectio8]
+@Tempora/Adv4-0:Lectio6:s/.* For His /For His /s
+
+[Lectio10]
+@Tempora/Adv4-0:Lectio8:s/The former .*//s
+
+[Lectio11]
+@Tempora/Adv4-0:Lectio8:s/.* The former /The former /s s/$/~/
+@Tempora/Adv4-0:Lectio9:s/He that .*//s
+
+[Lectio12]
+@Tempora/Adv4-0:Lectio9:s/.* He that /He that /s
