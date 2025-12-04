@@ -1,0 +1,39 @@
+[Responsory4]
+R. Behold the Lord, the Prince of the kings of the earth, shall come,
+* Blessed are they who are ready to meet him, they shall have their portion in the city of Jerusalem.
+V. The Lord will surely come and will not tarry.
+R. Blessed are they who are ready to meet him, they shall have their portion in the city of Jerusalem.
+
+[Lectio5]
+@Tempora/Adv3-0:Lectio4:s/And what .*//s
+
+[Lectio6]
+@Tempora/Adv3-0:Lectio4:s/.* And what /And what /s s/$/~/
+@Tempora/Adv3-0:Lectio5:s/But since .*//s
+
+[Lectio7]
+@Tempora/Adv3-0:Lectio5:s/.* But since /But since /s s/$/~/
+@Tempora/Adv3-0:Lectio6:s/We fast .*//s
+
+[Lectio8]
+@Tempora/Adv3-0:Lectio6:s/.* We fast /We fast /s
+
+[Responsory8]
+R. There shall come forth a rod out of the stem of Jesse and a branch shall grow out of his roots.
+* And righteousness shall be the girdle of his loins and faithfulness the girdle of his reins.
+V. And the spirit of the Lord shall rest upon him, the spirit of wisdom and understanding.
+R. And righteousness shall be the girdle of his loins and faithfulness the girdle of his reins.
+
+[Lectio9]
+@Tempora/Adv3-0:Lectio7:s/In that he.*//s
+
+[Lectio10]
+@Tempora/Adv3-0:Lectio7:s/.* In that /In that /s
+@Tempora/Adv3-0:Lectio8:s/But when .*//s
+
+[Lectio11]
+@Tempora/Adv3-0:Lectio8:s/.* But when /But when /s s/$/~/
+@Tempora/Adv3-0:Lectio9:s/When .*//s
+
+[Lectio12]
+@Tempora/Adv3-0:Lectio9:s/.* When /When /s
