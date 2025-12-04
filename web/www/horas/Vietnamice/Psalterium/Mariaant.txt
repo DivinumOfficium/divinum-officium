@@ -92,18 +92,6 @@ $Per Christum
 _
 $Fidelium animae
 
-[Ant Finalis OP]
-@:Postpentecost:s/.*v\./ Ant. / s/.V\..*//s s/$/~ /gm s/~ $/ \(Allêluia.\)\n/s
-_
-@:Quadragesimae:s/.*_.V\./V./s 1-2 s/\.$/. (Allêluia.)/gm
-_
-$Oremus
-@Commune/C10:Oratio:1 s/$/~/ s/^(?:v\.)?/v.
-/
-$Per Christum
-_
-@:Ant ad S_Dominicum
-
 [Ant Finalis Cist]
 $rubrica CompletBMV2
 @:Postpentecost:s/V\..*//s s/$/ (Allêluia.)/s
