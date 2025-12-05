@@ -174,7 +174,7 @@ sub martyrologium {
   if ($version =~ /1570/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1570/$fname.txt")) {
     $fname = "$datafolder/Latin/Martyrologium1570/$fname.txt";
   } elsif ($version =~ /1960|Newcal/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1960/$fname.txt")) {
-    $fname = "$datafolder/$lang/Martyrologium1960/$fname.txt";    # GABC: Allow for 'Latin-gabc'
+    $fname = checkfile($lang, "Martyrologium1960/$fname.txt");    # GABC: Allow for 'Latin-gabc'
   } elsif ($version =~ /1955/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1955R/$fname.txt")) {
     $fname = "$datafolder/Latin/Martyrologium1955R/$fname.txt";
   } else {
