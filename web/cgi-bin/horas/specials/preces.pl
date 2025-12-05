@@ -70,12 +70,12 @@ sub preces {
 }
 
 sub getpreces {
+
   my $hora = shift;
   my $lang = shift;
   my $flag = shift;    # 1 for 'Dominicales'
 
   use v5.10;
-  state $precdomfer = $hora eq 'Prima';
   my ($src, $key);
 
   if ($hora =~ /^(?:Tertia|Sexta|Nona)$/) {
@@ -88,6 +88,7 @@ sub getpreces {
     $src = 'Minor';
     $key = 'Dominicales';
   } elsif ($flag) {    # $hora eq Prima
+    state $precdomfer = $hora eq 'Prima';
     $src = 'Prima';
     $key = 'Dominicales Prima ' . (($precdomfer + 1) % ($version =~ /^Monastic/ ? 1 : 2) + 1);
     $precdomfer++;
