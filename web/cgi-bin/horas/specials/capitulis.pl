@@ -22,6 +22,10 @@ sub capitulum_major {
     $capit = $capit{$name};
   }
 
+  # GABC: Capitula are input in database acc. to Ant. Romanum
+  # Shorter pause at Flexa in Ant. Monasticum
+  $capit =~ s/†\(\;\)/†(,)/g if $lang eq 'Latin-gabc' && $version =~ /monastic/i;
+
   if ($vespera == 1 && $version =~ /Ordo Praedicatorum/) {
     $capit .= "\n_\n" . monastic_major_responsory($lang);
   }
@@ -100,8 +104,8 @@ sub monastic_major_responsory {
     $resp = $resp{$name};
   }
 
-  # For backwards compatibility, remove any attached versicle
-  $resp =~ s/\n?_.*//s;
+  # For backwards compatibility, remove any attached versicle (safeguard \n for GABC)
+  $resp =~ s/\n?_\n.*//s;
 
   if ($resp) {
     my @resp = split("\n", $resp);
@@ -194,6 +198,39 @@ sub capitulum_minor {
 
   my @capit = split("\n", $capit);
   postprocess_short_resp(@capit, $lang);
+
+  if ($lang =~ /gabc/) {
+    if (@capit[-1] =~ /V\/\./) {
+
+      # If V/. ... R/. ... is on a single line, break it in two
+      splice(@capit, -1, 1, split('R/.', $capit[-1]));
+      $capit[-1] =~ s/^/R\/./;
+    }
+
+    if ($version =~ /monastic/i) {
+
+      # Transform Versiculum: Tonus solemnis aut communis into Tonus simplex
+      map {
+        s/hr\)(.*?\(\,\))/h)$1/g;    # remove (first) superveniente in Tonus solemnis
+        s/(.*\(.*?)hr\)/$1fr)/g;     # change superveniente at puncutum
+        s/\([a-zA-Z0-9\_\.\~\>\<\'\/\!]+?\) (R\/\.)?\(::\)/\(f\.\) $1\(::\)/g;    # change finalis
+        s/\((?:hi|hr|h\_0|f?e|f\'?|f\_0?h|h\_\')\)/\(h\)/g;                       # More changes for solemn Versicle
+        s/\(\,\)//g;
+      } @capit[-2 .. -1];
+
+      # Capitula are input in database acc. to Ant. Romanum
+      # Shorter pause at Flexa in Ant. Monasticum
+      $capit[1] =~ s/†\(\;\)/†(,)/g;
+    } elsif ($capit[-1] !~ /g\_\'?\/h/) {
+
+      # Transform Versiculum: Tonus solemnis aut simplex into Tonus cum neuma
+      map {
+        s/\([a-zA-Z0-9\_\.\~\>\<\'\/\!]+?\) (R\/\.)?\(::\)/\(g\_\'\/hvGF\'E\!fgf.\) $1\(::\)/g;    # change finalis
+        s/\((?:hi|hr|h\_0|f?e|f\'?|f\_0?h|h\_\')\)/\(h\)/g;    # More changes for solemn Versicle
+        s/\(\,\)//g;
+      } @capit[-2 .. -1];
+    }
+  }
 
   if ($hora ne 'Completorium') {
     setcomment($label, 'Source', $comment, $lang);

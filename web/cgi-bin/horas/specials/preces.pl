@@ -20,6 +20,21 @@ sub preces {
 
   our $precesferiales = 0;
 
+  if (
+    $dayofweek
+    && !($dayofweek == 6 && $hora =~ /vespera/i)    # Dominicales ad Completorium are also said if Feriales at Vespers!
+    && (
+      $winner !~ /sancti/i && ($rule =~ /Preces/i || $dayname[0] =~ /Adv|Quad(?!p)/i || emberday())    #
+      || ($version !~ /1955|1960|Newcal/ && $winner{Rank} =~ /vigil/i && $dayname[1] !~ /Epi|Pasc/i)
+    )    # certain vigils before 1955
+    && ( $version !~ /1955|1960|Newcal/
+      || $dayofweek =~ /[35]/
+      || emberday())    # in 1955 and 1960, only Wednesdays, Fridays and emberdays
+  ) {
+    $precesferiales = 1;
+    return 1;
+  }
+
   if ($item =~ /Dominicales/i) {
     my $dominicales = 1;
 
@@ -49,22 +64,6 @@ sub preces {
       $precesferiales = preces('Feriales');
       return 1;
     }
-  }
-
-  if (
-       $item =~ /Feriales/i
-    && $dayofweek
-    && !($dayofweek == 6 && $hora eq 'Vespera')
-    && (
-      $winner !~ /sancti/i && ($rule =~ /Preces/i || $dayname[0] =~ /Adv|Quad(?!p)/i || emberday())    #
-      || ($version !~ /1955|1960|Newcal/ && $winner{Rank} =~ /vigil/i && $dayname[1] !~ /Epi|Pasc/i)
-    )    # certain vigils before 1955
-    && ( $version !~ /1955|1960|Newcal/
-      || $dayofweek =~ /[35]/
-      || emberday())    # in 1955 and 1960, only Wednesdays, Fridays and emberdays
-  ) {
-    $precesferiales = 1;
-    return 1;
   }
 
   return 0;

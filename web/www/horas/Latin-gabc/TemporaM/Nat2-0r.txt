@@ -1,0 +1,18 @@
+[Ant Matutinum 3N]
+Allelúja, * allelúja, allelúja;;263;264;265
+
+[Lectio5]
+@Sancti/01-05:Lectio4:s/Factus .*//s
+
+[Lectio6]
+@Sancti/01-05:Lectio4:s/.* Factus/Factus/s s/$/~/
+@Sancti/01-05:Lectio5:s/Factus .*//s
+
+[Lectio7]
+@Sancti/01-05:Lectio5:s/.* Factus/Factus/s
+
+[Lectio11]
+@Sancti/01-05:Lectio9:s/Nazarǽus sanctus .*//s
+
+[Lectio12]
+@Sancti/01-05:Lectio9:s/.* Nazarǽus sanctus /Nazarǽus sanctus /s s/$/ Póssumus et áliter dícere; quod étiam eísdem verbis, juxta hebráicam veritátem, in Isaía scriptum sit: Exiet virga de radíce Jesse, et Nazarǽus de radíce ejus conscéndet./m

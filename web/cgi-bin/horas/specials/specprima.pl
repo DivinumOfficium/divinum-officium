@@ -32,6 +32,20 @@ sub lectio_brevis_prima {
     $brevis = $b || $brevis;
   }
 
+  if ($brevis =~ /\(ef\.\.\)/) {
+
+    # GABC: All Lectio Prima are either input in Tonus Capitulum or links to Capitulum Nona
+    # Therefore: Transform Tonus Capitulum (Nona) into Tonus Lectio brevis here
+    map {
+      s/(.*)\(f/$1(h./g;
+      s/er\)/dr\)/g;
+      s/\(ef\.\.\)/(d.)/g;
+    } $brevis;
+
+    # Shorter pause at Flexa in Ant. Monasticum compared to Ant. Romanum
+    $brevis =~ s/†\(\;\)/†(,)/g if $version =~ /monastic/i;
+  }
+
   $brevis = "\$benedictio Prima\n$brevis" unless $version =~ /^Monastic/;
   $brevis .= "\n\$Tu autem";
 
@@ -59,6 +73,9 @@ sub capitulum_prima {
   my $capit = $brevis{$key} . "\n\$Deo gratias\n_\n";
   setbuild1('Capitulum', "Psalterium $key");
 
+  # Shorter pause at Flexa in Ant. Monasticum compared to Ant. Romanum
+  $capit =~ s/†\(\;\)/†(,)/g if $lang eq 'Latin-gabc' && $version =~ /monastic/i;
+
   if ($version =~ /1963/) {
     $capit = "$label\n" . $capit;
   } else {
@@ -72,7 +89,14 @@ sub capitulum_prima {
     my $primaresponsory = get_prima_responsory($lang);
     my %wpr = columnsel($lang) ? %winner : %winner2;
     if (exists($wpr{'Versum Prima'})) { $primaresponsory = $wpr{'Versum Prima'}; }
-    if ($primaresponsory) { $resp[2] = "V. $primaresponsory"; }
+
+    if ($primaresponsory) {
+      if ($lang =~ /gabc/i) {
+        $resp[0] = $primaresponsory;    # GABC: Take whole Responsorium from [Versum Prima]
+      } else {
+        $resp[2] = "V. $primaresponsory";
+      }
+    }
     push(@resp, "_");
   }
 
@@ -150,7 +174,7 @@ sub martyrologium {
   if ($version =~ /1570/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1570/$fname.txt")) {
     $fname = "$datafolder/Latin/Martyrologium1570/$fname.txt";
   } elsif ($version =~ /1960|Newcal/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1960/$fname.txt")) {
-    $fname = "$datafolder/Latin/Martyrologium1960/$fname.txt";
+    $fname = "$datafolder/$lang/Martyrologium1960/$fname.txt";    # GABC: Allow for 'Latin-gabc'
   } elsif ($version =~ /1955/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1955R/$fname.txt")) {
     $fname = "$datafolder/Latin/Martyrologium1955R/$fname.txt";
   } else {
@@ -183,7 +207,8 @@ sub martyrologium {
     my $line_c = 0;
 
     foreach my $line (@a) {
-      if (length($line) > 3 && $line !~ /^\/\:/) {    # allowing /:rubrics:/ in Martyrology
+      if (length($line) > 3 && $line !~ /^\/\:/ && $line !~ /\([\,\;\:]+[zZ]?\)/)
+      {    # allowing /:rubrics:/ in Martyrology
         $t .= "$prefix$line\n" unless $lang =~ /Bohemice/i && $line_c < 3 && $line_c != 0;
       } else {
         $t .= "$line\n" unless $lang =~ /Bohemice/i && $line_c < 3;

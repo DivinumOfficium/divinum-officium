@@ -156,25 +156,42 @@ sub oratio {
   if ($rule !~ /Limit.*?Oratio/i) {
 
     # no dominus vobiscum after Te decet
-    if ($version !~ /Monastic/ || $hora ne 'Matutinum' || $rule !~ /12 lectiones/) {
+    if ($version !~ /^Monastic/ || $hora ne 'Matutinum' || $rule !~ /12 lectiones/) {
       if (
         $version =~ /Monastic/ && ($winner !~ /C12/ || $version !~ /cist/i)
         || ( $version =~ /Ordo Praedicatorum/
           && ($rank < 3 || $dayname[1] =~ /Vigil/)
           && $winner !~ /12-24|Pasc|01-0[2-5]/)
-      ) {    # OP ferial office
+      ) {
+
         if ($horamajor && $version !~ /Ordo Praedicatorum/) {
-          push(@s, '$Kyrie');
-          push(@s, '$Pater noster Et', "_") unless $winner =~ /C12/;
+          if ($lang =~ /gabc/i && $winner !~ /C12/) {
+            push(@s, '$mLitany', "_");
+          } else {
+            push(@s, '$Kyrie');
+            push(@s, '$Pater noster Et', "_") unless $winner =~ /C12/;
+          }
         } else {
-          push(@s, '$Kyrie', '$pater secreto', "_");
+          if ($lang =~ /gabc/i) {
+            push(@s, '$mLitany2', "_");
+          } else {
+            push(@s, '$Kyrie', '$pater secreto', "_");
+          }
         }
       }
 
       if ($priest) {
-        push(@s, "&Dominus_vobiscum");
+        if ($lang =~ /gabc/i && ($horamajor || $hora eq 'Matutinum')) {
+          push(@s, '$dominus vobiscum solemnis');
+        } else {
+          push(@s, "&Dominus_vobiscum");
+        }
       } elsif (!$precesferiales) {
-        push(@s, "&Dominus_vobiscum");
+        if ($lang =~ /gabc/i && ($horamajor || $hora eq 'Matutinum')) {
+          push(@s, '$domine exaudi solemnis');
+        } else {
+          push(@s, "&Dominus_vobiscum");
+        }
       } else {
         my $text = prayer('Dominus', $lang);
         my @text = split("\n", $text);
@@ -182,8 +199,17 @@ sub oratio {
         $precesferiales = 0;
       }
     }
-    my $oremus = translate('Oremus', $lang);
-    push(@s, "v. $oremus");
+
+    if ($lang =~ /gabc/i) {
+      if ($horamajor || $hora eq 'Matutinum') {
+        push(@s, '$Oremus solemnis');
+      } else {
+        push(@s, '$Oremus');
+      }
+    } else {
+      my $oremus = translate('Oremus', $lang);
+      push(@s, "v. $oremus");
+    }
   }
 
   if ($horamajor && $winner{Rule} =~ /Sub unica conc/i) {
@@ -194,7 +220,25 @@ sub oratio {
       $w =~ s/\$(Per|Qui) .*?\n//;
     }
   }
-  $w =~ s/^(?:v. )?/v. / unless $w =~ /^[\$\&\#\/\!]/;
+
+  if ($lang eq 'Latin-gabc' && $w =~ /\(\:\:\)/ && $rule !~ /Limit.*Oratio/) {
+
+    # GABC: In the database, Oratios are noted in Tonus simplex acc. to Ant. Monasticum!
+    # For Laudes, Vespera and Matutinum, these are converted here into Tonus solemnis
+    if (($horamajor || $hora eq 'Matutinum')) {
+
+      $w = oratio_solemnis($w);
+    } elsif ($version !~ /monastic/i) {
+
+      # Roman flexa has longer pause
+      $w =~ s/†\(\,\)/†(;)/;
+    }
+  } elsif ($w !~ /^\{/s) {
+
+    # Ensure large red Initial
+    $w =~ s/^(?:v. )?/v. / unless $w =~ /^[\$\&\#\/\!\{]/;
+  }
+
   push(@s, $w);
   if ($rule =~ /omit .*? commemoratio/i) { return; }
 
@@ -550,6 +594,8 @@ sub oratio {
   foreach my $key (sort keys %cc) {
     if (length($s[-1]) > 3) { push(@s, '_'); }
 
+    $cc{$key} =~ s/^v\.\s*\{/\{/m if $lang eq 'Latin-gabc';
+
     if ($key >= 900) {
       my $ostr;
       ($ostr, $addconclusio) = delconclusio($cc{$key}, $addconclusio);
@@ -676,6 +722,18 @@ sub getcommemoratio {
     $o = replaceNdot($o, $lang, $name);
   }
   if (!$o) { return ''; }
+
+  if ($lang eq 'Latin-gabc' && $o =~ /\(\:\:\)/) {
+
+    # GABC: In the database, Oratios are noted in Tonus simplex
+    # Even for Commemoratio ad Laudem & Vesperam, these are converted here into Tonus solemnis
+    $o = oratio_solemnis($o);
+  } else {
+
+    # Ensure large red Initial
+    $w =~ s/^(?:v. )?/v. / unless $w =~ /^[\$\&\/\!\{\#]/;
+  }
+
   my $a = $w{"Ant $ind"};
 
   if (!$a || ($winner =~ /Epi1\-0a|01-12t/ && $hora eq 'Vespera' && $vespera == 3)) {
@@ -713,6 +771,10 @@ sub getcommemoratio {
   postprocess_ant($a, $lang);
   my $v = $w{"Versum $ind"};
 
+  if (!$v && $wday =~ /tempora/i) {
+    $v = getfrompsalterium('Versum', $ind, $lang);
+  }
+
   if ($winner =~ /Epi1\-0a|01\-12t/) {
     my %w = columnsel($lang) ? %winner : %winner2;
     $v = $vespera == 1 && $day == 10 ? $c{'Versum 2'} : $c{'Versum Tertia'};
@@ -725,11 +787,21 @@ sub getcommemoratio {
     || 'versus missing';
   postprocess_vr($v, $lang);
 
+  if ($lang =~ /gabc/i) {    # Change Versicle into the simple tone
+    map {
+      s/hr\)(.*?\(\,\))/h)$1/g;    # remove (first) superveniente in Tonus solemnis
+      s/(.*\(.*?)hr\)/$1fr)/g;     # change supervenient at puncutum
+      s/\([a-zA-Z0-9\_\.\~\>\<\'\/\!]+?\) (R\/\.)?\(::\)/\(f\.\) $1\(::\)/g;    # change finalis
+      s/\((?:hi|hr|h\_0|f?e|f\'?|f\_0?h|h\_\')\)/\(h\)/g;                       # More changes for solemn Versicle
+      s/\(\,\)//g;
+    } $v;
+  }
+
   # my $w = "!" . &translate("Commemoratio", $lang) . (($lang !~ /latin/i || $wday =~ /tempora/i) ? ':' : ''); # Adding : except for Latin Sancti which are in Genetiv
   my $w = "!" . &translate('Commemoratio', $lang);
   $a =~ s/\s*\*\s*/ / unless ($version =~ /Monastic/i);
-  $o =~ s/^(?:v. )?/v. /;
-  $w .= " $rank[0]\nAnt. $a\n_\n$v\n_\n\$Oremus\n$o\n";
+  my $solemnflag = $lang eq 'Latin-gabc' ? ' solemnis' : '';
+  $w .= " $rank[0]\nAnt. $a\n_\n$v\n_\n\$Oremus$solemnflag\n$o\n";
   return $w;
 }
 
@@ -776,6 +848,16 @@ sub vigilia_commemoratio {
   my %p = %{setupstring($lang, 'Psalterium/Special/Major Special.txt')};
   my $a = $p{"Feria Ant 2"};       #$p{"Day$dayofweek Ant 2"};
   my $v = $p{"Feria Versum 2"};    #$p{"Day$dayofweek Versum 2"};
+
+  if ($lang =~ /gabc/i) {          # Change Versicle into the simple tone
+    map {
+      s/hr\)(.*?\(\,\))/h)$1/g;    # remove (first) superveniente in Tonus solemnis
+      s/(.*\(.*?)hr\)/$1fr)/g;     # change supervenient at puncutum
+      s/\([a-zA-Z0-9\_\.\~\>\<\'\/\!]+?\) (R\/\.)?\(::\)/\(f\.\) $1\(::\)/g;    # change finalis
+      s/\((?:hi|hr|h\_0|f?e|f\'?|f\_0?h|h\_\')\)/\(h\)/g;                       # More changes for solemn Versicle
+      s/\(\,\)//g;
+    } $v;
+  }
   $a =~ s/\s*\*\s*/ /;
   $w = $c . "Ant. $a" . "_\n$v" . "_\n\$Oremus\nv. $w";
   return $w;
@@ -806,6 +888,24 @@ sub getsuffragium {
 
   my %suffr = %{setupstring($lang, 'Psalterium/Special/Major Special.txt')};
   my $suffr = $suffr{$key};
+
+  if ($lang =~ /gabc/ && $version =~ /monastic/i) {
+
+    # In the database, the Orations for the Suffrages are given in the Roman solemn form.
+    # For Monastic, we need to raise the pitch.
+    my @suffr = split('{', $suffr);
+
+    foreach my $suf (@suffr) {
+      if ($suf =~ /^\(c4\)(.*?)(\}.*)$/s) {
+        my ($o, $rem) = ($1, $2);
+        $o =~ s/\(h/\(i/g;
+        $o =~ s/\(g/\(h/g;
+        $o =~ s/\(i\.\) \(\;\)/(i_') (,)/;    #' # incisi majoris => minioris moventi
+        $suf = "(c3)$o$rem";
+      }
+    }
+    $suffr = join('{', @suffr);
+  }
 
   if ($version =~ /altovadensis/i && $collectcount == 2 && $commune !~ /C1[012]/) {
     $suffr =~ s/\n\!.*//s;
@@ -928,10 +1028,22 @@ sub getrefs {
       }
 
       my $a = chompd($s{"Ant $ind"}) || chompd($c{"Ant $ind"});
-      if (!$a) { $a = "$file Ant $ind missing\n"; }
+
+      if (!$a) {
+        if ($file =~ /tempora/i) {
+          $a = getfrompsalterium('Ant', $ind, $lang);
+        }
+        $a ||= "$file Ant $ind missing\n";
+      }
       postprocess_ant($a, $lang);
       my $v = chompd($s{"Versum $ind"}) || chompd($c{"Versum $ind"});
-      if (!$v) { $a = "$file Versus $ind missing\n"; }
+
+      if (!$v) {
+        if ($file =~ /tempora/i) {
+          $v = getfrompsalterium('Versum', $ind, $lang);
+        }
+        $v ||= "$file Versus $ind missing\n";
+      }
       postprocess_vr($v, $lang);
       my $o = '';
 
@@ -975,6 +1087,21 @@ sub getrefs {
       do_inclusion_substitutions($v, $substitutions);
       do_inclusion_substitutions($o, $substitutions);
       $a =~ s/\s*\*\s*/ /;
+
+      # GABC: Change Versicles into the simple tone  and oratio into solemn for commemorations
+      if ($lang =~ /gabc/i) {
+
+        # Standard changes for common tone:
+        $v =~ s/\([a-zA-Z0-9\_\.\~\>\<\'\/\!]+?\) (R\/\.)?\(::\)/\(f\.\) $1\(::\)/g;
+
+        # More changes for solemn tone:
+        $v =~ s/\((?:hi|hr|h\_0|fe|f\_0?h|h\_\')\)/\(h\)/g;
+        $v =~ s/\(\,\)//g;
+
+        $o = oratio_solemnis($o);
+        $o =~ s/Oremus/Oremus solemnis/;
+      }
+
       $before ||= "!" . translate('Commemoratio', $lang) . " $s{Officium}";
       $w = $before . "\nAnt. $a\n" . "_\n$v" . "_\n$o" . "_\n$after";
       next;
@@ -989,6 +1116,87 @@ sub getrefs {
   }
   $w =~ s/\_\n\_/\_/g;
   return $w;
+}
+
+sub oratio_solemnis {
+  my $o = shift;
+
+  my ($flexa, $metrum, $prePunctum, $punctum, $concl);
+
+  if ($o =~ /†/) {
+    $o =~ /(.*) †\([\,\;]\) (.*) \*\(\;\) (.*)\(h(?:\sdr)?\)(.*)(\$.*)/s;
+    ($flexa, $metrum, $prePunctum, $punctum, $concl) = ($1, $2, $3, $4, $5);
+  } elsif ($o =~ /\*/) {
+    $o =~ /(.*) \*\(\;\) (.*)\(h(?:\sdr)?\)(.*)(\$.*)/s;
+    ($metrum, $prePunctum, $punctum, $concl) = ($1, $2, $3, $4);
+  } else {
+    $o =~ /(.*)(\$.*)/s;
+    ($punctum, $concl) = ($1, $2);
+  }
+
+  $concl =~ s/\s*$/ solemnis/s;
+  return "$punctum$concl" unless $metrum;
+
+  if ($version =~ /monastic/i) {
+
+    # Antiphonale Monasticum 1934 (Tonus Orationis pp. 1236 ff.):
+    # Tonus simplex:  (c3) h hr 'h fr f. † hr g f 'h h. * hr 'h dr d.
+    # Tonus solemnis: (c3) h ir 'i hr h. * (h ir i_',) ir h h 'i ir i.
+    $metrum =~ s/\([gf]\)/(i)/g;    # remove metrum
+
+    if ($flexa) {
+      $flexa =~ s/\(h/(i/g;                # raise pitch in general
+      $flexa =~ s/(c3.*?)\(i\)/$1(h)/;     # add initia
+      $flexa =~ s/\(f(r?\.?)\)/(h$1)/g;    # raise pitch at flexa
+      $metrum =~ s/\(h\.\)/(i_')/g;        #'# incisi majoris momenti => minoris
+      $metrum =~ s/\(h/(i/g;               # raise pitch in general
+      $metrum =~ s/hr\)/ir)/g;             # raise pitch in general
+    } else {
+      $metrum =~ s/\(h/(i/g;               # raise pitch in general
+      $metrum =~ s/\(i[r\.]\)/(h$1)/g;     # add flexa
+    }
+    $metrum =~ s/\(i\)/(h)/;               # add initia
+    $prePunctum =~ s/\(h/(i/g;             # raise pitch in general
+    $prePunctum =~ s/hr\)/ir)/g;           # raise pitch in general
+    $prePunctum =~ s/^(.*)\(i\)/$1(h)/;    # lower ultimate pitch
+    $prePunctum =~ s/^(.*)\(i\)/$1(h)/;    # lower penultimate pitch
+    $punctum =~ s/\(d/(i/g;                # raise final pitches
+    $punctum =~ s/dr\)/ir)/g;              # raise final pitches
+
+    $o =
+      $flexa
+      ? "$flexa *(;) $metrum (,) $prePunctum(i)$punctum$concl"
+      : "$metrum *(;) $prePunctum(i)$punctum$concl";
+  } else {
+
+    # Antiphonale Romanum 1949 (Toni antiqui ad libitum pp. 52* ff.)
+    # Tonus simplex:  (c3) h hr 'h fr f. † hr g f 'h h. * hr 'h dr d.
+    # Tonus solemnis: (c4) g hr 'h gr g. * (g hr h.;) hr g g 'h hr h.
+    $metrum =~ s/\([gf]\)/(h)/g;    # remove metrum
+
+    if ($flexa) {
+      $flexa =~ s/c3(.*?)\(h\)/c4$1(g)/;    # lower pitch and add initia
+      $flexa =~ s/\(f(r?\.?)\)/(g$1)/g;     # raise pitch at flexa
+      $flexa =~ s/\(h[\_\']+\)/(h.)/;       # incisi minoris momenti => majoris
+    } else {
+      $metrum =~ s/\(h[r\.]\)/(g$1)/g;      # add flexa
+      $metrum =~ s/hr\)/gr)/g;              # add flexa
+      $metrum =~ s/c3/c4/;                  # lower pitch
+      $metrum =~ s/\(h[\_\']+\)/(h.)/;      # incisi minoris momenti => majoris
+    }
+    $metrum =~ s/\(h\)/(g)/;                # add initia
+    $prePunctum =~ s/^(.*)\(h\)/$1(g)/;     # lower ultimate pitch
+    $prePunctum =~ s/^(.*)\(h\)/$1(g)/;     # lower penultimate pitch
+    $punctum =~ s/\(d/(h/g;                 # raise final pitches
+    $punctum =~ s/dr\)/hr)/g;               # raise final pitches
+
+    $o =
+      $flexa
+      ? "$flexa *(;) $metrum (;) $prePunctum(h)$punctum$concl"
+      : "$metrum *(;) $prePunctum(h)$punctum$concl";
+  }
+
+  return $o;
 }
 
 1;

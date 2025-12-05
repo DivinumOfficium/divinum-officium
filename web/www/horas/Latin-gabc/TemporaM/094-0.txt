@@ -1,0 +1,38 @@
+[Lectio3]
+@Tempora/094-0:Lectio3:s/; 2.*// s/\D1 .*//s
+
+[Lectio4]
+@Tempora/094-0:Lectio3:s/1:10-12; // s/10 .*\D1 /1 /s
+
+[Responsory4]
+R. Vos, qui in túrribus estis aperíte portas: † Dóminus omnípotens fecit virtútem
+* Et victóriam dedit de inimícis nostris.
+V. Laudáte Dóminum Deum nostrum qui non deséruit sperántes in se.
+R. Et victóriam dedit de inimícis nostris.
+
+[Responsory5]
+R. Nos álium Deum nescímus præter Dóminum, in quo sperámus:
+* Qui non déspicit nos, nec ámovet salútem suam a génere nostro.
+V. Indulgéntiam ipsíus fusis lácrimis postulémus, † et humiliémus illi ánimas nostras.
+R. Qui non déspicit nos, nec ámovet salútem suam a génere nostro.
+
+[Lectio6]
+@Tempora/094-0:Lectio5:s/Ítaque illa.*//s
+
+[Responsory6]
+R. Dominátor, Dómine, cælórum et terræ, † Creator aquárum, Rex univérsæ creaturæ:
+* Exáudi oratiónem servórum tuórum.
+V. Tu, Dómine, cui humílium semper et mansuetórum plácuit deprecátio.
+R. Exáudi oratiónem servórum tuórum.
+
+[Lectio7]
+@Tempora/094-0:Lectio6:s/Jejúnium .*//s
+
+[Lectio8]
+@Tempora/094-0:Lectio6:s/.* Jejúnium /Jejúnium /s
+
+[Responsory11]
+R. Laudáte Dóminum Deum nostrum, † qui non deséruit sperántes in se et in me adimplévit misericórdiam suam,
+* Quam promísit domui Israël.
+V. Confitémini illi quóniam bonus, quóniam in sǽculum misericórdia ejus.
+R. Quam promísit domui Israël.

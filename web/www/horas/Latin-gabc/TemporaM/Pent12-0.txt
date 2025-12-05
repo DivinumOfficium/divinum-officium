@@ -1,0 +1,13 @@
+[Lectio9]
+@Tempora/Pent12-0:Lectio7:s/Isaías.*//s
+
+[Lectio10]
+@Tempora/Pent12-0:Lectio7:s/.* Isaías/Isaías/s s/$/~/
+@Tempora/Pent12-0:Lectio8:s/Quos.*//s
+
+[Lectio11]
+@Tempora/Pent12-0:Lectio8:s/.* Quos/Quos/s s/$/~/
+@Tempora/Pent12-0:Lectio9:s/Legisperítus,.*//s
+
+[Lectio12]
+@Tempora/Pent12-0:Lectio9:s/.* Legisperítus,/Legisperítus,/s

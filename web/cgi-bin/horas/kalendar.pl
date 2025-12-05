@@ -304,6 +304,12 @@ function readings() {
 )
 }
 
+sub horasjsend() {
+
+  # Gregorian Chant (GABC) functionality:
+  # Empty but necessary function to mask the corresponding one from horasjs.pl!
+}
+
 # below function is unused
 # sub Readings {
 #   my @months = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);

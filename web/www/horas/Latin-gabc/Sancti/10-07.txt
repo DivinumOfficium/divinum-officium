@@ -1,0 +1,278 @@
+[Ant Vespera]
+Quæ est ista, * speciósa sicut colúmba, quasi rosa plantáta super rivos aquárum?;;109
+Virgo potens, * sicut turris David: mille clípei pendent ex ea, omnis armatúra fórtium.;;112
+Ave, María, * grátia plena; Dóminus tecum: benedícta tu in muliéribus.;;121
+Benedíxit te Dóminus * in virtúte sua, quia per te ad níhilum redégit inimícos nostros.;;126
+Vidérunt eam * fíliæ Sion vernántem in flóribus rosárum, et beatíssimam prædicavérunt.;;147
+
+[Hymnus Vespera]
+v. Cæléstis aulæ Núntius,
+Arcána pandens Núminis,
+Plenam salútat grátia
+Dei Paréntem Vírginem.
+_
+Virgo propínquam sánguine
+Matrem Joánnis vísitat,
+Qui, clausus alvo, géstiens
+Adésse Christum núntiat.
+_
+Verbum, quod ante sǽcula
+E mente Patris pródiit,
+E Matris alvo Vírginis,
+Mortális Infans, náscitur.
+_
+Templo puéllus sístitur,
+Legíque paret Légifer,
+Hic se Redémptor páupere
+Prétio redémptus ímmolat.
+_
+Quem jam dolébat pérditum,
+Mox læta Mater ínvenit
+Ignóta doctis méntibus
+Edisseréntem Fílium.
+_
+@Psalterium/Doxologies:Nat
+
+[HymnusM Vespera]
+@Sancti/10-07:Hymnus Vespera:s/Nat/NatT/s
+
+[Versum 1]
+{initial-style:0;%%(c3) V/. Re(h)gí(h)na(h) sa(h)cra(h)tís(h)si(h)mi(h) Ro(h)sá(h)ri(h)i,(h) o(h)ra(h) pro(h) no(h)bis.(g_'/hvGF'E!fgf.) (::)
+ R/. Ut(h) di(h)gni(h) ef(h)fi(h)ci(h)á(h)mur(h) pro(h)mis(h)si(h)ó(h)ni(h)bus(h) Chris(h)ti.(g_'/hvGF'E!fgf.) (::)}
+
+[Ant 1]
+Beáta es, * Virgo María, Dei Génetrix, quæ credidísti Dómino; perfécta sunt in te quæ dicta sunt tibi, intercéde pro nobis ad Dóminum, Deum nostrum.
+
+[Oratio]
+{(c3) De(h)us,(h) cu(h)jus(h) U(h)ni(h)gé(h)ni(h)tus(h) per(h) vi(h)tam,(h) mor(h)tem(h) et(h) re(h)sur(h)rec(h)ti(h)ó(h)nem(h) su(h)am(h) no(h)bis(h) sa(h)lú(h)tis(h) æ(h)tér(h)næ(h) prǽ(h)mi(h)a(h) com(h)pa(h)rá(h)vit:(f.) †(,) con(h)cé(h)de,(h) quǽ(h)su(h)mus;(h) ut(h) hæc(h) mys(h)té(h)ri(h)a(h) sa(h)cra(h)tís(h)si(h)mo(h) be(h)á(h)tæ(h) Ma(h)rí(h)æ(h) Vír(h)gi(h)nis(h) Ro(h)sá(h)ri(h)o(h) re(g)co(f)lén(h hr)tes,(h.) *(;) et(h) i(h)mi(h)té(h)mur(h) quod(h) cón(h)ti(h)nent,(h) et(h) quod(h) pro(h)mít(h)tunt,(h) as(h)se(h)quá(h dr)mur.(d.) (::)}
+$Per eumdem
+
+[Invit]
+Solemnitátem Rosárii Vírginis Maríæ celebrémus: * Christum ejus Fílium adorémus Dóminum.
+
+[Hymnus Matutinum_]
+v. In monte olívis cónsito
+Redémptor orans prócidit,
+Mæret, pavéscit, déficit,
+Sudóre manans sánguinis.
+_
+A proditóre tráditus
+Raptátur in pœnas Deus,
+Durísque vinctus néxibus,
+Flagris cruéntis cǽditur.
+_
+Intéxta acútis séntibus,
+Coróna contuméliæ,
+Squalénti amíctum púrpura,
+Regem corónat glóriæ.
+_
+Molis crucem ter árduæ,
+Sudans, anhélans, cóncidens,
+Ad montis usque vérticem
+Gestáre vi compéllitur.
+_
+Confíxus atro stípite
+Inter sceléstos ínnocens,
+Orándo pro tortóribus,
+Exsánguis efflat spíritum.
+_
+@Psalterium/Doxologies:Nat
+
+[Hymnus Matutinum] (rubrica 196)
+@Sancti/10-07:Hymnus Vespera:s/\@Psalterium.*//s
+@Sancti/10-07:Hymnus Matutinum_:s/^v. //
+
+[HymnusM Matutinum]
+@Sancti/10-07:Hymnus Matutinum_:s/v. // s/Nat/NatT/
+
+[HymnusM Matutinum] (rubrica 196)
+@Sancti/10-07:Hymnus Vespera: s/\@Psalterium.*//s
+@Sancti/10-07:Hymnus Matutinum_:s/v. // s/Nat/NatT/
+
+[Ant Matutinum]
+Angelus Gábriel * nuntiávit Maríæ: et concépit de Spíritu Sancto.;;8
+Intrávit María * in domum Zacharíæ, et salutávit Elísabeth.;;18
+Péperit Fílium suum * primogénitum, et reclinávit eum in præsépio.;;23
+Cum indúcerent * Jesum paréntes ejus, ut sísterent eum Dómino, Símeon accépit eum in ulnas suas, et benedíxit Deum.;;44
+Requiréntes Jesum * paréntes ejus, invenérunt illum post tríduum in médio doctórum.;;45
+Cœpit contristári, * et factus est sudor ejus in horto sicut guttæ sánguinis.;;86
+Apprehéndit * Pilátus Jesum, et flagellávit.;;95
+Mílites plecténtes corónam * de spinis, imposuérunt super caput ejus.;;96
+Crucis impérium * super húmerum ejus: regnávit a ligno Deus.;;97
+
+[Nocturn 1 Versum]
+{initial-style:0;%%(c3) V/. Sanc(h)ta(h) De(h)i(h) Gé(h)ne(h)trix,(h) sem(h)per(h) Vir(h)go(h) Ma(h)rí(h)a.(g_'/hvGF'E!fgf.) (::)
+R/. In(h)ter(h)cé(h)de(h) pro(h) no(h)bis(h) ad(h) Dó(h)mi(h)num,(h) De(h)um(h) nos(h)trum.(g_'/hvGF'E!fgf.) (::)}
+
+[Nocturn 2 Versum]
+{initial-style: 0;%%(c3) V/. Post(h) par(h)tum,(h) Vir(h)go,(h) in(h)vi(h)o(h)lá(h)ta(h) per(h)man(h)sís(h)ti.(g_'/hvGF'E!fgf.) (::)
+R/.De(h)i(h) Gé(h)ne(h)trix,(h) in(h)ter(h)cé(h)de(h) pro(h) no(h)bis.(g_'/hvGF'E!fgf.) (::)}
+
+[Nocturn 3 Versum]
+{initial-style: 0;%%(c3) V/. Spe(h)ci(h)ó(h)sa(h) fac(h)ta(h) es(h) et(h) su(h)á(h)vis.(g_'/hvGF'E!fgf.) (::)
+R/.In(h) de(h)lí(h)ci(h)is(h) tu(h)is,(h) sanc(h)ta(h) De(h)i(h) Gé(h)ne(h)trix.(g_'/hvGF'E!fgf.) (::)}
+
+[Responsory1]
+R. Súmite psaltérium jucúndum in insígni die solemnitátis vestræ: 
+* Et exsultáte Vírgini adjutríci nostræ.
+V. Cantáte ei cánticum novum: annuntiáte inter gentes glóriam ejus.
+R. Et exsultáte Vírgini adjutríci nostræ.
+
+[Responsory2]
+R. Vidi speciósam ascendéntem désuper rivos aquárum; cujus inæstimábilis odor erat nimis; 
+* Et sicut dies verni circúmdabant eam flores rosárum et lília convállium.
+V. Astitit Regína a dextris tuis in vestítu deauráto, circúmdata varietáte.
+R. Et sicut dies verni circúmdabant eam flores rosárum et lília convállium.
+
+[Responsory3]
+R. Quæ est ista quæ procéssit sicut sol, et formósa tamquam Jerúsalem? Vidérunt eam fíliæ Sion, et beátam dixérunt, 
+* Et regínæ laudavérunt eam.
+V. Et sicut dies verni circúmdabant eam flores rosárum et lília convállium.
+R. Et regínæ laudavérunt eam.
+&Gloria
+R. Et regínæ laudavérunt eam.
+
+[Responsory4]
+R. Tu glória Jerúsalem, tu lætítia Israël, tu honorificéntia pópuli nostri, fecísti viríliter: 
+* Quia cunctas hǽreses sola interemísti.
+V. Pulchra es et decóra, terríbilis ut castrórum ácies ordináta.
+R. Quia cunctas hǽreses sola interemísti.
+
+[Responsory5]
+R. Déxtera tua magnificáta est in fortitúdine, déxtera tua confrégit inimícos: 
+* Submérsi sunt in aquis veheméntibus, et opéruit eos mare.
+V. Benedíxit te Dóminus in virtúte sua, quia per te ad níhilum redégit inimícos nostros.
+R. Submérsi sunt in aquis veheméntibus, et opéruit eos mare.
+
+[Responsory6]
+R. Signum magnum appáruit in cælo: Múlier amícta sole, et luna sub pédibus ejus, 
+* Et in cápite ejus coróna stellárum duódecim.
+V. Dábitur cápiti tuo augméntum gratiárum et coróna ínclita próteget te.
+R. Et in cápite ejus coróna stellárum duódecim.
+&Gloria
+R. Et in cápite ejus coróna stellárum duódecim.
+
+[Responsory7]
+R. Ego quasi vitis fructificávi suavitátem odóris, 
+* Et flores mei fructus honóris et honestátis.
+V. Ego mater pulchræ dilectiónis, et timóris, et agnitiónis, et sanctæ spei.
+R. Et flores mei fructus honóris et honestátis.
+
+[Responsory8]
+R. Surge, própera, amíca mea; jam enim hiems tránsiit, imber ábiit et recéssit, 
+* Flores apparuérunt in terra nostra.
+V. Dóminus dabit benignitátem, et terra nostra dabit fructum suum.
+R. Flores apparuérunt in terra nostra.
+&Gloria
+R. Flores apparuérunt in terra nostra.
+
+[Ant Laudes]
+Lætáre, * Virgo Mater; surréxit Christus de sepúlcro.
+Ascéndit Deus * in jubilatióne, et Dóminus in voce tubæ.
+Spíritus Dómini * replévit orbem terrárum.
+Assúmpta est * María in cælum: gaudent Angeli, laudántes benedícunt Dóminum, allelúja.
+Exaltáta est * Virgo María super choros Angelórum, et in cápite ejus coróna stellárum duódecim.
+
+[Capitulum Laudes]
+!Sir 24:25; 39:17
+{(c3) In(h) me(h) grá(h)ti(h)a(h) om(h)nis(h) vi(h)æ(h) et(h) ve(h)ri(h)tá(h)tis,(f.) †(;) in(h) me(h) om(h)nis(h) spes(h) vi(h)tæ(h) et(g) vir(f)tú(h hr)tis.(h.) *(;) E(h)go,(h) qua(h)si(h) ro(h)sa(h) plan(h)tá(h)ta(h) su(h)per(h) ri(h)vos(h) a(h)quá(h)rum,(h) fruc(h)ti(h)fi(h)cá(f)vi.(ef..) (::)}
+$Deo gratias
+
+[Hymnus Laudes]
+v. Jam morte, victor, óbruta,
+Ab ínferis Christus redit,
+Fractísque culpæ vínculis,
+Cæli reclúdit límina.
+_
+Visus satis mortálibus
+Ascéndit ad cæléstia,
+Dextrǽque Patris ássidet
+Consors patérnæ glóriæ.
+_
+Quem jam suis promíserat,
+Sanctum datúrus Spíritum,
+Linguis amóris ígneis
+Mæstis alúmnis ímpluit.
+_
+Solúta carnis póndere
+Ad astra Virgo tóllitur,
+Excépta cæli júbilo
+Et Angelórum cánticis.
+_
+Bis sena cingunt sídera
+Almæ paréntis vérticem:
+Throno propínqua Fílii
+Cunctis creátis ímperat.
+_
+@Psalterium/Doxologies:Nat
+
+[Versum 2]
+{initial-style:0;%%(c3) V/. E(h)lé(h)git(h) e(h)am(h) De(h)us,(h) et(h) præ(h)e(h)lé(h)git(h) e(h)am.(g_'/hvGF'E!fgf.) (::)
+ R/. Et(h) ha(h)bi(h)tá(h)re(h) e(h)am(h) fe(h)cit(h) in(h) ta(h)ber(h)ná(h)cu(h)lo(h) su(h)o.(g_'/hvGF'E!fgf.) (::)}
+
+[Ant 2]
+Solemnitátem hodiérnam * sacratíssimi Rosárii Genetrícis Dei Maríæ devóte celebrémus, ut ipsa pro nobis intercédat ad Dóminum Jesum Christum.
+
+[Lectio Prima]
+!Sir 24:17-18
+{(c3) Qua(h)si(h) ce(h)drus(h) ex(h)al(h)tá(h)ta(h) sum(h) in(h) Lí(h)ba(h)no,(h) et(h) qua(h)si(h) cy(h)prés(h)sus(h) in(h) mon(h)te(h) Si(h)on:(f.) †(;) qua(h)si(h) pal(h)ma(h) ex(h)al(h)tá(h)ta(h) sum(g) in(f) Ca(h hr)des,(h.) *(;) et(h) qua(h)si(h) plan(h)tá(h)ti(h)o(h) ro(h)sæ(h) in(h) Jé(h)ri(f)cho.(ef..) (::)}
+
+[Responsory Breve Tertia]
+R.br. Sancta Dei Génetrix, * Semper Virgo María.
+R. Sancta Dei Génetrix, * Semper Virgo María.
+V. Intercéde pro nobis ad Dóminum, Deum nostrum.
+R. Semper Virgo María.
+&Gloria
+R. Sancta Dei Génetrix, * Semper Virgo María.
+
+[Capitulum Sexta]
+!Sir 39:19
+{(c3) Flo(h)ré(h)te(h) flo(h)res(h) qua(h)si(h) lí(h)li(f)um(f.) †(;) et(h) da(h)te(h) o(h)dó(h)rem(h) et(h) fron(h)dé(h)te(g) in(f) grá(h)ti(hr)am;(h.) *(;) col(h)lau(h)dá(h)te(h) cán(h)ti(h)cum(h) et(h) be(h)ne(h)dí(h)ci(h)te(h) Dó(h)mi(h)num(h) in(h) o(h)pé(h)ri(h)bus(h) su(f)is.(ef..) (::)}
+$Deo gratias
+
+[Responsory Breve Sexta]
+R.br. Post partum, Virgo, * Invioláta permansísti.
+R. Post partum, Virgo, * Invioláta permansísti.
+V. Dei Génetrix, intercéde pro nobis.
+R. Invioláta permansísti.
+&Gloria
+R. Post partum, Virgo, * Invioláta permansísti.
+
+[Responsory Breve Nona]
+R.br. Speciósa facta es * Et suávis.
+R. Speciósa facta es * Et suávis.
+V. In delíciis tuis, sancta Dei Génetrix.
+R. Et suávis.
+&Gloria
+R. Speciósa facta es * Et suávis.
+
+[Hymnus Vespera 3]
+v. Te gestiéntem gáudiis,
+Te sáuciam dolóribus,
+Te jugi amíctam glória,
+O Virgo Mater, pángimus.
+_
+Ave, redúndans gáudio
+Dum cóncipis, dum vísitas;
+Et edis, offers, ínvenis,
+Mater beáta, Fílium.
+_
+Ave, dolens, et íntimo
+In corde agónem, vérbera,
+Spinas crucémque Fílii 
+Perpéssa, princeps mártyrum.
+_
+Ave, in triúmphis Fílii,
+In ígnibus Parácliti,
+In regni honóre et lúmine,
+Regína fulgens glória.
+_
+Veníte, gentes, cárpite
+Ex his rosas mystériis,
+Et pulchri amóris ínclitæ
+Matri corónas néctite.
+_
+@Psalterium/Doxologies:Nat
+
+[Ant 3]
+Beáta Mater * et intácta Virgo, gloriósa Regína mundi, séntiant omnes tuum juvámen, quicúmque célebrant tuam sacratíssimi Rosárii solemnitátem.

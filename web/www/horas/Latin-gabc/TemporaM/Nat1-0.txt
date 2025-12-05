@@ -1,0 +1,29 @@
+[Lectio2]
+@Tempora/Nat29::s/-12/-10/ s/11 .*//s
+
+[Lectio3]
+@Tempora/Nat29:Lectio2:s/8-12/11-13/ s/8 .*11 /11 /s
+@Tempora/Nat29:Lectio3:s/.*13 /13 /s s/14 .*//s
+
+[Lectio4]
+@Tempora/Nat29:Lectio3:s/13-/14-/ s/13 .*14 /14 /s
+
+[Lectio5]
+@Tempora/Nat1-0:Lectio4:s/Utrámque .*//s
+
+[Lectio6]
+@Tempora/Nat1-0:Lectio4:s/.* Utrámque /Utrámque /s s/$/~/
+@Tempora/Nat1-0:Lectio5:s/Nemo .*//s
+
+[Lectio7]
+@Tempora/Nat1-0:Lectio5:s/.* Nemo /Nemo /s s/$/~/
+@Tempora/Nat1-0:Lectio6:s/Quod .*//s
+
+[Lectio8]
+@Tempora/Nat1-0:Lectio6:s/.* Quod /Quod /s
+
+[Lectio10]
+@Tempora/Nat1-0:Lectio8:s/Vivum .*//s
+
+[Lectio11]
+@Tempora/Nat1-0:Lectio8:s/.* Vivum /Vivum /s

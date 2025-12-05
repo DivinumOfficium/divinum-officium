@@ -1505,6 +1505,13 @@ sub precedence {
   }
   $rule = $communerule = '';
 
+  if ($lang1 =~ /gabc/i || $lang2 =~ /gabc/i) {
+
+    # GABC: set ChantTone depending on the solemnity of the day
+    our $chantTone;
+    setChantTone();
+  }
+
   if ($winner) {
     if ($missa && $missanumber) {
       my $wm = $winner;
@@ -1754,6 +1761,15 @@ sub climit1960 {
 # returns the winner name and rank, in $lang1
 sub setheadline {
   our (%winner, $lang1);
+
+  if ($lang1 =~ /gabc/i) {
+
+    # GABC: If Chant is selected as the main language (in options) display ChantTone in Headline
+    our $chantTone;
+    $winner{Rank} =~ /^(.*?)\;/;
+    return ($1 || $winner{Rank}) . " ~ " . rankname($lang1) . " : Tonus $chantTone";
+  }
+
   $winner{Rank} =~ /^(.*?)\;/;
   ($1 || $winner{Rank}) . " ~ " . rankname($lang1);
 }
@@ -1862,6 +1878,133 @@ sub rankname {
   }
 
   $rankname =~ s/\n//gr;
+}
+
+# GABC: captures the appropriate chant types for GABC Common Tones
+# the function is modeled from setheadline(), hence its clumsy look and feel
+sub setChantTone {
+
+  my %latwinner = %{setupstring('Latin', $winner)};
+  my @latrank = split(';;', $latwinner{Rank});
+  my $name = $latrank[0];
+  my $rank = $latrank[2];
+
+  # read only globals
+  our (%winner, $winner, @dayname, $version, $day, $month, $year, $dayofweek, $hora, $rule, $commune, @commemoentries);
+
+  our $chantTone = 'ferialis';
+
+  if ( ($name !~ /(?:Die|Feria|Sabbato|^In Octava)/i)
+    && ($dayname[0] !~ /Pasc[07]/i || $dayofweek == 0 || $name !~ /Pasc|Pent/i))
+  {
+    # On all feasts except during the Octaves of Easter and Pentecost
+    # Mapping of Solemnity to ChantTones (Antiphonale Monasticum, 1934)
+    #   dpx I. cl.  => solemnis
+    #   dpx II. cl. => minus solemnis
+    #   dpx maj.    => festivus major
+    #   dpx         => festivus
+    #   sdx         => festivus minor
+    #   spx         => simplicis
+    my @tradtable = (
+      'ferialis', 'simplicis', 'festivus minor', 'festivus',
+      'festivus major', 'minus solemnis', 'solemnis', 'solemnis',
+    );
+
+    # Mapping of Solemnity to ChantTones (Liber Usualis 1961):
+    #   I. cl.      => solemnis
+    #   II. cl.     => festivus
+    #   III. cl.    => festivus minor
+    #   IV. cl.     => ferialis
+    my @newtable =
+      ('none', 'ferialis', 'festivus minor', 'festivus minor', 'festivus minor', 'festivus', 'solemnis', 'solemnis');
+
+    $chantTone = ($version !~ /196/) ? $tradtable[$rank] : $newtable[$rank];
+
+    if ($version =~ /19(?:55|60)/ && $winner !~ /Pasc5-3/i && $dayname[1] =~ /feria/i) { $chantTone = 'ferialis'; }
+
+    if ($version =~ /1570/i) { $chantTone =~ s/ major//; }    # no Duplex majus yet in 1570
+
+    if ($name =~ /Vigilia Epi/i) {
+      $chantTone = 'festivus minor';                          # tamquam Semiduplex
+    } elsif ($name =~ /Vigilia|Quattuor/i) {
+      $chantTone = 'ferialis major';
+    } elsif ($name =~ /Sanctæ Fami/i && $version !~ /196/) {
+      $chantTone = 'festivus major';                          # tamquam dpx majus
+    }
+
+    if ($name =~ /Dominica/i) {
+
+      # Mapping of Solemnity to ChantTones
+      # Dominicæ:
+      #   Pascha      => resurrectionis
+      #   dpx I. cl.  => solemnis
+      #   T. P.       => paschalis
+      #   major       => dominicalis major
+      #   infra 8vam  => festivus 8vam priv || festivus minor
+      #   minor       => dominicalis minor
+      local $_ = getweek($day, $month, $year, $dayofweek == 6 && $hora =~ /Vespera|Completorium/i);
+      $chantTone =
+          (/Pasc0/i) ? 'resurrectionis'
+        : (/Pasc7|Pent01/i) ? 'solemnis'
+        : (/Pasc[1-6]/i) ? 'paschalis'
+        : (/(Adv[1-4]|Quad[1-6])/i) ? 'dominicalis major'
+        : (/Nat/i) ? 'festivus minor'
+        : (/Epi1|Pent02/i && $version !~ /19(?:55|6)/) ? 'festivus 8vam priv'
+        : 'dominicalis minor';
+    }
+  } elsif ($version =~ /196/ && $winner =~ /Pasc6-6/) {
+    $chantTone = 'paschalis';    # Vigilia Pentecostes
+  } elsif ($rule =~ /C10/) {
+    $chantTone = 'BMV sabbato';    # BMV Sabbato
+  } elsif ($version !~ /196/ && $dayname[0] =~ /Pasc0/i && $dayofweek > 0) {
+    $chantTone = ($rank =~ 7) ? 'resurrectionis' : 'paschalis';    # Paschal Octave
+  } elsif ($version !~ /196/ && $dayname[0] =~ /Pasc7/i && $dayofweek > 0) {
+    $chantTone = ($rank =~ 7) ? 'solemnis' : 'paschalis';          # Pentecost Octave
+  } elsif ($version =~ /trid/i && $name =~ /^In Octava(?! Asc)/i) {
+    $chantTone = 'festivus';                                       # Dies Octavae pre-Divino
+  } elsif ($version =~ /trid/i && $name =~ /in.* Octavam? Asc|post Octavam Asc|Vigilia Pent/i) {
+    $chantTone = 'paschalis';                                      # Ascensiontide pre-Divino
+  } elsif ($version =~ /trid/i && $name =~ /infra Octavam/i) {
+    $chantTone = 'festivus minor';                                 # all other Octaves pre Divino
+  } elsif ($version =~ /Divino/ && $name =~ /^In Octava|infra Octavam|post Octavam Asc|Vigilia Pent/i) {
+    $chantTone = ($rank < 2)
+      ? 'festivus minor'                                           # etiam in octava simplici
+      : ($rank < 3 && $name !~ /Asc|Nat|Cord/i || $name =~ /post|Joan/) ? 'festivus minor'
+      : ($rank < 3 && $name !~ /Asc/i) ? 'festivus 8vam priv'
+      : ($rank < 3) ? 'paschalis'
+      : ($rank < 5 && $name !~ /Asc|Nat|Cord/i) ? 'festivus major'
+      : ($rank < 5) ? (($name =~ /Asc/i) ? 'paschalis' : 'festivus major')
+      : ($rank < 5.61) ? 'festivus 8vam priv'                      # infra 8vam Epi & CC
+      : ($rank < 6.5) ? 'festivus major'                           # dies 8va   Epi & CC
+      : 'paschalis';
+  } else {    # Default for Ferias
+    if ($version !~ /196/) {
+      $chantTone =
+        ($rank < 2) ? 'ferialis' : ($rank < 3) ? 'ferialis major' : ($rank < 5) ? 'ferialis major' : 'ferialis major';
+    } else {
+      $chantTone = ($dayname[0] =~ /Adv|Quad(?!p)/i || $rank > 3) ? 'ferialis major' : 'ferialis';   #$ranktable[$rank];
+    }
+  }
+
+  my $commemostring = join('\n', @commemoentries);
+
+  if (
+    (
+         $commune =~ /C11/i
+      || ($name =~ /(?:Beat|Sanct)(?:ae|æ) Mari/ && $name !~ /Vigil|Sabbato/i)
+      || $commemostring =~ /bmv/
+    )
+    && $chantTone !~ /solemnis/i
+  ) {
+
+    # Feasts and Octaves of the Blessed Virgin except Sabbato BMV
+    $chantTone = 'festivus BMV';
+  } elsif ($winner =~ /tempora/i && $dayname[0] =~ /Pasc/i && $chantTone =~ /ferialis/i) {
+
+    #  if Feria / Octava T.P. => paschalis
+    $chantTone = 'paschalis';
+  }
+  return "$chantTone";
 }
 
 sub subdirname {

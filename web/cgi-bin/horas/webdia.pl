@@ -116,9 +116,12 @@ PrintTag
   print <<"PrintTag";
   </STYLE>
   <TITLE>$title</TITLE>
+	<SCRIPT TYPE='text/JavaScript' SRC='js/util.js'></SCRIPT>
+	<SCRIPT TYPE='text/JavaScript' SRC='js/jquery.min.js'></SCRIPT>
+	<SCRIPT TYPE='text/JavaScript' SRC='js/exsurge.js'></SCRIPT>
 $horasjs
 </HEAD>
-<BODY $onload>
+<BODY $onload onresize="layoutChant()">
 <FORM ACTION="$officium" METHOD="post" TARGET="_self">
 PrintTag
 }
@@ -126,6 +129,7 @@ PrintTag
 sub htmlEnd {
   if ($error) { print "<P ALIGN='CENTER'><FONT COLOR='red'>$error</FONT></P>\n"; }
   if ($debug) { print "<P ALIGN='center'><FONT COLOR='blue'>$debug</FONT></P>\n"; }
+  horasjsend();
   print "</FORM></BODY></HTML>";
 }
 
@@ -272,7 +276,7 @@ sub cleanse($) {
     @parts = split(/;/, $str);
 
     foreach my $part (@parts) {
-      unless ($part =~ /^([^'`"\\={}()]*|'[^'`"\\]*'|\$\w+='[^'`"\\]*')$/i) {    #`
+      unless ($part =~ /^([^'`"\\={}()]*|'[^'`"\\]*'|\$\w+='[^'`"\\]*')$/i) {    #` #accente grave for editor
 
         #print STDERR "erasing $part\n";
         $part = '';
@@ -515,30 +519,134 @@ sub setcell {
       . ($lang1 ne $lang || $text =~ /{omittitur}/ ? "" : " ID='$hora$searchind'") . ">";
     print "<p>" if $officium =~ /Eofficium|Emissa/;
     topnext_cell(\$text, $lang) unless $popup || $officium =~ /Eofficium|Emissa/;
+
+    # GABC: post process chants
+    if ($lang =~ /gabc/i) {
+      my $dId = 0;
+
+      if ($text =~ /Commemoratio|Suffragium/) {
+
+        # Merge Commemoratio et Suffragium
+        # The Versicle are given in the simple tone with clef (c3) ending on (f.)
+        # Roman: The Oration follows in the solemn tone.
+        # Keeping the clef (c4) and adding custos for that purpose.
+        $text =~
+          s/\.\((f)\.\)\s*\(\:\:\)\}(?:\s|\_|\<br\/\>)*\{(\(c4\) O\(h\)ré\([gh]{1,2}\)mus\.\([fh]\.\) \(\:\:\)\})/.($1.) (f+::) $2/gs;
+      } elsif ($text =~ /Incipit/i) {
+
+        # Merge &Alleluja with &Deus in adjutorium
+        $text =~ s/(men\.\([defgh]\.?\) \(\:\:\))\}(?:\s|\_|\<br\/\>)*\{\(c[34]\) (Al|Laus)\(/$1 $2\(/gs;
+      }
+
+      # Merge Versicle with following Oremus, with following Oratio, with following Conclusio
+      $text =~
+        s/\.\(([dfghi])\.\)\s*\(\:\:\)\}(?:\s|\_|\<br\/\>)*\{\(c[34]\) (O\([hi]\)ré\([ghi]{1,2}\)mus\.\([fhi]\.\) \(\:\:\)\})/.($1.) (::) $2/gs;
+      $text =~ s/(O\([hi]\)ré\([ghi]{1,2}\)mus\.\([fhi]\.\)) \(\:\:\)\}(?:\s|\_|\<br\/\>)*\{\(c[34]\)/$1 (:)/gs;
+      $text =~
+        s/\(([fdhi])\.\) \(\:\:\)\}\s*(?:\<br\/\>)*\s*\{(?:initial\-style\:0\;\%\%)\(c[34]\) (Per|Qui)/($1.) (:) $2/gs;
+
+      # Merge Absolutio, Benedictio and remove redundant Amen.
+      $text =~
+        s/\(([fd])\.\) \(\:\:\)\}(?:\s|\_|\<br\/\>)*\{(?:initial\-style\:0\;\%\%)\(c[34]\) (R\/. A\([gh]\.?\)men)/($1.) (::) $2/gs;
+      $text =~
+        s/(?<=R\/.\s?A\([defgh]\.?\)men\.\([defgh]\.?\) \(\:\:\))\s?R\/. A\([gh]\.?\)men\.\([gh]\.?\) \(\:\:\)//g;
+
+      # Merge Chapter, Lectio brevis, and Martyrolgium with Deo gratias / Tu autem / Et álibi
+      $text =~
+        s/(\.\(ef\.\.\) \(\:\:\))\}(?:\s|\_|\<br\/\>)*\{(?:initial\-style\:0\;\%\%)\(c[34]\) (R\/. De\(h\)o\(h\))/$1 $2/gs;
+      $text =~
+        s/(\.\(d\.\) \(\:\:\))\}(?:\s|\_|\<br\/\>)*\{(?:initial\-style\:0\;\%\%)\(c[34]\) (V\/. Tu\(h\) au\(g\))/$1 $2/gs;
+      $text =~
+        s/(\.\(d\.\) \(\:\:\))\}(?:\s|\_|\<br\/\>)*\{(?:initial\-style\:0\;\%\%)\(c[34]\) (V\/. Et\(h\) á\(h\)li)/$1 $2/gs;
+
+      # Retrieve all GABC scores from files
+      while ($text =~ /\{gabc:(.+?)\}/is) {
+        my $temp = $1;
+        my $gregFile = "chants/$1.gabc";
+        $gregFile = checkfile($lang, $gregFile);
+
+        if ($gregFile =~ /\/Latin\/.*gloria\.gabc/i) {
+
+          # if second Responsory GABC doesnot exist (cf. TODO in specmatins.pl)
+          $gregFile = "chants/$temp.gabc";
+          $gregFile =~ s/\-gloria//;
+          $gregFile = checkfile($lang, $gregFile);
+        }
+
+        if (-e "$gregFile") {
+          my (@gregScore) = do_read($gregFile);
+
+          if (@gregScore) {
+            $text =~ s/gabc:$temp/@gregScore/s;
+          }
+        } else {
+          $text =~ s/\{gabc:(.+?)\}/'GABC score $gregFile not found'/;
+        }
+      }
+
+      # identify all GABC sections and post process to be suitable for JavaScript
+      while ($text =~ /\{(\(|name:|annotation:|initial-style:|centering-scheme:)(.+?)\(\:\:\)\}/is) {
+        $dId++;
+        $text =~
+          s/\{(\(|name:|annotation:|initial-style:|centering-scheme:)/<DIV ID="GABC$hora$searchind-$dId" class="GABC">$1/s;
+        $text =~
+          s/\(\:\:\)\}/\(\:\:\)<\/DIV><DIV ID="GCHANT$hora$searchind-$dId" class="GCHANT" width="100\%"><\/DIV>/s;
+        $text =~
+          s/(name:[a-zA-Z\s\.\:]*?)\(([a-zA-Z\s\.\:]*?)\)([a-zA-Z\s\.\:]*?);/$1 $2 $3;/gm; # remove parentheses in title
+        $text =~ s/<i>T\.\s?P\.<\/i>/\_\^T. P.\^\_ /g;                                     # Tempore Paschalis
+        $text =~ s/<\/?i>/\_/g;                                                            # italics
+        $text =~ s/<\/?b>|<v>\\greheightstar<\/v>/*/g;                                     # asterisk
+        $text =~ s/<\/?sc>/\%/g;                                                           # small capitals
+        $text =~ s/<\/?c>/\^/g;                                                            # coloured
+        $text =~ s/<\/?e>/\_/g;                                                            # elisions
+        $text =~ s/<sp>(?:ae|æ)<\/sp>/æ/g;                                                 # various æ spellings
+        $text =~ s/<sp>\'(?:ae|æ)<\/sp>|aé/ǽ/g;
+        $text =~ s/ae\(/æ(/g;
+        $text =~ s/<sp>(?:oe|œ)<\/sp>/œ/g;                                                 # various œ spellings
+        $text =~ s/<sp>\'(?:oe|œ)<\/sp>|oé/œ́/g;
+        $text =~ s/\(\:\:\)\s*?<br\/?>\n/(::)\n/gi;     # remove wrong HTML linebreaks
+        $text =~ s/;\s*?<br\/?>\n/;\n/gi;               # remove wrong HTML linebreaks
+        $text =~ s/%% <br\/?>\n/%%\n/gi;                # remove wrong HTML linebreaks
+        $text =~ s/%%\(/%%\n\(/gi;                      # insert break at end of header
+        $text =~ s/;([a-z\%\(])/;\n$1/gi;               # insert break in header
+        $text =~ s/(\(\:\:\)\}?) <br\/?>\n/$1 \n/gi;    # remove wrong HTML linebreaks
+        $text =~ s/\) \* /\) \*() /g;                   # asterisk always to be followed by ()
+        $text =~ s/(\([\,\;\:]+\))\s*?(\^?\d+\.\^?|(<sp>)?[VR]\/(<\/sp>)?\.)\s/ $2$1 /gs;
+        $text =~ s/†\(([a-z0-9\_\'\.]+?)\)/($1) ^†^(,) /g;      # coloured flexa
+        $text =~ s/(<sp>)?V\/(<\/sp>)?\.?(\(\))?/V\/\.() /g;    # Versiculum
+        $text =~ s/(<sp>)?R\/(<\/sp>)?\.?(\(\))?/R\/\.() /g;    # Responsorium
+        $text =~ s/\.\(\) \(\:\:\)/.(::)/g;                     # contract () (::)
+        $text =~ s/<\/?nlba>//g;
+        $text =~ s/\_/\|\|/g;
+      }
+    } else {
+
+      # post process non-GABC
+      if ($text =~ /%(.*?)%/) {
+        $text = activate_links(\$text, $lang);
+      }
+    }
   }
 
-  process_inline_alleluias(\$text, $dayname[0] =~ /Pasc/) unless $missa;    # missa use own solution
-                                                                            # which should removed
+  process_inline_alleluias(\$text, $lang, $dayname[0] =~ /Pasc/) unless $missa;    # missa use own solution
+                                                                                   # which should removed
 
-  suppress_alleluia(\$text) if ($dayname[0] =~ /Quadp|Quad[1-5]|Quad6-[0-5]/i && ($missa || !Septuagesima_vesp()));
+  suppress_alleluia(\$text, $lang =~ /gabc/i)
+    if ($dayname[0] =~ /Quadp|Quad[1-5]|Quad6-[0-5]/i && ($missa || !Septuagesima_vesp()));
 
   $text =~ s/\<br\/\>\s*\<br\/\>/\<br\/\>/ig;
-  if ($lang =~ /Latin/i) { $text = spell_var($text); }
+  if ($lang =~ /Latin(\-bea)?$/i) { $text = spell_var($text); }    # Spell check not for 'Latin-gabc' (destroys chant)
 
-  if ($text =~ /%(.*?)%/) {
-    $text = activate_links(\$text, $lang);
-  }
   $text =~ s/wait[0-9]+//ig;
   $text =~ s/\_/ /g;
 
-  # $text =~ s/\{\:.*?\:\}(<br/>)*\s*//g;
   $text =~ s/\{\:.*?\:\}//sg;
-  $text =~ s/\`//g;                     #`
-  $text =~ s/\s([»!?;:])/&nbsp;$1/g;    # no-break space before punctutation (mostly French)
+  $text =~ s/\`//g;                                                 #` #accent grave for editor
+  $text =~ s/\s([»!?;:])/&nbsp;$1/g unless $lang eq 'Latin-gabc';   # no-break space before punctutation (mostly French)
   $text =~ s/\s([*§†])/&nbsp;$1/g
-    if $version =~ /cist/i;             # no-break space before break characters (style of Cistercian books)
-  $text =~ s/«\s/«&nbsp;/g unless $lang eq 'Deutsch';    # no-break space after begin quote
-  $text =~ s/\s\&\s/ &amp; /;                            # HTML - Ampersand;
+    if $version =~ /cist/i;    # no-break space before break characters (style of Cistercian books)
+  $text =~ s/«\s/«&nbsp;/g unless $lang =~ /Deutsch|gabc/i;    # no-break space after begin quote
+  $text =~ s/\s\&\s/ &amp; /;                                  # HTML - Ampersand;
   $text =~
     s/↊|\&\#x218a\;/<span style='color:grey; display:inline-block; transform: rotate(180deg) translate(-40%, 15%);'>2<\/span><span style='color:grey; display:inline-block; transform: translate(-100%, 16%);'>.<\/span>/gu;
   my $cist_flex = 1;    # 1 .. from Psalterium - 2 .. from Breviarium Cist.
@@ -552,6 +660,12 @@ sub setcell {
     s{§|†}{<svg viewBox="-10 0 661 1000" style="height: 1em; vertical-align: middle;"><path fill="currentColor" d="M130 634c-13 -26 -20 -52 -19 -79c0 -109 72 -168 157 -226c74 -46 149 -96 209 -159c-56 29 -135 44 -238 44c-41 0 -106 -22 -122 -62c-4 -10 -3 -21 2 -34c6 -15 18 -32 36 -32c12 0 36 10 47 15c14 6 28 13 44 19c35 20 93 31 133 31c46 0 90 -17 129 -40 c5 -3 8 -4 11 -5c1 -1 3 -1 4 -1c4 0 6 4 8 11c3 11 2 19 -3 25c-53 64 -111 129 -174 183c-21 20 -40 38 -56 56c-48 45 -88 107 -88 174c0 82 40 173 135 173c59 0 91 -54 117 -100c4 -7 6 -13 8 -21c6 -12 8 -26 8 -40c1 -9 1 -15 2 -20c0 -4 0 -11 -2 -21 c0 -10 -1 -16 -2 -19c0 -3 -1 -9 -2 -20s-3 -17 -3 -18c35 19 59 48 69 87c5 19 5 39 0 61c-11 50 -52 103 -95 128c-33 15 -65 20 -101 20c-56 0 -123 -25 -163 -64c-21 -18 -38 -41 -51 -66zM293 854c0 -27 24 -48 50 -50c28 0 47 23 49 50c0 26 -18 49 -45 49 c-30 0 -54 -17 -54 -49z"/></svg>}gu
     if $version =~ /cist/i && $cist_flex == 2;
   $text =~ s/§/†/gi if $version !~ /cist/i;
+
+  # Remove line breaks from chants
+  if ($lang =~ /gabc/i) {
+    $text =~ s/\|\|(<br\/>)/<br\/>/g;
+    $text =~ s/\|\|/\_/g;
+  }
 
   if ($Ck) {
     if ($column == 1) {
@@ -605,7 +719,7 @@ sub table_start {
 }
 
 #antepost('$title')
-# prints Ante of Post call
+# prints Ante or Post call
 sub ante_post {
   my $title = shift;
   if ($Ck) { return; }
@@ -890,8 +1004,9 @@ sub expand {
   if (
     $sigil ne '$rubrica '
     && ($expand eq 'propria'
-      || ($expand eq 'psalteria' && ($line =~ /^(?:[A-Z](?!men)|pater_noster)/)))
+      || ($expand eq 'psalteria' && ($line =~ /^(?:[A-Z](?!men|remus)|pater_noster)/)))
   ) {
+    $line =~ s/ solemnis// if $lang eq 'Latin-gabc';
     setlink($sigil . $line, 0, $lang);
   } elsif ($sigil eq '&') {
 

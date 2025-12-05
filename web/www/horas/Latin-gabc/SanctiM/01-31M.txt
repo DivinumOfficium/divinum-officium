@@ -1,0 +1,8 @@
+[Ant 1]
+@Commune/C3:Ant Vespera 3:5 s/;;.*//
+
+[Oratio]
+@Sancti/01-28::s/sanctum Petrum/sanctos Petrum et Raymúndum/ s/ipsíus/ipsórum/
+
+[Ant 2]
+@Commune/C1p:Ant Vespera:5 s/\, a.*/./i

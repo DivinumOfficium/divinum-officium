@@ -1,0 +1,19 @@
+[Lectio1]
+@Tempora/102-0:Lectio1:s/-40/-38/ s/39 .*//s
+
+[Lectio2]
+@Tempora/102-0:Lectio1:2-7 s/-40/-43/ s/36-/39-/ s/36 .*39 /39 /s
+@Tempora/102-0:Lectio2:s/!.*// s/44 .*//s
+
+[Lectio3]
+@Tempora/102-0:Lectio2:s/41-/44-/ s/41 .*44 /44 /s
+
+[Lectio6]
+@Tempora/102-0:Lectio5:s/Non multo .*//s
+
+[Lectio7]
+@Tempora/102-0:Lectio5:s/.* Non multo /Non multo /s s/$/~/
+@Tempora/102-0:Lectio6:s/Deínde contríti.*//s
+
+[Lectio8]
+@Tempora/102-0:Lectio6:s/.* Deínde contríti/Deínde contríti/s
