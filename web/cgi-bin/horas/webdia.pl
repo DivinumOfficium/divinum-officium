@@ -116,9 +116,9 @@ PrintTag
   print <<"PrintTag";
   </STYLE>
   <TITLE>$title</TITLE>
-	<SCRIPT TYPE='text/JavaScript' SRC='js/util.js'></SCRIPT>
-	<SCRIPT TYPE='text/JavaScript' SRC='js/jquery.min.js'></SCRIPT>
-	<SCRIPT TYPE='text/JavaScript' SRC='js/exsurge.js'></SCRIPT>
+	<SCRIPT TYPE='text/JavaScript' SRC='../../www/js/util.js'></SCRIPT>
+	<SCRIPT TYPE='text/JavaScript' SRC='../../www/js/jquery.min.js'></SCRIPT>
+	<SCRIPT TYPE='text/JavaScript' SRC='../../www/js/exsurge.js'></SCRIPT>
 $horasjs
 </HEAD>
 <BODY $onload onresize="layoutChant()">
