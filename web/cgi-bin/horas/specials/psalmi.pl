@@ -138,6 +138,9 @@ sub psalmi_minor {
       $prefix = '';
       $comment = 6;
     }
+
+    my %w = columnsel($lang) ? %winner : %winner2;
+    $ant = $w{"Ant Completorium$vespera"} || $ant;
   }
 
   if ($winner =~ /tempora/i || $dayname[0] =~ /pasc/i) {

@@ -1,0 +1,36 @@
+@Tempora/Adv4-5
+
+[In Finem Lectio]
+@TemporaOP/Quad5-0
+
+[Lectio1]
+@Tempora/Adv4-5::1
+@Tempora/Adv4-5:Lectio2:!2 s/9-/10-/ s/: [^:]*$/.\n/
+@:In Finem Lectio
+
+[Responsory1]
+@Tempora/Adv4-0:Responsory5
+
+[Lectio2]
+@Tempora/Adv4-5:Lectio3:1 s/13-16/11-15/
+@Tempora/Adv4-5::5 s/.*: /11 /
+@Tempora/Adv4-5:Lectio3:2-4
+@:In Finem Lectio
+
+[Responsory2]
+@TemporaOP/Adv4-2
+
+[Lectio3]
+@Tempora/Adv4-5::!2-4 s/13-16/16,22-24/
+22 sic stabit semen vestrum et nomen vestrum.
+23 Et erit mensis ex mense, et sábbatum ex sábbato: véniet omnis caro ut adóret coram fácie mea, dicit Dóminus.
+24 Et egrediéntur, et vidébunt cadávera virórum qui prævaricáti sunt in me: vermis eórum non moriétur, et ignis eórum non exstinguétur: et erunt usque ad satietátem visiónis omni carni.
+@:In Finem Lectio
+
+[Responsory3]
+@Tempora/Adv4-0:Responsory7:1-2 s/\n\*// s/(\S+ \S+)$/\n* \u$1/
+@Tempora/Adv4-0:Responsory7:3
+@Tempora/Adv4-0:Responsory7:2 s/.* (\S+ \S+)$/R. \u$1/
+
+[Ant 2]
+@Tempora/Adv4-2:Ant 2C

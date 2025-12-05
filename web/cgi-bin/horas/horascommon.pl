@@ -67,7 +67,7 @@ sub occurrence {
   if ($transfertemp && $transfertemp !~ /tempora/i) {
     $transfertemp = subdirname('Sancti', $version) . "$transfertemp";    # add path to Sancti folder if necessary
   } elsif ($transfertemp && $version =~ /monastic/i) {
-    $transfertemp =~ s/TemporaM?/TemporaM/;    # modify path to Monastic Tempora folder if necessary
+    $transfertemp = subdirname('Tempora', $version) . ($transfertemp =~ s/Tempora[^\/]\///r);
   }
 
   # get annual transfers if applicable depending on the day of Easter
@@ -77,10 +77,9 @@ sub occurrence {
   foreach $transfer (@transfers) {
     if ($transfer) {
       if ($transfer !~ /tempora/i) {
-        $transfer = subdirname('Sancti', $version) . "$transfer";
-      }    # add path to Sancti folder if necessary
-      elsif ($version =~ /monastic/i) {
-        $transfer =~ s/TemporaM?/TemporaM/;    # modify path to Monastic Tempora folder if necessary
+        $transfer = subdirname('Sancti', $version) . $transfer;
+      } else {
+        $transfer = subdirname('Tempora', $version) . ($transfer =~ s/Tempora\///r);
       }
     }
   }
@@ -161,8 +160,8 @@ sub occurrence {
         if ($kalentry !~ /tempora/i) {
           $kalentry = subdirname('Sancti', $version) . "$kalentry";
         }    # add path to Sancti folder if necessary
-        elsif ($version =~ /monastic/i) {
-          $kalentry =~ s/TemporaM?/TemporaM/;    # modify path to Monastic Tempora folder if necessary
+        else {
+          $kalentry = subdirname('Tempora', $version) . ($kalentry =~ s/Tempora\///r);
         }
       }
     }
