@@ -494,6 +494,7 @@ sub psalm : ScriptFunc {
       $ffolder = ($ftone =~ /^(solemn|\d)/) ? $1 : 'specialis';
       $ffolder .= '-alt' if $ftone =~ /4.alt/;
       $ffolder .= '-antiquo' if $ftone =~ /3\-antiquo/;
+      $ffolder = 'solemn' if $ftone =~ /solemn/;
 
       if ($ffolder =~ /([18]|solemn)/ && $version =~ /monastic/i) {
 
