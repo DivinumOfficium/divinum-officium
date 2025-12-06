@@ -211,7 +211,7 @@ if ($command =~ /kalendar/) {    # kalendar widget
 
 #*** print pages (setup, hora=pray, mainpage)
 #generate HTML
-$background = ($whitebground) ? ' class="contrastbg"' : '';
+$background = ($whitebground || $lang1 =~ /gabc/ || $lang2 =~ /gabc/) ? ' class="contrastbg"' : '';
 htmlHead("Divinum Officium " . ($hora || $command), $officium ne 'Pofficium.pl' && 'startup()');
 
 if ($command =~ /setup(.*)/i) {

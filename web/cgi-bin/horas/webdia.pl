@@ -69,7 +69,7 @@ $viewport_tag
 
 PrintTag
 
-  if (our $whitebground) {
+  if (our $whitebground && $lang1 !~ /gabc/ && $lang2 !~ /gabc/) {
     print <<"PrintTag";
     \@media (prefers-color-scheme: dark) {
       body {
