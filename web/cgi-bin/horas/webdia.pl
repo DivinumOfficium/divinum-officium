@@ -618,6 +618,9 @@ sub setcell {
         $text =~ s/\.\(\) \(\:\:\)/.(::)/g;                     # contract () (::)
         $text =~ s/<\/?nlba>//g;
         $text =~ s/\_/\|\|/g;
+        $text =~ s/\(([a-k])r(\[ocb\:1\{\])?\)/($1$2)/g;                 # "solidify" used Puncta cava
+        $text =~ s/\s[a-k]r\)/)/g;                                       # remove unused puncta cava
+        $text =~ s/\s[a-k]r(?:\[ocb\:1\{\])\)(.*?)\[ocb\:0\}\]/)$1/g;    # remove unsued braces
       }
     } else {
 
