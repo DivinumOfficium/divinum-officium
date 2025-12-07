@@ -499,11 +499,13 @@ sub psalm : ScriptFunc {
       if ($ffolder =~ /([18]|solemn)/ && $version =~ /monastic/i) {
 
         # redirect Monastic tones to the correct files acc. to Roman
-        $ftone =~ s/8a/8Gstar/;
-        $ftone =~ s/1D$/1D-/;
-        $ftone =~ s/1Dstar/1D/;
-        $ftone =~ s/1g4/1g3/;
-        $ftone =~ s/1g3\-monasticus/1g3m/;
+        map {
+          s/8a/8Gstar/;
+          s/1D$/1D-/;
+          s/1Dstar/1D/;
+          s/1g4/1g3/;
+          s/1g3\-monasticus/1g3m/;
+        } ($ftone, $fname);
       }
 
       if ($ffolder =~ /^\d/) {
