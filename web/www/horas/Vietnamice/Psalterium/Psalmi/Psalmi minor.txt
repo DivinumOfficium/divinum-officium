@@ -173,6 +173,10 @@ Sabbato = Hãy để lời tôi cầu xin * thấu đến trước mặt Chúa.
 [Quad5 OP1]
 1 = Linh hồn kẻ dữ đã gầm thét nghịch cùng tôi: và lòng tôi đã ra nặng nề vì chúng nó.
 
+[Quad5 OP]
+@:Quad5 OP1
+@:Quad5_:2-5
+
 [Quad5 Cist2]
 2 = Hỡi Chúa, hãy xem * sự gian nan tôi, Bởi kẻ thù rấy lên.
 
@@ -182,6 +186,13 @@ Sabbato = Hãy để lời tôi cầu xin * thấu đến trước mặt Chúa.
 @:Quad5_:2
 @:Quad5_:3
 @:Quad5_:5
+
+[Quad5]
+@:Quad5_
+(sed rubrica cisterciensis)
+@:Quad5 Cist
+(sed rubrica praedicatorum)
+@:Quad5 OP
 
 [Pasch]
 Allêluia, * allêluia, allêluia.
@@ -239,3 +250,15 @@ Prima Feria II=Hãy suy phục * Chúa trong sự kính dái.;;1,2,6
 Prima Feria III=Hỡi Chúa tôi là Đức Chúa Lời, * tôi trông cậy Chúa.;;7,8,9(2-19)
 Prima Feria V=Khiến con mắt tôi sáng ra * hỡi Chúa.;;12,13,14
 Prima Feria VI=Hãy gìn giữ tôi * hỡi Chúa, vì tôi cậy trông Chúa.;;15,16,17(2-25)
+
+[Monastic]
+@:Monastic_
+Completorium=;;4,90,133
+
+[Monastic] (rubrica cisterciensis)
+@:Monastic_:1
+@:Cistercian_:1-2
+@:Monastic_:4
+@:Cistercian_:3-4
+@:Monastic_:7-18
+Completorium=;;4,90,133

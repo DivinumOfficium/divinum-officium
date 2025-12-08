@@ -19,6 +19,13 @@
 [Secreto_C]
 /:Trong Cung nguyện, khi đã đọc xong Kinh Officium Nhỏ Đức Bà, thì đọc thầm::/
 
+[Secreto]
+@:Secreto_
+(sed rubrica cisterciensis)
+@:Secreto_C
+(sed die in Cœna Domini aut die in Parasceve aut die Sabbato Sancto)
+@:Secreto_
+
 [Secreto a Laudibus]
 /:Nếu đọc Matutinum lìa Laudes, thì khi ấy đọc thầm::/ 
 (sed rubrica monastica)
@@ -35,6 +42,11 @@
 [Clara voce_C]
 /:Trong Cung nguyện, chúng ta làm dấu Thánh giá + và cúi đầu trước Bàn thờ khi Bề trên ra hiệu.:/
 /:Đoạn đọc Câu xướng lớn tiếng và khoan thai::/
+
+[Clara voce]
+@:Clara voce_
+(sed rubrica cisterciensis)
+@:Clara voce_C
 
 [Secus absolute]
 /:Thì liền bắt đầu, như sau này::/
@@ -106,7 +118,7 @@
 /:Trước khi bắt đầu Kinh Officium thì rất đáng khen đọc Lời nguyện sau này, hằng đọc số ít; Đức Giáo Hoàng Piô XI đã ban Ân xá ba năm cho kẻ đọc ngày 17 tháng November năm 1933.:/
 
 [Post]
-/:Khi đã đọc xong Kinh Officium, thì rất đáng khen đọc Lời nguyện sau này; Đức Giáo Hoàng Piô XI đã ban ân xá ba năm cho kẻ đọc ngày 1 tháng December năm 1933. Vả lại Đức Giáo Hoàng Lêô X đã ban cho các Thầy có chức thánh và các Thầy Cả sốt sắng đọc lời ấy sau Kinh Officium được khỏi các sự lầm lỗi và tội đã phạm trong khi đọc bởi tính loài người yếu đuối. Hằng phải quì gối mà đọc lời ấy dù khi đọc riêng, trừ ra những kẻ vì bệnh hoạn thật hay là vì lẽ ngăn trở nặng nề mà không quì được.:/
+/:Khi đã đọc xong Kinh Officium, thì rất đáng khen đọc Lời nguyện sau này; Đức Giáo Hoàng Piô XI đã ban ân xá ba năm cho kẻ đọc ngày 1 tháng December năm 1933. Vả lại Đức Giáo Hoàng Lêô X đã ban cho các Thầy có chức thánh và các Thầy Cả sốt sắng đọc lời ấy sau Kinh Officium được khỏi các sự lầm lỗi và tội đã phạm trong khi đọc bởi tính loài người yếu đuối. Hằng phải quì gối mà đọc lời ấy dù khi đọc riêng, trừ ra những kẻ vì bệnh hoạn thật hay là vì lẽ ngăn trở nặng nề mà không quì được.:/ 
 
 [Superior] (rubrica cisterciensis)
 /:Bề trên::/
@@ -128,9 +140,9 @@
 /:Khi đã xong giờ ấy quanh năm, trừ ra ngày thứ Năm và thứ Sáu tuần thánh, thì hát trọng thể:/
 
 [sine Oremus]
-/:Và không đọc «Chúng tôi hãy cầu nguyện» ::/
+/:Và không đọc «Chúng ta hãy cầu nguyện» ::/
 (sed rubrica altovadensis)
-/:Và Kẻ trực tuần đọc tiếp theo không đọc «Chúng tôi hãy cầu nguyện».:/
+/:Và Kẻ trực tuần đọc tiếp theo không đọc «Chúng ta hãy cầu nguyện».:/
 
 [Conclusio cisterciensis]
 /:Và khi nào đọc xong Giờ kinh phải ra khỏi Cung nguyện (trừ khi Lễ Misa liền tiếp theo hay là Kinh Officium Kẻ chết, hoặc Nghi táng xác, hoặc Rước kiệu, hay là Kinh Cầu, như trong ngày Cầu mùa, v.v... liền với Kinh Officium ngày) thì đọc::/

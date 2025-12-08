@@ -19,6 +19,11 @@ R. Chúa đã lập.
 &Gloria
 R. Này là ngày * Chúa đã lập. 
 
+[Responsory Dominica Laudes]
+@:Responsory Dominica Laudes_
+(sed rubrica cisterciensis)
+@:Responsory Dominica Laudes_C
+
 [Hymnus Day0 Laudes]
 {:H-Ecceiamnoctis:}v. Kìa xem bóng tối đã tan,
 Rạng đông sáng láng huy hoàng chiếu soi.
@@ -53,7 +58,7 @@ Phân chia đêm tối, định phần lối đi.
 Gà gáy báo sáng tức thì,
 Mặt lời mọc lên, quang huy rạng ngời.
 _
-Sao mai thức dậy giữa trời,
+Sao mai thức dậy giữa lời,
 Xua tan mù mịt, khắp nơi sáng lòa.
 Đoàn người lầm lạc xấu xa,
 Bỏ đường hại người, lánh ra nẻo tà.
@@ -100,7 +105,7 @@ Gà vừa gáy sáng vang lừng,
 Đèn soi lữ khách đường đời,
 Phân chia đêm tối, tách rời khắc canh.
 _
-Sao mai thức dậy giữa trời,
+Sao mai thức dậy giữa lời,
 Xua tan mù mịt, khắp nơi sáng lòa.
 Đoàn người lầm lạc xấu xa,
 Bỏ đường hại người, lánh ra nẻo tà.
@@ -136,6 +141,11 @@ Thánh Thần an ủi hiển vinh,
 Bây giờ, mãi mãi, thiên đình dài lâu.
 Amen.
 
+[HymnusM Day0 Laudes hiemalis]
+@:HymnusM Day0 Laudes hiemalis_
+(sed rubrica cisterciensis)
+@:HymnusM Day1 Laudes
+
 [Dominica Versum 2]
 V. Chúa cai trị, lấy vinh hiển làm áo mặc. 
 R. Chúa lấy sức mạnh làm áo mặc, và thắt lưng đai. 
@@ -158,7 +168,7 @@ R. Hỡi Chúa, các việc Chúa * cả thể dường nào.
 
 [Hymnus Day0 Vespera]
 {:H-Luciscreator:}v. Chúa là Tạo Hóa tốt lành, 
-Dựng nên ánh sáng, rạng danh đất trời. 
+Dựng nên ánh sáng, rạng danh đất lời. 
 Ban sơ ánh sáng rạng ngời, 
 Sắm sanh gốc tích muôn đời thế gian. 
 _
@@ -185,7 +195,7 @@ Amen.
 
 [HymnusM Day0 Vespera hiemalis] (rubrica cisterciensis)
 v. Chúa là Tạo Hóa muôn loài, 
-Cầm quyền cai quản vòm trời cao sang. 
+Cầm quyền cai quản vòm lời cao sang. 
 Ngày thời mặc áo huy hoàng, 
 Đêm thời giấc ngủ nhẹ nhàng ban ơn. 
 _
@@ -200,7 +210,7 @@ Giúp người giữ đạo trước sau,
 Hát mừng ca tụng, nhiệm mầu thiêng liêng. 
 _
 Lòng sâu hòa tiếng cung chiêng, 
-Tiếng ca vang dội, ngợi khen Chúa Trời. 
+Tiếng ca vang dội, ngợi khen Chúa Lời. 
 Tình yêu thanh tịnh sáng ngời, 
 Trí khôn tỉnh thức, thờ Người nghiêm trang. 
 _
@@ -231,6 +241,9 @@ Amen.
 [Dominica Versum 3]
 V. Hỡi Chúa, chớ gì lời tôi khấn nguyện.
 R. Như hương thơm đưa lên trước mặt Chúa.
+
+[Dominica Ant 3]
+@:Dominica Ant 2
 
 [Feria Laudes]
 !Rm 13:12-13
@@ -278,7 +291,7 @@ Uống say ơn phúc, sạch trơn tội tình.
 _
 Ngày nay vui vẻ an bình,
 Nết na buổi sớm, quang minh rạng ngời.
-Đức tin sáng láng giữa trời,
+Đức tin sáng láng giữa lời,
 Tối tăm mù mịt, xin rời trí khôn.
 _
 Rạng đông dẫn ánh sáng tuôn,
@@ -325,7 +338,7 @@ Thánh Thần sung mãn, sạch trơn tội tình.
 _
 Ngày nay vui vẻ an bình,
 Nết na buổi sớm, quang minh rạng ngời.
-Đức tin sáng láng giữa trời,
+Đức tin sáng láng giữa lời,
 Tối tăm mù mịt, xin rời trí khôn.
 _
 Rạng đông dẫn lối đưa đường,
@@ -372,7 +385,7 @@ Amen.
 [Hymnus Day3 Laudes]
 {:H-LaudsFeria:}v. Mây mù, tăm tối, đêm thâu,
 Thế gian rối loạn, âu sầu biết bao.
-Sáng lòa, trời đất thanh thao,
+Sáng lòa, lời đất thanh thao,
 Chúa đà ngự đến, hãy mau lui dần.
 _
 Mặt lời chiếu rọi trần gian,
@@ -526,6 +539,28 @@ Xin soi sáng, hỡi Chúa, * cho những kẻ ngồi trong tối tăm: và đư
 [Feria7C Ant 2]
 Trong đàng bằng yên * xin dẫn đưa chúng tôi, hỡi Chúa. 
 
+[Feria Ant 2]
+(feria 2) @:Feria2 Ant 2
+(feria 3) @:Feria3 Ant 2
+(feria 4) @:Feria4 Ant 2
+(feria 5) @:Feria5 Ant 2
+(feria 6) @:Feria6 Ant 2
+(feria 7) @:Feria7 Ant 2
+
+[Feria Ant 2] (rubrica cisterciensis)
+(feria 2) @:Feria3 Ant 2
+(feria 3) @:Feria3C Ant 2
+(feria 4) @:Feria5 Ant 2
+(feria 5) @:Feria5C Ant 2
+(feria 6) @:Feria6 Ant 2
+(feria 7) @:Feria7C Ant 2
+
+[Feria Vespera]
+@:Dominica Vespera
+
+[Feria Vespera] (feria 7)
+@Tempora/Pent01-0:Capitulum Laudes
+
 [Responsory Feria Vespera_]
 R.br. Tôi sẽ ngượi khen Chúa * Trong mọi thì giờ. 
 R. Tôi sẽ ngượi khen Chúa * Trong mọi thì giờ. 
@@ -541,6 +576,11 @@ V. Đấng dựng nên lời đất.
 R. Nhân danh Chúa.
 &Gloria
 R. Sự phù hộ chúng ta * Nhân danh Chúa. 
+
+[Responsory Feria Vespera]
+@:Responsory Feria Vespera_
+(sed rubrica cisterciensis)
+@:Responsory Feria Vespera_C
 
 [Responsory Feria Vespera] (feria 7)
 R.br. Chúa chúng ta cao trọng, * và sức mạnh Người cả thể. 
@@ -700,6 +740,15 @@ Amen.
 [HymnusM Day5 Vespera]
 @:Hymnus Day5 Vespera:s/Hóminis superne Cónditor/Plasmátor hóminis Deus/ s/Et magna/Qui magna/ s/Per témporum certas vices/Ut sérviant per órdinem,/ s/Obtemperáre sérvulis/Subdens dedísti hómini/ s/quod cupídinis/a servis tuis,/ s/Ciénte vi nos ímpetit/Quidquid per immundítiam/
 
+[Hymnus Day6 Vespera]
+@Tempora/Pent01-0:Hymnus Vespera
+
+[HymnusM Day6 Vespera]
+@Tempora/Pent01-0:HymnusM Vespera
+
+[Feria Versum 3]
+@:Dominica Versum 3
+
 [Feria Versum 3] (feria 7)
 V. Lời cầu nguyện ban chiều hãy lên đến cùng Chúa.
 R. Và nhân từ Chúa hãy xuống trên chúng tôi.
@@ -720,9 +769,6 @@ Chúa đã đoái xem * sự hèn mọn tôi, hỡi Chúa là Đức Chúa Lời
 
 [Feria4 Ant 3]
 Chúa đã đoái xem * sự hèn mọn tôi, và Đấng phép tắc đã làm những sự cả thể cho tôi.
-
-[Feria4C Ant 3]
-Vì Chúa * tài năng đã làm những sự cả thể cho tôi: danh hiệu Người là thánh. 
 
 [Feria5 Ant 3]
 Đức Chúa Lời đã làm * sức mạnh trong cánh tay Người: đã tan tác kẻ kiêu ngạo trong trí lòng mình.
@@ -751,6 +797,11 @@ $Deo gratias
 !Pl 3:20-21
 v. Chúng ta chờ đợi Đấng cứu Thế là Chúa Jêsu Kirixitô Chúa chúng ta, Người sẽ cải xác yếu hèn ta này, làm nên giống như xác cả sáng Người. 
 $Deo gratias.
+
+[Adv Laudes]
+@:Adv Laudes_
+(sed rubrica cisterciensis)
+@:Adv Laudes_C
 
 [Responsory Adv Laudes]
 R.br. Xin hãy đến cứu chữa chúng tôi * Hỡi Chúa là Đức Chúa Lời các cơ binh.
@@ -791,7 +842,7 @@ Amen.
 {:H-LaudsAdv:}v. Này nghe tiếng cả vang lừng,
 Quở la mọi sự mịt mùng tối tăm.
 Xua đi mộng mị mê lầm,
-Chúa từ trời thẳm, giáng lâm sáng lòa.
+Chúa từ lời thẳm, giáng lâm sáng lòa.
 _
 Trí lòng uể oải dậy mau,
 Những gì nhơ bẩn, đớn đau tội tình.
@@ -827,6 +878,11 @@ R. Hãy sửa sang đường nẻo Người cho ngay thẳng.
 V. Hãy sai Con Chiên, hỡi Chúa, là Đấng cai trị đất.
 R. Từ Đá nơi rừng đến núi con gái Sion.
 
+[Adv Versum 2]
+@:Adv Versum 2_
+(sed rubrica cisterciensis)
+@:Adv Versum 2_C
+
 [Adv Vespera]
 !St 49:10
 v. Cây gậy sẽ chẳng cất khỏi Juđa, và quan tướng khỏi đùi nó, cho đến khi Đấng phải sai đến thì đến; và chính Người sẽ là sự trông đợi các dân.
@@ -846,6 +902,11 @@ R. Chúa chỗi dậy, hỡi Chúa * Sẽ thương xót Sion.
 V. Vì là kì thương xót nó, vì nhật kì đã đến. 
 R. Sẽ thương xót Sion.
 
+[Responsory Adv Vespera]
+@:Responsory Adv Vespera_
+(sed rubrica cisterciensis)
+@:Responsory Adv Vespera_C
+
 [Hymnus Adv Vespera]
 {:H-VespAdv:}v. Chúa sinh tinh tú nhân lành,
 Sáng soi kẻ tín, nhiệt thành đức tin.
@@ -864,7 +925,7 @@ Hiến thân vẹn sạch, tội tình rửa cho.
 _
 Oai quyền vinh hiển khôn dò,
 Danh Người vừa xướng, nhỏ to kính vì.
-Trên trời dưới đất một khi, 
+Trên lời dưới đất một khi, 
 Gối quỳ run rẩy, uy nghi phục tùng.
 _
 Cầu xin Quan Xét ngày chung,
@@ -892,11 +953,11 @@ _
 Thế gian xế bóng trần mành,
 Tựa chàng rể mới, xuất hành động hoa. 
 Cung lòng vẹn sạch đi ra, 
-Mẹ lành trinh khiết, sinh ra Chúa Trời.
+Mẹ lành trinh khiết, sinh ra Chúa Lời.
 _
 Quyền năng mạnh sức tuyệt vời,
 Gối quỳ bái lạy, mọi nơi phục tùng. 
-Trên trời dưới đất xưng tụng,
+Trên lời dưới đất xưng tụng,
 Cúi đầu vâng phục, một lòng kính tin.
 _
 Cầu xin Đấng Thánh giữ gìn,
@@ -950,6 +1011,13 @@ $Deo gratias
 !2 Cr 6
 v. Này bây giờ là thì thuận tiện, này bây giờ là ngày cứu độ. Chẳng làm cho ai vấp phạm, kẻo chức vụ chúng tôi bị chê bai. 
 $Deo gratias
+
+[Quad Laudes]
+@:Quad Laudes_
+(sed rubrica cisterciensis)
+@:Quad Laudes_C
+(sed rubrica praedicatorum)
+@Psalterium/Special/Minor Special:Quad Tertia
 
 [Responsory Quad Laudes]
 R.br. Chính Người đã cứu tôi * Khỏi lưới kẻ săn. 
@@ -1013,10 +1081,20 @@ Thứ tha đổi mới giữ gìn,
 Hát bài ca mới, thiên đình dài lâu. 
 Amen.
 
+[Quad Versum 2]
+@:Quad Versum 3
+(sed rubrica cisterciensis aut rubrica praedicatorum)
+@Psalterium/Special/Minor Special:Versum Quad Sexta
+
 [Quad Vespera_]
 !Ge 2:17
 v. Giữa hiên cửa và bàn thờ, các thày cả là kẻ giúp việc Chúa sẽ khóc lóc và rằng: Hỡi Chúa, xin hãy tha, xin hãy tha cho dân Chúa: và chớ trao cơ nghiệp Chúa cho sự nhuốc nha, để các dân cai trị nó.
 $Deo gratias
+
+[Quad Vespera]
+@:Quad Vespera_
+(sed rubrica praedicatorum)
+@Psalterium/Special/Minor Special:Quad Tertia
 
 [Responsory Quad Vespera]
 R.br. Chúa sẽ lấy vai * Che khuất mày.
@@ -1070,12 +1148,24 @@ $Deo gratias
 v. Chúa Kirixitô đã dâng mình một lần để xóa bỏ tội lỗi của nhiều người: * lần thứ hai Người sẽ hiện ra không liên quan đến tội lỗi, với những kẻ trông đợi Người, để ban sự rỗi.
 $Deo gratias
 
+[Quad5 Laudes]
+@:Quad5 Laudes_
+(sed rubrica cisterciensis)
+@:Quad5 Laudes_C
+(sed rubrica praedicatorum)
+@:Quad5 Vespera
+
 [Responsory Quad5 Laudes_]
 R.br. Hãy cứu chữa khỏi gươm * Hỡi Chúa, linh hồn tôi.
 R. Hãy cứu chữa khỏi gươm * Hỡi Chúa, linh hồn tôi.
 V. Và sự cô độc tôi khỏi tay chó.
 R. Hỡi Chúa, linh hồn tôi.
 R. Hãy cứu chữa khỏi gươm * Hỡi Chúa, linh hồn tôi.
+
+[Responsory Quad5 Laudes]
+@:Responsory Quad5 Laudes_
+(sed rubrica cisterciensis)
+@:Responsory Quad5 Laudes_:1-4
 
 [Hymnus Quad5 Laudes]
 {:H-Lustrasex:}v. Ba mươi năm trọn ở đời,
@@ -1089,7 +1179,7 @@ Mật đắng uống, sức mòn hao,
 Gai, đanh, đòng nhọn, đâm vào nát tan.
 Thịt mềm thủng lỗ chứa chan,
 Máu cùng nước chảy, tuôn tràn láng lai.
-Đất, trời, tinh tú, biển khơi,
+Đất, lời, tinh tú, biển khơi,
 Tẩy trong dòng ấy, sáng ngời sạch trong.
 _
 Câu rút trung tín vô cùng,
@@ -1133,7 +1223,7 @@ Giấm chua, mật đắng, đinh, đòng,
 Đờm nhổ, gai nhọn, nát lòng nát tan.
 Thịt mềm thủng lỗ chứa chan,
 Máu cùng nước chảy, tuôn tràn láng lai.
-Đất, trời, tinh tú, biển khơi,
+Đất, lời, tinh tú, biển khơi,
 Tẩy trong dòng ấy, sáng ngời sạch trong.
 _
 Câu rút trung tín vô cùng,
@@ -1169,6 +1259,11 @@ R. Chữa tôi khỏi các kẻ dấy lên cùng tôi.
 V. Kẻ vốn hòa nhã vuới tôi, và tôi trông cậy.
 R. Đã hướng về tôi cắt chân.
 
+[Quad5 Versum 2]
+@:Quad5 Versum 2_
+(sed rubrica cisterciensis)
+@:Quad5 Versum 2_C
+
 [Quad5 Vespera]
 !Gr 11:20
 v. Song hỡi Chúa các cơ binh, là Đấng xét đoán công bình, và thử thách tâm thận, cầu cho tôi thấy sự Chúa báo oán chúng nó: vì tôi đã tỏ việc tôi cho Chúa, hỡi Chúa là Đức Chúa Lời tôi.
@@ -1180,6 +1275,11 @@ R. Khỏi miệng sư tử * Xin chữa tôi, hỡi Chúa.
 V. Và sự yếu đuối tôi khỏi các sừng tê giác.
 R. Xin chữa tôi, hỡi Chúa.
 R. Khỏi miệng sư tử * Xin chữa tôi, hỡi Chúa.
+
+[Responsory Quad5 Vespera]
+@:Responsory Quad5 Vespera_
+(sed rubrica cisterciensis)
+@:Responsory Quad5 Vespera_:1-4
 
 [Hymnus Quad5 Vespera]
 {:H-Vexillaregis:}v. Cờ Vua Cả đã trẩy ra,
@@ -1277,13 +1377,23 @@ R. Cứu chữa tôi khỏi người hung ác.
 V. Chúng nó trao mật đắng làm của tôi ăn.
 R. Và khi tôi khát, nó lấy giấm cho tôi uống. 
 
+[Quad5 Versum 3]
+@:Quad5 Versum 3_
+(sed rubrica cisterciensis)
+@:Quad5 Versum 3_C
+
 [Pasch Laudes]
 !Rm 6:9-10
 v. Chúa Kirixitô bởi trong kẻ chết đi sống lại, thì không còn chết, sự chết chẳng còn cai trị được Người nữa. Vì chưng người đã chết vì tội lỗi, thì chết một lần: mà người sống, thì sống cho Đức Chúa Lời.
 $Deo gratias
 
+[Responsory Pasch Laudes]
+@Psalterium/Special/Minor Special:Responsory breve Pasch Tertia
+(sed rubrica cisterciensis)
+@Psalterium/Special/Minor Special:Responsory breve Pasch Sexta
+
 [Hymnus Pasch Laudes]
-{:H-Auroracoelum:}v. Rạng đông nhuộm tím bầu trời,
+{:H-Auroracoelum:}v. Rạng đông nhuộm tím bầu lời,
 Không trung vang dội những lời ngợi khen.
 Thế gian mừng rỡ một phen,
 Hỏa ngục run sợ, đớn hèn kêu la.
@@ -1363,7 +1473,7 @@ Galilêa thỏa ước mong,
 Thấy mặt Thầy mình, thỏa lòng ước ao.
 _
 Phục Sinh vui sướng dạt dào,
-Mặt trời rực rỡ, chiếu vào thế gian.
+Mặt lời rực rỡ, chiếu vào thế gian.
 Tông đồ thấy Chúa nhãn tiền,
 Xác thân hiển trị, bình yên lạ lùng.
 _
@@ -1388,6 +1498,11 @@ Cùng Cha, Thần Khí hiển vinh,
 Đời đời kiếp kiếp, ân tình chứa chan.
 Amen.
 
+[HymnusM Pasch Laudes]
+@:HymnusM Pasch Laudes_
+(sed rubrica praedicatorum)
+@:HymnusM Pasch LaudesOP_
+
 [Pasch Versum 2_]
 V. Trong sự sống lại Chúa, hỡi Chúa Kirixitô, allêluia.
 R. Các tầng lời và đất hãy vui mừng, allêluia.
@@ -1395,6 +1510,21 @@ R. Các tầng lời và đất hãy vui mừng, allêluia.
 [Pasch Versum 2_C]
 V. Hãy nói trong các dân, allêluia.
 R. Rằng Chúa cai trị từ cây gỗ, allêluia.
+
+[Pasch Versum 2]
+@:Pasch Versum 2_
+(sed rubrica cisterciensis)
+@:Pasch Versum 2_C
+(sed rubrica praedicatorum)
+@Psalterium/Special/Minor Special:Versum Pasch Sexta_
+
+[Pasch Vespera]
+@:Pasch Laudes
+
+[Responsory Pasch Vespera]
+@Psalterium/Special/Minor Special:Responsory breve Pasch Sexta
+(sed rubrica cisterciensis)
+@Psalterium/Special/Minor Special:Responsory breve Pasch Tertia
 
 [Hymnus Pasch Vespera]
 {:H-Adregias:}v. Tiệc Chiên Vua Cả dọn ra,
@@ -1424,7 +1554,7 @@ Phần thưởng sự sống, quang huy rạng ngời.
 _
 Chiến thắng âm phủ tuyệt vời,
 Chúa đem cờ hiệu, rạng ngời vinh quang.
-Cửa trời mở rộng thênh thang,
+Cửa lời mở rộng thênh thang,
 Vua đêm tăm tối, đầu hàng chịu thua.
 _
 Giêsu, vui sướng tưng bừng,
@@ -1447,7 +1577,7 @@ _
 Mình Người cực thánh hy sinh,
 Trên cây câu rút, tội tình nướng thiêu.
 Máu hồng tuôn đổ bấy nhiêu,
-Nếm thì được sống, cao siêu Chúa Trời.
+Nếm thì được sống, cao siêu Chúa Lời.
 _
 Chiều hôm Lễ Cả thảnh thơi,
 Thiên thần hủy diệt, chẳng hơi hại gì.
@@ -1467,7 +1597,7 @@ _
 Chúa đà chỗi dậy huy hoàng,
 Thắng nơi vực thẳm, rõ ràng uy linh.
 Quỷ ma xiềng xích tội tình,
-Cửa trời mở lại, thiên đình hỉ hoan.
+Cửa lời mở lại, thiên đình hỉ hoan.
 _
 Cầu xin Tác Giả cửu trùng,
 Trong mùa Phục Sinh, vui chung ơn lành.
@@ -1482,7 +1612,7 @@ Amen.
 
 [Pasch Versum 3]
 V. Xin ở lại cùng chúng tôi, hỡi Chúa, allêluia.
-R. Vì trời đã tối, allêluia.
+R. Vì lời đã tối, allêluia.
 
 [Suffragium Divino]
 Ant. Xin Rất Thánh Đức Mẹ Chúa Lời là Đức Bà Maria đồng trinh, và hết các Thánh cầu bầu cho chúng tôi trước mặt Chúa.
@@ -1540,6 +1670,14 @@ Ant. Người đã chịu lấy thánh giá, là Đấng đã phá tan hỏa ng�
 (sed rubrica cisterciensis)
 @Commune/C11:Ant 1:s/^/Ant. / s/\* // s/festivitátem/commemoratiónem/ s/femíneo/fœmíneo/ s/:.*//
 
+[Suffragium BMV]
+@:Suffragium BMV Ant
+_
+(deinde dicuntur semper)
+@:Versum et Oratio BMV
+(sed tempore post partum loco horum versuum dicuntur)
+@Psalterium/Mariaant:Nativiti:s/.*V\./V\./s
+
 [Suffragium BMV AntL]
 @:Suffragium BMV Ant:1
 Ant. Lạy Rất Thánh Đức Mẹ Chúa Lời, lọn đời đồng trinh, xin cầu cho chúng tôi trước mặt Chúa là Đức Chúa Lời chúng tôi. (Allêluia, allêluia.)
@@ -1552,7 +1690,7 @@ V. Sự vinh hiển và của cải ở trong nhà người. (Allêluia.)
 R. Và sự công chính người bền đỗ đời đời. (Allêluia.)
 _
 $Oremus
-v. Lạy Đức Chúa Lời, Chúa đã dùng sự an bài khôn tả mà đoái thương chọn ông thánh Giuse làm bạn thanh sạch của Rất Thánh Đức Mẹ Chúa: xin ban cho chúng tôi được nhờ người cầu bầu trên trời, là Đấng chúng tôi tôn kính làm quan thầy dưới đất.
+v. Lạy Đức Chúa Lời, Chúa đã dùng sự an bài khôn tả mà đoái thương chọn ông thánh Giuse làm bạn thanh sạch của Rất Thánh Đức Mẹ Chúa: xin ban cho chúng tôi được nhờ người cầu bầu trên lời, là Đấng chúng tôi tôn kính làm quan thầy dưới đất.
 
 [Suffragium DeJoseph]
 !Kính Ông Thánh Giuse
@@ -1611,6 +1749,13 @@ $Oremus
 v. Lạy Đức Chúa Lời, là căn nguyên mọi ước muốn thánh thiện, mọi mưu toan ngay thẳng, và mọi công việc công chính: xin ban cho tôi tớ Chúa sự bằng yên mà thế gian chẳng thể ban tặng; để lòng chúng tôi được vâng theo các điều răn Chúa, và khi đã cất khỏi sự sợ hãi kẻ thù, thì thời đại chúng tôi được bình an nhờ sự che chở của Chúa.
 $Per Dominum
 
+[Suffragium] (rubrica divino)
+@:Suffragium Divino
+(sed commune C1[012] dicitur)
+@:Suffragium Divino1
+(sed tempore paschali)
+@:Suffragium Paschale
+
 [Suffragium Laudes] (rubrica tridentina)
 (si officio feriali dicuntur)
 @:Suffragium Feriale
@@ -1631,6 +1776,42 @@ _
 @:Suffragium DePace
 (atque tempore paschali loco horum versuum dicitur)
 @:Suffragium Paschale
+
+[Versum et Oratio BMV]
+@Commune/C11:Versum 0
+_
+$Oremus
+@Commune/C11:Oratio:1 s/^/v. /
+
+[Suffragium Laudes] (rubrica cisterciensis)
+@:Suffragium BMV AntL
+_
+@:Versum et Oratio BMV
+(sed tempore post Epiphaniam aut Septuagesimæ aut Quadragesimæ aut Passionis dicitur)
+@Psalterium/Mariaant:Quadragesimae: s/.*V\./V./s  s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/
+(sed Adventus dicitur) 
+@Psalterium/Mariaant:Advent: s/.*V\./V./s s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/
+(sed Nativitatis aut Epiphaniæ aut post partum dicitur)
+@Psalterium/Mariaant:Nativiti: s/.*V\./V./s s/[ÁA]m[ée]n.*$/\n/si
+(sed Paschali dicitur)
+@Psalterium/Mariaant:Paschalis: s/.*V\./V./s s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/
+(deinde dicitur)
+@:Suffragium ConclusioBMV
+(sed rubrica 1951 aut feria 4 aut feria 3 aut feria 7 dicuntur)
+_
+(atque commune C10 aut commune C11 hi versus omittuntur)
+(atque rubrica 1951 aut feria 4 dicuntur semper)
+@:Suffragium DeJoseph
+$Per Dominum
+(sed rubrica 1951)
+_
+(atque rubrica 1951 aut feria 3 dicuntur semper)
+@:Suffragium DeSSPN
+$Per Dominum
+(sed rubrica 1951)
+_
+(atque rubrica 1951 aut feria 7 dicuntur semper)
+@:Suffragium DePace
 
 [Suffragium Vespera] (rubrica tridentina)
 (si officio feriali dicuntur)
@@ -1653,9 +1834,65 @@ _
 (atque tempore paschali loco horum versuum dicitur)
 @:Suffragium PaschaleV
 
+[Suffragium Vespera] (rubrica cisterciensis)
+@:Suffragium BMV Ant:1
+(deinde dicuntur semper)
+@:Suffragium BMV Ant:2
+_
+@:Versum et Oratio BMV
+(sed tempore post Epiphaniam aut Septuagesimæ aut Quadragesimæ aut Passionis loco horum versuum dicitur)
+@Psalterium/Mariaant:Quadragesimae: s/.*v\./Ant. / s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/s
+(sed Adventus loco horum versuum dicitur)
+@Psalterium/Mariaant:Advent: s/.*v\./Ant. / s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/s
+(sed Nativitatis aut Epiphaniæ aut post partum dicitur)
+@Psalterium/Mariaant:Nativiti: s/.*v\./Ant. / s/[ÁA]m[ée]n.*$/\n/s
+(sed Paschali loco horum versuum dicitur)
+@Psalterium/Mariaant:Paschalis: s/.*v\./Ant. / s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/s 
+(deinde dicitur)
+@:Suffragium ConclusioBMV
+(sed rubrica 1951 aut feria 3 aut feria 2 aut feria 6)
+_
+(atque commune C10 aut commune C11 hi versus omittuntur)
+(atque rubrica 1951 aut feria 3 dicuntur semper)
+@:Suffragium DeJoseph
+$Per Dominum
+(sed rubrica 1951)
+_
+(atque rubrica 1951 aut feria 2 dicuntur semper)
+@:Suffragium DeSSPN
+$Per Dominum
+(sed rubrica 1951)
+_
+(atque rubrica 1951 aut feria 6 dicuntur semper)
+@:Suffragium DePace
+
+[Suffragium ConclusioBMV]
+$Per eumdem Christum
+(sed post partum omittitur)
+$Amen
+
+[Suffragium ConclusioBMV] (rubrica cisterciensis)
+$Per eumdem
+(sed post partum) $Qui tecum 
+(sed tempore post pentecosten) $Per Dominum
+
 [Comment] (rubrica cisterciensis)
-In Suffragium Vespera, the original regex included “s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg”
+In Suffragium Vespera, the original regex included "s/$/~ /gm s/~ (\s+[VvR]\.|\s+\$|$)/$1/sg"
 However, this made the Antiphons very confusing and ugly, therefore deleting.
+
+[Preces feriales Laudes]
+$Kyrie
+$rubrica Pater secreto
+$Pater noster Et
+$Preces feriales Laudes
+$Domine exaudi
+
+[Preces feriales Vespera]
+$Kyrie
+$rubrica Pater secreto
+$Pater noster Et
+$Preces feriales Vespera
+$Domine exaudi
 
 [Dominica Versum 0]
 V. Chúa cao cả trên các dân.
@@ -1685,6 +1922,9 @@ R. Kẻo chân mày vấp phải hòn đá.
 V. Chúa hãy đoái đến linh hồn tôi, cứu chữa nó.
 R. Bởi các kẻ thù tôi cứu lấy tôi. 
 
+[Pasch Versum 0]
+@:Pasch Versum 2_
+
 [Asc Versum 0]
 V. Tao lên cùng Cha tao cũng là Cha bay, allêluia.
 R. Cùng Chúa tao cũng là Chúa bay, allêluia. 
@@ -1696,3 +1936,22 @@ R. Và Chúa làm cho mặt đất lở nên mới, allêluia.
 [Suffragium DePatrono]
 !Về Thánh Quan Thầy hoặc Tước Hiệu Nhà Thờ
 /:làm bài niệm hương quen làm trước hoặc sau các bài Niệm hương nói trên, tùy theo phẩm bậc vị ấy, và ở chỗ sau hết::/
+
+[Feria Ant 3]
+(feria 2) @:Feria2 Ant 3
+(feria 3) @:Feria3 Ant 3
+(feria 4) @:Feria4 Ant 3
+(feria 5) @:Feria5 Ant 3
+(feria 6) @:Feria6 Ant 3
+(feria 7) @:Feria7 Ant 3
+
+[Feria Ant 3] (rubrica cisterciensis)
+(feria 2) @:Feria2C Ant 3
+(feria 3) @:Feria3C Ant 3
+(feria 4) @:Feria4C Ant 3
+(feria 5) @:Feria6 Ant 3
+(feria 6) @:Feria6C Ant 3
+(feria 7) @:Dominica Ant 3
+
+[Feria4C Ant 3]
+Vì Chúa * tài năng đã làm những sự cả thể cho tôi: danh hiệu Người là thánh. 
