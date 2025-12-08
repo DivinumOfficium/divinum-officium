@@ -21,6 +21,29 @@ v. Tôi tin kính Đức Chúa Lời, là Cha phép tắc vô cùng dựng nên 
 V. Tôi tin xác loài người ngày sau sống lại. 
 R. Tôi tin hằng sống vậy. Amen. 
 
+[pater secreto]
+$rubrica Pater secreto
+$Pater noster Et
+
+[Pater totum secreto]
+$rubrica Pater totum secreto
+$Pater noster
+
+[credo secreto]
+$rubrica Credo secreto
+$Credo Carnis
+
+[Pater post V]
+$rubrica Pater post V
+$Pater noster
+
+[Pater Ave]
+$rubrica Secreto
+$Pater noster
+$Ave Maria
+_
+$rubrica Clara voce
+
 [Adjutorium nostrum]
 V. Sự phù hộ chúng ta + nhân danh Chúa. 
 R. Dựng nên lời đất. 
@@ -47,6 +70,9 @@ R. Và được sáng soi * vô cùng.
 [Requiem] (rubrica cisterciensis)
 V. Lạy Chúa xin ban cho các linh hồn được nghỉ yên đời đời,  * và được sáng soi vô cùng.
 
+[Requiem2]
+@:Requiem:s/\ \*//g
+
 [Alleluia]
 v. Allêluia. 
 v. Ngợi khen Chúa Kirixitô là Vua vinh hiền đời đời. 
@@ -58,8 +84,14 @@ V. Lạy Chúa, xin Chúa nghe lời tôi cầu xin.
 R. Và tiếng tôi kêu hãy thấu đến trước Chúa. 
 /:Câu «Lạy Chúa, xin Chúa nghe lời tôi cầu xin.» thứ hai thì bỏ:/
 
+[Domine exaudi]
+@:Dominus:3-4
+
 [Confiteor_]
-v. Tôi cáo mình cùng Đức Chúa Lời phép tắc vô cùng, và rất thánh Đức Bà Maria lọn đời đồng trinh, cùng đức thánh Micae Tổng lãnh thiên thần, cùng ông thánh Gioan Baotixita, cùng hai ông thánh Tông đồ, ông thánh Phêrô, ông thánh Phaolô, cùng các thánh, vì tôi đã phạm tội nhiều, lòng động lòng lo, miệng nói, mình làm: /:đấm ngực:/ lỗi tại tôi, lỗi tại tôi, lỗi tại tôi mọi đàng. Vì vậy tôi xin rất thánh Đức Bà Maria lọn đời đồng trinh, đức thánh Micae Tổng lãnh thiên thần, ông thánh Gioan Baotixita,  cùng hai ông thánh Tông đồ, ông thánh Phêrô, ông thánh Phaolô, cùng các thánh, cầu cùng Đức Chúa Trời là Chúa chúng tôi tha tội cho tôi cùng.
+v. Tôi cáo mình cùng Đức Chúa Lời phép tắc vô cùng, và rất thánh Đức Bà Maria lọn đời đồng trinh, cùng đức thánh Micae Tổng lãnh thiên thần, cùng ông thánh Gioan Baotixita, cùng hai ông thánh Tông đồ, ông thánh Phêrô, ông thánh Phaolô, cùng các thánh, vì tôi đã phạm tội nhiều, lòng động lòng lo, miệng nói, mình làm: /:đấm ngực:/ lỗi tại tôi, lỗi tại tôi, lỗi tại tôi mọi đàng. Vì vậy tôi xin rất thánh Đức Bà Maria lọn đời đồng trinh, đức thánh Micae Tổng lãnh thiên thần, ông thánh Gioan Baotixita,  cùng hai ông thánh Tông đồ, ông thánh Phêrô, ông thánh Phaolô, cùng các thánh, cầu cùng Đức Chúa Lời là Chúa chúng tôi tha tội cho tôi cùng.
+
+[Confiteor]
+@:Confiteor_
 
 [Confiteor] (rubrica Monastica)
 @:Confiteor_:s/Phaolô/Phaolô, cùng ông thánh Bênêđictô cha cả/ s/Phaolô/Phaolô, cùng ông thánh Bênêđictô cha cả/
@@ -98,6 +130,14 @@ R. Lạy Chúa, xin Chúa hãy vội kíp bênh vực tôi.
 v. Sáng danh Đức Chúa Cha, và Đức Chúa Con, * và Đức Chúa Thánh Thần. 
 Như đã có trước vô cùng, và bây giờ, và hằng có, * và đời đời chẳng cùng. Amen. 
 
+[Deus in adjutorium tantum]
+@:Deus in adjutorium:1-2 s/\+ //
+
+[Deus in adjutorium iij]
+@:Deus in adjutorium tantum
+@:Deus in adjutorium tantum
+@:Deus in adjutorium tantum
+
 [Deus in adjutorium iij] (rubrica cisterciensis)
 /:Đoạn đọc ba lần rằng:/
 @:Deus in adjutorium tantum
@@ -106,6 +146,12 @@ Như đã có trước vô cùng, và bây giờ, và hằng có, * và đời �
 [Tu autem_]
 V. Lạy Chúa, lại xin Chúa thương xem chúng tôi cùng.
 R. Đội ơn Đức Chúa Lời. 
+
+[Tu autem]
+@:Tu autem_
+
+[Tu autem] (rubrica Ordo Praedicatorum)
+@:Tu autem_:s/nobis/nostri/
 
 [Benedicamus Domino]
 V. Chúng tôi hãy ngợi khen Chúa. 
@@ -134,6 +180,9 @@ Vì công nghiệp cũng một Chúa Kirixitô Chúa chúng tôi.
 [Qui tecum in]
 Vì Người hằng sống hằng trị cùng Chúa đời đời chẳng cùng.
 
+[Per eundem]
+@:Per eumdem
+
 [Per Dominum]
 r. Vì công nghiệp Đức Chúa Giêsu Kirixitô là Chúa chúng tôi, Người là Con Chúa hằng sống hằng trị cùng Đức Chúa Cha và Đức Chúa Thánh Thần đời đời chẳng cùng. 
 R. Amen.
@@ -151,7 +200,7 @@ r. Vì công nghiệp cũng một Đức Chúa Giêsu Kirixitô là Chúa chúng
 R. Amen.
 
 [Qui vivis]
-r. Lạy Chúa hằng sống hằng trị cùng Đức Chúa Cha và Đức Chúa Thánh Thần đời đời chẳng cùng. 
+r. Vì Người hằng sống hằng trị cùng Đức Chúa Cha và Đức Chúa Thánh Thần đời đời chẳng cùng. 
 R. Amen.
 
 [Qui tecum]
@@ -200,16 +249,16 @@ Và chúng tôi hát mừng danh Chúa đời này * và đời sau vô cùng.
 Lạy Chúa, xin Chúa đoái thương gìn giữ chúng tôi * cho khỏi tội trong ngày hôm nay. 
 Lạy Chúa, xin Chúa thương xót chúng tôi, * xin Chúa thương xót chúng tôi. 
 Lạy Chúa, xin Chúa để lòng thương xót Chúa hằng ở trên chúng tôi * như chúng tôi trông cậy Chúa 
-Lạy Chúa, tôi trông cậy Chúa * tôi chẳng phải hổ ngươi đời đời.
+Lạy Chúa, tôi trông cậy Chúa * tôi chẳng phải hổ ngươi đời đời. 
 
 [Ante]
 /:quì gối:/ 
 v. Lạy Chúa, xin Chúa hãy mở miệng lưỡi tôi ra cho được ngợi khen danh thánh Chúa ; lại xin Chúa rửa linh hồn tôi cho sạch những ý tưởng trái dòng dài vô ích ; xin Chúa soi sáng trí khôn, mở lòng nóng nảy cho tôi đọc kinh Officium này cách xứng đáng, chăm chỉ sốt sắng và đáng nhậm lời trước mặt Chúa uy nghi vô cùng. Vì công nghiệp Chúa Kirixitô Chúa chúng tôi.
 R. Amen. 
-v. Lạy Chúa, tôi xin hợp một lòng một ý cùng Chúa mà đọc những kinh Officium này như xưa Chúa đã ngợi khen Đức Chúa Trời khi còn ở thế gian này. 
+v. Lạy Chúa, tôi xin hợp một lòng một ý cùng Chúa mà đọc những kinh Officium này như xưa Chúa đã ngợi khen Đức Chúa Lời khi còn ở thế gian này. 
 
 [Post]
-v. Chớ gì mọi loài hằng hát mừng ngợi khen quyến phép làm sáng danh một Đức Chúa Trời Ba Ngôi cực thánh cực trọng, Đức Chúa Giêsu Kirixitô đã mặc lấy tính loài người mà phải đóng đanh trên cây Thánh giá, Đức Mẹ cực thanh cực tịnh có phúc lạ cả sáng Maria lọn đời đồng trinh cùng các thánh nam nữ và cho chúng tôi được khỏi mọi tội lỗi đời đời chẳng cùng.
+v. Chớ gì mọi loài hằng hát mừng ngợi khen quyến phép làm sáng danh một Đức Chúa Lời Ba Ngôi cực thánh cực trọng, Đức Chúa Giêsu Kirixitô đã mặc lấy tính loài người mà phải đóng đanh trên cây Thánh giá, Đức Mẹ cực thanh cực tịnh có phúc lạ cả sáng Maria lọn đời đồng trinh cùng các thánh nam nữ và cho chúng tôi được khỏi mọi tội lỗi đời đời chẳng cùng.
 R. Amen. 
 _
 V. Lòng Đức Nữ đồng trinh Maria đã cưu mang Con một Đức Chúa Cha hằng sống, có phúc. 
@@ -226,6 +275,9 @@ V. Quí giá thay trước mặt Chúa.
 R. Các Thánh Người sinh thì.
 v. Xin rất thánh Đức Bà Maria và các thánh cầu bầu cho chúng tôi trước mặt Chúa, để chúng tôi đáng được Chúa phù hộ cùng chữa lấy, Người là Đấng hằng sống hằng trị đời đời chẳng cùng. 
 $Amen
+
+[pretiosa]
+@:Pretiosa
 
 [DefunctV]
 &Dominus_vobiscum
@@ -258,6 +310,28 @@ v. Chúa được ngượi khen thì thậm phải, + Chúa được hát mừng
 [Kyrie]
 v. Xin Chúa thương xót chúng tôi. Xin Chúa Kirixitô thương xót chúng tôi. Xin Chúa thương xót chúng tôi. 
 
+[mLitany]
+$Kyrie
+$Pater noster Et
+
+[mLitany2]
+$Kyrie
+$rubrica Pater secreto
+$Pater noster Et
+
+[mLitany simplex]
+$Kyrie
+$rubrica Pater secreto
+$Pater noster Et
+$rubrica Credo secreto
+$Credo Carnis
+
+[rLitany simplex0]
+@:mLitany2
+
+[rLitany simplex]
+@:mLitany simplex
+
 [Divinum auxilium]
 (rubrica Monastica)
 /:Nếu rời khỏi hàng ghế chôrô, thì nguyện kết rằng:/
@@ -266,6 +340,7 @@ Xin Chúa hằng phù hộ + chúng tôi.
 Và ở cùng anh em chúng tôi vắng mặt. Amen. 
 (sed rubrica cisterciensis)
 Và ở cùng anh em chúng tôi vắng mặt.
+
 
 [Alleluia Simplex]
 , allêluia.
@@ -277,8 +352,17 @@ Allêluia, allêluia.
 V. Khỏi cửa địa ngục. 
 R. Lạy Chúa, hãy cứu chữa lấy linh hồn các kẻ ấy.
 
+[A porta inferi]
+@:Aportainferi
+@:Requiescant
+@:Dominus:3-4
+&Dominus_vobiscum2
+
 [Oratio Visita_]
 v. Lạy Chúa, chúng tôi xin Chúa ngự đến viếng nhà này, và xua đuổi mọi mưu chước kẻ thù cho xa khỏi nó: xin các thánh Thiên thần Chúa ở trong nhà ấy, gìn giữ chúng tôi được bằng yên; và chớ gì phúc Chúa ở trên chúng tôi luôn.
+
+[oratio_Visita]
+@:Oratio Visita_
 
 [oratio_Visita] (rubrica Ordo Praedicatorum)
 @:Oratio Visita_:s/xin các thánh Thiên thần Chúa ở trong ấy/xin các thánh Thiên thần Chúa ở trong ấy/ s/qui //
@@ -288,10 +372,10 @@ V. Lạy Chúa, xin Chúa hãy đoái xem các tôi tớ Chúa, cùng các việ
 R. Xin cho sự sáng Đức Chúa Lời là Chúa chúng tôi soi trên chúng tôi, xin Chúa ở trên dìu dắt các việc tay chúng tôi làm lên chúng tôi: cùng dẫn đưa từng việc tay chúng tôi. 
 
 [dirigere]
-v. Lạy Chúa là Đức Chúa Trời, Vua trời đất, xin Chúa đoái thương chỉ dẫn và làm cho nên thánh, cai trị và cai quản lòng trí cùng thân xác chúng tôi, trí khôn, lời nói và việc làm chúng tôi rầy, hằng theo lề luật Chúa cùng tuân giữ các điều răn Chúa: để nhờ ơn Chúa phù hộ, chúng tôi đáng được rỗi và được thoát khỏi ở đời này và đời sau, thân lạy Chúa Cứu Thế: Là Đấng hằng sống hằng trị đời đời chẳng cùng.
+v. Lạy Chúa là Đức Chúa Lời, Vua lời đất, xin Chúa đoái thương chỉ dẫn và làm cho nên thánh, cai trị và cai quản lòng trí cùng thân xác chúng tôi, trí khôn, lời nói và việc làm chúng tôi rầy, hằng theo lề luật Chúa cùng tuân giữ các điều răn Chúa: để nhờ ơn Chúa phù hộ, chúng tôi đáng được rỗi và được thoát khỏi ở đời này và đời sau, thân lạy Chúa Cứu Thế: Là Đấng hằng sống hằng trị đời đời chẳng cùng.
 
 [benedictio Prima_]
-Phép lành. Xin Chúa phép tắc vô cùng xếp đặt ngày và việc làm chúng tôi trong sự bằng yên Người.
+Benedictio. Xin Chúa phép tắc vô cùng xếp đặt ngày và việc làm chúng tôi trong sự bằng yên Người.
 R. Amen.
 
 [benedictio Prima]
@@ -301,7 +385,7 @@ R. Amen.
 (rubrica cisterciensis) $rubrica Regula ante
 
 [benedictio Prima2]
-Phép lành. Xin Chúa xuống phúc cho chúng tôi, + và chữa chúng tôi cho khỏi mọi sự dữ, và đưa chúng tôi tới đến nơi hằng sống đời đời.  Linh hồn kẻ lành vì lòng Đức Chúa Lời thương xót hãy nghỉ ngơi bằng yên. 
+Benedictio. Xin Chúa xuống phúc cho chúng tôi, + và chữa chúng tôi cho khỏi mọi sự dữ, và đưa chúng tôi tới đến nơi hằng sống đời đời.  Linh hồn kẻ lành vì lòng Đức Chúa Lời thương xót hãy nghỉ ngơi bằng yên. 
 
 [Benedicite]
 V. Hãy chúc tụng. 
@@ -313,6 +397,11 @@ R.br. Kính nhớ hết thảy anh em, thân thuộc Dòng chúng tôi, cùng c�
 [commemoratio omnium_C]
 /:Đoạn thầy Đọc sách thưa rằng::/ Kính nhớ hết thảy anh em, thân thuộc và các kẻ làm ơn cho Dòng chúng tôi đã qua đời.
 
+[commemoratio omnium]
+$commemoratio omnium_
+(sed rubrica cisterciensis)
+$commemoratio omnium_C
+
 [Requiescant]
 V. Xin cho các linh hồn được nghỉ yên.
 R. Amen.
@@ -320,29 +409,43 @@ R. Amen.
 [deus veniae_]
 v. Lạy Chúa là Đấng ban sự tha thứ và ái mộ sự rỗi loài người: chúng tôi xin lòng nhân từ Chúa: cho các anh em, thân thuộc và các kẻ làm ơn cho chúng tôi, là những kẻ đã qua đời, thì nhờ lời rất thánh Đức Bà Maria lọn đời đồng trinh cùng các thánh nam nữ cầu bầu, được tới đến nơi hằng phúc đời đời.     
 
+[deus veniae]
+@:deus veniae_
+
+[deus veniae] (rubrica cisterciensis)
+@:deus veniae_: s/$/~/
+$Per Christum
+
 [oratio_Domine]
 v. Chúng tôi thờ lạy ngợi khen Chúa là Đấng có phép tắc vô cùng, đã thương để chúng tôi đến sớm mai này, thì xin Chúa xuống ơn phù hộ cho chúng tôi trót ngày hôm nay, khỏi sa phạm tội gì. Lại xin Chúa sửa sự lo, lời nói, việc làm chúng tôi hằng nên lọn lành theo ý Chúa.   
 
 [Benedictio Completorium_]
 Benedictio. Xin Chúa phép tắc vô cùng ban cho chúng tôi đêm nghỉ yên và sự sau hết lọn lành.
 
+[benedictio Completorium]
+@:Jube domne
+@:Benedictio Completorium_
+
 [benedictio Completorium] (rubrica Ordo Praedicatorum)
 @:Jube domne
 @:Benedictio Completorium_:s/concédat/tríbuat/
 
+[benedictio Completorium Final]
+@:Benedictio Completorium2
+
 [Benedictio Completorium2]
-Phép lành. Chúa phép tắc lòng lành vô cùng, + là Cha và Con và Thánh Thần hãy xuống phúc và gìn giữ chúng tôi. 
+Benedictio. Chúa phép tắc lòng lành vô cùng, + là Cha và Con và Thánh Thần hãy xuống phúc và gìn giữ chúng tôi. 
 
 [Benedictio Completorium2] (rubrica Ordo Praedicatorum)
-Phép lành. Chớ gì phúc Đức Chúa Lời phép tắc vô cùng + là Cha, và Con, và Thánh Thần xuống trên chúng tôi và ở cùng chúng tôi luôn. 
+Benedictio. Chớ gì phúc Đức Chúa Lời phép tắc vô cùng + là Cha, và Con, và Thánh Thần xuống trên chúng tôi và ở cùng chúng tôi luôn. 
 
 [Jube domne]
 V. Lạy thầy cả, xin Người ban phép lành. 
 (sed rubrica 1960 dicitur)
-V. Lạy Chúa, xin Người ban phép lành.
+V. Lạy Chúa, xin Người ban phép lành. 
 
 [Conclusio cisterciensis]
-Ant. Đức Chúa Thánh Thần sẽ ngự xuống cùng Đức Bà, Đức Bà Maria chớ sợ, Đức Bà sẽ chịu thai trong lòng Con Đức Chúa Trời. 
+Ant. Đức Chúa Thánh Thần sẽ ngự xuống cùng Đức Bà, Đức Bà Maria chớ sợ, Đức Bà sẽ chịu thai trong lòng Con Đức Chúa Lời. 
 _
 V. Này tôi là tôi tá Chúa. 
 R. Tôi xin vâng như lời thiên thần truyền. 
@@ -356,3 +459,21 @@ V. Chớ gì linh hồn những kẻ ấy được giao phó cho các Cha đáng
 
 [Lectio regulae]
 Bài đọc trích sách Phép dòng ông thánh Bênêđictô cha cả, đoạn thứ №
+
+[ant Alma Redemptoris Mater]
+@Psalterium/Mariaant:Advent
+(sed tempore Nativitatis aut tempore Epiphaniæ aut tempore post Epiphaniam aut tempore Septuagesimæ dicitur)
+@Psalterium/Mariaant:Nativiti
+
+[ant Ave Regina caelorum]
+@Psalterium/Mariaant:Quadragesimae
+
+[ant Regina caeli]
+@Psalterium/Mariaant:Paschalis
+
+[ant Salve Regina]
+@Psalterium/Mariaant:Postpentecost
+(sed rubrica Ordo Praedicatorum)
+@Psalterium/Mariaant:Ant Finalis OP
+(sed rubrica cisterciensis)
+@Psalterium/Mariaant:Ant Finalis Cist

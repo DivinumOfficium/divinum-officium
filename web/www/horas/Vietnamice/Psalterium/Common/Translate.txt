@@ -4,11 +4,17 @@
 [Pater noster]
 Kinh Lạy Cha 
 
+[Pater noster Et]
+@:Pater noster
+
 [Ave Maria]
 Kinh Kính mừng 
 
 [Credo]
 Kinh Tin Kính 
+
+[Credo Carnis]
+@:Credo
 
 [Gloria]
 Sáng danh 
@@ -21,6 +27,9 @@ Sáng danh
 
 [Requiem]
 Sự nghỉ ngơi đời đời 
+
+[Requiem2]
+@:Requiem
 
 [Alleluia]
 Allêluia 
@@ -52,6 +61,9 @@ Lạy Chúa, xin Chúa mở môi
 [Deus in adjutorium]
 Lạy Chúa, xin Chúa đoái đến giúp sức 
 
+[Deusinadjutorium]
+@:Deus in adjutorium
+
 [Tu autem]
 Xin Chúa 
 
@@ -61,14 +73,23 @@ Mở
 [Benedicamus_Domino]
 Chúng tôi hãy ngợi khen Chúa 
 
+[Benedicamus Domino]
+@:Benedicamus_Domino
+
 [Benedicamus Domino1]
 Chúng tôi hãy ngợi khen Chúa, allêluia, allêluia
+
+[Benedicamus Domino alleluia]
+@:Benedicamus Domino1
+
+[Benedicamus Domino alleluja]
+@:Benedicamus Domino1
 
 [Fidelium animae]
 Linh hồn kẻ lành 
 
 [Oremus]
-Chúng tôi hãy cầu nguyện 
+Chúng ta hãy cầu nguyện 
 
 [Hymnus]
 Ca vãn 
@@ -101,10 +122,10 @@ Cực thánh
 Cực thánh 
 
 [Benedictio]
-Lời Phép lành 
+Phép lành 
 
 [Absolutio]
-Lời Phép giải 
+Phép giải 
 
 [Te Deum]
 Kinh Te Deum 
@@ -160,6 +181,11 @@ Sáng danh Chúa
 [Kyrie]
 Xin Chúa thương xót 
 
+[MLitany]
+@:Kyrie
+…
+@:Pater noster
+
 [Dominica]
 Chủ nhật 
 
@@ -214,11 +240,47 @@ Chúa hãy xuống phúc cho chúng tôi
 [Benedicite]
 Hãy chúc tụng 
 
+[Defunctorum]
+@:#Commemoratio defunctorum: s/#//
+
+[Pater totum secreto]
+@:Pater noster
+@:Pater totum secreto_
+
+[Pater post]
+@:Pater totum secreto
+
+[Pater post V]
+@:Pater totum secreto
+
+[Deus in adjutorium iij]
+@:Deus in adjutorium
+@:Deus in adjutorium iij_
+
+[Oratio Domine]
+@:Domine exaudi
+…
+@:Oremus
+…
+@:Oratio Domine_
+
+[Oratio Domine] (rubrica ^Monastic)
+@:MLitany
+…
+@:Domine exaudi
+…
+@:Oremus
+…
+@:Oratio Domine_
+
 [Requiescant]
 Hãy nghỉ ngơi 
 
 [A_porta_inferi]
 Khỏi cửa âm phủ 
+
+[Aportainferi]
+@:A_porta_inferi
 
 [Versus in loco]
 Câu xướng (Thay vì Bài ngắn)
@@ -232,6 +294,9 @@ Sự quí giá
 [Preces feriales Laudes]
 Kinh cầu nguyện giờ Laudes ngày thường
 
+[Preces feriales Vespera]
+@:Preces feriales Laudes
+
 [Preces dominicales primae]
 Kinh cầu nguyện Chủ nhật giờ Nhất 
 
@@ -240,6 +305,9 @@ Kinh cầu nguyện Chủ nhật thứ hai
 
 [Preces dominicales Completorium]
 Kinh cầu nguyện Chủ nhật giờ Tối 
+
+[Preces dominicales Completorium] (rubrica ^Monastic)
+@:Preces dominicales secundae
 
 [Preces feriales Prima]
 Kinh cầu nguyện Ngày thường giờ Nhất 

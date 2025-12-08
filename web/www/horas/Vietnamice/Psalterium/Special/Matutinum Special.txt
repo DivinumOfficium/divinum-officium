@@ -17,6 +17,17 @@ Feria V=Chúa là Đấng đã làm nên ta, * Hãy đến, ta thờ lạy Ngư�
 Feria VI=Ta hãy thờ lạy Chúa, * Vì chưng chính Người đã làm nên ta.
 Sabbato=Chúa là Đức Chúa Lời chúng tôi, * Hãy đến, ta thờ lạy Người.
 
+[Invit TridC]
+@:Invit Trid_:1-4
+@:Invit Trid_:6:s/VI=/V=/
+@:Invit Trid_:5:s/V=/VI=/
+@:Invit Trid_:7
+
+[Invit Trid]
+@:Invit Trid_
+(sed rubrica cisterciensis)
+@:Invit TridC
+
 [ ]
 Invit monastic same as Trid, but preceeded by psalm #3
 
@@ -34,6 +45,11 @@ Hôm nay, ví bằng anh em nghe tiếng Chúa, * Thì chớ cứng lòng làm c
 
 [Invit Quad5 OP]
 Ta hãy thờ lạy Chúa, * Đấng đã chuộc tội ta bởi cây câu rút.
+
+[Invit Quad5]
+@:Invit Quad5_
+(sed rubrica Praedicatorum)
+@:Invit Quad5 OP
 
 [Invit Pasch_]
 Chúa đã sống lại thật, * Allêluia.
@@ -110,6 +126,9 @@ Thánh Thần an ủi mọi nơi,
 Hiển trị vĩnh viễn, đời đời chẳng ngơi.
 Amen.
 
+[Day0 Hymnus1M] (rubrica cisterciensis)
+@Psalterium/Special/Major Special:HymnusM Day0 Laudes hiemalis_
+
 [Day0 Hymnus1]
 {:H-MatDom4:}v. Ngày đầu Chúa Cả Ba Ngôi,
 Dựng nên vũ trụ, đất Lời phân minh.
@@ -182,6 +201,9 @@ Thánh Thần an ủi mọi nơi,
 Hiển trị vĩnh viễn, đời đời chẳng ngơi.
 Amen.
 
+[Day2 HymnusM]
+@:Day2 Hymnus
+
 [Day2 Hymnus]
 {:H-MatFeria:}v. Đồng ban ánh sáng Chúa Cha,
 Là Vầng Sáng bởi, Sáng ra rạng ngời.
@@ -233,6 +255,9 @@ Cùng Con Một Chúa, phi thường hiển vinh.
 Thánh Thần an ủi thần linh,
 Hiển trị vĩnh viễn, thiên đình chẳng ngơi.
 Amen.
+
+[Day4 HymnusM]
+@:Day4 Hymnus
 
 [Day4 Hymnus]
 {:H-MatFeria:}v. Màn đêm che phủ mịt mùng,
@@ -298,7 +323,7 @@ Amen.
 
 [Day6 HymnusM]
 v. Chúa nguồn thương xót hải hà,
-Dựng nên trời đất, bao la tuyệt vời.
+Dựng nên lời đất, bao la tuyệt vời.
 Chúa là duy nhất muôn đời,
 Ba ngôi riêng biệt, chẳng rời nhau ra.
 _
@@ -325,9 +350,9 @@ Amen.
 
 [Day6 Hymnus]
 {:H-MatFeria:}v. Cha nguồn thương xót hải hà,
-Dựng nên trời đất, bao la tuyệt vời.
+Dựng nên lời đất, bao la tuyệt vời.
 Cùng là một tính một Lời,
-Ba ngôi riêng biệt, Chúa Trời uy linh.
+Ba ngôi riêng biệt, Chúa Lời uy linh.
 _
 Nghe lời than khóc tội mình,
 Hát ca dâng tiếng, trọn tình khẩn van.
@@ -463,7 +488,7 @@ _
 Dẹp cơn giận dữ hung hăng,
 Khóc than trước mặt, Chúa hằng xét soi.
 Sấp mình miệng lưỡi kêu mời,
-Nói lời van vỉ, Chúa trời thứ tha:
+Nói lời van vỉ, Chúa lời thứ tha:
 _
 Chúng con tội lỗi xấu xa,
 Phạm lòng thương xót, hải hà Chúa tôi.
@@ -488,7 +513,7 @@ Amen.
 
 [HymnusM Quad5]
 @:Hymnus Quad5:s/Láuream/Prœlium/ s/In necem morsu /Morsu in mortem cór/ s/Dei manus pedésque/manus, pedésque, et crura/ s/Sempitérna.*//s
-Vinh danh, danh dự Chúa Trời
+Vinh danh, danh dự Chúa Lời
 Dẫy đầy cao vút, muôn đời chí tôn,
 Chúa Cha, Chúa Tử bảo tồn;
 Thánh Thần danh tiếng, ôn tồn ủi an:
@@ -546,7 +571,7 @@ Dựng nên mọi vật, đất Lời phân minh.
 Trước khi muôn thuở tượng hình,
 Hằng cùng Cha Cả, Con sinh đời đời.
 _
-Buổi sơ khai dựng đất trời,
+Buổi sơ khai dựng đất lời,
 Chúa làm nên A-đam, người đầu tiên.
 Giống in hình Chúa vẹn tuyền,
 Ban cho nét mặt, uy quyền giống Cha.
@@ -559,7 +584,7 @@ _
 Hầu mua chuộc lại con người,
 Mà xưa Chúa nắn, vui cười tạo nên.
 Kết liên cùng Chúa vững bền,
-Nhờ mang xác thịt, kề bên Chúa Trời.
+Nhờ mang xác thịt, kề bên Chúa Lời.
 _
 Sinh bởi Trinh nữ rạng ngời,
 Kinh hồn khiếp vía, mọi người sợ run.
@@ -587,13 +612,16 @@ Chúa Cha, Thần Khí uy linh,
 Đời đời kiếp kiếp, thiên đình chẳng ngơi.
 Amen.
 
+[HymnusM Pasch] (rubrica praedicatorum)
+@Psalterium/Special/Major Special:HymnusM Pasch Laudes_
+
 [Hymnus Pasch]
 {:H-MatPasc:}v. Lạy Vua hằng sống trên Lời,
 Dựng nên mọi vật, khắp nơi vẹn toàn.
 Trước khi muôn thuở thế gian,
 Hằng cùng Cha Cả, vinh quang đời đời.
 _
-Khi sinh thế giới đất trời,
+Khi sinh thế giới đất lời,
 Chúa ban hình ảnh, rạng ngời dung nhan.
 Trao cho A-đam bảo toàn,
 Lấy bùn đất nắn, thần linh kết vào.
@@ -667,6 +695,11 @@ R. Lạy Đức Chúa Lời, xin thương xót tôi, * Xin thương xót tôi.
 V. Vì chưng linh hồn tôi trông cậy nơi Chúa.
 R. Xin thương xót tôi.
 
+[MM LB2]
+@:MM LB2_
+(nhưng theo phép dòng Xitô)
+@:MM LB2C
+
 [MM LB3_]
 !Khôn ngoan 1:1-2
 v. Hãy yêu sự công chính, hỡi những kẻ xét đoán thế gian. Hãy tưởng nghĩ về Chúa trong sự lành, và hãy tìm kiếm Người trong sự đơn sơ của lòng: vì chưng Người cho những kẻ chẳng thử thách Người gặp được, và Người tỏ mình ra cho những kẻ tin kính Người.
@@ -686,6 +719,11 @@ R. Đức Chúa Lời thật lạ lùng, * Trong các thánh Người.
 V. Chính Người sẽ ban quyền phép và sức mạnh cho dân Người.
 R. Trong các thánh Người.
 
+[MM LB3]
+@:MM LB3_
+(nhưng theo phép dòng Xitô)
+@:MM LB3C
+
 [MM LB4_]
 !Khôn ngoan 3:9
 v. Kẻ trông cậy nơi Người sẽ hiểu biết lẽ thật, và kẻ trung tín trong tình yêu mến sẽ bằng lòng về Người: vì chưng ơn và sự bằng yên dành cho những kẻ Người chọn.
@@ -704,6 +742,11 @@ R.br. Lạy Đức Chúa Lời, chúng tôi sẽ xưng tụng Chúa, * Chúng t�
 R. Lạy Đức Chúa Lời, chúng tôi sẽ xưng tụng Chúa, * Chúng tôi sẽ xưng tụng Chúa.
 V. Và chúng tôi sẽ kêu cầu danh Chúa.
 R. Chúng tôi sẽ xưng tụng Chúa.
+
+[MM LB4]
+@:MM LB4_
+(nhưng theo phép dòng Xitô)
+@:MM LB4C
 
 [MM LB5]
 !Khôn ngoan 1:6-7
@@ -736,6 +779,11 @@ R. Sự thương xót Chúa * Ở trên những kẻ kính sợ Người.
 V. Từ đời đời và cho đến đời đời.
 R. Ở trên những kẻ kính sợ Người.
 
+[MM LB6]
+@:MM LB6_
+(nhưng theo phép dòng Xitô)
+@:MM LB6C
+
 [MM Capitulum_]
 !1 Cor 16:13-14
 v. Hãy tỉnh thức, hãy đứng vững trong đức tin, hãy làm như kẻ trượng phu, và hãy mạnh mẽ. Mọi sự của anh em hãy làm trong đức kính mến.
@@ -752,6 +800,25 @@ R. Và cao cả trên hết thảy các dân.
 V. Người đã sai lời Người, và đã chữa lành chúng.
 R. Và đã gỡ chúng khỏi những sự hư nát của chúng.
 
+[MM Capitulum]
+@:MM Capitulum_
+
+[MM Capitulum] (rubrica cisterciensis)
+@:MM Capitulum_:1-4
+@Psalterium/Special/Minor Special:Versum Dominica Tertia
+(nhưng feria 3)
+@Psalterium/Psalmi/Psalmi matutinum:Daya3:7-8
+(nhưng feria 4)
+@Psalterium/Psalmi/Psalmi matutinum:Daya4:7-8
+(nhưng feria 5)
+@Tempora/Epi1-0:Versum 1
+(nhưng feria 6)
+@:Nocturn 2 Versum Feria6
+(nhưng feria 7)
+@:Nocturn 2 Versum Sabbato
+
+
+
 [MM Capitulum Adv_]
 !Titô 2:12-13
 v. Chúng ta hãy ở tiết độ, công bình và nhân đức ở đời này, mà trông đợi sự cậy trông phúc đức, và sự đến vinh hiển của Đức Chúa Lời cả thể, và là Đấng Cứu Chuộc chúng tôi là Đức Chúa Jêsu Kirixitô.
@@ -759,6 +826,12 @@ $Deo gratias
 _
 V. Lạy Chúa xin hãy đến, và chớ chậm trễ.
 R. Xin tha thứ tội ác cho dân Chúa.
+
+[MM Capitulum Adv]
+@:MM Capitulum Adv_
+(nhưng theo phép dòng Xitô)
+@:MM Capitulum Adv_:1-4
+@:Adv 0 Versum
 
 [MM Capitulum Nat]
 !Isaia 9:6

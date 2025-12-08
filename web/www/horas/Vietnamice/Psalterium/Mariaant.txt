@@ -10,7 +10,7 @@ Thật mọi loài sửng sở ngơ ngẩn;
 Xưa nhậm lời Thần chào mừng kính,
 Xin thương dân nặng nỗi tội tình.
 _
-V. {::}Đức Chúa Trời sai thánh Thiên Thần truyền tin cho rất thánh Đức Bà Maria.
+V. {::}Đức Chúa Lời sai thánh Thiên Thần truyền tin cho rất thánh Đức Bà Maria.
 R. Và rất thánh Đức Bà chịu thai bởi phép Đức Chúa Thánh Thần.
 _
 $Oremus 	
@@ -91,6 +91,18 @@ v. Chúng tôi xin Chúa phép tắc vô cùng, ban ơn cho chúng tôi là nh�
 $Per Christum
 _
 $Fidelium animae
+
+[Ant Finalis OP]
+@:Postpentecost:s/.*v\./ Ant. / s/.V\..*//s s/$/~ /gm s/~ $/ \(Allêluia.\)\n/s
+_
+@:Quadragesimae:s/.*_.V\./V./s 1-2 s/\.$/. (Allêluia.)/gm
+_
+$Oremus
+@Commune/C10:Oratio:1 s/$/~/ s/^(?:v\.)?/v.
+/
+$Per Christum
+_
+@:Ant ad S_Dominicum
 
 [Ant Finalis Cist]
 $rubrica CompletBMV2
