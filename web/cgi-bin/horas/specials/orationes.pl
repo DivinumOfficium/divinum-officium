@@ -731,7 +731,7 @@ sub getcommemoratio {
   } else {
 
     # Ensure large red Initial
-    $w =~ s/^(?:v. )?/v. / unless $w =~ /^[\$\&\/\!\{\#]/;
+    $o =~ s/^(?:v. )?/v. / unless $o =~ /^[\$\&\/\!\{\#]/;
   }
 
   my $a = $w{"Ant $ind"};
