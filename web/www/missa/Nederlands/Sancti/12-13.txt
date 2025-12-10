@@ -1,6 +1,15 @@
 [Officium]
 S. Luciæ Virginis et Martyris
 
+[Introitus]
+@Commune/C6a
+
+[Oratio]
+@Commune/C7a
+
+[Lectio]
+@Commune/C6a
+
 [Graduale]
 !Ps 44:8
 Gij hebt de gerechtigheid liefgehad en de boosheid gehaat.
@@ -9,6 +18,15 @@ Alleluia, alleluia.
 !Ps 44:3
 Bevalligheid ligt op uw lippen. Daarom heeft God u gezegend voor eeuwig. Alleluia.
 
+[Evangelium]
+@Commune/C6-1
+
+[Secreta]
+@Commune/C6a
+
 [Communio]
 !Ps 118:161-162
 Vorsten vervolgen mij zonder reden, maar voor uw woord slechts vreest mijn hart. Ik verheug mij over uw woord, als iemand, die rijke buit heeft gemaakt.
+
+[Postcommunio]
+@Commune/C6a
