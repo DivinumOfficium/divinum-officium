@@ -2,16 +2,16 @@
 S. Damasi Papæ et Confessoris
 
 [Rank]
-;;Semiduplex;;2.2;;vide C4
+;;Semiduplex;;2.2;;vide C4b
 (sed rubrica 196)
-;;Duplex;;3;;vide C4
+;;Duplex;;3;;vide C4b
 (sed rubrica innovata)
-;;Semiduplex;;2.5;;vide C4
+;;Semiduplex;;2.5;;vide C4b
 (sed rubrica monastica nisi rubrica 1617)
-;;Simplex;;1.1;;vide C4
+;;Simplex;;1.1;;vide C4b
 
 [Rule]
-vide C4;
+vide C4b;
 Gloria
 
 [Name]
