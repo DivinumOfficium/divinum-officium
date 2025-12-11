@@ -20,7 +20,7 @@ use Time::Local;
 use locale;
 use lib "$Bin/..";
 use DivinumOfficium::Main qw(liturgical_color);
-use DivinumOfficium::Directorium qw(dirge);
+use DivinumOfficium::Directorium qw(get_from_directorium dirge);
 use DivinumOfficium::Date qw(ydays_to_date);
 use DivinumOfficium::RunTimeOptions qw(check_version);
 
@@ -103,6 +103,7 @@ $setupsave =~ s/\r*\n*//g;
 
 our $version1 = check_version(our $version) || (error("Unknown version: $version1") && 'Rubrics 1960 - 1960');
 our $version2 = check_version($version2) || '';
+our $dioecesis = strictparam('dioecesis') || 'Generale';
 if ($version1 eq $version2) { $version2 = 'Divino Afflatu - 1954'; }
 if ($version1 eq $version2) { $version2 = 'Rubrics 1960 - 1960'; }
 
@@ -196,7 +197,9 @@ sub html_output {
 
   print "<P ALIGN='CENTER'>\n";
   print htmlInput('version', $version1, 'options', 'versions', "document.forms[0].submit()");
+  print htmlInput('dioecesis', $dioecesis, 'options', 'dioecesis', "document.forms[0].submit()") unless $compare;
   print htmlInput('version2', $version2, 'options', 'versions', "document.forms[0].submit()") if $compare;
+  print htmlInput('dioecesis', $dioecesis, 'options', 'dioecesis', "document.forms[0].submit()") if $compare;
   print "</P><P ALIGN='CENTER'>\n" . bottom_links_menu() . "</P>\n";
 
   # if ($Readings) { Readings(); } # not reachable
@@ -210,7 +213,8 @@ sub html_output {
     my $tyear;
     ($tyear = gettoday()) =~ s/.*-//;
     my $iyear = $tyear != $kyear ? "&kyear=$kyear" : '';
-    print "&nbsp;&nbsp;&nbsp;<A HREF='$ENV{PATH_INFO}?format=ical&version=$version1$iyear'>iCal</A>";
+    print
+      "&nbsp;&nbsp;&nbsp;<A HREF='$ENV{PATH_INFO}?format=ical&version=$version1&dioecesis=$dioecesis$iyear'>iCal</A>";
   }
 
   my $date1 = strictparam('date1');

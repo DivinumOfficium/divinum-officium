@@ -542,11 +542,13 @@ sub setupstring($$%) {
     $basedir =~ s/horas/missa/g;         # to infinite cycles github #525
   }
 
-  if ($fname =~ /Comment.txt$|C\d(?![3-9])[a-z]?/) {
-    $basedir =~ s/missa/horas/g;         # missa uses comments from horas dir
-  }
-
   checklatinfile(\$fname);    # modifies $fname if fallback to Roman folder from Monastic or OP is used in Latin
+
+  if ($fname =~ /Comment.txt$|C\d(?![3-9])[a-z]?/
+    || (!(-e "$basedir/$lang/$fname") && -e "$basedir/../horas/$lang/$fname"))
+  {
+    $basedir =~ s/missa/horas/g;    # missa uses comments and Commune files from horas dir
+  }
 
   my $fullpath = "$basedir/$lang/$fname";
   our ($missa);
@@ -699,13 +701,13 @@ sub setupstring($$%) {
 			/ge;
     }
   }
-  
+
   # Safeguard [Rank] to allow changing Rank and inherit Officium via section inclusions
   if (exists($sections{'Officium'})) {
     $sections{'Officium'} =~ s/\s+$//;
     $sections{'Rank'} =~ s/^.*?;;/$sections{'Officium'};;/;
   }
-  
+
   return \%sections;
 }
 
@@ -792,8 +794,27 @@ sub checkfile {
     return checkfile($temp, $file);
   } elsif (-e "$datafolder$redirect/$main::langfb/$file") {
     return "$datafolder$redirect/$main::langfb/$file";
-  } else {
+  } elsif ($redirect || $datafolder =~ /horas/i) {
     return "$datafolder$redirect/Latin/$file";
+  } else {
+
+    # While Commune files get auto-re-directed from missa to horas, for all other files we use
+    # a dynamic re-direction if and only if the corresponding missa file does not exist.
+    # By checking this re-direct last, a vernacular file in the corresponding horas folder is not taking
+    # precedence over a fallback language file in the missa directories.
+    $redirect = '/../horas';
+
+    if (-e "$datafolder$redirect/$lang/$file") {
+      return "$datafolder$redirect/$lang/$file";
+    } elsif ($lang =~ /-/) {
+      my $temp = $lang;
+      $temp =~ s/-[^-]+$//;
+      return checkfile($temp, $file);
+    } elsif (-e "$datafolder$redirect/$main::langfb/$file") {
+      return "$datafolder$redirect/$main::langfb/$file";
+    } else {
+      return "$datafolder$redirect/Latin/$file";
+    }
   }
 }
 
@@ -807,9 +828,11 @@ sub checklatinfile {
   my $redirect = $datafolder =~ /missa/i && $file =~ /C1[a-z]?/ ? '/../horas' : '';
 
   # Hierarchy for Folder dependency:
+  # Roman Missa => Roman Horas
   # OCist => OSB (a.k.a. "M")
   # OSB & OP => Roman
   -e "$datafolder$redirect/Latin/$file.txt"
+    || -e "$datafolder/../horas/Latin/$file.txt"
     || $file =~ s/(Sancti|Tempora|Commune)(?:Cist)(.*)/$1M$2/
     && (-e "$datafolder$redirect/Latin/$file.txt")
     && ($$file_ref = "$file$txt")
