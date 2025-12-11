@@ -307,12 +307,21 @@ AUTEM: for (split /\baut\b/, $condition) {
   return ($vero = 0);
 }
 
+my $InclusionRegex = qr/^\s*\@
+([^\n:]+)?                    # Filename (self-reference if omitted).
+(?::([^\n:]+?))?              # Optional keywords.
+[^\S\n\r]*                    # Ignore trailing whitespace.
+(?::(.*))?                    # Optional substitutions.
+$
+\n?                           # Eat up to one newline.
+/mx;
+
 #*** setupstring_parse_file($fullpath, $basedir, $lang)
 # Loads the database file from $fullpath and returns a reference to
 # a hash whose keys are the section headings and whose values are
 # their contents. $basedir and $lang are used for inclusions only.
 sub setupstring_parse_file($$$) {
-  my ($fullpath, $basedir, $lang) = @_;
+  my ($fullpath, $fname, $lang) = @_;
 
   my @filelines = do_read($fullpath) or return '';
 
@@ -344,6 +353,16 @@ sub setupstring_parse_file($$$) {
         $use_this_section = 0;
       }
     } elsif ($use_this_section) {
+
+      # Fill missing info in substitute rules
+
+      $line =~ s/$InclusionRegex/
+      '@' .
+      ($1 ? $1 : $fname) . ':' .   # Filename.
+      ($2 ? $2 : $key) .           # Keyword.
+      ($3 ? ":$3" : '');           # Substitutions.
+      /ge unless ($key eq '__preamble');
+
       push @{$sections{$key}}, $line;
     }
   }
@@ -552,14 +571,7 @@ sub setupstring($$%) {
 
   my $fullpath = "$basedir/$lang/$fname";
   our ($missa);
-  my $inclusionregex = qr/^\s*\@
-	([^\n:]+)?                    # Filename (self-reference if omitted).
-	(?::([^\n:]+?))?              # Optional keywords.
-	[^\S\n\r]*                    # Ignore trailing whitespace.
-	(?::(.*))?                    # Optional substitutions.
-	$
-	\n?                           # Eat up to one newline.
-	/mx;
+
   our $version;
 
   $setupstring_caches_by_version{$version} = {} unless (exists $setupstring_caches_by_version{$version});
@@ -591,16 +603,16 @@ sub setupstring($$%) {
     }
 
     # Get the top layer.
-    $new_sections = setupstring_parse_file($fullpath, $basedir, $lang) if (-e $fullpath);
+    $new_sections = setupstring_parse_file($fullpath, $fname =~ s/\.txt$//r, $lang) if (-e $fullpath);
 
     if (%$new_sections) {
 
       # Fill in missing "pre-Urban hymn translations to avoid being overwritten by Latin
       # GABC: deactivated as pre-Urban Hymnody should not be overwritten by post-Urban at all
-      foreach my $seckey (keys(%{$new_sections})) {
-        if ($seckey =~ /Hymnus(.*?) (.*)/) {
-          unless ($lang =~ /gabc/i || exists(${$new_sections}{"Hymnus$1M $2"})) {
-            ${$new_sections}{"Hymnus$1M $2"} = ${$new_sections}{$seckey};
+      unless ($lang =~ /^Latin(?:-gabc)?$/) {
+        foreach my $seckey (keys(%{$new_sections})) {
+          if ($seckey =~ /^Hymnus (.*)/ && !exists(${$new_sections}{"HymnusM $1"})) {
+            ${$new_sections}{"HymnusM $1"} = ${$new_sections}{$seckey};
           }
         }
       }
@@ -642,7 +654,7 @@ sub setupstring($$%) {
 
   # Do whole-file inclusions.
   unless ($params{'resolve@'} == RESOLVE_NONE) {
-    while ($sections{'__preamble'} =~ /$inclusionregex/gc) {
+    while ($sections{'__preamble'} =~ /$InclusionRegex/gc) {
       my $incl_fname .= "$1.txt";
       if ($fullpath =~ /$incl_fname/) { warn "Cyclic dependency in whole-file inclusion: $fullpath"; last; }
       my $incl_sections =
@@ -667,7 +679,7 @@ sub setupstring($$%) {
         my $iiiT = $sections{$key};
 
         while (
-          $sections{$key} =~ s/$inclusionregex/
+          $sections{$key} =~ s/$InclusionRegex/
 				get_loadtime_inclusion(\%sections, $basedir, $calledlang,
 				$1,             # Filename.
 				$2 ? $2 : $key, # Keyword.
@@ -684,28 +696,12 @@ sub setupstring($$%) {
         }
       }
     }
-  } else {
 
-    # We're not resolving section inclusions, but we still need to parse
-    # them to fill in implicit file- and section names, so that
-    # daisy-chained references will work as expected.
-    my ($fbasename) = ($fname =~ /(.*)\.txt/);
-
-    foreach my $key (keys %sections) {
-      $sections{$key} =~ s/$inclusionregex/
-			'@' .
-			($1 ? $1 : $fbasename) . ':' .   # Filename.
-			($2 ? $2 : $key) .               # Keyword.
-			($3 ? ":$3" : '') .              # Substitutions.
-			"\n"
-			/ge;
-    }
-  }
-
-  # Safeguard [Rank] to allow changing Rank and inherit Officium via section inclusions
-  if (exists($sections{'Officium'})) {
-    $sections{'Officium'} =~ s/\s+$//;
-    $sections{'Rank'} =~ s/^.*?;;/$sections{'Officium'};;/;
+    # This is left over from rebase
+    # Safeguard [Rank] to allow changing Rank and inherit Officium via section inclusions
+    #if (exists($sections{'Officium'})) {
+    #  $sections{'Officium'} =~ s/\s+$//;
+    #  $sections{'Rank'} =~ s/^.*?;;/$sections{'Officium'};;/;
   }
 
   return \%sections;
