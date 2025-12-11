@@ -19,6 +19,7 @@ Building script~>$building~>Checkbutton~>15;;
 [general]
 Version~>$version~>Optionmenu~>versions;;
 Language 2~>$lang2~>Optionmenu~>languages;;
+Dioecesis~>$dioecesis~>Optionmenu~>dioecesis;;
 Votive~>$votive~>Optionmenu~>votives;;
 
 [generalc]
@@ -32,6 +33,9 @@ Latin,Čeština/Bohemice,Čeština - Schaller/Cesky-Schaller,Deutsch,English,Esp
 
 [versions]
 Tridentine - 1570,Tridentine - 1910,Divino Afflatu - 1939,Divino Afflatu - 1954,Reduced - 1955,Rubrics 1960 - 1960,1965-1967,Rubrics 1960 - 2020 USA/Rubrics 1960 Newcalendar
+
+[dioecesis]
+Calendarium Generale/Generale
 
 [communes]
 C1,Commune Apostolorum, 

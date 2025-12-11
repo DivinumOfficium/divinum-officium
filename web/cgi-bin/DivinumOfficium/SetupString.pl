@@ -30,6 +30,7 @@ my %subjects = (
   officio => sub { $dayname[1]; },
   ad => sub { our $missa ? 'missam' : our $hora; },
   mense => sub { our $month },    # mense is not perfect eg. 1 matches also 10 11 12
+  dioecesis => sub { our $dioecesis },
 
   # GABC subjects
   tonus => sub {$chantTone},

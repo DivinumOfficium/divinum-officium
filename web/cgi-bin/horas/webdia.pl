@@ -852,9 +852,14 @@ sub selectables {
 #*** selectable_p
 # generate signle select from .dialog for Poffice
 sub selectable_p {
-  my ($dialog, $curvalue, $date1, $version, $lang2, $votive, $title) = @_;
+  my ($dialog, $curvalue, $date1, $version, $lang2, $votive, $dioecesis, $title) = @_;
   $title ||= ucfirst($dialog);
-  if ($dialog eq 'votives') { $curvalue ||= 'Hodie' }
+
+  if ($dialog eq 'votives') {
+    $curvalue ||= 'Hodie';
+  } elsif ($dialog eq 'dioecesis') {
+    $curvalue ||= 'Generale';
+  }
   my @output = ("<TR><TD ALIGN='CENTER'>$title");
 
   foreach (getdialog($dialog)) {
@@ -868,7 +873,9 @@ sub selectable_p {
       . "&lang2="
       . ($dialog eq 'languages' ? $name : $lang2)
       . "&votive="
-      . ($dialog eq 'votives' ? $name : $votive);
+      . ($dialog eq 'votives' ? $name : $votive)
+      . "&dioecesis="
+      . ($dialog eq 'dioecesis' ? $name : $dioecesis);
     my $colour = $curvalue eq $name ? 'red' : '';
     push(@output, qq(\n<A HREF="$href"><FONT COLOR=$colour>$text</FONT></A>));
   }
@@ -876,7 +883,7 @@ sub selectable_p {
 }
 
 sub horas_menu {
-  my ($completed, $date1, $version, $lang2, $votive) = @_;
+  my ($completed, $date1, $version, $lang2, $votive, $dioecesis) = @_;
   my @horas = gethoras($votive eq 'C9');
   push(@horas, 'Omnes', 'Plures') if ($0 !~ /Cofficium/);
 
@@ -889,7 +896,8 @@ sub horas_menu {
     my $onclick = '';
 
     if ($0 =~ /Pofficium/) {
-      $href = qq("Pofficium.pl?date1=$date1&command=pray$_) . qq(&version=$version&lang2=$lang2&votive=$votive");
+      $href = qq("Pofficium.pl?date1=$date1&command=pray$_)
+        . qq(&version=$version&lang2=$lang2&votive=$votive&dioecesis=$dioecesis");
     } else {
       $onclick = qq(onclick="hset('$_');");
     }
@@ -916,7 +924,8 @@ sub horas_menu {
 
   my $a =
     ($0 =~ /Pofficium/)
-    ? qq(HREF="Pofficium.pl?date1=$date1&command=Appendix Index) . qq(&version=$version&lang2=$lang2&votive=$votive")
+    ? qq(HREF="Pofficium.pl?date1=$date1&command=Appendix Index)
+    . qq(&version=$version&lang2=$lang2&votive=$votive&dioecesis=$dioecesis")
     : qq(HREF="#" onclick="appendix('Index')");
   $output .= qq(\n<A $a><FONT COLOR=$colour>Appendix</FONT></A>\n) if ($0 !~ /Cofficium/);
   $output;
