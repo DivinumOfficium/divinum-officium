@@ -88,11 +88,21 @@ sub load_tempora {
   die "Can't load tempora for unknown version $version" unless defined $_data{$version};
   my $cache_key = "tempora:$version";
 
-  $_dCACHE{$cache_key} = {};
-
-  foreach (load_transfer_file($_data{$version}{transfer}, 0, 'Tempora')) {
-    my ($key, $val) = split(/=/);
-    $_dCACHE{$cache_key}{$key} = substr($val, 0, index($val, ';'));
+  unless (is_cached($cache_key)) {
+    
+    my (@tempora) = ();
+    my @lines = load_transfer_file('Generale', 0, 'Tempora');
+    
+    foreach (@lines) {
+      my ($line, $ver) = split(/\s*;;\s*/);
+      
+      if (!$ver || ($ver =~ $_data{$version}{lc('transfer')})) {
+        push(@tempora, split(/=/, $line, 2));
+      }
+    }
+    
+    %{$_dCACHE{$cache_key}} = @tempora;
+    
   }
 }
 
