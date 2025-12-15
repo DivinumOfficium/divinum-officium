@@ -104,13 +104,18 @@ Cum Patr[e] et Sancto Spíritu,
 In sempitérna sǽcula.
 Amen.
 
-[Versum 1]
+[Versum 1_]
 V. Crástina die delébitur iníquitas terræ.
 R. Et regnábit super nos Salvátor mundi.
 
-[Versum 1] (rubrica cisterciensis)
+[Versum 1C]
 V. Benedíctus qui venit in nómine Dómini.
 R. Deus Dóminus, et illúxit nobis.
+
+[Versum 1]
+@:Versum 1_
+(sed rubrica cisterciensis)
+@:Versum 1C
 
 [Ant 1]
 Cum ortus fúerit * sol de cælo, vidébitis Regem regum procedéntem a Patre, tamquam sponsum de thálamo suo.
@@ -142,7 +147,7 @@ Suscépimus, * Deus, misericórdiam tuam in médio templi tui.;;47
 Oriétur * in diébus Dómini abundántia pacis, et dominábitur.;;71
 Véritas de terra * orta est, et justítia de cælo prospéxit.;;84
 Ipse invocábit * me, allelúja: Pater meus es tu, allelúja.;;88
-(sed rubrica 1960) Ipse invocábit * me, allelúja: Pater meus es tu, allelúja.;;88(2-37)
+(sed rubrica 1960 aut rubrica 1962) Ipse invocábit * me, allelúja: Pater meus es tu, allelúja.;;88(2-37)
 Læténtur cæli, * et exsúltet terra ante fáciem Dómini, quóniam venit.;;95
 Notum fecit * Dóminus, allelúja, salutáre suum, allelúja.;;97
 
@@ -282,19 +287,24 @@ Homilía sancti Augustíni Epíscopi
 Ne vile áliquid putáres quale consuevísti cogitáre, cum verba humána soléres audíre, audi quid cógites: Deus erat Verbum. Exeat nunc néscio quis infidélis Ariánus, et dicat quia Verbum Dei factum est. Quómodo potest fíeri, ut Verbum Dei factum sit, quando Deus per Verbum fecit ómnia? Si et Verbum Dei ipsum factum est: per quod áliud verbum factum est? Si hoc dicis, quia hoc est verbum Verbi, per quod factum est illud; ipsum dico ego únicum Fílium Dei. Si autem non dicis verbum Verbi, concéde non factum, per quod facta sunt ómnia. Non enim per seípsum fíeri pótuit, per quod facta sunt ómnia. Crede ergo Evangelístæ.
 &teDeum
 
-[Ant Laudes]
+[Ant Laudes_]
 Quem vidístis, * pastóres? dícite, annuntiáte nobis, in terris quis appáruit? Natum vídimus, et choros Angelórum collaudántes Dóminum, allelúja, allelúja.
 Génuit puérpera * Regem, cui nomen ætérnum, et gáudia matris habens cum virginitátis honóre: nec primam símilem visa est, nec habére sequéntem, allelúja.
 Angelus ad pastóres * ait: Annúntio vobis gáudium magnum: quia natus est vobis hódie Salvátor mundi, allelúja.
 Facta est cum Angelo * multitúdo cæléstis exércitus laudántium Deum, et dicéntium: Glória in excélsis Deo, et in terra pax homínibus bonæ voluntátis, allelúja.
 Párvulus fílius * hódie natus est nobis: et vocábitur Deus, Fortis, allelúja, allelúja.
 
-[Ant Laudes] (rubrica cisterciensis)
+[Ant LaudesC]
 Génuit puérpera * Regem, cui nomen ætérnum, et gáudia matris habens cum virginitátis honóre: nec primam símilem visa est, nec habére sequéntem, allelúja.
 Lux orta est * super nos: quia hódie natus est Salvátor, allelúia.
 Virgo hódie fidélis, * etsi Verbum génuit incarnátum, Virgo mansit et post partum, quam laudántes omnes dícimus: Benedícta tu in muliéribus.
 Gaudeámus omnes fidéles, * Salvátor noster natus est in mundo: hódie procéssit proles magnífici gérminis, et persevérat pudor virginitátis.
 Hódie * intácta Virgo Deum nobis génuit téneris indútum membris, quem lactáre méruit: omnes ipsum adorémus, qui venit salváre nos.
+
+[Ant Laudes]
+@:Ant Laudes_
+(sed rubrica cisterciensis)
+@:Ant LaudesC
 
 [Capitulum Laudes]
 !Heb 1:1-2

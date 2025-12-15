@@ -1,0 +1,182 @@
+@Sancti/12-25
+
+[Rule]
+9 lectiones
+Psalmi Dominica
+Antiphonas Horas
+Doxology=Nat
+No commemoratio
+
+[Ant Vespera]
+@Sancti/12-25:Ant Vespera:1 s/109/112/
+@Sancti/12-25:Ant Vespera:2 s/110/116/
+@Sancti/12-25:Ant Vespera:4 s/112/146/
+@Sancti/12-25:Ant Vespera:5 s/116/147/
+@Sancti/12-25:Ant Vespera:3 s/111/148/
+
+[Capitulum Vespera 1]
+!Isa 9:2
+v. Pópulus, qui ambulábat in ténebris, vidit lucem magnam: habitántibus in regióne umbræ mortis, lux orta est eis.
+$Deo gratias
+
+[Responsory Vespera 1]
+R. Judǽa et Jerúsalem, nolíte timére:
+* Cras egrediémini, et Dóminus erit vobíscum.
+V. Constántes estóte: vidébitis auxílium Dómini super vos.
+R. Cras egrediémini, et Dóminus erit vobíscum.
+&Gloria
+R. Et Dóminus erit vobíscum.
+
+[Hymnus Vespera]
+v. Veni, redémptor géntium,
+Osténde partum Vírginis:
+Mirétur omne sæculum:
+Talis decet partus Deum.
+_
+Non ex viríli sémine,
+Sed mýstico spirámine
+Verbum Dei factum est caro
+Fructúsque ventris flóruit.
+_
+Alvus tuméscit Vírginis,
+Claustrum pudóris pérmanet,
+Vexílla virtútum micant,
+Versátur in templo Deus.
+_
+Procédat e thálamo suo,
+Pudóris aula régia,
+Géminæ gigas substántiæ
+Alácris ut currat viam.
+_
+Æquális ætérno Patri,
+Carnis tropæo cíngere,
+Infírma nostri córporis
+Virtúte firmans pérpeti.
+_
+Præsépe jam fulget tuum
+Luménque nox spirat novum,
+Quod nulla nox intérpolet
+Fidéque jugi lúceat.
+_
+Sit, Christe, rex piíssime,
+Tibi Patríque glória
+Cum Spíritu Paráclito,
+In sempitérna sæcula.
+Amen.
+
+[Versum 1]
+@Sancti/12-25:Ant Matutinum:2 s/^/V. / s/ \*/.\nR./ s/;;.*//
+
+[Oratio]
+@Sancti/12-24
+
+[Ant Completorium1]
+@Sancti/12-25:Ant Vespera:3
+
+[Ant 41]
+@Psalterium/Special/Major Special:Adv Ant 23L
+
+[In Finem Lectio]
+@TemporaOP/Quad5-0
+
+[Nocturn 1 Versum]
+@:Versum Nona:s/,.*/./g
+
+[Lectio1]
+@Sancti/12-25
+@:In Finem Lectio
+
+[Responsory1]
+@Sancti/12-25::1-3 s/\n\* (.*): (.)/$1,\n* \u$2/
+@Sancti/12-25::2 s/.*: (.)/R. \u$1/
+
+[Lectio2]
+@Sancti/12-25
+@:In Finem Lectio
+
+[Lectio3]
+@Sancti/12-25
+@:In Finem Lectio
+
+[Responsory3]
+@SanctiM/12-25:Responsory4:s/\* (.)/\l$1/ s/Lux/\n* Lux/
+@SanctiM/12-25:Responsory4:2 s/.* Lux/\nR. Lux/
+
+[Nocturn 2 Versum]
+@:Versum 2:s/,.*/./g
+
+[Lectio4]
+@Sancti/12-25::s/: quæ,.*?\././ s/: quia.*?\././ s/Dei namque.*/~/
+Verbum enim Dei, Deus Fílius Dei, propter liberándum hóminem ab ætérna morte, factus est homo. Et tanto fædere utrámque natúram conséruit, ut nec inferiórem consumeret glorificátio, nec superiórem minúeret assúmptio.
+
+[Responsory4]
+@Sancti/12-25:Responsory3
+
+[Lectio5]
+Salva igitur utriúsque proprietáte substántiæ, et in unam coëúnte persónam, suscipitur a maiestáte humilitas, a virtúte infirmitas, ab æternitáte mortálitas: ut quod nostris remédiis congruébat, unus atque idem Dei et hóminum mediátor, et mori ex uno, et resúrgere posset ex áltero. Nisi enim esset verus Deus, non afférret remédium; nisi verus esset homo, non præbéret exémplum. Ab exsultántibus Angelis, nascénte Dómino, Glória in excélsis Deo, cánitur. De hoc ergo inenarrábili pietátis ópere quantum lætári debet humilitas hóminum, cum tantum gaudeat sublimitas Angelórum?
+
+[Responsory5]
+@Sancti/12-25:Responsory4:1-2 s/\n\*// s/(jacéntem)/\n\* \u$1/
+@Sancti/01-01:Responsory6:3
+@Sancti/12-25:Responsory4:1-2 s/.*(jacéntem)/\nR. \u$1/ s/\n\*//
+
+[Lectio6]
+@Sancti/12-25::s/: qui.*?\././ s/$/~/
+Noli te diáboli iterum servitúti subícere, quia prétium tuum sanguis Christi est: qui veritáte te judicábit, qui misericórdia te redémit.
+
+[Lectio7]
+@Sancti/12-25::s/ Locus.*//
+
+[Responsory7]
+@Sancti/12-25:Responsory5
+
+[Responsory8]
+@Sancti/12-25:Responsory7
+
+[Lectio9]
+@Sancti/12-25::1-4
+Homilía sancti Joánnis Chrysostomi
+!Hom. 3 in Joann. I
+Cum Matthæus ab Heróde, Lucas a Tibério Cæsare, Marcus a baptísmate Joánnis exordiátur, his ómnibus Joánnes omissis, supra omne tempus et sæculum ascéndit. Tu autem, dilectíssime, cum Verbum hoc in loco audis, noli, quæso, iis acquiéscere, qui dicunt id verbum esse quod ore profértur. Hoc enim Verbum substantia quædam est in persóna, ex ipso Patre sine passióne provéniens.  Quemadmodum autem, In princípio erat Verbum, æternitátem significat: ita, Hoc erat in princípio apud Deum, coæternitatem nobis ostendit. Numquam enim solus Pater sine Verbo fuit: sed semper Deus apud Deum erat, et in persóna quidem própria.
+
+[Responsory9]
+R. Verbum caro factum est, et habitávit in nobis: cujus glóriam vídimus, quasi Unigéniti a Patre,
+* Plenum grátiæ et veritátis.
+V. In princípio erat Verbum, et Verbum erat apud Deum, et Deus erat Verbum.
+R. Plenum grátiæ et veritátis.
+
+/: Postea dicitur Evaneglium Liber generationis :/
+
+[Oratio 2]
+@Sancti/12-25:Oratio
+
+[Versum Tertia]
+@Sancti/12-25:Versum 2
+
+[Capitulum Sexta]
+@Sancti/12-25:Capitulum Vespera 1
+
+[Versum Sexta]
+@Sancti/12-25:Nocturn 3 Versum
+
+[Capitulum Nona]
+@Sancti/01-01:Capitulum Laudes
+
+[Responsory Nona]
+R.br. Ipse invocábit me, * Allelúja, allelúja.
+R. Ipse invocábit me, * Allelúja, allelúja.
+V. Pater meus es tu.
+R. Allelúja.
+&Gloria
+R. Ipse invocábit me, * Allelúja, allelúja.
+_
+@Sancti/12-25:Versum 1C
+
+[Versum 3]
+@Sancti/12-25:Nocturn 1 Versum
+
+[Ant Completorium3]
+@TemporaM/Nat1-0tt:Ant Matutinum:7
+
+[Ant 43]
+Allelúja. Verbum caro factum est, allelúja, et habitávit in nobis, allelúia, allelúia.

@@ -478,7 +478,7 @@ sub ant123_special {
   if ($month == 12 && ($day > 16 && $day < 24) && $winner =~ /tempora/i) {
     my %specials = %{setupstring($lang, 'Psalterium/Special/Major Special.txt')};
 
-    if ($hora eq 'Laudes' && ($day == 21 || $day == 23)) {
+    if ($hora eq 'Laudes' && ($day == 21 || ($day == 23 && $version !~ /Praedicatorum/))) {
       $ant = $specials{"Adv Ant $day" . 'L'};
     } elsif ($hora eq 'Vespera') {
       $ant = $specials{"Adv Ant $day"};
