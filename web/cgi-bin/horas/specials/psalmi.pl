@@ -499,6 +499,7 @@ sub psalmi_major {
       && $hora eq 'Laudes')
     {
       @p = split("\n", $psalmi{'DayaC Laudes2'});
+      $p[2] = ";;62";
     }
   }
   my $lim = 5;

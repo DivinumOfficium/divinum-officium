@@ -1,7 +1,17 @@
 @Tempora/Adv1-2
 
+[Lectio1] (rubrica cisterciensis)
+@Tempora/Adv1-2::1-4
+
 [Lectio2]
 @Tempora/Adv1-2::s/\n2 / ¶\n2 /
+
+[Lectio2] (rubrica cisterciensis)
+@Tempora/Adv1-2:Lectio1:2:s/1-3/3/
+@Tempora/Adv1-2:Lectio1:5
+
+[Lectio3] (rubrica cisterciensis)
+@Tempora/Adv1-2:Lectio2:1-3:s/-6/-5/
 
 [Responsory4]
 @Tempora/Adv1-3:Responsory3
