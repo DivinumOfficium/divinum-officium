@@ -1,4 +1,5 @@
 use utf8;
+use UUID qw(uuid);
 
 # required by kalendar.pl when ouput ical
 
@@ -27,9 +28,10 @@ EOH
     my $day = sprintf("%02i-%02i-%04i", $ymonth, $yday, $yyear);
     my ($e) = ordo_entry($day, $version1, '', 'winneronly');
     $e = abbreviate_entry($e);
+    my $uid = uuid();
     $output .= <<"EOE";
 BEGIN:VEVENT
-UID:$cday
+UID:$uid
 DTSTAMP:$dtstamp
 SUMMARY:$e
 DTSTART;VALUE=DATE:$dtstart
