@@ -492,7 +492,7 @@ sub psalm : ScriptFunc {
       $ftone = ($psnum =~ /Tonus: (.*)/) ? $1 : '';
       $ftone =~ s/\,/-/g;          # Tone name with en-dash not comma
       $ffolder = ($ftone =~ /^(solemn|\d)/) ? $1 : 'specialis';
-      $ffolder .= '-alt' if $ftone =~ /4.alt/;
+      $ffolder .= '-alt' if $ftone =~ /4.+alt/;
       $ffolder .= '-antiquo' if $ftone =~ /3\-antiquo/;
       $ffolder = 'solemn' if $ftone =~ /solemn/;
 
