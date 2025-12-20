@@ -134,7 +134,7 @@ sub doxology {
     {
       $dname = $1;
     } elsif (($month == 8 && $day > 15 && $day < 23 && $version !~ /1955|1963/i)
-      || ($version !~ /1570|1617|altovadensis/i && $month == 12 && $day > 8 && $day < 16 && $dayofweek > 0))
+      || ($version !~ /1570|1617|1963|altovadensis/i && $month == 12 && $day > 8 && $day < 16 && $dayofweek > 0))
     {
       $dname = 'Nat';
     } else {
