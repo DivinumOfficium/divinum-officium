@@ -1,7 +1,12 @@
 use utf8;
-use UUID qw(uuid);
 
 # required by kalendar.pl when ouput ical
+#
+
+sub uuid {
+  open my $fh, "/proc/sys/kernel/random/uuid";
+  scalar <$fh>;
+}
 
 # prepare ical output
 sub ical_output {
