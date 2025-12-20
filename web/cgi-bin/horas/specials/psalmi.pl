@@ -410,7 +410,7 @@ sub psalmi_major {
 
       if ($version =~ /Monastic/) {
         $antiphones[2] = $expectetur;
-        $antiphones[3] = '';
+        $antiphones[3] = $lang =~ /gabc/ ? ';;;;4-alt-Astar' : '';
       } else {
         $antiphones[3] = $expectetur;
       }
