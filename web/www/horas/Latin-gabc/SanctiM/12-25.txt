@@ -66,5 +66,11 @@ R. Hoc erat in princípio apud Deum.
 [Responsory12]
 @Sancti/12-25:Responsory8
 
-[Ant Vespera 3]
-@Sancti/12-25::s/.*;;131//
+[Responsory Laudes]
+R.br. {gabc:Tempora/Nativitatis/rb--verbum_caro_factum_est--solesmes_1934}
+
+[Responsory Vespera]
+R.br. {gabc:Tempora/Nativitatis/rb--verbum_caro_factum_est--solesmes_1934}
+
+[Responsory Vespera] (tonus solemnis)
+R.br. {gabc:Tempora/Nativitatis/rb--verbum_caro_tonus_solemnis--solesmes_1934}
