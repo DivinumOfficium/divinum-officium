@@ -336,7 +336,7 @@ sub oratio {
   }
   $rule .= $1 if ($winner =~ /Sancti/i && $duplex < 3 && $scriptura && $scriptura{Rule} =~ /(Suffr.*?=.*?;;)/i);
   $rule .= $1 if ($winner =~ /Sancti/i && $duplex < 3 && $commemoratio && $commemoratio{Rule} =~ /(Suffr.*?=.*?;;)/i);
-  
+
   if ($rule =~ /Suffr.*?=(.*?);;/i) {
     my $sf = $1;
     my @sf = split(';', $sf);
