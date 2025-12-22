@@ -1,9 +1,9 @@
 [Ant Vespera]
 {name:Rex pacificus;annotation:8 G.;mode:8;book:The Liber Usualis, 1961, p. 364 & Liber antiphonarius, 1960, p. 259;transcriber:Andrew Hinkley;%%(c4) REX(g_[oh:h]) pa(fd)cí(f)fi(fg)cus(g'_[oh:h]) *(,) ma(g)gni(h)fi(g)cá(h')tus(g) est,(f.) (;) cu(g_[oh:h]f~)jus(g_[uh:l]h) vul(j_)tum(ji) de(h)sí(hi)de(h)rat(g.) (,) u(gf)ni(d')vér(f)sa(fg) ter(g.)ra.(g.) (::)};;109;;8G
-Magnificátus est * Rex pacíficus super omnes reges univérsæ terræ.;;110
-Compléti sunt * dies Maríæ, ut páreret Fílium suum primogénitum.;;111
-Scitóte * quia prope est regnum Dei: amen dico vobis, quia non tardábit.;;112
-Leváte cápita vestra: * ecce appropínquat redémptio vestra.;;116
+{name:Magnificatus est;annotation:7.a;mode:7;book:The Liber Usualis, 1961, p. 364 & Liber antiphonarius, 1960, p. 259;transcriber:Andrew Hinkley;%%(c3) MA(e)gni(g')fi(h)cá(i')tus(h) est(f'_) *(,) Rex(h) pa(g)cí(e')fi(e)cus(e.) (;) su(h)per(h) o(g)mnes(e) re(f_h)ges(h.) (,) u(hg)ni(f)vér(g')sae(f) ter(e.)ræ.(e.) (::)};;110;;7a
+{name:Completi sunt;annotation:8.G;mode:8;book:The Liber Usualis, 1961, p. 364 & Liber antiphonarius, 1960, p. 260;transcriber:Andrew Hinkley;%%(c4) COm(h')plé(f)ti(fg) sunt(g) *() di(h_j)es(j'_) Ma(g)rí(h)ae,(g.) (;) ut(j) pá(j')re(i)ret(h') fí(j)li(i)um(hg~) su(h)um(gf~) pri(g')mo(h)gé(i')ni(h)tum.(g.) (::)};;111;;8G
+{name:Scitote quia prope;annotation:8.G;mode:8;book:The Liber Usualis, 1961, p. 365;transcriber:Andrew Hinkley;%%(c4) SCi(h)tó(f_g)te(g'_[oh:h]) *(,) qui(g)a(g') pro(h)pe(g) est(f') re(g)gnum(gh) De(f)i :(f.) (;) a(f_h)men(j'_) di(k)co(i') vo(j)bis,(hg__) (,) qui(g)a(fd) non(f) tar(fg~)dá(g.)bit.(g.) (::)};;112;;8G
+{name:Levate capita vestra;annotation:1.g;mode:1;book:The Liber Usualis, 1961, p. 365 & Liber antiphonarius, 1960, p. 260;transcriber:Andrew Hinkley;%%(c4) LE(dd)vá(c)te(d) cá(e_[uh:l]f)pi(g)ta(fe) ve(d)stra :(dc__) *(;) ec(f)ce(h) ap(g)pro(h)pin(gf~)quá(g_[oh:h])bit(g') (,) red(d)ém(dc~)pti(f)o(e) ve(d.)stra.(d.) (::)};;116;;1g
 
 [Ant Vespera] (rubrica monastica)
 {name:Rex pacificus;annotation:8 G.;mode:8;book:The Liber Usualis, 1961, p. 364 & Liber antiphonarius, 1960, p. 259;transcriber:Andrew Hinkley;%%(c4) REX(g_[oh:h]) pa(fd)cí(f)fi(fg)cus(g'_[oh:h]) *(,) ma(g)gni(h')fi(g)cá(h')tus(g) est,(f.) (;) cu(g_[oh:h]f~)jus(g_[uh:l]h) vul(j_)tum(ji) de(h)sí(hi)de(h)rat(g.) (,) u(gf)ni(d')vér(f)sa(fg) ter(g.)ra.(g.) (::)};;109;;8G
@@ -17,41 +17,7 @@ Leváte cápita vestra: * ecce appropínquat redémptio vestra.;;116
 $Deo gratias
 
 [Hymnus Vespera]
-{:H-Jesuredemptoromnium:}v. Jesu, Redémptor ómnium,
-Quem lucis ante oríginem
-Parem patérnæ glóriæ
-Pater suprémus édidit.
-_
-Tu lumen, et splendor Patris, 
-Tu spes perénnis ómnium,
-Inténde quas fundunt preces
-Tui per orbem sérvuli.
-_
-Meménto, rerum Cónditor,
-Nostri quod olim córporis,
-Sacráta ab alvo Vírginis
-Nascéndo, formam súmpseris.
-_
-Testátur hoc præsens dies,
-Currens per anni círculum,
-Quod solus e sinu Patris
-Mundi salus advéneris.
-_
-Hunc astra, tellus, ǽquora,
-Hunc omne, quod cælo subest,
-Salútis auctórem novæ
-Novo salútat cántico.
-_
-Et nos, beáta quos sacri
-Rigávit unda sánguinis,
-Natális ob diem tui
-Hymni tribútum sólvimus.
-_
-Jesu, tibi sit glória,
-Qui natus es de Vírgine, 
-Cum Patre et almo Spíritu, 
-In sempitérna sǽcula.
-Amen.
+{gabc:Tempora/Nativitatis/hy--jesu_redemptor_omnium_nat--solesmes}
 
 [HymnusM Vespera]
 {gabc:Tempora/Nativitatis/hy--christe_redemptor_omnium_ex_patre--solesmes_1934}
@@ -64,7 +30,7 @@ R/. Et(h) re(h)gná(h)bit(h) su(h)per(h) nos(h) Sal(h)vá(h)tor(h) mun(h)di.(g_'
 R/. Et(h) reg(h)ná(h)bit(h) su(hi)per(h) nos(h_') (,) Sal(h)vá(f')tor(e) mun(f_0h)di.(hiH'G!hih.ghG'FE'fggf.) (::)}
 
 [Ant 1]
-Cum ortus fúerit * sol de cælo, vidébitis Regem regum procedéntem a Patre, tamquam sponsum de thálamo suo.
+{name:Cum ortus fuerit;annotation:8.G;mode:8;book:The Liber Usualis, 1961, p. 367 & Liber antiphonarius, 1960, p. 262;transcriber:Andrew Hinkley;%%(c4) CUM(gd~) or(f_0g'h)tus(g) fú(gh)e(g)rit(g') *() sol(h) de(g') cae(h)lo,(h'_) (;) vi(g)dé(h')bi(g)tis(f') Re(g)gem(h) re(h!iwj_g)gum(g'_[oh:h]) (,) pro(f)ce(gh)dén(h)tem(g_[uh:l]hG'F) a(h.g!hwi_[oh:h]h) Pa(g.)tre,(g.) (;) tam(g_[oh:h]e~)quam(g.) spon(f_e)sum(f'_) de(d) thá(e_[uh:l]f)la(gh)mo(h) su(g.)o.(g.) (::)};;8G
 (sed rubrica monastica)
 {name:Cum ortus fuerit sol;annotation:8 G.;mode:8;book:Antiphonale Monasticum, 1934, p. 239;transcriber:Dominique CROCHU;%%(c4) CUM(gd~) or(f_0gh)tus(g) *() fú(gh)e(g)rit(g') sol(h) de(g') cæ(h)lo,(g_') (,) vi(f)dé(h')bi(g)tis(f) Re(g')gem(h) re(h!iwj_g)gum(g.) (;) pro(f)ce(gh)dén(h>)tem(g_hG'F) a(h.g!hwi_h) Pa(g.)tre,(g.) (;) tam(g_e~)quam(gg) spon(f_e)sum(f_') (,) de(d) thá(e_f)la(gh)mo(h) su(g.)o.(g.) (::)};;8G
 
@@ -73,19 +39,19 @@ Cum ortus fúerit * sol de cælo, vidébitis Regem regum procedéntem a Patre, t
 $Per eumdem
 
 [Invit]
-Christus natus est nobis: * Veníte, adorémus.
+{(c4) CHri(d.e!fw!g_[uh:l]h)stus(g) na(h.g!hw!i_[uh:l]j)tus(h) est(gh~) no(h'hgh)bis :(ffe/fg..) *(;) Ve(de/f'g)ní(g)te,(ghhg/he__) ad(d.0f!gwh)o(g)ré(fg!hvhgh)mus.(e.) (::)};;4g
 
 [Ant Matutinum]
-Dóminus dixit * ad me: Fílius meus es tu, ego hódie génui te.;;2
-Tamquam sponsus * Dóminus procédens de thálamo suo.;;18
-Diffúsa est * grátia in lábiis tuis, proptérea benedíxit te Deus in ætérnum.;;44
-Suscépimus, * Deus, misericórdiam tuam in médio templi tui.;;47
-Oriétur * in diébus Dómini abundántia pacis, et dominábitur.;;71
-Véritas de terra * orta est, et justítia de cælo prospéxit.;;84
-Ipse invocábit * me, allelúja: Pater meus es tu, allelúja.;;88
-(sed rubrica 1960 aut rubrica 1962) Ipse invocábit * me, allelúja: Pater meus es tu, allelúja.;;88(2-37)
-Læténtur cæli, * et exsúltet terra ante fáciem Dómini, quóniam venit.;;95
-Notum fecit * Dóminus, allelúja, salutáre suum, allelúja.;;97
+{name:Dominus dixit ad me;annotation:8.c;mode:8;book:The Liber Usualis, 1961, p. 371;transcriber:Andrew Hinkley;%%(c3) DO(hgh)mi(fe)nus(e) *() di(ggh)xit(f) ad(hi~) me :(g'_[oh:h]) (,) Fí(i)li(ij)us(j) me(h_f)us(h) es(hi) tu,(g.) (;) e(hih)go(g_[oh:h]e) hó(f.0/ggh)di(fe)e(d.) () (,) () gé(f!gwh/ih)nu(fe)i(fg) te.(e.) (::)};;2;;8c
+{name:Tamquam sponsus;annotation:8.G;mode:8;book:The Liber Usualis, 1961, p. 372;transcriber:Andrew Hinkley;%%(c4) TAm(g)quam(h') spon(g)sus(gf) *() Dó(g')mi(h)nus(j) pro(i)cé(h_j)dens(i.) (,) de(h) thá(f')la(h)mo(h) su(g.)o.(g.) (::)};;18;;8G
+{name:Diffusa est gratia;annotation:1.a2;mode:1;book:The Liber Usualis, 1961, p. 373;transcriber:Andrew Hinkley;%%(c4) DIf(f)fú(h')sa(g) est(h) grá(e)ti(f)a(g'_[oh:h]) *() in(e) lá(g')bi(e)is(f) tu(d)is,(d.) (;) pro(d)ptér(f)e(e)a(f) be(gh)ne(g)dí(f')xit(e) te(c'_[oh:h]) De(d)us(e_[uh:l]f) in(g) ae(fe)tér(d.)num.(d.) (::)};;44;;1a2
+{name:Suscepimus Deus (Ant.);annotation:8.G;mode:8;book:The Liber Usualis, 1961, p. 378 & In nocte nativitatis Domini, 1936, p. 16;transcriber:Andrew Hinkley;%%(c4) SUs(g)cé(g')pi(h)mus,(h) De(g)us,(g'_[oh:h]) *(,) mi(f)se(g')ri(h)cór(j)di(i)am(h') tu(j)am(i.) (,) in(h) mé(g')di(g)o(h) tem(f')pli(h) tu(g.)i.(g.) (::)};;47;;8G
+{name:Orietur in diebus;annotation:3.b;mode:3;book:The Liber Usualis, 1961, p. 379 & In nocte nativitatis Domini, 1936, p. 17;transcriber:Andrew Hinkley;%%(c4) O(g)ri(g)é(i')tur(j) *() in(g) di(g)é(i')bus(j) Dó(h)mi(g)ni(i.) (,) a(i')bun(j)dán(h)ti(h)a(g') pa(h)cis,(g'_[oh:h]) (,) et(g) do(g')mi(f)ná(g)bi(f)tur.(e.) (::)};;71;;3b
+{name:Veritas de terra;annotation:8.c;mode:8;book:The Liber Usualis, 1961, p. 380 & In nocte nativitatis Domini, 1936, p. 25;transcriber:Andrew Hinkley;%%(c4) VE(j)ri(j)tas(i') *() de(h) ter(g_[uh:l]i)ra(h) or(g')ta(g) est,(f.) (;) et(f) ju(h)stí(j')ti(j)a(i') de(g) cae(i_[uh:l]j)lo(h') pro(h)spé(g.)xit.(g.) (::)};;84;;8c
+{name:Ipse invocabit me;annotation:6.;mode:6;book:The Liber Usualis, 1961, p. 384;transcriber:Andrew Hinkley;%%(c4) I(f)pse(f) in(f)vo(e)cá(g')bit(g) me,(h'_) *(,) al(f)le(f')lú(d){ia} :(c.) (;) Pa(f)ter(f) me(f)us(e') es(g) tu,(h'_) (,) al(h)le(h_g)lú(g){ja}.(f.) (::)};;88;;6
+(sed rubrica 1960 aut rubrica 1962){name:Ipse invocabit me;annotation:6.;mode:6;book:The Liber Usualis, 1961, p. 384;transcriber:Andrew Hinkley;%%(c4) I(f)pse(f) in(f)vo(e)cá(g')bit(g) me,(h'_) *(,) al(f)le(f')lú(d){ia} :(c.) (;) Pa(f)ter(f) me(f)us(e') es(g) tu,(h'_) (,) al(h)le(h_g)lú(g){ja}.(f.) (::)};;88(1-36);;6
+{name:Laetentur caeli;annotation:4.A;mode:4;book:The Liber Usualis, 1961, p. 387;transcriber:Andrew Hinkley;%%(c3) LAe(f)tén(e')tur(f) cae(h_i)li,(ii) *(,) et(h') ex(i)súl(j)tet(ih) ter(i_[oh:h])ra(i.) (;) an(f)te(i) fá(h')ci(g)em(f) Dó(f')mi(e)ni,(f_e) (,) quó(d_e)ni(f')am(h) ve(f.)nit.(f.) (::)};;95;;4-alt-A
+{name:Notum fecit Dominus alleluia;annotation:6.;mode:6;book:The Liber Usualis, 1961, p. 388;transcriber:Andrew Hinkley;%%(c4) NO(f)tum(f) fe(f)cit(e) Dó(g')mi(g)nus,(h'_) *(,) al(f)le(f')lú(d){ia},(c.) (;) sa(f)lu(f)tá(f)re(e') su(g)um,(h'_) (,) al(h)le(h_g)lú(g){ja}.(f.) (::)};;97;;6
 
 [Nocturn 1 Versum]
 {initial-style:0;%%(c3) V/. Tam(h)quam(h) spon(h)sus.(g_'/hvGF'E!fgf.) (::)
@@ -109,12 +75,7 @@ R/.Pa(h)ter(h) me(h)us(h) es(h) tu,(h) al(h)le(h)lú(h)ja.(g_'/hvGF'E!fgf.) (::)
 6 Párvulus enim natus est nobis, et fílius datus est nobis, et factus est principátus super húmerum ejus: et vocábitur nomen ejus, Admirábilis, Consiliárius, Deus, Fortis, Pater futúri sǽculi, Princeps pacis.
 
 [Responsory1]
-R. Hódie nobis cælórum Rex de Vírgine nasci dignátus est, ut hóminem pérditum ad cæléstia regna revocáret: 
-* Gaudet exércitus Angelórum: quia salus ætérna humáno géneri appáruit.
-V. Glória in excélsis Deo, et in terra pax homínibus bonæ voluntátis.
-R. Gaudet exércitus Angelórum: quia salus ætérna humáno géneri appáruit.
-V. Glória Patri, et Fílio, et Spirítui Sancto.
-R. Hódie nobis cælórum Rex de Vírgine nasci dignátus est, ut hóminem pérditum ad cæléstia regna revocáret: * Gaudet exércitus Angelórum: quia salus ætérna humáno géneri appáruit.
+R. {gabc:Tempora/Nativitatis/re--hodie_nobis_caelorum--solesmes_1961.1}
 
 [Lectio2]
 !Isa 40:1-8
@@ -128,10 +89,7 @@ R. Hódie nobis cælórum Rex de Vírgine nasci dignátus est, ut hóminem pérd
 8 exsiccátum est fœnum, et cécidit flos: Verbum autem Dómini nostri manet in ætérnum.
 
 [Responsory2]
-R. Hódie nobis de cælo pax vera descéndit: 
-* Hódie per totum mundum mellíflui facti sunt cæli.
-V. Hódie illúxit nobis dies redemptiónis novæ, reparatiónis antíquæ, felicitátis ætérnæ.
-R. Hódie per totum mundum mellíflui facti sunt cæli.
+R. {gabc:Tempora/Nativitatis/re--hodie_nobis_de_caelo--solesmes_1961.1}
 
 [Lectio3]
 !Isa 52:1-6
@@ -143,12 +101,7 @@ R. Hódie per totum mundum mellíflui facti sunt cæli.
 6 Propter hoc sciet pópulus meus nomen meum, in die illa: quia ego ipse qui loquébar, ecce adsum.
 
 [Responsory3]
-R. Quem vidístis, pastóres? dícite, annuntiáte nobis, in terris quis appáruit? 
-* Natum vídimus, et choros Angelórum collaudántes Dóminum.
-V. Dícite, quidnam vidístis? et annuntiáte Christi nativitátem.
-R. Natum vídimus, et choros Angelórum collaudántes Dóminum.
-&Gloria
-R. Natum vídimus, et choros Angelórum collaudántes Dóminum.
+R. {gabc:Tempora/Nativitatis/re--quem_vidistis--solesmes_1961.1}
 
 [Lectio4]
 Sermo sancti Leónis Papæ
@@ -156,30 +109,19 @@ Sermo sancti Leónis Papæ
 Salvátor noster, dilectíssimi, hódie natus est: gaudeámus. Neque enim fas est locum esse tristítiæ, ubi natális est vitæ: quæ, consúmpto mortalitátis timóre, nobis íngerit de promíssa æternitáte lætítiam. Nemo ab hujus alacritátis participatióne secérnitur. Una cunctis lætítiæ commúnis est rátio: quia Dóminus noster, peccáti mortísque destrúctor, sicut nullum a reátu líberum réperit, ita liberándis ómnibus venit. Exsúltet sanctus, quia appropínquat ad palmam: gáudeat peccátor, quia invitátur ad véniam: animétur gentílis, quia vocátur ad vitam. Dei namque Fílius secúndum plenitúdinem témporis, quam divíni consílii inscrutábilis altitúdo dispósuit, reconciliándam auctóri suo natúram géneris assúmpsit humáni, ut invéntor mortis diábolus, per ipsam, quam vícerat, vincerétur.
 
 [Responsory4]
-R. O magnum mystérium, et admirábile sacraméntum, ut animália vidérent Dóminum natum, jacéntem in præsépio: 
-* Beáta Virgo, cujus víscera meruérunt portáre Dóminum Christum.
-V. Ave, María, grátia plena: Dóminus tecum.
-R. Beáta Virgo, cujus víscera meruérunt portáre Dóminum Christum.
+R. {gabc:Tempora/Nativitatis/re--o_magnum_mysterium--solesmes_1961.1}
 
 [Lectio5]
 In quo conflíctu pro nobis ínito, magno et mirábili æquitátis jure certátum est, dum omnípotens Dóminus cum sævíssimo hoste non in sua majestáte, sed in nostra congréditur humilitáte: obíciens ei eándem formam, eandémque natúram, mortalitátis quidem nostræ partícipem, sed peccáti totíus expértem. Aliénum quippe ab hac nativitáte est, quod de ómnibus légitur: Nemo mundus a sorde, nec infans, cujus est uníus diéi vita super terram. Nihil ergo in istam singulárem nativitátem de carnis concupiscéntia transívit, nihil de peccáti lege manávit. Virgo régia Davídicæ stirpis elígitur, quæ sacro gravidánda fœtu, divínam humanámque prolem prius concíperet mente, quam córpore. Et ne supérni ignára consílii ad inusitátos pavéret affátus, quod in ea operándum erat a Spíritu Sancto, collóquio discit angélico: nec damnum credit pudóris, Dei Génetrix mox futúra.
 
 [Responsory5]
-R. Beáta Dei Génetrix María, cujus víscera intácta pérmanent: 
-* Hódie génuit Salvatórem sǽculi.
-V. Beáta, quæ crédidit: quóniam perfécta sunt ómnia, quæ dicta sunt ei a Dómino.
-R. Hódie génuit Salvatórem sǽculi.
+R. {gabc:Tempora/Nativitatis/re--beata_dei_genitrix--solesmes_1961.1}
 
 [Lectio6]
 Agámus ergo, dilectíssimi, grátias Deo Patri, per Fílium ejus in Spíritu Sancto: qui propter multam caritátem suam, qua diléxit nos, misértus est nostri: et cum essémus mórtui peccátis, convivificávit nos Christo, ut essémus in ipso nova creatúra, novúmque figméntum. Deponámus ergo véterem hóminem cum áctibus suis: et adépti participatiónem generatiónis Christi, carnis renuntiémus opéribus. Agnósce, o Christiáne, dignitátem tuam: et divínæ consors factus natúræ, noli in véterem vilitátem degéneri conversatióne redíre. Meménto, cujus cápitis et cujus córporis sis membrum. Reminíscere, quia érutus de potestáte tenebrárum, translátus es in Dei lumen et regnum.
 
 [Responsory6]
-R. Sancta et immaculáta virgínitas, quibus te láudibus éfferam, néscio: 
-* Quia quem cæli cápere non póterant, tuo grémio contulísti.
-V. Benedícta tu in muliéribus, et benedíctus fructus ventris tui.
-R. Quia quem cæli cápere non póterant, tuo grémio contulísti.
-&Gloria
-R. Quia quem cæli cápere non póterant, tuo grémio contulísti.
+R. {gabc:Tempora/Nativitatis/re--sancta_et_immaculata--solesmes.1}
 
 [Lectio7]
 Léctio sancti Evangélii secúndum Lucam
@@ -191,10 +133,7 @@ Homilía sancti Gregórii Papæ
 Quia, largiénte Dómino, Missárum solémnia ter hódie celebratúri sumus, loqui diu de evangélica lectióne non póssumus: sed nos áliquid vel bréviter dícere, Redemptóris nostri Natívitas ipsa compéllit. Quid est enim, quod nascitúro Dómino mundus descríbitur, nisi hoc, quod apérte monstrátur, quia ille apparébat in carne, qui eléctos suos adscríberet in æternitáte? Quo contra de réprobis per prophétam dícitur: Deleántur de libro vivéntium, et cum justis non scribántur. Qui bene étiam in Béthlehem náscitur: Béthlehem quippe domus panis interpretátur. Ipse namque est, qui ait: Ego sum panis vivus, qui de cælo descéndi. Locus ergo, in quo Dóminus náscitur, domus panis ántea vocátus est; quia futúrum profécto erat, ut ille ibi per matériam carnis apparéret, qui electórum mentes intérna satietáte refíceret. Qui non in paréntum domo, sed in via náscitur: ut profécto osténderet, quia per humanitátem suam, quam assúmpserat, quasi in aliéno nascebátur.
 
 [Responsory7]
-R. Beáta víscera Maríæ Vírginis, quæ portavérunt ætérni Patris Fílium: et beáta úbera, quæ lactavérunt Christum Dóminum: 
-* Qui hódie pro salúte mundi de Vírgine nasci dignátus est.
-V. Dies sanctificátus illúxit nobis: veníte, gentes, et adoráte Dóminum.
-R. Qui hódie pro salúte mundi de Vírgine nasci dignátus est.
+R. {gabc:Tempora/Nativitatis/re--beata_viscera--solesmes_1961.1}
 
 [Lectio8]
 Léctio sancti Evangélii secúndum Lucam
@@ -206,12 +145,7 @@ Homilía sancti Ambrósii Epíscopi
 Vidéte Ecclésiæ surgéntis exórdium: Christus náscitur, et pastóres vigiláre cœpérunt; qui géntium greges, pécudum modo ante vivéntes, in caulam Dómini congregárent, ne quos spiritálium bestiárum per offúsas nóctium ténebras pateréntur incúrsus. Et bene pastóres vígilant, quos bonus pastor infórmat. Grex ígitur pópulus, nox sǽculum, pastóres sunt sacerdótes. Aut fortásse étiam ille sit pastor, cui dícitur: Esto vígilans, et confírma. Quia non solum epíscopos ad tuéndum gregem Dóminus ordinávit, sed étiam Angelos destinávit.
 
 [Responsory8]
-R. Verbum caro factum est, et habitávit in nobis: 
-* Et vídimus glóriam ejus, glóriam quasi Unigéniti a Patre, plenum grátiæ et veritátis.
-V. Omnia per ipsum facta sunt, et sine ipso factum est nihil.
-R. Et vídimus glóriam ejus, glóriam quasi Unigéniti a Patre, plenum grátiæ et veritátis.
-&Gloria
-R. Et vídimus glóriam ejus, glóriam quasi Unigéniti a Patre, plenum grátiæ et veritátis.
+R. {gabc:Tempora/Nativitatis/re--verbum_caro--solesmes_1961.1}
 
 [Lectio9]
 Léctio sancti Evangélii secúndum Joánnem
@@ -224,11 +158,18 @@ Ne vile áliquid putáres quale consuevísti cogitáre, cum verba humána solér
 &teDeum
 
 [Ant Laudes_]
-Quem vidístis, * pastóres? dícite, annuntiáte nobis, in terris quis appáruit? Natum vídimus, et choros Angelórum collaudántes Dóminum, allelúja, allelúja.
-Génuit puérpera * Regem, cui nomen ætérnum, et gáudia matris habens cum virginitátis honóre: nec primam símilem visa est, nec habére sequéntem, allelúja.
-Angelus ad pastóres * ait: Annúntio vobis gáudium magnum: quia natus est vobis hódie Salvátor mundi, allelúja.
-Facta est cum Angelo * multitúdo cæléstis exércitus laudántium Deum, et dicéntium: Glória in excélsis Deo, et in terra pax homínibus bonæ voluntátis, allelúja.
-Párvulus fílius * hódie natus est nobis: et vocábitur Deus, Fortis, allelúja, allelúja.
+{name:Quem vidistis;annotation:2.;mode:2;book:The Liber Usualis, 1961, p. 395;transcriber:Andrew Hinkley;%%(f3) QUem(h_) vi(g')dí(h)stis,(fhg___) *(,) pa(e_[uh:l]f)stó(h')res?(g) dí(e)ci(g)te :(f.) (;) an(f)nun(e')ti(f)á(hg)te(e') no(g)bis,(f'_) (,) in(f) ter(e)ris(f) quis(h') ap(g)pá(e)ru(g)it?(f.) (:) Na(e_[uh:l]f)tum(h_g) ví(e)di(g)mus,(f.) (;) et(f) cho(e)ros(f) An(hg)ge(e')ló(h)rum(h.) (,) col(h)lau(i)dán(g')tes(h) Dó(f)mi(e)num,(f.) (;) al(f)le(e')lú(f){ia},(h') al(g)le(e)lú(gg){ia}.(f.) (::)};;;;2
+{name:Genuit puerpera Regem;annotation:2.;mode:2;book:The Liber Usualis, 1961, p. 396 & Liber antiphonarius, 1960, p. 264;transcriber:Andrew Hinkley;%%(f3) GE(h')nu(g)it(h) pu(f)ér(g')pe(f)ra(e') Re(g)gem,(f'_) *(,) cu(f)i(g) no(f_e)men(f) ae(h)tér(f_gF~'E~)num,(e.) (;) et(f) gáu(cf)di(f)a(f) ma(g')tris(f) ha(g_[uh:l]h)bens(kxiji/jkj.) (;) cum(j') vir(i)gi(h)ni(g)tá(h')tis(i) ho(g)nó(h_g)re :(f.) (:) nec(f) pri(h')mam(g) sí(h')mi(g)lem(f) vi(gf)sa(ef) est,(fv_EC.) (;) nec(e') ha(f)bé(h')re(e) se(g')quén(f)tem,(fv_EC') al(e)le(ef)lú(f.){ia}.(f.) (::)};;;;2
+{name:Angelus ad pastores;annotation:7.d;mode:7;book:The Liber Usualis, 1961, p. 397 & Liber antiphonarius, 1960, p. 264;transcriber:Andrew Hinkley;%%(c3) AN(e)ge(ei)lus(i'_[oh:h]) *(,) ad(i) pa(i)stó(i')res(h) a(i!jw!kv_[hl:1]JI)it :(i!jwk.) (;) An(h_i)nún(k'_[hl:1])ti(j)o(i') vo(j)bis(i) gáu(j_k)di(j)um(i') ma(j_)gnum :(i.) (;) qui(i')a(g) na(i_[uh:l]j)tus(i) est(h') vo(i)bis(h) hó(h_[oh:h]i_[oh:h]h_[oh:h])di(f!gwh)e(h'_) (,) Sal(e)vá(g_[uh:l]h)tor(f) mun(fe)di,(d) al(ef)le(f)lú(e.){ia}.(e.) (::)};;;;7d
+{name:Facta est;annotation:7.d;mode:7;book:The Liber Usualis, 1961, p. 398 & Liber antiphonarius, 1960, p. 265;transcriber:Andrew Hinkley;%%(c3) FA(e)cta(ei) est(i'_[oh:h]) *() cum(i) An(i')ge(h)lo(g'_[oh:h]) (,) mul(i)ti(i')tú(j)do(i') cae(i)lé(h_i)stis(g'_[oh:h]) ex(j)ér(j)ci(ih)tus(h'_) (;) lau(j)dán(j)ti(ih)um(h'_) et(g) di(h)cén(i_[uh:l]j)ti(i)um :(hf__) (,) Gló(g)ri(fe)a(e'_[oh:h]) in(e) ex(e)cél(fe~)sis(de) De(e)o,(e.) (;) et(e') in(e) ter(g')ra(h) pax(ijji) ho(ef)mí(f)ni(e_[uh:l]fE'D)bus(e_[oh:h][ll:1]d) (,) bo(d')nae(e) vo(f')lun(e)tá(fe)tis,(d) al(ef)le(f)lú(e.){ia}.(e.) (::)};;;;7d
+{name:Parvulus filius;annotation:8.G*;mode:8;book:The Liber Usualis, 1961, p. 399 & Liber antiphonarius, 1960, p. 265;transcriber:Andrew Hinkley;%%(c4) PAr(f)vu(fg)lus(g_[uh:l]h) fí(f)li(fg)us(g'_[oh:h]) *(,) hó(h)di(g')e(e) na(f_g)tus(e') est(f) no(d)bis :(d.) (;) et(c') vo(d)cá(f)bi(fg)tur(gff) De(h!iwj)us,(i_[uh:l]j) (,) for(g_[uh:l]h/ig~)tis,(h.) (;) al(h)le(g)lú(e'){ia},(f) al(gh)le(h)lú(g.){ia}.(g.) (::)};;;;8Gstar
+
+[Ant Laudes_] (rubrica monastica)
+{name:Quem vidistis pastores dicite;annotation:2.;mode:2;book:Antiphonale Monasticum, 1934, p. 240;transcriber:Dominique CROCHU;%%(f3) QUem(h_) vi(g')dí(h)stis,(fhg___) *(,) pa(e_f)stó(h')res ?(g) dí(e')ci(h)te :(h.) (;) an(g)nun(e')ti(f)á(g_h)te(f') no(g)bis,(f'_) (,) in(f) ter(e')ris(f) quis(h') ap(g)pá(e')ru(g)it ?(ff) (:) Na(e_f)tum(h_g) ví(e')di(g)mus,(f.) (;) et(f) cho(e')ros(f) An(h_g)ge(e')ló(h)rum(h.) (,) col(h)lau(i)dán(g')tes(h) Dó(f)mi(ef)num,(ff) (;) al(e)le(f')lú(h)ia,(g') al(e)le(eg)lú(f.)ia.(f.) (::)};;;;2
+{name:Genuit puerpera Regem;annotation:2.;mode:2;book:Antiphonale Monasticum, 1934, p. 240;transcriber:Dominique CROCHU;%%(f3) GE(h_)nu(g)it(h') pu(f)ér(g)pe(f)ra(e') Re(g)gem,(f'_) *(,) cu(e)i(ef) no(f_e)men(f) æ(h)tér(f_gF'~E~)num,(e.) (;) et(f) gáu(ef~)di(f)a(f) ma(g')tris(f) há(g_h)bens(iji/jkj.) (;) cum(j>) vir(i>')gi(h)ni(g')tá(h)tis(i') ho(g)nó(hv_GF)re :(f.) (:) nec(f) pri(h')mam(g) sí(h')mi(g)lem(f) vi(gf)sa(ef) est,(fv_EC.) (;) nec(e) ha(f)bé(f')re(e) se(g')quén(f_)tem,(fv_E~C_'~) al(e)le(ef)lú(f.)ia.(f.) (::)};;;;2
+{name:Angelus ad pastores ait;annotation:7.d;mode:7;book:Antiphonale Monasticum, 1934, p. 241;transcriber:Dominique CROCHU;%%(c3) AN(e)ge(ei)lus(i_') *(,) ad(i) pa(i)stó(i')res(h) a(i!jwk_JI)it :(i!jwk.) (,) An(h_i)nún(k_)ti(kj)o(i') vo(j)bis(i.) gáu(j_k)di(j)um(i') ma(j>)gnum :(i.) (;) qui(i)a(g) na(i_j)tus(i) est(h') vo(i)bis(g) hó(hih___)di(f!gwh)e(g'_) (,) Sal(e)vá(g_h)tor(f) mun(fe~)di,(d) al(ef)le(f)lú(e.)ia.(e.) (::)};;;;7d
+{name:Facta est cum Angelo;annotation:7.d;mode:7;book:Antiphonale Monasticum, 1934, p. 241;transcriber:Dominique CROCHU;%%(c3) FA(e)cta(ei) est(i'_) *() cum(i) An(i>')ge(h)lo(g.) (,) mul(i)ti(i)tú(j_k)do(i') cæ(i)lé(g_h)stis(g.) (;) ex(j)ér(j>_)ci(ih)tus(h') lau(j)dán(j>_)ti(ih)um(h'_) (,) et(g) di(h)cén(i_j)ti(i)um :(hf~) Gló(g)ri(fe)a(e'_) in(e) ex(e)cél(fe~)sis(de~) De(e.)o,(e.) (;) et(e) in(e') ter(g)ra(h') pax(ijji) ho(ef)mí(f)ni(e_fED'e)bus(e_d) (,) bo(d')næ(e) vo(f')lun(e)tá(fe)tis,(d) al(ef)le(f)lú(e.)ia.(e.) (::)};;;;7d
+{name:Parvulus filius;annotation:8.G2;mode:8;book:Antiphonale Monasticum, 1934, p. 242;transcriber:Dominique CROCHU;%%(c4) PAr(f)vu(fg)lus(g_h) fí(f)li(fg)us(g'_) *(,) hó(g)di(f)e(d) na(f_g)tus(e') est(f) no(d.)bis :(d.) (;) et(c) vo(d')cá(f)bi(fg)tur(ggf~) De(h!iwj)us,(j_i) for(ghwig~)tis,(h.) (;) al(g)le(g)lú(f_e)ia,(d_') al(f)le(gh)lú(g.)ia.(g.) (::)};;;;8G2
 
 [Capitulum Laudes]
 !Heb 1:1-2
@@ -236,49 +177,10 @@ Párvulus fílius * hódie natus est nobis: et vocábitur Deus, Fortis, allelúj
 $Deo gratias
 
 [Hymnus Laudes]
-{:H-Asolisortus:}v. A solis ortus cárdine
-Ad usque terræ límitem,
-Christum canámus Príncipem,
-Natum María Vírgine.
-_
-Beátus auctor sǽculi
-Servíle corpus índuit:
-Ut carne carnem líberans,
-Ne pérderet quos cóndidit.
-_
-Castæ Paréntis víscera
-Cæléstis intrat grátia:
-Venter Puéllæ bájulat
-Secréta, quæ non nóverat.
-_
-Domus pudíci péctoris
-Templum repénte fit Dei:
-Intácta nésciens virum,
-Concépit alvo Fílium.
-_
-Enítitur puérpera,
-Quem Gábriel prædíxerat,
-Quem ventre Matris géstiens,
-Baptísta clausum sénserat.
-_
-Fœno jacére pértulit:
-Præsépe non abhórruit:
-Et lacte módico pastus est,
-Per quem nec ales ésurit.
-_
-Gaudet chorus cæléstium,
-Et Angeli canunt Deo;
-Palámque fit pastóribus
-Pastor, Creátor ómnium.
-_
-Jesu, tibi sit glória,
-Qui natus es de Vírgine,
-Cum Patre, et almo Spíritu,
-In sempitérna sǽcula.
-Amen.
+{gabc:Tempora/Nativitatis/hy--a_solis_ortus_cardine--solesmes}
 
 [HymnusM Laudes]
-@:Hymnus Laudes:s/auctor/Auctor/ s/Concépit alvo/Verbo concépit/ s/Enítitur/Eníxa est/ s/ventre Matris/matris alvo/ s/Baptísta clausum/Clausus Joánnes/ s/Et lacte módico/Parvóque lacte/ s/Jesu, tibi sit glória/Glória tibi Dómine/ s/almo/Sancto/
+{gabc:Tempora/Nativitatis/hy--a_solis_ortus--solesmes_1934}
 
 [Versum 2]
 {initial-style:0;%%(c3) V/.No(h)tum(h) fe(h)cit(h) Dó(h)mi(h)nus,(h) al(h)le(h)lú(h)ja.(g_'/hvGF'E!fgf.) (::)
@@ -288,11 +190,15 @@ R/. Sa(h)lu(h)tá(h)re(h) su(h)um,(h) al(h)le(h)lú(h)ja.(g_'/hvGF'E!fgf.) (::)}
 R/. Sa(h)lu(h)tá(h)re(h) su(hi)um,(h_') (,) al(h)le(fe)lú(f_0h)ja.(hiHGhih.ghGFE'fggf.) (::)}
 
 [Ant 2]
-Glória in excélsis Deo, * et in terra pax homínibus bonæ voluntátis, allelúja, allelúja.
+{name:Gloria in excelsis;annotation:8.G;mode:8;book:The Liber Usualis, 1961, p. 402 & Liber antiphonarius, 1960, p. 267;transcriber:Andrew Hinkley;%%(c4) GLó(fg'h)ri(g)a(g') *(,) in(f) ex(g')cél(h)sis(g') De(h)o,(g_[uh:l]h) (;) et(f) in(g) ter(hg)ra(fg) pax(g'_[oh:h]) ho(h)mí(ij)ni(h)bus(g'_[oh:h]) (,) bo(h)nae(g') vo(f)lun(gh)tá(g)tis,(f.) (;) al(gh)le(fd)lú(e'){ia},(f) al(gh)le(h)lú(g.){ia}.(g.) (::)};;solemn8G
+(sed rubrica monastica)
+{name:Gloria in excelsis Deo;annotation:8.G2;mode:8;book:Antiphonale Monasticum, 1934, p. 243;transcriber:Dominique CROCHU;%%(c4) GLó(f_0gh)ri(g)a(g') *(,) in(f) ex(g')cél(h)sis(g') De(h)o,(gh..) (;) et(f) in(g) ter(hg)ra(fg) pax(g'_) ho(h)mí(i_j)ni(h)bus(g') (,) bo(h)næ(g') vo(f)lun(gh)tá(hg)tis,(f.) (;) al(gh)le(fe)lú(d>)ia,(f) al(gh)le(h)lú(g.)ia.(g.) (::)};;solemn8G2
 
 [Octava 2]
 !Commemoratio Octavæ Nativitatis
-Ant. Glória in excélsis Deo, et in terra pax homínibus bonæ voluntátis, allelúja, allelúja.
+Ant. {name:Gloria in excelsis;annotation:8.G;mode:8;book:The Liber Usualis, 1961, p. 402 & Liber antiphonarius, 1960, p. 267;transcriber:Andrew Hinkley;%%(c4) GLó(fg'h)ri(g)a(g') *(,) in(f) ex(g')cél(h)sis(g') De(h)o,(g_[uh:l]h) (;) et(f) in(g) ter(hg)ra(fg) pax(g'_[oh:h]) ho(h)mí(ij)ni(h)bus(g'_[oh:h]) (,) bo(h)nae(g') vo(f)lun(gh)tá(g)tis,(f.) (;) al(gh)le(fd)lú(e'){ia},(f) al(gh)le(h)lú(g.){ia}.(g.) (::)}
+(sed rubrica monastica)
+Ant. {name:Gloria in excelsis Deo;annotation:8.G2;mode:8;book:Antiphonale Monasticum, 1934, p. 243;transcriber:Dominique CROCHU;%%(c4) GLó(f_0gh)ri(g)a(g') *(,) in(f) ex(g')cél(h)sis(g') De(h)o,(gh..) (;) et(f) in(g) ter(hg)ra(fg) pax(g'_) ho(h)mí(i_j)ni(h)bus(g') (,) bo(h)næ(g') vo(f)lun(gh)tá(hg)tis,(f.) (;) al(gh)le(fe)lú(d>)ia,(f) al(gh)le(h)lú(g.)ia.(g.) (::)}
 _
 {initial-style:0;%%(c3) V/. No(h)tum(h) fe(h)cit(h) Dó(h)mi(h)nus,(h) al(h)le(h)lú(h)ja.(f.) (::)
 R/. Sa(h)lu(h)tá(h)re(h) su(h)um,(h) al(h)le(h)lú(h)ja.(f.) (::)}
@@ -308,12 +214,7 @@ $Per eumdem solemnis
 {(c3) Ip(h)si(h) per(h)í(h)bunt,(h) tu(h) au(h)tem(h) per(h)ma(h)né(h)bis;(f.) †(;) et(h) om(h)nes(h) sic(h)ut(h) ves(h)ti(h)mén(h)tum(h) ve(h)te(h)rá(h)scent:(h_') (,) et(h) vel(h)ut(h) a(h)míc(h)tum(h) mu(h)tá(h)bis(h) e(h)os,(h) et(h) mu(g)ta(f)bún(h hr)tur:(h.) *(;) tu(h) au(h)tem(h) i(h)dem(h) ip(h)se(h) es,(h) et(h) an(h)ni(h) tu(h)i(h) non(h) de(h)fí(h)ci(f)ent.(ef..) (::)}
 
 [Responsory Breve Tertia]
-R.br. Verbum caro factum est, * Allelúja, allelúja.
-R. Verbum caro factum est, * Allelúja, allelúja.
-V. Et habitávit in nobis.
-R. Allelúja, allelúja.
-&Gloria
-R. Verbum caro factum est, * Allelúja, allelúja.
+R.br. {gabc:Tempora/Nativitatis/rb--verbum_caro_factum_est--solesmes_1961.1}
 
 [Capitulum Sexta]
 !Heb 1:10
@@ -321,42 +222,36 @@ R. Verbum caro factum est, * Allelúja, allelúja.
 $Deo gratias
 
 [Responsory Breve Sexta]
-R.br. Notum fecit Dóminus, * Allelúja, allelúja.
-R. Notum fecit Dóminus, * Allelúja, allelúja.
-V. Salutáre suum.
-R. Allelúja, allelúja.
-&Gloria
-R. Notum fecit Dóminus, * Allelúja, allelúja.
+R.br. {gabc:Tempora/Nativitatis/rb--notum_fecit_dominus--solesmes_1961.1}
 
 [Versum Sexta]
 {initial-style: 0;%%(c3) V/. Vi(h)dé(h)runt(h) om(h)nes(h) fi(h)nes(h) ter(h)ræ,(h) al(h)le(h)lú(h)ja.(g_'/hvGF'E!fgf.) (::)
 R/.Sa(h)lu(h)tá(h)re(h) De(h)i(h) nos(h)tri,(h) al(h)le(h)lú(h)ja.(g_'/hvGF'E!fgf.) (::)}
 
 [Responsory Breve Nona]
-R.br. Vidérunt omnes fines terræ, * Allelúja, allelúja.
-R. Vidérunt omnes fines terræ, * Allelúja, allelúja.
-V. Salutáre Dei nostri.
-R. Allelúja, allelúja.
-&Gloria
-R. Vidérunt omnes fines terræ, * Allelúja, allelúja.
+R.br. {gabc:Tempora/Nativitatis/rb--viderunt_omnes--solesmes_1961.1}
 
 [Versum Nona]
 {initial-style: 0;%%(c3) V/. Ver(h)bum(h) ca(h)ro(h) fac(h)tum(h) est,(h) al(h)le(h)lú(h)ja.(g_'/hvGF'E!fgf.) (::)
 R/.Et(h) ha(h)bi(h)tá(h)vit(h) in(h) no(h)bis,(h) al(h)le(h)lú(h)ja.(g_'/hvGF'E!fgf.) (::)}
 
 [Ant Vespera 3]
-Tecum princípium * in die virtútis tuæ, in splendóribus sanctórum, ex útero ante lucíferum génui te.;;109
-Redemptiónem * misit Dóminus pópulo suo: mandávit in ætérnum testaméntum suum.;;110
-Exórtum est * in ténebris lumen rectis corde: miséricors, et miserátor, et justus Dóminus.;;111
-Apud Dóminum * misericórdia, et copiósa apud eum redémptio.;;129
-De fructu * ventris tui ponam super sedem tuam.;;131
+{name:Tecum principium;annotation:1.g;mode:1;book:The Liber Usualis, 1961, p. 412;transcriber:Andrew Hinkley;%%(c4) TE(f)cum(c') prin(d)cí(ixdh'!iv)pi(h_)um(h'_) *(,) in(h_) di(h_)e(hgh) vir(f_g)tú(gh)tis(fe) tu(d)ae,(d.) (;) in(f) splen(f)dó(f_g)ri(f)bus(c') san(d_)ctó(d_)rum,(c.) (;) ex(c) ú(f')te(f_)ro(f'_) (,) an(f)te(f) lu(f)cí(g_[uh:l]h)fe(f)rum(ec~) gé(d'_)nu(f)i(e) te.(d.) (::)};;109;;1g
+{name:Redemptionem misit;annotation:7.a;mode:7;book:The Liber Usualis, 1961, p. 412 & Liber antiphonarius, 1960, p. 271;transcriber:Andrew Hinkley;%%(c3) REd(e')em(e)pti(g')ó(i)nem(h') *() mi(f)sit(h) Dó(g')mi(f)nus(e'_[oh:h]) (,) pó(h)pu(h)lo(hf) su(h.)o :(g.) (;) man(i')dá(i)vit(i') in(h) ae(h)tér(iji)num(hg/hih.) (,) te(f)sta(e)mén(f!gwh_f~)tum(g_[oh:h]f~) su(e.)um.(e.) (::)};;110;;7a
+{name:Exortum est (Christmas);annotation:7.b;mode:7;book:The Liber Usualis, 1961, p. 412 & Liber antiphonarius, 1960, p. 271;transcriber:Andrew Hinkley;%%(c3) EX(g)ór(ig/ij)tum(i) est(i.) *(,) in(i_[uh:l]j) té(i)ne(hih)bris(hgh) (,) lu(hg)men(f') re(gh'i)ctis(f') cor(e)de :(e.) (;) mi(f)sé(h')ri(h)cors(h') et(h) mi(h)se(f')rá(h)tor,(gf) (,) et(e_[uh:l]f) ju(g')stus(f) Dó(e')mi(e)nus.(e.) (::)};;111;;7b
+{name:Apud Dominum misericordia;annotation:4.A*;mode:4;book:The Liber Usualis, 1961, p. 412 & Liber antiphonarius, 1960, p. 271;transcriber:Andrew Hinkley;%%(c3) A(e')pud(f) Dó(h)mi(hi)num(i.) *(,) mi(h_i)se(j)ri(ih)cór(i')di(i)a,(i.) (;) et(f_i) co(g')pi(h)ó(f_e)sa(f_e) (,) a(d')pud(e) e(gxf_g)um(h') red(h)ém(f')pti(f)o.(f.) (::)};;129;;4-alt-Astar
+{name:De fructu ventris tui;annotation:8.G;mode:8;book:The Liber Usualis, 1961, p. 412 & Liber antiphonarius, 1960, p. 272;transcriber:Andrew Hinkley;%%(c4) DE(g') fru(j)ctu(ig) *() ven(i_[uh:l]j)tris(h_g) tu(h_g)i(f_h) (;) po(j)nam(ig~) su(i)per(j) se(h)dem(h) tu(g.)am.(g.) (::)};;131;;8G
 
 [Ant 3]
-Hódie * Christus natus est: hódie Salvátor appáruit: hódie in terra canunt Angeli, lætántur Archángeli: hódie exsúltant justi, dicéntes: Glória in excélsis Deo, allelúja.
+{name:Hodie Christus natus est;annotation:1.g2;mode:1;book:The Liber Usualis, 1961, p. 413 & Chants of the Church, 1956, p. 98 & Liber antiphonarius, 1960, p. 272;transcriber:Andrew Hinkley;%%(c4) HO(f)di(gh)e(h.) *(,) Chri(ixh.g!hwi)stus(h') na(g)tus(fh) est :(h.) (;) hó(f)di(fg)e(g'_[oh:h]) (,) Sal(g)vá(g)tor(g) ap(gh)pá(h)ru(gf)it :(f.) (:) hó(f)di(gh)e(h'_) (,) in(h) ter(h)ra(hg) ca(ixi)nunt(h') An(g)ge(fh)li,(h'_) (;) lae(h)tán(hg)tur(ixi) Ar(h')chán(g)ge(fh)li :(h.) (:) hó(h)di(j)e(j_kJ'IH') (,) ex(h)súl(ixh.g!hwi)tant(h') ju(g)sti,(f_h) (,) dí(f)cen(h)tes :(g_[uh:l]h) (;) Gló(g_[uh:l]h)ri(fe)a(d) in(e') ex(f)cél(g_[uh:l]h)sis(g) De(fe)o,(dc) al(d)le(fe)lú(d.){ia}.(d.) (::)};;1g2
+(sed rubrica monastica)
+{name:Hodie Christus natus est;annotation:1.g2;mode:1;book:Antiphonale Monasticum, 1934, p. 249;transcriber:Dominique CROCHU;%%(c4) HO(f)di(gh)e(h.) *(,) Chri(ixh.g!hwi)stus(h') na(g)tus(fh) est :(h_') (,) hó(f)di(fg)e(g'_) Sal(g)vá(g)tor(f) ap(gh)pá(h_)ru(gf)it :(f.) (;) hó(f)di(gh)e(h'_) (,) in(h) ter(h)ra(hg) ca(ixi)nunt(h>') An(g)ge(fh)li,(h'_) (;) læ(f)tán(hhg~)tur(ixi) Ar(h>')chán(g>)ge(fh)li :(h.) (:) hó(h)di(j)e(jkj'___jvIH'_) ex(h)súl(ixh.g!hwi)tant(h>') ju(g)sti,(f_h) (,) dí(f)cen(h>)tes :(g_h) (;) Gló(g_h)ri(fv_ED)a(d') in(e) ex(f)cél(g_h)sis(g) De(fe)o,(dc) al(d)le(fe)lú(d.)ia.(d.) (::)};;1g2
 
 [Octava 3]
 !Commemoratio Octavæ Nativitatis
-Ant. Hódie Christus natus est: hódie Salvátor appáruit: hódie in terra canunt Angeli, lætántur Archángeli: hódie exsúltant justi, dicéntes: Glória in excélsis Deo, allelúja.
+Ant. {name:Hodie Christus natus est;annotation:1.g2;mode:1;book:The Liber Usualis, 1961, p. 413 & Chants of the Church, 1956, p. 98 & Liber antiphonarius, 1960, p. 272;transcriber:Andrew Hinkley;%%(c4) HO(f)di(gh)e(h.) *(,) Chri(ixh.g!hwi)stus(h') na(g)tus(fh) est :(h.) (;) hó(f)di(fg)e(g'_[oh:h]) (,) Sal(g)vá(g)tor(g) ap(gh)pá(h)ru(gf)it :(f.) (:) hó(f)di(gh)e(h'_) (,) in(h) ter(h)ra(hg) ca(ixi)nunt(h') An(g)ge(fh)li,(h'_) (;) lae(h)tán(hg)tur(ixi) Ar(h')chán(g)ge(fh)li :(h.) (:) hó(h)di(j)e(j_kJ'IH') (,) ex(h)súl(ixh.g!hwi)tant(h') ju(g)sti,(f_h) (,) dí(f)cen(h)tes :(g_[uh:l]h) (;) Gló(g_[uh:l]h)ri(fe)a(d) in(e') ex(f)cél(g_[uh:l]h)sis(g) De(fe)o,(dc) al(d)le(fe)lú(d.){ia}.(d.) (::)}
+(sed rubrica monastica)
+Ant. {name:Hodie Christus natus est;annotation:1.g2;mode:1;book:Antiphonale Monasticum, 1934, p. 249;transcriber:Dominique CROCHU;%%(c4) HO(f)di(gh)e(h.) *(,) Chri(ixh.g!hwi)stus(h') na(g)tus(fh) est :(h_') (,) hó(f)di(fg)e(g'_) Sal(g)vá(g)tor(f) ap(gh)pá(h_)ru(gf)it :(f.) (;) hó(f)di(gh)e(h'_) (,) in(h) ter(h)ra(hg) ca(ixi)nunt(h>') An(g)ge(fh)li,(h'_) (;) læ(f)tán(hhg~)tur(ixi) Ar(h>')chán(g>)ge(fh)li :(h.) (:) hó(h)di(j)e(jkj'___jvIH'_) ex(h)súl(ixh.g!hwi)tant(h>') ju(g)sti,(f_h) (,) dí(f)cen(h>)tes :(g_h) (;) Gló(g_h)ri(fv_ED)a(d') in(e) ex(f)cél(g_h)sis(g) De(fe)o,(dc) al(d)le(fe)lú(d.)ia.(d.) (::)}
 _
 {initial-style:0;%%(c3) V/. No(h)tum(h) fe(h)cit(h) Dó(h)mi(h)nus,(h) al(h)le(h)lú(h)ja.(f.) (::)
 R/. Sa(h)lu(h)tá(h)re(h) su(h)um,(h) al(h)le(h)lú(h)ja.(f.) (::)}
