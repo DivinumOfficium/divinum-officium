@@ -58,11 +58,7 @@ Luménque nox spirat novum,
 Quod nulla nox intérpolet
 Fidéque jugi lúceat.
 _
-Sit, Christe, rex piíssime,
-Tibi Patríque glória
-Cum Spíritu Paráclito,
-In sempitérna sæcula.
-Amen.
+@Psalterium/Doxologies:NatT
 
 [Versum 1]
 @Sancti/12-25:Ant Matutinum:2 s/^/V. / s/ \*/.\nR./ s/;;.*//
@@ -151,7 +147,7 @@ R. Plenum grátiæ et veritátis.
 @Sancti/12-25:Oratio
 
 [Versum Tertia]
-@Sancti/12-25:Versum 2
+@Sancti/12-25:Versum 2:s/, \w+\././g
 
 [Capitulum Sexta]
 @Sancti/12-25:Capitulum Vespera 1

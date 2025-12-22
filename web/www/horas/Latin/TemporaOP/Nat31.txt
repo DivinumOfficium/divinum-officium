@@ -1,0 +1,48 @@
+@Tempora/Nat31
+
+[Ant Matutinum]
+@Sancti/12-25::3 s/;;44/;;2/
+;;18
+;;44
+;;47
+;;71
+;;84
+;;88(2-37)
+;;95
+;;97
+
+[Lectio1]
+@Tempora/Nat05
+
+[Responsory1]
+@Sancti/12-25:Responsory5
+
+[Lectio2]
+@Tempora/Nat05::1-4 s/-9/-8/
+
+[Responsory2]
+@Sancti/12-25:Responsory7
+
+[Lectio3]
+@Tempora/Nat05::1
+@Tempora/Nat05:Lectio2:6 s/$/~/
+@Tempora/Nat05::2 s/9 //
+@Tempora/Nat05::3-4
+
+[Responsory3]
+@SanctiOP/12-25:Responsory9:1-4
+
+[Ant Laudes]
+@Sancti/12-25:Ant Laudes_:1 s/$/;;92;99;62;210;148/
+
+[Versum 2]
+@Sancti/12-25:Versum 1C
+
+[Ant 2]
+@Tempora/Nat26:Ant 1C
+
+[Versum Tertia]
+@SanctiOP/12-25:Nocturn 2 Versum
+
+[Ant 3]
+@Sancti/12-25:Ant LaudesC:4
