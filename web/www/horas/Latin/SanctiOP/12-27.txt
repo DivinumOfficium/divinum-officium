@@ -1,0 +1,69 @@
+@Sancti/12-27
+
+[Rule]
+Psalmi Dominica
+Antiphonas minores ex Psalterio
+Psalm5 Vespera=116
+Psalm5 Vespera3=138
+
+[Invit]
+Adorémus regem Apostolórum, * Qui privilégio amóris Joánnem diléxit Apóstolum.
+
+[Ant Matutinum]
+Joánnes, Apóstolus et Evangelísta, virgo est eléctus a Dómino, atque inter céteros magis diléctus.;;18
+Supra pectus Dómini Jesu recúmbens, Evangélii fluénta de ipso sacro Domínici péctoris fonte potávit.;;33
+Quasi unus de paradísi flumínibus, Evangelista Joánnes verbi Dei grátiam in toto terrárum orbe diffúdit.;;44
+In fervéntis ólei dólium missus Joánnes Apóstolus, divína se protegénte grátia, illæsus exívit.;;46
+Propter insuperábilem evangelizándi constántiam exsílio relegátus, divinæ visiónis et allocutiónis méruit crebra consolatióne relevári.;;60
+Occúrrit beáto Joánni, ab exsílio reverténti, omnis pópulus virórum ac mulierum, clamántium et dicéntium: Benedíctus qui venit in nómine Dómini.;;63
+Appáruit caro suo Joánni Dóminus Jesus Christus cum discípulis suis et ait illi: Veni, dilécte mi, ad me, quia tempus est ut epuléris in convívio meo cum frátribus tuis.;;74
+Expándens manus suas ad Deum dixit: Invitátus ad convivium tuum vénio, grátias agens, quia me dignátus es, Dómine Jesu Christe, ad tuas épulas invitáre: sciens quod ex toto corde meo desiderábam te.;;96
+Dómine, sús súscipe me, ut cum frátribus meis sim, cum quibus véniens invitásti me: áperi mihi jánuam vitæ et perduc me ad convivium epulárum tuárum: tu enim es Christus Filius Dei vivi, qui præcépto Patris mundum salvásti: tibi grátias reférimus per infiníta sæculórum sæcula.;;98
+
+[Lectio1]
+@Sancti/12-27::1-5 s/-5/-3/
+
+[Lectio2]
+@Sancti/12-27::1 s/6-10/4-7/
+@Sancti/12-27:Lectio1:6-7
+@Sancti/12-27::2-3
+
+[Lectio3]
+@Sancti/12-27:Lectio2:!2-3 s/6-10/8-10/
+
+[Responsory3]
+@Sancti/12-27::1-4
+&Gloria
+@Sancti/12-27::2 s/.* a /R. A /
+
+[Responsory6]
+R. Iste est Joánnes, qui supra pectus Dómini in cena recúbuit:
+* Beátus Apóstolus, cui reveláta sunt secréta cæléstia. 
+V. Iste est Joánnes, cui Christus in cruce Matrem virginem virgini commendávit.
+R. Beátus Apóstolus, cui reveláta sunt secréta cæléstia. 
+
+[Responsory7]
+@Sancti/12-27::s/illum diem/illa die/
+
+[Responsory8]
+@SanctiM/12-27::s/ Dóminus//
+
+[Responsory9]
+@Sancti/12-27:Responsory6
+
+[Ant Laudes]
+@Sancti/12-27::2
+@Sancti/12-27::3
+@Sancti/12-27::5
+@Sancti/12-27::4
+Sic eum volo manére, donec véniam: tu me séquere.
+
+[Versum 2]
+@Commune/C1
+
+[Versum 3]
+@Commune/C1:Versum 1
+
+[Ant 3]
+In médio ecclésiæ apéruit os ejus et implévit eum Dóminus spiritu sapiéntiæ et intelléctus, stoláque glóriæ induit eum, allelúja, allelúja, allelúja.
+

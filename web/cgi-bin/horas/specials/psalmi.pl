@@ -102,7 +102,7 @@ sub psalmi_minor {
     }
 
     if (
-      $version =~ /19(?:55|60)/
+      $version =~ /19(?:55|60|62)/
       && (
            $rule =~ /horas1960 feria/i
         || ($winner =~ /Sancti/i && $rank < 5)
