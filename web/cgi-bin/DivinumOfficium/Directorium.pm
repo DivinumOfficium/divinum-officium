@@ -201,7 +201,7 @@ sub transfered {
     if ($val =~ /$str/i && $transfer{$key} && $transfer{$key} !~ /v\s*$/i) { return $key; }
   }
 
-  return '';
+  return $_data{$version}{'tbase'} ? transfered($str, $year, $_data{$version}{'tbase'}) : '';
 }
 
 #*** check_coronatio($day, $month)
