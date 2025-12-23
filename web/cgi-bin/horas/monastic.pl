@@ -241,7 +241,7 @@ sub psalmi_matutinum_monastic {
         foreach my $ps0 (@psalm0) {
           $ps0 = "'$ps0,$psalmTone'";            # combine psalm tone with all psalms
         }
-        my $psalm0 = join(';', @psalm0);
+        $psalm0 = join(';', @psalm0);
       }
 
       $psalmline = "$ant0;;$psalm0";    # Recombine antiphone line
