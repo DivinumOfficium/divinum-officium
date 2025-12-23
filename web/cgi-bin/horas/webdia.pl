@@ -606,7 +606,7 @@ sub setcell {
         $text =~ s/<sp>\'(?:oe|œ)<\/sp>|oé/œ́/g;
         $text =~ s/\(\:\:\)\s*?<br\/?>\n/(::)\n/gi;     # remove wrong HTML linebreaks
         $text =~ s/;\s*?<br\/?>\n/;\n/gi;               # remove wrong HTML linebreaks
-        $text =~ s/%% <br\/?>\n/%%\n/gi;                # remove wrong HTML linebreaks
+        $text =~ s/%%<br\/?>\n/%%\n/gi;                 # remove wrong HTML linebreaks
         $text =~ s/%%\(/%%\n\(/gi;                      # insert break at end of header
         $text =~ s/;([a-z\%\(])/;\n$1/gi;               # insert break in header
         $text =~ s/(\(\:\:\)\}?) <br\/?>\n/$1 \n/gi;    # remove wrong HTML linebreaks
