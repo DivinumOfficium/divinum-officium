@@ -212,7 +212,7 @@ sub psalmi_matutinum {
   }
 
   #replace Psalm50 with breaking 49 to three parts
-  if ($laudes == 2 && $dayofweek == 3 && $version !~ /trident/i) {
+  if ($laudes == 2 && $dayofweek == 3 && $version !~ /trident/i && $winner !~ /12-24/i) {
     @psalmi = split("\n", $psalmi{"Day31"});
     setbuild2("Psalm #50 replaced by breaking #49");
   }
