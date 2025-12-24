@@ -1719,7 +1719,7 @@ sub precedence {
           && $winner{Rank} !~ /(Beatæ|Sanctæ) Mariæ/i
         )
         || $rule =~ /Laudes 2/i
-        || ($winner{Rank} =~ /vigil/i && $version !~ /19(?:55|60)/)
+        || ($winner{Rank} =~ /vigil/i && $version !~ /19(?:55|60)/ && $rule !~ /Psalmi Dominica/)
       )
       ? 2
       : 1;
