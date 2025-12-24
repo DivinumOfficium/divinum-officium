@@ -14,9 +14,6 @@ R. Hódie sciétis * Quia véniet Dóminus.
 [Responsory Vespera 1] (rubrica Barroux)
 @:RV1:s/Responsorium. O Juda/R. Judæa/ s/ \*/\n*/
 
-[Responsory Vespera 1] (rubrica cisterciensis)
-@:RV1
-
 [Responsory Vespera]
 @:Responsory Breve Tertia
 
@@ -37,13 +34,6 @@ Párvulus * fílius hódie natus est nobis: † et vocábitur Deus, Fortis, alle
 @:AntMatutinumM:3
 ;;263;264;265
 
-[Nocturn 2 Versum] (rubrica cisterciensis)
-V. Verbum caro factum est.
-R. Et habitávit in nobis.
-
-[Nocturn 3 Versum] (rubrica cisterciensis)
-@Sancti/12-25::s/, allel[uú][ij]a//gi
-
 [Lectio1]
 @Sancti/12-25:Lectio1
 
@@ -58,15 +48,9 @@ R. Et habitávit in nobis.
 
 [Responsory4]
 R. Descéndit de cælis Deus verus a Patre génitus, † introívit in úterum Vírginis, nobis ut apparéret visíbilis, indútus carne humána protoparénte édita:
-* Et exívit per portem clausam † Deus et homo, Lux et vita, cónditor mundi.
+* Et exívit per portam clausam † Deus et homo, Lux et vita, cónditor mundi.
 V. Tamquam sponsus † Dóminus procédens de thálamo suo.
-R. Et exívit per portem clausam † Deus et homo, Lux et vita, cónditor mundi.
-
-[Responsory4] (rubrica cisterciensis)
-<FONT COLOR=RED>Responsorium</FONT> Propter nímiam charitátem suam, qua diléxit nos Deus Pater, Fílium suum misit 
-* In similitúdinem carnis peccáti, ut omnes salváret.
-V. Ecce jam venit plenitúdo témporis, in quo misit Deus Fílium suum in terras, natum de Vírgine, factum sub lege.
-R. In similitúdinem carnis peccáti, ut omnes salváret.
+R. Et exívit per portam clausam † Deus et homo, Lux et vita, cónditor mundi.
 
 [Lectio5]
 @Sancti/12-25:Lectio4:s/Exsúltet .*//s
@@ -135,22 +119,15 @@ R. Cras egrediémini, et Dóminus erit vobíscum.
 
 [Responsory TertiaM]
 @Sancti/12-25:Versum Nona
-(sed rubrica cisterciensis)
-@Sancti/12-25:Nocturn 1 Versum
 
 [Responsory SextaM]
 @Sancti/12-25:Versum 2
-(sed rubrica cisterciensis)
-@:Nocturn 2 Versum
 
 [Responsory NonaM]
 @Sancti/12-25:Versum Sexta
-(sed rubrica cisterciensis)
-@:Nocturn 3 Versum
 
 [Ant Vespera 3]
 @Sancti/12-25::s/.*;;131//
-(sed rubrica cisterciensis omittitur)
 
 [Evangelium]
 @Sancti/09-08
