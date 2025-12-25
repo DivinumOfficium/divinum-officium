@@ -182,7 +182,13 @@ sub transfered {
   $str =~ s+Sancti(M|Cist|OP)?/++;
   return '' unless $str;
 
-  my %transfer = %{$_dCACHE{"transfer:$version:$year"}};
+  my $cache_key = "transfer:$version:$year";
+
+  no strict;
+
+  load_transfer($version, $year) unless is_cached $cache_key;
+
+  my %transfer = %{$_dCACHE{$cache_key}};
 
   while (my ($key, $val) = each %transfer) {
     next unless $val;
