@@ -1,0 +1,107 @@
+@Sancti/12-26
+
+[Rule]
+12 lectiones
+
+[Lectio1]
+@Sancti/12-26:Lectio1:s/-6/-4/ s/5 .*//s
+
+[Lectio2]
+@Sancti/12-26:Lectio1:2-20 s/1-6/5-7/ s/1 .*5 /5 /s
+@Sancti/12-26:Lectio2:2
+
+[Lectio3]
+@Sancti/12-26:Lectio2:1:s/7-10\;7\:54/7-11/
+@Sancti/12-26:Lectio2:3-5
+11 Tunc summisérunt viros, qui dícerent se audivísse eum dicéntem verba blasphémiæ in Móysen et in Deum.
+
+[Lectio4]
+!Act. 6:12-15;
+12 Commovérunt ítaque plebem, et senióres, et Scribas : et concurréntes rapuérunt eum, et adduxérunt in concílium,
+13 et statuérunt falsos testes, qui dícerent : Homo iste non cessat loqui verba advérsus locum sanctum, et legem:
+14 Audívimus enim eum dicéntem: Quóniam Jesus Nazarénus hic déstruet locum istum, et mutábit traditiónes, quas trádidit nobis Móyses.
+15 Et intuéntes eum omnes qui sedébant in concílio, vidérunt fáciem ejus tamquam fáciem Angeli.
+
+[Responsory1]
+@SanctiM/12-26:Responsory11
+
+[Responsory2]
+@Sancti/12-26:Responsory1:1-2
+V. Cum autem esset plenus Spíritu Sancto, et fide, beátus Stéphanus:
+@Sancti/12-26:Responsory1:4
+
+[Responsory3]
+@Sancti/12-26:Responsory2:1-2
+V. Et concurréntes rapuérunt eum, et adduxérunt in concílium:
+@Sancti/12-26:Responsory2:4
+
+[Responsory4]
+@Sancti/12-26::s/clamávit voce magna/beátus Stéphanus orábat/
+
+[Lectio5]
+@Sancti/12-26:Lectio4:s/Ille descéndit.*//
+
+[Responsory5]
+@Sancti/12-26:Responsory6
+
+[Lectio6]
+@Sancti/12-26:Lectio4:s/.* Ille descéndit/Ille descéndit/s s/$/~/
+@Sancti/12-26:Lectio5:s/Heri Christus.*//s
+
+[Responsory6]
+@Sancti/12-26:Responsory7:1-2
+@Sancti/12-26:Capitulum Laudes:2:s/v\./V./
+@Sancti/12-26:Responsory7:4
+
+[Lectio7]
+@Sancti/12-26:Lectio5:s/.* Heri Christus/Heri Christus/s s/$/~/
+@Sancti/12-26:Lectio6:s/Stéphanus ergo.*//s
+
+[Responsory7]
+R. Impetum fecérunt unanímiter in eum, et ejecérunt eum extra civitátem 
+* Invocántem et dicéntem: Dómine Jesu, áccipe spíritum meum.
+V. Et testes deposuérunt vestiménta sua secus pedes adulescéntis, qui vocabátur Saulus: et lapidábant eum,
+R. Invocántem et dicéntem: Dómine Jesu, áccipe spíritum meum.
+
+[Lectio8]
+@Sancti/12-26:Lectio6:s/.* Stéphanus ergo/Stéphanus ergo/s
+
+[Responsory8]
+R. Pretiósus athléta Dómini Stéphanus, pósitis génibus orávit, dicens: 
+* Dómine Jesu Christe, ne státuas illis hoc peccátum.
+V. Lapidábant Judæi Stéphanum: at ille orábat, dicens:
+R. Dómine Jesu Christe, ne státuas illis hoc peccátum.
+
+[Lectio9]
+@Sancti/12-26:Lectio7
+
+[Responsory9]
+@Sancti/12-26:Responsory3:s/Cum autem esset/Cumque aspíceret beátus/ s/plenus Spíritu Sancto, inténdens//
+
+[Lectio10]
+@Sancti/12-26:Lectio8:s/Alii Zacharíam patrem.*//s
+
+[Responsory10]
+@Sancti/12-26:Responsory8
+
+[Lectio11]
+@Sancti/12-26:Lectio8:s/.* Alii Zacharíam patrem/Alii Zacharíam patrem/s s/$/~/
+@Sancti/12-26:Lectio9:s/Cum ergo .*//s
+
+[Responsory11]
+R. Pósitis génibus, beátus Stéphanus clamávit voce magna, dicens: Dómine Jesu Christe, ne státuas illis hoc peccátum:
+* Et cum hoc dixísset, obdormívit in Dómino.
+V. Lapidábant Stéphanum invocántem et dicéntem: Dómine Jesu, áccipe spíritum meum:
+R. Et cum hoc dixísset, obdormívit in Dómino.
+
+[Lectio12]
+@Sancti/12-26:Lectio9:s/.* Cum ergo /Cum ergo /s
+
+[Responsory12]
+@SanctiOP/12-26:Responsory9:1-4
+
+[Evangelium]
+@Sancti/12-26
+
+[Ant Vespera 3]
+@Sancti/12-26:Ant Laudes
