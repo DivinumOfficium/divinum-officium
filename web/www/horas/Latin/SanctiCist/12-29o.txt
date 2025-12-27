@@ -4,6 +4,9 @@
 ex C2a-1;
 12 lectiones
 
+[Name]
+Thomam
+
 [Lectio1]
 @CommuneCist/C2
 
@@ -29,7 +32,7 @@ ex C2a-1;
 @CommuneCist/C2a
 
 [Lectio5]
-@Sancti/12-29:Lectio4
+@Sancti/12-29:Lectio4:s/Inde propínqui .*//
 
 [Lectio6]
 @Sancti/12-29:Lectio5: s/Quid dum .*//s
