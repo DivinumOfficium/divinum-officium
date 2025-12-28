@@ -1,8 +1,5 @@
 [Officium]
-Die III infra Octavam Nativitatis
-
-[Officium] (rubrica 196)
-Die tertia post Nativitatem
+Diei III infra Octavam Nativitatis
 
 [Rank]
 ;;Semiduplex;;2.1;;ex Sancti/12-25
@@ -19,6 +16,9 @@ ex Sancti/12-25;
 
 [Versum 1]
 @Sancti/12-25:Versum 3
+
+[Versum 2]
+@Sancti/12-25:Versum 2
 
 [Ant 1]
 @Sancti/12-25:Ant 3

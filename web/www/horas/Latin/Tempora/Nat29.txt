@@ -1,8 +1,5 @@
 [Officium]
-Die V infra Octavam Nativitatis
-
-[Officium] (rubrica 196)
-Die quinta post Nativitatem
+Diei V infra Octavam Nativitatis
 
 [Rank]
 ;;Semiduplex;;2.1;;ex Sancti/12-25
@@ -63,6 +60,9 @@ Incipit Epístola beáti Pauli Apóstoli ad Romános
 
 [Responsory3]
 @Sancti/12-25:Responsory4
+
+[Versum 2]
+@Sancti/12-25:Versum 2
 
 [Ant 2] (rubrica cisterciensis)
 @Tempora/Nat26

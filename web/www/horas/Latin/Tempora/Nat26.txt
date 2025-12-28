@@ -1,8 +1,5 @@
 [Officium]
-Die II infra Octavam Nativitatis
-
-[Officium] (rubrica 196)
-Die secunda post Nativitatem
+Diei II infra Octavam Nativitatis
 
 [Rank]
 ;;Semiduplex;;2.1;;ex Sancti/12-25
@@ -19,6 +16,9 @@ ex Sancti/12-25;
 
 [Versum 1]
 @Sancti/12-25:Versum 3
+
+[Versum 2]
+@Sancti/12-25:Versum 2
 
 [Ant 1C]
 Nésciens Mater Virgo virum, péperit sine dolóre Salvatórem sæculórum, ipsum Regem Angelórum sola Virgo lactábat úbere de cœlo pleno.
