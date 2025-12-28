@@ -1,0 +1,116 @@
+@Tempora/Nat1-0
+
+[Comment]
+This file is to be used when the Sunday falls on Dec 29.
+
+[Rule]
+12 lectiones
+ex SanctiCist/12-25
+Psalmi Feria
+Antiphonas horas
+
+[Versum 1] 
+@Tempora/Nat1-0
+
+[Ant Matutinum]
+@SanctiCist/12-25::6:s/98/20/
+;;21
+@Tempora/Epi1-0:Ant 3:s/$/;;22/
+;;23
+Nato Dómino, * Angelórum chorus canébat, dicens: Glória in excélsis Deo, et in terra pax homínibus bonæ voluntátis.;;24
+;;25
+@SanctiCist/12-25::2:s/86/26/
+;;27
+@SanctiCist/12-25:Ant Vespera 3:2:s/110/28/
+;;29
+@SanctiCist/12-25:Ant Vespera 3:3:s/111/30/
+;;31
+@SanctiCist/12-25::7
+
+[Ant Matutinum 3N]
+@SanctiCist/12-25
+
+[Nocturn 2 Versum]
+@SanctiCist/12-25
+
+[Nocturn 3 Versum]
+@SanctiCist/12-25
+
+[Lectio1]
+@Tempora/Nat29
+
+[Lectio2]
+@Tempora/Nat29::s/-12/-10/ s/11 .*//s
+
+[Lectio3]
+@Tempora/Nat29:Lectio2:s/8-12/11-13/ s/8 .*11 /11 /s
+@Tempora/Nat29:Lectio3:s/.*13 /13 /s s/14 .*//s
+
+[Lectio4]
+@Tempora/Nat29:Lectio3:s/13-/14-/ s/13 .*14 /14 /s
+
+[Responsory4]
+@SanctiCist/12-25:Responsory4
+
+[Lectio5]
+@Tempora/Nat1-0:Lectio4:s/Utrámque .*//s
+
+[Responsory5]
+@SanctiCist/12-25
+
+[Responsory6]
+@SanctiCist/12-25
+
+[Responsory7]
+@SanctiCist/12-25
+
+[Responsory8]
+@SanctiCist/12-25
+
+[Lectio6]
+@Tempora/Nat1-0:Lectio4:s/.* Utrámque /Utrámque /s s/$/~/
+@Tempora/Nat1-0:Lectio5:s/Nemo .*//s
+
+[Lectio7]
+@Tempora/Nat1-0:Lectio5:s/.* Nemo /Nemo /s s/$/~/
+@Tempora/Nat1-0:Lectio6:s/Quod .*//s
+
+[Lectio8]
+@Tempora/Nat1-0:Lectio6:s/.* Quod /Quod /s
+
+[Lectio9]
+@Tempora/Nat1-0:Lectio7
+
+[Lectio10]
+@Tempora/Nat1-0:Lectio8:s/Vivum .*//s
+
+[Lectio11]
+@Tempora/Nat1-0:Lectio8:s/.* Vivum /Vivum /s
+
+[Lectio12]
+@Tempora/Nat1-0:Lectio9
+
+[Responsory9]
+@SanctiCist/12-25
+
+[Responsory10]
+@SanctiCist/12-25
+
+[Responsory11]
+@SanctiCist/12-25
+
+[Responsory12]
+@SanctiCist/12-25
+
+[Ant Laudes]
+Génuit puérpera * Regem, cui nomen ætérnum, et gáudia matris habens cum virginitátis honóre: nec primam símilem visa est, nec habére sequéntem, allelúja.
+Angelus * ad pastóres ait: Annúntio vobis gáudium magnum: quia natus est vobis hódie Salvátor mundi, allelúia.
+Facta est * cum Angelo multitúdo cœléstis exércitus laudántium, et dicéntium: Glória in excélsis Deo, et in terra pax homínibus bonæ voluntátis, allelúia.
+Pastóres * loquébantur ad ínvicem: Transeámus usque Béthlehem, et videámus hoc Verbum quod factum est, quod Dóminus osténdit nobis, allelúia
+Et venérunt * festinántes: et invenérunt Maríam, et Joseph, et infántem pósitum in præsépio, allelúia.
+
+[Versum 2]
+@:Versum 1
+
+[Versum 3]
+@:Versum 1

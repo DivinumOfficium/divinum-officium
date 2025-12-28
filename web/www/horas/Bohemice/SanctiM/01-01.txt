@@ -1,37 +1,13 @@
-@Sancti/01-01
-
 [Rank] (rubrica 1963)
-Die Octavæ Nativitatis Domini;;Duplex I classis;;7;;ex SanctiM/12-25
-
-[Rule]
-12 lectiones
-no Commemoratio
-(sed rubrica cisterciensis omittitur)
-Lectio1 TempNat
-
-[Responsory Vespera 1]
-@Sancti/12-25:Responsory Breve Tertia
-(sed rubrica cisterciensis)
-@SanctiCist/12-25:Responsory4
-(sed rubrica Barroux)
-@Commune/C11:Responsory1
-
-[Versum 1]
-@Sancti/12-25:Versum 2
+Oktávu Narození Páně
 
 [AntMatutinumM]
-Suscépimus, * Deus, misericórdiam tuam † in médio templi tui.;;47
-Oriétur * in diébus Dómini abundántia pacis, † et dominábitur.;;71
-Véritas * de terra orta est, † et justítia de cælo prospéxit.;;84
+Přijali jsme, * Bože, tvé milosrdenství † uprostřed tvého chrámu.;;47
+Vzejde * ve dnech Hospodinových hojnost míru, † a on bude vládnout.;;71
+Pravda * vzešla ze země, † a spravedlnost shlédla z nebe.;;84
 
 [Ant Matutinum 3N]
-Beátus * venter qui te portávit, et beata úbera, † quæ te lactavérunt Dóminum et Salvatórem mundi, allelúja.;;263;264;265
-
-[Ant Matutinum]
-@Sancti/01-01::1-4
-@:AntMatutinumM
-@Sancti/01-01::5-9
-;;263;264;265
+Blažené * lůno, které tě nosilo, a blažená ňadra, † která tě kojila, Hospodina a Spasitele světa, alleluja.;;263;264;265
 
 [Responsory4]
 R. Hic qui advénit, nemo scit nomen ejus nisi ipse solus: † vocátur verbum Dómini habens vestem præcláram:
@@ -46,20 +22,20 @@ R. Et omnis chorus Angelórum in albis sequúntur eum.
 @Sancti/01-01:Responsory4
 
 [Lectio6]
-@Sancti/01-01:Lectio5:s/Et simíliter .*//s
+@Sancti/01-01:Lectio5:s/A podobně .*//s
 
 [Responsory6]
 @Sancti/01-01:Responsory5
 
 [Lectio7]
-@Sancti/01-01:Lectio5:s/.* Et simíliter /Et simíliter /s s/$/~/
-@Sancti/01-01:Lectio6:s/Déitas .*//s
+@Sancti/01-01:Lectio5:s/.* A podobně /A podobně /s s/$/~/
+@Sancti/01-01:Lectio6:s/Božství .*//s
 
 [Responsory7]
 @Sancti/01-01:Responsory6
 
 [Lectio8]
-@Sancti/01-01:Lectio6:s/.* Déitas /Déitas /s
+@Sancti/01-01:Lectio6:s/.* Božství /Božství /s
 
 [Responsory8]
 R. In própria venit, et sui eum non recepérunt: † quotquot autem recepérunt eum, dedit eis potestátem fílios Dei fíeri:
@@ -68,21 +44,21 @@ V. Si autem filii, et herédes: † herédes, quidem Dei, coherédes autem Chris
 R. Qui non ex sanguínibus, neque ex voluntáte carnis, neque ex voluntáte viri, sed ex Deo nati sunt.
 
 [Lectio9]
-@Sancti/01-01:Lectio7:s/Vides .*//s
+@Sancti/01-01:Lectio7:s/Vidíš, .*//s
 
 [Responsory9]
 @Sancti/12-25:Responsory6
 
 [Lectio10]
-@Sancti/01-01:Lectio7:s/.* Vides /Vides /s s/$/~/
-@Sancti/01-01:Lectio8:s/Dénique .*//s
+@Sancti/01-01:Lectio7:s/.* Vidíš, /Vidíš, /s s/$/~/
+@Sancti/01-01:Lectio8:s/A že to .*//s
 
 [Responsory10]
 @Sancti/01-01:Responsory8
 
 [Lectio11]
-@Sancti/01-01:Lectio8:s/.* Dénique /Dénique /s s/$/~/
-@Sancti/01-01:Lectio9:s/Nam si .*//s
+@Sancti/01-01:Lectio8:s/.* A že to /A že to /s s/$/~/
+@Sancti/01-01:Lectio9:s/Neboť pokud .*//s
 
 [Responsory11]
 R. Párvulus natus est nobis, et fílius datus est nobis, † et factus est principátus super húmerum ejus:
@@ -91,7 +67,7 @@ V. Multiplicabitur ejus imperium, † et pacis non erit finis.
 R. Et vocábitur Admirábilis, Deus Fortis.
 
 [Lectio12]
-@Sancti/01-01:Lectio9:s/.* Nam si /Nam si /s
+@Sancti/01-01:Lectio9:s/.* Neboť pokud /Neboť pokud /s
 
 [Responsory12]
 @Tempora/Nat1-0:Responsory8
