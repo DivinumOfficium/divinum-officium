@@ -513,11 +513,19 @@ sub psalmi_major {
   {
     $lim = 4;
 
-    if ($antiphones[4]) {    # if 5 psalms and antiphones are given
-      my ($a1, $p1) = split(/;;/, $antiphones[3]);               # split no. 4
-      my ($a2, $p2) = split(/;;/, $antiphones[4]);               # spilt no. 5
-      $antiphones[3] = "$a2;;$p1";                               # and say antiphone 5 with psalm no. 4
-      if (@psalmTones) { $psalmTones[3] = "$psalmTones[4]"; }    # and use the Tone of the 5th antiphone
+    # Ex 5 Antiphonæ et Psalmi fiunt 4
+    if ($antiphones[4]) {
+      if ($month == 12 && $day >= 25 && $day < 31) {
+
+        # On Dec 25, 27, and 29, we take the 4th Roman Ant. and Psalm (i.e. Apud Dmn; 129)
+        # On Dec 26, 28, and 30, we take the 5th Roman Ant. and Psalm (i.e. De fructu; 131)
+        $antiphones[3] = $antiphones[4] if $day !~ /2[579]/;
+      } else {
+        my ($a1, $p1) = split(/;;/, $antiphones[3]);               # split no. 4
+        my ($a2, $p2) = split(/;;/, $antiphones[4]);               # spilt no. 5
+        $antiphones[3] = "$a2;;$p1";                               # and say antiphone 5 with psalm no. 4
+        if (@psalmTones) { $psalmTones[3] = "$psalmTones[4]"; }    # and use the Tone of the 5th antiphone
+      }
     }
   }
 
