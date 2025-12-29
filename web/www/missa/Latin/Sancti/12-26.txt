@@ -12,10 +12,6 @@ Gloria
 Credo
 Prefatio=Nat
 
-[Oratio1]
-Omnípotens sempitérne Deus, qui primítias Mártyrum in beati Levítæ Stephani sánguine dedicásti: tríbue, quǽsumus; ut pro nobis intercéssor exsístat, qui pro suis étiam persecutóribus exorávit Dóminum nostrum Jesum Christum, Fílium tuum:
-$Qui tecum
-
 [Introitus]
 @Sancti/08-03
 
@@ -23,13 +19,23 @@ $Qui tecum
 Da nobis, quǽsumus, Dómine, imitári quod cólimus: ut discámus et inimícos dilígere; quia ejus natalícia celebrámus, qui novit étiam pro persecutóribus exoráre Dóminum nostrum Jesum Christum Fílium tuum:
 $Qui tecum
 
+[Oratio1]
+Omnípotens sempitérne Deus, qui primítias Mártyrum in beati Levítæ Stephani sánguine dedicásti: tríbue, quǽsumus; ut pro nobis intercéssor exsístat, qui pro suis étiam persecutóribus exorávit Dóminum nostrum Jesum Christum, Fílium tuum:
+$Qui tecum
+
 [Commemoratio Oratio]
-!Pro Octava Nativitatis
-Concéde, quǽsumus, omnípotens Deus: ut nos Unigéniti tui nova per carnem Natívitas líberet; quos sub peccáti jugo vetústa sérvitus tenet.
-$Per eundem
+!Pro Octava Nativitatis.
+@Sancti/12-25m3:Oratio
 
 [Lectio]
 @Sancti/08-03
+
+[GradualeP]
+Allelúja, allelúja.
+!Act 7:55.
+Vídeo cœlos apértos, et Jesum stantem a dextris virtútis Dei. Allelúja.
+!Ps 20:4.
+V. Posuísti, Dómine, super caput ejus corónam de lápide pretióso. Allelúja.
 
 [Graduale]
 !Ps 118:23; 118:86
@@ -39,13 +45,6 @@ Adjuva me, Dómine, Deus meus: salvum me fac propter misericórdiam tuam.
 Allelúja, allelúja.
 !Act 7:56
 V. Vídeo cœlos apértos, et Jesum stantem a dextris virtútis Dei. Allelúja.
-
-[GradualeP]
-Allelúja, allelúja.
-!Act 7:55.
-Vídeo cœlos apértos, et Jesum stantem a dextris virtútis Dei. Allelúja.
-!Ps 20:4.
-V. Posuísti, Dómine, super caput ejus corónam de lápide pretióso. Allelúja.
 
 [Tractus]
 !Ps 20:3-4
@@ -63,9 +62,8 @@ V. Posuísti in cápite ejus corónam de lápide pretióso.
 @Sancti/08-03
 
 [Commemoratio Secreta]
-!Pro Octava Nativitatis
-Obláta, Dómine, múnera, nova Unigéniti tui Nativitáte sanctífica: nosque a peccatórum nostrorum máculis emúnda.
-$Per eundem
+!Pro Octava Nativitatis.
+@Sancti/12-25m3:Secreta
 
 [Communio]
 @Sancti/08-03
@@ -74,6 +72,5 @@ $Per eundem
 @Sancti/08-03
 
 [Commemoratio Postcommunio]
-!Pro Octava Nativitatis
-Præsta, quǽsumus, omnípotens Deus: ut natus hodie Salvátor mundi, sicut divínæ nobis generatiónis est auctor; ita et immortalitátis sit ipse largítor:
-$Qui tecum
+!Pro Octava Nativitatis.
+@Sancti/12-25m3:Postcommunio

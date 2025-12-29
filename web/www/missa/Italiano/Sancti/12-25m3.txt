@@ -1,13 +1,6 @@
 [Rank]
 In die Nativitatis Domini;;Duplex I Classis;;7
 
-[Rule]
-Gloria
-Credo
-Prefatio=Nat
-celebranda aut missa prima aut missa secunda aut missa tertia
-(rubrica 1960) no Ultima Evangelium
-
 [Introitus]
 @Sancti/01-01
 
@@ -31,9 +24,6 @@ Inizio ++ del S. Vangelo secondo Giovanni.
 !Joann 1:1-14
 In principio era il Verbo, e il Verbo era presso Dio, e il Verbo era Dio. Egli era in principio presso Dio. Tutto è stato fatto per mezzo di Lui, e senza di Lui nulla è stato fatto di ciò che è fatto. In Lui era la vita e la vita era la luce degli uomini. E la luce splende tra le tenebre e le tenebre non l’hanno accolta. Ci fu un uomo mandato da Dio, il cui nome era Giovanni. Questi venne come testimonio, per rendere testimonianza alla luce, affinché tutti credessero per mezzo di lui. Egli non era la luce, ma era per rendere testimonianza alla luce. Era la luce vera che illumina ogni uomo che viene in questo mondo. Era nel mondo, e il mondo fu fatto per mezzo di Lui, e il mondo non lo conobbe. Venne nella sua casa, e i suoi non lo accolsero. Ma a quanti lo accolsero diede il potere di diventare figli di Dio: a loro che credono nel suo nome: i quali non da sangue, né da volere di carne, né da volere di uomo, ma da Dio sono nati. (Genuflettiamo) E il Verbo si fece carne (Ci alziamo), e abitò tra noi: e noi abbiamo visto la sua gloria, gloria come di Unigénito dal Padre, pieno di grazia e di verità..
 
-[Ultima Evangelium]
-@Tempora/Epi0-0:Evangelium
-
 [Offertorium]
 !Ps 88:12; 88:15
 Tuoi sono i cieli, e tua è la terra: tu hai fondato il mondo e quanto vi si contiene: giustizia ed equità sono le basi del tuo trono.
@@ -48,3 +38,6 @@ $Per eundem
 [Postcommunio]
 Fa, Te ne preghiamo, o Dio onnipotente, che il Salvatore del mondo, oggi nato, come è l’autore della nostra divina rigenerazione, così ci sia anche datore dell’immortalità.
 $Qui tecum
+
+[Ultima Evangelium]
+@Tempora/Epi0-0:Evangelium

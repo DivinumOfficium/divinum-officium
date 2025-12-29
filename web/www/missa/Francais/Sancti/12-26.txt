@@ -1,10 +1,6 @@
 [Officium]
 St Etienne Protomartyr
 
-[Oratio1]
-Dieu tout-puissant et éternel, qui avez consacré les prémices des martyrs dans le sang du bienheureux Lévite Étienne, accordez-nous, nous vous en prions, que celui-là soit pour nous un intercesseur, qui, même en faveur de ses persécuteurs, adressa ses prières à Notre-Seigneur Jésus-Christ, votre Fils.
-$Qui tecum
-
 [Introitus]
 !Ps 118:23; 118:86; 118:23
 v. Les chefs du peuple se sont assemblés ; ils m’ont accusé et m’ont persécuté injustement. Viens à mon aide, Seigneur mon Dieu, car ton serviteur s’est appliqué à observer tes commandements.
@@ -17,15 +13,25 @@ v. Les chefs du peuple se sont assemblés ; ils m’ont accusé et m’ont pers�
 Nous vous en prions, Seigneur, aidez-nous à imiter celui que nous célébrons : nous apprendrons ainsi à aimer nos ennemis puisque nous fêtons la naissance au ciel de celui qui a su, même pour ses bourreaux prier notre Seigneur Jésus-Christ.
 $Qui tecum
 
+[Oratio1]
+Dieu tout-puissant et éternel, qui avez consacré les prémices des martyrs dans le sang du bienheureux Lévite Étienne, accordez-nous, nous vous en prions, que celui-là soit pour nous un intercesseur, qui, même en faveur de ses persécuteurs, adressa ses prières à Notre-Seigneur Jésus-Christ, votre Fils.
+$Qui tecum
+
 [Commemoratio Oratio]
-!Pro Octava Nativitatis
-Nous vous en prions, Dieu tout puissant, que votre Fils éternel, par sa nouvelle naissance en notre chair, vienne nous délivrer de l’ancien esclavage qui nous maintient sous le joug du péché.
-$Per eundem
+!Pro Octava Nativitatis.
+@Sancti/12-25m3:Oratio
 
 [Lectio]
 Lectio Actuum Apostolorum.
 !Act 6:8-10; 7:54-59
 En ces jours là : Étienne, plein de grâce et de force, faisait des prodiges et de grands miracles parmi le peuple. Mais il se leva des gens de la synagogue dite des Affranchis, et des Cyrénéens, et des Alexandrins, et de ceux de Cilicie et d’Asie, qui disputèrent avec Étienne ; et ils ne pouvaient résister à sa sagesse ni à l’Esprit par lequel il parlait. En l’entendant paroles, ils avaient le cœur exaspéré, et ils grinçaient des dents contre lui. Mais (Étienne), qui était rempli de l’Esprit-Saint, ayant fixé les yeux au ciel, vit la gloire de Dieu et Jésus debout à la droite de Dieu, et il dit : « Voici que je vois les cieux ouverts et le Fils de l’homme debout à la droite de Dieu.» Ils poussèrent de grands cris, se bouchèrent les oreilles et se jetèrent tous ensemble sur lui ; et après l’avoir entraîné hors de la ville, ils le lapidèrent. Les témoins déposèrent leurs vêtements aux pieds d’un jeune homme nommé Saul. Pendant qu’ils lapidaient Étienne, il priait disant : « Seigneur Jésus, recevez mon esprit !» S’étant mis à genoux, il s’écria d’une voix forte : « Seigneur, ne leur imputez pas ce péché !» Et, cela dit, il mourut.
+
+[GradualeP]
+Alléluia, alléluia.
+!Act 7:55.
+Je vois les cieux ouverts et Jésus debout à la droite du Dieu tout puissant. Alléluia.
+!Ps 20:4.
+V. Seigneur, vous avez mis sur sa tête une couronne de pierres précieuses. Alléluia.
 
 [Graduale]
 !Ps 118:23; 118:86
@@ -34,13 +40,6 @@ Les chefs du peuple se sont assemblés ; ils m’ont accusé et m’ont persécu
 Viens à mon aide, Seigneur mon Dieu,. Dauve-moi dans ta grande miséricorde. Alléluia, alléluia.
 !Act 7:55.
 V. Je vois les cieux ouverts et Jésus debout à la droite du Dieu tout puissant. Alléluia.
-
-[GradualeP]
-Alléluia, alléluia.
-!Act 7:55.
-Je vois les cieux ouverts et Jésus debout à la droite du Dieu tout puissant. Alléluia.
-!Ps 20:4.
-V. Seigneur, vous avez mis sur sa tête une couronne de pierres précieuses. Alléluia.
 
 [Tractus]
 !Ps 20:3-4
@@ -62,9 +61,8 @@ Seigneur, acceptez ces offrandes en mémoire de vos saints. Comme le martyre leu
 $Per Dominum
 
 [Commemoratio Secreta]
-!Pro Octava Nativitatis
-Sanctifiez ces offrandes, Seigneur, par la nouvelle naissance de votre Fils unique, et purifiez-nous des souillures de nos péchés.
-$Per eundem
+!Pro Octava Nativitatis.
+@Sancti/12-25m3:Secreta
 
 [Communio]
 !Act 7:55; 7:58; 7:59
@@ -75,6 +73,5 @@ Nous avons reçu votre sacrement, Seineur. Puisse-t-il nous apporter votre secou
 $Per Dominum
 
 [Commemoratio Postcommunio]
-!Pro Octava Nativitatis
-Dieu tout puissant, le Sauveur du monde, qui est né aujourd’hui, nous a fait naître à la vie divine. Faites, nous vous en prions, qu’il nous accorde aussi le don de l’immortalité.
-$Qui tecum
+!Pro Octava Nativitatis.
+@Sancti/12-25m3:Postcommunio

@@ -1,11 +1,8 @@
 [Officium]
 Dzień VI w Oktawie Bożego Narodzenia
 
-[Rule]
-ex Sancti/12-25m3;
-Gloria
-Credo
-Prefatio=Nat
+[Officium] (rubrica 196)
+Dzień VI po Bożym Narodzeniu
 
 [Introitus]
 @Sancti/12-25m3:Introitus
@@ -13,23 +10,8 @@ Prefatio=Nat
 [Oratio]
 @Sancti/12-25m3:Oratio
 
-[Lectio]
-@Sancti/12-25m2:Lectio
-
-[Graduale]
-@Sancti/12-25m3:Graduale
-
-[Evangelium]
-@Sancti/12-25m2:Evangelium
-
 [Offertorium]
 @Sancti/12-25m3:Offertorium
 
-[Secreta]
-@Sancti/12-25m3:Secreta
-
 [Communio]
 @Sancti/12-25m3:Communio
-
-[Postcommunio]
-@Sancti/12-25m3:Postcommunio

@@ -1,13 +1,6 @@
 [Rank]
 In die Nativitatis Domini;;Duplex I Classis;;7
 
-[Rule]
-Gloria
-Credo
-Prefatio=Nat
-celebranda aut missa prima aut missa secunda aut missa tertia
-(rubrica 1960) no Ultima Evangelium
-
 [Introitus]
 @Tempora/Nat30
 
@@ -34,9 +27,6 @@ In het begin was het Woord, en het Woord was bij God, en het Woord was God. Dit 
 Er kwam een mens, door God gezonden; Johannes was zijn naam. Deze kwam om te getuigen, om getuigenis te geven van het Licht, opdat allen zouden geloven door hem. Hij zelf was niet het Licht, maar hij moest getuigen van het Licht.
 Dit was het ware Licht, dat ieder mens verlicht, die komt in deze wereld. Het was in de wereld, en de wereld is door Hem gemaakt, maar de wereld erkende Hem niet. Tot de zijnen kwam Hij, maar de zijnen ontvingen Hem niet. Allen echter, die Hem ontvingen, hen stelde Hij in staat om kinderen te worden van God, hen, die geloven in zijn Naam; en zij werden niet uit bloed, of uit de lust van het vlees, of uit de wil van een man, maar uit God geboren. (Hier knielt men.) En het Woord is vlees geworden, en Het heeft onder ons gewoond. En wij hebben zijn heerlijkheid aanschouwd, een heerlijkheid als van de Eengeborene des Vaders, vol van genade en waarheid.
 
-[Ultima Evangelium]
-@Sancti/01-06:Evangelium
-
 [Offertorium]
 @Tempora/Nat30
 
@@ -50,3 +40,6 @@ $Per eundem
 [Postcommunio]
 Wij vragen U, almachtige God, laat de Redder der wereld, die vandaag geboren is, en in ons het goddelijk leven heeft verwekt, ons zo ook de onsterfelijkheid schenken.
 $Qui tecum
+
+[Ultima Evangelium]
+@Sancti/01-06:Evangelium
