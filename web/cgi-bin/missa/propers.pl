@@ -270,12 +270,12 @@ sub oratio {
       $retvalue .= "$oremusflag$w\n";
       $oremusflag = "";
     } else {
-      setcc($w, 3, %c);
+      setcc($w, 3, \%c);
     }
   } elsif ($transfervigil) {
     my %ctv = %{setupstring($lang, "$transfervigil")};
     $w .= $ctv{"$type Vigilia"};
-    setcc($w, 3, %c);
+    setcc($w, 3, \%c);
   }
 
   # add IV Temporum lectio/gradual/collect  (LectioLn) for the main oration
@@ -287,6 +287,7 @@ sub oratio {
   if ($commemoratio1 && $rank < 6) {
     $w = getcommemoratio($commemoratio1, $type, $lang);
     setcc($w, 1, setupstring($lang, $commemoratio1)) if $w;
+    setbuild2("Commemoratio: $commemoratio1") if $type =~ /Oratio/i;
   }
 
   our @commemoentries;
@@ -303,7 +304,7 @@ sub oratio {
         || ($commemo =~ /Tempora/i && $c{Rank} =~ /;;[234]/))
     ) {
       $w = getcommemoratio($commemo, $type, $lang);
-      setcc($w, 2, %c) if $w;
+      setcc($w, 2, \%c) if $w;
     }
   }
 
@@ -364,7 +365,7 @@ sub setcc {
   my $str = shift;
   my $code = shift;
   my $s = shift;
-  my %s = %$s;
+  my %c = %$s;
   my $key = 90;
 
   our @dayname;
@@ -382,30 +383,32 @@ sub setcc {
       && nooctnat());
   if ($version =~ /1955|196/ && $ccind >= 3) { return; }
 
-  if ($s{Rank} =~ /Dominica/i && $code < 10) {
+  if ($c{Rank} =~ /Dominica/i && $code < 10) {
     $key = 10;
   }    #Dominica=10
-  elsif ($s{Rank} =~ /;;Feria/i && $s{Rank} =~ /;;[23456]/) {
+  elsif ($c{Rank} =~ /;;Feria/i && $s{Rank} =~ /;;[23456]/) {
     $key = 50;
   }    #Feria major=50
-  elsif ($s{Rank} =~ /infra Octav/i) {
+  elsif ($c{Rank} =~ /infra Octav/i) {
     $key = 40;
   }    #infra octavam=4000
-  elsif ($s{Rank} =~ /Vigilia com/i || ($code % 10) == 3) {
+  elsif ($c{Rank} =~ /Vigilia com/i || ($code % 10) == 3) {
     $key = 60;
   }    #vigilia communis
-  elsif ($s{Rank} =~ /;;([2-7])/ && $code < 10) {
+  elsif ($c{Rank} =~ /;;([2-7])/ && $code < 10) {
     $key = 30 + (8 - $1);
-  } elsif ($s{Rank} =~ /;;1/ || $code >= 10) {
+  } elsif ($c{Rank} =~ /;;1/ || $code >= 10) {
     $key = 80;
     $key = 99 if world_mission_sunday();
   }    #Simplex=80;
-  if ($s{Rule} =~ /Comkey=([0-9]+)/i) { $key = $1; }    #oct day Epi Cor = 20, simpl=70
+  if ($c{Rule} =~ /Comkey=([0-9]+)/i) { $key = $1; }    #oct day Epi Cor = 20, simpl=70
 
   if (($code % 10) != 1) {
     $key .= '0';
   }                                                     #concurrent
-  else { $key .= '1'; }                                 #occurrent
+  else {
+    $key .= '1';
+  }                                                     #occurrent
   $key .= "$ccind";
   $ccind++;
   $cc{$key} = $str;
