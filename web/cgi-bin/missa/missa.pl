@@ -91,6 +91,7 @@ our $command = strictparam('command');
 our $browsertime = strictparam('browsertime');
 our $searchvalue = strictparam('searchvalue');
 our $content = strictparam('content');    # if set output only content wihout html headers menus etc
+our $buildscript = '';                    #build script
 
 if (!$searchvalue) { $searchvalue = '0'; }
 our $missanumber = strictparam('missanumber');
@@ -211,6 +212,7 @@ PrintTag
   my $propname = ($Propers) ? 'Full' : 'Propers';
   print qq(<P ALIGN=CENTER><FONT SIZE=+1>\n<A HREF=# onclick="hset('Propers')">$propname</A>\n</FONT></P>\n);
   print "<P ALIGN=CENTER><FONT SIZE=+1>\n" . bottom_links_menu() . "</FONT>\n</P>\n";
+  if ($building && $buildscript) { print buildscript($buildscript); }
 }
 
 #common end for programs
@@ -421,3 +423,17 @@ sub setmissanumber {
   }
   return $str;
 }
+
+sub buildscript {
+  local ($_) = @_;
+  s/[\n]+/<br\/>/g;
+  s/\_//g;
+  s/\,\,\,/\&ensp\;/g;
+  return <<"PrintTag";
+<TABLE $background BORDER="3" ALIGN="CENTER" WIDTH="60%" CELLPADDING="8"><TR><TD>
+$_
+</TD></TR><TABLE><br/>
+PrintTag
+}
+
+1;
