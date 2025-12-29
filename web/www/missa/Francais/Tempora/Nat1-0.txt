@@ -1,12 +1,6 @@
 [Officium]
 Dominica Infra Octavam Nativitatis
 
-[Rule]
-Gloria
-Credo
-Prefatio=Nat
-no commemoratio (rubrica 1960)
-
 [Introitus]
 !Sap 18:14-15.
 v. Tandis qu'un profond silence enveloppait toutes choses, et que la nuit atteignait le milieu de sa course, du haut des cieux votre Parole toute-puissante, Seigneur, s'élança du trône royal.
@@ -20,9 +14,8 @@ Dieu éternel et tout-puissant, dirigez nos actes selon votre bon plaisir, afin 
 $Qui tecum
 
 [Commemoratio Oratio] (nisi rubrica 1960)
-!Pro Octava Nativitatis:
-Faites, Dieu tout-puissant, que, source de la vie nouvelle, la naissance de votre Fils unique en notre chair nous délivre, nous que l'antique escalavage tient sous le joug du péché.
-$Per eundem
+!Pro Octava Nativitatis.
+@Sancti/12-25m3:Oratio
 
 [Lectio]
 Lectio Epístolæ beati Pauli Apóstoli ad Gálatas.
@@ -50,9 +43,8 @@ Faites, Dieu tout-puissant, que cette offrande présentée aux regards de votre 
 $Per Dominum
 
 [Commemoratio Secreta] (nisi rubrica 1960)
-!Pro Octava Nativitatis:
-Sanctifiez, Seigneur, par la naissance de votre Fils unique, source de la vie nouvelle, ces dons qui vous sont offerts, et daignez laver les souillures de nos péchés.
-$Per eundem
+!Pro Octava Nativitatis.
+@Sancti/12-25m3:Secreta
 
 [Communio]
 !Matt 2:20
@@ -63,6 +55,5 @@ Par l'action de ce sacrement, Seigneur, que nos mauvais penchants soient extirp�
 $Per Dominum
 
 [Commemoratio Postcommunio] (nisi rubrica 1960)
-!Pro Octava Nativitatis:
-Faites, Dieu tout-puissant, que le Sauveur du monde, né aujourd'hui pous nous engendrer à la vie divine, soit un jour aussi pour nous le dispensateur de l'immortalité.
-$Qui tecum
+!Pro Octava Nativitatis.
+@Sancti/12-25m3:Postcommunio

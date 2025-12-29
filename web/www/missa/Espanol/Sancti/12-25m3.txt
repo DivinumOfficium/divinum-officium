@@ -1,13 +1,6 @@
 [Rank]
 In die Nativitatis Domini;;Duplex I Classis;;7
 
-[Rule]
-Gloria
-Credo
-Prefatio=Nat
-multiple3
-(rubrica 1960) no Ultima Evangelium
-
 [Introitus]
 @Sancti/01-01
 
@@ -31,9 +24,6 @@ Continuación ++ del santo Evangelio según San Juan
 !Jn 1:1-14
 En el principio existía el Verbo, y el Verbo estaba junto a Dios, y el Verbo era Dios. Él estaba en el principio junto a Dios. Por medio de él se hizo todo, y sin él no se hizo nada de cuanto se ha hecho. En él estaba la vida, y la vida era la luz de los hombres. Y la luz brilla en la tiniebla, y la tiniebla no lo recibió. Surgió un hombre enviado por Dios, que se llamaba Juan: este venía como testigo, para dar testimonio de la luz, para que todos creyeran por medio de él. No era él la luz, sino el que daba testimonio de la luz. El Verbo era la luz verdadera, que alumbra a todo hombre, viniendo al mundo. En el mundo estaba; el mundo se hizo por medio de él, y el mundo no lo conoció. Vino a su casa, y los suyos no lo recibieron. Pero a cuantos lo recibieron, les dio poder de ser hijos de Dios, a los que creen en su nombre. Estos no han nacido de sangre, ni de deseo de carne, ni de deseo de varón, sino que han nacido de Dios. [Genuflexión] Y el Verbo se hizo carne y habitó entre nosotros, y hemos contemplado su gloria: gloria como del Unigénito del Padre, lleno de gracia y de verdad.
 
-[Ultima Evangelium]
-@:Evangelium
-
 [Offertorium]
 !Ps 88:12, 15
 Tuyos son los cielos y tuya es la tierra; el mundo y cuanto contiene tú lo cimentaste; la justicia y la equidad son el apoyo de tu trono.
@@ -48,3 +38,6 @@ $Per eumdem
 [Postcommunio]
 Concede, te rogamos, oh Dios omnipotente, que, nacido hoy el Salvador del, mundo, así como es para nosotros el autor de la generación divina, sea él también el dador de la inmortalidad.
 $Qui tecum
+
+[Ultima Evangelium]
+@:Evangelium

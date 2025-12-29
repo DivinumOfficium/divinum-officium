@@ -1,13 +1,6 @@
 [Rank]
 In die Nativitatis Domini;;Duplex I Classis;;7
 
-[Rule]
-Gloria
-Credo
-Prefatio=Nat
-multiple3
-(rubrica 1960) no Ultima Evangelium
-
 [Introitus]
 @Sancti/01-01
 
@@ -31,9 +24,6 @@ Continuation ++ of the Holy Gospel according to John
 !John 1:1-14
 In the beginning was the Word, and the Word was with God; and the Word was God. He was in the beginning with God. All things were made through Him, and without Him was made nothing that has been made. In Him was life, and the life was the light of men. And the light shines in the darkness; and the darkness grasped it not. There was a man, one sent from God, whose name was John. This man came as a witness, to bear witness concerning the light, that all might believe through him. He was not himself the light, but was to bear witness to the light. It was the true light that enlightens every man who comes into the world. He was in the world, and the world was made through Him, and the world knew Him not. He came unto His own, and His own received Him not. But to as many as received Him He gave the power of becoming sons of God; to those who believe in His name: who were born not of blood, nor of the will of the flesh, nor of the will of man, but of God. And the Word was made flesh (Genuflect), and dwelt among us. And we saw His glory - glory as of the Only-begotten of the Father - full of grace and of truth.
 
-[Ultima Evangelium]
-@:Evangelium
-
 [Offertorium]
 !Ps 88:12, 15
 Yours are the heavens, and Yours is the earth; the world and its fullness You have founded. Justice and judgment are the foundation of Your throne.
@@ -48,3 +38,6 @@ $Per eumdem
 [Postcommunio]
 Grant, we beseech You, almighty God, that the Saviour of the world, born this day, Who is the author of our birth in godliness, may bestow on us immortal life.
 $Qui tecum
+
+[Ultima Evangelium]
+@:Evangelium

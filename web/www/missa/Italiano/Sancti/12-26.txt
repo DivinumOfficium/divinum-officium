@@ -1,10 +1,6 @@
 [Officium]
 S. Stephani Protomartyris
 
-[Oratio1]
-Dio onnipotente ed eterno, che inaugurasti le primizie dei Martiri nel sangue del beato Diacono Stefano: concedici, che si faccia nostro intercessore chi perfino per i suoi persecutori supplicò nostro Signore Gesù Cristo tuo Figlio: 
-$Qui tecum
-
 [Introitus]
 !Ps 118:23; 118:86; 118:23
 v. Si assisero i grandi per parlare contro di me: e gli empi mi perseguitarono. Aiutami, o Signore, Dio mio, perché il tuo servo medita sui tuoi precetti.
@@ -17,14 +13,25 @@ v. Si assisero i grandi per parlare contro di me: e gli empi mi perseguitarono. 
 Concedi, Te ne preghiamo, o Signore, di imitare quanto veneriamo, onde impariamo ad amare anche i nemici, perché celebriamo il giorno natalizio di colui che seppe per i persecutori stessi pregare il Signore nostro Gesù Cristo tuo Figliuolo:
 $Qui tecum
 
+[Oratio1]
+Dio onnipotente ed eterno, che inaugurasti le primizie dei Martiri nel sangue del beato Diacono Stefano: concedici, che si faccia nostro intercessore chi perfino per i suoi persecutori supplicò nostro Signore Gesù Cristo tuo Figlio: 
+$Qui tecum
+
 [Commemoratio Oratio]
-!Per l'Ottava del Natale
-Concedi, Ti preghiamo, o Dio onnipotente, che la nuova nascita del tuo Unigenito, secondo la carne, liberi noi, che un’antica schiavitù tiene sotto il giogo del peccato.
+!Per l'Ottava del Natale.
+@Sancti/12-25m3:Oratio
 
 [Lectio]
 Lettura degli Atti degli Apostoli.
 !Act 6:8-10; 7:54-59
 Allora Stefano, pieno di grazia e fortezza, faceva prodigi e gran segni tra il popolo. Ma alcuni della Sinagoga detta dei Liberti, Cirenei, e Alessandrini, insieme con altri della Cilicia e dell’Asia, si levarono a disputare con Stefano; e non potevano resistere alla Sapienza e allo spirito che parlava. Udendo tali cose, fremevano nei loro cuori e digrignavano i denti contro di lui. Ma egli, pieno di Spirito Santo, mirando fisso il cielo, vide la gloria di Dio, e Gesù stare alla destra di Dio. E disse: ecco che io vedo i cieli aperti, e il Figlio dell’Uomo stare alla destra di Dio. Ma quelli, gettando grandi grida, si turavano gli orecchi e tutti insieme gli corsero addosso e, trascinatolo fuori città, lo lapidarono; e i testimoni gettarono i loro mantelli ai piedi di un giovanetto chiamato Saulo. E lapidavano Stefano che pregava dicendo: Signore Gesù, ricevi il mio spirito. Poi, caduto in ginocchio, gridò a gran voce: Signore, non imputar loro questo peccato. Ciò detto, si addormentò nel Signore.
+
+[GradualeP]
+Allelúia, allelúia
+!Act 7:55.
+Vedo i cieli aperti e Gesù stare alla destra dell’onnipotente Iddio. Alleluia,
+!Ps 20:4.
+V. O Signore, gli hai posto in capo una corona di pietre preziose. Allelúia.
 
 [Graduale]
 !Ps 118:23; 118:86
@@ -33,13 +40,6 @@ Si assisero i grandi per parlare contro di me: e gli empi mi perseguitarono.
 Aiutami, Signore Dio mio: salvami per la tua misericordia. Allelúia, allelúia,
 !Act 7:55.
 V. Vedo i cieli aperti e Gesù stare alla destra dell’onnipotente Iddio. Alleluia.
-
-[GradualeP]
-Allelúia, allelúia
-!Act 7:55.
-Vedo i cieli aperti e Gesù stare alla destra dell’onnipotente Iddio. Alleluia,
-!Ps 20:4.
-V. O Signore, gli hai posto in capo una corona di pietre preziose. Allelúia.
 
 [Tractus]
 !Ps 20:3-4
@@ -61,9 +61,8 @@ Ricevi, Signore, i doni offerti in memoria dei tuoi Santi, affinché, come il ma
 $Per Dominum
 
 [Commemoratio Secreta]
-!Per l'Ottava del Natale
-Santifica, o Signore, con la nuova nascita del tuo Unigenito i doni che Ti offriamo e purificati dalle macchie dei nostri peccati.
-Per eúndem Dóminum nostrum. Præfatio et Communicantes de Nativitate, ratione Octavæ.
+!Per l'Ottava del Natale.
+@Sancti/12-25m3:Secreta
 
 [Communio]
 !Act 7:55; 7:58; 7:59
@@ -74,6 +73,5 @@ Ci siano d’aiuto, Signore, i misteri ai quali abbiamo partecipato, e per inter
 $Per Dominum
 
 [Commemoratio Postcommunio]
-!Per l'Ottava del Natale
-Fa’, te ne preghiamo, o Dio, che il Salvatore del mondo, oggi nato, come è l’autore della nostra divina rigenerazione, così ci sia anche datore dell’immortalità:
-$Qui tecum
+!Per l'Ottava del Natale.
+@Sancti/12-25m3:Postcommunio

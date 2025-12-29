@@ -4,7 +4,7 @@ Ss. Innocentium
 [Rank]
 ;;Duplex II class cum octava simplici;;5.2;;ex C3
 (sed rubrica 196)
-;;Duplex II class;;5.2;;ex C3
+;;Duplex II class;;5;;ex C3
 (sed rubrica tridentina)
 ;;Duplex II class cum octava;;5.2;;ex C3
 
@@ -26,9 +26,7 @@ Deus, cujus hodierna die præcónium Innocéntes Mártyres non loquéndo, sed mo
 $Per Dominum
 
 [Commemoratio Oratio]
-!Pro Octava Nativitatis
-Concéde, quǽsumus, omnípotens Deus: ut nos Unigéniti tui nova per carnem Natívitas líberet; quos sub peccáti jugo vetústa sérvitus tenet.
-$Per eundem
+@Sancti/12-26
 
 [Lectio]
 Léctio libri Apocalýpsis beáti Joánnis Apóstoli
@@ -70,9 +68,7 @@ Sanctórum tuórum, Dómine, nobis pia non desit orátio: quæ et múnera nostra
 $Per Dominum
 
 [Commemoratio Secreta]
-!Pro Octava Nativitatis
-Obláta, Dómine, múnera, nova Unigéniti tui Nativitáte sanctífica: nosque a peccatórum nostrórum máculis emúnda.
-$Per eundem
+@Sancti/12-26
 
 [Communio]
 !Matt 2:18
@@ -83,6 +79,4 @@ Votíva, Dómine, dona percépimus: quæ Sanctórum nobis précibus, et præsén
 $Per Dominum
 
 [Commemoratio Postcommunio]
-!Pro Octava Nativitatis
-Præsta, quǽsumus, omnípotens Deus: ut natus hódie Salvátor mundi, sicut divínæ nobis generatiónis est auctor; ita et immortalitátis sit ipse largítor:
-$Qui tecum
+@Sancti/12-26

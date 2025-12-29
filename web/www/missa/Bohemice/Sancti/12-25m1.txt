@@ -1,12 +1,6 @@
 [Rank]
 In Nativitate Domini in nocte;;Duplex I Classis;;7
 
-[Rule]
-Gloria
-Credo
-Prefatio=Nat
-celebranda aut missa prima aut missa secunda aut missa tertia
-
 [Comment]
 # Boží hod vánoční - první mše půlnoční
 ! Bohoslužba u Panny Marie Větší u Jeslí
@@ -23,6 +17,9 @@ v. Hospodin řekl ke mně: „Syn můj jsi ty, já dnes jsem tebe zplodil.“
 Proč se bouří lidská pokolení a národové osnují marné plány?
 &Gloria
 v. Hospodin řekl ke mně: „Syn můj jsi ty, já dnes jsem tebe zplodil.“
+
+[Gloria]
+!Dnes zazní opět zpěv „Gloria in excelsis Deo – Sláva na výsostech Bohu“, neboť v této noci přeradostné andělské hlas jej po prvé člověčenstvu předzpívaly. Opakujme jej v srdci svém a děkujme bez ustání Bohu za jeho lásku k nám. Vzdáme-li mu svůj povinný hold, ucítíme ten pokoj v duši, který byl při narození Vykupitelově slíben lidem pokorným a dobré vůle.
 
 [Oratio]
 Bože, jenž jsi tuto přesvatou noc jasem pravého světla ozářil, dej, prosíme, abychom téhož světla, jehož tajemství jsme poznali na zemi, také radostí požívali v nebi.
@@ -47,6 +44,9 @@ Pokračování ++ sv. Evangelia podle Lukáše
 !Svaté Evangelium líčí prostými slovy úžasnou událost narození Spasitelova.
 Za onoho času vyšel rozkaz od císaře Augusta, aby byl sepsán všechen svět. Tento soupis konal se první za náčelnictví Quiriniova v Syrii. I šli všickni, aby se dali zapsat, každý do svého města. Odešel pak i Josef z Galileje z města Nazareta do Judska do města Davidova, jež slove Betlem, poněvadž byl z domu a kmene Davidova, aby se dal zapsat s Marií, zasnoubenou manželkou svou, která byla těhotná. Stalo se pak, když tam byli, naplnili se dnové, aby porodila. I porodila syna svého prvorozeného a obvinula jej plénkami a položila ho v jeslích, poněvadž neměli místa v hospodě. A byli v téže krajině pastýři, ponocujíce a stráž noční konajíce nad svým stádem. A hle, Anděl Páně stanul u nich, a jasnost Boží obklíčila je, a báli se velice. I řekl jim Anděl: „Nebojte se, neboť, hle, zvěstuji vám radost velikou, která bude všemu lidu. Narodilť se vám dnes Spasitel, to jest Kristus Pán, v městě Davidově. A toto bude vám znamením: Naleznete dítko plénkami zavinuté a položené v jeslích.“ A hned nato bylo s Andělem množství vojů nebeských, kteří chválili Boha říkajíce: „Sláva na výsostech Bohu, a na zemi pokoj lidem dobré vůle.“
 
+[Credo]
+!Když se dnes ve „Věřím v jednoho Boha“ zpívají slova „A vtělil se …“, poklekají kněží na nejnižším stupni oltáře a klanějí se v pokorném obdivu Bohu, který z lásky k nám stal se člověkem.
+
 [Offertorium]
 !Ž 95,11; 95,13
 Veselte se nebesa a plesej země před tváří Hospodinovou, neboť přišel.
@@ -62,9 +62,3 @@ V lesku svatých z lůna před jitřenkou zplodil jsem tebe.
 [Postcommunio]
 Dej nám, prosíme, Pane, Bože náš, abychom, kteří se radujeme, že můžeme narození Pána našeho Ježíše Krista obnovovat ve svátostech, zasloužili si jeho společenství dojíti hodným životem.
 $Qui tecum
-
-[Credo]
-!Když se dnes ve „Věřím v jednoho Boha“ zpívají slova „A vtělil se …“, poklekají kněží na nejnižším stupni oltáře a klanějí se v pokorném obdivu Bohu, který z lásky k nám stal se člověkem.
-
-[Gloria]
-!Dnes zazní opět zpěv „Gloria in excelsis Deo – Sláva na výsostech Bohu“, neboť v této noci přeradostné andělské hlas jej po prvé člověčenstvu předzpívaly. Opakujme jej v srdci svém a děkujme bez ustání Bohu za jeho lásku k nám. Vzdáme-li mu svůj povinný hold, ucítíme ten pokoj v duši, který byl při narození Vykupitelově slíben lidem pokorným a dobré vůle.

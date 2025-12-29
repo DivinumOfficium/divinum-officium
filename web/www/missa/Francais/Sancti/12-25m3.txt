@@ -1,13 +1,6 @@
 [Rank]
 In die Nativitatis Domini;;Duplex I Classis;;7
 
-[Rule]
-Gloria
-Credo
-Prefatio=Nat
-celebranda aut missa prima aut missa secunda aut missa tertia
-(rubrica 1960) no Ultima Evangelium
-
 [Introitus]
 @Sancti/01-01
 
@@ -31,9 +24,6 @@ Initium sancti Evangélii secúndum Joánnem.
 !Joann 1:1-14
 Au commencement était le Verbe, et le Verbe était en Dieu, et le Verbe était Dieu. Il était au commencement en Dieu. Tout par lui a été fait, et sans lui n’a été fait rien de ce qui existe. En lui était la vie, et la vie était la lumière des hommes, Et la lumière luit dans les ténèbres, et les ténèbres ne l’ont point reçue. Il y eut un homme, envoyé de Dieu ; son nom était Jean. Celui-ci vint en témoignage, pour rendre témoignage à la lumière, afin que tous crussent par lui : non que celui-ci fût la lumière, mais il avait à rendre témoignage à la lumière. La lumière, la vraie, celle qui éclaire tout homme, venait dans le monde. Il était dans le monde, et le monde par lui a été fait, et le monde ne l’a pas connu. Il vint chez lui, et les siens ne l’ont pas reçu. Mais quant à tous ceux qui l’ont reçu, Il leur a donné le pouvoir de devenir enfants de Dieu, à ceux qui croient en son nom, qui non du sang, ni de la volonté de la chair, ni de la volonté de l’homme, mais de Dieu sont nés. (Ici on fléchit le genou) Et le Verbe s’est fait chair, et il a habité parmi nous, et nous avons vu sa gloire, gloire comme celle qu’un fils unique tient de son Père, tout plein de grâce et de vérité.
 
-[Ultima Evangelium]
-@:Evangelium
-
 [Offertorium]
 !Ps 88:12; 88:15
 À vous sont les cieux, à vous la terre : c’est vous qui avez posé les fondations de l’univers, et créé ce qu’il renferme : votre trône repose sur le droit et la justice.
@@ -48,3 +38,6 @@ $Per eundem
 [Postcommunio]
 Dieu tout puissant, le Sauveur du monde, qui est né aujourd’hui, nous a fait naître à la vie divine. Faites, nous vous en prions, qu’il nous accorde aussi le don de l’immortalité.
 $Qui tecum
+
+[Ultima Evangelium]
+@:Evangelium

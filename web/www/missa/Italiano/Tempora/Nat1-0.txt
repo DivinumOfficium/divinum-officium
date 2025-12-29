@@ -1,11 +1,6 @@
 [Officium]
 Dominica Infra Octavam Nativitatis
 
-[Rule]
-Gloria
-Credo
-Prefatio=Nat
-
 [Introitus]
 !Sap 18:14-15.
 v. Mentre tutto era immerso in profondo silenzio, e la notte era a metà del suo corso, l’onnipotente tuo Verbo, o Signore, discese dal celeste trono regale.
@@ -19,9 +14,8 @@ Onnipotente e sempiterno Iddio, indirizza i nostri atti secondo il tuo beneplaci
 $Qui tecum
 
 [Commemoratio Oratio] (nisi rubrica 1960)
-!Pro Octava Nativitatis:
-Concedine, onnipotente Iddio, che la nuova nascita del tuo Unigenito secondo al carne liberi noi, che l’antica schiavitù tiene sotto il giogo del peccato.
-$Per eundem
+!Per l'Ottava del Natale.
+@Sancti/12-25m3:Oratio
 
 [Lectio]
 Lettura della Lettera del B. Paolo Ap. ai Gàlati.
@@ -49,9 +43,8 @@ Concedi, Te ne preghiamo, o Dio onnipotente, che questa offerta, presentata alla
 $Per Dominum
 
 [Commemoratio Secreta] (nisi rubrica 1960)
-!Pro Octava Nativitatis:
-Santifica, Signore, con la nuova nascita del tuo Unigenito, i doni offerti, e purifica noi dalle macchie dei nostri peccati.
-$Per eundem
+!Per l'Ottava del Natale.
+@Sancti/12-25m3:Secreta
 
 [Communio]
 !Matt 2:20
@@ -62,6 +55,5 @@ Per l’efficacia di questo mistero, o Signore, siano distrutti i nostri vizii e
 $Per Dominum
 
 [Commemoratio Postcommunio] (nisi rubrica 1960)
-!Pro Octava Nativitatis:
-Fa’, te ne preghiamo, o Dio, che il Salvatore del mondo, oggi nato, come è l’autore della nostra divina rigenerazione, così ci sia anche datore dell’immortalità:
-$Qui tecum
+!Per l'Ottava del Natale.
+@Sancti/12-25m3:Postcommunio

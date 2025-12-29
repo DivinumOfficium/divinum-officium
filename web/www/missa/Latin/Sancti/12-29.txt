@@ -1,6 +1,11 @@
 [Officium]
 S. Thomæ Cantuariensis Episcopi et Martyris
 
+[Name]
+Thomas
+Secreta=Thoma
+Postcommunio=Thoma
+
 [Rank]
 ;;Duplex;;3;;vide C2-1
 (sed rubrica 1570 aut rubrica 1888 aut rubrica 1617)
@@ -13,11 +18,7 @@ vide C2-1;
 Gloria
 Credo
 Prefatio=Nat
-
-[Name]
-Thomas
-Secreta=Thoma
-Postcommunio=Thoma
+Evangelium non appropriatum
 
 [Introitus]
 v. Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre beáti Thomæ Mártyris: de cujus passióne gaudent Angeli et colláudant Fílium Dei.
@@ -29,9 +30,6 @@ v. Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre beáti Thom
 [Oratio]
 Deus, pro cujus Ecclésia gloriósus Póntifex Thomas gládiis impiórum occúbuit: præsta, quǽsumus; ut omnes, qui ejus implórant auxílium, petitiónis suæ salutárem consequántur efféctum.
 $Per Dominum
-
-[Commemoratio Oratio]
-@Sancti/12-26
 
 [Lectio]
 @Sancti/11-14
@@ -50,11 +48,5 @@ V. Ego sum pastor bonus: et cognósco oves meas, et cognóscunt me meæ. Allelú
 [Offertorium]
 @Commune/C2a-1
 
-[Commemoratio Secreta]
-@Sancti/12-26
-
 [Communio]
 @Tempora/Pasc2-0
-
-[Commemoratio Postcommunio]
-@Sancti/12-26

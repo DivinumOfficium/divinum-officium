@@ -1,16 +1,16 @@
 [Officium]
 Sv. Tomáše z Canterbury, biskupa a mučedníka
 
+[Name]
+Tomáš
+Secreta=Tomáše
+Postcommunio=Tomáše
+
 [Comment]
 # Sv. Tomáše z Canterbury, biskupa a mučedníka
 ! Připomínka
 ! Barva červená
 ✝ 1170
-
-[Name]
-Tomáš
-Secreta=Tomáše
-Postcommunio=Tomáše
 
 [Introitus]
 v. Radujme se všichni v Pánu, oslavujíce svátek na počest svatého Tomáše mučedníka, z jehož vitězného utrpení radují se Anděléva chválí Syna Božího.
@@ -22,10 +22,6 @@ v. Radujme se všichni v Pánu, oslavujíce svátek na počest svatého Tomáše
 [Oratio]
 Bože, pro jehož Církev slavný biskup Tomáš padl pod meči bezbožných, uděl, prosime, aby všichni, kteří vzývaji jeho pomoc, dosáhli spasného vyslyšení své prosby.
 $Per Dominum
-
-[Commemoratio Oratio]
-!Připomínka Narození Páně
-@Sancti/12-25m3:Oratio
 
 [Lectio]
 Čtení z listu sv. Pavla Apoštola k Židům
@@ -47,14 +43,6 @@ V. Já jsem pastýř dobrý, a znám ovce své a znají mne mé. Aleluja.
 !Ž 20,4-5
 Položil jsi, Pane, na hlavu jeho korunu z kamení drahého; života žádal od tebe, i udělil jsi mu, aleluja.
 
-[Commemoratio Secreta]
-!Připomínka Narození Páně
-@Sancti/12-25m3:Secreta
-
 [Communio]
 !J 10,14
 Já jsem pastýř dobrý, a znám ovce své a znají mne mé.
-
-[Commemoratio Postcommunio]
-!Připomínka Narození Páně
-@Sancti/12-25m3:Postcommunio

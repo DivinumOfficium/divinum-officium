@@ -1,28 +1,11 @@
-[Rank]
-Die septima post Nativitatem;;Duplex II class;;5;;ex Tempora/Nat30
+[Officium]
+Św. Sylwestra Papieża i Wyznawcy
 
-[Rule]
-CPapaC=Silvéstrum;
-ex Tempora/Nat30
-Gloria
-Credo
-Prefatio=Nat
+
+
 
 [Comment]
 # 31 XII - Św. Sylwestra I, papieża i wyznawcy
 ! Wspomnienie
 ! Szaty białe
 Pontyfikat św. Sylwestra (314—335) wypadł tuż po wydaniu edyktu mediolańskiego, który zakończył epokę prześladowań w cesarstwie rzymskim. Św. Sylwester organizował kult w pierwszych wielkich bazylikach rzymskich i potwierdził uchwały pierwszego soboru powszechnego w Nicei, który potępił błędy Ariusza.
-
-[Commemoratio Oratio]
-! Wspomnienie św. Sylwestra
-Wiekuisty Pasterzu, wejrzyj łaskawie na Swoją trzodę i otocz ją nieustanną opieką za przyczyną świętego Sylwestra, Twojego Papieża, którego ustanowiłeś pasterzem całego Kościoła.
-$Per Dominum
-
-[Commemoratio Secreta]
-! Wspomnienie św. Sylwestra
-@Commune/C4b:Secreta
-
-[Commemoratio Postcommunio]
-! Wspomnienie św. Sylwestra
-@Commune/C4b:Postcommunio

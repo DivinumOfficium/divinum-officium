@@ -1,10 +1,6 @@
 [Officium]
 S. Stephani Protomartyris
 
-[Oratio1]
-Almachtige, eeuwige God, Gij hebt U in het bloed van de heilige leviet Stefanus een eerstelingenoffer onder de martelaren gewijd. Wij vragen U, doe hem voor ons een voorspreker zijn, die zelfs voor zijn vervolgers bad tot onze Heer Jezus Christus, uw Zoon.
-$Qui tecum
-
 [Introitus]
 @Sancti/08-03
 
@@ -12,13 +8,23 @@ $Qui tecum
 Doe ons, vragen wij U, heer, navolgen wat wij vereren, opdat ook wij onze vijanden leren beminnen, omdat wij het geboortefeest vieren van hem, die zelfs voor zijn vervolgers wist te bidden tot onze Heer Jezus Christus, uw Zoon. 
 $Qui tecum
 
+[Oratio1]
+Almachtige, eeuwige God, Gij hebt U in het bloed van de heilige leviet Stefanus een eerstelingenoffer onder de martelaren gewijd. Wij vragen U, doe hem voor ons een voorspreker zijn, die zelfs voor zijn vervolgers bad tot onze Heer Jezus Christus, uw Zoon.
+$Qui tecum
+
 [Commemoratio Oratio]
-!Pro Octava Nativitatis
-Wij vragen U, almachtige God, laat de nieuwe geboorte naar het vlees van uw enige Zoon de bevrijding inluiden voor ons, die in de oude slavernij nog onder het juk van de zonde gevangen zijn.
-$Per eundem
+!Pro Octava Nativitatis.
+@Sancti/12-25m3:Oratio
 
 [Lectio]
 @Sancti/08-03
+
+[GradualeP]
+Allelúja, allelúja.
+!Act 7:55.
+Vídeo cœlos apértos, et Jesum stantem a dextris virtútis Dei. Allelúja.
+!Ps 20:4.
+Posuísti, Dómine, super caput ejus corónam de lápide pretióso. Allelúja.
 
 [Graduale]
 !Ps 118:23; 118:86
@@ -28,13 +34,6 @@ Help mij, Heer, mijn God, red mij om uw barmhartigheid.
 Alleluia, alleluia.
 !Act 7:56
 Ik zie de hemel open, en Jezus staan aan de rechterhand van God. Alleluia.
-
-[GradualeP]
-Allelúja, allelúja.
-!Act 7:55.
-Vídeo cœlos apértos, et Jesum stantem a dextris virtútis Dei. Allelúja.
-!Ps 20:4.
-Posuísti, Dómine, super caput ejus corónam de lápide pretióso. Allelúja.
 
 [Tractus]
 !Ps 20:3-4
@@ -53,9 +52,8 @@ Aanvaard, Heer, de gaven bij de gedachtenis van uw heiligen, opdat onze godsvruc
 $Per Dominum
 
 [Commemoratio Secreta]
-!Pro Octava Nativitatis
-Heilig, Heer, de offergaven door de nieuwe geboorte van uw enige Zoon en zuiver ons van de smetten van onze zonden.
-$Per eundem
+!Pro Octava Nativitatis:
+@Sancti/12-25m3:Secreta
 
 [Communio]
 @Sancti/08-03
@@ -65,6 +63,5 @@ Mogen, Heer, de geheimen die wij genuttigd hebben, ons helpen en ons door de bem
 $Per Dominum
 
 [Commemoratio Postcommunio]
-!Pro Octava Nativitatis
-Wij vragen U, almachtige God, laat de Redder der wereld, die vandaag geboren is, en in ons het goddelijk leven heeft verwekt, ons zo ook de onsterfelijkheid schenken.
-$Qui tecum
+!Pro Octava Nativitatis.
+@Sancti/12-25m3:Postcommunio
