@@ -1867,7 +1867,7 @@ _
 @Psalterium/Mariaant:Quadragesimae: s/.*v\./Ant. / s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/s
 (sed Adventus loco horum versuum dicitur)
 @Psalterium/Mariaant:Advent: s/.*v\./Ant. / s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/s
-(sed Nativitatis aut Epiphaniæ aut post partum dicitur)
+(sed Nativitatis aut Epiphaniæ aut post partum loco horum versuum dicitur)
 @Psalterium/Mariaant:Nativiti: s/.*v\./Ant. / s/[ÁA]m[ée]n.*$/\n/s
 (sed Paschali loco horum versuum dicitur)
 @Psalterium/Mariaant:Paschalis: s/.*v\./Ant. / s/(P[aeo]r|Through|Im|Ugyanazon|Przez|Pelo|Skrze).*$/\n/s 

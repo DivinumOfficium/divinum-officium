@@ -703,11 +703,11 @@ sub checksuffragium {
     # early January
     || !$dayname[0]
 
-    # Nativity, Hebd. maj., Octaves of Pasch and Pente, and Ascensiontide
-    || $dayname[0] =~ /Nat|Quad6|Pasc[067]/i
+    # Hebd. maj., Octaves of Pasch and Pente, and Ascensiontide
+    || $dayname[0] =~ /Quad6|Pasc[067]/i
 
-    # Passiontide and Advent for non-Cistercian
-    || $version !~ /cist/i && $dayname[0] =~ /Adv|Quad5/i
+    # Passiontide, Advent and Nativity for non-Cistercian
+    || $version !~ /cist/i && $dayname[0] =~ /Adv|Nat|Quad5/i
 
     # All Duplex (MM. maj.) Saints (except Patr. S. Joseph)
     || ($winner =~ /sancti/i && $rank >= $ranklimit)
