@@ -115,7 +115,7 @@ sub hymnusmajor {
 }
 
 sub doxology {
-  our ($version, $rule, @dayname, %winner, %winner2, %commemoratio, $day, $month, $year, $dayofweek);
+  our ($version, $rule, @dayname, %winner, %winner2, %commemoratio, $day, $month, $year, $dayofweek, $oldhymns);
   my $lang = shift;
   my $dox = '';
   my $dname = '';
@@ -143,7 +143,7 @@ sub doxology {
 
     if ($dname) {
       my %w = %{setupstring($lang, 'Psalterium/Doxologies.txt')};
-      if ($version =~ /Monastic|1570|Praedicatorum/i && $w{"${dname}T"}) { $dname .= 'T'; }
+      if (($version =~ /Monastic|1570|Praedicatorum/i || $oldhymns) && $w{"${dname}T"}) { $dname .= 'T'; }
       $dox = $w{$dname};
       setbuild2("Doxology: $dname");
     }
