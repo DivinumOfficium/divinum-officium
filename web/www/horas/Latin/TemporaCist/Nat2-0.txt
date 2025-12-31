@@ -6,7 +6,7 @@ Psalmi Dominica
 Antiphonas horas
 
 [Ant Vespera]
-@Tempora/Nat2-0::1-4
+@Tempora/Nat2-0::1-4:s/n(o|ó)m/N$1m/g
 
 [Responsory Vespera] 
 R.br. Confitémini Dómino, * Et invocáte Nomen ejus.
@@ -15,7 +15,7 @@ V. Annuntiáte inter Gentes ópera ejus.
 R. Et invocáte Nomen ejus.
 
 [Versum 1] 
-@Tempora/Nat2-0::s/, allel[uú][ij]a//ig
+@Tempora/Nat2-0::s/, allel[uú][ij]a//ig :s/n(o|ó)m/N$1m/g
 
 [Invit]
 Nomen Jesu gloriósum, * Veníte, adorémus.
@@ -108,36 +108,43 @@ R. Cujus Nóminis dedit nobis Deus cognóscere sacraméntum.
 @Tempora/Nat2-0:Responsory7:s/n(o|ó)m/N$1m/g
 
 [Lectio9]
-@Tempora/Nat2-0:Lectio7
-
-[Responsory9]
-@Tempora/Nat2-0:Responsory7
+@Tempora/Nat2-0:Lectio7:s/Náscitur .*//s s/n(o|ó)m/N$1m/g
 
 [Lectio10]
-@Tempora/Nat2-0:Lectio8:s/ Vocátum.*//
-
-[Responsory10]
-@Tempora/Nat2-0:Responsory8
+@Tempora/Nat2-0:Lectio7:s/.* (Náscitur)/$1/s s/Circumcíditur .*//s s/n(o|ó)m/N$1m/g
 
 [Lectio11]
-@Tempora/Nat2-0:Lectio8:s/.*(Vocátum)/$1/
-
-[Responsory11]
-R. In nómine Jesu Christi Nazaréni crucifíxi, quem Deus suscitávit a mórtuis:
-* In hoc est ómnium salus.
-V. Non est áliud nomen sub cælo datum homínibus, in quo opórteat nos salvos fíeri.
-R. In hoc est ómnium salus.
+@Tempora/Nat2-0:Lectio7:s/.* (Circumcíditur )/$1/s s/$/~/ s/n(o|ó)m/N$1m/g
+@Tempora/Nat2-0:Lectio8:s/Et atténde .*// s/n(o|ó)m/N$1m/g
 
 [Lectio12]
-@Tempora/Nat2-0:Lectio9
+@Tempora/Nat2-0:Lectio8:s/.* (Et atténde)/$1/ s/$/~/ s/n(o|ó)m/N$1m/g
+@Tempora/Nat2-0:Lectio9:s/.* (Vocátum plane)/$1/s s/n(o|ó)m/N$1m/g
+
+[Responsory9]
+R. Unigénito Fílio suo Deus, quem constítuit hærédem universórum, Nomen donávit,
+* Quod est super omne nomen.
+V. In Nómine Jesu omne genu flectátur cœléstium, terréstrium, et infernórum:
+R. Quod est super omne nomen.
+
+[Responsory10]
+R. Nomen Jesu, Nomen Dei est super omne nomen,
+* Quod non nisi cœlésti oráculo nobis fuit maniféstum.
+V. Mementóte quod magnum et excélsum est Nomen Dómini Jesu: 
+R. Quod non nisi cœlésti oráculo nobis fuit maniféstum.
+
+[Responsory11]
+@Tempora/Nat2-0:Responsory Breve Nona:2:s/ \* .*//
+@Tempora/Nat2-0:Responsory Breve Nona:3:s/V\./*/ s/n(o|ó)m/N$1m/g
+@Tempora/Nat2-0:Versum Nona:1:s/al.*// s/$/~/ s/n(o|ó)m/N$1m/g
+@Tempora/Nat2-0:Versum Nona:2:s/R\. // s/al.*// s/Qui/qui/ s/Který/který/
+@Tempora/Nat2-0:Responsory Breve Nona:3:s/V\./R./ s/n(o|ó)m/N$1m/g
 
 [Responsory12]
-R. In nómine Jesu omne genu flectátur cæléstium, terréstrium et infernórum:
-* Et omnis lingua confiteátur,
-V. Quia Dóminus Jesus Christus in glória est Dei Patris.
-R. Et omnis lingua confiteátur.
-&Gloria
-R. Et omnis lingua confiteátur.
+@Sancti/05-08:Responsory3:s/n(o|ó)m/N$1m/g
+
+[Evangelium]
+@Sancti/01-01
 
 [Versum 2] 
 @:Versum 1

@@ -69,3 +69,28 @@ R. Neukazujme, že známe něco jiného, než Ježíše, a to ukřižovaného;
 V. Prokládejme vždy své skutky Jménem Pána Ježíše;
 R. Tajemství jeho Jména nám dal Bůh poznat.
 
+[Lectio9]
+@Tempora/Nat2-0:Lectio7:s/Narozen .*//s
+
+[Lectio10]
+@Tempora/Nat2-0:Lectio7:s/.* (Narozen)/$1/s s/Byl obřezán .*//s
+
+[Lectio11]
+@Tempora/Nat2-0:Lectio7:s/.* (Byl obřezán )/$1/s s/$/~/
+@Tempora/Nat2-0:Lectio8:s/A poslyš .*//
+
+[Lectio12]
+@Tempora/Nat2-0:Lectio8:s/.* (A poslyš)/$1/ s/$/~/
+@Tempora/Nat2-0:Lectio9:s/.* (Nazváno)/$1/s
+
+[Responsory9]
+R. Jednorozenému Synu svému Bůh, který jej ustanovil dědicem veškerenstva, dal Jméno,
+* Které je nad každé jiné jméno.
+V. Ve Jménu Ježíšově ať poklekne každé koleno na nebi, na zemi i v podsvětí;
+R. Neboť je nad každé jiné jméno.
+
+[Responsory10]
+R. Jméno Ježíš, Jméno Boží je nad každé jméno,
+* Které nám nebylo zjeveno jinak než z nebeské předpovědi.
+V. Dobře si zapamatujte, že veliké a vznešené je Jméno Pána Ježíše; 
+R. Které nám nebylo zjeveno jinak než z nebeské předpovědi.
