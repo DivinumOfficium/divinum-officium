@@ -13,6 +13,9 @@ Tunc surrexérunt omnes * Vírgines illæ, et ornavérunt lámpades suas.
 [Ant Vespera] (tempore paschali)
 @CommuneCist/C1p
 
+[HymnusM Vespera]
+@Commune/C6:Hymnus Vespera:s/pergis/pascis/ s/tendis/pergis/ s/súpplices/lárgius/ s/ut addas/adáuge/ s/Virtus, honor, laus/Laus, honor, virtus/ s/cum/et/ s/\* //
+
 [Versum 1]
 @Commune/C6:Versum 2
 
@@ -142,6 +145,9 @@ _
 
 [Ant Laudes]
 @:Ant Vespera:s/;;.*//g
+
+[HymnusM Laudes]
+@Commune/C6:HymnusM Vespera:s/\* //
 
 [Versum 2]
 @:Versum 1
