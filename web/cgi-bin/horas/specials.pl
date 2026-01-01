@@ -704,7 +704,7 @@ sub checksuffragium {
     || !$dayname[0]
 
     # Hebd. maj., Octaves of Pasch and Pente, and Ascensiontide
-    || $dayname[0] =~ /Quad6|Pasc[067]/i
+    || $dayname[0] =~ /Nat05|Quad6|Pasc[067]/i
 
     # Passiontide, Advent and Nativity for non-Cistercian
     || $version !~ /cist/i && $dayname[0] =~ /Adv|Nat|Quad5/i

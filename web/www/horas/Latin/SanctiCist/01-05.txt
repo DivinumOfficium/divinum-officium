@@ -1,0 +1,177 @@
+@Sancti/01-05
+
+[Rule]
+ex SanctiCist/01-01
+Doxology=Nat
+3 lectiones
+Psalmi Feria
+Antiphonas horas
+no prima vespera
+
+[Rule] (feria 1)
+ex TemporaCist/Nat1-0
+Doxology=Nat
+12 lectiones
+Psalmi Feria
+Antiphonas horas
+
+[Versum 1] (feria 1)
+@Tempora/Nat1-0
+
+[Ant 1] (feria 1)
+@Tempora/Nat1-0
+
+[Ant Matutinum 3N] (feria 1)
+@:Ant Matutinum:13
+
+[Ant Matutinum] 
+@SanctiCist/12-25::6:s/;;98//
+;;
+@Tempora/Epi1-0:Ant 3
+;;
+Nato Dómino, * Angelórum chorus canébat, dicens: Glória in excélsis Deo, et in terra pax homínibus bonæ voluntátis.
+;;
+Allelúia, * allelúia, allelúia.
+
+[Ant Matutinum] (feria 1)
+@SanctiCist/12-25::6:s/;;98//
+;;
+@Tempora/Epi1-0:Ant 3
+;;
+Nato Dómino, * Angelórum chorus canébat, dicens: Glória in excélsis Deo, et in terra pax homínibus bonæ voluntátis.
+;;
+@SanctiCist/12-25::2:s/;;86//
+;;
+@SanctiCist/12-25:Ant Vespera 3:2:s/;;110//
+;;
+@SanctiCist/12-25:Ant Vespera 3:3:s/;;111//
+;;
+Allelúia, * allelúia, allelúia.;;263;264;265
+
+[Nocturn 1 Versum]
+@SanctiCist/12-25
+
+[Nocturn 2 Versum] 
+@SanctiCist/12-25:Nocturn 1 Versum
+(sed feria 1)
+@SanctiCist/12-25
+
+[Nocturn 3 Versum]
+@SanctiCist/12-25:Nocturn 1 Versum
+(sed feria 1)
+@SanctiCist/12-25
+
+[Lectio1] 
+@:Lectio9
+(sed feria 1)
+@TemporaCist/Nat03
+
+[Lectio2] 
+@:Lectio10
+(sed feria 1)
+@TemporaCist/Nat03
+
+[Lectio3]
+@:Lectio11
+(sed feria 1)
+@TemporaCist/Nat03
+
+[Lectio4]
+@Tempora/Nat04:Lectio3
+
+[Responsory1]
+@:Responsory9
+(sed feria 1)
+@SanctiCist/12-25:Responsory11
+
+[Responsory2]
+@:Responsory10
+(sed feria 1)
+@SanctiCist/12-25:Responsory5
+
+[Responsory3]
+@:Responsory11
+(sed feria 1)
+@SanctiM/12-25:Responsory8
+
+[Responsory4]
+@SanctiCist/12-25:Responsory7
+
+[Lectio5]
+@Sancti/01-05:Lectio4: s/Factus.*//s
+
+[Lectio6]
+@Sancti/01-05:Lectio4: s/.*(Factus)/$1/s s/$/~/s
+@Sancti/01-05:Lectio5: s/Factus.*//s
+
+[Lectio7]
+@Sancti/01-05:Lectio5: s/.*(Factus)/$1/s
+
+[Lectio8]
+@Sancti/01-05:Lectio6
+
+[Responsory5]
+@SanctiCist/12-25:Responsory9
+
+[Responsory6]
+@SanctiCist/12-25:Responsory10
+
+[Responsory7]
+@SanctiCist/12-25:Responsory3
+
+[Responsory8]
+@SanctiCist/12-25:Responsory4
+
+[Lectio9]
+@Sancti/01-05:Lectio7
+
+[Lectio10]
+@Sancti/01-05:Lectio8
+
+[Lectio11]
+@Sancti/01-05:Lectio9: s/Nazarǽus sanctus//s
+
+[Lectio12_]
+Póssumus et áliter dícere, quod étiam eísdem verbis juxta Hebráicam veritátem in Isaía scriptum sit: Exiet virga de radíce Jesse, et Nazaræus de radíce ejus conscéndet.
+
+[Lectio12]
+@Sancti/01-05:Lectio9:1:s/.*(Nazarǽus sanctus)/$1/s s/$/~/
+@:Lectio12_
+
+[Responsory9]
+@TemporaCist/Nat30:Responsory1
+
+[Responsory10]
+@Sancti/01-01:Responsory5
+
+[Responsory11]
+@Tempora/Nat1-0:Responsory8
+
+[Responsory12]
+@SanctiCist/12-25
+
+[MM Capitulum]
+@Tempora/Nat1-0:Capitulum Sexta
+_
+@SanctiCist/12-25:Nocturn 2 Versum
+
+[Evangelium] 
+@Sancti/01-05
+
+[Ant Laudes] (feria 1)
+@Psalterium/Psalmi/Psalmi minor:Pasch
+
+[Hymnus Laudes]
+@SanctiCist/12-25
+
+[Versum 2] 
+@TemporaCist/Nat1-0
+
+[Responsory TertiaM]
+@SanctiCist/12-25
+
+[Responsory SextaM]
+@SanctiCist/12-25
+
+[Responsory NonaM]
+@SanctiCist/12-25

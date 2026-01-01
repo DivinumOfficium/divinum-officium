@@ -1,0 +1,66 @@
+[Ant Matutinum] 
+@SanctiCist/12-25::6:s/;;98//
+;;
+@Tempora/Epi1-0:Ant 3
+;;
+Když se narodil Pán, * chór Andělů zpíval tato slova: Sláva na výsostech Bohu, a na zemi pokoj lidem dobré vůle.
+;;
+Alleluja, * alleluja, alleluja.
+
+[Ant Matutinum] (feria 1)
+@SanctiCist/12-25::6:s/;;98//
+;;
+@Tempora/Epi1-0:Ant 3
+;;
+Když se narodil Pán, * chór Andělů zpíval tato slova: Sláva na výsostech Bohu, a na zemi pokoj lidem dobré vůle.
+;;
+@SanctiCist/12-25::2:s/;;86//
+;;
+@SanctiCist/12-25:Ant Vespera 3:2:s/;;110//
+;;
+@SanctiCist/12-25:Ant Vespera 3:3:s/;;111//
+;;
+Alleluja, * alleluja, alleluja.;;263;264;265
+
+[Lectio5]
+@Sancti/01-05:Lectio4: s/Bůh .*//s
+
+[Lectio6]
+@Sancti/01-05:Lectio4: s/.*(Bůh )/$1/s s/$/~/s
+@Sancti/01-05:Lectio5: s/Člověkem .*//s
+
+[Lectio7]
+@Sancti/01-05:Lectio5: s/.*(Člověkem )/$1/s
+
+[Lectio8]
+@Sancti/01-05:Lectio6
+
+[Lectio9]
+@Sancti/01-05:Lectio7
+
+[Lectio10]
+@Sancti/01-05:Lectio8
+
+[Lectio11]
+@Sancti/01-05:Lectio9: s/Slovo //s
+
+[Lectio12_]
+Můžeme to říct i jinak, jak je stejnými slovy psáno u Isajáše v hebrejském Písmu: „Vzejde prut z kořene Jesse, a Nazaretský vyroste z jeho kořene.“
+
+[Lectio12]
+@Sancti/01-05:Lectio9:1:s/.*(Slovo )/$1/s s/$/~/
+@:Lectio12_
+
+[Responsory12]
+@SanctiM/01-01
+
+[Responsory12C]
+@:Responsory12
+
+[MM Capitulum]
+@Tempora/Nat1-0:Capitulum Sexta
+_
+@Sancti/12-25:Versum 2
+
+[Versum 2] (rubrica cisterciensis)
+@Tempora/Nat1-0
