@@ -127,11 +127,11 @@ sub occurrence {
 
       if ($tomorrow) {
         $tvesp = 1;
-        %tempora = %{officestring('Latin', $tname, 1)};
+        %tempora = %{officestring($lang1, $tname, 1)};
         $trank = $tempora{Rank};
       } else {
         $tvesp = $hora =~ /(Vespera|Completorium)/i ? 3 : 2;
-        %tempora = %{officestring('Latin', $tname)};
+        %tempora = %{officestring($lang1, $tname)};
         $trank = $tempora{Rank};
         $initia = ($tempora{Lectio1} =~ /!.*? 1\:1\-/) ? 1 : 0;
       }
@@ -191,7 +191,7 @@ sub occurrence {
       $sname = "$sfile.txt";
       if ($caller && $hora =~ /(Matutinum|Laudes)/i) { $sname =~ s/11-02t/11-02/; }    # special for All Souls day
 
-      %saint = %{setupstring('Latin', $sname)};
+      %saint = %{setupstring($lang1, $sname)};
       $srank = $saint{Rank};
       @srank = split(";;", $srank);
 
@@ -364,7 +364,7 @@ sub occurrence {
 
     # commemoration of the Christmas Octave according to the rubrics
     $sname = subdirname('Tempora', $version) . "Nat$day";
-    %saint = %{setupstring('Latin', $sname)};
+    %saint = %{setupstring($lang1, $sname)};
     $srank = $saint{Rank};
     @srank = split(";;", $srank);
   } elsif ($dayname[0] =~ /Adv|Quad/ && $srank[2] > 6 && $sname !~ /12-24/ && $saint{Rule} !~ /Patronus/) {
@@ -454,7 +454,7 @@ sub occurrence {
       $officename[2] =~ s/:/ ad Laudes tantum:/ if $trank[0] =~ /Quattuor.*Sept/;     # QT in Sep
     } elsif (my $transferedC = $commemoentries[0]) {
       $commemoratio = "$transferedC.txt";
-      my %tc = %{setupstring('Latin', "$transferedC.txt")};
+      my %tc = %{setupstring($lang1, "$transferedC.txt")};
       my @cr = split(";;", $tc{Rank});
       $comrank = $cr[2];
       $cvespera = $svesp;
@@ -477,7 +477,7 @@ sub occurrence {
       }
     } elsif ($transfered) {    #&& !$vflag)
       if ($hora !~ /Vespera|Completorium/i) {
-        my %t = %{officestring('Latin', "$transfered.txt")};
+        my %t = %{officestring($lang1, "$transfered.txt")};
 
         if (%t) {
           my @tr = split(";;", $t{Rank});
@@ -495,7 +495,7 @@ sub occurrence {
     }
 
     if (!$officename[2] && $transfervigil) {
-      my %vw = %{setupstring('Latin', $transfervigil)};
+      my %vw = %{setupstring($lang1, $transfervigil)};
 
       if (%vw) {
         my $o = $vw{'Oratio Vigilia'};
@@ -510,7 +510,7 @@ sub occurrence {
       ($_) = split(/\n/, $saint{'Commemoratio 2'} || $saint{'Commemoratio'});
 
       if (/\@([a-z0-9\/\-]+?)\:/isx) {
-        my %s = %{setupstring('Latin', "$1.txt")};
+        my %s = %{setupstring($lang1, "$1.txt")};
         $_ = "!Commemoratio " . $s{'Officium'};
       }
       $officename[2] = "Commemoratio: $_" if (s/^!Commemoratio //);
@@ -518,7 +518,7 @@ sub occurrence {
     }
 
     if (($hora =~ /matutinum/i || (!$officename[2] && $hora !~ /Vespera|Completorium/i)) && $rank < 7 && $trank[0]) {
-      my %scrip = %{officestring('Latin', $tname)};
+      my %scrip = %{officestring($lang1, $tname)};
 
       if (
            !(exists($saint{"Lectio1"}) && ($saint{Rule} !~ /Lectio1 Quad/i || $dayname[0] =~ /Quad(\d|p3\-[3456])/i))
@@ -536,7 +536,7 @@ sub occurrence {
           # we put the source of the transferred Letio1 into the headline
           my @tsfile = split('~', $ittable);
           my $tsfile = subdirname('Tempora', $version) . $tsfile[0] . ".txt";
-          %tscrip = %{officestring('Latin', $tsfile)};
+          %tscrip = %{officestring($lang1, $tsfile)};
           $tsrank = $tscrip{Rank} || $tscrip{Scriptura};
           $tsrank =~ s/\s*;;.*|\s*$//s;
           $officename[2] = "Tempora: $trank[0] (Scriptura ut in: $tsrank)";
@@ -555,7 +555,7 @@ sub occurrence {
     if ($hora !~ /Vespera/i && $trank[2] < ($version =~ /cist/i ? 1.25 : 1.5) && $transfervigil)
     {         # Vigil transfered to an empty or Simplex only day
       my $t = $transfervigil;
-      my %w = setupstring('Latin', $t);
+      my %w = setupstring($lang1, $t);
 
       if (%w) {
         $tname = $t;
@@ -653,7 +653,7 @@ sub occurrence {
 
       if ($climit1960) {
         $laudesonly = ($missa) ? '' : ($climit1960 == 2) ? ' ad Laudes tantum' : '';
-        my %tc = %{setupstring('Latin', $commemoratio)};
+        my %tc = %{setupstring($lang1, $commemoratio)};
         my @cr = split(";;", $tc{Rank});
         $comrank = $cr[2];
         $cvespera = $svesp;
@@ -676,7 +676,7 @@ sub occurrence {
       }
     } elsif ($transfered) {
       if ($hora !~ /Vespera|Completorium/i) {
-        my %t = %{officestring('Latin', "$transfered.txt")};
+        my %t = %{officestring($lang1, "$transfered.txt")};
 
         if (%t) {
           my @tr = split(";;", $t{Rank});
@@ -695,7 +695,7 @@ sub occurrence {
 
     if (!$commemoratio && $sname) {    # if only a Vigil to be commemorated
       $sname =~ s/v\././;
-      my %s = %{setupstring('Latin', $sname)};
+      my %s = %{setupstring($lang1, $sname)};
       if ($s{Rank} =~ /Vigil/i && exists($s{Commemoratio})) { $commemorated = $sname; }
       if ($s{Rank} =~ /Vigil/i && exists($s{"Commemoratio 2"})) { $commemorated = $sname; }
     }
@@ -710,7 +710,7 @@ sub occurrence {
         # we put the source of the transferred Letio1 into the headline
         my @tsfile = split('~', $ittable);
         my $tsfile = subdirname('Tempora', $version) . $tsfile[0] . ".txt";
-        %tscrip = %{officestring('Latin', $tsfile)};
+        %tscrip = %{officestring($lang1, $tsfile)};
         $tsrank = $tscrip{Rank} || $tscrip{Scriptura};
         $tsrank =~ s/\s*;;.*|\s*$//s;
         $officename[2] = "Scriptura ut in: $tsrank";
@@ -1197,7 +1197,7 @@ sub concurrence {
 
         foreach $commemo (@commemoentries) {
           if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
-          %cstr = %{officestring('Latin', $commemo, 0)};
+          %cstr = %{officestring($lang1, $commemo, 0)};
 
           unless (!%cstr || ($cstr{Rank} =~ /infra octavam/i && $cstr{Rank} !~ /Dominica/i)) {
             push(@comentries, $commemo);
@@ -1226,7 +1226,7 @@ sub concurrence {
 
     foreach $commemo (@ccommemoentries) {
       if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
-      %cstr = %{officestring('Latin', $commemo, 1)};
+      %cstr = %{officestring($lang1, $commemo, 1)};
 
       if (($commemo =~ /tempora/i || $cstr{Rank} =~ /infra octavam/i) && $cstr{Rank} !~ /Dominica/i) {
         next;
@@ -1256,7 +1256,7 @@ sub concurrence {
         next;    # Feria minor, Rogation days, Q.T. in Sept., and Vigils have no Vespers if superseded
       }
       if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
-      %cstr = %{officestring('Latin', $commemo, 0)};
+      %cstr = %{officestring($lang1, $commemo, 0)};
 
       if (%cstr) {
         my @cr = split(";;", $cstr{Rank});
@@ -1288,7 +1288,7 @@ sub concurrence {
         next;
       }    # Feria minor and Vigils have no Vespers if superseded
       if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
-      %cstr = %{officestring('Latin', $commemo, 0)};
+      %cstr = %{officestring($lang1, $commemo, 0)};
 
       if (%cstr) {
         my @cr = split(";;", $cstr{Rank});
@@ -1314,7 +1314,7 @@ sub concurrence {
 
     foreach $commemo (@ccommemoentries) {
       if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
-      %cstr = %{officestring('Latin', $commemo, 1)};
+      %cstr = %{officestring($lang1, $commemo, 1)};
 
       if (($commemo =~ /tempora/i || $cstr{Rank} =~ /infra octavam/i) && $cstr{Rank} !~ /Dominica/i) {
         next;    # no superseded Tempora or day within octave can have 1st vespers unless a Sunday
@@ -1740,9 +1740,9 @@ sub climit1960 {
 
   # Subsume commemoration in special case 7-16 with Common 10 (BVM in Sabbato)
   return 0 if $c =~ /7-16/ && $winner =~ /C10/;
-  my %w = %{setupstring('Latin', $winner)};
+  my %w = %{setupstring($lang1, $winner)};
   if ($winner !~ /tempora|C10/i) { return 1; }
-  my %c = %{setupstring('Latin', $c)};
+  my %c = %{setupstring($lang1, $c)};
   my @r = split(';;', $c{Rank});
 
   if ($w{Rank} =~ /Dominica/i) {
@@ -1781,7 +1781,7 @@ sub rankname {
   # read only globals
   our ($rank, $winner, $commune, $version, $day, $month, $year, $dayofweek, $hora);
 
-  my %latwinner = %{setupstring('Latin', $winner)};
+  my %latwinner = %{setupstring($lang1, $winner)};
   my $latname = $latwinner{Rank} =~ s/\;\;.*//r;
   my %t = %{setupstring($lang, 'Psalterium/Comment.txt')};
   my @ranktable = split("\n", $t{Festa});
@@ -1883,7 +1883,7 @@ sub rankname {
 # the function is modeled from setheadline(), hence its clumsy look and feel
 sub setChantTone {
 
-  my %latwinner = %{setupstring('Latin', $winner)};
+  my %latwinner = %{setupstring($lang1, $winner)};
   my @latrank = split(';;', $latwinner{Rank});
   my $name = $latrank[0];
   my $rank = $latrank[2];
