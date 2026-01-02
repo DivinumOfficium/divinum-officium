@@ -1,71 +1,42 @@
-[Name]
-Commúne Confessóris non pontíficis
+[Officium]
+Commune Confessoris non pontificis
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
+[Missa]
+Os justi
+
+[Comment]
+# 21 – 1 Msza o Wyznawcy – Os iusti
+Święty Wyznawca okazał heroiczną miłość ku Bogu, wiernie wypełniając obowiązki i opierając się pokusom. W ten sposób stał się świadkiem Boga na podobieństwo męczenników.
 
 [Ant Vespera]
-Panie, * dałeś mi pięć talentów, otom drugie pięć zyskał.;;109
-Dobrzeć sługo dobry * i wierny, gdyżeś nad małem był wiernym, wnijdź do wesela Pana twego.;;110
-Oto jest sługa wierny * i roztropny, którego postanowił pan jego nad czeladzią swoją.;;111
-Błogosławiony on sługa, * którego przyszedłszy Pan, znajdzie czuwającego.;;112
-Sługo dobry i wierny, wnijdź do wesela Pana twego.;;116
-
-[Capitulum Vespera]
-!Syr 31:8-9
-v. Szczęśliwy mąż, który jest nalezion bez zmazy i który za złotem nie biegał ani ufał w pieniądzach i w skarbiech. Któż jest taki, a będziem go chwalić, abowiem uczynił dziwy w żywocie swoim.
-$Deo gratias
-
-[Hymnus1 Vespera]
-@Commune/C4:Hymnus1 Vespera
-
-[Hymnus Vespera]
-@Commune/C4:Hymnus Vespera
-
-[Versum 1]
-@Commune/C4
+Panie, * dałeś mi pięć talentów, otom drugie pięć zyskał.
+Dobrzeć sługo dobry * i wierny, gdyżeś nad małem był wiernym, wnijdź do wesela Pana twego.
+Oto jest sługa wierny * i roztropny, którego postanowił pan jego nad czeladzią swoją.
+Błogosławiony on sługa, * którego przyszedłszy Pan, znajdzie czuwającego.
+Sługo dobry i wierny, wnijdź do wesela Pana twego.
 
 [Ant 1]
 Będzie przypodobany * mężowi mądremu, który zbudował dom swój na opoce.
 
-[Invit]
-@Commune/C4
+[Oratio]
+Boże, który uroczystością błogosławionego N., Wyznawcy Twego, corocznie nas uweselasz, dozwól łaskawie, abyśmy naśladowali uczynki tego, którego narodziny wysławiamy.
+$Per Dominum.
 
-[Hymnus Matutinum]
-@Commune/C4:Hymnus Vespera
-
-[Hymnus1 Matutinum]
-@Commune/C4:Hymnus1 Vespera
-
-
-[Ant Matutinum]
-Błogosławiony mąż, * który w Zakonie Pańskim, rozmyśla: wola jego trwa we dnie i w nocy, wszystko co uczyni zawżdy się mu poszczęści.;;1
-Błogosławiony ten Święty, * który ufał Panu, ogłaszał przykazania Pańskie, postawiony jest na górze świętej jego;;2
-Tyś jest chwałą moją, * tyś obrońcą moim Panie: ty wywyższający głowę moje i wysłuchałeś mie z góry świętej twojej.;;3
-V. Umiłował go Pan, i przyozdobił go.
-R. Szatą chwały przyodział go.
-Wzywającego * Pan wysłuchał Świętego swego, Pan go wysłuchał i postawił w pokoju.;;4
-Niech się weselą * wszyscy którzy mają w Tobie nadzieję Panie, boś ty błogosławił sprawiedliwemu, jako tarczą dobrej woli obtoczyłeś go.;;5
-Panie, Panie nasz, * jakóż dziwne jest imię twoje po wszystkiéj ziemi, bo chwałą i czcią ukoronowałeś Świętego swego i postanowiłeś go nad dziełami rąk twoich.;;8
+[Nocturn 2 Versum]
 V. Usta sprawiedliwego będą rozmyślać mądrość.
 R. A język jego będzie mówił sąd.
-Panie, * ten Święty będzie mieszkał w przybytku twoim i czynił sprawiedliwość, odpocznie na górze twojéj świętéj.;;14
-Żywota prosił * u ciebie: i dałeś mu Panie, sławę i wielką ozdobę włożyłeś nań, położyłeś na głowę jego koronę z kamienia drogiego.;;20
-Ten weźmie * błogosławieństwo od Pana: i miłosierdzie od Boga, zbawiciela swego: bo ten jest naród szukających Pana.;;23
+
+[Nocturn 3 Versum]
 V. Zakon Boga jego w sercu jego.
 R. A nie będą przerzucone kroki jego
 
 [Lectio1]
-Z Księgi Ekklezjastyka
+Z Księgi Eklezjastyka
 !Syr 31:8-11
 8 Szczęśliwy bogacz, który jest nalezion bez zmazy i który za złotem nie biegał ani ufał w pieniądzach i w skarbiech.
 9 Któż jest taki, a będziem go chwalić, abowiem uczynił dziwy w żywocie swoim.
 10 Kto jest w tym doświadczony, a jest doskonały, będzie miał chwałę wieczną, który mógł zgrzeszyć, a nie zgrzeszył, źle czynić, a nie czynił.
 11 I przetoż utwierdzone są dobra jego w Panu, a jałmużny jego będzie wysławiało wszytko zgromadzenie świętych.
-
-[Responsory1]
-@Commune/C4
 
 [Lectio2]
 !Syr 32:18-20; 32:28; 33:1-3
@@ -79,7 +50,7 @@ Z Księgi Ekklezjastyka
 
 [Lectio3]
 !Syr 34:14-20
-14 wszytkie drogi jego są według wolej jego: tak człowiek w ręku tego, który go uczynił, i odda mu według zdania swego.
+14 Wszytkie drogi jego są według wolej jego: tak człowiek w ręku tego, który go uczynił, i odda mu według zdania swego.
 15 Bo nadzieja ich w ich zbawicielu, a oczy Boskie nad tymi, którzy go miłują.
 16 Kto się Pana boi, nic się nie lęka ani się bać będzie, bo on jest nadzieja jego.
 17 Kto się Pana boi, błogosławiona jest dusza jego.
@@ -111,18 +82,10 @@ R. Oto ten, który wielkich dzieł dokonał przed Bogiem i z całego serca chwal
 V. Oto człowiek bez zarzutu, prawdziwy czciciel Boga; wstrzymywał się od wszelkiego zła, trwając w swojej niewinności.
 R. Niech więc oręduje za grzesznikami spośród wszystkich ludów.
 
-[Responsory8]
-@Commune/C4
-
-[Ant Laudes]
-Panie, * dałeś mi pięć talentów, otom drugie pięć zyskał.
-Dobrzeć sługo dobry * i wierny, gdyżeś nad małem był wiernym, wnijdź do wesela Pana twego.
-Oto jest sługa wierny * i roztropny, którego postanowił pan jego nad czeladzią swoją.
-Błogosławiony on sługa, * którego przyszedłszy Pan, znajdzie czuwającego.
-Sługo dobry i wierny, wnijdź do wesela Pana twego.
-
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Syr 31:8-9
+v. Szczęśliwy mąż, który jest nalezion bez zmazy i który za złotem nie biegał ani ufał w pieniądzach i w skarbiech. Któż jest taki, a będziem go chwalić, abowiem uczynił dziwy w żywocie swoim.
+$Deo gratias
 
 [Hymnus Laudes]
 {:H-Jesucoronacelsior:}v. Jezu, korono najwyższa,
@@ -166,71 +129,33 @@ Oraz Świętemu Pocieszycielowi,
 Po wszystek zawsze wiek.
 Amen.
 
-[Versum 2]
-@Commune/C4
-
 [Ant 2]
 Dobrzeć, sługo dobry * i wierny, gdyżeś nad małem był wiernym, nad wielem cię postanowię, wnidź do wesela Pana twego.
-
-[Oratio]
-Boże, który uroczystością błogosławionego N., Wyznawcy Twego, corocznie nas uweselasz, dozwól łaskawie, abyśmy naśladowali uczynki tego, którego narodziny wysławiamy.
-$Per Dominum.
-
-[Oratio1]
-Prosimy Cię, Panie, niechaj przyczyna błogosławionego N., Opata Twego, poleci nas Twej opiece, abyśmy, czego własną zasługą uzyskać nie możemy, za jego pomocą dostąpili.
-$Per Dominum.
 
 [Lectio Prima]
 !Mdr 10:10
 v. Sprawiedliwego prowadził Pan drogami prostemi, i ukazał mu królestwo Boże, i dał mu poznanie świętych: uczcił go w pracach i napełnił prace jego.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
-R.br. Umiłował go Pan, * I przyozdobił go.
-R. Umiłował go Pan, * I przyozdobił go.
-V. Szatą chwały przyodział go.
-R. I przyozdobił go.
-&Gloria
-R. Umiłował go Pan, * I przyozdobił go.
-_
-V. Usta sprawiedliwego będą rozmyślać mądrość.
-R. A język jego będzie mówił sąd.
 
 [Capitulum Sexta]
 !Syr 39:6
 v. Sprawiedliwy obróci serce swe, aby wstawał rano do Pana, który go stworzył, a przed oczyma Nawyższego modlić się będzie.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Usta sprawiedliwego * Będą rozmyślać mądrość.
 R. Usta sprawiedliwego * Będą rozmyślać mądrość.
 V. A język jego będzie mówił sąd.
 R. Będą rozmyślać mądrość.
 &Gloria
 R. Usta sprawiedliwego * Będą rozmyślać mądrość.
-_
-V. Zakon Boga jego w sercu jego.
-R. A nie będą przerzucone kroki jego
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Zakon Boga jego * W sercu jego.
 R. Zakon Boga jego * W sercu jego.
 V. A nie będą przerzucone kroki jego
 R. W sercu jego.
 &Gloria
 R. Zakon Boga jego * W sercu jego.
-_
-V. Sprawiedliwego prowadził Pan drogami prostymi.
-R. I okazał mu królestwo Boże.
-
-[Versum 3]
-@:Versum 2
 
 [Ant 3]
 Ten mąż, wzgardziwszy światem * i dobrami ziemskiemi, triumfuje, zebrawszy czynami i słowy skarby dla nieba.
@@ -280,3 +205,59 @@ Przedajcie co macie a dajcie jałmużnę. Tu Pan mówi nie bójcie się, aby tym
 
 [Lectio9 in 2 loco]
 Czyńcie sobie mieszki które nie wietrzeją, to jest: jałmużny czyniąc których zapłata trwa na wieki. Gdzie nie mamy rozumieć aby Pan przykazował aby święci pieniędzy nie chowali albo na potrzeby swe albo ubogich. Ponieważ i Pan sam któremu aniołowie służyli jednak aby nauczył kościół swój czytamy że mieszek miał i jałmużny wiernych chował i na swoje potrzeby i innych obracał. Ale tu Pan naucza, abyśmy nie dla tych rzeczy Bogu służyli i dla bojaźni niedostatku sprawiedliwości nie odbiegali.
+
+[Introitus]
+!Ps 36:30-31
+v. Usta sprawiedliwego głoszą mądrość i język jego mówi to, co słuszne; prawo jego Boga mieszka w jego sercu. (Alléluia, alléluia.)
+!Ps 36:1
+Nie unoś się z powodu złoczyńców, ani nie zazdrość czyniącym nieprawość.
+&Gloria
+v. Usta sprawiedliwego głoszą mądrość i język jego mówi to, co słuszne; prawo jego Boga mieszka w jego sercu. (Alléluia, alléluia.)
+
+[Oratio] (ad missam)
+Boże, który co roku uweselasz nas uroczystością świętego N., Twojego Wyznawcy, spraw łaskawie, abyśmy również naśladowali czyny tego, którego narodziny dla nieba obchodzimy.
+$Per Dominum
+
+[Lectio]
+Czytanie z Księgi Syracydesa.
+!Syr 31:8-11
+Błogosławiony mąż, który okazał się bez zmazy i który nie ubiegał się za złotem, i nadziei nie pokładał w pieniądzach i skarbach. Któż to jest? – a chwalić go będziemy. Bo w życiu swym dziwów dokonał. Kto w tej sprawie jest doświadczony i doskonały, będzie miał wieczną chwałę: który mógł przestąpić, a nie przestąpił, źle czynić, a nie uczynił; przeto pewne są skarby jego u Pana, a jałmużny jego wysławiać będzie zgromadzenie świętych.
+
+[Graduale]
+! Ps 91:13; 91:14
+Sprawiedliwy zakwitnie jak palma, rozrośnie się jak cedr na Libanie w domu Pańskim.
+!Ps 91:3
+By głosić z rana Twoje miłosierdzie, a wierność Twoją nocami. Alleluja, alleluja.
+!Jk 1:12
+Błogosławiony człowiek, który zniesie pokusę, bo utwierdziwszy się, otrzyma wieniec żywota. Alleluja.
+
+[GradualeP]
+Alleluja, alleluja
+!Jk 1:12.
+Błogosławiony człowiek, który zniesie pokusę, bo utwierdziwszy się, otrzyma wieniec żywota. Alleluja.
+!Syr 45:9
+Umiłował go Pan i przyozdobił, przyodział go szatą chwały. Alleluja.
+
+[Tractus]
+! Ps 91:13; 91:14
+V. Sprawiedliwy zakwitnie jak palma, rozrośnie się jak cedr na Libanie w domu Pańskim.
+!Ps 91:3
+V. By głosić z rana Twoje miłosierdzie, a wierność Twoją nocami. Alleluja, alleluja.
+!Ps 111:1-3
+Błogosławiony mąż, który boi się Pana i wielką radość znajduje w Jego nakazach.
+V. Potomstwo jego będzie potężne na ziemi, dozna błogosławieństwa pokolenie prawych.
+V. Zasoby i bogactwa będą w jego domu, a hojność jego będzie trwała zawsze.
+
+[Evangelium]
+Ciąg dalszy ++ Ewangelii świętej według Łukasza.
+!Łk 12:35-40
+! Życie Świętych było czujnym oczekiwaniem powrotu Chrystusa.
+Onego czasu: Rzekł Jezus uczniom swoim: «Niechaj biodra wasze będą przepasane i pochodnie gorejące w rękach waszych. A sami bądźcie podobni do ludzi oczekujących powrotu pana swego z godów weselnych; aby, gdy nadejdzie i zakołacze, natychmiast mu otworzyć. Błogosławieni słudzy owi, których pan, gdy nadejdzie, zastanie czuwającymi. Zaprawdę powiadam wam, że przepasze się i każe im zasiąść, a przechodząc usługiwać im będzie. I czy przyjdzie o drugiej straży, czy też o trzeciej straży nadejdzie, a tak zastanie: błogosławieni są słudzy owi. A to wiedzcie, że gdyby wiedział pan domu, o której godzinie nadejdzie złodziej, czuwałby zaiste i nie dopuściłby podkopać domu swego. I wy bądźcie gotowi, bo Syn Człowieczy nadejdzie w godzinie, w której się nie spodziewacie.
+
+[Secreta]
+Wspominając Twoich Świętych składamy Ci, Panie, ofiarę chwały i ufamy, że ona wybawi nas od złego teraz i w przyszłości.
+$Per Dominum
+
+[Postcommunio]
+Pokrzepieni niebieskim pokarmem i napojem, błagamy Cię pokornie, Boże nasz, niech nas bronią modlitwy tego, w którego święto przyjęliśmy te dary.
+$Per Dominum

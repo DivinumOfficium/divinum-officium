@@ -1,5 +1,11 @@
+[Officium]
+Die IV infra octavam Paschæ
+
 [Rank]
-Die IV infra octavam Paschæ;;Semiduplex I classis;;6;;ex Pasc0-0
+;;Semiduplex I classis;;6.9;;ex Pasc0-0
+
+[Rank] (rubrica cisterciensis)
+;;Semiduplex I classis;;5.9;;ex Pasc0-0
 
 [Rule]
 ex Pasc0-0;
@@ -8,6 +14,10 @@ Omit Hymnus Preces Suffragium;
 Minores sine Antiphona;
 Capitulum Versum 2;
 Psalmi Dominica;
+
+[Oratio]
+Deus, qui nos resurrectiónis Domínicæ ánnua solemnitáte lætíficas: concéde propítius; ut per temporália festa quæ ágimus, perveníre ad gáudia ætérna mereámur.
+$Per eumdem
 
 [Ant Matutinum]
 @Tempora/Pasc0-0::s/^V\..*//sm
@@ -21,7 +31,7 @@ In illo témpore: Manifestávit se íterum Jesus discípulis ad mare Tiberíadis
 _
 Homilía sancti Gregórii Papæ
 !Homilia 24 in Evangelia
-Léctio sancti Evangélii, quæ modo in áuribus vestris lecta est, fratres mei, quæstióne ánimum pulsat, sed pulsatióne sua vim discretiónis índicat. Quæri étenim potest, cur Petrus, qui piscátor ante conversiónem fuit, post conversiónem ad piscatiónem rédiit: et cum Véritas dicat: Nemo míttens manum suam ad arátrum, et aspíciens retro, aptus est regno Dei: cur repétiit quod derelíquit? Sed si virtus discretiónis inspícitur, cítius vidétur: quia nimírum negótium, quod ante conversiónem sine peccáto éxstitit, hoc étiam post conversiónem repétere culpa non fuit.
+Léctio sancti Evangélii, quæ modo in áuribus vestris lecta est, fratres mei, quæstióne ánimum pulsat, sed pulsatióne sua vim discretiónis índicat. Quæri étenim potest, cur Petrus, qui piscátor ante conversiónem fuit, post conversiónem ad piscatiónem rédiit: et cum Véritas dicat: Nemo mittens manum suam ad arátrum, et aspíciens retro, aptus est regno Dei: cur repétiit quod derelíquit? Sed si virtus discretiónis inspícitur, cítius vidétur: quia nimírum negótium, quod ante conversiónem sine peccáto éxstitit, hoc étiam post conversiónem repétere culpa non fuit.
 
 [Responsory1]
 R. Ecce vicit leo de tribu Juda, radix David, aperíre librum, et sólvere septem signácula ejus:
@@ -47,9 +57,13 @@ Quæri étiam potest, cur discípulis in mari laborántibus, post resurrectióne
 [Ant 2]
 Míttite in déxteram * navígii rete, et inveniétis, allelúja.
 
-[Oratio]
-Deus, qui nos resurrectiónis Domínicæ ánnua solemnitáte lætíficas: concéde propítius; ut per temporália festa quæ ágimus, perveníre ad gaúdia ætérna mereámur.
-$Per eumdem
+[Ant 3_]
+Dixit Jesus * discípulis suis: Afférte de píscibus, quos prendidístis nunc. Ascéndit autem Simon Petrus, et traxit rete in terram plenum magnis píscibus, allelúja.
 
 [Ant 3]
-Dixit Jesus * discípulis suis: Afférte de píscibus, quos prendidístis nunc. Ascéndit autem Simon Petrus, et traxit rete in terram plenum magnis píscibus, allelúja.
+@:Ant 3_
+(sed rubrica cisterciensis)
+@:Ant 3C
+
+[Ant 3C]
+Hoc jam tértio * manifestávit se Jesus, postquam resurréxit a mórtuis, allelúja.

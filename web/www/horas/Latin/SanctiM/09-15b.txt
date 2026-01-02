@@ -1,0 +1,47 @@
+@Sancti/09-15
+
+[Rank]
+Septem Dolorum Beatæ Mariæ Virginis;;Duplex;;3
+
+[Rule]
+Psalmi Dominica
+
+[Responsory Vespera]
+@Sancti/09-15:Responsory Breve Nona
+
+[Hymnus Vespera]
+@:Hymnus Laudes
+
+[Doxology]
+Glória, tibi sit glória,
+Qui passus es pro sérvulis,
+Cum Patre et Sancto Spíritu,
+In sempitérna sǽcula.
+Amen.
+
+[Responsory1]
+@Sancti/09-15:Responsory8
+
+[Lectio94]
+@Tempora/Quad5-5:Lectio4:s/$/~/
+@Tempora/Quad5-5:Lectio6:s/Sed .*//s
+
+[MM Capitulum]
+@Sancti/09-15:Capitulum Sexta
+_
+@Sancti/09-15:Versum Sexta
+
+[Responsory Laudes]
+@Sancti/09-15:Responsory Breve Sexta
+
+[Hymnus Laudes]
+@Sancti/09-15::s/Tempora.Quad5-5//
+
+[Responsory TertiaM]
+@Sancti/09-15:Versum Tertia
+
+[Responsory SextaM]
+@Sancti/09-15:Nocturn 2 Versum
+
+[Responsory NonaM]
+@Sancti/09-15:Versum Nona

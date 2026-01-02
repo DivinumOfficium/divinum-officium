@@ -1,41 +1,15 @@
-[Name]
-Commune Doctore
+[Officium]
+Commune Doctoris Pontificis
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=131
-
-[Ant Vespera]
-@Commune/C4
-
-[Capitulum Vespera]
-@Commune/C4
-
-[Hymnus1 Vespera]
-@Commune/C4:Hymnus1 Vespera
-
-[Hymnus Vespera]
-@Commune/C4:Hymnus Vespera
-
-[Versum 1]
-@Commune/C4
+[Missa]
+In medio
 
 [Ant 1]
 ¡Oh doctor admirable, * luz de la Iglesia santa, bienaventurado N., fiel cumplidor de la Ley!, ruega por nosotros al Hijo de Dios.
 
-[Invit]
-@Commune/C4
-
-[Hymnus Matutinum]
-@Commune/C4:Hymnus Vespera
-
-[Hymnus1 Matutinum]
-@Commune/C4:Hymnus1 Vespera
-
-[Ant Matutinum]
-@Commune/C4
+[Oratio]
+¡Oh Dios!, que has hecho a san N. ministro para la salvación eterna de tu pueblo, concédenos que merezcamos tener por intercesor en los cielos al que hemos tenido por maestro de vida en la tierra.
+$Per Dominum
 
 [Lectio1]
 Del Libro del Eclesiástico
@@ -46,9 +20,6 @@ Del Libro del Eclesiástico
 4 Asistirá en medio de los magnates, y se presentará delante del que gobierna.
 5 Pasará a países de naciones extrañas, para reconocer aquello que hay de bueno y de malo entre los hombres.
 
-[Responsory1]
-@Commune/C4
-
 [Lectio2]
 !Sir 39:6-10
 6 Despertando muy de mañana, dirigirá su corazón al Señor que le crio, y se pondrá en oración en la presencia del Altísimo. 
@@ -57,9 +28,6 @@ Del Libro del Eclesiástico
 9 y derramará sobre él como lluvia máximas de su sabiduría; y en la oración dará gracias al Señor. 
 10 Y pondrá en práctica sus consejos y documentos, y meditará sus ocultos juicios.
 
-[Responsory2]
-@Commune/C4
-
 [Lectio3]
 !Sir 39:11-14
 11 Expondrá públicamente la doctrina que ha aprendido, y pondrá su gloria en la ley del testamento del Señor.
@@ -67,41 +35,31 @@ Del Libro del Eclesiástico
 13 No perecerá su memoria, y su nombre será repetido de generación en generación.
 14 Las naciones pregonarán su sabiduría, y la Iglesia celebrará sus alabanzas.
 
-[Responsory3]
-@Commune/C4
-
 [Lectio4]
-@Commune/C4
-
-[Responsory4]
-@Commune/C4
-
-[Lectio5]
-@Commune/C4
-
-[Responsory5]
-@Commune/C4
-
-[Lectio6]
-@Commune/C4
-
-[Responsory6]
-@Commune/C4
+Del libro de las Morales de San Gregorio, Papa.
+!Lib. 9, cap. 6.
+En el libro de Job (9, 9) está escrito que Dios creó las estrellas Arturo, Orión y las Híades. Ahora bien, si la constelación de Orión significa místicamente la constelación espiritual de los Santos Mártires, ¿quién se puede entender que son las Híades, sino los Doctores de la Santa Iglesia? Cuando se pone la gloriosa constelación de los mártires, y la luz de la fe se hace más intensa, se alza la constelación de los Doctores en el firmamento de la Iglesia, aún en la primavera que sigue al invierno de la incredulidad, y el Sol de la verdad está en lo alto alumbrando los corazones de Sus fieles. Cuando las tormentas de la persecución amainaron y las largas noches de incredulidad pasaron, se alzaron los Doctores para alumbrar a la Iglesia, cuando la primavera de la fe traía promesas de un año aún más resplandeciente.
 
 [Lectio7]
-Lectura del santo Evangelio según San Mateo
+Lectura del Santo Evangelio según San Mateo
+!Mt 5:13-19
+En aquel tiempo: Jesús dijo a sus discípulos: Vosotros sois la sal de la tierra, y si la sal se hace insípida, ¿con qué se le volverá el sabor? Y lo que sigue.
+_
+Homilía de S. Agustín, Obispo.
+!Libro 1 del Sermón del Señor en la Montaña, cap. 6
+Con mucha coherencia continúa el Señor: «Vosotros sois la sal de la tierra», mostrando que han de ser tenidos por insensatos aquellos que, ambicionando la abundancia y temiendo la escasez de bienes temporales, pierden los bienes eternos que no pueden ser dados ni quitados por los hombres. Por tanto: «Si la sal se volviese sosa, ¿con qué se podría volver salada?» Es decir, si vosotros, por los cuales se podría decir que deben ser fundados los pueblos, por temor a las persecuciones temporales perdieseis el reino de los cielos, ¿quiénes serán los hombres mediante los cuales se os libre del error, dado que el Señor os ha escogido para eliminar el error de los demás?
+
+[Lectio7] (version altera)
+Lectura del santo Evangelio según San Mateo 
 !Mt 5:13-19
 En aquel tiempo: Dijo Jesús a sus discípulos: Vosotros sois la sal de la tierra. Y si la sal se hace insípida, ¿con qué se le volverá el sabor? Y lo que sigue.
 _
-Homilía de San Hilario, Obispo. 
-!Com. sobre San Mateo, can. 4
-“Vosotros sois la sal de la tierra”. Ahora bien, si la sal fuere insípida, nada valdría lo que se salara con ella. Según creo, no existe la sal en la tierra. ¿Cómo, pues, llamó a los Apóstoles sal de la tierra? A este fin debemos estudiar la propiedad de estas palabras, y para ello debemos fijarnos en el ministerio de los apóstoles, y en la naturaleza de la misma sal. La sal contiene en sí el elemento del agua y del fuego, y de ambos está formada.
-
-[Responsory7]
-@Commune/C4
+Homilía de San Agustín, Obispo.
+!Libro 1 del Sermón del Señor en el monte, cap. 6
+Muestra el Señor que han de ser tenidos por gentes que carecen de sabor espiritual los que, buscando la abundancia de bienes temporales, o movidos por el temor de verse privados de ellos, pierden los eternos, que no nos pueden dar ni quitar los hombres. Pues, si la sal se hace insípida, ¿con qué se le volverá el sabor? Esto es, si vosotros, por quienes en cierto modo han de ser sazonados los pueblos, por el miedo de las persecuciones perdiereis el reino de los cielos, ¿qué será de los hombres a quienes debíais librar del error, pues Dios os eligió para salvar del error a los demás?
 
 [Lectio8]
-El efecto de ésta al emplearse para el uso del humano linaje consiste en producir la incorrupción de los cuerpos, y es en gran manera apta para dar sabor a los alimentos. Ahora bien, los apóstoles son como los predicadores de las cosas celestiales y como los sembradores de la eternidad, que comunican la inmortalidad a todos los cuerpos sobre los cuales su palabra fuere derramada. Con razón, de consiguiente, fueron llamados sal de la tierra, en virtud de su doctrina, la cual a manera de sal conserva los cuerpos para la eternidad.
+En efecto: «No sirve para nada la sal insípida, sino para ser arrojada fuera y ser pisada por los hombres». Pues no es pisoteado por los hombres quien padece persecución, sino quien temiendo la persecución se vuelve fatuo. Sólo puede ser pisado quien es inferior; pero no es inferior quien, aunque en el cuerpo sufra mucho en la tierra, sin embargo su corazón está fijo en el cielo.
 
 [Responsory8]
 R. Abrió su boca en medio de la Iglesia; 
@@ -112,64 +70,24 @@ R. Y le llenó el Señor del Espíritu de sabiduría e inteligencia.
 R. Y le llenó el Señor del Espíritu de sabiduría e inteligencia.
 
 [Lectio9]
-Mas la naturaleza de la sal siempre es la misma; no puede mudarse jamás. Pero porque el hombre está sujeto a mudanzas, y solo es dichoso aquel que hasta el fin permane en todas las obras de Dios, por lo mismo a los apóstoles, designados con el nombre de sal, se les amonesta a que perseveren en la virtud de la potestad que les ha sido confiada, no sea que se vuelvan insípidos, y para nada sirvan, o que perdiendo el sentimiento del sabor recibido, no vivifiquen lo que está corrompido, y que, arrojados de la Iglesia sean pisados por aquellos a quienes comunicasen su insipidez.
+Vosotros sois la luz del mundo. Así como antes había dicho: sal de la tierra, ahora dice: luz del mundo. Ni antes se debe entender la tierra como aquella que pisamos con los pies, sino los hombres que viven en la tierra, o también los pecadores, ya que el Señor ha enviado la sal apostólica para sazonarlos y extinguir su hedor. Ni aquí por mundo se ha de entender el cielo y la tierra, sino los hombres que están en el mundo o aman el mundo y a los cuales el Señor ha enviado a los apóstoles para iluminarlos. No se puede encubrir una ciudad construida sobre el monte, es decir, fundada sobre una insigne y gran justicia, simbolizada también por el monte donde el Señor está enseñando.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera
+[Lectio7 in 2 loco]
+Lectura del santo Evangelio según San Mateo
+!Mt 5:13-19
+En aquel tiempo: Dijo Jesús a sus discípulos: Vosotros sois la sal de la tierra. Y si la sal se hace insípida, ¿con qué se le volverá el sabor? Y lo que sigue.
+_
+Homilía de San Hilario, Obispo. 
+!Com. sobre San Mateo, can. 4
+“Vosotros sois la sal de la tierra”. Ahora bien, si la sal fuere insípida, nada valdría lo que se salara con ella. Según creo, no existe la sal en la tierra. ¿Cómo, pues, llamó a los Apóstoles sal de la tierra? A este fin debemos estudiar la propiedad de estas palabras, y para ello debemos fijarnos en el ministerio de los apóstoles, y en la naturaleza de la misma sal. La sal contiene en sí el elemento del agua y del fuego, y de ambos está formada.
 
-[Capitulum Laudes]
-@:Capitulum Vespera
+[Lectio8 in 2 loco]
+El efecto de ésta al emplearse para el uso del humano linaje consiste en producir la incorrupción de los cuerpos, y es en gran manera apta para dar sabor a los alimentos. Ahora bien, los apóstoles son como los predicadores de las cosas celestiales y como los sembradores de la eternidad, que comunican la inmortalidad a todos los cuerpos sobre los cuales su palabra fuere derramada. Con razón, de consiguiente, fueron llamados sal de la tierra, en virtud de su doctrina, la cual a manera de sal conserva los cuerpos para la eternidad.
 
-[Hymnus Laudes]
-@Commune/C4:Hymnus Laudes
-
-[Versum 2]
-@Commune/C4
-
-[Ant 2]
-@Commune/C4
-
-[Oratio]
-Concede nos, quǽsumus, omnipotens Deus, beati N. confessoris tui atque Pontificis monita et exempla sectari: ut per terrestrium rerum conceptum aeterna gaudia consequamur.
-$Per Dominum
-
-[Oratio1]
-@Commune/C4
-
-[Oratio2]
-@Commune/C4
-
-[Oratio3]
-v. Te pedimos, Dios todopoderoso, que al celebrar la fiesta de San N., obispo, aumente nuestro celo por servirte, y crezca en nosotros tu obra de salvación. 
-$Per Dominum.
-
-[Lectio Prima]
-@Commune/C4
-
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
-@Commune/C4
-
-[Capitulum Sexta]
-@Commune/C4
-
-[Responsory Sexta]
-@Commune/C4
-
-[Capitulum Nona]
-@Commune/C4
-
-[Responsory Nona]
-@Commune/C4
-
-[Versum 3]
-@:Versum 2
-
-[Ant 3]
-@:Ant 1
+[Lectio9 in 2 loco]
+Mas la naturaleza de la sal siempre es la misma; no puede mudarse jamás. Pero porque el hombre está sujeto a mudanzas, y solo es dichoso aquel que hasta el fin permane en todas las obras de Dios, por lo mismo a los apóstoles, designados con el nombre de sal, se les amonesta a que perseveren en la virtud de la potestad que les ha sido confiada, no sea que se vuelvan insípidos, y para nada sirvan, o que perdiendo el sentimiento del sabor recibido, no vivifiquen lo que está corrompido, y que, arrojados de la Iglesia sean pisados por aquellos a quienes comunicasen su insipidez.
+&teDeum
 
 [Lectio7 in 3 loco]
 Lectura del santo Evangelio según San Mateo 
@@ -186,3 +104,33 @@ Al decir: “Vosotros sois la sal de la tierra”, muestra que toda la naturalez
 [Lectio9 in 3 loco]
 Por eso dijo, no penséis que habéis de ser conducidos a luchas fáciles, ni que debáis dar cuenta de cosas poco importantes, puesto que: “Vosotros sois la sal de la tierra”. Pero, ¿acaso los apóstoles curaron lo que estaba del todo corrompido? En manera alguna. Ya que de ningún modo puede darse que aquello que ya está corrompido, sea devuelto al estado primitivo con la aplicación de la sal. No hicieron esto, sino que, hallándose ya renovado y libre de podre lo que se les había confiado, echaban sal y lo conservaban en aquel estado en que lo recibieron del Señor. Y a la verdad, es propio de la virtud de Cristo librar de la corrupción de los pecados; pero impedir que no se recaiga en los mismos, ésta es misión y obra de los apóstoles.
 &teDeum
+
+[Introitus]
+!Eccli 15:5
+v. El Señor le ha abierto la boca en medio de la asamblea; lo ha llenado del espíritu de sabiduría y de inteligencia, lo ha revestido de honor y de gloria. (Allelúja, allelúja.)
+!Ps 91:2
+Bueno es alabar al Señor; cantar tu nombre, oh Altísimo.
+&Gloria
+v. El Señor le ha abierto la boca en medio de la asamblea; lo ha llenado del  espíritu de sabiduría y de inteligencia, lo ha revestido de honor y de gloria. (Allelúja, allelúja.)
+
+[Lectio]
+Lectura de la segunda carta del Apóstol San Pablo a Timoteo
+!2 Tim 4:1-8
+Carísimo: Yo te conjuro delante de Dios y de Jesucristo, que ha de juzgar vivos y muertos, y por su aparición y su reino. Proclama la Palabra, insiste a tiempo y a destiempo; reprende, ruega, exhorta, con paciencia siempre y afán de enseñar. Porque vendrá tiempo en que no soportarán la sana doctrina, sino que en alas de sus pasiones y con la comezón en sus oídos, se elegirán maestros a granel y desviarán sus oídos de la verdad y se volverán hacia las fábulas. Tú, anda sobre ti en todo, soporta el sufrimiento; haz obra de predicador del Evangelio; cumple con tu ministerio. Sé sobrio. Pues yo estoy ya ofrecido en sacrificio y se acerca el tiempo de mi muerte.  He luchado la buena lucha; he concluido la carrera; he guardado la fidelidad. Ya no me queda sino recibir la corona de justicia que me dará el Señor en aquel día, el justo juez, y no sólo a mí, sino también a los que hayan esperado su manifestación con amor.
+
+[Evangelium]
+Continuación + del Santo Evangelio según San Mateo
+!Mt 5:13-19
+En aquel tiempo: Dijo Jesús a sus discipulos: Vosotros sois la sal de la tierra. Si la sal se torna insípida, ¿con qué se la salará? Para nada vale ya, sino para que la tiren fuera y la pise la gente. Vosotros sois la luz del mundo. No se puede ocultar la ciudad edificada sobre un monte; ni se enciende una luz para ponerla debajo del celemín, sino sobre un candelero, y así alumbra a todos los de la casa. Brille así vuestra luz ante los hombres, para que vean vuestras buenas obras, y glorifiquen a vuestro Padre, que está en los cielos. No creáis que he venido a abrogar la Ley ni los Profetas; no he venido a abrogar, síno a completar. Porque en verdad os digo: antes pasarán el cielo y la tierra, que pase una sola iota o una tilde de la Ley, sín que todo se verifique. Y así, el que viole uno de estos mandatos más pequeños y enseñe a los hombres a hacerlo, será declarado el más pequeño en el reino de los cielos, pero el que los guarde y enseñe, será declarado grande en el reino de los cielos.
+
+[Offertorium]
+!Ps 91:13
+El justo crece como la palmera; se eleva como un cedro del Libano. (Aleluya.)
+
+[Secreta]
+No nos faite, Señor, la benévola oración de tu santo obispo y doctor N. y ella te haga agradable nuestra ofrenda y nos obtenga siempre tu perdón.
+$Per Dominum
+
+[Postcommunio]
+A fin de que Tus ritos sacrificiales nos brinden la salvación; te rogamos, Señor, que el bienaventurado N., obispo tuyo y maestro ilustre, venga a ser nuestro intercesor.
+$Per Dominum

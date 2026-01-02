@@ -1,23 +1,15 @@
-[Name]
-Commune Plurimorum Martyrum
+[Officium]
+Commune Plurimorum Martyrum Pontificum
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
+[Missa]
+Intret in conspectu
 
 [Ant Vespera]
-Quanti tormenti sopportarono tutti i Santi * per giungere con sicurezza alla palma del martirio!;;109
-Colla palma * i Santi sono pervenuti al regno ed hanno meritato le corone della gloria dalla mano di Dio.;;110
-I corpi dei Santi * sono sepolti nella pace, e i loro nomi vivranno in eterno.;;111
-Martiri del Signore, * benedite il Signore in eterno.;;112
-Coro dei Martiri, * benedite il Signore nei cieli, alleluia.;;116
-
-[Capitulum Vespera]
-!Sap 3:1-3
-v. Le anime dei giusti sono nelle mani di Dio e non saranno toccate dal tormento della morte. Agli occhi degli stolti parvero morire, invece sono nella pace.
-$Deo gratias.
+Quanti tormenti sopportarono tutti i Santi * per giungere con sicurezza alla palma del martirio!
+Colla palma * i Santi sono pervenuti al regno ed hanno meritato le corone della gloria dalla mano di Dio.
+I corpi dei Santi * sono sepolti nella pace, e i loro nomi vivranno in eterno.
+Martiri del Signore, * benedite il Signore in eterno.
+Coro dei Martiri, * benedite il Signore nei cieli, alleluia.
 
 [Hymnus Vespera]
 v. Cantiamo uniti gli incliti gaudi
@@ -58,8 +50,9 @@ R. E gloriatevi, o voi tutti retti di cuore.
 [Ant 1]
 Il regno dei cieli è di costoro, * che disprezzarono la vita del mondo e giunsero al premio del regno, e lavarono le loro anime nel sangue dell'Agnello.
 
-[Invit]
-Il Signore, re dei martiri, * venite, adoriamo.
+[Oratio]
+Fa', o Signore, che i santi N. e N. martiri e pontefici, dei quali celebriamo la festa, ci proteggano e con la loro valida preghiera ci raccomandino a Te.
+$Per Dominum
 
 [Hymnus Matutinum]
 v. Cantiamo con liete voci
@@ -92,16 +85,18 @@ Amen.
 Lungo i corsi delle acque * piantò la vigna dei giusti e il loro diletto fu nella legge del Signore.;;1
 Il Signore ha provato gli eletti come oro nel crogiuolo * e li ha graditi come olocausto in eterno.;;2
 Se dinanzi agli uomini * hanno sofferto torture, la speranza degli eletti è immortale in eterno.;;3
-V. Rallegratevi nel Signore ed esultate, o giusti.
-R. E gloriatevi, o voi tutti retti di cuore.
 Darò ai miei santi * un posto d'onore nel regno del Padre mio, dice il Signore.;;14
 Come Dio ha reso mirabile * il mio affetto verso i santi che sono nella sua terra!;;15
 I santi che sperano nel Signore * saranno forti, avranno ali come le aquile, voleranno e non si stancheranno.;;23
-V. Esultino i giusti al cospetto di Dio.
-R. E godano in letizia.
 I giusti pertanto * vivranno in eterno e presso il Signore è la loro ricompensa.;;32
 Sacrificarono il loro corpo alla morte per non servire agli idoli; perciò, incoronati, possiedono la palma.;;33
 Ecco, grande è presso Dio la ricompensa * dei santi: essi infatti morirono per Cristo e vivranno in eterno.;;45
+
+[Nocturn 2 Versum]
+V. Esultino i giusti al cospetto di Dio.
+R. E godano allegramente.
+
+[Nocturn 3 Versum]
 V. I giusti pertanto vivranno in eterno.
 R. E presso il Signore è la loro ricompensa.
 
@@ -158,7 +153,7 @@ R. Perciò meritarono una corona eterna.
 [Lectio4]
 Sermone di s. Agostino vescovo
 !Serm. 47. sui Santi.
-Ogni qual volta, fratelli carissimi,  celebriamo le feste dei santi martiri, aspettiamo di ottenere dal Signore, per la loro intercessione, dei benefici temporali così da meritare di ricevere, imitando questi stessi martiri, anche i beni eterni. Celebrano infatti veramente le gioiose festività dei santi martiri soltanto coloro che seguono gli esempi degli stessi martiri. Infatti le solennità dei martiri sono esortazioni al martirio; poiché non deve rincrescere di imitare quello che piace celebrare.  
+Ogni qual volta, fratelli carissimi,  celebriamo le feste dei santi martiri, aspettiamo di ottenere dal Signore, per la loro intercessione, dei benefici temporali così da meritare di ricevere, imitando questi stessi martiri, anche i beni eterni. Celebrano infatti veramente le gioiose festività dei santi martiri soltanto coloro che seguono gli esempi degli stessi martiri. Infatti le solennità dei martiri sono esortazioni al martirio; poiché non deve rincrescere di imitare quello che piace celebrare.
 
 [Responsory4]
 R. I tuoi santi, o Signore, hanno seguito una via meravigliosa e, osservando i tuoi precetti, sono rimasti illesi in mezzo all'infuriare delle acque; 
@@ -167,7 +162,7 @@ V. Ha percosso la pietra e ne sono sgorgate le acque, che corsero a torrenti.
 R. Apparve la terra asciutta e nel mar Rosso una via senza ostacoli.
 
 [Lectio5]
-Noi però vogliamo godere con i santi, ma non vogliamo sopportare con loro le tribolazioni del mondo. Certamente chi, per quanto può, non vorrà imitare i santi martiri, non potrà arrivare alla loro beatitudine. Anche l'apostolo Paolo infatti, così predica: "Se saremo compagni nella sofferenza, lo saremo pure nella consolazione".  E il Signore nel Vangelo: "Se il mondo vi odia, sappiate, che prima di voi ha odiato me". Rifiuta di appartenere al corpo, chi non vuol sopportare l'odio assieme al capo.
+Noi però vogliamo godere con i santi, ma non vogliamo sopportare con loro le tribolazioni del mondo. Certamente chi, per quanto può, non vorrà imitare i santi martiri, non potrà arrivare alla loro beatitudine. Anche l'apostolo Paolo infatti, così predica: «Se saremo compagni nella sofferenza, lo saremo pure nella consolazione».  E il Signore nel Vangelo: «Se il mondo vi odia, sappiate, che prima di voi ha odiato me». Rifiuta di appartenere al corpo, chi non vuol sopportare l'odio assieme al capo.
 
 [Responsory5]
 R. I santi di Dio, morendo per il nome di Cristo, non hanno avuto paura dei flagelli dei carnefici; 
@@ -176,7 +171,7 @@ V. Hanno affidato al supplizio il proprio corpo per amore di Dio.
 R. Per diventare eredi nella casa del Signore.
 
 [Lectio6]
-Qualcuno però potrà dire: "Chi sarà mai in grado di seguire le orme dei beati martiri?". A costui io rispondo che, se vogliamo, possiamo imitare non solo i martiri ma anche lo stesso Signore, col suo aiuto. Ascolta, non me, bensì lo stesso Signore che grida al genere umano: "Imparate da me che sono mite e umile di cuore". Ascolta anche il monito dell'apostolo Pietro: "Cristo ha sofferto per noi, lasciandoci l'esempio, perché seguiamo le sue orme". 
+Qualcuno però potrà dire: «Chi sarà mai in grado di seguire le orme dei beati martiri?». A costui io rispondo che, se vogliamo, possiamo imitare non solo i martiri ma anche lo stesso Signore, col suo aiuto. Ascolta, non me, bensì lo stesso Signore che grida al genere umano: «Imparate da me che sono mite e umile di cuore». Ascolta anche il monito dell'apostolo Pietro: «Cristo ha sofferto per noi, lasciandoci l'esempio, perché seguiamo le sue orme». 
 
 [Responsory6]
 R. Il Signore ha provato gli eletti come oro nel crogiuolo e li ha graditi come vittime di olocausto; a suo tempo essi saranno presi in considerazione, 
@@ -189,20 +184,20 @@ R. Perché grazia e pace sono riservate agli eletti di Dio.
 [Lectio7]
 Dal Vangelo secondo Luca
 !Luca 21:9-19
-In quel tempo Gesù disse ai suoi discepoli: "Quando sentirete parlare di guerre e sommosse, non vi spaventate; bisogna che prima avvengano queste cose, ma la fine non verrà subito dopo. (continua nella Messa del giorno)
+In quel tempo Gesù disse ai suoi discepoli: «Quando sentirete parlare di guerre e sommosse, non vi spaventate; bisogna che prima avvengano queste cose, ma la fine non verrà subito dopo. (continua nella Messa del giorno)
 _
 Omelia di s. Gregorio papa
 !Omelia 35 sui Vangeli.
-Il Signore e Redentore nostro annunzia i mali che precederanno la fine del mondo affinché, quando essi verranno, tanto meno perturbino quanto più saranno stati conosciuti prima. Infatti le frecce che sì prevedono feriscono meno; e i mali del mondo ci sembrano più tollerabili quando la previsione ci premunisce contro di essi, come uno scudo. Ecco dunque quello che dice: "Quando sentirete parlare di guerre e sommosse, non vi spaventate; bisogna che prima avvengano queste cose, ma la fine non verrà subito dopo". È necessario ponderare le parole del nostro Redentore, con le quali egli ci annunzia che dobbiamo patire sia all'esterno che all'interno. Le guerre infatti vengono fatte dai nemici, le sommosse dai cittadini. Per indicarci dunque che saremo turbati all'esterno e all'interno, ci dice che altro avremo a soffrire dai nemici e altro dai fratelli.  
+Il Signore e Redentore nostro annunzia i mali che precederanno la fine del mondo affinché, quando essi verranno, tanto meno perturbino quanto più saranno stati conosciuti prima. Infatti le frecce che sì prevedono feriscono meno; e i mali del mondo ci sembrano più tollerabili quando la previsione ci premunisce contro di essi, come uno scudo. Ecco dunque quello che dice: «Quando sentirete parlare di guerre e sommosse, non vi spaventate; bisogna che prima avvengano queste cose, ma la fine non verrà subito dopo». È necessario ponderare le parole del nostro Redentore, con le quali egli ci annunzia che dobbiamo patire sia all'esterno che all'interno. Le guerre infatti vengono fatte dai nemici, le sommosse dai cittadini. Per indicarci dunque che saremo turbati all'esterno e all'interno, ci dice che altro avremo a soffrire dai nemici e altro dai fratelli.
 
 [Responsory7]
-R.  I santi di Dio hanno perseverato nella fraternità a causa del comando del Signore e delle leggi paterne. 
+R. I santi di Dio hanno perseverato nella fraternità a causa del comando del Signore e delle leggi paterne. 
 * Essi hanno sempre avuto un solo spirito e una sola fede.
 V. Quanto è bello e dolce che i fratelli dimorino insieme!
 R. Essi hanno sempre avuto un solo spirito e una sola fede.
 
 [Lectio8]
-Ma poiché, avvenuti questi mali, non seguirà subito la fine, aggiunge: "Si solleverà popolo contro popolo e regno contro regno; e vi saranno in diversi luoghi grandi terremoti, e pestilenze e carestie; e vi saranno fenomeni spaventosi e grandi segni dal cielo". L'ultima calamità sarà così preceduta da molte calamità; e con i frequenti mali che precederanno, vengono indicati i mali eterni, che seguiranno. Perciò, dopo le guerre e le sommosse, non seguirà subito la fine; perché devono precedere molti mali che, possano preannunciare il male che non avrà fine.  
+Ma poiché, avvenuti questi mali, non seguirà subito la fine, aggiunge: «Si solleverà popolo contro popolo e regno contro regno; e vi saranno in diversi luoghi grandi terremoti, e pestilenze e carestie; e vi saranno fenomeni spaventosi e grandi segni dal cielo». L'ultima calamità sarà così preceduta da molte calamità; e con i frequenti mali che precederanno, vengono indicati i mali eterni, che seguiranno. Perciò, dopo le guerre e le sommosse, non seguirà subito la fine; perché devono precedere molti mali che, possano preannunciare il male che non avrà fine.  
 
 [Responsory8]
 R. Voi, miei santi, vivendo nella carne, avete sostenuto la battagli io 
@@ -213,16 +208,9 @@ R. Vi darò la ricompensa per la vostra fatica.
 R. Vi darò la ricompensa per la vostra fatica.
 
 [Lectio9]
-Però, dopo che si è parlato di tanti segni di perturbazione, è necessario prenderli brevemente in considerazione ad uno ad uno. Perché sta scritto che noi ne subiamo alcuni dal cielo, altri dalla terra, altri dagli elementi, altri dagli uomini. Dice infatti: "Si solleverà popolo contro popolo»: ecco lo scompiglio degli uomini; "vi saranno in diversi luoghi grandi terremoti": ecco l'ira che verrà dall'alto; "vi saranno pestilenze": ecco la perturbazione nei corpi; "vi saranno fame e carestia": ecco la sterilità della terra; "e fenomeni spaventosi dal cielo e tempeste": ecco l'instabilità dell'atmosfera. Poiché dunque tutto deve essere distrutto, prima della distruzione tutto sarà sconvolto; e noi, che in tutto abbiamo peccato, in ogni cosa saremo puniti, perché si avveri quanto è stato detto: "E con lui combatterà l'universo contro gli insensati".  
+Però, dopo che si è parlato di tanti segni di perturbazione, è necessario prenderli brevemente in considerazione ad uno ad uno. Perché sta scritto che noi ne subiamo alcuni dal cielo, altri dalla terra, altri dagli elementi, altri dagli uomini. Dice infatti: «Si solleverà popolo contro popolo»: ecco lo scompiglio degli uomini; «vi saranno in diversi luoghi grandi terremoti»: ecco l'ira che verrà dall'alto; «vi saranno pestilenze»: ecco la perturbazione nei corpi; «vi saranno fame e carestia»: ecco la sterilità della terra; «e fenomeni spaventosi dal cielo e tempeste»: ecco l'instabilità dell'atmosfera. Poiché dunque tutto deve essere distrutto, prima della distruzione tutto sarà sconvolto; e noi, che in tutto abbiamo peccato, in ogni cosa saremo puniti, perché si avveri quanto è stato detto: «E con lui combatterà l'universo contro gli insensati».  
 &teDeum
 
-[Ant Laudes]
-Quanti tormenti sopportarono tutti i Santi * per giungere con sicurezza alla palma del martirio!
-Colla palma * i Santi sono pervenuti al regno ed hanno meritato le corone della gloria dalla mano di Dio.
-I corpi dei Santi * sono sepolti nella pace, e i loro nomi vivranno in eterno.
-Martiri del Signore, * benedite il Signore in eterno.
-Coro dei Martiri, * benedite il Signore nei cieli, alleluia.
-
 [Capitulum Laudes]
 !Sap 3:1-3
 v. Le anime dei giusti sono nelle mani di Dio e non saranno toccate dal tormento della morte. Agli occhi degli stolti parvero morire, invece sono nella pace.
@@ -257,69 +245,43 @@ R. Gioiranno nel loro riposo.
 [Ant 2]
 I capelli del vostro capo * sono tutti contati: non temete: voi valete più di molti passeri.  
 
-[Oratio]
-O Signore, che ci dai la grazia di celebrare l'entrata in cielo dei tuoi santi Martiri N. e N. concedici di godere la loro compagnia nell'eterna felicità del cielo. 
-$Per Dominum
-
-[Oratio1]
-Fa', o Signore, che i santi N. e N. martiri e pontefici, dei quali celebriamo la festa, ci proteggano e con la loro valida preghiera ci raccomandino a Te.
-$Per Dominum
-
-[Oratio2]
-O Signore che ci allieti con l'annuale solennità dei tuo santi martiri N. e N., concedi benignamente a noi, che godiamo dei loro meriti, d'essere infervorati dai loro esempi. 
-$Per Dominum
-
 [Lectio Prima]
 !Sap 3:7-8
-v. I giusti risplenderanno, e saranno come le scintille che guizzano in un canneto. Giudicheranno le nazioni, e domineranno i popoli; e il Signore regnerà su loro in perpetuo.  
+v. I giusti risplenderanno, e saranno come le scintille che guizzano in un canneto. Giudicheranno le nazioni, e domineranno i popoli; e il Signore regnerà su loro in perpetuo.
 
-[Capitulum Tertia]
-!Sap 3:1-3
-v. Le anime dei giusti sono nelle mani di Dio e non saranno toccate dal tormento della morte. Agli occhi degli stolti parvero morire, invece sono nella pace.
-$Deo gratias.
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Rallegratevi nel Signore * ed esultate, o giusti.
 R. Rallegratevi nel Signore * ed esultate, o giusti.
 V. E gloriatevi, o voi tutti retti di cuore.
 R. Ed esultate, o giusti.
 &Gloria
 R. Rallegratevi nel Signore * ed esultate, o giusti.
-_
-V. Esultino i giusti al cospetto di Dio.
-R. E godano allegramente.
 
 [Capitulum Sexta]
 !Sap 10:17
 v. Dio ha reso ai giusti la mercede delle loro fatiche, e li ha condotti per una via meravigliosa: e fu per loro ombra di giorno e luce di stelle nella notte.
 $Deo gratias.
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Esultino i giusti, * al cospetto di Dio.
 R. Esultino i giusti, * al cospetto di Dio.
 V. E godano allegramente.
 R. Al cospetto di Dio.
 &Gloria
 R. Esultino i giusti, * al cospetto di Dio.
-_
-V. I giusti pertanto vivranno in eterno.
-R. E presso il Signore è la loro ricompensa.
 
 [Capitulum Nona]
 !Sap 3:7-8
 v. I giusti risplenderanno, e saranno come le scintille che guizzano in un canneto. Giudicheranno le nazioni, e domineranno i popoli; e il Signore regnerà su loro in perpetuo.  
 $Deo gratias.
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. I giusti pertanto, * vivranno in eterno.
 R. I giusti pertanto, * vivranno in eterno.
 V. E presso il Signore è la loro ricompensa.
 R. Vivranno in eterno.
 &Gloria
 R. I giusti pertanto, * vivranno in eterno.
-_
-V. I santi esulteranno nella gloria.
-R. Gioiranno nel loro riposo.
 
 [Ant Vespera 3]
 Questi sono i Santi * che per la legge di Dio sacrificarono i loro corpi e lavarono le loro anime nel sangue dell'Agnello.;;109
@@ -327,129 +289,6 @@ I Santi con la fede * hanno vinto i regni, praticata la giustizia e conseguito l
 La giovinezza dei Santi si rinnoverà come quella dell'aquila: * essi fioriranno come il giglio nella città del Signore.;;111
 Iddio asciugherà * ogni lacrima dagli occhi dei Santi: e non vi sarà più né lutto, né grida, né dolore alcuno, poiché le cose di prima sono passate.;;112
 Nel regno dei cieli * è l'abitazione dei Santi: e il loro riposo dura in eterno.;;115
-
-[Versum 3]
-V. I santi esulteranno nella gloria.
-R. Gioiranno nel loro riposo.
-
-[Ant 3]
-Le anime dei Santi, * che hanno seguito le orme di Cristo, godono  nel cielo; e siccome per suo amore hanno versato il loro sangue, esultano con Cristo senza fine.
-
-[Ant Laudes]
-Quanti tormenti sopportarono tutti i Santi * per giungere con sicurezza alla palma del martirio!
-Colla palma * i Santi sono pervenuti al regno ed hanno meritato le corone della gloria dalla mano di Dio.
-I corpi dei Santi * sono sepolti nella pace, e i loro nomi vivranno in eterno.
-Martiri del Signore, * benedite il Signore in eterno.
-Coro dei Martiri, * benedite il Signore nei cieli, alleluia.
-
-[Capitulum Laudes]
-!Sap 3:1-3
-v. Le anime dei giusti sono nelle mani di Dio e non saranno toccate dal tormento della morte. Agli occhi degli stolti parvero morire, invece sono nella pace.
-$Deo gratias.
-
-[Hymnus Laudes]
-v. O Re glorioso dei Martiri,
-corona dei Confessori,
-tu che conduci al regno celeste
-chi disprezza i beni terreni,
-_
-porgi sollecito il tuo orecchio
-benevolo alle nostre voci:
-noi cantiamo i trionfi dei Santi:
-perdonaci quanto abbiamo commesso.
-_
-Tu che vinci nei Martiri
-e perdoni per i Confessori:
-tu vinci i nostri delitti,
-donandocene il perdono.
-_
-* Sia gloria a Dio Padre
-e al suo Figlio unigenito,
-insieme con lo Spirito Santo,
-ora e per tutti i secoli.
-Amen. 
-
-[Versum 2]
-V. I santi esulteranno nella gloria.
-R. Gioiranno nel loro riposo.
-
-[Ant 2]
-I capelli del vostro capo * sono tutti contati: non temete: voi valete più di molti passeri.  
-
-[Oratio]
-O Signore, che ci dai la grazia di celebrare l'entrata in cielo dei tuoi santi Martiri N. e N. concedici di godere la loro compagnia nell'eterna felicità del cielo. 
-$Per Dominum
-
-[Oratio1]
-Fa', o Signore, che i santi N. e N. martiri e pontefici, dei quali celebriamo la festa, ci proteggano e con la loro valida preghiera ci raccomandino a Te.
-$Per Dominum
-
-[Oratio2]
-O Signore che ci allieti con l'annuale solennità dei tuo santi martiri N. e N., concedi benignamente a noi, che godiamo dei loro meriti, d'essere infervorati dai loro esempi. 
-$Per Dominum
-
-[Lectio Prima]
-!Sap 3:7-8
-v. I giusti risplenderanno, e saranno come le scintille che guizzano in un canneto. Giudicheranno le nazioni, e domineranno i popoli; e il Signore regnerà su loro in perpetuo.  
-
-[Capitulum Tertia]
-!Sap 3:1-3
-v. Le anime dei giusti sono nelle mani di Dio e non saranno toccate dal tormento della morte. Agli occhi degli stolti parvero morire, invece sono nella pace.
-$Deo gratias.
-
-[Responsory Tertia]
-R.br. Rallegratevi nel Signore * ed esultate, o giusti.
-R. Rallegratevi nel Signore * ed esultate, o giusti.
-V. E gloriatevi, o voi tutti retti di cuore.
-R. Ed esultate, o giusti.
-&Gloria
-R. Rallegratevi nel Signore * ed esultate, o giusti.
-_
-V. Esultino i giusti al cospetto di Dio.
-R. E godano allegramente.
-
-[Capitulum Sexta]
-!Sap 10:17
-v. Dio ha reso ai giusti la mercede delle loro fatiche, e li ha condotti per una via meravigliosa: e fu per loro ombra di giorno e luce di stelle nella notte.
-$Deo gratias.
-
-[Responsory Sexta]
-R.br. Esultino i giusti, * al cospetto di Dio.
-R. Esultino i giusti, * al cospetto di Dio.
-V. E godano allegramente.
-R. Al cospetto di Dio.
-&Gloria
-R. Esultino i giusti, * al cospetto di Dio.
-_
-V. I giusti pertanto vivranno in eterno.
-R. E presso il Signore è la loro ricompensa.
-
-[Capitulum Nona]
-!Sap 3:7-8
-v. I giusti risplenderanno, e saranno come le scintille che guizzano in un canneto. Giudicheranno le nazioni, e domineranno i popoli; e il Signore regnerà su loro in perpetuo.  
-$Deo gratias.
-
-[Responsory Nona]
-R.br. I giusti pertanto, * vivranno in eterno.
-R. I giusti pertanto, * vivranno in eterno.
-V. E presso il Signore è la loro ricompensa.
-R. Vivranno in eterno.
-&Gloria
-R. I giusti pertanto, * vivranno in eterno.
-_
-V. I santi esulteranno nella gloria.
-R. Gioiranno nel loro riposo.
-
-[Ant Vespera 3]
-Questi sono i Santi * che per la legge di Dio sacrificarono i loro corpi e lavarono le loro anime nel sangue dell'Agnello.;;109
-I Santi con la fede * hanno vinto i regni, praticata la giustizia e conseguito le promesse.;;110
-La giovinezza dei Santi si rinnoverà come quella dell'aquila: * essi fioriranno come il giglio nella città del Signore.;;111
-Iddio asciugherà * ogni lacrima dagli occhi dei Santi: e non vi sarà più né lutto, né grida, né dolore alcuno, poiché le cose di prima sono passate.;;112
-Nel regno dei cieli * è l'abitazione dei Santi: e il loro riposo dura in eterno.;;115
-
-[Versum 3]
-V. I santi esulteranno nella gloria.
-R. Gioiranno nel loro riposo.
 
 [Ant 3]
 Le anime dei Santi, * che hanno seguito le orme di Cristo, godono  nel cielo; e siccome per suo amore hanno versato il loro sangue, esultano con Cristo senza fine.
@@ -464,7 +303,7 @@ Omelia di s. Ambrogio vescovo
 Fate bene attenzione a tutto, al modo in cui sale con i discepoli e discende alle folle. In che modo infatti la folla poteva vedere Cristo se non in basso? Non Lo segue sulle altezze, non sale ai vertici. Pertanto dove discende, trova gli infermi: sulle altezze infatti non ci possono essere infermi. Indi anche Matteo insegna che i debilitati furono sanati nei luoghi inferiori. Prima difatti va sanato ciascuno in modo che possa ascendere al monte pian piano con le forze che crescono; e quindi sana ciascuno nei luoghi inferiore, cioè, li richiama dalla lussuria, rimuove il danno della cecità. È sceso alle nostre ferite: affinché, con un certo uso ed abbondanza della sua natura, ci faccia essere compartecipi del regno dei cieli.
 
 [Lectio8 in 2 loco]
-Beati voi poveri, perché vostro è il regno di Dio. San Luca pose soltanto quattro beatitudini del Signore, mentre san Matteo otto: ma in quelle otto ci stanno queste quattro, ed in queste quattro quelle otto. Questi infatti ha come abbracciato le quattro virtù cardinali: quello in quelle otto ha rivelato un numero mistico. Infatti molti Salmi hanno l'iscrizione "per l'ottava": e ricevi ordine di metterti in grado di partecipare in qualche modo a queste otto beatitudini. Come infatti l'ottava è la perfezione della nostra speranza, così l'ottava è la somma delle virtù.
+Beati voi poveri, perché vostro è il regno di Dio. San Luca pose soltanto quattro beatitudini del Signore, mentre san Matteo otto: ma in quelle otto ci stanno queste quattro, ed in queste quattro quelle otto. Questi infatti ha come abbracciato le quattro virtù cardinali: quello in quelle otto ha rivelato un numero mistico. Infatti molti Salmi hanno l'iscrizione «per l'ottava»: e ricevi ordine di metterti in grado di partecipare in qualche modo a queste otto beatitudini. Come infatti l'ottava è la perfezione della nostra speranza, così l'ottava è la somma delle virtù.
 
 [Responsory8 in 2 loco]
 R. Questa è la vera fratellanza che nella lotta non è mai venuta meno: sparso il sangue, hanno seguito il Signore.
@@ -477,3 +316,63 @@ R. Disprezzando gli onori reali, sono giunti al regno celeste.
 [Lectio9 in 2 loco]
 Ma prima guardiamo a quelle che sono più grandi. Beati, disse, i poveri, perché vostro è il regno di Dio. Entrambi gli evangelisti posero questa beatitudine. Infatti è la prima in ordine è una madre e la generazione delle virtù: poiché chi avrà disprezzato le cose del mondo, egli meriterà la vita eterna: né può alcuno meritare il regno dei cieli, che, oppresso dal desiderio del mondo, non ha la capacità di emergere. 
 &teDeum
+
+[Introitus]
+!Ps 78:11-12; 78:10
+v. Signore, il gemito del prigioniero giunga fino a Te; rendi il settuplo ai nostri nemici; vendica il sangue versato.
+!Ps 78:1
+O Dio, i pagani hanno invaso il tuo retaggio, profanato il tuo santo tempio, ridotto Gerusalemme a un cumulo di macerie.
+&Gloria
+v. Signore, il gemito del prigioniero giunga fino a Te; rendi il settuplo ai nostri nemici; vendica il sangue versato.
+
+[Oratio] (ad missam)
+Ti supplichiamo, o Signore, affinché ci sia di protezione questa festività dei tuoi santi N. e N. martiri e vescovi, e di mediazione la loro santa preghiera.
+$Per Dominum.
+
+[Lectio]
+Dal libro della Sapienza.
+!Sap 3:1-8
+Le anime dei giusti sono in mano di Dio, e nessuna pena li tocca; agli occhi degli stolti parve che essi morissero e il loro transito fu stimato una sciagura e la loro dipartita da noi, una disfatta; ma essi sono nella pace, perché, sebbene tribolati agli occhi degli uomini, hanno piena speranza di immortalità, e dopo breve pena saranno messi a parte di grandi beni, perché Dio li ha provati e li ha trovati degni di Lui. Li ha provati come oro nel crogiuolo, li ha graditi come perfetto sacrifizio. Al tempo della loro rimunerazione splenderanno e correranno qua e là come scintille in un canneto. Giudicheranno le nazioni, domineranno i popoli, e loro re sarà Iddio eternamente.
+
+[Graduale]
+!Exod 15:11
+Dio è glorioso nei suoi santi; mirabile nella sua maestà, operatore di prodigi.
+!Exod 15:6
+V. La tua destra, o Signore, si è distinta nella forza; la tua destra ha spezzato i nemici. Alleluia, alleluia.
+!Eccl 44:14
+I corpi dei santi sono sepolti nella pace, i loro nomi vivono di generazione in generazione. Alleluia.
+
+[Tractus]
+!Exod 15:11
+Dio è glorioso nei suoi santi; mirabile nella sua maestà, operatore di prodigi.
+!Exod 15:6
+V. La tua destra, o Signore, si è distinta nella forza; la tua destra ha spezzato i nemici. Alleluia, alleluia.
+!Ps 125:5-6.
+Chi semina nelle lacrime, mieterà nel gaudio.
+V. Nell'andare si va piangendo e portando il seme da gettare.
+V. Ma nel tornare si va cantando e portando i propri covoni.
+
+[Evangelium]
+Seguito ++ del Santo Vangelo secondo Luca.
+!Luc 21:9-19
+In quel tempo Gesù disse ai suoi discepoli: «Quando poi sentirete parlare di guerre e di sommosse, non vi spaventate: così deve prima accadere, ma non verrà subito la fine». Allora disse loro: «Si solleverà popolo contro popolo, e regno contro regno; vi saranno gran terremoti, e in diversi luoghi pestilenze e carestie, fenomeni spaventevoli e gran segni dal cielo. Ma prima di tutto ciò vi metteranno le mani addosso e vi perseguiteranno, consegnandovi alle sinagoghe e alle prigioni e vi trascineranno davanti a re e governatori per causa del mio nome; così vi riuscirà di rendermi testimonianza. Mettetevi dunque in cuore di non premeditare la vostra difesa; perché io vi darò parole e sapienza, a cui non potranno resistere né contraddire tutti i vostri avversari. Sarete traditi persino dai genitori e dai fratelli, dai parenti e dagli amici, e metteranno a morte parecchi di voi; e sarete in odio a tutti pel nome mio; ma neppure un capello del vostro capo andrà perduto. Con la vostra costanza guadagnerete le anime vostre».
+
+[Offertorium]
+!Ps 67:36
+Degno di venerazione è Dio dal suo santuario; Dio d'Israele, Egli dà forza e vigore al suo popolo; Dio sia benedetto. Alleluia.
+
+[Offertorium] (tempore post Septuagesimam)
+!Ps 67:36
+Degno di venerazione è Dio dal suo santuario; Dio d'Israele, Egli dà forza e vigore al suo popolo; Dio sia benedetto.
+
+[Secreta]
+O Signore, sii vicino alle nostre suppliche, che ti innalziamo nella festività dei tuoi santi; affinché noi che non possiamo contare sulla nostra santità, siamo aiutati per i meriti di coloro che ti furono cari.
+$Per Dominum.
+
+[Communio]
+!Sap 3:4-6
+E se al cospetto degli uomini han sofferto dei tormenti; è perché Dio li ha provati; li ha provati come oro nel crogiuolo.
+
+[Postcommunio]
+Nutriti dal mistero di salvezza ti supplichiamo, Signore, ci aiutino le preghiere dei santi martiri di cui celebriamo la festa.
+$Per Dominum

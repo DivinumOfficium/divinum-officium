@@ -1,8 +1,17 @@
-[Rank]
-Feria Quarta infra Octavam Corporis Christi;;Semiduplex II class;;5;;ex Tempora/Pent01-4
+[Officium]
+Feria Quarta infra Octavam Corporis Christi
 
-[Rank1960]
-Feria IV infra Hebdomadam II post Octavam Pentecostes;;Feria;;1
+[Officium] (rubrica 196 aut rubrica 1955)
+Feria IV infra Hebdomadam II post Octavam Pentecostes
+
+[Rank]
+;;Semiduplex II class;;5.6;;ex Tempora/Pent01-4
+(sed rubrica tridentina nisi rubrica cisterciensis)
+;;Semiduplex IIS class;;2.9;;ex Tempora/Pent01-4
+(sed rubrica cisterciensis)
+;;Semiduplex;;2.1;;ex Tempora/Pent01-4
+(sed rubrica 196 aut rubrica 1955)
+;;Feria;;1
 
 [Rule]
 ex Tempora/Pent01-4;
@@ -65,3 +74,12 @@ Nunc enim, et ipsíus Dómini professióne, et fide nostra, vere caro est, et ve
 [Lectio9]
 Quod autem in nobis naturális hæc únitas sit, ipse ita testátus est: Qui edit carnem meam et bibit sánguinem meum, in me manet, et ego in eo. Non enim quis in eo erit, nisi in quo ipse fúerit; ejus tantum in se assúmptam habens carnem, qui suam súmpserit. Perféctæ autem hujus unitátis sacraméntum supérius jam docúerat, dicens: Sicut me misit vivens Pater, et ego vivo per Patrem; et qui mandúcat meam carnem, et ipse vivet per me. Vivit ergo per Patrem: et quo modo per Patrem vivit, eódem modo nos per carnem ejus vivémus.
 &teDeum
+
+[Ant 2] (rubrica cisterciensis)
+@Tempora/Pent01-5
+
+[Ant Vespera 3] (rubrica cisterciensis)
+@Tempora/Pent01-5
+
+[Ant 3] (rubrica cisterciensis)
+@Tempora/Pent01-5

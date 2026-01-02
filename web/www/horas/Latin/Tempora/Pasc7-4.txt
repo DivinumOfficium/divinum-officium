@@ -1,17 +1,26 @@
-[Rank]
-Feria Quinta infra octavam Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
+[Officium]
+Feria Quinta infra octavam Pentecostes
+(sed rubrica 1960)
+Die Quinta infra octavam Pentecostes
 
-[Rank1960]
-Die Quinta infra octavam Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
+[Rank]
+;;Semiduplex I classis;;6.9;;ex Pasc7-0
+
+[Rank] (rubrica 1960)
+;;Semiduplex I classis;;6;;ex Pasc7-0
 
 [Rule]
 ex Pasc7-0;
 1 nocturn;
 Psalmi Dominica;
+(sed rubrica cisterciensis) 
+Psalmi Feria
 Antiphonas horas
-Hymnus Tertia
 Feria Te Deum
 no93
+
+[Oratio]
+@Tempora/Pasc7-0:Oratio
 
 [Lectio1]
 Léctio sancti Evangélii secúndum Lucam
@@ -46,8 +55,7 @@ Sed hæc, ut secúndum lítteram de hospítii religióne venerábilis est forma 
 [Ant 2]
 Convocátis Jesus * duódecim discípulis suis, dedit illis virtútem et potestátem super ómnia dæmónia, et ut languóres curárent: et misit illos prædicáre regnum Dei, et sanáre infírmos, allelúja.
 
-[Oratio]
-@Tempora/Pasc7-0:Oratio
-
 [Ant 3]
 Spíritus, * qui a Patre procédit, allelúja: ille me clarificábit, allelúja, allelúja.
+(sed rubrica cisterciensis aut rubrica praedicatorum)
+Egréssi * duódecim Apóstoli circuíbant per castélla evangelizántes, et curantes ubíque, allelúia, allelúia.

@@ -1,18 +1,8 @@
-[Name]
+[Officium]
 Officium Dedicationis Ecclesiae
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-9 lectiones
-Psalm5 Vespera=147
-Festum Domini
-Divinum auxilium
-
-[Capitulum Vespera]
-!Rev 21:2
-v. Akkor láttam, hogy a szent város, az új Jeruzsálem alászállt az égből, az Istentől. Olyan volt, mint a vőlegényének fölékesített menyasszony.
-$Deo gratias
+[Missa]
+Terribilis
 
 [Hymnus Vespera]
 {:H-Coelestisurbs:}v. Ég városa, Jeruzsálem,
@@ -54,29 +44,26 @@ Miképoen volt, mindenkoron.
 [Invit]
 Krisztust, az Egyház Jegyesét * imádjuk szent templomában!
 
-[Hymnus Matutinum]
-@Commune/C8:Hymnus Vespera
-
 [Lectio1]
 Olvasmány a Krónikák második könyvéből
-!2 Chr 7:1-5
+!2Krón 7:1-5
 1 Amikor Salamon befejezte az imádságát, tűz szállt le az égből, és megemésztette az égő- és véresáldozatokat. Ekkor az Úr dicsősége betöltötte a templomot.
 2 A papok nem is tudtak bemenni az Úr templomába, mert az Úr dicsősége betöltötte az Úr templomát.
-3 Izrael fiai mindnyájan látták, amint a tűz és az Úr dicsősége leszállt a templomra. Ekkor arccal a földre, a kövezett padozatra borultak, és hódolattal magasztalták az Urat: "Mert jó, mert irgalma örökkévaló!"
+3 Izrael fiai mindnyájan látták, amint a tűz és az Úr dicsősége leszállt a templomra. Ekkor arccal a földre, a kövezett padozatra borultak, és hódolattal magasztalták az Urat: „Mert jó, mert irgalma örökkévaló!”
 4 Azután a király és a nép vágóáldozatot mutatott be az Úrnak.
 5 Salamon király huszonkétezer szarvasmarhát és százhúszezer bárányt mutatott be véresáldozatul. Így szentelte föl a király és az egész nép az Isten templomát.
 
 [Lectio2]
-!2 Chr 7:6-9
+!2Krón 7:6-9
 6 Míg a papok beosztásuk szerint a helyükön álltak, a leviták Dávid dicsőítő énekeit adták elő, kezükben az Úr hangszereivel, amelyeket Dávid király azért készíttetett, hogy magasztalják az Urat, mert irgalma örökkévaló. A velük szemben álló papok pedig a trombitákat fújták. Ott állt az egész nép is.
 7 Salamon az Úr temploma előtt elterülő középső udvart is fölszentelte. Ott égette el ugyanis az égőáldozatokat és a közösségi áldozatok háját, mert a Salamon által készített oltáron nem fértek el az égőáldozatok meg az ételáldozatok és a hájrészek.
 8 Ebben az időben Salamon hét napon át tartotta az ünnepet és vele egész Izrael: hatalmas gyülekezet, Hamat bejárójától Egyiptom patakjáig.
 9 A nyolcadik napon aztán záróünnepséget rendezett. Hét napon át avatta fel ugyanis az oltárt, és hét napig tartott az ünnep.
 
 [Lectio3]
-!2 Chr 7:11-16
+!2Krón 7:11-16
 11 Salamon tehát szerencsésen befejezte az Úr templomát, a királyi palotát és mindazt, amit az Úr templomában és a maga házában meg akart valósítani.
-12 Ekkor éjjel megjelent Salamonnak az Úr, és azt mondta neki: "Meghallgattam imádságodat, és ezt a helyet választottam magamnak, hogy az áldozat helye legyen.
+12 Ekkor éjjel megjelent Salamonnak az Úr, és azt mondta neki: „Meghallgattam imádságodat, és ezt a helyet választottam magamnak, hogy az áldozat helye legyen.
 13 Ha bezárom az eget, és elmarad az eső; ha megparancsolom a sáskáknak, hogy pusztítsák el az országot, vagy ha pestist küldök népemre,
 14 de ha népem, amely nevemet viseli, megalázkodik, könyörög hozzám, kedvemet keresi és megtér gonosz útjáról, akkor meghallgatom az égből, megbocsátom bűneit, és meggyógyítom országát.
 15 Szemem tehát nyitva lesz, és fülem figyel az imádságra, amelyet ezen a helyen mondanak.
@@ -84,12 +71,12 @@ Olvasmány a Krónikák második könyvéből
 
 [Lectio7]
 Evangélium szent Lukács Evangélista kőnyvéből
-!Luke 19:1-10
+!Lk 19:1-10
 1 Aztán odaért Jerikóba és végigment rajta.
 2 Élt ott egy Zakeus nevű tehetős ember, a vámosok feje. E's i'gy tova'bb.
 
 [Capitulum Laudes]
-!Rev 21:2
+!Jel 21:2
 v. Akkor láttam, hogy a szent város, az új Jeruzsálem alászállt az égből, az Istentől. Olyan volt, mint a vőlegényének fölékesített menyasszony.
 $Deo gratias
 
@@ -131,20 +118,20 @@ Miképen volt, mindenkoron.
 Ámen.
 
 [Lectio Prima]
-!Rev 21:4-4
+!Jel 21:4-4
 v. Letöröl szemükről minden könnyet. Nem lesz többé halál, sem gyász, sem jajgatás, sem fáradság, mert az elsők elmúltak.
 
-[Capitulum Tertia]
-!Rev 21:2
-v. Akkor láttam, hogy a szent város, az új Jeruzsálem alászállt az égből, az Istentől. Olyan volt, mint a vőlegényének fölékesített menyasszony.
-$Deo gratias
-
 [Capitulum Sexta]
-!Rev 21:3
-v. Akkor hallottam, hogy a trón felől megszólal egy hangos szózat, ezt mondva: "Íme, Isten hajléka az emberek között! Velük fog lakni és ők az ő népe lesznek, és maga az Isten lesz velük.
+!Jel 21:3
+v. Akkor hallottam, hogy a trón felől megszólal egy hangos szózat, ezt mondva: „Íme, Isten hajléka az emberek között! Velük fog lakni és ők az ő népe lesznek, és maga az Isten lesz velük.
 $Deo gratias
 
-[Capitulum Nona]
-!Rev 21:4-4
-v. Letöröl szemükről minden könnyet. Nem lesz többé halál, sem gyász, sem jajgatás, sem fáradság, mert az elsők elmúltak."
-$Deo gratias
+[Lectio]
+Olvasmány a Jelenések könyvéből
+!Jel 21:2-5
+v. Akkor láttam, hogy a szent város, az új Jeruzsálem alászállt az égből, az Istentől. Olyan volt, mint a vőlegényének fölékesített menyasszony.  Akkor hallottam, hogy a trón felől megszólal egy hangos szózat, ezt mondva: „Íme, Isten hajléka az emberek között! Velük fog lakni és ők az ő népe lesznek, és maga az Isten lesz velük.  Letöröl szemükről minden könnyet. Nem lesz többé halál, sem gyász, sem jajgatás, sem fáradság, mert az elsők elmúltak.”  Akkor a trónon ülő megszólalt: „Íme, újjáteremtek mindent!” Majd hozzám fordult: „Írd fel: ezek a szavak hitelesek és igazak.”
+
+[Evangelium]
+Evangélium + szent Lukács Evangélista kőnyvéből
+!Lk 19:1-10
+v. Aztán odaért Jerikóba és végigment rajta.  Élt ott egy Zakeus nevű tehetős ember, a vámosok feje.  Szerette volna látni Jézust szemtől szemben, de a tömeg miatt nem tudta, mert alacsony termetű volt.  Így hát előrefutott, felmászott egy vadfügefára, hogy láthassa, mert arra kellett elhaladnia.  Amikor Jézus odaért, felnézett és megszólította: „Zakeus, gyere le hamar! Ma a te házadban kell megszállnom.”  Erre az gyorsan lemászott, és boldogan fogadta.  Akik ezt látták, méltatlankodva megjegyezték, hogy bűnös emberhez tér be megpihenni.  Zakeus azonban odaállt az Úr elé, és így szólt: „Íme, Uram, vagyonom felét a szegényeknek adom, és ha valakit valamiben megcsaltam, négyannyit adok helyette.”  Jézus ezt felelte neki: „Ma üdvösség köszöntött erre a házra, hiszen ő is Ábrahám fia.  Az Emberfia azért jött, hogy megkeresse és megmentse azt, ami elveszett.”

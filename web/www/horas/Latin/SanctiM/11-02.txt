@@ -1,8 +1,5 @@
 @Sancti/11-02
 
-[Rank]
-In Commemoratione Omnium Fidelium Defunctorum;;I. classis;;6;;ex C9
-
 [Rule]
 Matutinum Romanum
 9 lectiones
@@ -12,34 +9,106 @@ Capitulum Versum 2 ad Laudes et Vesperas
 Omit Incipit Hymnus Capitulum Lectio Preces Commemoratio Suffragium
 Limit Benedictiones Oratio
 Requiem gloria
-
-[Special Completorium]
-@Sancti/11-02::s/122/4/ s/141/90/ s/142/133/
+(rubrica 1963) No Prima Vespera
 
 [Oratio mortuorum1]
-@Sancti/11-02
-
-[Oratio mortuorum2]
 @Sancti/11-02
 
 [Conclusio]
 @Sancti/11-02
 
+[Oratio mortuorum2]
+@Sancti/11-02
+
 [Special Prima]
-Psalmi feriales
+#Psalmi
+@:Psalmi Prima_
 
 _
 @Sancti/11-02::s/.*&special\('O/&special('O/s
 
+[Psalmi Prima_]
+&psalm(1)
+(sed feria 3)
+&psalm(7)
+(sed feria 4)
+&psalm(9,20,39)
+(sed feria 5)
+&psalm(12)
+(sed feria 6)
+&psalm(15)
+(sed feria 7)
+&psalm(17,26,51)
+&psalm(2)
+(sed feria 3)
+&psalm(8)
+(sed feria 4)
+&psalm(10)
+(sed feria 5)
+&psalm(13)
+(sed feria 6)
+&psalm(16)
+(sed feria 7)
+&psalm(18)
+&psalm(6)
+(sed feria 3)
+&psalm(9,2,19)
+(sed feria 4)
+&psalm(11)
+(sed feria 5)
+&psalm(14)
+(sed feria 6)
+&psalm(17,2,25)
+(sed feria 7)
+&psalm(19)
+
 [Special Tertia]
-Psalmi feriales
+#Psalmi
+&psalm(119)
+(sed feria secunda)
+&psalm(118,105,112)
+&psalm(120)
+(sed feria secunda)
+&psalm(118,113,120)
+&psalm(121)
+(sed feria secunda)
+&psalm(118,121,128)
 
-&special('Oratio mortuorum', 'Latin')
+&special('Oratio mortuorum')
 
-&special('Conclusio', 'Latin')
+&special('Conclusio')
 
 [Special Sexta]
-@:Special Tertia
+#Psalmi
+&psalm(122)
+(sed feria secunda)
+&psalm(118,129,136)
+&psalm(123)
+(sed feria secunda)
+&psalm(118,137,144)
+&psalm(124)
+(sed feria secunda)
+&psalm(118,145,152)
+
+&special('Oratio mortuorum')
+
+&special('Conclusio')
 
 [Special Nona]
-@:Special Tertia
+#Psalmi
+&psalm(125)
+(sed feria secunda)
+&psalm(118,153,160)
+&psalm(126)
+(sed feria secunda)
+&psalm(118,161,168)
+&psalm(127)
+(sed feria secunda)
+&psalm(118,169,176)
+
+&special('Oratio mortuorum')
+
+&special('Conclusio')
+
+[Special Completorium]
+@Sancti/11-02::s/122/4/ s/141/90/ s/142/133/

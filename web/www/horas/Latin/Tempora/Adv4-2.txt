@@ -1,5 +1,8 @@
+[Officium]
+Feria III infra Hebdomadam IV Adventus
+
 [Rank]
-Feria III infra Hebdomadam IV Adventus;;Feria major;;2
+;;Feria major;;2.1
 
 [Rule]
 Oratio Dominica
@@ -17,7 +20,7 @@ De Isaía Prophéta
 
 [Lectio2]
 !Isa 42:5-7
-5 Hæc dicit Dóminus Deus creans cælos, et exténdens eos: firmans terram, et quæ gérminant ex ea: dans flátum pópulo, qui est super eam, et spíritum calcántibus eam. 
+5 Hæc dicit Dóminus Deus creans cælos, et exténdens eos: firmans terram, et quæ gérminant ex ea: dans flatum pópulo, qui est super eam, et spíritum calcántibus eam. 
 6 Ego Dóminus vocávi te in justítia, et apprehéndi manum tuam, et servávi te. Et dedi te in fœdus pópuli, in lucem géntium: 
 7 ut aperíres óculos cæcórum, et edúceres de conclusióne vinctum, de domo cárceris sedéntes in ténebris.
 
@@ -34,5 +37,16 @@ De Isaía Prophéta
 [Responsory3]
 @Tempora/Adv4-0:Responsory6
 
-[Ant 2]
+[Ant Laudes] (rubrica cisterciensis)
+@Tempora/Adv4-0
+
+[Ant 2_]
 Consúrge, consúrge, * indúere fortitúdinem, brácchium Dómini.
+
+[Ant 2C]
+Dies Dómini sicut fur * in nocte ita véniet, et vos estóte paráti, quia qua hora non putátis, Fílius hóminis véniet.
+
+[Ant 2]
+@:Ant 2_
+(sed rubrica cisterciensis)
+@:Ant 2C

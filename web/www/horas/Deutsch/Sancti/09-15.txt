@@ -1,11 +1,8 @@
 [Rank]
 Fest der Sieben Schmerzen der hl. Jungfrau Maria;;Duplex 2nd class;;5.1;;ex C11
 
-[Rank1960]
+[Rank] (rubrica 196)
 Fest der Sieben Schmerzen der hl. Jungfrau Maria;;Duplex 2nd class;;5;;ex C11
-
-[RankNewcal]
-Fest der Sieben Schmerzen der hl. Jungfrau Maria;;Duplex;;3;;ex C11
 
 [Ant Vespera]
 Wo ist er denn hin, * dein Geliebter, o du schönste unter den Frauen? Wohin hat sich dein Liebling entfernt, dass wir mit dir ihn suchen können?;;109
@@ -13,11 +10,6 @@ Geht weg von mir, * ich muss bitter weinen, gebt euch keine Mühe, mich zu trös
 Er hat nichts an sich * von Schönheit und nichts von Anmut, wenn man ihn ansieht, kann man den Blick auf ihn nicht lenken.;;121
 Von der Fußsohle * bis zum Scheitel ist nichts Gesundes an ihm.;;126
 Gewährt mir Erfrischung durch Blumen, * legt mir Früchte um, denn ich verschmachte vor Liebe.;;147
-
-[Capitulum Vespera]
-!Klgl 2,13
-v. Wem soll ich dich ähnlich nennen und mit wem dich, Tochter Jerusalem, vergleichen? Wem dich, Jungfrau, Tochter Sion, an die Seite stellen, um dir einen Trost zu reichen? Groß wie das Meer ist dein Leid.
-$Deo gratias
 
 [Hymnus Vespera]
 v. Abend, senke dich rasch nieder in Finsternis!
@@ -58,8 +50,9 @@ R. Die du neben dem Kreuze Jesu gestanden.
 [Ant 1]
 Denkt nicht von mir, * dass ich (von Natur) dunkelfarbig bin, denn nur die Sonne hat mir die Farbe genommen: die Söhne meiner Mutter sind meine Gegner.
 
-[Doxology]
-@Tempora/Quad5-5
+[Oratio]
+O Gott, bei dessen leidensvollem Tode sich gemäß Simeons Voraussagung ein Schmerzensschwert in die liebenswürdigste Seele der glorienreichen Jungfrau und Mutter Maria hineingebohrt hat, gewähre uns huldvollst die Gnade, daß wir, die wir ihr ausgestandenes Leid in Ehrfurcht begehen, deines Leidens beseligende Wirkung erhalten.
+$Qui vivis
 
 [Invit]
 Wir wollen uns neben das Kreuz stellen mit Maria, der Mutter Jesu, * durch deren Seele das Leidensschwert hindurchging.
@@ -105,15 +98,18 @@ Amen.
 Gar zahlreich sind geworden * meine Quäler, viele sind es, die sich gegen mich erheben.;;3
 Ihre Pfeile halten sie bereit * im Köcher, um auf Menschen im Versteck zu schießen, die nichts Böses planen.;;10
 Es wird beim Leid verkürzt * mein Leben, und meine Jahre beim Schluchzen.;;30
-@:Versum 1
 Mein Herz ist geworden * wie schmelzendes Wachs in meinem Inneren.;;21
 Gott, mein Leben * tu ich dir kund: du behältst in deinem Anblick meine Tränen.;;55
 Es wurden mir * Tränen zur Nahrung bei Tag und bei Nacht.;;41
-V. Ein Myrrhensträußlein ist mir mein Geliebter.
-R. Das nun an meiner Brust mir anliegt.
 Sie hatten fest gespannt den mörderischen Bogen, * um mit den Pfeilen im Dunkeln den Schuldlosen zu treffen.;;63
 Meine Seele * ist ganz wirr: o Herr, wie lange soll's noch dauern?;;6
 Gott ist ein Helfer * in Gefahren, die so furchtbar uns umdrohen.;;45
+
+[Nocturn 2 Versum]
+V. Ein Myrrhensträußlein ist mir mein Geliebter.
+R. Das nun an meiner Brust mir anliegt.
+
+[Nocturn 3 Versum]
 V. Durch dich, Jungfrau Maria, wollen wir Segen schöpfen.
 R. Aus den Wunden Christi.
 
@@ -155,26 +151,17 @@ R. Ich und dein Vater.
 &Gloria
 R. Wir haben dich mit Schmerzen gesucht.
 
-[Lectio4]
-@Tempora/Quad5-5
-
 [Responsory4]
 R. Als Jesus sein Kreuz dahinschleppte,
 * Da folgte ihm eine Schar von Frauen, die ihn beklagten und beweinten.
 V. Töchter Jerusalems, weinet über euch selbst und eure Kinder.
 R. Da folgte ihm eine Schar von Frauen, die ihn beklagten und beweinten.
 
-[Lectio5]
-@Tempora/Quad5-5
-
 [Responsory5]
 R. Als man an den Ort gekommen war, der Kalvaria hieß, schlug man ihn dort ans Kreuz:
 * Es stand aber neben dem Kreuze Jesu seine Mutter.
 V. Da drang durch ihre heilige Seele das Schwert des Leidens.
 R. Es stand aber neben dem Kreuze Jesu seine Mutter.
-
-[Lectio6]
-@Tempora/Quad5-5
 
 [Responsory6]
 R. Joseph von Arimathäa 
@@ -215,14 +202,10 @@ R. Auf dass Sühne gewirkt werde und Segen.
 „Dort ist, sagt er, dein Sohn, dort ist deine Mutter.“ Es machte Christus vom Kreuze das Testament und verteilte zwischen Mutter und Jünger die Liebespflichten. Der Herr begründete ein Testament nicht bloß für die Allgemeinheit, sondern auch für die Seinigen; und diesem seinem Testament fügte Johannes das Siegel bei, als eines solchen Nachlasses würdiger Zeuge. Das Testamentsgut besteht nicht aus Geld, sondern aus dem ewigen Leben; und es ist nicht mit Tinte geschrieben, sondern mit der Kraft des lebendigen Gottes, der da sagt: „Meine Zunge ist wie der Griffel des Schreibers, der eilig im Schreiben vorankommt.“
 &teDeum
 
-[Lectio93]
-@Sancti/09-15t:Lectio9
-
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//g
-
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Klgl 2,13
+v. Wem soll ich dich ähnlich nennen und mit wem dich, Tochter Jerusalem, vergleichen? Wem dich, Jungfrau, Tochter Sion, an die Seite stellen, um dir einen Trost zu reichen? Groß wie das Meer ist dein Leid.
+$Deo gratias
 
 [Hymnus Laudes]
 v. O Gott, du Spender aller Huld,
@@ -249,35 +232,19 @@ R. Lass uns des himmlischen Reiches Freuden genießen.
 [Ant 2]
 Kommt, * wir wollen aufsteigen zum Berg des Herrn, und nun schaut, ob ein Schmerz gleich ist meinem Schmerze.
 
-[Oratio]
-O Gott, bei dessen leidensvollem Tode sich gemäß Simeons Voraussagung ein Schmerzensschwert in die liebenswürdigste Seele der glorienreichen Jungfrau und Mutter Maria hineingebohrt hat, gewähre uns huldvollst die Gnade, dass wir, die wir ihr ausgestandenes Leid in Ehrfurcht begehen, deines Leidens beseligende Wirkung erhalten.
-$Qui vivis
-
-[Commemoratio]
-!Kommemoration vom hl. Martyrer Nikomedes
-@Commune/C2:Oratio proper
-$Oremus
-Stehe bei, o Herr, deinem Volke, damit es die ruhmvollen Verdienste deines heiligen Blutzeugen Nikomedes für sich nutzbar mache und zur Erlangung deiner Barmherzigkeit an seiner Fürsprache eine Hilfe habe.
-$Per Dominum
-
-[Versum Prima]
-@Tempora/Quad5-5
-
 [Lectio Prima]
 !Klgl 2,18
 v. Lass gleich einem Sturzbach Tränen fließen Tag und Nacht; gönn dir keine Ruh' und lass die Augenlider auf stets neues Weinen lauern.
 
-[Capitulum Tertia]
-@:Capitulum Laudes
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. O ihr alle, * die ihr vorbeikommt auf dem Wege.
 R. O ihr alle, * die ihr vorbeikommt auf dem Wege.
 V. Gebet acht und seht, ob ein Schmerz gleich ist meinem Schmerze.
 R. Die ihr vorbeikommt auf dem Wege.
 &Gloria
 R. O ihr alle, * die ihr vorbeikommt auf dem Wege.
-_
+
+[Versum Tertia]
 V. Krank sind vor Weinen meine Augen.
 R. Wirr geworden ist mein ganzes Inneres.
 
@@ -286,34 +253,25 @@ R. Wirr geworden ist mein ganzes Inneres.
 v. Weinend netzt sie nachts mit Tränen ihre Wangen; keiner bleibt als Tröster unter allen, die mit ihr gegangen.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Krank sind * vor Weinen meine Augen.
 R. Krank sind * vor Weinen meine Augen.
 V. Wirr geworden ist mein ganzes Inneres.
 R. Vor Weinen meine Augen.
 &Gloria
 R. Krank sind * vor Weinen meine Augen.
-_
-V. Ein Myrrhensträußlein ist mir mein Geliebter.
-R. Das nun an meiner Brust mir anliegt.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Ein Myrrhensträußlein * ist mir mein Geliebter.
 R. Ein Myrrhensträußlein * ist mir mein Geliebter.
 V. Das nun an meiner Brust mir anliegt.
 R. Ist mir mein Geliebter.
 &Gloria
 R. Ein Myrrhensträußlein * ist mir mein Geliebter.
-_
+
+[Versum Nona]
 V. Ganz zerschmolzen ist meine Seele.
 R. Als des Geliebten Laut erscholl.
-
-[Versum 3]
-@:Versum 1
 
 [Ant 3]
 Überwältigt hat mich das Leid, * und mein Antlitz ist angeschwollen vom Weinen, und meine Augenlider sind umhüllt vom Dunkel.

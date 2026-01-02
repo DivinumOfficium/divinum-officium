@@ -1,58 +1,28 @@
-[Name]
-Commune confessoris non pontificis
+[Officium]
+Commune Confessoris non pontificis
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
+[Missa]
+Os justi
 
 [Ant Vespera]
-Uram, öt talentumot adtál * nézd, másik ötöt nyertem rajta;;109
-Jól van, te hűséges, derék szolga * minthogy a kevésben hű voltál, menj be urad örömébe!;;110
-Hű és okos szolga * akit ura háza népe fölé rendelt;;111
-Boldog az a szolga * akit ura amikor megerkezik és kinyitja a kaput munkában talál;;112
-Jól van, te hűséges, derék szolga * menj be urad örömébe!;;116
-
-[Capitulum Vespera]
-!Sir 31:8-9
-v. Boldog a gazdag, ki hiba nélkül találtatott, és ki az arany után nem járt, és nem bízott a pénzben és kincsekben. Kicsoda ez, és dicsérni fogjuk őt mert csodadolgokat cselekedett életében.
-$Deo gratias
-
-[Hymnus1 Vespera]
-@Commune/C4:Hymnus1 Vespera
-
-[Hymnus Vespera]
-@Commune/C4:Hymnus Vespera
-
-[Versum 1]
-V. Szerette az Úr és felékesitette őt
-R. A dicsőség ruhájába öltöztette
+Uram, öt talentumot adtál * nézd, másik ötöt nyertem rajta.
+Jól van, te hűséges, derék szolga * minthogy a kevésben hű voltál, menj be urad örömébe!
+Hű és okos szolga * akit ura háza népe fölé rendelt,
+Boldog az a szolga * akit ura amikor megerkezik és kinyitja a kaput munkában talál.
+Jól van, te hűséges, derék szolga * menj be urad örömébe!
 
 [Ant 1]
 Ő az okos ember * aki sziklára építette a házát.
 
-[Invit]
-Az Úr a hitvallók királya * jöjjetek imádjuk
+[Oratio]
+Isten, aki evről évre megörvendeztetsz minket áldott N. hitvallod ünnepe által, add meg nekünk kegyesen, hogy akik születésnapját ünnepeljűk példájat is követni tudjuk
+$Per Dominum.
 
-[Hymnus Matutinum]
-@Commune/C4:Hymnus Vespera
-
-[Hymnus1 Matutinum]
-@Commune/C4:Hymnus1 Vespera
-
-[Ant Matutinum]
-Boldog aki * örömét leli Isten törvényében, s parancsairól elmélkedik nappal és éjjel, siker koronázza minden tettét;;1
-Boldog a szent * aki az Úrban bízik és az Ő törvényét hirdeti, a szent hegyen van a lakóhelye;;2
-Te vagy a dicsóségem * és védőpajzsom Uram, csüggedt fejem felemeled, meghallgattál szent hegyedről;;3
-V. Szerette az Úr és felékesítette
-R. A dicsőség ruháiba öltöztette
-Az Úr meghallgatja * azt aki hívja Őt, meghallgatja és békességet ad neki;;4
-Örvendezzenek * akik az Úrban bíznak, az Úr megáldja az igazat, kegyelme védőpajzsként borul feléje, és megkoronázza őt;;5
-Uram, mi Urunk * milyen csodálatos széles e világon a te neved! dicsőséggel, tisztességgel koszorúztad, hatalmat adtál neki kezed műve fölött, mindent lába alá vetettél;;8
+[Nocturn 2 Versum]
 V. Az igaznak szája bölcsességet szól
 R. Nyelve azt hirdeti, ami helyes`.
-Uram * a szent sátraidban időzhet, az igazat cselekszi és megnyugszik szent hegyeden;;14
-Életet kért tőled * és megadtad neki Urunk, fönséggel és dicsőséggel övezted, dragakőből keszült koronával koronáztad meg;;20
-Az Úr az ilyet magáldja * Istenétől, gyámolától megkapja jutalmát, mert nemzetsege Istent keresi;;23
+
+[Nocturn 3 Versum]
 V. Istennek törvényét a szívében hordozza
 R. Ezért lépései nem ingadozók.
 
@@ -85,15 +55,9 @@ Olvasmány Jézus Sírák fia könyvéből
 
 [Lectio7]
 Evangélium szent Lukács Evangélista kőnyvéből
-!Luke 12:35-40
+!Lk 12:35-40
 Azon időben így szólt Jézus tanítványaihoz: Csípőtök legyen felövezve és égjen a lámpásotok. És így tovább
 _
-[Ant Laudes]
-Uram, öt talentumot adtál * nézd, másik ötöt nyertem rajta.
-Jól van, te hűséges, derék szolga * minthogy a kevésben hű voltál, menj be urad örömébe!
-Hű és okos szolga * akit ura háza népe fölé rendelt,
-Boldog az a szolga * akit ura amikor megerkezik és kinyitja a kaput munkában talál.
-Jól van, te hűséges, derék szolga * menj be urad örömébe!
 
 [Capitulum Laudes]
 !Sir 31:8-9
@@ -142,79 +106,40 @@ _
 Most és örök időkön át.
 Ámen.
 
-[Versum 2]
-V. Az igazat Isten egyenes utakon vezeti
-R. Megmutatja neki Isten országát
-
 [Ant 2]
 Jól van, te hűséges, derék szolga * minthogy a kevésben hű voltál, sokat bízok rád: menj be urad örömébe!
 
-[Oratio]
-Isten, aki evről évre megörvendeztetsz minket áldott N. hitvallod ünnepe által, add meg nekünk kegyesen, hogy akik születésnapját ünnepeljűk példájat is követni tudjuk
-$Per Dominum.
-
 [Lectio Prima]
-!Wis 10:10
+!Bölcs 10:10
 v. Vezette az igazat egyenes utakon, megmutatta neki Isten országát és szent dolgokkal ismertette meg, nehéz munkájában jóléthez segítette, és fáradozásait bőséggel jutalmazta.
-
-[Capitulum Tertia]
-!Sir 31:8-9
-v. Boldog a gazdag, ki hiba nélkül találtatott, és ki az arany után nem járt, és nem bízott a pénzben és kincsekben. Kicsoda ez, és dicsérni fogjuk őt mert csodadolgokat cselekedett életében.
-$Deo gratias
-
-[Responsory Tertia]
-R.br. Szerette az Úr és felékesítette
-R. Szerette az Úr és felékesítette
-V. A dicsőség ruháiba öltöztette
-R. És felékesítette
-&Gloria
-R. Szerette az Úr és felékesítette
-_
-V. Az igaznak szája bölcsességet szól
-R. Nyelve azt hirdeti, ami helyes`.
 
 [Capitulum Sexta]
 !Sir 39:6
 v. Szivét arra adja, hogy korán ébredjen az Úrhoz, ki öt teremtette, és a Fölségesnek szine elött könyörög.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Az igaznak szája bölcsességet szól
 R. Az igaznak szája bölcsességet szól
 V. Nyelve azt hirdeti, ami helyes`.
 R. Bölcsességet szól
 &Gloria
 R. Az igaznak szája bölcsességet szól
-_
-V. Istennek törvényét a szívében hordozza
-R. Ezért lépései nem ingadozók.
 
-[Capitulum Nona]
-!Wis 10:10
-v. Az Úr vezette az igazat egyenes utakon, megmutatta neki Isten országát és szent dolgokkal ismertette meg, nehéz munkájában jóléthez segítette, és fáradozásait bőséggel jutalmazta.
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Istennek törvényét a szívében hordozza
 R. Istennek törvényét a szívében hordozza
 V. Ezért lépései nem ingadozók.
 R. Szívében hordozza
 &Gloria
 R. Istennek törvényét a szívében hordozza
-_
-V. Az igazat az Úr egyenes utakon vezeti
-R. Megmutatja neki Isten országát
-
-[Versum 3]
-V. Az igazat az Úr egyenes utakon vezeti
-R. Megmutatja neki Isten országát
 
 [Ant 3]
 A férfi aki megveti * a világot és a földi dolgokat győzelmes, égi kincseket gyüjt szava és keze
 
 [Lectio1 in 2 loco]
 Olvasmány a Bölcsesség könyvéből
-!Wis 4:7-14
+!Bölcs 4:7-14
 7 Az igaznak azonban, ha időnap előtt hal is meg, nyugalomban lesz része.
 8 Mert a tisztes aggkort nem a hosszú élet adja, nem függ az évek számától.
 9 Sokkal többet ér az embernek a megfontoltság, mint az ősz haj, és a bűntelen élet, mint a magas kor.
@@ -225,7 +150,7 @@ Olvasmány a Bölcsesség könyvéből
 14 Kedvét találta lelkében az Úr, azért sietett kimenteni a romlottság köréből.
 
 [Lectio2 in 2 loco]
-!Wis 4:14-19
+!Bölcs 4:14-19
 14 Látják ezt az emberek, de nem értik, és nem veszik szívükre,
 15 hogy kegyelem és irgalom vár az Úr választottaira és oltalom a szentjeire.
 16 Az elhunyt igaz elítéli az élő istenteleneket, és a korán beteljesedett ifjúság a bűnösnek években gazdag életét.
@@ -234,21 +159,39 @@ Olvasmány a Bölcsesség könyvéből
 19 Akkor hullává lesznek, megvetetté, és gúnynak tárgyává a holtak közt örökre. Mert letaszítja őket, úgyhogy meg sem mukkannak, velejükig megrendíti őket, végső pusztulásra jutnak,
 
 [Lectio3 in 2 loco]
-!Wis 4:19-20; 5:1-5
+!Bölcs 4:19-20; 5:1-5
 19 gyötrődniük kell, és elenyészik az emlékük.
 20 Reszketve jelennek meg számot adni bűneikről, és gaztetteik vádlóként lépnek föl ellenük.
 1 Akkor az igaz teljes biztonsággal áll szemben azokkal, akik sanyargatták, és lebecsülték a fáradozását.
 2 Amikor ezt látják, iszonyú félelem fogja el őket, és nem tudnak hová lenni; annak nem várt üdvössége miatt.
 3 Bánkódva szólnak egymáshoz, és sóhajtoznak lelkük félelmében:
-4 "Ez az, akit egykor kinevettünk és akiből gúnyt űztünk. Mi esztelenek! Életmódját őrültségnek tartottuk és halálát dicstelennek.
+4 „Ez az, akit egykor kinevettünk és akiből gúnyt űztünk. Mi esztelenek! Életmódját őrültségnek tartottuk és halálát dicstelennek.
 5 Hogy lehet az, hogy Isten fiai közé sorolták és a szentek között van az osztályrésze?
 
 [Lectio7 in 2 loco]
 Evangélium szent Lukács Evangélista kőnyvéből
-!Luke 12:32-35
+!Lk 12:32-35
 Ne félj, te kisded nyáj, hisz Atyátok úgy látta jónak, hogy nektek adja országát. És így tovább
 _
+Homily by the Venerable Bede, Priest at Jarrow, and Doctor of the Church.
+!Bk. iv. Ch. 54 on Luke xii.
+The elect are called a little flock, perchance because the reprobate are far more in number than they, but, more probably, because they love to be lowly, since it is God's will that however much His Church should grow in numbers, she should grow with lowliness even unto the end of the world, and should enter lowly into that kingdom which is hers by His promise. That kingdom He promiseth to her here, when He biddeth her to seek only the kingdom of God, and, to comfort her in her travail, He doth so sweetly and so graciously say that her Father will give it to her.
+
 [Lectio7 in 3 loco]
 Evangélium szent Lukács Evangélista kőnyvéből
-!Luke 19:12-25
+!Lk 19:12-25
 Azon időben Jézus ezt a példabeszédet mondta tanitványainak: Egy főember kezdte messze földre indult, hogy királyságot szerezzen magának, s aztán visszatérjen. És így tovább.
+_
+Homily by St. Ambrose, Bishop (of Milan.)
+!Book viii. on Luke.
+It is well ordered that, being about to call the Gentiles, and to command the destruction of those Jews, who would not have Christ to reign over them, He should put forth first this parable; lest it should be said He had given the Jews no means of becoming better. How can they be asked to repay who have received nothing? That is not a piece of silver of little worth, which, when the woman before mentioned in this Gospel (xv. 8) hath lost, she lighteth a candle, and sweepeth the house, and searcheth diligently until she findeth it.
+
+[Lectio]
+Olvasmány Jézus Sírák fia könyvéből
+!Sir 31:8-11
+v. Boldog a gazdag, ki hiba nélkül találtatott, és ki az arany után nem járt, és nem bízott a pénzben és kincsekben.  Kicsoda ez, és dicsérni fogjuk ötö mert csodadolgokat cselekedett életében.  Ki megpróbáltatott abban, és tökéletes maradt, örök dicsösége leszen; ki vétkezhetett, és nem vétkezett; gonoszat cselekedhetett, és nem cselekedett;  azért biztosítvák javai az Úrban, és alamizsnáit beszéli a szentek egész gyülekezete.
+
+[Evangelium]
+Evangélium + szent Lukács Evangélista kőnyvéből
+!Lk 12:35-40
+v. Csípőtök legyen felövezve és égjen a lámpásotok.  Hasonlítsatok azokhoz az emberekhez, akik urukra várnak, hogy mihelyt megérkezik a menyegzőről és zörget, rögtön ajtót nyissanak neki.  Boldogok azok a szolgák, akiket uruk megérkezésekor ébren talál. Bizony mondom nektek, felövezi magát, asztalhoz ülteti őket, és megy, hogy kiszolgálja őket.  És ha a második vagy a harmadik őrváltáskor érkezve is így találja őket, boldogok azok a szolgák.  Gondoljátok meg: ha tudná a házigazda, hogy melyik órában jön a tolvaj, nem engedné betörni házába.  Legyetek ti is készen, mert olyan órában, amikor nem is gondoljátok, eljön az Emberfia.”

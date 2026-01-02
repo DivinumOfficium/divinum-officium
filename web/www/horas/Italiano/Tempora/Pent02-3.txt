@@ -1,13 +1,8 @@
-[Rank]
-Feria Quarta infra Octavam Corporis Christi;;Semiduplex II class;;5;;ex Tempora/Pent01-4
+[Officium]
+Feria Quarta infra Octavam Corporis Christi
 
-[Rank1960]
-Feria IV infra Hebdomadam II post Octavam Pentecostes;;Feria;;1
-
-[Rule]
-ex Tempora/Pent01-4;
-9 lectiones
-Doxology=Corp
+[Officium] (rubrica 196 aut rubrica 1955)
+Feria IV infra Hebdomadam II post Octavam Pentecostes
 
 [Lectio1]
 Dal primo libro dei Re
@@ -17,17 +12,11 @@ Dal primo libro dei Re
 21 Allora spedirono dei messi agli abitanti di Cariatiarim perché dicessero: I Filistei han ricondotta l'arca del Signore: scendete, e riportatela tra voi. 
 1 Andaron dunque gli uomini di Cariatiarim, e ricondussero l'arca del Signore, e la portaron nella casa di Abinadab in Gabaa; e consacrarono Eleazaro, suo figlio, perché custodisse l'arca del Signore.
 
-[Responsory1 1960]
-@Tempora/Pent01-3:Responsory1
-
 [Lectio2]
 !1 Sam 7:2-4
 2 E dal dì in cui l'arca del Signore fu posta in Cariatiarim era passato molto tempo (cioè venti anni), e tutta la casa d'Israele ebbe pace, seguendo il Signore. 
 3 Allora Samuele disse a tutta la casa d'Israele: Se con tutto il vostro cuore vi convertite al Signore, togliete di mezzo a voi gli dèi stranieri, Baalim e Astarot, e preparate i vostri cuori al Signore e servite a lui solo, egli vi libererà dalle mani dei Filistei. 
 4 Allora i figli d'Israele tolsero via Baalim e Astarot, e servirono soltanto al Signore.
-
-[Responsory2 1960]
-@Tempora/Pent01-3:Responsory2
 
 [Lectio3]
 !1 Sam 7:5-8
@@ -35,9 +24,6 @@ Dal primo libro dei Re
 6 E convennero in Masfat, e, attinta dell'acqua, la sparsero dinanzi al Signore, e digiunarono quel giorno, dicendo: Abbiamo peccato contro il Signore. Samuele dunque giudicò Israele in Masfat. 
 7 Ora i Filistei come seppero che i figli d'Israele s'erano radunati a Masfat, i satrapi dei Filistei si mossero contro Israele. A questa notizia i figli d'Israele ebbero paura dei Filistei, 
 8 e dissero a Samuele: Non cessar d'innalzare la tua voce al Signore Dio nostro per noi, affinché ci salvi dalle mani dei Filistei.
-
-[Responsory3 1960]
-@Tempora/Pent01-3:Responsory3
 
 [Lectio4]
 Dal libro di sant'Ambrogio Vescovo sui Sacramenti
@@ -63,5 +49,5 @@ Delle cose di Dio non si deve parlare secondo i pensieri e i sentimenti del mond
 Ora la nostra fede si trova d'accordo colla divina promessa nell'affermare che è veramente la sua carne e il suo sangue. E quando noi abbiamo mangiato il suo corpo e bevuto il suo sangue, essi fanno che noi siamo in Cristo e Cristo in noi. Non è forse questa la verità? Certo, non se ne può dubitare, a meno di negare che Gesù Cristo sia veramente Dio. Lui stesso è dunque in noi colla sua carne, e noi siamo in lui, tanto che, con lui, ciò che noi siamo è in Dio. Che noi poi siamo in lui quando partecipiamo al sacramento del suo corpo e del suo sangue, lo dichiara lui stesso, dicendo: «Questo mondo già non mi vede più, voi invece mi vedrete: poiché io vivo, e voi pure vivete; perché io sono nel Padre mio, e voi in me, ed io in voi» (Joann. 14,19).
 
 [Lectio9]
-E che questa unione tra lui e noi sia vera, l'ha attestato lui stesso così: «Chi mangia la mia carne, e beve il mio sangue, dimora in me ed io in lui» (Joann. 6,57). Nessuno dunque può essere in lui, se non lo possiede in sé: e solo chi mangia la sua carne può essere fatto uno con lui. Egli aveva già insegnato prima il mistero di questa perfetta unione, dicendo: «Come il Padre ch'è vivo inviò me, e io vivo per il Padre; così chi mangia la mia carne, vive per me» (Joann. 6,58). Dunque egli vive per il Padre; e come lui vive per il Padre, cosi noi dobbiamo vivere per (mezzo) della sua carne.
+E che questa unione tra lui e noi sia vera, l'ha attestato lui stesso così: «Chi mangia la mia carne, e beve il mio sangue, dimora in me ed io in lui» (Joann. 6,57). Nessuno dunque può essere in lui, se non lo possiede in sé: e solo chi mangia la sua carne può essere fatto uno con lui. Egli aveva già insegnato prima il mistero di questa perfetta unione, dicendo: «Come il Padre ch'è vivo inviò me, e io vivo per il Padre; così chi mangia la mia carne, vive per me» (Joann. 6,58). Dunque egli vive per il Padre; e come lui vive per il Padre, così noi dobbiamo vivere per (mezzo) della sua carne.
 &teDeum

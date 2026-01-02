@@ -1,0 +1,148 @@
+[Pater secreto]
+/:Đọc thầm Kinh Lạy Cha cho đến câu « Lại chớ để chúng tôi sa chước cám dỗ: »:/ 
+
+[Pater totum secreto]
+/:Đọc thầm cả Kinh Lạy Cha.:/ 
+
+[Credo secreto]
+/:Đọc thầm Kinh Tin Kính cho đến câu « Tôi tin xác loài người ngày sau sống lại. »:/
+
+[Pater post]
+/:Đoạn chỉ đọc thầm Kinh Lạy Cha mà thôi, trừ khi đọc giờ kinh khác liền tiếp theo.:/ 
+
+[Pater post V]
+/:Và nếu khi ấy đã hết giờ kinh Officium, thì chỉ đọc thầm Kinh Lạy Cha mà thôi.:/ 
+
+[Secreto_]
+/:đọc thầm:/
+
+[Secreto_C]
+/:Trong Cung nguyện, khi đã đọc xong Kinh Officium Nhỏ Đức Bà, thì đọc thầm::/
+
+[Secreto]
+@:Secreto_
+(sed rubrica cisterciensis)
+@:Secreto_C
+(sed die in Cœna Domini aut die in Parasceve aut die Sabbato Sancto)
+@:Secreto_
+
+[Secreto a Laudibus]
+/:Nếu đọc Matutinum lìa Laudes, thì khi ấy đọc thầm::/ 
+(sed rubrica monastica)
+/:Trong ngày Lễ Đơn, và trong Kinh Officium Ngày thường, và nếu đọc Matutinum lìa Laudes, thì khi ấy đọc thầm::/
+(sed rubrica cisterciensis)
+/:Trừ ra trong Kinh Officium mười hai Bài đọc thì đọc thầm::/
+
+[Secus absolute Parvum]
+/:Khi đã đọc xong Xướng đáp ngắn « Xin Chúa đoái thương », thì liền bắt đầu, như sau này::/
+
+[Clara voce_]
+/:Đoạn, đọc lớn tiếng, Câu xướng::/
+
+[Clara voce_C]
+/:Trong Cung nguyện, chúng ta làm dấu Thánh giá + và cúi đầu trước Bàn thờ khi Bề trên ra hiệu.:/
+/:Đoạn đọc Câu xướng lớn tiếng và khoan thai::/
+
+[Clara voce]
+@:Clara voce_
+(sed rubrica cisterciensis)
+@:Clara voce_C
+
+[Secus absolute]
+/:Thì liền bắt đầu, như sau này::/
+(sed rubrica ^Trident)
+/:Khi đã đọc xong Kinh «Lạy Chúa, chúng tôi hát mừng Chúa» hay là Xướng đáp sau hết, thì đọc Câu xướng::/
+
+[Matutinum]
+!Các sự khác thì bỏ, trừ khi đọc %Laudes% lìa nhau. 
+(sed rubrica tridentina)
+!Khi đã đọc xong Kinh « Lạy Chúa, chúng tôi hát mừng Chúa » hay là Xướng đáp thứ chín hoặc thứ ba thế cho kinh ấy, thì bắt đầu %Laudes% ngay, trừ ra trong Đêm Sinh Nhật Đức Chúa Giêsu; vì khi ấy đọc Lời nguyện, đoạn làm Lễ Misa, như đã chỉ trong nơi riêng.
+
+[Matutinum] (rubrica monastica)
+!Các sự khác thì bỏ, trừ khi đọc %Laudes% lìa nhau. 
+(sed rubrica tridentina aut rubrica divino)
+!Các sự khác thì bỏ trong Kinh Officium mười hai Bài đọc, khi đọc %Laudes% liền tiếp theo. Nhưng mà trong ngày Lễ Đơn, và trong Kinh Officium Ngày thường dù ba hay là một Bài đọc thì hằng đọc như sau này.
+(sed rubrica cisterciensis)
+!Các sự khác thì bỏ trong Kinh Officium 12 Bài đọc, khi đọc %Laudes% liền tiếp theo. Nhưng mà trong những Ngày thường, cũng như trong các ngày Lễ 3 Bài đọc, trong Mùa Đông và Mùa Hạ thì hằng đọc như sau này.
+
+[Matutinum parvum]
+!Các sự khác thì bỏ, và bắt đầu %Laudes% ngay.
+
+[Deinde secreto]
+/:Đoạn đọc thầm:/
+
+[PAC ad Completorium]
+/:Nếu sau Complêtorium đọc Matutinum liền tiếp theo, thì khi ấy đọc «Kinh Lạy Cha, Kinh Kính mừng» và «Kinh Tin Kính» hai lần, là vì cuối Kinh Officium ngày trước, và vì đầu Kinh Officium ngày sau.:/ 
+
+[DefunctV]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! Sau Vesperæ ngày thì đọc %Vesperæ Kẻ chết%.
+
+[DefunctVC]
+&Dominus_vobiscum
+&Benedicamus_Domino
+&Divinum_auxilium
+! Sau Vesperæ ngày thì đọc %Vesperæ Defunctorum%.
+
+[DefunctLC]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! Sau Laudes ngày thì đọc %Laudes Defunctorum%.
+
+[DefunctM]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! Sau Laudes ngày thì đọc %Matutinum et Laudes Defunctorum%.
+
+[Martyrologium] (rubrica monastica)
+/:Đoạn đọc Sổ bộ các Thánh tử vì đạo trong Cung nguyện, dù đọc ngoài Cung nguyện cũng rất đáng khen.:/
+(sed rubrica cisterciensis)
+/:Đến đây thì xong giờ Prima. Đoạn đọc Sổ bộ các Thánh tử vì đạo trong Nhà Hội không có phép lành. Ngoài Nhà Dòng thì không đọc Sổ bộ các Thánh tử vì đạo, song bắt đầu ngay « Sự chết các thánh. » như ở dưới.:/
+
+[Regula] (rubrica monastica)
+/:Ngoài Cung nguyện cũng rất đáng khen đọc bài sách trong Sách Phép dòng; bằng không thì đọc Bài ngắn.:/
+(sed rubrica cisterciensis)
+/:Nhưng mà khi đọc riêng một mình, thì đọc Bài ngắn này quanh năm.:/
+
+[Regula ante] (rubrica cisterciensis)
+/:Trong Nhà Hội đọc một chương, hay là một đoạn trong Phép Dòng ông thánh Bênêđictô.:/
+
+[examen]
+/:Xét mình hay là đọc cả «Kinh Lạy Cha» thầm.:/
+
+[Preces flexis genibus]
+/:quì gối:/ 
+
+[Ante]
+/:Trước khi bắt đầu Kinh Officium thì rất đáng khen đọc Lời nguyện sau này, hằng đọc số ít; Đức Giáo Hoàng Piô XI đã ban Ân xá ba năm cho kẻ đọc ngày 17 tháng November năm 1933.:/
+
+[Post]
+/:Khi đã đọc xong Kinh Officium, thì rất đáng khen đọc Lời nguyện sau này; Đức Giáo Hoàng Piô XI đã ban ân xá ba năm cho kẻ đọc ngày 1 tháng December năm 1933. Vả lại Đức Giáo Hoàng Lêô X đã ban cho các Thầy có chức thánh và các Thầy Cả sốt sắng đọc lời ấy sau Kinh Officium được khỏi các sự lầm lỗi và tội đã phạm trong khi đọc bởi tính loài người yếu đuối. Hằng phải quì gối mà đọc lời ấy dù khi đọc riêng, trừ ra những kẻ vì bệnh hoạn thật hay là vì lẽ ngăn trở nặng nề mà không quì được.:/ 
+
+[Superior] (rubrica cisterciensis)
+/:Bề trên::/
+
+[Incipit] (rubrica altovadensis)
+/:Khi đã đọc xong Kính nhớ Kinh Officium Nhỏ Đức Bà, chúng tôi làm dấu Thánh giá + và cúi đầu trước Bàn thờ khi Bề trên ra hiệu.:/
+@:Clara voce_C:2
+
+[IncipitL] (rubrica altovadensis)
+/:Khi đã đọc xong Lời nguyện Matutinum hay là xong Kính nhớ Kinh Officium Nhỏ Đức Bà trong Kinh Officium ngày xanh hoặc 3 Bài đọc, chúng tôi làm dấu Thánh giá + và cúi đầu trước Bàn thờ khi Bề trên ra hiệu.:/
+
+[Antiphona]
+/:bắt đầu trong kinh officium hát mà thôi:/
+
+[CompletBMV]
+/:Đoạn đọc Complêtorium Đức Bà.:/
+
+[CompletBMV2]
+/:Khi đã xong giờ ấy quanh năm, trừ ra ngày thứ Năm và thứ Sáu tuần thánh, thì hát trọng thể:/
+
+[sine Oremus]
+/:Và không đọc «Chúng ta hãy cầu nguyện» ::/
+(sed rubrica altovadensis)
+/:Và Kẻ trực tuần đọc tiếp theo không đọc «Chúng ta hãy cầu nguyện».:/
+
+[Conclusio cisterciensis]
+/:Và khi nào đọc xong Giờ kinh phải ra khỏi Cung nguyện (trừ khi Lễ Misa liền tiếp theo hay là Kinh Officium Kẻ chết, hoặc Nghi táng xác, hoặc Rước kiệu, hay là Kinh Cầu, như trong ngày Cầu mùa, v.v... liền với Kinh Officium ngày) thì đọc::/

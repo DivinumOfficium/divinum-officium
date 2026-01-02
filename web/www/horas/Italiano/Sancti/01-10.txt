@@ -1,49 +1,8 @@
 [Rank]
 Quinta die infra Octavam Epiphaniae;;Semiduplex;;2;;ex Sancti/01-06
 
-[Rank1960]
+[Rank] (rubrica 196 aut rubrica 1955)
 Die Decima Januarii;;Feria;;1.2;;vide Sancti/01-06
-
-[Rule]
-ex Sancti/01-06
-Lectio1 tempora
-Doxology=Epi
-9 lectiones
-Feria Te Deum
-(rubrica divino aut rubrica tridentina aut rubrica monastica) CPapaM=Igino;
-Infra octavam Epiphaniae Domini
-
-[Lectio1]
-Dalla Lettera ai Romani
-!Rom 14:1-4
-1 Accogliete chi è debole nella fede, senza disputare sulle opinioni. 
-2 Perché l'uno crede di poter mangiare di tutto: e l'altro ch'è debole (nella fede), non mangia che dei legumi. 
-3 Or chi mangia, non disprezzi chi non mangia: e chi non mangia, non giudichi chi mangia: perché Dio lo ha preso per sé. 
-4 Chi sei tu da giudicare il servo altrui? Egli sta ritto o cade per il suo padrone: ma egli starà ritto: perché Dio è potente a sostenerlo.
-
-[Responsory1]
-@Sancti/01-06:Responsory1InfraOctavam
-
-[Responsory2]
-@Sancti/01-06:Responsory2
-
-[Responsory3]
-@Sancti/01-06:Responsory3
-
-[Lectio2]
-!Rom 14:5-8
-5 Infatti uno fa distinzione fra giorno e giorno: un altro poi ritiene tutti i giorni uguali: ognuno segua il proprio parere. 
-6 Chi bada al giorno, ci bada per il Signore: E chi mangia, mangia per il Signore: tant'è vero che ne rende grazie a Dio. E chi non mangia, non mangia per il Signore, e così rende grazie a Dio. 
-7 Nessuno infatti di noi vive per se stesso, e nessuno muore per se stesso. 
-8 Poiché se viviamo, viviamo per il Signore: se moriamo, moriamo per il Signore. Sia dunque che viviamo o che moriamo noi siamo del Signore.
-
-[Lectio3]
-!Rom 14:9-13
-9 Cristo invero è morto ed è risuscitato appunto per questo: per essere cioè il Signore dei vivi e dei morti. 
-10 Ma tu perché giudichi il tuo fratello? o perché disprezzi il tuo fratello? Tutti dovremo comparire davanti al tribunale di Cristo. 
-11 Poiché sta scritto; «Vivo io, dice il Signore, ogni ginocchio si piegherà davanti a me: e ogni lingua confesserà Dio» (Is. 45,24). 
-12 Ognuno di noi quindi renderà conto di sé a Dio. 
-13 Dunque non giudichiamoci più gli uni gli altri.
 
 [Lectio4]
 Sermone di san Massimo Vescovo
@@ -77,12 +36,3 @@ Tutte le nazioni verranno da lungi portando i loro doni, alleluia.
 
 [Ant 3]
 Verranno tutti quelli di Saba * portando oro ed incenso, alleluia, alleluia.
-
-
-[Commemoratio 3] (rubrica divino aut rubrica tridentina aut rubrica monastica)
-!Commemorazione di S. Igino Papa e Martire
-@Commune/C2:Oratio proper Gregem
-_
-$Oremus
-Riguarda, Dio onnipotente, alla nostra debolezza: e poiché il peso del nostro mal operato è grave, ci protegga la gloriosa intercessione del tuo beato Martire e Vescovo Igino.
-$Per Dominum

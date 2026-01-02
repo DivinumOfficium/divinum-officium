@@ -1,19 +1,19 @@
-[Rank]
-Dominica infra Octavam Ascensionis;;Semiduplex;;5;;ex Tempora/Pasc5-4
+[Officium]
+Dominica infra Octavam Ascensionis
 
-[Rank1960]
-Dominica post Ascensionem;;Semiduplex;;5;;vide Tempora/Pasc5-4
+[Officium] (rubrica 196 aut rubrica 1955)
+Dominica post Ascensionem
+
+[Rank]
+;;Semiduplex;;5;;ex Tempora/Pasc5-4
+(sed rubrica 196 aut rubrica1955)
+;;Semiduplex;;5;;vide Tempora/Pasc5-4
 
 [Rule]
-ex Tempora/Pasc5-4;(rubrica 1570 aut rubrica 1910 aut rubrica divino)
-9 lectiones
+ex Tempora/Pasc5-4; 
+(rubrica tridentina aut rubrica divino) 9 lectiones
 Doxology=Asc
-StJamesRule=John,Rev
-
-[Capitulum Vespera]
-!1 Petri 4:7-8
-v. Caríssimi: Estóte prudéntes, et vigiláte in oratiónibus. Ante ómnia autem mútuam in vobismetípsis caritátem contínuam habéntes, quia cáritas óperit multitúdinem peccatórum.
-$Deo gratias
+StJamesRule=1 Joannes
 
 [Versum 1]
 @Tempora/Pasc5-4:Versum 2
@@ -25,25 +25,15 @@ Cum vénerit Paráclitus, * quem ego mittam vobis Spíritum veritátis, qui a Pa
 Omnípotens sempitérne Deus: fac nos tibi semper et devótam gérere voluntátem; et majestáti tuæ sincéro corde servíre.
 $Per Dominum
 
-[Ant Matutinum](rubrica 1570 aut rubrica 1910 aut rubrica divino)
+[Commemoratio]
+!Commemoratio Octavæ Ascensionis
+@Tempora/Pasc5-4:Oratio
+(sed rubrica cisterciensis)
+@TemporaM/Pasc5-4:Oratio
+
+[Ant Matutinum] (rubrica tridentina aut rubrica divino)
 @Tempora/Pasc5-4:Ant Matutinum
 
-[Commemoratio 1]
-!Commemoratio Octavæ Ascensionis
-Ant. O Rex glóriæ, Dómine virtútum, qui triumphátor hódie super omnes cælos ascendísti, ne derelínquas nos órphanos; sed mitte promíssum Patris in nos, Spíritum veritátis, allelúja.
-_
-(deinde dicitur)
-V. Ascéndit Deus in jubilatióne, allelúja.
-R. Et Dóminus in voce tubæ, allelúja.
-(sed rubrica tridentina loco hujus versus dicitur)
-V. Dóminus in cælo, allelúja.
-R. Parávit sedem suam, allelúja.
-(deinde dicitur)
-_
-$Oremus
-Concéde, quǽsumus, omnípotens Deus: ut, qui hodiérna die Unigénitum tuum Redemptórem nostrum ad cælos ascendísse crédimus; ipse quoque mente in cæléstibus habitémus.
-$Per eumdem
-	
 [Lectio1]
 Incipit Epístola prima beáti Joánnis Apóstoli
 !1 Joannes 1:1-5
@@ -73,15 +63,22 @@ Incipit Epístola prima beáti Joánnis Apóstoli
 [Lectio4]
 Sermo sancti Augustíni Epíscopi
 !Sermo 2 de Ascensióne Dómini, qui est 175 de Tempore
-Salvátor noster, dilectíssimi fratres, ascéndit in cælum: non ergo turbémur in terra. Ibi sit mens, et hic erit réquies. Ascendámus cum Christo ínterim corde: cum dies ejus promíssus advénerit, sequémur et córpore. Scire tamen debémus, fratres, quia cum Christo non ascéndit supérbia, non avarítia, non luxúria: nullum vítium nostrum ascéndit cum médico nostro. Et ídeo si post médicum desiderámus ascéndere, debémus vítia et peccáta depónere. Omnes enim quasi quibúsdam compédibus nos premunt, et peccatórum nos rétibus ligáre conténdunt: et ídeo cum Dei adjutório, secúndum quod ait Psalmísta: Dirumpámus víncula eórum: ut secúri possímus dícere Dómino: Dirupísti víncula mea, tibi sacrificábo hóstiam laudis. 
+Salvátor noster, dilectíssimi fratres, ascéndit in cælum: non ergo turbémur in terra. Ibi sit mens, et hic erit réquies. Ascendámus cum Christo ínterim corde: cum dies ejus promíssus advénerit, sequémur et córpore. Scire tamen debémus, fratres, quia cum Christo non ascéndit supérbia, non avarítia, non luxúria: nullum vítium nostrum ascéndit cum médico nostro. Et ídeo si post médicum desiderámus ascéndere, debémus vítia et peccáta depónere. Omnes enim quasi quibúsdam compédibus nos premunt, et peccatórum nos rétibus ligáre conténdunt: et ídeo cum Dei adjutório, secúndum quod ait Psalmísta: Dirumpámus víncula eórum: ut secúri possímus dícere Dómino: Dirupísti víncula mea, tibi sacrificábo hóstiam laudis.
 
 [Lectio5]
 Resurréctio Dómini spes nostra est: ascénsio Dómini glorificátio nostra est. Ascensiónis hódie solémnia celebrámus. Si ergo recte, si fidéliter, si devóte, si sancte, si pie ascensiónem Dómini celebrámus, ascendámus cum illo, et sursum corda habeámus. Ascendéntes autem non extollámur, nec de nostris, quasi de própriis méritis præsumámus. Sursum autem corda habére debémus ad Dóminum. Sursum enim cor non ad Dóminum, supérbia vocátur: sursum autem cor ad Dóminum, refúgium vocátur. Vidéte, fratres, magnum miráculum. Altus est Deus: érigis te, et fugit a te: humílias te, et descéndit ad te. Quare hoc? Quia excélsus est, et humília réspicit, et alta de longe cognóscit. Humília de próximo réspicit, ut attóllat: alta, id est, supérba, de longe cognóscit, ut déprimat.
 
-[Lectio6]
-Resurréxit enim Christus, ut spem nobis daret, quia surgit homo, qui móritur: ne moriéndo desperarémus, et vitam nostram in morte finítam putarémus, secúros nos fecit. Sollíciti enim erámus de ipsa ánima: et ille nobis resurgéndo, de carnis resurrectióne fidúciam dedit. Crede ergo, ut mundéris. Prius te opórtet crédere, ut póstea per fidem Deum mereáris aspícere. Deum enim vidére vis? Audi ipsum: Beáti mundo corde: quóniam ipsi Deum vidébunt. Prius ergo cógita de corde mundándo: quidquid ibi vides, quod dísplicet Deo, tolle.~
-(rubrica 1570)
+[Lectio6_]
+Resurréxit enim Christus, ut spem nobis daret, quia surgit homo, qui móritur: ne moriéndo desperarémus, et vitam nostram in morte finítam putarémus, secúros nos fecit. Sollíciti enim erámus de ipsa ánima: et ille nobis resurgéndo, de carnis resurrectióne fidúciam dedit. Crede ergo, ut mundéris. Prius te opórtet crédere, ut póstea per fidem Deum mereáris aspícere. Deum enim vidére vis? Audi ipsum: Beáti mundo corde: quóniam ipsi Deum vidébunt. Prius ergo cógita de corde mundándo: quidquid ibi vides, quod dísplicet Deo, tolle. 
+
+[Lectio6_2]
 Veníre ad te vult Deus, audi ipsum dicéntem: Ego et Pater veniémus, et mansiónem apud eum faciémus.
+
+[Lectio6]
+@:Lectio6_
+(sed rubrica 1570) 
+@:Lectio6_:s/$/~/
+(rubrica 1570) @:Lectio6_2
 
 [Lectio7]
 Léctio sancti Evangélii secúndum Joánnem
@@ -107,11 +104,21 @@ R. Cum autem vénerit ille, docébit vos omnem veritátem, allelúja.
 Deínde tamquam consequénter adjúnxit, unde modo disputáre suscépimus: Cum autem vénerit Paráclitus, quem ego mittam vobis a Patre, Spíritum veritátis, qui a Patre procédit, ille testimónium perhibébit de me: et vos testimónium perhibébitis, quia ab inítio mecum estis. Quid hoc pértinet ad illud quod díxerat: Nunc autem et vidérunt, et odérunt et me, et Patrem meum: sed ut impleátur sermo, qui in lege eórum scriptus est: Quia ódio habuérunt me gratis? An quia Paráclitus quando venit Spíritus veritátis, eos, qui vidérunt, et odérunt, testimónio manifestióre convícit? Immo vero étiam áliquos ex illis qui vidérunt, et adhuc óderant, ad fidem, quæ per dilectiónem operátur, sui manifestatióne convértit. 
 &teDeum
 
-[Capitulum Laudes]
-@:Capitulum Vespera
+[Ant Laudes] (rubrica cisterciensis)
+Allelúia, * allelúia, allelúia.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
+[Capitulum Laudes]
+!1 Petri 4:7-8
+v. Caríssimi: Estóte prudéntes, et vigiláte in oratiónibus. Ante ómnia autem mútuam in vobismetípsis caritátem contínuam habéntes, quia cáritas óperit multitúdinem peccatórum.
+$Deo gratias
+
+[Versum 2]
+@Tempora/Pasc5-4:Versum 1
+(sed rubrica tridentina)
+@:Versum 1
+
+[Ant 2]
+@:Ant 1
 
 [Capitulum Sexta]
 !1 Petri 4:7-8
@@ -123,25 +130,8 @@ $Deo gratias
 v. Si quis lóquitur, quasi sermónes Dei: si quis minístrat, tamquam ex virtúte, quam adminístrat Deus: ut in ómnibus honorificétur Deus per Jesum Christum, Dóminum nostrum.
 $Deo gratias
 
-[Ant 2]
-@:Ant 1
-
-[Versum 2]
-@Tempora/Pasc5-4:Versum 1
-(sed rubrica tridentina)
-@:Versum 1
-
-[Commemoratio 2]
-!Commemoratio Octavæ Ascensionis
-@Tempora/Pasc5-4:Oratio
-
 [Versum 3]
 @:Versum 1
 
 [Ant 3]
 Hæc locútus sum * vobis, ut cum vénerit hora eórum, reminiscámini quia ego dixi vobis, allelúja.
-
-[Commemoratio 3]
-!Commemoratio Octavæ Ascensionis
-@Tempora/Pasc5-4:Oratio
-

@@ -1,25 +1,15 @@
-[Name]
+[Officium]
 In Festis Beatæ Mariæ Virginis
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
+[Missa]
+Salve Sancta Parens
 
-[Ant Vespera]
-Mentre il re * era adagiato alla sua mensa, il mio nardo mandò soave profumo.;;109
+[Ant VesperaBMV]
 La sua sinistra * mi circonda il capo, e la sua destra mi tiene abbracciata.;;112
-Sono bruna * ma bella, o figlie di Gerusalemme, perciò il Re mi amò e mi introdusse nella sua dimora.;;121
-L'inverno è già passato, * la pioggia è cessata e sparita: sorgi, amica mia, e vieni.;;127
 Tu sei diventata bella * e dolce nelle tue delizie, o santa Madre di Dio.;;147
 
-[Capitulum Vespera]
-!Sir 24:14
-v. Da principio e prima dei secoli  io sono stata creata, e fino all'età futura non cesserò di esistere, ed ho servito nel santuario alla sua presenza.
-$Deo gratias.
-
 [Hymnus Vespera]
-! La prima strofa del seguente inno si dice inginocchiati.
+/:La prima strofa del seguente inno si dice inginocchiati.:/
 v. Ave, stella del mare,
 augusta  Madre di Dio
 e sempre Vergine,
@@ -61,7 +51,11 @@ V. Fammi degno di lodarti, Vergine santa.
 R. Dammi forza contro i tuoi nemici.
 
 [Ant 1]
-Santa Maria, * soccorri i miseri, aiuta i pusillanimi, consola gli afflitti, prega per il popolo, intervieni per il clero, intercedi per il ceto femminile religioso: sentano il tuo aiuto tutti coloro che celebrano la tua santa commemorazione.
+Ant. Santa Maria, soccorri i miseri, aiuta i pusillanimi, consola gli afflitti, prega per il popolo, intervieni per il clero, intercedi per il ceto femminile religioso: sentano il tuo aiuto tutti coloro che celebrano la tua santa festa.
+
+[Oratio]
+Concedi a noi tuoi servi, o Signore, di godere perpetua sanità di anima e di corpo e di esser liberati, per intercessione della beata Vergine Maria, dalla tristezza nella vita presente e di essere ammessi all'eterno gaudio del cielo.
+$Per Dominum
 
 [Invit]
 Santa Maria, vergine Madre di Dio, * intercedi per noi.
@@ -87,28 +81,20 @@ feconda di Spirito Santo,
 il desiderato delle genti
 venne alla luce nel tuo seno.
 _
-O Gesù, sia gloria a te
+* O Gesù, sia gloria a te
 che sei nato dalla Vergine,
 con il Padre e lo Spirito Santo,
 per tutti i secoli.
 Amen.
 
-[Ant Matutinum]
+[Ant MatutinumBMV]
 Tu sei benedetta * fra le donne e benedetto è il frutto del tuo seno.;;8
 Santa Madre di Dio * come aroma prezioso, hai emanato soave profumo.;;18
 Al prodigio * della sua verginità innalziamo festosi un cantico di gioia.;;23
-V. Con il tuo splendore e con la tua bellezza.
-R. Vieni, avanza lietamente, e regna.
-Con il tuo splendore * e con la tua bellezza, vieni, avanza lietamente, e regna.;;44
-L'aiuterà * Dio con la sua presenza: Dio è in lei; non vacillerà.;;45
 Siamo nella gioia, * tutti noi che abitiamo in te, o santa Madre di Dio.;;86
-V. L'aiuterà Iddio con la sua presenza.
-R. Dio è in lei; non sarà scossa.
 Rallegrati, * o vergine Maria, perché da sola hai distrutto tutte le eresie nel mondo intero.;;95
 Fammi degno * di lodarti, o Vergine santa: dammi forza contro i tuoi nemici.;;96
 Dopo il parto, * o Vergine, sei rimasta inviolata: Madre di Dìo, intercedi per noi.;;97
-V. L'ha eletta Iddio e l'ha prescelta.
-R. La fa abitare nella sua dimora.
 
 [Lectio1]
 Lettura dal libro dei Proverbi
@@ -151,8 +137,8 @@ R. E generai colui che è Dio e uomo.
 1 La Sapienza si è fabbricata una casa, ha tagliato sette colonne. 
 2 Immolò le sue vittime, versò il vino e imbandì la sua mensa. 
 3 Mandò le sue ancelle, perché chiamassero, ai bastioni e alle mura della città: 
-4 "Chi è fanciullo, venga da me". Ed agli stolti disse: 
-5 "Venite, mangiate del mio pane e bevete il vino che io vi versai".
+4 «Chi è fanciullo, venga da me». Ed agli stolti disse: 
+5 «Venite, mangiate del mio pane e bevete il vino che io vi versai».
 
 [Responsory3]
 R. Beata sei tu, vergine Maria, che hai portato il Signore, creatore del mondo: 
@@ -196,20 +182,20 @@ R. E al vederla le figlie di Sion la proclamarono beatissima, dicendo: Il tuo no
 [Lectio7]
 Dal Vangelo secondo Luca
 !Luca 11:27-28
-In quel tempo, mentre Gesù parlava alle turbe, una donna, alzando la voce in mezzo alla folla, gli disse: "Beata colei che ti fu madre". (continua nella Messa del giorno).
+In quel tempo, mentre Gesù parlava alle turbe, una donna, alzando la voce in mezzo alla folla, gli disse: «Beata colei che ti fu madre». (continua nella Messa del giorno).
 _
 Omelia di s. Beda, il Venerabile, presbitero
 !Lib 4 Cap 49 su Luca 11 
-Questa donna si mostra in possesso di devozione di fede profonda, poiché, mentre gli scribi ed i farisei tentano il Signore e lo bestemmiano, ella riconosce davanti a tutti la sua incarnazione con tanta sincerità, e la confessa con fede così grande, da confondere e la calunnia dei grandi presenti e la perfidia dei futuri eretici. Infatti, come allora i Giudei, bestemmiando contro le opere dello Spirito Santo, negavano che Cristo fosse vero Figlio di Dio consustanziale al Padre; così in seguito gli eretici, negando che Maria sempre Vergine avesse somministrato, per opera e merito dello Spirito Santo, la materia della propria carne al Figlio unigenito di Dio che doveva nascere con un corpo umano, sostennero che non si doveva riconoscere come vero Figlio dell'uomo e della medesima sostanza della madre.  
+Questa donna si mostra in possesso di devozione di fede profonda, poiché, mentre gli scribi ed i farisei tentano il Signore e lo bestemmiano, ella riconosce davanti a tutti la sua incarnazione con tanta sincerità, e la confessa con fede così grande, da confondere e la calunnia dei grandi presenti e la perfidia dei futuri eretici. Infatti, come allora i Giudei, bestemmiando contro le opere dello Spirito Santo, negavano che Cristo fosse vero Figlio di Dio consustanziale al Padre; così in seguito gli eretici, negando che Maria sempre Vergine avesse somministrato, per opera e merito dello Spirito Santo, la materia della propria carne al Figlio unigenito di Dio che doveva nascere con un corpo umano, sostennero che non si doveva riconoscere come vero Figlio dell'uomo e della medesima sostanza della madre.
 
 [Responsory7]
 R. Beata sei tu, santa vergine Maria, e molto degna di ogni lode: 
 * poiché da te è nato il sole di giustizia. Cristo, nostro Dio
-V. Prega per il popolo, intervieni per il clero, intercedi per il ceto femminile religioso: sentano il tuo aiuto tutti coloro che celebrano la tua santa commemorazione.
+V. Prega per il popolo, intervieni per il clero, intercedi per il ceto femminile religioso: sentano il tuo aiuto tutti coloro che celebrano la tua santa festa.
 R. Poiché da te è nato il sole di giustizia. Cristo, nostro Dio.
 
 [Lectio8]
-Ma se si ritiene che il corpo preso dal Verbo di Dio incarnandosi è estraneo alla carne della vergine Madre, senza motivo vengono detti beati il seno che lo portò e il petto che lo allattò.  Ora l'Apostolo dice: "Poiché Dio mandò il suo Figlio, fatto da una donna, sottomesso alla legge". E non bisogna dar retta a coloro che pensano si debba leggere: Nato da una donna, sottomesso alla legge, ma bisogna invece leggere: "Fatto da una donna"; perché, concepito nel seno di una vergine, ha tratto la carne non dal nulla, non da altra cosa, ma dalla carne materna. Altrimenti non si potrebbe dire con verità Figlio dell'uomo colui che non ha avuto origine dall'uomo. Anche noi dunque alziamo la nostra voce contro Eutiche insieme con la Chiesa cattolica, di cui questa donna fu figura; solleviamo anche la mente dal mezzo della folla e diciamo al Salvatore: "Beato il seno che ti ha portato e il petto che hai succhiato". Poiché è veramente madre beata ella che, come disse un autore, ha dato alla luce il Re, che regge il cielo e la terra per i secoli.
+Ma se si ritiene che il corpo preso dal Verbo di Dio incarnandosi è estraneo alla carne della vergine Madre, senza motivo vengono detti beati il seno che lo portò e il petto che lo allattò.  Ora l'Apostolo dice: «Poiché Dio mandò il suo Figlio, fatto da una donna, sottomesso alla legge». E non bisogna dar retta a coloro che pensano si debba leggere: Nato da una donna, sottomesso alla legge, ma bisogna invece leggere: «Fatto da una donna»; perché, concepito nel seno di una vergine, ha tratto la carne non dal nulla, non da altra cosa, ma dalla carne materna. Altrimenti non si potrebbe dire con verità Figlio dell'uomo colui che non ha avuto origine dall'uomo. Anche noi dunque alziamo la nostra voce contro Eutiche insieme con la Chiesa cattolica, di cui questa donna fu figura; solleviamo anche la mente dal mezzo della folla e diciamo al Salvatore: «Beato il seno che ti ha portato e il petto che hai succhiato». Poiché è veramente madre beata ella che, come disse un autore, ha dato alla luce il Re, che regge il cielo e la terra per i secoli.
 
 [Responsory8]
 R. Tutte le generazioni mi chiameranno beata, 
@@ -220,15 +206,12 @@ R. Perché grandi cose ha fatto in me il Signore che è potente, e il cui nome �
 R. Perché grandi cose ha fatto in me il Signore che è potente, e il cui nome è santo.
 
 [Lectio9]
-"Non solo, ma beati coloro che ascoltano la parola di Dio e la mettono in pratica". Il Salvatore approva eminentemente l'attestazione di questa donna, affermando che è beata non sol- tanto colei che aveva meritato di essere madre corporale del Verbo di Dio, ma che sono beati anche tutti coloro che si sforzeranno di concepire spiritualmente lo stesso Verbo istruendosi nella fede e che, praticando le buone opere, lo faranno nascere e quasi lo alimenteranno sia nel proprio cuore, sia in quello del prossimo Infatti la stessa Madre di Dio è sì beata per aver contribuito nel tempo all'incarnazione del Verbo, ma è molto più beata perché meritò, amandolo sempre, di custodirlo in sé eternamente.  
+«Non solo, ma beati coloro che ascoltano la parola di Dio e la mettono in pratica». Il Salvatore approva eminentemente l'attestazione di questa donna, affermando che è beata non soltanto colei che aveva meritato di essere madre corporale del Verbo di Dio, ma che sono beati anche tutti coloro che si sforzeranno di concepire spiritualmente lo stesso Verbo istruendosi nella fede e che, praticando le buone opere, lo faranno nascere e quasi lo alimenteranno sia nel proprio cuore, sia in quello del prossimo. Infatti la stessa Madre di Dio è sì beata per aver contribuito nel tempo all'incarnazione del Verbo, ma è molto più beata perché meritò, amandolo sempre, di custodirlo in sé eternamente.  
 &teDeum
 
-[Ant Laudes]
-Mentre il re * era adagiato alla sua mensa, il mio nardo mandò soave profumo.
-La sua sinistra * mi circonda il capo, e la sua destra mi tiene abbracciata.
-Sono bruna * ma bella, o figlie di Gerusalemme, perciò il Re mi amò e mi introdusse nella sua dimora.
-L'inverno è già passato, * la pioggia è cessata e sparita: sorgi, amica mia, e vieni.
-Tu sei diventata bella * e dolce nelle tue delizie, o santa Madre di Dio.
+[Versum 0]
+V. Prega per noi, santa Madre di Dio.
+R. Affinché diventiamo degni delle promesse di Cristo.
 
 [Capitulum Laudes]
 !Sir 24:14
@@ -243,7 +226,7 @@ tu nutrì col latte del tuo seno.
 _
 Ciò che a noi tolse la triste Eva,
 tu rendi colla tua augusta prole;
-ainché i miseri trovino adito nell'empireo,
+affinché i miseri trovino adito nell'empireo,
 tu del cielo schiudi le porte.
 _
 Tu del gran Re sei la porta,
@@ -256,71 +239,89 @@ che sei nato dalla Vergine,
 insieme col Padre e con lo Spirito Santo,
 per tutti i secoli. Amen.
 
-[Versum 2]
-V. La grazia è cosparsa sulle tue labbra.
-R. Perciò Iddio ti ha benedetta in eterno.
-
 [Ant 2]
 Tu sei beata, o Maria, * perché hai creduto: si adempiranno in te le cose che ti sono state dette dal Signore, alleluia.
-[Oratio]
-Concedi a noi tuoi servi, o Signore, di godere perpetua sanità di anima e di corpo e di esser liberati, per intercessione della beata Vergine Maria, dalla tristezza nella vita presente e di essere ammessi all'eterno gaudio del cielo.
-$Per Dominum.
 
 [Lectio Prima]
 !Sir 24:19-20
-v. Nelle piazze ho mandato profumo come la cannella e il balsamo aromatico: ho e manato soave profumo come di mirra squisita.  
-
-[Capitulum Tertia]
-!Sir 24:14
-v. Da principio e prima dei secoli  io sono stata creata, e fino all'età futura non cesserò di esistere, ed ho servito nel santuario alla sua presenza.
-$Deo gratias.
-
-[Responsory Tertia]
-R.br. Con il tuo splendore, * e con la tua bellezza.
-R. Con il tuo splendore, * e con la tua bellezza.
-V. Vieni, avanza lietamente, e regna.
-R. E con la tua bellezza.
-&Gloria
-R. Con il tuo splendore e con la tua bellezza.
-_
-V. L'aiuterà Iddio con la sua presenza.
-R. Dio è in lei; non sarà scossa.
+v. Nelle piazze ho mandato profumo come la cannella e il balsamo aromatico: ho emanato soave profumo come di mirra squisita.
 
 [Capitulum Sexta]
 !Sir 24:15-16
-v. E così ebbi stabile dimora in Sion, e nella città santa trovai anche il mio riposo, e in Gerusalemme la mia potenza. E misi radici in mezzo al popolo glorioso, che ha la sua eredità nel dominio del mio Dio, e la mia dimora è nell'assemblea dei santi.
+v. E così ebbi stabile dimora in Sion, e nella città santa trovai anche il mio riposo, e in Gerusalemme la mia potenza. E misi radici in mezzo al popolo glorioso, che ha la sua eredità nel dominio del mio Dio, e la mia dimora è nell'assemblea dei santi.  
 $Deo gratias.
-
-[Responsory Sexta]
-R.br. L'aiuterà Dio * con la sua presenza.
-R. L'aiuterà Dio * con la sua presenza.
-V. Dio è in lei; non sarà scossa.
-R. Con la sua presenza.
-&Gloria
-R. L'aiuterà Dio con la sua presenza.
-_
-V. L'ha eletta Iddio e l'ha prescelta.
-R. La fa abitare nella sua dimora.
-
-[Capitulum Nona]
-!Sir 24:19-20
-v. Nelle piazze ho mandato profumo come la cannella e il balsamo aromatico: ho emanato soave profumo come di mirra squisita.
-$Deo gratias.
-
-[Responsory Nona]
-R.br. L'ha eletta Iddio * e l'ha prescelta.
-R. L'ha eletta Iddio * e l'ha prescelta.
-V. La fa abitare nella sua dimora.
-R.  E l'ha prescelta.
-&Gloria
-R. L'ha eletta Iddio e l'ha prescelta.
-_
-V. La grazia è cosparsa sulle tue labbra.
-R. Perciò Iddio ti ha benedetta in eterno.
-
-[Versum 3]
-V. Fammi degno di lodarti, Vergine santa.
-R. Dammi forza contro i tuoi nemici.
 
 [Ant 3]
 Tutte le generazioni mi chiameranno beata, * poiché Dio guardò ad un umile ancella.
+
+[Introitus]
+!Sedulius.
+v. Salve, o Madre santa, tu hai partorito il Re gloriosamente; egli governa il cielo e la terra per i secoli in eterno. (Allelúia, allelúia.)
+!Ps 44:2
+Vibra nel mio cuore un ispirato pensiero, mentre al Sovrano canto il mio poema.
+&Gloria
+v. Salve, o Madre santa, tu hai partorito il Re gloriosamente; egli governa il cielo e la terra per i secoli in eterno. (Allelúia, allelúia.)
+
+[Introitus] (tempore paschali)
+!Sedulius
+v. Salve, o Madre santa, tu hai partorito il Re gloriosamente; egli governa il cielo e la terra per i secoli in eterno. Allelúia, allelúia.
+!Ps 44:2
+Vibra nel mio cuore un ispirato pensiero, mentre al Sovrano canto il mio poema.
+&Gloria
+v. Salve, o Madre santa, tu hai partorito il Re gloriosamente; egli governa il cielo e la terra per i secoli in eterno. Allelúia, allelúia.
+
+[Oratio] (ad missam)
+Signore, te ne preghiamo, concedi ai tuoi servi perpetua salute di anima e di corpo; e, per intercessione della beata Vergine Maria, concedici di essere liberati dai mali presenti e di godere delle gioie eterne.
+$Per Dominum
+
+[Lectio]
+Dal libro della Sapienza.
+!Eccli 24:14-16
+Da principio e prima dei secoli io fui creata, e per tutta l'eternità io non cesserò di essere; nel tabernacolo santo, dinanzi a Lui ho esercitato il mio ministero, poi ebbi fissa dimora in Sion. Nella città santa parimenti posai ed in Gerusalemme è il mio potere. Gettai le mie radici in un popolo illustre, nella porzione del mio Dio, nel suo retaggio, presi dimora tra i santi.
+
+[Graduale]
+Tu sei benedetta e venerabile, o Vergine Maria, che senza offesa del pudore sei diventata la Madre del Salvatore.
+V. Vergine Madre di Dio, nel tuo seno, fattosi uomo, si rinchiuse Colui che l'universo non può contenere. Alleluia, alleluia.
+V. O Vergine, anche dopo il parto tu rimanesti inviolata; o Madre di Dio, prega per noi. Alleluia.
+
+[Graduale] (tempore Adventus)
+Tu sei benedetta e venerabile, o Vergine Maria, che senza offesa del pudore sei diventata la Madre del Salvatore.
+V. O Vergine Madre di Dio, nel tuo seno, fattosi uomo, si rinchiuse Colui che l'universo non può contenere. Alleluia, alleluia.
+!Luca 1:28
+Ave, Maria, piena di grazia, il Signore è con te. Tu sei benedetta fra le donne. Allelúia.
+
+[GradualeP]
+Allelúia, allelúia
+!Ps 17:8
+L'albero di lesse è fiorito; la Vergine ha generato l'Uomo-Dio; Dio ha ristabilito la pace: ha unito in lui la terra e il cielo.
+!Liuke 1:28
+A ve, Maria, piena di grazia, il Signore è con te. Tu sei benedetta fra le donne. Allelúia.
+
+[Tractus]
+Tu sei benedetta e venerabile, o Vergine Maria, che senza offesa del pudore sei diventata la Madre del Salvatore.
+V. O Vergine Madre di Dio, nel tuo seno, fattosi uomo, si rinchiuse Colui che l'universo non può contenere.
+!  
+Rallegrati, o Vergine Maria, che da sola vincesti tutte le eresie.
+V. Tu hai creduto alle parole dell'arcangelo Gabriele.
+V. Tu che, Vergine, generasti l'Uomo-Dio, e dopo il parto, rimanesti Vergine inviolata.
+V. Madre di Dio, prega per noi.
+
+[Evangelium]
+Seguito ++ del Santo Vangelo secondo Giovanni
+!Luc 11:27-28
+In quel tempo, mentre Gesù parlava alla folla, avvenne che una donna, tra la folla, alzò la voce e disse: «Beato il seno che ti ha portato e il petto che ti ha nutrito». Ma egli disse: «Beati, piuttosto, coloro che ascoltano la parola di Dio, e la custodiscono».
+
+[Offertorium]
+!Luc 1:28; 1:42
+Ave, Maria, piena di grazia, il Signore è con te. Tu sei benedetta fra le donne, e benedetto è il frutto del seno tuo. (Allelúia.)
+
+[Secreta]
+Per la tua clemenza, Signore, e per l'intercessione della beata sempre vergine Maria, l'offerta di questo sacrificio giovi alla nostra prosperità e pace nella vita presente e nella futura.
+$Per Dominum
+
+[Communio]
+Beato il seno della Vergine Maria, che portò il Figlio dell' eterno Padre. (Allelúia.)
+
+[Postcommunio]
+Ricevuti i misteri della nostra salvezza, ti preghiamo, o Signore, di essere ovunque protetti dalla beata sempre vergine Maria, ad onore della quale abbiamo presentato alla tua maestà questo sacrificio.
+$Per Dominum

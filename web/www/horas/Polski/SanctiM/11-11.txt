@@ -3,3 +3,12 @@
 
 [Lectio7]
 @Sancti/11-11:Lectio5:s/.* Gdy /Gdy /s
+
+[Lectio10]
+@Sancti/11-11:Lectio8:s/A więc .*//s
+
+[Lectio11]
+@Sancti/11-11:Lectio8:s/.* A więc /A więc /s s/, natomiast.*/./s
+
+[Lectio12]
+@Sancti/11-11:Lectio8:s/.*, natomiast/Natomiast/s

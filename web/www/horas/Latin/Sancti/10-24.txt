@@ -1,5 +1,8 @@
+[Officium]
+S. Raphaëlis Archangeli
+
 [Rank]
-S. Raphaëlis Archangeli;;Duplex majus;;4;;ex Sancti/05-08
+;;Duplex majus;;4;;ex Sancti/05-08
 
 [Rule]
 ex Sancti/05-08
@@ -17,19 +20,33 @@ Forti ánimo * esto, Tobía: in próximo enim est ut a Deo curéris.
 Benedícite Deum cæli, * et coram ómnibus vivéntibus confitémini illi, quia fecit vobíscum misericórdiam suam.
 Pax vobis, * nolíte timére: Deum benedícite, et cantáte illi.
 
-[Capitulum Vespera]
-!Tob 12:12
-v. Quando orábas cum lácrimis, et sepeliébas mórtuos, et derelinquébas prándium tuum, et mórtuos abscondébas per diem in domo tua, et nocte sepeliébas eos, ego óbtuli oratiónem tuam Dómino.
-$Deo gratias
-
 [Hymnus Vespera]
-@Sancti/05-08:Hymnus Laudes:s/Angelus pacis.*?_//s s/Angelus fortis.*?_//s
+v. Christe, sanctórum decus Angelórum,
+Gentis humánæ Sator et Redémptor,
+Cǽlitum nobis tríbuas beátas
+Scándere sedes.
+_
+Angelus nostræ médicus salútis,
+Adsit e cælo Ráphaël, ut omnes
+Sanet ægrótos, dubiósque vitæ
+Dírigat actus.
+_
+Virgo dux pacis Genetríxque lucis,
+Et sacer nobis chorus Angelórum
+Semper assístat, simul et micántis
+Régia cæli.
+_
+Præstet hoc nobis Déitas beáta
+Patris, ac Nati, paritérque Sancti
+Spíritus, cujus résonat per omnem
+Glória mundum.
+Amen.
 
 [Ant 1]
 Ego sum Ráphaël Angelus, * qui asto ante Dóminum: vos autem benedícite Deum, et narráte ómnia mirabília ejus, allelúja.
 
 [Oratio]
-Deus, qui beátum Raphaélem Archángelum Tobíæ fámulo tuo cómitem dedísti in via: concéde nobis fámulis tuis; ut eiúsdem semper protegámur custódia et muniámur auxílio.
+Deus, qui beátum Raphaélem Archángelum Tobíæ fámulo tuo cómitem dedísti in via: concéde nobis fámulis tuis; ut ejúsdem semper protegámur custódia et muniámur auxílio.
 $Per Dominum
 
 [Hymnus Matutinum]
@@ -39,16 +56,22 @@ $Per Dominum
 Egréssus Tobías * invénit júvenem præcínctum, et quasi parátum ad ambulándum, et, ignórans quod Angelus esset, salutávit eum.;;8
 Angelus Ráphaël * seípsum occúltans, ait: Ego sum Azarías, magni Ananíæ fílius.;;10
 Sanum ducam * fílium tuum in regiónem Medórum, et sanum tibi redúcam, allelúja.;;14
-V. Dáta sunt Angelo incénsa multa.
-R. Ut adoleret ea ante altáre áureum, quod est ante óculos Domini.
 Dixit autem Angelus: * Apprehénde bránchiam piscis, et trahe eum extra aquas.;;18
 Obsecro te, * Azaría frater, ut dicas mihi, quod remédium habébunt ista, quæ de pisce serváre jussísti.;;23
 Lúmina fel sanat, * sed virtus cordis et jécoris diáboli expéllit potestátem.;;33
-V. Ascéndit fumus arómatum in conspéctu Dómini.
-R. De manu Angeli. 
 Est hic Sara * Raguélis fília; quæ tibi conjúgio dábitur, et omnis substántia ejus.;;95
 Septem viros hábuit, * quos dæmónium oppréssit; tímeo ne mihi símile contíngat.;;96
 Per tres dies * oratióni cum uxóre tua vacábis, ut in sémine Abrahæ benedictiónem in fíliis consequáris.;;102
+
+
+[Nocturn 1 Versum]
+V. Data sunt Angelo incénsa multa.
+R. Ut adoleret ea ante altáre áureum, quod est ante óculos Domini.
+
+[Nocturn 2 Versum]
+@Sancti/05-08:Nocturn 2 Versum_
+
+[Nocturn 3 Versum]
 V. Apprehéndit Angelus Ráphaël dæmónium.
 R. Et religávit illud in desérto superióris Ægýpti.
 
@@ -76,13 +99,17 @@ R. Et missus est Angelus Dómini sanctus Ráphaël, ut curáret eos ambos, quoru
 10 Qui autem fáciunt peccátum et iniquitátem, hostes sunt ánimæ suæ. 
 11 Manifésto ergo vobis veritátem et non abscóndam a vobis occúltum sermónem. 
 12 Quando orábas cum lácrimis, et sepeliébas mórtuos, et derelinquébas prándium tuum, et mórtuos abscondébas per diem in domo tua, et nocte sepeliébas eos, ego óbtuli oratiónem tuam Dómino. 
-13 Et quia accéptus eras Deo, necésse fuit ut tentátio probáret te. 
+13 Et quia accéptus eras Deo, necésse fuit ut tentátio probáret te.
 
 [Responsory2]
-R. Egréssus Tobías invénit júvenem spléndidum stántem præcínctum, et quasi parátum ad ambulándum, et salutávit eum, et dixit: 
+R. Egréssus Tobías invénit júvenem spléndidum stantem præcínctum, et quasi parátum ad ambulándum, et salutávit eum, et dixit: 
 * Unde te habémus, bone júvenis?
 V. Et, ignórans quod Dómini Angelus esset, salutávit eum, et dixit.
 R. Unde te habémus, bone júvenis?
+
+[Lectio3]
+@:Lectio3DA
+(rubrica 1960 omittitur)
 
 [Lectio3DA]
 !Tob 12:14-22
@@ -96,11 +123,12 @@ R. Unde te habémus, bone júvenis?
 21 Et cum hæc dixísset, ab aspéctu eórum ablátus est, et ultra eum vidére non potuérunt.
 22 Tunc prostráti per horas tres in fáciem, benedixérunt Deum: et exsurgéntes narravérunt ómnia mirabília ejus.
 
-[Lectio3]
-@:Lectio3DA
-(rubrica 1960 omittitur)
-
 [Responsory3]
+@:Responsory3DA
+(sed rubrica 1960)
+@:Responsory2
+
+[Responsory3DA]
 R. Ingréssus Angelus ad Tobíam, salutávit eum, et dixit: Gaudium sit tibi semper: 
 * Forti animo esto, in próximo enim est, ut a Deo cureris.
 V. Et respondens Tobías, ait: Quale gáudium mihi erit, qui in ténebris sedeo, et lumen cæli non video?
@@ -108,16 +136,15 @@ R. Forti animo esto, in próximo enim est, ut a Deo cureris.
 &Gloria
 R. Forti animo esto, in próximo enim est, ut a Deo cureris.
 
-[Responsory3] (rubrica 1960)
-@:Responsory2
-
 [Lectio4]
+@:Lectio4DA
+(sed rubrica 1960)
+@:Lectio3DA
+
+[Lectio4DA]
 Sermo Sancti Bonaventuræ Epíscopi
 !De Sanctis Angelis Sermo 5, sub fine
 Ráphaël interpretátur medicina Dei. Et debémus notare quod eductio a malo est per tria beneficia, a Raphaéle nobis colláta medicante nos. Educit ergo nos Ráphaël médicus ab infirmitáte animi, inducéndo nos ad amaritúdinem contritiónis; unde in Tobía dicit Ráphaël: Ubi introíeris domum tuam, lini super óculos ejus ex felle. Sic fecit, et vidit. Quare Ráphaël non pótuit ipse fácere? Quia Angelus non dat compunctiónem, sed osténdit viam. Per fel intellígitur amaritúdo contritiónis, quæ sanat óculos interioris mentis; Psalmus: Qui sanat contritos corde. Hoc est optimum collyrium. In Júdicum secundo dícitur quod Angelus ascéndit ad locum fléntium, et dixit pópulo: Eduxi vos de terra Ægypti, feci vobis tot et tanta bona; et flevit omnis pópulus, ita ut locus ille appellarétur locus fléntium. Caríssimi, Angeli tota die narrant nobis benefícia Dei, et reducunt ea nobis ad memóriam: Quis est qui te creávit, qui te redémit? Quid fecísti, quem offendísti? Hoc si consideráveris, nullum habes remédium nisi flere.
-
-[Lectio4] (rubrica 1960)
-@:Lectio3DA
 
 [Responsory4]
 R. Interrogávit Tobías Angelum: De qua domo, aut de qua tribu es tu? Qui respondens, ait: 
@@ -135,7 +162,7 @@ V. Attraxit autem Tobías piscem in siccum, et palpitare cœpit ante pedes ejus;
 R. Exéntera hunc piscem, et cor ejus, et fel, et jecur repóne tibi: sunt enim necessaria ad medicaménta utíliter.
 
 [Lectio6]
-Tertio liberat nos a contrarietáte Dei, quam incurrimus per offensam Dei, et hoc inducéndo nos ad instantiam oratiónis; et hoc est quod dixit angelus Ráphaël Tobíæ duodecimo: Quando orabas cum lácrimis, ego óbtuli oratiónem tuam Dómino. Ipsi enim Angeli reconciliant nos Deo, quantum possunt. Accusatores nostri coram Deo sunt dæmones. Angeli autem excusant nos, quando ófferunt oratiónes nostras, ad quas devote faciendas nos inducunt; Apocalypsis octavo: Ascéndit fumus arómatum in conspéctu Dómini de manu Angeli. Arómata ista suáviter redoléntia sunt oratiónes Sanctórum. Vis placare Deum, quem offendísti? Ora devote. Offérunt Deo oratiónem tuam, ut te Deo reconcilient. Dícitur in Luca quod Christus, factus in agonía, prolixius orabat, et appáruit Angelus Dómini confortans eum. Et hoc totum factum est propter nos, quia non indiguit confortatióne sua, sed ut ostenderétur quod libenter assistunt devote orántibus, et libenter juvant eos et ipsos confortant, et oratiónes eórum Deo ófferunt. - Festum sancti Ráphaëlis Archangeli Benedíctus Papa décimus quintus ad universam Ecclésiam extendit.
+Tertio liberat nos a contrarietáte Dei, quam incurrimus per offensam Dei, et hoc inducéndo nos ad instantiam oratiónis; et hoc est quod dixit angelus Ráphaël Tobíæ duodecimo: Quando orabas cum lácrimis, ego óbtuli oratiónem tuam Dómino. Ipsi enim Angeli reconciliant nos Deo, quantum possunt. Accusatores nostri coram Deo sunt dæmones. Angeli autem excusant nos, quando ófferunt oratiónes nostras, ad quas devote faciendas nos inducunt; Apocalypsis octavo: Ascéndit fumus arómatum in conspéctu Dómini de manu Angeli. Arómata ista suáviter redoléntia sunt oratiónes Sanctórum. Vis placare Deum, quem offendísti? Ora devote. Offérunt Deo oratiónem tuam, ut te Deo reconcilient. Dícitur in Luca quod Christus, factus in agonía, prolixius orabat, et appáruit Angelus Dómini confortans eum. Et hoc totum factum est propter nos, quia non indiguit confortatióne sua, sed ut ostenderétur quod libenter assistunt devote orántibus, et libenter juvant eos et ipsos confortant, et oratiónes eórum Deo ófferunt. - Festum sancti Raphaëlis Archangeli Benedíctus Papa décimus quintus ad universam Ecclésiam extendit.
 
 [Responsory6]
 R. Ubi introíeris domum tuam, dixit Angelus Ráphaël ad Tobíam, statim adora Dóminum Deum tuum, et, grátias agens ei, accede ad patrem tuum, et osculare eum: 
@@ -161,7 +188,7 @@ V. Ipsum benedícite, et cantáte illi, et narráte ómnia mirabília ejus.
 R. Quia fecit vobíscum misericórdiam suam.
 
 [Lectio8]
-Sed ad propositum jam redeamus. Primo ítaque, ut diximus, córporum maculas, deínde varias infirmitátes per aquam solvi curat. Ut enim nos Deus ad baptismi grátiam propius reduceret, non jam maculas solum, sed et morbos sanat. Imagines enim quæ propius ad veritátem accedunt, et in baptismate, et in passióne, et in aliis magis conspicuæ sunt quam vetustiores. Quemádmodum enim qui prope regem sunt satéllites, remotióribus sunt honoratiores; ita et in figuris factum est. Et Angelus descéndens turbábat aquam, et snándi vim indebat ipsi, ut discerent Judæi, Angelórum Dóminum multo magis posse ánimæ morbos omnes curare. Sed, quemádmodum hic aquárum natúra non simpliciter curábat (alioquin enim semper id fáceret), sed Angeli operatióne id fiebat; sic in nobis non aqua simpliciter operátur, sed, postquam Spíritus grátiam accéperit, tunc ómnia solvit peccáta.
+Sed ad propositum jam redeamus. Primo ítaque, ut diximus, córporum maculas, deínde varias infirmitátes per aquam solvi curat. Ut enim nos Deus ad baptismi grátiam propius reduceret, non jam maculas solum, sed et morbos sanat. Imagines enim quæ propius ad veritátem accedunt, et in baptismate, et in passióne, et in aliis magis conspicuæ sunt quam vetustiores. Quemádmodum enim qui prope regem sunt satéllites, remotióribus sunt honoratiores; ita et in figuris factum est. Et Angelus descéndens turbábat aquam, et sanándi vim indebat ipsi, ut discerent Judæi, Angelórum Dóminum multo magis posse ánimæ morbos omnes curare. Sed, quemádmodum hic aquárum natúra non simpliciter curábat (alioquin enim semper id fáceret), sed Angeli operatióne id fiebat; sic in nobis non aqua simpliciter operátur, sed, postquam Spíritus grátiam accéperit, tunc ómnia solvit peccáta.
 
 [Responsory8]
 R. Tempus est ut revértar ad eum, qui me misit, dixit Angelus Ráphaël; 
@@ -178,8 +205,13 @@ Circa hanc piscinam jacebat multitúdo magna infirmórum, cæcórum, claudórum,
 [Ant Laudes]
 @:Ant Vespera
 
+[Capitulum Laudes]
+!Tob 12:12
+v. Quando orábas cum lácrimis, et sepeliébas mórtuos, et derelinquébas prándium tuum, et mórtuos abscondébas per diem in domo tua, et nocte sepeliébas eos, ego óbtuli oratiónem tuam Dómino.
+$Deo gratias
+
 [Hymnus Laudes]
-@Sancti/03-24::s/Robor Dei qui denotas:/Dei medélam dénotans:/ s/Vires adauge languidis,/Morbos repélle córporum,/ s/Confer levamen tristibus./Affer salútem méntibus./
+@Sancti/03-24::s/Robor Dei qui dénotas:/Dei medélam dénotans:/ s/Vires adáuge lánguidis,/Morbos repélle córporum,/ s/Confer levámen trístibus./Affer salútem méntibus./
 
 [Versum 2]
 @Sancti/05-08:Versum 3
@@ -187,33 +219,18 @@ Circa hanc piscinam jacebat multitúdo magna infirmórum, cæcórum, claudórum,
 [Ant 2]
 @:Ant 1
 
-[Capitulum Laudes]
-@:Capitulum Vespera
-
 [Lectio Prima]
 !Tob 12:20
 v. Tempus est ut revértar ad eum qui me misit: vos autem benedícite Deum, et narráte ómnia mirabília ejus.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
-@Sancti/05-08
 
 [Capitulum Sexta]
 !Tob 12:14-15
 v. Et nunc misit me Dóminus, ut curárem te, et Saram, uxórem fílii tui, a dæmónio liberárem. Ego enim sum Ráphaël Angelus: unus ex septem, qui astámus ante Dóminum.
 $Deo gratias
 
-[Responsory Sexta]
-@Sancti/05-08
-
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
-
-[Responsory Nona]
-@Sancti/05-08
 
 [Versum 3]
 @Sancti/05-08:Versum 2

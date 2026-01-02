@@ -1,11 +1,5 @@
-[Rank]
-Sabbato Quattuor temporum in Adventu;;Feria major;;2
-
-[Rank] (si rubrica 1960)
-Sabbato Quattuor Temporum Adventus;;Feria major;;3
-
-[Rank] (si rubrica innovata)
-Sabbato infra Hebdomadam III Adventus;;Feria major;;2
+[Officium]
+Sabbato Quattuor Temporum in Adventu
 
 [Rule]
 Oratio Dominica
@@ -23,10 +17,6 @@ v. Come, O Lord, from Your throne upon the Cherubim; if Your face shine upon us,
 O Shepherd of Israel, hearken, O Guide of the flock of Joseph!
 &Gloria
 v. Come, O Lord, from Your throne upon the Cherubim; if Your face shine upon us, then we shall be safe.
-
-[Oratio]
-O God, You Who see how we are troubled by our evil tendencies, mercifully grant that we may find consolation in Your coming.
-$Qui vivis
 
 [LectioL1]
 Lesson from the book of Isaias
@@ -92,13 +82,18 @@ $Qui vivis
 Lesson from the book of Daniel
 !Dan. 3:47-51
 In those days, the Angel of the Lord went down into the furnace with Azaria and his companions, drove the fiery flames out of the furnace, and made the inside of the furnace as though a dew-laden breeze were blowing through it. And the flames rose forty-nine cubits above the furnace, and spread out, burning the Chaldeans nearby, the king’s men who were stoking the furnace. And the fire in no way touched them or caused them pain or harm. Then these three in the furnace with one voice sang, glorifying and blessing God:
-!HYMN
+_
+!Hymn
 !Dan. 3:52-56
 Blessed are You, O Lord, the God of our fathers, praiseworthy  and exalted above all forever. And blessed is Your holy and glorious name, praiseworthy and exalted above all for all ages. Blessed are You in the temple of Your holy glory, praiseworthy and glorious above all forever. Blessed are You on the holy throne of Your kingdom, praiseworthy and exalted above all forever. Blessed are You upon the sceptre of Your divinity, praiseworthy and exalted above all forever. Blessed are You Who look into the depths from Your throne upon the Cherubim, praiseworthy and exalted above all forever. Blessed are You Who walk upon the wings of the wind, and on the waves of the sea, praiseworthy and exalted above all forever. Let all Your Angels and Saints bless You, and praise You and exalt You above all forever. Let the heavens, the earth, the sea and all the things that are in them bless You, and praise You and exalt You above all forever. Glory be to the Father, and to the Son, and to the Holy Spirit, praiseworthy and exalted above all forever. As it was in the beginning, is now, and ever shall be, world without end. Amen. Praiseworthy and exalted above all forever. Blessed are You, O Lord, the God of our fathers, praiseworthy and exalted above all forever.
 
 [OratioL5]
 O God, You Who tempered the flames of fire for the three young men, mercifully grant that the flames of sin may not burn us, Your servants.
 $Per Dominum
+
+[Oratio]
+O God, You Who see how we are troubled by our evil tendencies, mercifully grant that we may find consolation in Your coming.
+$Qui vivis
 
 [Lectio]
 Lesson from the second letter of St. Paul the Apostle to the Thessalonians

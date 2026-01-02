@@ -1,23 +1,6 @@
 [Rank]
 In Purificatione Beatæ Mariæ Virginis;;Duplex 2 class;;5.1;;ex C11
 
-[Rank1960]
-In Purificatione Beatæ Mariæ Virginis;;Duplex 2 class;;5;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Doxology=Nat
-Festum Domini
-
-[Ant Vespera]
-@Sancti/01-01:Ant Vespera
-
-[Capitulum Vespera]
-!Mal 3:1
-v. Mirad, yo envío mi mensajero, para que prepare el camino ante mí. De pronto entrará en el santuario el Señor, a quien vosotros buscáis, el mensajero de la alianza que vosotros deseáis.
-$Deo gratias
-
 [Versum 1]
 V. Simeón había recibido un oráculo del Espíritu Santo.
 R. Que no vería la muerte antes de ver al Mesías del Señor.
@@ -39,8 +22,8 @@ Del Libro del Éxodo
 2 “Conságrame todo primogénito. Todos los primogénitos de los hijos de Israel, tanto de los hombres como de los animales, míos son”. 
 3 Moisés dijo al pueblo: 
 11 “Cuando te haya introducido el Señor en la tierra de los cananeos, como lo juró a tus padres, y te la haya dado, consagrarás al Señor tus primogénitos; i
-12 y de todo primer parto de los animales que tengas, el macho lo consagrarás al Señor;" 
-13 el del asno lo redimirás por un cordero, y si no lo redimes, lo desnucarás. También redimirás a todo primogénito humano de entre tus hijos. 
+12 y de todo primer parto de los animales que tengas, el macho lo consagrarás al Señor;” 
+13 el del asno lo redimirás por un cordero, y si no lo redimes, lo desnucarás. También redimirás a todo primogénito humano de entre tus hijos.
 
 [Responsory1]
 R. Adorna, Sion, tu morada, y recibe a Cristo Rey; 
@@ -55,7 +38,7 @@ Del Libro del Levítico
 2 “Habla a los hijos de Israel y diles: Cuando dé a luz una mujer y tenga un hijo, será impura durante siete días; será impura como en el tiempo de la menstruación. 
 3 El octavo día será circuncidado el hijo, 
 4 pero ella quedará todavía en casa durante treinta y tres días en la sangre de su purificación; no tocará nada santo ni irá al santuario hasta que se cumplan los días de su purificación. 
-5 Si da a luz hija, será impura durante dos semanas, como al tiempo de su menstruación, y se quedará en casa durante sesenta y seis días en la sangre de su purificación. 
+5 Si da a luz hija, será impura durante dos semanas, como al tiempo de su menstruación, y se quedará en casa durante sesenta y seis días en la sangre de su purificación.
 
 [Responsory2]
 R. Habiéndose cumplido el tiempo de la purificación de María, según la ley de Moisés, llevaron al Niño a Jerusalén para presentarlo al Señor, 
@@ -124,7 +107,7 @@ V. Al presentar los padres de Jesús al Niño, le recibió él en sus brazos, y 
 R. Verdaderamente que Tú eres la luz que iluminará a las naciones, y la gloria de tu pueblo Israel.
 
 [Lectio8]
-Es muy merecedor de que llamen justo a ese anciano que antes buscaba el bien de la nación que su ventaja. Porque al tiempo que deseaba verse libre de los lazos del cuerpo, no perdió la esperanza de contemplar al Salvador prometido, calificando de dichosos los ojos que le vieran. Le tomó en sus brazos, y bendiciendo a Dios, dijo: “Ahora, Señor, según tu promesa, puedes dejar a tu siervo irse en paz". Mira a este justo, para quien su cuerpo es una prisión, que anhela verse libre de él, para vivir con Jesucristo; porque verse libre de los lazos del cuerpo y vivir con Jesucristo es mucho mejor.
+Es muy merecedor de que llamen justo a ese anciano que antes buscaba el bien de la nación que su ventaja. Porque al tiempo que deseaba verse libre de los lazos del cuerpo, no perdió la esperanza de contemplar al Salvador prometido, calificando de dichosos los ojos que le vieran. Le tomó en sus brazos, y bendiciendo a Dios, dijo: “Ahora, Señor, según tu promesa, puedes dejar a tu siervo irse en paz”. Mira a este justo, para quien su cuerpo es una prisión, que anhela verse libre de él, para vivir con Jesucristo; porque verse libre de los lazos del cuerpo y vivir con Jesucristo es mucho mejor.
 
 [Responsory8]
 R. El anciano llevaba al Niño, mas el Niño regía al anciano: 
@@ -142,7 +125,9 @@ Pero el que así anhela partir, debe encaminarse al Templo en Jerusalén, espera
 @:Ant Vespera 3:s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Mal 3:1
+v. Mirad, yo envío mi mensajero, para que prepare el camino ante mí. De pronto entrará en el santuario el Señor, a quien vosotros buscáis, el mensajero de la alianza que vosotros deseáis.
+$Deo gratias
 
 [Ant 2]
 Cuando los padres * llevaron al Niño Jesús, Simeón lo tomó en brazos y bendijo a Dios diciendo: Ahora puedes dejar a tu siervo irse en paz.
@@ -151,16 +136,9 @@ Cuando los padres * llevaron al Niño Jesús, Simeón lo tomó en brazos y bendi
 !Mal 3:4
 v. Entonces agradará al Señor la ofrenda de Judá y de Jerusalén, como en los días pasados, como en los años antiguos, dice el Señor de los ejércitos.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
 [Capitulum Sexta]
 !Mal 3:1-2
 v. Miradlo entrar, dice el Señor de los ejércitos. ¿Quién podrá resistir el día de su venida? ¿Quién quedará en pie cuando aparezca? Será un fuego de fundidor, una lejía de lavandera.
-$Deo gratias
-
-[Capitulum Nona]
-@:Lectio Prima
 $Deo gratias
 
 [Ant Vespera 3]
@@ -169,9 +147,6 @@ Simeón había recibido * un oráculo del Espíritu Santo: que no vería la muer
 Simeón tomó * al Niño en brazos, dio gracias y bendijo a Dios.;;121
 Luz para alumbrar a las naciones * y gloria de tu pueblo, Israel.;;126
 Ofrecieron * por él al Señor un par de tórtolas o dos pichones.;;147
-
-[Versum 3]
-@:Versum 1
 
 [Ant 3]
 Hoy * la bienaventurada Virgen María presenta al Niño Jesús en el templo, y Simeón, lleno del Espíritu Santo lo tomó en brazos y bendijo a Dios.

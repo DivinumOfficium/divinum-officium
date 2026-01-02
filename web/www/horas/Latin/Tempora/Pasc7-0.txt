@@ -1,73 +1,43 @@
+[Officium]
+Dominica Pentecostes
+
 [Rank]
-Dominica Pentecostes;;Duplex I Classis cum Octava privilegiata I ordinis;;7
+;;Duplex I Classis cum Octava privilegiata I ordinis;;7
 
 [Rule]
 1 Nocturn
 Psalmi Dominica;
 Antiphonas horas
-Hymnus Tertia
 Prima=53
+Psalm5 Vespera=116
+Psalm5 Vespera3=113
 
 [Ant Vespera]
 Cum compleréntur * dies Pentecóstes, erant omnes páriter in eódem loco, allelúja.
 Spíritus Dómini * replévit orbem terrárum, allelúja.
 Repléti sunt omnes * Spíritu Sancto, et cœpérunt loqui, allelúja, allelúja.
 Fontes, et ómnia * quæ movéntur in aquis, hymnum dícite Deo, allelúja.
-Loquebántur * váriis linguis Apóstoli magnália Dei, allelúja, allelúja, allelúja.;;116
-
-[Capitulum Vespera]
-!Act. 2:1-2
-v. Cum compleréntur dies Pentecóstes, erant omnes discípuli páriter in eódem loco: et factus est repénte de cælo sonus, tamquam adveniéntis spíritus veheméntis, et replévit totam domum, ubi erant sedéntes.
-$Deo gratias
-
-[HymnusM Vespera]
-@:Hymnus Vespera:s/díceris Paráclitus/Paráclitus díceris/ s/Altíssimi donum Dei/Donum Dei Altíssimi/ s/Dígitus patérnæ déxteræ/Dextræ Dei tu dígitus/ s/Teque/Te/
+Loquebántur * váriis linguis Apóstoli magnália Dei, allelúja, allelúja, allelúja.
 
 [Hymnus Vespera]
-{:H-Venicreator:}
-!Prima stropha hymni sequentis dicitur flexibus genibus.
-v. Veni, Creátor Spíritus,
-Mentes tuórum vísita,
-Imple supérna grátia,
-Quæ tu creásti péctora.
-_
-Qui díceris Paráclitus,
-Altíssimi donum Dei,
-Fons vivus, ignis, cáritas,
-Et spiritális únctio.
-_
-Tu septifórmis múnere,
-Dígitus patérnæ déxteræ,
-Tu rite promíssum Patris,
-Sermóne ditans gúttura.
-_
-Accénde lumen sénsibus:
-Infúnde amórem córdibus:
-Infírma nostri córporis
-Virtúte firmans pérpeti.
-_
-Hostem repéllas lóngius,
-Pacémque dones prótinus:
-Ductóre sic te prǽvio
-Vitémus omne nóxium.
-_
-Per te sciámus da Patrem,
-Noscámus atque Fílium,
-Teque utriúsque Spíritum
-Credámus omni témpore.
-_
-* Deo Patri sit glória,
-Et Fílio, qui a mórtuis
-Surréxit, ac Paráclito,
-In sæculórum sǽcula.
-Amen.
+@Psalterium/Special/Minor Special:Hymnus Pasc7 Tertia
+
+[HymnusM Vespera]
+@Psalterium/Special/Minor Special:HymnusM Pasc7 Tertia
 
 [Versum 1]
 V. Repléti sunt omnes Spíritu Sancto, allelúja.
 R. Et cœpérunt loqui, allelúja.
 
+[Versum 1] (rubrica cisterciensis)
+V. Emítte spíritum tuum, et creabúntur, allelúia.
+R. Et renovábis fáciem terræ, allelúia.
+
 [Ant 1]
 Non vos relínquam * órphanos, allelúja: vado et vénio ad vos, allelúja: et gaudébit cor vestrum, allelúja.
+
+[Ant 1] (rubrica cisterciensis)
+Si dilígitis me, * mandáta mea serváte, allelúia, allelúia, allelúia.
 
 [Oratio]
 Deus, qui hodiérna die corda fidélium Sancti Spíritus illustratióne docuísti: da nobis in eódem Spíritu recta sápere; et de ejus semper consolatióne gaudére.
@@ -75,53 +45,6 @@ $Per Dominum eiusdem
 
 [Invit]
 Allelúja, Spíritus Dómini replévit orbem terrárum: * Veníte, adorémus, allelúja.
-
-[HymnusM Matutinum]
-v. Jam Christus astra ascénderat,
-Revérsus unde vénerat,
-Promíssum Patris múnere,
-Sanctum datúrus Spíritum.
-_
-Solémnis urgébat dies,
-Quo mýstico septémplici
-Orbis volútus sépties,
-Signat beáta témpora.
-_
-Cum lucis hora tértia
-Repénte mundus íntonat,
-Orántibus Apóstolis
-Deum venísse núntiat.
-_
-De Patris ergo lúmine
-Decórus ignis almus est,
-Qui fida Christi péctora
-Calóre Verbi cómpleat.
-_
-Impléta gaudent víscera,
-Affláta Sancto Spíritu,
-Vocésque divérsas íntonant,
-Fantur Dei magnália.
-_
-Ex omni gente cógniti,
-Græcis, Latínis, Bárbaris,
-Cunctísque admirántibus,
-Linguis loquúntur ómnium.
-_
-Judǽa tunc incrédula,
-Vesána torvo spíritu,
-Ructáre musti crápulam,
-Alúmnos Christi cóncrepat.
-_
-Sed signis et virtútibus
-Occúrrit, et docet Petrus,
-Falsa profári pérfidos,
-Joéle teste cómprobans.
-_
-Glória Patri Dómino,
-Natóque, qui a mórtuis
-Surréxit, ac Paráclito,
-In sæculórum sǽcula.
-Amen.
 
 [Hymnus Matutinum]
 {:H-JamChristus astra:}v. Jam Christus astra ascénderat,
@@ -170,12 +93,68 @@ Surréxit, ac Paráclito,
 In sæculórum sǽcula.
 Amen.
 
+[HymnusM Matutinum]
+v. Jam Christus astra ascénderat,
+Revérsus unde vénerat,
+Promíssum Patris múnere,
+Sanctum datúrus Spíritum.
+_
+Solémnis urgébat dies,
+Quo mýstico septémplici
+Orbis volútus sépties,
+Signat beáta témpora.
+_
+Cum lucis hora tértia
+Repénte mundus íntonat,
+Orántibus Apóstolis
+Deum venísse núntiat.
+_
+De Patris ergo lúmine
+Decórus ignis almus est,
+Qui fida Christi péctora
+Calóre Verbi cómpleat.
+_
+Impléta gaudent víscera,
+Affláta Sancto Spíritu,
+Voces divérsas íntonant,
+Fantur Dei magnália.
+_
+Ex omni gente cógniti,
+Græcis, Latínis, Bárbaris,
+Cunctísque admirántibus,
+Linguis loquúntur ómnium.
+_
+Judǽa tunc incrédula,
+Vesána torvo spíritu,
+Ructáre musti crápulam,
+Alúmnos Christi cóncrepat.
+_
+Sed signis et virtútibus
+Occúrrit, et docet Petrus,
+Falsa profári pérfidos,
+Joéle teste cómprobans.
+_
+Glória Patri Dómino,
+Natóque, qui a mórtuis
+Surréxit, ac Paráclito,
+In sæculórum sǽcula.
+Amen.
+
 [Ant Matutinum]
 Factus est * repénte de cælo sonus adveniéntis spíritus veheméntis, allelúja, allelúja.;;47
 Confírma hoc, Deus, * quod operátus es in nobis: a templo sancto tuo, quod est in Jerúsalem, allelúja, allelúja.;;67
 Emítte Spíritum tuum, * et creabúntur: et renovábis fáciem terræ, allelúja, allelúja.;;103
 V. Spíritus Dómini replévit orbem terrárum, allelúja.
 R. Et hoc quod cóntinet ómnia, sciéntiam habet vocis, allelúja.
+
+[Nocturn 1 Versum] (rubrica cisterciensis)
+@Tempora/Pasc7-0:Ant Matutinum:4-5
+
+[Nocturn 2 Versum] (rubrica cisterciensis)
+@Tempora/Pasc7-0:Versum Sexta
+
+[Nocturn 3 Versum] (rubrica cisterciensis)
+@Tempora/Pasc7-0:Versum Tertia
 
 [Lectio1]
 Léctio sancti Evangélii secúndum Joánnem
@@ -208,13 +187,15 @@ Et Pater meus díliget eum, et ad eum veniémus, et mansiónem apud eum faciému
 &teDeum
 
 [Ant Laudes]
-@:Ant Vespera:s/;.*//
+@:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Act. 2:1-2
+v. Cum compleréntur dies Pentecóstes, erant omnes discípuli páriter in eódem loco: et factus est repénte de cælo sonus, tamquam adveniéntis spíritus veheméntis, et replévit totam domum, ubi erant sedéntes.
+$Deo gratias
 
-[HymnusM Laudes]
-@:Hymnus Laudes:s/Illápsus est Apóstolis/Effúlsit in discípulos/ s/círculo/número/
+[Responsory Laudes] (rubrica cisterciensis)
+@:Responsory Breve Nona
 
 [Hymnus Laudes]
 {:H-Beatanobisgaudia:}v. Beáta nobis gáudia
@@ -253,8 +234,14 @@ Surréxit, ac Paráclito,
 In sæculórum sǽcula.
 Amen.
 
+[HymnusM Laudes]
+@:Hymnus Laudes:s/Illápsus est Apóstolis/Effúlsit in discípulos/ s/círculo/número/
+
 [Versum 2]
 @:Versum 1
+
+[Versum 2] (rubrica cisterciensis)
+@:Versum Nona
 
 [Ant 2]
 Accípite * Spíritum Sanctum: quorum remiséritis peccáta, remittúntur eis, allelúja.
@@ -263,20 +250,15 @@ Accípite * Spíritum Sanctum: quorum remiséritis peccáta, remittúntur eis, a
 !Act. 2:11
 v. Judǽi quoque et Prosélyti, Cretes et Arabes: audívimus eos loquéntes nostris linguis magnália Dei.
 
-[Hymnus Tertia]
-@:Hymnus Vespera
-
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Spíritus Dómini replévit orbem terrárum, * Allelúja, allelúja.
 R. Spíritus Dómini replévit orbem terrárum, * Allelúja, allelúja.
 V. Et hoc quod cóntinet ómnia, sciéntiam habet vocis.
 R. Allelúja, allelúja.
 &Gloria
 R. Spíritus Dómini replévit orbem terrárum, * Allelúja, allelúja.
-_
+
+[Versum Tertia]
 V. Spíritus Paráclitus, allelúja.
 R. Docébit vos ómnia, allelúja.
 
@@ -285,38 +267,41 @@ R. Docébit vos ómnia, allelúja.
 v. Facta autem hac voce, convénit multitúdo, et mente confúsa est, quóniam audiébat unusquísque lingua sua illos loquéntes.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Spíritus Paráclitus, * Allelúja, allelúja.
 R. Spíritus Paráclitus, * Allelúja, allelúja.
 V. Docébit vos ómnia. 
 R. Allelúja, allelúja.
 &Gloria
 R. Spíritus Paráclitus, * Allelúja, allelúja.
-_
-V. Repléti sunt omnes Spíritu Sancto, allelúja.
-R. Et cœpérunt loqui, allelúja.
+
+[Versum Sexta]
+@:Versum 1
 
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Repléti sunt omnes Spíritu Sancto, * Allelúja, allelúja.
 R. Repléti sunt omnes Spíritu Sancto, * Allelúja, allelúja.
 V. Et cœpérunt loqui.
 R. Allelúja, allelúja.
 &Gloria
 R. Repléti sunt omnes Spíritu Sancto, * Allelúja, allelúja.
-_
-V. Loquebántur váriis linguis Apóstoli, allelúja.
-R. Magnália Dei, allelúja.
+
+[Versum Nona]
+@:Versum 3
+
+[Ant Vespera 3]
+@:Ant Vespera:s/;;.*//g
 
 [Versum 3]
 V. Loquebántur váriis linguis Apóstoli, allelúja.
 R. Magnália Dei, allelúja.
 
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
+
 [Ant 3]
 Hódie * compléti sunt dies Pentecóstes, allelúja: hódie Spíritus Sanctus in igne discípulis appáruit, et tríbuit eis charísmatum dona: misit eos in univérsum mundum prædicáre, et testificári: Qui credíderit et baptizátus fúerit, salvus erit, allelúja.
-
-[Ant Vespera 3]
-@:Ant Vespera:s/;.*//

@@ -1,15 +1,5 @@
-[Rank]
-Niedziela Trójcy Przenajświętszej;;Duplex I classis;;6.5
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Symbolum Athanasium
-No Commemoration
-Psalm5 Vespera=116
-Psalm5 Vespera3=113
-Prima=53
+[Officium]
+Niedziela Trójcy Przenajświętszej
 
 [Ant Vespera]
 Chwała Ci, o Trójco * jedyna i równa sobie w Bóstwie, przed wiekami, teraz i na zawsze.
@@ -17,6 +7,23 @@ Cześć i wieczna chwała * Bogu Ojcu i Synowi, jako też Duchowi Świętemu na 
 Pieśń chwały * niechaj rozbrzmiewa z ust wszystkich ku czci Ojca i Jednorodzonego Syna Jego i Ducha Świętego.
 Chwałę Boga Ojca, * Jednorodzonego Syna Jego i Twoją, o Duchu Święty, niechaj głoszą usta nasze z nieustanną miłością przez wszystkie wieki.
 Temu, od którego wszystko * pochodzi, przez którego i w którym wszystko istnieje, chwała na wieki.
+
+[Hymnus Vespera]
+{:H-VespFeria:}v. Już słońce zachodzi ogniste:
+Ty, światłości nieustająca, Jedności,
+Trójco błogosławiona,
+Wlej światło do naszych serc.
+_
+Ciebie rano w pieśni pochwalnej,
+Ciebie błagamy wieczorem:
+Zezwól, byśmy Cię kornie
+Sławili między niebianami.
+_
+Ojcu, zarazem i Synowi,
+I Tobie, Duchu Święty,
+Jak była, tak niech będzie chwała
+Nieustannie po wszystkie wieki.
+Amen.
 
 [Versum 1]
 V. Błogosławmy Ojca i Syna, i Ducha Świętego.
@@ -65,16 +72,18 @@ Amen.
 Adesto unus Deus * omnipotens, Pater, Filius, et Spiritus Sanctus.;;8
 Te unum * in substantia, Trinitatem in personis confitemur.;;18
 Te semper idem * esse, vivere, et intelligere, profitemur.;;23
-V. Błogosławmy Ojca i Syna, i Ducha Świętego.
-R. Chwalmy a wywyższajmy go na wieki.
 Te invocamus, * te laudamus, te adoramus, o beata Trinitas.;;46
 Spes nostra, * salus nostra, honor noster, o beata Trinitas.;;47
 Libera nos, * salva nos, vivifica nos, o beata Trinitas.;;71
-V. Błogosławiony jesteś, Panie, na utwierdzeniu niebieskiem.
-R. I sławny, i chwalebny na wieki.
 Caritas * Pater est, gratia Filius, communicatio Spiritus Sanctus, o beata Trinitas.;;95
 Verax est * Pater, veritas Filius, veritas Spiritus Sanctus, o beata Trinitas.;;96
 Pater, * et Filius, et Spiritus Sanctus una substantia est, o beata Trinitas.;;97
+
+[Nocturn 2 Versum]
+V. Błogosławiony jesteś, Panie, na utwierdzeniu niebieskiem.
+R. I sławny, i chwalebny na wieki.
+
+[Nocturn 3 Versum]
 V. Słowem Pańskiem utwierdzone są niebiosa.
 R. A tchnieniem ust jego wszystek zastęp ich.
 
@@ -82,7 +91,7 @@ R. A tchnieniem ust jego wszystek zastęp ich.
 Z Proroka Izajasza
 !Iz 6:1-4
 1 Roku, którego umarł król Ozyasz, widziałem Pana, siedzącego na stolicy wysokiéj i wyniosłéj: a to, co pod nim było, napełniało kościół.
-2 Seraphim stali nad nim: sześć skrzydeł miał jeden, a sześć skrzydeł drugi. dwiema zakrywali oblicze jego, a dwiema zakrywali nogi jego, a dwiema latali.
+2 Seraphim stali nad nim: sześć skrzydeł miał jeden, a sześć skrzydeł drugi: dwiema zakrywali oblicze jego, a dwiema zakrywali nogi jego, a dwiema latali.
 3 I wołali jeden do drugiego i mówili: Święty, święty, święty Pan, Bóg zastępów, pełna jest wszystka ziemia chwały jego. 
 4 I poruszyły się naprożniki z zawiasami od głosu wołającego, a dom napełnion jest dymem.
 
@@ -121,10 +130,16 @@ R. A niech się go boją wszystkie kraje ziemie.
 R. A niech się go boją wszystkie kraje ziemie.
 
 [Responsory4]
-Któryż Bóg wielki, jako Bóg nasz? 
+R. Któryż Bóg wielki, jako Bóg nasz? 
 * Tyś jest Bóg, który dziwy czynisz.
 V. Oznajmiłeś między narody moc twoję:  odkupiłeś ramieniem twojem lud twój.
 R. Tyś jest Bóg, który dziwy czynisz.
+
+[Responsory5]
+R. Tobie cześć, tobie chwała, tobie dziękczynienie na wieczne czasy.
+* O Święta Trójco.
+V. I błogosławione imię chwały twojej: i chwalebne, i wywyższone po wszystkie wieki.
+R. O Święta Trójco.
 
 [Responsory6]
 R. Wielki Pan, i chwalebny bardzo:
@@ -149,11 +164,11 @@ R. Błogosławmy Ojca i Syna, i Ducha Świętego,
 V. Błogosławiony jesteś, Panie, na utwierdzeniu niebieskiem, i sławny, i chwalebny na wieki.
 R. Chwalmy Go i wywyższajmy na wieki. 
 
+[Lectio8] (rubrica 1960)
+@:Lectio8a:s/ Wreszcie.*//s
+
 [Lectio8a]
 Nie mówimy, że Syn Boży, jak to sobie niektórzy wyobrażali, został zrodzony przez rozwinięcie się jakiejś cząstki pochodzącej od Ojca, ani też nie przyjmujemy, że jest On słowem bez treści, jak gdyby tu chodziło o samo brzmienie wyrazu. Wierzymy jednak, że trzy osoby obdarzone trzema imionami posiadają jedną tylko naturę, jeden majestat i potęgę. Wyznajemy przeto, że Bóg jest jeden, gdyż jedność i niepodzielność majestatu nie pozwala nam mówić o wielu bogach. Wreszcie: po katolicku mówimy o Ojcu i Synu, natomiast ani nie możemy, ani też nie powinniśmy twierdzić, że chodzi tu o dwóch bogów. Nie dlatego, iżby Syn Boży nie był Bogiem; przeciwnie: jest On Bogiem prawdziwym z Boga prawdziwego.  Ponieważ jednak wiemy, że Boży Syn nie wywodzi się skądinąd, jak tylko od samego jednego Ojca, stąd też mówimy o jednym Bogu. To bowiem przekazali Prorocy i Apostołowie, tego nauczał sam nasz Pan, gdy rzekł: Ja i Ojciec jedno jesteśmy. Wyraz „jedno” odnosi się, jak powiedziałem, do jedności Boskiej natury; a wyraz „jesteśmy” oznacza osoby.
-
-[Lectio8](rubrica 1960)
-@:Lectio8a:s/ Wreszcie.*//s
 
 [Responsory8]
 R. Dwóch Serafinów wołało jeden do drugiego: 
@@ -163,9 +178,17 @@ R. Święty, Święty, Święty, Pan Bóg Zastępów.
 &Gloria
 R. Cała ziemia pełna jest Jego chwały. 
 
-[Lectio9](rubrica 1960)
+[Responsory8] (rubrica cisterciensis)
+@Tempora/Pent03-2Feria:Responsory2
+
+[Lectio9] (rubrica 1960)
 @:Lectio8a:s/.*(Wreszcie)/$1/s
 &teDeum
+
+[Capitulum Laudes]
+!Rz 11:33
+v. O głębokości bogactw, mądrości i wiadomości Bożéj, jako są nieogarnione sądy jego, i niedościgłe drogi jego!
+$Deo gratias
 
 [Hymnus Laudes]
 v. Ty, Jedności Trójcy,
@@ -202,41 +225,36 @@ $Per Dominum
 !1 J 5:7
 v. Albowiem trzéj są, którzy świadectwo dają na niebie: Ojciec, Słowo i Duch Święty; a ci trzéj jedno są.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Błogosławmy Ojca i Syna, * Z Duchem Świętym.
 R. Błogosławmy Ojca i Syna, * Z Duchem Świętym.
 V. Chwalmy a wywyższajmy go na wieki.
 R. Z Duchem Świętym.
 &Gloria
 R. Błogosławmy Ojca i Syna, * Z Duchem Świętym.
-_
-V. Błogosławiony jesteś, Panie, na utwierdzeniu niebieskiem.
-R. I sławny, i chwalebny na wieki.
 
 [Capitulum Sexta]
 !2 Kor 13:13
 v. Łaska Pana naszego Jezusa Chrystusa i miłość Boża i społeczność Ducha Świętego niech będzie z wami wszystkimi. Amen.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Błogosławiony jesteś, Panie, * Na utwierdzeniu niebieskiem.
 R. Błogosławiony jesteś, Panie, * Na utwierdzeniu niebieskiem.
 V. I sławny, i chwalebny na wieki.
 R. Na utwierdzeniu niebieskiem.
 &Gloria
 R. Błogosławiony jesteś, Panie, * Na utwierdzeniu niebieskiem.
-_
-V. Słowem Pańskiem utwierdzone są niebiosa.
-R. A tchnieniem ust jego wszystek zastęp ich.
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Słowem Pańskiem * Utwierdzone są niebiosa.
 R. Słowem Pańskiem * Utwierdzone są niebiosa.
 V. A tchnieniem ust jego wszystek zastęp ich.
 R. Utwierdzone są niebiosa.
 &Gloria
 R. Słowem Pańskiem * Utwierdzone są niebiosa.
-_
+
+[Versum Nona]
 V. Niechaj będzie imię Pańskie błogosławione. 
 R. Odtąd i aż na wieki.
 

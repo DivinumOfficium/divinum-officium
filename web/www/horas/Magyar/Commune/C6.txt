@@ -1,14 +1,8 @@
-[Name]
-Commune Virgine
+[Officium]
+Commune Unius Virginis et Martyris
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-
-[Capitulum Vespera]
-!2 Cor 10:17-18
-v. Testvérek: aki dicsekszik, az Úrban dicsekedjék. Nem az a megbízható, aki magát ajánlja, hanem akit az Úr ajánl.
-$Deo gratias
+[Missa]
+Loquebar
 
 [Hymnus Vespera]
 {:H-Jesucoronavirginum:}v. Jézus, szűzek koszoruja,
@@ -44,6 +38,10 @@ R. Indúlj meg, járj szerencsésen és országolj
 [Ant 1]
 Jőjj Krisztus jegyese * fogadd el koronádat melyet az Úr készített neked öröktől fogva
 
+[Oratio]
+Isten, aki hatalmad csodálatos erejével gyenge asszonyokat is győztessé tettél hitük megvallásával, add hogy akik áldott N. szűz és vértanú szűletése napját ünnepeljük, példaja által Hozzád közeledjünk
+$Per Dominum
+
 [Invit]
 Az Úr a Szűzek királya * jöjjetek, imádjuk
 
@@ -74,26 +72,28 @@ Háromságban- egy örök Istenünknek,
 Minden időben.
 Ámen.
 
-[Hymnus Matutinum 1]
-v. Jézus, a Szűznek fia s alkotója,
-Szűz hordott méhén, a világra ő szült:
-Szűznek zengjük most a nehéz halálon
-Nyert diadalmát.
-_
-Ő imájáért, kegyes Isten, engedd
-El bűnünk zsoldját, amit érdemeltünk,
-Hogy visszhangozzék a kitisztult szívből
-Ájtatos ének.
-_
-Áldás, dícséret legyen az Atyának,
-Egyszülöttének s vele Szentléleknek,
-Háromságban- egy örök Istenünknek,
-Minden időben.
-Ámen.
+[Ant Matutinum]
+O how lovely and glorious * is the generation of the chaste.;;8
+Sing for us again and again before this maiden's bed * the tender idylls of the play.;;18
+Return, return, O Shulammith * Return, return, that we may look upon thee.;;23
+A te ékességeddel és * szépségeddel, indúlj meg, járj szerencsésen és országolj;;44
+Nem inog meg, Isten lakik benne, Isten már hajnalban is védelmezi;;45
+Many waters cannot * quench love.;;47
+Barna a bőröm, * de azért szép vagyok Jeruzsálem lányai, ezért szeret a király, és vezet be lakosztályába;;95
+Draw me after thee * we will run after the savour of thy good ointments; thy name is as oil poured forth.;;96
+Come, Bride of Christ, * and take the everlasting crown which the Lord hath prepared for thee.;;97
+
+[Nocturn 2 Versum]
+V. Isten jelenlétével védelmezi.
+R. Nem inog meg, Isten lakik benne`,
+
+[Nocturn 3 Versum]
+V. Isten kiválasztotta őt születése előtt
+R. Hogy sátrában lakjék szine előtt
 
 [Lectio1]
 Olvasmány szent Pál apostol Korintusiakhoz írott első leveléből
-!1 Cor 7:25-31
+!1Kor 7:25-31
 25 A szüzeket illetően nincs külön parancsom az Úrtól, tanácsot azonban adok, mint olyan, aki az Úr irgalma folytán hitelt érdemel.
 26 Azt tartom, a mostani megpróbáltatások miatt ez az állapot ajánlható; jó, ha így marad az ember.
 27 Ha asszonyhoz vagy kötve, ne törekedj elválni, ha azonban nem kötötted magad asszonyhoz, ne keress feleséget.
@@ -103,16 +103,15 @@ Olvasmány szent Pál apostol Korintusiakhoz írott első leveléből
 31 s aki felhasználja a világ dolgait, mintha nem élne velük, mert ez a világ elmúlik.
 
 [Lectio2]
-!1 Cor 7:32-35
+!1Kor 7:32-35
 32 Azt szeretném, ha mentek volnátok a gondtól. A nőtlennek arra van gondja, ami az Úré: hogyan járjon az Úr kedvében.
 33 A nős azonban világi dolgokkal törődik: hogyan keresse felesége kedvét,
 34 ezért meg van osztva. A nem házas asszony és a szűz arra gondol, ami az Úré, hogy testben és lélekben szent legyen, míg a férjes nőt világi dolgok kötik le: hogyan járjon férje kedvében.
 35 Ezt javatokra mondom, nem azért, hogy tőrbe csaljalak, hanem hogy a feddhetetlen életre és az Úrhoz való osztatlan ragaszkodásra segítselek titeket.
 
 [Lectio3]
-!1 Cor 7:36-40
-36 Ha valaki mégis úgy véli, hogy igazságtalanul bánna hajadon lányával, mert~
-eljárt fölötte az idő, ha úgy van rendjén, tegye, amit akar. Nem vétkezik, kössenek csak házasságot.
+!1Kor 7:36-40
+36 Ha valaki mégis úgy véli, hogy igazságtalanul bánna hajadon lányával, mert eljárt fölötte az idő, ha úgy van rendjén, tegye, amit akar. Nem vétkezik, kössenek csak házasságot.
 37 Akinek azonban szilárd a meggyőződése, s minden kényszerítő ok nélkül, teljesen szabadon úgy döntött, hogy megőrzi hajadon lányát, jól teszi.
 38 Tehát aki férjhez adja hajadon lányát, jól teszi, aki pedig nem adja férjhez, még jobban teszi.
 39 Az asszony le van kötve, amíg férje él, de ha férje meghal, felszabadul. Férjhez mehet, akihez akar, de csak az Úrban.
@@ -120,16 +119,14 @@ eljárt fölötte az idő, ha úgy van rendjén, tegye, amit akar. Nem vétkezik
 
 [Lectio7]
 Evangélium szent Máté Apostol kőnyvéből
-!Matt 25:1
+!Mt 25:1
 Azon időben így szólt Jézus tanítványaihoz A mennyek országa hasonlít a tíz szűzhöz, akik fogták lámpásukat, és a vőlegény elé mentek. És így tovább
 _
+
 [Capitulum Laudes]
-!2 Cor 10:17-18
+!2Kor 10:17-18
 v. Testvérek: aki dicsekszik, az Úrban dicsekedjék. Nem az a megbízható, aki magát ajánlja, hanem akit az Úr ajánl.
 $Deo gratias
-
-[Hymnus Laudes]
-@Commune/C6:Hymnus Vespera
 
 [Versum 2]
 V. Ajkadon kellem ömlik el
@@ -138,73 +135,42 @@ R. Isten megáldott téged örökre.
 [Ant 2]
 A mennyek országa * hasonlít a kereskedőhöz is, aki igazgyöngyöt keresett. Amikor egy nagyon értékeset talált, fogta magát, eladta mindenét, amije csak volt és megvette.
 
-[Oratio]
-Isten, aki hatalmad csodálatos erejével gyenge asszonyokat is győztessé tettél hitük megvallásával, add hogy akik áldott N. szűz és vértanú szűletése napját ünnepeljük, példaja által Hozzád közeledjünk
-$Per Dominum
-
 [Lectio Prima]
-!Wis 4:1
-v. Jobb az erénnyel párosult gyermektelenség, mert halhatatlan az emlékezete, mivelhogy Isten is, ember is elismeri.
+!Sir 51:13-14
+v. Uram, Istenem,felmagasztaltad a földön lakhelyemet és az elmúló halálért könyörögtem. 14 Segítségöl hittam az Urat, az én Uram Atyját, hogy ne hagyjon engem háborúságom napján és a kevélyek idejében segítség nélkül.
 
-[Capitulum Tertia]
-!2 Cor 10:17-18
-v. Testvérek: aki dicsekszik, az Úrban dicsekedjék. Nem az a megbízható, aki magát ajánlja, hanem akit az Úr ajánl.
-$Deo gratias
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. A te ékességeddel és szépségeddel
 R. A te ékességeddel és szépségeddel
 V. Indúlj meg, járj szerencsésen és országolj
 R. Szépségeddel
 &Gloria
 R. A te ékességeddel és szépségeddel
-_
-V. Isten jelenlétével védelmezi.
-R. Nem inog meg, Isten lakik benne`,
 
 [Capitulum Sexta]
-!2 Cor 11:2
+!2Kor 11:2
 v. Én Isten féltékenységével féltelek titeket. Mert eljegyeztelek benneteket egy férfival, hogy tiszta szűzként vezesselek el Krisztushoz.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Isten jelenlétével védelmezi
 R. Isten jelenlétével védelmezi
 V. Nem inog meg, Isten lakik benne`,
 R. Jelenlétével
 &Gloria
 R. Isten jelenlétével védelmezi.
-_
-V. Isten kiválasztotta őt születése előtt
-R. Hogy sátrában lakjék szine előtt
 
-[Capitulum Nona1]
-!Sir 51:13-14
-v. Uram, Istenem,felmagasztaltad a földön lakhelyemet és az elmúló halálért könyörögtem. 14 Segítségöl hittam az Urat, az én Uram Atyját, hogy ne hagyjon engem háborúságom napján és a kevélyek idejében segítség nélkül.
-$Deo gratias
-
-[Capitulum Nona]
-!Wis 4:1
-v. Jobb az erénnyel párosult gyermektelenség, mert halhatatlan az emlékezete, mivelhogy Isten is, ember is elismeri.
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Isten választotta őt születése előtt
 R. Isten választotta őt születése előtt
 V. Hogy sátraban lakjék színe előtt
 R. Születése előtt
 &Gloria
 R. Isten választotta őt születése előtt
-_
+
+[Versum Nona]
 V. Kegyelem van az ajkaidon
 R. Isten ezért megáldott mindörökre
-
-[Versum 3]
-V. Kegyelem van az ajkaidon
-R. Isten ezért megáldott mindörökre
-
-[Ant 3]
-Jőjj Krisztus jegyese * fogadd el koronádat melyet az Úr készített neked öröktől fogva
 
 [Lectio1 in 2 loco]
 Olvasmány Jézus Sírák fia könyvéből
@@ -232,3 +198,22 @@ Olvasmány Jézus Sírák fia könyvéből
 15 Dicsérni fogom a te nevedet szüntelen, és dicsérem azt hálaadással, mert meghallgattatott az én imádságom.
 16 És kiszabadítottál engem a veszedelemböl, és megmentettél a gonosz idöben.
 17 Azért hálát adok és dicséretet mondok neked, és áldom az Úr nevét.
+
+[Lectio7 in 3 loco]
+Evangélium szent Máté Apostol kőnyvéből
+!Mt 19:3-12
+Azon időben odamentek Jézushoz a farizeusok, hogy próbára tegyék. Ezt kérdezték: „El szabad a férfinek bármilyen okból bocsátania a feleségét?” És így tovább.
+_
+Homily by St John Chrysostom, Patriarch of (Constantinople.)
+!63th on Matthew.
+Seeing that directly to exhort them unto virginity was well-nigh more than they could bear, our Lord seeketh to draw them to the desire thereof, taking occasion by the needfulness of a law against divorce. Then He showeth that virginity is possible, saying There are some eunuchs which were so born from their mother's womb; and there are some eunuchs which were made eunuchs of men; and there be eunuchs which have made themselves eunuchs for the kingdom of heaven's sake. In these words He persuadeth them indirectly to choose virginity, while He teacheth them that such a gift is not so good as to be impossible.
+
+[Lectio]
+Olvasmány Jézus Sírák fia könyvéből
+!Sir 51:1-8; 51:12
+v. Jézusnak, Sirák fiának imádsága. Hálát adok neked, Uram Királyom! És dicsérlek téged, szabadító Istenemet.  Hálát adok a te nevednek, mert segítöm és oltalmazóm lettél.  Megszabadítottad testemet a romlástól, a rosz nyelvek törétöl, és a hazudságot koholók ajkaitól, és az ellenem állók szine elött segitöm lettél.  És megszabadítottál engem a te neved irgalmának sokasága szerint az elnyelésemre készölt ordítóktól,  az én lelkemet keresök kezeiböl, és a háborúság kapuiból, mely körölvett engem,  a láng égetésétöl, mely körölvett engem, és a töz közepett nem égtem meg,  a pokol gyomrának mélységéböl, és a megfertözött nyelvtöl, és a hazug igétöl, az igazságtalan királytól és az álnok nyelvtöl.  Mindhalálig dicséri lelkem az Urat;  Légy állhatatos az Úr utján, és a te igaz értelmedben és tudományodban, és kövessen téged a béke és igazság igéje.
+
+[Evangelium]
+Evangélium + szent Máté Apostol kőnyvéből
+!Mt 25:1 - 13
+v. A mennyek országa hasonlít a tíz szűzhöz, akik fogták lámpásukat, és a vőlegény elé mentek.  Öt balga volt közülük, öt pedig okos.  A balgák lámpásukat ugyan elvitték, de olajat nem vittek bele.  Az okosak lámpásukkal együtt olajat is vittek korsójukban.  A vőlegény késett, így valamennyien elálmosodtak és elaludtak.  Éjfélkor kiáltás hallatszott: Itt a vőlegény, menjetek ki elébe! -  Erre a szüzek mind fölkeltek, és rendbe hozták lámpásukat.  A balgák kérték az okosakat: Adjatok egy kis olajat! Lámpásunk kialvóban van. -  Nem adunk - felelték az okosak -, mert akkor nem lesz elég se nekünk, se nektek. Menjetek inkább az árusokhoz és vegyetek magatoknak.  Míg odavoltak vásárolni, megérkezett a vőlegény, és akik készen voltak, bevonultak vele a menyegzőre. Ezzel az ajtó bezárult.  Később megérkezett a többi szűz is. Beszóltak: Uram, Uram, nyiss ki nekünk!  De ő így válaszolt: Bizony mondom nektek, nem ismerlek benneteket.  Legyetek hát éberek, mert nem tudjátok sem a napot, sem az órát.

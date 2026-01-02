@@ -1,9 +1,6 @@
 [Rank]
 In Dedicatione Basilicae Ss. Salvatoris;;Duplex 2nd class;;5.5;;ex C8
 
-[RankTrident]
-In Dedicatione Basilicae Ss. Salvatoris;;Duplex majus;;4;;ex C8
-
 [Rule]
 ex C8;
 Gloria
@@ -20,11 +17,6 @@ Credo
 [Oratio]
 @Commune/C8:Oratio
 
-[Commemoratio Oratio]
-! de S. Teodoro
-Ó Deus, que nos guardais e protegeis pela gloriosa confissão do B. Teodoro, vosso Mártir, concedei-nos a graça de aproveitarmos com seus exemplos e de sermos auxiliados com suas orações.
-$Per Dominum
-
 [Lectio]
 @Commune/C8:Lectio
 
@@ -40,18 +32,8 @@ $Per Dominum
 [Secreta]
 @Commune/C8:Secreta
 
-[Commemoratio Secreta]
-! de S. Teodoro
-Recebei, Senhor, as preces dos fiéis juntamente com a oblata destas hóstias, a fim de que, pela intercessão do B. Teodoro, vosso Mártir, obtenhamos, em virtude destes mystérios de pia devoção, a graça de sermos conduzidos até à glória celestial.
-$Per Dominum
-
 [Communio]
 @Commune/C8:Communio
 
 [Postcommunio]
 @Commune/C8:Postcommunio
-
-[Commemoratio Postcommunio]
-! de S. Teodoro
-Permiti, Senhor, pela intercessão do B. Teodoro, vosso Mártir, que conservemos com o coração puro o sacramento que a nossa boca recebeu.
-$Per Dominum

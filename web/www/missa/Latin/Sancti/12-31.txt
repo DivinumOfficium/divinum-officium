@@ -1,22 +1,24 @@
-[Rank]
-S. Silvestri Papæ et Conf.;;Duplex;;3;;vide C4d
+[Officium]
+S. Silvestri Papæ et Confessoris
 
-[Rank1960]
-Die septima post Nativitatem;;Duplex II class;;5;;ex Sancti/12-25m3
+[Name]
+Silvéstri
+(sed rubrica 196)
+Silvéstrum
+Postcommunio=Silvéstro
+
+[Rank]
+;;Duplex;;3;;vide C4b
 
 [Rule]
-OPapaC=Silvéstrum;
-vide C4d;
+vide C4b;
 Gloria
 Credo
 Prefatio=Nat
+Evangelium non appropriatum
 
 [Oratio]
-@Commune/C4:Oratio:s/N\./Silvéstri/
-
-[Commemoratio Oratio]
-!Pro Octava Nativitatis.
-@Sancti/12-25m3:Oratio
+@Commune/C4b
 
 [Lectio]
 @Commune/C4a:Lectio
@@ -25,32 +27,21 @@ Prefatio=Nat
 !Eccli 44:16
 Ecce sacérdos magnus, qui in diébus suis plácuit Deo.
 !Eccli 44:20
-V. Non est invéntus símilis illi, qui conserváret legem Excélsi.~
-Allelúja, allelúja.
+V. Non est invéntus símilis illi, qui conserváret legem Excélsi. Allelúja, allelúja.
 !Ps 88:21
 V. Invéni David servum meum: óleo sancto meo unxi eum. Allelúja.
 
 [GradualeP]
-@Commue/C4:GradualeP
+@Commune/C4:GradualeP
 
 [Evangelium]
 @Commune/C5:Evangelium
 
 [Offertorium]
-@Commune/C4:Offertorium
+@Commune/C4
 
 [Secreta]
-Sancti tui nos, Dómine, quǽsumus, úbique lætíficent: ut, dum eórum mérita~
-recólimus, patrocínia sentiámus.
-$Per Dominum
-
-[Commemoratio Secreta]
-!Pro Octava Nativitatis.
-@Sancti/12-25m3:Secreta
+@Commune/C4b
 
 [Postcommunio]
-@Commune/C4:Postcommunio:s/N\./Silvéstro/
-
-[Commemoratio Postcommunio]
-!Pro Octava Nativitatis.
-@Sancti/12-25m3:Postcommunio
+@Commune/C4b

@@ -1,7 +1,10 @@
-[Rank]
-Die II Infra Octavam S. Joseph;;Semiduplex;;2;;vide Tempora/Pasc2-3
+[Officium]
+De II die infra Octavam S. Joseph
 
-[RankNewcal]
+[Rank]
+;;Semiduplex;;2;;vide Tempora/Pasc2-3
+
+[Rank] (rubrica Newcal)
 @Tempora/Pasc2-4Feria:Rank
 
 [Rule]
@@ -11,7 +14,7 @@ vide Tempora/Pasc2-3;
 [Lectio1]
 De Actibus Apostolórum
 !Act. 24:10-16
-10 Respóndit autem Paulus (annuénte sibi prǽside dícere): Ex multis annis te esse iúdicem genti huic sciens, bono ánimo pro me satisfáciam.
+10 Respóndit autem Paulus (annuénte sibi prǽside dícere): Ex multis annis te esse júdicem genti huic sciens, bono ánimo pro me satisfáciam.
 11 Potes enim cognóscere quia non plus sunt mihi dies quam duódecim, ex quo ascéndi adoráre in Jerúsalem:
 12 et neque in templo invenérunt me cum áliquo disputántem, aut concúrsum faciéntem turbæ, neque in synagógis, neque in civitáte:
 13 neque probáre possunt tibi de quibus nunc me accúsant.
@@ -28,7 +31,7 @@ De Actibus Apostolórum
 18 in quibus invenérunt me purificátum in templo: non cum turba, neque cum tumúltu.
 19 Quidam autem ex Asia Judǽi, quos oportébat apud te præsto esse, et accusáre si quid habérent advérsum me:
 20 aut hi ipsi dicant si quid invenérunt in me iniquitátis cum stem in concílio,
-21 nisi de una hac solúmmodo voce qua clamávi inter eos stans: Quóniam de resurrectióne mortuórum ego iúdicor hódie a vobis.
+21 nisi de una hac solúmmodo voce qua clamávi inter eos stans: Quóniam de resurrectióne mortuórum ego júdicor hódie a vobis.
 
 [Responsory2]
 @Tempora/Pasc0-2:Responsory2
@@ -64,7 +67,7 @@ _
 De Homilía sancti Augustíni Epíscopi
 !Liber 2 de Consensu Evang.
 Neque proptérea non erat appellándus Joseph pater Christi, quia non eum concumbéndo genúerat; quandóquidem pater esset étiam ejus, quem non ex sua cónjuge procreátum aliúnde adoptásset. Putabátur quidem Christus étiam áliter fílius Joseph, tamquam ex ejus omníno carne progénitus; sed ab eis hoc putabátur, quos Maríæ latébat virgínitas: nam Lucas ait: Et ipse Jesus erat incípiens quasi annórum trigínta, ut putabátur, fílius Joseph. Qui tamen Lucas non ejus paréntem solam Maríam, sed ambos paréntes ejus appelláre mínime dubitávit, ubi ait: Puer autem crescébat et confortabátur plenus sapiéntia, et grátia Dei erat in illo; et ibant paréntes ejus per omnes annos in Jerúsalem, in die solémni Paschæ.
-	
+
 [Lectio8]
 Sed, ne quisnam hic paréntes consanguíneos pótius Maríæ cum ipsa Matre ejus intelligéndos putet, quid ad illud respondébit quod ipse item Lucas supérius dixit, Et erant Pater ejus et Mater mirántes super his, quæ dicebántur de illo? Cum ígitur ipse narret, non ex concúbitu Joseph, sed ex María Vírgine natum Christum; unde eum patrem ejus appéllat, nisi quia et virum Maríæ recte intellígimus sine commixtióne carnis, ipsa copulatióne conjúgii; et ob hoc étiam Christi patrem multo conjúnctius, qui ex ejus cónjuge natus sit, quam si esset aliúnde adoptátus? Ac per hoc, si demonstráre áliquis posset Maríam ex David nullam consanguinitátis oríginem dúcere, sat erat secúndum istam ratiónem, accípere Christum Fílium David; qua ratióne étiam Joseph pater ejus appellátus est.
 

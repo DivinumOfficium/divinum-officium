@@ -5,21 +5,22 @@ Festum Domini
 Psalmi Dominica
 12 lectiones
 
-[Doxology]
-@Sancti/10-DU::s/Jesu, tibi sit glória/Glória tibi, Dómine/
+[Responsory Vespera 1] (rubrica Barroux)
+@Tempora/101-0:Responsory6
 
-[Capitulum Vespera]
-@Sancti/10-DU
-_
-@Sancti/10-DU:Responsory Sexta:s/._.*//s
+[Responsory Vespera] (rubrica cisterciensis)
+@Sancti/10-DU:Responsory Breve Sexta
 
 [Hymnus Vespera]
 @Sancti/10-DU::1-35
-@Sancti/10-DU:Doxology:s/Jesu, tibi sit glória/Glória tibi, Dómine/
+@Sancti/10-DU:Doxology:s/Jesu, tibi sit glória/Glória tibi, Dómine/ s/almo/Sancto/
+
+[Doxology]
+@Sancti/10-DU::s/Jesu, tibi sit glória/Glória tibi, Dómine/ s/almo/Sancto/
 
 [Hymnus Matutinum]
 @Sancti/10-DU::1-30
-@Sancti/10-DU:Doxology:s/Jesu, tibi sit glória/Glória tibi, Dómine/
+@Sancti/10-DU:Doxology:s/Jesu, tibi sit glória/Glória tibi, Dómine/ s/almo/Sancto/
 
 [AntMatutinumM]
 Hic est Deus, * Deus noster in ætérnum: ipse reget nos in sǽcula.;;47
@@ -29,108 +30,50 @@ Dóminus * regnávit, exsúltet terra: læténtur ínsulæ multæ.;;96
 Jubiláte * in conspéctu regis Dómini, † quóniam venit judicáre terram.;;97
 Exaltáte * Dóminum Deum nostrum, † et adoráte in monte sancto ejus.;;98
 
-[Ant Matutinum]
-@Sancti/10-DU::1-3
-@Sancti/10-DU::6-8
-@Sancti/10-DU::4-5
-@:AntMatutinumM
-@Sancti/10-DU::9-10
-;;221;223(1-8);223(9-16)
-@Sancti/10-DU::14-15
-
 [Ant Matutinum 3N]
 Christo * datus est principátus et honor regni: omnis pópulus et tribus et linguæ sérvient ei in ætérnum.
+
+[Ant Matutinum]
+@Sancti/10-DU::1-6
+@:AntMatutinumM
+;;211;223(1-8);223(9-16)
 
 [Lectio1]
 @Sancti/10-DU:Lectio1:
 
-[Responsory1]
-R. Super sólium David et super regnum ejus sedébit in ætérnum:
-* Et vocábitur nomen ejus Deus, Fortis, Princeps pacis.
-V. Multiplicábitur ejus impérium, et pacis non erit finis.
-R. Et vocábitur nomen ejus Deus, Fortis, Princeps pacis.
-
 [Lectio2]
 @Sancti/10-DU:Lectio2:s/-17/-14/ s/15 .*//s
-
-[Responsory2]
-R. Aspiciébam in visu noctis, et ecce in núbibus cæli Fílius hóminis veniébat: † et datum est ei regnum, et honor:
-* Et omnis pópulus, tribus, et linguæ sérvient ei.
-V. Potéstas ejus, potéstas ætérna, quæ non auferétur: † et regnum ejus, quod non corrumpétur.
-R. Et omnis pópulus, tribus, et linguæ sérvient ei.
 
 [Lectio3]
 @Sancti/10-DU:Lectio2:s/-17/-20/ s/9-/15-/ s/9 .*15 /15 /s
 @Sancti/10-DU:Lectio3:s/!.*// s/.21 .*//s
 
-[Responsory3]
-R. Tu Béthlehem Ephrata, párvulus in míllibus Juda: † ex te mihi egrediétur qui sit dominator in Israël:
-* Et erit iste Pax.
-V. Egréssus ejus ab inítio, a diébus æternitátis: † stabit, et pascet in fortitúdine Dómini.
-R. Et erit iste Pax.
-
 [Lectio4]
 @Sancti/10-DU:Lectio3:s/18/21/ s/18.*21/21/s
-
-[Responsory4]
-R. Exsúlta satis, fília Sion; júbila, fília Jerúsalem: † ecce Rex tuus véniet tibi justus et Salvátor:
-* Et loquétur pacem Géntibus.
-V. Potestas ejus a mari usque ad mare: † et a flumínibus usque ad fines terræ.
-R. Et loquétur pacem Géntibus.
 
 [Lectio5]
 @Sancti/10-DU:Lectio4:s/Cum .* Ut transláta/Transláta/s s/Verum, .*//s
 
-[Responsory5]
-R. Opórtet illum regnáre, quóniam ómnia subiécit Deus sub pédibus ejus:
-* Ut sit Deus ómnia in ómnibus.
-V. Cum subiécta fúerint illi ómnia, † tunc et ipse Fílius subiéctus erit Patri.
-R. Ut sit Deus ómnia in ómnibus.
-
 [Lectio6]
 @Sancti/10-DU:Lectio4:s/.* Verum, /Verum, /s
-
-[Responsory6]
-R. Fecit nos regnum et sacerdótes Deo et Patri suo:
-* Ipsi glória et impérium, in sǽcula sæculórum.
-V. Ipse est primogénitus mortuórum, et princeps regum terræ.
-R. Ipsi glória et impérium, in sǽcula sæculórum.
 
 [Lectio7]
 @Sancti/10-DU:Lectio5:s/.* Jamvéro, /Jamvéro, /s s/, útpote.*/./s
 
-[Responsory7]
-R. Factum est regnum hujus mundi Dómini nostri et Christi ejus:
-* Et regnábit in sǽcula sæculórum.
-V. Adorábunt in conspéctu ejus univérsæ famíliæ Géntium; † quóniam Dómini est regnum.
-R. Et regnábit in sǽcula sæculórum.
-
 [Lectio8]
 @Sancti/10-DU:Lectio6:s/Síquidem, .* esse.//s s/qui etsi.*éfficit; o/O/ s/Itaque,.*//s
-
-[Responsory8]
-R. Decem córnua quæ vidísti, decem reges sunt: † hi cum Agno pugnábunt, et Agnus vincet illos,
-* Quóniam Dóminus dominórum est, et Rex regum.
-V. Regnávit Dóminus Deus noster omnípotens: † gaudeámus et exsultémus, et demus glóriam ei.
-R. Quóniam Dóminus dominórum est, et Rex regum.
 
 [Lectio9]
 @Sancti/10-DU:Lectio7:s/Sed Judæórum .*//s
 
 [Responsory9]
-R. Tua est poténtia, tuum regnum, Dómine: † tu es super omnes gentes:
-* Da pacem, Dómine, in diébus nostris.
-V. Creator ómnium, Deus, terríbilis et fortis, justus et miséricors.
-R. Da pacem, Dómine, in diébus nostris.
+@Tempora/101-0:Responsory6
 
 [Lectio10]
 @Sancti/10-DU:Lectio7:s/.* Sed Judæórum /Sed Judæórum /s
 
 [Responsory10]
-R. Ecce apparébit Dóminus super nubem cándidam,
-* Et cum eo Sanctórum míllia: et habébit in vestiménto, et in fémore suo scriptum: † Rex regum, et Dóminus dominántium.
-V. Apparébit in finem, et non mentiétur; si moram fécerit, exspécta eum, quia veniens véniet.
-R. Et cum eo Sanctórum míllia: et habébit in vestiménto, et in fémore suo scriptum: Rex regum, et Dóminus dominántium.
+@Tempora/Adv3-0:Responsory1
 
 [Lectio11]
 @Sancti/10-DU:Lectio8:s/Póterat .*//s
@@ -138,7 +81,7 @@ R. Et cum eo Sanctórum míllia: et habébit in vestiménto, et in fémore suo s
 [Responsory11]
 R. Non est símilis tui, Dómine, magnus nomen tuum in fortitúdine,
 * Quis non timébit te, o Rex géntium?
-V. Tuum est enim decus inter cuctos sapiéntes géntium: † Tu Deus vivens et Rex sempitérnus
+V. Tuum est enim decus inter cunctos sapiéntes géntium: † Tu Deus vivens et Rex sempitérnus
 R. Quis non timébit te, o Rex géntium?
 
 [Lectio12]
@@ -150,20 +93,18 @@ R. Vidi Dóminum sedéntem super sólium excélsum et elevátum, † et plena er
 V. Séraphim stabant super illud: † sex alæ uni, et sex alæ álteri.
 R. Et ea, quæ sub ipso erant, replébant templum.
 
-[Capitulum Laudes]
-@Sancti/10-DU
-_
-@Sancti/10-DU:Responsory Tertia:s/._.*//s
+[Responsory Laudes] (rubrica cisterciensis)
+@Sancti/10-DU:Responsory Breve Tertia
 
 [Hymnus Laudes]
 @Sancti/10-DU::1-30
-@Sancti/10-DU:Doxology:s/Jesu, tibi sit glória/Glória tibi, Dómine/
+@:Doxology
 
-[Responsory Tertia]
-@Sancti/10-DU:Responsory Tertia:s/.*_.//s
+[Responsory TertiaM]
+@Sancti/10-DU:Nocturn 2 Versum
 
-[Responsory Sexta]
-@Sancti/10-DU:Responsory Sexta:s/.*_.//s
+[Responsory SextaM]
+@Sancti/10-DU:Nocturn 3 Versum
 
-[Responsory Nona]
+[Responsory NonaM]
 @Sancti/10-DU:Versum 2

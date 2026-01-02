@@ -1,5 +1,41 @@
-@Tempora/Pasc5-6
+@TemporaM/Pasc5-5
 
 [Rank]
-Sabbato post Ascensionem;;Feria;;1;;vide TemporaM/Pasc5-5
+@Tempora/Pasc5-6
 
+[Ant Matutinum]
+@Tempora/Pasc5-4::3 s/;;.*//
+;;
+;;
+;;
+;;
+;;
+@Tempora/Pasc5-4::4 s/;;.*//
+;;
+;;
+;;
+;;
+;;
+
+[Lectio1]
+@Tempora/Pasc5-6:Lectio7
+
+[Responsory1]
+@Tempora/Pasc5-4:Responsory7
+
+[Lectio2]
+@Tempora/Pasc5-6:Lectio8
+
+[Responsory2]
+@Tempora/Pasc5-4:Responsory8
+
+[Lectio3]
+@Tempora/Pasc5-6:Lectio9
+
+[Responsory3]
+@TemporaM/Pasc5-4:Responsory11
+
+[MM Capitulum] (rubrica tridentina aut rubrica divino)
+@Tempora/Pasc5-4:Capitulum Sexta
+_
+@Tempora/Pasc5-4:Nocturn 2 Versum

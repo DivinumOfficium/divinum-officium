@@ -1,29 +1,11 @@
-[Rank]
-Św. Marcina Biskupa i Wyznawcy;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a;
-9 lectiones
-
-[Ant Laudes]
-Uczniowie mówili * błogosławionemu Marcinowi: Ojcze, czemu nas opuszczasz i komu nas zostawiasz w naszym smutku? Wilcy drapieżni rzucą się na twoje stado.
-Panie, * jeśli jestem potrzebny ludowi, nie wymawiam się od pracy: dziej się Wola Twoja.
-Mąż przedziwny! * Niezwyciężony w pracy, a i śmierć nie potrafi go przemóc, nie obawia się śmierci i nie odrzeka życia.
-Z oczyma i rękoma * ku niebu wzniesionemi niezmordowany oddawał się bezustannie modlitwie, alleluja.
-Przyjęto Marcina * pełnego radości na łono Abrahamowe: Marcin, na ziemi ubogi i pokorny, wchodzi bogatym do nieba, witany przez chóry niebieskie.
+[Officium]
+Św. Marcina Biskupa i Wyznawcy
 
 [Ant 1]
 O szczęśliwy mężu, * którego dusza w niebie zamieszkuje! Aniołowie z tego powodu wykrzykują radośnie, Archaniołowie się weselą, chór Świętych go wysławia, grono Dziewic wita go, mówiąc: Pozostań z nami na wieki.
 
 [Oratio]
 Boże, który widzisz, że o własnych siłach w dobrem nie zdołamy, dozwól łaskawie, aby wstawiennictwo błogosławionego Marcina, Wyznawcy Twego i Biskupa, przeciw wszelkim przeciwnościom nas umocniło.
-$Per Dominum
-
-[Commemoratio]
-!Wspomnienie Św. Menny Męczennika
-@Commune/C2:Oratio proper
-$Oremus
-Dozwól prosimy Cię, wszechmogący Boże, abyśmy, którzy błogosławionego Mennę Męczennika Twego, narodziny obchodzimy, za jego przyczyną w miłości Imienia Twego się utwierdzili.
 $Per Dominum
 
 [Invit]
@@ -33,18 +15,12 @@ Chwalmy Boga naszego, * Cześć oddając błogosławionemu Marcinowi.
 Marcin * jeszcze chrztu czekający, tą mie suknią okrył.;;1
 W Świętą Trójcę * Marcin wiarę wyznał i łaskę chrztu przyjął.;;2
 Ja znakiem Krzyża, * nie tarczą ani przyłbicą opatrzony wojsko nieprzyjacielskie bezpiecznie przebiję.;;3
-V. Umiłował go Pan, i przyozdobił go.
-R. Szatą chwały przyodział go.
 Ufam Panu, * że córka moja za twoją modlitwą do zdrowia przyjdzie.;;4
 Tetradius * moc Bożą uznawszy, do łaski chrztu przyszedł.;;5
 O wielki mąż * zaprawdę którego tak wielkie cuda u nas sławią.;;8
-V. Obrał go Pan Kapłanem sobie.
-R. Aby Mu złożył ofiarę chwały.
 Pan nasz Jezus Chrystus, * nie w purpurze ani w świetnej koronie przyjść się obiecał.;;10
 Kapłanie Boży Marcinie * otworzoneć są Niebiosa i Królestwo Ojca mego.;;14
 Kapłanie Boży Marcinie * pasterzu dobry, módl się za nami do Boga.;;20
-V. Tyś jest kapłanem na wieki.
-R. Według obrządku Melchizedeka.
 
 [Responsory1]
 R. Ten jest Marcin wybrany Biskup Boży, któremu Pan po Apostołach tak wielką łaskę dał,
@@ -65,7 +41,7 @@ V. Panie jeślim potrzebny jest jeszcze ludowi twemu, nie wzbraniam się podją�
 R. Który ani się bał umrzeć ani się zbraniał żyć.
 
 [Lectio4]
-Marcin w Sabinie albo Sabarze mieście Pannoniej urodzony, lat dzisięć mając nad wolą rodziców swych do kościoła bieżawszy, katechumenów w poczet to jest Chrztu czekających dał się wpisać. Gdy miał lat piętnaście na żołnierkę się wyprawiwszy naprzód w wojsku Konstantynowym potym Julianowym służył. Ten nie jedno zbroją, a ubiór żołnierski, którym się nakrywał nie mając w Ambianie ubogiemu i nagiemu, aby mu w Imię Chrystusowe jałmużnę dał proszącemu połowicę płaszcza dał. Nocy nadchodzącej ukazał mu się Chrystus połowiną oną odziany tak mówiąc: Marcin jeszcze Chrztu czekający tą mnie suknią pokrył.
+Marcin w Sabinie albo Sabarze mieście Pannoniej urodzony, lat dziesięć mając nad wolą rodziców swych do kościoła bieżawszy, katechumenów w poczet to jest Chrztu czekających dał się wpisać. Gdy miał lat piętnaście na żołnierkę się wyprawiwszy naprzód w wojsku Konstantynowym potym Julianowym służył. Ten nie jedno zbroją, a ubiór żołnierski, którym się nakrywał nie mając w Ambianie ubogiemu i nagiemu, aby mu w Imię Chrystusowe jałmużnę dał proszącemu połowicę płaszcza dał. Nocy nadchodzącej ukazał mu się Chrystus połowiną oną odziany tak mówiąc: Marcin jeszcze Chrztu czekający tą mnie suknią pokrył.
 
 [Responsory4]
 R. Oczy i ręce ku Niebu ustawicznie trzymając,
@@ -74,7 +50,7 @@ V. Gdy Mszę miał błogosławiony Marcin, koło ogniste nad głową jego się u
 R. Myśli niezrobionej z modlitwy nie puszczał.
 
 [Lectio5]
-W osiemnastym roku ochrzczony jest. Poniechawszy tedy żywota żołnierskiego do Hilarjusza Piktawskiego Biskupa się udał, który go Akolitem abo zaklinaczem uczynił. Potym uczyniony Biskupem Turonenskim, klasztor zbudował w którym z osiemdziesiąt zakonników bardzo świątobliwie czas niejaki żył. Gdy zaś w miasteczku Kandakum diecezji swojej w ciężką chorobę wpadł, ustawicznie Pana Boga prosił, aby go z tego więzienia śmiertelnego wybawił. Co słysząc uczniowie tak go prosili: Czemu nas Ojcze opuszczasz, komu nas nędznych zostawisz. Których mową wzruszony Marcin tak Pana prosił: Panie jeślim potrzebny jest jeszcze ludowi twemu, nie wymawiam się z prace.
+W osiemnastym roku ochrzczony jest. Poniechawszy tedy żywota żołnierskiego do Hilarjusza Piktawskiego Biskupa się udał, który go Akolitem abo zaklinaczem uczynił. Potym uczyniony Biskupem Turoneńskim, klasztor zbudował w którym z osiemdziesiąt zakonników bardzo świątobliwie czas niejaki żył. Gdy zaś w miasteczku Kandakum diecezji swojej w ciężką chorobę wpadł, ustawicznie Pana Boga prosił, aby go z tego więzienia śmiertelnego wybawił. Co słysząc uczniowie tak go prosili: Czemu nas Ojcze opuszczasz, komu nas nędznych zostawisz. Których mową wzruszony Marcin tak Pana prosił: Panie jeślim potrzebny jest jeszcze ludowi twemu, nie wymawiam się z prace.
 
 [Responsory5]
 R. Błogosławiony Marcin, śmierć swoje dobrze przedtym wiedząc powiedział braci
@@ -83,7 +59,7 @@ V. Na sile cielesnej nagle począł słabieć i zwoławszy uczniów mówił:
 R. Że rozstanie z ciałem blisko jest.
 
 [Lectio6]
-Ale gdy na niego onej ciężkiej gorączce na wznak modlącego patrzyli uczniowie, prosili go pokornie aby się na wznak obrócił, aż by choroba zelżyła. Marcin Święty im rzekł: Dopuśćcie mi w niebo raczej a nie na ziemię patrzyć, aby swą drogą duch prosto do Pana szedł. Gdy już śmierci bliski był, ujrzawszy nieprzyjaciela narodu ludzkiego rzekł: Czego tu stoisz krwawa bestjo nic we mnie nie najdziesz. Co mówiąc mając osiemdziesiąt lat i jeden, ducha Bodu oddał. Którego chór Anielski przyjął, śpiewanie wiele ich a osobliwie Święty Seweryn koleński Biskupi, słyszało.
+Ale gdy na niego onej ciężkiej gorączce na wznak modlącego patrzyli uczniowie, prosili go pokornie aby się na wznak obrócił, aż by choroba zelżyła. Marcin Święty im rzekł: Dopuśćcie mi w niebo raczej a nie na ziemię patrzyć, aby swą drogą duch prosto do Pana szedł. Gdy już śmierci bliski był, ujrzawszy nieprzyjaciela narodu ludzkiego rzekł: Czego tu stoisz krwawa bestjo nic we mnie nie najdziesz. Co mówiąc mając osiemdziesiąt lat i jeden, ducha Bogu oddał, którego chór Anielski przyjął, śpiewanie wiele ich a osobliwie Święty Seweryn koleński Biskupi, słyszało.
 
 [Responsory6]
 R. Mówili uczniowie do Świętego Marcina: Czemu nas Ojcze opuszczasz, komu nas nędznych zostawisz?
@@ -107,8 +83,7 @@ V. Kościół cudami się umacnia, kapłani Boży sławią, którego Michał prz
 R. Chór Aniołów wykrzyka i wszystkich mocy Niebieskich śpiewających wojsko zstępuje.
 
 [Lectio8]
-Tać jest świeca, która się zapala to jest siła rozumu i zmysłu naszego, aby grosz on który zginał był, mógł się znaleźć. Żaden tedy wiary pod zakonem niech niestanowi. Zakon bowiem w wierze stoi. Łaska zaś miary nie ma. Zakon ćmi, łaska oświeca. I przeto wiary swej pod miarą zakonną niechaj nikt nie zawiera, ale do kościoła niech zanosi, w którym Ducha Siedmioraka łaska znaczna jest. Który Kościół przedniejszy, on Kapłan jasnością Bóstwa wysokiego oświeca aby go cień zakonu niezagasił.~
-Under the old law there was the sevenfold lamp which the Priest of the Jews lighted every morning and every evening, and this was as it were a candle put under a bushel. That Jerusalem which is upon earth, that Jerusalem which killed the Prophets, lieth hid, as it were, in a dark place in the valley of tears. But that Jerusalem which is in heaven, whereof by faith we are soldiers, is a city set upon the highest of all mountains, even upon Christ. Her the darkness and tempests of earth cannot hide, but she blazeth with the glory of the Eternal Sun, and maketh to fall upon us the light of spiritual grace.
+Tać jest świeca, która się zapala to jest siła rozumu i zmysłu naszego, aby grosz on który zginał był, mógł się znaleźć. Żaden tedy wiary pod zakonem niech niestanowi. Zakon bowiem w wierze stoi. Łaska zaś miary nie ma. Zakon ćmi, łaska oświeca. I przeto wiary swej pod miarą zakonną niechaj nikt nie zawiera, ale do kościoła niech zanosi, w którym Ducha Siedmioraka łaska znaczna jest. Który Kościół przedniejszy, on Kapłan jasnością Bóstwa wysokiego oświeca aby go cień zakonu niezagasił. A więc świeca owa, którą według dawnego obrządku Żydów najwyższy kapłan zwykł był zapalać rano i wieczorem, jakby pod korcem ukryta, zagasła i owe miasto Jerozolima, która jest na ziemi, która zabija proroków, jakby w dolinie płaczu jest ukryta, natomiast tej Jerozolimy, która jest w niebie, w której walczy wiara nasza, umieszczona na najwyższej ze wszystkich gór, to jest na Chrystusie, nie mogą ukryć żadne ciemności, ruiny tego miasta. Ale jaśniejąc blaskiem wiecznego słońca, oświeca nas światłem duchowej łaski.
 
 [Responsory8]
 R. Marcin Święty na łono Abrahamowe z weselem przyjęty, Marcin ten ubogi i pokorny,
@@ -116,9 +91,12 @@ R. Marcin Święty na łono Abrahamowe z weselem przyjęty, Marcin ten ubogi i p
 V. Marcin Biskup przeniósł się z świata, perła kapłanów w Chrystusie żyje.
 R. Do nieba bogatym wchodzi, pieniem Anielskiem uraczony.
 
-[Lectio93]
-!Wspomnienie Św. Menny Męczennika
-Mennas Egipcjanin, żołnierz chrześcijański, w prześladowaniu Djoklecjana i Maximiana cesarzów, udawszy się na puszczę aby pokutował, dnia narodzenia cesarskiego, którego lud widokami się bawił, wyskoczywszy na theatrum bezpieczną mową zabobony pogańskie ganił. Poimany tedy i Pyrhusowi staroście w głównym mieście Phrygji oddany, biczmi okrutnie sieczony, po tym na końcu pieczony pochodniami pałającemi palony, z ranami włośień odnowionymi palony, po cierniu i miotłach żelaznych za ręce i nogi uwiązany, uwłoczony, ołownemi korbaczami pobity. Na ostatek mieczem zgładzony i w ogień wrzucony. Ciał stamtąd wydarte chrześcijanie pogrzebli i po tym do Konstantynopola przenieśli.
+[Ant Laudes]
+Uczniowie mówili * błogosławionemu Marcinowi: Ojcze, czemu nas opuszczasz i komu nas zostawiasz w naszym smutku? Wilcy drapieżni rzucą się na twoje stado.
+Panie, * jeśli jestem potrzebny ludowi, nie wymawiam się od pracy: dziej się Wola Twoja.
+Mąż przedziwny! * Niezwyciężony w pracy, a i śmierć nie potrafi go przemóc, nie obawia się śmierci i nie odrzeka życia.
+Z oczyma i rękoma * ku niebu wzniesionemi niezmordowany oddawał się bezustannie modlitwie, alleluja.
+Przyjęto Marcina * pełnego radości na łono Abrahamowe: Marcin, na ziemi ubogi i pokorny, wchodzi bogatym do nieba, witany przez chóry niebieskie.
 
 [Ant 3]
 Błogosławiony Biskupie! * który ukochałeś Chrystusa Króla ze wszystkich sił i nie miałeś obawy przed wielkimi tego świata! O święta duszo, która nie utraciłaś palmy męczeństwa, mimo iż miecz prześladowcy nie oddzielił cię od ciała.

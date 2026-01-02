@@ -1,21 +1,10 @@
-[Rank]
-S. Blasii Episcopi;;Simplex;;1.1;;vide C2b
-
-[Rule]
-vide C2b;
-Gloria
+[Officium]
+S. Blasii Episcopi
 
 [Comment]
 # 03 II – S. Brás, Bispo e Mártir
 ! Comemoração
 ! Paramentos vermelhos
 
-[Oratio]
-Ó Deus, que nos alegrais com a solenidade anual do B. Brás, vosso Mártir e Pontífice, concedei-nos propício que, assim como celebramos o seu nascimento, assim também gozemos a sua protecção.
-$Per Dominum
-
-[Secreta]
-@Commune/C2b:Secreta
-
-[Postcommunio]
-@Commune/C2b:Postcommunio
+[Name]
+Brás

@@ -1,17 +1,23 @@
-[Rank]
-Sabbato Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
+[Officium]
+Sabbato Quattuor Temporum Pentecostes
 
 [Rank]
-Sabbato Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
+;;Semiduplex I classis;;6.9;;ex Pasc7-0
 
 [Rule]
 ex Pasc7-0;
 1 nocturn;
 Antiphonas horas
 Psalmi Dominica;
-Hymnus Tertia
+(sed rubrica cisterciensis) 
+Psalmi Feria
 Feria Te Deum
 no93
+no secunda vespera
+
+[Oratio]
+Méntibus nostris, quǽsumus, Dómine, Spíritum Sanctum benígnus infúnde: cujus et sapiéntia cónditi sumus, et providéntia gubernámur.
+$Per Dominum eiusdem
 
 [Ant Matutinum]
 @Tempora/Pasc7-0::s/V\. .*/V. Repléti sunt omnes Spíritu Sancto, allelúja.\nR. Et cœpérunt loqui, allelúja./s
@@ -41,6 +47,5 @@ Sábbato medicínæ Domínicæ ópera cœpta signíficat, ut inde nova creatúra
 [Ant 2]
 Cáritas Dei * diffúsa est in córdibus nostris, per inhabitántem Spíritum ejus in nobis, allelúja.
 
-[Oratio]
-Méntibus nostris, quǽsumus, Dómine, Spíritum Sanctum benígnus infúnde: cujus et sapiéntia cónditi sumus, et providéntia gubernámur.
-$Per Dominum eiusdem
+[Ant 2] (rubrica cisterciensis)
+Hi qui linguis * loquúntur novis, Galilæi sunt, et serpentes tollent, allelúia.

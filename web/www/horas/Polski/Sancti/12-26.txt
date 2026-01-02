@@ -1,15 +1,5 @@
-[Rank]
-Św. Szczepana Pierwszego Męczennika;;Duplex II class cum octava simplici;;5.4;;ex C2
-
-[Rank1960]
-Św. Szczepana Pierwszego Męczennika;;Duplex II class;;5;;ex C2
-
-[Rule]
-ex C2;
-Psalmi Dominica
-Antiphonas horas
-9 lectiones
-no Psalm5
+[Officium]
+Św. Szczepana Pierwszego Męczennika
 
 [Ant 1]
 A Szczepan * pełen łaski i mocy czynił cuda i znaki wielkie między ludem.
@@ -17,6 +7,9 @@ A Szczepan * pełen łaski i mocy czynił cuda i znaki wielkie między ludem.
 [Oratio]
 Daj nam, prosimy Cię, Panie, naśladować to, co czcimy: abyśmy się nauczyli i nieprzyjaciół miłować: gdyż obchodzimy narodziny dla nieba tego; który nawet za prześladowców umiał się modlić do Pana naszego Jezusa Chrystusa Syna Twojego.
 $Qui tecum
+
+[Invit]
+Chrystusowi narodzonemu, który dziś ukoronował błogosławionego Szczepana, * pójdźcie, pokłońmy się.
 
 [Lectio1]
 Z Dziejów Apostolskich
@@ -59,10 +52,16 @@ R. Oto widzę niebiosa otworzone, a Syna człowieczego stojącego po prawicy Bo�
 R. Oto widzę niebiosa otworzone, a Syna człowieczego stojącego po prawicy Bożéj.
 
 [Responsory4]
-R. I kamionowali Szczepana wzywającego a mówiącego:
+R. Kamionowali Szczepana wzywającego a mówiącego:
 * Panie Jezu, przyjmij ducha mojego, i nie przyczytaj im tego grzechu.
 V. A klęknąwszy na kolana, zawołał głosem wielkim, mówiąc.
 R. Panie Jezu, przyjmij ducha mojego, i nie przyczytaj im tego grzechu.
+
+[Responsory5]
+R. Rzucili się nań jednomyślnie, a wyrzuciwszy go z miasta, wzywającego a mówiącego:
+* Panie Jezu, przyjmij ducha mojego.
+V. A świadkowie składali szaty swe u nóg młodzieńca, którego zwano Szawłem: i kamionowali Szczepana wzywającego a mówiącego.
+R Panie Jezu, przyjmij ducha mojego.
 
 [Lectio7]
 Czytanie Ewangelii świętej według św. Mateusza
@@ -110,6 +109,17 @@ $Deo gratias
 V. I pogrzebli Szczepana ludzie bogobojni.
 R. I uczynili nad nim wielkie płakanie.
 
+[Octava 2]
+!Wspominamy oktawę św. Szczepana.
+Ant. A Szczepan * pełen łaski i mocy czynił cuda i znaki wielkie między ludem.
+_
+V. I pogrzebli Szczepana ludzie bogobojni.
+R. I uczynili nad nim wielkie płakanie.
+_
+$Oremus
+Daj nam, prosimy Cię, Panie, naśladować to, co czcimy: abyśmy się nauczyli i nieprzyjaciół miłować: gdyż obchodzimy narodziny dla nieba tego; który nawet za prześladowców umiał się modlić do Pana naszego Jezusa Chrystusa Syna Twojego.
+$Qui tecum
+
 [Lectio Prima]
 !Dz 7:59
 v. A klęknąwszy na kolana, zawołał głosem wielkim, mówiąc: Panie, nie przyczytaj im tego grzechu. A to rzekłszy, zasnął w Panu.
@@ -123,19 +133,8 @@ $Deo gratias
 V. Szczepan ujrzał niebiosa otworzone.
 R. Widział i wszedł: błogosławiony mąż, któremu się niebiosa otworzyły.
 
-[Ant 3]
+[Ant 3_]
 I pogrzebli Szczepana * ludzie bogobojni, i uczynili nad nim wielkie płakanie.
-
-[Octava 2]
-!Wspominamy oktawę św. Szczepana.
-Ant. A Szczepan * pełen łaski i mocy czynił cuda i znaki wielkie między ludem.
-_
-V. I pogrzebli Szczepana ludzie bogobojni.
-R. I uczynili nad nim wielkie płakanie.
-_
-$Oremus
-Daj nam, prosimy Cię, Panie, naśladować to, co czcimy: abyśmy się nauczyli i nieprzyjaciół miłować: gdyż obchodzimy narodziny dla nieba tego; który nawet za prześladowców umiał się modlić do Pana naszego Jezusa Chrystusa Syna Twojego.
-$Qui tecum
 
 [Octava 3]
 !Wspominamy oktawę św. Szczepana.

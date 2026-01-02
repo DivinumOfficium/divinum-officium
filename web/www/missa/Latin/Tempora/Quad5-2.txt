@@ -1,8 +1,12 @@
-[Rank]
-Feria Tertia infra Hebdomadam Passionis;;Feria major;;2
+[Officium]
+Feria Tertia infra Hebdomadam Passionis
 
-[Rank](rubrica 1960)
-Feria Tertia infra Hebdomadam Passionis;;Feria major;;3
+[Rank]
+;;Feria major;;2.1
+(sed rubrica 1930)
+;;Feria major;;4.9
+(sed rubrica 196)
+;;Feria major;;3.9
 
 [Rule]
 no Gloria

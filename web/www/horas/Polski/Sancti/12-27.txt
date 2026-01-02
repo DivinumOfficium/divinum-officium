@@ -1,21 +1,12 @@
-[Rank]
-Św. Jana Apostoła i Ewangelisty;;Duplex II Class cum octava simplici;;5.3;;ex C1
-
-[Rank1960]
-Św. Jana Apostoła i Ewangelisty;;Duplex II class;;5;;ex C1
-
-[Rule]
-ex C1;
-Psalmi Dominica
-Antiphonas horas
-9 lectiones
-
-[Ant 1]
-Ten jest Jan, * który położył się był przy wieczerzy na piersiach Jezusowych, szczęśliwy Apostoł, któremu objawione były tajemnice niebieskie.
+[Officium]
+Św. Jana Apostoła i Ewangelisty
 
 [Versum 1]
 V. Wielce czcigodny jest błogosławiony Jan.
 R. Który przy wieczerzy leżał na piersiach Jezusowych.
+
+[Ant 1]
+Ten jest Jan, * który położył się był przy wieczerzy na piersiach Jezusowych, szczęśliwy Apostoł, któremu objawione były tajemnice niebieskie.
 
 [Oratio]
 Panie oświecać zawsze Kościói Twój święty, aby, poznawszy naukę błogosławionego Jana Apostoła Twego i Ewangelisty, dostąpił dóbr wiekuistych.
@@ -41,7 +32,7 @@ Początek Pierwszego Listu św. Jana Apostoła
 [Responsory2]
 R. Ten jest uczeń, który daje świadectwo o tem, i to napisał:
 * A wiemy, iż prawdziwe jest świadectwo jego.
-V. Fluenta Evangelii de ipso sacro Dominici pectoris fonte potavit.
+V. Zdroje wód Ewangelii czerpał z samego świętego źródła w sercu Pana.
 R. A wiemy, iż prawdziwe jest świadectwo jego.
 
 [Lectio3]
@@ -57,6 +48,12 @@ R. Kto zwycięży, uczynię go słupem w kościele Boga mego, mówi Pan:
 * I napiszę na nim imię moje i imię miasta nowego Jeruzalem.
 V. Zwyciężcy dam jeść z drzewa żywota, które jest w raju Boga mojego.
 R. I napiszę na nim imię moje i imię miasta nowego Jeruzalem.
+
+[Responsory5]
+R. A miłował Jezus Jana, którego szczególnej czystości przywilej większej miłości godnym czynił
+* Albowiem dziewicą powołany przez Chrystusa, w dziewictwie przetrwał na wieki.
+V. Na krzyżu wreszcie umierający, powierza Chrystus swoją Matkę–Dziewicę temu Uczniowi - dziewicy.
+R. Albowiem dziewicą powołany przez Chrystusa, w dziewictwie przetrwał na wieki.
 
 [Responsory6]
 R. I w pośrzód kościoła otworzy usta jego,
@@ -112,51 +109,6 @@ $Deo gratias
 V. Ten jest uczeń, który daje świadectwo o tem.
 R. A wiemy, iż prawdziwe jest świadectwo jego.
 
-[Ant 2]
-Ten jest Jan, * który położył się był przy wieczerzy na piersiach Jezusowych, szczęśliwy Apostoł, któremu objawione były tajemnice niebieskie.
-
-[Commemoratio 2]
-@Sancti/12-25:Octava 2
-
-[Commemoratio 3]
-@Sancti/12-25:Octava 3
-
-[Commemoratio 2] (rubrica trident)
-@Sancti/12-25:Octava 2
-@Sancti/12-26:Octava 2
-
-[Commemoratio 3] (rubrica trident)
-@Sancti/12-25:Octava 3
-@Sancti/12-26:Octava 3
-
-[Lectio Prima]
-!Syr 15:5
-v. W pośrzód kościoła otworzy usta jego, i napełni go duchem mądrości i rozumienia, i szatą chwały przyodzieje go.
-
-[Capitulum Tertia]
-@:Capitulum Laudes
-
-[Capitulum Sexta]
-!Syr 15:3
-v. Nakarmi go chlebem żywota i rozumienia a wodą mądrości zbawiennej napoi go i umocni się w nim.
-$Deo gratias
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Ant Vespera 3]
-@Sancti/12-25:Ant Vespera 3
-
-[Capitulum Vespera]
-@:Capitulum Laudes
-
-[Versum 3]
-@:Versum 1
-
-[Ant 3]
-Gruchnęła * mowa między uczniami, iż on uczeń nie umrze: lecz nie rzekł Jezus: Nie umrze, ale: Tak chcę, aby został aż przyjdę.
-
 [Octava 2]
 !Wspominamy oktawę św Jana
 Ant. Ten jest Jan, który położył się był przy wieczerzy na piersiach Jezusowych, szczęśliwy Apostoł, któremu objawione były tajemnice niebieskie.
@@ -167,6 +119,18 @@ _
 v. Módlmy się.
 Panie oświecać zawsze Kościói Twój święty, aby, poznawszy naukę błogosławionego Jana Apostoła Twego i Ewangelisty, dostąpił dóbr wiekuistych.
 $Per Dominum
+
+[Lectio Prima]
+!Syr 15:5
+v. W pośrzód kościoła otworzy usta jego, i napełni go duchem mądrości i rozumienia, i szatą chwały przyodzieje go.
+
+[Capitulum Sexta]
+!Syr 15:3
+v. Nakarmi go chlebem żywota i rozumienia a wodą mądrości zbawiennej napoi go i umocni się w nim.
+$Deo gratias
+
+[Ant 3]
+Gruchnęła * mowa między uczniami, iż on uczeń nie umrze: lecz nie rzekł Jezus: Nie umrze, ale: Tak chcę, aby został aż przyjdę.
 
 [Octava 3]
 !Wspominamy oktawę św. Jana

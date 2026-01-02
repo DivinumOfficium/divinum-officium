@@ -1,0 +1,25 @@
+@Tempora/101-1
+
+[Lectio1]
+@Tempora/101-1::1-5 s/,$/./ s/-20/-19/
+
+[Responsory1]
+@Tempora/101-0
+
+[Lectio2]
+@Tempora/101-1::1 s/21-/20-/
+@Tempora/101-1:Lectio1:6
+@Tempora/101-1::2-4 s/, et accépit.*/./
+
+[Responsory2]
+@Tempora/101-0:Responsory2:1 s/ (nec .*),/\n* \u$1./
+@Tempora/101-0:Responsory2:3
+@Tempora/101-0:Responsory2:1 s/.* (nec .*),/R. \u$1./
+
+[Lectio3]
+@Tempora/101-1::1 s/24-29/23-24/
+@Tempora/101-1:Lectio2:4 s/.* (et accépit)/23 \u\1/
+@Tempora/101-1::2 s/;$/./
+
+[Responsory3]
+@TemporaOP/101-0:Responsory Vespera 1

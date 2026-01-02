@@ -1,15 +1,14 @@
-[Rank]
-Feria Tertia in Rogationibus;;Feria;;1.6
+[Officium]
+Feria Tertia in Rogationibus
 
-[Rank1960]
-Feria Tertia in Rogationibus;;Feria;;1
+[Rank]
+;;Feria;;1
 
 [Rule]
 Oratio Dominica
 Una Antiphona
 Feria Te Deum
 Laudes Litania
-Doxology=Pasc
 
 [Lectio1]
 De Epístola prima beáti Petri Apóstoli
@@ -46,15 +45,21 @@ R. Ne repéllas me a mandátis tuis, allelúja, allelúja.
 15 Nemo autem vestrum patiátur ut homicída, aut fur, aut malédicus, aut alienórum appetítor.
 16 Si autem ut Christiánus, non erubéscat: gloríficet autem Deum in isto nómine:
 17 quóniam tempus est ut incípiat judícium a domo Dei.
- 
+
 [Responsory3]
 @Tempora/Pasc4-0:Responsory6
 
 [Ant 2]
 Oportébat * pati Christum, et resúrgere a mórtuis, allelúja.
 
+[Ant 2] (rubrica cisterciensis)
+@Tempora/Pasc1-2
+
 [Oratio 2]
 @Tempora/Pasc5-0:Oratio
 
 [Ant 3]
 Exívi a Patre, * et veni in mundum: íterum relínquo mundum, et vado ad Patrem, allelúja.
+
+[Ant 3] (rubrica cisterciensis)
+@Tempora/Pasc1-2

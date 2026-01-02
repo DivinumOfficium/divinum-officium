@@ -1,10 +1,10 @@
+[Officium]
+Feria Quarta Quattuor Temporum Quadragesimæ
+
 [Rank]
-Feria Quarta Quattuor Temporum Quadragesimæ;;Feria major;;2
-
-[Rank1960]
-Feria Quarta Quattuor Temporum Quadragesimæ;;Feria major;;4
-
-[Rule]
+;;Feria major;;2.1
+(sed rubrica 196 aut rubrica 1930)
+;;Feria major;;4.9
 
 [Lectio1]
 Léctio sancti Evangélii secúndum Matthǽum

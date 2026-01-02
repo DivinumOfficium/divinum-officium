@@ -1,30 +1,26 @@
-[Rank]
-Wielka Sobota;;Feria privilegiata Duplex I classis;;7
-
-[Rule]
-Psalmi minores Dominica
-Antiphonas horas
-Omit Incipit Invitatorium Hymnus Capitulum Lectio Commemoratio Preces Suffragium Conclusion
-Limit Benedictiones, Oratio
-9 lectiones 1960
-Capitulum Versum 2 ad Laudes tantum
-Minores sine Antiphona
-Feria
+[Officium]
+Wielka Sobota
 
 [Ant Matutinum]
 W pokoju * pospołu będę spał i spoczywał.;;4
 Zamieszka * w przybytku twoim, odpocznie na górze twojej świętej.;;14
 Ciało moje * w nadziei odpoczywać będzie.;;15
-V. W pokoju pospołu.
-R. Będę spał i spoczywał.
 Podnieście się * bramy wieczne, a wnijdzie król chwały.;;23
 Wierzę, iż oglądać będę * dobro Pańskie w ziemi żyjących.;;26
 Panie * wywiodłeś z piekła duszę moją.;;29
-V. Ale ty, Panie, zmiłuj się nade mną.
-R. I wzbudź mnie, a oddam im.
 Oto Bóg mnie wspomaga, * a Pan jest obrońcą mej duszy.;;53
 W Salemie * jest miejsce jego, a mieszkanie jego na Sionie.;;75
 Jestem jak * człowiek bez pomocy: jak wolny wśród umarłych.;;87
+
+[Nocturn 1 Versum]
+V. W pokoju pospołu.
+R. Będę spał i spoczywał.
+
+[Nocturn 2 Versum]
+V. Ale ty, Panie, zmiłuj się nade mną.
+R. I wzbudź mnie, a oddam im.
+
+[Nocturn 3 Versum]
 V. W Salemie jest miejsce jego.
 R. A mieszkanie jego na Sionie.
 
@@ -43,15 +39,15 @@ Z Lamentacji Proroka Jeremiasza
 v. Jeruzalem, Jeruzalem, nawróć się do Pana Boga Twego.
 
 [Responsory1]
-R. Jako owca na zabicie jest wiedzion; a gdy złośliwie z Nim się obchodzono, nie otworzył ust swoich; wydań jest na śmierć:
+R. Jako owca na zabicie jest wiedzion; a gdy złośliwie z Nim się obchodzono, nie otworzył ust swoich; wydan jest na śmierć:
 * Aby ożywił swój naród.
 V. Wydał na śmierć duszę swoją i między złoczyńcami jest policzon.
 R. Aby ożywił swój naród.
 
 [Lectio2]
 !Lm 4:1-6
-1 Aleph. Jako pośniedziało złoto, zmieniła się barwa najlepsza, rozmiotano kamienie świątynie po rogach wszech ulic!
-2 Beth. Synowie Syońscy szlachetni i ubrani w przedniejsze złoto: jako poczytani są za naczynie skorupiane, za robotę rąk garncarzowych!
+1 Aleph. Jako pośniedziało złoto, zmieniła się barwa najlepsza, rozmiotano kamienie świątynie po rogach wszech ulic?
+2 Beth. Synowie Syońscy szlachetni i ubrani w przedniejsze złoto: jako poczytani są za naczynie skorupiane, za robotę rąk garncarzowych?
 3 Gimel. Lecz i jędze odkryły piersi, karmiły szczenięta swe: córka ludu mego okrutna, jako struś na puszczy.
 4 Daleth. Przysechł język ssącego do podniebienia jego dla upragnienia, dzieci prosiły chleba: a nie było, ktoby im ułamał.
 5 He. Którzy jadali rozkosznie, poginęli po drogach, którzy się wychowali w szarłacie, obłapiali łajna.
@@ -65,7 +61,7 @@ V. Wylewaj jako potok łzy dniem i nocą, i niech nie milczy źrenica oka twego.
 R. Gdyż w tobie zabity jest Zbawiciel Izraela.
 
 [Lectio3]
-Początek Proroka Jeremiasza
+Początek Modlitwy Proroka Jeremiasza
 !Lm 5:1-11
 1 Wspomnij Panie, co się nam przydało, wejrzyj a obacz zelżywość naszę.
 2 Dziedzictwo nasze obróciło się do cudzych, domy nasze do obcych.
@@ -100,7 +96,7 @@ V. On zniszczył więzienie piekielne, zmiażdżył potęgę szatana.
 R.	Ten który trzymał w niewoli pierwszego człowieka sam został uwięziony: dziś Zbawca nasz skruszył odrzwia i zamki śmierci.
 
 [Lectio5]
-Dokądże oni posunęli zapobiegliwość, w której się wyczerpali, której rachuby zawiodły? Aż do postawienia straży przy grobie Pana po Jego śmierci i pogrzebie. Powiedzieli więc Piłatowi: Ten zwodziciel: takiem imieniem nazwali Pana naszego Jezusa Chrystusa i to powinnoby być pociechą dla wszystkich chrześcijan, których świat szkaluje. Mówili więc Piłatowi: Żyjąc jeszcze ten zwodziciel powiedział, że po trzech dniach zmartwychwstanie. Rozkaż tedy, by pilnowano grobu do dnia trzedego z obawy, aby uczniowie jego nie przyszli, nie zabrali go i nie rzekli ludowi, że powstał z martwych: A ten błąd byłby gorszym od poprzedniego. I rzekł im Piłat: Macie straże — idźcie i pilnujcie Go, jako rozumiecie. Poszli więc i ustanowili straż przy grobie i położyli pieczęć na kamieniu i postawili żołnierzy.
+Dokądże oni posunęli zapobiegliwość, w której się wyczerpali, której rachuby zawiodły? Aż do postawienia straży przy grobie Pana po Jego śmierci i pogrzebie. Powiedzieli więc Piłatowi: Ten zwodziciel: takiem imieniem nazwali Pana naszego Jezusa Chrystusa i to powinnoby być pociechą dla wszystkich chrześcijan, których świat szkaluje. Mówili więc Piłatowi: Żyjąc jeszcze ten zwodziciel powiedział, że po trzech dniach zmartwychwstanie. Rozkaż tedy, by pilnowano grobu do dnia trzeciego z obawy, aby uczniowie jego nie przyszli, nie zabrali go i nie rzekli ludowi, że powstał z martwych: A ten błąd byłby gorszym od poprzedniego. I rzekł im Piłat: Macie straże — idźcie i pilnujcie Go, jako rozumiecie. Poszli więc i ustanowili straż przy grobie i położyli pieczęć na kamieniu i postawili żołnierzy.
 
 [Responsory5]
 R. O wy wszyscy, którzy przechodzicie przez drogę, zastanówcie się i obaczcie,
@@ -123,9 +119,9 @@ R. Oto jako sprawiedliwy umiera, a żaden nie rozważa sercem: i mężowie spraw
 Z Listu św. Pawła Apostoła do Żydów
 !Hbr 9:11-14
 11 Ale Chrystus, stawiwszy się Najwyższym kapłanem dóbr przyszłych, przez większy i doskonalszy przybytek, nie ręką uczniony, to jest, nie tego stworzenia,
-12 Ani przez krew kozłów albo cielców; ale przez własną krew wszedł raz do świątnicę, nalazłszy wieczne odkupienie. 
-13 Albowiem jeźli krew kozłów i wołów i popiół jałowice pokropiony spługawione poświęca ku oczyszczeniu ciała, 
-14 Jako daleko więcej krew Chrystusowa, który przez Ducha Świętego samego siebie ofiarował niepokalanym Bogu, oczyści sumienie nasze od martwych uczynków, ku służeniu Bogu żywiącemu? 
+12 ani przez krew kozłów albo cielców; ale przez własną krew wszedł raz do świątnicę, nalazłszy wieczne odkupienie. 
+13 Albowiem jeźli krew kozłów i wołów i popiół jałowice pokropiony spługawione poświęca ku oczyszczeniu ciała,
+14 jako daleko więcej krew Chrystusowa, który przez Ducha Świętego samego siebie ofiarował niepokalanym Bogu, oczyści sumienie nasze od martwych uczynków, ku służeniu Bogu żywiącemu?
 
 [Responsory7]
 R. Stanęli wespół królowie ziemscy, a książęta zeszli się w gromadę
@@ -149,7 +145,7 @@ R.	Stałem się jak człowiek bez pomocy, między umarłymi wolny.
 [Lectio9]
 !Hbr 9:19-22
 19 Albowiem gdy Mojżesz wszystko przykazanie zakonne przeczytał wszemu ludowi, wziąwszy krew cielców i kozłów z wodą i wełną szarłatową i izopem, same też księgi i lud wszystek pokropił,
-20 Mówiąc: Ta krew Testamentu, który do was Bóg nakazał. 
+20 mówiąc: Ta krew Testamentu, który do was Bóg nakazał. 
 21 Ktemu i przybytek i wszystko naczynie służby krwią takoż pokropił.
 22 A niemal wszystko we krwi według zakonu bywa oczyszczono, a bez rozlania krwie nie bywa odpuszczenie.
 

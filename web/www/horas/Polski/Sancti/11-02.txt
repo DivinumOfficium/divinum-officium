@@ -1,61 +1,8 @@
 [Rank]
 Wspomnienie Wszystkich Wiernych Zmarłych;;Duplex;;3;;ex C9
 
-[RankNewcal]
-Wspomnienie Wszystkich Wiernych Zmarłych;;Duplex Solemnity;;6;;ex C9
-
-[Rank1960]
+[Rank] (rubrica 196)
 Wspomnienie Wszystkich Wiernych Zmarłych;;I. classis;;6;;ex C9
-
-[Rule]
-ex C9
-Psalmi Dominica
-Antiphonas horas
-Special Conclusio
-Capitulum Versum 2 ad Laudes et Vesperas
-Omit Incipit Hymnus Capitulum Lectio Preces Commemoratio Suffragium
-Limit Benedictiones Oratio
-Requiem gloria
-9 lectiones
-Responsory9
-no Te Deum
-(rubrica 1955 aut rubrica 1960) No prima Vespera
-
-[Initial]
-$Pater noster
-$Ave Maria
-(sed rubrica 1960 aut rubrica innovata omittuntur)
-
-[Special Completorium]
-$Confiteor
-$Misereatur
-$Indulgentiam
-
-&psalm(122)
-
-&psalm(141)
-
-&psalm(142)
-
-&psalm(233)
-
-&special('Oratio mortuorum1', 'Latin')
-
-&special('Conclusio', 'Latin')
-
-[Conclusio]
-&Gloria
-V. Niech odpoczywają w pokoju.
-R. Amen.
-
-[Lectio1]
-@Commune/C9
-
-[Lectio2]
-@Commune/C9:Lectio5
-
-[Lectio3]
-@Commune/C9:Lectio8
 
 [Lectio4]
 Z księgi św. Augustyna: O obowiązkach względem zmarłych
@@ -91,7 +38,7 @@ Z Pierwszego Listu Świętego Pawła Apostoła do Koryntian
 36 Głupi, co ty siejesz, nie bywa ożywiono, jeźli pierwéj nie obumrze.
 37 I co siejesz, nie siejesz ciała, które ma być, ale gołe ziarno, jako na przykład, pszeniczne albo z inszych które.
 38 A Bóg daje mu ciało jako chce, a każdemu nasieniu własne ciało.
-39 Nie każde ciało tóż ciało; ale insze ludzkie, insze bydlęce, insze ptasze, insze rybie.
+39 Nie każde ciało toż ciało; ale insze ludzkie, insze bydlęce, insze ptasze, insze rybie.
 40 I ciała niebieskie, i ciała ziemskie; aleć insza jest ozdoba niebieskich, a insza ziemskich.
 41 Insza jasność słońca, insza jasność księżyca a insza jasność gwiazd; albowiem gwiazda od gwiazdy różna jest w jasności.
 42 Tak i zmartwychwstanie. Bywa wsiane w skazitelności, powstanie w nieskazitelności.
@@ -101,7 +48,7 @@ Z Pierwszego Listu Świętego Pawła Apostoła do Koryntian
 [Lectio9]
 !1 Kor 15:51-58
 51 Oto tajemnicę wam powiadam: Wszyscy wprawdzie zmartwycbwstaniemy, ale nie wszyscy odmienieni będziemy,
-52 Prędziuchno we mgnieniu oka, na trąbę ostateczną; (albowiem zatrąbi trąba), a umarli powstaną nieskażonymi, a my będziemy przemienieni.
+52 prędziuchno we mgnieniu oka, na trąbę ostateczną; (albowiem zatrąbi trąba), a umarli powstaną nieskażonymi, a my będziemy przemienieni.
 53 Boć musi to skazitelne przyoblec nieskazitelność: i to śmiertelne przyoblec nieśmiertelność.
 54 A gdy to śmiertelne przyoblecze nieśmiertelność, tedy się stanie mowa, która jest napisana: Pożarta jest śmierć w zwycięstwie.
 55 Gdzie jest zwycięstwo twe, o śmierci? Gdzież jest, śmierci, oścień twój?
@@ -109,10 +56,23 @@ Z Pierwszego Listu Świętego Pawła Apostoła do Koryntian
 57 Lecz dzięka Bogu, który nam dał zwycięstwo przez Pana naszego Jezusa Chrystusa.
 58 A tak, bracia moi mili, bądźcie stateczni a nieporuszeni, obfitując w robocie Pańskiéj zawsze, wiedząc, iż praca wasza nie jest próżna w Panu.
 
+[Conclusio]
+!Conclusio specialis
+&Gloria
+V. Niech odpoczywają w pokoju.
+R. Amen.
+
+[Oratio mortuorum2]
+#Oratio
+@Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
+$Oremus
+v. Wylewamy, Panie, pokorne prośby za dusze wszystkich twoich sług i służebnic; abyś łaskawie odpuścił, cokolwiek zawinili w ludzkim postępowaniu, i dobrotliwie uczynił kres ich karom.
+$Per Dominum
+
 [Special Prima]
 &special('Initial', 'Polski')
 $Credo
-(sed rubrica 1960 aut rubrica innovata omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(87)
 
@@ -122,19 +82,20 @@ $Credo
 
 &special('Oratio mortuorum2', 'Polski')
 
-&martyrologium
-
+&special('#Martyrologium', 'Polski')
+_
 V. W wiecznéj pamiątce będzie sprawiedliwy.
 R. Nie będzie się bał posłuchu złego.
 _
 $Oremus
-Boże, dawco przebaczenia i zbawienia ludzkiego miłośniku: błagamy łaskawości Twojej, abyś duszom sług i służebnic Twoich, które z tego świata zeszły, za wstawieniem się błogosławionej Marji, zawsze Panny i wszystkich Świętych Twoich, do uczestnictwa w wiecznej szczęśliwości dojść dozwolił. Przez Chrystusa Pana naszego.
-R. Amen
+v. Boże, dawco przebaczenia i zbawienia ludzkiego miłośniku: błagamy łaskawości Twojej, abyś duszom sług i służebnic Twoich, które z tego świata zeszły, za wstawieniem się błogosławionej Marji, zawsze Panny i wszystkich Świętych Twoich, do uczestnictwa w wiecznej szczęśliwości dojść dozwolił. Przez Chrystusa Pana naszego.
+$Amen
 
 &special('Conclusio', 'Polski')
 
 [Special Tertia]
 &special('Initial', 'Polski')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(37,1,11)
 
@@ -148,6 +109,7 @@ R. Amen
 
 [Special Sexta]
 &special('Initial', 'Polski')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(69)
 
@@ -161,6 +123,7 @@ R. Amen
 
 [Special Nona]
 &special('Initial', 'Polski')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(101,1,13)
 
@@ -169,5 +132,22 @@ R. Amen
 &psalm(101,24,29)
 
 &special('Oratio mortuorum', 'Polski')
+
+&special('Conclusio', 'Polski')
+
+[Special Completorium]
+$Confiteor
+$Misereatur
+$Indulgentiam
+
+&psalm(122)
+
+&psalm(141)
+
+&psalm(142)
+
+&psalm(233)
+
+&special('Oratio mortuorum1', 'Polski')
 
 &special('Conclusio', 'Polski')

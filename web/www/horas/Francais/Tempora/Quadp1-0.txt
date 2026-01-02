@@ -1,23 +1,8 @@
-[Rank]
-Dominica in Septuagesima;;Semiduplex;;5.6
-
-[Rank1960]
-Dominica in Septuagesima;;Semiduplex;;5
-
-[Rule]
-9 lectiones
-Invit2
-
-[Capitulum Vespera]
-!1 Cor 9:24
-v. Frères, ignorez-vous que dans les courses du stade, tous courent, mais qu'un seul remporte le prix ? Courez de telle sorte que vous l’obteniez.
-$Deo gratias
+[Officium]
+Dominica in Septuagesima
 
 [Ant 1]
 Le Seigneur dit à Adam : * de l’arbre qui est au milieu du Paradis, ne mange pas ; à l’heure où tu en mangeras, tu mourras de mort.
-
-[Versum 1]
-@Psalterium/Major Special:Day6 Versum 3
 
 [Oratio]
 Les prières de Votre peuple, nous Vous demandons, Seigneur, de les exaucer avec clémence, afin que, justement affligés à cause de nos péchés, nous soyons miséricordieusement libérés pour la gloire de Votre nom.
@@ -156,22 +141,22 @@ Vous êtes béni * au firmament du ciel, et louable à travers les siècles, not
 Louez * le Seigneur, du haut des cieux.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!1 Cor 9:24
+v. Frères : Ne savez-vous pas que ceux qui courent dans le stade courent tous, mais qu’un seul remporte le prix ? Courez de manière à le remporter.
+$Deo gratias
+
+[Versum 2] (nisi rubrica cisterciensis)
+V. Seigneur vous êtes devenu notre refuge.
+R. De génération en génération.
 
 [Ant 2]
 Le royaume des cieux est semblable * à un père de famille qui est sorti dès le matin afin de louer des ouvriers pour sa vigne, dit le Seigneur.
-
-[Versum 2]
-@Psalterium/Major Special:Day02 Versum 2
 
 [Ant Prima]
 Étant convenu * avec les ouvriers d’un denier par jour, il les envoya à sa vigne.
 
 [Ant Tertia]
 Allez, vous aussi, * à ma vigne, et je vous donnerai ce qui est juste.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Ant Sexta]
 Pourquoi vous tenez-vous ainsi * tout le jour oisifs ? Ils répondirent : Parce que personne ne nous a embauchés.
@@ -191,6 +176,3 @@ $Deo gratias
 
 [Ant 3]
 Le Père de famille * dit à ses ouvriers : pourquoi vous tenez-vous ici tout le jour oisifs ? Mais eux lui répondirent : parce que personne ne nous a embauchés. Allez donc, vous aussi, à ma vigne et je vous donnerai ce qui est juste.
-
-[Versum 3]
-@Psalterium/Major Special:Day0 Versum 3

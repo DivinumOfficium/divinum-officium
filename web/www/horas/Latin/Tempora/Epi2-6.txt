@@ -1,5 +1,8 @@
+[Officium]
+Sabbato infra Hebdomadam II post Epiphaniam
+
 [Rank]
-Sabbato infra Hebdomadam II post Epiphaniam;;Feria;;1
+;;Feria;;1
 
 [Rule]
 Oratio Dominica
@@ -18,21 +21,6 @@ R. Misericórdiam et judícium cantábo tibi, Dómine:
 V. Perambulábam in innocéntia cordis mei, in médio domus meæ.
 R. Psallam et intéllegam in via immaculáta, quando vénies ad me.
 
-[Responsory2]
-R. Dómine, exáudi oratiónem meam, et clamor meus ad te pervéniat: 
-* Quia non spernis, Deus, preces páuperum.
-V. Fiant aures tuæ intendéntes in oratiónem servi tui.
-R. Quia non spernis, Deus, preces páuperum.
-
-[Responsory3]
-R. Velóciter exáudi me, Deus, 
-* Quia defecérunt sicut fumus dies mei: 
-* Tu autem idem ipse es, et anni tui non defícient.
-V. Dies mei sicut umbra declinavérunt, et ego sicut fœnum árui.
-R. Quia defecérunt sicut fumus dies mei.
-&Gloria
-R. Tu autem idem ipse es, et anni tui non defícient.
-
 [ResponsoryT1]
 @Tempora/Epi2-3:Responsory1
 
@@ -44,6 +32,12 @@ R. Tu autem idem ipse es, et anni tui non defícient.
 8 Non enim póssumus áliquid advérsus veritátem, sed pro veritáte. 
 9 Gaudémus enim, quóniam nos infírmi sumus, vos autem poténtes estis. Hoc et orámus vestram consummatiónem.
 
+[Responsory2]
+R. Dómine, exáudi oratiónem meam, et clamor meus ad te pervéniat: 
+* Quia non spernis, Deus, preces páuperum.
+V. Fiant aures tuæ intendéntes in oratiónem servi tui.
+R. Quia non spernis, Deus, preces páuperum.
+
 [ResponsoryT2]
 @Tempora/Epi2-3:Responsory2
 
@@ -53,6 +47,15 @@ R. Tu autem idem ipse es, et anni tui non defícient.
 11 De cétero, fratres, gaudéte, perfécti estóte, exhortámini, idem sápite, pacem habéte, et Deus pacis et dilectiónis erit vobíscum. 
 12 Salutáte ínvicem in ósculo sancto. Salútant vos omnes sancti. 
 13 Grátia Dómini nostri Jesu Christi, et cáritas Dei, et communicátio Sancti Spíritus sit cum ómnibus vobis. Amen.
+
+[Responsory3]
+R. Velóciter exáudi me, Deus, 
+* Quia defecérunt sicut fumus dies mei: 
+* Tu autem idem ipse es, et anni tui non defícient.
+V. Dies mei sicut umbra declinavérunt, et ego sicut fœnum árui.
+R. Quia defecérunt sicut fumus dies mei.
+&Gloria
+R. Tu autem idem ipse es, et anni tui non defícient.
 
 [ResponsoryT3]
 @Tempora/Epi2-3:Responsory3

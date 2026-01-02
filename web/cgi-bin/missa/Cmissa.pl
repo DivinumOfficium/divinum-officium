@@ -5,7 +5,7 @@ use utf8;
 # Name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office
-package missa;
+package main;
 
 #1;
 #use warnings;
@@ -25,28 +25,40 @@ use Time::Local;
 use locale;
 use lib "$Bin/..";
 use DivinumOfficium::Main qw(liturgical_color);
+use DivinumOfficium::LanguageTextTools
+  qw(prayer translate load_languages_data omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
 $error = '';
 $debug = '';
 
-our $Tk = 0;
-our $Hk = 0;
-our $Ck = 0;
+our $Ck = 1;
 our $NewMass = 1;
 our $missa = 1;
 our $officium = 'Cmissa.pl';
 
-@versions =
-  ('Ambrosian', 'Mozarabic', 'Sarum', 'Dominican', 'Trident 1570', 'Divino Afflatu', 'Rubrics 1960', 'Rubrics 1967', 'New Mass');
-%ordos = split(',',
-      "Mozarabic,OrdoM,Sarum,OrdoS,Ambrosian,OrdoA,Dominican,OrdoOP,Trident 1570,Ordo,"
-    . "Divino Afflatu,Ordo,Rubrics 1960,Ordo,Rubrics 1967,Ordo67,New Mass,OrdoN");
+@versions = (
+  'Ambrosian',
+  'Mozarabic',
+  'Sarum',
+  'Dominican',
+  'Tridentine - 1570',
+  'Divino Afflatu - 1939',
+  'Divino Afflatu - 1954',
+  'Rubrics 1960 - 1960',
+  'Rubrics 1967',
+  'New Mass',
+);
+%ordos = split(
+  ',',
+  "Mozarabic,OrdoM,Sarum,OrdoS,Ambrosian,OrdoA,Dominican,OrdoOP,Tridentine - 1570,Ordo,"
+    . "Divino Afflatu - 1939,Ordo,Divino Afflatu - 1954,Ordo,Rubrics 1960 - 1960,Ordo,Rubrics 1967,Ordo67,New Mass,OrdoN",
+);
 
 #***common variables arrays and hashes
 #filled  getweek()
 our @dayname;    #0=Advn|Natn|Epin|Quadpn|Quadn|Pascn|Pentn 1=winner title|2=other title
 
-#filled by getrank()
-our $winner;     #the folder/filename for the winner of precedence
+#filled by occurence()
+our $winner;          #the folder/filename for the winner of precedence
 our $commemoratio;    #the folder/filename for the commemorated
 our $scriptura;       #the folder/filename for the scripture reading (if winner is sancti)
 our $commune;         #the folder/filename for the used commune
@@ -59,31 +71,31 @@ our $commemorated;    #name of the commemorated for Vigils
 our $comrank = 0;     #rank of the commemorated office
 
 #filled by precedence()
-our %winner;          #the hash of the winner
-our %commemoratio;    #the hash of the commemorated
-our %scriptura;       #the hash for the scriptura
-our %commune;         # the hash of the commune
-our (%winner2, %commemoratio2, %commune2);    #same for 2nd column
-our $rule;                                    # $winner{Rank}
-our $communerule;                             # $commune{Rank}
-our $duplex;                                  #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex
-    # 4= duplex majus, 5 = duplex II classis 6=duplex I classes 7=above  0=none
+our %winner;                                 #the hash of the winner
+our %commemoratio;                           #the hash of the commemorated
+our %scriptura;                              #the hash for the scriptura
+our %commune;                                # the hash of the commune
+our (%winner2, %commemoratio2, %commune2);   #same for 2nd column
+our $rule;                                   # $winner{Rank}
+our $communerule;                            # $commune{Rank}
+our $duplex;                                 #1=simplex-feria, 2=semiduplex-feria privilegiata, 3=duplex
+                                             # 4= duplex majus, 5 = duplex II classis 6=duplex I classes 7=above  0=none
 
 #*** collect standard items
 #require "ordocommon.pl";
-require "$Bin/../horas/do_io.pl";
+require "$Bin/../DivinumOfficium/SetupString.pl";
 require "$Bin/../horas/horascommon.pl";
-require "$Bin/../horas/dialogcommon.pl";
+require "$Bin/../DivinumOfficium/dialogcommon.pl";
 require "$Bin/../horas/webdia.pl";
-require "$Bin/../horas/setup.pl";
+require "$Bin/../DivinumOfficium/setup.pl";
 require "$Bin/ordo.pl";
 require "$Bin/propers.pl";
 
 binmode(STDOUT, ':encoding(utf-8)');
 $q = new CGI;
 
-our ($version1, $version2, $lang1, $lang2, $expand, $column, $accented);
-our %translate;     #translation of the skeleton label for 2nd language
+our ($version1, $version2, $lang1, $lang2, $langfb, $expand, $column, $accented);
+our %translate;    #translation of the skeleton label for 2nd language
 
 #get parameters
 getini('missa');    #files, colors
@@ -96,21 +108,18 @@ if (!$setupsave) {
   getcookies('missagc', 'generalc');
 }
 
-set_runtime_options('generalc'); #$expand, $version, $lang2
-set_runtime_options('parameters'); # priest, lang1 ... etc
+set_runtime_options('generalc');      #$expand, $version, $lang2
+set_runtime_options('parameters');    # priest, lang1 ... etc
 
 if ($command eq 'changeparameters') { getsetupvalue($command); }
 
+#print "Content-type: text/html; charset=utf-8\n\n"; #<= uncomment for debuggin "Internal Server Errors"
 setcookies('missap', 'parameters');
 setcookies('missagc', 'generalc');
 
 # save parameters
 $setupsave = savesetup(1);
 $setupsave =~ s/\r*\n*//g;
-
-our $sanctiname = 'Sancti';
-our $temporaname = 'Tempora';
-our $communename = 'Commune';
 
 our $command = strictparam('command');
 our $hora = $command;    #Matutinum, Laudes, Prima, Tertia, Sexta, Nona, Vespera, Completorium
@@ -130,31 +139,23 @@ $expandnum = strictparam('expandnum');
 
 $only = ($lang1 eq $lang2 && $version1 eq $version2) ? 1 : 0;
 
-setmdir($version1);
-precedence($winner);    #fills our hashes et variables
+#*** print pages (setup, hora=pray, mainpage)
+#generate HTML
+htmlHead($title, 'startup()');
+
+$version = $version2;
+precedence();    #fills our hashes et variables
+setsecondcol();
+$version = $version1;
+precedence();    #fills our hashes et variables
 our $psalmnum1 = 0;
 our $psalmnum2 = 0;
-
-# prepare title
-$daycolor = liturgical_color($dayname[1], $commune);
-build_comment_line();
 
 #prepare main pages
 $title = "Sancta Missa Comparison";
 
-#*** print pages (setup, hora=pray, mainpage)
-#generate HTML
-htmlHead($title, 2);
-print << "PrintTag";
-<BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" onload="startup();">
-<script>
-// https redirect
-if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com" || location.hostname == "www.divinumofficium.com")) {
-    location.replace(`https:\${location.href.substring(location.protocol.length)}`);
-}
-</script>
-<FORM ACTION="$officium" METHOD=post TARGET=_self>
-<P ALIGN=CENTER>
+print <<"PrintTag";
+<P ALIGN="CENTER">
 <A HREF="Cmissa.pl?searchvalue=2&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Incipit]</A>&nbsp;&nbsp;
 <A HREF="Cmissa.pl?searchvalue=11&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Missa Catechumenorum]</A>&nbsp;&nbsp;
 <A HREF="Cmissa.pl?searchvalue=16&lang1=$lang1&lang2=$lang2&version1=$version1&version2=$version2">[Offertorium]</A>&nbsp;&nbsp;
@@ -164,11 +165,11 @@ if (location.protocol !== 'https:' && (location.hostname == "divinumofficium.com
 PrintTag
 
 if ($command !~ /setup/i) {
-  print "<P ALIGN=CENTER>";
-  print option_selector("Version 1", "parchange();", $version1, @versions );
+  print "<P ALIGN='CENTER'>";
+  print option_selector("Version 1", "parchange();", $version1, @versions);
   print option_selector("lang1", "parchange();", $lang1, qw(Latin English));
   print option_selector("lang2", "parchange();", $lang2, qw(Latin English));
-  print option_selector("Version 2", "parchange();", $version2, @versions );
+  print option_selector("Version 2", "parchange();", $version2, @versions);
 }
 
 if ($command =~ /setup(.*)/is) {
@@ -180,16 +181,17 @@ if ($command =~ /setup(.*)/is) {
   $command =~ s/(pray|change|setup)//ig;
   $title = $command;
   $hora = $command;
-  $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
+  $background = ($whitebground) ? ' class="contrastbg"' : '';
   $head = $title;
   headline($head);
-  print << "PrintTag";
+  load_languages_data($lang1, $lang2, $langfb, $version, $missa);
+  print <<"PrintTag";
 <TABLE BORDER=0 WIDTH=80% ALIGN=CENTER><TR>
 <TD ALIGN=CENTER><FONT COLOR=MAROON>$version1</FONT></TD><TD ALIGN=CENTER><FONT COLOR=MAROON>$version2</FONT></TD>
 </TR></TABLE>
 PrintTag
   ordo();
-  print << "PrintTag";
+  print <<"PrintTag";
 <P ALIGN=CENTER>
 <INPUT TYPE=submit NAME='button' VALUE='Æquiparantia persoluta' onclick="okbutton();">
 </P>
@@ -200,14 +202,14 @@ PrintTag
 } else {    #mainpage
   $pmode = 'main';
   $command = "";
-  $height = floor($screenheight * 4 / 12);
+  $height = floor($screenheight * 6 / 12);
   $height2 = floor($height / 2);
-  $background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
+  $background = ($whitebground) ? ' class="contrastbg"' : '';
   headline($title);
-  print << "PrintTag";
+  print <<"PrintTag";
 <P ALIGN=CENTER>
 <TABLE BORDER=0 HEIGHT=$height><TR>
-<TD><IMG SRC="$htmlurl/missa.jpg" HEIGHT=$height></TD>
+<TD><IMG SRC="$htmlurl/missa.png" HEIGHT=$height></TD>
 </TR></TABLE>
 <BR>
 </P>
@@ -216,7 +218,7 @@ PrintTag
 
 #common widgets for main and hora
 if ($pmode =~ /(main|hora)/i) {
-  print << "PrintTag";
+  print <<"PrintTag";
 <P ALIGN=CENTER>
 <A HREF="missa.pl">1962 only</A>
 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -235,7 +237,7 @@ PrintTag
     $buildscript =~ s/\n/<BR>/g;
     $buildscript =~ s/\_//g;
     $buildscript =~ s/\,\,\,/\&nbsp\;\&nbsp\;\&nbsp\;/g;
-    print << "PrintTag";
+    print <<"PrintTag";
 <TABLE BORDER=3 ALIGN=CENTER WIDTH=60% CELLPADDING=8><TR><TD ID=L$searchind>
 $buildscript
 </TD></TR><TABLE><BR>
@@ -247,7 +249,7 @@ PrintTag
 if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT><\P>\n"; }
 if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT><\P>\n"; }
 $command =~ s/(pray|setup)//ig;
-print << "PrintTag";
+print <<"PrintTag";
 <INPUT TYPE=HIDDEN NAME=setupm VALUE="$setupsave">
 <INPUT TYPE=HIDDEN NAME=command VALUE="$command">
 <INPUT TYPE=HIDDEN NAME=searchvalue VALUE="0">
@@ -262,13 +264,8 @@ PrintTag
 #*** hedline($head) prints headline for main and pray
 sub headline {
   my $head = shift;
-  my $width = ($only) ? 100 : 50;
-  $daycolor = liturgical_color($dayname[1], $commune);
-  $comment = '';
-  $headline = setheadline();
-  $headline =~ s{!(.*)}{$1}s;
-  print "<P ALIGN=CENTER>" . "<FONT COLOR=$daycolor>$headline</FONT>" . "<BR>$comment</P>\n";
-  print << "PrintTag";
+  print "<P ALIGN=CENTER>" . html_dayhead(setheadline()) . "\n";
+  print <<"PrintTag";
 <P ALIGN=CENTER>
 <FONT COLOR=MAROON SIZE=+1><B><I>$head</I></B></FONT>
 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -284,10 +281,7 @@ PrintTag
 #*** Javascript functions
 # the sub is called from htmlhead
 sub horasjs {
-  print << "PrintTag";
-
-<SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>
-
+  qq(
 //position
 function startup() {
   var i = 1;
@@ -400,7 +394,5 @@ function prevnext(ch) {
   }
   document.forms[0].date.value = m + "-" + d + "-" + y;
 }
-
-</SCRIPT>
-PrintTag
+)
 }

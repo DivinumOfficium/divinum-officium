@@ -1,5 +1,5 @@
-[Rank]
-Dominica II Passionis seu in Palmis;;I classis Semiduplex;;6
+[Officium]
+Dominica II Passionis seu in Palmis
 
 [Rule]
 no Gloria
@@ -81,7 +81,7 @@ R. In the name of Christ. Amen.
 _
 v. The multitude goeth forth to meet our Redeemer with flowers and palms, and payeth the homage due to a triumphant Conqueror: the Gentiles proclaim the Son of God; and their voices thunder through the skies in praise of Christ: Hosanna in the highest!
 _
-v. Let the faithful join with the Angels and children singing to the Conqueror of death: Hosanna in the higest!  	
+v. Let the faithful join with the Angels and children singing to the Conqueror of death: Hosanna in the highest!  	
 _
 v. A great multitude that was met together at the festival cried out to the Lord: Blessed is He that cometh in the Name of the Lord: Hosanna in the highest!
 _
@@ -121,7 +121,7 @@ _
 _
 v. We are strewn with the shining palms before the Lord as He approacheth; let us all run to meet Him with hymns and songs, glorify Him and say: Blessed be the Lord!
 _
-v. Hail, our King, O Son of David, O world's Redeemer, whom prophets did foretell as the Saviour to come of the house of Israel.  For the Father sent Thee into the world as victim for salvation; from the beginning of the world all the saints awaited Thee: Hosanna now to the Son of David!  Belssed be He who cometh in the name of the Lord.  Hosanna in the highest.
+v. Hail, our King, O Son of David, O world's Redeemer, whom prophets did foretell as the Saviour to come of the house of Israel.  For the Father sent Thee into the world as victim for salvation; from the beginning of the world all the saints awaited Thee: Hosanna now to the Son of David! Blessed be He who cometh in the name of the Lord.  Hosanna in the highest.
 _
 _
 ! If the procession has gone outside, it may be custom in some places for the subdeacon to knock thrice on the door of the church with the shaft of the processional cross.  The door is opened, and the procession enters the church, singing:
@@ -178,23 +178,16 @@ V. You who fear the Lord, praise Him: all you descendants of Jacob, give glory t
 V. There shall be declared to the Lord a generation to come: and the heavens shall show forth His justice.
 V. To a people that shall be born, which the Lord has made.
 
-[Munda Cor Passionis]
-Ó omnipotente Deus, assim como purificastes os lábios do Profeta Isaías com uma brasa de fogo, assim também purificais agora o meu coração e os meus lábios. Dignai-Vos, pela vossa benigna misericórdia, purificar-me inteiramente, para que possa dignamente anunciar o vosso Evangelho. Amen.
-D. Dignai-Vos, Senhor, abençoar-me.
-S. Que o Senhor esteja no vosso coração e nos vossos lábios, para que possa digna e devidamente anunciar seu Evangelho. Amen.
-Em nome do Pai, e do Filho e do ++ Espírito Santo.
-D. Amen.
-
-[Evangelium1]
-The Passion of Our Lord Jesus Christ according to Matthew.
-!Mt. 26:36-75; 27:1-60.
-
 [Evangelium]
 @:Munda Cor Passionis
 _
 v.~
 @:Evangelium1
 @Tempora/Quad6-0:Evangelium3
+
+[Evangelium1]
+The Passion of Our Lord Jesus Christ according to Matthew.
+!Mt. 26:36-75; 27:1-60.
 
 [Offertorium]
 !Sl 68:21 - 22.
@@ -212,3 +205,8 @@ Father, if this cup cannot pass away, unless I drink it, Your will be done.
 By the working of this sacred rite, O Lord, may our sins be erased and our just desires fulfilled.
 $Per Dominum
 
+[Munda Cor Passionis]
+Ó omnipotente Deus, assim como purificastes os lábios do Profeta Isaías com uma brasa de fogo, assim também purificais agora o meu coração e os meus lábios. Dignai-Vos, pela vossa benigna misericórdia, purificar-me inteiramente, para que possa dignamente anunciar o vosso Evangelho. Amen.
+D. Dignai-Vos, Senhor, abençoar-me.
+S. Que o Senhor esteja no vosso coração e nos vossos lábios, para que possa digna e devidamente anunciar seu Evangelho. Amen.
+Em nome do Pai, e do Filho e do ++ Espírito Santo. Amen.

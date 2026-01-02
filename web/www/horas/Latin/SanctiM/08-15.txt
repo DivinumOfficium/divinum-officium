@@ -1,44 +1,39 @@
-@Sancti/08-15
+@SanctiM/08-15t
 
-[Rank]
-Assumptione Beatae Mariae Virginis;;Duplex I classis;;6.5;;ex C11
+[Rank] (rubrica cisterciensis)
+In Assumptione Beatæ Mariæ Virginis;;Duplex I classis cum Octava Communi;;6;;ex C11
 
 [Rule]
 12 lectiones
 Doxology=Nat
 
-[Capitulum Vespera]
+[Responsory Vespera 1] (rubrica Barroux)
+@Sancti/08-15t:Responsory1
+
+[Responsory Vespera] (rubrica cisterciensis)
+@Sancti/08-15t:Responsory Breve Tertia
+
+[Hymnus Vespera]
+@Sancti/08-15:Hymnus Vespera:s/Jesu, tibi sit glória/Glória tibi, Dómine/
+
+[Versum 1] (rubrica cisterciensis)
+@CommuneCist/C10:Versum 1a
+
+[Ant 1] (rubrica cisterciensis)
+Ascéndit Christus * super cœlos, et præparávit suæ castíssimæ Matri immortalitátis locum; et hæc est illa præclára festívitas ómnium Sanctórum festivitátibus incomparábilis, in qua gloriósa et felix, mirántibus cœléstis cúriæ ordínibus, ad æthéreum pervénit thálamum, quo pia sui mémorum ímmemor nequáquam exístat.
+
+[Oratio]
 @Sancti/08-15
-_
-@Sancti/08-15:Responsory Sexta:1-6
 
-[HymnusM Vespera]
-@:Hymnus Vespera:s/Jesu, tibi sit glória/Glória tibi, Dómine/
-
-[AntMatutinumM]
-Sicut lætántium * ómnium nostrum habitátio est in te, † sancta Dei Génetrix.;;86
-
-[Ant Matutinum 3N]
-Hortus conclúsus * es Dei Génitrix, hortus conclúsus, fons signátus: † surge própera, amíca mea, et veni.
-
-[Ant Matutinum]
-@Sancti/08-15t::1-3
-@Sancti/08-15t::6-7
-@CommuneM/C11:AntMatutinumM:1
-@Sancti/08-15t::4-5
-@CommuneM/C11:AntMatutinumM:2
-@:AntMatutinumM:1
-@Sancti/08-15t::11-13
-@CommuneM/C11:AntMatutinumM:3
-@Sancti/08-15t::9-10
-;;249;250;251
-@Sancti/08-15t::14-15
+[Hymnus Matutinum]
+@Sancti/08-15
 
 [Lectio1]
 @Sancti/08-15:Lectio1:s/-15/-12/ s/.13 .*//s
 
 [Lectio2]
-@Sancti/08-15:Lectio1:s/9-15/13-15/ s/9 .* 13 /13 /s
+@Sancti/08-15:Lectio1:2 s/9-/13-/
+@Sancti/08-15:Lectio1:7-9
 
 [Lectio3]
 @Sancti/08-15:Lectio2
@@ -46,79 +41,61 @@ Hortus conclúsus * es Dei Génitrix, hortus conclúsus, fons signátus: † sur
 [Lectio4]
 @Sancti/08-15:Lectio3
 
-[Responsory4]
-R. Super salútem et omnem pulchritúdinem dilécta es a Dómino, † et Regína cælórum vocári digna es
-* Gaudent chori angelórum consórtes et concíves nostri.
-V. Sola namque sine exémplo placuísti fémina Christo.
-R. Gaudent chori angelórum consórtes et concíves nostri.
-
 [Lectio5]
 @Sancti/08-15:Lectio4
-
-[Responsory5]
-@Commune/C11:Responsory6:s/.&Gloria.R./ */s
 
 [Lectio6]
 @Sancti/08-15:Lectio5
 
-[Responsory6]
-@Commune/C11:Responsory8
-
 [Lectio7]
 @Sancti/08-15:Lectio6:s/ Itaque.*//s
-
-[Responsory7]
-@Commune/C11:Responsory3
 
 [Lectio8]
 @Sancti/08-15:Lectio6:s/.* Itaque/Itaque/s
 
-[Responsory8]
-R. Ista est speciósa inter filias Jerúsalem, † sicut vidístis eam plenam caritáte et dilectióne
-* In cubílibus et in hortis arómatum.
-V. Ista est quæ ascéndit de desérto delíciis áffluens.
-R. In cubílibus et in hortis arómatum.
-
 [Lectio9]
 @Sancti/08-15:Lectio7:s/ Nec .*//s
-
-[Responsory9]
-@Sancti/08-15:Responsory7
 
 [Lectio10]
 @Sancti/08-15:Lectio7:s/.* Nec /Nec /s
 
-[Responsory10]
-@Sancti/08-15:Responsory8
-
 [Lectio11]
 @Sancti/08-15:Lectio8
-
-[Responsory11]
-R. Hódie María virgo cælos ascéndit: gaudéte
-* Quia cum Christo regnat in ætérnum.
-V. Assúmpta est María in cælum: † gaudent Angeli laudántes benedícunt Dóminum.
-R. Quia cum Christo regnat in ætérnum.
 
 [Lectio12]
 @Sancti/08-15:Lectio9
 
-[Responsory12]
-@Commune/C11:Responsory7
-
-[Ant Laudes]
-@Sancti/08-15t:Ant Vespera:s/;;.*//g
-
 [Capitulum Laudes]
-@Sancti/08-15:Capitulum Vespera
-_
-@Sancti/08-15t:Responsory Nona:s/._.*//s
+@Sancti/08-15
+(sed rubrica cisterciensis)
+@Sancti/08-15t
 
-[Responsory Tertia]
+[Responsory Laudes] (rubrica cisterciensis)
+@CommuneCist/C11
+
+[Hymnus Laudes]
+@Sancti/08-15
+(sed rubrica cisterciensis)
+@Commune/C11
+
+[Versum 2] (rubrica cisterciensis)
 @:Versum 1
 
-[Responsory Sexta]
-@Sancti/08-15t:Responsory Tertia:8-9
+[Responsory TertiaM] (rubrica cisterciensis)
+@Sancti/08-15t:Versum 1
 
-[Responsory Nona]
-@Sancti/08-15t:Responsory Sexta:8-9
+[Capitulum Sexta]
+@Sancti/08-15
+(sed rubrica cisterciensis)
+@Sancti/01-23AV
+
+[Capitulum Nona]
+@Sancti/08-15
+(sed rubrica cisterciensis)
+@Sancti/01-23AV
+
+[Hymnus Vespera 3] (nisi rubrica cisterciensis)
+@Commune/C11:Hymnus Vespera
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1

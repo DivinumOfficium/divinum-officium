@@ -1,11 +1,17 @@
-[Rank]
-Sabbato Quattuor Temporum Septembris;;Feria major;;2
+[Officium]
+Sabbato Quattuor Temporum Septembris
 
-[Rank1960]
-Sabbato Quattuor Temporum Septembris;;Feria major;;4
+[Rank]
+;;Feria major;;2.1
+(sed rubrica 196 aut rubrica 1930)
+;;Feria major;;4.9
 
 [Rule]
 Preces feriales
+
+[Oratio]
+Omnípotens sempitérne Deus, qui per continéntiam salutárem corpóribus medéris et méntibus: majestátem tuam súpplices exorámus; ut pia jejunántium deprecatióne placátus, et præséntia nobis subsídia tríbuas, et futúra. 
+$Per Dominum
 
 [Lectio1]
 Léctio sancti Evangélii secúndum Lucam
@@ -34,6 +40,5 @@ Venit ante legem, quia per naturálem intelléctum quid unusquísque exémplo su
 [Ant 2]
 Illúmina, Dómine, * sedéntes in ténebris et umbra mortis, et dírige pedes nostros in viam pacis.
 
-[Oratio]
-Omnípotens sempitérne Deus, qui per continéntiam salutárem corpóribus medéris et méntibus: majestátem tuam súpplices exorámus; ut pia jejunántium deprecatióne placátus, et præséntia nobis subsídia tríbuas, et futúra. 
-$Per Dominum
+[Ant 2] (rubrica cisterciensis)
+In viam * pacis dírige nos, Dómine.

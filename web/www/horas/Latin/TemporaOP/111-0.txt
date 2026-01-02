@@ -1,0 +1,17 @@
+@Tempora/111-0
+
+[Lectio2]
+@Commune/C1a:Lectio2:s/\. [^.]*././s
+
+[Lectio3]
+@Commune/C1a:Lectio3:1 s/10-/9-/
+@Commune/C1a:Lectio2:6 s/.*?\./9 /
+@Commune/C1a:Lectio3:2-3
+@Commune/C1a:Lectio3:4 s/: .*/./
+
+[Responsory2]
+@Tempora/111-0:Responsory3
+
+[Responsory3]
+@Tempora/111-0:Responsory7:1-3 s/\n\* (.*,) (.)/\l$1\n* \u$2/
+@Tempora/111-0:Responsory7:2 s/(.*,) (.)/R. \u$2/

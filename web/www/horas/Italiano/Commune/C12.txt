@@ -1,81 +1,30 @@
-[Name]
+[Officium]
 Officium parvum Beatae Mariae Virginis
 
-[Rank]
-Officium parvum Beatae Mariae Virginis;;Simplex;;1;;ex C11
+[Hymnus minor_]
 
-[Oratio 2]
-v. O Dio che, all'annuncio dell'Angelo, volesti che il Verbo prendesse carne nel seno della Beata Vergine Maria, concedi a noi supplichevoli che mentre la crediamo vera Madre di Dio, siamo aiutati presso di te dalla sua intercessione.
-$Per eumdem
-
-[Pre oratio]
-
-#Oratio
+#Hymnus
+v. Ricordati, o Creatore delle cose,
+che nascendo un giorno
+dal seno purissimo della Vergine,
+prendesti un corpo simile al nostro.
 _
-v. Signore, pietà di noi. Cristo, pietà di noi. Signore, pietà di noi.
-(sed rubrica 1955 aut rubrica 1960 omittitur)
-&Dominus_vobiscum
-$Oremus
-
-[Special Completorium]
-#Incipit
+r. Maria, Madre di grazia
+e di misericordia,
+Tu dal nemico salvaci
+e nella morte accoglici.
 _
-$Ave Maria
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
-V. Convertici, +++ o Dio, nostro salvatore.
-R. E allontana da noi la tua ira.
-$Deus in adjutorium
-&Alleluia
-
-#Psalmi
-&psalm(128)
-
-&psalm(129)
-
-&psalm(130)
-
-@:Hymnus minor
-
-#Capitulum
-!Sir 24:24
-v. Io sono la Madre del vero amore, e del timore, e della scienza, e della santa speranza.  
-$Deo gratias
-_
-V. Prega per noi, o Santa Madre di Dio.
-R. Affinché siam fatti degni delle promesse di Cristo.
-
-#Canticum Nunc dimittis
-Ant.  Sotto la tua protezione * cerchiamo rifugio, Santa Madre di Dio: non disprezzare le suppliche di noi che siamo nella prova, ma liberaci da ogni pericolo, o Vergine gloriosa e benedetta.
-&psalm(233)
-Ant.  Sotto la tua protezione * cerchiamo rifugio, Santa Madre di Dio: non disprezzare le suppliche di noi che siamo nella prova, ma liberaci da ogni pericolo, o Vergine gloriosa e benedetta.
-
-@:Pre oratio
-v. Ti preghiamo, o Signore, affinché la gloriosa intercessione della beata e glorio sa Vergine Maria ci protegga e conduca alla vita eterna.
-$Per Dominum
-
-#Conclusio
-&Dominus_vobiscum
-&Benedicamus_Domino
-Benedictio. Ci benedica e custodisca l'onnipotente e misericordioso Signore, + il Padre, e il Figlio, e lo Spirito Santo.
-R. Amen.
-
-&antiphona_finalis
-V. Il divin aiuto + sia sempre con noi.
-R. Amen.
-
-$Pater noster
-$Ave Maria
-$Credo
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
-
-[Ant Matutinum]
-@Commune/C11::s/V\. .*/V. La grazia è cosparsa sulle tue labbra./g s/R\. .*/R. Perciò Iddio ti ha benedetta in eterno./g
+r. O Gesù, sia gloria a te,
+che sei nato dalla Vergine,
+insieme con il Padre e lo Spirito Santo,
+per i secoli eterni.
+Amen.
 
 [Lectio1]
 !Sir 24:11-13
 11 E de' grandi tutti, e dei piccoli soggiogai i cuori con mia possanza, e tra tutti questi cercai dove posarmi, e fisserò mia dimora nell'eredità del Signore.
 12 Allora il Creatore di tutte le cose ordinò, e parlò a me, e quegli, che mi creò stabilì il mio tabernacolo:
-13 E mi disse: abita con Giacobbe, e tuo retaggio sia Israele, e tue radici getta ne' miei eletti 
+13 E mi disse: abita con Giacobbe, e tuo retaggio sia Israele, e tue radici getta ne' miei eletti
 
 [Lectio2]
 !Sir 24:15-16
@@ -116,56 +65,22 @@ Bella sei tu e graziosa, o figlia di Gerusalemme, terribile come esercito schier
 v. La videro le figlie di Sion e la proclamarono beata, e le regine l'hanno lodata.
 $Deo gratias
 
-[Hymnus minor]
-
-#Hymnus
-v. Ricordati, o Creatore delle cose,
-che nascendo un giorno
-dal seno purissimo della Vergine,
-prendesti un corpo simile al nostro.
-_
-Maria, Madre di grazia
-e di misericordia,
-Tu dal nemico salvaci
-e nella morte accoglici.
-_
-O Gesù, sia gloria a te,
-che sei nato dalla Vergine,
-insieme con il Padre e lo Spirito Santo,
-per i secoli eterni.
-Amen.
+[Oratio 2]
+v. O Dio che, all'annuncio dell'Angelo, volesti che il Verbo prendesse carne nel seno della Beata Vergine Maria, concedi a noi supplichevoli che mentre la crediamo vera Madre di Dio, siamo aiutati presso di te dalla sua intercessione.
+$Per eumdem
 
 [Capitulum Prima]
 !Cantico dei Cantici 6:9
 v. Chi è costei che sale come l'aurora che sorge, bella come la luna, fulgida come il sole, terribile come esercito schierato?
 $Deo gratias
 
-[Oratio Prima]
-v. Signore, pietà di noi. Cristo, pietà di noi. Signore, pietà di noi.
-$Qui vivis
-
-[Capitulum Tertia]
-!Sir 24:15
-v. E così ebbi stabile dimora in Sion, e nella città santa trovai anche il mio riposo, e in Gerusalemme la mia potenza.
-$Deo gratias
-
 [Oratio Tertia]
 v. O Dio, il quale con la feconda Verginità della beata Maria, hai procurato al genere umano la grazia della salute eterna: fa che sperimentiamo a favor nostro l'intercessione di colei, per cui abbiamo meritato di ricevere l'autore della vita, il Signor nostro Gesù Cristo, tuo Figlio:
 $Qui tecum
 
-[Capitulum Sexta]
-!Sir 24:16
-v. E misi radici in mezzo al popolo glorioso, che ha la sua eredità nel dominio del mio Dio, e la mia dimora è nell'assemblea dei santi.
-$Deo gratias
-
 [Oratio Sexta]
 v. Porgi, o misericordioso Iddio, sostegno alla nostra fragilità: affinché noi, che celebriamo la memoria della Santa Madre di Dio; con l'aiuto della sua intercessione possiamo sorgere dalle nostre iniquità. 
 $Per eumdem
-
-[Capitulum Nona]
-!Sir 24:19
-v. Nelle piazze ho mandato profumo come la cannella e il balsamo aromatico: ho emanato soave profumo come di mirra squisita.
-$Deo gratias
 
 [Oratio Nona]
 v. Signore, ti preghiamo di perdonare i delitti ai tuoi servi; affinché siamo fatti salvi per l'intercessione della Madre del tuo Unigenito, giacché nol possiamo essere pei meriti delle nostre azioni.
@@ -174,3 +89,18 @@ $Qui tecum
 [Verse Nona]
 V. Dopo il parto, o Vergine, sei rimasta inviolata.
 R. Madre di Dio, intercedi per noi.
+
+[Ant Completorium]
+Ant.  Sotto la tua protezione * cerchiamo rifugio, Santa Madre di Dio: non disprezzare le suppliche di noi che siamo nella prova, ma liberaci da ogni pericolo, o Vergine gloriosa e benedetta.
+
+[Capitulum Completorium_]
+!Sir 24:24
+v. Io sono la Madre del vero amore, e del timore, e della scienza, e della santa speranza.  
+$Deo gratias
+_
+V. Prega per noi, o Santa Madre di Dio.
+R. Affinché siam fatti degni delle promesse di Cristo.
+
+[Oratio Completorium]
+v. Ti preghiamo, o Signore, affinché la gloriosa intercessione della beata e glorio sa Vergine Maria ci protegga e conduca alla vita eterna.
+$Per Dominum

@@ -1,13 +1,19 @@
+[Officium]
+Die III infra octavam Pentecostes
+
 [Rank]
-Die III infra octavam Pentecostes;;Duplex I classis;;7;;ex Pasc7-0
+;;Duplex I classis;;7;;ex Pasc7-0
 
 [Rule]
 ex Pasc7-0;
 1 nocturn;
 Psalmi Dominica;
 Antiphonas horas
-Hymnus Tertia
 No commemoration
+
+[Oratio]
+Adsit nobis, quǽsumus, Dómine, virtus Spíritus Sancti: quæ et corda nostra cleménter expúrget, et ab ómnibus tueátur advérsis.
+$Per Dominum eiusdem
 
 [Ant Matutinum]
 @Tempora/Pasc7-0::s/V\. .*/V. Spíritus Paráclitus, allelúja.\nR. Docébit vos ómnia, allelúja./s
@@ -45,9 +51,7 @@ Quid de istis dicam? Ecce ipsi pharisǽi legébant, et in eo quod legébant, Chr
 [Ant 2]
 Ego sum óstium, * dicit Dóminus: per me si quis introíerit, salvábitur, et páscua invéniet, allelúja.
 
-[Oratio]
-Adsit nobis, quǽsumus, Dómine, virtus Spíritus Sancti: quæ et corda nostra cleménter expúrget, et ab ómnibus tueátur advérsis.
-$Per Dominum eiusdem
-
 [Ant 3]
 Pacem * relínquo vobis, pacem meam do vobis: non quómodo mundus dat, ego do vobis, allelúja.
+(sed rubrica cisterciensis aut rubrica praedicatorum)
+Amen, dico vobis, * qui non intrat per óstium in ovíle óvium, sed ascéndit aliúnde, ille fur est, et latro: qui autem intrat per óstium, pastor est óvium, allelúia.

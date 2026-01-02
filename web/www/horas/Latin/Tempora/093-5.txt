@@ -1,12 +1,17 @@
-[Rank]
-Feria Sexta Quattuor Temporum Septembris;;Feria major;;2
+[Officium]
+Feria Sexta Quattuor Temporum Septembris
 
-[Rank1960]
-Feria Sexta Quattuor Temporum Septembris;;Feria major;;4
+[Rank]
+;;Feria major;;2.1
+(sed rubrica 196 aut rubrica 1930)
+;;Feria major;;4.9
 
 [Rule]
 Preces feriales
-no Secunda Vespera(rubrica tridentina aut rubrica divino)
+
+[Oratio] (nisi ad vesperam aut rubrica 196)
+Præsta, quǽsumus, omnípotens Deus: ut observatiónes sacras ánnua devotióne recoléntes, et córpore tibi placeámus, et mente.
+$Per Dominum
 
 [Lectio1]
 Léctio sancti Evangélii secúndum Lucam
@@ -35,9 +40,8 @@ Capíllis ergo pedes Dómini térgimus, quando sanctis ejus, quibus ex caritáte
 [Ant 2]
 Múlier, * quæ erat in civitáte peccátrix, stans retro secus pedes Dómini, lácrimis cœpit rigáre pedes ejus et capíllis cápitis sui tergébat, et deosculabátur pedes ejus et unguénto ungébat.
 
-[Oratio]
-Præsta, quǽsumus, omnípotens Deus: ut observatiónes sacras ánnua devotióne recoléntes, et córpore tibi placeámus, et mente.
-$Per Dominum
+[Ant 2] (rubrica cisterciensis)
+In diébus illis: * Múlier, quæ erat in civitáte peccátrix, ut cognóvit quod Jesus accubuísset in domo Simónis leprósi, attúlit alabástrum unguénti: et stans retro secus pedes Dómini Jesu, lácrimis cœpit rigáre pedes ejus, et capíllis cápitis sui tergébat, et osculabátur pedes ejus, et unguénto ungébat.
 
-[Ant 3]
+[Ant 3] (rubrica 196)
 @:Ant 2

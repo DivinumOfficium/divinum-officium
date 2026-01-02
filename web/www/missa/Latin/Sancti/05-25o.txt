@@ -1,25 +1,35 @@
+[Officium]
+S. Urbanis Papæ et Martyris
+
 [Rank]
-S. Urbani Papæ et Martyris;;Simplex;;1.1;;vide C2
+;;Simplex;;1.1;;vide C2b
 
 [Rule]
-vide C2;
+vide C2b;
 Gloria
 
+[Name]
+Urbáno
+(sed rubrica 1960)
+Urbánum
+Secreta=Urbáno
+(sed rubrica tridentina)
+Secreta=Urbáni
+Postcommunio=Urbáni
+(sed rubrica tridentina)
+Postcommunio=Urbáno
+
 [Oratio]
-Deus, qui Ecclésiam tuam, in apostólicæ petræ soliditáte fundátam, ab infernárum~
-éruis terróre portárum: præsta, quǽsumus; ut, intercedénte beáto Urbáno Mártyre~
-tuo atque Summo Pontífice, in tua veritáte persístens, contínua securitáte~
-muniátur.
-$Per Dominum
+Da, quǽsumus, omnipotens Deus: ut qui beati Urbani Martyris tui atque Pontificis solemnia colimus, ejus apud te intercessionibus adjuvemur.
+$Per Dominum.
 
-[Secreta]
-Múnera, quæ tibi, Dómine, lætántes offérimus, súscipe benígnus, et præsta: ut,~
-intercedénte beáto Urbáno, Ecclésia tua et fídei integritáte lætétur, et~
-témporum tranquillitáte semper exsúltet.
-$Per Dominum
+[Oratio] (communi Summorum Pontificum)
+@Commune/C2b:Oratio pro commemoratio
+(sed rubrica 196)
+@Commune/C2b
 
-[Postcommunio]
-Multíplica, quǽsumus, Dómine, in Ecclesia tua spíritum grátiæ, quem dedísti: ut~
-beáti Urbáni Martyris tui atque Summi Pontíficis deprecatióne nec pastóri~
-obœdiéntia gregis nec gregi desit cura pastóris.
-$Per Dominum
+[Secreta] (communi Summorum Pontificum)
+@Commune/C2b:Secreta pro commemoratio
+
+[Postcommunio] (communi Summorum Pontificum)
+@Commune/C2b:Postcommunio pro commemoratio

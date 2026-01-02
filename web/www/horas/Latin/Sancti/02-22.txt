@@ -1,8 +1,12 @@
-[Rank]
-In Cathedra S. Petri Apostoli Antiochiæ;;Duplex majus;;4;;ex C4
+[Officium]
+In Cathedra S. Petri Apostoli Antiochiæ
+(sed rubrica 196 aut rubrica 1930 aut rubrica cisterciensis)
+In Cathedra S. Petri Apostoli
 
-[Rank](rubrica 1960)
-In Cathedra S. Petri Apostoli;;Duplex II classis;;5;;ex C4
+[Rank]
+;;Duplex majus;;4;;ex C4
+(sed rubrica 196)
+;;Duplex II classis;;5;;ex C4
 
 [Rule]
 ex C4;
@@ -14,16 +18,18 @@ Sub unica concl
 Psalm5 Vespera=116
 Psalm5 Vespera3=131
 
-[HymnusM Laudes]
-v. Jam bone Pastor Petre, clemens áccipe
-Vota precántum, et peccáti víncula
-Resólve tibi potestáte trádita,
-Qua cunctis cælum verbo claudis, áperis.
+[Hymnus Vespera]
+v. Quodcúmque in orbe néxibus revínxeris,
+Erit revínctum, Petre, in arce síderum:
+Et quod resólvit hic potéstas trádita,
+Erit solútum cæli in alto vértice;
+In fine mundi judicábis sǽculum.
 _
-Sit Trinitáti sempitérna glória,
-Honor, potéstas, atque jubilátio,
-In unitáte, cui manet impérium,
-Ex tunc et modo, per ætérna sǽcula.
+Patri perénne sit per ævum glória,
+Tibíque laudes concinámus ínclitas,
+Ætérne Nate; sit, supérne Spíritus,
+Honor tibi decúsque: sancta júgiter
+Laudétur omne Trínitas per sǽculum.
 Amen.
 
 [HymnusM Vespera]
@@ -40,20 +46,6 @@ Sit Trinitáti salus indivídua,
 Per infiníta sæculórum sǽcula.
 Amen.
 
-[Hymnus Vespera]
-v. Quodcúmque in orbe néxibus revínxeris,
-Erit revínctum, Petre, in arce síderum:
-Et quod resólvit hic potéstas trádita,
-Erit solútum cæli in alto vértice;
-In fine mundi judicábis sǽculum.
-_
-Patri perénne sit per ævum glória,
-Tibíque laudes concinámus ínclitas,
-Ætérne Nate; sit, supérne Spíritus,
-Honor tibi decúsque: sancta júgiter
-Laudétur omne Trínitas per sǽculum.
-Amen.
-
 [Versum 1]
 V. Tu es Petrus.
 R. Et super hanc petram ædificábo Ecclésiam meam.
@@ -66,19 +58,6 @@ Deus, qui beáto Petro Apóstolo tuo, collátis clávibus regni cæléstis, lig�
 $Qui vivis
 _
 @Sancti/02-22:Commemoratio4
-
-[Commemoratio4]
-!Commemoratio S. Pauli Apostoli
-(deinde dicuntur)
-Ant. Sancte Paule Apostóle, prædicátor veritátis et doctor Géntium, intercéde pro nobis ad Deum, qui te elégit.
-_
-V. Tu es vas electiónis, sancte Paule Apostóle.
-R. Prædicátor veritátis in univérso mundo.
-_
-$Oremus
-(sed rubrica 1960 aut rubrica monastica hæc versus omittuntur)
-v. Deus, qui multitúdinem géntium beáti Pauli Apóstoli prædicatióne docuísti: da nobis, quǽsumus; ut, cujus commemoratiónem cólimus, ejus apud te patrocínia sentiámus.
-$Per Dominum
 
 [Invit]
 Tu es pastor óvium, Princeps Apostolórum: * Tibi trádidit Deus claves regni cælórum.
@@ -152,7 +131,7 @@ V. Caro et sanguis non revelávit tibi, sed Pater meus, qui est in cælis.
 R. Et tu aliquándo convérsus confírma fratres tuos.
 
 [Lectio6]
-Quod natális ergo Cáthedræ hódie cólitur, sacerdotále honorátur offícium. Sibi hoc Ecclésiæ ínvicem præstant, quia tanto necésse plus habet Ecclésia dignitatis, quanto sacerdotále offícium plus honóris. Cum solemnitátem hanc Ecclésiis mérito religiósa observátio introdúxerit, miror, cur apud quosdam infideles hódie tam perniciósus error incréverit, ut super túmulos defunctórum cibos et vina conférant, quasi egréssæ de corpóribus ánimæ carnáles cibos requírant.
+Quod natális ergo Cáthedræ hódie cólitur, sacerdotále honorátur offícium. Sibi hoc Ecclésiæ ínvicem præstant, quia tanto necésse plus habet Ecclésia dignitatis, quanto sacerdotále offícium plus honóris. Cum solemnitátem hanc Ecclésiis mérito religiósa observátio introdúxerit, miror, cur apud quosdam infidéles hódie tam perniciósus error incréverit, ut super túmulos defunctórum cibos et vina conférant, quasi egréssæ de corpóribus ánimæ carnáles cibos requírant.
 
 [Responsory6]
 R. Petre, amas me? Tu scis, Dómine, quia amo te.
@@ -178,7 +157,7 @@ V. Beátus es, Simon Bar-Jona, quia caro et sanguis non revelávit tibi, sed Pat
 R. Et ego dico tibi, quia tu es Petrus, et super hanc petram ædificábo Ecclésiam meam.
 
 [Lectio8]
-Et ego, inquit, dico tibi: hoc est, sicut Pater meus tibi manifestávit divinitátem meam, ita et ego tibi notam fácio excelléntiam tuam, quia tu es Petrus: id est, cum ego sim inviolábilis petra, ego lapis anguláris, qui fácio útraque unum, ego fundaméntum præter quod nemo potest áliud pónere: tamen tu quoque petra es, quia mea virtúte solidáris, ut quæ mihi potestáte sunt própria, sint tibi mecum participatióne commúnia. Et super hanc petram ædificábo Ecclésiam meam, et portæ ínferi non prævalébunt advérsus eam. Super hanc, ínquit, fortitúdinem ætérnum éxstruam templum: et Ecclésiæ meæ cælo inserénda sublímitas, in hujus fídei firmitáte consúrget.
+Et ego, inquit, dico tibi: hoc est, sicut Pater meus tibi manifestávit divinitátem meam, ita et ego tibi notam fácio excelléntiam tuam, quia tu es Petrus: id est, cum ego sim inviolábilis petra, ego lapis anguláris, qui fácio útraque unum, ego fundaméntum præter quod nemo potest áliud pónere: tamen tu quoque petra es, quia mea virtúte solidáris, ut quæ mihi potestáte sunt própria, sint tibi mecum participatióne commúnia. Et super hanc petram ædificábo Ecclésiam meam, et portæ ínferi non prævalébunt advérsus eam. Super hanc, inquit, fortitúdinem ætérnum éxstruam templum: et Ecclésiæ meæ cælo inserénda sublímitas, in hujus fídei firmitáte consúrget.
 
 [Responsory8]
 R. Elégit te Dóminus sacerdótem sibi, ad sacrificándum ei
@@ -192,6 +171,9 @@ R. Hóstiam laudis.
 Hanc confessiónem portæ ínferi non tenébunt, mortis víncula non ligábunt: vox enim ista vox vitæ est. Et sicut confessóres suos in cæléstia próvehit, ita negatóres ad inférna demérgit. Propter quod dicit beatíssimo Petro: Tibi dabo claves regni cælórum: Et quæcúmque ligáveris super terram, erunt ligáta et in cælis: et quæcúmque sólveris super terram, erunt solúta et in cælis. Transívit quidem étiam in álios Apóstolos vis potestátis istíus, et ad omnes Ecclésiæ príncipes decréti hujus constitútio commeávit: sed non frustra uni commendátur, quod ómnibus intimátur. Petro enim ídeo hoc singuláriter créditur, quia cunctis Ecclésiæ rectóribus Petri forma præpónitur. Manet ergo Petri privilégium, ubicúmque ex ipsíus fertur æquitáte judícium. Nec nímia est vel sevéritas vel remíssio, ubi nihil erit ligátum, nihil solútum, nisi quod beátus Petrus aut sólverit, aut ligáverit.
 &teDeum
 
+[Versum 0]
+@:Versum 2
+
 [Hymnus Laudes]
 v. Beáte Pastor, Petre, clemens áccipe
 Voces precántum, criminúmque víncula
@@ -201,7 +183,19 @@ _
 Sit Trinitáti sempitérna glória,
 Honor, potéstas atque jubilátio,
 In unitáte, quæ gubérnat ómnia,
-Per univérsa sæculórum sǽcula.
+Per univérsa æternitátis sǽcula.
+Amen.
+
+[HymnusM Laudes]
+v. Jam bone Pastor Petre, clemens áccipe
+Vota precántum, et peccáti víncula
+Resólve tibi potestáte trádita,
+Qua cunctis cælum verbo claudis, áperis.
+_
+Sit Trinitáti sempitérna glória,
+Honor, potéstas, atque jubilátio,
+In unitáte, cui manet impérium,
+Ex tunc et modo, per ætérna sǽcula.
 Amen.
 
 [Versum 2]
@@ -215,5 +209,21 @@ Quodcúmque * ligáveris super terram, erit ligátum et in cælis; et quodcúmqu
 V. Elégit te Dóminus sacerdótem sibi.
 R. Ad sacrificándum ei hóstiam laudis.
 
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
+
 [Ant 3]
 @Commune/C4:Ant 3 summi Pontificis
+
+[Commemoratio4]
+!Commemoratio S. Pauli Apostoli
+(deinde dicuntur)
+Ant. Sancte Paule Apóstole, prædicátor veritátis et doctor Géntium, intercéde pro nobis ad Deum, qui te elégit.
+_
+V. Tu es vas electiónis, sancte Paule Apóstole.
+R. Prædicátor veritátis in univérso mundo.
+_
+$Oremus
+(sed rubrica 196 hæc versus omittuntur)
+v. Deus, qui multitúdinem géntium beáti Pauli Apóstoli prædicatióne docuísti: da nobis, quǽsumus; ut, cujus commemoratiónem cólimus, ejus apud te patrocínia sentiámus.
+$Per Dominum

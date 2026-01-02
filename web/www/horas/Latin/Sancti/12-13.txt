@@ -1,16 +1,26 @@
+[Officium]
+S. Luciæ Virginis et Martyris
+
 [Rank]
-S. Luciæ Virginis et Martyris;;Duplex;;3;;vide C6b
+;;Duplex;;3;;vide C6
+(sed rubrica 1930)
+;;Duplex majus;;4;;ex C6
+(sed rubrica cisterciensis)
+;;Semiduplex;;2.2;;ex C6
 
 [Rule]
-vide C6b;
+vide C6;
 9 lectiones;
 Doxology=Nat
 Commemoratio3
+in 3 Nocturno Lectiones ex Commune in 2 loco;
 
 [Rule] (rubrica 1570)
-vide C6b;
+vide C6;
 9 lectiones;
-Commemoratio3
+
+[Name]
+Lúciæ Vírginis et Mártyris tuæ
 
 [Ant Vespera]
 Oránte sancta Lúcia, * appáruit ei beáta Agatha, et consolabátur ancíllam Christi.;;109
@@ -23,11 +33,7 @@ Soror mea, Lúcia, * virgo Deo devóta, quid a me petis, quod ipsa póteris præ
 In tua patiéntia * possedísti ánimam tuam, Lúcia, sponsa Christi: odísti quæ in mundo sunt, et coruscas cum Angelis: sánguine proprio inimícum vicisti.
 
 [Oratio]
-@Commune/C7::s/N\./Lúciæ Vírginis et Mártyris tuæ/
-
-[Commemoratio 2] (rubrica 1910 aut rubrica divino)
-!Commemoratio Diei infra Octavam Immaculatæ Conceptionis B.M.V.
-@Sancti/12-08:Oratio
+@Commune/C7a
 
 [Lectio4]
 Lúcia virgo Syracusana, genere et christiana fide ab infántia nobilis, una cum matre Eutychia, quæ sánguinis fluxu laborabat, Cátanam ad venerándum corpus beátæ Agathæ venit: quæ ad ejus sepúlcrum cum suppliciter orasset, Agathæ intercessióne matri sanitátem impetrávit. Statim vero matrem exorávit, ut quam dotem sibi datura esset, Christi paupéribus tribui paterétur. Ut ígitur Syracusas rediit, omnem pecúniam, quam ex facultátibus venditis redegerat, paupéribus distríbuit.
@@ -39,7 +45,7 @@ V. Sicut per me cívitas Catanénsium sublimátur a Christo, ita per te Syracus�
 R. Quia jucúndum Deo in tua virginitáte habitáculum præparásti.
 
 [Lectio5]
-Quod ubi rescivísset is, cui eam paréntes contra Vírginis voluntátem desponderant, apud Paschasium præfectum Lúciam, quod christiana esset, accusávit. Quam ille cum nec precibus, nec minis ad cultum idolórum posset perducere; immo tanto magis incensam vidéret ad celebrandas christianæ fidei laudes, quanto magis ipse eam a senténtia avértere conabátur: Cessábunt, inquit, verba, cum véntum erit ad verbera. Cui Virgo: Dei servis verba deésse non possunt, quibus a Christo Dómino dictum est: Cum steteritis ante reges et præsides, nolíte cogitare quómodo aut quid loquámini; dábitur enim vobis in illa hora quid loquámini; non enim vos estis qui loquímini, sed Spíritus Sanctus, qui lóquitur in vobis.
+Quod ubi rescivísset is, cui eam paréntes contra Vírginis voluntátem desponderant, apud Paschasium præfectum Lúciam, quod christiana esset, accusávit. Quam ille cum nec precibus, nec minis ad cultum idolórum posset perducere; immo tanto magis incensam vidéret ad celebrandas christianæ fidei laudes, quanto magis ipse eam a senténtia avértere conabátur: Cessábunt, inquit, verba, cum ventum erit ad verbera. Cui Virgo: Dei servis verba deésse non possunt, quibus a Christo Dómino dictum est: Cum steteritis ante reges et præsides, nolíte cogitare quómodo aut quid loquámini; dábitur enim vobis in illa hora quid loquámini; non enim vos estis qui loquímini, sed Spíritus Sanctus, qui lóquitur in vobis.
 
 [Responsory5]
 R. Rogávi Dóminum meum Jesum Christum, ut ignis iste non dominétur mei: 
@@ -51,7 +57,7 @@ R. Et impetrávi a Dómino inducias martyrii mei.
 Quam cum Paschasius interrogasset, Estne in te Spíritus Sanctus? respóndit: Caste et pie vivéntes templum sunt Spíritus Sancti. At ille, Jubébo te ad lupánar duci, ut te Spíritus Sanctus déserat. Cui virgo: Si invitam jusseris violari, castitas mihi duplicábitur ad corónam. Quare Paschasius ira inflammatus, Lúciam eo trahi jussit, ubi ejus virginitas violarétur: sed divinitus factum est, ut firma virgo ita consísteret, ut nulla vi de loco dimoveri posset. Quam ob rem præfectus circum ipsam, pice, resína, ac fervénti oleo perfusam, ignem accéndi imperávit: sed cum ne flamma quidem eam læderet, multis tormentis excruciátæ guttur gládio transfígitur. Quo vulnere accepto, Lúcia prædícens Ecclésiæ tranquillitátem, quæ futura erat Diocletiáno et Maximiáno mórtuis, Idibus Decembris spíritum Deo réddidit. Cujus corpus Syracusis sepúltum, deínde Constantinopolim, postremo Venetias translátum est.
 
 [Responsory6]
-R. Gráta facta est a Dómino in certámine, quia apud Deum et apud hómines glorificáta est: in conspéctu príncipis loquebátur sapiéntiam: 
+R. Grata facta est a Dómino in certámine, quia apud Deum et apud hómines glorificáta est: in conspéctu príncipis loquebátur sapiéntiam: 
 * Et Dóminus ómnium diléxit eam.
 V. Adjuvábit eam Deus vultu suo: Deus in médio ejus, non commovébitur.
 R. Et Dóminus ómnium diléxit eam.
@@ -61,20 +67,14 @@ R. Et Dóminus ómnium diléxit eam.
 [Lectio94]
 Lúcia virgo Syracusána, génere et christiána fide nóbilis, Cátanæ ad beátæ Agathæ sepúlcrum, Eutýchiæ matris, sánguinis fluxu laborántis, sanitátem impetrávit. Mox bona ómnia quæ in dotem esset acceptúra, a matre impetráta, paupéribus distríbuit. Quare apud Paschásium præféctum, quod Christiána esset, accusáta, nec blandítiis nec minis addúci pótuit, ut idólis sacrificáret. Tunc Paschásius ira inflammátus, Lúciam eo trahi jussit, ubi ejus virgínitas violarétur; sed divínitus factum est, ut firma Virgo ita consísteret, ut nulla vi de loco dimovéri posset. Quam ob rem præféctus circum ipsam ignem accéndi imperávit; sed cum ne flamma quidem eam lǽderet, multis torméntis excruciátæ guttur gládio transfígitur. Quo vúlnere accépto, Lúcia, prædícens Ecclésiæ tranquillitátem, quæ futúra erat Diocletiáno et Maximiáno mórtuis, idibus decémbris spíritum Deo réddidit. Cujus corpus Syracúsis sepúltum, deínde Constantinópolim, postrémo Venétias translátum est.
 
-[Lectio7]
-@Commune/C7:Lectio7
-
 [Responsory7]
 @Commune/C6:Responsory4
-
-[Lectio8]
-@Commune/C7:Lectio8
 
 [Responsory8]
 @Commune/C6:Responsory5
 
-[Lectio9]
-@Commune/C7:Lectio9
+[Versum 0]
+@Commune/C6::s/N\./Lúcia/
 
 [Ant Laudes]
 @:Ant Vespera:s/;;.*//g

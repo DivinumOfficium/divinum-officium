@@ -1,0 +1,27 @@
+@Tempora/Adv1-1
+
+[In Finem Lectio]
+@TemporaOP/Quad5-0
+
+[Lectio1]
+@Tempora/Adv1-2
+@:In Finem Lectio
+
+[Responsory1]
+@Tempora/Adv1-0::1 s/ \*// s/ \*// s/ \*/\n*/
+@Tempora/Adv3-0:Responsory7:3
+@Tempora/Adv1-0::1 s/.* \*/\nR./
+
+[Lectio2]
+@Tempora/Adv1-2
+@:In Finem Lectio
+
+[Responsory2]
+@Tempora/Adv1-0
+
+[Lectio3]
+@Tempora/Adv1-2
+@:In Finem Lectio
+
+[Responsory3]
+@TemporaOP/Adv1-0:Responsory2

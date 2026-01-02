@@ -1,0 +1,9 @@
+[Lectio1]
+@Tempora/Quad6-1::s/ But Mary.*//s
+
+[Lectio2]
+@Tempora/Quad6-1:Lectio1:s/.* (?=But Mary)//s s/$/~/
+@Tempora/Quad6-1::s/ The word.*/./
+
+[Lectio3]
+@Tempora/Quad6-1:Lectio2:s/.* (The word)/\u$1/s s/ Wipe.*//

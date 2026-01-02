@@ -1,9 +1,5 @@
-[Rank]
-S. Josephi Calasanctii Confessoris;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5;
-Gloria
+[Officium]
+Św. Józefa Kalasantego Wyznawcy
 
 [Comment]
 # 27 VIII – Św. Józefa Kalasantego, Wyznawcy
@@ -24,7 +20,7 @@ Boże, który przez świętego Józefa, Twego Wyznawcę, raczyłeś zesłać Ko�
 $Per Dominum
 
 [Lectio]
-@Commune/C2:Lectio
+@Commune/C2a:Lectio
 
 [Graduale]
 !Ps 36:30-31

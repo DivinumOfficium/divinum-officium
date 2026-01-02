@@ -1,19 +1,18 @@
+[Officium]
+Dominica III Post Pascha
+
 [Rank]
-Dominica III Post Pascha;;Semiduplex;;5;;
+;;Semiduplex;;5;;
 
 [Rule]
 9 Lectiones
 Duplex
 Una Antiphona
 
-[Capitulum Vespera]
-@Tempora/Pasc3-0:Capitulum Vespera
-
-[Versum 1]
-@Psalterium/Major Special:Pasch Versum 3
-
 [Ant 1]
 @Tempora/Pasc3-0:Ant 1
+(sed rubrica cisterciensis)
+@Tempora/Pasc3-0:Ant 1 Cist
 
 [Oratio]
 @Tempora/Pasc3-0:Oratio
@@ -70,16 +69,12 @@ Una Antiphona
 @Tempora/Pasc3-0:Lectio9
 
 [Capitulum Laudes]
-@:Capitulum Vespera
-
-[Versum 2]
-@Psalterium/Major Special:Pasch Versum 2
+@Tempora/Pasc3-0
 
 [Ant 2]
 @:Ant 1
-
-[Capitulum Tertia]
-@:Capitulum Vespera
+(sed rubrica cisterciensis)
+@Tempora/Pasc3-0:Ant 1
 
 [Capitulum Sexta]
 @Tempora/Pasc3-0:Capitulum Sexta
@@ -87,8 +82,7 @@ Una Antiphona
 [Capitulum Nona]
 @Tempora/Pasc3-0:Capitulum Nona
 
-[Versum 3]
-@Psalterium/Major Special:Pasch Versum 3
-
 [Ant 3]
 @Tempora/Pasc3-0:Ant 3
+(sed rubrica cisterciensis)
+@Tempora/Pasc3-0:Ant 3:s/^Amen/Amen, amen/

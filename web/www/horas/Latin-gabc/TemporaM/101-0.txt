@@ -1,0 +1,11 @@
+[Lectio1]
+@Tempora/101-0:Lectio1:s/-7/-3/ s/4 .*//s
+
+[Lectio2]
+@Tempora/101-0:Lectio1:s/.*!/!/s s/1-/4-/ s/1 [^M].*4 /4 /s
+
+[Lectio7]
+@Tempora/101-0:Lectio6:s/Quanta .*//s
+
+[Lectio8]
+@Tempora/101-0:Lectio6:s/.* Quanta /Quanta /s

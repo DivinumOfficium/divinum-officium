@@ -1,16 +1,8 @@
-[Name]
-Commune Plurimorum Martyrum
+[Officium]
+Commune Plurimorum Martyrum Pontificum
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
-
-[Capitulum Vespera]
-!Wis 3:1-3
-v. Az igazak lelke azonban Isten kezében van, és gyötrelem nem érheti őket. Az esztelenek szemében úgy látszott, hogy meghaltak; a világból való távozásukat balsorsnak vélték, elmenetelüket megsemmisülésnek. De békességben vannak.
-$Deo gratias.
+[Missa]
+Intret in conspectu
 
 [Hymnus Vespera]
 {:H-Sanctorummeritis:}v. Társak, zengje szavunk szentek erényeit,
@@ -51,8 +43,9 @@ R. Magasztaljátok Őt tisztaszivűek
 [Ant 1]
 Azoké a mennyek országa * akik megvetik a földi életet, kitartanak a mennyei jutalom reményeben és ruhájukat a Bárány vérében mossák meg
 
-[Invit]
-Az Úr a vértanúk királya * jöjjetek imádjuk
+[Oratio]
+Kerünk Uram, hogy szent vértanúid és főpapjaid, N. és N.  ünneplése javunkra váljon, és tiszteletük imáikba ajánljon minket.
+$Per Dominum
 
 [Hymnus Matutinum]
 {:H-Christoprofusum:}v. Krisztus kiontott vére
@@ -81,9 +74,17 @@ Könyörgő kis szolgáidat
 Mind az örök időkön át.
 Ámen.
 
+[Nocturn 2 Versum]
+V. Az igazak örüljenek Isten színe előtt
+R. Ujjongjanak örömükben.
+
+[Nocturn 3 Versum]
+V. Az igazaké az örök élet
+R. Az Úrnál van a jutalmuk
+
 [Lectio1]
 Olvasmány szent Pál apostol Rómaiakhoz írott leveléből
-!Rom 8:12-19
+!Róm 8:12-19
 12 Így tehát, testvérek, nem vagyunk a testnek lekötelezve, hogy a test szerint éljünk.
 13 Mert ha test szerint éltek, biztosan meghaltok, de ha lélekkel megölitek a test szerinti tetteket, élni fogtok.
 14 Akiket Isten Lelke vezérel, azok Isten fiai.
@@ -94,7 +95,7 @@ Olvasmány szent Pál apostol Rómaiakhoz írott leveléből
 19 Maga a természet sóvárogva várja Isten fiainak megnyilvánulását.
 
 [Lectio2]
-!Rom 8:28-34
+!Róm 8:28-34
 28 Tudjuk azt is, hogy akik Istent szeretik, azoknak minden javukra válik, hiszen ő saját elhatározásából választotta ki őket.
 29 Akiket ugyanis eleve ismert, azokat eleve arra rendelte, hogy Fiának képmását öltsék magukra, így lesz ő elsőszülött a sok testvér között.
 30 Akiket előre erre rendelt, azokat meg is hívta, akiket meghívott, azokat megigazulttá tette, akiket pedig megigazulttá tett, azokat meg is dicsőítette.
@@ -104,7 +105,7 @@ Olvasmány szent Pál apostol Rómaiakhoz írott leveléből
 34 Ki ítél el? Krisztus Jézus, aki meghalt, sőt fel is támadt, és az Isten jobbján közbenjár értünk?
 
 [Lectio3]
-!Rom 8:35-39
+!Róm 8:35-39
 35 Ki szakíthat el bennünket Krisztus szeretetétől? Nyomor vagy szükség? Üldöztetés vagy éhínség, ruhátlanság, életveszély vagy kard?
 36 Amint meg van írva: Minket minden időben teérted irtanak, s vágójuhok módjára tartanak.
 37 De mindezeken diadalmaskodunk őáltala, aki szeret minket.
@@ -113,11 +114,12 @@ Olvasmány szent Pál apostol Rómaiakhoz írott leveléből
 
 [Lectio7]
 Evangélium szent Lukács Evangélista kőnyvéből
-!Luke 21:9-19
+!Lk 21:9-19
 Azon időben így szólt Jézus tanitványaihoz: Amikor háborúkról és lázadásokról hallotok, ne rémüldözzetek. Ilyeneknek kell előbb történniük, de ezzel még nincs itt a vég! És így tovább.
 _
+
 [Capitulum Laudes]
-!Wis 3:1-3
+!Bölcs 3:1-3
 v. Az igazak lelke azonban Isten kezében van, és gyötrelem nem érheti őket. Az esztelenek szemében úgy látszott, hogy meghaltak; a világból való távozásukat balsorsnak vélték, elmenetelüket megsemmisülésnek. De békességben vannak.
 $Deo gratias
 
@@ -150,78 +152,58 @@ R. Ujjongjanak nyugvóhelyükön!
 [Ant 2]
 A fejeteken a hajszálakat * is mind számon tartja. Ne féljetek hát! Sokkal többet értek ti, mint a verebek.
 
-[Oratio]
-Isten, ki megengeded nekünk hogy szent vértanúid N. és N. születésnapját ünnepeljük, add, hogy majd egykor részesedhessünk örökkétartó boldogságukban
-$Per Dominum
-
-[Oratio1]
-Kerünk Uram, hogy szent vértanúid és főpapjaid, N. és N.  ünneplése javunkra váljon, és tiszteletük imáikba ajánljon minket.
-$Per Dominum
-
-[Oratio2]
-Isten, aki megőrvendeztetsz mindket szent vértanúid mennyei születésnapjának évenkint megismétlődő ünneplésével, add meg nekünk hogy akik érdemeit unnepeljük, azok példáját követhessük
-$Per Dominum
-
 [Lectio Prima]
-!Wis 3:7-8
+!Bölcs 3:7-8
 v. Látogatásuk idején majd felragyognak, és olyanok lesznek, mint a szikra, amely a tarlón tovaharapódzik. Nemzetek fölött ítélkeznek majd és népeken uralkodnak; s az Úr lesz a királyuk mindörökre.
 
-[Capitulum Tertia]
-!Wis 3:1-3
-v. Az igazak lelke azonban Isten kezében van, és gyötrelem nem érheti őket. Az esztelenek szemében úgy látszott, hogy meghaltak; a világból való távozásukat balsorsnak vélték, elmenetelüket megsemmisülésnek. De békességben vannak.
-$Deo gratias.
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Vigadjatok az Úrban igazak, örüljetek
 R. Vigadjatok az Úrban igazak, örüljetek
 V. Ujjongjatok mindnyájan, tiszta szívűek!
 R. Igazak örüljetek,
 &Gloria
 R. Vigadjatok az Úrban igazak, örüljetek,
-_
-V. Az igazak örüljenek Isten színe előtt
-R. Ujjongjanak örömükben.
 
 [Capitulum Sexta]
-!Wis 10:17
+!Bölcs 10:17
 v. Az igazaknak megadta a jutalmat fáradozásaikért, vezette őket csodás utakon, és nappal hajlékul szolgált nekik, éjjel meg csillagfényül.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Az igazak örüljenek Isten színe előtt
 R. Az igazak örüljenek Isten színe előtt
 V. Ujjongjanak örömükben.
 R. Isten színe előtt
 &Gloria
 R. Az igazak örüljenek Isten színe előtt
-_
-V. Az igazaké az örök élet
-R. Az Úrnál van a jutalmuk
 
 [Capitulum Nona]
-!Wis 3:7-8
+!Bölcs 3:7-8
 v. Látogatásuk idején majd felragyognak, és olyanok lesznek, mint a szikra, amely a tarlón tovaharapódzik. Nemzetek fölött ítélkeznek majd és népeken uralkodnak; s az Úr lesz a királyuk mindörökre.
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Az igazaké az örök élet
 R. Az igazaké az örök élet
 V. Az Úrnál van a jutalmuk
 R. Az örök élet
 &Gloria
 R. Az igazaké az örök élet
-_
-V. Akik hűek, vigadjanak dicsőségükben
-R. Ujjongjanak nyugvóhelyükön!
-
-[Versum 3]
-V. Akik hűek, vigadjanak dicsőségükben
-R. Ujjongjanak nyugvóhelyükön!
 
 [Ant 3]
 A mennyben örvendeznek * a szentek lelkei akik követték Krisztus útját; vérük Krisztus szeretetéért omlott, ezért boldogok Krisztusban mindörökké
 
 [Lectio7 in 2 loco]
 Evangélium szent Lukács Evangélista kőnyvéből
-!Luke 6:17-23
+!Lk 6:17-23
 Aztán Jézus lejött velük a hegyről és egy sík terepen megállt. Rengeteg tanítvány sereglett oda hozzá, s hatalmas tömeg gyűlt köré egész Júdeából, Jeruzsálemből, valamint a tíruszi és szidoni tengermellékről, És így tovább.
+
+[Lectio]
+Olvasmány a Bölcsesség könyvéből
+!Bölcs 3:1-8
+v. Az igazak lelke azonban Isten kezében van, és gyötrelem nem érheti őket.  Az esztelenek szemében úgy látszott, hogy meghaltak; a világból való távozásukat balsorsnak vélték,  elmenetelüket megsemmisülésnek. De békességben vannak.  Mert ha az emberek szemében szenvedtek is, a reményük tele volt halhatatlansággal.  Kevés fenyítés után nagy jótéteményekben részesülnek, mert Isten próbára tette és magához méltónak találta őket.  Mint aranyat a kohóban, megvizsgálta és elfogadta őket égőáldozatul.  Látogatásuk idején majd felragyognak, és olyanok lesznek, mint a szikra, amely a tarlón tovaharapódzik.  Nemzetek fölött ítélkeznek majd és népeken uralkodnak; s az Úr lesz a királyuk mindörökre.
+
+[Evangelium]
+Evangélium + szent Lukács Evangélista kőnyvéből
+!Lk 21:9-19
+v. Amikor háborúkról és lázadásokról hallotok, ne rémüldözzetek. Ilyeneknek kell előbb történniük, de ezzel még nincs itt a vég!”  Aztán így folytatta: „Nemzet nemzet ellen és ország ország ellen támad.  Nagy földrengés lesz itt is, ott is, éhínség és dögvész. Szörnyű tünemények és különös jelek tűnnek fel az égen.  De előbb kezet emelnek rátok, és üldözni fognak benneteket. Kiszolgáltatnak a zsinagógáknak és börtönbe vetnek, királyok és helytartók elé hurcolnak a nevemért,  azért, hogy tanúságot tegyetek.  Véssétek hát szívetekbe: Ne törjétek fejeteket, hogyan védekezzetek.  Olyan ékesszólást és bölcsességet adok nektek, hogy egyetlen ellenfeletek sem tud ellenállni vagy ellentmondani nektek.  Kiszolgáltatnak benneteket a szülők, testvérek, rokonok és barátok, s némelyeket megölnek közületek.  Nevemért mindenki gyűlölni fog benneteket.  De nem vész el egy hajszál sem fejetekről.  Kitartástokkal megmentitek lelketeket.

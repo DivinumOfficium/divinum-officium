@@ -1,50 +1,108 @@
 @Commune/C7
 
-[Capitulum Vespera]
-@Commune/C7
-_
-@Commune/C6:Responsory Sexta:1-6
+[Ant Matutinum 3N]
+Invénta bona margaríta * dedit ómnia sua, et comparávit eam.
 
 [Ant Matutinum]
-O quam pulchra * est casta generátio cum claritáte!;;8
-Læva ejus * sub cápite meo, et déxtera illíus amplexábitur me.;;18
-Revértere, * revértere, Sunamítis; revértere, ut intueámur te.;;23
-Spécie tua * et pulchritúdine tua inténde, próspere procéde, et regna.;;44
-Adjuvábit eam * Deus vultu suo: Deus in médio ejus, non commovébitur.;;45
-Aquæ multæ * non potuérunt exstínguere caritátem.;;47
-V. Spécie tua et pulchritúdine tua.
-R. Inténde, próspere procéde, et regna.
-Nigra sum, * sed formósa, fíliæ Jerúsalem; ídeo diléxit me Rex, et introdúxit me in cubículum suum.;;84
-Trahe me post te, * in odórem currémus unguentórum tuórum: óleum effúsum nomen tuum.;;86
-Veni, Sponsa Christi, * áccipe corónam, quam tibi Dóminus præparávit in ætérnum.;;95
-Unguentum effusum * nomen tuum; ideo adulescentulae dilexerunt te nimis;;96
-Pulchra es * et decore filia Jerusalem, terribilis ut castrorum acies ordinate;;97
-Accinxit * fortitudine lumbos suos, et roboravit brachium suum; ideoque lucerna ejus non exstinguetur in sempiternum;;98
-V. Adjuvábit eam Deus vultu suo.
-R. Deus in médio ejus, non commovébitur.
-Inventa bona margarita * dedit omnia sua, et comparavit eam;;249;250;251
-V. Elégit eam Deus, et præelégit eam.
-R. In tabernáculo suo habitáre facit eam.
+@Commune/C7:: s/95/84/ s/96/86/ s/97/95/
+@CommuneM/C6:AntMatutinumM:1-3
+;;249;250;251
+
+[Lectio1]
+@CommuneM/C6:Lectio1 in 2 loco
+
+[Lectio2]
+@CommuneM/C6:Lectio2 in 2 loco
+
+[Lectio3]
+@CommuneM/C6:Lectio3 in 2 loco
+
+[Lectio4]
+@CommuneM/C6:Lectio4 in 2 loco
+
+[Responsory4]
+R. Pulchra fácie, sed púlchrior fide, beáta es, N., réspuens mundum, lætáberis cum Angelis:
+* Intercéde pro ómnibus nobis. 
+V. Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna.
+R. Intercéde pro ómnibus nobis. 
+&Gloria
+R. Intercéde pro ómnibus nobis. 
+
+[Lectio5]
+@Commune/C7:Lectio4
+
+[Responsory5]
+@Commune/C6:Responsory4
+
+[Lectio6]
+@Commune/C7:Lectio5:s/ Agrícola.*/ /
+
+[Responsory6]
+@Commune/C6:Responsory5
+
+[Lectio7]
+@Commune/C7:Lectio5:s/.* Agrícola/Agrícola/
+
+[Responsory7]
+@Commune/C7:Responsory6
+
+[Lectio8]
+@Commune/C7:Lectio6
+
+[Responsory8]
+R. Quam pulchra es, amíca mea, quam pulchra es et suávis! óculi tui columbárum:
+* Absque eo quod intrínsecus latet.
+V. Astitit regína a dextris tuis in vestítu deauráto, circúmdata varietáte.
+R. Absque eo quod intrínsecus latet.
+&Gloria
+R. Absque eo quod intrínsecus latet.
+
+[Lectio9]
+@Commune/C7:Lectio7
 
 [Responsory9]
-R. Beata es N. quae propter Deum mundum odisti
-* Propterea datum est tibi regnum caelorum
-V. Dilexisti justitiam et odisti iniquitatem
-R. Propterea datum est tibi regnum caelorum
+@Commune/C7:Responsory7
+
+[Lectio10]
+@Commune/C7:Lectio8:s/ Hoc autem.*/ /
+
+[Responsory10]
+@Commune/C7:Responsory8
+
+[Lectio11]
+@Commune/C7:Lectio8:s/.* Hoc autem/Hoc autem/
+
+[Responsory11]
+R. Accínxit fortitúdine lumbos suos, et roborávit bráchium suum;
+* Ideóque lucérna ejus non exstinguétur in sempitérnum.
+V. Adjuvábit eam Deus vultu suo, Deus in médio ejus, non commovébitur.
+R. Ideóque lucérna ejus non exstinguétur in sempitérnum. 
+
+[Lectio12]
+@Commune/C7:Lectio9
+
+[Responsory12]
+R. Beáta es, N., quæ propter Deum mundum odísti:
+* Proptérea datum est tibi regnum cælórum.
+V. Dilexísti justítiam et odísti iniquitátem.
+R. Proptérea datum est tibi regnum cælórum.
 &Gloria
-R. Propterea datum est tibi regnum caelorum
+R. Proptérea datum est tibi regnum cælórum.
 
-[Capitulum Laudes]
-@Commune/C7
+[MM Capitulum]
+@Commune/C7:Capitulum Sexta
 _
-@Commune/C6:Responsory Tertia:1-6
+@CommuneM/C6::s/.*_.//s
 
-[Responsory Tertia]
-@Commune/C6:Versum 1
+[Lectio5 in 2 loco]
+@Commune/C7:Lectio4 in 2 loco
 
-[Responsory Sexta]
-@Commune/C6:Responsory Tertia:8-9
+[Lectio6 in 2 loco]
+@Commune/C7:Lectio5 in 2 loco:s/ Quam.*/ /
 
-[Responsory Nona]
-@Commune/C6:Responsory Sexta:8-9
+[Lectio7 in 2 loco]
+@Commune/C7:Lectio5 in 2 loco:s/.* Quam/Quam/ s/$/~/s
+@Commune/C7:Lectio6 in 2 loco:s/ Nihil enim.*//s
 
+[Lectio8 in 2 loco]
+@Commune/C7:Lectio6 in 2 loco:s/.* Nihil enim/Nihil enim/

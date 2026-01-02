@@ -1,30 +1,69 @@
+[Officium]
+Feria Quinta in Cena Domini
+
 [Rank]
-Feria Quinta in Cena Domini;;Feria privilegiata Duplex I classis;;7
+;;Feria privilegiata Duplex I classis;;7
 
 [Rule]
 Psalmi minores Dominica
 Antiphonas horas
-Omit Incipit Invitatorium Hymnus Capitulum Lectio Preces Commemoratio Suffragium Conclusion
+Omit Incipit Invitatorium Hymnus Capitulum Lectio Commemoratio Antiphona finalis Preces Suffragium Conclusion Martyrologium De Officium Capituli
 Limit Benedictiones Oratio
 9 lectiones 1960
 Capitulum Versum 2 ad Laudes tantum
 Minores sine Antiphona
 Feria
 
+[Ant Vespera]
+Cálicem * salutáris accípiam et nomen Dómini invocábo.;;115
+Cum his, * qui odérunt pacem eram pacíficus: dum loquébar illis, impugnábant me gratis.;;119
+Ab homínibus * iníquis líbera me, Dómine.;;139
+Custódi me * a láqueo, quem statuérunt mihi, et a scándalis operántium iniquitátem.;;140
+Considerábam * ad déxteram, et vidébam, et non erat qui cognósceret me.;;141
+
+[Oratio Matutinum]
+v. Réspice, quǽsumus, Dómine, super hanc famíliam tuam, pro qua Dóminus noster Jesus Christus non dubitávit mánibus tradi nocéntium, et crucis subíre torméntum:
+!Et sub silentio concluditur
+$Qui tecum
+
+[Oratio Matutinum] (rubrica cisterciensis)
+v. Réspice, quǽsumus, Dómine, super hanc famíliam tuam, pro qua Dóminus noster Jesus Christus non dubitávit mánibus tradi nocéntium, et crucis subíre torméntum:
+!Et dicitur sub silentio ab omnibus:
+$Qui tecum
+
+[Oratio]
+v. Christus factus est pro nobis obédiens usque ad mortem.
+!secreto
+$Pater noster
+!aliquantulum altius
+_
+&psalm(50)
+(sed rubrica 1955 aut rubrica 196 aut rubrica monastica nisi rubrica cisterciensis omittitur)
+@:Oratio Matutinum
+
+[Prelude Vespera] (rubrica 1955 aut rubrica 196)
+!Vesperæ ab iis qui Missæ vespertinæ in Cena Domini intersunt, hodie non dicuntur.
+
 [Ant Matutinum]
 Zelus domus tuæ * comédit me, et oppróbria exprobrántium tibi cecidérunt super me.;;68
 Avertántur retrórsum, * et erubéscant, qui cógitant mihi mala.;;69
 Deus meus, * éripe me de manu peccatóris.;;70
-V. Avertántur retrórsum, et erubéscant.
-R. Qui cógitant mihi mala.
 Liberávit Dóminus * páuperem a poténte, et ínopem, cui non erat adjútor.;;71
 Cogitavérunt ímpii, * et locúti sunt nequítiam: iniquitátem in excélso locúti sunt.;;72
 Exsúrge, Dómine, * et júdica causam meam.;;73
-V. Deus meus, éripe me de manu peccatóris.
-R. Et de manu contra legem agéntis et iníqui.
 Dixi iníquis: * Nolíte loqui advérsus Deum iniquitátem.;;74
 Terra trémuit * et quiévit, dum exsúrgeret in judício Deus.;;75
 In die tribulatiónis * meæ Deum exquisívi mánibus meis.;;76
+
+[Nocturn 1 Versum]
+V. Avertántur retrórsum, et erubéscant.
+R. Qui cógitant mihi mala.
+
+[Nocturn 2 Versum]
+V. Deus meus, éripe me de manu peccatóris.
+R. Et de manu contra legem agéntis et iníqui.
+
+[Nocturn 3 Versum]
 V. Exsúrge, Dómine.
 R. Et júdica causam meam.
 
@@ -39,8 +78,7 @@ Incipit Lamentátio Jeremíæ Prophétæ
 v. Jerúsalem, Jerúsalem, convértere ad Dóminum Deum tuum.
 
 [Responsory1]
-R. In monte Olivéti orávit ad Patrem: Pater, si fíeri potest, tránseat a me calix iste: 
-* Spíritus quidem promptus est, caro autem infírma.
+R. In monte Olivéti orávit ad Patrem: Pater, si fíeri potest, tránseat a me calix iste: * Spíritus quidem promptus est, caro autem infírma.
 V. Vigiláte, et oráte, ut non intrétis in tentatiónem.
 R. Spíritus quidem promptus est, caro autem infírma.
 
@@ -50,7 +88,7 @@ R. Spíritus quidem promptus est, caro autem infírma.
 7 Zain. Recordáta est Jerúsalem diérum afflictiónis suæ, et prævaricatiónis ómnium desiderabílium suórum, quæ habúerat a diébus antíquis, cum cáderet pópulus ejus in manu hostíli, et non esset auxiliátor: vidérunt eam hostes, et derisérunt sábbata ejus.
 8 Heth. Peccátum peccávit Jerúsalem, proptérea instábilis facta est: omnes, qui glorificábant eam, sprevérunt illam, quia vidérunt ignomíniam ejus: ipsa autem gemens convérsa est retrórsum.
 9 Teth. Sordes ejus in pédibus ejus, nec recordáta est finis sui: depósita est veheménter, non habens consolatórem: vide, Dómine, afflictiónem meam, quóniam eréctus est inimícus.
-v. Jerúsalem, Jerúsalem, convértere ad Dóminum Deum tuum. 
+v. Jerúsalem, Jerúsalem, convértere ad Dóminum Deum tuum.
 
 [Responsory2]
 R. Tristis est ánima mea usque ad mortem: sustinéte hic, et vigiláte mecum: nunc vidébitis turbam, quæ circúmdabit me: 
@@ -65,11 +103,10 @@ R. Vos fugam capiétis, et ego vadam immolári pro vobis.
 12 Lamed. O vos omnes, qui transítis per viam, atténdite, et vidéte, si est dolor sicut dolor meus: quóniam vindemiávit me, ut locútus est Dóminus in die iræ furóris sui.
 13 Mem. De excélso misit ignem in óssibus meis, et erudívit me: expándit rete pédibus meis, convértit me retrórsum: pósuit me desolátam, tota die mæróre conféctam.
 14 Nun. Vigilávit jugum iniquitátum meárum: in manu ejus convolútæ sunt, et impósitæ collo meo: infirmáta est virtus mea: dedit me Dóminus in manu, de qua non pótero súrgere.
-v. Jerúsalem, Jerúsalem, convértere ad Dóminum Deum tuum. 
+v. Jerúsalem, Jerúsalem, convértere ad Dóminum Deum tuum.
 
 [Responsory3]
-R. Ecce vídimus eum non habéntem spéciem, neque decórem: aspéctus ejus in eo non est: hic peccáta nostra portávit, et pro nobis dolet: ipse autem vulnerátus est propter iniquitátes nostras: 
-* Cujus livóre sanáti sumus.
+R. Ecce vídimus eum non habéntem spéciem, neque decórem: aspéctus ejus in eo non est: hic peccáta nostra portávit, et pro nobis dolet: ipse autem vulnerátus est propter iniquitátes nostras: * Cujus livóre sanáti sumus.
 V. Vere languóres nostros ipse tulit, et dolóres nostros ipse portávit.
 R. Cujus livóre sanáti sumus.
 &Gloria
@@ -168,31 +205,6 @@ R. Qui edébat panes meos, ampliávit advérsum me supplantatiónem.
 [Ant 2]
 Tráditor autem * dedit eis signum, dicens: Quem osculátus fúero, ipse est, tenéte eum.
 
-[Oratio]
-v. Christus factus est pro nobis obédiens usque ad mortem.
-!secreto
-$Pater noster
-!aliquantulum altius
-_
-&psalm(50)
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
-@:Oratio Matutinum
-
-[Oratio Matutinum]
-v. Réspice, quǽsumus, Dómine, super hanc famíliam tuam, pro qua Dóminus noster Jesus Christus non dubitávit mánibus tradi nocéntium, et crucis subíre torméntum:
-!Et sub silentio concluditur
-$Qui tecum
-
-[Prelude Vespera] (rubrica 1955 aut rubrica 1960)
-!Vesperæ ab iis qui Missæ vespertinæ in Cena Domini intersunt, hodie non dicuntur.
-
-[Ant Vespera]
-Cálicem * salutáris accípiam et nomen Dómini invocábo.;;115
-Cum his, * qui odérunt pacem eram pacíficus: dum loquébar illis, impugnábant me gratis.;;119
-Ab homínibus * iníquis líbera me, Dómine.;;139
-Custódi me * a láqueo, quem statuérunt mihi, et a scándalis operántium iniquitátem.;;140
-Considerábam * ad déxteram, et vidébam, et non erat qui cognósceret me.;;141
-
 [Ant 3]
 Cenántibus autem illis * accépit Jesus panem, et benedíxit, ac fregit, dedítque discípulis suis.
 
@@ -202,10 +214,13 @@ _
 $Confiteor
 $Misereatur
 $Indulgentiam
+(sed rubrica cisterciensis omittitur)
+(rubrica cisterciensis) $Pater noster
+(rubrica cisterciensis) $Ave Maria
 
 &psalm(4)
 
-(rubrica tridentina) &psalm(30,1,6)
+(rubrica tridentina aut rubrica cisterciensis) &psalm(30,1,6)
 
 &psalm(90)
 
@@ -219,7 +234,7 @@ $Pater noster
 !aliquantulum altius
 _
 &psalm(50)
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica nisi rubrica cisterciensis omittitur)
 @:Oratio Matutinum
 (sed rubrica 1955 aut rubrica 1960 loco horum versuum dicuntur)
 v. Vísita, quǽsumus, Dómine, habitatiónem istam, et omnes insídias inimíci ab ea longe repélle: Ángeli tui sancti hábitent in ea, qui nos in pace custódiant; et benedíctio tua sit super nos semper.

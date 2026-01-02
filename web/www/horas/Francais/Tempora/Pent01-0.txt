@@ -1,15 +1,5 @@
-[Rank]
-Dominica Sanctissimæ Trinitatis;;Duplex I classis;;6.5
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Symbolum Athanasium
-No Commemoration
-Psalm5 Vespera=116
-Psalm5 Vespera3=113
-Prima=53
+[Officium]
+Dominica Sanctissimæ Trinitatis
 
 [Ant Vespera]
 Gloire à vous, Trinité * égale, Divinité une qui êtes avant tous les siècles et maintenant et toujours.;;109
@@ -18,14 +8,39 @@ Qu’une louange * résonne sur les lèvres de tous à la gloire du Père et du 
 Louange à Dieu le Père * et au Fils qui Lui est égal et que notre bouche fasse toujours retentir Votre louange avec un constant amour, ô Esprit-Saint.;;112
 Tout est de Lui, * tout est par Lui, tout est en Lui : à Lui la gloire dans tous les siècles.;;116
 
-[Capitulum Vespera]
-@Psalterium/Major Special:Day6 Vespera
-
 [Hymnus Vespera]
-@Psalterium/Major Special:Hymnus Day6 Vespera
+{:H-VespFeria:}v. Déjà le soleil de feu s’en va :
+ô vous, lumière éternelle, Unité,
+Trinité bienheureuse, versez
+votre amour dans nos cœurs.
+_
+Le matin, nous chantons vos louanges,
+le soir, nous vous prions encore ;
+daignez, nous vous en supplions,
+que nous vous louions parmi les habitants des cieux.
+_
+Au Père, en même temps au Fils,
+et à vous, Esprit-Saint,
+comme autrefois, ainsi toujours
+gloire dans tous les siècles.
+Ainsi soit-il.
 
 [HymnusM Vespera]
-@Psalterium/Major Special:HymnusM Day6 Vespera
+{:H-VespFeria:}v. O Lumière, bienheureuse Trinité,
+Qui êtes souveraine Unité,
+Le soleil flamboyant se retire,
+Mettez la lumière en nos cœurs.
+_
+C’est vous que le matin nous chantons,
+C’est vous que nous prions le soir :
+C’est vous que, pour tous les siècles
+Notre prière de gloire veut louer.
+_
+Gloire à Dieu le Père,
+Gloire à son Fils unique,
+Avec l’Esprit consolateur,
+Maintenant et pour l’éternité.
+Ainsi soit-il.
 
 [Versum 1]
 V. Bénissons le Père et le Fils ainsi que l’Esprit-Saint.
@@ -77,16 +92,18 @@ Ainsi soit-il.
 Secourez-nous, ô Dieu unique * et tout-puissant, Père, Fils et Saint-Esprit.;;8
 O unité * dans la substance, Trinité dans les personnes, nous vous confessons.;;18
 Étant toujours le même, * nous professons que vous êtes l’être, la vie et l’intelligence.;;23
-V. Bénissons le Père et le Fils, ainsi que l’Esprit-Saint.
-R. Louons-le et exaltons-le souverainement dans les siècles.
 Nous vous invoquons, * nous vous louons, nous vous adorons, ô bienheureuse Trinité.;;46
 Vous êtes notre espérance, * notre salut, notre honneur, ô bienheureuse Trinité.;;47
 Délivrez-nous, * sauvez-nous, donnez-nous la vie, ô bienheureuse Trinité.;;71
-V. Vous êtes béni, Seigneur, dans le firmament du ciel.
-R. Et louable et glorieux dans les siècles.
 Charité * est le Père, le Fils est la grâce, l’Esprit-Saint en est la communication, ô bienheureuse Trinité.;;95
 Véridique est * le Père, le Fils est vérité, l’Esprit-Saint est vérité [20], ô bienheureuse Trinité.;;96
 Le Père, * le Fils et le Saint-Esprit sont une seule substance, ô bienheureuse Trinité.;;97
+
+[Nocturn 2 Versum]
+V. Vous êtes béni, Seigneur, dans le firmament du ciel.
+R. Et louable et glorieux dans les siècles.
+
+[Nocturn 3 Versum]
 V. Le Verbe du Seigneur a affermi les cieux.
 R. Et le Souffle de sa bouche leur a donné toute leur vertu.
 
@@ -178,11 +195,11 @@ R. Bénissons le Père et le Fils avec le Saint-Esprit :
 V. Vous êtes béni, Seigneur, dans le firmament du ciel, et louable, et glorieux dans les siècles.
 R. Louons-le et exaltons-le souverainement dans les siècles.
 
+[Lectio8] (rubrica 1960)
+Nous ne disons point, comme quelques-uns l’ont imaginé, que le Fils de Dieu est une extension de quelque partie de Dieu ; nous n’admettons pas non plus un Verbe sans réalité, tel qu’est le simple son de la voix ; mais nous croyons que les trois appellations et les trois personnes ont une même essence, une même majesté, une même puissance. Nous confessons donc un seul Dieu, parce que l’unité de la majesté nous défend de nommer plusieurs Dieux.
+
 [Lectio8a]
 Nous ne disons point, comme quelques-uns l’ont imaginé, que le Fils de Dieu est une extension de quelque partie de Dieu ; nous n’admettons pas non plus un Verbe sans réalité, tel qu’est le simple son de la voix ; mais nous croyons que les trois appellations et les trois personnes ont une même essence, une même majesté, une même puissance. Nous confessons donc un seul Dieu, parce que l’unité de la majesté nous défend de nommer plusieurs Dieux. Enfin nous nommons distinctement, conformément aux règles catholiques du langage, le Père et le Fils, mais nous ne pouvons ni ne devons dire deux Dieux. Ce n’est pas que le Fils de Dieu ne soit Dieu, étant vrai Dieu de Dieu, mais parce que nous savons qu’il n’a point d’autre principe que son Père, nous disons qu’il n’y a qu’un Dieu. C’est là ce que nous ont transmis les Prophètes et les Apôtres ; c’est là ce que le Seigneur lui-même nous a enseigné, quand il a dit : « Moi et mon Père, nous sommes une seule chose ». Par ces mots « une seule chose, » il exprime, comme je l’ai dit, l’unité de la divinité ; et par ceux-ci : « nous sommes, » il marque la pluralité des personnes.
-
-[Lectio8](rubrica 1960)
-Nous ne disons point, comme quelques-uns l’ont imaginé, que le Fils de Dieu est une extension de quelque partie de Dieu ; nous n’admettons pas non plus un Verbe sans réalité, tel qu’est le simple son de la voix ; mais nous croyons que les trois appellations et les trois personnes ont une même essence, une même majesté, une même puissance. Nous confessons donc un seul Dieu, parce que l’unité de la majesté nous défend de nommer plusieurs Dieux.
 
 [Responsory8]
 R. Deux Séraphins se criaient l’un à l’autre :
@@ -191,6 +208,9 @@ V. Ils sont trois qui rendent témoignage dans le ciel : le Père, le Verbe et l
 R. Saint, saint, saint est le Seigneur Dieu des armées :
 &Gloria
 R. Toute la terre est pleine de sa gloire.
+
+[Responsory8] (rubrica cisterciensis)
+@Tempora/Pent03-2Feria:Responsory2
 
 [Lectio9]
 !Commémoraison du dimanche
@@ -203,15 +223,14 @@ Homélie de saint Augustin, Évêque.
 Il y a deux œuvres de miséricorde qui délivrent les âmes et que le Seigneur nous propose brièvement dans l’Évangile : « Remettez et il vous sera remis, donnez et il vous sera donné. » Cette parole, « remettez et il vous sera remis » regarde le pardon des offenses ; cette autre, « donnez et il vous sera donné » regarde l’obligation de faire du bien au prochain. Pour ce qui concerne le pardon, d’une part, tu désires que ton péché te soit pardonné, et d’une autre part, tu as à pardonner à ton prochain. Et pour ce qui regarde le devoir de la bienfaisance, un mendiant te demande l’aumône, et tu es toi-même le mendiant de Dieu. Tous en effet, nous sommes, lorsque nous prions, les mendiants de Dieu ; nous nous tenons à la porte de ce père de famille grand et puissant, nous nous y prosternons, nous gémissons dans nos supplications, nous voulons recevoir un don : et ce don, c’est Dieu lui-même. Que te demande le mendiant ? Du pain. Et toi, que demandes-tu à Dieu, sinon le Christ qui a dit : « Je suis le pain vivant, qui suis descendu du ciel ». Voulez-vous qu’il vous soit pardonné ? Remettez et il vous sera remis. Voulez-vous recevoir ? Donnez et l’on vous donnera.
 &teDeum
 
-[Lectio9](rubrica 1960)
+[Lectio9] (rubrica 1960)
 Enfin nous nommons distinctement, conformément aux règles catholiques du langage, le Père et le Fils, mais nous ne pouvons ni ne devons dire deux Dieux. Ce n’est pas que le Fils de Dieu ne soit Dieu, étant vrai Dieu de Dieu, mais parce que nous savons qu’il n’a point d’autre principe que son Père, nous disons qu’il n’y a qu’un Dieu. C’est là ce que nous ont transmis les Prophètes et les Apôtres ; c’est là ce que le Seigneur lui-même nous a enseigné, quand il a dit : « Moi et mon Père, nous sommes une seule chose. » Par ces mots « une seule chose, » il exprime, comme je l’ai dit, l’unité de la divinité ; et par ceux-ci : « nous sommes, » il marque la pluralité des personnes.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera :s/;;.*//g
-
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Rom 11:33
+v. Ô profondeur des richesses de la sagesse et de la science de Dieu : Que ses jugements sont incompréhensibles, et ses voies impénétrables.
+$Deo gratias
 
 [Hymnus Laudes]
 v. O Vous, Unité de la Trinité,
@@ -229,9 +248,6 @@ et à son Fils unique,
 ainsi qu’à l’Esprit Paraclet,
 maintenant et dans tous les siècles.
 Ainsi soit-il.
-
-[Versum 2]
-@:Versum 1
 
 [Ant 2]
 Qu’elle soit bénie * maintenant et toujours et dans les siècles infinis, la sainte et indivisible Trinité, qui a créé et qui gouverne toutes choses.
@@ -251,48 +267,40 @@ $Per Dominum
 !1 Joann. 5:7
 v. Il y en a trois qui rendent témoignage dans le ciel : le Père, le Verbe, et l'Esprit-Saint, et ces trois sont un.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Bénissons le Père et le Fils * Avec le Saint-Esprit.
 R. Bénissons le Père et le Fils * Avec le Saint-Esprit.
 V. Louons-le et glorifions-le à jamais.
 R. Avec le Saint-Esprit.
 &Gloria
 R. Bénissons le Père et le Fils * Avec le Saint-Esprit.
-_
-V. Vous êtes béni, Seigneur, au plus haut des cieux.
-R. Au plus haut des cieux.
 
 [Capitulum Sexta]
 !2 Cor 13:13
 v. Que la grâce de notre Seigneur Jésus-Christ, l'amour de Dieu le Père et la communication du Saint-Esprit soient avec vous tous. Ainsi soit-il.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Vous êtes béni, Seigneur, * Au plus haut des cieux.
 R. Vous êtes béni, Seigneur, * Au plus haut des cieux.
 V. Au plus haut des cieux.
 R. Au plus haut des cieux.
 &Gloria
 R. Vous êtes béni, Seigneur, * Au plus haut des cieux.
-_
+
+[Versum Sexta]
 V. Par le Verbe du Seigneur les cieux ont été faits.
 R. Et l'armée des cieux par le Souffle de sa bouche.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Par le Verbe du Seigneur * Les cieux ont été faits.
 R. Par le Verbe du Seigneur * Les cieux ont été faits.
 V. Et l'armée des cieux par le Souffle de sa bouche.
 R. Les cieux ont été faits.
 &Gloria
 R. Par le Verbe du Seigneur * Les cieux ont été faits.
-_
+
+[Versum Nona]
 V. Que le nom du Seigneur soit béni.
 R. Maintenant et à jamais.
 

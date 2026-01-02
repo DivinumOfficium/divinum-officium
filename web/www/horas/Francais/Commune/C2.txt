@@ -1,11 +1,8 @@
-[Name]
-Commune d'un Martyr
+[Officium]
+Commun d'un Martyr Pontife
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
+[Missa]
+Statuit
 
 [Ant Vespera]
 Quiconque m'aura confessé * devant les hommes, je le confesserai Moi aussi devant Mon Père.
@@ -13,11 +10,6 @@ Celui qui me suit, * ne marche point dans les ténèbres ; mais il aura la lumi�
 Si quelqu'un veut être Mon serviteur, * qu'il Me suive, et là où Je suis, qu'il y soit aussi.
 Si quelqu'un Me sert, * Mon Père qui est dans les cieux l'honorera, dit le Seigneur.
 Je veux, Mon Père, * que là où Je suis, Mon serviteur y soit aussi.
-
-[Capitulum Vespera]
-!Jac 1:12
-v. Heureux l'homme qui supporte l'épreuve ! Car l'homme éprouvé recevra la couronne de vie, que Dieu a promise à ceux qui l'aiment.
-$Deo gratias
 
 [Hymnus Vespera]
 {:H-Deustuorummilitum:}v. Dieu, partage, couronne
@@ -47,33 +39,35 @@ Dans les siècles des siècles.
 Ainsi soit-il.
 
 [Versum 1]
-V. Vous l'avez couronné de gloire et d'honneur, Seigneur.
+V. Vous l'avez couronné de gloire et d'honneur Seigneur.
 R. Et Vous lui avez donné l'empire sur les œuvres de Vos mains.
 
 [Ant 1]
 Ce Saint * a combattu jusqu'à la mort pour la loi de son Dieu et n'a pas craint les menaces des impies : car il était fondé sur la pierre ferme.
 
+[Oratio]
+Jetez les yeux sur notre faiblesse, Dieu tout-puissant et, puisque le poids de notre propre action nous accable, que la glorieuse intercession de Votre bienheureux Martyr et Pontife N. nous protège.
+$Per Dominum
+
 [Invit]
 Le Seigneur est le Roi des Martyrs, * Venez , adorons-le.
-
-
-[Hymnus Matutinum]
-@Commune/C2:Hymnus Vespera
 
 [Ant Matutinum]
 Il a mis * toute son affection jour et nuit dans la loi du Seigneur.;;1
 Publiant * les préceptes du Seigneur, il a été établie sur la montagne sainte.;;2
 J'ai haussé * ma voix et j'ai crié vers le Seigneur : et Il m'a exaucé sur Sa montagne sainte.;;3
-V. Vous l'avez couronné de gloire et d'honneur Seigneur.
-R. Et Vous lui avez donné l'empire sur les œuvres de Vos mains.
 Enfants des hommes * sachez que Dieu a glorifié son saint.;;4
 Vous l'avez couvert, * Seigneur, de l'amour que vous aviez pour lui comme d'un bouclier.;;5
 Vous l'avez couronné * d'honneur et de gloire dans toute la terre.;;8
-V. Seigneur, Vous avez mis sur sa tête.
-R. Une couronne de pierres précieuses.
 Le Seigneur est juste, * et Il aime la justice : Il regarde l'équité d'un œil favorable.;;10
 Il habitera * dans Votre tabernacle : il reposera sur Votre montagne Sainte.;;14
 Seigneur, Vous avez mis * sur sa tête une couronne de pierres précieuses.;;20
+
+[Nocturn 2 Versum]
+V. Vous avez mis, Seigneur, sur sa tête.
+R. Une couronne de pierres précieuses.
+
+[Nocturn 3 Versum]
 V. Sa gloire est grande, grâce à Votre secours.
 R. Vous l'avez revêtu de splendeur et de magnificence.
 
@@ -81,7 +75,7 @@ R. Vous l'avez revêtu de splendeur et de magnificence.
 Des Actes des Apôtres
 !Acts 20:17-24
 17 Or, de Milet, Paul envoya à Éphèse pour faire venir les Anciens de cette Eglise.
-18 Lorsqu’ils furent réunis autour de lui, il leur dit : " Vous savez comment, depuis le premier jour que j’ai mis le pied en Asie, je me suis toujours comporté avec vous,
+18 Lorsqu’ils furent réunis autour de lui, il leur dit : « Vous savez comment, depuis le premier jour que j’ai mis le pied en Asie, je me suis toujours comporté avec vous,
 19 servant le Seigneur en toute humilité, au milieu des larmes et des épreuves que me suscitaient les embûches des Juifs ;
 20 comment je ne vous ai rien caché de ce qui vous était avantageux, ne manquant pas de prêcher et de vous instruire en public et dans les maisons particulières ;
 21 annonçant aux Juifs et aux Gentils le retour à Dieu par la pénitence et la foi en Notre-Seigneur Jésus-Christ.
@@ -116,10 +110,10 @@ R. Et il fleurira éternellement devant le Seigneur.
 32 Et maintenant je vous recommande à Dieu, et à la parole de sa grâce, à celui qui peut achever l’édifice et vous donner l’héritage avec tous les sanctifiés.
 33 Je n’ai désiré ni l’argent, ni l’or, ni le vêtement de personne.
 34 Vous savez vous-mêmes que ces mains ont pourvu à mes besoins et à ceux des personnes qui étaient avec moi.
-35 Je vous ai montré de toutes manières que c’est en travaillant ainsi qu’il faut soutenir les faibles, et se rappeler la parole du Seigneur Jésus, qui a dit lui-même : Il y a plus de bonheur à donner qu’à recevoir. "
+35 Je vous ai montré de toutes manières que c’est en travaillant ainsi qu’il faut soutenir les faibles, et se rappeler la parole du Seigneur Jésus, qui a dit lui-même : Il y a plus de bonheur à donner qu’à recevoir. »
 36 Après avoir ainsi parlé, il se mit à genoux et pria avec eux tous.
 37 Ils fondaient tous en larmes, en se jetant au cou de Paul, ils le baisaient,
-38 affligés surtout de ce qu’il avait dit : " Vous ne verrez plus mon visage. " Et ils l’accompagnèrent jusqu’au navire.
+38 affligés surtout de ce qu’il avait dit : « Vous ne verrez plus mon visage. » Et ils l’accompagnèrent jusqu’au navire.
 
 [Responsory3]
 R. Il a connu la justice, il a vu de grandes merveilles, il a obtenu ce qu'il demandait du Très-Haut :
@@ -176,15 +170,7 @@ V. Car Vous lui avez donné les bénédictions de Votre douceur : Vous avez mis 
 R. Marquée du sceau de la sainteté toute éclatante de gloire et qui est le plus glorieux prix de son courage invincible.
 
 [Lectio8]
-Quand on entend parler de ces biens sublimes, l'esprit s'émeut et il souhaiterait habiter déjà en cette demeure où il espère d'être heureux éternellement. Mais on ne parvient point à de grades récompenses sans de grands travaux : ce qui fait dire à Saint Paul, cet admirable prédicatuer, que celui qui combat n'est point couronné qu'après avoir bien combattu. Que l'esprit donc considère avec tant de joie la grandeur de le récompense qui lui est proposée, mais qu'il ne se décourage pas dand la vue de la peine et de la fatigue du combat. C'est pourquoi la Vérité dit elle-même dans cet Evangile à ceux qui vont à elle : "Si quelqu'un vient à moi et ne hait pas son père et sa mère, sa femme et ses enfants, ses frères et ses sœurs et plus encore sa propre vie, il ne peut être mon disciple. "
-
-[Responsory8]
-R. Voici un véritable Martyr. qui a répandu son sang pour le nom de Jésus-Christ :
-* Il n'a pas craint les menaces des juges, ni recherché les honneurs de la terre, mais il est arrivé heureusement au royaume du ciel.
-V. Le Seigneur a conduit ce juste par des voies droites et Il lui a fait voir le royaume de Dieu.
-R. Il n'a pas craint les menaces des juges, ni recherché les honneurs de la terre, mais il est arrivé heureusement au royaume du ciel.
-&Gloria
-R. Il n'a pas craint les menaces des juges, ni recherché les honneurs de la terre, mais il est arrivé heureusement au royaume du ciel.
+Quand on entend parler de ces biens sublimes, l'esprit s'émeut et il souhaiterait habiter déjà en cette demeure où il espère d'être heureux éternellement. Mais on ne parvient point à de grades récompenses sans de grands travaux : ce qui fait dire à Saint Paul, cet admirable prédicatuer, que celui qui combat n'est point couronné qu'après avoir bien combattu. Que l'esprit donc considère avec tant de joie la grandeur de le récompense qui lui est proposée, mais qu'il ne se décourage pas dand la vue de la peine et de la fatigue du combat. C'est pourquoi la Vérité dit elle-même dans cet Evangile à ceux qui vont à elle : « Si quelqu'un vient à moi et ne hait pas son père et sa mère, sa femme et ses enfants, ses frères et ses sœurs et plus encore sa propre vie, il ne peut être mon disciple. « 
 
 [Responsory8 non Effusorum]
 R. Le Seigneur lui a donné les bénédictions de Sa douceur :
@@ -194,15 +180,22 @@ R. Il a mis sur sa tête une couronne de pierres précieuses.
 &Gloria
 R. Il a mis sur sa tête une couronne de pierres précieuses.
 
+[Responsory8]
+R. Voici un véritable Martyr. qui a répandu son sang pour le nom de Jésus-Christ :
+* Il n'a pas craint les menaces des juges, ni recherché les honneurs de la terre, mais il est arrivé heureusement au royaume du ciel.
+V. Le Seigneur a conduit ce juste par des voies droites et Il lui a fait voir le royaume de Dieu.
+R. Il n'a pas craint les menaces des juges, ni recherché les honneurs de la terre, mais il est arrivé heureusement au royaume du ciel.
+&Gloria
+R. Il n'a pas craint les menaces des juges, ni recherché les honneurs de la terre, mais il est arrivé heureusement au royaume du ciel.
+
 [Lectio9]
-Mais il est bon d'examiner en ce lieu comment il nous est commandé d'avoir de la haine pour nos parents, puisqu'il nous est ordonné d'aimer nos ennemis mêmes. D'ailleurs Jésus Christ qui est la Vérité même dit en parlant de la femme : "Que l'homme ne sépare point ce que Dieu a joint ensemble." Et Saint Paul recommande aux hommes d'aimer leurs femmes, comme Jésus Christ aime Son Eglise. Comment donc le disciple recommande-t-il d'aimer sa femme après que son maître a déclaré que si l'on ne hait sa femme, l'on ne peut être son disciple ? Comment celui qui lit la sentence du Juge, la lit-ul autrement que le Juge ne l'a prononcé ? Et pouvons-nous en même temps aimer et haïr les mêmes personnes ? Oui certes, nous pouvons le faire, si nous avons soin de bien distinguer les choses et si nous concevons comme il le faut la vertu et l'esprit du commandement. Car de cette force nous aimerons simplement nos parents et notre prochain mais en même temps nous méconnaitrons tous ceux qui s'opposent à notre course dans la voie de Dieu, jusqu'à les haïr et à nous en éloigner.
+Mais il est bon d'examiner en ce lieu comment il nous est commandé d'avoir de la haine pour nos parents, puisqu'il nous est ordonné d'aimer nos ennemis mêmes. D'ailleurs Jésus Christ qui est la Vérité même dit en parlant de la femme : « Que l'homme ne sépare point ce que Dieu a joint ensemble.» Et Saint Paul recommande aux hommes d'aimer leurs femmes, comme Jésus Christ aime Son Eglise. Comment donc le disciple recommande-t-il d'aimer sa femme après que son maître a déclaré que si l'on ne hait sa femme, l'on ne peut être son disciple ? Comment celui qui lit la sentence du Juge, la lit-ul autrement que le Juge ne l'a prononcé ? Et pouvons-nous en même temps aimer et haïr les mêmes personnes ? Oui certes, nous pouvons le faire, si nous avons soin de bien distinguer les choses et si nous concevons comme il le faut la vertu et l'esprit du commandement. Car de cette force nous aimerons simplement nos parents et notre prochain mais en même temps nous méconnaitrons tous ceux qui s'opposent à notre course dans la voie de Dieu, jusqu'à les haïr et à nous en éloigner.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera
-
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Jac 1:12
+v. Heureux l'homme qui supporte l'épreuve ! Car l'homme éprouvé recevra la couronne de vie, que Dieu a promise à ceux qui l'aiment.
+$Deo gratias
 
 [Hymnus Laudes]
 {:H-Invictemartyrunicum:}v. Invincible Martyr,
@@ -234,79 +227,59 @@ R. Il croîtra comme le cèdre du Liban.
 [Ant 2]
 Celui qui hait * son âme en ce monde, la conserve pour la vie éternelle.
 
-[Oratio]
-Jetez les yeux sur notre faiblesse, Dieu tout-puissant et, puisque le poids de notre propre action nous accable, que la glorieuse intercession de Votre bienheureux Martyr et Pontife N. nous protège.
-$Per Dominum
-
-[Oratio1]
-O Dieu qui nous donnez la joie de la solennité annuelle de Votre bienheureux Martyr et Pontife N. , faites, dans Votre bonté, que célébrant sa naissance, nous nous réjouissions aussi de sa protection.
-$Per Dominum
-
-[Oratio2]
-Faites, s'il Vous plait, Dieu tout-puissant, que célébrant la naissance de Votre bienheureux Martyr N., nous soyons, par son intercession fortifiés dans l'amour de Votre nom.
-$Per Dominum
-
-[Oratio3]
-Faites, s'il Vous plait, Dieu tout-puissant, que célébrant la naissance de Votre bienheureux Martyr N., nos corps soient affranchis de toute adversité et nos âmes purifiées des pensées mauvaises.
-$Per Dominum
-
 [Lectio Prima]
 !Sir 39:6
 v. Le juste met son cœur à aller dès le matin auprès du Seigneur qui l'a fait et il prie en présence du Très-Haut.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. De gloire et d'honneur * Seigneur, Vous l'avez couronné.
 R. De gloire et d'honneur * Seigneur, Vous l'avez couronné.
 V. Et Vous lui avez donné l'empire sur les œuvres de Vos mains.
 R. Seigneur, Vous l'avez couronné.
 &Gloria
 R. De gloire et d'honneur * Seigneur, Vous l'avez couronné.
-_
-V. Vous avez mis sur sa tête, Seigneur.
-R. Une couronne de pierres précieuses.
 
 [Capitulum Sexta]
 !Sir 15:3
 v. Le Seigneur notre Dieu l'a nourri d'un pain de vie et d'intelligence et Il lui a donné à boire de l'eau d'une sagesse salutaire.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Vous avez mis Seigneur * Sur sa tête.
 R. Vous avez mis Seigneur * Sur sa tête.
 V. Une couronne de pierres précieuses.
 R. Sur sa tête.
 &Gloria
 R. Vous avez mis Seigneur * Sur sa tête.
-_
-V. Sa gloire est grande, grâce à Votre secours.
-R. Vous l'avez revêtu de splendeur et de magnificence.
 
-[Capitulum Nona]
-!Sir 39:6
-v. Le juste met son cœur à aller dès le matin auprès du Seigneur qui l'a fait, et il prie en présence du Très-Haut.
-$Deo gratias
-
-[Responsory Nona]
-R.br. Sa gloire esst grande, * Grâce à Votre secours.
-R. Sa gloire esst grande, * Grâce à Votre secours.
+[Responsory Breve Nona]
+R.br. Sa gloire est grande, * Grâce à Votre secours.
+R. Sa gloire est grande, * Grâce à Votre secours.
 V. Vous l'avez revêtu de splendeur et de magnificence.
 R. Grâce à Votre secours.
 &Gloria
-R. Sa gloire esst grande, * Grâce à Votre secours.
-_
-V. Le juste fleurira comme le palmier.
-R. Il croîtra comme le cèdre du Liban.
-
-[Versum 3]
-@:Versum 2
+R. Sa gloire est grande, * Grâce à Votre secours.
 
 [Ant 3]
 Si quelqu'un veut venir après Moi, * qu'il se renonce lui-même, qu'il porte sa croix et Me suive !
 
-[Lectio7 in 3 loco]
+[Lectio7 in 2 loco]
+Lecture du Saint Evangile selon Saint Matthieu.
+!Matt 16:24-27
+En ce temps là, Jésus dit à ses disciples : « Si quelqu’un veut marcher à ma suite, qu’il renonce à lui-même, qu’il prenne sa croix et qu’il me suive. Et le reste.
+_
+Homili de Saint Gregoire Pape.
+!Homilie 32. sur les Evangiles
+Notre Seigneur et Rédempteur est venu dans le monde en tant qu'Homme nouveau, et il a donné au monde des commandements nouveaux. En effet, il s'est opposé à l'ancienne vie que nous avons menée et élevée dans le péché, il a opposé sa nouvelle vie. C'était l'ancienne manière, selon la connaissance de l'homme charnel, pour chaque homme de garder ses propres biens, et, s'il pouvait le faire, de prendre aussi les biens de son prochain, et, s'il ne pouvait pas les prendre, au moins de les convoiter. Mais le Médecin céleste a des remèdes pour combattre toutes les maladies du péché. Car, de même que, par l'art du médecin, le chaud est guéri par le froid, et le froid par le chaud, de même notre Seigneur oppose au péché la sainteté, en ordonnant au débauché la pureté, à l'avare la générosité, au colérique la douceur, et à l'orgueilleux la modestie.
+
+[Lectio8 in 2 loco]
+Ainsi, le Seigneur, lorsqu'il voulut donner un nouveau commandement à ceux qui venaient à lui, dit : « Celui d'entre vous qui n'abandonne pas tout ce qu'il a ne peut être mon disciple» (Luc 14, 33), comme s'il avait dit ouvertement : Vous tous qui, selon le vieil homme, convoitez les biens de votre prochain, vous devez, selon le zèle du nouvel homme, donner même ce qui vous appartient. Mais écoutons encore ce qu'il dit en ce lieu : « Si quelqu'un veut venir après moi, qu'il renonce à lui-même.» Il dit d'abord que nous devons renoncer à nous-mêmes ce qui nous appartient, et maintenant que nous devons même renoncer à nous-mêmes. Il n'est peut-être pas difficile pour un homme de renoncer à ce qui lui appartient, mais il est extrêmement difficile de renoncer à soi-même. Renoncer à ses biens, c'est peu, mais renoncer à soi-même, c'est un renoncement extrêmement grand.
+
+[Lectio9 in 2 loco]
+Or le Seigneur commande à ceux qui viennent à lui de renoncer à toutes les choses qu'ils possèdent, parce que tous ceux qui entrent dans la carrière de la foi ont à combattre les esprits de ténèbres. Or ces esprits ne possèdent rien en propre dans ce monde. Il faut donc aussi être nu pour lutter contre des adversaires qui sont nus. Car si un homme qui est habillé lutter contre un autre qui ne l'est pas, il est bientôt renversé par terre en donnant prise sur lui par ses habits à son adversaire. Et comme l'on peut appeller toutes les choses de la terre des vêtements pour le corps, il est necéssaire que tous ceux qui entreprennent de combattre contre le démon, jettent ces vêtements, de crainte que l'adversaire des hommes ne s'en serve pour les renverser.
+&teDeum
+
+[Lectio7 in 4 loco]
 Lecture du Saint Evangile selon Saint Matthieu
 !Matt 10:26-32
 En ce temps-là, Jésus dit à ses disciples : Il n’y a rien de caché qui ne se découvre, rien de secret qui ne finisse par être connu. Et le reste.
@@ -315,25 +288,64 @@ Homélie de saint Hilaire, évêque
 !Comm. de Matth., can. 10
 Notre-Seigneur nous annonce le jour du jugement qui dévoilera les secrets de conscience de notre volonté, et mettra au grand jour d’une connaissance publique, ce que nous croyons maintenant caché. Il nous enseigne donc à ne craindre ni les menaces, ni les projets, ni le pouvoir des persécuteurs ; car le jour du jugement révélera le vide et le néant de tout cela. Et ce que je vous dis dans les ténèbres, dites-le dans la lumière, et ce que vous entendez à l'oreille, prêchez-le sur les toits. Nous ne lisons cependant pas que Notre-Seigneur ait eu coutume de parler la nuit et de prêcher sa doctrine dans les ténèbres : mais tous ses discours sont ténèbres pour les charnels, et sa parole est obscure pour les mécréants.
 
-[Lectio8 in 3 loco]
+[Lectio8 in 4 loco]
 Le Seigneur veut donc que ce qu’il a dit, nous le répétions en toute liberté de foi et d’affirmation. C’est pourquoi il ordonne de prêcher dans la lumière ce qu’il a dit dans les ténèbres ; afin que les mystères confiés au creux de l’oreille soient publiés sur les toits, c’est-à-dire proclamés haut et clair par ceux qui les disent. Il faut en effet répandre avec constance la connaissance de Dieu ; il faut exposer au grand jour de la prédication apostolique les secrets profonds de la doctrine évangélique sans aucune crainte de ceux qui, ayant licence de s’attaquer au corps, ne peuvent cependant rien sur l’âme, mais plutôt avec la crainte de ce Dieu qui a pouvoir de perdre et le corps et l’âme dans la géhenne,
 
-[Lectio9 in 3 loco]
+[Lectio9 in 4 loco]
 Ne craignez pas ceux qui tuent le corps. Ne redou- JL.A tons donc aucun péril pour notre corps, ne tenons pas compte de la douleur d’une chair périssable, puisque à raison des conditions de sa nature et de son origine, elle sera reconstituée en la substance d’une âme spirituelle. Et pour donner aux croyants, d’affirmer librement leur foi en Dieu, Notre-Seigneur ajoute la sanction qui nous tient. Il reniera devant son Père celui qui l’aura renié sur terre devant les hommes ; et celui qui l’aura confessé devant les hommes, le Christ le reconnaîtra aux cieux. Il nous rendra devant son Père le témoignage que nous lui aurons rendu devant les hommes.
 &teDeum
 
-[Lectio7 in 4 loco]
-Lecture du Saint Evangile selon Saint Matthieu
-!Matt 16:24-27
-En ce temps-là, Jésus dit à ses disciples : Si quelqu'un veut venir après moi, qu'il renonce à lui-même, qu'il porte sa croix et me suive. Et le reste.
+[Introitus]
+!Eccli 45:30.
+v. Le Seigneur a fait avec lui une alliance de paix et l’a établi prince, aﬁn qu’il possède à jamais la dignité du sacerdoce. (Alléluia, alléluia.)
+!Ps 131:1.
+Souvenez-vous, ô Seigneur, de David et de toute sa douceur.
+&Gloria
+v. Le Seigneur a fait avec lui une alliance de paix et l’a établi prince, aﬁn qu’il possède à jamais la dignité du sacerdoce. (Alléluia, alléluia.)
 
-Homélie de Saint Grégoire, Pape.
-!Homilia 32 in Evang.
-Notre Rédempteur étant venu au monde comme un nouvel homme, il a aussi donné au monde de nouveaux précèptes. Et comme notre ancienne vie était pleine de vices et de péchés, il lui oppose une vie contraire et toute nouvelle. Et en effet que sait faire le viel homme, l'homme charnel, sinon de conserver avec attache ce qu'il avait, ravir avec injustice ce qu'il n'avait pas et le désirer avec ardeur l'orsqu'il ne lui était pas possible de la ravir ? Mais le médecin célèste est venu appliquer à chaque vice le remède qui lui est propre. Car comme dans la médecine on guérit par des remèdes froids les maladies qui viennent de chaleur, et par des remèdes chauds les maladies qui viennent de froid : ainsi le Seigneur nous a apporté des remèdes contraires à nos péchés en ordonnant la continence aux impudiques, la libéralité aux avares, la douceur aux coléreux et l'humilité aux orgueilleux.
+[Oratio] (ad missam)
+Dieu tout-puissant, regardez notre fai­blesse ; et parce que le poids de nos propres péchés nous accable, que la glorieuse intercession du bienheu­reux N., votre évêque et martyr, nous protège.
+$Per Dominum
 
-[Lectio8 in 4 loco]
-C'est pourquoi lorsqu'il a voulu proposer à ceux qui le suivaient ses nouveaux commandements, il a dit : Si l'on ne renonce à tout ce que l'on possède, on ne peut être mon disciple. Comme s'il eu dit clairement : Vous qui suivant le train de votre vie ancienne, désirez le bien d'autrui, agissez maintenant par l'esprit d une vie nouvelle en donnant votre propre bien. Mais voyons comme le Seigneur parle en cet Evangile : Si quelqu'un veut venir après moi, qu'il renonce à lui-même. Dans le passage que nous venons de citer, il est dit qu'il faut renoncer à son bien et dans celui-ci qu'il faut renoncer à soi-même. Et peut-être que ce n'est pas une chose fort difficile que d'abandonner son bien, mais elle l'est assurément beaucoup de s'abandonner soi-même. Car il faut un bien moindre effort pour renoncer à ce que l'on a, que pour renoncer à ce que l'on est.
+[Lectio]
+Épître de saint Jacques.
+!Jac 1:12-18.
+Mes bien-aimés, heureux l’homme qui supporte l’épreuve ; car, après avoir été éprouvé, il recevra la couronne de vie que Dieu a promise à ceux qui l’aiment. Que personne, lorsqu’il est tenté, ne dise : c’est Dieu qui me tente. Car Dieu ne tente point pour le mal, et lui-même ne tente personne. Mais chacun est tenté par sa propre convoitise, qui le sol­licite et l’entraîne. Ensuite la convoitise, lorsqu’elle a conçu, enfante le péché ; et le péché, lorsqu’il est con­sommé, produit la mort. Ne vous y trompez pas, mes frères bien-aimés. Toute grâce excellente et tout don parfait descend d’en haut, du Père des lumières, en qui n’existe aucune vicissitude ni ombre de changement. Volontairement, il nous a engendrés par la parole de vérité, aﬁn que nous soyons comme les prémices de ses créatures.
 
-[Lectio9 in 4 loco]
-Or le Seigneur commande à ceux qui viennent à lui de renoncer à toutes les choses qu'ils possèdent, parce que tous ceux qui entrent dans la carrière de la foi ont à combattre les esprits de ténèbres. Or ces esprits ne possèdent rien en propre dans ce monde. Il faut donc aussi être nu pour lutter contre des adversaires qui sont nus. Car si un homme qui est habillé lutter contre un autre qui ne l'est pas, il est bientôt renversé par terre en donnant prise sur lui par ses habits à son adversaire. Et comme l'on peut appeller toutes les choses de la terre des vêtements pour le corps, il est necéssaire que tous ceux qui entreprennent de combattre contre le démon, jettent ces vêtements, de crainte que l'adversaire des hommes ne s'en serve pour les renverser.
-&teDeum
+[Graduale]
+!Ps 88:21-23.
+J’ai trouvé David, mon serviteur ; j’ai répandu sur lui mon huile sainte. Ma main sera son appui, et mon bras sa force.
+V. L’ennemi n’aura jamais l’avantage sur lui, et le ﬁls de l’iniquité ne pourra lui nuire.
+
+!Ps 109:4.
+V. Tu es prêtre à jamais selon l’ordre de Melchisédech. Alléluia.
+
+[Tractus]
+!Ps 88:21-23. 
+J’ai trouvé David, mon serviteur ; j’ai répandu sur lui mon huile sainte. Ma main sera son appui, et mon bras sa force.
+V. L’ennemi n’aura jamais l’avantage sur lui, et le ﬁls de l’iniquité ne pourra lui nuire.
+!Ps 20:3-4.
+Vous lui avez ac­cordé ce que son cœur dési­rait ; vous ne lui avez point refusé ce que demandaient ses lèvres.
+V. Car vous l’avez prévenu de bénédictions de choix.
+V. Vous avez posé sur sa tête une couronne de pierres précieuses.
+
+[Evangelium]
+Évangile ++ selon saint Luc.
+!Luc 14:26-33.
+En ce temps-là, Jésus dit à la foule : « Si quelqu’un vient à moi, et ne hait pas son père, sa mère, sa femme, ses enfants, ses frères et ses sœurs, et même sa propre vie, il ne peut être mon dis­ciple. Et quiconque ne porte pas sa croix et ne me suit pas ne peut être mon disciple. « Car lequel d’entre vous, s’il veut bâtir une tour, ne s’as­sied d’abord pour calculer la dépense nécessaire et voir s’il a de quoi l’achever, de peur qu’a­près avoir posé les fonde­ments il ne puisse la termi­ner, et que tous ceux qui la verront ne se mettent à le railler, disant : “Cet homme a commencé à bâtir, et il n’a pu achever” ? Ou quel roi, s’il va faire la guerre à un autre roi, ne s’assied d’abord pour examiner s’il peut, avec dix mille hommes, faire face à un ennemi qui vient à lui avec vingt mille ? S’il ne le peut, tandis que celui-ci est encore loin, il lui envoie une ambassade pour deman­der la paix.
+
+[Offertorium]
+!Ps 88:25
+Ma vérité et ma miséricorde seront avec lui, et par mon nom grandira sa puissance. (Alléluia.)
+
+[Secreta]
+Dans votre bienveillance, Seigneur, acceptez les hosties qui vous sont dédiées par les mérites du bienheureux N., votre évêque et martyr, et faites qu’elles nous viennent continuellement en aide.
+$Per Dominum
+
+[Communio]
+!Ps 88:36-38.
+Je l’ai juré une fois pour toutes par ma sainteté : sa postérité sub­sistera éternellement et son trône sera devant moi comme le soleil, comme la pleine lune il durera toujours ; et le témoin qui est au ciel est ﬁdèle.
+
+[Postcommunio]
+Réconfortés par la réception du don sacré, nous vous de­mandons, ô Seigneur notre Dieu, de ressentir en nous, par l’intercession du bien­heureux N., votre évêque et martyr, l’effet du mystère que nous célébrons.
+$Per Dominum

@@ -1,21 +1,18 @@
-[Name]
+[Officium]
 Commune Apostolorum
 
 [Rule]
 Psalmi Dominica
 Antiphonas horas
+Psalm5 Vespera=116
+Psalm5 Vespera3=138
 
 [Ant Vespera]
-Hoc est præcéptum meum, * ut diligátis ínvicem, sicut diléxi vos.;;109
-Majórem caritátem * nemo habet, ut ánimam suam ponat quis pro amícis suis.;;110
-Vos amíci mei estis, * si fecéritis quæ præcípio vobis, dicit Dóminus.;;111
-Beáti pacífici, * beáti mundo corde: quóniam ipsi Deum vidébunt.;;112
-In patiéntia vestra * possidébitis ánimas vestras.;;116
-
-[Capitulum Vespera]
-!Eph 2:19
-v. Fratres: Jam non estis hóspites et ádvenæ: sed estis cives Sanctórum et doméstici Dei: superædificáti super fundaméntum Apostolórum, et Prophetárum, ipso summo angulári lápide Christo Jesu.
-$Deo gratias
+Hoc est præcéptum meum, * ut diligátis ínvicem, sicut diléxi vos.
+Majórem caritátem * nemo habet, ut ánimam suam ponat quis pro amícis suis.
+Vos amíci mei estis, * si fecéritis quæ præcípio vobis, dicit Dóminus.
+Beáti pacífici, * beáti mundo corde: quóniam ipsi Deum vidébunt.
+In patiéntia vestra * possidébitis ánimas vestras.
 
 [Hymnus Vespera]
 {:H-Exsultetorbisgaudiis:}v. Exsúltet orbis gáudiis:
@@ -75,7 +72,7 @@ Christus in fine sǽculi,
 Nos sempitérni gáudii
 Fáciat esse cómpotes.
 _
-Deo Patri sit glória,
+* Deo Patri sit glória,
 Ejúsque soli Fílio,
 Cum Spíritu Paráclito,
 Et nunc, et in perpétuum.
@@ -88,19 +85,11 @@ R. Et in fines orbis terræ verba eórum.
 [Ant 1]
 Tradent enim vos * in concíliis, et in synagógis suis flagellábunt vos, et ante reges et prǽsides ducémini propter me in testimónium illis, et Géntibus.
 
+[Oratio]
+!Oratio propria.
+
 [Invit]
-Regem Apostolórum Dóminum, * Veníte adorémus.
-
-[HymnusMMatutinumUS]
-Te nunc, Redémptor, quǽsumus,
-Ut ipsórum consórtio
-Jungas precántes sérvulos
-In sempitérna sǽcula.
-
-[HymnusM Matutinum]
-@:Hymnus Matutinum:s/Palmas et hymnos débitos/Laudes canéntes débitas/ s/tyránnum cónterit/triúmphat príncipem/ s/In his triúmphat Fílius,.(.*?Spíritus,)/$1\nExsúltat in his Fílius,/s s/\*.*//s
-@:HymnusMMatutinumUS
-Amen.
+Regem Apostolórum Dóminum, * Veníte, adorémus.
 
 [Hymnus Matutinum]
 {:H-AeternaChristi:}v. Ætérna Christi múnera,
@@ -129,21 +118,34 @@ Sicut fuit, sit júgiter
 Sæclum per omne glória.
 Amen.
 
+[HymnusM Matutinum]
+@:Hymnus Matutinum:s/Palmas et hymnos débitos/Laudes canéntes débitas/ s/tyránnum cónterit/triúmphat príncipem/ s/In his triúmphat Fílius,.(.*?Spíritus,)/$1\nExsúltat in his Fílius,/s s/\*.*//s
+@:HymnusMMatutinumUS
+Amen.
+
+[HymnusMMatutinumUS]
+Te nunc, Redémptor, quǽsumus,
+Ut ipsórum consórtio
+Jungas precántes sérvulos
+In sempitérna sǽcula.
+
 [Ant Matutinum]
 In omnem terram * exívit sonus eórum, et in fines orbis terræ verba eórum.;;18
 Clamavérunt justi, * et Dóminus exaudívit eos.;;33
 Constítues eos * príncipes super omnem terram: mémores erunt nóminis tui, Dómine.;;44
-V. In omnem terram exívit sonus eórum.
-R. Et in fines orbis terræ verba eórum.
 Príncipes populórum * congregáti sunt cum Deo Ábraham.;;46
 Dedísti hereditátem * timéntibus nomen tuum, Dómine.;;60
 Annuntiavérunt * ópera Dei, et facta ejus intellexérunt.;;63
+Exaltabúntur * córnua justi, allelúja.;;74
+Lux orta est * justo, allelúja, rectis corde lætítia, allelúja.;;96
+Custodiébant * testimónia ejus, et præcépta ejus, allelúja.;;98
+
+[Nocturn 2 Versum]
 V. Constítues eos príncipes super omnem terram.
 R. Mémores erunt nóminis tui, Dómine.
-Exaltabúntur * córnua justi. Allelúja.;;74
-Lux orta est * justo, allelúja, rectis corde lætítia. Allelúja.;;96
-Custodiébant * testimónia ejus, et præcépta ejus. Allelúja.;;98
-V. Nimis honoráti sunt amíci tui Deus.
+
+[Nocturn 3 Versum]
+V. Nimis honoráti sunt amíci tui, Deus.
 R. Nimis confortátus est principátus eórum.
 
 [Lectio1]
@@ -238,7 +240,7 @@ V. In omnem terram exívit sonus eórum, et in fines orbis terræ verba eórum.
 R. Cálicem Dómini bibérunt, et amíci Dei facti sunt.
 
 [Lectio8]
-In regeneratióne, cum séderit Fílius hóminis in sede majestátis suæ (quando et mórtui de corruptióne resúrgent incorrúpti) sedébitis et vos in sóliis judicántium, condemnántes duódecim tribus Ísraël: quia vobis credéntibus, illi crédere noluérunt. Et omnis qui relíquerit domum, vel fratres, aut soróres, aut patrem, aut matrem, aut uxórem, aut fílios, aut agros propter nomen meum, centúplum accípiet, et vitam ætérnam possidébit. Locus iste cum illa senténtia cóngruit, in qua Salvátor lóquitur: Non veni pacem míttere, sed gládium. Veni enim separáre hóminem a patre suo, et matrem a fília, et nurum a socru: et inimíci hóminis doméstici ejus. Qui ergo propter fidem Christi, et prædicatiónem Evangélii, omnes afféctus contémpserint, atque divítias et sǽculi voluptátes: isti centúplum recípient, et vitam ætérnam possidébunt.
+In regeneratióne, cum séderit Fílius hóminis in sede majestátis suæ (quando et mórtui de corruptióne resúrgent incorrúpti) sedébitis et vos in sóliis judicántium, condemnántes duódecim tribus Ísraël: quia vobis credéntibus, illi crédere noluérunt. Et omnis qui relíquerit domum, vel fratres, aut soróres, aut patrem, aut matrem, aut uxórem, aut fílios, aut agros propter nomen meum, céntuplum accípiet, et vitam ætérnam possidébit. Locus iste cum illa senténtia cóngruit, in qua Salvátor lóquitur: Non veni pacem míttere, sed gládium. Veni enim separáre hóminem a patre suo, et matrem a fília, et nurum a socru: et inimíci hóminis doméstici ejus. Qui ergo propter fidem Christi, et prædicatiónem Evangélii, omnes afféctus contémpserint, atque divítias et sǽculi voluptátes: isti céntuplum recípient, et vitam ætérnam possidébunt.
 
 [Responsory8]
 R. Isti sunt viri sancti, quos elégit Dóminus in caritáte non ficta, et dedit illis glóriam sempitérnam:
@@ -249,26 +251,26 @@ R. Quorum doctrína fulget Ecclésia, ut sole luna.
 R. Quorum doctrína fulget Ecclésia, ut sole luna.
 
 [Lectio9]
-Ex occasióne hujus senténtiæ quidam introdúcunt mille annos post resurrectiónem, dicéntes, tunc nobis centúplum ómnium rerum quas dimísimus, et vitam ætérnam esse reddéndam: non intelligéntes, quod, si in céteris digna sit repromíssio, in uxóribus appáreat turpitúdo: ut qui unam pro Dómino dimíserit centum recípiat in futúro. Sensus ergo iste est: Qui carnália pro Salvatóre dimíserit, spirituália recípiet: quæ comparatióne et mérito sui ita erunt, quasi si parvo número centenárius númerus comparétur.
+Ex occasióne hujus senténtiæ quidam introdúcunt mille annos post resurrectiónem, dicéntes, tunc nobis céntuplum ómnium rerum quas dimísimus, et vitam ætérnam esse reddéndam: non intelligéntes, quod, si in céteris digna sit repromíssio, in uxóribus appáreat turpitúdo: ut qui unam pro Dómino dimíserit centum recípiat in futúro. Sensus ergo iste est: Qui carnália pro Salvatóre dimíserit, spirituália recípiet: quæ comparatióne et mérito sui ita erunt, quasi si parvo número centenárius númerus comparétur.
 &teDeum
 
+[Versum 0]
+V. Dedísti hereditátem. 
+R. Timéntibus nomen tuum, Dómine.
+
 [Ant Laudes]
-Hoc est præcéptum meum, * ut diligátis ínvicem, sicut diléxi vos.
-Majórem caritátem * nemo habet, ut ánimam suam ponat quis pro amícis suis.
-Vos amíci mei estis, * si fecéritis quæ præcípio vobis, dicit Dóminus.
-Beáti pacífici, * beáti mundo corde: quóniam ipsi Deum vidébunt.
-In patiéntia vestra * possidébitis ánimas vestras.
+@:Ant Vespera
 
 [Capitulum Laudes]
-!Eph. 2:19-20
-v. Fratres: Jam non estis hóspites, et ádvenæ: sed estis cives Sanctórum, et doméstici Dei: superædificáti super fundaméntum Apostolórum et Prophetárum, ipso summo angulári lápide Christo Jesu.
-$Deo gratias.
+!Eph 2:19-20
+v. Fratres: Jam non estis hóspites et ádvenæ: sed estis cives Sanctórum et doméstici Dei: superædificáti super fundaméntum Apostolórum, et Prophetárum, ipso summo angulári lápide Christo Jesu.
+$Deo gratias
 
 [Hymnus Laudes]
-@Commune/C1:Hymnus Vespera
+@:Hymnus Vespera
 
 [HymnusM Laudes]
-@Commune/C1:HymnusM Vespera
+@:HymnusM Vespera
 
 [Versum 2]
 V. Annuntiavérunt ópera Dei.
@@ -277,58 +279,42 @@ R. Et facta ejus intellexérunt.
 [Ant 2]
 Vos qui reliquístis * ómnia, et secúti estis me, céntuplum accipiétis, et vitam ætérnam possidébitis.
 
-[Oratio]
-Quǽsumus, omnípotens Deus, ut beátus N. Apóstolus, cujus prævenímus festivitátem, tuum pro nobis implóret auxílium: ut a nostris reátibus absolúti a cunctis étiam perículis eruámur.
-$Per Dominum
-
 [Lectio Prima]
 !Act 5:41
 v. Ibant Apóstoli gaudéntes a conspéctu concílii, quóniam digni hábiti sunt pro nómine Jesu contuméliam pati.
 
-[Capitulum Tertia]
-@:Capitulum Laudes
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. In omnem terram * Exívit sonus eórum.
 R. In omnem terram * Exívit sonus eórum.
 V. Et in fines orbis terræ verba eórum.
 R. Exívit sonus eórum.
 &Gloria
 R. In omnem terram * Exívit sonus eórum.
-_
-V. Constítues eos príncipes super omnem terram.
-R. Mémores erunt nóminis tui, Dómine.
 
 [Capitulum Sexta]
 !Act 5:12
 v. Per manus autem Apostolórum fiébant signa et prodígia multa in plebe.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Constítues eos príncipes * Super omnem terram.
 R. Constítues eos príncipes * Super omnem terram.
 V. Mémores erunt nóminis tui, Dómine.
 R. Super omnem terram.
 &Gloria
 R. Constítues eos príncipes * Super omnem terram.
-_
-V. Nimis honoráti sunt amíci tui, Deus.
-R. Nimis confortátus est principátus eórum.
 
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Nimis honoráti sunt * Amíci tui, Deus.
 R. Nimis honoráti sunt * Amíci tui, Deus.
 V. Nimis confortátus est principátus eórum.
 R. Amíci tui, Deus.
 &Gloria
 R. Nimis honoráti sunt * Amíci tui, Deus.
-_
-V. Annuntiavérunt ópera Dei.
-R. Et facta ejus intellexérunt.
 
 [Ant Vespera 3]
 Jurávit Dóminus, * et non pœnitébit eum: Tu es sacérdos in ætérnum.;;109
@@ -341,7 +327,7 @@ Confortátus est * principátus eórum, et honoráti sunt amíci tui, Deus.;;138
 @:Versum 2
 
 [Ant 3]
-Estóte fortes * in bello, et pugnáte cum antíquo serpénte: et accipiétis regnum ætérnum. Allelúja.
+Estóte fortes * in bello, et pugnáte cum antíquo serpénte: et accipiétis regnum ætérnum, allelúja.
 
 [Lectio4 in 2 loco]
 De Expositióne sancti Augustíni Epíscopi super psalmum octogésimum sextum
@@ -349,7 +335,7 @@ De Expositióne sancti Augustíni Epíscopi super psalmum octogésimum sextum
 Fundaménta ejus in móntibus sanctis: díligit Dóminus portas Sion. Quare sunt fundaménta Apóstoli et Prophétæ? Quia eórum auctóritas portat infirmitátem nostram. Quare sunt portæ? Quia per ipsos intrámus ad regnum Dei. Prǽdicant enim nobis: et, cum per ipsos intrámus, per Christum intrámus; ipse est enim jánua. Et cum dicúntur duódecim portæ Jerúsalem, et una porta Christus et duódecim portæ Christus, quia in duódecim portis Christus; et ídeo duodenárius númerus Apostolórum. Sacraméntum magnum hujus duodenárii significátio est númeri. Sedébitis, inquit, super duódecim sedes, judicántes duódecim tribus Israël.
 
 [Lectio5 in 2 loco]
-Si duódecim sellæ ibi sunt, non est ubi sédeat tértius décimus Paulus Apóstolus, et non erit quómodo júdicet; et ipse se judicatúrum dixit, non hómines tantum, sed et ángelos. Quos ángelos, nisi apóstatas ángelos? Nescítis, inquit, quia ángelos judicábimus? Respondéret ergo turba: Quid te jactas judicatúrum? Ubi sedébis? Duódecim sedes dixit Dóminus duódecim Apóstolis, unus cécidit Judas, in locum ipsíus sanctus Matthías ordinátus est; implétus est duodenárius númerus sédium. Primo locum invéni, ubi sédeas; et sic te mináre judicatúrum. Duódecim ergo sedes quid sibi velint, vídeamus. Sacraméntum est cujúsdam universitátis; quia per totum orbem terrárum futúra erat Ecclésia, unde vocátur hoc ædifícium ad Christi compágem.
+Si duódecim sellæ ibi sunt, non est ubi sédeat tértius décimus Paulus Apóstolus, et non erit quómodo júdicet; et ipse se judicatúrum dixit, non hómines tantum, sed et ángelos. Quos ángelos, nisi apóstatas ángelos? Nescítis, inquit, quia ángelos judicábimus? Respondéret ergo turba: Quid te jactas judicatúrum? Ubi sedébis? Duódecim sedes dixit Dóminus duódecim Apóstolis, unus cécidit Judas, in locum ipsíus sanctus Matthías ordinátus est; implétus est duodenárius númerus sédium. Primo locum invéni, ubi sédeas; et sic te mináre judicatúrum. Duódecim ergo sedes quid sibi velint, videámus. Sacraméntum est cujúsdam universitátis; quia per totum orbem terrárum futúra erat Ecclésia, unde vocátur hoc ædifícium ad Christi compágem.
 
 [Lectio6 in 2 loco]
 Et ídeo, quia úndique venítur ad judicándum, duódecim sedes sunt; sicut, quia úndique intrátur in illam civitátem, duódecim portæ sunt. Non solum ergo illi duódecim et Apóstolus Paulus, sed quotquot judicatúri sunt, propter significatiónem universitátis, ad sedes duódecim pértinent; quemádmodum quotquot intrábunt, ad duódecim portas pértinent. Partes enim mundi quátuor sunt, Oriens, Occidens, Aquilo et Merídies. Istæ quátuor partes assídue nominántur in Scriptúris. Ab istis quátuor ventis, sicut dicit Dóminus in Evangélio, a quátuor ventis se collectúrum eléctos suos; ab ómnibus ergo istis quátuor ventis vocátur Ecclésia. Quómodo vocátur? Undique in Trinitáte vocátur. Non vocátur nisi per baptísmum in nómine Patris, et Fílii, et Spíritus Sancti. Quátuor ergo ter ducta duódecim inveniúntur.
@@ -361,11 +347,11 @@ In illo témpore: Dixit Petrus ad Jesum: Ecce nos relíquimus ómnia, et secúti
 _
 Homilía sancti Bedæ Venerábilis Presbýteri
 !Homilia in Natali S. Benedicti Ep.
-Perfectus ille est, qui abiens véndit ómnia quæ habet, et dat paupéribus, ac veniens sequitur Christum; habébit enim thesáurum non defícientem in cælis. Unde bene, interrogánte Petro, dixit tálibus Jesus: Amen dico vobis, quod vos qui secúti estis me, in regeneratióne, cum sederit Fílius hóminis in sede majestátis suæ, sedebitis et vos super sedes duodecim, judicántes duódecim tribus Israël. In hac quippe vita pro ejus nómine laborántes, in alia præmium speráre docuit, id est, in regeneratióne; cum videlicet in vitam immortalem fuérimus resurgéndo regenerati, qui in vitam caducam mortáliter erámus geniti.
+Perféctus ille est, qui ábiens vendit ómnia quæ habet, et dat paupéribus, ac véniens séquitur Christum; habébit enim thesáurum non deficiéntem in cælis. Unde bene, interrogánte Petro, dixit tálibus Jesus: Amen dico vobis, quod vos qui secúti estis me, in regeneratióne, cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos super sedes duódecim, judicántes duódecim tribus Israël. In hac quippe vita pro ejus nómine laborántes, in ália prǽmium speráre dócuit, id est, in regeneratióne; cum vidélicet in vitam immortálem fuérimus resurgéndo regeneráti, qui in vitam cadúcam mortáliter erámus géniti.
 
 [Lectio8 in 2 loco]
-Et justa prorsus retributio, ut, qui hic pro Christo humanæ glóriam celsitúdinis neglexérunt, illic a Christo judices glorificáti singuláriter cum eo assídeant qui a sequéndis ejus vestigiis nulla ratióne poterant avelli. Nemo autem putet duódecim tantum Apóstolos, quia pro Juda prævaricante Matthias eléctus est, tunc esse judicatúros; sicut nec duódecim solæ sunt tribus Israël judicándæ: alioquin tribus Levi, quæ tertiadecima est, injudicáta recedet.
+Et justa prorsus retribútio, ut, qui hic pro Christo humánæ glóriam celsitúdinis neglexérunt, illic a Christo júdices glorificáti singuláriter cum eo assídeant qui a sequéndis ejus vestígiis nulla ratióne póterant avélli. Nemo autem putet duódecim tantum Apóstolos, quia pro Juda prævaricánte Matthías eléctus est, tunc esse judicatúros; sicut nec duódecim solæ sunt tribus Israël judicándæ: alióquin tribus Levi, quæ tertiadécima est, injudicáta recédet.
 
 [Lectio9 in 2 loco]
-Et Paulus, qui tertiusdecimus est Apóstolus, judicándi sorte privábitur? cum ipse dicat: Nescitis quóniam ángelos judicábimus, quanto magis sæcularia? Sciéndum namque est, omnes, qui ad exemplum Apostolórum, sua reliquérunt ómnia et secúti sunt Christum, judices cum eo venturos, sicut étiam omne mortalium genus esse judicándum. Quia enim duodenario sæpe número solet in Scripturis univérsitas designari, per duódecim sedes Apostolórum ómnium numerositas judicántium, et, per duódecim tribus Israël, univérsitas eórum qui judicándi sunt, osténditur.
+Et Paulus, qui tertiusdécimus est Apóstolus, judicándi sorte privábitur? cum ipse dicat: Nescítis quóniam ángelos judicábimus, quanto magis sæculária? Sciéndum namque est, omnes, qui ad exémplum Apostolórum, sua reliquérunt ómnia et secúti sunt Christum, júdices cum eo ventúros, sicut étiam omne mortálium genus esse judicándum. Quia enim duodenário sæpe número solet in Scriptúris univérsitas designári, per duódecim sedes Apostolórum ómnium numerósitas judicántium, et, per duódecim tribus Israël, univérsitas eórum qui judicándi sunt, osténditur.
 &teDeum

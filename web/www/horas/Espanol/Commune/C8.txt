@@ -1,13 +1,8 @@
-[Name]
+[Officium]
 Officium Dedicationis Ecclesiae
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-9 lectiones
-Psalm5 Vespera=147
-Festum Domini
-Divinum auxilium
+[Missa]
+Terribilis
 
 [Ant Vespera]
 La santidad * es el adorno de tu casa, Señor, por días sin término.;;109
@@ -16,46 +11,51 @@ Esta es la casa del Señor, * construida sólidamente; está bien cimentada sobr
 La casa del Señor * está bien cimentada sobre la roca firme.;;112
 Todos tus muros * son de piedras preciosas, las torres de Jerusalén han sido construidas con joyas.;;147
 
-[Capitulum Vespera]
-!Ap 21:2
-v. Vi la ciudad santa, la nueva Jerusalén, que descendía del cielo, de junto a Dios, arreglada como una novia que se adorna para su esposo.
-$Deo gratias
-
 [Hymnus Vespera]
-{:H-Caelestisurbs:}v. ¡Oh Jerusalén, ciudad del cielo, 
-visión dichosa de paz, que, 
-edificada sobre piedras vivas, 
-te elevas hasta los astros, 
-y apareces coronada como una esposa 
-de millares y millares de ángeles!
+{:H-Caelestisurbs:}v. Jerusalén celeste,
+visión de paz dichosa:
+vivientes son las piedras
+de tu estructura hermosa;
+gloriosos paraninfos
+te siguen como a esposa:
+Ángeles a millares
+te cercan en redor.
 _
-¡Oh esposa de feliz destino, 
-dotada con la gloria del Padre, 
-fecundada con la gracia del Esposo!; 
-oh reina hermosísima, 
-desposada con Cristo Rey, 
-oh ciudad resplandeciente del cielo!
+¡Oh esposa felicísima!
+con la gloria dotada
+del Padre, y por el Hijo
+con dones hermoseada;
+Reina de Cristo príncipe,
+querida y bien amada;
+ciudad del cielo empíreo
+radiante de esplendor.
 _
-Tus puertas resplandecen 
-con piedras preciosas, y están 
-abiertas a todos; ya que todo mortal, 
-que por amor a Jesucristo 
-sufre tormentos, es llevado allí 
-por su virtud que le precede.
+Aquí brillan las puertas
+de perlas y diamantes:
+Las calles y las plazas
+rebosan de habitantes:
+allí felices moran
+los que en virtud florecen,
+y por Jesus padecen
+angustias y aflicción.
 _
-Este edificio está construido 
-con piedras labradas a golpes 
-del cincel salvador, bien trabajadas 
-y pulidas con el martillo del Artífice; 
-y perfectamente ensambladas, 
-se elevan a lo alto.
+Con el cincel cortadas,
+y á golpes de martillo
+labradas y bruñidas
+piedras de hermoso brillo,
+elevan esta fábrica
+del cielo en las alturas,
+unidas las junturas
+con arte y perfección.
 _
-El honor debido sea dado siempre 
-al altísimo Dios Padre, 
-y a su Hijo Unigénito, 
-y al augusto Paráclito, 
-y que a Él sean dados la alabanza, 
-el poder y la gloria, por los siglos eternos. 
+Demos gloria al Altísimo,
+al Padre sempiterno,
+y al Hijo de Dios único,
+igual y coeterno;
+tambien al Santo Espíritu,
+que espira su amor tierno,
+honor, imperio y gloria
+por los siglos, 
 Amén.
 
 [HymnusM Vespera]
@@ -102,36 +102,31 @@ R. Está bien cimentada sobre la roca firme.
 [Ant 1]
 El Señor ha consagrado * su morada, porque ésta es la casa de Dios, donde se invocará su nombre, del cual está escrito: Mi nombre habita allí, dice el Señor. 
 
-[Oratio1]
-Oh Dios, que invisiblemente contienes todas las cosas, y que con todo, para salvación del género humano, visiblemente muestras pruebas de tu poder: ilustra este templo en que moras, y concede que cuantos acuden aquí para rogar, consigan el beneficio de tu consolación en cualquier peligro en el que a ti clamaren.
-$Per Dominum
-
 [Oratio]
 Oh Dios, que cada año renuevas el día de la consagración de este tu santo templo, y representas siempre incólumes los sagrados misterios: escucha propicio las súplicas de tu pueblo, y concede al que viniere a pedirte beneficios a este santo templo, que su alma se llene de gozo al ver cumplidos sus deseos.
+$Per Dominum
+
+[Oratio in 2 loco]
+Oh Dios, que invisiblemente contienes todas las cosas, y que con todo, para salvación del género humano, visiblemente muestras pruebas de tu poder: ilustra este templo en que moras, y concede que cuantos acuden aquí para rogar, consigan el beneficio de tu consolación en cualquier peligro en el que a ti clamaren.
 $Per Dominum
 
 [Invit]
 La santidad es propia de la casa de Dios: * En ella adoremos a Cristo su Esposo.
 
-[Hymnus Matutinum]
-@Commune/C8:Hymnus Vespera
-
 [Ant Matutinum]
 Abrid, oh príncipes, vuestras puertas, * y elevaos, oh puertas de la eternidad.;;23
 Este Señor será mi Dios * y esta piedra será llamada casa de Dios.;;45
 Edificó * Moisés un altar al Señor Dios.;;47
-V. Vuestra casa, Señor, es casa de santidad.
-R. Por todos los siglos.
 No es este lugar, * sino la casa de Dios y la puerta del cielo.;;83
-Vio Jacob una escala,* cuya cima tocaba los cielos, y a los Ángeles que descendían, y dijo: Verdaderamente este lugar es santo.;;86
+Vio Jacob una escala, * cuya cima tocaba los cielos, y a los Ángeles que descendían, y dijo: Verdaderamente este lugar es santo.;;86
 Jacob erigió * una piedra en monumento, derramando óleo sobre ella.;;87
-V. Mi casa, 
-R. Será llamada casa de oración.
 El que se acoge * al asilo del Altísimo, descansará siempre bajo la protección del Dios del cielo.;;90
 El templo del Señor * es santo, es obra de Dios, es construcción de Dios.;;95
 Bendita * sea la gloria del Señor, en su lugar santo.;;98
-V. Esta es la casa del Señor firmemente edificada.  
-R. Está bien asentada sobre la piedra firme.
+
+[Nocturn 2 Versum]
+V. Mi casa, 
+R. Será llamada casa de oración.
 
 [Lectio1]
 Del Libro Segundo del Paralipómenos
@@ -168,7 +163,7 @@ R. Y acudirán a ella todas las naciones, y dirán: Gloria a ti, Señor.
 13 Cuando yo cierre el cielo y no haya lluvia, cuando mande a la langosta devorar la tierra, cuando mande la peste entre mi pueblo, 
 14 si mi pueblo, sobre el que se invoca mi nombre, se humilla, ruega y me busca la cara, si se aparta de sus malos caminos, yo oiré desde los cielos y le perdonaré su pecado y curaré a la tierra. 
 15 Mis ojos estarán siempre abiertos, y atentos mis oídos a su plegaria hecha en este lugar. 
-16 Yo elijo y santifico esta casa para que en ella sea invocado mi nombre y para morar en ella por siempre, y la tendré siempre ante mis ojos y en mi corazón.” 
+16 Yo elijo y santifico esta casa para que en ella sea invocado mi nombre y para morar en ella por siempre, y la tendré siempre ante mis ojos y en mi corazón.”
 
 [Responsory3]
 R. Bendice, Señor, esta casa que he edificado en tu nombre; y de los que acuden a este lugar, 
@@ -181,7 +176,7 @@ R. Oye sus preces en el más elevado solio de tu gloria.
 [Lectio4]
 Sermón de San Agustín, Obispo. 
 !Sermón 252 de tiempo.
-Cuantas veces, hermanos carísimos, celebramos la dedicación de un altar o de un templo, lo que se realiza en los templos materiales tiene lugar igualmente y plenamente en nosotros por una edificación espiritual, si tendemos a este objeto con fidelidad y diligencia, y si vivimos en la santidad y la justicia. Pues, a la verdad, no mintió aquel que dijo: “El templo de Dios, que sois vosotros, es además santo”. Y además: “Acaso no sabéis que vuestros cuerpos son templo del Espíritu Santo que está en vosotros”. Y por lo mismo, hermanos carísimos, ya que sin ningún mérito precedente, por la gracia de Dios merecimos ser constituidos templo de Dios, trabajemos cuanto podamos con su auxilio, a fin de que nuestro Señor, en su templo, esto es, en nosotros, nada halle que ofenda los ojos de su majestad. 
+Cuantas veces, hermanos carísimos, celebramos la dedicación de un altar o de un templo, lo que se realiza en los templos materiales tiene lugar igualmente y plenamente en nosotros por una edificación espiritual, si tendemos a este objeto con fidelidad y diligencia, y si vivimos en la santidad y la justicia. Pues, a la verdad, no mintió aquel que dijo: “El templo de Dios, que sois vosotros, es además santo”. Y además: “Acaso no sabéis que vuestros cuerpos son templo del Espíritu Santo que está en vosotros”. Y por lo mismo, hermanos carísimos, ya que sin ningún mérito precedente, por la gracia de Dios merecimos ser constituidos templo de Dios, trabajemos cuanto podamos con su auxilio, a fin de que nuestro Señor, en su templo, esto es, en nosotros, nada halle que ofenda los ojos de su majestad.
 
 [Responsory4]
 R. Al orar tus servidores en este lugar, 
@@ -239,15 +234,10 @@ R. Y las torres de Jerusalén serán edificadas con perlas.
 Para que no parezca que pronto prescindimos de aquel ciego por desprecio a los pobres, y pasamos al rico, aguardémosle, ya que también le aguardó el Señor; preguntémosle, ya que también le preguntó Cristo. Nosotros le preguntaremos porque no le conocemos. Él le interrogó porque le conocía. Nosotros le preguntamos a fin de saber cómo Jesús le preguntó a fin de que en el ejemplo de uno solo, conociéramos lo que se debe hacer para ver al Señor. Le preguntó a fin de que viésemos que nadie puede salvarse sin la confesión de la fe.
 &teDeum
 
-[Ant Laudes]
-La santidad * es el adorno de tu casa, Señor, por días sin término.
-Mi casa * será casa de oración.
-Esta es la casa del Señor * construida sólidamente, está bien cimentada sobre la roca firme. 
-La casa del Señor * está bien cimentada sobre la roca firme. 
-Todos tus muros * son de piedras preciosas, las torres de Jerusalén han sido construidas con joyas.
-
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Ap 21:2
+v. Vi la ciudad santa, la nueva Jerusalén, que descendía del cielo, de junto a Dios, arreglada como una novia que se adorna para su esposo.
+$Deo gratias
 
 [Hymnus Laudes]
 {:H-Altoexolympi:}v. El Hijo del eterno Padre, como piedra 
@@ -331,9 +321,6 @@ alabanzas y poder les sean dados
 por los siglos eternos.
 Amén.
 
-[Versum 2]
-@:Versum 1
-
 [Ant 2]
 Zaqueo, * baja enseguida, porque hoy tengo que alojarme en tu casa. Él bajó enseguida, y lo recibió muy contento. Hoy ha sido la salvación de esta casa.
 
@@ -341,17 +328,15 @@ Zaqueo, * baja enseguida, porque hoy tengo que alojarme en tu casa. Él bajó en
 !Ap 21:4-5
 v. Secará las lágrimas de sus ojos: ya no habrá muerte, ni luto, ni llanto, ni dolor, porque el primer mundo ha pasado. Y el que estaba sentado en el trono dijo: Ahora hago el universo nuevo.
 
-[Capitulum Tertia]
-@:Capitulum Laudes
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. La santidad, Señor, * Es el adorno de tu casa. 
 R. La santidad, Señor, * Es el adorno de tu casa. 
 V. Por días sin término. 
 R. Es el adorno de tu casa.
 &Gloria
 R. La santidad, Señor, * Es el adorno de tu casa. 
-_
+
+[Versum Tertia]
 V. Este es el lugar santo donde ora el sacerdote. 
 R. Por las faltas y pecados del pueblo.
 
@@ -360,30 +345,23 @@ R. Por las faltas y pecados del pueblo.
 v. Y escuché una voz potente que decía desde el trono: Esta es la morada de Dios con los hombres: y acampará entre ellos; ellos serán su pueblo; Dios mismo estará con ellos.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Este es el lugar santo * Donde ora el sacerdote. 
 R. Este es el lugar santo * Donde ora el sacerdote. 
 V. Por las faltas y pecados del pueblo. 
 R. Donde ora el sacerdote. 
 &Gloria
-R. Este es el lugar santo * Donde ora el sacerdote. 
-_
-V. Esta es la casa del Señor construida sólidamente.
-R. Está bien cimentada sobre la roca firme.
+R. Este es el lugar santo * Donde ora el sacerdote.
 
-[Capitulum Nona]
-!Ap 21:4-5
-v. Secará las lágrimas de sus ojos: ya no habrá muerte, ni luto, ni llanto, ni dolor, porque el primer mundo ha pasado. Y el que estaba sentado en el trono dijo: Ahora hago el universo nuevo.
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Esta es la casa del Señor, * Construida sólidamente. 
 R. Esta es la casa del Señor, * Construida sólidamente. 
 V. Está bien cimentada sobre la roca firme. 
 R. Construida sólidamente. 
 &Gloria
 R. Esta es la casa del Señor, * Construida sólidamente. 
-_
+
+[Versum Nona]
 V. La casa del Señor está bien cimentada.
 R. Sobre la roca firme.
 
@@ -393,3 +371,57 @@ R. Por días sin término.
 
 [Ant 3]
 Este lugar es tremendo; * verdaderamente es casa de Dios y puerta del cielo. 
+
+[Introitus]
+!Gen 28:17
+v.¡Oh cuan terrible es este lugar! En verdad que es la casa de Dios y la puerta del cielo. (T. P. Aleluya.)
+!Salm 83:2-3
+¡Qué hermosas son tus moradas, Señor! Mi alma suspira y  desfallece por los atrios del Señor.
+&Gloria
+v. ¡Oh cuan terrible es este lugar! En verdad que es la casa de Dios y la puerta del cielo. (T. P. Aleluya.)
+
+[Oratio] (ad missam)
+¡Oh Dios!, que todos los años haces revivir el día de la consagración de este santo templo, y nos conservas en vida para asistir a los santos misterios, escucha las preces de tu pueblo, y haz, que todo el que entre en este templo para pedir tus beneficios, tenga la alegría de haberlos conseguido.
+$Per Dominum
+
+[Lectio]
+Lectura del libro del Apocalipsis
+!Apoc 21:2-5
+En aquellos días: Vi la ciudad santa, la nueva Jerusalén, que bajaba del cielo, de junto a Dios, compuesta como novia engalanada para su esposo. Y oí una gran voz que venía del trono y decía: He aquí la morada de Dios entre los hombres; y el Señor habitará con ellos, y ellos serán su pueblo. El mismo Dios estará con ellos. Él enjugará toda lágrima de sus ojos y no habrá ya muerte, ni llanto, ni gemido, ni dolor alguno, porque el primer mundo habrá pasado. Y dijo el que estaba sentado en el trono: He aquí que renuevo todas las cosas.
+
+[Graduale]
+Dios ha hecho de este lugar el inestimable sacramento de su presencia, templo de santidad.
+V. ¡Oh, Dios!, a quien asiste el coro de ángeles, oye las plegarias de tus siervos. Aleluya, Aleluya.
+!Salm 137:2
+Me postraré cara a tu santo templo, y rendiré homenaje a tu nombre. Aleluya.
+
+[Tractus]
+!Salm 124:1-2
+Los que confían en el Señor son como el monte Sión, que no se tambalea jamás, y que está por siempre inmóvil. 
+v. Las montañas rodean a Jerusalén, el Señor rodea a su pueblo, ahora y por siempre.
+
+[Evangelium]
+Continuación ✠ del Santo Evangelio según san Lucas
+!Luc 19:1-10
+En aquel tiempo: Habiendo entrado Jesús en Jericó, atravesaba la ciudad. Y he aquí que un hombre, llama do Zaqueo, jefe de los publicanos y rico, trataba de ver quién era Jesús. Y no lo lograba a causa del gentío, por ser de pequeña estatura. Se adelantó, pues, corriendo, y subióse a un sicómoro para verle, porque había de pasar por allí. Y en llegando al lugar, alzó Jesús los ojos y le dijo: Zaqueo baja de prisa, porque hoy he de parar en tu casa. Bajó a toda prisa y le recibió gozoso. Todos, al ver esto, murmuraban diciendo: Ha entrado a hospedarse en casa de un hombre pecador. Más Zaqueo, puesto en presencia del Señor le dijo: Señor, la mitad de mis bienes doy a los pobres, y si en algo hubiere defraudado a alguien, le devuelvo cuatro veces más. Díjole Jesús: Éste ha sido día de salvación para esta casa, porque también éste es hijo de Abrahán. Porque el hijo del Hombre ha venido a buscar y a salvar lo que había perecido.
+
+[Offertorium]
+!1 Crón. 29:17-18
+¡Oh Dios y Señor!, con sincero corazón te he ofrecido todas estas cosas; y veo ahora gozoso a tu pueblo, aquí reunido. ¡Oh Dios de Israel!, consérvanos estas buenas disposiciones. Aleluya.
+
+[Secreta]
+!En las otras iglesias
+v. Te rogamos, Señor, atiendas a nuestras humildes súplicas y ofreciéndote los presentes votos, merezcamos llegar, con tu ayuda, a las eternas recompensas.
+$Per Dominum
+
+[Secreta 1 loco]
+Te rogamos, Señor, atiendas a nuestras humildes súplicas, a fin de que cuantos nos hallamos reunidos en el recinto de este templo para celebrar el día aniversario de su dedicación, te agrademos con la plena y perfecta consagración de cuerpo y alma; y ofreciéndote los presentes votos, merezcamos llegar, con tu ayuda, a los premios eternos.
+$Per Dominum
+
+[Communio]
+!Mat. 21:13
+Mi casa será llamada casa de oración, dice el Señor. En ella, todo el que pide, recibe; el que busca, encuentra; y al que llame se le abrirá. (T. P. Aleluya).
+
+[Postcommunio]
+¡OH Dios!, que con piedras viva s y escogidas preparas la eterna morada de tu gloria; dígnate auxiliar al pueblo que te implora, para que la extensión material de tu Iglesia en sus templos sea seguida de un crecimiento espiritual.
+$Per Dominum

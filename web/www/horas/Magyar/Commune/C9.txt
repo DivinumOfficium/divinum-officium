@@ -1,40 +1,20 @@
-[Name]
+[Officium]
 Officium Defunctorum
 
-[Rule]
-Psalmi Dominca
-Antiphonas horas
-Capitulum Versum 2 ad Laudes et Vesperas
-Omit Incipit Hymnus Capitulum Lectio Preces Commemoratio Suffragium Conclusion
-Limit Benedictiones Oratio
-Requiem gloria
-Special preces
-9 lectiones
+[Missa]
+Missa Defunctorum quotidianis: Requiem aeternam
 
 [Oratio_Fid]
-&Dominus_vobiscum2
-_
 $Oremus
-v. Isten ki a mindenség teremtője és megvátója vagy bocsásd meg szolgáid~
-és szolgálóid vétkeit, és könyörgéseink által add meg nekik a megbocsájtást~
-amire mindig vágyakoztak
+v. Isten ki a mindenség teremtője és megvátója vagy bocsásd meg szolgáid és szolgálóid vétkeit, és könyörgéseink által add meg nekik a megbocsájtást amire mindig vágyakoztak
 $Qui vivis
-
-[Oratio 1]
-&pater_noster
-_
-&psalm(145)
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
-_
-[Oratio 2]
-&pater_noster
 
 [Invit]
 A Királyt, aki által minden él * jöjjetek, imádjuk!
 
 [Lectio1]
 Olvasmány Jób könyvéből
-!Job 7:16-21
+!Jób 7:16-21
 16 Eltűnök én immár, nem élek örökké, hagyj hát magamra, éltem egy lehelet.
 17 Vajon mi az ember, hogy oly nagyra tartod, arra méltatod, hogy törődj vele.
 18 Hisz meglátogatod minden áldott reggel, és próbára teszed minden pillanatban.
@@ -43,7 +23,7 @@ Olvasmány Jób könyvéből
 21 Miért nem bocsátod meg a bűneimet, vétkem fölött miért nem hunysz szemet?
 
 [Lectio2]
-!Job 10:1-7
+!Jób 10:1-7
 1 Undorral tekintek saját életemre, szabadon hagyom, áradjon panaszom, gyötrődő lelkemet kiöntöm.
 2 Esengek Istenhez: Ne ítélj el! Hadd tudjam meg, miért támadtál meg!
 3 Hasznod van tán abból, ha erőszakhoz nyúlsz, kezed remekművét hogyha meggyalázod, a bűnösök terveit meg jóváhagyod?
@@ -53,7 +33,7 @@ Olvasmány Jób könyvéből
 7 noha jól tudod, hogy nem vagyok bűnös? Nem szabadít ki senki sem kezedből?
 
 [Lectio3]
-!Job 10:8-12
+!Jób 10:8-12
 8 A te kezed formált és teremtett, most meg mást gondoltál, s elpusztítasz?
 9 Agyagból formáltál - csak emlékezzél! -, s most újra porrá változtatnál vissza?
 10 Nemde kiöntöttél, mint a tejet szokták, aztán sajt módjára hagytál megalvadni.
@@ -62,7 +42,7 @@ Olvasmány Jób könyvéből
 
 [Lectio4]
 Jób könyvéből
-!Job 13:22-28
+!Jób 13:22-28
 22 Aztán szólíts, és én megfelelek neked, de én szóljak előbb, s te csak választ adj.
 23 Mekkorák lehetnek bűneim, hibáim? Fedd fel adósságom s minden gonosztettem!
 24 Miért rejted el arcodat előlem, miért veszel olybá, mint ellenségedet?
@@ -72,7 +52,7 @@ Jób könyvéből
 28 Mint a pudvás fa, szétesik életem, mint a ruhadarab, amit molyok rágnak.
 
 [Lectio5]
-!Job 14:1-6
+!Jób 14:1-6
 1 Minden ember, aki anyától született, szegény a napokban, de jóllakik gonddal.
 2 Mint virág kinyílik, azután elhervad, eltűnik, mint árnyék, nincsen maradása.
 3 Nyitva tartod te is szemedet fölötte, s bírói székedhez viszed ítéletre.
@@ -81,7 +61,7 @@ Jób könyvéből
 6 akkor ne nézz rá, hagyd inkább magára, amíg le nem tölti idejét a szolga.
 
 [Lectio6]
-!Job 14:13-16
+!Jób 14:13-16
 13 Ó, bár elrejtenél az alvilág ölében, elbújtatnál, míg haragod elül, adnál nekem időt, aztán gondolnál rám!
 14 Ha meghalna az ember, de föléledne újra, szolgálati időm szívesen tölteném, míg nem jön valaki, aki fölváltana.
 15 Akkor szólíthatnál, és én válaszolnék, akkor te is vágynál kezed műve után.
@@ -89,18 +69,18 @@ Jób könyvéből
 
 [Lectio7]
 Jób könyvéből
-!Job 17:1-3; 17:11-15
+!Jób 17:1-3; 17:11-15
 1 Összetörött immár énbennem a lélek, és miattam gyűlnek egybe a sírásók.
 2 Valóban, gúnyolódók céltáblája lettem, s azt kell egyre néznem, hogyan civakodnak.
 3 Tégy le óvadékot értem önmagadnál! Ki volna más, ki értem kezességet vállal?
 11 Napjaim elenyésznek, terveim meg egyre távolabb kerülnek, a szívem rostjait szétmarcangolták.
-12 "A napnak kitér az éj - így szokták mondani -, közel a fény, amely elűzi a sötétséget."
+12 „A napnak kitér az éj - így szokták mondani -, közel a fény, amely elűzi a sötétséget.”
 13 Alvilágban lakni, ez a reménységem, ágyamat megvetni, ott a sötétségben.
-14 Síromhoz így szólok: "Az apám vagy nékem!" A férgekhez meg: "Anyám, s nővéreim!"
+14 Síromhoz így szólok: „Az apám vagy nékem!” A férgekhez meg: „Anyám, s nővéreim!”
 15 Hol marad számomra még bármi reménység, ki leli meg - a boldogságomat?
 
 [Lectio8]
-!Job 19:20-27
+!Jób 19:20-27
 20 És a bőröm alatt elpusztul a húsom, csontjaim csupaszok, mint valami fogak.
 21 Könyörüljetek meg rajtam, barátaim, mert utolért az Istennek keze.
 22 Miért üldöztök ti is, akárcsak az Isten? Nem tudtok már végre jóllakni húsommal?
@@ -111,13 +91,98 @@ Jób könyvéből
 27 Látni fogom, s ő a pártomon lesz, kit szemem lát, az nem lesz majd idegen, vágyódás tölti el veséimet.
 
 [Lectio9]
-!Job 10:18-22
+!Jób 10:18-22
 18 Miért hoztál elő anyámnak méhéből? Haltam volna meg, mielőtt szem látott!
 19 Úgy volnék csak, mintha sose lettem volna, vittek volna sírba anyámnak méhéből.
 20 Éltem napjainak nem kevés a száma? Vedd le rólam szemed, hadd örüljek egy kicsit,
 21 mielőtt elmegyek, s vissza nem térek a sötétség és az árnyék országából.
 22 A sötétség honából, hol nincs semmi rend, hol a napvilág is fekete éjszaka.
 
-[Oratio 21]
-&pater_noster
-&psalm(129)
+[Lectio]
+Olvasmány a Jelenések könyvéből
+!Jel 14:13
+v. Erre szózatot hallottam az égből: „Jegyezd fel: Mostantól fogva boldogok a halottak, akik az Úrban haltak meg. Igen, mondja a Lélek, hadd pihenjék ki fáradalmaikat, mert tetteik elkísérik őket.”
+
+[Sequentia]
+!elmaradhat
+Ama végsô harag napja
+A világot tűznek adja,
+Dávid így s Szibilla hagyja.
+_
+Reszket akkor holt meg élô,
+Ha megjön a nagy Itélô,
+Mindeneket lattal mérô.
+_
+Csodakürtök zengenek meg,
+Sírok éjén átremegnek:
+Itéletre mindeneknek.
+_
+Csodájára a halálnak:
+Aki rég por, talpra támad,
+Számot adni bírájának.
+_
+Kézzel írt könyv nyílik ottan:
+Világ terhe, minden, ott van,
+Itéletre felrovottan.
+_
+Bíró majd ha széket űl ott,
+Minden rejtek felderűl ott,
+Zsoldot bűn el nem kerűl ott.
+_
+Én szegény, ott mit beszéljek,
+Pártfogómul kit reméljek,
+Hol a szent is alig él meg?
+_
+Félelmetes Fejedelem,
+Kinél ingyen a kegyelem:
+Jóság kútja, légy jó velem!
+_
+Kegyes Jézus kérlek téged
+Értem álltál emberséget,
+Ama nap ne adj rossz véget.
+_
+Munkád, könnyed értem vesztek:
+Ennyi kínod, szent kereszted,
+Ne maradjon kárbavesztett.
+_
+Bírája a bosszúlásnak,
+Add kegyelmét tisztulásnak,
+Mig itt nincs a számadásnap.
+_
+Bűneimben sóhajtozván,
+Vétkemtôl vet lángot orcám,
+Légy kegyelmes, Uram, hozzám.
+_
+Magdolnához lehajoltál,
+A latorhoz kegyes voltál,
+Énbelém is reményt oltál.
+_
+Méltó imát nem tud ajkam,
+Te könyörülj, Jóság, rajtam,
+Ne veszíts el örök jajban.
+_
+Báránykáid közé végy föl,
+Keríts el a gödölyéktôl,
+Jobbra állass ama széktôl.
+_
+Ha a rosszak zavarodnak,
+Fojtó lángok kavarognak,
+Akkor engem hívj áldottnak.
+_
+Térden kérlek, görnyedetten;
+Sír a lelkem megtörötten:
+Ott a végnél, állj mellettem!
+_
+Könnyel árad ama nagy nap,
+Hamvukból ha föltámadnak
+A bűnösök s számot adnak.
+_
+Uram, nekik adj jó véget,
+Kegyes Jézus, kérünk téged,
+Add meg nekik békességed.
+Amen.
+
+[Evangelium]
+Evangélium + szent János Apostol kőnyvéből
+!Jn 6:51-55
+v. Én vagyok a mennyből alászállott élő kenyér. Aki e kenyérből eszik, örökké él. A kenyér, amelyet adok, a testem a világ életéért.”  Erre vita támadt a zsidók közt: „Hogy adhatja ez a testét eledelül?”  Jézus ezt mondta rá: „Bizony, bizony, mondom nektek: Ha nem eszitek az Emberfia testét és nem isszátok a vérét, nem lesz élet bennetek.  De aki eszi az én testemet, és issza az én véremet, annak örök élete van, s feltámasztom az utolsó napon.  A testem ugyanis valóságos étel, s a vérem valóságos ital.

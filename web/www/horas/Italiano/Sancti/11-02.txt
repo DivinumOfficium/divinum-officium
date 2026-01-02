@@ -1,25 +1,8 @@
 [Rank]
 In Commemoratione Omnium Fidelium Defunctorum;;Duplex;;3;;ex C9
 
-[RankNewcal]
-In Commemoratione Omnium Fidelium Defunctorum;;Duplex Solemnity;;6;;ex C9
-
-[Rank1960]
+[Rank] (rubrica 196)
 In Commemoratione Omnium Fidelium Defunctorum;;I. classis;;6;;ex C9
-
-[Rule]
-ex C9
-Psalmi Dominica
-Antiphonas horas
-Special Conclusio
-Capitulum Versum 2 ad Laudes et Vesperas
-Omit Incipit Hymnus Capitulum Lectio Preces Commemoratio Suffragium
-Limit Benedictiones Oratio
-Requiem gloria
-9 lectiones
-Responsory9
-no Te Deum
-(rubrica 1955 aut rubrica 1960) No prima Vespera
 
 [Ant Vespera]
 Piacerò al Signore * nella regione dei vivi.;;114
@@ -28,42 +11,24 @@ Il Signore ti protegge * da ogni male: protegga il Signore l'anima tua.;;120
 Se tu, o Signore, baderai alle iniquità: * chi, o Signore, potrà sostenerti?;;129
 Non disprezzare, * o Signore, l'opera delle tue mani.;;137
 
-[Versum 1]
-V. Udii una voce dal cielo, che mi diceva:
-R. Beati i morti che muoiono nel Signore.
-
-[Versum 2]
-V. Udii una voce dal cielo, che mi diceva:
-R. Beati i morti che muoiono nel Signore.
-
-[Versum 3]
-V. Udii una voce dal cielo, che mi diceva:
-R. Beati i morti che muoiono nel Signore.
-
-[Initial]
-$Pater noster
-$Ave Maria
-(sed rubrica 1960 aut rubrica innovata omittuntur)
-
-[Special Completorium]
-$Confiteor
-$Misereatur
-$Indulgentiam
-
-&psalm(122)
-
-&psalm(141)
-
-&psalm(142)
-
-&psalm(233)
-
-&special('Oratio mortuorum1', 'Italiano')
-
-&special('Conclusio', 'Italiano')
+[Oratio mortuorum]
+#Oratio
+$Pater noster Et
+_ 
+V. Dalla porta dell'inferno.
+R. Libera, o Signore, le loro anime.
+V. Riposino in pace.
+R. Amen.
+V. Signore, ascolta la mia preghiera.
+R. E il mio grido giunga a Te.
+&Dominus_vobiscum2
+$Oremus
+v. O Dio, Creatore e Redentore di tutti gli uomini fedeli, concedi alle anime dei tuoi servi e delle tue serve la remissione di tutti i peccati, affinché quella misericordia che sempre desiderarono, per le pie suppliche l'ottengano,
+$Qui vivis
 
 [Oratio mortuorum1]
-&pater_noster
+#Oratio
+$Pater noster Et
 _ 
 V. Dalla porta dell'inferno.
 R. Libera, o Signore, le loro anime.
@@ -72,45 +37,9 @@ R. Amen.
 V. Signore, ascolta la mia preghiera.
 R. E il mio grido giunga a Te.
 &Dominus_vobiscum2
-_
 $Oremus
 v. Signore, sii propizio alle anime di tutti i tuoi servi e serve per cui supplichiamo umilmente la tua maestà: affinché, per questi suffragi di pie preghiere, meritino di giungere all'eterno riposo. 
-$Per Dominum 
-
-[Oratio mortuorum]
-&pater_noster
-_ 
-V. Dalla porta dell'inferno.
-R. Libera, o Signore, le loro anime.
-V. Riposino in pace.
-R. Amen.
-V. Signore, ascolta la mia preghiera.
-R. E il mio grido giunga a Te.
-&Dominus_vobiscum2
-_
-$Oremus
- O Dio, Creatore e Redentore di tutti gli uomini fedeli, concedi alle anime dei tuoi servi e delle tue serve la remissione di tutti i peccati, affinché quella misericordia che sempre desiderarono, per le pie suppliche l'ottengano,
-$Qui vivis 
-
-[Oratio mortuorum2]
-&pater_noster
-_ 
-V. Dalla porta dell'inferno.
-R. Libera, o Signore, le loro anime.
-V. Riposino in pace.
-R. Amen.
-V. Signore, ascolta la mia preghiera.
-R. E il mio grido giunga a Te.
-&Dominus_vobiscum2
-_
-$Oremus
-Ti innalziamo, Signore, umili preghiere per le anime di tutti i tuoi servi e serve: affinché perdoni loro, clemente, quanto contrassero nella vita terrena, e ponga fine, benigno, alle loro pene.
 $Per Dominum
-
-[Conclusio]
-&Gloria
-V. Riposino in pace.
-R. Amen.
 
 [Lectio1]
 !Job 7:16-21
@@ -152,7 +81,7 @@ La memoria, la preghiera affettuosa che si ha dai fedeli verso i carissimi defun
 
 [Lectio6]
 !Cap. 18
-Stando cosi le cose, non crediamo di portar sollievo ai morti, verso cui abbiam tanta cura, se non offriamo per essi solennemente il sacrificio o dell'altare o di orazioni o di elemosine sebbene non giungano a tutti quelli per cui s'innalzano, ma solo a quei che, mentre vivono, meritano che giovino loro. Però siccome noi non sappiamo chi siano costoro, fa d'uopo che ciò facciamo per tutti i cristiani, affinché niuno di quelli cui questi benefizi possono e debbono giovare, ne sia escluso. Poiché è meglio ch'essi sopravanzino a quelli cui non fan né male né bene, che manchino a quelli cui arrecano giovamento. Ciascuno poi farà la cosa con maggior diligenza per i parenti, affinché i suoi facciano lo stesso per lui. Tutto ciò poi che si fa per seppellire il corpo non è già un soccorso per la salvezza, ma un ufficio di umanità, per l'affetto onde nessuno mai ebbe in odio la propria carne. Quindi è doveroso che s'abbia verso la carne del prossimo la maggior cura possibile, quando sarà uscito di vita colui che la rivestiva. E se ciò fanno quelli che non credono alla risurrezione della carne, molto più debbon farlo quelli che ci credono anche perché questo ufficio reso al corpo morto, ma che un dì risusciterà e vivrà in eterno, sia in certo modo testimonianza di una tal fede!
+Stando così le cose, non crediamo di portar sollievo ai morti, verso cui abbiam tanta cura, se non offriamo per essi solennemente il sacrificio o dell'altare o di orazioni o di elemosine sebbene non giungano a tutti quelli per cui s'innalzano, ma solo a quei che, mentre vivono, meritano che giovino loro. Però siccome noi non sappiamo chi siano costoro, fa d'uopo che ciò facciamo per tutti i cristiani, affinché niuno di quelli cui questi benefizi possono e debbono giovare, ne sia escluso. Poiché è meglio ch'essi sopravanzino a quelli cui non fan né male né bene, che manchino a quelli cui arrecano giovamento. Ciascuno poi farà la cosa con maggior diligenza per i parenti, affinché i suoi facciano lo stesso per lui. Tutto ciò poi che si fa per seppellire il corpo non è già un soccorso per la salvezza, ma un ufficio di umanità, per l'affetto onde nessuno mai ebbe in odio la propria carne. Quindi è doveroso che s'abbia verso la carne del prossimo la maggior cura possibile, quando sarà uscito di vita colui che la rivestiva. E se ciò fanno quelli che non credono alla risurrezione della carne, molto più debbon farlo quelli che ci credono anche perché questo ufficio reso al corpo morto, ma che un dì risusciterà e vivrà in eterno, sia in certo modo testimonianza di una tal fede!
 
 [Lectio7]
 Dalla prima Lettera dell'Apostolo san Paolo ai Corinti.
@@ -182,12 +111,6 @@ Dalla prima Lettera dell'Apostolo san Paolo ai Corinti.
 43 se si semina ignobile, risorgerà glorioso; si semina inerte, risorgerà robusto; 
 44 si semina un corpo animale, risorgerà un corpo spirituale.
 
-[Responsory8]
-R. Signore, non volermi giudicare secondo le mie azioni: nessuna cosa degna ho io fatta dinanzi a te; onde supplico la tua maestà. 
-* Che tu, o Dio, cancelli la mia iniquità.
-V. Lavami ancor più, o Signore, dalla mia ingiustizia, e mondami dal mio peccato. 
-R. Che tu, o Dio, cancelli la mia iniquità.
-
 [Lectio9]
 !1 Cor 15:51-58
 51 Ecco, io vi dico un mistero: Risorgeremo, si, tutti, ma non tutti saremo cangiati. 
@@ -210,10 +133,36 @@ $Requiem
 R. Liberami, o Signore, dalla morte eterna in quel giorno tremendo, 
 * Quando si sconvolgeranno e cieli e terra, * Quando verrai a giudicare il mondo col fuoco.
 
+[Conclusio]
+!Conclusio specialis
+&Gloria
+V. Riposino in pace.
+R. Amen.
+
+[Versum 2]
+V. Udii una voce dal cielo, che mi diceva:
+R. Beati i morti che muoiono nel Signore.
+
+[Oratio mortuorum2]
+#Oratio
+$Pater noster Et
+_ 
+V. Dalla porta dell'inferno.
+R. Libera, o Signore, le loro anime.
+V. Riposino in pace.
+R. Amen.
+V. Signore, ascolta la mia preghiera.
+R. E il mio grido giunga a Te.
+&Dominus_vobiscum2
+_
+$Oremus
+Ti innalziamo, Signore, umili preghiere per le anime di tutti i tuoi servi e serve: affinché perdoni loro, clemente, quanto contrassero nella vita terrena, e ponga fine, benigno, alle loro pene.
+$Per Dominum
+
 [Special Prima]
 &special('Initial', 'Italiano')
 $Credo
-(sed rubrica 1960 aut rubrica innovata omittitur)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(87)
 
@@ -223,19 +172,20 @@ $Credo
 
 &special('Oratio mortuorum2', 'Italiano')
 
-&martyrologium
-
+&special('#Martyrologium', 'Italiano')
+_
 V. I giusti saranno ricordati eternamente.
 R. Non temeranno di udire sinistre parole.
 _
 $Oremus
 O Dio, largitore di perdono e amatore della salvezza degli uomini: preghiamo la tua clemenza, di concedere che le anime di tutti i fedeli, che sono uscite di questo mondo, per intercessione della beata sempre Vergine Maria e di tutti i tuoi Santi, giungano al possesso della beatitudine eterna. Per Cristo Signor nostro.
-R. Amen
+$Amen
 
 &special('Conclusio', 'Italiano')
 
 [Special Tertia]
 &special('Initial', 'Italiano')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(37,1,11)
 
@@ -249,6 +199,7 @@ R. Amen
 
 [Special Sexta]
 &special('Initial', 'Italiano')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(69)
 
@@ -262,6 +213,7 @@ R. Amen
 
 [Special Nona]
 &special('Initial', 'Italiano')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
 
 &psalm(101,1,13)
 
@@ -270,5 +222,22 @@ R. Amen
 &psalm(101,24,29)
 
 &special('Oratio mortuorum', 'Italiano')
+
+&special('Conclusio', 'Italiano')
+
+[Special Completorium]
+$Confiteor
+$Misereatur
+$Indulgentiam
+
+&psalm(122)
+
+&psalm(141)
+
+&psalm(142)
+
+&psalm(233)
+
+&special('Oratio mortuorum1', 'Italiano')
 
 &special('Conclusio', 'Italiano')

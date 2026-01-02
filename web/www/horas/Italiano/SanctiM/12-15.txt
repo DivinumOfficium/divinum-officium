@@ -1,0 +1,15 @@
+[Lectio5]
+@Sancti/12-15:Lectio4:s/Noi.*//s
+
+[Lectio6]
+@Sancti/12-15:Lectio4:s/.*(Noi)/$1/s
+
+[Lectio9]
+@Sancti/12-15:Lectio7:s/Salve.*//s
+
+[Lectio10]
+@Sancti/12-15:Lectio7:s/.*(Salve)/$1/s s/$/~/
+@Sancti/12-15:Lectio8:s/C\’è.*//s
+
+[Lectio11]
+@Sancti/12-15:Lectio8:s/.*(C\’è)/$1/s

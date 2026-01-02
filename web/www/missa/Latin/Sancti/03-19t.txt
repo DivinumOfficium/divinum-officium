@@ -1,26 +1,22 @@
+[Officium]
+S. Joseph Sponsi B.M.V. Confessoris
+
 [Rank]
-S. Joseph Sponsi B.M.V. Confessoris;;Duplex;;3;;ex C5
+;;Duplex;;3;;ex C5
 
 [Rule]
 Gloria
 Prefatio=Joseph=Festivitate
 
 [Introitus]
-!Ps 91:13-14.
-v. Justus ut palma florébit: sicut cedrus Líbani multiplicábitur: plantátus in domo Dómini: in átriis domus Dei nostri. (Allelúja, allelúja.)
-!Ps 91:2.
-Bonum est confiteri Dómino: et psállere nómini tuo, Altíssime.
-&Gloria
-v. Justus ut palma florébit: sicut cedrus Líbani multiplicábitur: plantátus in domo Dómini: in átriis domus Dei nostri. (Allelúja, allelúja.)
+@Commune/C5-1
 
 [Oratio]
 Sanctíssimæ Genetrícis tuæ Sponsi, quǽsumus, Dómine, méritis adjuvémur: ut, quod possibílitas nostra non óbtinet, ejus nobis intercessióne donétur:
 $Qui vivis
 
 [Lectio]
-Léctio libri Sapiéntiæ.
-!Eccli 45:1-6.
-Diléctus Deo et homínibus, cujus memória in benedictióne est. Símilem illum fecit in glória sanctórum, et magnificávit eum in timóre inimicórum, et in verbis suis monstra placávit. Glorificávit illum in conspéctu regum, et jussit illi coram pópulo suo, et osténdit illi glóriam suam. In fide et lenitáte ipsíus sanctum fecit illum, et elégit eum ex omni carne. Audívit enim eum et vocem ipsíus, et indúxit illum in nubem. Et dedit illi coram præcépta, et legem vitæ et disciplínæ.
+@Commune/C5b
 
 [Graduale]
 !Ps 20:4-5.
@@ -44,8 +40,7 @@ Sequéntia ++ sancti Evangélii secúndum Matthǽum.
 Cum esset desponsáta Mater Jesu María Joseph, ántequam convenírent, invénta est in útero habens de Spíritu Sancto. Joseph autem, vir ejus, cum esset justus et nollet eam tradúcere, vóluit occúlte dimíttere eam. Hæc autem eo cogitánte, ecce, Angelus Dómini appáruit in somnis ei, dicens: Joseph, fili David, noli timére accípere Maríam cónjugem tuam: quod enim in ea natum est, de Spíritu Sancto est. Páriet autem fílium, et vocábis nomen ejus Jesum: ipse enim salvum fáciet pópulum suum a peccátis eórum.
 
 [Offertorium]
-!Ps 88:25.
-Véritas mea et misericórdia mea cum ipso: et in nómine meo exaltábitur cornu ejus. (Allelúja.)
+@Commune/C2
 
 [Secreta]
  Débitum tibi, Dómine, nostræ réddimus servitútis, supplíciter exorántes: ut, suffrágiis beáti Joseph, Sponsi Genetrícis Fílii tui Jesu Christi, Dómini nostri, in nobis tua múnera tueáris, ob cujus venerándam festivitátem laudis tibi hóstias immolámus.

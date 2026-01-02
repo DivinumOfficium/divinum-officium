@@ -1,8 +1,12 @@
-[Rank]
-S. Franciscæ Viduæ Romanæ;;Duplex;;3;;vide C7a
+[Officium]
+S. Franciscæ Romanæ Viduæ
+(sed rubrica monastica)
+S. Franciscæ Romanæ Viduæ O. N.
 
-[RankNewcal]
-S. Franciscæ Viduæ Romanæ;;Duplex;;3.1;;vide C7a
+[Rank]
+;;Duplex;;3;;vide C7a
+(sed rubrica monastica)
+;;Simplex;;1.1;;vide C7a
 
 [Rule]
 vide C7a;
@@ -11,4 +15,3 @@ Gloria
 [Oratio]
 Deus, qui beátam Francíscam fámulam tuam, inter cétera grátiæ tuæ dona, familiári Angeli consuetúdine decorásti: concéde, quǽsumus; ut, intercessiónis ejus auxílio, Angelórum consórtium cónsequi mereámur.
 $Per Dominum
-

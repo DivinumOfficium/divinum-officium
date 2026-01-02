@@ -1,5 +1,8 @@
+[Officium]
+Feria IV infra Hebdomadam IV Adventus
+
 [Rank]
-Feria IV infra Hebdomadam IV Adventus;;Feria major;;2
+;;Feria major;;2.1
 
 [Rule]
 Oratio Dominica
@@ -31,5 +34,11 @@ De Isaía Prophéta
 [Responsory3]
 @Tempora/Adv4-0:Responsory9
 
+[Ant Laudes] (rubrica cisterciensis)
+@Tempora/Adv4-0
+
 [Ant 2]
 Ponam in Sion * salútem, et in Jerúsalem glóriam meam, allelúja.
+
+[Ant 2] (rubrica cisterciensis)
+Non auferétur * sceptrum de Juda, et dux de fémore ejus, donec véniat qui mitténdus est: et ipse erit expectátio Géntium.

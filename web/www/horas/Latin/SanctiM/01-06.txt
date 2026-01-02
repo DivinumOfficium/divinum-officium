@@ -4,17 +4,22 @@
 12 lectiones
 Psalmi Dominica
 Doxology=Epi
+Festum Domini
 
-[Capitulum Vespera]
-@Sancti/01-06
-_
-@Sancti/01-06:Responsory Sexta:1-6
+[Responsory Vespera 1] (rubrica Barroux)
+@:RV1:s/ \*/\n*/
+
+[Responsory Vespera 1] (rubrica cisterciensis)
+@:RV1
+
+[HymnusM Matutinum]
+@Sancti/01-06:HymnusM Vespera
 
 [AntMatutinumM]
 Suscépimus, * Deus, misericórdiam tuam, † in médio templi tui.;;47
 Homo natus est * in ea, et ipse fundávit eam Altíssimus.;;86
 Notum * fecit Dóminus allelúja; † salutáre suum, allelúja.;;97
-Tria sunt * múnera quae obtulérunt Magi Dómino, aurum, thus et myrrham: † Fílio Dei, Regi magno, allelúja.;;98
+Tria sunt * múnera quæ obtulérunt Magi Dómino, aurum, thus et myrrham: † Fílio Dei, Regi magno, allelúja.;;98
 
 [Ant Matutinum 3N]
 Vénient * ad te qui detrahébant tibi, † et adorábunt vestígia pedum tuórum.
@@ -22,18 +27,11 @@ Vénient * ad te qui detrahébant tibi, † et adorábunt vestígia pedum tuóru
 [Ant Matutinum]
 @Sancti/01-06::1-3
 @:AntMatutinumM:1
-@Sancti/01-06::6-7
-@Sancti/01-06::4-5
-@Sancti/01-06::8
+@Sancti/01-06::4-6
 @:AntMatutinumM:2
-@Sancti/01-06::12-13
+@Sancti/01-06::8-9
 @:AntMatutinumM:3-4
-@Sancti/01-06::9-10
 ;;263;264;265
-@Sancti/01-06::14-15
-
-[Hymnus Matutinum]
-@Sancti/01-06:HymnusM Vespera
 
 [Lectio1]
 @Sancti/01-06:Lectio1
@@ -50,7 +48,7 @@ Vénient * ad te qui detrahébant tibi, † et adorábunt vestígia pedum tuóru
 [Responsory4]
 R. Dies sanctificátus illúxit nobis: † veníte, gentes, et adoráte Dóminum:
 * Quia hódie descéndit lux magna in terris.
-V. Vénite, adorémus eum, † quia est Dóminus Deus noster.
+V. Veníte, adorémus eum, † quia est Dóminus Deus noster.
 R. Quia hódie descéndit lux magna in terris.
 
 [Lectio5]
@@ -75,7 +73,7 @@ R. Quia hódie descéndit lux magna in terris.
 @Sancti/01-06:Lectio6
 
 [Responsory8]
-R. Interrogábat Magos Heródes: Quod signum vidístis super natum Regem? † Stellam vidimus fulgéntem, cujus splendor illúminat mundum:
+R. Interrogábat Magos Heródes: Quod signum vidístis super natum Regem? † Stellam vídimus fulgéntem, cujus splendor illúminat mundum:
 * Et nos cognóvimus et vénimus adoráre Dóminum.
 V. Magi véniunt ab Oriénte inquiréntes fáciem Dómini et dicéntes.
 R. Et nos cognóvimus et vénimus adoráre Dóminum.
@@ -105,25 +103,26 @@ R. Et ambulábunt gentes in lúmine tuo, et reges in splendóre ortus tui.
 @Sancti/01-06:Lectio9
 
 [Responsory12]
-R. Hic est dies praeclárus in quo Salvátor mundi appáruit, † quem prophétae predixérunt, Angeli annuntiavérunt:
+R. Hic est dies præclárus in quo Salvátor mundi appáruit, † quem prophétæ predixérunt, Angeli annuntiavérunt:
 * Cujus stellam Magi vidéntes gavísi sunt, et múnera ei obtulérunt.
 V. Dies sanctificátus illúxit nobis: † veníte gentes et adoráte Dóminum.
 R. Cujus stellam Magi vidéntes gavísi sunt, et múnera ei obtulérunt.
 
-[Capitulum Laudes]
-@Sancti/01-06
-_
-@Sancti/01-06:Responsory Tertia:1-6
+[RV1]
+R. Illumináre, illumináre Jerúsalem, quia venit lux tua: * Et glória Dómini super te orta est.
+V. Et ambulábunt Gentes in lúmine tuo, et reges in splendóre ortus tui:
+R. Et glória Dómini super te orta est.
 
-[Responsory Tertia]
+[Responsory TertiaM] (nisi rubrica cisterciensis)
 @Sancti/01-06:Versum 1:s/\.$/, allelúja./gm
 
-[Responsory Sexta]
-@Sancti/01-06:Responsory Tertia:8-9
+[Capitulum Sexta] (rubrica cisterciensis)
+@Sancti/01-06::s/\: fílii.*|Zdaleka.*//
 
-[Responsory Nona]
-@Sancti/01-06:Responsory Sexta:8-9
+[Responsory SextaM] (nisi rubrica cisterciensis)
+@Sancti/01-06:Versum Tertia
 
-[Capitulum Nona]
-@Sancti/01-06
-
+[Responsory NonaM]
+@Sancti/01-06:Nocturn 3 Versum
+(sed rubrica cisterciensis)
+@Sancti/01-06:Nocturn 3 Versum:s/, allel[úu][ij]a//gi

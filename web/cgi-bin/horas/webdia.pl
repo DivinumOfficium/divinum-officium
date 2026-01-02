@@ -9,22 +9,30 @@ use utf8;
 #use strict "subs";
 my $a = 4;
 
-#*** htmlHead($title, $flag)
-# generated the standard head with $title
+#*** htmlHead($title, $onload)
+# generate html head
 sub htmlHead {
-  my $title = shift;
-  my $flag = shift;
-  if (!$title) { $title = ' '; }
-
-  #  print "Content-type: text/html; charset=ISO-8859-1\n\n";
   print "Content-type: text/html; charset=utf-8\n\n";
-  print << "PrintTag";
+
+  return if our $content;
+
+  my ($title, $onload) = @_;
+
+  my ($horasjs) = "<SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>\n" . horasjs() . '</SCRIPT>';
+  $onload && ($onload = " onload=\"$onload\";");
+
+  my $is_mobile = ($officium eq 'Pofficium.pl');
+  my $viewport_tag = $is_mobile ? '  <META NAME="viewport" CONTENT="width=device-width, initial-scale=0.75">' : '';
+
+  print <<"PrintTag";
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML><HEAD>
+$viewport_tag
   <META NAME="Resource-type" CONTENT="Document">
   <META NAME="description" CONTENT="Divine Office">
   <META NAME="keywords" CONTENT="Divine Office, Breviarium, Liturgy, Traditional, Zsolozsma">
   <META NAME="Copyright" CONTENT="Like GNU">
+  <meta name="color-scheme" content="dark light">
   <STYLE>
     /* https://www.30secondsofcode.org/css/s/offscreen/ */
     .offscreen {
@@ -37,11 +45,92 @@ sub htmlHead {
       position: absolute;
       width: 1px;
     }
+    h1, h2 {
+      text-align: center;
+      font-weight: normal;
+    }
+    h2 {
+      margin-top: 4ex;
+      color: maroon;
+      font-size: 112%;
+      font-weight: bold;
+      font-style: italic;
+    }
+    p {
+      color: black;
+    }
+    a:link { color: $link; }
+    a:visited { color: $visitedlink; }
+    body {
+      background: $dialogbackground;
+    }
+    .contrastbg { background: white; }
+    .nigra { color: black; }
+
+PrintTag
+
+  if (our $whitebground) {
+    print <<"PrintTag";
+    \@media (prefers-color-scheme: dark) {
+      body {
+        background: black;
+        color: white;
+      }
+      table { color: white; }
+      a:link { color: #AFAFFF; }
+      a:visited { color: #AFAFFF; }
+      p { color: white; }
+      .contrastbg {
+        background: #3F3F3F;
+        color: white;
+      }
+      .nigra {  color: white;  }
+      }
+PrintTag
+  } else {
+    print <<"PrintTag";
+    \@media (prefers-color-scheme: dark) {
+      body {
+        background: $dialogbackground;
+        color: black;
+      }
+      select {
+        background: lightgrey;
+        color: black;
+      }
+      input[type="select"] {
+        background: lightgrey;
+        color: black;
+      }
+      input[type="submit"] {
+        background: grey;
+        color: black;
+      }
+      input[type="text"] {
+        background: white;
+        color: black;
+      }
+PrintTag
+  }
+
+  print <<"PrintTag";
   </STYLE>
   <TITLE>$title</TITLE>
+	<SCRIPT TYPE='text/JavaScript' SRC='../../www/js/util.js'></SCRIPT>
+	<SCRIPT TYPE='text/JavaScript' SRC='../../www/js/jquery.min.js'></SCRIPT>
+	<SCRIPT TYPE='text/JavaScript' SRC='../../www/js/exsurge.js'></SCRIPT>
+$horasjs
+</HEAD>
+<BODY $onload onresize="layoutChant()">
+<FORM ACTION="$officium" METHOD="post" TARGET="_self">
 PrintTag
-  if ($flag == 2) { horasjs(); }
-  print "</HEAD>";
+}
+
+sub htmlEnd {
+  if ($error) { print "<P ALIGN='CENTER'><FONT COLOR='red'>$error</FONT></P>\n"; }
+  if ($debug) { print "<P ALIGN='center'><FONT COLOR='blue'>$debug</FONT></P>\n"; }
+  horasjsend();
+  print "</FORM></BODY></HTML>";
 }
 
 #*** htmlInput()
@@ -59,20 +148,20 @@ PrintTag
 #   if condition string contains the selected item
 
 sub htmlInput {
-  my($parname, $parvalue, $parmode, $parpar, $parfunc, $parhelp) = @_;
+  my ($parname, $parvalue, $parmode, $parpar, $parfunc, $parhelp) = @_;
   my $output = '';
 
   if ($parmode =~ /^label/i) {
     my $ilabel = $parvalue;
-    if ($parpar) { $ilabel = wrap($ilabel, $parpar, "<BR>\n"); }
+    if ($parpar) { $ilabel = wrap($ilabel, $parpar, "<br/>\n"); }
     $output .= "$ilabel";
-    $output .= "<INPUT TYPE=HIDDEN NAME=\'$parname\' VALUE=\'$parvalue\'>\n";
+    $output .= "<INPUT TYPE='HIDDEN' NAME=\'$parname\' VALUE=\'$parvalue\'>\n";
   } elsif ($parmode =~ /entry/i) {
     $width = $parpar;
     if (!$width || $width == 0) { $width = 3; }
     my $jsfunc = '';
     if ($parfunc) { $jsfunc = "onchange=\"$parfunc;\""; }
-    $output .= "<INPUT TYPE=TEXT NAME=\'$parname\' ID=\'$parname\' $jsfunc SIZE=$width VALUE=\'$parvalue\'>\n";
+    $output .= "<INPUT TYPE='TEXT' NAME=\'$parname\' ID=\'$parname\' $jsfunc SIZE=$width VALUE=\'$parvalue\'>\n";
   } elsif ($parmode =~ /^text/i) {
     my @size = split('x', $parpar);
     if (@size < 2) { @size = (3, 12); }
@@ -93,14 +182,14 @@ sub htmlInput {
       $savefile =~ s/\.gen//;
       do_write("$datafolder/gen/$savefile.gen", $pv);
     }
-    $output .= "<TEXTAREA NAME=\'$parname\' ID=\'$parname\' COLS=$size[1] ROWS=$size[0]>$pv</TEXTAREA><BR>\n";
+    $output .= "<TEXTAREA NAME=\'$parname\' ID=\'$parname\' COLS='$size[1]' ROWS='$size[0]'>$pv</TEXTAREA><br/>\n";
     $output .= "<A HREF='#' onclick='loadrut();'>";
     $output .= setfont($dialogfont) . "Load</FONT></A>";
   } elsif ($parmode =~ /checkbutton/i) {
     my $checked = ($parvalue) ? 'CHECKED' : '';
     my $jsfunc = '';
     if ($parfunc) { $jsfunc = "onclick=\"$parfunc;\""; }
-    $output .= "<INPUT TYPE=CHECKBOX NAME=\'$parname\' ID=\'$parname\' $checked $jsfunc>\n";
+    $output .= "<INPUT TYPE='CHECKBOX' NAME=\'$parname\' ID=\'$parname\' $checked $jsfunc>\n";
   } elsif ($parmode =~ /^radio/i) {
     if ($parmode =~ /vert/i) { $output .= "<TABLE>"; }
     $rpar = $parpar;
@@ -157,16 +246,17 @@ sub htmlInput {
     }
     my $onclick =
         ($parmode =~ /select/i) ? "onchange=\'buttonclick(\"$command\");\'"
-      : ($parfunc) ? "onchange=\"$parfunc;\""
+      : ($parfunc) ? qq(onchange="$parfunc;")
       : '';
     my $osize = @optarray;
-    if ($osize > 5) { $osize = 5; }
-    $output .= "<SELECT SIZE=$osize NAME=\'$parname\' ID=\'$parname\' $onclick>\n";
-    foreach(@optarray) {
-      my($display, $value) = split(/\//);
+    chomp($optarray[-1]);
+    $output .= "<SELECT ID=$parname NAME=$parname SIZE=1 $onclick>\n";
+
+    foreach (@optarray) {
+      my ($display, $value) = split(/\//);
       $value ||= $display;
       my $selected = $value eq $parvalue ? 'SELECTED' : '';
-      $output .= "<OPTION VALUE=\'$value\' $selected>$display\n";
+      $output .= "<OPTION $selected VALUE=\"$value\">$display\n";
     }
     $output .= "</SELECT>\n";
   }
@@ -186,7 +276,7 @@ sub cleanse($) {
     @parts = split(/;/, $str);
 
     foreach my $part (@parts) {
-      unless ($part =~ /^([^'`"\\={}()]*|'[^'`"\\]*'|\$\w+='[^'`"\\]*')$/i) {
+      unless ($part =~ /^([^'`"\\={}()]*|'[^'`"\\]*'|\$\w+='[^'`"\\]*')$/i) {    #` #accente grave for editor
 
         #print STDERR "erasing $part\n";
         $part = '';
@@ -226,12 +316,15 @@ sub clean_setupsave {
 sub setfont {
   my $istr = shift;
   my $text = shift;
+  return $text unless $istr;
+
   my $size = ($istr =~ /^\.*?([0-9\-\+]+)/i) ? $1 : 0;
   my $color = ($istr =~ /([a-z]+)\s*$/i) ? $1 : '';
   if ($istr =~ /(\#[0-9a-f]+)\s*$/i || $istr =~ /([a-z]+)\s*$/i) { $color = $1; }
+  $color = '' if $color eq 'italic';                                    # italic is not a color
   my $font = "<FONT ";
-  if ($size) { $font .= "SIZE=$size "; }
-  if ($color) { $font .= "COLOR=\"$color\""; }
+  if ($size) { $font .= "SIZE='$size' "; }
+  if ($color && $color !~ /black/i) { $font .= "COLOR=\"$color\""; }    # black not explictly for dark mode
   $font .= ">";
   if (!$text) { return $font; }
   my $bold = '';
@@ -268,7 +361,7 @@ sub getcookies {
 
   foreach (keys %cookies) {
     my $c = $cookies{$_};
-    if ($c->name =~ /$cname/) { $sti = $c->value; }
+    if ($c->name eq $cname) { $sti = $c->value; }
   }
 
   if ($sti) {
@@ -278,8 +371,8 @@ sub getcookies {
     my @param = split(';;', $param);
 
     #check if the structure of the parameters is the same
-    if (@sti != @param + 1 || (pop(@sti) ne $check)) {
-      $error = "Cookie $cname mismatch $name need $check has $param<br>== $sti[-1]";
+    if (@sti > @param + 1 || ($check !~ /^$sti[-1]/)) {
+      $error = "Cookie $cname mismatch $name need $check has $param<br/>== $sti[-1]";
       return 0;
     }
     setsetup($name, @sti);
@@ -315,7 +408,7 @@ sub setcookies {
   $c = $q->cookie(
     -name => "$cname",
     -value => "$value",
-    -expires => "$cookieexpire"
+    -expires => "$cookieexpire",
   );
 
   if (length($c) < 4096) {
@@ -335,7 +428,7 @@ sub setcookie1 {
   $c = $q->cookie(
     -name => "$cname",
     -value => "$value",
-    -expires => $t
+    -expires => $t,
   );
   print "Set-Cookie:$c\n";
 }
@@ -359,51 +452,51 @@ sub getcookie1 {
 # + is "make a cross over the forehead and abdomen: cross yourself"
 # This version uses Unicode entities instead of small GIFs.
 sub setcross {
+  $_[0] =~ s/ (\+{1,3}) /" <span style='color:red; font-size:1.25em'>" .
+                          ($nofancychars ? $1 : $1 eq '+++' ? '✙︎' :
+                                                $1 eq '++' ? '+' : '✠') .
+                          "<\/span> "/ger;
+}
+
+#*** setvrbar($line)
+# set R- & V-bar
+sub setvrbar {
   my $line = shift;
-
-  if (CGI::user_agent("BlackBerry")) {
-
-    # Not enough Unicode for what we really want, below.  Fake it.
-    # cross type 3: COPTIC SMALL LETTER DEI
-    my $csubst = "<span style='color:red; font-size:1.25em'>&#x03EF;</span>";
-    $line =~ s/\+\+\+/$csubst/g;
-
-    # Cross type 2: Latin Cross
-    my $csubst = "<span style='color:red; font-size:1.25em'>&#x271D;&#xFE0E;</span>";
-    $line =~ s/\+\+/$csubst/g;
-
-    # Cross type 1: PLUS SIGN
-    my $csubst = "<span style='color:red; font-size:1.25em'>+</span>";
-    $line =~ s/ \+ / $csubst /g;
-  } else {
-
-    # Cross type 3: Outlined Greek Cross
-    my $csubst = "<span style='color:red; font-size:1.25em'>&#x2719;&#xFE0E;</span>";
-    $line =~ s/\+\+\+/$csubst/g;
-
-    # Cross type 2: Greek Cross
-    my $csubst = "<span style='color:red; font-size:1.25em'>+︎</span>";
-    $line =~ s/\+\+/$csubst/g;
-
-    # cross type 1: Maltese Cross
-    my $csubst = "<span style='color:red; font-size:1.25em'>✠</span>";
-    $line =~ s/ \+ / $csubst /g;
-  }
+  if ($nofancychars) { return $line; }
+  $line =~ s/^V\./℣./g;
+  $line =~ s/^R\./℟./g;
   return $line;
 }
 
-#*** setcross2($line)
-# Version (unused) of setcross that uses gifs.
-sub setcross2 {
-  my $line = shift;
-  my $csubst;
-  $csubst = "<IMG SRC=$htmlurl/cross3.gif ALIGN=BASELINE ALT=''>";
-  $line =~ s/\+\+\+/$csubst/g;
-  $csubst = "<IMG SRC=$htmlurl/cross2.gif ALIGN=BASELINE ALT=''>";
-  $line =~ s/\+\+/$csubst/g;
-  $csubst = "<IMG SRC=$htmlurl/cross1.gif ALIGN=BASELINE ALT=''>";
-  $line =~ s/ \+ / $csubst /g;
-  return $line;
+#*** activate_links($text)
+# replace %Laudes% etc. with html link
+sub activate_links {
+  my ($text, $lang) = @_;
+  our ($date1, $caller, $version, $lang2, $votive, $hora, $command);
+  local ($_) = $$text;
+
+  if ($officium =~ /Pofficium/i) {
+    if ($hora =~ /Matutinum/i) {
+      s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=$caller&command=prayLaudes&version=$version&lang2=$lang2&votive=$votive">$1</A>}i;
+    } elsif ($hora =~ /Vespera/i) {
+      s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=1&command=prayVespera&version=$version&lang2=$lang2&votive=$votive">$1</A>}i;
+    } elsif ($hora =~ /Laudes/i) {
+      s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=1&command=prayMatutinum&version=$version&lang2=$lang2&votive=$votive">$1</A>}i;
+    } elsif ($command =~ /Appendix/i) {
+      s{%(.*?)%}{qq(<A HREF="Pofficium.pl?date1=$date1&caller=1&command=Appendix $1&version=$version&lang2=$lang2&votive=$votive">) . translate($1, $lang) . '</A>'}ie;
+    }
+  } else {
+    if ($hora =~ /Matutinum/i) {
+      s{%(.*?)%}{<A HREF="#" onclick="hset('Laudes');">$1</A>}i;
+    } elsif ($hora =~ /Vespera/i) {
+      s{%(.*?)%}{<A HREF="#" onclick="defunctorum('Vespera');">$1</A>}i;
+    } elsif ($hora =~ /Laudes/i) {
+      s{%(.*?)%}{<A HREF="#" onclick="defunctorum('Matutinum');">$1</A>}i;
+    } elsif ($command =~ /Appendix/i) {
+      s{%(.*?)%}{'<A HREF="#" onclick="appendix(\''. $1. '\');">' . translate($1, $lang) . '</A>'}ie;
+    }
+  }
+  $_;
 }
 
 #*** setcell($text1, $lang1);
@@ -413,52 +506,169 @@ sub setcell {
   my $lang = shift;
   my $width = ($only) ? 100 : 50;
 
+  return unless ($text && $text !~ /^[_\s]+$/);
+  $text = resolve_refs($text, $lang);
+  return unless $text;    # No empty cells in 'Lineamenta'
+
   if (!$Ck) {
     if (columnsel($lang)) {
-      $searchind++;
-      print "<TR>";
-
-      if ($notes && $text =~ /\{\:(.*?)\:\}/) {
-        my $notefile = $1;
-        $notefile =~ s/^pc/p/;
-        my $colspan = ($only) ? 1 : 2;
-        print "<TR><TD COLSPAN=$colspan WIDTH=100% $background VALIGN=MIDDLE ALIGN=CENTER>\n"
-          . "<IMG SRC=\"$imgurl/$notefile.gif\" WIDTH=80%></TD></TR>\n";
-      }
+      $searchind++ if ($text !~ /{omittitur}/);
+      print "<TR>";    # unless $officium =~ /Eofficium/;
     }
-    print "<TD $background VALIGN=TOP WIDTH=$width%" . ($lang1 ne $lang ? "" : " ID=L$searchind") . ">";
-    topnext_cell($lang);
+    print "<TD VALIGN='TOP' WIDTH='$width%'"
+      . ($lang1 ne $lang || $text =~ /{omittitur}/ ? "" : " ID='$hora$searchind'") . ">";
+    print "<p>" if $officium =~ /Eofficium|Emissa/;
+    topnext_cell(\$text, $lang) unless $popup || $officium =~ /Eofficium|Emissa/;
 
-    if ($text =~ /%(.*?)%/) {
-      my $q = $1;
+    # GABC: post process chants
+    if ($lang =~ /gabc/i) {
+      my $dId = 0;
 
-      if ($officium =~ /Pofficium/i) {
-        if ($hora =~ /Matutinum/i) {
-          $text =~
-            s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=$caller&command=prayLaudes&version=$version&testmode=$testmode&lang2=$lang2&votive=$votive">$q</A>}i;
-        } elsif ($hora =~ /Vespera/i) {
-          $text =~
-            s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=1&command=prayVespera&version=$version&testmode=$testmode&lang2=$lang2&votive=C9">$q</A>}i;
-        } elsif ($hora =~ /Laudes/i) {
-          $text =~
-            s{%(.*?)%}{<A HREF="Pofficium.pl?date1=$date1&caller=1&command=prayMatutinum&version=$version&testmode=$testmode&lang2=$lang2&votive=C9">$q</A>}i;
+      if ($text =~ /Commemoratio|Suffragium/) {
+
+        # Merge Commemoratio et Suffragium
+        # The Versicle are given in the simple tone with clef (c3) ending on (f.)
+        # Roman: The Oration follows in the solemn tone.
+        # Keeping the clef (c4) and adding custos for that purpose.
+        $text =~
+          s/\.\((f)\.\)\s*\(\:\:\)\}(?:\s|\_|\<br\/\>)*\{(\(c4\) O\(h\)ré\([gh]{1,2}\)mus\.\([fh]\.\) \(\:\:\)\})/.($1.) (f+::) $2/gs;
+      } elsif ($text =~ /Incipit/i) {
+
+        # Merge &Alleluja with &Deus in adjutorium
+        $text =~ s/(men\.\([defgh]\.?\) \(\:\:\))\}(?:\s|\_|\<br\/\>)*\{\(c[34]\) (Al|Laus)\(/$1 $2\(/gs;
+      }
+
+      # Merge Versicle with following Oremus, with following Oratio, with following Conclusio
+      $text =~
+        s/\.\(([dfghi])\.\)\s*\(\:\:\)\}(?:\s|\_|\<br\/\>)*\{\(c[34]\) (O\([hi]\)ré\([ghi]{1,2}\)mus\.\([fhi]\.\) \(\:\:\)\})/.($1.) (::) $2/gs;
+      $text =~ s/(O\([hi]\)ré\([ghi]{1,2}\)mus\.\([fhi]\.\)) \(\:\:\)\}(?:\s|\_|\<br\/\>)*\{\(c[34]\)/$1 (:)/gs;
+      $text =~
+        s/\(([fdhi])\.\) \(\:\:\)\}\s*(?:\<br\/\>)*\s*\{(?:initial\-style\:0\;\%\%)\(c[34]\) (Per|Qui)/($1.) (:) $2/gs;
+
+      # Merge Absolutio, Benedictio and remove redundant Amen.
+      $text =~
+        s/\(([fd])\.\) \(\:\:\)\}(?:\s|\_|\<br\/\>)*\{(?:initial\-style\:0\;\%\%)\(c[34]\) (R\/. A\([gh]\.?\)men)/($1.) (::) $2/gs;
+      $text =~
+        s/(?<=R\/.\s?A\([defgh]\.?\)men\.\([defgh]\.?\) \(\:\:\))\s?R\/. A\([gh]\.?\)men\.\([gh]\.?\) \(\:\:\)//g;
+
+      # Merge Chapter, Lectio brevis, and Martyrolgium with Deo gratias / Tu autem / Et álibi
+      $text =~
+        s/(\.\(ef\.\.\) \(\:\:\))\}(?:\s|\_|\<br\/\>)*\{(?:initial\-style\:0\;\%\%)\(c[34]\) (R\/. De\(h\)o\(h\))/$1 $2/gs;
+      $text =~
+        s/(\.\(d\.\) \(\:\:\))\}(?:\s|\_|\<br\/\>)*\{(?:initial\-style\:0\;\%\%)\(c[34]\) (V\/. Tu\(h\) au\(g\))/$1 $2/gs;
+      $text =~
+        s/(\.\(d\.\) \(\:\:\))\}(?:\s|\_|\<br\/\>)*\{(?:initial\-style\:0\;\%\%)\(c[34]\) (V\/. Et\(h\) á\(h\)li)/$1 $2/gs;
+
+      # Retrieve all GABC scores from files
+      while ($text =~ /\{gabc:(.+?)\}/is) {
+        my $temp = $1;
+        my $gregFile = "chants/$1.gabc";
+        $gregFile = checkfile($lang, $gregFile);
+
+        if ($gregFile =~ /\/Latin\/.*gloria\.gabc/i) {
+
+          # if second Responsory GABC doesnot exist (cf. TODO in specmatins.pl)
+          $gregFile = "chants/$temp.gabc";
+          $gregFile =~ s/\-gloria//;
+          $gregFile = checkfile($lang, $gregFile);
         }
-      } else {
-        if ($hora =~ /Matutinum/i) {
-          $text =~ s{%(.*?)%}{<A HREF=# onclick="hset('Laudes');">$q</A>}i;
-        } elsif ($hora =~ /Vespera/i) {
-          $text =~ s{%(.*?)%}{<A HREF=# onclick="defunctorum('Vespera');">$q</A>}i;
-        } elsif ($hora =~ /Laudes/i) {
-          $text =~ s{%(.*?)%}{<A HREF=# onclick="defunctorum('Matutinum');">$q</A>}i;
+
+        if (-e "$gregFile") {
+          my (@gregScore) = do_read($gregFile);
+
+          if (@gregScore) {
+            $text =~ s/gabc:$temp/@gregScore/s;
+          }
+        } else {
+          $text =~ s/\{gabc:(.+?)\}/'GABC score $gregFile not found'/;
         }
+      }
+
+      # identify all GABC sections and post process to be suitable for JavaScript
+      while ($text =~ /\{(\(|name:|annotation:|initial-style:|centering-scheme:)(.+?)\(\:\:\)\}/is) {
+        $dId++;
+        $text =~
+          s/\{(\(|name:|annotation:|initial-style:|centering-scheme:)/<DIV ID="GABC$hora$searchind-$dId" class="GABC">$1/s;
+        $text =~
+          s/\(\:\:\)\}/\(\:\:\)<\/DIV><DIV ID="GCHANT$hora$searchind-$dId" class="GCHANT" width="100\%"><\/DIV>/s;
+        $text =~
+          s/(name:[a-zA-Z\s\.\:]*?)\(([a-zA-Z\s\.\:]*?)\)([a-zA-Z\s\.\:]*?);/$1 $2 $3;/gm; # remove parentheses in title
+        $text =~ s/<i>T\.\s?P\.<\/i>/\_\^T. P.\^\_ /g;                                     # Tempore Paschalis
+        $text =~ s/<\/?i>/\_/g;                                                            # italics
+        $text =~ s/<\/?b>|<v>\\greheightstar<\/v>/*/g;                                     # asterisk
+        $text =~ s/<\/?sc>/\%/g;                                                           # small capitals
+        $text =~ s/<\/?c>/\^/g;                                                            # coloured
+        $text =~ s/<\/?e>/\_/g;                                                            # elisions
+        $text =~ s/<sp>(?:ae|æ)<\/sp>/æ/g;                                                 # various æ spellings
+        $text =~ s/<sp>\'(?:ae|æ)<\/sp>|aé/ǽ/g;
+        $text =~ s/ae\(/æ(/g;
+        $text =~ s/<sp>(?:oe|œ)<\/sp>/œ/g;                                                 # various œ spellings
+        $text =~ s/<sp>\'(?:oe|œ)<\/sp>|oé/œ́/g;
+        $text =~ s/\(\:\:\)\s*?<br\/?>\n/(::)\n/gi;     # remove wrong HTML linebreaks
+        $text =~ s/;\s*?<br\/?>\n/;\n/gi;               # remove wrong HTML linebreaks
+        $text =~ s/%%<br\/?>\n/%%\n/gi;                 # remove wrong HTML linebreaks
+        $text =~ s/%%\(/%%\n\(/gi;                      # insert break at end of header
+        $text =~ s/;([a-z\%\(])/;\n$1/gi;               # insert break in header
+        $text =~ s/(\(\:\:\)\}?) <br\/?>\n/$1 \n/gi;    # remove wrong HTML linebreaks
+        $text =~ s/\) \* /\) \*() /g;                   # asterisk always to be followed by ()
+        $text =~ s/(\([\,\;\:]+\))\s*?(\^?\d+\.\^?|(<sp>)?[VR]\/(<\/sp>)?\.)\s/ $2$1 /gs;
+        $text =~ s/†\(([a-z0-9\_\'\.]+?)\)/($1) ^†^(,) /g;      # coloured flexa
+        $text =~ s/(<sp>)?V\/(<\/sp>)?\.?(\(\))?/V\/\.() /g;    # Versiculum
+        $text =~ s/(<sp>)?R\/(<\/sp>)?\.?(\(\))?/R\/\.() /g;    # Responsorium
+        $text =~ s/\.\(\) \(\:\:\)/.(::)/g;                     # contract () (::)
+        $text =~ s/<\/?nlba>//g;
+        $text =~ s/\_/\|\|/g;
+        $text =~ s/\(([a-k])r(\[ocb\:1\{\])?\)/($1$2)/g;                 # "solidify" used Puncta cava
+        $text =~ s/\s[a-k]r\)/)/g;                                       # remove unused puncta cava
+        $text =~ s/\s[a-k]r(?:\[ocb\:1\{\])\)(.*?)\[ocb\:0\}\]/)$1/g;    # remove unsued braces
+      }
+    } else {
+
+      # post process non-GABC
+      if ($text =~ /%(.*?)%/) {
+        $text = activate_links(\$text, $lang);
       }
     }
   }
+
+  process_inline_alleluias(\$text, $lang, $dayname[0] =~ /Pasc/) unless $missa;    # missa use own solution
+                                                                                   # which should removed
+
+  suppress_alleluia(\$text, $lang =~ /gabc/i)
+    if ($dayname[0] =~ /Quadp|Quad[1-5]|Quad6-[0-5]/i && ($missa || !Septuagesima_vesp()));
+
+  $text =~ s/\<br\/\>\s*\<br\/\>/\<br\/\>/ig;
+  if ($lang =~ /Latin(\-bea)?$/i) { $text = spell_var($text); }    # Spell check not for 'Latin-gabc' (destroys chant)
+
   $text =~ s/wait[0-9]+//ig;
   $text =~ s/\_/ /g;
-  $text =~ s/\{\:.*?\:\}(<BR>)*\s*//g;
+
   $text =~ s/\{\:.*?\:\}//sg;
-  $text =~ s/\`//g;
+  $text =~ s/\`//g;                                                 #` #accent grave for editor
+  $text =~ s/\s([»!?;:])/&nbsp;$1/g unless $lang eq 'Latin-gabc';   # no-break space before punctutation (mostly French)
+  $text =~ s/\s([*§†])/&nbsp;$1/g
+    if $version =~ /cist/i;    # no-break space before break characters (style of Cistercian books)
+  $text =~ s/«\s/«&nbsp;/g unless $lang =~ /Deutsch|gabc/i;    # no-break space after begin quote
+  $text =~ s/\s\&\s/ &amp; /;                                  # HTML - Ampersand;
+  $text =~
+    s/↊|\&\#x218a\;/<span style='color:grey; display:inline-block; transform: rotate(180deg) translate(-40%, 15%);'>2<\/span><span style='color:grey; display:inline-block; transform: translate(-100%, 16%);'>.<\/span>/gu;
+  my $cist_flex = 1;    # 1 .. from Psalterium - 2 .. from Breviarium Cist.
+                        # Cistercian flexa from large choir Psalterium/Antiphonale Cisterciense (1952/1903)
+  $text =~
+    s{§|†}{<svg viewBox="-10 0 547 800" style="height: 0.8em;"><path fill="currentColor" d="M139,258C90,258 36,230 36,175C36,149 64,103 94,103C109,103 120,108 131,119C141,129 149,137 155,144C173,165 225,170 251,170C289,170 330,161 374,144L462,110C463,111 464,113 464,115C464,120 459,128 449,139C437,152 420,169 399,188C306,272 250,332 232,367C215,400 206,428 206,451C206,501 252,514 293,514C371,514 439,453 475,388C492,405 501,415 501,418C484,468 456,511 417,547C371,584 327,604 285,606C279,606 273,606 267,607C198,607 150,588 121,550C102,525 92,499 92,472C92,437 109,400 144,363C214,289 273,237 324,208C309,213 296,218 286,222C227,246 178,258 139,258ZM263,773C228,773 200,745 200,710C200,674 227,647 263,647C299,647 325,675 325,710C325,744 298,773 263,773Z"/></svg>}gu
+    if $version =~ /cist/i && $cist_flex != 2;
+
+  # Cistercian flexa from Breviarium Cisterciense (1951)
+  $text =~
+    s{§|†}{<svg viewBox="-10 0 661 1000" style="height: 1em; vertical-align: middle;"><path fill="currentColor" d="M130 634c-13 -26 -20 -52 -19 -79c0 -109 72 -168 157 -226c74 -46 149 -96 209 -159c-56 29 -135 44 -238 44c-41 0 -106 -22 -122 -62c-4 -10 -3 -21 2 -34c6 -15 18 -32 36 -32c12 0 36 10 47 15c14 6 28 13 44 19c35 20 93 31 133 31c46 0 90 -17 129 -40 c5 -3 8 -4 11 -5c1 -1 3 -1 4 -1c4 0 6 4 8 11c3 11 2 19 -3 25c-53 64 -111 129 -174 183c-21 20 -40 38 -56 56c-48 45 -88 107 -88 174c0 82 40 173 135 173c59 0 91 -54 117 -100c4 -7 6 -13 8 -21c6 -12 8 -26 8 -40c1 -9 1 -15 2 -20c0 -4 0 -11 -2 -21 c0 -10 -1 -16 -2 -19c0 -3 -1 -9 -2 -20s-3 -17 -3 -18c35 19 59 48 69 87c5 19 5 39 0 61c-11 50 -52 103 -95 128c-33 15 -65 20 -101 20c-56 0 -123 -25 -163 -64c-21 -18 -38 -41 -51 -66zM293 854c0 -27 24 -48 50 -50c28 0 47 23 49 50c0 26 -18 49 -45 49 c-30 0 -54 -17 -54 -49z"/></svg>}gu
+    if $version =~ /cist/i && $cist_flex == 2;
+  $text =~ s/§/†/gi if $version !~ /cist/i;
+
+  # Remove line breaks from chants
+  if ($lang =~ /gabc/i) {
+    $text =~ s/\|\|(<br\/>)/<br\/>/g;
+    $text =~ s/\|\|/\_/g;
+  }
 
   if ($Ck) {
     if ($column == 1) {
@@ -466,9 +676,13 @@ sub setcell {
     } else {
       push(@ctext2, $text);
     }
+
+    #  } elsif ($officium =~ /Eofficium/) {
+    #    print $text;
   } else {
+    $text .= '</p>' if $officium =~ /Eofficium|Emissa/;
     print setfont($blackfont, $text) . "</TD>\n";
-    if (!columnsel($lang)) { print "</TR>\n"; }
+    if (!columnsel($lang) || $only) { print "</TR>\n"; }
   }
 }
 
@@ -476,24 +690,21 @@ sub setcell {
 #prints T N for positioning
 sub topnext_cell {
   if ($officium =~ /Pofficium/i) { return; }
-  my $lang = shift;
-  my @a = split('<BR>', $text1);
-  if (@a > 2 && $expand !~ /skeleton/i) { print topnext($lang); }
-}
+  my ($text, $lang) = @_;
+  my @a = split('<br/>', $$text);
 
-sub topnext {
-  if ($officium =~ /Pofficium/i) {return:}
-  my $lang = shift;
-  my $str = "<DIV ALIGN=right><FONT SIZE=1 COLOR=green>";
+  if (@a > 2 && $expand ne 'lineamenta') {
+    my $str = "<DIV ALIGN='right'><FONT SIZE='1' COLOR='green'>";
 
-  if (columnsel($lang)) {
-    $str .= "<A HREF=# onclick=\"setsearch($searchind);\">Top</A>&nbsp;&nbsp;";
-    $str .= "<A HREF=# onclick=\"setsearch($searchind+1);\">Next</A>";
-  } else {
-    $str .= "$searchind";
+    if (columnsel($lang)) {
+      $str .= "<A HREF='#${hora}top'>Top</A>&nbsp;&nbsp;";
+      $str .= "<A HREF='#$hora" . ($searchind + 1) . "'>Next</A>";
+    } else {
+      $str .= "$searchind";
+    }
+    $str .= "</FONT></DIV>\n";
+    print $str;
   }
-  $str .= "</FONT></DIV>\n";
-  return $str;
 }
 
 #*** table_start
@@ -504,25 +715,26 @@ sub table_start {
     @ctext2 = splice(@ctext2, @ctext2);
   }
   my $width =
-    ($textwidth && $textwidth =~ /^[0-9]+$/ && 50 <= $textwidth && $textwidth <= 100)
+    ($textwidth && $textwidth =~ /^[0-9]+$/ && 0 < $textwidth && $textwidth <= 100)
     ? "$textwidth\%"
     : '80%';
-  print "<TABLE BORDER=$border ALIGN=CENTER CELLPADDING=8 WIDTH=$width>";
+  print "<TABLE BORDER='$border' ALIGN='CENTER' CELLPADDING='8' WIDTH='$width' $background>";
 }
 
 #antepost('$title')
-# prints Ante of Post call
+# prints Ante or Post call
 sub ante_post {
   my $title = shift;
   if ($Ck) { return; }
-  my $colspan = ($only) ? '' : 'COLSPAN=2';
-  print "<TR><TD $background VALIGN=TOP $colspan ALIGN=CENTER>\n";
+  my $colspan = ($only) ? '' : 'COLSPAN="2"';
+  print "<TR><TD VALIGN='TOP' $colspan ALIGN='CENTER'>\n";
+
   if ($0 =~ /missa/) {
-    print "<A HREF=\"mpopup.pl?popup=$title&rubrics=$rubrics&lang1=$lang1&lang2=$lang2\" TARGET=_NEW>$title</A>\n";
-    print "<FONT SIZE=1>Missam</FONT></TD></TR>";
+    print "<A HREF=\"mpopup.pl?popup=$title&rubrics=$rubrics&lang1=$lang1&lang2=$lang2\" TARGET='_NEW'>$title</A>\n";
+    print "<FONT SIZE='1'>Missam</FONT></TD></TR>";
   } else {
-    print "<INPUT TYPE=RADIO NAME=link onclick='linkit(\"\$$title\", 0, \"Latin\");'>\n";
-    print "<FONT SIZE=1>$title Divinum officium</FONT></TD></TR>";
+    print "<INPUT TYPE='RADIO' NAME='link' onclick='linkit(\"\$$title\", 0, \"Latin\");'>\n";
+    print "<FONT SIZE='1'>$title Divinum officium</FONT></TD></TR>";
   }
 }
 
@@ -531,25 +743,25 @@ sub ante_post {
 sub table_end {
   if ($Ck) {
     my $width = ($only) ? 100 : 50;
-    print "<TR><TD $background VALIGN=TOP WIDTH=$width%>\n";
+    print "<TR><TD VALIGN='TOP' WIDTH='$width%'>\n";
     my $item;
     my $len1 = 0;
-    foreach $item (@ctext1) { print "$item<BR>\n"; $len1 += wnum($item); }
+    foreach $item (@ctext1) { print "$item<br/>\n"; $len1 += wnum($item); }
     print "</TD>\n";
 
     if (!$only) {
       $len2 = 0;
-      print "<TD $background VALIGN=TOP WIDTH=$width%>\n";
-      foreach $item (@ctext2) { print "$item<BR>\n"; $len2 += wnum($item); }
+      print "<TD VALIGN='TOP' WIDTH='$width%'>\n";
+      foreach $item (@ctext2) { print "$item<br/>\n"; $len2 += wnum($item); }
       print "</TD></TR>\n";
     }
-    print "<TR><TD $background VALIGN=TOP WIDTH=$width%><FONT SIZE=1>$len1 words</FONT></TD>";
+    print "<TR><TD VALIGN='TOP' WIDTH='$width%'><FONT SIZE='1'>$len1 words</FONT></TD>";
 
     if (!$only) {
-      print "<TD $background VALIGN=TOP WIDTH=$width%><FONT SIZE=1>$len2 words</FONT></TD></TR>";
+      print "<TD VALIGN='TOP' WIDTH='$width%'><FONT SIZE='1'>$len2 words</FONT></TD></TR>";
     }
   }
-  print "</TABLE><span ID=L$searchind></span>";
+  print "</TABLE><A ID='$hora$searchind'></A>";
 }
 
 sub wnum {
@@ -568,24 +780,255 @@ sub wnum {
 # set a link line
 sub linkcode {
   my ($name, $ind, $lang, $disabled) = @_;
-  return "<INPUT TYPE=RADIO NAME=link $disabled onclick='linkit(\"$name\", $ind, \"$lang\");'>";
+
+  # We need to mask paranthesis to be passed via JavaScript to popup.pl
+  $name =~ s/\(/\&lpar/;
+  $name =~ s/\)/\&rpar/;
+  $name =~ s/\'/\&apos/g;
+  return "<INPUT TYPE='RADIO' NAME='link' $disabled onclick='linkit(\"$name\", $ind, \"$lang\");'>";
 }
 
 #*** linkcode1()
 # sets a collpse radiobutton
 sub linkcode1 {
-  return "&nbsp;&nbsp;&nbsp;" . "<INPUT TYPE=RADIO NAME=collapse onclick=\"linkit('','10000','');\">\n";
+  return "&ensp;" . "<INPUT TYPE='RADIO' NAME='collapse' onclick=\"linkit('','10000','');\">\n";
 }
 
 sub option_selector {
   my ($label, $onchange, $default, @options) = @_;
-  my $id = $label; $id =~ s/\s+//g; $id = lc($id);
-  my $output = "&nbsp;&nbsp;&nbsp;<LABEL FOR=$id CLASS=offscreen>$label</LABEL>\n";
-  $output .= sprintf("<SELECT ID=%s NAME=%s SIZE=%d onchange=\"%s\">\n", $id, $id, @options + 0, $onchange);
+  my $id = $label;
+  $id =~ s/\s+//g;
+  $id = lc($id);
+  my $output = "&ensp;<LABEL FOR='$id' CLASS='offscreen'>$label</LABEL>\n";
+  $output .= sprintf("<SELECT ID='%s' NAME='%s' SIZE='%d' onchange=\"%s\">\n", $id, $id, 1, $onchange);
+
   foreach (@options) {
-    my($display, $value) = split(/;/);
+    my ($display, $value) = split(/;/);
     $value = $display unless $value;
-    $output .= sprintf("<OPTION %s VALUE=\"%s\">%s\n", ($value eq $default)?'SELECTED':'', $value, $display);
+    $output .= sprintf("<OPTION %s VALUE=\"%s\">%s\n", ($value eq $default) ? 'SELECTED' : '', $value, $display);
   }
-  return $output . "</SELECT>\n"
+  return $output . "</SELECT>\n";
+}
+
+#*** selectables
+# generate selects from .dialog data
+sub selectables {
+  my ($dialog) = @_;
+  my (@output);
+
+  foreach (split(/;;\n*/, getdialog($dialog))) {
+    my ($parname, $parvar, $parmode, $parpar, $parpos, $parfunc, $parhelp) = split('~>');
+    my $parvalue = eval($parvar);
+    my $parlabel = $parname;
+    $parname = substr($parvar, 1);
+    my $output = "<LABEL FOR='$parname' CLASS='offscreen'>$parlabel</LABEL>\n";
+    $output .= htmlInput($parname, $parvalue, $parmode, $parpar, 'parchange()', $parhelp);
+    push(@output, $output);
+  }
+  join('&ensp;', @output);
+}
+
+#*** selectable_p
+# generate signle select from .dialog for Poffice
+sub selectable_p {
+  my ($dialog, $curvalue, $date1, $version, $lang2, $votive, $title) = @_;
+  $title ||= ucfirst($dialog);
+  if ($dialog eq 'votives') { $curvalue ||= 'Hodie' }
+  my @output = ("<TR><TD ALIGN='CENTER'>$title");
+
+  foreach (getdialog($dialog)) {
+    chomp;
+    my ($text, $name) = split(/\//);
+    $name ||= $text;
+    my $href =
+        "Pofficium.pl?date1=$date1"
+      . "&version="
+      . ($dialog eq 'versions' ? $name : $version)
+      . "&lang2="
+      . ($dialog eq 'languages' ? $name : $lang2)
+      . "&votive="
+      . ($dialog eq 'votives' ? $name : $votive);
+    my $colour = $curvalue eq $name ? 'red' : '';
+    push(@output, qq(\n<A HREF="$href"><FONT COLOR=$colour>$text</FONT></A>));
+  }
+  join('<br/>', @output) . "</TD></TR>\n";
+}
+
+sub horas_menu {
+  my ($completed, $date1, $version, $lang2, $votive) = @_;
+  my @horas = gethoras($votive eq 'C9');
+  push(@horas, 'Omnes', 'Plures') if ($0 !~ /Cofficium/);
+
+  my $i = 0;
+  my $output = '';
+
+  foreach (@horas) {
+    $i += 1;
+    my $href = '#';
+    my $onclick = '';
+
+    if ($0 =~ /Pofficium/) {
+      $href = qq("Pofficium.pl?date1=$date1&command=pray$_) . qq(&version=$version&lang2=$lang2&votive=$votive");
+    } else {
+      $onclick = qq(onclick="hset('$_');");
+    }
+    $output .= qq(\n<A HREF=$href $onclick>$_</A>\n);
+
+    if (($0 =~ /Pofficium/ && $votive ne 'C9' && ($i == 2 || $i == 6)) || (($i == (@horas - 2)) && ($0 !~ /Cofficium/)))
+    {
+      $output .= '<br/>';
+    } else {
+      $output .= '&nbsp;&nbsp;';
+    }
+  }
+
+  # For Cistercian version (not to complicate other versions) added the option to click on next day's Lauds
+  if ($version =~ /Cist/i) {
+    $output .= qq(\n<A HREF=# onclick="prevnext(1);hset('Laudes')"><FONT COLOR=$colour>Laudes crastinæ</FONT></A>\n)
+      if ($0 !~ /Cofficium/);
+    $output .= '&nbsp;&nbsp;';
+    $output .=
+      qq(\n<A HREF=# onclick="prevnext(1);hset('Matutinum')"><FONT COLOR=$colour>Matutinum crastinum</FONT></A>\n)
+      if ($0 !~ /Cofficium/);
+    $output .= '&nbsp;&nbsp;';
+  }
+
+  my $a =
+    ($0 =~ /Pofficium/)
+    ? qq(HREF="Pofficium.pl?date1=$date1&command=Appendix Index) . qq(&version=$version&lang2=$lang2&votive=$votive")
+    : qq(HREF="#" onclick="appendix('Index')");
+  $output .= qq(\n<A $a><FONT COLOR=$colour>Appendix</FONT></A>\n) if ($0 !~ /Cofficium/);
+  $a = qq(HREF="#" onclick="callkalendar('kalendar')");
+  $output .= qq(&nbsp;&nbsp;\n<A $a><FONT COLOR=$colour>Kalendarium</FONT></A>\n) if ($0 !~ /Pofficium/);
+  $output;
+}
+
+sub bottom_links_menu {
+  my ($compare) = shift;
+
+  my @options = map { "<A HREF=\"../../www/horas/Help/" . lcfirst($_) . ".html\" TARGET=\"_BLANK\">$_</A>\n"; }
+    qw(Versions Credits Download Rubrics Technical Help);
+  join("&emsp;\n", @options);
+}
+
+#*** html_dayhead($head, $subhead)
+# return day headline in html
+sub html_dayhead {
+  my ($head, $subhead) = @_;
+
+  my $output = setfont(liturgical_color($head), $head);
+
+  if ($subhead) {
+    my ($pre, $main) = split(/: /, $subhead, 2);           # Split the pre-position from office title
+    my ($main, $vespera) = split(/\<br\/\>/, $main, 2);    # Split any Vespers information
+    $main =~ s/\(Scriptura ut in\: (.*)\)//;               # Save any Scripture transfer information
+    my $scripturaUt = $1;
+    $output .= "<br/>\n<I><SPAN STYLE=\"font-size:82%;\"><SPAN STYLE=\"color:maroon;\">$pre";
+    $output .= ":</SPAN> " . setfont(liturgical_color($main, ''), $main) if $main;
+    $output .= "<br/><SPAN STYLE=\"color:maroon;\">$vespera<\SPAN>" if $vespera;
+    $output .=
+      "<br/><SPAN STYLE=\"color:maroon;\">Scriptura ut in <\SPAN>"
+      . setfont(liturgical_color($scripturaUt, ''), $scripturaUt)
+      if $scripturaUt && $hora eq 'Matutinum';
+    $output .= "</SPAN></I>\n";
+  }
+  $output =~ s/\s\&\s/ &amp; /;    # HTML - ampersand
+  $output;
+}
+
+sub print_content {
+  my ($lang1, $script1, $lang2, $script2, $antepost) = @_;
+  our $version, $version1, $version2, $only, $expandind, $column;
+  my ($ind1, $ind2);
+
+  table_start();
+  ante_post('Ante') if $antepost && !$content;
+
+  while ($ind1 < @$script1 || $ind2 < @$script2) {
+    $column = 1;
+    $version = $version1 if $Ck;
+    ($text, $ind1) = getunit($script1, $ind1);
+
+    $expandind++ if ($text =~ /^\#/);
+    setcell($text, $lang1);
+
+    if (!$only) {
+      $column = 2;
+      $version = $version2 if $Ck;
+      ($text, $ind2) = getunit($script2, $ind2);
+      setcell($text, $lang2);
+    } else {
+      $ind2 = $ind1;
+    }
+  }
+  ante_post('Post') if $antepost && !$content;
+  table_end();
+}
+
+#*** getunits(\@s, $ind)
+# break the array into units separated by double newlines
+# from $ind to the returned new $ind
+sub getunit {
+  my $s = shift;
+  my @s = @$s;
+  my $ind = shift;
+  my $t = '';
+
+  while ($ind < @s) {
+    my $line = chompd($s[$ind]);
+    $ind++;
+    if ($line && !($line =~ /^\s+$/)) { $t .= "$line\n"; next; }
+    if (!$t) { next; }
+    last;
+  }
+
+  return ($t, $ind);
+}
+
+#*** sub expand($line, $lang, $antline)
+# for & references calls the sub
+# $ references are filled from Psalterium/Prayers file
+# antline to handle redding the beginning of psalm is same as antiphona
+# returns the expanded text or the link
+sub expand {
+  use strict;
+  my ($line, $lang, $antline) = @_;
+  $line =~ s/^\s+//;
+  $line =~ s/\s+$//;
+
+  # Extract and remove the sigil indicating the required expansion type.
+  # TODO: Fail more drastically when the sigil is invalid.
+  $line =~ s/^([&\$](?:rubrica |Preces )?)// or return $line;
+  my $sigil = $1;
+  our ($expand, $missa);
+  local $expand = $missa ? 'all' : $expand;
+
+  # Make popup link if we shouldn't expand.
+  if (
+    $sigil ne '$rubrica '
+    && ($expand eq 'propria'
+      || ($expand eq 'psalteria' && ($line =~ /^(?:[A-Z](?!men|remus)|pater_noster)/)))
+  ) {
+    $line =~ s/ solemnis// if $lang eq 'Latin-gabc';
+    setlink($sigil . $line, 0, $lang);
+  } elsif ($sigil eq '&') {
+
+    # Actual expansion for & references.
+    # Get function name and any parameters.
+    my ($function_name, $arg_string) = ($line =~ /(.*?)(?:[(](.*)[)])?$/);
+    my @args = (parse_script_arguments($arg_string), $lang);
+
+    # If we have an antiphon, pass it on to the script function.
+    if ($antline) {
+      $antline =~ s/^\s*Ant\. //i;
+      push @args, $antline;
+    }
+    dispatch_script_function($function_name, @args);
+  } elsif ($sigil eq '$rubrica ') {
+    rubric($line, $lang);
+  } elsif ($sigil eq '$Preces ') {
+    prex("Preces $line", $lang);
+  } else {    # Sigil is $, so simply look up the prayer.
+    prayer($line, $lang);
+  }
 }

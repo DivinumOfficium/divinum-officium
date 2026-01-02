@@ -1,21 +1,8 @@
-[Rank]
-In Cathedra S. Petri Apostoli Antiochiæ;;Duplex majus;;4;;ex C4
+[Officium]
+In Cathedra S. Petri Apostoli Antiochiæ
 
-[Rank1960]
-In Cathedra S. Petri Apostoli;;Duplex II classis;;5;;ex C4
-
-[RankNewcal]
-In Cathedra S. Petri Apostoli;;Duplex II classis;;5;;ex C4
-
-[Rule]
-ex C4;
-Psalmi Dominica
-Antiphonas horas
-9 lectiones
-Commemoratio3
-Sub unica concl
-Psalm5 Vespera=116
-Psalm5 Vespera3=131
+[Officium] (rubrica 196 aut rubrica 1930 aut rubrica cisterciensis)
+In Cathedra S. Petri Apostoli
 
 [Hymnus Vespera]
 v. Was je du bindest, Petrus, hier auf dieser Welt,
@@ -44,24 +31,8 @@ $Qui vivis
 _
 @Sancti/02-22:Commemoratio4
 
-[Commemoratio4]
-!Kommemoration vom hl. Paulus
-(deinde dicuntur)
-Ant. O heiliger Apostel Paulus, du Verkünder der Wahrheit und Lehrer der Völker, bitte für uns bei Gott, der dich auserwählt hat.
-_
-V. Du bist ein auserwähltes Gefäß, o heiliger Apostel Paulus.
-R. Der Verkünder der Wahrheit auf der ganzen Erde.
-_
-$Oremus
-(sed rubrica 1960 aut rubrica monastica hæc versus omittuntur)
-O Gott, der du alle Völker durch die Predigt des heiligen Apostels Paulus gelehrt hast, gewähre uns, wir bitten dich, die Gnade, dass wir von demjenigen, dessen Gedächtnis wir begehen, auch die Fürsprache bei dir fühlen.
-$Per Dominum
-
 [Invit]
 Tu es pastor óvium, Princeps Apostolórum: * Tibi trádidit Deus claves regni cælórum.
-
-[Hymnus Matutinum]
-@Sancti/02-22:Hymnus Vespera
 
 [Lectio1]
 Incipit Epistola prima beáti Petri Apostoli
@@ -117,7 +88,7 @@ V. Quodcúmque ligáveris super terram, erit ligátum et in cælis; et quodcúmq
 R. Et ídeo tibi tráditæ sunt claves regni cælórum.
 
 [Lectio5]
-Den Petrus also ernannte der Herr zum Fundament der Kirche; und deshalb ehrt die Kirche dies Fundament mit Recht, über dem sich die Höhe des Kirchenbaues erhebt. Deshalb sagt ganz passend der Psalm, der gelesen worden ist: "Man soll ihn rühmen da, wo sich das Volk versammelt, und auf dem Stuhl der Älteren soll man ihn loben." Gepriesen sei Gott, der es angeordnet hat, dass der heilige Apostel Petrus gerühmt wird da, wo Volk versammelt ist; denn es gehört sich, dass ein solches Fundament in der Kirche geehrt wird, durch das uns der Aufstieg zum Himmel ermöglicht wird.
+Den Petrus also ernannte der Herr zum Fundament der Kirche; und deshalb ehrt die Kirche dies Fundament mit Recht, über dem sich die Höhe des Kirchenbaues erhebt. Deshalb sagt ganz passend der Psalm, der gelesen worden ist: „Man soll ihn rühmen da, wo sich das Volk versammelt, und auf dem Stuhl der Älteren soll man ihn loben.“ Gepriesen sei Gott, der es angeordnet hat, dass der heilige Apostel Petrus gerühmt wird da, wo Volk versammelt ist; denn es gehört sich, dass ein solches Fundament in der Kirche geehrt wird, durch das uns der Aufstieg zum Himmel ermöglicht wird.
 
 [Responsory5]
 R. Ego pro te rogávi, Petre, ut non defíciat fides tua:
@@ -143,7 +114,7 @@ In jener Zeit kam Jesus in die Gegend von Cäsarea Philippi, und dort stellte er
 _
 Auslegung vom heiligen Papste Leo.
 !Pred. 3 am Jahrestag seiner Wahl, nach dem Anfang.
-Die Apostel fragt der Herr, was die Leute über ihn denken; und so lange ist die Ausdrucksweise der Antwortenden eine gewöhnliche und gemeinsame, so lange dargelegt wird das Ungewisse in dem Bekenntnis der Menschen. Aber wo darnach geforscht wird, was das Urteil der Jünger in sich schließt, ist als erster mit dem Bekenntnis über den Herrn zur Stelle, der der erste an apostolischer Würde war. Als dieser gesagt hatte: "Du bist Christus, der Sohn des lebendigen Gottes," entgegnete ihm Jesus: "Selig bist du, Sohn des Jonas, denn das hat dir nicht Fleisch und Blut geoffenbart, sondern mein Vater, der im Himmel ist." Das heißt: Du bist deshalb selig, weil mein Vater dein Lehrer gewesen ist; und es hat dich nicht eine irdische Ansicht getäuscht, sondern eine himmlische Eingebung dich belehrt; und nicht Fleisch und Blut, sondern jener, dessen eingeborener Sohn ich bin, hat mich dir kenntlich gemacht.
+Die Apostel fragt der Herr, was die Leute über ihn denken; und so lange ist die Ausdrucksweise der Antwortenden eine gewöhnliche und gemeinsame, so lange dargelegt wird das Ungewisse in dem Bekenntnis der Menschen. Aber wo darnach geforscht wird, was das Urteil der Jünger in sich schließt, ist als erster mit dem Bekenntnis über den Herrn zur Stelle, der der erste an apostolischer Würde war. Als dieser gesagt hatte: „Du bist Christus, der Sohn des lebendigen Gottes,“ entgegnete ihm Jesus: „Selig bist du, Sohn des Jonas, denn das hat dir nicht Fleisch und Blut geoffenbart, sondern mein Vater, der im Himmel ist.“ Das heißt: Du bist deshalb selig, weil mein Vater dein Lehrer gewesen ist; und es hat dich nicht eine irdische Ansicht getäuscht, sondern eine himmlische Eingebung dich belehrt; und nicht Fleisch und Blut, sondern jener, dessen eingeborener Sohn ich bin, hat mich dir kenntlich gemacht.
 
 [Responsory7]
 R. Quem dicunt homines esse Filium hominis? dixit Jesus discipulis suis. Respondens Petrus dixit: Tu es Christus Filius Dei vivi.
@@ -152,7 +123,7 @@ V. Beatus es, Simon Bar-Jona, quia caro et sanguis non revelavit tibi, sed Pater
 R. Et ego dico tibi, quia tu es Petrus, et super hanc petram aedificabo Ecclesiam meam.
 
 [Lectio8]
-"Und ich", so erklärt er, "sage dir;" d. h. so wie mein Vater dir meine Gottheit geoffenbart hat, so mache ich dir nun bekannt deine Auszeichnung. "Du bist ein Petrus;" d. h. obwohl ich der unverletzliche Fels bin, ich der Eckstein, der beide Stücke zu einem verbindet, ich das Fundament, außer welchem niemand ein anderes legen kann; so bist dennoch auch du ein Fels, weil du von meiner Kraft die Festigkeit bekommst, sodass das, was mir auf Grund meiner Macht eigen ist, dir mit mir auf Grund des Teilnehmens gemeinsam ist. "Und auf diesen Fels will ich meine Kirche bauen, und die Gewalten der Unterwelt werden sie nicht überwältigen können." Auf diesem festen Grunde, so sagt er, will ich ein ewig dauerndes Heiligtum errichten; und die in den Himmel hineinzuleitende Hoheit meiner Kirche wird sich auf der Festigkeit dieses Glaubens erheben.
+„Und ich“, so erklärt er, „sage dir;“ d. h. so wie mein Vater dir meine Gottheit geoffenbart hat, so mache ich dir nun bekannt deine Auszeichnung. „Du bist ein Petrus;“ d. h. obwohl ich der unverletzliche Fels bin, ich der Eckstein, der beide Stücke zu einem verbindet, ich das Fundament, außer welchem niemand ein anderes legen kann; so bist dennoch auch du ein Fels, weil du von meiner Kraft die Festigkeit bekommst, sodass das, was mir auf Grund meiner Macht eigen ist, dir mit mir auf Grund des Teilnehmens gemeinsam ist. „Und auf diesen Fels will ich meine Kirche bauen, und die Gewalten der Unterwelt werden sie nicht überwältigen können.“ Auf diesem festen Grunde, so sagt er, will ich ein ewig dauerndes Heiligtum errichten; und die in den Himmel hineinzuleitende Hoheit meiner Kirche wird sich auf der Festigkeit dieses Glaubens erheben.
 
 [Responsory8]
 R. Elegit te Dominus sacerdotem sibi, ad sacrificandum ei
@@ -163,7 +134,7 @@ R. Hostiam laudis.
 R. Hostiam laudis.
 
 [Lectio9]
-Dieses Bekenntnis werden die Gewalten der Unterwelt nicht aufhalten, die Todesketten nicht fesseln; denn dieses Wort ist ein Wort, das Leben schafft. Und wie es seine Bekenner zum Himmel hinaufhebt, so drückt es auch seine Gegner zur Totenwelt hinab. Darum sagt er dem überaus seligen Petrus: "Ich werde dir die Schlüssel des himmlischen Reiches geben. Was du auf Erden binden wirst, das soll auch als gebunden gelten im Himmel; und was du lösen wirst auf Erden, das soll auch als gelöst gelten im Himmel." Es ist wohl auch auf andere Apostel diese Gewalt übergegangen und auf alle Kirchenfürsten ist die Bestimmung dieses Dekrets übergegangen; aber nicht ohne Wirkung wird dem einen anvertraut, was allen mitgeteilt wird. Dem Petrus wird dies deshalb in besonderer Weise übergegeben, weil allen Lenkern der Kirche das vorangeht, was Petrus ist. Es bleibt also das Vorrecht des Petrus überall gewahrt, wo auf Grund der rechten Anwendung seiner Gewalt ein Urteil gefällt wird. Und es kommt weder zu große Strenge noch zu große Lässigkeit vor, wenn nichts gebunden und nichts gelöst wird, was nicht der heilige Petrus löst oder bindet.
+Dieses Bekenntnis werden die Gewalten der Unterwelt nicht aufhalten, die Todesketten nicht fesseln; denn dieses Wort ist ein Wort, das Leben schafft. Und wie es seine Bekenner zum Himmel hinaufhebt, so drückt es auch seine Gegner zur Totenwelt hinab. Darum sagt er dem überaus seligen Petrus: „Ich werde dir die Schlüssel des himmlischen Reiches geben. Was du auf Erden binden wirst, das soll auch als gebunden gelten im Himmel; und was du lösen wirst auf Erden, das soll auch als gelöst gelten im Himmel.“ Es ist wohl auch auf andere Apostel diese Gewalt übergegangen und auf alle Kirchenfürsten ist die Bestimmung dieses Dekrets übergegangen; aber nicht ohne Wirkung wird dem einen anvertraut, was allen mitgeteilt wird. Dem Petrus wird dies deshalb in besonderer Weise übergegeben, weil allen Lenkern der Kirche das vorangeht, was Petrus ist. Es bleibt also das Vorrecht des Petrus überall gewahrt, wo auf Grund der rechten Anwendung seiner Gewalt ein Urteil gefällt wird. Und es kommt weder zu große Strenge noch zu große Lässigkeit vor, wenn nichts gebunden und nichts gelöst wird, was nicht der heilige Petrus löst oder bindet.
 &teDeum
 
 [Hymnus Laudes]
@@ -191,3 +162,16 @@ R. Ad sacrificándum ei hóstiam laudis.
 
 [Ant 3]
 @Commune/C4:Ant 3 summi Pontificis
+
+[Commemoratio4]
+!Kommemoration vom hl. Paulus
+(deinde dicuntur)
+Ant. O heiliger Apostel Paulus, du Verkünder der Wahrheit und Lehrer der Völker, bitte für uns bei Gott, der dich auserwählt hat.
+_
+V. Du bist ein auserwähltes Gefäß, o heiliger Apostel Paulus.
+R. Der Verkünder der Wahrheit auf der ganzen Erde.
+_
+$Oremus
+(sed rubrica 196 hæc versus omittuntur)
+O Gott, der du alle Völker durch die Predigt des heiligen Apostels Paulus gelehrt hast, gewähre uns, wir bitten dich, die Gnade, daß wir von demjenigen, dessen Gedächtnis wir begehen, auch die Fürsprache bei dir fühlen.
+$Per Dominum

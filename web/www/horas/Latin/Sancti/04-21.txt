@@ -1,18 +1,20 @@
+[Officium]
+S. Anselmi Episcopi Confessoris et Ecclesiæ Doctoris
+(sed rubrica monastica)
+S. Anselmi Episcopi, Confessoris et Ecclesiæ Doctoris, O. N.
+
 [Rank]
-S. Anselmi Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3.1;;vide C4a
-
-[Rank](rubrica 1960)
-S. Anselmi Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
-
-[Name]
-Ansélme
+;;Duplex;;3;;vide C4a
+(sed rubrica 1930)
+;;Duplex majus;;4;;vide C4a
 
 [Rule]
 vide C4a;
 9 lectiones
 
-[Oratio]
-@Commune/C4:Oratio2:s/N\./Ansélmum/
+[Name]
+Ansélmum
+Ant=Ansélme
 
 [Lectio4]
 Ansélmus, Augustæ Prætoriæ in finibus Itáliæ, Gundulpho et Ermemberga, nobílibus et catholicis parentibus natus, a teneris annis assiduo litterarum studio, atque perfectióris vitæ desiderio, non obscurum futuræ sanctitatis et doctrinæ specimen dedit. Et licet juvenili ardore aliquando ad sæculi illecebras traheretur, brevi tamen in pristinam viam revocatus, patria et bonis omnibus derelictis, ad monasterium Beccense ordinis sancti Benedicti se contulit: ubi emissa regulari professione sub Herluino abbate observantissimo, et Lanfranco viro doctissimo, tanto animi fervore, et jugi studio in litteris et virtutibus assequendis profecit, ut mirum in modum tamquam sanctitatis et doctrinæ exemplar ab omnibus haberetur.
@@ -27,3 +29,11 @@ Defuncto Lanfranco archiepiscopo Cantuariensi, ejus olim præceptore, Anselmus, 
 Ansélmus, Augústæ Prætóriæ in fínibus Itáliæ, nobílibus et cathólicis paréntibus natus, adoléscens, pátria et bonis ómnibus derelíctis, in monastério Beccénsi órdinis sancti Benedícti emíssa regulári professióne, in lítteris et virtútibus assequéndis mirum in modum profécit. Régibus, epíscopis veneratióni fuit, et sancto Gregório séptimo étiam accéptus, qui tunc, persecutiónibus agitátus, lítteras amóris plenas ad eum dedit, se et Ecclésiam ejus oratiónibus comméndans. Defúncto Lanfránco archiepíscopo Cantuariénsi, ejus olim præceptóre, ad ejúsdem ecclésiæ régimen vocátus, verbo et exémplo, scriptis et concíliis celebrátis, prístinam pietátem et ecclesiásticam disciplínam redúxit. Sed cum mox Willélmus rex vi et minis jura Ecclésiæ usurpáre tentásset, ípseque invícte restitísset, bonórum direptiónem et exsílium passus, Romam ad Urbánum secúndum se cóntulit. A quo honorífice excéptus et summis láudibus ornátus, in Barénsi concílio Spíritum Sanctum étiam a Fílio procedéntem, contra Græcórum errórem, innúmeris Scripturárum et sanctórum Patrum testimóniis propugnávit. Post mortem Willélmi, ab Henríco rege ejus fratre in Angliam revocátus obdormívit in Dómino.
 &teDeum
 
+[Lectio7]
+@Commune/C4a:Lectio7 in 2 loco
+
+[Lectio8]
+@Commune/C4a:Lectio8 in 2 loco
+
+[Lectio9]
+@Commune/C4a:Lectio9 in 2 loco

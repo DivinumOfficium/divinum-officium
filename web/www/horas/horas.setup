@@ -4,8 +4,8 @@ $building='0';;
 $lang1='Latin';;
 $psalmvar='0';;
 $whitebground='1';;
-$blackfont='black';;
-$smallblack='-1 black';;
+$blackfont='';;
+$smallblack='-1';;
 $redfont=' italic red';;
 $initiale='+2 bold italic red';;
 $largefont='+1 bold italic red';;
@@ -15,24 +15,29 @@ $screenheight='1024';;
 $textwidth='100';;
 $oldhymns='0';;
 $nonumbers='0';;
+$nofancychars='0';;
+$noinnumbers='1';;
+$noflexa='1';;
+$langfb='English';;
+$testmode='Proper';;
 
 [parameterscheck]
-bbtbbbtcccccnnb
+bbtbbbtcccccnnbbbbbtt
 
 [general]
-$expand='all';;
-$version='Rubrics 1960';;
+$expand='tota';;
+$version='Rubrics 1960 - 1960';;
 $lang2='English';;
-$accented='plain';;
+$votive='Hodie';;
 
 [generalcheck]
 oooo
 
 [generalc]
-$expand='all';;
-$version1='Divino Afflatu';;
-$version2='Rubrics 1960';;
-$lang2='English';;
+$expand='tota';;
+$version='Divino Afflatu';;
+$version2='Rubrics 1960 - 1960';;
+$langc='Latin';;
 $accented='plain';;
 
 [generalccheck]

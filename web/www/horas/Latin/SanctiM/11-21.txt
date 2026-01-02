@@ -1,11 +1,26 @@
 @Sancti/11-21
 
-[Rank]
-In Præsentatione Beatæ Mariæ Virginis;;Duplex;;3;;vide C11
+[Rule]
+(nisi rubrica 1963) 12 lectiones
+Doxology=Nat
 
-[Commemoratio 2]
-Commemoratio S. Columbáni Abbátis
-@Commune/C5:Oratio1:s/N\./Columbáni/
-
-[Responsory3]
+[Responsory3] (rubrica 1963)
 @Commune/C11:Responsory1
+
+[Lectio5]
+@Sancti/11-21:Lectio4:s/ In lucem.*//
+
+[Lectio6]
+@Sancti/11-21:Lectio4:s/.* (?=In lucem)//s
+
+[Lectio7]
+@Sancti/11-21:Lectio5
+
+[Responsory7]
+@CommuneM/C11
+
+[Lectio8]
+@Sancti/11-21:Lectio6
+
+[Responsory9]
+@Commune/C11:Responsory7:s/festivitátem/Præsentatiónem/

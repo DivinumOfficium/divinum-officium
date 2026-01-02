@@ -1,14 +1,23 @@
-[Rank]
-Sabbato infra octavam Corporis Christi;;Semiduplex II class;;5;;ex Tempora/Pent01-4
+[Officium]
+Sabbato infra octavam Corporis Christi
 
-[Rank1960]
-Sabbato infra Hebdomadam I post Octavam Pentecostes;;Feria;;1
+[Officium] (rubrica 196 aut rubrica 1955)
+Sabbato infra Hebdomadam I post Octavam Pentecostes
+
+[Rank]
+;;Semiduplex II class;;5.6;;ex Tempora/Pent01-4
+(sed rubrica tridentina nisi rubrica cisterciensis)
+;;Semiduplex IIS class;;2.9;;ex Tempora/Pent01-4
+(sed rubrica cisterciensis)
+;;Semiduplex;;2.1;;ex Tempora/Pent01-4
+(sed rubrica 196 aut rubrica 1955)
+;;Feria;;1
 
 [Rule]
 ex Tempora/Pent01-4;
 9 lectiones
 Doxology=Corp
-					
+
 [Lectio1]
 De libro primo Regum
 !1 Reg 3:1-7
@@ -25,7 +34,7 @@ De libro primo Regum
 
 [Lectio2]
 !1 Reg 3:8-12
-8 Et adiécit Dóminus, et vocávit adhuc Samuélem tértio. Qui consúrgens ábiit ad Heli,
+8 Et adjécit Dóminus, et vocávit adhuc Samuélem tértio. Qui consúrgens ábiit ad Heli,
 9 et ait: Ecce ego, quia vocásti me. Intelléxit ergo Heli quia Dóminus vocáret púerum: et ait ad Samuélem: Vade, et dormi: et si deínceps vocáverit te, dices: Lóquere, Dómine, quia audit servus tuus. Abiit ergo Sámuel, et dormívit in loco suo.
 10 Et venit Dóminus, et stetit: et vocávit, sicut vocáverat secúndo: Sámuel, Sámuel. Et ait Sámuel: Lóquere, Dómine, quia audit servus tuus.
 11 Et dixit Dóminus ad Samuélem: Ecce ego fácio verbum in Israël, quod quicúmque audíerit, tínnient ambæ aures ejus.
@@ -72,3 +81,12 @@ Ergo spíritus est qui vivíficat; spíritus enim facit viva membra: nec viva me
 [Lectio9]
 Hæc dicúntur, ut amémus unitátem et timeámus separatiónem. Nihil enim sic debet formidáre Christiánus quam separári a córpore Christi. Si enim separátur a córpore Christi, non est membrum ejus, non vegetátur Spíritu ejus. Quisquis autem, inquit Apóstolus, Spíritum Christi non habet, hic non est ejus. Spíritus ergo est, qui vivíficat, caro autem non prodest quidquam. Verba, quæ ego locútus sum vobis, spíritus et vita sunt. Quid est, Spíritus et vita sunt? Spiritáliter intelligénda sunt. Intellexísti spiritáliter? Spíritus et vita sunt. Intellexísti carnáliter? Etiam sic illa spíritus et vita sunt, sed tibi non sunt.
 &teDeum
+
+[Ant 2] (rubrica cisterciensis)
+@Tempora/Pent01-5
+
+[Ant Vespera 3] (rubrica cisterciensis)
+@Tempora/Pent01-5
+
+[Ant 3] (rubrica cisterciensis)
+@Tempora/Pent01-5

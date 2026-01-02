@@ -1,0 +1,46 @@
+[Officium]
+Festum Sanctissimæ Trinitatis
+
+[Rule]
+Gloria
+Credo
+Prefatio=Trinitate
+
+[Introitus]
+@Tempora/Pent01-0
+
+[Oratio]
+@Tempora/Pent01-0
+
+[Commemoratio Oratio]
+!Pro Dominicam I post Pentecosten
+@Tempora/Pent01-0a:Oratio
+
+[Lectio]
+@Tempora/Pent01-0
+
+[Graduale]
+@Tempora/Pent01-0
+
+[Evangelium]
+@Tempora/Pent01-0
+
+[Offertorium]
+@Tempora/Pent01-0
+
+[Secreta]
+@Tempora/Pent01-0
+
+[Commemoratio Secreta]
+!Pro Dominicam I post Pentecosten
+@Tempora/Pent01-0a:Secreta
+
+[Communio]
+@Tempora/Pent01-0
+
+[Postcommunio]
+@Tempora/Pent01-0
+
+[Commemoratio Postcommunio]
+!Pro Dominicam I post Pentecosten
+@Tempora/Pent01-0a:Postcommunio

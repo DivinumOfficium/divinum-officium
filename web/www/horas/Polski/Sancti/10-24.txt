@@ -1,14 +1,5 @@
-[Rank]
-Św. Rafała Archanioła;;Duplex majus;;4;;ex Sancti/05-08
-
-[Rule]
-ex Sancti/05-08
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=137
-Horas1960 Feria
+[Officium]
+Św. Rafała Archanioła
 
 [Ant Vespera]
 Posłan został * Aniół Rafał do Tobiasza i Sary, aby ich uleczyć.
@@ -16,11 +7,6 @@ Wszedł Aniół * do Tobiasza by go zbawić, i rzekł: Niech ci zawżdy będzie 
 Silny duchem * bądź, Tobiaszu: blisko bowiem jest czas, gdy Bóg cię uleczy.
 Błogosławcie Pana nieba, * i wobec wszystkiego, co żyje, wychwalajcie go, bo uczynił wam według miłosierdzia swego.
 Pokój wam, * nie lękajcie się: Boga błogosławcie, a śpiewajcie mu.
-
-[Capitulum Vespera]
-!Tb 12:12
-v. Gdyś się modliwał z płaczem i pogrzebałeś umarłe, i zostawiałeś obiad twój a kryłeś umarłe przez dzień w domu twoim, a w nocyś je pogrzebał: jam ofiarował twoję modlitwę Panu.
-$Deo gratias
 
 [Hymnus Vespera]
 @Sancti/05-08:Hymnus Laudes:s/Anioł pokoju.*?_//s s/Anioł mężny.*?_//s
@@ -31,9 +17,6 @@ Oto ja jestem Anioł Rafał, * który stoję przed Panem: wy tedy błogosławcie
 [Oratio]
 Boże, który błogosławionego Rafała Archanioła Tobjaszowi, słudze swemu za towarzysza w drodze dałeś, dozwól nam sługom Twoim, aby zawsze otaczała nas Jego opieka, i wspierała pomoc.
 $Per Dominum
-
-[Invit]
-@Sancti/05-08
 
 [Lectio1]
 Z Księgi Tobiasza
@@ -73,13 +56,18 @@ R. Skąd cię mamy, dobry młodzieńcze?
 21 A gdy to wymówił, zniknął z oczu ich i więcej go widzieć nie mogli.
 22 Tedy upadszy na oblicze, przez trzy godziny błogosławili Boga, a powstawszy, opowiadali wszytkie dziwy jego.
 
-[Responsory3]
+[Responsory3DA]
 R. Wszedłszy, Anjoł do Tobiasza, pozdrowił go i rzekł: Niech ci zawżdy będzie wesele:
 * Bądź serca mężnego, blisko tego, że od Boga uzdrowion będziesz.
 V. I odpowiedział Tobiasz: Co za wesele mi będzie, który w ciemności siedzę, a światłości niebieskiej nie widzę?
 R. Bądź serca mężnego, blisko tego, że od Boga uzdrowion będziesz.
 &Gloria
 R. Bądź serca mężnego, blisko tego, że od Boga uzdrowion będziesz.
+
+[Capitulum Laudes]
+!Tb 12:12
+v. Gdyś się modliwał z płaczem i pogrzebałeś umarłe, i zostawiałeś obiad twój a kryłeś umarłe przez dzień w domu twoim, a w nocyś je pogrzebał: jam ofiarował twoję modlitwę Panu.
+$Deo gratias
 
 [Hymnus Laudes]
 @Sancti/03-24::s/Który oznaczasz moc Bożą;/Oznaczający uzdrowienie Boże:/ s/Przymnóż sił słabym,/Oddalaj choroby cielesne,/ s/Przynieś ulgę smutnym./Przynoś zdrowie duszom./

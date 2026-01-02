@@ -1,12 +1,18 @@
+[Officium]
+Dominica IV Post Epiphaniam
+
 [Rank]
-Dominica IV Post Epiphaniam;;Semiduplex;;5
+;;Semiduplex;;5
 
 [Rule]
 9 lectiones
 Symbolum Athanasium
 
+[Ant 1] (rubrica cisterciensis)
+Scitis, fratres, * quia templum Dei estis, et Spíritus Dei hábitat in vobis: si quis autem violáverit templum hoc, despérdet illum Dóminus: templum enim Dei sanctum est, quod estis vos, allelúia.
+
 [Oratio]
-Deus, qui nos, in tantis perículis constitútos, pro humána scis fragilitáte non posse subsístere: da nobis salútem mentis et córporis; ut ea, quæ pro peccátis nostris pátimur, te adjuvánte vincámus.
+Deus, qui nos in tantis perículis constitútos, pro humána scis fragilitáte non posse subsístere: da nobis salútem mentis et córporis; ut ea, quæ pro peccátis nostris pátimur, te adjuvánte vincámus.
 $Per Dominum
 
 [Lectio1]
@@ -55,7 +61,7 @@ Replémus refectiónibus corpus, ne extenuátum defíciat; extenuámus abstinén
 @Tempora/Epi2-0:Responsory4
 
 [Lectio5]
-Unde bene per Paulum dícitur: Vanitáti enim subjécta est creatura non volens, sed propter eum qui subjécit eam in spe: quia et ipsa creatura liberábitur a servitute corruptiónis, in libertátem glóriæ filiórum Dei. Vanitáti quippe creatura non volens subditur: quia homo, qui ingénitæ constantiæ státum volens deseruit, préssus justæ mortalitátis póndere, nolens mutabilitátis suæ corruptióni servit. Sed creatura hæc tunc a servitute corruptiónis erípitur, cum ad filiórum Dei glóriam incorrupta resurgéndo sublevátur.
+Unde bene per Paulum dícitur: Vanitáti enim subjécta est creatura non volens, sed propter eum qui subjécit eam in spe: quia et ipsa creatura liberábitur a servitute corruptiónis, in libertátem glóriæ filiórum Dei. Vanitáti quippe creatura non volens subditur: quia homo, qui ingénitæ constantiæ statum volens deseruit, pressus justæ mortalitátis póndere, nolens mutabilitátis suæ corruptióni servit. Sed creatura hæc tunc a servitute corruptiónis erípitur, cum ad filiórum Dei glóriam incorrupta resurgéndo sublevátur.
 
 [Responsory5]
 @Tempora/Epi2-0:Responsory5
@@ -88,14 +94,11 @@ Ipse vero dormiébat: et accessérunt ad eum, et suscitavérunt eum, dicéntes: 
 Porro hómines miráti sunt, dicéntes: Qualis est hic, quia venti et mare obediunt ei? Non discípuli, sed nautæ, et ceteri, qui in navi erant, mirabántur. Sin autem quis contentiose volúerit, eos, qui mirabántur, fuísse discipulos: respondébimus, recte hómines appellatos, qui necdum nóverant poténtiam Salvatoris.
 &teDeum
 
-[Versum 2]
-@Tempora/Epi2-0:Versum 2
-
 [Ant 2]
 Ascendénte Jesu * in navículam, ecce motus magnus factus est in mari: et suscitavérunt eum discípuli ejus, dicéntes: Dómine, salva nos, perímus.
 
-[Versum 3]
-@Tempora/Epi2-0:Versum 3
-
 [Ant 3]
-Dómine, salva nos, * perímus. ímpera, et fac, Deus, tranquillitátem.
+Dómine, salva nos, * perímus: ímpera, et fac, Deus, tranquillitátem.
+
+[Ant 3] (rubrica cisterciensis)
+Surgens Jesus * imperávit ventis et mari, et facta est tranquíllitas magna, et miráti sunt univérsi.

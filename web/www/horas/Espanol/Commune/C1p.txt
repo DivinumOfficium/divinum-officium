@@ -1,53 +1,44 @@
-[Name]
+[Officium]
 Commune apostolorum tempore Paschali
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Una Antiphona
-
 [Ant Vespera]
-Tus Santos, * Señor, crecerán como el lirio * aleluya, y como el olor del bálsamo serán ante ti, aleluya.;;109
-La habitación * de los santos es el reino celestial, y su descanso será eterno, aleluya.;;110
-A la sombra de tus alas * gritaban tus Santos, Señor, aleluya, aleluya, aleluya.;;111
-Almas y espíritus * de los justos, bendecid al Señor Dios nuestro, aleluya, aleluya.;;112
-Brillarán los justos * como el sol en presencia de Dios, aleluya.;;116
-
-[Capitulum Vespera]
-!Sab 5:1
-v. Entonces el justo estará en pie con gran aplomo delante de los que lo afligieron y despreciaron sus trabajos.
-$Deo gratias
+Tus Santos, * Señor, crecerán como el lirio, aleluya, y como el olor del bálsamo serán ante ti, aleluya.
+La habitación * de los santos es el reino celestial, y su descanso será eterno, aleluya.
+A la sombra de tus alas * gritaban tus Santos, Señor, aleluya, aleluya, aleluya.
+Almas y espíritus * de los justos, bendecid al Señor Dios nuestro, aleluya, aleluya.
+Brillarán los justos * como el sol en presencia de Dios, aleluya.
 
 [Hymnus Vespera]
-{:H-Tristeserantapostoli:}v. Los Apóstoles estaban tristes 
-a causa de la cruel muerte de Cristo, 
-entregado por servidores impíos 
-a un espantoso suplicio. 
+{:H-Tristeserantapostoli:}v. Tristes están los Apóstoles,
+su corazón viste duelo,
+que está Cristo en el sepulcro,
+muerto por impíos siervos.
 _
-Pero un Ángel acaba de anunciar a las mujeres, 
-con palabra de verdad: que presto, 
-con su presencia, Cristo había de llenar 
-de nuevo de alegría a los fieles reunidos.
+Grande gozo a las mujeres
+anticipa nuncio angélico:
+luego a su grey elegida
+Cristo se hará manifiesto.
 _
-Cuando presurosas corren a llevar 
-este anuncio a los Apóstoles ansiosos, 
-encuentran a Jesús glorioso, 
-y siguen sus huellas.
+A los inquietos Apóstoles
+nuevas del feliz suceso
+corren a dar, y glorioso
+Cristo las sale al encuentro.
 _
-Los Apóstoles se dirigen 
-a los altos montes de Galilea: 
-sus deseos se ven cumplidos, gozando de Jesús 
-cubierto de gloriosos resplandores.
+Retíranse los Apóstoles
+a los montes galileos,
+y Jesús llena sus almas
+de luz, de gracia y consuelos.
 _
-¡Oh Jesús, dígnate, para ser eternamente 
-nuestro gozo pascual, librarnos 
-de la muerte cruel del pecado, 
-y hacernos nacer a una nueva vida!
+Para que seas del alma
+pascual júbilo perpetuo,
+de la muerte del pecado
+libra, Jesús, a tus siervos.
 _
-* A Dios Padre sea la gloria, 
-y al Hijo resucitado de entre los muertos, 
-juntamente con el Paráclito, 
-por los siglos eternos. Amén.
+* Gloria y honor a Dios Padre,
+y al Hijo que de los muertos
+resucitó, y al Paráclito,
+por los siglos sempiternos.
+Amén.
 
 [Versum 1]
 V. Santos y justos, alegraos en el Señor, aleluya.
@@ -59,28 +50,24 @@ Una luz perpetua * iluminará, Señor, a vuestros Santos, y vivirán por toda la
 [Invit]
 Al Señor, Rey de los Apóstoles, * Venid, adorémosle, aleluya.
 
-[Hymnus Matutinum]
-@Commune/C1p:Hymnus Vespera
-
 [Ant Matutinum]
 Los justos se presentarán * con gran firmeza, ante aquellos que les persiguieron, aleluya.;;18
 ;;33
 ;;44
-V. Santos y justos, alegraos en el Señor, aleluya.
-R. Dios os ha escogido como su herencia, aleluya.
 He ahí * cómo fueron contados entre los hijos de Dios, y su dicha  es estar con los santos, aleluya.;;46
 ;;60
 ;;63
-V. Una luz perpetua iluminará, Señor, a vuestros Santos, aleluya.  
-R. Y vivirán por toda la eternidad, aleluya.
 Una luz perpetua * iluminará, Señor, a vuestros santos, y vivirán por toda la eternidad, aleluya.;;74
 ;;96
 ;;98
+
+[Nocturn 2 Versum]
+V. Una luz perpetua iluminará, Señor, a vuestros Santos, aleluya.  
+R. Y vivirán por toda la eternidad, aleluya.
+
+[Nocturn 3 Versum]
 V. Sobre ellos brillará una alegría eterna, aleluya. 
 R. Conseguirán el gozo y la exultación, aleluya.
-
-[Lectio1]
-@Commune/C1
 
 [Responsory1]
 R. Bienaventurado el varón que teme al Señor, aleluya. 
@@ -88,17 +75,11 @@ R. Bienaventurado el varón que teme al Señor, aleluya.
 V. Gloria y riquezas habrá en su casa, y su justicia durará eternamente. 
 R. Se esfuerza en gran manera en cumplir sus mandamientos, aleluya, aleluya, aleluya.
 
-[Lectio2]
-@Commune/C1
-
 [Responsory2]
 R. Vuestra tristeza, aleluya, 
 * Se convertirá en gozo, aleluya, aleluya. 
 V. El mundo se alegrará, y vosotros os entristeceréis, pero vuestra tristeza. 
 R. Se convertirá en gozo, aleluya, aleluya.
-
-[Lectio3]
-@Commune/C1
 
 [Responsory3]
 R. Es preciosa en presencia del Señor, aleluya, 
@@ -108,26 +89,17 @@ R. La muerte de sus Santos, aleluya.
 &Gloria
 R. La muerte de sus Santos, aleluya. 
 
-[Lectio4]
-@Commune/C1
-
 [Responsory4]
 R. Una luz perpetua iluminará, Señor, a vuestros Santos. 
 * Y vivirán por toda la eternidad, aleluya, aleluya, 
 V. Sobre ellos brillará una alegría eterna; conseguirán el gozo y la exultación.
 R. Y vivirán por toda la eternidad, aleluya, aleluya.
 
-[Lectio5]
-@Commune/C1
-
 [Responsory5]
 R. Con gran valor daban los Apóstoles 
 * Testimonio de la resurrección de Jesucristo Señor nuestro, aleluya, aleluya. 
 V. Llenos del Espíritu Santo, hablaban confiadamente la palabra de Dios. 
 R. Testimonio de la resurrección de Jesucristo Señor nuestro, aleluya, aleluya.
-
-[Lectio6]
-@Commune/C1
 
 [Responsory6]
 R. Estos son los corderos noveles, que han anunciado el aleluya: ahora han acudido a las fuentes. 
@@ -137,17 +109,11 @@ R. Están llenos de claridad, aleluya, aleluya.
 &Gloria
 R. Están llenos de claridad, aleluya, aleluya. 
 
-[Lectio7]
-@Commune/C1
-
 [Responsory7]
 R. Yo soy la verdadera vid, y vosotros los sarmientos: 
 * El que permanece en mí y Yo en él, éste dará mucho fruto, aleluya, aleluya, 
 V. Así como me ha amado mi Padre, Yo también os he amado. 
 R. El que permanece en mí y Yo en él, éste dará mucho fruto, aleluya, aleluya.
-
-[Lectio8]
-@Commune/C1
 
 [Responsory8]
 R. Sus Nazarenos han sido iluminados, aleluya; resplandecieron delante de Dios, aleluya: 
@@ -157,66 +123,63 @@ R. Y como la leche se cuajaron, aleluya, aleluya.
 &Gloria
 R. Y como la leche se cuajaron, aleluya, aleluya. 
 
-[Lectio9]
-@Commune/C1
-
-[Ant Laudes]
-Tus Santos, * Señor, crecerán como el lirio, aleluya, y como el olor del bálsamo serán ante ti, aleluya.
-La habitación * de los santos es el reino celestial, y su descanso será eterno, aleluya.
-A la sombra de tus alas * gritaban tus Santos, Señor, aleluya, aleluya, aleluya.
-Almas y espíritus * de los justos, bendecid al Señor Dios nuestro, aleluya, aleluya.
-Brillarán los justos * como el sol en presencia de Dios, aleluya.
-
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Sab 5:1
+v. Entonces el justo estará en pie con gran aplomo delante de los que lo afligieron y despreciaron sus trabajos.
+$Deo gratias
 
 [Hymnus Laudes]
-{:H-Paschalemundogaudium:}v. Con el gozo pascual,
-el sol de nuevo brilla
-cuando ven los apóstoles
-que Jesús resucita.
+{:H-Paschalemundogaudium:}v. El sol más hermoso anuncia
+pascuales gozos al orbe,
+cuando a Jesús ven radiante
+con nueva luz los Apóstoles.
 _
-En la carne de Cristo
-ven claras las heridas
-y paladinamente
-que está vivo predican.
+Miran sus llagas que brillan
+con purpúreos resplandores:
+testigos fieles, esparcen
+por el mundo sus pregones.
 _
-Cristo, rey clementísimo,
-nuestras almas habita
-para que te celebremos
-por siempre en nuestra vida.
+Tú, Cristo, Rey de clemencia,
+reina en nuestros corazones,
+que las gracias merecidas
+rinda la lengua a tu Nombre.
 _
-¡Oh Jesús, dígnate, para ser eternamente 
-nuestro gozo pascual, librarnos 
-de la muerte cruel del pecado, 
-y hacernos nacer a una nueva vida!
+Para que perenne el alma
+pascual alegría goce,
+de la muerte del pecado
+haz que jamás sienta el golpe.
 _
-* Gloria a ti Señor,
-que de los muertos has resucitado,
-y al Padre y al Espíritu Santo,
-por los siglos sin término.
+* Gloria al Padre, gloria al Hijo,
+que a su palabra conforme
+resucitó, y al Paráclito
+demos eternos loores.
 Amén.
 
 [HymnusM Laudes]
-{:H-Paschalemundogaudium:}v. Con el gozo pascual,
-el sol de nuevo brilla
-cuando ven los apóstoles
-que Jesús resucita.
+{:H-Paschalemundogaudium:}v. El sol más hermoso anuncia
+pascuales gozos al orbe,
+cuando a Jesús ven radiante
+con nueva luz los Apóstoles.
 _
-En la carne de Cristo
-ven claras las heridas
-y paladinamente
-que está vivo predican.
+Miran sus llagas que brillan
+con purpúreos resplandores:
+testigos fieles, esparcen
+por el mundo sus pregones.
 _
-Cristo, rey clementísimo,
-nuestras almas habita
-para que te celebremos
-por siempre en nuestra vida.
+Tú, Cristo, Rey de clemencia,
+reina en nuestros corazones,
+que las gracias merecidas
+rinda la lengua a tu Nombre.
 _
-Gloria a ti Señor,
-que de los muertos has resucitado,
-y al Padre y al Espíritu Santo,
-por los siglos sin término.
+Para que perenne el alma
+pascual alegría goce,
+de la muerte del pecado
+haz que jamás sienta el golpe.
+_
+* Gloria al Padre, gloria al Hijo,
+que a su palabra conforme
+resucitó, y al Paráclito
+demos eternos loores.
 Amén.
 
 [Versum 2]
@@ -229,62 +192,36 @@ Venid, hijas de Jerusalén, contemplad los mártires coronados por el Señor en 
 [Lectio Prima]
 !Rom 8:28
 v. Por otra parte, sabemos que a los que aman a
-Dios todo les sirve para el bien; a los cuales ha llamado conforme a su designio. 
+Dios todo les sirve para el bien; a los cuales ha llamado conforme a su designio.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Santos y justos, alegraos en el Señor, * Aleluya, aleluya.
 R. Santos y justos, alegraos en el Señor, * Aleluya, aleluya.
 V. Dios os ha escogido como su herencia.
 R. Aleluya, aleluya.
 &Gloria
 R. Santos y justos, alegraos en el Señor, * Aleluya, aleluya.
-_
-V. Una luz perpetua iluminará, Señor, a vuestros Santos, aleluya.  
-R. Y vivirán por toda la eternidad, aleluya.
 
 [Capitulum Sexta]
 !Sab 5:5
 v. Mirad cómo ahora es contado entre los hijos de Dios, y comparte la suerte de los santos.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Una luz perpetua iluminará, Señor, a vuestros Santos, * Aleluya, aleluya. 
 R. Una luz perpetua iluminará, Señor, a vuestros Santos, * Aleluya, aleluya. 
 V. Y vivirán por toda la eternidad.
 R. Aleluya, aleluya.
 &Gloria
 R. Una luz perpetua iluminará, Señor, a vuestros Santos, * Aleluya, aleluya. 
-_
-V. Sobre ellos brillará una alegría eterna, aleluya. 
-R. Conseguirán el gozo y la exultación, aleluya.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Sobre ellos brillará una alegría eterna, * Aleluya, aleluya. 
 R. Sobre ellos brillará una alegría eterna, * Aleluya, aleluya. 
 V. Conseguirán el gozo y la exultación, aleluya.
 R. Aleluya, aleluya.
 &Gloria
 R. Sobre ellos brillará una alegría eterna, * Aleluya, aleluya.
-_
-V. Es de gran precio ante los ojos del Señor. Aleluya.
-R. La muerte de los santos. Aleluya.
-
-[Versum 3]
-@:Versum 1
-
-[Ant Vespera 3]
-Tus Santos, * Señor, crecerán como el lirio * aleluya, y como el olor del bálsamo serán ante ti, aleluya.;;109
-La habitación * de los santos es el reino celestial, y su descanso será eterno, aleluya.;;112
-A la sombra de tus alas * gritaban tus Santos, Señor, aleluya, aleluya, aleluya.;;115
-Almas y espíritus * de los justos, bendecid al Señor Dios nuestro, aleluya, aleluya.;;125
-Brillarán los justos * como el sol en presencia de Dios, aleluya.;;138
 
 [Ant 3]
 Santos y justos, * alegraos en el Señor, aleluya: Dios os ha escogido como su herencia, aleluya.

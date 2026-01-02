@@ -1,0 +1,30 @@
+@Tempora/111-2
+
+[In Finem Lectio]
+@TemporaOP/Quad5-0
+
+[Lectio1]
+@Tempora/111-2::1-5 s/-4/-3/
+@:In Finem Lectio
+
+[Responsory1]
+@Tempora/111-0:Responsory4:1-3 s/\n\* (.)/\l$1/ s/laudáre/\n* Laudántes/
+@Tempora/111-0:Responsory4:4 s/.* laudáre/R. Laudántes/
+
+[Lectio2]
+@Tempora/111-2::1 s/5-9/4-7/
+@Tempora/111-2:Lectio1:6
+@Tempora/111-2::2-4 s/; omnis .*/./
+@:In Finem Lectio
+
+[Responsory2]
+@Tempora/111-0:Responsory5
+
+[Lectio3]
+@Tempora/111-2::1 s/5-9/4-7/
+@Tempora/111-2:Lectio2:4-6 s/.*; (.)/7 \u$1/
+@Tempora/111-2::2 s/;$/./
+@:In Finem Lectio
+
+[Responsory3]
+@Tempora/111-0:Responsory6

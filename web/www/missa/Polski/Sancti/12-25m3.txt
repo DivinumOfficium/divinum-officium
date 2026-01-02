@@ -1,13 +1,6 @@
 [Rank]
 In die Nativitatis Domini;;Duplex I Classis;;7
 
-[Rule]
-Gloria
-Credo
-Prefatio=Nat
-celebranda aut missa prima aut missa secunda aut missa tertia
-(rubrica 1960) no Ultima Evangelium
-
 [Comment]
 # 25 XII – Boże Narodzenie — Msza w Dzień
 ! Stacja u Najświętszej Maryi Panny Większej
@@ -56,8 +49,7 @@ Uświęć, Panie, złożone dary przez nowe narodzenie Jedynego Syna Twojego i o
 $Per eundem
 
 [Communio]
-!Ps 97:3
-Ujrzały wszystkie krańce ziemi zbawienie Boga naszego.
+@Sancti/01-01
 
 [Postcommunio]
 Wszechmogący Boże, narodzony dzisiaj Zbawiciel świata przywrócił nam synostwo Boże; spraw, prosimy, aby nam udzielił daru nieśmiertelności:

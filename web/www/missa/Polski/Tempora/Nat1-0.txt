@@ -1,13 +1,5 @@
-[Rank]
-Dominica Infra Octavam Nativitatis;;Semiduplex;;5;;ex Sancti/12-25
-
-[Rank1960]
-Dominica Infra Octavam Nativitatis;;Semiduplex;;5.5;;ex Sancti/12-25
-
-[Rule]
-Gloria
-Credo
-Prefatio=Nat
+[Officium]
+Niedziela w Oktawie Bożego Narodzenia
 
 [Comment]
 # Niedziela w Oktawie Bożego Narodzenia
@@ -28,7 +20,7 @@ Wszechmocny, wieczny Boże, kieruj naszymi czynami według Twojego upodobania, a
 w Imię umiłowanego Syna Twego mogli obfitować w dobre uczynki.
 $Qui tecum
 
-[Commemoratio Oratio]
+[Commemoratio Oratio] (nisi rubrica 1960)
 !W Oktawie Narodzenia
 Dozwól, prosimy Cię, wszechmogący Boże, aby nowe narodzenie się w ciele Jednorodzonego Syna Twego wyzwoliło nas z jarzma grzechu, w którym nas trzyma dawna niewola.
 $Per eundem
@@ -59,7 +51,7 @@ Bóg okrąg ziemi utwierdził, iż się nie poruszy. Od wieków tron Twój niewz
 Prosimy Cię, wszechmogący Boże, niech dar złożony przed oczyma Twego Majestatu wyjedna nam łaskę dziecięcego oddania się Tobie i pomoże do osiągnięcia szczęśliwej wieczności. 
 $Per Dominum
 
-[Commemoratio Secreta]
+[Commemoratio Secreta] (nisi rubrica 1960)
 !W Oktawie Narodzenia
 Uświęć, Panie, złożone dary przez nowe narodzenie Jedynego Syna Twojego i oczyść nas ze zmazy naszych grzechów.
 $Per eundem
@@ -69,10 +61,10 @@ $Per eundem
 Weźmij Dziecię i Matkę Jego, a idź do ziemi izraelskiej, pomarli bowiem ci, którzy czyhali na życie Dziecięcia.
 
 [Postcommunio]
-Panie, niech działanie tego Sakramentu oczysci nas ze złych skłonności i spełni nasze godziwe pragnienia.
+Panie, niech działanie tego Sakramentu oczyści nas ze złych skłonności i spełni nasze godziwe pragnienia.
 $Per Dominum
 
-[Commemoratio Postcommunio]
+[Commemoratio Postcommunio] (nisi rubrica 1960)
 !W Oktawie Narodzenia
 Wszechmogący Boże, narodzony dzisiaj Zbawiciel świata przywrócił nam synostwo Boże; spraw, prosimy, aby nam udzielił daru nieśmiertelności:
 $Qui tecum

@@ -1,16 +1,23 @@
-[Rank]
-S. Gregorii Papæ Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4b
-(sed rubrica tridentina)
-S. Gregorii Papæ Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+[Officium]
+S. Gregorii Papæ Confessoris et Ecclesiæ Doctoris
 
-[RankNewcal]
-S. Gregorii Papæ Confessoris et Ecclesiæ Doctoris;;Duplex;;3.1;;vide C4b
+[Rank]
+;;Duplex;;3;;vide C4a
+(sed communi Summorum Pontificum et ad missam)
+;;Duplex;;3;;vide C4b
+(sed rubrica 1930 aut rubrica 1963)
+;;II Class;;5;;ex C4a
+(sed rubrica 196)
+;;Duplex;;2.1;;vide C4a
+(sed rubrica innovata)
+;;Duplex;;2.2;;vide C4a
 
 [Rule]
 vide C4b;
 (sed rubrica tridentina)
 vide C4a;
 Gloria
+CredoDA
 
 [Oratio]
 Deus, qui ánimæ fámuli tui Gregórii ætérnæ beatitúdinis prǽmia contulísti: concéde propítius; ut, qui peccatórum nostrórum póndere prémimur, ejus apud te précibus sublevémur.
@@ -23,4 +30,3 @@ $Per Dominum
 [Postcommunio]
 Deus, qui beátum Gregórium Pontíficem Sanctórum tuórum méritis coæquásti: concéde propítius; ut, qui commemoratiónis ejus festa percólimus, vitæ quoque imitémur exémpla.
 $Per Dominum
-

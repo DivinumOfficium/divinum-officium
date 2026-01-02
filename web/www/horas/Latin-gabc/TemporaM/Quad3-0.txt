@@ -1,0 +1,37 @@
+[Ant Matutinum 3N]
+Si in dígito Dei * ejício dæmónia, profécto pervénit in vos regnum Dei.;;269;270;271
+
+[Lectio1]
+@Tempora/Quad3-0:Lectio1:s/-10/-4/ s/5.*//s
+
+[Lectio2]
+@Tempora/Quad3-0:Lectio1:1-2 s/2-/5-/ 
+@Tempora/Quad3-0:Lectio1:6-11
+
+[Lectio5]
+@Tempora/Quad3-0:Lectio4:s/Justum .*//s
+
+[Lectio6]
+@Tempora/Quad3-0:Lectio4:s/.* Justum /Justum /s s/$/~/
+@Tempora/Quad3-0:Lectio5:s/Sed ea .*//s
+
+[Lectio7]
+@Tempora/Quad3-0:Lectio5:s/.* Sed ea /Sed ea /s s/$/~/
+@Tempora/Quad3-0:Lectio6:s/Jure .*//s
+
+[Lectio8]
+@Tempora/Quad3-0:Lectio6:s/.* Jure /Jure /s
+
+[Lectio9]
+@Tempora/Quad3-0:Lectio7:s/Quidam .*//s
+
+[Lectio10]
+@Tempora/Quad3-0:Lectio7:s/.* Quidam /Quidam /s s/$/~/
+@Tempora/Quad3-0:Lectio8:s/Et alii .*//s
+
+[Lectio11]
+@Tempora/Quad3-0:Lectio8:s/.* Et alii /Et alii /s s/$/~/
+@Tempora/Quad3-0:Lectio9:s/Si autem omne.*//s
+
+[Lectio12]
+@Tempora/Quad3-0:Lectio9:s/.* Si autem omne/Si autem omne/s

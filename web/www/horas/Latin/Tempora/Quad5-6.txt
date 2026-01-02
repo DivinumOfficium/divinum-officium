@@ -1,10 +1,12 @@
+[Officium]
+Sabbato infra Hebdomadam Passionis
+
 [Rank]
-Sabbato infra Hebdomadam Passionis;;Feria major;;2.9
-
-[Rank1960]
-Sabbato infra Hebdomadam Passionis;;Feria major;;3
-
-[Rule]
+;;Feria major;;2.1
+(sed rubrica 1930)
+;;Feria major;;4.9
+(sed rubrica 196)
+;;Feria major;;3.9
 
 [Lectio1]
 Léctio sancti Evangélii secúndum Joánnem
@@ -33,18 +35,9 @@ Has ei laudes turba dicébat: Hosánna, benedíctus, qui venit in nómine Dómin
 [Ant 2]
 Clarífica me, Pater, * apud temetípsum claritáte, quam hábui priúsquam mundus fíeret.
 
+[Ant 2] (rubrica cisterciensis)
+Pater juste, * mundus te non cognóvit: ego autem novi te, quia tu me misísti.
+
 [Oratio 2]
 Profíciat, quǽsumus, Dómine, plebs tibi dicáta, piæ devotiónis afféctu: ut sacris actiónibus erudíta, quanto majestáti tuæ fit grátior, tanto donis potióribus augeátur.
 $Per Dominum
-
-[Capitulum Vespera]
-!Phil 2:5-7
-v. Fratres: Hoc enim sentíte in vobis, quod et in Christo Jesu: qui, cum in forma Dei esset, non rapínam arbitrátus est esse se æquálem Deo: sed semetípsum exinanívit, formam servi accípiens, in similitúdinem hóminum factus, et hábitu invéntus ut homo.
-$Deo gratias
-
-[Ant 3]
-Pater juste, * mundus te non cognóvit: ego autem novi te, quia tu me misísti.
-
-[Oratio 3]
-Omnípotens sempitérne Deus, qui humáno géneri, ad imitándum humilitátis exémplum, Salvatórem nostrum carnem súmere, et crucem subíre fecísti: concéde propítius; ut et patiéntiæ ipsíus habére documénta, et resurrectiónis consórtia mereámur.
-$Per eumdem

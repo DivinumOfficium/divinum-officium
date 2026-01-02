@@ -1,13 +1,47 @@
 @Tempora/Pasc6-6
 
+[Officium]
+Sabbato in Vigilia Pentecostes
+(sed rubrica 1963)
+In Vigilia Pentecostes
+
 [Rank]
-In Vigilia Pentecostes;;I classis Semiduplex;;7;;vide TemporaM/Pasc5-4
+;;I classis Semiduplex;;6.9;;ex TemporaM/Pasc5-4
+
+[Rank] (rubrica 1963)
+;;I classis Semiduplex;;7;;vide TemporaM/Pasc5-4
 
 [Rule]
+ex TemporaM/Pasc5-4;
+3 Lectiones
+Psalmi Dominica
+(sed rubrica cisterciensis) Psalmi Feria 
+Antiphonas Horas
+Doxology=Asc
+Feria Te Deum
+No suffragium
+No93
+
+[Rule] (rubrica 196)
 
 
 [Oratio]
 @Tempora/Pasc6-0
+
+[Ant Matutinum]
+@Tempora/Pasc5-4::3 s/;;.*//
+;;
+;;
+;;
+;;
+;;
+@Tempora/Pasc5-4::14-15
+@Tempora/Pasc5-4::6 s/;;.*//
+;;
+;;
+;;
+;;
+;;
 
 [Lectio1]
 @:Lectio7
@@ -27,17 +61,22 @@ In Vigilia Pentecostes;;I classis Semiduplex;;7;;vide TemporaM/Pasc5-4
 [Responsory3]
 @Tempora/Pasc6-0:Responsory8
 
-[Capitulum Vespera]
-@TemporaM/Pasc5-5
+[MM Capitulum] (rubrica tridentina aut rubrica divino)
+@Tempora/Pasc6-0:Capitulum Sexta
+_
+@Tempora/Pasc5-4:Nocturn 2 Versum
 
 [Capitulum Laudes]
-@TemporaM/Pasc5-5
-
-[Capitulum Tertia]
+@TemporaM/Pasc6-0
+(sed rubrica 1963)
 @TemporaM/Pasc5-5
 
 [Capitulum Sexta]
+@TemporaM/Pasc6-0
+(sed rubrica 1963)
 @TemporaM/Pasc5-5
 
 [Capitulum Nona]
+@TemporaM/Pasc6-0
+(sed rubrica 1963)
 @TemporaM/Pasc5-5

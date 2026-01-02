@@ -1,39 +1,32 @@
-[Rank]
-S. Philippi Benitii Confessoris;;Duplex;;3;;vide C5b
-
-[Rule]
-vide C5b
-Gloria
+[Officium]
+S. Filipe Benício, Confessor
 
 [Comment]
 # 23 VIII – S. Filipe Benício, Confessor
 ! 3 classe
 ! Paramentos brancos
 
+[Name]
+Filipe
+
 [Introitus]
-@Commune/C5b:Introitus
+@Commune/C5-1:Introitus
 
 [Oratio]
 Ó Deus, que na pessoa do B. Filipe, vosso Confessor, nos proporcionastes exímio exemplo de humildade, fazei que os vossos servos, imitando-o, desprezem as alegrias deste mundo e procurem sempre as celestiais.
 $Per Dominum
 
 [Lectio]
-@Commune/C5b:Lectio
+@Commune/C5-1:Lectio
 
 [Graduale]
-@Commune/C5b:Graduale
+@Commune/C5-1:Graduale
 
 [Evangelium]
-@Commune/C5b:Evangelium
+@Commune/C5-1:Evangelium
 
 [Offertorium]
-@Commune/C5b:Offertorium
-
-[Secreta]
-@Commune/C5b:Secreta
+@Commune/C5-1:Offertorium
 
 [Communio]
-@Commune/C5b:Communio
-
-[Postcommunio]
-@Commune/C5b:Postcommunio
+@Commune/C5-1:Communio

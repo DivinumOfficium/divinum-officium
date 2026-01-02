@@ -1,0 +1,16 @@
+[Lectio1]
+@Tempora/Pasc0-4::s/ O niech.*//s
+
+[Responsory1]
+@TemporaOP/Pasc0-1
+
+[Lectio2]
+@Tempora/Pasc0-4:Lectio1:s/.*O niech/O niech/s s/$/~/
+@Tempora/Pasc0-4::s/ Toteż.*//
+
+[Responsory2]
+@TemporaOP/Pasc0-1
+
+[Lectio3]
+@Tempora/Pasc0-4:Lectio2:s/.*Toteż/Toteż/s s/$/~/
+@Tempora/Pasc0-4::s/ Chociaż.*//

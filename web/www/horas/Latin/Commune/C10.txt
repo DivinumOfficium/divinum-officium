@@ -1,211 +1,122 @@
-[Name]
-Officium Beatæ Mariæ Virginis in Sabbato
+[Officium]
+Sanctæ Mariæ Sabbato
+
+[Missa]
+Salve Sancta Parens (a Trinitate usque ad Adventum)
 
 [Rank]
-Sanctæ Mariæ Sabbato;;Feria;;2;;vide C10
+;;Simplex;;1.3;;vide C10
 
 [Rule]
 vide C10
 Special Benedictio
-Special Lectio 3
+(nisi rubrica cisterciensis) Special Lectio 3
 Doxology=Nat
 Antiphonas horas
-(rubrica tridentina) Psalmi Dominica 
-
-[Capitulum Vespera]
-!Sir 24:14
-v. Ab inítio et ante sǽcula creáta sum, et usque ad futúrum sǽculum non désinam, et in habitatióne sancta coram ipso ministrávi.
-$Deo gratias.
+(rubrica tridentina nisi rubrica cisterciensis) Psalmi Dominica
+(rubrica 1617 aut rubrica cisterciensis) 3 lectiones
+Gloria
+Suffr=Spiritu;Ecclesiæ,Papa;;
+Prefatio=Maria=veneratione;
 
 [Hymnus Vespera]
-{:H-Avemaris:}
-!Prima stropha sequentis hymni dicitur flexis genibus.
-v. Ave maris stella,
-Dei Mater alma,
-Atque semper Virgo,
-Felix cæli porta.
-_
-Sumens illud Ave
-Gabriélis ore,
-Funda nos in pace,
-Mutans Hevæ nomen.
-_
-Solve vincla reis,
-Profer lumen cæcis,
-Mala nostra pelle,
-Bona cuncta posce.
-_
-Monstra te esse matrem,
-Sumat per te preces,
-Qui pro nobis natus,
-Tulit esse tuus.
-_
-Virgo singuláris,
-Inter omnes mitis,
-Nos culpis solútos
-Mites fac et castos.
-_
-Vitam præsta puram,
-Iter para tutum,
-Ut vidéntes Jesum,
-Semper collætémur.
-_
-Sit laus Deo Patri,
-Summo Christo decus,
-Spirítui Sancto,
-Tribus honor unus.
-Amen.
+@Commune/C11
 
 [Versum 1]
 @Commune/C6:Versum 2
 
-[Ant 1]
+[Ant 1_]
 Beáta Mater * et intácta Virgo, gloriósa Regína mundi, intercéde pro nobis ad Dóminum.
 
+[Ant 1_Pasch]
+Regína cæli, * lætáre, allelúja; quia quem meruísti portáre, allelúja; resurréxit, sicut dixit, allelúja: ora pro nobis Deum, allelúja.
+
+[Ant 1]
+@:Ant 1_
+(sed tempore paschali)
+@:Ant 1_Pasch
+
 [Oratio]
-Concéde nos fámulos tuos, quǽsumus, Dómine Deus, perpétua mentis et córporis sanitáte gaudére: et, gloriósa beátæ Maríæ semper Vírginis intercessióne, a præsénti liberári tristítia, et ætérna pérfrui lætítia.
-$Per Dominum
+@Commune/C11
 
 [Invit]
 Ave María, grátia plena, * Dóminus tecum.
 
 [Hymnus Matutinum]
-@Commune/C11:Hymnus Matutinum
-
-[HymnusM Matutinum]
-@Commune/C11:HymnusM Matutinum
-
-[Benedictio]
-Précibus et méritis beátæ Maríæ semper Vírginis et ómnium Sanctórum, perdúcat nos Dóminus ad regna cælórum. Amen.
-Jube, domne, benedícere.
-Nos cum prole pia benedícat Virgo María. Amen.
-Ipsa Virgo Vírginum intercédat pro nobis ad Dóminum. Amen.
-Per Vírginem matrem concédat nobis Dóminus salútem et pacem. Amen.
-
-[Responsory1](rubrica tridentina)
 @Commune/C11
 
-[Responsory2](rubrica tridentina)
+[HymnusM Matutinum]
+@Commune/C11
+
+[Responsory1] (rubrica tridentina)
+@Commune/C11
+
+[Responsory2] (rubrica tridentina)
 @Commune/C11:Responsory7:1-3
 R. Quia ex te ortus est sol justítiæ
 &Gloria
 R. Christus, Deus noster.
 
-[Ant Laudes](rubrica tridentina aut rubrica monastica)
-@Commune/C11:Ant Vespera:s/;;.*//g
+[Benedictio]
+Précibus et méritis beátæ Maríæ semper Vírginis et ómnium Sanctórum, perdúcat nos Dóminus ad regna cælórum.
+Nos cum prole pia benedícat Virgo María.
+Ipsa Virgo Vírginum intercédat pro nobis ad Dóminum.
+Per Vírginem matrem concédat nobis Dóminus salútem et pacem.
+
+[Versum 0]
+@Commune/C11
+
+[Ant Laudes] (rubrica tridentina)
+@Commune/C11
 
 [Capitulum Laudes]
-@:Capitulum Vespera
-
-[HymnusM Laudes]
-v. O gloriósa Dómina,
-Excélsa super sídera:
-Qui te creávit, próvide
-Lactásti sacro úbere.
-_
-Quod Heva tristis ábstulit,
-Tu reddis almo gérmine:
-Intrent ut astra flébiles,
-Cæli fenéstra facta es.
-_
-Tu Regis alti jánua,
-Et porta lucis fúlgida:
-Vitam datam per Vírginem,
-Gentes redémptæ, pláudite.
-_
-Glória tibi Dómine,
-Qui natus es de Vírgine,
-Cum Patr[e] et Sancto Spíritu,
-In sempitérna sǽcula. Amen.
+@Commune/C11
 
 [Hymnus Laudes]
-{:Ogloriosavirginum:}v. O gloriósa vírginum,
-Sublímis inter sídera,
-Qui te creávit, párvulum
-Lacténte nutris úbere.
-_
-Quod Heva tristis ábstulit,
-Tu reddis almo gérmine:
-Intrent ut astra flébiles,
-Cæli reclúdis cárdines.
-_
-Tu Regis alti jánua
-Et aula lucis fúlgida:
-Vitam datam per Vírginem,
-Gentes redémptæ, pláudite.
-_
-* Jesu tibi sit glória,
-Qui natus es de Vírgine,
-Cum Patre, et almo Spíritu,
-In sempitérna sǽcula.
-Amen.
+@Commune/C11
+
+[HymnusM Laudes]
+@Commune/C11
 
 [Versum 2]
 V. Benedícta tu in muliéribus.
 R. Et benedíctus fructus ventris tui.
 
-[Ant 2]
+[Ant 2_]
 Beáta Dei Génetrix, María, * Virgo perpétua, templum Dómini, sacrárium Spíritus Sancti, sola sine exémplo placuísti Dómino nostro Jesu Christo: ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu.
 
+[Ant 2]
+@:Ant 2_
+(sed tempore paschali)
+@:Ant 1_Pasch
+
 [Lectio Prima]
-!Sir 24:19-20
-v. In platéis sicut cinnamómum et bálsamum aromatízans odórem dedi: quasi myrrha elécta, dedi suavitátem odóris.
+@Commune/C11
 
-[Capitulum Tertia]
-@:Capitulum Vespera
+[Responsory Breve Tertia]
+@Commune/C6
 
-[Responsory Tertia]
-R.br. Spécie tua * Et pulchritúdine tua.
-R. Spécie tua * Et pulchritúdine tua.
-V. Inténde, próspere procéde, et regna.
-R. Et pulchritúdine tua.
-&Gloria
-R. Spécie tua * Et pulchritúdine tua.
-_
-V. Adjuvábit eam Deus vultu suo.
-R. Deus in médio ejus, non commovébitur.
+[Versum Tertia]
+@Commune/C6:Nocturn 2 Versum
 
 [Capitulum Sexta]
-!Sir 24:15-16
-v. Et sic in Sion firmáta sum, et in civitáte sanctificáta simíliter requiévi, et in Jerúsalem potéstas mea. Et radicávi in pópulo honorificáto, et in parte Dei mei heréditas illíus, et in plenitúdine sanctórum deténtio mea.
-$Deo gratias.
+@Commune/C11
 
-[Responsory Sexta]
-R.br. Adjuvábit eam * Deus vultu suo.
-R. Adjuvábit eam * Deus vultu suo.
-V. Deus in médio ejus, non commovébitur.
-R. Deus vultu suo.
-&Gloria
-R. Adjuvábit eam * Deus vultu suo.
-_
-V. Elégit eam Deus, et præelégit eam.
-R. In tabernáculo suo habitáre facit eam.
+[Responsory Breve Sexta]
+@Commune/C6
 
-[Responsory Sexta](tempore paschali)
-R.br. Adjuvábit eam Deus vultu suo, * Allelúja, allelúja.
-R. Adjuvábit eam Deus vultu suo, * Allelúja, allelúja.
-V. Deus in médio ejus, non commovébitur.
-R. Allelúja, allelúja.
-&Gloria
-R. Adjuvábit eam Deus vultu suo, * Allelúja, allelúja.
-_
-V. Elégit eam Deus, et præelégit eam, allelúja.
-R. In tabernáculo suo habitáre facit eam, allelúja.
+[Versum Sexta]
+@Commune/C6:Nocturn 3 Versum
 
 [Capitulum Nona]
-@:Lectio Prima
-$Deo gratias.
+@Commune/C11:Lectio Prima
+$Deo gratias
 
-[Responsory Nona]
-R.br. Elégit eam Deus, * Et præelégit eam.
-R. Elégit eam Deus, * Et præelégit eam.
-V. In tabernáculo suo habitáre facit eam.
-R. Et præelégit eam.
-&Gloria
-R. Elégit eam Deus, * Et præelégit eam.
-_
-V. Diffúsa est grátia in lábiis tuis.
-R. Proptérea benedíxit te Deus in ætérnum.
+[Responsory Breve Nona]
+@Commune/C6
+
+[Versum Nona]
+@Commune/C6:Versum 2
 
 [Lectio M01]
 Ex Epístola sancti Ambrósii Epíscopi ad Sirícium Papam
@@ -270,7 +181,7 @@ Amplectámur Maríæ vestígia, fratres mei, et devotíssima supplicatióne beá
 [Lectio M101]
 Sermo sancti Bernárdi Abbátis
 !In Dom. infra Oct. Assumpt. B. Mariæ Virg.
-Quid ergo sidéreum micat in generatióne Maríæ? Plane quod ex régibus orta, quod ex sémine Abrahæ, quod generósa ex stripe Davi. Si id parum vidétur, adde quod generatióni illi ob singuláre privilégium sanctitátis divínitus nóscitur esse concéssa, quod longe ante eísdem pátribus cáelitus repromíssa, quod mýsticis præfiguráta miráculis, quod oráculis prænuntiáta prophéticis. Hanc enim sacerdotális virga, dum sine radíce flóruit; hanc Gedeónis vellus, dum in médio siccæ áreæ máduit; hanc in Ezechiélis visióne orientális porta, quæ nulli umquam pátuit, præsignábat. Hanc dénique præ céteris Isaías nunc virgam de radíce Jesse oritúram promittébat, nunc evidéntius vírginem paritúram. Mérito signum hoc magnum in cælo apparuísse scríbitur, quod tanto ante de cælo nóscitur fuísse promíssum.
+Quid ergo sidéreum micat in generatióne Maríæ? Plane quod ex régibus orta, quod ex sémine Abrahæ, quod generósa ex stripe Davi. Si id parum vidétur, adde quod generatióni illi ob singuláre privilégium sanctitátis divínitus nóscitur esse concéssa, quod longe ante eísdem pátribus cǽlitus repromíssa, quod mýsticis præfiguráta miráculis, quod oráculis prænuntiáta prophéticis. Hanc enim sacerdotális virga, dum sine radíce flóruit; hanc Gedeónis vellus, dum in médio siccæ áreæ máduit; hanc in Ezechiélis visióne orientális porta, quæ nulli umquam pátuit, præsignábat. Hanc dénique præ céteris Isaías nunc virgam de radíce Jesse oritúram promittébat, nunc evidéntius vírginem paritúram. Mérito signum hoc magnum in cælo apparuísse scríbitur, quod tanto ante de cælo nóscitur fuísse promíssum.
 &teDeum
 
 [Lectio M11]
@@ -284,3 +195,27 @@ Ex libro Officiórum S. Ambrósii Epíscopi
 !Lib. 1, cap. 18
 Bonus regéndæ castitátis pudor est comes, qui primus, in ipso cognitiónis ingréssu, Dómini Matrem comméndat legéntibus, et tamquam testis lócuples dignam quæ ad tale munus eligerétur ástruit: quod in cubículo, quod sola, quod salutáta ab Angelo tacet et mota est in intróitu ejus, quod ad virílis sexus spéciem peregrínam turbátur aspéctus Vírginis. Itaque, quamvis esset húmilis præ verecúndia tamen non resalutávit, nec ullum respónsum rétulit, nisi ubi de suscipiénda Dómini generatióne cognóvit; ut qualitátem efféctus dísceret, non ut sermónem refélleret.
 &teDeum
+
+[Introitus]
+@Commune/C11
+
+[Lectio]
+@Commune/C11
+
+[Graduale]
+@Commune/C11
+
+[Evangelium]
+@Commune/C11
+
+[Offertorium]
+@Commune/C11
+
+[Secreta]
+@Commune/C11
+
+[Communio]
+@Commune/C11
+
+[Postcommunio]
+@Commune/C11

@@ -1,16 +1,19 @@
-[Rank]
-Ss. Cyriaci, Largi et Smaragdi Martyrum;;Semiduplex;;2;;vide C3
+[Officium]
+Ss. Cyriaci, Largi et Smaragdi Martyrum
 
-[Rank1960]
-Ss. Cyriaci, Largi et Smaragdi Martyrum;;Semiduplex;;2;;vide C3
+[Rank]
+;;Semiduplex;;2.2;;vide C3a-1
+(sed rubrica 1960)
+;;Simplex;;1.1;;vide C3a-1
+(sed rubrica cisterciensis)
+;;Commemoratio;;1;;vide C3a-1
 
 [Rule]
-vide C3;
+vide C3a-1;
 9 lectiones
 
-[Oratio]
-Deus, qui nos annua sanctórum Mártyrum tuórum Cyríaci, Largi et Smarágdi solemnitáte lætíficas: concede propítius; ut, quorum natalícia colimus, virtútem quoque passiónis imitémur.
-$Per Dominum
+[Name]
+Cyríaci, Largi et Smarágdi
 
 [Lectio4]
 Cyríacus diaconus, cum Sisinio, Largo et Smaragdo diutius inclusus in carcere, multa édidit miracula, in quibus Arthémiam Diocletiáni filiam precibus a dæmone liberávit; missusque ad Saporem Persárum regem, Jobíam étiam ejus filiam a nefario spíritu erípuit. Rege vero ejus patre cum quadringentis ac trigínta aliis baptizatis, Romam rediit; ubi, Maximiáni imperatóris jussu comprehénsus, catenis vinctus ante rhedam suam tráhitur; et post dies quatuor e carcere edúctus, pice liquáta perfusus et in catasta exténsus, demum cum Largo et Smaragdo aliisque viginti secúri percússus est via Salaria, ad hortos Sallustiános. Quorum córpora in eádem via décimo septimo Kalendas Aprilis sepúlta a Joánne presbytero, póstea sexto Idus Augusti a Marcello Pontifice et Lucina nobili femina lineis velis involuta et pretiósis unguentis condíta, in ipsíus Lucinæ prædium via Ostiénsi, septimo ab Urbe lápide transláta sunt.
@@ -22,6 +25,10 @@ Nemo est, qui nesciat, Mártyrum glorias ad hoc divino consílio a Dei pópulis 
 
 [Lectio6]
 Quis est enim, qui eórum volens mérito copulári, nisi prius constántiam eórum téneat, sectétur fidem, imitétur virtútem passiónis; eórum glóriam páribus vitæ lineaméntis aut invéniat aut exquírat? Qui, etsi martýrio par esse non possit, tamen múneris tanti dignitáte se quisque bonis áctibus dignum præbeat. Adest enim clementíssimus Deus, qui desiderántibus suis aut martýrium præbeat, aut, sine martýrio, cum Sanctis præmia divína retríbuat.
+
+[Lectio94]
+Cyríacus diáconus, cum Sisínio, Largo et Smarágdo diútius inclúsus in cárcere, multa édidit mirácula, in quibus Arthémiam Diocletiáni fíliam précibus a dæmone liberávit; missúsque ad Sáporem Persárum regem, Jobíam étiam ejus filiam a nefário spíritu erípuit. Rege vero ejus patre cum quadringéntis ac trigínta áliis baptizátis, Romam rédiit; ubi, Maximiáni imperatóris jussu comprehénsus, caténis vinctus ante rhedam suam tráhitur; et post dies quátuor e cárcere edúctus, pice liquáta perfúsus et in catásta exténsus, demum cum Largo et Smarágdo aliísque vigínti secúri percússus est via Salária, ad hortos Sallustiános. Quorum córpora in eádem via décimo séptimo Kaléndas Aprílis sepúlta a Joánne presbytero, póstea sexto Idus Augústi a Marcéllo Pontífice et Lucína nóbili fémina líneis velis involúta et pretiósis unguéntis condíta, in ipsíus Lucínæ prædium via Ostiénsi, séptimo ab Urbe lápide transláta sunt.
+&teDeum
 
 [Lectio7]
 Léctio sancti Evangélii secúndum Marcum
@@ -37,8 +44,4 @@ Neque étenim in universo mundo tanta fidelium messis exsúrgeret, si de manu D�
 
 [Lectio9]
 Signa autem eos qui credituri sunt, hæc sequéntur: In nómine meo dæmónia ejícient, linguis loquéntur novis, serpéntes tollent: et si mortíferum quid bíberint, non eis nocébit: super ægros manus impónent, et bene habébunt. Numquidnam, fratres mei, quia ista signa non fácitis, minime creditis? Sed hæc necessaria in exordio Ecclésiæ fuérunt. Ut enim ad fidem crésceret multitúdo credéntium, miraculis fuerat nutriénda: quia et nos, cum arbústa plantamus, tamdiu eis aquam infúndimus, quoúsque ea in terra jam coaluisse videámus: et si semel radícem fíxerint, irrigátio cessabit. Hinc est enim quod Paulus dicit: Linguæ in signum sunt non fidelibus, sed infidelibus.
-&teDeum
-
-[Lectio94]
-Cyríacus diáconus, cum Sisínio, Largo et Smarágdo diútius inclúsus in cárcere, multa édidit mirácula, in quibus Arthémiam Diocletiáni fíliam précibus a dæmone liberávit; missúsque ad Sáporem Persárum regem, Jobíam étiam ejus filiam a nefário spíritu erípuit. Rege vero ejus patre cum quadringéntis ac trigínta áliis baptizátis, Romam rédiit; ubi, Maximiáni imperatóris jussu comprehénsus, caténis vinctus ante rhedam suam tráhitur; et post dies quátuor e cárcere edúctus, pice liquáta perfúsus et in catásta exténsus, demum cum Largo et Smarágdo aliísque vigínti secúri percússus est via Salária, ad hortos Sallustiános. Quorum córpora in eádem via décimo séptimo Kaléndas Aprílis sepúlta a Joánne presbytero, póstea sexto Idus Augústi a Marcéllo Pontífice et Lucína nóbili fémina líneis velis involúta et pretiósis unguéntis condíta, in ipsíus Lucínæ prædium via Ostiénsi, séptimo ab Urbe lápide transláta sunt.
 &teDeum

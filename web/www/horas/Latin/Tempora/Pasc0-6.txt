@@ -1,5 +1,11 @@
+[Officium]
+Sabbato in Albis
+
 [Rank]
-Sabbato in Albis;;Semiduplex I class;;6;;ex Pasc0-0
+;;Semiduplex I class;;6.9;;ex Pasc0-0
+
+[Rank] (rubrica cisterciensis)
+;;Semiduplex I classis;;5.9;;ex Pasc0-0
 
 [Rule]
 ex Pasc0-0;
@@ -8,6 +14,11 @@ Omit Hymnus Preces Suffragium;
 Minores sine Antiphona;
 Capitulum Versum 2;
 Psalmi Dominica;
+No secunda Vespera
+
+[Oratio]
+Concéde, quǽsumus, omnípotens Deus: ut, qui festa paschália venerándo égimus, per hæc contíngere ad gáudia ætérna mereámur.
+$Per Dominum
 
 [Ant Matutinum]
 @Tempora/Pasc0-3
@@ -15,7 +26,7 @@ Psalmi Dominica;
 [Lectio1]
 Léctio sancti Evangélii secúndum Joánnem
 !Joannes 20:1-9
-In illo témpore: Una sabbáti María Magdaléne venit mane, cum adhuc ténebræ essent, ad monuméntum. Et réliqua.
+In illo témpore: Una sábbati María Magdaléne venit mane, cum adhuc ténebræ essent, ad monuméntum. Et réliqua.
 _
 Homilía sancti Gregórii Papæ
 !Homilia 22 in Evangelia
@@ -44,8 +55,3 @@ Nec mirum esse videátur, quod per juniórem synagóga, per seniórem vero Eccl�
 
 [Ant 2]
 Currébant duo simul, * et ille álius discípulus præcucúrrit cítius Petro, et venit prior ad monuméntum, allelúja.
-
-[Oratio]
-Concéde, quǽsumus, omnípotens Deus: ut, qui festa paschália venerándo égimus, per hæc contíngere ad gáudia ætérna mereámur.
-$Per Dominum
-

@@ -1,8 +1,8 @@
-[Name]
+[Officium]
 Officium parvum Beatae Mariae Virginis
 
 [Rank]
-Officium Parvum Beatae Mariae Virginis tempore Adventi;;Simplex;;1
+Officium Parvum Beatae Mariae Virginis tempore Adventus et in Annuntiationis;;Simplex;;1
 
 [Rule]
 Ave only
@@ -16,11 +16,10 @@ no Te Deum
 @Sancti/03-25
 
 [Capitulum Vespera]
-@Sancti/03-25:Lectio Prima
-$Deo gratias
+@:Capitulum Laudes
 
 [Versum 1]
-@Commune/C11:Versum 2
+@Commune/C6:Versum 2
 
 [Ant 1]
 @Tempora/Adv1-0:Ant 2
@@ -38,27 +37,24 @@ v. Consciéntias nostras, quǽsumus, Dómine, visitándo purífica: ut, véniens
 $Qui tecum
 (sed rubrica 1955 aut rubrica 1960 omittitur)
 
-[Special Completorium]
-@Commune/C12::s/(#Capitulum.).*/$1/s
-@Sancti/03-25:Capitulum Vespera
-_
-@Psalterium/Mariaant:Advent:s/.*V./V./s s/v. .*//s
-
-#Canticum Nunc dimittis
-@Tempora/Adv1-0:Ant 2:s/^/Ant. /
-&psalm(233)
-@Tempora/Adv1-0:Ant 2:s/^/Ant. /
-
-@Commune/C12:Pre oratio
-@:Oratio
-
-@Commune/C12::s/.*(.#Conclusio)/$1/s
-
 [Invit]
 @Commune/C12
 
+[Ant Matutinum 9]
+Ángelus Dómini * nuntiávit Maríæ, et concépit de Spíritu Sancto.;;97
+
 [Ant Matutinum]
-@Commune/C11::s/V\. .*/V. Diffúsa est grátia in lábiis tuis./g s/R\. .*/R. Proptérea benedíxit te Deus in ætérnum./g s/Post partum.*\./Ángelus Dómini \* nuntiávit Maríæ, et concépit de Spíritu Sancto./
+@Commune/C11::1-3 s/7/6/
+@:Ant Matutinum 9
+
+[Nocturn 1 Versum]
+@Commune/C6:Versum 2
+
+[Nocturn 2 Versum]
+@Commune/C6:Versum 2
+
+[Nocturn 3 Versum]
+@Commune/C6:Versum 2
 
 [Lectio1]
 !Luc 1:26-28
@@ -91,6 +87,12 @@ _
 [Responsory3]
 @Tempora/Adv1-1:Responsory1
 
+[Minor final]
+#Oratio
+@Commune/C12:Pre oratio
+@:Oratio
+@Commune/C12:Minor final
+
 [Ant Laudes]
 @Sancti/03-25:Ant Vespera:s/;;.*//g
 
@@ -99,19 +101,16 @@ _
 $Deo gratias
 
 [Versum 2]
-@Commune/C12
+@Commune/C10
 
 [Ant 2]
 @Tempora/Adv1-0:Ant 2
 
-[Minor final]
-
-@Commune/C12:Pre oratio
-@:Oratio
-@Commune/C12:Minor final
-
 [Special Prima]
 @Commune/C12:Minor intro
+@Commune/C12:Hymnus minor
+
+#Psalmi
 @Sancti/03-25:Ant Vespera:1 s/^/Ant. / s/;;.*//
 &psalm(53)
 
@@ -122,13 +121,16 @@ _
 @Sancti/03-25:Ant Vespera:1 s/^/Ant. / s/;;.*//
 
 #Capitulum
-@Sancti/03-25:Capitulum Vespera
+@Sancti/03-25:Capitulum Laudes
 _
 @Commune/C11:Versum 1
 @:Minor final
 
 [Special Tertia]
 @Commune/C12:Minor intro
+@Commune/C12:Hymnus minor
+
+#Psalmi
 @Sancti/03-25:Ant Vespera:2 s/^/Ant. / s/;;.*//
 &psalm(119)
 
@@ -147,6 +149,9 @@ _
 
 [Special Sexta]
 @Commune/C12:Minor intro
+@Commune/C12:Hymnus minor
+
+#Psalmi
 @Sancti/03-25:Ant Vespera:3 s/^/Ant. / s/;;.*//
 &psalm(122)
 
@@ -164,6 +169,9 @@ _
 
 [Special Nona]
 @Commune/C12:Minor intro
+@Commune/C12:Hymnus minor
+
+#Psalmi
 @Sancti/03-25:Ant Vespera:5 s/^/Ant. / s/;;.*//
 &psalm(125)
 
@@ -174,9 +182,9 @@ _
 @Sancti/03-25:Ant Vespera:5 s/^/Ant. / s/;;.*//
 
 #Capitulum
-@Sancti/03-25:Capitulum Vespera
+@Sancti/03-25:Capitulum Laudes
 _
-@Psalterium/Mariaant:Advent:s/.*V./V./s s/v. .*//s
+@Psalterium/Mariaant:Advent:8-9
 @:Minor final
 
 [Versum 3]
@@ -184,3 +192,20 @@ _
 
 [Ant 3]
 @:Ant 1
+
+[Special Completorium]
+@Commune/C12::s/(#Capitulum Versus).*/$1\n/s
+@Sancti/03-25:Capitulum Laudes
+_
+@Psalterium/Mariaant:Advent:8-9
+
+#Canticum: Nunc dimittis
+@Tempora/Adv1-0:Ant 2:s/^/Ant. /
+&psalm(233)
+@Tempora/Adv1-0:Ant 2:s/^/Ant. /
+
+#Oratio
+@Commune/C12:Pre oratio
+@:Oratio
+
+@Commune/C12::s/.*(.#Conclusio)/$1/s

@@ -1,19 +1,11 @@
 [Rank]
-Sanctissimi Rosarii Beatæ Mariæ Virginis;;Duplex 2 classis;;5.1;;ex C11
+Notre-Dame du Rosaire;;Duplex 2 classis;;5.1;;ex C11
 
-[Rank1960]
-Beatæ Mariæ Virginis a Rosario;;Duplex 2 classis;;5;;ex C11
+[Rank] (rubrica 196)
+La fête de la Bienheureuse Vierge Marie du Rosaire;;Duplex 2 classis;;5;;ex C11
 
-[RankNewcal]
-Sanctissimi Rosarii Beatæ Mariæ Virginis;;Duplex;;3;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat;
-CPapaC=Marcum;
+[Rank] (rubrica innovata)
+Notre-Dame du Rosaire;;Duplex;;3;;ex C11
 
 [Ant Vespera]
 Quelle est celle-ci, * belle comme la colombe et comme la rose plantée aux bords des eaux ?;;109
@@ -21,11 +13,6 @@ Vierge puissante * comme la tour de David ; mille boucliers y sont suspendus, to
 Salut, Marie, * pleine de grâce, le Seigneur est avec vous et vous êtes bénie entre les femmes.;;121
 Il vous a béni, * le Seigneur, dans sa puissance, car c’est par vous, qu’il a réduit à rien nos ennemis.;;126
 Elles l’ont vue, * les filles de Sion, gracieuse comme le printemps en ses roses fleuries, et l’ont proclamée bienheureuse.;;147
-
-[Capitulum Vespera]
-!Sir 24:25 ; 39:17
-v. En moi, toute la grâce de la voie et de la vérité, en moi tout l’espoir de la vie et de la vertu. Moi, comme la rose plantée au bord des eaux, j’ai donné mon fruit.
-$Deo gratias
 
 [Hymnus Vespera]
 v. Un messager de la cour céleste,
@@ -70,23 +57,10 @@ Bienheureuse êtes-vous, * Vierge Marie, Mère de Dieu, qui avez cru au Seigneur
 O Dieu, dont le Fils unique nous a obtenu le prix du salut éternel par sa vie, sa mort et sa résurrection ; faites, nous vous en prions, qu’honorant ces mystères au moyen du très saint Rosaire de la bienheureuse Vierge Marie, nous imitions ce qu’ils contiennent et obtenions ce qu’ils promettent.
 $Per eumdem
 
-[Commemoratio 2]
-!Commémoraison de S. Marc, Pape et Confesseur
-@Commune/C4:Oratio proper
-$Oremus
-Pasteur éternel de l’Eglise, regardez avec bienveillance votre troupeau, protégez-le et gardez-le toujours. Nous vous le demandons par le bienheureux Pape Marc que vous avez placé comme berger à la tête de l’Eglise.
-$Per Dominum
-_
-!Commémoraison des Sts Serge, Bacchus, Marcel et Apulée, martyrs
-@Commune/C3:Oratio proper
-$Oremus
-Faites, Seigneur, que les mérites de vos saints Martyrs Serge, Bacchus, Marcel et Apulée, nous soient acquis et nous rendent toujours fervents dans votre amour.
-$Per Dominum
-
 [Invit]
 Célébrons la solennité du Rosaire de la Vierge Marie : * Adorons le Christ, son Fils, notre Seigneur.
 
-[Hymnus Matutinum]
+[Hymnus Matutinum_]
 v. Sur la montagne couverte d'oliviers,
 Le Rédempteur prie, prosterné ;
 Il est triste, il tremble, il défaille
@@ -119,21 +93,27 @@ Dans les siècles éternels.
 Ainsi soit-il.
 
 [Ant Matutinum]
-Angelus Gábriel * nuntiávit Maríæ: et concépit de Spíritu Sancto.;;8
-Intrávit Maria * in domum Zacharíæ, et salutávit Elísabeth.;;18
-Péperit Fílium suum * primogénitum, et reclinávit eum in præsépio.;;23
-V. Sancta Dei Génetrix, semper Virgo Maria.
-R. Intercéde pro nobis ad Dóminum, Deum nostrum.
-Cum indúcerent * Jesum paréntes ejus, ut sísterent eum Dómino, Simeon accépit eum in ulnas suas, et benedíxit Deum.;;44
-Requiréntes Jesum * paréntes ejus, invenérunt illum post tríduum in médio doctórum.;;45
-Cœpit contristári, * et factus est sudor ejus in horto sicut guttæ sánguinis.;;86
-V. Post partum, Virgo, invioláta permansísti.
-R. Dei Génetrix, intercéde pro nobis.
-Apprehéndit * Pilátus Jesum, et flagellávit.;;95
-Mílites plecténtes corónam * de spinis, imposuérunt super caput ejus.;;96
-Crucis impérium * super húmerum ejus : regnávit a ligno Deus.;;97
-V. Speciósa facta es et suávis.
-R. In delíciis tuis, sancta Dei Génetrix.
+L’Ange Gabriel porta son message à Marie * et elle conçut du Saint-Esprit.;;8
+Marie entra * dans la maison de Zacharie et salua Élisabeth.;;18
+Ayant mis au monde son Fils premier-né, * elle le coucha dans une crèche.;;23
+Alors que ses parents apportaient Jésus à Jérusalem, * pour le présenter au Seigneur, Siméon le reçut dans ses bras et bénit Dieu.;;44
+Cherchant Jésus, * ses parents le trouvèrent après trois jours au milieu des docteurs.;;45
+Il commença d’être triste * et sa sueur, dans le jardin, devint comme des gouttes de sang.;;86
+Pilate fit * prendre et flageller Jésus.;;95
+Les soldats tressant une couronne d’épines * la mirent sur sa tête.;;96
+L ’empire de la Croix * est sur son épaule ; Dieu a régné par le bois.;;97
+
+[Nocturn 1 Versum]
+V. Sainte Mère de Dieu, toujours Vierge, ô Mar
+R. Intercédez pour nous, près du Seigneur notre Dieu.
+
+[Nocturn 2 Versum]
+V. Après l’enfantement, ô Vierge, vous êtes restée inviolée,
+R. Mère de Dieu intercédez pour nous.
+
+[Nocturn 3 Versum]
+V. Belle avez-vous été faite et suave.
+R. En vos délices, sainte Mère de Dieu.
 
 [Lectio1]
 Du livre de l’Ecclésiastique.
@@ -220,7 +200,7 @@ Lecture du saint Évangile selon saint Luc.
 En ce temps-là : L’Ange Gabriel fut envoyé de Dieu dans la ville de Galilée appelée Nazareth, à une vierge qu’avait épousée un homme nommé Joseph, de la maison de David ; et le nom de la vierge était Marie. Et le reste.
 _
 Homélie de saint Bernard, Abbé.
-!Sermo de S. Maria
+!Sermon sur Ste Marie
 Voulant faire apprécier sa grâce et confondre la sagesse humaine, Dieu daigna prendre chair d’une femme, mais d’une vierge, afin de restituer la ressemblance par un semblable, de guérir le contraire par un contraire, d’arracher l’épine vénéneuse et d’effacer, avec une souveraine puissance, la cédule du péché. Eve a été l’épine, en blessant, et Marie, la rose, en gagnant l’affection de tous. Eve a été l’épine inoculant la mort à tous, et Marie la rose qui nous a tous guéris. Marie fut une rose blanche par la virginité, et rouge par la charité ; blanche par la chasteté de son corps, rouge par la ferveur de son esprit ; blanche en recherchant la vertu, rouge en foulant aux pieds les vices ; blanche par la pureté des affections, rouge par la mortification de la chair ; blanche en aimant Dieu, rouge en compatissant au prochain.
 
 [Responsory7]
@@ -229,8 +209,8 @@ R. Moi, comme-une vigne, j’ai produit des fruits d’une odeur suave,
 V. Moi, je suis la mère du pur amour, et de la crainte, et de la science, et de la sainte espérance.
 R. Et mes fleurs sont des fruits d’honneur et de richesse
 
-[Lectio8]
-!Sermo de Aquæductu
+[Lectio8_1]
+!Sermon sur l'Aqueduc.
 « Le Verbe s’est fait chair » et déjà il habite en nous. Il habite dans notre mémoire, il habite dans notre pensée car il descend jusque dans notre imagination elle-même. Comment cela, dites-vous ? En gisant sur la paille de la crèche, en reposant sur un sein virginal, en prêchant sur la montagne, en passant la nuit en prières, en se laissant suspendre à la croix et défigurer par le trépas, en se montrant « libre entre les morts » et en commandant à l’enfer ; en ressuscitant le troisième jour, en montrant à ses Apôtres, dans les traces des clous, les signes de sa victoire, enfin en s’élevant devant eux au plus haut du ciel.
 
 [Responsory8]
@@ -241,9 +221,6 @@ R. Les fleurs ont paru sur notre terre.
 &Gloria
 R. Les fleurs ont paru sur notre terre.
 
-[Lectio9]
-@Sancti/10-07t :Lectio93
-
 [Ant Laudes]
 Réjouissez-vous, * Vierge Marie, le Christ est ressuscité du tombeau.
 Dieu est monté * dans la jubilation et le Seigneur, au son de la trompette.
@@ -252,7 +229,9 @@ Elle a été élevée * au ciel, Marie ; les Anges se réjouissent et dans leurs
 Elle a été exaltée, * la Vierge Marie, au-dessus des chœurs des Anges et sur sa tête est une couronne de douze étoiles.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Sir 24:25 ; 39:17
+v. En moi, toute la grâce de la voie et de la vérité, en moi tout l’espoir de la vie et de la vertu. Moi, comme la rose plantée au bord des eaux, j’ai donné mon fruit.
+$Deo gratias
 
 [Hymnus Laudes]
 v. La mort est terrassée,
@@ -293,50 +272,34 @@ La solennité d’aujourd’hui, * du Très Saint Rosaire de Marie, Mère de Die
 !Sir 24:17-18
 v. Comme le cèdre au Liban, j’ai été élevée et comme le cyprès sur le mont Sion ; comme le palmier à Cadès, j’ai été élevée et comme la plantation de roses, à Jéricho.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Sainte Mère de Dieu, * Toujours Vierge, ô Marie.
 R. Sainte Mère de Dieu, * Toujours Vierge, ô Marie.
 V. Intercédez pour nous, auprès du Seigneur, notre Dieu.
 R. Toujours Vierge, ô Marie.
 &Gloria
 R. Sainte Mère de Dieu, * Toujours Vierge, ô Marie.
-_
-V. Après l’enfantement, ô Vierge, vous êtes demeurée inviolée.
-R. Mère de Dieu, intercédez pour nous.
 
 [Capitulum Sexta]
 !Sir 39:19
 v. Portez des fleurs comme le lis, répandez votre parfum et un feuillage de grâce ; chantez en chœur un cantique et bénissez le Seigneur dans toutes ses œuvres.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Après l’enfantement, ô Vierge, * Inviolée vous êtes demeurée.
 R. Après l’enfantement, ô Vierge, * Inviolée vous êtes demeurée.
 V. Mère de Dieu, intercédez pour nous.
 R. Inviolée vous êtes demeurée.
 &Gloria
 R. Après l’enfantement, ô Vierge, * Inviolée vous êtes demeurée.
-_
-V. Belle vous avez été faite et suave.
-R. En vos délices, sainte Mère de Dieu.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Belle vous avez été faite * Et suave.
 R. Belle vous avez été faite * Et suave.
 V. En vos délices, sainte Mère de Dieu.
 R. Et suave.
 &Gloria
 R. Belle vous avez été faite * Et suave.
-_
-V. Dieu l’a choisie et l’a préférée.
-R. Et il l’a fait habiter dans son tabernacle.
 
 [Hymnus Vespera 3]
 v. O Vierge Mère, nous vous chantons
@@ -369,9 +332,6 @@ Qui êtes né de la Vierge :
 Gloire au Père et à l’Esprit-Saint,
 Dans les siècles éternels.
 Ainsi soit-il.
-
-[Versum 3]
-@:Versum 1
 
 [Ant 3]
 Bienheureuse Mère * et intégralement Vierge, glorieuse Reine du monde, qu’ils sentent votre secours, tous ceux qui célèbrent la solennité du Très Saint Rosaire.

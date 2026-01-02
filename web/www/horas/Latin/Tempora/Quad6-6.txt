@@ -1,30 +1,42 @@
+[Officium]
+Sabbato Sancto
+
 [Rank]
-Sabbato Sancto;;Feria privilegiata Duplex I classis;;7
+;;Feria privilegiata Duplex I classis;;7
 
 [Rule]
 Psalmi minores Dominica
 Antiphonas horas
-Omit Incipit Invitatorium Hymnus Capitulum Lectio Commemoratio Preces Suffragium Conclusion
-Limit Benedictiones, Oratio
+Omit Incipit Invitatorium Hymnus Capitulum Lectio Commemoratio Antiphona finalis Preces Suffragium Conclusion Martyrologium De Officium Capituli
+Limit Benedictiones Oratio(rubrica 1955 aut rubrica 196)
 9 lectiones 1960
 Capitulum Versum 2 ad Laudes tantum
 Minores sine Antiphona
 Feria
 
+[Oratio Matutinum]
+@Tempora/Quad6-4
+
 [Ant Matutinum]
 In pace * in idípsum, dórmiam et requiéscam.;;4
 Habitábit * in tabernáculo tuo, requiéscet in monte sancto tuo.;;14
 Caro mea * requiéscet in spe.;;15
-V. In pace in idípsum.
-R. Dórmiam et requiéscam.
 Elevámini, * portæ æternáles, et introíbit Rex glóriæ.;;23
 Credo vidére * bona Dómini in terra vivéntium.;;26
 Dómine, * abstraxísti ab ínferis ánimam meam.;;29
-V. Tu autem, Dómine, miserére mei.
-R. Et resúscita me, et retríbuam eis.
 Deus ádjuvat me, * et Dóminus suscéptor est ánimæ meæ.;;53
 In pace * factus est locus ejus, et in Sion habitátio ejus.;;75
 Factus sum * sicut homo sine adjutório, inter mórtuos liber.;;87
+
+[Nocturn 1 Versum]
+V. In pace in idípsum.
+R. Dórmiam et requiéscam.
+
+[Nocturn 2 Versum]
+V. Tu autem, Dómine, miserére mei.
+R. Et resúscita me, et retríbuam eis.
+
+[Nocturn 3 Versum]
 V. In pace factus est locus ejus.
 R. Et in Sion habitátio ejus.
 
@@ -40,7 +52,7 @@ De Lamentatióne Jeremíæ Prophétæ
 28 Jod. Sedébit solitárius, et tacébit: quia levávit super se.
 29 Jod. Ponet in púlvere os suum, si forte sit spes.
 30 Jod. Dabit percutiénti se maxíllam, saturábitur oppróbriis.
-v. Jerúsalem, Jerúsalem, convértere ad Dóminum Deum tuum. 
+v. Jerúsalem, Jerúsalem, convértere ad Dóminum Deum tuum.
 
 [Responsory1]
 R. Sicut ovis ad occisiónem ductus est, et dum male tractarétur, non apéruit os suum: tráditus est ad mortem, 
@@ -56,7 +68,7 @@ R. Ut vivificáret pópulum suum.
 4 Daleth. Adhǽsit lingua lacténtis ad palátum ejus in siti: párvuli petiérunt panem, et non erat qui frángeret eis.
 5 He. Qui vescebántur voluptuóse, interiérunt in viis: qui nutriebántur in cróceis, amplexáti sunt stércora.
 6 Vau. Et major effécta est iníquitas fíliæ pópuli mei peccáto Sodomórum, quæ subvérsa est in moménto, et non cepérunt in ea manus.
-v. Jerúsalem, Jerúsalem, convértere ad Dóminum Deum tuum. 
+v. Jerúsalem, Jerúsalem, convértere ad Dóminum Deum tuum.
 
 [Responsory2]
 R. Jerúsalem, surge, et éxue te véstibus jucunditátis: indúere cínere et cilício, 
@@ -78,7 +90,7 @@ Incipit Orátio Jeremíæ Prophétæ
 9 In animábus nostris afferebámus panem nobis, a fácie gládii in desérto. 
 10 Pellis nostra quasi clíbanus exústa est a fácie tempestátum famis. 
 11 Mulíeres in Sion humiliavérunt, et vírgines in civitátibus Juda.
-v. Jerúsalem, Jerúsalem, convértere ad Dóminum Deum tuum. 
+v. Jerúsalem, Jerúsalem, convértere ad Dóminum Deum tuum.
 
 [Responsory3]
 R. Plange quasi virgo, plebs mea: ululáte, pastóres, in cínere et cilício: 
@@ -164,7 +176,7 @@ R. Sepúlto Dómino, signátum est monuméntum, volvéntes lápidem ad óstium m
 [Ant Laudes]
 O mors, * ero mors tua, morsus tuus ero, inférne.
 Plangent eum * quasi unigénitum, quia ínnocens Dóminus occísus est.
-(sed rubrica tridentina) Plangent eum * quasi unigénitum, quia ínnocens Dóminus occísus est.;;42
+(sed rubrica tridentina nisi rubrica cisterciensis) Plangent eum * quasi unigénitum, quia ínnocens Dóminus occísus est.;;42
 Atténdite * univérsi pópuli, et vidéte dolórem meum.
 A porta ínferi * érue, Dómine, ánimam meam.;;222
 O vos omnes, * qui transítis per viam, atténdite et vidéte, si est dolor sicut dolor meus.
@@ -178,6 +190,3 @@ Mulíeres * sedéntes ad monuméntum lamentabántur, flentes Dóminum.
 
 [Oratio 2]
 @Tempora/Quad6-4:Oratio:s/usque ad mortem/usque ad mortem, mortem autem crucis: propter quod et Deus exaltávit illum, et dedit illi nomen quod est super omne nomen/
-
-[Oratio Matutinum]
-@Tempora/Quad6-4

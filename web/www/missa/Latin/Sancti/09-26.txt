@@ -1,22 +1,23 @@
+[Officium]
+Ss. Cypriani et Justinæ Virginis, Martyrum
+
 [Rank]
-Ss. Cypriani et Justinæ Martyrum;;Simplex;;1.1;;vide C3b
+;;Simplex;;1.1;;vide C3a-1
 
 [Rule]
-vide C3;
+vide C3a-1;
 Gloria
 
+[Name]
+Cypriáni et Justínæ
+Postcommunio=Cypriáno et Justína
+
 [Oratio]
-Beatórum Mártyrum Cypriáni et Justínæ nos, Dómine, fóveant continuáta pæsídia:~
-quia non désinis propítius intuéri, quos tálibus auxíliis concésseris adjuvári.
+Beatórum Mártyrum Cypriáni et Justínæ nos, Dómine, fóveant continuáta pæsídia: quia non désinis propítius intuéri, quos tálibus auxíliis concésseris adjuvári.
 $Per Dominum
 
 [Secreta]
-Múnera tibi, Dómine, nostræ devotiónis offérimus: quæ et pro tuórum tibi grata~
-sint honóre Justórum, et nobis salutária, te miseránte, reddántur.
-$Per Dominum
+@Commune/C3a
 
 [Postcommunio]
-Præsta nobis, quǽsumus, Dómine: intercedéntibus sanctis Martýribus tuis~
-Cypriáno et Justína; ut, quod ore contíngimus, pura mente capiámus.
-$Per Dominum
-
+@Commune/C3a

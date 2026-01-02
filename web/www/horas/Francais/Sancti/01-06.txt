@@ -1,27 +1,12 @@
 [Rank]
 In Epiphania Domini;;Duplex I classis;;7
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Special Matutinum Incipit
-Doxology=Epi
-9 lectiones
-Psalm5 Vespera=116
-Psalm5 Vespera3=113
-Festum Domini
-
 [Ant Vespera]
 Engendré avant l’aurore * et avant les siècles, le Seigneur, notre Sauveur, aujourd’hui, au monde est apparu.
 Elle est venue, * ta lumière, Jérusalem, et la gloire du Seigneur s’est levée sur toi et les Nations marcheront à ta lumière, alléluia.
 Ayant ouvert leurs trésors, * les Mages offrirent au Seigneur l’or, l’encens et la myrrhe, alléluia.
 Mers et fleuves, * bénissez le Seigneur ; sources, chantez une hymne au Seigneur, alléluia.
 Cette étoile * brille comme une flamme et manifeste Dieu, le Roi des rois ; les Mages l’ont vue et ont offert leurs présents au grand Roi.
-
-[Capitulum Vespera]
-!Isa 60:1
-v. Lève-toi, sois éclairée, Jérusalem, car ta lumière est venue, et la gloire du Seigneur s'est levée sur toi.
-$Deo gratias
 
 [Hymnus Vespera]
 {:H-CrudelisHerodes:}v. Hérode, roi cruel, pourquoi crains-tu
@@ -50,7 +35,7 @@ Avec le Père et le Saint Esprit,
 Dans les siècles sempiternels.
 Ainsi soit-il.
 
-[Versum 1]
+[Versum 1_]
 V. Les rois de Tharsis et les îles offriront leurs présents.
 R. Les rois d'Arabie et de Saba apporteront des dons.
 
@@ -61,28 +46,27 @@ Les Mages * voyant l’étoile, se dirent l’un à l’autre : Voici le signe d
 O Dieu qui aujourd’hui avez révélé Votre Fils Unique aux Gentils guidés par une étoile ; accordez-nous miséricordieusement que Vous connaissant déjà par la foi, nous soyons conduits jusqu’à la contemplation de Votre splendeur.
 $Per eumdem
 
-[Hymnus Matutinum]
-@Sancti/01-06:Hymnus Vespera
-
 [Invit]
-Le Christ nous est apparu, * Venez » adorons-le.
+Le Christ nous est apparu, * Venez, adorons-le.
 
 [Ant Matutinum]
 Apportez au Seigneur * votre offrande, fils de Dieu, et adorez le Seigneur dans son saint parvis.;;28
 Le courant d’un fleuve * réjouit, alléluia, la cité de Dieu, alléluia.;;45
 Chantez des psaumes à notre Dieu, * chantez ; chantez des psaumes à notre Roi, chantez-les dans la sagesse.;;46
-V. Que toute la terre vous adore et vous chante des psaumes.
-R. Qu’elle dise un psaume à votre nom, Seigneur.
 Que toute la terre vous adore * et vous chante des psaumes ; qu’elle dise un psaume à votre nom, Seigneur.;;65
 Les rois de Tharsis * et les îles offriront des présents au Roi Seigneur.;;71
 Toutes les Nations, * que vous avez faites, viendront et se prosterneront devant vous, Seigneur, ;;85
-V. Les rois de Tharsis et les îles offriront des présents.
-R. Les rois d’Arabie et de Saba apporteront des dons.
-Homo natus est * in ea, et ipse fundávit eam Altíssimus.;;86
-(Sed die Epiphaniæ dicitur)
+@SanctiM/01-06:AntMatutinumM:2
+(sed die Epiphaniæ dicitur)
 Venez, adorons-le ; * car c’est lui, le Seigneur, notre Dieu.;;94
 Adorez le Seigneur, * alléluia, dans son saint parvis, alléluia..;;95
 Adorez Dieu, * alléluia, vous tous, ses Anges, alléluia.;;96
+
+[Nocturn 1 Versum]
+V. Que toute la terre vous adore et vous chante des psaumes.
+R. Qu’elle dise un psaume à votre nom, Seigneur.
+
+[Nocturn 3 Versum]
 V. Adorez le Seigneur, alléluia,
 R. Dans son saint parvis, alléluia.
 
@@ -91,17 +75,17 @@ Du Prophète Isaïe
 !Isa 55:1-4
 1 Vous tous qui avez soif, venez aux eaux, et vous qui n'avez pas d'argent, hâtez-vous, achetez et mangez ; venez, achetez sans argent et sans aucun échange le vin et le lait.
 2 Pourquoi employez-vous votre argent à ce qui ne peut nourrir, et votre travail à ce qui ne peut rassasier ? Ecoutez-Moi bien, et mangez ce qui est bon, et votre âme se délectera de mets savoureux.
-3 Prêtez l'oreille, et venez à Moi ; écoutez-Moi, et votre âme vivra; et Je conclurai avec vous une alliance éternelle, pour rendre stable la miséricorde promise à David.
+3 Prêtez l'oreille, et venez à Moi ; écoutez-Moi, et votre âme vivra ; et Je conclurai avec vous une alliance éternelle, pour rendre stable la miséricorde promise à David.
 4 Voici que Je l'ai donné comme témoin aux peuples, comme maître et comme chef aux nations.
 
 [Responsory1]
 R. Aujujourd’hui, le Seigneur ayant été baptisé dans le Jourdain, les deux se sont ouverts et, sous la forme d’une colombe, l’Esprit s’est reposé sur lui, et la voix du Père a retenti :
-* Voici mon Fils bien-aimé en qui fai mis toutes mes complaisances.
+* Voici mon Fils bien-aimé en qui j'ai mis toutes mes complaisances.
 V. L’Esprit-Saint est descendu sous la forme corporelle d’une colombe et une voix du ciel s’est fait entendre.
-R. Voici mon Fils bien-aimé en qui fai mis toutes mes complaisances.
+R. Voici mon Fils bien-aimé en qui j'ai mis toutes mes complaisances.
 
 [Responsory1InfraOctavam]
-R. Au nombre de trois sont les dons prédeux que les Mages ont oiferts au Seigneur en ce jour, et en chacun se trouve un divin symbolisme :
+R. Au nombre de trois sont les dons précieux que les Mages ont offerts au Seigneur en ce jour, et en chacun se trouve un divin symbolisme :
 * L’or doit manifester la puissance du Roi, l’encens fait considérer le Grand-Prêtre, et la myrrhe la sépulture du Seigneur.
 V. Les Mages ont adoré l’Auteur de notre salut dans son berceau et lui ont offert les mystiques symboles de leurs présents.
 R. L’or doit manifester la puissance du Roi, l’encens fait considérer le Grand-Prêtre, et la myrrhe la sépulture du Seigneur.
@@ -117,9 +101,9 @@ R. L’or doit manifester la puissance du Roi, l’encens fait considérer le Gr
 
 [Responsory2]
 R. Sous l’apparence d’une colombe, l’Esprit-Saint est apparu, et la voix du Père a été entendue :
-* Voici mon Fils bien-aimé en qui fai mis toutes mes complaisances.
-V. Les deux se sont ouverts au-dessus de lui, et la voix du Père a retenti.
-R. Voici mon Fils bien-aimé en qui fai mis toutes mes complaisances.
+* Voici mon Fils bien-aimé en qui j'ai mis toutes mes complaisances.
+V. Les cieux se sont ouverts au-dessus de lui, et la voix du Père a retenti.
+R. Voici mon Fils bien-aimé en qui j'ai mis toutes mes complaisances.
 
 [Lectio3]
 !Isa 61:10-11 ; 62:1
@@ -137,7 +121,7 @@ R. Les rois d’Arabie et de Saba apporteront des dons au Seigneur Dieu.
 
 [Lectio4]
 Sermon de saint Léon Pape
-!Sermo 2. de Epiphania
+!Sermon 2. de l'Epiphanie
 Réjouissez-vous dans le Seigneur, mes bien aimés, je le dis encore, réjouissez-vous : puisque, peu de temps après la solennité de la Nativité du Christ, voici que resplendit la fête de sa manifestation ; et Celui qu’en ce jour-là, la Vierge enfanta, est aujourd’hui reconnu par le monde. Car le Verbe fait chair a disposé les débuts de l’œuvre de notre relèvement de façon que la naissance de Jésus fût manifestée aux croyants et cachée aux persécuteurs. Alors déjà les deux racontèrent la gloire de Dieu et la résonance de la vérité se répandit dans toute la terre, quand l’armée des Anges apparut aux pasteurs pour leur annoncer la naissance du Sauveur, et qu’une étoile conduisit les Mages vénus l’adorer. C’est ainsi que, du levant au couchant, l’enfantement du vrai Roi fut manifesté avec éclat, puisque les Royaumes d’Orient apprirent à y croire par les Mages, et que l’Empire romain ne l’ignora pas.
 
 [Responsory4]
@@ -196,11 +180,10 @@ R. Et ayant ouvert leurs trésors, ils lui offrirent des présents, l’or, l’
 Tous les éléments, vraiment, ont rendu témoignage à la venue de leur Auteur. Car voici ce que nous pouvons en dire en langage anthropomorphique. Les cieux ont reconnu que Jésus était Dieu, puisqu’aussitôt ils ont envoyé l’étoile. La mer l’a reconnu, puisqu’elle s’est offerte à ses pieds comme un chemin solide. La terre l’a reconnu, puisqu’elle a tremblé lorsqu’il expirait. Le soleil l’a reconnu, puis- qu’alors il a caché les rayons de sa lumière. Les rochers et les murailles l’ont reconnu, puisqu’au moment de sa mort ils se sont fendus. L’enfer (des Limbes) l’a reconnu, puisqu’il a cédé les morts qu’il détenait. Et cependant, celui que tous les éléments insensibles ont reconnu pour leur Seigneur, les cœurs des Juifs infidèles ne l’ont pas reconnu comme Dieu, et, plus durs que les rochers, ils n’ont pas voulu s’ouvrir à la pénitence.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera
-
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Isa 60:1
+v. Lève-toi, sois éclairée, Jérusalem, car ta lumière est venue, et la gloire du Seigneur s'est levée sur toi.
+$Deo gratias
 
 [Hymnus Laudes]
 {:H-Osolamagnarum:}v. O Bethléem, plus grande
@@ -240,17 +223,15 @@ Aujourd’hui, * au céleste Époux s’est unie l’Église, car dans le Jourda
 !Isa 60:6
 v. Tous viendront de Saba, apportant l’or, de l’encens et publiant les louanges du Seigneur.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Les rois de Tharsis et les îles offriront des présents. * Alléluia, alléluia.
 R. Les rois de Tharsis et les îles offriront des présents. * Alléluia, alléluia.
 V. Les rois d’Arabie et de Saba apporteront des présents.
 R. Alléluia, alléluia.
 &Gloria
 R. Les rois de Tharsis et les îles offriront des présents. * Alléluia, alléluia.
-_
+
+[Versum Tertia]
 V. Tous viendront de Saba, alléluia.
 R. Apportant l’or et l’encens, alléluia.
 
@@ -259,31 +240,21 @@ R. Apportant l’or et l’encens, alléluia.
 v. Lève les yeux autour de toi, et vois ; tous ceux-ci se sont réunis et sont venus à toi ; tes fils, de loin, viendront, et tes filles à leur côté apparaîtront.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Tous viendront de Saba, * Alléluia, alléluia.
 R. Tous viendront de Saba, * Alléluia, alléluia.
 V. Apportant l’or et l’encens.
 R. Alléluia, alléluia.
 &Gloria
 R. Tous viendront de Saba, * Alléluia, alléluia.
-_
-V. Adorez le Seigneur, alléluia.
-R. Dans son saint parvis, alléluia.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Adorez le Seigneur, * Alléluia, alléluia.
 R. Adorez le Seigneur, * Alléluia, alléluia.
 V. Dans son saint parvis.
 R. Alléluia, alléluia.
 &Gloria
 R. Adorez le Seigneur, * Alléluia, alléluia.
-_
-V. Adorez Dieu, alléluia.
-R. Vous tous, ses Anges, alléluia.
 
 [Ant 3]
 Trois miracles * ont embelli ce saint jour que nous célébrons. Aujourd’hui l’étoile a conduit les Mages à la crèche ; aujourd’hui l’eau est devenue vin pour les noces ; aujourd’hui le Christ a voulu être baptisé par Jean dans le Jourdain, pour nous sauver, alléluia.

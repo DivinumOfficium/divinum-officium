@@ -1,9 +1,5 @@
-[Rank]
-S. Josephi Calasanctii Confessoris;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5;
-Gloria
+[Officium]
+S. José Calasans, Confessor
 
 [Comment]
 # 27 VIII – S. José Calasans, Confessor
@@ -23,7 +19,7 @@ v. Vinde, meus filhos; escutai-me e vos ensinarei a temer o Senhor.
 $Per Dominum
 
 [Lectio]
-@Commune/C2:Lectio
+@Commune/C2a:Lectio
 
 [Graduale]
 !Sl 36:30-31

@@ -1,5 +1,10 @@
+[Officium]
+Feria II infra Hebdomadam Septuagesimæ
+
 [Rank]
-Feria II infra Hebdomadam Septuagesimæ;;Feria;;1
+;;Feria;;1
+(sed rubrica 1930)
+;;Feria major;;2.1
 
 [Rule]
 Oratio Dominica
@@ -29,7 +34,7 @@ R. Et abscóndi me.
 6 sed fons ascendébat e terra, írrigans univérsam superfíciem terræ.
 
 [Responsory2]
-R. In sudore vultus tui vescéris pane tuo, dixit Dóminus ad Adam: cum operátus fueris terram, non dabit frúctus suos: 
+R. In sudore vultus tui vescéris pane tuo, dixit Dóminus ad Adam: cum operátus fueris terram, non dabit fructus suos: 
 * Sed spinas et tribulos germinábit tibi.
 V. Quia audísti vocem uxoris tuæ, et comedísti de ligno, ex quo præcéperam tibi ne coméderes, maledicta terra in opere tuo.
 R. Sed spinas et tribulos germinábit tibi.
@@ -46,3 +51,6 @@ R. Sed spinas et tribulos germinábit tibi.
 
 [Ant 3]
 Hi novíssimi * una hora fecérunt, et pares illos nobis fecísti, qui portávimus pondus diéi, et æstus.
+
+[Ant 3] (rubrica cisterciensis)
+@Psalterium/Special/Major Special:Feria2C Ant 3

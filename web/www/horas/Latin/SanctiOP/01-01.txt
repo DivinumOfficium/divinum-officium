@@ -1,0 +1,134 @@
+@Sancti/01-01
+
+[Rule]
+ex SanctiOP/12-25;
+Psalmi Dominica
+Antiphonas Horas
+9 lectiones 1960
+no commemoratio
+
+[Ant Vespera]
+@Sancti/01-01::1 s/;;.*/;;112;116;145;146;147/
+
+[Responsory Vespera 1]
+@SanctiOP/12-25:Responsory9:1-4
+&Gloria
+@SanctiOP/12-25:Responsory9:4
+
+[Versum 1]
+@Sancti/12-25:Nocturn 1 Versum
+
+[Oratio]
+v. Deus, qui nobis nati Salvatóris diem celebráre concédis octávum: fac nos, quæsumus, eius perpétua divinitáte muníri, cuius sumus carnáli commércio reparáti:
+$Qui tecum
+
+[Ant Completorium1]
+@TemporaM/Nat1-0tt:Ant Matutinum:7
+
+[Ant 41]
+@SanctiOP/12-25:Ant 43
+
+[Ant Matutinum]
+@Sancti/01-01::1-4
+@SanctiM/01-01:AntMatutinumM:1
+@Sancti/01-01::5-8
+
+[Lectio1]
+De libro Génesis
+!Gen 17:9-14
+9 Dixit Deus ad Abraham:
+10 Hoc est pactum meum quod observábitis inter me et vos, et semen tuum post te: Circumcidétur ex vobis omne masculínum:
+11 et circumcidétis carnem præpútii vestri, ut sit in signum fœ́deris inter me et vos.
+12 Infans octo diérum circumcidétur in vobis, omne masculínum in generatiónibus vestris: tam vernáculus, quam emptítius circumcidétur, et quicúmque non fúerit de stirpe vestra:
+13 erítque pactum meum in carne vestra in fœdus ætérnum.
+14 Másculus, cuius præpútii caro circumcísa non fúerit, delébitur ánima illa de pópulo suo: quia pactum meum írritum fecit.
+
+[Responsory1]
+@SanctiM/12-25:Responsory11:1-3 s/\n\*// s/V\./*/
+V. Quod factum est, in ipso vita erat, et vita erat lux hóminum.
+@SanctiM/12-25:Responsory11:3 s/V\./R./
+
+[Lectio2]
+De libro Jósue
+!Jos 5:2
+2 Eo témpore ait Dóminus ad Iósue: Fac tibi cultros lapídeos, et circumcíde secúndo fílios Israël.
+3 Fecit quod iússerat Dóminus, et circumcídit fílios Israël in colle præputiórum.
+4 Hæc autem causa est secúndæ circumcisiónis: omnis pópulus, qui egréssus est de Ægýpto géneris masculíni, univérsi bellatóres viri, mórtui sunt in desérto per longíssimos viæ circúitus,
+5 qui omnes circumcísi erant. Pópulus autem qui natus est in desérto,
+6 per quadragínta annos itíneris latíssimæ solitúdinis incircumcísus fuit: donec consumeréntur qui non audíerant vocem Dómini.
+
+[Responsory2]
+@Sancti/01-01:Responsory3:1 s/, ([^,]+):\s*$/,\n* \u$1.\n/
+V. Lápidem, quem reprobavérunt ædificántes: hic factus est in caput ánguli.
+@Sancti/01-01:Responsory3:1 s/.*, (.*):\s*$/R. \u$1./
+
+[Lectio3]
+De Epístola ad Romános
+!Rom 2:25-29
+25 Circumcísio quidem prodest, si legem obsérves: si autem prævaricátor legis sis, circumcísio tua præpútium facta est.
+26 Si ígitur præpútium iustítias legis custódiat, nonne præpútium illíus in circumcisiónem reputábitur?
+27 et iudicábit id quod ex natúra est præpútium, legem consúmmans, te, qui per lítteram et circumcisiónem prævaricátor legis es?
+28 Non enim qui in manifésto, Iudǽus est: neque quæ in manifésto, in carne, est circumcísio:
+29 sed qui in abscóndito, Iudǽus est: et circumcísio cordis in spíritu, non líttera: cuius laus non ex homínibus, sed ex Deo est.
+
+[Responsory3]
+@Sancti/01-01:Responsory1:1-2 s/\n\*// s/ (?=Qui)/\n*/
+V. Hoc est testimónium, quod perhíbuit Joánnes, dicens.
+@Sancti/01-01:Responsory1:1 s/.* (?=Qui)/R. /
+&Gloria
+@Sancti/01-01:Responsory1:2 s/\*/R./
+
+[Responsory4]
+@Sancti/01-01:Responsory8:1-2 s/\n\*// s/ (ipsum)/\n* \u$1/
+@Sancti/12-25:Responsory7:1 s/R/V/ s/: .*/./
+@Sancti/01-01:Responsory8:1-2 s/.* (ipsum)/R. \u$1/
+
+[Lectio5]
+@Sancti/01-01::s/: et vídimus.*/./
+
+[Responsory5]
+@Commune/C11:Responsory1
+
+[Lectio6]
+@Sancti/01-01::s/ Unde .*//
+
+[Responsory6]
+@Sancti/01-01:Responsory5:1-4
+&Gloria
+@Sancti/01-01:Responsory5:4 s/.*, /R. /
+
+[Nocturn 3 Versum]
+@Sancti/12-25:Nocturn 3 Versum:s/, .*/./g
+
+[Responsory7]
+@Tempora/Nat1-0:Responsory8:1-2
+V. Qui cælum terrrámque regit in sǽcula solus.
+@Tempora/Nat1-0:Responsory8:4
+
+[Lectio8]
+@Sancti/01-01::s/ Dénique.*//
+
+[Responsory8]
+@Commune/C11:Responsory2
+
+[Lectio9]
+@Sancti/01-01:Lectio8:s/.* (?=Dénique)// s/$/~/
+@Sancti/01-01::s/ Numquid.*//
+
+[Responsory9]
+@SanctiOP/12-25::1-4
+
+[Versum 2]
+@Sancti/12-25:Versum 1C
+
+[Capitulum Laudes]
+@Sancti/12-25:Capitulum Laudes
+
+[Ant Vespera 3]
+@Sancti/01-01:Ant Vespera:1 s/;;.*/;;109;112;121;126;147/
+
+[Ant Completorium3]
+@TemporaM/Nat1-0tt:Ant Matutinum:7
+
+[Ant 43]
+@SanctiOP/12-25:Ant 43

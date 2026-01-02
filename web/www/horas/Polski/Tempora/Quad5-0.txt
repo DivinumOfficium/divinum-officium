@@ -1,11 +1,5 @@
-[Rank]
-Niedziela Męki Pańskiej;;I classis Semiduplex;;6
-
-[Rank] (rubrica 1955 aut rubrica 1960)
-Niedziela Męki Pańskiej;;I classis Semiduplex;;6
-
-[Rule]
-9 lectiones
+[Officium]
+Niedziela Męki Pańskiej
 
 [Ant 1]
 Jam jest, * który sam o sobie daję świadectwo: i wydaje świadectwo o mnie Ojciec, który mię posłał.
@@ -84,7 +78,7 @@ Onego czasu: Mówił Jezus rzeszom żydowskim: „Kto z was dowiedzie Mi grzechu
 _
 Homilia świętego Grzegorza, Papieża
 !Homilia 18. na Ewangelię
-Zastanówcie się, najdrożsi bracia, nad łaskawością Boga. Przybył odpuścić grzechy, a mówił: Kto z was dowiedzie Mi grzechu? Nie uważa za ujmę dla siebie wykazać dowodami rozumowymi, iż nie jest grzesznikiem, choć mocą swego Bóstwa mógł usprawiedliwiać grzeszników. Straszliwe jest bardzo i to, co dodał: Kto z Boga jest, słów Bożych słucha, wy dlatego nie słuchacie, że z Boga nie jesteście. Jeśli bowiem ten, kto jest z Boga, słów Bożych słucha, a jeśli nie jest z Niego, słów Jego słuchać nie może, to każdy winien siebie zapytać, czy słowa Boga słyszy uszami serca. Wtedy bowiem zrozumie, z kogo jest. Odwieczna Prawda nakazuje pragnąć niebiańskiej ojczyzny, tłumić żądze ciała, unikać światowej chwały, nie pożądać cudzego, ze swego udzielać.
+Zważcie, bracia najdrożsi, łagodność Boga. Przyszedł uwalniać od grzechów, a mówił: Kto z was dowiedzie na mnie grzechu? Nie uważa za niegodne siebie wykazywać rozumowo, że nie jest grzesznikiem — On, który mocą Bóstwa mógł usprawiedliwiać grzeszników. Lecz jakże straszliwe jest to, co dodano: Kto z Boga jest, słów Bożych słucha: dlatego wy nie słuchacie, że nie jesteście z Boga. Jeśli bowiem słów Bożych słucha ten tylko, kto jest z Boga, i nie może słuchać Jego słów nikt kto z Niego nie jest — to niech każdy siebie pyta, czy przyjmuje w uchu serca słowa Boga: niech też pojmuje z kogo jest. Prawda nakazuje pragnąć niebiańskiej ojczyzny, wyniszczać pragnienia ciała, odwracać się od chwały świata, nie pożądać cudzego, szczodrze dawać swoje.
 
 [Responsory7]
 R. Przez cały dzień chodzę smutny, o Panie, albowiem dusza moja pełna jest szyderstwa.
@@ -92,11 +86,17 @@ R. Przez cały dzień chodzę smutny, o Panie, albowiem dusza moja pełna jest s
 V. Przyjaciele moi i bliscy moi naprzeciw mnie podchodzą i przystają; ci, którzy byli blisko przy mnie, trzymają się z daleka.
 R. Przemocy użyli ci, którzy czyhają na mą duszę.
 
+[Lectio8]
+Niech więc każdy z was zważy w sobie, czy ten głos Boga nabrał mocy w uchu jego serca, a będzie wiedział, czy jest z Boga. Nie brak bowiem takich, którzy nawet uszami ciała nie raczą przyjmować przykazań Boga. Nie brak też takich, którzy przyjmują je wprawdzie uchem ciała, ale nie przywierają do nich żadnym pragnieniem umysłu. Nie brak też takich, którzy chętnie słowa Boże przyjmują, tak że nawet wśród płaczu pogrążają się w żalu, ale skoro minie czas łez, wracają do nieprawości. Ci, rzecz jasna, słów Bożych nie słuchają, skoro za nic sobie mają wypełnianie ich czynem. Przywołajcie zatem, bracia najdrożsi, przed oczy umysłu swoje życie i rozważając je głęboko, drżyjcie na dźwięk słów Prawdy: Dlatego wy nie słuchacie, że nie jesteście z Boga. 
+
 [Responsory8]
 R. Nie odwracaj swego oblicza od Twego sługi, Panie,
 * Wysłuchaj mnie prędko, bo jestem w ucisku.
 V. Zbliż się do mej duszy i ją wybaw, uwolnij mnie przez wzgląd na moich nieprzyjaciół.
 R. Wysłuchaj mnie prędko, bo jestem w ucisku.
+
+[Lectio9]
+Lecz to, co Prawda mówi o odrzuconych, to sami odrzuceni poświadczają o sobie swoimi czynami: Odpowiedzieli tedy Żydzi: Czyż my nie dobrze mówimy, żeś ty jest Samarytanin i czarta masz? Posłuchajmy teraz, co po wyrządzeniu Mu tak wielkiej zniewagi, odpowiada Pan: Ja czarta nie mam, ale czczę Ojca mego, a wyście mnie nie uczcili. Jako że słowo „Samarytanin” wykładane: jest jako „stróż”, a On prawdziwie jest stróżem — Psalmista mówi o Nim: Jeśli Pan nie będzie strzegł miasta, próżno czuwa ten, który go strzeże (Ps 126, 1) i do Niego zwraca się Izajasz: Stróżu, co z nocy, stróżu, co z nocy (Iz 21, 11) — dlatego Pan poniechał odpowiedzi: „Nie jestem Samarytaninem”, odpowiedział natomiast: Ja czarta nie mam. Zostały Mu wszak zarzucone dwie rzeczy: jednej z nich zaprzeczył, z drugą milcząco się zgodził.
 
 [Responsory9]
 R. Któż da mojej głowie wody, a oczom moim źródło łez, abym płakał dniem i nocą? Bo brat, mój bliski Mnie podszedł,
@@ -127,9 +127,6 @@ Ja czarta nie mam: * ale czczę Ojca Mego, mówi Pan.
 [Ant Tertia]
 Ja nie szukam * chwały Swej: jest, który szuka i sądzi.
 
-[Capitulum Tertia]
-@:Capitulum Laudes
-
 [Ant Sexta]
 Zaprawdę, zaprawdę mówię wam: * jeśli kto zachowa mowę Moją, śmierci nie ogląda na wieki.
 
@@ -145,9 +142,6 @@ Porwali kamienie * Żydzi, by rzucić na Niego: Jezus zaś ukrył się i wyszed�
 !Hbr 9:15
 v. I dlatego jest nowego Testamentu pośrednikiem, żeby za przystąpieniem śmierci, na odkupienie występków tych, które były pod pierwszym Testamentem, obietnicę wzięli, którzy wezwani są do wiecznego dziedzictwa, w Chrystusie Jezusie Panu naszym.
 $Deo gratias
-
-[Capitulum Vespera]
-@:Capitulum Laudes
 
 [Ant 3]
 Abraham, ojciec wasz, * z radością żądał, aby oglądał dzień Mój: i oglądał i weselił się.

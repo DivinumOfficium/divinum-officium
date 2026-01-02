@@ -1,10 +1,10 @@
 [Rank]
-In Epiphania Domini;;Duplex I classis;;7
+In Epiphania Domini;;Duplex I classis;;6.5
 
 [Rule]
 Psalmi Dominica
 Antiphonas horas
-Special Matutinum Incipit
+Omit ad Matutinum Incipit Invitatorium Hymnus
 Doxology=Epi
 9 lectiones
 Psalm5 Vespera=116
@@ -17,14 +17,6 @@ Venit lumen tuum * Jerúsalem, et glória Dómini super te orta est, et ambuláb
 Apértis thesáuris suis * obtulérunt Magi Dómino aurum, thus, et myrrham, allelúja.
 Mária et flúmina * benedícite Dómino: hymnum dícite fontes Dómino, allelúja.
 Stella ista * sicut flamma corúscat, et Regem regum Deum demónstrat: Magi eam vidérunt, et magno Regi múnera obtulérunt.
-
-[Capitulum Vespera]
-!Isa 60:1
-v. Surge, illumináre Jerúsalem, quia venit lumen tuum, et glória Dómini super te orta est.
-$Deo gratias
-
-[HymnusM Vespera]
-@:Hymnus Vespera:s/Crudélis Heródes, Deum.Regem/Hostis Heródes impie,\nChristum/s
 
 [Hymnus Vespera]
 {:H-CrudelisHerodes:}v. Crudélis Heródes, Deum
@@ -53,39 +45,63 @@ Cum Patre, et almo Spíritu,
 In sempitérna sǽcula.
 Amen.
 
-[Versum 1]
+[HymnusM Vespera]
+@:Hymnus Vespera:s/Crudélis Heródes, Deum.Regem/Hostis Heródes ímpie,\nChristum/s
+
+[Versum 1_]
 V. Reges Tharsis et ínsulæ múnera ófferent.
 R. Reges Arabum et Saba dona addúcent.
 
-[Ant 1]
+[Versum 1]
+@:Versum 1_
+(sed rubrica cisterciensis)
+@:Versum 1C
+
+[Versum 1C]
+V. Omnes de Saba vénient.
+R. Aurum et thus deferéntes, et laudem Dómini annuntiántes.
+
+[Ant 1_]
 Magi vidéntes * stellam, dixérunt ad ínvicem: Hoc signum magni Regis est: eámus et inquirámus eum, et offerámus ei múnera, aurum, thus, et myrrham, allelúja.
+
+[Ant 1]
+@:Ant 1_
+(sed rubrica cisterciensis)
+@:Ant 1_:s/Magi vidéntes \* stellam,/Magi \* vidérunt stellam, et/i
 
 [Oratio]
 Deus, qui hodiérna die Unigénitum tuum géntibus stella duce revelásti: concéde propítius; ut qui jam te ex fide cognóvimus, usque ad contemplándam spéciem tuæ celsitúdinis perducámur.
 $Per eumdem
 
-[Hymnus Matutinum]
-@Sancti/01-06:Hymnus Vespera
-
 [Invit]
 Christus appáruit nobis, * Veníte adorémus.
+
+[Hymnus Matutinum]
+@Sancti/01-06:Hymnus Vespera
 
 [Ant Matutinum]
 Afférte Dómino * fílii Dei, adoráte Dóminum in aula sancta ejus.;;28
 Flúminis ímpetus * lætíficat, allelúja, civitátem Dei, allelúja.;;45
 Psállite Deo nostro, * psállite: psállite Regi nostro, psállite sapiénter.;;46
-V. Omnis terra adóret te, et psallat tibi.
-R. Psalmum dicat nómini tuo, Dómine.
 Omnis terra adóret te, * et psallat tibi: psalmum dicat nómini tuo, Dómine.;;65
 Reges Tharsis * et ínsulæ múnera ófferent Regi Dómino.;;71
 Omnes gentes * quascúmque fecísti, vénient, et adorábunt coram te, Dómine.;;85
-V. Reges Tharsis et ínsulæ múnera ófferent.
-R. Reges Arabum et Saba dona addúcent.
-Homo natus est * in ea, et ipse fundávit eam Altíssimus.;;86
-(Sed die Epiphaniæ dicitur)
-Veníte adorémus eum: quia ipse est Dóminus Deus noster.;;94
+@SanctiM/01-06:AntMatutinumM:2
+(sed die Epiphaniæ dicitur)
+Veníte adorémus eum: * quia ipse est Dóminus Deus noster.;;94
 Adoráte Dóminum, * allelúja: in aula sancta ejus, allelúja.;;95
 Adoráte Deum, * allelúja: omnes Angeli ejus, allelúja.;;96
+
+[Nocturn 1 Versum]
+V. Omnis terra adóret te, et psallat tibi.
+R. Psalmum dicat nómini tuo, Dómine.
+
+[Nocturn 2 Versum]
+@:Versum 1
+(sed rubrica cisterciensis)
+@:Versum 1_
+
+[Nocturn 3 Versum]
 V. Adoráte Dóminum, allelúja.
 R. In aula sancta ejus, allelúja.
 
@@ -141,17 +157,7 @@ R. Reges Arabum et Saba dona Dómino Deo addúcent.
 [Lectio4]
 Sermo sancti Leónis Papæ
 !Sermo 2 de Epiphania
-Gaudéte in Dómino, dilectíssimi, íterum dico, gaudéte: quóniam brevi~
-intervállo témporis, post solemnitátem Nativitátis Christi, festívitas~
-declaratiónis ejus illúxit: et quem in illo die Virgo péperit, in hoc~
-mundus agnóvit. Verbum enim caro factum, sic susceptiónis nostræ~
-temperávit exórdia, ut natus Jesus et credéntibus maniféstus, et~
-persequéntibus esset occúltus. Jam tunc ergo cæli enarravérunt glóriam~
-Dei, et in omnem terram sonus veritátis exívit, quando et pastóribus~
-exércitus Angelórum Salvatóris éditi annuntiátor appáruit, et Magos ad~
-eum adorándum prǽvia stella perdúxit: ut a solis ortu usque ad occásum~
-veri Regis generátio coruscáret, cum rerum fidem et regna Oriéntis per~
-Magos díscerent, et Románum impérium non láteret.
+Gaudéte in Dómino, dilectíssimi, íterum dico, gaudéte: quóniam brevi intervállo témporis, post solemnitátem Nativitátis Christi, festívitas declaratiónis ejus illúxit: et quem in illo die Virgo péperit, in hoc mundus agnóvit. Verbum enim caro factum, sic susceptiónis nostræ temperávit exórdia, ut natus Jesus et credéntibus maniféstus, et persequéntibus esset occúltus. Jam tunc ergo cæli enarravérunt glóriam Dei, et in omnem terram sonus veritátis exívit, quando et pastóribus exércitus Angelórum Salvatóris éditi annuntiátor appáruit, et Magos ad eum adorándum prǽvia stella perdúxit: ut a solis ortu usque ad occásum veri Regis generátio coruscáret, cum rerum fidem et regna Oriéntis per Magos díscerent, et Románum impérium non latéret.
 
 [Responsory4]
 R. Illumináre, illumináre Jerúsalem, quia venit lux tua:
@@ -160,16 +166,7 @@ V. Et ambulábunt gentes in lúmine tuo, et reges in splendóre ortus tui.
 R. Et glória Dómini super te orta est.
 
 [Lectio5]
-Nam et sævítia Heródis volens primórdia suspécti sibi Regis~
-exstínguere, huic dispensatíoni nésciens serviébat: ut dum atróci~
-inténtus facínori, ignótum sibi púerum indiscréta infántium cæde~
-perséquitur, annuntiátum cǽlitus dominatóris ortum insígnior ubíque~
-fama loquerétur: quam promptiórem ad narrándum, diligentiorémque~
-faciébat et supérnæ significatiónis nóvitas, et cruentíssimi~
-persecutóris impíetas. Tunc autem étiam Ægýpto Salvátor illátus est,~
-ut gens antíquis erróribus dédita, jam ad vicínam salútem per occúltam~
-grátiam signarétur: et quæ nondum ejécerat ab ánimo superstitiónem,~
-jam hospítio recíperet veritátem.
+Nam et sævítia Heródis volens primórdia suspécti sibi Regis exstínguere, huic dispensatíoni nésciens serviébat: ut dum atróci inténtus facínori, ignótum sibi púerum indiscréta infántium cæde perséquitur, annuntiátum cǽlitus dominatóris ortum insígnior ubíque fama loquerétur: quam promptiórem ad narrándum, diligentiorémque faciébat et supérnæ significatiónis nóvitas, et cruentíssimi persecutóris impíetas. Tunc autem étiam Ægýpto Salvátor illátus est, ut gens antíquis erróribus dédita, jam ad vicínam salútem per occúltam grátiam signarétur: et quæ nondum ejécerat ab ánimo superstitiónem, jam hospítio recíperet veritátem.
 
 [Responsory5]
 R. Omnes de Saba vénient, aurum et thus deferéntes, et laudem Dómino annuntiántes,
@@ -178,17 +175,7 @@ V. Reges Tharsis et ínsulæ múnera ófferent, reges Arabum et Saba dona addúc
 R. Allelúja, allelúja, allelúja.
 
 [Lectio6]
-Agnoscámus ergo, dilectíssimi, in Magis adoratóribus Christi,~
-vocatiónis nostræ fideíque primítias: et exsultántibus ánimis beátæ~
-spei inítia celebrémus. Exínde enim in ætérnam hereditátem cœ́pimus~
-introíre: exínde nobis Christum loquéntia Scripturárum arcána~
-patuérunt, et véritas, quam Judæórum obcæcátio non récipit, ómnibus~
-natiónibus lumen suum invéxit. Honorétur ítaque a nobis sacratíssimus~
-dies, in quo salútis nostræ Auctor appáruit: et quem Magi infántem~
-veneráti sunt in cunábulis, nos omnipoténtem adorémus in cælis. Ac~
-sicut illi de thesáuris suis mýsticas Dómino múnerum spécies~
-obtulérunt, ita et nos de córdibus nostris, quæ Deo sunt digna,~
-promámus.
+Agnoscámus ergo, dilectíssimi, in Magis adoratóribus Christi, vocatiónis nostræ fideíque primítias: et exsultántibus ánimis beátæ spei inítia celebrémus. Exínde enim in ætérnam hereditátem cœ́pimus introíre: exínde nobis Christum loquéntia Scripturárum arcána patuérunt, et véritas, quam Judæórum obcæcátio non récipit, ómnibus natiónibus lumen suum invéxit. Honorétur ítaque a nobis sacratíssimus dies, in quo salútis nostræ Auctor appáruit: et quem Magi infántem veneráti sunt in cunábulis, nos omnipoténtem adorémus in cælis. Ac sicut illi de thesáuris suis mýsticas Dómino múnerum spécies obtulérunt, ita et nos de córdibus nostris, quæ Deo sunt digna, promámus.
 
 [Responsory6]
 R. Magi véniunt ab Oriénte Jerosólymam, quæréntes, et dicéntes: Ubi est qui natus est, cujus stellam vídimus?
@@ -201,25 +188,11 @@ R. Et vénimus adoráre Dóminum.
 [Lectio7]
 Léctio sancti Evangélii secúndum Matthǽum
 !Matt 2:1-12
-Cum natus esset Jesus in Béthlehem Juda in diébus Heródis regis, ecce~
-Magi ab Oriénte venérunt Jerosólymam, dicéntes: Ubi est qui natus est~
-Rex Judæórum? Et réliqua.
+Cum natus esset Jesus in Béthlehem Juda in diébus Heródis regis, ecce Magi ab Oriénte venérunt Jerosólymam, dicéntes: Ubi est qui natus est Rex Judæórum? Et réliqua.
 _
 Homilía sancti Gregórii Papæ
 !Homilia 10 in Evang.
-Sicut in lectióne evangélica, fratres caríssimi, audístis, cæli Rege~
-nato, rex terræ turbátus est: quia nimírum terréna altitúdo~
-confúnditur, cum celsitúdo cæléstis aperítur. Sed quæréndum nobis~
-est, quidnam sit, quod, Redemptóre nato, pastóribus in Judǽa Angelus~
-appáruit, atque ad adorándum hunc ab Oriénte Magos non Angelus, sed~
-stella perdúxit? Quia vidélicet Judǽis, tamquam ratióne uténtibus,~
-rationále ánimal, id est, Angelus prædicáre débuit: gentíles vero,~
-quia uti ratióne nesciébant, ad cognoscéndum Dóminum non per vocem,~
-sed per signa perducúntur. Unde étiam per Paulum dícitur: Prophetíæ~
-fidélibus datæ sunt, non infidélibus: signa autem infidélibus, non~
-fidélibus. Quia et illis prophetíæ tamquam fidélibus, non~
-infidélibus: et istis signa tamquam infidélibus, non fidélibus data~
-sunt.
+Sicut in lectióne evangélica, fratres caríssimi, audístis, cæli Rege nato, rex terræ turbátus est: quia nimírum terréna altitúdo confúnditur, cum celsitúdo cæléstis aperítur. Sed quæréndum nobis est, quidnam sit, quod, Redemptóre nato, pastóribus in Judǽa Angelus appáruit, atque ad adorándum hunc ab Oriénte Magos non Angelus, sed stella perdúxit? Quia vidélicet Judǽis, tamquam ratióne uténtibus, rationále ánimal, id est, Angelus prædicáre débuit: gentíles vero, quia uti ratióne nesciébant, ad cognoscéndum Dóminum non per vocem, sed per signa perducúntur. Unde étiam per Paulum dícitur: Prophetíæ fidélibus datæ sunt, non infidélibus: signa autem infidélibus, non fidélibus. Quia et illis prophetíæ tamquam fidélibus, non infidélibus: et istis signa tamquam infidélibus, non fidélibus data sunt.
 
 [Responsory7]
 R. Stella, quam víderant Magi in Oriénte, antecedébat eos, donec venírent ad locum, ubi puer erat.
@@ -228,15 +201,7 @@ V. Et intrántes domum, invenérunt púerum cum María matre ejus, et procidént
 R. Vidéntes autem eam, gavísi sunt gáudio magno.
 
 [Lectio8]
-Et notándum, quod Redemptórem nostrum, cum jam perféctæ esset ætátis,~
-eísdem gentílibus Apóstoli prǽdicant, eúmque párvulum, et necdum per~
-humáni córporis offícium loquéntem, stella géntibus denúntiat: quia~
-nimírum ratiónis ordo poscébat, ut et loquéntem jam Dóminum loquéntes~
-nobis prædicatóres innotéscerent, et necdum loquéntem eleménta muta~
-prædicárent. Sed in ómnibus signis, quæ vel nascénte Dómino, vel~
-moriénte eo monstráta sunt, considerándum nobis est, quanta fúerit in~
-quorúmdam Judæórum corde durítia, qui hunc nec per prophetíæ donum,~
-nec per mirácula agnovérunt.
+Et notándum, quod Redemptórem nostrum, cum jam perféctæ esset ætátis, eísdem gentílibus Apóstoli prǽdicant, eúmque párvulum, et necdum per humáni córporis offícium loquéntem, stella géntibus denúntiat: quia nimírum ratiónis ordo poscébat, ut et loquéntem jam Dóminum loquéntes nobis prædicatóres innotéscerent, et necdum loquéntem eleménta muta prædicárent. Sed in ómnibus signis, quæ vel nascénte Dómino, vel moriénte eo monstráta sunt, considerándum nobis est, quanta fúerit in quorúmdam Judæórum corde durítia, qui hunc nec per prophetíæ donum, nec per mirácula agnovérunt.
 
 [Responsory8]
 R. Vidéntes stellam Magi, gavísi sunt gáudio magno:
@@ -247,23 +212,19 @@ R. Et intrántes domum invenérunt púerum cum María matre ejus, et procidénte
 R. Et apértis thesáuris suis obtulérunt ei múnera, aurum, thus, et myrrham.
 
 [Lectio9]
-Omnia quippe eleménta auctórem suum venísse testáta sunt. Ut enim de~
-eis quiddam usu humáno loquar: Deum hunc cæli esse cognovérunt, quia~
-prótinus stellam misérunt. Mare cognóvit, quia sub plantis ejus se~
-calcábile prǽbuit. Terra cognóvit, quia eo moriénte contrémuit. Sol~
-cognóvit, quia lucis suæ rádios abscóndit. Saxa et paríetes~
-cognovérunt, quia témpore mortis ejus scissa sunt. Inférnus agnóvit,~
-quia hos, quos tenébat mórtuos, réddidit. Et tamen hunc, quem Dóminum~
-ómnia insensibília eleménta sensérunt, adhuc infidélium Judæórum~
-corda Deum esse mínime cognóscunt, et durióra saxis, scindi ad~
-pœniténdum nolunt.
+Omnia quippe eleménta auctórem suum venísse testáta sunt. Ut enim de eis quiddam usu humáno loquar: Deum hunc cæli esse cognovérunt, quia prótinus stellam misérunt. Mare cognóvit, quia sub plantis ejus se calcábile prǽbuit. Terra cognóvit, quia eo moriénte contrémuit. Sol cognóvit, quia lucis suæ rádios abscóndit. Saxa et paríetes cognovérunt, quia témpore mortis ejus scissa sunt. Inférnus agnóvit, quia hos, quos tenébat mórtuos, réddidit. Et tamen hunc, quem Dóminum ómnia insensibília eleménta sensérunt, adhuc infidélium Judæórum corda Deum esse mínime cognóscunt, et durióra saxis, scindi ad pœniténdum nolunt.
 &teDeum
+
+[Versum 0]
+@:Responsory6:3-4
 
 [Ant Laudes]
 @:Ant Vespera
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Isa 60:1
+v. Surge, illumináre Jerúsalem, quia venit lumen tuum, et glória Dómini super te orta est.
+$Deo gratias
 
 [Hymnus Laudes]
 {:H-Osolamagnarum:}v. O sola magnárum úrbium
@@ -296,6 +257,9 @@ Amen.
 V. Adoráte Deum, allelúja.
 R. Omnes Angeli ejus, allelúja.
 
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
 [Ant 2]
 Hódie * cælésti Sponso juncta est Ecclésia, quóniam in Jordáne lavit Christus ejus crímina: currunt cum munéribus Magi ad regáles núptias, et ex aqua facto vino lætántur convívæ, allelúja.
 
@@ -303,17 +267,21 @@ Hódie * cælésti Sponso juncta est Ecclésia, quóniam in Jordáne lavit Chris
 !Isa 60:6
 v. Omnes de Saba vénient, aurum et thus deferéntes, et laudem Dómino annuntiántes.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Reges Tharsis et ínsulæ múnera ófferent, * Allelúja, allelúja.
 R. Reges Tharsis et ínsulæ múnera ófferent, * Allelúja, allelúja.
 V. Reges Arabum et Saba dona addúcent.
 R. Allelúja, allelúja.
 &Gloria
 R. Reges Tharsis et ínsulæ múnera ófferent, * Allelúja, allelúja.
-_
+
+[Responsory Breve Tertia] (rubrica cisterciensis)
+R.br. Dies sanctificátus, * Illúxit nobis.
+R. Dies sanctificátus, * Illúxit nobis.
+V. Veníte, Gentes, et adoráte Dóminum.
+R. Illúxit nobis.
+
+[Versum Tertia]
 V. Omnes de Saba vénient, allelúja.
 R. Aurum et thus deferéntes, allelúja.
 
@@ -322,31 +290,43 @@ R. Aurum et thus deferéntes, allelúja.
 v. Leva in circúitu óculos tuos, et vide: omnes isti congregáti sunt, venérunt tibi: fílii tui de longe vénient, et fíliæ tuæ de látere surgent.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Omnes de Saba vénient, * Allelúja, allelúja.
 R. Omnes de Saba vénient, * Allelúja, allelúja.
 V. Aurum et thus deferéntes.
 R. Allelúja, allelúja.
 &Gloria
 R. Omnes de Saba vénient, * Allelúja, allelúja.
-_
-V. Adoráte Dóminum, allelúja.
-R. In aula sancta ejus, allelúja.
+
+[Responsory Breve Sexta] (rubrica cisterciensis)
+R.br. Reges Tharsis et ínsulæ * Múnera ófferent.
+R. Reges Tharsis et ínsulæ * Múnera ófferent.
+V. Reges Arabum et Saba dona addúcent.
+R. Múnera ófferent.
+
+[Versum Sexta]
+@:Nocturn 3 Versum
 
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Adoráte Dóminum, * Allelúja, allelúja.
 R. Adoráte Dóminum, * Allelúja, allelúja.
 V. In aula sancta ejus.
 R. Allelúja, allelúja.
 &Gloria
 R. Adoráte Dóminum, * Allelúja, allelúja.
-_
-V. Adoráte Deum, allelúja.
-R. Omnes Angeli ejus, allelúja.
+
+[Versum Nona]
+@:Versum 2
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
 
 [Ant 3]
 Tribus miráculis * ornátum diem sanctum cólimus: hódie stella Magos duxit ad præsépium: hódie vinum ex aqua factum est ad núptias: hódie in Jordáne a Joánne Christus baptizári vóluit, ut salváret nos, allelúja.
+
+[Ant 3] (rubrica cisterciensis)
+Ab Oriénte * venérunt Magi in Béthlehem adoráre Dóminum, et apértis thesáuris suis pretiósa múnera obtulérunt: aurum sicut Regi magno: thus sicut Deo vero: myrrham sepultúræ ejus.

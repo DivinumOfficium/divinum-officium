@@ -11,11 +11,13 @@
 @Tempora/092-0:Lectio2:s/-10/-9/ s/10 .*//s
 
 [Lectio3]
-@Tempora/092-0:Lectio2:s/-10/-13/ s/6-/10-/ s/6 .*10 /10 /s
-@Tempora/092-0:Lectio3:s/!.*// s/14 .*//s
+@Tempora/092-0:Lectio2:1 s/6-10/10-13/
+@Tempora/092-0:Lectio2:6 s/\p{Letter}/\u$&/
+@Tempora/092-0:Lectio3:2-4
 
 [Lectio4]
-@Tempora/092-0:Lectio3:s/11-/14-/ s/11 .*14 /14 /s
+@Tempora/092-0:Lectio3:1 s/11-/14-/
+@Tempora/092-0:Lectio3:5-8 s/\p{Letter}/\u$&/
 
 [Responsory4]
 @Tempora/091-1:Responsory1

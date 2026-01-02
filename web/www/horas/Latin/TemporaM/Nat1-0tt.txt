@@ -1,0 +1,60 @@
+@Tempora/Nat1-0
+
+[Officium]
+De Dominica Infra Octavam Nativitatis
+
+[Rank]
+;;Semiduplex;;5.9;;ex SanctiM/12-25
+
+[Rule]
+3 lectiones
+Psalmi Dominica
+Antiphonas horas
+
+[Comment]
+This file to be used when Dominica transferred to Dec30 (M1617) or 29 (M1930)
+
+[Versum 1]
+@TemporaM/Nat1-0
+
+[Ant Matutinum]
+@Sancti/01-01::7 s/;;.*//
+;;
+;;
+;;
+;;
+;;
+Natus est nobis * hódie Salvátor, qui est Christus Dóminus, in civitáte David.
+;;
+;;
+;;
+;;
+;;
+
+[Lectio1]
+@Tempora/Nat1-0:Lectio7
+
+[Responsory1]
+@SanctiM/12-25:Responsory11
+
+[Lectio2]
+@Tempora/Nat1-0:Lectio8
+
+[Responsory2]
+@Sancti/12-25:Responsory8
+
+[Lectio3]
+@Tempora/Nat1-0:Lectio9
+
+[Responsory3]
+@Tempora/Nat1-0:Responsory8
+
+[MM Capitulum]
+@Psalterium/Special/Matutinum Special:MM Capitulum Nat:1-4
+@Sancti/12-25:Versum 2
+
+[Versum 2]
+@Sancti/12-25:Versum Sexta
+
+[Versum 3]
+@:Versum 1

@@ -1,17 +1,11 @@
-[Rank]
-S. Joannis a S. Facundo Confessoris;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5
-Gloria
+[Officium]
+S. João de S. Facundo, Confessor
 
 [Comment]
 # 12 VI – S. João de S. Facundo, Confessor
 ! 3 classe
 ! Paramentos brancos
 
-! Comemoração dos S. S. Mártires Basilides e Outros
-! Paramentos vermelhos
 
 [Introitus]
 @Commune/C5:Introitus
@@ -32,27 +26,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C5:Offertorium
 
-[Secreta]
-@Commune/C5:Secreta
-
 [Communio]
 @Commune/C5:Communio
-
-[Postcommunio]
-@Commune/C5:Postcommunio
-
-[Commemoratio Oratio]
-! Comemoração dos S. S. Mártires Basilides e Outros
-Que o nascimento dos vossos Santos Mártires Basilides, Cirino, Nabor e Nazário, Vos suplicamos, Senhor, seja celebrado com esplendor Pelos votos que Vos oferecemos, e que a felicidade eterna, que eles gozam, reverta em nosso proveito, aumentando os frutos da nossa devoção.
-$Per Dominum
-
-[Commemoratio Secreta]
-! Comemoração dos S. S. Mártires Basilides e Outros
-Senhor, celebramos os vossos venerandos mystérios, oferecendo-Vos solenemente esta hóstia em honra do sangue dos vossos Santos Mártires Basilides, Cirino, Nabor e Nazário pelo qual eles alcançaram uma brilhante vitória.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-! Comemoração dos S. S. Mártires Basilides e Outros
-Visto que nós, Senhor, celebramos sempre a solenidade dos vossos Santos Mártires Basilides, Cirino, Nabor e Nazário, concedei-nos, Vos rogamos, que alcancemos incessantemente o seu patrocínio.
-$Per Dominum
-

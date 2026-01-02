@@ -3,10 +3,8 @@
 [Rule]
 12 lectiones
 
-[Capitulum Vespera]
-@Tempora/Quad5-0
-_
-@Psalterium/Major Special:Quad5M Vespera:3-7
+[Ant Matutinum 3N]
+Ego * glóriam meam non quæro: † est qui quærat, et júdicet.
 
 [Lectio3]
 @Tempora/Quad5-0:Lectio3:s/-19/-16/ s/17 .*//s
@@ -42,15 +40,9 @@ _
 @Tempora/Quad5-0:Lectio6:s/.* Beátus /Beátus /s
 
 [Responsory8]
-R. Qui custodiébant ánimam meam, consílium fecérunt in unum, dicéntes: † Deus derelíquit eum,
-* Persequímini et comprehéndite eum: quia non est qui líberet eum: † Deus meus, ne elongéris a me: Deus meus, in adiutórium meum inténde.
-V. Omnes inimíci advérsum me cogitábant mala mihi: † verbum iníquum mandavérunt advérsum me, dicéntes.
-R. Persequímini et comprehéndite eum: quia non est qui líberet eum: † Deus meus, ne elongéris a me: Deus meus, in adiutórium meum inténde.
+@Tempora/Quad5-1:Responsory2
 &Gloria
-R. Qui custodiébant ánimam meam, consílium fecérunt in unum, dicéntes: † Deus derelíquit eum, * Persequímini et comprehéndite eum: quia non est qui líberet eum: † Deus meus, ne elongéris a me: Deus meus, in adiutórium meum inténde.
-
-[Ant Matutinum 3N]
-Ego * glóriam meam non quæro: † est qui quærat, et júdicet.
+@Tempora/Quad5-1:Responsory2:1-2 s/\n/ /s
 
 [Lectio9]
 @Tempora/Quad5-0:Lectio7:s/Cæléstem .*//s
@@ -76,20 +68,4 @@ Ego * glóriam meam non quæro: † est qui quærat, et júdicet.
 @Tempora/Quad5-0:Lectio9:s/.* Accepta /Accepta /s
 
 [Responsory12]
-R. Pacífice loquebántur mihi inimíci mei, et in ira molésti erant mihi:
-* Vidísti, Dómine, ne síleas, ne discédas a me.
-V. Ego autem cum mihi molésti essent, † induébam me cilício, et humiliábam in jejúnio ánimam meam.
-R. Vidísti, Dómine, ne síleas, ne discédas a me.
-&Gloria
-R. Pacífice loquebántur mihi inimíci mei, et in ira molésti erant mihi: * Vidísti, Dómine, ne síleas, ne discédas a me.
-
-[Capitulum Laudes]
-@Tempora/Quad5-0
-_
-@Psalterium/Major Special:Quad5M Laudes:3-7
-
-[Capitulum Vespera 3]
-@Tempora/Quad5-0:Capitulum Vespera
-_
-@Psalterium/Major Special:Quad5M Vespera:3-7
-
+@Tempora/Quad5-1:Responsory3

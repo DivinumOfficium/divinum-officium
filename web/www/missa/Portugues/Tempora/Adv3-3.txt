@@ -1,11 +1,5 @@
-[Rank]
-Feria IV Quattuor Temporum in Adventu;;Feria major;;2
-
-[Rank1960]
-Feria IV Quattuor Temporum Adventus;;Feria major;;3
-
-[RankNewcal]
-Feria IV infra Hebdomadam III Adventus;;Feria major;;2
+[Officium]
+Feria IV Quattuor Temporum in Adventu
 
 [Rule]
 Oratio Dominica
@@ -22,10 +16,6 @@ Os céus proclamam a glória de Deus: e o firmamento anuncia as obras das suas m
 &Gloria
 v. Ó céus, derramai dessas alturas o vosso orvalho: e que as nuvens chovam o Justo! Abra-se a terra e floresça o Salvador!
 
-[Oratio]
-Fazei, ó Deus omnipotente, Vos imploramos, que as próximas solenidades da nossa redenção nos alcancem os auxílios para a vida presente e a recompensa da bem-aventurança eterna.
-$Per Dominum
-
 [LectioL1]
 Lição do Profeta Isaías.
 !Is  2:2-5
@@ -41,8 +31,12 @@ V. Quem será digno de subir à montanha do Senhor? Quem será digno de permanec
 Apressai-Vos em nos socorrer, ó Senhor, Vos suplicamos; não tardeis em conceder-nos o auxílio do vosso celestial poder, a fim de que as consolações do vosso advento confortem aqueles que confiam na vossa bondade:
 $Qui vivis
 
+[Oratio]
+Fazei, ó Deus omnipotente, Vos imploramos, que as próximas solenidades da nossa redenção nos alcancem os auxílios para a vida presente e a recompensa da bem-aventurança eterna.
+$Per Dominum
+
 [Lectio]
-Lesson from the book of Isaias
+Lição do Profeta Isaías.
 !Is 7:10-15
 Naqueles dias, falou o Senhor a Acaz e disse-lhe: «Pedi ao Senhor, vosso Deus, um prodígio nas profundezas do inferno ou nas alturas do céu». Acaz respondeu: «Não pedirei tal cousa e não tentarei o Senhor». E Isaías disse: «Escutai, então, casa de David: Porventura vos não basta que fatigueis a paciência dos homens, senão que queirais fatigar a do meu Deus? Eis porque o Senhor vos dará um sinal: «Uma virgem conceberá e dará à luz um filho, e o seu nome será Emanuel: Ele comerá manteiga e mel, para que saiba condenar o mal e escolher o bem».
 
@@ -52,7 +46,9 @@ O Senhor está perto de todos aqueles que o invocam: de todos que com verdade o 
 V. Que minha boca publique os louvores do Senhor: e que toda a carne bendiga seu santo Nome.
 
 [Evangelium]
-@Commune/C10a:Evangelium
+Continuação ++ do santo Evangelho segundo S. Lucas.
+!Lc 1:26-38
+Naquele tempo, foi mandado por Deus o Anjo Gabriel a uma cidade da Galileia, chamada Nazaré, a uma Virgem, desposada com um varão, cujo nome era José, da casa de David; e o nome da Virgem era Maria. Entrando o Anjo onde ela estava, disse: «Eu te saúdo, cheia de graça: o Senhor é contigo: bendita és tu entre todas as mulheres». Ouvindo ela isto, perturbou-se; e pensava na significação desta saudação. Então, disse-lhe o Anjo: «Não temas, Maria, porquanto alcançaste graça diante do Senhor: eis que conceberás no teu seio e darás à luz um Filho; e o seu nome será Jesus. Ele será grande e será chamado Filho do Altíssimo; o Senhor Deus lhe dará o trono de David, seu pai; reinará eternamente na casa de Jacob; e o seu reino não terá fim. Porém, Maria disse ao Anjo: «Como acontecerá isso, se não conheço varão?», O Anjo, respondendo, disse-lhe: «O Espírito Santo descerá sobre ti, e a virtude do Altíssimo te tocará com sua sombra. Por isso o Santo, que nascer de ti, será chamado Filho de Deus. E eis que Isabel, tua parenta, concebeu um filho na sua velhice: este é o sexto mês daquela que é chamada estéril: porque nada é impossível a Deus». Então disse Maria: «Eis aqui a escrava do Senhor, faça-se em mim segundo a tua palavra».
 
 [Offertorium]
 !Is 35:4

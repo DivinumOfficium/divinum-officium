@@ -1,19 +1,8 @@
-[Rank]
-Niedziela w Oktawie Wniebowstąpienia;;Semiduplex;;5;;ex Tempora/Pasc5-4
+[Officium]
+Niedziela w Oktawie Wniebowstąpienia
 
-[Rank1960]
-Niedziela po Wniebowstąpieniu;;Semiduplex;;5;;vide Tempora/Pasc5-4
-
-[Rule]
-ex Tempora/Pasc5-4;
-9 lectiones
-Doxology=Asc
-StJamesRule=John,Rev
-
-[Capitulum Vespera]
-!1 P 4:7-8
-v. Najmilsi: Przetóż roztropni bądźcie i czujcie w modlitwach. A nade wszystko miejcie ustawiczną miłość jedni ku drugim; bo miłość zakrywa wielkość grzechów.
-$Deo gratias
+[Officium] (rubrica 196 aut rubrica 1955)
+Niedziela po Wniebowstąpieniu
 
 [Ant 1]
 Gdy przyjdzie Pocieszyciel, * którego ja wam poślę Ducha Prawdy, który od Ojca pochodzi, on o mnie świadectwo dawać będzie, alleluja. 
@@ -22,11 +11,15 @@ Gdy przyjdzie Pocieszyciel, * którego ja wam poślę Ducha Prawdy, który od Oj
 Wszechmogący wieczny Boże, spraw, aby wola nasza zawsze była Ci poddaną, a serca nasze szczerze Ci służyły.
 $Per Dominum
 
+[Commemoratio]
+!Wspominamy Oktawę Wniebowstąpienie
+@Tempora/Pasc5-4:Oratio
+
 [Lectio1]
 Początek Pierwszego Listu Świętego Jana Apostoła
 !1 J 1:1-5
-1 Co było od początku, cośmy słyszeli, cośmy widzieli oczyma naszemi, cośmy oglądali i czego ręce nasze dotykały o słowie żywota;
-2 Bo żywot oznajmiony jest; i widzieliśmy, świadczymy i opowiadamy wam żywot wieczny, który był u Ojca i zjawił się nam.
+1 Co było od początku, cośmy słyszeli, cośmy widzieli oczyma naszemi, cośmy oglądali i czego ręce nasze dotykały o słowie żywota,
+2 i żywot oznajmiony jest; i widzieliśmy, świadczymy i opowiadamy wam żywot wieczny, który był u Ojca i zjawił się nam.
 3 Cośmy widzieli i słyszeli, wam opowiadamy, abyście i wy towarzystwo mieli z nami: a towarzystwo nasze było z Ojcem i z Synem jego Jezusem Chrystusem.
 4 A to wam piszemy, abyście się radowali, a radość wasza zupełna była.
 5 A to jest opowiadanie, któreśmy słyszeli od niego, i opowiadamy wam: Iż Bóg jest światłością, a żadnéj ciemności w nim niemasz.
@@ -42,7 +35,7 @@ Początek Pierwszego Listu Świętego Jana Apostoła
 [Lectio3]
 !1 J 2:1-6
 1 Synaczkowie moi, to wam piszę, abyście nie grzeszyli. Ale jeźliby kto zgrzeszył, rzecznika mamy u Ojca, Jezusa Chrystusa sprawiedliwego;
-2 A on jest ubłaganiem za grzechy nasze, a nie tylko za nasze, ale i wszego świata.
+2 a on jest ubłaganiem za grzechy nasze, a nie tylko za nasze, ale i wszego świata.
 3 A przez to wiemy, iżeśmy go poznali, jeźlibyśmy przykazania jego zachowywali.
 4 Kto mówi, że go zna, a przykazania jego nie chowa, kłamcą jest, a prawdy w nim niemasz.
 5 Lecz kto zachowywa słowo jego, prawdziwie się w nim miłość Boża wykonała: i przez to wiemy, iż w nim jesteśmy.
@@ -65,18 +58,20 @@ R. Lecz gdy przyjdzie, nauczy was wszelkiéj prawdy, alleluja.
 &Gloria
 R. Lecz gdy przyjdzie, nauczy was wszelkiéj prawdy, alleluja.
 
-[Versum 2]
-@Tempora/Pasc5-4:Versum 1
-(sed rubrica tridentina)
-@:Versum 1
+[Capitulum Laudes]
+!1 P 4:7-8
+v. Najmilsi: Przetóż roztropni bądźcie i czujcie w modlitwach. A nade wszystko miejcie ustawiczną miłość jedni ku drugim; bo miłość zakrywa wielkość grzechów.
+$Deo gratias
 
-[Commemoratio 2]
-!Commemoratio Octavæ Ascensionis.
-@Tempora/Pasc5-4:Oratio
+[Capitulum Sexta]
+!1P 4:7-8
+v. Goście radzi przyjmujcie, jedni drugie bez szemrania. Każdy jako wziął łaskę, usługując nią jeden drugiemu, jako dobrzy szafarze rozlicznéj łaski Bożéj.
+$Deo gratias
+
+[Capitulum Nona]
+!1P 4:11
+v. Jeźli który mówi, jako mowy Boże, jeźli który posługuje, jako z siły, której Bóg dodawa, aby we wszem był Bóg pochwalon przez Jezusa Chrystusa, Pana naszego.
+$Deo gratias
 
 [Ant 3]
 Tom wam powiedział, * abyście, gdy przyjdzie godzina, wspomnieli na to, żem ja wam powiedział, alleluja.
-
-[Commemoratio 3]
-!Commemoratio Octavae Ascensionis.
-@Tempora/Pasc5-4:Oratio

@@ -1,0 +1,29 @@
+[Rank]
+@Tempora/Pasc4-6
+
+[Rule]
+no Te Deum
+
+[Lectio1]
+@Tempora/Pasc6-2:Lectio1:1-5 s/-6/-3/
+
+[Responsory1]
+@Tempora/Pasc4-0:Responsory7
+
+[Lectio2]
+@Tempora/Pasc6-2:Lectio1:2 s/1-/4-/
+@Tempora/Pasc6-2:Lectio1:6-8
+
+[Responsory2]
+@TemporaM/Pasc4-0:Responsory11:s/Introívimus/Introíbimus/
+
+[Lectio3]
+@Tempora/Pasc6-2:Lectio2:1-4 s/-14/-9/
+
+[Responsory3]
+@TemporaM/Pasc4-0:Responsory12
+&Gloria
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. / s/(, a.*)./$1$1./
+
+[Ant 2]
+@TemporaOP/Pasc4-1

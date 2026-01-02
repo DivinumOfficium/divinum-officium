@@ -1,9 +1,5 @@
-[Rank]
-S. Ignatii Confessoris;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5;
-Gloria
+[Officium]
+S. Inácio de Loiola, Confessor
 
 [Comment]
 # 31 VII – S. Inácio de Loiola, Confessor
@@ -23,7 +19,7 @@ v. Que ao ser pronunciado o nome de Jesus se dobrem todos os joelhos dos que est
 $Per Dominum
 
 [Lectio]
-@Commune/C2a:Lectio
+@Commune/C2a-1:Lectio
 
 [Graduale]
 @Commune/C5:Graduale
@@ -46,4 +42,3 @@ Eu vim trazer o fogo à terra: e que quero senão que ele se acenda?
 [Postcommunio]
 Senhor, que este sacrifício de louvor, que Vos é oferecido em acção de graças em honra de Santo Inácio, nos alcance por sua intercessão o céu, onde a vossa majestade recebe perpétuo louvor.
 $Per Dominum
-

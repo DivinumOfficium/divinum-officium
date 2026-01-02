@@ -1,8 +1,11 @@
+[Ant Matutinum 3N]
+Adorn thy bridal chamber, O Sion, and receive Christ the King: He whom the Virgin conceived and bore, she also worshipped.
+
 [Lectio2]
 @Sancti/02-02:Lectio2:s/-5/-4/ s/She.*//s
 
 [Lectio3]
-@Sancti/02-02:Lectio2:s/1-/4-/ s/1 .*She/4 She/s
+@Sancti/02-02:Lectio2:2-7 s/1-/4-/ s/1 .*She/4 She/s
 
 [Responsory4]
 R. We have received Thy mercy, O God, in the midst of Thy temple; according to Thy Name, O God, so also is Thy praise unto the ends of the earth;
@@ -30,9 +33,6 @@ R. Now Thou dost dismiss Thy servant, O Lord, according to Thy word in peace;
 V. A light to the revelation of the Gentiles, and the glory of Thy people Israel.
 R. Because my eyes have seen Thy salvation.
 
-[Ant Matutinum 3N]
-Adorn thy bridal chamber, O Sion, and receive Christ the King: He whom the Virgin conceived and bore, she also worshipped.
-
 [Lectio9]
 @Sancti/02-02:Lectio7:s/A virgin .*//s
 
@@ -43,7 +43,6 @@ Adorn thy bridal chamber, O Sion, and receive Christ the King: He whom the Virgi
 [Lectio11]
 @Sancti/02-02:Lectio8:s/.* Then /Then /s:Lectio8:s/Behold .*//s
 
-
 [Responsory11]
 R. Today the Virgin Mary presented the child Jesus in the temple, and the righteous Simeon received him in his hands;
 * And the widow Anna announced that the Messiah had come to the earth.
@@ -52,4 +51,3 @@ R. And the widow Anna announced that the Messiah had come to the earth.
 
 [Lectio12]
 @Sancti/02-02:Lectio8:s/.* Behold /Behold /s
-

@@ -1,0 +1,37 @@
+[Lectio6]
+@Commune/C7:Lectio5:s/ Starší rolník.*/ /
+
+[Lectio7]
+@Commune/C7:Lectio5:s/.* Starší rolník/Starší rolník/
+
+[Responsory8]
+R. Jak jsi krásná, má přítelkyně, jak jsi krásná a sladká! Tvé oči jsou jak oči holubice;
+* A co se ještě skrývá uvnitř!
+V. Královna stojí po tvé pravici ve zlatém rouchu, bohatě ozdobená.
+R. A co se ještě skrývá uvnitř!
+&Gloria
+R. A co se ještě skrývá uvnitř!
+
+[Lectio10]
+@Commune/C7:Lectio8:s/ To však neříkám.*/ /
+
+[Lectio11]
+@Commune/C7:Lectio8:s/.* To však neříkám/To však neříkám/
+
+[Responsory12]
+R. Blessed are you N. who for God's sake, hated the world
+* Therefore the Kingdom of Heaven is yours
+V. Thou hast loved righteousness, and hated iniquity
+R. Therefore the Kingdom of Heaven is yours
+&Gloria
+R. Therefore the Kingdom of Heaven is yours
+
+[Lectio6 in 2 loco]
+@Commune/C7:Lectio5 in 2 loco:s/ V jakou výmluvu.*/ /
+
+[Lectio7 in 2 loco]
+@Commune/C7:Lectio5 in 2 loco:s/.* V jakou výmluvu/V jakou výmluvu/ s/$/~/s
+@Commune/C7:Lectio6 in 2 loco:s/ Není totiž.*//s
+
+[Lectio8 in 2 loco]
+@Commune/C7:Lectio6 in 2 loco:s/.* Není totiž/Není totiž/

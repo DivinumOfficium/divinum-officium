@@ -1,13 +1,5 @@
-[Rank]
-S. Gabrielis Archangeli;;Duplex majus;;4;;ex Sancti/05-08
-
-[Rule]
-ex Sancti/05-08
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=137
-Psalm5 Vespera3=116
+[Officium]
+S. Gabrielis Archangeli
 
 [Ant Vespera]
 Habiendo entrado Zacarías * al templo del Señor, se le apareció el ángel Gabriel, de pie a la derecha del altar del incienso.
@@ -38,36 +30,26 @@ cuya gloria resplandece por todo el orbe,
 nos conceda estas gracias. 
 Amén.
 
-[Capitulum Vespera]
-!Dan 9:21-22
-v. Aquel hombre, Gabriel, el que había visto al comienzo en la visión, llegó volando hasta mí a la hora de la ofrenda vespertina. Al llegar, me habló así: Daniel, acabo de salir para hacer que comprendas. 
-$Deo gratias
-
 [Ant 1]
 El ángel Gabriel * se apareció a Daniel y le dijo: Al principio de tus súplicas se pronunció una sentencia, y yo he venido para comunicártela. Entiende la sentencia, comprende la visión.
 
+[Oratio]
+Oh Dios, que entre los demás Ángeles elegiste al Arcángel Gabriel para anunciar el misterio de tu Encarnación; concédenos propicio, que cuantos celebramos su festividad en la tierra, experimentemos su patrocinio en los cielos.
+$Qui vivis
+
 [Invit]
 Al Señor, rey de los Arcángeles, * Venid a adorarlo.
-
-[Hymnus Matutinum]
-@Sancti/03-24:Hymnus Vespera
 
 [Ant Matutinum]
 Dijo el Ángel Gabriel a Daniel: * Oh hijo de hombre, atiende al momento en que se cumplirá esta visión en el tiempo prefijado.;;8
 He ahí que Gabriel, * el hombre que había visto en la visión, volando rápidamente me tocó en el tiempo del sacrificio vespertino, y me instruyó.;;10
 Mientras Gabriel * me estaba hablando, yo caí, la faz contra el suelo; mas él me tocó y me hizo levantar de nuevo.;;14
-V. Se puso el Ángel junto al altar del templo.
-R. Teniendo en su mano un incensario de oro.
 El Ángel Gabriel * se apareció a Zacarías, diciendo: Tu esposa Isabel dará a luz un hijo, y le llamarás Juan.;;18
 Y dijo Zacarías * al Ángel: ¿Cómo sabré esto? Pues yo soy ya anciano, y mi esposa es de edad avanzada.;;23
 Respondiendo el Ángel, * le dijo: Yo soy Gabriel, que asisto al trono de Dios, y he sido enviado para hablarte y darte esta buena nueva.;;33
-V. Subió el humo de los perfumes al acatamiento del Señor.
-R. Por la mano del Ángel.
 El Ángel Gabriel * fue enviado a María Virgen, desposada con José.;;95
 El Ángel Gabriel * dijo a María: He ahí que Isabel tu parienta en su vejez ha concebido un hijo.;;96
 Recibe el mensaje, * Virgen María, que te ha sido enviado por el Ángel Gabriel.;;102
-V. En presencia de los Ángeles, te cantaré himnos, oh Dios mío.
-R. Te adoraré en tu santo templo, y confesaré tu nombre.
 
 [Lectio1]
 Del Profeta Daniel
@@ -86,7 +68,7 @@ R. He aquí que el Arcángel Gabriel volando rápidamente le tocó en el tiempo 
 [Lectio2]
 !Dan 9:24-25
 24 Setenta semanas están prefijadas sobre tu pueblo y sobre tu ciudad santa para poner fin a la prevaricación y cancelar el pecado, para expiar la iniquidad y traer la justicia eterna, para sellar la visión y la profecía y ungir el santo de los santos. 
-25 Sabe, pues, y entiende que desde la salida del oráculo sobre el retorno y edificación de Jerusalén hasta un ungido príncipe habrá siete semanas, y en sesenta y dos semanas se reedificarán plaza y foso en la angustia de los tiempos. 
+25 Sabe, pues, y entiende que desde la salida del oráculo sobre el retorno y edificación de Jerusalén hasta un ungido príncipe habrá siete semanas, y en sesenta y dos semanas se reedificarán plaza y foso en la angustia de los tiempos.
 
 [Responsory2]
 R. Gabriel habló a Daniel, y le dijo: La orden se me dio desde que te pusiste a orar. 
@@ -97,7 +79,7 @@ R. Y yo vengo para comunicártela, porque tú eres un varón de deseos.
 [Lectio3]
 !Dan 9:26-27
 26 Después de las sesenta y dos semanas será muerto un ungido, sin que tenga culpa. Y destruirá la ciudad y el santuario el pueblo de un príncipe que ha de venir, y su fin será en una inundación, y hasta el fin de la guerra están decretadas desolaciones. 
-27 Y afianzará la alianza para muchos durante una semana, y a la mitad de la semana hará cesar el sacrificio y la oblación y habrá en el santuario una abominación de la desolación hasta que la ruina decretada venga sobre el devastador. 
+27 Y afianzará la alianza para muchos durante una semana, y a la mitad de la semana hará cesar el sacrificio y la oblación y habrá en el santuario una abominación de la desolación hasta que la ruina decretada venga sobre el devastador.
 
 [Responsory3]
 R. He ahí que Gabriel, el hombre que había visto, volando rápidamente, me tocó en el tiempo del sacrificio vespertino, y dijo: 
@@ -176,7 +158,9 @@ El ángel Gabriel * dijo a María: Concebirás en tu vientre y darás a luz un h
 Y María dijo al ángel: * «¿Cómo será eso, pues no conozco varón?». El ángel le contestó: El Espíritu Santo vendrá sobre ti, y la fuerza del Altísimo te cubrirá con su sombra.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Dan 9:21-22
+v. Aquel hombre, Gabriel, el que había visto al comienzo en la visión, llegó volando hasta mí a la hora de la ofrenda vespertina. Al llegar, me habló así: Daniel, acabo de salir para hacer que comprendas. 
+$Deo gratias
 
 [Hymnus Laudes]
 {:HPlacarechriste:}v. Perdona, ¡oh Cristo!, a tus siervos, 
@@ -212,34 +196,14 @@ R. Con un incensario de oro en la mano.
 [Ant 2]
 El ángel Gabriel * se apareció a Zacarías y le dijo: Tu mujer te dará un hijo, y le pondrás por nombre Juan, y muchos se alegrarán de su nacimiento. Irá delante del Señor para preparar sus caminos.
 
-[Oratio]
-Oh Dios, que entre los demás Ángeles elegiste al Arcángel Gabriel para anunciar el misterio de tu Encarnación; concédenos propicio, que cuantos celebramos su festividad en la tierra, experimentemos su patrocinio en los cielos.
-$Qui vivis
-
 [Lectio Prima]
 !Dan 9:25
 v. Has de saberlo y comprenderlo: desde que se decretó la vuelta y la reconstrucción de Jerusalén hasta un príncipe ungido pasarán siete semanas; y pasarán sesenta y dos semanas.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
-@Sancti/05-08
 
 [Capitulum Sexta]
 !Dan 9:23-24
 v. Yo he venido para comunicártela, porque eres un predilecto. Setenta semanas están decretadas para cancelar el pecado y que se cumpla la visión y la profecía, y para ungir el santo de los santos.
 $Deo gratias
-
-[Responsory Sexta]
-@Sancti/05-08
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
-@Sancti/05-08
 
 [Ant 3]
 El arcángel Gabriel * dijo a María: Para Dios nada hay imposible. María contestó: «He aquí la esclava del Señor; hágase en mí según tu palabra». Y el ángel se retiró.

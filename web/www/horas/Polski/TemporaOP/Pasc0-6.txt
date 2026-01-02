@@ -1,0 +1,6 @@
+[Lectio1]
+@Tempora/Pasc0-6::s/ Było.*//
+
+[Lectio2]
+@Tempora/Pasc0-6:Lectio1:s/.*(?=Było)//s s/$/~/
+@Tempora/Pasc0-6

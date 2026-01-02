@@ -5,6 +5,9 @@ con el Padre y el Espíritu Santo,
 por los siglos sempiternos. 
 Amén.
 
+[NatT]
+@:Nat
+
 [Epi]
 ¡Oh Jesús, que te mostraste a los gentiles!, 
 gloria sea dada a ti en unión 
@@ -12,12 +15,18 @@ con el Padre y el Espíritu Santo,
 por los siglos sempiternos. 
 Amén.
 
-[Pasc]
+[EpiT]
+@:Epi
+
+[Pasch]
 Gloria sea dada a Dios Padre, 
 y al Hijo, que resucitó 
 de entre los muertos, y al Paráclito, 
 por los siglos de los siglos.
 Amén.
+
+[PaschT]
+@:Pasch
 
 [Asc]
 Gloria a ti, Señor,
@@ -36,12 +45,8 @@ de entre los muertos, y al Paráclito,
 por los siglos de los siglos.
 Amén.
 
-[Corp]
-¡Oh Jesús, que naciste de la Virgen!, 
-gloria sea dada a Ti, en unión 
-con el Padre y el Espíritu Santo, 
-por los siglos sempiternos. 
-Amén.
+[PentT]
+@:Pent
 
 [Heart]
 ¡Oh Jesús, que derramas la gracia por tu Corazón!, 
@@ -50,4 +55,5 @@ con el Padre y el Espíritu Santo,
 por los siglos sempiternos. 
 Amén.
 
-
+[HeartT]
+@:Heart

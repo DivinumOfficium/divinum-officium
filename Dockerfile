@@ -1,4 +1,4 @@
-FROM        alpine as gitinfo
+FROM public.ecr.aws/docker/library/alpine:latest AS gitinfo
 
 RUN apk add git
 COPY .git /build/
@@ -12,17 +12,16 @@ RUN echo "  \"commit\": \"`git rev-parse HEAD`\"," >> /build/buildinfo
 RUN echo "  \"branch\": \"`git rev-parse --abbrev-ref HEAD`\"" >> /build/buildinfo
 RUN echo "}" >> /build/buildinfo
 
-# Final container (copies in /out/buildinfo when done)
-FROM        perl:5.28-slim as final
-MAINTAINER  Ben Yanke <ben@benyanke.com>
+# Final container
+FROM public.ecr.aws/docker/library/perl:5.42-slim AS final
 
 # Set envs
-ENV APACHE_RUN_USER www-data \
-    APACHE_RUN_GROUP www-data \
-    APACHE_LOCK_DIR /var/lock/apache2 \
-    APACHE_LOG_DIR /var/log/apache2 \
-    APACHE_PID_FILE /var/run/apache2/apache2.pid \
-    APACHE_SERVER_NAME localhost
+ENV APACHE_RUN_USER=www-data \
+    APACHE_RUN_GROUP=www-data \
+    APACHE_LOCK_DIR=/var/lock/apache2 \
+    APACHE_LOG_DIR=/var/log/apache2 \
+    APACHE_PID_FILE=/var/run/apache2/apache2.pid \
+    APACHE_SERVER_NAME=localhost
 
 # Install packages
 RUN apt-get update && apt-get install -y \

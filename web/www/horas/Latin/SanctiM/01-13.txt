@@ -1,11 +1,19 @@
 @Sancti/01-13
 
-[Rank]
-Commemoratio Baptismatis Domini Nostri Jesu Christi;;Duplex II. classis;;5;;ex Sancti/01-06
-
 [Rule]
 12 lectiones
+Lectio1 tempora
 Doxology=Epi
+Festum Domini
+
+[Responsory Vespera 1]
+@Sancti/01-06:Responsory Breve Sexta
+
+[Responsory Vespera 1] (rubrica cisterciensis)
+@Sancti/01-06:Responsory Breve Tertia
+
+[Ant Matutinum 3N]
+@SanctiM/01-06
 
 [Responsory1]
 @Sancti/01-06
@@ -15,6 +23,9 @@ Doxology=Epi
 
 [Responsory3]
 @Sancti/01-06
+
+[Responsory4]
+@SanctiM/01-06
 
 [Lectio5]
 @Sancti/01-13:Lectio4
@@ -27,9 +38,6 @@ Doxology=Epi
 
 [Lectio8]
 @Sancti/01-13:Lectio6:s/.*Spíritus /Spíritus /s
-
-[Ant Matutinum 3N]
-@SanctiM/01-06
 
 [Lectio9]
 @Sancti/01-13:Lectio7

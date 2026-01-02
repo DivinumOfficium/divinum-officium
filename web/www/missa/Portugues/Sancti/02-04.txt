@@ -1,14 +1,13 @@
-[Rank]
-S. Andreae Corsini Episcopi et Confessoris;;Duplex;;3;;vide C4
-
-[Rule]
-vide C4;
-Gloria
+[Officium]
+S. Andreae Corsini Episcopi et Confessoris
 
 [Comment]
 # 04 II – S. André Corsino, Bispo e Confessor
 ! 3 classe
 ! Paramentos brancos
+
+[Name]
+André
 
 [Introitus]
 @Commune/C4:Introitus
@@ -29,11 +28,5 @@ $Per Dominum.
 [Offertorium]
 @Commune/C4:Offertorium
 
-[Secreta]
-@Commune/C4:Secreta
-
 [Communio]
 @Commune/C4:Communio
-
-[Postcommunio]
-@Commune/C4:Postcommunio

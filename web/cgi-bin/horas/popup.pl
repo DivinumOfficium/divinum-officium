@@ -4,7 +4,7 @@ use utf8;
 # Name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office   popup
-package horas;
+package main;
 
 #1;
 #use warnings;
@@ -20,6 +20,9 @@ use CGI::Carp qw(fatalsToBrowser);
 use File::Basename;
 use Time::Local;
 
+use lib "$Bin/..";
+use DivinumOfficium::LanguageTextTools qw(prayer rubric prex translate load_languages_data);
+
 #use DateTime;
 use locale;
 $error = '';
@@ -30,8 +33,8 @@ $q = new CGI;
 #filled  getweek()
 our @dayname;    #0=Adv|{Nat|Epi|Quadp|Quad|Pass|Pen 1=winner title|2=other title
 
-#filled by getrank()
-our $winner;     #the folder/filename for the winner of precedence
+#filled by occurence()
+our $winner;          #the folder/filename for the winner of precedence
 our $commemoratio;    #the folder/filename for the commemorated
 our $commune;         #the folder/filename for the used commune
 our $communetype;     #ex|vide
@@ -41,28 +44,28 @@ our $vespera;         #1 | 3 index for ant, versum, oratio
 our $cvespera;        #for commemoratio
 
 #filled by precedence()
-our %winner;          #the hash of the winner
-our %commemoratio;    #the hash of the commemorated
-our %commune;         # the hash of the commune
+our %winner;                                  #the hash of the winner
+our %commemoratio;                            #the hash of the commemorated
+our %commune;                                 # the hash of the commune
 our (%winner2, %commemoratio2, %commune2);    #same for 2nd column
 our $rule;                                    # $winner{Rank}
 our $communerule;                             # $commune{Rank}
 our $duplex;                                  #1= simplex 2=semiduplex, 3=duplex 0=rest
                                               #4 = duplex majus, 5=duplex II class 6=duplex I class 7=higher
-our $sanctiname = 'Sancti';
-our $temporaname = 'Tempora';
-our $communename = 'Commune';
-our ($lang1, $lang2);
+our ($lang1, $lang2, $langfb);
 
 #*** collect standard items
-require "$Bin/do_io.pl";
+require "$Bin/../DivinumOfficium/SetupString.pl";
 require "$Bin/horascommon.pl";
-require "$Bin/dialogcommon.pl";
+require "$Bin/../DivinumOfficium/dialogcommon.pl";
 require "$Bin/webdia.pl";
-require "$Bin/setup.pl";
+require "$Bin/../DivinumOfficium/setup.pl";
 require "$Bin/horas.pl";
+require "$Bin/horasjs.pl";
+require "$Bin/horasscripts.pl";
 require "$Bin/specials.pl";
 require "$Bin/specmatins.pl";
+require "$Bin/altovadum.pl";
 
 binmode(STDOUT, ':encoding(utf-8)');
 
@@ -80,23 +83,43 @@ if (!$setupsave) {
   getcookies('horasgo', 'general');
 }
 
-set_runtime_options('general'); #$expand, $version, $lang2
-set_runtime_options('parameters'); # priest, lang1 ... etc
+set_runtime_options('general');       #$expand, $version, $lang2
+set_runtime_options('parameters');    # priest, lang1 ... etc
 
 $popup = strictparam('popup');
-$background = ($whitebground) ? "BGCOLOR=\"white\"" : "BACKGROUND=\"$htmlurl/horasbg.jpg\"";
-$only = ($lang1 && $lang1 =~ /^$lang2$/i) ? 1 : 0;
-precedence();
 
-foreach my $lang ('Latin', $lang1, $lang2) {
-  $translate{$lang} ||= setupstring($datafolder, $lang, 'Psalterium/Translate.txt');
+if ($popup !~ /^[\$\&][\&\w ]+$/) {
+  print $q->header(
+    -type => 'text/plain',
+    -status => '400 Bad request',
+  );
+  exit;
 }
-$title = translate(get_link_name($popup), 'Latin');
+
+$background = ($whitebground) ? ' class="contrastbg"' : '';
+$border = 0;
+$textwidth = 90;
+$only = $lang1 && $lang1 =~ /^$lang2$/i;
+precedence();
+setsecondcol();
+
+load_languages_data($lang1, $lang2, $langfb, $version, $missa);
+
+# We need to revert the masked parantheses at this point
+$popup =~ s/\&lpar/\(/;
+$popup =~ s/\&rpar/\)/;
+$popup =~ s/\&apos/\'/g;
+my $title = $popup;
+$title =~ s/^[\$\&]?([a-z])/\u$1/;
+$title =~ s/\-//;
+$title =~ s/,/:/;
+$title =~ s/,/–/;
+$title =~ s/\'//g;
+$title =~ s/\(/ \(/;
+$title = translate(get_link_name($title), $lang1);
 $title =~ s/[\$\&]//;
-$expand = 'all';
-if ($popup =~ /\&/) { $popup =~ s /\s/\_/g; }
-cache_prayers();
-print STDERR "\$popup = $popup\n";
+$expand = 'tota';
+if ($popup =~ /\&/) { $popup =~ s/\s/\_/g; }
 $text = resolve_refs($popup, $lang1);
 $t = length($text);
 
@@ -106,44 +129,14 @@ $height = ($t > 300) ? $screenheight - 100 : 3 * $screenheight / 4;
 
 #*** generate HTML
 # prints the requested item from prayers hash as popup
-htmlHead($title, 2);
-print << "PrintTag";
-<BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg"
-  onload="setsize()">
-<FORM>
-<H3 ALIGN=CENTER><FONT COLOR=MAROON><B><I>$title</I></B></FONT></H3>
-<P ALIGN=CENTER><BR>
-<TABLE BORDER=0 WIDTH=90% ALIGN=CENTER CELLPADDING=8 CELLSPACING=$border BGCOLOR='maroon'>
-<TR>
-PrintTag
-$text =~ s/\_/ /g;
-if ($lang1 =~ /Latin/i) { $text = spell_var($text); }
-print "<TD $background WIDTH=50% VALIGN=TOP>" . setfont($blackfont, $text) . "</TD>\n";
-
-if (!$only) {
-  $text = resolve_refs($popup, $lang2);
-
-  #$text = resolve_refs($text, $lang2);
-  $text =~ s/\_/ /g;
-  if ($lang2 =~ /Latin/i) { $text = spell_var($text); }
-  print "<TD $background VALIGN=TOP>" . setfont($blackfont, $text) . "</TD></TR>\n";
-}
-print "</TABLE><BR>\n";
-print "<A HREF=# onclick=\"window.close()\">Close</A>";
-if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n"; }
-if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n"; }
-print "</FORM></BODY></HTML>";
+htmlHead($title, 'setsize()');
+print "<H3 ALIGN=CENTER><FONT COLOR=MAROON><B><I>$title</I></B></FONT></H3>\n";
+my @script = ($popup);
+print_content($lang1, \@script, $lang2, \@script);
+print "<P ALIGN=CENTER><A HREF=# onclick=\"window.close()\">Close</A></P>";
+htmlEnd();
 
 #*** javascript functions
 sub horasjs {
-  print << "PrintTag";
-
-<SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>
-
-function setsize() {
-  window.resizeTo($width, $height);
-}
-
-</SCRIPT>
-PrintTag
+  "function setsize() { window.resizeTo($width, $height); }";
 }

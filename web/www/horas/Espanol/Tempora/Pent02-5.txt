@@ -1,16 +1,5 @@
-[Rank]
-Sanctissimi Cordis Domini Nostri Jesu Christi;;Duplex I classis cum Octava privilegiata III ordinis;;6
-
-[Rank1960]
-Sanctissimi Cordis Domini Nostri Jesu Christi;;Duplex I classis;;6
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Heart
-Prima=53
-Festum Domini
+[Officium]
+Sacratissimi Cordis Domini Nostri Jesu Christi
 
 [Ant Vespera]
 Somete, Señor, * a tus enemigos con tu yugo ligero.;;109
@@ -18,11 +7,6 @@ El Señor, * es piadoso y clemente, el da alimento a sus fieles.;;110
 En las tinieblas * brilla una luz para los justos: el Señor clemente y compasivo.;;111
 ¿Cómo pagaré * al Señor todo el bien me ha hecho?;;115
 Del Señor * viene la misericordia y la redención copiosa.;;129
-
-[Capitulum Vespera]
-!Ef 3:8-9
-v. Hermanos: A mí, el más insignificante del pueblo santo, se me ha dado esta gracia: anunciar a los gentiles la riqueza insondable que es Cristo, e iluminar la realización del misterio, escondido desde el principio de los siglos en Dios, creador de todo.
-$Deo gratias
 
 [Hymnus Vespera]
 v. ¡Oh, cómo la soberbia y crueldad 
@@ -67,6 +51,17 @@ He venido * a traer fuego a la tierra, y ¿qué quiero sino que se abrase?
 ¡Oh Dios, que en el corazón de tu Hijo, herido por nuestros pecados, has depositado infinitos tesoros de caridad!; te pedimos que al rendirle el homenaje de nuestro amor, le ofrezcamos una cumplida reparación.
 $Per eumdem
 
+[Octava 1]
+!Conmemoración de la Octava del Stmo. Corazón de N.S.J.C.
+Ant. He venido * a traer fuego a la tierra, y ¿qué quiero sino que se abrase?
+_
+V. Tomad mi yugo sobre vosotros, y aprended de mí. 
+R. Que soy manso y humilde de corazón. 
+_
+$Oremus
+¡Oh Dios, que en el corazón de tu Hijo, herido por nuestros pecados, has depositado infinitos tesoros de caridad!; te pedimos que al rendirle el homenaje de nuestro amor, le ofrezcamos una cumplida reparación.
+$Per eumdem
+
 [Invit]
 Al Corazón de Jesús herido por nuestro amor * Venid, adorémosle.
 
@@ -106,16 +101,18 @@ Amén.
 Los pensamientos * de su Corazón se extienden de generación en generación.;;32
 En ti * se halla la fuente de la vida; con el torrente de tus delicias nos saciarás, Señor.;;35
 El hombre * con quien vivía yo en dulce paz, y que comía de mi pan, ha urdido contra mí una gran traición.;;40
-V. Tomad mi yugo sobre vosotros, y aprended de mí.
-R. Porque soy manso y humilde de Corazón.
 Nuestro Dios, * Rey de toda la tierra, reinará sobre las naciones.;;46
 Cuando más angustiado * se hallaba mi corazón, Tú me elevaste sobre la piedra.;;60
 A proporción * de los muchos dolores que atormentaron mi corazón, tus consuelos llenaron de alegría mi alma.;;93
-V. Yo dije: Señor, compadécete de mí.  
-R. Sana mi alma, porque pequé contra ti.
 Los que amáis al Señor, * celebrad la memoria de su santidad.;;96
 Han visto * todos los confines de la tierra la salvación realizada por nuestro Dios.;;97
 Te alabaré * en medio de los pueblos, porque tu misericordia es más grande que los cielos.;;107
+
+[Nocturn 2 Versum]
+V. Yo dije: Señor, compadécete de mí.  
+R. Sana mi alma, porque pequé contra ti.
+
+[Nocturn 3 Versum]
 V. Hizo un memorial de sus maravillas el misericordioso Señor.
 R. Y dio un manjar a los que le temen.
 
@@ -124,7 +121,7 @@ Del Profeta Jeremías
 !Jer 24:5-7
 5 Así dice Yahvé, Dios de Israel: Como a esos higos buenos, así miraré a los cautivos de Judá, que para su bien he arrojado de este lugar a la tierra de los caldeos. 
 6 Pondré sobre ellos mis ojos para bien, y los haré volver a esta tierra, los edificaré y no los destruiré, los plantaré y no los arrancaré, 
-7 y les daré un corazón para que reconozcan que Yo soy Yahvé, y ellos serán mi pueblo y Yo seré su Dios, pues se convertirán a mí de todo corazón. 
+7 y les daré un corazón para que reconozcan que Yo soy Yahvé, y ellos serán mi pueblo y Yo seré su Dios, pues se convertirán a mí de todo corazón.
 
 [Responsory1]
 R. Estableceré con ellos una eterna alianza, y no cesaré de hacerles bien, e infundiré mi temor en su corazón, 
@@ -139,7 +136,7 @@ R. Para que no se aparten de mí.
 21 y los multiplicaré, y no serán disminuidos; los engrandeceré, y no serán empequeñecidos. Y su jefe saldrá de ella misma, de en medio de ella saldrá su soberano, y yo le haré acercarse y se allegará a mí, pues ¿quién, si no, intentaría acercarse a mí? Oráculo de Yahvé.  
 22 Y vosotros seréis mi pueblo, y Yo seré vuestro Dios. 
 23 He aquí que el huracán de la ira divina se desencadena y una tempestad se desata y descargará sobre la cabeza de los malvados. 
-24 No volverá atrás la cólera de Yahvé hasta ejecutar y cumplir los designios de su corazón. Vosotros los conoceréis al fin de los tiempos. 
+24 No volverá atrás la cólera de Yahvé hasta ejecutar y cumplir los designios de su corazón. Vosotros los conoceréis al fin de los tiempos.
 
 [Responsory2]
 R. En verdad que si me hubiese llenado de maldiciones un enemigo mío, lo habría sufrido con paciencia: 
@@ -154,7 +151,7 @@ R. Mas tú, ¡oh hombre, que aparentabas ser otro yo, y que conmigo tomabas dulc
 3 Desde lejos se le hizo ver Yahvé. Con amor eterno te amé, por eso te he mantenido mi favor. 
 31 He aquí que vienen días -oráculo de Yahvé- en que Yo haré alianza con la casa de Israel y la casa de Judá, 
 21 no como la alianza que hice con sus padres cuando, tornándolos de la mano, los saqué de la tierra de Egipto, pues ellos quebrantaron mi alianza y Yo los rechacé -oráculo de Yahvé-.  
-33 Porque ésta será la alianza que Yo haré con la casa de Israel después de aquellos días, oráculo de Yahvé: Yo pondré mi ley en su interior y la escribiré en su corazón, y seré su Dios, y ellos serán mi pueblo. 
+33 Porque ésta será la alianza que Yo haré con la casa de Israel después de aquellos días, oráculo de Yahvé: Yo pondré mi ley en su interior y la escribiré en su corazón, y seré su Dios, y ellos serán mi pueblo.
 
 [Responsory3]
 R. Cuando estábamos muertos por los pecados, Dios nos dio vida en Cristo 
@@ -200,7 +197,7 @@ En aquel tiempo: Los judíos, como era día de Parasceve, para que los cuerpos n
 _
 Homilía de San Buenaventura, Obispo. 
 !Libro del árbol de la vida, núm. 30.
-Para que del costado de Jesucristo, dormido en la cruz, se formara la Iglesia, y se cumpliesen las palabras de la Escritura: “Reconocerán a quien traspasaron", dispuso Dios que uno de los soldados abriera con su lanza aquel pecho sacratísimo, de modo que, al brotar de allí sangre y agua, se derramara el precio de nuestra salvación; el cual, procediendo de lo más profundo del Corazón divino como de una fuente, diese a los sacramentos de la Iglesia la virtud de comunicar la vida de la gracia, y fuera para los que ya viven en Cristo el manantial de agua viva que salta hasta la vida eterna. Levántate, pues, oh alma amiga de Jesucristo; no dejes de estar alerta; aplica ahí tus labios para sorber las aguas de la fuente del Salvador.
+Para que del costado de Jesucristo, dormido en la cruz, se formara la Iglesia, y se cumpliesen las palabras de la Escritura: “Reconocerán a quien traspasaron”, dispuso Dios que uno de los soldados abriera con su lanza aquel pecho sacratísimo, de modo que, al brotar de allí sangre y agua, se derramara el precio de nuestra salvación; el cual, procediendo de lo más profundo del Corazón divino como de una fuente, diese a los sacramentos de la Iglesia la virtud de comunicar la vida de la gracia, y fuera para los que ya viven en Cristo el manantial de agua viva que salta hasta la vida eterna. Levántate, pues, oh alma amiga de Jesucristo; no dejes de estar alerta; aplica ahí tus labios para sorber las aguas de la fuente del Salvador.
 
 [Responsory7]
 R. Cuando Yo seré levantado en alto sobre la tierra, 
@@ -232,7 +229,9 @@ Venid a mí * los fatigados y agobiados, que yo os aliviaré.
 Hijo, * dame tu corazón, y tus ojos guarden mis caminos.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Ef 3:8-9
+v. Hermanos: A mí, el más insignificante del pueblo santo, se me ha dado esta gracia: anunciar a los gentiles la riqueza insondable que es Cristo, e iluminar la realización del misterio, escondido desde el principio de los siglos en Dios, creador de todo.
+$Deo gratias
 
 [Hymnus Laudes]
 v. ¡Oh Corazón, arca que contiene la ley, 
@@ -273,37 +272,43 @@ R. De las fuentes del Salvador.
 [Ant 2]
 Esto ocurrió * para que se cumpliera la Escritura, que dice: Mirarán al que atravesaron.
 
+[Octava 2]
+!Conmemoración de la Octava del Stmo. Corazón de N.S.J.C.
+Ant. Ocurrieron estas cosas * para que se cumpliesen las palabras de la Escritura: “Reconocerán a quien traspasaron”.
+_
+V. Sacaréis agua con alegría.
+R. De las fuentes del Salvador.
+_
+$Oremus
+¡Oh Dios, que en el corazón de tu Hijo, herido por nuestros pecados, has depositado infinitos tesoros de caridad!; te pedimos que al rendirle el homenaje de nuestro amor, le ofrezcamos una cumplida reparación.
+$Per eumdem
+
 [Lectio Prima]
 !Ef 3:17-19
 v. Cristo habite por la fe en vuestros corazones; que el amor sea vuestra raíz y vuestro cimiento; así, con todo el pueblo de Dios, lograréis abarcar lo ancho, lo largo, lo alto y lo profundo, comprendiendo lo que trasciende toda ideología: el amor de Cristo. Así llegaréis avuestra plenitud, según la plenitud total de Dios.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Tomad mi yugo sobre vosotros, * Y aprended de mí. 
 R. Tomad mi yugo sobre vosotros, * Y aprended de mí. 
 V. Que soy manso y humilde de corazón. 
 R. Y aprended de mí. 
 &Gloria
 R. Tomad mi yugo sobre vosotros, * Y aprended de mí. 
-_
-V. Yo dije: Señor, ten misericordia.
-R. Sáname, porque he pecado contra ti.
 
 [Capitulum Sexta]
 !Ef 3:14-17
 v. Por eso doblo las rodillas ante el Padre, de quien toma nombre toda familia en la tierra y en el cielo, pidiéndole que, de los tesoros de su gloria, os conceda por medio de su Espíritu robusteceros en lo profundo de vuestro ser: que Cristo habite por la fe en vuestros corazones.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Yo dije: Señor, * ten misericordia.
 R. Yo dije: Señor, * ten misericordia.
 V. Sáname, porque he pecado contra ti. 
 R. Ten misericordia. 
 &Gloria
 R. Yo dije: Señor, * ten misericordia.
-_
+
+[Versum Sexta]
 V. El Señor misericordioso ha hecho maravillas memorables. 
 R. Y da alimento a sus fieles.
 
@@ -312,16 +317,13 @@ R. Y da alimento a sus fieles.
 v. Cristo habite por la fe en vuestros corazones; que el amor sea vuestra raíz y vuestro cimiento; así, con todo el pueblo de Dios, lograréis abarcar lo ancho, lo largo, lo alto y lo profundo, comprendiendo lo que trasciende toda ideología: el amor de Cristo. Así llegaréis avuestra plenitud, según la plenitud total de Dios.
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Ha hecho maravillas memorables * El Señor misericordioso. 
 R. Ha hecho maravillas memorables * El Señor misericordioso. 
 V. Da alimento a sus fieles. 
 R. El Señor misericordioso.
 &Gloria
 R. Ha hecho maravillas memorables * El Señor misericordioso. 
-_
-V. Sacaréis agua con alegría.
-R. De las fuentes del Salvador.
 
 [Ant Vespera 3]
 Uno de los soldados, * con la lanza, le traspasó el costado y al punto salió sangre y agua.;;109
@@ -330,38 +332,12 @@ Con amor eterno * nos ha amado Dios. Por eso, al ser elevado sobre la tierra nos
 Venid a mí * los fatigados y agobiados, que Yo os aliviaré.;;127
 Hijo, * dame tu corazón, y tus ojos guarden mis caminos.;;147
 
-[Versum 3]
-V. Sacaréis agua con alegría.
-R. De las fuentes del Salvador.
-
 [Ant 3]
 Al llegar a Jesús, * como vieron que ya había muerto, no le rompieron las piernas, sino que uno de los soldados, con la lanza, le traspasó el costado y al punto salió sangre y agua.
 
-[Oratio 3]
+[Oratio3]
 ¡Oh Dios, protector de los que en ti esperan: sin ti nada es fuerte ni santo! Aumenta los signos de tu misericordia sobre nosotros, para que, bajo tu dirección, caminemos de tal modo entre los bienes de la tierra, que no perdamos los del cielo.
 $Per Dominum
-
-[Octava 1]
-!Conmemoración de la Octava del Stmo. Corazón de N.S.J.C.
-Ant. He venido * a traer fuego a la tierra, y ¿qué quiero sino que se abrase?
-_
-V. Tomad mi yugo sobre vosotros, y aprended de mí. 
-R. Que soy manso y humilde de corazón. 
-_
-$Oremus
-¡Oh Dios, que en el corazón de tu Hijo, herido por nuestros pecados, has depositado infinitos tesoros de caridad!; te pedimos que al rendirle el homenaje de nuestro amor, le ofrezcamos una cumplida reparación.
-$Per eumdem
-
-[Octava 2]
-!Conmemoración de la Octava del Stmo. Corazón de N.S.J.C.
-Ant. Ocurrieron estas cosas * para que se cumpliesen las palabras de la Escritura: “Reconocerán a quien traspasaron".
-_
-V. Sacaréis agua con alegría.
-R. De las fuentes del Salvador.
-_
-$Oremus
-¡Oh Dios, que en el corazón de tu Hijo, herido por nuestros pecados, has depositado infinitos tesoros de caridad!; te pedimos que al rendirle el homenaje de nuestro amor, le ofrezcamos una cumplida reparación.
-$Per eumdem
 
 [Octava 3]
 !Conmemoración de la Octava del Stmo. Corazón de N.S.J.C.

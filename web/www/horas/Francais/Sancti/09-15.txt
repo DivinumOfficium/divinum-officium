@@ -1,17 +1,8 @@
 [Rank]
-Septem Dolorum Beatæ Mariæ Virginis;;Duplex 2nd class;;5.1;;ex C11
+Les sept douleurs de la Bienheureuse Vierge Marie;;Duplex 2nd class;;5.1;;ex C11
 
-[Rank1960]
-Septem Dolorum Beatæ Mariæ Virginis;;Duplex 2nd class;;5;;ex C11
-
-[RankNewcal]
-Septem Dolorum Beatæ Mariæ Virginis;;Duplex;;3;;ex C11
-
-[Rule]
-ex C11 ;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
+[Rank] (rubrica 196)
+Les sept douleurs de la Bienheureuse Vierge Marie;;Duplex 2nd class;;5;;ex C11
 
 [Ant Vespera]
 Où s’en est-il allé, * votre bien-aimé, ô la plus belle des femmes ! De quel côté est-il parti, votre bien-aimé et nous le chercherons avec vous.;;109
@@ -19,11 +10,6 @@ Retirez-vous de moi, * je pleurerai amèrement, ne cherchez pas à me consoler.;
 Il n’a plus ni beauté, * ni décor ; nous l’avons vu, il n’était pas à regarder.;;121
 De la plante des pieds, * au sommet de la tête, il n’y a en lui plus rien de sain.;;126
 Soutenez-moi avec des fleurs, * fortifiez-moi avec des fruits ; car je languis d’amour.;;147
-
-[Capitulum Vespera]
-!Lam 2:13
-v. A qui te comparer ? Ou bien à qui t’assimiler, fille de Jérusalem ? A qui t’égaler pour te consoler, vierge fille de Sion ? Grande est comme la mer, la douleur qui te broie.
-$Deo gratias
 
 [Hymnus Vespera]
 v. Retirez-vous du ciel, astre des nuits ;
@@ -64,8 +50,9 @@ R. Vous qui êtes restée debout près de la Croix de Jésus.
 [Ant 1]
 Ne prenez pas garde * à mon teint basané ; c’est le soleil qui m’a brûlée ; les fils de ma mère m’ont persécutée.
 
-[Doxology]
-@Tempora/Quad5-5
+[Oratio]
+O Dieu, dans la passion Duquel, suivant la prophétie de Siméon, un glaive de douleur a percé le cœur très doux de la glorieuse Vierge Marie, Votre Mère, faites, dans Votre miséricorde, que célébrant avec respect le souvenir de ses douleurs, nous recueillions les heureux fruits de Votre passion.
+$Qui vivis
 
 [Invit]
 Tenons-nous près de la croix, avec la Mère de Jésus, Marie * Dont un glaive de douleur a transpercé l’âme.
@@ -110,16 +97,18 @@ Ainsi soit-il.
 Ils se sont multipliés, * mes ennemis ; nombreux sont ceux qui se dressent contre moi.;;3
 Ils ont préparé * leurs flèches, dans le carquois, pour tirer, dans l’ombre, sur les cœurs droits.;;10
 Elle s’en est allée, * dans la douleur, ma vie, et mes années, dans les soupirs.;;30
-V. Reine des Martyrs, priez pour nous.
-R. Vous qui vous teniez debout près de la croix de Jésus.
 Il est devenu, mon cœur, * comme une cire qui se liquéfie dans mes entrailles.;;21
 O Dieu, je vous dit ma vie ; * Vous avez mis mes larmes devant Vous.;;55
 Elles m’ont été, * mes larmes, pain de jour et de nuit.;;41
-V. Bouquet de myrrhe est mon bien-aimé pour moi.
-R. Entre mes seins, il reposera.
 Ils ont tendu leur arc, * source d’amertume, pour tirer, dans l’ombre, sur l’innocent.;;63
 Mon âme * est profondément troublée, mais vous, Seigneur, jusques à quand ?;;6
 Dieu * est le secours dans les tribulations qui nous ont accablés.;;45
+
+[Nocturn 2 Versum]
+V. Bouquet de myrrhe est mon bien-aimé.
+R. Entre mes seins, il demeurera.
+
+[Nocturn 3 Versum]
 V. C’est par vous que nous puiserons le salut, ô Vierge Marie.
 R. Aux blessures du Christ.
 
@@ -156,26 +145,17 @@ R. Voilà que votre père et moi,
 &Gloria
 R. Fort affligés, nous vous cherchions.
 
-[Lectio4]
-@Tempora/Quad5-5
-
 [Responsory4]
 R. Jésus portant sa croix,
 * Une troupe de femmes le suivaient, pleurant et se la mentant sur lui.
 V. Filles de Jérusalem, pleurez sur vous-mêmes et sur vos enfants.
 R. Une troupe de femmes le suivaient, pleurant et se la mentant sur lui.
 
-[Lectio5]
-@Tempora/Quad5-5
-
 [Responsory5]
 R. Lorsqu’ils furent arrivés au lieu qui est appelé Calvaire, ils le crucifièrent ;
 * Près de la croix de Jésus, sa Mère se tenait debout.
 V. Alors un glaive de douleur transperça son âme bienheureuse.
 R. Près de la croix de Jésus, sa Mère se tenait debout.
-
-[Lectio6]
-@Tempora/Quad5-5
 
 [Responsory6]
 R. Joseph d’Arimathie
@@ -191,7 +171,7 @@ Lecture du saint Évangile selon saint Jean.
 En ce temps-là : Étaient debout près de la croix de Jésus, sa mère, et la sœur de sa mère, Marie, femme de Cléophas, et Marie-Madeleine. Et le reste.
 _
 Homélie de saint Ambroise, Évêque.
-!De Instit. Virg. cap. 7
+!De la formation des Vierges, chap. 7
 La Mère de Jésus était debout près de la croix ; et quand les hommes s’enfuyaient, elle restait là, intrépide. Voyez si la Mère de Jésus a pu devenir timide, n’ayant point changé de sentiments ? Ses yeux pleins de tendresse contemplaient les blessures de son Fils, qu’elle savait être la rédemption de tous. Elle n’était pas indigne d’assister à ce spectacle, cette Mère qui n’aurait pas craint pour sa propre vie. Le Fils était suspendu en croix, la Mère s’offrait aux bourreaux.
 
 [Responsory7]
@@ -201,7 +181,7 @@ V. Prêtez attention et voyez s’il est une douleur comme ma douleur.
 R. Quand Joseph enveloppa votre Fils du suaire et le déposa dans le sépulcre ?
 
 [Lectio8]
-!Epist. 25 ad Ecclésiam Vercellensem, prope finem
+!Lettre 25 à l'Eglise de Vercelles, vers la fin.
 En face de la croix de son Fils, Marie, la Mère du Seigneur, se tenait debout. De tous les Évangélistes, saint Jean est le seul à m’apprendre ce détail. Les autres nous ont raconté comment, durant la passion, la terre avait tremblé, le ciel s’était couvert de nuages, le larron avait obtenu le paradis après l’humble aveu de ses fautes. Mais Jean m’a enseigné ce que je ne trouve dans nul autre : la manière dont le Sauveur crucifié adressa la parole à Marie. Il semble attacher plus d’importance aux pieux devoirs que Jésus, vainqueur des supplices, rendait à sa Mère, qu’à la promesse même du royaume des cieux. Le pardon que reçut le larron doit, il est vrai, exciter notre piété, mais il y a encore une douceur plus abondante à contempler le Christ honorant sa Mère d’une si grande affection.
 
 [Responsory8]
@@ -216,14 +196,10 @@ R. Afin que, dans leur plénitude, vous receviez miséricorde et bénédiction.
 « Voici, dit-il, ton fils ; voici ta mère. » Le Christ, du haut de la croix, faisait son testament ; il partageait entre sa mère et son disciple les devoirs de la piété. Le Seigneur établissait non seulement un testament général1, mais encore un testament dans sa propre famille et, ce testament, Jean le signait en digne témoin d’un tel testateur. Testament excellent, où il s’agit non d’argent, mais de vie éternelle ; testament écrit non avec de l’encre, mais par l’Esprit du Dieu vivant, qui dit : « Ma langue est celle d’un écrivain qui écrit avec rapidité. »
 &teDeum
 
-[Lectio93]
-@Sancti/09-15t:Lectio9
-
-[Ant Laudes]
-@:Ant Vespera :s/;;.*//g
-
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Lam 2:13
+v. A qui te comparer ? Ou bien à qui t’assimiler, fille de Jérusalem ? A qui t’égaler pour te consoler, vierge fille de Sion ? Grande est comme la mer, la douleur qui te broie.
+$Deo gratias
 
 [Hymnus Laudes]
 v. O Dieu dont la clémence est infinie,
@@ -254,35 +230,19 @@ R. Faites-nous nous réjouir dans le royaume des cieux.
 [Ant 2]
 Venez, * montons à la montagne du Seigneur et voyez s’il est douleur comparable à ma douleur.
 
-[Oratio]
-O Dieu, dans la passion Duquel, suivant la prophétie de Siméon, un glaive de douleur a percé le cœur très doux de la glorieuse Vierge Marie, Votre Mère, faites, dans Votre miséricorde, que célébrant avec respect le souvenir de ses douleurs, nous recueillions les heureux fruits de Votre passion.
-$Qui vivis
-
-[Commemoratio]
-!Commémoraison de St Nicomède, Martyr :
-@Commune/C2:Oratio proper
-$Oremus
-v. Montrez-Vous favorable à Votre peuple, Seigneur, afin que, célébrant les mérites si glorieux de Votre bienheureux Martyr Nicomède, il soit toujours aidé de ses prières pour obtenir Vos miséricordes.
-$Per Dominum
-
-[Versum Prima]
-@Tempora/Quad5-5
-
 [Lectio Prima]
 !Lam. 2:18
 v. Verse, comme un torrent, des larmes, jour et nuit ; ne te donne pas de repos et qu’elle ne se taise pas, la pupille de ton œil.
 
-[Capitulum Tertia]
-@:Capitulum Laudes
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. O vous tous * Qui passez par le chemin.
 R. O vous tous * Qui passez par le chemin.
 V. Regardez et voyez s’il est douleur semblable à ma douleur.
 R. Qui passez par le chemin.
 &Gloria
 R. O vous tous * Qui passez par le chemin.
-_
+
+[Versum Tertia]
 V. Ils se sont consumés dans les larmes, mes yeux.
 R. Il est troublé, tout mon intérieur.
 
@@ -291,34 +251,25 @@ R. Il est troublé, tout mon intérieur.
 v. Pleurant, elle a pleuré toute la nuit, et ses larmes sont sur ses joues ; il n’est personne qui la console, parmi tous ceux qui lui sont chers.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Ils se sont consumés * Dans les larmes, mes yeux.
 R. Ils se sont consumés * Dans les larmes, mes yeux.
 V. Il est troublé, tout mon intérieur.
 R. Dans les larmes, mes yeux.
 &Gloria
 R. Ils se sont consumés * Dans les larmes, mes yeux.
-_
-V. Bouquet de myrrhe est mon bien-aimé.
-R. Entre mes seins, il demeurera.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Il est bouquet de myrrhe. * Mon bien-aimé, pour moi.
 R. Il est bouquet de myrrhe. * Mon bien-aimé, pour moi.
 V. Entre mes seins, il demeurera.
 R. Mon bien-aimé, pour moi.
 &Gloria
 R. Il est bouquet de myrrhe. * Mon bien-aimé, pour moi.
-_
+
+[Versum Nona]
 V. Mon âme s’est liquéfiée.
 R. Quand le bien-aimé a parlé.
-
-[Versum 3]
-@:Versum 1
 
 [Ant 3]
 Je suis oppressée de douleur, * mon visage est gonflé de larmes et mes paupières se sont obscurcies.

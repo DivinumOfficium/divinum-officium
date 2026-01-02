@@ -1,19 +1,5 @@
-[Rank]
-II Niedziela po Pięćdziesiątnicy w Oktawie Bożego Ciała;;Semiduplex I classis;;5.9;;ex Tempora/Pent01-4
-
-[Rank1960]
-II Niedziela po Pięćdziesiątnicy;;Semiduplex I classis;;5.9
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Corp
-
-[Capitulum Vespera]
-!1 J 3:13-14
-v. Najmilsi: Nie dziwujcie się, bracia, jeźli was świat nienawidzi. My wiemy, iżeśmy przeniesieni z śmierci do żywota, iż miłujemy bracią.
-$Deo gratias
+[Officium]
+II Niedziela po Pięćdziesiątnicy w Oktawie Bożego Ciała
 
 [Versum 1]
 V. Nakarmił je tłustością pszenicy, alleluja.
@@ -26,16 +12,9 @@ Młodzieniaszek Samuel * służył Panu przed Heli, a słowo Pańskie było drog
 Spraw, prosimy Cię, Panie, abyśmy bojaźń i miłość świętego Imienia Twego zawsze w sercu zachowywali, albowiem nigdy nie przestajesz kierować tymi, których w miłości Twojej utwierdzasz.
 $Per Dominum.
 
-[Commemoratio 1]
+[Commemoratio]
 !Wspominamy Oktawę Bożego Ciała
-Ant. O Święta uczto, na której Chrystus bywa pożywany: pamiątka męki Jego rozpamiętywana: gdzie myśl napełnia się łaską: a przyszłej chwały zadatek nam jest dany, alleluja.
-_
-V. Chleb z nieba dałeś im, alleluja.
-R. Wszelką słodycz mający w sobie, alleluja.
-_
-$Oremus
-Boże, któryś nam w tym cudownym Sakramencie zostawił pamiątkę Męki swojej, prosimy Cię, daj nam tak czcić świętą tajemnicę Ciała i Krwi Twojej, abyśmy skutki odkupienia w duszach naszych zawsze odczuwali.
-$Qui vivis
+@Tempora/Pent01-4:Oratio
 
 [Lectio1]
 Z Pierwszej Księgi Królewskiej
@@ -65,7 +44,10 @@ Onego czasu: Powiedział Jezus faryzeuszom tę przypowieść: „Człowiek pewie
 _
 Homilia świętego Grzegorza, Papieża
 !Homilia 36. na Ewangelię
-Ta jest, najdrożsi bracia, różnica między przyjemnościami ciała i ducha, iż bardzo się pożąda cielesnych przyjemności, gdy się ich nie ma; a gdy się ich chciwie używa, wnet sprawiają niesmak z powodu przesytu. A przeciwnie: duchowe przyjemności sprawiają niesmak, póki się ich nie ma; pragnie się zaś ich, gdy się je posiada; spożywający o tyle bardziej ich pragnie, o ile więcej ich używa. Co do pierwszych, to podobają się, póki się ich pragnie. Stają się zaś niemiłe, gdy się ich zaznaje. Co się zaś drugich tyczy, to słabo się ich pragnie, póki z doświadczenia się nie pozna, jak bardzo one są miłe. Pożądanie pierwszych rodzi nasycenie, a nasycenie wywołuje niesmak; w drugich zaś za pożądaniem idzie nasycenie, a to sprawia, iż się jeszcze bardziej pragnie nasycenia.
+Przysmaki ciała zwykło różnić od przysmaków serca to, że te cielesne, gdy się ich nie ma, silnie rozbudzają pragnienie siebie, natomiast kiedy posiadłszy zajada się je — prędko, przez nasycenie, doprowadzają spożywającego do uczucia przesytu. I przeciwnie przysmaki duchowe — kiedy się ich nie ma, sprawiają uczucie przesytu, gdy zaś się je posiądzie — budzą pragnienie; i o tyle bardziej czynią spożywającego złaknionym, o ile bardziej są przez łaknącego spożywane. W tamtych upodobanie daje pociąg — zaś doświadczenie przynosi zniechęcenie; w tych pociąg jest marny, więcej upodobania daje doświadczenie. W tamtych pociąg rodzi sytość, sytość zaś uczucie przesytu — w tych pociąg wydaje z siebie sytość, sytość zaś pociąg.
+
+[Lectio8]
+Duchowe bowiem przysmaki, kiedy sycą, zwiększają w umyśle pragnienie — bo im bardziej przyswaja się ich smak, tym bardziej poznaje się to, co coraz chciwiej będzie się kochać. I dlatego nie posiadane, nie mogą być kochane - bo nie ma się pojęcia o ich smaku. Któż bowiem byłby w stanie kochać to, o czym nie ma pojęcia? I dlatego napomina nas Psalmista, mówiąc: Skosztujcie a obaczcie, iż słodki jest Pan (Ps 33, 9). Jakby otwarcie mówił: Nie poznajecie Jego słodkości, jeśli Go wcale nie kosztujecie. Posmakujcie jednak na podniebieniu serca pokarmu życia, byście próbując byli w stanie pokochać jego słodycz. Przysmaki zaś te zagubił człowiek wówczas, kiedy zgrzeszył w raju — wyszedł na zewnątrz, kiedy zamknął usta na pokarm słodyczy wiecznej.
 
 [Responsory8]
 R. Człowiek niektóry sprawił wieczerzę wielką i posłał sługę swego w godzinę wieczerzy, aby powiedział zaproszonym żeby przyszli:
@@ -75,23 +57,21 @@ R. Boć już wszystko gotowe.
 &Gloria
 R. Boć już wszystko gotowe.
 
+[Lectio9]
+Dlatego także my, urodzeni pośród mozołów tej tułaczki, przychodzimy tu już z uczuciem przesytu, nie wiemy też, czego powinniśmy pragnąć — i choroba naszego uczucia przesytu o tyle bardziej się wzmagać, o ile bardziej duch nasz oddala się od spożywania owej słodyczy; i na tyle nie ma on już pociągu do wewnętrznych słodyczy, na ile długo i w oddaleniu się od nich odzwyczajał. Czeźniemy zatem z powodu naszego uczucia przesytu i doznajemy wycieńczenia wskutek długotrwałej choroby niejedzenia. A ponieważ nie chcemy wewnętrznie kosztować przygotowanej słodyczy, kochamy, nędzni, zewnętrznie nasz głód.
+&teDeum
+
+[Capitulum Laudes]
+!1 J 3:13-14
+v. Najmilsi: Nie dziwujcie się, bracia, jeźli was świat nienawidzi. My wiemy, iżeśmy przeniesieni z śmierci do żywota, iż miłujemy bracią.
+$Deo gratias
+
 [Versum 2]
 V. Dał im chleb niebieski, alleluja.
 R. Chleba Anielskiego pożywał człowiek, alleluja.
 
 [Ant 2]
 Człowiek niektóry * sprawił wieczerzę wielką i wezwał wielu: i posłał sługę swego w godzinę wieczerzy, aby powiedział zaproszonym żeby przyszli, boć już wszystko gotowe, alleluja.
-
-[Commemoratio 2]
-!Wspominamy Oktawę Bożego Ciała
-Ant. Jam jest chleb żywy, który z nieba zstąpił: jeśliby kto pożywał tego chleba, żyć będzie na wieki, alleluja.
-_
-V. Uczynił granice twoje pokój, alleluja.
-R. I nasyca cię najwyborniejszem zbożem, alleluja.
-_
-$Oremus
-Boże, któryś nam w tym cudownym Sakramencie zostawił pamiątkę Męki swojej, prosimy Cię, daj nam tak czcić świętą tajemnicę Ciała i Krwi Twojej, abyśmy skutki odkupienia w duszach naszych zawsze odczuwali.
-$Qui vivis
 
 [Lectio Prima]
 !1 J 3:18
@@ -104,14 +84,3 @@ $Deo gratias
 
 [Ant 3]
 Wynijdź rychło * na ulice i uliczki miasta: a ubogich i ułomnych i ślepych i chromych przymuś wnijść, aby był dom mój napełniony, alleluja.
-
-[Commemoratio 3]
-!Wspominamy Oktawę Bożego Ciała
-Ant. O	jakoż słodki jest * Duch Twój, Panie, który chcąc okazać miłość swą dzieciom, zstąpiłeś z nieba, jako chleb najsłodszy, by łaknące napełnić dobrami, a bogacze z niczem puścić.
-_
-V. Chleb z nieba dałeś im, alleluja.
-R. Wszelką słodycz mający w sobie, alleluja.
-_
-$Oremus
-Boże, któryś nam w tym cudownym Sakramencie zostawił pamiątkę Męki swojej, prosimy Cię, daj nam tak czcić świętą tajemnicę Ciała i Krwi Twojej, abyśmy skutki odkupienia w duszach naszych zawsze odczuwali.
-$Qui vivis

@@ -1,17 +1,5 @@
-[Rank]
-Wniebowstąpienie Pańskie;;Duplex I classis cum Octava Privilegiata III;;7
-
-[Rank1960]
-Wniebowstąpienie Pańskie;;Duplex I classis;;7
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Duplex
-9 Lectiones
-Doxology=Asc
-Psalm5 vespera=116
-No Commemoratio
+[Officium]
+Wniebowstąpienie Pańskie
 
 [Ant Vespera]
 Mężowie Galilejscy, * czemu patrzycie w niebo? Ten Jezus, który wzięty jest od was do nieba, tak przyjdzie, alleluja.
@@ -19,11 +7,6 @@ A gdy pilnie patrzyli * za Nim do nieba idącym, rzekli: alleluja.
 Podniósłszy ręce, * błogosławił im, i był niesiony do nieba, alleluja.
 Wysławiajcie Króla nad królami * i pieśń śpiewajcie Bogu, alleluja.
 Gdy patrzyli, * podniesiony jest, a obłok wziął Go do nieba, alleluja.
-
-[Capitulum Vespera]
-!Dz 1:1-2
-v. Pierwsząm mowę uczynił, o Theophile, o wszystkiem, co począł Jezus czynić i uczyć, aż do dnia, którego rozkazawszy Apostołom przez Ducha Świętego, które obrał, wzięt jest.
-$Deo gratias
 
 [Hymnus Vespera]
 {:H-Salutishumanaesator:}v. Dawco ludzkiego odkupienia,
@@ -52,8 +35,8 @@ Sam bądź weselem tych co płaczą,
 Nagrodą słodką ich żywota.
 Amen.
 
-[Versum 1]
-V. Wstąpi Bóg przy okrzykach radosnych, alleluja
+[Versum 1_]
+V. Wstąpił Bóg przy okrzykach radosnych, alleluja.
 R. I Pan przy odgłosie trąb, alleluja.
 
 [Ant 1]
@@ -64,47 +47,47 @@ Daj nam, prosimy Cię, Wszechmogący Boże, abyśmy, którzy w cudowne wniebowst
 $Per eumdem
 
 [Invit]
-Alleluja, Chrystum Pana wstępującego do nieba, * Pójdźmy uwielbiać, alleluja.
+Alleluja, Chrystusa Pana wstępującego do nieba, * Pójdźmy uwielbiać, alleluja.
 
 [Hymnus Matutinum]
 {:H-Aeternarex:}v. Odwieczny Królu najwyższy
-i Odkupicielu wiernych,
-któremu śmierć zgładzona
-przyniosła triumf najwyższej chwały:
+I Odkupicielu wiernych,
+Któremu śmierć zgładzona
+Przyniosła triumf najwyższej chwały:
 _
 Wstępujesz nad biegi gwiazd,
-dokąd Cię wołała władza
-nad wszystkiemi rzeczami,
-nadana z nieba, nie od ludzi.
+Dokąd Cię wołała władza
+Nad wszystkiemi rzeczami,
+Nadana z nieba, nie od ludzi.
 _
 Aby trojaki stworzony
-porządek rzeczy niebieskich,
-ziemskich i podziemnych,
-zginał kolano już poddany.
+Porządek rzeczy niebieskich,
+Ziemskich i podziemnych,
+Zginał kolano już poddany.
 _
 Aniołowie, widząc zmieniony
-los śmiertelników:
-grzeszy ciało, oczyszcza ciało,
-króluje jako Bóg ciało Boże.
+Los śmiertelników:
+Grzeszy ciało, oczyszcza ciało,
+Króluje jako Bóg ciało Boże.
 _
 Bądź sam radością naszą,
-pozostając nagrodą w niebie,
-który kierujesz budową świata,
-przewyższający radości ziemskie.
+Pozostając nagrodą w niebie,
+Który kierujesz budową świata,
+Przewyższający radości ziemskie.
 _
 Dlatego modląc się, prosimy Cię,
-wybacz nam winy wszystkie
-i serca wznieś w górę ku Sobie
-łaską niebieską.
+Wybacz nam winy wszystkie
+I serca wznieś w górę ku Sobie
+Łaską niebieską.
 _
 Abyś, gdy nagle jaśnieć zaczniesz
-na obłoku sędziego,
-oddalił kary zasłużone,
-a oddał nam wieńce utracone.
+Na obłoku sędziego,
+Oddalił kary zasłużone,
+A oddał nam wieńce utracone.
 _
 * Jezu, niech Ci będzie chwała,
-który jako zwycięzca wracasz do
-nieba, z Ojcem i dobroczynnym
+Który jako zwycięzca wracasz do
+Nieba, z Ojcem i dobroczynnym
 Duchem po nieskończone wieki.
 Amen.
 
@@ -112,16 +95,18 @@ Amen.
 Wyniosła się * wielmożność twoja, nad niebiosa Boże, alleluja.;;8
 Pan w kościele * swym świętym, Pan na niebie, alleluja.;;10
 Od kraju nieba * wyjście jego, a nawrót jego aż na kraj jego, alleluja.;;18
-V. Wstąpił Bóg przy okrzykach radosnych, alleluja.
-R. I Pan przy odgłosie trąb, alleluja.
 Podnieś się, Panie, * w mocy twojéj: będziem śpiewać i wysławiać, alleluja.;;20
 Wywyższać cię * będę, Panie, żeś mię przyjął, alleluja.;;29
 Wstąpił Bóg * przy okrzykach radosnych, i Pan przy odgłosie trąb, alleluja.;;46
-V. Wstąpiwszy Chrystus na wysokość, alleluja.
-R. Wiódł więźnie poimane, alleluja.
 Bardzoś wywyższony, * alleluja: nade wszystkie bogi, alleluja.;;96
 Pan na Syonie, * alleluja: wielki i wywyższony, alleluja.;;98
 Pan na niebie, * alleluja: przygotował stolicę swoję, alleluja.;;102
+
+[Nocturn 2 Versum_]
+V. Wstąpiwszy Chrystus na wysokość, alleluja.
+R. Wiódł więźnie poimane, alleluja.
+
+[Nocturn 3 Versum_]
 V. Wstępuję do Ojca mojego i Ojca waszego, alleluja.
 R. Boga mojego i Boga waszego, alleluja.
 
@@ -129,7 +114,7 @@ R. Boga mojego i Boga waszego, alleluja.
 Początek Księgi Dziejów Apostolskich
 !Dz 1:1-5
 1 Pierwsząm mowę uczynił, o Theophile, o wszystkiem, co począł Jezus czynić i uczyć,
-2 Aż do dnia, którego rozkazawszy Apostołom przez Ducha Świętego, które obrał, wzięt jest.
+2 aż do dnia, którego rozkazawszy Apostołom przez Ducha Świętego, które obrał, wzięt jest.
 3 Którym téż siebie samego po swéj męce stawił żywym w rozmaitych dowodziech, przez czterdzieści dni się im ukazując, i mówiąc o królestwie Bożem.
 4 A z nimi jedząc rozkazał im, aby nie odchodzili z Jeruzalem; ale czekali obietnice Ojcowskiéj, którąście (prawi) słyszeli przez usta moje.
 5 Albowiemci Jan chrzcił wodą, a wy będziecie chrzczeni Duchem Świętym po nie wielu tych dni.
@@ -144,13 +129,13 @@ R. I widzieli, jak podniesion jest, alleluja: a obłok wziął go od oczu ich, a
 !Dz 1:6-9
 6 A tak którzy się byli zeszli, pytali go, mówiąc: Panie, zali w tym czasie przywrócisz królestwo Izraelowi?
 7 I rzekł do nich: Nie wasza rzecz jest znać czasy i chwile, które Ojciec w swéj władzy położył.
-8 Ale oweźmiecie moc Ducha Świętego, który przyjdzie na was, i będziecie mi świadkami w Jeruzalem i we wszystkiéj Żydowskiéj ziemi i w Samaryi i aż na kraj ziemie.
+8 Ale weźmiecie moc Ducha Świętego, który przyjdzie na was, i będziecie mi świadkami w Jeruzalem i we wszystkiéj Żydowskiéj ziemi i w Samaryi i aż na kraj ziemie.
 9 A to rzekłszy, gdy oni patrzali, podniesion jest, a obłok wziął go od oczu ich.
 
 [Lectio3]
 !Dz 1:10-14
 10 A gdy pilnie patrzali za nim do nieba idącym, oto dwaj mężowie stanęli przy nich w białem odzieniu,
-11 Którzy téż rzekli: Mężowie Galilejscy, czemu stoicie patrząc w niebo? ten Jezus, który wzięt jest od was do nieba, tak przyjdzie, jakoście go widzieli idącego do nieba.
+11 którzy téż rzekli: Mężowie Galilejscy, czemu stoicie patrząc w niebo? ten Jezus, który wzięt jest od was do nieba, tak przyjdzie, jakoście go widzieli idącego do nieba.
 12 Tedy się wrócili do Jeruzalem od góry, którą zowią Oliwną, która jest blizko Jeruzalem, mając drogę szabbatu.
 13 A gdy weszli, wstąpili do wieczernika, gdzie przebywali Piotr i Jan, Jakób i Andrzéj, Filip i Thomasz, Bartłomiéj i Mattheusz, Jakób Alpheuszów i Szymon Zelotes i Judas Jakóbów.
 14 Ci wszyscy trwali jednomyślnie na modlitwie z niewiastami i z Maryą, matką Jezusową, i z bracią jego.
@@ -178,7 +163,7 @@ Onego czasu: Ukazał się Jezus jedenastu, gdy siedzieli u stołu, i ganił nied
 _
 Homilia świętego Grzegorza, Papieża
 !Homilia 29. na Ewangelię
-To, że uczniowie w Zmartwychwstanie Pana z ociąganiem uwierzyli, nie tyle ich słabość sprawiła, lecz, że tak powiem, nasza przyszła pewność. Im wątpiącym wielu dowodami Zmartwychwstanie zostało udowodnione, ale gdy o tym czytamy, czy ich wątpienie nas nie umacnia? Mniej mi bowiem dała Maria Magdalena, która wcześniej uwierzyła, niż Tomasz, który długo wątpił. On bowiem, wątpiąc, dotknął blizny ran i z naszego serca usunął ranę wątpliwości.~
+To, że uczniowie w Zmartwychwstanie Pana z ociąganiem uwierzyli, nie tyle ich słabość sprawiła, lecz, że tak powiem, nasza przyszła pewność. Im wątpiącym wielu dowodami Zmartwychwstanie zostało udowodnione, ale gdy o tym czytamy, czy ich wątpienie nas nie umacnia? Mniej mi bowiem dała Maria Magdalena, która wcześniej uwierzyła, niż Tomasz, który długo wątpił. On bowiem, wątpiąc, dotknął blizny ran i z naszego serca usunął ranę wątpliwości.
 
 [Responsory7]
 R. Ja prosić będę Ojca i innego Pocieszyciela da wam,
@@ -187,8 +172,7 @@ V. Bo jeżeli nie odejdę, Pocieszyciel nie przyjdzie do was, a jeśli odejdę, 
 R. Aby pozostał z wami na zawsze, Ducha prawdy, alleluja.
 
 [Lectio8]
-Dla tym większego wykazania, iż Zmartwychwstanie Pana było prawdziwe i rzeczywiste, należy zwrócić uwagę na to, co podaje Łukasz: Gdy zasiadł z nimi do stołu, przykazał im, aby nie odchodzili z Jerozolimy. I nieco dalej: W ich oczach wzniósł się w górę i obłok skrył Go przed oczyma ich.~
-Zauważcie słowa, uznajcie tajemnicę. Zasiadł z nimi do stołu i wzniósł się w górę. Posilił się i wstąpił do nieba, aby przez to przyjęcie posiłku okazała się rzeczywistość ciała. Marek zaś wspomina, iż Pan zanim wstąpił do nieba, wyrzucał uczniom twardość serca i niedowiarstwo. Co o tym sądzić należy, jak tylko to, iż Pan wtedy dlatego uczniów skarcił, ciałem ich opuszczając, aby słowa, które, odchodząc wypowiedział, w sercach słuchaczy tym głębiej się wyryły?~
+Dla tym większego wykazania, iż Zmartwychwstanie Pana było prawdziwe i rzeczywiste, należy zwrócić uwagę na to, co podaje Łukasz: Gdy zasiadł z nimi do stołu, przykazał im, aby nie odchodzili z Jerozolimy. I nieco dalej: W ich oczach wzniósł się w górę i obłok skrył Go przed oczyma ich. Zauważcie słowa, uznajcie tajemnicę. Zasiadł z nimi do stołu i wzniósł się w górę. Posilił się i wstąpił do nieba, aby przez to przyjęcie posiłku okazała się rzeczywistość ciała. Marek zaś wspomina, iż Pan zanim wstąpił do nieba, wyrzucał uczniom twardość serca i niedowiarstwo. Co o tym sądzić należy, jak tylko to, iż Pan wtedy dlatego uczniów skarcił, ciałem ich opuszczając, aby słowa, które, odchodząc wypowiedział, w sercach słuchaczy tym głębiej się wyryły?~
 
 [Responsory8]
 R. Chmury czynisz Twoim rydwanem, o Panie,
@@ -199,9 +183,13 @@ R. Przechadzasz się na skrzydłach wiatru, alleluja.
 R. Przechadzasz się na skrzydłach wiatru, alleluja.
 
 [Lectio9]
-Posłuchajmy, co po skarceniu ich zatwardziałości, upominając ich, powiedział: Idąc na cały świat, głoście Ewangelię wszelkiemu stworzeniu. Czy, moi bracia, Ewangelia miała być głoszona czy to rzeczom materialnym, czy też nierozumnym zwierzętom, iż o niej powiedział: głoście wszelkiemu stworzeniu? Jednakże w imieniu wszelkiego stworzenia jest człowiek wyrażony.~
-Człowiek ma w sobie coś z każdego stworzenia. Ma bowiem wspólne istnienie z kamieniami, życie z drzewami, czucie ze zwierzętami, rozum z Aniołami. Skoro więc człowiek z każdym stworzeniem ma coś wspólnego, to pod pewnym względem człowiek jest wszelkim stworzeniem. Wszelkiemu więc stworzeniu głoszona jest Ewangelia, jeśli jest głoszona tylko człowiekowi.
+Posłuchajmy, co po skarceniu ich zatwardziałości, upominając ich, powiedział: Idąc na cały świat, głoście Ewangelię wszelkiemu stworzeniu. Czy, moi bracia, Ewangelia miała być głoszona czy to rzeczom materialnym, czy też nierozumnym zwierzętom, iż o niej powiedział: głoście wszelkiemu stworzeniu? Jednakże w imieniu wszelkiego stworzenia jest człowiek wyrażony. Człowiek ma w sobie coś z każdego stworzenia. Ma bowiem wspólne istnienie z kamieniami, życie z drzewami, czucie ze zwierzętami, rozum z Aniołami. Skoro więc człowiek z każdym stworzeniem ma coś wspólnego, to pod pewnym względem człowiek jest wszelkim stworzeniem. Wszelkiemu więc stworzeniu głoszona jest Ewangelia, jeśli jest głoszona tylko człowiekowi.
 &teDeum
+
+[Capitulum Laudes]
+!Dz 1:1-2
+v. Pierwsząm mowę uczynił, o Theophile, o wszystkiem, co począł Jezus czynić i uczyć, aż do dnia, którego rozkazawszy Apostołom przez Ducha Świętego, które obrał, wzięt jest.
+$Deo gratias
 
 [Versum 2]
 V. Pan na niebie, alleluja.
@@ -223,48 +211,34 @@ v. Módlmy się.
 !Dz 1:11
 v. Mężowie Galilejscy, czemu stoicie patrząc w niebo? Ten Jezus, który wzięt jest od was do nieba, tak przyjdzie, jakoście go widzieli idącego do nieba.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Wstąpił Bóg przy okrzykach radosnych, * Alleluja, alleluja.
 R. Wstąpił Bóg przy okrzykach radosnych, * Alleluja, alleluja.
 V. I Pan przy odgłosie trąb.
 R. Alleluja, alleluja.
 &Gloria
 R. Wstąpił Bóg przy okrzykach radosnych, * Alleluja, alleluja.
-_
-V. Wstąpiwszy Chrystus na wysokość, alleluja.
-R. Wiódł więźnie poimane, alleluja.
 
 [Capitulum Sexta]
 !Dz 1:4-5
 v. A z nimi jedząc rozkazał im, aby nie odchodzili z Jeruzalem; ale czekali obietnice Ojcowskiéj, którąście (prawi) słyszeli przez usta moje. Albowiemci Jan chrzcił wodą, a wy będziecie chrzczeni Duchem Świętym po nie wielu tych dni.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Wstąpiwszy Chrystus na wysokość, * Alleluja, alleluja.
 R. Wstąpiwszy Chrystus na wysokość, * Alleluja, alleluja.
 V. Wiódł więźnie poimane.
 R. Alleluja, alleluja.
 &Gloria
 R. Wstąpiwszy Chrystus na wysokość, * Alleluja, alleluja.
-_
-V. Wstępuję do Ojca mojego i Ojca waszego, alleluja.
-R. Boga mojego i Boga waszego, alleluja.
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Wstępuję do Ojca mojego i Ojca waszego, * Alleluja, alleluja.
 R. Wstępuję do Ojca mojego i Ojca waszego, * Alleluja, alleluja.
 V. Boga mojego i Boga waszego.
 R. Alleluja, alleluja.
 &Gloria
 R. Wstępuję do Ojca mojego i Ojca waszego, * Alleluja, alleluja.
-_
-V. Pan na niebie, alleluja.
-R. Przygotował stolicę swoję, alleluja.
-
-[Versum 3]
-@:Versum 1
-(sed rubrica tridentina)
-@:Versum 2
 
 [Ant 3]
 O	Królu chwały, * Panie zastępów, który dziś jako Zwycięzca na najwyższe niebiosa wstąpiłeś, nie zostawiaj nas sierotami, lecz ześlij Ducha obiecanego nam przez Ojca, alleluja.

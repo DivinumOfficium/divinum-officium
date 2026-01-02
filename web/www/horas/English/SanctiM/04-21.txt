@@ -1,0 +1,9 @@
+[Lectio6]
+@Sancti/04-21:Lectio5:s/ After .*//
+
+[Lectio7]
+@Sancti/04-21:Lectio5:s/.* (?=After)// s/$/~/
+@Sancti/04-21:Lectio6:s/ But .*//
+
+[Lectio8]
+@Sancti/04-21:Lectio6:s/.* (?=But)//

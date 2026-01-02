@@ -1,17 +1,10 @@
-[Rank]
-Sts Philippe et Jacques;;Duplex II classis;;5.1;;ex C1
-
-[Rule]
-ex C1;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-StJamesRule=Jas
+[Officium]
+Sts Philippe et Jacques
 
 [Ant Vespera]
 Seigneur, * montrez-nous Votre Père et il nous suffit, alléluia.;;109
 Philíppe, * qui Me voit, voit aussi Mon Père, alléluia.;;110
-Il y a si longtemps * que Je suis avec vous et vous ne Me connaissez pas ? Philippe, qui Me voit, voit, aussi Mon Père, alléluia.;;111
+Il y a si longtemps * que Je suis avec vous et vous ne Me connaissez pas ? Philippe, qui Me voit, voit aussi Mon Père, alléluia.;;111
 Si vous M’aviez connu, * vous auriez donc connu Mon Père ; mais bientôt vous Le connaîtrez et vous L’avez déjà vu, alléluia, alléluia, alléluia.;;112
 Si vous M’aimez, * gardez Mes commandements, alléluia, alléluia, alléluia.;;116
 
@@ -22,20 +15,11 @@ Qu’il ne se trouble point * votre cœur et qu’il ne craigne pas : vous croye
 Dieu qui nous réjouissez en la solennité annuelle de Vos Apôtres Philippe et Jacques ; faites, nous Vous en prions, que nous soyons instruits aux exemples de ceux dont les mérites nous remplissent d’allégresse.
 $Per Dominum
 
-[Lectio1]
-@Tempora/Pasc4-0:Lectio1
-
-[Lectio2]
-@Tempora/Pasc4-0:Lectio2
-
-[Lectio3]
-@Tempora/Pasc4-0:Lectio3
-
 [Lectio4]
-Philippe de Bethsaïde est l’un des douze Apôtres qui furent d’abord appelés par le Christ ; c’est lui qui apprit à Nathanael que le Messie promis dans la loi était venu, et qui le conduisit au Seigneur. Qu’il ait eu avec le Christ des relations familières, les faits le prouvent clairement : quand les Gentils désirent voir le Sauveur, c’est à Philippe qu’ils s’adressent ; et quand le Seigneur veut, dans le désert, nourrir une foule, il dit à Philippe : « Où achèterons-nous des pains pour leur donner à manger? C ’est lui qui, après avoir reçu le Saint-Esprit et, sous son impulsion, évangélisa et convertit à la foi chrétienne presque toute la nation de Scythie qui lui était échue en partage. Ensuite, étant venu à Hiérapolis de Phrygie, il fut crucifié et tué à coups de pierres pour le nom du Christ, aux Calendes de Mai. Son corps y fut enseveli par les chrétiens, et ensuite transféré à Rome, dans la Basilique des Douze Apôtres, où il fut déposé avec le corps du Bienheureux Apôtre Jacques.
+Philippe de Bethsaïde est l’un des douze Apôtres qui furent d’abord appelés par le Christ ; c’est lui qui apprit à Nathanael que le Messie promis dans la loi était venu, et qui le conduisit au Seigneur. Qu’il ait eu avec le Christ des relations familières, les faits le prouvent clairement : quand les Gentils désirent voir le Sauveur, c’est à Philippe qu’ils s’adressent ; et quand le Seigneur veut, dans le désert, nourrir une foule, il dit à Philippe : « Où achèterons-nous des pains pour leur donner à manger ? C ’est lui qui, après avoir reçu le Saint-Esprit et, sous son impulsion, évangélisa et convertit à la foi chrétienne presque toute la nation de Scythie qui lui était échue en partage. Ensuite, étant venu à Hiérapolis de Phrygie, il fut crucifié et tué à coups de pierres pour le nom du Christ, aux Calendes de Mai. Son corps y fut enseveli par les chrétiens, et ensuite transféré à Rome, dans la Basilique des Douze Apôtres, où il fut déposé avec le corps du Bienheureux Apôtre Jacques.
 
 [Lectio5]
-JACQUES, frère du Seigneur, surnommé le Juste, s’abstint dès sa jeunesse, de vin de raisin, de vin de dattes, et de viande. Il ne coupa jamais ses cheveux, et n’usa ni de parfums, ni de bains. Lui seul avait le droit d’entrer dans le Saint des Saints. Il portait des vêtements de lin et il était si assidu à la prière, que ses genoux étaient aussi durs que de la peau de chameau. Après l’Ascension du Christ, les Apôtres le nommèrent évêque de Jérusalem; c’est à lui que le Prince des Apôtres envoya un messager annoncer qu’un ange l’avait délivré de prison. Comme une discussion s’était élevée au Concile de Jérusalem, au sujet de la loi et de la circoncision, Jacques suivit l’avis de Pierre et fit aux frères un discours dans lequel il prouva la vocation des Gentils, et dit qu’il fallait écrire aux frères absents de ne pas imposer aux Gentils le joug de la loi mosaïque. C ’est de lui que parle l’Apôtre dans l’épître aux Galates : Je ne vis pas d’autre Apôtre que Jacques, le frère du Seigneur.
+Jacques, frère du Seigneur, surnommé le Juste, s’abstint dès sa jeunesse, de vin de raisin, de vin de dattes, et de viande. Il ne coupa jamais ses cheveux, et n’usa ni de parfums, ni de bains. Lui seul avait le droit d’entrer dans le Saint des Saints. Il portait des vêtements de lin et il était si assidu à la prière, que ses genoux étaient aussi durs que de la peau de chameau. Après l’Ascension du Christ, les Apôtres le nommèrent évêque de Jérusalem ; c’est à lui que le Prince des Apôtres envoya un messager annoncer qu’un ange l’avait délivré de prison. Comme une discussion s’était élevée au Concile de Jérusalem, au sujet de la loi et de la circoncision, Jacques suivit l’avis de Pierre et fit aux frères un discours dans lequel il prouva la vocation des Gentils, et dit qu’il fallait écrire aux frères absents de ne pas imposer aux Gentils le joug de la loi mosaïque. C ’est de lui que parle l’Apôtre dans l’épître aux Galates : Je ne vis pas d’autre Apôtre que Jacques, le frère du Seigneur.
 
 [Lectio6]
 Telle écait la sainteté de sa vie, que les hommes désiraient à l'envi toucher le bord de ses vêtements. Parvenu à l’âge de quatre-vingt-seize ans, après avoir gouverné très sain tem en t l’Église de Jérusalem pendant trente ans, comme il annonçait avec courage et fermeté le Chiist, Fils de Dieu, il fut d’abord assailli à coups de pierres et ensuite mené à l’endroit le plus élevé du temple d’où on le précipita. Gisant à demi-mort, les jambes brisées, il levait les mains au ciel et priait Dieu pour le salut de ses bourreaux : «Pardonnez-leur, Seigneur, disait-il, car ils ne savent ce qu’ils font. » Pendant cette prière, on lui brisa la tête d’un coup de bâton de foulon, et il rendit son âme à Dieu, en la septième année du règne de Néron. Il fut enseveli près du temple, au lieu même où il avait été précipité. Il a écrit une lettre qui est une des sept Épîtres catholiques.
@@ -56,14 +40,8 @@ Vous croyez en Dieu, croyez donc en celui qui est l’égal de Dieu, non par usu
 Comme ils craignaient donc de périr éloignés de lui, ils étaient à bon droit troublés. Mais quand ils entendent : Il y a beaucoup de demeures dans la maison de mon Père, s'il en était autrement, je vous Vaurais dit, car je vais vous y préparer une place, les voilà remis de leur trouble, croyant et espérant que, même après les tentations et les épreuves, ils doivent demeurer en Dieu avec le Christ. Bien que l ’un soit supérieur à l’autre en force, en sagesse, en justice, en sainteté, comme il y a beaucoup de demeures dans la maison de mon Père, aucun d’entre eux ne sera exclu de cette maison, où chacun doit recevoir une demeure selon son mérite.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//g
-
 [Ant 2]
 Moi Je suis la voie, * la vérité et la vie : personne ne vient à Mon Père que par Moi, alléluia.
 
 [Ant 3]
 Si vous demeurez en Moi * et que Mes paroles demeurent en vous, tout ce que vous demanderez, il vous sera fait, alléluia, alléluia, alléluia.
-
-[Ant Vespera 3]
-@:Ant Vespera:s/116/138/ s/112/125/ s/111/115/ s/110/112/ 

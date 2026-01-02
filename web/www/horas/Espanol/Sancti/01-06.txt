@@ -1,16 +1,6 @@
 [Rank]
 In Epiphania Domini;;Duplex I classis;;7
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Special Matutinum Incipit
-Doxology=Epi
-9 lectiones
-Psalm5 Vespera=116
-Psalm5 Vespera3=113
-Festum Domini
-
 [Ant Vespera]
 Engendrado antes que la aurora * de los siglos, el Señor, nuestro Salvador, se ha manifestado hoy al mundo.
 Llega tu luz, * Jerusalén, y la gloria del Señor amanece sobre Ti, y caminarán los pueblos a tu luz. Aleluya.
@@ -18,66 +8,61 @@ Abriendo sus cofres * los Magos ofrecieron al Señor oro, incienso y mirra. Alel
 Mares y ríos, * bendecid al Señor. Fuentes, cantad un himno al Señor. Aleluya.
 Esta estrella * resplandece como una hoguera, y anuncia al Rey de reyes. Los Magos la vieron y ofrecieron regalos al gran Rey.
 
-[Capitulum Vespera]
-!Is 60:1
-v. Levántate, brilla, Jerusalén, que llega tu luz; la gloria del Señor amanece sobre ti.
-$Deo gratias
-
-[Hymnus Vespera](rúbrica 1570)
-v. Impío y cruel Herodes,
-¿por qué le temes a Cristo?
-No quita reinos mortales
-el que los da celestiales.
-_
-Iban los Magos siguiendo la estrella que les precede:
-con una luz otra encuentran
-y sus dones representan
-al mismo Niño que adoran.
-_
-Baja hasta las aguas puras
-el Cordero celestial:
-los pecados que le agobian
-son parte de nuestra historia.
-_
-Nueva especie de poder:
-el agua de las tinajas
-ha cambiado de color,
-de buen vino es el sabor.
-_
-A ti, Señor, sea gloria,
--el que hoy has aparecido-,
-con el Padre y el Espíritu,
-por los siglos de los siglos.
-Amén.
-
 [Hymnus Vespera]
-{:H-CrudelisHerodes:}v. Cruel Herodes, ¿por qué 
-temes que venga Dios Rey? No usurpa 
-los reinos de la tierra 
-el que da los celestiales.
+{:H-CrudelisHerodes:}v. De un Rey Dios, cruel Herodes,
+¿por qué la venida temes?
+No quita reinos mortales
+quien da los reinos celestes.
 _
-Iban los Magos siguiendo la estrella 
-que habían visto y les guiaba; 
-con la luz buscan a la Luz, 
-con sus dones confiesan a Dios.
+La estrella que habían visto,
+siguiendo los Magos vienen:
+a la Luz con la luz buscan;
+dones como a Dios le ofrecen.
 _
-El Cordero celestial se lavó 
-en las aguas de un río cristalino, 
-y borró los pecados que Él no tenía, 
-dejándonos a nosotros limpios.
+Toca el celestial Cordero
+aguas de pura corriente:
+lavándonos, purifica
+los pecados que no tiene.
 _
-Una manifestación nueva del poder de Cristo: 
-las vasijas de agua se tiñen de rojo color, 
-pues, al mandar que echasen vino, 
-se transformó el agua.
+Nueva clase de portento:
+hidrias de agua se enrojecen;
+y mandadas echar vino,
+en vino el agua convierten.
 _
-¡Oh Jesús, que te mostraste a los gentiles!, 
-gloria sea dada a ti en unión 
-con el Padre y el Espíritu Santo, 
-por los siglos sempiternos. 
+A Ti, Jesús, demos gloria,
+que apareciste a las gentes,
+con el Padre y Santo Espíritu,
+por siglos y eternamente.
 Amén.
 
-[Versum 1]
+[HymnusM Vespera]
+v. De un Rey Dios, cruel Herodes,
+¿por qué la venida temes?
+No quita reinos mortales
+quien da los reinos celestes.
+_
+La estrella que habían visto,
+siguiendo los Magos vienen:
+a la Luz con la luz buscan;
+dones como a Dios le ofrecen.
+_
+Toca el celestial Cordero
+aguas de pura corriente:
+lavándonos, purifica
+los pecados que no tiene.
+_
+Nueva clase de portento:
+hidrias de agua se enrojecen;
+y mandadas echar vino,
+en vino el agua convierten.
+_
+A Ti, Jesús, demos gloria,
+que apareciste a las gentes,
+con el Padre y Santo Espíritu,
+por siglos y eternamente.
+Amén.
+
+[Versum 1_]
 V. Los reyes de Tarsis y de las islas le pagarán tributo. 
 R. Los reyes de Saba y de Arabia le ofrecerán sus dones. 
 
@@ -88,9 +73,6 @@ Los Magos, al ver * la estrella, se dijeron: Éste es el signo del gran Rey. Vam
 ¡Oh Dios que en este día has revelado tu Hijo a todas las naciones por medio de la estrella!; a quienes ya te conocemos en la fe condúcenos hasta el resplandor de tu luz.
 $Per eumdem
 
-[Hymnus Matutinum]
-@Sancti/01-06:Hymnus Vespera
-
 [Invit]
 Cristo se nos ha aparecido. * Venid a adoradle.
 
@@ -98,18 +80,20 @@ Cristo se nos ha aparecido. * Venid a adoradle.
 Hijos de Dios, * aclamad al Señor, postraos ante el Señor en el atrio sagrado.;;28
 Un río de aguas abundantes * regocija, aleluya, la ciudad de Dios, aleluya.;;45
 Cantad a nuestro Dios, cantad; cantad a nuestro Rey, cantadle sabiamente.;;46
-V. Toda la tierra te adore y te cante.
-R. Cante salmos a tu nombre, Señor.
 Toda la tierra te adore * y te cante; cante salmos a tu nombre, Señor.;;65
 Los Reyes de Tarsis * y de las islas presentarán ofrendas al Rey, su Señor.;;71
 Todas las naciones * que has creado vendrán y se postrarán ante ti, Señor.;;85
-V. Los reyes de Tarsis y de las islas ofrecerán presentes.
-R. Los reyes de Arabia y de Sabá presentarán ofrendas.
-Un Hombre ha nacido * en ella, y el mismo Altísimo la hizo inconmovible.;;86
-(Sed die Epiphaniæ dicitur)
+@SanctiM/01-06:AntMatutinumM:2
+(sed die Epiphaniæ dicitur)
 Venid, adorémosle: porque Él es el Señor, Dios nuestro.;;94
 Adorad al Señor, * aleluya; en su santa morada, aleluya.;;95
 Adorad a Dios, * aleluya: todos sus Ángeles, aleluya.;;96
+
+[Nocturn 1 Versum]
+V. Toda la tierra te adore y te cante.
+R. Cante salmos a tu nombre, Señor.
+
+[Nocturn 3 Versum]
 V. Adorad al Señor, aleluya.
 R. En su santa morada, aleluya.
 
@@ -119,7 +103,7 @@ Del Profeta Isaías
 1 Sedientos, venid todos a las aguas: y vosotros que no tenéis dinero, apresuraos, comprad y comed. Venid, comprad sin dinero y sin ninguna otra permuta vino y leche. 
 2 ¿Por qué expendéis vuestro dinero en cosas que no son alimento, y empleáis vuestras fatigas en lo que no puede saciaros? Escuchadme con atención, y alimentaos del buen manjar, y vuestra alma se recreará en lo más sustancioso. 
 3 Prestad oídos, y venid a mí. Escuchad, y vuestra alma hallará vida, y asentaré con vosotros alianza sempiterna, en cumplimiento de las misericordias prometidas a David. 
-4 He aquí que Yo voy a presentarle por testigo a los pueblos, y por caudillo y por maestro a las naciones. 
+4 He aquí que Yo voy a presentarle por testigo a los pueblos, y por caudillo y por maestro a las naciones.
 
 [Responsory1]
 R. Hoy en el Jordán bautizado el Señor, se abrieron los cielos, y el Espíritu Santo se puso sobre Él como paloma, y se oyó la voz del Padre: 
@@ -140,7 +124,7 @@ R. En el oro se muestra el poder del Rey; en el incienso nos proponen al gran Sa
 3 Y a tu luz caminarán las gentes, y los reyes al resplandor de tu nacimiento. 
 4 Tiende tu vista a  tu alrededor, y mira: todos esos se han congregado para venir a ti; vendrán de lejos tus hijos, y tus hijas acudirán a ti de todas partes. 
 5 Entonces te verán en abundancia. Se asombrará tu corazón, y se ensanchará cuando vendrá a unirse contigo la muchedumbre de naciones de la otra parte del mar, cuando a ti acudirán poderosos pueblos. 
-6 Te verás inundada de una muchedumbre de camellos, de dromedarios de Madián y de Efa. Todos los Sabeos vendrán a traerte oro e incienso, y publicarán las alabanzas del Señor. 
+6 Te verás inundada de una muchedumbre de camellos, de dromedarios de Madián y de Efa. Todos los Sabeos vendrán a traerte oro e incienso, y publicarán las alabanzas del Señor.
 
 [Responsory2]
 R. En forma de paloma se vio al Espíritu Santo, y se oyó la voz del Padre: 
@@ -223,64 +207,36 @@ R. Y descubiertos sus tesoros, le ofrecieron como presentes, oro, incienso y mir
 Todos los elementos testificaron el advenimiento de su Autor. Los cielos le reconocieron por Dios, ya que al instante enviaron la estrella. El mar le reconoció, porque se dejó hollar por sus pies. La tierra le reconoció, porque al tiempo de su muerte se estremeció. Reconociole el sol, porque en aquel momento escondió los rayos de su luz. Reconociéronle las peñas y los muros, pues muriendo Él, se hendieron. Le reconoció el infierno, restituyendo los muertos que albergaba. Y con todo, los corazones de los infieles judíos no le reconocen en manera alguna por Dios, y más duros que las peñas, no quieren abrirse a la penitencia.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera
-
 [Capitulum Laudes]
-@:Capitulum Vespera
-
-[Hymnus Laudes](rúbrica 1570)
-v. ¡Oh Belén!, tú eres la mayor entre todas 
-las ciudades grandes porque te cupo 
-el honor de engendrar al Autor de la salvación, 
-que se encarnó bajando del cielo.
-_
-Una estrella que supera al sol 
-en la belleza y esplendor, 
-anuncia que ha venido al mundo 
-Dios con carne humana.
-_
-Los Magos al verle le ofrecen los dones 
-que traen de Oriente, y, postrados, 
-le ofrendan con sus votos incienso, 
-mirra y el oro de la realeza.
-_
-El oro y el fragante aroma del incienso de Saba 
-le proclaman Rey y Dios, 
-y el polvo de la mirra 
-simboliza su condición de mortal.
-_
-¡Oh Jesús que te mostraste a los gentiles!, 
-gloria te sea dada a ti, en unión 
-con el Padre y el Espíritu Santo, 
-por los siglos sempiternos. 
-Amén.
+!Is 60:1
+v. Levántate, brilla, Jerusalén, que llega tu luz; la gloria del Señor amanece sobre ti.
+$Deo gratias
 
 [Hymnus Laudes]
-{:H-Osolamagnarum:}v. ¡Oh Belén!, tú eres la mayor entre todas 
-las ciudades grandes porque te cupo 
-el honor de engendrar al Autor de la salvación, 
-que se encarnó bajando del cielo.
+{:H-Osolamagnarum:}v. ¡Oh sola entre las ciudades
+de Judá, Belen excelsa,
+porque en ti nace el Caudillo
+que de la muerte liberta!
 _
-Una estrella que supera al sol 
-en la belleza y esplendor, 
-anuncia que ha venido al mundo 
-Dios con carne humana.
+Un astro, que al solar disco
+en luz y esplendor supera,
+anuncia que en carne humana
+Dios aparece en la tierra.
 _
-Los Magos al verle le ofrecen los dones 
-que traen de Oriente, y, postrados, 
-le ofrendan con sus votos incienso, 
-mirra y el oro de la realeza.
+De Oriente vienen los Magos;
+postrándose le veneran;
+de incienso, de mirra y oro,
+le hacen místicas ofrendas.
 _
-El oro y el fragante aroma del incienso de Saba 
-le proclaman Rey y Dios, 
-y el polvo de la mirra 
-simboliza su condición de mortal.
+Al Dios el incienso anuncia,
+al Rey el oro demuestra,
+y el aroma de la mirra
+al hombre mortal revela.
 _
-¡Oh Jesús que te mostraste a los gentiles!, 
-gloria te sea dada a ti, en unión 
-con el Padre y el Espíritu Santo, 
-por los siglos sempiternos. 
+A Ti, Jesus, demos gloria,
+que a las naciones te muestras,
+con el Padre y Santo Espíritu,
+por edades sempiternas.
 Amén.
 
 [Versum 2]
@@ -294,17 +250,15 @@ Hoy * la Iglesia se ha unido con su celestial Esposo. Cristo en el Jordán la ha
 !Is 60:6
 v. Vienen todos de Saba trayendo incienso y oro, y proclamando las alabanzas del Señor.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Que los reyes de Tarsis y de las islas le paguen tributo. * Aleluya, aleluya. 
 R. Que los reyes de Tarsis y de las islas le paguen tributo. * Aleluya, aleluya. 
 V. Que los reyes de Saba y de Arabia le ofrezcan sus dones. 
 R. Aleluya, aleluya. 
 &Gloria
 R. Que los reyes de Tarsis y de las islas le paguen tributo. * Aleluya, aleluya.
-_
+
+[Versum Tertia]
 V. Vienen todos de Saba. Aleluya.
 R. Trayendo incienso y oro. Aleluya.
 
@@ -313,31 +267,21 @@ R. Trayendo incienso y oro. Aleluya.
 v. Levanta la vista en torno, mira: todos esos se han reunido, vienen a ti, tus hijos llegan de lejos, a tus hijas las traen en brazos.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Vienen todos de Saba. * Aleluya, aleluya. 
 R. Vienen todos de Saba. * Aleluya, aleluya. 
 V. Trayendo incienso y oro. 
 R. Aleluya. Aleluya. 
 &Gloria
-R. Vienen todos de Saba. * Aleluya, aleluya. 
-_
-V. Adorad al Señor. Aleluya.
-R. En su santuario. Aleluya.
+R. Vienen todos de Saba. * Aleluya, aleluya.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Adorad al Señor. * Aleluya, aleluya. 
 R. Adorad al Señor. * Aleluya, aleluya. 
 V. En su santuario. 
 R. Aleluya, aleluya. 
 &Gloria
 R. Adorad al Señor. * Aleluya, aleluya. 
-_
-V. Adorad a Dios. Aleluya.
-R. Todos sus ángeles. Aleluya.
 
 [Ant 3]
 Celebramos una fiesta * adornada con tres signos: hoy la estrella conduce a los Magos al pesebre; hoy el agua se convierte en vino en las bodas; hoy Cristo quiso ser bautizado por Juan en el Jordán para salvarnos. Aleluya.

@@ -1,0 +1,25 @@
+[Ant Vespera]
+Dómine, * osténde nobis Patrem, et súfficit nobis, allelúja.;;109
+Philíppe, * qui videt me, videt et Patrem meum, allelúja.;;110
+Tanto témpore * vobíscum sum, et non cognovístis me? Philíppe, qui videt me, videt et Patrem meum, allelúja.;;111
+Si cognovissétis me, * et Patrem meum útique cognovissétis, et ámodo cognoscétis eum, et vidístis eum, allelúja, allelúja, allelúja.;;112
+Si dilígitis me, * mandáta mea serváte, allelúja, allelúja, allelúja.;;116
+
+[Ant 1]
+Non turbétur * cor vestrum, neque formídet: créditis in Deum, et in me crédite: in domo Patris mei mansiónes multæ sunt, allelúja, allelúja.
+
+[Oratio]
+{(c3) De(h)us,(h) qui(h) nos(h) án(h)nu(h)a(h) A(h)pos(h)to(h)ló(h)rum(h) tu(h)ó(h)rum(h) Phi(h)líp(h)pi(h) et(h) Ja(h)có(h)bi(h) so(h)lem(h)ni(h)tá(h)te(h) læ(h)tí(h)fi(f)cas:(f.) †(,) præ(h)sta,(h) quǽ(h)su(h)mus;(h) ut,(h) quo(h)rum(h) gau(h)dé(g)mus(f) mé(h)ri(hr)tis,(h.) *(;) in(h)stru(h)á(h)mur(h) ex(h)ém(h dr)plis.(d.) (::)}
+$Per Dominum
+
+[Ant Laudes]
+@:Ant Vespera:s/;;.*//g
+
+[Ant 2]
+Ego sum via, * véritas, et vita: nemo venit ad Patrem, nisi per me, allelúja.
+
+[Ant Vespera 3]
+@:Ant Vespera:s/116/138/ s/112/125/ s/111/115/ s/110/112/
+
+[Ant 3]
+Si manséritis in me, * et verba mea in vobis mánserint, quodcúmque petiéritis, fiet vobis, allelúja, allelúja, allelúja.

@@ -1,5 +1,10 @@
+[Officium]
+Sanctissimi Nominis Jesu
+
 [Rank]
-Sanctissimi Nominis Jesu;;Duplex 2 class;;5;;
+;;Duplex 2 class;;5;;
+(sed rubrica cisterciensis)
+;;Duplex majus;;4;;
 
 [Rule]
 9 lectiones
@@ -15,11 +20,6 @@ Sanctum et terríbile * nomen ejus, inítium sapiéntiæ timor Dómini.
 Ego autem * in Dómino gaudébo, et exsultábo in Deo Jesu meo.
 A solis ortu * usque ad occásum laudábile nomen Dómini.
 Sacrificábo * hóstiam laudis, et nomen Dómini invocábo.
-
-[Capitulum Vespera]
-!Phil 2:8-10
-v. Fratres: Christus humiliávit semetípsum, factus obédiens usque ad mortem, mortem autem crucis. Propter quod et Deus exaltávit illum, et donávit illi nomen, quod est super omne nomen, ut in nómine Jesu omne genu flectátur.
-$Deo gratias
 
 [Hymnus Vespera]
 v. Jesu, dulcis memória,
@@ -53,7 +53,7 @@ V. Sit nomen Dómini benedíctum, allelúja.
 R. Ex hoc nunc et usque in sǽculum, allelúja.
 
 [Ant 1]
-Fecit * mihi magna qui potens est, et sanctum nomen ejus, allelúja.
+Fecit * mihi magna qui potens est, et sanctum Nomen ejus, allelúja.
 
 [Oratio]
 Deus, qui unigénitum Fílium tuum constituísti humáni géneris Salvatórem, et Jesum vocári jussísti: concéde propítius; ut, cujus sanctum nomen venerámur in terris, ejus quoque aspéctu perfruámur in cælis. 
@@ -84,7 +84,7 @@ Jesum ardénter quǽrite,
 Quæréndo inardéscite.
 _
 Te nostra, Jesu, vox sonet,
-Nostri te mores exprímant,
+Nostri te mores éxprimant,
 Te corda nostra díligant,
 Et nunc, et in perpétuum.
 Amen.
@@ -93,18 +93,26 @@ Amen.
 Dómine, Dóminus noster, * quam admirábile est nomen tuum in univérsa terra!;;8
 In nómine Jesu * omne genu flectátur cæléstium, terréstrium, et infernórum.;;18
 Confitémini * Dómino, et invocáte nomen ejus: mementóte, quóniam excélsum est nomen ejus.;;23
-V. Propter nomen tuum, Dómine, propitiáberis peccáto meo.
-R. Multum est enim.
 Mémores erunt * nóminis tui, Dómine, in omni generatióne et generatiónem.;;44
 Magnificáte * Dóminum mecum, et exaltémus nomen ejus in idípsum.;;45
 Omnes gentes, * quascúmque fecísti, vénient, et adorábunt coram te, Dómine, et glorificábunt nomen tuum.;;86
-V. Propter glóriam nóminis tui, Dómine, líbera nos.
-R. Et propítius esto peccátis nostris propter nomen tuum.
 Cantáte Dómino * et benedícite nómini ejus: annuntiáte de die in diem salutáre ejus.;;95
 Secúndum nomen tuum, * Deus, sic et laus tua in fines terræ: justítia plena est déxtera tua.;;96
 Cantáte Deo, * psalmum dícite nómini ejus: iter fácite ei, qui ascéndit super occásum, Dóminus nomen illi.;;97
-V. Afférte Dómino glóriam et honórem.
-R. Afférte Dómino glóriam nómini ejus.
+
+[Nocturn 1 Versum]
+V. Propter nomen tuum, Dómine, propitiáberis peccáto meo.
+R. Multum est enim.
+
+[Nocturn 1 Versum] (rubrica cisterciensis)
+@:Versum Tertia: s/[\,\.] al.*/./ig
+
+[Nocturn 2 Versum]
+V. Propter glóriam nóminis tui, Dómine, líbera nos.
+R. Et propítius esto peccátis nostris propter nomen tuum.
+
+[Nocturn 3 Versum]
+@:Versum Tertia: s/[\,\.] al.*/./ig
 
 [Lectio1]
 De Actibus Apostolórum
@@ -136,7 +144,7 @@ R. Ipse enim salvum fáciet pópulum suum a peccátis eórum.
 16 Et in fide nóminis ejus, hunc, quem vos vidístis et nostis, confirmávit nomen ejus: et fides, quæ per eum est, dedit íntegram sanitátem istam in conspéctu ómnium vestrum.
 
 [Responsory2]
-R. Benedíctum est nomen tuum, Deus patrum nostrórum, qui cum irátus fuéris, misericórdiæ recordáberis, 
+R. Benedíctum est nomen tuum, Deus patrum nostrórum, qui cum irátus fúeris, misericórdiæ recordáberis, 
 * Et in témpore tribulatiónis peccáta dimíttis.
 V. Et benedíctum nomen majestátis tuæ in ætérnum, qui facis mirabília solus.
 R. Et in témpore tribulatiónis peccáta dimíttis.
@@ -144,7 +152,7 @@ R. Et in témpore tribulatiónis peccáta dimíttis.
 [Lectio3]
 !Act 4:5-12
 5 Factum est autem in crástinum, ut congregaréntur príncipes eórum, et senióres, et scribæ, in Jerúsalem:
-6 et Annas princeps sacerdótum, et Caíphas, et Joánnes, et Alexánder, et quotquot erant de génere sacerdotáli.
+6 et Annas princeps sacerdótum, et Cáiphas, et Joánnes, et Alexánder, et quotquot erant de génere sacerdotáli.
 7 Et statuéntes eos in médio, interrogábant: In qua virtúte, aut in quo nómine fecístis hoc vos?
 8 Tunc replétus Spíritu Sancto Petrus, dixit ad eos: Príncipes pópuli, et senióres, audíte:
 9 si nos hódie diiudicámur in benefácto hóminis infírmi, in quo iste salvus factus est,
@@ -163,7 +171,7 @@ R. Et collaudábo illud in confessióne.
 [Lectio4]
 Sermo sancti Bernárdi Abbátis
 !Sermo 15 super Cantica, circa medium
-Non otióse Spíritus Sanctus nomen Sponsi óleo cómparat, cum ita dóceat sponsam ad Sponsum clamáre: Oleum effúsum nomen tuum. Oleum enim lucet, pascit et ungit. Fovet ignem, nutrit carnem, lenit dolórem: lux, cibus, medicína. Vide idem nunc et de Sponsi nómine: Lucet prædicátum, pascit recogitátum, invocátum lenit et ungit. Et percurrámus síngula. Unde putas in toto orbe tanta et tam súbita fídei lux, nisi de prædicáto nómine Jesu? Nonne in hujus nóminis luce Deus nos vocávit in admirábile lumen suum; quibus illúminatis, et in lúmine isto vidéntibus lumen, dicat mérito Paulus: Fuístis aliquándo ténebræ, nunc autem lux in Dómino?
+Non otióse Spíritus Sanctus nomen Sponsi óleo cómparat, cum ita dóceat sponsam ad Sponsum clamáre: Oleum effúsum nomen tuum. Oleum enim lucet, pascit et ungit. Fovet ignem, nutrit carnem, lenit dolórem: lux, cibus, medicína. Vide idem nunc et de Sponsi nómine: Lucet prædicátum, pascit recogitátum, invocátum lenit et ungit. Et percurrámus síngula. Unde putas in toto orbe tanta et tam súbita fídei lux, nisi de prædicáto nómine Jesu? Nonne in hujus nóminis luce Deus nos vocávit in admirábile lumen suum; quibus illuminátis, et in lúmine isto vidéntibus lumen, dicat mérito Paulus: Fuístis aliquándo ténebræ, nunc autem lux in Dómino?
 
 [Responsory4]
 R. Sperent in te, qui novérunt nomen tuum: 
@@ -181,7 +189,7 @@ V. Hi in cúrribus, et hi in equis, nos autem in nómine Dómini, Dei nostri, in
 R. Quóniam terríbile et sanctum est.
 
 [Lectio6]
-Nec tantum lux est nomen Jesu, sed est et cibus. An non tóties confortáris, quóties recordáris? Quid æque méntem cogitántis impínguat? Quid ita exercitátos réparat sensus, virtútes róborat, végetat mores bonos atque honéstos, castas fovet affectiónes? Aridus est omnis ánimæ cibus, si non óleo isto infúnditur; insípidus est, si non hoc sale condítur. Si scribas, non sapit mihi, nisi légero ibi Jesum. Si dísputes aut cónferas, non sapit mihi, nisi sonúerit ibi Jesus. Jesus mel in ore, in aure melos, in corde júbilus. Sed est et medicína. Tristátur áliquis nostrum? Véniat in cor ejus Jesus, et inde sáliat in os. Et ecce ad exórtum nóminis lumen, núbilum omne díffugit, redit serénum. Lábitur quis in crimen? currit ínsuper ad láqueum mortis desperándo? Nonne, si ínvocet nomen vitæ, conféstim respirábit ad vitam?
+Nec tantum lux est nomen Jesu, sed est et cibus. An non tóties confortáris, quóties recordáris? Quid æque mentem cogitántis impínguat? Quid ita exercitátos réparat sensus, virtútes róborat, végetat mores bonos atque honéstos, castas fovet affectiónes? Aridus est omnis ánimæ cibus, si non óleo isto infúnditur; insípidus est, si non hoc sale condítur. Si scribas, non sapit mihi, nisi légero ibi Jesum. Si dísputes aut cónferas, non sapit mihi, nisi sonúerit ibi Jesus. Jesus mel in ore, in aure melos, in corde júbilus. Sed est et medicína. Tristátur áliquis nostrum? Véniat in cor ejus Jesus, et inde sáliat in os. Et ecce ad exórtum nóminis lumen, núbilum omne díffugit, redit serénum. Lábitur quis in crimen? currit ínsuper ad láqueum mortis desperándo? Nonne, si ínvocet nomen vitæ, conféstim respirábit ad vitam?
 
 [Responsory6]
 R. Læténtur omnes, qui sperant in te, Dómine, in ætérnum exsultábunt, et habitábis in eis, et gloriabúntur in te omnes, 
@@ -207,7 +215,7 @@ V. Turris fortíssima nomen Dómini, in ipso sperávi, et adjútus sum.
 R. Et nomen Dómini invocávi.
 
 [Lectio8]
-Neque enim ad ínstar priórum meus iste Jesus nomen vácuum aut ináne portat: non est in eo magni nóminis umbra, sed véritas. Cǽlitus síquidem índitum nomen Evangelísta testátur, quod vocátum est ab Angelo, priúsquam in útero conciperétur. Et atténde verbi profunditátem: Postquam natus est Jesus, Jesus vocátur ab homínibus, qui vocátus est ab Angelo, priúsquam in útero conciperétur. Idem quippe et Angeli Salvátor et hóminis; sed hóminis ab incarnatióne, Angeli ab inítio creatúræ. Vocátum est, ait, nomen ejus Jesus, quod vocátum est ab Angelo. In ore ergo duórum vel trium téstium stat omne verbum; et ipsum, quod in Prophéta abbreviátum, maniféstius in Evangélio légitur caro factum.
+Neque enim ad instar priórum meus iste Jesus nomen vácuum aut ináne portat: non est in eo magni nóminis umbra, sed véritas. Cǽlitus síquidem índitum nomen Evangelísta testátur, quod vocátum est ab Angelo, priúsquam in útero conciperétur. Et atténde verbi profunditátem: Postquam natus est Jesus, Jesus vocátur ab homínibus, qui vocátus est ab Angelo, priúsquam in útero conciperétur. Idem quippe et Angeli Salvátor et hóminis; sed hóminis ab incarnatióne, Angeli ab inítio creatúræ. Vocátum est, ait, nomen ejus Jesus, quod vocátum est ab Angelo. In ore ergo duórum vel trium téstium stat omne verbum; et ipsum, quod in Prophéta abbreviátum, maniféstius in Evangélio légitur caro factum.
 
 [Responsory8]
 R. Exspectábo nomen tuum, Dómine, 
@@ -222,6 +230,10 @@ R. Quóniam bonum est in conspéctu sanctórum tuórum.
 Mérito sane, dum circumcíditur puer, qui natus est nobis, Salvátor vocátur; quod vidélicet ex hoc jam cœ́perit operári salútem nostram, immaculátum illum pro nobis sánguinem fundens. Neque enim jam quǽrere est Christiánis, cur volúerit Dóminus Christus circumcídi. Propter hoc síquidem circumcísus est, propter quod natus, propter quod passus. Nihil horum propter se, sed ómnia propter eléctos. Nec in peccáto génitus, nec a peccáto circumcísus, nec mórtuus est pro peccáto suo; magis autem propter delícta nostra. Quod vocátum est, inquit, ab Angelo, priúsquam in útero conciperétur. Vocátum plane, non impósitum: nempe hoc ei nomen est ab ætérno. A natúra própria habet, ut sit Salvátor: innátum est ei nomen hoc, non índitum ab humána vel angélica creatúra.
 &teDeum
 
+[Versum 0]
+V. Sit nomen Dómini benedictum.
+R. Ex hoc nunc et usque in sǽculum.
+
 [Ant Laudes]
 Oleum effúsum * nomen tuum, ídeo adolescéntulæ dilexérunt te.
 Scitóte, * quia Dóminus ipse est Deus, cujus nomen in ætérnum.
@@ -229,8 +241,17 @@ Sitívit * ánima mea ad nomen sanctum tuum, Dómine.
 Benedíctum * nomen glóriæ tuæ sanctum, et laudábile, et superexaltátum in sǽcula.
 Júvenes et vírgines, * senes cum junióribus laudáte nomen Dómini, quia exaltátum est nomen ejus solíus.
 
+[Ant Laudes] (rubrica cisterciensis)
+Nomen tuum, Dómine, * decet sanctitudo in longitúdinem diérum.
+Oleum effúsum * Nomen tuum, ídeo adolescéntulæ dilexérunt te.
+Magnum est * Nomen meum, et honorábile in Géntibus, dicit Dóminus.
+Jesus Nazarénus * Rex Judæórum, Imperátor cœli, et Dóminus dominántium.
+Vincénti dabo * manna abscónditum, et Nomen novum scriptum, quod nemo scit, nisi qui áccipit.
+
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Phil 2:8-10
+v. Fratres: Christus humiliávit semetípsum, factus obédiens usque ad mortem, mortem autem crucis. Propter quod et Deus exaltávit illum, et donávit illi nomen, quod est super omne nomen, ut in nómine Jesu omne genu flectátur.
+$Deo gratias
 
 [Hymnus Laudes]
 v. Jesu decus angélicum,
@@ -260,27 +281,27 @@ Regnum beatitúdinis.
 Amen.
 
 [Versum 2]
-V. Adjutórium nostrum in nomine Dómini.
-R. Qui fecit cælum et terram.
+@:Versum Nona: s/[\,\.] al.*/./ig
 
 [Ant 2]
 Dedit se, * ut liberáret pópulum, et acquíreret sibi nomen ætérnum, allelúja.
+
+[Ant 2] (rubrica cisterciensis)
+Vocátum est * Nomen ejus Jesus, quod vocátum est ab Angelo, priúsquam in útero conciperétur.
 
 [Lectio Prima]
 !Col 3:17
 v. Omne quodcúmque fácitis in verbo, aut in ópere: ómnia in nómine Dómini Jesu Christi fácite, grátias agéntes Deo et Patri per ipsum.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Sit nomen Dómini benedíctum, * Allelúja, allelúja.
 R. Sit nomen Domini benedíctum, * Allelúja, allelúja.
 V. Ex hoc nunc et usque in sǽculum.
 R. Allelúja, allelúja.
 &Gloria
 R. Sit nomen Dómini benedíctum, * Allelúja, allelúja.
-_
+
+[Versum Tertia]
 V. Afférte Dómino glóriam et honórem, allelúja.
 R. Afférte Dómino glóriam nómini ejus, allelúja.
 
@@ -289,14 +310,21 @@ R. Afférte Dómino glóriam nómini ejus, allelúja.
 v. In nómine Jesu omne genu flectátur cæléstium, terréstrium, et infernórum: et omnis lingua confiteátur, quia Dóminus Jesus Christus in glória est Dei Patris.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Afférte Dómino glóriam et honórem, * Allelúja, allelúja.
 R. Afférte Dómino glóriam et honórem, * Allelúja, allelúja.
 V. Afférte Dómino glóriam nómini ejus.
 R. Allelúja, allelúja.
 &Gloria
 R. Afférte Dómino glóriam et honórem, * Allelúja, allelúja.
-_
+
+[Responsory Breve Sexta] (rubrica cisterciensis)
+R.br. Afférte Dómino * glóriam et honórem.
+R. Afférte Dómino * glóriam et honórem.
+V. Afférte Dómino glóriam nómini ejus.
+R. Glóriam et honórem.
+
+[Versum Sexta]
 V. Magnificáte Dóminum mecum, allelúja.
 R. Et exaltémus nomen ejus in idípsum, allelúja.
 
@@ -304,15 +332,16 @@ R. Et exaltémus nomen ejus in idípsum, allelúja.
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Magnificáte Dóminum mecum, * Allelúja, allelúja.
 R. Magnificáte Dóminum mecum, * Allelúja, allelúja.
 V. Et exaltémus nomen ejus in idípsum.
 R. Allelúja, allelúja.
 &Gloria
 R. Magnificáte Dóminum mecum, * Allelúja, allelúja.
-_
-V. Adjutórium nostrum in nomine Dómini, allelúja.
+
+[Versum Nona]
+V. Adjutórium nostrum in nómine Dómini, allelúja.
 R. Qui fecit cælum et terram, allelúja.
 
 [Versum 3]
@@ -320,3 +349,6 @@ R. Qui fecit cælum et terram, allelúja.
 
 [Ant 3]
 Vocábis * nomen ejus Jesum; ipse enim salvum fáciet pópulum suum a peccátis eórum, allelúja.
+
+[Ant 3] (rubrica cisterciensis)
+Magníficet * omnis ánima Nomen tuum, Dómine, et cunctórum in eo spíritus exúltet, quóniam sanctum est, et potens depónere poténtes de sede, et exaltáre húmiles, allelúia.

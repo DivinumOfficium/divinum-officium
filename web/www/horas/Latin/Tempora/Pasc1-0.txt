@@ -1,18 +1,16 @@
-[Rank]
-Dominica in Albis in Octava Paschæ;;Duplex majus I. classis;;7;;
+[Officium]
+Dominica in Albis in Octava Paschæ
 
-[Rank1960]
-Dominica in Albis in Octava Paschæ;;Duplex I classis;;6;;
+[Rank]
+;;Duplex majus I. classis;;6.91;;
+
+[Rank] (rubrica 196)
+;;Duplex I classis;;6;;
 
 [Rule]
 9 Lectiones
 Duplex
 Una Antiphona
-
-[Capitulum Vespera]
-!1 Joann. 5:4
-v. Caríssimi: Omne, quod natum est ex Deo, vincit mundum: et hæc est victória, quæ vincit mundum, fides nostra.
-$Deo gratias
 
 [Ant 1]
 Cum esset sero * die illa una sabbatórum, et fores essent clausæ, ubi erant discípuli congregáti in unum, stetit Jesus in médio, et dixit eis: Pax vobis, allelúja.
@@ -106,13 +104,15 @@ Dixit eis: Pax vobis. Sicut misit me Pater, et ego mitto vos: id est, sicut misi
 &teDeum
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!1 Joann. 5:4
+v. Caríssimi: Omne, quod natum est ex Deo, vincit mundum: et hæc est victória, quæ vincit mundum, fides nostra.
+$Deo gratias
 
 [Ant 2]
 @:Ant 1
 
-[Capitulum Tertia]
-@:Capitulum Vespera
+[Ant 2] (rubrica cisterciensis)
+Post dies octo * jánuis clausis ingréssus Dóminus dixit eis: Pax vobis, allelúia, allelúia.
 
 [Capitulum Sexta]
 !1 Joann. 5:5-6
@@ -126,3 +126,8 @@ $Deo gratias
 
 [Ant 3]
 Post dies octo * jánuis clausis ingréssus Dóminus dixit eis: Pax vobis, allelúja, allelúja.
+(sed rubrica cisterciensis)
+@:Ant 3C
+
+[Ant 3C]
+Multa quidem * et ália signa fecit Jesus in conspéctu discipulórum suórum, allelúia, quæ non sunt scripta in libro hoc, allelúia.

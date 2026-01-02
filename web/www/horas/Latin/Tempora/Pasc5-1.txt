@@ -1,15 +1,21 @@
+[Officium]
+Feria Secunda in Rogationibus
+
 [Rank]
-Feria Secunda in Rogationibus;;Feria;;1.6
+;;Feria major;;2.1
+
+[Rank] (rubrica 1930)
+;;Feria major;;4.9
 
 [Rule]
 Una Antiphona
 Laudes Litania
-Doxology=Pasc
+no Te Deum
 
 [Lectio1]
 Léctio sancti Evangélii secúndum Lucam
 !Luc 11:5-13
-In illo témpore: Dixit Jesus discípulis suis: Quis vestrum habébit amícum, et íbit ad illum media nocte, et dicet illi: Amice, cómmoda mihi tres panes. Et réliqua.
+In illo témpore: Dixit Jesus discípulis suis: Quis vestrum habébit amícum, et ibit ad illum media nocte, et dicet illi: Amice, cómmoda mihi tres panes. Et réliqua.
 _
 Homilía sancti Ambrósii Epíscopi
 !Liber 7 in Lucæ cap. 11
@@ -25,7 +31,7 @@ Ab hoc media nocte panes David pétiit, et accépit. Petiit enim, quando dicebat
 @Tempora/Pasc4-1:Responsory2
 
 [Lectio3]
-Nam si ille tam sanctus, et qui regni erat necessitátibus occupatus, septies in die laudem Dómino dicebat, matutínis, et vespertinis sacrifíciis semper intentus; quid nos fácere oportet, qui eo ámplius rogare debemus, quo frequéntius carnis ac mentis fragilitáte delinquimus, ut de via lassis, et istíus ævi cursu, ac vitæ hujus anfractu gráviter fatigátis, panis refectiónis deésse non possit, qui hóminis corda confírmet? Nec solum media nocte Dóminus, sed ómnibus prope docet vigilándum esse moméntis. Venit enim et vespertína, et secunda, et tertia vigília: et pulsáre consuévit. Beáti ítaque servi illi, quos cum venerit Dóminus, invenérit vigilántes.
+Nam si ille tam sanctus, et qui regni erat necessitátibus occupatus, septies in die laudem Dómino dicebat, matutínis, et vespertinis sacrifíciis semper intentus; quid nos fácere oportet, qui eo ámplius rogare debemus, quo frequéntius carnis ac mentis fragilitáte delinquimus, ut de via lassis, et istíus ævi cursu, ac vitæ hujus anfractu gráviter fatigátis, panis refectiónis deésse non possit, qui hóminis corda confírmet? Nec solum media nocte Dóminus, sed ómnibus prope docet vigilándum esse moméntis. Venit enim et vespertína, et secunda, et tertia vigília: et pulsáre consuévit. Beáti ítaque servi illi, quos cum venerit Dóminus, invénerit vigilántes.
 
 [Responsory3]
 @Tempora/Pasc4-1:Responsory3
@@ -39,6 +45,9 @@ $Per Dominum.
 
 [Ant 3]
 Ipse enim Pater amat * vos, quia vos me amástis, et credidístis, allelúja.
+
+[Ant 3] (rubrica cisterciensis)
+@Tempora/Pasc1-1
 
 [Oratio 3]
 @Tempora/Pasc5-0:Oratio

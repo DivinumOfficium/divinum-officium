@@ -1,19 +1,19 @@
 @Commune/C2p
 
-[Name]
+[Officium]
 Commune Plurimorum Martyrum Tempore Paschali
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
+[Missa]
+Sancti tui
+
+[Hymnus Vespera]
+@Commune/C3:Hymnus Laudes
 
 [HymnusM Vespera]
 @Commune/C3:HymnusM Laudes
 
-[Hymnus Vespera]
-@Commune/C3:Hymnus Laudes
+[Oratio]
+@Commune/C3
 
 [Hymnus Matutinum]
 @Commune/C3
@@ -22,21 +22,15 @@ Psalm5 Vespera3=115
 @Commune/C3
 
 [Ant Matutinum]
-Stabunt justi * in magna constántia advérsus eos qui se angustiavérunt, allelúja.;;1
+@Commune/C1p::1 s/;;18/;;1/
 ;;2
 ;;3
-V. Sancti et justi in Dómino gaudéte, allelúja.
-R. Vos elégit Deus in hereditátem sibi, allelúja.
-Ecce * quómodo computáti sunt inter fílios Dei, et inter sanctos sors illórum est, allelúja.;;14
+@Commune/C1p::4 s/;;46/;;14/
 ;;15
 ;;23
-V. Lux perpétua lucébit Sanctis tuis, Dómine, allelúja.
-R. Et ætérnitas témporum, allelúja.
-Lux perpétua * lucébit Sanctis tuis, Dómine, et ætérnitas témporum, allelúja.;;32
+@Commune/C1p::7 s/;;74/;;32/
 ;;33
 ;;45
-V. Lætítia sempitérna super cápita eórum, allelúja.
-R. Gáudium et exsultatiónem obtinébunt, allelúja.
 
 [Hymnus Laudes]
 @Commune/C3
@@ -44,11 +38,41 @@ R. Gáudium et exsultatiónem obtinébunt, allelúja.
 [HymnusM Laudes]
 @Commune/C3
 
-[Oratio]
+[Introitus]
+!Ps 144:10-11
+v. Sancti tui, Dómine, benedícent te: glóriam regni tui dicent, allelúja, allelúja.
+!Ps. 144:1
+Exaltábo te, Deus meus, Rex: et benedícam nómini tuo in sǽculum, et in sǽculum sǽculi.
+&Gloria
+v. Sancti tui, Dómine, benedícent te: glóriam regni tui dicent, allelúja, allelúja.
+
+[Lectio]
+Léctio Epístolæ beáti Petri Apóstoli
+!1 Petr 1:3-7
+Benedíctus Deus et Pater Dómini nostri Jesu Christi, qui secúndum misericórdiam suam magnam regenerávit nos in spem vivam, per resurrectiónem Jesu Christi ex mórtuis, in hereditátem incorruptíbilem et incontaminátam et immarcescíbilem, conservátam in cœlis in vobis, qui in virtúte Dei custodímini per fidem in salútem, parátam revelári in témpore novíssimo. In quo exsultábitis, módicum nunc si opórtet contristári in váriis tentatiónibus: ut probátio vestræ fídei multo pretiósior auro [quod per ignem probátur] inveniátur in laudem et glóriam et honórem, in revelatióne Jesu Christi, Dómini nostri.
+
+[Graduale]
+Allelúja, allelúja.
+!Sir 39:19
+Sancti tui, Dómine, florébunt sicut lílium: et sicut odor bálsami erunt ante te. Allelúja.
+!Ps 115:15
+Pretiósa in conspéctu Dómini mors Sanctórum ejus. Allelúja.
+
+[Evangelium]
+Sequéntia ++ sancti Evangélii secúndum Joánnem
+!Joannes 15:5-11
+In illo témpore: Dixit Jesus discípulis suis: Ego sum vitis, vos pálmites: qui manet in me, et ego in eo, hic fert fructum multum: quia sine me nihil potéstis fácere. Si quis in me non mánserit, mittétur foras sicut palmes, et aréscet, et cólligent eum, et in ignem mittent, et ardet. Si manséritis in me, et verba mea in vobis mánserint: quodcúmque voluéritis, petétis, et fiet vobis. In hoc clarificátus est Pater meus, ut fructum plúrimum afferátis, et efficiámini mei discípuli. Sicut diléxit me Pater, et ego diléxi vos. Manéte in dilectióne mea. Si præcépta mea servavéritis, manébitis in dilectióne mea, sicut et ego Patris mei præcépta servávi, et máneo in ejus dilectióne. Hæc locútus sum vobis, ut gáudium meum in vobis sit, et gáudium vestrum impleátur.
+
+[Offertorium]
+!Ps 31:11
+Lætámini in Dómino et exsultáte, justi: et gloriámini, omnes recti corde, allelúja, allelúja.
+
+[Secreta]
 @Commune/C3
 
-[Oratio1]
-@Commune/C3
+[Communio]
+!Ps 32:1
+Gaudéte, justi, in Dómino, allelúja: rectos decet collaudátio, allelúja.
 
-[Oratio2]
+[Postcommunio]
 @Commune/C3

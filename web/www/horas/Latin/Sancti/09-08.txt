@@ -1,8 +1,11 @@
 [Rank]
 In Nativitate Beatæ Mariæ Virginis;;Duplex II classis cum Octava simplici;;5.1;;ex C11
 
-[Rank1960]
+[Rank] (rubrica 196)
 In Nativitate Beatæ Mariæ Virginis;;Duplex II classis cum Octava simplici;;5;;ex C11
+
+[Rank] (rubrica cisterciensis)
+In Nativitate Beatæ Mariæ Virginis;;Serm maj. cum Octava;;6.1;;ex C11
 
 [Rule]
 ex C11;
@@ -18,6 +21,24 @@ Regáli ex progénie * María exórta refúlget; cujus précibus nos adjuvári, 
 Corde et ánimo * Christo canámus glóriam in hac sacra solemnitáte præcélsæ Genetrícis Dei Maríæ.;;126
 Cum jucunditáte * Nativitátem beátæ Maríæ celebrémus, ut ipsa pro nobis intercédat ad Dóminum Jesum Christum.;;147
 
+[Ant Vespera] (rubrica cisterciensis)
+Natívitas est hódie * sanctæ Maríæ Vírginis, cujus vita ínclita cunctas illústrat Ecclésias.;;109
+Cum jucunditáte * Nativitátem beátæ Maríæ celebrémus, ut ipsa pro nobis intercédat ad Dóminum Jesum Christum.;;112
+Regáli ex progénie * María exórta refúlget; cujus précibus nos adjuvári, mente et spíritu devotíssime póscimus.;;121
+Corde et ánimo * Christo canámus glóriam in hac sacra solemnitáte præcélsæ Genetrícis Dei Maríæ.;;126
+Natívitas gloriósæ * Vírginis Maríæ ex sémine Abrahæ, ortæ de tribu Juda, clara ex stirpe David.
+
+[Responsory Vespera 1] (rubrica cisterciensis)
+Responsorium. Beáta progénies, unde Christus natus est. * O quam gloriósa est mater, quæ cæli Regínam génuit!
+V. Regáli ex progénie María exórta refúlget.
+R. O quam gloriósa est mater, quæ cæli Regínam génuit!
+
+[Responsory Vespera] (rubrica cisterciensis)
+R.br. Natívitas tua, * Dei Génitrix Virgo. 
+R. Natívitas tua, * Dei Génitrix Virgo. 
+V. Gáudium annuntiávit univérso mundo.
+R. Dei Génitrix Virgo. 
+
 [Versum 1]
 V. Natívitas est hódie sanctæ Maríæ Vírginis.
 R. Cujus vita ínclita cunctas illústrat ecclésias.
@@ -25,15 +46,29 @@ R. Cujus vita ínclita cunctas illústrat ecclésias.
 [Ant 1]
 Gloriósæ * Vírginis Maríæ ortum digníssimum recolámus, quæ et Genitrícis dignitátem obtinuit, et virginalem pudicítiam non amisit.
 
+[Ant 1] (rubrica cisterciensis)
+Natívitas tua, * Dei Génetrix Virgo, gáudium annuntiávit univérso mundo: ex te enim ortus est sol justítiæ, Christus Deus noster, qui solvens maledictiónem, dedit benedictiónem, et confúndens mortem, donávit nobis vitam sempitérnam.
+
 [Oratio]
 Fámulis tuis, quǽsumus, Dómine, cæléstis grátiæ munus impertíre: ut, quibus beátæ Vírginis partus éxstitit salútis exórdium; Nativitátis ejus votíva solémnitas pacis tríbuat increméntum.
+$Per Dominum
+
+[Octava]
+!Commemoratio Octavæ Nativitatis Beatæ Mariæ Virginis
+Ant. Natívitas tua, * Dei Génetrix Virgo, gáudium annuntiávit univérso mundo: ex te enim ortus est sol justítiæ, Christus Deus noster: qui solvens maledictiónem, dedit benedictiónem; et confúndens mortem, donávit nobis vitam sempitérnam.
+_
+V. Natívitas est hódie sanctæ Maríæ Vírginis.
+R. Cujus vita ínclita cunctas illustrat ecclésias.
+_
+$Oremus
+v. Fámulis tuis, quǽsumus, Dómine, cæléstis gratiæ munus impertíre: ut, quibus beátæ Vírginis partus éxstitit salútis exórdium; Nativitátis ejus votíva solémnitas pacis tríbuat increméntum.
 $Per Dominum
 
 [Invit]
 Nativitátem Vírginis Maríæ celebrémus: * Christum ejus Fílium adorémus Dóminum.
 
 [Lectio1]
-@Sancti/08-15t:Lectio1
+@Sancti/08-15t
 
 [Responsory1]
 R. Hódie nata est beáta Virgo María ex progénie David; 
@@ -42,7 +77,7 @@ V. Nativitátem beátæ Maríæ Vírginis cum gáudio celebrémus.
 R. Per quam salus mundi credéntibus appáruit, cujus vita gloriósa lucem dedit sǽculo.
 
 [Lectio2]
-@Sancti/08-15t:Lectio2
+@Sancti/08-15t
 
 [Responsory2]
 R. Beatíssimæ Vírginis Maríæ Nativitátem devotíssime celebrémus, 
@@ -51,7 +86,7 @@ V. Cum jucunditáte Nativitátem beátæ Maríæ Vírginis devotíssime celebré
 R. Ut ipsa pro nobis intercédat ad Dóminum Jesum Christum.
 
 [Lectio3]
-@Sancti/08-15t:Lectio3
+@Sancti/08-15t
 
 [Responsory3]
 R. Gloriósæ Vírginis Maríæ ortum digníssimum recolámus, 
@@ -99,7 +134,7 @@ Liber generatiónis Jesu Christi, fílii David, fílii Abraham. Abraham génuit 
 _
 Homilía sancti Hierónymi Presbýteri
 !Liber 1 Comment. in Matth., in initium
-In Isaía légimus: Generatiónem ejus quis enárrabit? Non ergo putémus Evangelístam Prophétæ esse contrárium, ut quod ille impossíbile dixit effátu, hic narráre incípiat: quia ibi de generatióne Divinitátis, hic de incarnatióne est dictum. A carnálibus autem cœpit, ut per hóminem, Deum díscere incipiámus. Fílii David, fílii Abraham. Ordo præpósterus, sed necessário commutátus. Si enim primum posuísset Abraham et póstea David, rursus ei repeténdus fúerat Abraham, ut generatiónis séries texerétur.
+In Isaía légimus: Generatiónem ejus quis enarrábit? Non ergo putémus Evangelístam Prophétæ esse contrárium, ut quod ille impossíbile dixit effátu, hic narráre incípiat: quia ibi de generatióne Divinitátis, hic de incarnatióne est dictum. A carnálibus autem cœpit, ut per hóminem, Deum díscere incipiámus. Fílii David, fílii Abraham. Ordo præpósterus, sed necessário commutátus. Si enim primum posuísset Abraham et póstea David, rursus ei repeténdus fúerat Abraham, ut generatiónis séries texerétur.
 
 [Responsory7]
 R. Beátam me dicent omnes generatiónes, 
@@ -111,32 +146,38 @@ R. Quia fecit mihi Dóminus magna qui potens est, et sanctum nomen ejus.
 Ideo autem, céteris prætermíssis, horum fílium nuncupávit, quia ad hos tantum facta est de Christo repromíssio. Ad Abraham: In sémine, inquit, tuo benedicéntur omnes gentes, quod est Christus. Ad David: De fructu ventris tui ponam super sedem tuam. Judas autem génuit Phares et Zaram de Thamar. Notándum, in genealogía Salvatóris nullam sanctárum assúmi mulíerum, sed eas quas Scriptúra reprehéndit; ut, qui propter peccatóres vénerat, de peccatóribus nascens, ómnium peccáta deléret. Unde et in consequéntibus Ruth Moabítis pónitur, et Bethsabée uxor Uríæ.
 
 [Responsory8]
-@Commune/C12:Responsory3:s/commemoratiónem/Nativitátem/
+@Sancti/07-02:Responsory8:s/Visitatiónem/Nativitátem/
 
 [Lectio9]
-!Commemoratio S. Adriani, Martyris
-Hadrianus, jussu Maximiáni imperatóris apud Nicomedíam pérsequens Christiános, cum sæpius eórum in fidei confessióne et tormentórum perpessióne constantiam demirátus esset, veheménter ea re commótus ad Christum sese convértit. Quam ob rem cum aliis viginti tribus Christiánis conjéctus est in carcerem; ubi eum visitans Natália uxor, quæ et ipsa antea in Christum credíderat, ad martyrium incendit. Itaque, e custódia edúctus, tamdiu flagellis cæsus est, donec intestína diffluerent. Postremo, fractis crúribus, mánibus pedibúsque præcisis, una cum multis aliis martyrii certamen feliciter absolvit.
-&teDeum
-
-[Lectio9](rubrica 1960)
 Jacob autem génuit Joseph. Hunc locum objécit nobis Juliánus Augústus de dissonántia Evangelistárum, cur Evangelísta Matthǽus Joseph díxerit fílium Jacob et Lucas eum fílium appellárit Heli; non intéllegens consuetúdinem Scripturárum, quod alter secúndum natúram, alter secúndum legem ei pater sit. Scimus enim hoc per Móysen, Deo jubénte, præcéptum, ut, si frater aut propínquus absque líberis mórtuus fúerit, álius accípiat uxórem ad suscitándum semen fratris vel propínqui sui. Joseph virum Maríæ. Cum virum audíeris, suspício tibi non súbeat nuptiárum; sed recordáre consuetúdinis Scripturárum, quod sponsi viri, et sponsæ vocéntur uxóres.
 &teDeum
 
 [Ant Laudes]
 @:Ant Vespera:s/;;.*//g
 
-[Ant 2]
-Nativitátem hodiérnam * perpétuæ Vírginis Genetrícis Dei Maríæ solémniter celebrémus, qua celsitúdo throni procéssit, allelúja.
+[Capitulum Laudes] (rubrica cisterciensis)
+@:Capitulum Tertia
 
 [Versum 2]
 @:Versum 1
 
-[Commemoratio]
-!Commemoratio S. Hadriani, Martyris
-@Commune/C2:Oratio proper
-$Oremus
-v. Præsta, quǽsumus, omnípotens Deus: ut, qui beáti Hadriáni Mártyris tui natalícia cólimus, intercessióne ejus, in tui nóminis amóre roborémur.
-$Per Dominum
+[Ant 2]
+Nativitátem hodiérnam * perpétuæ Vírginis Genetrícis Dei Maríæ solémniter celebrémus, qua celsitúdo throni procéssit, allelúja.
+
+[Capitulum Tertia] (rubrica cisterciensis)
+!Eccli. 24, 17-18
+v. Ego quasi vitis fructificávi suavitátem odóris: § et flores mei fructus honóris et honestátis. * Ego mater pulchræ dilectiónis, et timóris, et agnitiónis, et sanctæ spei.
+$Deo gratias
+
+[Capitulum Sexta] (rubrica cisterciensis)
+!Eccli. 24, 19-20
+v. Transíte ad me, omnes qui concupíscitis me, et a generatiónibus meis implémini: § spíritus enim meus super mel dulcis, et hæréditas mea super mel et favum: * memória mea in generatiónes sæculórum.
+$Deo gratias
+
+[Capitulum Nona] (rubrica cisterciensis)
+!Eccli. 24, 21-22
+v. Qui edunt me, adhuc esúrient: § et qui bibunt me, adhuc sítient. * Qui audit me, non confundétur: § et qui operántur in me, non peccábunt. * Qui elúcidant me, vitam ætérnam habébunt.
+$Deo gratias
 
 [Versum 3]
 @:Versum 1
@@ -144,13 +185,5 @@ $Per Dominum
 [Ant 3]
 Natívitas tua, * Dei Génetrix Virgo, gáudium annuntiávit univérso mundo: ex te enim ortus est sol justítiæ, Christus Deus noster: qui solvens maledictiónem, dedit benedictiónem; et confúndens mortem, donávit nobis vitam sempitérnam.
 
-[Octava]
-!Commemoratio Octavæ Nativitatis Beatæ Mariæ Virginis
-Ant. Natívitas tua, * Dei Génetrix Virgo, gáudium annuntiávit univérso mundo: ex te enim ortus est sol justítiæ, Christus Deus noster: qui solvens maledictiónem, dedit benedictiónem; et confúndens mortem, donávit nobis vitam sempitérnam.
-_
-V. Natívitas est hódie sanctæ Maríæ Vírginis.
-R. Cujus vita ínclita cunctas illustrat ecclésias.
-_
-$Oremus
-v. Fámulis tuis, quǽsumus, Dómine, cæléstis gratiæ munus impertíre: ut, quibus beátæ Vírginis partus éxstitit salútis exórdium; Nativitátis ejus votíva solémnitas pacis tríbuat increméntum.
-$Per Dominum
+[Ant 3] (rubrica cisterciensis)
+@Sancti/08-15t:Ant 1:s/quo/quæ/ s/\?/\,/ s/kam/jež/ s/když se převelice/a převelice se/

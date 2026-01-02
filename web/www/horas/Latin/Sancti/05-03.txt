@@ -1,6 +1,9 @@
 [Rank]
 Inventione Sanctæ Crucis;;Duplex II classis;;5.2;;
 
+[Rank] (rubrica cisterciensis)
+Inventione Sanctæ Crucis;;Duplex;;4;;
+
 [Rule]
 proprium
 9 lectiones
@@ -15,23 +18,27 @@ Ecce Crucem Dómini, * fúgite, partes advérsæ, vicit leo de tribu Juda, radix
 Nos autem gloriári * opórtet in Cruce Dómini nostri Jesu Christi.
 Per signum Crucis * de inimícis nostris líbera nos, Deus noster.
 
-[Capitulum Vespera]
-!Phil 2:5-7
-v. Fratres: Hoc enim sentíte in vobis, quod et in Christo Jesu: qui, cum in forma Dei esset, non rapínam arbitrátus est esse se æquálem Deo: sed semetípsum exinanívit, formam servi accípiens, in similitúdinem hóminum factus, et hábitu invéntus ut homo.
-$Deo gratias.
+[Ant Vespera] (rubrica cisterciensis)
+Allelúia, * allelúia, allelúia.
+
+[Responsory Vespera] (rubrica cisterciensis)
+@Sancti/05-03:Responsory Breve Sexta:1-4
 
 [Hymnus Vespera]
-@Psalterium/Major Special:Hymnus Quad5 Vespera
+@Psalterium/Special/Major Special:Hymnus Quad5 Vespera
 
 [HymnusM Vespera]
-@Psalterium/Major Special:HymnusM Quad5 Vespera
+@Psalterium/Special/Major Special:HymnusM Quad5 Vespera
 
 [Versum 1]
-V. Hoc signum Crucis erit in cælo. (Allelúja.)
-R. Cum Dóminus ad judicándum vénerit. (Allelúja.)
+V. Hoc signum Crucis erit in cælo.
+R. Cum Dóminus ad judicándum vénerit.
 
 [Ant 1]
 O Crux, * splendídior cunctis astris, mundo célebris, homínibus multum amábilis, sánctior univérsis: quæ sola fuísti digna portáre taléntum mundi, dulce lignum, dulces clavos, dúlcia ferens póndera; salva præséntem catérvam in tuis hódie láudibus congregátam. (Allelúja, allelúja.)
+
+[Ant 1] (rubrica cisterciensis)
+O Crux benedícta! * quia in te pepéndit Salvátor mundi, et in te triumphávit Rex Angelórum, allelúia.
 
 [Oratio]
 Deus, qui in præclára salutíferæ Crucis Inventióne, passiónis tuæ mirácula suscitásti: concéde; ut vitális ligni prétio, ætérnæ vitæ suffrágia consequámur:
@@ -41,24 +48,31 @@ $Qui vivis
 Christum Regem crucifíxum, * Veníte, adorémus. (Allelúja.)
 
 [Hymnus Matutinum]
-@Psalterium/Matutinum Special:Hymnus Quad5
+@Psalterium/Special/Matutinum Special:Hymnus Quad5
+
+[HymnusM Matutinum]
+@Psalterium/Special/Matutinum Special:HymnusM Quad5
 
 [Ant Matutinum]
 Invéntæ Crucis festa recólimus, cujus præcónium univérsum per orbem micánti lúmine fulget, allelúja.;;1
 ;;2
 ;;3
-V. Hoc signum Crucis erit in cælo, allelúja.
-R. Cum Dóminus ad judicándum vénerit, allelúja.
 Felix ille triúmphus fit salus ægris, vitæ lignum, mortis remédium, allelúja.;;4
 ;;5
 ;;8
-V. Adorámus te, Christe, et benedícimus tibi, allelúja.
-R. Quia per Crucem tuam redemísti mundum, allelúja.
 Adorámus te, Christe, et benedícimus tibi, quia per Crucem tuam redemísti mundum, allelúja.;;95
 ;;96
 ;;97
-V. Omnis terra adóret te, et psallat tibi, allelúja.
-R. Psalmum dicat nómini tuo, Dómine, allelúja.
+
+[Nocturn 1 Versum]
+@:Versum 1
+
+[Nocturn 2 Versum]
+@:Versum 2
+
+[Nocturn 3 Versum]
+V. Omnis terra adóret te, et psallat tibi.
+R. Psalmum dicat nómini tuo, Dómine.
 
 [Lectio1]
 De Epístola beáti Pauli Apóstoli ad Gálatas
@@ -72,7 +86,7 @@ De Epístola beáti Pauli Apóstoli ad Gálatas
 [Responsory1]
 R. Gloriósum diem sacra venerátur Ecclésia, dum triumphále reserátur lignum:
 * In quo Redémptor noster, mortis víncula rumpens, cállidum áspidem superávit. (Allelúja, allelúja, allelúja.)
-V. In ligno péndens nostræ salútis sémitam Verbum Patris invénit.
+V. In ligno pendens nostræ salútis sémitam Verbum Patris invénit.
 R. In quo Redémptor noster, mortis víncula rumpens, cállidum áspidem superávit. (Allelúja, allelúja, allelúja.)
 
 [Lectio2]
@@ -166,86 +180,78 @@ R. Ut omnis qui credit in ipsum, non péreat, sed hábeat vitam ætérnam. (Alle
 &Gloria
 R. Ut omnis qui credit in ipsum, non péreat, sed hábeat vitam ætérnam. (Allelúja.)
 
-[Lectio93]
-!Commemoratio SS Alexandri I Papa, Eventino et Theoduli Mártyrum
-Alexánder Románus, Hadriáno imperatóre regens Ecclésiam, magnam partem Románæ nobilitátis ad Christum convértit.  Is constítuit ut tantúmmodo panis et vinum in mystério offerétur: vinum autem aqua miscéri jussit, propter sánguinem et aquam, quæ ex Jesu Christi látere profluxérunt; et in Cánone Missæ áddidit, Qui prídie quam paterétur. Idem decrévit ut aqua benedícta, sale admíxto, perpétuo in ecclésia asservarétur, et in cubículis adhiberétur ad fugándos dǽmones. Sedit annos decem, menses quinque et dies vigínti, vitæ sanctitáte et salutáribus institútis illústris. Martýrio coronátus est una cum Evéntio et Theodúlo presbýteris, sepultúsque est via Nomentána, tértio ab Urbe lápide, eódem in loco, ubi secúri percússus fúerat; creátis divérso témpore mense Decémbri presbýteris sex, diáconis duóbus et epíscopis per divérsa loca quinque. Eórum córpora, póstea in Urbem transláta, in ecclésia sanctæ Sabínæ cóndita sunt. In eúmdem diem íncidit beáta mors sancti Juvenális, Narniénsis epíscopi; qui, cum plúrimos in ea urbe sanctitáte et doctrína Christo peperísset, clarus miráculis in pace quiévit ibíque honorífice sepúltus est.
-&teDeum
-
 [Ant Laudes]
 @:Ant Vespera
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Phil 2:5-7
+v. Fratres: Hoc enim sentíte in vobis, quod et in Christo Jesu: qui, cum in forma Dei esset, non rapínam arbitrátus est esse se æquálem Deo: sed semetípsum exinanívit, formam servi accípiens, in similitúdinem hóminum factus, et hábitu invéntus ut homo.
+$Deo gratias.
+
+[Responsory Laudes] (rubrica cisterciensis)
+@Sancti/05-03:Responsory Breve Tertia:1-4
 
 [Hymnus Laudes]
-@Psalterium/Major Special:Hymnus Quad5 Laudes
+@Psalterium/Special/Major Special:Hymnus Quad5 Laudes
+
+[HymnusM Laudes]
+@Psalterium/Special/Major Special:HymnusM Quad5 Laudes
 
 [Versum 2]
-V. Adorámus te, Christe, et benedícimus tibi. (Allelúja.)
-R. Quia per Crucem tuam redemísti mundum. (Allelúja.)
+V. Adorámus te, Christe, et benedícimus tibi.
+R. Quia per Crucem tuam redemísti mundum.
 
 [Ant 2]
 Super ómnia * ligna cedrórum tu sola excélsior, in qua Vita mundi pepéndit, in qua Christus triumphávit, et mors mortem superávit in ætérnum. (Allelúja.)
-
-[Commemoratio 2]
-!Commemoratio Ss. Mártyrum
-Ant. Fíliæ Jerúsalem, veníte et vidéte Mártyres cum corónis, quibus coronávit eos Dóminus in die solemnitátis et lætítiæ. (Allelúja, allelúja.)
-_
-V. Pretiósa in conspéctu Dómini. (Allelúja.)
-R. Mors Sanctórum ejus. (Allelúja.)
-_
-$Oremus
-v. Præsta, quǽsumus, omnípotens Deus: ut, qui sanctórum tuórum Alexándri, Evéntii, Theodúli atque Juvenális natalítia cólimus; a cunctis malis imminéntibus, eórum intercessiónibus, líberemur. 
-$Per Dominum.
 
 [Lectio Prima]
 !Phil 2:8-9
 v. Humiliávit semetípsum factus obédiens usque ad mortem, mortem autem Crucis. Propter quod et Deus exaltávit illum, et donávit illi nomen, quod est super omne nomen.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
-R.br. Hoc signum Crucis erit in cælo, * Allelúja, allelúja.
-R. Hoc signum Crucis erit in cælo, * Allelúja, allelúja.
+[Responsory Breve Tertia]
+R.br. Hoc signum Crucis erit in cælo: * Allelúja, allelúja.
+R. Hoc signum Crucis erit in cælo: * Allelúja, allelúja.
 V. Cum Dóminus ad judicándum vénerit.
 R. Allelúja, allelúja.
 &Gloria
-R. Hoc signum Crucis erit in cælo, * Allelúja, allelúja.
-_
-V. Adorámus te, Christe, et benedícimus tibi, allelúja.
-R. Quia per Crucem tuam redemísti mundum, allelúja.
+R. Hoc signum Crucis erit in cælo: * Allelúja, allelúja.
+
+[Versum Tertia]
+@:Versum 2
 
 [Capitulum Sexta]
 !Gal 6:14
 v. Mihi autem absit gloriári, nisi in Cruce Dómini nostri Jesu Christi: per quem mihi mundus crucifíxus est, et ego mundo.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Adorámus te, Christe, et benedícimus tibi: * Allelúja, allelúja.
 R. Adorámus te, Christe, et benedícimus tibi: * Allelúja, allelúja.
 V. Quia per Crucem tuam redemísti mundum.
 R. Allelúja, allelúja.
 &Gloria
 R. Adorámus te, Christe, et benedícimus tibi: * Allelúja, allelúja.
-_
-V. Omnis terra adóret te, et psallat tibi, allelúja.
-R. Psalmum dicat nómini tuo, Dómine, allelúja.
+
+[Versum Sexta]
+@:Nocturn 3 Versum
 
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Omnis terra adóret te, et psallat tibi, * Allelúja, allelúja.
 R. Omnis terra adóret te, et psallat tibi, * Allelúja, allelúja.
 V. Psalmum dicat nómini tuo, Dómine.
 R. Allelúja, allelúja.
 &Gloria
 R. Omnis terra adóret te, et psallat tibi, * Allelúja, allelúja.
-_
-V. Hoc signum Crucis erit in cælo, allelúja.
-R. Cum Dóminus ad judicándum vénerit, allelúja.
+
+[Versum Nona]
+@:Versum 1
 
 [Ant 3]
 Crucem sanctam súbiit, * qui inférnum confrégit: accínctus est poténtia, surréxit die tértia. (Allelúja.)
+
+[Ant 3] (rubrica cisterciensis)
+O Crux splendídior * cunctis astris, mundo célebris, homínibus multum amábilis, sánctior univérsis; quæ sola fuísti digna portáre taléntum mundi, dulce lignum, dulces clavos, dúlcia ferens póndera; salva præséntem catérvam in tuis hódie láudibus congregátam. (Allelúia, allelúia, allelúia.)

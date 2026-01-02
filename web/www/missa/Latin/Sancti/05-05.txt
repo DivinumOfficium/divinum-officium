@@ -1,31 +1,26 @@
+[Officium]
+S. Pii V Papæ et Confessoris
+
 [Rank]
-S. Pii V Papæ Confessoris;;Duplex;;3;;vide C4b
+;;Duplex;;3;;vide C4b
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C4b
+(sed rubrica innovata)
+;;Duplex optional;;2;;vide C4b
 
 [Rule]
 Gloria
 
+[Name]
+Pium
+Postcommunio=Pio
+
 [Oratio]
-Deus, qui, ad conteréndos Ecclésiæ tuæ hostes et ad divínum cultum reparándum,~
-beátum Pium Pontíficem Máximum elígere dignátus es: fac nos ipsíus deféndi~
-præsídiis et ita tuis inhærére obséquiis; ut, ómnium hóstium superátis insídiis,~
-perpétua pace lætémur.
+Deus, qui, ad conteréndos Ecclésiæ tuæ hostes et ad divínum cultum reparándum, beátum Pium Pontíficem Máximum elígere dignátus es: fac nos ipsíus deféndi præsídiis et ita tuis inhærére obséquiis; ut, ómnium hóstium superátis insídiis, perpétua pace lætémur.
 $Per Dominum
 
-[Secreta]
-Sancti tui, quǽsumus, Dómine, nos úbique lætíficent: ut, dum eórum mérita~
-recólimus, patrocínia sentiámus.
-$Per Dominum
+[Secreta] (nisi rubrica 196)
+@Commune/C4
 
-[Secreta](rubrica 1960)
-Oblátis munéribus, quǽsumus, Dómine, Ecclésiam tuam benígnus illúmina: ut et gregis tui profíciat úbique succéssus, et grati fiant nómini tuo, te gubernánte, pastóres.
-$Per Dominum
-
-[Postcommunio]
-Præsta, quǽsumus, omnípotens Deus: ut, de percéptis munéribus grátias~
-exhibéntes, intercedénte beáto Pio Confessóre tuo atque Pontífice, benefícia~
-potióra sumámus.
-$Per Dominum
-
-[Postcommunio](rubrica 1960)
-Refectióne sancta enutrítam gubérna, quǽsumus, Dómine, tuam placátus Ecclésiam: ut, poténti moderatióne dirécta, et increménta libertátis accípiat et in religiónis integritáte persístat.
-$Per Dominum
+[Postcommunio] (nisi rubrica 196)
+@Commune/C4

@@ -1,30 +1,29 @@
-[Rank]
-S. Ambrosii Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+[Officium]
+S. Ambrosii Episcopi Confessoris et Ecclesiæ Doctoris
 
-[Name]
-Ambrose
+[Rank]
+;;Duplex;;3;;vide C4a
+(sed rubrica 1930)
+;;Duplex majus;;4;;vide C4a
+(sed rubrica cisterciensis)
+;;nihil;;0;;
 
 [Rule]
 vide C4a;
 Gloria
-CredoDa
+CredoDA
 no Vigil1960
 
-[Introitus]
-!Eccli 15:5
-v. In médio Ecclésiæ apéruit os ejus: et implévit eum Dóminus spíritu sapiéntiæ~
-et intelléctus: stolam glóriæ índuit eum.
-!Ps 91:2
-Bonum est confitéri Dómino: et psállere nómini tuo, Altíssime.
-&Gloria
-v. In médio Ecclésiæ apéruit os ejus: et implévit eum Dóminus spíritu sapiéntiæ~
-et intelléctus: stolam glóriæ índuit eum.
+[Name]
+Ambrósium
 
-[Oratio]
-Deus, qui pópulo tuo ætérnæ salútis beátum Ambrósium minístrum tribuísti: præsta,~
-quǽsumus; ut, quem Doctórem vitæ habúimus in terris, intercessórem habére~
-mereámur in cœlis.
-$Per Dominum
+[Introitus]
+@Commune/C4a
+
+[Commemoratio Oratio]
+!Commemoratio Vigiliæ Immaculatæ Conceptionis
+Deus, qui Unigéniti tui Matrem ab origináli culpa in sua Conceptióne mirabíliter præservásti: da, quǽsumus; ut sua nos intercessióne munítos, corde mundos fácias suæ interésse festivitáti:
+$Per eundem
 
 [Lectio]
 @Commune/C4a:Lectio
@@ -35,53 +34,31 @@ Ecce sacérdos magnus, qui in diébus suis plácuit Deo.
 !Eccli 44:20
 Non est inventus símilis illi, qui conserváret legem Excélsi. Allelúja, allelúja.
 !Ps 109:4
-Jurávit Dóminus, et non pænitébit eum: Tu es sacérdos in ætérnum, secúndum~
-órdinem Melchísedech. Allelúja.
+Jurávit Dóminus, et non pænitébit eum: Tu es sacérdos in ætérnum, secúndum órdinem Melchísedech. Allelúja.
 
 [Evangelium]
 @Commune/C4a:Evangelium
 
 [Offertorium]
-!Ps 88:25
-Véritas mea et misericórdia mea cum ipso: et in nómine meo exaltábitur cornu~
-ejus.
+@Commune/C2
 
 [Secreta]
-Omnípotens sempitérne Deus, múnera tuæ majestáti obláta, per intercessiónem~
-beáti Ambrósii Confessóris tui atque Pontíficis, ad perpétuam nobis fac~
-proveníre salútem.
+Omnípotens sempitérne Deus, múnera tuæ majestáti obláta, per intercessiónem beáti Ambrósii Confessóris tui atque Pontíficis, ad perpétuam nobis fac proveníre salútem.
 $Per Dominum
-
-[Communio]
-!Ps 88:36-38
-Semel jurávi in sancto meo: Semen ejus in ætérnum manébit, et sedes ejus sicut~
-sol in conspéctu meo, et sicut luna perfécta in ætérnum, et testis in cœlo~
-fidélis.
-
-[Postcommunio]
-Sacraménta salútis nostræ suscipiéntes, concéde, quǽsumus, omnípotens Deus: ut~
-beáti Ambrósii Confessóris tui atque Pontíficis nos ubíque orátio ádjuvet; in~
-cujus veneratióne hæc tuæ obtúlimus majestáti.
-$Per Dominum
-
-[Commemoratio Oratio]
-!Commemoratio Vigiliæ Immaculatæ Conceptionis
-Deus, qui Unigéniti tui Matrem ab origináli culpa in sua Conceptióne mirabíliter~
-præservásti: da, quǽsumus; ut sua nos intercessióne munítos, corde mundos~
-fácias suæ interésse festivitáti:
-$Per eundem
 
 [Commemoratio Secreta]
 !Commemoratio Vigiliæ Immaculatæ Conceptionis
-Múnera nostra, Dómine, apud tuam cleméntiam immaculátæ Dei Genetrícis commendet~
-orátio: quam ab omni origináli labe præservásti; ut dignum Fílii tui habitáculum~
-effici mererétur:
+Múnera nostra, Dómine, apud tuam cleméntiam immaculátæ Dei Genetrícis commendet orátio: quam ab omni origináli labe præservásti; ut dignum Fílii tui habitáculum effici mererétur:
 $Qui tecum
+
+[Communio]
+@Commune/C2
+
+[Postcommunio]
+Sacraménta salútis nostræ suscipiéntes, concéde, quǽsumus, omnípotens Deus: ut beáti Ambrósii Confessóris tui atque Pontíficis nos ubíque orátio ádjuvet; in cujus veneratióne hæc tuæ obtúlimus majestáti.
+$Per Dominum
 
 [Commemoratio Postcommunio]
 !Commemoratio Vigiliæ Immaculatæ Conceptionis
-Concéde, miséricors Deus, fragilitáti nostræ præsídium: ut, qui immaculátæ~
-Conceptiónis Genetrícis unigéniti Fílii tui festivitátem prævenímus;~
-intercessiónis ejus auxílio a nostris iniquitátibus resurgámus.
+Concéde, miséricors Deus, fragilitáti nostræ præsídium: ut, qui immaculátæ Conceptiónis Genetrícis unigéniti Fílii tui festivitátem prævenímus; intercessiónis ejus auxílio a nostris iniquitátibus resurgámus.
 $Per eúndem
-

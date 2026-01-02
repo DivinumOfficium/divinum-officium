@@ -1,5 +1,11 @@
-[Rank]
-Urban pope and martyr;;Simplex;;1.1;;vide C2
+[Officium]
+Szent Orbán pápa és hitvalló
 
-[Rule]
-vide C2;
+
+[Name]
+Orbán
+
+[Oratio] (communi Summorum Pontificum)
+@Commune/C2b:Oratio pro commemoratio
+(sed rubrica 196)
+@Commune/C2b

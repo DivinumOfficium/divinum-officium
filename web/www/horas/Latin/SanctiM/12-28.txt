@@ -3,6 +3,9 @@
 [Rule]
 12 lectiones
 
+[Ant 1] (rubrica cisterciensis)
+O quam * gloriósum est regnum, in quo cum Christo gaudent Innocéntes, amícti stolis albis sequúntur Agnum quocúmque íerit.
+
 [AntMatutinumM]
 Isti * sunt, qui venérunt ex magna tribulatióne, † et lavérunt stolas suas in sánguine Agni.;;33
 Si coram * homínibus torménta passi sunt, † spes electórum est immortális in ætérnum.;;60
@@ -11,13 +14,14 @@ Si coram * homínibus torménta passi sunt, † spes electórum est immortális 
 Innocéntium * pássio, Christi exsultátio: † Heródes confúsus est qui eos persecútus est.
 
 [Ant Matutinum]
-@CommuneM/C3:Ant Matutinum:1-9
+@Commune/C3::1-2
+@CommuneM/C3:AntMatutinumM:1
+@Commune/C3::4-7
 @:AntMatutinumM:1
-@CommuneM/C3:Ant Matutinum:11
+@Commune/C3::9
 @:AntMatutinumM:2
-@CommuneM/C3:Ant Matutinum:13-16
+@CommuneM/C3:AntMatutinumM:3-4
 ;;259;254;255
-@CommuneM/C3:Ant Matutinum:18-19
 
 [Lectio1]
 @Sancti/12-28:Lectio1
@@ -95,17 +99,3 @@ R. Sub throno Dei Sancti clamant: † Víndica sánguinem nostrum,
 * Deus noster.
 V. Víndicta Dómine sánguinem Sanctórum tuórum qui effúsus est.
 R. Deus noster.
-
-[Capitulum Laudes]
-@Sancti/12-28
-_
-@Commune/C3:Responsory Tertia:s/_.*//s
-
-[Capitulum Vespera]
-@Sancti/12-28:Capitulum Laudes
-_
-@Commune/C3:Responsory Sexta:s/_.*//s
-
-[Ant Vespera 3]
-@Sancti/12-25::s/129/131/
-

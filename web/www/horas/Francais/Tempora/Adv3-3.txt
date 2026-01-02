@@ -1,14 +1,12 @@
-[Rank]
-Feria IV Quattuor Temporum in Adventu;;Feria major;;2
+[Officium]
+Feria IV Quattuor Temporum in Adventu
 
-[Rank1960]
-Feria IV Quattuor Temporum Adventus;;Feria major;;4
+[Officium] (rubrica innovata)
+Feria IV infra Hebdomadam III Adventus
 
-[RankNewcal]
-Feria IV infra Hebdomadam III Adventus;;Feria major;;2
-
-[Rule]
-Preces Feriales
+[Oratio]
+Faites, nous vous le demandons, Seigneur : que la solennité approchant de notre rédemption nous apporte avec elle les grâces nécessaires pour la vie présente et nous obtienne la récompense du bonheur éternel.
+$Per Dominum.
 
 [Lectio1]
 @Sancti/03-25:Lectio7
@@ -40,11 +38,7 @@ R. Et son nom sera appelé Emmanuel
 R. Et son nom sera appelé Emmanuel
 
 [Ant 2]
-Il fut envoyé, l’Ange* Gabriel, à Marie, vierge qu’avait épousée Joseph.
-
-[Oratio]
-Faites, nous vous le demandons, Seigneur : que la solennité approchant de notre rédemption nous apporte avec elle les grâces nécessaires pour la vie présente et nous obtienne la récompense du bonheur éternel.
-$Per Dominum.
+Il fut envoyé, l’Ange * Gabriel, à Marie, vierge qu’avait épousée Joseph.
 
 [Ant 3]
 Voici la servante du Seigneur, * qu’il me soit fait selon votre parole.

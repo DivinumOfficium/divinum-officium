@@ -1,15 +1,5 @@
-[Rank]
-Dominica Sanctissimae Trinitatis;;Duplex I classis;;6.5
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Symbolum Athanasium
-No Commemoration
-Psalm5 Vespera=116
-Psalm5 Vespera3=113
-Prima=53
+[Officium]
+Dominica Sanctissimae Trinitatis
 
 [Ant Vespera]
 Glory be to thee, O equal Trinity * one Deity, from before all ages, so now and for evermore.
@@ -17,6 +7,40 @@ Praise and endless glory be * to God the Father, the Son, and the Holy Paraclete
 Let the glory of praise * be heard from the mouth of all to the Father, and to the begotten Son; let it equally resound with perpetual praise to the Holy Spirit.
 Praise be to God the Father, * and to his co-equal Son, and to thee, O Holy Ghost: with perpetual delight may it resound from our lips for ever.
 From whom are all things, * through whom are all things, and in whom are all things: to him be glory for evermore.
+
+[Hymnus Vespera]
+v. As fades the glowing orb of day, 
+To thee, great source of light, we pray;
+Blest Three in One, to every heart 
+Thy beams of life and love impart.
+_
+At early dawn, at close of day,
+To thee our vows we humbly pay;
+May we, mid joys that never end,
+With thy bright saints in homage bend.
+_
+To God the Father, and the Son,
+And Holy Spirit, Three in One,
+Be endless glory, as before
+The world began, so evermore.
+Amen.
+
+[HymnusM Vespera]
+v. O Trinity of blessed Light,
+O Unity of sovereign might,
+as now the fiery sun departs,
+shed Thou Thy beams within our hearts.
+_
+To Thee our morning song of praise,
+to Thee our evening prayer we raise;
+Thee may our glory evermore
+in lowly reverence adore.
+_
+All laud to God the Father be;
+all praise, Eternal Son, to Thee;
+all glory, as is ever meet,
+to God the Holy Paraclete. 
+Amen.
 
 [Versum 1]
 V. Bless we the Father, and the Son, and the Holy Ghost.
@@ -47,9 +71,6 @@ $Per Dominum
 [Invit]
 The True God is Unity in Trinity, and Trinity in Unity. * O come, let us worship.
 
-[HymnusM Matutinum]
-@:Hymnus Matutinum
-
 [Hymnus Matutinum]
 v. O God, by whose command is swayed
 This ordered world which thou hast made;
@@ -71,16 +92,18 @@ Amen.
 Be present, O One Almighty God, * Father, Son, and Holy Ghost.;;8
 We acknowledge that Thou art One in Being, * and Three in Persons.;;18
 We testify * that thy Being, thy Life, and thine Understanding are One and eternally unchangeable.;;23
-V. Bless we the Father, and the Son, and the Holy Ghost.
-R. Let us praise and exalt Him above all for ever.
 Upon thee do we call, * thee do we praise, thee do we worship, O Blessed Trinity.;;46
 Thou art our Hope, * Thou art our Salvation, Thou art our glory, O Blessed Trinity.;;47
 Be Thou our Deliverer, * our Saviour, our Life-giver, O Blessed Trinity.;;71
-V. Blessed art Thou, O Lord, in the firmament of heaven.
-R. And above all to be praised and glorified for ever.
 The Father is Love; * the Son is Grace; the Holy Ghost is Communion. Blessed be the Trinity.;;95
 The Father is Truth; * the Son is Truth; the Holy Ghost is Truth. Blessed be the Trinity.;;96
 The Being of the Father, * and of the Son, and of the Holy Ghost, is one. Blessed be the Trinity.;;97
+
+[Nocturn 2 Versum]
+V. Blessed art Thou, O Lord, in the firmament of heaven.
+R. And above all to be praised and glorified for ever.
+
+[Nocturn 3 Versum]
 V. By the Word of the Lord were the heavens made.
 R. And all the host of them by the Breath of His mouth.
 
@@ -164,7 +187,7 @@ At that time, Jesus said unto His disciples: All power is given unto Me in heave
 _
 Homily by St. Gregory of Nazianzus, Patriarch of Constantinople
 !Treatise on the Faith
-There is no Catholic but knoweth that the Father is a Very Father, the Son a Very Son, and the Holy Ghost a Very Holy Ghost, even as the Lord Himself saith unto His Apostles: "Go ye and baptize all nations in the Name of the Father, and of the Son, and of the Holy Ghost." This is that Perfect Trinity Who is but One being, and of Whom therefore we testify that His Substance is one. For we make no division in God, as divisions are made in bodies, but we testify, that, according to the power of the Divine Nature, Which standeth not in matter, the Persons named have a real existence, and that God is One.
+There is no Catholic but knoweth that the Father is a Very Father, the Son a Very Son, and the Holy Ghost a Very Holy Ghost, even as the Lord Himself saith unto His Apostles: “Go ye and baptize all nations in the Name of the Father, and of the Son, and of the Holy Ghost.” This is that Perfect Trinity Who is but One being, and of Whom therefore we testify that His Substance is one. For we make no division in God, as divisions are made in bodies, but we testify, that, according to the power of the Divine Nature, Which standeth not in matter, the Persons named have a real existence, and that God is One.
 
 [Responsory7]
 R. Bless we the Father, and the Son, and the Holy Ghost.
@@ -172,11 +195,11 @@ R. Bless we the Father, and the Son, and the Holy Ghost.
 V. Blessed art Thou, O Lord, in the firmament of heaven, and above all to be praised and glorified for ever.
 R. Let us praise and exalt Him above all for ever.
 
-[Lectio8a]
-We do not say, as some have dreamt, that the Begetting of the Son of God is an outgrowing from one part to another part neither do we say that He is the Word in the sense of a mere sound uttered by a voice, but we do believe that these three Names and the Persons meant by them are all of only One Being, One Majesty, and One Power. And therefore we testify that God is one, because this One-ness of His Majesty forbiddeth that we should use the Plural form of speech and say, "Gods." It is Catholic language to say, "Father and Son," but we cannot and must not say that the Father and the Son are two gods. And that, not because the Son of God is not by Himself God; yea, He is Very God of Very God but because we know that the Son of God is not from elsewhere, but from the One Father Himself, and therefore we say that God is One. This is the doctrine which Prophets and Apostles have delivered; this is the doctrine which the Lord Himself taught when He said: "I and the Father are One,” (John x. 30,) that is, He meant, as touching the one Divine Being, but as touching Persons, We are distinct.
-
-[Lectio8](rubrica 1960)
+[Lectio8] (rubrica 1960)
 @:Lectio8a:s/It is.*//s
+
+[Lectio8a]
+We do not say, as some have dreamt, that the Begetting of the Son of God is an outgrowing from one part to another part neither do we say that He is the Word in the sense of a mere sound uttered by a voice, but we do believe that these three Names and the Persons meant by them are all of only One Being, One Majesty, and One Power. And therefore we testify that God is one, because this One-ness of His Majesty forbiddeth that we should use the Plural form of speech and say, “Gods.” It is Catholic language to say, “Father and Son,” but we cannot and must not say that the Father and the Son are two gods. And that, not because the Son of God is not by Himself God; yea, He is Very God of Very God but because we know that the Son of God is not from elsewhere, but from the One Father Himself, and therefore we say that God is One. This is the doctrine which Prophets and Apostles have delivered; this is the doctrine which the Lord Himself taught when He said: “I and the Father are One,” (John x. 30,) that is, He meant, as touching the one Divine Being, but as touching Persons, We are distinct.
 
 [Responsory8]
 R. One Seraph cried unto another:
@@ -186,6 +209,9 @@ R. Holy, Holy, Holy is the Lord God of hosts.
 &Gloria
 R. The whole earth is full of His glory.
 
+[Responsory8] (rubrica cisterciensis)
+@Tempora/Pent03-2Feria:Responsory2
+
 [Lectio9]
 !Commemoration for the First Sunday after Pentecost
 From the Holy Gospel according to Luke
@@ -194,15 +220,17 @@ At that time: Jesus said unto His disciples Be ye merciful, as your Father also 
 _
 Homily by St. Augustine, Bishop of Hippo
 !15th Sermon on Matthew, Words of the Lord
-There are two works of mercy which free us, and which the Lord Himself hath briefly named in the Gospel "Forgive, and ye shall be forgiven give, and it shall be given unto you." "Forgive, and ye shall be forgiven”, such is the promise of pardon. "Give, and it shall be given unto you”, such is the promise of favour. As touching forgiveness thou hast trespasses which thou wouldest fain have forgiven, and them which have trespassed against thee, whom thou canst forgive. As touching favour, there are beggars that beg from thee, and thou art a beggar to God. When we pray, we are all beggars to God, standing at the door of the Great Householder, yea, falling down on our knees, and beseeching Him to give us somewhat and that somewhat is God Himself. What doth a beggar ask of thee Bread. And what dost thou ask of God but that Christ Who saith: "I am the Living Bread Which came down from heaven?" If ye will be forgiven, forgive ye. If ye will be pardoned, pardon ye. If ye will receive, "give, and it shall be given unto you."
+There are two works of mercy which free us, and which the Lord Himself hath briefly named in the Gospel “Forgive, and ye shall be forgiven give, and it shall be given unto you.” “Forgive, and ye shall be forgiven”, such is the promise of pardon. “Give, and it shall be given unto you”, such is the promise of favour. As touching forgiveness thou hast trespasses which thou wouldest fain have forgiven, and them which have trespassed against thee, whom thou canst forgive. As touching favour, there are beggars that beg from thee, and thou art a beggar to God. When we pray, we are all beggars to God, standing at the door of the Great Householder, yea, falling down on our knees, and beseeching Him to give us somewhat and that somewhat is God Himself. What doth a beggar ask of thee Bread. And what dost thou ask of God but that Christ Who saith: “I am the Living Bread Which came down from heaven?” If ye will be forgiven, forgive ye. If ye will be pardoned, pardon ye. If ye will receive, “give, and it shall be given unto you.”
 &teDeum
 
-[Lectio9](rubrica 1960)
+[Lectio9] (rubrica 1960)
 @:Lectio8a:s/.*(It is)/$1/
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera
+[Capitulum Laudes]
+!Rom 11:33
+v. O the depth of the riches of the wisdom and of the knowledge of God! How incomprehensible are his judgments, and how unsearchable his ways! 
+$Deo gratias
 
 [Hymnus Laudes]
 v. O thou, who dost all nature sway,
@@ -239,41 +267,36 @@ $Per Dominum
 !1 John 5:7
 v. And there are three who give testimony in heaven, the Father, the Word, and the Holy Ghost. And these three are one.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Bless we the Father, and the Son, * and the Holy Ghost.
 R. Bless we the Father, and the Son, * and the Holy Ghost.
 V. Let us praise and exalt Him above all for ever.
 R. And the Holy Ghost.
 &Gloria
 R. Bless we the Father, and the Son, * and the Holy Ghost.
-_
-V. Blessed art Thou, O Lord, in the firmament of heaven.
-R. And to be praised and glorified for ever.
 
 [Capitulum Sexta]
 !2 Cor 13:13
 v. The grace of our Lord Jesus Christ, and the charity of God, and the communication of the Holy Ghost be with you all. Amen.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Blessed art Thou, O Lord, * in the firmament of heaven.
 R. Blessed art Thou, O Lord, * in the firmament of heaven.
 V. And to be praised and glorified for ever.
 R. In the firmament of heaven.
 &Gloria
 R.Blessed art Thou, O Lord, * in the firmament of heaven.
-_
-V. By the Word of the Lord were the heavens made.
-R. And all the host of them by the Breath of His mouth.
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. By the Word of the Lord * were the heavens made.
 R. By the Word of the Lord * were the heavens made.
 V. And all the host of them by the Breath of His mouth.
 R. Were the heavens made.
 &Gloria
 R. By the Word of the Lord * were the heavens made.
-_
+
+[Versum Nona]
 V. Blessed be the Name of the Lord.
 R. From henceforth, now, and for ever.
 

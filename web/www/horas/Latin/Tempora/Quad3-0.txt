@@ -1,9 +1,18 @@
+[Officium]
+Dominica III in Quadragesima
+
 [Rank]
-Dominica III in Quadragesima;;I classis Semiduplex;;6
+;;I classis Semiduplex;;6.9
+
+[Rank] (rubrica 1570 aut rubrica 1888 aut rubrica 1617)
+;;II classis Semiduplex;;6.1
+
+[Rank] (rubrica 1906)
+;;II classis Semiduplex;;5.6
 
 [Rule]
 9 lectiones
-Symbolum Athanasium(rubrica 1570 aut rubrica 1910)
+Symbolum Athanasium(rubrica tridentina)
 
 [Ant 1]
 @Tempora/Quad2-6:Ant 3
@@ -86,7 +95,7 @@ V. Tulérunt autem fratres ejus túnicam illíus, mitténtes ad patrem: quam cum
 R. Fera péssima devorávit fílium meum Joseph.
 
 [Lectio5]
-Sit ígitur nobis propósitus sanctus Joseph tamquam spéculum castitátis. In ejus enim móribus, in ejus actibus lucet pudicitia, et quidam spléndet castimoniæ comes, nitor gratiæ. Unde étiam a paréntibus plus quam ceteri fílii diligebátur. Sed ea res invidiæ fuit: quod siléntio prætereundum non fuit: hinc enim arguméntum totius históriæ processit: simul ut cognoscamus, perfectum virum non moveri ulciscéndi dolóris invidia, nec malórum repéndere vicem. Unde et David ait: Si réddidi retribuéntibus mihi mala.
+Sit ígitur nobis propósitus sanctus Joseph tamquam spéculum castitátis. In ejus enim móribus, in ejus actibus lucet pudicitia, et quidam splendet castimoniæ comes, nitor gratiæ. Unde étiam a paréntibus plus quam ceteri fílii diligebátur. Sed ea res invidiæ fuit: quod siléntio prætereundum non fuit: hinc enim arguméntum totius históriæ processit: simul ut cognoscamus, perfectum virum non moveri ulciscéndi dolóris invidia, nec malórum repéndere vicem. Unde et David ait: Si réddidi retribuéntibus mihi mala.
 
 [Responsory5]
 R. Joseph dum intráret in terram Ægýpti, linguam quam non nóverat, audívit: manus ejus in labóribus serviérunt: 
@@ -144,13 +153,10 @@ R. Precor cæléstem Regem, ut me doléntem nímium fáciat eos cérnere.
 Fac benígne * in bona voluntáte tua, ut ædificéntur, Dómine, muri Jerúsalem.
 Dóminus * mihi adjútor est, non timébo quid fáciat mihi homo.
 Adhǽsit ánima mea * post te, Deus meus.
-Vim virtútis suæ * oblítus est ignis: ut púeri tui liberaréntur illǽsi.
-Sol et luna * laudáte Deum: quia exaltátum est nomen ejus solíus.
-
-[Ant Laudes] (rubrica 1570 aut rubrica 1910)
-Fac benígne * in bona voluntáte tua, ut ædificéntur, Dómine, muri Jerúsalem.
-Dóminus * mihi adjútor est, non timébo quid fáciat mihi homo.
-Deus, misereatur nostri, * et benedicat nobis.
+(sed rubrica Tridentina dicitur)
+Deus misereátur nostri, * et benedícat nos.
+(sed rubrica Monastica dicitur)
+Lábia mea * laudábunt te in vita mea, Deus meus.
 Vim virtútis suæ * oblítus est ignis: ut púeri tui liberaréntur illǽsi.
 Sol et luna * laudáte Deum: quia exaltátum est nomen ejus solíus.
 
@@ -168,9 +174,6 @@ Et cum ejecísset Jesus * dæmónium, locútus est mutus, et admirátæ sunt tur
 [Ant Tertia]
 Si in dígito Dei * eício dæmónia, profécto pervénit in vos regnum Dei.
 
-[Capitulum Tertia]
-@:Capitulum Laudes
-
 [Ant Sexta]
 Qui non cólligit mecum * dispérgit, et qui non est mecum, contra me est.
 
@@ -186,9 +189,6 @@ Cum immúndus spíritus * exíerit ab hómine, ámbulat per loca inaquósa, quæ
 !Eph 5:8-9
 v. Erátis enim aliquándo ténebræ, nunc autem lux in Dómino: ut fílii lucis ambuláte: fructus enim lucis est in omni bonitáte, et justítia, et veritáte.
 $Deo gratias
-
-[Capitulum Vespera]
-@:Capitulum Laudes
 
 [Ant 3]
 Extóllens vocem * quædam múlier de turba, dixit: Beátus venter qui te portávit, et úbera quæ suxísti. At Jesus ait illi: Quinímmo beáti, qui áudiunt verbum Dei, et custódiunt illud.

@@ -1,5 +1,10 @@
+[Officium]
+Feria III infra Hebdomadam II Adventus
+
 [Rank]
-Feria III infra Hebdomadam II Adventus;;Feria major;;2
+;;Feria major;;2.1
+(sed rubrica cisterciensis)
+;;Feria major;;1.15
 
 [Rule]
 Oratio Dominica
@@ -15,7 +20,7 @@ De Isaía Prophéta
 
 [Lectio2]
 !Isa 14:3-6
-3 Et erit in die illa, cum réquiem dedérit tibi Deus a labóre tuo, et a concussióne tua, et a servitúte dura, qua ante servísti:
+3 Et erit in die illa, cum réquiem déderit tibi Deus a labóre tuo, et a concussióne tua, et a servitúte dura, qua ante servísti:
 4 sumes parábolam istam contra regem Babylónis, et dices: Quómodo cessávit exáctor, quiévit tribútum? 
 5 Contrívit Dóminus báculum impiórum, virgam dominántium,
 6 cædéntem pópulos in indignatióne, plaga insanábili, subiciéntem in furóre gentes, persequéntem crudéliter.
@@ -25,13 +30,16 @@ De Isaía Prophéta
 
 [Lectio3]
 !Isa 14:12-15
-12 Quómodo cecidísti de cælo, lúcifer, qui mane oriébaris? corruísti in terram, qui vulnerábas gentes? 
+12 Quómodo cecidísti de cælo, lúcifer, qui mane oriebáris? corruísti in terram, qui vulnerábas gentes? 
 13 qui dicébas in corde tuo: In cælum conscéndam, super astra Dei exaltábo sólium meum, sedébo in monte testaménti, in latéribus Aquilónis. 
 14 Ascéndam super altitúdinem núbium, símilis ero Altíssimo. 
 15 Verúmtamen ad inférnum detrahéris in profúndum laci.
 
 [Responsory3]
 @Tempora/Adv1-2:Responsory3
+
+[Ant Laudes] (rubrica cisterciensis)
+@Tempora/Adv2-0
 
 [Ant 2]
 Super te, * Jerúsalem, oriétur Dóminus, et glória ejus in te vidébitur.

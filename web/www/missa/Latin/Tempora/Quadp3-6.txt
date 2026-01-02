@@ -1,8 +1,12 @@
-[Rank]
-Sabbato post Cineres;;Feria major;;2
+[Officium]
+Sabbato post Cineres
 
-[Rank1960]
-Sabbato post Cineres;;Feria major;;3.1
+[Rank]
+;;Feria major;;2.1
+(sed rubrica 1930)
+;;Feria major;;4.9
+(sed rubrica 196)
+;;Feria major;;3.9
 
 [Rule]
 no Gloria
@@ -59,5 +63,3 @@ v. Orémus.
 v. Humiliáte cápita vestra Deo.
 v. Fidéles tui, Deus, per tua dona firméntur: ut éadem et percipiéndo requírant, et quæréndo sine fine percípiant.
 $Per Dominum
-
-

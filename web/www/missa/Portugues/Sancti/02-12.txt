@@ -1,12 +1,5 @@
-[Rank]
-Ss. Septem Fundat. Ord. Servorum B. M. V.;;Duplex;;3;;vide C5
-
-[RankNewcal]
-Seven blessed fathers;;Duplex optional;;2;;vide C5
-
-[Rule]
-vide C5;;
-Gloria
+[Officium]
+Ss. Septem Fundat. Ord. Servorum B. M. V.
 
 [Comment]
 # 12 II – Os Fundadores da Ordem dos Servitas
@@ -49,7 +42,7 @@ V. Eles, quando iam, choravam, lançando as suas sementes na terra.
 V. Porém, ao voltarem, virão com o maior júbilo, trazendo os seus feixes de trigo.
 
 [Evangelium]
-@Commune/C4c:Evangelium
+@Commune/C5b:Evangelium
 
 [Offertorium]
 !Is 56:7
@@ -66,4 +59,3 @@ Eu vos escolhi no mundo para irdes e alcançardes fruto; e para que esse vosso f
 [Postcommunio]
 Fortalecidos com os celestiais mystérios, Senhor, Vos imploramos, fazei que, imitando o exemplo daqueles cuja festa celebramos, sejamos fiéis em permanecer ao pé da Cruz de Jesus com Maria, sua Mãe, e assim mereçamos receber o fruto da Redenção.
 $Per eundem
-

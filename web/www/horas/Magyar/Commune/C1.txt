@@ -1,21 +1,12 @@
-[Name]
+[Officium]
 Commune Apostolorum
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-
 [Ant Vespera]
-Az az én parancsom * hogy szeressétek egymást, amint én szerettelek benneteket;;109
-Senki sem szeret jobban * mint az, aki életét adja barátaiért;;110
-Ha megteszitek amit parancsolok nektek * a barátaim vagytok, mondja az Úr;;111
-Boldogok a békességben élők * boldogok a tiszta szívűek, mert meglátják az Istent;;112
-Kitartástokkal * megmentitek lelketeket;;116
-
-[Capitulum Vespera]
-!Eph 2:19-20
-v. Ezért már nem vagytok idegenek és jövevények, hanem a szentek polgártársai és Isten családjának tagjai. Apostolokra és prófétákra alapozott épület vagytok, s a szegletkő maga Krisztus Jézus.
-$Deo gratias.
+Az az én parancsom * hogy szeressétek egymást, amint én szerettelek benneteket.
+Senki sem szeret jobban * mint az, aki életét adja barátaiért.
+Ha megteszitek amit parancsolok nektek * a barátaim vagytok, mondja az Úr
+Boldogok a békességben élők * boldogok a tiszta szívűek, mert meglátják az Istent.
+Kitartástokkal * megmentitek lelketeket.
 
 [Hymnus Vespera]
 {:H-Exsultetorbisgaudiis:}v. Örömtől hangos a világ,
@@ -48,9 +39,6 @@ _
 Miképpen kezdetben vala,
 Örökös dicsőség legyen.
 Ámen.
-
-[HymnusM Vespera]
-@:Hymnus Vespera
 
 [Versum 1]
 V. A hír terjed, szerte a világon,
@@ -89,9 +77,17 @@ Könyörgő kis szolgáidat
 Mind az örök időkön át.
 Ámen.
 
+[Nocturn 2 Versum]
+V. Fejedelmekké teszed őket országok felett.
+R. Megemlékeznek nevedről, Urunk
+
+[Nocturn 3 Versum]
+V. Barátaid Uram tiszteletremeltóak
+R. És fejedelemséguk erős
+
 [Lectio1]
 Olvasmány szent Pál apostol Korintusiakhoz írott első leveléből
-!1 Cor 4:1-5
+!1Kor 4:1-5
 1 Úgy tekintsenek minket az emberek, mint Krisztus szolgáit és Isten titkainak gondnokait.
 2 A gondnokoktól természetesen egyet követelnek meg: hogy hűségesnek bizonyuljanak.
 3 A magam részéről nem törődöm azzal, hogy ti vagy más emberi bíróság mint ítéltek felőlem, hiszen önmagam fölött sem ítélkezem.
@@ -99,14 +95,14 @@ Olvasmány szent Pál apostol Korintusiakhoz írott első leveléből
 5 Ne ítélkezzetek hát időnap előtt, míg el nem jön az Úr. Ő majd megvilágítja a sötétség titkait, és földeríti a szívek szándékait. Akkor majd mindenki megkapja az elismerést az Istentől.
 
 [Lectio2]
-!1 Cor 4:6-9
+!1Kor 4:6-9
 6 Ezeket, testvérek, miattatok alkalmaztam magamra és Apollóra, hogy rajtunk tanuljátok meg: Ne többet annál, ami írva van! Senki se kérkedjék az egyikkel a másik rovására!
 7 Ki mond különbnek másoknál? Mid van, amit nem kaptál? Ha pedig kaptad, miért dicsekszel, mintha nem kaptad volna?
 8 Lám, már jóllaktatok, már meggazdagodtatok, nélkülünk is uralomra jutottatok! Bárcsak uralomra jutottatok volna, hogy veletek uralkodhatnánk!
 9 Úgy látom ugyanis, hogy Isten nekünk, apostoloknak az utolsó helyet jelölte ki, mint olyanoknak, akiket halálra szántak, hogy látványosságul szolgáljunk a világnak, az angyaloknak és az embereknek is.
 
 [Lectio3]
-!1 Cor 4:10-15
+!1Kor 4:10-15
 10 Mi oktalanok vagyunk Krisztusért, ti okosak Krisztusban. Mi gyöngék vagyunk, ti erősek. Titeket megbecsülnek, minket megvetnek.
 11 Mindmáig éhezünk és szomjazunk, nincs ruhánk és verést szenvedünk.
 12 Nincs otthonunk, és kezünk munkájával keressük kenyerünk. Ha átkoznak minket, áldást mondunk, ha üldöznek, türelemmel viseljük,
@@ -116,23 +112,14 @@ Olvasmány szent Pál apostol Korintusiakhoz írott első leveléből
 
 [Lectio7]
 Evangélium szent Máté Apostol kőnyvéből
-!Matt 19:27-29
-Akkor Péter vette át a szót: "Nézd, mi mindenünket elhagytuk, és követtünk téged. Mi lesz hát a jutalmunk?" És így tovább.
+!Mt 19:27-29
+Akkor Péter vette át a szót: „Nézd, mi mindenünket elhagytuk, és követtünk téged. Mi lesz hát a jutalmunk?” És így tovább.
 _
-[Ant Laudes]
-Az az én parancsom * hogy szeressétek egymást, amint én szerettelek benneteket.
-Senki sem szeret jobban * mint az, aki életét adja barátaiért.
-Ha megteszitek amit parancsolok nektek * a barátaim vagytok, mondja az Úr
-Boldogok a békességben élők * boldogok a tiszta szívűek, mert meglátják az Istent.
-Kitartástokkal * megmentitek lelketeket.
 
 [Capitulum Laudes]
-!Eph. 2:19-20
+!Ef. 2:19-20
 v. Ezért már nem vagytok idegenek és jövevények, hanem a szentek polgártársai és Isten családjának tagjai. Apostolokra és prófétákra alapozott épület vagytok, s a szegletkő maga Krisztus Jézus.
 $Deo gratias.
-
-[Hymnus Laudes]
-@Commune/C1:Hymnus Vespera
 
 [Versum 2]
 V. Hirdették az Úr művét
@@ -141,84 +128,46 @@ R. És megértették cselekedeteit
 [Ant 2]
 Ti akik mindent elhagytatok * és követtetek engem, százszoros jutalmat kaptok és az örök életet
 
-[Oratio]
-Add meg nekünk kérünk Mindenható Isten, hogy szent Apostolod N. vigiliájának ünneplése áhitatunkat és lelkünk egészségét szolgálja
-$Per Dominum
-
 [Lectio Prima]
-!Acts 5:41
+!ApCsel 5:41
 v. Boldogan távoztak a főtanácsból, mert méltók lettek rá, hogy Jézus nevéért gyalázatot szenvedjenek.
 
-[Capitulum Tertia]
-!Eph. 2:19-20
-v. Ezért már nem vagytok idegenek és jövevények, hanem a szentek polgártársai és Isten családjának tagjai. Apostolokra és prófétákra alapozott épület vagytok, s a szegletkő maga Krisztus Jézus.
-$Deo gratias.
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. A hír terjed, szerte a világon
 R. A hír terjed, szerte a világon
 V. A szózat elhangzik a föld határáig
 R. szerte a világon
 &Gloria
 R. A hír terjed, szerte a világon
-_
-V. Fejedelmekké teszed őket országok felett.
-R. Megemlékeznek nevedről, Urunk
 
 [Capitulum Sexta]
-!Acts 5:12
+!ApCsel 5:12
 v. Az apostolok keze sok jelet és csodát művelt a nép között.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Fejedelmekké teszed őket országok felett.
 R. Fejedelmekké teszed őket országok felett.
 V. Megemlékeznek nevedről, Urunk
 R. Országok felett
 &Gloria
 R. Fejedelmekké teszed őket országok felett.
-_
-V. Barátaid Uram tiszteletremeltóak
-R. És fejedelemséguk erős
 
-[Capitulum Nona]
-!Acts 5:41
-v. Boldogan távoztak a főtanácsból, mert méltók lettek rá, hogy Jézus nevéért gyalázatot szenvedjenek.
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Barátaid Uram tiszteletremeltóak
 R. Barátaid Uram tiszteletremeltóak
 V. És fejedelemséguk erős
 R. Tiszteletremeltóak
 &Gloria
 R. Barátaid Uram tiszteletremeltóak
-_
-V. Hirdették az Úr művét
-R. És megértették cselekedeteit
-
-[Versum 3]
-V. Hirdették az Úr művét
-R. És megértették cselekedeteit
 
 [Ant 3]
 Tartsatok ki a csatában * amit az ősi kigyóval vivtok, és elnyeritek az örökkévaló királyságot, alleluja
 
-
 [Lectio7 in 2 loco]
 Evangélium szent Máté Apostol kőnyvéből
-!Matt 19:27-29
-Azon időben mondá Péter Jézusnak: "Nézd, mi mindenünket elhagytuk, és követtünk~
-téged. Mi lesz hát a jutalmunk?" És így tovább.
+!Mt 19:27-29
+Azon időben mondá Péter Jézusnak: „Nézd, mi mindenünket elhagytuk, és követtünk téged. Mi lesz hát a jutalmunk?” És így tovább.
 _
 !Homily for St Benedict's Birth-day.
-If thou wilt be perfect, saith Christ, go and sell that thou hast, and give to~
-the poor, and come and follow Me and thou shalt have treasure in heaven.~
-~(Matth. xix. 21.) Yea, treasure that passeth not away! Unto such saith Jesus, at~
-the questioning of Peter Amen I say unto you, that ye which have followed Me,~
-in the regeneration, when the Son of Man shall sit in the throne of His glory,~
-ye also shall sit upon twelve thrones, judging the twelve tribes of Israel. He~
-taught them, which work for His Names sake in this life, to look for their~
-reward in another life that is, in the regeneration. In the regeneration! when~
-we who have been born dying creatures into a dying life, shall in the~
-resurrection be born again into an undying life.
+If thou wilt be perfect, saith Christ, go and sell that thou hast, and give to the poor, and come and follow Me and thou shalt have treasure in heaven. ~(Matth. xix. 21.) Yea, treasure that passeth not away! Unto such saith Jesus, at the questioning of Peter Amen I say unto you, that ye which have followed Me, in the regeneration, when the Son of Man shall sit in the throne of His glory, ye also shall sit upon twelve thrones, judging the twelve tribes of Israel. He taught them, which work for His Names sake in this life, to look for their reward in another life that is, in the regeneration. In the regeneration! when we who have been born dying creatures into a dying life, shall in the resurrection be born again into an undying life.

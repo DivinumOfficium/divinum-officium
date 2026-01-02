@@ -1,10 +1,12 @@
+[Officium]
+Feria Tertia infra Hebdomadam IV in Quadragesima
+
 [Rank]
-Feria Tertia infra Hebdomadam IV in Quadragesima;;Feria major;;2.9
-
-[Rank1960]
-Feria Tertia infra Hebdomadam IV in Quadragesima;;Feria major;;3
-
-[Rule]
+;;Feria major;;2.1
+(sed rubrica 1930)
+;;Feria major;;4.9
+(sed rubrica 196)
+;;Feria major;;3.9
 
 [Lectio1]
 Léctio sancti Evangélii secúndum Joánnem
@@ -16,7 +18,7 @@ Homilía sancti Augustíni Epíscopi
 Ille qui latébat, docébat, et palam loquebátur, et non tenebátur. Illud enim ut latéret, erat causa exémpli, hoc potestátis. Sed cum docéret, mirabántur Judǽi. Omnes quidem, quantum árbitror, mirabántur, sed non omnes convertebántur. Et unde admirátio? Quia multi nóverant ubi natus, quemádmodum fúerit educátus. Nunquam eum víderant lítteras discéntem: audiébant autem de lege disputántem, legis testimónia proferéntem, quæ nemo posset proférre, nisi legísset, nemo légeret, nisi lítteras didicísset: et ídeo mirabántur. Eórum autem admirátio, magístro facta est insinuándæ áltius veritátis occásio.
 
 [Responsory1]
-R. Quid me quærítis interfícere, hóminem qui vera locútus sum vobis? 
+R. Quid me quǽritis interfícere, hóminem qui vera locútus sum vobis? 
 * Si male locútus sum, testimónium pérhibe de malo: si autem bene, cur me cædis?
 V. Multa bona ópera operátus sum vobis: propter quod opus vultis me occídere?
 R. Si male locútus sum, testimónium pérhibe de malo: si autem bene, cur me cædis?
@@ -37,7 +39,7 @@ Si ergo intueámur diligénter quod ipse in exórdio dicit sanctus Evangelísta:
 @Tempora/Quad4-0:Responsory6
 
 [Ant 2]
-Quid me quærítis * interfícere, hóminem qui vera locútus sum vobis?
+Quid me quǽritis * interfícere, hóminem qui vera locútus sum vobis?
 
 [Oratio 2]
 Sacræ nobis, quǽsumus, Dómine, observatiónis jejúnia: et piæ conversatiónis augméntum, et tuæ propitiatiónis contínuum præstent auxílium.
@@ -45,6 +47,9 @@ $Per Dominum.
 
 [Ant 3]
 Nemo in eum misit manum: * quia nondum vénerat hora ejus.
+
+[Ant 3] (rubrica cisterciensis)
+Unum * opus feci, et omnes admirámini, quia totum hóminem sanum feci in Sábbato.
 
 [Oratio 3]
 Miserére, Dómine, pópulo tuo: et contínuis tribulatiónibus laborántem propítius respiráre concéde.

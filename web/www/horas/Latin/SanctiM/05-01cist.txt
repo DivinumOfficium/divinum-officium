@@ -1,0 +1,52 @@
+[Officium]
+Ss. Philippi et Jacobi Apostolorum
+
+[Rank]
+;;MM. maj.;;4;;ex C1
+
+[Rule]
+ex C1;
+12 lectiones
+Psalmi Dominica
+Antiphonas horas
+
+[Ant 1]
+Stabunt justi * in magna constántia advérsus eos qui se angustiavérunt et qui abstulérunt labóres eórum, allelúia.
+
+[Oratio]
+Deus, qui nos ánnua Apostolórum tuórum Philíppi et Jacóbi solemnitáte lætíficas: præsta, quǽsumus; ut, quorum gaudémus méritis, instruámur exémplis.
+$Per Dominum
+
+[Lectio5]
+@Sancti/05-01:Lectio4:s/Is, accépto .*//
+
+[Lectio6]
+@Sancti/05-01:Lectio4:s/.* Is, accépto/Is, accépto/
+
+[Lectio7]
+@Sancti/05-01:Lectio5:s/Cum autem .*//
+
+[Lectio8]
+@Sancti/05-01:Lectio6:s/.* Nam is nonagínta/Is nonagínta/ s/ his verbis:.*fáciunt// s/, séptimo Nerónis .*/./
+
+[Lectio9]
+@Sancti/05-01:Lectio7:s/Créditis, inquit, .*//
+
+[Lectio10]
+@Sancti/05-01:Lectio7:s/.* Créditis, inquit,/Créditis, inquit,/s s/$/~/
+@Sancti/05-01:Lectio8:s/Sed quid .*//
+
+[Lectio11]
+@Sancti/05-01:Lectio8:s/.* Sed quid/Sed quid/
+
+[Lectio12]
+@Sancti/05-01:Lectio9
+
+[Responsory12]
+@CommuneCist/C1:Responsory12 duo
+
+[Ant 2]
+Isti sunt * duæ olívæ, et duo candelábra lucéntia ante Dóminum; habent potestátem cláudere cælum núbibus et aperíre portas ejus, quia linguæ eórum claves cæli factæ sunt, allelúja.
+
+[Ant 3]
+Non turbétur * cor vestrum, neque formídet; Créditis in Deum, et in me crédite, in domo Patris mei mansiónes multæ sunt, allelúia, allelúia.

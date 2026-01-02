@@ -1,11 +1,5 @@
-[Rank]
-Feria IV Quattuor Temporum in Adventu;;Feria major;;2
-
-[Rank1960]
-Feria IV Quattuor Temporum Adventus;;Feria major;;3
-
-[RankNewcal]
-Feria IV infra Hebdomadam III Adventus;;Feria major;;2
+[Officium]
+Środa Suchych Dni Adwentu
 
 [Rule]
 Oratio Dominica
@@ -30,10 +24,6 @@ Niebiosa głoszą chwałę Boga, dzieło rąk Jego obwieszcza nieboskłon.
 &Gloria
 v. Niebiosa, spuśćcie rosę z góry, a obłoki niech zleją z deszczem Sprawiedliwego. Niech się otworzy ziemia i zrodzi Zbawiciela.
 
-[Oratio]
-Spraw, prosimy Cię, wszechmogący Boże, aby nadchodząca uroczystość naszego odkupienia przyniosła nam pomoc w życiu doczesnym i obdarzyła nas nagrodą życia wiecznego.
-$Per Dominum
-
 [LectioL1]
 Czytanie z Księgi Proroka Izajasza.
 !Iz 2:2-5
@@ -49,8 +39,14 @@ V. Kto wstąpi na górę Pana lub stanie na świętym Jego miejscu? Człowiek r�
 Pośpiesz, prosimy Cie, Panie, i nie zwlekaj, lecz ześlij nam potężną pomoc z nieba, aby radość z Twego przyjścia podniosła tych, co ufają Twej dobroci:
 $Qui vivis
 
+[Oratio]
+Spraw, prosimy Cię, wszechmogący Boże, aby nadchodząca uroczystość naszego odkupienia przyniosła nam pomoc w życiu doczesnym i obdarzyła nas nagrodą życia wiecznego.
+$Per Dominum
+
 [Lectio]
-@Commune/C10a:Lectio
+Czytanie z Księgi Proroka Izajasza.
+!Iz 7:10-15
+W one dni: Rzekł Pan do Achaza, mówiąc: «Proś Pana Boga twego o znak dla siebie: w głębinie piekła lub na wysokości w górze». I rzekł Achaz: «Nie będę prosił i nie będę kusił Pana». I rzekł: «Słuchajcie więc, domie Dawida: Czyż to mało dla was dręczyć ludzi, że dręczycie także Boga mojego? Przeto sam Pan da wam znak: Oto Panna pocznie i porodzi Syna i nazwą imię Jego Emmanuel. Masło i miód będzie pożywał, by umiał zło odrzucać, a wybierać dobro».
 
 [Graduale]
 !Ps 144:18; 144:21

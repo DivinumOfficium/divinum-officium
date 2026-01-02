@@ -1,47 +1,13 @@
-[Rank]
-S. Gregorii Nazianzeni Episcopi Confessoris Ecclasiae Doctorum;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a;
-Gloria
-CredoDA
-
-[Name]
-Gregori
+[Officium]
+S. Gregório Nazareno, Bispo, Confessor e Doutor
 
 [Comment]
 # 09 V – S. Gregório Nazareno, Bispo, Confessor e Doutor
 ! 3 classe
 ! Paramentos brancos
 
+[Name]
+Gregório
+
 [Introitus]
 @Commune/C4a:Introitus
-
-[Oratio]
-Ó Deus, que ao vosso povo destinastes o B. Gregório para ministro da eterna salvação, concedei-nos, Vos suplicamos, que, assim como o tivemos como Doutor durante a nossa vida na terra, assim gozemos a sua intercessão no céu.
-$Per Dominum.
-
-[Lectio]
-@Commune/C4a:Lectio
-
-[Graduale]
-@Commune/C4a:Graduale
-
-[GradualeP]
-@Commune/C4a:GradualeP
-
-[Evangelium]
-@Commune/C4a:Evangelium
-
-[Offertorium]
-@Commune/C4a:Offertorium
-
-[Secreta]
-@Commune/C4a:Secreta
-
-[Communio]
-@Commune/C4a:Communio
-
-[Postcommunio]
-@Commune/C4a:Postcommunio
-

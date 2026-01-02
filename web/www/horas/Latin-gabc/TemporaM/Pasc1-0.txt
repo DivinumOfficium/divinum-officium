@@ -1,0 +1,32 @@
+[Ant Matutinum 3N]
+Allelúja, * noli flere, María, allelúja: † resurréxit Dóminus, † allelúja, allelúja.
+
+[Lectio1]
+@Tempora/Pasc1-0:Lectio1:s/-7/-4/ s/5 .*//s
+
+[Lectio2]
+@Tempora/Pasc1-0:Lectio1:2-9 s/1-7/5-8/ s/1 .*5 /5 /s
+@Tempora/Pasc1-0:Lectio2:2
+
+[Lectio3]
+@Tempora/Pasc1-0:Lectio2:s/8-/9-/ s/8 .*9 /9 /s
+
+[Lectio6]
+@Tempora/Pasc1-0:Lectio5:s/Apostólicis .*//s
+
+[Lectio7]
+@Tempora/Pasc1-0:Lectio5:s/.* Apostólicis /Apostólicis /s s/$/~/
+@Tempora/Pasc1-0:Lectio6:s/Sint .*//s
+
+[Lectio8]
+@Tempora/Pasc1-0:Lectio6:s/.* Sint /Sint /s
+
+[Lectio9]
+@Tempora/Pasc1-0:Lectio7:s/Illud .*//s
+
+[Lectio10]
+@Tempora/Pasc1-0:Lectio7:s/.* Illud /Illud /s s/$/~/
+@Tempora/Pasc1-0:Lectio8:s/Qua in .*//s
+
+[Lectio11]
+@Tempora/Pasc1-0:Lectio8:s/.* Qua in /Qua in /s

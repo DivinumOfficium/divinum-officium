@@ -1,15 +1,11 @@
-[Rank]
-S. Ignatii Confessoris;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5;
-Gloria
+[Officium]
+Św. Ignacego Loyoli Wyznawcy
 
 [Comment]
 # 31 VII – Św. Ignacego Loyoli, Wyznawcy
 ! 3 klasy
 ! Szaty białe
-Św. Ignacy urodził się na zamku Loyolów w Hiszpanii z końcem XV wieku, jako trzynaste dziecko swoich rodziców. Do trzydziestego roku prowadził swobodne życie rycerskie. Raniony w obronie Pampeluny skracał sobie czas rekonwalescencji czytaniem żywotów świętych. Tknięty łaską Bożą postanowił pójść w ich ślady. Wyzdrowiawszy zawiesił oręż przed cudownym wizerunkiem Matki Bożej w opactwie benedyktyńskim Monserrat i oddał się rozmyślaniom w samotnej grocie Pod Manrezą. W oparciu o dziełko opata Garcia de Cisneros Exercitatorium vitae spirituale napisał sławne Ćwiczenia duchowne. Aby przynieść Kościołowi więcej pożytku, postanowił zostać kapłanem. Studiował na uniwersytetach w Alcala, Salamance i w Paryżu. Tam skupił przy sobie pierwszych towarzyszy i 15 sierpnia 1534 roku złożył z nimi śluby zakonne. Był to zawiązek nowego zakonu nazwanego Towarzystwem Jezusowym. Nowy zakon rozszerzył się bardzo szybko i oddał Kościołowi ogromne usługi, zwłaszcza w zwalczaniu protestantyzmu oraz w ewangelizacji pogan. Św. Ignacy kierował swoim zakonem aż do śmierci, która nastąpiła w Rzymie 31 Iipca 1556 roku. Pius XI ogłosił go patronem rekolekcji.
+Św. Ignacy urodził się na zamku Loyolów w Hiszpanii z końcem XV wieku, jako trzynaste dziecko swoich rodziców. Do trzydziestego roku prowadził swobodne życie rycerskie. Raniony w obronie Pampeluny skracał sobie czas rekonwalescencji czytaniem żywotów świętych. Tknięty łaską Bożą postanowił pójść w ich ślady. Wyzdrowiawszy zawiesił oręż przed cudownym wizerunkiem Matki Bożej w opactwie benedyktyńskim Monserrat i oddał się rozmyślaniom w samotnej grocie Pod Manrezą. W oparciu o dziełko opata Garcia de Cisneros Exercitatorium vitae spirituale napisał sławne Ćwiczenia duchowne. Aby przynieść Kościołowi więcej pożytku, postanowił zostać kapłanem. Studiował na uniwersytetach w Alcala, Salamance i w Paryżu. Tam skupił przy sobie pierwszych towarzyszy i 15 sierpnia 1534 roku złożył z nimi śluby zakonne. Był to zawiązek nowego zakonu nazwanego Towarzystwem Jezusowym. Nowy zakon rozszerzył się bardzo szybko i oddał Kościołowi ogromne usługi, zwłaszcza w zwalczaniu protestantyzmu oraz w ewangelizacji pogan. Św. Ignacy kierował swoim zakonem aż do śmierci, która nastąpiła w Rzymie 31 lipca 1556 roku. Pius XI ogłosił go patronem rekolekcji.
 
 [Introitus]
 !Flp 2:10-11
@@ -26,7 +22,7 @@ Boże, który dla rozszerzenia większej chwały Twojego imienia przez św. Igna
 $Per Dominum
 
 [Lectio]
-@Commune/C2a:Lectio
+@Commune/C2a-1:Lectio
 
 [Graduale]
 @Commune/C5:Graduale
@@ -49,4 +45,3 @@ Ogień przyszedłem rzucić na ziemię, a czegóż chcę, jeno aby zapłonął.
 [Postcommunio]
 Ofiara chwały, którą złożyliśmy Tobie, Panie, dzięki czyniąc za świętego Ignacego, niechaj nas za jego przyczyną doprowadzi do wiekuistego uwielbienia Twojego majestatu.
 $Per Dominum
-

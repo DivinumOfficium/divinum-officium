@@ -1,15 +1,8 @@
 [Rank]
 Ukazanie się Najśw. Marji Panny Niepokalanej;;Duplex majus;;4;;ex C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Ukazanie się Najśw. Marji Panny Niepokalanej;;Duplex optional;;2;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
 
 [Ant Vespera]
 Jasnością jest * wiecznej światłości i zwierciadłem bez zmazy.;;109
@@ -17,11 +10,6 @@ Niewiasta * odziana słońcem, i miesiąc pod nogami jéj, koronowana dwanaści�
 Tyś sława Jeruzalem, * tyś wesele Izraelskie, tyś cześć ludu naszego.;;121
 Błogosławionaś ty, * Panno Marjo, od Pana Boga wysokiego nade wszytkie niewiasty na ziemi.;;126
 Dziś imię twoje * uwielbił Pan, że nie odejdzie chwała twoja z ust ludzi.;;147
-
-[Capitulum Vespera]
-!Pnp 2:13-14
-v. Wstań, przyjaciółko moja, piękna moja, a przyjdź: gołębico moja, w rozpadlinach skalnych, w maclochu parkanu: ukaż mi oblicze twoje, niechaj głos twój zabrzmi w uszach moich.
-$Deo gratias
 
 [Ant 1]
 Ta jest * gołębica moja, doskonała moja, niepokalana moja.
@@ -66,28 +54,13 @@ Amen.
 Bądź pozdrowiona łaski pełna, * Pan z tobą.;;8
 Błogosławionaś ty między niewiastami, * i błogosławiony owoc żywota twego.;;18
 Nie bój się, Maryo, * albowiem nalazłaś łaskę u Pana.;;23
-V. Bóg, wszechmogący opasał mocą.
-R. I położył niepokalaną drogę moję.
 Uczynił mi wielkie rzeczy, * który możny jest, i święte imię jego.;;44
 Poświęcił * przybytek swój Najwyższy: Bóg w pośrodku jego, nie będzie poruszon.;;45
 Pan mię posiągł * na początku dróg swoich, a miłością wieczną umiłował cię.;;86
-V. Wspomoże ją Bóg obliczem swoim.
-R. Bóg w pośrodku jej, nie będzie poruszona.
 Ręka Pańska * posiliła cię, i dlatego będziesz błogosławiona na wieki.;;95
 Noli metuere, * non enim pro te, sed pro omnibus haec lex constituta est.;;96
 Ubłogosławił cię Pan * w mocy swojej, iż przez cię wniwecz obrócił nieprzyjacioły nasze.;;97
-V. Rozlała się wdzięczność po wargach twoich.
-R. Dlatego cię błogosławił Bóg na wieki.
 
-[Lectio1]
-Z Przysłów Salomona
-!Prz 8:12-17
-12 Ja, mądrość mieszkam w radzie, a przy myślach ćwiczonych bywam.
-13 Bojaźń Pańska nienawidzi złości:  pychą i hardością, i drogą złą, i usty dwujęzycznemi brzydzę się.
-14 Moja jest rada i prawość, moja jest roztropność, moje jest męstwo.
-15 Przez mię królowie królują, i prawodawcy stanowią sprawiedliwość.
-16 Przez mię książęta panują, i mocarze skazują sprawiedliwie.
-17 Ja miłuję tych, którzy mię miłują: a którzy rano czują do mnie, najdą mię.
 
 [Responsory1]
 R. Mądrość, która dosięga tedy od końca aż do końca mocnie i rozrządza wszytko wdzięcznie, zbudowała sobie dom.
@@ -172,6 +145,11 @@ Tyś sława Jeruzalem, * tyś wesele Izraelskie, tyś cześć ludu naszego.
 Błogosławionaś ty, * Panno Marjo, od Pana Boga wysokiego nade wszytkie niewiasty na ziemi.
 Dziś imię twoje * uwielbił Pan, że nie odejdzie chwała twoja z ust ludzi.
 
+[Capitulum Laudes]
+!Pnp 2:13-14
+v. Wstań, przyjaciółko moja, piękna moja, a przyjdź: gołębico moja, w rozpadlinach skalnych, w maclochu parkanu: ukaż mi oblicze twoje, niechaj głos twój zabrzmi w uszach moich.
+$Deo gratias
+
 [Hymnus Laudes]
 v. Zorzo, poprzedzająca słońce,
 szczęsna zwiastunko zbawienia,
@@ -211,14 +189,15 @@ Piękna zbawienia jutrzenko * z Ciebie, Dziewico Maryjo, wyszło słońce sprawi
 !Syr 24:25-26
 v. We mnie wszelka łaska drogi i prawdy, we mnie wszytka nadzieja żywota i cnoty. Przejdźcie do mnie wszyscy, którzy mnie pragniecie, i najedzcie się owoców moich.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Któraż to jest, która wstępuje z puszczy, * Opływająca rozkoszami.
 R. Któraż to jest, która wstępuje z puszczy, * Opływająca rozkoszami.
 V. Podparłszy się miłego swego.
 R. Opływająca rozkoszami.
 &Gloria
 R. Któraż to jest, która wstępuje z puszczy, * Opływająca rozkoszami.
-_
+
+[Versum Tertia]
 V. Widziały ją córki Syjońskie.
 R. I za najszczęśliwszą wystawiały.
 
@@ -227,25 +206,27 @@ R. I za najszczęśliwszą wystawiały.
 v. Przy mnie są bogactwa i sława, pyszne majętności i sprawiedliwość.  Lepszy bowiem jest owoc mój niż złoto i kamienie drogie.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Ja matka * Pięknej miłości.
 R. Ja matka * Pięknej miłości.
 V. I bogobojności, i uznania, i nadzieje świętej.
 R. Pięknej miłości.
 &Gloria
 R. Ja matka * Pięknej miłości.
-_
+
+[Versum Sexta]
 V. We mnie wszelka łaska drogi i prawdy.
 R. We mnie wszytka nadzieja żywota i cnoty.
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Kto mię najdzie, * Najdzie żywot.
 R. Kto mię najdzie, * Najdzie żywot.
 V. I wyczerpnie zbawienie od Pana.
 R. Najdzie żywot.
 &Gloria
 R. Kto mię najdzie, * Najdzie żywot.
-_
+
+[Versum Nona]
 V. Przejdźcie do mnie wszyscy, którzy mnie pragniecie.
 R. I najedzcie się owoców moich.
 
@@ -287,4 +268,4 @@ po wszystek wieczności czas.
 Amen.
 
 [Ant 3]
-Dziś chwalebna Królowa niebios * na ziemi się ukazała; dziś przyniosła swemu ludowi słowa zbawienia i zapewnienia pokoju: dziś chóry Aniołów i wiernych drżą z radości, święcąc Niepokalane Poczęcie. Alleluja.
+Dziś chwalebna Królowa niebios * na ziemi się ukazała; dziś przyniosła swemu ludowi słowa zbawienia i zapewnienia pokoju: dziś chóry Aniołów i wiernych drżą z radości, święcąc Niepokalane Poczęcie, alleluja.

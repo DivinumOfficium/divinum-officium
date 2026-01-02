@@ -1,11 +1,20 @@
-[Rank]
-S. Ignatii Episcopi et Martyris;;Duplex;;3;;vide C2
+[Officium]
+S. Ignatii Episcopi et Martyris
 
-[Rank1570]
-S. Ignatii Episcopi et Martyris;;Semiduplex;;2;;vide C2
+[Rank]
+;;Duplex;;3.01;;vide C2
+(sed rubrica 1570)
+;;Semiduplex;;2.2;;vide C2
+(sed rubrica 1960)
+;;Duplex;;3;;vide C2
 
 [Rule]
+vide C2;
 Gloria
+
+[Name]
+Ignátii
+Postcommunio=Ignátio
 
 [Introitus]
 !Gal 6:14.
@@ -15,13 +24,9 @@ Meménto, Dómine, David: et omnis mansuetúdinis ejus.
 &Gloria
 v. Mihi autem absit gloriári, nisi in Cruce Dómini nostri Jesu Christi: per quem mihi mundus crucifíxus est, et ego mundo.
 
-[Oratio]
-Infirmitátem nostram respice, omnípotens Deus: et, quia pondus própriæ actionis gravat, beáti Ignátii Martyris tui atque Pontificis intercéssio gloriosa nos prótegat.
-$Per Dominum
-
 [Lectio]
 Léctio Epistolæ beáti Pauli Apóstoli ad Romános
-!Rom 8:35-39.
+!Rom 8:35-39
 Fratres: Quis nos separábit a caritáte Christi: tribulátio, an angustia, an fames, an núditas, an perículum, an persecútio, an gládius? sicut scriptum est: Quia propter te mortificámur tota die: æstimáti sumus sicut oves occisiónis. Sed in his ómnibus superámus propter eum, qui diléxit nos. Certus sum enim, quia neque mors, neque vita, neque ángeli, neque principátus, neque virtútes, neque instántia, neque futúra, neque fortitúdo, neque altitúdo, neque profúndum, neque creatúra alia poterit nos separáre a caritáte Dei, quæ est in Christo Jesu, Dómino nostro.
 
 [Graduale]
@@ -32,9 +37,16 @@ V. Non est invéntus símilis illi, qui conserváret legem Excélsi. Allelúja, 
 !Gal 2:19-20.
 V. Christo confíxus sum Cruci: vivo ego, jam non ego, vivit vero in me Christus. Allelúja.
 
+[GradualeP]
+Allelúja, allelúja.
+!Gal 2:19-20.
+Christo confíxus sum Cruci: vivo ego, jam non ego, vivit vero in me Christus. Allelúja.
+!Ps 20:4.
+Posuísti, Domine, super caput ejus corónam de lápide pretióso. Allelúja.
+
 [Tractus]
 !Eccli 44:16.
-Ecce sacérdos magnus, qui m diébus suis plácuit Deo.
+Ecce sacérdos magnus, qui in diébus suis plácuit Deo.
 !Eccli 44:20.
 Non est invéntus símilis illi, qui conserváret legem Excélsi.
 !Ps 20:3-4.
@@ -42,31 +54,13 @@ Desidérium ánimæ ejus tribuísti ei: et voluntáte labiórum ejus non fraudá
 V. Quoniam prævenísti eum in benedictiónibus dulcedinis.
 V. Posuísti in cápite ejus coronam de lápide pretióso.
 
-[GradualeP]
-Allelúja, allelúja
-!Gal 2:19-20.
-Christo confíxus sum Cruci: vivo ego, jam non ego, vivit vero in me Christus. Allelúja,
-!Ps 20:4.
-Posuísti, Domine, super caput ejus corónam de lápide pretióso. Allelúja.
-
 [Evangelium]
-Sequentia sancti Evangelii secundum Joánnem
-!Joann 12:24-26.
-In illo témpore: Dixit Jesus discípulis suis: Amen, amen, dico vobis, nisi granum fruménti cadens in terram, mórtuum fúerit, ipsum solum manet: si autem mórtuum fúerit, multum fructum affért. Qui amat ánimam suam, perdet eam: et qui odit ánimam suam in hoc mundo, in vitam ætérnam custódit eam. Si quis mihi mínistrat, me sequátur: et ubi sum ego, illic et miníster meus erit. Si quis mihi ministráverit, honorificábit eum Pater meus.
+Sequéntia ++ sancti Evangélii secúndum Joánnem
+!Joann 12:24-26
+In illo témpore: Dixit Jesus discípulis suis: Amen, amen, dico vobis, nisi granum fruménti cadens in terram, mórtuum fúerit, ipsum solum manet: si autem mórtuum fúerit, multum fructum affert. Qui amat ánimam suam, perdet eam: et qui odit ánimam suam in hoc mundo, in vitam ætérnam custódit eam. Si quis mihi mínistrat, me sequátur: et ubi sum ego, illic et miníster meus erit. Si quis mihi ministráverit, honorificábit eum Pater meus.
 
 [Offertorium]
-!Ps 8:6-7.
-Glória et honóre coronásti eum: et constituísti eum super ópera mánuum tuárum, Domine.
-
-[Secreta]
-Hóstias tibi, Dómine, beáti Ignátii Martyris tui atque Pontíficis dicatas méritis, benígnus assúme: et ad perpétuum nobis tríbue proveníre subsídium.
-$Per Dominum
+@Commune/C1v
 
 [Communio]
-!  
 Fruméntum Christi sum: déntibus bestiárum molar, ut panis mundus invéniar.
-
-[Postcommunio]
-Refécti participatióne múneris sacri, quǽsumus, Dómine, Deus noster: ut, cujus exséquimur cultum, intercedénte beáto Ignátio Mártyre tuo atque Pontífice, sentiámus efféctum.
-$Per Dominum
-

@@ -1,8 +1,14 @@
-[Rank]
-Dominica IV Adventus;;Semiduplex;;5.6
+[Officium]
+Dominica IV Adventus
 
 [Rank]
-Dominica IV Adventus;;Semiduplex;;6
+;;Semiduplex II. classis;;5.6
+
+[Rank] (rubrica 1570 aut rubrica 1888)
+;;Semiduplex II. classis;;6.1
+
+[Rank] (rubrica 196)
+;;Semiduplex;;6.01
 
 [Rule]
 no Gloria
@@ -11,18 +17,14 @@ Suffr=Maria1;Ecclesiæ,Papa;;
 
 [Introitus]
 !Isa 45:8
-v. Roráte, cœli, désuper, et nubes pluant justum: aperiátur terra, et gérminet~
-Salvatórem
+v. Roráte, cœli, désuper, et nubes pluant justum: aperiátur terra, et gérminet Salvatórem
 !Ps 18:2
 Cœli enárrant glóriam Dei: et ópera mánuum ejus annúntiat firmaméntum.
 &Gloria
-v. Roráte, cœli, désuper, et nubes pluant justum: aperiátur terra, et gérminet~
-Salvatórem
+v. Roráte, cœli, désuper, et nubes pluant justum: aperiátur terra, et gérminet Salvatórem
 
 [Oratio]
-Excita, quǽsumus, Dómine, poténtiam tuam, et veni: et magna nobis virtúte~
-succúrre; ut per auxílium grátiæ tuæ, quod nostra peccáta præpédiunt,~
-indulgéntiæ tuæ propitiatiónis accéleret:
+Excita, quǽsumus, Dómine, poténtiam tuam, et veni: et magna nobis virtúte succúrre; ut per auxílium grátiæ tuæ, quod nostra peccáta præpédiunt, indulgéntia tuæ propitiatiónis accéleret:
 $Qui vivis
 
 [Lectio]
@@ -32,39 +34,24 @@ Fratres: Sic nos exístimet homo ut minístros Christi, et dispensatóres myster
 
 [Graduale]
 !Ps 144:18; 144:21
-Prope est Dóminus ómnibus invocántibus eum: ómnibus, qui ínvocant eum in~
-veritáte.
-V. Laudem Dómini loquétur os meum: et benedícat omnis caro nomen sanctum ejus.~
-Allelúja, allelúja,
+Prope est Dóminus ómnibus invocántibus eum: ómnibus, qui ínvocant eum in veritáte.
+V. Laudem Dómini loquétur os meum: et benedícat omnis caro nomen sanctum ejus. Allelúja, allelúja,
 V. Veni, Dómine, et noli tardáre: reláxa facínora plebis tuæ Israël. Allelúja.
 
 [GradualeF]
 !Ps 144:18; 144:21
-Prope est Dóminus ómnibus invocántibus eum: ómnibus, qui ínvocant eum in~
-veritáte.
+Prope est Dóminus ómnibus invocántibus eum: ómnibus, qui ínvocant eum in veritáte.
 V. Laudem Dómini loquétur os meum: et benedícat omnis caro nomen sanctum ejus.
 
 [Evangelium]
-Sequéntia ++ sancti Evangélii secundum Lucam
-!Luc 3:1-6
-Anno quintodécimo impérii Tibérii Cǽsaris, procuránte Póntio Piláto Judǽam,~
-tetrárcha autem Galilǽæ Heróde, Philíppo autem fratre ejus tetrárcha Iturǽæ et~
-Trachonítidis regionis, et Lysánia Abilínæ tetrárcha, sub princípibus sacerdotum~
-Anna et Cáipha: factum est verbum Domini super Joannem, Zacharíæ filium, in~
-deserto. Et venit in omnem regiónem Jordánis, prǽdicans baptísmum pæniténtiæ in~
-remissiónem peccatórum, sicut scriptum est in libro sermónum Isaíæ Prophétæ: Vox~
-clamántis in desérto: Paráte viam Dómini: rectas fácite sémitas ejus: omnis~
-vallis implébitur: et omnis mons et collis humiliábitur: et erunt prava in~
-dirécta, et áspera in vias planas: et vidébit omnis caro salutáre Dei.
+@Tempora/Adv3-6
 
 [Offertorium]
 !Luc 1:28
-Ave, María, gratia plena; Dóminus tecum: benedícta tu in muliéribus, et~
-benedíctus fructus ventris tui.
+Ave, María, gratia plena; Dóminus tecum: benedícta tu in muliéribus, et benedíctus fructus ventris tui.
 
 [Secreta]
-Sacrifíciis præséntibus, quǽsumus, Dómine, placátus inténde: ut et devotióni~
-nostræ profíciant et salúti.
+Sacrifíciis præséntibus, quǽsumus, Dómine, placátus inténde: ut et devotióni nostræ profíciant et salúti.
 $Per Dominum
 
 [Communio]
@@ -72,7 +59,5 @@ $Per Dominum
 Ecce, Virgo concípiet et páriet fílium: et vocábitur nomen ejus Emmánuel.
 
 [Postcommunio]
-Sumptis munéribus, quǽsumus, Dómine: ut, cum frequentatióne mystérii, crescat~
-nostræ salútis efféctus.
+Sumptis munéribus, quǽsumus, Dómine: ut, cum frequentatióne mystérii, crescat nostræ salútis efféctus.
 $Per Dominum
-

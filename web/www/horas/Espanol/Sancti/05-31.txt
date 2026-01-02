@@ -1,24 +1,8 @@
 [Rank]
 Beatæ Mariæ Virginis Reginæ;;Duplex II classis;;5.1;;ex C11
 
-[Rank1960]
+[Rank] (rubrica 196)
 Beatæ Mariæ Virginis Reginæ;;Duplex II classis;;5;;ex C11
-
-[RankNewcal]
-Beatæ Mariæ Virginis Reginæ;;Duplex;;3;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Ipsa Virgo Virginum
-Doxology=Nat
-Antiphonas horas
-Psalmi Dominica
-
-[Capitulum Vespera]
-!Sir 24, 5; 24, 7
-v. Yo salí de la boca del Altísimo como primogénita de toda la creación. Habité en lo más alto, con mi trono sobre un pilar de nubes.
-$Deo gratias
 
 [Versum 1]
 V. Salve, Reina de misericordia, aleluya.
@@ -64,17 +48,19 @@ Amén.
 [Ant Matutinum]
 Bendita Tú * entre las mujeres, y bendito el fruto de tu vientre, aleluya.;;8
 Como mirra * escogida, diste olor de suavidad, santa Madre de Dios.;;18
-Ante el tálamo * de esta Virgen cantadnos repetidamente dulces cánticos que nos recuerden sus santas acciones.;;23
-V. Salve, Reina de misericordia. Aleluya.
-R. De la cual nació Cristo, nuestro Rey. Aleluya.
+Ante el tálamo * de esta Virgen cantadnos repetidamente dulces cánticos que nos recuerden sus santas acciones.;;23 Aleluya.
 Con esa tu gallardía * y hermosura, camina, avanza prósperamente y reina, aleluya.;;44
 Dios la protegerá * con su faz; en medio de ella está Dios; no será conmovida.;;45
-Tenemos en ti nuestra morada, * en la cual todos residimos gozosos, oh santa Madre de Dios.;;86
-V. Junto a la cuz de Jesús estaba su Madre. Aleluya.
-R. Partícipe de su pasión, Reina de todo el mundo. Aleluya.
+Tenemos en ti nuestra morada, * en la cual todos residimos gozosos, oh santa Madre de Dios.;;86 Aleluya.
 Alégrate, Virgen María; * Tú sola has destruido todas las herejías en todo el universo, aleluya.;;95
 Dígnate * recibir mis alabanzas, oh Virgen sagrada; dame fortaleza contra tus enemigos, aleluya.;;96
 Después del parto, * oh Virgen, permaneciste sin mancha; santa Madre de Dios, intercede por nosotros, aleluya.;;97
+
+[Nocturn 2 Versum]
+V. Junto a la cuz de Jesús estaba su Madre. Aleluya.
+R. Partícipe de su pasión, Reina de todo el mundo. Aleluya.
+
+[Nocturn 3 Versum]
 V. Me felicitarán todas las generaciones. Aleluya.
 R. Porque el Poderoso ha hecho obras grandes por mí. Aleluya.
 
@@ -98,7 +84,7 @@ R. Porque has sido elevada por encima del coro de los ángeles a los reinos cele
 !Sir 24:14-16
 14 Desde el principio y antes de los cielos me creó y hasta el fin no dejaré de ser. En el tabernáculo santo, delante de él, ministré. 
 15 Y así tuve en Sion morada fija y estable, reposé en la ciudad de Él amada, y en Jerusalén tuve la sede de mi imperio. 
-16 Eché raíces en el pueblo glorioso, en la porción del Señor, en su heredad. 
+16 Eché raíces en el pueblo glorioso, en la porción del Señor, en su heredad.
 
 [Responsory2]
 R. Honramos la dignidad real de la virgen María. 
@@ -114,7 +100,7 @@ R. Porque ella reina con Cristo para siempre. Aleluya.
 27 pues mi memoria es, sobre miel, dulce; y mi heredad, sobre de miel panal.
 28 Mi memoria en generaciones de siglos. 
 29 Los que me comen, aún tendrán hambre y los que me beben, aún tendrán sed.
-30 Quien me oye, no será confundido, y quien obra en mí, no pecará. 
+30 Quien me oye, no será confundido, y quien obra en mí, no pecará.
 
 [Responsory3]
 R. Dios la escogió y la eligió; 
@@ -188,7 +174,9 @@ María es Reina también y distribuidora de la gracia. Esto se indica en el libr
 &teDeum
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Sir 24, 5; 24, 7
+v. Yo salí de la boca del Altísimo como primogénita de toda la creación. Habité en lo más alto, con mi trono sobre un pilar de nubes.
+$Deo gratias
 
 [Versum 2]
 V. La Virgen María subió al cielo. Aleluya.
@@ -197,69 +185,42 @@ R. Y reina con Cristo eternamente. Aleluya.
 [Ant 2]
 Noble Reina del mundo, * María, Virgen perpetua, Tú que engendraste a Cristo, Señor y Salvador de todos, intercede por nuestra paz y salvación. Aleluya.
 
-[Commemoratio 2]
-!Conmemoración de Sta. Petronila, Virgen
-Ant. El reino de los cielos se parece a un comerciante en perlas finas, que, al encontrar una perla de gran valor, se va a vender todo lo que tiene y la compra. Aleluya.
-_
-V. En tus labios se derrama la gracia. Aleluya.
-R. El Señor te bendice eternamente. Aleluya.
-_
-$Oremus
-v. Escúchanos, Dios Salvador nuestro; para que, en la alegría de la fiesta de Santa Petronila, virgen, aprendamos a servirte con amor. 
-$Per Dominum
-
 [Lectio Prima]
 !Sir 24:30-31
 v. El que me escucha no se avergonzará, el que trabaja conmigo no pecará. Los que me explican tendrán la vida eterna.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Salve, Reina de misericordia * Aleluya, aleluya. 
 R. Salve, Reina de misericordia * Aleluya, aleluya. 
 V. De la cual nació Cristo.
 R. Aleluya, aleluya. 
 &Gloria
 R. Salve, Reina de misericordia * Aleluya, aleluya. 
-_
-V. Junto a la cruz de Jesús estaba su Madre. Aleluya.
-R. Partícipe de su pasión, Reina de todo el mundo. Aleluya.
 
 [Capitulum Sexta]
 !Sir 24:9-11
 v. Me poseen en todos los continentes: regí todos los pueblos y naciones, me sometí al corazón de poderosos y humildes.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Junto a la cruz de Jesús estaba su Madre * Aleluya, aleluya. 
 R. Junto a la cruz de Jesús estaba su Madre * Aleluya, aleluya. 
 V. Partícipe de su pasión, Reina de todo el mundo. 
 R. Aleluya, aleluya. 
 &Gloria
 R. Junto a la cruz de Jesús estaba su Madre * Aleluya, aleluya. 
-_
-V. Me felicitarán todas las generaciones. Aleluya.
-R. Porque el Poderoso ha hecho obras grandes por mí. Aleluya.
 
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Me felicitarán todas las generaciones * Aleluya, aleluya. 
 R. Me felicitarán todas las generaciones * Aleluya, aleluya. 
 V. Porque el Poderoso ha hecho obras grandes por mí. 
 R. Aleluya, aleluya. 
 &Gloria
 R. Me felicitarán todas las generaciones * Aleluya, aleluya. 
-_
-V. La Virgen María subió al cielo. Aleluya.
-R. Y reina con Cristo eternamente. Aleluya.
-
-[Versum 3]
-V. La Virgen María subió al cielo. Aleluya.
-R. Y reina con Cristo eternamente. Aleluya.
 
 [Ant 3]
 Madre santa * y Virgen sin mancha, gloriosa Reina del mundo, intercede por nosotros ante el Señor. Aleluya.

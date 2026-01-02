@@ -1,30 +1,51 @@
-[Rank]
-Czwartek Wieczerzy Pańskiej;;Feria privilegiata Duplex I classis;;7
+[Officium]
+Czwartek Wieczerzy Pańskiej
 
-[Rule]
-Psalmi minores Dominica
-Antiphonas horas
-Omit Incipit Invitatorium Hymnus Capitulum Lectio Preces Commemoratio Suffragium Conclusion
-Limit Benedictiones Oratio
-9 lectiones 1960
-Capitulum Versum 2 ad Laudes tantum
-Minores sine Antiphona
-Feria
+[Ant Vespera]
+Kielich * zbawienia wezmę: a imienia Pańskiego wzywać będę.;;115
+Z tymi, * którzy nienawidzą pokoju, byłem spokojny: gdym mówił z nimi: prześladowali mię bez przyczyny.;;119
+Od człowieka * złego: wybaw mię, Panie.;;139
+Strzeż mię * od sidła, które na mię zastawili, i od obrazy tych, którzy broją złości.;;140
+Oglądałem się * na prawą stronę: a baczyłem, i nie był, ktoby mię poznał.;;141
+
+[Oratio Matutinum]
+v. Wejrzyj, prosimy Cię, Panie, na tę czeladkę Twoją, za którą Pan nasz Jezus Chrystus nie zawahał się ponieść męki krzyżowej i oddać się w ręce grzeszników.
+!dokończyć po cichu
+$Qui tecum
+
+[Oratio]
+v. Chrystus stał się za nas posłusznym aż do śmierci.
+!po cichu
+$Pater noster
+!nieco głośniej
+_
+&psalm(50)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
+@:Oratio Matutinum
+
+[Prelude Vespera] (rubrica 1955 aut rubrica 1960)
+!Ci którzy biorą udział we Mszy wieczornej Ostatniej Wieczerzy Pana, tego dnia, nie odmawiają Nieszporów.
 
 [Ant Matutinum]
 Gryzła mnie żarliwość * domu twego i urągania urągających tobie na mnie spadły.;;68
 Niech się obrócą wstecz * i zawstydzą się, którzy mi chcą zła.;;69
 Boże mój * wyrwij mnie z ręki grzesznika.;;70
-V. Niech się obrócą wstecz i zawstydzą się.
-R. Którzy mi chcą złego.
 Wybawił Pan * ubogiego z mocy przemożnego, i nędznego, który nie miał pomocnika.;;71
 Bezbożni myśleli * i mówili złośliwie, o ucisku wyniośle mówili.;;72
 Powstań Boże, * rozsądź sprawę moją.;;73
-V. Boże mój wyrwij mnie. z ręki grzesznika.
-R. I z ręki przeciw prawu czyniącego i niegodziwego.
 Mówię do niegodziwych: * nie mówcie przeciw Bogu nieprawości.;;74
 Ziemia się przeraziła * i zamilkła, gdy powstał Bóg na sąd.;;75
 W dzień mego utrapienia, * szukałem Boga, rękami memi.;;76
+
+[Nocturn 1 Versum]
+V. Niech się obrócą wstecz i zawstydzą się.
+R. Którzy mi chcą złego.
+
+[Nocturn 2 Versum]
+V. Boże mój wyrwij mnie. z ręki grzesznika.
+R. I z ręki przeciw prawu czyniącego i niegodziwego.
+
+[Nocturn 3 Versum]
 V. Powstań, Panie.
 R. Rozsądź sprawę moją.
 
@@ -125,7 +146,7 @@ R. Pójdźcie, włóżmy drewno w chleb jego, a wygładźmy go z ziemi żywiący
 [Lectio8]
 !1 Kor 11:23-26
 23 Albowiem ja wziąłem od Pana, com téż wam podał: Iż Pan Jezus nocy, której był wydan, wziął chleb,
-24 A dzięki uczyniwszy, łamał i rzekł: Bierzcie a jedzcie; to jest ciało moje, które za was będzie wydane: to czyńcie na moje pamiątkę.
+24 a dzięki uczyniwszy, łamał i rzekł: Bierzcie a jedzcie; to jest ciało moje, które za was będzie wydane: to czyńcie na moje pamiątkę.
 25 Także i kielich po wieczerzy, mówiąc: Ten kielich nowy Testament jest we krwi mojéj. To czyńcie, ilekroć pić będziecie, na pamiątkę moję.
 26 Albowiem ilekroć będziecie ten chleb jedli i kielich pili, śmierć Pańską będziecie opowiadać, aż przyjdzie.
 
@@ -167,31 +188,6 @@ R. Który jadał mój chleb; wielkie mi uczynił podejście.
 
 [Ant 2]
 Zdrajca zaś * dał im był znak mówiąc: Któregokolwiek pocałuję, ten jest, imajcie go.
-
-[Oratio]
-v. Chrystus stał się za nas posłusznym aż do śmierci.
-!po cichu
-$Pater noster
-!nieco głośniej
-_
-&psalm(50)
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
-@:Oratio Matutinum
-
-[Oratio Matutinum]
-v. Wejrzyj, prosimy Cię, Panie, na tę czeladkę Twoją, za którą Pan nasz Jezus Chrystus nie zawahał się ponieść męki krzyżowej i oddać się w ręce grzeszników.
-!dokończyć po cichu
-$Qui tecum
-
-[Prelude Vespera] (rubrica 1955 aut rubrica 1960)
-!Ci którzy biorą udział we Mszy wieczornej Ostatniej Wieczerzy Pana, tego dnia, nie odmawiają Nieszporów.
-
-[Ant Vespera]
-Kielich * zbawienia wezmę: a imienia Pańskiego wzywać będę.;;115
-Z tymi, * którzy nienawidzą pokoju, byłem spokojny: gdym mówił z nimi: prześladowali mię bez przyczyny.;;119
-Od człowieka * złego: wybaw mię, Panie.;;139
-Strzeż mię * od sidła, które na mię zastawili, i od obrazy tych, którzy broją złości.;;140
-Oglądałem się * na prawą stronę: a baczyłem, i nie był, ktoby mię poznał.;;141
 
 [Ant 3]
 Gdy oni wieczerzali, * wziął Jezus chleb i błogosławił i łamał i dawał uczniom swoim.

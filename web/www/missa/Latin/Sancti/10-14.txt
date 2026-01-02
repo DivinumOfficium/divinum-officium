@@ -1,11 +1,15 @@
-[Rank]
-S. Callisti Papæ et Martyris;;Duplex;;3;;vide C4b
+[Officium]
+S. Callisti Papæ et Martyris
 
-[Rank1570]
-S. Callisti Papæ et Martyris;;Semiduplex;;2;;vide C3
+[Rank]
+;;Duplex;;3;;vide C2b
+(sed rubrica 1570)
+;;Semiduplex;;2.2;;vide C2b
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C2b
 
 [Rule]
-vide C4b;
+vide C2b;
 Gloria
 
 [Oratio]
@@ -13,11 +17,9 @@ Deus, qui nos cónspicis ex nostra infirmitáte defícere: ad amórem tuum nos m
 $Per Dominum
 
 [Secreta]
-Mýstica nobis, Dómine, prosit oblátio: quæ nos et a reátibus nostris expédiat,~
-et perpétua salvatióne confírmet.
+Mýstica nobis, Dómine, prosit oblátio: quæ nos et a reátibus nostris expédiat, et perpétua salvatióne confírmet.
 $Per Dominum
 
 [Postcommunio]
-Quǽsumus, omnípotens Deus: ut reátus nostros múnera sacráta puríficent, et~
-recte vivéndi nobis operéntur efféctum.
+Quǽsumus, omnípotens Deus: ut reátus nostros múnera sacráta puríficent, et recte vivéndi nobis operéntur efféctum.
 $Per Dominum

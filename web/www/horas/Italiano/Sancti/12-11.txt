@@ -1,27 +1,12 @@
-[Rank]
-S. Damasi Papae et Confessoris;;Semiduplex;;2.5;;vide C4
+[Officium]
+S. Damasi Papae et Confessoris
 
-[Rank1960]
-S. Damasi Papae et Confessoris;;Duplex;;3;;vide C4
+[Name]
+Damaso
 
-[RankNewcal]
-S. Damasi Papae et Confessoris;;Semiduplex;;2.5;;vide C4
-
-[Rule]
-vide C4;
-9 lectiones;
-OPapaC=Damaso;
-Doxology=Nat
-Omit Preces
-Commemoratio3
-
-[Oratio]
+[Oratio] (nisi communi Summorum Pontificum)
 Esaudisci, Signore, le nostre preghiere: e, per intercessione del tuo beato Confessore e Pontefice Da-maso, accordaci, placato, il perdono e la pace. 
 $Per Dominum
-
-[Commemoratio 2]
-!Commemorazione del giorno entro l'Ottava dell'Immacolata Concezione della B.V.M..
-@Sancti/12-08:Oratio
 
 [Lectio4]
 Damaso, Spagnolo, uomo eccellente e versato nelle Scritture, convocò il primo concilio di Costantinopoli, in cui soffocò la nefasta eresia d'Eunomio e Macedonio. Egli condannò di nuovo il conciliabolo di Rimini, già rigettato da Liberio; nel quale, come scrive san Girolamo, gli artifici di Ursacio e specialmente di Valente avevano fatto condannare la fede Nicena, così che il mondo, gemendo, stupì di essere Ariano.
@@ -34,16 +19,3 @@ Stabilì la pena del taglione per coloro che avessero accusato un altro falsamen
 
 [Lectio94]
 Damaso, oriundo dalla Spagna, uomo distinto ed erudito nelle sacre Scritture, indetto il primo concilio di Costantinopoli, estinse la nefanda eresia di Eunomio e di Macedonio. Condannò nuovamente il conciliabolo di Rimini, già precedentemente condannato da Liberio, nel quale, come scrisse san Girolamo, soprattutto per le frodi di Valente e di Ursacio fu proclamata la condanna della fede di Nicea. Edificò due basiliche: una sotto nome di san Lorenzo presso il teatro di Pompeo, l'altra sulla via Ardeatina nei pressi delle catacombe. Stabilì, come era già in uso in molti luoghi, che in tutte le chiese, giorno e notte, fossero cantati i salmi a due cori e alla fine di ogni salmo si dicesse: Gloria al Padre e al Figlio e allo Spirito Santo. Per suo ordine, san Girolamo tradusse fedelmente il nuovo Testamento secondo il testo greco. Ritrovò molti corpi di martiri e ne onorò la memoria con versi. Illustre per virtù, dottrina e prudenza, quasi ottuagenario, si addormentò nel Signore, sotto l'imperatore Teodosio il Grande.
-
-[Lectio7]
-@Commune/C4:Lectio7 in 2 loco
-
-[Lectio8]
-@Commune/C4:Lectio8 in 2 loco
-
-[Lectio9]
-@Commune/C4:Lectio9 in 2 loco
-
-[Ant 3] (rubrica divino aut rubrica 1955 aut rubrica 1960)
-@Commune/C4:Ant 3 summi Pontificis
-

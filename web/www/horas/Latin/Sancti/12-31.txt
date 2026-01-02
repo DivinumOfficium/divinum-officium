@@ -1,72 +1,46 @@
-[Rank]
-S. Silvestri Papæ et Confessoris;;Duplex;;3;;vide C4
+[Officium]
+S. Silvestri Papæ et Confessoris
 
-[Rank](rubrica 1960)
-Die septima post Nativitatem;;Semiduplex;;5;;ex Sancti/12-25
+[Rank]
+;;Duplex;;3;;vide C4b
+(sed rubrica 196)
+;;Commemoratio;;2.9;;vide C4b
 
 [Rule]
-vide C4;
+vide C4b;
 9 lectiones
-OPapaC=Silvéstrum;
+Lectio1 OctNat
 
-[Oratio]
-Da, quǽsumus, omnipotens Deus: ut beati Silvéstri Confessóris tui atque~
-Pontíficis veneránda solémnitas, et devotiónem nobis augeat et salútem.
-$Per Dominum.
+[Name]
+Silvéstri
+(sed rubrica 196)
+Silvéstrum
 
-[Lectio1]
-De Epístola ad Romános
-!Rom 3:19-22
-19 Scimus autem quóniam quæcúmque lex lóquitur, iis, qui in lege sunt, lóquitur: ut omne os obstruátur, et súbditus fiat omnis mundus Deo:
-20 quia ex opéribus legis non justificábitur omnis caro coram illo. Per legem enim cognítio peccáti. 
-21 Nunc autem sine lege justítia Dei manifestáta est: testificáta a lege et prophétis.
-22 Justítia autem Dei per fidem Jesu Christi in omnes, et super omnes, qui credunt in eum: non enim est distínctio.
+[Ant Vespera]
+@Sancti/12-25:Ant Vespera 3
+(sed rubrica cisterciensis)
+@CommuneCist/C4
 
-[Responsory1]
-@Sancti/12-25:Responsory2
-
-[Lectio2]
-!Rom 3:23-26
-23 Omnes enim peccavérunt et egent glória Dei. 
-24 Justificáti gratis per grátiam ipsíus, per redemptiónem, quæ est in Christo Jesu,
-25 quem propósuit Deus propitiatiónem per fidem in sánguine ipsíus, ad ostensiónem justítiæ suæ propter remissiónem præcedéntium delictórum 
-26 in sustentatióne Dei, ad ostensiónem justítiæ ejus in hoc témpore: ut sit ipse justus, et justíficans eum, qui est ex fide Jesu Christi.
-
-[Responsory2]
-@Sancti/12-25:Responsory3
-
-[Lectio3]
-!Rom 3:27-31
-27 Ubi est ergo gloriátio tua? Exclúsa est. Per quam legem? Factórum? Non: sed per legem fídei. 
-28 Arbitrámur enim justificári hóminem per fidem sine opéribus legis. 
-29 An Judæórum Deus tantum? nonne et géntium? Immo et géntium: 
-30 quóniam quidem unus est Deus, qui justíficat circumcisiónem ex fide, et præpútium per fidem. 
-31 Legem ergo destrúimus per fidem? Absit: sed legem statúimus. 
-
-[Responsory3]
-@Sancti/12-25:Responsory4
+[Oratio] (nisi rubrica 196)
+@Commune/C4
 
 [Lectio4]
-Silvester Romanus, patre Rufino, a prima ætate operam dedit Cyrino presbytero; cujus doctrinam et mores egregie imitátus est. Hic, sæviénte persecutióne, in Soracte monte latitáverat; et trigesimum annum agens, presbyter sanctæ Romanæ Ecclésiæ a Marcellino Pontifice creatur. Quo in munere cum omni laude clericis aliis antecelleret, in Melchíadis póstea locum successit, imperatóre Constantino, qui antea pacem Ecclésiæ Christi lege publica dederat. Vix Ecclésiæ gubernácula tractanda susceperat, Constantinum, jam Crucis signo cælitus illustrátum, et de hoste Maxentio victórem, ad tuéndam propagandamque christianam religiónem impense fovit. Quem etiam, uti vetus Ecclésiæ Romanæ refert traditio, Apostolórum imagines recognóscere fecit, sacro baptísmate tinxit, et ab infidelitátis lepra mundávit.
+Silvéster Románus, patre Rufíno, a prima ætáte óperam dedit Cyríno presbýtero; cujus doctrínam et mores egrégie imitátus est. Hic, sæviénte persecutióne, in Sorácte monte latitáverat; et trigésimum annum agens, présbyter sanctæ Románæ Ecclésiæ a Marcellíno Pontífice creátur. Quo in múnere cum omni laude cléricis áliis antecélleret, in Melchíadis póstea locum succéssit, imperatóre Constantíno, qui ántea pacem Ecclésiæ Christi lege pública déderat. Vix Ecclésiæ gubernácula tractánda suscéperat, Constantínum, jam Crucis signo cǽlitus illustrátum, et de hoste Maxéntio victórem, ad tuéndam propagandámque christiánam religiónem impénse fovit. Quem étiam, uti vetus Ecclésiæ Románæ refert tradítio, Apostolórum imágines recognóscere fecit, sacro baptísmate tinxit, et ab infidelitátis lepra mundávit.
 
 [Lectio5]
-Itaque, auctore Silvestro, pius imperátor quam christifidelibus publice templa exstruéndi tribúerat facultátem, eam exemplo suo confirmávit. Multas enim eréxit Basílicas, scílicet Lateranensem Christo Salvatori, Vaticanum sancto Petro, Ostiensem sancto Paulo, sancto Lauréntio in Agro Verano, sanctæ Cruci in Atrio Sessoriáno, sancto Petro et Marcellino ac sanctæ Agneti in viis Lavicana et Nomentana, et alias; quas sacris imagínibus splendide exornávit, et, munéribus prædiísque attributis, magnificentíssime locupletávit. Hoc Pontifice habitum est Concílium Nicænum primum, ubi præsidéntibus ejus legatis, præsénteque Constantino et trecentis decem et octo epíscopis, sancta et catholica fides explicáta est, Arío ejusdem sectatóribus condemnátis; quod étiam Concílium, peténtibus Pátribus, confirmávit in synodo Romæ habita, ubi íterum Aríus condemnatus est. Multa item decreta fecit Ecclésiæ Dei utília, quæ sub ejus nómine recenséntur: id est, ut a solo episcopo chrisma conficerétur; ut presbyter chrísmate baptizáti summum liníret vérticem; ut diáconi dalmáticis in ecclésia, et palla linóstima ad lævam uteréntur; ut in lineo tantum velo sacrifícium altaris conficerétur.
+Itaque, auctóre Silvéstro, pius imperátor quam christifidélibus públice templa exstruéndi tribúerat facultátem, eam exémplo suo confirmávit. Multas enim eréxit Basílicas, scílicet Lateranénsem Christo Servatóri, Vaticánam sancto Petro, Ostiénsem sancto Paulo, sancto Lauréntio in Agro Veráno, sanctæ Cruci in Atrio Sessoriáno, sancto Petro et Marcellíno ac sanctæ Agnéti in viis Lavicána et Nomentána, et álias; quas sacris imagínibus spléndide exornávit, et, munéribus prædiísque attribútis, magnificentíssime locupletávit. Hoc Pontífice hábitum est Concílium Nicǽnum primum, ubi præsidéntibus ejus legátis, præsénteque Constantíno et trecéntis decem et octo epíscopis, sancta et cathólica fides explicáta est, Arío ejúsdem sectatóribus condemnátis; quod étiam Concílium, peténtibus Pátribus, confirmávit in sýnodo Romæ hábita, ubi íterum Aríus condemnátus est. Multa item decréta fecit Ecclésiæ Dei utília, quæ sub ejus nómine recenséntur: id est, ut a solo epíscopo chrisma conficerétur; ut présbyter chrísmate baptizáti summum liníret vérticem; ut diáconi dalmáticis in ecclésia, et palla linóstima ad lævam uteréntur; ut in líneo tantum velo sacrifícium altáris conficerétur.
 
 [Lectio6]
-Idem præscripsisse traditur tempus ómnibus, qui ordínibus initiáti essent, exercéndi síngulos ordines in Ecclésia, antequam quisque ad altiórem gradum ascenderet; ut láicus clerico non inférret crimen, ne clericus apud profanum judicem causam diceret. Sábbati et Dominici diéi nómine retento, réliquos hebdómadæ dies feriárum nómine distinctos, ut jam ante in Ecclésia vocari cœperant, appellari vóluit, quo significarétur, quotídie clericos, abjecta ceterárum rerum cura, uni Deo prorsus vacare debére. Huic cælésti prudéntiæ, qua ecclésiam administrabat, insígnis vitæ sanctitas, et benignitas in páuperes perpetuo respóndit. Quo in genere providit, ut clericis copiosis egéntes conjungeret, et sacris virgínibus, quæ ad victum necessaria essent, suppeditaréntur. Vixit in pontificatu annos viginti unum, menses decem, diem unum. Sepultus est in cœmeterio Priscillæ, via Salaria. Fecit ordinatiónes septem mense Decembri, quibus creávit presbyteros quadragínta duos, diaconos viginti quinque, episcopos per diversa loca sexagínta quinque.
+Idem præscripsísse tráditur tempus ómnibus, qui ordínibus initiáti essent, exercéndi síngulos órdines in Ecclésia, ántequam quisque ad altiórem gradum ascénderet; ut láicus clérico non inférret crimen, ne cléricus apud profánum júdicem causam díceret. Sábbati et Domínici diéi nómine reténto, réliquos hebdómadæ dies feriárum nómine distínctos, ut jam ante in Ecclésia vocári cœperant, appellári vóluit, quo significarétur, quotídie cléricos, abjécta ceterárum rerum cura, uni Deo prorsus vacáre debére. Huic cælésti prudéntiæ, qua ecclésiam administrábat, insígnis vitæ sánctitas, et benígnitas in páuperes perpétuo respóndit. Quo in génere provídit, ut cléricis copiósis egéntes conjúngeret, et sacris virgínibus, quæ ad victum necessária essent, suppeditaréntur. Vixit in pontificátu annos vigínti unum, menses decem, diem unum. Sepúltus est in cœmeterio Priscíllæ, via Salária. Fecit ordinatiónes septem mense Decémbri, quibus creávit presbýteros quadragínta duos, diáconos vigínti quinque, epíscopos per divérsa loca sexagínta quinque.
 
-[Lectio7]
-@Commune/C4:Lectio7 in 2 loco
+[Lectio94]
+Silvéster Románus, patre Rufíno, sæviénte persecutióne, in Sorácte monte latitáverat; et trigésimum annum agens, présbyter sanctæ Románæ Ecclésiæ est creátus. Melchíade Pontífice vita functo, in ejus locum succéssit, imperatóre Constantíno, qui ántea pacem Ecclésiæ Christi lege pública déderat. Quem Silvéster ad tuéndam propagandámque religiónem ita fovit, ut imperátor multas eréxerit basílicas, eásque municicentíssime locupletárit. Hoc Pontífice hábitum est concílim Nicænum primum, ab ipso Silvéstro confirmátum, quo Aríus condemnátus fuit. Vitæ sanctitáte et in páuperes benignitáte insígnis, óbiit in pace et sepúltus es in cœmetério Priscíllæ.
 
-[Lectio8]
-@Commune/C4:Lectio8 in 2 loco
+[Lectio7](rubrica tridentina)
+@Commune/C5
 
-[Lectio9]
-@Commune/C4:Lectio9 in 2 loco
+[Lectio8](rubrica tridentina)
+@Commune/C5
 
-[Commemoratio 2]
-@Sancti/12-25:Octava
-
-[Commemoratio 3]
-@Sancti/12-25:Octava
-
+[Lectio9](rubrica tridentina)
+@Commune/C5

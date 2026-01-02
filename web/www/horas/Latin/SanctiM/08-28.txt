@@ -1,10 +1,24 @@
 @Sancti/08-28
 
-[Rank]
-S. Augustini Episcopi et Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4
+[Rule] (rubrica tridentina aut rubrica divino)
+12 lectiones
 
-[Responsory1]
+[Responsory1] (rubrica 1963)
 @Commune/C4a:Responsory8
 
+[Lectio5]
+@Sancti/08-28:Lectio4:s/Sed.*//s
+
+[Lectio6]
+@Sancti/08-28:Lectio4:s/.*(Sed)/$1/s s/$/~/
+@Sancti/08-28:Lectio5:s/Nullum.*//s
+
+[Lectio7]
+@Sancti/08-28:Lectio5:s/.*(Nullum)/$1/s s/$/~/
+@Sancti/08-28:Lectio6:s/Itaque.*//s
+
+[Lectio8]
+@Sancti/08-28:Lectio6:s/.*(Itaque)/$1/s
+
 [Ant 3]
-@Commune/C4a:Ant 1:s/N\./Augustíne/
+@Commune/C4a:Ant 1

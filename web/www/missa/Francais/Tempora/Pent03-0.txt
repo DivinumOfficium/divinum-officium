@@ -1,0 +1,22 @@
+@Tempora/Pent03-0r
+
+[Officium]
+Dominica III Post Pentecosten infra Octavam SSmi Cordis D.N.J.C
+
+[Rule]
+Gloria
+Credo
+Prefatio=Cord
+Prefatio1960=Trinitate
+
+[Commemoratio Oratio]
+!Pro Octava sacratissimi Cordis Jesu:
+@Tempora/Pent02-5:Oratio
+
+[Commemoratio Secreta]
+!Pro Octava sacratissimi Cordis Jesu.
+@Tempora/Pent02-5:Secreta
+
+[Commemoratio Postcommunio]
+!Pro Octava sacratissimi Cordis Jesu.
+@Tempora/Pent02-5:Postcommunio

@@ -1,14 +1,5 @@
-[Rank]
-S. Raphaëlis Archangeli;;Duplex majus;;4;;ex Sancti/05-08
-
-[Rule]
-ex Sancti/05-08
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=137
-Horas1960 Feria
+[Officium]
+St Raphaël, Archange
 
 [Ant Vespera]
 Il a été envoyé, * l’Ange Raphaël, à Tobie et à Sara pour les guérir.
@@ -16,11 +7,6 @@ L’Ange étant entré * près de Tobie le salua en disant : Joie soit à toi, t
 Aie bon courage, * Tobie, car bientôt Dieu te guérira.
 Bénissez le Dieu du ciel * et devant tous les vivants louez-le, car il a agi avec vous, selon sa miséricorde.
  Paix à vous ; * ne craignez point ; bénissez Dieu et chantez-le.
-
-[Capitulum Vespera]
-!Tob 12:12
-v. Lorsque tu priais avec larmes, que tu ensevelissais les morts, que tu quittais ton repas et que tu cachais les morts dans ta maison, durant le jour, pour les ensevelir pendant la nuit, j’ai présenté ta prière au Seigneur.
-$Deo gratias
 
 [Hymnus Vespera]
 v. O Christ, gloire des saints Anges,
@@ -58,23 +44,23 @@ $Per Dominum
 [Invit]
 Au Seigneur, roi des Archanges, * Venez, offrons l’adoration.
 
-[Hymnus Matutinum]
-@Sancti/10-24:Hymnus Vespera
-
 [Ant Matutinum]
 Tobie étant sorti, * trouva un jeune homme portant ceinture et comme tout préparé pour un voyage et, sans savoir que c’était un Ange, il le salua.;;8
 L’Ange Raphaël, * cachant sa personnalité, dit : Je suis Azarias, fils du grand Ananias.;;10
 Je conduirai * ton fils sain et sauf au pays des Mèdes et te le ramènerai de même, alléluia.;;14
-V. On donna à l’Ange, beaucoup de parfums.
-R. Pour qu’il les brûlât devant l’autel d’or qui est sous les yeux du Seigneur.
 Mais l’Ange dit : * Prends le poisson par les ouïes et tire-le hors de l’eau.;;18
 Je te prie, * Azarias mon frère, de me dire à quel remède serviront les parties du poisson que tu m’as fait conserver.;;23
 Ce sont les yeux que le fiel guérit ; * quant au cœur et au foie, ils ont la vertu de chasser l’emprise du diable.;;33
-V. La fumée des parfums monta en présence du Seigneur.
-R. De la main de l’Ange.
 Voici Sara * la fille de Raguël ; celle qui te sera donnée en mariage, et tout son bien avec elle.;;95
 Elle a eu sept maris * que le démon a étouffés ; je crains que même chose ne m’arrive.;;96
 Pendant trois jours, * tu vaqueras à la prière avec ton épouse, pour qu’en la postérité d’Abraham, tu obtiennes des fils en bénédiction.;;102
+
+
+[Nocturn 1 Versum]
+V. On donna à l’Ange, beaucoup de parfums.
+R. Pour qu’il les brûlât devant l’autel d’or qui est sous les yeux du Seigneur.
+
+[Nocturn 3 Versum]
 V. L’Ange Raphaël saisit le démon.
 R. Et il le lia dans le désert de la haute Ëgypte.
 
@@ -83,7 +69,7 @@ Du livre de Tobie.
 !Tob 12:1-4
 1 Alors Tobie appela son fils auprès de lui, et lui dit : Que pouvons-nous donner à ce saint homme qui est venu avec vous ?
 2 Tobie répondant à son père, lui dit : Mon père, quelle récompence lui donnerons-nous ? ou que peut-il y avoir de proportionné à ses bienfaits ?
-3 Il m'a mené et ramené sain et sauf ; il a lui-même reçu l'argent de Gabélus; il m'a fait avoir une épouse; il a éloigné d'elle le démon; il a rempli de joie ses parents; il m'a délivré du poison qui allait me dévorer; il vous a fait voir à vous-même la lumière du ciel; et c'est par lui que nous avons été remplis de tous les biens. Que lui donnerons-nous qui égale ce qu'il a fait pour nous ?
+3 Il m'a mené et ramené sain et sauf ; il a lui-même reçu l'argent de Gabélus ; il m'a fait avoir une épouse ; il a éloigné d'elle le démon ; il a rempli de joie ses parents ; il m'a délivré du poison qui allait me dévorer ; il vous a fait voir à vous-même la lumière du ciel ; et c'est par lui que nous avons été remplis de tous les biens. Que lui donnerons-nous qui égale ce qu'il a fait pour nous ?
 4 Mais je vous prie, mon père, de lui demander s'il daignerait accepter la moitié de tout le bien que nous avons apporté.
 
 [Responsory1]
@@ -122,11 +108,7 @@ R. D’où es-tu, bon jeune homme ?
 21 Et lorsqu'il eut ainsi parlé, il disparut de devant eux, et ils ne purent plus le voir.
 22 Alors, s'étant prosternés le visage contre terre pendant trois heures, ils bénirent Dieu, et s'étant levés, ils racontèrent toutes Ses merveilles.
 
-[Lectio3]
-@:Lectio3DA
-(rubrica 1960 omittitur)
-
-[Responsory3]
+[Responsory3DA]
 R. L’Ange étant entré auprès de Tobie, le salua et dit : Que la joie soit avec vous toujours ;
 * Ayez bon courage, dans peu de temps vous serez guéri par Dieu.
 V. Et Tobie répondant, dit : Quelle joie aurai-je, moi qui suis toujours dans les ténèbres, et qui ne vois point la lumière du ciel ?
@@ -134,16 +116,10 @@ R. Ayez bon courage, dans peu de temps vous serez guéri par Dieu.
 &Gloria
 R. Ayez bon courage, dans peu de temps vous serez guéri par Dieu.
 
-[Responsory3] (rubrica 1960)
-@:Responsory2
-
-[Lectio4]
+[Lectio4DA]
 Sermon de saint Bonaventure, Évêque.
-!De Sanctis Angelis Sermo 5, sub fine
+!Des saints Anges Sermon 5, sur la fin.
 Le nom de Raphaël veut dire médecine de Dieu. Et nous devons remarquer qu’on peut être retiré du mal par trois bienfaits que saint Raphaël nous accorde quand il nous guérit. D’abord Raphaël, le médecin céleste, nous arrache à l’infirmité spirituelle en nous amenant à l’amertume salutaire de la contrition, à laquelle se rapporte ce que Raphaël dit à Tobie : Dès que tu seras entré dans ta maison, oins ses yeux avec du fiel. Il le fit et son père recouvra la vue. Pourquoi ne dut-ce point être Raphaël lui-même qui fit cette onction ? Parce qu’un Ange ne donne point la componction ; son rôle est d’en montrer la voie. En ce fiel nous voyons donc l’image de l’amertume de la contrition, laquelle rend sains les yeux intérieurs de l’âme ; un psaume nous dit : « Il guérit ceux qui sont contrits de cœur. » Cette contrition est un collyre excellent. Au deuxième chapitre du livre des Juges, il est raconté que l’Ange monta auprès de ceux qui versaient des larmes et dit au peuple : « Je vous ai retirés de la terre d’Egypte ; j’ai accompli pour vous tant et tant de choses bonnes, et tout 1e peuple pleura de telle sorte que ce lieu fut appelé le lieu de ceux qui pleurent. »Mes très chers, les Anges nous parlent tout le long du jour des bienfaits de Dieu et nous les remettent en mémoire : Ils semblent nous dire : Qui t’a créé ? Qui t’a racheté ? Qu’as tu fait ? Qu’as-tu offensé ? Or, si nous nous arrêtons à considérer ce qui en est, nous ne trouverons d’autre remède que de pleurer.
-
-[Lectio4] (rubrica 1960)
-@:Lectio3DA
 
 [Responsory4]
 R. Tobie demande à l’Ange : De quelle maison, ou de quelle tribu es-tu ? L’Ange répondant, dit :
@@ -177,7 +153,7 @@ Lecture du saint Évangile selon saint Jean.
 En ce temps-là : C’était la fête des Juifs, et Jésus monta à Jérusalem. Et le reste.
 _
 Homélie de saint Jean Chrysostome, Évêque.
-!Homilia 36, alias 35, in Joánnem, num. 1
+!Homélie 39, ou 35, sur Jean, num. 1.
 En ce passage de l’Évangile (rapportant) le miracle opéré en faveur du paralytique qui attendait le passage de l’ange près de la piscine appelée en hébreu Bethsaïde, à quel mode de guérison est-il fait allusion ? Quel mystère nous semble indiqué sous l’écorce du fait historique ? Les détails de ce fait n’ont pas été consignés sans motif, mais saint Jean nous annonce comme par une figure et une image ce qui devait s’accomplir dans la suite, de peur que si (la prédication) d’une chose aussi surprenante (qu’un baptême régénérateur) arrivait sans être aucunement attendue, la foi de beaucoup d’auditeurs ne fût jusqu’à un certain point ébranlée. Que signifie donc cette narration ? Elle prédit le baptême qui devait être conféré plus tard, plein de vertu et d’une grâce immense ; le baptême qui allait laver tous les péchés et rendre des morts à la vie. C’est donc le baptême qui est figuré par la piscine et plusieurs autres symboles. Parmi ceux-ci, le Seigneur a d’abord donné l’eau qui lave les taches corporelles et purifie les souillures, non réelles mais réputées telles provenant de funérailles, de lèpre et d’autres causes. Sous l’ancienne loi, il fallait en bien des circonstances, se purifier par l’eau.
 
 [Responsory7]
@@ -201,11 +177,13 @@ R. Mais vous, bénissez le Seigneur, et racontez toutes ses merveilles.
 Autour de cette piscine « gisait une grande multitude de malades, d’aveugles, de boiteux, de paralytiques attendant que l’eau fût mise en mouvement. » Alors l’infirmité même de chacun d’eux mettait souvent obstacle à sa guérison bien qu’il la voulut. Aujourd’hui il dépend de chacun d’avoir accès à la piscine spirituelle. Ce n’est plus l’ange du Seigneur qui agite les eaux, c’est le Seigneur des Anges qui seul intervient. Nous n’avons plus le droit de dire : Tandis que je m’avance, un autre descend avant moi. Car l’univers entier se présentât-il, la grâce n’en serait pas pour cela épuisée, l’action divine n’en aurait pas moins toute son efficacité et n’en demeurerait pas moins toujours la même. Quoique les rayons du soleil nous éclairent chaque jour, ils ne se raréfient point, quoiqu’ils réjouissent bien des regards, ils ne perdent point leur splendeur ; ainsi (ou plutôt encore moins) l’action de l’Esprit-Saint n’est pas diminuée par le grand nombre de ceux en qui elle s’exerce. Ce qui arrivait à Bethsaïde avait pour but de préparer ceux qui auraient connaissance de cette vertu de l’eau pour guérir les maladies corporelles et qui seraient familiarisés avec ce spectacle, à croire sans peine que les maux de l’âme sont, eux aussi, susceptibles de guérison.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera
+[Capitulum Laudes]
+!Tob 12:12
+v. Lorsque tu priais avec larmes, que tu ensevelissais les morts, que tu quittais ton repas et que tu cachais les morts dans ta maison, durant le jour, pour les ensevelir pendant la nuit, j’ai présenté ta prière au Seigneur.
+$Deo gratias
 
 [Hymnus Laudes]
-V.Pardonnez, ô Christ, à vos petits serviteurs,
+v. Pardonnez, ô Christ, à vos petits serviteurs,
 Pour lesquels la clémence du Père,
 Au tribunal de votre miséricorde
 Est demandée sous l’appui de la Vierge.
@@ -235,60 +213,14 @@ Ainsi soit-il.
 V. En présence des Anges, je vous chanterai, ô mon Dieu.
 R. Je me prosternerai en votre saint temple et je louerai votre nom.
 
-[Ant 2]
-@:Ant 1
-
-[Capitulum Laudes]
-@:Capitulum Vespera
-
 [Lectio Prima]
 !Tob 12:20
 v. Il est temps que je retourne à celui qui m’a envoyé ; quant à vous, bénissez Dieu et racontez toutes ses merveilles.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
-R.br. L’Ange se tint debout * Près de l’autel du temple.
-R. L’Ange se tint debout * Près de l’autel du temple.
-V. Ayant un encensoir d’or en sa main.
-R. Près de l’autel du temple.
-&Gloria
-R. L’Ange se tint debout * Près de l’autel du temple.
-_
-V. La fumée des parfums monta en présence du Seigneur.
-R. De la main de l’Ange.
 
 [Capitulum Sexta]
 !Tob 12:14-15
 v. Et maintenant Dieu m’a envoyé pour te guérir et pour délivrer du démon, Sara, l’épouse de ton fils. Car je suis l’Ange Raphaël, un des sept qui se tiennent devant le Seigneur.
 $Deo gratias
-
-[Responsory Sexta]
-R.br. Elle monta, la fumée des parfums * En présence du Seigneur
-R. Elle monta, la fumée des parfums * En présence du Seigneur
-V. De la main de l’Ange.
-R. En présence du Seigneur
-&Gloria
-R. Elle monta, la fumée des parfums * En présence du Seigneur
-_
-V. En présence des Anges, je chanterai vos louanges, ô mon Dieu.
-R. Je vous adorerai dans votre saint temple et je glorifierai votre nom.
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
-R.br. En présence des Anges * Je chanterai vos louanges, ô mon Dieu
-R. En présence des Anges * Je chanterai vos louanges, ô mon Dieu
-V. Je vous adorerai dans votre saint temple et je glorifierai votre nom.
-R. Je chanterai vos louanges, ô mon Dieu
-&Gloria
-R. En présence des Anges * Je chanterai vos louanges, ô mon Dieu
-_
-V. Adorez Dieu.
-R. Vous tous, ses Anges.
 
 [Versum 3]
 V. L’Ange se tint debout près de l’autel du temple.

@@ -1,7 +1,7 @@
 [Rank]
-Secunda die infra Octavam Epiphaniæ;;Semiduplex;;2;;ex Sancti/01-06
+Secunda die infra Octavam Epiphaniæ;;Semiduplex;;5.6;;ex Sancti/01-06
 
-[Rank1960]
+[Rank] (rubrica 196 aut rubrica 1955)
 Die Septima Januarii;;Feria;;1.2;;vide Sancti/01-06
 
 [Rule]
@@ -13,15 +13,6 @@ Feria Te Deum
 No prima Vespera
 Infra octavam Epiphaniæ Domini
 
-[Lectio1]
-De Epístola ad Romános
-!Rom 9:1-5
-1 Veritátem dico in Christo, non méntior: testimónium mihi perhibénte consciéntia mea in Spíritu Sancto:
-2 quóniam tristítia mihi magna est, et contínuus dolor cordi meo. 
-3 Optábam enim ego ipse anáthema esse a Christo pro frátribus meis, qui sunt cognáti mei secúndum carnem, 
-4 qui sunt Israëlítæ, quorum adóptio est filiórum, et glória, et testaméntum, et legislátio, et obséquium, et promíssa: 
-5 quorum patres, et ex quibus est Christus secúndum carnem, qui est super ómnia Deus benedíctus in sǽcula. Amen.
-
 [Responsory1]
 @Sancti/01-06:Responsory1InfraOctavam
 
@@ -31,30 +22,13 @@ De Epístola ad Romános
 [Responsory3]
 @Sancti/01-06:Responsory3
 
-[Lectio2]
-!Rom 9:6-10
-6 Non autem quod excíderit verbum Dei. Non enim omnes qui ex Israël sunt, ii sunt Israëlítæ:
-7 neque qui semen sunt Abrahæ, omnes fílii: sed in Isaac vocábitur tibi semen: 
-8 id est, non qui fílii carnis, hi fílii Dei: sed qui fílii sunt promissiónis, æstimántur in sémine. 
-9 Promissiónis enim verbum hoc est: Secúndum hoc tempus véniam: et erit Saræ fílius. 
-10 Non solum autem illa: sed et Rebécca ex uno concúbitu habens, Isaac patris nostri.
-
-[Lectio3]
-!Rom 9:11-16
-11 Cum enim nondum nati fuíssent, aut áliquid boni egíssent, aut mali, (ut secúndum electiónem propósitum Dei manéret),
-12 non ex opéribus, sed ex vocánte dictum est ei: Quia major sérviet minóri,
-13 sicut scriptum est: Jacob diléxi, Esau autem ódio hábui. 
-14 Quid ergo dicémus? numquid iníquitas apud Deum? Absit. 
-15 Móysi enim dicit: Miserébor cujus miséreor: et misericórdiam præstábo cujus miserébor. 
-16 Igitur non voléntis, neque curréntis, sed miseréntis est Dei.
-
 [Lectio4]
 Sermo sancti Augustíni Epíscopi
 !Sermo 2 de Epiphania, qui est 30 de Tempore
 Ad partum Vírginis adorándum Magi ab Oriénte venérunt. Hunc diem hódie celebrámus: huic debitum solemnitáti sermónem persolvimus. Illis dies iste primus illuxit, anniversaria nobis festivitate rediit. Illi erant primítiæ Géntium, nos pópulus Géntium. Nobis hoc lingua nuntiávit Apostolórum, stella illis tamquam lingua cælórum; et nobis iídem Apóstoli, tamquam alii cæli, enarravérunt glóriam Dei.
 
 [Lectio5]
-Magnum sacraméntum: in præsepi jacebat, et Magos ab Oriénte ducebat. Abscondebátur in stábulo, et agnoscebátur in cælo: ut ágnitus in cælo manifestarétur in stábulo, et appellarétur Epiphanía dies iste, quod Latine manifestátio dici potest: simul ejus celsitúdinem humilitatémque commendans, ut qui in aperto cælo signis sidéreis monstrabátur magnus, in angusto diversorio quæsítus invenirétur inválidus, infantílibus in membris natus, infantílibusque pannis involutus, adorarétur a Magis, timerétur a malis.
+Magnum sacraméntum: in præsepi jacebat, et Magos ab Oriénte ducebat. Abscondebátur in stábulo, et agnoscebátur in cælo: ut ágnitus in cælo manifestarétur in stábulo, et appellarétur Epiphanía dies iste, quod Latine manifestátio dici potest: simul ejus celsitúdinem humilitatémque commendans, ut qui in aperto cælo signis sidéreis monstrabátur magnus, in angusto diversorio quæsítus invenirétur inválidus, infantílibus in membris natus, infantilibúsque pannis involutus, adorarétur a Magis, timerétur a malis.
 
 [Lectio6]
 Tímuit enim eum rex Herodes, eisdem sibi Magis nuntiántibus, cum adhuc quærerent párvulum, quem cognóverant cælo teste jam natum. Quid erit tribúnal judicántis, quando supérbos reges cunábula terrébant infantis? Quanto consultius reges, non sicut Heródes interfícere quærant, sed sicut Magi potius adorare delecténtur; jam præsertim eum, qui et ipsam mortem, quam cupiebat inimícus inférre, étiam pro ipsis inimícis ab inimícis sustinuit, eamque in suo corpore occisus occídit. Pie timeant reges ad Patris déxteram jam sedéntem, quem rex ímpius tímuit adhuc matris úbera lambéntem.
@@ -79,4 +53,4 @@ Sed a fidelium córdibus absit, ut aliquid esse fatum dicant. Vitam quippe hómi
 Ab Oriénte * venérunt Magi in Béthlehem adoráre Dóminum: et apértis thesáuris suis, pretiósa múnera obtulérunt: aurum, sicut Regi magno; thus, sicut Deo vero; myrrham, sepultúræ ejus, allelúja.
 
 [Ant 3]
-Vidéntes stellam Magi, * gavísi sunt gáudio magno: et intrántes domum, obtulérunt Dómino aurum, thus, et mýrrham, allelúja.
+Vidéntes stellam Magi, * gavísi sunt gáudio magno: et intrántes domum, obtulérunt Dómino aurum, thus, et myrrham, allelúja.

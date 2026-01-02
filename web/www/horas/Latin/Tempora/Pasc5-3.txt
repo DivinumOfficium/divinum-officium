@@ -1,15 +1,20 @@
-[Rank]
-Feria Quarta in Rogationibus in Vigilia Ascensionis;;Feria;;2
+[Officium]
+Feria Quarta in Rogationibus in Vigilia Ascensionis
 
-[Rank](rubrica 1960 aut rubrica innovata)
-In Vigilia Ascensionis;;Feria;;5
+[Officium] (rubrica 196)
+In Vigilia Ascensionis
+
+[Rank]
+;;Vigilia;;1.5
+
+[Rank] (rubrica 196)
+;;Feria;;5
 
 [Rule]
 Oratio Dominica
 Una Antiphona
 Feria Te Deum
 Laudes Litania
-Doxology=Pasc
 No prima vespera
 
 [Lectio1]

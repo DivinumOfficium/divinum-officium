@@ -1,7 +1,5 @@
-[Rank]
-Sanctae Familiae Jesu Mariae Joseph;;Duplex majus;;3.9
-(sed rubrica 1960)
-Sanctae Familiae Jesu Mariae Joseph;;Duplex II classis;;5
+[Officium]
+Sanctae Familiae Jesu Mariae Joseph
 
 [Rule]
 Gloria
@@ -26,10 +24,6 @@ $Qui vivis
 Accogli, te ne preghiamo o Signore, con divina bontà, i voti e le suppliche del tuo popolo, affinché veda ciò che deve fare e sia in grado di compierlo.
 $Per Dominum
 
-!Pro Octavam Epiphaniae
-O Dio, che oggi, con la guida della stella, hai rivelato alle nazioni il tuo unico Figlio, conduci benigno anche noi, che gia ti conosciamo per la fede, fino allo splendore della tua grandezza.
-$Per eundem
-
 [Lectio]
 Lettura della Lettera del B. Paolo Ap. ai Colossesi.
 !Col 3:12-17
@@ -39,10 +33,16 @@ Fratelli: Come eletti di Dio, santi e amati, rivestitevi di sentimenti di miseri
 !Ps 26:4
 Una sola cosa ho chiesto e richiederò al Signore: abitare nella casa del Signore tutti i giorni della mia vita.
 !Ps 83:5.
-Beati quelli che àbitano nella tua casa, o Signore, essi possono lodarti nei secoli dei secoli.~
-Allelúia, allelúia,
+Beati quelli che àbitano nella tua casa, o Signore, essi possono lodarti nei secoli dei secoli. Allelúia, allelúia,
 !Isa 45:15
 Tu sei davvero un Re nascosto, o Dio d’Israele, Salvatore. Allelúia.
+
+[GradualeP]
+Allelúia, allelúia,
+!Prov 8:34
+Beato l'uomo  che mi porge ascolto e che veglia ogni giorno alla mia porta ed aspetta all'ingresso della mia casa.
+!Col 3:3
+La vostra vita è nascosta con Cristo in Dio. Allelúia.
 
 [Tractus]
 !Heb 10:5
@@ -51,13 +51,6 @@ Non hai voluto ostia, né oblazione : ma a me hai formato un corpo
 Non hai richiesto olocausto e sacrifizio per il peccato. Allora io dissi: Ecco che io vengo.
 !Heb 10:7
 V. Nella testata del libro è scritto di me: per fare, o Dio, la tua volontà.
-
-[GradualeP]
-Allelúia, allelúia,
-!Prov 8:34
-Beato l'uomo  che mi porge ascolto e che veglia ogni giorno alla mia porta ed aspetta all'ingresso della mia casa.
-!Col 3:3
-La vostra vita è nascosta con Cristo in Dio. Allelúia.
 
 [Evangelium]
 Séguito ++ del S. Vangelo secondo Luca.
@@ -76,10 +69,6 @@ $Per eundem
 !Pro Dominica infra Octavam Epiphaniæ.
 Il sacrificio a te offerto, o Signore, ci vivifichi e protegga sempre.
 $Per Dominum
-_
-!Pro eadem Octava.
-Ti preghiamo, o Signore, di guardare propizio ai doni della tua Chiesa: con in quali non più ti affriamo oro, incenso e mirra; ma quel che nei medesimi doni è dichiarato, immolato ed assunto, Gesù Cristo, Figlio tuo, nostro Signore:
-$Qui tecum
 
 [Communio]
 !Luc 2:51
@@ -92,8 +81,4 @@ $Qui vivis
 [Commemoratio Postcommunio]
 !Pro Dominica infra Octavam Epiphaniæ.
 Súpplici Ti preghiamo, o Dio onnipotente: affinché, a quelli che Tu ristori coi tuoi sacramenti, conceda anche di servirti con una condotta a Te gradita.
-$Per Dominum
-_
-!Pro eadem Octava.
-Concedici, Te ne preghiamo, o Dio onnipotente, che i misteri oggi solennemente celebrati, li comprendiamo con l’intelligenza di uno spirito purificato.
 $Per Dominum

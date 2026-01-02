@@ -1,5 +1,10 @@
+[Officium]
+Sabbato infra Hebdomadam I Adventus
+
 [Rank]
-Sabbato infra Hebdomadam I Adventus;;Feria major;;2
+;;Feria major;;2.1
+(sed rubrica cisterciensis)
+;;Feria major;;1.15
 
 [Rule]
 Oratio Dominica
@@ -35,5 +40,11 @@ De Isaía Prophéta
 [Responsory3]
 @Tempora/Adv1-0:Responsory9
 
+[Ant Laudes] (rubrica cisterciensis)
+@Tempora/Adv1-0
+
 [Ant 2]
 Sion, noli timére, * ecce Deus tuus véniet, allelúja.
+
+[Ant 2] (rubrica cisterciensis)
+Veni, Dómine, * visitáre nos in pace, ut lætémur coram te corde perfécto.

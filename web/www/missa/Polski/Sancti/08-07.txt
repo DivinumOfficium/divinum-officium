@@ -1,11 +1,5 @@
-[Rank]
-S. Cajetani Confessoris;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5;
-9 lectiones
-Gloria
-
+[Officium]
+Św. Kajetana Wyznawcy
 
 [Comment]
 # 7 VIII – Św. Kajetana, Wyznawcy
@@ -19,6 +13,10 @@ Msza wspólna nr 21 Os iusti, z wyjątkiem kolekty, sekrety i pokomunii
 ! Wspomnienie
 ! Szaty czerwone
 Św. Donat, biskup Arezzo w Italii, poniósł śmierć męczeńską około roku 360.
+
+[Name]
+Kajetanowi
+Postcommunio=Kajetana
 
 [Introitus]
 @Commune/C5:Introitus
@@ -39,28 +37,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C5:Offertorium
 
-[Secreta]
-Prosimy Cię, wszechmogący Boże, aby nasza ofiara, którą w pokorze składamy Ci ku czci Twoich Świętych, była Tobie miła i oczyściła nasze dusze i ciała.
-$Per Dominum
-
 [Communio]
 @Commune/C5:Communio
-
-[Postcommunio]
-Prosimy Cię, wszechmogący Boże, aby pokarm niebieski, któryśmy przyjęli, chronił nas od wszelkich przeciwności za wstawiennictwem świętego Kajetana, Twojego Wyznawcy.
-$Per Dominum
-
-[Commemoratio Oratio]
-! Wspomnienie św. Donata
-Boże, chwało Twych kapłanów, daj, prosimy Cię, niech doznamy pomocy świętego Donata, Twego Męczennika i Biskupa, którego święto obchodzimy.
-$Per Dominum
-
-[Commemoratio Secreta]
-! Wspomnienie św. Donata
-Spraw, prosimy Cię, Panie, aby dzięki wstawiennictwu św. Donata, Twego Męczennika i Biskupa, którego czcimy darami złożonymi ku chwale Twojego imienia, wzrastał w nas owoc synowskiego oddania.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-! Wspomnienie św. Donata
-Wszechmogący i miłosierny Boże, który czynisz nas uczestnikami i szafarzami Twoich Sakramentów, daj prosimy, abyśmy za wstawiennictwem św. Donata, Twego Męczennika i Biskupa, coraz więcej jednoczyli się z nim w wierze i godnej służbie.
-$Per Dominum

@@ -1,23 +1,19 @@
-[Name]
+[Officium]
 Commune Confessoris Pontificis
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=131
+[Missa]
+Statuit
+
+[Comment]
+# 18 – 1 Msza o Wyznawcy Biskupie – Statuit
+W Starym Testamencie Bóg powoływał proroków, kapłanów i królów. Podobnie w Nowym Testamencie powołuje wybranych do godności kapłańskiej i biskupiej i obdarza ich specjalnymi łaskami. Gorliwe spełnianie urzędu pasterskiego nagradza Pan Bóg wieczną chwałą.
 
 [Ant Vespera]
-Oto kapłan wielki, * który za dni swoich podobał się Bogu i znalezion jest sprawiedliwym.;;109
-Nie jest znalezion, * podobny jemu, któryby zachował prawo Najwyższego.;;110
-Dlatego * pod przysięgą dał mu Pan chwałę w narodzie jego.;;111
-Kapłani Boga, * błogosławcie Panu: słudzy Pańscy, śpiewajcie hymn Bogu, alleluja.;;112
-Sługo dobry * i wierny, wnijdź do wesela Pana Twego.;;116
-
-[Capitulum Vespera]
-!Syr 44:16-17
-v. Oto kapłan wielki, który za dni swoich podobał się Bogu i znalezion jest sprawiedliwym: a czasu rozgniewania stał się pojednaniem.
-$Deo gratias
+Oto kapłan wielki, * który za dni swoich podobał się Bogu i znalezion jest sprawiedliwym.
+Nie jest znalezion, * podobny jemu, któryby zachował prawo Najwyższego.
+Dlatego * pod przysięgą dał mu Pan chwałę w narodzie jego.
+Kapłani Boga, * błogosławcie Panu: słudzy Pańscy, śpiewajcie hymn Bogu, alleluja.
+Sługo dobry * i wierny, wnijdź do wesela Pana Twego.
 
 [Hymnus Vespera]
 {:H-Isteconfessor:}v. Wyznawca Pański, którego narody,
@@ -80,29 +76,29 @@ R. Szatą chwały przyodział go.
 [Ant 1]
 Kapłanie i Biskupie * pełniący cnotę, dobry Pasterzu ludu, módl się za nami do Pana.
 
+[Oratio]
+Daj, prosimy Cię, wszechmogący Boże, aby chwalebna uroczystość błogosławionego N., Wyznawcy Twego i Biskupa, pomnożyła w nas pobożność i do zbawienia dopomogła.
+$Per Dominum.
+
 [Invit]
 Pana, Króla Wyznawców, * Pójdźmy uwielbiać.
-
-[Hymnus Matutinum]
-@Commune/C4:Hymnus Vespera
-
-[Hymnus1 Matutinum]
-@Commune/C4:Hymnus1 Vespera
 
 [Ant Matutinum]
 Błogosławiony mąż, który w zakonie Pańskim rozmyśla: wola jego trwa we dnie i w nocy, i wszystko, cokolwiek czynić będzie, poszczęści się.;;1
 Blessed and holy is he * that putteth his trust in the Lord, that declareth the decree of the Lord, and is set upon His holy hill.;;2
 Thou, O Lord, art my glory, * Thou art a shield for me; Thou art the Lifter-up of mine head, and Thou hast heard me out of thy holy hill.;;3
-V. Umiłował go Pan, i przyozdobił go.
-R. Szatą chwały przyodział go.
 When His holy one called, * the Lord heard him, yea, the Lord heard him, and gave him peace.;;4
 Let all those that put their trust in thee rejoice, O Lord, for Thou hast blessed the righteous; * Thou hast compassed him with thy favour as with a shield.;;5
 O Lord, our Ruler, * how excellent is thy Name in all the earth, Who hast crowned thine holy one with glory and honour, and made him to have dominion over the works of thy hands.;;8
-V. Obrał go Pan kapłanem sobie.
-R. Aby Mu złożył ofiarę chwały.
 Lord, this thy Saint * shall dwell in thy tabernacle, and this that hath worked righteousness shall abide upon thy holy hill.;;14
 He asked life of thee, * and Thou, O Lord, gavest it; honour and great majesty hast Thou laid upon him; Thou hast set a crown of precious stones upon his head.;;20
 He shall receive * a blessing from the Lord, and mercy from the God of his salvation, for this is the generation of them that seek the Lord.;;23
+
+[Nocturn 2 Versum]
+V. Obrał go Pan kapłanem sobie.
+R. Aby Mu złożył ofiarę chwały.
+
+[Nocturn 3 Versum]
 V. Tyś jest kapłanem na wieki.
 R. Według obrządku Melchizedeka.
 
@@ -111,8 +107,8 @@ Z Pierwszego listu św. Pawła Apostoła do Tymoteusza
 !1Tm 3:1-7
 1 Wierna mowa: Jeźli kto biskupstwa pożąda, dobrego dzieła pożąda.
 2 Ma tedy biskup być nienaganiony, jednéj żony mąż, trzeźwy, roztropny, obyczajny, wstydliwy, goście ochotnie przyjmujący, ku nauczaniu sposobny;
-3 Nie winopilca, nie bijący, ale skromny, nie swarliwy, nie chciwy;
-4 Ale w domu swym rządny, mający syny poddane z wszelaką czystością.
+3 nie winopilca, nie bijący, ale skromny, nie swarliwy, nie chciwy;
+4 ale w domu swym rządny, mający syny poddane z wszelaką czystością.
 5 A jeźli kto nie umie domu swego rządzić, jakoż pieczą będzie mógł mieć o kościele Bożym?
 6 Nie nowotny, aby podniósłszy się w pychę, nie wpadł w sąd djabelski.
 7 A ma téż mieć dobre świadectwo od tych, którzy są obcymi, aby nie wpadł w urąganie i sidło djabelskie.
@@ -128,7 +124,7 @@ Z listu do Tytusa
 !Tt 1:7-11
 7 Albowiem biskup ma być bez winy, jako szafarz Boży, nie pyszny, nie gniewliwy, nie winopilca, nie bijący, nie chciwy zysku szkaradnego;
 8 Ale wdzięcznie goście przyjmujący, dobrotliwy, trzeźwy, sprawiedliwy, święty, powściągliwy,
-9 Trzymający się téj, która jest wedle nauki, wiernéj mowy, iżby mógł napominać przez zdrową naukę i tych, którzy się sprzeciwiają, przekonać.
+9 trzymający się téj, która jest wedle nauki, wiernéj mowy, iżby mógł napominać przez zdrową naukę i tych, którzy się sprzeciwiają, przekonać.
 10 Albowiem jest wiele nieposłusznych, próżnomównych i zwodzicielów, a najwięcéj, którzy są z obrzezania.
 11 Których trzeba przekonywać, którzy całe domy podwracają, ucząc co nie potrzeba, dla zysku sprosnego.
 
@@ -144,10 +140,10 @@ R. Dlatego pod przysięgą dał mu Pan chwałę w narodzie jego.
 2 Starcy, aby byli trzeźwi, wstydliwi, roztropni, zdrowi w wierze, w miłości, w cierpliwości.
 3 Także stare niewiasty w ubiorze świętym, niepotwarliwe, nie wiele wina pijące, na dobre uczące:
 4 Aby młode białegłowy ćwiczyły w roztropności, żeby męże swoje lubiły, dziatki swe miłowały,
-5 Roztropne, czyste, trzeźwe, o dom się starające, dobrotliwe, mężom swym poddane, aby słowo Boże nie było bluźnione.
+5 roztropne, czyste, trzeźwe, o dom się starające, dobrotliwe, mężom swym poddane, aby słowo Boże nie było bluźnione.
 6 Młodzieńce także napominaj, aby byli trzeźwi.
 7 Samego siebie we wszystkiem podawaj przykładem dobrych uczynków w nauce, w szczerości, w powadze,
-8 Słowo zdrowe, nienaganione, aby się ten, który jest przeciwny, zawstydził, nie mając nic, coby o nas miał mówić złego.
+8 słowo zdrowe, nienaganione, aby się ten, który jest przeciwny, zawstydził, nie mając nic, coby o nas miał mówić złego.
 
 [Responsory3]
 R. Przysiągł Pan, a nie będzie mu żal:
@@ -157,13 +153,11 @@ R. Tyś jest kapłanem na wieki, według porządku Melchisedechowego.
 &Gloria
 R. Tyś jest kapłanem na wieki, według porządku Melchisedechowego.
 
-
 [Responsory4]
 R. Nalazłem Dawida, sługę mego: pomazałem go olejkiem świętym moim:
 * Bo mu ręka moja będzie pomagała.
 V. Nic nie żyszcze na nim nieprzyjaciel: i syn nieprawości nie przyda szkodzić mu
 R. Bo mu ręka moja będzie pomagała.
-
 
 [Responsory5]
 R. Położyłem wspomożenie w mocnym, i wywyższyłem wybranego z ludu mojego:
@@ -171,13 +165,11 @@ R. Położyłem wspomożenie w mocnym, i wywyższyłem wybranego z ludu mojego:
 V. Nalazłem Dawida, sługę mego: pomazałem go olejkiem świętym moim.
 R. Bo mu ręka moja będzie pomagała.
 
-
 [Responsory7]
 R. Umiłował go Pan, i przyozdobił go: szatą chwały przyodział go
 * U bram nieba ukoronował go.
 V. Przyodział go Pan zbroją wiary, i przyozdobił go.
 R. U bram nieba ukoronował go.
-
 
 [Responsory8]
 R. Niechaj biodra wasze będą przepasane i pochodnie gorejące w rękach waszych.
@@ -187,42 +179,36 @@ R. A sami bądźcie podobni do ludzi oczekujących powrotu pana swego z godów w
 &Gloria
 R. A sami bądźcie podobni do ludzi oczekujących powrotu pana swego z godów weselnych.
 
-
-[Ant Laudes]
-Oto kapłan wielki, * który za dni swoich podobał się Bogu i znalezion jest sprawiedliwym.
-Nie jest znalezion, * podobny jemu, któryby zachował prawo Najwyższego.
-Dlatego * pod przysięgą dał mu Pan chwałę w narodzie jego.
-Kapłani Boga, * błogosławcie Panu: słudzy Pańscy, śpiewajcie hymn Bogu, alleluja.
-Sługo dobry * i wierny, wnijdź do wesela Pana Twego.
-
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Syr 44:16-17
+v. Oto kapłan wielki, który za dni swoich podobał się Bogu i znalezion jest sprawiedliwym: a czasu rozgniewania stał się pojednaniem.
+$Deo gratias
 
 [Hymnus Laudes]
 {:H-Jesuredemptoromnium:}v. Jezu, Odkupicielu wszystkich,
-wiekuista korono Biskupów,
-w dniu dzisiejszym łaskawiej
-wybacz proszącym.
+Wiekuista korono Biskupów,
+W dniu dzisiejszym łaskawiej
+Wybacz proszącym.
 _
 Którego to dnia zajaśniał
-błogosławiony Wyznawca twego imienia:
-tegoż doroczną uroczystość
-obchodzi lud wierny.
+Błogosławiony Wyznawca twego imienia:
+Tegoż doroczną uroczystość
+Obchodzi lud wierny.
 _
 Gardząc słusznie znikomemi
-radościami tego świata,
-posiadł nagrodę wieczności
-między Aniołami.
+Radościami tego świata,
+Posiadł nagrodę wieczności
+Między Aniołami.
 _
 Dozwól nam dobrotliwie
-chodzić jego śladami;
-na jego prośbę odpuść
-sługom winę grzechu.
+Chodzić jego śladami;
+Na jego prośbę odpuść
+Sługom winę grzechu.
 _
 * Tobie, Chryste, Królu najmiłościwszy,
-i Ojcu niechaj będzie chwała
-wespół z Duchem Pocieszycielem
-teraz i po wszystek wiek.
+I Ojcu niechaj będzie chwała
+Wespół z Duchem Pocieszycielem
+Teraz i po wszystek wiek.
 Amen.
 
 [Versum 2]
@@ -232,86 +218,47 @@ R. I okazał mu królestwo Boże.
 [Ant 2]
 Dobrzeć, * sługo dobry i wierny, gdyżeś nad małem był wiernym, nad wielem cię postanowię, mówi Pan.
 
-[Oratio]
-Daj, prosimy Cię, wszechmogący Boże, aby chwalebna uroczystość błogosławionego N., Wyznawcy Twego i Biskupa, pomnożyła w nas pobożność i do zbawienia dopomogła.
-$Per Dominum.
-
-[Oratio1]
-Wysłuchaj, prosimy Cię, Panie, modłów naszych, które w uroczystość błogosławionego N., Wyznawcy Twego i Biskupa, zanosimy i za pośrednictwem zasług tego, który Ci tak godnie służył, od wszelkich grzechów nas wybaw.
-$Per Dominum.
-
-[Oratio2]
-Boże, któryś ludowi swemu na drodze do zbawienia błogosławionego N., dał za pomocnika, spraw, prosimy, abyśmy tego, który nam był mistrzem na ziemi, pośrednikiem w Niebie mieć zasłużyli.
-$Per Dominum
-
-[Oratio9]
-Wiekuisty Pasterzu, wejrzyj łaskawie na Swoją trzodę i otocz ją nieustanną opieką za przyczyną świętego N. (Twojego Męczennika i) Papieża, którego ustanowiłeś pasterzem całego Kościoła.
-$Per Dominum
-
-[Oratio91]
-Wiekuisty Pasterzu, wejrzyj łaskawie na Swoją trzodę i otocz ją nieustanną opieką za przyczyną świętych N. i N. (Twoich Męczenników i) Papieży, których ustanowiłeś pasterzami całego Kościoła.
-$Per Dominum
-
 [Lectio Prima]
 !Syr 45:19-20
 v. Aby sprawował urząd kapłański i miał urząd chwalenia w imię Jego, i ofiarował Mu kadzenie godne jako dobrą wonność.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Umiłował go Pan, * I przyozdobił go.
 R. Umiłował go Pan, * I przyozdobił go.
 V. Szatą chwały przyodział go.
 R. I przyozdobił go.
 &Gloria
 R. Umiłował go Pan, * I przyozdobił go.
-_
-V. Obrał go Pan kapłanem sobie.
-R. Aby Mu złożył ofiarę chwały.
 
 [Capitulum Sexta]
 !Syr 44:20; 44:22
 v. Nie jest nalezion jemu podobien, który zachował Zakon Nawyższego: przetoż pod przysięgą dał mu Pan rozmnożyć się w narodzie swoim.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Obrał go Pan * Kapłanem sobie.
 R. Obrał go Pan * Kapłanem sobie.
 V. Aby Mu złożył ofiarę chwały.
 R. Kapłanem sobie.
 &Gloria
 R. Obrał go Pan * Kapłanem sobie.
-_
-V. Tyś jest kapłanem na wieki.
-R. Według obrządku Melchizedeka.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Tyś jest kapłanem * Na wieki.
 R. Tyś jest kapłanem * Na wieki.
 V. Według obrządku Melchizedeka.
 R. Na wieki.
 &Gloria
 R. Tyś jest kapłanem * Na wieki.
-_
-V. Sprawiedliwego prowadził Pan drogami prostymi.
-R. I okazał mu królestwo Boże.
-
-[Versum 3]
-@:Versum 2
-
-[Ant 3]
-Umiłował go Pan * i przyozdobił go: szatą chwały przyodział go: u bram nieba ukoronował go.
 
 [Ant 3 summi Pontificis]
 Gdy był najwyższym kapłanem, * nie obawiał się niczego na ziemi, ale chwalebnie przeszedł do królestwa niebieskiego.
 
+[Ant 3]
+Umiłował go Pan * i przyozdobił go: szatą chwały przyodział go: u bram nieba ukoronował go.
+
 [Lectio1 in 2 loco]
-Z Księgi Ekklezjastyka.
+Z Księgi Eklezjastyka
 !Syr 44:1-5
 1 Wysławiajmy męże chwalebne i ojce nasze w rodzaju swoim.
 2 Wielką chwałę uczynił Pan wielmożnością swą od wieku.
@@ -335,18 +282,53 @@ Z Księgi Ekklezjastyka.
 14 Ciała ich są w pokoju pogrzebione, a sława ich żywie na pokolenie i pokolenie.
 15 Mądrość ich niech powiadają narodowie, a chwałę ich niech opowiada kościół.
 
-[Lectio7 in 2 loco]
-Czytanie Ewangelii świętej według św. Mateusza
-!Mt 16:13-19
-Onego czasu: Przyszedł Jezus w okolicę Cezarei Filipowej i pytał uczniów swoich, mówiąc: „Za kogo mają ludzie Syna Człowieczego?” I tak dalej.
-_
-Homilia świętego Leona, Papieża
-!Kazanie 2. na rocznicę swego wyboru, przed połową
-Gdy, jakośmy z Ewangeliej słyszeli Pan uczniów pytał: Kim go oni, przy wielu różnych mniemaniach, być wierzyli. A Piotr odpowiedział mówiać: Ty jesteś Chrystus syn Boga żywego. Pan rzekł: Błogosławiony jesteś Szymonie Bariona, bo ciało i krew nie objawiły tobie, ale Ojciec mój który jest w niebie: I ja tobie mówię, że ty jesteś Piotr, a na tej opoce zbuduję Kościół mój o bramy piekielne nie przemogą przeciwko niemu, i dam ci klucze królestwa niebieskiego, cokolwiek zwiążesz na ziemi, związane będzie i w niebie, i co rozwiążesz na ziemi rozwiązane będzie i w niebie. Jest tedy trwały rząd; który prawda uczyniła i Piotr święty w mocy opoki którą wział trwając, rządzenia Kościoła którego się podjął nie opuszcza.
+[Oratio] (ad missam)
+Spraw, prosimy Cię, wszechmogący Boże, aby chwalebna uroczystość świętego N., Twego Wyznawcy i Biskupa, przysporzyła nam gorliwości i łaski do zbawienia.
+$Per Dominum
 
-[Lectio8 in 2 loco]
-Bo we wszystkim Kościele, Ty jesteś Chrystus syn Boga żywego. Na każdy dzień Piotr mówi i wszelki język, który Pana wyznawa naukę tego głosu ćwiczy się. Ta wiara djabła zwycięża i więzionym ich pęta rozwiązuje. Ta wyrwanych ze świata w niebo sadzi, przeciw niej bramy piekielny przemóc nie mogą. Tak bowiem od Boga obwarowana jest, że jej ani złość heretycka, nigdy zepsować ani pogańska niewierność zwyciężyć nie mogła. Z tych tedy najmilsi, rozumną wysługą dzisiejszą uroczystość obchodzimy, aby w osobie podłości mojej on był rozumiany, on uczczony, w którym pasterzów wszystkich pieczołowanie strażą powierzonych im owiec trwa: i którego też godności w niegodnym potomku nie ustanie.
+[Lectio]
+Czytanie z Księgi Syracydesa.
+!Syr 44:16-27; 45:3-20
+Oto wielki kapłan, który za dni swoich podobał się Bogu i okazał się sprawiedliwym, a w czasie gniewu stał się pojednaniem. Nie znalazł się jemu podobny, który by zachował prawo Najwyższego. Przeto na mocy przysięgi sprawił Pan, iż rozrósł się on w ludzie Jego. Dał mu błogosławieństwo dla wszystkich narodów i przymierze swoje utwierdził nad głową jego. Uznał go przez swe błogosławieństwa, zachował dlań swe miłosierdzie, (tak iż) znalazł on łaskę w oczach Pańskich. Wobec królów uczynił go wielkim i dał mu wieniec chwały. Postanowił z nim wieczne przymierze i dał mu najwyższe kapłaństwo, i w chwale go uszczęśliwił, by sprawował władzę kapłańską i czci doznawał dla Jego imienia, i składał Mu godną ofiarę kadzenia ku wdzięcznej wonności.
 
-[Lectio9 in 2 loco]
-Gdy tedy upominania nasze, do uszu świętobliwości waszej podajemy, rozumiejcie że on do was mówi, którego urząd odprawujemy, bo i że afektem was upominamy i nic inszego wam nie powiadamy jedno co on nauczył. Dla Boga prosząc, abyście przepasawszy biodra umysłu waszego, żywot czysty i trzeźwy w Bożej bojaźni prowadzili. Korona moja jako Apostoł mówi i wesele moje wy jesteście, jeśli wiara wasza, która na początku Ewangeljej po wszystkim świecie opowiedziana jest, w miłości i świątobliwości trwać będzie. Bo aczkolwiek każdy kościół, który jest po wszystkim świecie, ma kwitnąć cnotami, ale jednak wam osobliwie między narody przystoi, zasługami nabożeństwa przodkować, których na zamku Apostolskiej opoki zbudowanych Pan nasz Jezus Chrystus ze wszystkimi odkupił i święty Piotr Apostoł nad insze nauczał.
-&teDeum
+[Graduale]
+!Syr 44:16
+Oto wielki kapłan, który za dni swoich podobał się Bogu.
+!Syr 44:20
+V. Nie znalazł się jemu podobny, który by zachował prawo Najwyższego. Alleluja, alleluja.
+!Ps 109:4
+Tyś kapłanem na wieki na wzór Melchizedeka. Alleluja.
+
+[GradualeP]
+Alleluja, alleluja.
+!Ps 109:4
+Tyś kapłanem na wieki na wzór Melchizedeka. Alleluja.
+V. Oto kapłan, którego uwieńczył Pan. Alleluja.
+
+[Tractus]
+!Syr 44:16
+Oto wielki kapłan, który za dni swoich podobał się Bogu.
+!Syr 44:20
+V. Nie znalazł się jemu podobny, który by zachował prawo Najwyższego.
+!Ps 111:1-3
+v. Błogosławiony mąż, który boi się Pana i wielką radość znajduje w Jego nakazach.
+V. Potomstwo jego będzie potężne na ziemi, dozna błogosławieństwa pokolenie prawych.
+V. Zasoby i bogactwa będą w jego domu, a hojność jego będzie trwała zawsze.
+
+[Evangelium]
+Ciąg dalszy ++ Ewangelii świętej według Mateusza.
+!Mt 25:14-23
+Onego czasu: Rzekł Jezus uczniom swoim tę przypowieść: «Człowiek pewien odjeżdżając daleko, zwołał sługi swoje i oddał im majętność swoją. I jednemu dał pięć talentów, a drugiemu dwa, a innemu jeden: każdemu według jego zdolności. I wnet odjechał. A ten, który był wziął pięć talentów, poszedł i zarabiał nimi, a zyskał drugie pięć. Podobnie i ten, który dwa otrzymał, zyskał drugie dwa. Ale ten, który otrzymał był jeden, odszedłszy, zakopał go w ziemi i skrył pieniądze pana swego.
+A po długim czasie wrócił pan sług onych i począł rozliczać się z nimi. I przystąpiwszy ten, który pięć talentów otrzymał, wręczył mu drugie pięć talentów, mówiąc: Panie, dałeś mi pięć talentów, otom drugie pięć zyskał. Rzekł mu pan jego: Dobrze, sługo prawy i wierny, żeś w małym był wierny, dam ci władzę nad wieloma: wnijdź do wesela pana twego. Przystąpił też i ten, który dwa talenty otrzymał, i rzekł: Panie, dałeś mi dwa talenty, otom zyskał drugie dwa. Rzekł mu pan jego: Dobrze, sługo prawy i wierny, żeś w małym był wierny, dam ci władzę nad wieloma: wnijdź do wesela pana twojego.»
+
+[Secreta]
+Panie, niech nam wszędzie sprawiają radość Twoi Święci, abyśmy wspominając ich zasługi doznali również ich opieki.
+$Per Dominum
+
+[Communio]
+!Łk 12:42
+Oto wierny i roztropny sługa, którego Pan postanowił nad swoją czeladzią, by każdemu wydzielał żywność w odpowiednim czasie. (Alleluia.)
+
+[Postcommunio]
+Wszechmogący Boże, spraw, prosimy, abyśmy składając dzięki za przyjęte dary, za przyczyną świętego N., Wyznawcy Twego i Biskupa, otrzymywali coraz większe dobrodziejstwa.
+$Per Dominum

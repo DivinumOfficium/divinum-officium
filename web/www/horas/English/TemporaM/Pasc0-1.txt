@@ -1,10 +1,13 @@
-[Lectio1]
+[Lectio9]
 @Tempora/Pasc0-1:Lectio1:s/ To them.*//s
 
-[Lectio2]
+[Lectio10]
 @Tempora/Pasc0-1:Lectio1:s/.*To them/To them/s s/$/~/
 @Tempora/Pasc0-1:Lectio2:s/; but they.*/./s
 
-[Lectio3]
+[Lectio11]
 @Tempora/Pasc0-1:Lectio2:s/.* but they/But they/s s/$/~/
-@Tempora/Pasc0-1:Lectio3
+@Tempora/Pasc0-1:Lectio3:s/They laid .*//s
+
+[Lectio12]
+@Tempora/Pasc0-1:Lectio3: s/.* They laid/They laid/s

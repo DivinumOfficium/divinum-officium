@@ -1,13 +1,5 @@
-[Rank]
-S. Cyrilli Episc. Hierosolymitani Eccl. Doct.;;Duplex;;3;;vide C4a
-
-[RankNewcal]
-S. Cyrilli Episc. Hierosolymitani Eccl. Doct.;;Duplex optional;;2;;vide C4a
-
-[Rule]
-vide C4a;
-Gloria
-CredoDa
+[Officium]
+Św. Cyryla Biskupa Jerozolimskego Wyznawcy i Doktora Kościoła
 
 [Comment]
 # 18 III – Św. Cyryla Jerozolimskiego, Biskupa, Wyznawcy i Doktora Kościoła
@@ -18,9 +10,6 @@ Przed wyniesieniem na biskupstwo św. Cyryl zajmował się przygotowywaniem kate
 [Oratio]
 Prosimy Cię, wszechmogący Boże, przez wstawiennictwo świętego Biskupa Cyryla, daj nam poznać Ciebie, jedynego prawdziwego Boga i posłanego przez Ciebie Jezusa Chrystusa, abyśmy na zawsze zostali zaliczeni między owce, które słuchają Jego głosu.
 $Per eundem
-
-[Lectio]
-@Commune/C4a:Lectio1
 
 [Evangelium]
 Ciąg dalszy ++ Ewangelii świętej według Mateusza.
@@ -34,4 +23,3 @@ $Per Dominum
 [Postcommunio]
 Panie Jezu Chryste, niech na prośby św. Biskupa Cyryla przyjęty przez nas Sakrament Ciała i Krwi Twojej uświęcił nasze umysły i serca, abyśmy mogli stać się uczestnikami Boskiej natury:
 $Qui vivis
-

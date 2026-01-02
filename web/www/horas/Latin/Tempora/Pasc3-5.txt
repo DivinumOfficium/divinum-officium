@@ -1,5 +1,8 @@
+[Officium]
+Feria Sexta infra Hebdomadam III post Octavam Paschæ
+
 [Rank]
-Feria Sexta infra Hebdomadam III post Octavam Paschæ;;Feria;;1
+;;Feria;;1
 
 [Rule]
 Una Antiphona
@@ -30,7 +33,7 @@ De libro Apocalýpsis beáti Joánnis Apóstoli
 
 [Lectio3]
 !Apo 19:11-16
-11 Et vidi cælum apértum, et ecce equus albus, et qui sedébat super eum, vocabátur Fidélis, et Verax, et cum justítia iúdicat et pugnat.
+11 Et vidi cælum apértum, et ecce equus albus, et qui sedébat super eum, vocabátur Fidélis, et Verax, et cum justítia júdicat et pugnat.
 12 Oculi autem ejus sicut flamma ignis, et in cápite ejus diadémata multa, habens nomen scriptum, quod nemo novit nisi ipse.
 13 Et vestítus erat veste aspérsa sánguine: et vocátur nomen ejus: Verbum Dei.
 14 Et exércitus qui sunt in cælo, sequebántur eum in equis albis, vestíti býssino albo et mundo.
@@ -43,6 +46,9 @@ De libro Apocalýpsis beáti Joánnis Apóstoli
 [Ant 2]
 Cognovérunt * Dóminum Jesum, allelúja, in fractióne panis, allelúja.
 
+[Ant 2] (rubrica cisterciensis)
+@Tempora/Pasc1-5
+
 [Oratio 2]
 @Tempora/Pasc3-0:Oratio
 
@@ -50,4 +56,4 @@ Cognovérunt * Dóminum Jesum, allelúja, in fractióne panis, allelúja.
 @Tempora/Pasc3-0:Ant 1
 
 [Ant 3] (rubrica 1960)
-Amen dico vobis, * quia plorábitis et flébitis vos: mundus autem gaudébit, vos vero contristabímini, sed tristítia vestra convertétur in gáudium, allelúja.
+@Tempora/Pasc3-0

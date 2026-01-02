@@ -1,10 +1,15 @@
+[Officium]
+S. Joannis Apostoli ante Portam Latinam
+
 [Rank]
-S. Joannis Apostoli ante Portam Latinam;;Duplex majus;;4;;ex C1
+;;Duplex majus;;4;;ex C1
+(sed rubrica cisterciensis)
+;;Duplex;;2.2;;ex C1
 
 [Rule]
 ex C1;
 9 lectiones
-StJamesRule=John,Rev
+StJamesRule=Joannes|Apo
 
 [Ant 1]
 In ferventis * ólei dolium missus beátus Joánnes Apóstolus, divina se protegénte grátia, illæsus exívit, allelúja.
@@ -14,13 +19,13 @@ Deus, qui conspicis, quia nos undique mala nostra perturbant: præsta, quǽsumus
 $Per Dominum
 
 [Lectio1]
-@Sancti/12-27:Lectio1
+@Sancti/12-27
 
 [Lectio2]
-@Sancti/12-27:Lectio2
+@Sancti/12-27
 
 [Lectio3]
-@Sancti/12-27:Lectio3
+@Sancti/12-27
 
 [Lectio4]
 Ex libro sancti Hierónymi Presbýteri contra Jovinianum.
@@ -32,6 +37,11 @@ Fuit autem Joánnes et Apóstolus, et Evangelista, et Prophéta: Apóstolus, qui
 
 [Lectio6]
 Sed et ipsum ejus Evangélium multum distat a ceteris. Matthæus quasi de hómine incipit scribere: Liber generatiónis Jesu Christi, fílii David, fílii Abraham; Lucas a sacerdotio Zacharíæ; Marcus a prophetía Malachíæ et Isaíæ. Primus habet fáciem hóminis, propter genealogíam; secundus fáciem vítuli, propter sacerdotium; tertius fáciem leónis, propter vocem clamántis in desérto, Parate viam Dómini, rectas fácite sémitas ejus. Joánnes vero noster quasi áquila ad superna volat, et ad ipsum Patrem pérvenit, dicens: In principio erat Verbum, et Verbum erat apud Deum, et Deus erat Verbum.
+
+[Lectio94]
+Ex libro sancti Hierónymi Presbýteri contra Joviniánum
+Joánnes Apóstolus, unus ex discípulis Dómini, qui mínimus natu tráditur fuísse inter Apóstolos, et quem fides Christi vírginem repérerat, virgo permánsit; et ídeo plus amátur a Dómino, et recúmbit super pectus Jesu; et, quod Petrus, qui uxórem habúerat, interrogáre non audet, illum rogat, ut intérroget; et post resurrectiónem, nuntiánte María Magdaléne quod Dóminus resurrexísset, utérque cucúrrit ad sepúlcrum, sed ille prævénit; cumque essent in navi, et piscaréntur in lacu Genésareth, Jesus stabat in líttore, nec sciébant Apóstoli quem vidérent; solus virgo Vírginem agnóscit, et dicit Petro: Dóminus est. Fuit autem Joánnes et Apóstolus, et Evangelísta, et Prophéta. Refert autem Tertulliánus, quod Romæ missus in fervéntis ólei dólium, púrior et vegétior exíverit, quam intráverit.
+&teDeum
 
 [Lectio7]
 Léctio sancti Evangélii secúndum Matthǽum.
@@ -51,8 +61,3 @@ Quæritur quómodo calicem martyrii fílii Zebedæi, Jacobus videlicet et Joánn
 
 [Ant 3]
 @:Ant 1
-
-[Lectio94]
-Ex libro sancti Hierónymi Presbýteri contra Joviniánum
-Joánnes Apóstolus, unus ex discípulis Dómini, qui mínimus natu tráditur fuísse inter Apóstolos, et quem fides Christi vírginem repérerat, virgo permánsit; et ídeo plus amátur a Dómino, et recúmbit super pectus Jesu; et, quod Petrus, qui uxórem habúerat, interrogáre non audet, illum rogat, ut intérroget; et post resurrectiónem, nuntiánte María Magdaléne quod Dóminus resurrexísset, utérque cucúrrit ad sepúlcrum, sed ille prævénit; cumque essent in navi, et piscaréntur in lacu Genésareth, Jesus stabat in líttore, nec sciébant Apóstoli quem vidérent; solus virgo Vírginem agnóscit, et dicit Petro: Dóminus est. Fuit autem Joánnes et Apóstolus, et Evangelísta, et Prophéta. Refert autem Tertulliánus, quod Romæ missus in fervéntis ólei dólium, púrior et vegétior exíverit, quam intráverit.
-&teDeum

@@ -1,28 +1,5 @@
-[Rank]
-S. Damasi Papae et confessoris;;Semiduplex;;2.5;;vide C4
+[Officium]
+Szent I. Damazusz pápa és hitvalló
 
-[Rank1960]
-S. Damasi Papae et confessoris;;Duplex;;3;;vide C4
-
-[RankNewcal]
-S. Damasi Papae et confessoris;;Semiduplex;;2.5;;vide C4
-
-[Rule]
-vide C4;
-9 lectiones;
-OPapaC=Damasus;
-Doxology=Nat
-Omit Preces
-
-[Commemoratio]
-!Commemoratio Die infra Octavam Immaculatae Conceptionis B.M.V.
-@Sancti/12-08:Oratio
-
-[Lectio7]
-@Commune/C4:Lectio7 in 2 loco
-
-[Lectio8]
-@Commune/C4:Lectio8 in 2 loco
-
-[Lectio9]
-@Commune/C4:Lectio9 in 2 loco
+[Name]
+Damazusz

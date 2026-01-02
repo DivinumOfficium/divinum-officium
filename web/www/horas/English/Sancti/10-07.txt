@@ -1,16 +1,8 @@
 [Rank]
-Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex classis;;5.1;;ex C11
+Our Lady of the Rosary;;Duplex classis;;5.1;;ex C11
 
-[Rank1960]
-Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex classis;;5;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-CPapaC=Mark;
+[Rank] (rubrica 196)
+Our Lady of the Rosary;;Duplex classis;;5;;ex C11
 
 [Ant Vespera]
 Who is this, * fair as a dove, like a rose-tree planted beside the rivers of waters?;;109
@@ -18,11 +10,6 @@ A virgin most mighty, * like the tower of David, whereon there hung a thousand b
 Hail Mary, * full of grace, the Lord is with thee, blessed art thou among women.;;121
 The Lord hath blessed thee * by His power, because through thee He hath brought our enemies to nought.;;126
 The daughters of Sion saw her in her spring time, amidst the flowers of the roses, and called her most blessed.;;147
-
-[Capitulum Vespera]
-!Sir 24:25; 39:17
-v. In me is all grace of the way and of the truth; in me is all hope of life and virtue; I have flowered forth like a rose planted by the brooks of water.
-$Deo gratias
 
 [Hymnus Vespera]
 v. The messenger from God's high throne
@@ -50,11 +37,7 @@ The Son she mourned as lost before;
 While doctors by his speech were shown
 The mysteries they had never known.
 _
-To God the Three in One be praise,
-Who through these holy mysteries
-Grants grace to those who seek in prayer
-The glory of his bliss to share.
-Amen.
+@Psalterium/Doxologies:Nat
 
 [Versum 1]
 V. Queen of the most holy Rosary, pray for us.
@@ -64,30 +47,13 @@ R. That we may be made worthy of the promises of Christ.
 Blessed art thou, * O Virgin Mary, Mother of God, for thou hast believed in the Lord, and because those things are accomplished in thee that were spoken to thee; make intercession for us unto the same Lord our God.
 
 [Oratio]
-O God, Whose only-begotten Son, by His life, death and resurrection, has merited~
-for us the grace of eternal salvation, grant, we beseech You, that, meditating~
-upon those mysteries in the most holy Rosary of the Blessed Virgin Mary, we may~
-imitate what they contain and obtain what they promise.
+O God, Whose only-begotten Son, by His life, death and resurrection, has merited for us the grace of eternal salvation, grant, we beseech You, that, meditating upon those mysteries in the most holy Rosary of the Blessed Virgin Mary, we may imitate what they contain and obtain what they promise.
 $Per eumdem
-
-[Commemoratio 2]
-!Commemoration of S. Mark, Pope
-@Commune/C4:Oratio proper Gregem
-$Oremus
-Graciously hear our supplications, O Lord, and for the sake of thy Blessed Confessor and Bishop Mark, grant to us in thy mercy both pardon and peace.
-$Per Dominum
-_
-!Commemoration of the Holy Martyrs Sergius, Bacchus, Marcellus and Apuleius
-@Commune/C3:Oratio proper
-_
-$Oremus
-Pause there to come upon us, O Lord, a grace from the blessed and worthy wrestling of thine holy Martyrs Sergius, Bacchus, Marcellus, and Apuleius, fanning ever in us the fire of the love of thyself.
-$Per Dominum
 
 [Invit]
 Let us keep the Feast of the Rose-garden of the Blessed Virgin Mary; * Let us worship Christ her Son, and her Lord and ours.
 
-[Hymnus Matutinum]
+[Hymnus Matutinum_]
 v. The Mount of Olives witnesseth
 The awful agony of God:
 His soul is sorrowful to death,
@@ -113,26 +79,28 @@ Between two thieves the sinless one
 Still praying for his murderers,
 Breathes forth his soul, and all is done!
 _
-Glory to thee, and honour meet,
-Jesu, of Maiden-Mother born,
-And Father and the Paraclete,
-Through endless ages of the morn!
-Amen.
+@Psalterium/Doxologies:Nat
 
 [Ant Matutinum]
 The Angel Gabriel * announced unto Mary, and she conceived by the Holy Ghost.;;8
 Mary entered * into the house of Zacharias, and saluted Elizabeth.;;18
 She brought forth her first-born Son, * and laid Him in a manger.;;23
-V. Holy Mother of God, Mary, always a Virgin,
-R. Pray for us, unto the Lord our God.
 When His parents brought in * (the child) Jesus to present Him to the Lord, Simeon took Him up in his arms and blessed God.;;44
 His parents seeking Jesus * found Him after three days in the midst of the doctors.;;45
 He began to be very sorrowful, * and in the garden the sweat became as it were drops of blood.;;86
-V. After childbirth thou still remainest a virgin.
-R. Mother of God, pray for us.
 Pilate took Jesus * and scourged Him.;;95
 The soldiers plaited a crown * of thorns, and put it on His Head.;;96
 The government was upon His shoulder, * even the cross; from the tree hath God reigned.;;97
+
+[Nocturn 1 Versum]
+V. Holy Mother of God, Mary, always a Virgin,
+R. Pray for us, unto the Lord our God.
+
+[Nocturn 2 Versum]
+V. After childbirth thou still remainest a virgin.
+R. Mother of God, pray for us.
+
+[Nocturn 3 Versum]
 V. O holy Mother of God.
 R. Thou art become beautiful and gentle in thy gladness.
 
@@ -230,9 +198,12 @@ R. As the vine brought I forth pleasant savour;
 V. I am the mother of fair love, and fear, and knowledge, and holy hope.
 R. And my flowers are the fruit of honour and seemliness.
 
-[Lectio8]
+[Lectio8_1]
 !Homily on the water course
-The Word was made flesh, and dwelleth even now among us. He dwelleth in our memory. He dwelleth in our thought. He hath come down even unto our imagination; and how sayest thou doth he so? By lying in the manger, by nestling in His mother's breast, by preaching upon the mountain, by remaining all night in prayer to God, by hanging upon the Cross, by turning pale in death, by going down free among the dead and triumphing in hell, by rising again the third day, by showing to the Apostles the places of the nails the marks of his victory, by ascending up into heaven while they all beheld Him, of which of these things think we not with truth, with godliness, with holiness? If I think of any of these, I think of God, and He is my God through them all. To think of these things I have decreed to be wisdom, and to set forth the memory of their sweetness I have judged to be prudence. The rod of Aaron the Priest brought forth buds, and bloomed blossoms, and yielded almonds; but these things are the almonds of that Rod which came forth out of the stem of Jesse, the Rod whereof sprang the flower, a Rod which was raised in Mary into places higher than the earthly tabernacle, higher indeed, even into places higher than angels, since she received the Word into herself out of the very heart of the Eternal Father.
+The Word was made flesh, and dwelleth even now among us. He dwelleth in our memory. He dwelleth in our thought. He hath come down even unto our imagination; and how sayest thou doth he so? By lying in the manger, by nestling in His mother's breast, by preaching upon the mountain, by remaining all night in prayer to God, by hanging upon the Cross, by turning pale in death, by going down free among the dead and triumphing in hell, by rising again the third day, by showing to the Apostles the places of the nails the marks of his victory, by ascending up into heaven while they all beheld Him, of which of these things think we not with truth, with godliness, with holiness?
+
+[Lectio8_2]
+If I think of any of these, I think of God, and He is my God through them all. To think of these things I have decreed to be wisdom, and to set forth the memory of their sweetness I have judged to be prudence. The rod of Aaron the Priest brought forth buds, and bloomed blossoms, and yielded almonds; but these things are the almonds of that Rod which came forth out of the stem of Jesse, the Rod whereof sprang the flower, a Rod which was raised in Mary into places higher than the earthly tabernacle, higher indeed, even into places higher than angels, since she received the Word into herself out of the very heart of the Eternal Father.
 
 [Responsory8]
 R. Rise up, my love, and make haste. For the winter is past; the rain is over and gone
@@ -248,6 +219,11 @@ God is gone up with a shout, * and the Lord with the sound of a trumpet.
 The spirit of the Lord * hath filled the world.
 Mary hath been taken to heaven. * The angels rejoice; they praise and bless the Lord. Alleluia.
 The Virgin Mary * hath been exalted over choirs of angels, and upon her head there is a crown of twelve stars.
+
+[Capitulum Laudes]
+!Sir 24:25; 39:17
+v. In me is all grace of the way and of the truth; in me is all hope of life and virtue; I have flowered forth like a rose planted by the brooks of water.
+$Deo gratias
 
 [Hymnus Laudes]
 v. Now Christ, the conqueror of death,
@@ -292,43 +268,34 @@ Let us this day keep * right heartily the solemn Feast of the Most Holy Rosary o
 !Sir 24:17-28
 v. I was exalted like a cedar in Libanus, and as a cypress tree on mount Sion. I was exalted like a palm tree in Cades, and as a rose plant in Jericho.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Holy Mother of God, * Mary always a Virgin.
 R. Holy Mother of God, * Mary always a Virgin.
 V. Intercede for us with the Lord our God.
 R. Mary always a Virgin.
 &Gloria
 R. Holy Mother of God, * Mary always a Virgin.
-_
-V. After childbirth thou still remainest a Virgin.
-R. Mother of God, pray for us.
 
 [Capitulum Sexta]
 !Sir 39:19
 v. Send forth flowers, as the lily, and yield a smell, and bring forth leaves in grace, and praise with canticles, and bless the Lord in his works.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. After childbirth * thou still remainest a Virgin.
 R. After childbirth * thou still remainest a Virgin.
 V. Mother of God, pray for us.
 R. Thou still remainest a Virgin.
 &Gloria
 R. After childbirth * thou still remainest a Virgin.
-_
-V. O Holy Mother of God,
-R. Thou art become beautiful and gentle in thy gladness.
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. O Holy * Mother of God.
 R. O Holy * Mother of God.
 V. Thou art become beautiful and gentle in thy gladness.
 R. Mother of God.
 &Gloria
 R. O Holy * Mother of God.
-_
-V. God hath chosen her and forechosen her.
-R. And hath made her to dwell in His tabernacle.
 
 [Hymnus Vespera 3]
 v. The gladness of thy motherhood,

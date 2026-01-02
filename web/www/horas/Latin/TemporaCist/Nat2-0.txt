@@ -1,0 +1,162 @@
+@Tempora/Nat2-0
+
+[Rule]
+12 lectiones
+Psalmi Dominica
+Antiphonas horas
+
+[Ant Vespera]
+@Tempora/Nat2-0::1-4:s/n(o|ó)m/N$1m/g
+
+[Responsory Vespera] 
+R.br. Confitémini Dómino, * Et invocáte Nomen ejus.
+R. Confitémini Dómino, * Et invocáte Nomen ejus.
+V. Annuntiáte inter Gentes ópera ejus.
+R. Et invocáte Nomen ejus.
+
+[Versum 1] 
+@Tempora/Nat2-0::s/, allel[uú][ij]a//ig :s/n(o|ó)m/N$1m/g
+
+[Invit]
+Nomen Jesu gloriósum, * Veníte, adorémus.
+
+[Ant Matutinum]
+Admirábile est * Nomen tuum, Dómine Jesu, in univérsa terra, et magnificéntia tua super cœlos.;;8
+Cantábo Dómino * qui bona tríbuit mihi: et psallam Nómini Dómini altíssimi.;;12
+Hi in cúrribus, * et hi in equis: nos autem in Nómine Jesu Dei nostri invocábimus.;;19
+Beátus vir, * cujus est Nomen Dómini spes ejus: et non respéxit in vanitátes et insánias falsas.;;39
+Speciósus forma * præ fíliis hóminum tu es, proptérea memor ero Nóminis tui, Dómine Jesu.;;44
+Secúndum * Nomen tuum, Deus, sic et laus tua in fines terræ.;;96
+Exspectábo * Nomen tuum, Dómine Jesu, quóniam bonum est.;;51
+Dedísti, Dómine, * hæreditátem timéntibus Nomen sanctum tuum, cui psalmum dicam in sæculum sæculi.;;60
+Omnis terra * adóret te, Dómine Jesu Christe, psalmum dicat Nómini tuo.;;65
+Magnum in Israël * Nomen tuum, Dómine Jesu, terríbile apud reges terræ.;;75
+Propter glóriam * Nóminis tui, Dómine Jesu, líbera nos, et propítius esto peccátis nostris, propter Nomen tuum.;;78
+Confiteántur * pópuli omnes Nómini tuo magno, Dómine Jesu, quóniam terríbile et sanctum est.;;98
+Fortitúdo mea, * et laus mea Dóminus Jesus Christus, quia factus est mihi in salútem.;;263;264;265
+ 
+ [Nocturn 1 Versum]
+@Tempora/Nat2-0:Versum Tertia: s/[\,\.] al.*/./ig
+
+[Nocturn 2 Versum]
+V. Bonum est confitéri Dómino.
+R. Et psállere Nómini tuo, Altíssime.
+
+[Nocturn 3 Versum]
+V. Confitémini Dómino, et invocáte Nomen ejus.
+R. Annuntiáte inter Gentes ópera ejus.
+ 
+ [Lectio1]
+@Tempora/Nat2-0::1-5:s/-8/-5/
+  
+ [Lectio2]
+@Tempora/Nat2-0:Lectio1:2:s/1-8/4-7/
+@Tempora/Nat2-0:Lectio1:6-9:s/, et prótinus .*/./s
+
+[Lectio3]
+@Tempora/Nat2-0:Lectio3:1-5 s/-12/-8/
+
+[Lectio4]
+@Tempora/Nat2-0:Lectio3:1 s/5-/9-/
+@Tempora/Nat2-0:Lectio3:6-9
+
+[Responsory1]
+@Tempora/Nat2-0:Responsory3:s/n(o|ó)m/N$1m/g
+
+[Responsory2]
+R. Beáti éritis cum maledíxerint vos hómines, et persecúti vos fúerint, et díxerint omne malum advérsum vos, mentiéntes,
+* Propter Nomen meum.
+V. Gaudéte et exsultáte: quóniam merces vestra copiósa est in cœlo.
+R. Propter Nomen meum.
+
+[Responsory3]
+@Tempora/Nat2-0:Responsory4:s/n(o|ó)m/N$1m/g
+
+[Responsory4]
+@Tempora/Nat2-0:Responsory5:s/n(o|ó)m/N$1m/g
+
+[Lectio5]
+Sermo sancti Bernárdi Abbátis.
+!Serm. 15. super Cantica.
+Non otióse Spíritus Sanctus nomen sponsi óleo cómparat, cum ita dóceat sponsam ad sponsum clamáre: Oleum effúsum nomen tuum. Oleum enim lucet, pascit et ungit. Fovet ignem, nutrit carnem, lenit dolórem: lux, cibus, medicína. Vide idem nunc et de Sponsi nómine: Lucet prædicátum, pascit recogitátum, invocátum lenit et ungit. Et percurrámus síngula. Unde putas in toto orbe tanta et tam súbita fídei lux, nisi de prædicáto Nómine Jesu?	
+
+[Lectio6]
+Nonne hoc nomen coram régibus, et Géntibus, et fíliis Israël portáre jussus est Paulus Apóstolus, et portábat Nomen illud tamquam lumen, et illuminábat pátriam, et clamábat ubíque: Nox præcéssit, dies autem appropinquávit? Quómodo lux ista splénduit, ac perstrínxit cunctórum intuéntium óculos, quando de ore Petri, tamquam fulgur egrédiens, claudi uníus corporáles plantas solidávit et bases, multósque spirituáliter cæcos illuminávit? Numquid non ignem sparsit, cum ait: In nómine Jesu Christi Nazaréni surge, et ámbula? 
+	
+[Lectio7]
+Nec tantum lux est Nomen Jesu, sed est et cibus. An non tóties confortáris, quóties recordáris? Quid æque méntem cogitántis impínguat? Quid ita exercitátos réparat sensus, virtútes róborat, végetat mores bonos atque honéstos, castas fovet affectiónes? Aridus est omnis ánimæ cibus, si non óleo isto infúnditur: insípidus est, si non hoc sale condítur. Si scribas, non sapit mihi, nisi légero ibi Jesum. Si dísputes aut cónferas, non sapit mihi, nisi sonúerit ibi Jesus. Jesus mel in ore, in aure melos, in corde júbilus. 
+	
+[Lectio8]
+Est et medicína. Tristátur áliquis nostrum? Véniat in cor ejus Jesus, et inde sáliat in os: et ecce ad exórtum Nóminis lumen, núbilum omne díffugit, redit serénum. Lábitur quis in crimen, currit ínsuper ad láqueum mortis desperándo: nonne, si ínvocet Nomen vitæ, conféstim respirábit ad vitam? Cui aliquándo in perículis palpitánti et trepidánti, invocátum virtútis Nomen non statim fidúciam præstitit, dépulit metum? Cui quæso in dúbiis æstuánti et fluctuánti non súbito ad invocatiónem clari Nóminis emícuit certitúdo? Cui in advérsis diffidénti, jamjámque deficiénti, si Nomen adjutórii sónuit, défuit fortitúdo?
+
+[Responsory5]
+R. Omnia, quæcúmque fácitis in verbo, aut in ópere, in Nómine Dómini Jesu Christi fácite:
+* Quia benedíctum est Nomen Majestátis ejus in ætérnum.
+V. In Nómine Dómini nostri Jesu Christi ad ómnia consília, omnésque actus geréndos semper progrediámur:
+R. Quia benedíctum est Nomen Majestátis ejus in ætérnum.
+
+[Responsory6]
+@Tempora/Nat2-0:Responsory8:s/n(o|ó)m/N$1m/g
+
+[Responsory7]
+R. Nihil áliud ostendámus nos scire nisi Jesum, et hunc crucifíxum:
+* Cujus Nóminis dedit nobis Deus cognóscere sacraméntum.
+V. Interponámus semper óperi nostro Nomen Dómini Jesu:
+R. Cujus Nóminis dedit nobis Deus cognóscere sacraméntum.
+
+[Responsory8]
+@Tempora/Nat2-0:Responsory7:s/n(o|ó)m/N$1m/g
+
+[Lectio9]
+@Tempora/Nat2-0:Lectio7:s/Náscitur .*//s s/n(o|ó)m/N$1m/g
+
+[Lectio10]
+@Tempora/Nat2-0:Lectio7:s/.* (Náscitur)/$1/s s/Circumcíditur .*//s s/n(o|ó)m/N$1m/g
+
+[Lectio11]
+@Tempora/Nat2-0:Lectio7:s/.* (Circumcíditur )/$1/s s/$/~/ s/n(o|ó)m/N$1m/g
+@Tempora/Nat2-0:Lectio8:s/Et atténde .*// s/n(o|ó)m/N$1m/g
+
+[Lectio12]
+@Tempora/Nat2-0:Lectio8:s/.* (Et atténde)/$1/ s/$/~/ s/n(o|ó)m/N$1m/g
+@Tempora/Nat2-0:Lectio9:s/.* (Vocátum plane)/$1/s s/n(o|ó)m/N$1m/g
+
+[Responsory9]
+R. Unigénito Fílio suo Deus, quem constítuit hærédem universórum, Nomen donávit,
+* Quod est super omne nomen.
+V. In Nómine Jesu omne genu flectátur cœléstium, terréstrium, et infernórum:
+R. Quod est super omne nomen.
+
+[Responsory10]
+R. Nomen Jesu, Nomen Dei est super omne nomen,
+* Quod non nisi cœlésti oráculo nobis fuit maniféstum.
+V. Mementóte quod magnum et excélsum est Nomen Dómini Jesu: 
+R. Quod non nisi cœlésti oráculo nobis fuit maniféstum.
+
+[Responsory11]
+@Tempora/Nat2-0:Responsory Breve Nona:2:s/ \* .*//
+@Tempora/Nat2-0:Responsory Breve Nona:3:s/V\./*/ s/n(o|ó)m/N$1m/g
+@Tempora/Nat2-0:Versum Nona:1:s/al.*// s/$/~/ s/n(o|ó)m/N$1m/g
+@Tempora/Nat2-0:Versum Nona:2:s/R\. // s/al.*// s/Qui/qui/ s/Který/který/
+@Tempora/Nat2-0:Responsory Breve Nona:3:s/V\./R./ s/n(o|ó)m/N$1m/g
+
+[Responsory12]
+@Sancti/05-08:Responsory3:s/n(o|ó)m/N$1m/g
+
+[Evangelium]
+@Sancti/01-01
+
+[Versum 2] 
+@:Versum 1
+
+[Responsory TertiaM]
+@Tempora/Nat2-0:Versum Tertia:s/, allel[uú][ij]a//ig
+
+[Responsory SextaM]
+@:Nocturn 2 Versum
+
+[Responsory NonaM]
+@:Nocturn 3 Versum
+
+[Versum 3] 
+@:Versum 1

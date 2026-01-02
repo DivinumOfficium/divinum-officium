@@ -1,14 +1,5 @@
-[Rank]
-Przenajdroższej Krwi Pana Naszego Jezusa Chrystusa;;Duplex I classis;;6;;
-
-[Rule]
-proprium
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=147
-Festum Domini
+[Officium]
+Przenajdroższej Krwi Pana Naszego Jezusa Chrystusa
 
 [Ant Vespera]
 Któż to jest, * który idzie z Edom, w farbowanych szaciech z Bosry? Ten piękny w szacie swojej.
@@ -16,11 +7,6 @@ Ja, * który mówię sprawiedliwość, a jestem obrońcą na zbawienie.
 A obleczony był * w szatę krwią pokropioną, a zowią Imię Jego Słowo Boże.
 Czemuż tedy * czerwone jest odzienie Twoje, a szaty Twoje jako tłoczących w prasie?
 Samem tłoczył * prasę, a z narodów nie masz męża ze mną.
-
-[Capitulum Vespera]
-!Hbr 9:11-12
-v. Bracia: Ale Chrystus, stawiwszy się Najwyższym kapłanem dóbr przyszłych, przez większy i doskonalszy przybytek, nie ręką uczniony, to jest, nie tego stworzenia, Ani przez krew kozłów albo cielców; ale przez własną krew wszedł raz do świątnicę, nalazłszy wieczne odkupienie. 
-$Deo gratias
 
 [Hymnus Vespera]
 v. Niechaj brzmią pieśni wesela wszędzie,
@@ -121,16 +107,22 @@ Amen.
 A gdy się spełniło * ośm dni, iżby obrzezano dzieciątko, nazwano jest imię jego Jezus.;;2
 A będąc w ciężkości, * dłużéj się modlił, i stał się pot jego jako krople krwie zbiegającéj na ziemię.;;3
 Judasz, który go wydał, * żalem zjęty odniósł trzydzieści śrebrnych, mówiąc: Zgrzeszyłem, wydawszy krew sprawiedliwą.;;15
-V. Odkupiłeś nas Bogu.
-R. Przez Krew Twoją.
 Piłat * chcąc ludowi dosyć uczynić, wydał Jezusa na ubiczowanie.;;22
 A widząc Piłat, * iż nic nie pomagało, wziąwszy wodę, umył ręce przed pospólstwem, mówiąc: Nie winienem ja krwie tego sprawiedliwego.;;29
 A odpowiadając * wszystek lud, rzekł: Krew jego na nas, i na syny nasze.;;63
-V. Krew Jezusa Chrystusa Syna Bożego.
-R. Obmywa nas z wszystkich grzechów.
 Wyszedł tedy Jezus, * niosąc cierniową koronę i szatę szarłatową. I rzekł im: Oto człowiek.;;73
 A niosąc krzyż sobie, * wyszedł na ono miejsce, które zwano Trupiéj głowy: gdzie go ukrzyżowali.;;87
 Gdy go ujrzeli już umarłego, * nie łamali goleni jego, ale jeden z żołnierzów włócznią otworzył bok jego, a natychmiast wyszła krew i woda.;;93
+
+[Nocturn 1 Versum]
+V. Odkupiłeś nas Bogu.
+R. Przez Krew Twoją.
+
+[Nocturn 2 Versum]
+V. Krew Jezusa Chrystusa Syna Bożego.
+R. Obmywa nas z wszystkich grzechów.
+
+[Nocturn 3 Versum]
 V. Chrystus umiłował nas.
 R. I omył nas z grzechów naszych we krwi swojéj.
 
@@ -138,9 +130,9 @@ R. I omył nas z grzechów naszych we krwi swojéj.
 Z Listu św. Pawła Apostoła do Żydów
 !Hbr 9:11-15
 11 Ale Chrystus, stawiwszy się Najwyższym kapłanem dóbr przyszłych, przez większy i doskonalszy przybytek, nie ręką uczniony, to jest, nie tego stworzenia,
-12 Ani przez krew kozłów albo cielców; ale przez własną krew wszedł raz do świątnicę, nalazłszy wieczne odkupienie. 
-13 Albowiem jeźli krew kozłów i wołów i popiół jałowice pokropiony spługawione poświęca ku oczyszczeniu ciała, 
-14 Jako daleko więcej krew Chrystusowa, który przez Ducha Świętego samego siebie ofiarował niepokalanym Bogu, czyści sumnienie nasze od martwych uczynków, ku służeniu Bogu żywiącemu? 
+12 ani przez krew kozłów albo cielców; ale przez własną krew wszedł raz do świątnicę, nalazłszy wieczne odkupienie. 
+13 Albowiem jeźli krew kozłów i wołów i popiół jałowice pokropiony spługawione poświęca ku oczyszczeniu ciała,
+14 jako daleko więcej krew Chrystusowa, który przez Ducha Świętego samego siebie ofiarował niepokalanym Bogu, czyści sumnienie nasze od martwych uczynków, ku służeniu Bogu żywiącemu? 
 15 I dlatego jest nowego Testamentu pośrednikiem, żeby za przystąpieniem śmierci, na odkupienie występków tych, które były pod pierwszym Testamentem, obietnicę wzięli, którzy wezwani są do wiecznego dziedzictwa.
 
 [Responsory1]
@@ -155,7 +147,7 @@ R. Wynidźmyż tedy do niego za obóz, nosząc urąganie jego.
 17 Bo testament w umarłych potwierdzony jest: inaczej jeszcze nie jest ważny, póki żyw, który testament uczynił.
 18 Zkąd ani pierwszy bez krwie nie był poświęcony.
 19 Albowiem gdy Mojżesz wszystko przykazanie zakonne przeczytał wszemu ludowi, wziąwszy krew cielców i kozłów z wodą i wełną szarłatową i izopem, same też księgi i lud wszystek pokropił,
-20 Mówiąc: Ta krew Testamentu, który do was Bóg nakazał. 
+20 mówiąc: Ta krew Testamentu, który do was Bóg nakazał. 
 21 Ktemu i przybytek i wszystko naczynie służby krwią takoż pokropił.
 22 A niemal wszystko we krwi według zakonu bywa oczyszczono, a bez rozlania krwie nie bywa odpuszczenie.
 
@@ -168,8 +160,8 @@ R. I rzekł: Ta jest krew przymierza, które Pan postanowił z wami.
 [Lectio3]
 !Hbr 10:19-24
 19 Mając tedy, bracia, ufność wejścia do świątynie we krwie Chrystusowej,
-20 Którą drogę nam poświęcił nową i żywą przez zasłonę, to jest ciało swoje,
-21 I kapłana wielkiego nad domem Bożym;
+20 którą drogę nam poświęcił nową i żywą przez zasłonę, to jest ciało swoje,
+21 i kapłana wielkiego nad domem Bożym;
 22 Przystąpmy z prawdziwem sercem w zupełności wiary, pokropieni na sercach od sumnienia złego i omyci na ciele czystą wodą;
 23 Trzymajmy wyznanie nadzieje naszej nie chwiejące się; (boć wierny jest, który obiecał).
 24 I przypatrzajmy się jedni drugim ku pobudzania miłości i dobrych uczynków,
@@ -242,7 +234,9 @@ A oni zwyciężyli * smoka dla krwie Barankowéj i dla słowa świadectwa swego.
 Błogosławieni * którzy omyli szaty swoje we krwi Barankowéj.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Hbr 9:11-12
+v. Bracia: Ale Chrystus, stawiwszy się Najwyższym kapłanem dóbr przyszłych, przez większy i doskonalszy przybytek, nie ręką uczniony, to jest, nie tego stworzenia, Ani przez krew kozłów albo cielców; ale przez własną krew wszedł raz do świątnicę, nalazłszy wieczne odkupienie. 
+$Deo gratias
 
 [Hymnus Laudes]
 v. Bądźcie pozdrowione, rany Chrystusowe,
@@ -298,9 +292,6 @@ R. Zachowani będziemy przezeń od gniewu.
 [Ant 2]
 Krew baranka * będzie wam na znak rzekł Pan: i ujrzę krew i minę was: i nie będzie u was plaga zagubiająca.
 
-[Commemoratio 2]
-@Sancti/06-24:Octava
-
 [Lectio Prima]
 !Hbr 9:19-20
 v. Albowiem gdy Mojżesz wszystko przykazanie zakonne przeczytał wszemu ludowi, wziąwszy krew cielców i kozłów z wodą i wełną szarłatową i izopem, same też księgi i lud wszystek pokropił, Mówiąc: Ta krew Testamentu, który do was Bóg nakazał.
@@ -308,50 +299,34 @@ v. Albowiem gdy Mojżesz wszystko przykazanie zakonne przeczytał wszemu ludowi,
 [Versum Prima]
 Który nas swoją krwią odkupił.
 
-[Capitulum Tertia]
-@:Capitulum Laudes
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Odkupiłeś nas Bogu, * Przez Krew Twoją.
 R. Odkupiłeś nas Bogu, * Przez Krew Twoją.
 V. Ze wszelakiego pokolenia i języka i ludu i narodu.
 R. Przez Krew Twoją.
 &Gloria
 R. Odkupiłeś nas Bogu, * Przez Krew Twoją.
-_
-V. Krew Jezusa Chrystusa Syna Bożego.
-R. Obmywa nas z wszystkich grzechów.
 
 [Capitulum Sexta]
 !Hbr 9:13-14
-v. Albowiem jeźli krew kozłów i wołów i popiół jałowice pokropiony spługawione poświęca ku oczyszczeniu ciała, Jako daleko więcej krew Chrystusowa, który przez Ducha Świętego samego siebie ofiarował niepokalanym Bogu, czyści sumnienie nasze od martwych uczynków, ku służeniu Bogu żywiącemu? 
+v. Albowiem jeźli krew kozłów i wołów i popiół jałowice pokropiony spługawione poświęca ku oczyszczeniu ciała, jako daleko więcej krew Chrystusowa, który przez Ducha Świętego samego siebie ofiarował niepokalanym Bogu, czyści sumnienie nasze od martwych uczynków, ku służeniu Bogu żywiącemu? 
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Krew Jezusa Chrystusa Syna Bożego * Obmywa nas.
 R. Krew Jezusa Chrystusa Syna Bożego * Obmywa nas.
 V. Z wszystkich grzechów.
 R. Obmywa nas.
 &Gloria
 R. Krew Jezusa Chrystusa Syna Bożego * Obmywa nas.
-_
-V. Chrystus umiłował nas.
-R. I omył nas we krwi swojéj.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Chrystus umiłował nas, i omył nas * We krwi swojéj.
 R. Chrystus umiłował nas, i omył nas * We krwi swojéj.
 V. I uczynił nas królestwem i kapłany Bogu i Ojcu.
 R. We krwi swojéj.
 &Gloria
 R. Chrystus umiłował nas, i omył nas * We krwi swojéj.
-_
-V. Usprawiedliwieni we krwi Chrystusa.
-R. Zachowani będziemy przezeń od gniewu.
 
 [Versum 3]
 V. Błagamy Cię przeto, dopomóż swym sługom. 

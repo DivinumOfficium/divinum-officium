@@ -1,0 +1,46 @@
+[Responsory4]
+R. Postavil mi korunu na hlavu, a oděl mě oděvem spásy,
+* K vítězství nad Pohany a všemi nepřáteli.
+V. Suď, Hospodine, ty, kdo mi škodí, pobij ty, kteří proti mě bojují, chop se zbraní a štítu, a povstaň mi na pomoc.
+R. K vítězství nad Pohany a všemi nepřáteli.
+
+[Lectio5]
+@Commune/C2:Lectio4:s/Ovšem jak je .*//s
+
+[Lectio6]
+@Commune/C2:Lectio4:s/.* Ovšem jak je /Ovšem jak je /s s/$/~/
+
+[Lectio7]
+@Commune/C2:Lectio5:s/.* Co tedy /Co tedy /s
+
+[Responsory8]
+R. Postavil jsi mu, Hospodine, na hlavu korunu z drahých kamenů:
+* Život od tebe žádal, a ty jsi mu jej udělil na věky věkův.
+V. To, po čem toužila jeho duše, jsi mu udělil, Hospodine, a vůli jeho rtů jsi mu nezpronevěřil.
+R. Život od tebe žádal, a ty jsi mu jej udělil na věky věkův.
+
+[Lectio9]
+@Commune/C2:Lectio7:s/Který jazyk .*//s
+
+[Lectio10]
+@Commune/C2:Lectio7:s/.* Který jazyk /Který jazyk /s
+
+[Responsory11]
+R. Slávou a ctí jsi jej korunoval, Hospodine, a ustanovil jsi jej nad dílem svých rukou:
+* Všechno jsi položil k jeho nohám.
+V. Neboť jsi jej předcházel sladkým požehnáním; postavil jsi mu na hlavu korunu z drahých kamenů.
+R. Všechno jsi položil k jeho nohám.
+
+[Responsory12]
+R. Blažen je muž, jež trpí pokušení; neboť až bude vyzkoušen, přijme korunu života, 
+* Kterou zaslíbil Bůh těm, kteří jej milují.
+V. On přijme požehnání od Hospodina, a milosrdenství od Boha, svého Spasitele.
+R. Kterou zaslíbil Bůh těm, kteří jej milují.
+&Gloria
+R. Kterou zaslíbil Bůh těm, kteří jej milují.
+
+[Lectio9 in 4 loco]
+@Commune/C2:Lectio7 in 4 loco:s/A co vám .*//s
+
+[Lectio10 in 4 loco]
+@Commune/C2:Lectio7 in 4 loco:s/.* A co vám /A co vám /s

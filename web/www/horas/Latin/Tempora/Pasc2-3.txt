@@ -1,7 +1,10 @@
-[Rank]
-Patrocinii St. Joseph Confessoris Sponsi B.M.V. Confessoris;;Duplex I classis;;6;;
+[Officium]
+Patrocinii St. Joseph Confessoris Sponsi B.M.V. Confessoris
 
-[RankNewcal]
+[Rank]
+;;Duplex I classis;;6.5;;
+
+[Rank] (rubrica Newcal)
 @Tempora/Pasc2-3Feria:Rank
 
 [Rule]
@@ -18,10 +21,14 @@ Ascéndit autem * Joseph a Galilǽa de civitáte Názareth in Judǽam, in civit�
 Et venérunt festinántes, * et invenérunt Maríam, et Joseph, et Infántem pósitum in præsépio, allelúja.
 Et ipse Jesus * erat incípiens quasi annórum trigínta, ut putabátur, fílius Joseph, allelúja.
 
-[Capitulum Vespera]
-!Gen 49:26
-v. Benedictiónes patris tui confortátæ sunt benedictiónibus patrum ejus, donec veníret Desidérium cóllium æternórum: fiant in cápite Joseph, et in vértice Nazarǽi inter fratres suos.
-$Deo gratias
+[Ant Vespera] (rubrica cisterciensis)
+Allelúia, * allelúia, allelúia.
+
+[Responsory Vespera 1] (rubrica cisterciensis)
+@Sancti/03-19
+
+[Responsory Vespera] (rubrica cisterciensis)
+@:Responsory Breve Sexta
 
 [Hymnus Vespera]
 @Sancti/03-19:Hymnus Vespera
@@ -46,16 +53,22 @@ Laudémus Deum nostrum * In veneratióne beáti Joseph, protectóris nostri, all
 Ángelus Dómini * appáruit in somnis Joseph, dicens: Surge, et áccipe Púerum et Matrem ejus, et fuge in Ægýptum, et esto ibi usque dum dicam tibi, allelúja;;1
 ;;2
 ;;3
-V. Confitébor nómini tuo, allelúja.
-R. Quóniam adjútor et protéctor factus es mihi, allelúja.
 Ángelus Dómini * appáruit in somnis Joseph, dicens: Surge, et áccipe Púerum et Matrem ejus, et vade in terram Israël: defúncti sunt enim qui quærébant ánimam Púeri, allelúja;;4
 ;;5
 ;;6
-V. Réspice de cælo, et vide, et vísita víneam istam, allelúja.
-R. Et pérfice eam, allelúja.
 Consúrgens Joseph, * accépit Púerum et Matrem ejus, et venit in terram Israël: et habitávit in civitáte quæ vocátur Názareth, allelúja;;14
 ;;20
 ;;23
+
+[Nocturn 1 Versum]
+V. Confitébor nómini tuo, allelúja.
+R. Quóniam adjútor et protéctor factus es mihi, allelúja.
+
+[Nocturn 2 Versum]
+V. Réspice de cælo, et vide, et vísita víneam istam, allelúja.
+R. Et pérfice eam, allelúja.
+
+[Nocturn 3 Versum]
 V. Invocávi Dóminum, Patrem Dómini mei, allelúja.
 R. Ut non derelínquat me in die tribulatiónis, allelúja.
 
@@ -111,7 +124,7 @@ R. Ínsuper osténdit mihi Dóminus semen tuum, allelúja.
 [Lectio4]
 Sermo sancti Bernardíni Senénsis.
 !Sermo 1 de S. Joseph.
-Ómnium singulárium gratiárum alícui rationábili creatúræ communicatárum generális régula est, quod, quandocúmque divína grátia éligit áliquem ad áliquam grátiam sublímem státum, ómnia charísmata donet, quæ illi persónæ sic eléctæ et ejus offício necessária sunt atque illam copióse décorant. Quod máxime verificátum est in sancto Joseph, putatívo patre Dómini nostri Jesu Christi, et vero sponso Regínæ mundi et Dóminæ Angelórum; qui ab ætérno Patre eléctus est fidélis nutrítius atque custos principálium thesaurórum suórum, scílicet Fílii ejus et Sponsæ suæ: quod offícium fidelíssime prosecútus est. Cui proptérea Dóminus ait: Serve bone et fidélis, intra in gáudium Dómini tui.
+Ómnium singulárium gratiárum alícui rationábili creatúræ communicatárum generális régula est, quod, quandocúmque divína grátia éligit áliquem ad áliquam grátiam sublímem statum, ómnia charísmata donet, quæ illi persónæ sic eléctæ et ejus offício necessária sunt atque illam copióse décorant. Quod máxime verificátum est in sancto Joseph, putatívo patre Dómini nostri Jesu Christi, et vero sponso Regínæ mundi et Dóminæ Angelórum; qui ab ætérno Patre eléctus est fidélis nutrítius atque custos principálium thesaurórum suórum, scílicet Fílii ejus et Sponsæ suæ: quod offícium fidelíssime prosecútus est. Cui proptérea Dóminus ait: Serve bone et fidélis, intra in gáudium Dómini tui.
 
 [Responsory4]
 R. Dedísti mihi protectiónem salútis tuæ, et déxtera tua suscépit me:
@@ -146,7 +159,7 @@ In illo témpore: Factum est autem cum baptizarétur omnis pópulus, et Jesu bap
 _
 Homilía sancti Augustíni Epíscopi
 !Liber 2 de Consensu Evang.
-Maniféstum est illud quod ait, Ut putabátur fílius Joseph, propter illos dixísse, qui eum ex Joseph, sicut álii hómines nascúntur, natum arbitrántur. Quos autem movet, quod álios progenitóres Matthǽus enúmerat, descéndens a David usque ad Joseph, álios autem Lucas, ascéndens a Joseph usque ad David; fácile est, ut advértant duos patres habére pótuisse Joseph: unum, a quo génitus, álterum, a quo fúerit adoptátus. Antíqua est enim consuetúdo adoptándi étiam in illo pópulo Dei, ut sibi fílios fácerent, quos non ipsi genuíssent. Unde intellígitur Lucas patrem Joseph, non a quo génitus, sed a quo fúerat adoptátus, suscepísse in Evangélio suo, cujus progenitóres sursum versus commémorat, donec exíret ad David.
+Maniféstum est illud quod ait, Ut putabátur fílius Joseph, propter illos dixísse, qui eum ex Joseph, sicut álii hómines nascúntur, natum arbitrántur. Quos autem movet, quod álios progenitóres Matthǽus enúmerat, descéndens a David usque ad Joseph, álios autem Lucas, ascéndens a Joseph usque ad David; fácile est, ut advértant duos patres habére potuísse Joseph: unum, a quo génitus, álterum, a quo fúerit adoptátus. Antíqua est enim consuetúdo adoptándi étiam in illo pópulo Dei, ut sibi fílios fácerent, quos non ipsi genuíssent. Unde intellígitur Lucas patrem Joseph, non a quo génitus, sed a quo fúerat adoptátus, suscepísse in Evangélio suo, cujus progenitóres sursum versus commémorat, donec exíret ad David.
 
 [Responsory7]
 R. Joseph, fili David, noli timére accípere Maríam cónjugem tuam; quod enim in ea natum est, de Spíritu Sancto est: páriet autem fílium,
@@ -155,7 +168,7 @@ V. Ipse enim salvum fáciet pópulum suum a peccátis eórum.
 R. Et vocábis nomen ejus Jesum, allelúja.
 
 [Lectio8]
-Cum enim necésse sit, utróque Evangelísta vera narránte, et Matthǽo scílicet et Luca, ut unus eórum ejus patris oríginem tenéret qui genúerat, alter ejus qui adoptáverat Joseph; quem probabílius intellígimus adoptántis oríginem ténuisse quam eum, qui nóluit Joseph génitum dícere ab illo cujus eum fílium esse narrábat? Matthǽus autem dicens, Ábraham génuit Isaac, Isaac génuit Jacob, atque ita in hoc verbo, quod est, Génuit, persevérans, donec in último díceret, Jacob autem génuit Joseph; satis expréssit ad eum patrem se perduxísse oríginem generátium, a quo Joseph non adoptátus, sed génitus erat.
+Cum enim necésse sit, utróque Evangelísta vera narránte, et Matthǽo scílicet et Luca, ut unus eórum ejus patris oríginem tenéret qui genúerat, alter ejus qui adoptáverat Joseph; quem probabílius intellígimus adoptántis oríginem tenuísse quam eum, qui nóluit Joseph génitum dícere ab illo cujus eum fílium esse narrábat? Matthǽus autem dicens, Ábraham génuit Isaac, Isaac génuit Jacob, atque ita in hoc verbo, quod est, Génuit, persevérans, donec in último díceret, Jacob autem génuit Joseph; satis expréssit ad eum patrem se perduxísse oríginem generátium, a quo Joseph non adoptátus, sed génitus erat.
 
 [Responsory8]
 R. Surge, et áccipe Púerum et matrem ejus, et fuge in Ægýptum:
@@ -173,10 +186,18 @@ Quamquam si étiam Lucas génitum díceret Joseph ab Heli, nec sic nos hoc verbu
 @:Ant Vespera
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Gen 49:26
+v. Benedictiónes patris tui confortátæ sunt benedictiónibus patrum ejus, donec veníret Desidérium cóllium æternórum: fiant in cápite Joseph, et in vértice Nazarǽi inter fratres suos.
+$Deo gratias
+
+[Responsory Laudes] (rubrica cisterciensis)
+@:Responsory Breve Tertia
 
 [Hymnus Laudes]
 @Sancti/03-19:Hymnus Matutinum
+
+[Hymnus Laudes] (rubrica cisterciensis)
+@Sancti/03-19
 
 [Versum 2]
 V. Dedísti mihi protectiónem salútis tuæ, allelúja.
@@ -189,33 +210,31 @@ Joseph, fili David, * noli timére accípere Maríam cónjugem tuam; quod enim i
 !Gen 49:22
 v. Fílius accréscens Joseph, fílius accréscens, et decórus aspéctu: fíliæ discurrérunt super murum.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Constítuit eum dóminum domus suæ, * Allelúja, allelúja.
 R. Constítuit eum dóminum domus suæ, * Allelúja, allelúja.
 V. Et príncipem omnis possessiónis suæ.
 R. Allelúja, allelúja.
 &Gloria
 R. Constítuit eum dóminum domus suæ, * Allelúja, allelúja.
-_
-V. Confitébor nómini tuo, allelúja.
-R. Quóniam adjútor et protéctor factus es mihi, allelúja.
+
+[Versum Tertia]
+@:Nocturn 1 Versum
 
 [Capitulum Sexta]
 !Gen 49:25
 v. Deus patris tui erit adjútor tuus, et Omnípotens benedícet tibi benedictiónibus cæli désuper.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Confitébor nómini tuo, * Allelúja, allelúja.
 R. Confitébor nómini tuo, * Allelúja, allelúja.
 V. Quóniam adjútor et protéctor factus es mihi.
 R. Allelúja, allelúja.
 &Gloria
 R. Confitébor nómini tuo, * Allelúja, allelúja.
-_
+
+[Versum Sexta]
 V. Justus germinábit sicut lílium, allelúja.
 R. Et florébit in ætérnum ante Dóminum, allelúja.
 
@@ -223,20 +242,24 @@ R. Et florébit in ætérnum ante Dóminum, allelúja.
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Justus germinábit sicut lílium, * Allelúja, allelúja.
 R. Justus germinábit sicut lílium, * Allelúja, allelúja.
 V. Et florébit in ætérnum ante Dóminum.
 R. Allelúja, allelúja.
 &Gloria
 R. Justus germinábit sicut lílium, * Allelúja, allelúja.
-_
+
+[Versum Nona]
 V. Plantátus in domo Dómini, allelúja.
 R. In átriis domus Dei nostri, allelúja.
 
 [Versum 3]
 V. Sub umbra illíus, quem desideráveram, sedi, allelúja.
-R. Et fructus ejus dulcis guttúri meo, allelúja.
+R. Et fructus ejus dulcis gútturi meo, allelúja.
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
 
 [Ant 3]
 Fili, quid fecísti * nobis sic? Ecce pater tuus et ego doléntes quærebámus te, allelúja.

@@ -1,25 +1,11 @@
-[Rank]
-S. Silvestri Papae et Conf.;;Duplex;;3;;vide C4d
+[Officium]
+S. Silvestri Papae et Conf.
 
-[Rank1960]
-Die septima post Nativitatem;;Duplex II class;;5;;ex Sancti/12-25m3
 
-[RankNewcal]
-S. Silvestri Papae et Conf.;;Duplex optional;;2;;vide C4d
 
-[Rule]
-OPapaC=Silvestro;
-vide C4d;
-Gloria
-Credo
-Prefatio=Nat
 
-[Oratio]
-@Commune/C4:Oratio:s/N\./Silvestro/
-
-[Commemoratio Oratio]
-!Per l'Ottava del Natale.
-@Sancti/12-25m3:Oratio
+[Name]
+Silvestro
 
 [Lectio]
 @Commune/C4a
@@ -37,22 +23,3 @@ V. Ho trovato Davide, mio servo; l'ho unto col mio sacro olio. Alleluia.
 
 [Evangelium]
 @Commune/C5
-
-[Offertorium]
-@Commune/C4
-
-[Secreta]
-Signore, i tuoi santi ovunque ci rallegrino; affinché mentre ne ricordiamo i meriti ne esperimentiamo il patrocinio.
-$Per Dominum
-
-[Commemoratio Secreta]
-!Per l'Ottava del Natale.
-@Sancti/12-25m3:Secreta
-
-[Postcommunio]
-@Commune/C4:Postcommunio:s/N\./Silvestro/
-
-[Commemoratio Postcommunio]
-!Per l'Ottava del Natale.
-@Sancti/12-25m3:Postcommunio
-

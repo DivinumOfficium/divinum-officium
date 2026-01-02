@@ -1,12 +1,5 @@
-[Rank]
-Św. Józefa Oblubieńca N.M.P. Wyznawcy i Patrona całego Kościoła;;Duplex I classis;;6;;
-
-[Rule]
-proper
-Psalmi Dominica
-Antiphonas horas
-9 lectiones;
-Psalm5 Vespera=116
+[Officium]
+Św. Józefa Oblubieńca N.M.P. Wyznawcy i Patrona całego Kościoła
 
 [Ant Vespera]
 A Jakób * zrodził Józefa, męża Marji, z której się narodził Jezus, którego zowią Chrystusem, alleluja.
@@ -14,14 +7,6 @@ Posłan jest * Anioł Gabrjel od Boga do miasteczka Galilejskiego, którego imi�
 Szedł też * i Józef od Galilei z miasta Nazaretu do Żydowskiej ziemi, do miasta Dawidowego, które zowią Betlejem, alleluja
 I przyszli kwapiąc się * i znaleźli Marję i Józefa i niemowlątko w żłobie, alleluja.
 A ten Jezus * poczynał być jakoby w trzydziestu latach, jako mniemano, syn Józefa, alleluja.
-
-[Capitulum Vespera]
-!Rdz 49:26
-v. Błogosławieństwa ojca twego zmocnione są błogosławieństwy ojców jego: ażby przyszło pożądanie pagórków wiecznych: niechaj będą na głowie Józephowéj, i na ciemieniu Nazarejczyka między bracią swoją.
-$Deo gratias
-
-[Hymnus Vespera]
-@Sancti/03-19
 
 [Versum 1]
 V. Postanowił go panem domu swego, alleluja.
@@ -34,23 +19,29 @@ Gdy była poślubiona * matka jego Marya Józephowi, pierwéj niźli się zeszli
 Boże, któryś w niewymownej Opatrzności błogosławionego Józefa, na Oblubieńca Najświętszej Rodzicielki Twojej wybrać raczył: spraw, prosimy, abyśmy, którzy go jako Patrona na ziemi czcimy, zasłużyli na jego wstawiennictwo w niebie.
 $Qui vivis
 
-[Hymnus Matutinum]
-@Tempora/Pasc2-3:Hymnus Vespera
+[Invit]
+Chwalmy Boga naszego, * Cześć oddając błogosławionemu Józefowi, obrońcy naszemu, alleluja.
 
 [Ant Matutinum]
-Aniół Pański ukazał się we śnie Józephowi, mówiąc: Wstań a weźmij dziecię i matkę jego, a uciecz do Egiptu, i bądź tam, aż ci powiem.;;1
+Aniół Pański ukazał się we śnie Józephowi, mówiąc: Wstań a weźmij dziecię i matkę jego, a uciecz do Egiptu, i bądź tam, aż ci powiem, alleluja.;;1
 ;;2
 ;;3
-V. Będę wyznawał imię twoje, alleluja.
-R. Boś mi się zstał pomocnikiem i obrońcą, alleluja.
 Aniół Pański ukazał się we śnie Józephowi w Egipcie, mówiąc: Wstań a weźmij dziecię i matkę jego, a idź do ziemie Izraelskiéj; albowiem pomarli, którzy dusze dziecięcéj szukali, alleluja.;;4
 ;;5
 ;;6
-V. Wejrzyj z nieba, a obacz, i nawiedź tę winnicę, alleluja.
-R. I napraw tę, alleluja.
 Wstawszy, Józeph, wziął dziecię i matkę jego i przyszedł do ziemie Izraelskiéj: i mieszkał w mieście, które zowią Nazareth, alleluja.;;14
 ;;20
 ;;23
+
+[Nocturn 1 Versum]
+V. Będę wyznawał imię twoje, alleluja.
+R. Boś mi się zstał pomocnikiem i obrońcą, alleluja.
+
+[Nocturn 2 Versum]
+V. Wejrzyj z nieba, a obacz, i nawiedź tę winnicę, alleluja.
+R. I napraw tę, alleluja.
+
+[Nocturn 3 Versum]
 V. Wzywałem Pana, Ojca Pana mego, alleluja
 R. Aby mię nie opuszczał w dzień utrapienia, alleluja.
 
@@ -123,14 +114,10 @@ R. I bądź tam, aż ci powiem, alleluja.
 &Gloria
 R. I bądź tam, aż ci powiem, alleluja.
 
-[Ant Laudes]
-@:Ant Vespera
-
 [Capitulum Laudes]
-@:Capitulum Vespera
-
-[Hymnus Laudes]
-@Sancti/03-19:Hymnus Matutinum
+!Rdz 49:26
+v. Błogosławieństwa ojca twego zmocnione są błogosławieństwy ojców jego: ażby przyszło pożądanie pagórków wiecznych: niechaj będą na głowie Józephowéj, i na ciemieniu Nazarejczyka między bracią swoją.
+$Deo gratias
 
 [Versum 2]
 V. Dałeś mi obronę zbawienia twego, alleluja.
@@ -143,48 +130,40 @@ Józefie, Synu Dawidów, * nie bój się przyjąć Marji małżonki twej: albowi
 !Rdz 49:22
 v. Syn przyrastający Józeph, syn przyrastający i śliczny na wejrzeniu: córki przebiegały się na murze.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Postanowił go Panem domu swego, * Alleluja, alleluja.
 R. Postanowił go Panem domu swego, * Alleluja, alleluja.
 V. I książęciem wszystkiéj dzierżawy swojéj.
 R. Alleluja, alleluja.
 &Gloria
 R. Postanowił go Panem domu swego, * Alleluja, alleluja.
-_
-V. Będę wyznawał imię twoje, alleluja.
-R. Boś mi się zstał pomocnikiem i obrońcą, alleluja.
 
 [Capitulum Sexta]
 !Rdz 49:25
 v. Bóg ojca twego będzie pomocnikiem twoim, a wszechmogący będzieć błogosławił błogosławieństwy niebieskiemi zwierzchu.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Będę wyznawał imię twoje, * Alleluja, alleluja
 R. Będę wyznawał imię twoje, * Alleluja, alleluja
 V. Boś mi się zstał pomocnikiem i obrońcą.
 R. Alleluja, alleluja.
 &Gloria
 R. Będę wyznawał imię twoje, * Alleluja, alleluja
-_
+
+[Versum Sexta]
 V. Sprawiedliwy rozkwitnie jak lilia, alleluja.
 R. I zakwitnie na wieki przed Panem, alleluja.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Sprawiedliwy rozkwitnie jak lilia * Alleluja, Alleluja.
 R. Sprawiedliwy rozkwitnie jak lilia * Alleluja, Alleluja.
 V. I zakwitnie na wieki przed Panem.
 R. Alleluja, alleluja.
 &Gloria
 R. Sprawiedliwy rozkwitnie jak lilia * Alleluja, Alleluja.
-_
+
+[Versum Nona]
 V. Wsadzeni w domu Pańskim, alleluja,
 R. W sieniach domu Boga naszego, alleluja.
 

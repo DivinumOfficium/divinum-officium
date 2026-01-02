@@ -8,11 +8,6 @@ Divinum auxilium
 [Ant Vespera]
 @Commune/C8::s/112/147/
 
-[Capitulum Vespera]
-@Commune/C8
-_
-@Commune/C8:Responsory Sexta:1-6
-
 [AntMatutinumM]
 Introíbo * in domum tuam, Dómine, † et adorábo ad templum sanctum tuum.;;5
 Dóminus * in templo sancto suo, † Dóminus in cælo sedes ejus.;;10
@@ -20,20 +15,17 @@ Adoráte * Dóminum in aula sancta ejus.;;28
 Beáti, * qui hábitant in domo tua, Dómine; † in sǽcula sæculórum laudábunt te.;;83
 
 [Ant Matutinum]
-@:AntMatutinumM:1
-@:AntMatutinumM:2
+@:AntMatutinumM:1-2
 @Commune/C8::1
 @:AntMatutinumM:3
-@Commune/C8::2-5
+@Commune/C8::2-3
 @:AntMatutinumM:4
-@Commune/C8::6 s/83/86/
-@Commune/C8::12 s/95/87/
-@Commune/C8::11
-@Commune/C8::8 s/87/95/
-@Commune/C8::13
-@Commune/C8::9-10
-@Commune/C8::7 s/86/260;261;262/
-@Commune/C8::14-15
+@Commune/C8::4 s/83/86/
+@Commune/C8::8 s/95/87/
+@Commune/C8::7
+@Commune/C8::6 s/87/95/
+@Commune/C8::9
+@Commune/C8::5 s/86/260;261;262/
 
 [Lectio1]
 @Commune/C8::1-5 s/-5/-3/
@@ -82,11 +74,20 @@ R. Quam dilécta tabernácula tua, Dómine, virtútum! † concupíscit et défi
 V. Qui hábitant in domo tua, Dómine; in sǽculum sǽculi laudábunt te.
 R. In átria Dómini.
 
+[Lectio9]
+@Commune/C8:Lectio7
+
 [Responsory9]
 @Commune/C8:Responsory7
 
+[Lectio10]
+@Commune/C8:Lectio8:s/Zachǽus .*//s
+
 [Responsory10]
 @Commune/C8:Responsory8
+
+[Lectio11]
+@Commune/C8:Lectio8:s/.* Zachǽus /Zachǽus /s
 
 [Responsory11]
 R. Benedíctus es in templo sancto glóriæ tuæ quod ædificátum est
@@ -94,35 +95,22 @@ R. Benedíctus es in templo sancto glóriæ tuæ quod ædificátum est
 V. Bénedic domum istam quam ædificávi.
 R. Ad laudem et glóriam nóminis tui Dómine.
 
+[Lectio12]
+@Commune/C8:Lectio9
+
 [Responsory12]
 R. Vidi civitátem sanctam Jerúsalem novam, † descendéntem de cælo a Deo parátam:
 * Et audívi vocem de throno dicéntem: * Ecce tabernáculam Dei cum homínibus, et habitábit cum eis.
 V. Et ipsi pópulus ejus erunt, † et ipse Deus cum eis erit eórum Deus.
 R. Et audívi vocem de throno dicéntem: Ecce tabernáculam Dei cum homínibus, et habitábit cum eis.
 
-[Lectio9]
-@Commune/C8:Lectio7
-
-[Lectio10]
-@Commune/C8:Lectio8:s/Zachǽus .*//s
-
-[Lectio11]
-@Commune/C8:Lectio8:s/.* Zachǽus /Zachǽus /s
-
-[Lectio12]
-@Commune/C8:Lectio9
+[MM Capitulum]
+@Commune/C8:Capitulum Sexta
+_
+@Commune/C8:Versum Tertia
 
 [Capitulum Laudes]
-@Commune/C8:Capitulum Vespera
-_
-@Commune/C8:Responsory Tertia:1-6
+@Commune/C8
 
-[Responsory Tertia]
-@Commune/C8:Versum 3
-
-[Responsory Sexta]
-@Commune/C8:Responsory Tertia:8-9
-
-[Responsory Nona]
-@Commune/C8:Versum 1
-
+[Responsory SextaM]
+@Commune/C8:Versum Tertia

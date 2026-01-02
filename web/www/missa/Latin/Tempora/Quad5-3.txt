@@ -1,8 +1,12 @@
-[Rank]
-Feria Quarta infra Hebdomadam Passionis;;Feria major;;2
+[Officium]
+Feria Quarta infra Hebdomadam Passionis
 
-[Rank](rubrica 1960)
-Feria Quarta infra Hebdomadam Passionis;;Feria major;;3
+[Rank]
+;;Feria major;;2.1
+(sed rubrica 1930)
+;;Feria major;;4.9
+(sed rubrica 196)
+;;Feria major;;3.9
 
 [Rule]
 no Gloria
@@ -62,6 +66,6 @@ $Per Dominum
 [Super populum]
 !Oratio super populum
 v. Orémus.
-V. Humiliáte cápita vestra Deo.
+v. Humiliáte cápita vestra Deo.
 v. Adésto supplicatiónibus nostris, omnípotens Deus: et, quibus fidúciam sperándæ pietátis indúlges; consuétæ misericórdiæ tríbue benígnus efféctum.
 $Per Dominum

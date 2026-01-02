@@ -1,23 +1,12 @@
-[Rank]
-S. Francisci Borgiae Confessoris;;Semiduplex;;2;;vide C4c
-
-[Rule]
-vide C4c;
-Gloria
+[Officium]
+St. Francis Borgia, Confessor
 
 [Oratio]
-O Lord Jesus Christ, model of true humility and its reward, we beseech You, that~
-as You made blessed Francis one of Your glorious imitators by his contempt for~
-earthly honors, grant us to follow his example and to share in his glory.
+O Lord Jesus Christ, model of true humility and its reward, we beseech Thee, that as Thou made blessed Francis one of Thy glorious imitators by his contempt for earthly honors, grant us to follow his example and to share in his glory.
 $Qui vivis
 
 [Secreta]
-We beseech You, O Lord, may the holy Francis, prevail by his prayers, so that~
-the offerings placed upon Your sacred altar may be beneficial for our salvation.
-$Per Dominum
+@Commune/C5b:Secreta:s/Abbot N\./Francis/
 
 [Postcommunio]
-May the pleading of the blessed Francis for us, together with the partaking of~
-Your sacrament, protect us, O Lord, so that we, mindful of his way of life, may~
-obtain the help of his intercession.
-$Per Dominum
+@Commune/C5b:Postcommunio:s/Abbot N\./Francis/

@@ -1,15 +1,8 @@
 [Rank]
 Fest der Geburt des Herrn;;Duplex I Classis;;6.9
 
-[Rank1960]
+[Rank] (rubrica 1960)
 Fest der Geburt des Herrn;;Duplex I Classis;;7
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas Horas
-Doxology=Nat
-Special Evangelii Benedictio
 
 [Ant Vespera]
 Der Friedenskönig * ist umgeben mit Herrlichkeit, nach dessen Antlitz sich die ganze Erde sehnt.;;109
@@ -18,7 +11,7 @@ Es waren erfüllt * die Tage Mariens, dass sie zur Welt bringen sollte ihren ers
 Wisset doch, * dass das Reich Gottes nahe ist: wahrhaftig sage ich es euch, dass es nicht auf sich warten lassen wird.;;112
 Hebt eure Häupter zur Höh, * denn nun naht eure Beseligung.;;116
 
-[Capitulum Vespera]
+[Capitulum Vespera 1]
 !Tit 3,4-5
 v. Klar geworden ist, welche Lieblichkeit und welch gnädigen Sinn gegen die Menschen Gott unser Beglücker in sich trägt; nicht auf Grund von rechtschaffenen Werken, die wir getan hätten, sondern gemäß seiner Erbarmung hat er uns Rettung gewährt.
 $Deo gratias
@@ -60,7 +53,7 @@ Den Vater und den Heil'gen Geist,
 Die ew'gen Lobes würdig sind.
 Amen.
 
-[Versum 1]
+[Versum 1_]
 V. Am morgigen Tage wird getilgt werden die Sünde der Erde.
 R. Und König wird über uns sein der Heiland der Welt.
 
@@ -68,7 +61,7 @@ R. Und König wird über uns sein der Heiland der Welt.
 Wenn am Himmel * die Sonne aufgegangen ist, werdet ihr sehen den König der Könige vom Vater ausgehend, nach Art eines Bräutigams, der aus seinem Brautgemach hervorkommt.
 
 [Oratio]
-Verleihe uns, wir bitten dich, o allmächtiger Gott, die Gnade, dass uns deines Eingeborenen neuartige leibliche Geburt Freiheit bringe von der seit altersher drückenden Knechtschaft, in der wir unter dem Joch der Sünde festgehalten werden.
+Verleihe uns, wir bitten dich, o allmächtiger Gott, die Gnade, daß uns deines Eingeborenen neuartige leibliche Geburt Freiheit bringe von der seit altersher drückenden Knechtschaft, in der wir unter dem Joch der Sünde festgehalten werden.
 $Per eumdem
 
 [Invit]
@@ -78,16 +71,23 @@ Christus ist uns geboren, * Kommt, wir wollen ihn anbeten.
 So spricht der Herr * zu mir: Mein Sohn bist du, heute lasse ich dich aus meinem Schoß hervorgehen.;;2
 Wie ein Bräutigam * ist der Herr, der aus seinem Brautgemach heraustritt.;;18
 Wie umfließt * so liebliche Anmut dein Antlitz! So also hat Gott dich gesegnet auf ewig!;;44
-V. Wie ein Bräutigam.
-R. Ist der Herr, der aus seinem Brautgemach heraustritt.
 Wir empfingen, * o Gott, deine Barmherzigkeit in deines Tempels Mitte.;;47
 Es soll aufsprießen * in den Tagen des Herrn des Friedens Fülle, und er soll Herr sein.;;71
 Die Heiligkeit ist aus dem Lande * herausgewachsen, drum schaut auch die Gerechtigkeit so lieb vom Himmel.;;84
-V. O Schönster an Pracht du unter den Edlen!
-R. Welch liebliche Anmut dein Antlitz umfließt!
 Er darf rufen * zu mir, alleluja: du bist mein Vater, alleluja.;;88
+(sed rubrica 1960 aut rubrica 1962) Er darf rufen * zu mir, alleluja: du bist mein Vater, alleluja.;;88(2-37)
 Es juble der Himmel * und hüpfe die Erde in Gegenwart Gottes, dass er gekommen.;;95
 Bekundet hat deutlich * der Herr, alleluia, sein Heil, alleluja.;;97
+
+[Nocturn 1 Versum]
+V. Wie ein Bräutigam.
+R. Ist der Herr, der aus seinem Brautgemach heraustritt.
+
+[Nocturn 2 Versum]
+V. O Schönster an Pracht du unter den Edlen!
+R. Welch liebliche Anmut dein Antlitz umfließt!
+
+[Nocturn 3 Versum]
 V. Er darf rufen zu mir, alleluja.
 R. Du bist mein Vater, alleluja.
 
@@ -145,17 +145,7 @@ R. Ein Kind haben wir gesehen, und Engelschöre, die den Herrn gelobt haben.
 [Lectio4]
 Predigt des heiligen Papstes Leo.
 !Predigt 1 über die Geburt Christi.
-Derjenige, der uns, Geliebteste, das Heil bringt, ist heute geboren. Wir wollen freudig sein.~
-Es wäre doch unrecht, der Trauer einen Platz zu gewähren, wo das Leben aufgeht, das nach Vernichtung~
-des furchtwirkenden Todes uns Fröhlichkeit schafft infolge der verheißenen Seligkeit. Keiner wird von~
-der Teilnahme an dieser freudigen Feier ausgeschlossen. Der eine gemeinsame Grund zur Freude für alle~
-ist der, dass unser Herr, der Tilger von Sünde und Tod, weil er keinen von Schuld Freien fand, deshalb~
-zur Befreiung von allen gekommen ist. Es juble der Heilige, weil er nahe kommt der Palme; es mag sich~
-freuen der Sünder, weil er eingeladen wird, sich dich Verzeihung zu holen; es fasse Mut der außerhalb des~
-Christentums Stehende, weil er gerufen wird zum (richtigen) Leben. Gottes Sohn hat nämlich entsprechend~
-der Zeitfülle, die des göttlichen unergründlichen Ratschlusses Erhabenheit angeordnet hatte, die mit~
-ihrem Schöpfer zu versöhnende Natur des menschlichen Geschlechtes selbst angenommen, damit der Begründer~
-des Todes durch diese selbst, über die er den Sieg davongetragen, besiegt würde.
+Derjenige, der uns, Geliebteste, das Heil bringt, ist heute geboren. Wir wollen freudig sein. Es wäre doch unrecht, der Trauer einen Platz zu gewähren, wo das Leben aufgeht, das nach Vernichtung des furchtwirkenden Todes uns Fröhlichkeit schafft infolge der verheißenen Seligkeit. Keiner wird von der Teilnahme an dieser freudigen Feier ausgeschlossen. Der eine gemeinsame Grund zur Freude für alle ist der, dass unser Herr, der Tilger von Sünde und Tod, weil er keinen von Schuld Freien fand, deshalb zur Befreiung von allen gekommen ist. Es juble der Heilige, weil er nahe kommt der Palme; es mag sich freuen der Sünder, weil er eingeladen wird, sich dich Verzeihung zu holen; es fasse Mut der außerhalb des Christentums Stehende, weil er gerufen wird zum (richtigen) Leben. Gottes Sohn hat nämlich entsprechend der Zeitfülle, die des göttlichen unergründlichen Ratschlusses Erhabenheit angeordnet hatte, die mit ihrem Schöpfer zu versöhnende Natur des menschlichen Geschlechtes selbst angenommen, damit der Begründer des Todes durch diese selbst, über die er den Sieg davongetragen, besiegt würde.
 
 [Responsory4]
 R. O große geheimnisvolle Tatsache und an Wundern reiches heiliges Ereignis, dass die Tiere den geborenen und in der Krippe liegenden Herrn schauten:
@@ -164,19 +154,7 @@ V. Gegrüßest seist du Maria, voll der Gnade: Der Herr ist mit dir.
 R. O selig die Jungfrau, deren Schoß würdig war zu tragen Christus den Herrn.
 
 [Lectio5]
-In diesem für uns unternommenen Kampf ist auf der Grundlage eines vollen und bewunderungswürdigen~
-Gleichheitsrechtes gerungen worden; da der allmächtige Herr nicht in seiner Majestät, sondern in unserer~
-Niedrigkeit als Kämpfer auftritt und ihm dieselbe Gestalt, dieselbe Natur entgegenstellt (wie wir sie haben),~
-die wohl unsere Sterblichkeit mit uns teilt, aber mit der Sünde nichts gemein hat. Fern ist nämlich bei~
-dieser Geburt das, was von allen zu lesen ist (Hiob 14,4): „Keiner ist frei vom Schmutz, nicht einmal das~
-Kind, dessen Lebensdauer auf der Erde einen Tag beträgt.“ Nichts ist also in dieser Geburt von~
-fleischlicher Begierlichkeit eingedrungen, nichts von dem, was auf die Sünde Bezug hat, übergegangen.~
-Eine königliche Jungfrau aus davidischem Stamme wird ausgewählt, die, um mit heiligem Lebenskeim befruchtet~
-zu werden, die Leibesfrucht früher geistig, als körperlich, empfangen sollte. Und damit sie nicht~
-in Unkenntnis des oben beschlossenen Planes auf die ungewohnten Worte, mit denen sie angeredet wurde,~
-in Angst käme, erfährt sie das, was in ihr vom Heiligen Geiste zu wirken war, aus der Aussprache mit dem~
-Engel; und sie glaubt dann, dass sie keine Schädigung der Jungfräulichkeit erfahren würde als Gottesmutter,~
-die sie bald werden sollte.
+In diesem für uns unternommenen Kampf ist auf der Grundlage eines vollen und bewunderungswürdigen Gleichheitsrechtes gerungen worden; da der allmächtige Herr nicht in seiner Majestät, sondern in unserer Niedrigkeit als Kämpfer auftritt und ihm dieselbe Gestalt, dieselbe Natur entgegenstellt (wie wir sie haben), die wohl unsere Sterblichkeit mit uns teilt, aber mit der Sünde nichts gemein hat. Fern ist nämlich bei dieser Geburt das, was von allen zu lesen ist (Hiob 14,4): „Keiner ist frei vom Schmutz, nicht einmal das Kind, dessen Lebensdauer auf der Erde einen Tag beträgt.“ Nichts ist also in dieser Geburt von fleischlicher Begierlichkeit eingedrungen, nichts von dem, was auf die Sünde Bezug hat, übergegangen. Eine königliche Jungfrau aus davidischem Stamme wird ausgewählt, die, um mit heiligem Lebenskeim befruchtet zu werden, die Leibesfrucht früher geistig, als körperlich, empfangen sollte. Und damit sie nicht in Unkenntnis des oben beschlossenen Planes auf die ungewohnten Worte, mit denen sie angeredet wurde, in Angst käme, erfährt sie das, was in ihr vom Heiligen Geiste zu wirken war, aus der Aussprache mit dem Engel; und sie glaubt dann, dass sie keine Schädigung der Jungfräulichkeit erfahren würde als Gottesmutter, die sie bald werden sollte.
 
 [Responsory5]
 R. Die selige Gottesmutter Maria, deren Schoß unversehrt bleibt,
@@ -185,15 +163,7 @@ V. Selig ist sie, da sie geglaubt hat, denn in Erfüllung ist alles gegangen, wa
 R. Hat heute den Heiland der Welt geboren.
 
 [Lectio6]
-Wir wollen also, Geliebteste, Gott Vater durch seinen Sohn in Verbindung mit dem Heiligen Geiste Dank sagen;~
-der entsprechend seiner Liebe, auf Grund derer er uns liebgewonnen hat, sich unser erbarmt hat und uns,~
-als wir in Sünden tot waren, zu einem Leben mit Christus vereinigt hat, damit wir als eins mit ihm eine~
-neue Schöpfung und ein neues Gebilde wären. Wir wollen also den alten Menschen ablegen mit seinen Werken,~
-und wo wir einen Teil erhalten haben am Leben mit Christus, den fleischlichen Werken entsagen. Sei~
-du also bewusst, o Christ, deiner Würde, und nachdem du Teilhaber der göttlichen Natur geworden bist,~
-vermeide es, durch ein dem Stande widersprechendes Betragen in die alte Schändlichkeit zurückzukehren. Sei~
-eingedenk, welches Hauptes und welches Leibes Glied du bist. Denk daran, dass du, herausgeholt aus der~
-Gewalt der Dunkelmächte, übergeführt bist in das Herrlichkeitsreich Gottes.
+Wir wollen also, Geliebteste, Gott Vater durch seinen Sohn in Verbindung mit dem Heiligen Geiste Dank sagen; der entsprechend seiner Liebe, auf Grund derer er uns liebgewonnen hat, sich unser erbarmt hat und uns, als wir in Sünden tot waren, zu einem Leben mit Christus vereinigt hat, damit wir als eins mit ihm eine neue Schöpfung und ein neues Gebilde wären. Wir wollen also den alten Menschen ablegen mit seinen Werken, und wo wir einen Teil erhalten haben am Leben mit Christus, den fleischlichen Werken entsagen. Sei du also bewusst, o Christ, deiner Würde, und nachdem du Teilhaber der göttlichen Natur geworden bist, vermeide es, durch ein dem Stande widersprechendes Betragen in die alte Schändlichkeit zurückzukehren. Sei eingedenk, welches Hauptes und welches Leibes Glied du bist. Denk daran, dass du, herausgeholt aus der Gewalt der Dunkelmächte, übergeführt bist in das Herrlichkeitsreich Gottes.
 
 [Responsory6]
 R. O du heilige und unbefleckte Jungfräulichkeitsträgerin, ich weiß gar nicht, mit welchen Lobsprüchen ich dich preisen soll:
@@ -203,13 +173,6 @@ R. Da du denjenigen, den die Himmelsräume nicht fassen können, in deinem Scho�
 &Gloria
 R. Da du denjenigen, den die Himmelsräume nicht fassen können, in deinem Schoße getragen hast.
 
-[Benedictio3]
-Von den Banden unserer Sünden möge uns der allmächtige und barmherzige Gott frei machen. Amen.
-Lass, o Herr, den Segen erteilen.
-Was wir vom Evangelium lesen, möge uns zum Heile und zum Schutze sein. Amen.
-Auf Grund der Worte des Evangeliums mögen getilgt werden unsere Sünden. Amen.
-Die Worte des heiligen Evangeliums lehre uns Christus, der Sohn Gottes. Amen.
-
 [Lectio7]
 Lesung aus dem heiligen Evangelium nach Lukas.
 !Lk 2,1-14
@@ -217,17 +180,7 @@ In jener Zeit ging vom Kaiser Augustus ein Befehl  aus, die Bevölkerung des gan
 _
 Auslegung vom heiligen Papst Gregor.
 !Hom. 8 zu den Evang.
-Weil wir auf Grund der Güte des Herrn die Feier des Messopfers heute dreimal vorzunehmen haben, können wir nicht lange~
-über die Lesung des Evangeliums reden; aber wenigstens etwas, wenn es auch noch so kurz ist, zu sagen, drängt uns die~
-Geburt unseres Heilands selbst. Was soll nun der Umstand, dass bei der bevorstehenden Geburt des Herrn die Weltbevölkerung~
-gezählt wird, anders andeuten, als ein offenkundiges Zeichen, dass derjenige in irdischer Natur am Auftreten war, der seine~
-Auserwählten in der Ewigkeit einschreiben wollte? Denn entgegengesetzt heißt es von den Verdammten beim Propheten (Ps. 68):~
-„Ausgestrichen sollen sie werden aus dem Lebensbuch, zum Volke Gottes gar nicht zählen.“ Er wird auch ganz richtig in~
-Bethlehem geboren. Bethlehem heißt nämlich Brothaus. Er ist es ja doch, der sagt: „Ich bin das lebendige Brot, das vom Himmel~
-herabgekommen ist.“ Der Ort also, an dem der Herr geboren wird, wird vorher Brothaus genannt, deshalb jedenfalls, weil es~
-kommen sollte, dass derjenige dort im Leibe erschien, der die Seelen der Auserwählten mit innerer Sattheit beleben sollte.~
-Er wird nicht im Elternhause, sondern auf der Reise geboren, gewiss, um zu zeigen, dass er wegen der menschlichen Natur,~
-die er angenommen hatte, gleichsam auf fremdem Gebiet eine Geburt erlebte.
+Weil wir auf Grund der Güte des Herrn die Feier des Messopfers heute dreimal vorzunehmen haben, können wir nicht lange über die Lesung des Evangeliums reden; aber wenigstens etwas, wenn es auch noch so kurz ist, zu sagen, drängt uns die Geburt unseres Heilands selbst. Was soll nun der Umstand, dass bei der bevorstehenden Geburt des Herrn die Weltbevölkerung gezählt wird, anders andeuten, als ein offenkundiges Zeichen, dass derjenige in irdischer Natur am Auftreten war, der seine Auserwählten in der Ewigkeit einschreiben wollte? Denn entgegengesetzt heißt es von den Verdammten beim Propheten (Ps. 68): „Ausgestrichen sollen sie werden aus dem Lebensbuch, zum Volke Gottes gar nicht zählen.“ Er wird auch ganz richtig in Bethlehem geboren. Bethlehem heißt nämlich Brothaus. Er ist es ja doch, der sagt: „Ich bin das lebendige Brot, das vom Himmel herabgekommen ist.“ Der Ort also, an dem der Herr geboren wird, wird vorher Brothaus genannt, deshalb jedenfalls, weil es kommen sollte, dass derjenige dort im Leibe erschien, der die Seelen der Auserwählten mit innerer Sattheit beleben sollte. Er wird nicht im Elternhause, sondern auf der Reise geboren, gewiss, um zu zeigen, dass er wegen der menschlichen Natur, die er angenommen hatte, gleichsam auf fremdem Gebiet eine Geburt erlebte.
 
 [Responsory7]
 R. O selig der Schoß der Jungfrau Maria, der getragen hat des ewigen Vaters Sohn, und selig die Brust, die genährt hat Christus den Herrn,
@@ -242,13 +195,7 @@ In jener Zeit sprachen die Hirten zueinander: Lasst uns nach Bethlehem gehen und
 _
 Auslegung vom heiligen Bischof Ambrosius.
 !Buch 9 zu Lk Kap. 2
-Seht die Anfänge der im Entstehen begriffenen Kirche. Christus wird geboren und die Hirten fangen an, Wache zu halten,~
-damit sie der Heiden Herden, die vorher nach Art der Tiere lebten, in den Schafstall zusammenführten, auf dass diese~
-nicht irgendwelche Angiffe von dem geistigen Wild inmitten der vielfach ausgebreiteten Finsternis auszuhalten hätten.~
-Und richtig halten auch solche Hirten Wache, die der gute Hirt unterweist. Die Herde ist also das Volk, die Nacht diese~
-Welt, die Hirten sind die Diener des Heiligtums. Vielleicht ist auch jener der Hirt, dem gesagt wird: „Sei wachsam und~
-mache stark“; denn nicht bloß die Bischöfe hat der Herr zum Schutz seiner Herde bestimmt, sondern er hat auch die Engel~
-dazu bestellt.
+Seht die Anfänge der im Entstehen begriffenen Kirche. Christus wird geboren und die Hirten fangen an, Wache zu halten, damit sie der Heiden Herden, die vorher nach Art der Tiere lebten, in den Schafstall zusammenführten, auf dass diese nicht irgendwelche Angiffe von dem geistigen Wild inmitten der vielfach ausgebreiteten Finsternis auszuhalten hätten. Und richtig halten auch solche Hirten Wache, die der gute Hirt unterweist. Die Herde ist also das Volk, die Nacht diese Welt, die Hirten sind die Diener des Heiligtums. Vielleicht ist auch jener der Hirt, dem gesagt wird: „Sei wachsam und mache stark“; denn nicht bloß die Bischöfe hat der Herr zum Schutz seiner Herde bestimmt, sondern er hat auch die Engel dazu bestellt.
 
 [Responsory8]
 R. Das Wort ist Fleisch geworden und hat unter uns gewohnt.
@@ -268,7 +215,7 @@ Auslegung vom heiligen Bischof Augustin.
 Damit du dir nicht etwas Minderwertiges vorstellst, wie du es gewohnt bist, zu denken, wenn du, wie es so geschieht, menschliche Worte hörst, höre, was du zu denken hast: „Gott war das Wort“ Mag nun hervortreten irgendein Arianer und behaupten, dass Gottes Wort etwas Gemachtes ist! Wie ist es möglich, dass Gottes Wort etwas Gemachtes ist, wenn Gott durch das Wort alles gemacht hat? Wenn auch das Wort Gottes etwas Gemachtes ist, durch welches andere Wort ist es denn gemacht? Wenn du von diesem (anderen Worte) sagst, dass dieses ein Wort des Wortes ist, durch das jenes gemacht ist, so nenne ich dieses den einzigen Sohn Gottes. Wenn du aber nicht von einem Worte des Wortes redest, dann gib zu, dass das nicht gemacht sein kann, durch das alles gemacht ist. Es konnte doch nicht durch sich selbst gemacht werden das, durch das alles gemacht ist. Glaube also dem Evangelisten.
 &teDeum
 
-[Ant Laudes]
+[Ant Laudes_]
 Wen habt ihr gesehen, * ihr Hirten? Sagt es uns, meldet es uns, wer ist denn auf Erden sichtbar geworden? Ein Kind haben wir gesehen, und Engelschöre, die den Herrn gelobt haben, alleluja, alleluja.
 Es hat geboren die Mutter * den König, dessen Name Ewiger heißt, und sie hat nun Mutterfreuden zusammen mit dem Vorzug der Jungfräulichkeit, und man hat vor ihr eine ähnliche nicht gesehen, und sie wird auch kein Nachbild haben, alleluja.
 Der Engel sagte zu den Hirten: * Ich verkünde euch eine große Freude, denn heute ist euch der Heiland der Welt geboren, alleluja.
@@ -329,52 +276,55 @@ R. Sein Heil, alleluja.
 [Ant 2]
 Ehre sei Gott in der Höhe * und Frieden auf Erden den Menschen eines guten Willens, alleluja, alleluja.
 
+[Octava 2]
+!Kommemoration der Weihnachtsoktav.
+Ant. Ehre sei Gott in der Höhe und Frieden auf Erden den Menschen eines guten Willens, alleluja, alleluja.
+_
+V. Bekanntgemacht hat der Herr, alleluja.
+R. Sein Heil, alleluja.
+_
+v. Lasset uns beten.
+Verleihe uns, wir bitten dich, o allmächtiger Gott, die Gnade, dass uns deines Eingeborenen neuartige leibliche Geburt Freiheit bringe von der seit altersher drückenden Knechtschaft, in der wir unter dem Joch der Sünde festgehalten werden.
+$Per eumdem
+
 [Lectio Prima]
 !Hebr 1,11-12
 v. Sie vergehen, du aber bleibst. Und alles kann vermodern wie ein Kleid, und du kannst es umwandeln wie einen Mantel, so dass es anders wird. Du aber bleibst derselbe und deine Jahre gehen nicht zu Ende.
 
-[Capitulum Tertia]
-@:Capitulum Laudes
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Das Wort ist Fleisch geworden, * Alleluja, alleluja.
 R. Das Wort ist Fleisch geworden, * Alleluja, alleluja.
 V. Und hat unter uns gewohnt.
 R. Alleluja, alleluja.
 &Gloria
 R. Das Wort ist Fleisch geworden, * Alleluja, alleluja.
-_
-V. Er darf rufen zu mir, alleluja.
-R. Du bist mein Vater, alleluja.
 
 [Capitulum Sexta]
 !Hebr 1,10
 v. Und (es heißt): Du hast am Anfang, o Herr, die Erde begründet, und ein Werk deiner Hände sind die Himmel.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Bekundet hat deutlich der Herr, * Alleluja, alleluja.
 R. Bekundet hat deutlich der Herr, * Alleluja, alleluja.
 V. Sein Heil.
 R. Alleluja, alleluja.
 &Gloria
 R. Bekundet hat deutlich der Herr, * Alleluja, alleluja.
-_
+
+[Versum Sexta]
 V. Nun sieht alles bis zu den Grenzen der Erde, alleluja.
 R. Das Heil unseres Gottes, alleluja.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Nun sieht alles bis zu den Grenzen der Erde, * Alleluja, alleluja.
 R. Nun sieht alles bis zu den Grenzen der Erde, * Alleluja, alleluja.
 V. Das Heil unseres Gottes.
 R. Alleluja, alleluja.
 &Gloria
 R. Nun sieht alles bis zu den Grenzen der Erde, * Alleluja, alleluja.
-_
+
+[Versum Nona]
 V. Das Wort ist Fleisch geworden, alleluja.
 R. Und hat unter uns gewohnt, alleluja.
 
@@ -385,29 +335,12 @@ Es leuchtet auf * im Unglück allen Gottergebenen als helles Licht der gnädige 
 Beim Herrn * ist Huld, und überreich ist bei ihm die Befreiung.;;129
 Ein Kind * von dir will ich stets auf deinem Throne sitzen lassen.;;131
 
-[Capitulum Vespera 3]
-@:Capitulum Laudes
-
-[Versum 3]
-@:Versum 2
-
 [Ant 3]
 Heute * ist Christus geboren, heute ist der Heiland sichtbar gekommen, heute singen auf Erden die Engel, es freuen sich die Erzengel, heute jubelt das Gottesvolk und singt: Ehre sei Gott in der Höhe, alleluja.
 
 [Octava 3]
 !Kommemoration der Weihnachtsoktav.
 Ant. Heute ist Christus geboren, heute ist der Heiland sichtbar gekommen, heute singen auf Erden die Engel, es freuen sich die Erzengel, heute jubelt das Gottesvolk und singt: Ehre sei Gott in der Höhe, alleluja.
-_
-V. Bekanntgemacht hat der Herr, alleluja.
-R. Sein Heil, alleluja.
-_
-v. Lasset uns beten.
-Verleihe uns, wir bitten dich, o allmächtiger Gott, die Gnade, dass uns deines Eingeborenen neuartige leibliche Geburt Freiheit bringe von der seit altersher drückenden Knechtschaft, in der wir unter dem Joch der Sünde festgehalten werden.
-$Per eumdem
-
-[Octava 2]
-!Kommemoration der Weihnachtsoktav.
-Ant. Ehre sei Gott in der Höhe und Frieden auf Erden den Menschen eines guten Willens, alleluja, alleluja.
 _
 V. Bekanntgemacht hat der Herr, alleluja.
 R. Sein Heil, alleluja.

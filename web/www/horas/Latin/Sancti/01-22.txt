@@ -1,14 +1,19 @@
+[Officium]
+Ss. Vincentii et Anastasii Martyrum
+
 [Rank]
-Ss. Vincentii et Anastasii Martyrum;;Semiduplex;;2;;vide C3
+;;Semiduplex;;2.2;;vide C3
+(sed rubrica cisterciensis)
+;;Simplex;;1.2;;vide C3
 
 [Rule]
 vide C3;
 9 lectiones
+(sed rubrica cisterciensis)
+3 lectiones
 
 [Oratio]
-Adésto, Dómine, supplicatiónibus nostris: ut, qui ex iniquitáte nostra reos nos~
-esse cognóscimus, beatórum Mártyrum tuórum Vincéntii et Anastásii intercessióne~
-liberémur.
+Adésto, Dómine, supplicatiónibus nostris: ut, qui ex iniquitáte nostra reos nos esse cognóscimus, beatórum Mártyrum tuórum Vincéntii et Anastásii intercessióne liberémur.
 $Per Dominum
 
 [Lectio4]
@@ -21,5 +26,8 @@ Verum, illo in tenebricosa incluso custódia, claríssimus splendor obortus totu
 Anastasius Persa, monachus, Heraclío imperatóre, cum sanctam Jerosolymórum terram visitasset, ad Cæsaréam Palæstinæ pro Christi religióne víncula et verbera constanter perpéssus est. Mox a Persis ob eamdem causam variis cruciátibus afféctus, a rege Chósroa una cum septuagínta aliis Christiánis secúri percútitur. Cujus relíquiæ primum Jerosolymam ad monastérium, in quo monasticam vitam proféssus erat, deínde Romam delátæ, collocátæ sunt in monasterio ad Aquas Sálvias.
 
 [Lectio94]
-Vincéntius, Oscæ in Hispánia citerióre natus, a prima ætáte stúdiis déditus, sacras lítteras a Valério Cæsaraugustáno epíscopo dídicit; cujus étiam partes suscépit prædicándi Evangélium, quod epíscopus, propter linguæ impediméntum, prædicatiónis offício fungi non póterat. Ea re ad Daciánum impiíssimum prǽsidem deláta, Vincéntius ab eódem Valéntiam addúcitur; et cárceres, famem, equúleum aliáque tormentórum génera perpéssus, ad martýrii corónam advolávit undécimo caléndas februárii. Anastásius Persa, mónachus, Heraclío imperatóre, cum sanctam Jerosolymórum terram visitásset, ad Cæsaréam Palæstínæ pro Christi religióne víncula et vérbera constánter perpéssus est. Mox a Persis ob eándem causam váriis cruciátibus afféctus, a rege Chósroa una cum septuagínta áliis Christiánis secúri percútitur. Cujus relíquiæ primum Jerosólymam, deínde Romam delátæ, collocátæ sunt in monastério ad Aquas Sálvias.
+Vincéntius, Oscæ in Hispánia citerióre natus, a prima ætáte stúdiis déditus, sacras lítteras a Valério Cæsaraugustáno epíscopo dídicit; cujus étiam partes suscépit prædicándi Evangélium, quod epíscopus, propter linguæ impediméntum, prædicatiónis offício fungi non póterat. Ea re ad Daciánum impiíssimum prǽsidem deláta, Vincéntius ab eódem Valéntiam addúcitur; et cárceres, famem, equúleum alíaque tormentórum génera perpéssus, ad martýrii corónam advolávit undécimo caléndas februárii. Anastásius Persa, mónachus, Heraclío imperatóre, cum sanctam Jerosolymórum terram visitásset, ad Cæsaréam Palæstínæ pro Christi religióne víncula et vérbera constánter perpéssus est. Mox a Persis ob eándem causam váriis cruciátibus afféctus, a rege Chósroa una cum septuagínta áliis Christiánis secúri percútitur. Cujus relíquiæ primum Jerosólymam, deínde Romam delátæ, collocátæ sunt in monastério ad Aquas Sálvias.
 &teDeum
+
+[Versum 0]
+@Commune/C2a::s/N\./Vincénti/

@@ -3,10 +3,8 @@
 [Rule]
 12 lectiones
 
-[Capitulum Vespera]
-@Tempora/Pasc1-0
-_
-@Psalterium/Major Special:PaschM Vespera:3-8
+[Ant Matutinum 3N]
+Allelúja, * noli flere, María, allelúja: † resurréxit Dóminus, † allelúja, allelúja.
 
 [Lectio1]
 @Tempora/Pasc1-0:Lectio1:s/-7/-4/ s/5 .*//s
@@ -15,8 +13,8 @@ _
 @Tempora/Pasc0-0
 
 [Lectio2]
-@Tempora/Pasc1-0:Lectio1:s/-7/-8/ s/1-/5-/ s/1 .*5 /5 /s
-@Tempora/Pasc1-0:Lectio2:s/!.*// s/9 .*//s
+@Tempora/Pasc1-0:Lectio1:2-9 s/1-7/5-8/ s/1 .*5 /5 /s
+@Tempora/Pasc1-0:Lectio2:2
 
 [Lectio3]
 @Tempora/Pasc1-0:Lectio2:s/8-/9-/ s/8 .*9 /9 /s
@@ -52,9 +50,6 @@ _
 [Responsory8]
 @Tempora/Pasc0-3:Responsory2
 
-[Ant Matutinum 3N]
-Allelúja, * noli flere, María, allelúja: † resurréxit Dóminus, † allelúja, allelúja.
-
 [Lectio9]
 @Tempora/Pasc1-0:Lectio7:s/Illud .*//s
 
@@ -79,9 +74,3 @@ Allelúja, * noli flere, María, allelúja: † resurréxit Dóminus, † allel�
 
 [Responsory12]
 @Tempora/Pasc0-5:Responsory2
-
-[Capitulum Laudes]
-@Tempora/Pasc1-0
-_
-@Psalterium/Major Special:PaschM Laudes:3-8
-

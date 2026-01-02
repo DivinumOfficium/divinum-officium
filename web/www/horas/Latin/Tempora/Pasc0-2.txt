@@ -1,5 +1,8 @@
+[Officium]
+Die III infra octavam Paschæ
+
 [Rank]
-Die III infra octavam Paschæ;;Duplex I classis;;7;;ex Pasc0-0
+;;Duplex I classis;;7;;ex Pasc0-0
 
 [Rule]
 ex Pasc0-0;
@@ -9,6 +12,10 @@ no commemoratio;
 Minores sine Antiphona;
 Capitulum Versum 2;
 Psalmi Dominica;
+
+[Oratio]
+Deus, qui Ecclésiam tuam novo semper fœtu multíplicas: concéde fámulis tuis; ut sacraméntum vivéndo téneant, quod fide percepérunt.
+$Per Dominum
 
 [Ant Matutinum]
 @Tempora/Pasc0-0::s/^V\..*//sm
@@ -21,7 +28,7 @@ Léctio sancti Evangélii secúndum Lucam
 In illo témpore: Stetit Jesus in médio discipulórum, et dicit eis: Pax vobis: ego sum, nolíte timére. Et réliqua.
 _
 Homilía sancti Ambrósii Epíscopi
-!Liber 10. Comment. in Lucam, cap. 24. ante finem
+!Liber 10. Comment. in Lucam, cap. 24, ante finem
 Mirum, quo modo se natúra corpórea per impenetrábile corpus infúderit invisíbili áditu, visíbili conspéctu: tangi fácilis, diffícilis æstimári. Dénique conturbáti discípuli æstimábant se spíritum vidére. Et ídeo Dóminus, ut spéciem nobis resurrectiónis osténderet: Palpáte, inquit, et vidéte, quia spíritus carnem et ossa non habet, sicut me vidétis habére. Non ergo per incorpóream natúram, sed per resurrectiónis qualitátem, impérvia usu clausa penetrávit. Nam quod tángitur, corpus est: quod palpátur, corpus est.
 
 [Responsory1]
@@ -31,7 +38,7 @@ V. Repléti quidem Spíritu Sancto loquebántur cum fidúcia verbum Dei.
 R. Testimónium resurrectiónis Jesu Christi Dómini nostri, allelúja, allelúja.
 
 [Lectio2]
-In córpore autem resurgémus. Seminátur enim corpus animále, surgit corpus spiritále: sed illud subtílius, hoc crássius, útpote adhuc terrénæ lábis qualitáte concrétum. Nam quómodo non corpus, in quo manébant insígnia vúlnerum, vestígia cicatrícum, quæ Dóminus palpánda óbtulit? In quo non solum fidem firmat, sed étiam devotiónem ácuit, quod vúlnera suscépta pro nobis cælo inférre máluit, abolére nóluit: ut Deo Patri nostræ prétia libertátis osténderet. Talem sibi Pater ad déxteram locat, trophǽum nostræ salútis ampléctens: tales illic Mártyres nobis cicatrícis suæ coróna monstrávit.
+In córpore autem resurgémus. Seminátur enim corpus animále, surgit corpus spiritále: sed illud subtílius, hoc crássius, útpote adhuc terrénæ labis qualitáte concrétum. Nam quómodo non corpus, in quo manébant insígnia vúlnerum, vestígia cicatrícum, quæ Dóminus palpánda óbtulit? In quo non solum fidem firmat, sed étiam devotiónem ácuit, quod vúlnera suscépta pro nobis cælo inférre máluit, abolére nóluit: ut Deo Patri nostræ prétia libertátis osténderet. Talem sibi Pater ad déxteram locat, trophǽum nostræ salútis ampléctens: tales illic Mártyres nobis cicatrícis suæ coróna monstrávit.
 
 [Responsory2]
 R. De ore prudéntis procédit mel, allelúja: dulcédo mellis est sub língua ejus, allelúja:
@@ -48,9 +55,8 @@ Et quóniam sermo huc noster evásit, considerémus qua grátia secúndum Joánn
 [Ant 2]
 Stetit Jesus * in médio discipulórum suórum, et dixit eis: Pax vobis, allelúja, allelúja.
 
-[Oratio]
-Deus, qui Ecclésiam tuam novo semper fœtu multíplicas: concéde fámulis tuis; ut sacraméntum vivéndo téneant, quod fide percepérunt.
-$Per Dominum
-
 [Ant 3]
 Vidéte manus meas * et pedes meos, quia ego ipse sum, allelúja, allelúja.
+
+[Ant 3] (rubrica cisterciensis)
+Obtulérunt * discípuli Dómino partem piscis assi, et favum mellis, allelúia, allelúia.

@@ -1,5 +1,8 @@
+[Officium]
+Dominica I Adventus
+
 [Rank]
-Dominica I Adventus;;Semiduplex;;6
+;;Semiduplex;;6.9
 
 [Rule]
 9 lectiones
@@ -7,17 +10,16 @@ Antiphonas horas
 
 [Ant Vespera]
 @:Ant Laudes
+(sed rubrica tridentina aut rubrica praedicatorum omittuntur)
 
-[Ant Vespera](rubrica 1570 aut rubrica 1910)
-@Psalterium/Psalmi major:Daya6 Vespera
+[Responsory Vespera 1] (rubrica cisterciensis)
+Responsorium. Missus est Gábriel Angelus ad Maríam Vírginem desponsátam Joseph, núntians ei verbum; et expavéscit Virgo de lúmine: ne tímeas, María, invenísti grátiam apud Dóminum: 
+* Ecce concípies, et páries, et vocábitur Altíssimi Fílius.
+V. Dabit ei Dóminus Deus sedem David, patris ejus, et regnábit in domo Jacob in ætérnum.
+R. Ecce concípies, et páries, et vocábitur Altíssimi Fílius. 
 
-[Ant Vespera 3]
-@:Ant Laudes
-
-[Capitulum Vespera]
-!Rom 13:11
-v. Fratres: Hora est jam nos de somno súrgere: nunc enim própior est nostra salus, quam cum credídimus.
-$Deo gratias.
+[Versum 1]
+@Psalterium/Special/Major Special:Adv Versum 3
 
 [Ant 1]
 Ecce nomen Dómini * venit de longínquo, et cláritas ejus replet orbem terrárum.
@@ -25,6 +27,9 @@ Ecce nomen Dómini * venit de longínquo, et cláritas ejus replet orbem terrár
 [Oratio]
 Excita, quǽsumus, Dómine, poténtiam tuam, et veni: ut ab imminéntibus peccatórum nostrórum perículis, te mereámur protegénte éripi, te liberánte salvári:
 $Qui vivis
+
+[Invit] (rubrica cisterciensis)
+Ecce venit Rex, * Occurrámus óbviam Salvatóri nostro.
 
 [Lectio1]
 Incipit liber Isaíæ Prophétæ
@@ -141,21 +146,23 @@ Omnes sitiéntes, * veníte ad aquas: quǽrite Dóminum, dum inveníri potest, a
 Ecce véniet * Prophéta magnus, et ipse renovábit Jerúsalem, allelúja.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Rom 13:11
+v. Fratres: Hora est jam nos de somno súrgere: nunc enim própior est nostra salus, quam cum credídimus.
+$Deo gratias.
 
 [Ant 2]
 Spíritus Sanctus * in te descéndet, María: ne tímeas, habébis in útero Fílium Dei, allelúja.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
 [Capitulum Sexta]
-@Psalterium/Major Special:Day1 Laudes
+@Psalterium/Special/Major Special:Feria Laudes
 
 [Capitulum Nona]
 !Rom 13:13-14
 v. Sicut in die honéste ambulémus, non in comessatiónibus et ebrietátibus, non in cubílibus et impudicítiis, non in contentióne et æmulatióne; sed induímini Dóminum Jesum Christum.
 $Deo gratias
+
+[Ant Vespera 3]
+@:Ant Laudes
 
 [Ant 3]
 Ne tímeas, María, * invenísti enim grátiam apud Dóminum: ecce concípies, et páries fílium, allelúja.

@@ -1,10 +1,13 @@
-[Lectio1]
+[Lectio9]
 @Tempora/Pasc0-1:Lectio1:s/ Gdy.*//s
 
-[Lectio2]
+[Lectio10]
 @Tempora/Pasc0-1:Lectio1:s/.*Gdy/Gdy/s s/$/~/
 @Tempora/Pasc0-1:Lectio2:s/Mieli.*//s
 
-[Lectio3]
+[Lectio11]
 @Tempora/Pasc0-1:Lectio2:s/.*Mieli/Mieli/s s/$/~/
-@Tempora/Pasc0-1:Lectio3
+@Tempora/Pasc0-1:Lectio3:s/Zastawiają.*//s
+
+[Lectio12]
+@Tempora/Pasc0-1:Lectio3:s/.*Zastawiają/Zastawiają/s

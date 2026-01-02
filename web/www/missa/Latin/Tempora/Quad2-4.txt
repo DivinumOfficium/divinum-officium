@@ -1,8 +1,12 @@
-[Rank]
-Feria Quinta infra Hebdomadam II in Quadragesima;;Feria major;;2
+[Officium]
+Feria Quinta infra Hebdomadam II in Quadragesima
 
-[Rank](rubrica 1960)
-Feria Quinta infra Hebdomadam II in Quadragesima;;Feria major;;3
+[Rank]
+;;Feria major;;2.1
+(sed rubrica 1930)
+;;Feria major;;4.9
+(sed rubrica 196)
+;;Feria major;;3.9
 
 [Rule]
 no Gloria
@@ -45,8 +49,7 @@ Præsénti sacrifício, nómini tuo nos, Dómine, jejúnia dicáta sanctíficent
 $Per Dominum
 
 [Communio]
-!Joann 6:57
-Qui mandúcat meam carnem, et bibit meum sánguinem, in me manet, et ego in eo, dicit Dóminus.
+@Tempora/Pent09-0
 
 [Postcommunio]
 Grátia tua nos, quǽsumus, Dómine, non derelínquat: quæ et sacræ nos déditos fáciat servitúti, et tuam nobis opem semper acquírat.

@@ -1,0 +1,70 @@
+[Versum 1]
+V. Spravedliví žijí navěky, alleluja.
+R. A u Pána je jejich odměna, alleluja.
+
+[Invit]
+Alleluja, alleluja, * Alleluja.
+
+[Ant Matutinum]
+Alleluja, * alleluja, Alleluja.;;1
+;;2
+;;4
+;;5
+;;8
+;;10
+Alleluja, * alleluja, Alleluja.;;14
+;;20
+;;23
+;;63
+;;64
+;;91
+Alleluja, * alleluja, Alleluja.;;256;257;258
+
+[Lectio6]
+@Commune/C2p:Lectio5 in 2 loco:s/Neporazitelnou .*//
+
+[Lectio7]
+@Commune/C2p:Lectio5 in 2 loco:s/.*Neporazitelnou /Neporazitelnou / s/$/~/
+@Commune/C2p:Lectio6 in 2 loco:s/Drahocenná je tato.*//
+
+[Responsory7]
+R. Duše spravedlivých jsou v Božích rukou,
+* A nedotknou se jich útrapy smrti, alleluja, alleluja. 
+V. V očích nemoudrých se zdá, jako by umírali, oni však jsou v pokoji.
+R. A nedotknou se jich útrapy smrti, alleluja, alleluja.
+
+[Lectio8]
+@Commune/C2p:Lectio6 in 2 loco:s/.*Drahocenná je tato/Drahocenná je tato/
+
+[Responsory8]
+@CommuneM/C1p:Responsory9
+
+[Lectio11]
+@Commune/C2p:Lectio9:s/Kristus je.*//s
+
+[Lectio12]
+@Commune/C2p:Lectio9:s/.* Kristus je/Kristus je/s
+
+[Responsory12]
+R. Vyprali si své oděvy,
+* A do běla si je vyprali v krvi Beránkově, Alleluja, alleluja, alleluja.
+V. Tito jsou, kdo přišli z velikého soužení, a vyprali si své oděvy:
+R. A do běla si je vyprali v krvi Beránkově, Alleluja, alleluja, alleluja.
+
+[Versum 2]
+@:Versum 1
+
+[Responsory Breve Tertia]
+R.br. Svatí tvoji, Hospodine, budou ti dobrořečit. Alleluja, alleluja.
+R. Svatí tvoji, Hospodine, budou ti dobrořečit. Alleluja, alleluja.
+V. Slávu tvého království budou hlásat, a o tvé moci mluvit.
+R. Alleluja, alleluja.
+
+[Responsory Breve Sexta]
+R.br. Spravedliví budou jásat před tváří Boží, * Alleluja, alleluja.
+R. Spravedliví budou jásat před tváří Boží, * Alleluja, alleluja.
+V. A těšit se budou v radosti.
+R. Alleluja, alleluja.
+
+[Versum 3]
+@:Versum 1

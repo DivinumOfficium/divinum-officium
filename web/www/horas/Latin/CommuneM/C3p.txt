@@ -1,70 +1,46 @@
 @CommuneM/C2p
 
-[Name]
-Commune Plurimorum Martyrum Tempore Paschali
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
+[Officium]
+@Commune/C3p
 
 [HymnusM Vespera]
 @Commune/C3:HymnusM Laudes
+
+[Oratio]
+@Commune/C3
 
 [HymnusM Matutinum]
 @Commune/C3
 
 [Ant Matutinum]
-Stabunt justi * in magna constántia advérsus eos qui se angustiavérunt, allelúja.;;1
+@Commune/C1p::1 s/;;18/;;1/
 ;;2
 ;;10
 ;;14
 ;;15
 ;;23
-V. Sancti et justi in Dómino gaudéte, allelúja.
-R. Vos elégit Deus in hereditátem sibi, allelúja.
-Fulgébunt justi * sicut sol in conspéctu Dei, allelúja.;;32
+@Commune/C1p:Ant Vespera:5 s/\d+/32/
 ;;33
 ;;45
 ;;60
 ;;63
 ;;78
-V. Lux perpétua lucébit Sanctis tuis, Dómine, allelúja.
-R. Et ætérnitas témporum, allelúja.
-Lux perpétua * lucébit Sanctis tuis, Dómine, et ætérnitas témporum, allelúja.;;259;254;255
-V. Lætítia sempitérna super cápita eórum, allelúja.
-R. Gáudium et exsultatiónem obtinébunt, allelúja.
+@Commune/C1p::7 s/;;74/;;259;254;255/
 
-[MM Capitulum]
-!Sap 5:5
-Ecce quomodo computati sunt inter filios Dei, et inter sanctos sors illorum est. 
-$Deo gratias
-_
-V. Pretiosa in Conspectu Domini, alleluia
-R. Mors sanctorum ejus, alleluia
-
-[Lectio9]
+[Lectio9] (nisi rubrica cisterciensis)
 @CommuneM/C2p:Lectio9 in 2 loco
 
-[Lectio10]
+[Lectio10] (nisi rubrica cisterciensis)
 @CommuneM/C2p:Lectio10 in 2 loco
 
-[Lectio11]
+[Lectio11] (nisi rubrica cisterciensis)
 @CommuneM/C2p:Lectio11 in 2 loco
 
-[Lectio12]
+[Lectio12] (nisi rubrica cisterciensis)
 @CommuneM/C2p:Lectio12 in 2 loco
 
 [HymnusM Laudes]
 @Commune/C3
 
-[Oratio]
-@Commune/C3
-
-[Oratio1]
-@Commune/C3
-
-[Oratio2]
-@Commune/C3
-
-[LectioE]
-@Commune/C3pp
+[Evangelium] (nisi rubrica cisterciensis)
+@Commune/C3p

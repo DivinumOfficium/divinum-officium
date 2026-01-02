@@ -1,4 +1,19 @@
 @Sancti/08-04
 
-[Rank]
-S. Dominici Confessoris;;Duplex;;3;;vide C5
+[Rule] (nisi rubrica 1963)
+12 lectiones
+
+[Name]
+Domínici
+
+[Lectio5]
+@Sancti/08-04:Lectio4
+
+[Lectio6]
+@Sancti/08-04:Lectio5:s/Romam rédiens.*//
+
+[Lectio7]
+@Sancti/08-04:Lectio5:s/.* (?=Romam rédiens)//
+
+[Lectio8]
+@Sancti/08-04:Lectio6

@@ -1,167 +1,35 @@
-[Name]
-Office de la Bienheureuse Vierge Marie le samedi
+[Officium]
+Bienheureuse Vierge Marie le samedi
 
-[Rank]
-Sanctæ Mariæ Sabbato;;Feria;;2;;vide C10
+[Missa]
+Salve Sancta Parens (a Trinitate usque ad Adventum)
 
-[Rule]
-vide C10
-Special Benedictio
-Special Lectio 3
-Doxology=Nat
-
-[Capitulum Vespera]
-!Sir 24:14
-v. Dès le commencement et avant tous les siècles, j’ai été créée, et dans la suite des âges je ne cesserai point d’être ; et, dans la demeure sainte, j’ai exercé devant lui mon ministère.
-$Deo gratias.
-
-[Hymnus Vespera]
-{:H-Avemaris:}
-!La première strophe de l’Hymne suivante est dite à genoux.
-v. Salut, étoile de la mer,
-Mère de Dieu féconde,
-Salut, ô toujours Vierge,
-Porte heureuse du ciel !
-_
-Vous qui de Gabriel
-Avez reçu l’Ave,
-Fondez-nous dans la paix,
-Changeant le nom d’Ève.
-_
-Délivrez les captifs,
-Éclairez les aveugles,
-Chassez loin tous nos maux,
-Demandez tous les biens.
-_
-Montrez en vous la Mère,
-Vous-même offrez nos vœux
-Au Dieu qui, né pour nous,
-Voulut naître de vous.
-_
-O Vierge incomparable,
-Vierge douce entre toutes,
-Affranchis du péché,
-Rendez-nous doux et chastes.
-_
-Donnez une vie pure,
-Préparez un chemin sûr,
-Pour que voyant Jésus
-Notre liesse soit éternelle.
-_
-Louange à Dieu le Père,
-Gloire au Christ souverain,
-Louange au Saint-Esprit,
-Aux trois un seul hommage.
-Ainsi soit-il.
-
-[Versum 1]
-@Commune/C6:Versum 2
-
-[Ant 1]
+[Ant 1_]
 Mère bienheureuse * Vierge sans taches, glorieuse Reine du monde, intercédez pour nous auprès du Seigneur.
 
-[Oratio]
-Seigneur notre Dieu, accordez, s’il vous plaît, à nous vos serviteurs, de jouir d’une perpétuelle santé de l’âme et du corps : et grâce à la glorieuse intercession de la bienheureuse Marie toujours Vierge, d’être délivrés des tristesses du temps présent, puis de goûter les joies éternelles.
-$Per Dominum
+[Ant 1_Pasch]
+Reine du Ciel * réjouissez-vous alleluia, car celui que Vous avez mérité de porter, alleluia, est ressucité comme Il l'a dit, alléluia : priez Dieu pour nous, alleluia.
 
 [Invit]
 Je vous salue Marie pleine de grâces, * le Seigneur est avec Vous.
 
-[Hymnus Matutinum]
-@Commune/C11:Hymnus Matutinum
-
 [Benedictio]
-Que par les prières et les mérites de la bienheureuse Marie toujours Vierge et de tous les saints, le Seigneur nous conduise au royaume des Cieux. Ainsi soit-il.
-Veuillez, mon père, bénir.
+Que par les prières et les mérites de la bienheureuse Marie toujours Vierge et de tous les saints, le Seigneur nous conduise au royaume des Cieux.
 Que la Vierge Marie nous obtienne la bénédiction de Son divin Fils.
-Que la Vierge des vierges Elle-même, intercède pour nous auprès du Seigneur. Ainsi soit-il.
-Par la Vierge Mère, donnez nous Seigneur, le salut et la paix. Ainsi soit-il.
-
-[Capitulum Laudes]
-@:Capitulum Vespera
-
-[Hymnus Laudes]
-{:Ogloriosavirginum:}v. O la plus glorieuse des vierges,
-élevée au-dessus des astres,
-vous nourrissez du lait de votre sein
-Celui qui vous a créée, devenu petit enfant.
-_
-Vous nous rendez par votre auguste Fils,
-ce dont Ève nous avait malheureusement privés :
-vous ouvrez les portes du ciel
-pour y faire entrer ceux qui pleurent.
-_
-Vous êtes la porte du grand Roi,
-et son palais, éclatant de lumière :
-Nations rachetées, célébrez toutes la vie
-qui nous est donnée par cette Vierge.
-_
-* O Jésus, gloire à vous
-qui êtes né de la Vierge,
-ainsi qu’au Père et à l’Esprit nourricier,
-dans les siècles éternels.
-Ainsi soit-il.
+Que la Vierge des vierges Elle-même, intercède pour nous auprès du Seigneur.
+Par la Vierge Mère, donnez nous Seigneur, le salut et la paix.
 
 [Versum 2]
 V. Vous êtes bénie entre les femmes.
 R. Et le fruit de Votre sein est béni.
 
-[Ant 2]
+[Ant 2_]
 Heureuse Mère de Dieu, * Marie toujours Vierge, temple du Seigneur, sanctuaire du Saint-Esprit, seule plus que toute autre Vous avez plu à Jésus-Christ notre Seigneur. Priez pour le peuple, intervenez pour le clergé, intercédez pour les femmes consacrées à Dieu.
-
-[Lectio Prima]
-!Sir 24:19-20
-v. Comme la canelle et le baume odorant, dans les places publiques j'ai exhalé mon parfum ; comme la myrrhe choisie j'ai répandu une odeur suave.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
-R.br. Dans Votre éclat * Et Vore beauté.
-R. Dans Votre éclat * Et Vore beauté.
-V. Avancez, triomphez et régnez.
-R. Et Votre beauté.
-&Gloria
-R. Dans Votre éclat * Et Vore beauté.
-_
-V. Dieu la protégera de Son regard.
-R. Dieu est au milieu d'Elle ; Elle ne sera pas ébranlée.
-
-[Capitulum Sexta]
-!Sir 24:15-16
-v. Et ainsi j'ai eu une demeure fixe dans Sion, et j'ai trouvé le repos dans la cité sainte ; et Jérusalem est le siège de mon empire. Et j'ai poussé mes racines dans le peuple glorifié, dans la portion de mon Dieu, dans son héritage, et dans l'assemblée entière des Saints est ma demeure.
-$Deo gratias.
-
-[Responsory Sexta]
-R.br. Dieu la protégera * De Son regard.
-R. Dieu la protégera * De Son regard.
-V. Dieu est au milieu d'Elle ; Elle ne sera pas ébranlée.
-R. De son Regard.
-&Gloria
-R. Dieu la protégera * De Son regard.
-_
-V. Dieu La choisit et La prédestina.
-R. Il La fit habiter dans Son tabernacle.
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias.
-
-[Responsory Nona]
-R.br. Dieu La choisit * Et La prédestina.
-R. Dieu La choisit * Et La prédestina.
-V. Il la fit habiter dans Son tabernacle.
-R. Et la prédestina.
-&Gloria
-R. Dieu La choisit * Et La prédestina.
-_
-V. La grâce est répandue sur Vos lèvres.
-R. C'est pourquoi Dieu Vous a bénie pour toujours.
 
 [Lectio M01]
 De la lettre de saint Ambroise, Évêque, à Siricius, Pape.
 !Lettre 81, ou 7, un peu après le début.
-C’est perversité que de dire : Une Vierge a conçu, À mais ce n’est pas une vierge qui enfanta. Une vierge put donc concevoir, mais une vierge ne put enfanter, alors que toujours la conception précède, et l’enfantement la suit? Si Ton ne croit pas aux enseignements des prêtres, que Ton croie aux oracles du Christ ; que Ton croie aux avertissements des Anges qui disent : rien n’est impossible à Dieu; que Ton croie au Symbole des Apôtres, gardé et conservé toujours intact par l’Église Romaine. Marie entendit la parole de l’Ange ; elle ne doutait pas de sa miraculeuse maternité, quand elle demandait : comment ces choses arriveront-elles ? après quoi elle répondit : Voici la servante du Seigneur, qu’il me soit fait selon votre parole
+C’est perversité que de dire : Une Vierge a conçu, À mais ce n’est pas une vierge qui enfanta. Une vierge put donc concevoir, mais une vierge ne put enfanter, alors que toujours la conception précède, et l’enfantement la suit ? Si Ton ne croit pas aux enseignements des prêtres, que Ton croie aux oracles du Christ ; que Ton croie aux avertissements des Anges qui disent : rien n’est impossible à Dieu ; que Ton croie au Symbole des Apôtres, gardé et conservé toujours intact par l’Église Romaine. Marie entendit la parole de l’Ange ; elle ne doutait pas de sa miraculeuse maternité, quand elle demandait : comment ces choses arriveront-elles ? après quoi elle répondit : Voici la servante du Seigneur, qu’il me soit fait selon votre parole
 &teDeum
 
 [Lectio M02]
@@ -197,13 +65,13 @@ Bien grand vraiment, mes bien-aimés, est le mal que nous ont fait à eux seuls 
 [Lectio M07]
 De l’Épître de saint Ambroise Évêque au Pape Sirice
 !Ep. 81, ou 7, vers le milieu
-Cela n’est pas incroyable, qu’un homme soit né d’une vierge, quand d’une pierre a jailli une fontaine abondante, que du fer a flotté sur l’eau, et qu’un homme a marché sur les flots. Quoi donc, l’eau a porté un homme et une vierge ne pourrait pas engendrer un homme? L’homme duquel nous lisons : Et le Seigneur leur enverra un homme qui les sauvera et le Seigneur sera connu des Égyptiens x. Si, dans l’Ancien Testament, une vierge a conduit l’armée des Hébreux à travers la mer 2, c’est parce que dans le Nouveau, une Vierge, palais d’un enfant céleste, a été choisie pour l’oeuvre du salut.
+Cela n’est pas incroyable, qu’un homme soit né d’une vierge, quand d’une pierre a jailli une fontaine abondante, que du fer a flotté sur l’eau, et qu’un homme a marché sur les flots. Quoi donc, l’eau a porté un homme et une vierge ne pourrait pas engendrer un homme ? L’homme duquel nous lisons : Et le Seigneur leur enverra un homme qui les sauvera et le Seigneur sera connu des Égyptiens x. Si, dans l’Ancien Testament, une vierge a conduit l’armée des Hébreux à travers la mer 2, c’est parce que dans le Nouveau, une Vierge, palais d’un enfant céleste, a été choisie pour l’oeuvre du salut.
 &teDeum
 
 [Lectio M08]
 Du Commentaire du Pape saint Grégoire sur les Livres des Rois.
 !Sur I Rois 1
-IL y eut un homme de Ramathaim Sophim, de la montagne (TEphraim3. Le nom de cette montagne peut désigner la Vierge à jamais bienheureuse, Marie, Mère de Dieu. Elle fut en vérité montagne, celle que la dignité de son élection éleva au-dessus de toute autre créature de choix. N’est-elle pas un mont sublime, cette Marie qui pour atteindre à la conception du Verbe étemel, a élevé le sommet de ses mérites, au-dessus de tous les choeurs des Anges, jusqu’au trône de la Divinité? Car c’est la dignité suréminente de cette montagne que prophétisait Isaïe disant : Il y aura, dans les derniers jours, une montagne préparée, demeure du Seigneur, au sommet des monts. Cette montagne est vraiment au sommet des monts, puisque la sublimité de Marie brille au-dessus de tous les Saints.
+IL y eut un homme de Ramathaim Sophim, de la montagne (TEphraim3. Le nom de cette montagne peut désigner la Vierge à jamais bienheureuse, Marie, Mère de Dieu. Elle fut en vérité montagne, celle que la dignité de son élection éleva au-dessus de toute autre créature de choix. N’est-elle pas un mont sublime, cette Marie qui pour atteindre à la conception du Verbe étemel, a élevé le sommet de ses mérites, au-dessus de tous les choeurs des Anges, jusqu’au trône de la Divinité ? Car c’est la dignité suréminente de cette montagne que prophétisait Isaïe disant : Il y aura, dans les derniers jours, une montagne préparée, demeure du Seigneur, au sommet des monts. Cette montagne est vraiment au sommet des monts, puisque la sublimité de Marie brille au-dessus de tous les Saints.
 &teDeum
 
 [Lectio M09]
@@ -215,7 +83,7 @@ Le sacrement de notre réconciliation, arrêté avant tous les siècles, nulle f
 [Lectio M10]
 Sermon de saint Bernard, Abbé
 !Sur le chapitre XII de rApocalypse, avant le milieu
-Embrassons les traces de Marie, mes frères, et, dans une supplication très dévote, jetons-nous à ses pieds bienheureux. Tenons-la et ne la laissons pas aller jusqu’à ce qu’elle nous bénisse, car elle est puissante. Car la toison entre la rosée et le sol2, la femme entre le soleil et la lune, c’est Marie s’étonne-t-on moins de la toison couverte de rosée, que de la femme vêtue du soleil ; grande familiarité il est vrai, mais surtout étonnante intimité du soleil et d’une femme. Comment en effet, en un tel brasier, une si fragile nature subsiste-t-elle? Tu t’étonnes à bon droit, ô saint Moyse, et tu désires regarder de plus près. Ote alors la chaussure de tes pieds et mets un voile autour des pensées de la chair si tu veux y parvenir.
+Embrassons les traces de Marie, mes frères, et, dans une supplication très dévote, jetons-nous à ses pieds bienheureux. Tenons-la et ne la laissons pas aller jusqu’à ce qu’elle nous bénisse, car elle est puissante. Car la toison entre la rosée et le sol2, la femme entre le soleil et la lune, c’est Marie s’étonne-t-on moins de la toison couverte de rosée, que de la femme vêtue du soleil ; grande familiarité il est vrai, mais surtout étonnante intimité du soleil et d’une femme. Comment en effet, en un tel brasier, une si fragile nature subsiste-t-elle ? Tu t’étonnes à bon droit, ô saint Moyse, et tu désires regarder de plus près. Ote alors la chaussure de tes pieds et mets un voile autour des pensées de la chair si tu veux y parvenir.
 &teDeum
 
 [Lectio M101]

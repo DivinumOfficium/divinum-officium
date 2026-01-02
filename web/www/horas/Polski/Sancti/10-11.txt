@@ -1,15 +1,8 @@
 [Rank]
 Macierzyństwa Najświętszej Marji Panny;;Duplex 2 classis;;5.1;;ex C11
 
-[Rank1960]
+[Rank] (rubrica 1960)
 Macierzyństwa Najświętszej Marji Panny;;Duplex 2 classis;;5;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
 
 [Ant Vespera]
 Błogosławionaś jest * Panno Marjo, która nosiłaś Stworzyciela wszystkich.;;109
@@ -17,11 +10,6 @@ Porodziłaś * tego, który Cię uczynił, i na wieki pozostajesz dziewicą.;;11
 Choć byłam małą * spodobałam się Najwyższemu i z moich wnętrzności porodziłam Boga i człowieka.;;121
 Błogosławionaś córko, * od Pana, gdyż przez ciebie uczestniczymy w owocu życia.;;126
 Widziały ją * córki Syjonu, i błogosławioną nazwały i królowe wychwalały Ją.;;147
-
-[Capitulum Vespera]
-!Syr 24:12-13
-v. Który mię stworzył, odpoczynął w przybytku moim, i rzekł mi: Mieszkaj w Jakubie, a między wybranymi memi rozpuść korzenie.
-$Deo gratias
 
 [Versum 1]
 V. Błogosławionaś ty między niewiastami.
@@ -65,7 +53,7 @@ Niechaj będzie sława po wszelki wiek.
 Amen.
 
 [Lectio1]
-Z Księgi Ekklezjastyka
+Z Księgi Eklezjastyka
 !Syr 24:5-11
 5 Jam wyszła z ust Nawyższego, pierworodna przed wszytkim stworzeniem.
 6 Jam sprawiła na niebie, aby wschodziła światłość nieustająca a jako mgła okryłam wszytkę ziemię.
@@ -123,8 +111,10 @@ R. A z mego łona narodził się Bóg i Człowiek.
 O jakże szczęśliwa Maryja, której ani pokory nie brakło, ani dziewictwa! I to szczególnego dziewictwa, którego nie skaziło, ale uświetniło macierzyństwo; i szczególnej też pokory, której nie zniosło, ale podniosło płodne dziewictwo; a obok tego nie brakło też bezprzykładnego wprost macierzyństwa, któremu i dziewictwo towarzyszy, i pokora. Cóż z tego nie jest podziwu godne? Co nie jest bezprzykładne? Co nie jest szczególne? Dziwnym zaś jest, jeśli się nie wahasz co do oceny, zastanawiając się nad tym, co bardziej jest godne podziwu: czy mianowicie więcej zdumiewa płodność w Dziewicy, czy też nienaruszalność w Matce; czy wywyższenie ze względu na Syna, czy też obok takiego wywyższenia – pokora. Naturalnie, wyżej od poszczególnych należy cenić wszystkie te właściwości razem zebrane i bez porównania lepiej jest i szczęśliwiej posiadać je wszystkie, aniżeli tylko niektóre. Cóż więc dziwnego, że Bóg, o którym czytamy, że przedziwny jest w Świętych swoich, dziwniejszym się okazuje w swej Matce? Uczcijcież zatem, małżonkowie, niewinność ciała w ciele skazitelnym; podziwiajcie też wy, poświęcone dziewice, macierzyństwo w dziewictwie; naśladujcie, wszyscy ludzie, Bożej Matki pokorę!
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//gm
+[Capitulum Laudes]
+!Syr 24:12-13
+v. Który mię stworzył, odpoczynął w przybytku moim, i rzekł mi: Mieszkaj w Jakubie, a między wybranymi memi rozpuść korzenie.
+$Deo gratias
 
 [Hymnus Laudes]
 v. Ciebie, błogosławiona Matko Boga,
@@ -149,7 +139,7 @@ V. Zakwitła różdżka Jessego: wyszła gwiazda z Jakóba.
 R. Dziewica porodziła nam Zbawiciela; chwalimy cię, Boże nasz.
 
 [Ant 2]
-@Commune/C11:Ant 1:s/Twoją/Twojego Macierzyństwa/
+@Commune/C11:Ant 1_:s/Twoją/Twojego Macierzyństwa/
 
 [Ant 3]
 Macierzyństwo Twoje, * Boga Rodzico Dziewico, zwiastowało wesele całemu światu: z Ciebie bowiem wyszło słońce sprawiedliwości, Chrystus, Bóg nasz.

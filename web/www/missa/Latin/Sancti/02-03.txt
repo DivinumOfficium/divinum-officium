@@ -1,22 +1,16 @@
+[Officium]
+S. Blasii Episcopi et Martyris
+
 [Rank]
-S. Blasii Episcopi;;Simplex;;1.1;;vide C2b
+;;Simplex;;1.1;;vide C2-1
+(sed rubrica innovata)
+;;Duplex optional;;2;;vide C2-1
 
 [Rule]
-vide C2b;
+vide C2-1;
 Gloria
 
-[Oratio]
-Deus, qui nos beáti Blásii Mártyris tui atque Pontíficis ánnua solemnitáte~
-lætíficas: concéde propítius; ut cujus natalítia cólimus, de eiúsdem étiam~
-protectióne gaudeámus.
-$Per Dominum
-
-[Secreta]
-Múnera tibi, Dómine, dicáta sanctífica: et, intercedénte beáto Blásio Mártyre tuo~
-atque Pontífice, per éadem nos placátus inténde.
-$Per Dominum
-
-[Postcommunio]
-Hæc nos commúnio, Dómine, purget a crímine: et, intercedénte beáto Blásio Mártyre~
-tuo atque Pontífice, coeléstis remédii fáciat esse consórtes.
-$Per Dominum
+[Name]
+Blásii
+Secrata=Blásio
+Postcommunio=Blásio

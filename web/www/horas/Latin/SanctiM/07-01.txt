@@ -1,0 +1,126 @@
+@Sancti/07-01
+
+[Rule]
+12 lectiones
+Psalmi Dominica
+
+[Ant Vespera]  (rubrica cisterciensis)
+@Sancti/07-01::1-4
+
+[Responsory Vespera]
+@Sancti/07-01:Responsory Breve Tertia
+
+[AntMatutinumM]
+Sanguis * Jesu Christi, Fílii Dei, emúndat nos.;;115
+Prétio * empti estis: nolíte fíeri servi hóminum.;;119
+Unus mílitum * láncea latus ejus apéruit, et contínuo exívit Sanguis et aqua.;;140
+
+[Ant Matutinum 3N]
+Tórcular * calcávi solus, et de géntibus non est vir mecum.
+
+[Ant Matutinum]
+@Sancti/07-01::1-3 s/;;3/;;4/
+@Sancti/07-01::7-9
+@Sancti/07-01::4-6
+@:AntMatutinumM
+;;246;247;248
+
+[Ant Matutinum] (rubrica cisterciensis)
+@Sancti/07-01::1-3:s/;;3/;;4/
+@Sancti/07-01::5-6:s/;;29/;;22/ s/;;63/;;29/
+@:AntMatutinumM:1:s/;;115/;;42/
+@Sancti/07-01::7:s/;;7/;;5/
+@Sancti/07-01::4:s/;;22/;;63/
+@Sancti/07-01::8-9:s/;;87/;;73/ s/;;93/;;87/
+Hæc est * Sánguinis aspérsio mélius loquens quam Abel.;;93
+@:AntMatutinumM:2:s/;;119/;;97/
+;;246;247;248
+
+[Lectio1]
+@Sancti/07-01::1-6 s/-15/-14/
+
+[Lectio2]
+@Sancti/07-01:Lectio2:1 s/16-22/15-18/
+@Sancti/07-01:Lectio1:7
+@Sancti/07-01:Lectio2:2-4
+
+[Lectio3]
+@Sancti/07-01:Lectio2:1 s/16-/19-/
+@Sancti/07-01:Lectio2:5-8
+
+[Lectio4]
+@Sancti/07-01:Lectio3
+
+[Responsory4]
+@Sancti/07-01:Responsory Breve Nona:2-3:s/ \* (.)/\l$1/ s/V./*/
+@Sancti/07-01:Versum Nona:s/\.\nR. (.)/, \l$1/
+@Sancti/07-01:Responsory Breve Nona:3:s/V./R./
+
+[Lectio5]
+@Sancti/07-01:Lectio4
+
+[Responsory5]
+@Sancti/07-01:Responsory4
+
+[Lectio6]
+@Sancti/07-01:Lectio5:s/ Si enim.*//
+
+[Responsory6]
+@Sancti/07-01:Responsory5
+
+[Lectio7]
+@Sancti/07-01:Lectio5:s/.* (?=Si enim)// s/ Latus.*// s/$/~/
+Mortuo enim, ait, Jesu, et adhuc in cruce pendente, approximat miles, latus lancea percussit, et exinde aqua fluxit et Sanguis : unum baptismatis symbolum, aliud sacramenti. Ideo non ait: Exiit Sanguis et aqua; sed exiit aqua primum et Sanguis, quia primum baptismate diluimur et postea mysterio dedicamur.~
+@Sancti/07-01:Lectio5:s/.* (?=Latus)// s/$/~/
+@Sancti/07-01:Lectio6:s/ Ex his.*//
+
+[Responsory7]
+@Sancti/07-01:Responsory6
+
+[Lectio8]
+@Sancti/07-01:Lectio6:s/.*(?=Ex his)// s/ - Recurrénte.*//
+
+[Responsory8]
+R. Gratificávit † nos Deus in dilécto Fílio suo:
+* In quo habémus redemptiónem per Sánguinem ejus in remissiónem peccatórum.
+V. Ecce venit plenitúdo témporis, in quo misit Deus Fílium suum in terras.
+R. In quo habémus redemptiónem per Sánguinem ejus in remissiónem peccatórum.
+
+[Lectio9]
+@Sancti/07-01:Lectio7
+
+[Responsory9]
+@Sancti/07-01:Responsory7
+
+[Lectio10]
+@Sancti/07-01:Lectio8
+
+[Responsory10]
+@Sancti/07-01:Responsory8
+
+[Lectio11]
+@Sancti/07-01:Lectio9:s/ Hoc.*//
+
+[Responsory11]
+@Tempora/Pasc3-0:Responsory1:s/, allel[uú][ij]a//gs
+
+[Lectio12]
+@Sancti/07-01:Lectio9:s/.* (?=Hoc)//
+
+[Responsory12]
+R. Ecce † vox Sánguinis Fílii tui, fratris nostri, de terra clamat ad te, Dómine.
+* Benedícta terra, quæ apéruit os suum, et suscépit Sánguinem Redemptóris.
+V. Hæc est Sánguinis aspérsio, mélius loquens quam Abel. 
+R. Benedícta terra, quæ apéruit os suum, et suscépit Sánguinem Redemptóris.
+
+[Responsory Laudes]
+@Sancti/07-01:Responsory Breve Nona
+
+[Responsory TertiaM] (nisi rubrica cisterciensis)
+@Sancti/07-01:Nocturn 2 Versum
+
+[Responsory SextaM] (nisi rubrica cisterciensis)
+@Sancti/07-01:Nocturn 3 Versum
+
+[Responsory NonaM] (nisi rubrica cisterciensis)
+@Sancti/07-01:Versum 2

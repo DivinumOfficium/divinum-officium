@@ -1,12 +1,5 @@
-@Sancti/06-20
-
-[Rule]
-vide C3;
-OPapaM=Silvère;
-1 et 2 lectiones 
-
 [Lectio2]
-@Sancti/06-20:Lectio93:s/\. Quam.*/./s
+@Sancti/06-20:Lectio93:s/\. Rendue.*/./s
 
 [Lectio93]
-@Sancti/06-20:Lectio93:s/.*\. Quam/Quam/
+@Sancti/06-20:Lectio93:s/.*\. Rendue/Rendue/

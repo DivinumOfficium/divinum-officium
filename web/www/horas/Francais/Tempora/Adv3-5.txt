@@ -1,14 +1,12 @@
-[Rank]
-Feria VI Quattuor Temporum in Adventu;;Feria major;;2
+[Officium]
+Feria VI Quattuor Temporum in Adventu
 
-[Rank1960]
-Feria VI Quattuor Temporum Adventus;;Feria major;;4
+[Officium] (rubrica innovata)
+Feria VI infra Hebdomadam III Adventus
 
-[RankNewcal]
-Feria VI infra Hebdomadam III Adventus;;Feria major;;2
-
-[Rule]
-Preces Feriales
+[Oratio]
+Excitez votre puissance, Seigneur, et venez, pour que vos fidèles confiants en votre bonté, soient très vite délivrés de tout ce qui leur fait obstacle.
+$Qui vivis
 
 [Lectio1]
 Lecture du saint Évangile selon saint Luc.
@@ -26,7 +24,7 @@ V. Montrez-nous, Seigneur, votre miséricorde, et donnez-nous votre salut.
 R. De la Pierre du désert à la montagne de la fille de Sion.
 
 [Lectio2]
-O saintes femmes, apprenez avec quel empressement vous, devez assister vos parentes lorsqu’elles sont enceintes. Auparavant, Marie vivait seule dans le fond de sa demeure ; maintenant, sa pudeur virginale ne la détourne pas de paraître en public ; l’aspérité des montagnes n’arrête pas les élans de son zèle, la longueur du chemin ne la décourage pas dans son empressement à rendre service. La Vierge quitte sa maison et se dirige en grande hâte vers les montagnes et elle part, préoccupée de son devoir, sans penser aux difficultés, écoutant sa charité plutôt que la faiblesse de son sexe. O Vierges, apprenez à ne pas courir ça et là chez les autres, à ne pas vous arrêter sur les places, à ne prendre part à aucun entretien en public. Marie, lente à sortir de chez elle, pressée quand elle est au milieu du monde, resta trois mois chez sa cousine.
+O saintes femmes, apprenez avec quel empressement vous devez assister vos parentes lorsqu’elles sont enceintes. Auparavant, Marie vivait seule dans le fond de sa demeure ; maintenant, sa pudeur virginale ne la détourne pas de paraître en public ; l’aspérité des montagnes n’arrête pas les élans de son zèle, la longueur du chemin ne la décourage pas dans son empressement à rendre service. La Vierge quitte sa maison et se dirige en grande hâte vers les montagnes et elle part, préoccupée de son devoir, sans penser aux difficultés, écoutant sa charité plutôt que la faiblesse de son sexe. O Vierges, apprenez à ne pas courir ça et là chez les autres, à ne pas vous arrêter sur les places, à ne prendre part à aucun entretien en public. Marie, lente à sortir de chez elle, pressée quand elle est au milieu du monde, resta trois mois chez sa cousine.
 
 [Responsory2]
 R. Cieux, versez votre rosée, et que les nuées pleuvent un juste :
@@ -47,10 +45,6 @@ R. Et sa splendeur avec lui.
 
 [Ant 2]
 Dès que la voix * de votre salutation est venue à mes oreilles, l’enfant a tressailli de joie dans mon sein, alléluia.
-
-[Oratio]
-Excitez votre puissance, Seigneur, et venez, pour que vos fidèles confiants en votre bonté, soient très vite délivrés de tout ce qui leur fait obstacle.
-$Qui vivis
 
 [Ant 3]
 Ceci est le témoignage * que Jean a rendu : Celui qui vient après moi a été fait avant moi.

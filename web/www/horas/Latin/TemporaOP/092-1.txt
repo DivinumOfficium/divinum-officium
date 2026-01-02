@@ -1,0 +1,21 @@
+@Tempora/092-1
+
+[Lectio1]
+@Tempora/092-4::1-7 s/-7/-5/
+
+[Responsory1]
+@TemporaOP/091-0
+
+[Lectio2]
+@Tempora/092-4::1 s/8-13/6-9/
+@Tempora/092-4:Lectio1:8-9
+@Tempora/092-4::2-3
+
+[Responsory2]
+@TemporaOP/091-0:Responsory Vespera 1
+
+[Lectio3]
+@Tempora/092-4:Lectio2:!2-3 s/8-/10-/
+
+[Responsory3]
+@TemporaOP/091-0:Responsory2

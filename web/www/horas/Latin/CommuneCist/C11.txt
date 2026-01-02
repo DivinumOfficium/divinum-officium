@@ -1,0 +1,68 @@
+@CommuneM/C11
+
+[Ant Vespera]
+Dum esset Rex * in accúbitu suo, nardus mea dedit odórem suum.;;109
+Unguéntum effúsum * nomen tuum, ídeo adolescéntulæ dilexérunt te nimis.;;112
+Nigra sum, * sed formósa, fíliæ Jerúsalem: ídeo diléxit me Rex, et introdúxit me in cubículum suum.;;121
+Benedícta tu * in muliéribus, et benedíctus fructus ventris tui.;;126
+Pulchra es, et decóra, * fília Jerúsalem, terríbilis ut castrórum ácies ordináta.;;147
+
+[Responsory Vespera]
+@Commune/C6:Responsory Breve Tertia
+
+[Versum 1]
+@Commune/C11
+
+[Ant 1]
+@Commune/C11:: s/\s*\:.*$/./ s/femíneo/fœmíneo/
+
+[Invit] (tempore paschali)
+@CommuneCist/C2p
+
+[Ant Matutinum]
+Ecce tu pulchra es, * amíca mea, ecce tu pulchra es; óculi tui columbárum.;;8
+Sicut lílium * inter spinas, sic amíca mea inter fílias.;;18
+Favus distíllans * lábia tua, Sponsa, et odor vestimentórum tuórum sicut odor thuris.;;23
+Emissiónes tuæ * paradísus malórum punicórum, cum pomórum frúctibus.;;44
+Fons hortórum, * púteus aquárum vivéntium, quæ fluunt ímpetu de Líbano.;;45
+Véniat * diléctus meus in hortum suum, et cómedat fructum pomórum suórum.;;47
+Veni * in hortum meum, soror mea sponsa, méssui myrrham meam cum aromátibus meis.;;84
+Comédi favum * cum melle meo, bibi vinum meum cum lacte meo.;;86
+Anima mea * liquefácta est, ut diléctus locútus est: quæsívi, et non invéni illum; vocávi, et non respóndit mihi: invenérunt me custódes civitátis, percussérunt me, et vulneravérunt me, tulérunt pállium meum custódes murórum: fíliæ Jerúsalem, nuntiáte dilécto, quia amóre lángueo.;;95
+Talis est * diléctus meus, et ipse est amícus meus, fíliæ Jerúsalem.;;96
+Descéndi * in hortum nucum, ut vidérem poma convállium, et inspícerem, si floruísset vínea, et germinássent mala púnica: revértere, tevértere, Sulamítis, revértere, revértere, ut intueámur te.;;97
+Hortus conclúsus es, * Dei Génitrix, hortus conclúsus, fons signátus: surge própera, amíca mea, et veni.;;98
+Regáli ex progénie * María exórta refúlget; cujus précibus nos adjuvári, mente et spíritu devotíssime póscimus.;;249;250;251
+
+[Ant Matutinum] (tempore paschali)
+@CommuneCist/C6
+
+[Nocturn 3 Versum]
+@CommuneCist/C6
+
+[MM Capitulum]
+@:Capitulum Sexta
+_
+@Commune/C6:Nocturn 2 Versum
+
+[Ant Laudes]
+@:Ant Vespera:s/;;.*//g
+
+[Responsory Laudes]
+@CommuneM/C11:Responsory Vespera: s/^(V\..*)\,.*$/$1./m
+
+[Versum 2]
+@:Versum 1
+
+[Capitulum Sexta]
+!Cant. 6:9.
+v. Vidérunt eam fíliæ Sion, et beatíssimam prædicavérunt: * et regínæ laudavérunt eam.
+$Deo gratias
+
+[Capitulum Nona]
+!Cant. 6:10.
+v. Quæ est ista, quæ progréditur quasi auróra consúrgens, § pulchra ut luna, elécta ut sol, * terríbilis ut castrórum ácies ordináta?
+$Deo gratias
+
+[Versum 3]
+@:Versum 1

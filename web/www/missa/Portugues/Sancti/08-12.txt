@@ -1,39 +1,10 @@
-[Rank]
-S. Clarae Virginis;;Duplex;;3;;vide C6b
-
-[Rule]
-vide C6b;
-Gloria
+[Officium]
+S. Clara, Virgem
 
 [Comment]
 # 12 VIII – S. Clara, Virgem
 ! 3 classe
 ! Paramentos brancos
 
-[Introitus]
-@Commune/C6b:Introitus
-
-[Oratio]
-Ouvi-nos, ó Deus, nosso salvador, a fim de que, assim como nos alegramos com a festa da vossa B. Virgem Clara assim também consigamos alcançar piedosos sentimentos de fervorosa devoção.
-$Per Dominum
-
-[Lectio]
-@Commune/C6b:Lectio
-
-[Graduale]
-@Commune/C6b:Graduale
-
-[Evangelium]
-@Commune/C6b:Evangelium
-
-[Offertorium]
-@Commune/C6b:Offertorium
-
-[Secreta]
-@Commune/C6b:Secreta
-
-[Communio]
-@Commune/C6b:Communio
-
-[Postcommunio]
-@Commune/C6b:Postcommunio
+[Name]
+Clara

@@ -1,0 +1,45 @@
+[AntMatutinumM]
+I will come into thy house; I will worship towards thy holy temple.;;5
+The Lord is in his holy temple, the Lord’s throne is in heaven.;;10
+Adore ye the Lord in his holy court.;;28
+Blessed are they that dwell in thy house, O Lord: they shall praise thee for ever and ever.;;83
+
+[Responsory4]
+R. Strašné je toto místo! Toto je zajisté dům Boží a brána nebes;
+* Opravdu tedy přebývá Hospodin na tomto místě, a já jsem to nevěděl.
+V. Jákob uviděl ve snu žebřík, jehož vrchol se dotýkal nebes, a Anděly sestupující i vystupující po něm, a řekl: 
+R. Opravdu tedy přebývá Hospodin na tomto místě, a já jsem to nevěděl.
+
+[Lectio5]
+@Commune/C8:Lectio4:s/A proto,.*//
+
+[Lectio6]
+@Commune/C8:Lectio4:3 s/.*(A proto,)/$1/ s/$/~/
+@Commune/C8:Lectio5:s/Tak jako.*//
+
+[Lectio7]
+@Commune/C8:Lectio5:s/.*(Tak jako)/$1/
+
+[Responsory8]
+R. Jak líbezné jsem tvé stánky, Hospodine zástupů! Touží a chřadne duše má
+* Po síních Hospodinových.
+V. Kdož přebývají v tvém domě, Hospodine, navěky tě budou chválit.
+R. Po síních Hospodinových.
+
+[Lectio10]
+@Commune/C8:Lectio8:s/Zacheus .*//s
+
+[Lectio11]
+@Commune/C8:Lectio8:s/.* Zacheus /Zacheus /s
+
+[Responsory11]
+R. Blessed art thou in the holy temple of thy glory that has been built
+* To the praise and glory of your name O Lord.
+V. Bless this house that I have built.
+R. To the praise and glory of your name O Lord.
+
+[Responsory12]
+R. I saw the holy city, the new Jerusalem, coming down out of heaven from God, prepared as a bride adorned for her husband.
+*And I heard a great voice from the throne, saying: Behold the tabernacle of God with men, and he will dwell with them.
+V. And they shall be his people; and God himself with them shall be their God.
+R. And I heard a great voice from the throne, saying: Behold the tabernacle of God with men, and he will dwell with them.

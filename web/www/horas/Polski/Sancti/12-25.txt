@@ -1,16 +1,6 @@
 [Rank]
 Boże Narodzenie;;Duplex I Classis;;6.9
 
-[Rank1960]
-Boże Narodzenie;;Duplex I Classis;;7
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas Horas
-Doxology=Nat
-Special Evangelii Benedictio
-
 [Ant Vespera]
 Uwielmożony jest * Król pokoju. Wszystka ziemia pragnęła twarzy Jego.;;109
 Uwielmożony jest * Król pokoju nadewszystkie króle ziemskie.;;110
@@ -18,7 +8,7 @@ Wypełniły się dni, * aby porodziła Syna swego pierworodnego.;;111
 Wiedzcie, * że blisko jest Królestwo Boże, zaprawdę powiadam wam, iż nie omieszka przyjść.;;112
 Podnoście głowy wasze, * boć się przybliża odkupienie wasze.;;116
 
-[Capitulum Vespera]
+[Capitulum Vespera 1]
 !Tyt 3:4-5
 v. Okazała się dobrotliwość i ludzkość Zbawiciela Boga: nie z uczynków sprawiedliwości, któreśmy uczynili, ale podług miłosierdzia swego zbawił nas.
 $Deo gratias
@@ -60,7 +50,44 @@ Wraz z Ojcem, z Duchem w jednej czci,
 Po wszystkie wieki, w każdy czas.
 Amen.
 
-[Versum 1]
+[HymnusM Vespera]
+v. Chryste, zbawienie ludzkości
+I Synu Ojca Jedyny,
+Ciebie On zrodził przedziwnie
+Przed wszelkich bytów początkiem.
+_
+Tyś chwały Jego odblaskiem
+I wieczną świata nadzieją,
+Usłysz więc nasze wołanie
+Ze wszystkich ziemi zakątków!
+_
+Wspomnij, że niegdyś przyjąłeś
+Śmiertelną postać człowieka,
+Rodząc się z łona czystego
+Niepokalanej Dziewicy.
+_
+Dzień, który do nas powraca
+Przez roku stałe nawroty,
+Świadczy, że z Ojca stolicy
+Przyszedłeś, aby nas zbawić.
+_
+Niebo i lądy z morzami,
+I to, co w nich się znajduje,
+Ojca wysławia z radością,
+Gdyż On Cię posłał na ziemię.
+_
+Także i my, których, Panie,
+Swej krwi obmyłeś strumieniem,
+Nowym Cię hymnem wielbimy
+W rocznicę Twoich narodzin.
+_
+Chwała twa Panie niech słynie,
+Z Przeczystej Panny zrodzony:
+Z Ojcem, i Duchem światłości,
+Na nieskończone wieczności.
+Amen.
+
+[Versum 1_]
 V. Jutro zgładzona będzie nieprawość ziemi.
 R. I Zbawiciel świata będzie panował nad nami.
 
@@ -78,16 +105,23 @@ Chrystus nam się narodził: * Pojdźmy z pokłonem.
 Pan rzekł * do mnie: Tyś jest synem moim, Jam ciebie dziś zrodził.;;2
 Jako oblubieniec * Pan, wychodzący z łożnice swojéj,;;18
 Rozlała się * wdzięczność po wargach twoich, dlatego cię błogosławił Bóg na wieki.;;44
-V. Jako oblubieniec.
-R. Pan, wychodzący z łożnicy swojéj.
 Przyjęliśmy, * Boże, miłosierdzie twoje, wpośród kościoła twego.;;47
 Wznidzie * za dni jego obfitość pokoju, i będzie panował.;;71
 Prawda wyrosła * z ziemie: a sprawiedliwość z nieba pojrzała.;;84
-V. Piękniejszy urodą nad syny człowiecze.
-R. Rozlała się wdzięczność po wargach twoich.
 On mię będzie * wzywał, alleluja: Ojcem moim jesteś ty, alleluja.;;88
+(sed rubrica 1960 aut rubrica 1962) On mię będzie * wzywał, alleluja: Ojcem moim jesteś ty, alleluja.;;88(2-37)
 Niech się weselą niebiosa, * a niech się raduje ziemia, przed Panem, bo przyszedł.;;95
 Objawił * Pan, alleluja, zbawienie swoje, alleluja.;;97
+
+[Nocturn 1 Versum]
+V. Jako oblubieniec.
+R. Pan, wychodzący z łożnicy swojéj.
+
+[Nocturn 2 Versum]
+V. Piękniejszy urodą nad syny człowiecze.
+R. Rozlała się wdzięczność po wargach twoich.
+
+[Nocturn 3 Versum]
 V. On mię będzie wzywał, alleluja.
 R. Ojcem moim jesteś ty, alleluja.
 
@@ -128,7 +162,7 @@ R. Dzisiaj po całym świecie słodycz rozleją niebiosa.
 [Lectio3]
 !Iz 52:1-6
 1 Powstań, powstań, oblecz się w moc twoje, Syonie, oblecz szaty ochędóstwa twego, Jeruzalem, miasto Świętego; bo nie przyda więcej, aby przeszedł przez cię nieobrzezaniec i nieczysty.
-2 Otrząśnij się z prochu, wstań a siądź, Jeruzalem, rozwiąż związki szyje twojej, poimana córko Syon!
+2 Otrząśnij się z prochu, wstań a siądź, Jeruzalem, rozwiąż związki szyje twojej, poimana córko Syon.
 3 Bo to mówi Pan: Darmoście zaprzedani, a bez srebra będziecie wykupieni.
 4 Bo to mówi Pan Bóg: Do Egiptu zaszedł lud mój z początku, aby tam był obywatelem: a Assur bez żadnej przyczyny potwarzył go.
 5 A teraz, co Ja tu mam czynić, mówi Pan, ponieważ zabran jest lud mój darmo? Panujący nad nim niesprawiedliwie się obchodzą, mówi Pan, a ustawicznie przez wszystek dzień imię moje bluźnią.
@@ -145,7 +179,7 @@ R. Dzieciątko widzieliśmy, i chóry aniołów wysławiające Pana.
 [Lectio4]
 Kazanie św. Leona Papieża
 !Kazanie 1. na Boże Narodzenie
-Najmilsi, Zbawiciel nam się dziś narodził: weselmy się. Nie godzi się oddawać smutkowi wówczas, gdy narodziło się życie, które rozprasza obawy śmierci, a wlewa w nas radość z obiecanej wieczności. Niech nikt się nie odłącza od udziału w tem weselu, gdyż wspólny mamy powód do radości, gdyż Pan nasz, zwycięzca grzechu i śmierci.nie znalazłszy bez winy nikogo, przychodzi wyzwolić nas wszystkich. Niech się cieszy święty, gdyż bliskie już zwycięstwo; niech się weseli grzesznik, gdyż zaproszony jest na przebaczenie; niech się ożywi poganin, gdyż wezwany jest do życia. Syn Boży bowiem w pełności czasu, jak wyznaczyła niezgłębiona i niezmierzona Rada Boża, przyjął naturę ludzką, aby ją pojednać ze Stwórcą aby sprawcę śmierci, szatana, zwyciężyć w tem, w czem on nas pokonał.
+Najmilsi, Zbawiciel nam się dziś narodził: weselmy się. Nie godzi się oddawać smutkowi wówczas, gdy narodziło się życie, które rozprasza obawy śmierci, a wlewa w nas radość z obiecanej wieczności. Niech nikt się nie odłącza od udziału w tem weselu, gdyż wspólny mamy powód do radości, gdyż Pan nasz, zwycięzca grzechu i śmierci, nie znalazłszy bez winy nikogo, przychodzi wyzwolić nas wszystkich. Niech się cieszy święty, gdyż bliskie już zwycięstwo; niech się weseli grzesznik, gdyż zaproszony jest na przebaczenie; niech się ożywi poganin, gdyż wezwany jest do życia. Syn Boży bowiem w pełności czasu, jak wyznaczyła niezgłębiona i niezmierzona Rada Boża, przyjął naturę ludzką, aby ją pojednać ze Stwórcą aby sprawcę śmierci, szatana, zwyciężyć w tem, w czem on nas pokonał.
 
 [Responsory4]
 R. Jak wielka to tajemnica, przedziwne misterium, zwierzęta ujrzały narodzonego Pana, leżącego w żłobie:
@@ -154,7 +188,7 @@ V. Zdrowaś Maryjo, łaskiś pełna, Pan z Tobą.
 R. Błogosławiona Dziewica, której łono zasłużyło, by nosić Chrystusa Pana.
 
 [Lectio5]
-W walce tej za nas wydanej, walczył z wielką i przedziwną prawością, gdyż Bóg wszechmogący z tym najsroższym wrogiem potyka się nie majestatem swym przyodzian, lecz nędzą naszą, przeciwstawiając mu ten sam kształt i tę samą naturę śmiertelny lecz od grzechu zupełnie wolną. To bowiem, co się stosuje do wszystkich ludzi, nie odnosi się do tych narodzin, że nikt nie jest wolny od winy, ani nawet dziecię jednodniowe. A w tem cudownem narodzeniu niema ani śladu pożądliwości cielesnej, nic nie pozostało z zakonu grzechu. Dziewica, wybrana z rodu Dawidowego, nosząca w sobie Boga - Człowieka, pierwej Go duchem niż ciałem poczęła. Anioł pouczył Ją o tem, co w niej sprawi Duch Święty, aby się nie przelękła, nieświadoma będąc niezwykłych zamiarów Bożych, i jak bez naruszenia dziewictwa stanie się Matką Bożą.
+W walce tej za nas wydanej, walczył z wielką i przedziwną prawością, gdyż Bóg wszechmogący z tym najsroższym wrogiem potyka się nie majestatem swym przyodzian, lecz nędzą naszą, przeciwstawiając mu ten sam kształt i tę samą naturę śmiertelną, lecz od grzechu zupełnie wolną. To bowiem, co się stosuje do wszystkich ludzi, nie odnosi się do tych narodzin, że nikt nie jest wolny od winy, ani nawet dziecię jednodniowe. A w tem cudownem narodzeniu niema ani śladu pożądliwości cielesnej, nic nie pozostało z zakonu grzechu. Dziewica, wybrana z rodu Dawidowego, nosząca w sobie Boga — Człowieka, pierwej Go duchem niż ciałem poczęła. Anioł pouczył Ją o tem, co w niej sprawi Duch Święty, aby się nie przelękła, nieświadoma będąc niezwykłych zamiarów Bożych, i jak bez naruszenia dziewictwa stanie się Matką Bożą.
 
 [Responsory5]
 R. Błogosławiona święta Boża Rodzicielka, Maryja, służebnica nieskalana:
@@ -172,13 +206,6 @@ V. Błogosławionaś Ty między niewiastami, i błogosławiony owoc żywota Twoj
 R. Bo Ten, którego niebiosa zmieścić nie mogły, Ty w swym łonie nosiłaś.
 &Gloria
 R. Bo Ten, którego niebiosa zmieścić nie mogły, Ty w swym łonie nosiłaś.
-
-[Benedictio3]
-Z kajdan grzechów naszych niech nas uwolni wszechmogący i miłosierny Pan. Amen.
-Pobłogosław, ojcze.
-Czytanie Ewangelii niech będzie nam zbawieniem i obroną. Amen.
-Niech słowa Ewangelii zgładzą nasze grzechy. Amen.
-Słowa świętej Ewangelii, pouczą nas o Chrystusie Synu Boga. Amen.
 
 [Lectio7]
 Czytanie Ewangelii świętej według św. Łukasza
@@ -222,7 +249,7 @@ Homilia świętego Augustyna, Biskupa
 Nie myśl o czymś marnym, jak to zwykłeś myśleć, gdy słyszysz jakie słowa ludzkie. Posłuchaj, co masz myśleć: Bogiem było Słowo. Niech się stawi jakiś niewierny arianin i powie, że Słowo Boże zostało stworzone. Jakże stać by to się mogło, iż Słowo Boże zostało stworzone, skoro Bóg przez Słowo wszystko uczynił? Jeżeli i samo Słowo Boże zostało stworzone, przez jakie inne słowo zostało stworzone? Jeśli mówisz, iż Słowo Słowa to uczyniło, to ja nazywam Je Jednorodzonym Synem Boga. Jeśli jednak nie mówisz o Słowie Słowa, to przyznaj, iż nie zostało stworzone To, przez które wszystko się stało. Nie mógł bowiem uczynić siebie samego Ten, który wszystko stworzył. Wierz przeto Ewangeliście.
 &teDeum
 
-[Ant Laudes]
+[Ant Laudes_]
 Kogo widzieliście, * pasterze? Powiedzcie, ogłoście nam, kto się objawił na ziemi? Dzieciątko widzieliśmy, i chóry aniołów wysławiające Pana, alleluja, alleluja.
 Porodziła Matka * Króla, którego imię Odwieczny, a zaznawszy radości macierzyństwa, zachowała chwałę dziewictwa: nie było takiej przedtem, i nie będzie takiej potem, alleluja.
 Aniół rzekł * do pasterzy: Opowiadam wam wesele wielkie: iż się wam dziś narodził Zbawiciel, alleluja.
@@ -236,45 +263,48 @@ $Deo gratias
 
 [Hymnus Laudes]
 {:H-Asolisortus:}v. Od kresu wschodu słońca
-aż do krańca ziemi
-opiewajmy Chrystusa Króla,
-narodzonego z Marji Dziewicy.
+Aż do krańca ziemi
+Opiewajmy Chrystusa Króla,
+Narodzonego z Marji Dziewicy.
 _
 Błogosławiony Stwórca świata
-przybrał ciało sługi,
-by ciało ciałem wyzwalając,
-nie stracił, których stworzył.
+Przybrał ciało sługi,
+By ciało ciałem wyzwalając,
+Nie stracił, których stworzył.
 _
 Czystej Rodzicielki wnętrzności
-nawiedza łaska niebieska:
-żywot Dziewicy nosi tajemnice,
-których nie poznała.
+Nawiedza łaska niebieska:
+Żywot Dziewicy nosi tajemnice,
+Których nie poznała.
 _
 Przybytek wstydliwych piersi
-niespodzianie staje się świątynią Boga:
-nienaruszona, nie znając męża,
-poczęła Syna w żywocie.
+Niespodzianie staje się świątynią Boga:
+Nienaruszona, nie znając męża,
+Poczęła Syna w żywocie.
 _
 Wydaje rodzicielka,
-którego Gabrjel przepowiedział,
-którego w żywocie Matki zamkniętego,
-radując się, przeczuł Chrzciciel.
+Którego Gabrjel przepowiedział,
+Którego w żywocie Matki zamkniętego,
+Radując się, przeczuł Chrzciciel.
 _
 Znosił leżenie na sianie,
-żłóbkiem nie pogardził
-i odrobiną mleka karmił się Ten,
-dzięki któremu nawet ptak nie łaknie.
+Żłóbkiem nie pogardził
+I odrobiną mleka karmił się Ten,
+Dzięki któremu nawet ptak nie łaknie.
 _
 Raduje się chór niebian,
-i Aniołowię śpiewają Bogu;
-jawnym staje się pasterzom Pasterz,
+I Aniołowię śpiewają Bogu;
+Jawnym staje się pasterzom Pasterz,
 Stwórca wszystkich.
 _
 Jezu, Tobie niechaj będzie chwała,
-który narodziłeś się z Dziewicy,
-oraz Ojcu i dobroczynnemu Duchowi,
-po nieskończone wieki.
+Który narodziłeś się z Dziewicy,
+Oraz Ojcu i dobroczynnemu Duchowi,
+Po nieskończone wieki.
 Amen.
+
+[HymnusM Laudes]
+@:Hymnus Laudes:s/Jezu, Tobie niechaj będzie chwała/Chwała twa Panie niech słynie/
 
 [Versum 2]
 V. Objawił Pan, alleluja.
@@ -283,45 +313,55 @@ R. Zbawienie swoje, alleluja.
 [Ant 2]
 Chwała na wysokości Bogu, * a na ziemi pokój ludziom dobréj woléj, alleluja, alleluja.
 
+[Octava 2]
+!Wspominamy oktawę Bożego Narodzenia
+Ant. Chwała na wysokości Bogu, * a na ziemi pokój ludziom dobréj woléj, alleluja, alleluja.
+_
+V. Objawił Pan, alleluja,
+R. Zbawienie swoje, alleluja.
+_
+v. Módlmy się.
+Daj nam, prosimy Cię Wszechmogący Boże, aby nowe, według ciała, narodzenie Jednorodzonego Syna Twego, wyzwoliło nas z jarzma grzechu, który nas oddawna w niewoli trzyma.
+$Per eumdem
+
 [Lectio Prima]
 !Hbr 1:11-12
-v. One poginą, a ty trwać będziesz: a wszystkie jako szata zwiotszeją. A jako odzienie zmienisz je, i odmienią się; ale ty tenżeś jest, i lata twoje nie ustaną?
+v. One poginą, a ty trwać będziesz: a wszystkie jako szata zwiotszeją. A jako odzienie zmienisz je, i odmienią się; ale ty tenżeś jest, i lata twoje nie ustaną.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. A Słowo ciałem się stało, * Alleluja, alleluja.
 R. A Słowo ciałem się stało, * Alleluja, alleluja.
 V. I mieszkało między nami.
 R. Alleluja, alleluja.
 &Gloria
 R. A Słowo ciałem się stało, * Alleluja, alleluja.
-_
-V. On mię będzie wzywał, alleluja.
-R. Ojcem moim jesteś ty, alleluja.
 
 [Capitulum Sexta]
 !Hbr 1:10
 v. I tyś, Panie, na początku ugruntował ziemię, a dzieła rąk twoich są niebiosa.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Objawił Pan, * Alleluja, alleluja.
 R. Objawił Pan, * Alleluja, alleluja.
 V. Zbawienie swoje.
 R. Alleluja, alleluja.
 &Gloria
 R. Objawił Pan, * Alleluja, alleluja.
-_
+
+[Versum Sexta]
 V. Oglądały wszystkie kraje ziemie, alleluja.
 R. Zbawienie Boga naszego, alleluja.
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Oglądały wszystkie kraje ziemie, * Alleluja, alleluja.
 R. Oglądały wszystkie kraje ziemie, * Alleluja, alleluja.
 V. Zbawienie Boga naszego.
 R. Alleluja, alleluja.
 &Gloria
 R. Oglądały wszystkie kraje ziemie, * Alleluja, alleluja.
-_
+
+[Versum Nona]
 V. A Słowo ciałem się stało, alleluja.
 R. I mieszkało między nami, alleluja.
 
@@ -338,17 +378,6 @@ Dziś * narodził się Chrystus: dziś ukazał się Zbawiciel: dziś na ziemi ś
 [Octava 3]
 !Wspominamy oktawę Bożego Narodzenia
 Ant. Dziś narodził się Chrystus: dziś ukazał się Zbawiciel: dziś na ziemi śpiewają Aniołowie, weselą się Archaniołowie: dziś radują się sprawiedliwi mówiąc: chwała na wysokości Bogu, alleluja.
-_
-V. Objawił Pan, alleluja,
-R. Zbawienie swoje, alleluja.
-_
-v. Módlmy się.
-Daj nam, prosimy Cię Wszechmogący Boże, aby nowe, według ciała, narodzenie Jednorodzonego Syna Twego, wyzwoliło nas z jarzma grzechu, który nas oddawna w niewoli trzyma.
-$Per eumdem
-
-[Octava 2]
-!Wspominamy oktawę Bożego Narodzenia
-Ant. Chwała na wysokości Bogu, * a na ziemi pokój ludziom dobréj woléj, alleluja, alleluja.
 _
 V. Objawił Pan, alleluja,
 R. Zbawienie swoje, alleluja.

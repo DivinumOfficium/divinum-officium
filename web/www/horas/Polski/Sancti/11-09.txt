@@ -1,37 +1,15 @@
 [Rank]
 Święto Poświęcenia Bazyliki Zbawiciela;;Duplex 2nd class;;5.5;;ex C8
 
-[RankTrident]
+[Rank] (rubrica tridentina)
 Święto Poświęcenia Bazyliki Zbawiciela;;Duplex majus;;4;;ex C8
-
-[Rule]
-ex C8;
-Domini
-9 lectiones
-Festum Domini
-
-[Commemoratio 5]
-!Wspomnienie Oktawy Wszystkich Świętych
-Ant. O jak szczęśliwe jest to Królestwo, * w którem Święci radują się w Chrystusie. Przyobleczeni w szatę białą idą w ślad za Barankiem
-_
-V. Niechaj się radują święci z chwały swej.
-R. A niech się weselą na łożach swoich.
-_
-$Oremus
-Wszechmogący i wieczny Boże, który nam dozwalasz jedną uroczystością czcić zasługi wszystkich Świętych Twoich, daj nam, pokornie prosimy, dostąpić łask tem obfitszych, im liczniejszych do miłosierdzia Twego wzywamy pośredników.
-_
-!Wspomnienie Św. Teodora Męczennika
-@Commune/C2:Oratio proper
-$Oremus
-Boże, który nas wspierasz chwalebnem wyznaniem błogosławionego Teodora, Męczennika Twego, daj nam, prosimy, abyśmy z modlitw jego i przykładu korzystali.
-$Per Dominum
 
 [Lectio1]
 Z Księgi Apokalipsy św. Jana Apostoła
 !Ap 21:9-11
 9 I przyszedł jeden z siedmi Aniołów, którzy mieli siedm czasz pełnych siedmią plag ostatecznych, i mówił zemną, mówiąc: Chodź, a okażęć oblubienicę, małżonkę Barankową.
 10 I zaniósł mię w duchu na górę wielką i wysoką i okazał mi miasto święte Jeruzalem, zstępujące z nieba od Boga,
-11 Mające jasność Bożą: a światłość jego podobna kamieniowi kosztownemu, jako kamieniowi Jaspisowemu, jako kryształ.
+11 mające jasność Bożą: a światłość jego podobna kamieniowi kosztownemu, jako kamieniowi jaspidowemu, jako kryształ.
 
 [Lectio2]
 !Ap 21:12-15
@@ -44,7 +22,7 @@ Z Księgi Apokalipsy św. Jana Apostoła
 !Ap 21:16-18
 16 A miasto czworograniasto leży, a długość jego tak wielka jest, jako i szerokość. I mierzył mur jego trzciną złotą na dwanaście tysięcy stajen: a długość i wysokość i szerokość jego równe są.
 17 I mierzył mur jego sto czterdzieści cztery łokcie miary człowieczéj, która jest Aniołowa.
-18 A było budowanie muru jego z kamienia Jaspisu, a samo miasto: złoto czyste, podobne szkłu czystemu.
+18 A było budowanie muru jego z kamienia jaspisu, a samo miasto: złoto czyste, podobne szkłu czystemu.
 
 [Lectio4]
 Obrzędy które przy poświęceniu kościołów i ołtarzów rzymskich Kościół zachowuje, błogosławiony Sylwester Papież pierwszy ustanowił. Bo aczkolwiek zaraz od czasów Apostolskich były miejsca Bogu oddane, które jedne Modlicami drudzy Kościołami zwali, gdzie jałmużny składano raz w tydzień i chrześcijański lud modlić się, Słowa Bożego słuchając i Najświętszy Sakrament przyimować zwykł był. Jednak te miejsca nie tak znacznymi ceremoniami poświęcano ani w nich ołtarza wreszcie nie stawiano który by Olejem Świętym namazany Pana naszego Jezusa Chrystusa – który ołtarzem, ofiarą i kapłanem naszym jest – wizerunek wyrażał.
@@ -53,12 +31,20 @@ Obrzędy które przy poświęceniu kościołów i ołtarzów rzymskich Kośció�
 Ale skoro Konstantyn cesarz za świętością Chrztu zdrowia i zbawienia dostąpił, dopiera na ten czas prawem od niego uczynionym pozwolono po wszystkim świecie aby chrześcijanie kościoły budowali. Które on nie tylko dekretem swym ale i przykładem do świętych budynków upominał. Bo i zapałem swym Laterański kościół zbawicielowi oddał i temu przyległą bazylikę pod imieniem Świętego Jana Chrzciciela zbudował na tym miejscu gdzie był od Świętego Sylwestera ochrzczony i trądu się pozbył. Który kościoł tenże Papież poświęcił, którego pamiątkę dziś obchodzimy. Kiedy pierwszy w Rzymie kościół poświęcony był i obraz Zbawiciela na ścianie wymalowany ludowi rzymskiemu cudownie się ukazał.
 
 [Lectio6]
-A chociaż Święty Sylwester przy święceniu ołtarza książęcia Apostolskiego postanowił był aby potym ołtarzów nie budowano jedno z kamienia, przecie kościoła Laterańskiego z drzewa był postawiony, czemu dziwować się nie mamy, bo iż od Świętego Piotra aż do Sylwestera dla prześladowania Papieże na jawnym miejscu być nie mogli gdziekolwiek ich potrzeba zagnała: bądź do pieczar, bądź na cmentarze, bądź do domów chrześcijan na onym ołtarzu drewnianym na kształt skrzynki urobionym ofiarę odprawowali. Który ołtarz Sylwester Święty gdy się Kościół uspokoił, czcząc Książę Apostolskie, które na onym jako powiadają ofiarowało, czcząc inszych Papieżów którzy aż do jego czasu tajemnice odprawiając go wzywały, w kościele pierwszym Laterańskim postawiwszy prawo uczynił aby żaden na potym nieodprawował prócz Biskupa Rzymskiego.~
-~
+A chociaż Święty Sylwester przy święceniu ołtarza książęcia Apostolskiego postanowił był aby potym ołtarzów nie budowano jedno z kamienia, przecie kościoła Laterańskiego z drzewa był postawiony, czemu dziwować się nie mamy, bo iż od Świętego Piotra aż do Sylwestera dla prześladowania Papieże na jawnym miejscu być nie mogli gdziekolwiek ich potrzeba zagnała: bądź do pieczar, bądź na cmentarze, bądź do domów chrześcijan na onym ołtarzu drewnianym na kształt skrzynki urobionym ofiarę odprawowali. Który ołtarz Sylwester Święty gdy się Kościół uspokoił, czcząc Książę Apostolskie, które na onym jako powiadają ofiarowało, czcząc inszych Papieżów którzy aż do jego czasu tajemnice odprawiając go wzywały, w kościele pierwszym Laterańskim postawiwszy prawo uczynił aby żaden na potym nieodprawował prócz Biskupa Rzymskiego.
 @:Lectio6a 
 (rubrica 1570 omittitur)
 
-[Commemoratio]
+[Commemoratio 5]
+!Wspomnienie Oktawy Wszystkich Świętych
+Ant. O jak szczęśliwe jest to Królestwo, * w którem Święci radują się w Chrystusie. Przyobleczeni w szatę białą idą w ślad za Barankiem
+_
+V. Niechaj się radują święci z chwały swej.
+R. A niech się weselą na łożach swoich.
+_
+$Oremus
+Wszechmogący i wieczny Boże, który nam dozwalasz jedną uroczystością czcić zasługi wszystkich Świętych Twoich, daj nam, pokornie prosimy, dostąpić łask tem obfitszych, im liczniejszych do miłosierdzia Twego wzywamy pośredników.
+_
 !Wspomnienie Św. Teodora Męczennika
 @Commune/C2:Oratio proper
 $Oremus

@@ -1,16 +1,8 @@
-[Name]
-Commune Confessoris pontificis
+[Officium]
+Commune Confessoris Pontificis
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=131
-
-[Capitulum Vespera]
-!Sir 44:16-17
-v. Íme a nagy főpap aki a maga idejében tetszett az Úrnak, igaznak bizonyult és a harag napján engesztelés lett.
-$Deo gratias
+[Missa]
+Statuit
 
 [Hymnus Vespera]
 {:H-Isteconfessor:}v. Ím a hitvalló, kit a föld határán
@@ -73,18 +65,24 @@ R. A dicsőség köntösébe öltöztette.
 [Ant 1]
 Pap és főpap * erényekben ékes. néped jó pásztora, imádd az Urat érettünk
 
+[Oratio]
+Hallgasd meg kérünk Uram könyörgésünket amelyet hozzád intézünk áldott hitvallód és püspököd ünnepen, hogy annak kedveért aki olyan magasztosan szolgált téged, bocsásd meg kihágasainkat
+$Per Dominum.
+
 [Invit]
 Az Úr a hitvallók királya * jöjjetek imádjuk
 
-[Hymnus Matutinum]
-@Commune/C4:Hymnus Vespera
+[Nocturn 2 Versum]
+V. Az Úr kiválasztotta őt papjául
+R. Hogy bemutassa a dicséret ádozatát
 
-[Hymnus1 Matutinum]
-@Commune/C4:Hymnus1 Vespera
+[Nocturn 3 Versum]
+V. Te pap vagy mindörökké
+R. Melkizedek rendje szerint`
 
 [Lectio1]
 Olvasmány szent Pál apostol Timóteushoz írott első leveléből
-!1 Tim 3:1-7
+!1Tim 3:1-7
 1 Igaz beszéd ez: Aki püspökségre törekszik, jó dolgot kíván.
 2 A püspöknek azonban feddhetetlennek, egyszer nősültnek, józannak, megfontoltnak, mértéktartónak, vendégszeretőnek és a tanításra rátermettnek kell lennie.
 3 Ne legyen iszákos vagy erőszakoskodó, hanem megértő, békeszerető s nem kapzsi.
@@ -95,7 +93,7 @@ Olvasmány szent Pál apostol Timóteushoz írott első leveléből
 
 [Lectio2]
 From the Epistola ad Titus.
-!Titus 1:7-11
+!Tit 1:7-11
 7 A püspök ugyanis, mint az Isten megbízottja, legyen feddhetetlen, ne legyen önhitt, ingerlékeny, iszákos, erőszakos, kapzsi,
 8 hanem legyen vendégszerető, jóakaratú, megfontolt, igaz, tisztességes, fegyelmezett.
 9 Álljon szilárdan a hiteles tanítás alapján, hogy éppúgy képes legyen az egészséges tanítással buzdítani, mint az ellentmondókat megcáfolni.
@@ -103,7 +101,7 @@ From the Epistola ad Titus.
 11 Ezeket el kell hallgattatni, mert egész családokat feldúlnak, s aljas haszonlesésből ártalmas dolgokat tanítanak.
 
 [Lectio3]
-!Titus 2:1-8
+!Tit 2:1-8
 1 Te ellenben azt hirdesd, ami az üdvös tanításnak megfelel.
 2 Az idős férfiak józanok, tisztességesek, megfontoltak legyenek a hitben, szeretetben és türelemben.
 3 Az idős asszonyok hasonlóképpen legyenek komoly magaviseletűek, senkit se rágalmazzanak, ne igyanak sok bort, hanem tanítsanak a jóra.
@@ -115,8 +113,12 @@ From the Epistola ad Titus.
 
 [Lectio7]
 Evangélium szent Máté Apostol kőnyvéből
-!Matt 25:14-23
+!Mt 25:14-23
 Azon időben így szólt Jézus tanítványaihoz: Úgy lesz, mint azzal az emberrel, aki idegenbe készült. Összehívta szolgáit, s rájuk bízta vagyonát. És így tovább.
+_
+Homily by Pope St Gregory (the Great.)
+!9th on the Gospels.
+Dearly beloved brethren, this Lesson from the Holy Gospel moveth us to take good heed lest we, who are seen in this world to have received more than others, should thereby bring ourselves into greater condemnation from the Maker of this world. To whom much is given, of the same is much required. Therefore, let him that receiveth much, strive to be all the more lowly, and all the more ready to do God service, for his very gifts’ sake, knowing that he will be obliged to give account thereof. Behold, a man, travelling into a far country, calleth his own servants, and delivereth unto them talents, to the end that they may trade therewith. After a long time, the lord of those servants cometh, and reckoneth with them, and to them that have done well He rendereth a reward of their labours, but that servant which was careless of his master’s work He condemneth.
 
 [Capitulum Laudes]
 !Sir 44:16-17
@@ -157,87 +159,44 @@ R. Megmutatta neki Isten országát
 [Ant 2]
 Jól van hűséges * derék szolga: Minthogy a kevésben hű voltál, sokat bízok rád. mondta neki ura.
 
-[Oratio]
-Hallgasd meg kérünk Uram könyörgésünket amelyet hozzád intézünk áldott hitvallód és püspököd ünnepen, hogy annak kedveért aki olyan magasztosan szolgált téged, bocsásd meg kihágasainkat
-$Per Dominum.
-
-[Oratio1]
-Hallgasd meg Urunk könyorgésünket. amelyeket szent hitvallód és főpapod ünnepén intézünk Hozzád, hogy annak érdemei és kőzbenjárása aki téged hűsegben szolgált, legyen bűneink bocsánatára
-$Per Dominum.
-
-[Oratio2]
-Istenünk, aki az örök üdvösseget adtad szent N. szolgádnak, add hogy akik a földön Egyhazdoktorként tiszteljük, mennyei közbenjárását is élvezhessük
-$Per Dominum.
-
-[Oratio9]
-Kérünk Urunk, örök Pásztor, hogy szent N. (vértanud és) pápád kozbenjárására, akit Te Egyházad élére tettél, légy irgalmas nyájadhoz.
-$Per Dominum
-
-[Oratio91]
-Kérünk Urunk, örök Pásztor, hogy szent N. és N. (vértanuid és) pápáid kozbenjárására, akiket Te Egyházad élére tettél, légy irgalmas nyájadhoz.
-$Per Dominum
-
 [Lectio Prima]
 !Sir 45:19-20
 v. Örök szövetséget kötött vele, nem talál magához hasonlót dicsőségben; ő megtartotta a Fölséges törvényét, és szövetségben volt vele.
 
-[Capitulum Tertia]
-!Sir 44:16-19
-v. Ime a nagy főpap aki a maga idejében tetszett az Urnak, igaznak bizonyult és a haragnapján engesztelés lett
-$Deo gratias
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Az Úr szerette és felékesítette Őt
 R. Az Úr szerette és felékesítette Őt
 V. A dicsőség köntösébe öltöztette
 R. Felékesítette Őt
 &Gloria
 R. Az Úr szerette és felékesítette Őt
-_
-V. Az Úr kiválasztotta őt papjául
-R. Hogy bemutassa a dicséret ádozatát
 
 [Capitulum Sexta]
 !Sir 44:20; 44:22
 v. Nincs hozzá hasonló aki ugyanűgy megtartaná az Úr törvényét. Ezért az Úr megesküdőtt és népe fölé helyezte őt
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Az Úr kiválasztotta őt papjául
 R. Az Úr kiválasztotta őt papjául
 V. Hogy bemutassa a dicséret ádozatát
 R. Papjául
 &Gloria
 R. Az Úr kiválasztotta őt papjául
-_
-V. Te pap vagy mindörökké
-R. Melkizedek rendje szerint`
 
-[Capitulum Nona]
-!Sir 45:19-20
-v. Örök szövetséget kötött vele, nem talál magához hasonlót dicsőségben; ő megtartotta a Fölséges törvényét, és szövetségben volt vele.
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Te pap vagy mindörökké
 R.br. Te pap vagy mindörökké
 V. Melkizedek` rendje szerint
 R. Mindörökké
 &Gloria
 R. Te pap vagy mindörökké
-_
-V. Az igazat az Úr vezette egyenes utakon
-R. Megmutatta neki Isten országát
-
-[Ant 3]
-Az Úr szerette * és felékesítette Ő, a dicsőség köntösébe öltöztette es megkoronázta a paradicsom kapujában
-
-[Versum 3]
-V. Az igazat az Úr vezette egyenes utakon
-R. Megmutatta neki Isten országát
 
 [Ant 3 summi Pontificis]
 Igazi főpap volt, a földiek nem tántoritották el, dicsőséggel ment a mennybe
+
+[Ant 3]
+Az Úr szerette * és felékesítette Ő, a dicsőség köntösébe öltöztette es megkoronázta a paradicsom kapujában
 
 [Lectio1 in 2 loco]
 Olvasmány Jézus Sírák fia könyvéből
@@ -264,8 +223,12 @@ Olvasmány Jézus Sírák fia könyvéből
 14 Testeik békeségben temettettek el, és nevök él nemzedékröl nemzedékre.
 15 Bölcseségöket beszélik a népek, és dicséretöket hirdeti a gyülekezet.
 
-[Responsory7 in 4 loco]
-@Commune/C5:Responsory7
+[Lectio]
+Olvasmány Jézus Sírák fia könyvéből
+!Sir 44:16-27; 45:3-20
+v. Hénok tetszett az Istennek, és a paradicsomba vitetett, hogy a népeknek bönbánatot hirdessen.  Noé tökéletesnek és igaznak találtatott, és a harag idején engesztelés lett.  Azért hagyatott a földön maradék, mikor a vízözön volt.  Örök szövetséget kötött vele, hogy ne töröltessék el minden test vízözönnel.  Ábrahám sok nemzet nagy atyja, nem talál magához hasonlót dicsöségben; ö megtartotta a Fölséges törvényét, és szövetségben volt vele.  Annak testén állapította meg a szövetséget, és ö a kisértetben hívnek találtatott.  Azért dicsöséget adott neki nemzetében, megesküdvén: hogy megsokasítja öt, mint a föld porát;  és mint a csillagokat, fölmagasztalja ivadékát, és örökössé teszi tengertöl tengerig, és a folyóvíztöl a föld határaig.  És Izsákkal szintazon módon cselekedett atyjáért, Ábrahámért.  Minden nemzetek áldását neki adta az Úr, és szövetségét megerösítette Jákob fején.  Elismerte öt áldásai által, és örökséget adott neki, és részenkint elosztá azt a tizenkét nemzetség között.  És megtartotta neki az irgalmasság férfiait, kik kedvet találtak minden ember szemei elött.
 
-[Responsory8 in 4 loco]
-@Commune/C5:Responsory8
+[Evangelium]
+Evangélium + szent Máté Apostol kőnyvéből
+!Mt 25:14-23
+v. Úgy lesz, mint azzal az emberrel, aki idegenbe készült. Összehívta szolgáit, s rájuk bízta vagyonát.  Az egyiknek öt talentumot adott, a másiknak kettőt, a harmadiknak csak egyet, kinek-kinek rátermettsége szerint, aztán útra kelt.  Aki öt talentumot kapott, menten elkezdett vele kereskedni, s másik ötöt nyert rajta.  Ugyanígy az is, aki kettőt kapott, másik kettőt szerzett.  Aki egyet kapott, elment, ásott egy gödröt, és elrejtette urának pénzét.  Hosszú idő elteltével megjött a szolgák ura, és számadást tartott.  Jött, aki öt talentumot kapott, és felmutatta a másik öt talentumot: Uram, öt talentumot adtál, nézd, másik ötöt nyertem rajta. -  Jól van, te hűséges, derék szolga - mondta neki ura. - Minthogy a kevésben hű voltál, sokat bízok rád: menj be urad örömébe!  Jött az is, aki két talentumot kapott, s így szólt: Uram, két talentumot adtál, nézd, másik kettőt szereztem. -  Jól van, te hűséges, derék szolga. Mivel a kevésben hű voltál, sokat bízok rád: menj be urad örömébe!

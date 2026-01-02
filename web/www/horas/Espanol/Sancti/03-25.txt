@@ -1,16 +1,8 @@
 [Rank]
 In Annuntiatione Beatæ Mariæ Virginis;;Duplex I classis;;6.5;;ex C11
 
-[Rank1960]
+[Rank] (rubrica 196)
 In Annuntiatione Beatæ Mariæ Virginis;;Duplex I classis;;6;;ex C11
-
-[Rule]
-ex C11;
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-9 lectiones;
-Ant Matutinum 12 special
 
 [Ant Vespera]
 El ángel Gabriel * fue enviado por Dios a la Virgen María, desposada con José.;;109
@@ -18,11 +10,6 @@ Alégrate, María, * llena de gracia, el Señor está contigo: bendita Tú entre
 No temas, María, * porque has encontrado gracia ante Dios. Concebirás en tu vientre y darás a luz un hijo.;;121
 El Señor le dará * el trono de David, su padre, y reinará para siempre.;;126
 Aquí está la esclava del Señor, * hágase en mí según tu palabra.;;147
-
-[Capitulum Vespera]
-!Is 7:14-15
-v. Mirad: la Virgen está encinta y da a luz un hijo, y lo pone por nombre «Dios-con-nosotros». Comerá requesón con miel, hasta que aprenda a rechazar el mal y escoger el bien. 
-$Deo gratias
 
 [Versum 1]
 V. Alégrate, María, llena de gracia. 
@@ -57,16 +44,13 @@ R. He aquí que concebirás y darás a luz un hijo que será llamado Hijo del Al
 2 Sobre el que reposará el espíritu de Yahvé, espíritu de sabiduría y de inteligencia, espíritu de consejo y de fortaleza, espíritu de entendimiento y de temor de Yahvé. 
 3 Y su respirar será en el temor de Yahvé. No juzgará por vista de ojos ni argüirá por oídas de oídos, 
 4 sino que juzgará en justicia al pobre y en equidad a los humildes de la tierra. Y herirá al tirano con la vara de su boca, y con el soplo de sus labios matará al impío. 
-5 La justicia será el cinturón de sus lomos, y la fidelidad el ceñidor de su cintura. 
+5 La justicia será el cinturón de sus lomos, y la fidelidad el ceñidor de su cintura.
 
 [Responsory2]
 R. Salve, María, llena de gracia; el Señor es contigo: 
 * El Espíritu Santo descenderá sobre ti, y la virtud del Altísimo te cubrirá con su sombra. El fruto santo que de ti nacerá será llamado Hijo de Dios. 
 V. ¿Cómo ha de ser esto, pues no conozco varón alguno? Y respondiendo el Ángel le dijo. 
 R. El Espíritu Santo descenderá sobre ti, y la virtud del Altísimo te cubrirá con su sombra. El fruto santo que de ti nacerá será llamado Hijo de Dios. 
-
-[Lectio3]
-@Tempora/Adv4-0:Lectio1
 
 [Responsory3]
 R. Recibe, oh Virgen María, el mensaje que te ha enviado el Señor por medio del Ángel: concebirás y darás a luz al que juntamente será Dios y hombre, 
@@ -145,11 +129,9 @@ El Señor le dará * el trono de David, su padre, y reinará para siempre.
 Aquí está la esclava del Señor, * hágase en mí según tu palabra. 
 
 [Capitulum Laudes]
-@:Capitulum Vespera
-
-[Versum 2]
-V. Salve, María, llena eres de gracia. 
-R. El Señor es contigo. 
+!Is 7:14-15
+v. Mirad: la Virgen está encinta y da a luz un hijo, y lo pone por nombre «Dios-con-nosotros». Comerá requesón con miel, hasta que aprenda a rechazar el mal y escoger el bien. 
+$Deo gratias
 
 [Ant 2]
 ¿Cómo será esto, * ángel de Dios, pues no conozco hombre? Escucha, Virgen María: El Espíritu Santo vendrá sobre ti, y la fuerza del Altísimo te cubrirá con su sombra. 
@@ -158,20 +140,10 @@ R. El Señor es contigo.
 !Is 11:1-2
 v. Brotará un renuevo del tronco de Jesé, un vástago florecerá de su raíz. Sobre él se posará el Espíritu del Señor.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
 [Capitulum Sexta]
 !Lc 1:32-33
 v. El Señor Dios le dará el trono de David, su padre, y reinará sobre la casa de Jacob eternamente.
 $Deo gratias
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
 [Ant 3]
 El ángel Gabriel habló a María y le dijo: Alégrate, llena de gracia: el Señor está contigo, bendita Tú entre las mujeres. 
-
-[Versum 3]
-@:Versum 1

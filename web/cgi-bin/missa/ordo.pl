@@ -14,25 +14,23 @@ $a = 1;
 # resolves the references (formatting characters, prayers hash references and subs)
 #and prints the result
 sub ordo {
-  $tlang = ($lang1 !~ /Latin/) ? $lang1 : $lang2;
-
-  #???%translate = %{setupstring($datafolder, $tlang, "Ordo/Translate.txt")};
-  cache_prayers();
-  $savesolemn = $solemn;
+  print "<H2 ID='Missatop'>Sancta Missa</H2>\n" if $content;
+  my $savesolemn = $solemn;
   if ($winner =~ /Quad6-[456]/i) { $solemn = 1; }
   $column = 1;
-  if ($Ck) { $version = $version1; setmdir($version); precedence(); }
+  if ($Ck) { $version = $version1; precedence(); }
+  my (@script1, @script2);
   @script1 = getordinarium($lang1, $command);
   @script1 = specials(\@script1, $lang1);
-  $column = 2;
-  if ($Ck) { $version = $version2; setmdir($version); precedence(); }
-  @script2 = getordinarium($lang2, $command);
-  @script2 = specials(\@script2, $lang2);
+
+  if (!$only) {
+    $column = 2;
+    if ($Ck) { $version = $version2; precedence(); }
+    @script2 = getordinarium($lang2, $command);
+    @script2 = specials(\@script2, $lang2);
+  }
   $solemn = $savesolemn;
-  table_start();
-  $ind1 = $ind2 = 0;
   $searchind = 0;
-  ante_post('Ante');
 
   if ($rule =~ /Full text/i) {
     @script1 = ();
@@ -42,71 +40,33 @@ sub ordo {
 
   if ($rule =~ /prelude/i) {
     my $str = $winner{Prelude};
-    $str = norubr1($str);
+
+    # $str = norubr1($str);
     unshift(@script1, split('_', $str), '');
-    $str = $winner2{Prelude};
-    $str = norubr1($str);
-    unshift(@script2, split('_', $str), '');
+
+    if (!$only) {
+      $str = $winner2{Prelude};
+
+      # $str = norubr1($str);
+      unshift(@script2, split('_', $str), '');
+    }
   }
 
   if ($rule =~ /Post Missam/i) {
     my $str = $winner{'Post Missam'};
-    $str = norubr1($str);
-    push(@script1, split('_', $str));
-    $str = $winner2{'Post Missam'};
-    $str = norubr1($str);
-    push(@script2, split('_', $str));
-  }
 
-  while ($ind1 < @script1 || $ind2 < @script2) {
-    ($text1, $ind1) = getunit(\@script1, $ind1);
-    ($text2, $ind2) = getunit(\@script2, $ind2);
-    $column = 1;
-    if ($Ck) { $version = $version1; }
-    $text1 = resolve_refs($text1, $lang1);
-    $text1 =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;
-    if ($lang1 =~ /Latin/i) { $text1 = spell_var($text1); }
-    if ($text1 && $text1 !~ /^\s+$/) { setcell($text1, $lang1); }
+    # $str = norubr1($str);
+    push(@script1, split('_', $str));
 
     if (!$only) {
-      $column = 2;
-      if ($Ck) { $version = $version2; }
-      $text2 = resolve_refs($text2, $lang2);
-      $text2 =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;
-      if ($lang2 =~ /Latin/i) { $text2 = spell_var($text2); }
-      if ($text2 && $text2 !~ /^\s+$/) { setcell($text2, $lang2); }
+      $str = $winner2{'Post Missam'};
+
+      # $str = norubr1($str);
+      push(@script2, split('_', $str));
     }
   }
-  ante_post('Post');
-  table_end();
-  if ($column == 1) { $searchind++; }
-}
 
-#*** getunits(\@s, $ind)
-# break the array into units separated by double newlines
-# from $ind  to the returned new $ind
-sub getunit {
-
-  my $s = shift;
-  my @s = @$s;
-  my $ind = shift;
-  my $t = '';
-  my $plen = 1;
-
-  while ($ind < @s) {
-    my $line = chompd($s[$ind]);
-    $ind++;
-    if ($line && !($line =~ /^\s+$/)) { $t .= "$line\n"; next; }
-    if (!$t) { next; }
-    last;
-  }
-
-  if ($dayname[0] !~ /Pasc/i) {
-    $t =~ s/\(Alleluia.*?\)//ig;
-  } else {
-    $t =~ s/\((Alleluia.*?)\)/$1/ig;
-  }
-  return ($t, $ind);
+  print_content($lang1, \@script1, $lang2, \@script2, 1);
 }
 
 #*** resolve_refs($text_of_block, $lang)
@@ -124,16 +84,21 @@ sub resolve_refs {
     $t[0] =~ s/^\s*\#/\!\!/;
   }
 
-  #cycle by lines
-  my $it;
-  my $line_prefix;
+  my @resolved_lines;    # Array of blocks expanded from lines.
+  my $merged_lines;      # Preceding continued lines.
+  my $was_hancigitur = 0;
 
-  for ($it = 0; $it < @t; $it++) {
+  #cycle by lines
+  for (my $it = 0; $it < @t; $it++) {
     $line = $t[$it];
+    $line =~ s/\s+$//;
+    $line =~ s/^\s+//;
 
     # Should this line be joined to the next? Strip off the continuation
     # character as we check.
-    my $line_continues = ($line =~ s/\s*~\s*$//);
+    my $merge_with_next = ($line =~ s/~$//);
+    my $is_communicantes = ($line =~ /communicantes/);
+    my $is_hancigitur = ($line =~ /hancigitur/);
 
     # The first batch of transformations are performed on the current
     # input line only.
@@ -141,19 +106,38 @@ sub resolve_refs {
     if ($line !~ /(callpopup|rubrics)/i && $line =~ /^\s*[\$\&]/)    #??? was " /[\#\$\&]/)
     {
       $line =~ s/\.//g;
-      $line =~ s/\s+$//;
-      $line =~ s/^\s+//;
 
       #prepares reading the part of common w/ antiphona
       if ($line =~ /psalm/ && $t[$it - 1] =~ /^\s*Ant\. /i) {
         $line = expand($line, $lang, $t[$it - 1]);
       } else {
         $line = expand($line, $lang);
+        next if $line =~ /^\s*$/;
       }
 
-      if ((!$Tk && $line !~ /\<input/i) || ($Tk && $line !~ /\% .*? \%/)) {
+      if ($line !~ /\<input/i) {
         $line = resolve_refs($line, $lang);
       }    #for special chars
+    }
+
+    # In order to solve the communicantes issue, just remove
+    # the last <br /> and merge with next. For &hancigitur
+    # we should merge with next both if &hancigitur
+    # expands to a rubric or not.
+    if ($is_communicantes || $is_hancigitur) {
+      $line =~ s/\<br\/\>$//g;
+      $merge_with_next = 1;
+
+      # If &hancigitur does not expand to the rubric explaining
+      # the text for Octaves of Easter and of Pentecostes
+      # we should merge with the next line and the one previous
+      # to &hancigitur. I don't know how, $line is already
+      # red at this point.
+      # TODO: How to make this general by checking whether
+      # we are looking to a real rubric?
+      if ($is_hancigitur && !($line =~ /red/)) {
+        $was_hancigitur = $it;
+      }
     }
 
     #cross
@@ -161,13 +145,11 @@ sub resolve_refs {
 
     #red prefix
     if ($line =~ /^\s*(R\.|V\.|S\.|P\.|M\.|A\.|O\.|C\.|D\.|Benedictio\.* |Absolutio\.* |Ant\. |Ps\. )(.*)/s) {
-      my $h = $1;
+      my $h = setvrbar($1);
       my $l = $2;
 
       if ($h =~ /(Benedictio|Absolutio)/) {
-        my $str = $1;
-        if ($lang !~ /Latin/i) { $str = $translate{$str}; }
-        $h =~ s/(Benedictio|Absolutio)/$str/;
+        $h =~ s/(Benedictio|Absolutio)/ translate($str, $lang) /e;
       }
       $line = setfont($redfont, $h) . $l;
     }
@@ -185,9 +167,6 @@ sub resolve_refs {
       $line = setfont($cfont, $line);
     } elsif ($line =~ /^\s*\!\!\!(.*)/s) {
       $line = $1;
-      my $cfont = $redfont;
-      $cfont =~ s/red/black/i;
-      $line = setfont($cfont, $line);
     }
 
     #small omitted comment
@@ -240,26 +219,37 @@ sub resolve_refs {
       /emx;
 
     # Connect lines marked by tilde.
-    if ($line_continues && $it < $#t) {
-      $line_prefix = $line;
+    if ($merge_with_next && $it < $#t) {
+      $merged_lines .= $line . ' ';
+    } elsif ($it - 1 > 0 && $was_hancigitur == $it - 1) {
+
+      # If we are looking at the line after &hancigitur
+      # we merge the  result of the expansion of &hancigitur
+      # (which in this case is probaly some spaces or newlines?),
+      # together with the line previous to &hancigitur and
+      # the current line.
+      $resolved_lines[-1] .= $merged_lines . $line . ' ';
     } else {
-      $line_prefix = '';
-      $t .= "$line<BR>\n";
+      push @resolved_lines, $merged_lines . $line;
+      $merged_lines = '';
     }
   }    #line by line cycle ends
 
+  # Concatenate the expansions of the lines with a line break between each.
+  push @resolved_lines, '';
+  my $resolved_block = join "<br\/>\n", @resolved_lines;
+
   #removes occasional double linebreaks
-  $t =~ s/\<BR\>\s*\<BR\>/\<BR\>/g;
-  $t =~ s/<\/P>\s*<BR>/<\/P>/g;
-  return $t;
+  $resolved_block =~ s/\<br\/\>\s*\<br\/\>/\<br\/\>/ig;
+  $resolved_block =~ s/<\/P>\s*<br\/>/<\/P>/gi;
+  return $resolved_block;
 }
 
 #*** Alleluia($lang)
 # return the text Alleluia or Laus tibi
 sub Alleluia {
   my $lang = shift;
-  our %prayers;
-  my $text = $prayers{$lang}->{'Alleluia'};
+  my $text = prayer('Alleluia', $lang);
   my @text = split("\n", $text);
   $text = $text[0];
 
@@ -271,8 +261,7 @@ sub Alleluia {
 # adds Alleluia, alleluia for Pasc0
 sub Benedicamus_Domino {
   my $lang = shift;
-  our %prayers;
-  my $text = $prayers{$lang}->{'Benedicamus Domino'};
+  my $text = prayer('Benedicamus Domino', $lang);
   if ($dayname[0] !~ /Pasc0/i) { return $text; }
   my @text = split("\n", $text);
   return "$text[0]. Alleluia, alleluia\n$text[1]. Alleluia, alleluia\n";
@@ -290,23 +279,6 @@ sub depunct {
   return $item;
 }
 
-#*** translate($name)
-# return the translated name (called only for column2 if necessary)
-sub translate {
-  my $name = shift;
-  my $n = $name;
-  my $prefix = '';
-  if ($n =~ s/(\$|\&)//) { $prefix = $1; }
-  $n =~ s/^\n*//;
-  $n =~ s/\n*$//;
-  $n =~ s/\_/ /g;
-  if (!exists($translate{$n})) { return $name; }
-  $n = $translate{$n};
-  if ($name !~ /(omit|elmarad)/i) { $n = $prefix . $n; }
-  $n =~ s/\n*$//;
-  return "$n";
-}
-
 #*** getordinarium($lang, $command)
 # returns the full pathname of ordinarium for the language and hora
 sub getordinarium {
@@ -314,10 +286,13 @@ sub getordinarium {
   my @script;
 
   if ($Propers && (@script = do_read("$datafolder/Latin/Ordo/Propers.txt"))) {
+    $_ = "$_\n" for @script;
     return @script;
   }
   my $fname = 'Ordo';
   if ($version =~ /1967/i) { $fname = 'Ordo67'; }
+
+  #elsif ($version =~ /Praedicatorum/i) { $fname = 'OrdoOP'; }
   if ($NewMass) { $fname = ($column == 1) ? $ordos{$version1} : $ordos{$version2}; }
   $fname = checkfile($lang, "Ordo/$fname.txt");
 

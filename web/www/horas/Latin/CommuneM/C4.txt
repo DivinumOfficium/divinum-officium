@@ -1,9 +1,8 @@
 @Commune/C4
 
-[Capitulum Vespera]
-@Commune/C4
-_
-@Commune/C4:Responsory Sexta:1-6
+[Rule]
+Psalmi Dominica 
+Antiphonas horas
 
 [AntMatutinumM]
 Justus Dóminus * et justítiam diléxit: æquitátem vidit vultus ejus;;10
@@ -14,14 +13,10 @@ Sint lumbi vestri * præcíncti et lucérnæ ardéntes in mánibus vestris;;256;
 
 [Ant Matutinum]
 @Commune/C4::1-2
-@Commune/C4::6-8
+@Commune/C4::4-6
 @:AntMatutinumM:1
-@Commune/C4::4-5
-@Commune/C4::11-13
-@:AntMatutinumM:2-4
-@Commune/C4::9-10
-@:AntMatutinumM:5
-@Commune/C4::14-15
+@Commune/C4::7-9
+@:AntMatutinumM:2-5
 
 [Lectio1]
 @Commune/C4:Lectio1:s/-7/-4/ s/5 .*//s
@@ -38,7 +33,7 @@ Sint lumbi vestri * præcíncti et lucérnæ ardéntes in mánibus vestris;;256;
 @Commune/C4:Lectio3
 
 [Responsory4]
-R. Ecce vere Isrælíta, in quo dolus non est invéntus: † qui probátus repértus est sacérdos magnus 
+R. Ecce vere Isrælíta, in quo dolus non est invéntus: † qui probátus repértus est sacérdos magnus
 * Juxta órdinem Melchísedech.
 V. Státuit ei Dóminus testaméntum sempitérnum, † et dedit illi sacerdótium magnum.
 R. Juxta órdinem Melchísedech.
@@ -66,7 +61,7 @@ R. Juxta órdinem Melchísedech.
 Lauda ergo post perículum, prǽdica secúrum. Lauda navigántis felicitátem, sed cum pervénit ad portum; lauda ducis virtútem, sed cum perdúctus est ad triúmphum.
 
 [Responsory8]
-R. Justum dedúxit Dóminus per vias rectas, † et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum; 
+R. Justum dedúxit Dóminus per vias rectas, † et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum;
 * Honestávit illum in labóribus suis.
 V. Custodívit eum ab inimícis et a seductóribus tutávit illum.
 R. Honestávit illum in labóribus suis.
@@ -88,7 +83,7 @@ R. Honestávit illum in labóribus suis.
 @Commune/C4:Lectio8:s/.* Sed homo /Sed homo /s
 
 [Responsory11]
-R. Iste sanctus digne in memóriam vértitur hóminum, qui ad gáudium tránsiit angelórum; † quóniam in hac peregrinatióne solo córpore constitútus, cogitatióne et aviditáte 
+R. Iste sanctus digne in memóriam vértitur hóminum, qui ad gáudium tránsiit angelórum; † quóniam in hac peregrinatióne solo córpore constitútus, cogitatióne et aviditáte
 * In illa ætérna pátria conversátus est.
 V. Vínculis carnis absolútus taléntum, sibi créditum Dómino suo duplicátum reportávit.
 R. In illa ætérna pátria conversátus est.
@@ -97,58 +92,49 @@ R. In illa ætérna pátria conversátus est.
 @Commune/C4:Lectio9
 
 [Responsory12]
-R. Elégit te Dóminus sacerdótem sibi 
+R. Elégit te Dóminus sacerdótem sibi
 * Ad sacrificándum ei hóstiam laudis.
 V. Ímmola Deo sacrifícium laudis, et redde Altíssimo vota tua.
 R. Ad sacrificándum ei hóstiam laudis.
 
-[Capitulum Laudes]
-@Commune/C4
+[MM Capitulum]
+@Commune/C4:Capitulum Sexta
 _
-@Commune/C4:Responsory Tertia:1-6
-
-[Responsory Tertia]
-@Commune/C4:Versum 1
-
-[Responsory Sexta]
-@Commune/C4:Responsory Tertia:8-9
-
-[Responsory Nona]
-@Commune/C4:Responsory Sexta:8-9
+V. Justus germinábit sicut lílium.
+R. Et florébit in ætérnum ante Dóminum.
 
 [Ant Vespera 3]
-@Commune/C4:Ant Vespera:s/$/_/gm s/_/;;109/ s/_/;;111/ s/_/;;112/ s/_/;;131/ s/_//
-
-[Ant 3]
-@Commune/C4:Ant 3 summi Pontificis
+@Commune/C4:Ant Vespera:1 s/$/;;109/
+@Commune/C4:Ant Vespera:2 s/$/;;111/
+@Commune/C4:Ant Vespera:3 s/$/;;112/
+@Commune/C4:Ant Vespera:5 s/$/;;131/
 
 [Lectio1 in 2 loco]
 @Commune/C4:Lectio1 in 2 loco:s/-5/-4/ s/5 .*//s
 
 [Lectio2 in 2 loco]
-@Commune/C4:Lectio1 in 2 loco:s/.*!/!/s s/1-5/5-7/ s/^1 .*5 /5 /sm s/$/~/
+@Commune/C4:Lectio1 in 2 loco:s/.*!/!/s s/1-5/5-7/ s/^1 .*5 /5 /sm 
 @Commune/C4:Lectio2 in 2 loco:s/!.*// s/8 .*//s
 
 [Lectio3 in 2 loco]
-@Commune/C4:Lectio2 in 2 loco:s/.*!/!/s s/6-9/8-11/ s/^6 .*8 /8 /sm s/$/~/
+@Commune/C4:Lectio2 in 2 loco:s/.*!/!/s s/6-9/8-11/ s/^6 .*8 /8 /sm 
 @Commune/C4:Lectio3 in 2 loco:s/!.*// s/12 .*//s
 
 [Lectio4 in 2 loco]
 @Commune/C4:Lectio3 in 2 loco:s/.*!/!/s s/10-/12-/ s/^10 .*12 /12 /sm
 
 [Lectio5 in 2 loco]
-Sermo sancti Maxími Epíscopi
-!Homilía 78, de S. Eusebio 2, circa medio
-Beáti Patris N. mérita, jam in tuto pósita, secúri magnificémus; qui, gubernáculum fídei viríliter tenens, ánchoram spei tranquílla jam in statióne compósuit, et plenam cæléstibus divítiis et ætérnis mércibus navem, optáto in líttore, collocávit; qui contra omnes adversários scutum timóris Dei támdiu infatigabíliter ténuit, donec ad victóriam perveníret.
+@Commune/C4:Lectio4 in 2 loco: s/Quid enim .*//
 
 [Lectio6 in 2 loco]
-Quid enim fuit totus vitæ illíus cursus, nisi uníus cum vígili hoste conflíctus? Quantis hic cæcis, a via veritátis errántibus et de summa jam in profúndum rupe pendéntibus, amíssum réddidit visum; et illum, quo Christus viderétur, reparávit intúitum?
+@Commune/C4:Lectio4 in 2 loco: s/.*Quid enim/Quid enim/
+@Commune/C4:Lectio5 in 2 loco: s/Quantórum .*//
 
 [Lectio7 in 2 loco]
-Quantórum áuribus surdis et infidelitátis obturatióne damnátis, ad percipiéndam vocem cæléstium mandatórum, pretiósum infúdit audítum; ut, vocánti Deo ad misericórdiam, respondérent per obediéntiam? Quantos intrínsecus vulnerátos, angélici oris arte et oratiónum, ab infirmitáte curávit?
+@Commune/C4:Lectio5 in 2 loco: s/.*Quantórum/Quantórum/
 
 [Lectio8 in 2 loco]
-Quantos, per longam incúriam peccáto labe resolútos et quadam lepræ contgióne perfúsos, castigatiónibus et exhortatiónibus expiándo, Deo in se operánte, mundávit? Quantórum ánimas, vivéntes in córpore jam defúnctas et delictórum mole óbrutas ac sepúltas, ad emendatiónem tamquam ad lucem vocándo, Deo esuscitávit; ut, Dómini sui admirándus imitátor, jam mórtuas Deo, e contrário mortíficet, vitáli morte, peccáto?
+@Commune/C4:Lectio6 in 2 loco
 
 [Lectio9 in 2 loco]
 Léctio sancti Evangélii secúndum Matthǽum
@@ -161,7 +147,7 @@ Ut ignorántiam illam diéi ómnibus táciti, non sine útilis siléntii ratión
 
 [Lectio10 in 2 loco]
 !Cap. 27
-Quisnam est fidélis servus et prudens, quem constítuit Dóminus super famíliam suam? Quamquam in commúne nos ad indeféssam vigilántiæ curam adhortétur: speciálem tamen pópuli princípibus, id est, epíscopis, in exspectatióne adventúque suo sollicitúdinem mandat. Hunc enim servum fidélem atque prudéntem, præpósitum famíliæ signíficat, cómmoda atque utilitátes commíssi sibi pópuli curántem. 
+Quisnam est fidélis servus et prudens, quem constítuit Dóminus super famíliam suam? Quamquam in commúne nos ad indeféssam vigilántiæ curam adhortétur: speciálem tamen pópuli princípibus, id est, epíscopis, in exspectatióne adventúque suo sollicitúdinem mandat. Hunc enim servum fidélem atque prudéntem, præpósitum famíliæ signíficat, cómmoda atque utilitátes commíssi sibi pópuli curántem.
 
 [Lectio11 in 2 loco]
 Qui si dicto áudiens, et præcéptis obédiens erit, id est, si doctrínæ opportunitáte et veritáte infírma confírmet, disrúpta consólidet, depraváta convértat, et verbum vitæ in æternitátis cibum aléndæ famíliæ dispéndat, atque hæc agens, hisque ímmorans deprehendátur: glóriam a Dómino tamquam dispensátor fidélis et víllicus útilis consequétur, et super ómnia bona constituétur; id est, in Dei glória collocábitur, quia nihil sit ultra, quod mélius sit.
@@ -169,5 +155,5 @@ Qui si dicto áudiens, et præcéptis obédiens erit, id est, si doctrínæ oppo
 [Lectio12 in 2 loco]
 Quod, si cóntuens longam Dei patiéntiam, quæ in proféctum humánæ salútis exténditur, advérsum consérvos insoléscet, et sæculi malus vitiísque se tradet, præséntium tantum curam in cultu ventris exércens; desperáta die Dóminus advéniet, eúmque a bonis, quæ spopónderat, dívidet, portionémque ejus cum hypócritis in pœnæ æternitáte constítuet: quia advéntum desperávit, quia mandátis non obtemperáverit, quia præséntibus studúerit, quia vita Géntium víxerit, quia desperatióne judícii commíssam sibi famíliam fame, siti, cæde vexáverit.
 
-[LectioE in 2 loco]
-@Commune/C4d:LectioE
+[Evangelium in 2 loco]
+@Commune/C4-1:Evangelium

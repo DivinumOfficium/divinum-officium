@@ -1,19 +1,14 @@
 @Commune/C5
 
-[Capitulum Vespera]
-@Commune/C5
-_
-@Commune/C5:Responsory Sexta:1-6
+[Officium]
+Monastic Commune Confessoris non pontificis 
 
-[Oratio2]
-Adésto, Dómine, supplicatiónibus nostris, quas in beáti N. Confessóris tui solemnitáte deférimus: ut, qui nostræ justítiæ fidúciam non habémus, ejus, qui tibi plácuit, précibus adjuvémur.
-$Per Dominum.
+[Rule]
+Psalmi Dominica 
+Antiphonas horas
 
 [Ant Matutinum]
-@CommuneM/C4:Ant Matutinum:1-14
-@Commune/C4:Ant Matutinum:9-10
-@CommuneM/C4:Ant Matutinum:17
-@Commune/C4:Ant Matutinum:14-15
+@CommuneM/C4
 
 [Lectio2]
 @Commune/C5:Lectio2:s/; 33:1-3// s/1 .*//s
@@ -70,13 +65,13 @@ R. Et voluntáte labiórum ejus non fraudásti eum.
 @Commune/C4:Responsory8
 
 [Lectio11]
-@Commune/C5:Lectio10
+@Commune/C5:Lectio8
 
 [Responsory11]
 R. Beátus vir, qui invéntus est sine mácula, et qui post aurum non ábiit, nec sperávit in thesáuris pecúniæ:
-* Ideo stabilíta sunt bina ipsíus in Dómino.
+* Ideo stabilíta sunt bona ipsíus in Dómino.
 V. Pótuit enim tránsgredi, et non est transgréssus; fácere mala, et non fecit.
-R. Ideo stabilíta sunt bina ipsíus in Dómino.
+R. Ideo stabilíta sunt bona ipsíus in Dómino.
 
 [Lectio12]
 @Commune/C5:Lectio9
@@ -87,22 +82,10 @@ R. O beáti viri N. sancta præcónia! o inæstimábilis diléctio caritátis! q
 V. Cui vívere Christus fuit, et mori lucrum.
 R. Ætérnæ vitæ conjúnctus est.
 
-[Capitulum Laudes]
-@Commune/C5
+[MM Capitulum]
+@Commune/C5:Capitulum Sexta
 _
-@Commune/C5:Responsory Tertia:1-6
-
-[Capitulum Tertia]
-@Commune/C5
-
-[Responsory Tertia]
-@Commune/C5:Versum 1
-
-[Responsory Sexta]
-@Commune/C5:Responsory Tertia:8-9
-
-[Responsory Nona]
-@Commune/C5:Responsory Sexta:8-9
+@CommuneM/C4::s/.*_.//s
 
 [Lectio1 pro plurium]
 @CommuneM/C4:Lectio1 in 2 loco
@@ -117,18 +100,18 @@ _
 @CommuneM/C4:Lectio4 in 2 loco
 
 [Lectio1 in 2 loco]
-@Commune/C5:Lectio1 in 2 loco:s/-14/-12/ s/13 .*//s
+@Commune/C5:Lectio1 in 2 loco:1-8 s/-14/-12/
 
 [Lectio2 in 2 loco]
-@Commune/C5:Lectio1 in 2 loco:s/7-14/13-16/ s/7 .*13 /13 /s s/$/~/s
-@Commune/C5:Lectio2 in 2 loco:s/.* 14 P/P /s s/17 .*//s
+@Commune/C5:Lectio1 in 2 loco:s/7-14/13-16/ s/7 .*13 /13 /s
+@Commune/C5:Lectio2 in 2 loco:2-4
 
 [Lectio3 in 2 loco]
-@Commune/C5:Lectio2 in 2 loco:s/14-19/17-20/ s/14 .*17 /17 /s s/desolabúntur\./desolabúntur: /s s/$/~/s
-@Commune/C5:Lectio3 in 2 loco:s/.* 19 Et /et /s s/1 .*//s
+@Commune/C5:Lectio2 in 2 loco:!2-4 s/14-19/17-20/ s/\.\s*$/:\n/
+@Commune/C5:Lectio3 in 2 loco:2-3 s/ (.)/ \l$1/
 
 [Lectio4 in 2 loco]
-@Commune/C5:Lectio3 in 2 loco:s/4:19-20; 5/5/ s/19 .*1 /1 /s
+@Commune/C5:Lectio3 in 2 loco:!2-3 s/4:19-20; //
 
 [Lectio5 in 2 loco]
 @Commune/C5:Lectio4 in 2 loco:s/ Hæc sibi .*//s
@@ -148,16 +131,16 @@ _
 
 [Lectio10 in 2 loco]
 @Commune/C5:Lectio7 in 2 loco:s/.* Ideóque /Ideóque /s s/$/~/
-@Commune/C5:Lectio8 in 2 loco:s/ Unde gloriatur .*//s
+@Commune/C5:Lectio8 in 2 loco:s/ Unde gloriátur .*//s
 
 [Lectio11 in 2 loco]
-@Commune/C5:Lectio8 in 2 loco:s/.* Unde gloriatur /Unde gloriatur /s
+@Commune/C5:Lectio8 in 2 loco:s/.* Unde gloriátur /Unde gloriátur /s
 
 [Lectio12 in 2 loco]
 @Commune/C5:Lectio9 in 2 loco
 
-[LectioE in 2 loco]
-@Commune/C5b:LectioE
+[Evangelium in 2 loco]
+@Commune/C5-1:Evangelium
 
 [Lectio9 in 3 loco]
 @Sancti/02-24:Lectio7:s/ Tóllite .*//s
@@ -172,8 +155,8 @@ _
 [Lectio12 in 3 loco]
 @Sancti/02-24:Lectio9
 
-[LectioE in 3 loco]
-@Sancti/02-24:LectioE
+[Evangelium in 3 loco]
+@Sancti/02-24:Evangelium
 
 [Lectio9 in 4 loco]
 @Commune/C5:Lectio7 in 3 loco
@@ -182,10 +165,10 @@ _
 @Commune/C5:Lectio8 in 3 loco
 
 [Lectio11 in 4 loco]
-@Commune/C5:Lectio9 in 3 loco:s/ Bene .*//s 
+@Commune/C5:Lectio9 in 3 loco:s/ Bene .*//s
 
 [Lectio12 in 4 loco]
 @Commune/C5:Lectio9 in 3 loco:s/.* Bene /Bene /s
 
-[LectioE in 4 loco]
-@Sancti/08-25:LectioE
+[Evangelium in 4 loco]
+@Sancti/08-25:Evangelium

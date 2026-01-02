@@ -1,15 +1,5 @@
-[Rank]
-Boże Ciało;;Duplex I classis cum Octava privilegiate II ordinis;;7
-
-[Rank1960]
-Boże Ciało;;Duplex I classis;;7
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Corp
-No Commemoratio
+[Officium]
+Boże Ciało
 
 [Ant Vespera]
 Chrystus Pan, * kapłan na wieki według porządku Melchizedecha ofiarował chleb i wino.;;109
@@ -17,11 +7,6 @@ Miłosierny Pan * dał pokarm bojącym się Go na pamiątkę cudów swoich.;;110
 Kielich zbawienia * wezmę i ofiaruję hostję chwały.;;115
 Jako latorośle oliwne * dzieci Kościoła niech siądą w około stołu Pańskiego.;;127
 Pan, który użyczył * pokoju granicom Kościoła, nasyca nas tłustością pszenicy.;;147
-
-[Capitulum Vespera]
-!1 Kor 11:23-24
-v. Bracia: Albowiem ja wziąłem od Pana, com téż wam podał: Iż Pan Jezus nocy, której był wydan, wziął chleb, a dzięki uczyniwszy, łamał i rzekł: Bierzcie a jedzcie; to jest ciało moje, które za was będzie wydane: to czyńcie na moje pamiątkę. 
-$Deo gratias
 
 [Hymnus Vespera]
 {:H-Pangualingua:}v.Głoście usta cud bez miary
@@ -122,16 +107,22 @@ Amen.
 Owocu zbawiennego * dał Pan skosztować za czasu swej śmierci.;;1
 Od owocu pszenicy * i wina rozmnożeni są wierni odpoczywający w pokoju.;;4
 Kielichem komunii, * z którego samego Pana przyjmujemy, nie krew cielców, zjednoczył nas Pan.;;15
-V. Dał im chleb niebieski, alleluja.
-R. Chleba Anielskiego pożywał człowiek, alleluja.
 Pamiętaj Panie * ofiarę naszą: a całopalenie nasze niech tłuste będzie.;;19
 Przygotowany * jest stół Pański przew tym, którzy nas uciskają.;;22
 Z głosem radosnym * będą ucztować przy stole Pana.;;41
-V. Nakarmił je tłustością pszenicy, alleluja.
-R. I nasycił je miodem z opoki, alleluja.
 Wnidę * do ołtarza Bożego: przyjąć Chrystusa, który odnawia młodość moję.;;42
 Nakarmił nas Pan * tłustością pszenicy: i nasycił nas miodem z opoki.;;80
 Z ołtarza Twego, * Panie, Chrystusa przyjmujemy: w którym serce i ciało nasze niech się radują.;;83
+
+[Nocturn 1 Versum]
+V. Dał im chleb niebieski, alleluja.
+R. Chleba Anielskiego pożywał człowiek, alleluja.
+
+[Nocturn 2 Versum]
+V. Nakarmił je tłustością pszenicy, alleluja.
+R. I nasycił je miodem z opoki, alleluja.
+
+[Nocturn 3 Versum]
 V. Wywiódł chleb z ziemie, alleluja.
 R. Aby wino uweseliło serce człowiecze, alleluja.
 
@@ -151,7 +142,7 @@ R. I będą jeść mięso i przaśne chleby.
 [Lectio2]
 !1 Kor 11:23-26
 23 Albowiem ja wziąłem od Pana, com téż wam podał: Iż Pan Jezus nocy, której był wydan, wziął chleb,
-24 A dzięki uczyniwszy, łamał i rzekł: Bierzcie a jedzcie; to jest ciało moje, które za was będzie wydane: to czyńcie na moje pamiątkę. 
+24 a dzięki uczyniwszy, łamał i rzekł: Bierzcie a jedzcie; to jest ciało moje, które za was będzie wydane: to czyńcie na moje pamiątkę. 
 25 Także i kielich po wieczerzy, mówiąc: Ten kielich nowy Testament jest we krwi mojéj. To czyńcie, ilekroć pić będziecie, na pamiątkę moję.
 26 Albowiem ilekroć będziecie ten chleb jedli i kielich pili, śmierć Pańską będziecie opowiadać, aż przyjdzie.
 
@@ -172,15 +163,15 @@ R. To jest chleb, który dał wam Pan do jedzenia.
 
 [Responsory3]
 R. Eliasz obejrzał się, a oto u głowy jego podpłomny chleb: który wstawszy jadł i pił:
-* I chodził mocą onego jadła czterdzieści dni aż do góry Bożéj.
+* I chodził mocą onego jadła aż do góry Bożéj.
 V. Jeźliby kto pożywał tego chleba, żyć będzie na wiek.
-R. I chodził mocą onego jadła czterdzieści dni aż do góry Bożéj.
+R. I chodził mocą onego jadła aż do góry Bożéj.
 &Gloria
-R. I chodził mocą onego jadła czterdzieści dni aż do góry Bożéj.
+R. I chodził mocą onego jadła aż do góry Bożéj.
 
 [Lectio4]
 Kazanie świętego Tomasza z Akwinu
-!Lectio iv. In Opusculo 57.
+!Lekcja iv. w Opusculo 57.
 Niezmierzone korzyści, którymi dobroć Boża obdarzyła lud chrześcijański, obdarzyły ich godnością ponad wszelką cenę. „Który naród ma tak dobrze, że jego bogowie są tak blisko, jak nasz Bóg nam?” Jednorodzony Syn Boży, chcąc nas uczynić uczestnikami swojego bóstwa, przyjął naszą naturę, aby stawszy się człowiekiem, ludzi uczynić bogami. Co więcej, to co od nas przyjął, w całości przeznaczył dla naszego zbawienia. Albowiem ciało swoje ofiarował Bogu Ojcu na ołtarzu krzyża, jako przebłaganie za nas. Krew swoją wylał jako cenę i jako obmycie, abyśmy wykupieni z nieszczęsnej niewoli, zostali oczyszczeni ze wszystkich grzechów. Aby zaś na zawsze trwała wśród nas pamięć o tak wielkim dobrodziejstwie, ciało swe jako posiłek, krew swoją jako napój, pod postacią chleba i wina nam zostawił.
 
 [Responsory4]
@@ -246,6 +237,11 @@ Tłusty jest chleb * Chrystusa, i będzie dawał rozkoszy królom, alleluja.
 Kapłani święci * kadzidła i chleby ofiarują Bogu, alleluja.
 Zwycięzcy dam * mannę skrytą i imię nowe, alleluja.
 
+[Capitulum Laudes]
+!1 Kor 11:23-24
+v. Bracia: Albowiem ja wziąłem od Pana, com téż wam podał: Iż Pan Jezus nocy, której był wydan, wziął chleb, a dzięki uczyniwszy, łamał i rzekł: Bierzcie a jedzcie; to jest ciało moje, które za was będzie wydane: to czyńcie na moje pamiątkę. 
+$Deo gratias
+
 [Hymnus Laudes]
 {:H-Verbumsupernum:}v. Zstępując Słowo, Boga Syn,
 Przy boku Ojca zawsze trwa,
@@ -289,47 +285,34 @@ Jam jest * chleb żywy, który z nieba zstąpił: jeśliby kto pożywał tego ch
 !1 Kor 11:27
 v. Ktobykolwiek jadł ten chleb, albo pił kielich Pański niegodnie, będzie winien ciała i krwie Pańskiéj.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Dał im chleb niebieski, * Alleluja, alleluja.
 R. Dał im chleb niebieski, * Alleluja, alleluja.
 V. Chleba Anielskiego pożywał człowiek.
 R. Alleluja, alleluja.
 &Gloria
 R. Dał im chleb niebieski, * Alleluja, alleluja.
-_
-V. Nakarmił je tłustością pszenicy, alleluja.
-R. I nasycił je miodem z opoki, alleluja.
 
 [Capitulum Sexta]
 !1 Kor 11:26
 v. Albowiem ilekroć będziecie ten chleb jedli i kielich pili, śmierć Pańską będziecie opowiadać, aż przyjdzie.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Nakarmił je tłustością pszenicy, * Alleluja, alleluja.
 R. Nakarmił je tłustością pszenicy, * Alleluja, alleluja.
 V. I nasycił je miodem z opoki.
 R. Alleluja, alleluja.
 &Gloria
 R. Nakarmił je tłustością pszenicy, * Alleluja, alleluja.
-_
-V. Wywiódł chleb z ziemie, alleluja.
-R. Aby wino uweseliło serce człowiecze, alleluja.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Wywiódł chleb z ziemie, * Alleluja, alleluja.
 R. Wywiódł chleb z ziemie, * Alleluja, alleluja.
 V. Aby wino uweseliło serce człowiecze.
 R. Alleluja, alleluja.
 &Gloria
 R. Wywiódł chleb z ziemie, * Alleluja, alleluja.
-_
-V. Uczynił granice twoje pokój, alleluja.
-R. I nasyca cię najwyborniejszem zbożem, alleluja.
 
 [Ant 3]
 O Święta uczto, * na której Chrystus bywa pożywany: pamiątka męki Jego rozpamiętywana: gdzie myśl napełnia się łaską: a przyszłej chwały zadatek nam jest dany, alleluja.

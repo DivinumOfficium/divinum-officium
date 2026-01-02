@@ -1,9 +1,20 @@
+[Officium]
+S. Catharinæ Virginis et Martyris
+
 [Rank]
-S. Catharinæ Virginis et Martyris;;Duplex;;3;;vide C6b
+;;Duplex;;3;;vide C6
+(sed rubrica 1930 aut rubrica 1963)
+;;Simplex;;1.1;;vide C6
+(sed rubrica cisterciensis)
+;;Semiduplex;;2.2;;vide C6
 
 [Rule]
-vide C6b;
+vide C6;
 9 lectiones
+
+[Name]
+Catharínæ
+Postcommunio=Catharína
 
 [Oratio]
 Deus, qui dedísti legem Móysi in summitáte montis Sínai, et in eódem loco per sanctos Angelos tuos corpus beátæ Catharínæ Vírginis et Mártyris tuæ mirabíliter collocásti: præsta, quǽsumus; ut, ejus méritis et intercessióne, ad montem, qui Christus est, perveníre valeámus:

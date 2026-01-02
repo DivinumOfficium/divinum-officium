@@ -1,0 +1,231 @@
+[Incipit]
+/: Thầy cả :/~
+(sed rubrica Monastica)
+/: Bề trên hay là Thầy trực tuần :/~
+/: làm phép bàn ăn, thì khởi sự :/
+Hãy chúc tụng. /:và các kẻ khác lặp lại:/ Hãy chúc tụng.
+/: Đoạn thì khởi sự Câu xướng. :/
+
+[Versus Ante]
+$REGULAR_VERSUS
+(sed tempore Nativitatis)
+v. Lời đã làm người, allêluia.
+(sed die Sabbato Sancto)
+v. Chiều ngày thứ bảy, rạng ngày thứ nhất, allêluia.
+(sed tempore Octava Paschæ)
+v. Ngày này là ngày Chúa đã làm ra, allêluia.
+(sed tempore Octava Ascensionis)
+v. Đức Chúa Lời lên nơi vui vẻ, allêluia.
+(sed tempore Octava Pentecostes)
+v. Thánh Thần Chúa đã đầy dẫy khắp hoàn cầu, allêluia.
+_
+(sed tempore Nativitatis)
+v. Và ở cùng chúng tôi, allêluia.
+(sed die Sabbato Sancto)
+R. Maria Mađalêna và Maria khác đến xem mồ, allêluia.
+(sed tempore Octava Paschæ)
+R. Chúng tôi hãy mừng rỡ và vui vẻ trong ngày ấy, allêluia.
+(sed tempore Octava Ascensionis)
+R. Và Chúa ngự lên trong tiếng kèn thổi, allêluia.
+(sed tempore Octava Pentecostes)
+R. Và Đấng bao trùm mọi sự, thì thông biết mọi tiếng nói, allêluia.
+
+[Versus Ante Prandium]
+@:Versus Ante:s/\$REGULAR_VERSUS/v. Lạy Chúa, con mắt mọi loài * ngửa trông lên Chúa, và Chúa ban lương thực cho chúng nó đúng thì giờ. Chúa mở tay Chúa ra, và làm cho mọi sinh vật được no nê./
+
+[Versus Ante Coenam]
+@:Versus Ante:s/\$REGULAR_VERSUS/v. Kẻ nghèo khó sẽ ăn, và được no nê, và kẻ tìm kiếm Chúa sẽ ngượi khen Người : lòng chúng nó sẽ sống đời đời./
+
+[Oratio Ante]
+/: Sau đó :/~
+/: Thầy cả :/~
+(sed rubrica Monastica)
+/: Bề trên hay là Thầy trực tuần :/~
+/: đọc: :/
+$Chúng ta hãy cầu nguyện
+Lạy Chúa, xin Chúa ban phép lành cho chúng tôi, và các của này, mà chúng tôi sẽ chịu lấy bởi lòng rộng rãi Chúa. Vì Đức Chúa Jêsu Kirixitô là Chúa chúng tôi,
+R. Amen.
+
+[Benedictio Ante Prandium]
+/: Đoạn Kẻ đọc sách :/
+$Xin Thầy cả ban phép lành cho
+Benedictio. Xin Vua vinh hiển đời đời cho chúng tôi được dự phần bàn tiệc trên lời,
+R. Amen.
+
+[Benedictio Ante coenam]
+/: Đoạn Kẻ đọc sách :/
+$Xin Thầy cả ban phép lành cho
+Benedictio. Xin Vua vinh hiển đời đời dẫn đưa chúng tôi đến tiệc sự sống đời đời.
+R. Amen.
+
+[Incipit Post]
+/: Cám ơn cách này. :/
+/: Kẻ đọc sách đọc :/
+Nhưng mà lạy Chúa, xin thương xót chúng tôi,
+R. Tạ ơn Đức Chúa Lời.
+/: Mọi người đứng dậy và :/~
+/: Thầy cả :/~
+(sed rubrica Monastica)
+/: Bề trên hay là Thầy trực tuần :/~
+/: khởi sự : :/
+
+[Versus Post]
+$REGULAR_VERSUS1
+(sed tempore Nativitatis)
+v. Chúa đã tỏ ra, allêluia.
+(sed die Sabbato Sancto)
+v. Chiều ngày thứ bảy, rạng ngày thứ nhất, allêluia.
+(sed tempore Octava Paschæ)
+v. Ngày này là ngày Chúa đã làm ra, allêluia.
+(sed tempore Octava Ascensionis)
+v. Chúa Kirixitô lên nơi cao, allêluia.
+(sed tempore Octava Pentecostes)
+v. Mọi người đều đầy dẫy Đức Chúa Thánh Thần, allêluia.
+$REGULAR_VERSUS2
+(sed tempore Nativitatis)
+R. Sự cứu độ của Người, allêluia.
+(sed die Sabbato Sancto)
+R. Maria Mađalêna và Maria khác đến xem mồ, allêluia.
+(sed tempore Octava Paschæ)
+R. Chúng tôi hãy mừng rỡ và vui vẻ trong ngày ấy, allêluia.
+(sed tempore Octava Ascensionis)
+R. Người đã dẫn tù đày làm phu tù, allêluia.
+(sed tempore Octava Pentecostes)
+R. Và bắt đầu nói, allêluia.
+
+[Versus Post Prandium]
+@:Versus Post:s/\$REGULAR_VERSUS1/v. Lạy Chúa, mọi việc Chúa làm hãy xưng tụng Chúa./ s/\$REGULAR_VERSUS2/R. Và các thánh Chúa hãy chúc tụng Chúa./
+
+[Versus Post Coenam]
+@:Versus Post:s/\$REGULAR_VERSUS1/v. Chúa hay thương xót và hay làm ơn, đã làm kỷ niệm những phép lạ Người,/ s/\$REGULAR_VERSUS2/R. Người đã ban lương thực cho kẻ kính sợ Người./
+
+[Oratio Post]
+v. Người đã phân phát, đã ban cho kẻ nghèo khó.
+R. Đức công chính Người còn đời đời.
+v. Tôi sẽ chúc tụng Chúa mọi lúc.
+R. Miệng tôi hằng ngượi khen Người liên.
+v. Linh hồn tôi sẽ được khen ngợi trong Chúa.
+R. Kẻ hiền lành hãy nghe và hãy vui mừng,
+v. Hãy cùng tôi ngượi khen Chúa.
+R. Và chúng ta hãy nhảy mừng suy tôn danh Người.
+v. Đáng chúc tụng danh Chúa.
+R. Từ rày về sau cho đến đời đời.
+/: Đoạn đọc chẳng có "Chúng ta hãy cầu nguyện". :/
+v. Lạy Chúa, xin Chúa đoái thương trả phần thưởng sự sống đời đời cho hết thảy những kẻ làm ơn cho chúng tôi vì danh Chúa,
+R. Amen.
+v. Chúng tôi hãy chúc tụng Chúa.
+R. Tạ ơn Đức Chúa Lời.
+v. Xin cho linh hồn các kẻ tin nhờ lượng hay thương xót Đức Chúa Lời được nghỉ ngơi bằng yên.
+R. Amen.
+$Kinh Lạy Cha đọc thầm
+/: Đọc đoạn, thì Thầy cả đọc : :/
+v. Xin Đức Chúa Lời ban sự bằng yên Người cho chúng tôi,
+R. Amen.
+
+[Gratiarum Prandium]
+/: Sau đó :/~
+/: Thầy cả :/~
+(sed rubrica Monastica)
+/: Bề trên hay là Thầy trực tuần :/~
+/: đọc ngay rằng : :/
+v. Chúng tôi cám ơn Đức Chúa Lời toàn năng, vì mọi ơn lành Chúa ban : Là Đấng hằng sống hằng trị đời đời chẳng cùng.
+R. Amen.
+/: Đoạn đọc luân phiên :/
+
+[Gratiarum Coenam]
+/: Thầy cả đọc : :/
+v. Đáng chịu lấy phép lành là Đức Chúa Lời trong các quà Người ban, và là Đấng thánh trong mọi việc Người làm : Là Đấng hằng sống hằng trị đời đời chẳng cùng.
+R. Amen.
+/: Đoạn đọc luân phiên :/
+
+[Benedictio mensae]
+@:ANTE PRANDIUM
+(sed die Sabbato Sancto)
+
+
+_
+@:POST PRANDIUM
+(sed die Sabbato Sancto)
+
+
+_
+@:ANTE COENAM
+
+_
+@:IN FINE COENAE
+
+
+[Benedictio mensae in CD et P]
+#TRƯỚC BỮA TỐI
+/: Đọc ngay và chẳng có ngâm. :/
+v. Chúa Kirixitô đã vâng lời vì chúng tôi cho đến chết.
+/: Đoạn đọc thầm hết. :/
+$Kinh Lạy Cha
+/: Đọc đoạn, chẳng có rao gì cả, Thầy cả làm dấu Câu rút ban phép lành bàn ăn, cũng chẳng đọc Xin Thầy cả, cũng chẳng đọc Nhưng mà lạy Chúa. :/
+
+_
+#SAU BỮA TỐI
+v. Chúa Kirixitô đã vâng lời vì chúng tôi cho đến chết.
+&psalm(50,1)
+/: đọc thầm :/
+$Kinh Lạy Cha.
+/: Đoạn Thầy cả đọc ngay Lời nguyện. :/
+/: Lời nguyện. :/
+v. Lạy Chúa, chúng tôi xin Chúa thương xem gia quyến này, vì nó mà Chúa Jêsu Kirixitô Chúa chúng tôi chẳng nề nộp mình trong tay kẻ dữ, và chịu sự khốn khó nơi cây Câu rút.
+/: Và chẳng đọc Đấng hằng sống. cũng chẳng đọc Xin cho linh hồn, song đọc thầm :/
+$Kinh Lạy Cha
+/: cũng chẳng thêm Xin Đức Chúa Lời ban sự bằng yên. :/
+
+[Benedictio mensae] (sed die in Cœna Domini dicitur)
+@:Benedictio mensae in CD et P
+
+[Benedictio mensae] (sed die in Parasceve dicitur)
+@:Benedictio mensae in CD et P:s/chết./chết, mà là chết trên cây Câu rút./g
+
+[Do not include below in vernacular]
+
+[ANTE PRANDIUM]
+#TRƯỚC BỮA ĂN TRƯA
+@:Incipit
+@:Versus Ante Prandium
+&Gloria
+$mLitany2
+@:Oratio Ante
+@:Benedictio Ante Prandium
+
+[POST PRANDIUM]
+#SAU BỮA ĂN TRƯA
+@:Incipit Post
+@:Versus Post Prandium
+&Gloria
+@:Gratiarum Prandium
+&psalm(50)
+(sed tempore Nativitatis)
+&psalm(97) 
+(sed tempore Octava Paschæ aut tempore post Octavam Paschæ)
+&psalm(117)
+(sed tempore Octava Ascensionis)
+&psalm(46)
+(sed tempore Octava Pentecostes)
+&psalm(47)
+$mLitany2
+@:Oratio Post
+
+[ANTE COENAM]
+#TRƯỚC BỮA ĂN TỐI
+@:Incipit
+@:Versus Ante Coenam
+&Gloria
+$mLitany2
+@:Oratio Ante
+@:Benedictio Ante coenam
+
+[IN FINE COENAE]
+#CUỐI BỮA ĂN TỐI
+@:Incipit Post
+@:Versus Post Coenam
+&Gloria
+@:Gratiarum Coenam
+&psalm(116)
+$mLitany2
+@:Oratio Post

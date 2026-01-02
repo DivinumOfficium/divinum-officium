@@ -1,139 +1,99 @@
-[Name]
-Commune non Virginum non Martyrum
+[Officium]
+Commun des Saintes Femmes non martyres
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
+[Missa]
+Cognovi
 
-[Ant Vespera]
-@Commune/C7
+[Oratio]
+Exaucez-nous, ô Dieu, notre Sauveur, en sorte que, tout en nous donnant la joie, la fête de la bienheureuse N. nous instruise par le sentiment d'une pieuse dévotion.
+$Per Dominum
 
-[Capitulum Vespera]
+[Lectio1]
+De Proverbes de Salomon
+!Prov 31:10-17
+10 Une femme parfaite, qui la trouvera ? Elle est précieuse plus que les perles !
+11 Son mari peut lui faire confiance : il ne manquera pas de ressources.
+12 Elle fait son bonheur, et non pas sa ruine, tous les jours de sa vie.
+13 Elle sait choisir la laine et le lin, et ses mains travaillent volontiers.
+14 Elle est comme les navires marchands, faisant venir ses vivres de très loin.
+15 Elle est debout quand il fait encore nuit pour préparer les repas de sa maison et donner ses ordres aux servantes.
+16 A-t-elle des visées sur un champ ? Elle l’acquiert. Avec le produit de son travail, elle plante une vigne.
+17 Elle rayonne de force et retrousse ses manches !
+
+[Lectio2]
+!Prov 31:18-24
+18 Elle s’assure de la bonne marche des affaires, sa lampe ne s’éteint pas de la nuit.
+19 Elle tend la main vers la quenouille, ses doigts dirigent le fuseau.
+20 Ses doigts s’ouvrent en faveur du pauvre, elle tend la main au malheureux.
+21 Elle ne craint pas la neige pour sa maisonnée, car tous les siens ont des vêtements doublés.
+22 Elle s’est fait des couvertures, des vêtements de pourpre et de lin fin.
+23 Aux portes de la ville, on reconnaît son mari siégeant parmi les anciens du pays.
+24 Elle fabrique de l’étoffe pour la vendre, elle propose des ceintures au marchand.
+
+[Lectio3]
+!Prov 31:25-31
+25 Revêtue de force et de splendeur, elle sourit à l’avenir.
+26 Sa bouche s’exprime avec sagesse et sa langue enseigne la bonté.
+27 Attentive à la marche de sa maison, elle ne mange pas le pain de l’oisiveté.
+28 Ses fils, debout, la disent bienheureuse et son mari fait sa louange :
+29 « Bien des femmes ont fait leurs preuves, mais toi, tu les surpasses toutes ! »
+30 Le charme est trompeur et la beauté s’évanouit ; seule, la femme qui craint le Seigneur mérite la louange.
+31 Célébrez-la pour les fruits de son travail : et qu’aux portes de la ville, ses œuvres disent sa louange !
+
+[Capitulum Laudes]
 !Prov. 31:10-11
 v. La femme forte, qui la trouvera ? C'est bien loin, aux extrémités de la terre, qu'il faut aller chercher de quoi la payer. Le cœur de son mari se confie en elle et il n'aura pas besoin du butin.
 $Deo gratias
 
-[Hymnus Vespera]
-@Commune/C7:Hymnus Vespera
-
-[Versum 1]
-@Commune/C6
-
-[Ant 1]
-@Commune/C6:Ant 2
-
-[Invit]
-@Commune/C7
-
-[Hymnus Matutinum]
-@Commune/C7:Hymnus Matutinum
-
-[Ant Matutinum]
-@Commune/C7
-
-[Lectio1]
-@Commune/C7:Lectio1
-
-[Responsory1]
-@Commune/C6
-
-[Lectio2]
-@Commune/C7
-
-[Responsory2]
-@Commune/C6
-
-[Lectio3]
-@Commune/C7
-
-[Responsory3]
-@Commune/C6
-
-[Lectio4]
-@Commune/C7:Lectio4
-
-[Responsory4]
-@Commune/C6
-
-[Lectio5]
-@Commune/C7
-
-[Responsory5]
-@Commune/C6
-
-[Lectio6]
-@Commune/C7
-
-[Responsory6]
-@Commune/C7
-
-[Lectio7]
-@Commune/C7
-
-[Responsory7]
-@Commune/C7
-
-[Lectio8]
-@Commune/C7
-
-[Responsory8]
-@Commune/C7
-
-[Lectio9]
-@Commune/C7
-
-[Ant Laudes]
-@Commune/C7
-
-[Capitulum Laudes]
-@:Capitulum Vespera
-
-[Hymnus Laudes]
-@Commune/C7:Hymnus Vespera
-
-[Versum 2]
-@Commune/C6
-
-[Ant 2]
-@Commune/C7
-
-[Oratio]
-@Commune/C7:Oratio
-
-[Oratio1]
-@Commune/C7:Oratio1
-
-[Oratio2]
-@Commune/C7
-
 [Lectio Prima]
 !Prov 31:29-30
-v. Multæ fíliæ congregavérunt divítias : tu supergréssa es univérsas. Fallax grátia, et vana est pulchritúdo : múlier timens Dóminum, ipsa laudábitur.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
-@Commune/C6
+v. Beaucoup de filles ont amassé des richesses, tu les as toutes surpassées. Trompeuse est la grâce et vaine est la beauté. C’est la femme craignant le Seigneur qui sera louée.
 
 [Capitulum Sexta]
 !Prov 31:20-21
-v. Manum suam apéruit ínopi, et palmas suas exténdit ad páuperem. Non timébit domui suæ a frigóribus nivis.
-$Deo gratias.
-
-[Responsory Sexta]
-@Commune/C6
-
-[Capitulum Nona]
-@:Lectio Prima
+v. Elle a ouvert sa main à l’indigent et en a tendu les paumes au pauvre. Elle ne craindra point pour sa maison la froidure de la neige.
 $Deo gratias
 
-[Responsory Nona]
-@Commune/C6
+[Introitus]
+!Ps 118:75; 118:120
+v. Je reconnais, Seigneur, que vos décrets sont justes, que c'est avec raison que vous m'avez éprouvée. Percez ma chair de votre crainte ; je redoute vos jugements. (Alléluia, alléluia.)
+!Ps 118:1
+Heureux ceux qui sont purs sur le chemin, qui marchent dans la loi du Seigneur.
+&Gloria
+v. Je reconnais, Seigneur, que vos décrets sont justes, que c'est avec raison que vous m'avez éprouvée. Percez ma chair de votre crainte ; je redoute vos jugements. (Alléluia, alléluia.)
 
-[Versum 3]
-@:Versum 2
+[Oratio] (ad missam)
+Exaucez-nous, Dieu notre Sauveur, afin que célébrant dans la joie la fête de la bienheureuse N., nous nous laissions gagner aussi par l'ardeur de son amour.
+$Per Dominum
 
-[Ant 3]
-@Commune/C7
+[Lectio]
+Lecture du livre de la Sagesse.
+!Prov 31:10-31
+Qui peut trouver une femme forte ? Son prix l'emporte de loin sur celui des perles. Le cœur de son mari a confiance en elle, et les profits ne lui feront pas défaut. Elle lui fait du bien, et non du mal, tous les jours de sa vie. Elle recherche de la laine et du lin, et travaille de sa main joyeuse. Elle est comme le vaisseau du marchand, elle apporte son pain de loin. Elle se lève lorsqu'il est encore nuit, et elle donne la nourriture à sa maison, et la tâche à ses servantes. Elle pense à un champ, et elle l'acquiert; du fruit de ses mains, elle plante une vigne. Elle ceint de force ses reins, et elle affermit ses bras. Elle sent que son gain est bon; sa lampe ne s'éteint pas pendant la nuit. Elle met la main à la quenouille, et ses doigts prennent le fuseau. Elle tend la main au malheureux, elle ouvre la main à l'indigent. Elle ne craint pas la neige pour sa maison, car toute sa maison est vêtue de cramoisi. Elle se fait des couvertures, la byssus et la pourpre sont ses vêtements. Son époux est bien connu aux portes de la ville, lorsqu'il siège avec les anciens du pays. Elle fait des chemises et les vend, et elle livre des ceintures au marchand. La force et la grâce sont sa parure, et elle se rit de l'avenir. Elle ouvre la bouche avec sagesse, et les bonnes paroles sont sur sa langue. Elle surveille les sentiers de sa maison, et elle ne mange pas le pain d'oisiveté. Ses fils se lèvent et la proclament heureuse; son époux se lève et lui donne des éloges: « Beaucoup de filles se sont montrées vertueuses; mais toi, tu les surpasses toutes. » Trompeuse est la grâce, et vaine est la beauté; la femme qui craint le Seigneur est celle qui sera louée. Donnez-lui du fruit de ses mains, et que ses œuvres disent sa louange aux portes de la ville.
 
+[Graduale]
+!Ps 44:3; 44:5
+La grâce est répandue sur vos lèvres ; aussi Dieu vous a-t-il bénie à jamais.
+V. Pour la vérité, la douceur et la justice, que votre droite se signale par des actions d'éclat. Alléluia, alléluia.
+!Ps 44:5
+Dans votre grâce, dans votre beauté, allez, soyez heureuse et régnez. Alléluia.
+
+[Tractus]
+!Ps 44:3; 44:5
+La grâce est répandue sur vos lèvres ; aussi Dieu vous a-t-il bénie à jamais.
+V. Pour la vérité, la douceur et la justice, que votre droite se signale par des actions d'éclat.
+_
+!Tractus
+V. Venez, épouse du Christ, recevez la couronne que le Seigneur vous a préparée à jamais.
+!Ps 44:8; 44:5
+Vous avez aimé la justice et haï l'iniquité, c'est pourquoi Dieu, votre Dieu, vous a donné l'onction de joie de préférence à vos compagnes.
+V. Dans votre grâce, dans votre beauté, allez, soyez heureuse et régnez.
+
+[Communio]
+!Ps 44:8
+Vous avez aimé la justice et haï l'iniquité, c'est pourquoi Dieu, votre Dieu, vous a ointe de la joie au-delà de vos compagnes. (Alléluia.)
+
+[Lectio in 2 loco]
+Lecture du Bienheureux Paul apôtres à Timothée.
+!1 Tim 5:3-10.
+Honore les veuves qui sont réellement des veuves. Que si une veuve a des enfants ou des petits-enfants, qu'ils apprennent d'abord à agir avec piété envers leur propre famille et à payer de retour leurs parents, car cela est agréable à Dieu. Celle qui est réellement une veuve et une isolée a mis son espoir en Dieu, et elle persévère nuit et jour dans les supplications et les prières. Celle qui vit dans les plaisirs, (bien que) vivante, est morte. Donne-leur aussi ces avis, afin qu'elles soient sans reproche. Que si quelqu'un n'a pas soin des siens, surtout de ceux de sa famille, il a renié la foi et il est pire qu'un incroyant. Une veuve, pour être inscrite sur le rôle doit être âgée de soixante ans au moins, avoir été mariée une seule fois, être réputée pour ses bonnes œuvres, comme ayant élevé des enfants, exercé l'hospitalité, lavé les pieds des saints, assisté les malheureux, pratiqué toute bonne œuvre.

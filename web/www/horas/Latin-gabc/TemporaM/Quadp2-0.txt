@@ -1,0 +1,41 @@
+[Ant Matutinum 3N]
+Semen cécidit in terram bonam, † et ortem fecit fructum céntuplum.
+V. Exaltáre Dómine in virtúte tua.
+R. Cantábimus et psallémus virtútes tuas.
+
+[Lectio1]
+@Tempora/Quadp2-0:Lectio1:1-6 s/-4/-3/
+
+[Lectio2]
+@Tempora/Quadp2-0:Lectio1:2:s/5:31; 6:1-4/6:4-6/
+@Tempora/Quadp2-0:Lectio1:7
+@Tempora/Quadp2-0:Lectio2:2-3 s/ Et tactus.*//s
+
+[Lectio3]
+@Tempora/Quadp2-0:Lectio2:s/5-8/6-10/ s/5.*(Et tactus)/6 $1/s
+@Tempora/Quadp2-0:Lectio3:s/!.*// s/11 .*//s
+
+[Lectio4]
+@Tempora/Quadp2-0:Lectio3:s/9-/11-/ s/9.*11/11/s
+
+[Lectio5]
+@Tempora/Quadp2-0:Lectio4:s/Neque .*//s
+
+[Lectio6]
+@Tempora/Quadp2-0:Lectio4:s/.* Neque /Neque /s
+
+[Lectio9]
+@Tempora/Quadp2-0:Lectio7:s/Unde .*//s
+
+[Lectio10]
+@Tempora/Quadp2-0:Lectio7:s/.* Unde /Unde /s s/$/~/
+@Tempora/Quadp2-0:Lectio8:s/Quis .*//s
+
+[Lectio11]
+@Tempora/Quadp2-0:Lectio8:s/.* Quis /Quis /s
+
+[Responsory11]
+R. Requiévit arca mense séptimo super montes Arméniæ:
+* Et aquæ ibant et decrescébant usque ad décimum mensem.
+V. Décimo enim mense primo die mensis cacúmina móntium apparuérunt.
+R. Et aquæ ibant et decrescébant usque ad décimum mensem.

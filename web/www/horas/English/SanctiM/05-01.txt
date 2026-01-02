@@ -17,16 +17,10 @@ R. Have mercy on me and hear me.
 @Tempora/Pasc2-3:Lectio6:s/.*(Therefore)/$1/s
 
 [Lectio11]
-@Tempora/Pasc2-3:Lectio9:s/Neque.*//s
+@Tempora/Pasc2-3:Lectio9:s/It is.*//s
 
 [Responsory11]
 @Sancti/03-19:Responsory5
-
-[Lectio12]
-@Tempora/Pasc2-3:Lectio9:s/.*(Neque)/$1/s
-
-[Lectio11]
-@Tempora/Pasc2-3:Lectio9:s/It is.*//s
 
 [Lectio12]
 @Tempora/Pasc2-3:Lectio9:s/.*(It is)/$1/s

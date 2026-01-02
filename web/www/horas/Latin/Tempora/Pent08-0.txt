@@ -1,5 +1,8 @@
+[Officium]
+Dominica VIII Post Pentecosten
+
 [Rank]
-Dominica VIII Post Pentecosten;;Semiduplex;;5
+;;Semiduplex;;5
 
 [Rule]
 9 lectiones
@@ -7,8 +10,16 @@ Psalmi Dominica
 Antiphonas horas
 Symbolum Athanasium
 
-[Ant 1]
+[Ant 1_]
 Exaudísti, Dómine, * oratiónem servi tui, ut ædificárem templum nómini tuo.
+
+[Ant 1]
+@:Ant 1_
+(sed rubrica cisterciensis)
+@:Ant 1C
+
+[Ant 1C]
+Rex autem David * coopérto cápite incédens lugébat fílium suum, dicens: Absalom fili mi, fili mi Absalom, quis mihi det ut ego móriar pro te, fili mi Absalom?
 
 [Oratio]
 Largíre nobis, quǽsumus, Dómine, semper spíritum cogitándi quæ recta sunt, propítius et agéndi: ut, qui sine te esse non póssumus, secúndum te vívere valeámus.

@@ -1,13 +1,21 @@
+[Rule]
+Gloria
+Credo
+Prefatio=Maria=Festivitate;
 
 [Introitus]
-@Sancti/10-07r:Introitus
+v. Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre beátæ Maríæ Vírginis: de cujus sollemnitáte gaudent Angeli et colláudant Fílium Dei, alleluia, alleluia.
+!Ps 44:2
+Eructávit cor meum verbum bonum: dico ego ópera mea Regi.
+&Gloria
+v. Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre beátæ Maríæ Vírginis: de cujus sollemnitáte gaudent Angeli et colláudant Fílium Dei, alleluia, alleluia.
 
 [Oratio]
 Omnípotens et miséricors Deus, qui ad defensiónem pópuli nostri, in beatíssima Vírgine María mirábile nobis auxílium constituísti: concéde propítius; ut, tali præsídio muníti, certántes in vita, victóriam de hoste malígno cónsequi valeámus in morte.
 $Per Dominum
 
 [Lectio]
-@Sancti/09-15:Lectio
+@Sancti/09-15
 
 [Graduale]
 Allelúia, allelúia.
@@ -16,17 +24,17 @@ V. Tota formósa et suávis es, fília Sion, pulchra ut luna, elécta ut sol, te
 V. Benedíxit te Dóminus in virtúte sua, quia per te ad níhilum redégit inimícos nostros. Allelúia.
 
 [Evangelium]
-@Sancti/08-22:Evangelium
+@Sancti/08-22
 
 [Offertorium]
-@Sancti/09-15:Offertorium
+@Sancti/07-16
 
 [Secreta]
 Súscipe, Dómine, munus quod tibi offérimus, memóriam recoléntes piíssimæ Vírginis Maríæ, quæ consolátur nos in omni tribulatióne nostra: et præsta; ut mens nostra supérno lúmine Sancti Spíritus irradiáta, terréna despíciat et ad cæléstia semper aspíret.
 $Per Dominum
 
 [Communio]
-Regína mundi digníssima, María Virgo perpétua intercéde pro nostra pace et salúte, quæ genuísti Christum Dóminum, Salvatórem ómnium, allelúia.
+@Sancti/07-16
 
 [Postcommunio]
 Deus, qui nobis beátam Vírginem Maríam singulárem Patrónam dedísti: concéde propítius; ut, sacris donis tuis satiáti, præsídio eiúsdem beáte Vírginis Maríæ in ómnibus adversitátibus nostris perfruámur.

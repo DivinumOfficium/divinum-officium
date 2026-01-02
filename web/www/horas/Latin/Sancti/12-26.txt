@@ -1,18 +1,23 @@
-[Rank]
-S. Stephani Protomartyris;;Duplex II class cum octava simplici;;5.4;;ex C2
+[Officium]
+S. Stephani Protomartyris
 
-[Rank1960]
-S. Stephani Protomartyris;;Duplex II class;;5;;ex C2
+[Rank]
+;;Duplex II class cum octava simplici;;5.4;;ex C2a
+(sed rubrica 196)
+;;Duplex II class;;5.4;;ex C2a
 
 [Rule]
-ex C2;
+ex C2a;
 Psalmi Dominica
 Antiphonas horas
 9 lectiones
 no Psalm5
 
 [Versum 1]
-@Commune/C2:Versum 1
+@Commune/C2a
+
+[Versum 1] (rubrica cisterciensis)
+@CommuneCist/C2
 
 [Ant 1]
 Stéphanus autem * plenus grátia et fortitúdine, faciébat signa magna in pópulo.
@@ -20,6 +25,16 @@ Stéphanus autem * plenus grátia et fortitúdine, faciébat signa magna in póp
 [Oratio]
 Da nobis, quǽsumus, Dómine, imitári quod cólimus: ut discámus et inimícos dilígere; quia ejus natalícia celebrámus, qui novit étiam pro persecutóribus exoráre Dóminum nostrum Jesum Christum Fílium tuum:
 $Qui tecum
+
+[Commemoratio] (rubrica cisterciensis)
+!Commemoratio omnium SS. Martyrum
+@CommuneCist/C3:Oratio proper
+$Oremus
+v. Deus, qui nos annua ómnium sanctórum Mártyrum tuórum commemoratióne lætíficas: § concéde propítius; * ut, quorum gaudémus méritis, § accendámur exémplis.
+$Per Dominum
+
+[Octava 1]
+@:Octava 3
 
 [Invit]
 Christum natum, qui beátum hódie coronávit Stéphanum, * Veníte, adorémus.
@@ -37,12 +52,12 @@ De Actibus Apostolórum
 [Responsory1]
 R. Stéphanus autem plenus grátia et fortitúdine, 
 * Faciébat prodígia et signa magna in pópulo.
-V. Surrexérunt quidam de synagóga disputántes cum Stéphano: et non póterant resístere sapiéntiæ, et Spiritui qui loquebátur.
+V. Surrexérunt quidam de synagóga disputántes cum Stéphano: et non póterant resístere sapiéntiæ, et Spirítui qui loquebátur.
 R. Faciébat prodígia et signa magna in pópulo.
 
 [Lectio2]
 !Act. 6:7-10;7:54
-7 Et verbum Dómini crescébat, et multiplicabátur númerus discipulórum in Jerúsalem valde: multa étiam turba sacerdótum obediébat fidei.
+7 Et verbum Dómini crescébat, et multiplicabátur númerus discipulórum in Jerúsalem valde: multa étiam turba sacerdótum obediébat fídei.
 8 Stéphanus autem plenus grátia et fortitúdine, faciébat prodígia et signa magna in pópulo. 
 9 Surrexérunt autem quidam de synagóga, quæ appellátur Libertinórum, et Cyrenénsium et Alexandrinórum, et eórum qui erant a Cilícia, et Asia, disputántes cum Stéphano: 
 10 et non póterant resístere sapiéntiæ, et Spirítui qui loquebátur. 
@@ -51,12 +66,12 @@ R. Faciébat prodígia et signa magna in pópulo.
 [Responsory2]
 R. Vidébant omnes Stéphanum, qui erant in concílio: 
 * Et intuebántur vultum ejus tamquam vultum Angeli stantis inter illos.
-V. Plenus grátia et fortitúdine, faciebat prodígia et signa magna in pópulo.
+V. Plenus grátia et fortitúdine, faciébat prodígia et signa magna in pópulo.
 R. Et intuebántur vultum ejus tamquam vultum Angeli stantis inter illos.
 
 [Lectio3]
 !Act. 7:55-59
-55 Cum autem esset plenus Spíritu Sancto, inténdens in cælum, vidit glóriam Dei, et Jesum stántem a dextris Dei. Et ait: Ecce vídeo cælos apértos, et Fílium hóminis stántem a dextris Dei. 
+55 Cum autem esset plenus Spíritu Sancto, inténdens in cælum, vidit glóriam Dei, et Jesum stantem a dextris Dei. Et ait: Ecce vídeo cælos apértos, et Fílium hóminis stantem a dextris Dei. 
 56 Exclamántes autem voce magna, continuérunt aures suas, et ímpetum fecérunt unanímiter in eum. 
 57 Et eiciéntes eum extra civitátem lapidábant: et testes deposuérunt vestiménta sua secus pedes adolescéntis, qui vocabátur Saulus. 
 58 Et lapidábant Stéphanum, invocántem et dicéntem: Dómine Jesu, súscipe spíritum meum.
@@ -64,16 +79,16 @@ R. Et intuebántur vultum ejus tamquam vultum Angeli stantis inter illos.
 
 [Responsory3]
 R. Intuens in cælum beátus Stéphanus, vidit glóriam Dei, et ait: 
-* Ecce vídeo cælos apértos, et Fílium hóminis stántem a dextris virtútis Dei.
+* Ecce vídeo cælos apértos, et Fílium hóminis stantem a dextris virtútis Dei.
 V. Cum autem esset Stéphanus plenus Spíritu Sancto, inténdens in cælum, vidit glóriam Dei, et ait.
-R. Ecce vídeo cælos apértos, et Fílium hóminis stántem a dextris virtútis Dei.
+R. Ecce vídeo cælos apértos, et Fílium hóminis stantem a dextris virtútis Dei.
 &Gloria
-R. Ecce vídeo cælos apértos, et Fílium hóminis stántem a dextris virtútis Dei.
+R. Ecce vídeo cælos apértos, et Fílium hóminis stantem a dextris virtútis Dei.
 
 [Lectio4]
-Sermo sancti Fulgentii Epíscopi
+Sermo sancti Fulgéntii Epíscopi
 !Sermo 3, de S. Stéphano, circa init.
-Heri celebrávimus témporalem sempitérni Regis nostri natálem: hódie celebrámus triumphálem mílitis passiónem. Heri enim Rex noster trábea carnis indútus, de aula úteri virginális egrédiens, visitáre dignátus est mundum: hódie miles de tabernáculo córporis éxiens, triumphátor migrávit ad cælum. Ille, sempitérnæ Deitátis majestáte serváta, servíle cinctórium carnis assúmens, in hujus sǽculi campum pugnatúrus intrávit; iste, depósitis corruptibílibus córporis induméntis, ad cæli palátium perénniter regnatúrus ascéndit. Ille descéndit carne velátus, iste ascéndit sánguine laureátus.
+Heri celebrávimus temporálem sempitérni Regis nostri natálem: hódie celebrámus triumphálem mílitis passiónem. Heri enim Rex noster trábea carnis indútus, de aula úteri virginális egrédiens, visitáre dignátus est mundum: hódie miles de tabernáculo córporis éxiens, triumphátor migrávit ad cælum. Ille, sempitérnæ Deitátis majestáte serváta, servíle cinctórium carnis assúmens, in hujus sǽculi campum pugnatúrus intrávit; iste, depósitis corruptibílibus córporis induméntis, ad cæli palátium perénniter regnatúrus ascéndit. Ille descéndit carne velátus, iste ascéndit sánguine laureátus.
 
 [Responsory4]
 R. Lapidábant Stéphanum invocántem et dicéntem: 
@@ -108,35 +123,45 @@ In illo témpore: Dicébat Jesus scribis et pharisǽis: Ecce ego mitto ad vos pr
 _
 Homilía sancti Hierónymi Presbýteri
 !Liber 4 Comment. in cap. 23 Matthæi
-Hoc quod ántea dixerámus, Impléte mensúram patrum vestrórum; ad persónam Dómini pertinére, eo quod occidéndus esset ab eis, potest et ad discípulos ejus reférri, de quibus nunc dicit: Ecce ego mitto ad vos prophétas, et sapiéntes, et scribas. Simúlque obsérva, juxta Apóstolum scribéntem ad Corínthios, varia esse dona discipulórum Christi; álios prophétas, qui ventúra prædícent; álios sapiéntes, qui novérunt quando débeant proférre sermónem; álios scribas in lege doctíssimos, ex quibus lapidátus est Stéphanus, Paulus occísus, crucifíxus Petrus, flagelláti in Actibus Apostolórum discípuli.
+Hoc quod ántea dixerámus, Impléte mensúram patrum vestrórum; ad persónam Dómini pertinére, eo quod occidéndus esset ab eis, potest et ad discípulos ejus reférri, de quibus nunc dicit: Ecce ego mitto ad vos prophétas, et sapiéntes, et scribas. Simúlque obsérva, juxta Apóstolum scribéntem ad Corínthios, vária esse dona discipulórum Christi; álios prophétas, qui ventúra prædícent; álios sapiéntes, qui novérunt quando débeant proférre sermónem; álios scribas in lege doctíssimos, ex quibus lapidátus est Stéphanus, Paulus occísus, crucifíxus Petrus, flagelláti in Actibus Apostolórum discípuli.
 
 [Responsory7]
 R. Stéphanus servus Dei, quem lapidábant Judǽi, vidit cælos apértos: vidit, et introívit: 
 * Beátus homo, cui cæli patébant.
-V. Cum ígitur saxórum crepitántium túrbine quaterétur, inter æthéreos aulæ cæléstis sinus divína ei cláritas fúlsit.
+V. Cum ígitur saxórum crepitántium túrbine quaterétur, inter æthéreos aulæ cæléstis sinus divína ei cláritas fulsit.
 R. Beátus homo, cui cæli patébant.
 
 [Lectio8]
-Quǽrimus, quis iste sit Zacharías fílius Barachíæ: quia multos légimus Zacharías. Et ne líbera nobis tribuerétur erroris facúltas, ádditum est: Quem occidístis inter templum et altáre. In divérsis divérsa legi: et débeo singulórum opiniónes pónere. Alii Zacharíam fílium Barachíæ dicunt, qui in duódecim prophétis undécimus est, patrísque in eo nomen conséntit: sed ubi occísus sit inter templum et altáre, Scriptúra non lóquitur; máxime cum tempóribus ejus vix ruínæ templi fúerint. Alii Zacharíam patrem Joánnis intellégi volunt, ex quibúsdam apocryphórum sómniis approbántes, quod proptérea occísus sit, quia Salvatóris prædicáverit advéntum.
+Quǽrimus, quis iste sit Zacharías fílius Barachíæ: quia multos légimus Zacharías. Et ne líbera nobis tribuerétur erróris facúltas, ádditum est: Quem occidístis inter templum et altáre. In divérsis divérsa legi: et débeo singulórum opiniónes pónere. Alii Zacharíam fílium Barachíæ dicunt, qui in duódecim prophétis undécimus est, patrísque in eo nomen conséntit: sed ubi occísus sit inter templum et altáre, Scriptúra non lóquitur; máxime cum tempóribus ejus vix ruínæ templi fúerint. Alii Zacharíam patrem Joánnis intellégi volunt, ex quibúsdam apocryphórum sómniis approbántes, quod proptérea occísus sit, quia Salvatóris prædicáverit advéntum.
 
 [Responsory8]
-R. Patefáctæ sunt jánuæ cæli Christi Mártyri beato Stéphano, qui in número Mártyrum invéntus est primus:
+R. Patefáctæ sunt jánuæ cæli Christi Mártyri beáto Stéphano, qui in número Mártyrum invéntus est primus:
 * Et ídeo triúmphat in cælis coronátus.
-V. Mórtem enim, quam Salvátor noster dignátus est pro nobis pati, hanc ille primus réddidit Salvatóri.
+V. Mortem enim, quam Salvátor noster dignátus est pro nobis pati, hanc ille primus réddidit Salvatóri.
 R. Et ídeo triúmphat in cælis coronátus.
 &Gloria
 R. Et ídeo triúmphat in cælis coronátus.
 
 [Lectio9]
-Alii istum volunt esse Zacharíam, qui occísus est a Joas rege Judæ inter templum et altáre, sicut Regum narrat história. Sed observándum, quod ille Zacharías non sit fílius Barachíæ, sed fílius Jójadæ sacerdótis: unde et Scriptúra refert: Non fuit recordátus Joas patris ejus Jójadæ, quia sibi fecísset bona. Cum ergo et Zacharíam teneámus et occisiónis conséntiat locus: quærimus, quare Barachíæ dicátur fílius, et non Jójadæ? Barachía lingua nostra Benedíctus Dómini dícitur, et sacerdotis Jójadæ justítia Hebrǽo nómine demonstrátur. In Evangélio, quo utúntur Nazaréni, pro fílio Barachíæ, fílium Jójadæ reperímus scriptum.
+Alii istum volunt esse Zacharíam, qui occísus est a Joas rege Judæ inter templum et altáre, sicut Regum narrat história. Sed observándum, quod ille Zacharías non sit fílius Barachíæ, sed fílius Jójadæ sacerdótis: unde et Scriptúra refert: Non fuit recordátus Joas patris ejus Jójadæ, quia sibi fecísset bona. Cum ergo et Zacharíam teneámus et occisiónis conséntiat locus: quǽrimus, quare Barachíæ dicátur fílius, et non Jójadæ? Barachía lingua nostra Benedíctus Dómini dícitur, et sacerdótis Jójadæ justítia Hebrǽo nómine demonstrátur. In Evangélio, quo utúntur Nazaréni, pro fílio Barachíæ, fílium Jójadæ reperímus scriptum.
 &teDeum
+
+[Versum 0]
+@Commune/C2a::s/N\./Stéphane/
 
 [Ant Laudes]
 Lapidavérunt Stéphanum, * et ipse invocábat Dóminum, dicens: Ne státuas illis hoc peccátum.
-Lapides torréntis * illi dulces fuérunt: ipsum sequúntur omnes ánimæ justæ.
+Lápides torréntis * illi dulces fuérunt: ipsum sequúntur omnes ánimæ justæ.
 Adhǽsit ánima mea * post te, quia caro mea lapidáta est pro te, Deus meus.
 Stéphanus vidit * cælos apértos, vidit, et introívit: beátus homo, cui cæli patébant.
-Ecce vídeo * cælos apértos, et Jesum stántem a dextris virtútis Dei.
+Ecce vídeo * cælos apértos, et Jesum stantem a dextris virtútis Dei.
+
+[Ant Laudes] (rubrica cisterciensis)
+Cum autem * esset Stéphanus plenus Spíritu sancto, inténdens in cœlum, vidit glóriam Dei, et Jesum stantem ad déxteram Patris.
+Lapidábant * Judæi Stéphanum invocántem, et dicéntem: Dómine Jesu, áccipe spíritum meum.
+Adhǽsit ánima mea post te, * quia caro mea lapidáta est pro te, Deus meus.
+Stéphanus vidit * cœlos apértos, vidit, et introívit: beátus homo, cui cœli patébant.
+Pósitis autem génibus, * clamávit voce magna dicens Stéphanus: Dómine Jesu, ne státuas illis hoc peccátum.
 
 [Capitulum Laudes]
 !Act. 6:8
@@ -147,43 +172,14 @@ $Deo gratias
 V. Sepeliérunt Stéphanum viri timoráti.
 R. Et fecérunt planctum magnum super eum.
 
+[Versum 2] (rubrica cisterciensis)
+@CommuneCist/C2
+
 [Ant 2]
 @:Ant 1
 
-[Lectio Prima]
-!Act. 7:59
-v. Pósitis autem génibus, clamávit voce magna, dicens: Dómine, ne státuas illis hoc peccátum. Et cum hoc dixísset, obdormívit in Dómino.
-
-[Capitulum Tertia]
-@:Capitulum Laudes
-
-[Capitulum Sexta]
-!Act. 6:9-10
-v. Surrexérunt autem quidam de synagóga, quæ appellátur Libertinórum, et Cyrenénsium, et Alexandrinórum, et eórum qui erant a Cilícia, et Asia, disputántes cum Stéphano: et non póterant resístere sapiéntiæ, et Spirítui qui loquebátur.
-$Deo gratias
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Ant Vespera 3]
-@Sancti/12-25:Ant Vespera 3
-
-[Capitulum Vespera]
-@:Capitulum Laudes
-
-[Versum 3]
-V. Stéphanus vidit cælos apértos.
-R. Vidit, et introívit: beátus homo, cui cæli patébant.
-
-[Ant 3]
-Sepeliérunt Stéphanum * viri timoráti, et fecérunt planctum magnum super eum.
-
-[Commemoratio 2]
-@Sancti/12-25:Octava
-
-[Commemoratio 3]
-@Sancti/12-25:Octava
+[Ant 2] (rubrica cisterciensis)
+Patefáctæ sunt * jánuæ cœli Christi Mártyri Stéphano, qui in número Mártyrum invéntus est primus, et ídeo triúmphat in cœlis coronátus, allelúia.
 
 [Octava 2]
 !Commemoratio Octavæ S. Stephani
@@ -196,6 +192,60 @@ $Oremus
 v. Da nobis, quǽsumus, Dómine, imitári quod cólimus: ut discámus et inimícos dilígere; quia ejus natalícia celebrámus, qui novit étiam pro persecutóribus exoráre Dóminum nostrum Jesum Christum Fílium tuum:
 $Qui tecum
 
+[Octava 2] (rubrica cisterciensis)
+!Commemoratio Octavæ S. Stephani
+Ant. Cum autem * esset Stéphanus plenus Spíritu sancto, inténdens in cœlum, vidit glóriam Dei, et Jesum stantem ad déxteram Patris.
+_
+@CommuneCist/C2:Versum 2
+(sed die Nat29)
+@Commune/C2:Versum 1
+_
+$Oremus
+v. Da nobis, quǽsumus, Dómine, imitári quod cólimus: ut discámus et inimícos dilígere; quia ejus natalícia celebrámus, qui novit étiam pro persecutóribus exoráre Dóminum nostrum Jesum Christum Fílium tuum:
+$Qui tecum
+
+[Lectio Prima]
+!Act. 7:59
+v. Pósitis autem génibus, clamávit voce magna, dicens: Dómine, ne státuas illis hoc peccátum. Et cum hoc dixísset, obdormívit in Dómino.
+
+[Capitulum Sexta]
+!Act. 6:9-10
+v. Surrexérunt autem quidam de synagóga, quæ appellátur Libertinórum, et Cyrenénsium, et Alexandrinórum, et eórum qui erant a Cilícia, et Asia, disputántes cum Stéphano: et non póterant resístere sapiéntiæ, et Spirítui qui loquebátur.
+$Deo gratias
+
+[Capitulum Nona]
+@:Lectio Prima
+$Deo gratias
+
+[Capitulum Nona] (rubrica cisterciensis)
+!Act. 7
+v. Cum autem esset plenus Spíritu sancto, inténdens in cœlum, vidit glóriam Dei, et Jesum stantem ad dextris Dei. 
+$Deo gratias
+
+[Ant Vespera 3]
+@Sancti/12-25
+
+[Versum 3]
+V. Stéphanus vidit cælos apértos.
+R. Vidit, et introívit: beátus homo, cui cæli patébant.
+
+[Versum 3] (rubrica cisterciensis)
+@CommuneCist/C2
+
+[Ant 3_]
+Sepeliérunt Stéphanum * viri timoráti, et fecérunt planctum magnum super eum.
+
+[Ant 3C]
+Intuens in cœlum * beátus Stéphanus vidit glóriam Dei, et ait: Ecce vídeo cœlos apértos, et Fílium hóminis stantem a dextris Dei.
+
+[Ant 3]
+@:Ant 3_
+(sed rubrica cisterciensis)
+@:Ant 3C
+
+[Commemoratio 3] (rubrica cisterciensis)
+@:Commemoratio
+
 [Octava 3]
 !Commemoratio Octavæ S. Stephani
 Ant. Sepeliérunt Stéphanum viri timoráti, et fecérunt planctum magnum super eum.
@@ -207,5 +257,14 @@ $Oremus
 v. Da nobis, quǽsumus, Dómine, imitári quod cólimus: ut discámus et inimícos dilígere; quia ejus natalícia celebrámus, qui novit étiam pro persecutóribus exoráre Dóminum nostrum Jesum Christum Fílium tuum:
 $Qui tecum
 
-[Octava 1]
-@:Octava 3
+[Octava 3] (rubrica cisterciensis)
+!Commemoratio Octavæ S. Stephani
+Ant. Stéphanus vidit * cœlos apértos, vidit, et introívit: beátus homo, cui cœli patébant.
+_
+@CommuneCist/C2:Versum 2
+(sed die Nat28 aut die Nat29)
+@Commune/C2:Versum 1
+_
+$Oremus
+v. Da nobis, quǽsumus, Dómine, imitári quod cólimus: ut discámus et inimícos dilígere; quia ejus natalícia celebrámus, qui novit étiam pro persecutóribus exoráre Dóminum nostrum Jesum Christum Fílium tuum:
+$Qui tecum

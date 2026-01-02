@@ -1,23 +1,12 @@
-[Rank]
-S. Petri ad Vincula;;Duplex majus;;4;;ex C1
-
-[Rule]
-ex C1;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
+[Officium]
+S. Petri ad Vincula
 
 [Ant Vespera]
-Il re Erode * procedé anche all'arresto di Pietro; e, fattolo catturare, lo mise in prigione, volendo dopo la Pasqua processarlo davanti al popolo.;;109
-Pietro dunque * era custodito nella prigione; ma dalla Chiesa si faceva continua orazione a Dio per lui.;;110
-L'Angelo disse * a Pietro: Bùttati addosso il tuo mantello, e seguimi.;;111
-Il Signore ha mandato * il suo Angelo, e mi ha sottratto dalle mani d'Erode, alleluia.;;112
+Il re Erode * procedé anche all'arresto di Pietro; e, fattolo catturare, lo mise in prigione, volendo dopo la Pasqua processarlo davanti al popolo.
+Pietro dunque * era custodito nella prigione; ma dalla Chiesa si faceva continua orazione a Dio per lui.
+L'Angelo disse * a Pietro: Bùttati addosso il tuo mantello, e seguimi.
+Il Signore ha mandato * il suo Angelo, e mi ha sottratto dalle mani d'Erode, alleluia.
 Tu sei Pietro, * e su questa pietra io edificherò la mia Chiesa.;;116
-
-[Capitulum Vespera]
-!Atti 12:1-3
-v. Il re Erode mise mano a maltrattare alcuni della Chiesa. Uccise di spada Giacomo, fratello di Giovanni. E vedendo che ciò piaceva ai Giudei, procedé anche all'arresto di Pietro.
-$Deo gratias
 
 [Hymnus Vespera]
 v. In un modo mirabile liberato, all'istante, 
@@ -32,26 +21,11 @@ a te, Spirito Santo, sia onore e splendore:
 la santa Trinità sia ognor lodata per tutti i secoli.
 Amen.
 
-[Versum 1]
-V. Tu sei Pietro.
-R. E su questa pietra io edificherò la mia Chiesa.
-
-[Ant 1]
-Tu sei il pastore delle pecore, * il Principe degli Apostoli, a te sono state date le chiavi del regno dei cieli.
-
 [Oratio]
 O Dio, che, sciolto il beato Apostolo Pietro dalle catene, lo facesti uscire illeso: sciogli le catene dei nostri peccati; ed allontana benigno da noi tutti i mali.
 $Per Dominum
 _
-@Sancti/02-22:Commemoratio4
-
-[Commemoratio]
-!Commemorazione dei Ss. Martiri Maccabei.
-@Commune/C3:Oratio proper
-_
-v. Preghiamo.
-Ci rallegri, o Signore, la corona fraterna dei tuoi Martiri: sia portando alla nostra fede aumento di vigore, sia consolandoci con sì molteplice intercessione. 
-$Per Dominum
+@Sancti/02-22:Commemoratio4:s/\$Per Dominum//
 
 [Hymnus Matutinum]
 v. Tutto ciò che legherai sulla terra, 
@@ -136,10 +110,14 @@ R. E perciò a te sono state date le chiavi del regno dei cieli.
 &Gloria
 R. E perciò a te sono state date le chiavi del regno dei cieli.
 
+[Lectio94]
+Sotto l'imperatore Teodosio il giovane, Eudossia, sua sposa, a Gerusalemme  ricevette il dono della catena di ferro più prezioso di tutti, colla quale si affermava essere stato legato l'Apostolo Pietro da Erode. Eudossia, dopo aver venerato piamente detta catena, l'inviò in seguito a Roma, alla figlia Eudossia, dove dal sommo Pontefice fu unita con quella con cui sotto Nerone imperatore il medesimo beato Apostolo era stato legato, ambedue si unirono talmente da sembrare non due, ma una catena sola fatta dallo stesso artefice. Quindi, siccome e la guarigione dei malati e la liberazione degli ossessi spesso si otteneva al sacro contatto di queste catene, si cominciò ad avere tanto onore per quelle sacre catene, che perciò con questo nome di san Pietro ai vincoli una chiesa, col titolo di Eudossia, fu dedicata sull'Esquilino, e, abolite le solennità profane dei gentili, alla memoria di ciò un giorno festivo fu istituito il primo di Agosto.
+&teDeum
+
 [Lectio7]
 Lettura del santo Vangelo secondo Matteo
 !Matt 16:13-19
-In quell' occasione: Gesù venuto nelle parti di Cesarea di Filippo, interrogò i suoi discepoli dicendo: La gente chi dice che sia il Figlio dell'uomo? Eccetera.
+In quell'occasione: Gesù venuto nelle parti di Cesarea di Filippo, interrogò i suoi discepoli dicendo: La gente chi dice che sia il Figlio dell'uomo? Eccetera.
 _
 Omelia di sant'Agostino Vescovo
 !Sermone 29 sui Santi, alla metà
@@ -162,24 +140,12 @@ R. E io ti dico, che tu sei Pietro, e su questa pietra io edificherò la mia Chi
 &Gloria
 R. E io ti dico, che tu sei Pietro, e su questa pietra io edificherò la mia Chiesa.
 
-[Lectio93]
-!Commemorazione per i santi Maccabei.
-Sermone di san Gregorio Nazianzeno
-!Discorso 20 sui Maccabei
-Che dire dei Maccabei? Per celebrare la festa consacrata alla loro memoria tanta affluenza quest'oggi. Benché il loro culto non sia stabilito in certi luoghi, perché essi non sostennero il loro combattimento dopo la venuta di Cristo; tuttavia meritano d'essere onorati da tutti per la generosità e costanza che mostrarono nella osservanza delle leggi e dei costumi dei loro antenati. Poiché se essi subirono il martirio prima della passione di Cristo, che non avrebbero fatto se fossero stati perseguitati dopo Cristo, coll'esempio della morte ch'egli ebbe a soffrire per la nostra salute? Se tale e tanta fu la loro virtù, nella assenza d'ogni modello, con quanto più ardore non sarebbero scesi a combattere, se avessero avuto davanti un simile esempio? Oltre ciò c'è una ragione intima e misteriosa, e certo assai probabile per me e per quanti amano Dio, che cioè nessuno di quelli che subirono il martirio prima della venuta di Cristo, non poterono conseguirlo che per la fede in Cristo.
-&teDeum
-
 [Ant Laudes]
 Il re Erode * procedé anche all'arresto di Pietro; e, fattolo catturare, lo mise in prigione, volendo dopo la Pasqua processarlo davanti al popolo.
 Pietro dunque * era custodito nella prigione; ma dalla Chiesa si faceva continua orazione a Dio per lui.
 L'Angelo disse * a Pietro: Bùttati addosso il tuo mantello, e seguimi.
 Il Signore ha mandato * il suo Angelo, e mi ha sottratto dalle mani d'Erode, alleluia.
 Tu sei Pietro, * e su questa pietra io edificherò la mia Chiesa.
-
-[Capitulum Laudes]
-!Atti 12:1-3
-v. Il re Erode mise mano a maltrattare alcuni della Chiesa. Uccise di spada Giacomo, fratello di Giovanni. E vedendo che ciò piaceva ai Giudei, procedé anche all'arresto di Pietro.
-$Deo gratias
 
 [Hymnus Laudes]
 v. Beato Pietro Pastore, accogli clemente 
@@ -193,68 +159,5 @@ la quale nella (sua) unità governa ogni cosa,
 per tutti i secoli eterni.
 Amen.
 
-[Versum 2]
-V. Tu sei Pietro.
-R. E su questa pietra io edificherò la mia Chiesa.
-
-[Ant 2]
-Qualunque cosa * legherai sulla terra, sarà legata anche nei cieli; e qualunque cosa scioglierai sulla terra, sarà sciolta anche nei cieli, dice il Signore a Simon Pietro.
-
-[Lectio Prima]
-!Atti 12:11
-v. Pietro allora rientrato in sé, disse: Adesso riconosco veramente che il Signore ha mandato il suo Angelo e m'ha sottratto dalle mani di Erode, e da tutta l'attesa del popolo dei Giudei.
-
-[Capitulum Tertia]
-!Atti 12:1-3
-v. Il re Erode mise mano a maltrattare alcuni della Chiesa. Uccise di spada Giacomo, fratello di Giovanni. E vedendo che ciò piaceva ai Giudei, procedé anche all'arresto di Pietro.
-$Deo gratias
-
-[Responsory Tertia]
-R.br. Per tutta la terra * si è sparsa la loro voce.
-R. Per tutta la terra * si è sparsa la loro voce.
-V. E fino ai confini del mondo sono giunte le loro parole.
-R. Si è sparsa la loro voce.
-&Gloria
-R. Per tutta la terra si è sparsa la loro voce.
-_
-V. Tu li costituirai principi su tutta la terra.
-R. Essi ricorderanno il tuo nome, o Signore.
-
-[Capitulum Sexta]
-!Atti 12:5
-v. Pietro dunque era custodito nella prigione; ma dalla Chiesa si faceva continua orazione a Dio per lui.
-$Deo gratias
-
-[Responsory Sexta]
-R.br. Tu li costituirai principi * su tutta la terra.
-R. Tu li costituirai principi * su tutta la terra.
-V. Essi ricorderanno il tuo nome, o Signore.
-R. Su tutta la terra.
-&Gloria
-R. Tu li costituirai principi * su tutta la terra.
-_
-V. Molto onorati sono i tuoi amici o Dio.
-R. Molto grande è divenuto il loro potere.
-
-[Capitulum Nona]
-!Atti 12:11
-v. Pietro allora rientrato in sé, disse: Adesso riconosco veramente che il Signore ha mandato il suo Angelo e m'ha sottratto dalle mani di Erode, e da tutta l'attesa del popolo dei Giudei.
-$Deo gratias
-
-[Responsory Nona]
-R.br. Molto onorati sono * i tuoi amici o Dio.
-R. Molto onorati sono * i tuoi amici o Dio.
-V. Molto grande è divenuto il loro potere.
-R. I tuoi amici o Dio.
-&Gloria
-R. Molto onorati sono i tuoi amici o Dio.
-_
-V. Essi hanno annunziato le opere di Dio.
-R. Ed hanno compreso ciò ch'egli ha fatto.
-
 [Ant 3]
 Sciogli, * o Pietro, per ordine di Dio le catene che ci legano sulla terra, tu che apri il regno dei cieli ai beati.
-
-[Lectio94]
-Sotto l'imperatore Teodosio il giovane, Eudossia, sua sposa, a Gerusalemme  ricevette il dono della catena di ferro più prezioso di tutti, colla quale si affermava essere stato legato l'Apostolo Pietro da Erode. Eudossia, dopo aver venerato piamente detta catena, l'inviò in seguito a Roma, alla figlia Eudossia, dove dal sommo Pontefice fu unita con quella con cui sotto Nerone imperatore il medesimo beato Apostolo era stato legato, ambedue si unirono talmente da sembrare non due, ma una catena sola fatta dallo stesso artefice. Quindi, siccome e la guarigione dei malati e la liberazione degli ossessi spesso si otteneva al sacro contatto di queste catene, si cominciò ad avere tanto onore per quelle sacre catene, che perciò con questo nome di san Pietro ai vincoli una chiesa, col titolo di Eudossia, fu dedicata sull'Esquilino, e, abolite le solennità profane dei gentili, alla memoria di ciò un giorno festivo fu istituito il primo di Agosto.
-&teDeum

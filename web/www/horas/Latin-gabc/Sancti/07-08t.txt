@@ -1,0 +1,61 @@
+[Ant Vespera]
+@Commune/C7::1
+Et concupiscet Rex * decorem tuum, quia ipse est Dominus Deus tuus.;;112
+Potens in opere * et sermone, lenivit iracundiam Domini, et conciliavit cor patris ad filium.;;121
+Quasi arcus refulgens * inter nebulas gloriæ, et quasi flos rosarum in diebus vernis.;;126
+Quasi stella matutina * in medio nebulæ, et quasi luna plena in diebus suis.;;147
+
+[Ant Matutinum]
+Elevata est * magnificentia Elisabeth super cælos;;8
+Veni electa mea, * et ponam in te thronum meum, quia concupivit Rex speciem tuam;;18
+Accepit benedictionem * a Domino, et misericordiam a Deo salutari suo;;23
+Propter veritatem, * et mansuetudinem, et justitiam deducet te mirabiliter dextera tua;;44
+Arcum conteret * et confringet arma, et scuta comburet igni;;45
+Justitia * et misericordia plena est dextera tua;;47
+Confessio, * et pulchritudo in conspectu ejus, sanctitas et magnificentia in sanctificatione ejus;;95
+Annuntiaverunt * cæli justitiam ejus, et viderunt omnes populi gloriam ejus;;96
+Judicabit * in justitia, et populos in æquitate;;97
+
+[Nocturn 1 Versum]
+{initial-style:0;%%(c3) V/. Mul(h)tæ(h) fi(h)li(h)æ(h) con(h)gre(h)ga(h)ve(h)runt(h) di(h)vi(h)ti(h)as.(g_'/hvGF'E!fgf.) (::)
+R/. Tu(h) su(h)per(h)gres(h)sa(h) es(h) u(h)ni(h)ver(h)sas.(g_'/hvGF'E!fgf.) (::)}
+
+[Nocturn 2 Versum]
+{initial-style: 0;%%(c3) V/. Vir(h)ga(h) tu(h)a,(h) et(h) ba(h)cu(h)lus(h) tu(h)us.(g_'/hvGF'E!fgf.) (::)
+R/.Ip(h)sa(h) me(h) con(h)so(h)la(h)ta(h) sunt.(g_'/hvGF'E!fgf.) (::)}
+
+[Nocturn 3 Versum]
+{initial-style: 0;%%(c3) V/. I(h)gnis(h) an(h)te(h) ip(h)sum(h) præ(h)ce(h)det.(g_'/hvGF'E!fgf.) (::)
+R/.Et(h) in(h)flam(h)ma(h)bit(h) in(h) cir(h)cu(h)i(h)tu(h) in(h)i(h)mi(h)cos(h) e(h)jus.(g_'/hvGF'E!fgf.) (::)}
+
+[Responsory1]
+R. Regali exorta progenie triumphat in cælis Elisabeth, triplici circumdata varietate meritorum:
+* Nam in terra in triplici vitæ gradu posteris imitanda virtutum reliquit exempla.
+V. Virginalem statum, conjugalem, et vidualem inoffenso pede cucurrit.
+R. Nam in terra in triplici vitæ gradu posteris imitanda virtutum reliquit exempla.
+
+[Responsory2]
+R. Os suum aperuit sapientiæ,
+* Et lex clementiæ in lingua ejus.
+V. Quoniam prævenisti eam in benedictionibus dulcedinis.
+R. Et lex clementiæ in lingua ejus.
+
+[Responsory3]
+R. Desiderium animæ ejus tribuisti ei,
+* Et voluntate labiorum ejus non fraudasti eam.
+V. Scuto bonæ voluntatis tuæ coronasti eam Domine.
+R. Et voluntate labiorum ejus non fraudasti eam.
+&Gloria
+R. Et voluntate labiorum ejus non fraudasti eam.
+
+[Responsory8]
+R. Invocávi, et venit in me spíritus sapiéntiæ, et præpósui illam regnis et sédibus:
+* Et divitias nihil esse duxi in comparatióne illíus.
+V. Mélior est enim sapiéntia cunctis ópibus pretiosíssimis.
+R. Et divitias nihil esse duxi in comparatióne illíus.
+&Gloria
+R. Et divitias nihil esse duxi in comparatióne illíus.
+
+[Ant Laudes]
+@Commune/C7:Ant Vespera:1 s/;;109//
+@:Ant Vespera:2-5 s/;;.*//g

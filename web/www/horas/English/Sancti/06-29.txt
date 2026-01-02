@@ -1,17 +1,5 @@
-[Rank]
-SS. Apostolorum Petri et Pauli;;Duplex I classis cum octava communi;;6.5;;ex C1
-
-[Rank1960]
-SS. Apostolorum Petri et Pauli;;Duplex I classis;;6;;ex C1
-
-[Rule]
-ex C1;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-nor commemoratio
-Psalm5 Vespera=116
-Psalm5 Vespera3=138
+[Officium]
+Sts. Peter and Paul, Apostles
 
 [Ant Vespera]
 Peter and John * went up together into the Temple at the hour of prayer, being the ninth hour.
@@ -19,11 +7,6 @@ Silver and gold have I none, * but such as I have, give I thee.
 The Angel said unto Peter: * Cast thy garment about thee, and follow me.
 The Lord hath sent * His Angel, and hath delivered me out of the hand of Herod, alleluia.
 Thou art Peter * and upon this Rock I will build My Church.
-
-[Capitulum Vespera]
-!Acts 12:1-3
-v. Herod the King stretched forth his hands, to vex certain of the Church. And he killed James, the brother of John, with the sword. And because he saw it pleased the Jews, he proceeded farther to take Peter also.
-$Deo gratias
 
 [Hymnus Vespera]
 v. The beauteous light of God's eternal majesty
@@ -42,12 +25,23 @@ All earthly beauty thou alone outshinest far,
 Empurpled by their outpoured life-blood's glorious tide.
 _
 All honour, power, and everlasting jubilee
-To him who all things made and governs here below,
+To Him who all things made and governs here below,
 To God in essence One, and yet in persons Three,
 Both now and ever, while unending ages flow.
 Amen.
 
 [Oratio]
+O God, Who didst hallow this day by the Testifying of thine Holy Apostles Peter and Paul, grant unto thy Church, whose foundations Thou wast pleased to lay by their hands, the grace always in all things to remain faithful to their teaching.
+$Per Dominum
+
+[Octava 1]
+!Commemoration of the Octave of the Holy Apostles Peter and Paul
+Ant. Glorious princes of the Earth * as in this life you were honored together, you are not separated by death.
+_
+V. Thou shalt make them princes over all the earth.
+R. They shall remember thy name, O Lord.
+_
+$Oremus
 O God, Who didst hallow this day by the Testifying of thine Holy Apostles Peter and Paul, grant unto thy Church, whose foundations Thou wast pleased to lay by their hands, the grace always in all things to remain faithful to their teaching.
 $Per Dominum
 
@@ -112,7 +106,7 @@ At that time: Jesus came into the coasts of Caesarea Philippi, and He asked His 
 _
 Homily by St. Jerome, Priest (at Bethlehem.)
 !Bk. iii Comment. on Matth. xvi
-Who do men say that I, the Son of man, am? This question is well put, for they who speak of Him as the Son of man are men, while they that know of Him that He is God are called not men but gods. And they said: Some say that Thou art John the Baptist, some, Elias. I marvel that some commentators have thought it worth their while to search into the origin of each of these blunders, and to engage in a discussion of weary length as to why some thought that our Lord Jesus Christ was John the Baptist, some, Elias and others, Jeremias, or one of the Prophets. Their blunders concerning Elias and Jeremias were but of a piece with Herod's concerning John the Baptist It is John, whom I beheaded he is risen from the dead and therefore mighty works do show forth themselves in him. (Mark vi. 16, 14.)
+Who do men say that I, the Son of man, am? This question is well put, for they who speak of Him as the Son of man are men, while they that know of Him that He is God are called not men but gods. And they said: Some say that Thou art John the Baptist, some, Elias. I marvel that some commentators have thought it worth their while to search into the origin of each of these blunders, and to engage in a discussion of weary length as to why some thought that our Lord Jesus Christ was John the Baptist, some, Elias and others, Jeremias, or one of the Prophets. Their blunders concerning Elias and Jeremias were but of a piece with Herod's concerning John the Baptist: It is John, whom I beheaded; he is risen from the dead and therefore mighty works do show forth themselves in him. (Mark vi. 16, 14.)
 
 [Responsory7]
 R. Peter, I have prayed for thee, that thy faith fail not;
@@ -129,8 +123,13 @@ But who say ye that I am? Mark, discreet reader, from the context, that a distin
 R. And I say unto thee, that thou art Peter, and upon this rock I will build My Church.
 
 [Lectio9]
-And Jesus answered and said unto him: Blessed art thou, Simon Bar-Jona. The Apostle having testified of the Lord, the Lord in turn testifieth of the Apostle. Peter had said: Thou art the Christ, the Son of the living God, and he received, in return for that his testimony to the truth, the words: Blessed art thou, Simon Bar-Jona. Why, blessed? For flesh and blood hath not revealed it unto thee, but My Father. What flesh and blood could not reveal, the grace of the Holy Ghost had revealed. Meet for him therefore, because of his confession, is his name, as the name of one who hath revelation from the Holy Ghost, and therefore is called His son. Bar-Jona is, being interpreted, The-son-of-the-Dove.
+And Jesus answered and said unto him: Blessed art thou, Simon Bar-Jona. The Apostle having testified of the Lord, the Lord in turn testifieth of the Apostle. Peter had said: Thou art the Christ, the Son of the living God, and he received, in return for that his testimony to the truth, the words: Blessed art thou, Simon Bar-Jona. Why blessed? For flesh and blood hath not revealed it unto thee, but My Father. What flesh and blood could not reveal, the grace of the Holy Ghost had revealed. Meet for him therefore, because of his confession, is his name, as the name of one who hath revelation from the Holy Ghost, and therefore is called His son. Bar-Jona is, being interpreted, The-son-of-the-Dove.
 &teDeum
+
+[Capitulum Laudes]
+!Acts 12:1-3
+v. Herod the King stretched forth his hands, to vex certain of the Church. And he killed James, the brother of John, with the sword. And because he saw it pleased the Jews, he proceeded farther to take Peter also.
+$Deo gratias
 
 [Hymnus Laudes]
 v. Peter, blest shepherd, hearken to our cry,
@@ -149,6 +148,17 @@ Who in pure unity profoundly sways
 Eternally alike all things in earth and heaven.
 Amen.
 
+[Octava 2]
+!Commemoration of the Octave of the Holy Apostles Peter and Paul
+Ant. Glorious princes of the Earth, as in this life you were honored together, you are not separated by death.
+_
+V. Their sound hath gone forth into all the earth.
+R. And their words unto the ends of the world.
+_
+$Oremus.
+O God, Who didst hallow this day by the Testifying of thine Holy Apostles Peter and Paul, grant unto thy Church, whose foundations Thou wast pleased to lay by their hands, the grace always in all things to remain faithful to their teaching.
+$Per Dominum
+
 [Lectio Prima]
 !Acts 12:11
 v. And when Peter was come to himself, he said Now I know of a surety that the Lord hath sent His Angel, and hath delivered me out of the hand of Herod, and from all the expectation of the people of the Jews.
@@ -160,25 +170,3 @@ $Deo gratias
 
 [Ant 3]
 This is the day * whereon Simon Peter went up upon the gibbet of the cross, alleluia; this day did he, that holdeth the keys of the kingdom, depart hence with joy to be with Christ; this day did the Apostle Paul, the light of the whole world, bow his head, and for Christ's name's sake receive the crown of his testimony. Alleluia.
-
-[Octava 1]
-!Commemoration of the Octave of the Holy Apostles Peter and Paul
-Ant. Glorious princes of the Earth * as in this life you were honored together, you are not separated by death.
-_
-V. Thou shalt make them princes over all the earth.
-R. They shall remember thy name, O Lord.
-_
-$Oremus
-O God, Who didst hallow this day by the Testifying of thine Holy Apostles Peter and Paul, grant unto thy Church, whose foundations Thou wast pleased to lay by their hands, the grace always in all things to remain faithful to their teaching.
-$Per Dominum
-
-[Octava 2]
-!Commemoration of the Octave of the Holy Apostles Peter and Paul
-Ant. Glorious princes of the Earth, as in this life you were honored together, you are not separated by death.
-_
-V. Their sound hath gone forth into all the earth.
-R. And their words unto the ends of the world.
-_
-$Oremus.
-O God, Who didst hallow this day by the Testifying of thine Holy Apostles Peter and Paul, grant unto thy Church, whose foundations Thou wast pleased to lay by their hands, the grace always in all things to remain faithful to their teaching.
-$Per Dominum

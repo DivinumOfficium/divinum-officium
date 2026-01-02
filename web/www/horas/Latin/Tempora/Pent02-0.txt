@@ -1,19 +1,19 @@
-[Rank]
-Dominica II Post Pentecosten infra Octavam Corporis Christi;;Semiduplex I classis;;5.9;;ex Tempora/Pent01-4
+[Officium]
+Dominica II Post Pentecosten infra Octavam Corporis Christi
 
-[Rank1960]
-Dominica II Post Pentecosten;;Semiduplex I classis;;5.9
+[Officium] (rubrica 196 aut rubrica 1955)
+Dominica II Post Pentecosten
+
+[Rank]
+;;Semiduplex I classis;;5.9;;ex Tempora/Pent01-4
+(sed rubrica 196 aut rubrica 1955)
+;;Semiduplex I classis;;5
 
 [Rule]
 9 lectiones
 Psalmi Dominica
 Antiphonas horas
 Doxology=Corp
-
-[Capitulum Vespera]
-!1 Joann. 3:13-14
-v. Caríssimi: Nolíte mirári, si odit vos mundus. Nos scimus quóniam transláti sumus de morte ad vitam, quóniam dilígimus fratres.
-$Deo gratias
 
 [Hymnus Vespera]
 @Tempora/Pent01-4:Hymnus Vespera
@@ -22,23 +22,23 @@ $Deo gratias
 V. Cibávit illos ex ádipe fruménti, allelúja.
 R. Et de petra, melle saturávit eos, allelúja.
 
+[Versum 1] (rubrica cisterciensis)
+V. Panem cœli dedit eis.
+R. Panem Angelórum manducávit homo.
+
 [Ant 1]
 Puer Sámuel * ministrábat ante Deum coram Heli, et sermo Dómini erat pretiósus cum eo.
+
+[Ant 1] (rubrica cisterciensis)
+Cognovérunt omnes * a Dan usque Bersabée, quod fidélis Sámuel Prophéta esset Dómini.
 
 [Oratio]
 Sancti nóminis tui, Dómine, timórem páriter et amórem fac nos habére perpétuum: quia nunquam tua gubernatióne destítuis, quos in soliditáte tuæ dilectiónis instítuis.
 $Per Dominum.
 
-[Commemoratio 1]
+[Commemoratio]
 !Commemoratio de Octava Corporis Christi
-Ant. O sacrum convívium, in quo Christus súmitur: recólitur memória passiónis ejus: mens implétur grátia: et futúræ glóriæ nobis pignus datur, allelúja.
-_
-V. Panem de cælo præstitísti eis, allelúja.
-R. Omne delectaméntum in se habéntem, allelúja.
-_
-$Oremus
-Deus, qui nobis sub Sacraménto mirábili passiónis tuæ memóriam reliquísti: tríbue, quǽsumus, ita nos córporis, et sánguinis tui sacra mystéria venerári; ut redemptiónis tuæ fructum in nobis júgiter sentiámus:
-$Qui vivis
+@Tempora/Pent01-4:Oratio
 
 [Lectio1]
 De libro primo Regum
@@ -96,33 +96,27 @@ R. Quia paráta sunt ómnia.
 Unde nos quoque, nati in hujus peregrinatiónis ærúmna, huc fastidiósi jam vénimus, nescímus quid desideráre debeámus. Tantóque se ámplius fastídii nostri morbus exággerat, quanto se magis ab esu illíus dulcédinis ánimus elóngat; et eo jam intérnas delícias non áppetit, quo eas comédere, diu longéque desuévit. Fastídio ergo nostro tabéscimus, et longa inédiæ peste fatigámur. Et quia gustáre intus nólumus parátam dulcédinem, amámus foris míseri famem nostram.
 &teDeum
 
+[Ant Laudes] (rubrica cisterciensis)
+Allelúia, * allelúia, allelúia.
+
 [Capitulum Laudes]
-@:Capitulum Vespera
+!1 Joann. 3:13-14
+v. Caríssimi: Nolíte mirári, si odit vos mundus. Nos scimus quóniam transláti sumus de morte ad vitam, quóniam dilígimus fratres.
+$Deo gratias
 
 [Versum 2]
 V. Panem cæli dedit eis, allelúja.
 R. Panem Angelórum manducávit homo, allelúja.
 
+[Versum 2] (rubrica cisterciensis)
+@:Versum 1
+
 [Ant 2]
 Homo quidam * fecit cenam magnam, et vocávit multos: et misit servum suum hora cenæ dícere invitátis ut venírent, quia ómnia paráta sunt, allelúja.
-
-[Commemoratio 2]
-!Commemoratio Octava
-Ant. Ego sum panis vivus, qui de cælo descéndi: si quis manducáverit ex hoc pane, vivet in ætérnum, allelúja.
-_
-V. Pósuit fines tuos pacem, allelúja.
-R. Et ádipe fruménti sátiat te, allelúja.
-_
-$Oremus
-Deus, qui nobis sub Sacraménto mirábili passiónis tuæ memóriam reliquísti: tríbue, quǽsumus, ita nos córporis, et sánguinis tui sacra mystéria venerári; ut redemptiónis tuæ fructum in nobis júgiter sentiámus:
-$Qui vivis
 
 [Lectio Prima]
 !1 Joann. 3:18
 v. Filíoli mei, non diligámus verbo neque lingua, sed ópere et veritáte.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Capitulum Sexta]
 !1 Joann. 3:16
@@ -138,14 +132,3 @@ $Deo gratias
 
 [Ant 3]
 Exi cito * in platéas et vicos civitátis: et páuperes ac débiles, cæcos et claudos compélle intráre, ut impleátur domus mea, allelúja.
-
-[Commemoratio 3]
-!Commemoratio de Octava Corporis Christi
-Ant. O quam suávis est, Dómine, spíritus tuus, qui, ut dulcédinem tuam in fílios demonstráres, pane suavíssimo de cælo prǽstito, esuriéntes reples bonis, fastidiósos dívites dimíttens inánes.
-_
-V. Panem de cælo præstitísti eis, allelúja.
-R. Omne delectaméntum in se habéntem, allelúja.
-_
-$Oremus
-Deus, qui nobis sub Sacraménto mirábili passiónis tuæ memóriam reliquísti: tríbue, quǽsumus, ita nos córporis, et sánguinis tui sacra mystéria venerári; ut redemptiónis tuæ fructum in nobis júgiter sentiámus:
-$Qui vivis

@@ -1,12 +1,5 @@
-[Rank]
-Najświętszego Imienia Jezus;;Duplex 2 class;;5;;
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=115
-Doxology=Nat
+[Officium]
+Najświętszego Imienia Jezus
 
 [Ant Vespera]
 Wszelki, * którybykolwiek wzywał Imienia Pańskiego, zbawion będzie.
@@ -14,11 +7,6 @@ Wszelki, * którybykolwiek wzywał Imienia Pańskiego, zbawion będzie.
 Ja atoli * radować się będę w Panu; będę się weselił w Bogu Jezusie moim.
 Od wschodu słońca * aż do zachodu chwalebne Imię Pańskie.
 Tobie ofiaruję * ofiarę chwały, a Imienia Pańskiego wzywać będę.
-
-[Capitulum Vespera]
-!Flp 2:8-10
-v. Bracia, Chrystus się poniżył, stawszy się posłusznym aż do śmierci, a śmierci krzyżowej. Dlatego i Bóg wywyższył go i darował Mu Imię, które jest nad wszelkie imię. Aby na Imię Jezusowe, wszelkie kolano klękało.
-$Deo gratias
 
 [Hymnus Vespera]
 v. Słodkie Jezusa wspomnienie,
@@ -92,18 +80,20 @@ Amen.
 Panie, Panie nasz, * jakóż dziwne jest imię twoje po wszystkiéj ziemi.;;8
 Na imię Jezusowe * wszelkie kolano klękało niebieskich, ziemskich i podziemnych;;18
 Wyznawajcie Panu, * i wzywajcie imienia jego, pamiętajcie, że wysokie jest imię jego.;;23
-V. Dla imienia twego, Panie, będziesz miłościw grzechowi mojemu.
-R. Bo go siła.
 Będą wspominać * imię twoje na wszystkie rodzaje i rodzaje.;;44
 Wielbcie * Pana zemną, a wywyższajmy imię jego społecznie.;;45
 Wszyscy narodowie, * któreśkolwiek stworzył, przyjdą, a pokłonią się przed tobą, Panie, i będą sławić imię twoje.;;86
-V. Dla sławy imienia twego, Panie, wybaw nas.
-R. A bądź miłościw grzechom naszym dla imienia twego.
 Śpiewajcie Panu, * a błogosławcie imieniowi jego: opowiadajcie ode dnia do dnia zbawienia jego.;;95
 Jako imię twoje. * Boże, tak i chwała twoja na końce ziemie: sprawiedliwości pełna jest prawica twoja.;;96
 Śpiewajcie Bogu, * psalm śpiewajcie imieniowi jego: czyńcie drogę temu, który wstąpił na zachód: Pan imię jego.;;97
-V. Przynoście Panu cześć i chwałę.
-R. Przynoście Panu chwałę imieniowi jego.
+
+[Nocturn 1 Versum]
+V. Dla imienia twego, Panie, będziesz miłościw grzechowi mojemu.
+R. Bo go siła.
+
+[Nocturn 2 Versum]
+V. Dla sławy imienia twego, Panie, wybaw nas.
+R. A bądź miłościw grzechom naszym dla imienia twego.
 
 [Lectio1]
 Z Dziejów Apostolskich
@@ -147,7 +137,7 @@ R. A czasu utrapienia grzechy odpuszczasz.
 7 A stawiwszy je w pośrodku, pytali: Którą mocą albo którem imieniem wyście to uczynili?
 8 Tedy Piotr napełniony Ducha Świętego, rzekł do nich: Książęta ludu i starsi słuchajcie:
 9 Jeźli my dziś sądzeni jesteśmy o dobrodziejstwo przeciw człowiekowi niemocnemu, przez coby ten był uzdrowiony,
-10 Niechże wam wszym jawno będzie i wszystkiemu ludowi Izraelskiemu, że przez imię Pana naszego Jezusa Chrystusa Nazareńskiego, któregoście wy ukrzyżowali, którego Bóg wzbudził od umarłych, przez tegoć ten stoi zdrowy przed wami.
+10 niechże wam wszym jawno będzie i wszystkiemu ludowi Izraelskiemu, że przez imię Pana naszego Jezusa Chrystusa Nazareńskiego, któregoście wy ukrzyżowali, którego Bóg wzbudził od umarłych, przez tegoć ten stoi zdrowy przed wami.
 11 Ten jest kamień, który jest odrzucony od was budujących, który się stał na głowę węgła.
 12 I niemasz w żadnym innym zbawienia: albowiem nie jest pod niebem inne imię dane ludziom, w którembyśmy mieli być zbawieni.
 
@@ -159,17 +149,28 @@ R. I będę je wysławiał w wyznaniu.
 &Gloria
 R. I będę je wysławiał w wyznaniu.
 
+[Lectio4]
+Kazanie świętego Bernarda, opata.
+!15 Kazanie o Pieśniach Salomonowych, ustępy środkowe.
+Duch Święty, nakazujący oblubienicy wołać: Olejek wylany, Imię Twoje, słusznie do oliwy przyrównywa Imię Oblubieńca. Oliwa bowiem świeci, odżywia i namaszcza. Wzmaga ogień, odżywia ciało, ból łagodzi: światłem jest, pokarmem i lekarstwem. Zauważmy te właściwości w Imieniu Boskiego Oblubieńca: przepowiadającego oświeca, rozmyślającego o Nim odżywia, a tego, który Go wzywa w potrzebie, łagodzi i łaską namaszcza. Każdy przymiot rozważymy kolejno. Skąd tak nagle bierze się we wszechświecie ta wielka moc światła wiary? nie skądinąd, jedno z przepowiadania Jezusowego Imienia. Czyż nie w jasności tego Imienia wezwał nas Bóg do przedziwnej światłości swojej? Do oświeconych Nią i w Jej blaskach promieniejących jasnością, odzywa się słusznie Paweł: Byliście niegdyś ciemnością, teraz zaś światłością w Panu.
+
 [Responsory4]
 R. Niech ufają w tobie, którzy znają imię twoje; 
 * Albowiem nie opuściłeś szukających cię, Panie.
 V. Powstań, Panie, ratuj nas, a wybaw nas dla imienia twego.
 R. Albowiem nie opuściłeś szukających cię, Panie.
 
+[Lectio5]
+Tenże Apostoł, rozkazanie wziął od Pana, oznajmiać Imię Jezus królom, poganom i synom Izraela. I jako słońce niósł to Imię i rozjaśniał niem krainy i wołał wszędy: Noc już przeszła, a dzień się przybliżył. Odrzućmyż przeto uczynki ciemności,a obleczmy się w zbroję światłości; i jako we dnie, uczciwie chodźmy. I wszystkim ukazywał pochodnię na świeczniku płonącą, w każdem miejscu oznajmiając Jezusa Ukrzyżowanego. Jakże goreje ta Światłość i jakąż jasnością zalewa wpatrujących się w Nią, kiedy z ust Piotra nakształt błyskawicy tryskając, umacnia nogi chromego i władzę mu wraca w członkach, a oświeca na duszy wielu niewidomych! Czyż te słowa: W Imię Jezusa Chrystusa, Nazareńskiego, wstań i chodź nie są żarem, wzniecającym płomienie?
+
 [Responsory5]
 R. Niech wyznawają imieniowi twemu wielkiemu; 
 * Albowiem straszne i święte jest.
 V. Jedni w woziech, a drudzy w koniech: ale my imienia Pana, Boga naszego, wzywać będziemy.
 R. Albowiem straszne i święte jest.
+
+[Lectio6]
+Nie tylko światłem, lecz i pokarmem jest Imię Jezus. Czy nie pokrzepia nas każdorazowe Jego wezwanie? Czy jest coś poza Niem, coby zdołało nas objąć równie słodkiem namaszczeniem? coby tak odżywiało umysł o Nim rozważający? A co tak leczy niemoce, podsyca i wzmaga cnoty, rozwija moralność i sprzyja uczciwej i czystej miłości? Jak czczy jest dla duszy wszelki pokarm, nieprzepojony tą Bożą oliwą, jak marny, jeżeli nie chroni go od zepsucia sól mądrości Bożej! Nie smakują mi pisma, w których o Jezusie nie czytam, nie smakują dowodzenia i dysputy, o ile nie dźwięczy w nich to Najsłodsze Imię! Jezus jest mi miodem w ustach, śpiewem w uszach, weselem w sercu. Jest ponadto i lekarstwem. Dotknie kogo smutek? niechaj tylko Jezus wejdzie w serce jego i usta, a natychmiast to Imię, światłość rodzące, wszelką mgłę rozproszy i zaleje go jasnością! Popełni kto zbrodnię? a co gorsza, oddając się rozpaczy, pogrąży się w otchłań śmierci?  Niech przyzywa to Imię życiodajne, a wstąpi weń duch żywota.
 
 [Responsory6]
 R. Niech się rozweselą wszyscy, którzy nadzieję mają w tobie, Panie: na wieki radować się będą, i będziesz mieszkał w nich: i będą się chlubić w tobie wszyscy, 
@@ -248,10 +249,6 @@ Tobie chwała, cześć imieniu,
 królestwo szczęśliwości.
 Amen.
 
-[Versum 2]
-V. Wspomożenie nasze w imieniu Pańskiem.
-R. Który stworzył niebo i ziemię.
-
 [Ant 2]
 Ważył się, * aby lud swój wyswobodził, i sobie wieczną sławę zjednał, alleluja.
 
@@ -259,57 +256,46 @@ Ważył się, * aby lud swój wyswobodził, i sobie wieczną sławę zjednał, a
 !Kol 3:17
 v. Wszystko, cokolwiek czynicie w słowie albo w uczynku, wszystko w imię Pana Jezusa Chrystusa, dziękując Bogu i Ojcu przezeń.
 
-[Capitulum Tertia]
-!Flp 2:8-10
-v. Bracia, Chrystus się poniżył, stawszy się posłusznym aż do śmierci, a śmierci krzyżowej. Dlatego i Bóg wywyższył go i darował Mu Imię, które jest nad wszelkie imię. Aby na Imię Jezusowe, wszelkie kolano klękało.
-$Deo gratias
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Niech będzie Imię Pańskie błogosławione, * Alleluja, alleluja,
 R. Niech będzie Imię Pańskie błogosławione, * Alleluja, alleluja,
 V. Odtąd i aż na wieki, alleluja.
 R. Alleluja, alleluja.
 &Gloria
 R. Niech będzie Imię Pańskie błogosławione, * Alleluja, alleluja,
-_
-V. Przynoście Panu cześć i chwałę, alleluja.
-R. Przynoście Panu chwałę imieniowi jego, alleluja.
+
+[Versum Tertia]
+V. Przynoście Panu cześć i chwałę, alleluia.
+R. Przynoście Panu chwałę imieniowi jego, alleluia.
 
 [Capitulum Sexta]
 !Flp 2:10-11
 v. Aby na imię Jezusowe wszelkie kolano klękało niebieskich, ziemskich i podziemnych. A iżby wszelkie język wyznawał, iż Pan Jezus Chrystus jest w chwale Boga Ojca.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Przynoście Panu cześć i chwałę, * Alleluja, alleluja.
 R. Przynoście Panu cześć i chwałę, * Alleluja, alleluja.
 V. Przynoście Panu chwałę imieniowi jego.
 R. Alleluja, alleluja.
 &Gloria
 R. Przynoście Panu cześć i chwałę, * Alleluja, alleluja.
-_
+
+[Versum Sexta]
 V. Wielbcie Pana zemną, alleluja.
 R. A wywyższajmy imię jego społecznie, alleluja.
 
-[Capitulum Nona]
-!Kol 3:17
-v. Wszystko, cokolwiek czynicie w słowie albo w uczynku, wszystko w imię Pana Jezusa Chrystusa, dziękując Bogu i Ojcu przezeń.
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Wielbcie Pana zemną, * Alleluja, alleluja.
 R. Wielbcie Pana zemną, * Alleluja, alleluja.
 V. A wywyższajmy imię jego społecznie.
 R. Alleluja, alleluja.
 &Gloria
 R. Wielbcie Pana zemną, * Alleluja, alleluja.
-_
-V. Wspomożenie nasze w imieniu Pańskiem, alleluja.
-R. Który stworzył niebo i ziemię, alleluja.
 
-[Versum 3]
-V. Niech będzie Imię Pańskie błogosławione, alleluja.
-R. Odtąd i aż na wieki, alleluja.
+[Versum Nona]
+V. Wspomożenie nasze w imieniu Pańskiem, alleluia.
+R. Który stworzył niebo i ziemię, alleluia.
 
 [Ant 3]
 Nazwiesz * Imię Jego Jezus, albowiem on zbawi lud swój od grzechów ich, alleluja.

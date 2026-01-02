@@ -1,16 +1,20 @@
 @Sancti/01-01
 
-[Rank]
-Die Octavæ Nativitatis Domini;;Duplex I classis;;7;;ex Sancti/12-25
+[Rank] (rubrica 1963)
+Die Octavæ Nativitatis Domini;;Duplex I classis;;7;;ex SanctiM/12-25
 
 [Rule]
 12 lectiones
 no Commemoratio
+(sed rubrica cisterciensis omittitur)
+Lectio1 TempNat
 
-[Capitulum Vespera]
-@Sancti/01-01
-_
-@Sancti/12-25:Responsory Tertia:1-6
+[Responsory Vespera 1]
+@Sancti/12-25:Responsory Breve Tertia
+(sed rubrica cisterciensis)
+@SanctiCist/12-25:Responsory4
+(sed rubrica Barroux)
+@Commune/C11:Responsory1
 
 [Versum 1]
 @Sancti/12-25:Versum 2
@@ -21,34 +25,16 @@ Oriétur * in diébus Dómini abundántia pacis, † et dominábitur.;;71
 Véritas * de terra orta est, † et justítia de cælo prospéxit.;;84
 
 [Ant Matutinum 3N]
-Beátus * venter qui te portávit, et beata úbera, † quae te lactavérunt Dóminum et Salvatórem mundi, allelúja.;;263;264;265
+Beátus * venter qui te portávit, et beata úbera, † quæ te lactavérunt Dóminum et Salvatórem mundi, allelúja.;;263;264;265
 
 [Ant Matutinum]
-@Sancti/01-01::1-3
-@Sancti/01-01::6
-@:AntMatutinumM:1-2
-@Sancti/01-01::4-5
-@:AntMatutinumM:3
-@Sancti/01-01::7-8
-@Sancti/01-01::11-13
-@Sancti/01-01::9-10
+@Sancti/01-01::1-4
+@:AntMatutinumM
+@Sancti/01-01::5-9
 ;;263;264;265
-@Sancti/01-01::14-15
-
-[Lectio1]
-@Sancti/01-01:Lectio1:s/-8/-5/ s/6 .*//s
-
-[Lectio2]
-@Sancti/01-01:Lectio1:2-10 s/1-/6-/ s/1 .*6 /6 /s
-
-[Lectio3]
-@Sancti/01-01:Lectio2:
-
-[Lectio4]
-@Sancti/01-01:Lectio3
 
 [Responsory4]
-R. Hic qui advénit, nemo scit nomen ejus nisi ipse solus: † vocátur verbum Dómini habens vestem praecláram:
+R. Hic qui advénit, nemo scit nomen ejus nisi ipse solus: † vocátur verbum Dómini habens vestem præcláram:
 * Et omnis chorus Angelórum in albis sequúntur eum.
 V. Oculi ejus velut flamma ignis: † et in cápite ejus diadémata multa.
 R. Et omnis chorus Angelórum in albis sequúntur eum.
@@ -110,22 +96,5 @@ R. Et vocábitur Admirábilis, Deus Fortis.
 [Responsory12]
 @Tempora/Nat1-0:Responsory8
 
-[Capitulum Laudes]
-@Sancti/01-01
-_
-@Sancti/12-25:Responsory Sexta:1-6
-
-[Responsory Tertia]
-@Sancti/12-25:Responsory Nona:8-9
-
-[Responsory Sexta]
-@Sancti/12-25:Versum 2
-
-[Capitulum Sexta]
-@Sancti/12-25
-
-[Responsory Nona]
-@Sancti/12-25:Responsory Sexta:8-9
-
-[Capitulum Nona]
-@Sancti/12-25
+[Responsory Laudes]
+@Sancti/12-25:Responsory Breve Sexta

@@ -4,16 +4,6 @@ Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex 2 classis;;5.1;;ex C11
 [Rank1960]
 Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex 2 classis;;5;;ex C11
 
-[RankNewcal]
-Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex;;3;;ex C11
-
-[Rule]
-CPapaC=Marcum;
-ex C11;
-Gloria
-Credo
-Prefatio=Maria=Festivitate;
-
 [Introitus]
 !   
 v. Rallegriamoci tutti nel Signore celebrando questo giorno di festa in onore della beata Vergine Maria! Della sua festa gioiscono gli angeli, e insieme lodano il Figlio di Dio.
@@ -59,38 +49,3 @@ Fiorite, come gigli, o fiori, date profumo, spandetevi in bellezza: cantate in c
 [Postcommunio]
 Ci aiutino, Signore, le preghiere della tua santissima Madre, nella festa del suo rosario: concedi a noi di sentire l'efficacia dei misteri che veneriamo, e di ottenere il frutto dei sacramenti che abbiamo ricevuto:
 $Qui vivis
-
-[Commemoratio Oratio]
-!Pro S. Marco Papa et Conf.
-(dicitur)
-Esaudisci, o Signore, le nostre preghiere: e, per intercessione del tuo beato Confessore e Papa Marco, accordaci benigno il perdono e la pace.
-$Per Dominum
-(communi Summorum Pontificum loco huius versus dicitur)
-@Commune/C4b:Oratio Gregem
-_
-!Pro Ss. Sergio, Bacco, Marcello et Apulejo Martyribus
-Ci accompagnino, o Signore, i meriti gloriosi dei tuoi santi martiri Sergio, Bacco, Marcello e Apuleio e ci rendano sempre ferventi nel tuo amore.
-$Per Dominum
-
-[Commemoratio Secreta]
-!Pro S. Marco Papa et Conf.
-@Commune/C6b:Secreta
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Secreta Gregem
-_
-!Per i Ss. Sergio, Bacco, Marcello ed Apuleio Martiri
-Questa offerta da consacrare, o Signore, ci renda propizia la tua maestà con la degna domanda dei tuoi santi.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-!Pro S. Marco Papa et Conf.
-(dicitur)
-Concedi, ti preghiamo, o Signore, ai popoli fedeli di godere sempre della venerazione dei tuoi Santi e di essere protetti dalla loro continua supplica. 
-$Per Dominum
-(communi Summorum Pontificum loco huius versus dicitur)
-@Commune/C4b:Postcommunio Gregem
-_
-!Per i Ss. Sergio, Bacco, Marcello ed Apuleio Martiri
-I sacramenti che abbiamo ricevuti, o Signore, siano la nostra forza: e, per l’intercessione dei tuoi santi Martiri Sergio, Bacco, Marcello ed Apuleio, ci proteggano le armi celesti contro tutte le iniquità irruenti.
-$Per Dominum
-

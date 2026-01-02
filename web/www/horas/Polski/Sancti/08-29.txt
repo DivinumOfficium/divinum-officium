@@ -1,17 +1,5 @@
-[Rank]
-Ścięcie Św. Jana Chrzciciela;;Duplex majus;;4;;ex C2
-
-[Rank1960]
-Ścięcie Św. Jana Chrzciciela;;Duplex;;3;;vide C2
-
-[Rule]
-ex C2;
-9 lectiones
-Psalmi Dominica
-Antiphonas Horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
-scriptura1960
+[Officium]
+Ścięcie Św. Jana Chrzciciela
 
 [Ant Vespera]
 Herod zaś pojmał * i związał Jana, i umieścił go w ciemnicy ze względu na Herodyadę.
@@ -26,13 +14,6 @@ Posławszy Herod * kata, rozkazał ściąć głowę Jana w więzieniu. Co usłys
 [Oratio]
 Prosimy Cię, Panie, niechaj uroczystość Twego świętego Poprzednika i Męczennika, Jana Chrzciciela, da nam uczuć skutki wspomożenia Twego.
 $Qui vivis
-
-[Commemoratio]
-!Wspominamy Św. Sabinę Męczenniczkę
-@Commune/C7:Oratio proper
-$Oremus
-Boże, któryś pomiędzy innemi cudami Twej potęgi słabe niewiasty triumfem męczeństwa przyozdobił, daj w swej łaskawości, abyśmy, obchodząc pamiątkę narodzenia dla nieba błogosławionej Męczenniczki, Sabiny, za jej przykładem dążyli do Ciebie.
-$Per Dominum.
 
 [Lectio7]
 Czytanie Ewangelii świętej według Marka

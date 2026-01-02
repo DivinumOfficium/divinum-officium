@@ -1,16 +1,5 @@
-[Rank]
-Sanctissimi Cordis Domini Nostri Jesu Christi;;Duplex I classis cum Octava privilegiata III ordinis;;6
-
-[Rank1960]
-Sanctissimi Cordis Domini Nostri Jesu Christi;;Duplex I classis;;6
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Heart
-Prima=53
-Festum Domini
+[Officium]
+Sacratissimi Cordis Domini Nostri Jesu Christi
 
 [Ant Vespera]
 Col tuo soave giogo, * domina, o Signore, in mezzo a' tuoi nemici.;;109
@@ -18,11 +7,6 @@ Misericordioso * e pietoso è il Signore: egli ha dato un cibo a quelli che lo t
 È spuntata * di tra le tenebre una luce per i retti; il Signore è benigno e misericordioso.;;111
 Che renderò io al Signore * per tutti i benefizi che mi ha largito?;;115
 Presso il Signore * è clemenza e presso di lui è redenzione copiosa.;;129
-
-[Capitulum Vespera]
-!Eph 3:8-9
-v. Fratelli, a me che sono l'ultimo di tutti i fedeli, fu data questa grazia di annunziare alle genti le incomprensibili ricchezze di Cristo; e di svelare a tutti quale sia la dispensazione del mistero nascosto da secoli in Dio.
-$Deo gratias
 
 [Hymnus Vespera]
 v. Ecco come l'insolente e
@@ -33,7 +17,7 @@ _
 Il colpo della lancia del soldato 
 l'han diretto i nostri peccati, 
 e la punta del ferro crudele 
-l' aguzzò la colpa mortale.
+l'aguzzò la colpa mortale.
 _
 Dal Cuore aperto è nata la Chiesa, 
 la sposa di Cristo; 
@@ -64,6 +48,16 @@ R. Che sono mansueto e umile di Cuore.
 Son venuto * a portare fuoco sulla terra, e che voglio se non che arda?
 
 [Oratio]
+O Dio, che nel Cuore del Figlio tuo, ferito pe' nostri peccati, ti degni di effondere pietosamente gli infiniti tesori del tuo amore; concedi, che noi, prestandogli il divoto ossequio della nostra pietà, gli rendiamo anche il dovere di una condegna soddisfazione. 
+$Per eumdem
+
+[Octava 1]
+!Commemorazione per l'Ottava del Sacro Cuore
+Son venuto * a portare fuoco sulla terra, e che voglio se non che arda?
+_
+V. Prendete su voi il mio giogo e imparate da me.
+R. Che sono mansueto e umile di Cuore.
+_
 O Dio, che nel Cuore del Figlio tuo, ferito pe' nostri peccati, ti degni di effondere pietosamente gli infiniti tesori del tuo amore; concedi, che noi, prestandogli il divoto ossequio della nostra pietà, gli rendiamo anche il dovere di una condegna soddisfazione. 
 $Per eumdem
 
@@ -106,16 +100,18 @@ Amen.
 I pensieri * del suo Cuore per tutte le età.;;32
 Presso di te * è la sorgente della vita; e tu ci disseterai al torrente delle tue delizie, o Signore.;;35
 L'uomo ch'era in pace con me, * che mangiava del mio pane, ordì contro di me un gran tradimento.;;40
-V. Prendete il mio giogo su di voi e imparate da me.
-R. Che sono mansueto e umile di Cuore.
 Re di tutta la terra * è Dio; egli regnerà sulle Genti.;;46
 Quando il mio Cuore era * angosciato, tu mi collocasti su alta pietra.;;60
 Secondo la moltitudine * dei miei dolori nel mio Cuore, le tue consolazioni allietarono l'anima mia.;;93
-V. Io dissi, Signore, abbi pietà di me.
-R. Guarisci l'anima mia ché ho peccato contro di te.
 Voi che amate il Signore, * celebrate la memoria della sua santità.;;96
 Hanno visto * tutti i confini della terra la salvezza del nostro Dio.;;97
 Salmeggerò a te * fra le nazioni, perché grande più dei cieli è la tua misericordia.;;107
+
+[Nocturn 2 Versum]
+V. Io dissi, Signore, abbi pietà di me.
+R. Guarisci l'anima mia ché ho peccato contro di te.
+
+[Nocturn 3 Versum]
 V. Ha lasciato memoria delle sue meraviglie il pietoso Signore.
 R. Ha dato un cibo a quelli che lo temono.
 
@@ -133,7 +129,7 @@ V. E sarà mia delizia il beneficarli con tutto il mio Cuore.
 R. Affinché non si allontanino da me.
 
 [Lectio2]
-!Jer 30:18-19; 30:21-24
+!Ger 30:18-19; 30:21-24
 18 Queste cose dice il Signore: Ecco che io richiamerò le famiglie fuoruscite di Giacobbe, avrò compassione delle sue case, la città sarà riedificata sulle sue alture, il tempio sarà fondato secondo la sua dignità, 
 19 e da essi usciranno lodi e voci di giubilo. 
 21 E da lui verrà il suo condottiero, e il principe spunterà di mezzo a lui; e io lo farò avvicinare ed egli si accosterà a me. Poiché chi è costui che abbia fisso in cuor suo di accostarsi a me? dice il Signore. 
@@ -148,7 +144,7 @@ V. E se chi m'odiava avesse detto parole grosse contro di me, mi sarei forse gua
 R. Ma tu, un'anima stessa con me, che insieme con me prendevi il dolce cibo.
 
 [Lectio3]
-!Jer 31:1-3; 31:31-33
+!Ger 31:1-3; 31:31-33
 1 In quel tempo, dice il Signore, io sarò il Dio di tutte le famiglie d'Israele, ed essi saran mio popolo. 
 2 Queste cose dice il Signore: Ha trovato grazia nel deserto il popolo avanzato alla spada; Israele giungerà al suo riposo. 
 3 Il Signore mi si è fatto vedere di lontano. Ma io t'ho amato con un amore eterno: perciò ti ho tirato a me per misericordia. 
@@ -275,86 +271,6 @@ R. Dalle fonti del Salvatore.
 [Ant 2]
 Certo queste cose * sono avvenute affinché si adempisse la Scrittura che dice: Volgeranno lo sguardo a colui che han trafitto.
 
-[Lectio Prima]
-!Eph 3:17-19
-v. Radicati e fondati nella carità, affinché voi possiate capire, insieme a tutti i fedeli, quale sia la larghezza, la lunghezza, l'altezza e la profondità; e conoscere eziandio l'amore di Cristo che sorpassa ogni conoscenza, in modo che siate ripieni di tutta la pienezza di Dio.
-
-[Capitulum Tertia]
-!Eph 3:8-9
-v. Fratelli, a me che sono l'ultimo di tutti i fedeli, fu data questa grazia di annunziare alle genti le incomprensibili ricchezze di Cristo; e di svelare a tutti quale sia la dispensazione del mistero nascosto da secoli in Dio.
-$Deo gratias
-
-[Responsory Tertia]
-R.br. Prendete su voi il mio giogo * E imparate da me.
-R. Prendete su voi il mio giogo * E imparate da me.
-V. Che sono mansueto e umile di cuore.
-R. E imparate da me.
-&Gloria
-R. Prendete su voi il mio giogo * E imparate da me.
-_
-V. Io dissi: Signore, abbi pietà di me.
-R. Guarisci l'anima mia ché ho peccato contro di te.
-
-[Capitulum Sexta]
-!Eph 3:14-17
-v. Per questo io piego le mie ginocchia dinanzi al Padre del nostro Signore Gesù Cristo, affinché in proporzione delle ricchezze della sua gloria vi conceda d'essere fortemente rinvigoriti dal suo Spirito, riguardo all'uomo interiore: e che Cristo mediante la fede abiti nei vostri cuori.
-$Deo gratias
-
-[Responsory Sexta]
-R.br. Io dissi: Signore, * Abbi pietà di me.
-R. Io dissi: Signore, * Abbi pietà di me.
-V. Guarisci l'anima mia ché ho peccato contro di te. 
-R. Abbi pietà di me.
-&Gloria
-R. Io dissi: Signore, * Abbi pietà di me.
-_
-V. Ha lasciato memoria delle sue meraviglie il pietoso Signore.
-R. Ha dato un cibo a quelli che lo temono.
-
-[Capitulum Nona]
-!Eph 3:17-19
-v. Radicati e fondati nella carità, affinché voi possiate capire, insieme a tutti i fedeli, quale sia la larghezza, la lunghezza, l'altezza e la profondità; e conoscere eziandio l'amore di Cristo che sorpassa ogni conoscenza, in modo che siate ripieni di tutta la pienezza di Dio.
-$Deo gratias
-
-[Responsory Nona]
-R.br. Ha lasciato memoria delle sue meraviglie * Il pietoso Signore.
-R. Ha lasciato memoria delle sue meraviglie * Il pietoso Signore.
-V. Ha dato un cibo a quelli che lo temono.
-R. Il pietoso Signore.
-&Gloria
-R. Ha lasciato memoria delle sue meraviglie * Il pietoso Signore.
-_
-V. Attingerete acque con gioia.
-R. Dalle fonti del Salvatore.
-
-[Ant Vespera 3]
-Uno dei soldati * con una lancia gli aprì il costato e subito ne uscì sangue ed acqua.;;109
-Stando in piedi Gesù * gridò dicendo: Chi ha sete venga a me e beva.;;110
-Con un amore eterno * ci ha amati Iddio, perciò, innalzato da terra, ci ha tirati al suo Cuore per misericordia.;;115
-Venite a me tutti voi che siete affaticati e oppressi ed io vi ristorerò.;;127
-Figlio, * dammi il tuo cuore, ed i tuoi occhi sian fissi alle mie vie.;;147
-
-[Versum 3]
-V. Attingerete acque con gioia.
-R. Dalle fonti del Salvatore.
-
-[Ant 3]
-Ma quando * furono a Gesù, e lo videro già morto, non gli ruppero le gambe, ma uno dei soldati con una lancia gli aprì il costato, e subito ne uscì sangue ed acqua.
-
-[Oratio 3]
-Protettore  di quelli che sperano in te, o Dio, senza di cui niente è valido, niente è santo, moltiplica su di noi la tua misericordia ; affinchè sotto la tua guida e la tua direzione, passiamo così fra i beni temporali che non perdiamo gli eterni.
-$Per Dominum
-
-[Octava 1]
-!Commemorazione per l'Ottava del Sacro Cuore
-Son venuto * a portare fuoco sulla terra, e che voglio se non che arda?
-_
-V. Prendete su voi il mio giogo e imparate da me.
-R. Che sono mansueto e umile di Cuore.
-_
-O Dio, che nel Cuore del Figlio tuo, ferito pe' nostri peccati, ti degni di effondere pietosamente gli infiniti tesori del tuo amore; concedi, che noi, prestandogli il divoto ossequio della nostra pietà, gli rendiamo anche il dovere di una condegna soddisfazione. 
-$Per eumdem
-
 [Octava 2]
 !Commemorazione per l'Ottava del Sacro Cuore
 Certo queste cose * sono avvenute affinché si adempisse la Scrittura che dice: Volgeranno lo sguardo a colui che han trafitto.
@@ -364,6 +280,58 @@ R. Dalle fonti del Salvatore.
 _
 O Dio, che nel Cuore del Figlio tuo, ferito pe' nostri peccati, ti degni di effondere pietosamente gli infiniti tesori del tuo amore; concedi, che noi, prestandogli il divoto ossequio della nostra pietà, gli rendiamo anche il dovere di una condegna soddisfazione. 
 $Per eumdem
+
+[Lectio Prima]
+!Eph 3:17-19
+v. Radicati e fondati nella carità, affinché voi possiate capire, insieme a tutti i fedeli, quale sia la larghezza, la lunghezza, l'altezza e la profondità; e conoscere eziandio l'amore di Cristo che sorpassa ogni conoscenza, in modo che siate ripieni di tutta la pienezza di Dio.
+
+[Responsory Breve Tertia]
+R.br. Prendete su voi il mio giogo * E imparate da me.
+R. Prendete su voi il mio giogo * E imparate da me.
+V. Che sono mansueto e umile di cuore.
+R. E imparate da me.
+&Gloria
+R. Prendete su voi il mio giogo * E imparate da me.
+
+[Capitulum Sexta]
+!Eph 3:14-17
+v. Per questo io piego le mie ginocchia dinanzi al Padre del nostro Signore Gesù Cristo, affinché in proporzione delle ricchezze della sua gloria vi conceda d'essere fortemente rinvigoriti dal suo Spirito, riguardo all'uomo interiore: e che Cristo mediante la fede abiti nei vostri cuori.
+$Deo gratias
+
+[Responsory Breve Sexta]
+R.br. Io dissi: Signore, * Abbi pietà di me.
+R. Io dissi: Signore, * Abbi pietà di me.
+V. Guarisci l'anima mia ché ho peccato contro di te. 
+R. Abbi pietà di me.
+&Gloria
+R. Io dissi: Signore, * Abbi pietà di me.
+
+[Capitulum Nona]
+!Eph 3:17-19
+v. Radicati e fondati nella carità, affinché voi possiate capire, insieme a tutti i fedeli, quale sia la larghezza, la lunghezza, l'altezza e la profondità; e conoscere eziandio l'amore di Cristo che sorpassa ogni conoscenza, in modo che siate ripieni di tutta la pienezza di Dio.
+$Deo gratias
+
+[Responsory Breve Nona]
+R.br. Ha lasciato memoria delle sue meraviglie * Il pietoso Signore.
+R. Ha lasciato memoria delle sue meraviglie * Il pietoso Signore.
+V. Ha dato un cibo a quelli che lo temono.
+R. Il pietoso Signore.
+&Gloria
+R. Ha lasciato memoria delle sue meraviglie * Il pietoso Signore.
+
+[Ant Vespera 3]
+Uno dei soldati * con una lancia gli aprì il costato e subito ne uscì sangue ed acqua.;;109
+Stando in piedi Gesù * gridò dicendo: Chi ha sete venga a me e beva.;;110
+Con un amore eterno * ci ha amati Iddio, perciò, innalzato da terra, ci ha tirati al suo Cuore per misericordia.;;115
+Venite a me tutti voi che siete affaticati e oppressi ed io vi ristorerò.;;127
+Figlio, * dammi il tuo cuore, ed i tuoi occhi sian fissi alle mie vie.;;147
+
+[Ant 3]
+Ma quando * furono a Gesù, e lo videro già morto, non gli ruppero le gambe, ma uno dei soldati con una lancia gli aprì il costato, e subito ne uscì sangue ed acqua.
+
+[Oratio3]
+Protettore  di quelli che sperano in te, o Dio, senza di cui niente è valido, niente è santo, moltiplica su di noi la tua misericordia ; affinchè sotto la tua guida e la tua direzione, passiamo così fra i beni temporali che non perdiamo gli eterni.
+$Per Dominum
 
 [Octava 3]
 !Commemorazione per l'Ottava del Sacro Cuore

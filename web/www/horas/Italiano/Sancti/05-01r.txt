@@ -1,15 +1,5 @@
-[Rank]
-S. Joseph Opificis;;Duplex I classis;;6;;
-
-[RankNewcal]
-S. Joseph Opificis;;Duplex optional classis;;2;;
-
-[Rule]
-proper
-Psalmi Dominica
-Antiphonas horas
-9 lectiones;
-Psalm5 Vespera=116
+[Officium]
+S. Joseph Opificis
 
 [Ant Vespera]
 Dio, creatore del mondo, * pose l'uomo a lavorare e a custodire la terra, alleluia.
@@ -17,14 +7,6 @@ Cristo, Figlio di Dio, * si degnò di lavorare con le sue mani, alleluia.
 S. Giuseppe esercitando fedelmente l'arte del falegname, * rifulge come mirabile esempio di lavoratore, alleluia.
 Ecco il servo fedele * e prudente che il Signore stabili sopra la sua famiglia, alleluia.
 O Giuseppe, o santo artigiano, * custodisci il nostro lavoro, alleluia.
-
-[Capitulum Vespera]
-!Col 3:14-15
-v. Fratelli, abbiate la carità che è il vincolo della perfezione. Trionfi nei vostri cuori la pace di Cristo, e vivete in azione di grazie.
-$Deo gratias
-
-[Hymnus Vespera]
-@Sancti/03-19:Hymnus Vespera
 
 [Versum 1]
 V. Oggi è la solennità di San Giuseppe, alleluia.
@@ -39,7 +21,6 @@ $Per Dominum
 
 [Invit]
 Il Signore Re dei re, che degnò farsi figlio putativo di un falegname, * venite, adoriamo, alleluia.
-
 
 [Hymnus Matutinum]
 v. A te, Giuseppe, artigiano degno di venerazione,
@@ -71,16 +52,22 @@ e nella morte. Amen.
 L'uomo uscì a compiere il suo dovere e il suo lavoro fino a sera, alleluia.;;1
 ;;2
 ;;3
-V. Gloria ed esempio dei lavoratori, o san Giuseppe, alleluia.
-R. Al quale il Figlio di Dio volle obbedire, alleluia.
 Gesù, quando aveva trent'anni, era creduto figlio di Giuseppe, alleluia.;;4
 ;;5
 ;;8
-V. O grande dignità del lavoro, alleluia.
-R.  Che Cristo santificò, alleluia.
 Non è costui il figlio del falegname? Non è il figlio di Giuseppe? Alleluia.;;14
 ;;20
 ;;23
+
+[Nocturn 1 Versum]
+V. Gloria ed esempio dei lavoratori, o san Giuseppe, alleluia.
+R. Al quale il Figlio di Dio volle obbedire, alleluia.
+
+[Nocturn 2 Versum]
+V. O grande dignità del lavoro, alleluia.
+R.  Che Cristo santificò, alleluia.
+
+[Nocturn 3 Versum]
 V. Il Verbo di Dio, per mezzo del quale tutto fu fatto, alleluia.
 R. Si degnò di lavorare con le sue mani, alleluia.
 
@@ -92,7 +79,7 @@ Dal libro della Genesi.
 31 Dio vide che tutto quello che aveva fatto era molto buono. Venne quindi sera, e poi mattino: il sesto giorno. 
 1 Così furono completi i cieli e la terra e ogni loro ornamento. 
 2 E Dio il settimo giorno finì l'opera che aveva fatta; e il settimo giorno si riposò da tutto il lavoro che aveva compiuto. 
-3 E benedisse il settimo giorno e lo santificò perché in esso si riposò da tutta l'opera che aveva fatto creando. 
+3 E benedisse il settimo giorno e lo santificò perché in esso si riposò da tutta l'opera che aveva fatto creando.
 
 [Responsory1]
 R.  Sei giorni lavorerai e compirai tutte le tue opere, ma il settimo giorno, il sabato, è consacrato al Signore Dio tuo: 
@@ -189,13 +176,6 @@ R. Non è il figlio del falegname? Alleluia.
 Anche il Signore era falegname: il profeta di lui dice: «Tu hai costruito l'aurora e il sole». Un modo di disprezzare, analogo a quello usato dai farisei contro Gesù, lo troviamo anche nel libro dei Re, quando di Saul, elevato alla dignità di re, si diceva: «Che cosa mai è capitato al figlio di Cis? Che anche Saul sia un profeta?». Una breve frase avvelenata da immisurabile alterigia. Il Signore risponde: «Veramente nessun profeta è accolto dai propri familiari». Con questa frase il Signore si proclama profeta. Lui ebbe l'illuminazione profetica non attraverso una rivelazione, ma attraverso la sua stessa divinità. Per «familiari» qui vuol indicare il paese della sua nascita e della sua fanciullezza. Or dunque è chiaro che non era stato accolto dai suoi compaesani, che erano attizzati contro di lui soltanto per invidia.
 &teDeum
 
-[Ant Laudes]
-Dio, creatore del mondo, * pose l'uomo a lavorare e a custodire la terra, alleluia.
-Cristo, Figlio di Dio, * si degnò di lavorare con le sue mani, alleluia.
-S. Giuseppe esercitando fedelmente l'arte del falegname, * rifulge come mirabile esempio di lavoratore, alleluia.
-Ecco il servo fedele * e prudente che il Signore stabili sopra la sua famiglia, alleluia.
-O Giuseppe, o santo artigiano, * custodisci il nostro lavoro, alleluia.
-
 [Capitulum Laudes]
 !Col 3:14-15
 v. Fratelli, abbiate la carità che è il vincolo della perfezione. Trionfi nei vostri cuori la pace di Cristo, e vivete in azione di grazie.
@@ -239,57 +219,34 @@ Gesù discese con Maria e Giuseppe e venne a Nazareth, ed era soggetto a loro, a
 !Col 3:24
 v. Tutto quello che fate, fatelo con buono spirito: per il Signore e non per gli uomini, consapevoli che dal Signore riceverete la mercede dell'eredità. Servite a Cristo Signore.
 
-[Capitulum Tertia]
-!Col 3:14-15
-v. Fratelli, abbiate la carità che è il vincolo della perfezione. Trionfi nei vostri cuori la pace di Cristo, e vivete in azione di grazie.
-$Deo gratias.
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Gloria ed esempio degli operai, o San Giuseppe, * alleluia, alleluia.
 R. Gloria ed esempio degli operai, o San Giuseppe, * alleluia, alleluia.
 V. A cui ha voluto obbedire il Figlio di Dio.
 R. Alleluia, Alleluia.
 &Gloria
 R. Gloria ed esempio degli operai, o San Giuseppe, * alleluia, alleluia.
-_
-V. O grande dignità del lavoro, alleluia.
-R. Che Cristo ha santificato, alleluia.
 
 [Capitulum Sexta]
 !Col 3:17
 v. Tutto quello che fate con la parola e con l'azione, fate nel nome del Signor nostro Gesù Cristo, rendendo grazie a Dio e al Padre per mezzo di lui.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. O grande dignità del lavoro, * alleluia, alleluia.
 R. O grande dignità del lavoro, * alleluia, alleluia.
 V. Che Cristo ha santificato.
 R. Alleluia, alleluia.
 &Gloria
 R. O grande dignità del lavoro, * alleluia, alleluia.
-_
-V. Il Verbo di Dio, per mezzo del quale tutto è stato fatto, alleluia.
-R. Si è degnato di lavorare con le proprie mani, alleluia.
 
-[Capitulum Nona]
-!Col 3:24
-v. Tutto quello che fate, fatelo con buono spirito: per il Signore e non per gli uomini, consapevoli che dal Signore riceverete la mercede dell'eredità. Servite a Cristo Signore.
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Il Verbo di Dio, per mezzo del quale tutto è stato fatto, * alleluia, alleluia.
 R. Il Verbo di Dio, per mezzo del quale tutto è stato fatto, * alleluia, alleluia.
 V. Si è degnato di lavorare con le proprie mani.
 R. Alleluia, alleluia.
 &Gloria
 R. Il Verbo di Dio, per mezzo del quale tutto è stato fatto, * alleluia, alleluia.
-_
-V. Prega per noi, o San Giuseppe, alleluia.
-R. O protettore fedele del nostro lavoro, alleluia.
-
-[Versum 3]
-V. Prega per noi, o San Giuseppe, alleluia.
-R. O protettore fedele del nostro lavoro, alleluia.
 
 [Ant 3]
 E Gesù era, * circa all'età di trent'anni, creduto figlio di Giuseppe, alleluia.

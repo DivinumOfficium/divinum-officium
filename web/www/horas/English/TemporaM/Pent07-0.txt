@@ -1,4 +1,4 @@
-﻿[Lectio2]
+[Lectio2]
 @Tempora/Pent07-0:Lectio1:2-6 s/1-4/4-6/ s/\n1 .*4/\n4/s
 @Tempora/Pent07-0:Lectio2:2-3 s/ And he also.*//s
 
@@ -16,10 +16,10 @@
 
 [Lectio10]
 @Tempora/Pent07-0:Lectio7:s/.* Lip/Lip/s s/$/~/
-@Tempora/Pent07-0:Lectio8:s/"Many .*//s
+@Tempora/Pent07-0:Lectio8:s/“Many .*//s
 
 [Lectio11]
-@Tempora/Pent07-0:Lectio8:s/.* ("Many)/\1/s s/$/~/
+@Tempora/Pent07-0:Lectio8:s/.* (”Many)/\1/s s/$/~/
 @Tempora/Pent07-0:Lectio9:s/That .*//s
 
 [Lectio12]

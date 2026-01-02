@@ -1,13 +1,9 @@
-[Rank]
-Środa w Oktawie Wielkanocy;;Semiduplex I classis;;6;;ex Pasc0-0
+[Officium]
+Środa w Oktawie Wielkanocy
 
-[Rule]
-ex Pasc0-0;
-1 nocturn;
-Omit Hymnus Preces Suffragium;
-Minores sine Antiphona;
-Capitulum Versum 2;
-Psalmi Dominica;
+[Oratio]
+Boże, który nas coroczną uroczystością Zmartwychwstania Pańskiego uweselasz, spraw miłościwie, abyśmy święcąc te uroczystości w Czasie, stali się godnymi dostąpienia radości wiekuistych.
+$Per eumdem
 
 [Ant Matutinum]
 @Tempora/Pasc0-0::s/^V\..*//sm
@@ -34,11 +30,11 @@ Wiemy, iż Piotr był rybakiem, Mateusz zaś celnikiem. Po swym nawróceniu Piot
 
 [Responsory2]
 R. Jam jest prawdziwym krzewem winnym, a wy latoroślami.
-* Kto mieszka we Mnie, a Ja w nim, ten wiele owocu przynosi. Alleluja, alleluja.
+* Kto mieszka we Mnie, a Ja w nim, ten wiele owocu przynosi, alleluja, alleluja.
 V. Jako Mnie umiłował Ojciec i Ja was umiłowałem.
-R. Kto mieszka we Mnie, a Ja w nim, ten wiele owocu przynosi. Alleluja, alleluja.
+R. Kto mieszka we Mnie, a Ja w nim, ten wiele owocu przynosi, alleluja, alleluja.
 &Gloria
-R. Kto mieszka we Mnie, a Ja w nim, ten wiele owocu przynosi. Alleluja, alleluja.
+R. Kto mieszka we Mnie, a Ja w nim, ten wiele owocu przynosi, alleluja, alleluja.
 
 [Lectio3]
 Można też zapytać, dlaczego Pan, gdy Jego uczniowie trudzili się na morzu, stał na brzegu, gdy przed zmartwychwstaniem chodził po falach morskich? Odpowiedź na to pytanie jest łatwa, jeśli się zważy wewnętrzną tego przyczynę. Co bowiem oznacza morze, jeśli nie czas teraźniejszy, który jest wzburzony sztormami zdarzeń i falami znikomego życia? A czego figurą jest stały brzeg, jeśli nie trwałości wiecznego pokoju? Dlatego, że uczniowie pozostawali jeszcze wśród fal śmiertelnego życia, pracowali na morzu; a że nasz Odkupiciel już był poza skażonością ciała, po zmartwychwstaniu swoim stał na brzegu.
@@ -46,10 +42,6 @@ Można też zapytać, dlaczego Pan, gdy Jego uczniowie trudzili się na morzu, s
 
 [Ant 2]
 Zapuśćcie sieć * po prawej stronie łodzi, a znajdziecie, alleluja.
-
-[Oratio]
-Boże, który nas coroczną uroczystością Zmartwychwstania Pańskiego uweselasz, spraw miłościwie, abyśmy święcąc te uroczystości w Czasie, stali się godnymi dostąpienia radości wiekuistych.
-$Per eumdem
 
 [Ant 3]
 Rzekł im Jezus * uczniom swoim: Przynieście z ryb, któreście teraz pojmali. Wstąpił Symon Piotr i wyciągnął sieć na ziemię, pełną wielkich ryb, alleluja.

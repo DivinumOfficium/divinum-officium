@@ -1,0 +1,71 @@
+[Ant MatutinumM]
+Oči Páně * pohlédly na chudé, † když na ně hříšníci napínali své luky.;;10
+Takových je totiž * království nebeské, neboť zavrhli světský život, ale dosáhli odměny království a svá roucha omyli v krvi Beránkově.;;60
+Krev svatých mučedníků * byla prolita na zemi pro Krista, proto obdrželi věčnou odměnu.;;63
+Pomsti, Pane, * krev svých Svatých, která je prolévána po zemi.;;78
+Blahoslavení, * kdo trpí pronásledování pro spravedlnost, neboť jejich jest království nebeské.;;259;254;255
+
+[Responsory4]
+R. Svatí skrze víru přemohli království, vykonali spravedlivé skutky, dosáhli vyplnění zaslíbení, a stali se silnými ve válce;
+* A všichni vydali svědectvím víry.
+V. Tábory cizinců vyplenili, unikli ostří meče.
+R. A všichni vydali svědectvím víry.
+
+[Lectio5]
+@Commune/C3:Lectio4:s/Svátky Mučedníků .*//s
+
+[Lectio6]
+@Commune/C3:Lectio4:s/.* Svátky Mučedníků /Svátky Mučedníků /s s/$/~/
+@Commune/C3:Lectio5:s/Avšak i Apoštol .*//s
+
+[Lectio7]
+@Commune/C3:Lectio5:s/.* Avšak i Apoštol /Avšak i Apoštol /s
+
+[Lectio8]
+@Commune/C3:Lectio6
+
+[Lectio9]
+@Commune/C3:Lectio7:s/Měli bychom .*//s
+
+[Lectio10]
+@Commune/C3:Lectio7:s/.* Měli bychom /Měli bychom /s s/$/~/
+@Commune/C3:Lectio8:s/Poslední .*//s
+
+[Lectio11]
+@Commune/C3:Lectio8:s/.* Poslední /Poslední /s s/$/~/
+@Commune/C3:Lectio9:s/Pán totiž praví.*//s
+
+[Responsory11]
+R. Těla Svatých byla pohřbena v pokoji,
+* A jejich jména budou žít od pokolení do pokolení.
+V. Moudrost Svatých budou vyprávět národy, a jejich chválu bude pronášet celá Církev.
+R. A jejich jména budou žít od pokolení do pokolení.
+
+[Lectio12]
+@Commune/C3:Lectio9:s/.* Pán totiž praví/Pán totiž praví/s s/\&teDeum .*//s
+
+[Responsory12]
+R. Duše spravedlivých jsou v rukou Božích, a nedotknou se jich již muka smrti. Zdáli se být mrtví v očích lidí pošetilých, 
+* Oni ovšem přebývají v pokoji.
+V. Bůh je pouze zkoušel a shledal, že ho jsou hodni.
+R. Oni ovšem přebývají v pokoji.
+&Gloria
+R. Oni ovšem přebývají v pokoji.
+
+[MM Capitulum]
+@Commune/C3:Capitulum Sexta
+_
+V. Duše spravedlivých jsou v rukou Božích.
+R. A nedotknou se jich již muka smrti.
+
+[Lectio9 in 2 loco]
+@Commune/C3:Lectio7 in 2 loco:s/Proto také .*//s
+
+[Lectio10 in 2 loco]
+@Commune/C3:Lectio7 in 2 loco:s/.* Proto také /Proto také /s
+
+[Lectio10 in 3 loco]
+@Sancti/06-26:Lectio8:s/Nebojte se .*//s
+
+[Lectio11 in 3 loco]
+@Sancti/06-26:Lectio8:s/.* Nebojte se /Nebojte se /s

@@ -1,15 +1,5 @@
-[Rank]
-Fest der Geburt des heiligen Johannes des Täufers;;Duplex I. Klasse mit gewöhnlicher Oktav;;6.5;;
-
-[Rank1960]
-Fest der Geburt des heiligen Johannes des Täufers;;Duplex I classis;;6;;
-
-[Rule]
-Proper;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
+[Officium]
+Fest der Geburt des heiligen Johannes des Täufers
 
 [Ant Vespera]
 Er wird vor ihm kommen * im Geist und in der Kraft des Elias, um dem Herrn ein Volk zu schaffen, das wohl vorbereitet ist.
@@ -18,13 +8,8 @@ Aus dem Schoß einer Greisin * und Kinderlosen ist Johannes, der Vorläufer des 
 Dieser Knabe * wird groß sein vor dem Herrn: denn mit ihm ist ja auch dessen Hand.
 Als Nazaräer * wird dieser Knabe gelten: Wein und gebranntes Getränk wird er nicht trinken, und vom Schoße seiner Mutter an nichts Unreines genießen.
 
-[Capitulum Vespera]
-!Jes 49,1
-v. Hört es, ihr Inselbewohner, und gebet acht, ihr Völker aus der Ferne: Der Herr hat mich vom Mutterschoße berufen, vom Schoße meiner Mutter an hat er sich meiner erinnert.
-$Deo gratias
-
 [Hymnus Vespera]
-v. Dass aus freier Brust unsre Lieder klingen
+v. Daß aus freier Brust unsre Lieder klingen
 Und, was wunderbar du gewirkt, besingen,
 Mach, Johannes, rein unsern Geist von Sünden,
 Dein Lob zu künden.
@@ -58,6 +43,17 @@ R. Der hatte den Namen Johannes.
 Beim Eintritt * des Zacharias in den Tempel des Herrn erschien im der Engel Gabriel, der zur Rechten des Brandopferaltares stand.
 
 [Oratio]
+O Gott, der du uns diesen Tag durch die Geburt des heiligen Johannes ehrwürdig gemacht hast, schenke deinen Volksscharen die Gnade geistiger Freuden, und lenke die Seelen der Gläubigen auf den Weg, der zum ewigen Heile führt.
+$Per Dominum
+
+[Octava 1]
+!Kommemoration der Oktav von Johannes dem Täufer
+Ant. Beim Eintritt * des Zacharias in den Tempel des Herrn erschien im der Engel Gabriel, der zur Rechten des Brandopferaltares stand.
+_
+V. Es war ein Mann von Gott gesandt.
+R. Der hatte den Namen Johannes.
+_
+$Oremus
 O Gott, der du uns diesen Tag durch die Geburt des heiligen Johannes ehrwürdig gemacht hast, schenke deinen Volksscharen die Gnade geistiger Freuden, und lenke die Seelen der Gläubigen auf den Weg, der zum ewigen Heile führt.
 $Per Dominum
 
@@ -105,6 +101,25 @@ R. Als Johannes der Täufer.
 Meinen Mund machte * der Herr zu einem scharfen Schwert: und im Schatten seiner Hand schützt er mich.;;14
 Es machte mich * der Herr vom Mutterschoß an zu seinem Knechte und sagte: Ich habe dich zur Leuchte für die Völker gemacht, auf dass du der Träger meines Segens seiest bis zu den Grenzen der Erde.;;20
 Könige werden es sehen * und Fürsten werden auftreten und anbeten den Herrn, deinen Gott, der dich auserwählt hat.;;33
+V. Elisabeth, die Gattin des Zacharias, hat einen gewaltigen Mann geboren.
+R. Johannes den Täufer, den Vorläufer des Herrn.
+
+[Ant Matutinum]
+Bevor ich dich gebildet * im Mutterschoß, kannte ich dich: und ehe du heraustratst, sonderte ich dich für mich ab.;;1
+Überall dorthin, wohin ich dich sende, * spricht der Herr, sollst du gehen: Fürchte dich nicht, und was ich dir auftrage, wirst du zu ihnen reden.;;2
+Fürchte dich nicht * vor ihnen, denn ich bin bei dir, spricht der Herr.;;3
+Es streckte der Herr * seine Hand aus, und berührte meinen Mund, und so machte mich der Herr zu seinem Gesandten unter den Völkern.;;4
+Siehe, ich lege dir meine Worte * in deinen Mund: und so machte ich dich zum Gebieter über Völker und Reiche.;;5
+Der Herr * hat mich vom Mutterschoß berufen, vom Schoße meiner Mutter an war er meiner eingedenk.;;8
+Meinen Mund machte * der Herr zu einem scharfen Schwert: und im Schatten seiner Hand schützt er mich.;;14
+Es machte mich * der Herr vom Mutterschoß an zu seinem Knechte und sagte: Ich habe dich zur Leuchte für die Völker gemacht, auf dass du der Träger meines Segens seiest bis zu den Grenzen der Erde.;;20
+Könige werden es sehen * und Fürsten werden auftreten und anbeten den Herrn, deinen Gott, der dich auserwählt hat.;;33
+
+[Nocturn 2 Versum]
+V. Unter den vom Weibe Geborenen ist keiner aufgetreten, der gewaltiger wäre.
+R. Als Johannes der Täufer.
+
+[Nocturn 3 Versum]
 V. Elisabeth, die Gattin des Zacharias, hat einen gewaltigen Mann geboren.
 R. Johannes den Täufer, den Vorläufer des Herrn.
 
@@ -220,7 +235,9 @@ Unter den vom Weibe Geborenen * ist kein Gewaltigerer aufgetreten als der Täufe
 Du, Knabe, * wirst Prophet des Allerhöchsten heißen: du sollst dem Herrn vorangehen und den Weg für ihn bereiten.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Jes 49,1
+v. Hört es, ihr Inselbewohner, und gebet acht, ihr Völker aus der Ferne: Der Herr hat mich vom Mutterschoße berufen, vom Schoße meiner Mutter an hat er sich meiner erinnert.
+$Deo gratias
 
 [Hymnus Laudes]
 v. O nimis felix, meritique celsi,
@@ -256,75 +273,6 @@ R. Denn auch seine Hand ist mit ihm.
 [Ant 2]
 Es öffnete sich * der Mund des Zacharias und er redete unter dem Einfluss Gottes und sagte: Gepriesen sei der Gott Israels.
 
-[Lectio Prima]
-!Isa 49:7
-Reges videbunt, et consurgent principes, et adorabunt Dominum Deum tuum, et Sanctum Israël, qui elegit te.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
-R.br. Fuit homo * Missus a Deo.
-R. Fuit homo * Missus a Deo.
-V. Cui nomen erat Joannes.
-R. Missus a Deo.
-&Gloria
-R. Fuit homo * Missus a Deo.
-_
-V. Inter natos mulierum non surrexit major.
-R. Joanne Baptista.
-
-[Capitulum Sexta]
-!Isa 49:5-6
-v. Et nunc haec dicit Dominus, formans me ex utero servum sibi: Dedi te in lucem Gentium, ut sis salus mea usque ad extremum terrae.
-$Deo gratias
-
-[Responsory Sexta]
-R.br. Inter natos mulierum * Non surrexit major.
-R. Inter natos mulierum * Non surrexit major.
-V. Joanne Baptista.
-R. Non surrexit major.
-&Gloria
-R. Inter natos mulierum * Non surrexit major.
-_
-V. Elisabeth Zachariae magnum virum genuit.
-R. Joannem Baptistam praecursorem Domini.
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
-R.br. Elisabeth Zachariae * Magnum virum genuit.
-R. Elisabeth Zachariae * Magnum virum genuit.
-V. Joannem Baptistam praecursorem Domini.
-R. Magnum virum genuit.
-&Gloria
-R. Elisabeth Zachariae * Magnum virum genuit.
-_
-V. Dieser Knabe wird groß sein vor dem Herrn.
-R. Denn auch seine Hand ist mit ihm.
-
-[Ant Vespera 3]
-@:Ant Laudes
-
-[Versum 3]
-@:Versum 2
-
-[Ant 3]
-Puer * qui natus est nobis, plus quam, propheta est: hic est enim, de quo Salvator ait: Inter natos mulierum non surrexit major Joanne Baptista.
-
-[Octava 1]
-!Kommemoration der Oktav von Johannes dem Täufer
-Ant. Beim Eintritt * des Zacharias in den Tempel des Herrn erschien im der Engel Gabriel, der zur Rechten des Brandopferaltares stand.
-_
-V. Es war ein Mann von Gott gesandt.
-R. Der hatte den Namen Johannes.
-_
-$Oremus
-O Gott, der du uns diesen Tag durch die Geburt des heiligen Johannes ehrwürdig gemacht hast, schenke deinen Volksscharen die Gnade geistiger Freuden, und lenke die Seelen der Gläubigen auf den Weg, der zum ewigen Heile führt.
-$Per Dominum
-
 [Octava 2]
 !Kommemoration der Oktav von Johannes dem Täufer
 Ant. Es öffnete sich * der Mund des Zacharias und er redete unter dem Einfluss Gottes und sagte: Gepriesen sei der Gott Israels.
@@ -335,3 +283,15 @@ _
 $Oremus
 O Gott, der du uns diesen Tag durch die Geburt des heiligen Johannes ehrwürdig gemacht hast, schenke deinen Volksscharen die Gnade geistiger Freuden, und lenke die Seelen der Gläubigen auf den Weg, der zum ewigen Heile führt.
 $Per Dominum
+
+[Lectio Prima]
+!Isa 49:7
+Reges videbunt, et consurgent principes, et adorabunt Dominum Deum tuum, et Sanctum Israël, qui elegit te.
+
+[Capitulum Sexta]
+!Isa 49:5-6
+v. Et nunc haec dicit Dominus, formans me ex utero servum sibi: Dedi te in lucem Gentium, ut sis salus mea usque ad extremum terrae.
+$Deo gratias
+
+[Ant 3]
+Puer * qui natus est nobis, plus quam, propheta est: hic est enim, de quo Salvator ait: Inter natos mulierum non surrexit major Joanne Baptista.

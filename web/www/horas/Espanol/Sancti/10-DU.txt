@@ -1,24 +1,12 @@
 [Rank]
 Domini Nostri Jesu Christi Regis;;Duplex 1 class;;6.5;;
 
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Festum Domini
-
 [Ant Vespera]
 Será llamado * Rey de paz y su trono se mantendrá firme por toda la eternidad.
 Su reino * es eterno, y todos los reyes le servirán y obedecerán.
 Este es el hombre * que se llama Germen. Se sentará y dominará en su trono, y dictará paz a las naciones.
 El Señor * es nuestro juez, el Señor es nuestro legislador, el Señor es nuestro Rey: Él nos salvará.
 Te he puesto * para que seas luz de los pueblos, y para llevar mi salvación hasta los confines de la tierra.
-
-[Capitulum Vespera]
-!Col 1:12-13
-v. Hermanos: damos gracias a Dios Padre, que nos ha hecho capaces de compartir la herencia del pueblo santo en la luz. Él nos ha sacado del dominio de las tinieblas, y nos ha trasladado al reino de su Hijo querido.
-$Deo gratias
 
 [Hymnus Vespera]
 v. ¡Oh Cristo!, te proclamamos Príncipe 
@@ -116,16 +104,19 @@ _
 Mas yo * he sido constituido Rey sobre Sion, su santo monte, para predicar su ley.;;2
 De gloria * y honor le coronaste, y pusiste bajo sus pies todas las cosas.;;8
 Levantaos, * oh puertas de la eternidad, y entrará el Rey de la gloria.;;23
-V. Se me ha dado toda potestad.
-R. En el cielo y en la tierra.
 Estará sentado * el Señor como Rey por toda la eternidad; Él colmará a su pueblo de bendiciones de paz.;;28
 Es cetro de rectitud * el cetro de tu reino; por esto los pueblos te cantarán alabanzas eternamente por los siglos de los siglos.;;44
 Cantad salmos a nuestro Rey; * cantadle porque su poder real domina toda la tierra.;;46
-V. Tributad, oh pueblos, con todas vuestras familias.
-R. Tributad al Señor la gloria y el poder.
 Sean benditos en Él * todos los pueblos de la tierra; glorifíquenle todas las naciones.;;71
 Yo le constituiré a Él primogénito; * y el más excelso entre los reyes de la tierra.;;88(2-30)
 Su trono * resplandecerá para siempre en mi presencia como el sol, y como la luna llena.;;88(31-53)
+
+
+[Nocturn 2 Versum]
+V. Tributad, oh pueblos, con todas vuestras familias.
+R. Tributad al Señor la gloria y el poder.
+
+[Nocturn 3 Versum]
 V. Le adorarán todos los reyes de la tierra.
 R. Todas las naciones le rendirán homenaje.
 
@@ -137,7 +128,7 @@ De la Epístola de S. Pablo a los Colosenses
 5 en vista de la esperanza que os está reservada en los cielos, de la cual tuvisteis noticia por la palabra verdadera del Evangelio, 
 6 que os llegó, y como en todo el mundo, también entre vosotros fructifica y crece desde el día en que oísteis y conocisteis la gracia de Dios en su pureza, 
 7 según que la aprendisteis de Epafras, nuestro amado consiervo, que es por nosotros fiel ministro de Cristo, 
-8 quien nos ha dado a conocer vuestra caridad en el Espíritu. 
+8 quien nos ha dado a conocer vuestra caridad en el Espíritu.
 
 [Responsory1]
 R. Se sentó sobre el solio de David y poseerá su reino eternamente, 
@@ -155,7 +146,7 @@ R. Y tendrá por nombre Dios, el Fuerte, el Príncipe de la paz.
 14 en quien tenemos la redención y la remisión de los pecados. 
 15 Él es la imagen de Dios invisible, primogénito de toda criatura; 
 16 porque en Él fueron creadas todas las cosas del cielo y de la tierra, las visibles y las invisibles, los tronos, las dominaciones, los principados, las potestades; todo fue creado por Él y para Él. 
-17 Él es antes que todo, y todo subsiste en Él. 
+17 Él es antes que todo, y todo subsiste en Él.
 
 [Responsory2]
 R. Yo estaba observando en una visión nocturna, y he aquí que venía entre las nubes del cielo el Hijo del hombre; y le fueron dadas la potestad y el honor. 
@@ -170,7 +161,7 @@ R. Y le servirán todos los pueblos, tribus y lenguas.
 20 pacificando por la sangre de su cruz todas las cosas, así las de la tierra como las del cielo. 
 21 Y a vosotros, que erais en otro tiempo extraños y enemigos de corazón por las malas obras, 
 22 ahora os ha reconciliado en su cuerpo de carne, por su muerte, para presentaros santos e inmaculados e irreprensibles delante de Él, 
-23 si perseveráis firmemente fundados e inconmovibles en la fe y no os apartáis de la esperanza del Evangelio que habéis oído, que ha sido predicado a toda criatura bajo los cielos, y cuyo ministro he sido constituido yo, Pablo. 
+23 si perseveráis firmemente fundados e inconmovibles en la fe y no os apartáis de la esperanza del Evangelio que habéis oído, que ha sido predicado a toda criatura bajo los cielos, y cuyo ministro he sido constituido yo, Pablo.
 
 [Responsory3]
 R. Y tú, Belén Efrata, la más pequeña de las ciudades de Judá, de ti me vendrá el que ha de ser dominador de Israel. 
@@ -290,24 +281,22 @@ R. Y su paz no tendrá fin.
 [Ant 2]
 El Primogénito * de entre los muertos y Príncipe de los reyes de la tierra nos ha hecho reino para Dios Padre. Aleluya. 
 
-[Versum Prima]
-Tú que tienes la primacía sobre todas las cosas.
-
 [Lectio Prima]
 !Col 1:19-20
 v. Porque en Él quiso Dios que residiera toda la plenitud. Y por Él quiso reconciliar consigo a todos los seres: los del cielo y los de la tierra, haciendo la paz por la sangre de su cruz.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
+[Versum Prima]
+Tú que tienes la primacía sobre todas las cosas.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Se me ha dado * Todo poder. 
 R. Se me ha dado * Todo poder. 
 V. En el cielo y en la tierra. 
 R. Todo poder. 
 &Gloria
-R. Se me ha dado * Todo poder. 
-_
+R. Se me ha dado * Todo poder.
+
+[Versum Tertia]
 V. Aclamad al Señor todos los pueblos.
 R. Aclamad la gloria y el poder del Señor. 
 
@@ -316,14 +305,15 @@ R. Aclamad la gloria y el poder del Señor.
 v. Por medio de Él fueron creadas todas las cosas. Él es anterior a todo y todo se mantiene en Él. Él es también la cabeza del cuerpo: de la Iglesia. Él es el principio, el Primogénito de entre los muertos, y así es el primero en todo.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Aclamad al Señor * Todos los pueblos. 
 R. Aclamad al Señor * Todos los pueblos. 
 V. Aclamad la gloria y el poder del Señor. 
 R. Todos los pueblos. 
 &Gloria
-R. Aclamad al Señor * Todos los pueblos. 
-_
+R. Aclamad al Señor * Todos los pueblos.
+
+[Versum Sexta]
 V. Lo adorarán todos los reyes de la tierra.
 R. Todos los pueblos le servirán. 
 
@@ -332,20 +322,13 @@ R. Todos los pueblos le servirán.
 v. Porque en Él quiso Dios que residiera toda la plenitud. Y por Él quiso reconciliar consigo a todos los seres: los del cielo y los de la tierra, haciendo la paz por la sangre de su cruz.
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Lo adorarán * Todos los reyes de la tierra. 
 R. Lo adorarán * Todos los reyes de la tierra. 
 V. Todos los pueblos le servirán. 
 R. Todos los reyes de la tierra.
 &Gloria
-R. Lo adorarán * Todos los reyes de la tierra. 
-_
-V. Su reino se extenderá.
-R. Y su paz no tendrá fin.
-
-[Versum 3]
-V. Su reino se extenderá.
-R. Y su paz no tendrá fin.
+R. Lo adorarán * Todos los reyes de la tierra.
 
 [Ant 3]
 En la orla de su manto * y en su muslo tiene escrito un nombre: Rey de reyes y Señor de señores. A Él la gloria y el poder por los siglos de los siglos.

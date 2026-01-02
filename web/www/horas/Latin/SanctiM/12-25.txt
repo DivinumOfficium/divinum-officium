@@ -2,11 +2,8 @@
 
 [Rule]
 12 lectiones
-Special Evangelii Benedictio
 
-[Capitulum Vespera]
-@Sancti/12-25:Capitulum Vespera
-_
+[Responsory Vespera 1]
 R.br. Hódie sciétis * Quia véniet Dóminus.
 R. Hódie sciétis * Quia véniet Dóminus.
 V. Et mane vidébitis glóriam ejus.
@@ -14,28 +11,28 @@ R. Hódie sciétis * Quia véniet Dóminus.
 &Gloria
 R. Hódie sciétis * Quia véniet Dóminus.
 
-[Ant Matutinum 3N]
-Párvulus * fílius hódie natus est nobis: † et vocábitur Deus, Fortis, allelúja, allelúja.
+[Responsory Vespera 1] (rubrica Barroux)
+@:RV1:s/Responsorium. O Juda/R. Judæa/ s/ \*/\n*/
+
+[Responsory Vespera]
+@:Responsory Breve Tertia
 
 [AntMatutinumM]
-Elevámini, * portae aeternáles, † et introíbit Rex glóriae.;;23
+Elevámini, * portæ æternáles, † et introíbit Rex glóriæ.;;23
 In princípio * et ante sǽcula Deus erat Verbum: † ipse natus est nobis Salvátor mundi.;;96
 Nato * Dómino Angelórum chorus canébat, dicens: Salus Deo nostro, allelúja.;;98
+
+[Ant Matutinum 3N]
+Párvulus * fílius hódie natus est nobis: † et vocábitur Deus, Fortis, allelúja, allelúja.
 
 [Ant Matutinum]
 @Sancti/12-25::1-2
 @:AntMatutinumM:1
-@Sancti/12-25::3
-@Sancti/12-25::6-7
-@Sancti/12-25::4-5
-@Sancti/12-25::8
-@Sancti/12-25::11-12
+@Sancti/12-25::3-8
 @:AntMatutinumM:2
-@Sancti/12-25::13
+@Sancti/12-25::9
 @:AntMatutinumM:3
-@Sancti/12-25::9-10
 ;;263;264;265
-@Sancti/12-25::14-15
 
 [Lectio1]
 @Sancti/12-25:Lectio1
@@ -50,10 +47,10 @@ Nato * Dómino Angelórum chorus canébat, dicens: Salus Deo nostro, allelúja.;
 @Sancti/12-25:Lectio3
 
 [Responsory4]
-R. Descéndit de caelis Deus verus a Patre génitus, † introívit in úterum Vírginis, nobis ut apparéret visíbilis, indútus carne humána protoparénte édita:
-* Et exívit per portem clausam † Deus et homo, Lux et vita, cónditor mundi.
+R. Descéndit de cælis Deus verus a Patre génitus, † introívit in úterum Vírginis, nobis ut apparéret visíbilis, indútus carne humána protoparénte édita:
+* Et exívit per portam clausam † Deus et homo, Lux et vita, cónditor mundi.
 V. Tamquam sponsus † Dóminus procédens de thálamo suo.
-R. Et exívit per portem clausam † Deus et homo, Lux et vita, cónditor mundi.
+R. Et exívit per portam clausam † Deus et homo, Lux et vita, cónditor mundi.
 
 [Lectio5]
 @Sancti/12-25:Lectio4:s/Exsúltet .*//s
@@ -79,21 +76,17 @@ R. Et exívit per portem clausam † Deus et homo, Lux et vita, cónditor mundi.
 [Responsory8]
 R. Angelus ad pastóres ait: Annúntio vobis gáudium magnum: quod erit omni pópulo: † quia natus est vobis Salvátor,
 * Qui est Christus Dóminus, in civitáte David.
-V. Inveniéntis infántem pannis involútum et pósitum in praesépio
+V. Inveniétis infántem pannis involútum et pósitum in præsépio.
 R. Qui est Christus Dóminus, in civitáte David.
-
-[Benedictio3]
-@Sancti/12-25
-Per Evangélicum verbum regnum mareámur ætérnum. Amen.
 
 [Lectio9]
 Léctio sancti Evangélii secúndum Matthǽum
-!Mt 1:1-6
+!Matt 1:1-6
 Liber generatiónis Jesu Christi, fílii David, fílii Abraham. Abraham génuit Isaac, Isaac autem génuit Jacob. Et réliqua.
 _
 Homilía sancti Hierónymi Presbýteri
 !Lib. 1 Comment. in Matth. v. 1
-In Isaía légimus: Generatiónem ejus quis enárrabit? Non ergo putémus Evangelístam Prophétæ esse contrárium, ut quod ille impossíbile dixit effátu, hic narráre incípiat: quia ibi de generatióne Divinitátis, hic de incarnatióne est dictum. A carnálibus autem cœpit, ut per hóminem, Deum díscere incipiámus. Fílii David, fílii Abraham. Ordo præpósterus, sed necessário commutátus. Si enim primum posuísset Abraham et póstea David, rursus ei repeténdus fúerat Abraham, ut generatiónis séries texerétur.
+In Isaía légimus: Generatiónem ejus quis enarrábit? Non ergo putémus Evangelístam Prophétæ esse contrárium, ut quod ille impossíbile dixit effátu, hic narráre incípiat: quia ibi de generatióne Divinitátis, hic de incarnatióne est dictum. A carnálibus autem cœpit, ut per hóminem, Deum díscere incipiámus. Fílii David, fílii Abraham. Ordo præpósterus, sed necessário commutátus. Si enim primum posuísset Abraham et póstea David, rursus ei repeténdus fúerat Abraham, ut generatiónis séries texerétur.
 
 [Responsory9]
 @Sancti/01-01:Responsory1
@@ -119,25 +112,19 @@ R. Hoc erat in princípio apud Deum.
 [Responsory12]
 @Sancti/12-25:Responsory8
 
-[Capitulum Laudes]
-@Sancti/12-25:Capitulum Laudes
-_
-@Sancti/12-25:Responsory Tertia:s/._.*//s
+[RV1]
+Responsorium. O Juda et Jerúsalem, nolíte timére: * Cras egrediémini, et Dóminus erit vobíscum.
+V. Constántes estóte, vidébitis auxílium Dómini super vos.
+R. Cras egrediémini, et Dóminus erit vobíscum.
 
-[Responsory Tertia]
-@Sancti/12-25:Responsory Nona:s/.*_.//s
+[Responsory TertiaM]
+@Sancti/12-25:Versum Nona
 
-[Responsory Sexta]
+[Responsory SextaM]
 @Sancti/12-25:Versum 2
 
-[Responsory Nona]
-@Sancti/12-25:Responsory Sexta:s/.*_.//s
+[Responsory NonaM]
+@Sancti/12-25:Versum Sexta
 
-[Ant Vespera 3]
-@Sancti/12-25::s/.*;;131//
-
-[Capitulum Vespera 3]
-@:Capitulum Laudes
-
-[LectioE]
+[Evangelium]
 @Sancti/09-08

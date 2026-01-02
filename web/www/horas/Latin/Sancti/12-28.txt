@@ -1,11 +1,12 @@
+[Officium]
+Ss. Innocentium
+
 [Rank]
-Ss. Innocentium;;Duplex II class cum octava simplici;;5.2;;ex C3
-
-[RankTrident]
-Ss. Innocentium;;Duplex II class cum octava;;5.2;;ex C3
-
-[Rank1960]
-Ss. Innocentium;;Duplex II class;;5;;ex C3
+;;Duplex II class cum octava simplici;;5.2;;ex C3
+(sed rubrica 196)
+;;Duplex II class;;5.4;;ex C3
+(sed rubrica tridentina)
+;;Duplex II class cum octava;;5.2;;ex C3
 
 [Rule]
 ex C3;
@@ -16,16 +17,28 @@ Antiphonas Horas
 no Te Deum
 no Psalm5
 
-[Ant 1]
-Hi sunt, * qui cum muliéribus non sunt coinquináti: vírgines enim sunt, et sequúntur Agnum quocúmque íerit.
+[Hymnus Vespera]
+@Sancti/12-28:Hymnus Laudes
+
+[HymnusM Vespera]
+@Sancti/12-28:HymnusM Laudes
 
 [Versum 1]
 V. Heródes irátus occídit multos púeros.
 R. In Béthlehem Judæ civitáte David.
 
+[Versum 1] (rubrica cisterciensis)
+@CommuneCist/C3
+
+[Ant 1]
+Hi sunt, * qui cum muliéribus non sunt coinquináti: vírgines enim sunt, et sequúntur Agnum quocúmque íerit.
+
 [Oratio]
 Deus, cujus hodiérna die præcónium Innocéntes Mártyres non loquéndo, sed moriéndo conféssi sunt: ómnia in nobis vitiórum mala mortífica; ut fidem tuam, quam lingua nostra lóquitur, étiam móribus vita fateátur.
 $Per Dominum
+
+[Octava 1]
+@:Octava 3
 
 [Hymnus Matutinum]
 v. Audit tyránnus ánxius
@@ -45,12 +58,15 @@ Impúne Christus tóllitur.
 _
 Jesu, tibi sit glória,
 Qui natus es de Vírgine, 
-Cum Patre et almo Spiritu, 
+Cum Patre et almo Spíritu, 
 In sempitérna sǽcula.
 Amen.
 
 [HymnusM Matutinum]
 @:Hymnus Matutinum:s/Jesu, tibi sit glória/Glória tibi Dómine/
+
+[Ant Matutinum 11]
+Isti sunt qui venérunt * ex magna tribulatióne, et lavérunt stolas suas in sánguine Agni.
 
 [Lectio1]
 De Jeremía Prophéta
@@ -60,7 +76,7 @@ De Jeremía Prophéta
 17 Et est spes novíssimis tuis, ait Dóminus: et reverténtur fílii ad términos suos.
 
 [Responsory1]
-R. Céntum quadragínta quátuor míllia, qui empti sunt de terra, hi sunt qui cum muliéribus non sunt coinquináti: 
+R. Centum quadragínta quátuor míllia, qui empti sunt de terra, hi sunt qui cum muliéribus non sunt coinquináti: 
 * Vírgines enim permansérunt, ídeo regnant cum Deo, et Agnus Dei cum illis.
 V. Isti sunt qui venérunt ex magna tribulatióne, et lavérunt stolas suas in sánguine Agni.
 R. Vírgines enim permansérunt, ídeo regnant cum Deo, et Agnus Dei cum illis.
@@ -73,9 +89,9 @@ R. Vírgines enim permansérunt, ídeo regnant cum Deo, et Agnus Dei cum illis.
 
 [Responsory2]
 R. Sub altáre Dei audívi voces occisórum dicéntium: 
-* Quare non deféndis sánguinem nostrum? Et accepérunt divínum respónsum: Adhuc sústinete módicum tempus, donec impleátur númerus fratrum vestrórum.
+* Quare non deféndis sánguinem nostrum? Et accepérunt divínum respónsum: Adhuc sustinéte módicum tempus, donec impleátur númerus fratrum vestrórum.
 V. Vidi sub altáre Dei ánimas interfectórum propter verbum Dei, et propter testimónium quod habébant, et clamábant voce magna, dicéntes.
-R. Quare non deféndis sánguinem nostrum? Et accepérunt divínum respónsum: Adhuc sústinete módicum tempus, donec impleátur númerus fratrum vestrórum.
+R. Quare non deféndis sánguinem nostrum? Et accepérunt divínum respónsum: Adhuc sustinéte módicum tempus, donec impleátur númerus fratrum vestrórum.
 
 [Lectio3]
 !Jer 31:21-23
@@ -122,9 +138,6 @@ R. Ambulábunt mecum in albis, quia digni sunt.
 &Gloria
 R. Ambulábunt mecum in albis, quia digni sunt.
 
-[Ant Matutinum 11]
-Isti sunt qui venérunt * ex magna tribulatióne, et lavérunt stolas suas in sánguine Agni.;;33
-
 [Lectio7]
 Léctio sancti Evangélii secúndum Matthǽum
 !Matt 2:13-18
@@ -141,7 +154,7 @@ V. Hi empti sunt ex homínibus primítiæ Deo et Agno, et in ore ipsórum non es
 R. Et resonábat terra in voces eórum.
 
 [Lectio8]
-Ut adimplerétur quod dictum est a Dómino per prophétam dicéntem: Ex Ægýpto vocávi Fílium meum. Respondéant, qui Hebræórum volúminum dénegant veritátem, ubi hoc in Septuagínta legátur interprétibus. Quod cum non invénerint, nos eis dicémus, in Osée prophéta scriptum, sicut et exemplária probáre possunt, quæ nuper edídimus.
+Ut adimplerétur quod dictum est a Dómino per prophétam dicéntem: Ex Ægýpto vocávi Fílium meum. Respóndeant, qui Hebræórum volúminum dénegant veritátem, ubi hoc in Septuagínta legátur interprétibus. Quod cum non invénerint, nos eis dicémus, in Osée prophéta scriptum, sicut et exemplária probáre possunt, quæ nuper edídimus.
 
 [Responsory8]
 R. Vidi sub altáre Dei ánimas interfectórum propter verbum Dei quod habébant, et clara voce dicébant:
@@ -150,10 +163,10 @@ V. Sub throno Dei omnes Sancti clamant.
 R. Víndica, Dómine, sánguinem Sanctórum tuórum, qui effúsus est.
 
 [Lectio9]
-Tunc adimplétum est, quod dictum est per Jeremíam prophétam dicéntem: Vox in Rama audíta est, plorátus et ululátus multus, Rachel plorans fílios suos. De Rachel natus est Bénjamin, in cujus tribu non est Béthlehem. Quǽritur ergo, quómodo Rachel fílios Judæ, id est Béthlehem, quasi suos ploret. Respondébimus bréviter, quia sepúlta sit juxta Béthlehem in Ephráta; et ex matérno corpúsculi hospítio matris nomen accéperit; sive quóniam Juda et Bénjamin duæ tribus junctæ erant, et Heródes præcéperat non solum in Béthlehem intérfici púeros, sed et in ómnibus fínibus ejus.
+Tunc adimplétum est, quod dictum est per Jeremíam prophétam dicéntem: Vox in Rama audíta est, plorátus et ululátus multus, Rachel plorans fílios suos. De Rachel natus est Bénjamin, in cujus tribu non est Béthlehem. Quǽritur ergo, quómodo Rachel fílios Judæ, id est Béthlehem, quasi suos ploret. Respondébimus bréviter, quia sepúlta sit juxta Béthlehem in Ephrata; et ex matérno corpúsculi hospítio matris nomen accéperit; sive quóniam Juda et Bénjamin duæ tribus junctæ erant, et Heródes præcéperat non solum in Béthlehem intérfici púeros, sed et in ómnibus fínibus ejus.
 
 [Responsory9]
-R. Isti, qui amicti sunt stolis albis, qui sunt, et unde venérunt? Et dixit mihi:
+R. Isti, qui amícti sunt stolis albis, qui sunt, et unde venérunt? Et dixit mihi:
 * Hi sunt, qui venérunt de tribulatióne magna, et lavérunt stolas suas, et dealbavérunt eas in sánguine Agni.
 V. Vidi sub altáre Dei ánimas interfectórum propter verbum Dei, et propter testimónium quod habébant.
 R. Hi sunt, qui venérunt de tribulatióne magna, et lavérunt stolas suas, et dealbavérunt eas in sánguine Agni.
@@ -167,13 +180,17 @@ Angeli eórum * semper vident fáciem Patris.
 Vox in Rama * audíta est, plorátus et ululátus, Rachel plorans fílios suos.
 Sub throno Dei * omnes Sancti clamant: Víndica sánguinem nostrum, Deus noster.
 
+[Ant Laudes] (rubrica cisterciensis)
+Heródes irátus * occídit multos púeros in Béthlehem Judæ civitáte David.
+Angeli eórum * semper vident fáciem Patris.
+Vox in Rama audíta est, * plorátus et ululátus, Rachel plorans fílios suos.
+Sub throno Dei * Sancti clamábant: Víndica sánguinem nostrum, Deus noster.
+Cantábant Sancti * cánticum novum ante sedem Dei, et Agni, et resonábat terra in voces illórum.
+
 [Capitulum Laudes]
 !Apo 14:1
-v. Vidi supra montem Sion Agnum stántem, et cum eo centum quadragínta quátuor míllia habéntes nomen ejus, et nomen Patris ejus scríptum in fróntibus suis.
+v. Vidi supra montem Sion Agnum stantem, et cum eo centum quadragínta quátuor míllia habéntes nomen ejus, et nomen Patris ejus scriptum in fróntibus suis.
 $Deo gratias
-
-[HymnusM Laudes]
-@:Hymnus Laudes:s/sub/ante/ s/Jesu, tibi sit glória/Glória tibi Dómine/
 
 [Hymnus Laudes]
 v. Salvéte, flores Mártyrum,
@@ -192,36 +209,39 @@ Cum Patre et almo Spíritu,
 In sempitérna sǽcula.
 Amen.
 
+[HymnusM Laudes]
+@:Hymnus Laudes:s/sub/ante/ s/Jesu, tibi sit glória/Glória tibi Dómine/
+
 [Versum 2]
 @:Versum 1
 
 [Ant 2]
 @:Ant 1
 
-[Commemoratio 2]
-@Sancti/12-25:Octava
+[Octava 2]
+!Commemoratio Octavæ Ss. Innocentium
+Ant. Hi sunt, qui cum muliéribus non sunt coinquináti: vírgines enim sunt, et sequúntur Agnum quocúmque íerit.
+_
+V. Heródes irátus occídit multos púeros.
+R. In Béthlehem Judæ civitáte David.
+_
+$Oremus
+v. Deus, cujus hodiérna die præcónium Innocéntes Mártyres non loquéndo, sed moriéndo conféssi sunt: ómnia in nobis vitiórum mala mortífica; ut fidem tuam, quam lingua nostra lóquitur, étiam móribus vita fateátur.
+$Per Dominum
 
-[Commemoratio 3]
-@Sancti/12-25:Octava
-
-[Commemoratio 2] (rubrica trident)
-@Sancti/12-25:Octava
-@Sancti/12-26:Octava
-@Sancti/12-27:Octava
-
-[Commemoratio 3] (rubrica trident)
-@Sancti/12-25:Octava
-@Sancti/12-26:Octava
-@Sancti/12-27:Octava
+[Octava 2] (rubrica cisterciensis)
+!Commemoratio Octavæ SS. Innocentium
+Ant. Heródes irátus * occídit multos púeros in Béthlehem Judæ civitáte David.
+_
+@CommuneCist/C3:Versum 2
+_
+$Oremus
+v. Deus, cujus hodiérna die præcónium Innocéntes Mártyres non loquéndo, sed moriéndo conféssi sunt: ómnia in nobis vitiórum mala mortífica; ut fidem tuam, quam lingua nostra lóquitur, étiam móribus vita fateátur.
+$Per Dominum
 
 [Lectio Prima]
 !Apo 14:4-5
 v. Hi empti sunt ex homínibus primítiæ Deo et Agno, et in ore ipsórum non est invéntum mendácium: sine mácula enim sunt ante thronum Dei.
-
-[Capitulum Tertia]
-!Apo 14:1
-v. Vidi supra montem Sion Agnum stántem, et cum eo centum quadragínta quátuor míllia habéntes nomen ejus, et nomen Patris ejus scriptum in fróntibus suis.
-$Deo gratias
 
 [Capitulum Sexta]
 !Apo 14:4
@@ -235,35 +255,27 @@ $Deo gratias
 [Ant Vespera 3]
 @Sancti/12-25
 
-[Capitulum Vespera]
-@:Capitulum Tertia
-
-[Hymnus Vespera]
-@Sancti/12-28:Hymnus Laudes
-
-[HymnusM Vespera]
-@Sancti/12-28:HymnusM Laudes
+[Ant Vespera 3C]
+A bimátu * et infra occídit multos púeros Heródes propter Dóminum.
+Sínite párvulos * ad me veníre, tálium est enim regnum cœlórum.
+Lavérunt stolas suas * et cándidas eas fecérunt in sánguine Agni.
+Hi empti sunt * ex homínibus primítiæ Deo et Agno; et in ore eórum non est invéntum mendácium.
 
 [Versum 3]
 V. Sub throno Dei omnes Sancti clamant.
 R. Víndica sánguinem nostrum, Deus noster.
 
+[Versum 3] (rubrica cisterciensis)
+@CommuneCist/C3
+
 [Ant 3]
 Innocéntes pro Christo * infántes occísi sunt, ab iníquo rege lacténtes interfécti sunt: ipsum sequúntur Agnum sine mácula, et dicunt semper: Glória tibi, Dómine.
 
-[Octava 2]
-!Commemoratio Octavæ Ss. Innocentium
-Ant. Hi sunt, qui cum muliéribus non sunt coinquináti: vírgines enim sunt, et sequúntur Agnum quocúmque íerit.
-_
-V. Heródes irátus occídit multos púeros.
-R. In Béthlehem Judæ civitáte David.
-_
-$Oremus
-v. Deus, cujus hodiérna die præcónium Innocéntes Mártyres non loquéndo, sed moriéndo conféssi sunt: ómnia in nobis vitiórum mala mortífica; ut fidem tuam, quam lingua nostra lóquitur, étiam móribus vita fateátur.
-$Per Dominum
+[Ant 3] (rubrica cisterciensis)
+Ambulábunt mecum in albis, * quóniam digni sunt, et non delébo nómina eórum de libro vitæ.
 
 [Octava 3]
-!Commemoratio Octavæ Ss. Innocentium
+!Commemoratio Octavæ SS. Innocentium
 Ant. Innocéntes pro Christo infántes occísi sunt, ab iníquo rege lacténtes interfécti sunt: ipsum sequúntur Agnum sine mácula, et dicunt semper: Glória tibi, Dómine.
 _
 V. Sub throno Dei omnes Sancti clamant.
@@ -273,5 +285,12 @@ $Oremus
 v. Deus, cujus hodiérna die præcónium Innocéntes Mártyres non loquéndo, sed moriéndo conféssi sunt: ómnia in nobis vitiórum mala mortífica; ut fidem tuam, quam lingua nostra lóquitur, étiam móribus vita fateátur.
 $Per Dominum
 
-[Octava 1]
-@:Octava 3
+[Octava 3] (rubrica cisterciensis)
+!Commemoratio Octavæ SS. Innocentium
+Ant. Sínite párvulos * ad me veníre, tálium est enim regnum cœlórum.
+_
+@CommuneCist/C3:Versum 2
+_
+$Oremus
+v. Deus, cujus hodiérna die præcónium Innocéntes Mártyres non loquéndo, sed moriéndo conféssi sunt: ómnia in nobis vitiórum mala mortífica; ut fidem tuam, quam lingua nostra lóquitur, étiam móribus vita fateátur.
+$Per Dominum

@@ -1,0 +1,33 @@
+[Lectio1]
+@Tempora/Epi5-0:Lectio1:
+@Tempora/Epi5-0:Lectio2:s/!.*// s/5 .*//s
+
+[Lectio2]
+@Tempora/Epi5-0:Lectio2:
+@Tempora/Epi5-0:Lectio3:s/!.*// s/12 .*//s
+
+[Lectio3]
+@Tempora/Epi5-0:Lectio3:s/-16/-14/ s/15 .*//s
+
+[Lectio4]
+@Tempora/Epi5-0:Lectio3:s/12-/15-/ s/12.*15 /15 /s
+
+[Lectio6]
+@Tempora/Epi5-0:Lectio5:s/Ecce .*//s
+
+[Lectio7]
+@Tempora/Epi5-0:Lectio5:s/.* Ecce /Ecce /s s/$/~/
+@Tempora/Epi5-0:Lectio6:s/Quid .*//s
+
+[Lectio8]
+@Tempora/Epi5-0:Lectio6:s/.* Quid /Quid /s
+
+[Lectio10]
+@Tempora/Epi5-0:Lectio8:s/At illi, .*//s
+
+[Lectio11]
+@Tempora/Epi5-0:Lectio8:s/.* At illi, /At illi, /s s/$/~/
+@Tempora/Epi5-0:Lectio9:s/Aliud .*//s
+
+[Lectio12]
+@Tempora/Epi5-0:Lectio9:s/.* Aliud /Aliud /s

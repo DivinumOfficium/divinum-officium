@@ -1,22 +1,8 @@
-[Rank]
-Dominica infra Octavam Ascensionis;;Semiduplex;;5;;ex Tempora/Pasc5-4
+[Officium]
+Dominica infra Octavam Ascensionis
 
-[Rank1960]
-Dominica post Ascensionem;;Semiduplex;;5;;vide Tempora/Pasc5-4
-
-[Rule]
-ex Tempora/Pasc5-4;
-9 lectiones
-Doxology=Asc
-StJamesRule=John,Rev
-
-[Capitulum Vespera]
-!1. Pietro 4:7-8
-v. Carissimi: Siate prudenti, e vegliate nella preghiera. Ma sopra tutto abbiate l'un per l'altro una carità perseverante: perché la carità copre una moltitudine di peccati.
-$Deo gratias
-
-[Versum 1]
-@Tempora/Pasc5-4:Versum 2
+[Officium] (rubrica 196 aut rubrica 1955)
+Dominica post Ascensionem
 
 [Ant 1]
 Quando verrà il Consolatore, * che io vi manderò, lo Spirito di verità, che procede dal Padre, egli renderà testimonianza di me, alleluia.
@@ -25,22 +11,10 @@ Quando verrà il Consolatore, * che io vi manderò, lo Spirito di verità, che p
 Dio onnipotente ed eterno, fa che la nostra volontà ti sia sempre devota, e che serviamo alla tua maestà con cuore sincero. 
 $Per Dominum
 
-[Commemoratio 1]
+[Commemoratio]
 !Commemorazione dell'Ottava dell'Ascensione.
-Ant. O Re della gloria, * Signore degli eserciti, che quest'oggi ascendesti trionfante al disopra di tutti i cieli, non ci lasciare orfani; ma mandaci, secondo la promessa del Padre, lo Spirito di verità, alleluia.
-_
-(deinde dicitur)
-V. È asceso Iddio tra voci di giubilo, alleluia.
-R. E il Signore al suono della tromba, alleluia.
-(sed rubrica tridentina loco huius versus dicitur)
-V. Il Signore nel cielo, alleluia.
-R. Ha stabilito il suo trono, alleluia
-(deinde dicitur)
-_
-$Oremus
-Concedici, Dio onnipotente, che come crediamo che oggi il tuo Unigenito, nostro Redentore, ascese al cielo; così ancor noi collo spirito abitiamo nel cielo.
-$Per eumdem
-	
+@Tempora/Pasc5-4:Oratio
+
 [Lectio1]
 Incomincia la prima Lettera dell'Apostolo san Giovanni
 !1 Giov 1:1-5
@@ -75,7 +49,7 @@ Il nostro Salvatore, fratelli dilettissimi, è asceso al cielo: non turbiamoci d
 [Lectio5]
 La risurrezione del Signore è la nostra speranza:  l'ascensione del Signore la nostra glorificazione. Quest'oggi celebriamo la solennità dell'ascensione. Se dunque noi celebriamo l'ascensione del Signore rettamente, fedelmente, divotamente, santamente e piamente, ascendiamo con lui, e teniamo in alto i cuori. Ma salendo, non insuperbiamo, né presumiamo dei nostri meriti, quasi ci fossero propri. Noi dobbiamo avere i cuori in alto uniti al Signore. Perché, avere il cuore in alto, ma non al Signore, è orgoglio: invece il cuore in alto al Signore, è rifugio. Osservate, fratelli, un fatto sorprendente. Dio è alto: tu t'innalzi, ed egli fugge da te; ti umili, e discende a te. Perché questo? Perché «egli è eccelso, eppure riguarda le umili cose, e le altiere mira da lungi» (Ps. 137,6). Egli riguarda le cose umili dà vicino per innalzarle: e le cose altiere, cioè superbe, le mira da lungi per abbassarle.
 
-[Lectio6]
+[Lectio6_]
 Cristo è risorto per darci la speranza, perché tutto l'uomo che muore, risuscita; e ci ha data quest'assicurazione, affinché noi morendo, non disperassimo e non pensassimo che la nostra vita finisce colla morte. Noi eravamo nell'ansietà riguardo alla nostr'anima stessa: ed egli risorgendo ci ha dato la fede nella risurrezione della carne. Credi dunque affin d'essere purificato. Ti è necessario prima credere, per meritare colla fede di veder Dio un giorno. Vuoi vedere Dio? Ascolta lui stesso: «Beati i puri di cuore: perché essi vedranno Dio» (Matth. 5,8). Pensa dunque innanzi tutto a purificare il cuore: e togli quanto vi vedi che dispiace a Dio.
 
 [Lectio7]
@@ -90,7 +64,6 @@ Il Signore Gesù, nel discorso che tenne ai suoi discepoli dopo la cena, prossim
 [Lectio8]
 Poi indicò chiaramente che i Giudei dovevano essere i persecutori suoi e loro: affinché apparisse senza ambagi che coloro i quali perseguitano i santi sono anch'essi compresi sotto quest'appellazione di mondo da condannare. E dopo aver detto (dei Giudei) ch'essi non conoscevano affatto colui che l'aveva mandato; e che nondimeno odiavano il Figlio e il Padre, cioè quello ch'era stato mandato e quello da cui egli era stato mandato (cose tutte di cui abbiamo già parlato in altri discorsi), arrivò a questo punto dove dice: «Tuttavia deve adempiersi la parola scritta nella loro legge: Mi hanno odiato senza ragione» (Joann. 15,25).
 
-
 [Responsory8]
 R. Poiché se io non vado, non verrà a voi il Consolatore: ma quando sarò andato, ve lo manderò. 
 * E quando sarà venuto lui, v'insegnerà ogni verità, alleluia.
@@ -104,27 +77,9 @@ Quindi aggiunse, come conseguenza, queste parole che abbiamo cominciato a spiega
 &teDeum
 
 [Capitulum Laudes]
-@:Capitulum Vespera
-
-[Ant 2]
-@:Ant 1
-
-[Versum 2]
-@Tempora/Pasc5-4:Versum 1
-(sed rubrica tridentina)
-@:Versum 1
-
-[Commemoratio 2]
-!Commemorazione dell'Ottava dell'Ascensione.
-@Tempora/Pasc5-4:Oratio
-
-[Versum 3]
-@:Versum 1
+!1. Pietro 4:7-8
+v. Carissimi: Siate prudenti, e vegliate nella preghiera. Ma sopra tutto abbiate l'un per l'altro una carità perseverante: perché la carità copre una moltitudine di peccati.
+$Deo gratias
 
 [Ant 3]
 Vi ho detto questo, * affinché, giunta quell'ora, vi ricordiate ch'io ve l'ho detto, alleluia.
-
-[Commemoratio 3]
-!Commemorazione dell'Ottava dell'Ascensione.
-@Tempora/Pasc5-4:Oratio
-

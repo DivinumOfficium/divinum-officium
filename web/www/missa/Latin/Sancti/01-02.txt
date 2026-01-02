@@ -1,19 +1,47 @@
+[Officium]
+In Octava S. Stephani Protomartyris
+
 [Rank]
-In Octava S. Stephani;;Simplex;;1.1;;vide Sancti/12-26
-
-[Rank1960]
-Die Secunda Januarii;;Feria;;1.2;;vide Sancti/01-01
-
-[RankTrident]
-In Octava Sancti Stephani;;Duplex;;3;;ex Sancti/12-26
+;;Simplex;;1.4;;vide Sancti/12-26
+(sed rubrica tridentina)
+;;Duplex;;3.1;;ex Sancti/12-26
 
 [Rule]
-ex Sancti/12-26;
+vide Sancti/12-26;
+Feria Te Deum
+Comkey=70
+Lectio1 TempNat
 Gloria
 Prefatio=Nat
 
+[Rule] (rubrica tridentina)
+ex Sancti/12-26;
+9 lectiones
+Psalmi Dominica
+Antiphonas Horas
+Feria Te Deum
+Psalm5 Vespera3=115
+Gloria
+Prefatio=Nat
+Credo
+
 [Oratio] (rubrica Divino aut rubrica Tridentina aut rubrica Monastica)
-Omnípotens sempitérne Deus, qui primítias Mártyrum in beáti Levítæ Stéphani~
-sánguine dedicásti: tríbue, quǽsumus; ut pro nobis intercéssor exsístat, qui pro~
-suis étiam persecutóribus exorávit
-$Per Dominum
+@Sancti/12-26:Oratio1
+
+[Commemoratio Oratio] (rubrica tridentina)
+!Pro S. Joanne Evangelista
+@Sancti/12-27:Oratio
+!Pro Ss. Innocentibus
+@Sancti/12-28:Oratio
+
+[Commemoratio Secreta] (rubrica tridentina)
+!Pro S. Joanne Evangelista
+@Sancti/12-27:Secreta
+!Pro Ss. Innocentibus
+@Sancti/12-28:Secreta
+
+[Commemoratio Postcommunio] (rubrica tridentina)
+!Pro S. Joanne Evangelista
+@Commune/C5:Postcommunio
+!Pro Ss. Innocentibus
+@Sancti/12-28:Postcommunio

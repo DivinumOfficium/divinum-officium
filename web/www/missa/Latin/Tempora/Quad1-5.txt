@@ -1,8 +1,10 @@
-[Rank]
-Feria Sexta Quattuor Temporum;;Feria major;;2
+[Officium]
+Feria Sexta Quattuor Temporum
 
-[Rank1960]
-Feria Sexta Quattuor Temporum Quadragesimæ;;Feria major;;3
+[Rank]
+;;Feria major;;2.1
+(sed rubrica 196 aut rubrica 1930)
+;;Feria major;;4.9
 
 [Rule]
 no Gloria

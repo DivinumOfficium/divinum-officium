@@ -1,8 +1,10 @@
-[Rank]
-Sabbato Quattuor Temporum Quadrageismæ;;Feria major;;2
+[Officium]
+Sabbato Quattuor Temporum Quadrageismæ
 
-[Rank1960]
-Sabbato Quattuor Temporum Quadragesimæ;;Feria major;;3
+[Rank]
+;;Feria major;;2.1
+(sed rubrica 196 aut rubrica 1930)
+;;Feria major;;4.9
 
 [Rule]
 no Gloria
@@ -20,15 +22,11 @@ Dómine, Deus salútis meæ: in die clamávi, et nocte coram te.
 &Gloria
 v. Intret orátio mea in conspéctu tuo: inclína aurem tuam ad precem meam, Dómine.
 
-[Oratio]
-Pópulum tuum, quǽsumus, Dómine, propítius réspice: atque ab eo flagélla tuæ iracúndiæ cleménter avérte.
-$Per Dominum
-
 [LectioL1]
 Léctio libri Deuteronómii
 !Deut 26:12-19
 In diébus illis: Locútus est Móyses ad pópulum, dicens: Quando compléveris décimam cunctárum frugum tuárum, loquéris in conspéctu Dómini, Dei tui: Abstuli, quod sanctificátum est de domo mea, et dedi illud levítæ et ádvenæ et pupíllo ac víduæ, sicut jussísti mihi: non præterívi mandáta tua, nec sum oblítus impérii tui. Obœdívi voci Dómini, Dei mei, et feci ómnia, sicut præcepísti mihi. Réspice de sanctuário tuo et de excélso cœlórum habitáculo, et benedic pópulo tuo Israël, et terræ, quam dedísti nobis, sicut jurásti pátribus nostris, terræ lacte et melle manánti. Hódie Dóminus, Deus tuus, præcépit tibi, ut fácias mandáta hæc atque judícia: et custódias et ímpleas ex toto corde tuo et ex tota ánima tua. Dóminum elegísti hódie, ut sit tibi Deus, et ámbules in viis ejus, et custódias cæremónias illíus et mandáta atque judícia, et obœ́dias ejus império. Et Dóminus elégit te hódie, ut sis ei pópulus peculiáris, sicut locútus est tibi, et custódias ómnia præcépta illíus: et fáciat te excelsiórem cunctis géntibus, quas creávit in laudem et nomen et glóriam suam: ut sis pópulus sanctus Dómini, Dei tui, sicut locútus est.
-$Deo Gratias
+$Deo gratias
 
 [GradualeL1]
 !Ps 78:9; 78:10
@@ -43,7 +41,7 @@ $Per Dominum
 Léctio libri Deuteronómii
 !Deut 11:22-25
 In diébus illis: Dixit Móyses fíliis Israël: Si custodiéritis mandáta, quæ ego præcípio vobis, et fecéritis ea, ut diligátis Dóminum, Deum vestrum, et ambulétis in ómnibus viis ejus, adhæréntes ei, dispérdet Dóminus omnes gentes istas ante fáciem vestram, et possidébitis eas, quæ majóres et fortióres vobis sunt. Omnis locus quem calcáverit pes vester, vester erit. A desérto et a Líbano, a flúmine magno Euphráte usque ad mare Occidentále, erunt términi vestri. Nullus stabit contra vos: terrórem vestrum et formídinem dabit Dóminus, Deus vester, super omnem terram, quam calcatúri estis, sicut locútus est vobis Dóminus, Deus vester.
-$Deo Gratias
+$Deo gratias
 
 [GradualeL2]
 !Ps 83:10; 83:9
@@ -58,7 +56,7 @@ $Per Dominum
 Léctio libri Machabæórum
 !2 Mach 1:23-26; 1:27
 In diébus illis: Oratiónem faciébant omnes sacerdótes, dum consummarétur sacrifícium, Jónatha inchoánte, céteris autem respondéntibus. Et Nehemíæ erat orátio hunc habens modum: Dómine Deus, ómnium Creátor, terríbilis et fortis, justus et miséricors, qui solus es bonus rex, solus præstans, solus justus et omnípotens et ætérnus, qui líberas Israël de omni malo, qui fecísti patres eléctos et sanctificásti eos: áccipe sacrifícium pro univérso pópulo tuo Israël, et custódi partem tuam et sanctífica: ut sciant gentes, quia tu es Deus noster.
-$Deo Gratias
+$Deo gratias
 
 [GradualeL3]
 !Ps 89:13; 89:1
@@ -73,7 +71,7 @@ $Per Dominum
 Léctio libri Sapiéntiæ
 !Eccli 36:1-10
 Miserére nostri, Deus ómnium, et réspice nos, et osténde nobis lucem miseratiónum tuárum: et immítte timórem tuum super gentes, quæ non exquisiérunt te, ut cognóscant, quia non est Deus nisi tu, et enárrent magnália tua. Alleva manum tuam super gentes aliénas, ut vídeant poténtiam tuam. Sicut enim in conspéctu eórum sanctificátus es in nobis, sic in conspéctu nostro magnificáberis in eis, ut cognóscant te, sicut et nos cognóvimus, quóniam non est Deus præter te, Dómine. Innova signa et immúta mirabília. Glorífica manum et bráchium dextrum. Excita furórem et effúnde iram. Tolle adversárium et afflíge inimícum. Festína tempus et meménto finis, ut enárrent mirabília tua, Dómine, Deus noster.
-$Deo Gratias
+$Deo gratias
 
 [GradualeL4]
 !Ps 140:2
@@ -85,16 +83,13 @@ Actiónes nostras, quǽsumus, Dómine, aspirándo prǽveni, et adjuvándo prosé
 $Per Dominum
 
 [LectioL5]
-Léctio Daniélis Prophétæ
-!Dan 3:47-51
-In diébus illis: Angelus Dómini descéndit cum Azaría et sóciis ejus in fornácem: et excússit flammam ignis de fornáce, et fecit médium fornácis quasi ventum roris flantem. Flamma autem effundebátur super fornácem cúbitis quadragínta novem: et erúpit, et incéndit, quos répperit juxta fornácem de Chaldǽis, minístros regis, qui eam incendébant. Et non tétigit eos omníno ignis, neque contristavit, nec quidquam moléstiæ íntulit. Tunc hi tres quasi ex uno ore laudábant, et glorificábant, et benedicébant Deum in fornáce, dicéntes:
-_
-!Hymnus
-!Dan 3:52-53
-Benedíctus es, Dómine, Deus patrum nostrórum. Et laudábilis et gloriósus in sǽcula. Et benedíctum nomen glóriæ tuæ, quod est sanctum. Et laudábile et gloriósum in sǽcula. Benedíctus es in templo sancto glóriæ tuæ. Et laudábilis et gloriósus in sǽcula. Benedíctus es super thronum sanctum regni tui. Et laudábilis et gloriósus in sǽcula. Benedíctus es super sceptrum divinitátis tuæ. Et laudábilis et gloriósus in sǽcula. Benedíctus es, qui sedes super Chérubim, íntuens abýssos. Et laudábilis et gloriósus in sǽcula. Benedíctus es, qui ámbulas super pennas ventórum et super undas maris. Et laudábilis et gloriósus in sǽcula. Benedícant te omnes Angeli et Sancti tui. Et laudent te et gloríficent in sǽcula. Benedícant te cœli, terra, mare, et ómnia quæ in eis sunt. Et laudent te et gloríficent in sǽcula. Glória Patri, et Fílio, et Spirítui Sancto. Et laudábili et glorióso in sǽcula. Sicut erat in princípio, et nunc, et semper: et in sǽcula sæculórum. Amen. Et laudábili et glorióso in sǽcula. Benedíctus es, Dómine, Deus patrum nostrórum. Et laudábilis et gloriósus in sǽcula.
+@Tempora/093-6
 
 [OratioL5]
-Deus, qui tribus púeris mitigásti flammas ígnium: concéde propítius; ut nos fámulos tuos non exúrat flamma vitiórum.
+@Tempora/093-6
+
+[Oratio]
+Pópulum tuum, quǽsumus, Dómine, propítius réspice: atque ab eo flagélla tuæ iracúndiæ cleménter avérte.
 $Per Dominum
 
 [Lectio]

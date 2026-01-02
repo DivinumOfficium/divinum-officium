@@ -1,29 +1,27 @@
-[Rank]
-Dominica II Adventus;;Semiduplex;;5.6
+[Officium]
+Dominica II Adventus
 
-[Rank1960]
-Dominica II Adventus;;Semiduplex;;6
+[Rank]
+;;Semiduplex II. classis;;5.6
+
+[Rank] (rubrica 1570 aut rubrica 1888)
+;;Semiduplex II. classis;;6.1
+
+[Rank] (rubrica 196)
+;;Semiduplex;;6.01
 
 [Rule]
 9 lectiones
 Antiphonas horas
 
-[Ant Vespera]
+[Ant Vespera] (nisi rubrica tridentina)
 @:Ant Laudes
-
-[Ant Vespera](rubrica 1570 aut rubrica 1910)
-@Psalterium/Psalmi major:Daya6 Vespera
-
-[Ant Vespera 3]
-@:Ant Laudes
-
-[Capitulum Vespera]
-!Rom 15:4
-v. Fratres: Quæcúmque scripta sunt, ad nostram doctrínam scripta sunt: ut per patiéntiam, et consolatiónem Scripturárum spem habeámus.
-$Deo gratias
 
 [Ant 1]
 Veni, Dómine, * visitáre nos in pace, ut lætémur coram te corde perfécto.
+
+[Ant 1] (rubrica cisterciensis)
+Sion, noli timére, * ecce Deus tuus véniet, allelúja.
 
 [Oratio]
 Excita, Dómine, corda nostra ad præparándas Unigéniti tui vias: ut, per ejus advéntum, purificátis tibi méntibus servíre mereámur:
@@ -73,7 +71,7 @@ R. Et áuferet a te omnem tribulatiónem.
 [Lectio4]
 De Expositióne sancti Hierónymi Presbýteri in Isaíam Prophétam
 !Liber 4. in cap. 11 Isaíæ.
-Et egrediétur virga de radíce Jesse. Usque ad principium visiónis, vel pónderis Babylónis, quod vidit Isaías, fílius Amos, omnis hæc prophetía de Christo est: quam per partes vólumus explanare, ne simul propósita atque disserta lectóris confundat memóriam. Virgam et flórem de radíce Jesse ipsum Dóminum Judæi interpretántur: quod scilicet in virga regnántis poténtia, in flore pulchritúdo monstrétur.
+Et egrediétur virga de radíce Jesse. Usque ad principium visiónis, vel pónderis Babylónis, quod vidit Isaías, fílius Amos, omnis hæc prophetía de Christo est: quam per partes vólumus explanare, ne simul propósita atque disserta lectóris confundat memóriam. Virgam et florem de radíce Jesse ipsum Dóminum Judæi interpretántur: quod scilicet in virga regnántis poténtia, in flore pulchritúdo monstrétur.
 
 [Responsory4]
 R. Ecce véniet Dóminus, protéctor noster, Sanctus Israël, 
@@ -82,16 +80,16 @@ V. Et dominábitur a mari usque ad mare, et a flúmine usque ad términos orbis 
 R. Corónam regni habens in cápite suo.
 
 [Lectio5]
-Nos autem virgam de radíce Jesse sanctam Mariam Vírginem intélligamus, quæ nullum hábuit sibi frúticem cohæréntem, de qua et supra légimus: Ecce virgo concípiet et pariet fílium. Et flórem, Dóminum Salvatórem, qui dicit in Cántico canticórum: Ego flos campi, et lílium convallium.
+Nos autem virgam de radíce Jesse sanctam Mariam Vírginem intelligámus, quæ nullum hábuit sibi frúticem cohæréntem, de qua et supra légimus: Ecce virgo concípiet et pariet fílium. Et florem, Dóminum Salvatórem, qui dicit in Cántico canticórum: Ego flos campi, et lílium convallium.
 
 [Responsory5]
-R. Sicut mater consolátur fílios suos, ita consolábor vos, dicit Dóminus: et de Jerúsalem civitáte quam elégi, véniet vobis auxílium: 
+R. Sicut mater consolátur fílios suos, ita consolábor vos, dicit Dóminus: et de Jerúsalem civitáte quam elégi, véniet vobis auxílium:
 * Et vidébitis et gaudébit cor vestrum.
 V. Dabo in Sion salútem, et in Jerúsalem glóriam meam.
 R. Et vidébitis et gaudébit cor vestrum.
 
 [Lectio6]
-Super hunc ígitur flórem, qui de trunco et radíce Jesse per Mariam Vírginem repénte consúrget, requiéscet Spíritus Dómini: quia in ipso complácuit omnem plenitúdinem divinitátis habitáre corporáliter: nequaquam per partes, ut in ceteris Sanctis: sed juxta Evangélium eórum, quod Hebræo sermóne conscríptum legunt Nazaræi: Descéndet super eum omnis fons Spíritus Sancti. Dóminus autem Spíritus est: et ubi Spíritus Dómini, ibi libertas.
+Super hunc ígitur florem, qui de trunco et radíce Jesse per Mariam Vírginem repénte consúrget, requiéscet Spíritus Dómini: quia in ipso complácuit omnem plenitúdinem divinitátis habitáre corporáliter: nequaquam per partes, ut in ceteris Sanctis: sed juxta Evangélium eórum, quod Hebræo sermóne conscríptum legunt Nazaræi: Descéndet super eum omnis fons Spíritus Sancti. Dóminus autem Spíritus est: et ubi Spíritus Dómini, ibi libertas.
 
 [Responsory6]
 R. Jerúsalem, plantábis víneam in móntibus tuis: exsultábis, quóniam dies Dómini véniet: surge, Sion, convértere ad Dóminum Deum tuum: gaude et lætáre, Jacob: 
@@ -122,7 +120,7 @@ Quid est ergo dicere: Beátus qui non fúerit scandalizátus in me; nisi apérta
 [Responsory8]
 R. Festína, ne tardáveris, Dómine: 
 * Et líbera pópulum tuum.
-V. Veni, Dómine, et noli tardáre: reláxa facinóra plebi tuæ.
+V. Veni, Dómine, et noli tardáre: reláxa facínora plebi tuæ.
 R. Et líbera pópulum tuum.
 
 [Lectio9]
@@ -138,19 +136,18 @@ R. Visitáre pópulum suum in pace, et constitúere super eum vitam sempitérnam
 
 [Ant Laudes]
 Ecce in núbibus cæli * Dóminus véniet cum potestáte magna, allelúja.
-Urbs fortitúdinis * nostræ Sion, Salvátor ponétur in ea murus et ántemurale: aperíte portas, quia nobíscum Deus, allelúja.
+Urbs fortitúdinis * nostræ Sion, Salvátor ponétur in ea murus et antemurále: aperíte portas, quia nobíscum Deus, allelúja.
 Ecce apparébit * Dóminus, et non mentiétur: si moram fécerit, exspécta eum, quia véniet, et non tardábit, allelúja.
 Montes et colles * cantábunt coram Deo laudem, et ómnia ligna silvárum plaudent mánibus: quóniam véniet Dominátor Dóminus in regnum ætérnum, allelúja, allelúja.
 Ecce Dóminus * noster cum virtúte véniet, et illuminábit óculos servórum suórum, allelúja.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Rom 15:4
+v. Fratres: Quæcúmque scripta sunt, ad nostram doctrínam scripta sunt: ut per patiéntiam, et consolatiónem Scripturárum spem habeámus.
+$Deo gratias
 
 [Ant 2]
 Joánnes autem * cum audísset in vínculis ópera Christi, mittens duos ex discípulis suis, ait illi: Tu es qui ventúrus es, an álium exspectámus?
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Capitulum Sexta]
 !Rom 15:5-6
@@ -162,5 +159,8 @@ $Deo gratias
 v. Deus autem spei répleat vos omni gáudio et pace in credéndo: ut abundétis in spe, et in virtúte Spíritus Sancti.
 $Deo gratias
 
+[Ant Vespera 3]
+@:Ant Laudes
+
 [Ant 3]
-Tu es, qui ventúrus es, * an álium exspectámus? Dícite Joánni quæ vidístis: Ad lumen rédeunt cǽci, mórtui resúrgunt, páuperes evangelizántur, allelúja.
+Tu es, qui ventúrus es, * an álium exspectámus? Dícite Joánni quæ vidístis: Ad lumen rédeunt cæci, mórtui resúrgunt, páuperes evangelizántur, allelúja.

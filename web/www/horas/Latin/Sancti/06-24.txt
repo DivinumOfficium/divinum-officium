@@ -1,8 +1,10 @@
-[Rank]
-In Nativitate S. Joannis Baptistæ;;Duplex I classis cum Octava communi;;6.5;;
+[Officium]
+In Nativitate S. Joannis Baptistæ
 
-[Rank1960]
-In Nativitate S. Joannis Baptistæ;;Duplex I classis;;6;;
+[Rank]
+;;Duplex I classis cum Octava communi;;6.5;;
+(sed rubrica 196)
+;;Duplex I classis;;6;;
 
 [Rule]
 Proper;
@@ -18,10 +20,20 @@ Ex útero senectútis * et stérili Joánnes natus est, præcúrsor Dómini.
 Iste puer * magnus coram Dómino: nam et manus ejus cum ipso est.
 Nazarǽus * vocábitur puer iste: vinum et síceram non bibet, et omne immúndum non manducábit ex útero matris suæ.
 
-[Capitulum Vespera]
-!Isa 49:1
-v. Audíte, ínsulæ, et atténdite, pópuli de longe: Dóminus ab útero vocávit me, de ventre matris meæ recordátus est nóminis mei.
-$Deo gratias
+[Ant Vespera] (rubrica cisterciensis)
+Ipse præíbit * ante illum in spíritu et virtúte Elíæ paráre Dómino plebem perféctam.
+Joánnes * est nomen ejus: vinum et síceram non bibet, et multi in nativitáte ejus gaudébunt.
+Vox clamántis * in desérto: Paráte viam Dómini, rectas fácite sémitas Dei nostri.
+Inter natos * mulíerum non surréxit major Joánne Baptísta.
+Nazarǽus * vocábitur puer iste: vinum et síceram non bibet, et omne immúndum non manducábit ex útero matris suæ.
+
+[Responsory Vespera 1] (rubrica cisterciensis)
+Responsorium. Inter natos mulíerum non surréxit major Joánne Baptísta : * Qui viam Dómini præparávit in éremo.
+V. Fuit homo missus a Deo, cui nomen erat Joánnes.
+R. Qui viam Dómini præparávit in éremo.
+
+[Responsory Vespera] (rubrica cisterciensis)
+@:Responsory Breve Nona
 
 [Hymnus Vespera]
 v. Ut queant laxis resonáre fibris
@@ -61,16 +73,22 @@ R. Cui nomen erat Joánnes.
 Ingrésso * Zacharía templum Dómini, appáruit ei Gábriel Angelus stans a dextris altáris incénsi.
 
 [Oratio]
-Deus, qui præséntem diem honorábilem nobis in beáti Joánnis nativitáte fecísti:~
-da pópulis tuis spirituálium grátiam gaudiórum; et ómnium fidélium mentes dírige~
-in viam salútis ætérnæ.
+Deus, qui præséntem diem honorábilem nobis in beáti Joánnis nativitáte fecísti: da pópulis tuis spirituálium grátiam gaudiórum; et ómnium fidélium mentes dírige in viam salútis ætérnæ.
+$Per Dominum
+
+[Octava 1]
+!Commemoratio Octavæ S. Joannis Baptístæ
+Ant. Ingrésso Zacharía templum Dómini, appáruit ei Gábriel Angelus stans a dextris altáris incénsi.
+_
+V. Fuit homo missus a Deo.
+R. Cui nomen erat Joánnes.
+_
+$Oremus
+v. Deus, qui præséntem diem honorábilem nobis in beáti Joánnis nativitáte fecísti: da pópulis tuis spirituálium grátiam gaudiórum; et ómnium fidélium mentes dírige in viam salútis ætérnæ.
 $Per Dominum
 
 [Invit]
 Regem Præcursóris Dóminum, * Veníte, adorémus.
-
-[HymnusM Matutinum]
-@:Hymnus Matutinum:s/posses/saltem/ s/Crímine linguæ/Flámine posses/ s/durum/hirtum/ s/Sit decus/Glória/ s/semper/alme/ s/virtus/semper/ s/Témporis ævo/Témpore sæcli/
 
 [Hymnus Matutinum]
 v. Antra desérti téneris sub annis,
@@ -99,6 +117,9 @@ Spíritus semper, Deus unus omni
 Témporis ævo. 
 Amen.
 
+[HymnusM Matutinum]
+@:Hymnus Matutinum:s/posses/saltem/ s/Crímine linguæ/Flámine posses/ s/durum/hirtum/ s/Sit decus/Glória/ s/semper/alme/ s/virtus/semper/ s/Témporis ævo/Témpore sæcli/
+
 [Ant Matutinum]
 Priúsquam te formárem * in útero, novi te; et ántequam progrederéris, sanctificávi te.;;1
 Ad ómnia quæ mittam te, * dicit Dóminus, ibis: ne tímeas, et quæ mandávero tibi, loquéris ad eos.;;2
@@ -113,6 +134,28 @@ R. Joánne Baptísta.
 Pósuit os meum * Dóminus quasi gládium acútum: sub umbra manus suæ protéxit me.;;14
 Formans me * ex útero servum sibi Dóminus, dicit: Dedi te in lucem géntium, ut sis salus mea usque ad extrémum terræ.;;20
 Reges vidébunt, * et consúrgent príncipes et adorábunt Dóminum Deum tuum, qui elégit te.;;33
+V. Elísabeth Zacharíæ magnum virum génuit.
+R. Joánnem Baptístam, præcursórem Dómini.
+
+[Ant Matutinum]
+Priúsquam te formárem * in útero, novi te; et ántequam progrederéris, sanctificávi te.;;1
+Ad ómnia quæ mittam te, * dicit Dóminus, ibis: ne tímeas, et quæ mandávero tibi, loquéris ad eos.;;2
+Ne tímeas * a fácie eórum, quia ego tecum sum, dicit Dóminus.;;3
+Misit Dóminus * manum suam, et tétigit os meum, et prophétam in géntibus dedit me Dóminus.;;4
+Ecce dedi verba mea * in ore tuo: ecce constítui te super gentes et regna.;;5
+Dóminus * ab útero vocávit me, de ventre matris meæ recordátus est nóminis mei.;;8
+Pósuit os meum * Dóminus quasi gládium acútum: sub umbra manus suæ protéxit me.;;14
+Formans me * ex útero servum sibi Dóminus, dicit: Dedi te in lucem géntium, ut sis salus mea usque ad extrémum terræ.;;20
+Reges vidébunt, * et consúrgent príncipes et adorábunt Dóminum Deum tuum, qui elégit te.;;33
+
+[Nocturn 1 Versum]
+@:Versum 1
+
+[Nocturn 2 Versum]
+V. Inter natos mulíerum non surréxit major.
+R. Joánne Baptísta.
+
+[Nocturn 3 Versum]
 V. Elísabeth Zacharíæ magnum virum génuit.
 R. Joánnem Baptístam, præcursórem Dómini.
 
@@ -220,6 +263,9 @@ R. Et multi in nativitáte ejus gaudébunt.
 Joánnes est, inquit, nomen ejus; hoc est, non nos ei nomen impónimus, qui jam a Deo nomen accépit. Habet vocábulum suum, quod agnóvimus, non quod elégimus. Habent hoc mérita Sanctórum, ut a Deo nomen accípiant. Sic Jacob Israël dícitur, quia Deum vidit. Sic Dóminus noster Jesus nominátus est, ántequam natus; cui non Angelus, sed Pater nomen impósuit. Vides Angelos quæ audíerint, non quæ usurpáverint, nuntiáre. Nec miréris, si nomen múlier, quod non audívit, asséruit; quando Spíritus ei Sanctus, qui Angelo mandáverat, revelávit.
 &teDeum
 
+[Versum 0]
+@:Versum 1
+
 [Ant Laudes]
 Elísabeth Zacharíæ * magnum virum génuit, Joánnem Baptístam, præcursórem Dómini.
 Innuébant patri ejus * quem vellet vocári eum: et scripsit dicens: Joánnes est nomen ejus.
@@ -228,10 +274,12 @@ Inter natos mulíerum * non surréxit major Joánne Baptísta.
 Tu, puer, * Prophéta Altíssimi vocáberis; præíbis ante Dóminum paráre vias ejus.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Isa 49:1
+v. Audíte, ínsulæ, et atténdite, pópuli de longe: Dóminus ab útero vocávit me, de ventre matris meæ recordátus est nóminis mei.
+$Deo gratias
 
-[HymnusM Laudes]
-@:Hymnus Laudes:s/te fructu cumuláta centum/centéno cumuláta fructu/ s/Néxibus/Te sacer/ s/revélle/repélle:/ s/culpæ sine labe/pulsa livióne/ s/beátos/sacrátos/
+[Responsory Laudes] (rubrica cisterciensis)
+@:Responsory Breve Tertia
 
 [Hymnus Laudes]
 v. O nimis felix, meritíque celsi,
@@ -260,83 +308,15 @@ Súpplices et nos véniam precámur:
 Parce redémptis.
 Amen.
 
+[HymnusM Laudes]
+@:Hymnus Laudes:s/te fructu cumuláta centum/centéno cumuláta fructu/ s/Néxibus/Te sacer/ s/revélle/repélle:/ s/culpæ sine labe/pulsa livióne/ s/beátos/sacrátos/
+
 [Versum 2]
 V. Iste puer magnus coram Dómino.
 R. Nam et manus ejus cum ipso est.
 
 [Ant 2]
 Apértum est * os Zacharíæ, et prophetávit dicens: Benedíctus Deus Israël.
-
-[Lectio Prima]
-!Isa 49:7
-v. Reges vidébunt, et consúrgent príncipes et adorábunt Dóminum Deum tuum, et Sanctum Israël, qui elégit te.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
-R.br. Fuit homo * Missus a Deo.
-R. Fuit homo * Missus a Deo.
-V. Cui nomen erat Joánnes.
-R. Missus a Deo.
-&Gloria
-R. Fuit homo * Missus a Deo.
-_
-V. Inter natos mulíerum non surréxit major.
-R. Joánne Baptísta.
-
-[Capitulum Sexta]
-!Isa 49:5-6
-v. Et nunc, hæc dicit Dóminus formans me ex útero servum sibi: Dedi te in lucem géntium, ut sis salus mea usque ad extrémum terræ.
-$Deo gratias
-
-[Responsory Sexta]
-R.br. Inter natos mulíerum * Non surréxit major.
-R. Inter natos mulíerum * Non surréxit major.
-V. Joánne Baptísta.
-R. Non surréxit major.
-&Gloria
-R. Inter natos mulíerum * Non surréxit major.
-_
-V. Elísabeth Zacharíæ magnum virum génuit.
-R. Joánnem Baptístam, præcursórem Dómini.
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
-R.br. Elísabeth Zacharíæ * Magnum virum génuit.
-R. Elísabeth Zacharíæ * Magnum virum génuit.
-V. Joánnem Baptístam, præcursórem Dómini.
-R. Magnum virum génuit.
-&Gloria
-R. Elísabeth Zacharíæ * Magnum virum génuit.
-_
-V. Iste puer magnus coram Dómino.
-R. Nam et manus ejus cum ipso est.
-
-[Ant Vespera 3]
-@:Ant Laudes
-
-[Versum 3]
-@:Versum 2
-
-[Ant 3]
-Puer * qui natus est nobis, plus quam prophéta est: hic est enim, de quo Salvátor ait: Inter natos mulíerum non surréxit major Joánne Baptísta.
-
-[Octava 1]
-!Commemoratio Octavæ S. Joannis Baptístæ
-Ant. Ingrésso Zacharía templum Dómini, appáruit ei Gábriel Angelus stans a dextris altáris incénsi.
-_
-V. Fuit homo missus a Deo.
-R. Cui nomen erat Joánnes.
-_
-$Oremus
-v. Deus, qui præséntem diem honorábilem nobis in beáti Joánnis nativitáte fecísti:~
-da pópulis tuis spirituálium grátiam gaudiórum; et ómnium fidélium mentes dírige~
-in viam salútis ætérnæ.
-$Per Dominum
 
 [Octava 2]
 !Commemoratio Octavæ S. Joannis Baptístæ
@@ -346,7 +326,67 @@ V. Iste puer magnus coram Dómino.
 R. Nam et manus ejus cum ipso est.
 _
 $Oremus
-v. Deus, qui præséntem diem honorábilem nobis in beáti Joánnis nativitáte fecísti:~
-da pópulis tuis spirituálium grátiam gaudiórum; et ómnium fidélium mentes dírige~
-in viam salútis ætérnæ.
+v. Deus, qui præséntem diem honorábilem nobis in beáti Joánnis nativitáte fecísti: da pópulis tuis spirituálium grátiam gaudiórum; et ómnium fidélium mentes dírige in viam salútis ætérnæ.
 $Per Dominum
+
+[Lectio Prima]
+!Isa 49:7
+v. Reges vidébunt, et consúrgent príncipes et adorábunt Dóminum Deum tuum, et Sanctum Israël, qui elégit te.
+
+[Responsory Breve Tertia]
+R.br. Fuit homo * Missus a Deo.
+R. Fuit homo * Missus a Deo.
+V. Cui nomen erat Joánnes.
+R. Missus a Deo.
+&Gloria
+R. Fuit homo * Missus a Deo.
+
+[Versum Tertia]
+@:Nocturn 2 Versum
+
+[Capitulum Sexta]
+!Isa 49:5-6
+v. Et nunc, hæc dicit Dóminus formans me ex útero servum sibi: Dedi te in lucem géntium, ut sis salus mea usque ad extrémum terræ.
+$Deo gratias
+
+[Responsory Breve Sexta]
+R.br. Inter natos mulíerum * Non surréxit major.
+R. Inter natos mulíerum * Non surréxit major.
+V. Joánne Baptísta.
+R. Non surréxit major.
+&Gloria
+R. Inter natos mulíerum * Non surréxit major.
+
+[Versum Sexta]
+@:Nocturn 3 Versum
+
+[Capitulum Nona]
+@:Lectio Prima
+$Deo gratias
+
+[Responsory Breve Nona]
+R.br. Elísabeth Zacharíæ * Magnum virum génuit.
+R. Elísabeth Zacharíæ * Magnum virum génuit.
+V. Joánnem Baptístam, præcursórem Dómini.
+R. Magnum virum génuit.
+&Gloria
+R. Elísabeth Zacharíæ * Magnum virum génuit.
+
+[Versum Nona]
+@:Versum 2
+
+[Ant Vespera 3]
+@:Ant Laudes
+(sed rubrica 1570)
+@:Ant Vespera
+
+[Versum 3]
+@:Versum 2
+(sed rubrica 1570 aut rubrica cisterciensis)
+@:Versum 1
+
+[Ant 3]
+Puer * qui natus est nobis, plus quam prophéta est: hic est enim, de quo Salvátor ait: Inter natos mulíerum non surréxit major Joánne Baptísta.
+
+[Ant 3] (rubrica cisterciensis)
+Et posuérunt * omnes qui audiérunt in corde suo, dicéntes: Quis, putas, puer iste erit? Etenim manus Dómini erat cum illo. Et Zacharías pater ejus replétus est Spíritu sancto; et prophetávit, dicens: Benedíctus Deus Israël, quia visitávis, et fecit redemptiónem plebis suæ.

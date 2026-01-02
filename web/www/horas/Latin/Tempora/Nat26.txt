@@ -1,0 +1,35 @@
+[Officium]
+Diei II infra Octavam Nativitatis
+
+[Rank]
+;;Semiduplex;;2.1;;ex Sancti/12-25
+
+[Rank] (rubrica 196)
+;;Duplex II classis;;5;;ex Sancti/12-25
+
+[Rule]
+ex Sancti/12-25;
+9 lectiones
+
+[Ant Vespera]
+@Sancti/12-25:Ant Vespera 3
+
+[Versum 1]
+@Sancti/12-25:Versum 3
+
+[Versum 2]
+@Sancti/12-25:Versum 2
+
+[Ant 1C]
+Nésciens Mater Virgo virum, péperit sine dolóre Salvatórem sæculórum, ipsum Regem Angelórum sola Virgo lactábat úbere de cœlo pleno.
+
+[Ant 1]
+@Sancti/12-25:Ant 3
+(sed rubrica cisterciensis)
+@:Ant 1C
+
+[Ant 2C]
+Verbum caro factum est, et habitávit in nobis: et vídimus glóriam ejus, glóriam quasi Unigéniti a Patre plenum grátiæ, et veritátis, allelúia, allelúia, allelúia.
+
+[Ant 2] (rubrica cisterciensis)
+Verbum caro factum est, et habitávit in nobis: et vídimus glóriam ejus, glóriam quasi Unigéniti a Patre plenum grátiæ, et veritátis, allelúia, allelúia, allelúia.

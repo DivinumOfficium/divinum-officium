@@ -1,5 +1,10 @@
+[Officium]
+Feria II infra Hebdomadam II Adventus
+
 [Rank]
-Feria II infra Hebdomadam II Adventus;;Feria major;;2
+;;Feria major;;2.1
+(sed rubrica cisterciensis)
+;;Feria major;;1.15
 
 [Rule]
 Oratio Dominica
@@ -35,8 +40,14 @@ De Isaía Prophéta
 [Responsory3]
 @Tempora/Adv1-1:Responsory3
 
+[Ant Laudes] (rubrica cisterciensis)
+@Tempora/Adv2-0
+
 [Ant 2]
 De cælo véniet * Dominátor Dóminus, et in manu ejus honor et impérium.
 
 [Ant 3]
 Ecce véniet Rex * Dóminus terræ, et ipse áuferet jugum captivitátis nostræ.
+
+[Ant 3] (rubrica cisterciensis)
+Ecce Rex venit * Dóminus terræ, et ipse áuferet jugum captivitátis nostræ.

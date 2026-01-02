@@ -3,11 +3,15 @@
 [Rule]
 12 lectiones
 
+[Ant Matutinum 3N]
+Si in dígito Dei * ejício dæmónia, profécto pervénit in vos regnum Dei.;;269;270;271
+
 [Lectio1]
 @Tempora/Quad3-0:Lectio1:s/-10/-4/ s/5.*//s
 
 [Lectio2]
-@Tempora/Quad3-0:Lectio1:s/2-/5-/ s/2.*5/5/s
+@Tempora/Quad3-0:Lectio1:1-2 s/2-/5-/ 
+@Tempora/Quad3-0:Lectio1:6-11
 
 [Lectio3]
 @Tempora/Quad3-0:Lectio2:
@@ -44,9 +48,6 @@
 [Responsory8]
 @Tempora/Quad3-1:Responsory2
 
-[Ant Matutinum 3N]
-Si in dígito Dei * ejício dæmónia, profécto pervénit in vos regnum Dei.;;269;270;271
-
 [Lectio9]
 @Tempora/Quad3-0:Lectio7:s/Quidam .*//s
 
@@ -73,18 +74,17 @@ Si in dígito Dei * ejício dæmónia, profécto pervénit in vos regnum Dei.;;2
 [Responsory12]
 @Tempora/Quad3-1:Responsory3
 
-[Capitulum Vespera]
-@Tempora/Quad3-0
-_
-@Psalterium/Major Special:QuadM Vespera:3-8
+[Ant 2] (rubrica cisterciensis)
+@Tempora/Quad3-0:Ant Tertia
 
-[Capitulum Laudes]
-@Tempora/Quad3-0
-_
-@Psalterium/Major Special:QuadM Laudes:3-8
+[Ant Prima] (rubrica cisterciensis)
+@Tempora/Quad3-0:Ant 2
 
-[Capitulum Vespera 3]
-@Tempora/Quad3-0:Capitulum Vespera
-_
-@Psalterium/Major Special:QuadM Vespera:3-8
+[Ant Tertia] (rubrica cisterciensis)
+@Tempora/Quad3-0:Ant Sexta
 
+[Ant Sexta] (rubrica cisterciensis)
+@Tempora/Quad3-0:Ant Nona
+
+[Ant Nona] (rubrica cisterciensis)
+@Psalterium/Psalmi/Psalmi minor:Quad:5:s/5 = //

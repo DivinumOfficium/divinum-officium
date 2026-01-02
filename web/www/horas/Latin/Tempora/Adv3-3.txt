@@ -1,11 +1,19 @@
-[Rank]
-Feria IV Quattuor Temporum in Adventu;;Feria major;;2
+[Officium]
+Feria IV Quattuor Temporum in Adventu
+(sed rubrica 196 aut rubrica 1930)
+Feria IV Quattuor Temporum Adventus
 
-[Rank1960]
-Feria IV Quattuor Temporum Adventus;;Feria major;;4
+[Rank]
+;;Feria major;;2.1
+(sed rubrica 196 aut rubrica 1930)
+;;Feria major;;4.9
 
 [Rule]
 Preces Feriales
+
+[Oratio]
+Præsta, quǽsumus, omnípotens Deus: ut redemptiónis nostræ ventúra solémnitas et præséntis nobis vitæ subsídia cónferat, et ætérnæ beatitúdinis prǽmia largiátur.
+$Per Dominum.
 
 [Lectio1]
 @Sancti/03-25:Lectio7
@@ -36,12 +44,23 @@ R. Et nomen ejus Emmánuel vocábitur.
 &Gloria
 R. Et nomen ejus Emmánuel vocábitur.
 
+[Ant Laudes] (rubrica cisterciensis)
+Propter Sion * non tardábo, donec egrediátur ut splendor justus ejus.
+
 [Ant 2]
 Missus est Gábriel * Angelus ad Maríam Vírginem desponsátam Joseph.
 
-[Oratio]
-Præsta, quǽsumus, omnípotens Deus: ut redemptiónis nostræ ventúra solémnitas et præséntis nobis vitæ subsídia cónferat, et ætérnæ beatitúdinis prǽmia largiátur.
-$Per Dominum.
+[Ant Prima] (rubrica cisterciensis)
+Prophétæ prædicavérunt * nasci Salvatórem de Vírgine María.
+
+[Ant Tertia] (rubrica cisterciensis)
+Spíritus * Dómini super me, evangelizáre paupéribus misit me.
+
+[Ant Sexta] (rubrica cisterciensis)
+Lex per Móysen data est; * grátia et véritas per Jesum Christum facta est.
+
+[Ant Nona] (rubrica cisterciensis)
+Annuntiáte * pópulis, et dícite: Ecce, Deus Salvátor noster véniet.
 
 [Ant 3]
 Ecce ancílla Dómini: * fiat mihi secúndum verbum tuum.

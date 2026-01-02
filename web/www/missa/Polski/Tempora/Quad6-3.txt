@@ -1,8 +1,5 @@
-[Rank]
-Feria Quarta Majoris Hebdomadæ;;Feria privilegiata;;6
-
-[Rank] (rubrica 1955 aut rubrica 1960)
-Feria Quarta Hebdomadæ Sanctæ;;Feria privilegiata;;6
+[Officium]
+Feria Quarta Majoris Hebdomadæ
 
 [Rule]
 no Gloria
@@ -26,10 +23,6 @@ v. Na imię Jezusa niech zgina się wszelkie kolano mieszkańców niebios, ziemi
 Panie, wysłuchaj modlitwę moją, a wołanie moje niech do Ciebie przyjdzie.
 v. Na imię Jezusa niech zgina się wszelkie kolano mieszkańców niebios, ziemi i podziemia, gdyż Pan stał się posłuszny aż do śmierci, a była to śmierć krzyżowa. Dlatego Jezus Chrystus jest Panem w chwale Boga Ojca.
 
-[Oratio]
-Dręczeni nieusatnnie naszymi występkami prosimy Cię, wszechmogący Boże, aby nas wyzwoliła męka Jednorodzonego Syna Twego:
-$Qui tecum
-
 [LectioL1]
 Czytanie z Księgi Proroka Izajasza.
 !Iz 63:1-7
@@ -50,6 +43,10 @@ V. Wybaw mnie, Boże, bo wody doszły mi po szyję, ugrzązłem w bagnie bezdenn
 Boże, z Twojej woli Twój Syn poniósł za nas śmierć na drzewie Krzyża, aby uwolnić nas spod władzy szatana; dozwól nam, sługom Twoim dostąpić łaski zmartwychwstania.
 $Per eundem
 
+[Oratio]
+Dręczeni nieusatnnie naszymi występkami prosimy Cię, wszechmogący Boże, aby nas wyzwoliła męka Jednorodzonego Syna Twego:
+$Qui tecum
+
 [Lectio]
 Czytanie z Księgi Proroka Izajasza.
 !Iz 53:1-12
@@ -69,9 +66,8 @@ V. Ty powstań i bądź łaskawy dla Syjonu, bo nadeszła pora, byś się nad ni
 (rubrica 1955 aut rubrica 1960 dicitur)
 @Tempora/Quad6-0r:Munda Cor Passionis
 _
-v.~
 (deinde dicuntur semper)
-Pasja Pana naszego Jezusa Chrystusa według Łukasza.
+v. Pasja Pana naszego Jezusa Chrystusa według Łukasza.
 (rubrica 1955 aut rubrica 1960 dicitur)
 !Łk 22:39-71; 23:1-53
 (rubrica 1570 aut rubrica 1910 aut rubrica divino afflatu dicitur)
@@ -99,7 +95,7 @@ C. Był też nad Nim i napis w języku greckim, łacińskim i hebrajskim: Ten je
 mnie, gdy przybędziesz do Królestwa Twego. C. I rzekł mu Jezus: J. Zaprawdę powiadam tobie, dziś ze mną będziesz w raju.
 C. A była prawie godzina szósta i ciemności zaległy całą ziemię aż do godziny dziewiątej. I zaćmiło się słońce, a zasłona świątyni rozdarła się w pośrodku. A Jezus, wołając głosem wielkim, rzekł: J. Ojcze, w ręce Twoje oddaję ducha mego. C. A to rzekłszy, skonał. (Wszyscy klękają i modlą się w milczeniu)
 Setnik zaś, widząc, co się stało, wielbił Boga mówiąc: S. Człowiek ten zaiste był sprawiedliwy.
-C. I cała rzesza tych, którzy się zeszli na to widowisko, widząc, co się działo, powracała bijąc się w piersi. Tymczasem wszyscy znajomi Jego stali z daleka, przypatrując się wraz z niewiastami, które przyszły były za Nim z Galilei.
+C. I cała rzesza tych, którzy się zeszli na to widowisko, widząc, co się działo, powracała bijąc się w piersi. Tymczasem wszyscy znajomi Jego stali z daleka, przypatrując się wraz z niewiastami, które przyszły były za Nim z Galilei. ~
 (deinde dicuntur)
 
 _
@@ -107,7 +103,6 @@ v. Oczyść serce i wargi moje, wszechmogący Boże, któryś wargi proroka Izaj
 D. Racz pobłogosławić, ojcze.
 S. Pan niech będzie w sercu twoim i na wargach twoich, byś godnie i należycie głosił Jego Ewangelię. W imię Ojca, i Syna, + i Ducha Świętego. Amen.
 _
-v. ~
 (sed rubrica 1955 aut rubrica 1960 haec versus omittuntur)
 A oto z Arymatei, miasta judzkiego, mąż imieniem Józef, który był senatorem, mąż dobry i sprawiedliwy, niegodzący się na ich wyrok i czyny, a oczekujący Królestwa Bożego. Ten Przyszedł do Piłata i prosił o ciało Jezusowe I zdjąwszy, owinął prześcieradłem i złożył je w wykutym grobowcu, w którym nikt jeszcze nie był położony.
 

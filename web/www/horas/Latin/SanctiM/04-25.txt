@@ -1,17 +1,11 @@
-[Rank]
-S. Marci Evangelistæ;;Duplex II classis;;5;;ex C1p
+@Sancti/04-25
 
 [Rule]
+ex C1;
 12 lectiones
-
-[Ant Vespera]
-@Commune/C1p
 
 [Oratio]
 @Sancti/04-25
-
-[Hymnus Matutinum]
-@Commune/C1p:Hymnus Matutinum
 
 [Lectio1]
 @CommuneM/C1a
@@ -31,21 +25,20 @@ S. Marci Evangelistæ;;Duplex II classis;;5;;ex C1p
 [Lectio6]
 @Sancti/04-25:Lectio5
 
+[Lectio7]
+@CommuneM/C1a:Lectio5
+
+[Lectio8]
+@CommuneM/C1a:Lectio6
+
 [Lectio9]
-@Commune/C1a:Lectio7:s/ Nemo.*//s
+@CommuneM/C1a
 
 [Lectio10]
-@Commune/C1a:Lectio7:s/.*Nemo/Nemo/s s/$/~/
-@Commune/C1a:Lectio8:s/ Bene.*//s
+@CommuneM/C1a
 
 [Lectio11]
-@Commune/C1a:Lectio8:s/.*Bene/Bene/s
+@CommuneM/C1a
 
 [Lectio12]
-@Commune/C1a:Lectio9
-
-[Ant Laudes]
-@Commune/C1p
-
-[Ant Vespera 3]
-@Commune/C1p::s/125/138/
+@CommuneM/C1a

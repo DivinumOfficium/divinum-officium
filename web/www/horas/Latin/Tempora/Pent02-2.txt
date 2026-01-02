@@ -1,8 +1,17 @@
-[Rank]
-Feria Tertia infra Octavam Corporis Christi;;Semiduplex II class;;5;;ex Tempora/Pent01-4
+[Officium]
+Feria Tertia infra Octavam Corporis Christi
 
-[Rank1960]
-Feria III infra Hebdomadam II post Octavam Pentecostes;;Feria;;1
+[Officium] (rubrica 196 aut rubrica 1955)
+Feria III infra Hebdomadam II post Octavam Pentecostes
+
+[Rank]
+;;Semiduplex II class;;5.6;;ex Tempora/Pent01-4
+(sed rubrica tridentina nisi rubrica cisterciensis)
+;;Semiduplex IIS class;;2.9;;ex Tempora/Pent01-4
+(sed rubrica cisterciensis)
+;;Semiduplex;;2.1;;ex Tempora/Pent01-4
+(sed rubrica 196 aut rubrica 1955)
+;;Feria;;1
 
 [Rule]
 ex Tempora/Pent01-4;
@@ -25,7 +34,7 @@ De libro primo Regum
 7 Nunc ergo arrípite et fácite plaustrum novum unum, et duas vaccas fœtas, quibus non est impósitum jugum, júngite in plaustro et reclúdite vítulos eárum domi.
 8 Tolletísque arcam Dómini et ponétis in plaustro et vasa áurea, quæ exsolvétis ei pro delícto, ponétis in capséllam ad latus ejus, et dimíttite eam ut vadat.
 9 Et aspiciétis, et, si quidem per viam fínium suórum ascénderit contra Béthsames ipse fecit nobis hoc malum grande; sin autem mínime, sciémus quia nequáquam manus ejus tétigit nos, sed casu áccidit.
-10 Fecérunt ergo illi hoc modo. 
+10 Fecérunt ergo illi hoc modo.
 
 [Responsory2 1960]
 @Tempora/Pent03-2Feria:Responsory2
@@ -66,3 +75,12 @@ Quantum autem pértinet ad illam mortem, de qua terret Dóminus, qua mórtui sun
 [Lectio9]
 Quam multi de altári accípiunt, et moriúntur, et accipiéndo moriúntur! Unde dicit Apóstolus: Judícium sibi mandúcat et bibit. Nonne buccélla Domínica venénum fuit Judæ? Et tamen accépit. Et cum accépit, in eum inimícus intrávit; non quia malum accépit, sed quia bonum male malus accépit. Vidéte ergo, fratres, panem cæléstem spiritáliter manducáte, innocéntiam ad altáre apportáte. Peccáta, etsi sunt quotidiána, vel non sint mortífera; ántequam ad altáre accedátis, atténdite quod dicátis: Dimítte nobis débita nostra, sicut et nos dimíttimus debitóribus nostris. Si dimíttis, dimittétur tibi: secúrus accéde, panis est, non venénum.
 &teDeum
+
+[Ant 2] (rubrica cisterciensis)
+@Tempora/Pent01-5
+
+[Ant Vespera 3] (rubrica cisterciensis)
+@Tempora/Pent01-5
+
+[Ant 3] (rubrica cisterciensis)
+@Tempora/Pent01-5

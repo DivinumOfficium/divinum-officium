@@ -1,14 +1,22 @@
-[Rank]
-Feria II infra Octavam Ascensionis;;Semiduplex;;2;;ex Tempora/Pasc5-4
+[Officium]
+Feria II infra Octavam Ascensionis
 
-[Rank1960]
-Feria II post Ascensionem;;Feria;;1;;vide Tempora/Pasc5-4
+[Officium] (rubrica 196 aut rubrica 1955)
+Feria II post Ascensionem
+
+[Rank]
+;;Semiduplex;;2.1;;ex Tempora/Pasc5-4
+(sed rubrica tridentina nisi rubrica cisterciensis)
+;;Semiduplex;;2;;ex Tempora/Pasc5-4
+(sed rubrica 196 aut rubrica 1955)
+;;Feria;;1;;vide Tempora/Pasc5-4
 
 [Rule]
 ex Tempora/Pasc5-4;
 9 Lectiones
 Doxology=Asc
 Feria Te Deum
+No prima Vespera
 
 [Lectio1]
 De Epístola prima beáti Joánnis Apóstoli

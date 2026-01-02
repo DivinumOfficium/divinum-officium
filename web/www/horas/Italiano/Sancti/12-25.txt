@@ -1,16 +1,6 @@
 [Rank]
 In Nativitate Domini;;Duplex I Classis;;6.9
 
-[Rank1960]
-In Nativitate Domini;;Duplex I Classis;;7
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas Horas
-Doxology=Nat
-Special Evangelii Benedictio
-
 [Ant Vespera]
 Il Re pacifico * s'è mostrato magnifico; il suo volto tutta la terra desidera di vedere.;;109
 S'è mostrato magnifico *il Re pacifico su tutti i re di tutta quanta la terra.;;110
@@ -18,7 +8,7 @@ Sono compiuti * per Maria i giorni in cui dare alla luce il Figlio suo primogeni
 Sappiate * che il regno di Dio è vicino: in verità vi dico che non tarderà.;;112
 Alzate le vostre teste; * ecco che s'avvicina la vostra redenzione.;;116
 
-[Capitulum Vespera]
+[Capitulum Vespera 1]
 !Titus 3:4-5
 v. È apparsa la bontà e l'amore per l'uomo di Dio nostro Salvatore; non per le opere di giustizia fatte da noi, ma per sua misericordia egli ci ha salvati.
 $Deo gratias
@@ -60,10 +50,7 @@ insieme col Padre e collo Spirito Santo,
 per i secoli eterni.
 Amen.
 
-[HymnusM Vespera]
-@SanctiM/12-25:HymnusM Vespera
-
-[Versum 1]
+[Versum 1_]
 V. Domani sarà cancellata l'iniquità della terra.
 R. E regnerà su di noi il Salvatore del mondo.
 
@@ -77,26 +64,27 @@ $Per eumdem
 [Invit]
 Cristo è nato per noi: * Venite, adoriamolo.
 
-[Hymnus Matutinum]
-@Sancti/12-25:Hymnus Vespera
-
-[HymnusM Matutinum]
-@:HymnusM Vespera
-
 [Ant Matutinum]
 Il Signore disse * a me Tu sei mio Figlio, oggi io t'ho generato.;;2
 Come sposo * è il Signore ch'esce dalla sua camera nuziale.;;18
 La grazia è cosparsa * sulle tue labbra, perciò Iddio ti ha benedetto in eterno.;;44
-V. Come sposo.
-R. E’ il Signore ch'esce dalla sua camera nuziale.
 Abbiamo ricevuto, * o Dio, la tua misericordia nel mezzo del tuo tempio.;;47
 Spunterà * nei giorni del Signore abbondanza di pace, ed egli dominerà.;;71
 La verità è spuntata * sulla terra, e la giustizia ci ha mirati dal cielo.;;84
-V. Bello tu sei d'aspetto più dei figli degli uomini.
-R. La grazia è cosparsa sulle tue labbra.
-Egli invocherà,* alleluia: Padre mio tu sei, alleluia.;;88
+Egli invocherà, * alleluia: Padre mio tu sei, alleluia.;;88
+(sed rubrica 1960 aut rubrica 1962) Egli invocherà, * alleluia: Padre mio tu sei, alleluia.;;88(2-37)
 Si rallegrino i cieli, * ed esulti la terra al cospetto del Signore, perché viene.;;95
 Ha fatto conoscere, * il Signore, alleluia, la sua salvezza, alleluia.;;97
+
+[Nocturn 1 Versum]
+V. Come sposo.
+R. E’ il Signore ch'esce dalla sua camera nuziale.
+
+[Nocturn 2 Versum]
+V. Bello tu sei d'aspetto più dei figli degli uomini.
+R. La grazia è cosparsa sulle tue labbra.
+
+[Nocturn 3 Versum]
 V. Egli mi invocherà, alleluia.
 R. Padre mio tu sei, alleluia.
 
@@ -182,13 +170,6 @@ R. Poiché colui che i cieli contenere non possono tu lo portasti nel tuo seno.
 &Gloria
 R. Poiché colui che i cieli contenere non possono tu lo portasti nel tuo seno.
 
-[Benedictio3]
-Il Signore onnipotente e misericordioso ci sciolga dal legame dei nostri peccati. Amen.
-Dègnati, o padre, di benedirmi.
-La lettura del Vangelo ci sia di salvezza e protezione. Amen.
-Per le parole del Vangelo siano cancellati i nostri peccati. Amen.
-Le parole del santo Vangelo ci spieghi Cristo Figlio di Dio. Amen.
-
 [Lectio7]
 Lettura del santo Vangelo secondo Luca
 !Luc 2:1-14
@@ -215,11 +196,11 @@ Considerate gl'inizi della Chiesa nascente: Cristo nasce, e i pastori già vegli
 
 [Responsory8]
 R. Il Verbo s'è fatto uomo, ed abitò tra noi: 
-* E noi ne abbiam visto la gloria, quella gloria propria dell' Unigenito del Padre, pieno di grazia e di verità.
+* E noi ne abbiam visto la gloria, quella gloria propria dell'Unigenito del Padre, pieno di grazia e di verità.
 V. Tutte le cose sono state fatte per mezzo di lui, e nulla è stato fatto senza di lui. 
-R. E noi ne abbiam visto la gloria, quella gloria propria dell' Unigenito del Padre, pieno di grazia e di verità.
+R. E noi ne abbiam visto la gloria, quella gloria propria dell'Unigenito del Padre, pieno di grazia e di verità.
 &Gloria
-R. E noi ne abbiam visto la gloria, quella gloria propria dell' Unigenito del Padre, pieno di grazia e di verità.
+R. E noi ne abbiam visto la gloria, quella gloria propria dell'Unigenito del Padre, pieno di grazia e di verità.
 
 [Lectio9]
 Lettura del santo Vangelo secondo Giovanni
@@ -231,7 +212,7 @@ Omelia di sant'Agostino Vescovo
 Affinché tu non abbia del Verbo un'idea bassa, come se si trattasse di parole umane, ascolta ciò che devi pensarne: «Dio era il Verbo» (Joann, 1,1). Ora venga fuori non so quale infedele Ariano a dirci che il Verbo di Dio fu fatto. Come può essere che il Verbo di Dio sia stato fatto, quando Dio per mezzo del Verbo ha fatto tutte le cose? Se esso Verbo di Dio fu fatto, per qual altro verbo fu egli fatto? Se tu dici che esso è stato fatto da un verbo del Verbo, allora io rispondo che esso è l'unico Figlio di Dio. Se poi non ammetti un verbo del Verbo, concedi allora che non è stato fatto quegli per il quale tutto fu fatto. Perché non poté fare se stesso colui per il quale tutto fu fatto. Credi dunque all'Evangelista.
 &teDeum
 
-[Ant Laudes]
+[Ant Laudes_]
 Chi avete visto, e pastori? dite, annunziatecelo, chi è apparso sulla terra? Il Bambino abbiamo visto, e schiere d'Angeli che lodavano in coro il Signore, alleluia, alleluia.
 Una giovane madre * ha dato alla luce il Re, il cui nome è eterno, unendo alle gioie della maternità l'onore della verginità né prima né dopo se n'è vista a lei simile, alleluia.
 L'Angelo disse ai pastori * Vi annunzio una gran gioia: che oggi vi è nato il Salvatore del mondo, alleluia.
@@ -245,7 +226,7 @@ $Deo gratias
 
 [Hymnus Laudes]
 v. Dai confini dell'oriente 
-fino all' estremo occidente, 
+fino all'estremo occidente, 
 cantiamo Cristo Principe 
 nato da Maria Vergine.
 _
@@ -292,55 +273,55 @@ R. La sua salvezza, alleluia.
 [Ant 2]
 Gloria a Dio nel più alto dei cieli, * e pace in terra agli uomini di buona volontà, alleluia, alleluia.
 
+[Octava 2]
+!Commemorazione del Natale.
+Ant. Gloria a Dio nel più alto dei cieli, * e pace in terra agli uomini di buona volontà, alleluia, alleluia.
+_
+V. Ha fatto conoscere il Signore, alleluia.
+R. La sua salvezza, alleluia.
+_
+v. Preghiamo.
+Concedi, Dio onnipotente, che la nuova Nascita, secondo la carne, del tuo Unigenito, ci liberi dall'antica servitù che ne tiene sotto il giogo del peccato.
+$Per eumdem
+
 [Lectio Prima]
 !Heb 1:11-12
 v. Essi (gli esseri) periranno, ma tu rimarrai; e tutti invecchieranno come un vestito e come una veste li rivolterai, e saranno mutati: ma tu sei sempre lo stesso, e i tuoi anni non finiranno mai.
 
-[Capitulum Tertia]
-!Heb 1:1-2
-v. Iddio, che molte volte e in molte guise parlò un tempo ai padri per mezzo dei profeti: in questi ultimi tempi ha parlato a noi per mezzo del Figlio, che costituì erede di ogni cosa, per cui creò anche i secoli.
-$Deo gratias
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Il Verbo s'è fatto uomo, * Alleluia, alleluia.
 R. Il Verbo s'è fatto uomo, * Alleluia, alleluia.
 V. E abitò tra noi.
 R. Alleluia, alleluia.
 &Gloria
 R. Il Verbo s'è fatto uomo, * Alleluia, alleluia.
-_
-V. Egli m'invocherà, alleluia.
-R. Padre mio tu sei, alleluia.
 
 [Capitulum Sexta]
 !Heb 1:10
 v. E (sta scritto): Tu, Signore, in principio hai fondato la terra: ed opera delle tue mani sono i cieli.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Ha fatto conoscere il Signore, * Alleluia, alleluia. 
 R. Ha fatto conoscere il Signore, * Alleluia, alleluia. 
 V. La sua salvezza. 
 R. Alleluia, alleluia.
 &Gloria
 R. Ha fatto conoscere il Signore, * Alleluia, alleluia. 
-_
+
+[Versum Sexta]
 V. Han visto tutti i confini della terra, alleluia.
 R. La salvezza del nostro alleluia.
 
-[Capitulum Nona]
-!Heb 1:11-12
-v. Essi (gli esseri) periranno, ma tu rimarrai; e tutti invecchieranno come un vestito e come una veste li rivolterai, e saranno mutati: ma tu sei sempre lo stesso, e i tuoi anni non finiranno mai.
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Han visto tutti i confini della terra, * Alleluia, alleluia.
 R. Han visto tutti i confini della terra, * Alleluia, alleluia.
 V. La salvezza del nostro Dio.
 R. Alleluia, alleluia.
 &Gloria
 R. Han visto tutti i confini della terra, * Alleluia, alleluia.
-_
+
+[Versum Nona]
 V. Il Verbo s'è fatto uomo, alleluia.
 R. E abitò tra noi, alleluia.
 
@@ -351,32 +332,12 @@ A redimere * ha mandato, il Signore, il suo popolo: ha proclamato eterna la sua 
 Presso il Signore * è la misericordia, e redenzione copiosa presso di lui.;;129
 Un frutto del tuo seno io porrò sul tuo trono.;;131
 
-[Capitulum Vespera 3]
-!Heb 1:1-2
-v. Iddio, che molte volte e in molte guise parlò un tempo ai padri per mezzo dei profeti: in questi ultimi tempi ha parlato a noi per mezzo del Figlio, che costituì erede di ogni cosa, per cui creò anche i secoli.
-$Deo gratias
-
-[Versum 3]
-V. Ha fatto conoscere il Signore, alleluia.
-R. La sua salvezza, alleluia.
-
 [Ant 3]
 Oggi * è nato il Cristo: oggi è apparso il Salvatore: oggi in terra cantano gli Angeli, si rallegrano gli Arcangeli: oggi esultano i giusti dicendo: Gloria a Dio nel più alto dei cieli, alleluia.
 
 [Octava 3]
 !Commemorazione del Natale.
 Ant. Oggi è nato il Cristo: oggi è apparso il Salvatore: oggi in terra cantano gli Angeli, si rallegrano gli Arcangeli: oggi esultano i giusti dicendo: Gloria a Dio nel più alto dei cieli, alleluia.
-_
-V. Ha fatto conoscere il Signore, alleluia.
-R. La sua salvezza, alleluia.
-_
-v. Preghiamo.
-Concedi, Dio onnipotente, che la nuova Nascita, secondo la carne, del tuo Unigenito, ci liberi dall'antica servitù che ne tiene sotto il giogo del peccato.
-$Per eumdem
-
-[Octava 2]
-!Commemorazione del Natale.
-Ant. Gloria a Dio nel più alto dei cieli, * e pace in terra agli uomini di buona volontà, alleluia, alleluia.
 _
 V. Ha fatto conoscere il Signore, alleluia.
 R. La sua salvezza, alleluia.

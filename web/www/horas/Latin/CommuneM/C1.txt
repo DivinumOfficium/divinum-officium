@@ -1,30 +1,20 @@
 @Commune/C1
 
-[Capitulum Vespera]
-@Commune/C1
-_
-@Commune/C1:Responsory Sexta:1-6
+[AntMatutinumM]
+Annuntiavérunt * inter gentes glóriam Dómini, in ómnibus pópulis mirabília ejus;;95
+Déxtera Dómini * salvávit eos, et bráchium sanctum ejus, allelúja;;97
+Perambulábant * in innocéntia cordis sui, in medio domus tuæ;;100
+Gaudéte * et exsultáte, quia nómina vestra scripta sunt in cælis, dicit Dóminus;;253;254;255
 
 [Ant Matutinum]
-In omnem terram * exívit sonus eórum, et in fines orbis terræ verba eórum.;;18
-Clamavérunt justi, * et Dóminus exaudívit eos.;;33
-Constítues eos * príncipes super omnem terram: mémores erunt nóminis tui, Dómine.;;44
-Príncipes populórum * congregáti sunt cum Deo Ábraham.;;46
-Dedísti hereditátem * timéntibus nomen tuum, Dómine.;;60
-Annuntiavérunt * ópera Dei, et facta ejus intellexérunt.;;63
-V. In omnem terram exívit sonus eórum.
-R. Et in fines orbis terræ verba eórum.
-Exaltabúntur * córnua justi, allelúja.;;74
-Annuntiavérunt * inter gentes glóriam Dómini, in ómnibus pópulis mirabília ejus;;95
-Lux orta est * justo, allelúja, rectis corde lætítia, allelúja.;;96
-Déxtera Dómini * salvávit eos, et bráchium sanctum ejus, allelúja;;97
-Custodiébant * testimónia ejus, et præcépta ejus, allelúja.;;98
-Perambulábant * in innocéntia cordis sui, in medio domus tuæ;;100
-V. Constítues eos príncipes super omnem terram.
-R. Mémores erunt nóminis tui, Dómine.
-Gaudéte * et exsultáte, quia nómina vestra scripta sunt in cælis, dicit Dóminus;;253;254;255
-V. Nimis honoráti sunt amíci tui Deus.
-R. Nimis confortátus est principátus eórum.
+@Commune/C1::1-6
+@Commune/C1::7
+@:AntMatutinumM:1
+@Commune/C1::8
+@:AntMatutinumM:2
+@Commune/C1::9
+@:AntMatutinumM:3
+@:AntMatutinumM:4
 
 [Lectio1]
 @Commune/C1:Lectio1:s/-5/-4/ :s/5 .*//s
@@ -41,7 +31,7 @@ R. Nimis confortátus est principátus eórum.
 @Commune/C1:Lectio3:s/10-/11-/ s/10 .*11 /11 /s
 
 [Responsory4]
-R. Fuérunt sine queréla ante Dóminum, et ab invícem non sunt separáti;
+R. Fuérunt sine queréla ante Dóminum, et ab ínvicem non sunt separáti;
 * Cálicem Dómini bibérunt et amíci Dei facti sunt.
 V. Tradidérunt córpora sua ad supplícia: † ídeo coronántur et accípiunt palmam.
 R. Cálicem Dómini bibérunt et amíci Dei facti sunt.
@@ -74,6 +64,9 @@ R. Constítues eos príncipes super omnem terram: † mémores erunt nóminis tu
 V. Nimis honoráti sunt amíci tui, Deus; nimis confortátus est principátus eorum.
 R. In omni progénie et generatióne.
 
+[Lectio 9]
+!ex Proprium Sanctorum
+
 [Responsory9]
 @Commune/C1:Responsory7
 
@@ -83,11 +76,11 @@ R. In omni progénie et generatióne.
 [Responsory11]
 R. Qui sunt isti, qui ut nubes volant,
 * Et quasi colúmbæ ad fenéstras suas?
-V. In omnem terram exívit sonus eorum, † et in fines orbis terræ verba eórum.
+V. In omnem terram exívit sonus eórum, † et in fines orbis terræ verba eórum.
 R. Et quasi colúmbæ ad fenéstras suas?
 
 [Responsory12]
-R. Non sunt loquélæ neque sermónes, quórum non audiántur voces eórum
+R. Non sunt loquélæ neque sermónes, quorum non audiántur voces eórum
 * In omnem terram exívit sonus eórum, † et in fines orbis terræ verba eórum.
 V. Nimis honoráti sunt amíci tui Deus, nimis confortátus est principátus eárum.
 R. In omnem terram exívit sonus eórum, † et in fines orbis terræ verba eórum.
@@ -95,27 +88,7 @@ R. In omnem terram exívit sonus eórum, † et in fines orbis terræ verba eór
 [MM Capitulum]
 @:Capitulum Sexta
 _
-@:Responsory Sexta
-
-[Capitulum Laudes]
-@Commune/C1
-_
-@Commune/C1:Responsory Tertia:1-6
-
-[Hymnus Laudes]
-@:Hymnus Vespera
-
-[Capitulum Tertia]
-@Commune/C1:Capitulum Laudes
-
-[Responsory Tertia]
-@Commune/C1:Versum 1
-
-[Responsory Sexta]
-@Commune/C1:Responsory Tertia:8-9
-
-[Responsory Nona]
-@Commune/C1:Responsory Sexta:8-9
+@:Nocturn 2 Versum
 
 [Ant Vespera 3]
 @Commune/C1::s/125/138/

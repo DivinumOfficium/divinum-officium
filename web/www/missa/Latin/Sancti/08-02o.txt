@@ -1,17 +1,16 @@
+[Officium]
+S. Stephani Papæ Martyris
+
 [Rank]
-S. Stephani, Papæ et Martyris;;Simplex;;1.1;;vide C2
+;;Simplex;;1.1;;vide C2b-1
 
 [Rule]
-vide C2;
+vide C2b-1;
 Gloria
 
-[Oratio]
-@Commune/C4b:Oratio1
-
-[Commemoratio Secreta]
-!Pro S. Stephano Papa, Martyre
-@Commune/C4b:Secreta1
-
-[Commemoratio Postcommunio]
-!Pro S. Stephano Papa, Martyre
-@Commune/C4b:Postcommunio1
+[Name]
+Stéphani
+(sed communi Summorum Pontificum)
+Stéphanum
+Secreta=Stéphano
+Postcommunio=Stéphano

@@ -1,15 +1,8 @@
 [Rank]
 In Apparitione Beatæ Mariæ Virginis Immaculatæ;;Duplex majus;;4;;ex C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 In Apparitione Beatæ Mariæ Virginis Immaculatæ;;Duplex optional;;2;;ex C11
-
-[Rule]
-ex C11 ;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
 
 [Ant Vespera]
 Elle est l’éclat * de la lumière éternelle et un miroir sans tache.;;109
@@ -17,11 +10,6 @@ Une femme * revêtue du soleil, la lune sous ses pieds, et sur sa tête, une cou
 Vous êtes la gloire de Jérusalem, * vous êtes la joie d’Israël, vous êtes l’honneur de notre peuple.;;121
 Vous êtes bénie, * Vierge Marie, par le Seigneur Dieu très-haut plus que toutes les femmes de la terre.;;126
 Aujourd’hui le Seigneur * a tellement magnifié votre nom que la bouche des hommes ne cessera de vous louer.;;147
-
-[Capitulum Vespera]
-!Cant 2:13-14
-v. Lève-toi, mon amie, ma belle, et viens ; ma colombe, toi qui te retires dans les creux de la pierre et dans les enfoncements de la muraille, montre-moi ton visage, que ta voix résonne à mes oreilles.
-$Deo gratias
 
 [Ant 1]
 Celle-ci est * ma colombe, ma parfaite, mon immaculée.
@@ -69,22 +57,13 @@ Ainsi soit-il.
 Je vous salue, pleine de grâce, * le Seigneur est avec vous.;;8
 Vous êtes bénie entre les femmes, * et le fruit de votre sein est béni.;;18
 Ne craignez point, Marie, * vous avez trouvé grâce auprès du Seigneur.;;23
-V. Le Dieu tout-puissant m’a revêtue de puissance.
-R. Et il a fait immaculée, ma voie.
 Il a fait en moi * de grandes choses celui qui est puissant, et saint est son nom.;;44
 Le Très-Haut a sanctifié * son tabernacle ; Dieu y est au milieu, il ne sera point ébranlé.;;45
 Le Seigneur vous a possédée * au début de ses voies, et il vous a aimée d’un amour éternel.;;86
-V. Dieu l’aidera par sa contemplation.
-R. Dieu est au milieu d’elle, elle ne sera point ébranlée.
 La main du Seigneur * vous a fortifiée, et c’est pour cela que vous serez bénie éternellement.;;95
 Ne craignez point, * car cette loi n’a pas été faite pour vous, mais pour tous les autres.;;96
 Le Seigneur vous a bénie * de sa force et il a anéanti par vous nos ennemis.;;97
-V. La grâce est répandue sur vos lèvres.
-R. C’est pourquoi il vous a béni, Elohim, à jamais.
 
-[Lectio1]
-Des Proverbes de Salomon.
-@Tempora/081-3:Lectio3
 
 [Responsory1]
 R. La sagesse qui atteint d’une extrémité à l’autre avec force, et dispose tout avec douceur, s’est bâti une maison :
@@ -161,17 +140,11 @@ R. Une couronne en pierre précieuse.
 La quatrième année après la définition dogmatique , de l’immaculée Conception de la bienheureuse Vierge, aux bords du torrent du Gave, près de la ville de Lourdes, au diocèse de Tarbes en France, après qu’une jeune fille, nommée Bernadette, eut affirmé avoir vu plusieurs fois dans la cavité d’un rocher, l’immaculée Mère de Dieu, tant et de si grands prodiges se produisirent, que tout chrétien pieux et prudent y reconnut facilement le doigt de Dieu. Entre toutes ces merveilles, célèbre est celle-ci que les malades buvant de l’eau puisée à la fontaine qui a jailli tout d’abord miraculeusement de la grotte recouvrent très souvent la santé. C’est pourquoi, devant la renommée croissante des faveurs que les fidèles disaient avoir reçues dans la grotte sainte et l’affiuence sans cesse grandissante des pèlerins, l’évêque de Tarbes, après examen juridique des événements, permit le culte de la même Vierge Immaculée dans cette grotte. Bientôt un temple est bâti, des foules innombrables de fidèles y viennent chaque année, et le nom de l’immaculée Mère de Dieu devient partout de plus en plus célèbre. Et cela d’autant plus que, chaque année, au cours de la procession du très saint Sacrement, parmi les malades amenés là de partout, quelques-uns sont subitement guéris, après l’avoir demandé au Seigneur, par l’intercession de sa Mère Immaculée. Justement ému de ces faits, le Souverain Pontife Pie X a étendu à toute l’Église la fete concédée par Léon XIII à quelques régions.
 &teDeum
 
-[Lectio7]
-@Sancti/12-10:Lectio7
-
 [Responsory7]
 R. Vous donc, invoquez le Seigneur, parlez au Roi pour nous,
 * Et délivrez-nous de la mort.
 V. Vous tous qui avez soif, venez aux eaux, et vous puiserez le salut dans le Seigneur.
 R. Et délivrez-nous de la mort.
-
-[Lectio8]
-@Sancti/12-10:Lectio8
 
 [Responsory8]
 R. Le Seigneur Dieu a planté un jardin délicieux, et a produit l’arbre de vie en son milieu :
@@ -181,9 +154,6 @@ R. Et un fleuve sortait de ce lieu de délices,
 &Gloria
 R. Et un fleuve sortait de ce lieu de délices,
 
-[Lectio9]
-@Sancti/12-10:Lectio9
-
 [Ant Laudes]
 Elle est la splendeur * de la lumière éternelle, et le miroir sans tache.
 Une femme * revêtue du soleil, la lune sous ses pieds et, sur sa tête, une couronne de douze étoiles.
@@ -192,7 +162,9 @@ Vous êtes bénie, * Vierge Marie, par le Seigneur Dieu très-haut, plus que tou
 Le Seigneur a tellement magnifié votre nom, * que les hommes ne cesseront jamais de vous louer.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Cant 2:13-14
+v. Lève-toi, mon amie, ma belle, et viens ; ma colombe, toi qui te retires dans les creux de la pierre et dans les enfoncements de la muraille, montre-moi ton visage, que ta voix résonne à mes oreilles.
+$Deo gratias
 
 [Hymnus Laudes]
 v. Aurore précurseur du soleil.
@@ -217,7 +189,7 @@ En ta victoire, tu la brises.
 _
 Bonne mère, daigne regarder
 Les pleurs et les prières de tes suppliants
-Et, les combattants, toi qui, de l’enfer
+Et, ces combattants, toi qui, de l’enfer
 As triomphé, défends-les contre l’ennemi.
 _
 Gloire soit à vous, ô Jésus !
@@ -233,17 +205,15 @@ Brillante aurore du salut * c’est de vous, Vierge Marie, qu’est sorti le sol
 !Sir 24:25-26
 v. En moi est toute la grâce de la voie et de la vérité ; en moi est toute l'espérance de la vie et de la vertu. Venez à moi, vous tous qui me désirez, et rassasiez-vous de mes fruits.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Qu’elle est celle-ci qui monte du désert, * Enivrée de délices ?
 R. Qu’elle est celle-ci qui monte du désert, * Enivrée de délices ?
 V. Appuyée sur son bien- aimé.
 R. Enivrée de délices ?
 &Gloria
 R. Qu’elle est celle-ci qui monte du désert, * Enivrée de délices ?
-_
+
+[Versum Tertia]
 V. Les filles de Sion l’ont vue.
 R. Et l’ont proclamée bienheureuse.
 
@@ -252,29 +222,27 @@ R. Et l’ont proclamée bienheureuse.
 v. Avec moi sont les richesses et la gloire, les biens durables et la justice ; car mes fruits valent mieux que l’or et les pierres précie
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Je suis la Mère * Du bel amour.
 R. Je suis la Mère * Du bel amour.
 V. De la crainte, de la science et de la sainte espérance.
 R. Du bel amour.
 &Gloria
 R. Je suis la Mère * Du bel amour.
-_
+
+[Versum Sexta]
 V. En moi, toute la grâce de la voie et de la vérité.
 R. En moi, toute Pespérance de la vie et de la vertu.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Celui qui me trouvera * Trouvera la vie.
 R. Celui qui me trouvera * Trouvera la vie.
 V. Et il puisera le salut dans le Seigneur.
 R. Trouvera la vie.
 &Gloria
 R. Celui qui me trouvera * Trouvera la vie.
-_
+
+[Versum Nona]
 V. Venez à moi, vous tous qui me désirez.
 R. Et rassasiez-vous de mes fruits.
 

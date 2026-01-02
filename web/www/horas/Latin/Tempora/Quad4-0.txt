@@ -1,9 +1,18 @@
+[Officium]
+Dominica IV in Quadragesima
+
 [Rank]
-Dominica IV in Quadragesima;;I classis Semiduplex;;6
+;;I classis Semiduplex;;6.9
+
+[Rank] (rubrica 1570 aut rubrica 1888 aut rubrica 1617)
+;;II classis Semiduplex;;6.1
+
+[Rank] (rubrica 1906)
+;;II classis Semiduplex;;5.6
 
 [Rule]
 9 lectiones
-Symbolum Athanasium(rubrica 1570 aut rubrica 1910)
+Symbolum Athanasium(rubrica tridentina)
 
 [Ant 1]
 Nemo te condemnávit, múlier? * Nemo, Dómine. Nec ego te condemnábo: jam ámplius noli peccáre.
@@ -58,7 +67,7 @@ R. Adjútor et protéctor factus est mihi Dóminus in salútem.
 R. Adjútor et protéctor factus est mihi Dóminus in salútem.
 
 [Lectio4]
-Sermo sancti Basílii Magni
+Sermo sancti Basilíi Magni
 !Homilia 1 de jejúnio, ante med.
 Móysen per jejunium nóvimus in montem ascendísse: neque enim áliter ausus esset vérticem fumántem adire, atque in calíginem íngredi, nisi jejúnio munítus. Per jejunium mandáta digito Dei in tábulis conscripta suscépit. Item supra montem jejunium legis latæ conciliator fuit: inférius vero, gula ad idololatríam pópulum dedúxit, ac contaminávit. Sedit, inquit, pópulus manducare et bíbere, et surrexérunt lúdere. Quadragínta diérum labórem ac perseverantiam, Dei servo continuo jejunante ac orante, una tantum pópuli ebríetas cassam irritamque réddidit. Quas enim tabulas Dei dígito conscriptas jejunium accepit, has ebríetas contrívit: Prophéta sanctíssimo indignum existimante, vinoléntum pópulum a Deo legem accípere.
 
@@ -95,7 +104,7 @@ In illo témpore: Abiit Jesus trans mare Galilǽæ, quod est Tiberíadis: et seq
 _
 Homilía sancti Augustíni Epíscopi
 !Tract. 24 in Joannem
-Mirácula, quæ fecit Dóminus noster Jesus Christus, sunt quidem divína ópera, et ad intellegéndum Deum de visibílibus ádmonent humánam méntem. Quia enim ille non est talis substántia, quæ vidéri óculis possit; et mirácula ejus, quibus totum mundum regit, universámque creatúram adminístrat, assiduitáte viluérunt, ita ut pene nemo dignétur atténdere ópera Dei mira et stupénda in quólibet séminis grano: secúndum ipsam suam misericórdiam, servávit sibi quædam, quæ fáceret opportúno témpore præter usitátum cursum ordinémque natúræ; ut non majóra, sed insólita vidéndo stupérent, quibus cotidiána vilúerant.
+Mirácula, quæ fecit Dóminus noster Jesus Christus, sunt quidem divína ópera, et ad intellegéndum Deum de visibílibus ádmonent humánam mentem. Quia enim ille non est talis substántia, quæ vidéri óculis possit; et mirácula ejus, quibus totum mundum regit, universámque creatúram adminístrat, assiduitáte viluérunt, ita ut pene nemo dignétur atténdere ópera Dei mira et stupénda in quólibet séminis grano: secúndum ipsam suam misericórdiam, servávit sibi quædam, quæ fáceret opportúno témpore præter usitátum cursum ordinémque natúræ; ut non majóra, sed insólita vidéndo stupérent, quibus cotidiána vilúerant.
 
 [Responsory7]
 R. Spléndida facta est fácies Móysi, dum respíceret in eum Dóminus: 
@@ -104,7 +113,7 @@ V. Cumque descendísset de monte Sínai, portábat duas tábulas testimónii, ig
 R. Vidéntes senióres claritátem vultus ejus, admirántes timuérunt valde.
 
 [Lectio8]
-Majus enim miraculum est gubernátio totius mundi, quam saturátio quinque millium hóminum de quinque pánibus. Et tamen hoc nemo mirátur: illud mirántur hómines, non quia majus est, sed quia rárum est. Quis enim et nunc pascit univérsum mundum, nisi ille, qui de paucis granis ségetes creat? Fecit ergo quo modo Deus. Unde enim multiplicat de paucis granis ségetes, inde in mánibus suis multiplicávit quinque panes: potéstas enim erat in mánibus Christi. Panes autem illi quinque, quasi semina erant, non quidem terræ mandata, sed ab eo, qui terram fecit, multiplicata.
+Majus enim miraculum est gubernátio totius mundi, quam saturátio quinque millium hóminum de quinque pánibus. Et tamen hoc nemo mirátur: illud mirántur hómines, non quia majus est, sed quia rarum est. Quis enim et nunc pascit univérsum mundum, nisi ille, qui de paucis granis ségetes creat? Fecit ergo quo modo Deus. Unde enim multiplicat de paucis granis ségetes, inde in mánibus suis multiplicávit quinque panes: potéstas enim erat in mánibus Christi. Panes autem illi quinque, quasi semina erant, non quidem terræ mandata, sed ab eo, qui terram fecit, multiplicata.
 
 [Responsory8]
 R. Ecce mitto Angelum meum, qui præcédat te, et custódiat semper: 
@@ -148,9 +157,6 @@ Accépit ergo * Jesus panes, et, cum grátias egísset, distríbuit discumbénti
 [Ant Tertia]
 De quinque pánibus * et duobus píscibus satiávit Dóminus quinque míllia hóminum.
 
-[Capitulum Tertia]
-@:Capitulum Laudes
-
 [Ant Sexta]
 Satiávit Dóminus * quinque míllia hóminum de quinque pánibus et duobus píscibus.
 
@@ -167,8 +173,8 @@ Illi ergo * hómines, cum vidíssent quod fécerat Jesus signum, intra se dicéb
 v. Itaque, fratres, non sumus ancíllæ fílii, sed líberæ: qua libertáte Christus nos liberávit.
 $Deo gratias
 
-[Capitulum Vespera]
-@:Capitulum Laudes
-
 [Ant 3]
 Súbiit ergo, * in montem Jesus, et ibi sedébat cum discípulis suis.
+
+[Ant 3] (rubrica cisterciensis)
+Cum vidíssent turbæ * signum quod fécerat Jesus, dicébant: Vere hic est Prophéta, qui venit in mundum.

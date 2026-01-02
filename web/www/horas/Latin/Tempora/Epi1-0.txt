@@ -1,25 +1,24 @@
+[Officium]
+Sanctæ Familiæ Jesu Mariæ Joseph
+
 [Rank]
-Sanctæ Familiæ Jesu Mariæ Joseph;;Duplex majus;;4
+;;Duplex majus;;5.61
 (sed rubrica 1960)
-Sanctæ Familiæ Jesu Mariæ Joseph;;Duplex II classis;;5
+;;Duplex II classis;;5
 
 [Rule]
 9 lectiones
 Psalmi Dominica
 Antiphonas horas
-No Sunday Commemoratio
+(rubrica 1960)No Sunday Commemoratio
+Festum Domini
 
 [Ant Vespera]
 Jacob autem * génuit Joseph virum Maríæ; de qua natus est Jesus, qui vocátur Christus.;;109
-Angelus Dómini * appáruit in somnis Joseph, dicens: Joseph, fili David, noli timére accípere Maríam conjúgem tuam; quod enim in ea natum est, de Spíritu Sancto est.;;112
+Angelus Dómini * appáruit in somnis Joseph, dicens: Joseph, fili David, noli timére accípere Maríam cónjugem tuam; quod enim in ea natum est, de Spíritu Sancto est.;;112
 Pastóres venérunt * festinántes, et invenérunt Maríam, et Joseph, et Infántem pósitum in præsépio.;;121
 Magi, intrántes domum, * invenérunt Púerum cum María, matre ejus.;;126
 Erat Pater ejus * et Mater mirántes super his quæ dicebántur de illo.;;147
-
-[Capitulum Vespera]
-!Luc 2:51
-v. Descéndit Jesus cum María et Joseph, et venit Názareth: et erat súbditus illis.
-$Deo gratias
 
 [Hymnus Vespera]
 v. O lux beáta cǽlitum
@@ -65,9 +64,6 @@ Cum Patre summo ac Spíritu
 Semper tibi sit glória.
 Amen.
 
-[Versum Prima]
-Qui Maríæ et Joseph súbditus fuísti.
-
 [Versum 1]
 V. Beáti qui hábitant in domo tua, Dómine.
 R. In sǽcula sæculórum laudábunt te.
@@ -78,6 +74,11 @@ Verbum caro * factum est, et habitávit in nobis, plenum grátiæ et veritátis;
 [Oratio]
 Dómine Jesu Christe, qui, Maríæ et Joseph súbditus, domésticam vitam ineffabílibus virtútibus consecrásti: fac nos, utriúsque auxílio, Famíliæ sanctæ tuæ exémplis ínstrui; et consórtium cónsequi sempitérnum:
 $Qui vivis
+
+[Commemoratio]
+@Tempora/Epi1-0a:Oratio:s/V\. .*/V. Omnes de Saba vénient, allelúja./ s/R\. .*/R. Aurum et thus deferéntes, allelúja./
+(sed rubrica cisterciensis)
+@Tempora/Epi1-0a:Oratio
 
 [Invit]
 Christum Dei Fílium, Maríæ et Joseph súbditum, * Veníte, adorémus.
@@ -124,7 +125,7 @@ Quos reluctántes per acúta rerum
 Urget egéstas.
 _
 Démite his fastus, quibus ampla splendet
-Fáustitas, méntem date rebus æquam:
+Fáustitas, mentem date rebus æquam:
 Quotquot implórant cólumen, benígno
 Cérnite vultu.
 _
@@ -138,16 +139,22 @@ Amen.
 Cum indúcerent * púerum Jesum paréntes ejus, accépit eum Símeon in ulnas suas, et benedíxit Deum.;;8
 Ut perfecérunt * ómnia secúndum legem Dómini, revérsi sunt in Galilǽam in civitátem suam Názareth.;;18
 Puer autem * crescébat, et confortabátur plenus sapiéntia, et grátia Dei erat in illo.;;23
-V. Propter nos egénus factus est cum esset dives.
-R. Ut illíus inópia nos dívites essémus.
 Consúrgens Joseph * accépit púerum et matrem ejus nocte, et secéssit in Ægýptum.;;44
 Angelus Dómini * appáruit in somnis Joseph in Ægýpto, dicens: Surge et áccipe púerum et matrem ejus, et vade in terram Israël.;;45
 Et véniens * habitávit Názareth, ut adimplerétur quod dictum est per Prophétas: Quóniam Nazarǽus vocábitur.;;86
-V. Dóminus vias suas docébit nos.
-R. Et ambulábimus in sémitis ejus.
 Ibant paréntes Jesu * per omnes annos in Jerúsalem in die solémni Paschæ.;;95
 Cum redírent, * remánsit puer Jesus in Jerúsalem, et non cognovérunt paréntes ejus.;;96
 Non inveniéntes Jesum * regréssi sunt in Jerúsalem, requiréntes eum.;;97
+
+[Nocturn 1 Versum]
+V. Propter nos egénus factus est cum esset dives.
+R. Ut illíus inópia nos dívites essémus.
+
+[Nocturn 2 Versum]
+V. Dóminus vias suas docébit nos.
+R. Et ambulábimus in sémitis ejus.
+
+[Nocturn 3 Versum]
 V. Pauper sum ego, et in labóribus a juventúte mea.
 R. Exaltátus autem humiliátus sum, et conturbátus.
 
@@ -157,7 +164,7 @@ De Epístola beáti Pauli Apóstoli ad Colossénses
 12 Indúite vos ergo sicut elécti Dei, sancti, et dilécti, víscera misericórdiæ, benignitátem, humilitátem, modéstiam, patiéntiam: 
 13 supportántes ínvicem, et donántes vobismetípsis si quis advérsus áliquem habet querélam: sicut et Dóminus donávit vobis, ita et vos. 
 14 Super ómnia autem hæc, caritátem habéte, quod est vínculum perfectiónis:
-15 et pax Christi exsúltet in córdibus vestris, in qua et vocáti estis in uno córpore: et gráti estóte. 
+15 et pax Christi exsúltet in córdibus vestris, in qua et vocáti estis in uno córpore: et grati estóte. 
 16 Verbum Christi hábitet in vobis abundánter, in omni sapiéntia, docéntes, et commonéntes vosmetípsos, psalmis, hymnis et cánticis spirituálibus, in grátia cantántes in córdibus vestris Deo.
 
 [Responsory1]
@@ -170,7 +177,7 @@ R. Et cum homínibus conversátus est.
 !Col 3:17-21
 17 Omne, quodcúmque fácitis in verbo aut in ópere, ómnia in nómine Dómini Jesu Christi, grátias agéntes Deo et Patri per ipsum. 
 18 Mulíeres, súbditæ estóte viris, sicut opórtet in Dómino. 
-19 Viri, díligite uxóres vestras, et nolíte amári esse ad illas. 
+19 Viri, dilígite uxóres vestras, et nolíte amári esse ad illas. 
 20 Fílii, obedíte paréntibus per ómnia: hoc enim plácitum est in Dómino. 
 21 Patres, nolíte ad indignatiónem provocáre fílios vestros, ut non pusíllo ánimo fiant.
 
@@ -218,7 +225,7 @@ V. Pauper sum ego, et in labóribus a juventúte mea.
 R. Fílius autem hóminis non habet ubi caput reclínet.
 
 [Lectio6]
-Quibus e rebus jure meritóque apud cathólicos Sacræ Famíliæ cultus matúre invéctus, majus in dies síngulos increméntum capit. Id quidem probant tum christianórum sodalitátes sub invocatióne Sacræ Famíliæ institútæ, tum singuláres honóres ei rédditi, tum potíssimum a decessóribus Nostris ad excitándum erga eam pietátis stúdium impertíta privilégia et grátiæ. Hujúsmodi cultus magno in honóre hábitus est jam inde a sǽculo décimo séptimo, latéque per Itáliam, Gálliam et Bélgium propagátus, totam fere Európam pervásit: deínde prætergréssus vastos Océani tractus, in Ameríca per Canadénsem regiónem, sese exténdit, faustísque efflóruit auspíciis. Síquidem nihil magis salutáre aut éfficax famíliis christiánis cogitári potest exémplo Sacræ Famíliæ, quæ perfectiónem absolutionémque compléctitur ómnium virtútum domesticárum. Sic imploráti inter domésticos paríetes adsint propítii Jesus, María et Joseph, caritátem alant, mores regant, ad virtútem próvocent imitatióne sui, et quæ úndique instant mortáles ærúmnæ, eas leniéndo fáciant tolerabilióres. - Ad cultum vero Sacræ Famíliæ augéndum Leo Papa décimus tértius christiánas famílias eídem Sacræ Famíliæ consecrári præscrípsit: Benedíctus autem décimus quintus Offícium et Missam ad univérsam Ecclésiam exténdit.
+Quibus e rebus jure meritóque apud cathólicos Sacræ Famíliæ cultus matúre invéctus, majus in dies síngulos increméntum capit. Id quidem probant tum christianórum sodalitátes sub invocatióne Sacræ Famíliæ institútæ, tum singuláres honóres ei rédditi, tum potíssimum a decessóribus Nostris ad excitándum erga eam pietátis stúdium impertíta privilégia et grátiæ. Hujúsmodi cultus magno in honóre hábitus est jam inde a sǽculo décimo séptimo, latéque per Itáliam, Gálliam et Bélgium propagátus, totam fere Európam pervásit: deínde prætergréssus vastos Océani tractus, in América per Canadénsem regiónem, sese exténdit, faustísque efflóruit auspíciis. Síquidem nihil magis salutáre aut éfficax famíliis christiánis cogitári potest exémplo Sacræ Famíliæ, quæ perfectiónem absolutionémque compléctitur ómnium virtútum domesticárum. Sic imploráti inter domésticos paríetes adsint propítii Jesus, María et Joseph, caritátem alant, mores regant, ad virtútem próvocent imitatióne sui, et quæ úndique instant mortáles ærúmnæ, eas leniéndo fáciant tolerabilióres. - Ad cultum vero Sacræ Famíliæ augéndum Leo Papa décimus tértius christiánas famílias eídem Sacræ Famíliæ consecrári præscrípsit: Benedíctus autem décimus quintus Offícium et Missam ad univérsam Ecclésiam exténdit.
 
 [Responsory6]
 R. Cum in forma Dei esset, semetípsum exinanívit, 
@@ -258,6 +265,10 @@ R. Ita et per uníus obeditiónem justi constituéntur multi.
 Si non potes sublímen incédere sémitam virginitátis, séquere vel Deum per tutíssimam viam humilitátis; a cujus rectitúdine si qui étiam de virgínibus deviáverint, ut verum fátear, nec ipsi sequúntur Agnum quocúmque íerit. Séquitur quidem Agnum coinquinátus húmilis, séquitur et virgo supérbus, sed néuter quocúmque íerit: quia nec ille ascéndere potest ad mundítiam Agni, qui sine mácula est; nec is ad ejúsdem mansuetúdinem descéndere dignátur, qua scílicet non coram tondénte, sed coram occidénte se obmútuit. Attamen salubriórem elégit sequéndi partem in humilitáte peccátor, quam in virginitáte supérbus; cum et illíus immundítiam sua húmilis satisfáctio purget, et hujus pudicítiam supérbia ínquinet.
 &teDeum
 
+[Versum 0]
+V. Ecce testem pópulis dedi eum.
+R. Ducem ac praceptórem géntibus.
+
 [Ant Laudes]
 Post tríduum * invenérunt Jesum in templo sedéntem in médio doctórum, audiéntem illos, et interrogántem eos.
 Dixit mater Jesu * ad illum: Fili, quid fecísti nobis sic? Ecce pater tuus et ego doléntes quærebámus te.
@@ -266,7 +277,9 @@ Et Jesus proficiébat * sapiéntia, et ætáte, et grátia apud Deum et hómines
 Et dicébant: * Unde huic sapiéntia hæc, et virtútes? Nonne hic est fabri fílius?
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Luc 2:51
+v. Descéndit Jesus cum María et Joseph, et venit Názareth: et erat súbditus illis.
+$Deo gratias
 
 [Hymnus Laudes]
 v. O gente felix hóspita,
@@ -321,50 +334,50 @@ Illúmina nos, Dómine, * exémplis Famíliæ tuæ, et dírige pedes nostros in 
 !Phil 2:7
 v. Semetípsum exinanívit formam servi accípiens, in similitúdinem hóminum factus, et hábitu invéntus ut homo.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
+[Versum Prima]
+Qui Maríæ et Joseph súbditus fuísti.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Propter nos egénus factus est * Cum esset dives.
 R. Propter nos egénus factus est * Cum esset dives.
 V. Ut illíus inópia nos dívites essémus.
 R. Cum esset dives.
 &Gloria
 R. Propter nos egénus factus est * Cum esset dives.
-_
-V. Dóminus vias suas docébit nos.
-R. Et ambulábimus in sémitis ejus.
+
+[Versum Tertia]
+@:Nocturn 2 Versum
 
 [Capitulum Sexta]
 !Rom 5:19
 v. Sicut per inobediéntiam uníus hóminis peccatóres constitúti sunt multi, ita et per uníus obeditiónem justi constituéntur multi.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Dóminus vias suas * Docébit nos.
 R. Dóminus vias suas * Docébit nos.
 V. Et ambulábimus in sémitis ejus.
 R. Docébit nos.
 &Gloria
 R. Dóminus vias suas * Docébit nos.
-_
-V. Pauper sum ego, et in labóribus a juventúte mea.
-R. Exaltátus autem humiliátus sum, et conturbátus.
+
+[Versum Sexta]
+@:Nocturn 3 Versum
 
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Pauper sum ego, * Et in labóribus a juventúte mea.
 R. Pauper sum ego, * Et in labóribus a juventúte mea.
 V. Exaltátus autem, humiliátus sum et conturbátus.
 R. Et in labóribus a juventúte mea.
 &Gloria
 R. Pauper sum ego, * Et in labóribus a juventúte mea.
-_
-V. Ponam univérsos fílios tuos doctos a Dómino.
-R. Et multitúdinem pacis fíliis tuis.
+
+[Versum Nona]
+@:Versum 2
 
 [Ant Vespera 3]
 Post tríduum * invenérunt Jesum in templo sedéntem in médio doctórum, audiéntem illos, et interrogántem eos.;;109
@@ -379,6 +392,5 @@ Et dicébant: * Unde huic sapiéntia hæc, et virtútes? Nonne hic est fabri fí
 [Ant 3]
 María autem * conservábat ómnia verba hæc, cónferens in corde suo.
 
-[Commemoratio]
-!Commemoratio Dominicæ in Octava Epiphaniæ
-@Tempora/Epi1-0a:Oratio:s/V\. .*/V. Omnes de Saba vénient, allelúja./ s/R\. .*/R. Aurum et thus deferéntes, allelúja./
+[Commemoratio 3] (rubrica cisterciensis)
+@Tempora/Epi1-0a:Oratio

@@ -1,8 +1,12 @@
-[Rank]
-Sabbato post Cineres;;Feria major;;2.9
+[Officium]
+Sabbato post Cineres
 
-[Rank](rubrica 1960)
-Sabbato post Cineres;;Feria major;;3
+[Rank]
+;;Feria major;;2.1
+(sed rubrica 1930)
+;;Feria major;;4.9
+(sed rubrica 196)
+;;Feria major;;3.9
 
 [Rule]
 Preces Feriales
@@ -14,7 +18,7 @@ In illo témpore: Cum sero esset, erat navis in médio mari, et Jesus solus in t
 _
 Homilía sancti venerábilis Bedæ Presbýteri
 !Lib. 2, cap. 28 in cap. 6 Marci, tom. 4
-Labor discipulórum in remigándo, et contrárius eis ventus, labóres sanctæ Ecclésiæ varios desígnat: quæ inter undas sǽculi adversántis, et immundórum flátus spirítuum, ad quiétem pátriæ cæléstis, quasi ad fidam líttoris statiónem, perveníre conátur. Ubi bene dícitur, quia navis erat in médio mari, et ipse solus in terra: quia nonnúnquam Ecclésia tantis gentílium pressúris non solum afflícta, sed et fœdáta est, ut, si fíeri posset, Redémptor ipsíus eam prorsus deseruísse ad tempus viderétur.
+Labor discipulórum in remigándo, et contrárius eis ventus, labóres sanctæ Ecclésiæ varios desígnat: quæ inter undas sǽculi adversántis, et immundórum flatus spirítuum, ad quiétem pátriæ cæléstis, quasi ad fidam líttoris statiónem, perveníre conátur. Ubi bene dícitur, quia navis erat in médio mari, et ipse solus in terra: quia nonnúnquam Ecclésia tantis gentílium pressúris non solum afflícta, sed et fœdáta est, ut, si fíeri posset, Redémptor ipsíus eam prorsus deseruísse ad tempus viderétur.
 
 [Responsory1]
 @Tempora/Quadp3-0:Responsory7
@@ -30,9 +34,8 @@ Verum ille non oblivíscitur oratiónem páuperum, neque avértit fáciem suam a
 
 [Responsory3]
 @Tempora/Quadp3-1:Responsory1
-
-[Versum 2]
-@Tempora/Quadp3-4:Versum 2
+(sed rubrica monastica)
+@Tempora/Quadp3-1:Responsory2
 
 [Ant 2]
 Me étenim * de die in diem quærunt, et scire vias meas volunt.
@@ -40,15 +43,3 @@ Me étenim * de die in diem quærunt, et scire vias meas volunt.
 [Oratio 2]
 Adésto, Dómine, supplicatiónibus nostris: et concéde; ut hoc solémne jejúnium, quod animábus corporibúsque curándis salúbriter institútum est, devóto servítio celebrémus.
 $Per Dominum
-
-[Capitulum Vespera]
-@Tempora/Quad1-0:Capitulum Laudes
-
-[Versum 3]
-@Tempora/Quad1-0:Versum 1
-
-[Ant 3]
-@Tempora/Quad1-0:Ant 3
-
-[Oratio 3]
-@Tempora/Quad1-0:Oratio

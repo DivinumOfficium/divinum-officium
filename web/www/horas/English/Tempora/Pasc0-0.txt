@@ -1,31 +1,39 @@
-[Rank]
-Dominica Resurrectionis;;Duplex I classis cum Octava Privilegiata I;;7
-
-[Rule]
-1 nocturn;
-Omit Hymnus Preces Suffragium Commemoratio;
-Minores sine Antiphona;
-Capitulum Versum 2;
-Psalmi Dominica;
-Prima=53 
+[Officium]
+Dominica Resurrectionis
 
 [Ant 1]
 And in the end of the sabbath * when it began to dawn towards the first day of the week, came Mary Magdalen and the other Mary, to see the sepulchre, alleluia.
 
-[Ant 41]
-Ant. And in the end of the sabbath.
-&canticum(3)
-&Gloria
-{::}
+[Oratio]
+God, who on this day, through thy Only-begotten Son, overcame death, and opened to us the gate of everlasting life: as by thy anticipating grace, thou breathest good desires into our hearts, so also, by thy gracious help, bring them to good effect.
+$Per eumdem
+
+[Special Vespera 1]
+#Sabbato Sancto special Paschal Vespera
+_
+$Pater noster
+$Ave Maria 
+_
+Ant. Alleluia, alleluia, alleluia.
+&psalm(116)
+Ant. Alleluia, alleluia, alleluia.
+_
 Ant. And in the end of the sabbath, when it began to dawn towards the first day of the week, came Mary Magdalen and the other Mary, to see the sepulchre, alleluia.
+&psalm(232)
+Ant. And in the end of the sabbath, when it began to dawn towards the first day of the week, came Mary Magdalen and the other Mary, to see the sepulchre, alleluia.
+
+&Dominus_vobiscum
+v. Pour forth, O Lord, we beseech thee, the Spirit of thy love into our hearts, and by thy mercy make all them to be of one mind to whom Thou hast given to eat of thy mystic Passover.
+$Per Dominum eiusdem
+&Dominus_vobiscum
+
+V. Let us bless the Lord, alleluia, alleluia.
+R. Thanks be to God, alleluia, alleluia.
+$Fidelium animae
+$Pater noster
 
 [Invit]
 The Lord is risen, indeed, * Alleluia.
-
-[Prelude Matutinum] (rubrica 1955 aut rubrica 1960)
-!When the celebration of the solemn Paschal Vigil takes the place of the night office of Easter Sunday, Lauds of the same Easter Sunday are sung during the solemn Mass of the vigil, immediately after Communion, with Matins being omitted. The office of Easter Sunday then begins with Prime.
-_
-!Those who do not assist at the solemn Paschal Vigil, however, are bound to say Matins and Lauds of Easter Sunday.
 
 [Ant Matutinum]
 I am who I am * and my counsel is not with the ungodly, my will is in the law of God, alleluia.;;1
@@ -79,43 +87,17 @@ Ant. This is the day * which the Lord hath made: let us be glad and rejoice ther
 [Ant 2]
 And very early in the morning * the first day of the week, they come to the sepulchre, the sun being now risen, alleluia.
 
-[Oratio]
-God, who on this day, through thy Only-begotten Son, overcame death, and opened to us the gate of everlasting life: as by thy anticipating grace, thou breathest good desires into our hearts, so also, by thy gracious help, bring them to good effect.
-$Per eumdem
-
-[Special Vespera 1]
-#Sabbato Sancto special Paschal Vespera
-_
-$Pater noster
-$Ave Maria 
-_
-Ant. Alleluia, alleluia, alleluia.
-&psalm(116)
-Ant. Alleluia, alleluia, alleluia.
-_
-Ant. And in the end of the sabbath, when it began to dawn towards the first day of the week, came Mary Magdalen and the other Mary, to see the sepulchre, alleluia.
-&canticum(2)
-&Gloria
-{::}
-Ant. And in the end of the sabbath, when it began to dawn towards the first day of the week, came Mary Magdalen and the other Mary, to see the sepulchre, alleluia.
-
-&Dominus_vobiscum
-v. Pour forth, O Lord, we beseech thee, the Spirit of thy love into our hearts, and by thy mercy make all them to be of one mind to whom Thou hast given to eat of thy mystic Passover.
-$Per Dominum eiusdem
-&Dominus_vobiscum
-
-V. Let us bless the Lord, alleluia, alleluia.
-R. Thanks be to God, alleluia, alleluia.
-$Fidelium animae
-$Pater noster
-
 [Ant 3]
 And looking * they saw the stone rolled back, for it was very great, alleluia.
 
+[Ant 41]
+And in the end of the sabbath, when it began to dawn towards the first day of the week, came Mary Magdalen and the other Mary, to see the sepulchre, alleluia.
+
 [Ant 43]
-Ant. Alleluia, Alleluia, Alleluia, Alleluia.
-&canticum(3)
-&Gloria
+Alleluia, Alleluia, Alleluia, Alleluia.
+This is the day * which the Lord hath made: let us be glad and rejoice therein.
+
+[Prelude Matutinum] (rubrica 1955 aut rubrica 1960)
+!When the celebration of the solemn Paschal Vigil takes the place of the night office of Easter Sunday, Lauds of the same Easter Sunday are sung during the solemn Mass of the vigil, immediately after Communion, with Matins being omitted. The office of Easter Sunday then begins with Prime.
 _
-{::}
-Ant. This is the day * which the Lord hath made: let us be glad and rejoice therein.
+!Those who do not assist at the solemn Paschal Vigil, however, are bound to say Matins and Lauds of Easter Sunday.

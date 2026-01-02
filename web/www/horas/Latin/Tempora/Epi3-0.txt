@@ -1,9 +1,15 @@
+[Officium]
+Dominica III Post Epiphaniam
+
 [Rank]
-Dominica III Post Epiphaniam;;Semiduplex;;5
+;;Semiduplex;;5
 
 [Rule]
 9 lectiones
 Symbolum Athanasium
+
+[Ant 1] (rubrica cisterciensis)
+Fratres, * glorificáte, et portáte Dóminum in córpore vestro, allelúia.
 
 [Oratio]
 Omnípotens sempitérne Deus, infirmitátem nostram propítius réspice: atque, ad protegéndum nos, déxteram tuæ majestátis exténde.
@@ -45,13 +51,13 @@ Incipit Epístola beáti Pauli Apóstoli ad Gálatas
 [Lectio4]
 De Expositióne sancti Augustíni Epíscopi in Epístolam ad Gálatas
 !Præfátio tom. 4
-Causa, propter quam scríbit Apóstolus ad Gálatas, hæc est: ut intélligant grátiam Dei id secum ágere, ut sub lege jam non sint. Cum enim prædicáta eis esset Evangélii grátia, non defuérunt quidam ex circumcisióne, quamvis Christiáni nómine, nondum tamen tenéntes ipsum gratiæ benefícium, et adhuc voléntes esse sub onéribus legis, quæ Dóminus Deus imposúerat non justítiæ serviéntibus, sed peccáto, justam scílicet legem injústis homínibus dando ad demonstranda peccáta eórum, non auferenda. Non enim aufert peccáta, nisi grátia fidei, quæ per dilectiónem operátur.
+Causa, propter quam scribit Apóstolus ad Gálatas, hæc est: ut intélligant grátiam Dei id secum ágere, ut sub lege jam non sint. Cum enim prædicáta eis esset Evangélii grátia, non defuérunt quidam ex circumcisióne, quamvis Christiáni nómine, nondum tamen tenéntes ipsum gratiæ benefícium, et adhuc voléntes esse sub onéribus legis, quæ Dóminus Deus imposúerat non justítiæ serviéntibus, sed peccáto, justam scílicet legem injústis homínibus dando ad demonstranda peccáta eórum, non auferenda. Non enim aufert peccáta, nisi grátia fidei, quæ per dilectiónem operátur.
 
 [Responsory4]
 @Tempora/Epi2-0:Responsory4
 
 [Lectio5]
-Sub hac ergo grátia jam Gálatas constitutos illi volébant constítuere sub onéribus legis, asseverántes nihil eis prodesse Evangélium, nisi circumcideréntur, et ceteras carnales Judáici ritus observatiónes subirent. Et ideo Paulum Apostolum suspectum habere cœperant, a quo illis Evangélium prædicátum erat, tamquam non tenéntem disciplínam ceterórum Apostolórum, qui gentes cogébant judaizare.
+Sub hac ergo grátia jam Gálatas constitutos illi volébant constitúere sub onéribus legis, asseverántes nihil eis prodesse Evangélium, nisi circumcideréntur, et ceteras carnales Judáici ritus observatiónes subirent. Et ideo Paulum Apostolum suspectum habere cœperant, a quo illis Evangélium prædicátum erat, tamquam non tenéntem disciplínam ceterórum Apostolórum, qui gentes cogébant judaizare.
 
 [Responsory5]
 @Tempora/Epi2-0:Responsory5
@@ -84,17 +90,19 @@ Et ecce leprosus veniens adorábat eum, dicens. Recte post prædicatiónem atque
 Et ait illi Jesus: Vide, némini díxeris. Et revéra quid erat necésse ut sermóne jactáret, quod corpore præferébat? Sed vade, osténde te sacerdoti. Varias ob causas mittit eum ad sacerdotem: primum propter humilitátem, ut sacerdótibus deferre honórem videátur. Erat enim lege præcéptum, ut, qui mundáti fúerant a lepra, offérrent múnera sacerdótibus. Deínde, ut mundátum vidéntes leprosum, aut créderent Salvatóri, aut non créderent: si créderent, salvaréntur; si non créderent, inexcusábiles forent. Et simul, ne, quod in eo sæpíssime criminabántur, legem viderétur infringere.
 &teDeum
 
-[Versum 2]
-@Tempora/Epi2-0:Versum 2
-
-[Ant 2]
+[Ant 2_]
 Cum descendísset Jesus * de monte, ecce leprósus véniens adorábat eum, dicens: Dómine, si vis, potes me mundáre: et exténdens manum, tétigit eum, dicens: Volo, mundáre.
 
-[Versum 3]
-@Tempora/Epi2-0:Versum 3
+[Ant 2]
+@:Ant 2_
+(sed rubrica cisterciensis)
+@:Ant 2_:s/Cum descendísset Jesus \*/Cum autem descendísset \* Jesus/
 
 [Ant 3]
 Dómine, * si vis, potes me mundáre: et exténdens manum, tétigit eum, dicens: Volo, mundáre.
+
+[Ant 3] (rubrica cisterciensis)
+Dómine, * puer meus jacet paralyticus in domo, et male torquétur. Amen dico tibi, ego véniam, et curábo eum.
 
 [Ant 3](rubrica 1960)
 Dómine, * si vis, potes me mundáre: et ait Jesus: Volo, mundáre.

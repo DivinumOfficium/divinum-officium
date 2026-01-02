@@ -1,30 +1,51 @@
-[Rank]
-Feria Quinta in Cena Domini;;Feria privilegiata Duplex I classis;;7
+[Officium]
+Feria Quinta in Cena Domini
 
-[Rule]
-Psalmi minores Dominica
-Antiphonas horas
-Omit Incipit Invitatorium Hymnus Capitulum Lectio Preces Commemoratio Suffragium Conclusion
-Limit Benedictiones Oratio
-9 lectiones 1960
-Capitulum Versum 2 ad Laudes tantum
-Minores sine Antiphona
-Feria
+[Ant Vespera]
+Je prendrai le calice * du salut et j’invoquerai le nom du Seigneur.;;115
+Avec ceux * qui haïssent la paix, j’étais pacifique ; tandis que je leur parlais, ils me combattaient sans motif.;;119
+Des hommes * d'iniquité, libérez-moi, Seigneur.;;139
+Gardez-moi * du filet qu'ils m'ont tendu et des embûches de ceux qui commettent l'iniquité.;;140
+Je regardais * à ma droite et je voyais ; et il n'y avait personne qui me connût.;;141
+
+[Oratio Matutinum]
+v. Daignez jeter un regard favorable, Seigneur, sur Votre famille que voici et pour laquelle Notre Seigneur Jésus-Christ n’a pas hésité à Se laisser livrer aux mains des bourreaux et à subir le supplice de la croix,
+!Et c'est à voix basse qu'on dit la conclusion
+$Qui tecum
+
+[Oratio]
+v. Le Christ S’est fait obéissant pour nous, jusqu’à la mort.
+!en silence
+$Pater noster
+!à voix un peu plus haute
+_
+&psalm(50)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
+@:Oratio Matutinum
+
+[Prelude Vespera] (rubrica 1955 aut rubrica 1960)
+!Les vêpres ne se disent pas aujourd'hui, pour ceux qui assistent à la messe vespérale de la Cène du Seigneur. 
 
 [Ant Matutinum]
 Le zèle de Votre maison me dévore, * et les opprobres de ceux qui Vous insultaient, sont retombées sur moi..;;68
 Que ceux qui me veulent du mal, * soient repoussés en arrière, et couverts de confusion.;;69
 Mon Dieu, * délivrez-moi de la main du pécheur.;;70
-V. Que tous ceux qui me veulent du mal soient repoussés en arrière.
-R. Et couverts de confusion.
 Le Seigneur * a délivré le pauvre de la main du puissant, et soutenu l’indigent qui n’avait point de protecteur.;;71
 Les pensées et * les paroles des impies sont remplies de malice : ils ont fait éclater leur iniquité.;;72
 Levez-vous, Seigneur, * et jugez ma cause.;;73
-V. Mon Dieu, délivrez-moi des mains du pécheur.
-R. Et des mains de celui qui agit contre la loi, et du méchant.
 J’ai dit aux méchants : * Ne parlez point avec iniquité contre Dieu.;;74
 La terre a tremblé, * et elle s’est reposée ; tandis que Dieu se préparait à juger.;;75
 Au jour * de mon affliction, j’ai cherché Dieu, et j’ai tendu mes mains vers Lui.;;76
+
+[Nocturn 1 Versum]
+V. Que tous ceux qui me veulent du mal soient repoussés en arrière.
+R. Et couverts de confusion.
+
+[Nocturn 2 Versum]
+V. Mon Dieu, délivrez-moi des mains du pécheur.
+R. Et des mains de celui qui agit contre la loi, et du méchant.
+
+[Nocturn 3 Versum]
 V. Levez-Vous, Seigneur.
 R. Et jugez ma cause.
 
@@ -32,9 +53,9 @@ R. Et jugez ma cause.
 Commencement des Lamentations du Prophète Jérémie
 !Lam 1:1-5
 1 Aleph. Comment est-elle assise solitaire, cette ville pleine de peuple ? Elle est devenue comme veuve, la maîtresse des nations ; la souveraine des provinces est devenue tributaire.
-2 Beth. Elle n'a pas cessé de pleurer pendant la nuit, et ses larmes coulent sur ses joues ; il n'y a personne qui la console parmi tous ceux qui lui étaient chers; tous ses amis l'ont méprisée et sont devenus ses ennemis.
-3 Ghimel. Juda est allé en exil, à cause de l'affliction et de la grande servitude ; il a habité parmi les nations, et il n'a pas trouvé de repos; tous ses persécuteurs l'ont saisi dans ses angoisses.
-4 Daleth. Les chemins de Sion sont en deuil, parce qu'il n'y a plus personne qui vienne aux solennités ; toutes ses portes sont détruites, ses prêtres gémissent; ses vierges sont défigurées, et elle est elle-même accablée d'amertume.
+2 Beth. Elle n'a pas cessé de pleurer pendant la nuit, et ses larmes coulent sur ses joues ; il n'y a personne qui la console parmi tous ceux qui lui étaient chers ; tous ses amis l'ont méprisée et sont devenus ses ennemis.
+3 Ghimel. Juda est allé en exil, à cause de l'affliction et de la grande servitude ; il a habité parmi les nations, et il n'a pas trouvé de repos ; tous ses persécuteurs l'ont saisi dans ses angoisses.
+4 Daleth. Les chemins de Sion sont en deuil, parce qu'il n'y a plus personne qui vienne aux solennités ; toutes ses portes sont détruites, ses prêtres gémissent ; ses vierges sont défigurées, et elle est elle-même accablée d'amertume.
 5 Hé. Ses ennemis sont devenus les maîtres, ses adversaires se sont enrichis, car le Seigneur a parlé contre elle, à cause de la multitude de ses iniquités ; ses petits enfants ont été conduits en captivité devant l'oppresseur.
 v. Jérusalem, Jérusalem, reviens au Seigneur ton Dieu.
 
@@ -46,9 +67,9 @@ R. L’esprit est prompt mais la chair est faible : Que Votre volonté soit fait
 
 [Lectio2]
 !Lam 1:6-9
-6 Vau. La fille de Sion a perdu toute sa beauté: ses princes sont devenus comme des béliers qui ne trouvent point de pâturages, et ils sont allés sans force devant celui qui les poursuivait.
+6 Vau. La fille de Sion a perdu toute sa beauté : ses princes sont devenus comme des béliers qui ne trouvent point de pâturages, et ils sont allés sans force devant celui qui les poursuivait.
 7 Zain. Jérusalem s'est souvenue des jours de son affliction et de sa prévarication, de tous les objets désirables qu'elle avait eus depuis les jours anciens, lorsque son peuple tombait sous la main de l'ennemi, sans qu'il y eût personne pour le secourir. Ses ennemis l'ont vue, et ils se sont moqués de ses sabbats.
-8 Héth. Jérusalem a grandement péché, c'est pourquoi elle est devenue chancelante ; tous ceux qui l'honoraient l'ont méprisée, parce qu'ils ont vu son ignominie; elle-même, gémissante, s'est tournée en arrière.
+8 Héth. Jérusalem a grandement péché, c'est pourquoi elle est devenue chancelante ; tous ceux qui l'honoraient l'ont méprisée, parce qu'ils ont vu son ignominie ; elle-même, gémissante, s'est tournée en arrière.
 9 Teth. Ses souillures sont sur ses pieds, et elle ne s'est pas souvenue de sa fin ; elle a été étonnamment abaissée, et elle n'a pas eu de consolateur. Voyez, Seigneur, mon affliction, parce que l'ennemi s'est élevé avec orgueil.
 v. Jérusalem, Jérusalem, reviens au Seigneur ton Dieu.
 
@@ -63,8 +84,8 @@ R. Vous prendrez la fuite et Moi J'irai M'immoler pour vous.
 10 Jod. L'ennemi a étendu sa main sur tout ce qu'elle avait de précieux, car elle a vu entrer dans son sanctuaire les nations, au sujet desquelles Vous aviez ordonné qu'elles n'entreraient pas dans Votre assemblée.
 11 Caph. Tout son peuple gémit et cherche du pain ; ils ont donné toutes leurs choses précieuses pour soutenir leur vie. Voyez, Seigneur, et considérez comme je suis devenue vile.
 12 Lamed. O vous tous qui passez par le chemin, regardez et voyez s'il est une douleur comme ma douleur ; car le Seigneur m'a vendangée, comme Il l'avait dit, au jour de Sa fureur.
-13 Mém. D'en haut Il a envoyé un feu dans mes os, et Il m'a châtiée ; Il a tendu un filet sous mes pieds, Il m'a fait tomber en arrière; Il m'a rendue désolée, accablée de tristesse tout le jour.
-14 Nun. Le joug de mes iniquités m'a accablé soudain ; elles ont été enlacées dans Sa main, et Il les a mises sur mon cou; ma force a été affaiblie; le Seigneur m'a livré à une main dont je ne pourrai pas sortir.
+13 Mém. D'en haut Il a envoyé un feu dans mes os, et Il m'a châtiée ; Il a tendu un filet sous mes pieds, Il m'a fait tomber en arrière ; Il m'a rendue désolée, accablée de tristesse tout le jour.
+14 Nun. Le joug de mes iniquités m'a accablé soudain ; elles ont été enlacées dans Sa main, et Il les a mises sur mon cou ; ma force a été affaiblie ; le Seigneur m'a livré à une main dont je ne pourrai pas sortir.
 v. Jérusalem, Jérusalem, reviens au Seigneur ton Dieu.
 
 [Responsory3]
@@ -125,8 +146,8 @@ R. Venez, mettons du bois dans Son pain et rayons-Le de la terre des vivants.
 [Lectio8]
 !1 Cor 11:23-26
 23 Car, pour moi, j'ai reçu du Seigneur, ce que je vous ai aussi transmis, savoir, que le Seigneur Jésus, dans la nuit où il fut livré, prit du pain,
-24	et après avoir rendu grâces, le rompit et dit : "Prenez et mangez ; ceci est Mon corps, qui sera livré pour vous ; faites ceci en mémoire de Moi."
-25	De même, après avoir soupé, Il prit le calice et dit : "Ce calice est la nouvelle alliance en Mon sang ; faites ceci, toutes les fois que vous en boirez, en mémoire de Moi."
+24	et après avoir rendu grâces, le rompit et dit : « Prenez et mangez ; ceci est Mon corps, qui sera livré pour vous ; faites ceci en mémoire de Moi.» 
+25	De même, après avoir soupé, Il prit le calice et dit : « Ce calice est la nouvelle alliance en Mon sang ; faites ceci, toutes les fois que vous en boirez, en mémoire de Moi.» 
 26	Car toutes les fois que vous mangez ce pain et que vous buvez ce calice, vous annoncez la mort du Seigneur, jusqu'à ce qu'Il vienne.
 
 [Responsory8]
@@ -145,7 +166,6 @@ R. Ne voyez-vous donc pas Judas, comment il ne dort pas mais se hâte de Me livr
 32	Mais le Seigneur nous juge et nous châtie, afin que nous ne soyons pas condamnés avec ce monde.
 33	Ainsi, mes frères, lorsque vous vous réunissez pour le repas, attendez-vous les uns les autres.
 34	Si quelqu'un a faim qu'il mange chez lui, afin que vous ne vous réunissiez pas pour votre condamnation. Je règlerai les autres choses quand je serai arrivé chez vous.
-
 
 [Responsory9]
 R. Les anciens du peuple tinrent conseil,
@@ -168,31 +188,6 @@ R. Qui mangeait Mon pain, a préparé contre Moi une grande trahison.
 
 [Ant 2]
 Le traître * leur a donné un signe, disant : Celui que j’embrasserai, c’est Lui, prenez-Le.
-
-[Oratio]
-v. Le Christ S’est fait obéissant pour nous, jusqu’à la mort.
-!en silence
-$Pater noster
-!à voix un peu plus haute
-_
-&psalm(50)
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
-@:Oratio Matutinum
-
-[Oratio Matutinum]
-v. Daignez jeter un regard favorable, Seigneur, sur Votre famille que voici et pour laquelle Notre Seigneur Jésus-Christ n’a pas hésité à Se laisser livrer aux mains des bourreaux et à subir le supplice de la croix,
-!Et c'est à voix basse qu'on dit la conclusion
-$Qui tecum
-
-[Prelude Vespera] (rubrica 1955 aut rubrica 1960)
-!Les vêpres ne se disent pas aujourd'hui, pour ceux qui assistent à la messe vespérale de la Cène du Seigneur. 
-
-[Ant Vespera]
-Je prendrai le calice * du salut et j’invoquerai le nom du Seigneur.;;115
-Avec ceux * qui haïssent la paix, j’étais pacifique ; tandis que je leur parlais, ils me combattaient sans motif.;;119
-Des hommes * d'iniquité, libérez-moi, Seigneur.;;139
-Gardez-moi * du filet qu'ils m'ont tendu et des embûches de ceux qui commettent l'iniquité.;;140
-Je regardais * à ma droite et je voyais ; et il n'y avait personne qui me connût.;;141
 
 [Ant 3]
 Alors qu'ils soupaient, * Jésus prit du pain, le bénit, le rompit et le donna à Ses disciples.

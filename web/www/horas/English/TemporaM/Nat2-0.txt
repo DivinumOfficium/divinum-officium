@@ -1,20 +1,2 @@
-[Ant Matutinum 3N]
-Alleluia, * alleluia, alleluia;;263;264;265
-
-[Lectio5]
-@Sancti/01-05:Lectio4:s/God is .*//s
-
-[Lectio6]
-@Sancti/01-05:Lectio4:s/.* God is/God is/s s/$/~/
-@Sancti/01-05:Lectio5:s/He who .*//s
-
-[Lectio7]
-@Sancti/01-05:Lectio5:s/.* He who/He who/s
-
 [Lectio11]
 @Sancti/01-05:Lectio9:s/He seemeth .*//s
-
-[Lectio12]
-@Sancti/01-05:Lectio9:s/.* He seemeth /He seemeth /s s/$/~/
-We can even state in a different way that which is written in the same words, according to the Hebrew text, in Iasiah: "There shall come forth a rod out of the root of Jesse, and the Nazarene shall rise up out of his root."
-

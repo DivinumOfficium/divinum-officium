@@ -1,0 +1,13 @@
+[Lectio9]
+@Tempora/Pent20-0:Lectio7:s/Quare .*//s
+
+[Lectio10]
+@Tempora/Pent20-0:Lectio7:s/.* Quare /Quare /s s/$/~/
+@Tempora/Pent20-0:Lectio8:s/Minus .*//s
+
+[Lectio11]
+@Tempora/Pent20-0:Lectio8:s/.* Minus /Minus /s s/$/~/
+@Tempora/Pent20-0:Lectio9:s/Salútem .*//s
+
+[Lectio12]
+@Tempora/Pent20-0:Lectio9:s/.* Salútem /Salútem /s

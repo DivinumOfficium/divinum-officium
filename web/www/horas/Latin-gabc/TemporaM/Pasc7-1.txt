@@ -1,0 +1,53 @@
+[Responsory Vespera]
+R.br. {gabc:Tempora/Pascha/rb--spiritus_paraclitus_tonus_simplex_pro_diebus_infra_octavam--solesmes_1934}
+
+[Lectio1]
+@Tempora/Pasc7-1::s/ Quod.*//s
+
+[Responsory1]
+@Tempora/Pasc7-0
+
+[Lectio2]
+@Tempora/Pasc7-1:Lectio1:s/.*(Quod)/$1/s s/$/~/
+@Tempora/Pasc7-1::s/ Hoc.*//s
+
+[Responsory2]
+@Tempora/Pasc7-0
+
+[Lectio3]
+@Tempora/Pasc7-1:Lectio2:s/.*(Hoc)/$1/s s/$/~/
+@Tempora/Pasc7-1
+
+[Lectio3] (rubrica 196)
+@:Lectio11: s/$/~/
+@:Lectio12
+
+[Lectio4]
+!Act. 19:10-12
+10 Hoc autem factum est per biénnium, ita ut omnes qui habitábant in Asia audírent verbum Dómini, Judǽi atque gentíles.
+11 Virtutésque non quáslibet faciébat Deus per manum Pauli,
+12 ita ut étiam super lánguidos deferréntur a córpore ejus sudária et semicínctia, et recedébant ab eis languóres, et spíritus nequam egrediebántur.
+
+[Lectio5]
+Sermo sancti Augustíni Epíscopi
+!Sermo 267 in die Pentecostes, cap. 1 et 2
+Hodiérni diéi solémnitas Dómini Dei magni, et magnæ grátiæ, quæ superfúsa est super nos, recordatiónem facit. Deo enim solémnitas celebrátur: ne, quod semel factum est, de memória deleátur. Solémnitas enim ab eo, quod solet in anno, nomen accépit: quómodo perénnitas flúminis dícitur, quia non siccátur æstáte, sed per totum annum fluit:ideo perénne, id est, per annum: sic et solémne, quod solet in anno celebrári.
+
+[Lectio6]
+Celebrámus hódie adventum Spíritus Sancti: Dóminus enim Spíritum de cælo misit, quem in terra promíserat de cælo esse missúrum. Non potest ille veníre, ait, nisi ego abíero: dum autem abíero, mittam illum ad vos. Passus est, mórtuus est, resurréxit, ascéndit: restábat, ut impléret, quod promísit.
+
+[Lectio7]
+Hoc expectántes discípuli ejus, ánimæ, ut scriptum est, centum vigínti, decupláto número Apostolórum: duódecim enim elégit, et in centum vigínti Spíritum misit. Hoc ergo promíssum exspectántes, in una domo erant, orábant: quia desiderábant jam ipsa fide, quod ipsa oratióne, ipso spiritáli desidério: utres novi erant, vinum novum de cælo exspectabátur, et venit. Jam enim fúerat magnus botrus ille calcátus, et glorificátus. Légimus enim in Evangélio: Spíritus enim nondum erat datus, quia Jesus nondum fúerat glorificátus.
+
+[Lectio8]
+Jam quid respóndit, audístis, magnum miráculum. Omnes, qui áderant, unam linguam didícerant. Venit Spíritus Sanctus, impléti sunt, cœpérunt loqui linguis váriis ómnium géntium, quas non nóverant, nec didícerant; sed docébat ille, qui vénerat: intrávit, impléti sunt, fudit. Et tunc hoc erat signum, quicúmque accipiébat Spíritum Sanctum, súbito implétus Spíritu, linguis ómnium loquebátur, non illi solum centum vigínti.
+
+[Lectio9]
+@Tempora/Pasc7-1:Lectio1:s/ Quod.*//s
+
+[Lectio10]
+@Tempora/Pasc7-1:Lectio1:s/.*(?=Quod)//s s/$/~/
+@Tempora/Pasc7-1:Lectio2:s/ Hoc.*//
+
+[Lectio11]
+@Tempora/Pasc7-1:Lectio2:s/.*(?=Hoc)//

@@ -1,13 +1,5 @@
-[Rank]
-Wszystkich Świętych;;Duplex I classis cum octava communi;;6.4;;
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=115
-(rubrica tridentina aut rubrica divino) Vesperae Defunctorum
+[Officium]
+Wszystkich Świętych
 
 [Ant Vespera]
 Potem widziałem rzeszę wielką. * której nie mógł nikt przeliczyć, ze wszech narodów i pokoleń, stojących przed stolicą.
@@ -15,11 +7,6 @@ A wszyscy Aniołowie * stali około stolicy i padli przed stolicą na oblicze sw
 I odkupiłeś nas * Bogu przez Krew Twoją ze wszelkiego pokolenia i języka i ludu i narodu i uczyniłeś nas Bogu naszemu królestwem.
 Błogosławcie Pana * wszyscy wybrani Jego; obchodźcie dni wesela i wyznawajcie Mu.
 Chwała wszystkim świętym Jego, * synom Izraelskim, ludowi przybliżającemu się do Niego: tać jest chwała wszystkim świętym Jego.
-
-[Capitulum Vespera]
-!Ap 7:2-3
-v. Oto ja, Jan, widziałem drugiego anioła, wstępującego od wschodu słońca, mającego pieczęć Boga żywego, i zawołał głosem wielkim ku czterem Aniołom, którym dano jest szkodzić ziemi i morzu, mówiąc: Nie szkodźcie ziemi i morzu ani drzewom, dopóki nie popieczętujemy sługi Boga na czołach ich.
-$Deo gratias
 
 [Hymnus Vespera]
 {:H-PlacareChriste:}v. Przebacz, Chryste, sługom Twoim,
@@ -44,7 +31,7 @@ Wnet wezwijcie do Ojczyzny.
 _
 Wy czystych Dziewic zastępy,
 Wy, coście przeszli do nieba
-Z pustyni, - teraz umieśćcie
+Z pustyni, — teraz umieśćcie
 Nas na niebieskich stolicach.
 _
 Usuńcie wszystkich niewiernych
@@ -52,15 +39,48 @@ Z pomiędzy grona wierzących,
 Aby już wkrótce nastała
 Jedna owczarnia i Pasterz.
 _
-Niech Bogu Ojcu brzmi chwała
+* Niech Bogu Ojcu brzmi chwała
 Wraz z Synem Jednorodzonym
 I Duchem Pocieszycielem
 Dziś i na wieki wieków.
 Amen.
 
-[Versum 1]
-V. Weselcie się w Panu o radujcie, sprawiedliwi.
-R. Wysławiajcie Go, wszyscy prawego serca.
+[HymnusM Vespera]
+v. Chryste, wszystkich Zbawicielu,
+Racz zachować wierne sługi,
+Niechaj Panna nam uprasza
+Pomoc Twoją, święcie prosząc.
+_
+Radujące się zastępy
+Wzniosłych duchów, oddalajcie
+Złe, co było i co będzie,
+To, co dzisiaj też uleczcie.
+_
+Sędziego Patriarchowie
+I Apostołowie Pańscy,
+Was prosimy z uniżeniem:
+Wyjednujcie nam zbawienie.
+_
+Sławni Pańscy męczennicy
+I wyznawcy, blask siejący,
+Niechaj modły wasze wznoszą
+Dusze nasze w wieczność nieba.
+_
+Wielka rzeszo wszystkich świętych,
+Która śpiewy czystych Dziewic
+Oraz mnichów niesiesz w górę,
+Czyń nas przyjaciółmi Pana.
+_
+Wiarołomny lud oddalcie,
+Niechaj wiernych nic nie nęka,
+By z tym większym żarem chwalby
+Zanosili swemu Panu.
+_
+* Ojcu niech niezrodzonemu,
+Jednorodzonemu Jego,
+Jak i Duchowi Świętemu;
+Uwielbienia brzmią przez wieki.
+Amen.
 
 [Ant 1]
 Aniołowie, * Archaniołowie, Trony i Panowania, Księstwa, Władze i Moce niebieskie, Cherubini i Serafini, Patrjarchowie i Prorocy, świętego Prawa Doktorowie, Apostołowie, wszyscy Męczennicy Chrystusowi, święci Wyznawcy, Dziewice Pańskie, Pustelnicy i Wszyscy Święci wstawiajcie się za nami.
@@ -71,6 +91,17 @@ $Per Dominum
 
 [Invit]
 Królowi nad królami, Panu, pójdźcie pokłońmy się: * Bo on jest koroną wszystkich świętych.
+
+[Ant Matutinum]
+Zna Pan * drogę sprawiedliwych: * którzy w zakonie jego rozmyślają we dnie i w nocy.;;1
+Uczcił * Pan Świętych swoich, i wysłuchał ich wołających do siebie.;;4
+Dziwne jest * imię twoje, Panie: bo chwałą i czcią ukoronowałeś Świętych swoich, i postanowiłeś ich nad dziełami rąk twoich.;;8
+Panie, * którzy czynili sprawiedliwość zamieszkają w przybytku twoim, i odpoczną na górze twojéj świętéj.;;14
+Ten jest naród * szukających Pana, szukających oblicza Boga Jakóbowego.;;23
+Weselcie się w Panu, * i radujcie się sprawiedliwi, i wykrzykujcie radośnie wszyscy prawego serca.;;31
+Bójcie się Pana * wszyscy święci jego: bo niemasz niedostatku bojącym się go: oto oczy Pańskie nad sprawiedliwymi, a uszy jego na prośby ich.;;33
+Panie, nadziejo Świętych * i ich wieżo obronna, dałeś dziedzictwo bojącym się Twego imienia, i będą mieszkać w Twoim przybytku na wieki,;;60
+Którzy miłujecie Pana, * weselcie się w Panu: a wysławiajcie pamiątkę świętobliwości jego.;;96
 
 [Lectio1]
 Z Księgi Apokalipsy św. Jana Apostoła
@@ -99,7 +130,7 @@ Z Księgi Apokalipsy św. Jana Apostoła
 9 I śpiewali nową pieśń, mówiąc: Godzieneś jest, Panie, wziąć księgi i otworzyć pieczęci ich, iżeś jest zabit, i odkupiłeś nas Bogu przez krew twoję ze wszelakiego pokolenia i języka i ludu i narodu:
 10 I uczyniłeś nas Bogu naszemu królestwem i kapłanami, i będziemy królować na ziemi.
 11 I widziałem i słyszałem głos wielu Aniołów około stolice i zwierząt i starszych, a była liczba ich tysiące tysiąców,
-12 Mówiących głosem wielkim: Godzien jest Baranek, który jest zabity, wziąć moc i bóstwo i mądrość i siłę i cześć i chwałę i błogosławieństwo.
+12 mówiących głosem wielkim: Godzien jest Baranek, który jest zabity, wziąć moc i bóstwo i mądrość i siłę i cześć i chwałę i błogosławieństwo.
 13 A wszelkie stworzenie, które jest na niebie i na ziemi i pod ziemią, i co w morzu jest, i co w nich wszystkie słyszałem mówiące: Siedzącemu na stolicy i Barankowi błogosławieństwo i cześć i chwała i moc na wieki wieków.
 14 A czworo zwierząt mówiło: Amen. A dwadzieścia i czteréj starsi upadli na oblicze swoje i kłaniali się żywiącemu na wieki wieków.
 
@@ -120,7 +151,7 @@ Dzisiaj najmilszy Świętych wszystkich pod jedną radością uroczystości obch
 O prawdziwie Matka Kościół szczęśliwa, który Boskiego uraczenia cześć tak oświeca, który chwalebna krew zwycięskich męczenników ozdabia, który nienaruszonego wyznania śliczne panieństwo odziewa. Między kwiatkami jego jest i róża i lilja. Ubiegajmyż się teraz najmilszy każdy z nas z obojej zacności aby wziął jak największą koronę godności lub panieństwa białą lubo z męczeństwa czerwoną. W obozach Niebieskich pokój i bitwa mają kwiatki swe któremi żołnierze Chrystusowi koronowani bywają.
 
 [Lectio6]
-Niewypowiedziana bowiem i niezmierna dobroć Boska to też opatrzyła iż prac i potyczek czasu niezwlekła ani długiego abo wiecznego uczyniła ale raczej krótki i że tak rzekę maluchny: aby w tym krótkim i małym żywocie prace były i potyczki, w onym zaś który wieczny jest za wysługi korona i nagroda, aby prace prędko koniec wzięły a zapłaty prac bez końca trwały, aby po ciemnościach świata tego ludzie pobożni nader zasną światłość oglądali i błogosławieństwo nad ciężkości wszystkich mąk większe były, jako świadczy Apostoł gdy mówi: Nie są utrapienia te godne przyszłej chwały czasu niniejszego, która się w nas objawi.
+Niewypowiedziana bowiem i niezmierna dobroć Boska to też opatrzyła iż prac i potyczek czasu niezwlekła ani długiego abo wiecznego uczyniła ale raczej krótki i że tak rzekę maluchny: aby w tym krótkim i małym żywocie prace były i potyczki, w onym zaś który wieczny jest za wysługi korona i nagroda, aby prace prędko koniec wzięły a zapłaty prac bez końca trwały, aby po ciemnościach świata tego ludzie pobożni nader zacną światłość oglądali i błogosławieństwo nad ciężkości wszystkich mąk większe były, jako świadczy Apostoł gdy mówi: Nie są utrapienia te godne przyszłej chwały czasu niniejszego, która się w nas objawi.
 
 [Lectio7]
 Czytanie Ewangelii świętej według Mateusza
@@ -137,6 +168,11 @@ Nic dziwnego, że jeden i ten sam Bóg, który stworzył niebo i ziemię, przez 
 [Lectio9]
 I cóż mówi? Błogosławieni ubodzy w duchu, albowiem ich jest Królestwo Niebieskie. O pożądaniu rzeczy doczesnych czytamy, co napisano: Wszystko to marność i zarozumiałość ducha. Zarozumiałość ducha oznacza zuchwałość i pychę. Potocznie zaś mówi się, że pyszni są wielce nadęci w duchu, i słusznie, ponieważ po łacinie słowo „duch” oznacza również ‘wiatr’, dlatego napisano: Ogniu i gradzie, śniegu i lodzie, wietrze gwałtowny. A któż nie wie, że ludzi pysznych nazywa się „nadętymi”, jakby ich wiatr rozdymał? Stąd też pochodzi owo powiedzenie Apostoła: Wiedza nadyma, a miłość buduje. I dlatego tutaj słusznie za ubogich w duchu uważa się pokornych i bojących się Boga, to jest takich, których duch nie jest nadęty pychą.
 &teDeum
+
+[Capitulum Laudes]
+!Ap 7:2-3
+v. Oto ja, Jan, widziałem drugiego anioła, wstępującego od wschodu słońca, mającego pieczęć Boga żywego, i zawołał głosem wielkim ku czterem Aniołom, którym dano jest szkodzić ziemi i morzu, mówiąc: Nie szkodźcie ziemi i morzu ani drzewom, dopóki nie popieczętujemy sługi Boga na czołach ich.
+$Deo gratias
 
 [Hymnus Laudes]
 {:H-Salutisaeternae:}v. Dawco zbawienia wiekuistego,
@@ -170,12 +206,43 @@ Z Świętym także Pocieszycielem,
 Na wieki wieków.
 Amen.
 
-[Versum 2]
-V. Niechaj się radują święci z chwały swej.
-R. A niech się weselą na łożach swoich.
+[HymnusM Laudes]
+v. Jezu, świata Zbawicielu,
+Odkupionym przyjdź z pomocą;
+Święta Boża Rodzicielka
+Niech grzesznikom zjedna łaskę.
+_
+Niech aniołów zastęp jasny,
+Grono dawnych patriarchów,
+Pełni wszelkich cnót prorocy
+Przebaczenie nam uproszą.
+_
+Jan, Poprzednik Twój i Chrzciciel,
+Nieba klucznik znamienity
+Razem z resztą Apostołów
+Niech rozwiążą pęta winy.
+_
+Chór chwalebny męczenników
+I wyznawcy silni wiarą,
+Nieskalane też dziewice
+Niechaj nas obmyją z grzechu.
+_
+Niech przyczyna zakonników
+I modlitwy wszystkich niebian
+Orędują wobec Boga,
+Aby dał nam życie wieczne.
+_
+Tobie, Chryste, cześć i hołdy
+Z Ojcem i jedności Duchem,
+Twoim bowiem światłem Boskim
+Święci cieszą się na zawsze.
+Amen.
+
+[Ant 2_]
+Ciebie przesławny * chór Apostołów, Ciebie Proroków poczet chwalebny, Ciebie wychwala Męczenników zastęp świetlany, Ciebie wszyscy Święci i wybrani jednym głosem uwielbiają, błogosławiona Trójco, jedyny Boże.
 
 [Ant 2]
-Ciebie przesławny * chór Apostołów, Ciebie Proroków poczet chwalebny, Ciebie wychwala Męczenników zastęp świetlany, Ciebie wszyscy Święci i wybrani jednym głosem uwielbiają, błogosławiona Trójco, jedyny Boże.
+@:Ant 2_
 
 [Lectio Prima]
 !Ap 7:12

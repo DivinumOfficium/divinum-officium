@@ -1,22 +1,8 @@
 [Rank]
-Septem Dolorum Beatae Máriae Virginis;;Duplex 2nd class;;5.1;;ex C11
+Hétfájdalmas Szűz;;Duplex 2nd class;;5.1;;ex C11
 
-[Rank1960]
-Septem Dolorum Beatae Mariae Virginis;;Duplex 2nd class;;5;;ex C11
-
-[RankNewcal]
-Septem Dolorum Beatae Mariae Virginis;;Duplex;;3;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-
-[Capitulum Vespera]
-!Lam 2:13
-v. Mihez hasonlítsalak, mivel vesselek össze, Jeruzsálem leánya? Ki tudna megvigasztalni, Sionnak szűz leánya? Mert nagy, mint a tenger, a fájdalmad. Ki gyógyíthatna meg?
-$Deo gratias
+[Rank] (rubrica 196)
+Hétfájdalmas Szűz;;Duplex 2nd class;;5;;ex C11
 
 [Versum 1]
 V. Imádkozzál érettünk mártirok kiráynője
@@ -25,74 +11,54 @@ R. Aki Krisztus keresztjénel álltál
 [Ant 1]
 Ne nézzetek le * amiért barna vagyok, hiszen a nap barnított le! Anyámnak fiai nehezteltek rám
 
+[Oratio]
+Isten, akinek szenvedése által Simeon jövendölése beteljesedett, és a fájdalom tőre szúrta át Szűzanya gyengéd lelkét, add meg kérünk hogy akik hódolattal megemlékezünk fájdalmáról, elnyerjük a szenvedéseid árán megvásárolt üdvösséget
+$Qui vivis
+
 [Invit]
 Álljunk a kereszt mellé Szűz Máriával Jézus anyjával * az ő lelkét is a fájdalom tőre járta át
 
 [Lectio1]
 Olvasmány Jeremiás próféta siralmainak könyvéből
-!Lam 1:2; 1:20-21
+!Siral 1:2; 1:20-21
 2 Csak sír, egyre sír éjjelente, könnyei peregnek az arcán. Azok közül, akik szerették, egy sincs, hogy vigasztalja. Barátai mind cserbenhagyták, és ellenségeivé lettek.
 20 Nézd, Uram, mennyire szorongok! Megrendült egész bensőm, s a szívem megfordult bennem. Bizony, mennyit lázongtam ellened! És most kívül fiaimtól foszt meg a kard, belül meg a halál pusztít.
 21 Halld meg, mennyit sóhajtozom, mert nincs, aki vigasztaljon! Ellenségeim mind ujjonganak pusztulásom hírére, amiért így bántál velem. Hozd el hát a napot, amelyet megígértél, hadd legyenek hozzám hasonlóvá!
 
 [Lectio2]
-!Lam 2:13-16
+!Siral 2:13-16
 13 Mihez hasonlítsalak, mivel vesselek össze, Jeruzsálem leánya? Ki tudna megvigasztalni, Sionnak szűz leánya? Mert nagy, mint a tenger, a fájdalmad. Ki gyógyíthatna meg?
 14 Amit prófétáid jövendöltek neked, az csalárdság volt és balgaság. Soha nem tárták fel vétkedet, hogy indítsanak megtérésre, Hamis látomásokkal hitegettek, becsaptak és félrevezettek.
-15 Akiknek erre visz az útjuk, összecsapják a kezüket, amikor meglátnak. Felszisszennek, fejüket csóválják Jeruzsálem leánya miatt: "Ezzé lett a szépek szépe, az egész földnek ékessége?"
-16 Kitárta ellened a száját minden ellenséged. Füttyentenek, fogukat csikorgatják, és ezt mondják: "Felfaltuk! Ez az a nap, amelyre vártunk megértük, megláttuk."
+15 Akiknek erre visz az útjuk, összecsapják a kezüket, amikor meglátnak. Felszisszennek, fejüket csóválják Jeruzsálem leánya miatt: „Ezzé lett a szépek szépe, az egész földnek ékessége?”
+16 Kitárta ellened a száját minden ellenséged. Füttyentenek, fogukat csikorgatják, és ezt mondják: „Felfaltuk! Ez az a nap, amelyre vártunk megértük, megláttuk.”
 
 [Lectio3]
-!Lam 2:17-18
+!Siral 2:17-18
 17 Amit elhatározott, azt végbevitte az Úr, teljesítette szavát, amelyet már rég kimondott. Könyörtelenül lerombolt! Ellenségeid ujjonghatnak fölötted, mert eltöltötte őket erővel.
 18 Kiálts szívből az Úrhoz, zokogj, Sion leánya! Mint a patak, úgy folyjon a könnyed éjjel és nappal! Ne tarts pihenőt, ne szűnjék meg sírni a szemed!
 
 [Lectio7]
 Evangélium szent János Apostol kőnyvéből
-!John 19:25-27
+!Jn 19:25-27
 Azon időben Jézus keresztje alatt ott állt anyja, anyjának nővére, Mária, aki Kleofás felesége volt és Mária Magdolna. És így tovább.
 _
 Homily by St Ambrose, (Bishop of Milan.)
 !On Virgins, 7.
 There stood by the Cross His Mother. Men had forsaken Him, but she stood there fearless. Behold how the Mother of Jesus could break through her shrinking modesty, but could not belie her heart. With the eyes of a mother's love she gazed upon the Wounds of her Son, those Wounds through Which she knew that redemption for all mankind was flowing. The Mother, who feared not the executioners, was able to endure the sight of their work. Her Son was hanging upon the Cross, and she braved His tormentors.
 
-[Lectio93]
-@Sancti/09-15t:Lectio9
-
-[Commemoratio]
-!Commemoratio S. Nicomedis.
-@Commune/C2:Oratio proper
-$Oremus
-Give ear, O Lord, to our supplications, and that the prayers of thy blessed martyr Nicomedes, for whose feast we are making ready, graciously pour upon us thine everlasting mercy.
-$Per Dominum
-
 [Capitulum Laudes]
-!Lam 2:13
+!Siral 2:13
 v. Mihez hasonlítsalak, mivel vesselek össze, Jeruzsálem leánya? Ki tudna megvigasztalni, Sionnak szűz leánya? Mert nagy, mint a tenger, a fájdalmad. Ki gyógyíthatna meg?
 $Deo gratias
 
-[Oratio]
-Isten, akinek szenvedése által Simeon jövendölése beteljesedett, és a fájdalom tőre szúrta át Szűzanya gyengéd lelkét, add meg kérünk hogy akik hódolattal megemlékezünk fájdalmáról, elnyerjük a szenvedéseid árán megvásárolt üdvösséget
-$Qui vivis
+[Lectio Prima]
+!Siral 2:18
+v. Kiálts szívből az Úrhoz, zokogj, Sion leánya! Mint a patak, úgy folyjon a könnyed éjjel és nappal! Ne tarts pihenőt, ne szűnjék meg sírni a szemed!
 
 [Versum Prima]
 Ki a mi üdvössegünkért szenvedett
 
-[Lectio Prima]
-!Lam 2:18
-v. Kiálts szívből az Úrhoz, zokogj, Sion leánya! Mint a patak, úgy folyjon a könnyed éjjel és nappal! Ne tarts pihenőt, ne szűnjék meg sírni a szemed!
-
-[Capitulum Tertia]
-!Lam 2:13
-v. Mihez hasonlítsalak, mivel vesselek össze, Jeruzsálem leánya? Ki tudna megvigasztalni, Sionnak szűz leánya? Mert nagy, mint a tenger, a fájdalmad. Ki gyógyíthatna meg?
-$Deo gratias
-
 [Capitulum Sexta]
-!Lam 1:2
+!Siral 1:2
 v. Csak sír, egyre sír éjjelente, könnyei peregnek az arcán. Azok közül, akik szerették, egy sincs, hogy vigasztalja.
-$Deo gratias
-
-[Capitulum Nona]
-!Lam 2:18
-v. Kiálts szívből az Úrhoz, zokogj, Sion leánya! Mint a patak, úgy folyjon a könnyed éjjel és nappal! Ne tarts pihenőt, ne szűnjék meg sírni a szemed!
 $Deo gratias

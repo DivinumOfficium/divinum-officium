@@ -1,25 +1,39 @@
-@Tempora/Pasc6-2
+@TemporaM/Pasc5-5
 
 [Rank]
-Feria III post Ascensionem;;Feria;;1;;vide TemporaM/Pasc5-4
+@Tempora/Pasc6-2
 
-[Rule]
-
-[Oratio]
+[Oratio] (rubrica 196)
 @Tempora/Pasc6-0
 
-[Capitulum Vespera]
-@TemporaM/Pasc5-5
+[Ant Matutinum]
+@TemporaM/Pasc5-4:AntMatutinumM:2 s/;;.*//
+;;
+;;
+;;
+;;
+;;
+@Tempora/Pasc5-4::6 s/;;.*//
+;;
+;;
+;;
+;;
+;;
 
-[Capitulum Laudes]
-@TemporaM/Pasc5-5
+[Lectio1]
+@Tempora/Pasc6-2:Lectio7
 
-[Capitulum Tertia]
-@TemporaM/Pasc5-5
+[Responsory1]
+@Tempora/Pasc5-4:Responsory4
 
-[Capitulum Sexta]
-@TemporaM/Pasc5-5
+[Lectio2]
+@Tempora/Pasc6-2:Lectio8
 
-[Capitulum Nona]
-@TemporaM/Pasc5-5
+[Responsory2]
+@Tempora/Pasc5-4:Responsory5
 
+[Lectio3]
+@Tempora/Pasc6-2:Lectio9
+
+[Responsory3]
+@Tempora/Pasc5-4:Responsory6

@@ -1,0 +1,874 @@
+[Invit]
+Dominica = Chúa là Đấng đã làm nên ta, * Hãy đến, ta thờ lạy Người.
+Feria II = Hãy đến, * Ta hãy nhảy mừng hát ca Chúa.
+Feria III = Ta hãy reo mừng Đức Chúa Lời, * Là Đấng cứu độ ta.
+Feria IV = Đức Chúa Lời là Chúa cả thể, * Hãy đến, ta thờ lạy Người.
+Feria V = Vua cả thể là Chúa, * Hãy đến, ta thờ lạy Người.
+Feria VI = Chúa là Đức Chúa Lời chúng tôi, * Hãy đến, ta thờ lạy Người.
+Sabbato = Dân Chúa, và chiên Người nuôi: * Hãy đến, ta thờ lạy Người.
+Invit 1 = Ta hãy thờ lạy Chúa, * Vì chưng chính Người đã làm nên ta.
+
+[Invit Trid_]
+Dominica=Ta hãy thờ lạy Chúa, * Đấng đã làm nên ta.
+Feria II=Hãy đến, * Ta hãy nhảy mừng hát ca Chúa.
+Feria III=Ta hãy reo mừng Đức Chúa Lời, * Là Đấng cứu độ ta.
+Feria IV=Lạy Chúa, trong tay Chúa, * Cùng các crí ải địa cầu.
+Feria V=Chúa là Đấng đã làm nên ta, * Hãy đến, ta thờ lạy Người.
+Feria VI=Ta hãy thờ lạy Chúa, * Vì chưng chính Người đã làm nên ta.
+Sabbato=Chúa là Đức Chúa Lời chúng tôi, * Hãy đến, ta thờ lạy Người.
+
+[Invit TridC]
+@:Invit Trid_:1-4
+@:Invit Trid_:6:s/VI=/V=/
+@:Invit Trid_:5:s/V=/VI=/
+@:Invit Trid_:7
+
+[Invit Trid]
+@:Invit Trid_
+(sed rubrica cisterciensis)
+@:Invit TridC
+
+[ ]
+Invit monastic same as Trid, but preceeded by psalm #3
+
+[Invit Adv]
+Vua hầu đến là Chúa, * Hãy đến, ta thờ lạy Người.
+
+[Invit Adv3]
+Chúa đà gần đến, * Hãy đến, ta thờ lạy Người.
+
+[Invit Quad]
+Chớ luống công mà dậy sớm trước sáng: * Vì Chúa đã hứa mũ triều thiên cho kẻ canh thức.
+
+[Invit Quad5_]
+Hôm nay, ví bằng anh em nghe tiếng Chúa, * Thì chớ cứng lòng làm chi.
+
+[Invit Quad5 OP]
+Ta hãy thờ lạy Chúa, * Đấng đã chuộc tội ta bởi cây câu rút.
+
+[Invit Quad5]
+@:Invit Quad5_
+(sed rubrica Praedicatorum)
+@:Invit Quad5 OP
+
+[Invit Pasch_]
+Chúa đã sống lại thật, * Allêluia.
+
+[Invit Pasch]
+@:Invit Pasch_
+(sed rubrica praedicatorum aut rubrica cisterciensis)
+Allêluia, allêluia, * Allêluia.
+
+[Day0 Hymnus]
+{:H-MatDom1:}v. Đêm khuya thức dậy ân cần,
+Hằng suy thánh vịnh, chuyên chăm nguyện cầu.
+Đồng thanh tiếng hát ngọt ngào,
+Ngợi khen Chúa cả, dạt dào kính tin.
+_
+Hầu cho vua thánh hiển vinh,
+Cùng hàng các thánh thiên đình hỉ hoan.
+Cho ta vào chốn thanh nhàn,
+Sống đời vĩnh phúc, bình an vô cùng.
+_
+Nguyện xin Chúa cả Ba Ngôi,
+Cha, Con, Thánh Thần, đời đời hiển vinh.
+Khắp nơi vang tiếng uy linh,
+Ngợi khen danh Chúa, trọn tình sắt son.
+Amen.
+
+[Day0 HymnusM]
+@:Day0 Hymnus:s/Voce concórdi/Víribus totis/ s/perénnem/beátam/ s/résonat/réboat/
+
+[Day0 Hymnus1M]
+v. Ngày đầu trong hết mọi ngày,
+Dựng nên thế giới, đất đai rạng ngời.
+Hoặc khi Chúa sống lại rồi,
+Thắng sự chết, cứu giống người khỏi vương.
+_
+Xua đi biếng nhác chán chường,
+Mau mau chỗi dậy, tìm đường thẳng ngay.
+Đêm thanh tìm Chúa lúc này,
+Như lời tiên tri, dạy rày chẳng sai.
+_
+Nguyện xin Chúa nhậm lời nài,
+Ra tay nâng đỡ, đoái hoài tôi con.
+Rửa cho sạch hết bợn nhơ,
+Đưa về thiên quốc, bến bờ vinh quang.
+_
+Để giờ rất thánh nghiêm trang,
+Chúng con ca hát, rộn ràng nghỉ ngơi.
+Chúa ban ơn phúc bởi Lời,
+Cho đoàn con cái, đời đời hỉ hoan.
+_
+Chúa Cha sáng láng vô vàn,
+Chúng con khẩn nguyện, nài van hết lòng.
+Xa lìa dâm dục đèo bòng,
+Cùng mọi hành sự, long đong hại mình.
+_
+Chớ cho thân xác u minh,
+Ra ô uế, mất nghĩa tình sạch trong.
+Kẻo lửa hỏa ngục trào dâng,
+Đốt thiêu hồn xác, nát tan tơi bời.
+_
+Cầu xin Đấng Chuộc tội đời,
+Rửa bao nhơ bẩn, gọi mời chúng con.
+Ban sự sống phúc trường tồn,
+Cho đoàn con cái, xác hồn thảnh thơi.
+_
+Xác thịt xa lánh thói đời,
+Trở nên thanh tịnh, rạng ngời trinh nguyên.
+Cúi đầu mong đợi ơn thiêng,
+Hát bài vinh hiển, triền miên muôn đời.
+_
+* Cha rất nhân lành, Chúa ôi,
+Cùng Con Một Chúa, Ngôi Lời sánh đôi.
+Thánh Thần an ủi mọi nơi,
+Hiển trị vĩnh viễn, đời đời chẳng ngơi.
+Amen.
+
+[Day0 Hymnus1M] (rubrica cisterciensis)
+@Psalterium/Special/Major Special:HymnusM Day0 Laudes hiemalis_
+
+[Day0 Hymnus1]
+{:H-MatDom4:}v. Ngày đầu Chúa Cả Ba Ngôi,
+Dựng nên vũ trụ, đất Lời phân minh.
+Hoặc khi Sáng Tạo phục sinh,
+Thắng sự chết, cứu sinh linh thoát nàn.
+_
+Xua đi mỏi mệt bàng hoàng,
+Mau mau chỗi dậy, vội vàng siêng năng.
+Đêm khuya tìm Chúa chí nhân,
+Như lời tiên tri, ân cần dạy khuyên.
+_
+Nguyện xin Chúa nhậm lời nguyền,
+Ra tay nâng đỡ, chuân chuyên độ trì.
+Rửa cho sạch hết sân si,
+Đưa về thiên quốc, trị vì hiển vinh.
+_
+Để giờ rất thánh uy linh,
+Chúng con ca hát, trọn tình nghỉ ngơi.
+Chúa ban ơn phúc bởi Lời,
+Cho đoàn con cái, đời đời hỉ hoan.
+_
+Chúa Cha sáng láng vô vàn,
+Chúng con khẩn nguyện, nài van hết lòng:
+Dẹp tan dâm dục cuồng ngông,
+Cùng mọi hành sự, hại lòng nát tan.
+_
+Chớ cho thân xác dơ gian,
+Ra ô uế, trượt đàng lành sạch trong.
+Kẻo vì lửa dục đèo bòng,
+Lửa thiêu hỏa ngục, long đong đời đời.
+_
+Cầu xin Đấng Chuộc tội đời,
+Rửa bao nhơ bẩn, lầm lỗi chúng con.
+Rộng ban ơn ích vẹn tròn,
+Sống đời vĩnh phúc, sắt son đá vàng.
+_
+* Cha rất nhân lành cao sang,
+Cùng Con Một Chúa, huy hoàng sánh đôi.
+Thánh Thần an ủi mọi nơi,
+Hiển trị vĩnh viễn, đời đời chẳng ngơi.
+Amen.
+
+[Day1 HymnusM]
+@:Day1 Hymnus:s/omni témpore/in perpetuum/
+
+[Day1 Hymnus]
+{:H-MatFeria:}v. Ngủ vừa lại sức thảnh thơi,
+Giường kia bỏ lại, dậy thời hát ca.
+Lạy Cha xin hãy lân la,
+Ở cùng con cái, thiết tha khẩn cầu.
+_
+Lưỡi con ca tụng trước sau,
+Lòng con mến Chúa, dạt dào kính tin.
+Việc làm sau đó giữ gìn,
+Xin Chúa thánh hóa, vẹn tuyền khởi công.
+_
+Bóng tối nhường ánh rạng đông,
+Đêm lui cho rạng, ánh hồng chiếu soi.
+Tội khiên đêm tối vương mang,
+Nhờ ơn ánh sáng, tan hoang chẳng còn.
+_
+Chúng con sấp mình nỉ non,
+Xin thương cắt hết, lối mòn tội khiên.
+Miệng môi ca tụng triền miên,
+Ngợi khen Danh Chúa, mọi miền mọi khi.
+_
+* Cha rất nhân lành từ bi,
+Cùng Con Một Chúa, uy nghi rạng ngời.
+Thánh Thần an ủi mọi nơi,
+Hiển trị vĩnh viễn, đời đời chẳng ngơi.
+Amen.
+
+[Day2 HymnusM]
+@:Day2 Hymnus
+
+[Day2 Hymnus]
+{:H-MatFeria:}v. Đồng ban ánh sáng Chúa Cha,
+Là Vầng Sáng bởi, Sáng ra rạng ngời.
+Đêm khuya hát tiếng dâng lời,
+Phá tan u tối, Chúa thời ghé thương.
+_
+Cất đi tăm tối sầu vương,
+Đuổi xua ma quỷ, tìm đường tránh xa.
+Thói mê ngủ, hãy bỏ qua,
+Kẻo mà lười biếng, hại ta ươn hèn.
+_
+Chúa Kirixitô ngợi khen,
+Thứ tha tin kẻ, mọn hèn kính tin.
+Ích chi cho kẻ van xin,
+Là lời ca hát, giữ gìn trước sau.
+_
+* Cha rất nhân lành nhiệm mầu,
+Cùng Con Một Chúa, khởi đầu nguyên khôi.
+Thánh Thần an ủi mọi nơi,
+Hiển trị vĩnh viễn, đời đời chẳng ngơi.
+Amen.
+
+[Day3 HymnusM]
+@:Day3 Hymnus:s/culpis ómnibus/tu criminibus/
+
+[Day3 Hymnus]
+{:H-MatFeria:}v. Đấng Làm Nên mọi sự lành,
+Chúa tôi cai trị, quyền hành chí tôn.
+Xin thương giải thoát xác hồn,
+Khỏi cơn mê ngủ, dập dồn hại thay.
+_
+Chúa Kirixitô lạy Ngài,
+Thứ tha tội lỗi, trần ai mắc vương.
+Chúng con chỗi dậy tìm đường,
+Xưng ra tội lỗi, đêm trường phá tan.
+_
+Giơ tay lên, lòng hỉ hoan,
+Như lời tiên tri, bảo ban đêm ngày.
+Phao-lô cũng dạy lẽ này,
+Phải năng cầu nguyện, chẳng sai chút nào.
+_
+Chúa nhìn sự dữ biết bao,
+Chúng con bày tỏ, lẽ nào giấu quanh.
+Thở than đổ giọt lụy thành,
+Xin tha tội lỗi, đã đành trót vương.
+_
+* Cha rất nhân lành tình thương,
+Cùng Con Một Chúa, phi thường hiển vinh.
+Thánh Thần an ủi thần linh,
+Hiển trị vĩnh viễn, thiên đình chẳng ngơi.
+Amen.
+
+[Day4 HymnusM]
+@:Day4 Hymnus
+
+[Day4 Hymnus]
+{:H-MatFeria:}v. Màn đêm che phủ mịt mùng,
+Mọi màu trên đất, mông lung nhạt nhòa.
+Chúng con xưng tội thiết tha,
+Lạy Quan Xét xử, lòng ta tỏ tường.
+_
+Để Ngài cất tội thảm thương,
+Rửa hồn nhơ bẩn, tìm đường sạch trong.
+Chúa ban ơn thánh vào lòng,
+Đẩy lui tội lỗi, long đong hại mình.
+_
+Kìa lòng tê dại u minh,
+Tội khiên cắn rứt, tội tình xót xa.
+Muốn xua tăm tối quỷ ma,
+Tìm Đấng Chuộc Tội, thiết tha khẩn cầu.
+_
+Đẩy lui mù tối thẳm sâu,
+Trong lòng rạng rỡ, nhiệm mầu sáng soi.
+Để hồn vui sướng nghỉ ngơi,
+Ở trong ánh sáng, đời đời hiển vinh.
+_
+* Cha rất nhân lành uy linh,
+Cùng Con Một Chúa, trọn tình sắt son.
+Thánh Thần an ủi vuông tròn,
+Hiển trị vĩnh viễn, bảo toàn muôn năm.
+Amen.
+
+[Day5 HymnusM]
+@:Day5 Hymnus:s/vúlnerum\./ómnium./ s/ómnium/vúlnerum/ s/astet/adsit/
+
+[Day5 Hymnus]
+{:H-MatFeria:}v. Chúa là Một Chúa Ba Ngôi,
+Quyền uy cai trị, khắp nơi hoàn cầu.
+Nghe bài ca tụng nhiệm mầu,
+Chúng con canh thức, kêu cầu hát khen.
+_
+Chúng con chỗi dậy một phen,
+Rời nơi chăn chiếu, mọn hèn đêm thâu.
+Để xin thuốc thánh nhiệm mầu,
+Chữa lành thương tích, khổ sầu đớn đau.
+_
+Những gì lừa dối trước sau,
+Trong đêm phạm phải, lầm nhau lạc đàng.
+Xin quyền vinh hiển cao sang,
+Từ Lời xóa bỏ, nhẹ nhàng sạch trơn.
+_
+Chớ cho xác dơ dấy hơn,
+Lòng đừng mê ngủ, chập chờn tối tăm.
+Chớ lây tội lỗi lạc lầm,
+Làm nguội lửa mến, âm thầm trong tim.
+_
+Cầu xin Đấng Chuộc Tội tin,
+Đổ đầy ánh sáng, giữ gìn chúng con.
+Trải qua ngày tháng mỏi mòn,
+Không hề vấp ngã, vuông tròn nghĩa nhân.
+_
+* Cha rất nhân lành ân cần,
+Cùng Con Một Chúa, đồng phần quang vinh.
+Thánh Thần an ủi thần linh,
+Hiển trị vĩnh viễn, thiên đình chẳng ngơi.
+Amen.
+
+[Day6 HymnusM]
+v. Chúa nguồn thương xót hải hà,
+Dựng nên lời đất, bao la tuyệt vời.
+Chúa là duy nhất muôn đời,
+Ba ngôi riêng biệt, chẳng rời nhau ra.
+_
+Nghe lời than khóc chúng ta,
+Hát ca dâng tiếng, thiết tha khẩn cầu.
+Hầu cho lòng sạch làu làu,
+Được vui hưởng Chúa, dạt dào thánh ân.
+_
+Đốt thiêu gan ruột xác thân,
+Bằng ngọn lửa thánh, ân cần thuốc thang.
+Thắt lưng cho gọn, sẵn sàng,
+Đẩy lui dâm dục, trái ngang hoang đàng.
+_
+Để ai phá vỡ màn vàng,
+Đêm thanh ca hát, rộn ràng hỉ hoan.
+Được ơn quê thật bình an,
+Làm cho giàu có, muôn vàn phúc ân.
+_
+* Cha rất nhân lành chí nhân,
+Cùng Con Một Chúa, đồng phần hiển vinh.
+Thánh Thần an ủi thần linh,
+Hiển trị vĩnh viễn, thiên đình chẳng ngơi.
+Amen.
+
+[Day6 Hymnus]
+{:H-MatFeria:}v. Cha nguồn thương xót hải hà,
+Dựng nên lời đất, bao la tuyệt vời.
+Cùng là một tính một Lời,
+Ba ngôi riêng biệt, Chúa Lời uy linh.
+_
+Nghe lời than khóc tội mình,
+Hát ca dâng tiếng, trọn tình khẩn van.
+Hầu cho lòng sạch bợn nhơ,
+Được vui hưởng Chúa, bến bờ thánh ân.
+_
+Đốt thiêu gan ruột xác thân,
+Bằng ngọn lửa thánh, cân phân thuốc thần.
+Thắt lưng canh thức chuyên cần,
+Đẩy lui dâm dục, xa gần lánh đi.
+_
+Những ai phá vỡ sầu bi,
+Đêm thanh ca hát, mọi khi chuyên cần.
+Được ơn quê thật dự phần,
+Làm cho giàu có, muôn phần phúc ân.
+_
+* Cha rất nhân lành chí nhân,
+Cùng Con Một Chúa, đồng phần hiển vinh.
+Thánh Thần an ủi thần linh,
+Hiển trị vĩnh viễn, thiên đình chẳng ngơi.
+Amen.
+
+[HymnusM Adv]
+v. Ngôi Lời cao cả xuất hành,
+Bởi Cha mà xuống, tác thành thế gian.
+Sinh ra cứu độ trần hoàn,
+Thời gian sau hết, muôn vàn chuyển lay.
+_
+Xin soi lòng dạ chúng này,
+Đốt lên lửa mến, tháng ngày nóng ran.
+Nghe lời rao giảng bảo ban,
+Đẩy lui trơn trượt, gian nan đường tà.
+_
+Khi Tòa Phán Xét hiện ra,
+Soi lòng xét dạ, người ta tỏ tường.
+Trả cho điều kín đôi đường,
+Thưởng công kẻ chính, thiên đường phúc vinh.
+_
+Chớ đừng bắt phạt tội tình,
+Giam cầm sự dữ, điêu linh khốn nàn.
+Nhưng cùng các thánh hỉ hoan,
+Đồng trinh vĩnh viễn, thanh nhàn thảnh thơi.
+_
+Kính danh, quyền lực, ngợi khen,
+Chúa Cha, Chúa Tử, mọn hèn kính tin.
+Thánh Thần an ủi giữ gìn,
+Đời đời kiếp kiếp, thiên đình chẳng ngơi.
+Amen.
+
+[Hymnus Adv]
+{:H-MatAdv:}v. Ngôi Lời cao cả xuất hành,
+Bởi lòng Cha Cả, tác thành đi ra.
+Sinh ra cứu độ người ta,
+Thời gian trôi chảy, xem ra sắp tàn.
+_
+Xin soi lòng dạ nhân gian,
+Đốt lên lửa mến, chứa chan nồng nàn.
+Lòng thôi lưu luyến trần hoàn,
+Để cho vui thú, thiên đàng chứa chan.
+_
+Đến khi Tòa Chúa luận bàn,
+Phạt hình kẻ dữ, lửa than nung hình.
+Tiếng êm gọi kẻ trọn tình,
+Lên Lời hưởng phúc, hiển vinh đời đời.
+_
+Chớ làm mồi lửa tơi bời,
+Cuốn trong gió lốc, rã rời nát tan.
+Được xem mặt Chúa hỉ hoan,
+Hưởng vui trên Lời, bình an vô cùng.
+_
+* Chúa Cha, Chúa Tử một cùng,
+Thánh Thần nhân ái, bao dung vẹn toàn.
+Như xưa nay vẫn bảo toàn,
+Ngợi khen danh Chúa, thiên đàng chẳng ngơi.
+Amen.
+
+[HymnusM Quad]
+@:Hymnus Quad:s/nóxia/péssima/ 1-20
+@:Hymnus Quad:24
+@:Hymnus Quad:s/ore súpplici/atque sínguli/ 23
+@:Hymnus Quad:22
+@:Hymnus Quad:21
+@:Hymnus Quad:25-45
+
+[HymnusM Quad] (rubrica Praedicatorum)
+Đấng ban phần thưởng cực cao,
+Là niềm trông cậy, dạt dào thế gian.
+Xin nghe đầy tớ khẩn van,
+Kêu lên cùng Chúa, vô vàn thiết tha.
+_
+Lương tâm cáo tội chúng ta,
+Phạm cùng danh Chúa, thật là nặng thay.
+Chúng con xin Chúa rửa ngay,
+Cho sạch tội lỗi, đắng cay ngập tràn.
+_
+Nếu Ngài từ chối không ban,
+Ai người ban được, bình an bây giờ?
+Chúa quyền phép, chớ hững hờ,
+Xin ban lòng sạch, tôn thờ Chúa thôi.
+_
+Vậy nay xin nhậm lời tôi,
+Giữ chay cho trọn, tài bồi công linh.
+Hầu ăn mầu nhiệm phục sinh,
+Chịu các phép bí, tính linh vẹn toàn.
+_
+Nguyện xin Ba Ngôi cao sang,
+Ban cho ơn ấy, tuôn tràn xuống đây.
+Duy Ngài vinh hiển cao dày,
+Chúa nương muôn thuở, chẳng thay đổi dời.
+Amen.
+
+[Hymnus Quad]
+{:H-MatQuad:}v. Theo lề mầu nhiệm dạy rày,
+Chúng ta hãy giữ, ăn chay hãm mình.
+Mười ngày bốn lượt trọn tình,
+Đủ bốn mươi bữa, hy sinh vẹn toàn.
+_
+Luật và Tiên tri bảo ban,
+Xưa đà giữ thế, dọn đàng trước sau.
+Chúa Kirixitô nhiệm mầu,
+Dựng nên thời tiết, hát câu thánh hành.
+_
+Hãy dùng ít lại của lành,
+Lời, ăn, uống, ngủ, để dành hy sinh.
+Vui cười cũng bớt tính toan,
+Nghiêm trang gìn giữ, lo toan hãm mình.
+_
+Tránh xa độc hại tội tình,
+Làm cho tâm trí, điêu linh lạc loài.
+Chớ cho quỷ dữ trêu hoài,
+Chiếm nơi lòng dạ, nguôi ngoai đạo hằng.
+_
+Dẹp cơn giận dữ hung hăng,
+Khóc than trước mặt, Chúa hằng xét soi.
+Sấp mình miệng lưỡi kêu mời,
+Nói lời van vỉ, Chúa lời thứ tha:
+_
+Chúng con tội lỗi xấu xa,
+Phạm lòng thương xót, hải hà Chúa tôi.
+Xin ban ơn xuống vun bồi,
+Đấng hay tha thứ, đền bồi tội khiên.
+_
+Chúa ơi xin hãy nhớ liền,
+Chúng con là đất, mọn hèn Chúa nương.
+Chớ trao danh dự phi thường,
+Của Danh Thánh Chúa, vào tay kẻ ngoài.
+_
+Thứ tha điều dữ phạm hoài,
+Gia tăng điều thiện, miệt mài cầu xin.
+Hầu cho đẹp ý Chúa tin,
+Đời này, đời nọ, giữ gìn mãi thôi.
+_
+Chúa Ba Ngôi Cả, Chúa ôi,
+Ngôi Một đơn nhất, muôn đời uy linh.
+Cho mùa chay tịnh hy sinh,
+Sinh nhiều hoa trái, chút tình dâng lên.
+Amen.
+
+[HymnusM Quad5]
+@:Hymnus Quad5:s/Láuream/Prœlium/ s/In necem morsu /Morsu in mortem cór/ s/Dei manus pedésque/manus, pedésque, et crura/ s/Sempitérna.*//s
+Vinh danh, danh dự Chúa Lời
+Dẫy đầy cao vút, muôn đời chí tôn,
+Chúa Cha, Chúa Tử bảo tồn;
+Thánh Thần danh tiếng, ôn tồn ủi an:
+Quyền uy, khen ngợi muôn vàn,
+Đời đời kiếp kiếp, tuôn tràn chẳng ngơi.
+Amen.
+
+[Hymnus Quad5]
+{:H-MatQuad5:}v. Lưỡi ta ca hát vang lừng,
+Chiến công rực rỡ, lẫy lừng vinh quang.
+Trên cây câu rút huy hoàng,
+Khải hoàn danh giá, vẻ vang lạ lùng.
+Thế nào Chúa Cả kiêu hùng,
+Hiến thân chịu chết, phục tùng thắng hơn.
+_
+Thương người nguyên tổ vô ơn,
+Mắc mưu lừa dối, giận hờn đớn đau.
+Khi ăn trái cấm hại nhau,
+Cắn vào sự chết, nát nhàu tấm thân.
+Chúa bèn chọn gỗ tương phân,
+Gỗ đền nợ gỗ, cứu phần thiệt thua.
+_
+Công trình cứu độ thắm tô,
+Đòi phương trật tự, điểm tô vẹn toàn.
+Hầu cho kẻ phản đa đoan,
+Mắc mưu nghệ thuật, héo hon vì lầm.
+Thuốc thang chữa chạy âm thầm,
+Nơi thù gây hại, lại mầm thuốc tiên.
+_
+Khi thời gian đã mãn viên,
+Tràn đầy thánh thiện, đến miền trần gian.
+Chúa Con từ Tòa cao sang,
+Chúa Cha sai đến, ủi an người đời.
+Sinh trong lòng Nữ trọn đời,
+Mang lấy xác thịt, Ngôi Lời hiện ra.
+_
+Hài nhi khóc lóc thiết tha,
+Đặt trong hang đá, máng lừa hẹp thay.
+Tay chân quấn tã, mẹ thày,
+Đồng trinh ràng buộc, tháng ngày dưỡng nuôi.
+Chân tay Thiên Chúa của tôi,
+Dây khăn bó chặt, thiệt thòi lắm thay.
+_
+Vinh danh Thiên Chúa cao dày,
+Ba Ngôi cực thánh, tháng ngày hiển vinh.
+Chúa Cha, Chúa Tử trọn tình,
+Thánh Thần vinh hiển, uy linh bằng bặn.
+Một Ba danh thánh ân cần,
+Muôn loài ca tụng, vạn lần kính tôn.
+Amen.
+
+[HymnusM Pasch]
+v. Lạy Vua hằng sống Chúa tôi,
+Dựng nên mọi vật, đất Lời phân minh.
+Trước khi muôn thuở tượng hình,
+Hằng cùng Cha Cả, Con sinh đời đời.
+_
+Buổi sơ khai dựng đất lời,
+Chúa làm nên A-đam, người đầu tiên.
+Giống in hình Chúa vẹn tuyền,
+Ban cho nét mặt, uy quyền giống Cha.
+_
+Quỷ ma lừa dối xấu xa,
+Kẻ thù nhân loại, gian tà hại thay.
+Chúa bèn mặc xác thân này,
+Hạ mình nhận lấy, đắng cay phận người.
+_
+Hầu mua chuộc lại con người,
+Mà xưa Chúa nắn, vui cười tạo nên.
+Kết liên cùng Chúa vững bền,
+Nhờ mang xác thịt, kề bên Chúa Lời.
+_
+Sinh bởi Trinh nữ rạng ngời,
+Kinh hồn khiếp vía, mọi người sợ run.
+Nhờ Người sự chết lùi chùn,
+Chúng con sống lại, hưởng cùng phúc vinh.
+_
+Rửa trong nước phép tái sinh,
+Chúa ban ơn cả, tha tình thứ tha.
+Xưa kia xiềng xích quỷ ma,
+Trói lương tâm lại, nay đà tháo lui.
+_
+Chúa vì nhân loại ngậm ngùi,
+Chịu cây câu rút, dập vùi tấm thân.
+Đổ ra Máu Thánh vô ngần,
+Giá chuộc cứu rỗi, muôn phần quý thay.
+_
+Hóa công vạn vật cao dày,
+Trong mùa Phục sinh, vui vầy hỉ hoan.
+Xin gìn giữ hết đoàn con,
+Khỏi cơn chết dữ, vẹn toàn tấm thân.
+_
+Vinh danh Chúa Cả ân cần,
+Đấng từ cõi chết, mười phần phục sinh.
+Chúa Cha, Thần Khí uy linh,
+Đời đời kiếp kiếp, thiên đình chẳng ngơi.
+Amen.
+
+[HymnusM Pasch] (rubrica praedicatorum)
+@Psalterium/Special/Major Special:HymnusM Pasch Laudes_
+
+[Hymnus Pasch]
+{:H-MatPasc:}v. Lạy Vua hằng sống trên Lời,
+Dựng nên mọi vật, khắp nơi vẹn toàn.
+Trước khi muôn thuở thế gian,
+Hằng cùng Cha Cả, vinh quang đời đời.
+_
+Khi sinh thế giới đất lời,
+Chúa ban hình ảnh, rạng ngời dung nhan.
+Trao cho A-đam bảo toàn,
+Lấy bùn đất nắn, thần linh kết vào.
+_
+Nhưng vì ghen ghét biết bao,
+Quỷ ma lừa dối, làm sao ố mờ.
+Chúa bèn mặc xác, chẳng ngờ,
+Sửa sang hình dạng, tôn thờ đẹp xinh.
+_
+Xưa sinh bởi Nữ đồng trinh,
+Nay từ mồ mả, phục sinh rạng ngời.
+Khiến ta từ cõi chết đời,
+Chôn vùi cùng Chúa, Chúa mời đứng lên.
+_
+Chúa chiên vĩnh cửu vững bền,
+Nước thiêng Rửa tội, làm nên sạch làu.
+Rửa hồn trong trắng trước sau,
+Là mồ chôn lấp, khổ đau tội tình.
+_
+Vì chưng nợ cũ tội mình,
+Chúa chịu câu rút, nộp mình đóng đinh.
+Rộng ban Máu Thánh ân tình,
+Làm giá cứu rỗi, sinh linh vẹn toàn.
+_
+Để làm nguồn vui hỉ hoan,
+Phục sinh trong dạ, lo toan Chúa phòng.
+Cứu con khỏi chết long đong,
+Được ơn tái tạo, sống trong an bình.
+_
+* Chúa Cha vinh hiển uy linh,
+Cùng Con Một Chúa, phục sinh khải hoàn.
+Thánh Thần an ủi lo toan,
+Đời đời kiếp kiếp, vinh quang chẳng rời.
+Amen.
+
+[MM LB Pasch]
+!Tiên tri Ô-sê 6:1-3
+v. Hãy đến, và trở về cùng Chúa, vì Người đã bắt, và sẽ chữa lành chúng ta; Người sẽ đánh, và sẽ chữa chúng ta. Sau hai ngày Người sẽ làm cho chúng ta sống lại; ngày thứ ba Người sẽ cho chúng ta chỗi dậy, và chúng ta sẽ sống trước mặt Người. Chúng ta sẽ biết, và sẽ theo, hầu nhận biết Chúa.
+$Tu autem
+_
+@Psalterium/Special/Minor Special:Responsory breve Pasch Nona
+
+[MM LB1]
+!Ai ca 2:19
+v. Hãy chỗi dậy, hãy ngợi khen trong ban đêm, khi vừa bắt đầu canh thức: hãy đổ lòng ra như nước trước mặt Chúa: hãy giơ tay lên cùng Người.
+$Tu autem
+_
+R.br. Tôi sẽ ngợi khen Chúa * Trong mọi khi.
+R. Tôi sẽ ngợi khen Chúa * Trong mọi khi.
+V. Sự ngợi khen Người hằng ở nơi miệng tôi.
+R. Trong mọi khi.
+&Gloria
+R. Tôi sẽ ngợi khen Chúa * Trong mọi khi.
+
+[MM LB2_]
+!Châm ngôn 3:19-20
+v. Chúa đã dùng sự khôn ngoan mà lập nên đất: dùng sự thông minh mà làm nên các tầng lời. Bởi sự khôn ngoan Người mà vực sâu vỡ ra, và mây tuôn sương móc xuống.
+$Tu autem
+_
+R.br. Lạy Đức Chúa Lời, nhân danh Chúa * Xin hãy cứu tôi.
+R. Lạy Đức Chúa Lời, nhân danh Chúa * Xin hãy cứu tôi.
+V. Và xin cứu tôi trong sự thương xót Chúa.
+R. Xin hãy cứu tôi.
+&Gloria
+R. Lạy Đức Chúa Lời, nhân danh Chúa * Xin hãy cứu tôi.
+
+[MM LB2C]
+@:MM LB2_:1-4
+R.br. Lạy Đức Chúa Lời, xin thương xót tôi, * Xin thương xót tôi.
+R. Lạy Đức Chúa Lời, xin thương xót tôi, * Xin thương xót tôi.
+V. Vì chưng linh hồn tôi trông cậy nơi Chúa.
+R. Xin thương xót tôi.
+
+[MM LB2]
+@:MM LB2_
+(nhưng theo phép dòng Xitô)
+@:MM LB2C
+
+[MM LB3_]
+!Khôn ngoan 1:1-2
+v. Hãy yêu sự công chính, hỡi những kẻ xét đoán thế gian. Hãy tưởng nghĩ về Chúa trong sự lành, và hãy tìm kiếm Người trong sự đơn sơ của lòng: vì chưng Người cho những kẻ chẳng thử thách Người gặp được, và Người tỏ mình ra cho những kẻ tin kính Người.
+$Tu autem
+_
+R.br. Lạy Chúa, tôi đã trông cậy nơi Chúa: * Tôi chẳng hề hổ thẹn đời đời.
+R. Lạy Chúa, tôi đã trông cậy nơi Chúa: * Tôi chẳng hề hổ thẹn đời đời.
+V. Xin hãy cứu tôi và gỡ tôi trong sự công chính Chúa.
+R. Tôi chẳng hề hổ thẹn đời đời.
+&Gloria
+R. Lạy Chúa, tôi đã trông cậy nơi Chúa: * Tôi chẳng hề hổ thẹn đời đời.
+
+[MM LB3C]
+@:MM LB3_:1-4
+R.br. Đức Chúa Lời thật lạ lùng, * Trong các thánh Người.
+R. Đức Chúa Lời thật lạ lùng, * Trong các thánh Người.
+V. Chính Người sẽ ban quyền phép và sức mạnh cho dân Người.
+R. Trong các thánh Người.
+
+[MM LB3]
+@:MM LB3_
+(nhưng theo phép dòng Xitô)
+@:MM LB3C
+
+[MM LB4_]
+!Khôn ngoan 3:9
+v. Kẻ trông cậy nơi Người sẽ hiểu biết lẽ thật, và kẻ trung tín trong tình yêu mến sẽ bằng lòng về Người: vì chưng ơn và sự bằng yên dành cho những kẻ Người chọn.
+$Tu autem
+_
+R.br. Hãy nhảy mừng Đức Chúa Lời, * Đấng giúp đỡ ta.
+R. Hãy nhảy mừng Đức Chúa Lời, * Đấng giúp đỡ ta.
+V. Hãy reo mừng Thiên Chúa của Giacóp.
+R. Đấng giúp đỡ ta.
+&Gloria
+R. Hãy nhảy mừng Đức Chúa Lời, * Đấng giúp đỡ ta.
+
+[MM LB4C]
+@:MM LB4_:1-4
+R.br. Lạy Đức Chúa Lời, chúng tôi sẽ xưng tụng Chúa, * Chúng tôi sẽ xưng tụng Chúa.
+R. Lạy Đức Chúa Lời, chúng tôi sẽ xưng tụng Chúa, * Chúng tôi sẽ xưng tụng Chúa.
+V. Và chúng tôi sẽ kêu cầu danh Chúa.
+R. Chúng tôi sẽ xưng tụng Chúa.
+
+[MM LB4]
+@:MM LB4_
+(nhưng theo phép dòng Xitô)
+@:MM LB4C
+
+[MM LB5]
+!Khôn ngoan 1:6-7
+v. Vì chưng thần trí khôn ngoan thì nhân từ, và chẳng chữa kẻ nói lộng ngôn khỏi miệng lưỡi nó: vì chưng Đức Chúa Lời là chứng nhân của thận nó, là kẻ xét soi lòng nó cách chân thật, và là kẻ nghe lưỡi nó. Vì chưng Thần Trí Chúa đã đầy dẫy khắp và thế gian, và Đấng bao gồm mọi sự, thì thông biết mọi tiếng nói.
+$Tu autem
+_
+R.br. Lạy Chúa, những sự thương xót Chúa * Tôi sẽ ca hát đời đời.
+R. Lạy Chúa, những sự thương xót Chúa * Tôi sẽ ca hát đời đời.
+V. Từ đời nọ tới đời kia.
+R. Tôi sẽ ca hát đời đời.
+&Gloria
+R. Lạy Chúa, những sự thương xót Chúa * Tôi sẽ ca hát đời đời.
+
+[MM LB6_]
+!Giảng viên 12:2-3
+v. Hãy làm ơn cho kẻ công chính, thì con sẽ được phần thưởng trọng: và nếu chẳng được bởi nó, thì chắc chắn sẽ được bởi Chúa. Vì chưng chẳng có sự lành cho kẻ hằng ở trong sự dữ, và chẳng bố thí: vì chưng Đấng Tối Cao cũng ghét kẻ tội lỗi, và thương xót kẻ ăn năn.
+$Tu autem
+_
+R.br. Lạy Chúa, * Xin nhậm lời tôi cầu nguyện.
+R. Lạy Chúa, * Xin nhậm lời tôi cầu nguyện.
+V. Và tiếng tôi kêu hãy thấu đến Chúa.
+R. Xin nhậm lời tôi cầu nguyện.
+&Gloria
+R. Lạy Chúa, * Xin nhậm lời tôi cầu nguyện.
+
+[MM LB6C]
+@:MM LB6_:1-4
+R.br. Sự thương xót Chúa * Ở trên những kẻ kính sợ Người.
+R. Sự thương xót Chúa * Ở trên những kẻ kính sợ Người.
+V. Từ đời đời và cho đến đời đời.
+R. Ở trên những kẻ kính sợ Người.
+
+[MM LB6]
+@:MM LB6_
+(nhưng theo phép dòng Xitô)
+@:MM LB6C
+
+[MM Capitulum_]
+!1 Cor 16:13-14
+v. Hãy tỉnh thức, hãy đứng vững trong đức tin, hãy làm như kẻ trượng phu, và hãy mạnh mẽ. Mọi sự của anh em hãy làm trong đức kính mến.
+$Deo gratias
+_
+V. Phúc cho kẻ ở trong nhà Chúa, lạy Chúa.
+R. Chúng nó sẽ ngợi khen Chúa đời đời chẳng cùng.
+
+[Nocturn 2 Versum Feria6]
+V. Chúa trọng đại ở trong Sion.
+R. Và cao cả trên hết thảy các dân.
+
+[Nocturn 2 Versum Sabbato]
+V. Người đã sai lời Người, và đã chữa lành chúng.
+R. Và đã gỡ chúng khỏi những sự hư nát của chúng.
+
+[MM Capitulum]
+@:MM Capitulum_
+
+[MM Capitulum] (rubrica cisterciensis)
+@:MM Capitulum_:1-4
+@Psalterium/Special/Minor Special:Versum Dominica Tertia
+(nhưng feria 3)
+@Psalterium/Psalmi/Psalmi matutinum:Daya3:7-8
+(nhưng feria 4)
+@Psalterium/Psalmi/Psalmi matutinum:Daya4:7-8
+(nhưng feria 5)
+@Tempora/Epi1-0:Versum 1
+(nhưng feria 6)
+@:Nocturn 2 Versum Feria6
+(nhưng feria 7)
+@:Nocturn 2 Versum Sabbato
+
+
+
+[MM Capitulum Adv_]
+!Titô 2:12-13
+v. Chúng ta hãy ở tiết độ, công bình và nhân đức ở đời này, mà trông đợi sự cậy trông phúc đức, và sự đến vinh hiển của Đức Chúa Lời cả thể, và là Đấng Cứu Chuộc chúng tôi là Đức Chúa Jêsu Kirixitô.
+$Deo gratias
+_
+V. Lạy Chúa xin hãy đến, và chớ chậm trễ.
+R. Xin tha thứ tội ác cho dân Chúa.
+
+[MM Capitulum Adv]
+@:MM Capitulum Adv_
+(nhưng theo phép dòng Xitô)
+@:MM Capitulum Adv_:1-4
+@:Adv 0 Versum
+
+[MM Capitulum Nat]
+!Isaia 9:6
+v. Vì chưng một con trẻ đã sinh ra cho chúng tôi, và một con trai đã ban cho chúng tôi, và quyền cai trị đặt trên vai Người: và tên Người sẽ gọi là, Đấng Lạ Lùng, Đấng Chỉ Bảo, Đức Chúa Lời, Đấng Mạnh Mẽ, Cha Đời Sau, Vua Bằng Yên.
+$Deo gratias
+_
+V. Khắp các crí ải địa cầu đã xem thấy, allêluia.
+R. Sự cứu độ của Thiên Chúa chúng tôi, allêluia.
+
+[MM Capitulum Epi]
+!Isaia 60:4-5
+v. Các con trai ngươi sẽ từ đàng xa mà đến và các con gái ngươi sẽ từ bên hông mà chỗi dậy. Bấy giờ ngươi sẽ xem thấy, và ngươi sẽ được dẫy đầy; lòng ngươi sẽ lạ lùng và mở rộng: khi sự đông đúc của biển cả trở về cùng ngươi; sức mạnh của các dân ngoại sẽ đến cùng ngươi.
+$Deo gratias
+_
+V. Có ba của lễ các Đạo sĩ đã dâng cho Chúa.
+R. Là vàng, nhũ hương và mộc dược.
+
+[MM Capitulum Quad]
+!Isaia 1:16-18
+v. Hãy rửa mình, hãy ở sạch sẽ: hãy cất sự dữ của những tư tưởng anh em khỏi mắt tôi: hãy thôi làm sự trái, hãy học làm sự lành: hãy tìm kiếm sự xét đoán, hãy giúp đỡ kẻ bị hãm hại, hãy xét đoán cho kẻ mồ côi, hãy bênh vực người góa bụa. Và hãy đến, và hãy biện luận cùng tôi, Chúa phán.
+$Deo gratias
+_
+V. Chúng sẽ bồng ẵm ngươi trên tay.
+R. Kẻo ngươi vấp chân vào đá chăng.
+
+[MM Capitulum Quad5]
+!Giêrêmia 11:18-19
+v. Lạy Chúa, Chúa đã tỏ cho tôi, và tôi đã biết: bấy giờ Chúa đã chỉ cho tôi những mưu mô của chúng nó. Và tôi như con chiên hiền lành, bị đem đi làm của tế lễ.
+$Deo gratias
+_
+V. Lạy Chúa, xin gỡ tôi khỏi người dữ.
+R. Xin gỡ tôi khỏi kẻ gian ác.
+
+[MM Capitulum Pasch]
+!Rôma 6:4
+v. Vì chưng chúng ta đã chịu chôn cùng Người nhờ phép Rửa tội trong sự chết: hầu như Chúa Kirixitô đã sống lại từ cõi chết bởi vinh hiển của Đức Chúa Cha thể nào, thì chúng ta cũng bước đi trong sự mới của sự sống thể ấy.
+$Deo gratias
+_
+V. Chúa đã sống lại, allêluia.
+R. Như lời Người đã phán cùng anh em, allêluia.

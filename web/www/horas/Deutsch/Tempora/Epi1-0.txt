@@ -1,7 +1,5 @@
-[Rank]
-Fest der Heiligen Familie Jesus, Maria und Joseph;;Duplex majus;;3.9
-(sed rubrica 1960)
-Fest der Heiligen Familie Jesus, Maria und Joseph;;Duplex II classis;;5
+[Officium]
+Fest der Heiligen Familie Jesus, Maria und Joseph
 
 [Ant Vespera]
 Jacob autem * génuit Joseph virum Maríæ; de qua natus est Jesus, qui vocátur Christus.;;109
@@ -9,11 +7,6 @@ Angelus Dómini * appáruit in somnis Joseph, dicens: Joseph, fili David, noli t
 Pastores venérunt * festinántes, et invenérunt Maríam, et Joseph, et Infántem pósitum in præsépio.;;121
 Magi, intrántes domum, * invenérunt Puerum cum María, matre ejus.;;126
 Erat Pater ejus * et Mater mirántes super his quæ dicebántur de illo.;;147
-
-[Capitulum Vespera]
-!Lk 2,51
-v. Jesus stieg hinab mit Maria und Joseph und kam nach Nazareth und er war ihnen untertan.
-$Deo gratias
 
 [Hymnus Vespera]
 v. O lux beáta cǽlitum
@@ -59,19 +52,16 @@ Den Vater und den Heil'gen Geist
 Lob', preis' und rühme ewiglich.
 Amen.
 
-[Versum Prima]
-Der du Maria und Joseph untertan warst.
-
-[Versum 1]
-V. Beáti qui hábitant in domo tua, Dómine.
-R. In sǽcula sæculórum laudábunt te.
-
 [Ant 1]
 Verbum caro * factum est, et habitávit in nobis, plenum gratiæ et veritátis; de cujus plenitúdine omnes nos accépimus, et grátiam pro grátia, allelúja.
 
 [Oratio]
 Dómine Iesu Christe, qui, Maríæ et Joseph súbditus, domésticam vitam ineffabílibus virtútibus consecrásti: fac nos, utriúsque auxílio, Famíliæ sanctæ tuæ exémplis ínstrui; et consórtium cónsequi sempitérnum:
 $Qui vivis
+
+[Commemoratio]
+!Commemoratio Dominicæ in Octava Epiphaniæ
+@Tempora/Epi1-0a:Oratio:s/V\. .*/V. Omnes de Saba vénient, allelúja./ s/R\. .*/R. Aurum et thus deferéntes, allelúja./
 
 [Invit]
 Christum Dei Fílium, Maríæ et Joseph súbditum, * Veníte, adorémus.
@@ -127,23 +117,6 @@ Sancta qui vitæ documénta præbes,
 Quique cum summo Genitóre et almo
 Flámine regnas.
 Amen.
-
-[Ant Matutinum]
-Cum indúcerent * púerum Jesum paréntes ejus, accépit eum Simeon in ulnas suas, et benedíxit Deum.;;8
-Ut perfecérunt * ómnia secúndum legem Dómini, reversi sunt in Galilǽam in civitátem suam Názareth.;;18
-Puer autem * crescébat, et confortabátur plenus sapiéntia, et grátia Dei erat in illo.;;23
-V. Propter nos egénus factus est cum esset dives.
-R. Ut illíus inópia nos dívites essémus.
-Consúrgens Joseph * accépit púerum et matrem ejus nocte, et secéssit in Ægýptum.;;44
-Angelus Dómini * appáruit in somnis Joseph in Ægýpto, dicens: Surge et áccipe púerum et matrem ejus, et vade in terram Israël.;;45
-Et veniens * habitávit Názareth, ut adimplerétur quod dictum est per Prophétas: Quóniam Nazarǽus vocábitur.;;86
-V. Dóminus vias suas docébit nos.
-R. Et ambulábimus in sémitis ejus.
-Ibant paréntes Jesu * per omnes annos in Jerúsalem in die solemni Paschæ.;;95
-Cum redirent, * remánsit puer Jesus in Jerúsalem, et non cognovérunt paréntes ejus.;;96
-Non inveniéntes Jesum * regréssi sunt in Jerúsalem, requiréntes eum.;;97
-V. Pauper sum ego, et in labóribus a juventúte mea.
-R. Exaltátus autem humiliátus sum, et conturbátus.
 
 [Lectio1]
 De Epistola beáti Pauli Apóstoli ad Colossénses
@@ -261,7 +234,9 @@ Et Jesus proficiébat * sapiéntia, et ætate, et grátia apud Deum et hómines.
 Et dicébant: * Unde huic sapiéntia hæc, et virtútes? Nonne hic est fabri fílius?
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Lk 2,51
+v. Jesus stieg hinab mit Maria und Joseph und kam nach Nazareth und er war ihnen untertan.
+$Deo gratias
 
 [Hymnus Laudes]
 v. O gente felix hóspita,
@@ -305,10 +280,6 @@ Cum Patre summo ac Spíritu
 Semper tibi sit glória.
 Amen.
 
-[Versum 2]
-V. Ponam univérsos fílios tuos doctos a Dómino.
-R. Et multitúdinem pacis fíliis tuis.
-
 [Ant 2]
 Illúmina nos, Dómine, * exémplis Famíliæ tuæ, et dírige pedes nostros in viam pacis.
 
@@ -316,50 +287,8 @@ Illúmina nos, Dómine, * exémplis Famíliæ tuæ, et dírige pedes nostros in 
 !Phil 2:7
 v. Semetípsum exinanívit formam servi accípiens, in similitúdinem hóminum factus, et habitu invéntus ut homo.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
-R.br. Propter nos egénus factus est * Cum esset dives.
-R. Propter nos egénus factus est * Cum esset dives.
-V. Ut illíus inópia nos dívites essémus.
-R. Cum esset dives.
-&Gloria
-R. Propter nos egénus factus est * Cum esset dives.
-_
-V. Dóminus vias suas docébit nos.
-R. Et ambulábimus in sémitis ejus.
-
-[Capitulum Sexta]
-!Rom 5:19
-v. Sicut per inobediéntiam uníus hóminis peccatóres constitui sunt multi, ita et per uníus obeditiónem justi constituéntur multi.
-$Deo gratias
-
-[Responsory Sexta]
-R.br. Dóminus vias suas * Docébit nos.
-R. Dóminus vias suas * Docébit nos.
-V. Et ambulábimus in sémitis ejus.
-R. Docébit nos.
-&Gloria
-R. Dóminus vias suas * Docébit nos.
-_
-V. Pauper sum ego, et in labóribus a juventúte mea.
-R. Exaltátus autem humiliátus sum, et conturbátus.
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
-R.br. Pauper sum ego, * Et in labóribus a juventúte mea.
-R. Pauper sum ego, * Et in labóribus a juventúte mea.
-V. Exaltátus autem, humiliátus sum et conturbátus.
-R. Et in labóribus a juventúte mea.
-&Gloria
-R. Pauper sum ego, * Et in labóribus a juventúte mea.
-_
-V. Ponam universos fílios tuos doctos a Dómino.
-R. Et multitúdinem pacis fíliis tuis.
+[Versum Prima]
+Der du Maria und Joseph untertan warst.
 
 [Ant Vespera 3]
 Post triduum * invenérunt Jesum in templo sedéntem in médio doctórum, audiéntem illos, et interrogántem eos.;;109
@@ -368,12 +297,5 @@ Descéndit Jesus * cum eis, et venit Názareth, et erat súbditus illis.;;121
 Et Jesus proficiébat * sapiéntia, et ætate, et grátia apud Deum et hómines.;;126
 Et dicébant: * Unde huic sapiéntia hæc, et virtútes? Nonne hic est fabri fílius?;;147
 
-[Versum 3]
-@:Versum 2
-
 [Ant 3]
 María autem * conservábat ómnia verba hæc, cónferens in corde suo.
-
-[Commemoratio]
-!Commemoratio Dominicæ in Octava Epiphaniæ
-@Tempora/Epi1-0a:Oratio:s/V\. .*/V. Omnes de Saba vénient, allelúja./ s/R\. .*/R. Aurum et thus deferéntes, allelúja./

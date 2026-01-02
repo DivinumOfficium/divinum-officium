@@ -1,16 +1,8 @@
 [Rank]
 In Annuntiatione Beatæ Mariæ Virginis;;Duplex I classis;;6.5;;ex C11
 
-[Rank] (rubrica 1960)
+[Rank] (rubrica 196)
 In Annuntiatione Beatæ Mariæ Virginis;;Duplex I classis;;6;;ex C11
-
-[Rule]
-ex C11;
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-9 lectiones;
-Ant Matutinum 12 special
 
 [Ant Vespera]
 Fu mandato * l'Angelo Gabriele a Maria Vergine sposata a Giuseppe. (Alleluia.);;109
@@ -18,11 +10,6 @@ Salve, o Maria, * piena di grazia: il Signore è con te: la benedetta tu (sei) f
 Non temere, o Maria, * hai trovato grazia presso il Signore: ecco tu diventerai madre e darai alla luce un figlio. (Alleluia.);;121
 Il Signore * gli darà il trono di David, suo padre, e regnerà in eterno. (Alleluia.);;126
 Ecco l'ancella del Signore : * mi avvenga secondo quello che hai detto. (Alleluia.);;147
-
-[Capitulum Vespera]
-!Isa 7:14-15
-v. Ecco, una vergine diventerà madre e darà alla luce un figlio, che avrà nome Emanuele. Si ciberà di burro e di miele, finché sappia riprovare il male, e scegliere il bene.
-$Deo gratias
 
 [Versum 1]
 V. Salve, o Maria, piena di grazia. (Alleluia.)
@@ -71,16 +58,6 @@ R. Salve, o Maria, piena di grazia; il Signore è con te:
 V. Come avverrà questo, se io non conosco uomo? E l'Angelo le rispose, e disse.
 R. Lo Spirito Santo discenderà in te, e la potenza dell'Altissimo ti farà madre: perciò il santo [Essere] che nascerà da te, sarà chiamato Figlio di Dio. (Alleluia.)
 
-[Lectio3]
-!Isa 35:1-7
-1 Si rallegrerà la regione deserta e impervia, esulterà la solitudine, e fiorirà come un giglio. 
-2 Essa germoglierà grandemente, ed esulterà lieta e canterà lodi : a lei è stata data la gloria del Libano, la vaghezza del Carmelo e di Saron, ed essi vedranno la gloria del Signore e io splendore del nostro Dio. 
-3 Fortificate le braccia languide, e rinfrancate le ginocchia deboli. 
-4 Dite ai pusillanimi; Fatevi animo, e non temete: ecco il vostro Dio che porta la vendetta della retribuzione: Dio stesso verrà e vi salverà. 
-5 Allora si apriranno gli occhi dei ciechi e le orecchie dei sordi si schiuderanno. 
-6 Allora lo zoppo salterà come un cervo, e si scioglierà la lingua dei muti: poiché sgorgheranno delle acque nel deserto, e dei torrenti nella solitudine. 
-7 E la terra che già fu arida, sarà come un lago, e la terra sitibonda sarà mutata in fontane d'acque.
-
 [Responsory3]
 R. Ricevi, o Vergine Maria, l'annunzio che ti è trasmesso dal Signore per mezzo dell'Angelo: tu diventerai madre e darai alla luce un Dio e uomo insieme,
 * Cosi che sarai proclamata la benedetta fra tutte le donne. (Alleluia.)
@@ -123,7 +100,7 @@ R. Poiché colui che i cieli contenere non possono, tu lo portasti nel seno. (Al
 [Lectio7]
 Lettura del santo Vangelo secondo Luca
 !Luca 1:26-38
-In quell' occasione: Fu mandato l'Angelo Gabriele da Dio in una città di Galilea, chiamata Nazaret, ad una Vergine sposata a un uomo di nome Giuseppe, della casa di David, e la Vergine si chiamava Maria. Eccetera.
+In quell'occasione: Fu mandato l'Angelo Gabriele da Dio in una città di Galilea, chiamata Nazaret, ad una Vergine sposata a un uomo di nome Giuseppe, della casa di David, e la Vergine si chiamava Maria. Eccetera.
 _
 Omelia di sant'Ambrogio Vescovo
 !Libro 2 su Luca
@@ -162,10 +139,6 @@ Ecco l'ancella del Signore : * mi avvenga secondo quello che hai detto. (Allelui
 v. Ecco, una vergine diventerà madre e darà alla luce un figlio, che avrà nome Emanuele. Si ciberà di burro e di miele, finché sappia riprovare il male, e scegliere il bene.
 $Deo gratias
 
-[Versum 2]
-V. Salve, o Maria, piena di grazia. (Alleluia.)
-R. Il Signore è con te. (Alleluia.)
-
 [Ant 2]
 Come avverrà questo, * Angelo di Dio, se io non conosco uomo? Ascolta, Vergine Maria: Lo Spirito Santo scenderà in te, e la potenza dell'Altissimo ti farà madre. (Alleluia.)
 
@@ -173,19 +146,9 @@ Come avverrà questo, * Angelo di Dio, se io non conosco uomo? Ascolta, Vergine 
 !Isa 11:1-2
 v. Uscirà un rampollo dal ceppo di Jesse, e sboccerà un fiore della sua radice. E su di esso riposerà lo Spirito del Signore.
 
-[Capitulum Tertia]
-!Isa 7:14-15
-v. Ecco, una vergine diventerà madre e darà alla luce un figlio, che avrà nome Emanuele. Si ciberà di burro e di miele, finché sappia riprovare il male, e scegliere il bene.
-$Deo gratias
-
 [Capitulum Sexta]
 !Luca 1:32-33
 v. Il Signore Dio gli darà il trono di David, suo padre: e regnerà sulla casa di Giacobbe in eterno, e il suo regno non avrà fine.
-$Deo gratias
-
-[Capitulum Nona]
-!Isa 11:1-2
-v. Uscirà un rampollo dal ceppo di Jesse, e sboccerà un fiore della sua radice. E su di esso riposerà lo Spirito del Signore.
 $Deo gratias
 
 [Ant 3]

@@ -1,14 +1,5 @@
-[Rank]
-Pretiosissimi Sanguinis Domini Nostri Jesu Christi;;Duplex I classis;;6;;
-
-[Rule]
-proprium
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=147
-Festum Domini
+[Officium]
+Pretiosissimi Sanguinis Domini Nostri Jesu Christi
 
 [Ant Vespera]
 ¿Quién es éste * que viene de Edón, de Bosra, con las ropas enrojecidas? Viene vestido de gala.
@@ -16,11 +7,6 @@ Yo, * que sentencio con justicia y soy poderoso para salvar.
 Revestido * de un manto teñido en sangre, y su nombre es Palabra de Dios.
 ¿Por qué * están rojos tus vestidos, y la túnica como quien pisa en el lagar?
 Yo he pisado * el lagar, y de otros pueblos nadie me ha ayudado.
-
-[Capitulum Vespera]
-!Heb 9:11-12
-v. Hermanos: Cristo ha venido como sumo sacerdote de los bienes definitivos: su templo es más grande y más perfecto; no hecho por manos de hombre, es decir, no de este mundo creado. No usa sangre de machos cabríos ni de becerros, sino la suya propia; y así ha entrado en el santuario una vez para siempre, consiguiendo la liberación eterna.
-$Deo gratias
 
 [Hymnus Vespera]
 v. Resuenen las calles con cantos de fiesta, 
@@ -119,16 +105,22 @@ Amén.
 Llegado el día octavo, * en que debía ser circuncidado el Niño, le fue puesto por nombre Jesús.;;2
 Entrando en agonía * oraba más intensamente, y le vino un sudor como de gotas de sangre, que chorreaba hasta el suelo.;;3
 Judas, el que le había entregado, * arrepentido de lo hecho, restituyó las treinta monedas de plata, diciendo: He pecado, vendiendo la sangre inocente.;;15
-V. Nos has redimido, Señor.
-R. Con tu sangre.
 Pilato, * queriendo contentar al pueblo, les entregó a Jesús, después de haberle hecho azotar.;;22
 Viendo Pilato * que nada adelantaba, mandó traer agua, y se lavó las manos a vista del pueblo, diciendo: Inocente soy yo de la sangre de este Justo.;;29
 Y respondiendo * todo el pueblo, dijo: Caiga su sangre sobre nosotros y sobre nuestros hijos.;;63
-V. La sangre de Jesucristo, Hijo de Dios.
-R. Nos purifica de todo pecado.
 Salió, pues, Jesús, * llevando la corona de espinas y revestido del manto de púrpura. Y les dijo Pilato: Ved aquí el hombre.;;73
 Y llevando Él mismo a cuestas su cruz, * fue caminando hacia el sitio llamado el Calvario, en donde le crucificaron.;;87
 Como le vieron ya muerto, * no le quebraron las piernas, sino que uno de los soldados con la lanza le abrió el costado, y al instante salió sangre y agua.;;93
+
+[Nocturn 1 Versum]
+V. Nos has redimido, Señor.
+R. Con tu sangre.
+
+[Nocturn 2 Versum]
+V. La sangre de Jesucristo, Hijo de Dios.
+R. Nos purifica de todo pecado.
+
+[Nocturn 3 Versum]
 V. Cristo nos amó.
 R. Y nos purificó de nuestros pecados con su sangre.
 
@@ -139,7 +131,7 @@ De la Epístola de San Pablo a los Hebreos
 12 entró de una vez para siempre en el santuario, no por la sangre de los machos cabríos y de los becerros, sino por su propia sangre, habiendo obtenido una redención eterna. 
 13 Porque si la sangre de los machos cabríos y de los toros y la aspersión de la ceniza de la vaca santifica a los inmundos y les da la limpieza de la carne, 
 14 ¡cuánto más la sangre de Cristo, que en virtud de un espíritu eterno a sí mismo se ofreció inmaculado a Dios, limpiará nuestra conciencia de las obras muertas, para servir al Dios vivo! 
-15 Por esto es el mediador de una nueva alianza, a fin de que por su muerte, para redención de las transgresiones cometidas bajo la primera alianza, reciban los que han sido llamados las promesas de la herencia eterna. 
+15 Por esto es el mediador de una nueva alianza, a fin de que por su muerte, para redención de las transgresiones cometidas bajo la primera alianza, reciban los que han sido llamados las promesas de la herencia eterna.
 
 [Responsory1]
 R. Jesús, a fin de santificar con su sangre al pueblo, padeció fuera de la puerta: 
@@ -155,7 +147,7 @@ R. Vayamos, pues, a Él fuera de la ciudad, cargados con su improperio.
 19 porque Moisés, habiendo leído al pueblo todos los preceptos de la Ley, tomó la sangre de los becerros y de los machos cabríos, con agua y lana teñida de grana e hisopo, roció el libro y a todo el pueblo, 
 20 diciendo: “Esta es la sangre de la alianza que Dios ha contraído con vosotros.” 
 21 Y el mismo tabernáculo y los vasos del culto los roció del mismo modo con sangre, 
-22 y, según la Ley, casi todas las cosas han de ser purificadas con sangre, y no hay remisión sin efusión de sangre. 
+22 y, según la Ley, casi todas las cosas han de ser purificadas con sangre, y no hay remisión sin efusión de sangre.
 
 [Responsory2]
 R. Tomando Moisés la sangre, roció con ella al pueblo, 
@@ -251,7 +243,9 @@ Por esto están * ante el trono de Dios y le sirven día y noche.
 Dichosos * los que lavan sus vestidos en la sangre del Cordero.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Heb 9:11-12
+v. Hermanos: Cristo ha venido como sumo sacerdote de los bienes definitivos: su templo es más grande y más perfecto; no hecho por manos de hombre, es decir, no de este mundo creado. No usa sangre de machos cabríos ni de becerros, sino la suya propia; y así ha entrado en el santuario una vez para siempre, consiguiendo la liberación eterna.
+$Deo gratias
 
 [Hymnus Laudes]
 v. Salve, ¡oh llagas de Cristo, 
@@ -307,9 +301,6 @@ R. Por Él seremos salvados de la ira.
 [Ant 2]
 La sangre del Cordero * será para vosotros signo de salvación, dice el Señor. Y veré la sangre y pasaré, sin que os toque la plaga exterminadora.
 
-[Commemoratio 2]
-@Sancti/06-24:Octava
-
 [Lectio Prima]
 !Heb 9:19-20
 v. Moisés, tomando la sangre de los terneros y de los machos cabríos, con agua y lana roja y con un hisopo, roció el libro y a todo el pueblo, diciendo: Ésta es la sangre de la alianza que ha hecho Dios con nosotros.
@@ -317,50 +308,34 @@ v. Moisés, tomando la sangre de los terneros y de los machos cabríos, con agua
 [Versum Prima]
 Tú que nos has redimido con tu sangre.
 
-[Capitulum Tertia]
-@:Capitulum Laudes
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Nos redimiste, Señor, * Con tu sangre. 
 R. Nos redimiste, Señor, * Con tu sangre. 
 V. De entre todas las razas, lenguas, pueblos y naciones. 
 R. Con tu sangre. 
 &Gloria
 R. Nos redimiste, Señor, * Con tu sangre. 
-_
-V. La sangre de Jesucristo, Hijo de Dios.
-R. Nos limpia de todo pecado.
 
 [Capitulum Sexta]
 !Heb 9:13-14
 v. Si la sangre de machos cabríos y de toros, y el rociar con las cenizas de una becerra, tienen el poder de consagrar a los profanos, devolviéndonos la pureza externa: ¡Cuánto más la sangre de Cristo, que, en virtud del Espíritu eterno, se ha ofrecido a Dios como sacrificio sin mancha, podrá purificar nuestra conciencia de las obras muertas, llevándonos al culto del Dios vivo!
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. La sangre de Jesucristo, Hijo de Dios, * Nos limpia. 
 R. La sangre de Jesucristo, Hijo de Dios, * Nos limpia. 
 V. De todo pecado. 
 R. Nos limpia. 
 &Gloria
 R. La sangre de Jesucristo, Hijo de Dios, * Nos limpia. 
-_
-V. Cristo nos amó.
-R. Y nos lavó en su sangre.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Cristo nos amó y nos lavó * Con su sangre. 
 R. Cristo nos amó y nos lavó * Con su sangre. 
 V. Y nos hizo reino y sacerdotes de Dios Padre. 
 R. Con su sangre. 
 &Gloria
 R. Cristo nos amó y nos lavó * Con su sangre. 
-_
-V. Justificados con la sangre de Cristo.
-R. Por Él seremos salvados de la ira.
 
 [Versum 3]
 V. Te pedimos que socorras a tus siervos.

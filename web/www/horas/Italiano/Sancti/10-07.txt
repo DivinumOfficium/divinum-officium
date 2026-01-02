@@ -1,19 +1,11 @@
 [Rank]
 Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex 2 classis;;5.1;;ex C11
 
-[Rank1960]
+[Rank] (rubrica 196)
 Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex 2 classis;;5;;ex C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 Sanctissimi Rosarii Beatae Mariae Virginis;;Duplex;;3;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-CPapaC=Marco;
 
 [Ant Vespera]
 Chi è costei * bella come una colomba, come una rosa piantata in riva alle acque?;;109
@@ -21,11 +13,6 @@ Vergine potente, * è come la torre di David; mille scudi pendono da essa, tutta
 Salve, o Maria, * piena grazia; il Signore è con te: la benedetta tu (sei) fra le donne.;;121
 Ti ha benedetta il Signore * colla sua potenza, perché per te ha annientato i nostri nemici.;;126
 La videro * le figlie di Sion germogliare tra i fiori di rose, e l'acclamarono beatissima.;;147
-
-[Capitulum Vespera]
-!Sir 24:25;39:17
-v. In me è tutta la grazia della via e della verità, in me tutta la speranza della vita e della virtù. Io germogliai come rosa piantata in riva alle acque.
-$Deo gratias
 
 [Hymnus Vespera]
 v. Un Messaggero della corte celeste, 
@@ -53,11 +40,7 @@ la Madre lieta ritrova d'un tratto,
 mentre spiega ai dottori 
 cose loro ignote.
 _
-O Gesù, sia gloria a te, 
-che sei nato dalla Vergine, 
-insieme col Padre e collo Spirito Santo, 
-per i secoli eterni. 
-Amen.
+@Psalterium/Doxologies:Nat
 
 [Versum 1]
 V. Regina del sacratissimo Rosario, prega per noi.
@@ -70,24 +53,10 @@ Beata sei tu, * o Vergine Maria, Madre di Dio, che hai creduto al Signore; si so
 O Dio, il cui Unigenito colla sua vita, morte e risurrezione ci ha meritato il premio dell'eterna salvezza: concedi, che. meditando questi misteri col sacratissimo Rosario della beata Vergine Maria, e imitiamo ciò che contengono, e conseguiamo ciò che promettono.
 $Per eumdem
 
-[Commemoratio 2]
-!Commemorazione di S. Marco Papa
-@Commune/C4:Oratio proper Gregem
-_
-$Oremus
-Esaudisci, o Signore, le nostre preghiere: e, per intercessione del tuo beato Confessore e Papa Marco, accordaci benigno il perdono e la pace,
-$Per Dominum
-_
-!Commemorazione dei Ss. Martiri Sergio, Bacco, Marcello ed Apuleio
-@Commune/C3:Oratio proper
-$Oremus
-Ci accompagnino, o Signore, i ricchi meriti dei tuoi santi Martiri Sergio, Bacco, Marcello ed Apuleio: e ci rendano sempre ferventi nel tuo amore.
-$Per Dominum
-
 [Invit]
 Celebriamo la solennità del Rosario della Vergine Maria: * Adoriamo Cristo Signore suo Figlio.
 
-[Hymnus Matutinum]
+[Hymnus Matutinum_]
 v. Sul monte degli olivi 
 il Redentore prega prosteso, 
 è triste, trema, vien meno, 
@@ -113,26 +82,28 @@ innocente, fra due scellerati,
 pregando pei suoi carnefici, 
 spira dopo versata l'ultima goccia di sangue.
 _
-O Gesù, sia gloria a te, 
-che sei nato dalla Vergine, 
-insieme col Padre, e collo Spirito Santo, 
-per i secoli eterni. 
-Amen.
+@Psalterium/Doxologies:Nat
 
 [Ant Matutinum]
 L'Angelo Gabriele * recò l'annunzio a Maria: ed ella divenne madre per opera dello Spirito Santo.;;8
 Maria entrò * in casa di Zaccaria. e salutò Elisabetta.;;18
 Ella diede alla luce * il suo Figlio primogenito, e lo pose in una mangiatoia.;;23
-V. Santa Madre di Dio, Maria sempre Vergine.
-R. Intercedi per noi presso il Signore Dio nostro.
-Quando i suoi genitori * portarono dentro Gesù per presentarlo ai Signore, Simeone se lo prese tra le braccia, e benedisse Dio.;44
+Quando i suoi genitori * portarono dentro Gesù per presentarlo ai Signore, Simeone se lo prese tra le braccia, e benedisse Dio.;;44
 Cercando Gesù * i genitori di lui, lo ritrovarono dopo tre giorni in mezzo ai dottori.;;45
 Preso da spasimo, * gli venne un sudore, nell'orto, in forma di gocce di sangue.;;86
-V. Dopo il parto, o Vergine, sei rimasta intatta.
-R. Madre di Dio, intercedi per noi.
 Pilato, * prese Gesù, e lo flagellò;;95.
 I soldati intrecciata una corona * di spine, gliela posero in capo.;;96
 Ha sulle spalle * l'impero della croce: Dio regna dal legno.;;97
+
+[Nocturn 1 Versum]
+V. Santa Madre di Dio, Maria sempre Vergine.
+R. Intercedi per noi presso il Signore Dio nostro.
+
+[Nocturn 2 Versum]
+V. Dopo il parto, o Vergine, sei rimasta intatta.
+R. Madre di Dio, intercedi per noi.
+
+[Nocturn 3 Versum]
 V. Bella sei tu e soave.
 R. Nelle tue delizie, o santa Madre di Dio.
 
@@ -218,7 +189,7 @@ R. E sul suo capo una corona di dodici stelle.
 [Lectio7]
 Lettura del santo Vangelo secondo Luca
 !Luc 1:26-38
-In quell' occasione	Fu mandato l'Angelo Gabriele da Dio in una città di Galilea, chiamata Nazaret, ad una Vergine sposata a un uomo di nome Giuseppe, della casa di David, e la Vergine si chiamava Maria. Eccetera.
+In quell'occasione	Fu mandato l'Angelo Gabriele da Dio in una città di Galilea, chiamata Nazaret, ad una Vergine sposata a un uomo di nome Giuseppe, della casa di David, e la Vergine si chiamava Maria. Eccetera.
 _
 Omelia di san Bernardo Abate
 !Sermone su S. Maria
@@ -230,9 +201,12 @@ R. lo come la vite ho dato fioti di soave odore,
 V. Io sono la madre del bell'amore, del timore, della scienza, e della santa speranza. 
 R. E i miei fiori han dato frutti di onore e di ricchezza.
 
-[Lectio8]
+[Lectio8_1]
 !Sermone sull'Acquedotto
-Il Verbo s'è fatto uomo ed  abita in mezzo a noi Abita nella nostra memoria, abita nel pensiero, perché egli discende fino alla stesa immaginazione. In che modo, dici? Cioè giacendo nella mangiatoia, riposando in un seno verginale, predicando sulla montagna, passando la notte nella preghiera, pendendo dalla croce, sfigurato nella morte, mostrandosi «libero fra i morti» (Ps. 87,6) e imperando sull'inferno, ed anche risuscitando il terzo giorno, mostrando agli Apostoli nelle tracce dei chiodi i segni della vittoria, infine salendo a vista di essi nell'alto dei cieli. Che cosa di tutto ciò non ispira pensieri veri, pii e santi? Qualunque cosa ripensi di ciò, io penso a Dio; e in tutto egli è il mio Dio. Meditare ciò, secondo me, è sapienza, e, a mio giudizio, è prudenza rievocarne il ricordo; la cui dolcezza è come il frutto di mandarlo prodotto in abbondanza dalla verga d'Aronne, e che Maria è andata a cogliere in cielo per riversarlo a profusione su di noi. Nelle altezze infatti e al disopra degli Angeli, Maria ha ricevuto il Verbo dal seno del Padre medesimo.
+Il Verbo s'è fatto uomo ed  abita in mezzo a noi Abita nella nostra memoria, abita nel pensiero, perché egli discende fino alla stesa immaginazione. In che modo, dici? Cioè giacendo nella mangiatoia, riposando in un seno verginale, predicando sulla montagna, passando la notte nella preghiera, pendendo dalla croce, sfigurato nella morte, mostrandosi «libero fra i morti» (Ps. 87,6) e imperando sull'inferno, ed anche risuscitando il terzo giorno, mostrando agli Apostoli nelle tracce dei chiodi i segni della vittoria, infine salendo a vista di essi nell'alto dei cieli. Che cosa di tutto ciò non ispira pensieri veri, pii e santi?
+
+[Lectio8_2]
+Qualunque cosa ripensi di ciò, io penso a Dio; e in tutto egli è il mio Dio. Meditare ciò, secondo me, è sapienza, e, a mio giudizio, è prudenza rievocarne il ricordo; la cui dolcezza è come il frutto di mandarlo prodotto in abbondanza dalla verga d'Aronne, e che Maria è andata a cogliere in cielo per riversarlo a profusione su di noi. Nelle altezze infatti e al disopra degli Angeli, Maria ha ricevuto il Verbo dal seno del Padre medesimo.
 
 [Responsory8]
 R. Sorgi, affrettati, diletta mia, perché l'inverno è già passato, la pioggia è cessata e sparita, 
@@ -241,9 +215,6 @@ V. Il Signore darà la sua grazia, e la nostra terra darà il suo frutto.
 R. I fiori sono apparsi sulla nostra terra.
 &Gloria
 R. I fiori sono apparsi sulla nostra terra.
-
-[Lectio9]
-@Sancti/10-07t:Lectio93
 
 [Ant Laudes]
 Rallegrati, * Vergine Maria; Cristo è risuscitato dal sepolcro.
@@ -300,53 +271,34 @@ Celebriamo quest'oggi * con devozione la solennità dei sacratissimo Rosario del
 !Sir 24:17-18
 v. Mi elevai come il cedro in sul Libano, e come il cipresso sul monte di Sion: mi elevai come la palma in Cades, e come la pianta di rosa in Gerico.
 
-[Capitulum Tertia]
-!Sir 24:25; 39:17
-v. In me è tutta la grazia della via e della verità, in me tutta la speranza della vita e della virtù. Io germogliai come rosa piantata in riva alle acque.
-$Deo gratias
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Santa Madre di Dio, * Sempre Vergine Maria. 
 R. Santa Madre di Dio, * Sempre Vergine Maria. 
 V. Intercedi per noi presso il Signore Dio nostro
 R. Sempre Vergine Maria.
 &Gloria
-R. Santa Madre di Dio, * Sempre Vergine Maria. 
-_
-V. Dopo il parto, o Vergine, sei rimasta intatta.
-R. Madre di Dio, intercedi per noi.
+R. Santa Madre di Dio, * Sempre Vergine Maria.
 
 [Capitulum Sexta]
 !Sir 39:19
 v. Fate fiori come giglio e spandete odore e frondeggiate per attirarvi grazia; intonate un cantico e benedite il Signore per le opere sue.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Dopo il parto, o Vergine, * Sei rimasta intatta.
 R. Dopo il parto, o Vergine, * Sei rimasta intatta.
 V. Madre di Dio, intercedi per noi. 
 R. Sei rimasta intatta.
 &Gloria
 R. Dopo il parto, o Vergine, * Sei rimasta intatta.
-_
-V. Bella sei tu e soave.
-R. Nelle tue delizie, o santa Madre di Dio.
 
-[Capitulum Nona]
-!Sir 24:17-18
-v. Mi elevai come il cedro in sul Libano, e come il cipresso sul monte di Sion: mi elevai come la palma in Cades, e come la pianta di rosa in Gerico.
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Bella sei tu * E soave.
 R. Bella sei tu * E soave.
 V. Nelle tue delizie, o santa Madre di Dio.
 R. E soave.
 &Gloria
 R. Bella sei tu * E soave.
-_
-V. L'ha scelta Iddio e l'ha prescelta.
-R. E l'ha fatta abitare nella sua dimora.
 
 [Hymnus Vespera 3]
 v. Te esultante d gioia, 
@@ -379,10 +331,6 @@ che sei nato dalla Vergine,
 insieme col Padre, e collo Spirito Santo, 
 per i secoli eterni.
 Amen.
-
-[Versum 3]
-V. Regina del sacratissimo Rosario, prega per noi.
-R. Affinché siam fatti degni delle promesse di Cristo.
 
 [Ant 3]
 Beata Madre * e Vergine intatta, gloriosa Regina del mondo, sentano la tua protezione tutti quelli che celebrano la solennità del tuo sacratissimo Rosario.

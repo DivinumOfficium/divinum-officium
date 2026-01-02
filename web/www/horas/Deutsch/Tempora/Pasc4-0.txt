@@ -1,24 +1,11 @@
-[Rank]
-Vierter Sonntag nach Ostern;;Semiduplex;;5;;
-
-[Rule]
-9 Lectiones
-Una Antiphona
-StJamesRule=Jas
-
-[Capitulum Vespera]
-!Jak 1,17
-v. Geliebteste, alles, was es an guten Gaben und an allseitig guten Spenden gibt, stammt von oben und geht aus von dem alles beglückenden Vater, bei dem es keine Umwandlung gibt und keinen Schatten einer Wesenänderung.
-$Deo gratias
-
-[Versum 1]
-@Tempora/Pasc1-0:Versum 1
+[Officium]
+Vierter Sonntag nach Ostern
 
 [Ant 1]
 Ich gehe zu dem, * der mich gesandt hat: und niemand von euch fragt mich: Wo gehst du hin? Alleluja, alleluja.
 
 [Oratio]
-O Gott, der du die Herzen der Menschen lenkst, dass sie sich in einem Willen einigen, verleihe den dir geweihten Scharen die Gnade, dass sie das lieben, was du befiehlst, und das ersehnen, was du verheißest, damit inmitten der Unbeständigkeit auf dieser Welt unsere Herzen dorthin gerichtet bleiben, wo die wahren Freuden sind.
+O Gott, der du die Herzen der Menschen lenkst, daß sie sich in einem Willen einigen, verleihe den dir geweihten Scharen die Gnade, daß sie das lieben, was du befiehlst, und das ersehnen, was du verheißest, damit inmitten der Unbeständigkeit auf dieser Welt unsere Herzen dorthin gerichtet bleiben, wo die wahren Freuden sind.
 $Per Dominum
 
 [Lectio1]
@@ -130,16 +117,9 @@ Was also soll das, dass er hier spricht: „Das habe ich euch von Anfang an nich
 &teDeum
 
 [Capitulum Laudes]
-@:Capitulum Vespera
-
-[Versum 2]
-@Tempora/Pasc1-0:Versum 2
-
-[Ant 2]
-@:Ant 1
-
-[Capitulum Tertia]
-@:Capitulum Vespera
+!Jak 1,17
+v. Geliebteste, alles, was es an guten Gaben und an allseitig guten Spenden gibt, stammt von oben und geht aus von dem alles beglückenden Vater, bei dem es keine Umwandlung gibt und keinen Schatten einer Wesenänderung.
+$Deo gratias
 
 [Capitulum Sexta]
 !Jak 1,19-20
@@ -150,9 +130,6 @@ $Deo gratias
 !Jak 1,21
 v. Deshalb legt ab allen Schmutz und alles, was sich an Schlechtigkeit aufgehäuft hat, und pfleget mit Ausdauer das euch eingepflanzte Wort, das geeignet ist, eure Seelen zum Heil zu führen.
 $Deo gratias
-
-[Versum 3]
-@Tempora/Pasc1-0:Versum 1
 
 [Ant 3]
 Ich gehe zu dem, * der mich gesandt hat: doch weil ich euch das gesagt habe, hat Traurigkeit euer Herz erfüllt, alleluja.

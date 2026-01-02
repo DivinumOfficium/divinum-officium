@@ -1,23 +1,8 @@
-[Rank]
-Dominica in Quinquagesima;;Semiduplex;;5.6
-
-[Rank1960]
-Dominica in Quinquagesima;;Semiduplex;;5
-
-[Rule]
-9 lectiones
-Invit2
-
-[Capitulum Vespera]
-!1 Cor 13:1
-v. Frères, quand je parlerais les langues des hommes et des Anges, si je n’ai pas la charité, je ne suis qu’un airain sonnant ou une cymbale retentissante.
-$Deo gratias
+[Officium]
+Dominica in Quinquagesima
 
 [Ant 1]
 Le Père de notre foi, * Abraham, vénérable entre tous, a offert un holocauste sur l’autel pour son fils.
-
-[Versum 1]
-@Tempora/Quadp1-0:Versum 1
 
 [Oratio]
 Soyez assez bon, Seigneur, pour exaucer nos prières, et nous ayant absous des liens de nos péchés, gardez-nous de toute adversité.
@@ -30,7 +15,7 @@ $Per Dominum
 Du livre de la Genèse
 !Gen 12:1-6
 1 Or le Seigneur dit à Abram : Sortez de votre pays, de votre parenté, et de la maison de votre père, et venez en la terre que Je vous montrerai.
-2 Je ferai sortir de vous un grand peuple ; Je vous bénirai; Je rendrai votre nom célèbre, et vous serez béni.
+2 Je ferai sortir de vous un grand peuple ; Je vous bénirai ; Je rendrai votre nom célèbre, et vous serez béni.
 3 Je bénirai ceux qui vous béniront, et Je maudirai ceux qui vous maudiront ; et tous les peuples de la terre seront bénis en vous.
 4 Abram sortit donc comme le Seigneur le lui avait commandé, et Lot alla avec lui. Abram avait soixante-quinze ans lorsqu'il sortit de Haran.
 5 Il prit avec lui Saraï sa femme, et Lot, fils de son frère, tout le bien qu'ils possédaient, avec toutes les personnes dont ils avaient augmenté leur famille à Haran, et ils sortirent pour aller dans le pays de Chanaan. Lorsqu'ils y furent arrivés,
@@ -150,13 +135,12 @@ Dites un hymne * et exaltez-le à jamais.
 Vous tous, ses Anges, * louez, du haut des cieux, le Seigneur.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!1 Cor 13:1
+v. Frères, quand je parlerais les langues des hommes et des Anges, si je n’ai pas la charité, je ne suis qu’un airain sonnant ou une cymbale retentissante.
+$Deo gratias
 
 [Ant 2]
 Voici que nous montons * à Jérusalem et que s’accomplira tout ce qui a été écrit du Fils de l’homme ; car il sera livré aux Gentils, tourné en dérision, conspué et, après qu’on l’aura flagellé, on le mettra à mort et le troisième jour il ressuscitera.
-
-[Versum 2]
-@Tempora/Quadp1-0:Versum 2
 
 [Ant Prima]
 Comme Jésus était en route * à l’approche de Jéricho, un aveugle criait vers lui, pour obtenir de recouvrer la lumière.
@@ -164,15 +148,12 @@ Comme Jésus était en route * à l’approche de Jéricho, un aveugle criait ve
 [Ant Tertia]
 Au passage du Seigneur, * l’aveugle lui criait : Ayez pitié de moi, Fils de David.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
 [Ant Sexta]
 Et ceux qui allaient devant * grondaient l’aveugle pour qu’il se tût ; mais lui criait beaucoup plus fort : Ayez pitié de moi, Fils de David.
 
 [Capitulum Sexta]
 !1 Cor 13:8-9
-v. La charité ne passera jamais ; les prophéties n’auront plus d’utilité; les langues cesseront; la science disparaîtra ; car partielles sont nos connaissances, partielles nos prophéties.
+v. La charité ne passera jamais ; les prophéties n’auront plus d’utilité ; les langues cesseront ; la science disparaîtra ; car partielles sont nos connaissances, partielles nos prophéties.
 $Deo gratias
 
 [Ant Nona]
@@ -185,6 +166,3 @@ $Deo gratias
 
 [Ant 3]
 Or Jésus s’arrêtant, * ordonna qu’on lui amenât l’aveugle et lui dit : « Que veux-tu que je te fasse ? Seigneur, faites que je voie. » Et Jésus lui dit : « Regarde, ta foi t’a sauvé, » Et aussitôt il vit et il suivait Jésus, en magnifiant Dieu.
-
-[Versum 3]
-@Tempora/Quadp1-0:Versum 3

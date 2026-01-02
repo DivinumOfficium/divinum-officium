@@ -1,8 +1,11 @@
 [Rank]
 In Apparitione Beatæ Mariæ Virginis Immaculatæ;;Duplex majus;;4;;ex C11
 
-[Rank1960]
+[Rank] (rubrica 196)
 In Apparitione Beatæ Mariæ Virginis Immaculatæ;;Duplex;;3;;ex C11
+
+[Rank] (rubrica innovata)
+In apparitione Beatae Mariae Virginis;;Duplex optional;;2;;ex C11
 
 [Rule]
 ex C11;
@@ -18,11 +21,6 @@ Tu glória Jerúsalem, * tu lætítia Israël, tu honorificéntia pópuli nostri
 Benedícta es tu, * Virgo María, a Dómino Deo excélso præ ómnibus muliéribus super terram.;;126
 Hódie nomen tuum * ita magnificávit Dóminus, ut non recédat laus tua de ore hóminum.;;147
 
-[Capitulum Vespera]
-!Cant 2:13-14
-v. Surge, amíca mea, speciósa mea, et veni, colúmba mea, in foramínibus petræ, in cavérna macériæ, osténde mihi fáciem tuam, sonet vox tua in áuribus meis.
-$Deo gratias
-
 [Ant 1]
 Ista est * colúmba mea, perfécta mea, immaculáta mea.
 
@@ -31,7 +29,7 @@ Deus, qui per immaculátam Vírginis Conceptiónem dignum Fílio tuo habitáculu
 $Per eumdem
 
 [Invit]
-@Sancti/12-08:Invit
+@Sancti/12-08
 
 [Hymnus Matutinum]
 v. Te dícimus præcónio,
@@ -69,22 +67,25 @@ Amen.
 Ave, grátia plena; * Dóminus tecum.;;8
 Benedícta tu inter mulíeres * et benedíctus fructus ventris tui.;;18
 Ne tímeas, María, * invenísti grátiam apud Dóminum.;;23
-V. Deus omnípotens præcínxit me virtúte.
-R. Et pósuit immaculátam viam meam.
 Fecit mihi magna * qui potens est, et sanctum nomen ejus.;;44
 Sanctificávit * tabernáculum suum Altíssimus: Deus in médio ejus, non commovébitur.;;45
 Dóminus possédit te * in inítio viárum suárum, et in caritáte perpétua diléxit te.;;86
-V. Adjuvábit eam Deus vultu suo.
-R. Deus in médio ejus, non commovébitur.
 Manus Dómini * confortávit te, et ídeo eris benedícta in ætérnum.;;95
 Noli metúere, * non enim pro te, sed pro ómnibus hæc lex constitúta est.;;96
 Benedíxit te Dóminus * in virtúte sua, quia per te ad níhilum redégit inimícos nostros.;;97
-V. Diffúsa est grátia in lábiis tuis.
-R. Proptérea benedíxit te Deus in ætérnum.
+
+
+[Nocturn 1 Versum]
+@Sancti/12-08
+
+[Nocturn 2 Versum]
+@Commune/C6
+
+[Nocturn 3 Versum]
+@Commune/C6:Versum 2
 
 [Lectio1]
-De Parábolis Salomónis
-@Tempora/081-3:Lectio3
+@Commune/C11:Lectio1
 
 [Responsory1]
 R. Sapiéntia quæ attíngit a fine usque ad finem fórtiter, et dispónit ómnia suáviter, ædificávit sibi domum: 
@@ -162,7 +163,7 @@ Anno quarto a dogmática definitióne de immaculáto beátæ Vírginis Concéptu
 &teDeum
 
 [Lectio7]
-@Sancti/12-10:Lectio7
+@Sancti/12-10bmv
 
 [Responsory7]
 R. Tu ergo ínvoca Dóminum, lóquere Regi pro nobis, 
@@ -171,7 +172,7 @@ V. Omnes sitiéntes, veníte ad aquas, et hauriétis salútem a Dómino.
 R. Et líbera nos de morte.
 
 [Lectio8]
-@Sancti/12-10:Lectio8
+@Sancti/12-10bmv
 
 [Responsory8]
 R. Plantávit Dóminus Deus paradísum voluptátis, produxítque lignum vitæ in médio ejus: 
@@ -182,17 +183,19 @@ R. Et flúvius egrediebátur de loco voluptátis.
 R. Et flúvius egrediebátur de loco voluptátis.
 
 [Lectio9]
-@Sancti/12-10:Lectio9
+@Sancti/12-10bmv
 
 [Ant Laudes]
 Candor est * lucis ætérnæ, et spéculum sine mácula.
 Múlier * amícta sole, et luna sub pédibus ejus, et in cápite ejus coróna stellárum duódecim.
-Tu glória Jerúsalem, * tu lætítia Israél, tu honorificéntia pópuli nostri.
+Tu glória Jerúsalem, * tu lætítia Israël, tu honorificéntia pópuli nostri.
 Benedícta es tu, * Virgo María, a Dómino Deo excélso præ ómnibus muliéribus super terram.
 Hódie nomen tuum * ita magnificávit Dóminus, ut non recédat laus tua de ore hóminum.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Cant 2:13-14
+v. Surge, amíca mea, speciósa mea, et veni, colúmba mea, in foramínibus petræ, in cavérna macériæ, osténde mihi fáciem tuam, sonet vox tua in áuribus meis.
+$Deo gratias
 
 [Hymnus Laudes]
 v. Auróra soli prǽvia,
@@ -233,17 +236,15 @@ Præclára salútis auróra, * ex te, Virgo María, exívit sol justítiæ, qui 
 !Sir 24:25-26
 v. In me grátia omnis viæ et veritátis, in me omnis spes vitæ et virtútis. Transíte ad me, omnes qui concupíscitis me, et a generatiónibus meis implémini.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Quæ est ista quæ ascéndit de desérto, * Delíciis áffluens?
 R. Quæ est ista quæ ascéndit de desérto, * Delíciis áffluens?
 V. Inníxa super diléctum suum.
 R. Delíciis áffluens.
 &Gloria
 R. Quæ est ista quæ ascéndit de desérto, * Delíciis áffluens?
-_
+
+[Versum Tertia]
 V. Vidérunt eam fíliæ Sion.
 R. Et beatíssimam prædicavérunt.
 
@@ -252,14 +253,15 @@ R. Et beatíssimam prædicavérunt.
 v. Mecum sunt divítiæ et glória, opes supérbæ et justítia: mélior est enim fructus meus auro et lápide pretióso.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Ego Mater * Pulchræ dilectiónis.
 R. Ego Mater * Pulchræ dilectiónis.
 V. Et timóris et agnitiónis et sanctæ spei.
 R. Pulchræ dilectiónis.
 &Gloria
 R. Ego Mater * Pulchræ dilectiónis.
-_
+
+[Versum Sexta]
 V. In me omnis grátia viæ et veritátis.
 R. In me omnis spes vitæ et virtútis.
 
@@ -267,14 +269,15 @@ R. In me omnis spes vitæ et virtútis.
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Qui me invénerit * Invéniet vitam.
 R. Qui me invénerit * Invéniet vitam.
 V. Et háuriet salútem a Dómino.
 R. Invéniet vitam.
 &Gloria
 R. Qui me invénerit * Invéniet vitam.
-_
+
+[Versum Nona]
 V. Transíte ad me, omnes qui concupíscitis me.
 R. Et a generatiónibus meis implémini.
 

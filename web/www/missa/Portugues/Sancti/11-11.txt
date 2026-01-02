@@ -1,9 +1,5 @@
-[Rank]
-S. Martini Episcopi et Confessoris;;Duplex;;3;;vide C4a
-
-[Rule]
-vide C4a;
-9 lectiones
+[Officium]
+S. Martinho, Bispo e Confessor
 
 [Comment]
 # 10 XI – S. Martinho, Bispo e Confessor
@@ -11,7 +7,7 @@ vide C4a;
 ! Paramentos brancos
 
 [Introitus]
-@Commune/C4:Introitus
+@Commune/C2
 
 [Oratio]
 Ó Deus, que bem conheceis que não é pelo nosso poder que subsistimos, concedei-nos propício que, pela intercessão do B. Martinho, vosso Confessor e Pontífice, sejamos protegidos contra todas as adversidades.
@@ -46,19 +42,4 @@ Bem-aventurado o servo que, quando o Senhor vier, encontrar vigilante. Em verdad
 
 [Postcommunio]
 Fazei, Senhor, nosso Deus, que nos sejam salutares estes sacrossantos sacramentos, pela intercessão daqueles em cuja festa Vo-los apresentamos.
-$Per Dominum
-
-[Commemoratio Oratio]
-! de S. Menas de Niceu
-Grant, we beseech You, almighty God, that we, who honor the anniversary of the death of blessed Mennas, Your Martyr, may by his intercession be strengthened in love of Your name.
-$Per Dominum
-
-[Commemoratio Secreta]
-! de S. Menas de Niceu
-Now that You have received our gifts and prayers, we beseech You, O Lord, cleanse us by Your heavenly mysteries and in Your mercy, hear us.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-! de S. Menas de Niceu
-Grant, we beseech You, O Lord our God, that we who in this life joyously assist in the veneration of Your Saints, may rejoice in beholding them forever in heaven.
 $Per Dominum

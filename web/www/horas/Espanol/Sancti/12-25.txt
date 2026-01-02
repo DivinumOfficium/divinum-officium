@@ -1,16 +1,6 @@
 [Rank]
 In Nativitate Domini;;Duplex I Classis;;6.9
 
-[Rank1960]
-In Nativitate Domini;;Duplex I Classis;;7
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas Horas
-Doxology=Nat
-Special Evangelii Benedictio
-
 [Ant Vespera]
 El rey de la paz * ha sido glorificado. Toda la tierra desea contemplar su rostro.;;109
 El rey de la paz * ha sido glorificado sobre todos los reyes de la tierra.;;110
@@ -18,86 +8,86 @@ Le llegó a María * el tiempo del parto, y dio a luz a su Hijo primogénito.;;1
 Sabed * que está cerca el reino de Dios. Os aseguro que no tardará.;;112
 Alzad la cabeza: * se acerca vuestra redención.;;116
 
-[Capitulum Vespera]
+[Capitulum Vespera 1]
 !Tito 3:4-5
 v. Ha aparecido la Bondad de Dios y su amor al hombre. No por las obras de justicia que hayamos hecho nosotros, sino que según su propia misericordia nos ha salvado.
 $Deo gratias
 
-[HymnusM Vespera]
-v. ¡Oh Jesús, Redentor universal, 
-a quien el Padre Eterno engendró 
-igual a su paternal gloria 
-antes de la creación de la luz!
-_
-Tú, Luz y Esplendor del Padre, 
-eterna esperanza de todo el género humano, 
-escucha las plegarias que en todo el mundo 
-te dirigen tus siervos.
-_
-Acuérdate, ¡oh Creador 
-de todas las cosas!, que un día, 
-al nacer del casto seno de la Virgen, 
-tomaste un cuerpo como el nuestro.
-_
-Este día, que todos los años 
-nos traen en su rotación, nos recuerda 
-que Tú viniste del seno del Padre 
-sólo para salvación del mundo.
-_
-El cielo, la tierra, los mares y todo 
-cuanto existe debajo del cielo 
-saludan con nuevo cántico 
-al Autor de la nueva salvación.
-_
-También nosotros, que hemos sido lavados 
-en el río precioso de tu sangre divina, 
-te ofrendamos el tributo de este himno 
-por la gracia de tu advenimiento.
-_
-¡Oh Jesús, que naciste de la Virgen!, 
-gloria sea dada a Ti, en unión 
-con el Padre y el Espíritu Santo, 
-por los siglos sempiternos. 
-Amén.
-
 [Hymnus Vespera]
-{:H-Jesuredemptoromnium:}v. ¡Oh Jesús, Redentor universal, 
-a quien el Padre Eterno engendró 
-igual a su paternal gloria 
-antes de la creación de la luz!
+{:H-Jesuredemptoromnium:}v. Jesus, Redentor de todos,
+antes que luciese el alba,
+igual con el Padre en gloria,
+naciste de sus entrañas.
 _
-Tú, Luz y Esplendor del Padre, 
-eterna esperanza de todo el género humano, 
-escucha las plegarias que en todo el mundo 
-te dirigen tus siervos.
+Tú, luz y esplendor del Padre,
+Tú, nuestra dulce esperanza,
+oye la voz de tus siervos
+que por el orbe te alaban.
 _
-Acuérdate, ¡oh Creador 
-de todas las cosas!, que un día, 
-al nacer del casto seno de la Virgen, 
-tomaste un cuerpo como el nuestro.
+Recuerda, Hacedor del mundo,
+que de una Vírgen sagrada
+naciendo en tiempo, la forma
+de nuestro cuerpo tomaras.
 _
-Este día, que todos los años 
-nos traen en su rotación, nos recuerda 
-que Tú viniste del seno del Padre 
-sólo para salvación del mundo.
+En el círculo del año
+este dia se señala,
+en que por salvar al mundo
+del Padre el seno dejaras.
 _
-El cielo, la tierra, los mares y todo 
-cuanto existe debajo del cielo 
-saludan con nuevo cántico 
-al Autor de la nueva salvación.
+Astros, tierra, mar y cuanto
+el compás del cielo abarca,
+saludan con nuevo cántico
+al Autor de tanta gracia.
 _
-También nosotros, que hemos sido lavados 
-en el río precioso de tu sangre divina, 
-te ofrendamos el tributo de este himno 
-por la gracia de tu advenimiento.
+Y nosotros, que lavaste
+con tu sangre inmaculada,
+por tu nacimiento santo
+te damos nueva alabanza.
 _
-¡Oh Jesús, que naciste de la Virgen!, 
-gloria sea dada a Ti, en unión 
-con el Padre y el Espíritu Santo, 
-por los siglos sempiternos. 
+A Jesús sea la gloria,
+que nació de Vírgen casta,
+con el Padre y almo Espíritu,
+por siglos que nunca acaban.
 Amén.
 
-[Versum 1]
+[HymnusM Vespera]
+v. Jesus, Redentor de todos,
+antes que luciese el alba,
+igual con el Padre en gloria,
+naciste de sus entrañas.
+_
+Tú, luz y esplendor del Padre,
+Tú, nuestra dulce esperanza,
+oye la voz de tus siervos
+que por el orbe te alaban.
+_
+Recuerda, Hacedor del mundo,
+que de una Vírgen sagrada
+naciendo en tiempo, la forma
+de nuestro cuerpo tomaras.
+_
+En el círculo del año
+este dia se señala,
+en que por salvar al mundo
+del Padre el seno dejaras.
+_
+Astros, tierra, mar y cuanto
+el compás del cielo abarca,
+saludan con nuevo cántico
+al Autor de tanta gracia.
+_
+Y nosotros, que lavaste
+con tu sangre inmaculada,
+por tu nacimiento santo
+te damos nueva alabanza.
+_
+A Jesús sea la gloria,
+que nació de Vírgen casta,
+con el Padre y almo Espíritu,
+por siglos que nunca acaban.
+Amén.
+
+[Versum 1_]
 V. Mañana quedará borrada la maldad de la tierra.
 R. Y será nuestro Rey el Salvador del mundo.
 
@@ -121,16 +111,23 @@ Cristo ha nacido, * Venid, adorémosle.
 El Señor me ha dicho: * Tú eres mi Hijo, Yo te he engendrado hoy.;;2
 Como el esposo, el Señor sale de su cámara nupcial.;;18
 La gracia está derramada * en tus labios, por ello Dios te ha bendecido para siempre.;;44
-V. Como el esposo.
-R. El Señor sale de su cámara nupcial.
 Hemos recibido, * oh Dios, tu misericordia, en medio de tu pueblo.;;47
 Se mostrará * en los días del Señor la abundancia de la paz, y dominará.;;71
 La verdad ha brotado de la tierra; * desde el cielo ha contemplado la justicia.;;84
-V. Eres el más bello de los hombres.
-R. De tus labios se derrama la gracia.
 El me invocará, * aleluya: Tú eres mi Padre, aleluya.;;88
+(sed rubrica 1960 aut rubrica 1962) El me invocará, * aleluya: Tú eres mi Padre, aleluya.;;88(2-37)
 Alégrense los cielos, * y regocíjese la tierra en presencia del Señor, porque viene.;;95
 Ha manifestado * el Señor, aleluya, su salvación, aleluya.;;97
+
+[Nocturn 1 Versum]
+V. Como el esposo.
+R. El Señor sale de su cámara nupcial.
+
+[Nocturn 2 Versum]
+V. Eres el más bello de los hombres.
+R. De tus labios se derrama la gracia.
+
+[Nocturn 3 Versum]
 V. Él me invocará. Aleluya
 R. Y me dirá: «Tú eres mi Padre». Aleluya.
 
@@ -141,7 +138,7 @@ R. Y me dirá: «Tú eres mi Padre». Aleluya.
 3 Multiplicaste la nación; mas no aumentaste la alegría. Sin embargo, se alegrarán algún día delante de ti, como los que se alegran en la siega, o como se huelgan los vencedores con el botín que cogieron, al repartirse los despojos. 
 4 Porque su pesado yugo y la vara que hería sus espaldas, y el bastón de su tirano, tú los hiciste pedazos, como en la jornada de Madián. 
 5 Porque todo despojo hecho con violencia y tumulto, y los vestidos manchados de sangre serán quemados y hechos pábulo del fuego. 
-6 Ahora que ha nacido un parvulito para nosotros, y se nos ha dado un hijo, el cual lleva sobre sus hombros el principado, o la divisa de rey, y tendrá por nombre el Admirable, el Consejero, Dios, el Fuerte, el Padre del siglo venidero, el Príncipe de paz. 
+6 Ahora que ha nacido un parvulito para nosotros, y se nos ha dado un hijo, el cual lleva sobre sus hombros el principado, o la divisa de rey, y tendrá por nombre el Admirable, el Consejero, Dios, el Fuerte, el Padre del siglo venidero, el Príncipe de paz.
 
 [Responsory1]
 R. Hoy se ha dignado nacer de la Virgen para nosotros, el Rey de los cielos para restituir al hombre a los reinos celestiales: 
@@ -216,13 +213,6 @@ R. Porque al que no pueden contener los cielos, le llevaste en tu seno.
 &Gloria
 R. Porque al que no pueden contener los cielos, le llevaste en tu seno. 
 
-[Benedictio3]
-El Señor omnipotente y misericordioso rompa las cadenas de nuestros pecados. Amén.
-Dígnate, Señor, dar la bendición.
-Que la lectura del Evangelio nos salve y nos proteja. Amén.
-Por las palabras del Evangelio sean borrados nuestros delitos. Amén.
-Cristo, Hijo de Dios, nos enseñe las palabras del santo Evangelio. Amén.
-
 [Lectio7]
 Lectura del Santo Evangelio según San Lucas
 !Lc 2:1-14
@@ -262,10 +252,10 @@ En el principio era el Verbo, y el Verbo estaba en Dios, y el Verbo era Dios. Y 
 _
 Homilía de S. Agustín, obispo. 
 !Trat. 1 sobre S. Juan, cerca del medio.
-Para que no te formes acerca del Verbo divino una idea baja: "Dios era el Verbo”. Venga un infiel Arriano y diga que el Verbo de Dios fue hecho. ¿Cómo puede suceder que el Verbo de Dios sea hecho, cuando Dios por el Verbo lo hizo todo? Si aun el mismo Verbo de Dios fue hecho, ¿por qué otro verbo fue hecho? Diréis tal vez que fue hecho por un verbo del Verbo; pero yo replico que el Verbo es el único hijo de Dios. Mas si no admitimos concluir que no fue hecho aquel un verbo del Verbo, debemos por quien fueron hechas todas las cosas. Porque no pudo hacerse a sí mismo aquel por quien se hizo todo lo demás. Creed, pues, al Evangelista.
+Para que no te formes acerca del Verbo divino una idea baja: «Dios era el Verbo». Venga un infiel Arriano y diga que el Verbo de Dios fue hecho. ¿Cómo puede suceder que el Verbo de Dios sea hecho, cuando Dios por el Verbo lo hizo todo? Si aun el mismo Verbo de Dios fue hecho, ¿por qué otro verbo fue hecho? Diréis tal vez que fue hecho por un verbo del Verbo; pero yo replico que el Verbo es el único hijo de Dios. Mas si no admitimos concluir que no fue hecho aquel un verbo del Verbo, debemos por quien fueron hechas todas las cosas. Porque no pudo hacerse a sí mismo aquel por quien se hizo todo lo demás. Creed, pues, al Evangelista.
 &teDeum
 
-[Ant Laudes]
+[Ant Laudes_]
 ¿A quién habéis visto, * pastores? Hablad, contádnoslo. ¿Quién se ha aparecido en la tierra? Hemos visto al recién nacido y a coros de ángeles alabando al Señor. Aleluya, aleluya.
 Una madre ha dado a luz * al Rey, cuyo nombre es eterno. Une el gozo de la maternidad con la gloria de la virginidad. Nunca se vio tal madre ni se verá jamás. Aleluya.
 El ángel dijo * a los pastores: Os anuncio una gran alegría; os ha nacido el Salvador del mundo. Aleluya.
@@ -277,88 +267,88 @@ Hoy nos ha nacido * un niño que se llamará Dios fuerte. Aleluya, aleluya.
 v. En distintas ocasiones y de muchas maneras habló Dios antiguamente a nuestros padres por los profetas. Ahora, en esta etapa final, nos ha hablado por el Hijo, al que ha nombrado heredero de todo, y por medio del cual ha ido realizando las edades del mundo.
 $Deo gratias
 
-[HymnusM Laudes]
-v. Desde el Oriente, por donde amanece el sol, 
-hasta los últimos confines de la tierra, 
-cantemos a Cristo nuestro Príncipe, 
-que ha nacido de la Virgen María.
+[Hymnus Laudes]
+{:H-Asolisortus:}v. Desde el Oriente al ocaso,
+y del orbe en todo extremo,
+a Cristo, que de María
+Virgen nació, celebremos.
 _
-El glorioso Creador del mundo 
-ha vestido cuerpo de esclavo, 
-para que, salvando la carne con su carne, 
-no perdiera a los que creó.
+Feliz Creador del mundo,
+la forma viste de siervo,
+para salvar con la carne
+los que la carne hizo reos.
 _
-La gracia celestial descendió 
-a las entrañas de una Madre pura: 
-el seno de esta doncella encierra 
-misterios que antes ella no conocía.
+Las virginales entrañas
+cubre resplandor del cielo;
+misterios que desconoce
+lleva la Madre en su seno.
 _
-La morada de su casto seno 
-conviértese de repente en templo de Dios: 
-permaneciendo virgen, sin conocer varón, 
-concibió en su seno al Hijo.
+Templo de Dios de repente
+se hace inmaculado un pecho:
+la que varon no conoce,
+concibe al divino Verbo.
 _
-Esta Madre da a luz a Aquel a quien Gabriel 
-había anunciado, a quien, estando encerrado 
-en el claustro materno, había reconocido el Bautista, 
-saltando de gozo en el vientre de su madre.
+Al que Gabriel anunciara,
+al que en el vientre materno
+sintió con gozo el Bautista,
+la Virgen da nacimiento.
 _
-Consintió ser tendido sobre el heno; 
-no tuvo horror al pesebre, y fue alimentado 
-con un poco de leche Aquel 
-por quien ni las aves padecen hambre.
+Por cuna tiene un pesebre,
+mullida paja por lecho:
+aliméntase con leche
+quien da a las aves sustento.
 _
-Alégrase el coro de los espíritus 
-celestiales, los ángeles cantan a Dios, 
-y se manifiesta a los pastores el Pastor, 
-Creador de todas las cosas.
+Loores cantan los ángeles,
+alégrase todo el cielo,
+y en la tierra a los pastores
+se hace el Pastor manifiesto.
 _
-¡Oh Jesús, que naciste de la Virgen!, 
-gloria sea dada a ti, en unión 
-con el Padre y el Espíritu Santo, 
-por los siglos sempiternos. 
+A Ti, Jesús, que de Virgen
+naciste, la gloria demos,
+con el Padre y almo Espíritu,
+por los siglos sempiternos.
 Amén.
 
-[Hymnus Laudes]
-{:H-Asolisortus:}v. Desde el Oriente, por donde amanece el sol, 
-hasta los últimos confines de la tierra, 
-cantemos a Cristo nuestro Príncipe, 
-que ha nacido de la Virgen María.
+[HymnusM Laudes]
+v. Desde el Oriente al ocaso,
+y del orbe en todo extremo,
+a Cristo, que de María
+Virgen nació, celebremos.
 _
-El glorioso Creador del mundo 
-ha vestido cuerpo de esclavo, 
-para que, salvando la carne con su carne, 
-no perdiera a los que creó.
+Feliz Creador del mundo,
+la forma viste de siervo,
+para salvar con la carne
+los que la carne hizo reos.
 _
-La gracia celestial descendió 
-a las entrañas de una Madre pura: 
-el seno de esta doncella encierra 
-misterios que antes ella no conocía.
+Las virginales entrañas
+cubre resplandor del cielo;
+misterios que desconoce
+lleva la Madre en su seno.
 _
-La morada de su casto seno 
-conviértese de repente en templo de Dios: 
-permaneciendo virgen, sin conocer varón, 
-concibió en su seno al Hijo.
+Templo de Dios de repente
+se hace inmaculado un pecho:
+la que varon no conoce,
+concibe al divino Verbo.
 _
-Esta Madre da a luz a Aquel a quien Gabriel 
-había anunciado, a quien, estando encerrado 
-en el claustro materno, había reconocido el Bautista, 
-saltando de gozo en el vientre de su madre.
+Al que Gabriel anunciara,
+al que en el vientre materno
+sintió con gozo el Bautista,
+la Virgen da nacimiento.
 _
-Consintió ser tendido sobre el heno; 
-no tuvo horror al pesebre, y fue alimentado 
-con un poco de leche Aquel 
-por quien ni las aves padecen hambre.
+Por cuna tiene un pesebre,
+mullida paja por lecho:
+aliméntase con leche
+quien da a las aves sustento.
 _
-Alégrase el coro de los espíritus 
-celestiales, los ángeles cantan a Dios, 
-y se manifiesta a los pastores el Pastor, 
-Creador de todas las cosas.
+Loores cantan los ángeles,
+alégrase todo el cielo,
+y en la tierra a los pastores
+se hace el Pastor manifiesto.
 _
-¡Oh Jesús, que naciste de la Virgen!, 
-gloria sea dada a ti, en unión 
-con el Padre y el Espíritu Santo, 
-por los siglos sempiternos. 
+A Ti, Jesús, que de Virgen
+naciste, la gloria demos,
+con el Padre y almo Espíritu,
+por los siglos sempiternos.
 Amén.
 
 [Versum 2]
@@ -368,52 +358,55 @@ R. En su salvación. Aleluya.
 [Ant 2]
 Gloria a Dios en el cielo * y en la tierra paz a los hombres que Dios ama. Aleluya, aleluya.
 
+[Octava 2]
+!Conmemoración de la Octava de Navidad
+Ant. Gloria a Dios en el cielo * y en la tierra paz a los hombres que Dios ama. Aleluya, aleluya.
+_
+V. El Señor se ha manifestado. Aleluya.
+R. En su salvación. Aleluya.
+_
+$Oremus
+v. Dios todopoderoso: por este nacer nuevo de tu Hijo en nuestra carne, seamos libertados del yugo en que nos tiene esclavizados el pecado.
+$Per eumdem
+
 [Lectio Prima]
 !Heb 1:11-12
 v. Ellos perecerán, Tú permaneces; se gastarán como la ropa, los liarás como una capa, serán como un vestido que se muda. Pero Tú eres siempre el mismo, tus años no se acabarán.
 
-[Capitulum Tertia]
-@:Capitulum Laudes
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. La Palabra se hizo carne, * Aleluya, aleluya. 
 R. La Palabra se hizo carne, * Aleluya, aleluya. 
 V. Y acampó entre nosotros. 
 R. Aleluya, aleluya. 
 &Gloria
-R. La Palabra se hizo carne, * Aleluya, aleluya. 
-_
-V. El me invocará. Aleluya.
-R. Y dirá: «Tú eres mi Padre». Aleluya. 
+R. La Palabra se hizo carne, * Aleluya, aleluya.
 
 [Capitulum Sexta]
 !Heb 1:10
 v. Tú, Señor, en los comienzos cimentaste la tierra, obra de tus manos son los cielos.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. El Señor se ha manifestado, * Aleluya, aleluya. 
 R. El Señor se ha manifestado, * Aleluya, aleluya. 
 V. En su salvación. Aleluya, aleluya. 
 R. Aleluya, aleluya.
 &Gloria
 R. El Señor se ha manifestado, * Aleluya, aleluya. 
-_
+
+[Versum Sexta]
 V. Han visto todos los confines de la tierra. Aleluya.
 R. La salvación de nuestro Dios. Aleluya
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Han visto todos los confines de la tierra, * Aleluya, aleluya. 
 R. Han visto todos los confines de la tierra, * Aleluya, aleluya. 
 V. La salvación de nuestro Dios. 
 R. Aleluya, aleluya. 
 &Gloria
 R. Han visto todos los confines de la tierra, * Aleluya, aleluya. 
-_
+
+[Versum Nona]
 V. La Palabra se hizo carne. Aleluya.
 R. Y acampó entre nosotros. Aleluya.
 
@@ -424,29 +417,12 @@ En las tinieblas * brilla como una luz el Señor justo, clemente y compasivo.;;1
 Del Señor * viene la misericordia, la redención copiosa.;;129
 A uno de tu linaje * pondré sobre tu trono.;;131
 
-[Capitulum Vespera 3]
-@:Capitulum Laudes
-
-[Versum 3]
-@:Versum 2
-
 [Ant 3]
 Hoy * ha nacido Jesucristo. Hoy ha aparecido el Salvador. Hoy cantan los ángeles en la tierra, se alegran los arcángeles. Hoy saltan de gozo los justos diciendo: «Gloria a Dios en el cielo». Aleluya.
 
 [Octava 3]
 !Conmemoración de la Octava de Navidad
 Ant. Hoy ha nacido Jesucristo. Hoy ha aparecido el Salvador. Hoy cantan los ángeles en la tierra, se alegran los arcángeles. Hoy saltan de gozo los justos diciendo: «Gloria a Dios en el cielo». Aleluya.
-_
-V. El Señor se ha manifestado. Aleluya.
-R. En su salvación. Aleluya.
-_
-$Oremus
-v. Dios todopoderoso: por este nacer nuevo de tu Hijo en nuestra carne, seamos libertados del yugo en que nos tiene esclavizados el pecado.
-$Per eumdem
-
-[Octava 2]
-!Conmemoración de la Octava de Navidad
-Ant. Gloria a Dios en el cielo * y en la tierra paz a los hombres que Dios ama. Aleluya, aleluya.
 _
 V. El Señor se ha manifestado. Aleluya.
 R. En su salvación. Aleluya.

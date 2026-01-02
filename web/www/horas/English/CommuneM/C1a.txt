@@ -1,9 +1,16 @@
-[Lectio7]
+[Lectio5]
 @Commune/C1a:Lectio4:s/And by.*//s
 
-[Lectio8]
+[Lectio6]
 @Commune/C1a:Lectio4:s/.*And by/And by/s s/$/~/
 @Commune/C1a:Lectio5:s/Therefore.*//
+
+[Lectio7]
+@Commune/C1a:Lectio5:s/.* Therefore/Therefore/s s/$/~/
+@Commune/C1a:Lectio6:s/In the Evangelists.*//
+
+[Lectio8]
+@Commune/C1a:Lectio6:s/.* In the Evangelists/In the Evangelists/s
 
 [Lectio9]
 @Commune/C1a:Lectio7:s/And no .*//s

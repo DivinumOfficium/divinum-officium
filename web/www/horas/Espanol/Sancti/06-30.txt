@@ -1,18 +1,5 @@
-[Rank]
-In Commemoratione S. Pauli Apostoli;;Duplex majus;;4;;ex C1
-
-[Rank1960]
-In Commemoratione S. Pauli Apostoli;;Duplex;;3;;vide C1
-
-[Rule]
-ex C1;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=138
-Sub unica concl
-No prima vespera
+[Officium]
+In Commemoratione S. Pauli Apostoli
 
 [Ant Vespera]
 Yo planté, * Apolo regó, pero Dios hizo crecer. Aleluya.
@@ -21,11 +8,6 @@ La gracia de Dios * en mí no ha sido estéril, sino que su gracia permanece sie
 En Damasco, el gobernador * del rey Aretas quiso prenderme; algunos hermanos me descolgaron por la muralla, metido en un costal, y así escapé de sus manos, con la ayuda del Señor.
 Tres veces me han azotado * con varas, una vez me han apedreado. He padecido tres naufragios por el nombre de Cristo.
 
-[Capitulum Vespera]
-!2 Tim 4:7-8
-v. He combatido con valor, he guardado la fe. Por esto me está reservada una corona de justicia que me dará en aquel día el Señor, justo Juez.
-$Deo gratias
-
 [Versum 1]
 R. Tú eres un vaso de elección, oh apóstol San Pablo. 
 R. Predicador de la verdad en todo el mundo.
@@ -33,46 +15,54 @@ R. Predicador de la verdad en todo el mundo.
 [Ant 1]
 Oh Apóstol San Pablo, * predicador de la verdad y doctor de las Naciones, intercede por nosotros ante el Señor que te escogió.
 
-[HymnusM Matutinum]
-v. Ilustre Doctor Pablo, dirige nuestra vida, y atrae 
-en pos de ti nuestros corazones al cielo; 
-hasta que la fe, ahora velada, descubra el mediodía, 
-y sola, semejante al sol, reine la caridad.
+[Oratio]
+Oh Dios, que enseñaste a todo el mundo con la predicación del bienaventurado apóstol Pablo, concédenos, te rogamos, que cuantos celebramos hoy su natalicio, lleguemos a ti imitando sus ejemplos.
+$Per Dominum
 _
-Eterna gloria sea dada a la Trinidad; 
-honor, poder y exultación 
-a la unidad que lo dirige todo, 
-por todos los siglos de los siglos. 
-Amén.
+@Sancti/01-25:Commemoratio4
 
 [Hymnus Matutinum]
-v. Ilustre Doctor Pablo, dirige nuestra vida, y atrae 
-en pos de ti nuestros corazones al cielo; 
-hasta que la fe, ahora velada, descubra el mediodía, 
-y sola, semejante al sol, reine la caridad.
+v. Doctor egregio, Apóstol de las gentes,
+Costumbres santas forme tu doctrina:
+Inflama el pecho, alumbra nuestras mentes,
+Y al cielo nuestros pasos encamina;
+Do eclipsada la fe por luz brillante,
+Solo la caridad reina triunfante.
 _
-Eterna gloria sea dada a la Trinidad; 
-honor, poder y exultación 
-a la unidad que lo dirige todo, 
-por todos los siglos de los siglos. 
+Loor perpetuo, honra sublimada,
+Júbilo santo, gloria sempiterna,
+A la suprema Trinidad sagrada,
+Que en divina unidad rige y gobierna
+La tierra, el cielo y cuanto el orbe alcanza:
+Perpetua por los siglos su alabanza.
+Amén.
+
+[HymnusM Matutinum]
+v. Doctor egregio, Apóstol de las gentes,
+Costumbres santas forme tu doctrina:
+Inflama el pecho, alumbra nuestras mentes,
+Y al cielo nuestros pasos encamina;
+Do eclipsada la fe por luz brillante,
+Solo la caridad reina triunfante.
+_
+Loor perpetuo, honra sublimada,
+Júbilo santo, gloria sempiterna,
+A la suprema Trinidad sagrada,
+Que en divina unidad rige y gobierna
+La tierra, el cielo y cuanto el orbe alcanza:
+Perpetua por los siglos su alabanza.
 Amén.
 
 [Ant Matutinum]
 Quien dio eficacia * a Pedro en el apostolado entre los circuncisos, me la dio a mí para con los gentiles; y conocieron la gracia que me fue dada por Cristo, el Señor.;;18
 Sé en quién he puesto mi confianza, * y estoy cierto de que es poderoso para conservar mi depósito hasta aquel día como justo Juez.;;33
 Cristo es mi vida, * y la muerte es para mí una ganancia; es preciso que me gloríe en la cruz de nuestro Señor Jesucristo.;;44
-V. El sonido de su voz se ha propagado por toda la tierra.
-R. Y sus palabras hasta los confines del mundo.
 Tú eres vaso de elección, * santo apóstol Pablo, predicador de la verdad en todo el mundo.;;46
 El gran San Pablo, * vaso de elección, es verdaderamente digno de ser glorificado, y mereció poseer el duodécimo trono.;;60
 Combatido he con valor, * he concluido la carrera, he guardado la fe.;;63
-V. Les constituiréis príncipes sobre toda la tierra.
-R. Se acordarán, Señor, de vuestro nombre.
 Saulo, * que es el mismo Pablo, el gran predicador, confortado por Dios era cada vez más esforzado y confundía a los judíos.;;74
 Y para que la grandeza, * de las revelaciones no me ensoberbezca, se me ha dado el estímulo de la carne, que es como un ángel de Satanás, para que me abofetee. Por lo cual, por tres veces pedí al Señor que lo apartase de mí, y respondiome el Señor: Bástate, oh Pablo, mi gracia.;;96
 Me está reservada * la corona de justicia, que el Señor me dará en aquel día como justo Juez.;;98
-V. Vuestros amigos, oh Dios, han sido honrados en gran manera.
-R. Su autoridad ha sido establecida con gran firmeza.
 
 [Lectio1]
 De los Hechos de los Apóstoles
@@ -107,7 +97,7 @@ R. Por esto me está reservada la corona de justicia.
 10 le dijo: ¡Oh, lleno de todo engaño y de toda maldad, hijo del diablo, enemigo de toda justicia! ¿No cesarás de torcer los rectos caminos del Señor? Ahora mismo la mano del Señor caerá sobre ti y quedarás ciego, sin ver la luz del sol por cierto tiempo. 
 11 Al punto se apoderó de él la tiniebla y la oscuridad, y daba vueltas buscando quien le diera la mano. 
 12 Al verlo, creyó el procónsul, maravillado de la doctrina del Señor. 
-13 De Pafos navegaron Pablo y los suyos, llegando a Perge de Panfilia, pero Juan se apartó de ellos y se volvió a Jerusalén. 
+13 De Pafos navegaron Pablo y los suyos, llegando a Perge de Panfilia, pero Juan se apartó de ellos y se volvió a Jerusalén.
 
 [Responsory3]
 R. Me está reservada una corona de justicia, 
@@ -138,7 +128,7 @@ V. Quien dio eficacia a Pedro en el apostolado entre los circuncisos, me la dio 
 R. Y su gracia en mí no ha sido estéril, sino que permanece siempre en mí.
 
 [Lectio6]
-"He tenido el buen combate". Y yo pregunto en virtud de qué fuerza combatió. ¿Fue una fuerza propia de él, o fue recibida de lo alto? Lejos de nosotros pensar que tal doctor ignorase la ley de Dios, que habla así en el Deuteronomio: No digas en tu corazón: Mi fuerza y la robustez de mi brazo me granjearon todas estas cosas, sino para que te acuerdes del Señor Dios tuyo, por haberte él mismo dado fuerzas para obrar bien. Mas ¿de qué sirve combatir bien, si no le sigue la victoria? ¿Y quién hace victorioso sino Aquel del cual dijo el mismo Apóstol: Gracias a Dios que nos da la victoria por Nuestro Señor Jesucristo?
+“He tenido el buen combate”. Y yo pregunto en virtud de qué fuerza combatió. ¿Fue una fuerza propia de él, o fue recibida de lo alto? Lejos de nosotros pensar que tal doctor ignorase la ley de Dios, que habla así en el Deuteronomio: No digas en tu corazón: Mi fuerza y la robustez de mi brazo me granjearon todas estas cosas, sino para que te acuerdes del Señor Dios tuyo, por haberte él mismo dado fuerzas para obrar bien. Mas ¿de qué sirve combatir bien, si no le sigue la victoria? ¿Y quién hace victorioso sino Aquel del cual dijo el mismo Apóstol: Gracias a Dios que nos da la victoria por Nuestro Señor Jesucristo?
 
 [Responsory6]
 R. Saulo, que es el mismo Pablo, el gran predicador, 
@@ -184,45 +174,19 @@ R. Y así escapé de sus manos en nombre del Señor.
 Si quieres saber cómo se verificó esto, abre el libro de los Hechos de los Apóstoles, y verás que con frecuencia los judíos se lanzaban como bestias hambrientas contra los Apóstoles; y que éstos, imitando la sencillez de la paloma, y respondiendo con la humildad, apaciguaron la cólera y el furor y contuvieron el arrebato de aquel pueblo. Decíanles los judíos: ¿No os teníamos prohibido que enseñaseis en ese Nombre? Y aunque podían obrar una infinidad de milagros, nada dijeron, ni hicieron que manifestase acritud. Al contrario, respondieron con suavidad: Es necesario obedecer a Dios antes que a los hombres. En estas palabras has visto la sencillez de la paloma; en las que siguen verás la prudencia de la serpiente: No podemos callar las cosas que hemos visto y oído.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera
-
 [Capitulum Laudes]
-@:Capitulum Vespera
-
-[Hymnus Laudes]
-@Commune/C1:Hymnus Vespera
-
-[HymnusM Laudes]
-@Commune/C1:HymnusM Vespera
-
-[Versum 2]
-@:Versum 1
+!2 Tim 4:7-8
+v. He combatido con valor, he guardado la fe. Por esto me está reservada una corona de justicia que me dará en aquel día el Señor, justo Juez.
+$Deo gratias
 
 [Ant 2]
 Los que me habéis seguido, * os sentaréis sobre tronos para juzgar a las doce tribus de Israel, dice el Señor.
-
-[Oratio]
-Oh Dios, que enseñaste a todo el mundo con la predicación del bienaventurado apóstol Pablo, concédenos, te rogamos, que cuantos celebramos hoy su natalicio, lleguemos a ti imitando sus ejemplos.
-$Per Dominum
-_
-@Sancti/01-25:Commemoratio4
-
-[Commemoratio]
-@Sancti/06-24:Octava
 
 [Lectio Prima]
 !1 Cor 15:9-10
 v. Yo soy el menor de los apóstoles, que no soy digno de ser llamado Apóstol, porque perseguí la Iglesia de Dios. Mas por la gracia de Dios, soy lo que soy, y su gracia no ha sido vana en mí.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
 [Capitulum Sexta]
 !2 Cor 12:7-9
 v. Para que la grandeza de las revelaciones no me ensoberbezca, se me ha dado el estímulo de la carne, que es como un ángel de Satanás, para que me abofetee. Por lo cual, por tres veces pedí al Señor que lo apartase de mí, y respondióme el Señor: Bástate mi gracia.
-$Deo gratias
-
-[Capitulum Nona]
-@:Lectio Prima
 $Deo gratias

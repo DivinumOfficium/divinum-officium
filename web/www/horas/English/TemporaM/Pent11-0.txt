@@ -1,5 +1,3 @@
-@Tempora/Pent11-0
-
 [Lectio5]
 @Tempora/Pent11-0:Lectio4:s/Hezekiah turned .*//s
 
@@ -18,8 +16,7 @@
 
 [Lectio10]
 @Tempora/Pent11-0:Lectio7:s/.* For our /For our /s s/$/~/
-@Tempora/Pent11-0:Lectio8:s/"And .*//s
+@Tempora/Pent11-0:Lectio8:s/“And .*//s
 
 [Lectio11]
-@Tempora/Pent11-0:Lectio8:s/.* "And /"And /s
-
+@Tempora/Pent11-0:Lectio8:s/.* “And /“And /s

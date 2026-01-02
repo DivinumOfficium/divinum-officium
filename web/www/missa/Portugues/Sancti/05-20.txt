@@ -1,9 +1,5 @@
-[Rank]
-S. Bernardini Senensis Confessoris;;Semiduplex;;2.1;;vide C5
-
-[Rule]
-vide C5;
-Gloria
+[Officium]
+S. Bernardino de Sena, Confessor
 
 [Comment]
 # 20 V – S. Bernardino de Sena, Confessor
@@ -29,11 +25,5 @@ $Qui vivis
 [Offertorium]
 @Commune/C5:Offertorium
 
-[Secreta]
-@Commune/C5:Secreta
-
 [Communio]
 @Commune/C5:Communio
-
-[Postcommunio]
-@Commune/C5:Postcommunio

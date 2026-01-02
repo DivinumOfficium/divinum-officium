@@ -1,0 +1,10 @@
+@Sancti/05-03r
+
+[Officium]
+Ss. Alexándri, Evéntii et Theodúli Martyrum
+
+[Rank]
+;;Simplex;;1.1;;vide C3
+
+[Oratio]
+@Sancti/05-03r::s/\,?\s(T\w*)(\,? \w*)\sJ\w*/$2 $1/

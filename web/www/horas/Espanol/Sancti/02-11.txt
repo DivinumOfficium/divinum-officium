@@ -1,15 +1,8 @@
 [Rank]
 In Apparitione Beatæ Mariæ Virginis Immaculatæ;;Duplex majus;;4;;ex C11
 
-[RankNewcal]
+[Rank] (rubrica innovata)
 In Apparitione Beatæ Mariæ Virginis Immaculatæ;;Duplex optional;;2;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
 
 [Ant Vespera]
 Ella es * el resplandor de la luz eterna y el espejo sin mancha.;;109
@@ -17,11 +10,6 @@ Una mujer revestida del sol, con la luna bajo sus pies, y sobre su cabeza una co
 Tú eres la gloria de Jerusalén, Tú eres la alegría de Israel, Tú eres el orgullo de nuestra raza.;;121
 Bendita eres Tú, Virgen María, del Señor Dios altísimo, entre todas la mujeres de la tierra.;;126
 Hoy el Señor ha proclamado la grandeza de tu nombre de tal manera que no cesarán tus alabanzas en la boca de los hombres.;;147
-
-[Capitulum Vespera]
-!Cant 2:13-14
-v. Hermosa mía, ven a mí. Paloma mía, en los huecos de la peña, en los escondrijos de la cuesta; déjame ver tu figura, déjame oír tu voz: tu voz es dulce, tu figura es hermosa.
-$Deo gratias
 
 [Ant 1]
 Ésta es * mi paloma, mi perfecta, mi inmaculada.
@@ -69,22 +57,13 @@ Amén.
 Ave, llena de gracia; * el Señor es contigo.;;8
 Bendita Tú eres entre todas las mujeres * y bendito es el fruto de tu vientre.;;18
 No temas, María, * has hallado gracia delante del Señor.;;23
-V. El Señor omnipotente me ha rodeado con su virtud.
-R. Y conservó inmaculado mi camino.
 Me hizo grande * aquel que es poderoso, y cuyo nombre es santo.;;44
 El Altísimo * ha santificado su tabernáculo; en medio de él está Dios; no será conmovida.;;45
 El Señor te poseyó * ya desde el principio de sus obras, y te ha amado con amor eterno.;;86
-V. Dios la protegerá con su faz.
-R. En medio de ella está Dios; no será conmovida.
 La mano del Señor * te ha esforzado, y por esto serás bendita para siempre.;;95
 No temas, * ya que esta ley no ha sido dada para ti, sino para todos los demás.;;96
 El Señor te ha bendecido * con su poder, pues por ti ha aniquilado a nuestros enemigos.;;97
-V. Derramada está la gracia en tus labios.
-R. Por esto Dios te ha bendecido para siempre.
 
-[Lectio1]
-De las Parábolas de Salomón
-@Tempora/081-3:Lectio3
 
 [Responsory1]
 R. La sabiduría, que se extiende de un confín a otro con fortaleza y lo ordena todo con suavidad, ha edificado para sí una casa. 
@@ -161,17 +140,11 @@ R. Una corona de piedras preciosas.
 Al cuarto año de la definición del dogma de la Inmaculada Concepción de la Santísima Virgen, una niña llamada Bernadette afirmó haber visto a la Inmaculada Madre de Dios varias veces. La aparición fue en una gruta a orillas del río Gave, cerca de Lourdes, Francia, diócesis de Tarbes. Los muchos milagros que siguieron fueron suficientes para que cualquier cristiano prudente y fiel creyese que el dedo de Dios estaba allí. Fue revelada una fuente desconocida en una de las apariciones. Los milagros por los que Lourdes llegó a ser más conocida fueron las ocasiones en que los enfermos recuperaron su salud después de beber del agua milagrosa. Dado que las noticias sobre los beneficios que recibían los fieles en la gruta sagrada se extendían en el extranjero y el número de peregrinos aumentaba, el obispo de Tarbes llevó a cabo una investigación oficial y luego dio permiso para el culto de la Virgen Inmaculada en la gruta. Se construyó una iglesia y grandes multitudes vinieron a Lourdes cada año; el nombre de la Inmaculada Madre de Dios continuó aumentando en gloria por todas partes, con los eventos de la procesión del Santísimo Sacramento. Se curan muchos enfermos traídos a Lourdes de todas partes para pedir salud al Señor por intercesión de su Madre Inmaculada. Por esta causa, el Papa S. Pío X extendió a la Iglesia Universal la fiesta concedida a ciertos lugares por León XIII.	
 &teDeum
 
-[Lectio7]
-@Sancti/12-10:Lectio7
-
 [Responsory7]
 R. Invoca tú al Señor, habla al Rey por nosotros,
 * Y líbranos de la muerte.
 V. Sedientos todos, venid a las aguas, y os saciaréis de la salvación del Señor.
 R. Y líbranos de la muerte.
-
-[Lectio8]
-@Sancti/12-10:Lectio8
 
 [Responsory8]
 R. El Señor Dios plantó un paraíso de delicias, y, en medio del paraíso, el árbol de la vida. 
@@ -181,9 +154,6 @@ R. Y de este lugar delicioso salía un río.
 &Gloria
 R. Y de este lugar delicioso salía un río. 
 
-[Lectio9]
-@Sancti/12-10:Lectio9
-
 [Ant Laudes]
 Ella es * el resplandor de la luz eterna y el espejo sin mancha.
 Una * mujer revestida del sol, con la luna bajo sus pies, y sobre su cabeza una corona de doce estrellas.
@@ -192,7 +162,9 @@ Bendita eres Tú, * Virgen María, del Señor Dios altísimo, entre todas la muj
 Hoy el Señor ha proclamado * la grandeza de tu nombre de tal manera que no cesarán tus alabanzas en la boca de los hombres.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Cant 2:13-14
+v. Hermosa mía, ven a mí. Paloma mía, en los huecos de la peña, en los escondrijos de la cuesta; déjame ver tu figura, déjame oír tu voz: tu voz es dulce, tu figura es hermosa.
+$Deo gratias
 
 [Hymnus Laudes]
 v. ¡Oh Virgen, aurora que precedes al sol, 
@@ -233,17 +205,15 @@ Aurora luminosa de salvación, * de ti, Virgen María, ha nacido el sol de justi
 !Sir 24:25-26
 v. Yo tengo la gracia del camino y de la verdad, en mí está la esperanza de la vida y la virtud. Venid a mí los que me amáis, saciaos de mis frutos.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
-R.br. ¿Quién es ésta que sube del desierto,* Colmada de gracia? 
-R. ¿Quién es ésta que sube del desierto,* Colmada de gracia? 
+[Responsory Breve Tertia]
+R.br. ¿Quién es ésta que sube del desierto, * Colmada de gracia? 
+R. ¿Quién es ésta que sube del desierto, * Colmada de gracia? 
 V. Apoyada sobre su amado. 
 R. Colmada de gracia. 
 &Gloria
-R. ¿Quién es ésta que sube del desierto,* Colmada de gracia? 
-_
+R. ¿Quién es ésta que sube del desierto, * Colmada de gracia? 
+
+[Versum Tertia]
 V. La vieron las hijas de Sión.
 R. Y la proclamaron bienaventurada.
 
@@ -252,29 +222,27 @@ R. Y la proclamaron bienaventurada.
 v. Yo tengo riqueza y gloria, sólida fortuna y justicia. Mi fruto es mejor que el oro puro y las piedras preciosas.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Yo soy la Madre * Del amor noble. 
 R. Yo soy la Madre * Del amor noble. 
 V. Y del temor, del conocimiento y de la santa esperanza. 
 R. Del amor noble. 
 &Gloria
 R. Yo soy la Madre * Del amor noble. 
-_
+
+[Versum Sexta]
 V. Yo tengo la gracia del camino y de la verdad.
 R. En mí está la esperanza de la vida y la virtud.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Quien me alcanza * Alcanza la vida. 
 R. Quien me alcanza * Alcanza la vida. 
 V. Y goza del favor del Señor. 
 R. Alcanza la vida. 
 &Gloria
 R. Quien me alcanza * Alcanza la vida. 
-_
+
+[Versum Nona]
 V. Venid a mí los que me amáis.
 R. Saciaos de mis frutos.
 

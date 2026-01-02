@@ -1,24 +1,8 @@
 [Rank]
-Beatae Máriae Virginis Regina;;Duplex II classis;;5.1;;ex C11
+Szűz Mária királynő;;Duplex II classis;;5.1;;ex C11
 
-[Rank1960]
-Beatae Máriae Virginis Regina;;Duplex II classis;;5;;ex C11
-
-[RankNewcal]
-Beatae Mariae Virginis Regina;;Duplex;;3;;ex C11
-
-[Rule]
-ex C1;
-9 lectiones
-Ipsa Virgo Virginum
-Doxology=Nat
-Antiphonas horas
-Psalmi Dominica
-
-[Capitulum Vespera]
-!Sir 24:5; 24:7
-v. Én a Fölségesnek szájából származtam, elsöszülött vagyok minden teremtmény elött. Lakásom a magasban, és királyi székem a felhök oszlopain.
-$Deo gratias
+[Rank] (rubrica 196)
+Szűz Mária királynő;;Duplex II classis;;5;;ex C11
 
 [Lectio1]
 Olvasmány Jézus Sírák fia könyvéből
@@ -49,7 +33,7 @@ Olvasmány Jézus Sírák fia könyvéből
 
 [Lectio7]
 Evangélium szent Lukács Evangélista kőnyvéből
-!Luke 1:26-33
+!Lk 1:26-33
 Azon időben a hatodik hónapban az Isten elküldte Gábor angyalt Galilea Názáret nevű városába egy szűzhöz, aki egy Dávid házából való férfinak, Józsefnek volt a jegyese, és Máriának hívták. És így tovább.
 _
 Homily of St. Bonaventure bishop 
@@ -60,21 +44,9 @@ The Blessed Virgin Mary is the Mother of the great King by reason of a noble kin
 v. Én a Fölségesnek szájából származtam, elsöszülött vagyok minden teremtmény elött. Lakásom a magasban, és királyi székem a felhök oszlopain.
 $Deo gratias
 
-[Commemoratio]
-!Commemoratio S. Petronella Virginis
-@Commune/C6:Oratio proper
-$Oremus
-Hear us O God our savior, that we who are gladdened by the Festival of blessed Virgin Petronille may learn from it piety and devotion
-$Per Dominum
-
 [Lectio Prima]
 !Sir 24:30-31
 v. A ki engem hallgat, nem szégyenöl meg, és a kik általam munkálkodnak, nem vétkeznek. A kik fényt derítenek rám, örök életet nyernek.
-
-[Capitulum Tertia]
-!Sir 24:5; 24:7
-v. Én a Fölségesnek szájából származtam, elsöszülött vagyok minden teremtmény elött. Lakásom a magasban, és királyi székem a felhök oszlopain.
-$Deo gratias
 
 [Capitulum Sexta]
 !Sir 24:9-11

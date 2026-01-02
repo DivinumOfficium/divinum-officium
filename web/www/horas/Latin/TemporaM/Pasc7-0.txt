@@ -5,13 +5,14 @@
 Psalmi Dominica
 Antiphonas horas
 
-[Ant Vespera]
-@Tempora/Pasc7-0::s/\n/;;109_/ s/\n/;;110_/ s/\n/;;111_/ s/\n/;;112_/ s/_/\n/g
+[Responsory Vespera 1] (rubrica Barroux)
+@:RV1:s/Responsorium/R/ s/ \*/\n*/
 
-[Capitulum Vespera]
-@Tempora/Pasc7-0
-_
-@Tempora/Pasc7-0:Responsory Sexta:1-6
+[Responsory Vespera 1] (rubrica cisterciensis)
+@:RV1
+
+[Hymnus Vespera] (rubrica cisterciensis)
+@Tempora/Pasc7-0:Hymnus Laudes
 
 [Ant Matutinum]
 @Tempora/Pasc7-0::1 s/47/1/
@@ -27,7 +28,7 @@ _
 ;;47
 ;;95
 ;;97
-@Tempora/Pasc7-0:Responsory Tertia:s/.*_.//s
+@Tempora/Pasc7-0:Versum Tertia
 @Tempora/Pasc7-0::3 s/103/243;244;245/
 @Tempora/Pasc7-0:Versum 1
 
@@ -65,7 +66,7 @@ Hodiérnam solemnitátem, dilectíssimi, in precípuis festis esse venerándam, 
 @Tempora/Pasc7-2:Responsory1
 
 [Lectio6]
-Nam ab illo die, quo Dóminus super omnem altitudinem cælórum ad déxteram Dei Patris concessúrus ascéndit, décimus iste est, qui ab eiúsdem resurrectióne quinquagésimus nobis in eo, a quo cœpit, illúxit magna mystéria véterum sacramentórum in se cóntinens et novórum; quibus manifestíssime declarátur, et grátiam prænuntiátam fuísse per legem et legem implétam esse per grátiam.
+Nam ab illo die, quo Dóminus super omnem altitudinem cælórum ad déxteram Dei Patris concessúrus ascéndit, décimus iste est, qui ab ejúsdem resurrectióne quinquagésimus nobis in eo, a quo cœpit, illúxit magna mystéria véterum sacramentórum in se cóntinens et novórum; quibus manifestíssime declarátur, et grátiam prænuntiátam fuísse per legem et legem implétam esse per grátiam.
 
 [Responsory6]
 @Tempora/Pasc7-2:Responsory2
@@ -115,19 +116,26 @@ $Deo gratias
 _
 @Tempora/Pasc7-0:Versum 3
 
+[RV1]
+Responsorium. Repléti sunt omnes Spíritu sancto, et cœpérunt loqui, prout Spíritus sanctus dabat éloqui illos: * Et convénit multitúdo dicéntium, allelúia.
+V. Loquebántur váriis linguis Apóstoli magnália Dei:
+R. Et convénit multitúdo dicéntium, allelúia.
+
 [Ant Laudes]
 @Tempora/Pasc7-0:Ant Vespera:s/;;.*//
 
-[Capitulum Laudes]
-@Tempora/Pasc7-0
-_
-@Tempora/Pasc7-0:Responsory Tertia:1-6
+[Hymnus Laudes] (rubrica cisterciensis)
+@Tempora/Pasc7-0:HymnusM Matutinum:21-46
 
-[Responsory Tertia]
+[Responsory TertiaM]
 @Tempora/Pasc7-0:Ant Matutinum:4-5
 
-[Responsory Sexta]
-@Tempora/Pasc7-0:Responsory Tertia:8-9
+[Responsory SextaM]
+@Tempora/Pasc7-0:Versum Tertia
+(sed rubrica cisterciensis)
+@Tempora/Pasc7-0:Versum Sexta
 
-[Responsory Nona]
+[Responsory NonaM]
 @Tempora/Pasc7-0:Versum 1
+(sed rubrica cisterciensis)
+@Tempora/Pasc7-0:Versum Tertia

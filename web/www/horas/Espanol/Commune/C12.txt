@@ -1,12 +1,5 @@
-[Name]
+[Officium]
 Officium parvum Beatae Mariae Virginis
-
-[Rank]
-Officium parvum Beatae Mariae Virginis;;Simplex;;1;;ex C11
-
-[Oratio 2]
-v. Dios, que quisiste que a la palabra del Ángel se encarnase tu Verbo en el seno de la bienaventurada Virgen María: haz, te suplicamos, que cuantos creemos que es verdaderamente Madre de Dios, seamos ayudados delante de ti con su intercesión.
-$Per eumdem
 
 [Commemoratio]
 !Conmemoración de los Santos
@@ -19,68 +12,24 @@ v. Haz, Señor que todos los santos nos asistan siempre en todo lugar, a fin de 
 $Per Dominum
 (sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
 
-[Pre oratio]
+[Hymnus minor_]
 
-#Oratio
+#Hymnus
+v. Acuérdate, oh Creador de todas las cosas, 
+que un día tomaste, al nacer 
+del seno de una Virgen sagrada, 
+la forma de nuestro cuerpo.
 _
-v. Señor, ten piedad. Cristo, ten piedad. Señor, ten piedad.
-(sed rubrica 1955 aut rubrica 1960 omittitur)
-&Dominus_vobiscum
-$Oremus
-
-[Special Completorium]
-#Incipit
+r. Oh María, Madre de la gracia, 
+dulce Madre de misericordia, 
+protégenos del enemigo maligno, 
+y recíbenos en la hora de la muerte.
 _
-$Ave Maria
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
-V. Conviértenos, +++ oh Dios, Salvador nuestro.
-R. Cesa en tu rencor contra nosotros. 
-$Deus in adjutorium
-&Alleluia
-
-#Psalmi
-&psalm(128)
-
-&psalm(129)
-
-&psalm(130)
-
-@:Hymnus minor
-
-#Capitulum
-!Sir 24:24
-v. Yo soy la Madre del amor hermoso, y del temor, y del conocimiento y de la santa esperanza.
-$Deo gratias
-_
-V. Ruega por nosotros, santa Madre de Dios.
-R. Para que seamos dignos de las promesas de Cristo.
-
-#Canticum Nunc dimittis
-Ant. Bajo tu amparo * nos ponemos, santa Madre de Dios: no desprecies las súplicas que te dirigimos en nuestras necesidades; más líbranos siempre de todo peligro, Virgen gloriosa y bendita.
-&psalm(233)
-Ant. Bajo tu amparo * nos ponemos, santa Madre de Dios: no desprecies las súplicas que te dirigimos en nuestras necesidades; más líbranos siempre de todo peligro, Virgen gloriosa y bendita.
-
-@:Pre oratio
-v. Te suplicamos, Señor, que nos proteja la gloriosa intercesión de la bienaventurada, y gloriosa siempre Virgen María, y que nos lleve a la vida eterna.
-$Per Dominum
-
-#Conclusio
-&Dominus_vobiscum
-&Benedicamus_Domino
-Bendición. Que nos bendiga y nos guarde el Señor omniponte y misericordioso, Padre, Hijo y Espíritu Santo.  
-R. Amén.
-
-&antiphona_finalis
-V. Que el auxilio divino + permanezca siempre  con nosotros.
-R. Amén.
-
-$Pater noster
-$Ave Maria
-$Credo
-(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica omittitur)
-
-[Ant Matutinum]
-@Commune/C11::s/V\. .*/V. Derramada está la gracia en tus labios./g s/R\. .*/R. Por ello el Señor te bendecirá para siempre./g
+r. Gloria a ti, oh Jesús, nacido de la Virgen, 
+juntamente con el Padre 
+y el Espíritu Santo, 
+por los siglos de los siglos.
+Amén.
 
 [Lectio1]
 !Sir 24:11-13
@@ -127,24 +76,9 @@ Hermosa eres * y graciosa hija de Jerusalén, terrible como un ejército formado
 v. Al verla las hijas de Sión, la proclamaron bienaventurada; y reinas cantaron sus alabanzas.	
 $Deo gratias
 
-[Hymnus minor]
-
-#Hymnus
-v. Acuérdate, oh Creador de todas las cosas, 
-que un día tomaste, al nacer 
-del seno de una Virgen sagrada, 
-la forma de nuestro cuerpo.
-_
-Oh María, Madre de la gracia, 
-dulce Madre de misericordia, 
-protégenos del enemigo maligno, 
-y recíbenos en la hora de la muerte.
-_
-Gloria a ti, oh Jesús, nacido de la Virgen, 
-juntamente con el Padre 
-y el Espíritu Santo, 
-por los siglos de los siglos.
-Amén.
+[Oratio 2]
+v. Dios, que quisiste que a la palabra del Ángel se encarnase tu Verbo en el seno de la bienaventurada Virgen María: haz, te suplicamos, que cuantos creemos que es verdaderamente Madre de Dios, seamos ayudados delante de ti con su intercesión.
+$Per eumdem
 
 [Capitulum Prima]
 !Cant 6:9
@@ -155,27 +89,13 @@ $Deo gratias
 v. Oh Dios que te dignaste elegir el seno virginal de la bienaventurada María para hacer de él tu morada, concédenos, te pedimos, que, experimentando el socorro de su protección, celebremos con alegría su memoria.
 $Qui vivis
 
-[Capitulum Tertia]
-!Sir 24:15
-v. Y así fijé mí estancia en el monte de Sión, y fue el lugar de mi reposo la ciudad santa, y en Jerusalén está mi trono.
-$Deo gratias
-
 [Oratio Tertia]
 v. ¡Oh Dios, que por la maternidad virginal de Santa María entregaste al género humano los tesoros de la salvación eterna!; te rogamos que sintamos  continuamente el poder de la  intercensión de aquella por la que hemos mericido recibir al Autor de la vida, nuestro Señor Jesucristo, tu Hijo:
 $Qui tecum
 
-[Capitulum Sexta]
-!Sir 24:16
-v. Fijé mi morada en medio del pueblo que Dios ha honrado y que ha escogido por herencia, habitaré para siempre en la morada de la santidad.
-$Deo gratias
-
 [Oratio Sexta]
 v. Concede, Oh Dios misericordioso, el socorro a nuestra fragilidad, a fin de que, honrando la memoria de la Santa Madre de Dios, podamos con el auxilio de su intercesión levantarnos de nuestras iniquidades.
 $Per eumdem
-
-[Capitulum Nona]
-@Commune/C11:Lectio Prima
-$Deo gratias
 
 [Oratio Nona]
 v. Te suplicamos, Señor, que perdones las faltas de tus siervos; a fin de que cuantos no te podemos agradar por nuestras obras, seamos salvados por la intercesión de la Madre de tu Hijo, Señor nuestro.
@@ -184,3 +104,18 @@ $Qui tecum
 [Verse Nona]
 V. Después del parto, oh Virgen, sin mancha permaneciste. 
 R. Madre de Dios, intercede por nosotros.
+
+[Ant Completorium]
+Ant. Bajo tu amparo * nos ponemos, santa Madre de Dios: no desprecies las súplicas que te dirigimos en nuestras necesidades; más líbranos siempre de todo peligro, Virgen gloriosa y bendita.
+
+[Capitulum Completorium_]
+!Sir 24:24
+v. Yo soy la Madre del amor hermoso, y del temor, y del conocimiento y de la santa esperanza.
+$Deo gratias
+_
+V. Ruega por nosotros, santa Madre de Dios.
+R. Para que seamos dignos de las promesas de Cristo.
+
+[Oratio Completorium]
+v. Te suplicamos, Señor, que nos proteja la gloriosa intercesión de la bienaventurada, y gloriosa siempre Virgen María, y que nos lleve a la vida eterna.
+$Per Dominum

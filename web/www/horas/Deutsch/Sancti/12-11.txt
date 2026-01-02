@@ -1,27 +1,12 @@
-[Rank]
-Hl. Damasus, Papst und Bekenner;;Semiduplex;;2.5;;vide C4
+[Officium]
+Hl. Damasus, Papst und Bekenner
 
-[Rank1960]
-Hl. Damasus, Papst und Bekenner;;Duplex;;3;;vide C4
+[Name]
+Damasus
 
-[RankNewcal]
-Hl. Damasus, Papst und Bekenner;;Semiduplex;;2.5;;vide C4
-
-[Rule]
-vide C4;
-9 lectiones;
-OPapaC=Damasus;
-Doxology=Nat
-Omit Preces
-Commemoratio3
-
-[Oratio]
+[Oratio] (nisi communi Summorum Pontificum)
 Erhöre, o Herr, unser Flehen, und auf die Fürsprache deines heiligen Bekenners und Bischofs Damasus gewähre und gnädigst Nachsicht und Segen.
 $Per Dominum
-
-[Commemoratio 2]
-!Kommemoration des Tags innerhalb der Oktav der unbefleckten Empfängnis Mariä
-@Sancti/12-08:Oratio
 
 [Lectio4]
 Damasus, ein Spanier, ein hervorragender und in der Heiligen Schrift bewanderter Mann, hat durch die Abhaltung des ersten Konzils von Konstantinopel die abscheuliche Irrlehre des Eunomius und Mazedonius ausgerottet. Derselbe hat die Versammlung von Rimini, der vorher schon von Liberius die Bestätigung versagt worden war, nochmals verurteilt, auf der, wie der heilige Hieronymus schreibt, hauptsächlich durch die Schliche des Valens und des Ursazius die Verurteilung des nizäischen Glaubensbekenntnisses ausgerufen worden war; und so wunderte sich aufseufzend die Welt, dass sie arianisch sei.
@@ -34,16 +19,3 @@ Eine Wiedererstattungsstrafe ordnete er an für diejenigen, die einen anderen in
 
 [Lectio94]
 Damasus stammte aus Spanien. Er war ein hervorragender Mann und wohlbewandert in der Heiligen Schrift. Er berief das erste Konzil von Konstantinopel und vernichtete dadurch die Irrlehren des Eunomius und Macedonius. Wie schon vor ihm Papst Liberius verurteilte er die Kirchenversammlung von Rimini, wo nach dem Zeugnis des heiligen Hieronymus die Verwerfung des nizänischen Glaubensbekenntnisses verkündet worden war, vor allem durch die Umtriebe des Valens und Ursacius. Er baute auch zwei Kirchen: jene des heiligen Laurentius beim Theater des Pompejus und eine andere an der Straße nach Ardea bei den Katakomben. Auch führte er für alle Kirchen den wechselweisen Psalmengesang bei Tag und bei Nacht ein, wie es schon an den meisten Orten üblich war, und ließ am Schluß jedes Psalmes das „Ehre sei dem Vater und dem Sohne und dem Heiligen Geiste“ beten. In seinem Auftrag schuf der heilige Hieronymus einen verbesserten Text des Neuen Testamentes nach dem griechischen Urtext. Er entdeckte auch zahlreiche Martyrergräber und versah ihre Gedenkstätten mit Inschriften. Nach einem Leben reich an Tugend, Gelehrsamkeit und Klugheit entschlief er im Herrn im Alter von fast achtzig Jahren unter der Regierung Theodosius' des Älteren.
-
-[Lectio7]
-@Commune/C4:Lectio7 in 2 loco
-
-[Lectio8]
-@Commune/C4:Lectio8 in 2 loco
-
-[Lectio9]
-@Commune/C4:Lectio9 in 2 loco
-
-[Ant 3] (rubrica divino aut rubrica 1955 aut rubrica 1960)
-@Commune/C4:Ant 3 summi Pontificis
-

@@ -1,5 +1,10 @@
+[Officium]
+Feria V infra Hebdomadam I Adventus
+
 [Rank]
-Feria V infra Hebdomadam I Adventus;;Feria major;;2
+;;Feria major;;2.1
+(sed rubrica cisterciensis)
+;;Feria major;;1.15
 
 [Rule]
 Oratio Dominica
@@ -32,6 +37,9 @@ De Isaía Prophéta
 
 [Responsory3]
 @Tempora/Adv1-0:Responsory3
+
+[Ant Laudes] (rubrica cisterciensis)
+@Tempora/Adv1-0
 
 [Ant 2]
 Benedícta * tu in muliéribus, et benedíctus fructus ventris tui.

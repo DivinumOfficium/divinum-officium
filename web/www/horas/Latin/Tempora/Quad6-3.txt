@@ -1,8 +1,14 @@
-[Rank]
-Feria Quarta Majoris Hebdomadæ;;Feria privilegiata;;6
+[Officium]
+Feria Quarta Majoris Hebdomadæ
 
-[Rank] (rubrica 1955 aut rubrica 1960)
-Feria Quarta Hebdomadæ Sanctæ;;Feria privilegiata;;7
+[Officium] (rubrica 1955 aut rubrica 196)
+Feria Quarta Hebdomadæ Sanctæ
+
+[Rank]
+;;Feria privilegiata;;6.9
+
+[Rank] (rubrica 1955 aut rubrica 196)
+;;Feria privilegiata;;7
 
 [Rule]
 Antiphonas horas
@@ -54,22 +60,40 @@ Tu autem, Dómine, * scis omne consílium eórum advérsum me in mortem.
 Omnes inimíci mei * audiérunt malum meum: Dómine, lætáti sunt, quóniam tu fecísti.
 Fac, Dómine, * judícium injúriam patiéntibus: et vias peccatórum dispérde.
 
-[Ant Laudes](rubrica monastica aut rubrica 1570 aut rubrica 1910)
+[Ant Laudes](rubrica cisterciensis)
+Líbera me * de sanguínibus, Deus, Deus meus: et exsultábit lingua mea justítiam tuam.
+Contumélias * et terróres passus sum ab eis: et Dóminus mecum est tamquam bellátor fortis.
+Omnes inimíci mei * audiérunt malum meum: Dómine, lætáti sunt, quóniam tu fecisti.
+Consílium * fecérunt inimíci mei, dicéntes: Conterámus eum de terra vivéntium.
+Ancílla dixit * Petro: Vere tu ex illis es: nam et loquéla tua maniféstum te facit.
+
+[Ant Laudes](rubrica monastica aut rubrica tridentina)
 Líbera me * de sanguínibus, Deus, Deus meus: et exsultábit lingua mea justítiam tuam.
 Contumélias * et terróres passus sum ab eis: et Dóminus mecum est tamquam bellátor fortis.
 Ipsi vero * in vanum quæsierunt animam meam, introibunt in inferiora terræ.
 Omnes inimíci mei * audiérunt malum meum: Dómine, lætáti sunt, quóniam tu fecisti.
 Alliga, Dómine, * in vinculis natiónes Géntium, et reges earum in compédibus.
 
-[Ant 2]
+[Ant 2_]
 Simon, dormis? * non potuísti una hora vigiláre mecum?
 
+[Ant 2]
+@:Ant 2_
+(sed rubrica cisterciensis)
+@:Ant 2C
+
+[Ant 2C]
+Tanto témpore * vobíscum eram docens vos in templo, et non me tenuístis, et ecce flagellátum dúcitis ad crucifigéndum.
+
 [Oratio 2]
-Præsta, quǽsumus, omnípotens Deus: ut, qui nostris excéssibus incessánter afflígimur, per unigéniti Fílii tui passiónem líberemur:
+Præsta, quǽsumus, omnípotens Deus: ut, qui nostris excéssibus incessánter afflígimur, per unigéniti Fílii tui passiónem liberémur:
 $Qui tecum
 
 [Ant 3]
 Ancílla dixit * Petro: Vere tu ex illis es: nam et loquéla tua maniféstum te facit.
+
+[Ant 3] (rubrica cisterciensis)
+Quotídie * apud vos eram in templo docens, et non me tenuístis, et ecce flagellátum dúcitis ad crucifigéndum.
 
 [Oratio 3]
 Réspice, quǽsumus, Dómine, super hanc famíliam tuam, pro qua Dóminus noster Jesus Christus non dubitávit mánibus tradi nocéntium, et crucis subíre torméntum:

@@ -1,0 +1,9 @@
+[Lectio9]
+@Tempora/Pent21-0:Lectio7:s/Si enim .*//s
+
+[Lectio10]
+@Tempora/Pent21-0:Lectio7:s/.* Si enim /Si enim /s s/$/~/
+@Tempora/Pent21-0:Lectio8:s/Sin autem .*//s
+
+[Lectio11]
+@Tempora/Pent21-0:Lectio8:s/.* Sin autem /Sin autem /s

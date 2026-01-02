@@ -1,7 +1,15 @@
+[Officium]
+S. Joannis Damasceni Confessoris et Ecclesiæ Doctoris
+
 [Rank]
-S. Joannis Damasceni Confessoris;;Duplex;;3;;vide C5
+;;Duplex;;3;;vide C5a
+(sed rubrica 1960 aut rubrica innovata)
+;;Duplex;;2.1;;vide C4a
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C5
 
 [Rule]
+Evangelium non appropriatum
 vide C5;
 Gloria
 CredoDA
@@ -19,18 +27,7 @@ Omnípotens sempitérne Deus, qui, ad cultum sacrárum imáginum asseréndum, be
 $Per Dominum
 
 [Lectio]
-@Commune/C2:Lectio
-
-[Tractus]
-!Ps 17:33 et 35
-Deus, qui præcínxit me virtúte: et pósuit immaculátam viam meam.
-V. Qui docet manus meas ad prœ́lium: et posuísti, ut arcum æreum, bráchia mea.
-_
-!Tractus
-!Ps 38:39 et 50
-Pérsequar inimícos meos, et comprehéndam illos.
-V. Confríngam illos, nec poterunt stare: cadent subtus pedes meos.
-V. Proptérea confitébor in natiónibus, Dómine, et nómini tuo psalmum dicam.
+@Commune/C2a:Lectio
 
 [Graduale]
 Deus, qui præcínxit me virtúte: et pósuit immaculátam viam meam.
@@ -44,6 +41,17 @@ Allelúja, allelúja
 Dóminus salvávit manum tuam tibi: quia prœ́lia Dómini tu prœliáris. Allelúja.
 !Ps 143:1
 Benedíctus Dóminus, Deus meus, qui docet manus meas ad prœ́lium, et dígitos meos ad bellum. Allelúja.
+
+[Tractus]
+!Ps 17:33 et 35
+Deus, qui præcínxit me virtúte: et pósuit immaculátam viam meam.
+V. Qui docet manus meas ad prœ́lium: et posuísti, ut arcum æreum, bráchia mea.
+_
+!Tractus
+!Ps 38:39 et 50
+Pérsequar inimícos meos, et comprehéndam illos.
+V. Confríngam illos, nec poterunt stare: cadent subtus pedes meos.
+V. Proptérea confitébor in natiónibus, Dómine, et nómini tuo psalmum dicam.
 
 [Evangelium]
 Sequéntia ++ sancti Evangélii secúndum Lucam
@@ -65,4 +73,3 @@ Bráchia peccatórum conteréntur, confírmat autem justos Dóminus.
 [Postcommunio]
 Sumpta nos, quǽsumus, Dómine, dona cœléstibus armis tueántur: et beáti Joánnis patrocínia circúmdent Sanctórum unánimi suffrágio cumuláta; quorum imágines evícit in Ecclésia esse venerándas.
 $Per Dominum
-

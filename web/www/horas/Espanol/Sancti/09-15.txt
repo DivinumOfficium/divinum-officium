@@ -1,14 +1,8 @@
 [Rank]
 Septem Dolorum Beatæ Mariæ Virginis;;Duplex 2nd class;;5.1;;ex C11
 
-[Rank1960]
+[Rank] (rubrica 196)
 Septem Dolorum Beatæ Mariæ Virginis;;Duplex 2nd class;;5;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
 
 [Ant Vespera]
 ¿A dónde * se ha ido tu amado, oh la más hermosa de las mujeres? ¿A dónde se ha ido, y lo buscaremos contigo?;;109
@@ -16,11 +10,6 @@ Apartaos de mí, * no me consoléis en mi llanto amargo.;;112
 Sin figura * y sin belleza, lo vimos sin aspecto atrayente.;;121
 Desde la planta del pie * hasta la cabeza, no hay en Él nada sano.;;126
 Sostenedme con flores, * reanimadme con frutos, que desfallezco de amor.;;147
-
-[Capitulum Vespera]
-!Lam 2:13
-v. ¿A quién te compararé, hija de Jerusalén? ¿A quién te igualaré para consolarte, Virgen, hija de Sión? Tu quebranto es grande como el mar.
-$Deo gratias
 
 [Hymnus Vespera]
 v. Tienda pronto el crepúsculo sus sombras 
@@ -62,8 +51,9 @@ R. Que estuviste junto a la Cruz de Jesús.
 [Ant 1]
 No os fijéis * en el color de mi piel bronceada por el sol: los hijos de mi madre se han levantado contra mí.
 
-[Doxology]
-@Tempora/Quad5-5
+[Oratio]
+En tu pasión, Señor, la espada de dolor profetizada por Simeón, traspasó el alma de tu Madre María, la Virgen; al recordar y venerar sus dolores, concédenos alcanzar los gozosos frutos de tu pasión.
+$Qui vivis
 
 [Invit]
 Estemos firmes junto a la Cruz, con la Madre de Jesús, María, * Cuya alma fue traspasada por una espada de dolor.
@@ -109,16 +99,18 @@ Amén.
 Se han multiplicado * mis perseguidores; son muchísimos los que se han rebelado contra mí.;;3
 Tienen preparadas saetas * dentro de sus aljabas, para asaetar a escondidas a los que son de corazón recto.;;10
 De puro dolor se va consumiendo * mi vida, y mis años con tanto gemir.;;30
-V. Ruega por nosotros, Reina de los Mártires.
-R. Tú que permaneciste firme junto a la Cruz de Jesús.
 Mi corazón * está volviéndose dentro de mí como una cera que se derrite.;;21
 Oh Dios, te he expuesto cuál sea mi vida; * Tú tienes presentes ante tus ojos mis lágrimas.;;55
 Mis lágrimas * me han servido de pan día y noche.;;41
-V. Hacecillo de mirra es mi amado para mí.
-R. Reposará sobre mi seno.
 Asestaron * su arco emponzoñado, para asaetar desde una emboscada al inocente.;;63
 Mi alma * está sumamente perturbada: pero tú, Señor, ¿hasta cuándo?;;6
 Dios es nuestro refugio * en las tribulaciones que tanto nos han acosado.;;45
+
+[Nocturn 2 Versum]
+V. Mi amado es para mí un manojo de mirra.
+R. Mientras descansa en mi pecho.
+
+[Nocturn 3 Versum]
 V. Por ti, Virgen María, alcancemos la salud.
 R. De las heridas del Salvador.
 
@@ -160,26 +152,17 @@ R. Mira cómo tu padre y Yo.
 &Gloria
 R. Llenos de aflicción, te hemos buscado.
 
-[Lectio4]
-@Tempora/Quad5-5
-
 [Responsory4]
 R. A Jesús, mientras llevaba la Cruz a cuestas. 
 * Seguíale un grupo de mujeres, llorando y lamentándose. 
 V. Hijas de Jerusalén, llorad sobre vosotras mismas y sobre vuestros hijos. 
 R. Seguíale un grupo de mujeres, llorando y lamentándose.
 
-[Lectio5]
-@Tempora/Quad5-5
-
 [Responsory5]
 R. Una vez llegados al lugar que se llama Calvario, le crucificaron: 
 * La Madre de Jesús estaba de pie junto a la Cruz. 
 V. Entonces una espada de dolor atravesó su alma santísima. 
 R. La Madre de Jesús estaba de pie junto a la Cruz.
-
-[Lectio6]
-@Tempora/Quad5-5
 
 [Responsory6]
 R. José de Arimatea 
@@ -220,14 +203,10 @@ R. Para que recibas en su plenitud la misericordia y la bendición.
 He aquí a tu Hijo; he aquí a tu Madre. Desde lo alto de la Cruz, Cristo hacía testamento. Repartía sus deberes de piedad entre la madre y el discípulo. No se reducía a dictar un testamento general, sino además uno de carácter familiar, firmado éste por Juan, como digno testigo de tal testador. Testamento que no trata de dinero, sino de vida eterna; escrito no con tinta, sino por aquel Espíritu del Dios vivo que dice: Mi lengua es como ágil pluma de escribano.
 &teDeum
 
-[Lectio93]
-@Sancti/09-15t:Lectio9
-
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//g
-
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Lam 2:13
+v. ¿A quién te compararé, hija de Jerusalén? ¿A quién te igualaré para consolarte, Virgen, hija de Sión? Tu quebranto es grande como el mar.
+$Deo gratias
 
 [Hymnus Laudes]
 v. ¡Oh Dios de soberana clemencia!, 
@@ -254,35 +233,19 @@ R. Haz que nos alegremos en el reino de los cielos.
 [Ant 2]
 Venid, * subamos al monte del Señor, y ved si hay dolor como el mío.
 
-[Oratio]
-En tu pasión, Señor, la espada de dolor profetizada por Simeón, traspasó el alma de tu Madre María, la Virgen; al recordar y venerar sus dolores, concédenos alcanzar los gozosos frutos de tu pasión.
-$Qui vivis
-
-[Commemoratio]
-!Conmemoración de S. Nicomedes, Mártir
-@Commune/C2:Oratio proper
-$Oremus
-v. Asiste, Señor, a tu pueblo, para que, al celebrar los méritos del mártir San Nicomedes, pueda, con su ayuda, alcanzar siempre tu misericordia. 
-$Per Dominum
-
-[Versum Prima]
-@Tempora/Quad5-5
-
 [Lectio Prima]
 !Lam 2:18
 v. Derrama lágrimas a torrentes día y noche, no te des reposo, no descansen tus ojos.
 
-[Capitulum Tertia]
-@:Capitulum Laudes
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Vosotros, * Los que pasáis por el camino. 
 R. Vosotros, * Los que pasáis por el camino. 
 V. Mirad y ved si hay dolor como el mío. 
 R. Los que pasáis por el camino.
 &Gloria
-R. Vosotros, * Los que pasáis por el camino. 
-_
+R. Vosotros, * Los que pasáis por el camino.
+
+[Versum Tertia]
 V. Mis ojos están consumidos por las lágrimas.
 R. Se conmueve todo mi ser.
 
@@ -291,34 +254,25 @@ R. Se conmueve todo mi ser.
 v. De noche llora copiosamente y las lágrimas corren por sus mejillas. Entre sus amigos, no hay quien la consuele.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Mis ojos están consumidos * Por las lágrimas. 
 R. Mis ojos están consumidos * Por las lágrimas. 
 V. Se conmueve todo mi ser. 
 R. Por las lágrimas. 
 &Gloria
-R. Mis ojos están consumidos * Por las lágrimas. 
-_
-V. Mi amado es para mí un manojo de mirra.
-R. Mientras descansa en mi pecho.
+R. Mis ojos están consumidos * Por las lágrimas.
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Mi amado * Es para mí un manojo de mirra. 
 R. Mi amado * Es para mí un manojo de mirra. 
 V. Mientras descansa en mi pecho. 
 R. Es para mí un manojo de mirra.
 &Gloria
-R. Mi amado * Es para mí un manojo de mirra. 
-_
+R. Mi amado * Es para mí un manojo de mirra.
+
+[Versum Nona]
 V. Mi alma se conmueve.
 R. Cuando habla mi amado.
-
-[Versum 3]
-@:Versum 1
 
 [Ant 3]
 El dolor me ha oprimido, * está mi rostro hinchado por el llanto y sobre mis párpados hay un velo sombrío.

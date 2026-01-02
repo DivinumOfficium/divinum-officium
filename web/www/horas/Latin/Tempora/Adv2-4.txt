@@ -1,5 +1,10 @@
+[Officium]
+Feria V infra Hebdomadam II Adventus
+
 [Rank]
-Feria V infra Hebdomadam II Adventus;;Feria major;;2
+;;Feria major;;2.1
+(sed rubrica cisterciensis)
+;;Feria major;;1.15
 
 [Rule]
 Oratio Dominica
@@ -31,6 +36,9 @@ De Isaía Prophéta
 
 [Responsory3]
 @Tempora/Adv2-0:Responsory3
+
+[Ant Laudes] (rubrica cisterciensis)
+@Tempora/Adv2-0
 
 [Ant 2]
 Tu es qui ventúrus es, * Dómine, quem exspectámus, ut salvum fácias pópulum tuum.

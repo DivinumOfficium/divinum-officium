@@ -1,129 +1,90 @@
-[Name]
-Commune Virginum plurimorum
+@Commune/C6
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
+[Officium]
+Commune Virginum tantum
 
-[Ant Vespera]
-@Commune/C6:Ant Vespera
-
-[Capitulum Vespera]
-@Commune/C6:Capitulum Vespera
-
-[Hymnus Vespera]
-@Commune/C6:Hymnus Vespera
-
-[Versum 1]
-V. Adducéntur Regi vírgines post eam:
-R. Próximæ ejus afferéntur tibi.
-
-[Ant 1]
-Prudéntes vírgines, * aptáte vestras lámpades: ecce sponsus venit, exíte óbviam ei.
-
-[Invit]
-@Commune/C6:Invit
-
-[Hymnus Matutinum]
-@Commune/C6:Hymnus Matutinum
-
-[Ant Matutinum]
-@Commune/C6:Ant Matutinum
-
-[Lectio1]
-@Commune/C6:Lectio1
-
-[Responsory10]
-@Commune/C6:Responsory10
-
-[Responsory1]
-@Commune/C6:Responsory1
-
-[Lectio2]
-@Commune/C6:Lectio2
-
-[Responsory2]
-@Commune/C6:Responsory2
-
-[Lectio3]
-@Commune/C6:Lectio3
-
-[Responsory3]
-@Commune/C6:Responsory3
-
-[Lectio4]
-@Commune/C6:Lectio4
-
-[Responsory4]
-@Commune/C6:Responsory4
-
-[Lectio5]
-@Commune/C6:Lectio5
-
-[Responsory5]
-@Commune/C6:Responsory5
-
-[Lectio6]
-@Commune/C6:Lectio6
-
-[Responsory6]
-@Commune/C6:Responsory6
-
-[Lectio7]
-@Commune/C6:Lectio7
-
-[Responsory7]
-@Commune/C6:Responsory7
-
-[Lectio8]
-@Commune/C6:Lectio8
-
-[Responsory8]
-@Commune/C6:Responsory8
-
-[Lectio9]
-@Commune/C6:Lectio9
-
-[Ant Laudes]
-@Commune/C6:Ant Laudes
-
-[Capitulum Laudes]
-@Commune/C6:Capitulum Vespera
-
-[Hymnus Laudes]
-@Commune/C6:Hymnus Vespera
-
-[Ant 2]
-@:Ant 1
-
-[Versum 2]
-@:Versum 1
+[Missa]
+Dilexisti
 
 [Oratio]
-Da nobis, quǽsumus, Dómine Deus noster, sanctárum Vírginum et Mártyrum tuárum N. et N. palmas incessábili devotióne venerári: ut quas digna mente non póssumus celebráre, humílibus saltem frequentémus obséquiis.
-$Per Dominum
+@Commune/C7a:: s/N\./N. Vírginis tuæ/
+
+[Hymnus Matutinum Virgo tantum]
+{:H-Virginisproles:}v. Vírginis Proles, Opiféxque Matris,
+Virgo quem gessit, peperítque Virgo:
+Vírginis festum cánimus beátæ,
+Accipe votum.
+
+[Hymnus Matutinum]
+@:Hymnus Matutinum Virgo tantum
+_
+@Commune/C6::16-25
+
+[HymnusM Matutinum] (nisi rubrica cisterciensis)
+@Commune/C6::1-4
+@Commune/C6::15-25
+
+[Responsory1]
+R. Veni, elécta mea, et ponam in te thronum meum
+* Quia concupívit Rex spéciem tuam.
+V. Spécie tua et pulchritúdine tua inténde, próspere procéde, et regna.
+R. Quia concupívit Rex spéciem tuam.
 
 [Lectio Prima]
-!Sir 51:13-14
-v. Dómine, Deus meus, exaltásti super terram habitatiónem meam, et pro morte defluénte deprecáta sum. Invocávi Dóminum, Patrem Dómini mei, ut non derelínquat me in die tribulatiónis meæ, et in témpore superbórum sine adjutório.
-
-[Capitulum Tertia]
-@Commune/C6:Capitulum Vespera
-
-[Responsory Tertia]
-@Commune/C6:Responsory Tertia
-
-[Capitulum Sexta]
-@Commune/C6:Capitulum Sexta
-
-[Responsory Sexta]
-@Commune/C6:Responsory Sexta
-
-[Capitulum Nona1]
-@Commune/C6:Capitulum Nona
+!Sap 4:1
+v. O quam pulchra est casta generátio cum claritáte! Immortális est enim memória illíus, quóniam apud Deum nota est, et apud hómines.
 
 [Capitulum Nona]
-@Commune/C6:Capitulum Nona
+@:Lectio Prima
+$Deo gratias
 
-[Responsory Nona]
-@Commune/C6:Responsory Nona
+[Introitus]
+!Ps 44:8
+v. Dilexísti justítiam, et odísti iniquitátem: proptérea unxit te Deus, Deus tuus, óleo lætítiæ præ consórtibus tuis. (Allelúja, allelúja.)
+!Ps 44:2
+Eructávit cor meum verbum bonum: dico ego ópera mea Regi.
+&Gloria
+v. Dilexísti justítiam, et odísti iniquitátem: proptérea unxit te Deus, Deus tuus, óleo lætítiæ præ consórtibus tuis. (Allelúja, allelúja.)
+
+[Lectio]
+Léctio Epístolæ beáti Pauli Apóstoli ad Corínthios
+!2 Cor 10:17-18; 11:1-2
+Fratres: Qui gloriátur, in Dómino gloriétur. Non enim, qui seípsum comméndat, ille probátus est; sed quem Deus comméndat. Utinam sustinerétis módicum quid insipiéntiæ meæ, sed et supportáte me: æmulor enim vos Dei æmulatióne. Despóndi enim vos uni viro vírginem castam exhibére Christo.
+
+[Graduale]
+!Ps 44:5
+Spécie tua et pulchritúdine tua inténde, próspere procéde et regna.
+V. Propter veritátem et mansuetúdinem et justítiam: et dedúcet te mirabíliter déxtera tua. 
+Allelúja, allelúja.
+!Ps 44:15-16
+Adducéntur Regi Vírgines post eam: próximæ ejus afferéntur tibi in lætítia. Allelúja.
+
+[Tractus]
+!Ps 44:5
+Spécie tua et pulchritúdine tua inténde, próspere procéde et regna.
+V. Propter veritátem et mansuetúdinem et justítiam: et dedúcet te mirabíliter déxtera tua.
+_
+!Tractus
+!Ps 44:11-12
+Audi, fília, et vide, et inclína aurem tuam: quia concupívit Rex spéciem tuam.
+!Ps 44:13; 44:10
+Vultum tuum deprecabúntur omnes dívites plebis: fíliæ regum in honóre tuo.
+!Ps 44:15-16
+Adducéntur Regi Vírgines post eam: próximæ ejus afferéntur tibi. 
+V. Afferéntur in lætítia et exsultatióne: adducéntur in templum Regis.
+
+[Offertorium]
+!Ps 44:10
+Fíliæ regum in honóre tuo, ástitit regína a dextris tuis in vestítu deauráto, circúmdata varietáte. (Allelúja.)
+
+[Secreta]
+Accépta tibi sit, Dómine, sacrátæ plebis oblátio pro tuórum honóre Sanctórum: quorum se méritis de tribulatióne percepísse cognóscit auxílium.
+$Per Dominum
+
+[Communio]
+!Matt 25:4-6
+Quinque prudéntes vírgines accepérunt óleum in vasis suis cum lampádibus: média autem nocte clamor factus est: Ecce, sponsus venit: exíte óbviam Christo Dómino. (Allelúja.)
+
+[Postcommunio]
+Satiásti, Dómine, famíliam tuam munéribus sacris: ejus, quǽsumus, semper interventióne nos réfove, cujus sollémnia celebrámus.
+$Per Dominum

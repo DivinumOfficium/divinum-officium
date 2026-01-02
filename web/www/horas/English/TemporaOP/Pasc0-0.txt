@@ -1,0 +1,14 @@
+[Lectio1]
+@Tempora/Pasc0-0::s/ Those.*//
+
+[Responsory1]
+@Tempora/Pasc0-0::1-2 s/\n\*// s/: He/.\n* He/
+@Tempora/Pasc1-0:Responsory2:1 s/^R/V/ s/ (?=He)/\nR. /
+
+[Lectio2]
+@Tempora/Pasc0-0:Lectio1:s/.*Those/Those/s s/$/~/
+@Tempora/Pasc0-0::s/(?<=solemnity).*/./
+
+[Lectio3]
+@Tempora/Pasc0-0:Lectio2:s/.*solemnity, (.)/\u$1/ s/$/~/
+@Tempora/Pasc0-0::s/ But.*//

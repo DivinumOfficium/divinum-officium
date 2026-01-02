@@ -1,18 +1,25 @@
-[Rank]
-S. Joannis Chrysostomi Episcopi Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+[Officium]
+S. Joannis Chrysostomi Episcopi Confessoris et Ecclesiæ Doctoris
 
-[Name]
-Joánnes Chrysóstome
+[Rank]
+;;Duplex;;3;;vide C4a
+(sed rubrica cisterciensis)
+;;Simplex;;1.2;;vide C4a
 
 [Rule]
 vide C4a;mtv
 9 lectiones
 
+[Name]
+Joánnes Chrysóstome
+
 [Oratio]
-Ecclésiam tuam, quǽsumus, Dómine, grátia cæléstis amplíficet: quam beáti~
-Joánnis Chrysóstomi Confessóris tui atque Pontíficis illustráre voluísti~
-gloriósis méritis et doctrínis.
+Ecclésiam tuam, quǽsumus, Dómine, grátia cæléstis amplíficet: quam beáti Joánnis Chrysóstomi Confessóris tui atque Pontíficis illustráre voluísti gloriósis méritis et doctrínis.
 $Per Dominum
+
+[Commemoratio] (rubrica cisterciensis)
+!Commemoratio S. Juliani, Episcopi et Confessoris
+@CommuneCist/C4cc:Oratio:s/N\./Juliani/
 
 [Lectio4]
 Joánnes Antiochénus, propter áureum eloquéntiæ flumen cognoménto Chrysóstomus, a forensibus et sæcularibus stúdiis ad divinas litteras summa cum ingenii et industriæ laude se cóntulit. Itaque sacris initiátus ac presbyter Antiochenæ ecclésiæ factus, mortuo Nectario, Arcadii imperatóris opera, invitus Constantinopolitanæ ecclésiæ præfícitur. Quo suscepto pastorali munere, depravatos mores, et nobiliórum hóminum vivéndi licéntiam vehementius objurgare cœpit: qua ex libertáte magnam multórum subiit invidiam. Apud Eudoxiam etiam, quod eam propter Callítropæ víduæ pecúniam, et alterius víduæ agrum reprehendísset, gráviter offendit.
@@ -26,3 +33,12 @@ Verum dum, concílio Romæ hábito, decreto Innocentii primi Pontificis restitú
 [Lectio94]
 Joánnes Antiochénus, propter áureum eloquéntiæ flumen cognoménto Chrysóstomus, présbyter Antiochénæ ecclésiæ factus, mórtuo Nectário, Arcádii imperatóris ópera, invítus Constantinopolitánæ ecclésiæ præfícitur. Quo in múnere, cum depravátos mores et nobílium hóminum vivéndi licéntiam veheméntius objurgáret, magnam multórum súbiit invídiam. Apud Eudóxiam étiam, quod eam propter Callítropæ víduæ pecúniam, et altérius víduæ agrum reprehendísset, gráviter offéndit. Quare exsuláre cógitur, víduis et egéntibus ómnibus commúnis paréntis ejectiónem lugéntibus. Incredíbile dictu est, quanta mala in exsílio perpéssus sit, et quam multos ad Jesu Christi fidem convérterit. Multitúdinem, pietátem ac splendórem conciónum ceterorúmque ejus scriptórum, omnes admirántur. Animam Deo réddidit décimo octávo kaléndas octóbris, ejúsque corpus in basílica Vaticána cónditum est. Hunc præclárum totíus Ecclésiæ Doctórem Pius Papa décimus cæléstem prædicatórum patrónum constítuit.
 &teDeum
+
+[Lectio7]
+@Commune/C4a:Lectio7 in 3 loco
+
+[Lectio8]
+@Commune/C4a:Lectio8 in 3 loco
+
+[Lectio9]
+@Commune/C4a:Lectio9 in 3 loco

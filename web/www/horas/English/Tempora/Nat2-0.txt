@@ -1,12 +1,5 @@
-[Rank]
-Sanctissimi Nominis Jesu;;Duplex class;;5;;
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=115
-Doxology=Nat
+[Officium]
+Sanctissimi Nominis Jesu
 
 [Ant Vespera]
 Whosoever shall call * on the name of the Lord shall be saved.
@@ -14,11 +7,6 @@ Holy and terrible * is His Name; the fear of the Lord is the beginning of wisdom
 Yet will I rejoice * in the Lord I will joy in the God of my salvation.
 From the rising of the sun * unto the going down of the same the Lord's Name is to be praised.
 I will offer * the sacrifice of thanksgiving, and will call upon the Name of the Lord.
-
-[Capitulum Vespera]
-!Phil 2:8-10
-v. He humbled himself, becoming obedient unto death, even to the death of the cross. For which cause God also hath exalted him, and hath given him a name which is above all names: That in the name of Jesus every knee should bow, of those that are in heaven, on earth, and under the earth.
-$Deo gratias
 
 [Hymnus Vespera]
 v. Jesu, the very thought of thee
@@ -92,18 +80,20 @@ Amen.
 O Lord our Lord, * how admirable is thy name in the whole earth!;;8
 At the Name of Jesus, * let every knee bow, of things in heaven, and things in earth, and things under the earth.;;18
 Praise the Lord, * and call upon His Name; remember that His Name is exalted.;;23
-V. For thy Name's sake, O Lord, pardon mine iniquity.
-R. For it is great.
 They shall be mindful * of thy Name, O Lord, unto all generations.;;44
 O magnify * the Lord with me, and let us exalt His Name together.;;45
 All nations * whom Thou hast made, shall come and worship before thee, O Lord, and shall glorify thy Name.;;86
-V. For the glory of thy Name, deliver us, O Lord.
-R. And forgive our sins, for thy Name's sake.
 Sing unto the Lord, * and bless His Name show forth His salvation from day to day.;;95
 According to thy Name, O God, * so is thy praise unto the ends of the earth; thy right hand is full of righteousness.;;96
 Sing unto God, * sing praises to His Name; spread a path before Him That rideth upon the heavens the Lord is His Name.;;97
-V. Give unto the Lord glory and honour.
-R. Give unto the Lord the glory due unto His Name.
+
+[Nocturn 1 Versum]
+V. For thy Name's sake, O Lord, pardon mine iniquity.
+R. For it is great.
+
+[Nocturn 2 Versum]
+V. For the glory of thy Name, deliver us, O Lord.
+R. And forgive our sins, for thy Name's sake.
 
 [Lectio1]
 Lesson from the Acts of the Apostles
@@ -162,7 +152,7 @@ R. Yea, I will praise it with thanksgiving.
 [Lectio4]
 From the Sermons of St. Bernard, Abbot (of Clairvaux) 
 !1st on the Song of Songs
-It is not idly that the Holy Ghost likeneth the Name of the Bridegroom to oil, when He maketh the Bride say to the Bridegroom: thy Name is as oil poured forth. Oil indeed giveth light, meat, and unction. It feedeth fire, it nourisheth the flesh, it sootheth pain; it is light, food, and healing. Behold, Thus also is the Name of the Bridegroom. To preach it, is to give light; to think of it, is to feed the soul; to call on it, is to win grace and unction. Let us take it point by point. What, thinkest thou, hath made the light of faith so suddenly and so brightly to shine in the whole world but the preaching of the Name of Jesus? Is it not in the light of this Name that God hath called us into His marvellous light, even that light wherewith we being enlightened, and in His light seeing light, Paul saith truly of us: Ye were sometimes darkness, but now are ye light in the Lord. 
+It is not idly that the Holy Ghost likeneth the Name of the Bridegroom to oil, when He maketh the Bride say to the Bridegroom: thy Name is as oil poured forth. Oil indeed giveth light, meat, and unction. It feedeth fire, it nourisheth the flesh, it sootheth pain; it is light, food, and healing. Behold, Thus also is the Name of the Bridegroom. To preach it, is to give light; to think of it, is to feed the soul; to call on it, is to win grace and unction. Let us take it point by point. What, thinkest thou, hath made the light of faith so suddenly and so brightly to shine in the whole world but the preaching of the Name of Jesus? Is it not in the light of this Name that God hath called us into His marvellous light, even that light wherewith we being enlightened, and in His light seeing light, Paul saith truly of us: Ye were sometimes darkness, but now are ye light in the Lord.
 
 [Responsory4]
 R. Let them that know thy Name put their trust in thee
@@ -228,6 +218,11 @@ My soul thirsteth * for thy Holy Name, O Lord.
 Blessed * is the Holy Name of thy glory, and worthy to be praised, and exalted above all for ever.
 Young men and maidens, * old men and children, praise the Name of the Lord, for His Name alone is exalted.
 
+[Capitulum Laudes]
+!Phil 2:8-10
+v. He humbled himself, becoming obedient unto death, even to the death of the cross. For which cause God also hath exalted him, and hath given him a name which is above all names: That in the name of Jesus every knee should bow, of those that are in heaven, on earth, and under the earth.
+$Deo gratias
+
 [Hymnus Laudes]
 v. O Jesu, Thou the Beauty art
 Of Angel worlds above;
@@ -255,10 +250,6 @@ Be praise, beatitude, and power,
 Through all eternity.
 Amen.
 
-[Versum 2]
-V. Our help is in the Name of the Lord.
-R. Who made heaven and earth.
-
 [Ant 2]
 He gave Himself * to deliver His people, and to get Himself an everlasting Name. Alleluia.
 
@@ -266,14 +257,15 @@ He gave Himself * to deliver His people, and to get Himself an everlasting Name.
 !Col 3:17
 v. All whatsoever you do in word or in work, do all in the name of the Lord Jesus Christ, giving thanks to God and the Father by him.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Blessed be the Name of the Lord, * Alleluia, alleluia.
 R. Blessed be the Name of the Lord, * Alleluia, alleluia.
 V. From this time forth, and for evermore.
 R. Alleluia, alleluia.
 &Gloria
 R. Blessed be the Name of the Lord, * Alleluia, alleluia.
-_
+
+[Versum Tertia]
 V. Give unto the Lord glory and honour, alleluia.
 R. Give unto the Lord the glory due unto His Name, alleluia.
 
@@ -282,25 +274,27 @@ R. Give unto the Lord the glory due unto His Name, alleluia.
 v. That in the name of Jesus every knee should bow, of those that are in heaven, on earth, and under the earth: And that every tongue should confess that the Lord Jesus Christ is in the glory of God the Father.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Give unto the Lord glory and honour, * Alleluia, alleluia.
 R. Give unto the Lord glory and honour, * Alleluia, alleluia.
 V. Give unto the Lord the glory due unto His Name.
 R. Alleluia, alleluia.
 &Gloria
 R. Give unto the Lord glory and honour, * Alleluia, alleluia.
-_
+
+[Versum Sexta]
 V. O magnify the Lord with me, alleluia.
 R. And let us exalt His Name together, alleluia.
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. O magnify the Lord with me, * Alleluia, alleluia.
 R. O magnify the Lord with me, * Alleluia, alleluia.
 V. And let us exalt His Name together.
 R. Alleluia, alleluia.
 &Gloria
 R. O magnify the Lord with me, * Alleluia, alleluia.
-_
+
+[Versum Nona]
 V. Our help is in the Name of the Lord, alleluia.
 R. Who made heaven and earth, alleluia.
 

@@ -1,15 +1,8 @@
 [Rank]
 Maternitatis Beatae Mariae Virginis;;Duplex 2 classis;;5.1;;ex C11
 
-[Rank1960]
+[Rank] (rubrica 1960)
 Maternitatis Beatae Mariae Virginis;;Duplex 2 classis;;5;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
 
 [Ant Vespera]
 Beata sei, o Vergine Maria, che hai portato il Creatore di tutti.;;109
@@ -17,11 +10,6 @@ Hai messo al mondo chi ti ha creata, e rimani Vergine in eterno.;;112
 Sebbene piccola, sono piaciuta all'Altissimo e dal mio seno ho messo al mondo l'uomo-Dio.;;121
 Tu sei la figlia benedetta dal Signore, perché per te noi partecipiamo al frutto della vita.;;126
 La videro le figlie di Sion e la proclamarono beata, e le regine l'hanno lodata.;;147
-
-[Capitulum Vespera]
-!Sir 24:12-13
-v. Colui che mi ha creato, riposò nel mio tabernacolo, e mi disse: Abita in Giacobbe e metti le tue radici fra i miei eletti.
-$Deo gratias
 
 [Versum 1]
 V. Tu sei benedetta fra le donne.
@@ -65,7 +53,7 @@ sia lode per ogni secolo.
 Amen.
 
 [Lectio1]
-Dal libro dell' Ecclesiastico 
+Dal libro dell'Ecclesiastico 
 !Sir 24:5-11
 5 Io sono uscita dalla bocca dell'Altissimo, primogenita di tutta la creazione. 
 6 Io ho fatto sorgere nel cielo una luce indefettibile e come vapore ho coperto tutta la terra. 
@@ -217,15 +205,6 @@ R. La Vergine ha dato alla luce il Salvatore; noi ti lodiamo, o Dio nostro.
 
 [Ant 2]
 Santa Maria, * soccorri i miseri, aiuta i pusillanimi, consola gli afflitti, prega per il popolo, intercedi per il ceto femminile religioso: sentano il tuo aiuto tutti coloro che celebrano la tua ammirabile Maternità.
-
-[Capitulum Tertia]
-!Sir 24:12-13
-v. Colui che mi ha creato, riposò nel mio tabernacolo, e mi disse: Abita in Giacobbe e metti le tue radici fra i miei eletti.
-$Deo gratias
-
-[Versum 3]
-V. Tu sei benedetta fra le donne.
-R. E benedetto è il frutto del tuo seno.
 
 [Ant 3]
 La tua Maternità, o Vergine Madre di Dio, annunziò la gioia al mondo intero, perché da te è sorto il sole di giustizia, Cristo, Dio nostro.

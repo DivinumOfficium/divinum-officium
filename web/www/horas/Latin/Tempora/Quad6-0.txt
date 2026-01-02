@@ -1,15 +1,27 @@
+[Officium]
+Dominica in Palmis
+
 [Rank]
-Dominica in Palmis;;I classis Semiduplex;;6
+;;I classis Semiduplex;;6.91
 
 [Rule]
 9 lectiones
-Symbolum Athanasium(rubrica 1570 aut rubrica 1910)
+Symbolum Athanasium(rubrica tridentina)
+
+[Responsory Vespera 1] (rubrica cisterciensis)
+Responsorium. Circumdedérunt me viri mendáces, sine causa flagéllis cecidérunt me: * Sed tu, Dómine, defénsor víndica me. 
+V. Quóniam tribulátio próxima est, et non est qui ádjuvet. 
+R. Sed tu, Dómine, defénsor víndica me.
 
 [Ant 1]
 Pater juste, * mundus te non cognóvit: ego autem novi te, quia tu me misísti.
 
+[Ant 1] (rubrica cisterciensis aut rubrica praedicatorum)
+Clarífica me, Pater, * apud temetípsum claritáte, quam hábui, priúsquam mundus fíeret.
+
 [Oratio]
-@Tempora/Quad5-6:Oratio 3
+Omnípotens sempitérne Deus, qui humáno géneri, ad imitándum humilitátis exémplum, Salvatórem nostrum carnem súmere, et crucem subíre fecísti: concéde propítius; ut et patiéntiæ ipsíus habére documénta, et resurrectiónis consórtia mereámur.
+$Per eumdem
 
 [Lectio1]
 De Jeremía Prophéta
@@ -68,7 +80,7 @@ V. Factus sum in derísum omni pópulo meo, cánticum eórum tota die.
 R. Vide, Dómine, iniquitátes illórum: et júdica causam ánimæ meæ, defénsor vitæ meæ.
 
 [Lectio5]
-Dicénte enim prophéta: Quǽrite Dóminum, et confirmámini, quǽrite fáciem ejus semper: némini præsuméndum est, quod totum quod quærit, invenérit, ne désinat propinquáre, qui cessárit accédere. Quid autem inter ómnia ópera Dei, in quibus humánæ admiratiónis fatigátur inténtio, ita contemplatiónem mentis nostræ et obléctat et súperat, sicut pássio Salvatóris? Qui ut humánum genus vínculis mortíferæ prævaricatiónis absólveret, et sæviénti diábolo poténtiam suæ majestátis occúluit, et infirmitátem nostræ humilitátis objécit. Si enim crudélis et supérbus inimícus consílium misericórdiæ Dei nosse potuísset, Judæórum ánimos mansuetúdine pótius temperáre, quam injústis ódiis studuísset accéndere: ne ómnium captivórum amítteret servitútem, dum nihil sibi debéntis perséquitur libertátem.
+Dicénte enim prophéta: Quǽrite Dóminum, et confirmámini, quǽrite fáciem ejus semper: némini præsuméndum est, quod totum quod quærit, invénerit, ne désinat propinquáre, qui cessárit accédere. Quid autem inter ómnia ópera Dei, in quibus humánæ admiratiónis fatigátur inténtio, ita contemplatiónem mentis nostræ et obléctat et súperat, sicut pássio Salvatóris? Qui ut humánum genus vínculis mortíferæ prævaricatiónis absólveret, et sæviénti diábolo poténtiam suæ majestátis occúluit, et infirmitátem nostræ humilitátis objécit. Si enim crudélis et supérbus inimícus consílium misericórdiæ Dei nosse potuísset, Judæórum ánimos mansuetúdine pótius temperáre, quam injústis ódiis studuísset accéndere: ne ómnium captivórum amítteret servitútem, dum nihil sibi debéntis perséquitur libertátem.
 
 [Responsory5]
 R. Salvum me fac, Deus, quóniam intravérunt aquæ usque ad ánimam meam: ne avértas fáciem tuam a me:
@@ -130,7 +142,9 @@ Cum Angelis * et púeris fidéles inveniámur, triumphatóri mortis clamántes: 
 Confundántur * qui me persequúntur, et non confúndar ego, Dómine, Deus meus.
 
 [Capitulum Laudes]
-@Tempora/Quad5-6:Capitulum Vespera
+!Phil 2:5-7
+v. Fratres: Hoc enim sentíte in vobis, quod et in Christo Jesu: qui, cum in forma Dei esset, non rapínam arbitrátus est esse se æquálem Deo: sed semetípsum exinanívit, formam servi accípiens, in similitúdinem hóminum factus, et hábitu invéntus ut homo.
+$Deo gratias
 
 [Ant 2]
 Turba multa, * quæ convénerat ad diem festum, clamábat Dómino: Benedíctus qui venit in nómine Dómini: Hosánna in excélsis.
@@ -141,11 +155,11 @@ Púeri Hebræórum * tolléntes ramos olivárum, obviavérunt Dómino clamántes
 [Ant Tertia]
 Púeri Hebræórum * vestiménta prosternébant in via, et clamábant, dicéntes: Hosánna Fílio David: benedíctus qui venit in nómine Dómini.
 
-[Capitulum Tertia]
-@:Capitulum Laudes
-
 [Ant Sexta]
 Tibi revelávi * causam meam, defénsor vitæ meæ, Dómine, Deus meus.
+
+[Ant Sexta] (rubrica cisterciensis)
+Invocábo * nomen tuum, Dómine: ne avértas fáciem tuam a clamóre meo.
 
 [Capitulum Sexta]
 !Phil 2:8-9
@@ -155,13 +169,16 @@ $Deo gratias
 [Ant Nona]
 Invocábo * nomen tuum, Dómine: ne avértas fáciem tuam a clamóre meo.
 
+[Ant Nona] (rubrica cisterciensis)
+Tibi revelávi * causam meam, defénsor vitæ meæ, Dómine, Deus meus.
+
 [Capitulum Nona]
 !Phil 2:10-11
 v. In nómine Jesu omne genu flectátur cæléstium, terréstrium, et infernórum: et omnis lingua confiteátur, quia Dóminus Jesus Christus in glória est Dei Patris.
 $Deo gratias
 
-[Capitulum Vespera]
-@:Capitulum Laudes
-
 [Ant 3]
 Scriptum est enim: * Percútiam pastórem, et dispergéntur oves gregis: postquam autem resurréxero, præcédam vos in Galilǽam: ibi me vidébitis, dicit Dóminus.
+
+[Ant 3] (rubrica cisterciensis aut rubrica praedicatorum)
+Cœpérunt * omnes turbæ descendéntium gaudéntes laudáre Deum voce magna super ómnibus quas víderant virtútibus, dicéntes: Benedíctus qui venit Rex in nómine Dómini, pax in cœlo et glória in excélsis.

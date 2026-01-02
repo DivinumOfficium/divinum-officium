@@ -1,7 +1,7 @@
 [Rank]
 In Nativitate Domini;;Duplex I Classis;;6.9
 
-[Rank1960]
+[Rank] (rubrica 1960)
 In Nativitate Domini;;Duplex I Classis;;7
 
 [Rule]
@@ -9,7 +9,7 @@ In Nativitate Domini;;Duplex I Classis;;7
 Psalmi Dominica
 Antiphonas Horas
 Doxology=Nat
-Special Evangelii Benedictio
+No commemoratio
 
 [Ant Vespera]
 Rex pacíficus * magnificátus est, cujus vultum desíderat univérsa terra.;;109
@@ -18,47 +18,10 @@ Compléti sunt * dies Maríæ, ut páreret Fílium suum primogénitum.;;111
 Scitóte * quia prope est regnum Dei: amen dico vobis, quia non tardábit.;;112
 Leváte cápita vestra: * ecce appropínquat redémptio vestra.;;116
 
-[Capitulum Vespera]
+[Capitulum Vespera 1]
 !Titus 3:4-5
 v. Appáruit benígnitas, et humánitas Salvatóris nostri Dei: non ex opéribus justítiæ, quæ fécimus nos, sed secúndum suam misericórdiam salvos nos fecit.
 $Deo gratias
-
-[HymnusM Vespera]
-v. Christe Redémptor ómnium,
-Ex Patre Patris únice,
-Solus ante princípium
-Natus ineffabíliter.
-_
-Tu lumen, tu splendor Patris,
-Tu spes perénnis ómnium:
-Inténde quas fundunt preces
-Tui per orbem fámuli.
-_
-Meménto salútis Auctor,
-Quod nostri quondam córporis,
-Ex illibáta Vírgine
-Nascéndo, formam súmpseris.
-_
-Sic præsens testátur dies,
-Currens per anno círculum,
-Quod solus a sede Patris
-Mundi salus advéneris.
-_
-Hunc cælum, terra, hunc mare,
-Hunc omne quod in eis est,
-Auctórem advéntus tui,
-Laudans exsúltat cántico.
-_
-Nos quoque, qui sancto tuo
-Redémpti sánguine sumus,
-Ob diem natális tui,
-Hymnum novum concínimus.
-_
-Glória tibi Dómine,
-Qui natus es de Vírgine,
-Cum Patr[e] et Sancto Spíritu,
-In sempitérna sǽcula.
-Amen.
 
 [Hymnus Vespera]
 {:H-Jesuredemptoromnium:}v. Jesu, Redémptor ómnium,
@@ -91,15 +54,61 @@ Rigávit unda sánguinis,
 Natális ob diem tui
 Hymni tribútum sólvimus.
 _
-Jesu, tibi sit gloria,
+Jesu, tibi sit glória,
 Qui natus es de Vírgine, 
 Cum Patre et almo Spíritu, 
 In sempitérna sǽcula.
 Amen.
 
-[Versum 1]
+[HymnusM Vespera]
+v. Christe Redémptor ómnium,
+Ex Patre Patris únice,
+Solus ante princípium
+Natus ineffabíliter.
+_
+Tu lumen, tu splendor Patris,
+Tu spes perénnis ómnium:
+Inténde quas fundunt preces
+Tui per orbem fámuli.
+_
+Meménto salútis Auctor,
+Quod nostri quondam córporis,
+Ex illibáta Vírgine
+Nascéndo, formam súmpseris.
+_
+Sic præsens testátur dies,
+Currens per anni círculum,
+Quod solus a sede Patris
+Mundi salus advéneris.
+_
+Hunc cælum, terra, hunc mare,
+Hunc omne quod in eis est,
+Auctórem advéntus tui,
+Laudans exsúltat cántico.
+_
+Nos quoque, qui sancto tuo
+Redémpti sánguine sumus,
+Ob diem natális tui,
+Hymnum novum concínimus.
+_
+Glória tibi Dómine,
+Qui natus es de Vírgine,
+Cum Patr[e] et Sancto Spíritu,
+In sempitérna sǽcula.
+Amen.
+
+[Versum 1_]
 V. Crástina die delébitur iníquitas terræ.
 R. Et regnábit super nos Salvátor mundi.
+
+[Versum 1C]
+V. Benedíctus qui venit in nómine Dómini.
+R. Deus Dóminus, et illúxit nobis.
+
+[Versum 1]
+@:Versum 1_
+(sed rubrica cisterciensis)
+@:Versum 1C
 
 [Ant 1]
 Cum ortus fúerit * sol de cælo, vidébitis Regem regum procedéntem a Patre, tamquam sponsum de thálamo suo.
@@ -107,6 +116,9 @@ Cum ortus fúerit * sol de cælo, vidébitis Regem regum procedéntem a Patre, t
 [Oratio]
 Concéde, quǽsumus, omnípotens Deus: ut nos Unigéniti tui nova per carnem Natívitas líberet; quos sub peccáti jugo vetústa sérvitus tenet.
 $Per eumdem
+
+[Octava 1]
+@:Octava 3
 
 [Invit]
 Christus natus est nobis: * Veníte, adorémus.
@@ -121,16 +133,23 @@ Christus natus est nobis: * Veníte, adorémus.
 Dóminus dixit * ad me: Fílius meus es tu, ego hódie génui te.;;2
 Tamquam sponsus * Dóminus procédens de thálamo suo.;;18
 Diffúsa est * grátia in lábiis tuis, proptérea benedíxit te Deus in ætérnum.;;44
-V. Tamquam sponsus.
-R. Dóminus procédens de thálamo suo.
 Suscépimus, * Deus, misericórdiam tuam in médio templi tui.;;47
 Oriétur * in diébus Dómini abundántia pacis, et dominábitur.;;71
 Véritas de terra * orta est, et justítia de cælo prospéxit.;;84
-V. Speciósus forma præ fíliis hóminum.
-R. Diffúsa est grátia in lábiis tuis.
 Ipse invocábit * me, allelúja: Pater meus es tu, allelúja.;;88
+(sed rubrica 1960 aut rubrica 1962) Ipse invocábit * me, allelúja: Pater meus es tu, allelúja.;;88(2-37)
 Læténtur cæli, * et exsúltet terra ante fáciem Dómini, quóniam venit.;;95
 Notum fecit * Dóminus, allelúja, salutáre suum, allelúja.;;97
+
+[Nocturn 1 Versum]
+V. Tamquam sponsus.
+R. Dóminus procédens de thálamo suo.
+
+[Nocturn 2 Versum]
+V. Speciósus forma præ fíliis hóminum.
+R. Diffúsa est grátia in lábiis tuis.
+
+[Nocturn 3 Versum]
 V. Ipse invocábit me, allelúja.
 R. Pater meus es tu, allelúja.
 
@@ -138,7 +157,7 @@ R. Pater meus es tu, allelúja.
 !Isa 9:1-6
 1 Primo témpore alleviáta est terra Zábulon, et terra Néphthali: et novíssimo aggraváta est via maris trans Jordánem Galilǽæ géntium. 
 2 Pópulus qui ambulábat in ténebris, vidit lucem magnam: habitántibus in regióne umbræ mortis, lux orta est eis. 
-3 Multiplicásti gentem, et non magnificásti lætítiam. Lætabúntur coram te, sicut qui lætántur in messe, sicut exsúltant victóres, capta præda, quando divídunt spólia. 
+3 Multiplicásti gentem, et non magnificásti lætítiam. Lætabúntur coram te, sicut qui lætántur in messe, sicut exsúltant victóres, capta præda, quando dívidunt spólia. 
 4 Jugum enim óneris ejus, et virgam húmeri ejus, et sceptrum exactóris ejus superásti sicut in die Mádian. 
 5 Quia omnis violénta prædátio cum tumúltu, et vestiméntum mistum sánguine, erit in combustiónem, et cibus ignis. 
 6 Párvulus enim natus est nobis, et fílius datus est nobis, et factus est principátus super húmerum ejus: et vocábitur nomen ejus, Admirábilis, Consiliárius, Deus, Fortis, Pater futúri sǽculi, Princeps pacis.
@@ -149,13 +168,13 @@ R. Hódie nobis cælórum Rex de Vírgine nasci dignátus est, ut hóminem pérd
 V. Glória in excélsis Deo, et in terra pax homínibus bonæ voluntátis.
 R. Gaudet exércitus Angelórum: quia salus ætérna humáno géneri appáruit.
 V. Glória Patri, et Fílio, et Spirítui Sancto.
-R. Hódie nobis cælórum Rex de Vírgine nasci dignátus est, ut hóminem pérditum ad cæléstia regna revocaret: * Gaudet exércitus Angelórum: quia salus ætérna humáno géneri appáruit.
+R. Hódie nobis cælórum Rex de Vírgine nasci dignátus est, ut hóminem pérditum ad cæléstia regna revocáret: * Gaudet exércitus Angelórum: quia salus ætérna humáno géneri appáruit.
 
 [Lectio2]
 !Isa 40:1-8
 1 Consolámini, consolámini, pópule meus, dicit Deus vester. 
 2 Loquímini ad cor Jerúsalem, et advocáte eam: quóniam compléta est malítia ejus, dimíssa est iníquitas illíus: suscépit de manu Dómini duplícia pro ómnibus peccátis suis. 
-3 Vox clamántis in desérto: Parate viam Dómini, rectas fácite in solitúdine sémitas Dei nostri. 
+3 Vox clamántis in desérto: Paráte viam Dómini, rectas fácite in solitúdine sémitas Dei nostri. 
 4 Omnis vallis exaltábitur, et omnis mons et collis humiliábitur: et erunt prava in dirécta, et áspera in vias planas. 
 5 Et revelábitur glória Dómini: et vidébit omnis caro páriter quod os Dómini locútum est. 
 6 Vox dicéntis: Clama. Et dixi: Quid clamábo? Omnis caro fœnum, et omnis glória ejus quasi flos agri. 
@@ -174,7 +193,7 @@ R. Hódie per totum mundum mellíflui facti sunt cæli.
 2 Excútere de púlvere, consúrge, sede, Jerúsalem: solve víncula colli tui, captíva fília Sion. 
 3 Quia hæc dicit Dóminus: Gratis venumdáti estis, et sine argénto redimémini. 
 4 Quia hæc dicit Dóminus Deus: In Ægýptum descéndit pópulus meus in princípio, ut colónus esset ibi: et Assur absque ulla causa calumniátus est eum.
-5 Et nunc quid mihi est hic, dicit Dóminus, quóniam ablátus est pópulus meus grátis? Dominatóres ejus iníque agunt, dicit Dóminus: et júgiter tota die nomen meum blasphemátur. 
+5 Et nunc quid mihi est hic, dicit Dóminus, quóniam ablátus est pópulus meus gratis? Dominatóres ejus iníque agunt, dicit Dóminus: et júgiter tota die nomen meum blasphemátur. 
 6 Propter hoc sciet pópulus meus nomen meum, in die illa: quia ego ipse qui loquébar, ecce adsum.
 
 [Responsory3]
@@ -188,7 +207,7 @@ R. Natum vídimus, et choros Angelórum collaudántes Dóminum.
 [Lectio4]
 Sermo sancti Leónis Papæ
 !Sermo 1 de Nativitate Domini
-Salvátor noster, dilectíssimi, hódie natus est: gaudeámus. Neque enim fas est locum esse tristítiæ, ubi natális est vitæ: quæ, consumpto mortalitátis timóre, nobis íngerit de promíssa æternitáte lætítiam. Nemo ab hujus alacritátis participatióne secérnitur. Una cunctis lætítiæ commúnis est rátio: quia Dóminus noster, peccáti mortísque destrúctor, sicut nullum a reátu líberum réperit, ita liberándis ómnibus venit. Exsúltet sanctus, quia appropínquat ad palmam: gáudeat peccátor, quia invitátur ad véniam: animétur gentílis, quia vocátur ad vitam. Dei namque Fílius secúndum plenitúdinem témporis, quam divíni consílii inscrutábilis altitúdo dispósuit, reconciliándam auctóri suo natúram géneris assúmpsit humáni, ut invéntor mortis diábolus, per ipsam, quam vícerat, vincerétur.
+Salvátor noster, dilectíssimi, hódie natus est: gaudeámus. Neque enim fas est locum esse tristítiæ, ubi natális est vitæ: quæ, consúmpto mortalitátis timóre, nobis íngerit de promíssa æternitáte lætítiam. Nemo ab hujus alacritátis participatióne secérnitur. Una cunctis lætítiæ commúnis est rátio: quia Dóminus noster, peccáti mortísque destrúctor, sicut nullum a reátu líberum réperit, ita liberándis ómnibus venit. Exsúltet sanctus, quia appropínquat ad palmam: gáudeat peccátor, quia invitátur ad véniam: animétur gentílis, quia vocátur ad vitam. Dei namque Fílius secúndum plenitúdinem témporis, quam divíni consílii inscrutábilis altitúdo dispósuit, reconciliándam auctóri suo natúram géneris assúmpsit humáni, ut invéntor mortis diábolus, per ipsam, quam vícerat, vincerétur.
 
 [Responsory4]
 R. O magnum mystérium, et admirábile sacraméntum, ut animália vidérent Dóminum natum, jacéntem in præsépio: 
@@ -200,9 +219,9 @@ R. Beáta Virgo, cujus víscera meruérunt portáre Dóminum Christum.
 In quo conflíctu pro nobis ínito, magno et mirábili æquitátis jure certátum est, dum omnípotens Dóminus cum sævíssimo hoste non in sua majestáte, sed in nostra congréditur humilitáte: obíciens ei eándem formam, eandémque natúram, mortalitátis quidem nostræ partícipem, sed peccáti totíus expértem. Aliénum quippe ab hac nativitáte est, quod de ómnibus légitur: Nemo mundus a sorde, nec infans, cujus est uníus diéi vita super terram. Nihil ergo in istam singulárem nativitátem de carnis concupiscéntia transívit, nihil de peccáti lege manávit. Virgo régia Davídicæ stirpis elígitur, quæ sacro gravidánda fœtu, divínam humanámque prolem prius concíperet mente, quam córpore. Et ne supérni ignára consílii ad inusitátos pavéret affátus, quod in ea operándum erat a Spíritu Sancto, collóquio discit angélico: nec damnum credit pudóris, Dei Génetrix mox futúra.
 
 [Responsory5]
-R. Beáta Dei Génetrix Maria, cujus víscera intácta pérmanent: 
+R. Beáta Dei Génetrix María, cujus víscera intácta pérmanent: 
 * Hódie génuit Salvatórem sǽculi.
-V. Beata, quæ credidit: quóniam perfécta sunt ómnia, quæ dicta sunt ei a Dómino.
+V. Beáta, quæ crédidit: quóniam perfécta sunt ómnia, quæ dicta sunt ei a Dómino.
 R. Hódie génuit Salvatórem sǽculi.
 
 [Lectio6]
@@ -216,13 +235,6 @@ R. Quia quem cæli cápere non póterant, tuo grémio contulísti.
 &Gloria
 R. Quia quem cæli cápere non póterant, tuo grémio contulísti.
 
-[Benedictio3]
-A vínculis peccatórum nostrórum absólvat nos omnípotens et miséricors Dóminus. Amen.
-Jube domne benedícere.
-Evangélica léctio sit nobis salus et protéctio. Amen.
-Per evangélica dicta deleántur nostra delícta. Amen.
-Verba sancti Evangélii dóceat nos Christus Fílius Dei. Amen.
-
 [Lectio7]
 Léctio sancti Evangélii secúndum Lucam
 !Luc 2:1-14
@@ -230,18 +242,18 @@ In illo témpore: Exiit edíctum a Cǽsare Augústo, ut describerétur univérsu
 _
 Homilía sancti Gregórii Papæ
 !Homilia 8 in Evangelia
-Quia, largiénte Dómino, Missárum solémnia ter hódie celebratúri sumus, loqui diu de evangélica lectióne non possumus: sed nos áliquid vel bréviter dícere, Redemptóris nostri Natívitas ipsa compéllit. Quid est enim, quod nascitúro Dómino mundus descríbitur, nisi hoc, quod apérte monstrátur, quia ille apparébat in carne, qui eléctos suos adscríberet in æternitáte? Quo contra de réprobis per prophétam dícitur: Deleántur de libro vivéntium, et cum justis non scribántur. Qui bene étiam in Béthlehem náscitur: Béthlehem quippe domus panis interpretátur. Ipse namque est, qui ait: Ego sum panis vivus, qui de cælo descéndi. Locus ergo, in quo Dóminus náscitur, domus panis ántea vocátus est; quia futúrum profécto erat, ut ille ibi per matériam carnis apparéret, qui electórum mentes intérna satietáte refíceret. Qui non in paréntum domo, sed in via náscitur: ut profécto osténderet, quia per humanitátem suam, quam assúmpserat, quasi in aliéno nascebátur.
+Quia, largiénte Dómino, Missárum solémnia ter hódie celebratúri sumus, loqui diu de evangélica lectióne non póssumus: sed nos áliquid vel bréviter dícere, Redemptóris nostri Natívitas ipsa compéllit. Quid est enim, quod nascitúro Dómino mundus descríbitur, nisi hoc, quod apérte monstrátur, quia ille apparébat in carne, qui eléctos suos adscríberet in æternitáte? Quo contra de réprobis per prophétam dícitur: Deleántur de libro vivéntium, et cum justis non scribántur. Qui bene étiam in Béthlehem náscitur: Béthlehem quippe domus panis interpretátur. Ipse namque est, qui ait: Ego sum panis vivus, qui de cælo descéndi. Locus ergo, in quo Dóminus náscitur, domus panis ántea vocátus est; quia futúrum profécto erat, ut ille ibi per matériam carnis apparéret, qui electórum mentes intérna satietáte refíceret. Qui non in paréntum domo, sed in via náscitur: ut profécto osténderet, quia per humanitátem suam, quam assúmpserat, quasi in aliéno nascebátur.
 
 [Responsory7]
 R. Beáta víscera Maríæ Vírginis, quæ portavérunt ætérni Patris Fílium: et beáta úbera, quæ lactavérunt Christum Dóminum: 
 * Qui hódie pro salúte mundi de Vírgine nasci dignátus est.
-V. Dies sanctificátus illuxit nobis: veníte, gentes, et adoráte Dóminum.
+V. Dies sanctificátus illúxit nobis: veníte, gentes, et adoráte Dóminum.
 R. Qui hódie pro salúte mundi de Vírgine nasci dignátus est.
 
 [Lectio8]
 Léctio sancti Evangélii secúndum Lucam
 !Luc 2:15-20
-In illo témpore: Pastóres loquebántur ad invicem: Transeámus usque Béthlehem, et videámus hoc verbum, quod factum est, quod Dóminus osténdit nobis. Et réliqua.
+In illo témpore: Pastóres loquebántur ad ínvicem: Transeámus usque Béthlehem, et videámus hoc verbum, quod factum est, quod Dóminus osténdit nobis. Et réliqua.
 _
 Homilía sancti Ambrósii Epíscopi
 !Lib. 2 in cap. 2. Lucæ, circa medium
@@ -261,24 +273,33 @@ Léctio sancti Evangélii secúndum Joánnem
 In princípio erat Verbum, et Verbum erat apud Deum, et Deus erat Verbum. Et réliqua.
 _
 Homilía sancti Augustíni Epíscopi
-!Tract. 1 in Joann., circa medium
+!Tract. 1 in Joann., circa médium
 Ne vile áliquid putáres quale consuevísti cogitáre, cum verba humána soléres audíre, audi quid cógites: Deus erat Verbum. Exeat nunc néscio quis infidélis Ariánus, et dicat quia Verbum Dei factum est. Quómodo potest fíeri, ut Verbum Dei factum sit, quando Deus per Verbum fecit ómnia? Si et Verbum Dei ipsum factum est: per quod áliud verbum factum est? Si hoc dicis, quia hoc est verbum Verbi, per quod factum est illud; ipsum dico ego únicum Fílium Dei. Si autem non dicis verbum Verbi, concéde non factum, per quod facta sunt ómnia. Non enim per seípsum fíeri pótuit, per quod facta sunt ómnia. Crede ergo Evangelístæ.
 &teDeum
 
-[Ant Laudes]
+[Ant Laudes_]
 Quem vidístis, * pastóres? dícite, annuntiáte nobis, in terris quis appáruit? Natum vídimus, et choros Angelórum collaudántes Dóminum, allelúja, allelúja.
 Génuit puérpera * Regem, cui nomen ætérnum, et gáudia matris habens cum virginitátis honóre: nec primam símilem visa est, nec habére sequéntem, allelúja.
 Angelus ad pastóres * ait: Annúntio vobis gáudium magnum: quia natus est vobis hódie Salvátor mundi, allelúja.
 Facta est cum Angelo * multitúdo cæléstis exércitus laudántium Deum, et dicéntium: Glória in excélsis Deo, et in terra pax homínibus bonæ voluntátis, allelúja.
 Párvulus fílius * hódie natus est nobis: et vocábitur Deus, Fortis, allelúja, allelúja.
 
+[Ant LaudesC]
+Génuit puérpera * Regem, cui nomen ætérnum, et gáudia matris habens cum virginitátis honóre: nec primam símilem visa est, nec habére sequéntem, allelúja.
+Lux orta est * super nos: quia hódie natus est Salvátor, allelúia.
+Virgo hódie fidélis, * etsi Verbum génuit incarnátum, Virgo mansit et post partum, quam laudántes omnes dícimus: Benedícta tu in muliéribus.
+Gaudeámus omnes fidéles, * Salvátor noster natus est in mundo: hódie procéssit proles magnífici gérminis, et persevérat pudor virginitátis.
+Hódie * intácta Virgo Deum nobis génuit téneris indútum membris, quem lactáre méruit: omnes ipsum adorémus, qui venit salváre nos.
+
+[Ant Laudes]
+@:Ant Laudes_
+(sed rubrica cisterciensis)
+@:Ant LaudesC
+
 [Capitulum Laudes]
 !Heb 1:1-2
 v. Multifáriam, multísque modis olim Deus loquens pátribus in prophétis: novíssime diébus istis locútus est nobis in Fílio, quem constítuit herédem universórum, per quem fecit et sǽcula.
 $Deo gratias
-
-[HymnusM Laudes]
-@:Hymnus Laudes:s/auctor/Auctor/ s/Concépit alvo/Verbo concépit/ s/Enítitur/Eníxa est/ s/ventre Matris/matris alvo/ s/Baptísta clausum/Clausus Joánnes/ s/Et lacte módico/Parvóque lacte/ s/Jesu, tibi sit glória/Glória tibi Dómine/ s/almo/Sancto/
 
 [Hymnus Laudes]
 {:H-Asolisortus:}v. A solis ortus cárdine
@@ -322,44 +343,83 @@ Cum Patre, et almo Spíritu,
 In sempitérna sǽcula.
 Amen.
 
+[HymnusM Laudes]
+@:Hymnus Laudes:s/auctor/Auctor/ s/Concépit alvo/Verbo concépit/ s/Enítitur/Eníxa est/ s/ventre Matris/matris alvo/ s/Baptísta clausum/Clausus Joánnes/ s/Et lacte módico/Parvóque lacte/ s/Jesu, tibi sit glória/Glória tibi Dómine/ s/almo/Sancto/
+
 [Versum 2]
 V. Notum fecit Dóminus, allelúja.
 R. Salutáre suum, allelúja.
 
+[Versum 2] (rubrica cisterciensis)
+V. Puer natus est nobis.
+R. Fílius datus est nobis.
+
 [Ant 2]
 Glória in excélsis Deo, * et in terra pax homínibus bonæ voluntátis, allelúja, allelúja.
+
+[Octava 2]
+!Commemoratio Octavæ Nativitatis
+Ant. Glória in excélsis Deo, et in terra pax homínibus bonæ voluntátis, allelúja, allelúja.
+_
+V. Notum fecit Dóminus, allelúja.
+R. Salutáre suum, allelúja.
+_
+$Oremus
+v. Concéde, quǽsumus, omnípotens Deus: ut nos Unigéniti tui nova per carnem Natívitas líberet; quos sub peccáti jugo vetústa sérvitus tenet.
+$Per eumdem
+
+[Octava 2] (rubrica cisterciensis)
+!Commemoratio Octavæ Nativitatis
+Ant. Verbum caro factum est, et habitávit in nobis: et vídimus glóriam ejus, glóriam quasi Unigéniti a Patre plenum grátiæ, et veritátis, allelúia, allelúia, allelúia.
+_
+V. Puer natus est nobis.
+R. Fílius datus est nobis.
+_
+$Oremus
+v. Concéde, quǽsumus, omnípotens Deus: ut nos Unigéniti tui nova per carnem Natívitas líberet; quos sub peccáti jugo vetústa sérvitus tenet.
+$Per eumdem
 
 [Lectio Prima]
 !Heb 1:11-12
 v. Ipsi períbunt, tu autem permanébis; et omnes sicut vestiméntum veteráscent: et velut amíctum mutábis eos, et mutabúntur: tu autem idem ipse es, et anni tui non defícient.
 
-[Capitulum Tertia]
-@:Capitulum Laudes
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Verbum caro factum est, * Allelúja, allelúja.
 R. Verbum caro factum est, * Allelúja, allelúja.
 V. Et habitávit in nobis.
 R. Allelúja, allelúja.
 &Gloria
 R. Verbum caro factum est, * Allelúja, allelúja.
-_
-V. Ipse invocábit me, allelúja.
-R. Pater meus es tu, allelúja.
+
+[Responsory Breve Tertia] (rubrica cisterciensis)
+R.br. Verbum caro factum est, * Et habitávit in nobis.
+R. Verbum caro factum est, * Et habitávit in nobis.
+V. Et vídimus glóriam ejus, glóriam quasi Unigéniti a Patre.
+R. Et habitávit in nobis.
+
+[Versum Tertia]
+@:Nocturn 3 Versum
 
 [Capitulum Sexta]
 !Heb 1:10
 v. Et: Tu in princípio, Dómine, terram fundásti: et ópera mánuum tuárum sunt cæli.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Notum fecit Dóminus, * Allelúja, allelúja.
 R. Notum fecit Dóminus, * Allelúja, allelúja.
 V. Salutáre suum.
 R. Allelúja, allelúja.
 &Gloria
 R. Notum fecit Dóminus, * Allelúja, allelúja.
-_
+
+[Responsory Breve Sexta] (rubrica cisterciensis)
+R.br. Benedíctus qui venit  * In nómine Dómini.
+R. Benedíctus qui venit  * In nómine Dómini.
+V. Deus Dóminus, et illúxit nobis.
+R. In nómine Dómini.
+
+[Versum Sexta]
 V. Vidérunt omnes fines terræ, allelúja.
 R. Salutáre Dei nostri, allelúja.
 
@@ -367,14 +427,15 @@ R. Salutáre Dei nostri, allelúja.
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Vidérunt omnes fines terræ, * Allelúja, allelúja.
 R. Vidérunt omnes fines terræ, * Allelúja, allelúja.
 V. Salutáre Dei nostri.
 R. Allelúja, allelúja.
 &Gloria
 R. Vidérunt omnes fines terræ, * Allelúja, allelúja.
-_
+
+[Versum Nona]
 V. Verbum caro factum est, allelúja.
 R. Et habitávit in nobis, allelúja.
 
@@ -405,16 +466,13 @@ $Oremus
 v. Concéde, quǽsumus, omnípotens Deus: ut nos Unigéniti tui nova per carnem Natívitas líberet; quos sub peccáti jugo vetústa sérvitus tenet.
 $Per eumdem
 
-[Octava 2]
+[Octava 3] (rubrica cisterciensis)
 !Commemoratio Octavæ Nativitatis
-Ant. Glória in excélsis Deo, et in terra pax homínibus bonæ voluntátis, allelúja, allelúja.
+Ant. Nésciens Mater Virgo virum, péperit sine dolóre Salvatórem sæculórum, ipsum Regem Angelórum sola Virgo lactábat úbere de cœlo pleno.
 _
-V. Notum fecit Dóminus, allelúja.
-R. Salutáre suum, allelúja.
+V. Puer natus est nobis.
+R. Fílius datus est nobis.
 _
 $Oremus
 v. Concéde, quǽsumus, omnípotens Deus: ut nos Unigéniti tui nova per carnem Natívitas líberet; quos sub peccáti jugo vetústa sérvitus tenet.
 $Per eumdem
-
-[Octava 1]
-@:Octava 3

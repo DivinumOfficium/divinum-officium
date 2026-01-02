@@ -1,0 +1,51 @@
+[Responsory Vespera]
+@TemporaM/Pasc7-1
+
+[Lectio1]
+@Tempora/Pasc7-2::s/ Non.*//s
+
+[Lectio2]
+@Tempora/Pasc7-2:Lectio1:s/.*(Non)/$1/s s/$/~/
+@Tempora/Pasc7-2::s/ Fuérunt.*//s
+
+[Lectio3]
+@Tempora/Pasc7-2:Lectio2:s/.*(Fuérunt)/$1/s s/$/~/
+@Tempora/Pasc7-2
+
+[Lectio3] (rubrica 196)
+@:Lectio11: s/$/~/
+@:Lectio12
+
+[Responsory3]
+@Tempora/Pasc7-3:Responsory1
+
+[Lectio4]
+!Joël 2:29-32
+29 Sed et super servos meos et ancíllas in diébus illis effúndam spíritum meum.
+30 Et dabo prodígia in cælo et in terra, sánguinem, et ignem, et vapórem fumi.
+31 Sol convertétur in ténebras, et luna in sánguinem, ántequam véniat dies Dómini magnus et horríbilis.
+32 Et erit: omnis qui invocáverit nomen Dómini, salvus erit: quia in monte Sion et in Jerúsalem erit salvátio, sicut dixit Dóminus, et in resíduis quos Dóminus vocáverit.
+
+[Lectio5]
+Sermo sancti Joánnis Chrysóstomi
+!Inter spur.: Sermo I in Pentec. Migne Tom. 52, col. 803
+Hódie nobis terra facta est cælum, non stellis de cælo in terram descendéntibus, sed Apóstolis ad cælos ascendéntibus, quia effúsa est copiósa grátia Spíritus Sancti, et univérsum orbem operáta est cælum, non immútans natúram, sed voluntátem eméndans.
+
+[Lectio6]
+Invénit namque publicánum, et Evangelístam effécit: invénit persecutórem, et Apóstolum réddidit: invénit latrónem, et in paradísum indúxit: invénit meretrícem, et virgínibus coæquávit: invénit magos, et Evangelístas osténdit: fugávit malítiam, et indúxit benignitátem: exterminávit servitútem, et indúxit libertátem: concéssit débitum, et íntulit grátiam Dei. Ideo cælum factum est terra, et hoc sæpius dicens, non cessábo.
+
+[Lectio7]
+Et factus est repénte de cælo sonus tamquam adveniéntis spíritus veheméntis, et replévit totam domum, ubi erant sedéntes. Et apparuérunt illis dispertítæ linguæ tamquam ignis: non ignis, sed tamquam ignis. Si ignis, inquit, quómodo non ardébant? intérrogat Judæus: interrogábo et ego Judæum: Si ignis erat, quómodo non comburébat rubum, frágile lignum? Quid igne veheméntius? quid rubo vílius? et newue lignum exurebátur, neque ignis exstinguebátur.
+
+[Lectio8]
+Et quómodo córpora trium puerórum ignis non exússit, sed camínus in rorem versus est, et carbónes tamquam rosas arbitrabántur? Certámen ignis et córporis, et tamen córporum fiébat victória: et quod cera erat solubílius, ferro factum est fírmius. Interpretáre mihi vétera, étenim illa præcessérunt, ut credátis veritáti. Quóniam Spíritus Sanctus in igne appáruit, propter velócem mentis susceptiónem: non autem propter hoc solum, sed et sicut ignis spinas combúrit, sic et Spíritus peccáta dispérdit. Missus est Dániel in lacum leónum, et immánem rábiem illórum divína virtus représsit.
+
+[Lectio9]
+@Tempora/Pasc7-2:Lectio1:s/ Non.*//s
+
+[Lectio10]
+@Tempora/Pasc7-2:Lectio1:s/.*(Non)/$1/s s/$/~/
+@Tempora/Pasc7-2:Lectio2:s/ Fuérunt.*//s
+
+[Lectio11]
+@Tempora/Pasc7-2:Lectio2:s/.*(?=Fuérunt)//

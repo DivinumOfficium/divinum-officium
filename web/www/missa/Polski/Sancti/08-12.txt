@@ -1,9 +1,5 @@
-[Rank]
-S. Clarae Virginis;;Duplex;;3;;vide C6b
-
-[Rule]
-vide C6b;
-Gloria
+[Officium]
+Św. Klary Dziewicy
 
 [Comment]
 # 12 VIII – Św. Klary, Dziewicy
@@ -13,30 +9,5 @@ Gloria
 
 Msza wspólna nr 26 Dilexisti
 
-[Introitus]
-@Commune/C6b:Introitus
-
-[Oratio]
-Wysłuchaj nas, Boże, nasz Zbawicielu, i spraw, abyśmy radując się z uroczystości świętej Twojej Dziewicy Klary, nabyli uczucia synowskiego oddania.
-$Per Dominum
-
-[Lectio]
-@Commune/C6b:Lectio
-
-[Graduale]
-@Commune/C6b:Graduale
-
-[Evangelium]
-@Commune/C6b:Evangelium
-
-[Offertorium]
-@Commune/C6b:Offertorium
-
-[Secreta]
-@Commune/C6b:Secreta
-
-[Communio]
-@Commune/C6b:Communio
-
-[Postcommunio]
-@Commune/C6b:Postcommunio
+[Name]
+Klary

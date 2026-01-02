@@ -1,13 +1,5 @@
-[Rank]
-Ss. Innocentium;;Duplex II class cum octava simplici;;5.2;;ex C3
-
-[Rank1960]
-Ss. Innocentium;;Duplex II class;;5;;ex C2
-
-[Rule]
-no Gloria
-Credo
-Prefatio=Nat
+[Officium]
+Santos Inocentes
 
 [Comment]
 # 28 XII – Santos Inocentes
@@ -27,11 +19,6 @@ v. Da boca dos meninos e das crianças de peito fazeis sair louvores em vossa ho
 Ó Deus, cuja glória os Inocentes Mártires confessaram neste dia, não com suas palavras, mas com sua morte, mortificai no nosso íntimo as paixões e os vícios, a fim de que a vossa fé, que a nossa boca confessa, seja Confirmada com os nossos costumes.
 $Per Dominum
 
-[Commemoratio Oratio]
-!Para a Oitava do Natal
-Ó Deus omnipotente, Vos imploramos, dignai-Vos permitir que o novo Nascimento do vosso Filho Unigénito Incarnado nos livre do antigo cativeiro em que nos conserva o jugo do pecado.
-$Per eundem
-
 [Lectio]
 Lição do Livro do Apocalipse do B. Ap.º João.
 !Apoc 14:1-5
@@ -44,18 +31,18 @@ V. O laço quebrou-se, e ficámos livres. A nossa esperança está no nome do Se
 !Sl 112:1
 Ó meninos, louvai o Senhor; louvai o seu santo Nome. Aleluia.
 
-[Tractus]
-!Sl 78:3; 78:10
-Derramaram o sangue dos Santos, como água, em redor de Jerusalém.
-V. E não houve ninguém que os sepultasse.
-V. Vingai, Senhor, o sangue dos vossos Santos que correu pela terra.
-
 [GradualeP]
 Aleluia, aleluia
 !Sl 123:8
 A nossa esperança está no nome do Senhor, que criou o céu e a terra. Aleluia, aleluia.
 !Sb 121:1
 V. Ó meninos, louvai o Senhor; louvai o seu santo nome. Aleluia.
+
+[Tractus]
+!Sl 78:3; 78:10
+Derramaram o sangue dos Santos, como água, em redor de Jerusalém.
+V. E não houve ninguém que os sepultasse.
+V. Vingai, Senhor, o sangue dos vossos Santos que correu pela terra.
 
 [Evangelium]
 Continuação ++ do santo Evangelho segundo S. Mateus.
@@ -70,11 +57,6 @@ A nossa alma escapou-se, como um pássaro do laço do caçador. O laço quebrou-
 Não nos falte, Senhor, a pia oração dos vossos Santos e que ela Vos torne agradáveis as nossas ofertas e sempre nos alcance a vossa indulgência.
 $Per Dominum
 
-[Commemoratio Secreta]
-!Para a Oitava do Natal
-Santificai, Senhor, pelo novo Nascimento do vosso Filho Unigénito, as oblatas que Vos apresentamos, e purificai-nos das manchas dos nossos pecados.
-$Per eundem
-
 [Communio]
 !Mt 2:18
 Uma voz se ouviu em Rama: muitos soluços e lamentações. É Raquel que chora os seus filhos; e ela não quer ser consolada, porque já não existem!
@@ -82,8 +64,3 @@ Uma voz se ouviu em Rama: muitos soluços e lamentações. É Raquel que chora o
 [Postcommunio]
 Havendo nós participado dos dons que Vos oferecemos, dignai-Vos permitir que as orações dos vossos Santos nos sirvam de auxílio para a vida presente e para a futura.
 $Per Dominum
-
-[Commemoratio Postcommunio]
-!Para a Oitava do Natal
-Ó Deus omnipotente, dignai-Vos permitir que, assim como o Salvador do mundo, nascendo neste dia, nos comunicou a geração divina, assim também nos conceda a imortalidade.
-$Qui tecum

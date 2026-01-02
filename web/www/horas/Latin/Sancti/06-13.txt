@@ -1,39 +1,42 @@
-[Rank]
-S. Antonii de Padua Confessoris;;Duplex;;3;;vide C5a
+[Officium]
+S. Antonii de Padua Confessoris
+(sed rubrica 195 aut rubrica 196 aut rubrica altovadensis)
+S. Antonii de Padua Confessoris et Ecclesiæ Doctoris
 
-[Rank1960]
-S. Antonii de Padua Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C5a
+[Rank]
+;;Duplex;;3;;vide C5
+(sed rubrica 1617)
+;;Semiduplex;;2.2;;vide C5
+(sed rubrica 1930)
+;;Simplex;;1.1;;vide C5
+(sed rubrica 195 aut rubrica 196)
+;;Duplex;;3;;vide C5a
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C5a
 
 [Rule]
+vide C5;
+(sed rubrica 195 aut rubrica 196)
 vide C5a;
 9 lectiones
 
-[Name]
-Antoni
+[Comment]
+Pio PP. XII, anno 1946, Doctor Ecclesiæ declaratus est
 
-[OratioText]
-Ecclésiam tuam, Deus, beáti Antónii Confessóris tui atque Doctóris solémnitas votíva~
-lætíficet: ut spirituálibus semper muniátur auxíliis et gáudiis pérfrui mereátur~
-ætérnis.
-$Per Dominum
+[Name]
+Antóni
 
 [Oratio]
+@:OratioText:s/ atque Doctóris//
+(sed rubrica 195 aut rubrica 196 aut rubrica altovadensis)
 @:OratioText
 
-[Oratio] (rubrica divino aut rubrica tridentina)
-@:OratioText:s/ atque Doctóris//
-
-[Lectio1] (rubrica tridentina)
-@Commune/C5:Lectio1 in 2 loco
-
-[Lectio2] (rubrica tridentina)
-@Commune/C5:Lectio2 in 2 loco
-
-[Lectio3] (rubrica tridentina)
-@Commune/C5:Lectio3 in 2 loco
+[OratioText]
+Ecclésiam tuam, Deus, beáti Antónii Confessóris tui atque Doctóris solémnitas votíva lætíficet: ut spirituálibus semper muniátur auxíliis et gáudiis pérfrui mereátur ætérnis.
+$Per Dominum
 
 [Lectio4]
-Antónius, Ulyssipóne in Lusitánia honéstis ortus paréntibus, et ab iis pie educátus, adoléscens, institútum canonicórum regulárium suscépit. Sed, cum córpora beatórum quinque Mártyrum fratrum Minórum Conímbriam transferéntur, qui paulo ante apud Marróchium pro Christi fide passi erant, martýrii desidério incénsus ad Franciscánum órdinam transívit.  Mox eódem ardóre impúlsus, ad Saracénos ire perréxit; sed, advérsa valetúdine afflíctus et redíre coáctus, cum navi ad Hispániæ líttora ténderet, ventórum vi in Sicíliam delátus est.
+Antónius, Ulyssipóne in Lusitánia honéstis ortus paréntibus, et ab iis pie educátus, adoléscens, institútum canonicórum regulárium suscépit. Sed, cum córpora beatórum quinque Mártyrum fratrum Minórum Conímbriam transferéntur, qui paulo ante apud Marróchium pro Christi fide passi erant, martýrii desidério incénsus ad Franciscánum órdinam transívit. Mox eódem ardóre impúlsus, ad Saracénos ire perréxit; sed, advérsa valetúdine afflíctus et redíre coáctus, cum navi ad Hispániæ líttora ténderet, ventórum vi in Sicíliam delátus est.
 
 [Lectio5]
 Assísium e Sicília ad capítulum generále venit: inde in erémum montis Pauli in Æmília secéssit, ubi divínis contemplatiónibus, jejúniis et vigíliis diu vacávit. Póstea, sacris ordínibus initiátus et ad prædicándum Evangélium missus, dicéndi sapiéntia et cópia tantum profécit, tantámque sui admiratiónem commóvit, ut eum summus Póntifex aliquándo concionántem áudiens, arcam Testaménti appellárit. In primis vero hǽreses summa vi profligávit, ideóque perpétuus hæreticórum málleus est vocátus.

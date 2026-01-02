@@ -1,5 +1,5 @@
 [Rank]
-In Vigilia Nativitatis Domini;;Duplex I classis;;6.1
+In Vigilia Nativitatis Domini;;Duplex I classis;;6.9
 
 [Rule]
 3 lectiones
@@ -7,6 +7,11 @@ Matins simplex
 Psalmi Dominica
 Antiphonas horas
 Tempora none
+
+[Oratio]
+Deus, qui nos redemptiónis nostræ ánnua exspectatióne lætíficas: præsta; ut Unigénitum tuum, quem Redemptórem læti suscípimus, veniéntem quoque Júdicem secúri videámus, Dóminum nostrum Jesum Christum Fílium tuum:
+$Qui tecum
+
 
 [Invit]
 Hódie sciétis quia véniet Dóminus: * Et mane vidébitis glóriam ejus.
@@ -46,6 +51,9 @@ R. Et áuferet a vobis omnem languórem.
 &Gloria
 R. Et áuferet a vobis omnem languórem.
 
+[Versum 0]
+@:Versum 2
+
 [Ant Laudes]
 Judǽa et Jerúsalem, * nolíte timére: cras egrediémini, et Dóminus erit vobíscum, allelúja.
 Hódie sciétis * quia véniet Dóminus: et mane vidébitis glóriam ejus.
@@ -65,25 +73,19 @@ R. Et regnábit super nos Salvátor mundi.
 [Ant 2]
 Oriétur * sicut sol Salvátor mundi: et descéndet in úterum Vírginis, sicut imber super gramen, allelúja.
 
-[Oratio]
-Deus, qui nos redemptiónis nostræ ánnua exspectatióne lætíficas: præsta; ut Unigénitum tuum, quem Redemptórem læti suscípimus, veniéntem quoque Júdicem secúri vídeamus, Dóminum nostrum Jesum Christum Fílium tuum:
-$Qui tecum
-
 [Lectio Prima]
 !Rom 1:5-6
 v. Per quem accépimus grátiam, et apostolátum ad obediéndum fídei in ómnibus géntibus pro nómine ejus, in quibus estis et vos vocáti Jesu Christi Dómini nostri.
 
-[Capitulum Tertia]
-@:Capitulum Laudes
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Hódie sciétis * Quia véniet Dóminus.
 R. Hódie sciétis * Quia véniet Dóminus.
 V. Et mane vidébitis glóriam ejus.
 R. Quia véniet Dóminus.
 &Gloria
 R. Hódie sciétis * Quia véniet Dóminus.
-_
+
+[Versum Tertia]
 V. Constántes estóte.
 R. Vidébitis auxílium Dómini super vos.
 
@@ -92,14 +94,15 @@ R. Vidébitis auxílium Dómini super vos.
 v. Qui prædestinátus est Fílius Dei in virtúte secúndum spíritum sanctificatiónis, ex resurrectióne mortuórum Jesu Christi Dómini nostri.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Crástina die * Delébitur iníquitas terræ.
 R. Crástina die * Delébitur iníquitas terræ.
 V. Et regnábit super nos Salvátor mundi.
 R. Delébitur iníquitas terræ.
 &Gloria
 R. Crástina die * Delébitur iníquitas terræ.
-_
+
+[Versum Sexta]
 V. Crástina erit vobis salus.
 R. Dicit Dóminus Deus exercítuum.
 
@@ -107,13 +110,14 @@ R. Dicit Dóminus Deus exercítuum.
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Crástina * Erit vobis salus.
 R. Crástina * Erit vobis salus.
 V. Dicit Dóminus Deus exercítuum.
 R. Erit vobis salus.
 &Gloria
 R. Crástina * Erit vobis salus.
-_
+
+[Versum Nona]
 V. Crástina die delébitur iníquitas terræ.
 R. Et regnábit super nos Salvátor mundi.

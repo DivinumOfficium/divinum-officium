@@ -1,16 +1,5 @@
-[Rank]
-Św. Andrzeja Apostoła;;Duplex 2 classis;;5.1;;ex C1
-
-[Rank1960]
-Św. Andrzeja Apostoła;;Duplex 2 classis;;5;;ex C1
-
-[Rule]
-ex C1;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=138
+[Officium]
+Św. Andrzeja Apostoła
 
 [Ant Vespera]
 Witaj krzyżu święty, * przyjmij ucznia Tego, który wisiał na Twem drzewie, Chrystusa, Mistrza mego.
@@ -19,11 +8,6 @@ Andrzej, sługa Chrystusa, * godny Apostoł Boży, brat Piotra i towarzysz jego 
 Maksymilla, Chrystusowi miła, * wzięła ciało Apostoła, pogrzebała je z wonnościami w miejscu chwalebnem.
 Tych, którzy prześladowali sprawiedliwego, * pogrążyłeś w piekle, Panie, a sprawiedliwego pociągnąłeś za sobą na drzewo krzyża.
 
-[Capitulum Vespera]
-!Rz 10:10-11
-v. Bracia: Albowiem sercem bywa wierzono ku sprawiedliwości, a usty się wyznanie dzieje ku zbawieniu. Albowiem Pismo powiada: Wszelki, kto weń wierzy, pohańbiony nie będzie.
-$Deo gratias
-
 [Ant 1]
 Jeden ze dwóch, * którzy poszli za Panem, był Andrzej, brat Szymona Piotra, alleluja.
 
@@ -31,15 +15,32 @@ Jeden ze dwóch, * którzy poszli za Panem, był Andrzej, brat Szymona Piotra, a
 Majestat Twój, Panie, pokornie błagamy; aby święty Andrzej Apostoł, który Kościół Twój nauczał i prowadził, wstawiał się nieustannie za nami.
 $Per Dominum
 
+[Ant Matutinum]
+Ujrzał Pan * Piotra i Andrzeja i wezwał ich.;;18
+Pójdźcie za mną * mówi Pan: uczynię was rybakami ludzi.;;33
+Zaniechawszy sieci swoich, * szli za Panem Odkupicielem.;;44
+Godnym sobie Pan, * poczytał Męczennikiem, którego nazwał Apostołem gdy był na morzu, alleluja.;;46
+Umiłował Andrzeja * Pan na zapach wdzięczności.;;60
+Dwa dni żyjąc * na krzyżu wisiał święty Andrzej dla Chrystusowego imienia, i lud nauczał.;;63
+Nie dopuszczaj Panie, * aby sługa Twój od ciebie był oddzielony: czas jest, aby ciało moje oddano ziemi, a mnie abyś kazał do siebie przyjść.;;74
+Andrzej zaś prosił lud, * aby nie przeszkadzał męczeństwu jego.;;96
+Weźmij mię od ludzi, * a oddaj mnie mistrzowi memu, aby mię przez cię przyjął, który mię przez cię odkupił, alleluja.;;98
+
 [Lectio1]
 Z Listu błogosławionego Pawła Apostoła do Rzymian
 !Rz 10:4-9
 4 Bo Chrystus koniec zakonu ku sprawiedliwości wszelkiemu wierzącemu.
 5 Albowiem Mojżesz napisał, iż sprawiedliwość, która jest z zakonu, któryby człowiek czynił, w niéj będzie żył.
 6 A sprawiedliwość, która jest z wiary, tak mówi: Nie mów w sercu twojem: Któż wstąpi do nieba? To jest, Chrystusa sprowadzić.
-7 Albo kto zstąpi do przepaści?To jest Chrystusa z martwch wywodzić.
+7 Albo kto zstąpi do przepaści? To jest Chrystusa z martwch wywodzić.
 8 Ale cóż Pismo powiada? Blizko jest słowo w ustach twoich i w sercu twojem, to jest słowo wiary, które przepowiadamy:
 9 Że jeźlibyś wyzwał usty twojemi Pana Jezusa i uwierzyłbyś w sercu twojem, że go Bóg z martwych wzbudził, zbawion będziesz.
+
+[Responsory1]
+R. Gdy się przechodził Pan, przy morzu gAlilejskim, ujrzał Piotra i Andrzeja sieci zapuszaczające w morze: i zawołał ich mówiąc:
+* Pójdźcie za mną uczynię was rybakami ludzi.
+V. Byli bowiem rybitwami i rzekł im.
+R. Pójdźcie za mną uczynię was rybakami ludzi.
 
 [Lectio2]
 !Rz 10:10-15
@@ -50,6 +51,12 @@ Z Listu błogosławionego Pawła Apostoła do Rzymian
 14 Jakoż tedy wzywać będą, w którego nie uwierzyli? Albo jako uwierzą temu, którego nie słyszeli? A jako usłyszą oprócz przepowiadającego?
 15 A jako będą przepowiadać, jeźliby nie byli posłani? jako napisano jest: Jako śliczne nogi opowiadających pokój, opowiadających dobra!
 
+[Responsory2]
+R. Zaraz skoro głos usłyszał Pana, każącego błogosławiony Andrzej, opuściwszy sieci, z których zarobku żył.
+* Szedł za rozdającym zapłatę wiecznego żywota.
+V. Ten jest który dla miłości Chrystusowej wisiał na krzyżu, i za zakon jego cierpiał mękę.
+R. Szedł za rozdającym zapłatę wiecznego żywota.
+
 [Lectio3]
 !Rz 10:16-21
 16 Ale nie wszyscy są posłuszni Ewangelii; albowiem Izajasz mówi: Panie, kto wierzył słuchowi naszemu? 
@@ -58,6 +65,39 @@ Z Listu błogosławionego Pawła Apostoła do Rzymian
 19 Ale mówię: Zali Izrael nie poznał? Pierwszy Mojżesz mówi: Ja przez nienaród ku zazdrości was przywiodę, przez naród nierozumny do gniewu was przywiodę.
 20 A Izajasz śmie i mówi: Jestem nalezion od tych, którzy mnie nie szukali, jawniem się okazał tym, którzy się o mnie nie pytali.
 21 A do Izraela mówi: Cały dzień wyciągałem ręce moje do ludu niewiernego i sprzeciwiającego się.
+
+[Responsory3]
+R. Nauczyciela dobrego i Bożego przyjaciela Andrzeja, prowadzą do krzyża, który z daleka obaczywszy rzekł: Witaj krzyżu.
+* Przyim ucznia tego, który wisiał na tobie mistrz mój Chrystus.
+V. Witaj krzyżu, który w ciele Chrystusowym poświęcony jesteś, i z członków jego jako perłami jesteś ozdobiony.
+R. Przyim ucznia tego, który wisiał na tobie mistrz mój Chrystus.
+
+[Lectio4]
+Andrzej Apostoł, brat Piotra, urodzony w Betsaidzie, wiosce Galilejskiej, był uczniem Jana Chrzciciela; kiedy usłyszał go, mówiącego o Chrystusie: Oto Baranek Boży, poszedł za Jezusem i brata swego do Pana przyprowadził. Gdy później z Piotrem łowili ryby, obu ich powołał Chrystus, mimo przechodzący i przed inny­ mi Apostołami uczynił z nich naśladowców swoich, temi słowy: Pójdźcie za mną, a uczynię was, że się staniecie rybitwami ludzi! A oni natychmiast opuściwszy sieci, poszli za nim. Po męce i Zmartwychwstaniu Pana, rozsiewał Andrzej u Scytów ziarno prawdy Chrystusowej. Potem przebiegał Epir i Trację, niezliczone tłumy nawracając na wiarę Jezusową, nauką swą i cudami. Przybywszy do Patras w Achaji, zjednał w tern mieście wielu dla prawdy. Prokonsula zaś Egeasza, sprzeciwiającego się głoszeniu Ewangelji, strofował z całą swobodą, zarzucając mu, że sam pragnie być sędzią innych, a tymczasem igraszką się staje w ręku szatana, nie chcąc uznać za Boga Chrystusa, który jest sędzią wszystkich.
+
+[Responsory4]
+R. Człowieka Bożego prowadzono, aby go ukrzyżowano: a lud wołał głosem wielkim mówiąc:
+* Niewinna krew jego bez przyczyny skazana jest na śmierć.
+V. I gdy go prowadzili, aby ukrzyżowan był, stał się tłuym ludzi wołających i mówiących.
+R. Niewinna krew jego bez przyczyny skazana jest na śmierć.
+
+[Lectio5]
+Tedy rzecze mu rozgniewany Egeasz: Zaprzestań chwalić Chrystusa, bo i Jego nie uratowały od śmierci podobne twoim zasady; owszem, dla nich to ukrzyżowali Go Żydzi. Gdy zaś Andrzej nieustraszenie wyznawał, że Chrystus dobrowolnie ofiarował się na krzyżu, za zbawienie ludzkości, przerwał mu Egeasz klątwą bezbożną; a wreszcie rozkazał mu złożyć ofiarę bogom, o ile siebie ocalić pragnie. Odparł mu Andrzej: „Bogu Wszechmogącemu, który jest jeden i prawdziwy, codzień składam ofiarę. Nie krew wołów i kozłów, ale Mu ofiaruję na ołtarzu Baranka bez zmazy, który pozostaje żywy i nienaruszony, chociaż Ciało Jego pożywał wszystek lud wierzący”. Przeto rozgniewany Egeasz rozkazuje wtrącić Andrzeja do więzienia. Z łatwością byłby go lud uwolnił, gdyby go sam Święty nie powstrzymał od tego. Gorącem błaganiem uspokoił wzburzony lud, ze łzami prosząc, aby mu nikt nie przeszkadzał w zdobyciu najpożądańszej korony męczeńskiej.
+
+[Responsory5]
+R. O dobry krzyżu, któryś ozdobę i piękność z członków Pańskich wziął, weźmi mię od ludzi, a oddaj mnie mistrzowi memu.
+* Aby przez cię przyjął mię, który mię przez ciebie odkupił.
+V. Andrzej błogosławiony, wyciągnąwszy ręce ku niebu modlił się mówiąc: Zbaw mię dobry krzyżu.
+R. Aby przez cię przyjął mię, który mię przez ciebie odkupił.
+
+[Lectio6]
+Wkrótce stawiono go przed trybunałem. A kiedy Egeasz dłużej już znieść nie mógł czynionych sobie wyrzutów i słuchać nie chciał wysławiania Krzyża świętego, rozkazał przybić Andrzeja do drzewa krzyża, aby w ten sposób naśladować mógł śmierć Chrystusową. Przyszedłszy na miejsce kaźni, gdy ujrzał krzyż, zdaleka już zawołał doń Święty: „O, dobry Krzyżu! z Boskich członków Pana spłynęła na cię krasa i chwała! Krzyżu, gorąco ukochany! zdawna cię pożądałem i szukałem bez wytchnienia! zgotowanyś wreszcie palącym pragnieniom ducha mego! Weź mię z pośród ludzi i oddaj w ręce Pana! Odkupił mię przez ciebie, niechajże teraz z twych ramion przyjąć raczy mą duszę”. Przybili go więc do krzyża, na którym wisząc przez dwa dni, nie przestawał głosić Chrystusa. I tak poszedł do Tego, któremu w śmierci upodobnić się pragnął. Kapłani i Djakoni z Achaji opisali męczeństwo Świętego, zapewniając o prawdzie wszystkiego, co słyszeli, widzieli i przekazują pamięci potomnych. Cesarz Konstantyn przeniósł kości jego zrazu do Konstantynopola, potem do Amalfi. Głowę zaś Świętego, przewieziono do Rzymu za Piusa II. i złożono w Bazylice św. Piotra.
+
+[Responsory6]
+R. Wyciągnąłem ręce moje cały dzień na krzyżu do ludu niewierzącego, ale mnie przeciwnego:
+* Którzy drogami niedobrymi chodzą, ale za grzechami swemi.
+V. Bóg pomsty, Pan: Bóg pomsty wolno poczynał. Wywyższ się, który sądzisz ziemię: oddaj zapłatę pysznym.
+R. Którzy drogami nie dobrymi chodzą, ale za grzechami swemi.
 
 [Lectio7]
 Czytanie Ewangelii świętej według św. Mateusza
@@ -89,6 +129,11 @@ R. Przyjmij ucznia Chrystusowego, a przez ciebie niech mnie przyjmie Ten, który
 Może jednak ktoś w duchu sobie pomyśli i powie: Co i jak wiele owi dwaj rybacy opuścili, skoro prawie nic nie mieli? Jednakże, najdrożsi bracia, winniśmy raczej uwzględnić usposobienie serca, niż majątek. Wiele opuścił, kto sobie nic nie zatrzymał, wiele opuścił, kto choćby miał mało, wszystko zostawił. My zaś przywiązani jesteśmy do tego, co posiadamy, a tego, czego nam brak, gorączkowo szukamy. Wiele więc Piotr i Andrzej opuścili, skoro obaj i pragnienia posiadania się wyrzekli.
 &teDeum
 
+[Capitulum Laudes]
+!Rz 10:10-11
+v. Bracia: Albowiem sercem bywa wierzono ku sprawiedliwości, a usty się wyznanie dzieje ku zbawieniu. Albowiem Pismo powiada: Wszelki, kto weń wierzy, pohańbiony nie będzie.
+$Deo gratias
+
 [Ant 2]
 Oddaj nam * człowieka sprawiedliwego, wypuść nam człowieka świętego; nie zabijaj przyjaciela Boga, sprawiedliwego, skromnego, i pobożnego.
 
@@ -100,9 +145,6 @@ v. Albowiem Izajasz mówi: Panie, kto wierzył słuchowi naszemu? Wiara tedy z s
 !Rz 10:12-13
 v. Albowiem niemasz różności Żyda i Greczyna; bo tenże Pan wszystkich bogaty na wszystkich, którzy go wzywają. Albowiem wszelki, którybykolwiek wzywał imienia Pańskiego, zbawion będzie
 $Deo gratias
-
-[Ant Vespera 3]
-@:Ant Vespera:s/\.$/.;;109/m s/\.$/.;;112/m s/\.$/.;;115/m s/\.$/.;;125/m s/\.$/.;;138/m
 
 [Ant 3]
 Gdy przyszedł * błogosławiony Andrzej na miejsce, gdzie krzyż był przygotowany, wykrzyknął i rzekł: O Krzyżu dobry, tak długo pożądany i nareszcie pragnącej duszy przygotowany: pewnie i z weselem idę ku Tobie, — Ty zaś przyjmij z radością ucznia Tego, który na tobie wisiał.

@@ -1,8 +1,12 @@
-[Rank]
-Feria Sexta infra Hebdomadam Passionis;;Feria major;;2
+[Officium]
+Feria Sexta infra Hebdomadam Passionis
 
-[Rank](rubrica 1960)
-Feria Sexta infra Hebdomadam Passionis;;Feria major;;3
+[Rank]
+;;Feria major;;2.1
+(sed rubrica 1930)
+;;Feria major;;4.9
+(sed rubrica 196)
+;;Feria major;;3.9
 
 [Rule]
 no Gloria
@@ -19,13 +23,11 @@ v. Miserére mihi, Dómine, quóniam tríbulor: líbera me, et éripe me de mán
 
 [Oratio]
 Córdibus nostris, quǽsumus, Dómine, grátiam tuam benígnus infúnde: ut peccáta nostra castigatióne voluntária cohibéntes, temporáliter pótius macerémur, quam supplíciis deputémur ætérnis.
+$Per Dominum
 
-Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.
-R. Amen.
-_
-v. Oremus.
+[Commemoratio Oratio] (rubrica 1955 aut rubrica 1960 aut rubrica innovata)
 !Commemoratio Septem Dolorum B. M. V.
-v. Deus, in cujus passióne, secúndum Simeónis prophetíam, dulcíssimam ánimam gloriósæ Vírginis et Matris Maríæ dolóris gladius pertransívit: concéde propítius; ut, qui transfixiónem ejus et passiónem venerándo recólimus, gloriósis méritis et précibus ómnium Sanctórum Cruci fidéliter astántium intercedéntibus, passiónis tuæ efféctum felícem consequámur:
+Deus, in cujus passióne, secúndum Simeónis prophetíam, dulcíssimam ánimam gloriósæ Vírginis et Matris Maríæ dolóris gladius pertransívit: concéde propítius; ut, qui transfixiónem ejus et passiónem venerándo recólimus, gloriósis méritis et précibus ómnium Sanctórum Cruci fidéliter astántium intercedéntibus, passiónis tuæ efféctum felícem consequámur:
 $Qui vivis
 
 [Lectio]
@@ -41,7 +43,7 @@ _
 !Tractus
 !Ps 102:10
 Dómine, non secúndum peccáta nostra, quæ fécimus nos: neque secúndum iniquitátes nostras retríbuas nobis.
-!Ps 78:8-9.
+!Ps 78:8-9
 V. Dómine, ne memíneris iniquitátum nostrárum antiquárum: cito antícipent nos misericórdiæ tuæ, quia páuperes facti sumus nimis. (Hic genuflectitur)
 V. Adjuva nos, Deus, salutáris noster: et propter glóriam nóminis tui, Dómine, líbera nos: et propítius esto peccátis nostris, propter nomen tuum.
 
@@ -56,9 +58,9 @@ Benedíctus es, Dómine, doce me justificatiónes tuas: et non tradas calumnián
 
 [Secreta]
 Præsta nobis, miséricors Deus: ut digne tuis servíre semper altáribus mereámur; et eórum perpétua participatióne salvári.
-Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.
-R. Amen.
-_
+$Per Dominum
+
+[Commemoratio Secreta] (rubrica 1955 aut rubrica 1960 aut rubrica innovata)
 !Commemoratio Septem Dolorum B. M. V.
 Offérimus tibi preces et hóstias, Dómine Jesu Christe, humíliter supplicántes: ut, qui Transfixiónem dulcíssimi spíritus beátæ Maríæ, Matris tuæ, précibus recensémus; suo suorúmque sub Cruce Sanctórum consórtium multiplicáto piíssimo intervéntu, méritis mortis tuæ, méritum cum beátis habeámus:
 $Qui vivis
@@ -69,9 +71,9 @@ Ne tradíderis me, Dómine, in animas persequéntium me: quóniam insurrexérunt
 
 [Postcommunio]
 Sumpti sacrifícii, Dómine, perpetua nos tuítio non derelínquat: et nóxia semper a nobis cuncta depéllat.
-Per Dóminum nostrum Iesum Christum, Fílium tuum: qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.
-R. Amen.
-_
+$Per Dominum
+
+[Commemoratio Postcommunio] (rubrica 1955 aut rubrica 1960 aut rubrica innovata)
 !Commemoratio Septem Dolorum B. M. V.
 Sacrifícia, quæ súmpsimus, Dómine Jesu Christe, Transfixiónem Matris tuæ et Vírginis devóte celebrántes: nobis ímpetrent apud cleméntiam tuam omnis boni salutáris efféctum:
 $Qui vivis

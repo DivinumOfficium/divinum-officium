@@ -1,10 +1,14 @@
-[Rank]
-Dominica infra Octavam Ascensionis;;Semiduplex;;5;;ex Tempora/Pasc5-4
+[Officium]
+Dominica infra Octavam Ascensionis
 
-[Rank1960]
-Dominica post Ascensionem;;Semiduplex;;5
+[Officium] (rubrica 196 aut rubrica 1955)
+Dominica post Ascensionem
+
+[Rank]
+;;Semiduplex;;5;;ex Tempora/Pasc5-4
 
 [Rule]
+Evangelium non appropriatum
 ex Tempora/Pasc5-4;
 Gloria
 Credo
@@ -68,4 +72,3 @@ $Per Dominum
 !Pro Octava Ascensionis.
 Præsta nobis, quǽsumus, omnípotens et miséricors Deus: ut, quæ visibílibus mystériis suménda percépimus, invisíbili consequámur efféctu.
 $Per Dominum
-

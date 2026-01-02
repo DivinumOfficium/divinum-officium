@@ -1,13 +1,5 @@
-[Rank]
-Sanctae Familiae Jesu Mariae Joseph;;Duplex majus;;3.9
-(sed rubrica 1960)
-Sanctae Familiae Jesu Mariae Joseph;;Duplex II classis;;5
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-No Sunday Commemoratio
+[Officium]
+Sanctae Familiae Jesu Mariae Joseph
 
 [Ant Vespera]
 And Jacob * begot Joseph the husband of Mary, of whom was born Jesus, who is called Christ.;;109
@@ -15,11 +7,6 @@ The angel of the Lord * appeared to Joseph in his sleep, saying: Joseph, son of 
 The shepherds came * with haste; and they found Mary and Joseph, and the infant lying in the manger.;;121
 The Magi, entering into the house, * found the child with Mary his mother.;;126
 His father * and mother were wondering at those things which were spoken concerning him.;;147
-
-[Capitulum Vespera]
-!Luke 2:51
-v. Jesus went down with Mary and Joseph, and came to Nazareth, and was subject to them.
-$Deo gratias
 
 [Hymnus Vespera]
 v. O highest hope of mortals,
@@ -64,9 +51,6 @@ who parents dost obey;
 Praise to the sovereign Father
 and Paraclete for aye. 
 
-[Versum Prima]
-Who subdued yourself to Mary and Joseph.
-
 [Versum 1]
 V. Blessed are they that dwell in thy house, O Lord.
 R. They shall praise thee for ever and ever.
@@ -77,6 +61,10 @@ The Word was made flesh, * and dwelt among us, full of grace and truth; and of h
 [Oratio]
 Lord Jesus Christ, who subject to Mary and Joseph, didst consecrate family life by thy unspeakable virtues, aid us by their united intercession to profit by the examples of thy Holy Family, and attain to their everlasting companionship:
 $Qui vivis
+
+[Commemoratio]
+!Commemoratio Sunday in Octava Epiphaniae
+@Tempora/Epi1-0a:Oratio:s/V\. .*/V. All they from Saba shall come. Alleluia./ s/R\. .*/R. They shall bring gold and incense. Alleluia./
 
 [Invit]
 Christ, Son of God, subject to Mary and Joseph, * O come, let us worship Him.
@@ -107,7 +95,7 @@ And years and grace with God and men;”
 And in His father’s humble art 
 Took share and part.
 _
-"With toil", saith He, “my limbs are wet,
+“With toil”, saith He, “my limbs are wet,
 Prefiguring the Bloody Sweat:” 
 Ah! how He bears our chastisement
 With sweet content!
@@ -137,16 +125,22 @@ Amen.
 When his parents * brought the Child Jesus, then Simeon took him up in his arms, and blessed God.;;8
 When they had performed * all things according to the Law of the Lord, they returned into Galilee, to their own city Nazareth.;;18
 And the Child grew, * and waxed strong in spirit, filled with wisdom, and the grace of God was upon him.;;23
-V. He was rich, yet for our sakes he became poor.
-R. That we through his poverty might be rich.
 When Joseph arose, * he took the young Child and his Mother by night, and departed into Egypt.;;44
 And the Angel of the Lord * said in a dream to Joseph in Egypt, Arise, and take the young Child and his Mother, and go into the land of Israel.;;45
 And he came * and dwelt in a city called Nazareth, that it might be fulfilled which was spoken by the Prophets: He shall be called a Nazarene.;;86
-V. The Lord shall teach us of his ways.
-R. And we will walk in his paths.
 Now the parents of Jesus * went to Jerusalem every year at the Feast of the Passover.;;95
 And when they returned, * the Child Jesus tarried behind in Jerusalem, and his parents knew not of it.;;96
 But when they found him not, * they turned back again to Jerusalem, seeking him.;;97
+
+[Nocturn 1 Versum]
+V. He was rich, yet for our sakes he became poor.
+R. That we through his poverty might be rich.
+
+[Nocturn 2 Versum]
+V. The Lord shall teach us of his ways.
+R. And we will walk in his paths.
+
+[Nocturn 3 Versum]
 V. I am poor and needy, and in agony from my youth up.
 R. Thy terrors have I suffered with a troubled mind.
 
@@ -264,6 +258,11 @@ Jesus went down * with them, and came to Nazareth, and was subject to them.
 And Jesus advanced * in wisdom, and age, and grace with God and men.
 And they said: * How came this man by this wisdom and miracles? Is not this the carpenter's son?
 
+[Capitulum Laudes]
+!Luke 2:51
+v. Jesus went down with Mary and Joseph, and came to Nazareth, and was subject to them.
+$Deo gratias
+
 [Hymnus Laudes]
 O house of Nazareth the blest, 
 Fair hostess of the Lord,
@@ -317,43 +316,37 @@ Enlighten us, O Lord, * by the example of thy family, and direct our feet into t
 !Phil 2:7
 v. But emptied himself, taking the form of a servant, being made in the likeness of men, and in habit found as a man.
 
-[Responsory Tertia]
+[Versum Prima]
+Who subdued yourself to Mary and Joseph.
+
+[Responsory Breve Tertia]
 R.br. For our sake he became poor, * Being rich.
 R. For our sake he became poor, * Being rich.
 V. That through his poverty we might be rich.
 R. Being rich.
 &Gloria
 R. For our sake he became poor, * Being rich.
-_
-V. The Lord will teach us his ways.
-R. And we will walk in his paths.
 
 [Capitulum Sexta]
 !Rom 5:19
 v. For as by the disobedience of one man, many were made sinners; so also by the obedience of one, many shall be made just.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. The Lord * Will teach us his ways.
 R. The Lord * Will teach us his ways.
 V. And we will walk in his paths.
 R. Will teach us his ways.
 &Gloria
 R. The Lord * Will teach us his ways.
-_
-V. I am poor, and in labours from my youth.
-R. And being exalted have been humbled and troubled.
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. I am poor, and in labours * from my youth.
 R. I am poor, and in labours * from my youth.
 V. And being exalted have been humbled and troubled.
 R. From my youth.
 &Gloria
 R. I am poor, and in labours * from my youth.
-_
-V. All thy children shall be taught of the Lord
-R. And great shall be the peace of thy children.
 
 [Ant Vespera 3]
 After three days, * they found him in the temple, sitting in the midst of the doctors, hearing them, and asking them questions.;;109
@@ -364,7 +357,3 @@ And they said: * How came this man by this wisdom and miracles? Is not this the 
 
 [Ant 3]
 But Mary * kept all these words, pondering them in her heart.
-
-[Commemoratio]
-!Commemoratio Sunday in Octava Epiphaniae
-@Tempora/Epi1-0a:Oratio:s/V\. .*/V. All they from Saba shall come. Alleluia./ s/R\. .*/R. They shall bring gold and incense. Alleluia./

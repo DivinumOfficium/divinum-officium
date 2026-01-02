@@ -1,9 +1,15 @@
+[Officium]
+Dominica VI Post Epiphaniam
+
 [Rank]
-Dominica VI Post Epiphaniam;;Semiduplex;;5
+;;Semiduplex;;5
 
 [Rule]
 9 lectiones
 Symbolum Athanasium
+
+[Ant 1] (rubrica cisterciensis)
+@Tempora/Epi4-0
 
 [Oratio]
 Præsta, quǽsumus, omnípotens Deus: ut, semper rationabília meditántes, quæ tibi sunt plácita, et dictis exsequámur et factis.
@@ -84,14 +90,8 @@ Quis est iste, qui séminat, nisi sensus noster et ánimus; qui suscípiens gran
 Sed illa cum créverint, nihil mordax, nihil vívidum, nihil vitále demónstrant: sed totum fláccidum marcidúmque et mollítum ebúllit in ólera et in herbas, quæ cito aréscunt et córruunt. Hæc autem prædicátio, quæ parva videbátur in princípio, cum vel in ánima credéntis, vel in tot mundo sata fúerit, non exsúrgit in ólera, sed crescit in árborem: ita ut vólucres cæli (quas vel ánimas credéntium, vel fortitúdines, Dei servítio mancipátas, sentíre debémus) véniant et hábitent in ramis ejus. Ramos puto evangélicæ árboris, quæ de grano sinápis créverit, dógmatum esse diversitátes, in quibus supradictárum vólucrum unaquǽque requiéscit.
 &teDeum
 
-[Versum 2]
-@Tempora/Epi2-0:Versum 2
-
 [Ant 2]
 Símile est * regnum cælórum grano sinápis, quod mínimum est ómnibus semínibus: cum autem créverit, majus est ómnibus oléribus.
 
 [Ant 3]
 Símile est * regnum cælórum ferménto, quod accéptum múlier abscóndit in farínæ satis tribus, donec fermentátum est totum.
-
-[Versum 3]
-@Tempora/Epi2-0:Versum 3

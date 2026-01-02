@@ -1,9 +1,5 @@
-[Rule]
-12 lectio
-
 [Lectio9]
 @Tempora/Pent17-0:Lectio7:s/, but what.*/./s
 
 [Lectio10]
 @Tempora/Pent17-0:Lectio7:s/.*, but what/But what/s
-

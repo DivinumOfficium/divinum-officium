@@ -1,12 +1,12 @@
 @Tempora/Pent02-5
 
-[Rank]
-Sanctissimi Cordis Domini Nostri Jesu Christi;;Duplex I classis;;6
-
 [Rule]
 12 lectiones
 Psalmi Dominica
 Antiphonas horas
+
+[Ant Vespera]
+@Tempora/Pent02-5::s/115/129/
 
 [Doxology]
 Glória tibi Dómine,
@@ -14,11 +14,6 @@ Qui Corde fundis grátiam,
 Cum Patre, et Sancto Spíritu,
 In sempitérna sǽcula.
 Amen.
-
-[Capitulum Vespera]
-@Tempora/Pent02-5
-_
-@Tempora/Pent02-5:Responsory Sexta:1-6
 
 [AntMatutinumM]
 Gustáte * et vidéte, quóniam suávis est Dóminus: † beátus vir, qui sperat in eo.;;33
@@ -33,13 +28,10 @@ Confitémini Dómino, * et invocáte nomen ejus: † notas fácite in pópulis a
 @Tempora/Pent02-5::1
 @:AntMatutinumM:1
 @Tempora/Pent02-5::2-3
-@Tempora/Pent02-5::6-7
 @Tempora/Pent02-5::4-5
 @:AntMatutinumM:2-4
-@Tempora/Pent02-5::11-13
-@Tempora/Pent02-5::9-10
+@Tempora/Pent02-5::7-9
 ;;221;223(1-8);223(9-16)
-@Tempora/Pent02-5::14-15
 
 [Lectio1]
 @Tempora/Pent02-5
@@ -118,17 +110,11 @@ R. Manéte in dilectióne mea.
 [Responsory12]
 @Tempora/Pent02-5:Responsory8
 
-[Capitulum Laudes]
-@Tempora/Pent02-5
-_
-@Tempora/Pent02-5:Responsory Tertia:1-6
-
-[Responsory Tertia]
+[Responsory TertiaM]
 @:Versum 1
 
-[Responsory Sexta]
-@Tempora/Pent02-5:Responsory Tertia:8-9
+[Responsory SextaM]
+@Tempora/Pent02-5:Nocturn 2 Versum
 
-[Responsory Nona]
-@Tempora/Pent02-5:Responsory Sexta:8-9
-
+[Responsory NonaM]
+@Tempora/Pent02-5:Nocturn 3 Versum

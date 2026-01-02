@@ -1,18 +1,5 @@
-[Rank]
-Komemoracja Św. Pawła Apostoła;;Duplex majus;;4;;ex C1
-
-[Rank1960]
-Komemoracja Św. Pawła Apostoła;;Duplex;;3;;vide C1
-
-[Rule]
-ex C1;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=138
-Sub unica concl
-No prima vespera
+[Officium]
+Komemoracja Św. Pawła Apostoła
 
 [Ant Vespera]
 Jam szczepił, * Apollo polewał, ale Bóg dał pomnożenie, alleluja.
@@ -21,17 +8,18 @@ Rad się przechwalać * będę w krewkościach moich, aby we mnie mieszkała moc
 W Damaszku, * narodu starosta króla Arety chciał, aby mię poimał: ale przez braci w koszu z muru spuszczon, i takem uszedł rąk jego, w imię Pana.
 Trzykroć byłem bit rózgami, * razem był ukamionowan, trzykrociem się z okrętem rozbił, dla imienia Chrystusa.
 
-[Capitulum Vespera]
-!2 Tm 4:7-8
-v. Potykaniem dobrem potykałem się, zawodum dokonał, wiaręm zachował. Na ostatek, odłożon mi jest wieniec sprawiedliwości, który mi odda Pan, sędzia sprawiedliwy w on dzień.
-$Deo gratias
-
 [Versum 1]
 V. Tyś jest naczyniem wybranem, święty Pawle Apostole.
 R. Głosicielem prawdy po całym świecie.
 
 [Ant 1]
 Święty Pawle Apostole, * głosicielu prawdy i nauczycielu Narodów, wstawiaj się za nami u Boga któregoś wybrał.
+
+[Oratio]
+Boże, któryś wielką ilość narodów przez nauczanie błogosławionego Pawła Apostoła oświecił, daj nam, prosimy, doznać orędownictwa tego, którego narodziny dziś obchodzimy.
+$Per Dominum
+_
+@Sancti/01-25:Commemoratio4
 
 [Hymnus Matutinum]
 @Sancti/06-29:Hymnus Laudes:s/.*Wybrany/Wybrany/s
@@ -40,18 +28,12 @@ R. Głosicielem prawdy po całym świecie.
 Który skutecznie robił * w Piotrze na Apostolstwo, skutecznie robił i we mnie między pogany: i poznali łaskę Bożą, która mi jest dana w Chrystusie Panu.;;18
 Bo wiem, komum uwierzył, * i pewienem, iż mocen jest zwierzonéj rzeczy mojéj strzedz do onego dnia, sędzia sprawiedliwy.;;33
 Mnie żyć jest Chrystus, * a umrzeć zysk: chwalić się muszę w krzyżu Pana naszego Jezusa Chrystusa.;;44
-V. Na wszystką ziemię wyszedł głos ich.
-R. I na krańce okręgu ziemi słowa ich.
 Tyś jest naczyniem wybranem * święty Pawle Apostole, głosicielem prawdy po całym świecie.;;46
 Magnus sanctus Paulus * vas electionis, vere digne est glorificandus, qui et meruit thronum duodecimum possidere.;;60
 Potykaniem dobrem * potykałem się, zawodum dokonał, wiaręm zachował.;;63
-V. Postanowisz ich książętami nad wszystką ziemią.
-R. Będą wspominać Imię Twoje, Panie.
 Saulus, qui et Paulus, * magnus praedicator, a Deo confortatus convalescebat, et confundebat Judaeos.;;74
 A żeby mię wielkość * objawienia nie wynosiła, dan mi jest bodziec ciała mego, anioł szatanów, aby mię policzkował, dlatego trzykrociem Pana prosił, aby odemnie odstąpił; i rzekł mi: Dosyć ty masz na łasce mojéj.;;96
 Odłożon mi jest * wieniec sprawiedliwości, który mi odda Pan, sędzia sprawiedliwy w on dzień.;;98
-V. Bardzo zaszczyceni są przyjaciele Twoi Boże.
-R. Bardzo się zmocniło ich panowanie.
 
 [Lectio1]
 Z Dziejów Apostolskich
@@ -83,7 +65,7 @@ R. Dlatego, odłożon mi jest wieniec sprawiedliwości.
 [Lectio3]
 !Dz 13:9-13
 9 Tedy Szaweł, który i Paweł, napełniony Ducha Świętego, wejrzawszy nań,
-10 Rzekł: O pełny wszelkiéj zdrady i wszelkiéj przewrotności, synu djabelski, nieprzyjacielu wszelkiéj sprawiedliwości, nie przestawasz wywracać prostych dróg Pańskich?
+10 rzekł: O pełny wszelkiéj zdrady i wszelkiéj przewrotności, synu djabelski, nieprzyjacielu wszelkiéj sprawiedliwości, nie przestawasz wywracać prostych dróg Pańskich?
 11 A oto teraz ręka Pańska nad tobą, i będziesz ślepym, nie widząc słońca aż do czasu. A natychmiast padł nań mrok i ciemność, a chodząc w około szukał, ktoby mu rękę podał.
 12 Tedy starosta widząc, co się stało, uwierzył, zdumiewając się nad nauką Pańską.
 13 A puściwszy się wodą z Paphu Paweł i ci, co z nim byli, przyszli do Pergi Pamphilii. A Jan odszedłszy od nich, wrócił się do Jeruzalem.
@@ -122,11 +104,10 @@ R. Ale przez braci w koszu z muru spuszczon:
 &Gloria
 R. I takem uszedł rąk jego, w imię Pana.
 
-[Oratio]
-Boże, któryś wielką ilość narodów przez nauczanie błogosławionego Pawła Apostoła oświecił, daj nam, prosimy, doznać orędownictwa tego, którego narodziny dziś obchodzimy.
-$Per Dominum
-_
-@Sancti/01-25:Commemoratio4
+[Capitulum Laudes]
+!2 Tm 4:7-8
+v. Potykaniem dobrem potykałem się, zawodum dokonał, wiaręm zachował. Na ostatek, odłożon mi jest wieniec sprawiedliwości, który mi odda Pan, sędzia sprawiedliwy w on dzień.
+$Deo gratias
 
 [Lectio Prima]
 !1 Kor 15:9-10

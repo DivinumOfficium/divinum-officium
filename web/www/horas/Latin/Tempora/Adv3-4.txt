@@ -1,5 +1,10 @@
+[Officium]
+Feria V infra Hebdomadam III Adventus
+
 [Rank]
-Feria V infra Hebdomadam III Adventus;;Feria major;;2
+;;Feria major;;2.1
+(sed rubrica cisterciensis)
+;;Feria major;;1.15
 
 [Rule]
 Oratio Dominica
@@ -7,7 +12,7 @@ Oratio Dominica
 [Lectio1]
 De Isaía Prophéta
 !Isa 33:1-2
-1 Væ qui prædáris, nonne et ipse prædáberis? et qui spérnis, nonne et ipse spernéris? cum consummáveris deprædatiónem, deprædáberis: cum fatigátus desíeris contémnere, contemnéris. 
+1 Væ qui prædáris, nonne et ipse prædáberis? et qui spernis, nonne et ipse spernéris? cum consummáveris deprædatiónem, deprædáberis: cum fatigátus desíeris contémnere, contemnéris. 
 2 Dómine, miserére nostri, te enim exspectávimus: esto brácchium nostrum in mane, et salus nostra in témpore tribulatiónis.
 
 [Responsory1]
@@ -32,9 +37,9 @@ R. Secúndum órdinem Melchísedech Póntifex factus in ætérnum et in sǽculum
 [Lectio3]
 !Isa 33:14-17
 14 Contérriti sunt in Sion peccatóres, possédit tremor hypócritas. Quis póterit habitáre de vobis cum igne devoránte? quis habitábit ex vobis cum ardóribus sempitérnis? 
-15 Qui ámbulat in justítiis, et lóquitur veritátem, qui próicit avarítiam ex calúmnia, et éxcutit manus suas ab omni múnere, qui óbturat aures suas ne áudiat sánguinem, et claudit óculos suos ne vídeat malum. 
+15 Qui ámbulat in justítiis, et lóquitur veritátem, qui próicit avarítiam ex calúmnia, et éxcutit manus suas ab omni múnere, qui obtúrat aures suas ne áudiat sánguinem, et claudit óculos suos ne vídeat malum. 
 16 Iste in excélsis habitábit muniménta saxórum sublímitas ejus: panis ei datus est, aquæ ejus fidéles sunt. 
-17 Regem in décore suo vidébunt óculi ejus, cernent terram de longe.
+17 Regem in decóre suo vidébunt óculi ejus, cernent terram de longe.
 
 [Responsory3]
 R. Vidébunt gentes justum tuum, et cuncti reges ínclitum tuum: 
@@ -44,8 +49,11 @@ R. Et vocábitur tibi nomen novum, quod os Dómini nominávit.
 &Gloria
 R. Et vocábitur tibi nomen novum, quod os Dómini nominávit.
 
+[Ant Laudes] (rubrica cisterciensis)
+@Tempora/Adv3-0
+
 [Ant 2]
 Vigiláte * ánimo, in próximo est Dóminus Deus noster.
 
 [Ant 3]
-Lætámini * cum Jerúsalem, et exsultáte in ea, omnes qui dilígitis eam, in ætérnam.
+Lætámini * cum Jerúsalem, et exsultáte in ea, omnes qui dilígitis eam, in ætérnum.

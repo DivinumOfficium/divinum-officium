@@ -1,0 +1,2 @@
+[Lectio1]
+@Tempora/Epi4-2::s/\n(3.*?\.) /\n$1¶ /

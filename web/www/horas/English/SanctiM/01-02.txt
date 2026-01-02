@@ -1,0 +1,15 @@
+[Lectio5]
+@Sancti/01-02:Lectio4: s/His Passion.*//
+
+[Lectio6]
+@Sancti/01-02:Lectio4: s/.*(His Passion)/$1/s s/$/~/s
+@Sancti/01-02:Lectio5: s/And.*//
+
+[Lectio7]
+@Sancti/01-02:Lectio5: s/.*(And)/$1/s
+
+[Lectio9]
+@Sancti/01-02:Lectio7: s/Even as.*//
+
+[Lectio10]
+@Sancti/01-02:Lectio7: s/.*(Even as)/$1/s

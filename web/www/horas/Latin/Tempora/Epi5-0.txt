@@ -1,9 +1,15 @@
+[Officium]
+Dominica V Post Epiphaniam
+
 [Rank]
-Dominica V Post Epiphaniam;;Semiduplex;;5
+;;Semiduplex;;5
 
 [Rule]
 9 lectiones
 Symbolum Athanasium
+
+[Ant 1] (rubrica cisterciensis)
+@Tempora/Epi4-0
 
 [Oratio]
 Famíliam tuam, quǽsumus, Dómine, contínua pietáte custódi: ut, quæ in sola spe grátiæ cœléstis innítitur, tua semper protectióne muniátur.
@@ -71,7 +77,7 @@ In illo témpore: Dixit Jesus turbis parábolam hanc: Simile factum est regnum c
 _
 Homilía S. Augustíni Epíscopi
 !Liber Quæst. Evang. in Matth. cap. 11, tom. 4
-Cum negligéntius ágerent præpósiti Ecclésiæ, aut cum dormitiónem mórtis accíperent Apóstoli, venit diabólus, et superseminávit eos, quos malos fílios Dóminus interpretátur. Sed quǽritur: utrum hærétici sint, an male vivéntes cathólici? Possunt enim dici fílii mali étiam hærétici, quia ex eódem Evangélii sémine, et Christi nómine procreáti, pravis opiniónibus ad falsa dógmata convertúntur.
+Cum negligéntius ágerent præpósiti Ecclésiæ, aut cum dormitiónem mortis accíperent Apóstoli, venit diábolus, et superseminávit eos, quos malos fílios Dóminus interpretátur. Sed quǽritur: utrum hærétici sint, an male vivéntes cathólici? Possunt enim dici fílii mali étiam hærétici, quia ex eódem Evangélii sémine, et Christi nómine procreáti, pravis opiniónibus ad falsa dógmata convertúntur.
 
 [Responsory7]
 @Tempora/Epi2-0:Responsory7
@@ -86,14 +92,8 @@ Sed quod dicit eos in médio trítici seminatos, quasi vidéntur illi significar
 In illa plane sagéna, qua concludúntur et mali et boni pisces, non absurde mali cathólici intelligúntur. Aliud est enim mare, quod magis mundum istum signíficat: aliud sagéna, quæ uníus fidei, vel uníus Ecclésiæ communiónem vidétur osténdere. Inter hæréticos et malos cathólicos hoc ínterest, quod hæretici falsa credunt: illi autem, vera credéntes, non vivunt ita ut credunt.
 &teDeum
 
-[Versum 2]
-@Tempora/Epi2-0:Versum 2
-
 [Ant 2]
 Dómine, * nonne bonum semen seminásti in agro tuo? unde ergo habet zizánia? Et ait illis: Hoc fecit inimícus homo.
-
-[Versum 3]
-@Tempora/Epi2-0:Versum 3
 
 [Ant 3]
 Collígite * primum zizánia, et alligáte ea in fascículos ad comburéndum: tríticum autem congregáte in hórreum meum, dicit Dóminus.

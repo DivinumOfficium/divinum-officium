@@ -1,23 +1,22 @@
+[Officium]
+S. Brunonis Confessoris
+
 [Rank]
-S. Brunonis Confessoris;;Duplex;;3;;vide C5
+;;Duplex;;3;;vide C5
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C5
 
 [Rule]
 vide C5;
 Gloria
 
-[Oratio]
-Sancti Brunónis Confessóris tui, quǽsumus, Dómine, intercessiónibus adjuvémur:~
-ut, qui majestátem tuam gráviter delinquéndo offéndimus, ejus méritis et~
-précibus, nostrórum delictórum véniam consequámur.
-$Per Dominum
+[Name]
+Brunónis
+Postcommunio=Brunóne
 
-[Secreta]
-Laudis tibi, Dómine, hóstias immolámus in tuórum commemoratióne Sanctórum:~
-quibus nos et præséntibus éxui malis confídimus et futúris.
+[Oratio]
+Sancti Brunónis Confessóris tui, quǽsumus, Dómine, intercessiónibus adjuvémur: ut, qui majestátem tuam gráviter delinquéndo offéndimus, ejus méritis et précibus, nostrórum delictórum véniam consequámur.
 $Per Dominum
 
 [Postcommunio]
-Quǽsumus, omnípotens Deus: ut, qui cœlestia aliménta percépimus, intercedénte~
-beáto Brunóne Confessóre tuo, per hæc contra ómnia advérsa muniámur.
-$Per Dominum
-
+@Commune/C5-1

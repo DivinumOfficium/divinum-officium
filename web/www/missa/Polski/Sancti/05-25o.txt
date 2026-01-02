@@ -1,0 +1,20 @@
+[Officium]
+Św. Urbana I, Papieża i Męczennika
+
+[Name]
+Urbana
+
+[Oratio]
+Spraw, prosimy Cię, Wszechmogący Boże, byśmy, obchodząc uroczystość błogosławionego Urbana Męczennika Twego i Papieża, zostali wspomożeni za jego przyczyną.
+$Per Dominum
+
+[Oratio] (communi Summorum Pontificum)
+@Commune/C2b:Oratio pro commemoratio
+(sed rubrica 196)
+@Commune/C2b
+
+[Secreta] (communi Summorum Pontificum)
+@Commune/C2b:Secreta pro commemoratio
+
+[Postcommunio] (communi Summorum Pontificum)
+@Commune/C2b:Postcommunio pro commemoratio

@@ -1,0 +1,179 @@
+@CommuneCist/C1p
+
+[Officium]
+@Commune/C2p
+
+[Hymnus Vespera]
+@Commune/C2
+
+[HymnusM Vespera]
+@Commune/C2
+
+[Versum 1]
+V. Justi in perpétuum vivent, allelúia.
+R. Et apud Dóminum est merces eórum, allelúia.
+
+[Oratio]
+@Commune/C2
+
+[Hymnus Matutinum]
+@Commune/C2:Hymnus Vespera
+
+[HymnusM Matutinum]
+@Commune/C2:HymnusM Vespera
+
+[Ant Matutinum]
+Allelúia, * allelúia, Allelúia.;;1
+;;2
+;;4
+;;5
+;;8
+;;10
+Allelúia, * allelúia, Allelúia.;;14
+;;20
+;;23
+;;63
+;;64
+;;91
+Allelúia, * allelúia, Allelúia.;;256;257;258
+
+[Nocturn 1 Versum]
+@CommuneCist/C3::s/\.$/, allelúia.$/g
+
+[Nocturn 2 Versum]
+@CommuneCist/C3::s/\.$/, allelúia.$/g
+
+[Nocturn 3 Versum]
+@CommuneCist/C3::s/\.$/, allelúia.$/g
+
+[Lectio1]
+@CommuneM/C2p
+
+[Responsory1]
+@CommuneCist/C1p:Responsory11
+
+[Lectio2]
+@CommuneM/C2p
+
+[Responsory2]
+@Commune/C2
+
+[Lectio3]
+@CommuneM/C2p
+
+[Responsory3]
+@CommuneCist/C2:Responsory6
+
+[Lectio4]
+@CommuneM/C2p
+
+[Responsory4]
+@Tempora/Pasc0-2:Responsory2:1-4
+
+[Lectio5]
+@Commune/C2p:Lectio4 in 2 loco
+
+[Responsory5]
+@CommuneCist/C1p:Responsory7
+
+[Lectio6]
+@Commune/C2p:Lectio5 in 2 loco:s/Inexpugnábilem.*//
+
+[Responsory6]
+@Commune/C1p:Responsory2
+
+[Lectio7]
+@Commune/C2p:Lectio5 in 2 loco:s/.*Inexpugnábilem/Inexpugnábilem/ s/$/~/
+@Commune/C2p:Lectio6 in 2 loco:s/Pretiósa mors.*//
+
+[Responsory7]
+R. Justórum ánimæ in manu Dei sunt,
+* Et non tanget illos torméntum mortis, allelúia, allelúia. 
+V. Visi sunt óculis insipiéntium mori, illi autem sunt in pace.
+R. Et non tanget illos torméntum mortis, allelúia, allelúia. 
+
+[Lectio8]
+@Commune/C2p:Lectio6 in 2 loco:s/.*Pretiósa mors/Pretiósa mors/
+
+[Responsory8]
+@CommuneCist/C1p:Responsory9
+
+[Lectio9]
+@Commune/C2p:Lectio7
+
+[Responsory9]
+@CommuneCist/C1p:Responsory3
+
+[Lectio10]
+@Commune/C2p:Lectio8:s/Sed cum .*//s
+
+[Lectio11]
+@Commune/C2p:Lectio9:s/Secúndum hoc .*//s
+
+[Responsory11]
+@CommuneM/C2p:Responsory12
+
+[Lectio12]
+@Commune/C2p:Lectio9:s/.* Secúndum hoc /Secúndum hoc /s
+
+[Responsory12]
+R. Lavérunt stolas suas,
+* Et cándidas eas fecérunt in sánguine Agni, Allelúia, allelúia, allelúia.
+V. Isti sunt qui venérunt ex magna tribulatióne, et lavérunt stolas suas:
+R. Et cándidas eas fecérunt in sánguine Agni, Allelúia, allelúia, allelúia.
+
+[Hymnus Laudes]
+@Commune/C2
+
+[HymnusM Laudes]
+@Commune/C2
+
+[Versum 2]
+@:Versum 1
+
+[Responsory Breve Tertia]
+R.br. Sancti tui, Dómine, benedícent te. Allelúja, allelúja.
+R. Sancti tui, Dómine, benedícent te. Allelúja, allelúja.
+V. Glóriam regni tui dicent, et poténtiam tuam loquéntur.
+R. Allelúja, allelúja.
+
+[Responsory Breve Sexta]
+R.br. Exúltent justi in conspéctu Dei, * Allelúia, allelúia.
+R. Exúltent justi in conspéctu Dei, * Allelúia, allelúia.
+V. Et delecténtur in lætítia.
+R. Allelúia, allelúia.
+
+[Versum 3]
+@:Versum 1
+
+[Evangelium]
+@Commune/C2p
+
+[Lectio5 in 2 loco]
+@Commune/C2p:Lectio4 in 2 loco
+
+[Lectio6 in 2 loco]
+@Commune/C2p:Lectio5 in 2 loco:s/Inexpugnábilem .*//s
+
+[Lectio7 in 2 loco]
+@Commune/C2p:Lectio5 in 2 loco:s/.* Inexpugnábilem /Inexpugnábilem /s s/$/~/
+@Commune/C2p:Lectio6 in 2 loco:s/Pretiósa est .*//s
+
+[Lectio8 in 2 loco]
+@Commune/C2p:Lectio6 in 2 loco:s/.* Pretiósa est /Pretiósa est /s
+
+[Lectio9 in 2 loco]
+@Commune/C2p:Lectio7 in 2 loco:s/Quamvis .*//s
+
+[Lectio10 in 2 loco]
+@Commune/C2p:Lectio7 in 2 loco:s/.* Quamvis /Quamvis /s s/$/~/
+@Commune/C2p:Lectio8 in 2 loco:s/Ligna .*//s
+
+[Lectio11 in 2 loco]
+@Commune/C2p:Lectio8 in 2 loco:s/.* Ligna /Ligna /s
+
+[Lectio12 in 2 loco]
+@Commune/C2p:Lectio9 in 2 loco
+
+[Evangelium in 2 loco]
+@Commune/C3p:Evangelium

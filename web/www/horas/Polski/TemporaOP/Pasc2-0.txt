@@ -1,0 +1,10 @@
+[Lectio1]
+@Tempora/Pasc2-0:Lectio7:s/ Uczynił.*//
+
+[Lectio2]
+@Tempora/Pasc2-0:Lectio7:s/.*(?=Uczynił)//s s/$/~/
+@Tempora/Pasc2-0:Lectio8:s/ Ale.*//
+
+[Lectio3]
+@Tempora/Pasc2-0:Lectio8:s/.*(?=Ale)// s/$/~/
+@Tempora/Pasc2-0:Lectio9:s/ Nie.*//

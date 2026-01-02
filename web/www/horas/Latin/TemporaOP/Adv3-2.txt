@@ -1,0 +1,32 @@
+@Tempora/Adv3-2
+
+[In Finem Lectio]
+@TemporaOP/Quad5-0
+
+[Lectio1]
+@Tempora/Adv4-2
+@:In Finem Lectio
+
+[Responsory1]
+@Tempora/Adv1-1
+
+[Lectio2]
+@Tempora/Adv4-2
+@:In Finem Lectio
+
+[Responsory2]
+@Tempora/Adv3-0:Responsory4
+
+[Lectio3]
+@Tempora/Adv4-2::1-4 s/-13/-12/
+@:In Finem Lectio
+
+[Responsory3]
+@Tempora/Adv3-0:Responsory5:1-2
+@Tempora/Adv3-0:Responsory3:1 s/R/V/ s/:$/./
+@Tempora/Adv3-0:Responsory5:2 s/\*/R./ s/,.*/./
+&Gloria
+@Tempora/Adv3-0:Responsory5:2 s/.*, (.)/R. \u$1/
+
+[Ant 3]
+@Tempora/Adv1-2:Ant 3C

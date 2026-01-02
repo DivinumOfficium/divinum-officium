@@ -1,0 +1,9 @@
+[Lectio10]
+@Tempora/Pent19-0:Lectio8:s/On to .*//s
+
+[Lectio11]
+@Tempora/Pent19-0:Lectio8:s/.* On to /On to /s s/$/~/
+@Tempora/Pent19-0:Lectio9:s/Mówimy .*//s
+
+[Lectio12]
+@Tempora/Pent19-0:Lectio9:s/.* Mówimy /Mówimy /s

@@ -1,33 +1,52 @@
-@Commune/C2
+[Lectio1]
+From the Book of Wisdom
+!Sap 5:1-4
+1 The just shall stand with great constancy against those that have afflicted them, and taken away their labours.
+2 These seeing it, shall be troubled with terrible fear, and shall be amazed at the suddenness of their unexpected salvation.
+3 Saying within themselves, repenting, and groaning for anguish of spirit: These are they, whom we had some time in derision, and for a parable of reproach.
+4 We fools esteemed their life madness, and their end without honour.
 
-[Name]
-Commune unius Martyris Tempore Paschali
+[Lectio2]
+!Sap 5:5-7;14
+5 Behold how they are numbered among the children of God, and their lot is among the saints.
+6 Therefore we have erred from the way of truth, and the light of justice hath not shined unto us, and the sun of understanding hath not risen upon us.
+7 We wearied ourselves in the way of iniquity and destruction, and have walked through hard ways, but the way of the Lord we have not known.
+14 Such things as these the sinners said in hell:
 
-[Ant Matutinum]
-Then shall the just stand * with great constancy against those that have afflicted them, alleluia;;1
-;;2
-;;4
-;;5
-;;8
-;;10
-V. Saints and just, rejoice in the Lord, alleluia.
-R. The Lord had chosen you for his inheritance, alleluia.
-Behold, how they are numbered * among the children of God, and their lot is among the Saints. Alleluia;;14
-;;20
-;;23
-;;63
-;;64
-;;95
-V. Eternal light will shine over your saints O Lord, alleluia
-R. And the eternity of the times, alleluia, alleluia
-Eternal light * will shine over your saints O Lord and the eternity of the times, alleluia;;256;257;258
-V. Everlasting joy shall be upon their heads, alleluia
-R. They shall obtain joy and gladness, alleluia
+[Lectio3]
+!Sap 5:16-17
+16 But the just shall live for evermore: and their reward is with the Lord, and the care of them with the most High.
+17 Therefore shall they receive a kingdom of glory, and a crown of beauty at the hand of the Lord: for with his right hand he will cover them, and with his holy arm he will defend them.
 
-[MM Capitulum]
-!Sap 5:5
-v. Behold how they are numbered among the children of God, and their lot is among the saints.
-$Deo gratias
-_
-V. Precious in the sight of the Lord
-R. Is the death of his saints. 
+[Lectio4]
+!Sap 5:18-21
+18 And his zeal will take armour, and he will arm the creature for the revenge of his enemies.
+19 He will put on justice as a breastplate, and will take true judgment instead of a helmet.
+20 He will take equity for an invincible shield:
+21 And he will sharpen his severe wrath for a spear, and the whole world shall fight with him against the unwise.
+
+[Responsory8]
+R. The just shall rejoice in the Lord, and shall hope in him: and praised shall be
+* All ye right of heart, allelúja, allelúja.
+V. Be glad in the Lord, and rejoice, ye just. And glory,
+R. All ye right of heart, allelúja, allelúja.
+
+[Lectio6 in 2 loco]
+@Commune/C2p:Lectio5 in 2 loco:s/The bloody .*//s
+
+[Lectio7 in 2 loco]
+@Commune/C2p:Lectio5 in 2 loco:s/.* The bloody /The bloody /s s/$/~/
+@Commune/C2p:Lectio6 in 2 loco:s/us, “Precious .*/us./s
+
+[Lectio8 in 2 loco]
+@Commune/C2p:Lectio6 in 2 loco:s/.* us, “Precious /“Precious /s
+
+[Lectio9 in 2 loco]
+@Commune/C2p:Lectio7 in 2 loco:s/And as .*//s
+
+[Lectio10 in 2 loco]
+@Commune/C2p:Lectio7 in 2 loco:s/.* And as /And as /s s/$/~/
+@Commune/C2p:Lectio8 in 2 loco:s/So much .*//s
+
+[Lectio11 in 2 loco]
+@Commune/C2p:Lectio8 in 2 loco:s/.* So much /So much /s

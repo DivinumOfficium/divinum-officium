@@ -1,0 +1,48 @@
+[Ant Vespera]
+Heródes rex * appósuit ut apprehénderet et Petrum; quem, cum apprehendísset, misit in cárcerem, volens post Pascha prodúcere eum pópulo.
+Petrus quidem * servabátur in cárcere; orátio autem fiébat sine intermissióne ab Ecclésia ad Deum pro eo.
+Dixit Angelus * ad Petrum: Circúmda tibi vestiméntum tuum, et séquere me.
+Misit Dóminus * Angelum suum, et liberávit me de manu Heródis, allelúja.
+Tu es Petrus, * et super hanc petram ædificábo Ecclésiam meam.;;116
+
+[Hymnus Vespera]
+v. Miris modis repénte liber, férrea,
+Christo jubénte, vincla Petrus éxuit:
+Ovílis ille Pastor et Rector gregis,
+Vitæ reclúdit páscua et fontes sacros,
+Ovésque servat créditas, arcet lupos.
+_
+Patri perénne sit per ævum glória;
+Tibíque laudes concinámus ínclytas,
+Ætérne Nate; sit, supérne Spíritus,
+Honor tibi decúsque: sancta júgiter
+Laudétur omne Trínitas per sǽculum.
+Amen.
+
+[HymnusM Vespera]
+v. Petrus beátus catenárum láqueos,
+Christo jubénte, rupit mirabíliter:
+Custos ovílis et Doctor Ecclésiæ,
+Pastórque gregis, conservátor óvium,
+Arcet lupórum truculéntam rábiem.
+_
+Glória Patri per imménsa sǽcula,
+Sit tibi Nate decus et impérium,
+Honor, potéstas, Sanctóque Spirítui:
+Sit Trinitáti salus indivídua,
+Per infiníta sæculórum sǽcula. Amen.
+
+[Oratio]
+{(c3) De(h)us,(h) qui(h) be(h)á(h)tum(h) Pe(h)trum(h) A(h)pós(h)to(h)lum,(h) a(h) vín(h)cu(h)lis(h) ab(h)so(h)lú(h)tum,(h) il(h)lǽ(h)sum(h) ab(h)í(h)re(h) fe(h)cís(h)ti:(f.) †(,) nos(h)tró(h)rum,(h) quæ(h)su(h)mus,(h) ab(h)sól(h)ve(h) vín(h)cu(h)la(h) pec(g)ca(f)tó(h hr)rum;(h.) *(;) et(h) óm(h)ni(h)a(h) ma(h)la(h) a(h) no(h)bis(h) pro(h)pi(h)ti(h)á(h)tus(h) ex(h)clú(h dr)de.(d.) (::)}
+$Per Dominum
+_
+@Sancti/02-22:Commemoratio4:s/\$Per Dominum//
+
+[Ant Laudes]
+@:Ant Vespera:s/;;116//
+
+[Ant Vespera 3]
+@:Ant Vespera:s/$/_/gm s/_/;;109/s s/_/;;112/ s/_/;;115/ s/_/;;125/ s/116/138/
+
+[Ant 3]
+Solve, * jubénte Deo, terrárum, Petre, caténas, qui facis ut páteant cæléstia regna beátis.

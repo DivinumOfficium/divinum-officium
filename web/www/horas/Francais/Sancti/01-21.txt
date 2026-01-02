@@ -1,12 +1,5 @@
-[Rank]
-S. Agnetis Virginis et Martyris;;Duplex;;3.1;;vide C6b
-
-[Rule]
-vide C6b ;
-9 lectiones
-
-[Capitulum Vespera]
-@Commune/C7:Capitulum Vespera
+[Officium]
+S. Agnetis Virginis et Martyris
 
 [Ant 1]
 La bienheureuse Agnès, * au milieu des flammes et les mains étendues, priait en disant : Je vous rends grâces, ô tout-puissant, digne d’adoration et d’honneur, Père redoutable, de ce que, par votre saint Fils, j’ai échappé aux menaces d’un tyran sacrilège, et, passant à travers les impuretés de la chair, j’ai suivi un sentier sans tache. Et, voici que je viens à vous que j’ai aimé, que j’ai cherché et que j’ai toujours désiré.
@@ -19,21 +12,12 @@ $Per Dominum
 Éloignez-vous de moi, * appât de mort, parce que déjà, j’ai été prévenue par un autre amant.;;1
 Il a entouré ma droite * et mon cou de pierres précieuses ; il a fixé à mes oreilles des perles sans prix.;;2
 Il a gravé un signe * sur ma face, afin que je n’admette point d’autre amant que lui.;;3
-V. En ta beauté et tes charmes.
-R. Va de l’avant, prospère et règne.
 Il m’a revêtue * d’une robe tissée d’or, et m’a parée de bijoux magnifiques.;;4
 J’ai reçu de sa bouche, * le miel et le lait, et son sang a coloré mes joues.;;5
 C’est à lui seul, * que je garde ma foi, à lui que je me livre en toute confiance.;;8
-V. Dieu l’aidera par sa contemplation.
-R. Dieu est en son cœur, elle ne sera pas ébranlée.
 A celui dont le soleil * et la lune admirent la beauté, à celui-là seul je garde ma foi.;;14
 Le Christ m’a entourée * de pierres précieuses aux couleurs vives et brillantes.;;44
 Je suis fiancée * à celui-là même que servent les Anges et dont le soleil et la lune admirent la beauté.;;45
-V. Dieu l’a aimée et l’a préférée.
-R. Il l’a fait habiter dans sa tente.
-
-[Lectio1]
-@Commune/C6:Lectio1 in 2 loco
 
 [Responsory1]
 R. Célébrons le jour de fête d’une très sainte Vierge ; rappelons à la mémoire comment souffrit la bienheureuse Agnès : à l’âge de treize ans, elle réduisit à rien la mort et trouva la vie :
@@ -41,17 +25,11 @@ R. Célébrons le jour de fête d’une très sainte Vierge ; rappelons à la m�
 V. C’était une enfant quant aux années, mais déjà très mûre quant à l’esprit.
 R. Parce qu’elle a aimé seulement l’auteur de la vie.
 
-[Lectio2]
-@Commune/C6:Lectio2 in 2 loco
-
 [Responsory2]
 R. Il a entouré ma droite et mon cou de pierres précieuses, il a fixé à mes oreilles des perles sans prix,
 * Et il m’a toute parée de joyaux brillants et étincelants comme la flamme.
 V. Il a gravé un signe sur ma face, afin que je n’admette point d’autre amant que lui.
 R. Et il m’a toute parée de joyaux brillants et étincelants comme la flamme.
-
-[Lectio3]
-@Commune/C6:Lectio3 in 2 loco
 
 [Responsory3]
 R. J’aime le Christ, j’entrerai dans l’intimité de celui dont la mère est vierge et dont le Père ne connaît pas de femme et dont les chants raisonnent pour moi en accords harmonieux :
@@ -63,7 +41,7 @@ R. Quand je l’aime, je suis chaste ; quand je le touche, je suis pure ; quand 
 
 [Lectio4]
 Du livre de saint Ambroise, Évêque, sur les Vierges.
-!Liber 1, post initium
+!Livre 1, après le commencement
 C’est aujourd’hui la naissance céleste d’une Vierge, imitons sa pureté. C’est le jour de naissance d’une Martyre, immolons des victimes. C’est le jour de naissance de sainte Agnès ; que les hommes admirent, que les enfants ne désespèrent point, que les femmes mariées soient émerveillées, que les vierges l’imitent. Mais que pouvons-nous dire, qui soit digne de celle dont le nom même contient déjà quelque louange ?1 Sa donation à Dieu est au-dessus de son âge, son courage au-dessus de sa nature, de sorte qu’elle ne me paraît pas avoir eu un nom de créature humaine, mais un nom prophétique de Martyre. qui présageait ce qu’elle serait. Le nom de Vierge est un titre de pureté. En l’appelant Martyre, je Fai assez louée. Elle s’étend largement la louange qu’on n’a pas cherchée, mais qu’on retient. Personne n’est plus digne d’éloge que celui qui peut être loué par tous. Autant d’hommes qui prononcent son nom, autant de hérauts qui louent la Martyre.
 
 [Responsory4]
@@ -112,17 +90,8 @@ R. De ce que, par votre Fils unique, j’ai échappé aux menaces d’hommes imp
 &Gloria
 R. De ce que, par votre Fils unique, j’ai échappé aux menaces d’hommes impies, et, passant à travers les impuretés du démon, suivi un sentier sans souillure.
 
-[Ant Laudes]
-@:Ant Vespera 3:s/;;.*//g
-
-[Capitulum Laudes]
-@:Capitulum Vespera
-
 [Ant 2]
 Je vois maintenant * ce que j’ai ardemment désiré ; ce que j’ai espéré, je le possède enfin ; je suis unie dans les cieux à celui que, sur terre, j’ai aimé de toute mon âme.
-
-[Capitulum Tertia]
-@:Capitulum Laudes
 
 [Capitulum Sexta]
 !Sir 51:4-5

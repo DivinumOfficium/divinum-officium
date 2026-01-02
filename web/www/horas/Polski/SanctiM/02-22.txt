@@ -1,0 +1,14 @@
+[Lectio94]
+@Sancti/01-18:Lectio4:s/A z.*//s
+@Sancti/01-18:Lectio5:s/.*(Do tego.*), i w.*/$1. /s
+@Sancti/01-18:Lectio6
+
+[Lectio10] (rubrica 1617)
+@Sancti/02-22:Lectio8:s/ A na.*//
+
+[Lectio11] (rubrica 1617)
+@Sancti/02-22:Lectio8:s/.* A na/A na/ s/$/~/
+@Sancti/02-22:Lectio9:s/ Co.*//
+
+[Lectio12] (rubrica 1617)
+@Sancti/02-22:Lectio9:s/.*Co/Co/

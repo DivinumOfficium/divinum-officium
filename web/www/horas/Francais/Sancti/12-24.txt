@@ -1,12 +1,9 @@
 [Rank]
-In Vigilia Nativitatis Domini;;Duplex I classis;;6.1
+Vigile de la Nativité de notre Seigneur Jésus Christ;;Duplex I classis;;6.1
 
-[Rule]
-3 lectiones
-Matins simplex
-Psalmi Dominica
-Antiphonas horas
-Tempora none
+[Oratio]
+Seigneur Dieu, vous nous donnez chaque année la joie d’attendre notre rédemption. Et puisque c’est dans la joie que nous accueillons votre Fils unique, lorsqu’il viendra nous racheter, accordez-nous de pouvoir encore le regarder sans inquiétude, quand il reviendra pour nous juger.
+$Qui tecum
 
 [Invit]
 Vous saurez aujourd’hui que le Seigneur viendra ; * Et le matin, vous verrez sa gloire.
@@ -17,7 +14,7 @@ Lecture du saint Évangile selon saint Matthieu.
 En ce temps-là : Marie, la mère de Jésus, ayant été fiancée à Joseph, il se trouva, avant qu’ils eussent habité ensemble, qu’elle avait conçu par la vertu du Saint-Esprit. Et le reste.
 _
 Homélie de saint Jérôme, Prêtre.
-!Lib. 1 Comment. in c. 1 Matth.
+!Livre 1 Comment. sur chap. 1 Matth.
 Pourquoi n’est-ce pas simplement par une vierge, mais par une vierge fiancée, qu’il est conçu ? D’abord, afin que par la généalogie de Joseph, celle de Marie fût constatée ; en second lieu, de peur qu’elle ne fût lapidée par les Juifs comme adultère ; en troisième lieu, pour que, fugitive en Égypte, elle eût un soutien en la personne de Joseph. Le Martyr saint Ignace ajoute une quatrième raison : s’il est conçu par une fiancée, c’est, dit-il, pour cacher cet enfantement au démon, qui le croira le fruit, non d’une vierge, mais d’une épouse.
 
 [Responsory1]
@@ -65,25 +62,19 @@ R. Et le Sauveur du monde régnera sur nous.
 [Ant 2]
 Le Sauveur du monde se lèvera * comme un soleil, et il descendra dans le sein de la Vierge comme la pluie sur le gazon, alléluia.
 
-[Oratio]
-Seigneur Dieu, vous nous donnez chaque année la joie d’attendre notre rédemption. Et puisque c’est dans la joie que nous accueillons votre Fils unique, lorsqu’il viendra nous racheter, accordez-nous de pouvoir encore le regarder sans inquiétude, quand il reviendra pour nous juger.
-$Qui tecum
-
 [Lectio Prima]
 !Rom 1:5-6
 v. Par lui nous avons reçu la grâce et l’apostolat pour répandre en son nom l’obéissance à la foi dans toutes les nations, au milieu desquelles vous êtes vous aussi les appelés de Jésus- Christ Notre Seigneur.
 
-[Capitulum Tertia]
-@:Capitulum Laudes
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Aujourd’hui vous saurez * Que viendra le Seigneur.
 R. Aujourd’hui vous saurez * Que viendra le Seigneur.
 V. Et au matin vous verrez sa gloire.
 R. Que viendra le Seigneur.
 &Gloria
 R. Aujourd’hui vous saurez * Que viendra le Seigneur.
-_
+
+[Versum Tertia]
 V. Soyez constants.
 R. Vous verrez le secours du Seigneur sur vous.
 
@@ -92,14 +83,15 @@ R. Vous verrez le secours du Seigneur sur vous.
 v. Il a été prédestiné Fils de Dieu en puissance, selon l’esprit de sanctification, par la résurrection d’entre les morts de Notre Seigneur Jésus-Christ,
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Demain, * Elle sera effacée l’iniquité de la terre,
 R. Demain, * Elle sera effacée l’iniquité de la terre,
 V. Et il régnera sur nous, le Sauveur du monde.
 R. Elle sera effacée l’iniquité de la terre,
 &Gloria
 R. Demain, * Elle sera effacée l’iniquité de la terre.
-_
+
+[Versum Sexta]
 V. Demain sera pour vous le salut.
 R. Dit le Seigneur, Dieu des armées.
 
@@ -107,13 +99,14 @@ R. Dit le Seigneur, Dieu des armées.
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Demain * Sera pour vous le salut,
 R. Demain * Sera pour vous le salut,
 V. Dit le Seigneur Dieu des armées.
 R. Sera pour vous le salut.
 &Gloria
 R. Demain * Sera pour vous le salut.
-_
+
+[Versum Nona]
 V. Demain, elle sera effacée l’iniquité de la terre.
 R. Et il régnera sur nous, le Sauveur du monde.

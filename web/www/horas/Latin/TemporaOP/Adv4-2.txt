@@ -1,0 +1,31 @@
+@Tempora/Adv4-2
+
+[In Finem Lectio]
+@TemporaOP/Quad5-0
+
+[Lectio1]
+@Tempora/Adv4-4
+@:In Finem Lectio
+
+[Responsory1]
+@Tempora/Adv4-0:Responsory5
+
+[Lectio2]
+@Tempora/Adv4-4::s/: [^:]*$/.\n/s
+@:In Finem Lectio
+
+[Responsory2]
+@Tempora/Adv4-0:Responsory6:1-2 s/\n\*// s/\* (.)/\l$1/ s/(\S+ \S+)$/\n* \u$1/
+@Tempora/Adv4-0:Responsory6:3
+@Tempora/Adv4-0:Responsory6:2 s/.* (\S+ \S+)$/R. \u$1/
+
+[Lectio3]
+@Tempora/Adv4-4::1
+@Tempora/Adv4-4:Lectio2:4 s/.*: (.)/7 \u$1/
+@Tempora/Adv4-4::2-4
+@:In Finem Lectio
+
+[Responsory3]
+@Tempora/Adv4-0:Responsory7:1-2 s/\n\*// s/(\S+ \S+)$/\n* \u$1/
+@Tempora/Adv4-0:Responsory7:3
+@Tempora/Adv4-0:Responsory7:2 s/.* (\S+ \S+)$/R. \u$1/

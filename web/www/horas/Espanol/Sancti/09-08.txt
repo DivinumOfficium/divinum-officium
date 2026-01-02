@@ -1,15 +1,8 @@
 [Rank]
 In Nativitate Beatæ Mariæ Virginis;;Duplex II classis cum Octava simplici;;5.1;;ex C11
 
-[Rank1960]
+[Rank] (rubrica 196)
 In Nativitate Beatæ Mariæ Virginis;;Duplex II classis cum Octava simplici;;5;;ex C11
-
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
 
 [Ant Vespera]
 Esta es la Natividad * de la gloriosa Virgen María, descendiente de Abrahán, de la tribu de Judá y de la noble estirpe de David.;;109
@@ -29,11 +22,22 @@ Celebremos * el santo nacimiento de la gloriosa Virgen María, que alcanzó la d
 Te suplicamos, Señor, concedas a tus siervos el don de tu gracia celestial, a fin de que aquellos para quienes el parto de la bienaventurada Virgen fue el principio de la salvación, reciban un aumento de paz con la solemnidad votiva de su Natividad.
 $Per Dominum
 
+[Octava]
+!Conmemoración de la Octava de la Natividad de la B.M.V.
+Ant. Tu nacimiento, * Virgen Madre de Dios, anunció la alegría a todo el mundo. De ti nació el sol de justicia, Cristo, nuestro Dios, que borrando la maldición, nos trajo la bendición, y, triunfando de la muerte, nos dio la vida eterna.
+_
+V. Hoy es la Natividad de Santa María Virgen.
+R. Cuya vida gloriosa honra a todas las iglesias.
+_
+$Oremus
+v. Te suplicamos, Señor, concedas a tus siervos el don de tu gracia celestial, a fin de que aquellos para quienes el parto de la bienaventurada Virgen fue el principio de la salvación, reciban un aumento de paz con la solemnidad votiva de su Natividad.
+$Per Dominum
+
 [Invit]
 Celebremos la Natividad de la Virgen María: * Adoremos a Cristo, su hijo, nuestro Señor.
 
 [Lectio1]
-@Sancti/08-15:Lectio1
+@Sancti/08-15
 
 [Responsory1]
 R. Hoy ha nacido la bienaventurada Virgen María del linaje de David. 
@@ -42,7 +46,7 @@ V. Celebremos gozosamente la Natividad de la bienaventurada Virgen María.
 R. Por ella, la salvación ha aparecido a los fieles de la tierra, y su vida gloriosa ha iluminado al mundo. 
 
 [Lectio2]
-@Sancti/08-15:Lectio2
+@Sancti/08-15
 
 [Responsory2]
 R. Celebremos con la mayor devoción la Natividad de la Beatísima Virgen María. 
@@ -51,7 +55,7 @@ V. Alegre y devotamente celebremos la Natividad de la bienaventurada Virgen Mar�
 R. Para que ella interceda por nosotros a nuestro Señor Jesucristo. 
 
 [Lectio3]
-@Sancti/08-15:Lectio3
+@Sancti/08-15
 
 [Responsory3]
 R. Honremos la dignísima Natividad de la gloriosa Virgen María: 
@@ -119,43 +123,11 @@ R. Porque de vos ha nacido el sol de justicia.
 R. Cristo, nuestro Señor. 
 
 [Lectio9]
-!Conmemoración de S. Adrián, Mártir
-Persiguiendo Adrián a los cristianos en Nicomedia, por orden de Maximiano, había podido admirar muchas veces la constancia con que confesaban la fe y sufrían los tormentos; impresionado por este espectáculo, se convirtió al cristianismo, por cuyo motivo fue encarcelado, con otros veintitrés cristianos. Fue visitado por su esposa Natalia, la cual era ya cristiana y despertó en él grandes ansias del martirio. Sacado de la prisión, fue azotado hasta que le salieron las entrañas. Por último, después de haberle sido rotas las piernas y cortadas las manos y los pies, terminó felizmente su combate, en compañía de muchos hermanos suyos en la fe.
-&teDeum
-
-[Lectio9](rubrica 1960)
 Jacob engendró a José. Estas palabras han dado pretexto al emperador Juliano para objetarnos que existe una discrepancia entre los evangelistas, por cuanto Mateo llama a José hijo de Jacob, y Lucas, hijo de Helí. Ignora, sin duda, que, según las Escrituras, además del padre natural puede haber el padre legal. Sabemos que Moisés, por disposición divina, prescribió que cuando un hermano o pariente muriese sin dejar hijos, otro se desposara con su esposa para dar descendencia a dicho hermano o pariente. “José, esposo de María”. AI oír la palabra esposo, no creáis que se trate de casados; recordad más bien que las Escrituras acostumbran a llamar a los desposados esposo y esposa.
 &teDeum
-
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//g
 
 [Ant 2]
 Celebremos hoy * solemnemente el nacimiento de la Virgen María, Madre de Dios, de la cual nació el que reina en el cielo. Aleluya.
 
-[Versum 2]
-@:Versum 1
-
-[Commemoratio]
-!Conmemoración de S. Adrián, Mártir
-@Commune/C2:Oratio proper
-$Oremus
-v. Dios Todopoderoso, al celebrar la entrada en la gloria de tu mártir San Adrián, por su intercesión, fortalécenos en el amor de tu nombre.
-$Per Dominum
-
-[Versum 3]
-@:Versum 1
-
 [Ant 3]
 Tu nacimiento, * Virgen Madre de Dios, anunció la alegría a todo el mundo. De ti nació el sol de justicia, Cristo, nuestro Dios, que borrando la maldición, nos trajo la bendición, y, triunfando de la muerte, nos dio la vida eterna.
-
-[Octava]
-!Conmemoración de la Octava de la Natividad de la B.M.V.
-Ant. Tu nacimiento, * Virgen Madre de Dios, anunció la alegría a todo el mundo. De ti nació el sol de justicia, Cristo, nuestro Dios, que borrando la maldición, nos trajo la bendición, y, triunfando de la muerte, nos dio la vida eterna.
-_
-V. Hoy es la Natividad de Santa María Virgen.
-R. Cuya vida gloriosa honra a todas las iglesias.
-_
-$Oremus
-v. Te suplicamos, Señor, concedas a tus siervos el don de tu gracia celestial, a fin de que aquellos para quienes el parto de la bienaventurada Virgen fue el principio de la salvación, reciban un aumento de paz con la solemnidad votiva de su Natividad.
-$Per Dominum

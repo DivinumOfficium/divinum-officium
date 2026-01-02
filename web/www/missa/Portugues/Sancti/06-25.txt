@@ -1,39 +1,32 @@
-[Rank]
-S. Gulielmi Abbatis;;Duplex;;3;;vide C4c
-
-[Rule]
-vide C4c;
-Gloria
+[Officium]
+S. Guilherme, Abade
 
 [Comment]
 # 25 VI – S. Guilherme, Abade
 ! 3 classe
 ! Paramentos brancos
 
+[Name]
+Guilherme
+
 [Introitus]
-@Commune/C4c:Introitus
+@Commune/C5b:Introitus
 
 [Oratio]
 Ó Deus, que para facilitar à nossa fraqueza o caminho da salvação no auxiliais com o exemplo e com a assistência dos vossos Santos, concedei-nos a graça de imitar os méritos do B. Abade Guilherme de modo que mereçamos o socorro das suas preces e sigamos os seus passos.
 $Per Dominum
 
 [Lectio]
-@Commune/C4c:Lectio
+@Commune/C5b:Lectio
 
 [Graduale]
-@Commune/C4c:Graduale
+@Commune/C5b:Graduale
 
 [Evangelium]
-@Commune/C4c:Evangelium
+@Commune/C5b:Evangelium
 
 [Offertorium]
-@Commune/C4c:Offertorium
-
-[Secreta]
-@Commune/C4c:Secreta
+@Commune/C5b:Offertorium
 
 [Communio]
-@Commune/C4c:Communio
-
-[Postcommunio]
-@Commune/C4c:Postcommunio
+@Commune/C5b:Communio

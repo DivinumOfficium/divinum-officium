@@ -1,0 +1,6 @@
+[Lectio1]
+@Tempora/Pasc0-6::s/ Yea.*//
+
+[Lectio2]
+@Tempora/Pasc0-6:Lectio1:s/.*(?=Yea)//s s/$/~/
+@Tempora/Pasc0-6

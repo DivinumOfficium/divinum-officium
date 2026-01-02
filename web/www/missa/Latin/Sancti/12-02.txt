@@ -1,27 +1,22 @@
-[Rank]
-S. Bibianæ Virginis et Martyris;;Semiduplex;;2.5;;vide C6a
+[Officium]
+S. Bibianæ Virginis et Martyris
 
-[Rank1570]
-S. Bibianæ Virginis et Martyris;;Simplex;;1.1;;vide C6a
+[Rank]
+;;Semiduplex;;2.2;;vide C6-1
+(sed rubrica 1570 aut rubrica monastica)
+;;Simplex;;1.1;;vide C6-1
+(sed rubrica cisterciensis)
+;;Simplex;;1;;vide C6-1
 
 [Rule]
-vide C6a;
+vide C6-1;
 Gloria
 
+[Name]
+Bibiána
+Secreta=Bibiánæ
+Postcommunio=Bibiána
+
 [Oratio]
-Deus, ómnium largítor bonórum, qui in fámula tua Bibiána cum virginitátis flore~
-martýrii palmam conjunxísti: mentes nostras ejus intercessióne tibi caritáte~
-conjúnge; ut, amótis perículis, prǽmia consequámur ætérna.
+Deus, ómnium largítor bonórum, qui in fámula tua Bibiána cum virginitátis flore martýrii palmam conjunxísti: mentes nostras ejus intercessióne tibi caritáte conjúnge; ut, amótis perículis, prǽmia consequámur ætérna.
 $Per Dominum
-
-[Secreta]
-Hóstias tibi, Dómine, beátæ Bibiánæ Vírginis et Martyris tuæ dicátas méritis,~
-benígnus assúme: et ad perpétuum nobis tríbue proveníre subsídium.
-$Per Dominum
-
-[Postcommunio]
-Divíni múneris largitáte satiáti, quǽsumus, Dómine, Deus noster: ut,~
-intercedénte beáta Bibiána Vírgine et Mártyre tua, in ejus semper participatióne~
-vivámus.
-$Per Dominum
-

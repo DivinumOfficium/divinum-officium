@@ -1,14 +1,5 @@
-[Rank]
-S. Thomæ Apostoli;;Duplex II classis;;5.1;;ex C1
-
-[Rank1960]
-S. Thomæ Apostoli;;Duplex II classis;;5;;ex C1
-
-[Rule]
-ex C1;
-9 lectiones;
-Psalmi Dominica
-Antiphonas horas
+[Officium]
+S. Thomæ Apostoli
 
 [Ant 1]
 Porque me has visto, Tomás, has creído: dichosos los que creen sin haber visto. Aleluya.
@@ -19,12 +10,6 @@ $Per Dominum
 
 [Lectio4]
 Tomás Apóstol, que también es conocido con el nombre de Dídimo, natural de Galilea, después de haber recibido el Espíritu Santo, recorrió muchas provincias para predicar el Evangelio de Jesucristo. Enseñó la fe y los preceptos de la vida cristiana a los Partos, Medos, Persas, Hircanos y Bactrianos. Por último, dirigiéndose a los Indios, les instruyó en la religión cristiana. Y como la santidad de su vida y de su doctrina excitase la admiración de los Indios hacia el Apóstol y su amor a Jesucristo, el rey de aquel país, adorador de los ídolos y lleno de cólera, condenó a muerte a Tomás. Atravesado por los dardos, murió en Calamina, realzando el honor de su apostolado coronado con el martirio.
-
-[Lectio5]
-@Commune/C1:Lectio4
-
-[Lectio6]
-@Commune/C1:Lectio5
 
 [Lectio7]
 Lectura del Santo Evangelio según San Juan
@@ -41,9 +26,3 @@ Si el Señor permitió que, después de su Resurrección, dudase un discípulo, 
 [Lectio9]
 ¿Por qué el Señor dijo a Tomás, tras haber palpado: “Porque me has visto, Tomás, has creído”? Porque una cosa es lo que vio, y otra lo que creyó. Un hombre mortal no puede ver la divinidad. Vio a Jesús hombre, y lo confesó Dios, diciendo: “Señor mío y Dios mío”. Viendo, pues, creyó; considerando la humanidad verdadera de Jesucristo, proclamó su divinidad, que sus miradas no podían ver. Las palabras siguientes son motivo de alegría: “Bienaventurados los que no vieron y creyeron”. Sentencia que se dirige a los que, no habiéndole visto en su carne, lo retenemos en nuestras almas por la fe. Nosotros somos los designados por el Salvador, a condición de que nuestras obras estén de conformidad con nuestra fe. Porque sólo cree en verdad quien practica lo que cree.
 &teDeum
-
-[Ant 2]
-@:Ant 1
-
-[Ant 3]
-@:Ant 1

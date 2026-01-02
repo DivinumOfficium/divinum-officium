@@ -1,0 +1,6 @@
+[Lectio1]
+@Tempora/Quad5-5Feria::s/ They.*//
+
+[Lectio2]
+@Tempora/Quad5-5Feria:Lectio1:s/.* (?=They)//s s/$/~/
+@Tempora/Quad5-5Feria

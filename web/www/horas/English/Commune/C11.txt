@@ -1,24 +1,61 @@
-[Name]
+[Officium]
 In Festis Beatae Mariae Virginis
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
+[Missa]
+Salve Sancta Parens
 
-[Ant Vespera]
-While the King sitteth at his table, * my spikenard sendeth forth the smell thereof.;;109
+[Ant VesperaBMV]
 His left hand is under my head, * and his right hand doth embrace me.;;112
-I am black but comely, * O ye daughters of Jerusalem. Therefore the King hath loved me, and brought me into his chamber.;;121
-Lo the winter is past, * the rain is over and gone. Rise up, my love, and come away.;;126
 O Holy Mother of God, thou art become beautiful * and gentle in thy gladness.;;147
+
+[Hymnus Vespera]
+/:The first verse of the following hymn is said genuflecting.:/
+v. Ave, star of ocean,
+Child divine who barest,
+Mother, ever-Virgin,
+Heaven's portal fairest.
+_
+Taking that sweet Ave
+Erst by Gabriel spoken,
+Eva's name reversing,
+Be of peace the token.
+_
+Break the sinners' fetters,
+Light to blind restoring,
+All our ills dispelling,
+Every boon imploring.
+_
+Show thyself a mother
+In thy supplication;
+He will hear who chose thee
+At his incarnation.
+_
+Maid all maids excelling,
+Passing meek and lowly,
+Win for sinners pardon,
+Make us chaste and holy.
+_
+As we onward journey
+Aid our weak endeavour,
+Till we gaze on Jesus
+And rejoice forever.
+_
+Father, Son, and Spirit,
+Three in One confessing,
+Give we equal glory
+Equal praise and blessing.
+Amen.
 
 [Versum 1]
 V. Holy Virgin, my praise by thee accepted be.
 R. Give me strength against thine enemies.
 
 [Ant 1]
-O Holy Mary, be thou an help to the helpless, a strength to the fearful, a comfort to the sorrowful; * pray for the people, plead for the clergy, make intercession for all women vowed to God; may all that are keeping this thine holy Feast-day feel the might of thine assistance.
+O Holy Mary, * be thou an help to the helpless, a strength to the fearful, a comfort to the sorrowful; pray for the people, plead for the clergy, make intercession for all women vowed to God: may all that are keeping this thine holy Feast-day feel the might of thine assistance.
+
+[Oratio]
+Grant, we beseech thee, O Lord God, unto all thy servants, that they may remain continually in the enjoyment of soundness both of mind and body, and by the glorious intercession of the Blessed Mary, always a Virgin, may be delivered from present sadness, and enter into the joy of thine eternal gladness.
+$Per Dominum
 
 [Invit]
 Holy Virgin Mary, * Mother of God, pray for us.
@@ -32,7 +69,7 @@ _
 The God, whose will by moon and sun
 And all things in due course is done,
 Is borne upon a maiden's breast,
-By fullest heavenly grace possest,
+By fullest heavenly grace possest.
 _
 How blest that mother, in whose shrine
 The great artificer divine,
@@ -44,28 +81,20 @@ Blest, by the work the Spirit wrought;
 From whom the great desire of earth
 Took human flesh and human birth.
 _
-All honour, laud, and glory be,
+* All honour, laud, and glory be,
 O Jesu, Virgin-born to thee;
 All glory, as is ever meet,
 To Father and to Paraclete.
 Amen.
 
-[Ant Matutinum]
+[Ant MatutinumBMV]
 Blessed art thou among women, * and blessed is the fruit of thy womb.;;8
 O Holy Mother of God * thou hast yielded a pleasant odor like the best myrrh.;;18
 Sing for us again and again before this maiden's bed * the tender idylls of the play.;;23
-V. In thy comeliness and thy beauty.
-R. Go forward, fare prosperously, and reign.
-In thy comeliness and thy beauty, * go forward, fare prosperously, and reign.;;44
-God shall give her the help of His countenance; * God is in the midst of her, she shall not be moved.;;45
 O Holy Mother of God * all we who dwell in thee are in gladness.;;86
-V. God shall help her with his strength.
-R. God is in the midst of her, she shall not be moved.
 Joy to thee, * O Virgin Mary, thou hast trampled down all the heresies in the whole world.;;95
 Holy Virgin, my praise by thee accepted be; * give me strength against thine enemies.;;96
 After thy delivery thou still remainest a virgin; * undefiled Mother of God, pray for us.;;97
-V. God hath chosen her and fore-chosen her.
-R. He hath made her to dwell in His tabernacle.
 
 [Lectio1]
 Lesson from the book of Proverbs
@@ -105,7 +134,7 @@ R. And I have brought forth from my bowels God and man.
 34 Blessed is the man that heareth me, and that watcheth daily at my gates, and waiteth at the posts of my doors.
 35 He that shall find me, shall find life, and shall have salvation from the Lord:
 36 But he that shall sin against me, shall hurt his own soul. All that hate me love death.
-1 Wisdom hath built herself a house, she hath hewn her out seven pillars.
+1 Wisdom hath built herself a house, she hath hewn out her seven pillars.
 2 She hath slain her victims, mingled her wine, and set forth her table.
 3 She hath sent her maids to invite to the tower, and to the walls of the city:
 4 Whosoever is a little one, let him come to me. And to the unwise she said:
@@ -166,9 +195,7 @@ V. Pray for the people, plead for the clergy, make intercession for all women vo
 R. For out of thee rose the Sun of righteousness, even Christ our God.
 
 [Lectio8]
-If we shall say that the Flesh, Wherewith the Son of God was born in the flesh, was something outside of the flesh of the Virgin His Mother, without reason should we bless the womb that bore Him, and the paps which He hath sucked. But the Apostle saith: "God sent forth His Son, made of a woman, made under the law",~
-~(Gal. iv. 4,) and they are not to be listened to who read this passage: "Born of a woman, made under the law." He was made of a woman, for He was conceived in a virgin's womb, and took His Flesh, not from nothing, not from elsewhere, but~
-from the flesh of His Mother. Otherwise, and if He had not been sprung of a woman, He could not with truth be called the Son of man. Let us therefore, denying the doctrine of Eutyches, lift up our voice, along with the Universal Church, whereof that woman was a figure, let us lift up our heart as well as our voice from the company, and say unto the Saviour: Blessed is the womb that bare thee, and the paps which thou hast sucked. Blessed Mother, of whom one hath said thou art His Mother, Who reigns over earth and over heaven for ever.
+If we shall say that the Flesh, Wherewith the Son of God was born in the flesh, was something outside of the flesh of the Virgin His Mother, without reason should we bless the womb that bore Him, and the paps which He hath sucked. But the Apostle saith: “God sent forth His Son, made of a woman, made under the law”, (Gal. iv. 4,) and they are not to be listened to who read this passage: “Born of a woman, made under the law.” He was made of a woman, for He was conceived in a virgin's womb, and took His Flesh, not from nothing, not from elsewhere, but from the flesh of His Mother. Otherwise, and if He had not been sprung of a woman, He could not with truth be called the Son of man. Let us therefore, denying the doctrine of Eutyches, lift up our voice, along with the Universal Church, whereof that woman was a figure, let us lift up our heart as well as our voice from the company, and say unto the Saviour: Blessed is the womb that bare thee, and the paps which thou hast sucked. Blessed Mother, of whom one hath said thou art His Mother, Who reigns over earth and over heaven for ever.
 
 [Responsory8]
 R. All generations shall call me blessed.
@@ -179,18 +206,115 @@ R. He that is mighty, even the Lord, hath done to me great things; and Holy is H
 R. He that is mighty, even the Lord, hath done to me great things; and Holy is His Name.
 
 [Lectio9]
-Yea, rather, blessed are they that hear the Word of God and keep it. How nobly doth the Saviour say "Yea" to the woman's blessing, declaring also that not only is she blessed who was meet to give bodily birth to the Word of God, but that all they who spiritually conceive the same Word by the hearing of faith, and, by keeping it through good works, bring it forth and, as it were, carefully nurse it, in their own hearts, and in the hearts of their neighbours, are also blessed. Yea, and that the very Mother of God herself was blessed in being for a while the handmaid of the Word of God made Flesh, but that she was much more blessed in this, that through her love she keepeth Him for ever.
+Yea, rather, blessed are they that hear the Word of God and keep it. How nobly doth the Saviour say “Yea” to the woman's blessing, declaring also that not only is she blessed who was meet to give bodily birth to the Word of God, but that all they who spiritually conceive the same Word by the hearing of faith, and, by keeping it through good works, bring it forth and, as it were, carefully nurse it, in their own hearts, and in the hearts of their neighbours, are also blessed. Yea, and that the very Mother of God herself was blessed in being for a while the handmaid of the Word of God made Flesh, but that she was much more blessed in this, that through her love she keepeth Him for ever.
 &teDeum
 
-[Ant Laudes]
-While the King sitteth at his table, * my spikenard sendeth forth the smell thereof.
-His left hand is under my head, * and his right hand doth embrace me.
-I am black but comely, * O ye daughters of Jerusalem. Therefore the King hath loved me, and brought me into his chamber.
-Lo the winter is past, * the rain is over and gone. Rise up, my love, and come away.
-O Holy Mother of God thou art become beautiful * and gentle in thy gladness.
+[Versum 0]
+V. Pray for us, holy Mother of God. 
+R. That we may be made worthy of the promises of Christ. 
+
+[Capitulum Laudes]
+!Sir 24:14
+v. From the beginning, and before the world, was I created, and unto the world to come I shall not cease to be, and in the holy dwelling place I have ministered before him.
+$Deo gratias.
+
+[Hymnus Laudes]
+v. O glorious lady! throned on high
+Above the star-illumined sky;
+Thereto ordained, thy bosom lent
+To thy Creator nourishment.
+_
+Through thy sweet offspring we receive
+The bliss once lost through hapless Eve;
+And heaven to mortals open lies
+Now thou art portal of the skies.
+_
+Thou art the door of heaven's high King,
+Light's gateway fair and glistering;
+Life through a Virgin is restored;
+Ye ransomed nations, praise the Lord!
+_
+All honour, laud, and glory be,
+O Jesu, Virgin-born, to thee;
+All glory, as is ever meet,
+To Father and to Paraclete.
+Amen.
 
 [Ant 2]
 O Mary * blessed art thou that didst believe! for there shall be a performance of those things which were told thee from the Lord. Alleluia.
 
+[Lectio Prima]
+!Sir 24:19-20
+v. As a plane tree by the water in the streets, I gave a sweet smell like cinnamon. and aromatical balm: I yielded a sweet odour like the best myrrh.
+
+[Capitulum Sexta]
+!Sir 24:15-16
+v. And so was I established in Sion, and in the holy city likewise I rested, and my power was in Jerusalem. And I took root in an honourable people, and in the portion of my God his inheritance, and my abode is in the full assembly of saints.
+$Deo gratias.
+
 [Ant 3]
 All generations shall call me blessed, * for God hath regarded the lowliness of His hand-maiden.
+
+[Introitus]
+!Sedulius
+v. Hail, holy Mother, who in childbirth brought forth the King Who rules heaven and earth world without end.
+!Ps 44:2
+My heart overflows with a goodly theme; as I sing my ode to the King.
+&Gloria
+v. Hail, holy Mother, who in childbirth brought forth the King Who rules heaven and earth world without end.
+
+[Oratio] (ad missam)
+Grant us, Your servants, O Lord God, we beseech You, to enjoy lasting health of mind and body; and by the intercession of glorious and blessed Mary, ever Virgin, may we be delivered from present sorrow and partake to the full of eternal happiness.
+$Per Dominum
+
+[Lectio]
+Lesson from the book of Ecclesiasticus
+!Ecclus 24:14-16
+Before all ages, in the beginning, He created me, and through all ages I shall not cease to be. In the holy Tent I ministered before Him, and in Sion I fixed my abode. Thus in the chosen city He has given me rest, in Jerusalem is my domain. I have struck root among the glorious people, in the portion of my God, His heritage, and my abode is in the full assembly of Saints.
+
+[Graduale]
+Blessed and venerable are you, O Virgin Mary, who, with unsullied virginity, were found to be the Mother of the Saviour.
+V. O Virgin, Mother of God, He Whom the whole world does not contain, becoming man, shut Himself in your womb. Alleluia, alleluia.
+V. After childbirth you remained a pure virgin, O Mother of God, intercede for us. Alleluia.
+
+[Graduale] (tempore Adventus)
+Blessed and venerable are you, O Virgin Mary, who, with unsullied virginity, were found to be the Mother of the Saviour.
+V. O Virgin, Mother of God, He Whom the whole world does not contain, becoming man, shut Himself in your womb. Alleluia, alleluia.
+!Luke 1:28
+v. Hail, full of grace, the Lord is with thee: blessed art thou among women. Allelúja.
+
+[GradualeP]
+Allelúja, allelúja.
+!Num 17:8
+v. The rod of Jesse had blossomed, virgin hath brought forth God and man: God hath restored peace, reconciling in himself the lowest with the highest, alleluia.
+!Luke 1:28
+v. Hail, full of grace, the Lord is with thee: blessed art thou among women. Allelúja.
+
+[Tractus]
+Blessed and venerable are you, O Virgin Mary, who, with unsullied virginity, were found to be the Mother of the Saviour.
+V. O Virgin, Mother of God, He Whom the whole world does not contain, becoming man, shut Himself in your womb. 
+!  
+Rejoice, O Virgin Mary; alone you have put an end to all heresies.
+V. You who believed the words of the Archangel Gabriel.
+V. Still a virgin, you brought forth God and man; and after childbirth you remained an inviolate virgin.
+V. O Mother of God, intercede for us.
+
+[Evangelium]
+Continuation + of the Holy Gospel according to Luke
+!Luke 11:27-28
+At that time, as Jesus was speaking to the multitudes, a certain woman from the crowd lifted up her voice and said to Him, Blessed is the womb that bore You, and the breasts that nursed You. But He said, Rather, blessed are they who hear the word of God and keep it.
+
+[Offertorium]
+!Lk 1:28; 1:42
+Hail, Mary, full of grace, the Lord is with you. Blessed are you among women and blessed is the fruit of your womb. (Alleluja.)
+
+[Secreta]
+Through Your mercy, O Lord, and by the intercession of blessed Mary, ever Virgin, the Mother of Your only-begotten Son, may this offering profit us for prosperity and peace, now and forevermore.
+$Per Dominum
+
+[Communio]
+Blessed is the womb of the Virgin Mary, which bore the Son of the eternal Father. (Alleluja.)
+
+[Postcommunio]
+Having received the aids conducive to our salvation, O Lord, we beseech You, grant that we may everywhere be protected by the patronage of blessed Mary, ever Virgin, in veneration of whom we have made these offerings to Your Majesty.
+$Per Dominum

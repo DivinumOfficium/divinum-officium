@@ -1,0 +1,25 @@
+[Lectio1]
+@Tempora/083-0:Lectio1:
+@Tempora/083-0:Lectio2:s/!.*//:s/5 .*//s
+
+[Lectio2]
+@Tempora/083-0:Lectio2:s/-8/-7/ :s/8 .*//s
+
+[Lectio3]
+@Tempora/083-0:Lectio2:s/-8/-10/ s/5-/8-/ s/5 .*8 /8 /s
+@Tempora/083-0:Lectio3:s/!.*//:s/11 .*//s
+
+[Lectio4]
+@Tempora/083-0:Lectio3:s/-11/-13/
+12 Nolíte zeláre mortem in erróre vitæ vestræ, neque acquirátis perditiónem in opéribus mánuum vestrárum.
+13 Quóniam Deus mortem non fecit, nec lætátur in perditióne vivórum.
+
+[Lectio6]
+@Tempora/083-0:Lectio5:s/Si.*//s
+
+[Lectio7]
+@Tempora/083-0:Lectio5:s/.* Si/Si/s s/$/~/
+@Tempora/083-0:Lectio6:s/Dénique.*//s
+
+[Lectio8]
+@Tempora/083-0:Lectio6:s/.* Dénique/Dénique/s

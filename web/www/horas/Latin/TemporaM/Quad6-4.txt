@@ -2,13 +2,17 @@
 
 [Rule]
 Matutinum Romanum
-Omit Incipit Invitatorium Hymnus Capitulum Lectio Commemoratio Preces Suffragium Conclusion
+Omit Incipit Invitatorium Hymnus Capitulum Lectio Commemoratio Antiphona finalis Preces Suffragium Conclusion Martyrologium De Officium Capituli
 Limit Benedictiones, Oratio
 9 lectiones 1960
 Capitulum Versum 2 ad Laudes tantum
+Feria
 
-[Ant Laudes]
-@Tempora/Quad6-4::s/\n/_/smg s/_/;;50\n/ s/_/;;89\n/ s/_/;;35\n/ s/_/;;224\n/ s/$/;;146\n/s
+[Responsory5] (rubrica cisterciensis)
+@Tempora/Quad6-4::s/Denari/Qui denari/g
+
+[Ant Laudes] (rubrica cisterciensis)
+@Tempora/Quad6-4::s/\n/_/smg s/_/;;50\n/ s/_/;;89\n/ s/_/;;62;66\n/ s/_/;;224\n/ s/$/;;148;149;150\n/s
 
 [Special Prima]
 &psalm(53)
@@ -21,7 +25,29 @@ _
 _
 @Tempora/Quad6-4:Oratio
 
+[Special Prima] (rubrica cisterciensis)
+$Pater noster
+$Ave Maria
+$Credo
+
+&psalm(53)
+
+&psalm(118,1,8)
+
+&psalm(118,9,16)
+
+&psalm(118,17,24)
+
+&psalm(118,25,32)
+_
+
+_
+@Tempora/Quad6-4:Oratio
+
 [Special Tertia]
+(rubrica cisterciensis) $Pater noster
+(rubrica cisterciensis) $Ave Maria
+
 &psalm(118,33,48)
 
 &psalm(118,49,64)
@@ -33,6 +59,9 @@ _
 @Tempora/Quad6-4:Oratio
 
 [Special Sexta]
+(rubrica cisterciensis) $Pater noster
+(rubrica cisterciensis) $Ave Maria
+
 &psalm(118,81,96)
 
 &psalm(118,97,112)
@@ -44,6 +73,8 @@ _
 @Tempora/Quad6-4:Oratio
 
 [Special Nona]
+(rubrica cisterciensis) $Pater noster
+(rubrica cisterciensis) $Ave Maria
 &psalm(118,129,144)
 
 &psalm(118,145,160)

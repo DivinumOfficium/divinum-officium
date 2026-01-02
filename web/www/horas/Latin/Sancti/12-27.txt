@@ -1,8 +1,10 @@
-[Rank]
-S. Joannis Apostoli et Evangelistæ;;Duplex II Class cum octava simplici;;5.3;;ex C1
+[Officium]
+S. Joannis Apostoli et Evangelistæ
 
-[Rank1960]
-S. Joannis Apostoli et Evangelistæ;;Duplex II class;;5;;ex C1
+[Rank]
+;;Duplex II Class cum octava simplici;;5.3;;ex C1
+(sed rubrica 196)
+;;Duplex II class;;5.4;;ex C1
 
 [Rule]
 ex C1;
@@ -10,20 +12,26 @@ Psalmi Dominica
 Antiphonas horas
 9 lectiones
 
-[Ant 1]
-Iste est Joánnes, * qui supra pectus Dómini in cena recúbuit: beátus Apóstolus, cui reveláta sunt secréta cæléstia.
-
 [Versum 1]
 V. Valde honorándus est beátus Joánnes.
 R. Qui supra pectus Dómini in cena recúbuit.
+
+[Versum 1] (rubrica cisterciensis)
+@CommuneCist/C1
+
+[Ant 1]
+Iste est Joánnes, * qui supra pectus Dómini in cena recúbuit: beátus Apóstolus, cui reveláta sunt secréta cæléstia.
 
 [Oratio]
 Ecclésiam tuam, Dómine, benígnus illústra: ut beáti Joánnis Apóstoli tui et Evangelístæ, illumináta doctrínis, ad dona pervéniat sempitérna.
 $Per Dominum
 
+[Octava 1]
+@:Octava 3
+
 [Lectio1]
 Incipit Epístola prima beáti Joánnis Apóstoli
-!1 Joann. 1:1-5
+!1 Joannes 1:1-5
 1 Quod fuit ab inítio, quod audívimus, quod vídimus óculis nostris, quod perspéximus, et manus nostræ contrectavérunt de verbo vitæ:
 2 et vita manifestáta est, et vídimus, et testámur, et annuntiámus vobis vitam ætérnam, quæ erat apud Patrem, et appáruit nobis:
 3 quod vídimus, et audívimus, annuntiámus vobis, ut et vos societátem habeátis nobíscum, et socíetas nostra sit cum Patre et cum Fílio ejus Jesu Christo.
@@ -37,8 +45,8 @@ V. Virgo est eléctus a Dómino, atque inter céteros magis diléctus.
 R. Cui Christus in cruce Matrem vírginem vírgini commendávit.
 
 [Lectio2]
-!1 Joann. 1:6-10
-6 Si dixérimus quóniam societátem habémus cum eo, et in ténebris ambulámus, mentímur, et veritátem non facimus.
+!1 Joannes 1:6-10
+6 Si dixérimus quóniam societátem habémus cum eo, et in ténebris ambulámus, mentímur, et veritátem non fácimus.
 7 Si autem in luce ambulámus sicut et ipse est in luce, societátem habémus ad ínvicem, et sanguis Jesu Christi, Fílii ejus, emúndat nos ab omni peccáto.
 8 Si dixérimus quóniam peccátum non habémus, ipsi nos sedúcimus, et véritas in nobis non est.
 9 Si confiteámur peccáta nostra, fidélis est et justus, ut remíttat nobis peccáta nostra, et emúndet nos ab omni iniquitáte.
@@ -51,7 +59,7 @@ V. Fluénta Evangélii de ipso sacro Domínici péctoris fonte potávit.
 R. Et scimus quia verum est testimónium ejus.
 
 [Lectio3]
-!1 Joann. 2:1-5
+!1 Joannes 2:1-5
 1 Filíoli mei, hæc scribo vobis, ut non peccétis. Sed et si quis peccáverit, advocátum habémus apud Patrem, Jesum Christum justum:
 2 et ipse est propitiátio pro peccátis nostris: non pro nostris autem tantum, sed étiam pro totíus mundi.
 3 Et in hoc scimus quóniam cognóvimus eum, si mandáta ejus observémus.
@@ -81,7 +89,7 @@ R. Et scribam super eum nomen meum, et nomen civitátis novæ Jerúsalem.
 Quarto décimo ígitur anno, secúndam post Nerónem persecutiónem movénte Domitiáno, in Patmos ínsulam relegátus, scripsit Apocalýpsim, quam interpretátur Justínus Martyr et Irenǽus. Interfécto autem Domitiáno, et actis ejus ob nímiam crudelitátem a senátu rescíssis, sub Nerva príncipe rédiit Ephesum: ibíque usque ad Trajánum príncipem persevérans, totas Asiæ fundávit rexítque ecclésias: et conféctus sénio, sexagésimo octávo post passiónem Dómini anno mórtuus, juxta eándem urbem sepúltus est.
 
 [Responsory5]
-R. Diligébat autem eum Jesus, quóniam speciális prærogátiva castitátis amplióri dilectióne fécerat dignum:  
+R. Diligébat autem eum Jesus, quóniam speciális prærogatíva castitátis amplióri dilectióne fécerat dignum:  
 * Quia virgo eléctus ab ipso, virgo in ævum permánsit.
 V. In cruce dénique moritúrus, huic Matrem suam vírginem vírgini commendávit.
 R. Quia virgo eléctus ab ipso, virgo in ævum permánsit.
@@ -89,7 +97,7 @@ R. Quia virgo eléctus ab ipso, virgo in ævum permánsit.
 [Lectio6]
 Ex Commentáriis ejúsdem in Epístolam ad Gálatas
 !Lib. 3, Cap. 6
-Beátus Joánnes Evangelísta, cum Ephesi morarétur usque ad últimam senectútem, et vix inter discipulórum manus ad ecclésiam deferrétur, nec posset in plura vocem verba contéxere; nihil áliud per síngulas solébat proférre colléctas, nisi hoc: Filíoli, díligite altérutrum. Tandem discípuli et fratres, qui áderant, tǽdio affécti quod éadem semper audírent, dixérunt: Magíster, quare semper hoc lóqueris? Qui respóndit dignam Joánne senténtiam: Quia præcéptum Dómini est; et, si solum fiat, súfficit.
+Beátus Joánnes Evangelísta, cum Ephesi morarétur usque ad últimam senectútem, et vix inter discipulórum manus ad ecclésiam deferrétur, nec posset in plura vocem verba contéxere; nihil áliud per síngulas solébat proférre colléctas, nisi hoc: Filíoli, dilígite altérutrum. Tandem discípuli et fratres, qui áderant, tǽdio affécti quod éadem semper audírent, dixérunt: Magíster, quare semper hoc lóqueris? Qui respóndit dignam Joánne senténtiam: Quia præcéptum Dómini est; et, si solum fiat, súfficit.
 
 [Responsory6]
 R. In médio Ecclésiæ apéruit os ejus, 
@@ -106,7 +114,7 @@ In illo témpore: Dixit Jesus Petro: Séquere me. Convérsus Petrus, vidit illum
 _
 Homilía sancti Augustíni Epíscopi
 !Tract. 124 in Joann., post med.
-Duas vitas sibi divínitus prædícatas, et commendátas novit Ecclésia: quarum est una in fide, áltera in spécie; una in témpore peregrinatiónis, áltera in æternitáte mansiónis; una in labóre, áltera in réquie; una in via, áltera in pátria; una in ópere actiónis, áltera in mercéde contemplatiónis. Una declínat a malo, et facit bonum: áltera nullum habet, a quo declínet, malum; et magnum habet, quo fruátur, bonum. Una cum hoste pugnat; áltera sine hoste regnat.
+Duas vitas sibi divínitus prædicátas, et commendátas novit Ecclésia: quarum est una in fide, áltera in spécie; una in témpore peregrinatiónis, áltera in æternitáte mansiónis; una in labóre, áltera in réquie; una in via, áltera in pátria; una in ópere actiónis, áltera in mercéde contemplatiónis. Una declínat a malo, et facit bonum: áltera nullum habet, a quo declínet, malum; et magnum habet, quo fruátur, bonum. Una cum hoste pugnat; áltera sine hoste regnat.
 
 [Responsory7]
 R. In illum diem suscípiam te servum meum, et ponam te sicut signáculum in conspéctu meo: 
@@ -126,8 +134,11 @@ R. Beátus Apóstolus, cui reveláta sunt secréta cæléstia.
 R. Beátus Apóstolus, cui reveláta sunt secréta cæléstia.
 
 [Lectio9]
-Ergo una bona est, sed adhuc mísera; áltera mélior, et beáta. Ista significáta est per Apóstolum Petrum, illa per Joánnem. Tota hic agitur ista usque in hujus sǽculi finem, et illic ínvenit finem; différtur illa complénda post hujus sǽculi finem, sed in futúro sǽculo non habet finem. Ideo dícitur huic: Séquere me. De illo autem: Sic eum volo manére, donec véniam: quid ad te? tu me séquere. Quid enim est hoc? Quantum sápio, quantum cápio, quid est hoc? nisi tu me séquere per imitatiónem perferéndi temporália mala: ille máneat, donec sempitérna vénio redditúrus bona.
+Ergo una bona est, sed adhuc mísera; áltera mélior, et beáta. Ista significáta est per Apóstolum Petrum, illa per Joánnem. Tota hic ágitur ista usque in hujus sǽculi finem, et illic ínvenit finem; différtur illa complénda post hujus sǽculi finem, sed in futúro sǽculo non habet finem. Ideo dícitur huic: Séquere me. De illo autem: Sic eum volo manére, donec véniam: quid ad te? tu me séquere. Quid enim est hoc? Quantum sápio, quantum cápio, quid est hoc? nisi tu me séquere per imitatiónem perferéndi temporália mala: ille máneat, donec sempitérna vénio redditúrus bona.
 &teDeum
+
+[Versum 0]
+@:Versum 1
 
 [Ant Laudes]
 Valde honorándus est * beátus Joánnes, qui supra pectus Dómini in cena recúbuit.
@@ -135,6 +146,13 @@ Hic est discípulus ille * qui testimónium pérhibet de his: et scimus quia ver
 Hic est discípulus meus: * sic eum volo manére, donec véniam.
 Sunt de hic stántibus, * qui non gustábunt mortem, donec vídeant Fílium hóminis in regno suo.
 Ecce puer meus, * eléctus, quem elégi, pósui super eum Spíritum meum.
+
+[Ant Laudes] (rubrica cisterciensis)
+Ecce puer meus * eléctus, quem elégi, pósui super eum Spíritum meum.
+Hic est discípulus ille * qui testimónium pérhibet de his: et scimus quia verum est testimónium ejus.
+Misit Dóminus * manum suam, et tétigit os meum, et replévit illud.
+Sunt de hic stántibus, * qui non gustábunt mortem, donec vídeant Fílium hóminis in regno suo.
+Joánnes autem Apóstolus * virgo Dei eléctus, cui Vírginem Matrem Dóminus vírgini commendávit.
 
 [Capitulum Laudes]
 !Sir 15:1-2
@@ -145,50 +163,14 @@ $Deo gratias
 V. Hic est discípulus ille, qui testimónium pérhibet de his.
 R. Et scimus quia verum est testimónium ejus.
 
+[Versum 2] (rubrica cisterciensis)
+@CommuneCist/C1
+
 [Ant 2]
 @:Ant 1
 
-[Commemoratio 2]
-@Sancti/12-25:Octava
-
-[Commemoratio 3]
-@Sancti/12-25:Octava
-
-[Commemoratio 2] (rubrica trident)
-@Sancti/12-25:Octava
-@Sancti/12-26:Octava
-
-[Commemoratio 3] (rubrica trident)
-@Sancti/12-25:Octava
-@Sancti/12-26:Octava
-
-[Lectio Prima]
-!Sir 15:5
-v. In médio Ecclésiæ apéruit os ejus, et implévit illum Dóminus spíritu sapiéntiæ et intelléctus, et stolam glóriæ índuit eum.
-
-[Capitulum Tertia]
-@:Capitulum Laudes
-
-[Capitulum Sexta]
-!Sir 15:3
-v. Cibávit illum pane vitæ et intelléctus, et aqua sapiéntiæ salutáris potávit illum Dóminus, Deus noster.
-$Deo gratias
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Ant Vespera 3]
-@Sancti/12-25:Ant Vespera 3
-
-[Capitulum Vespera]
-@:Capitulum Laudes
-
-[Versum 3]
-@:Versum 1
-
-[Ant 3]
-Exiit * sermo inter fratres, quod discípulus ille non móritur; et non dixit Jesus, Non móritur: sed, Sic eum volo manére, donec véniam.
+[Ant 2] (rubrica cisterciensis)
+In médio * Ecclésiæ apéruit Dóminus os ejus, et implévit eum spíritu sapiéntiæ et intelléctus, allelúia.
 
 [Octava 2]
 !Commemoratio Octavæ S. Joannis
@@ -201,6 +183,41 @@ $Oremus
 v. Ecclésiam tuam, Dómine, benígnus illústra: ut beáti Joánnis Apóstoli tui et Evangelístæ, illumináta doctrínis, ad dona pervéniat sempitérna.
 $Per Dominum
 
+[Octava 2] (rubrica cisterciensis)
+!Commemoratio Octavæ S. Joannis
+Ant. Hic est discípulus ille * qui testimónium pérhibet de his: et scimus quia verum est testimónium ejus.
+_
+@CommuneCist/C1:Versum 2
+_
+$Oremus
+v. Ecclésiam tuam, Dómine, benígnus illústra: ut beáti Joánnis Apóstoli tui et Evangelístæ, illumináta doctrínis, ad dona pervéniat sempitérna.
+$Per Dominum
+
+[Lectio Prima]
+!Sir 15:5
+v. In médio Ecclésiæ apéruit os ejus, et implévit illum Dóminus spíritu sapiéntiæ et intelléctus, et stolam glóriæ índuit eum.
+
+[Capitulum Sexta]
+!Sir 15:3
+v. Cibávit illum pane vitæ et intelléctus, et aqua sapiéntiæ salutáris potávit illum Dóminus, Deus noster.
+$Deo gratias
+
+[Capitulum Nona]
+@:Lectio Prima
+$Deo gratias
+
+[Ant Vespera 3]
+@Sancti/12-25
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+Exiit * sermo inter fratres, quod discípulus ille non móritur; et non dixit Jesus, Non móritur: sed, Sic eum volo manére, donec véniam.
+
+[Ant 3] (rubrica cisterciensis)
+Joánnes Apóstolus * et Evangelísta, virgo est eléctus a Dómino, atque inter céteros magis diléctus, allelúia.
+
 [Octava 3]
 !Commemoratio Octavæ S. Joannis
 Ant. Exiit sermo inter fratres, quod discípulus ille non móritur; et non dixit Jesus, Non móritur: sed, Sic eum volo manére, donec véniam.
@@ -212,5 +229,12 @@ $Oremus
 v. Ecclésiam tuam, Dómine, benígnus illústra: ut beáti Joánnis Apóstoli tui et Evangelístæ, illumináta doctrínis, ad dona pervéniat sempitérna.
 $Per Dominum
 
-[Octava 1]
-@:Octava 3
+[Octava 3] (rubrica cisterciensis)
+!Commemoratio Octavæ S. Joannis
+Ant. Joánnes autem Apóstolus * virgo Dei eléctus, cui Vírginem Matrem Dóminus vírgini commendávit.
+_
+@CommuneCist/C1:Versum 2
+_
+$Oremus
+v. Ecclésiam tuam, Dómine, benígnus illústra: ut beáti Joánnis Apóstoli tui et Evangelístæ, illumináta doctrínis, ad dona pervéniat sempitérna.
+$Per Dominum

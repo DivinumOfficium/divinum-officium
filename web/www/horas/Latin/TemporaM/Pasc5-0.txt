@@ -3,22 +3,17 @@
 [Rule]
 12 lectiones
 
-[Capitulum Vespera]
-@Tempora/Pasc5-0
-_
-@Psalterium/Major Special:PaschM Vespera:3-8
-
 [Responsory1]
 @Tempora/Pasc4-0
 
 [Responsory2]
 @Tempora/Pasc4-0
 
-[Responsory3]
-@Tempora/Pasc4-0
-
 [Lectio3]
 @Tempora/Pasc5-5:Lectio1
+
+[Responsory3]
+@Tempora/Pasc4-0
 
 [Lectio4]
 @Tempora/Pasc5-5:Lectio2
@@ -73,8 +68,3 @@ _
 
 [Responsory12]
 @TemporaM/Pasc4-0
-
-[Capitulum Laudes]
-@Tempora/Pasc5-0
-_
-@Psalterium/Major Special:PaschM Laudes:3-8

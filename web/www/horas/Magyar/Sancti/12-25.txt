@@ -1,18 +1,8 @@
 [Rank]
-In Nativitate Domini;;Duplex I Classis;;6.9
+Karácsony, Jézus Krisztus születése;;Duplex I Classis;;6.9
 
-[Rank1960]
-In Nativitate Domini;;Duplex I Classis;;7 
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas Horas
-Doxology=Nat
-Special Evangelii Benedictio
-
-[Capitulum Vespera]
-!Titus 3:4-5
+[Capitulum Vespera 1]
+!Tit 3:4-5
 v. Amikor azonban üdvözítő Istenünk kinyilvánította jóságát és emberszeretetét, megmentett minket.  Nem azért, mert igazak voltak tetteink, hanem irgalmasságból
 $Deo gratias
 
@@ -53,107 +43,65 @@ Atya, s kegyes Lélek, neked,
 Most és örök időkön át.
 Ámen.
 
-[Hymnus Matutinum]
-@Sancti/12-25:Hymnus Vespera
-
 [Lectio1]
-!Isa 9:1-6
+!Iz 9:1-6
 1 A nép, amely sötétben jár, nagy fényességet lát. Akik a halál országának árnyékában laknak, azoknak világosság támad. 
 2 Nagy ujjongással töltöd el őket, kitörő örömet adsz nekik. Úgy örülnek majd színed előtt, ahogy aratáskor szoktak örülni, s ahogy akkor örülnek, amikor a zsákmányt osztják. 
 3 Mert terhes igáját, a vállára nehezedő rudat, sanyargatója botját összetöröd, mint Midián idejében. 
 4 Mert minden harcban viselt sarut, minden vérben forgatott ruhát elégetnek, s tűznek lesz martaléka. 
 5 Mert gyermek születik, fiú adatik nekünk, s az ő vállára kerül az uralom. Így fogják hívni: Csodálatos Tanácsadó, Erős Isten, Örök Atya, Béke Fejedelme. 
-6 Messzire kiterjed majd uralma, és a békének nem lesz vége Dávid trónján és királyságában, amelyet megerősít és megszilárdít a jog és az igazság által. Mostantól mindörökké ezt teszi a Seregek Urának féltő szeretete. 
+6 Messzire kiterjed majd uralma, és a békének nem lesz vége Dávid trónján és királyságában, amelyet megerősít és megszilárdít a jog és az igazság által. Mostantól mindörökké ezt teszi a Seregek Urának féltő szeretete.
 
 [Lectio2]
-!Isa 40:1-8
-1 "Vigasztaljátok meg népemet, vigasztaljátok meg!" - ezt mondja Istenetek. 
-2 "Szóljatok Jeruzsálem szívéhez és kiáltsátok oda neki: Véget ért szolgaságának ideje, bocsánatot nyert a gonoszsága, hiszen kétszeresen sújtotta az Úr keze minden bűnéért." 
-3 Egy hang kiált: "Készítsetek utat a pusztában az Úrnak, egyengessétek Istenünk ösvényét a sivatagon át. 
+!Iz 40:1-8
+1 „Vigasztaljátok meg népemet, vigasztaljátok meg!” - ezt mondja Istenetek. 
+2 „Szóljatok Jeruzsálem szívéhez és kiáltsátok oda neki: Véget ért szolgaságának ideje, bocsánatot nyert a gonoszsága, hiszen kétszeresen sújtotta az Úr keze minden bűnéért.” 
+3 Egy hang kiált: „Készítsetek utat a pusztában az Úrnak, egyengessétek Istenünk ösvényét a sivatagon át. 
 4 Minden völgyet töltsetek fel, minden hegyet és halmot hordjatok el. Ami egyenetlen, váljék egyenessé, a hegyek ormai legyenek olyanok, akár a völgy. 
-5 Akkor megnyilvánul majd az Úr dicsősége, és minden ember látni fogja. Igen, az Úr szája mondta ezt így." 
-6 Egy hang megparancsolja: "Hirdesd!" Erre megkérdezem: "Mit hirdessek?" "Minden test olyan, mint a fű, és minden szépsége, mint a mező virága. 
+5 Akkor megnyilvánul majd az Úr dicsősége, és minden ember látni fogja. Igen, az Úr szája mondta ezt így.” 
+6 Egy hang megparancsolja: „Hirdesd!” Erre megkérdezem: „Mit hirdessek?” „Minden test olyan, mint a fű, és minden szépsége, mint a mező virága. 
 7 Kiszárad a fű, elhervad a virág, ha az Úr lehelete éri. - Valóban, olyan a nép, mint a fű! - 
-8 Kiszárad a fű, elhervad a virág, de Istenünk szava örökké megmarad." 
+8 Kiszárad a fű, elhervad a virág, de Istenünk szava örökké megmarad.”
 
 [Lectio3]
-!Isa 52:1-6
+!Iz 52:1-6
 1 Kelj föl, kelj föl, öltözz erőbe, Sion! Öltsd fel legszebb ruhádat, Jeruzsálem, te szent város! Mert nem megy át többé rajtad sem körülmetéletlen, sem tisztátalan. 
 2 Rázd le a port magadról, kelj föl, rabságot szenvedett Jeruzsálem! Oldd le nyakad bilincseit, Sionnak fogoly leánya! 
 3 Ezt mondja az Úr: Ingyen adtalak el, s most is váltságdíj nélkül váltalak vissza benneteket. 
 4 Ezt mondja az Úr: Egykor Egyiptomba költözött le népem, hogy ott lakjék, aztán Asszíria sanyargatta meg. 
 5 Hát most itt mit tegyek? - mondja az Úr. Hiszen népemet ingyen elhurcolták, és akik uralkodnak rajta, ujjonganak - mondja az Úr. Egész nap folyton-folyvást káromolják a nevemet. 
-6 Ismerje meg hát népem a nevemet; azon a napon majd megértik, hogy én magam mondom: "Íme, itt vagyok!" 
-
-[Benedictio3]
-Bűneink bilincseiből oldozzon fel minket a mindenható és irgalmas Isten. Ámen.
-Áldj meg minket Uram.
-Az Evangélium olvasása legyen üdvösségünkre és védelmünkre. Ámen.
-May the Gospel's glorious word, cleansing to our souls afford. 
-Christ That sent the Gospel preacher, In his meaning be our Teacher. 
+6 Ismerje meg hát népem a nevemet; azon a napon majd megértik, hogy én magam mondom: „Íme, itt vagyok!”
 
 [Lectio7]
 Evangélium szent Lukács Evangélista könyvéből
-!Luke 2:1-14
+!Lk 2:1-14
 Azokban a napokban történt, hogy Augustus császár rendeletet adott ki, hogy az egész földkerekséget írják össze. És így tovább.
 _
 Homily by Pope St Gregory (the Great,)
 !8th on the Gospels.
-By God's mercy we are to say three Masses to-day, so that there is not much time~
-left for preaching; but at the same time the occasion of the Lord's Birth-day~
-itself obliges me to speak a few words. I will first ask why, when the Lord was~
-to be born, the world was enrolled? Was it not to herald the appearing of Him by~
-Whom the elect are enrolled in the book of life? Whereas the Prophet saith of~
-the reprobate Let them be blotted out of the book of the living, and not be~
-written with the righteous. (Ps. lxviii. 29.) Then, the Lord is born in ~
-Bethlehem. Now the name Bethlehem signifieth the House of Bread, and thus it is~
-the birth-place of Him Who hath said, I am the Living Bread, Which came down~
-from heaven. (John vi. 51.) We see then that this name of Bethlehem was~
-prophetically given to the place where Christ was born,.because it was there~
-that He was to appear in the flesh by Whom the souls of the faithful are fed~
-unto life eternal. He was born, not in His Mother's house, but away from home.~
-And this is a mystery, showing that this our mortality into which He was born~
-was not the home of Him Who is begotten of the Father before the worlds.
+By God's mercy we are to say three Masses to-day, so that there is not much time left for preaching; but at the same time the occasion of the Lord's Birth-day itself obliges me to speak a few words. I will first ask why, when the Lord was to be born, the world was enrolled? Was it not to herald the appearing of Him by Whom the elect are enrolled in the book of life? Whereas the Prophet saith of the reprobate Let them be blotted out of the book of the living, and not be written with the righteous. (Ps. lxviii. 29.) Then, the Lord is born in  Bethlehem. Now the name Bethlehem signifieth the House of Bread, and thus it is the birth-place of Him Who hath said, I am the Living Bread, Which came down from heaven. (John vi. 51.) We see then that this name of Bethlehem was prophetically given to the place where Christ was born,.because it was there that He was to appear in the flesh by Whom the souls of the faithful are fed unto life eternal. He was born, not in His Mother's house, but away from home. And this is a mystery, showing that this our mortality into which He was born was not the home of Him Who is begotten of the Father before the worlds.
 
 [Lectio8]
 Evangélium szent Lukács könyvéből
-!Luke 2:15-20
-Azon időben a pásztorok így szóltak egymáshoz: "Menjünk el Betlehembe, hadd lássuk a valóra vált beszédet, amit az Úr tudtunkra adott! És így tovább.
+!Lk 2:15-20
+Azon időben a pásztorok így szóltak egymáshoz: „Menjünk el Betlehembe, hadd lássuk a valóra vált beszédet, amit az Úr tudtunkra adott! És így tovább.
 _
 Homily by St Ambrose, Bishop (of Milan,)
 !Book ii. on Luke ii.
-Behold the beginning of the Church. Christ is born, and the shepherds watch;~
-shepherds, to gather together the scattered sheep of the Gentiles, and to lead~
-them into the fold of Christ, that they might no longer be a prey to the ravages~
-of spiritual wolves in the night of this world's darkness. And that shepherd is~
-wide awake, whom the Good Shepherd stirreth up. The flock then is the people,~
-the night is the world, and the shepherds are the Priests. And perhaps he is a~
-shepherd to whom it is said, Be watchful and strengthen, (Apoc. iii. 2,) l for~
-God hath ordained as the shepherds of His flock not Bishops only, but also~
-Angels.
+Behold the beginning of the Church. Christ is born, and the shepherds watch; shepherds, to gather together the scattered sheep of the Gentiles, and to lead them into the fold of Christ, that they might no longer be a prey to the ravages of spiritual wolves in the night of this world's darkness. And that shepherd is wide awake, whom the Good Shepherd stirreth up. The flock then is the people, the night is the world, and the shepherds are the Priests. And perhaps he is a shepherd to whom it is said, Be watchful and strengthen, (Apoc. iii. 2,) l for God hath ordained as the shepherds of His flock not Bishops only, but also Angels.
 
 [Lectio9]
 Evangélium szent János könyvéből
-!John 1:1-14
+!Jn 1:1-14
 Kezdetben volt az Ige, az Ige Istennél volt, és Isten volt az Ige, ő volt kezdetben Istennél. És így tovább.
 _
 Homily by St Austin, Bishop (of Hippo,)
 !1st Tract on John.
-Lest thou shouldest think all things mean, as thou art accustomed to think of~
-things human, hear and digest this The Word was God. Now perhaps there will come~
-forward some Arian unbeliever, and say that the Word of God was a creature. How~
-can the Word of God be a creature, when it was by the Word that all creatures~
-were made? If He be a creature, then there must have been some other Word, not a~
-creature, by which He was made. And what Word is that? If thou sayest that it~
-was by the word of the Word Himself that He was made, I tell thee that God had~
-no other, but One Onlybegotten Son. But if thou say not that it was by the word~
-of the Word Himself that He was made, thou art forced to confess that. He by~
-Whom all things were made was not Himself made at all. Believe the Gospel. The~
-Hymn, We praise thee, O God, &c. is said.
+Lest thou shouldest think all things mean, as thou art accustomed to think of things human, hear and digest this The Word was God. Now perhaps there will come forward some Arian unbeliever, and say that the Word of God was a creature. How can the Word of God be a creature, when it was by the Word that all creatures were made? If He be a creature, then there must have been some other Word, not a creature, by which He was made. And what Word is that? If thou sayest that it was by the word of the Word Himself that He was made, I tell thee that God had no other, but One Onlybegotten Son. But if thou say not that it was by the word of the Word Himself that He was made, thou art forced to confess that. He by Whom all things were made was not Himself made at all. Believe the Gospel. The Hymn, We praise thee, O God, &c. is said.
 &teDeum
 
 [Capitulum Laudes]
-!Heb 1:1-2
+!Zsid 1:1-2
 v. Sokszor és sokféle módon szólt Isten hajdan az atyákhoz,  ezekben a végső napokban Fiában szólt hozzánk, akit a mindenség örökösévé tett, aki által az időket is teremtette. 
 $Deo gratias
 
@@ -200,25 +148,10 @@ Most és örök időkön át.
 Ámen.
 
 [Lectio Prima]
-!Heb 1:11-12
-v. Ezek elmúlnak, de te nem múlsz el soha, mindenek elavulnak, mint valami ruha.  Akár a köntöst, úgy göngyölöd össze őket, s mint a ruha, úgy változnak meg. Ám te ugyanaz vagy, és esztendeid nem érnek véget. 
-
-[Capitulum Tertia]
-!Heb 1:1-2
-v. Sokszor és sokféle módon szólt Isten hajdan az atyákhoz,  ezekben a végső napokban Fiában szólt hozzánk, akit a mindenség örökösévé tett, aki által az időket is teremtette. 
-$Deo gratias
+!Zsid 1:11-12
+v. Ezek elmúlnak, de te nem múlsz el soha, mindenek elavulnak, mint valami ruha.  Akár a köntöst, úgy göngyölöd össze őket, s mint a ruha, úgy változnak meg. Ám te ugyanaz vagy, és esztendeid nem érnek véget.
 
 [Capitulum Sexta]
-!Heb 1:10
+!Zsid 1:10
 v. Továbbá: Kezdetben, Uram, te teremtetted a földet, az ég is a te kezed munkája. 
-$Deo gratias
-
-[Capitulum Nona]
-!Heb 1:11-12
-v. Ezek elmúlnak, de te nem múlsz el soha, mindenek elavulnak, mint valami ruha.  Akár a köntöst, úgy göngyölöd össze őket, s mint a ruha, úgy változnak meg. Ám te ugyanaz vagy, és esztendeid nem érnek véget. 
-$Deo gratias
-
-[Capitulum Vespera 3]
-!Heb 1:1-2
-v. Sokszor és sokféle módon szólt Isten hajdan az atyákhoz,  ezekben a végső napokban Fiában szólt hozzánk, akit a mindenség örökösévé tett, aki által az időket is teremtette. 
 $Deo gratias

@@ -1,12 +1,5 @@
-[Rank]
-Niedziela Pięćdziesiątnicy;;Duplex I Classis cum Octava privilegiata I ordinis;;7
-
-[Rule]
-1 Nocturn
-Psalmi Dominica;
-Antiphonas horas
-Hymnus Tertia
-Prima=53
+[Officium]
+Niedziela Pięćdziesiątnicy
 
 [Ant Vespera]
 Gdy się spełniły * dni Pięćdziesiątnicy, byli wszyscy wespół zgromadzeni ma temże miejscu, alleluja.
@@ -14,50 +7,6 @@ Duch Pański * napełnił okrąg ziemi, alleluja.
 Napełnieni byli wszyscy * Duchem Świętym i poczęli mówić, alleluja, alleluja.
 Źródła i wszystko, * co żyje w wodzie, pieśń śpiewajcie Bogu, alleluja.
 Apostołowie opowiadali * rozmaitemi językami cuda Boże, alleluja, alleluja, alleluja.;;116
-
-[Capitulum Vespera]
-!Dz 2:1-2
-v. A gdy się spełniały dni Pięćdziesiątnice, byli wszyscy wespółek na temże miejscu. I stał się z prędka z nieba szum, jakoby przypadającego wiatru gwałtownego, i napełnił wszystek dom, gdzie siedzieli.
-$Deo gratias
-
-[Hymnus Vespera]
-{:H-Venicreator:}
-!Pierwszą zwrotkę hymnu odmawia się klęcząc.
-v. Przyjdź, Duchu Stworzycielu,
-Nawiedź serca wiernych twoich,
-Napełnij łaską niebieską piersi,
-Któreś stworzył.
-_
-Pocieszycielem zwiesz się,
-Darem Boga najwyższego,
-Źródłem żywem, ogniem, miłością
-I namaszczeniem duchowem.
-_
-Tyś siedmioraki w darach,
-Palcem prawicy Ojcowskiej,
-Tyś uroczystą obietnicą Ojca,
-Mową darzący gardła.
-_
-Rozpal światło duszom,
-Wiej miłość sercom,
-Ułomności naszego ciała
-Wzmacniając ciągłą mocą.
-_
-Nieprzyjaciela odpędź daleko
-I daj nam pokój stały;
-Tak gdy Ty będziesz przewodnikiem
-Unikniemy wszelkiej szkody.
-_
-Daj, abyśmy przez Ciebie wiedzieli o Ojcu,
-Poznali także Syna,
-Oraz wierzyli w Ciebie,
-Ducha po wszystek czas.
-_
-Bogu Ojcu niech będzie chwała
-I Synowi, który powstał z martwych,
-I Pocieszycielowi
-Po nie skończone wieki.
-Amen.
 
 [Versum 1]
 V. Napełnieni byli wszyscy Duchem Świętym, alleluja.
@@ -157,6 +106,11 @@ R. I zbiegło się mnóstwo ludzi mówiących, alleluja.
 I Ojciec mój umiłuje go, i przyjdziemy do niego, i przebywać u niego będziemy. Pomyślcie, najdrożsi bracia, jak wielkim jest to zaszczytem gościć w swoim sercu przybyłego Boga. Z pewnością, gdyby do waszego domu miał przybyć jakiś bogaty, potężny przyjaciel, to z wielkim pośpiechem cały dom byłby czyszczony, aby przypadkiem czego nie było, co by oczy przyjaciela razić mogło. Niechaj więc usunie brud złego czynu, kto przygotowuje dla Boga dom swego serca. Lecz zwróćcie na to uwagę, co Prawda mówi: Przyjdziemy do niego, i przebywać u niego będziemy. Do niektórych bowiem serc Bóg przychodzi, lecz w nich nie zamieszkuje, choć bowiem dzięki skrusze łaskę Boga otrzymują, jednak w czasie pokusy zapominają o tym, co ich do skruchy pobudziło i powracają do grzechów, jakby ich wcale nie opłakiwali.
 &teDeum
 
+[Capitulum Laudes]
+!Dz 2:1-2
+v. A gdy się spełniały dni Pięćdziesiątnice, byli wszyscy wespółek na temże miejscu. I stał się z prędka z nieba szum, jakoby przypadającego wiatru gwałtownego, i napełnił wszystek dom, gdzie siedzieli.
+$Deo gratias
+
 [Hymnus Laudes]
 {:H-Beatanobisgaudia:}v. Błogosławione radości
 Sprowadził nam bieg roku,
@@ -201,14 +155,15 @@ Weźmijcie * Ducha Świętego: których odpuścicie grzechy, są im odpuszczone,
 !Dz 2:11
 v. Żydowie téż i nowo nawróceni, Kreteńczycy i Arabczycy: słyszeliśmy je mówiące języki naszemi wielmożne sprawy Boże.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Duch Pański napełnił krąg ziemi, * Alleluja, alleluja.
 R. Duch Pański napełnił krąg ziemi, * Alleluja, alleluja.
 V. A to, co wszytko ma w sobie, ma wiadomość głosu.
 R. Alleluja, alleluja.
 &Gloria
 R. Duch Pański napełnił krąg ziemi, * Alleluja, alleluja.
-_
+
+[Versum Tertia]
 V. Duch Pocieszyciel, alleluja.
 R. Wszystkiego was nauczy, alleluja.
 
@@ -217,27 +172,21 @@ R. Wszystkiego was nauczy, alleluja.
 v. A gdy się stał ten głos, zbieżało się mnóstwo, i strwożyło się na myśli, że każdy słyszał je swym językiem mówiące.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Duch Pocieszyciel, * Alleluja, alleluja.
 R. Duch Pocieszyciel, * Alleluja, alleluja.
 V. Wszystkiego was nauczy.
 R. Alleluja, alleluja.
 &Gloria
 R. Duch Pocieszyciel, * Alleluja, alleluja.
-_
-V. Napełnieni byli wszyscy Duchem Świętym, alleluja.
-R. I poczęli mówić, alleluja.
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Napełnieni byli wszyscy Duchem Świętym, * Alleluja, alleluja.
 R. Napełnieni byli wszyscy Duchem Świętym, * Alleluja, alleluja.
 V. I poczęli mówić.
 R. Alleluja, alleluja.
 &Gloria
 R. Napełnieni byli wszyscy Duchem Świętym, * Alleluja, alleluja.
-_
-V. Apostołowie opowiadali rozmaitemi językami, alleluja.
-R. Cuda Boże, alleluja.
 
 [Versum 3]
 V. Apostołowie opowiadali rozmaitemi językami, alleluja.

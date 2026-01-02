@@ -1,11 +1,9 @@
-[Rank]
-Feria Quarta Quattuor Temporum Septembris;;Feria major;;2
+[Officium]
+Feria Quarta Quattuor Temporum Septembris
 
-[Rank1960]
-Feria Quarta Quattuor Temporum Septembris;;Feria major;;4
-
-[Rule]
-Preces Feriales
+[Oratio] (nisi ad vesperam aut rubrica 196)
+We pray thee, O Lord, that the healing power of thy mercy may give strength to our weakness, that those things which do pass away by their own frailty, may be renewed again by thy clemency.
+$Per Dominum
 
 [Lectio1]
 Continuation of the Holy Gospel according to Mark
@@ -24,7 +22,3 @@ And He said unto them: This kind can come forth by nothing but by prayer and fas
 
 [Ant 2]
 This kind of devils * can come forth by nothing but by prayer and fasting.
-
-[Oratio]
-We pray thee, O Lord, that the healing power of thy mercy may give strength to our weakness, that those things which do pass away by their own frailty, may be renewed again by thy clemency.
-$Per Dominum

@@ -1,8 +1,5 @@
-[Rank]
-Fest der Sieben Schmerzen der heiligen Jungfrau Maria;;Duplex majus;;4
-
-[Rank1960]
-Fest der Sieben Schmerzen der heiligen Jungfrau Maria;;Commemoratio;;1
+[Officium]
+Fest der Sieben Schmerzen der heiligen Jungfrau Maria
 
 [Ant Vespera]
 Ich will hingehen zum Berg * der Myrrhe und zur Weihrauchhöhe.;;115
@@ -10,11 +7,6 @@ Mein Geliebter * ist so bleich und rotschillernd: das Haar seines Hauptes ist wi
 Wo ist er denn hin, * dein Geliebter, o du Schönste unter den Frauen? Wohin hat sich dein Liebling entfernt?;;139
 Ein Myrrhensträußlein * ist mir mein Geliebter, das an meiner Brust mir anliegt.;;140
 Gewährt mir Erfrischung durch Blumen, * legt mir Früchte um, denn ich verschmachte vor Liebe.;;141
-
-[Capitulum Vespera]
-!Jes 53:1-2
-v. Ist das unglaublich, was ich vernommen? Und was du, o Herr, gewirkt hast, ist das jemandem begreiflich? Ach, es erhebt sich etwas wie ein Zweiglein vor mir, wie ein aus dürrem Erdreich sprossendes Pflänzchen.
-$Deo gratias
 
 [Hymnus Vespera]
 {:H-Stabatmater:}v. Ach, da stand die Schmerzensreiche
@@ -58,15 +50,22 @@ Niemals mich von Christus trennen,
 Dass er Freude hab' an mir.
 Amen.
 
+[Doxology]
+Mach, Jesus, dass das All dich preist,
+Der du für uns trugst großes Leid,
+Den Vater auch, den Heil'gen Geist
+Mit dir durch alle Ewigkeit.
+Amen.
+
 [Versum 1]
 V. Bitte für uns, o leidensvolle Jungfrau.
-R. Auf dass wir würdig werden der Verheißungen Christi.
+R. Auf daß wir würdig werden der Verheißungen Christi.
 
 [Ant 1]
 Deine eigene Seele * – so sagte Simeon zu Maria – wird ein Schwert durchbohren.
 
 [Oratio]
-O Gott, bei dessen leidensvollem Tode sich gemäß Simeons Voraussagung ein Schmerzensschwert in die liebenswürdigste Seele der glorienreichen Jungfrau und Mutter Maria hineingebohrt hat, gewähre uns huldvollst die Gnade, dass wir, die wir dieses Durchbohren ihrer Seele und ihr ausgestandenes Leid in Ehrfurcht begehen, auf Grund der Verdienste und der Fürbitte aller treu beim Kreuze aushaltenden Heiligen ihres Leidens beglückende Wirkung erhalten.
+O Gott, bei dessen leidensvollem Tode sich gemäß Simeons Voraussagung ein Schmerzensschwert in die liebenswürdigste Seele der glorienreichen Jungfrau und Mutter Maria hineingebohrt hat, gewähre uns huldvollst die Gnade, daß wir, die wir dieses Durchbohren ihrer Seele und ihr ausgestandenes Leid in Ehrfurcht begehen, auf Grund der Verdienste und der Fürbitte aller treu beim Kreuze aushaltenden Heiligen ihres Leidens beglückende Wirkung erhalten.
 $Qui vivis
 
 [Commemoratio 1]
@@ -79,16 +78,6 @@ _
 $Oremus
 Sei, wir bitten dich, o Herr, deinem Volke gnädig, damit wir vermeiden, was dir nicht gefällt, und dafür lieber mit der Freude an deinen Geboten gesättigt werden.
 $Per Dominum.
-
-[Doxology]
-Mach, Jesus, dass das All dich preist,
-Der du für uns trugst großes Leid,
-Den Vater auch, den Heil'gen Geist
-Mit dir durch alle Ewigkeit.
-Amen.
-
-[Versum Prima]
-Der du um unseres Heiles willen den Tod gelitten hast.
 
 [Invit]
 In Vergenwärtigung der Schmerzen der glorienreichen Jungfrau wollen wir den für uns sterbenden Herrn, * Kommt, wir wollen ihn anbeten.
@@ -110,23 +99,6 @@ Juxta crucem tecum stare,
 Et me tibi sociare
 In planctu desidero.
 Amen.
-
-[Ant Matutinum]
-Astiterunt reges terræ, * et principes convenerunt in unum adversus Dominum, et adversus Christum ejus.;;2
-Voce mea * ad Dominum clamavi, et exaudivit me de monte sancto suo.;;3
-Factum est cor meum * tamquam cera liquescens in medio ventris mei.;;12
-V. Posuit me desolatam.
-R. Tota die mærore confectam.
-Inimici mei, * dixerunt mala mihi: Quando morietur, et peribit nomen ejus?;;40
-Deus, vitam meam * annuntiavi tibi: posuisti lacrimas meas in conspectu tuo.;;55
-Filii hominum, * dentes eorum arma et sagittæ: et lingua eorum gladius acutus.;;56
-V. Facies mea intumuit a fletu.
-R. Et palpebræ meæ caligaverunt.
-Intenderunt arcum, * rem amaram, ut sagittent in occultis immaculatum.;;63
-Factus sum * sicut homo sine adjutorio, inter mortuos liber.;;87
-Replevit me amaritudine, * inebriavit me absynthio.;;108
-V. Deus vitam meam annuntiavi tibi.
-R. Posuisti lacrimas meas in conspectu tuo.
 
 [Lectio1]
 De Isaia Propheta.
@@ -236,7 +208,9 @@ R. Et Dominicæ passionis fructum sentiamus.
 @:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Jes 53:1-2
+v. Ist das unglaublich, was ich vernommen? Und was du, o Herr, gewirkt hast, ist das jemandem begreiflich? Ach, es erhebt sich etwas wie ein Zweiglein vor mir, wie ein aus dürrem Erdreich sprossendes Pflänzchen.
+$Deo gratias
 
 [Hymnus Laudes]
 {:H-Stabatmater:}v. Virgo virginum præclara,
@@ -264,9 +238,6 @@ Fac ut animæ donetur
 Paradisi gloria.
 Amen.
 
-[Versum 2]
-@:Versum 1
-
 [Ant 2]
 Cum vidisset Jesus * Matrem stantem juxta crucem, et discipulum quem diligebat, dicit Matri suæ: Mulier, ecce filius tuus. Deinde dicit discipulo: Ecce mater tua.
 
@@ -285,57 +256,18 @@ $Per Dominum
 !Isa 53:8
 Generationem ejus quis enarrabit, quia abscissus est de terra viventium; propter scelus populi mei percussi eum.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
-R.br. Posuit me * Desolatam.
-R. Posuit me * Desolatam.
-V. Tota die mærore confectam.
-R. Desolatam.
-&Gloria
-R. Posuit me * Desolatam.
-_
-V. Facies mea intumuit a fletu.
-R. Et palpebræ meæ caligaverunt.
+[Versum Prima]
+Der du um unseres Heiles willen den Tod gelitten hast.
 
 [Capitulum Sexta]
 !Isa 53:5
 v. Ipse vulneratus est propter iniquitates nostras, attritus est propter scelera nostra: disciplina pacis nostræ super eum, et livore ejus sanati sumus.
 $Deo gratias
 
-[Responsory Sexta]
-R.br. Facies mea * Intumuit a fletu.
-R. Facies mea * Intumuit a fletu.
-V. Et palpebræ meæ caligaverunt.
-R. Intumuit a fletu
-&Gloria
-R. Facies mea * Intumuit a fletu.
-_
-V. Deus vitam meam annuntiavi tibi.
-R. Posuisti lacrimas meas in conspectu tuo.
-
 [Capitulum Nona]
 !Isa 53:8
 v. Generationem ejus quis enarrabit, quia abscissus est de terra viventium; propter scelus populi mei percussi eum.
 $Deo gratias
-
-[Responsory Nona]
-R.br. Deus vitam meam * Annuntiavi tibi.
-R. Deus vitam meam * Annuntiavi tibi.
-V. Posuisti lacrimas meas in conspectu tuo.
-R. Annuntiavi tibi
-&Gloria
-R. Deus vitam meam * Annuntiavi tibi.
-_
-V. Ora pro nobis Virgo dolorosissima.
-R. Ut digni efficiamur promissionibus Christi.
-
-[Versum 3]
-@:Versum 1
-
-[Ant 3]
-@:Ant 2
 
 [Commemoratio 3]
 !Kommemoration vom Freitag der Passionswoche
@@ -345,5 +277,5 @@ V. Befrei mich, o Gott, von meinen Feinden.
 R. Vor denen, die sich gegen mich erheben, sei mir Retter.
 _
 $Oremus
-Verleihe uns, wir bitten dich, allmächtiger Gott, die Gnade, dass wir, die wir deines Schutzes Huld ersehnen, von allem Übel befreit, dir mit ungestörtem Geiste dienen können.
+Verleihe uns, wir bitten dich, allmächtiger Gott, die Gnade, daß wir, die wir deines Schutzes Huld ersehnen, von allem Übel befreit, dir mit ungestörtem Geiste dienen können.
 $Per Dominum

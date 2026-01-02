@@ -1,36 +1,18 @@
-[Rank]
-Św. Damazego Papieża i Wyznawcy;;Semiduplex;;2.5;;vide C4
+[Officium]
+Św. Damazego Papieża i Wyznawcy
 
-[Rank1960]
-Św. Damazego Papieża i Wyznawcy;;Duplex;;3;;vide C4
+[Name]
+Damazego
 
-[RankNewcal]
-Św. Damazego Papieża i Wyznawcy;;Semiduplex;;2.5;;vide C4
-
-[Rule]
-vide C4;
-9 lectiones;
-OPapaC=Damazego;
-Doxology=Nat
-Omit Preces
-Commemoratio3
-
-[Oratio]
+[Oratio] (nisi communi Summorum Pontificum)
 Wysłuchaj, Panie, próśb naszych a wstawiennictwem błogosławionego Damazego Wyznawcy Twego i Biskupa przebłagany, odpuść nam grzechy nasze i obdarz pokojem.
 $Per Dominum
 
-[Commemoratio 2]
-!Wspomnienie Dnia w Oktawie Niepokalanego Poczęcia N.M.P.
-@Sancti/12-08:Oratio
+[Lectio4]
+Damazy, Hiszpan mąż znakomity i uczony w Piśmie, zwołał pierwszy Sobór Konstantynopolitański, na którym stłumił zbrodniczą herezję Eunomjusza i Macedonjusza. I zebranie w Rimini, już poprzednio odrzucone przez Papieża Liberjusza, Damazy powtórnie potępił. Św. Hieronim pisze, że na tymto zjeżdzie, podstępem i zdradą Walensa i Ursacjusza, zebrani potępili uchwały Soboru Nicejskiego, tak, że świat nieszczęsny wielce się zdumiał, ujrzawszy się nagle arjańskim.
 
-[Lectio7]
-@Commune/C4:Lectio7 in 2 loco
+[Lectio5]
+Św. Damazy wzniósł dwie Bazyliki: jedną pod wezwaniem św. Wawrzyńca (obok teatru Pompejusza), którą hojnie udarował, przyłączając do niej liczne budynki i ziemie; drugą, na via Ardeatina, przy katakumbach. Miejsce zaś, na którem spoczywały jakiś czas ciała Apostołów Piotra i Pawła przyozdobił marmurem, poświęcił i udatnym wierszem uwiecznił pamięć Świętych. Rymami i prozą sławił cnotę dziewictwa i wiele pism zostawił. 
 
-[Lectio8]
-@Commune/C4:Lectio8 in 2 loco
-
-[Lectio9]
-@Commune/C4:Lectio9 in 2 loco
-
-[Ant 3] (rubrica divino aut rubrica 1955 aut rubrica 1960)
-@Commune/C4:Ant 3 summi Pontificis
+[Lectio6]
+Ustanowił osobną karę dla fałszywych oskarżycieli. Stosownie do zwyczaju, przyjętego już w wielu miejscowościach, Damazy rozszerzył na wszystkie kościoły śpiewanie dniem i nocą Psalmów na dwa chóry; na końcu każdego Psalmu polecił dodawać: Chwała Ojcu i Synowi i Duchowi Świętemu. Zobowiązał św. Hieronima do przetłómaczenia Nowego Testamentu, w pierwotnej czystości tekstu greckiego. Rządził Kościołem Bożym lat siedmnaście, dwa miesiące i dwadzieścia ośm dni. Dokonał pięć razy grudniowych święceń kapłańskich, podczas których wyświęcił trzydziestu jeden księży, jedenastu Djakonów i dla różnych miejscowości Biskupów sześćdziesięciu dwóch. Sławny cnotą, wiedzą i roztropnością, starzec prawie ośmdziesięcioletni, zasnął w Bogu za panowania Teodozjusza Wielkiego. Został pochowany na via Ardeatina, z matką i siostrą swoją, w Bazylice przecz siebie wystawionej. Szczątki jego przeniesiono później do kościoła św. Wawrzyńca, który od imienia tego Papieża otrzymał nazwę in Damaso.

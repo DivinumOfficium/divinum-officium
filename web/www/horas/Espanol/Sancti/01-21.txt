@@ -1,12 +1,5 @@
-[Rank]
-S. Agnetis Virginis et Martyris;;Duplex;;3.1;;vide C6b
-
-[Rule]
-vide C6b;
-9 lectiones
-
-[Capitulum Vespera]
-@Commune/C7:Capitulum Vespera
+[Officium]
+S. Agnetis Virginis et Martyris
 
 [Ant 1]
 Santa Inés, * de pie en medio de las llamas, rogaba al Señor, con las manos extendidas, diciendo: Glorifico tu nombre eternamente y te bendigo a ti, que eres todopoderoso, y digno de ser adorado, venerado y temido.
@@ -19,21 +12,12 @@ $Per Dominum
 Apártate de mí, * pábulo mortífero, porque he sido ya prevenida por otro amante.;;1
 Él ha adornado * mi diestra y mi cuello con piedras preciosas, ha puesto en mis orejas perlas de inapreciable valor.;;2
 Él ha puesto una señal * en mi rostro, para que fuera de Él no admita otro amante.;;3
-V. Con esta tu gallardía y hermosura.
-R. Camina, avanza prósperamente y reina.
 El Señor me ha cubierto * con un vestido tejido en oro, y me ha adornado con magníficos collares.;;4
 Miel y leche * he recibido de sus labios, y su sangre adorna mis mejillas.;;5
 A Él sólo guardo la fe, * a Él solo me abandono completamente.;;8
-V. Dios la protegerá con su faz. 
-R. En medio de ella está Dios, no será confundida.
 A aquel solo * guardo fe, cuya hermosura admiran el sol y la luna.;;14
 Cristo me ha rodeado * con perlas preciosas, brillantes y resplandecientes.;;44
 Con Aquél estoy desposadada, * al cual los Ángeles sirven, cuya hermosura admiran el sol y la luna.;;45
-V. El Señor la eligió sobre todas las demás.
-R. Y la hizo habitar en su tabernáculo.
-
-[Lectio1]
-@Commune/C6:Lectio1 in 2 loco
 
 [Responsory1]
 R. Celebremos la fiesta de una Virgen muy santa, y recordemos de qué modo padeció la bienaventurada Inés; a los trece años de edad perdió la muerte, y halló la vida: 
@@ -41,17 +25,11 @@ R. Celebremos la fiesta de una Virgen muy santa, y recordemos de qué modo padec
 V. Niña por los años, muy anciana por la madurez de su juicio. 
 R. Porque solamente amó al Autor de la vida.
 
-[Lectio2]
-@Commune/C6:Lectio2 in 2 loco
-
 [Responsory2]
 R. Él ha rodeado mi diestra y mi cuello de piedras preciosas, ha puesto en mis orejas perlas de inapreciable valor.
 * Y me ha adornado con piedras preciosas muy resplandecientes. 
 V. Ha puesto una señal sobre mi rostro para que no admita fuera de Él otro amante. 
 R. Y me ha adornado con piedras preciosas muy resplandecientes. 
-
-[Lectio3]
-@Commune/C6:Lectio3 in 2 loco
 
 [Responsory3]
 R. Yo amo a Cristo; seré la esposa de Aquél cuya Madre es Virgen, cuyo Padre lo ha engendrado sin concurso de mujer y que ha hecho resonar en mis oídos acordes armoniosos. 
@@ -112,17 +90,8 @@ R. Porque mediante tu Hijo Unigénito he escapado a las amenazas de los hombres 
 &Gloria
 R. Porque mediante tu Hijo Unigénito he escapado a las amenazas de los hombres impíos, y he pasado inmaculada por las inmundicias del diablo.
 
-[Ant Laudes]
-@:Ant Vespera 3:s/;;.*//g
-
-[Capitulum Laudes]
-@:Capitulum Vespera
-
 [Ant 2]
 Al que deseé, * ya lo veo; al que esperaba, ya lo poseo; estoy unida en el cielo con aquél que amé ardientemente en la tierra.
-
-[Capitulum Tertia]
-@:Capitulum Laudes
 
 [Capitulum Sexta]
 !Sir 51:4-5

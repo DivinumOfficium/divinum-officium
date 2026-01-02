@@ -1,0 +1,106 @@
+@Sancti/01-01
+
+[Rank] (rubrica 1963)
+Die Octavæ Nativitatis Domini;;Duplex I classis;;7;;ex SanctiM/12-25
+
+[Rule]
+12 lectiones
+
+[Responsory Vespera 1]
+@Sancti/12-25:Responsory Breve Tertia
+(sed rubrica cisterciensis)
+@SanctiCist/12-25:Responsory4
+(sed rubrica Barroux)
+@Commune/C11:Responsory1
+
+[Versum 1]
+@Sancti/12-25:Versum 2
+
+[Ant Matutinum 3N]
+@SanctiCist/12-25
+
+[Ant Matutinum]
+@Sancti/01-01::1-4
+@SanctiM/01-01:AntMatutinumM
+@Sancti/01-01::5-7
+@TemporaCist/Nat1-0::5:s/24/97/
+@SanctiCist/12-25::6
+;;263;264;265
+
+[Lectio1]
+@Tempora/Nat01o::1-6 s/\-6/-4/
+
+[Lectio2]
+@Tempora/Nat01o:Lectio1:2 s/1/5/ s/6/6, 29-31/
+@Tempora/Nat01o:Lectio1:7-8
+@Tempora/Nat31:Lectio3:4-6 s/$/¶/
+
+[Lectio3]
+@Tempora/Nat01:Lectio1:2-6 s/8/4/
+
+[Lectio4]
+@Tempora/Nat01:Lectio1:2 s/1-8/5-7/
+@Tempora/Nat01:Lectio1:7-9 s/8/7/
+
+[Lectio5]
+@SanctiM/01-01
+
+[Lectio6]
+@SanctiM/01-01
+
+[Lectio7]
+@SanctiM/01-01
+
+[Lectio8]
+@SanctiM/01-01
+
+[Lectio9]
+@SanctiM/01-01
+
+[Lectio10]
+@SanctiM/01-01
+
+[Lectio11]
+@SanctiM/01-01
+
+[Lectio12]
+@SanctiM/01-01
+
+[Responsory1]
+@SanctiCist/12-25
+
+[Responsory2]
+@SanctiCist/12-25
+
+[Responsory3]
+@SanctiCist/12-25
+
+[Responsory4]
+@SanctiCist/12-25
+
+[Responsory5]
+@SanctiCist/12-25
+
+[Responsory6]
+@SanctiCist/12-25
+
+[Responsory7]
+@SanctiCist/12-25
+
+[Responsory8]
+@SanctiCist/12-25
+
+[Responsory9]
+@SanctiCist/12-25
+
+[Responsory10]
+@SanctiCist/12-25
+
+[Responsory11]
+@SanctiCist/12-25
+
+[Responsory12]
+@SanctiCist/12-25
+
+[Responsory Laudes]
+@Sancti/12-25:Responsory Breve Sexta

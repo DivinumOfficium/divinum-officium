@@ -1,16 +1,8 @@
 [Rank]
 In Annuntiatione Beatæ Mariæ Virginis;;Duplex I classis;;6.5;;ex C11
 
-[Rank1960]
+[Rank] (rubrica 196)
 In Annuntiatione Beatæ Mariæ Virginis;;Duplex I classis;;6;;ex C11
-
-[Rule]
-ex C11 ;
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
-9 lectiones ;
-Ant Matutinum 12 special
 
 [Ant Vespera]
 L'ange Gabriel * fut envoyé à la Vierge Marie, promise en mariage à Joseph. (Alleluia.);;109
@@ -18,11 +10,6 @@ Je vous salue Marie, * pleine de grâce, le Seigneur est avec vous : vous êtes 
 Ne craignez point, Marie ; * vous avez trouvé grâce devant le Seigneur ; voilà que vous concevrez et enfanterez un fils. (Alleluia.);;121
 Le Seigneur lui donnera * le trône de David, son père ; et il régnera éternellement. (Alleluia.);;126
 Voici la servante du Seigneur * qu'il me soit fait selon votre parole. (Alleluia.);;147
-
-[Capitulum Vespera]
-!Isa 7:14-15
-v. Une vierge concevra, et Elle enfantera un fils, auquel on donnera le nom d'Emmanuel. Il mangera du beurre et du miel, en sorte qu'il sache rejeter le mal et choisir le bien.
-$Deo gratias
 
 [Versum 1]
 V. Je vous salue, Marie, pleine de grâce. (Alleluia.)
@@ -65,9 +52,6 @@ R. Je vous salue, Marie, pleine de grâce ; le Seigneur est avec vous :
 V. Comment cela se fera-t-il ? Car je ne connais point d’homme. Et l’Ange répondant, lui dit.
 R. L’Esprit-Saint surviendra en vous, et la vertu du Très-Haut vous couvrira de son ombre ; c’est pourquoi la chose sainte qui naîtra de vous sera appelée le Fils de Dieu. (Alleluia.)
 
-[Lectio3]
-@Tempora/Adv4-0:Lectio1
-
 [Responsory3]
 R. Recevez, Vierge Marie, la parole du Seigneur, qui vous est transmise par un Ange : vous concevrez et enfanterez Dieu et homme tout ensemble,
 * Et ainsi vous serez appelée bénie entre toutes les femmes. (Alleluia.)
@@ -78,7 +62,7 @@ R. Et ainsi vous serez appelée bénie entre toutes les femmes. (Alleluia.)
 
 [Lectio4]
 Sermo sancti Leónis Papæ
-!Sermo 2 de Nativ. Domini
+!Sermon 2 sur la Nativité du Seigneur
 Dès que la méchanceté du démon nous eut empoisonnés du venin mortel de son envie, le Dieu tout-puissant et clément, dont la nature est bonté, la volonté, puissance, et l’action, miséricorde, indiqua d’avance le remède que sa pitié destinait à guérir les humains ; et cela, dans les premiers temps du monde, quand il déclara au serpent que de la femme naîtrait quelqu’un d’assez fort pour écraser sa tète pleine d’orgueil et de malice : il annonçait par laque le Christ viendrait en notre chair, à la fois Dieu et homme, et que, né d’une vierge, sa naissance condamnerait celui par qui la race humaine avait été souillée.
 
 [Responsory4]
@@ -114,7 +98,7 @@ En ce temps-là : l’Ange Gabriel fut envoyé de Dieu dans une ville de Galilé
 
 _
 Homélie de saint Ambroise, Évêque.
-!Liber 2 in Lucam
+!Livre 2 sur Luc
 A la vérité, les secrets et les mystères de Dieu sont cachés, et, selon la parole d’un Prophète, il n’est pas facile aux hommes de pénétrer ses desseins ; cependant, par les autres actions et instructions du Sauveur, nous pouvons comprendre que ce n’est pas sans un dessein particulier que celle-là a été choisie pour enfanter le Seigneur, qui était l’épouse d’un homme. Mais pourquoi n’a-t-elle pas été mère avant d’être épousée ? De crainte, peut-être, qu’on ne l’accusât d’adultère.
 
 [Responsory7]
@@ -146,11 +130,9 @@ Le Seigneur lui donnera * le trône de David, son père ; et il régnera éterne
 Voici la servante du Seigneur * qu'il me soit fait selon votre parole. (Alleluia.)
 
 [Capitulum Laudes]
-@:Capitulum Vespera
-
-[Versum 2]
-V. Je vous salue, Marie, pleine de grâces. (Alleluia.)
-R. Le Seigneur est avec vous. (Alleluia.)
+!Isa 7:14-15
+v. Une vierge concevra, et Elle enfantera un fils, auquel on donnera le nom d'Emmanuel. Il mangera du beurre et du miel, en sorte qu'il sache rejeter le mal et choisir le bien.
+$Deo gratias
 
 [Ant 2]
 Comment cela se fera-t-il, * Ange de Dieu ? Car je ne connais point d’homme. — Écoutez, Vierge Marie : l’Esprit-Saint surviendra en vous et la vertu du Très-Haut vous couvrira de son ombre. (Alleluia.)
@@ -159,20 +141,10 @@ Comment cela se fera-t-il, * Ange de Dieu ? Car je ne connais point d’homme. �
 !Isa 11:1-2
 v. Il sortira un rejeton de la tige de Jessé, et une fleur s'élèvera de sa souche et l'Esprit du Seigneur reposera sur Lui.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
 [Capitulum Sexta]
 !Luc 1:32-33
 v. Le Seigneur Dieu lui donnera le trône de David Son père ; et Il régnera sur la maison de Jacob à jamais, et son règne n'aura point de fin.
 $Deo gratias
 
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
 [Ant 3]
 L’Ange Gabriel * parla à Marie, disant : Je vous salue, pleine de grâce, le Seigneur est avec vous, vous êtes bénie entre les femmes. (Alleluia.)
-
-[Versum 3]
-@:Versum 1

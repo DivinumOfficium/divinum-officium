@@ -1,26 +1,21 @@
-[Rank]
-Dominica III Adventus;;Semiduplex;;5.6
+[Officium]
+Dominica III Adventus
 
-[Rank1960]
-Dominica III Adventus;;Semiduplex;;6
+[Rank]
+;;Semiduplex II. classis;;5.6
+
+[Rank] (rubrica 1570 aut rubrica 1888)
+;;Semiduplex II. classis;;6.1
+
+[Rank] (rubrica 196)
+;;Semiduplex;;6.01
 
 [Rule]
 9 lectiones
 Antiphonas horas
 
-[Ant Vespera]
+[Ant Vespera] (nisi rubrica tridentina)
 @:Ant Laudes
-
-[Ant Vespera](rubrica 1570 aut rubrica 1910)
-@Psalterium/Psalmi major:Daya6 Vespera
-
-[Ant Vespera 3]
-@:Ant Laudes
-
-[Capitulum Vespera]
-!Phil 4:4-5
-v. Fratres: Gaudéte in Dómino semper: íterum dico, gaudéte. Modéstia vestra nota sit ómnibus homínibus: Dóminus enim prope est.
-$Deo gratias
 
 [Ant 1]
 Ante me * non est formátus Deus, et post me non erit: quia mihi curvábitur omne genu, et confitébitur omnis lingua.
@@ -50,10 +45,10 @@ R. Et cum eo Sanctórum míllia: et habébit in vestiménto, et in fémore suo s
 7 Sémita justi recta est, rectus callis justi ad ambulándum. 
 8 Et in sémita judiciórum tuórum, Dómine, sustinúimus te: nomen tuum, et memoriále tuum in desidério ánimæ. 
 9 Anima mea desiderávit te in nocte, sed et spíritu meo in præcórdiis meis de mane vigilábo ad te. Cum féceris judícia tua in terra, justítiam discent habitatóres orbis.
-10 Misereámur ímpio, et non díscet justítiam: in terra sanctórum iníqua gessit, et non vidébit glóriam Dómini.
+10 Misereámur ímpio, et non discet justítiam: in terra sanctórum iníqua gessit, et non vidébit glóriam Dómini.
 
 [Responsory2]
-R. Bethléhem cívitas Dei summi, ex te éxiet Dominátor Israël, et egréssus ejus sicut a princípio diérum æternitátis, et magnificábitur in médio univérsæ terræ: 
+R. Béthlehem cívitas Dei summi, ex te éxiet Dominátor Israël, et egréssus ejus sicut a princípio diérum æternitátis, et magnificábitur in médio univérsæ terræ: 
 * Et pax erit in terra nostra, dum vénerit.
 V. Loquétur pacem in géntibus, et potéstas ejus a mari usque ad mare.
 R. Et pax erit in terra nostra, dum vénerit.
@@ -114,13 +109,13 @@ Homilía sancti Gregórii Papæ
 Ex hujus nobis lectiónis verbis, fratres caríssimi, Joánnis humílitas commendátur: qui cum tantæ virtútis esset, ut Christus credi potuísset, elégit sólide subsístere in se, ne humána opinióne raperétur inániter super se. Nam conféssus est, et non negávit: et conféssus est, Quia non sum ego Christus. Sed qui dixit, Non sum; negávit plane quod non erat, sed non negávit quod erat: ut veritátem loquens, ejus membrum fíeret, cujus sibi nomen falláciter non usurpáret. Cum ergo non vult appétere nomen Christi, factus est membrum Christi: quia dum infirmitátem suam stúduit humíliter agnóscere, illíus celsitúdinem méruit veráciter obtinére.
 
 [Responsory7]
-R. Veni, Dómine, et noli tardáre: reláxa facinóra plebi tuæ, 
+R. Veni, Dómine, et noli tardáre: reláxa facínora plebi tuæ, 
 * Et révoca dispérsos in terram suam.
 V. Excita, Dómine, poténtiam tuam, et veni, ut salvos fácias nos.
 R. Et révoca dispérsos in terram suam.
 
 [Lectio8]
-Sed cum ex lectióne alia, Redemptóris nostri senténtia ad méntem redúcitur, ex hujus lectiónis verbis nobis quǽstio valde impléxa generátur. Alio quippe in loco inquisítus a discípulis Dóminus de Elíæ advéntu, respóndit: Elías jam venit, et non cognovérunt eum, sed fecérunt in eum quæcúmque voluérunt: et, si vultis scire, Joánnes ipse est Elías. Requisítus autem Joánnes dicit: Non sum Elías. Quid est hoc, fratres caríssimi, quia quod Véritas affírmat, hoc prophéta Veritátis negat? Valde namque inter se divérsa sunt: Ipse est: et, Non sum. Quómodo ergo prophéta veritátis est, si ejusdem Veritátis sermónibus concors non est?
+Sed cum ex lectióne alia, Redemptóris nostri senténtia ad mentem redúcitur, ex hujus lectiónis verbis nobis quǽstio valde impléxa generátur. Alio quippe in loco inquisítus a discípulis Dóminus de Elíæ advéntu, respóndit: Elías jam venit, et non cognovérunt eum, sed fecérunt in eum quæcúmque voluérunt: et, si vultis scire, Joánnes ipse est Elías. Requisítus autem Joánnes dicit: Non sum Elías. Quid est hoc, fratres caríssimi, quia quod Véritas affírmat, hoc prophéta Veritátis negat? Valde namque inter se divérsa sunt: Ipse est: et, Non sum. Quómodo ergo prophéta veritátis est, si ejusdem Veritátis sermónibus concors non est?
 
 [Responsory8]
 R. Ecce radix Jesse descéndet in salútem populórum, ipsum gentes deprecabúntur: 
@@ -147,13 +142,12 @@ Montes et omnes colles * humiliabúntur: et erunt prava in dirécta, et áspera 
 Juste et pie * vivámus, exspectántes beátam spem, et advéntum Dómini.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Phil 4:4-5
+v. Fratres: Gaudéte in Dómino semper: íterum dico, gaudéte. Modéstia vestra nota sit ómnibus homínibus: Dóminus enim prope est.
+$Deo gratias
 
 [Ant 2]
 Super sólium * David, et super regnum ejus sedébit in ætérnum, allelúja.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Capitulum Sexta]
 !Phil 4:6
@@ -164,6 +158,9 @@ $Deo gratias
 !Phil 4:7
 v. Et pax Dei, quæ exsúperat omnem sensum, custódiat corda vestra, et intellegéntias vestras in Christo Jesu Dómino nostro.
 $Deo gratias
+
+[Ant Vespera 3]
+@:Ant Laudes
 
 [Ant 3]
 Beáta es, María, * quæ credidísti Dómino: perficiéntur in te, quæ dicta sunt tibi a Dómino, allelúja.

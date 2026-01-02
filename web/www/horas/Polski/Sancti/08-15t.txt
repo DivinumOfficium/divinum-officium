@@ -1,24 +1,12 @@
 [Rank]
 Wniebowzięcie Najświętszej Marji Panny;;Duplex I classis cum Octava Communi;;7;;ex C11
 
-[Rule]
-ex C11;
-9 lectiones
-Psalmi Dominica
-Antiphonas Horas
-Doxology=Nat
-
 [Ant Vespera]
 Marja wzięta jest * do Nieba, radują się Aniołowie; wychwalając błogosławią Pana.;;109
 Marja Dziewica * wzięta jest do niebieskiego mieszkania, w którem Król królów na gwiaździstym zasiada tronie.;;112
 Za tobą pobieżemy * do wonności olejków twoich; Panienki umiłowały cię bardzo.;;121
 Błogosławionaś jest córko, * przez Boga, przez Ciebie bowiem dan nam jest owoc życia.;;126
 Pięknaś jest * i ozdobna, córko Jeruzalem: ogromna, jako wojska uszykowane porządnie.;;147
-
-[Capitulum Vespera]
-!Syr 24:11-12
-v. A w tym wszytkim szukałam odpoczynku i w dziedzictwie Pańskim mieszkać będę. Tedy przykazał i rzekł mi, Stworzyciel wszech rzeczy, a który mię stworzył, odpoczynął w przybytku moim.
-$Deo gratias
 
 [Versum 1]
 V. Podniesiona jest święta Boża Rodzicielka.
@@ -31,6 +19,17 @@ Dziewico najroztropniejsza, * gdzie idziesz jako zorza powstająca?  Córko Sio�
 Przebacz, prosimy Cię, Panie, grzechy sług Twoich i daj, abyśmy, którzy sami z siebie w czynach swych podobać się Tobie nie potrafimy, uzyskali zbawienie za pośrednictwem Rodzicielki Syna Twojego:
 $Qui tecum
 
+[Octava 1]
+!Wspominamy Oktawę Wniebowzięcia N.M.P.
+Ant. Dzisiaj Marja Dziewica * do nieba wstąpiła: radujcie się, bo z Chrystusem na wieki króluje.
+_
+V. Podniesiona jest święta Boża Rodzicielka.
+R. Ponad chóry Anielskie do Królestwa Niebieskiego.
+_
+$Oremus
+Przebacz, prosimy Cię, Panie, grzechy sług Twoich i daj, abyśmy, którzy sami z siebie w czynach swych podobać się Tobie nie potrafimy, uzyskali zbawienie za pośrednictwem Rodzicielki Syna Twojego:
+$Qui tecum
+
 [Invit]
 Przyjdźcie, uwielbiajmy Króla królów, * którego Matka Dziewica została dziś wzięta do nieba.
 
@@ -38,16 +37,18 @@ Przyjdźcie, uwielbiajmy Króla królów, * którego Matka Dziewica została dzi
 Podniesiona jest * święta Boża Rodzicielka ponad chóry Anielskie do Królestwa Niebieskiego;;8
 Bramy raju * przez Ciebie dla nas są otwarte, która dzisiaj chwalebnie z aniołami triumfujesz.;;18
 Błogosławionaś ty * między niewiastami, i błogosławiony owoc żywota twojego.;;23
-V. Podniesiona jest święta Boża Rodzicielka.
-R. Ponad chóry Anielskie do Królestwa Niebieskiego.
 Z ślicznością twoją * i z pięknością twoją nadciągnij, fortunnie postępuj i króluj.;;44
 Wspomoże ją * Bóg obliczem swoim: Bóg w pośrodku jej, nie będzie poruszona.;;45
 Jako weselących się * wszystkich, nasze mieszkanie jest w tobie, święta Boża Rodzicielko.;;86
-V. Marja wzięta jest do Nieba: radują się Aniołowie.
-R. Wychwalając błogosławią Pana.
 Raduj się Maryjo Dziewico, * któraś sama zniszczyła wszystkie herezje w całym świecie.;;95
 Dozwól mi * chwalić Cię, Panno święta. daj mi moc przeciw nieprzyjaciołom swoim.;;96
 Porodziwszy Syna, * Dziewicą Niepokalaną pozostałaś: Boga Rodzico przyczyń się za nami.;;97
+
+[Nocturn 2 Versum]
+V. Marja wzięta jest do Nieba: radują się Aniołowie.
+R. Wychwalając błogosławią Pana.
+
+[Nocturn 3 Versum]
 V. Marja Dziewica wzięta jest do niebieskiego mieszkania.
 R. W którem Król królów na gwiaździstym zasiada tronie.
 
@@ -67,7 +68,7 @@ R. I jak dzień wiosenny otaczały ją kwiaty róż i lilie padolne
 
 [Lectio2]
 !Pnp 1:5-9
-5 Nie patrzajcie na mię, żem jest śmiada; bo mię opaliło słońce: synowie matki mojéj walczyli przeciwko mnie, postawili mię stróżem w winnicach: winnice mojéj nie strzegłam.
+5 Nie patrzajcie na mię, żem jest śniada; bo mię opaliło słońce: synowie matki mojéj walczyli przeciwko mnie, postawili mię stróżem w winnicach: winnice mojéj nie strzegłam.
 6 Oznajmijże mi, którego miłuje dusza moja, kędy pasiesz? kędy odpoczywasz w południe? abych się nie poczęła błąkać za trzodami towarzyszów twoich.
 7 Jeźli się nie znasz, o najpiękniejsza między niewiastami, wynidź a idź za stadem trzód, a paś koźlęta twoje przy budkach pasterskich.
 8 Jeździe mojéj w woziech Pharaonowych przyrównałem cię, przyjaciółko moja!
@@ -88,7 +89,7 @@ R. I jak dzień wiosenny otaczały ją kwiaty róż i lilie padolne
 &Gloria
 R. Widziały ją córki syjońskie, i błogosławioną zwały, i królowe ją chwaliły.
 
-[Lectio4]
+[Lectio4_]
 Z kazań św. Jana Damasceńskiego
 !Drugie na Zaśnięcie Błogosławionej Maryi
 Dzisiaj święta i żywa arka Boga Żywego, która w swoim łonie poczęła Stworzyciela, spoczywa w świątyni Pana, nie ręką uczynionej. Dawid, jej przodek, skacze radośnie przed nią, tańczą z nim razem Aniołowie, śpiewają Archaniołowie, Moce cześć oddawają, Księstwa wykrzykują, radują się Potęgi, weselą Państwa, Trony świętują, Cherubini wychwalają, cześć głoszą Serafini. Dzisiaj rajski Eden przyjmuje nowego Adama, w którym potępienie nasze zostało umorzone, gdzie zasadzone jest drzewo życia, gdzie nagość nasza jest przykryta.
@@ -96,7 +97,7 @@ Dzisiaj święta i żywa arka Boga Żywego, która w swoim łonie poczęła Stwo
 [Responsory4]
 @Commune/C11:Responsory6:s/.\&.*/ Imię twoje jak wonna maść rozlana./s
 
-[Lectio5]
+[Lectio5_]
 Dzisiaj Dziewica nieskalana, nie splugawiona żadnym ziemskim pożądaniem, ale wychowana przez niebieskie pragnienia, nie powróciła do prochu, ale będąc sama żywym niebem, zajęła miejsce wśród namiotów niebiańskich. Jakże bowiem Ta, z której wypłynął dla wszystkich żywot prawdziwy, mogła zaznać śmierci? Ponieważ dała ona posłuszeństwo prawu ustanowionemu przez Tego, Kogo porodziła; a jako córka starego Adama, przyjęła śmierć (przed którą nie cofnął się nawet jej Syn, który sam w sobie jest Życiem). Ale godzi się, by jako Matka Boga Żywego, do niego samego została przyjęta.
 
 [Responsory7]
@@ -116,55 +117,13 @@ R. Wstawiaj się za nami u Pana Boga naszego.
 [Ant Laudes]
 @:Ant Vespera:s/;;.*//g
 
+[Capitulum Laudes]
+!Syr 24:11-12
+v. A w tym wszytkim szukałam odpoczynku i w dziedzictwie Pańskim mieszkać będę. Tedy przykazał i rzekł mi, Stworzyciel wszech rzeczy, a który mię stworzył, odpoczynął w przybytku moim.
+$Deo gratias
+
 [Ant 2]
 Któraż to jest, * która idzie jako zorza powstająca, piękna jako księżyc, wybrana jako słonce, ogromna jako wojska uszykowane porządnie?
-
-[Responsory Tertia]
-R.br. Podniesiona jest * Święta Boża Rodzicielka.
-R. Podniesiona jest * Święta Boża Rodzicielka.
-V. Ponad chóry Anielskie do Królestwa Niebieskiego.
-R. Święta Boża Rodzicielka.
-&Gloria
-R. Podniesiona jest * Święta Boża Rodzicielka.
-_
-V. Marja wzięta jest do Nieba, radują się Aniołowie.
-R. Wychwalając błogosławią Pana.
-
-[Responsory Sexta]
-R.br. Marja wzięta jest do Nieba, * Radują się Aniołowie.
-R. Marja wzięta jest do Nieba, * Radują się Aniołowie.
-V. Wychwalając błogosławią Pana.
-R. Radują się Aniołowie.
-&Gloria
-R. Marja wzięta jest do Nieba, * Radują się Aniołowie.
-_
-V. Marja Dziewica wzięta jest do niebieskiego mieszkania.
-R. W którem Król królów na gwiaździstym zasiada tronie.
-
-[Responsory Nona]
-R.br. Marja Dziewica wzięta jest * Do niebieskiego mieszkania.
-R. Marja Dziewica wzięta jest * Do niebieskiego mieszkania.
-V. W którem Król królów na gwiaździstym zasiada tronie.
-R. Do niebieskiego mieszkania.
-&Gloria
-R. Marja Dziewica wzięta jest * Do niebieskiego mieszkania.
-_
-V. Dozwól mi chwalić Cię, Panno święta.
-R. Daj mi moc przeciw nieprzyjaciołom swoim.
-
-[Ant 3]
-Dzisiaj Marja Dziewica * do nieba wstąpiła: radujcie się, bo z Chrystusem na wieki króluje.
-
-[Octava 1]
-!Wspominamy Oktawę Wniebowzięcia N.M.P.
-Ant. Dzisiaj Marja Dziewica * do nieba wstąpiła: radujcie się, bo z Chrystusem na wieki króluje.
-_
-V. Podniesiona jest święta Boża Rodzicielka.
-R. Ponad chóry Anielskie do Królestwa Niebieskiego.
-_
-$Oremus
-Przebacz, prosimy Cię, Panie, grzechy sług Twoich i daj, abyśmy, którzy sami z siebie w czynach swych podobać się Tobie nie potrafimy, uzyskali zbawienie za pośrednictwem Rodzicielki Syna Twojego:
-$Qui tecum
 
 [Octava 2]
 !Wspominamy Oktawę Wniebowzięcia N.M.P.
@@ -176,3 +135,34 @@ _
 $Oremus
 Przebacz, prosimy Cię, Panie, grzechy sług Twoich i daj, abyśmy, którzy sami z siebie w czynach swych podobać się Tobie nie potrafimy, uzyskali zbawienie za pośrednictwem Rodzicielki Syna Twojego:
 $Qui tecum
+
+[Responsory Breve Tertia]
+R.br. Podniesiona jest * Święta Boża Rodzicielka.
+R. Podniesiona jest * Święta Boża Rodzicielka.
+V. Ponad chóry Anielskie do Królestwa Niebieskiego.
+R. Święta Boża Rodzicielka.
+&Gloria
+R. Podniesiona jest * Święta Boża Rodzicielka.
+
+[Responsory Breve Sexta]
+R.br. Marja wzięta jest do Nieba, * Radują się Aniołowie.
+R. Marja wzięta jest do Nieba, * Radują się Aniołowie.
+V. Wychwalając błogosławią Pana.
+R. Radują się Aniołowie.
+&Gloria
+R. Marja wzięta jest do Nieba, * Radują się Aniołowie.
+
+[Responsory Breve Nona]
+R.br. Marja Dziewica wzięta jest * Do niebieskiego mieszkania.
+R. Marja Dziewica wzięta jest * Do niebieskiego mieszkania.
+V. W którem Król królów na gwiaździstym zasiada tronie.
+R. Do niebieskiego mieszkania.
+&Gloria
+R. Marja Dziewica wzięta jest * Do niebieskiego mieszkania.
+
+[Versum Nona]
+V. Dozwól mi chwalić Cię, Panno święta.
+R. Daj mi moc przeciw nieprzyjaciołom swoim.
+
+[Ant 3]
+Dzisiaj Marja Dziewica * do nieba wstąpiła: radujcie się, bo z Chrystusem na wieki króluje.

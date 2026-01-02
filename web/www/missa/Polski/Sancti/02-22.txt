@@ -1,24 +1,16 @@
-[Rank]
-In Cathedra S. Petri Ap. Antiochiae;;Duplex majus;;4;;ex C4
+[Officium]
+Stolicy Św. Piotra w Antiochji
 
-[Rank1960]
-In Cathedra S. Petri Ap.;;Duplex II classis;;5;;ex C4
-
-[RankNewcal]
-In Cathedra S. Petri Ap.;;Duplex II classis;;5;;ex C4
-
-[Rule]
-ex C4;
-Gloria
-Credo
-Prefatio=Apostolis
-Sub unica conclusione
+[Officium] (rubrica 196 aut rubrica 1930)
+Stolicy Św. Piotra w Apostoła
 
 [Comment]
 # 22 II – Katedry św. Piotra Apostoła
 ! 2 klasy
 ! Szaty białe
 Już w IV wieku chrześcijanie rzymscy obchodzili 22 lutego pamiątkę rządów biskupich św. Piotra w ich kościele. Dzięki założeniu przez św. Piotra stolicy biskupiej i papieskiej w Rzymie, miasto to stało się ośrodkiem całego chrześcijaństwa. W bazylice św. Piotra na Watykanie przechowuje się drewnianą «katedrę», czyli przenośny tron biskupi, który miał służyć św. Piotrowi.
+
+Wspomnienie św. Pawła Apostoła.
 
 [Introitus]
 !Syr 45:30
@@ -29,8 +21,7 @@ Pomnij, Panie, na Dawida i na całą jego gorliwość.
 v. Pan zawarł z nim przymierze pokoju i ustanowił go przełożonym, aby godność kapłańska została przy nim na wieki.
 
 [Oratio]
-Boże, powierzając Swojemu Apostołowi świętemu Piotrowi klucze Królestwa Niebieskiego, udzieliłeś mu arcykapłańskiej władzy wiązania i rozwiązywania, spraw przeto, abyśmy za jego przyczyną wyzwolili się z więzów swoich grzechów.
-$Qui vivis
+@Sancti/01-18
 _
 !Wspomnienie św. Pawła Apostoła
 Boże, który oświeciłeś wiele narodów przez nauczanie św. Pawła Apostoła, spraw, abyśmy doznali wstawiennictwa tego, którego wspominamy.
@@ -49,6 +40,13 @@ V. Niech dzięki czynią Panu za Jego miłosierdzie, za Jego cuda dla synów cz�
 !Mt 16:18
 Ty jesteś Opoką, a na tej Opoce zbuduję Kościół mój. Alleluja.
 
+[GradualeP]
+Alleluja, alleluja
+!Ps 106:15
+Niechaj Go sławią ludy w zgromadzeniu, i na zebraniu starców niechaj Go chwalą. Alleluja.
+!Mt 16:18
+V. Ty jesteś Opoką, a na tej Opoce zbuduję Kościół mój. Alleluja.
+
 [Tractus]
 !Ps 106:32; 106:31
 Niechaj Go sławią ludy w zgromadzeniu, i na zebraniu starców niechaj Go chwalą.
@@ -59,20 +57,6 @@ V. I bramy piekielne nie zwyciężą go. I tobie dam klucze Królestwa Niebieski
 V. A cokolwiek zwiążesz na ziemi, będzie związane i w niebiesiech.
 V. A cokolwiek rozwiążesz na ziemi, będzie rozwiązane i w niebiesiech.
 
-[GradualeP]
-Alleluja, alleluja
-!Ps 106:15
-Niechaj Go sławią ludy w zgromadzeniu, i na zebraniu starców niechaj Go chwalą. Alleluja.
-!Mt 16:18
-V. Ty jesteś Opoką, a na tej Opoce zbuduję Kościół mój. Alleluja.
-
-[Evangelium]
-Ciąg dalszy ++ Ewangelii świętej według Mateusza.
-!Mt 16:13-19
-!x! Ewangelia ze Mszy wspólnej nr 8 Si diligis
-Onego czasu: Przyszedł Jezus w okolice Cezarei Filipowej i pytał uczniów swoich, mówiąc: «Za kogo mają ludzie Syna Człowieczego?» A oni powiedzieli: «Jedni za Jana Chrzciciela, drudzy za Eliasza, a inni za Jeremiasza albo jednego z proroków».
-Rzekł im Jezus: «A wy za kogo mię macie?» Odpowiadając Szymon Piotr rzekł: «Tyś jest Chrystus, Syn Boga żywego». A odpowiadając Jezus rzekł mu: «Błogosławionyś, Szymonie Bar Jona, bo ciało i krew nie objawiły tobie, jeno Ojciec mój, który jest w niebiesiech. A ja ci powiadam, że ty jesteś Opoką, a na tej Opoce zbuduje Kościół mój i bramy piekielne nie zwycięża go. I tobie dam klucze Królestwa Niebieskiego: a cokolwiek zwiążesz na ziemi, będzie związane i w niebiesiech; a cokolwiek rozwiążesz na ziemi, będzie rozwiązane i w niebiesiech».
-
 [Offertorium]
 !Mt 16:18-19
 Ty jesteś Opoką, a na tej Opoce zbuduje Kościół mój i bramy piekielne nie zwycięża go. I tobie dam klucze Królestwa Niebieskiego.
@@ -82,7 +66,7 @@ Prosimy Cię, Panie, niech modlitwa świętego Piotra Apostoła poleca prośby i
 $Per Dominum
 _
 !Wspomnienie św. Pawła Apostoła
-Dla próśb Twego Apostoła Pawła poświęć, Panie, dary ludu Twojego: miłe Ci są, boś je ustawnowił, niech się staną milsze przez modlitwy orędownika.
+Dla próśb Twego Apostoła Pawła poświęć, Panie, dary ludu Twojego: miłe Ci są, boś je ustanowił, niech się staną milsze przez modlitwy orędownika.
 $Per Dominum
 
 [Communio]

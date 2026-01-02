@@ -1,7 +1,8 @@
 [Rank]
-Septima die infra Octavam Epiphaniæ;;Semiduplex;;2;;ex Sancti/01-06
+Septima die infra Octavam Epiphaniæ;;Semiduplex;;5.6;;ex Sancti/01-06
+(sed rubrica tridentina aut rubrica 1930 omittitur)
 
-[Rank1960]
+[Rank] (rubrica 196 aut rubrica 1955)
 Die Duodecima Januarii;;Feria;;1.8;;vide Sancti/01-06
 
 [Rule]
@@ -10,25 +11,19 @@ Lectio1 tempora
 Doxology=Epi
 9 lectiones
 Feria Te Deum
-No secunda vespera (sed non rubrica 1960)
+No secunda vespera
 Infra octavam Epiphaniæ Domini
 
-[Lectio1]
-De Epístola ad Romános
-!Rom 16:1-5
-1 Comméndo autem vobis Phœben sorórem nostram, quæ est in ministério ecclésiæ, quæ est in Cenchris:
-2 ut eam suscipiátis in Dómino digne sanctis: et assistátis ei in quocúmque negótio vestri indigúerit: étenim ipsa quoque ásstitit multis, et mihi ipsi.
-3 Salutáte Priscam et Aquilam, adjutóres meos in Christo Jesu
-4 (qui pro ánima mea suas cervíces supposuérunt: quibus non solus ego grátias ago, sed et cunctæ ecclésiæ géntium),
-5 et domésticam ecclésiam eórum. Salutáte Epǽnetum diléctum mihi, qui est primitívus Asiæ in Christo.
+[Hymnus Vespera] (rubrica 196)
+@Sancti/01-06:Hymnus Vespera
 
-[Lectio1](rubrica 1960)
-@Tempora/Epi1-0a:Lectio1
+[Ant 1]
+@Sancti/01-11:Ant 3
 
-[Responsory1](rubrica 1960)
+[Responsory1] (rubrica 196)
 @Sancti/01-06:Responsory1
 
-[Responsory1](rubrica tridentina aut rubrica divino)
+[Responsory1] (rubrica tridentina aut rubrica divino)
 @Sancti/01-06:Responsory1InfraOctavam
 
 [Responsory2]
@@ -36,25 +31,6 @@ De Epístola ad Romános
 
 [Responsory3]
 @Sancti/01-06:Responsory3
-
-[Lectio2]
-!Rom 16:17-19
-17 Rogo autem vos fratres, ut observétis eos qui dissensiónes et offendícula, præter doctrínam, quam vos didicístis, fáciunt, et declináte ab illis.
-18 Hujuscémodi enim Christo Dómino nostro non sérviunt, sed suo ventri: et per dulces sermónes et benedictiónes sedúcunt corda innocéntium.
-19 Vestra enim obediéntia in omnem locum divulgáta est. Gáudeo ígitur in vobis. Sed volo vos sapiéntes esse in bono, et símplices in malo.
-
-[Lectio2](rubrica 1960)
-@Tempora/Epi1-0a:Lectio2
-
-[Lectio3](rubrica 1960)
-@Tempora/Epi1-0a:Lectio3
-
-[Lectio3](rubrica tridentina aut rubrica divino)
-!Rom 16:21-24
-21 Salútat vos Timótheus adjútor meus, et Lúcius, et Jason, et Sosípater cognáti mei.
-22 Salúto vos ego Tértius, qui scripsi epístolam, in Dómino.
-23 Salútat vos Cajus hospes meus, et univérsa ecclésia. Salútat vos Erástus arcárius civitátis, et Quartus, frater.
-24 Grátia Dómini nostri Jesu Christi cum ómnibus vobis. Amen.
 
 [Lectio4]
 Sermo sancti Leónis Papæ
@@ -70,9 +46,7 @@ Ad roborándam ergo hanc fidem, quæ contra omnes præmuniebátur erróres, ex m
 [Lectio7]
 Léctio sancti Evangélii secúndum Matthǽum
 !Matt 2:1-12
-Cum natus esset Jesus in Béthlehem Juda in diébus Heródis regis, ecce~
-Magi ab Oriénte venérunt Jerosólymam, dicéntes: Ubi est qui natus est~
-Rex Judæórum? Et réliqua.
+Cum natus esset Jesus in Béthlehem Juda in diébus Heródis regis, ecce Magi ab Oriénte venérunt Jerosólymam, dicéntes: Ubi est qui natus est Rex Judæórum? Et réliqua.
 _
 De Homilía sancti Joánnis Chrysóstomi
 !Homilia 8, in Matth. n. 1
@@ -85,17 +59,14 @@ Nisi enim res ita se habéret, cum ómnia quæ istic videbántur, vília essent,
 Et, respónso accépto in somnis, ne redírent ad Heródem, per áliam viam revérsi sunt in regiónem suam. Hic mihi vide fidem ipsórum, quómodo non offendántur, sed sint quiéti et obtemperántes, neque turbéntur, neque tália mútuo loquántur: Sane, si magnus hic puer est, et si quam habet poténtiam, quid opus fuga et occúlto discéssu? cur vero nos, qui palam et cum fidúcia accéssimus ad pópulum tantum, et coram furénte rege stétimus, quasi fugitívos ex civitáte dimíttit Angelus? At nihil tale vel dixérunt vel cogitárunt. Illud enim máxime ad fidem pértinet, ut nulla mandatórum exquirátur rátio, sed jussis tantum obediátur.
 &teDeum
 
+[Capitulum Laudes] (rubrica 196)
+@Sancti/01-06
+
 [Ant 2]
 Maniféste magnum est * pietátis sacraméntum, quod manifestátum est in carne, justificátum est in spíritu, appáruit Angelis, prædicátum est Géntibus, créditum est in mundo, assúmptum est in glória, allelúja.
 
-[Capitulum Vespera](rubrica 1960)
-@Sancti/01-06:Capitulum Vespera
-
-[Hymnus Vespera](rubrica 1960)
-@Sancti/01-06:Hymnus Vespera
-
-[Versum 3](rubrica 1960)
+[Versum 3] (rubrica 196)
 @Sancti/01-06:Versum 1
 
-[Ant 3](rubrica 1960)
+[Ant 3] (rubrica 196)
 @Sancti/01-06:Ant 3
