@@ -20,9 +20,10 @@ $noinnumbers='1';;
 $noflexa='1';;
 $langfb='English';;
 $testmode='Proper';;
+$singleCell='1';
 
 [parameterscheck]
-bbtbbbtcccccnnbbbbbtt
+bbtbbbtcccccnnbbbbbttb
 
 [general]
 $expand='tota';;

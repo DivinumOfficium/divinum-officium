@@ -116,9 +116,9 @@ PrintTag
   print <<"PrintTag";
   </STYLE>
   <TITLE>$title</TITLE>
-	<SCRIPT TYPE='text/JavaScript' SRC='../../www/js/util.js'></SCRIPT>
-	<SCRIPT TYPE='text/JavaScript' SRC='../../www/js/jquery.min.js'></SCRIPT>
-	<SCRIPT TYPE='text/JavaScript' SRC='../../www/js/exsurge.js'></SCRIPT>
+  <SCRIPT TYPE='text/JavaScript' SRC='../../www/js/util.js'></SCRIPT>
+  <SCRIPT TYPE='text/JavaScript' SRC='../../www/js/jquery.min.js'></SCRIPT>
+  <SCRIPT TYPE='text/JavaScript' SRC='../../www/js/exsurge.js'></SCRIPT>
 $horasjs
 </HEAD>
 <BODY $onload onresize="layoutChant()">
@@ -506,11 +506,13 @@ sub setcell {
   my $lang = shift;
   my $width = ($only) ? 100 : 50;
 
-  return unless ($text && $text !~ /^[_\s]+$/);
+  return unless ($Ck || ($text && $text !~ /^[_\s]+$/));
   $text = resolve_refs($text, $lang);
-  return unless $text;    # No empty cells in 'Lineamenta'
+  return unless ($Ck || $text);    # No empty cells in 'Lineamenta'
 
-  if (!$Ck) {
+  if (!$Ck || !($missa || $singleCell)) {
+
+    # Open new row and/or cell
     if (columnsel($lang)) {
       $searchind++ if ($text !~ /{omittitur}/);
       print "<TR>";    # unless $officium =~ /Eofficium/;
@@ -520,114 +522,115 @@ sub setcell {
     print "<p>" if $officium =~ /Eofficium|Emissa/;
     topnext_cell(\$text, $lang) unless $popup || $officium =~ /Eofficium|Emissa/;
 
-    # GABC: post process chants
-    if ($lang =~ /gabc/i) {
-      my $dId = 0;
-
-      if ($text =~ /Commemoratio|Suffragium/) {
-
-        # Merge Commemoratio et Suffragium
-        # The Versicle are given in the simple tone with clef (c3) ending on (f.)
-        # Roman: The Oration follows in the solemn tone.
-        # Keeping the clef (c4) and adding custos for that purpose.
-        $text =~
-          s/\.\((f)\.\)\s*\(\:\:\)\}(?:\s|\_|\<br\/\>)*\{(\(c4\) O\(h\)ré\([gh]{1,2}\)mus\.\([fh]\.\) \(\:\:\)\})/.($1.) (f+::) $2/gs;
-      } elsif ($text =~ /Incipit/i) {
-
-        # Merge &Alleluja with &Deus in adjutorium
-        $text =~ s/(men\.\([defgh]\.?\) \(\:\:\))\}(?:\s|\_|\<br\/\>)*\{\(c[34]\) (Al|Laus)\(/$1 $2\(/gs;
-      }
-
-      # Merge Versicle with following Oremus, with following Oratio, with following Conclusio
-      $text =~
-        s/\.\(([dfghi])\.\)\s*\(\:\:\)\}(?:\s|\_|\<br\/\>)*\{\(c[34]\) (O\([hi]\)ré\([ghi]{1,2}\)mus\.\([fhi]\.\) \(\:\:\)\})/.($1.) (::) $2/gs;
-      $text =~ s/(O\([hi]\)ré\([ghi]{1,2}\)mus\.\([fhi]\.\)) \(\:\:\)\}(?:\s|\_|\<br\/\>)*\{\(c[34]\)/$1 (:)/gs;
-      $text =~
-        s/\(([fdhi])\.\) \(\:\:\)\}\s*(?:\<br\/\>)*\s*\{(?:initial\-style\:0\;\%\%)\(c[34]\) (Per|Qui)/($1.) (:) $2/gs;
-
-      # Merge Absolutio, Benedictio and remove redundant Amen.
-      $text =~
-        s/\(([fd])\.\) \(\:\:\)\}(?:\s|\_|\<br\/\>)*\{(?:initial\-style\:0\;\%\%)\(c[34]\) (R\/. A\([gh]\.?\)men)/($1.) (::) $2/gs;
-      $text =~
-        s/(?<=R\/.\s?A\([defgh]\.?\)men\.\([defgh]\.?\) \(\:\:\))\s?R\/. A\([gh]\.?\)men\.\([gh]\.?\) \(\:\:\)//g;
-
-      # Merge Chapter, Lectio brevis, and Martyrolgium with Deo gratias / Tu autem / Et álibi
-      $text =~
-        s/(\.\(ef\.\.\) \(\:\:\))\}(?:\s|\_|\<br\/\>)*\{(?:initial\-style\:0\;\%\%)\(c[34]\) (R\/. De\(h\)o\(h\))/$1 $2/gs;
-      $text =~
-        s/(\.\(d\.\) \(\:\:\))\}(?:\s|\_|\<br\/\>)*\{(?:initial\-style\:0\;\%\%)\(c[34]\) (V\/. Tu\(h\) au\(g\))/$1 $2/gs;
-      $text =~
-        s/(\.\(d\.\) \(\:\:\))\}(?:\s|\_|\<br\/\>)*\{(?:initial\-style\:0\;\%\%)\(c[34]\) (V\/. Et\(h\) á\(h\)li)/$1 $2/gs;
-
-      # Retrieve all GABC scores from files
-      while ($text =~ /\{gabc:(.+?)\}/is) {
-        my $temp = $1;
-        my $gregFile = "chants/$1.gabc";
-        $gregFile = checkfile($lang, $gregFile);
-
-        if ($gregFile =~ /\/Latin\/.*gloria\.gabc/i) {
-
-          # if second Responsory GABC doesnot exist (cf. TODO in specmatins.pl)
-          $gregFile = "chants/$temp.gabc";
-          $gregFile =~ s/\-gloria//;
-          $gregFile = checkfile($lang, $gregFile);
-        }
-
-        if (-e "$gregFile") {
-          my (@gregScore) = do_read($gregFile);
-
-          if (@gregScore) {
-            $text =~ s/gabc:$temp/@gregScore/s;
-          }
-        } else {
-          $text =~ s/\{gabc:(.+?)\}/'GABC score $gregFile not found'/;
-        }
-      }
-
-      # identify all GABC sections and post process to be suitable for JavaScript
-      while ($text =~ /\{(\(|name:|annotation:|initial-style:|centering-scheme:)(.+?)\(\:\:\)\}/is) {
-        $dId++;
-        $text =~
-          s/\{(\(|name:|annotation:|initial-style:|centering-scheme:)/<DIV ID="GABC$hora$searchind-$dId" class="GABC">$1/s;
-        $text =~
-          s/\(\:\:\)\}/\(\:\:\)<\/DIV><DIV ID="GCHANT$hora$searchind-$dId" class="GCHANT" width="100\%"><\/DIV>/s;
-        $text =~
-          s/(name:[a-zA-Z\s\.\:]*?)\(([a-zA-Z\s\.\:]*?)\)([a-zA-Z\s\.\:]*?);/$1 $2 $3;/gm; # remove parentheses in title
-        $text =~ s/<i>T\.\s?P\.<\/i>/\_\^T. P.\^\_ /g;                                     # Tempore Paschalis
-        $text =~ s/<\/?i>/\_/g;                                                            # italics
-        $text =~ s/<\/?b>|<v>\\greheightstar<\/v>/*/g;                                     # asterisk
-        $text =~ s/<\/?sc>/\%/g;                                                           # small capitals
-        $text =~ s/<\/?c>/\^/g;                                                            # coloured
-        $text =~ s/<\/?e>/\_/g;                                                            # elisions
-        $text =~ s/<sp>(?:ae|æ)<\/sp>/æ/g;                                                 # various æ spellings
-        $text =~ s/<sp>\'(?:ae|æ)<\/sp>|aé/ǽ/g;
-        $text =~ s/ae\(/æ(/g;
-        $text =~ s/<sp>(?:oe|œ)<\/sp>/œ/g;                                                 # various œ spellings
-        $text =~ s/<sp>\'(?:oe|œ)<\/sp>|oé/œ́/g;
-        $text =~ s/\(\:\:\)\s*?<br\/?>\n/(::)\n/gi;     # remove wrong HTML linebreaks
-        $text =~ s/;\s*?<br\/?>\n/;\n/gi;               # remove wrong HTML linebreaks
-        $text =~ s/%%<br\/?>\n/%%\n/gi;                 # remove wrong HTML linebreaks
-        $text =~ s/%%\(/%%\n\(/gi;                      # insert break at end of header
-        $text =~ s/;([a-z\%\(])/;\n$1/gi;               # insert break in header
-        $text =~ s/(\(\:\:\)\}?) <br\/?>\n/$1 \n/gi;    # remove wrong HTML linebreaks
-        $text =~ s/\) \* /\) \*() /g;                   # asterisk always to be followed by ()
-        $text =~ s/(\([\,\;\:]+\))\s*?(\^?\d+\.\^?|(<sp>)?[VR]\/(<\/sp>)?\.)\s/ $2$1 /gs;
-        $text =~ s/†\(([a-z0-9\_\'\.]+?)\)/($1) ^†^(,) /g;      # coloured flexa
-        $text =~ s/(<sp>)?V\/(<\/sp>)?\.?(\(\))?/V\/\.() /g;    # Versiculum
-        $text =~ s/(<sp>)?R\/(<\/sp>)?\.?(\(\))?/R\/\.() /g;    # Responsorium
-        $text =~ s/\.\(\) \(\:\:\)/.(::)/g;                     # contract () (::)
-        $text =~ s/<\/?nlba>//g;
-        $text =~ s/\_/\|\|/g;
-        $text =~ s/\(([a-k])r(\[ocb\:1\{\])?\)/($1$2)/g;                 # "solidify" used Puncta cava
-        $text =~ s/\s[a-k]r\)/)/g;                                       # remove unused puncta cava
-        $text =~ s/\s[a-k]r(?:\[ocb\:1\{\])\)(.*?)\[ocb\:0\}\]/)$1/g;    # remove unsued braces
-      }
-    } else {
+    if ($lang !~ /gabc/) {
 
       # post process non-GABC
       if ($text =~ /%(.*?)%/) {
         $text = activate_links(\$text, $lang);
       }
+    }
+  }
+
+  # GABC: post process chants
+  if ($lang =~ /gabc/i) {
+    my $dId = 0;
+    $searchind++ if $Ck;
+
+    if ($text =~ /Commemoratio|Suffragium/) {
+
+      # Merge Commemoratio et Suffragium
+      # The Versicle are given in the simple tone with clef (c3) ending on (f.)
+      # Roman: The Oration follows in the solemn tone.
+      # Keeping the clef (c4) and adding custos for that purpose.
+      $text =~
+        s/\.\((f)\.\)\s*\(\:\:\)\}(?:\s|\_|\<br\/\>)*\{(\(c4\) O\(h\)ré\([gh]{1,2}\)mus\.\([fh]\.\) \(\:\:\)\})/.($1.) (f+::) $2/gs;
+    } elsif ($text =~ /Incipit/i) {
+
+      # Merge &Alleluja with &Deus in adjutorium
+      $text =~ s/(men\.\([defgh]\.?\) \(\:\:\))\}(?:\s|\_|\<br\/\>)*\{\(c[34]\) (Al|Laus)\(/$1 $2\(/gs;
+    }
+
+    # Merge Versicle with following Oremus, with following Oratio, with following Conclusio
+    $text =~
+      s/\.\(([dfghi])\.\)\s*\(\:\:\)\}(?:\s|\_|\<br\/\>)*\{\(c[34]\) (O\([hi]\)ré\([ghi]{1,2}\)mus\.\([fhi]\.\) \(\:\:\)\})/.($1.) (::) $2/gs;
+    $text =~ s/(O\([hi]\)ré\([ghi]{1,2}\)mus\.\([fhi]\.\)) \(\:\:\)\}(?:\s|\_|\<br\/\>)*\{\(c[34]\)/$1 (:)/gs;
+    $text =~
+      s/\(([fdhi])\.\) \(\:\:\)\}\s*(?:\<br\/\>)*\s*\{(?:initial\-style\:0\;\%\%)\(c[34]\) (Per|Qui)/($1.) (:) $2/gs;
+
+    # Merge Absolutio, Benedictio and remove redundant Amen.
+    $text =~
+      s/\(([fd])\.\) \(\:\:\)\}(?:\s|\_|\<br\/\>)*\{(?:initial\-style\:0\;\%\%)\(c[34]\) (R\/. A\([gh]\.?\)men)/($1.) (::) $2/gs;
+    $text =~ s/(?<=R\/.\s?A\([defgh]\.?\)men\.\([defgh]\.?\) \(\:\:\))\s?R\/. A\([gh]\.?\)men\.\([gh]\.?\) \(\:\:\)//g;
+
+    # Merge Chapter, Lectio brevis, and Martyrolgium with Deo gratias / Tu autem / Et álibi
+    $text =~
+      s/(\.\(ef\.\.\) \(\:\:\))\}(?:\s|\_|\<br\/\>)*\{(?:initial\-style\:0\;\%\%)\(c[34]\) (R\/. De\(h\)o\(h\))/$1 $2/gs;
+    $text =~
+      s/(\.\(d\.\) \(\:\:\))\}(?:\s|\_|\<br\/\>)*\{(?:initial\-style\:0\;\%\%)\(c[34]\) (V\/. Tu\(h\) au\(g\))/$1 $2/gs;
+    $text =~
+      s/(\.\(d\.\) \(\:\:\))\}(?:\s|\_|\<br\/\>)*\{(?:initial\-style\:0\;\%\%)\(c[34]\) (V\/. Et\(h\) á\(h\)li)/$1 $2/gs;
+
+    # Retrieve all GABC scores from files
+    while ($text =~ /\{gabc:(.+?)\}/is) {
+      my $temp = $1;
+      my $gregFile = "chants/$1.gabc";
+      $gregFile = checkfile($lang, $gregFile);
+
+      if ($gregFile =~ /\/Latin\/.*gloria\.gabc/i) {
+
+        # if second Responsory GABC doesnot exist (cf. TODO in specmatins.pl)
+        $gregFile = "chants/$temp.gabc";
+        $gregFile =~ s/\-gloria//;
+        $gregFile = checkfile($lang, $gregFile);
+      }
+
+      if (-e "$gregFile") {
+        my (@gregScore) = do_read($gregFile);
+
+        if (@gregScore) {
+          $text =~ s/gabc:$temp/@gregScore/s;
+        }
+      } else {
+        $text =~ s/\{gabc:(.+?)\}/'GABC score $gregFile not found'/;
+      }
+    }
+
+    # identify all GABC sections and post process to be suitable for JavaScript
+    while ($text =~ /\{(\(|name:|annotation:|initial-style:|centering-scheme:)(.+?)\(\:\:\)\}/is) {
+      $dId++;
+      $text =~
+        s/\{(\(|name:|annotation:|initial-style:|centering-scheme:)/<DIV ID="GABC$hora$searchind-$dId" class="GABC">$1/s;
+      $text =~ s/\(\:\:\)\}/\(\:\:\)<\/DIV><DIV ID="GCHANT$hora$searchind-$dId" class="GCHANT" width="100\%"><\/DIV>/s;
+      $text =~
+        s/(name:[a-zA-Z\s\.\:]*?)\(([a-zA-Z\s\.\:]*?)\)([a-zA-Z\s\.\:]*?);/$1 $2 $3;/gm;   # remove parentheses in title
+      $text =~ s/<i>T\.\s?P\.<\/i>/\_\^T. P.\^\_ /g;                                       # Tempore Paschalis
+      $text =~ s/<\/?i>/\_/g;                                                              # italics
+      $text =~ s/<\/?b>|<v>\\greheightstar<\/v>/*/g;                                       # asterisk
+      $text =~ s/<\/?sc>/\%/g;                                                             # small capitals
+      $text =~ s/<\/?c>/\^/g;                                                              # coloured
+      $text =~ s/<\/?e>/\_/g;                                                              # elisions
+      $text =~ s/<sp>(?:ae|æ)<\/sp>/æ/g;                                                   # various æ spellings
+      $text =~ s/<sp>\'(?:ae|æ)<\/sp>|aé/ǽ/g;
+      $text =~ s/ae\(/æ(/g;
+      $text =~ s/<sp>(?:oe|œ)<\/sp>/œ/g;                                                   # various œ spellings
+      $text =~ s/<sp>\'(?:oe|œ)<\/sp>|oé/œ́/g;
+      $text =~ s/\(\:\:\)\s*?<br\/?>\n/(::)\n/gi;     # remove wrong HTML linebreaks
+      $text =~ s/;\s*?<br\/?>\n/;\n/gi;               # remove wrong HTML linebreaks
+      $text =~ s/%%<br\/?>\n/%%\n/gi;                 # remove wrong HTML linebreaks
+      $text =~ s/%%\(/%%\n\(/gi;                      # insert break at end of header
+      $text =~ s/;([a-z\%\(])/;\n$1/gi;               # insert break in header
+      $text =~ s/(\(\:\:\)\}?) <br\/?>\n/$1 \n/gi;    # remove wrong HTML linebreaks
+      $text =~ s/\) \* /\) \*() /g;                   # asterisk always to be followed by ()
+      $text =~ s/(\([\,\;\:]+\))\s*?(\^?\d+\.\^?|(<sp>)?[VR]\/(<\/sp>)?\.)\s/ $2$1 /gs;
+      $text =~ s/†\(([a-z0-9\_\'\.]+?)\)/($1) ^†^(,) /g;      # coloured flexa
+      $text =~ s/(<sp>)?V\/(<\/sp>)?\.?(\(\))?/V\/\.() /g;    # Versiculum
+      $text =~ s/(<sp>)?R\/(<\/sp>)?\.?(\(\))?/R\/\.() /g;    # Responsorium
+      $text =~ s/\.\(\) \(\:\:\)/.(::)/g;                     # contract () (::)
+      $text =~ s/<\/?nlba>//g;
+      $text =~ s/\_/\|\|/g;
+      $text =~ s/\(([a-k])r(\[ocb\:1\{\])?\)/($1$2)/g;                 # "solidify" used Puncta cava
+      $text =~ s/\s[a-k]r\)/)/g;                                       # remove unused puncta cava
+      $text =~ s/\s[a-k]r(?:\[ocb\:1\{\])\)(.*?)\[ocb\:0\}\]/)$1/g;    # remove unsued braces
     }
   }
 
@@ -671,19 +674,20 @@ sub setcell {
   }
 
   if ($Ck) {
+
+    # Collect text for Compare (word count or print later)
     if ($column == 1) {
       push(@ctext1, $text);
     } else {
       push(@ctext2, $text);
     }
-
-    #  } elsif ($officium =~ /Eofficium/) {
-    #    print $text;
-  } else {
-    $text .= '</p>' if $officium =~ /Eofficium|Emissa/;
-    print setfont($blackfont, $text) . "</TD>\n";
-    if (!columnsel($lang) || $only) { print "</TR>\n"; }
+    return if $missa || $singleCell;
   }
+
+  # Actually Print cell and close it
+  $text .= '</p>' if $officium =~ /Eofficium|Emissa/;
+  print setfont($blackfont, $text) . "</TD>\n";
+  if (!columnsel($lang) || $only) { print "</TR>\n"; }
 }
 
 #*** topnext_Cell()
@@ -743,24 +747,33 @@ sub ante_post {
 sub table_end {
   if ($Ck) {
     my $width = ($only) ? 100 : 50;
-    print "<TR><TD VALIGN='TOP' WIDTH='$width%'>\n";
+    print "<TR><TD VALIGN='TOP' WIDTH='$width%'>\n" if $missa || $singleCell;
     my $item;
     my $len1 = 0;
-    foreach $item (@ctext1) { print "$item<br/>\n"; $len1 += wnum($item); }
-    print "</TD>\n";
+    my $len2 = 0;
+
+    foreach $item (@ctext1) {
+      print "$item<br/>\n" if $missa || $singleCell;
+      $len1 += wnum($item);    # word count left column
+    }
+    print "</TD>\n" if $missa || $singleCell;
 
     if (!$only) {
-      $len2 = 0;
-      print "<TD VALIGN='TOP' WIDTH='$width%'>\n";
-      foreach $item (@ctext2) { print "$item<br/>\n"; $len2 += wnum($item); }
-      print "</TD></TR>\n";
+      print "<TD VALIGN='TOP' WIDTH='$width%'>\n" if $missa || $singleCell;
+
+      foreach $item (@ctext2) {
+        print "$item<br/>\n" if $missa || $singleCell;
+        $len2 += wnum($item);    # word count right column
+      }
+      print "</TD></TR>\n" if $missa || $singleCell;
     }
+
+    # Print word counts
     print "<TR><TD VALIGN='TOP' WIDTH='$width%'><FONT SIZE='1'>$len1 words</FONT></TD>";
-
-    if (!$only) {
-      print "<TD VALIGN='TOP' WIDTH='$width%'><FONT SIZE='1'>$len2 words</FONT></TD></TR>";
-    }
+    print "<TD VALIGN='TOP' WIDTH='$width%'><FONT SIZE='1'>$len2 words</FONT></TD></TR>" unless $only;
   }
+
+  # Finish HTML Main table
   print "</TABLE><A ID='$hora$searchind'></A>";
 }
 
@@ -945,39 +958,63 @@ sub print_content {
   ante_post('Ante') if $antepost && !$content;
 
   while ($ind1 < @$script1 || $ind2 < @$script2) {
+
     $column = 1;
-    $version = $version1 if $Ck;
     ($text, $ind1) = getunit($script1, $ind1);
 
     $expandind++ if ($text =~ /^\#/);
+
+    if ($Ck) {
+
+      # Ensure consistency for commemorations and other sections not yet filled
+      $version = $version1;
+      precedence();
+      setsecondcol();
+    }
     setcell($text, $lang1);
 
-    if (!$only) {
-      $column = 2;
-      $version = $version2 if $Ck;
-      ($text, $ind2) = getunit($script2, $ind2);
-      setcell($text, $lang2);
-    } else {
+    if ($only) {
       $ind2 = $ind1;
+      next;
     }
+
+    $column = 2;
+    ($text, $ind2) = getunit($script2, $ind2);
+
+    if ($Ck) {
+
+      # Ensure consistency for commemorations and other sections not yet filled
+      $version = $version2;
+      precedence();
+      setsecondcol();
+    }
+    setcell($text, $lang2);
   }
   ante_post('Post') if $antepost && !$content;
   table_end();
 }
 
 #*** getunits(\@s, $ind)
-# break the array into units separated by double newlines
 # from $ind to the returned new $ind
 sub getunit {
+
   my $s = shift;
   my @s = @$s;
   my $ind = shift;
   my $t = '';
+  our ($Ck, $missa);
 
   while ($ind < @s) {
     my $line = chompd($s[$ind]);
     $ind++;
-    if ($line && !($line =~ /^\s+$/)) { $t .= "$line\n"; next; }
+    my $nextline = chompd($s[$ind]);
+
+    # break the array into units separated by double newlines
+    # or separated at #Headlines for multi-cell comparison
+    if (($line && $line !~ /^\s+$/) || ($t && $Ck && !($missa || $singleCell) && $nextline !~ /^\#/)) {
+      $t .= "$line\n";
+      next;
+    }
     if (!$t) { next; }
     last;
   }
