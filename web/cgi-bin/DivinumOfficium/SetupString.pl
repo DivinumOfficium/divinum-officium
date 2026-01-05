@@ -243,6 +243,7 @@ sub get_dayname_for_condition {
   return 'transfigurationis' if ($month == 8 && ($day == 6 || ($day == 5 && $vesp_or_comp)));
   return 'septem doloris' if $winner =~ /09-15$|09-DT|Quad5-5$/;
   return 'Nativitatis' if $winner =~ /12-25/;
+  return 'post Dominicam infra Octavam Epiphaniæ' if $dayname[0] =~ /Epi1-[1-6]/;
   return '';
 }
 

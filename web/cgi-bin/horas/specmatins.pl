@@ -1649,6 +1649,7 @@ sub getantmatutinum {
     if ($winner{Rule} =~ /3 lectio/i) {    # in Monastic infra Octavam (with Ferial psalms)
       my $i = $dayofweek;
       $i -= 3 if $i > 3;
+      if ($version =~ /cist/i) { $i = 1; }
       @nocturns = ($i, 0);                 # Versicle for 1st Nocturn dep. on $dayofweek; No V&R for 2nd Noct.
       $target = 14;
     }
