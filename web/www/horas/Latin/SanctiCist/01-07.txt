@@ -1,0 +1,45 @@
+@Sancti/01-07
+
+[Rule]
+Feria Te Deum
+No prima Vespera
+Infra octavam Epiphaniæ Domini
+ex SanctiCist/01-06
+3 Lectiones
+Doxology=Epi
+Lectio1 tempora
+
+[Ant Matutinum]
+@SanctiCist/01-06::7:s/;;.*//
+;;
+@SanctiCist/01-06:Ant Matutinum 3N
+;;
+@SanctiCist/01-06::3:s/;;.*//
+;;
+@TemporaCist/Nat30::7
+
+[Nocturn 1 Versum]
+@Sancti/01-06:Nocturn 1 Versum
+
+[Responsory1]
+@Sancti/01-06:Responsory1
+
+[Responsory2]
+@SanctiCist/01-06:Responsory2
+
+[Responsory3]
+@Sancti/01-06:Responsory4
+
+[Versum 2] (rubrica cisterciensis)
+@SanctiM/01-06:Versum 1
+
+[Ant 2] (rubrica cisterciensis)
+@Sancti/01-06:Ant 1:s/Magi vidéntes \* stellam,/Magi \* vidérunt stellam, et/i s/, allel[úu][ij]a//
+
+[Versum 3] (rubrica cisterciensis)
+@SanctiM/01-06:Versum 1
+
+[Ant 3] (rubrica cisterciensis)
+@Sancti/01-06
+(sed feria 7)
+@Sancti/01-06:Ant 1

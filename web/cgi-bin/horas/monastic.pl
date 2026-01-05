@@ -87,6 +87,7 @@ sub psalmi_matutinum_monastic {
     my $i = $dayofweek || 1;
     my $src = 'Psalterium';
     if ($i > 3) { $i -= 3; }
+    if ($version =~ /cist/i) { $i = 1; }
 
     if ($name ne 'Asc') {
       ($psalmi[6], $psalmi[7]) = split("\n", $psalmi{"$name $i Versum"});
@@ -115,6 +116,16 @@ sub psalmi_matutinum_monastic {
   {
     my %com = columnsel($lang) ? %commune : %commune2;
     ($psalmi[6], $psalmi[7]) = split("\n", $com{"Nocturn 1 Versum"});
+    setbuild("$commune", "Nocturn 1 Versum", 'subst');
+  }
+
+  #** CIST: change of versicle for Simplex feast (iij. Lect. et M.)
+  if ( $version =~ /Cist/i
+    && exists($winner{'Nocturn 1 Versum'})
+    && $winner{Rule} =~ /3 lectio/i)
+  {
+    my %wa = (columnsel($lang)) ? %winner : %winner2;
+    ($psalmi[6], $psalmi[7]) = split("\n", $wa{"Nocturn 1 Versum"});
     setbuild("$commune", "Nocturn 1 Versum", 'subst');
   }
 
