@@ -1,42 +1,43 @@
-@Sancti/01-07
+@Sancti/01-11
 
 [Rule]
-Feria Te Deum
-No prima Vespera
-Infra octavam Epiphaniæ Domini
-ex SanctiCist/01-06
-3 Lectiones
-Doxology=Epi
+@SanctiM/01-07
+(die Baptismatis Domini) No secunda vespera
 
 [Ant Matutinum]
-@SanctiCist/01-06::7:s/;;.*//
+@Sancti/01-06:Ant Matutinum:8 s/;;\d+//
 ;;
-@SanctiCist/01-06:Ant Matutinum 3N
 ;;
-@SanctiCist/01-06::3:s/;;.*//
 ;;
-@TemporaCist/Nat30::7
+;;
+;;
+@Sancti/01-06:Ant Matutinum:9 s/;;\d+//
+;;
+;;
+;;
+;;
+;;
 
-[Lectio1] 
-@Tempora/Nat07
-
-[Lectio2]
-@Tempora/Nat07
-
-[Lectio3]
-@Tempora/Nat07
-
-[Nocturn 1 Versum]
+[Nocturn 3 Versum]
 @Sancti/01-06:Nocturn 1 Versum
 
+[Lectio1] (rubrica tridentina aut rubrica divino)
+@:Lectio7
+
 [Responsory1]
-@Sancti/01-06:Responsory1
+@SanctiM/01-07
+
+[Lectio2] (rubrica tridentina aut rubrica divino)
+@:Lectio8
 
 [Responsory2]
-@SanctiCist/01-06:Responsory2
+@SanctiM/01-07
+
+[Lectio3] (rubrica tridentina aut rubrica divino)
+@:Lectio9
 
 [Responsory3]
-@Sancti/01-06:Responsory4
+@SanctiM/01-07
 
 [Versum 2] (rubrica cisterciensis)
 @SanctiM/01-06:Versum 1
