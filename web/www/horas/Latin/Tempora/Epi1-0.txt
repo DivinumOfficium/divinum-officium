@@ -5,6 +5,8 @@ Sanctæ Familiæ Jesu Mariæ Joseph
 ;;Duplex majus;;5.61
 (sed rubrica 1960)
 ;;Duplex II classis;;5
+(sed rubrica cisterciensis)
+;;Duplex II classis;;4.1
 
 [Rule]
 9 lectiones

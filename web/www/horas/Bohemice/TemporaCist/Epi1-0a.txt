@@ -1,0 +1,27 @@
+[Officium] (rubrica 1963)
+první Neděle po Zjevení Páně
+
+[Rank] (rubrica 1963)
+;;Semiduplex;;5;;vide SanctiM/01-06
+
+[Versum 1] (rubrica cisterciensis)
+V. Klaňte se Bohu.
+R. Všichni jeho Andělé.
+
+[Ant Matutinum 3N]
+Alleluja, * alleluja, alleluja.;;263;264;265
+
+[Lectio6]
+@Tempora/Epi1-0a:Lectio5:s/Neboť .*//s
+
+[Lectio7]
+@Tempora/Epi1-0a:Lectio5:s/.* Neboť /Neboť /s
+
+[Lectio10]
+@Tempora/Epi1-0a:Lectio8:s/Jinde .*//s
+
+[Lectio11]
+@Tempora/Epi1-0a:Lectio8:s/.* Jinde /Jinde /s
+
+[Lectio12]
+@Tempora/Epi1-0a:Lectio9:s/Jeden heretik.*//
