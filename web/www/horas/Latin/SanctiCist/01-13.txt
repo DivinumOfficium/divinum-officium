@@ -1,0 +1,66 @@
+@Sancti/01-13
+
+[Rule]
+12 lectiones
+Doxology=Epi
+Festum Domini
+
+[Responsory Vespera 1]
+@Sancti/01-06:Responsory Breve Tertia
+
+[Ant Matutinum 3N]
+@SanctiCist/01-06
+
+[Responsory1]
+@SanctiCist/01-06
+
+[Responsory2]
+@SanctiCist/01-06
+
+[Responsory3]
+@SanctiCist/01-06
+
+[Responsory4]
+@SanctiCist/01-06
+
+[Lectio5]
+@Sancti/01-13:Lectio4
+
+[Lectio6]
+@Sancti/01-13:Lectio5:s/Non súscipit .*//s
+
+[Lectio7]
+@Sancti/01-13:Lectio5:s/.* (Non súscipit)/$1/s s/$/~/
+@Sancti/01-13:Lectio6:s/Spíritus .*//s
+
+[Lectio8]
+@Sancti/01-13:Lectio6:s/.*Spíritus /Spíritus /s
+
+[Lectio9]
+@Sancti/01-13:Lectio7
+
+[Lectio10]
+@Sancti/01-13:Lectio8:s/Nam .*//s
+
+[Lectio11]
+@Sancti/01-13:Lectio8:s/.*Nam /Nam /s s/$/~/
+@Sancti/01-13:Lectio9:s/Sunt .*//s
+
+[Lectio12]
+@Sancti/01-13:Lectio9:s/.*Sunt /Sunt /s
+
+[Evangelium]
+@Sancti/01-13
+
+[Ant Laudes]
+Véterem hóminem * rénovans Salvátor venit ad baptísmum, ut natúram quæ corrúpta est, per aquam recuperáret: incorruptíbili veste circumamíctans nos.
+Te, qui in spíritu * et igne puríficas humána contágia, Deum et Redemptórem omnes glorificámus.
+Baptísta cóntremit, * et non audet tángere sanctum Dei vérticem, sed clamat cum tremóre: Sanctífica me, Salvátor.
+Caput dracónis * Salvátor contéruit in Jordáne flúmine, ab ejus potestáte omnes erípuit.
+Magnum mystérium * declarátur hódie, quia Creátor ómnium in Jordáne expúrgat nostra facínora.
+
+[Ant 2]
+Præcúrsor * Joánnes exúltat in Jordáne batizáto Dómino: facta est orbis terrárum exultátio: facta est peccatórum nostrórum remíssio sanctificátis aquis: ipsi omnes clamémus: Miserére nobis.
+
+[Ant 3]
+Fontes aquárum * sanctificáti sunt, Christo apparénte in glória. Orbis terrárum, hauríte aquas de fóntibus Salvatóris; sanctificávit enim nunc omnem creatúram Christus Deus noster.
