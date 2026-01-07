@@ -10,6 +10,7 @@ Hide inline verse numbers~>$noinnumbers~>Checkbutton~>~>18;;
 Hide flexa mark~>$noflexa~>Checkbutton~>~>19;;
 Don't use fancy characters~>$nofancychars~>Checkbutton~>~>17;;
 Contrast background~>$whitebground~>Checkbutton~>~>5;;
+Compare in single cell~>$singleCell~>Checkbutton~>~>22;;
 Text font~>$blackfont~>Entry~>12~>6;;
 Small text~>$smallblack~>Entry~>12~>7;;
 Red font~>$redfont~>Entry~>12~>8;;

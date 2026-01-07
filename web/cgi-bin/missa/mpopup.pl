@@ -102,3 +102,9 @@ sub gettext {
   $text = resolve_refs($text, $lang);
   return $text;
 }
+
+sub horasjsend() {
+
+  # Gregorian Chant (GABC) functionality:
+  # Empty but necessary function to mask the corresponding one from horasjs.pl!
+}
