@@ -1,6 +1,6 @@
 &Vidiaquam
 
-# Incipit
+# Lépcsőima
 !A pap meghajol az oltár lábánál, és keresztet vet:
 v. Az Atya, + a Fiú és a Szentlélek nevében. Ámen.
 
@@ -59,11 +59,11 @@ v. Kérünk Urunk, szabadíts meg bűneinktől, hogy a szentek szentjébe tiszta
 v. Szentjeidnek érdemeire, akiknek ereklyéi itt vannak, és minden szentekére kérünk téged, Urunk, bocsásd meg kegyesen minden bűnömet. Ámen.
 
 !*S
-#Incense
+#Tömjénezés
 !Nagymisén a tömjénezés következik. A tömjént így áldja meg a pap:
 Áldjon meg + az, akinek tiszteletére elégsz. Ámen.
 
-#Introit
+#Introitus
 &introitus
 
 # Kyrie
@@ -83,20 +83,20 @@ P. Uram, irgalmazz.
 !Ezután az oltár közepénél, karját kitárva és kissé meghajolva mondja - kivéve Nagyböjt, Ádvent és a halottak miséin - Dicsőség a magasságban. Amikor azt mondja: Áldunk Téged, dicsérünk, Téged ... meghajol, és a végén keresztet vet:
 v. Dicsőség a magasságban Istennek, és a földön békesség a jóakaratú embereknek. Dicsőítünk téged, áldunk téged, imádunk téged, magasztalunk téged, hálát adunk neked nagy dicsőségedért. Urunk és Istenünk! Mennyei Király! Mindenható Atyaisten! Urunk, Jézus Krisztus: egyszülött Fiú. Urunk és Istenünk, Isten Báránya, az Atyának fia! Te elveszed a világ bűneit: irgalmazz nekünk! Te elveszed a világ bűneit: hallgasd meg könyörgésünket! Te az Atya jobbján ülsz: irgalmazz nekünk! Mert egyedül Te vagy a Szent, te vagy az Úr, te vagy az egyetlen Fölség: Jézus Krisztus, a Szentlélekkel együtt + az Atyaisten dicsőségében! Ámen.
 
-#Oratio
+# Collecta
 !A pap megcsókolja az oltárt és a hívek felé fordulva mondja:
 &DominusVobiscum
 !
 &collect
 
-# Lectio
+# Olvasmány/szentlecke
 &lectio
 
 # Graduale
 &graduale
 
 !*SnD
-# Evangelium
+# Evangélium
 !Nagymisén a pap megáldja a tömjént, és a diakónus mondja a Munda cor imát:
 Tisztítsd meg szívemet és ajkamat Mindenható Isten, ki Izaiás próféta ajkát tüzes parázzsal tisztítottad meg. Irgalmas jóságod által tisztíts meg kegyesen, hogy méltón hirdethessem szent Evangéliumodat: Krisztus a mi Urunk által. Ámen.
 !Azután a diakónus kezébe veszi a könyvet, letérdel és áldást kér:
@@ -110,7 +110,7 @@ M. És a te lelkeddel.
 &evangelium
 
 !*RnD
-# Evangelium
+# Evangélium
 ! A misekönyvet az Evangéliumi oldalra viszik. A pap meghajol az oltár közepén és összetett kezekkel mondja:
 Tisztítsd meg szívemet és ajkamat Mindenható Isten, ki Izaiás próféta ajkát tüzes parázzsal tisztítottad meg. Irgalmas jóságod által tisztíts meg kegyesen, hogy méltón hirdethessem szent Evangéliumodat: Krisztus a mi Urunk által. Ámen.
 v. Uram, add rám áldásodat. Legyen az Úr, szívemben és ajkamon, hogy méltó és illő módon hirdethessem evangéliumát.
@@ -120,7 +120,7 @@ M. És a te lelkeddel.
 &evangelium
 
 !*D
-# Evangelium
+# Evangélium
 !Gyászmiséken a pap mondja a Munda cor imát, de nem csókolja meg a könyvet
 Tisztítsd meg szívemet és ajkamat Mindenható Isten, ki Izaiás próféta ajkát tüzes parázzsal tisztítottad meg. Irgalmas jóságod által tisztíts meg kegyesen, hogy méltón hirdethessem szent Evangéliumodat: Krisztus a mi Urunk által. Ámen.
 v. Uram, add rám áldásodat.
@@ -130,14 +130,14 @@ P. Az Úr legyen veletek.
 M. És a te lelkeddel.
 &evangelium
 
-# Creed
+# Hitvallás
 !*&Credo
 !Vasárnapokon és bizonyos ünnepeken a Nicea-Konstantinápolyi hitvallás következik.
 v. Hiszek az egy Istenben, mindenható Atyában, mennynek és földnek, minden láthatónak és láthatatlannak Teremtőjében.
 Hiszek az egy Úrban: Jézus Krisztusban, Isten egyszülött Fiában, aki az Atyától született idő kezdete előtt. Isten az Istentől, Világosság a Világosságtól, valóságos Isten a valóságos Istentől. Született, de nem teremtmény: az Atyával egylényegű és minden általa lett. Értünk, emberekért, a mi üdvösségünkért leszállott a mennyből. Megtestesült a Szentlélek erejéből Szűz Máriától, és emberré lett. Poncius Pilátus alatt értünk keresztre feszítették, kínhalált szenvedett és eltemették. Harmadnapra föltámadott az Írások szerint, fölment a mennybe, ott ül az Atyának jobbján, de újra eljön dicsőségben ítélni élőket és holtakat, és országának nem lesz vége.
 Hiszek Szentlélekben, Urunkban és éltetőnkben, aki az Atyától és a Fiútól származik. Akit éppúgy imádunk és dicsőítünk, mint az Atyát és a Fiút. Ô szólt a próféták szavával. Hiszek az egy, szent, katolikus és apostoli Anyaszentegyházban, vallom az egy keresztséget a bűnök bocsánatára, várom a holtak föltámadását és az eljövendő örök életet. Ámen.
 
-# Offertory
+# Felajánlás
 !A pap megcsókolja az oltárt és a hívek felé fordulva mondja:
 P. Az Úr legyen veletek.
 M. És a te lelkeddel.
@@ -162,7 +162,7 @@ v. Alázatos lelkünkkel és törődött szívünkkel fogadj el minket, Urunk, �
 v. Jöjj megszentelő, mindenható örök Isten, és áldd + meg a te szent nevednek készített áldozatot.
 
 !*S
-# Incense
+# Tömjénezés
 !Nagymisén a pap megáldja a tömjént:
 v. Szent Mihály főangyalnak, aki ott áll a tömjénoltár jobb oldalán és minden választottadnak közbenjárására, kegyeskedjél, Urunk, ezt a tömjént + megáldani és kellemes illatként elfogadni. Krisztus, a mi Urunk által. Ámen.
 !
@@ -355,7 +355,7 @@ P. Az Úr legyen veletek.
 M. És a te lelkeddel.
 &postcommunio
 
-# Conclusio
+# Befejezés
 !
 P. Az Úr legyen veletek.
 M. És a te lelkeddel.
