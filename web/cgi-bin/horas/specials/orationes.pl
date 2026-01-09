@@ -316,11 +316,15 @@ sub oratio {
           my $key = ($ic =~ /$sundaystring/i)
             ? (
               $version !~ /trident/i
-              ? 3000                                  # Sundays are all privilegde commemorations under DA
+              ? 3000                                  # Sundays are all privilegded commemorations under DA
               : $version !~ /altovadensis/i ? 7100    # Dom. min.
               : 6100                                  # Sundays are below MM.maj. commemorations for Altovado
             )
-            : ($ic =~ /$octavestring/i) ? $ccind + 7900
+            : ($ic =~ /$octavestring/i) ? (
+              (!$cwinner && $octvespera && $version =~ /divino|1906/i)
+              ? 1000                                  # Concurrent Octaves commemorated on Sunday night are privilegded
+              : $ccind + 7900
+            )
             : $ccind + 9900;
           $cc{$key} = $ic;
           setbuild2("Commemorated from winner: $key");
@@ -771,14 +775,11 @@ sub getcommemoratio {
   postprocess_ant($a, $lang);
   my $v = $w{"Versum $ind"};
 
-  if (!$v && $wday =~ /tempora/i) {
-    $v = getfrompsalterium('Versum', $ind, $lang);
-  }
-
   if ($winner =~ /Epi1\-0a|01\-12t/) {
     my %w = columnsel($lang) ? %winner : %winner2;
     $v = $vespera == 1 && $day == 10 ? $c{'Versum 2'} : $c{'Versum Tertia'};
   }
+
   $v ||=
        $w{'Versum ' . (4 - $ind)}
     || $c{"Versum $ind"}
