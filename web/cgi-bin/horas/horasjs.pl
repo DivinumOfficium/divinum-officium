@@ -32,6 +32,8 @@ function startup() {
 
 //call a setup table
 function pset(p) {
+  clearradio();
+  
   var pc = document.createElement("input");
   pc.setAttribute("type", "hidden");
   pc.setAttribute("name", "pcommand");
