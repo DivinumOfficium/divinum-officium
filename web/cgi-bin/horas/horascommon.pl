@@ -820,7 +820,7 @@ sub concurrence {
   {
 
     # Commemoration of Octave on Saturday from 2nd Vespers
-    $octvespera = 3;
+    $octvespera = 3 unless $version =~ /196/;
 
     # On Saturday in Cist. rite, it's always from 1st Vespers
     $octvespera = 1 if $version =~ /cist/i && $dayofweek == 6;
