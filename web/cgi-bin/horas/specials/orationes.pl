@@ -178,6 +178,8 @@ sub oratio {
             push(@s, '$Kyrie', '$pater secreto', "_");
           }
         }
+      } elsif ($winner =~ /C12/ && $version !~ /19[56]|cist/i) {
+        push(@s, '$Kyrie');
       }
 
       if ($priest) {
