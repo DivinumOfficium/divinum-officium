@@ -638,6 +638,7 @@ sub lectio : ScriptFunc {
 
   if ( $num < 4
     && $version =~ /trident|monastic.*divino/i
+    && $version !~ /cist/i
     && $winner{Rank} =~ /Dominica/i
     && $month != 12
     && $dayofweek > 0)
