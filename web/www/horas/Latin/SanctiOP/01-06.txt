@@ -1,0 +1,152 @@
+@Sancti/01-06
+
+[Rule]
+Psalmi Dominica
+Antiphonas horas
+Omit ad Matutinum Invitatorium Hymnus
+Doxology=Epi
+9 lectiones
+Psalm5 Vespera=116
+Psalm5 Vespera3=113
+Festum Domini
+
+[Ant Vespera]
+@Sancti/01-06::1 s/$/;;112;116;145;146;147/
+
+[Responsory Vespera 1]
+@Sancti/01-06:Responsory2
+&Gloria
+@Sancti/01-06:Responsory2:4
+
+[Ant Completorium1]
+@SanctiCist/01-06:Ant Matutinum 3N
+
+[Ant 41]
+Allelúja. Omnes de Saba vénient, allelúja: aurum et thus deferéntes, allelúja, allelúja.
+
+[HymnusM Matutinum]
+@Sancti/01-06:HymnusM Vespera
+
+[Nocturn 1 Versum]
+@Sancti/01-06:Versum 1_
+
+[Nocturn 2 Versum]
+@Sancti/01-06:Versum Tertia:s/, [^,]*$/./mg
+
+[Nocturn 3 Versum]
+@Sancti/01-06:Nocturn 1 Versum
+
+[In Finem Lectio]
+@TemporaOP/Quad5-0
+
+[Lectio1]
+@Sancti/01-06::1-4 s/-4/-2/
+@:In Finem Lectio
+
+
+[Lectio2]
+@Sancti/01-06:Lectio1:2 s/1-4/3-5/
+@Sancti/01-06:Lectio1:5-6
+5 Ecce gentem quam nesciébas vocábis, et gentes quæ te non cognovérunt ad te current, propter Dóminum Deum tuum, et sanctum Israël, quia glorificávit te.
+@:In Finem Lectio
+
+[Lectio3]
+!Isa 55:6-9
+6 Quǽrite Dóminum dum inveníri potest: invocáte eum dum prope est.
+7 Derelínquat ímpius viam suam, et vir iníquus cogitatiónes suas, et revertátur ad Dóminum, et miserébitur eius: et ad Deum nostrum, quóniam multus est ad ignoscéndum.
+8 Non enim cogitatiónes meæ cogitatiónes vestræ, neque viæ vestræ viæ meæ, dicit Dóminus.
+9 Quia sicut exaltántur cæli a terra, sic exaltátæ sunt viæ meæ a viis vestris, et cogitatiónes meæ a cogitatiónibus vestris.
+@:In Finem Lectio
+
+[Lectio5]
+@Sancti/01-06::s/: quam.*/~/
+@Sancti/01-06:Lectio6:s/ Exínde.*//
+
+[Responsory5]
+@Sancti/01-06::1 s/, et/\n* Et/
+@Sancti/01-06::3
+@Sancti/01-06::1 s/.*, et/R. Et/
+
+[Lectio6]
+@Sancti/01-06:Lectio6:s/.* (?=Exínde)//
+
+[Lectio7]
+@Sancti/01-06::s/ Unde .*//s
+
+[Responsory7]
+@Sancti/01-06::1-3 s/\n\*// s/, (gavísi)/\nR. Gavísi/
+@Sancti/01-06::2 s/.*, (.)/R. \u$1/
+
+[Lectio8]
+@Sancti/01-06::s/ Sed .*/~/
+@Sancti/01-06:Lectio9:s/ Mare.*//
+
+[Responsory8]
+@Sancti/01-06::1-3 s/\n\* / / s/\*/\n*/
+@Sancti/01-06::2 s/.*\*/\nR. /
+
+[Lectio9]
+@Sancti/01-06::s/.* (?=Mare)//
+
+[Responsory9]
+@Sancti/01-06:Responsory1InfraOctavam
+&Gloria
+@Sancti/01-06:Responsory1InfraOctavam:4 s/.*: (.)/R. \u$1/
+
+/: Postea dicitur Evangelium Factum est autem :/
+
+[Ant Laudes]
+@Sancti/01-06::1-4
+@Sancti/01-08:Ant 2
+
+[Hymnus Laudes]
+A Patre Unigénitus
+Ad nos venit per Virginem,
+Baptisma cruce cónsecrans,
+Cunctos fidéles génerans.
+_
+De cælo celsus pródiit,
+Excépit formam hóminis:
+Factúram morte rédimens,
+Gáudia vitæ lárgiens.
+_
+Hoc te, Redémptor, quæsumus:
+Illábere propitius,
+Clarúmque nostris sénsibus
+Lumen præbe fidélibus.
+_
+Mane nobiscum, Dómine,
+Noctem obscúram rémove:
+Omne delictum áblue,
+Piam medélam tríbue.
+_
+Quem iam venísse nóvimus,
+Redire item crédimus:
+Sub sceptro tuo inclito
+Tuum defénde pópulum.
+_
+Glória tibi, Dómine,
+Qui apparuisti hódie,
+Cum Patre et Sancto Spíritu
+In sempitérna sæcula.
+Amen.
+
+[Versum Tertia]
+@Sancti/01-06::s/, [^,]*$/./mg
+
+[Versum Sexta]
+@Sancti/01-06:Nocturn 1 Versum
+
+[Responsory Breve Nona]
+@Sancti/05-03::s/te, /te, Deus /gs
+
+[Versum Nona]
+@Sancti/01-06:Nocturn 3 Versum:s/, [^,]*$/./mg
+
+[Capitulum Sexta]
+!Isa 60:2 
+v. Super te, Jerúsalem, oriétur Dóminus, et glória eius in te vidébitur. Et ambulábunt gentes in lúmine tuo, et reges in splendóre ortus tui.
+$Deo gratias
+
+[Ant Vespera 3]
+@Sancti/01-06:Ant Vespera:1 s/$/;;109;110;111;112;116/

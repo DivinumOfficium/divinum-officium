@@ -1,0 +1,20 @@
+@Tempora/Epi1-3
+
+[Lectio1]
+@Tempora/Epi1-2
+
+[Responsory1]
+@Tempora/Epi2-3::1-2
+V. Miserére mei, quóniam in te confídit ánima mea.
+@Tempora/Epi2-3::2 s/\*/R./
+
+[Lectio2]
+@Tempora/Epi1-2
+
+[Lectio3]
+@Tempora/Epi1-2
+
+[Responsory3]
+@Tempora/Epi2-3::1-2
+@TemporaCist/Epi1-1:Responsory3F3:2
+@Tempora/Epi2-3::2 s/\*/R./

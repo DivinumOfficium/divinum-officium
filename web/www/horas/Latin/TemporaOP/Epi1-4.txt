@@ -1,0 +1,22 @@
+@Tempora/Epi1-4
+
+[Lectio1]
+@Tempora/Epi1-3::1-6 s/-6/-4/
+
+[Responsory1]
+@TemporaCist/Epi1-1:Responsory2F4:1-3 s/\n\* (.)/ \l$1/ s/(justítia) (tua) (líbera)/$2 $1\n* \u$3/
+@TemporaCist/Epi1-1:Responsory2F4:4 s/.* (líbera)/R. \u$1/
+
+[Lectio2]
+@Tempora/Epi1-3::1 s/7-11/5-9/
+@Tempora/Epi1-3:Lectio1:7-8
+@Tempora/Epi1-3::2-3
+@Tempora/Epi1-3::4 s/\?.*/?/
+
+[Responsory2]
+@Tempora/Epi2-4::1-2 s/magnitúdinem tuam: noli/magnificéntiæ tuæ. Noli/ s/\n\* Dum/ cum/ s/ in me// s/, ne/\n* Deus ne/
+V. Deus, ne elongéris a me: Deus meus, in auxílium meum réspice.
+@Tempora/Epi2-4::2 s/.*, ne/R. Deus ne/
+
+[Lectio3]
+@Tempora/Epi1-3:Lectio2:!2-3 s/7-/9-/ s/.*\? /9 /
