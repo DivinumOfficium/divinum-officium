@@ -1,8 +1,8 @@
 [Officium]
-S. Mauri Abbatis
+S. Mauri, Abbatis
 
 [Rank]
-;;iij. Lect. et M.;;1.2;;vide C5b
+;;Simplex;;1.2;;vide C5b
 
 [Rule]
 vide C5b;
@@ -10,3 +10,15 @@ vide C5b;
 
 [Name]
 Mauri
+
+[Lectio1]
+@CommuneCist/C5b
+
+[Lectio2]
+Maurus nóbilis Románus, puer a patre Eutychio Deo sub sancti Benedícti disciplína oblátus, brevi tantum divína grátia profécit, ut ipsi Magístro admiratióni esset; qui illum sæpe, véluti reguláris observántiæ et virtútum ómnium spécimen, céteris discípulis ad imitándum proponébat. Nam cum Plácidus Mónachus in lacum prolápsus, aquárum ímpetu raperétur, sancti Patris jussu accúrrens Maurus, et super aquas incédens, sócium capíllis apprehénsum, ad terram attráxit.  	
+
+[Lectio3]
+Continéntiæ tantæ fuit, ut per Quadragésimam bis tantum in hebdómada, et quidem parcíssime, cibum súmeret. Somnum stando, vel cum nímia eum lassitúdo compulísset, sedéndo super aggéstum calcis et sábuli strato cilício, capiébat. Missus in Gálliam ab eódem sancto Benedícto, célebri Monastério exstrúcto, cui annos quadragínta præfuit, monásticam disciplínam mirífice propagávit. Dénique sanctitáte et miráculis clarus, septuagenário major migrávit in cœlum, anno salútis círciter quingentésimo sexagésimo quinto.
+
+[Responsory3]
+@CommuneCist/C5:Responsory12
