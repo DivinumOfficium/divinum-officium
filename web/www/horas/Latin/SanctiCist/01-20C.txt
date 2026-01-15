@@ -1,0 +1,27 @@
+@Sancti/01-20
+
+[Officium]
+SS. Fabiani et Sebastiani, Martyrum
+
+[Rank]
+;;Simplex;;1.2;;vide C3
+
+[Rule]
+vide C3;
+3 Lectiones
+
+[Lectio1]
+@CommuneCist/C3
+
+[Lectio2]
+@Sancti/01-20:Lectio4:s/sepelítur,.*/sepúltus est./
+
+[Lectio3]
+@Sancti/01-20:Lectio5:s/In illis .* recuperávit. // s/$/~/
+@Sancti/01-20:Lectio6:s/Quem ómnium .* valetúdine,/Qui tamen adhuc vivens repértus, paulo post/
+
+[Responsory2]
+@CommuneCist/C3:Responsory6
+
+[Responsory3]
+@CommuneCist/C3:Responsory12

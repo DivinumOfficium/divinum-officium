@@ -1,0 +1,14 @@
+[Officium]
+sv. Fabiána a Šebestiána, Mučedníků
+
+[Lectio5]
+@Sancti/01-20:Lectio4:s/, za Deciova.*/./
+
+[Lectio6]
+@Sancti/01-20:Lectio5:s/Mezi nimi .*//
+
+[Lectio7]
+@Sancti/01-20:Lectio5:s/.* (Mezi nimi )/$1/
+
+[Lectio8]
+@Sancti/01-20:Lectio6:s/Jeho tělo .*//
