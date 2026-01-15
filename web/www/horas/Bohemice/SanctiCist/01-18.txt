@@ -1,0 +1,24 @@
+[Lectio5]
+@Sancti/01-18:Lectio4:s/ Neboť.*//
+
+[Lectio6]
+@Sancti/01-18:Lectio4:s/.* Neboť/Neboť/s s/$/~/
+@Sancti/01-18:Lectio5:s/ Do .*//
+
+[Lectio7]
+@Sancti/01-18:Lectio5:s/.*Do /Do /
+
+[Lectio8]
+@Sancti/01-18:Lectio6
+
+[Lectio9]
+@Sancti/01-18:Lectio7:s/ Petr však .*//
+
+[Lectio10]
+@Sancti/01-18:Lectio7:s/.* Petr však /Petr však /s s/$/~/
+
+[Lectio11]
+@Sancti/01-18:Lectio8:s/Ó Petře,.*//
+
+[Lectio12]
+@Sancti/01-18:Lectio8:s/.* (Ó Petře, )/$1/
