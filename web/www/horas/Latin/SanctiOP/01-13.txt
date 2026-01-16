@@ -1,0 +1,32 @@
+@Sancti/01-13
+
+[Lectio1]
+@Tempora/Epi1-0a
+
+[Lectio2]
+@Tempora/Epi1-0a
+
+[Lectio3]
+@Tempora/Epi1-0a
+
+[Lectio8]
+@Sancti/01-13::s/. Judas.*/./
+
+[Lectio9]
+@Sancti/01-13:Lectio8:s/.* (?=Nam )// s/$/~/
+Ipsi sancti (intelligite, fratres), boni pertinentes ad colúmbam, pertinentes ad sortem civitátis illíus Ierúsalem, ipsi boni in Ec- clésia, de quibus dicit Apóstolus, Novit Dóminus qui sunt eius, diversárum gratiárum sunt, non omnes pária mérita habent.
+
+[Responsory9]
+@SanctiOP/01-06::1-4
+
+[Ant Laudes]
+@SanctiCist/01-13
+
+[Ant 2]
+@SanctiCist/01-13
+
+[Ant Vespera 3]
+@SanctiCist/01-13:Ant Laudes:1 s/$/;;109;110;111;112;116/
+
+[Ant 3]
+@SanctiCist/01-13

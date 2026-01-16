@@ -1,0 +1,50 @@
+@Tempora/Nat2-0
+
+[Ant Vespera]
+@Tempora/Nat2-0::1 s/$/;;112;116;145;146;147/
+
+[Responsory Vespera 1]
+R. Læténtur omnes qui sperant in te, Dómine: in ætérnum exsultábunt, et habitábis in eis: et gloriabúntur in te omnes
+* Qui diligunt nomen tuum.
+V. Dómine, in lúmine vultus tui ambulábunt, et in nómine tuo exsultábunt tota die.
+R. Qui diligunt nomen tuum.
+&Gloria
+R. Qui diligunt nomen tuum.
+
+[Ant 1]
+@Tempora/Nat2-0::s/, [^,]*$/./
+
+[Versum 1]
+@Tempora/Nat2-0::s/, [^,]*$/./mg
+
+[Lectio4]
+@Tempora/Nat2-0::1-2
+Est procul dúbio inter óleum et nomen Sponsi similitúdo, nec otióse Spíritus Sanctus altérutrum comparávit. Ego autem dico in triplici quadam qualitáte ólei, quod lucet, pascit et ungit, si vos mélius non habétis.~
+@Tempora/Nat2-0::s/.* (?=Fovet)//s
+
+[Responsory9]
+@TemporaCist/Nat30:Responsory1:s/Ipsum/Jesum/g
+
+[Capitulum Laudes]
+@Tempora/Nat2-0::s/.*?: /v./
+
+[Ant 2]
+@Tempora/Nat2-0::s/, [^,]*$/./
+
+[Versum Tertia]
+@Tempora/Nat2-0::s/, [^,]*$/./mg
+
+[Versum Sexta]
+@Tempora/Nat2-0::s/, [^,]*$/./mg
+
+[Versum Nona]
+@Tempora/Nat2-0::s/, [^,]*$/./mg
+
+[Ant Vespera 3]
+@Tempora/Nat2-0:Ant Laudes:1 s/$/;;109;110;111;112;115/
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+@Tempora/Nat2-0::s/, [^,]*$/./

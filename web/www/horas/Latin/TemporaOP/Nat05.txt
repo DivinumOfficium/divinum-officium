@@ -1,0 +1,42 @@
+@Tempora/Nat05
+
+[Rule]
+vide Sancti/01-01
+no Te Deum
+
+[Lectio1]
+De Epístola ad Romános
+!Rom 11:13-16
+13 Vobis enim dico géntibus: Quámdiu quidem ego sum géntium Apóstolus, ministérium meum honorificábo,
+14 si quómodo ad æmulándum próvocem carnem meam, et salvos fáciam áliquos ex illis.
+15 Si enim amíssio eórum, reconciliátio est mundi: quæ assúmptio, nisi vita ex mórtuis?
+16 Quod si delibátio sancta est, et massa: et si radix sancta, et rami.
+
+[Responsory1]
+@SanctiCist/12-25:Responsory11
+
+[Lectio2]
+!Rom 9:17-20
+17 Quod si áliqui ex ramis fracti sunt, tu autem cum oleáster esses, insértus es in illis, et sócius radícis, et pinguédinis olívæ factus es,
+18 noli gloriári advérsus ramos. Quod si gloriáris: non tu radícem portas, sed radix te.
+19 Dices ergo: Fracti sunt rami ut ego ínserar.
+20 Bene: propter incredulitátem fracti sunt. Tu autem fide stas.
+
+[Responsory2]
+@SanctiOP/01-01
+
+[Lectio3]
+!Rom 9:20-24
+20 Noli altum sápere, sed time.
+21 Si enim Deus naturálibus ramis non pepércit: ne forte nec tibi parcat.
+22 Vide ergo bonitátem, et severitátem Dei: in eos quidem qui cecidérunt, severitátem: in te autem bonitátem Dei, si permánseris in bonitáte, alióquin et tu excidéris.
+23 Sed et illi, si non permánserint in incredulitáte, inseréntur: potens est enim Deus íterum insérere illos.
+24 Nam si tu ex naturáli excísus es oleástro, et contra natúram insértus es in bonam olívam: quanto magis ii qui secúndum natúram inseréntur suæ olívæ!
+
+[Responsory3]
+@SanctiCist/12-25:Responsory9
+&Gloria
+@SanctiCist/12-25:Responsory9:4 s/.*: (.)/R. \u$1/
+
+[Oratio]
+@Sancti/01-01

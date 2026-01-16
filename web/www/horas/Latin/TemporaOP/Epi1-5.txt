@@ -1,0 +1,30 @@
+@Tempora/Epi1-5
+
+[Lectio1]
+@Tempora/Epi1-3::1
+@Tempora/Epi1-3:Lectio3:1-4 s/-18/-14/
+
+[Responsory1]
+@Tempora/Epi2-5::1-2
+V. Et eripuísti ánimam meam ex inférno inferióri.
+@Tempora/Epi2-5::2 s/\*/R./
+
+[Lectio2]
+@Tempora/Epi1-3:Lectio3:1 s/12-18/15-17/
+@Tempora/Epi1-3:Lectio3:5-7
+
+[Responsory2]
+@Tempora/Epi2-5::1-2
+@TemporaCist/Epi1-1:Responsory2F6:2 s/super // s/:/./
+@Tempora/Epi2-5::2 s/\*/R./
+
+[Lectio3]
+!1 Cor 6:18-20
+18 Fúgite fornicatiónem. Omne peccátum, quodcúmque fécerit homo, extra corpus est: qui autem fornicátur, in corpus suum peccat.
+19 An nescítis quóniam membra vestra, templum sunt Spíritus Sancti, qui in vobis est, quem habétis a Deo, et non estis vestri?
+20 Empti enim estis prétio magno. Glorificáte, et portáte Deum in córpore vestro.
+
+[Responsory3]
+@Tempora/Epi2-5::1-2 s/\* Et/et/ s/(in auxílium)/\n* \u$1/
+@TemporaCist/Epi1-1:Responsory3F6:2
+@Tempora/Epi2-5::2 s/.* (in auxílium)/R. \u$1/
