@@ -1,0 +1,113 @@
+@Sancti/01-21
+
+[Rule]
+ex C6-1;
+12 lectiones
+in 1 Nocturno Lectiones ex Commune in 2 loco
+in 3 Nocturno Lectiones ex Commune in 6 loco
+
+[Name]
+Agnes
+
+[Ant Vespera]
+Ingréssa Agnes * turpitúdinis locum, Angelum Dómini præparátum invénit.;;109
+Mecum enim hábeo * custódem córporis mei, Angelum Dómini.;;112
+Annulo suo subarrhávit me * Dóminus meus Jesus Christus, et tamquam sponsam decorávit me coróna.;;121
+Benedíco te, * Pater Dómini mei Jesu Christi, quia per Fílium tuum ignis extínctus est a látere meo.;;126
+Congaudéte mecum * et congratulámini, quia cum his ómnibus lúcidas sedes accépi.;;146
+
+[Ant 1] 
+Christi Virgo * nec terróre concútitur, nec blandiméntis sedúcitur.
+
+[AntMatutinumM]
+Stans a dextris ejus * Agnus nive candídior, Christus sibi sponsam et Mártyrem consecrávit.;;96
+Misit Dóminus * Angelum suum, et liberávit me de médio ignis, et non sum æstuáta.;;97
+Jam ampléxibus Christi * castis adstrícta sum, et córpori ejus sociáta sum.;;98
+
+[Ant Matutinum 3N]
+@Sancti/01-21:Ant 2
+
+[Ant Matutinum]
+@Sancti/01-21::1-5:s/;;1/;;8/ s/;;2/;;18/ s/;;3/;;23/ s/;;4/;;44/ s/;;5/;;45/ 
+@Sancti/01-21::6-9:s/;;8/;;47/ s/;;14/;;84/ s/;;44/;;86/ s/;;45/;;95/
+@:AntMatutinumM
+;;249;250;251
+
+[Responsory2]
+@Sancti/01-21::1-2
+V. ~
+@Sancti/01-21:Ant Matutinum:4:s/\* // s/;;.*//
+@Sancti/01-21::4
+
+[Responsory3]
+@Sancti/01-21::1-2
+V. ~
+@Sancti/01-21:Ant Matutinum:5:s/\* // s/;;.*//
+@Sancti/01-21::4
+
+[Responsory4]
+@Sancti/01-21:Responsory8
+
+[Lectio5]
+@Sancti/01-21:Lectio4:s/Nomen .*//
+
+[Lectio6]
+@Sancti/01-21:Lectio4:s/.* (Nomen )/$1/s s/$/~/
+@Sancti/01-21:Lectio5:s/Hæc inter .*//
+
+[Lectio7]
+@Sancti/01-21:Lectio5:s/.* (Hæc inter )/$1/s s/Novum .*//
+
+[Lectio8]
+@Sancti/01-21:Lectio5:s/.* (Novum )/$1/s s/$/~/
+@Sancti/01-21:Lectio6:s/Quanto .*//
+
+[Responsory5]
+@Sancti/01-21:Responsory7:1-2
+V. ~
+@:AntMatutinumM:3:s/\* // s/;;.*//
+@Sancti/01-21:Responsory7:4
+
+[Responsory6]
+@CommuneCist/C6:Responsory3
+
+[Responsory7]
+@CommuneCist/C6:Responsory6
+
+[Responsory8]
+@CommuneCist/C6
+
+[Responsory9]
+@Sancti/01-21:Responsory4:1-2
+V. Ornávit inæstimábili dextrochírio déxteram meam, collúmque meum cinxit lapídibus pretiósis.
+@Sancti/01-21:Responsory4:4
+
+[Responsory10]
+@Sancti/01-21:Responsory6
+
+[Responsory11]
+@CommuneM/C7:Responsory4
+
+[Responsory12]
+@Sancti/01-21:Responsory5:1-2
+V. ~
+@Sancti/01-21:Ant Matutinum:7:s/\* // s/;;.*//
+@Sancti/01-21:Responsory5:4
+
+[Ant Laudes]
+@:Ant Vespera:s/;;.*//g
+
+[Capitulum Laudes]
+@CommuneCist/C7
+
+[Ant 2]
+@Sancti/01-21:Ant 1
+
+[Capitulum Sexta]
+@Commune/C7
+
+[Capitulum Nona]
+@Commune/C7
+
+[Ant Vespera 3]
+@:Ant Vespera
