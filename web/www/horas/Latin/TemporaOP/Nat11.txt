@@ -1,0 +1,15 @@
+@Tempora/Nat11
+
+[Lectio1]
+@Tempora/Nat11::1
+@Tempora/Nat11:Lectio2:!2-3 s/5-11/7-13/
+@Tempora/Nat11:Lectio3:2-3
+
+[Lectio2]
+@Tempora/Nat11:Lectio3:!2-3 s/12-/14-/
+
+[Lectio3]
+!Rom 15:17-19
+17 Hábeo ígitur glóriam in Christo Jesu ad Deum.
+18 Non enim áudeo áliquid loqui eórum, quæ per me non éfficit Christus in obediéntiam géntium, verbo et factis:
+19 in virtúte signórum, et prodigiórum, in virtúte Spíritus Sancti: ita ut ab Jerúsalem per circúitum usque ad Illýricum repléverim Evangélium Christi.
