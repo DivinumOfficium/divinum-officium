@@ -1,0 +1,100 @@
+@Tempora/Epi2-0
+
+[Rule]
+12 lectiones
+
+[Invit]
+Praeoccupémus fáciem Dómini: * Et in psalmis jubilémus ei.
+
+[Lectio1]
+@Tempora/Epi2-0::1-4:s/-5/-2/
+
+[Lectio2]
+@Tempora/Epi2-0:Lectio1:2:s/1-/3-/
+@Tempora/Epi2-0:Lectio1:5-7
+
+[Lectio3]
+@Tempora/Epi2-0:Lectio2
+
+[Lectio4]
+@Tempora/Epi2-0:Lectio3
+
+[Responsory1]
+@Tempora/Epi2-0::s/ténebræ\./ténebræ, et dixi:/
+
+[Responsory3]
+@Tempora/Epi2-0::1-2
+@Tempora/Epi2-0::3:s/\.$/: ~/
+@Tempora/Epi2-0:Responsory4:3:s/V\. T/t/ s/V\. //
+@Tempora/Epi2-0::4
+
+[Responsory4]
+R. Notas mihi fecísti, Dómine, vias vitæ, adimplébis me lætítia cum vultu tuo: 
+* Delectatiónes in déxtera tua usque in finem.
+V. Consérva me, Dó­mine, quóniam in te sperávi: dixi Dómino: Deus meus es tu.
+R. Delectatiónes in déxtera tua usque in finem.
+
+[Lectio5]
+@Tempora/Epi2-0:Lectio4:s/Sed tamen .*//
+
+[Lectio6]
+@Tempora/Epi2-0:Lectio4:s/.* (Sed tamen)/$1/s
+
+[Lectio7]
+@Tempora/Epi2-0:Lectio5:s/Id quod .*//
+
+[Lectio8]
+@Tempora/Epi2-0:Lectio5:s/.* (Id quod )/$1/ s/$/~/
+@Tempora/Epi2-0:Lectio6:s/Céterum, .*//s
+
+[Responsory5]
+R. Díligam te, Dómine, virtus mea:
+* Dóminus firmaméntum meum, et refúgium meum.
+V. Laudans invocábo Dóminum, et ab inimícis meis salvus ero.
+R. Dóminus firmaméntum meum, et refúgium meum.
+
+[Responsory6]
+@Tempora/Epi2-0::1-2
+V. In manu ejus sunt omnes fines terræ: et altitúdines móntium ipsíus sunt:
+@Tempora/Epi2-0::4
+
+[Responsory7]
+@Tempora/Epi2-0::1-2
+V. Neque irrídeant me inimíci mei: étenim univérsi qui sústinent te non confundéntur.
+@Tempora/Epi2-0::4
+
+[Responsory8]
+R. Audiam, Dómine, vocem laudis tuæ: 
+* Ut enárrem univérsa mirabília tua.
+V. Dómine, diléxi decórem domus tuæ, et locum habitatiónis glóriae tuæ:
+R. Ut enárrem univérsa mirabília tua.
+
+[Lectio9]
+@Tempora/Epi2-0:Lectio7
+
+[Lectio10]
+@Tempora/Epi2-0:Lectio8:s/Nec illæ, .*//s
+
+[Lectio11]
+@Tempora/Epi2-0:Lectio8:s/.* Nec illæ, /Nec illæ, /s
+
+[Lectio12]
+@Tempora/Epi2-0:Lectio9
+
+[Responsory9]
+@Tempora/Epi2-1:Responsory1
+
+[Responsory10]
+@TemporaM/Epi2-0
+
+[Responsory11]
+@TemporaM/Epi2-0::s/, qui .* peccávi//
+
+[Responsory12]
+R. Abscóndi tamquam aurum peccáta mea: et celávi in sinu meo iniquitátem meam: 
+* Miserére mei Deus, secundum magnam misericórdiam tuam.
+V. Tibi soli peccávi, et malum coram te feci.
+R. Miserére mei Deus, secundum magnam misericórdiam tuam.
+
+[Evangelium]
+@Tempora/Epi2-0
