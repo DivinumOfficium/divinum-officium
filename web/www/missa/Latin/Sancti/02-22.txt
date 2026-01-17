@@ -26,10 +26,9 @@ Sub unica conclusione
 
 [Oratio]
 @Sancti/01-18
-_
-!Commemoratio S. Pauli
-Deus, qui multitúdinem géntium beáti Pauli Apóstoli prædicatióne docuísti: da nobis, quǽsumus; ut, cujus commemoratiónem cólimus, ejus apud te patrocínia sentiámus.
-$Per Dominum
+
+[Commemoratio Oratio]
+@Sancti/01-18:Commemoratio Oratio
 
 [Lectio]
 @Commune/Coronatio
@@ -56,17 +55,15 @@ _
 
 [Secreta]
 @Sancti/01-18
-_
-!Pro S. Paulo
-Apóstoli tui Pauli précibus, Dómine, plebis tuæ dona sanctífica: ut, quæ tibi tuo grata sunt institúto, gratióra fiant patrocínio supplicántis. 
-$Per Dominum
+
+[Commemoratio Secreta]
+@Sancti/01-18:Commemoratio Secreta
 
 [Communio]
 @Commune/C4b
 
 [Postcommunio]
 @Sancti/01-18
-_
-!Pro S. Paulo
-Sanctificáti, Dómine, salutári mystério: quǽsumus; ut nobis ejus non desit orátio, cujus nos donásti patrocínio gubernari.
-$Per Dominum
+
+[Commemoratio Postcommunio]
+@Sancti/01-18:Commemoratio Postcommunio
