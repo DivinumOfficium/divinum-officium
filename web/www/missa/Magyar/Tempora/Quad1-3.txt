@@ -1,17 +1,66 @@
 [Officium]
 Szerda nagyböjt I. hetében
 
-[Rule]
-no Gloria
-Suffragium=Sanctorum;Vivis;;
-Super popul
-LectioL1
+[Introitus]
+!Zsolt 24, 6; 24, 3; 24, 22 
+v. Emlékezzél meg, Uram, könyörületedről és irgalmadról, hisz azok megvannak öröktől: sohase uralkodjanak rajtunk ellenségeink: szabadíts meg minket, Izrael Istene, minden szorongatásunkból.
+!Zsolt 24, 1-2
+Hozzád emelem, Uram, lelkemet: Istenem, tebenned remélek, meg ne szégyenüljek.
+&Gloria
+v. Emlékezzél meg, Uram, könyörületedről és irgalmadról, hisz azok megvannak öröktől: sohase uralkodjanak rajtunk ellenségeink: szabadíts meg minket, Izrael Istene, minden szorongatásunkból.
+
+[Oratio]
+Könyörgéseinket, kérünk, Urunk, hallgasd meg kegyesen és fönséges jobbodat terjeszd ki minden ellenségünk ellen.
+$Per Dominum
 
 [LectioL1]
-!Kiv 24:12-18
+!Kiv 24, 12-18
 v. Az Úr így szólt Mózeshez: „Jöjj fel hozzám a hegyre, és maradj itt. Átadom neked a kőtáblákat a törvénnyel és a parancsokkal, amelyeket oktatásukra írtam.”  Mózes elindult szolgájával, Józsuéval, és fölment Isten hegyére.  A véneknek ezt mondta: „Várjatok meg itt, amíg visszajövünk. Áron és Hur veletek vannak. Ha valakinek peres ügye van, forduljon hozzájuk.”  Azután Mózes fölment a hegyre. A felhő betakarta a hegyet,  és az Úr dicsősége leereszkedett a Sínai-hegyre. A felhő hat napig takarta be. A hetedik napon a felhőből szólt Mózeshez.  Az izraeliták szemében Isten dicsősége olyannak mutatkozott, mint az emésztő tűz a hegy csúcsán.  Mózes belépett a felhőbe és fölment a hegyre. Mózes negyven nap és negyven éjjel maradt a hegyen.
+
+[GradualeL1]
+!Zsolt 24, 17-18
+Szívem szorongatásai megsokasodtak; vezess ki inségeimből engem, Uram.
+V. Nézd megalázottságomat és szenvedésemet: bocsásd meg minden vétkemet.
+
+[OratioL1]
+Néped áldozatkészségére, kérünk, Urunk, tekints le jóságosan, hogyazok, akiket az önmegtartóztatás testileg sanyargat, a jó cselekedetek gyümölcse által lélekben megerősödjenek.
+$Per Dominum
 
 [Lectio]
 Olvasmány a Királyok első könyvéből
-!1Kir 19:3-8
+!1Kir 19, 3-8
 v. Illés megrettent, útra kelt és elment, hogy megmentse életét. Amikor a Júdához tartozó Beersebába ért, otthagyta szolgáját,  maga pedig behúzódott egynapi járásnyira a pusztába. Amikor odaért, leült egy borókabokor alá és a halálát kívánta. Azt mondta: „Most már elég, Uram! Vedd magadhoz lelkemet! Én sem vagyok különb atyáimnál.”  Ezzel lefeküdt és elaludt. Egyszer csak angyal érintette meg, és így szólt hozzá: „Kelj föl és egyél!”  Ahogy odapillantott, lám, a fejénél egy sült cipó meg egy korsó víz volt.  Evett is, ivott is, de aztán újra lefeküdt aludni. Ám az Úr angyala másodszor is megjelent, megérintette és azt mondta: „Kelj föl és egyél! Különben túl hosszú lesz neked az út.”  Fölkelt, evett, ivott, aztán negyven nap és negyven éjjel vándorolt ennek az ételnek az erejéből, egészen az Isten hegyéig, a Hórebig.
+
+[Graduale]
+!Zsolt 24, 17; 24, 18; 24, 1-4
+Vezess ki inségemből, Uram: nézd megalázottságomat és szenvedésemet: bocsásd meg minden vétkemet.
+V. Hozzád emelem, Uram, lelkemet: Istenem, tebenned remélek, ne hagyd, hogy megszégyenüljek s ellenségeim belőlem gúnyt űzzenek.
+V. Hisz senki, aki benned bízik, meg nem szégyenül: de szégyen éri, kik hívságot cselekszenek
+
+[Evangelium]
+Evangélium ++ Szent Máté könyvéből
+!Mt 12, 38-50
+Az időben: Felelének Jézusnak némelyek az irástudók és farizeusok közől, mondván: Mester! jelt akarunk tőled látni. Ő pedig felelvén, mondá nekik: A gonosz és parázna nemzedék jelt kiván, de nem adatik neki jel, hanem csak Jónás próféta jele. Mert valamint Jónás a czethal gyomrában három nap és három éjjel volt: úgy leszen az ember fia a föld szivében három nap és három éjjel. A ninivei férfiak föltámadnak az itéletben e nemzedékkel, és kárhoztatni fogják azt, mert ők bűnbánatot tartottak Jónás prédikálására; és íme nagyobb van itt Jónásnál. A déli királyné föltámad az itéletben e nemzedékkel, és kárhoztatni fogja azt; mert ő eljött a föld határairól hallgatni Salamon bölcseségét; és íme nagyobb van itt Salamonnál. Mikor pedig a tisztátalan lélek kimegyen az emberből, száraz helyeken jár, nyugalmat keresvén, és nem talál. Akkor így szól: Visszatérek házamba, a honnét kijöttem. És eljövén, üresen találja azt, kisöpörve és fölékesítve. Akkor elmegyen, és magával más hét lelket viszen, magánál gonoszabbakat, és bemenvén, ott laknak; és azon ember utóbbi állapotja roszabb az elsőnél. Igy jár ez igen gonosz nemzedék is. Még midőn szólott a seregnek, ime az ő anyja és atyjafiai kinn állanak vala, akarván vele szólani. Mondá tehát neki valaki: Ime anyád és atyádfiai kinn állanak, keresvén téged. Ő pedig felelvén a vele szólónak, mondá: Ki az én anyám, és kik az én atyámfiai? És kinyujtván kezét tanítványira, mondá: Ime az anyám és atyámfiai. Mert a ki Atyám akaratját cselekszi, ki mennyekben vagyon, az az én atyámfia, és húgom és anyám. 
+
+[Offertorium]
+!Zsolt 118, 47-48
+Parancsaidről elmélkedem, mert nagyon szeretem őket és fölemelem kezemet parancsaid felé, mert kedvesek nekem.
+
+[Secreta]
+Felajánljuk neked, Urunk, az engesztelő áldozatot, hogy könyörületesen feloldozd bűneinket és te irányítsd ingadozó szívünket.
+$Per Dominum
+
+[Communio]
+!Zsolt 5, 2-4
+Halld meg kiáltásomat: figyelj könyörgésem szavára, én Királyom és én Istenem: mert hozzád könyörgök imádkozva, Uram.
+
+[Postcommunio]
+Szentséged vétele tisztítson meg minket, Urunk, rejtett bűneinktől és szabadítson meg az ellenség cselvetéseitől
+$Per Dominum
+
+[Super populum]
+!Oratio super populum
+v. Könyörögjünk.
+v. Alázzátok meg fejeteket Isten előtt.
+V. Kérünk, Urunk, világosítsd meg lelkünket tiszta fényeddel, hogy láthassuk, mit kell tennünk és a helyeset segítségeddel végrehajthassuk.
+$Per Dominum
