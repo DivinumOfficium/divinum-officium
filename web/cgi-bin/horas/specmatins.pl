@@ -86,9 +86,10 @@ sub invitatorium {
   if (my @a = do_read($fname)) {
     $_ = join("\n", @a);
 
-    if ($rule =~ /Invit2/i) {
+    if ($rule =~ /Invit2/i || !$dayofweek && $version =~ /praedicatorum/i) {
 
       # old Invitatorium2 = Quadp[123]-0
+      # and pradicatorum at Sundays
       s/ \*.*?(\(\:\:\)\})?$/ \1/m;
     } elsif ($dayname[0] =~ /Quad[56]/i
       && $winner =~ /tempora/i
@@ -148,13 +149,14 @@ sub hymnusmatutinum {
     $name = gettempora('Hymnus matutinum');
     $name = ($name) ? "Hymnus $name" : "Day$dayofweek Hymnus";
 
-    if ($name =~ /Day[1-6] Hymnus/i && $version =~ /Cist/i) {
+    if ($name =~ /Day[1-6] Hymnus/i && $version =~ /Cist|praedicatorum/i) {
       $name = "Day0 Hymnus";
     }
     $comment = ($name) ? 1 : 5;
 
     if (
-      $name =~ /^Day0 Hymnus$/i
+         $name =~ /^Day0 Hymnus$/i
+      && $version !~ /praedicatorum/i
       && (
         $month < 4
         || ( ($monthday && $monthday =~ /^1[0-9][0-9]\-/ && $version !~ /Cist/i)
@@ -1271,7 +1273,7 @@ sub tedeum_required {
 
           # 2 below conditions can be ommited if [Rule] '9 lectiones' wont be false
           || $duplex == 1
-          || ($version =~ /19(?:55|60)/ && gettype1960() != LT1960_DEFAULT)
+          || ($version =~ /19(?:55|6[02])/ && gettype1960() != LT1960_DEFAULT)
         )
       )
     )

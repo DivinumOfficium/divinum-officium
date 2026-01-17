@@ -63,7 +63,7 @@ sub capitulum_prima {
 
   my $key =
     (    $dayofweek > 0
-      && $version !~ /196/
+      && $version !~ /196[03]/
       && $winner{Rank} =~ /Feria|Vigilia/i
       && $winner{Rank} !~ /Vigilia Epi/i
       && (!$commune || $commune !~ /C10/)

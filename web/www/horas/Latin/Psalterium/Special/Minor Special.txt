@@ -11,17 +11,32 @@ R. In testimónia tua.
 &Gloria
 R. Inclína cor meum, Deus, * In testimónia tua.
 
-[Versum Dominica Tertia]
+[Versum Dominica Tertia_]
 V. Ego dixi: Dómine, miserére mei.
 R. Sana ánimam meam, quia peccávi tibi.
+
+[Versum Dominica Tertia]
+@:Versum Dominica Tertia_
+(sed rubrica praedicatorum)
+@:Versum Feria Tertia
 
 [Responsory Dominica TertiaM]
 @:Versum Dominica Tertia
 
-[Dominica Sexta]
+[Dominica Sexta_]
 !Gal 6:2
 v. Alter altérius ónera portáte, et sic adimplébitis legem Christi.
 $Deo gratias
+
+[Dominica SextaOP]
+!2 Cor 13:13
+v. Grátia Dómini nostri Jesu Christi et cáritas Dei et communicátio Sancti Spíritus sit cum ómnibus vobis. Amen.
+$Deo gratias
+
+[Dominica Sexta]
+@:Dominica Sexta_
+(sed rubrica praedicatorum)
+@:Dominica SextaOP
 
 [Responsory breve Dominica Sexta]
 R.br. In ætérnum, Dómine, * Pérmanet verbum tuum.
@@ -38,10 +53,20 @@ R. In loco páscuæ ibi me collocávit.
 [Responsory Dominica SextaM]
 @:Versum Dominica Sexta
 
-[Dominica Nona]
+[Dominica Nona_]
 !1 Cor 6:20
 v. Empti enim estis prétio magno. Glorificáte et portáte Deum in córpore vestro.
 $Deo gratias
+
+[Dominica NonaOP]
+!1 Joann. 5:7
+v. Tres sunt, qui testimónium dant in cælo: Pater, Verbum et Spíritus Sanctus, et hi tres unum sunt.
+$Deo gratias
+
+[Dominica Nona]
+@:Dominica Nona_
+(sed rubrica praedicatorum)
+@:Dominica NonaOP
 
 [Responsory breve Dominica Nona]
 R.br. Clamávi in toto corde meo: * Exáudi me, Dómine.
@@ -85,8 +110,8 @@ $Deo gratias
 
 [Feria Sexta]
 @:Feria Sexta_
-(sed rubrica monastica)
-@:Dominica Sexta
+(sed rubrica monastica aut rubrica praedicatorum)
+@:Dominica Sexta_
 
 [Responsory breve Feria Sexta]
 R.br. Benedícam Dóminum * In omni témpore.
@@ -109,8 +134,8 @@ $Deo gratias
 
 [Feria Nona]
 @:Feria Nona_
-(sed rubrica monastica)
-@:Dominica Nona
+(sed rubrica monastica aut rubrica praedicatorum)
+@:Dominica Nona_
 
 [Responsory breve Feria Nona]
 R.br. Rédime me, Dómine, * Et miserére mei.
