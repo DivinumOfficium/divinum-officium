@@ -2159,7 +2159,7 @@ sub gettempora {
   }
 
   if ($caller eq 'Hymnus major' && !$tname) {
-    $tname = ($version !~ /cist/i || ($hora eq 'Vespera' && $dayofweek == 6)) ? "Day$dayofweek" : 'Day0';
+    $tname = ($version !~ /cist|praedicatorum/i || ($hora eq 'Vespera' && $dayofweek == 6)) ? "Day$dayofweek" : 'Day0';
   }
 
   if ($caller =~ /^Capitulum|major$/ && !$tname) {    # caller is Capitulum major/minor or getfrompsalterium
