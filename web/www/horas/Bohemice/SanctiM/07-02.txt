@@ -1,61 +1,20 @@
 [Ant Matutinum 3N]
 Nastalo totiž * Navštívení přesvaté Panny, jež zrozena z královského rodu zrodila Krista, Krále a Hospodina: † ona ať se přimlouvá za nás.
-(sed rubrica cisterciensis)
-Raduj se, * Matko Kristova, jež sis v jedinečné výsadě zasloužila nosit Krista Pána.
 
-[Responsory2] (rubrica cisterciensis)
-R. Hle, můj miláček ke mně mluví; 
-* Uvnitř mého srdce se ozývá jeho hlas.
-V. Jak sladké jsou mým ústům tvá slova, Hospodine, nad med v mých ústech.
-R. Uvnitř mého srdce se ozývá jeho hlas.
-
-[Responsory3] (rubrica cisterciensis)
-R. Pospíším si na horu myrrhy, a uzřím to slovo,
-* Jež zaznělo v mých uších od Anděla, který mě pozdravil.
-V. Běžela jsem po cestě tvých přikázání, vedle tvého slova.
-R. Jež zaznělo v mých uších od Anděla, který mě pozdravil.
-
-[Responsory4_]
+[Responsory4]
 R. Velebí duše má Hospodina; a zajásal můj duch v Bohu, mém spasiteli,
 * Neboť shlédl na nepatrnost své služebnice.
 V. Ejhle, od této chvíle mě budou blahoslavit všechna pokolení.
 R. Neboť shlédl na nepatrnost své služebnice.
 
-[Responsory4]
-@:Responsory4_
-(sed rubrica cisterciensis)
-@:Responsory4C
-
-[Responsory4C]
-R. Hlas hrdličky je slyšet, vstaň, pospěš, má přítelkyně, a přijď, má holubičko, ve skalním výklenku, v otvoru ve zdi.
-* Ukaž mi svou tvář, ať zazní tvůj hlas v mých uších.
-V. Tvůj hlas je totiž sladký, a tvá tvář krásná.
-R. Ukaž mi svou tvář, ať zazní tvůj hlas v mých uších.
-
 [Lectio5]
 @Sancti/07-02:Lectio4
-(sed rubrica cisterciensis)
-@Sancti/07-02:Lectio4:s/Jsem znamení.*//
 
 [Lectio6]
 @Sancti/07-02:Lectio5
-(sed rubrica cisterciensis)
-@Sancti/07-02:Lectio5:s/(příchod Spasitele\.).*/$1/
-
-[Responsory6] (rubrica cisterciensis)
-R. Šťastné matky, ale děti jsou ještě šťastnější;
-* I ty, jež nosily štěstí, se staly šťastnými.
-V. Šťastný je dům, šťastná rodina, kterým se staly tak podivuhodné věci.
-R. I ty, jež nosily štěstí, se staly šťastnými.
 
 [Lectio7]
 @Sancti/07-02:Lectio6:s/Vidím, .*//s
-
-[Responsory7] (rubrica cisterciensis)
-R. Ó, dni hodný každého připomenutí! Ó, dni hodný nejvyšší úcty!
-* Neboť v tak ubohém dni zazářily radosti světu.
-V. Toto je den, který učinil Hospodin, jásejme a radujme se v něm.
-R. Neboť v tak ubohém dni zazářily radosti světu.
 
 [Lectio8]
 @Sancti/07-02:Lectio6:s/.* Vidím, /Vidím, /s
@@ -66,46 +25,20 @@ R. Hódie visitávit Elízabeth beáta Virgo María ex progénie David; † per 
 V. Beatíssimæ Vírginis Maríæ Visitatiónem devotíssime celebrémus.
 R. Cujus vita gloriósa lucem dedit sǽculo.
 
-[Responsory8] (rubrica cisterciensis)
-R. Ó, přejasná hvězdo mořská, Panno Matko jedinečná, jež's svou tetu navštívila, Jana sladce osvítila svým přejasným děťátkem;
-* Tě prosíme v tomto svátku, buď útěchou ve všem smutku, smrt odežeň a život dej nám v nebes věčné vlasti.
-V. K tobě lkají všichni hříšní, štědrá dárkyně nadějí, prameni, jenž nevyschne.
-R. Tě prosíme v tomto svátku, buď útěchou ve všem smutku, smrt odežeň a život dej nám v nebes věčné vlasti.
-
 [Lectio9]
 @Sancti/07-02:Lectio7:s/Alžběta jej.*//s
-(sed rubrica cisterciensis)
-@Sancti/07-02:Lectio7:s/Pohleď tedy.*//s
 
 [Responsory9]
 @Sancti/07-02:Responsory7
 
-[Responsory9] (rubrica cisterciensis)
-R. Krásné dívky hromadící bohatství,
-* Pokladem těhotného lůna překonala Matka Páně.
-V. Jásejte a chvalte, obyvatelé Sionu, neboť ten veliký uprostřed vás je Svatý Israele.
-R. Pokladem těhotného lůna překonala Matka Páně.
-
 [Lectio10]
 @Sancti/07-02:Lectio7:s/.* Alžběta jej/Alžběta jej/s
-(sed rubrica cisterciensis)
-@Sancti/07-02:Lectio7:s/.*(Pohleď tedy)/$1/s s/Zajásal syn.*//s
 
 [Responsory10]
 @Sancti/07-02:Responsory8
 
-[Responsory10] (rubrica cisterciensis)
-R. Řekla však Maria: Veliké věci mi učinil ten, který je mocný. 
-* A svaté jest jeho jméno.
-V. A milosrdenství jeho od pokolení do pokolení k těm, kdo se ho bojí.
-R. A svaté jest jeho jméno.
-
 [Lectio11]
 @Sancti/07-02:Lectio8
-
-[Lectio11] (rubrica cisterciensis)
-@Sancti/07-02:Lectio7:s/.*(Zajásal syn)/$1/s s/$/~/
-@Sancti/07-02:Lectio8:s/Maria s ní zůstala.*//s
 
 [Responsory11]
 R. S radostí oslavujme Navštívení svaté Panny Marie,
@@ -113,30 +46,11 @@ R. S radostí oslavujme Navštívení svaté Panny Marie,
 V. Navštívení slavné Panny Marie předůstojně připomínejmne.
 R. Aby se sama za nás přimlouvala u Pána Ježíše Krista.
 
-[Responsory11] (rubrica cisterciensis)
-@:Responsory4_
-
 [Lectio12]
 @Sancti/07-02:Lectio9
-
-[Lectio12] (rubrica cisterciensis)
-@Sancti/07-02:Lectio8:s/.*(Maria s ní zůstala)/$1/s s/$/~/
-@Sancti/07-02:Lectio9:s/Byl tedy pomazán.*//
 
 [Responsory12]
 R. Svaté a neposkvrněné Panenství, nevím, jaké ti mohu snést chvály! 
 * Neboť toho, jehož nebesa pojmouti nesmohla, jsi nosila ve svém klíně.
 V. Požehnaná ty mezi ženami, a požehnaný plod života tvého.
 R. Neboť toho, jehož nebesa pojmouti nesmohla, jsi nosila ve svém klíně.
-
-[Responsory12] (rubrica cisterciensis)
-R. Ujal se svého služebníka Israele, pamětliv svého milosrdenství,
-* Jež slíbil našim otcům, Abrahamovi a jeho potomkům navěky.
-V. Přísahal Hospodin Davidovi vpravdě, <i>Syna</i> z plodu tvého lůna posadím na tvůj trůn.
-R. Jež slíbil našim otcům, Abrahamovi a jeho potomkům navěky.
-
-[Commemoratio 2] (rubrica cisterciensis)
-@Sancti/07-02cc:Oratio
-
-[Commemoratio 3] (rubrica cisterciensis nisi rubrica altovadensis)
-@Sancti/07-02oct:Oratio

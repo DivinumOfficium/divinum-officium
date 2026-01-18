@@ -1,0 +1,149 @@
+[Officium]
+Desponsatio B.M.V. cum S. Joseph (propria Bohemiæ)
+
+[Rank]
+;;MM. maj.;;4;;ex C11
+
+[Rule]
+ex C11
+12 lectiones
+Psalmi Dominica
+Antiphonas horas
+Doxology=Nat
+
+[Ant Vespera]
+@SanctiCist/09-08::s/Natívitas/Desponsátio/ig s/Nativitát/Desponsatión/ig
+
+[Responsory Vespera]
+@SanctiCist/09-08::s/Natívitas/Desponsátio/ig
+
+[Versum 1]
+@SanctiCist/09-08:Versum 1:s/Natívitas/Desponsátio/ig
+
+[Ant 1]
+@SanctiCist/09-08::s/Natívitas/Desponsátio/ig
+
+[Oratio]
+Omnípotens et mitíssime Deus, qui Beátum Joséphum, justum Fílium David, Beátæ Maríæ Vírgini, Matri tuæ Sponsum providísti, tuúmque Nutrítium elegísti: * da quǽsumus, ut ejus précibus et méritis Ecclésia tua tranquílla pace lætétur, § et ad perpétuæ visiónis consolatiónem perducátur.
+$Qui vivis
+
+[Invit]
+@SanctiCist/07-02
+
+[Ant Matutinum 3N]
+@SanctiCist/09-08
+
+[Lectio1]
+@Sancti/08-15t::1-5:s/-4/-3/
+
+[Lectio2]
+@Sancti/08-15t::1:s/5-9/4-6/
+@Sancti/08-15t:Lectio1:6
+@Sancti/08-15t:Lectio2:2-3
+
+[Lectio3]
+@Sancti/08-15t::1:s/10-16/7-10/
+@Sancti/08-15t:Lectio2:4-6
+@Sancti/08-15t:Lectio3:2
+
+[Lectio4]
+@Sancti/08-15t:Lectio3:1:s/10-/11-/
+@Sancti/08-15t:Lectio3:3-8
+
+[Responsory1]
+@SanctiCist/09-08::s/Natívitas/Desponsátio/ig
+
+[Responsory2]
+@Sancti/09-08::s/Nativitátem/Desponsatiónem/ig
+
+[Responsory3]
+@Sancti/09-08:Responsory1:1-2:s/nata/desponsáta/
+@Sancti/09-08:Responsory3:3:s/Nativitátem/Desponsatiónem/ig
+@Sancti/09-08:Responsory1:4
+
+[Responsory4]
+@CommuneM/C11:Responsory11
+
+[Lectio5]
+Sermo sancti Bernárdi Abbátis.
+!Homilia 2. super Missus est.
+Oportébat a Príncipe mundi aliquámdiu celári Divíni concílii sacramentum; non quod Deus, si opus suum fácere vellet, impedíri posse illud metúeret: sed quia ipsa, qui non solum poténter quæcúmque vóluit, fecit, sicut in ómnibus suis quasdam rerum vel témporum congruéntias propter órdinis pulchritúdinem serváre consuévit: ita in hoc quoque tam magnífico ópere suo, nostræ vidélicet reparatiónis, non tantum poténtiam suam, sed et prudéntiam suam osténdere vóluit. 
+
+[Lectio6]
+Et quamquam illud áliter quómodo vellet, perfícere potuísset; plácuit tamen eo pótius modo et órdine hóminem sibi reconciliáre, quo nóverat cecidísse: ut sicut diábolus prius sedúxit Fœminam, et póstmodum Virum per Fœminam vicit, ita prius a Fœmina Vírgine seducerétur, et post a Viro Christo apérte debellarétur: quátenus malítiæ fraudi dum ars pietátis illúderet, ac malígni fortitúdinem Christi virtus contéreret, diábolo Deus prudéntior apparéret et fórtior. 
+
+[Lectio7]
+Convéniens ergo erat, ut suáviter quoque ómnia cœléstia scílicet et terréna dispóneret: quátenus et illinc dejíciens inquiétum, réliquos firmáret in pace et hic debellatúrus ínvidum, nobis prius suæ humilitátis et mansuetúdinis valde necessárium exémplum relinquerétur, sicque mirábili fíeret moderámine sapiéntiæ, ut et suis suávis et hóstibus fortis apparéret.
+
+[Lectio8]
+Quid enim prodest diábolum a Deo vinci, nobis manéntibus supérbis? necessário ígitur desponsáta est María Joseph, quando per hoc et a cánibus Sanctum abscónditur, et a sponso Virgínitas comprobátur et Vírginis tam verecúndiæ párcitur, quam famæ providétur. Quid sapiéntius? quid dígnius Divína Providéntia? uno tali consílio secrétis cœléstibus et admíttitur testis, et íntegra servátur fama Vírginis Maríæ. 
+
+[Responsory5]
+@Sancti/09-08:Responsory3:1-2:s/ortum/Desponsatiónem/ig  s/digníssimum/digníssimam/
+@Sancti/09-08:Responsory4:3:s/nata/desponsáta/
+@Sancti/09-08:Responsory3:4
+
+[Responsory6]
+@SanctiCist/09-08
+
+[Responsory7]
+@SanctiM/09-08:Responsory4
+
+[Responsory8]
+@CommuneCist/C7:Responsory4
+
+[Lectio9]
+@Sancti/12-24:Lectio1
+
+[Lectio10]
+@Sancti/12-24:Lectio2
+
+[Lectio11]
+@Sancti/12-24:Lectio3
+
+[Lectio12]
+Joseph, fili David, noli timére accípere Maríam uxórem tuam. Jam et supra díximus, sponsas uxóres appellári: quod plénius liber advérsus Helvídium docet. Et blandiétis afféctu ei per sómnium Angelus lóquitur, ut justítiam siléntii comprobáret. Simúlque notándum, quod Joseph fílius esse dicátur David, ut María quoque de stirpe David monstrarétur.
+
+[Responsory9]
+@SanctiM/09-08:Responsory11:1-2:s/Nativitátem/Desponsatiónem/ig
+@SanctiM/09-08:Responsory3:1:s/R\./V./ s/ortum/Desponsatiónem/ig s/digníssimum/digníssimam/
+@SanctiM/09-08:Responsory11:4
+
+[Responsory10]
+@CommuneCist/C7:Responsory7
+
+[Responsory11]
+@Sancti/09-08:Responsory4:1-2:s/Natívitas/Desponsátio/ig
+@Sancti/09-08:Versum 1:1:s/Natívitas/Desponsátio/ig
+@Sancti/09-08:Responsory4:4
+
+[Responsory12]
+@SanctiCist/09-08:Responsory Vespera 1
+
+[Evangelium]
+@Sancti/12-24
+
+[Ant Laudes]
+@SanctiCist/09-08:Ant Vespera:s/Natívitas/Desponsátio/ig s/Nativitát/Desponsatión/ig s/;;.*//g
+
+[Versum 2]
+@:Versum 1
+
+[Ant 2]
+@Sancti/09-08::s/Natívitas/Desponsátio/ig s/Nativitát/Desponsatión/ig s/qua celsitúdo throni/quæ ut auróra fulgens/
+
+[Capitulum Sexta]
+!Sir 24:15-16
+v. Et sic in Sion firmáta sum, et in civitáte sanctificáta simíliter requiévi, et in Jerúsalem potéstas mea. Et radicávi in pópulo honorificáto, et in parte Dei mei heréditas illíus, et in plenitúdine sanctórum deténtio mea.
+$Deo gratias.
+
+[Capitulum Nona]
+!Sir 24:19-20
+v. In platéis sicut cinnamómum et bálsamum aromatízans odórem dedi: quasi myrrha elécta, dedi suavitátem odóris.
+$Deo gratias.
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+@Sancti/08-15t:Ant 1

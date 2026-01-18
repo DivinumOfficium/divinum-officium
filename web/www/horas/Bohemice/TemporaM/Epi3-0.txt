@@ -1,0 +1,20 @@
+[Lectio6]
+@Tempora/Epi3-0:Lectio5:s/A proto .*//s
+
+[Lectio7]
+@Tempora/Epi3-0:Lectio5:s/.* A proto /A proto /s
+
+[Lectio8]
+@Tempora/Epi3-0:Lectio6
+
+[Lectio9]
+@Tempora/Epi3-0:Lectio7
+
+[Lectio10]
+@Tempora/Epi3-0:Lectio8:s/A Ježíš .*//s
+
+[Lectio11]
+@Tempora/Epi3-0:Lectio8:s/.* A Ježíš /A Ježíš /s
+
+[Lectio12]
+@Tempora/Epi3-0:Lectio9

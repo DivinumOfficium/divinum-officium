@@ -1,0 +1,82 @@
+@Tempora/Epi3-0
+
+[Rule]
+12 lectiones
+
+[Ant 1] 
+Fratres, * glorificáte, et portáte Dóminum in córpore vestro, allelúia.
+
+[Invit]
+@TemporaCist/Epi2-0
+
+[Lectio1]
+@Tempora/Epi3-0:Lectio1
+
+[Lectio2]
+@Tempora/Epi3-0:Lectio2:s/-10/-8/ s/9 .*//s
+
+[Lectio3]
+@Tempora/Epi3-0:Lectio2:s/6-/9-/ s/6 .*9 /9 /s
+
+[Lectio4]
+@Tempora/Epi3-0:Lectio3
+
+[Responsory4]
+@TemporaCist/Epi2-0
+
+[Lectio5]
+@Tempora/Epi3-0:Lectio4
+
+[Lectio6]
+@Tempora/Epi3-0:Lectio5:s/Et ídeo .*//s
+
+[Lectio7]
+@Tempora/Epi3-0:Lectio5:s/.* Et ídeo /Et ídeo /s
+
+[Lectio8]
+@Tempora/Epi3-0:Lectio6:s/In hac .*//
+
+[Responsory5]
+@TemporaCist/Epi2-0
+
+[Responsory6]
+@TemporaCist/Epi2-0
+
+[Responsory7]
+@TemporaCist/Epi2-0
+
+[Responsory8]
+@TemporaCist/Epi2-0
+
+[Lectio9]
+@Tempora/Epi3-0:Lectio7:s/Et notándum, .*//
+
+[Lectio10]
+@Tempora/Epi3-0:Lectio8:s/Et exténdens .*//s
+
+[Lectio11]
+@Tempora/Epi3-0:Lectio8:s/.* Et exténdens /Et exténdens /s
+
+[Lectio12]
+@Tempora/Epi3-0:Lectio9:s/Et simul, .*//
+
+[Responsory9]
+@TemporaCist/Epi2-0
+
+[Responsory10]
+@TemporaCist/Epi2-0
+
+[Responsory11]
+@TemporaCist/Epi2-0
+
+[Responsory12]
+@TemporaCist/Epi2-0
+
+[Evangelium]
+@Tempora/Epi3-0
+
+[Ant 2]
+@Tempora/Epi3-0:Ant 2:s/Cum descendísset Jesus \*/Cum autem descendísset \* Jesus/
+
+[Ant 3] 
+Dómine, * puer meus jacet paralyticus in domo, et male torquétur. Amen dico tibi, ego véniam, et curábo eum.
