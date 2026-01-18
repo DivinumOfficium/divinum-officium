@@ -372,7 +372,8 @@ sub getcookies {
 
     #check if the structure of the parameters is the same
     if (@sti > @param + 1 || ($check !~ /^$sti[-1]/)) {
-     # $error = "Cookie $cname mismatch $name need $check has $param<br/>== $sti[-1]";
+
+      # $error = "Cookie $cname mismatch $name need $check has $param<br/>== $sti[-1]";
       return 0;
     }
     setsetup($name, @sti);
