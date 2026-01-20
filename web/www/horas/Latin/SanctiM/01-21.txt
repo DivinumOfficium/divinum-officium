@@ -3,6 +3,10 @@
 [Rule] (rubrica 1963)
 vide C6-1;
 
+[Rule] (rubrica Barroux)
+vide C6-1;
+12 lectiones
+
 [Rule] (rubrica tridentina aut rubrica divino)
 ex C6-1;
 12 lectiones
@@ -32,7 +36,12 @@ Misit Dóminus * Angelum suum, et liberávit me de médio ignis, et non sum æst
 @CommuneM/C7
 
 [Ant Vespera 3] (nisi rubrica cisterciensis)
-@Sancti/01-21::s/112/126/ s/111/112/ s/110/111/
+@Sancti/01-21:Ant Laudes:1 s/$/;;109/
+@Sancti/01-21:Ant Laudes:2 s/$/;;111/
+@Sancti/01-21:Ant Laudes:3 s/$/;;112/
+@Sancti/01-21:Ant Laudes:5 s/$/;;126/
 
 [Ant 3] (nisi rubrica cisterciensis)
 @Sancti/01-21:Ant 1
+
+
