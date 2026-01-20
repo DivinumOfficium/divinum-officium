@@ -1,9 +1,31 @@
+[Officium]
+B. Amedei, Episcopi et Confessoris
+
 [Rank]
-B. Amedei, Episcopi et Confessoris;;iij. Lect. et M.;;1.2;;vide C4
+;;Simplex;;1.2;;vide C4
 
 [Rule]
 vide C4;mtv
+3 Lectiones
 
 [Oratio]
 Excita, Dómine, intercedénte beáto Amedéo, Pontífice et Confessóre, tuórum corda fidélium: ut sacris inténta doctrinis, et intélligant quod sequátur; et sequéndo fidéliter apprehéndant.
 $Per Dominum
+
+[Lectio1]
+@CommuneCist/C4:Lectio1 in 3 loco
+
+[Lectio2]
+Amedéus in agro Viennénsi ex prosápia Conrádi Romanórum regis oriúndus, una cum patre Amedéo, et áliis nobílibus viris, in Monastérium Bonævállis Ordinis Cisterciénsis, pueríli adhuc ætáte, sese recépit. Inde patris sui voluntáte, magis eum in litterárum stúdiis profectúrum sperántis, Bonaválle relícta, Cluníacum tránsiit, ubi honorificentíssime suscéptus est. Hinc dissídia inter Cluniacénses et Cisterciénses Mónachos exórta, quæ venerábilis Petrus Abbas descrípsit, et sanctus Bernárdus, conscrípta apología, compónere stúduit. Interim Amedéus in Germániam ad Imperatórem míttitur, ut a peritióribus magístris edocerétur. Defúncto autem Conrádo rege, pius adoléscens humánis divinísque lítteris óptime instrúctus, Claramvállem pétiit, ubi a sancto Bernárdo amantíssime accéptus, postmódum ab eódem sancto Patre, plaudénte toto Claravallénsi convéntu, Altæcúmbæ Cœnóbio, Mónachis ejúsdem loci id ipsum eníxe peténtibus, Abbas præfícitur.
+
+[Lectio3]
+Sed magis magísque in dies crescénte venerábilis Abbatis sapiéntiæ ac sanctitátis fama, Lausannénsis Ecclésiæ totíus cleri et pópuli consénsu Epíscopus elígitur. Quod onus cum ipse suscípere detrectáret, summi Pontíficis jussu, divínæ dispositióni acquiévit: ac memor illíus Apostólici oráculi: Opórtet Epíscopum esse irreprehensíbilem, ómnium virtútum splendóre univérsæ Ecclésiæ mirabíliter illúxit. Eugénium tértium, Pontíficem Máximum, Conrádum regem, et Frederícum imperatórem, ad renovánda, confirmánda, augendáque suæ Ecclésiæ privilégia propensíssimos hábuit. Octo homilías elegántes et dulces in laudem beatíssimæ Deíparæ concinnávit. Postquam autem Lausannénsibus annis quatuórdecim sanctíssime præfuísset, anno humánæ salútis millésimo centésimo quinquagésimo octávo e vita migrávit, et in Sanctórum númerum fuit relátus.
+
+[Responsory1]
+@CommuneCist/C4:Responsory2
+
+[Responsory2]
+@CommuneCist/C4:Responsory3
+
+[Responsory3]
+@CommuneCist/C4a:Responsory5

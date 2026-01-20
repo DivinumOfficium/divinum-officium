@@ -1,0 +1,91 @@
+@Tempora/Epi4-0
+
+[Rule]
+12 lectiones
+
+[Ant 1]
+Scitis, fratres, * quia templum Dei estis, et Spíritus Dei hábitat in vobis: si quis autem violáverit templum hoc, despérdet illum Dóminus: templum enim Dei sanctum est, quod estis vos, allelúia.
+
+[Invit]
+@TemporaCist/Epi2-0
+
+[Lectio1]
+@Tempora/Epi4-0:Lectio1:1-8:s/-7/-6/
+
+[Lectio2]
+@Tempora/Epi4-0:Lectio2:1:s/8-/7-/
+@Tempora/Epi4-0:Lectio1:9
+@Tempora/Epi4-0:Lectio2:2-5
+
+[Lectio3]
+@Tempora/Epi4-0:Lectio2:s/8-/12-/ s/8 .*12 /12 /s
+
+[Lectio4]
+@Tempora/Epi4-0:Lectio3
+
+[Responsory1]
+@TemporaCist/Epi2-0
+
+[Responsory2]
+@TemporaCist/Epi2-0
+
+[Responsory3]
+@TemporaCist/Epi2-0
+
+[Responsory4]
+@TemporaCist/Epi2-0
+
+[Lectio5]
+@Tempora/Epi4-0:Lectio4:s/Tot ígitur .*//s
+
+[Lectio6]
+@Tempora/Epi4-0:Lectio4:s/.* Tot ígitur /Tot ígitur /s s/$/~/
+@Tempora/Epi4-0:Lectio5:s/Vanitáti quippe.*//s
+
+[Lectio7]
+@Tempora/Epi4-0:Lectio5:s/.* Vanitáti /Vanitáti /s
+
+[Lectio8]
+@Tempora/Epi4-0:Lectio6:s/Unde .*//
+
+[Responsory5]
+@TemporaCist/Epi2-0
+
+[Responsory6]
+@TemporaCist/Epi2-0
+
+[Responsory7]
+@TemporaCist/Epi2-0
+
+[Responsory8]
+@TemporaCist/Epi2-0
+
+[Lectio9]
+@Tempora/Epi4-0:Lectio7
+
+[Lectio10]
+@Tempora/Epi4-0:Lectio8:s/Tunc .*//s
+
+[Lectio11]
+@Tempora/Epi4-0:Lectio8:s/.* Tunc /Tunc /s
+
+[Lectio12]
+@Tempora/Epi4-0:Lectio9
+
+[Responsory9]
+@TemporaCist/Epi2-0
+
+[Responsory10]
+@TemporaCist/Epi2-0
+
+[Responsory11]
+@TemporaCist/Epi2-0
+
+[Responsory12]
+@TemporaCist/Epi2-0
+
+[Evangelium]
+@Tempora/Epi4-0
+
+[Ant 3]
+Surgens Jesus * imperávit ventis et mari, et facta est tranquíllitas magna, et miráti sunt univérsi.

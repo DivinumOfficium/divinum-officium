@@ -1,0 +1,52 @@
+[Ant Vespera] 
+Já jsem zasadil, * Apollo zaléval, Bůh však dával vzrůst, alleluja.
+Milost Boží * ve mě nepřebývala zbytečně, avšak jeho milost ve mě navždy zůstane.
+Třikrát jsem byl bit holemi, * jednou kamenován, a třikrát jsem přežil ztroskotání lodi pro jméno Kristovo.
+V Damašku, * místodržitel lidu u krále Arety mě chtěl zajmout; bratři mě však přes zeď spustili v koši, a tak jsem unikl jeho rukám ve jménu Páně.
+Rád se budu chlubit * ve svých slabostech, aby ve mě přebývala síla Kristova.
+
+[Ant 1]
+@Sancti/06-30
+
+[Lectio1]
+@Sancti/01-25::1-5:s/-5/-3/ s/Damašku; .*/Damašku./
+
+[Lectio2]
+@Sancti/01-25:Lectio1:2:s/1-5/3-7/
+@Sancti/01-25:Lectio1:5-7:s/-5/-3/ s/.* (Vtom)/3 $1/
+@Sancti/01-25:Lectio2:2-3:s/Muži, .*//
+
+[Lectio3]
+@Sancti/01-25:Lectio2:1:s/6-/7-/
+@Sancti/01-25:Lectio2:3-5:s/.* (Muži, )/7 $1/
+
+[Lectio5]
+@Sancti/01-25:Lectio4:s/ Tak .*//
+
+[Lectio6]
+@Sancti/01-25:Lectio4:3 s/.* (Tak )/$1/ s/$/~/
+@Sancti/01-25:Lectio5:s/To .*//
+
+[Lectio7]
+@Sancti/01-25:Lectio5:s/.* (To )/$1/ s/Pohleďte .*//
+
+[Lectio8]
+@Sancti/01-25:Lectio5:s/.* (Pohleďte)/$1/ s/$/~/
+@Sancti/01-25:Lectio6:s/.* (Slyšeli jsme,)/$1/
+
+[Lectio9]
+@Commune/C1:Lectio7 in 2 loco:s/ Pán nás.*//
+
+[Lectio10]
+@Commune/C1:Lectio7 in 2 loco:s/.* Pán nás/Pán nás/s s/$/~/
+@Commune/C1:Lectio8 in 2 loco:s/ Ovšem .*//
+
+[Lectio11]
+@Commune/C1:Lectio8 in 2 loco:s/.*Ovšem /Ovšem / s/$/~/
+@Commune/C1:Lectio9 in 2 loco:s/Musíme .*//g
+
+[Lectio12]
+@Commune/C1:Lectio9 in 2 loco:s/.* Musíme /Musíme /g
+
+[Ant Vespera 3] (rubrica cisterciensis)
+@:Ant Vespera:s/$/_/gm s/_/;;109/ s/_/;;112/ s/_/;;115/ s/_/;;125/ s/_//

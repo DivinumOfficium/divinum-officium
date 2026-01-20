@@ -6,9 +6,6 @@
 [Ant Vespera]
 @Sancti/06-30::s/$/_/gm s/_/;;109/ s/_/;;112/ s/_/;;115/ s/_/;;138/ s/_//
 
-[Ant Vespera] (rubrica cisterciensis)
-@Sancti/06-30:Ant Laudes:s/$/_/gm s/_/;;109/ s/_/;;112/ s/_/;;115/ s/_/;;125/ s/_//
-
 [Hymnus Vespera]
 @:HymnusM Matutinum
 
@@ -25,79 +22,33 @@ Vade, Ananía, * et quære Saulum, ecce enim orat; quia vas electiónis est mihi
 @:AntMatutinumM::1-3
 @:AntMatutinumM::4
 
-[Ant Matutinum] (rubrica cisterciensis)
-@Sancti/06-30::1-3:s/33/23/ s/44/32/
-@Sancti/06-30::6:s/63/33/
-@Sancti/06-30::9:s/98/44/
-@Sancti/06-30::8:s/96/46/
-@Sancti/06-30::7:s/74/60/
-@Sancti/06-30::5:s/60/63/
-@Commune/C1:Ant 2:s/\./.;;64/
-@Sancti/06-30::4:s/46/74/
-@Sancti/06-30:Ant 1:s/\./.;;96/
-@Sancti/06-30:Ant 2_:s/\./.;;98/
-@:AntMatutinumM::5
-
-[Lectio1] (rubrica cisterciensis)
-@Sancti/06-30::1-4 s/-4/-2/
-
 [Lectio2]
 @Sancti/06-30::1-4 s/-8/7/]
-
-[Lectio2] (rubrica cisterciensis)
-@Sancti/06-30:Lectio1:2:s/1-4/3-5/
-@Sancti/06-30:Lectio1:5-7
-@Sancti/06-30:Lectio2:2
-
-[Responsory2] (rubrica cisterciensis)
-@:Responsory8_
 
 [Lectio3]
 @Sancti/06-30:Lectio2:!2-4 s/5-8/8-11/
 @Sancti/06-30::2-4 s/\. Et.*//
 
-[Lectio3] (rubrica cisterciensis)
-@Sancti/06-30:Lectio2:1:s/5-8/6-8/
-@Sancti/06-30:Lectio2:3-5
-
-[Responsory3] (rubrica cisterciensis)
-@Sancti/06-30:Responsory2
-
 [Lectio4]
 @Sancti/06-30:Lectio3:!2-3 s/9-/11-/ s/ .*?(?= Et)//
-(sed rubrica cisterciensis)
-@Sancti/06-30:Lectio3:1-5:s/9-13/9-12/
 
-[Responsory4_]
+[Responsory4]
 R. Audístis enim † conversatiónem meam aliquándo in Judaísmo: quóniam proficiébam.
 * Supra multos coætáneos meos in génere meo. 
 V. Abundántius æmulátor exsístens paternárum meárum traditiónum.
 R. Supra multos coætáneos meos in génere meo. 
-
-[Responsory4]
-@:Responsory4_
-(sed rubrica cisterciensis)
-@:Responsory12_
 
 [Lectio5]
 @Sancti/06-30:Lectio4:s/ Dénique.*//s
 
 [Responsory5]
 @Sancti/06-30:Responsory4
-(sed rubrica cisterciensis)
-@:Responsory4_
 
 [Lectio6]
 @Sancti/06-30:Lectio4:s/.* (?=Dénique)//s
 
 [Responsory6]
 @Sancti/06-30:Responsory5
-
-[Responsory6] (rubrica cisterciensis)
-R. Cum autem plácuit ei, qui me segregávit ex útero matris meæ, et vocávit per grátiam suam, ut reveláret Fílium suum per me,
-* Ut evangelizárem illum in Géntibus.
-V. Contínuo non acquiévi carni et sánguini, neque veni Jerosólymam ad antecessóres mes Apóstolos,
-R. Ut evangelizárem illum in Géntibus.
 
 [Lectio7]
 @Sancti/06-30:Lectio5
@@ -110,22 +61,11 @@ R. Ut evangelizárem illum in Géntibus.
 [Lectio8]
 @Sancti/06-30:Lectio6
 
-[Responsory8_]
+[Responsory8]
 R. Scio † cui crédidi, et certus sum quia potens est depósitum meum serváre.
 * In illum diem justus judex.
 V. Repósita est mihi coróna justítiæ, quam reddet mihi Dóminus.
 R. In illum diem justus judex.
-
-[Responsory8]
-@:Responsory8_
-(sed rubrica cisterciensis)
-@:Responsory8C
-
-[Responsory8C]
-R. Saulus autem magis ac magis convalescébat, et confundébat Judæos, qui habitábant Damásci:
-* Affírmans quóniam hic est Christus.
-V. Et contínuo ingréssus Paulus synagógam prædicábat Jesum;
-R. Affírmans quóniam hic est Christus.
 
 [Lectio9]
 @Sancti/06-30:Lectio7
@@ -133,19 +73,11 @@ R. Affírmans quóniam hic est Christus.
 [Responsory9]
 @Sancti/06-30:Responsory7
 
-[Responsory9] (rubrica cisterciensis)
-R. Ne magnitúdo revelatiónum extóllat me, datus est mihi stímulus carnis meæ, ángelus sátanæ, qui me colaphízet: propter quod ter Dóminum rogávi ut auferrétur a me, et dixit mihi Dóminus: Súfficit tibi, Paule, grátia mea.
-* Nam virtus in infirmitáte perfícitur.
-V. Libénter ígitur gloriábor in infirmitátibus meis, ut inhábitet in me virtus Christi.
-R. Nam virtus in infirmitáte perfícitur.
-
 [Lectio10]
 @Sancti/06-30:Lectio8:s/Idcírco.*//
 
 [Responsory10]
 @Sancti/06-30:Responsory8
-(sed rubrica cisterciensis)
-@Sancti/06-30:Responsory5
 
 [Lectio11]
 @Sancti/06-30:Lectio8:s/.* (?=Idcírco)// s/$/~/
@@ -155,29 +87,16 @@ R. Nam virtus in infirmitáte perfícitur.
 R. Magnus † sanctus Paulus, vas electiónis, vere digne est glorificándus.
 * Qui et méruit thronum duodécimum possidére.
 V. A Christo de caelo vocátus, et in terram prostrátus, ex persecutóre efféctus est vas electiónis.
-(sed rubrica cisterciensis)
-V. Grátiam supérnæ benedictiónis expóstulet nobis sanctus Paulus vas electiónis.
 R. Qui et méruit thronum duodécimum possidére.
 
 [Lectio12]
 @Sancti/06-30:Lectio9:s/.* (?=Nam)//
 
-[Responsory12_]
+[Responsory12]
 R. Mihi vívere † Christus est, et mori lucrum:
 * Gloriári me opórtet in cruce Dómini mei Jesu Christi.
 V. Per quem mihi mundus crucifíxus est, et ego mundo.
 R. Gloriári me opórtet in cruce Dómini mei Jesu Christi.
-
-[Responsory12]
-@:Responsory12_
-(sed rubrica cisterciensis)
-@:Responsory12C
-
-[Responsory12C]
-R. Sancte Paule Apóstole, prædicátor veritátis et Doctor Géntium, 
-* Intercéde pro nobis ad Deum, qui te elégit.
-V. Ut digni efficiámur grátia Dei
-R. Intercéde pro nobis ad Deum, qui te elégit.
 
 [MM Capitulum]
 @:Capitulum Sexta
