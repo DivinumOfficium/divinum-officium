@@ -261,7 +261,7 @@ sub oratio {
   }
   $w = '';
   our $oremusflag = "_\n" . prayer('Oremus', $lang);
-  $oremusflag = '' if $type =~ /Secreta/i || $sub_unica_conc;
+  $oremusflag = '' if $type =~ /Secreta/i || ($sub_unica_conc && $version !~ /196/);
 
   if (exists($w{"$type Vigilia"}) && ($version !~ /(1955|196)/ || $rule =~ /Vigilia/i)) {
     $w .= $w{"$type Vigilia"};
@@ -736,13 +736,18 @@ sub delconclusio {
   if ($version =~ /(1955|196)/ && $rank >= 5 && $ctotalnum > 2) { return ""; }
   if ($version =~ /(196|196)/ && $ctotalnum > 3) { return ""; }    # Fixme
   my $ostr = shift;
+
+  if ($ostr =~ /\n\_\s*\n\!/s && $ostr !~ /\$Oremus/) { $ctotalnum++; }
   my @ostr = split("\n", $ostr);
   $ostr = '';
   if ($oremusflag) { $ostr = $oremusflag; $oremusflag = ''; }
   my $line;
 
   foreach $line (@ostr) {
-    if ($line =~ /^\$/ && $line !~ /\$Oremus/) {
+    if ($line =~ /\$Oremus/) {
+      $ctotalnum++;
+      next;
+    } elsif ($line =~ /^\$/) {
       $addconclusio = "$line\n";
       next;
     }

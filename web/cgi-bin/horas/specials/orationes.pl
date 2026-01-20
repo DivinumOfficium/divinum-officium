@@ -624,7 +624,17 @@ sub delconclusio {
   my $ostr = shift;
   my $conclusio = shift;
 
-  if ($ostr =~ s/^(\$(?!Oremus).*?(\n|$)((_|\s*)(\n|$))*)//m) {
+  if ($ostr =~ /\$Per/s && $ostr =~ /\$Qui/s && $version !~ /196/) {
+    if ($ostr =~ /(.*?)(\n\$Per [^\n\r]*?\s*)$/s) {
+      $conclusio = $2;
+      $ostr = $1;
+      $ostr =~ s/\$Qui [^\n\r]*\s*//;
+    } elsif ($ostr =~ /(.*?)(\n\$Qui [^\n\r]*?\s*)$/s) {
+      $conclusio = $2;
+      $ostr = $1;
+      $ostr =~ s/\$Per [^\n\r]*\s*//;
+    }
+  } elsif ($ostr =~ s/^(\$(?!Oremus).*?(\n|$)((_|\s*)(\n|$))*)//m) {
     $conclusio = $1;
   }
 
