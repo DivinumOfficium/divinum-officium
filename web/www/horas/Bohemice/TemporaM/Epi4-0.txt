@@ -1,0 +1,24 @@
+[Lectio5]
+@Tempora/Epi4-0:Lectio4:s/Ovšem .*//s
+
+[Lectio6]
+@Tempora/Epi4-0:Lectio4:s/.* Ovšem /Ovšem /s s/$/~/
+@Tempora/Epi4-0:Lectio5:s/Tvorstvo.*//s
+
+[Lectio7]
+@Tempora/Epi4-0:Lectio5:s/.* Tvorstvo /Tvorstvo /s
+
+[Lectio8]
+@Tempora/Epi4-0:Lectio6
+
+[Lectio9]
+@Tempora/Epi4-0:Lectio7
+
+[Lectio10]
+@Tempora/Epi4-0:Lectio8:s/Tehdy .*//s
+
+[Lectio11]
+@Tempora/Epi4-0:Lectio8:s/.* Tehdy /Tehdy /s
+
+[Lectio12]
+@Tempora/Epi4-0:Lectio9

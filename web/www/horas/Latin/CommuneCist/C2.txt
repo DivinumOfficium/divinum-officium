@@ -51,6 +51,11 @@ Nisi granum fruménti * cadens in terram, mórtuum fúerit; ipsum solum manet.;;
 @Commune/C2:Lectio2:s/25-31/29-32/ s/^25 .*29 /29 /sm s/$/~/
 @Commune/C2:Lectio3:s/!.*// s/33 .*//s
 
+[Responsory1]
+@Commune/C2::1-2
+V. Munímine régio septus, nullátenus est ab adversáriis superátus:
+@Commune/C2::4
+
 [Responsory4]
 R. Hic est vir, qui non est derelíctus a Deo in die certáminis sui, et ipse conculcávit caput serpéntis antíqui:
 * Modo coronátus est, quia fidéliter vixit in mandátis Dómini.
@@ -97,6 +102,11 @@ R. Modo coronátus est, quia fidéliter vixit in mandátis Dómini.
 
 [Responsory12]
 @CommuneM/C2:Responsory11
+
+[MM Capitulum]
+@Commune/C2:Capitulum Sexta
+_
+@Commune/C2:Nocturn 2 Versum
 
 [Ant Laudes]
 @:Ant Vespera

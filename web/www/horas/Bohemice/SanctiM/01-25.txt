@@ -1,0 +1,26 @@
+[Lectio5]
+@Sancti/01-25:Lectio4:s/ Pavel totiž .*//
+
+[Lectio6]
+@Sancti/01-25:Lectio4:3 s/.* (Pavel totiž)/$1/ s/$/~/
+@Sancti/01-25:Lectio5:s/Již,.*//
+
+[Lectio7]
+@Sancti/01-25:Lectio5:s/.* řečeno\.//
+
+[Lectio9]
+@Commune/C1:Lectio7 in 2 loco:s/ Pán nás.*//
+
+[Lectio10]
+@Commune/C1:Lectio7 in 2 loco:s/.* Pán nás/Pán nás/s s/$/~/
+@Commune/C1:Lectio8 in 2 loco:s/ Ovšem .*//
+
+[Lectio11]
+@Commune/C1:Lectio8 in 2 loco:s/.*Ovšem /Ovšem / s/$/~/
+@Commune/C1:Lectio9 in 2 loco:s/Musíme .*//g
+
+[Lectio12]
+@Commune/C1:Lectio9 in 2 loco:s/.* Musíme /Musíme /g
+
+[Ant Vespera 3] (rubrica cisterciensis)
+@Sancti/01-25:Ant Vespera:s/$/_/gm s/_/;;109/ s/_/;;112/ s/_/;;115/ s/_/;;125/ s/_//
