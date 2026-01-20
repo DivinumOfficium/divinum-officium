@@ -5,14 +5,20 @@ S. Agnetis Virginis et Martyris
 ;;Duplex;;3;;vide C6-1
 (sed rubrica 1930)
 ;;Duplex majus;;4;;ex C6-1
+(sed rubrica Barroux)
+;;Duplex majus;;5;;vide C6-1
 (sed rubrica cisterciensis)
 ;;Semiduplex;;2.2;;vide C6-1
 
 [Rule]
 vide C6-1;
 9 lectiones
-Ant Vespera3=147
+Psalm5 Vespera=116
+Psalm5 Vespera3=147
 in 1 Nocturno Lectiones ex Commune in 2 loco
+
+[Ant Vespera]
+@:Ant Laudes
 
 [Ant 1]
 Beáta Agnes * in médio flammárum expánsis mánibus orábat: Te déprecor, omnípotens, adoránde, colénde, Pater metuénde, quia per sanctum Fílium tuum evási minas sacrílegi tyránni, et carnis spurcítias immaculáto calle transívi: et ecce vénio ad te, quem amávi, quem quæsívi, quem semper optávi.
@@ -107,7 +113,11 @@ R. Quia per Fílium tuum unigénitum evási minas hóminum impiórum, et spurcí
 @Commune/C6::s/N\./Agnes/
 
 [Ant Laudes]
-@:Ant Vespera 3:s/;;.*//g
+Ingréssa Agnes * turpitúdinis locum, Angelum Dómini præparátum invénit.
+Mecum enim hábeo * custódem córporis mei, Angelum Dómini.
+Anulo suo * subarrhávit me Dóminus meus Jesus Christus, et tamquam sponsam decorávit me coróna.
+Benedíco te, * Pater Dómini mei Jesu Christi, quia per Fílium tuum ignis exstínctus est a látere meo.
+Congaudéte mecum * et congratulámini, quia cum his ómnibus lúcidas sedes accépi.
 
 [Capitulum Laudes]
 @Commune/C7
@@ -124,13 +134,6 @@ $Deo gratias
 !Sir 51:8; 51:12
 v. Laudábit usque ad mortem ánima mea Dóminum, quóniam éruis sustinéntes te, et líberas eos de manu angústiæ, Dómine, Deus noster.
 $Deo gratias
-
-[Ant Vespera 3]
-Ingréssa Agnes * turpitúdinis locum, Angelum Dómini præparátum invénit.;;109
-Mecum enim hábeo * custódem córporis mei, Angelum Dómini.;;110
-Anulo suo * subarrhávit me Dóminus meus Jesus Christus, et tamquam sponsam decorávit me coróna.;;111
-Benedíco te, * Pater Dómini mei Jesu Christi, quia per Fílium tuum ignis exstínctus est a látere meo.;;112
-Congaudéte mecum * et congratulámini, quia cum his ómnibus lúcidas sedes accépi.;;147
 
 [Ant 3]
 Stans beáta Agnes * in médio flammæ, expánsis mánibus orábat ad Dóminum: Omnípotens, adoránde, colénde, treménde, benedíco te, et glorífico nomen tuum in ætérnum.
