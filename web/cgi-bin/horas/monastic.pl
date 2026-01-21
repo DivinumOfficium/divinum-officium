@@ -529,7 +529,7 @@ sub lectioE {
     $evang .= " in $1 loco" if $1 > 1;
   }
 
-  $win =~ s/(?:M|OP)//g;    # no M or OP folder in missa
+  $win =~ s/(?:M|OP|Cist)//g;    # no M or OP folder in missa
   my %missa = %{setupstring("../missa/$lang", $win)};
 
   if (exists($w{Evangelium})) {    #** get evangelium from Winner
