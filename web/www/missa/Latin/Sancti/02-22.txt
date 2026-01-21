@@ -11,9 +11,6 @@ In Cathedra S. Petri Apostoli
 (sed rubrica 1963 aut rubrica 1930)
 ;;Duplex;;3;;vide C4
 
-[Rank](rubrica 196)
-In Cathedra S. Petri Apostoli;;Duplex majus;;4;;ex C4
-
 [Rule]
 ex C4;
 Gloria
@@ -25,10 +22,21 @@ Sub unica conclusione
 @Commune/C2a
 
 [Oratio]
-@Sancti/01-18
+@:Oratio Petri
+(deinde dicuntur semper)
+_
+$Oremus
+(sed rubrica 196 omittuntur)
+@:Oratio Pauli
 
-[Commemoratio Oratio]
-@Sancti/01-18:Commemoratio Oratio
+[Oratio Petri]
+Deus, qui beáto Petro Apóstolo tuo, collátis clávibus regni cœléstis, ligándi atque solvéndi pontifícium tradidísti: concéde; ut, intercessiónis ejus auxílio, a peccatórum nostrórum néxibus liberémur:
+$Qui vivis
+
+[Oratio Pauli]
+!Commemoratio S. Pauli
+Deus, qui multitúdinem géntium beáti Pauli Apóstoli prædicatióne docuísti: da nobis, quǽsumus; ut, cujus commemoratiónem cólimus, ejus apud te patrocínia sentiámus.
+$Per Dominum
 
 [Lectio]
 @Commune/Coronatio
@@ -54,16 +62,35 @@ _
 @Commune/Coronatio
 
 [Secreta]
-@Sancti/01-18
+@:Secreta Petri
+(deinde dicuntur semper)
+_
+(sed rubrica 196 omittuntur)
+@:Secreta Pauli
 
-[Commemoratio Secreta]
-@Sancti/01-18:Commemoratio Secreta
+[Secreta Petri]
+Ecclésiæ tuæ, quǽsumus, Dómine, preces et hóstias beáti Petri Apóstoli comméndet orátio: ut, quod pro illíus glória celebrámus, nobis prosit ad véniam.
+$Per Dominum
+
+[Secreta Pauli]
+!Pro S. Paulo
+@Sancti/01-25:Secreta Pauli
 
 [Communio]
 @Commune/C4b
 
 [Postcommunio]
-@Sancti/01-18
+@:Postcommunio Petri
+(deinde dicuntur semper)
+_
+$Oremus
+(sed rubrica 196 omittuntur)
+@:Postcommunio Pauli
 
-[Commemoratio Postcommunio]
-@Sancti/01-18:Commemoratio Postcommunio
+[Postcommunio Petri]
+Lætíficet nos, Dómine, munus oblátum: ut, sicut in Apóstolo tuo Petro te mirábilem prædicámus; sic per illum tuæ sumámus indulgéntiæ largitátem.
+$Per Dominum
+
+[Postcommunio Pauli]
+!Pro S. Paulo
+@Sancti/01-25:Postcommunio Pauli
