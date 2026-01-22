@@ -1,0 +1,12 @@
+@Tempora/Quadp1-2
+
+[Lectio1]
+@Tempora/Quadp1-1::1-2:s/27-31/21-22/
+@Tempora/Quadp1-0:Lectio3:3:s/.* (Bůh viděl,)/21 $1/
+@Tempora/Quadp1-0:Lectio3:4-5
+
+[Lectio2]
+@Tempora/Quadp1-0:Lectio3:1-7:s/20-26/24-25/ s/20 .*24 /24 /s s/Bůh viděl, .*//
+
+[Lectio3]
+@Tempora/Quadp1-0:Lectio3:s/20-/25-/ s/20 .*25 /25 /s s/25 .* (Bůh viděl, )/25 $1/

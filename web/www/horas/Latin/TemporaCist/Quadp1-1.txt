@@ -1,0 +1,20 @@
+@Tempora/Quadp1-1
+
+[Lectio1]
+@Tempora/Quadp1-1::1-2:s/27-31/14-16/
+@Tempora/Quadp1-0:Lectio2:7-9
+
+[Lectio2]
+@Tempora/Quadp1-0::s/9-/17-/ s/9 .*17 /17 /s
+
+[Lectio3]
+@Tempora/Quadp1-0::1-3:s/Et vidit .*//
+
+[Responsory1]
+@TemporaCist/Quadp1-0
+
+[Responsory2]
+@TemporaCist/Quadp1-0
+
+[Responsory3]
+@TemporaCist/Quadp1-0

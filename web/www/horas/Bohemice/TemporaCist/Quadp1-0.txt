@@ -1,0 +1,73 @@
+[Ant 1]
+Bratři, * myslím si totiž, že utrpení tohoto času se nedají srovnat s budoucí slávou, která v nás bude zjevena, alleluja.
+
+[Invit]
+Neboť veliký Bůh je Hospodin: * A veliký Král nade všemi bohy.
+
+[Ant Matutinum 3N]
+Mnozí * jsou sice povolání, ale málo je vyvolených.
+
+[Responsory3]
+R. Tak byla tedy dokončena nebesa i země, i vše, co je zdobí; zakončil tedy Bůh sedmého dne své dílo, které vykonal; a odpočinul
+* Od veškerého díla, které započal.
+V. A požehnal Bůh sedmému dni, a posvětil jej, neboť v něm ustal
+R. Od veškerého díla, které započal.
+
+[Lectio5]
+@Tempora/Quadp1-0:Lectio4:s/Odsud .*//s
+
+[Lectio6]
+@Tempora/Quadp1-0:Lectio4:s/.* Odsud /Odsud /s
+
+[Lectio7]
+@Tempora/Quadp1-0:Lectio5
+
+[Lectio8]
+@Tempora/Quadp1-0:Lectio6
+
+[Responsory8]
+@Tempora/Quadp1-0:Responsory6:1-2
+V. Toto je nyní kost z mých kostí, a tělo z mého těla;
+@Tempora/Quadp1-0:Responsory6:2:s/\* /R. /
+
+[Lectio9]
+@Tempora/Quadp1-0:Lectio7:s/Pán má .*//
+
+[Lectio10]
+@Tempora/Quadp1-0:Lectio7:s/.* (Pán má)/$1/s s/$/~/
+@Tempora/Quadp1-0:Lectio8:s/Jitro .*//
+
+[Lectio11]
+@Tempora/Quadp1-0:Lectio8:s/.* (Jitro)/$1/ s/$/~/
+
+[Lectio12]
+@Tempora/Quadp1-0:Lectio9:s/Dělníkem .*//s
+
+[Responsory10]
+R. V potu své tváře budeš jísti svůj chléb, řekl Hospodin Adamovi, a lopotit se budeš na zemi,
+* Ona ti nevydá své plody; ale trní a bodláčí ti bude rodit.
+V. Protože jsi uposlechl hlasu své ženy spíše než mého, prokleta bude země, na které budeš pracovat.
+R. Ona ti nevydá své plody; ale trní a bodláčí ti bude rodit.
+
+[Responsory11]
+@Tempora/Quadp1-0:Responsory8:1-2
+V. Cherubíny postavil Hospodin s plamenným mečem ze všech stran, aby hlídali přístup ke stromu života, a řekl:
+@Tempora/Quadp1-0:Responsory8:4
+
+[Responsory12]
+@Tempora/Quadp1-0:Responsory9:s/Proklet budeš/Nyní tedy budeš proklet/
+
+[Ant Laudes]
+Srdcem zkroušeným * a pokořeným, Bože, nepohrdej.
+
+[Responsory Laudes]
+R.br. Pomocníkem mým budiž, Bože, * Neopouštěj mě.
+R. Pomocníkem mým budiž, Bože, * Neopouštěj mě.
+V. Ani na mě pohrdlivě neshlížej, Bože, můj zachránče.
+R. Neopouštěj mě.
+
+[Ant Tertia]
+@Tempora/Quadp1-0:Ant Sexta
+
+[Ant Sexta]
+@Tempora/Quadp1-0:Ant Tertia
