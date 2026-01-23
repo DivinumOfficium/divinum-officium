@@ -2,12 +2,17 @@
 
 [Rule]
 12 lectiones
-Invit2
+Psalmi Feria
+Invit5
+
+[Ant 1]
+Vobis datum est * nosse mystérium regni Dei: céteris autem in parábolis, dixit Jesus descípulis suis.
+
+[Invit]
+@TemporaCist/Quadp1-0
 
 [Ant Matutinum 3N]
 Miserére mei, Fili David! † Quid vis ut fáciam tibi? Dómine, ut vídeam.
-V. Exaltáre Dómine in virtúte tua.
-R. Cantábimus et psallémus virtútes tuas.
 
 [Lectio1]
 @Tempora/Quadp3-0:Lectio1:s/-6/-5/ s/ Cumque.*//s

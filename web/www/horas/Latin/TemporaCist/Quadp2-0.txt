@@ -1,0 +1,110 @@
+@Tempora/Quadp2-0
+
+[Rule]
+12 lectiones
+Psalmi Feria
+Invit5
+
+[Ant 1] 
+@Tempora/Quadp1-0:Ant 3
+
+[Invit]
+@TemporaCist/Quadp1-0
+
+[Ant Matutinum 3N]
+Semen cécidit * in terram bonam, et ortum fecit fructum céntuplum.
+
+[Lectio1]
+@Tempora/Quadp1-2:Lectio1:s/15-18/18-19/ s/15 .*18 /18 /s
+@Tempora/Quadp1-2:Lectio2:2
+
+[Lectio2]
+@Tempora/Quadp1-2::s/19-20/20-21/ s/19 .*20/20/s
+@Tempora/Quadp1-2:Lectio3:2
+
+[Lectio3]
+@Tempora/Quadp1-2::s/21-/22-/ s/21 .*22/22/s
+
+[Lectio4]
+@Tempora/Quadp1-3:Lectio1:2-5:s/-7/-3/
+
+[Responsory1]
+@TemporaCist/Quadp1-0
+
+[Responsory2]
+@TemporaCist/Quadp1-0
+
+[Responsory3]
+@TemporaCist/Quadp1-0
+
+[Responsory4]
+@TemporaCist/Quadp1-0
+
+[Lectio5]
+Ex libro Enchíridii sancti Bernárdi Abbátis.
+!Serm. 2. in Septuages.
+Immísit Dóminus sopórem in Adam. Immísit et in seípsum, factus nimírum secúndus Adam: sed est distántia forte non parva. Ille enim soporátus vidétur præ excéssu contemplatiónis; Christus miseratiónis afféctu: ut in illum sopórem immíserit véritas, in hunc cháritas, cum útraque sit Dóminus. Ait enim Joánnes Evangelísta: Deus cháritas est. Et ipse Dóminus: Ego sum via, véritas et vita. 
+	
+[Lectio6]
+Sane sopórem Christi solíus charitátis fuísse nemo dúbitat, vel nómine tenus Christiánus. Síquidem accúbuit ut leo, non victus plane, sed victor, potestáte própria ponens ánimam, somnum mortis excípiens própria voluntáte. Céterum qualis et ille sopor dicéndus sit fuísse, vel credéndus, quem Dóminus immísit in Adam, in quo sine sensu omnino dolóris, in mulíerem ædificándam costa subláta est de látere dormiéntis?
+
+[Lectio7]
+Mihi quidem non nisi incommutábilis veritátis intúitu, et abysso divínæ sapiéntiæ corpóreis excédens sénsibus obdormísse vidétur: quod ex ejus verbis vel máximæ cónjici potest. Rédiens nimírum índicat quo abiísset, dum tamquam ébrius de cella vinária véniens, et erúctans illud magnum sacraméntum, quod tanto post in Christo et in Ecclésia Apóstolus commendávit. Hoc nunc, inquit, os ex óssibus meis. Et, Propter hoc, relínquet homo patrem et matrem, et adhærébit uxóri suæ, et erunt duo in carne una. An tibi pénitus obdormísse vidétur, qui in hanc vocem excitátus erúpit? 
+	
+[Lectio8]
+In libertáte pósuit eum Deus, ut inter summa et ínfima versans, et in illa excéderet sine difficultáte, et ad hæc sine illécebra aut necessitáte descénderet. Non sic in nobis líbera rátio, sed úndique ei luctándum est. Sic enim et ab ínfimis visco quodam captíva tenétur, et a summis indígna repéllitur, ut nec ab his sine dolóre possit avélli, nec ad illa sine magno gémitu vel raro queat admítti. Hinc nempe vim fáciunt qui quærunt ánimam meam, ut clamáre necésse sit: Infélix ego homo, quis me liberábit de córpore mortis hujus?
+
+[Responsory5]
+@TemporaCist/Quadp1-0
+
+[Responsory6]
+@TemporaCist/Quadp1-0
+
+[Responsory7]
+@TemporaCist/Quadp1-0
+
+[Responsory8]
+@TemporaCist/Quadp1-0
+
+[Lectio9]
+@Tempora/Quadp2-0:Lectio7:s/Unde .*//s
+
+[Lectio10]
+@Tempora/Quadp2-0:Lectio7:s/.* Unde /Unde /s s/$/~/
+@Tempora/Quadp2-0:Lectio8:s/Quis .*//s
+
+[Lectio11]
+@Tempora/Quadp2-0:Lectio8:s/.* Quis /Quis /s
+
+[Lectio12]
+@Tempora/Quadp2-0:Lectio9:s/Cibus .*//
+
+[Responsory9]
+@TemporaCist/Quadp1-0
+
+[Responsory10]
+@TemporaCist/Quadp1-0
+
+[Responsory11]
+@TemporaCist/Quadp1-0
+
+[Responsory12]
+@TemporaCist/Quadp1-0
+
+[Ant Laudes]
+Fortitúdo mea, * et laus mea Dóminus, exaudívit vocem meam, et factus est mihi in salútem.
+
+[Responsory Laudes] 
+@TemporaCist/Quadp1-0
+
+[Ant Prima]
+Si culmen * veri honóris quæritis, ad cœléstem pátriam quantócius properáte.
+
+[Ant Tertia]
+Semen est * Verbum Dei, sator autem Christus: omnis qui audit eum, manébit in ætérnum.
+
+[Ant Sexta]
+Qui verbum Dei rétinent * corde perfécto et óptimo, fructum áfferunt in patiéntia.
+
+[Ant 3]
+Jesus hæc dicens, clamábat: * Qui habet aures audiéndi, áudiat.

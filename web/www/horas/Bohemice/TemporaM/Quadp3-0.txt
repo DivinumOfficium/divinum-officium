@@ -1,0 +1,56 @@
+
+[Ant Matutinum 3N]
+Smiluj se nade mnou, Synu Davidův! † Co chceš, abych tobě udělal? Pane, ať vidím.
+V. Zajásej Hospodine ve své moci.
+R. Opěvovat a oslavovat budeme tvé mocné skutky.
+
+[Lectio1]
+@Tempora/Quadp3-0:Lectio1:s/-6/-5/ s/ a přišli.*/./s
+
+[Lectio2]
+@Tempora/Quadp3-0:Lectio1:s/-6/-8/ s/1-/5-/ s/1 .*(a přišli)/5 $1/s 
+@Tempora/Quadp3-0:Lectio2:s/!.*// s/9 .*//s
+
+[Lectio3]
+@Tempora/Quadp3-0:Lectio2:s/7-/9-/ s/7.*9/9/s
+
+[Lectio4]
+@Tempora/Quadp3-0:Lectio3
+
+[Responsory4]
+R. Řekl Hospodin Abramovi: † Sára, tvá manželka, tobě porodí syna
+* A dáš mu jméno Isák.
+V. Až se k tobě v tomto čase navrátím a budu při životě, † bude mít tvá žena Sára syna.
+R. A dáš mu jméno Isák.
+
+[Lectio5]
+@Tempora/Quadp3-0:Lectio4:s/Na prvním .*//s
+
+[Lectio6]
+@Tempora/Quadp3-0:Lectio4:s/.* Na prvním /Na prvním /s s/$/~/
+@Tempora/Quadp3-0:Lectio5:s/Avšak stejně .*//s
+
+[Lectio7]
+@Tempora/Quadp3-0:Lectio5:s/.* Avšak stejně /Avšak stejně /s
+
+[Lectio8]
+@Tempora/Quadp3-0:Lectio6
+
+[Responsory8]
+R. Hospodin navštívil Sáru, jak byl slíbil, a splnil, co řekl: † a ona počala a porodila syna ve svém stáří
+* V čase, který jí Bůh předpověděl.
+V. Abraham pak dal jméno svému synu, kterého mu porodila Sára, Izák.
+R. V čase, který jí Bůh předpověděl.
+
+[Lectio9]
+@Tempora/Quadp3-0:Lectio7
+
+[Lectio10]
+@Tempora/Quadp3-0:Lectio8:s/Lidský .*//s
+
+[Lectio11]
+@Tempora/Quadp3-0:Lectio8:s/.* Lidský /Lidský /s s/$/~/
+@Tempora/Quadp3-0:Lectio9:s/Když tedy .*//s
+
+[Lectio12]
+@Tempora/Quadp3-0:Lectio9:s/.* Když tedy /Když tedy /s

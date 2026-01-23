@@ -2,6 +2,7 @@
 
 [Rule]
 12 lectiones
+Psalmi Feria
 Invit5
 
 [Ant 1]
@@ -29,7 +30,7 @@ Multi * enim sunt vocáti, pauci vero elécti.
 @Tempora/Quadp1-0:Responsory2
 
 [Responsory2]
-@Tempora/Quadp1-0:Responsory1
+@Tempora/Quadp1-0:Responsory1:s/creávit Deus/fecit Deus/ s/fecit in/creávit in/
 
 [Responsory3]
 R. Igitur perfécti sunt cæli et terra, et omnis ornátus eórum: complevítque Deus die séptimo opus suum, quod fécerat: et requiévit
