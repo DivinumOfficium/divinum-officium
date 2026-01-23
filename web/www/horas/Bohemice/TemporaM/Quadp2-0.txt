@@ -1,0 +1,51 @@
+
+[Ant Matutinum 3N]
+Setba padla na dobrou půdu, † a když vzešla, přinesla stonásobnou úrodu.
+V. Zajásej Hospodine ve své moci.
+R. Opěvovat a oslavovat budeme tvé mocné skutky.
+
+[Lectio1]
+@Tempora/Quadp2-0:Lectio1:1-6 s/-4/-3/
+
+[Lectio2]
+@Tempora/Quadp2-0:Lectio1:2:s/5:31; 6:1-4/6:4-6/
+@Tempora/Quadp2-0:Lectio1:7
+@Tempora/Quadp2-0:Lectio2:2-3 s/ Et tactus.*//s
+
+[Lectio3]
+@Tempora/Quadp2-0:Lectio2:s/5-8/6-10/ s/5.*(Et tactus)/6 $1/s
+@Tempora/Quadp2-0:Lectio3:s/!.*// s/11 .*//s
+
+[Lectio4]
+@Tempora/Quadp2-0:Lectio3:s/9-/11-/ s/9.*11/11/s
+
+[Lectio5]
+@Tempora/Quadp2-0:Lectio4:s/Vždyť .*//s
+
+[Lectio6]
+@Tempora/Quadp2-0:Lectio4:s/.* Vždyť /Vždyť /s
+
+[Lectio7]
+@Tempora/Quadp2-0:Lectio5
+
+[Lectio8]
+@Tempora/Quadp2-0:Lectio6
+
+[Lectio9]
+@Tempora/Quadp2-0:Lectio7:s/Proto .*//s
+
+[Lectio10]
+@Tempora/Quadp2-0:Lectio7:s/.* Proto /Proto /s s/$/~/
+@Tempora/Quadp2-0:Lectio8:s/Kdo by .*//s
+
+[Lectio11]
+@Tempora/Quadp2-0:Lectio8:s/.* Kdo by /Kdo by /s
+
+[Responsory11]
+R. Spočinula archa sedmého měsíce na arménských horách;
+* A vody odcházely a opadaly až do desátého měsíce.
+V. Dedátého pak měsíce, prvního dne měsíce, se objevily vrcholky hor.
+R. A vody odcházely a opadaly až do desátého měsíce.
+
+[Lectio12]
+@Tempora/Quadp2-0:Lectio9

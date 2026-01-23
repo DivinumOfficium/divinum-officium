@@ -1,0 +1,19 @@
+@Tempora/Quadp2-4
+
+[Lectio1]
+@Tempora/Quadp1-4::1-5:s/-7/-3/
+
+[Lectio2]
+@Tempora/Quadp1-4:Lectio1:2-7:s/1-7/4-5/ s/1 .*4/4/s
+
+[Lectio3]
+@Tempora/Quadp1-4:Lectio1:2-9:s/1-/6-/ s/1 .*6/6/s
+
+[Responsory1]
+@TemporaCist/Quadp1-0:Responsory10
+
+[Responsory2]
+@TemporaCist/Quadp1-0:Responsory11
+
+[Responsory3]
+@TemporaCist/Quadp1-0:Responsory12
