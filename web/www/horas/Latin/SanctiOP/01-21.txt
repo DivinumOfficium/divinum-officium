@@ -1,0 +1,18 @@
+@Sancti/01-21
+
+[Ant Matutinum]
+@Sancti/01-21::1 s/1/8/
+@Sancti/01-21:Ant Vespera 3:3 s/111/18/
+@Sancti/01-21:Responsory2:1 s/R. // s/,\s*$/.;;23/
+@Sancti/01-21::8
+@Sancti/01-21::4 s/4/45/
+@Sancti/01-21::3 s/3/86/
+@Sancti/01-21::5 s/5/95/
+@Sancti/01-21::7 s/14/96/
+@Sancti/01-21:Responsory7:2 s/\* // s/$/;;97
+
+[Responsory2]
+@Sancti/01-21:Responsory4
+
+[Responsory3]
+@Sancti/01-21:Responsory8
