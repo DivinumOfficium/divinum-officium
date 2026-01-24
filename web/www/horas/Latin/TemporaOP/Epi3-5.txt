@@ -1,0 +1,21 @@
+@Tempora/Epi3-5
+
+[Lectio1]
+@Tempora/Epi2-3
+
+[Responsory1]
+@TemporaOP/Epi1-5
+
+[Lectio2]
+@Tempora/Epi2-3::1-4 s/-7/-6/
+
+[Responsory2]
+@TemporaOP/Epi1-5
+
+[Lectio3]
+@Tempora/Epi2-3::1
+@Tempora/Epi2-3:Lectio2:5
+@Tempora/Epi2-3::2-3 s/-10/-9/ s/ Contristáti.*//
+
+[Responsory3]
+@TemporaOP/Epi1-5
