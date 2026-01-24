@@ -5,7 +5,6 @@ ex TemporaM/Pent01-4;
 3 Lectiones (nisi rubrica cisterciensis)
 Doxology=Corp
 Feria Te Deum
-Psalmi Feria (rubrica cisterciensis)
 
 [Rule] (rubrica 196)
 
@@ -22,21 +21,6 @@ Psalmi Feria (rubrica cisterciensis)
 ;;
 @Tempora/Pent01-4:Nocturn 2 Versum
 @Tempora/Pent01-4::2 s/;;.*//
-;;
-;;
-;;
-;;
-;;
-
-[Ant Matutinum] (rubrica cisterciensis)
-Novus Abel, * Christus, hóstiam gratam pro nobis ófferens Deo Patri, novum dedicávit in suo Sánguine testaméntum.
-;;
-Ædificávit Noë * altáre Dómino, ófferens super illud holocáusta: odoratúsque Dóminus odórem suavitátis, benedíxit ei.
-;;
-Introdúcens Joseph * domum fratres suos, instrúxit convívium, et appósito pane comédit, et bibit cum eis.
-;;
-@TemporaM/Pent01-4:Responsory TertiaM
-Allelúia, * allelúia, allelúia.
 ;;
 ;;
 ;;
@@ -67,15 +51,3 @@ Allelúia, * allelúia, allelúia.
 $Deo gratias
 _
 @Tempora/Pent01-4:Versum 2
-(sed rubrica cisterciensis)
-@TemporaM/Pent01-4:Responsory SextaM
-
-[MM LB] (rubrica cisterciensis)
-!Psalm 77:23-25
-v. Mandávit Dóminus núbibus désuper: * et jánuas cæli apéruit. Et pluit illis manna ad manducándum: * et panem cæli dedit eis. Panem Angelórum manducávit homo, * cibária misit eis in abundántia.
-$Tu autem
-_
-R.br. Panis iste verus est, * Qui de cælo descéndit.
-R. Panis iste verus est, * Qui de cælo descéndit.
-V. Et dat vitam mundo.
-R. Qui de cælo descéndit.

@@ -1,0 +1,120 @@
+[Officium]
+Officium de Sanctissimo Eucharistiæ Sacramento
+
+[Rubrica]
+De SS. Sacramento fit Officium, extra Quadragesimam et mensem in quo celebratur Festum vel Octava Corporis Christi, et præterquam a Vesperis diei xvij. Decembris usque ad Octavam Epiphanie, prima cujusque mensis Feria v. non impedita Festo xij. vel iij. Lectionum, aut Officio cui Festum iij. Lectionum cedit, sub ritu Festi iij. Lectionum.
+
+[Rank]
+;;Simplex;;1.3;;ex TemporaCist/Pent01-4
+
+[Rule]
+ex TemporaCist/Pent01-4
+3 lectiones
+Doxology=NatT
+Antiphonas horas
+Special Benedictio
+Psalmi Feria
+No secunda vespera
+
+[Responsory Vespera]
+@TemporaCist/Pent01-4
+
+[Hymnus Vespera]
+v. Christus lux indefíciens,
+Cibat nos Carne dúlciter,
+Et potat nos refíciens
+Suo sánguine páriter.
+_
+Vera Caro quam súmimus,
+Quam assumpsit ex Vírgine;
+Verus Sanguis quem bíbimus,
+Quem effúdit pro hómine.
+_
+O cœléste convívium!
+O beatórum glória!
+O réquies humílium!
+Duc nos ad cæli gáudia.
+_
+Præsta Pater per Fílium,
+Præsta per almum Spíritum,
+Quibus hoc das edúlium,
+Felícem dones éxitum.
+Amen.
+
+[Ant 1]
+@TemporaCist/Pent01-5:Ant 3
+
+[Invit]
+Panem qui de cœlo descéndit: * Veníte adorémus.
+(sed tempore paschali)
+Allelúia, allelúia, * Allelúia.
+
+[Hymnus Matutinum]
+@:Hymnus Vespera
+
+[Nocturn 1 Versum]
+@TemporaCist/Pent01-4:Responsory TertiaM
+
+[Lectio1]
+@Tempora/Pent01-4::1
+@Tempora/Quad6-4:Lectio8
+
+[Lectio2]
+Sermo sancti Joánnis Chrysóstomi.
+!Homília 61. ad populum Antiochenum.
+Necessárium est, dilectíssimi, mysteriórum díscere miráculum, quodnam sit, et quare sit datum, et quæ ejus rei utílitas. Unum corpus effícimur: membra, inquit, ex carne ejus, et ex óssibus ejus: sequámur autem initiáti, quæ dicúntur. Ut ítaque non tantum per charitátem hoc fiámus‚ verum étiam ipsa re, in illam misceámur carnem: hoc namque per escam effícitur, quam largítus est nobis, volens osténdere desidérium, quod erga nos habet. Proptérea semetípsum nobis immíscuit, et corpus suum in nos contemperávit, ut unum quid simus tamquam corpus cápiti coaptátum: ardénter enim amántium hoc est.
+
+[Lectio3]
+Tamquam leónes ígitur ignem spirántes ab illa mensa recedámus‚ facti diábolo terríbiles, et caput nostrum mente revolvéntes, et charitátem quam erga nos osténdit. Nam paréntes quidem áliis sæpe fílios tradunt aléndos: ego autem, inquit, non ita, sed cárnibus meis alo, et meípsum vobis appóno, vos omnes generósos esse volens, et spem bonam de futúris vobis præbens: quippe qui vobis hic meípsum trádidi, multo magis id in futúro fáciam. Vólui frater vester fíeri, carni propter vos, et sánguini communicávi: vobis vicíssim ipsam carnem et sánguinem‚ per quæ cognátus vester factus sum, trado.
+
+[Responsory1]
+@TemporaCist/Pent01-4:Responsory6
+
+[Responsory2]
+@TemporaCist/Pent01-4:Responsory7
+
+[Responsory3]
+@TemporaCist/Pent01-4:Responsory8
+
+[Benedictio]
+Doesn’t work without this
+@Psalterium/Benedictions:Nocturn 3:1
+@Psalterium/Benedictions:Nocturn 3:2
+@Psalterium/Benedictions:Nocturn 3:3
+
+[MM Capitulum]
+@Tempora/Pent01-4:Lectio3:1-3:s/27-32/28-29/ s/27 .*28 /v. /s s/$/~/
+@Tempora/Pent01-4:Lectio3:4:s/29 //
+$Deo gratias
+_
+@TemporaCist/Pent01-4:Responsory SextaM
+
+[Ant Laudes]
+@TemporaCist/Pent01-4
+(sed tempore paschali)
+@Psalterium/Psalmi/Psalmi minor:Pasch
+
+[Hymnus Laudes]
+v. Panis iste dulcédinis
+Totus est plenus grátiæ,
+Gestátus alvo Vírginis
+Summæ Deus cleméntiæ.
+_
+Hujus panis Angélici
+Saginémur pinguédine
+Tam suávis viátici
+Delectémur dulcédine.
+_
+O cœléste convívium!
+O beatórum glória!
+O réquies humílium!
+Duc nos ad cæli gáudia.
+_
+Præsta Pater per Fílium,
+Præsta per almum Spíritum,
+Quibus hoc das edúlium,
+Felícem dones éxitum.
+Amen
+
+[Ant 2]
+@TemporaCist/Pent01-5

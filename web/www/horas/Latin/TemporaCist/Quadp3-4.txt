@@ -1,0 +1,20 @@
+@Tempora/Quadp3-4
+
+[Lectio1]
+@Tempora/Quadp3-4::s/At illi .* ædificávit nobis.// s/amícos, dicens.*/amícos./
+
+[Lectio2]
+@Tempora/Quadp3-4::s/Non solum .*// s/$/~/
+@Tempora/Quadp3-4:Lectio3:s/Verúmtamen .*//
+
+[Lectio3]
+@Tempora/Quadp3-4::s/.* (Verúmtamen )/$1/
+
+[Responsory1]
+@TemporaCist/Quadp3-0:Responsory7
+
+[Responsory2]
+@TemporaCist/Quadp3-0:Responsory8
+
+[Responsory3]
+@TemporaCist/Quadp3-0:Responsory9
