@@ -511,6 +511,12 @@ sub get_absolutio_et_benedictiones {
     @ben = split("\n", $mariae{Benedictio});
     setbuild2('Special benedictio');
 
+    ## Cistercian Votive offices
+  } elsif ($winner =~ /00-V[BE]/) {
+    my %w = (columnsel($lang)) ? %winner : %winner2;
+    @ben = split("\n", $w{Benedictio});
+    setbuild2('Special benedictio: Cistercian Votive Offices');
+
     ## 3 lectiones
   } else {
     @ben = split(/\n/, $ben{'Nocturn 3'});    #  will modify for tempora

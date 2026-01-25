@@ -1,0 +1,186 @@
+@Tempora/Pent01-4
+
+[Rule]
+12 lectiones
+Psalmi Dominica
+Antiphonas horas
+Doxology=Nat
+
+[Ant Vespera] 
+Mane nobíscum, Dómine, * quóniam advesperáscit, ut per te, nostrum viáticum, perducámur ad diem claritátis ætérnæ.;;109
+Recédant * legis vétera, dum nova supervéniunt: nam pro manna dato pátribus in desérto, Christus nobis sub spécie panis próprium Corpus dedit.;;110
+Figúram * agni typici términat verus Agnus, dum pro nostræ viæ solátio, sub panis ázymi spécie nobis datur.;;115
+Sibi nos * incórporat panis vitæ, si mente pura, fide firma, et charitáte perfécta, in ejus similitúdinem transformémur.;;127
+
+[Responsory Vespera 1] 
+Responsorium. Discúbuit Jesus, et discípuli ejus cum eo, et ait: Desidério desiderávi hoc Pascha manducáre vobíscum, ántequam pátiar: et accépto pane, grátias agens fregit, et dedit eis, * Dicens: Hoc est Corpus meum.
+V. Fecit Assuérus grande convívium cunctis princípibus, et púeris suis, ut osténderet divítias glóriæ regni sui.
+R. Dicens: Hoc est Corpus meum.
+
+[Responsory Vespera] 
+R.br. Cibávit eos Dóminus *  ex ádipe fruménti.
+R. Cibávit eos Dóminus *  ex ádipe fruménti.
+V. Et de petra, melle saturávit eos.
+R. Ex ádipe fruménti.
+
+[Versum 1] 
+V. Homo quidam fecit cœnam magnam.
+R. Et vocávit multos.
+
+[Ant 1] 
+Magníficat * Dei Patris, Virginísque Matris Unigénitum chorus cunctórum fidélium, quibus in peregrinatióne præsénti, ad suórum córdium consolatiónem, sub spécie panis et vini, dedit pretiósum Córporis et Sánguinis Sacraméntum.
+
+[Invit]
+Veníte ad me, omnes qui laborátis, * Et ego refíciam vos.
+
+[AntMatutinumM] 
+Tóllite * hóstias, et introíte in átria Dómini, adorántes ipsum in templo sancto ejus.;;95
+Miserátor * et miséricors Dóminus replet in bonis desidérium tuum.;;102
+Edúcas panem * de terra, et vinum lætíficet cor hóminis.;;103
+
+[Ant Matutinum 3N]
+Sapiéntia * ædificávit sibi domum, míscuit vinum, et pósuit mensam, allelúia.
+
+[Ant Matutinum]
+@Tempora/Pent01-4::1-6
+@:Responsory TertiaM
+@Tempora/Pent01-4::7-9
+@:AntMatutinumM
+@:Responsory SextaM
+Sapiéntia * ædificávit sibi domum, míscuit vinum, et pósuit mensam, allelúia.;;272;214;273
+@:Responsory NonaM
+
+[Lectio1]
+@Tempora/Pent01-4
+
+[Lectio2]
+@Tempora/Quad6-4:Lectio8:1-4 s/-26/-25/
+
+[Responsory2] 
+R. Edúxit vos Dóminus in manu forti de terra Ægypti:
+* Qui edúxit de petra rivos, et cibávit vos manna in solitúdine.
+V. Non Móyses dedit vobis panem de cælo, sed Pater meus dat vobis panem de cælo verum:
+R. Qui edúxit de petra rivos, et cibávit vos manna in solitúdine.
+
+[Lectio3]
+@Tempora/Quad6-4:Lectio8:s/23-26/26-27/ s/23.*26/26/s
+@Tempora/Pent01-4:Lectio3:2
+
+[Responsory3] 
+R. Melchísedech Rex Salem, Sacérdos Dei Altíssimi, próferens panem et vinum, præfigurávit Córporis Christi
+* Sanctum sacrifícium, immaculátam hóstiam.
+V. Introívit Jesus pro nobis secúndum órdinem Melchísedech, semel offeréndo seípsum:
+R. Sanctum sacrifícium, immaculátam hóstiam.
+
+[Lectio4]
+@Tempora/Pent01-4:Lectio3:s/27-/28-/ s/27.*28/28/s
+
+[Responsory4]
+@Tempora/Pent01-4:Responsory3:1-2
+V. Cumque surrexísset et accepísset cibum, confortátus est in Spíritu sancto:
+@Tempora/Pent01-4:Responsory3:4
+
+[Lectio5]
+@Tempora/Pent01-4:Lectio4:s/Corpus namque.*//
+
+[Responsory5]
+R. Qui mandúcat meam Carnem et bibit meum Sánguinem, in me manet, et ego in illo:
+* Caro enim mea vere est cibus, et Sanguis meus vere est potus.
+V. Comédite amíci, bíbite, et inebriámini, charíssimi:
+R. Caro enim mea vere est cibus, et Sanguis meus vere est potus.
+
+[Lectio6]
+@Tempora/Pent01-4:Lectio4:s/.* (Corpus namque)/$1/s
+
+[Responsory6]
+@Tempora/Pent01-4:Responsory8:1-2:s/vivens Pater/Pater vivens/
+V. In me grátia omnis viæ et veritátis, in me omnis spes vitæ et virtútis.
+@Tempora/Pent01-4:Responsory8:4
+
+[Lectio7]
+@Tempora/Pent01-4:Lectio5:s/Manducátur .*//s
+
+[Responsory7]
+R. Cœnántibus illis, accépit Jesus panem, et benedíxit, ac fregit, dedítque discípulis suis, dicens: Accípite et comédite:
+* Hoc est Corpus meum.
+V. Vidéntes fílii Israël manna in desérto, admirántes dicébant: Quid est hoc?
+R. Hoc est Corpus meum.
+
+[Lectio8]
+@Tempora/Pent01-4:Lectio5:s/.* (Manducátur)/$1/s
+
+[Responsory8]
+@Tempora/Pent01-4:Responsory5:1-2:s/cenáv/cœnáv/
+V. Veníte et comédite panem meum, et bíbite vinum quod míscui vobis.
+@Tempora/Pent01-4:Responsory5:4
+
+[Lectio9]
+@Tempora/Pent01-4:Lectio7:s/Dénique .*//s
+
+[Responsory9]
+@TemporaM/Pent01-4:Responsory8
+
+[Lectio10]
+@Tempora/Pent01-4:Lectio7:s/.* (Dénique)/$1/s s/$/~/
+@Tempora/Pent01-4:Lectio8:s/Ac per .*//s
+
+[Responsory10]
+R. Angelórum esca nutris pópulum tuum, Dómine, et panem de cœlo dans nobis omne delectaméntum in se habéntem: 
+* Substántiam, et dulcédinem tuam quam habes in fílios ostendéndo:
+V. Dómine, qui das vitam mundo, semper da nobis panem verum:
+R. Substántiam, et dulcédinem tuam quam habes in fílios ostendéndo:
+
+[Lectio11]
+@Tempora/Pent01-4:Lectio8:s/.* (Ac per)/$1/s
+
+[Responsory11]
+R. Vidit Regína Saba sapiéntiam Salomónis, domum quam ædificáverat, cibos mensæ ejus, et vestiménta eórum:
+* Et admírans, dixit: Beáti servi tui, qui áudiunt sapiéntiam tuam.
+V. Regína Austri venit a fínibus terræ audíre sapiéntiam Salomónis.
+R. Et admírans, dixit: Beáti servi tui, qui áudiunt sapiéntiam tuam.
+
+[Lectio12]
+@Tempora/Pent01-4:Lectio9:s/Si autem.*//
+
+[Responsory12]
+R. Gaudeámus et exultémus, et demus glóriam Deo, quia venérunt núptiæ Agni, et uxor ejus præparávit se.
+* Beáti qui cœnam nuptiárum ejus vocáti sunt.
+V. Assuérus pro conjunctióne, et núptiis Hester permagníficum convívium præparávit.
+R. Beáti qui cœnam nuptiárum ejus vocáti sunt.
+
+[Ant Laudes] 
+Laudet devóte * Dóminum præsens chorus, qui in suæ passiónis perénnem memóriam, seípsum præbet in cibum pópulo appropinquánti sibi.
+In mundi * primórdiis homo primus mortis escam suis pósteris propinávit, sed secúndus, qui de cœlo venit, mundis corde se tríbuit escam vitæ.
+Gustáte * cuncti fideles, quam dulcis est Dóminus, nobis Corpus suum hora tértia crucifíxum pro mundi salúte in salvíficum cibum tríbuens in Altári: omnes ipsum adorémus, qui venit salváre nos.
+O lux * meridiána, illúminans ómnia, irrádia corda nostra ad tanti Sacraménti mystéria cognoscénda.
+O pastor bone, * qui relíctis nonagínta novem óvibus in desérto, ad gregem ovem pérditam reportásti, pasce nos tui sacri Córporis aliménto.
+
+[Responsory Laudes] 
+R.br. Memóriam fecit mirabílium suórum, * Miserátor Dóminus.
+R. Memóriam fecit mirabílium suórum, * Miserátor Dóminus.
+V. Escam dedit timéntibus se.
+R. Miserátor Dóminus.
+
+[Versum 2] 
+V. Cibávit illos ex ádipe fruménti.
+R. Et de petra, melle saturávit eos.
+
+[Ant 2] 
+Benedíctus sit * Creátor, et Redémptor fidélium, qui memor testaménti sui sancti, quo promíserat datúrum se nobis, visitávit nos óriens ex alto: et in cruce moritúrus pro nobis, relíquit pignus amóris imménsi, donans nobis sui Córporis et Sánguinis pretiosíssimum Sacraméntum.
+
+[Responsory TertiaM] 
+V. Miséricors et miserátor Dóminus.
+R. Escam dedit timéntibus se.
+
+[Responsory SextaM] 
+V. Omnia a te expéctant, Dómine.
+R. Ut des illis escam in témpore.
+
+[Responsory NonaM]
+@Tempora/Pent01-4:Nocturn 3 Versum:s/[,.] Allel[uú][ij]a//ig
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3] 
+O Sacraméntum * pietátis, o signum unitátis, o vínculum charitátis, nos in via refíciens sub aliéna spécie; post preséntis vitæ cursum réfice nos in pátria, jam reveláta fácie sine spécie média, allelúia.

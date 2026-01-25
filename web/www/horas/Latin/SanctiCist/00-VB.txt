@@ -1,0 +1,85 @@
+[Officium]
+Officium Sancti Patris Nostri Bernardi
+
+[Rubrica]
+De S. Bernardo, Abbate, Confessore et Ecclesiæ Doctore fit Officium extra Quadragesimam et mensem Augusti et dies a Vesperis diei xvij. Decembris usque ad Octavam Epiphaniæ, postrema cujusque mensis Feria iij. non impedita Festo xij. vel iij. Lectionum, aut Officium cui Festum iij. Lectionum cedit; alioquin alia præcedente Feria iij. similiter non impedita, sub ritu Festi trium Lectionum.
+
+[Rank]
+;;Simplex;;1.3;;ex SanctiCist/08-20C
+
+[Rule]
+ex SanctiCist/08-20C
+3 lectiones
+Antiphonas horas
+Special Benedictio
+No secunda vespera
+Psalmi Feria
+
+[Responsory Vespera]
+@Commune/C4:Responsory Breve Tertia
+
+[Hymnus Vespera]
+@Commune/C4:HymnusM Vespera:s/Hódie lætus méruit secréta/Hac die felix récipit suprémos/ s/Scándere cæli/Laudis honóres/
+
+[Ant 1]
+@SanctiCist/08-20C:Ant Matutinum:13:s/;;.*//
+
+[Invit]
+@CommuneCist/C5a
+
+[Hymnus Matutinum]
+@Commune/C5:HymnusM Laudes:1-10
+@Commune/C5:HymnusM Laudes:16-20
+@Commune/C5:HymnusM Laudes:36-41
+
+[Nocturn 1 Versum]
+@CommuneCist/C5a
+
+[Lectio1]
+De libro Ecclesiástici
+!Sir 24:1-4
+1 Sapiéntia laudábit ánimam suam, et in Deo honorábitur, et in médio pópuli sui gloriábitur,
+2 et in ecclésiis Altíssimi apériet os suum, et in conspéctu virtútis illíus gloriábitur,
+3 et in médio pópuli sui exaltábitur et in plenitúdine sancta admirábitur,
+4 et in multitúdine electórum habébit laudem et inter benedíctos benedicétur.
+
+[Lectio2]
+Ex litteris Apostolicis Alexandri Papæ III. 
+!De Canonizatione S. Bernardi.
+Beátus vir Bernárdus, singuláris grátiæ prærogatíva suffúltus, non solum in seípso sanctitáte ac religióne præfúlsit, sed étiam in univérsa Ecclésia Dei, fídei et doctrinæ lúmine radiávit. Fructum vero quem in domo Dómini et verbo operátus est et exémplo, nullus fere términus sanctæ Christianitátis ignórat: cum usque ad éxteras quoque et bárbaras natiónes sanctæ religiónis institúta transmíserit, atque Monasteriórum fundatiónem exténderit, et infinítam multitúdinem peccatórum per viæ sæculáris latitúdinem incedéntem, ad spirituális vitæ rectitúdinem revocáverit.
+
+[Lectio3]
+Speciáliter autem sacrosánctam Románam Ecclésiam, ita quondam sub gravis persecutiónis túrbine laborántem, tam vitæ mérito, quam datæ sibi cœlitus sapiéntiæ stúdio sustentávit, ut digne quidem ómnibus ejúsdem Ecclésiæ fíliis in memória habéndus sit, et devotióne perpétua venerándus. In afflictióne vero córporis sui usque ádeo sibi mundum, seque mundo réddidit crucifíxum, ut confidámus Mártyrum quoque eum mérita obtinére sanctórum, quem confessiónis órdine, et parsimónia vitæ, tam longum constat duxísse martyrium.
+
+[Responsory1]
+@SanctiCist/08-20C:Responsory6
+
+[Responsory2]
+@SanctiCist/08-20C:Responsory7
+
+[Responsory3]
+@SanctiCist/08-20C:Responsory8
+
+[Benedictio]
+It doesn’t work without this
+@Psalterium/Benedictions:Nocturn 3:1
+@Psalterium/Benedictions:Nocturn 3:4:s/festum/memóriam/
+@Psalterium/Benedictions:Nocturn 3:3
+
+[MM Capitulum]
+@SanctiCist/03-21C:Capitulum Sexta
+_
+@Commune/C5:Nocturn 3 Versum
+
+[Ant Laudes]
+@SanctiCist/08-20C
+(sed tempore paschali)
+@Psalterium/Psalmi/Psalmi minor:Pasch
+
+[Hymnus Laudes]
+@Commune/C5:HymnusM Laudes:21-25
+@Commune/C5:Hymnus Laudes:26
+@Commune/C5:HymnusM Laudes:27-41
+
+[Ant 2]
+@SanctiCist/08-20C:Ant Matutinum:7:s/;;.*//
