@@ -1,0 +1,21 @@
+
+[Ant Matutinum 3N]
+Nejen chlebem živ je člověk, † ale i každým slovem vycházejícím z Božích úst.;;269;270;271
+
+[Lectio7]
+@Tempora/Quad1-0:Lectio6:s/Po zásluze .*//s
+
+[Lectio8]
+@Tempora/Quad1-0:Lectio6:s/.* Po zásluze /Po zásluze /s
+
+[Responsory8]
+R. Ty jenž u všech znáš, co je skryté, očisti mě od mého hříchu;
+* Dej mi čas, abych znovu a znovu v pokání volal: † Zhřešil jsem, smiluj se nade mnou, Bože.
+V. Odvrať, Hospodine, svou tvář od mých hříchů, a všechny mé nepravosti zahlaď.
+R. Dej mi čas, abych znovu a znovu v pokání volal: † Zhřešil jsem, smiluj se nade mnou, Bože.
+
+[Lectio9]
+@Tempora/Quad1-0:Lectio7:s/Avšak hle, .*//s
+
+[Lectio10]
+@Tempora/Quad1-0:Lectio7:s/.* Avšak hle, /Avšak hle, /s
