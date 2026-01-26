@@ -1,0 +1,27 @@
+@Sancti/02-01
+
+[Rule]
+vide C2;
+3 lectiones
+
+[Ant 1]
+@Commune/C2
+
+[Invit]
+@Commune/C2
+
+[Lectio1]
+@CommuneCist/C2:Lectio1S
+
+[Lectio2]
+@Sancti/02-01:Lectio4:s/Polycárpum, .*/Polycárpum./
+
+[Lectio3]
+@Sancti/02-01:Lectio5:s/pónere: .*/pónere./ s/$/~/
+@Sancti/02-01:Lectio6:s/Relíquiæ .*//
+
+[Responsory3]
+@CommuneCist/C2:Responsory7
+
+[Ant 2]
+@Commune/C2
