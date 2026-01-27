@@ -1,9 +1,25 @@
 [Rank]
-S. Ælredi Abbatis;;iij. Lect. et M.;;1.2;;vide C5
+S. Ælredi Abbatis;;iij. Lect. et M.;;1.2;;vide C5b
 
 [Rule]
-vide C5;mtv
+vide C5b;mtv
+3 lectiones
 
 [Oratio]
 Omnípotens sempitérne Deus, qui Ecclésiæ tuæ fílios sicut non cessas erudíre, ita non désinis adjuváre: da fidélibus tuis intercessióne beáti Ælredi, Abbátis, quem eis ætérnæ salútis minístrum tribuísti; ut et sciéntiam, te miseránte, recta faciéndi, et possibilitátem cápiant exequéndi.
 $Per Dominum
+
+[Lectio1]
+@CommuneCist/C5:Lectio1 in 2 loco
+
+[Lectio2]
+Ælrédus ex primária Anglórum et Scotórum nobilitáte oriúndus, in aula David Scótiae regis educátus, ipsi regi charíssimus éxtitit. Crescénte cum annis pietáte et sapiéntia, sæculo núntium remíttere státuens, ad hábitum Cisterciénsem in Monastério Rievállis Eboracénsis Diœcésis recéptus est. Exínde novítiis instituéndis præféctus, posteáque Abbas de Revésby et mox Rievállis constitútus, se ómnium virtútum exémplar exhíbuit. Cœléstium  rerum contemplatióni sacræque lectióni, quam júgiter lácrymis irrigábat, se totum dedit. Omni scientiárum génere egrégie instrúctus, in scribéndi rátione nostro Doctóri mellífluo (cujus étiam in quocúmque virtútis exercítio diligentíssime sectabátur vestígia) simíllimus éxtitit: quippe qui eámdem cum ipso Spíritus sancti unctiónem habúerit magístram, quemádmodum plura ejus ópera públici juris facta testántur. A dignitátibus Ecclesiásticis prorsus aliénus‚ Episcopátum sibi ultro oblátum constantíssime recusávit.
+
+[Lectio3]
+Pro vero et legítimo pontífice Alexándro tértio advérsus Octaviánum antipápam et conciliábulum Papiénse strénue decertávit. Injúrias patientíssime tolerávit, níhilque ei magis cordi fuit, quam pacem et concórdiam inter omnes conciliáre et fovére. Mónachos centum quadragínta, et fratres quingéntos in Monastério suo sanctíssimis praecéptis et mónitis instítuit. Multos váriis languóribus ánimae vel córporis laborantes confortávit aut sanávit. Sedébat crebro in quadam oratórii sui effóssa fóvea, mortem assídue méditans, et Angelórum visitatióne recreátus Miraculórum dono et spíritu prophétiæ cláruit. Per decénnium ante óbitum ægritúdine vexátus, mira patiéntia gravíssimos dolóres sustínuit. Tandem die mortis prævísa, vir sanctus ad Dóminum migrávit anno salútis humánae millésimo centésimo sexagésimo sexto.
+
+[Responsory2]
+@CommuneCist/C5:Responsory3
+
+[Responsory3]
+@CommuneCist/C5:Responsory4
