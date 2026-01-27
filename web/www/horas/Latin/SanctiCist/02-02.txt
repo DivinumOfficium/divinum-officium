@@ -1,0 +1,158 @@
+@Sancti/02-02
+
+[Rule]
+12 lectiones
+Doxology=Nat
+Festum Domini
+
+[Responsory Vespera 1]
+@:Responsory9
+
+[Responsory Vespera]
+@CommuneCist/C10n
+
+[Versum 1]
+@CommuneCist/C6:Versum 1
+
+[Ant Matutinum]
+@Commune/C11:Ant MatutinumBMV:1-2
+In Prole Mater, * in partu Virgo, gaude et lætáre, Virgo Mater Dómini.;;23
+Sancta Dei Génitrix * Virgo semper María, intercéde pro nobis ad Dóminum Deum nostrum.;;44
+Indúere * vestiméntis glóriæ tuæ, cívitas Sancti, et súscipe Regem Christum.;;45
+@Commune/C11:Ant VesperaBMV:2:s/;;147/;;47/
+Virgo * concépit, et virgo péperit, et post partum virgo permánsit.;;84
+@Commune/C11:Ant MatutinumBMV:4
+@Commune/C11:Ant MatutinumBMV:7:s/;;97/;;95/
+@Commune/C11:Ant MatutinumBMV:5:s/;;95/;;96/
+@Commune/C11:Ant MatutinumBMV:6:s/;;96/;;97/
+@Commune/C10:Ant 1_:s/$/;;98/
+Hódie María Virgo * púerum offert in templo, quem Símeon senex accépit in mánibus, et Anna vídua Christum agnóvit advenísse in terris.;;249;250;251
+
+[Nocturn 3 Versum]
+@Commune/C12:Verse Nona
+
+[Lectio1]
+@Sancti/02-02:Lectio1
+
+[Lectio2]
+@Sancti/02-02:Lectio2:s/-5/-4/ s/ Omne.*//s
+
+[Lectio3]
+@Sancti/02-02:Lectio2:2-7 s/1-/4-/ s/1 .*Omne/4 Omne/s
+
+[Lectio4]
+@Sancti/02-02:Lectio3
+
+[Responsory1]
+@Sancti/02-02::1-2
+V. Indúere vestiméntis glóriæ tuæ, cívitas Sancti:
+@Sancti/02-02::4
+
+[Responsory2]
+@Sancti/02-02:Responsory8
+
+[Responsory3]
+@Sancti/02-02:Responsory2
+
+[Responsory4]
+@Sancti/02-02:Responsory3
+
+[Lectio5]
+@Sancti/02-02:Lectio4:s/Tunc .*//s
+
+[Lectio6]
+@Sancti/02-02:Lectio4:s/.* Tunc /Tunc /s s/$/~/
+@Sancti/02-02:Lectio5:s/Dictum .*//s
+
+[Lectio7]
+@Sancti/02-02:Lectio5:s/.* Dictum /Dictum /s s/$/~/
+@Sancti/02-02:Lectio6:s/Dénique, .*//s
+
+[Lectio8]
+@Sancti/02-02:Lectio6:s/.* Dénique, /Dénique, /s
+
+[Responsory5]
+@Sancti/02-02:Responsory7:1-2
+V. Símeon in manibus infirmitátem accepit, sed Majestátem intus agnóvit, et dixit: 
+@Sancti/02-02:Responsory7:4
+
+[Responsory6]
+R. Respónsum accépit Símeon a Spíritu Sancto, non visúrum se mortem, nisi vidéret Christum Dómini: et benedíxit Deum, et dixit: 
+* Nunc dimíttis servum tuum in pace, quia vidérunt óculi mei salutáre tuum, Dómine.
+@SanctiM/02-02:Responsory8:3
+R. Nunc dimíttis servum tuum in pace, quia vidérunt óculi mei salutáre tuum, Dómine.
+
+[Responsory7]
+@Sancti/02-02:Responsory4
+
+[Responsory8]
+R. Beáta es María, quæ Dóminum portásti Creatórem mundi,
+* Genuísti, qui te fecit, et in ætérnum pérmanes Virgo.
+@CommuneM/C11:Responsory12:3
+R. Genuísti, qui te fecit, et in ætérnum pérmanes Virgo.
+
+[Lectio9]
+@Sancti/02-02:Lectio7:s/Virgo .*//s
+
+[Lectio10]
+@Sancti/02-02:Lectio7:s/.* Virgo /Virgo /s s/$/~/
+@Sancti/02-02:Lectio8:s/Et ipse .*//s
+
+[Lectio11]
+@Sancti/02-02:Lectio8:s/.* Et ipse /Et ipse /s s/$/~/
+@Sancti/02-02:Lectio9:s/Vides .*//s
+
+[Lectio12]
+@Sancti/02-02:Lectio9:s/.* Vides /Vides /s
+
+[Responsory9]
+R. Vidéte miráculum Matris Dómini, concépit virgo, virílis ignára consórtii, stat oneráta nóbili ónere María, et Matrem se læta cognóscit. 
+* Quæ se nescit uxórem.
+V. Virgo concépit, et post partum virgo permánsit.
+R. Quæ se nescit uxórem.
+
+[Responsory10]
+R. Hódie María Virgo púerum offert in templo, 
+* Quem Símeon justus accépit in bráchia, et Anna vídua Christum agnóvit advenísse in terris.
+V. Magnum hæreditátis mystérium! Christus pro nobis homo factus, ingréditur in templum:
+R. Quem Símeon justus accépit in bráchia, et Anna vídua Christum agnóvit advenísse in terris.
+
+[Responsory11]
+R. Cum indúcerent púerum Jesum paréntes ejus, accépit eum Símeon in ulnas suas, et benedíxit Deum, et dixit:
+* Nunc dimíttis, Dómine, servum tuum in pace.
+V. Quia vidérunt óculi mei salutáre tuum, quod parásti ante fáciem ómnium populórum.
+R. Nunc dimíttis, Dómine, servum tuum in pace.
+
+[Responsory12]
+@SanctiCist/03-25:Responsory12
+
+[Ant Laudes]
+@:Ant Vespera 3:s/;;.*//g
+
+[Responsory Laudes]
+@CommuneCist/C11
+
+[Versum 2]
+@:Versum 1
+
+[Responsory TertiaM]
+@Commune/C6:Versum 1
+
+[Responsory SextaM]
+@Commune/C6:Nocturn 2 Versum
+
+[Responsory NonaM]
+@Commune/C12:Verse Nona
+
+[Ant Vespera 3]
+Símeon justus * et timorátus exspectábat redemptiónem Israël, et Spíritus Sanctus erat in eo.;;109
+Senex * Púerum portábat, puer autem senem regébat: quem virgo péperit, et post partum virgo permánsit: ipsum quem génuit, adorávit.;;112
+Respónsum accépit Símeon * a Spíritu Sancto, non visúrum se mortem, nisi vidéret Dóminum.;;121
+Accípiens Símeon * púerum in mánibus, grátias agens benedíxit Dóminum.;;126
+Obtulérunt * pro eo Dómino par túrturum aut duos pullos columbárum.
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+@Sancti/02-02::s/ in ætérnum/, et dixit: Nunc dimíttis, Dómine, servum tuum in pace/

@@ -1,0 +1,108 @@
+@Tempora/Quad1-0
+
+[Rule]
+12 lectiones
+Psalmi Feria
+
+[Responsory Vespera 1] 
+@:Responsory2
+
+[Ant Matutinum 3N]
+Non in solo pane * vivit homo, sed in omni verbo quod procédit de ore Dei.;;269;270;271
+
+[Lectio1]
+@Tempora/Quad1-0::1-5:s/-10/-3/
+
+[Lectio2]
+@Tempora/Quad1-0:Lectio1:2-12:s/1-/4-/ s/1 .*4/4/s
+
+[Lectio3]
+@Tempora/Quad1-0:Lectio2:s/vos enim .*//
+
+[Lectio4]
+@Tempora/Quad1-0:Lectio2:s/11-16/16-3:1/ s/11 .* vos enim /16 Vos enim /s
+@Tempora/Epi2-3:Lectio1:3
+
+[Responsory1]
+R. Ecce nunc tempus acceptábile, ecce nunc dies salútis: commendémus nosmetípsos in multa patiéntia, 
+* In jejúniis multis, per arma justítiæ virtútis Dei.
+V. In ómnibus exhibeámus nosmetípsos sicut Dei minístros, in multa patiéntia,
+R. In jejúniis multis, per arma justítiæ virtútis Dei.
+
+[Responsory2]
+@Tempora/Quad1-0:Responsory6:1-2
+V. Per arma justítiæ virtútis Dei commendémus nosmetípsos in multa patiéntia. 
+@Tempora/Quad1-0:Responsory6:4
+
+[Responsory3]
+@Tempora/Quad1-0:Responsory4:1-2
+V. Peccávimus cum pátribus nostris: injúste égimus, iniquitátem fécimus.
+@Tempora/Quad1-0:Responsory4:4
+
+[Responsory4]
+@Tempora/Quad1-0:Responsory2:1-2
+V. Ecce nunc tempus acceptábile, ecce nunc dies salútis: némini dantes ullam offensiónem,
+@Tempora/Quad1-0:Responsory2:4
+
+[Lectio5]
+@Tempora/Quad1-0:Lectio4
+
+[Lectio6]
+@Tempora/Quad1-0:Lectio5
+
+[Lectio7]
+@Tempora/Quad1-0:Lectio6:s/Digna .*//s
+
+[Lectio8]
+@Tempora/Quad1-0:Lectio6:s/.* Digna /Digna /s
+
+[Responsory5]
+@Tempora/Quad1-0:Responsory3
+
+[Responsory6]
+@Tempora/Quad1-3:Responsory3:1-2
+V. Honóra Dóminum de tua substántia et de primítiis ómnium frugum tuárum da paupéribus.
+@Tempora/Quad1-3:Responsory3:4
+
+[Responsory7]
+@Tempora/Quad1-4:Responsory1:1-2
+V. Et Petrum lacrymántem suscepísti, miséricors Dómine,
+@Tempora/Quad1-4:Responsory1:4
+
+[Responsory8]
+R. Scápulis suis obumbrábit tibi Dóminus, et sub pennis ejus sperábis:
+* Scuto circúmdabit te véritas ejus.
+@Tempora/Quad1-0:Responsory9:1:s/R\. /V. /
+R. Scuto circúmdabit te véritas ejus.
+
+[Lectio9]
+@Tempora/Quad1-0:Lectio7:s/Sed ecce .*//s
+
+[Lectio10]
+@Tempora/Quad1-0:Lectio7:s/.* Sed ecce /Sed ecce /s
+
+[Lectio11]
+@Tempora/Quad1-0:Lectio8
+
+[Lectio12]
+@Tempora/Quad1-0:Lectio9
+
+[Responsory9]
+@Tempora/Quad1-0
+
+[Responsory10]
+R. Scíndite corda vestra, et non vestiménta vestra,
+* Et convertímini ad Dóminum Deum vestrum, quia benígnus et miséricors est.
+V. Revertímini unusquísque a via sua mala, et a péssimis cogitatiónibus vestris:
+R. Et convertímini ad Dóminum Deum vestrum, quia benígnus et miséricors est.
+
+[Responsory11]
+R. Dómine Deus propítius esto pópulo tuo,
+* Et convérte tribulatiónem nostram in gáudium.
+@Tempora/Quad1-0:Responsory4:3
+R. Et convérte tribulatiónem nostram in gáudium.
+
+[Responsory12]
+@Tempora/Quad1-0:Responsory5:1-2
+@Tempora/Quad1-0:Responsory7:1:s/R\. /V. /
+@Tempora/Quad1-0:Responsory5:4
