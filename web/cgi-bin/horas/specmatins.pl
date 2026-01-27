@@ -108,9 +108,8 @@ sub invitatorium {
     {
       # old Invitatorium4
       s/^(v\.|\{\([cf][1-4]b?\))\s*.* \+ (.)/\1 \u\2/m;
-    }
-     elsif ($rule =~ /Invit5/i)
-    {
+    } elsif ($rule =~ /Invit5/i) {
+
       # Invitatorium5 for Cist. Pre-Lent,
       # removing the [Invit] verse
       s/^(v\.|\{\([cf][1-4]b?\))\s*.* \= (.)/\1 \u\2/m;
