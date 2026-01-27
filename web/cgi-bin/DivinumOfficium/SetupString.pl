@@ -222,6 +222,7 @@ sub get_tempus_id {
 sub get_dayname_for_condition {
   our ($day, $month, $year, $winner, $version, $commemoratio);
   our $hora;
+  our $rule;
   my $vesp_or_comp = ($hora =~ /Vespera/i) || ($hora =~ /Completorium/i);
   return 'Epiphaniæ' if ($month == 1 && ($day == 6 || ($day == 5 && $vesp_or_comp)));
   return 'Baptismatis Domini' if ($month == 1 && ($day == 13 || ($day == 12 && $vesp_or_comp)));
@@ -246,6 +247,8 @@ sub get_dayname_for_condition {
   return 'post Dominicam infra Octavam Epiphaniæ' if $dayname[0] =~ /Epi1-[1-6]/;
   return 'post Epi1-0' if $dayname[0] =~ /Epi1-[1-6]/;
   return 'Bernardi' if $winner =~ /08-20|00-VB/;
+  return '3 lectionum' if $winner{Rule} =~ /3 lectio/i;
+  return '3 lect' if $winner{Rule} =~ /3 lectio/i;
   return '';
 }
 

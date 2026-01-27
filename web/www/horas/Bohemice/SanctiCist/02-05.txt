@@ -1,0 +1,49 @@
+[Ant Vespera]
+@:Ant Vespera 3
+
+[Ant 1]
+Svatá mysl, * nadšená chvála a čest patří Bohu, a vlasti osvobození.
+
+[Oratio]
+@Commune/C6::s/N\./Agáty/
+
+[AntMatutinumM]
+Když jsi urozená, * proč jednáš jako služebnice? Neboť jsem služebnice Kristova, proto jednám jako služebnice.;;2
+Agáta * vešla do žaláře, a dobrořečila Pána Ježíše Krista.;;86
+Má mysl * je upevněna, a v Kristu má základy.;;95
+
+[Ant Matutinum 3N]
+Blažená Agáta, * když vešla do žaláře, rozepjala ruce a modlila se k Bohu a řekla: Hospodine, jenž jsi mi dal zvítězit nad mučením katanů, přikaž, abych došla tvého milosrdenství.
+
+[Responsory1]
+@Sancti/02-05:Responsory2:1-2:s/Quasi/Et quasi/
+@SanctiM/02-05:AntMatutinumM:3:s/^/V. / s/\* // s/;;.*// s/Má/Její/
+@Sancti/02-05:Responsory2:4:s/Quasi/Et quasi/
+
+[Responsory4]
+@Sancti/02-05:Responsory6:1-2
+V. Pomoz mi, Hospodine, můj Bože, neboť pro věrnost v čistotě
+@Sancti/02-05:Responsory6:4
+
+[Lectio5]
+@Sancti/02-05:Lectio4:s/ Když ani.*//s
+
+[Lectio6]
+@Sancti/02-05:Lectio4:s/.* (Když ani)/$1/s
+
+[Lectio7]
+@Sancti/02-05:Lectio5
+
+[Lectio8]
+@Sancti/02-05:Lectio6
+
+[Responsory8]
+@Sancti/02-05:Responsory5:1-2
+@Sancti/02-05:Responsory6:1:s/R\. /V\. / s/a zřel jsi //
+@Sancti/02-05:Responsory5:4
+
+[Responsory9]
+R. Já však s pomocí Hospodinovou, vytrvám v jeho vyznání,
+* Neboť on mě uzdravil a utěšil mě.
+V. Díky tobě vzdávám, Pane Ježíši Kriste, neboť jsi ke mně poslal svého Apoštola;
+R. Který mě uzdravil a utěšil mě.

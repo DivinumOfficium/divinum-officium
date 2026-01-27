@@ -1,0 +1,99 @@
+@Sancti/02-05
+
+[Rule]
+ex C6
+12 lectiones
+in 1 Nocturno Lectiones ex Commune in 2 loco;
+in 3 Nocturno Lectiones ex Commune in 3 loco;
+
+[Ant Vespera]
+@:Ant Vespera 3
+
+[Ant 1]
+Mentem sanctam, * spontáneum honórem Deo, et pátriæ liberatiónem.
+
+[Oratio]
+@Commune/C6::s/N\./Agathæ/
+
+[AntMatutinumM]
+Et si ingénua es, * cur te osténdis servílem persónam? Quia ancílla Christi sum, ídeo me osténdo servílem persónam;;2
+Agatha * ingréssa cárcerem, benedicébat Dóminum Jesum Christum.;;86
+Mens mea * solidáta est, et a Christo fundáta.;;95
+
+[Ant Matutinum 3N]
+Beata Agatha * ingréssa cárcerem, expándit manus suas ad Deum et dixit: Dómine qui me fecísti víncere torménta carnifícium, jube me ad tuam misericórdiam perveníre.
+
+[Ant Matutinum]
+@Sancti/02-05::1-3:s/;;1/;;8/ s/;;2/;;18/ s/;;3/;;23/
+@CommuneCist/C6::4-5
+@SanctiM/02-05:AntMatutinumM:2:s/;;86/;;47/
+@Sancti/02-05::4-9 s/;;4/;;84/ s/;;5/;;86/ s/;;8$/;;95/ s/;;10/;;96/ s/;;14/;;97/ s/;;15/;;98/
+;;249;250;251
+
+[Responsory1]
+@Sancti/02-05:Responsory2:1-2:s/Quasi/Et quasi/
+@SanctiM/02-05:AntMatutinumM:3:s/^/V. / s/\* // s/;;.*// s/mea/ejus/
+@Sancti/02-05:Responsory2:4:s/Quasi/Et quasi/
+
+[Responsory2]
+@Sancti/02-05:Responsory1:s/enim //
+
+[Responsory4]
+@Sancti/02-05:Responsory6:1-2
+V. Adjuva me, Dómine Deus meus, quia propter fidem castitátis
+@Sancti/02-05:Responsory6:4
+
+[Lectio5]
+@Sancti/02-05:Lectio4:s/ Quæ.*//s
+
+[Lectio6]
+@Sancti/02-05:Lectio4:s/.*tradit. //s
+
+[Lectio7]
+@Sancti/02-05:Lectio5
+
+[Lectio8]
+@Sancti/02-05:Lectio6
+
+[Responsory5]
+@CommuneCist/C6:Responsory6
+
+[Responsory6]
+@CommuneCist/C6:Responsory10
+
+[Responsory7]
+@CommuneCist/C6
+
+[Responsory8]
+@Sancti/02-05:Responsory5:1-2
+@Sancti/02-05:Responsory6:1:s/R\. /V\. / s/et spectásti //
+@Sancti/02-05:Responsory5:4
+
+[Responsory9]
+R. Ego autem adjúta a Dómino, perseverábo in confessióne ejus,
+* Qui me salvam fecit, et consolátus est me.
+V. Grátias tibi ago, Dómine Jesu Christe, qui misísti ad me Apóstolum tuum:
+R. Qui me salvam fecit, et consolátus est me.
+
+[Responsory10]
+@SanctiM/02-05:Responsory8:s/† //
+
+[Responsory11]
+@Sancti/02-05:Responsory7:1-2
+@SanctiM/02-05:AntMatutinumM:2:s/^/V. / s/\* // s/;;.*//
+@Sancti/02-05:Responsory7:4
+
+[Responsory12]
+@SanctiM/02-05:Responsory4:s/† //
+
+[MM Capitulum]
+@CommuneM/C6a
+
+[Ant Vespera 3]
+@Sancti/02-05:Ant Vespera:s/$/_/gm s/_/;;109/ s/_/;;112/ s/_/;;121/ s/_/;;126/
+
+[Evangelium]
+@Commune/C6-1:Evangelium in 2 loco
+
+[Ant 3]
+@:Ant 2

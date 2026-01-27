@@ -2,11 +2,30 @@
 B. Humbelinæ, Viduæ
 
 [Rank]
-;;iij. Lect. et M.;;1.2;;vide C7a
+;;Simplex;;1.2;;vide C7a
+
+[Rule]
+vide C7a;
+3 lectiones
 
 [Name]
-Humbelinæ
+Humbelínæ
 
 [Oratio]
 Deus, in quem sperat omnis ánima, quæ longe adhuc a te pósita, se vere víduam sentit, ac desolátam: adésto nobis, quæsumus, intercedénte beáta Humbelína; ut sincéra humilitáte tibi subjécti, sic transeámus per bona temporália, ut non amittámus ætérna.
 $Per Dominum
+
+[Lectio1]
+@CommuneCist/C7
+
+[Lectio2]
+Humbelína sancti Patris Bernárdi soror germána, a primis annis in pietáte sédulo a religiosíssima matre educáta, sanctis illíus votis mínime respóndens, humánum fastum sæcularésque sectabátur delícias. Cum autem aliquándo, Bernárdum ceterósque fratres suos viséndi grátia Claramvállem supérbo comitátu, et muliébri mundo exornáta petiísset, ob negátum primo sibi collóquium corde compúncta, fratrum inde mónitis ac præcípue cœlésti Bernárdi eloquéntia in áliam mutáta, religiosiórem vitam agréssa est; reversáque ad própria per biénnium simul cum cónjuge piam vitam instítuit. Quo expléto, de ejúsdem cónjugis consénsu, sæculo valedicens‚ in vicínum monastérium Benedictinárum, Juléyum dictum, secéssit ubi sacro assúmpto religiónis hábitu, Deóque per solémnia vota consecráta, céteris sanctimoniálibus tamquam Christiánæ perfectiónis exémplar prælúxit.
+
+[Lectio3]
+Dies noctésque in jugi Psalmórum lectióne et assídua Christi Dómini cruciátuum mortísque meditatióne insumébat. Aspero cincta semper cilício humi paulísper noctu decumbébat‚ atque melióra in dies æmuláta charísmata Angélicam per ómnia vitam in carne ducébat. Tandem cum Juléyi ascetérium aliquámdiu sanctíssime rexísset, in morbum incídit, quo ingravescénte, accersíto sancto Patre Bernárdo, aliísque frátribus, Ecclésiæ Sacraméntis réfici vóluit, ac imminénte jam sui éxitus hora, serénis adhuc óculis, hilaríque vultu circumstántes síngulos respíciens síngulos salutans: Lætáta sum, inquit, in his, quæ dicta sunt mihi: In domum Dómini íbimus sicque pie et sancte obdormívit in Dómino.
+
+[Responsory2]
+@CommuneCist/C7:Responsory5
+
+[Responsory3]
+@CommuneCist/C7:Responsory8

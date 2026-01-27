@@ -2,7 +2,8 @@
 B. Raymundi, Abbatis;;iij. Lect. et M.;;1.2;;vide C5b
 
 [Rule]
-vide C5;mtv
+vide C5b;mtv
+3 lectiones
 
 [Oratio]
 Deus, qui beáto Raymúndo, Abbáti, præliári prælia tua, et fídei inimícos superáre dedísti: concéde, ut ejus nos intercessióne muníti, ab hóstibus mentis et córporis liberémur.
@@ -10,8 +11,23 @@ $Per Dominum
 
 [Commemoratio 1]
 !Commemoratio S. Dorotheæ, Virginis et Martyris
-@CommuneCist/C6ca:Oratio:s/N\./Doróthea/
+@CommuneCist/C6ca:Oratio1:s/N\./Doróthea/
 
 [Commemoratio 2]
 !Commemoratio S. Dorotheæ, Virginis et Martyris
-@CommuneCist/C6:Oratio:s/N\./Doróthea/
+@Commune/C6-1:Oratio:s/N\./Doróthea/
+
+[Lectio1]
+@CommuneCist/C5b
+
+[Lectio2]
+Raymúndus, Canonicus Ecclésiæ Turiasonénsis in regno Arragóniæ, supérno Spíritu afflánte, in solitúdinem se recépit. Deínde cum Cisterciénsium Monachórum fama undequáque diffunderétur, illud amplexátus est institútum; ac longe latéque evulgáta ejus vitæ sanctimónia, Abbas monastérii beátæ Maríæ de Fitéro constitútus est. Postquam verbo et exémplo ad omne opus pietátis suos induxísset, copiósum exércitum fidélium collégit, castrum de Turúngen et Calatrávam a Mauris tuéndam de manu Sánctii Castéllæ regis suscépit. Novo et usque ad ea témpora inaudíto exémplo, Raymúndus monachátui milítiam conjúnxit et Ordinem de Calatráva nuncupátum, in tota Europa celebérrimum, ac a plúribus summis Pontifícibus approbátum, instítuit sub régula, légibus, et visitatióne Cisterciénsium.
+
+[Lectio3]
+Hujus novi Ordinis mílites, quámdiu a prælio abstinébant, ad vitam monásticam disciplína ita próxime accedébant, ut hábita deliberatióne Capítuli Generális Cisterciénsis, commúni patrum consénsu in fílios monastérii Morimúndi récipi merúerint. Tandem vir sanctus utriúsque milítiæ cæléstis et terrénæ suprémus ductor, post multas victórias de Saracénis partas, post hómines aptátos utriúsque armis, qui leónes vicíssim et agnos, illud in prælio, hoc in claustris, imitaréntur, plenus diérum et virtútum, anno salútis millésimo centésimo sexagésimo tértio, et sexto regíminis Ordinis a se inchoáti, ánimam emísit, multis post mortem miráculis illústris.
+
+[Responsory2]
+@CommuneCist/C5:Responsory3
+
+[Responsory3]
+@CommuneCist/C5:Responsory4
