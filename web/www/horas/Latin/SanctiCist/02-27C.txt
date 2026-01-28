@@ -2,8 +2,30 @@
 S. Mechthildis, Virginis (1965)
 
 [Rank]
-;;Commemoratio;;1;;vide C6
+;;Simplex;;1.2;;vide C6
+
+[Rule]
+vide C6
+3 lectiones
+
+[Name]
+Mechtíldis
 
 [Oratio]
 Deus, qui in devotíssimo beátæ Mechtíldis, Vírginis tuæ, corde jucúndam tibi mansiónem constituísti: * da nobis, quǽsumus, ejúsdem Vírginis intercessióne, dum vívimus, a terrénis semper ad cœléstia spíritu sublevári § et cum ea in resurrectióne justórum páriter triumpháre. *
 $Per Dominum
+
+[Lectio1]
+@CommuneCist/C6
+
+[Lectio2]
+Mechtíldis in Saxónia nobilíssimo génere orta est. Septénnis ad vicínum Sanctimoniálium Monastérium de Helfta, Ordinis nostri, confúgiens, totam se Christo vírginum Sponso consecrávit: susceptóque religióso hábitu, brevi in virtútibus ac Dei amóre ita excrévit, ut étiam familiári Dei collóquio frui mererétur. Ad obediéntiam, relíctis statim iis quibus vacábat, juxta sanctæ Régulæ praescríptum promptíssima erat. Nullum témporis moméntum inutíliter elábi sinébat; sed semper vel orábat, vel meditabátur, vel legébat, aut docébat aut mánibus operabátur. Sublímis fuit ejus contemplátio, in qua tanta divínæ grátiæ abundántia perfundebátur, ut longo témporis spátio absque sénsibus in fruitióne Dei demorarétur: multis ínterim revelatiónibus ac visis cœléstibus a Deo illustráta. Tanta étiam suavitáte afficiebátur, dum sanctum Evangélium legébat, vel audiébat, ut præ dulcédinis affluéntia pene exánimis sæpius redderétur.
+
+[Lectio3]
+Erga dulcíssimum Cor Jesu Christi mira fuit ejus devótio. Cum ad mortem ægrotáret, et beáta virgo Gertrúdis quæreret a Dómino, quidnam cum ea operarétur: Ego, inquit, cum ea in thálamo suávis ampléxus requiésco: quia licet divérsis continuísque dolóribus torqueátur, de mea tamen pietáte confídens ómnia ad ætérnam salútem sibi profutúra credit, et in contínuis gratiárum actiónibus persevérans, patérnæ providéntiæ meæ totam se fiduciáliter commíttit. Dénique hora mortis suæ instánte divíno lúmine a Christo Jesu mirabíliter recreáta, et ad cœléstes núptias invitáta réddidit décimo tértio Kaléndas Decémbris.
+
+[Responsory2]
+@CommuneCist/C6:Responsory5
+
+[Responsory3]
+@CommuneCist/C6a:Responsory6
