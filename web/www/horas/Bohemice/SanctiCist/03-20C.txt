@@ -36,39 +36,65 @@ Amen.
 [Hymnus Matutinum]
 @:Hymnus Vespera
 
+[Lectio5]
+@Sancti/08-16:Lectio4:s/Jméno Jáchym .*//
+
+[Lectio6]
+@Sancti/08-16:Lectio4:s/.* (Jméno Jáchym )/$1/s
+
+[Lectio7]
+@Sancti/08-16:Lectio5:1-2
+@Sancti/08-16:Lectio6:s/Ó přesvatá .*//
+
+[Lectio8]
+@Sancti/08-16:Lectio6:s/.* (Ó přesvatá )/$1/s
+
+[Lectio9]
+@Sancti/08-16:Lectio7:s/Ve skutečnosti .*//
+
+[Lectio10]
+@Sancti/08-16:Lectio7:s/.* (Ve skutečnosti )/$1/s s/$/~/
+@Sancti/08-16:Lectio8:s/Opět z.*//
+
+[Lectio11]
+@Sancti/08-16:Lectio8:s/.* (Opět z)/$1/
+
+[Lectio12]
+@Sancti/08-16:Lectio9:s/Avšak .*//
+
 [Hymnus Laudes]
-Jesu patérna cláritas,
-Et certa spes fidélium,
-Avo tuo persólvimus
-Laudes pias cum cánticis.
+Jezu, otcovská jasnosti,
+Jistá naděje věřících,
+Dědu tvému my vzdáváme
+Zbožné chvály a zpívání.
 _
-Hunc inter omnes éligis
-Quorum probáta sánctitas,
-Davídis ut de sémine
-Matrem tuam prodúceret.
+Jej z mnohých sám sis vyvolil,
+Jež osvědčili svatost svou,
+By z Davidova potomstva
+Tvou Matku na svět přivedli.
 _
-De stirpe natus Isai,
-Proles fidélis Abrahæ,
-Virtúte rara spléndidus
-Reges ducésque prǽterit.
+Narozen z rodu Jišaje,
+Věrný to syn Abraháma,
+Vzácnou ctností on zaskvěl se,
+Krále, knížata předešel.
 _
-Annæ marítus óptimus,
-Dei probátur núntio:
-Quod prole nulla gáudeat, 
-Væ tædiósum sústinet.
+Anně byl manžel předobrý,
+Vyzkoušen pak Božím poslem;
+A z dětí žádnou radost mít, 
+I tuto bědu snášel rád.
 _
-Probrum novátur gáudio,
-Quando María náscitur:
-Quandóve crescens próficit,
-Deóve trina sístitur.
+Hanba se v radost mění hned,
+Když Maria se narodí;
+Nebo když roste, prospívá,
+A Bohu když se zasvětí.
 _
-Reple rogántes gáudio,
-Qui gáudium mundo creas,
-Fac Jóachim, cœléstibus
-Tecum fruámur gáudiis.
+Naplň prosící radostí,
+Když světa radost ty vytváříš,
+Dej Jáchyme, ať v nebeských
+S tebou se těšíme plesech.
 _
-Qui de María násceris,
-Jesu tibi sit glória,
-Cum Patre et sancto Spíritu,
-In sempitérna sécula.
+Jenž z Marie ses narodil,
+Ježíši, tobě sláva buď,
+S Otcem i svatým Duchem,
+Ty navždy vládneš věkům všem.
 Amen.
