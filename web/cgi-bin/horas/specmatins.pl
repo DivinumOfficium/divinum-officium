@@ -182,9 +182,9 @@ sub nocturn {
   our ($version);
 
   if ($num) {
-    push(@s, '!' . translate('Nocturn', $lang) . ' ' . ('I' x $num) . );
+    push(@s, '!' . translate('Nocturn', $lang) . ' ' . ('I' x $num));
   } else {
-    push(@s, '!' . translate('Ad Nocturnum', $lang) . );
+    push(@s, '!' . translate('Ad Nocturnum', $lang));
   }
 
   my @psalmi_n = map { $psalmi->[$select[$_]] } 0 .. @select - 3;
