@@ -181,7 +181,11 @@ sub nocturn {
   my ($num, $lang, $psalmi, @select) = @_;
   our ($version);
 
-  push(@s, '!' . translate('Nocturn', $lang) . ' ' . ('I' x $num) . '.');
+  if ($num) {
+    push(@s, '!' . translate('Nocturn', $lang) . ' ' . ('I' x $num) . '.');
+  } else {
+    push(@s, '!' . translate('Ad Nocturnum', $lang) . '.');
+  }
 
   my @psalmi_n = map { $psalmi->[$select[$_]] } 0 .. @select - 3;
   my $duplexf = $version =~ /196/ || ($duplex > 2 && $rule !~ /Matins simplex/ && $winner !~ /C12/);
@@ -417,7 +421,7 @@ sub psalmi_matutinum {
 
   push(@psalm_indices, split("\n", $vers));
 
-  nocturn(1, $lang, \@psalmi, @psalm_indices);
+  nocturn(0, $lang, \@psalmi, @psalm_indices);
   lectiones(0, $lang);
   return;
 }
