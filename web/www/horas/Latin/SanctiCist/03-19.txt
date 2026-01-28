@@ -1,0 +1,223 @@
+@Sancti/03-19
+
+[Rule]
+12 lectiones
+Psalmi Dominica
+
+[Ant Vespera]
+@Sancti/03-19::s/112.*/112/s
+(sed tempore paschali)
+Allelúia, * allelúia, allelúia, allelúia, allelúia, allelúia, allelúia, allelúia, allelúia, allelúia.
+
+[Responsory Vespera 1] 
+R. Fecit me Dóminus quasi patrem regis, et Dóminum univérsæ domus ejus: nolíte pavére: 
+* Pro salúte enim vestra misit me Deus ante vos in Ægyptum. Allelúia.
+V. Veníte ad me, et ego dabo vobis ómnia bona Ægypti, et comedétis medúllam terræ.
+R. Pro salúte enim vestra misit me Deus ante vos in Ægyptum. Allelúia.
+
+[Responsory Vespera]
+@SanctiM/03-19
+
+[Hymnus Vespera]
+v. Hunc diem totum célebrem per orbem 
+Vírginis Sponsi venerémur omnes. 
+Turba coelórum simul et beáta 
+Cóncinat hymnos. 
+_
+Cónditor mundi pius, et Redémptor, 
+Cónjugem Matri státuit pudícum: 
+Ejus ut custos foret atque testis 
+Virginitátis. 
+_
+Tempus ut plenum fúerat salútis, 
+In virum Joseph datus est Maríæ 
+Ex tribu Juda véniens ab alto 
+Sánguine Regum. 
+_
+Ergo jam sacro properánte partu, 
+Tóties quondam Pátribus vocátum,
+Primus Auctórem méruit salútis 
+Cérnere felix. 
+_
+Quemque pastóres vígiles adórant, 
+Obsitum pannis stábulo repónit, 
+Læta dum terris cecinére pacem
+Agmina coeli. 
+_
+Vidit et sidus rádians ab ortu, 
+Cujus ad nutum petiére cunas
+Príncipis nati nóviter, feréntes
+Múnera Reges. 
+_
+Laus Patri summo, Genitóque semper, 
+Flámini sacro, simul et potestas: 
+Qui Deus simplex ditióne solus
+Cuncta gubérnat. 
+Amen.
+
+[Invit]
+@Sancti/03-19
+(sed tempore paschali)
+Allelúia, allelúia, allelúia, * Allelúia, allelúia, allelúia.
+
+[Hymnus Matutinum]
+v. O nimis felix Pater et nutrítor 
+Regis ætérni méritus vocári! 
+Nam tibi gestans útero tonántem, 
+Júngitur Uxor. 
+_
+Tu minas sævi fúgiens Heródis, 
+Quæris Egyptum mónitu supérno: 
+Prorsus Infántem révocas ab atra
+Cæde Tyránni. 
+_
+Inter ignótos hábitas colónos, 
+Perque septénos cooperátus annos, 
+Matris, ac Nati petis ipse victum, 
+Arte fabríli. 
+_
+Tristis amíssum Púerum requíris, 
+Intra mirántes prócerum catérvas: 
+Cómperis tandem, pátrios redúcis 
+Rursus in agros.
+_
+Astra qui cœlos regit, atque terras, 
+Cujus ad jussum súperi veréntur, 
+Inferi cujus tremuére numen, 
+Se tibi subdit. 
+_
+Laus Patri summo, Genitóque semper, 
+Flámini sacro simul et potéstas: 
+Qui Deus simplex ditióne solus 
+Cuncta gubérnat. 
+Amen. 
+
+[Ant Matutinum 3N] (nisi tempore paschali)
+@SanctiM/03-19
+
+[Ant Matutinum]
+@Sancti/03-19::1-3 s/3/4/
+@Sancti/03-19::4-6 s/8/10/ s/5/8/ s/4/5/
+@Sancti/03-19::7-8
+@SanctiM/03-19:AntMatutinumM:1
+@Sancti/03-19::9 s/23/63/
+@SanctiM/03-19:AntMatutinumM:2-3 s/96/64/ s/97/91/
+;;256;257;258
+
+[Ant Matutinum] (tempore paschali)
+@CommuneCist/C2
+
+[Lectio1]
+@Sancti/03-19:Lectio1:s/-5/-3/ s/4.*//s
+
+[Lectio2]
+@Sancti/03-19:Lectio1:s/1-/4-/ s/1.*4/4/s
+
+[Lectio3]
+@Sancti/03-19:Lectio2
+
+[Lectio4]
+@Sancti/03-19:Lectio3
+
+[Responsory4]
+@SanctiM/03-19
+
+[Lectio5]
+@Sancti/03-19:Lectio4
+
+[Lectio6]
+@Sancti/03-19:Lectio5:s/Illi .*//s
+
+[Lectio7]
+@Sancti/03-19:Lectio5:s/.* Illi /Illi /s s/$/~/
+@Sancti/03-19:Lectio6:s/Non est .*//s
+
+[Lectio8]
+@Sancti/03-19:Lectio6:s/.* Non est /Non est /s
+
+[Responsory5]
+@SanctiM/03-19
+
+[Responsory6]
+@Sancti/03-19:Responsory4
+
+[Responsory7]
+@Sancti/03-19:Responsory5
+
+[Responsory8]
+@Sancti/03-19:Responsory6
+
+[Lectio9]
+Léctio sancti Evangélii secúndum Matthæum. 
+!Lectio ix. Cap. 1.
+Cum esset desponsáta Mater Jesu Maria Joseph, ántequam convenírent, invénta est in útero habens de Spíritu Sancto. Et réliqua.
+_
+Homilía sancti Bernárdi Abbátis.
+!Homil. 2. super: Missus est.
+Illa útique fuit rátio desponsatiónis Maríæ,quæ et dubitatiónis Thomæ. Mos siquidem Judæórum erat, ut a die desponsatiónis suæ, usque ad tempus nuptiárum, sponsis sponsæ traderéntur custodiéndæ: quátenus eárum ipsi eo sibi pudicítiam curiósius servárent, quo sibi ipsi fidelióres exísterent.
+
+[Lectio10]
+Sicut ergo Thomas dubitándo, et palpándo, constantíssimus factus est Dominicæ conféssor resurrectiónis: ita et Joseph Maríam sibi desponsándo, ejúsque conversatiónem in témpore custodiæ studiósius comprobándo, factus est pudicítiæ fidelíssimus testis.
+
+[Lectio11]
+Pulchra utriúsque rei conveniéntia: et dubitátio Thomæ et desponsátio Mariæ. Póterant quidem símilis erróris láqueum nobis injícere, fidei vidélicet in illo, castitátis in illa, veritátem in suspiciónem addúcere: sed valde prudenter et pie factum est per contrárium, ut unde metuebátur suspício, firma sit certitúdo.
+
+[Lectio12]
+Nam et de Fílii resurrectióne cítius quidem ego (qui infírmus sum) credíderim Thomæ dubitánti et palpánti, quam Cephæ audiénti et credénti: et de Matris continéntia facílius sponso ejus custodiénti, et experiénti, quam ipsi quoque Vírgini de sola sua consciéntia se defendénti.
+
+[Responsory9]
+@SanctiM/03-19
+
+[Responsory10]
+@Sancti/03-19:Responsory7
+
+[Responsory11]
+@Sancti/03-19:Responsory8
+
+[Responsory12]
+@SanctiM/03-19
+
+[Ant Laudes] (tempore paschali)
+@Psalterium/Psalmi/Psalmi minor:Pasch
+
+[Responsory Laudes]
+@Sancti/03-19:Responsory Breve Tertia
+
+[Hymnus Laudes]
+v. Noctis e coelo ténebris depúlsis, 
+Décidant mentis feritátis umbræ: 
+Hujus ut partos réferat triúmphos 
+Laude perénni. 
+_
+Jamque longævus agitátus annis, 
+Vínculo mortis véteri solútus: 
+Victor et virgo spoliátur ævo, 
+Corpus onústum. 
+_
+Mortis ut victor superávit orcum, 
+Scandit hic vitam simul ad beátam: 
+Summa pro magnis méritis adéptus 
+Præmia palmæ. 
+_
+Ergo regnántem flagitémus ipsum, 
+Cum sua Sponsa véniam precétur, 
+Supplices ut nos capiámus alta 
+Præmia coeli. 
+_
+Laus Patri summo Genitóque semper, 
+Flámini sacro simul et potéstas: 
+Qui Deus simplex ditióne solus 
+Cuncta gubérnat. 
+Amen.
+
+[Responsory TertiaM]
+@:Versum 1
+
+[Responsory SextaM]
+@Sancti/03-19:Versum Tertia
+
+[Responsory NonaM]
+@Sancti/03-19:Versum Sexta
+
+[Ant Vespera 3] (tempore paschali)
+@:Ant Vespera

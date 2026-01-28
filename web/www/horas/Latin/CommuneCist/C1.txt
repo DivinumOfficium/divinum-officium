@@ -91,6 +91,11 @@ R. In omnem terram exívit sonus eórum:
 V. Non sunt loquélæ neque sermónes, quorum non audiántur voces eórum.
 R. Et in fines orbis terræ verba eórum.
 
+[Responsory10]
+@Commune/C1:Responsory8:1-2
+@Commune/C3:Ant Vespera 3:2:s/^/V. / s/\* // s/;;.*//
+@Commune/C1:Responsory8:4
+
 [Responsory11]
 R. Vos estis, qui permansístis mecum in tentatiónibus meis, dicit Dóminus, et ego dispóno vobis regnum:
 * Ut edátis, et bibátis super mensam meam in regno meo, et sedeátis super thronos judicántes duódecim tribus Israël.

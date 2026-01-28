@@ -1,6 +1,26 @@
+[Officium]
+B. Petri de Castronovo, Martyris
+
 [Rank]
-B. Petri de Castronovo, Martyris;;iij. Lect. et M.;;1.2;;vide C2
+;;Simplex;;1.2;;vide C2
+
+[Rule]
+vide C2
+3 lectiones
 
 [Oratio]
 Omnípotens sempitérne Deus, qui beátum Petrum, Mártyrem strénuum in propagatióne fídei tuæ minístrum ea charitáte donásti, quæ non quærit quæ sua sunt: cupiditátis, ómnium malórum radícis, spinas evélle; ut nos bene odiéndo vere amémus, et bene pérditos in vitam ætérnam felíciter inveniámus.
 $Per Dominum
+
+[Lectio1]
+@CommuneCist/C2:Lectio1S
+
+[Lectio2]
+Petrus de Castronóvo pietáte ac doctrína conspícuus, ex Archidiácono Ecclésiæ Magalonénsis Mónachus Cisterciénsis in Monastério Fontis Frígidi, dioecésis Narbonénsis, una cum Arnáldo Abbáte Cisterciénsi, et Radúlpho Mónacho, contra hæréticos Albigénses ab Innocéntio tértio legátus Apostólicus et primus inquisítor fídei destinátus fuit, mandáto iis impósito, ut ad ovíle Christi oves redúcerent errántes; in contumácia vere persisténtes, si quæ forent, Ecclesiásticis censúris aliísque poenis reprímerent. Incredíbile vidétur quot incómmoda et perícula, præcípue beatus Petrus pro dilatatióne orthodóxæ fídei sustinúerit, in Epíscopis hærética labe pollútis a dignitáte deponéndis, ac plúrimis hæréticis per públicas disputatiónes ad doctrínam sanam reducéndis; a quibus proínde super álios ódio hábitus, martyrium suum non multo ante prædíxit, quod Innocéntius Papa in sua epístola descrípsit.
+
+[Lectio3]
+!Ex lítteris Innocéntii Papæ Tértii.
+Cum sanctæ memóriæ Petrus de Castronóvo, Mónachus et Sacérdos, vir inter viros útique virtuósus, vita, sciéntia et fama præclárus, ad evangelizándam pacem, confirmandámque fidem in província Occitániæ cum áliis destinátus, in commísso sibi ministério laudabíliter profecísset, et profícere non cessásset, concitávit advérsus ipsum diábolus minístrum suum cómitem Tolosánum Raymúndum, cujus satélles, dum innócuus Christi miles, Missa celebráta, ad tránsitum Rhódani flúvii se præparáret, lánceam suam vibrans prænominátum Petrum supra Christum petram immóbili firmitáte fundátum, tantæ proditiónis incáutum inter costas inférius vulnerávit. Qui prius ipsum respíciens percussórem, et Christi magístri sui cum beáto Stéphano secútus exémplum, dixit ad ipsum: Deus tibi dimíttat, quia ego dimítto. Deínde Christi athléta sic transfíxus, ipsam acerbitátem illáti vúlneris spe cœléstium est oblítus, et instánte suæ pretiósæ mortis artículo, inculcávit ministérii sui sóciis, ut fidem promovérent, et pacem non desínerent ordináre, ac post justas oratiónes in Christo fidéliter obdormívit. Qui profécto ob fídem et pacem, quibus nulla est prorsus causa laudabílior ad martyrium, sánguinem suum fudit.
+
+[Responsory3]
+@CommuneCist/C2:Responsory7

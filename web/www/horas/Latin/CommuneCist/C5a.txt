@@ -21,6 +21,18 @@
 [Lectio4]
 @CommuneCist/C4a
 
+[Lectio1 in 2 loco]
+@CommuneCist/C5:Lectio1
+
+[Lectio2 in 2 loco]
+@CommuneCist/C5:Lectio2
+
+[Lectio3 in 2 loco]
+@CommuneCist/C5:Lectio3
+
+[Lectio4 in 2 loco]
+@CommuneCist/C5:Lectio4
+
 [Lectio5]
 @CommuneCist/C4a
 
@@ -40,12 +52,18 @@
 @CommuneCist/C4a
 
 [Responsory10]
-@CommuneCist/C4a
+@CommuneM/C5:Responsory11
 
 [Lectio11]
 @CommuneCist/C4a
 
 [Lectio12]
+@CommuneCist/C4a
+
+[Responsory12]
+@CommuneCist/C4a
+
+[Evangelium]
 @CommuneCist/C4a
 
 [Ant 3]
