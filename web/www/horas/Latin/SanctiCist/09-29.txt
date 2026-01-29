@@ -1,0 +1,149 @@
+@Sancti/05-08
+
+[Officium]
+@Sancti/09-29
+
+[Rule]
+12 lectiones
+Psalmi Dominica
+
+[Ant Vespera]@Sancti/09-29
+
+[Responsory Vespera]
+@Sancti/08-06:Responsory Laudes
+
+[Hymnus Matutinum]
+@:HymnusM Vespera
+
+[AntMatutinumM]
+Sancte Míchaël Archángele, defénde nos in proélio, * ut non pereámus in treméndo judício, allelúja.;;89
+Stetit Angelus juxta aram templi, * habens thuríbulum áureum in manu sua.;;98
+Benedícite Dóminum, omnes Angeli ejus: * benedícite, minístri ejus, qui fácitis voluntátem ejus: † benedícite Dóminum.;;102
+
+[Ant Matutinum 3N]
+Archángeli Michaélis interventióne suffúlti, * te Dómine deprecámur, ut, quos honóre proséquimur, contingámus et mente, allelúia.
+
+[Ant Matutinum]
+@CommuneM/C8:AntMatutinumM:1
+@SanctiM/09-29:AntMatutinumM:2:s/98/8/
+@Sancti/09-29::3-4:s/14/10/ s/18/14/
+Míchaël * Præpósite paradísi, quem honoríficant Angelórum cives, intercéde pro nobis ad Dóminum.;;18
+@Sancti/09-29::6:s/33/90/
+@Sancti/09-29::1:s/8/95/
+@SanctiCist/01-06::5:s/97/96/
+@Sancti/09-29::2:s/10/97/
+Míchaël * et Angeli ejus pugnábant cum diábolo, et ille hostis antíquus victus est ab eis.;;98
+@Sancti/09-29::8:s/96/102/
+@SanctiM/09-29:AntMatutinumM:1:s/89/103/
+;;266;267;268
+
+
+[Lectio1]
+@Sancti/05-08::1-4:s/-11/-10/
+
+[Lectio2]
+@Sancti/05-08::s/-8/-6/ s/7 .*//s
+
+[Lectio3]
+@Sancti/05-08:Lectio3:1-4:s/-14/-11/ s/Cumque .*//s
+
+[Lectio4]
+@Sancti/05-08:Lectio3:s/9-/11-/ s/9 .* Cumque /11 Cumque /s
+
+[Responsory1]
+R. Factum est siléntium in cœlo, dum commítteret bellum draco cum Michaéle Archángelo: audíta est vox míllia míllium dicéntium: Salus, honor et virtus
+* Omnipoténti Deo.
+V. Míllia míllium ministrábant ei, et décies centéna míllia assistébant ei.
+R. Omnipoténti Deo.
+
+[Responsory4]
+R. Te sanctum Dóminum in excélsis laudant omnes Angeli, dicéntes:
+* Te decet laus et honor, Dómine.
+V. Chérubim quoque et Séraphim sanctus proclámant, † et omnis cǽlicus ordo dicens.
+R. Te decet laus et honor, Dómine.
+
+[Lectio5]
+@Sancti/09-29:Lectio4
+
+[Responsory5]
+@Sancti/05-08:Responsory4
+
+[Lectio6]
+@Sancti/09-29:Lectio5:s/ Hi autem.*//s
+
+[Responsory6]
+@Sancti/05-08:Responsory5
+
+[Lectio7]
+@Sancti/09-29:Lectio5:s/.*Hi autem/Hi autem/s
+
+[Responsory7]
+@Sancti/05-08:Responsory6
+
+[Lectio8]
+@Sancti/09-29:Lectio6
+
+[Responsory8]
+R. Míchaël et Angeli ejus pugnábant cum diábolo;
+* Et ille hostis antíquus victus est ab eis.
+V. Factum est proélium magnum in cælo: † Míchaël et Angeli ejus præliabántur cum dracóne.
+R. Et ille hostis antíquus victus est ab eis.
+
+[Lectio9]
+@Sancti/09-29:Lectio7
+
+[Responsory9]
+@Sancti/05-08:Responsory7
+
+[Lectio10]
+@Sancti/09-29:Lectio8:s/ Si, inquit.*//
+
+[Responsory10]
+@Sancti/05-08:Responsory8
+
+[Lectio11]
+@Sancti/09-29:Lectio8:s/.*Si, inquit/Si, inquit/
+
+[Responsory11]
+R. Nunc facta est salus et virtus et regnum Deo nostro et potéstas Christi ejus,
+* Quia projéctus est accusátor fratrum nostrórum, † qui accusábat illos ante conspéctum Dei nostri die ac nocte, † allelúja, allelúja.
+V. Proptérea lætámini cæli, et qui habitátis in eis.
+R. Quia projéctus est accusátor fratrum nostrórum, † qui accusábat illos ante conspéctum Dei nostri die ac nocte, † allelúja, allelúja.
+
+[Lectio12]
+@Sancti/09-29:Lectio9
+
+[Responsory12]
+R. Fidélis sermo, et omni acceptióne dignus: † Míchaël Archángelus qui pugnávit cum diábolo:
+* Grátia Dei ille victor in cælis éxstitit et ille hostis antíquus pátuit ruínæ magnæ.
+V. Gaudent Angeli lætántur Archángeli de Michaéle Dei núntio.
+R. Grátia Dei ille victor in cælis éxstitit et ille hostis antíquus pátuit ruínæ magnæ.
+
+[Ant Laudes] (rubrica cisterciensis)
+@Sancti/09-29:Ant Vespera
+
+[Responsory Laudes]
+@Sancti/05-08:Responsory Breve Nona
+(sed rubrica cisterciensis)
+@Sancti/05-08:Responsory Breve Tertia
+
+[Responsory TertiaM]
+@:Versum 1
+(sed rubrica cisterciensis)
+@Sancti/05-08:Nocturn 1 Versum:s/, all?el[uú][ij]a//g
+
+[Responsory SextaM]
+@Sancti/05-08:Nocturn 2 Versum_
+(sed rubrica cisterciensis)
+@Sancti/05-08:Nocturn 2 Versum:s/, all?el[uú][ij]a//g
+
+[Responsory NonaM]
+@:Versum 3
+(sed rubrica cisterciensis)
+@Sancti/05-08:Nocturn 3 Versum:s/, all?el[uú][ij]a//g
+
+[Ant Vespera 3] (nisi rubrica cisterciensis)
+@Sancti/05-08:Ant Vespera:s/\.$/;;109/ s/\.$/;;110/ s/\.$/;;111/ s/\.$/;;137/
+
+[Ant 3] (rubrica cisterciensis)
+@Sancti/09-29
