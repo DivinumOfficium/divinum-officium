@@ -1,0 +1,65 @@
+@Tempora/Quadp1-0
+
+[Responsory Vespera 1]
+@TemporaM/Quadp1-0:Responsory4:1-2 s/\n\* (.)/ \l$1/ s/, † (.)/:\n* \u$1/
+@Tempora/Quadp1-1:Lectio1:7 s/\..*/./ s/31 /V. / 
+@TemporaM/Quadp1-0:Responsory4:2 s/.* † (.)/R. \u$1/
+&Gloria
+@TemporaM/Quadp1-0:Responsory4:2 s/.* ab/R. Ab/
+
+[Ant 1]
+@TemporaM/Epi2-0:Responsory11:1-2 s/R. // s/\n\* (.)/, \l$1/
+
+[Responsory1]
+@Tempora/Quadp1-0::s/creávit/fecit/ s/et fecit/creávit/
+
+[Lectio2]
+@Tempora/Quadp1-0::1-6 s/-19/-13/
+
+[Responsory2]
+@:Responsory Vespera 1
+
+[Lectio3]
+@Tempora/Quadp1-0:Lectio2:!2-6 s/-19/-13/
+
+[Responsory3]
+@Tempora/Quadp1-0:Responsory9
+
+[Capitulum Laudes]
+@Psalterium/Special/Major Special:Dominica Laudes
+
+[Responsory Breve Tertia]
+R.br. Spes mea, Dómine,
+* A juventúte mea.
+V. In te confirmátus sum ex útero: de ventre matris meæ tu es meus protéctor.
+R. A juventúte mea.
+&Gloria
+R. Spes mea, Dómine,
+_
+@Psalterium/Special/Minor Special:Versum Feria Tertia
+
+[Capitulum Sexta]
+@Psalterium/Special/Minor Special:Dominica SextaOP
+
+[Responsory Breve Sexta]
+R. Esto nobis, Domine,
+* Turris fortitudinis.
+V. A facie inimici.
+R. Turris fortitudinis.
+&Gloria
+R. Esto nobis, Domine, * Turris fortitudinis.
+_
+@Psalterium/Special/Minor Special:Versum Dominica Sexta
+
+[Capitulum Nona]
+@Psalterium/Special/Minor Special:Dominica NonaOP
+
+[Responsory Breve Nona]
+R. Educ de cárcere ánimam meam,
+* Ut confiteátur nómini tuo, Dómine.
+V. Périit fuga a me, et non est qui requírat ánimam meam.
+R. Ut confiteátur nómini tuo, Dómine.
+&Gloria
+R. Educ de cárcere ánimam meam.
+_
+@Psalterium/Special/Minor Special:Versum Dominica Nona

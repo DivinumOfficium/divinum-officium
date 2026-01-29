@@ -1,10 +1,13 @@
-@Tempora/Quad6-0r
+@Tempora/Quad6-0
 
 [Officium]
 Dominica II Passione seu in ramis palmarum
 
+[Rank]
+;;I classis Semiduplex;;6
+
 [Responsory Vespera 1]
-@TemporaOP/Quad5-0
+@Tempora/Quad6-0:Responsory9
 
 [Invit]
 Ipsi vero non cognovérunt vias meas: * Quibus jurávi in ira mea: Si introíbunt in réquiem meam.
