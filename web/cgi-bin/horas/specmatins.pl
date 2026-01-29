@@ -32,6 +32,12 @@ sub invitatorium {
     $name = 'Trid';
   }
 
+  # Commune Unius Martyris in CIST. rite has different [Invit]
+  # for 3 lect. and 12 lect. feasts
+  if ($version =~ /Cist/i && $commune{'Invit 3L'} && !$winner{Invit} && $winner{Rule} =~ /3 lect/i) {
+    $name = '3L';
+  }
+
   if ($name) {
     $name = "Invit $name";
     $comment = 1;
@@ -57,8 +63,14 @@ sub invitatorium {
     $ant =~ s/(\S+), (\S+)\./$1, $2, * $1/;
   } else {
 
-    #look for special from proprium the tempore or sancti
-    ($w, $c) = getproprium("Invit", $lang, 1);
+    #look for special from commune for 3-Lesson feasts
+    if ($name =~ /Invit 3L/i) {
+      ($w, $c) = getproprium("Invit 3L", $lang, 1);
+    } else {
+
+      #look for special from proprium the tempore or sancti
+      ($w, $c) = getproprium("Invit", $lang, 1);
+    }
     if ($w) { $ant = chompd($w); $comment = $c; }
     setcomment($label, 'Source', $comment, $lang, translate('Antiphona', $lang));
   }
@@ -167,7 +179,8 @@ sub hymnusmatutinum {
         || ( ($monthday && $monthday =~ /^1[0-9][0-9]\-/ && $version !~ /Cist/i)
           || ($monthday && $monthday =~ /^1[1-9][0-9]\-/ && $version =~ /Cist/i))
       )
-    ) {
+      )
+    {
       $name .= '1';
     }
     setbuild("Psalterium/Special/Matutinum Special", $name, 'Hymnus ord');
@@ -278,7 +291,7 @@ sub psalmi_matutinum {
       my @a = split(';;', $psalmline);    # Retrieve psalmtone given behind second ';;'
 
       if (@a > 2) {
-        my $ant0 = chompd($a[0]);                  # Retrieve Antiphon
+        my $ant0 = chompd($a[0]);         # Retrieve Antiphon
         my @psalm0 = split(';', chompd($a[1]));    # Split multiple Psalms
         my $psalmTone = chompd($a[2]);             # Retrieve PsalmTone
 
@@ -306,7 +319,8 @@ sub psalmi_matutinum {
         && $version !~ /trident/i
         && $rank < 5
         && $winner{'Rank'} !~ /(?:in|post).*octava.*Ascensio/i
-      ) {
+        )
+      {
         my $dname = ($winner{Rank} =~ /Dominica/i) ? 'Dominica' : 'Feria';
         my @spec = split("\n", $psalmi{"Pasch Ant $dname"});
         foreach my $i (3, 4, 8, 9, 13, 14) { $psalmi[$i] = $spec[$i]; }
@@ -440,7 +454,7 @@ sub dayofweek2i {
 #*** cujus_q
 # return shift from Cujus festum
 sub cujus_q {
-  return 1 if our $rule =~ /Quorum Festum/;               # "Quorum by rule"
+  return 1 if our $rule =~ /Quorum Festum/;    # "Quorum by rule"
   return 4 if our $commune =~ /C11|08-15|09-08|12-08/;    # fest. BMV + 8es
 
   local ($_) = shift;
@@ -448,7 +462,7 @@ sub cujus_q {
   return -2 if /basilic/i;                                # no change for 11-09 11-18r
   return 5 if /S. P. N. Benedicti Abbatis/;               # Don't catch Scholastica
 
-  my $j = 0;                                                                             # "Cujus …, ipse"
+  my $j = 0;                                              # "Cujus …, ipse"
   if (/(virgin|vidu[aæ]|poenitentis|pœnitentis|C6|C7)/i) { $j += 2 unless /C[2-5]/; }    # "Cujus …, ipsa"
   if (/(?:ss\.|sanctorum|sociorum)/i) { $j++; }                                          # "Quorum / Quarum"
 
@@ -481,7 +495,8 @@ sub get_absolutio_et_benedictiones {
       } elsif (
         $winner{Rank} =~ /(?:\bss?\.|sanctorum)/i    # sancti
         || $commune =~ /C11|08-15|09-08|12-08/       # + fest. BMV + 8es
-      ) {
+        )
+      {
         $ben[1] = $ben[3 + cujus_q($winner{Rank})];
         setbuild2("3rd Noct. B${rpn}. : " . beginwith($ben[1]));
       }
@@ -640,7 +655,8 @@ sub lectio : ScriptFunc {
         && !($version =~ /1963/i && $dayname[0] != /Nat|Epi1/i)
       )
     )
-  ) {
+    )
+  {
     $num = 4;    # diverge to legend
     setbuild2("Lectio3: Diverged to Legend");
   }
@@ -802,14 +818,15 @@ sub lectio : ScriptFunc {
         && $rank > 3)    # either we have 'ex Tempora' on Duplex majus or higher
       || (
         (
-          $nocturn == 1                        # or we are in the first nocturn
-          && $homilyflag == 1                  # and there is a homily to be commemorated
+          $nocturn == 1    # or we are in the first nocturn
+          && $homilyflag == 1    # and there is a homily to be commemorated
           && exists($commune{"Lectio$num"})    # which has not been superseded by the sanctoral
           && !($rule =~ /in 1 Nocturno/i)
         )
       )
     )
-  ) {
+    )
+  {
     %w = (columnsel($lang)) ? %commune : %commune2;
     $w = $w{"Lectio$num"};
     if ($w && $num == 1) { setbuild2("Lectio1-3 from $commune replacing homily"); }
@@ -822,7 +839,8 @@ sub lectio : ScriptFunc {
     && $commune =~ /^C/
     && ( ($communetype =~ /^ex/i && ($rank > 3 || ($version =~ /Cist/i && $rank > 2.2)))
       || ($rule =~ /in $nocturn Nocturno Lectiones ex/i))
-  ) {
+    )
+  {
     my %com = (columnsel($lang)) ? %commune : %commune2;
     my $lecnum = "Lectio$num";
 
@@ -855,7 +873,8 @@ sub lectio : ScriptFunc {
       || ($num == 4 && $rule =~ /12 lect/i && exists($scriptura{"Lectio3"}))
     )                                                   # or for Monastic if we have to split the lessons at the ¶ mark
     && ($version !~ /trident/i || $rank < 5)
-  ) {                                                   # but not in Tridentinum Duplex II. vel I. classis
+    )
+  {                                                     # but not in Tridentinum Duplex II. vel I. classis
     %w = (columnsel($lang)) ? %scriptura : %scriptura2;
 
     my $infile = initiarule($month, $day, $year);
@@ -953,7 +972,8 @@ sub lectio : ScriptFunc {
 
     # Simplex: also look when last lectio has been diverged to Lectio 4
     || (($ltype1960 == LT1960_SANCTORAL || $rank < 2) && $winner =~ /Sancti/i && $num == 4)
-  ) {    # 9th lesson diverged to Legend of Commemorated Saint
+    )
+  {    # 9th lesson diverged to Legend of Commemorated Saint
     %w = (columnsel($lang)) ? %winner : %winner2;
     my $L9winnerflag = 0;
 
@@ -1113,7 +1133,7 @@ sub lectio : ScriptFunc {
   }
   if (($ltype1960 || ($winner =~ /Sancti/i && $rank < 2)) && $num > 2) { $num = 3; }
 
-  $w =~ s/¶//;               # remove ¶ mark if any
+  $w =~ s/¶//;    # remove ¶ mark if any
   $w =~ s/\&teDeum\n*//g;    # remove tedeum, will add if needed later
 
   unless ($rule =~ /Limit.*?Benedictio/i || exists($winner{'In Finem Lectio'})) {
@@ -1297,7 +1317,7 @@ sub tedeum_required {
     && ($winner !~ /(?:Adv|Quad)/ || $version =~ /^Monastic/)
     && (
          (!$dayofweek && $dayname[1] !~ /(Vigilia)/)
-      || ($winner =~ /Sancti|Commune/i && $dayname[1] !~ /(Vigilia)/)           # Commune = Votive
+      || ($winner =~ /Sancti|Commune/i && $dayname[1] !~ /(Vigilia)/)    # Commune = Votive
       || $rule =~ /Feria Te Deum/i
       || $winner =~ /Pasc|Nat|C10/
       || ($winner =~ /^Tempora/ && $rank > 5 && $dayofweek)
@@ -1375,7 +1395,8 @@ sub responsory_gloria {
       && $num % $rpn == ($rpn - 1)             # before last
       && tedeum_required($num + 1)             # when there is Te Deum after last
     )
-  ) {                                          # let's add the Gloria
+    )
+  {                                            # let's add the Gloria
 
     if ($lang =~ /gabc/ && $w =~ /\{.*\}/) {
       if ($w =~ /\_\s\{gabc:/) {
@@ -1511,8 +1532,8 @@ sub resolveitable {
   } else {    # when there is a conflict of a ~B transfer and an inita itself
     $file =~ s/~[ABR]$//;
     @file = split('~', $file);
-    $lim = 1;      # in general allow 1 transfer and
-    $start = 2;    # put the actual days in second place
+    $lim = 1;    # in general allow 1 transfer and
+    $start = 2;  # put the actual days in second place
 
     if (@file > 1 && !($rule !~ /(9|12) lectiones/i && $winner =~ /Sancti/i)) {
       $lim = 2;
@@ -1564,7 +1585,8 @@ sub tferifile {
     && ( $winit{Rule} =~ /Initia cum Responsory/i
       || $winit{Rank} =~ /Dominica/i
       || $winit{Scriptura} =~ /Dominica/i)
-  ) {
+    )
+  {
     $w{"Responsory$start"} = $winit{"Responsory$i"};
   } elsif (!exists($w{"Responsory$start"})) {
     my %s = (columnsel($lang)) ? %scriptura : %scriptura2;
@@ -1683,7 +1705,7 @@ sub getantmatutinum {
 
   if (@wprop < $target) {
     foreach my $noc (@nocturns) {
-      $ppN = @wprop if @wprop < $ppN;           # limit psalm lines in if exceeded
+      $ppN = @wprop if @wprop < $ppN;    # limit psalm lines in if exceeded
       push(@w, shift(@wprop)) for 1 .. $ppN;    # pass-through psalm lines for nocturn if they exist
       last unless $noc;                         # for 3 lectio, no versicle to be appended;
 
