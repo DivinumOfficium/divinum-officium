@@ -131,10 +131,11 @@ function parchange() {
 //calls kalendar
 function callkalendar(mode) {
   document.forms[0].action = 'kalendar.pl';
-  if (mode == 'kalendar') {
-    document.forms[0].kmonth.value = 15;
-  }
   document.forms[0].target = "_self"
+  if (mode == 'kalendar') {
+    //document.forms[0].kmonth.value = 15;
+    //document.forms[0].submit();
+  }
   document.forms[0].submit();
 }
 

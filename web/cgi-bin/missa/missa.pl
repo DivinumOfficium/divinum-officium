@@ -230,6 +230,7 @@ print <<"PrintTag";
 <INPUT TYPE=HIDDEN NAME=first VALUE="$first">
 <INPUT TYPE=HIDDEN NAME=Propers VALUE="$Propers">
 <INPUT TYPE=HIDDEN NAME=compare VALUE=0>
+<INPUT TYPE="HIDDEN" NAME="kmonth" VALUE="">
 </FORM>
 </BODY></HTML>
 PrintTag
@@ -255,6 +256,8 @@ sub headline {
 <A HREF="#" onclick="prevnext(1)">&uarr;</A>
 &ensp;
 <A HREF="#" onclick="callkalendar();">Ordo</A>
+&ensp;
+<A HREF="#" onclick="callkalendar('kalendar');">Kalendarium</A>
 &ensp;
 <A HREF="#" onclick="pset('parameters')">Options</A>
 $numsel
@@ -335,8 +338,11 @@ function parchange() {
 }
 
 //calls kalendar
-function callkalendar() {
+function callkalendar(mode) {
   document.forms[0].action = '../horas/kalendar.pl';
+  if (mode == 'kalendar') {
+    document.forms[0].kmonth.value = 15;
+  }
   document.forms[0].target = "_self"
   document.forms[0].submit();
 }
