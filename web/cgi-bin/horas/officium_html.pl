@@ -62,6 +62,8 @@ $compone
 &ensp;
 <A HREF="#" onclick="callkalendar();">Ordo</A>
 &ensp;
+<A HREF="#" onclick="callkalendar('kalendar');">Kalendarium</A>
+&ensp;
 <A HREF="#" onclick="pset('parameters')">Options</A>
 PrintTag
   }
