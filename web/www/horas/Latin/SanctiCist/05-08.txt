@@ -1,0 +1,66 @@
+@Sancti/05-08
+
+[Rule]
+3 lectiones
+Psalmi Feria
+Antiphonas horas
+
+[Ant Vespera] (tempore paschali)
+Allelúia, * allelúia, allelúia.
+
+[Responsory Vespera] 
+@Sancti/08-06:Responsory Breve Tertia
+
+[Versum 1] 
+@Sancti/05-08:Versum 3
+
+[Ant 1]
+Dum sacrum mystérium * cérneret Joánnes, Archángelus Míchaël tuba cécinit: Dignus es, Dómine, Deus noster, accípere librum, et aperíre signácula ejus, allelúia.
+
+[Invit] (tempore paschali)
+@CommuneCist/C2p
+
+[Nocturn 2 Versum]
+V. Data sunt ei incénsa multa.
+R. Ut adoléret ea ante altáre áureum.
+
+[Nocturn 3 Versum]
+@Sancti/05-08:Nocturn 2 Versum_
+
+[Lectio1]
+@Sancti/05-08::1-2:s/9-11/12-13/
+@Sancti/05-08:Lectio3:5-6:s/12 .*ex /12 Ex /
+
+[Lectio2]
+Beátum Michaélem Archangelum sæpius homínibus apparuísse probátum est. Gelásio autem primo Pontífice Máximo, in Apúlia in vértice Gargani montis, illústris fuit ipsíus apparítio. Factum est enim, ut ex grégibus armentórum Gargáni cujúsdam taurus longe discéderet: quem diu conquisítum, in aditu spelúncæ hæréntem invenérunt. Cum vero quidam ex illis, ut taurum confígeret, sagíttam emisisset, retórta sagítta in ipsum récidit sagittárium.
+
+[Lectio3]
+Quae res adeo præséntes ac étiam admónitum Epíscopum commóvit, ut indícto jejúnio rem a Deo postulándam mandáverit. Post tríduum Archángelus Epíscopum monet, in sua tutéla esse eum locum, velléque ut ibi cultus Deo, in sui et Angelórum memóriam haberétur. Spelúncam ígitur ádiit, vidénsque locum templo quodámmodo conformátum, divínis illum celebrávit offíciis, qui multis póstea miráculis fuit illustrátus.
+
+[Responsory1]
+@SanctiCist/09-29
+
+[Responsory2]
+@SanctiCist/09-29:Responsory8
+
+[Responsory3]
+R. Archángeli Michaélis interventióne suffúlti, te Dómine deprecámur,
+* Ut quos honóre proséquimur, contingámus et mente. * Allelúia, allelúia
+V. Perpétuum nobis Dómine, tuæ miseratiónis præsta subsídium, quibus et Angélica præstitísti suffrágia no deésse.
+R. Ut quos honóre proséquimur, contingámus et mente. 
+&Gloria
+R. Allelúia, allelúia
+
+[MM Capitulum]
+@Sancti/05-08:Capitulum Sexta
+_
+@:Nocturn 2 Versum
+
+[Ant Laudes] (tempore paschali)
+@Psalterium/Psalmi/Psalmi minor:Pasch
+
+[Responsory Laudes]
+@Sancti/05-08:Responsory Breve Tertia
+
+[Versum 2]
+@Sancti/05-08:Versum Nona:s/Deum/Dóminum/
