@@ -14,9 +14,9 @@
 @Tempora/Epi1-3::4 s/\?.*/?/
 
 [Responsory2]
-@Tempora/Epi2-4::1-2 s/magnitúdinem tuam: noli/magnificéntiæ tuæ. Noli/ s/\n\* Dum/ cum/ s/ in me// s/, ne/\n* Deus ne/
+@Tempora/Epi2-4::1-2 s/magnitúdinem tuam: noli/magnificéntiæ tuæ. Noli/ s/\n\* Dum/ cum/ s/ in me// s/, ne/\n* Deus, ne/
 V. Deus, ne elongéris a me: Deus meus, in auxílium meum réspice.
-@Tempora/Epi2-4::2 s/.*, ne/R. Deus ne/
+@Tempora/Epi2-4::2 s/.*, ne/R. Deus, ne/
 
 [Lectio3]
 @Tempora/Epi1-3:Lectio2:!2-3 s/7-/9-/ s/.*\? /9 /
