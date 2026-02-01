@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc:*)",
+      "Bash(grep:*)",
+      "Bash(perl -c:*)",
+      "Bash(apt list:*)",
+      "Bash(chmod:*)"
+    ]
+  }
+}

@@ -15,13 +15,17 @@ RUN echo "}" >> /build/buildinfo
 # Final container
 FROM public.ecr.aws/docker/library/perl:5.42-slim AS final
 
+RUN mkdir /cache
+
 # Set envs
 ENV APACHE_RUN_USER=www-data \
     APACHE_RUN_GROUP=www-data \
     APACHE_LOCK_DIR=/var/lock/apache2 \
     APACHE_LOG_DIR=/var/log/apache2 \
     APACHE_PID_FILE=/var/run/apache2/apache2.pid \
-    APACHE_SERVER_NAME=localhost
+    APACHE_SERVER_NAME=localhost \
+    CACHE_DIR=/cache \
+    SERVE_FROM_CACHE=true
 
 # Install packages
 RUN apt-get update && apt-get install -y \
