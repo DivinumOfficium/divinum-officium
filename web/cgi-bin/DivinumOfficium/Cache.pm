@@ -49,11 +49,22 @@ sub cache_log {
     $t[2], $t[1], $t[0], $usec
   );
 
+  # If path is present, make it relative to cache_dir
+  my %log_data = %{$data // {}};
+  if (exists $log_data{path} && defined $log_data{path} && $log_data{path} ne 'undef') {
+    my $path = $log_data{path};
+    # Strip cache_dir prefix to make path relative
+    if ($path =~ /^\Q$cache_dir\E\/?(.*)$/) {
+      $log_data{path} = $1;
+    }
+  }
+
   my $entry = {
     timestamp => $timestamp,
     operation => $operation,
     pid => $$,
-    %{$data // {}},
+    cache_dir => $cache_dir,
+    %log_data,
   };
 
   my $json = encode_json($entry);
