@@ -243,10 +243,10 @@ my $cache_type = 'horas';
 # Check if we have cached content and should serve from cache
 if (serve_from_cache_enabled() && $horas[0] && $horas[0] ne 'Plures' && $command !~ /setup/i && $command !~ /appendix/i)
 {
-  my $cached = get_cached_content($cache_key, $cache_type);
+  my $cached = get_cached_content($cache_key, $cache_type, \%cache_params);
 
   if (defined $cached && $cached ne '') {
-    binmode(STDOUT, ':encoding(utf-8)');
+    binmode(STDOUT, ':raw');  # Cached content is already UTF-8 encoded bytes
     print $cached;
     exit;
   }
@@ -259,6 +259,7 @@ my $do_cache =
   && $horas[0] ne 'Plures'
   && $command !~ /setup/i
   && $command !~ /appendix/i;
+
 start_output_capture() if $do_cache;
 
 #*** print pages (setup, hora=pray, mainpage)
@@ -306,6 +307,11 @@ if ($command =~ /setup(.*)/i) {
       }
     } elsif ($officium ne 'Pofficium.pl') {
       print par_c(mainpage());
+
+      # Debug: Show cache configuration
+      my $cache_dir = $ENV{CACHE_DIR} || '(not set)';
+      my $serve_cache = $ENV{SERVE_FROM_CACHE} || '(not set)';
+      print par_c("<FONT SIZE='-1' COLOR='gray'>CACHE_DIR: $cache_dir | SERVE_FROM_CACHE: $serve_cache</FONT>");
     }
   }
 
@@ -335,5 +341,8 @@ htmlEnd();
 # End output capture and store in cache
 if ($do_cache) {
   my $captured = end_output_capture();
-  store_cached_content($cache_key, $captured, $cache_type) if $captured;
+
+  if ($captured) {
+    store_cached_content($cache_key, $captured, $cache_type, \%cache_params);
+  }
 }

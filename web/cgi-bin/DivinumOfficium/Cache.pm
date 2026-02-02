@@ -10,6 +10,9 @@ use Digest::SHA qw(sha256_hex);
 use File::Path qw(make_path);
 use File::Spec;
 use Encode qw(encode_utf8);
+use JSON::PP;
+use Time::HiRes qw(gettimeofday);
+use Fcntl qw(:flock);
 
 our @EXPORT_OK = qw(
   get_cache_key
@@ -21,11 +24,50 @@ our @EXPORT_OK = qw(
   build_missa_cache_params
   start_output_capture
   end_output_capture
+  cache_log
 );
 
 # Check if caching is enabled (CACHE_DIR environment variable is set)
 sub cache_enabled {
   return defined $ENV{CACHE_DIR} && $ENV{CACHE_DIR} ne '';
+}
+
+# Log cache operations to JSON log file
+sub cache_log {
+  my ($operation, $data) = @_;
+
+  return unless cache_enabled();
+
+  my $cache_dir = $ENV{CACHE_DIR};
+  my $log_file = "$cache_dir/cache.log";
+
+  # Build log entry
+  my ($sec, $usec) = gettimeofday();
+  my @t = localtime($sec);
+  my $timestamp = sprintf(
+    "%04d-%02d-%02dT%02d:%02d:%02d.%06dZ",
+    $t[5] + 1900, $t[4] + 1, $t[3],
+    $t[2], $t[1], $t[0], $usec
+  );
+
+  my $entry = {
+    timestamp => $timestamp,
+    operation => $operation,
+    pid => $$,
+    %{$data // {}},
+  };
+
+  my $json = encode_json($entry);
+
+  # Append to log file with locking
+  if (open my $fh, '>>', $log_file) {
+    flock($fh, LOCK_EX);
+    print $fh "$json\n";
+    flock($fh, LOCK_UN);
+    close $fh;
+  } else {
+    warn "Cache: Failed to write to log file $log_file: $!";
+  }
 }
 
 # Check if serving from cache is enabled
@@ -79,19 +121,54 @@ sub _get_cache_path {
 # Retrieve cached content if it exists
 # Returns undef if not cached or caching disabled
 sub get_cached_content {
-  my ($cache_key, $type) = @_;
+  my ($cache_key, $type, $params) = @_;
   $type ||= 'general';
 
-  return unless serve_from_cache_enabled();
+  if (!serve_from_cache_enabled()) {
+    cache_log('skip', {
+      key => $cache_key,
+      type => $type,
+      reason => 'serve_from_cache disabled',
+      params => $params,
+    });
+    return;
+  }
 
   my ($dir, $path) = _get_cache_path($cache_key, $type);
-  return unless $path && -f $path;
 
-  # Read and return the cached content
-  open my $fh, '<:encoding(utf-8)', $path or return;
+  if (!$path || !-f $path) {
+    cache_log('miss', {
+      key => $cache_key,
+      type => $type,
+      path => $path // 'undef',
+      params => $params,
+    });
+    return;
+  }
+
+  # Read and return the cached content (raw bytes - already UTF-8 encoded)
+  open my $fh, '<:raw', $path or do {
+    cache_log('miss', {
+      key => $cache_key,
+      type => $type,
+      path => $path,
+      error => "open failed: $!",
+      params => $params,
+    });
+    return;
+  };
   local $/;
   my $content = <$fh>;
   close $fh;
+
+  my $size = length($content // '');
+  cache_log('hit', {
+    key => $cache_key,
+    type => $type,
+    path => $path,
+    size => $size,
+    params => $params,
+  });
 
   return $content;
 }
@@ -99,11 +176,30 @@ sub get_cached_content {
 # Store content in the cache
 # Returns 1 on success, 0 on failure
 sub store_cached_content {
-  my ($cache_key, $content, $type) = @_;
+  my ($cache_key, $content, $type, $params) = @_;
   $type ||= 'general';
 
-  return 0 unless cache_enabled();
-  return 0 unless defined $content && $content ne '';
+  my $content_len = length($content // '');
+
+  if (!cache_enabled()) {
+    cache_log('store_skip', {
+      key => $cache_key,
+      type => $type,
+      reason => 'cache disabled',
+      params => $params,
+    });
+    return 0;
+  }
+
+  if (!defined $content || $content eq '') {
+    cache_log('store_skip', {
+      key => $cache_key,
+      type => $type,
+      reason => 'empty content',
+      params => $params,
+    });
+    return 0;
+  }
 
   my ($dir, $path) = _get_cache_path($cache_key, $type);
   return 0 unless $path;
@@ -113,18 +209,38 @@ sub store_cached_content {
     eval { make_path($dir) };
 
     if ($@) {
-      warn "Cache: Failed to create directory $dir: $@";
+      cache_log('store_error', {
+        key => $cache_key,
+        type => $type,
+        path => $path,
+        error => "mkdir failed: $@",
+        params => $params,
+      });
       return 0;
     }
   }
 
-  # Write content to cache file
-  open my $fh, '>:encoding(utf-8)', $path or do {
-    warn "Cache: Failed to write to $path: $!";
+  # Write content to cache file (raw bytes - already UTF-8 encoded)
+  open my $fh, '>:raw', $path or do {
+    cache_log('store_error', {
+      key => $cache_key,
+      type => $type,
+      path => $path,
+      error => "open failed: $!",
+      params => $params,
+    });
     return 0;
   };
   print $fh $content;
   close $fh;
+
+  cache_log('store', {
+    key => $cache_key,
+    type => $type,
+    path => $path,
+    size => $content_len,
+    params => $params,
+  });
 
   return 1;
 }
@@ -194,22 +310,23 @@ sub start_output_capture {
 
   $captured_output = '';
 
-  # Save original STDOUT and redirect to capture variable
-  open $original_stdout, '>&', \*STDOUT or do {
-    warn "Cache: Failed to duplicate STDOUT: $!";
+  # Save original STDOUT
+  open $original_stdout, '>&', STDOUT or do {
+    cache_log('capture_error', {error => "Failed to duplicate STDOUT: $!"});
     return 0;
   };
 
+  # Redirect STDOUT to in-memory scalar (no encoding layer - causes issues)
   close STDOUT;
-  open STDOUT, '>', \$captured_output or do {
+  open STDOUT, '>:utf8', \$captured_output or do {
     # Restore original STDOUT on failure
     open STDOUT, '>&', $original_stdout;
-    warn "Cache: Failed to redirect STDOUT: $!";
+    cache_log('capture_error', {error => "Failed to redirect STDOUT: $!"});
     return 0;
   };
-  binmode(STDOUT, ':encoding(utf-8)');
 
   $capture_active = 1;
+  cache_log('capture_start', {pid => $$});
   return 1;
 }
 
@@ -218,15 +335,21 @@ sub start_output_capture {
 sub end_output_capture {
   return '' unless $capture_active;
 
-  # Close capture and restore original STDOUT
+  # Flush and close capture
+  STDOUT->flush();
   close STDOUT;
+
+  # Restore original STDOUT
   open STDOUT, '>&', $original_stdout or die "Cache: Failed to restore STDOUT: $!";
-  binmode(STDOUT, ':encoding(utf-8)');
+  binmode(STDOUT, ':raw');  # Output raw bytes - already UTF-8 encoded
   close $original_stdout;
 
   $capture_active = 0;
 
-  # Print the captured content to the actual STDOUT
+  my $size = length($captured_output // '');
+  cache_log('capture_end', {pid => $$, captured_size => $size});
+
+  # Print the captured content to the actual STDOUT (raw bytes)
   print $captured_output;
 
   return $captured_output;

@@ -168,10 +168,10 @@ my $cache_type = 'missa';
 
 # Check if we have cached content and should serve from cache
 if (serve_from_cache_enabled() && $command =~ /pray/i && $command !~ /setup/i) {
-  my $cached = get_cached_content($cache_key, $cache_type);
+  my $cached = get_cached_content($cache_key, $cache_type, \%cache_params);
 
   if (defined $cached && $cached ne '') {
-    binmode(STDOUT, ':encoding(utf-8)');
+    binmode(STDOUT, ':raw');  # Cached content is already UTF-8 encoded bytes
     print $cached;
     exit;
   }
@@ -277,7 +277,7 @@ PrintTag
 # End output capture and store in cache
 if ($do_cache) {
   my $captured = end_output_capture();
-  store_cached_content($cache_key, $captured, $cache_type) if $captured;
+  store_cached_content($cache_key, $captured, $cache_type, \%cache_params) if $captured;
 }
 
 #*** hedline($head) prints headlibe for main and pray

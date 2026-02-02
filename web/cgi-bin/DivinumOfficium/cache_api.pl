@@ -20,15 +20,50 @@ use File::Find;
 use File::Path qw(remove_tree);
 use File::Basename;
 
-use lib "$Bin";
+use lib "$Bin/..";
 use DivinumOfficium::Cache qw(cache_enabled serve_from_cache_enabled);
 
 my $q = CGI->new;
+
+# Token authentication
+my $required_token = $ENV{CACHE_ADMIN_TOKEN} || '';
+my $provided_token = $q->param('token') || '';
+
+if ($required_token eq '') {
+  print "Content-type: application/json; charset=utf-8\n\n";
+  print '{"error":"CACHE_ADMIN_TOKEN environment variable not configured"}';
+  exit;
+}
+
+if ($provided_token ne $required_token) {
+  print "Content-type: application/json; charset=utf-8\n\n";
+  print '{"error":"Invalid or missing token parameter"}';
+  exit;
+}
+
 my $action = $q->param('action') || 'status';
 my $key = $q->param('key') || '';
 my $type = $q->param('type') || '';
 my $confirm = $q->param('confirm') || '';
 my $format = $q->param('format') || 'json';
+
+# Handle raw log output early (before content-type)
+if ($action eq 'log' && $format eq 'raw') {
+  print "Content-type: text/plain; charset=utf-8\n\n";
+  my $lines = $q->param('lines') || 100;
+  my $log_file = ($ENV{CACHE_DIR} || '') . "/cache.log";
+
+  if (-f $log_file) {
+    open my $fh, '<', $log_file;
+    my @all_lines = <$fh>;
+    close $fh;
+    my $start = @all_lines > $lines ? @all_lines - $lines : 0;
+    print @all_lines[$start .. $#all_lines];
+  } else {
+    print "Log file not found\n";
+  }
+  exit;
+}
 
 # Output content type
 if ($format eq 'html') {
@@ -239,11 +274,99 @@ sub clear_all_cache {
   };
 }
 
+# Get cache entry count
+sub get_cache_count {
+  my %counts = (
+    total => 0,
+    by_type => {},
+  );
+
+  return \%counts unless $cache_dir && -d $cache_dir;
+
+  for my $type_dir (glob("$cache_dir/*")) {
+    next unless -d $type_dir;
+    my $type_name = basename($type_dir);
+
+    my $count = 0;
+    find(
+      sub {
+        return unless -f && /\.html$/;
+        $count++;
+      },
+      $type_dir
+    );
+
+    $counts{by_type}{$type_name} = $count;
+    $counts{total} += $count;
+  }
+
+  return \%counts;
+}
+
+# Get cache log
+sub get_cache_log {
+  my ($tail_lines, $raw) = @_;
+  $tail_lines ||= 100;
+
+  my $log_file = "$cache_dir/cache.log";
+
+  return {error => 'Log file not found'} unless -f $log_file;
+
+  my @lines;
+
+  # Read last N lines
+  open my $fh, '<', $log_file or return {error => "Failed to open log: $!"};
+  my @all_lines = <$fh>;
+  close $fh;
+
+  # Get last N lines
+  my $start = @all_lines > $tail_lines ? @all_lines - $tail_lines : 0;
+  @lines = @all_lines[$start .. $#all_lines];
+
+  if ($raw) {
+    return join('', @lines);
+  }
+
+  # Parse JSON lines
+  my @entries;
+  for my $line (@lines) {
+    chomp $line;
+    next unless $line;
+    eval {
+      my $entry = decode_json($line);
+      push @entries, $entry;
+    };
+    if ($@) {
+      push @entries, {raw => $line, parse_error => $@};
+    }
+  }
+
+  return {
+    total_lines => scalar(@all_lines),
+    returned_lines => scalar(@entries),
+    entries => \@entries,
+  };
+}
+
+# Clear cache log
+sub clear_cache_log {
+  my $log_file = "$cache_dir/cache.log";
+
+  return {error => 'Log file not found'} unless -f $log_file;
+
+  open my $fh, '>', $log_file or return {error => "Failed to clear log: $!"};
+  close $fh;
+
+  return {success => JSON::PP::true, message => 'Log cleared'};
+}
+
 # Main dispatch
 my $result;
 
 if ($action eq 'status') {
   $result = get_cache_stats();
+} elsif ($action eq 'count') {
+  $result = get_cache_count();
 } elsif ($action eq 'keys' || $action eq 'list') {
   my $limit = $q->param('limit') || 100;
   $result = {keys => list_cache_keys($type, $limit)};
@@ -259,6 +382,11 @@ if ($action eq 'status') {
       exit;
     }
   }
+} elsif ($action eq 'log') {
+  my $lines = $q->param('lines') || 100;
+  $result = get_cache_log($lines, 0);
+} elsif ($action eq 'clear_log') {
+  $result = clear_cache_log();
 } elsif ($action eq 'clear') {
   if (!$key) {
     $result = {error => 'Missing key parameter'};
@@ -270,7 +398,7 @@ if ($action eq 'status') {
 } else {
   $result = {
     error => 'Unknown action',
-    available_actions => ['status', 'keys', 'list', 'get', 'clear', 'clear_all'],
+    available_actions => ['status', 'count', 'keys', 'list', 'get', 'log', 'clear', 'clear_log', 'clear_all'],
   };
 }
 
