@@ -126,7 +126,7 @@ sub get_cache_stats {
         $count++;
         $size += -s $_;
       },
-      $type_dir
+      $type_dir,
     );
 
     $stats{types}{$type_name} = {
@@ -180,8 +180,7 @@ sub list_cache_keys {
         my $path = $File::Find::name;
         my @stat = stat($path);
 
-        push @keys,
-          {
+        push @keys, {
             key => $key,
             type => $type_name,
             size => $stat[7],
@@ -189,7 +188,7 @@ sub list_cache_keys {
             mtime_human => scalar(localtime($stat[9])),
           };
       },
-      $type_dir
+      $type_dir,
     );
 
     last if @keys >= $limit;
@@ -263,7 +262,7 @@ sub clear_all_cache {
         return unless -f && /\.html$/;
         unlink $_ and $count++;
       },
-      $type_dir
+      $type_dir,
     );
   }
 
@@ -293,7 +292,7 @@ sub get_cache_count {
         return unless -f && /\.html$/;
         $count++;
       },
-      $type_dir
+      $type_dir,
     );
 
     $counts{by_type}{$type_name} = $count;
@@ -337,7 +336,10 @@ sub get_cache_log {
       push @entries, $entry;
     };
     if ($@) {
-      push @entries, {raw => $line, parse_error => $@};
+      push @entries, {
+          raw => $line,
+          parse_error => $@
+        };
     }
   }
 
@@ -357,7 +359,10 @@ sub clear_cache_log {
   open my $fh, '>', $log_file or return {error => "Failed to clear log: $!"};
   close $fh;
 
-  return {success => JSON::PP::true, message => 'Log cleared'};
+  return {
+    success => JSON::PP::true,
+    message => 'Log cleared'
+  };
 }
 
 # Main dispatch

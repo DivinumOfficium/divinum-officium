@@ -43,11 +43,8 @@ sub cache_log {
   # Build log entry
   my ($sec, $usec) = gettimeofday();
   my @t = localtime($sec);
-  my $timestamp = sprintf(
-    "%04d-%02d-%02dT%02d:%02d:%02d.%06dZ",
-    $t[5] + 1900, $t[4] + 1, $t[3],
-    $t[2], $t[1], $t[0], $usec
-  );
+  my $timestamp =
+    sprintf("%04d-%02d-%02dT%02d:%02d:%02d.%06dZ", $t[5] + 1900, $t[4] + 1, $t[3], $t[2], $t[1], $t[0], $usec,);
 
   # If path is present, make it relative to cache_dir
   my %log_data = %{$data // {}};
@@ -82,7 +79,8 @@ sub cache_log {
 
 # Check if serving from cache is enabled
 sub serve_from_cache_enabled {
-  return cache_enabled()
+  return
+       cache_enabled()
     && defined $ENV{SERVE_FROM_CACHE}
     && ($ENV{SERVE_FROM_CACHE} eq '1' || lc($ENV{SERVE_FROM_CACHE}) eq 'true');
 }
@@ -135,36 +133,42 @@ sub get_cached_content {
   $type ||= 'general';
 
   if (!serve_from_cache_enabled()) {
-    cache_log('skip', {
-      key => $cache_key,
-      type => $type,
-      reason => 'serve_from_cache disabled',
-      params => $params,
-    });
+    cache_log(
+      'skip', {
+        key => $cache_key,
+        type => $type,
+        reason => 'serve_from_cache disabled',
+        params => $params,
+      },
+    );
     return;
   }
 
   my ($dir, $path) = _get_cache_path($cache_key, $type);
 
   if (!$path || !-f $path) {
-    cache_log('miss', {
-      key => $cache_key,
-      type => $type,
-      path => $path // 'undef',
-      params => $params,
-    });
+    cache_log(
+      'miss', {
+        key => $cache_key,
+        type => $type,
+        path => $path // 'undef',
+        params => $params,
+      },
+    );
     return;
   }
 
   # Read and return the cached content (raw bytes - already UTF-8 encoded)
   open my $fh, '<:raw', $path or do {
-    cache_log('miss', {
-      key => $cache_key,
-      type => $type,
-      path => $path,
-      error => "open failed: $!",
-      params => $params,
-    });
+    cache_log(
+      'miss', {
+        key => $cache_key,
+        type => $type,
+        path => $path,
+        error => "open failed: $!",
+        params => $params,
+      },
+    );
     return;
   };
   local $/;
@@ -172,13 +176,15 @@ sub get_cached_content {
   close $fh;
 
   my $size = length($content // '');
-  cache_log('hit', {
-    key => $cache_key,
-    type => $type,
-    path => $path,
-    size => $size,
-    params => $params,
-  });
+  cache_log(
+    'hit', {
+      key => $cache_key,
+      type => $type,
+      path => $path,
+      size => $size,
+      params => $params,
+    },
+  );
 
   return $content;
 }
@@ -192,22 +198,26 @@ sub store_cached_content {
   my $content_len = length($content // '');
 
   if (!cache_enabled()) {
-    cache_log('store_skip', {
-      key => $cache_key,
-      type => $type,
-      reason => 'cache disabled',
-      params => $params,
-    });
+    cache_log(
+      'store_skip', {
+        key => $cache_key,
+        type => $type,
+        reason => 'cache disabled',
+        params => $params,
+      },
+    );
     return 0;
   }
 
   if (!defined $content || $content eq '') {
-    cache_log('store_skip', {
-      key => $cache_key,
-      type => $type,
-      reason => 'empty content',
-      params => $params,
-    });
+    cache_log(
+      'store_skip', {
+        key => $cache_key,
+        type => $type,
+        reason => 'empty content',
+        params => $params,
+      },
+    );
     return 0;
   }
 
@@ -219,38 +229,44 @@ sub store_cached_content {
     eval { make_path($dir) };
 
     if ($@) {
-      cache_log('store_error', {
-        key => $cache_key,
-        type => $type,
-        path => $path,
-        error => "mkdir failed: $@",
-        params => $params,
-      });
+      cache_log(
+        'store_error', {
+          key => $cache_key,
+          type => $type,
+          path => $path,
+          error => "mkdir failed: $@",
+          params => $params,
+        },
+      );
       return 0;
     }
   }
 
   # Write content to cache file (raw bytes - already UTF-8 encoded)
   open my $fh, '>:raw', $path or do {
-    cache_log('store_error', {
-      key => $cache_key,
-      type => $type,
-      path => $path,
-      error => "open failed: $!",
-      params => $params,
-    });
+    cache_log(
+      'store_error', {
+        key => $cache_key,
+        type => $type,
+        path => $path,
+        error => "open failed: $!",
+        params => $params,
+      },
+    );
     return 0;
   };
   print $fh $content;
   close $fh;
 
-  cache_log('store', {
-    key => $cache_key,
-    type => $type,
-    path => $path,
-    size => $content_len,
-    params => $params,
-  });
+  cache_log(
+    'store', {
+      key => $cache_key,
+      type => $type,
+      path => $path,
+      size => $content_len,
+      params => $params,
+    },
+  );
 
   return 1;
 }
@@ -314,7 +330,7 @@ sub end_output_capture {
 
   # Restore original STDOUT
   open STDOUT, '>&', $original_stdout or die "Cache: Failed to restore STDOUT: $!";
-  binmode(STDOUT, ':raw');  # Output raw bytes - already UTF-8 encoded
+  binmode(STDOUT, ':raw');    # Output raw bytes - already UTF-8 encoded
   close $original_stdout;
 
   $capture_active = 0;
