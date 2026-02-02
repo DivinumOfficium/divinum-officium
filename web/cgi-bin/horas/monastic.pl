@@ -581,7 +581,12 @@ sub lectioE {
   @e = grep { !/^!/ } @e;     # remove rubrics
   $e[0] =~ s/^(v. )?/v. /;    # add initial to text
 
-  join("\n", "v. $begin", join(' ', @e));
+  # In the CIST version, before the Gospel reading, there is a Dominus vobiscum dialog
+  if ($version =~ /Cist/i) {
+    join("\n", Dominus_vobiscum($lang), "\n", "v. $begin", join(' ', @e));
+  } else {
+    join("\n", "v. $begin", join(' ', @e));
+  }
 }
 
 sub lectioE_required {
