@@ -349,6 +349,9 @@ sub end_output_capture {
   my $size = length($captured_output // '');
   cache_log('capture_end', {pid => $$, captured_size => $size});
 
+  # Print X-Cache header (miss = freshly generated, not from cache)
+  print "X-Cache: miss\n";
+
   # Print the captured content to the actual STDOUT (raw bytes)
   print $captured_output;
 

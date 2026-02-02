@@ -138,6 +138,7 @@ if (serve_from_cache_enabled()) {
 
   if (defined $cached && $cached ne '') {
     binmode(STDOUT, ':raw');  # Cached content is already UTF-8 encoded bytes
+    print "X-Cache: hit\n";
     print $cached;
     exit;
   }
