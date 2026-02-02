@@ -338,7 +338,7 @@ sub get_cache_log {
     if ($@) {
       push @entries, {
           raw => $line,
-          parse_error => $@
+          parse_error => $@,
         };
     }
   }
@@ -361,7 +361,7 @@ sub clear_cache_log {
 
   return {
     success => JSON::PP::true,
-    message => 'Log cleared'
+    message => 'Log cleared',
   };
 }
 

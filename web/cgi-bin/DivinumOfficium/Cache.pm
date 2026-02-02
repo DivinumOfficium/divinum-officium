@@ -44,7 +44,7 @@ sub cache_log {
   my ($sec, $usec) = gettimeofday();
   my @t = localtime($sec);
   my $timestamp =
-    sprintf("%04d-%02d-%02dT%02d:%02d:%02d.%06dZ", $t[5] + 1900, $t[4] + 1, $t[3], $t[2], $t[1], $t[0], $usec,);
+    sprintf("%04d-%02d-%02dT%02d:%02d:%02d.%06dZ", $t[5] + 1900, $t[4] + 1, $t[3], $t[2], $t[1], $t[0], $usec);
 
   # If path is present, make it relative to cache_dir
   my %log_data = %{$data // {}};
