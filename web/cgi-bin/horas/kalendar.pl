@@ -24,7 +24,7 @@ use DivinumOfficium::Directorium qw(dirge);
 use DivinumOfficium::Date qw(ydays_to_date);
 use DivinumOfficium::RunTimeOptions qw(check_version);
 use DivinumOfficium::Cache
-  qw(get_cache_key get_cached_content store_cached_content cache_enabled serve_from_cache_enabled start_output_capture end_output_capture);
+  qw(get_cache_key get_cached_content store_cached_content cache_enabled serve_from_cache_enabled build_cache_params start_output_capture end_output_capture);
 
 #*** common variables arrays and hashes
 our $error;
@@ -118,16 +118,16 @@ require "$Bin/kalendar/$mode.pl";
 my $format_param = strictparam('format') || '';
 
 # Build cache parameters for kalendar
-my %cache_params = (
+my %cache_params = build_cache_params(
   type => 'kalendar',
   kmonth => $kmonth,
   kyear => $kyear,
   version => $version1,
-  version2 => $version2 // '',
+  version2 => $version2,
   compare => $compare,
   mode => $mode,
   format => $format_param,
-  lang2 => $lang2 // '',
+  lang2 => $lang2,
 );
 my $cache_key = get_cache_key(%cache_params);
 my $cache_type = 'kalendar';

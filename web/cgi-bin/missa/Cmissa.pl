@@ -28,7 +28,7 @@ use DivinumOfficium::Main qw(liturgical_color);
 use DivinumOfficium::LanguageTextTools
   qw(prayer translate load_languages_data omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
 use DivinumOfficium::Cache
-  qw(get_cache_key get_cached_content store_cached_content cache_enabled serve_from_cache_enabled build_missa_cache_params start_output_capture end_output_capture);
+  qw(get_cache_key get_cached_content store_cached_content cache_enabled serve_from_cache_enabled build_cache_params start_output_capture end_output_capture);
 
 $error = '';
 $debug = '';
@@ -144,7 +144,8 @@ $only = ($lang1 eq $lang2 && $version1 eq $version2) ? 1 : 0;
 
 #*** Caching logic
 # Build cache key from all parameters that affect output
-my %cache_params = build_missa_cache_params(
+my %cache_params = build_cache_params(
+  type => 'cmissa',
   date1 => $date1,
   version => $version1,
   version1 => $version1,

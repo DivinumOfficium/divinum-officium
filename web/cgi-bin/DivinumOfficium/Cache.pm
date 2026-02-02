@@ -20,8 +20,7 @@ our @EXPORT_OK = qw(
   store_cached_content
   cache_enabled
   serve_from_cache_enabled
-  build_horas_cache_params
-  build_missa_cache_params
+  build_cache_params
   start_output_capture
   end_output_capture
   cache_log
@@ -245,56 +244,19 @@ sub store_cached_content {
   return 1;
 }
 
-# Build cache parameters for Divine Office (horas)
-sub build_horas_cache_params {
+# Build cache parameters from arbitrary key-value pairs
+# Normalizes undefined values to empty strings for consistent hashing
+# Usage: build_cache_params(type => 'horas', date1 => $date1, version => $version, ...)
+sub build_cache_params {
   my (%args) = @_;
 
-  return (
-    type => 'horas',
-    date1 => $args{date1} // '',
-    version => $args{version} // '',
-    version1 => $args{version1} // '',
-    version2 => $args{version2} // '',
-    lang1 => $args{lang1} // '',
-    lang2 => $args{lang2} // '',
-    langfb => $args{langfb} // '',
-    hora => $args{hora} // '',
-    votive => $args{votive} // '',
-    expand => $args{expand} // '',
-    psalmvar => $args{psalmvar} // '',
-    priest => $args{priest} // '',
-    Ck => $args{Ck} // '',
-    content => $args{content} // '',
-    whitebground => $args{whitebground} // '',
-    building => $args{building} // '',
-    rubrics => $args{rubrics} // '',
-    testmode => $args{testmode} // '',
-    oldhymns => $args{oldhymns} // '',
-  );
-}
+  # Normalize all values - convert undef to empty string
+  my %normalized;
+  for my $key (keys %args) {
+    $normalized{$key} = $args{$key} // '';
+  }
 
-# Build cache parameters for Mass (missa)
-sub build_missa_cache_params {
-  my (%args) = @_;
-
-  return (
-    type => 'missa',
-    date1 => $args{date1} // '',
-    version => $args{version} // '',
-    lang1 => $args{lang1} // '',
-    lang2 => $args{lang2} // '',
-    langfb => $args{langfb} // '',
-    Propers => $args{Propers} // '',
-    missanumber => $args{missanumber} // '',
-    votive => $args{votive} // '',
-    rubrics => $args{rubrics} // '',
-    solemn => $args{solemn} // '',
-    Ck => $args{Ck} // '',
-    content => $args{content} // '',
-    whitebground => $args{whitebground} // '',
-    building => $args{building} // '',
-    testmode => $args{testmode} // '',
-  );
+  return %normalized;
 }
 
 # Output capture variables

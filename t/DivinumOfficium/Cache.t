@@ -11,8 +11,7 @@ use DivinumOfficium::Cache qw(
   store_cached_content
   cache_enabled
   serve_from_cache_enabled
-  build_horas_cache_params
-  build_missa_cache_params
+  build_cache_params
 );
 
 use Test::Simple tests => 14;
@@ -67,13 +66,13 @@ ok($retrieved eq $test_content, 'Retrieved content matches stored content');
 my $nonexistent = get_cached_content('nonexistent_key', 'test');
 ok(!defined $nonexistent, 'Non-existent cache returns undef');
 
-# Test 12: build_horas_cache_params returns expected keys
-my %horas_params = build_horas_cache_params(date1 => '02-01-2026', hora => 'Laudes');
-ok(exists $horas_params{date1} && $horas_params{date1} eq '02-01-2026', 'Horas params include date1');
+# Test 12: build_cache_params returns expected keys
+my %horas_params = build_cache_params(type => 'horas', date1 => '02-01-2026', hora => 'Laudes');
+ok(exists $horas_params{date1} && $horas_params{date1} eq '02-01-2026', 'Cache params include date1');
 
-# Test 13: build_missa_cache_params returns expected keys
-my %missa_params = build_missa_cache_params(date1 => '02-01-2026', Propers => 1);
-ok(exists $missa_params{Propers} && $missa_params{Propers} eq '1', 'Missa params include Propers');
+# Test 13: build_cache_params normalizes undef to empty string
+my %missa_params = build_cache_params(type => 'missa', date1 => '02-01-2026', Propers => undef);
+ok(exists $missa_params{Propers} && $missa_params{Propers} eq '', 'Cache params normalize undef to empty string');
 
 # Test 14: Empty content not stored
 my $empty_result = store_cached_content($key1, '', 'test');
