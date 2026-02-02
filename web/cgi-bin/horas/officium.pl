@@ -309,11 +309,6 @@ if ($command =~ /setup(.*)/i) {
       }
     } elsif ($officium ne 'Pofficium.pl') {
       print par_c(mainpage());
-
-      # Debug: Show cache configuration
-      my $cache_dir = $ENV{CACHE_DIR} || '(not set)';
-      my $serve_cache = $ENV{SERVE_FROM_CACHE} || '(not set)';
-      print par_c("<FONT SIZE='-1' COLOR='gray'>CACHE_DIR: $cache_dir | SERVE_FROM_CACHE: $serve_cache</FONT>");
     }
   }
 
