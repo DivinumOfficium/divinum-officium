@@ -255,14 +255,14 @@ if (serve_from_cache_enabled() && $horas[0] && $horas[0] ne 'Plures' && $command
 }
 
 # Start output capture for caching (only for cacheable requests)
-my $do_cache =
+my $cache_enabled =
      cache_enabled()
   && $horas[0]
   && $horas[0] ne 'Plures'
   && $command !~ /setup/i
   && $command !~ /appendix/i;
 
-start_output_capture() if $do_cache;
+start_output_capture() if $cache_enabled;
 
 #*** print pages (setup, hora=pray, mainpage)
 #generate HTML
@@ -336,7 +336,7 @@ print hiddenfields();
 htmlEnd();
 
 # End output capture and store in cache
-if ($do_cache) {
+if ($cache_enabled) {
   my $captured = end_output_capture();
 
   if ($captured) {

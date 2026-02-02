@@ -145,8 +145,8 @@ if (serve_from_cache_enabled()) {
 }
 
 # Start output capture for caching
-my $do_cache = cache_enabled();
-start_output_capture() if $do_cache;
+my $cache_enabled = cache_enabled();
+start_output_capture() if $cache_enabled;
 
 if ($format_param eq 'ical') {
   require "$Bin/kalendar/ical.pl";
@@ -156,7 +156,7 @@ if ($format_param eq 'ical') {
 }
 
 # Store in cache
-if ($do_cache) {
+if ($cache_enabled) {
   my $captured = end_output_capture();
   store_cached_content($cache_key, $captured, $cache_type, \%cache_params) if $captured;
 }

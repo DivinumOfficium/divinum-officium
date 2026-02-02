@@ -174,8 +174,8 @@ if (serve_from_cache_enabled() && $command =~ /pray/i && $command !~ /setup/i) {
 }
 
 # Start output capture for caching (only for cacheable requests)
-my $do_cache = cache_enabled() && $command =~ /pray/i && $command !~ /setup/i;
-start_output_capture() if $do_cache;
+my $cache_enabled = cache_enabled() && $command =~ /pray/i && $command !~ /setup/i;
+start_output_capture() if $cache_enabled;
 
 #*** print pages (setup, hora=pray, mainpage)
 #generate HTML
@@ -300,7 +300,7 @@ print <<"PrintTag";
 PrintTag
 
 # End output capture and store in cache
-if ($do_cache) {
+if ($cache_enabled) {
   my $captured = end_output_capture();
   store_cached_content($cache_key, $captured, $cache_type, \%cache_params) if $captured;
 }
