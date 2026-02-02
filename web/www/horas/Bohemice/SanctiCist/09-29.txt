@@ -1,3 +1,9 @@
+[Ant Vespera]
+Když bojoval * Archanděl Michael s drakem, bylo slyšet hlasy pravící: Spása našemu Bohu, alleluja.
+Když vedl * bitvu drak s Archandělem Michaelem, bylo slyšet hlasy tisíců a tisíců pravící: Spása našemu Bohu, alleluja.
+Michael, Gabriel, * Cherubíni a Serafíni, jež nepřestávají volat každý den, pravíce: Hoden jsi, Pane, přijmout slávu, alleluja
+Andělé Páně, * dobrořečte Pánu navěky.
+Andělé, Archandělé, * Trůny a Panstva, Knížectva a Mocnosti, Síly nebeské, chvalte Hospodina z nebes, alleluja.
 
 [AntMatutinumM]
 Svatý Michaeli, Archanděli, chraň nás v boji, * abychom nezahynuli v hrozném soudu, alleluja.;;89
@@ -5,7 +11,7 @@ Stál Anděl podél chrámového oltáře, * měl zlatou kadidelnici ve své ruc
 Dobrořečte Hospodinu, všichni jeho Anděléů * dobrořečte, jeho služebníci, jež konáte jeho vůli; † dobrořečte Hospodinu.;;102
 
 [Ant Matutinum 3N]
-Podpořeni pomocí Archanděla Michaela, * tebe, Hospodine, prosíme, abychom ty, kterým vzdáváme čest, vzývali i v mysli, alleluja.
+Podpořeni pomocí * Archanděla Michaela, tebe, Hospodine, prosíme, abychom ty, kterým vzdáváme čest, vzývali i v mysli, alleluja.
 
 [Ant Matutinum]
 @CommuneM/C8:AntMatutinumM:1
@@ -33,73 +39,70 @@ R. Nastalo ticho v nebi, když drak vedl válku s Michaelem Archandělem. Bylo s
 V. Tisíce tisíců mu přisluhovali, desetkrát stovky tisíců mu pomáhali.
 R. Všemohoucímu Bohu.
 
+[Responsory2]
+@Sancti/05-08:Responsory7:1-2
+V. Nebojte se urážek lidi, a před jejich pomluvami se netřeste.
+@Sancti/05-08:Responsory7:4
+
 [Responsory4]
-R. Tebe, svatý Hospodine na výsostech, chválí všichni Andělé, a říkají:
-* Tobě patří chvála a čest, Hospodine.
-V. Cherubíni a Serafíni provolávají "Svatý", † a každý nebeský řád říká.
-R. Tobě patří chvála a čest, Hospodine.
+@Sancti/05-08:Responsory2:1-2
+V. Dáno mu bylo mnoho kadidla, aby je obětoval před oltářem.
+@Sancti/05-08:Responsory2:4
 
 [Lectio5]
-@Sancti/09-29:Lectio4
+@Sancti/09-29:Lectio4:s/Že .*// s/$/~/
+@Sancti/09-29:Lectio5:s/Proto také .*//s
 
 [Lectio6]
-@Sancti/09-29:Lectio5:s/ Totiž.*//s
+@Sancti/09-29:Lectio5:s/.* Totiž / Totiž /s
 
 [Lectio7]
-@Sancti/09-29:Lectio5:s/.* Totiž/Totiž/s
+@Sancti/09-29:Lectio6:s/K Marii .*//
 
 [Lectio8]
-@Sancti/09-29:Lectio6
+@Sancti/09-29:Lectio6:s/.* (K Marii)/$1/
 
 [Lectio9]
-@Sancti/09-29:Lectio7
+@Sancti/09-29:Lectio7:s/A když .*//
 
 [Lectio10]
-@Sancti/09-29:Lectio8:s/ Pán.*//
+@Sancti/09-29:Lectio8:s/Pohoršení .* (Pán )/$1/
 
 [Lectio11]
-@Sancti/09-29:Lectio8:s/.* Pán/Pán/
-
-[Responsory11]
-R. Nyní potvrzena je spása, a moc, a království našeho Boha a moc jeho Krista (Pomazaného),
-* Neboť vyhozen byl pomlouvač našich bratří, † jenž je pomlouval před tváří našeho Boha dnem i nocí, † alleluja, alleluja.
-V. Proto se radují nebesa, a ti, kdo je obývají.
-R. Neboť vyhozen byl pomlouvač našich bratří, † jenž je pomlouval před tváří našeho Boha dnem i nocí, † alleluja, alleluja.
+@Sancti/09-29:Lectio9:s/Pán praví: .*//
 
 [Lectio12]
-@Sancti/09-29:Lectio9
+@Sancti/09-29:Lectio9:s/.* (Pán praví: )/$1/
+
+[Responsory9]
+R. Naučím tě, co přijde na tvůj lid v posledních dnech, jak je psáno s Písmech pravdy
+* A nikdo není mým pomocníkem ve všech těchto věcech, než Archanděl Michael, váš vládce.
+V. Ze dne, kdy jsi vložil své srdce k porozumění, že se budeš trápit před tváří Hospodinovou, byla vyslyšena tvá slova, a já jsem přišel kvůli tvým slovům.
+R. A nikdo není mým pomocníkem ve všech těchto věcech, než Archanděl Michael, váš vládce.
+
+[Responsory11]
+R. Nevíš snad, proč jsem k tobě přišel? A nyní se vracím, abych bojoval proti vládci Peršanů, který protiřečí tvým prosbám i mému poselství.
+* Zajisté je Archanděl Michael veliký vládce, který stojí za tvým lidem, a bude mým pomocníkem.
+V. Vládce království Peršanů mi odolával dvacet jeden den.
+R. Zajisté je Archanděl Michael veliký vládce, který stojí za tvým lidem, a bude mým pomocníkem.
 
 [Responsory12]
-R. Věrné je to slovo, a veškeré důvěry hodné: † Archanděl Michael, jenž bojoval s ďáblem;
-* Milostí Boží se Michael stal vítězem na nebesích, a ďábel, odvěký nepřítel, utrpěl velikou porážku.
-V. Radují se Andělé, veselí se Archandělé z Michaela, Božího posla.
-R. Milostí Boží se Michael stal vítězem na nebesích, a ďábel, odvěký nepřítel, utrpěl velikou porážku.
+R. Věrné je to slovo, a veškeré důvěry hodné: Archanděl Michael, 
+* Jenž bojoval s ďáblem, milostí Boží se Michael stal vítězem, a ďábel, odvěký nepřítel, utrpěl velikou porážku.
+@Sancti/05-08:Responsory1:1:s/R\. /V. /
+R. Jenž bojoval s ďáblem, milostí Boží se Michael stal vítězem, a ďábel, odvěký nepřítel, utrpěl velikou porážku.
 
-[Ant Laudes] (rubrica cisterciensis)
-@Sancti/09-29:Ant Vespera
+[Ant Laudes]
+@:Ant Vespera
 
 [Responsory Laudes]
-@Sancti/05-08:Responsory Breve Nona
-(sed rubrica cisterciensis)
 @Sancti/05-08:Responsory Breve Tertia
 
-[Responsory TertiaM]
-@:Versum 1
-(sed rubrica cisterciensis)
-@Sancti/05-08:Nocturn 1 Versum:s/, all?el[uú][ij]a//g
-
-[Responsory SextaM]
-@Sancti/05-08:Nocturn 2 Versum_
-(sed rubrica cisterciensis)
-@Sancti/05-08:Nocturn 2 Versum:s/, all?el[uú][ij]a//g
-
-[Responsory NonaM]
-@:Versum 3
-(sed rubrica cisterciensis)
-@Sancti/05-08:Nocturn 3 Versum:s/, all?el[uú][ij]a//g
+[Versum 2]
+@Sancti/05-08:Versum Nona:s/Bohu/Hospodinu/
 
 [Ant Vespera 3] (nisi rubrica cisterciensis)
 @Sancti/05-08:Ant Vespera:s/\.$/;;109/ s/\.$/;;110/ s/\.$/;;111/ s/\.$/;;137/
 
-[Ant 3] (rubrica cisterciensis)
-@Sancti/09-29
+[Ant 3] 
+Stál Anděl * podél chrámového oltáře, měl zlatou kadidelnici ve své ruce, a bylo mu dáno mnoho kadidla, a vystupoval vonný kouř před tvář Hospodinovu z ruky Anděla.
