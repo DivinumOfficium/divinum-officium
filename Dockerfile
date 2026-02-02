@@ -28,6 +28,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     wget \
     apache2 \
+    libapache2-mod-perl2 \
     libcgi-session-perl \
     && rm -rf /var/lib/apt/lists/*
 

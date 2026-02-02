@@ -3,8 +3,7 @@ package DivinumOfficium::Directorium;
 use strict;
 use warnings;
 
-use FindBin qw($Bin);
-use lib "$Bin/..";
+use File::Basename qw(dirname);
 
 use DivinumOfficium::FileIO qw(do_read);
 use DivinumOfficium::Date qw(leapyear geteaster get_sday nextday);
@@ -18,7 +17,8 @@ BEGIN {
 
 ### private vars
 
-my $datafolder = "$Bin/../../www/Tabulae";
+# Use __FILE__ to find data relative to this module (works with mod_perl preloading)
+my $datafolder = dirname(__FILE__) . "/../../www/Tabulae";
 my %_data;
 my %_dCACHE;    # cache everything mainly for kalendar.pl
 
