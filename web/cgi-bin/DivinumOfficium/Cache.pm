@@ -281,10 +281,10 @@ sub build_cache_params {
 
   # Normalize all values - convert undef to empty string
   my %normalized;
+
   for my $key (keys %args) {
     $normalized{$key} = $args{$key} // '';
   }
-
 
   return %normalized;
 }
@@ -311,6 +311,7 @@ sub start_output_capture {
   # Redirect STDOUT to in-memory scalar (no encoding layer - causes issues)
   close STDOUT;
   open STDOUT, '>:utf8', \$captured_output or do {
+
     # Restore original STDOUT on failure
     open STDOUT, '>&', $original_stdout;
     cache_log('capture_error', {error => "Failed to redirect STDOUT: $!"});
