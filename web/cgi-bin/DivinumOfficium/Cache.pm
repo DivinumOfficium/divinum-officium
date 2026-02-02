@@ -48,8 +48,10 @@ sub cache_log {
 
   # If path is present, make it relative to cache_dir
   my %log_data = %{$data // {}};
+
   if (exists $log_data{path} && defined $log_data{path} && $log_data{path} ne 'undef') {
     my $path = $log_data{path};
+
     # Strip cache_dir prefix to make path relative
     if ($path =~ /^\Q$cache_dir\E\/?(.*)$/) {
       $log_data{path} = $1;
@@ -283,6 +285,7 @@ sub build_cache_params {
     $normalized{$key} = $args{$key} // '';
   }
 
+
   return %normalized;
 }
 
@@ -311,6 +314,7 @@ sub start_output_capture {
     # Restore original STDOUT on failure
     open STDOUT, '>&', $original_stdout;
     cache_log('capture_error', {error => "Failed to redirect STDOUT: $!"});
+
     return 0;
   };
 

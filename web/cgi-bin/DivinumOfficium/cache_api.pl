@@ -328,6 +328,7 @@ sub get_cache_log {
 
   # Parse JSON lines
   my @entries;
+
   for my $line (@lines) {
     chomp $line;
     next unless $line;
@@ -335,6 +336,7 @@ sub get_cache_log {
       my $entry = decode_json($line);
       push @entries, $entry;
     };
+
     if ($@) {
       push @entries, {
           raw => $line,
