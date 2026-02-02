@@ -15,13 +15,18 @@ RUN echo "}" >> /build/buildinfo
 # Final container
 FROM public.ecr.aws/docker/library/perl:5.42-slim AS final
 
+RUN mkdir /cache
+
 # Set envs
 ENV APACHE_RUN_USER=www-data \
     APACHE_RUN_GROUP=www-data \
     APACHE_LOCK_DIR=/var/lock/apache2 \
     APACHE_LOG_DIR=/var/log/apache2 \
     APACHE_PID_FILE=/var/run/apache2/apache2.pid \
-    APACHE_SERVER_NAME=localhost
+    APACHE_SERVER_NAME=localhost \
+    CACHE_DIR=/cache \
+    SERVE_FROM_CACHE=true \
+    CACHE_ADMIN_TOKEN=changeme
 
 # Install packages
 RUN apt-get update && apt-get install -y \
@@ -39,8 +44,9 @@ RUN wget -O /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/
 COPY docker/apache/ports.conf /etc/apache2/ports.conf
 COPY docker/apache/apache2.conf /etc/apache2/apache2.conf
 
-# Set permissionsso apache can write to logs without root
-RUN mkdir -p /var/run/apache2 /var/lock/apache2 /var/log/apache2 ; chown -R www-data:www-data /var/lock/apache2 /var/log/apache2 /var/run/apache2
+# Set permissions so apache can write to logs and cache without root
+RUN mkdir -p /var/run/apache2 /var/lock/apache2 /var/log/apache2 && \
+    chown -R www-data:www-data /var/lock/apache2 /var/log/apache2 /var/run/apache2 /cache
 
 # Copy in code
 WORKDIR /var/www

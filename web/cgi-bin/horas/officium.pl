@@ -28,6 +28,8 @@ use DivinumOfficium::Date qw(prevnext);
 use DivinumOfficium::RunTimeOptions qw(check_version check_horas check_language);
 use DivinumOfficium::LanguageTextTools
   qw(prayer rubric translate load_languages_data omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
+use DivinumOfficium::Cache
+  qw(get_cache_key get_cached_content store_cached_content cache_enabled serve_from_cache_enabled build_cache_params start_output_capture end_output_capture);
 
 $error = '';
 $debug = '';
@@ -209,6 +211,59 @@ if ($command =~ /kalendar/) {    # kalendar widget
   exit;
 }
 
+#*** Caching logic
+# Build cache key from all parameters that affect output
+my %cache_params = build_cache_params(
+  type => 'horas',
+  date1 => $date1,
+  version => $version,
+  version1 => $version1,
+  version2 => $version2,
+  lang1 => $lang1,
+  lang2 => $lang2,
+  langfb => $langfb,
+  hora => $hora,
+  horas => join(',', @horas),
+  votive => $votive,
+  expand => $expand,
+  psalmvar => $psalmvar,
+  priest => $priest,
+  Ck => $Ck,
+  content => $content,
+  whitebground => $whitebground,
+  building => $building,
+  rubrics => $rubrics,
+  testmode => $testmode,
+  oldhymns => $oldhymns,
+  plures => $plures,
+  officium => $officium,
+);
+my $cache_key = get_cache_key(%cache_params);
+my $cache_type = 'horas';
+
+# Check if we have cached content and should serve from cache
+if (serve_from_cache_enabled() && $horas[0] && $horas[0] ne 'Plures' && $command !~ /setup/i && $command !~ /appendix/i)
+{
+  my $cached = get_cached_content($cache_key, $cache_type, \%cache_params);
+
+  if (defined $cached && $cached ne '') {
+    binmode(STDOUT, ':raw');    # Cached content is already UTF-8 encoded bytes
+    print "X-Cache: hit\n";
+    print $cached;
+    exit;
+  }
+}
+
+# Start output capture for caching (only for cacheable requests)
+my $cache_enabled =
+     cache_enabled()
+  && $horas[0]
+  && $horas[0] ne 'Plures'
+  && $command !~ /setup/i
+  && $command !~ /appendix/i;
+
+start_output_capture() if $cache_enabled;
+
 #*** print pages (setup, hora=pray, mainpage)
 #generate HTML
 $background = ($whitebground) ? ' class="contrastbg"' : '';
@@ -279,3 +334,12 @@ if ($command =~ /setup(.*)/i) {
 
 print hiddenfields();
 htmlEnd();
+
+# End output capture and store in cache
+if ($cache_enabled) {
+  my $captured = end_output_capture();
+
+  if ($captured) {
+    store_cached_content($cache_key, $captured, $cache_type, \%cache_params);
+  }
+}

@@ -27,6 +27,9 @@ use lib "$Bin/..";
 use DivinumOfficium::Main qw(liturgical_color);
 use DivinumOfficium::LanguageTextTools
   qw(prayer translate load_languages_data omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
+use DivinumOfficium::Cache
+  qw(get_cache_key get_cached_content store_cached_content cache_enabled serve_from_cache_enabled build_cache_params start_output_capture end_output_capture);
+
 $error = '';
 $debug = '';
 
@@ -138,6 +141,41 @@ our $votive = '';
 $expandnum = strictparam('expandnum');
 
 $only = ($lang1 eq $lang2 && $version1 eq $version2) ? 1 : 0;
+
+#*** Caching logic
+# Build cache key from all parameters that affect output
+my %cache_params = build_cache_params(
+  type => 'cmissa',
+  date1 => $date1,
+  version => $version1,
+  version1 => $version1,
+  version2 => $version2,
+  lang1 => $lang1,
+  lang2 => $lang2,
+  langfb => $langfb,
+  Ck => $Ck,
+  NewMass => $NewMass,
+  command => $command,
+  whitebground => $whitebground,
+);
+my $cache_key = get_cache_key(%cache_params);
+my $cache_type = 'cmissa';
+
+# Check if we have cached content and should serve from cache
+if (serve_from_cache_enabled() && $command =~ /pray/i && $command !~ /setup/i) {
+  my $cached = get_cached_content($cache_key, $cache_type, \%cache_params);
+
+  if (defined $cached && $cached ne '') {
+    binmode(STDOUT, ':raw');    # Cached content is already UTF-8 encoded bytes
+    print "X-Cache: hit\n";
+    print $cached;
+    exit;
+  }
+}
+
+# Start output capture for caching (only for cacheable requests)
+my $cache_enabled = cache_enabled() && $command =~ /pray/i && $command !~ /setup/i;
+start_output_capture() if $cache_enabled;
 
 #*** print pages (setup, hora=pray, mainpage)
 #generate HTML
@@ -260,6 +298,12 @@ print <<"PrintTag";
 </FORM>
 </BODY></HTML>
 PrintTag
+
+# End output capture and store in cache
+if ($cache_enabled) {
+  my $captured = end_output_capture();
+  store_cached_content($cache_key, $captured, $cache_type, \%cache_params) if $captured;
+}
 
 #*** hedline($head) prints headline for main and pray
 sub headline {
