@@ -1208,6 +1208,11 @@ sub lectio : ScriptFunc {
 
   $w =~ s/^\_//;
 
+  # In Cistercian books, the asterisks are always red
+  if ($version =~ /Cist/i) {
+    $w =~ s{\*}{<FONT COLOR="RED">*</FONT>};
+  }
+
   # add initial to text
   if ($w !~ /^!/m) {
     $w =~ s/^(?=\p{Letter})/v. /;
