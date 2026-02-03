@@ -5,24 +5,56 @@
 Doxology=Nat
 Ant Matutinum 12 special
 
-[Responsory Vespera 1] (rubrica Barroux)
-@Sancti/03-25:Responsory8:1-2
-V. Gabriélem Archángelum scimus divínitus te esse affátum: úterum tuum de Spíritu Sancto crédimus impregnátum: erubéscat Judǽus ínfelix, qui dicit Christum ex Joseph sémine esse natum.
-@Sancti/03-25:Responsory8:4
+[Ant Vespera] (tempore paschali)
+@CommuneCist/C6
+
+[Responsory Vespera 1]
+R. Ave María, grátia plena, Dóminus tecum: 
+* Spíritus sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi: quod enim ex te nascétur Sanctum, vocábitur Fílius Dei. (Allelúia.)
+V. Quómodo fiet istud, quóniam virum non cognósco? Et respóndens Angelus, dixit ei: 
+R.  Spíritus sanctus supervéniet in ten, et virtus Altíssimi obumbrábit tibi: quod enim ex te nascétur Sanctum, vocábitur Fílius Dei. (Allelúia.)
 
 [Responsory Vespera]
-R.br. Ángelus Dómini * Nuntiávit Maríæ.
-R. Ángelus Dómini * Nuntiávit Maríæ.
-V. Et concépit de Spíritu Sancto.
-R. Nuntiávit Maríæ.
-&Gloria
-R. Ángelus Dómini * Nuntiávit Maríæ.
-
-[Responsory Vespera] (rubrica cisterciensis)
 @CommuneCist/C11:Responsory Laudes
 
+[Versum 1]
+V. Angelus Dómini nuntiávit Maríæ. (Allelúia.)
+R. Et concépit de Spíritu Sancto. (Allelúia.)
+
+[Ant 1]
+Ecce concípies * in útero, et páries Fílium, et vocábis nomen ejus Jesum: hic erit magnus, et Fílius Altíssimi vocábitur. (Allelúia.)
+
+[Invit]
+Ave, María, grátia plena, Dóminus tecum: * Benedícta tu in muliéribus.
+(sed tempore paschali)
+@CommuneCist/C1p
+
+[Ant Matutinum]
+@Sancti/03-25:Ant Vespera:1-2:s/;;109/;;8/ s/;;112/;;18/
+@Sancti/08-15:Ant Matutinum:3
+Quómodo fiet istud * Angele Dei, quia virum non cognósco? Audi María Virgo Christi: Spíritus sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi.;;44
+@TemporaCist/Adv3-3:Ant Prima:s/$/;;45/
+@Tempora/Adv2-0:Ant Laudes:1:s/, allel[uú][ij]a./.;;47/
+@Sancti/03-25:Ant Vespera:3-5:s/;;121/;;84/ s/;;126/;;86/ s/;;147/;;95/
+@Commune/C11:Ant 2:s/, allel[uú][ij]a./.;;96/
+Emítte Agnum, Dómine, * Dominatórem terræ, de Petra desérti, ad montem fíliæ Sion.;;97
+@Commune/C12A:Ant Matutinum 9:s/;;97/;;98/
+;;249;250;251/
+
+[Ant Matutinum] (tempore paschali)
+@CommuneCist/C6
+
+[Nocturn 1 Versum]
+V. Ave María, grátia plena. (Allelúia.) 
+R. Dóminus tecum. (Allelúia.)
+
+[Nocturn 2 Versum]
+@Commune/C10:Versum 2
+
 [Ant Matutinum 3N]
-@:Ant 3
+@Tempora/Adv3-0:Ant 2:s/, allel[uú][ij]a//
+(sed tempore paschali)
+@CommuneCist/C6:Ant Matutinum:13
 
 [Lectio3]
 @Tempora/Adv4-0:Lectio1:2-5 s/-7/-3/
@@ -95,23 +127,29 @@ Et bene utrúmque pósuit Scriptúra, ut et desponsáta esset, et virgo: virgo, 
 V. Gabriélem Archángelum crédumis divínitus te esse affátum: úterum tuum de Spíritu Sancto crédimus impregnátum: erubéscat Judǽus ínfelix, qui dicit Christum ex Joseph sémine esse natum:
 @Sancti/03-25:Responsory8:4
 
-[Responsory Laudes] (nisi rubrica cisterciensis)
-@:Responsory Vespera
+[Ant Laudes] (tempore paschali)
+@Psalterium/Psalmi/Psalmi minor:Pasch
 
-[Ant Tertia] (rubrica cisterciensis)
+[Ant 2]
+Egrediétur virga * de radíce Jesse, et replébitur omnis terra glória Dómini, et vidébit omnis caro salutáre Dei. (Allelúia, allelúia.) 
+
+[Ant Tertia] (nisi tempore paschali)
 @:Ant 1
 
-[Responsory TertiaM] (rubrica cisterciensis)
+[Responsory TertiaM]
 V. Ave María, grátia plena. (Allelúia.) 
 R. Dóminus tecum. (Allelúia.) 
 
-[Ant Sexta] (rubrica cisterciensis)
+[Ant Sexta] (nisi tempore paschali)
 @Sancti/03-25:Ant Vespera:3
 
-[Responsory SextaM] (rubrica cisterciensis)
+[Responsory SextaM]
 V. Benedícta tu in muliéribus. (Allelúia.) 
 R. Et benedíctus fructus ventris tui. (Allelúia.) 
 
-[Responsory NonaM] (rubrica cisterciensis)
+[Responsory NonaM]
 V. Elégit eam Dóminus. (Allelúia.) 
 R. In hæreditátem sibi. (Allelúia.) 
+
+[Ant 3]
+Spíritus sanctus * in te descéndet‚ María, ne tímeas, habébis in útero Fílium Dei. (Allelúia.)

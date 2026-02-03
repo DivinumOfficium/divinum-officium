@@ -52,6 +52,7 @@ sub monastic_major_responsory {
       # on j. Vespers. Of course, we need to limit it to Fest. Serm.
       $cistrv1f = $rank >= 5 || $ctrank[2] >= 5;
       $resp = '' unless $cistrv1f;
+      $resp =~ s{\*}{<FONT COLOR="RED">*</FONT>};
 
       if ($resp =~ /N\./) {
         my %w = columnsel($lang) ? %winner : %winner2;

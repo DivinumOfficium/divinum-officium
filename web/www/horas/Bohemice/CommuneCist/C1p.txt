@@ -1,5 +1,5 @@
 [Ant Vespera]
-Alleluja, * alleluja, alleluja.
+Alleluja, * alleluja, alleluja, alleluja, alleluja, alleluja, alleluja, alleluja, alleluja, alleluja.
 
 [Versum 1]
 @Commune/C1:Nocturn 3 Versum:s/\.$/, alleluja./gm
@@ -8,22 +8,22 @@ Alleluja, * alleluja, alleluja.
 @Commune/C1p:Ant 2
 
 [Invit]
-Alleluja, alleluja, * Alleluja.
+Alleluja, alleluja, alleluja * Alleluja, alleluja, alleluja.
 
 [Ant Matutinum]
-Alleluja, * alleluja, Alleluja.;;18
+Alleluja, * alleluja, alleluja, alleluja, alleluja, alleluja, alleluja, alleluja, alleluja.;;18
 ;;23
 ;;32
 ;;33
 ;;44
 ;;46
-Alleluja, * alleluja, Alleluja.;;60
+Alleluja, * alleluja, alleluja, alleluja, alleluja, alleluja, alleluja, alleluja.;;60
 ;;63
 ;;64
 ;;74
 ;;96
 ;;98
-Alleluja, * alleluja, Alleluja.;;253;254;255
+Alleluja, * alleluja, alleluja, alleluja, alleluja, alleluja, alleluja.;;253;254;255
 
 [Nocturn 1 Versum]
 @CommuneCist/C1::s/\.$/, alleluja./gm
