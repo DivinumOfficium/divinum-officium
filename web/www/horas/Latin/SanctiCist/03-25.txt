@@ -32,12 +32,12 @@ Ave, María, grátia plena, Dóminus tecum: * Benedícta tu in muliéribus.
 [Ant Matutinum]
 @Sancti/03-25:Ant Vespera:1-2:s/;;109/;;8/ s/;;112/;;18/
 @Sancti/08-15:Ant Matutinum:3
-Quómodo fiet istud * Angele Dei, quia virum non cognósco? Audi María Virgo Christi: Spíritus sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi.;;44
+@Sancti/03-25:Ant 2:s/$/;;44/
 @TemporaCist/Adv3-3:Ant Prima:s/$/;;45/
 @Tempora/Adv2-0:Ant Laudes:1:s/, allel[uú][ij]a./.;;47/
 @Sancti/03-25:Ant Vespera:3-5:s/;;121/;;84/ s/;;126/;;86/ s/;;147/;;95/
 @Commune/C11:Ant 2:s/, allel[uú][ij]a./.;;96/
-Emítte Agnum, Dómine, * Dominatórem terræ, de Petra desérti, ad montem fíliæ Sion.;;97
+@Psalterium/Psalmi/Psalmi major:Day2 Laudes3:2:s/$/;;97/
 @Commune/C12A:Ant Matutinum 9:s/;;97/;;98/
 ;;249;250;251/
 
@@ -62,65 +62,61 @@ R. Dóminus tecum. (Allelúia.)
 [Lectio4]
 @Tempora/Adv4-0:Lectio1:2-9 s/1-/4-/ s/1.*4/4/s
 
+[Responsory3]
+@Tempora/Adv3-6:Responsory2:1-2
+@Commune/C10a:Communio:2:s/^/V. /
+@Tempora/Adv3-6:Responsory2:4
+
 [Responsory4]
-R. Quæ cum audísset, turbáta est in sermone ejus: † et cogitábat, qualis esset ista salutátio
-* Et ait Angelus ei.
-V. Ne tímeas Maria, invenísti enim grátiam apud Deum.
-R. Et ait Angelus ei.
+@Sancti/03-25:Responsory3
 
 [Lectio5]
 @Sancti/03-25:Lectio4
 
-[Responsory5]
-@Sancti/03-25:Responsory4
-
 [Lectio6]
 @Sancti/03-25:Lectio5
-
-[Responsory6]
-@Sancti/03-25:Responsory5
 
 [Lectio7]
 @Sancti/03-25:Lectio6
 
-[Responsory7]
-R. Dixit autem María ad Angelum: † Quómodo fiet istud, quóniam virum non cognósco?
-* Et respóndens Angelus dixit ei.
-V. Spíritus Sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi.
-R. Et respóndens Angelus dixit ei.
-
 [Lectio8]
 Verax namque misericórdia Dei, cum ad reparándum humánum genus ineffabíliter ei multa suppéterent, hanc potíssimum consuléndi viam elégit, qua ad destruéndum opus diáboli non virtúte uterétur poténtiæ, sed ratióne justítiæ. Nam supérbia hostis antíqui non inmérito sibi in omnes hómines jus tyránnicum vindicábat, nec indébito dominátu premébat, quos a mandáto Dei spontáneos in obséquium suæ voluntátis illéxerat. Non ítaque juste amítteret originálem humáni géneris servitútem, nisi de eo quod subégerat vincerétur.
 
+[Responsory5]
+@TemporaCist/Adv1-0:Responsory7
+
+[Responsory6]
+@Tempora/Adv3-0:Responsory6
+
+[Responsory7]
+@Sancti/03-25:Responsory5
+
 [Responsory8]
-R. Dixit autem María: Ecce ancílla Dómini:
-* Fiat mihi secúndum verbum tuum.
-V. Benedícta tu in muliéribus, et benedíctus fructus ventris tui.
-R. Fiat mihi secúndum verbum tuum.
+@TemporaCist/Adv4-0:Responsory5
 
 [Lectio9]
 @Sancti/03-25:Lectio7
 
 [Responsory9]
-R. Beátam me dicent omnes generatiónes,
-* Quia fecit mihi Dóminus magna qui potens est, † et sanctum nomen ejus.
-V. Magníficat ánima mea Dóminum: † et exsultávit spíritus meus in Deo, salutári meo.
-R. Quia fecit mihi Dóminus magna qui potens est, † et sanctum nomen ejus.
+@Tempora/Adv4-0:Responsory9
 
 [Lectio10]
 Et bene utrúmque pósuit Scriptúra, ut et desponsáta esset, et virgo: virgo, ut expers virílis consórtii viderétur: desponsáta, ne temerátæ virginitátis adurerétur infámia, cujus gravis alvus corruptélæ viderétur insigne præférre. Máluit autem Dóminus áliquos de suo ortu quam de matris pudóre dubitáre. Sciébat enim téneram esse vírginis verecúndiam, et lúbricam famam pudóris: nec putávit ortus sui fidem matris injúriis adstruéndam.
 
-[Responsory10]
-@Sancti/03-25:Responsory6
-
 [Lectio11]
 @Sancti/03-25:Lectio8
 
-[Responsory11]
-@Sancti/03-25:Responsory7
-
 [Lectio12]
 @Sancti/03-25:Lectio9
+
+[Responsory9]
+@Tempora/Adv4-0:Responsory9
+
+[Responsory10]
+@Tempora/Adv3-4:Responsory3
+
+[Responsory11]
+@Tempora/Adv3-5:Responsory1
 
 [Responsory12]
 @Sancti/03-25:Responsory8:1-2

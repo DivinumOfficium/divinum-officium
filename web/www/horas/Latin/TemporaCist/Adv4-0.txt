@@ -1,0 +1,76 @@
+@Tempora/Adv4-0
+
+[Rule]
+12 lectiones
+Psalmi Feria
+
+[Lectio1]
+@Tempora/Adv4-0:Lectio1:s/-7/-4/ s/5 .*//s
+
+[Lectio2]
+@Tempora/Adv4-0:Lectio1:2-9 s/1-/5-/ s/1 .*5 /5 /s
+@Tempora/Adv4-0:Lectio2:s/!.*// s/8 .*//s
+
+[Lectio3]
+@Tempora/Adv4-0:Lectio2:s/7-/8-/ s/7 .*8 /8 /s
+
+[Lectio4]
+@Tempora/Adv4-0:Lectio3
+
+[Responsory4]
+R. Parátus esto, Israël, in occúrsum Dómini, quóniam venit
+* Formans montes et creans spíritus, † et annúntians in homínibus Christum secúndum advéntum suum.
+V. Ecce Dominátor Dominus, cum virtúte véniet.
+R. Formans montes et creans spíritus, † et annúntians in homínibus Christum secúndum advéntum suum.
+
+[Lectio5]
+@Tempora/Adv4-0:Lectio4
+
+[Responsory5]
+R. Virgo Israël, revértere ad civitátes tuas, usquequo dolens avertéris?
+* Generábis Dóminum Salvatórem, oblatiónem novam in terra: * Ambulábunt hómines in salvatiónem.
+V. In charitáte perpétua diléxi te: ídeo attráxi te míserans.
+R. Generábis Dóminum Salvatórem, oblatiónem novam in terra.
+
+[Lectio6]
+@Tempora/Adv4-0:Lectio5
+
+[Responsory6]
+@Tempora/Adv4-0:Responsory5
+
+[Lectio7]
+@Tempora/Adv4-0:Lectio6:s/Diligéndo .*//s
+
+[Responsory7]
+@Tempora/Adv4-0:Responsory6
+
+[Lectio8]
+@Tempora/Adv4-0:Lectio6:s/.* Diligéndo /Diligéndo /s
+
+[Responsory8]
+@Tempora/Adv1-2:Responsory1
+
+[Lectio9]
+@Tempora/Adv4-0:Lectio7
+
+[Responsory9]
+@Tempora/Adv4-0:Responsory7
+
+[Lectio10]
+@Tempora/Adv4-0:Lectio8:s/Ut enim .*//s
+
+[Responsory10]
+@Tempora/Adv4-0:Responsory8
+
+[Lectio11]
+@Tempora/Adv4-0:Lectio8:s/.* Ut enim /Ut enim /s s/$/~/
+@Tempora/Adv4-0:Lectio9:s/Neque .*//s
+
+[Responsory11]
+@Tempora/Adv4-0:Responsory9
+
+[Lectio12]
+@Tempora/Adv4-0:Lectio9:s/.* Neque /Neque /s
+
+[Responsory12]
+@Tempora/Adv3-5:Responsory1
