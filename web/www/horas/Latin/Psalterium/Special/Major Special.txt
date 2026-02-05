@@ -166,7 +166,7 @@ $Deo gratias
 [Dominica Vespera]
 @:Dominica Vespera_
 (sed rubrica praedicatorum)
-@Psalterium/Special/Prima Special:Per Annum:s/$/\n\$Deo gratias/
+@Psalterium/Special/Prima Special:Per Annum:s/$/\n\$Deo gratias/ s/ autem//
 
 [Responsory Dominica Vespera]
 R.br. Quam magnificáta sunt * ópera tua, Dómine.
@@ -577,15 +577,10 @@ In viam pacis * dírige nos Dómine.
 [Feria Vespera]
 @:Dominica Vespera
 
-[Sabbato Vespera] (rubrica praedicatorum)
-!2 Cor 1:3-7
-v. Benedíctus Deus et Pater Dómini nostri Jesu Christi, Pater misericordiárum, et Deus totíus consolatiónis, qui consolátur nos in omni tribulatióne nostra.
-$Deo gratias
-
 [Feria Vespera] (feria 7)
 @Tempora/Pent01-0:Capitulum Laudes
 (sed rubrica praedicatorum)
-@:Sabbato Vespera
+@:Dominica Vespera_
 
 [Responsory Feria Vespera_]
 R.br. Benedícam Dóminum * In omni témpore.
