@@ -9,10 +9,7 @@ Ant Matutinum 12 special
 @CommuneCist/C6
 
 [Responsory Vespera 1]
-R. Ave María, grátia plena, Dóminus tecum: 
-* Spíritus sanctus supervéniet in te, et virtus Altíssimi obumbrábit tibi: quod enim ex te nascétur Sanctum, vocábitur Fílius Dei. (Allelúia.)
-V. Quómodo fiet istud, quóniam virum non cognósco? Et respóndens Angelus, dixit ei: 
-R.  Spíritus sanctus supervéniet in ten, et virtus Altíssimi obumbrábit tibi: quod enim ex te nascétur Sanctum, vocábitur Fílius Dei. (Allelúia.)
+@Sancti/03-25:Responsory2
 
 [Responsory Vespera]
 @CommuneCist/C11:Responsory Laudes
@@ -126,26 +123,29 @@ V. Gabriélem Archángelum crédumis divínitus te esse affátum: úterum tuum d
 [Ant Laudes] (tempore paschali)
 @Psalterium/Psalmi/Psalmi minor:Pasch
 
+[Capitulum Laudes]
+@Sancti/03-25:Capitulum Laudes:s/virgo/Virgo/
+
+[Versum 2]
+@:Versum 1
+
 [Ant 2]
 Egrediétur virga * de radíce Jesse, et replébitur omnis terra glória Dómini, et vidébit omnis caro salutáre Dei. (Allelúia, allelúia.) 
 
 [Ant Tertia] (nisi tempore paschali)
 @:Ant 1
 
-[Responsory TertiaM]
-V. Ave María, grátia plena. (Allelúia.) 
-R. Dóminus tecum. (Allelúia.) 
+[Responsory TertiaM] 
+@:Nocturn 1 Versum
 
 [Ant Sexta] (nisi tempore paschali)
 @Sancti/03-25:Ant Vespera:3
 
-[Responsory SextaM]
-V. Benedícta tu in muliéribus. (Allelúia.) 
-R. Et benedíctus fructus ventris tui. (Allelúia.) 
+[Responsory SextaM] 
+@:Nocturn 2 Versum
 
-[Responsory NonaM]
-V. Elégit eam Dóminus. (Allelúia.) 
-R. In hæreditátem sibi. (Allelúia.) 
+[Versum 3]
+@:Versum 1
 
 [Ant 3]
 Spíritus sanctus * in te descéndet‚ María, ne tímeas, habébis in útero Fílium Dei. (Allelúia.)
