@@ -1,0 +1,98 @@
+@Tempora/Quad5-5
+
+[Rule]
+Psalmi Dominica
+Antiphonas horas
+12 lectiones
+Gloria responsory
+Doxology=NatT
+
+[Ant Matutinum]
+@Tempora/Quad5-5::1-2:s/3/12/
+@Tempora/Quad5-5::3-7:s/12/14/
+Pássio Dómini * ipsam ejus Matrem, carnáli orbitáte gráviter percússam, vehementíssime contristávit.;;69
+Ferrum lánceæ militáris * latus quidem Salvatóris, ánimam vero transívit Vírginis.;;81
+@Tempora/Quad5-5::8
+@Sancti/09-15:Ant Matutinum:3:s/30/89/
+@Tempora/Quad5-5::9
+Dóleo super te * fili mi, decórus nimis et amábilis super amórem mulíerum.;;246;247;248
+
+[Lectio1]
+@Tempora/Quad5-5::1-5
+
+[Lectio2]
+@Tempora/Quad5-5:Lectio1:2-7:s/1-/3-/ s/1 .*4/4/s
+
+[Lectio3]
+@Tempora/Quad5-5:Lectio2
+
+[Lectio4]
+@Tempora/Quad5-5:Lectio3
+
+[Responsory1]
+@CommuneCist/C7:Responsory4:1-2
+@Commune/C11:Ant VesperaBMV:1:s/^/V. / s/\* // s/;;.*//
+@CommuneCist/C7:Responsory4:4
+
+[Responsory2]
+@Tempora/Quad5-5:Responsory1
+
+[Responsory3]
+@Tempora/Quad5-5:Responsory2
+
+[Responsory4]
+@Tempora/Quad5-5:Responsory3:s/cruce/Cruci/
+
+[Lectio5]
+@Tempora/Quad5-5:Lectio4
+
+[Lectio6]
+@Tempora/Quad5-5:Lectio5:s/O commutatiónem! .*//
+
+[Lectio7]
+@Tempora/Quad5-5:Lectio5:s/.* (O commutatiónem!)/$1/
+
+[Lectio8]
+@Tempora/Quad5-5:Lectio6
+
+[Responsory5]
+@Tempora/Quad5-5:Responsory4
+
+[Responsory6]
+R. Intendérunt arcum suum rem amáram:
+* Ut sagíttent in occúltis immaculátum.
+@Tempora/Quad5-5:Ant Matutinum:9:s/^/V. / s/\* // s/;;.*//
+R. Ut sagíttent in occúltis immaculátum.
+
+[Responsory7]
+@Tempora/Quad5-5:Responsory5
+
+[Responsory8]
+@Tempora/Quad5-5:Responsory6
+
+[Lectio9]
+@Tempora/Quad5-5:Lectio7
+
+[Lectio10]
+@Tempora/Quad5-5:Lectio8
+
+[Lectio11]
+Nam cur hoc fécerit, quod séquitur, índicat. Ait enim Evangelísta: Ex illa hora accépit eam discípulus in sua; de seípso dicens: sic quippe commemoráre solet, quod eum diligébat Jesus, qui útique omnes, sed ipsum prae céteris et familiárius diligébat, ita ut in convívio eum supra suum pectus discúmbere fáceret; credo, ut istíus Evangélii, quod per eum fúerat praedicatúrus, divínam excelléntiam hoc modo commendáret.
+
+[Lectio12]
+Sed in quæ sua Joánnes Matrem Dómini accépit? Neque enim non ex eis erat, qui dixérunt ei: Ecce nos dimísimus ómnia et secúti sumus te. Sed ibi quoque audíerat: Quicúmque ista dimíserit propter me, accípiet in hoc sæculo cénties tantum. Habébat ergo discípulus centuplíciter plura quam dimíserat, in quæ suscíperet ejus Matrem, qui hæc illi donáverat? Sed in ea societáte beátus Joánnes recéperat céntuplum, ubi nemo dicébat áliquid suum, sed erant illis ómnia commúnia: sicut in Apostolórum Actibus scriptum est. Sic enim Apóstoli erant quasi nihil habéntes, et ómnia possidéntes.
+
+[Responsory9]
+@Tempora/Quad5-5:Responsory7
+
+[Responsory10]
+@Tempora/Quad5-5:Responsory8
+
+[Responsory11]
+@Tempora/Quad6-5:Responsory9
+
+[Responsory12]
+@Sancti/09-15:Responsory8:s/, princeps/ Princeps/
+
+[Responsory Laudes]
+@Tempora/Quad5-5:Responsory Breve Nona:s/tibi/tibi, Deus/g
