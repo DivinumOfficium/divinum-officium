@@ -29,9 +29,6 @@ use DivinumOfficium::Main qw(vernaculars liturgical_color);
 use DivinumOfficium::LanguageTextTools
   qw(prayer translate load_languages_data omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
 use DivinumOfficium::RunTimeOptions qw(check_version check_language);
-use DivinumOfficium::Cache
-  qw(get_cache_key get_cached_content store_cached_content cache_enabled serve_from_cache_enabled build_cache_params start_output_capture end_output_capture);
-use DivinumOfficium::FastCGI qw(reset_request_state);
 
 #*** collect standard items (pre-load once at startup)
 require "$Bin/../DivinumOfficium/SetupString.pl";
@@ -76,167 +73,87 @@ our ($version, $lang1, $lang2, $langfb, $column);
 our %translate;     #translation of the skeleton label for 2nd language
 our $testmode;
 our $votive;
-our $first;
-our $Propers;
-our $command;
-our $browsertime;
-our $searchvalue;
-our $content;
-our $buildscript;
-our $missanumber;
-our $caller;
+our $first = strictparam('first');
+our $Propers = strictparam('Propers');
+our $command = strictparam('command');
+our $browsertime = strictparam('browsertime');
+our $searchvalue = strictparam('searchvalue');
+our $content = strictparam('content');    # if set output only content wihout html headers menus etc
+our $buildscript = '';                    #build script
 
-# FastCGI request loop - process requests until told to stop
-while (my $q_fcgi = CGI::Fast->new) {
-    eval {
-        # Reset state from previous request
-        reset_request_state();
+if (!$searchvalue) { $searchvalue = '0'; }
+our $missanumber = strictparam('missanumber');
+if (!$missanumber) { $missanumber = 1; }
+our $caller = strictparam('caller');
 
-        # Set global CGI object for this request
-        $q = $q_fcgi;
+$setupsave = strictparam('setupm');
+loadsetup($setupsave);
 
-        binmode(STDOUT, ':encoding(utf-8)');
+if (!$setupsave) {
+  getcookies('missap', 'parameters');
+  getcookies('missag', 'general');
+}
 
-        $error = '';
-        $debug = '';
+set_runtime_options('general');       #$expand, $version, $lang2
+set_runtime_options('parameters');    # priest, lang1 ... etc
 
-        $Ck = 0;
-        $missa = 1;
-        $NewMass = 0;
-        $officium = 'missa.pl';
-        @dayname = ();
-        $comrank = 0;
+if ($command eq 'changeparameters') { getsetupvalue($command); }
 
-        #get parameters
-        getini('missa');    #files, colors
+#print "Content-type: text/html; charset=utf-8\n\n"; <= uncomment for debuggin "Internal Server Errors"
+$version = check_version($version, $missa) || (error("Unknown version: $version") && 'Rubrics 1960 - 1960');
+$lang1 = check_language($lang1) || (error("Unknown language: $lang1") && 'Latin');
+$lang2 = check_language($lang2) || 'English';
+$langfb = check_language($langfb) || 'English';
 
-        $first = strictparam('first');
-        $Propers = strictparam('Propers');
-        $command = strictparam('command');
-        $browsertime = strictparam('browsertime');
-        $searchvalue = strictparam('searchvalue');
-        $content = strictparam('content');    # if set output only content wihout html headers menus etc
-        $buildscript = '';
+$content = 0 unless $command =~ /^pray/;
 
-        if (!$searchvalue) { $searchvalue = '0'; }
-        $missanumber = strictparam('missanumber');
-        if (!$missanumber) { $missanumber = 1; }
-        $caller = strictparam('caller');
+setcookies('missap', 'parameters') unless $content;
+setcookies('missag', 'general') unless $content;
 
-        $setupsave = strictparam('setupm');
-        loadsetup($setupsave);
+# save parameters
+$setupsave = savesetup(1);
+$setupsave =~ s/\r*\n*//g;
 
-        if (!$setupsave) {
-          getcookies('missap', 'parameters');
-          getcookies('missag', 'general');
-        }
+#*** handle different actions
+#after setup
 
-        set_runtime_options('general');       #$expand, $version, $lang2
-        set_runtime_options('parameters');    # priest, lang1 ... etc
+if ($testmode !~ /(Seasonal|Season|Saint)/i) { $testmode = 'regular'; }
+$rubrics = strictparam('rubrics');
+$solemn = strictparam('solemn');
 
-        if ($command eq 'changeparameters') { getsetupvalue($command); }
+$only = ($lang1 =~ /$lang2/) ? 1 : 0;
 
-        #print "Content-type: text/html; charset=utf-8\n\n"; <= uncomment for debuggin "Internal Server Errors"
-        $version = check_version($version, $missa) || (error("Unknown version: $version") && 'Rubrics 1960 - 1960');
-        $lang1 = check_language($lang1) || (error("Unknown language: $lang1") && 'Latin');
-        $lang2 = check_language($lang2) || 'English';
-        $langfb = check_language($langfb) || 'English';
+# save parameters
+precedence();    #fills our hashes et variables
+setsecondcol();
 
-        $content = 0 unless $command =~ /^pray/;
+#prepare main pages
+$title = "Sancta Missa";
 
-        setcookies('missap', 'parameters') unless $content;
-        setcookies('missag', 'general') unless $content;
+#*** print pages (setup, hora=pray, mainpage)
+#generate HTML
+$background = ($whitebground) ? ' class="contrastbg"' : '';
+htmlHead($title, 'startup()');
 
-        # save parameters
-        $setupsave = savesetup(1);
-        $setupsave =~ s/\r*\n*//g;
+if ($command =~ /setup(.*)/is) {
+  $pmode = 'setup';
+  $command = $1;
+  print setuptable($command, $title);
+  $command = "change" . $command;
+} elsif ($command =~ /pray/i) {
+  $pmode = 'missa';
+  $command =~ s/(pray|change|setup)//ig;
+  $head = $title;
+  headline($head);
+  load_languages_data($lang1, $lang2, $langfb, $version, $missa);
 
-        #*** handle different actions
-        #after setup
+  #eval($setup{'parameters'});
+  $background = ($whitebground) ? ' class="contrastbg"' : '';
+  ordo();
 
-        if ($testmode !~ /(Seasonal|Season|Saint)/i) { $testmode = 'regular'; }
-        $rubrics = strictparam('rubrics');
-        $solemn = strictparam('solemn');
+  exit if $content;
 
-        $only = ($lang1 =~ /$lang2/) ? 1 : 0;
-
-        # save parameters
-        precedence();    #fills our hashes et variables
-        setsecondcol();
-
-        #prepare main pages
-        $title = "Sancta Missa";
-
-        #*** Caching logic
-        # Build cache key from all parameters that affect output
-        my %cache_params = build_cache_params(
-          type => 'missa',
-          date1 => $date1,
-          version => $version,
-          lang1 => $lang1,
-          lang2 => $lang2,
-          langfb => $langfb,
-          Propers => $Propers,
-          missanumber => $missanumber,
-          votive => $votive,
-          rubrics => $rubrics,
-          solemn => $solemn,
-          Ck => $Ck,
-          content => $content,
-          whitebground => $whitebground,
-          building => $building,
-          testmode => $testmode,
-        );
-        my $cache_key = get_cache_key(%cache_params);
-        my $cache_type = 'missa';
-
-        # Check if we have cached content and should serve from cache
-        if (serve_from_cache_enabled() && $command =~ /pray/i && $command !~ /setup/i) {
-          my $cached = get_cached_content($cache_key, $cache_type, \%cache_params);
-
-          if (defined $cached && $cached ne '') {
-            binmode(STDOUT, ':raw');    # Cached content is already UTF-8 encoded bytes
-            print "X-Cache: hit\n";
-            print $cached;
-            next;  # Continue to next request instead of exit
-          }
-        }
-
-        # Start output capture for caching (only for cacheable requests)
-        my $cache_enabled_flag = cache_enabled() && $command =~ /pray/i && $command !~ /setup/i;
-        start_output_capture() if $cache_enabled_flag;
-
-        #*** print pages (setup, hora=pray, mainpage)
-        #generate HTML
-        $background = ($whitebground) ? ' class="contrastbg"' : '';
-        htmlHead($title, 'startup()');
-
-        if ($command =~ /setup(.*)/is) {
-          $pmode = 'setup';
-          $command = $1;
-          print setuptable($command, $title);
-          $command = "change" . $command;
-        } elsif ($command =~ /pray/i) {
-          $pmode = 'missa';
-          $command =~ s/(pray|change|setup)//ig;
-          $head = $title;
-          headline($head);
-          load_languages_data($lang1, $lang2, $langfb, $version, $missa);
-
-          #eval($setup{'parameters'});
-          $background = ($whitebground) ? ' class="contrastbg"' : '';
-          ordo();
-
-          if ($content) {
-            # End caching before skipping rest of page
-            if ($cache_enabled_flag) {
-              my $captured = end_output_capture();
-              store_cached_content($cache_key, $captured, $cache_type, \%cache_params) if $captured;
-            }
-            next;  # Continue to next request instead of exit
-          }
-
-          print <<"PrintTag";
+  print <<"PrintTag";
 <INPUT TYPE=HIDDEN NAME=expandnum VALUE="">
 PrintTag
         } else {    #mainpage
@@ -305,21 +222,6 @@ PrintTag
 </FORM>
 </BODY></HTML>
 PrintTag
-
-        # End output capture and store in cache
-        if ($cache_enabled_flag) {
-          my $captured = end_output_capture();
-          store_cached_content($cache_key, $captured, $cache_type, \%cache_params) if $captured;
-        }
-    };
-
-    if ($@) {
-        # Log error but don't die (keeps FastCGI process alive)
-        warn "FastCGI request error: $@";
-        print "Content-type: text/html; charset=utf-8\n\n";
-        print "<html><body><h1>Error</h1><pre>$@</pre></body></html>";
-    }
-}
 
 #*** hedline($head) prints headlibe for main and pray
 sub headline {

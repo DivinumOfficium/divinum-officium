@@ -29,9 +29,6 @@ use DivinumOfficium::Date qw(prevnext);
 use DivinumOfficium::RunTimeOptions qw(check_version check_horas check_language);
 use DivinumOfficium::LanguageTextTools
   qw(prayer rubric translate load_languages_data omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
-use DivinumOfficium::Cache
-  qw(get_cache_key get_cached_content store_cached_content cache_enabled serve_from_cache_enabled build_cache_params start_output_capture end_output_capture);
-use DivinumOfficium::FastCGI qw(reset_request_state);
 
 #*** collect standard items (pre-load once at startup)
 require "$Bin/../DivinumOfficium/SetupString.pl";
@@ -352,18 +349,39 @@ while (my $q_fcgi = CGI::Fast->new) {
 
           print par_c('<I>' . horas_menu($completed, $date1, $version, $lang2, $votive) . '</I>');
 
-          if ($officium ne 'Pofficium.pl') {
-            $votive ||= 'Hodie';
-            $version = $version1 if ($Ck);
-            print par_c(selectables('general' . ($Ck ? 'c' : '')));
-          } else {
-            print par_c(pmenu());
+#*** print pages (setup, hora=pray, mainpage)
+#generate HTML
+$background = ($whitebground) ? ' class="contrastbg"' : '';
+htmlHead("Divinum Officium " . ($hora || $command), $officium ne 'Pofficium.pl' && 'startup()');
 
-            print "<TABLE ALIGN='CENTER' BORDER='1' $background>";
-            print selectable_p('versions', $version, $date1, $version, $lang2, $votive);
-            print selectable_p('languages', $lang2, $date1, $version, $lang2, $votive, 'Language 2');
-            print selectable_p('votives', $votive, $date1, $version, $lang2, $votive);
-            print "</TABLE>\n";
+if ($command =~ /setup(.*)/i) {
+  $command = $1;
+  print setuptable($command, "Divinum Officium setup");
+  $command = "change" . $command . strictparam('pcommand');
+} else {
+  print headline($html_dayhead, substr($officium, 0, 1), $version, $version2);
+  load_languages_data($lang1, $lang2, $langfb, $version, $missa);
+
+  if ($command =~ /appendix/i) {
+    require "$Bin/appendix.pl";
+    appendix($command);
+  } else {
+
+    if ($horas[0] eq 'Plures') {
+      print setplures();
+    } elsif ($horas[0]) {
+      foreach (@horas) {
+        $hora = $_;    # precedence use global $hora !
+
+        if (/laudes/i && ($horas[0] !~ /laudes/i)) {
+          precedence($date1);    # prevent lost commemorations
+        } elsif (/vesper/i && ($horas[0] !~ /vesper/i)) {
+          precedence($date1);
+          setsecondcol();
+          my $vesperahead = setheadline();
+
+          if ($dayhead ne $vesperahead) {
+            print par_c("<BR/><BR/>" . html_dayhead($vesperahead));
           }
 
           print par_c("\n" . bottom_links_menu(substr($officium, 0, 1) eq 'C'));
@@ -373,20 +391,5 @@ while (my $q_fcgi = CGI::Fast->new) {
         print hiddenfields();
         htmlEnd();
 
-        # End output capture and store in cache
-        if ($cache_enabled_flag) {
-          my $captured = end_output_capture();
-
-          if ($captured) {
-            store_cached_content($cache_key, $captured, $cache_type, \%cache_params);
-          }
-        }
-    };
-
-    if ($@) {
-        # Log error but don't die (keeps FastCGI process alive)
-        warn "FastCGI request error: $@";
-        print "Content-type: text/html; charset=utf-8\n\n";
-        print "<html><body><h1>Error</h1><pre>$@</pre></body></html>";
-    }
-}
+print hiddenfields();
+htmlEnd();

@@ -24,9 +24,6 @@ use DivinumOfficium::Main qw(liturgical_color);
 use DivinumOfficium::Directorium qw(dirge);
 use DivinumOfficium::Date qw(ydays_to_date);
 use DivinumOfficium::RunTimeOptions qw(check_version);
-use DivinumOfficium::Cache
-  qw(get_cache_key get_cached_content store_cached_content cache_enabled serve_from_cache_enabled build_cache_params start_output_capture end_output_capture);
-use DivinumOfficium::FastCGI qw(reset_request_state);
 
 #*** common variables arrays and hashes
 our $error;
@@ -73,123 +70,65 @@ require "$Bin/webdia.pl";
 require "$Bin/../DivinumOfficium/setup.pl";
 require "$Bin/monastic.pl";
 
-# FastCGI request loop
-while (my $q_fcgi = CGI::Fast->new) {
-    eval {
-        # Reset state from previous request
-        reset_request_state();
+binmode(STDOUT, ':encoding(utf-8)');
+our $q = new CGI;
 
-        # Set global CGI object for this request
-        $q = $q_fcgi;
+#*** get parameters
+our $compare = strictparam('compare') || 0;
+my $officium = strictparam('officium') || 'officium.pl';
 
-        binmode(STDOUT, ':encoding(utf-8)');
-
-        $error = '';
-        $debug = '';
-        @dayname = ();
-
-        #*** get parameters
-        $compare = strictparam('compare') || 0;
-        my $officium = strictparam('officium') || 'officium.pl';
-
-        if ($compare) {
-          $officium = "C$officium" unless $officium =~ /^[PC]/;
-        } else {
-          $officium =~ s/^C//;
-        }
-
-        # use the right date arg
-        my $date_arg = $officium =~ /Pofficium/ ? 'date1' : 'date';
-
-        my $officium_name = $officium =~ /missa/ ? 'missa' : 'horas';
-        getini("horas");    #files, colors
-
-        my $ckname =
-          ($officium_name =~ /officium/) ? "${officium_name}go" : ($compare) ? "${officium_name}gc" : "${officium_name}g";
-        my $csname = $compare ? 'generalc' : 'general';
-
-        my $setupsave = strictparam('setup');
-        loadsetup($setupsave);
-
-        if (!$setupsave) {
-          getcookies("${officium_name}p", 'parameters');
-          getcookies($ckname, $csname);
-        }
-
-        set_runtime_options($csname);         #$expand, $version, $lang2
-        $votive = 'Hodie';
-        set_runtime_options('parameters');    # priest, lang1 ... etc
-
-        #*** saves parameters
-        $setupsave = savesetup(1);
-        $setupsave =~ s/\r*\n*//g;
-
-        $version1 = check_version($version) || (error("Unknown version: $version1") && 'Rubrics 1960 - 1960');
-        $version2 = check_version($version2) || '';
-        if ($version1 eq $version2) { $version2 = 'Divino Afflatu - 1954'; }
-        if ($version1 eq $version2) { $version2 = 'Rubrics 1960 - 1960'; }
-
-        my ($xmonth, $xday, $xyear) = split('-', strictparam($date_arg) || gettoday());
-        $kmonth = strictparam('kmonth') || $xmonth;
-        $kyear = strictparam('kyear') || $xyear;
-
-        my $mode = $kmonth == 15 ? 'kal' : 'ordo';
-        require "$Bin/kalendar/$mode.pl";
-
-        my $format_param = strictparam('format') || '';
-
-        # Build cache parameters for kalendar
-        my %cache_params = build_cache_params(
-          type => 'kalendar',
-          kmonth => $kmonth,
-          kyear => $kyear,
-          version => $version1,
-          version2 => $version2,
-          compare => $compare,
-          mode => $mode,
-          format => $format_param,
-          lang2 => $lang2,
-        );
-        my $cache_key = get_cache_key(%cache_params);
-        my $cache_type = 'kalendar';
-
-        # Check cache first
-        if (serve_from_cache_enabled()) {
-          my $cached = get_cached_content($cache_key, $cache_type, \%cache_params);
-
-          if (defined $cached && $cached ne '') {
-            binmode(STDOUT, ':raw');    # Cached content is already UTF-8 encoded bytes
-            print "X-Cache: hit\n";
-            print $cached;
-            next;  # Continue to next request instead of exit
-          }
-        }
-
-        # Start output capture for caching
-        my $cache_enabled_flag = cache_enabled();
-        start_output_capture() if $cache_enabled_flag;
-
-        if ($format_param eq 'ical') {
-          require "$Bin/kalendar/ical.pl";
-          ical_output();
-        } else {
-          html_output($mode);
-        }
-
-        # Store in cache
-        if ($cache_enabled_flag) {
-          my $captured = end_output_capture();
-          store_cached_content($cache_key, $captured, $cache_type, \%cache_params) if $captured;
-        }
-    };
-
-    if ($@) {
-        # Log error but don't die (keeps FastCGI process alive)
-        warn "FastCGI request error: $@";
-        print "Content-type: text/html; charset=utf-8\n\n";
-        print "<html><body><h1>Error</h1><pre>$@</pre></body></html>";
-    }
+if ($compare) {
+  $officium = "C$officium" unless $officium =~ /^[PC]/;
+} else {
+  $officium =~ s/^C//;
 }
+
+# use the right date arg
+my $date_arg = $officium =~ /Pofficium/ ? 'date1' : 'date';
+
+my $officium_name = $officium =~ /missa/ ? 'missa' : 'horas';
+getini("horas");    #files, colors
+
+my $ckname =
+  ($officium_name =~ /officium/) ? "${officium_name}go" : ($compare) ? "${officium_name}gc" : "${officium_name}g";
+my $csname = $compare ? 'generalc' : 'general';
+
+my $setupsave = strictparam('setup');
+loadsetup($setupsave);
+
+if (!$setupsave) {
+  getcookies("${officium_name}p", 'parameters');
+  getcookies($ckname, $csname);
+}
+
+set_runtime_options($csname);         #$expand, $version, $lang2
+our $votive = 'Hodie';
+set_runtime_options('parameters');    # priest, lang1 ... etc
+
+#*** saves parameters
+$setupsave = savesetup(1);
+$setupsave =~ s/\r*\n*//g;
+
+our $version1 = check_version(our $version) || (error("Unknown version: $version1") && 'Rubrics 1960 - 1960');
+our $version2 = check_version($version2) || '';
+if ($version1 eq $version2) { $version2 = 'Divino Afflatu - 1954'; }
+if ($version1 eq $version2) { $version2 = 'Rubrics 1960 - 1960'; }
+
+my ($xmonth, $xday, $xyear) = split('-', strictparam($date_arg) || gettoday());
+our $kmonth = strictparam('kmonth') || $xmonth;
+our $kyear = strictparam('kyear') || $xyear;
+
+my $mode = $kmonth == 15 ? 'kal' : 'ordo';
+require "$Bin/kalendar/$mode.pl";
+
+if (strictparam('format') eq 'ical') {
+  require "$Bin/kalendar/ical.pl";
+  ical_output();
+} else {
+  html_output($mode);
+}
+
+# End of program
 
 #entries 13 (placeholder) and 14 (actually) are added for the Whole Year (Totus) Option
 use constant MONTHNAMES => qw/''
