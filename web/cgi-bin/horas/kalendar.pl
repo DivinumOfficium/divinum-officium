@@ -23,8 +23,6 @@ use DivinumOfficium::Main qw(liturgical_color);
 use DivinumOfficium::Directorium qw(dirge);
 use DivinumOfficium::Date qw(ydays_to_date);
 use DivinumOfficium::RunTimeOptions qw(check_version);
-use DivinumOfficium::Cache
-  qw(get_cache_key get_cached_content store_cached_content cache_enabled serve_from_cache_enabled build_cache_params start_output_capture end_output_capture);
 
 #*** common variables arrays and hashes
 our $error;
@@ -115,50 +113,11 @@ our $kyear = strictparam('kyear') || $xyear;
 my $mode = $kmonth == 15 ? 'kal' : 'ordo';
 require "$Bin/kalendar/$mode.pl";
 
-my $format_param = strictparam('format') || '';
-
-# Build cache parameters for kalendar
-my %cache_params = build_cache_params(
-  type => 'kalendar',
-  kmonth => $kmonth,
-  kyear => $kyear,
-  version => $version1,
-  version2 => $version2,
-  compare => $compare,
-  mode => $mode,
-  format => $format_param,
-  lang2 => $lang2,
-);
-my $cache_key = get_cache_key(%cache_params);
-my $cache_type = 'kalendar';
-
-# Check cache first
-if (serve_from_cache_enabled()) {
-  my $cached = get_cached_content($cache_key, $cache_type, \%cache_params);
-
-  if (defined $cached && $cached ne '') {
-    binmode(STDOUT, ':raw');    # Cached content is already UTF-8 encoded bytes
-    print "X-Cache: hit\n";
-    print $cached;
-    exit;
-  }
-}
-
-# Start output capture for caching
-my $cache_enabled = cache_enabled();
-start_output_capture() if $cache_enabled;
-
-if ($format_param eq 'ical') {
+if (strictparam('format') eq 'ical') {
   require "$Bin/kalendar/ical.pl";
   ical_output();
 } else {
   html_output($mode);
-}
-
-# Store in cache
-if ($cache_enabled) {
-  my $captured = end_output_capture();
-  store_cached_content($cache_key, $captured, $cache_type, \%cache_params) if $captured;
 }
 
 # End of program
