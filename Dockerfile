@@ -28,13 +28,19 @@ ENV APACHE_RUN_USER=www-data \
     SERVE_FROM_CACHE=true \
     CACHE_ADMIN_TOKEN=changeme
 
-# Install packages
+# Install packages (including FastCGI support)
 RUN apt-get update && apt-get install -y \
     curl \
     wget \
     apache2 \
+    libapache2-mod-fcgid \
+    libfcgi-perl \
+    libcgi-fast-perl \
     libcgi-session-perl \
     && rm -rf /var/lib/apt/lists/*
+
+# Enable FastCGI module and disable traditional CGI
+RUN a2enmod fcgid && a2dismod cgi
 
 # Get dumb-init to use a proper init system
 RUN wget -O /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.2.2/dumb-init_1.2.2_amd64 && \
