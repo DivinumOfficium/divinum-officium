@@ -1,0 +1,26 @@
+[Lectio3]
+@Sancti/10-02:Lectio2:2-7:s/7-11/10-13/ s/7 .*10/10/s
+12 I odpověděl Anděl Páně a řekl: “Hospodine zástupů, jak dlouho ještě budeš zadržovat své slitování nad Jerusalémem, a judskými městy, na které ses rozhněval? Tento rok je již sedmdesátý.
+@SanctiM/10-02:Lectio3:2
+
+[Lectio5]
+@Sancti/10-02:Lectio4:s/ Důkladně .* na rukou\.//
+
+[Lectio6]
+@Sancti/10-02:Lectio5:s/Neodvažuj .*//
+
+[Lectio7]
+@Sancti/10-02:Lectio5:s/.* (Neodvažuj )/$1/ s/$/~/
+@Sancti/10-02:Lectio6:s/Čeho .*//
+
+[Lectio8]
+@Sancti/10-02:Lectio6:s/.* (Čeho )/$1/
+
+[Lectio11]
+@Sancti/10-02:Lectio9:s/ To, že .*//
+
+[Lectio12]
+@Sancti/10-02:Lectio9:s/.* (?=To, že)//
+
+[Ant Sexta]
+Andělé Páně, * dobrořečte Pána navěky.
