@@ -1,0 +1,44 @@
+
+[Ant Matutinum 3N]
+Pokud prstem Božím * vyháním zlé duchy, zajisté k vám přichází království Boží.;;269;270;271
+
+[Lectio1]
+@Tempora/Quad3-0:Lectio1:s/-10/-4/ s/5.*//s
+
+[Lectio2]
+@Tempora/Quad3-0:Lectio1:1-2 s/2-/5-/ 
+@Tempora/Quad3-0:Lectio1:6-11
+
+[Lectio3]
+@Tempora/Quad3-0:Lectio2:
+
+[Lectio4]
+@Tempora/Quad3-0:Lectio3
+
+[Lectio5]
+@Tempora/Quad3-0:Lectio4:s/Je tedy .*//s
+
+[Lectio6]
+@Tempora/Quad3-0:Lectio4:s/.* Je tedy /Je tedy /s s/$/~/
+@Tempora/Quad3-0:Lectio5:s/Avšak .*//s
+
+[Lectio7]
+@Tempora/Quad3-0:Lectio5:s/.* Avšak /Avšak /s s/$/~/
+@Tempora/Quad3-0:Lectio6:s/Právem .*//s
+
+[Lectio8]
+@Tempora/Quad3-0:Lectio6:s/.* Právem /Právem /s
+
+[Lectio9]
+@Tempora/Quad3-0:Lectio7:s/Někteří .*//s
+
+[Lectio10]
+@Tempora/Quad3-0:Lectio7:s/.* Někteří /Někteří /s s/$/~/
+@Tempora/Quad3-0:Lectio8:s/Jiní .*//s
+
+[Lectio11]
+@Tempora/Quad3-0:Lectio8:s/.* Jiní /Jiní /s s/$/~/
+@Tempora/Quad3-0:Lectio9:s/Pokud.*//s
+
+[Lectio12]
+@Tempora/Quad3-0:Lectio9:s/.* Pokud/Pokud/s
