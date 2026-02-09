@@ -1,0 +1,14 @@
+@Tempora/Quad2-2
+
+[Lectio1]
+@Tempora/Quad2-2::s/Co .*//
+
+[Lectio2]
+@Tempora/Quad2-2:Lectio1:s/.* (Co )/$1/s s/$/~/
+@Tempora/Quad2-2:Lectio2:s/Za zmínku .*//
+
+[Lectio3]
+@Tempora/Quad2-2:Lectio2:s/.* (?=Za zmínku)//
+
+[Ant 3]
+Kdo je z vás tím větším, * bude vaším služebníkem; neboť každý, kdo se povyšuje, bude ponížen, praví Pán.

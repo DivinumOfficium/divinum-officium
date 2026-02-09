@@ -1,0 +1,45 @@
+@SanctiM/10-02
+
+[Lectio2]
+@Sancti/10-02:Lectio2:1-5:s/-11/-9/
+
+[Lectio3]
+@Sancti/10-02:Lectio2:2-7:s/7-11/10-13/ s/7 .*10/10/s
+12 Et respóndit Angelus Dómini, et dixit: Dómine exercítuum, úsquequo tu non miseréberis Jerúsalem, et úrbium Juda, quibus irátus es? iste jam septuagésimus annus est.
+@SanctiM/10-02:Lectio3:2
+
+[Lectio4]
+@Sancti/10-02:Lectio3:1-5:s/-5/-4/
+
+
+[Lectio5]
+@Sancti/10-02:Lectio4:s/ Studióse .* tollant te\.//
+
+[Lectio6]
+@Sancti/10-02:Lectio5:s/Tu .*//
+
+[Lectio7]
+@Sancti/10-02:Lectio5:s/.* (Tu )/$1/ s/$/~/
+@Sancti/10-02:Lectio6:s/Quid .*//
+
+[Lectio8]
+@Sancti/10-02:Lectio6:s/.* (Quid )/$1/
+
+
+[Lectio9]
+@Sancti/10-02:Lectio7
+
+[Lectio10]
+@Sancti/10-02:Lectio8
+
+[Lectio11]
+@Sancti/10-02:Lectio9:s/ Præésse .*//
+
+[Lectio12]
+@Sancti/10-02:Lectio9:s/.* (?=Præésse)//
+
+[Ant Sexta]
+Angeli Dómini * Dóminum benedícite in ætérnum.
+
+[Ant Vespera 3]
+@Sancti/10-02:Ant Vespera

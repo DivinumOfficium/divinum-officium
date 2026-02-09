@@ -1,0 +1,89 @@
+@Tempora/Quad2-0
+
+[Rule]
+12 lectiones
+
+[Invit]
+Adorémus Deum: * Quia ipse fecit nos.
+
+[Ant Matutinum 3N]
+Faciámus hic * tria tabernácula: tibi unum, Móysi unum, et Elíæ unum.;;269;270;271
+
+[Lectio1]
+@Tempora/Quad2-0:Lectio1:1-6 s/-10/-4/
+
+[Lectio2]
+@Tempora/Quad2-0:Lectio1:2-12:s/1-/5-/ s/1 .*5/5/s
+
+[Lectio3]
+@Tempora/Quad2-0:Lectio2:1-8:s/-20/-17/
+
+[Lectio4]
+@Tempora/Quad2-0:Lectio2:s/11-/18-/ s/11 .*18/18/s
+
+[Responsory2]
+R. Ecce odor fílii mei sicut odor agri pleni, cui benedíxit Dóminus:
+* Créscere te fáciat Deus meus sicut arénam maris: et donet tibi de rore cæli benedictiónem.
+V. Qui maledíxerit tibi, sit ille maledíctus: et qui benedíxerit tibi, benedictiónibus repleátur.
+R. Créscere te fáciat Deus meus sicut arénam maris: et donet tibi de rore cæli benedictiónem.
+
+[Responsory4]
+R. Dum exíret Jacob de terra sua, vidit glóriam Dei, et ait:
+* Quam terríbilis est locus iste! non est hic áliud, nisi domus Dei, et porta cœli.
+@Tempora/Quad2-0:Responsory4:3
+R. Quam terríbilis est locus iste! non est hic áliud, nisi domus Dei, et porta cœli.
+
+[Lectio5]
+@Tempora/Quad2-0:Lectio4:s/Nam qui .*//s
+
+[Lectio6]
+@Tempora/Quad2-0:Lectio4:s/.* Nam qui /Nam qui /s s/$/~/
+@Tempora/Quad2-0:Lectio5:s/Hoc ut .*//s
+
+[Lectio7]
+@Tempora/Quad2-0:Lectio5:s/.* Hoc ut /Hoc ut /s
+
+[Lectio8]
+@Tempora/Quad2-0:Lectio6:s/Ecclésia, .*/Ecclésia./
+
+[Responsory5]
+@Tempora/Quad2-0:Responsory5:s/ergo/autem/
+
+[Responsory6]
+@Tempora/Quad2-0:Responsory6:1-2
+V. Si Dóminus Deus meus fúerit mecum in via ista, per quam ego ámbulo, et custodíerit me.
+@Tempora/Quad2-0:Responsory6:4
+
+[Responsory7]
+@TemporaM/Quad2-0:Responsory12:s/† //g
+
+[Responsory8]
+@Tempora/Quad2-0:Responsory7:s/Cumque .* ecce /Ecce / s/vidéret/vidísset/
+
+[Lectio9]
+@Tempora/Quad2-0:Lectio7:s/Nam illam .*//s
+
+[Lectio10]
+@Tempora/Quad2-0:Lectio7:s/.* Nam illam /Nam illam /s s/$/~/
+@Tempora/Quad2-0:Lectio8:s/Hic est Fílius meus, quem.*//s
+
+[Lectio11]
+@Tempora/Quad2-0:Lectio8:s/.* Hic est Fílius meus, quem/Hic est Fílius meus, quem/s s/$/~/
+@Tempora/Quad2-0:Lectio9:s/Hic est Fílius meus, qui.*//s
+
+[Lectio12]
+@Tempora/Quad2-0:Lectio9:s/.*Hic est Fílius meus, qui/Hic est Fílius meus, qui/s
+
+[Responsory9]
+@Tempora/Quad2-0:Responsory8
+
+[Responsory10]
+@Tempora/Quad2-1:Responsory1
+
+[Responsory11]
+@Tempora/Quad2-1:Responsory2:1-2
+V. Ego Deus omnípotens, ámbula coram me, et esto perféctus.
+@Tempora/Quad2-1:Responsory2:4
+
+[Responsory12]
+@Tempora/Quad2-6:Responsory1
