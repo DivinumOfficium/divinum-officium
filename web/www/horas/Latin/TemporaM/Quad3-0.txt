@@ -56,13 +56,13 @@ Si in dígito Dei * ejício dæmónia, profécto pervénit in vos regnum Dei.;;2
 
 [Lectio10]
 @Tempora/Quad3-0:Lectio7:s/.* Quidam /Quidam /s s/$/~/
-@Tempora/Quad3-0:Lectio8:s/Et alii .*//s
+@Tempora/Quad3-0:Lectio8:s/Et álii .*//s
 
 [Responsory10]
 @Tempora/Quad3-0:Responsory8
 
 [Lectio11]
-@Tempora/Quad3-0:Lectio8:s/.* Et alii /Et alii /s s/$/~/
+@Tempora/Quad3-0:Lectio8:s/.* Et álii /Et álii /s s/$/~/
 @Tempora/Quad3-0:Lectio9:s/Si autem omne.*//s
 
 [Responsory11]
@@ -73,18 +73,3 @@ Si in dígito Dei * ejício dæmónia, profécto pervénit in vos regnum Dei.;;2
 
 [Responsory12]
 @Tempora/Quad3-1:Responsory3
-
-[Ant 2] (rubrica cisterciensis)
-@Tempora/Quad3-0:Ant Tertia
-
-[Ant Prima] (rubrica cisterciensis)
-@Tempora/Quad3-0:Ant 2
-
-[Ant Tertia] (rubrica cisterciensis)
-@Tempora/Quad3-0:Ant Sexta
-
-[Ant Sexta] (rubrica cisterciensis)
-@Tempora/Quad3-0:Ant Nona
-
-[Ant Nona] (rubrica cisterciensis)
-@Psalterium/Psalmi/Psalmi minor:Quad:5:s/5 = //
