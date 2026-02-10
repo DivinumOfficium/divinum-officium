@@ -1,0 +1,26 @@
+@Tempora/Quad3-2
+
+[Lectio1]
+@Tempora/Quad3-2::s/Quid est .*//
+
+[Lectio2]
+@Tempora/Quad3-2:Lectio1:s/.* (?=Quid est )//s s/$/~/
+@Tempora/Quad3-2:Lectio2:s/Ait enim .*//
+
+[Lectio3]
+@Tempora/Quad3-2:Lectio3:s/.* (?=Quis )//
+
+[Responsory1]
+@TemporaCist/Quad3-0:Responsory4
+
+[Responsory2]
+@TemporaCist/Quad3-0:Responsory5
+
+[Responsory3]
+@TemporaCist/Quad3-0:Responsory6
+
+[Ant 2]
+@Tempora/Quad3-2:Ant 3
+
+[Ant 3]
+Non dico tibi Petre, * dimiténdum sépties, sed usque septuágies sépties.

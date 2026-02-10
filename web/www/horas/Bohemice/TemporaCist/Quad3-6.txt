@@ -1,0 +1,8 @@
+[Lectio1]
+@Tempora/Quad3-6:Lectio1:s/A časně .*//
+
+[Lectio2]
+@Tempora/Quad3-6:Lectio3:s/Přinesl .*//
+
+[Lectio3]
+@Tempora/Quad3-6:Lectio3:s/.* (?=Přinesl)//

@@ -1,0 +1,19 @@
+@Tempora/Quad3-6
+
+[Lectio1]
+@Tempora/Quad3-6:Lectio1:s/Et dilúculo .*//
+
+[Lectio2]
+@Tempora/Quad3-6:Lectio3:s/Ergo .*//
+
+[Lectio3]
+@Tempora/Quad3-6:Lectio3:s/.* (?=Ergo)//
+
+[Responsory1]
+@TemporaCist/Quad3-0:Responsory4
+
+[Responsory2]
+@TemporaCist/Quad3-0:Responsory5
+
+[Responsory3]
+@TemporaCist/Quad3-0:Responsory6

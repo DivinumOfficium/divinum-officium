@@ -1,0 +1,20 @@
+@Tempora/Quad3-1
+
+[Lectio1]
+@Tempora/Quad3-1
+
+[Lectio2]
+@Tempora/Quad3-1:Lectio2:s/Elíæ\..*/Elíæ;/ s/$/~/
+@Tempora/Quad3-1:Lectio3:s/(.)/\l$1/ s/Evidénter .*//
+
+[Lectio3]
+@Tempora/Quad3-1:Lectio3:s/.* (?=Evidénter )// s/Díximus .*//
+
+[Responsory1]
+@TemporaCist/Quad3-0
+
+[Responsory2]
+@TemporaCist/Quad3-0
+
+[Responsory3]
+@TemporaCist/Quad3-0

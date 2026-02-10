@@ -1,0 +1,20 @@
+@Tempora/Quad3-3
+
+[Lectio1]
+@Tempora/Quad3-3::s/Cum, .*//
+
+[Lectio2]
+@Tempora/Quad3-3:Lectio1:s/.* (?=Cum, )//s s/$/~/
+@Tempora/Quad3-3:Lectio2:s/Honor .*//
+
+[Lectio3]
+@Tempora/Quad3-3:Lectio2:s/.* (?=Honor )//
+
+[Responsory1]
+@TemporaCist/Quad3-0:Responsory7
+
+[Responsory2]
+@TemporaCist/Quad3-0:Responsory8
+
+[Responsory3]
+@TemporaCist/Quad3-0:Responsory9
