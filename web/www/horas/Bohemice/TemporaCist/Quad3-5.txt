@@ -1,0 +1,22 @@
+@Tempora/Quad3-5
+
+[Lectio1]
+@Tempora/Quad3-5::s/On sám .*//
+
+[Lectio2]
+@Tempora/Quad3-5:Lectio2:s/Chceš vědět, .*//
+
+[Lectio3]
+@Tempora/Quad3-5:Lectio2:s/.* (?=Chceš vědět, )//
+
+[Responsory1]
+@TemporaCist/Quad3-0:Responsory1
+
+[Responsory2]
+@TemporaCist/Quad3-0:Responsory2
+
+[Responsory3]
+@TemporaCist/Quad3-0:Responsory3
+
+[Ant 2]
+Kdo bude pít vodu, * kterou já dám, řekl Pán Samaritánce, stane se z něj pramen vody tryskající do života věčného.
