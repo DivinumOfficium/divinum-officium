@@ -1,0 +1,5 @@
+[Lectio2]
+@Tempora/Quad4-4::s/Není .*//
+
+[Lectio3]
+@Tempora/Quad4-4:Lectio2:s/.* (?=Není )//

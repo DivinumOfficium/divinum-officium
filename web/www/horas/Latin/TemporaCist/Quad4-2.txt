@@ -1,0 +1,22 @@
+@Tempora/Quad4-2
+
+[Lectio1]
+@Tempora/Quad4-2::s/proferéntem, .*/proferéntem./
+
+[Lectio2]
+@Tempora/Quad4-2::s/.* (?=Quid ergo )//s
+
+[Lectio3]
+@Tempora/Quad4-2:Lectio3
+
+[Responsory1]
+@TemporaCist/Quad4-0:Responsory4
+
+[Responsory2]
+@TemporaCist/Quad4-0:Responsory5
+
+[Responsory3]
+@TemporaCist/Quad4-0:Responsory6
+
+[Ant 3]
+Unum * opus feci, et omnes admirámini, quia totum hóminem sanum feci in Sábbato.

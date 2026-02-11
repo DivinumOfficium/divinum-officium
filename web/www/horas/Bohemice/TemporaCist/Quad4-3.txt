@@ -1,0 +1,14 @@
+[Lectio1]
+@Tempora/Quad4-3::s/Pokud tedy .*//
+
+[Lectio2]
+@Tempora/Quad4-3:Lectio1:s/.* (?=Pokud tedy )//s 
+
+[Lectio3]
+@Tempora/Quad4-3:Lectio2:s/Omyl .*//
+
+[Ant 2]
+Mistře, kdo zhřešil, * on, nebo jeho rodiče, že se narodil slepý? Odpověděl Ježíš, a řekl: Ani on nezhřešil, ani jeho rodiče; avšak <i>stalo se to </i> proto, aby se skrze něj zjevily skutky Boží.
+
+[Ant 3]
+Již jsem vám to říkal, * a vy jste to slyšeli: blátem mě pomazal ten, kterému říkají Ježíš.
