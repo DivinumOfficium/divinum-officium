@@ -1,0 +1,8 @@
+[Lectio1]
+@Tempora/Quad4-2::s/svědectví, .*/svědectví./
+
+[Lectio2]
+@Tempora/Quad4-2::s/.* (?=Co jim )//s
+
+[Ant 3]
+Jeden * skutek jsem udělal, a všichni se diví, neboť jsem uzdravil celého člověka v Sobotu.
