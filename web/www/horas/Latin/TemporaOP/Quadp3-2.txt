@@ -1,0 +1,42 @@
+@Tempora/Quadp3-2
+
+[Lectio1]
+De libro Génesis
+!Gen 14:1-3
+1 Factus est sermo Dómini ad Abram per visiónem dicens: Noli timére, Abram: ego protéctor tuus sum, et merces tua magna nimis.
+2 Dixítque Abram: Dómine Deus, quid dabis mihi? ego vadam absque líberis, et fílius procuratóris domus meæ iste Damáscus Eliézer.
+3 Addidítque Abram: Mihi autem non dedísti semen, et ecce vernáculus meus, hæres meus erit.
+
+[Responsory1]
+@TemporaOP/Quadp3-0:Responsory Vespera 1
+
+[Lectio2]
+!Gen 14:4-6
+4 Statímque sermo Dómini factus est ad eum, dicens: Non erit hic hæres tuus, sed qui egrediétur de útero tuo, ipsum habébis herédem.
+5 Eduxítque eum foras, et ait illi: Súspice cælum, et númera stellas, si potes. Et dixit ei: Sic erit semen tuum.
+6 Crédidit Abram Deo, et reputátum est illi ad justítiam.
+
+[Responsory2]
+R. Clamor, inquit Dóminus, Sodomórum et Gomórrhæ venit ad me:
+* Descéndam, et vidébo utrum clamórem ópere compléverint.
+V. Abraham stabat coram Deo, et ait: Absit a te, Dóinine, ut perdas justum cum impiis.
+R. Descéndam, et vidébo utrum clamórem ópere compléverint.
+
+[Lectio3]
+!Gen 14:7
+13 Dictúmque est ad eum: Scito prænóscens quod peregrínum futúrum sit semen tuum in terra non sua, et subícient eos servitúti, et afflígent quadringéntis annis.
+14 Verúmtamen gentem, cui servitúri sunt, ego judicábo: et post hæc egrediéntur cum magna substántia.
+15 Tu autem ibis ad patres tuos in pace, sepúltus in senectúte bona.
+16 Generatióne autem quarta reverténtur huc.
+
+[Responsory3]
+R. Ascéndens ergo Deus ab Abraham, pluit ignem et sulphur super Sódomam:
+* Abraham mane consúrgens stetit, et evérsas urbes a longe conspéxit.
+V. Recordátus est Deus Abraham, et liberávit Lot de subversióne Sódomæ.
+R. Abraham mane consúrgens stetit, et evérsas urbes a longe conspéxit.
+
+[Ant 2]
+@Tempora/Quad2-3:Ant 3
+
+[Ant 3]
+@Tempora/Pent18-0::s/.*: \S+ (.)/\u$1/
