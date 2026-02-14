@@ -1,0 +1,60 @@
+@Tempora/Quadp3-0
+
+[Responsory Vespera 1]
+@Tempora/Quadp3-0:Responsory2:1-2 s/\n\* ([^,]*), (.)/\l$1\n* \u$2/
+@TemporaCist/Quadp3-0:Responsory6:2
+@Tempora/Quadp3-0:Responsory2:2 s/.*, (.)/R. \u$1/
+
+[Ant 1]
+Quod autem cécidit * in terram bonam: hi sunt, qui in corde bono et óptimo verbum rétinent, et fructum áfferunt in patiéntia.
+
+[Lectio1]
+@Tempora/Quadp3-0::1-5 s/-6/-4/
+@Tempora/Quadp3-0::6 s/:.*/./
+
+[Responsory1]
+@Tempora/Quadp3-0::1-2 s/\n\* (\S+ \S+ \S+) (.)/ $1\n* \u$2/
+V. Benedícens benedícam tibi, et multiplicábo te.
+@Tempora/Quadp3-0::2 s/\* (?:\S+ \S+ \S+) (.)/ R. \u$1/
+
+[Lectio2]
+@Tempora/Quadp3-0:Lectio1:2 s/1-/4-/
+@Tempora/Quadp3-0:Lectio1:6-8 s/.*: /4 //
+
+[Responsory2]
+R. Dixit autem Dóminus ad Abram: Ego sum, et pactum meum tecum: sanctificétur in vobis omne masculínum:
+* Et erit signum inter me et semen tuum.
+V. Ex te namque egrediétur, in quo omnes gentes benedicéntur.
+R. Et erit signum inter me et semen tuum.
+
+[Lectio3]
+@Tempora/Quadp3-0:Lectio2:1-4 s/-13/-9/
+
+[Responsory3]
+@Tempora/Quadp3-0:Responsory6
+@Tempora/Quadp3-0:Responsory6:1 s/:/./
+
+[Ant Laudes4]
+Benedicámus Patrem et Fílium in sǽcula cum Sancto Spíritu.
+
+[Ant Laudes]
+@TemporaM/Quad1-0:Responsory8:3 s/V. //
+@Psalterium/Psalmi/Psalmi major:Day4 Laudes2:4 s/;;.*//
+@Psalterium/Special/Major Special:Feria Versum 2OP:s/V. // s/.\nR. (.)/, \l$1/ s/fuísti/factus/
+@:Ant Laudes4
+@Tempora/Nat2-0:Ant Laudes:5 s/, [^*].*/./
+
+[Ant 2]
+@Tempora/Quadp3-0::s/illudétur/flagellábitur/
+
+[Responsory Breve Tertia]
+@TemporaOP/Quadp1-0
+
+[Ant Sexta]
+@TemporaCist/Quadp3-0:Ant 2
+
+[Responsory Breve Sexta]
+@TemporaOP/Quadp1-0
+
+[Responsory Breve Nona]
+@TemporaOP/Quadp1-0
