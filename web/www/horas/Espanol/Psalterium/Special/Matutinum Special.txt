@@ -525,6 +525,16 @@ _
 V. Líbrame, Señor, del hombre malvado.
 R. Guárdame del hombre violento.
 
+[MM Capitulum Quad] (rubrica cisterciensis)
+@Tempora/Quad1-0:Capitulum Laudes
+_
+@Psalterium/Special/Minor Special:Responsory Quad TertiaM_
+
+[MM Capitulum Quad5] (rubrica cisterciensis)
+@Tempora/Quad6-0:Capitulum Sexta:s/(v\. .*?\.) .*/$1/ s/-9//
+_
+@Psalterium/Special/Minor Special:Responsory Quad5 SextaC_
+
 [MM Capitulum Pasch]
 !Rom 6:4
 v. Por el bautismo fuimos sepultados con él en la muerte, para que, lo mismo que Cristo resucitó de entre los muertos por la gloria del Padre, así también nosotros andemos en una vida nueva.

@@ -548,6 +548,16 @@ _
 V. Wyrwij mię, Panie, od człowieka złego
 R. Od męża złośliwego wyrwij mię.
 
+[MM Capitulum Quad] (rubrica cisterciensis)
+@Tempora/Quad1-0:Capitulum Laudes
+_
+@Psalterium/Special/Minor Special:Responsory Quad TertiaM_
+
+[MM Capitulum Quad5] (rubrica cisterciensis)
+@Tempora/Quad6-0:Capitulum Sexta:s/(v\. .*?\.) .*/$1/ s/-9//
+_
+@Psalterium/Special/Minor Special:Responsory Quad5 SextaC_
+
 [MM Capitulum Pasch]
 !Rz 6:4
 v. Albowiem jesteśmy z nim pospołu pogrzebieni w śmierć przez chrzest, aby, jako Chrystus wstał z martwych przez chwałę Ojcowską, tak i my żebyśmy w nowości żywota chodzili. 

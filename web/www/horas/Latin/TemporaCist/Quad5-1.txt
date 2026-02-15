@@ -1,0 +1,20 @@
+@Tempora/Quad5-1
+
+[Lectio1]
+@Tempora/Quad5-1
+
+[Lectio2]
+@Tempora/Quad5-1::s/Quando .*//
+
+[Lectio3]
+@Tempora/Quad5-1:Lectio2:s/.* (?=Quando )// s/$/~/
+@Tempora/Quad5-1:Lectio3:s/Vidébat .*// 
+
+[Responsory1]
+@TemporaCist/Quad5-0
+
+[Responsory2]
+@TemporaCist/Quad5-0
+
+[Responsory3]
+@TemporaCist/Quad5-0

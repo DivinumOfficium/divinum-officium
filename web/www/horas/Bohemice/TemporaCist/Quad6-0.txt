@@ -1,0 +1,97 @@
+
+[Responsory Vespera 1] (rubrica cisterciensis)
+R. Obklíčili mě prolhaní muži, bez příčiny mě bičovali: 
+* Avšak ty, Pane, pomsti mě jako můj obránce. 
+V. Neboť se přiblížilo utrpení, a není, kdo by pomohl. 
+R. Avšak ty, Pane, pomsti mě jako můj obránce.
+
+[Ant 1]
+Oslav mě, Otče, * sám u sebe slávou, kterou jsi měl ještě než vznikl svět.
+
+[Invit]
+Oni však nepoznali mé cesty. * Proto jsem přísahal ve svém hněvu: Nepřijdou na místo mého klidu!
+
+[Responsory1]
+R. V den, kdy jsem tě vzýval, Hospodine, jsi řekl: Neboj se; rozsoudil jsi můj případ,
+* A osvobodil mě, Hospodine, můj Bože.
+@Tempora/Quad6-0:Responsory1:3
+R. A osvobodil mě, Hospodine, můj Bože.
+
+[Responsory2]
+@Tempora/Quad6-0::1-2
+V. Přátelé moji i blízcí moji.
+@Tempora/Quad6-0::4
+
+[Responsory3]
+@Tempora/Quad6-0::1-2:s/\?/./
+V. Člověk mého pokoje, na nějž jsem spoléhal; rozšířil proti mě zradu.
+@Tempora/Quad6-0::4:s/\?/./
+
+[Responsory4]
+@Tempora/Quad6-0:Responsory5:s/vyslyš mě, .*/vyslyš mě./g s/vyslyš mě/rychle mě vyslyš/g s/vysvoboď\./vysvoboď, Hospodine;/
+
+[Lectio5]
+@Tempora/Quad6-0:Lectio4:s/Nechť .*//s
+
+[Lectio6]
+@Tempora/Quad6-0:Lectio4:s/.* Nechť /Nechť /s s/$/~/
+@Tempora/Quad6-0:Lectio5:s/Co však .*//s
+
+[Lectio7]
+@Tempora/Quad6-0:Lectio5:s/.* Co však /Co však /s
+
+[Lectio8]
+@Tempora/Quad6-0:Lectio6
+
+[Responsory5]
+@Tempora/Quad6-0:Responsory6:s/kteří .*//g
+
+[Responsory6]
+R. Když Pán vstupoval do svatého města, židovští chlapci provolávali příchod zmrtvýchvstání života;
+* S palmovými ratolestmi volali Hosanna na výsostech.
+V. Když lid uslyšel, že Ježíš přišel do Jerusaléma, vyšli mu naproti;
+R. S palmovými ratolestmi volali Hosanna na výsostech.
+
+[Responsory7]
+@Tempora/Quad6-0::1-2
+V. Ty však, Hospodine Zástupů, jenž soudíš spravedlivě, a zkoumáš ledví i srdce,
+@Tempora/Quad6-0::4
+
+[Lectio9]
+@Tempora/Quad6-0:Lectio7:s/Na této .*//s
+
+[Lectio10]
+@Tempora/Quad6-0:Lectio7:s/.* Na této /Na této /s s/$/~/
+@Tempora/Quad6-0:Lectio8:s/Byl tedy .*//s
+
+[Lectio11]
+@Tempora/Quad6-0:Lectio8:s/.* Byl tedy /Byl tedy /s s/$/~/
+@Tempora/Quad6-0:Lectio9:s/A proto .*//s
+
+[Lectio12]
+@Tempora/Quad6-0:Lectio9:s/.* A proto /A proto /s
+
+[Responsory9]
+R. Urážky a hrozné věci jsem trpěl od těch, kteří byli ke mně laskaví, a střežili můj bok, řkouce: Podveďme jej a přemožme jej; avšak ty, Hospodine, se mnou jsi jako silný válečník. Nechať padnou ve věčné pokoření, abych na nich uviděl pomstu,
+* Neboť tobě jsem odhalil svou při.
+@Tempora/Quad6-2:Responsory1:3
+R. Neboť tobě jsem odhalil svou při.
+
+[Responsory10]
+@Tempora/Quad6-2:Responsory2:1-2
+V. Výčitky těch, kteří ti něco vyčítají, padly na mě.
+@Tempora/Quad6-2:Responsory2:4
+
+[Responsory11]
+R. Svou milovanou duši jsem vydal do rukou zlovolných, a stala se mým dědictvím jako lev v lese; promluvil proti mě nepřítel a řekl: „Spojte se a pospěšte, abychom jej pohltili!“
+* Umístili mě na poušť samoty, a lkala nade mnou celá země, neboť nenašel se, kdo by mě poznal, a činil mi dobro. 
+V. Mnozí pastýři rozbořili mou vinici, pošlapali můj podíl.
+R. Umístili mě na poušť samoty, a lkala nade mnou celá země, neboť nenašel se, kdo by mě poznal, a činil mi dobro. 
+
+[Responsory12]
+@Tempora/Quad6-1:Responsory3:1-2
+V. A dali mi v můj pokrm žluč, a v mé žízni mě napájeli octem.
+@Tempora/Quad6-1:Responsory3:4
+
+[Ant 3]
+Počaly * všechny zástupy odcházejících s radostí chválit Boha hlasem velikým za všechny mocné divy, které viděly, a říkaly: Požehnaný, jenž přichází jako Král ve jménu Páně, pokoj v nebi a sláva na výsostech.

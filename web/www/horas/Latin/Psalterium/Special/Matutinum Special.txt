@@ -50,7 +50,7 @@ Adorémus Dóminum, * Qui nos redémit per crucem.
 
 [Invit Quad5]
 @:Invit Quad5_
-(sed rubrica Praedicatorum)
+(sed rubrica Praedicatorum aut rubrica cisterciensis nisi feria 1)
 @:Invit Quad5 OP
 
 [Invit Pasch_]
@@ -899,6 +899,11 @@ $Deo gratias
 _
 V. Éripe me, Dómine, ab hómine malo.
 R. A viro iníquo éripe me.
+
+[MM Capitulum Quad5] (rubrica cisterciensis)
+@Tempora/Quad6-0:Capitulum Sexta:s/(v\. .*?\.) .*/$1/ s/-9//
+_
+@Psalterium/Special/Minor Special:Responsory Quad5 SextaC_
 
 [MM Capitulum Pasch]
 !Rom 6:4
