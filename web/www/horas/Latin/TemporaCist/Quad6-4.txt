@@ -1,0 +1,76 @@
+@Tempora/Quad6-4
+
+[Rule]
+Matutinum Romanum
+Omit Incipit Invitatorium Hymnus Capitulum Lectio Commemoratio Antiphona finalis Preces Suffragium Conclusion Martyrologium De Officium Capituli
+Limit Benedictiones, Oratio
+9 lectiones 1960
+Capitulum Versum 2 ad Laudes tantum
+Feria
+
+[Responsory5]
+@Tempora/Quad6-4::s/Denari/Qui denari/g
+
+[Ant Laudes]
+@Tempora/Quad6-4::s/\n/_/smg s/_/;;50\n/ s/_/;;89\n/ s/_/;;62;66\n/ s/_/;;224\n/ s/$/;;148;149;150\n/s
+
+[Special Prima]
+$Pater noster
+$Ave Maria
+$Credo
+
+&psalm(53)
+
+&psalm(118,1,8)
+
+&psalm(118,9,16)
+
+&psalm(118,17,24)
+
+&psalm(118,25,32)
+_
+
+_
+@Tempora/Quad6-4:Oratio
+
+[Special Tertia]
+$Pater noster
+$Ave Maria
+
+&psalm(118,33,48)
+
+&psalm(118,49,64)
+
+&psalm(118,65,80)
+_
+
+_
+@Tempora/Quad6-4:Oratio
+
+[Special Sexta]
+$Pater noster
+$Ave Maria
+
+&psalm(118,81,96)
+
+&psalm(118,97,112)
+
+&psalm(118,113,128)
+_
+
+_
+@Tempora/Quad6-4:Oratio
+
+[Special Nona]
+$Pater noster
+$Ave Maria
+
+&psalm(118,129,144)
+
+&psalm(118,145,160)
+
+&psalm(118,161,176)
+_
+
+_
+@Tempora/Quad6-4:Oratio

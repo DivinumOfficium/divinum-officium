@@ -18,7 +18,9 @@
 /:potichu:/
 
 [Secreto_C]
-/:Ve Chóru, když se zakončí Malé Mariánské Hodinky, řekne se potichu::/
+/:V Chóru, když se zakončí Malé Mariánské Hodinky, řekne se potichu::/
+(sed die Tridui Sacri)
+/:Když se zakončí Malé Mariánské Hodinky soukromě, řekne se v Chóru potichu::/
 
 [Secreto a Laudibus]
 /:Pokud se Matutinum a Laudy říkají odděleně, tehdy se řekne potichu::/
@@ -50,6 +52,8 @@
 !Reliqua omittuntur in Officium duodecim Lectionum, quando immediatæ subsequuntur %Laudes%. Sed in Festi Simplicis, et in Officio Ferialis tam trium, quam unius Lectionis semper dicuntur ut sequitur.
 (sed rubrica cisterciensis)
 !Zbytek se ve dvanáctilekcovém Officiu vynechává, a hned navazují %Laudy%. Avšak jak ve Fériích, tak ve třílekcových Svátcích, v zimě i na jaře se vždy říká následující.
+(sed rubrica cisterciensis et die Tridui Sacri)
+!Na konci devátého Responsoria zažehne Sacristián jednu společnou svíci na středu stupně Presbytáře, zatímco se začíná první Antifona %Laud%.
 
 [Matutinum parvum]
 !Následují hned %Laudy%.
