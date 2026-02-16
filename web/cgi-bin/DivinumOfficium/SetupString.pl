@@ -198,6 +198,7 @@ sub get_tempus_id {
       : 'Septuagesimæ'
     : /^Quad(\d)/ && $1 < 5 ? 'Quadragesimæ'
     : /^Quad/ ? 'Passionis'
+    : /^Pasc0\-0/ && $dayofweek == 6 ? 'Vigilia Paschalis'
     : /^Pasc0/ ? 'Octava Paschæ'
     : /^Pasc(\d)/ && ($1 < 5 || ($1 == 5 && ($dayofweek < 3 || (!$vesp_or_comp && $dayofweek == 3))))
     ? 'post Octavam Paschæ'
@@ -226,6 +227,7 @@ sub get_dayname_for_condition {
   my $vesp_or_comp = ($hora =~ /Vespera/i) || ($hora =~ /Completorium/i);
   return 'Epiphaniæ' if ($month == 1 && ($day == 6 || ($day == 5 && $vesp_or_comp)));
   return 'Baptismatis Domini' if ($month == 1 && ($day == 13 || ($day == 12 && $vesp_or_comp)));
+  return 'Tridui Sacri' if $winner =~ /Quad6\-[456]/;
   return 'in Cœna Domini' if $winner =~ /Quad6\-4/;
   return 'in Parasceve' if $winner =~ /Quad6\-5/;
   return 'Sabbato Sancto' if $winner =~ /Quad6\-6/;

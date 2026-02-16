@@ -1,0 +1,36 @@
+@Tempora/Quad6-6
+
+[Officium]
+Sabbato Sancto
+
+[Rank]
+;;Feria privilegiata Duplex I classis;;6
+
+[Rule]
+Matutinum Romanum
+Omit Incipit Invitatorium Hymnus Capitulum Lectio Commemoratio Antiphona finalis Preces Suffragium Conclusion Martyrologium De Officium Capituli
+Limit Benedictiones, Oratio
+9 lectiones 1960
+Capitulum Versum 2 ad Laudes tantum
+Feria
+
+[Ant Laudes]
+@Tempora/Quad6-6::s/\n/_/smg s/_/;;50\n/ s/_/;;42\n/ s/_/;;62;66\n/ s/_/\n/ s/$/;;148;149;150\n/s
+
+[Special Prima]
+@TemporaM/Quad6-4::s/6-4/6-6/ s/Oratio/Oratio 2/
+
+[Special Tertia]
+@TemporaM/Quad6-4::s/6-4/6-6/ s/Oratio/Oratio 2/
+
+[Special Sexta]
+@TemporaM/Quad6-4::s/6-4/6-6/ s/Oratio/Oratio 2/
+
+[Special Nona]
+@TemporaM/Quad6-4::s/6-4/6-6/ s/Oratio/Oratio 2/
+
+[Ant 3]
+@Tempora/Quad6-6r
+
+[Oratio 3]
+@Tempora/Quad6-6r:Oratio Matutinum

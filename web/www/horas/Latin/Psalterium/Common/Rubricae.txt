@@ -28,7 +28,9 @@
 /:secreto:/
 
 [Secreto_C]
-/:In Choro, finita Officio parvo B.M.V., dicitur secreto::/
+/:In Choro, finito Officio parvo B.M.V., dicitur secreto::/
+(sed die Tridui Sacri)
+/:Finito Officio parvo B.M.V. privatim, in Choro dicitur secreto::/
 
 [Secreto]
 @:Secreto_
@@ -75,6 +77,8 @@
 !Reliqua omittuntur in Officium duodecim Lectionum, quando immediatæ subsequuntur %Laudes%. Sed in Festi Simplicis, et in Officio Ferialis tam trium, quam unius Lectionis semper dicuntur ut sequitur.
 (sed rubrica cisterciensis)
 !Reliqua omittuntur in Officium xij. Lectionum, quas immediatæ subsequuntur %Laudes%. Sed tam in Feriis, quam in Festis iij. Lectionum, in Hieme et in Æstate semper dicuntur ut sequitur.
+(sed rubrica cisterciensis et die Tridui Sacri)
+!Ad finem noni Responsorii accendat Sacrista unum cereum communem super medium gradus Presbyterii, dum prima Antiphona %Laudum% imponitur.
 
 [Matutinum parvum]
 !Reliqua omittuntur, et statim inchoatur %Laudes%.
