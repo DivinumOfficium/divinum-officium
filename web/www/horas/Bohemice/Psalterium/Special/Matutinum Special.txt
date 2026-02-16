@@ -34,7 +34,7 @@ Klaňme se Hospodinu, * Jenž nás vykoupil skrze kříž.
 
 [Invit Quad5]
 @:Invit Quad5_
-(sed rubrica Praedicatorum)
+(sed rubrica Praedicatorum aut rubrica cisterciensis nisi feria 1)
 @:Invit Quad5 OP
 
 [Invit Pasch_]
@@ -164,6 +164,50 @@ To jediný, dej, Bože náš,
 jenž v osobách třech přebýváš,
 by klidil každý v hojnosti
 pak ovoce své střídmosti.
+Amen.
+
+[Hymnus Quad5]
+{:H-MatQuad5:}v. Zapějte, rty, píseň vroucí
+o přeslavném zápase,
+o trofeji kříže skvoucí
+pějte hymnus v úžase,
+že Spasitel v mukách mroucí
+nám pomohl ke spáse.
+_
+Zželelo se Stvořiteli
+lidí, jež had oklamal,
+že se smrti člověk celý
+pro jablko zaprodal,
+a proto hned stromu velí,
+by s nás škodu stromu sňal.
+_
+Bychom byli tak spaseni,
+věčný řád to žádal sám:
+zrádcovo ať zlé umění
+umění zas svede v klam,
+ať se odtud lék pramení,
+odkud škůdce škodil nám.
+_
+Proto, když se přiblížila
+plnost času svátého,
+poslal Otec s nebes sídla
+Tvůrce světa širého,
+Boha v těle, jejž zrodila
+Panna z lůna čistého.
+_
+Lká, naříká hošík malý
+v úzkých jeslích ležící,
+Panna-Matka v plénky halí
+údy něhou zářící,
+ručky, nožky svému Králi
+vkládá v závoj hřející.
+_
+K Trojici ať nadšeného
+zpěvu tryská věčný hlas,
+stejný Otci, Synu jeho,
+Duchu buď, jenž těší nás,
+věhlas jména přesvatého
+zněj vesmírem v každý čas!
 Amen.
 
 [MM LB Pasch]
@@ -373,6 +417,11 @@ $Deo gratias
 _
 V. Vysvoboď mě, Hospodine, od zlého člověka.
 R. Od nepravého muže mě vyprosť.
+
+[MM Capitulum Quad5] (rubrica cisterciensis)
+@Tempora/Quad6-0:Capitulum Sexta:s/(v\. .*?\.) .*/$1/ s/-9//
+_
+@Psalterium/Special/Minor Special:Responsory Quad5 SextaC_
 
 [MM Capitulum Pasch]
 !Rom 6:4

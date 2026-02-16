@@ -1,0 +1,134 @@
+@Tempora/Quad6-0
+
+[Rule]
+12 lectiones
+Invit6
+Psalmi Feria
+
+[Responsory Vespera 1] (rubrica cisterciensis)
+R. Circumdedérunt me viri mendáces, sine causa flagéllis cecidérunt me: 
+* Sed tu, Dómine, defénsor víndica me. 
+V. Quóniam tribulátio próxima est, et non est qui ádjuvet. 
+R. Sed tu, Dómine, defénsor víndica me.
+
+[Ant 1]
+Clarífica me, Pater, * apud temetípsum claritáte, quam hábui, priúsquam mundus fíeret.
+
+[Invit]
+Ipsi vero non cognovérunt vias meas, * Quibus jurávi in ira mea, si introíbunt in réquiem meam.
+
+[Ant Matutinum 3N]
+@TemporaM/Quad6-0::s/† //g
+
+[Lectio1]
+@Tempora/Quad6-0:Lectio1:1-6 s/-17/-15/
+
+[Lectio2]
+@Tempora/Quad6-0:Lectio1:2 s/12-17/16-19/
+@Tempora/Quad6-0:Lectio1:7-8
+@Tempora/Quad6-0:Lectio2:2-3
+
+[Lectio3]
+@Tempora/Quad6-0:Lectio2:1 s/18-/20-/
+@Tempora/Quad6-0:Lectio2:4-6
+
+[Lectio4]
+@Tempora/Quad6-0:Lectio3
+
+[Responsory1]
+R. In die qua invocávi te, Dómine, dixísti: Noli timére; judicásti causam meam,
+* Et liberásti me, Dómine, Deus meus.
+@Tempora/Quad6-0:Responsory1:3
+R. Et liberásti me, Dómine, Deus meus.
+
+[Responsory2]
+@Tempora/Quad6-0::1-2
+V. Amíci mei et próximi mei.
+@Tempora/Quad6-0::4
+
+[Responsory3]
+@Tempora/Quad6-0::1-2:s/\?/./
+V. Homo pacis meæ in quo sperábam, ampliávit advérsum me supplantatiónem:
+@Tempora/Quad6-0::4:s/\?/./
+
+[Responsory4]
+@Tempora/Quad6-0:Responsory5:s/me, .*/me./g s/exáudi/velóciter exáudi/g s/éripe me\./éripe me, Dómine:/
+
+[Lectio5]
+@Tempora/Quad6-0:Lectio4:s/Succúmbat .*//s
+
+[Lectio6]
+@Tempora/Quad6-0:Lectio4:s/.* Succúmbat /Succúmbat /s s/$/~/
+@Tempora/Quad6-0:Lectio5:s/Quid .*//s
+
+[Lectio7]
+@Tempora/Quad6-0:Lectio5:s/.* Quid /Quid /s
+
+[Lectio8]
+@Tempora/Quad6-0:Lectio6
+
+[Responsory5]
+@Tempora/Quad6-0:Responsory6:s/qui quærunt .*//g
+
+[Responsory6]
+R. Ingrediénte Dómino in santam civitátem, Hebræórum púeri resurrectiónem vitæ pronuntiántes:
+* Cum ramis palmárum Hosánna clamábant in excélsis.
+V. Cum audísset pópulus, quia Jesus venit Jerosólymam, exiérunt óbviam ei:
+R. Cum ramis palmárum Hosánna clamábant in excélsis.
+
+[Responsory7]
+@Tempora/Quad6-0::1-2
+V. Tu autem Dómine Sábaoth, qui júdicas juste, et probas renes et corda,
+@Tempora/Quad6-0::4
+
+[Responsory8]
+@TemporaM/Quad6-0::s/† //g
+
+[Lectio9]
+@Tempora/Quad6-0:Lectio7:s/In hoc .*//s
+
+[Lectio10]
+@Tempora/Quad6-0:Lectio7:s/.* In hoc /In hoc /s s/$/~/
+@Tempora/Quad6-0:Lectio8:s/Ergo .*//s
+
+[Lectio11]
+@Tempora/Quad6-0:Lectio8:s/.* Ergo /Ergo /s s/$/~/
+@Tempora/Quad6-0:Lectio9:s/Et ídeo .*//s
+
+[Lectio12]
+@Tempora/Quad6-0:Lectio9:s/.* Et ídeo /Et ídeo /s
+
+[Responsory9]
+R. Contumélias et terróres passus sum ab eis, qui erant pacífici mei, et custodiéntes latus meum, dicéntes: Decipiámus eum, et prævaleámus illi: sed tu, Dómine, mecum es tamquam bellátor fortis: cadant in oppróbrium sempitérnum, ut vídeam vindíctam in eis,
+* Quia tibi revelávi causam meam.
+@Tempora/Quad6-2:Responsory1:3
+R. Quia tibi revelávi causam meam.
+
+[Responsory10]
+@Tempora/Quad6-2:Responsory2:1-2
+V. Impropéria improperántium tibi cecidérunt super me.
+@Tempora/Quad6-2:Responsory2:4
+
+[Responsory11]
+R. Animam meam diléctam trádidi in manus iniquórum, et facta est mihi heréditas mea sicut leo in silva: dedit contra me voces adversárius, dicens: Congregámini, et properáte ad devorándum illum:
+* Posuérunt me in desértum solitúdinis, et luxit super me omnis terra: quia non est invéntus qui me agnósceret, et fáceret bene.
+V. Pastóres multi demolíti sunt víneam meam, conculcavérunt partem meam:
+R. Posuérunt me in desértum solitúdinis, et luxit super me omnis terra: quia non est invéntus qui me agnósceret, et fáceret bene.
+
+[Responsory12]
+@Tempora/Quad6-1:Responsory3:1-2
+V. Et dedérunt in escam meam fel, et in siti mea potavérunt me acéto.
+@Tempora/Quad6-1:Responsory3:4
+
+[Evangelium]
+@TemporaM/Quad6-0
+
+[Ant Sexta]
+@Tempora/Quad6-0:Ant Nona
+
+[Ant Nona]
+@Tempora/Quad6-0:Ant Sexta
+
+[Ant 3]
+Cœpérunt * omnes turbæ descendéntium gaudéntes laudáre Deum voce magna super ómnibus quas víderant virtútibus, dicéntes: Benedíctus qui venit Rex in nómine Dómini, pax in cœlo et glória in excélsis.
+

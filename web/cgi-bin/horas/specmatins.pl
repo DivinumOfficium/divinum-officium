@@ -105,7 +105,7 @@ sub invitatorium {
       s/ \*.*?(\(\:\:\)\})?$/ \1/m;
     } elsif ($dayname[0] =~ /Quad[56]/i
       && $winner =~ /tempora/i
-      && $rule !~ /Gloria responsory/i
+      && $rule !~ /Gloria responsory|Invit6/i
       && $version !~ /Praedicatorum/)
     {
 
@@ -125,9 +125,18 @@ sub invitatorium {
       # Invitatorium5 for Cist. Pre-Lent,
       # removing the [Invit] verse
       s/^(v\.|\{\([cf][1-4]b?\))\s*.* \= (.)/\1 \u\2/m;
+    } elsif ($rule =~ /Invit6/i) {
+
+      # Invitatorium for Cist. Palm Sunday,
+      # removing the [Invit] verse + repeating the specified verse
+      # instead of the entire Invit. twice in a row
+      s/&Gloria/\&Gloria2/;
+      s/\$ant\s*(?=\&)//s;
+      s/\$ant2\s*(?=\$)//s;
+      s/_(.*)(.) _ .*/$1.\nAnt. $1/m;
     }
 
-    s{[+*^=] }{}g;    # clean division marks
+    s{[+*^=_] }{}g;    # clean division marks
 
     s/\$ant2/$ant2/eg;
     s/\$ant/$ant/eg;
@@ -1210,7 +1219,7 @@ sub lectio : ScriptFunc {
 
   # In Cistercian books, the asterisks are always red
   if ($version =~ /Cist/i) {
-    $w =~ s{\*}{<FONT COLOR="RED">*</FONT>};
+    $w =~ s{\*}{<FONT COLOR="RED">*</FONT>}g;
   }
 
   # add initial to text
@@ -1404,7 +1413,14 @@ sub responsory_gloria {
 
     } elsif ($w !~ /\&Gloria/i) {
       $w =~ s/[\s_]*$//gs;
-      $w =~ s/(R\..*?)$/$1\n\&Gloria1\n$1/;
+
+      # In Passiontide, Gloria Patri is omitted, and replaced by the first two lines of the R.
+      if ($winner =~ /Quad[56]/ && $version =~ /monastic/i) {
+        $w =~ s/^(R\..*)\n(\* .*)\n(V\..*)\n(R\..*)$/$1\n$2\n$3\n$4\n\&Gloria1\n$1 $2/m;
+        $w =~ s/  / /g;
+      } else {
+        $w =~ s/(R\..*?)$/$1\n\&Gloria1\n$1/;
+      }
     }
   } else {
     $w =~ s/.\&Gloria.*//s;

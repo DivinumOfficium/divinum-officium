@@ -548,6 +548,16 @@ _
 V. Liberami, o Signore, dall'uomo cattivo.
 R. Liberami dall'uomo iniquo.
 
+[MM Capitulum Quad] (rubrica cisterciensis)
+@Tempora/Quad1-0:Capitulum Laudes
+_
+@Psalterium/Special/Minor Special:Responsory Quad TertiaM_
+
+[MM Capitulum Quad5] (rubrica cisterciensis)
+@Tempora/Quad6-0:Capitulum Sexta:s/(v\. .*?\.) .*/$1/ s/-9//
+_
+@Psalterium/Special/Minor Special:Responsory Quad5 SextaC_
+
 [MM Capitulum Pasch]
 !2 Cor 5:14-15
 v. Poiché la carità di Cristo ci spinge: considerando questo, che se uno solo è morto per tutti, dunque sono morti tutti e per tutti morì Cristo: onde quelli che vivono, oramai non vivano più per se stessi, ma per colui che per essi morì e risuscitò.

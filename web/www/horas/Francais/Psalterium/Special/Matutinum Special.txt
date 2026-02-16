@@ -558,6 +558,16 @@ _
 V. Délivrez-moi Seigneur, de l'homme méchant.
 R. De l'homme injuste, délivrez-moi.
 
+[MM Capitulum Quad] (rubrica cisterciensis)
+@Tempora/Quad1-0:Capitulum Laudes
+_
+@Psalterium/Special/Minor Special:Responsory Quad TertiaM_
+
+[MM Capitulum Quad5] (rubrica cisterciensis)
+@Tempora/Quad6-0:Capitulum Sexta:s/(v\. .*?\.) .*/$1/ s/-9//
+_
+@Psalterium/Special/Minor Special:Responsory Quad5 SextaC_
+
 [MM Capitulum Pasch]
 !Rom 6:4
 v. Nous avons donc été ensevelis avec lui par le baptême en sa mort, afin que, comme Christ est ressuscité des morts par la gloire du Père, de même nous marchions, nous aussi, dans une vie nouvelle.

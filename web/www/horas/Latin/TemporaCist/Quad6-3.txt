@@ -1,0 +1,42 @@
+@Tempora/Quad6-3
+
+[Rule]
+Antiphonas horas
+Psalmi Feria
+
+[Lectio1]
+@Tempora/Quad6-3::1-7:s/-18/-17/
+
+[Lectio2]
+@Tempora/Quad6-3::1-5:s/-18/-16/
+
+[Lectio3]
+@Tempora/Quad6-3:Lectio2:s/13-18/17-20/ s/13 .*17/17/s
+@Tempora/Quad6-3::2-3
+
+[Responsory1]
+R. Synagógæ populórum circumdedérunt me: et non réddidi retribuéntibus mihi mala: consumétur, Dómine, nequítia peccatórum,
+* Et díriges justum.
+V. Tu autem, Dómine, suscéptor meus es, glória mea, et exáltans caput meum.
+R. Et díriges justum.
+
+[Responsory2]
+@Tempora/Quad6-4:Responsory7:1-2
+V. Audívi enim contumélias multórum, et terrórem in circúitu dicéntium:
+@Tempora/Quad6-4:Responsory7:4
+
+[Responsory3]
+@Tempora/Quad6-4:Responsory5:s/Denari/Qui denari/g
+
+[Ant Laudes]
+Líbera me * de sanguínibus, Deus, Deus meus: et exsultábit lingua mea justítiam tuam.
+Contumélias * et terróres passus sum ab eis: et Dóminus mecum est tamquam bellátor fortis.
+Omnes inimíci mei * audiérunt malum meum: Dómine, lætáti sunt, quóniam tu fecisti.
+Consílium * fecérunt inimíci mei, dicéntes: Conterámus eum de terra vivéntium.
+Ancílla dixit * Petro: Vere tu ex illis es: nam et loquéla tua maniféstum te facit.
+
+[Ant 2]
+Tanto témpore * vobíscum eram docens vos in templo, et non me tenuístis, et ecce flagellátum dúcitis ad crucifigéndum.
+
+[Ant 3] 
+Quotídie * apud vos eram in templo docens, et non me tenuístis, et ecce flagellátum dúcitis ad crucifigéndum.

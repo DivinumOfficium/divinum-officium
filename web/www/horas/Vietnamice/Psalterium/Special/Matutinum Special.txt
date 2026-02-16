@@ -865,6 +865,16 @@ _
 V. Lạy Chúa, xin gỡ tôi khỏi người dữ.
 R. Xin gỡ tôi khỏi kẻ gian ác.
 
+[MM Capitulum Quad] (rubrica cisterciensis)
+@Tempora/Quad1-0:Capitulum Laudes
+_
+@Psalterium/Special/Minor Special:Responsory Quad TertiaM_
+
+[MM Capitulum Quad5] (rubrica cisterciensis)
+@Tempora/Quad6-0:Capitulum Sexta:s/(v\. .*?\.) .*/$1/ s/-9//
+_
+@Psalterium/Special/Minor Special:Responsory Quad5 SextaC_
+
 [MM Capitulum Pasch]
 !Rôma 6:4
 v. Vì chưng chúng ta đã chịu chôn cùng Người nhờ phép Rửa tội trong sự chết: hầu như Chúa Kirixitô đã sống lại từ cõi chết bởi vinh hiển của Đức Chúa Cha thể nào, thì chúng ta cũng bước đi trong sự mới của sự sống thể ấy.
