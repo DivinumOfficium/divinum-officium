@@ -1,0 +1,31 @@
+@Tempora/Quadp2-3
+
+[Lectio1]
+@Tempora/Quadp2-2::1
+@Tempora/Quadp2-2:Lectio2:!2 s/5-/6-/
+
+[Responsory1]
+@Tempora/Quadp2-0:Responsory6
+
+[Lectio2]
+@Tempora/Quadp2-2:Lectio3
+
+[Responsory2]
+@Tempora/Quadp2-0:Responsory8:1-2
+V. Erit arcus meus in núbibus, et vidébo illum, et recordábor fœ́deris mei sempitérni.
+@Tempora/Quadp2-0:Responsory8:2 s/\*/R./
+
+[Lectio3]
+!Gen 8:13-17
+13 Et apériens Noë tectum arcæ, aspéxit, vidítque quod exsiccáta esset superfícies terræ.
+14 Mense secúndo, séptimo et vigésimo die mensis arefácta est terra.
+@Tempora/Quadp2-3:Lectio1:3-5 s/, tam.*/./
+
+[Responsory3]
+@TemporaOP/Quadp2-0:Responsory Vespera 1
+
+[Ant 2]
+@Tempora/Quadp2-2:Ant 3
+
+[Ant 3]
+@Tempora/Quadp2-3

@@ -1,0 +1,23 @@
+@Tempora/Quad1-2
+
+[Lectio1]
+@Tempora/Quad1-2::s/ Arefécit.*//
+
+[Responsory1]
+@Tempora/Quad1-0:Responsory6:1-2
+@Tempora/Quad1-0:Responsory2:3
+@Tempora/Quad1-0:Responsory6:4
+
+[Lectio2]
+@Tempora/Quad1-2:Lectio1:s/.* (?=Arefécit)//s s/$/~/
+@Tempora/Quad1-2::s/ Et .*//
+
+[Responsory2]
+@TemporaCist/Quad1-0:Responsory10
+
+[Lectio3]
+@Tempora/Quad1-2:Lectio2:s/.* (?=Et )//s s/$/~/
+@Tempora/Quad1-2::s/ Si enim.*//
+
+[Responsory3]
+@Tempora/Quad1-3

@@ -1,0 +1,35 @@
+@Tempora/Quadp2-1
+
+[Lectio1]
+De libro Génesis
+!Gen 7:5-9
+5 Fecit ergo Noë ómnia quæ mandáverat ei Dóminus.
+6 Erátque sexcentórum annórum quando dilúvii aquæ inundavérunt super terram.
+7 Et ingréssus est Noë et fílii ejus, uxor ejus et uxóres filiórum ejus cum eo in arcam propter aquas dilúvii.
+8 De animántibus quoque mundis et immúndis, et de volúcribus, et ex omni quod movétur super terram,
+9 duo et duo ingréssa sunt ad Noë in arcam, másculus et fémina, sicut præcéperat Dóminus Noë.
+
+[Responsory1]
+@TemporaOP/Quadp2-0
+
+[Lectio2]
+@Tempora/Quadp2-1::!2 s/7:5; //
+
+[Responsory2]
+@TemporaCist/Quadp3-0:Responsory1
+
+[Lectio3]
+@Tempora/Quadp2-1::1-3 s/-14.*/-15/ s/.$/,~/
+univérsæ aves, omnésque vólucres
+15 ingréssæ sunt ad Noë in arcam.
+
+[Responsory3]
+@TemporaM/Quadp2-0:Responsory11
+
+[Ant 2]
+@Tempora/Quadp2-2:Ant 3
+
+[Ant 3]
+@Tempora/Quadp2-3
+
+

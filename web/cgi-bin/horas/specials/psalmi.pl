@@ -119,7 +119,7 @@ sub psalmi_minor {
     }
     $ant = chompd($psalmi[$i]);
     $psalms = chompd($psalmi[$i + 1]);
-    if (($version =~ /1960/ && $psalms =~ /117/ && $laudes == 2) || $rule =~ /Prima=53/i) { $psalms =~ s/117/53/; }
+    if (($version =~ /196/ && $psalms =~ /117/ && $laudes == 2) || $rule =~ /Prima=53/i) { $psalms =~ s/117/53/; }
   }
   setbuild('Psalterium/Psalmi/Psalmi minor', "$hora Day$dayofweek", 'Psalmi ord');
   my $comment = 0;
@@ -286,7 +286,7 @@ sub psalmi_minor {
     }
 
     # prima psalm set for laudes 2 sunday
-    if ($hora eq 'Prima' && $laudes == 2 && $dayname[1] =~ /Dominica/i && $version !~ /1960/) {
+    if ($hora eq 'Prima' && $laudes == 2 && $dayname[1] =~ /Dominica/i && $version !~ /196/) {
       $psalm[0] = 99;
       unshift(@psalm, 92);
       setbuild2("First psalms #99 and  #92");

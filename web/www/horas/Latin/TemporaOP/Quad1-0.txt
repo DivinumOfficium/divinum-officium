@@ -1,0 +1,66 @@
+@Tempora/Quad1-0
+
+[Rule]
+Antiphonas horas
+
+[Responsory Vespera 1]
+@Tempora/Quad1-0:Responsory4:1-2
+@Tempora/093-0:Responsory7:3
+@Tempora/Quad1-0:Responsory4:4
+&Gloria
+@Tempora/Quad1-0:Responsory4:4
+
+[Versum 1]
+@Psalterium/Special/Major Special:Quad Versum 3
+
+[Capitulum Laudes]
+@Tempora/Quad1-0::s/.*?: /v. /
+
+[In Finem Lectio]
+r. Hæc dicit Dóminus Deus: Convertímini ad me, et salvi éritis.
+$Deo gratias
+
+[Lectio1]
+De Joéle Prophéta
+!Joël 2:15-18
+15 Cánite tuba in Sion, sanctificáte jeiúnium, vocáte cœtum,
+16 congregáte pópulum, sanctificáte ecclésiam, coadunáte senes, congregáte párvulos, et sugéntes úbera: egrediátur sponsus de cubíli suo, et sponsa de thálamo suo.
+17 Inter vestíbulum et altáre plorábunt sacerdótes, minístri Dómini, et dicent: Parce Dómine, parce pópulo tuo: et ne des hereditátem tuam in oppróbrium, ut dominéntur eis natiónes. Quare dicunt in pópulis: Ubi est Deus eórum?
+18 Zelátus est Dóminus terram suam, et pepércit pópulo suo.
+@:In Finem Lectio
+
+[Lectio2]
+De Isaía Prophéta
+!Isa 58:4-8
+4 Nolíte jejunáre sicut usque ad hanc diem, ut audiátur in excélso clamor vester.
+5 Numquid tale est jeiúnium quod elégi, per diem afflígere hóminem ánimam suam? numquid contorquére quasi círculum caput suum, et saccum et cínerem stérnere? numquid istud vocábis jeiúnium, et diem acceptábilem Dómino?
+6 Nonne hoc est magis jeiúnium quod elégi? dissólve colligatiónes impietátis, solve fascículos depriméntes, dimítte eos qui confrácti sunt líberos, et omne onus dirúmpe.
+7 Frange esuriénti panem tuum, et egénos vagósque induc in domum tuam: cum víderis nudum, óperi eum, et carnem tuam ne despéxeris.
+8 Tunc erúmpet quasi mane lumen tuum, et sánitas tua cítius oriétur.
+@:In Finem Lectio
+
+[Responsory2]
+@:Responsory Vespera 1
+
+[Lectio7]
+@Tempora/Quad1-0::s/ Sed ecce .*//
+
+[Responsory3]
+R. Ductus est Jesus in desértum a Spíritu, ut tentarétur a diábolo:
+* Et accédens tentátor dixit ei: Si Filius Dei es, dic ut lápides isti panes fiant.
+V. Et, cum jejunásset quadragínta diébus et quadragínta nóctibus, póstea esúriit.
+R. Et accédens tentátor dixit ei: Si Filius Dei es, dic ut lápides isti panes fiant.
+&Gloria
+R. Si Filius Dei es, dic ut lápides isti panes fiant.
+R. Ductus est Jesus in desértum a Spíritu, ut tentarétur a diábolo.
+
+[Ant Tertia]
+@Tempora/Quad1-0:Ant Sexta
+
+[Ant Sexta]
+@Tempora/Quad1-0:Ant Tertia
+
+[Capitulum Nona]
+!2 Cor 6:4
+v. In ómnibus exhibeámus nosmetípsos sicut Dei minístros, in multa patiéntia, in jejúniis multis, per arma justítiæ.
+$Deo gratias

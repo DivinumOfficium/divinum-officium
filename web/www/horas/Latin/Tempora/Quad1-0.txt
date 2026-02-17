@@ -14,7 +14,7 @@ Symbolum Athanasium(rubrica tridentina)
 [Ant 1]
 Tunc invocábis, * et Dóminus exáudiet: clamábis, et dicet: Ecce adsum.
 
-[Ant 1] (rubrica cisterciensis)
+[Ant 1] (rubrica cisterciensis aut rubrica praedicatorum)
 Ecce nunc * tempus acceptábile, ecce nunc dies salútis; in his ergo diébus exhibeámus nos sicut Dei ministros, in multa patiéntia, in vigíliis, in jejúniis, et in charitáte non ficta.
 
 [Oratio]
@@ -56,7 +56,7 @@ R. In ómnibus exhibeámus nosmetípsos sicut Dei minístros in multa patiéntia
 V. Ecce nunc tempus acceptábile, ecce nunc dies salútis: commendémus nosmetípsos in multa patiéntia.
 R. Ut non vituperétur ministérium nostrum.
 
-[Lectio3]
+[Lectio3] (nisi rubrica praedicatorum)
 !2 Cor 7:4-9
 4 Replétus sum consolatióne; superabúndo gáudio in omni tribulatióne nostra.
 5 Nam et cum venissémus in Macedóniam, nullam réquiem hábuit caro nostra, sed omnem tribulatiónem passi sumus: foris pugnæ, intus timóres.
@@ -180,7 +180,7 @@ $Deo gratias
 [Ant Nona]
 Dóminum Deum tuum * adorábis, et illi soli sérvies.
 
-[Ant Nona] (rubrica cisterciensis)
+[Ant Nona] (rubrica cisterciensis aut rubrica praedicatorum)
 Vade Sátana, * non tentábis Dóminum Deum tuum.
 
 [Capitulum Nona]
@@ -191,8 +191,13 @@ $Deo gratias
 [Versum 3] (nisi rubrica cisterciensis)
 @:Versum 1
 
-[Ant 3]
+[Ant 3_]
 Ecce nunc tempus * acceptábile, ecce nunc dies salútis: in his ergo diébus exhibeámus nosmetípsos sicut Dei minístros in multa patiéntia, in jejúniis, in vigíliis, et in caritáte non ficta.
 
-[Ant 3] (rubrica cisterciensis)
+[Ant 3C]
 Relíquit eum tentátor, * et accessérunt Angeli, et ministrábant ei.
+
+[Ant 3]
+@:Ant 3_
+(sed rubrica cisterciensis aut rubrica praedicatorum)
+@:Ant 3C

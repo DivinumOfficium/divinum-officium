@@ -1,0 +1,14 @@
+@Tempora/Quad1-4
+
+[Responsory1]
+@Tempora/Quad1-0
+
+[Lectio2]
+@Tempora/Quad1-4::s/ Nolébat.*//
+
+[Responsory3]
+@TemporaOP/Quad1-0:Responsory Vespera 1
+
+[Lectio3]
+@Tempora/Quad1-4:Lectio2:s/.* (?=Nolébat)// s/$/~/
+@Tempora/Quad1-4::s/: vel.*/./
