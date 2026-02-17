@@ -86,7 +86,10 @@ V. In conspéctu omnis pópuli ejus.
 @Commune/C1p:Responsory3:4
 
 [Responsory8]
-@Commune/C1p:Responsory2
+@Commune/C1p:Responsory2:1-3:s/, (a)(llel.*allel)/, * A$2/
+@Commune/C1p:Responsory2:4:s/, allel.*/./
+&Gloria
+@Commune/C1p:Responsory2:4:s/.* a(?=llel.*allel)/R. A/
 
 [Responsory9]
 @Commune/C2p:Responsory6:1-2
