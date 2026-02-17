@@ -1,0 +1,12 @@
+[Lectio5]
+@Sancti/12-07:Lectio4
+
+[Lectio6]
+@Sancti/12-07:Lectio5: s/Když se.*//s
+
+[Lectio7]
+@Sancti/12-07:Lectio5: s/.* Když se/Když se/s s/$/~/
+@Sancti/12-07:Lectio6: s/Takže .*//s
+
+[Lectio8]
+@Sancti/12-07:Lectio6: s/.* Takže /Takže /s

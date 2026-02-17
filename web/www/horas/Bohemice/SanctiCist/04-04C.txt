@@ -4,3 +4,16 @@ sv. Ambrože, Biskupa, Vyznavače a Učitele Církve
 [Name]
 Ambrože
 Ant=Ambroži
+
+[Lectio5]
+@Sancti/12-07:Lectio4:s/, Biskup milánský,// s/Říká .* jmenoval/Poté se stal/ s/na Probův rozkaz //
+
+[Lectio6]
+@Sancti/12-07:Lectio5: s/Když se.*//s
+
+[Lectio7]
+@Sancti/12-07:Lectio5: s/.* Když se/Když se/s s/$/~/
+@Sancti/12-07:Lectio6: s/Takže .*//s s/Když mu .*pokání.“ //
+
+[Lectio8]
+@Sancti/12-07:Lectio6: s/.* Takže /Takže /s

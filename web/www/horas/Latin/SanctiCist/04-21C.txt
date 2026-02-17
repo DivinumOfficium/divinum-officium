@@ -1,7 +1,28 @@
 @Sancti/04-21
 
+[Officium]
+S. Anselmi, Episcopi, Confessoris et Ecclesiæ Doctoris.
+
 [Rank]
-S. Anselmi, Episcopi, Confessoris et Ecclesiæ Doctoris;;Simplex;;1.2;;vide C4a
+;;Simplex;;1.2;;vide C4a
+
+[Rule]
+vide C4a;
+3 lectiones
+
+[Lectio2]
+Ansélmus Augústæ Prætóriæ in Itália natus, a puerítia stúdia litterárum sectátus, licet juveníli ardóre aliquándo ad sæculi illécebras traherétur, brevi tamen perfectióris vitæ desidério, ad monastérium Beccénse, Ordinis sancti Benedícti, se cóntulit, ubi emíssa regulári professióne, tanto ánimi fervóre, et jugi stúdio in lítteris et virtútibus assequéndis, sub Lanfránco, monastérii Prióre et viro doctíssimo profécit, ut tamquam sanctitátis et doctrínæ exémplar ab ómnibus haberétur. Assúmpto Lanfránco ad Cadoménsis cœnóbii régimen in ejus locum sufféctus Ansélmus, et póstea, defúncto Abbáte, ómnium suffrágiis Beccénsi monastério præféctus, tanta religiónis et sapiéntiæ fama ubíque refúlsit, ut non modo régibus et Epíscopis veneratióni esset, sed sancto Gregório séptimo étiam accéptus, qui tum magnis persecutiónibus agitatus, se et Ecclésiam Cathólicam ejus oratiónibus commendábat.
+
+[Lectio3]
+Mórtuo Lanfránco, qui ex Abbáte Cadoménsi factus fúerat Archiepíscopus Cantuariénsis, ei étiam succéssit Ansélmus, magna totíus regni gratulatióne. Sed mox dissídio orto inter Wilhélmum Angliæ regem Ecclésiæ jura iníque sibi vindicántem, et Ansélmum ejúsdem Ecclésiæ libertátem tuéntem, semel et íterum exuláre compúlsus, Romam venit, honorificéque ab Urbáno secúndo excéptus, Concílio Barénsi intérfuit, ubi contra Græcórum errórem strénue decertávit. Tandem ab Henríco rege Wilhélmi fratre in Angliam revocátus, et libertátem Ecclésiæ, pro qua laboráverat, adéptus, obdormívit in Dómino, fama miraculórum et sanctitátis clarus, et étiam ob insígnem devotiónem erga Dómini nostri passiónem et beátam Vírginem ejus Matrem commendátus.
 
 [Responsory1]
-@Commune/C4a:Responsory8
+@CommuneCist/C1p:Responsory11
+
+[Responsory2]
+@CommuneCist/C1p:Responsory12
+
+[Responsory3]
+@CommuneCist/C4:Responsory12
+
+

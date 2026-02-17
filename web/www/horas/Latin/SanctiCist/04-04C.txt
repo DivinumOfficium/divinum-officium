@@ -8,15 +8,29 @@ S. Ambrosii, Episcopi, Confessoris et Ecclesiæ Doctoris
 
 [Rule]
 Psalmi Dominica
+12 lectiones
 
 [Lectio1]
-@CommuneCist/C4:Lectio1
+@CommuneCist/C4:Lectio1 in 3 loco
 
 [Lectio2]
-@CommuneCist/C4:Lectio2
+@CommuneCist/C4:Lectio2 in 3 loco
 
 [Lectio3]
-@CommuneCist/C4:Lectio3
+@CommuneCist/C4:Lectio3 in 3 loco
 
 [Lectio4]
-@CommuneCist/C4:Lectio4
+@CommuneCist/C4:Lectio4 in 3 loco
+
+[Lectio5]
+@Sancti/12-07:Lectio4:s/epíscop/Epíscop/g s/ Epíscopus Mediolanénsis//i s/In hujus .* præfécto/Factus/ s/unde .*jussu, //
+
+[Lectio6]
+@Sancti/12-07:Lectio5:s/Factus epíscopus.*//s s/epíscop/Epíscop/g
+
+[Lectio7]
+@Sancti/12-07:Lectio5:s/.* Factus/Factus/s s/$/~/ s/epíscop/Epíscop/g
+@Sancti/12-07:Lectio6:s/Ergo sanctus.*//s s/epíscop/Epíscop/g s/Cui.*pœniténtem. //
+
+[Lectio8]
+@Sancti/12-07:Lectio6:s/.* Ergo sanctus/Ergo sanctus/s s/epíscop/Epíscop/g
