@@ -617,7 +617,7 @@ sub matins_lectio_responsory_alleluia(\$$) {
 
   my @resp = split("\n", $$r);
   ensure_single_alleluia(\$resp[1], $lang);
-  ensure_single_alleluia(\$resp[3], $lang);
+  ensure_single_alleluia(\$resp[3], $lang) if !($version =~ /cist/i && $resp[4] =~ /\&Gloria/i);
   ensure_single_alleluia(\$resp[-1], $lang);
   $$r = join("\n", @resp);
 }
@@ -1211,7 +1211,7 @@ sub lectio : ScriptFunc {
       }
     }
     matins_lectio_responsory_alleluia($s, $lang) if alleluia_required($dayname[0], $votive);
-    $s = responsory_gloria($s, $num);
+    $s = responsory_gloria($s, $num, $lang);
     $w =~ s/\s*$/\n\_\n$s/;
   }
 
@@ -1387,6 +1387,7 @@ sub responsory_gloria {
   my $w = shift;
   $w =~ s/\&Gloria1?/\&Gloria1/g;
   my $num = shift;
+  my $lang = shift;;
 
   return $w
     if (($num == 1 && $winner =~ /(?:Adv1|Pasc0)-0/i) || $rule =~ /requiem Gloria/i);
@@ -1416,11 +1417,27 @@ sub responsory_gloria {
 
       # In Passiontide, Gloria Patri is omitted, and replaced by the first two lines of the R.
       if ($winner =~ /Quad[56]/ && $version =~ /monastic/i) {
-        $w =~ s/^(R\..*)\n(\* .*)\n(V\..*)\n(R\..*)$/$1\n$2\n$3\n$4\n\&Gloria1\n$1 $2/m;
+        $w =~ s/^(R\..*)\n(\* .*)(?=allel)?\n(V\..*)\n(R\..*)$/$1\n$2\n$4\n$5\n\&Gloria1\n$1 $2/m;
+        $w =~ s/  / /g;
+      
+      # In Cist. version, the format of final Responsory in each Nocturn
+      # is a bit different in Paschaltide:
+      } elsif (alleluia_required($dayname[0], $votive) && $version =~ /cist/i) {
+        my $all = prayer('Alleluia Duplex', $lang);
+        $w =~ s/, allel[uú][ij]a//g;
+        $w =~ s/^(R\..*)\n(\* .*)\n(V\..*)\n(R\..*)$/$1\n$2 \* $all\n$3\n$4\n\&Gloria1\nR. $all/m;
         $w =~ s/  / /g;
       } else {
         $w =~ s/(R\..*?)$/$1\n\&Gloria1\n$1/;
       }
+
+    # This format needs to be checked also when linking another,  
+    # non-Cistercian final Responsory from extra T.P.
+    } elsif (alleluia_required($dayname[0], $votive) && $version =~ /cist/i && $w !~ /R\. Allel[uú][ij]a, allel[uú][ij]a/) {
+      my $all = prayer("Alleluia Duplex", $lang);
+      $w =~ s/. \(?allel[uú][ij]a(?:, allel[uú][ij]a)?\.?\)?/./ig;
+      $w =~ s/^(R\..*)\n(\* .*)\n(V\..*)\n(R\..*)\n(.*\n.*)$/$1\n$2 \* $all\n$3\n$4\n\&Gloria1\nR. $all/m;
+      $w =~ s/  / /g;
     }
   } else {
     $w =~ s/.\&Gloria.*//s;
