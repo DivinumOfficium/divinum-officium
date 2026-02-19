@@ -1,0 +1,43 @@
+
+[Invit]
+Alleluja, alleluja, alleluja * Alleluja, alleluja, alleluja.
+
+[AntC Matutinum]
+Alleluja, * alleluja, alleluja, alleluja, alleluja, alleluja, alleluja, alleluja.
+
+[Lectio1]
+@Tempora/Nat03::1-6 s/1-5/2-4/ s/1.*Absit. /2 /s
+
+
+[Lectio9]
+@Tempora/Pasc0-0:Lectio1:s/ Ony .*//s
+
+[Lectio10]
+@Tempora/Pasc0-0:Lectio1:s/.* Ony / Ony /s s/$/~/
+@Tempora/Pasc0-0:Lectio2:s/ Neboť .*//s
+
+[Lectio11]
+@Tempora/Pasc0-0:Lectio2:s/.* Neboť / Neboť /s
+
+[Capitulum Laudes]
+!1 Cor 5:7
+v. Bratři: Vyčištěte a vyhoďte starý kvas, abyste se mohli stát novým těstem, neboť jste nekvašení. Neboť Kristus náš velikonoční beránek je obětován.
+$Deo gratias
+
+[Versum 2]
+V. Toto je den, který učinil Pán. 
+R. Jásejme a radujme se v něm.
+
+[Capitulum Sexta]
+!1 Cor 5:8
+v. Proto hodujme, ne se starým kvasem, ani s kvasem zloby a nepravosti; ale s nekvašeným chlebem upřímnosti a pravdy.
+$Deo gratias
+
+[Capitulum Nona]
+!1 Col 3:1-2
+v. Když jste s Kristem byli vzkříšeni, usilujte o to, co pochází shůry, kde sedí Kristus po Boží pravici. Na to myslete, co pochází shůry, ne na to, co je na zemi.
+$Deo gratias
+
+[Ant 3]
+Kristus, když vstal * z mrtvých, již neumírá, smrt nad ním již nemá žádnou moc, když tedy žije, žije Bohu, alleluja, alleluja.
+

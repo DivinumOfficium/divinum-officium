@@ -477,7 +477,7 @@ sub legend_monastic {
       $resp = "Responsory for ne lesson not found!";
     }
   }
-   $resp = responsory_gloria($resp, 3, $lang);
+  $resp = responsory_gloria($resp, 3, $lang);
   matins_lectio_responsory_alleluia($resp, $lang) if alleluia_required($dayname[0], $votive);
   push(@s, $resp);
 }

@@ -1,0 +1,137 @@
+@TemporaM/Pasc0-0
+
+[Rule]
+Psalmi Dominica
+Antiphonas horas
+12 lectiones
+
+[Invit]
+Allelúia, allelúia, allelúia, * Allelúia, allelúia, allelúia.
+
+[Ant Matutinum]
+@:AntC Matutinum:s/$/;;1/
+;;2
+;;8
+;;15
+;;23
+;;27
+@Psalterium/Special/Minor Special:Responsory Pasch TertiaM
+@:AntC Matutinum:s/$/;;29/
+;;63
+;;65
+;;75
+;;87
+;;107
+@Psalterium/Special/Minor Special:Responsory Pasch SextaM
+@:AntC Matutinum:s/$/;;243;244;245/
+@Psalterium/Special/Minor Special:Responsory Pasch NonaM
+
+[AntC Matutinum]
+Allelúia, * allelúia, allelúia, allelúia, allelúia, allelúia, allelúia, allelúia.
+
+[Lectio1]
+@Tempora/Nat03::1-6 s/1-5/2-4/ s/1.*Absit. /2 /s
+
+[Lectio2]
+@Tempora/Nat03::1 s/6-11/5-7/
+@Tempora/Nat03:Lectio1:7
+@Tempora/Nat03::2-3
+
+[Lectio3]
+@Tempora/Nat03:Lectio2:s/6-11/8-10/ s/6 .*8/8/s s/.11 .*//s
+
+[Responsory3]
+@Tempora/Pasc0-1:Responsory1
+
+[Lectio4]
+@Tempora/Nat03:Lectio2:s/6-11/11-13/ s/6 .*11/11/s
+@Tempora/Nat03:Lectio3:2-3
+
+[Responsory4]
+@Tempora/Pasc0-1:Responsory2
+
+[Lectio5]
+@TemporaM/Pasc0-0
+
+[Lectio6]
+@TemporaM/Pasc0-0
+
+[Lectio7]
+@TemporaM/Pasc0-0
+
+[Lectio8]
+@TemporaM/Pasc0-0
+
+[Responsory5]
+@Tempora/Pasc0-2:Responsory1
+
+[Responsory6]
+@Tempora/Pasc0-2:Responsory2
+
+[Responsory7]
+@Tempora/Pasc0-3:Responsory1
+
+[Responsory8]
+@Tempora/Pasc0-3:Responsory2
+
+[Lectio9]
+@Tempora/Pasc0-0:Lectio1:s/ Illæ.*//s
+
+[Lectio10]
+@Tempora/Pasc0-0:Lectio1:s/.*Illæ/Illæ/s s/$/~/
+@Tempora/Pasc0-0:Lectio2:s/ Quia.*//s
+
+[Lectio11]
+@Tempora/Pasc0-0:Lectio2:s/.*Quia/Quia/s
+
+[Lectio12]
+@Tempora/Pasc0-0:Lectio3
+
+[Responsory9]
+@Tempora/Pasc0-4:Responsory1
+
+[Responsory10]
+@Tempora/Pasc0-4:Responsory2
+
+[Responsory11]
+@Tempora/Pasc0-5:Responsory1
+
+[Responsory12]
+@Tempora/Pasc0-5:Responsory2
+
+[Ant Laudes]
+@Psalterium/Psalmi/Psalmi minor:Pasch
+
+[Capitulum Laudes]
+!1 Cor 5:7
+v. Fratres: Expurgáte vetus ferméntum, ut sitis nova conspérsio, sicut estis ázymi. Etenim Pascha nostrum immolátus est Christus.
+$Deo gratias
+
+[Versum 2]
+V. Hæc dies, quam fecit Dominus.
+R. Exsultémus et lætémur in ea.
+
+[Responsory TertiaM]
+@:Versum 2
+
+[Capitulum Sexta]
+!1 Cor 5:8
+v. Itaque epulémur: non in ferménto véteri, neque in ferménto malítiæ et nequítiæ: sed in ázymis sinceritátis et veritátis.
+$Deo gratias
+
+[Responsory SextaM]
+@:Versum 2
+
+[Capitulum Nona]
+@Psalterium/Special/Prima Special:Pasch
+$Deo gratias
+
+[Responsory NonaM]
+@:Versum 2
+
+[Versum 3]
+@:Versum 2
+
+[Ant 3]
+Christus * resúrgens ex mórtuis, jam non móritur, mors illi ultra non dominábitur, quod enim vivit, vivit Deo, allelúia, allelúia.
+

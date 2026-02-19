@@ -1390,7 +1390,7 @@ sub responsory_gloria {
   my $lang = shift;;
 
   return $w
-    if (($num == 1 && $winner =~ /(?:Adv1|Pasc0)-0/i) || $rule =~ /requiem Gloria/i);
+    if (($num == 1 && $winner =~ /(?:Adv1|Pasc0)-0/i && $version !~ /cist/i) || $rule =~ /requiem Gloria/i);
 
   my $rpn = ($rule =~ /12 lectio/) ? 4 : 3;    # readings per nocturn
 
@@ -1417,7 +1417,7 @@ sub responsory_gloria {
 
       # In Passiontide, Gloria Patri is omitted, and replaced by the first two lines of the R.
       if ($winner =~ /Quad[56]/ && $version =~ /monastic/i) {
-        $w =~ s/^(R\..*)\n(\* .*)(?=allel)?\n(V\..*)\n(R\..*)$/$1\n$2\n$4\n$5\n\&Gloria1\n$1 $2/m;
+        $w =~ s/^(R\..*)\n(\* .*)\n(V\..*)\n(R\..*)$/$1\n$2\n$4\n$5\n\&Gloria1\n$1 $2/m;
         $w =~ s/  / /g;
       
       # In Cist. version, the format of final Responsory in each Nocturn
