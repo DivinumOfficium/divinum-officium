@@ -301,7 +301,7 @@ sub psalmi_minor {
     && $dayofweek == 0
     && ( $dayname[0] =~ /(Adv|Pent01)/i
       || checksuffragium()
-      || ($dayname[0] =~ /Adv|Epi[2-6]|Quad|Pasc|Pent/i && $version =~ /cist/i))
+      || ($dayname[0] =~ /Adv|Epi[2-6]|Quad|Pasc[2-6]|Pent/i && $version =~ /cist/i))
     && ($winner =~ /Tempora/i || $version !~ /cist/i)
   ) {
     push(@psalm, 234);
