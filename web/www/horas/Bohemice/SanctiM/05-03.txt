@@ -1,2 +1,18 @@
-[Ant 2] (rubrica cisterciensis)
-Hle, Kříž Páně, * prchejte, nepřátelské končiny, zvítězil lev z kmene Juda, kořen Davidův, alleluja.
+
+[Lectio7]
+@Sancti/05-03:Lectio6:s/Hřeby,.*//s
+
+[Lectio8]
+@Sancti/05-03:Lectio6:s/.*(Hřeby,)/$1/s
+
+[Lectio9]
+@Sancti/05-03:Lectio7:s/A co se.*//s
+
+[Lectio10]
+@Sancti/05-03:Lectio7:s/.* (A co se)/$1/s
+
+[Lectio11]
+@Sancti/05-03:Lectio8:s/Pohleďte .*//s
+
+[Lectio12]
+@Sancti/05-03:Lectio8:s/.*(Pohleďte )/$1/s
