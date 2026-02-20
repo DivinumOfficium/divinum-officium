@@ -39,7 +39,11 @@ R. A nedotknou se jich útrapy smrti, alleluja, alleluja.
 [Responsory8]
 @CommuneM/C1p:Responsory9
 
+[Lectio10]
+@Commune/C2p:Lectio8:s/Avšak .*//s
+
 [Lectio11]
+@Commune/C2p:Lectio8:s/.* (?=Avšak )//s s/$/~/
 @Commune/C2p:Lectio9:s/Kristus je.*//s
 
 [Lectio12]

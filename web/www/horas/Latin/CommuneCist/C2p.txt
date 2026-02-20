@@ -111,6 +111,7 @@ R. Et non tanget illos torméntum mortis, allelúia, allelúia.
 @Commune/C2p:Lectio8:s/Sed cum .*//s
 
 [Lectio11]
+@Commune/C2p:Lectio8:s/.* (?=Sed cum )//s s/$/~/
 @Commune/C2p:Lectio9:s/Secúndum hoc .*//s
 
 [Responsory11]
