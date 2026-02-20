@@ -2152,11 +2152,8 @@ sub gettempora {
     $tname = 'Pasch';
   }
 
-  if ($caller eq 'Lectio brevis Prima') {
-    $tname = 'Feria'
-      if ($version !~ /196|cist/i && $dayofweek >= 3 && $dayname[0] eq 'Quadp3');
-    $tname = 'Per Annum'
-      unless $tname && $version !~ /cist/i;
+  if ($caller eq 'Lectio brevis Prima' && $version !~ /cist/i) {
+    $tname ||= 'Per Annum';
   }
 
   if ($caller eq 'Hymnus major' && !$tname) {

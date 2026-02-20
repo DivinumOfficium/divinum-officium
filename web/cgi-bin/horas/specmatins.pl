@@ -889,10 +889,10 @@ sub lectio : ScriptFunc {
       setbuild2("Lectiones ex 3 fiunt 4") if $num == 1;
     }
 
-    if ($version =~ /Trident/ && $winner =~ /Sancti/ && $rank < 2) {
+    if ($version =~ /Trident/ && $winner =~ /Sancti/) {
 
-      # dirty hack to fix 3932
-      $w{Responsory1} = $w{Responsory2} = '';
+      # dirty hack to fix 3932 and also 5033/5027
+      $w{Responsory1} = $w{Responsory2} = $w{Responsory3} = '';
     }
     if ($w && $num == 1) { setbuild2("Lectio1 ex scriptura"); }
   } elsif (!$w && $num == 4 && exists($commemoratio{"Lectio$num"}) && ($version =~ /1960/i)) {

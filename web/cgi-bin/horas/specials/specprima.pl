@@ -67,7 +67,7 @@ sub capitulum_prima {
       && $winner{Rank} =~ /Feria|Vigilia/i
       && $winner{Rank} !~ /Vigilia Epi/i
       && (!$commune || $commune !~ /C10/)
-      && ($rank < 3 || $dayname[0] =~ /Quad6/)
+      && ($rank < 3 || $dayname[0] =~ /Quad6/ || $winner =~ /Quadp3-3/)
       && $dayname[0] !~ /Pasc/i) ? 'Feria' : 'Dominica';
 
   my $capit = $brevis{$key} . "\n\$Deo gratias\n_\n";
