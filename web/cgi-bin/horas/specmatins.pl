@@ -1387,7 +1387,7 @@ sub responsory_gloria {
   my $w = shift;
   $w =~ s/\&Gloria1?/\&Gloria1/g;
   my $num = shift;
-  my $lang = shift;;
+  my $lang = shift;
 
   return $w
     if (($num == 1 && $winner =~ /(?:Adv1|Pasc0)-0/i && $version !~ /cist/i) || $rule =~ /requiem Gloria/i);
@@ -1419,9 +1419,9 @@ sub responsory_gloria {
       if ($winner =~ /Quad[56]/ && $version =~ /monastic/i) {
         $w =~ s/^(R\..*)\n(\* .*)\n(V\..*)\n(R\..*)$/$1\n$2\n$4\n$5\n\&Gloria1\n$1 $2/m;
         $w =~ s/  / /g;
-      
-      # In Cist. version, the format of final Responsory in each Nocturn
-      # is a bit different in Paschaltide:
+
+        # In Cist. version, the format of final Responsory in each Nocturn
+        # is a bit different in Paschaltide:
       } elsif (alleluia_required($dayname[0], $votive) && $version =~ /cist/i) {
         my $all = prayer('Alleluia Duplex', $lang);
         $w =~ s/, allel[uú][ij]a//g;
@@ -1431,9 +1431,12 @@ sub responsory_gloria {
         $w =~ s/(R\..*?)$/$1\n\&Gloria1\n$1/;
       }
 
-    # This format needs to be checked also when linking another,  
-    # non-Cistercian final Responsory from extra T.P.
-    } elsif (alleluia_required($dayname[0], $votive) && $version =~ /cist/i && $w !~ /R\. Allel[uú][ij]a, allel[uú][ij]a/) {
+      # This format needs to be checked also when linking another,
+      # non-Cistercian final Responsory from extra T.P.
+    } elsif (alleluia_required($dayname[0], $votive)
+      && $version =~ /cist/i
+      && $w !~ /R\. Allel[uú][ij]a, allel[uú][ij]a/)
+    {
       my $all = prayer("Alleluia Duplex", $lang);
       $w =~ s/. \(?allel[uú][ij]a(?:, allel[uú][ij]a)?\.?\)?/./ig;
       $w =~ s/^(R\..*)\n(\* .*)\n(V\..*)\n(R\..*)\n(.*\n.*)$/$1\n$2 \* $all\n$3\n$4\n\&Gloria1\nR. $all/m;
