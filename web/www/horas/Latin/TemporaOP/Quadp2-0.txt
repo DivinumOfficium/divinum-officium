@@ -1,0 +1,54 @@
+@Tempora/Quadp2-0
+
+[Responsory Vespera 1]
+R. Benedícens ergo illi, Noë ait: Nequáquam ultra maledícam terræ propter hóminem:
+* Ad imáginem quippe Dei factus est homo.
+V. Hoc erit signum fœ́deris inter me et inter terram: arcum meum ponam in núbibus cæli.
+R. Ad imáginem quippe Dei factus est homo.
+&Gloria
+R. Ad imáginem quippe Dei factus est homo.
+
+[Ant 1]
+@TemporaOP/Quadp1-1:Ant 3
+
+[Lectio1]
+@Tempora/Quadp2-0::!3 s/5:31; //g
+
+[Responsory1]
+@Tempora/Quadp2-0:Responsory2:1-2
+V. Noë autem invénit grátiam ante Dóminum.
+@Tempora/Quadp2-0:Responsory2:4
+
+[Lectio3]
+@Tempora/Quadp2-0::1-6 s/-15/-13/
+
+[Responsory2]
+@TemporaM/Quadp2-0:Responsory11
+
+[Responsory3]
+@:Responsory Vespera 1
+@:Responsory Vespera 1:1 s/:$/./
+
+[Ant Laudes]
+@Tempora/Quadp3-0
+
+[Ant Prima]
+@Tempora/Quadp2-0:Ant Sexta
+
+[Ant Tertia]
+@Tempora/Quadp2-0:Ant Prima
+
+[Responsory Breve Tertia]
+@TemporaOP/Quadp1-0
+
+[Ant Sexta]
+@TemporaCist/Quadp2-0:Ant 3
+
+[Responsory Breve Sexta]
+@TemporaOP/Quadp1-0
+
+[Ant Nona]
+@Tempora/Quadp2-0:Ant Tertia
+
+[Responsory Breve Nona]
+@TemporaOP/Quadp1-0

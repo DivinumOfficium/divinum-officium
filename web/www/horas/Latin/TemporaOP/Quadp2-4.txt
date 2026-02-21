@@ -1,0 +1,26 @@
+@Tempora/Quadp2-4
+
+[Lectio1]
+@Tempora/Quadp2-3::!3-5 s/15-19/18-20/
+@Tempora/Quadp2-3:Lectio2:2
+
+[Responsory1]
+@TemporaOP/Quadp2-0
+
+[Lectio2]
+@Tempora/Quadp2-3::!2 s/20-/21-/
+
+[Responsory2]
+@TemporaCist/Quadp3-0:Responsory1
+
+[Lectio3]
+@Tempora/Quadp2-3::1-5 s/-6/-4/
+
+[Responsory3]
+@TemporaM/Quadp2-0:Responsory11
+
+[Ant 2]
+@Tempora/Quadp2-2:Ant 3
+
+[Ant 3]
+@Tempora/Quadp2-3
