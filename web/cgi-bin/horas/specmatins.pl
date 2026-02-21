@@ -934,14 +934,30 @@ sub lectio : ScriptFunc {
   # Combine lessons 8 and 9 if there's a commemoration to be read in place of
   # lesson 9, and if the office of the day requires it. In fact the rubrics
   # always *permit* such a contraction, but we don't support that yet.
+  # Issue 5027 No. 5: Acknowledgement of this contraction for Tridentine version (trial)
   if ( $version !~ /1960/
     && $num == 8
-    && $rule =~ /Contract8/i
-    && (exists($winner{Lectio93}) || exists($commemoratio{Lectio7})))
+    && ($rule =~ /Contract8/i || $version =~ /Trident/i)
+    && !exists($winner{Responsory9})
+    && (exists($winner{Lectio93}) || exists($commemoratio{Lectio7}) || $homilyflag))
   {
-    %w = (columnsel($lang)) ? %winner : %winner2;
-    $w = $w{Lectio8} . $w{Lectio9};
-    setbuild2("ex Lectiones 8 et 9 fit una");
+    if (exists($winner{Lectio8}) && exists($winner{Lectio9})) {
+      my %win = (columnsel($lang)) ? %winner : %winner2;
+      $w = $win{Lectio8};
+      $w .= "\n\$rubrica NonaAdjuncta\n\/:«" unless $rule =~ /Contract8/i;
+      $w .= $win{Lectio9};
+      $w =~ s/\&teDeum\n*//g;
+      $w =~ s/\s+$/»:\//s unless $rule =~ /Contract8/i;
+      setbuild2("ex Lectiones 8 et 9 fit una");
+    } elsif (!exists($winner{Lectio8}) && exists($commune{Lectio8})) {
+      my %com = (columnsel($lang)) ? %commune : %commune2;
+      $w = $com{Lectio8};
+      $w .= "\n\$rubrica NonaAdjuncta\n\/:«" unless $rule =~ /Contract8/i;
+      $w .= $com{Lectio9};
+      $w =~ s/\&teDeum\n*//g;
+      $w =~ s/\s+$/»:\//s unless $rule =~ /Contract8/i;
+      setbuild2("ex Lectiones 8 et 9 fit una");
+    }
   }
   my $wo = $w;
 
