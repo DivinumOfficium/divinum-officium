@@ -112,7 +112,9 @@ sub monastic_major_responsory {
     my @resp = split("\n", $resp);
     postprocess_short_resp(@resp, $lang) unless $cistrv1f;
     $resp = join("\n", @resp);
-    $resp =~ s/\&gloria.*//gsi if $version =~ /cist/i;
+    $resp =~ s/\&gloria.*//gsi if $version =~ /cist/i;    
+    # In Cistercian books, the asterisks are always red
+    $resp =~ s{\*}{<FONT COLOR="RED">*</FONT>}g if $version =~ /Cist/i;
   }
 
   $resp;
