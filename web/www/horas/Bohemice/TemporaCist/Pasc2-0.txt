@@ -1,0 +1,34 @@
+
+[Ant 1]
+Toto totiž bylo napsáno, * abyste uvěřili, že Ježíš je Kristus<i>, Boží Pomazaný</i>, Syn Boží, a abyste věříce měli život v jeho jménu, alleluja.
+
+[Lectio4]
+@Tempora/Pasc1-1:Lectio2:1-5:s/-14/-12/ s/Jerusaléma .*/Jerusaléma./
+
+[Lectio5]
+@Tempora/Pasc2-0:Lectio4
+
+[Lectio6]
+@Tempora/Pasc2-0:Lectio5:s/Když .*//s
+
+[Lectio7]
+@Tempora/Pasc2-0:Lectio5:s/.* (?=Když )//s
+
+[Lectio8]
+@Tempora/Pasc2-0:Lectio6:s/a ukázal.*myšlenky, //
+
+[Lectio9]
+@Tempora/Pasc2-0:Lectio7:s/ Dobrý pastýř položil .*//s
+
+[Lectio10]
+@Tempora/Pasc2-0:Lectio7:s/.* (?=Dobrý pastýř položil )//s s/$/~/
+@Tempora/Pasc2-0:Lectio8:s/Prvním .*//s
+
+[Lectio11]
+@Tempora/Pasc2-0:Lectio8:s/.* (?=Prvním )//s
+
+[Lectio12]
+@Tempora/Pasc2-0:Lectio9:s/Najatý.*//
+
+[Ant 3]
+@Tempora/Pasc2-0:Ant 1:s/, pravda a život/ a pravda/
