@@ -1,0 +1,69 @@
+@Tempora/Pasc2-0
+
+[Rule]
+12 lectiones
+
+[Lectio1]
+@Tempora/Pasc1-1
+
+[Lectio2]
+@Tempora/Pasc1-1
+
+[Lectio3]
+@Tempora/Pasc1-1::1-7 s/-26/-20/
+
+[Lectio4]
+@Tempora/Pasc1-1:Lectio3:1 s/15-/21-/
+@Tempora/Pasc1-1:Lectio3:8-13
+
+[Responsory4]
+@Tempora/Pasc1-0:Responsory2
+
+[Lectio5]
+@Tempora/Pasc2-0:Lectio4
+
+[Responsory5]
+@Tempora/Pasc2-0:Responsory4
+
+[Lectio6]
+@Tempora/Pasc2-0:Lectio5:s/Když .*//s
+
+[Responsory6]
+@Tempora/Pasc2-0:Responsory5
+
+[Lectio7]
+@Tempora/Pasc2-0:Lectio5:s/.* (?=Když )//s
+
+[Responsory7]
+@Tempora/Pasc2-0:Responsory6
+
+[Lectio8]
+@Tempora/Pasc2-0:Lectio6
+
+[Responsory8]
+@Tempora/Pasc0-1:Responsory1
+
+[Lectio9]
+@Tempora/Pasc2-0:Lectio7:s/ Dobrý pastýř položil .*//s
+
+[Responsory9]
+@Tempora/Pasc2-0:Responsory7
+
+[Lectio10]
+@Tempora/Pasc2-0:Lectio7:s/.* (?=Dobrý pastýř položil )//s s/$/~/
+@Tempora/Pasc2-0:Lectio8:s/Prvním .*//s
+
+[Responsory10]
+@Tempora/Pasc2-0:Responsory8
+
+[Lectio11]
+@Tempora/Pasc2-0:Lectio8:s/.* (?=Prvním )//s
+
+[Responsory11]
+@Tempora/Pasc0-4:Responsory1
+
+[Lectio12]
+@Tempora/Pasc2-0:Lectio9
+
+[Responsory12]
+@Tempora/Pasc0-0:Responsory2
