@@ -1,0 +1,33 @@
+@Tempora/Pasc1-0
+
+[Rule]
+12 lectiones
+
+[Ant Matutinum 3N]
+Alleluja, * neplač, Maria, alleluja: † Pán vstal z mrtvých, † alleluja, alleluja.
+
+[Lectio5]
+@Tempora/Pasc1-0:Lectio4
+
+[Lectio6]
+@Tempora/Pasc1-0:Lectio5:s/Apostólicis .*//s
+
+[Lectio7]
+@Tempora/Pasc1-0:Lectio5:s/.* Apostólicis /Apostólicis /s s/$/~/
+@Tempora/Pasc1-0:Lectio6:s/Sint .*//s
+
+[Lectio8]
+@Tempora/Pasc1-0:Lectio6:s/.* Sint /Sint /s
+
+[Lectio9]
+@Tempora/Pasc1-0:Lectio7:s/Toto .*//s
+
+[Lectio10]
+@Tempora/Pasc1-0:Lectio7:s/.* Toto /Toto /s s/$/~/
+@Tempora/Pasc1-0:Lectio8:s/Tím .*//s
+
+[Lectio11]
+@Tempora/Pasc1-0:Lectio8:s/.* Tím /Tím /s
+
+[Lectio12]
+@Tempora/Pasc1-0:Lectio9

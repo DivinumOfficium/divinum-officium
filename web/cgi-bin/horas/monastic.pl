@@ -296,7 +296,7 @@ sub psalmi_matutinum_monastic {
       setbuild2("Lectio unica de Sancto");
     }
     push(@s, "\n");
-  } elsif ($dayname[0] =~ /(Pasc[1-6]|Pent)/i
+  } elsif ($dayname[0] =~ /(Pasc[0-6]|Pent)/i
     && $winner{Rank} !~ /quat(t?)uor|Dominica/i
     && $rule !~ /(3|12) lectiones/
     && $version =~ /Cist/i
@@ -511,6 +511,10 @@ sub brevis_monastic {
   }
   $lectio =~ s/&Gloria1?/&Gloria1/;
   $lectio =~ s/&Gloria.*//s if $version =~ /Cist/i;
+
+  # In Cistercian books, the asterisks are always red
+  $lectio =~ s{\*}{<FONT COLOR="RED">*</FONT>}g if $version =~ /Cist/i;
+
   if ($lectio) { $lectio = "#Lectio brevis\n$lectio" }
   push(@s, $lectio);
 }
