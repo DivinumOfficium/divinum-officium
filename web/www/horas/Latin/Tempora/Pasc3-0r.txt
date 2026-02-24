@@ -11,8 +11,6 @@ Una Antiphona
 
 [Ant 1]
 @Tempora/Pasc3-0:Ant 1
-(sed rubrica cisterciensis)
-@Tempora/Pasc3-0:Ant 1 Cist
 
 [Oratio]
 @Tempora/Pasc3-0:Oratio
@@ -73,8 +71,6 @@ Una Antiphona
 
 [Ant 2]
 @:Ant 1
-(sed rubrica cisterciensis)
-@Tempora/Pasc3-0:Ant 1
 
 [Capitulum Sexta]
 @Tempora/Pasc3-0:Capitulum Sexta
@@ -84,5 +80,3 @@ Una Antiphona
 
 [Ant 3]
 @Tempora/Pasc3-0:Ant 3
-(sed rubrica cisterciensis)
-@Tempora/Pasc3-0:Ant 3:s/^Amen/Amen, amen/

@@ -1,0 +1,28 @@
+
+[Lectio5]
+@Tempora/Pasc3-0:Lectio4:s/Nemluvil .*//s
+
+[Lectio6]
+@Tempora/Pasc3-0:Lectio4:s/.* (?=Nemluvil )//s s/$/~/
+@Tempora/Pasc3-0:Lectio5:s/Tomuto .*//s
+
+[Lectio7]
+@Tempora/Pasc3-0:Lectio5:s/.* (?=Tomuto )//s s/$/~/
+@Tempora/Pasc3-0:Lectio6:s/Větším .*//s
+
+[Lectio8]
+@Tempora/Pasc3-0:Lectio6:s/.* (?=Větším )//s
+
+[Lectio9]
+@Tempora/Pasc3-0:Lectio7:s/Avšak .*//s
+
+[Lectio10]
+@Tempora/Pasc3-0:Lectio7:s/.* (?=Avšak )//s s/$/~/
+@Tempora/Pasc3-0:Lectio8:s/To, .*//s
+
+[Lectio11]
+@Tempora/Pasc3-0:Lectio8:s/.* (?=To, )//s s/$/~/
+@Tempora/Pasc3-0:Lectio9:s/Naše .*//s
+
+[Lectio12]
+@Tempora/Pasc3-0:Lectio9:s/.* (?=Naše )//s
