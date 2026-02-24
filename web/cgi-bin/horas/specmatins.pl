@@ -935,7 +935,7 @@ sub lectio : ScriptFunc {
   # lesson 9, and if the office of the day requires it. In fact the rubrics
   # always *permit* such a contraction, but we don't support that yet.
   # Issue 5027 No. 5: Acknowledgement of this contraction for Tridentine version (trial)
-  if ( $version !~ /1960/
+  if ( $version !~ /1960|Cist/i
     && $num == 8
     && ($rule =~ /Contract8/i || $version =~ /Trident/i)
     && !exists($winner{Responsory9})
