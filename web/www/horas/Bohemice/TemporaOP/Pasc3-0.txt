@@ -1,0 +1,13 @@
+
+[Lectio1]
+@Tempora/Pasc3-0:Lectio7:s/ Avšak.*//
+
+[Lectio2]
+@Tempora/Pasc3-0:Lectio8:s/ Maličko,.*//
+
+[Lectio3]
+@Tempora/Pasc3-0:Lectio8:s/.*(?=Maličko,)// s/$/~/
+@Tempora/Pasc3-0:Lectio9:s/, v.soužení.*/.“/
+
+[Ant 3]
+Znovu vás pak * uvidím, a radovat se bude vaše srdce, alleluja, a vaši radost vám už nikdo nevezme, alleluja.

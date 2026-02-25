@@ -1440,7 +1440,11 @@ sub responsory_gloria {
         # is a bit different in Paschaltide:
       } elsif (alleluia_required($dayname[0], $votive) && $version =~ /cist/i) {
         my $all = prayer('Alleluia Duplex', $lang);
-        $w =~ s/, allel[uú][ij]a//g;
+        $w =~ s/† //g;
+        # only in second...
+        $w =~ s/(\*.*), allel[uú][ij]a(?:, allel[uú][ij]a)/$1/g;
+        # and fourth line, every Alleluia. needs to be removed
+        $w =~ s/(V\..*\nR\..*). allel[uú][ij]a(?:, allel[uú][ij]a)/$1/mg;
         $w =~ s/^(R\..*)\n(\* .*)\n(V\..*)\n(R\..*)$/$1\n$2 \* $all\n$3\n$4\n\&Gloria1\nR. $all/m;
         $w =~ s/  / /g;
       } else {

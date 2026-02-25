@@ -1,0 +1,77 @@
+
+[AntMatutinumM]
+Zvedněte se, * zvedněte se, věčné brány; † a vejde král slávy, alleluja.;;23
+Budu povýšen * mezi Národy, a vyvýším se na zemi, alleluja.;;45
+Radujte se * nebesa, a jásej země, † neboť Pán přichází, alleluja.;;95
+
+[Ant Matutinum 3N]
+Oni však vyšli, * a kázali všude, s Pánovou pomoci, a kázání potvrzovali následujícími znameními, † alleluja, alleluja.
+
+[Responsory4]
+R. Nezanechám vás sirotky, alleluja: † půjdu, ale znovu k vám přijdu, alleluja.
+* A zaraduje se vaše srdce, † alleluja, alleluja.
+V. V onen den vy poznáte, že já jsem ve svém Otci, a vy jste ve mně, a já ve vás.
+R. A zaraduje se vaše srdce, † alleluja, alleluja.
+
+[Lectio5]
+@Tempora/Pasc5-4:Lectio4:s/Smrt .*//s
+
+[Lectio6]
+@Tempora/Pasc5-4:Lectio4:s/.* (?=Smrt )//s s/$/~/
+@Tempora/Pasc5-4:Lectio5:s/A vpravdě .*//s
+
+[Lectio7]
+@Tempora/Pasc5-4:Lectio5:s/.* (?=A vpravdě )//s
+
+[Lectio8]
+@Tempora/Pasc5-4:Lectio6
+
+[Responsory8]
+R. Vystoupil Bůh za jásotu, alleluja
+* A Hospodin za zvuku polnice, † alleluja, alleluja.
+V. Vystoupil Kristus na výsosti, a vysvobodil zajatce.
+R. A Hospodin za zvuku polnice, † alleluja, alleluja.
+
+[Lectio9]
+@Tempora/Pasc5-4:Lectio7
+
+[Lectio10]
+@Tempora/Pasc5-4:Lectio8:s/Marek .*//s
+
+[Lectio11]
+@Tempora/Pasc5-4:Lectio8:s/.* (?=Marek )//s
+
+[Responsory11]
+R. Muži Galilejští, proč se divíte a hledíte na nebe? alleluja.
+* Jak jste jej viděli vystoupovat na nebe, tak i přijde, † alleluja, alleluja, alleluja.
+V. Když hleděli do nebe, jak odchází, † hle, dva muži stanuli vedle nich, v bílých oděvech, a řekli jim.
+R. Jak jste jej viděli vystoupovat na nebe, tak i přijde, † alleluja, alleluja, alleluja.
+
+[Lectio12]
+@Tempora/Pasc5-4:Lectio9
+
+[MM Capitulum]
+!Ap 5-12
+@Tempora/Pasc0-3:Responsory1:3 s/V./v./
+$Deo gratias
+_
+V. Pozvedni se, Hospodine, alleluja, ve své moci, alleluja.
+R. Zpívat budeme, a opěvovat tvé mocné činy, alleluja.
+
+[MM LB]
+!He 6:18-20
+v. Proto se s důvěrou pevně opřeme o nalezené útočiště a jistě dosáhneme vytoužených hodnot, které jsou nám určeny. V této naději máme bezpečnou a pevnou kotvu pro duši. Ona proniká až do samého vnitřku nebeské velesvatyně, kam pro nás jako předchůdce vstoupil Ježíš, velekněz navěky podle řádu Melchizedechova.
+$Tu autem
+_
+R.br. Pán v nebi, * Alleluja, alleluja.
+V. Pán v nebi, * Alleluja, alleluja.
+R. Připravil svůj trůn.
+V. Alleluja, alleluja.
+&Gloria
+V. Pán v nebi, * Alleluja, alleluja.
+
+[Versum 2] (rubrica cisterciensis)
+@Tempora/Pasc5-4:Versum 1
+
+[Versum 3] (rubrica cisterciensis)
+@:Versum 1
