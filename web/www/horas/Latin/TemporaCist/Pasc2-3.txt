@@ -1,0 +1,118 @@
+@Tempora/Pasc2-3
+
+[Officium]
+In Solemnitate S. Joseph Sponsi B.M.V., Confessoris et Ecclesie Universalis Patroni
+
+[Rank]
+;;Duplex I classis;;6;;
+
+[Rule]
+proper
+Antiphonas horas
+12 lectiones
+Psalmi Dominica
+
+[Ant Vespera]
+@TemporaCist/Pasc0-0
+
+[Responsory Vespera 1]
+@SanctiCist/03-19
+
+[Responsory Vespera]
+@:Responsory Breve Sexta
+
+[Hymnus Vespera]
+@SanctiCist/03-19
+
+[Invit]
+@TemporaCist/Pasc0-0
+
+[Hymnus Matutinum]
+@SanctiCist/03-19
+
+[Ant Matutinum]
+@CommuneCist/C2p
+
+[Lectio1]
+@Tempora/Pasc2-3::1-5:s/-6/-3/
+
+[Lectio2]
+@Tempora/Pasc2-3:Lectio1:2-7:s/1-6/4-5/ s/1 .*4/4/s s/Joseph,.*/Joseph./s
+
+[Lectio3]
+@Tempora/Pasc2-3:Lectio2:1-5:s/-43/-40/
+
+[Lectio4]
+@Tempora/Pasc2-3:Lectio2:s/37-/41-/ s/37 .*41/41/s
+
+[Responsory1]
+@SanctiCist/03-19
+
+[Responsory2]
+@SanctiCist/03-19
+
+[Responsory3]
+@SanctiCist/03-19
+
+[Responsory4]
+@SanctiCist/03-19
+
+[Lectio5]
+@Tempora/Pasc2-3:Lectio4
+
+[Lectio6]
+@Tempora/Pasc2-3:Lectio5
+
+[Lectio7]
+@Tempora/Pasc2-3:Lectio6:s/Mem.*//s
+
+[Lectio8]
+@Tempora/Pasc2-3:Lectio6:s/.* Mem/Mem/s
+
+[Responsory5]
+@SanctiCist/03-19
+
+[Responsory6]
+@SanctiCist/03-19
+
+[Responsory7]
+@SanctiCist/03-19
+
+[Responsory8]
+@SanctiCist/03-19
+
+[Lectio9]
+@Tempora/Pasc2-3:Lectio7:s/Antíqua .*//
+
+[Lectio10]
+@Tempora/Pasc2-3:Lectio7:s/.* (?=Antíqua )//s
+
+[Lectio11]
+@Tempora/Pasc2-3:Lectio8
+
+[Lectio12]
+@Tempora/Pasc2-3:Lectio9
+
+[Responsory9]
+@SanctiCist/03-19
+
+[Responsory10]
+@SanctiCist/03-19
+
+[Responsory11]
+@SanctiCist/03-19
+
+[Responsory12]
+@SanctiCist/03-19
+
+[Ant Laudes]
+@TemporaCist/Pasc0-0
+
+[Responsory Laudes]
+@:Responsory Breve Tertia
+
+[Hymnus Laudes]
+@SanctiCist/03-19
+
+[Versum 3]
+@:Versum 1
