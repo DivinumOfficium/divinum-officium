@@ -1,0 +1,171 @@
+@Tempora/Pasc7-0
+
+[Rule]
+12 lectiones
+Psalmi Dominica
+Antiphonas horas
+
+[Responsory Vespera 1]
+@:RV1
+
+[Versum 1]
+V. Emítte spíritum tuum, et creabúntur, allelúia.
+R. Et renovábis fáciem terræ, allelúia.
+
+[Ant 1]
+Si dilígitis me, * mandáta mea serváte, allelúia, allelúia, allelúia.
+
+[Hymnus Vespera]
+@Tempora/Pasc7-0:HymnusM Laudes
+
+[Invit]
+@TemporaCist/Pasc0-0
+
+[Hymnus Matutinum]
+@Tempora/Pasc7-0:HymnusM Matutinum:1-20:s/Cum lucis hora/Dum hora cunctis/
+@Tempora/Pasc7-0:HymnusM Matutinum:41-46
+
+[Ant Matutinum]
+Rogábo * Patrem meum, et álium Paráclitum dabit vobis, allelúia.;;8
+;;15
+;;18
+;;22
+;;28
+;;32
+@Tempora/Pasc7-0::4-5
+@Tempora/Pasc7-0:Ant 1:s/$/;;45/
+;;47
+;;63
+;;64
+;;75
+;;96
+@Tempora/Pasc7-0:Versum Sexta
+@TemporaCist/Pasc5-4:Ant Vespera:3:s/$/;;243;244;245/
+@Tempora/Pasc7-0:Versum Tertia
+
+[Nocturn 1 Versum]
+@Tempora/Pasc7-0:Ant Matutinum:4-5
+
+[Nocturn 2 Versum]
+@Tempora/Pasc7-0:Versum Sexta
+
+[Nocturn 3 Versum]
+@Tempora/Pasc7-0:Versum Tertia
+
+[Lectio1]
+@TemporaM/Pasc7-0
+
+[Lectio2]
+@TemporaM/Pasc7-0
+
+[Lectio3]
+@TemporaM/Pasc7-0
+
+[Lectio4]
+@Tempora/Pasc1-2:Lectio2:s/14-21/16-19/ s/14.*16 /16 \u/s s/20 .*//s
+
+[Responsory1]
+R. Cum compleréntur dies Pentecóstes, erant omnes páriter in eódem loco, allelúja: et súbito factus est sonus de cælo, allelúja: tamquam spíritus veheméntis, et replévit totam domum,
+* Allelúja, allelúja, allelúja.
+@Tempora/Pasc7-2:Responsory2:3
+* Allelúja, allelúja, allelúja.
+
+[Responsory3]
+@Tempora/Pasc7-1:Responsory1:1-2
+V. Quorum remiséritis peccáta, remittúntur eis.
+@Tempora/Pasc7-1:Responsory1:4
+
+[Responsory4]
+@TemporaM/Pasc7-3:Responsory3:s/† //
+
+[Lectio5]
+@TemporaM/Pasc7-0
+
+[Lectio6]
+@TemporaM/Pasc7-0
+
+[Lectio7]
+@TemporaM/Pasc7-0::s/, ut fácile .*/./
+
+[Lectio8]
+@TemporaM/Pasc7-0
+
+[Responsory5]
+@Tempora/Pasc7-3:Responsory1
+
+[Responsory6]
+@Tempora/Pasc7-5:Responsory2
+
+[Responsory7]
+R. Non vos relínquam órphanos, allelúia: vado et vénio ad vos:
+* Et gaudébit cor vestrum, allelúia, allelúia.
+@Tempora/Pasc5-4:Responsory4:3
+R. Et gaudébit cor vestrum, allelúia, allelúia.
+
+[Responsory8]
+@Tempora/Pasc7-1:Responsory2:1-2
+V. Factus est repénte de cælo sonus, tamquam adveniéntis spíritus veheméntis:
+@Tempora/Pasc7-1:Responsory2:4
+
+[Lectio9]
+@Tempora/Pasc7-0:Lectio1:s/ Qui ergo.*//s
+
+[Lectio10]
+@Tempora/Pasc7-0:Lectio1:s/.*(Qui ergo)/$1/s s/$/~/
+@Tempora/Pasc7-0:Lectio2:s/ Vere.*//s
+
+[Lectio11]
+@Tempora/Pasc7-0:Lectio2:s/.*(Vere)/$1/s s/$/~/
+@Tempora/Pasc7-0:Lectio3:s/ Certe.*//s
+
+[Lectio12]
+@Tempora/Pasc7-0:Lectio3:s/.*(Certe)/$1/s
+
+[Responsory9]
+@Tempora/Pasc7-4:Responsory1
+
+[Responsory10]
+@Tempora/Pasc7-4:Responsory2
+
+[Responsory11]
+@Tempora/Pasc7-5:Responsory1
+
+[Responsory12]
+@Tempora/Pasc7-5:Responsory2
+
+[MM Capitulum]
+!Act. 2:2
+v. Factus est repénte de cælo sonus, tamquam adveniéntis spíritus veheméntis, et replévit totam domum ubi erant sedéntes.
+$Deo gratias
+_
+@Tempora/Pasc7-0:Versum 3
+
+[RV1]
+R. Repléti sunt omnes Spíritu sancto, et cœpérunt loqui, prout Spíritus sanctus dabat éloqui illos: 
+* Et convénit multitúdo dicéntium, allelúia.
+V. Loquebántur váriis linguis Apóstoli magnália Dei:
+R. Et convénit multitúdo dicéntium, allelúia.
+
+[Ant Laudes]
+@Tempora/Pasc7-0:Ant Vespera:s/;;.*//
+
+[Responsory Laudes]
+@Tempora/Pasc7-0:Responsory Breve Nona
+
+[Hymnus Laudes]
+@Tempora/Pasc7-0:HymnusM Matutinum:21-46
+
+[Versum 2]
+@Tempora/Pasc7-0:Versum Nona
+
+[Responsory TertiaM]
+@Tempora/Pasc7-0:Ant Matutinum:4-5
+
+[Responsory SextaM]
+@Tempora/Pasc7-0:Versum Sexta
+
+[Responsory NonaM]
+@Tempora/Pasc7-0:Versum Tertia
+
+[Versum 3]
+@:Versum 1

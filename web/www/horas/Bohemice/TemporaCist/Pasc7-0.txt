@@ -1,25 +1,35 @@
 [RV1]
-Responsorium. Všichni byli naplněni Duchem svatým, a počali mluviti, protože Duch svatý jim dal schopnost mluvit: * A sešlo se množství lidu, kteří říkali, alleluja.
+R. Všichni byli naplněni Duchem svatým, a počali mluviti, protože Duch svatý jim dal schopnost mluvit: 
+* A sešlo se množství lidu, kteří říkali, alleluja.
 V. V různých jazycích mluvili Apoštolové o velikosti Boží:
 R. A sešlo se množství lidu, kteří říkali, alleluja.
 
-[Lectio2]
-@Tempora/Pasc1-2:Lectio1:2 s/1-8/6-11/
-@Tempora/Pasc1-2:Lectio1:8-10
-9 My Parthové, Médové, Elamité, obyvatelé Mezopotámie, Judska a Kapadokie, Pontu a Asie,
-10 Frýgie a Pamfýlie, Egypta a libyjského kraje u Kyrény, my, kteří jsme připutovali z Říma,
-11 židé i proselyté, Kréťané i Arabové: slyšíme, jak našimi jazyky hlásají velké Boží skutky.“
+[Versum 1]
+V. Sešli ducha svého, a budou stvořeni, alleluja.
+R. A obnovíš tvář země, alleluja
 
-[Lectio3]
-!Act. 2:12-15
-12 A všichni žasli a v rozpacích se ptal jeden druhého: „Co to má znamenat?“
-13 Ale jiní říkali posměšně: „Jsou plní sladkého vína!“
-@Tempora/Pasc1-2:Lectio2:2-3
+[Ant 1]
+Jestli mě milujete, * budete zachovávat má přikázání, alleluja, alleluja, alleluja.
+
+[Hymnus Matutinum]
+@Tempora/Pasc7-0:Hymnus Matutinum:1-20
+@Tempora/Pasc7-0:Hymnus Matutinum:41-46
+
+[Responsory1]
+R. Když se završilo padesát dnů, byli všichni na stejném místě, alleluja; a náhle vyšel zvuk z nebe, alleluja; jako by přicházel silný vítr, a naplnil celý dům,
+* Alleluja, alleluja, alleluja.
+@Tempora/Pasc7-2:Responsory2:3
+R. Alleluja, alleluja, alleluja.
+
+[Responsory3]
+@Tempora/Pasc7-1:Responsory1:1-2
+V. Komu hříchy odpustíte, tomu budou odpuštěny.
+@Tempora/Pasc7-1:Responsory1:4
 
 [Lectio5]
 Řeč svatého Lva Papeže.
 !Řeč 1. o Nanebevstoupení Páně.
-Nejmilejší, srdce všech Katolíků vědí, že dnešní slavnost se musí uctít obzvláštními oslavami. Není pochyb ani o tom, jak veliká úcta náleží tomuto dni, který Duch svatý posvětil tím nejvýtečnějším zázrakem svého daru. 	
+Nejmilejší, srdce všech Katolíků vědí, že dnešní slavnost se musí uctít obzvláštními oslavami. Není pochyb ani o tom, jak veliká úcta náleží tomuto dni, který Duch svatý posvětil tím nejvýtečnějším zázrakem svého daru.
 
 [Lectio6]
 Neboť dnešní den je desátý od onoho dne, kdy Pán vystoupil nade všechny výšiny nebes, aby se spolu s Bohem Otcem posadil po jeho pravici, a také padesátý od jeho zmrtvýchvstání, kdy zazářil v tom, co začal, a přinesl s sebou velká tajemství staré i nové smlouvy. Jimi velmi jasně dává najevo, že milost byla již dávno předpovězena zákonem, a zákon byl naplněn skrze milost. 	
@@ -29,6 +39,20 @@ Tak jako židovskému národu, osvobozenému kdysi od Egypťanů, byl svěřen z
 
 [Lectio8]
 Právě v tento den prvně zazněla polnice hlásání Evangelia, od tohoto dne zavlažily deště milostí a řeky požehnání každou poušť a vše, co bylo vyprahlé. Aby totiž obnovil tvář země, Duch Boží se vznášel nad vodami a aby zahnal staré temnoty, zaplál jas nového světla, a zářící slovo Páně spolu s mihotavým světlem ohnivých jazyků dalo počátek plamenné řeči i schopnosti ji pochopit, řeči, která zničí všechen hřích, dokáže osvěcovat, a má v sobě sílu zapalovat. 
+
+[Lectio7]
+@TemporaM/Pasc7-0::s/, aby pilný .*/./
+
+[Responsory7]
+R. Nezanechám vás sirotky, alleluja; Odejdu, ale opět k vám přijdu;
+* A vaše srdce zajásají, alleluja, alleluja.
+@Tempora/Pasc5-4:Responsory4:3
+R. A vaše srdce zajásají, alleluja, alleluja.
+
+[Responsory8]
+@Tempora/Pasc7-1:Responsory2:1-2
+V. Náhle vyšel z nebe zvuk jako zvuk přicházejícího silného vichru;
+@Tempora/Pasc7-1:Responsory2:4
 
 [Lectio9]
 @Tempora/Pasc7-0:Lectio1:s/ Kdo tedy.*//s
@@ -44,5 +68,5 @@ Právě v tento den prvně zazněla polnice hlásání Evangelia, od tohoto dne
 [Lectio12]
 @Tempora/Pasc7-0:Lectio3:s/.*(?=Jistě, )//s
 
-[Hymnus Laudes] (rubrica cisterciensis)
+[Hymnus Laudes]
 @Tempora/Pasc7-0:Hymnus Matutinum:21-46

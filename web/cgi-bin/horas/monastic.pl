@@ -207,7 +207,8 @@ sub psalmi_matutinum_monastic {
 
         if ($i == 0 || $i == 8) {
           $p = "$p[$i]$p";
-        } elsif ($version =~ /Cist/i && ($i == 2 || $i == 4)) {
+        } elsif ($version =~ /Cist/i && $dayname[0] !~ /Pasc/
+            && ($i == 2 || $i == 4)) {
 
           # CIST: there are three Ant. for first Nocturn
           if ($i == 4 && ($dayofweek == 1 || $dayofweek == 4)) {
@@ -512,8 +513,8 @@ sub brevis_monastic {
   $lectio =~ s/&Gloria1?/&Gloria1/;
   $lectio =~ s/&Gloria.*//s if $version =~ /Cist/i;
 
-  # In Cistercian books, the asterisks are always red
-  $lectio =~ s{\*}{<FONT COLOR="RED">*</FONT>}g if $version =~ /Cist/i;
+  # In Cistercian books, the asterisks in R.br. are always red
+  $lectio =~ s{(R\..*)\*}{$1<FONT COLOR="RED">*</FONT>}g if $version =~ /Cist/i;
 
   if ($lectio) { $lectio = "#Lectio brevis\n$lectio" }
   push(@s, $lectio);

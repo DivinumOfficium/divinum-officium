@@ -131,7 +131,7 @@ V. Qui facit Angelos suos spíritus, et minístros suos ignem uréntem:
 R. Qui ámbulas super pennas ventórum, allelúja.
 
 [Responsory11]
-@TemporaM/Pasc5-4:
+@TemporaM/Pasc5-4::s/† //g
 
 [Responsory12]
 R. Pater, cum essem cum eis, ego servábam eos, quos dedísti mihi, nunc autem ad te vénio:
@@ -139,27 +139,26 @@ R. Pater, cum essem cum eis, ego servábam eos, quos dedísti mihi, nunc autem a
 V. Pater sancte, serva eos in nómine tuo, quos dedísti mihi:
 * Non rogo ut tollas eos de mundo, sed ut serves eos a malo, 
 &Gloria
-* Allelúia.
+R. Allelúia.
 
 [MM Capitulum]
-!Ap 5-12
-@Tempora/Pasc0-3:Responsory1:3 s/V./v./
+@Tempora/Pasc5-4:Lectio Prima
 $Deo gratias
 _
-V. Exaltáre, Dómine, allelúja, in virtúte tua, allelúja.
-R. Cantábimus et psallémus virtútes tuas, allelúja.
+@:Nocturn 2 Versum
 
 [MM LB]
-!He 6:18-20
-v. Confúgimus ad tenéndam propósitam spem, quam sicut ánchoram habémus ánimæ tutam ac firmam, et incedéntem usque ad interióra veláminis, ubi præcúrsor pro nobis introívit Jesus, secúndum órdinem Melchísedech póntifex factus in ætérnum.
+!Ps 23:8-10
+v. Quis est iste Rex glóriæ? Dóminus fortis et potens: * Dóminus potens in prǽlio. Attóllite portas, príncipes, vestras, † et elevámini, portæ æternáles: * et introíbit Rex glóriæ. Quis est iste Rex glóriæ? Dóminus virtútum * ipse est Rex glóriæ.
 $Tu autem
 _
-R.br. Dóminus in cælo, * Allelúja, allelúja.
-V. Dóminus in cælo, * Allelúja, allelúja.
-R. Parávit sedem suam.
-V. Allelúja, allelúja.
-&Gloria
-V. Dóminus in cælo, * Allelúja, allelúja.
+@Tempora/Pasc5-4:Responsory Breve Sexta
+
+[Ant Laudes]
+@:Ant Vespera
+
+[Responsory Laudes]
+@Tempora/Pasc5-4:Responsory Breve Nona
 
 [HymnusM Laudes]
 v. O grande cunctis gáudium,

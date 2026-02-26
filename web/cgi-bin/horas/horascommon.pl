@@ -795,7 +795,7 @@ sub concurrence {
 
     # Dies Octavae privilegiatae (post-Divino) and Octavae Festorum Domini, si primaria fuerint et solemniora (pre-Divino)
     # give way at 2nd Vespers to Duplex I. et II. classis only!
-    $rank = $wrank[2] = 4.99;
+    $rank = $wrank[2] = 4.99 unless $version =~ /Cist/i;
   }
 
   if ( $cwrank[0] =~ /Dominica/i
