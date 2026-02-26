@@ -1455,7 +1455,7 @@ sub responsory_gloria {
       # non-Cistercian final Responsory from extra T.P.
     } elsif (alleluia_required($dayname[0], $votive)
       && $version =~ /cist/i
-      && $w !~ /R\. Allel[uú][ij]a, allel[uú][ij]a/)
+      && $w !~ /R\. Allel[uú][ij]a(?:, allel[uú][ij]a)?/)
     {
       my $all = prayer("Alleluia Duplex", $lang);
       $w =~ s/. \(?allel[uú][ij]a(?:, allel[uú][ij]a)?\.?\)?/./ig;

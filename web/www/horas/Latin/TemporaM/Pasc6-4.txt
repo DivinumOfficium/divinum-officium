@@ -64,7 +64,7 @@ Doxology=Asc
 @Tempora/Pasc6-4:Lectio8: s/Ecce, .*//
 
 [Lectio11]
-@Tempora/Pasc6-4:Lectio8: s/.* Ecce,/Ecce,/
+@Tempora/Pasc6-4:Lectio8: s/.* Ecce,/Ecce,/ s/$/~/
 @Tempora/Pasc6-4:Lectio9: s/Desidéria .*//
 
 [Lectio12]
