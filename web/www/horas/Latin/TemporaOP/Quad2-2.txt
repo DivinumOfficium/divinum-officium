@@ -1,0 +1,26 @@
+@Tempora/Quad2-2
+
+[Lectio1]
+@Tempora/Quad2-2::s/ Ergo.*//
+
+[Responsory1]
+R. Quis igitur ille est qui dudum captam venatiónem áttulit mihi, et comédi ex ómnibus priúsquam tu venires?
+* Benedixique ei, et erit benedictus.
+V. Dóminum tuum illum constítui, et omnes fratres eius servitúti illíus subiugávi.
+R. Benedixique ei, et erit benedictus.
+
+[Lectio2]
+@Tempora/Quad2-2:Lectio1:s/.* (?=Ergo)//s s/$/~/
+@Tempora/Quad2-2::s/ Notándum .*//
+
+[Responsory2]
+@Tempora/Quad2-0:Responsory4
+
+[Lectio3]
+@Tempora/Quad2-2::s/ Amant.*transiérunt.//
+
+[Responsory3]
+@Tempora/Quad2-0:Responsory5
+
+[Ant 3]
+@TemporaCist/Quad2-2

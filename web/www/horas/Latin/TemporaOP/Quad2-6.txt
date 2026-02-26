@@ -1,0 +1,21 @@
+@Tempora/Quad2-6
+
+[Lectio1]
+@Tempora/Quad2-6::s/ Mérito.*//
+
+[Responsory1]
+@Tempora/Quad2-0:Responsory6
+
+[Lectio2]
+@Tempora/Quad2-6:Lectio1:s/.* (?=Mérito)//s s/$/~/
+@Tempora/Quad2-6::s/ Non.*//
+
+[Responsory2]
+@TemporaOP/Quad2-3
+
+[Lectio3]
+@Tempora/Quad2-6:Lectio2:s/.* (?=Non)// s/$/~/
+@Tempora/Quad2-6::s/ Unde.*//
+
+[Responsory3]
+@TemporaM/Quad2-0:Responsory12
