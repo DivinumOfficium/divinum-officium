@@ -1,0 +1,42 @@
+@Tempora/Quad2-0
+
+[Rule]
+Invit5
+
+[Responsory Vespera 1]
+@Tempora/Quad2-0:Responsory3
+
+[Ant 1]
+@Tempora/Quad2-0:Ant Prima
+
+[Invit]
+@TemporaCist/Quadp1-0
+
+[Lectio1]
+@Tempora/Quad2-0::1-6 s/-10/-4/
+
+[Lectio2]
+@Tempora/Quad2-0:Lectio1:2 s/1-/5-/
+@Tempora/Quad2-0:Lectio1:7-12
+
+[Responsory2]
+@:Responsory Vespera 1
+
+[Lectio3]
+@Tempora/Quad2-0:Lectio2:1-6
+
+[Lectio7]
+@Tempora/Quad2-0::s/ Nam.*//
+
+[Responsory3]
+@TemporaM/Quad2-0:Responsory12
+@TemporaM/Quad2-0:Responsory12:1
+
+[Capitulum Laudes]
+@Tempora/Quad1-0::s/.*?: /v. /
+
+[Capitulum Sexta]
+@Tempora/Quad1-0
+
+[Capitulum Nona]
+@TemporaOP/Quad1-0

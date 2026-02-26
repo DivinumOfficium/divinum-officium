@@ -98,7 +98,7 @@ sub invitatorium {
   if (my @a = do_read($fname)) {
     $_ = join("\n", @a);
 
-    if ($rule =~ /Invit2/i || !$dayofweek && $version =~ /praedicatorum/i) {
+    if ($rule =~ /Invit2/i || !$dayofweek && $version =~ /praedicatorum/i && $rule !~ /Invit5/) {
 
       # old Invitatorium2 = Quadp[123]-0
       # and pradicatorum at Sundays
