@@ -193,7 +193,7 @@ sub psalmi_matutinum_monastic {
       || ($dayname[1] =~ /in Vigilia (?:Pent|Epi)/i && $version !~ /196/)
 
     )
-    && !($dayname[0] =~ /Pasc0/ && $dayofweek > 2)
+    && !($dayname[0] =~ /Pasc0/ && ($dayofweek > 2 && $version !~ /Cist/i))
   ) {
 
     if (exists($winner{'Ant Matutinum'})) {
@@ -207,8 +207,10 @@ sub psalmi_matutinum_monastic {
 
         if ($i == 0 || $i == 8) {
           $p = "$p[$i]$p";
-        } elsif ($version =~ /Cist/i && $dayname[0] !~ /Pasc/
-            && ($i == 2 || $i == 4)) {
+        } elsif ($version =~ /Cist/i
+          && $dayname[0] !~ /Pasc/
+          && ($i == 2 || $i == 4))
+        {
 
           # CIST: there are three Ant. for first Nocturn
           if ($i == 4 && ($dayofweek == 1 || $dayofweek == 4)) {
@@ -297,8 +299,8 @@ sub psalmi_matutinum_monastic {
       setbuild2("Lectio unica de Sancto");
     }
     push(@s, "\n");
-  } elsif ($dayname[0] =~ /(Pasc[0-6]|Pent)/i
-    && $winner{Rank} !~ /quat(t?)uor|Dominica/i
+  } elsif ($dayname[0] =~ /(Pasc[0-7]|Pent)/i
+    && $winner{Rank} !~ /quat(t?)uor.*(Adv|Quad)|Dominica/i
     && $rule !~ /(3|12) lectiones/
     && $version =~ /Cist/i
     && ($winner =~ /Tempora/i || $winner{Rank} =~ /Vigil|infra Oct/i))

@@ -26,7 +26,7 @@ Si dilígitis me, * mandáta mea serváte, allelúia, allelúia, allelúia.
 @Tempora/Pasc7-0:HymnusM Matutinum:41-46
 
 [Ant Matutinum]
-Rogábo * Patrem meum, et álium Paráclitum dabit vobis, allelúia.;;8
+@:Ant MatutinumC
 ;;15
 ;;18
 ;;22
@@ -42,6 +42,9 @@ Rogábo * Patrem meum, et álium Paráclitum dabit vobis, allelúia.;;8
 @Tempora/Pasc7-0:Versum Sexta
 @TemporaCist/Pasc5-4:Ant Vespera:3:s/$/;;243;244;245/
 @Tempora/Pasc7-0:Versum Tertia
+
+[Ant MatutinumC]
+Rogábo * Patrem meum, et álium Paráclitum dabit vobis, allelúia.;;8
 
 [Nocturn 1 Versum]
 @Tempora/Pasc7-0:Ant Matutinum:4-5
@@ -122,23 +125,38 @@ V. Factus est repénte de cælo sonus, tamquam adveniéntis spíritus veheménti
 @Tempora/Pasc7-0:Lectio3:s/.*(Certe)/$1/s
 
 [Responsory9]
-@Tempora/Pasc7-4:Responsory1
+@Tempora/Pasc7-4:Responsory2:1
+* Et repléti sunt omnes Spíritu Sancto, allelúja, allelúja, allelúja.
+@Tempora/Pasc7-4:Responsory2:3
+R. Et repléti sunt omnes Spíritu Sancto, allelúja, allelúja, allelúja.
 
 [Responsory10]
-@Tempora/Pasc7-4:Responsory2
+R. Facta autem hac voce, convénit multitúdo, et mente confúsa est:
+* Quóniam audiébat unusquísque lingua sua illos loquéntes, magnália Dei, allelúja.
+V. Stupébant autem omnes, et mirabántur.
+R. Quóniam audiébat unusquísque lingua sua illos loquéntes, magnália Dei, allelúja.
 
 [Responsory11]
-@Tempora/Pasc7-5:Responsory1
+@Tempora/Pasc7-4:Responsory1
 
 [Responsory12]
-@Tempora/Pasc7-5:Responsory2
+@Tempora/Pasc7-2:Responsory1:1-2
+V. Spíritus Dómini replévit totam domum ubi erant sedéntes Apóstoli:
+@Tempora/Pasc7-2:Responsory1:4
+
+[MM LB]
+@Psalterium/Special/Matutinum Special:MM LB5:1-4
+R.br. Loquebántur váriis linguis Apóstoli, * Allelúja, allelúja.
+R. Loquebántur váriis linguis Apóstoli, * Allelúja, allelúja.
+V. Magnália Dei.
+R. Allelúja, allelúja.
 
 [MM Capitulum]
 !Act. 2:2
 v. Factus est repénte de cælo sonus, tamquam adveniéntis spíritus veheméntis, et replévit totam domum ubi erant sedéntes.
 $Deo gratias
 _
-@Tempora/Pasc7-0:Versum 3
+@Tempora/Pasc7-0:Versum Sexta
 
 [RV1]
 R. Repléti sunt omnes Spíritu sancto, et cœpérunt loqui, prout Spíritus sanctus dabat éloqui illos: 
