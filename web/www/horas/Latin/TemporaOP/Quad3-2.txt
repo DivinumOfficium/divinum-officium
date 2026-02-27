@@ -1,0 +1,19 @@
+@Tempora/Quad3-2
+
+[Responsory1]
+@Tempora/Quad3-0:Responsory5:1-2 s/\n\* (.)/ \l$1/ s/: (.)/:\n* \u$1//
+V. Divértit ab onéribus dorsum ejus.
+@Tempora/Quad3-0:Responsory5:1-2 s/\n\* (.)/ \l$1/ s/.*?: (.)/\nR. \u$1//
+
+[Lectio2]
+@Tempora/Quad3-2::s /Quómodo.*//
+
+[Responsory2]
+@Tempora/Quad3-0:Responsory6
+
+[Lectio3]
+@Tempora/Quad3-2:Lectio2:s/.* (?=Quómodo)// s/$/~/
+@Tempora/Quad3-2::s/ Quis .*//
+
+[Responsory3]
+@Tempora/Quad3-0:Responsory8
