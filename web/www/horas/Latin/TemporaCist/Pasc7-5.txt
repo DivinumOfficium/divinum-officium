@@ -1,0 +1,31 @@
+@Tempora/Pasc7-5
+
+[Rule]
+Psalmi Feria
+no prima vespera
+
+[Invit]
+@Tempora/Pasc7-0:Versum 1:1:s/V\. // s/(.)(llel[uú][ij]a)/\* \u$1$2/
+
+[Ant Matutinum]
+@TemporaCist/Pasc7-0:Ant MatutinumC:s/;;.*//
+;;
+;;
+;;
+;;
+;;
+@TemporaCist/Pasc0-0:AntC Matutinum
+;;
+;;
+;;
+;;
+;;
+
+[Benedictio]
+@TemporaCist/Pasc7-1
+
+[Ant 2]
+Factum est * in una diérum, et Jesus sedébat docens, et erant Pharisæi sedéntes, et legis doctóres qui vénerant ex omni castéllo Galilææ, et Judææ, et Jerúsalem, et virtus erat Dómini ad sanándum eos, allelúia, allelúia.
+
+[Ant 3]
+Jam non multa * loquar vobíscum, venit enim princeps mundi hujus, et in me non habet quidquam: sed ut cognóscat mundus quia díligo Patrem, et sicut mandátum dedit mihi Pater, sic fácio, allelúia.
