@@ -5,3 +5,63 @@ R. Jenž sám koná zázraky.
 [Responsory SextaM] (rubrica cisterciensis)
 V. Požehnej nás Bůh, náš Bůh.
 R. Požehnej nás Bůh.
+
+
+[AntMatutinumM]
+Sláva * a čest Bohu v jednotě Trojice, † Otci i Synu s Duchem Svatým, na věčné věky.;;95
+V Otci * přebývá věčnost, v Synu rovnost, † v Duchu Svatém spojení věčnosti s rovností.;;96
+Svatý, * Svatý, Svatý, Pán Bůh všemohoucí, † který byl, a který je, a který přijde.;;97
+
+[Ant Matutinum 3N]
+Chvála Bohu Otci, * jemu rovnému Synu, i tobě, Svatý - ve věčné touze - Duchu, ať zaznívá z našich úst po všechny věky.
+
+[Responsory4]
+R. Sláva Otci, zrozenému Synu, † i tobě, oběma vždy rovný vznešený Duchu, jeden Bože,
+* Po všechny časy světa.
+V. Dej radostné odměny, dej milostné dary, † zpřetrhej pouta sporů, uzavři smlouvy míru.
+R. Po všechny časy světa.
+
+[Lectio5]
+@Tempora/Pent01-0:Lectio4:s/Avšak Trojice .*//s
+
+[Lectio6]
+@Tempora/Pent01-0:Lectio4:s/.* (?=Avšak Trojice )//s s/$/~/
+@Tempora/Pent01-0:Lectio5:s/Protože .*//s
+
+[Lectio7]
+@Tempora/Pent01-0:Lectio5:s/.* (?=Protože)//s s/$/~/
+@Tempora/Pent01-0:Lectio6:s/Žádný .*//s
+
+[Lectio8]
+@Tempora/Pent01-0:Lectio6:s/.* (?=Žádný)//s
+
+[Responsory8]
+R. Čest, síla a moc, a vláda budiž Trojici v jednotě, † jednotě v Trojici,
+* Na věčné věky.
+V. Ať nám žehná Bůh, náš Bůh, ať nám žehná Bůh.
+R. Na věčné věky.
+
+[Lectio9]
+@Tempora/Pent01-0:Lectio7:s/My totiž .*//s
+
+[Lectio10]
+@Tempora/Pent01-0:Lectio7:s/.* (?=My totiž)//s s/$/~/
+@Tempora/Pent01-0:Lectio8a:s/A proto .*//s
+
+[Lectio11]
+@Tempora/Pent01-0:Lectio8a:s/.* (?=A proto )//s s/Toto tedy.*//s
+
+[Lectio12]
+@Tempora/Pent01-0:Lectio8a:s/.* (?=Toto tedy)//s
+
+[Responsory10]
+R. Ó blažená Trojice, tebe chválíme, tobě dobrořečíme, tobě se klaníme: † rozmnož v nás víru, rozmnož v nás naději, rozmnož v nás lásku,
+* Ó blažená Trojice.
+V. Tobě buď chvála, tobě sláva, tobě díkůvzdání na večné věky.
+R. Ó blažená Trojice.
+
+[Responsory11]
+R. Tebe, Boha Otce nezrozeného, tebe Syna jednorozeného, tebe Ducha Svatého Utěšitele, Svatou a nerozdílnou Trojici, † celým srdcem i ústy vyznáváme, chválíme a dobrořečíme;
+* Tobě sláva navěky.
+V. Neboť veliký jsi ty, a činíš podivuhodné věci, ty jsi jediný Bůh.
+R. Tobě sláva navěky.
