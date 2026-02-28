@@ -19,6 +19,16 @@ sub htmlHead {
   my ($title, $onload) = @_;
 
   my ($horasjs) = "<SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>\n" . horasjs() . '</SCRIPT>';
+
+  if ("$lang$lang1$lang2" =~ /gabc/) {
+    $horasjs .= <<'PrintTag';
+
+<SCRIPT TYPE='text/JavaScript' SRC='../../www/js/util.js'></SCRIPT>
+<SCRIPT TYPE='text/JavaScript' SRC='../../www/js/jquery.min.js'></SCRIPT>
+<SCRIPT TYPE='text/JavaScript' SRC='../../www/js/exsurge.js'></SCRIPT>
+PrintTag
+  }
+
   $onload && ($onload = " onload=\"$onload\";");
 
   my $is_mobile = ($officium eq 'Pofficium.pl');
@@ -116,9 +126,6 @@ PrintTag
   print <<"PrintTag";
   </STYLE>
   <TITLE>$title</TITLE>
-  <SCRIPT TYPE='text/JavaScript' SRC='../../www/js/util.js'></SCRIPT>
-  <SCRIPT TYPE='text/JavaScript' SRC='../../www/js/jquery.min.js'></SCRIPT>
-  <SCRIPT TYPE='text/JavaScript' SRC='../../www/js/exsurge.js'></SCRIPT>
 $horasjs
 </HEAD>
 <BODY $onload onresize="layoutChant()">
