@@ -50,7 +50,11 @@ Allelúia, * allelúia, allelúia, allelúia, allelúia, allelúia, allelúia.;;
 @CommuneCist/C1
 
 [Responsory2]
-@CommuneM/C1p:Responsory4:s/Apóstoli // s/Apoštolové //i
+@CommuneM/C1p:Responsory4:1:s/Apóstoli // s/Apoštolové //i s/$/~/
+@CommuneM/C1p:Responsory4:2:s/\* // s/ †.*//
+@Tempora/Pasc0-1:Responsory2:2
+@CommuneM/C1p:Responsory4:3
+@Tempora/Pasc0-1:Responsory2:4
 
 [Lectio3]
 @CommuneCist/C1
