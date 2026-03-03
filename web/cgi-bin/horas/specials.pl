@@ -168,6 +168,7 @@ sub specials {
       if ( $version =~ /Cist/i
         && $winner{Rank} =~ /Feria|Vigilia|infra oct/i
         && $dayname[0] =~ /Pent|Epi/i
+        && $dayofweek > 0
         && $month > 5
         && $month < 11)
       {
