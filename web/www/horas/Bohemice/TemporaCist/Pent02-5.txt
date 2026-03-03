@@ -1,0 +1,29 @@
+
+[Doxology]
+Sláva buď tobě, Pane náš,
+Jenž z Srdce milost vyléváš,
+S Otcem i Svatým Duchem,
+Navždy ty vládneš věkům všem.
+Amen.
+
+[AntMatutinumC]
+Milosrdenství * a pravdu miluje Bůh, milost a slávu popřává Hospodin.;;83
+
+[Ant Matutinum 3N]
+Radujte se nebesa, * a zajásej země, plesejte hory chválou, neboť Pán se smiloval a svou Krví nás obmyl od našich hříchů.
+
+[Lectio2]
+@Tempora/Pent02-5o::s/k zemi, .*/k zemi./s
+
+[Lectio7]
+@Tempora/Pent02-5o:Lectio6:s/Papež Klement.*//s
+
+[Lectio8]
+@Tempora/Pent02-5o:Lectio6:s/.* (?=Papež Klement)//
+
+[Lectio11]
+@Tempora/Pent02-5o:Lectio9:s/ Vstaň .*//s
+
+[Lectio12]
+@Tempora/Pent02-5o:Lectio9:1-3:s/.*(?=Vstaň )//s s/$/~/
+On je totiž ten pramen, který vyvěrá uprostřed ráje, který se dělí na čtyři řeky a když se vlije do srdcí jemu oddaných, zúrodní a zavlaží celou zemi.
