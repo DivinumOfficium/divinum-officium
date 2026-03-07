@@ -165,7 +165,11 @@ sub minor_reponsory {
   my $name = gettempora('Capitulum minor') . " $hora";
   $name = 'Completorium' if $hora eq 'Completorium';
   $name .= 'M' if ($version =~ /Monastic/);
-  $name =~ s/Quad/Quad3/ if $version =~ /Praedicatorum/ && $dayname[0] =~ /^Quad[34]/;
+
+  if ($version =~ /Praedicatorum/ && $dayname[0] =~ /^Quad\d/) {
+    $name .= 'OP';
+    $name =~ s/Quad/Quad3/ if $dayname[0] =~ /^Quad[34]/;
+  }
 
   my ($resp, $vers);
 
