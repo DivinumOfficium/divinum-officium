@@ -736,6 +736,8 @@ sub checksuffragium {
   if ($commemoratio) {
     my @r = split(';;', $commemoratio{Rank});
 
+    $ranklimit = 7 if $version =~ /^Trident/;
+
     return 0
       if $r[2] >= $ranklimit
       || $commemoratio{Rank} =~ /in.*Octav/i
