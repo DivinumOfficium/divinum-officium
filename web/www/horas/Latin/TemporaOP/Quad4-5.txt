@@ -1,0 +1,18 @@
+@Tempora/Quad4-5
+
+[Lectio1]
+@Tempora/Quad4-5::s/ Misérunt ad.*//
+
+[Responsory1]
+@TemporaCist/Quad4-0:Responsory4
+
+[Lectio2]
+@Tempora/Quad4-5:Lectio1:s/.* (?=Misérunt ad)//s s/$/~/
+@Tempora/Quad4-5::s/ Ait.*//
+
+[Responsory2]
+@Tempora/Quad4-0:Responsory5
+
+[Lectio3]
+@Tempora/Quad4-5:Lectio2:s/.* (?=Ait)// s/$/~/
+@Tempora/Quad4-5::s/ Audiens.*//

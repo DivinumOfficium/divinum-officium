@@ -1,0 +1,23 @@
+@Tempora/Quad4-3
+
+[Lectio1]
+@Tempora/Quad4-3::s/ Si fílii.*//
+
+[Responsory1]
+@Tempora/Quad4-0:Responsory7::1-2
+V. Descéndit Móyses de monte, portans duas tábulas lapídeas in mánibus suis, scriptas utrásque dígito Dei.
+@Tempora/Quad4-0:Responsory7::4
+
+[Lectio2]
+@Tempora/Quad4-3:Lectio1:s/.* Si fílii/Si natúra fílii/s s/$/~/
+@Tempora/Quad4-3::s/ Inúnctus.*/
+
+[Responsory2]
+@TemporaCist/Quad4-0:Responsory6
+
+[Lectio3]
+@Tempora/Quad4-3:Lectio2:s/.* (?=Inúnctus)// s/ Si ergo quando.*//
+
+[Responsory3]
+@Tempora/Quad4-1:Responsory2
+
