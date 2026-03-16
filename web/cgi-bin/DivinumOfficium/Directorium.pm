@@ -216,7 +216,7 @@ sub transfered {
 sub check_coronatio {
   my ($day, $month) = @_;
 
-  $day == 20 && $month == 3 ? 'Commune/Coronatio' : '';
+  $day == 18 && $month == 5 ? 'Commune/Coronatio' : '';
 }
 
 #*** dirge($version, $hora, $day, $month, $year)

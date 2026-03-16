@@ -790,7 +790,13 @@ sub replaceNpb {
   my @pb = split(',', $pb);
 
   $pb = ($lang =~ /Latin/i) ? $pb[0] : ($lang =~ /English/i) ? $pb[1] : $pb[2];
-  if ($lang =~ /Latin/i) { $pb =~ s/us$/$e/; }
+  $pb ||= 'N.';
+    
+  if ($lang =~ /Latin/i) {
+    $e = 'em' if $e eq 'um' && $pb =~ /e$/;
+    $e = 'e' if $e eq 'o' && $pb =~ /e$/;
+    $pb =~ s/[eo]$/$e/;
+  }
   $s =~ s/N\.$let/$pb/g;
   return $s;
 }

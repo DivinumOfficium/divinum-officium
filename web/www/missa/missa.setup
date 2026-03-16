@@ -1,6 +1,6 @@
 [parameters]
-$pope='(nomen Papae),(name of Pope)';;
-$bishop='(nomen Episcopi),(name of Bishop)';;
+$pope='Leone,Leo';;
+$bishop='(nomen Episcopi in casu ablativus),(name of Bishop)';;
 $lang1='Latin';;
 $whitebground='1';;
 $blackfont='';;
