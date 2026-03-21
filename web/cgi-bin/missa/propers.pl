@@ -791,7 +791,7 @@ sub replaceNpb {
 
   $pb = ($lang =~ /Latin/i) ? $pb[0] : ($lang =~ /English/i) ? $pb[1] : $pb[2];
   $pb ||= 'N.';
-    
+
   if ($lang =~ /Latin/i) {
     $e = 'em' if $e eq 'um' && $pb =~ /e$/;
     $e = 'e' if $e eq 'o' && $pb =~ /e$/;
