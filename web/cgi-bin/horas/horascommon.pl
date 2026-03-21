@@ -1072,9 +1072,11 @@ sub concurrence {
 
       if ( ($comrank == 1.15 || $comrank == 2.1 || $comrank == 2.99 || $comrank == 3.9)
         && $cwinner !~ /12-25|01-01/
-        && !($cwinner =~ /07-01/ && $trank[0] =~ /Sangu|Cor[dp]/))
+        && !($cwinner =~ /07-01/ && $trank[0] =~ /Sangu|Cor[dp]/)
+        && $commemoratio !~ /(Adv|Quad)p?\d\-6/)
       {
         # privilidged Feria, Dominica, or infra 8vam only
+        # except for Saturdays at 1st Vespers of the Sunday
         # no Commemoration of the Octaves of Ssmi Corporis and Ssmi Cordis on Precious Blood #4586
         $dayname[2] .= "<br/>Vespera de sequenti; commemoratio de off. priv. tantum";
       } else {
