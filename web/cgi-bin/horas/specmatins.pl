@@ -501,15 +501,19 @@ sub get_absolutio_et_benedictiones {
         # Replace Benediction 8 (or 11 for Monastic)
       } elsif (
         $winner{Rank} =~ /(?:\bss?\.|sanctorum)/i    # sancti
-        || $commune =~ /C11|08-15|09-08|12-08/       # + fest. BMV + 8es
+        || ($commune =~ /C11|08-15|09-08|12-08/      # + fest. BMV + 8es
+        && $version !~ /Cist/i)
       ) {
-        $ben[1] = $ben[3 + cujus_q($winner{Rank})];
+        if ($version =~ /Cist/i) {
+          $ben[2] = $ben[4 + cujus_q($winner{Rank})];
+        } else {
+          $ben[1] = $ben[3 + cujus_q($winner{Rank})]; }
         setbuild2("3rd Noct. B${rpn}. : " . beginwith($ben[1]));
       }
     }
 
-    if ($num == 3 && $winner !~ /12-25/) {    # 'Evangelica lectio' - first
-      if ($version =~ /Monastic/) {
+    if ($num == 3 && $winner !~ /12-25/ && $version !~ /Cist/i) {    # 'Evangelica lectio' - first
+      if ($version =~ /Monastic/i) {
         unshift @ben, $eva[0];
       } else {
         $ben[0] = $eva[0];
@@ -517,7 +521,7 @@ sub get_absolutio_et_benedictiones {
     }
 
     # check if last lectio if from ev.
-    if ($num == 3 && $winner !~ /12-25/) {
+    if ($num == 3 && $winner !~ /12-25/ && $version !~ /Cist/i) {
       my $w = lectio($version =~ /Monastic/ ? 12 : 9, 'Latin');
 
       if ($w =~ /!(?:Matt|Marc|Luc|Joannes)/) {    # update last benedictio if so
@@ -535,10 +539,25 @@ sub get_absolutio_et_benedictiones {
     @ben = split("\n", $mariae{Benedictio});
     setbuild2('Special benedictio');
 
+    ## Cistercian Ferias with 3 Lessons NOT from Gospel+Homilies
+  } elsif ($winner{Rank} =~ /Feria|infra Oct/i 
+      && $winner{Lectio1} !~ /!(?:Matt|Marc|Luc|Joannes)/ 
+      && $winner{Lectio3} && !$winner{Lectio12} 
+      && $version =~ /Cist/i) {
+    my %w = (columnsel($lang)) ? %winner : %winner2;
+    if ($w{Benedictio}) { 
+      @ben = split("\n", $w{Benedictio});
+    } else {
+      @ben = split("\n", $ben{"Feria $dayofweek 3L"});
+    }
+    unshift @ben, $abs[$num - 1];
+    setbuild2("Special benedictio: Cistercian Ferial Offices in Winter (Feria $dayofweek 3L)");
+
     ## Cistercian Votive offices
   } elsif ($winner =~ /00-V[BE]/) {
     my %w = (columnsel($lang)) ? %winner : %winner2;
     @ben = split("\n", $w{Benedictio});
+    unshift @ben, $abs[$num - 1];
     setbuild2('Special benedictio: Cistercian Votive Offices');
 
     ## 3 lectiones
@@ -552,6 +571,14 @@ sub get_absolutio_et_benedictiones {
     {
       $ben[0] = $eva[0];
 
+      # CIST version has other two Ben. moved by one
+      if ($version =~ /Cist/i) {
+          $ben[1] = $ben[2];
+          $ben[2] = $ben[3];
+        }
+
+      setbuild2('Special benedictio: Homily from Evang.');
+
       # then Sunday in 1960 with 3 readings
     } elsif ($winner{Rank} =~ /dominica/i) {
       my @ev9 = split(/\n/, $ben{Evangelica9});
@@ -561,6 +588,7 @@ sub get_absolutio_et_benedictiones {
     } elsif (($winner =~ /Sancti/ && $winner{Rank} =~ /\bss?\./i)
       || $commune =~ /C11/)
     {
+      if ($version =~ /Cist/i) { shift @ben; }
       $ben[1] = $ben[3 + cujus_q($winner{Rank})];
       setbuild2("B2. : " . beginwith($ben[1]));
 
