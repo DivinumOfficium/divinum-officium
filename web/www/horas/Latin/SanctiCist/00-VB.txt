@@ -35,6 +35,11 @@ Psalmi Feria
 [Nocturn 1 Versum]
 @CommuneCist/C5a
 
+[Benedictio]
+@Psalterium/Benedictions:Nocturn 3:2
+@Psalterium/Benedictions:Nocturn 3:5:s/festum/memóriam/
+@Psalterium/Benedictions:Nocturn 3:4
+
 [Lectio1]
 De libro Ecclesiástici
 !Sir 24:1-4
@@ -59,12 +64,6 @@ Speciáliter autem sacrosánctam Románam Ecclésiam, ita quondam sub gravis per
 
 [Responsory3]
 @SanctiCist/08-20C:Responsory8
-
-[Benedictio]
-It doesn’t work without this
-@Psalterium/Benedictions:Nocturn 3:1
-@Psalterium/Benedictions:Nocturn 3:4:s/festum/memóriam/
-@Psalterium/Benedictions:Nocturn 3:3
 
 [MM Capitulum]
 @SanctiCist/03-21C:Capitulum Sexta
