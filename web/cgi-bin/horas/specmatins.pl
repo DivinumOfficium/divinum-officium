@@ -501,13 +501,16 @@ sub get_absolutio_et_benedictiones {
         # Replace Benediction 8 (or 11 for Monastic)
       } elsif (
         $winner{Rank} =~ /(?:\bss?\.|sanctorum)/i    # sancti
-        || ($commune =~ /C11|08-15|09-08|12-08/      # + fest. BMV + 8es
-        && $version !~ /Cist/i)
+        || (
+          $commune =~ /C11|08-15|09-08|12-08/        # + fest. BMV + 8es
+          && $version !~ /Cist/i
+        )
       ) {
         if ($version =~ /Cist/i) {
           $ben[2] = $ben[4 + cujus_q($winner{Rank})];
         } else {
-          $ben[1] = $ben[3 + cujus_q($winner{Rank})]; }
+          $ben[1] = $ben[3 + cujus_q($winner{Rank})];
+        }
         setbuild2("3rd Noct. B${rpn}. : " . beginwith($ben[1]));
       }
     }
@@ -540,12 +543,15 @@ sub get_absolutio_et_benedictiones {
     setbuild2('Special benedictio');
 
     ## Cistercian Ferias with 3 Lessons NOT from Gospel+Homilies
-  } elsif ($winner{Rank} =~ /Feria|infra Oct/i 
-      && $winner{Lectio1} !~ /!(?:Matt|Marc|Luc|Joannes)/ 
-      && $winner{Lectio3} && !$winner{Lectio12} 
-      && $version =~ /Cist/i) {
+  } elsif ($winner{Rank} =~ /Feria|infra Oct/i
+    && $winner{Lectio1} !~ /!(?:Matt|Marc|Luc|Joannes)/
+    && $winner{Lectio3}
+    && !$winner{Lectio12}
+    && $version =~ /Cist/i)
+  {
     my %w = (columnsel($lang)) ? %winner : %winner2;
-    if ($w{Benedictio}) { 
+
+    if ($w{Benedictio}) {
       @ben = split("\n", $w{Benedictio});
     } else {
       @ben = split("\n", $ben{"Feria $dayofweek 3L"});
@@ -573,9 +579,9 @@ sub get_absolutio_et_benedictiones {
 
       # CIST version has other two Ben. moved by one
       if ($version =~ /Cist/i) {
-          $ben[1] = $ben[2];
-          $ben[2] = $ben[3];
-        }
+        $ben[1] = $ben[2];
+        $ben[2] = $ben[3];
+      }
 
       setbuild2('Special benedictio: Homily from Evang.');
 
