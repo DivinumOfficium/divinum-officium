@@ -65,9 +65,17 @@ Amen.
 [Ant 1]
 Exsúltet ómnium * turba fidélium pro glória almi Patris Benedícti; læténtur præcípue catérvæ monachórum, celebrántes ejus festa in terris, de cujus societáte sancti congáudent in cælis.
 
-[Oratio]
+[Oratio_]
 Omnípotens sempitérne Deus, qui hodiérna die carnis edúctum ergástulo sanctíssimum Confessórem tuum Benedíctum sublevásti ad cælum: † concéde, quǽsumus, hæc festa tuis fámulis celebrántibus cunctórum véniam delictórum; * ut, qui exsultántibus ánimis ejus claritáti congáudent, ipso apud te interveniénte, consociéntur et méritis.
 $Per Dominum
+
+[OratioP]
+@:Oratio_:s/hodiérna die //
+
+[Oratio]
+@:Oratio_
+(sed tempore paschali nisi rubrica 1960 omittitur)
+@:OratioP
 
 [Hymnus Matutinum]
 v. Quidquid antíqui cecinére vates,
