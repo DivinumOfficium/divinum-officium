@@ -53,7 +53,6 @@ Ignem sui amóris † accéndat Deus in córdibus nostris.†
 Benedícat nos Deus, Deus noster, † benedícat nos Deus.†
 
 [Nocturn 3] (rubrica cisterciensis)
-Evangélica lectio † sit nobis salus et protéctio.†
 Ille nos benedícat † qui sine fine vivit et regnat.†
 Ad gáudia paradísi † perdúcat nos misericórdia Jesu Christi.†
 Ad societátem cívium supernórum † perdúcat nos Rex Angelórum.†
@@ -78,7 +77,6 @@ Nos cum Prole pia † benedícat Virgo María.†
 María stella maris † perdúcat nos ad portum salútis.
 
 [Nocturn 3] (rubrica cisterciensis et officio C11)
-Evangélica léctio † sit nobis salus et protéctio.†
 Alma Pia Mater † pro nobis júgiter oret.†
 Ab omni hoste malígno † erípiat nos Dei Génitrix Virgo.†
 Ad societátem cívium supernórum † perdúcat nos Rex Angelórum.†
@@ -111,8 +109,24 @@ Spíritus sancti grátia † illúminet sensus, et corda nostra.
 [Feria 6 3L]
 @Commune/C10:Benedictio:2-4
 
+[Feria]
+@:Feria 1 3L:1
+@:Feria 2 3L:2
+@:Feria 3 3L:1
+@:Feria 4 3L:2
+@:Feria 5 3L:3
+@:Nocturn 3:2
+
 [Comment]
-The above mentioned set of Benedictions (Feria 6 3L) is rarely used, only in solemn Octaves in Winter, and it's not contained in the beginning of Breviaries, so these are copied over from Sabbato de Beata.
+The above mentioned set of Benedictions (Feria 6 3L) is rarely used, basically only in solemn Octaves in Winter, and it's not contained in the beginning of Breviaries, so these are copied over from Sabbato de Beata.
+
+Also, the Rubrics below contain the <FONT COLOR> tags, because otherwise I wasn't able to prevent the program to add new line after the </FONT> tag in the code, while making the "Benedictio:" translated and red...
 
 [Rubrica brevis]
-Si vero Officium cantetur in directum, tres Lectiones sub una dumtaxat Benedictione recitantur:
+<FONT COLOR=red>Si vero Officium cantetur in directum, tres Lectiones sub una dumtaxat Benedictione recitantur:</FONT>
+
+[Rubrica brevis E]
+<FONT COLOR=red>Si vero Officium cantetur in directum, tres Lectiones sub hæc una Benedictione recitantur.</FONT>
+
+[Rubrica brevis 12]
+<FONT COLOR=red>In Officio duodecim Lectionum, quando non cantantur ℟℟., Lectiones cujuslibet Nocturni recitantur sub unica Benedictione.</FONT>

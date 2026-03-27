@@ -500,22 +500,18 @@ sub get_absolutio_et_benedictiones {
 
         # Replace Benediction 8 (or 11 for Monastic)
       } elsif (
-        $winner{Rank} =~ /(?:\bss?\.|sanctorum)/i    # sancti
+        $winner{Rank} =~ /(?:\bss?\.|b\.|sanctorum)/i    # sancti
         || (
           $commune =~ /C11|08-15|09-08|12-08/        # + fest. BMV + 8es
           && $version !~ /Cist/i
         )
       ) {
-        if ($version =~ /Cist/i) {
-          $ben[2] = $ben[4 + cujus_q($winner{Rank})];
-        } else {
-          $ben[1] = $ben[3 + cujus_q($winner{Rank})];
-        }
+        $ben[1] = $ben[3 + cujus_q($winner{Rank})];
         setbuild2("3rd Noct. B${rpn}. : " . beginwith($ben[1]));
       }
     }
 
-    if ($num == 3 && $winner !~ /12-25/ && $version !~ /Cist/i) {    # 'Evangelica lectio' - first
+    if ($num == 3 && $winner !~ /12-25/) {    # 'Evangelica lectio' - first
       if ($version =~ /Monastic/i) {
         unshift @ben, $eva[0];
       } else {
@@ -534,12 +530,27 @@ sub get_absolutio_et_benedictiones {
       }
     }
 
+    # alternative with one Benediction for 12-Lesson Office
+    if ($version =~ /Cist/i) {
+        if ($num == 2 && $winner =~ /Sancti/ && $winner{Rank} =~ /\bss?\.|b\./i) {
+          my @ben3 = split(/\n/, $ben{"Nocturn 3"});
+          $ben[4] = "$ben{'Rubrica brevis'} Benedictio. $ben3[3 + cujus_q($winner{Rank})]";
+        } elsif ($num == 3) {
+          $ben[4] = "$ben{'Rubrica brevis E'}";
+        } else {
+          $ben[4] = "$ben{'Rubrica brevis'} Benedictio. $ben[3]";
+        }
+      }
+
     unshift @ben, $abs[$num - 1];
 
     ## BMV special cases
   } elsif ($winner =~ /(C1[02])/) {
     my %mariae = %{setupstring($lang, subdirname('Commune', $version) . "$1.txt")};
     @ben = split("\n", $mariae{Benedictio});
+    if ($version =~ /Cist/i) {
+        $ben[4] = "$ben{'Rubrica brevis E'}";
+      }
     setbuild2('Special benedictio');
 
     ## Cistercian Ferias with 3 Lessons NOT from Gospel+Homilies
@@ -550,19 +561,32 @@ sub get_absolutio_et_benedictiones {
     && $version =~ /Cist/i)
   {
     my %w = (columnsel($lang)) ? %winner : %winner2;
+    my @ben_feria = split("\n", $ben{Feria});
 
     if ($w{Benedictio}) {
       @ben = split("\n", $w{Benedictio});
     } else {
       @ben = split("\n", $ben{"Feria $dayofweek 3L"});
     }
+    
+    # alternative with one Benediction
+    if ($dayofweek == 1 || $dayofweek == 3) {
+      $ben[3] = "$ben{'Rubrica brevis E'}";
+    } else {
+      $ben[3] = "$ben{'Rubrica brevis'} Benedictio. $ben_feria[$dayofweek-1]";
+    }
+
     unshift @ben, $abs[$num - 1];
     setbuild2("Special benedictio: Cistercian Ferial Offices in Winter (Feria $dayofweek 3L)");
 
     ## Cistercian Votive offices
   } elsif ($winner =~ /00-V[BE]/) {
     my %w = (columnsel($lang)) ? %winner : %winner2;
+
     @ben = split("\n", $w{Benedictio});
+    # alternative with one Benediction
+    $ben[3] = "$ben{'Rubrica brevis'} Benedictio. $ben[1]";
+    
     unshift @ben, $abs[$num - 1];
     setbuild2('Special benedictio: Cistercian Votive Offices');
 
@@ -577,10 +601,9 @@ sub get_absolutio_et_benedictiones {
     {
       $ben[0] = $eva[0];
 
-      # CIST version has other two Ben. moved by one
       if ($version =~ /Cist/i) {
-        $ben[1] = $ben[2];
-        $ben[2] = $ben[3];
+        # CIST: alternative with one Benediction
+        $ben[3] = "$ben{'Rubrica brevis E'}";
       }
 
       setbuild2('Special benedictio: Homily from Evang.');
@@ -591,11 +614,14 @@ sub get_absolutio_et_benedictiones {
       $ben[2] = $ev9[0];
 
       # then Sancti & BMV
-    } elsif (($winner =~ /Sancti/ && $winner{Rank} =~ /\bss?\./i)
+    } elsif (($winner =~ /Sancti/ && $winner{Rank} =~ /\bss?\.|b\./i)
       || $commune =~ /C11/)
     {
-      if ($version =~ /Cist/i) { shift @ben; }
       $ben[1] = $ben[3 + cujus_q($winner{Rank})];
+      if ($version =~ /Cist/i) { 
+        # CIST: alternative with one Benediction
+        $ben[3] = "$ben{'Rubrica brevis'} Benedictio. $ben[1]"; 
+      }
       setbuild2("B2. : " . beginwith($ben[1]));
 
       # then tempora
@@ -639,6 +665,16 @@ sub lectiones {
     if ($rule !~ /Limit.*?Benedictio/i) {
       push(@s, prayer('Jube domne', $lang));
       push(@s, "Benedictio. $a[$i]", '$Amen');
+    }
+
+    # CIST: alternative to use only one Benediction
+    if ($i == 1 && $rpn > 1 && $version =~ /Cist/i) {
+      # If the Antiphon is identical, we don't need $Amen.
+      if ($a[$rpn+1] !~ /Benedictio\./i) {
+        push(@s, "$a[$rpn+1]");
+      } else { 
+        push(@s, "$a[$rpn+1]", '$Amen'); 
+      }
     }
     push(@s, "\&lectio($l)", "\n");    # the lesson is going to be added by the subroutine below at a later time
   }

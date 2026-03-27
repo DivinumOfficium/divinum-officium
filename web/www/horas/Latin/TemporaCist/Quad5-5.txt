@@ -1,11 +1,23 @@
 @Tempora/Quad5-5
 
+[Officium]
+Septem Dolorum Beatæ Mariæ Virginis
+
+[Rank]
+;;Duplex majus;;4;;ex C11
+
 [Rule]
 Psalmi Dominica
 Antiphonas horas
 12 lectiones
 Gloria responsory
 Doxology=NatT
+
+[Ant Vespera]
+@Tempora/Quad5-5::s/140/141/
+
+[Responsory Vespera]
+@Tempora/Quad5-5:Responsory Breve Tertia
 
 [Ant Matutinum]
 @Tempora/Quad5-5::1-2:s/3/12/
@@ -15,7 +27,10 @@ Ferrum lánceæ militáris * latus quidem Salvatóris, ánimam vero transívit V
 @Tempora/Quad5-5::8
 @Sancti/09-15:Ant Matutinum:3:s/30/89/
 @Tempora/Quad5-5::9
-Dóleo super te * fili mi, decórus nimis et amábilis super amórem mulíerum.;;246;247;248
+;;246;247;248
+
+[Ant Matutinum 3N]
+Dóleo super te * fili mi, decórus nimis et amábilis super amórem mulíerum.
 
 [Lectio1]
 @Tempora/Quad5-5::1-5
@@ -96,3 +111,12 @@ Sed in quæ sua Joánnes Matrem Dómini accépit? Neque enim non ex eis erat, qu
 
 [Responsory Laudes]
 @Tempora/Quad5-5:Responsory Breve Nona:s/tibi/tibi, Deus/g
+
+[Responsory TertiaM]
+@Tempora/Quad5-5:Nocturn 1 Versum
+
+[Responsory SextaM]
+@Tempora/Quad5-5:Nocturn 2 Versum
+
+[Responsory NonaM]
+@Tempora/Quad5-5:Nocturn 3 Versum
