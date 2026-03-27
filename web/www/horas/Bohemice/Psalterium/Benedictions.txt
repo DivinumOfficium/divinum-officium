@@ -28,7 +28,7 @@ Ten, jehož svátek dnes slavíme, náš slavný Otec, nechť se za nás přimlo
 
 [Evangelica]
 Čtení z Evangelia buď naše spása i ochrana.
-(rubrica cisterciensis)
+(sed rubrica cisterciensis)
 Čtení z Evangelia † buď naše spása i ochrana.†
 
 [Evangelica9]
@@ -53,7 +53,6 @@ Oheň své lásky † ať zažehne Bůh v srdcích našich.†
 Požehnej nás Bůh, náš Bůh, † požehnej nás Bůh.†
 
 [Nocturn 3] (rubrica cisterciensis)
-Čtení z Evangelia † buď naše spása i ochrana.†
 Požehnej nám Ten,† jenž bez konce žije a kraluje.†
 Do radostí ráje † doveď nás milosrdenství Krista Ježíše.†
 Do společenství nebeských občanů † nechť nás uvede Král Andělů.†
@@ -78,7 +77,6 @@ S Božským Dítkem máti † rač nám požehnání dáti.†
 Maria, hvězdo moří, † doveď nás do přístavu spásy.
 
 [Nocturn 3] (rubrica cisterciensis et officio C11)
-Čtení z Evangelia † buď naše spása i ochrana.†
 Matka vznešená a laskavá † ať se za nás usilovně přimlouvá.†
 Od každého nepřítele zlovolného † vysvoboď nás, Boží Rodičko, Panno.†
 Do společenství nebeských občanů † nechť nás uvede Král Andělů.†
@@ -109,4 +107,10 @@ Ať nad námi rozzáří Hospodin svou tvář, † a slituje se nad námi.†
 Milostí svou Duch Svatý † nechť osvěcuje srdce naše i smysly.†
 
 [Rubrica brevis]
-Pokud se však Officium zpívá na jednom tónu, všechna tři Čtení se recitují pod jedním Požehnáním:
+<FONT COLOR=red>Pokud se však Officium zpívá na jednom tónu, všechna Čtení se recitují pod jedním Požehnáním:</FONT>
+
+[Rubrica brevis E]
+<FONT COLOR=red>Pokud se Officium zpívá na jednom tónu, všechna Čtení se recitují pod tímto jedním Požehnáním.</FONT>
+
+[Rubrica brevis 12]
+<FONT COLOR=red>V Officiu s 12 čteními, když se nezpívají Responsoria, Čtení každého Nocturnu se recitují pod jedním Požehnáním.</FONT>

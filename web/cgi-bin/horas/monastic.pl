@@ -423,20 +423,28 @@ sub absolutio_benedictio {
     @a = split("\n", $m{Benedictio});
     $abs = $a[0];
     $ben = $a[3];
-    setbuild2('Special benedictio');
+    setbuild2('Special benedictio B.M.V.');
   } else {
     my %ben = %{setupstring($lang, 'Psalterium/Benedictions.txt')};
     my $i = dayofweek2i();
     my %w = (columnsel($lang)) ? %winner : %winner2;
-    @a = split(/\n/, $ben{"Nocturn $i"});
     my @abs = split(/\n/, $ben{Absolutiones});
+
+    @a = split(/\n/, $ben{"Nocturn $i"});
+
     $abs = $abs[dayofweek2i() - 1];
     $ben = $a[3 - ($i == 3)];
+
+    # CIST: proper Benedictions on summer Ferias
+    if ($dayofweek != 0 && $version =~ /Cist/i) {
+      my @ben_feria = split("\n", $ben{Feria});
+      $ben = $ben_feria[$dayofweek - 1];
+    }
 
     # CIST: some days have their proper Benedictio
     if (exists($w{Benedictio}) && $version =~ /Cist/i) {
       $ben = $w{Benedictio};
-      setbuild2('Special Benedictio ex proprio');
+      setbuild2('Benedictio ex proprio');
     }
   }
 
