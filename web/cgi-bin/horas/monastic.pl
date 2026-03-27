@@ -431,14 +431,14 @@ sub absolutio_benedictio {
     my @abs = split(/\n/, $ben{Absolutiones});
 
     @a = split(/\n/, $ben{"Nocturn $i"});
-    
+
     $abs = $abs[dayofweek2i() - 1];
     $ben = $a[3 - ($i == 3)];
 
     # CIST: proper Benedictions on summer Ferias
-    if ($dayofweek != 0 && $version =~ /Cist/i) { 
+    if ($dayofweek != 0 && $version =~ /Cist/i) {
       my @ben_feria = split("\n", $ben{Feria});
-      $ben = $ben_feria[$dayofweek-1];
+      $ben = $ben_feria[$dayofweek - 1];
     }
 
     # CIST: some days have their proper Benedictio
