@@ -670,16 +670,16 @@ sub lectiones {
     if ($rule !~ /Limit.*?Benedictio/i) {
       push(@s, prayer('Jube domne', $lang));
       push(@s, "Benedictio. $a[$i]", '$Amen');
-    }
 
-    # CIST: alternative to use only one Benediction
-    if ($i == 1 && $rpn > 1 && $version =~ /Cist/i) {
+      # CIST: alternative to use only one Benediction
+      if ($i == 1 && $rpn > 1 && $version =~ /Cist/i) {
 
-      # If the Antiphon is identical, we don't need $Amen.
-      if ($a[$rpn + 1] !~ /Benedictio\./i) {
-        push(@s, "$a[$rpn+1]");
-      } else {
-        push(@s, "$a[$rpn+1]", '$Amen');
+        # If the Antiphon is identical, we don't need $Amen.
+        if ($a[$rpn + 1] !~ /Benedictio\./i) {
+          push(@s, "$a[$rpn+1]");
+        } else {
+          push(@s, "$a[$rpn+1]", '$Amen');
+        }
       }
     }
     push(@s, "\&lectio($l)", "\n");    # the lesson is going to be added by the subroutine below at a later time
