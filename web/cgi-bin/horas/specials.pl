@@ -279,7 +279,10 @@ sub specials {
     }
 
     if ($item =~ /Suffragium/i && $hora =~ /^(?:Laudes|Vespera)$/) {
-      if (!checksuffragium() || $dayname[0] =~ /(Quad5|Quad6)/i) {
+      if ( !checksuffragium()
+        || ($version !~ /Cist/i && $dayname[0] =~ /Quad5/i)
+        || $dayname[0] =~ /Quad6/i)
+      {
         setcomment($label, 'Suffragium', 0, $lang);
         push(@s, "\n");
         setbuild1($item, 'omit');
