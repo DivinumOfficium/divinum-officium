@@ -224,14 +224,14 @@ sub Septuagesima_vesp {
 # Determines whether the Gloria at the end of the psalms should be omitted
 # owing to the Triduum.
 sub triduum_gloria_omitted() {
-  our (@dayname, $dayofweek, $tvesp);
+  our (@dayname, $dayofweek, $vespera);
 
   # TODO: A much more elegant check would be to see what *today's office* is,
   # checking for Quad6-[456], but this information is not reliably available.
   return
        $dayname[0] =~ /Quad6/i
     && $dayofweek > 3
-    && $tvesp != 1;
+    && $vespera != 1;
 }
 
 #*** getantcross($psalmline, $antline)
