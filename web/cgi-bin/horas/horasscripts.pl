@@ -368,7 +368,7 @@ sub handleverses {
         s/\(i\.\)/(ih..)/ if $_[3] =~ /a$/;
       } else {
 
-        my $fin = $_[3] =~ /a/ ? 'gh..' : 'g.';
+        my $fin = $_[3] =~ /g/ ? 'g.' : 'gh..';
         s/(.*)\(j(.*?)jr\)(.*?)\(i\.\)/$1(h$2gr)$3($fin)/;
 
         if ($_[3] =~ /antiquo/) {
