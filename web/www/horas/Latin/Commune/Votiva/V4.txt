@@ -1,0 +1,146 @@
+@Tempora/Pasc2-3
+
+[Officium]
+Officium votivum de S. Joseph Sponso B.M.V. Confessore et Catholicæ Ecclesiæ Patrono
+(sed ad missam)
+Missa votiva de S. Joseph Sponso B.M.V. Confessore et Catholicæ Ecclesiæ Patrono
+
+[Rank]
+;;Semiduplex;;2.2;;ex Tempora/Pasc2-3
+
+[Rule]
+ex Tempora/Pasc2-3
+9 lectiones
+Psalmi Dominica
+Antiphonas horas
+Psalm5 Vespera=116
+Lectio1 Quad
+Prefatio=Joseph
+
+[Ant Vespera] (nisi tempore paschali)
+@Tempora/Pasc2-3::s/[\,\.] al.*$/./gmi
+
+[Ant 1] (nisi tempore paschali)
+@Tempora/Pasc2-3::s/[\,\.] al.*$/./gmi
+
+[Invit] (nisi tempore paschali)
+@Tempora/Pasc2-3::s/[\,\.] al.*$/./gmi
+
+[Ant Matutinum]
+@Sancti/03-19
+
+[Nocturn 1 Versum] (nisi tempore paschali)
+@Tempora/Pasc2-3::s/[\,\.] al.*$/./gmi
+
+[Nocturn 2 Versum] (nisi tempore paschali)
+@Tempora/Pasc2-3::s/[\,\.] al.*$/./gmi
+
+[Nocturn 3 Versum] (nisi tempore paschali)
+@Tempora/Pasc2-3::s/[\,\.] al.*$/./gmi
+
+[Responsory1] (nisi tempore paschali)
+@Tempora/Pasc2-3::s/[\,\.] al.*$/./gmi
+
+[Responsory2] (nisi tempore paschali)
+@Tempora/Pasc2-3::s/[\,\.] al.*$/./gmi
+
+[Responsory3] (nisi tempore paschali)
+@Tempora/Pasc2-3::s/[\,\.] al.*$/./gmi
+
+[Lectio4]
+Sermo sancti Bernárdi Abbátis
+!Homil. 2 super Missus
+Desponsáta est María Joseph, vel potius (sicut ponit Evangelista) viro, cui nomen erat Joseph: virum nominat, non quia maritus, sed quod homo virtútis erat: vel potius quia juxta alium Evangelístam, non vir simpliciter, sed vir ejus dictus est, merito appellatur, quod necessario putatur. Debuit ergo vir ejus appellari, quia necesse fuit et putari: sicut et pater Salvatoris non quidem esse, sed dici meruit, ut putaretur esse, dicente hoc ipso Evangelista: Et ipse Jesus erat incipiens quasi annorum triginta, ut putabcitur, filius Joseph.
+
+[Responsory4] (nisi tempore paschali)
+@Tempora/Pasc2-3::s/[\,\.] al.*$/./gmi
+
+[Lectio5]
+Non est dúbium, quin bonus et fidelis homo fiierit iste Joseph, cui Mater desponsata est Salvatoris. Fidelis, inquam, servus et prudens, quem constituit Dominus suae Matris solatium, suae carnis nutritium, solum denique in terris magni consilii coadjutorem fidelissimum. Huc accedit, quod dicitur fuisse de domo David. Vere enim de domo David. Vere de regia stirpe descendit vir iste Joseph, nobilis genere, mente nobilior. Plane filius David, non degenerans a patre suo David; prorsus, inquam, filius David, non tantum carne, sed fide, sed sanctitate, sed devotione, quem tamquam alterum David Dominus invenit seciindum cor suum, cui tuto comitteret sacratissimum atque secretissimum sui cordis arcanum: cui, tamquam alteri David, incerta et occúlta sapientiae suae manifestavit, et dedit illi non ignarum esse mysterii, quod nemo principum hujus sseculi agnovit.
+
+[Responsory5] (nisi tempore paschali)
+@Tempora/Pasc2-3::s/[\,\.] al.*$/./gmi
+
+[Lectio6]
+Cui denique datum est, quod multi reges et prophetae cum vellent videre, non viderunt, audire et non audierunt, non solum videre et audire, sed etiam portare, dedúcere, amplecti, deosculari, et nutrire et custodire. Non tantum autem Joseph, sed et Maria descendisse credenda est de domo David: alioquin non esset desponsata viro de domo David, si non esset et ipsa de domo David. Amboigitur erant de domo David: sed in altera completa est veritas, quam juravit Dominus David, altero tamen conscio et teste adimpletae promissionis.
+
+[Responsory6] (nisi tempore paschali)
+@Tempora/Pasc2-3::s/[\,\.] al.*$/./gmi
+
+[Lectio7]
+@Tempora/Pasc2-3::1-4
+!Lib. 23, contra Faust. cap. 7. 8.
+Sic de cœlo dictum est super aquam Jordanis: Hic est Filius meus dilectus, in quo mihi bene complacui: quemadmodum dictum est et in monte. Neque enim quia et ibi de coelo vox ipsa sonuit, Filius Dei ante non fuit: quando quidem ex litero Virginis ille accepit formam servi, qui cum in forma Dei esset, non rapinam arbitratus est, esse se aequalem Deo. Denique idem Apostolus Paulus alio loco apertissime dicit: Cum autem venit plenitudo temporis, misit Deus Filium suum factum ex rauliere, factum sub lege, ut eos, qui sub lege erant, redimeret, ut filiorum adoptionem reciperemus. Ipse ergo est Filius Dei, qui et Dóminus David secúndum divinitatem, et idem ipse Filius David ex semine David secúndum carnem.
+
+[Responsory7] (nisi tempore paschali)
+@Tempora/Pasc2-3::s/[\,\.] al.*$/./gmi
+
+[Lectio8]
+Quod si nobis cr6dere non prodésset, non hoc tam attente idem Apostolus Timotheo comendaret dicens: Memoresto Christum Jesum resurrexisse a mortuis, ex semine David, secúndum Evangelium meum. Quid ergo jam moveat sancti Evangelii sectatorem, quod sine conciibitu Joseph Christus natus ex Virgine, filius tamen David appellatur, cum generationum seriem non usque ad Mariam, sed usque ad Joseph Matthaeus Evangelista perdticat? Primo quia mariti ejus fiierat propter virilem sexum pótius honoranda persona: neque enim quia conciibitu non permixtus, ideo non maritus, cum ipse Matthaeus narret ab Angelo Mariam conjugem ipsius appellatam, qui narrat, quod de Spiritu sancto conceperat.
+
+[Responsory8] (nisi tempore paschali)
+@Tempora/Pasc2-3::s/[\,\.] al.*$/./gmi
+
+[Lectio9]
+Cum vero unus idemque narrator utrúmque dicat, utrúmque commendet, et virum Mariae Joseph, et Christi Virginem Matrem, et Christum ex semine David, et Joseph in serie progeneratorum Christi ex David: quid restat, nisi et Mariam non fuisse extraneam a cognatione David, et eam Joseph conjugem non frustra appellatam propter órdinem sexus et animorum confoederationem; et Joseph potius propter dignitatem virilem ab ordine generationum illarum non fuisse separandum, ne hoc ipso viderétur ab illa femina separatus, cui eum conjungebat mentis affectus?
+
+[Versum 2] (nisi tempore paschali)
+@Tempora/Pasc2-3::s/[\,\.] al.*$/./gmi
+
+[Ant 2] (nisi tempore paschali)
+@Tempora/Pasc2-3::s/[\,\.] al.*$/./gmi
+
+[Responsory Breve Tertia] (nisi tempore paschali)
+@Sancti/03-19
+
+[Versum Tertia] (nisi tempore paschali)
+@:Nocturn 1 Versum
+
+[Responsory Breve Sexta] (nisi tempore paschali)
+R.br. Confitébor * Nómini tuo.
+R. Confitébor * Nómini tuo.
+V. Quóniam adjútor et protéctor factus es mihi.
+R. Nómini tuo.
+&Gloria
+R. Confitébor * Nómini tuo.
+
+[Versum Sexta] (nisi tempore paschali)
+@Sancti/03-19:Nocturn 3 Versum
+
+[Responsory Breve Nona] (nisi tempore paschali)
+@Sancti/03-19
+
+[Versum Nona] (nisi tempore paschali)
+@Sancti/03-19
+
+[Versum 3] (nisi tempore paschali)
+@Tempora/Pasc2-3::s/[\,\.] al.*$/./gmi
+
+[Ant 3] (nisi tempore paschali)
+@Tempora/Pasc2-3::s/[\,\.] al.*$/./gmi
+
+[Introitus] (nisi tempore paschali)
+@Tempora/Pasc2-3::s/[\,\.] al.*$/./gmi
+
+[Graduale]
+!Ps 20:4-5
+Dómine, prævenísti eum in benedictiónibus dulcédinis: posuísti in cápite ejus corónam de lápide pretióso.
+V. Vitam pétiit a te, et tribuísti ei longitúdinem diérum in sǽculum sǽculi.
+Allelúja, allelúja.
+V. Fac nos innócuam, Joseph, decúrrere vitam: sitque tuo semper tuta patrocínio. Allelúja.
+
+[Tractus]
+!Ps 20:4-5
+Dómine, prævenísti eum in benedictiónibus dulcédinis: posuísti in cápite ejus corónam de lápide pretióso.
+V. Vitam pétiit a te, et tribuísti ei longitúdinem diérum in sǽculum sǽculi.
+_
+!Tractus Ps 111:1-3
+Beátus vir, qui timet Dóminum: in mandátis ejus cupit nimis.
+V. Potens in terra erit semen ejus: generátio rectórum benedicétur.
+V. Glória et divítiæ in domo ejus: et justítia ejus manet in sǽculum sǽculi.
+
+[Offertorium] (nisi tempore paschali)
+@Tempora/Pasc2-3::s/[\,\.] al.*$/./gmi
+
+[Communio] (nisi tempore paschali)
+@Tempora/Pasc2-3::s/[\,\.] al.*$/./gmi

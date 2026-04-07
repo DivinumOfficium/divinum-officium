@@ -595,7 +595,8 @@ sub occurrence {
     {
       my %scrip = %{officestring('Latin', $tname)};
 
-      if ( !(exists($saint{"Lectio1"}) && ($saint{Rule} !~ /Lectio1 Quad/i || $tname =~ /Quad(\d|p3\-[3456])/i))
+      if (
+           !(exists($saint{"Lectio1"}) && ($saint{Rule} !~ /Lectio1 Quad/i || $tname =~ /Quad(\d|p3\-[3456])/i))
         && exists($scrip{Lectio1})
         && $scrip{Lectio1} !~ /evangelii/i
         && ( $saint{Rank} !~ /\;\;ex /
@@ -1700,15 +1701,7 @@ sub precedence {
     }
   }
 
-  #Epiphany days for 1955|1960
-  #if ($version =~ /(1955|1960)/ && $month == 1 && $day > 6 && $day < 13 && $winner{Rank} =~ /Die/i	&&
-  #		exists($scriptura{Rank}))
-  #	{$winner{Rank} = $scriptura{Rank}; $winner2{Rank} = $scriptura2{Rank};}
-
-  #no transfervigil if emberday
-  #if ( $winner{Rank} =~ /Quat[t]*uor/i
-  #|| $commemoratio{Rank} =~ /Quat[t]*uor/i
-  #|| $scriptura{Rank} =~ /Quat[t]*uor/i)
+  # no transfervigil if emberday
   if (emberday()) {
     $transfervigil = '';
   }
@@ -1723,8 +1716,6 @@ sub precedence {
 
       if ($a[0] =~ /$b[0]/i) {
         $commune{Responsory7} = $commune{Responsory7c};
-
-        # $commune2{Responsory7} = $commune2{Responsory7c};
       }
     }
 
@@ -1735,33 +1726,61 @@ sub precedence {
     }
 
     if ($winner{Rank} =~ /\;\;ex\s/
-      || ($version =~ /Trident/i && $rank =~ /\;\;(ex|vide)/i && $duplex > 1))
+      || ($version =~ /Trident/i && $winner{Rank} =~ /\;\;(ex|vide)/i && $duplex > 1))
     {
       $communerule = $commune{Rule};
     }
   }
 
   if (my $vtv = $votive ne 'Hodie' ? $votive : '') {
-    if ($vtv =~ /C12/i && $version !~ /cist/i) {
-      if ( ($month == 12 && ($day == 24 && $hora =~ /Vespera|Completorium/ || ($day > 24)))
-        || $month == 1
-        || ($month == 2 && $day < 3))
-      {
-        $vtv = 'C12N';
-      } elsif ($dayname[0] =~ /adv/i || ($winner =~ /03-25/i && $version !~ /Praedicatorum/)) {
-        $vtv = 'C12A';
-      } elsif ($dayname[0] =~ /(Quadp|Quad)/i && $version !~ /Praedicatorum/) {
-        $vtv = 'C12Q';
+    if ($vtv =~ /C12/i) {
+
+      # C12: Officium parvum BMV
+      # Redirection for Advent, Nativitytide (post partum), and post Septuag.
+      unless ($version =~ /cist/i) {
+        if ( ($month == 12 && ($day == 24 && $hora =~ /Vespera|Completorium/ || ($day > 24)))
+          || $month == 1
+          || ($month == 2 && $day < 3))
+        {
+          $vtv = 'C12N';
+        } elsif ($dayname[0] =~ /adv/i || ($winner =~ /03-25/i && $version !~ /Praedicatorum/)) {
+          $vtv = 'C12A';
+        } elsif ($dayname[0] =~ /(Quadp|Quad)/i && $version !~ /Praedicatorum/) {
+          $vtv = 'C12Q';
+        }
       }
-    } elsif ($dayname[0] =~ /Pasc/ && $vtv =~ /C[1-3]/) {
-      $vtv .= 'p';
+      $commemoratio = $commemoratio1 = $cwinner = $scriptura = $commune = '';
+      %commemoratio = %commemoratio1 = %cwinner = %scriptura = %commune = {};
+      @commemoentries = @ccommemoentries = ();
+    } else {
+
+      # Redirections for Paschaltide and Votive offices
+      $vtv .= 'p' if ($dayname[0] =~ /Pasc/ && $vtv =~ /C[1-3]/);    # Enable Commune T.P.
+      $vtv =~ s/^V/Votiva\/V/;                                       # Re-direct to subdirectory for Votive offices
+
+      if ($commemoratio =~ /Tempora/) {
+
+        # Keep the 9th lesson from the Sunday or Feria (typically in Lent)
+        push(@commemoentries, $winner);
+      } else {
+
+        # Put the Sanctoral winner of the day as first to be commemorated.
+        unshift(@commemoentries, $winner);
+        $commemoratio = $winner;
+        %commemoratio = %winner;
+      }
     }
+
+    # Update winner, rule, and rank information
     $winner = subdirname('Commune', $version) . "$vtv.txt";
-    $commemoratio = $commemoratio1 = $cwinner = $scriptura = $commune = '';
     %winner = %{setupstring($lang1, $winner)};
-    %commemoratio = %commemoratio1 = %cwinner = %scriptura = %commune = {};
-    @commemoentries = @ccommemoentries = ();
     $rule = $winner{Rule};
+
+    if ($winner{Rank}) {
+      my @vrank = split(';;', $winner{Rank});
+      $rank = $vrank[2];
+      $duplex = $vrank[1] !~ /duplex/i ? 1 : $vrank[1] =~ /semiduplex/i ? 2 : 3;
+    }
 
     if ($vtv =~ /C12/i) {
       $commune = subdirname('Commune', $version) . "C11.txt";
@@ -1769,7 +1788,7 @@ sub precedence {
       %commune = %{setupstring($lang1, $commune)};
     } else {
 
-      if ($version =~ /^Trident|^Divino/i) {
+      if ($version =~ /^Trident|^Divino/i && $vtv !~ /Votiva/) {
 
         # Make Votive Matutinum fully Sanctoral (Duplex, 3 Nocturns) irrespective of rank of the day
         $rule .= "\n9 lectiones";
