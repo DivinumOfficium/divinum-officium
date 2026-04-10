@@ -1,56 +1,63 @@
+# --- STAGE 1: Build Info (Adopted from Master) ---
 FROM public.ecr.aws/docker/library/alpine:latest AS gitinfo
-
 RUN apk add git
 COPY .git /build/
 WORKDIR /build
 
-# Write build info to be available at $url/buildinfo
-RUN echo "{" > /build/buildinfo
-RUN echo "  \"build-date\": \"`date +%s`\"," >> /build/buildinfo
-RUN echo "  \"build-date-human\": \"`date`\"," >> /build/buildinfo
-RUN echo "  \"commit\": \"`git rev-parse HEAD`\"," >> /build/buildinfo
-RUN echo "  \"branch\": \"`git rev-parse --abbrev-ref HEAD`\"" >> /build/buildinfo
-RUN echo "}" >> /build/buildinfo
+RUN echo "{" > /build/buildinfo && \
+    echo "  \"build-date\": \"$(date +%s)\"," >> /build/buildinfo && \
+    echo "  \"build-date-human\": \"$(date)\"," >> /build/buildinfo && \
+    echo "  \"commit\": \"$(git rev-parse HEAD)\"," >> /build/buildinfo && \
+    echo "  \"branch\": \"$(git rev-parse --abbrev-ref HEAD)\"" >> /build/buildinfo && \
+    echo "}" >> /build/buildinfo
 
-# Final container
+# --- STAGE 2: Final Container (Optimized Plack Stack) ---
 FROM public.ecr.aws/docker/library/perl:5.42-slim AS final
+LABEL maintainer="Thomas Randall <thomas.james.randall@gmail.com>"
 
-# Set envs
-ENV APACHE_RUN_USER=www-data \
-    APACHE_RUN_GROUP=www-data \
-    APACHE_LOCK_DIR=/var/lock/apache2 \
-    APACHE_LOG_DIR=/var/log/apache2 \
-    APACHE_PID_FILE=/var/run/apache2/apache2.pid \
-    APACHE_SERVER_NAME=localhost
-
-# Install packages
-RUN apt-get update && apt-get install -y \
+# 1. System dependencies 
+# Added build-essential and libperl-dev to fix the 'exit code 1' compilation error
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    libperl-dev \
+    libssl-dev \
+    zlib1g-dev \
+    libcgi-pm-perl \
+    perl-modules \
     curl \
     wget \
-    apache2 \
-    libcgi-session-perl \
     && rm -rf /var/lib/apt/lists/*
 
-# Get dumb-init to use a proper init system
+# 2. Plack Stack
+RUN cpanm --notest \
+    Plack Starman Plack::App::CGIBin CGI::Compile CGI::Emulate::PSGI CGI CGI::Session
+
+# 3. Process management
 RUN wget -O /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.2.2/dumb-init_1.2.2_amd64 && \
     chmod +x /usr/local/bin/dumb-init
 
-# Load config files
-COPY docker/apache/ports.conf /etc/apache2/ports.conf
-COPY docker/apache/apache2.conf /etc/apache2/apache2.conf
-
-# Set permissionsso apache can write to logs without root
-RUN mkdir -p /var/run/apache2 /var/lock/apache2 /var/log/apache2 ; chown -R www-data:www-data /var/lock/apache2 /var/log/apache2 /var/run/apache2
-
-# Copy in code
+# 4. Set Workdir
 WORKDIR /var/www
-COPY --chown=www-data:www-data web /var/www/web
 
-# Write build info to be available at $url/buildinfo
+# 5. Copy code and FORCE PERMISSIONS
+COPY web /var/www/web
+COPY app.psgi /var/www/app.psgi
+
+# Integrate the buildinfo from Stage 1
 COPY --from=gitinfo /build/buildinfo /var/www/web/buildinfo
 
-# Expose default port
-EXPOSE 80
+# Standardize permissions for the www-data user
+RUN find /var/www/web -type d -exec chmod 755 {} + && \
+    find /var/www/web -type f -exec chmod 644 {} + && \
+    find /var/www/web/cgi-bin -type f -name "*.pl" -exec chmod +x {} + && \
+    chown -R www-data:www-data /var/www
+
+# 6. Internalize URLs (The Sledgehammer)
+RUN grep -rl 'divinumofficium.com' /var/www/web | xargs sed -i 's|http[s]*://divinumofficium.com/|/|g'
+
+# Run as unprivileged user for Cloud Run security
+USER www-data
+EXPOSE 8080
 
 ENTRYPOINT ["/usr/local/bin/dumb-init", "--"]
-CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]
+CMD ["starman", "--port", "8080", "--workers", "5", "/var/www/app.psgi"]
