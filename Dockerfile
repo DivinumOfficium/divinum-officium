@@ -12,12 +12,12 @@ RUN echo "{" > /build/buildinfo && \
     echo "  \"branch\": \"$(git rev-parse --abbrev-ref HEAD)\"" >> /build/buildinfo && \
     echo "}" >> /build/buildinfo
 
-# --- STAGE 2: Final Container (Your Plack Stack) ---
-# Using the 5.42-slim base from master but adding your dependencies
+# --- STAGE 2: Final Container (Optimized Plack Stack) ---
 FROM public.ecr.aws/docker/library/perl:5.42-slim AS final
 LABEL maintainer="Thomas Randall <thomas.james.randall@gmail.com>"
 
-# 1. System dependencies
+# 1. System dependencies 
+# build-essential and libperl-dev are CRITICAL for Starman/XS compilation on slim images
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     libperl-dev \
@@ -29,22 +29,22 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget \
     && rm -rf /var/lib/apt/lists/*
 
-# 2. Your Plack Stack
+# 2. Plack Stack
 RUN cpanm --notest \
     Plack Starman Plack::App::CGIBin CGI::Compile CGI::Emulate::PSGI CGI CGI::Session
 
-# 3. dumb-init
+# 3. Process management
 RUN wget -O /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.2.2/dumb-init_1.2.2_amd64 && \
     chmod +x /usr/local/bin/dumb-init
 
 # 4. Set Workdir
 WORKDIR /var/www
 
-# 5. Copy and FORCE PERMISSIONS
+# 5. Copy code and FORCE PERMISSIONS
 COPY web /var/www/web
 COPY app.psgi /var/www/app.psgi
 
-# Copy build info from Stage 1 (Adopted from Master)
+# Copy build info from Stage 1
 COPY --from=gitinfo /build/buildinfo /var/www/web/buildinfo
 
 # Ensure directories are accessible (755) and files are readable (644)
@@ -53,7 +53,7 @@ RUN find /var/www/web -type d -exec chmod 755 {} + && \
     find /var/www/web/cgi-bin -type f -name "*.pl" -exec chmod +x {} + && \
     chown -R www-data:www-data /var/www
 
-# 6. Your "Sledgehammer" Path Fix
+# 6. Internalize URLs (Sledgehammer fix)
 RUN grep -rl 'divinumofficium.com' /var/www/web | xargs sed -i 's|http[s]*://divinumofficium.com/|/|g'
 
 USER www-data
