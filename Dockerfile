@@ -57,7 +57,7 @@ RUN grep -rl 'divinumofficium.com' /var/www/web | xargs sed -i 's|http[s]*://div
 
 # Run as unprivileged user for Cloud Run security
 USER www-data
-EXPOSE 8080
+EXPOSE 80
 
 ENTRYPOINT ["/usr/local/bin/dumb-init", "--"]
-CMD ["starman", "--port", "8080", "--workers", "5", "/var/www/app.psgi"]
+CMD ["starman", "--port", "80", "--workers", "5", "/var/www/app.psgi"]
