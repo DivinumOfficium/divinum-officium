@@ -1,42 +1,40 @@
-FROM        perl:5.28-slim
-MAINTAINER  Ben Yanke <ben@benyanke.com>
+FROM        perl:5.38
+LABEL       maintainer="Thomas Randall <thomas.james.randall@gmail.com>"
 
-# Set envs
-ENV APACHE_RUN_USER www-data \
-    APACHE_RUN_GROUP www-data \
-    APACHE_LOCK_DIR /var/lock/apache2 \
-    APACHE_LOG_DIR /var/log/apache2 \
-    APACHE_PID_FILE /var/run/apache2/apache2.pid \
-    APACHE_SERVER_NAME localhost
-
-# Install packages
-RUN apt-get update && apt-get install -y \
-    curl \
-    wget \
-    apache2 \
-    libcgi-session-perl \
+# 1. System dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libssl-dev \
+    zlib1g-dev \
+    libcgi-pm-perl \
+    perl-modules \
     && rm -rf /var/lib/apt/lists/*
 
-# Get dumb-init to use a proper init system
+# 2. Plack Stack
+RUN cpanm --notest \
+    Plack Starman Plack::App::CGIBin CGI::Compile CGI::Emulate::PSGI CGI CGI::Session
+
+# 3. dumb-init
 RUN wget -O /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.2.2/dumb-init_1.2.2_amd64 && \
     chmod +x /usr/local/bin/dumb-init
 
-# Load config files
-COPY docker/apache/ports.conf /etc/apache2/ports.conf
-COPY docker/apache/apache2.conf /etc/apache2/apache2.conf
-
-# Set permissionsso apache can write to logs without root
-RUN mkdir -p /var/run/apache2 /var/lock/apache2 /var/log/apache2 ; chown -R www-data:www-data /var/lock/apache2 /var/log/apache2 /var/run/apache2
-
-# Drop permissions - everything below here done without root
-USER www-data
-
-# Copy in code
+# 4. Set Workdir
 WORKDIR /var/www
-COPY --chown=www-data:www-data web /var/www/web
 
-# Expose default port
+# 5. Copy and FORCE PERMISSIONS
+# We do this as root first to ensure find/chmod works perfectly
+COPY web /var/www/web
+COPY app.psgi /var/www/app.psgi
+
+# Ensure directories are accessible (755) and files are readable (644)
+RUN find /var/www/web -type d -exec chmod 755 {} + && \
+    find /var/www/web -type f -exec chmod 644 {} + && \
+    find /var/www/web/cgi-bin -type f -name "*.pl" -exec chmod +x {} + && \
+    chown -R www-data:www-data /var/www
+
+# 6. Final setup
+RUN grep -rl 'divinumofficium.com' /var/www/web | xargs sed -i 's|http[s]*://divinumofficium.com/|/|g'
+USER www-data
 EXPOSE 8080
 
 ENTRYPOINT ["/usr/local/bin/dumb-init", "--"]
-CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]
+CMD ["starman", "--port", "8080", "--workers", "5", "/var/www/app.psgi"]
