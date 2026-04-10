@@ -1,10 +1,10 @@
 # --- STAGE 1: Build Info (Adopted from Master) ---
+# We keep this from master to ensure the team still gets their build metadata
 FROM public.ecr.aws/docker/library/alpine:latest AS gitinfo
 RUN apk add git
 COPY .git /build/
 WORKDIR /build
 
-# Write build info to be available at $url/buildinfo
 RUN echo "{" > /build/buildinfo && \
     echo "  \"build-date\": \"$(date +%s)\"," >> /build/buildinfo && \
     echo "  \"build-date-human\": \"$(date)\"," >> /build/buildinfo && \
@@ -17,7 +17,7 @@ FROM public.ecr.aws/docker/library/perl:5.42-slim AS final
 LABEL maintainer="Thomas Randall <thomas.james.randall@gmail.com>"
 
 # 1. System dependencies 
-# build-essential and libperl-dev are CRITICAL for Starman/XS compilation on slim images
+# Added build-essential and libperl-dev to fix the 'exit code 1' compilation error
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     libperl-dev \
@@ -44,18 +44,19 @@ WORKDIR /var/www
 COPY web /var/www/web
 COPY app.psgi /var/www/app.psgi
 
-# Copy build info from Stage 1
+# Integrate the buildinfo from Stage 1
 COPY --from=gitinfo /build/buildinfo /var/www/web/buildinfo
 
-# Ensure directories are accessible (755) and files are readable (644)
+# Standardize permissions for the www-data user
 RUN find /var/www/web -type d -exec chmod 755 {} + && \
     find /var/www/web -type f -exec chmod 644 {} + && \
     find /var/www/web/cgi-bin -type f -name "*.pl" -exec chmod +x {} + && \
     chown -R www-data:www-data /var/www
 
-# 6. Internalize URLs (Sledgehammer fix)
+# 6. Internalize URLs (The Sledgehammer)
 RUN grep -rl 'divinumofficium.com' /var/www/web | xargs sed -i 's|http[s]*://divinumofficium.com/|/|g'
 
+# Run as unprivileged user for Cloud Run security
 USER www-data
 EXPOSE 8080
 
