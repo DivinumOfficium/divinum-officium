@@ -1,0 +1,23 @@
+@Tempora/Quadp2-3
+
+[Lectio1]
+@Tempora/Quadp1-3::1-2:s/1-7/17-19/
+@Tempora/Quadp1-3:Lectio3:5-7
+
+[Lectio2]
+@Tempora/Quadp1-3:Lectio3:s/14-20/20-22/ s/14 .*20 /20 /s
+21 Fecit quoque Dóminus Deus Adæ et uxóri eius túnicas pellíceas, et índuit eos:
+22 Et ait: Ecce Adam quasi unus ex nobis factus est, sciens bonum et malum: nunc ergo ne forte mittat manum suam, et sumat étiam de ligno vitæ, et cómedat, et vivat in ætérnum.
+
+[Lectio3]
+23 Emísit eum Dóminus Deus de paradíso voluptátis, ut operarétur terram de qua sumptus est.
+24 Ejecítque Adam: et collocávit ante paradísum voluptátis Chérubim, et flámmeum gládium, atque versátilem, ad custodiéndam viam ligni vitæ.
+
+[Responsory1]
+@TemporaCist/Quadp1-0:Responsory7
+
+[Responsory2]
+@TemporaCist/Quadp1-0:Responsory8
+
+[Responsory3]
+@TemporaCist/Quadp1-0:Responsory9

@@ -1,0 +1,70 @@
+[AntMatutinumM]
+Læténtur * omnes, qui sperant in te, Dómine, † in ætérnum exsultábunt: et habitábis in eis. † Et gloriabúntur in te omnes qui díligent nomen tuum.;;5
+Dilígite * Dóminum, omnes sancti ejus, † quóniam veritátem requíret Dóminus.;;30
+Dómine, * Deus virtútum, beati omnes, qui sperant in te: † non privábis bonis eos, qui ámbulant in æquitáte: † in sǽcula sæculórum laudábunt te.;;83
+
+[Ant Matutinum 3N]
+Laudem dícite * Deo nostro omnes Sancti ejus: et qui timétis eum pusílli et magni: † quóniam regnávit Dóminus Deus noster omnípotens. † Gaudeámus, et exsultémus: et demus glóriam ei.
+
+[Ant Matutinum]
+@Sancti/11-01::1-2
+@:AntMatutinumM:1
+@Sancti/11-01::3-5
+@:AntMatutinumM:2
+@Sancti/11-01::6-8
+@:AntMatutinumM:3
+@Sancti/11-01::9
+;;259;254;255
+
+[Lectio2]
+@Sancti/11-01:Lectio1:2-9 s/2-// s/:8/:8, 5:1-5/ s/2 .*8 /8 /s
+@Sancti/11-01:Lectio2:s/!.*// s/6 .*//s
+
+[Lectio3]
+@Sancti/11-01:Lectio2:s/1-8/6-10/ s/1 .*6/6/s
+@Sancti/11-01:Lectio3:s/!.*// s/.11.*//s
+
+[Lectio4]
+@Sancti/11-01:Lectio3:s/9/11/ s/9.*11/11/s
+
+[Lectio5]
+@Sancti/11-01:Lectio4:s/dum cathólica .*//s
+
+[Lectio6]
+@Sancti/11-01:Lectio4:s/.* dum cathólica /Dum cathólica /s
+
+[Responsory8]
+R. Sanctíssime Conféssor Christi Benedícte monachórum Pater et Dux
+* Intercéde pro nostra omniúmque salúte.
+V. Devótæ plebi súbveni sancta intercessióne, † ut tuis adjúta précibus regna cæléstia consequátur.
+R. Intercéde pro nostra omniúmque salúte.
+
+[Responsory9]
+@Commune/C6:Responsory8
+
+[Lectio10]
+@Sancti/11-01:Lectio8:s/Sedens .*//s
+
+[Responsory10]
+R. Beáta vere mater Ecclésia quam sic honor divínæ dignatiónis illúminat, † quam victoriosórum gloriósus Mártyrum sanguis exórnat
+* Quam invioláta confessiónis cándida índuit virgínitas.
+V. Flóribus ejus nec rosæ nec lília desunt.
+R. Quam invioláta confessiónis cándida índuit virgínitas.
+
+[Lectio11]
+@Sancti/11-01:Lectio8:s/.* Sedens /Sedens /s
+
+[Responsory11]
+R. Beáti estis, Sancti Dei omnes, qui meruístis consórtes fíeri cæléstium virtútum, † et pérfrui ætérnæ claritátis glória:
+* Ideóque precámur, ut mémores nostri, † intercédere dignémini pro nobis ad Dóminum Deum nostrum.
+V. Gaudéte et exsultáte quóniam merces vestra multa est in cælis.
+R. Ideóque precámur, ut mémores nostri, † intercédere dignémini pro nobis ad Dóminum Deum nostrum.
+
+[Responsory12]
+R. Vidi Angelum ascendéntem ab ortu solis, habentem signum Dei vivi; † et clamávit voce magna quátuor Angelis, quibus datum est nocere terræ et mari, dicens: † Nolite nocére terræ et mari neque arbóribus, † quoadúsque signémus servos Dei nostri in fróntibus eórum.
+* Et audívi númerum signatórum centum quadragínta quátuor míllia signáti, † ex omni tribu filiórum Israël.
+V. Et vidébunt fáciem ejus, et nomen Patris ejus scriptum in fróntibus suis.
+R. Et audívi númerum signatórum centum quadragínta quátuor míllia signáti, † ex omni tribu filiórum Israël.
+
+[Ant Vespera 3]
+@Sancti/11-01:Ant Vespera:s/;;;;/;;109;;/ s/;;;;/;;111;;/ s/;;;;/;;112;;/ s/;;;;/;;115;;/

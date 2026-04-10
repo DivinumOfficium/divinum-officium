@@ -1,0 +1,5 @@
+[Lectio3]
+@Tempora/Pasc2-3::s/-49/-45/ s/ Wyjechał.*//s
+
+[Lectio4]
+@Tempora/Pasc2-3:Lectio3:s/44-/45-/ s/.* Wyjechał/45 Wyjechał/s

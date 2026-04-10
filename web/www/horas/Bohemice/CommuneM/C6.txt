@@ -1,0 +1,76 @@
+[AntMatutinumM]
+Rozlitý olej * je tvé jméno; proto si tě mladičké dívky velmi zamilovaly.;;96
+Krásná jsi a zdobná, * dcero Jerusalémská, hrozná jako seřazená šik vojska.;;97
+Opásala * silou svá bedra, a upevnila svou ruku; a proto její svítilna nikdy nevyhasne.;;98
+Uprostřed noci * se strhl křik: Hle, ženich přichází, vyjděte mu naproti.;;249;250;251
+
+[Lectio5]
+@Commune/C6:Lectio4:s/ Z nebe.*/ /
+
+[Lectio6]
+@Commune/C6:Lectio4:s/.* Z nebe/Z nebe/s s/$/~/s
+@Commune/C6:Lectio5:s/. Neboť .*/. /
+
+[Lectio7]
+@Commune/C6:Lectio5:s/.* Neboť /Neboť /
+
+[Lectio9]
+@Commune/C6:Lectio7:s/ Pohleďme.*//s
+
+[Lectio10]
+@Commune/C6:Lectio7:s/.*Pohleďme/Pohleďme/s s/$/~/
+@Commune/C6:Lectio8:s/ Měli.*//s
+
+[Lectio11]
+@Commune/C6:Lectio8:s/.*Měli/Měli/s
+
+[Responsory12]
+R. Podobné je království nebeské deseti Pannám, jež vzaly své svítilny,
+* A vyšli vstříc ženichovi a nevěstě.
+V. Pět z nich ovšem bylo pošetilých, a pět moudrých.
+R. Exiérunt óbviam sponso et sponsæ
+
+[MM Capitulum]
+@Commune/C7:Capitulum Sexta
+_
+V. Zamilovala sis spravedlnost a v nenávisti máš nepravost;
+R. Proto tě Bůh, tvůj Bůh, pomazal olejem radosti.
+
+[Lectio7 in 2 loco]
+@Commune/C6:Lectio5 in 2 loco:s/.* est. S/S/ s/$/~/s
+@Commune/C6:Lectio6 in 2 loco:s/. Neque.*/. /
+
+[Lectio8 in 2 loco]
+@Commune/C6:Lectio6 in 2 loco:s/.*t. Neque /Neque /
+(sed rubrica cisterciensis)
+@Commune/C6:Lectio6 in 2 loco:s/.* Pán totiž/Pán totiž/
+
+[Lectio9 in 3 loco]
+@Commune/C6:Lectio7 in 3 loco:s/ Těmito slovy.*//s
+
+[Lectio10 in 3 loco]
+@Commune/C6:Lectio7 in 3 loco:s/.*Těmito slovy/Těmito slovy/s s/$/~/
+@Commune/C6:Lectio8 in 3 loco:s/ Nyní tedy.*//s
+
+[Lectio11 in 3 loco]
+@Commune/C6:Lectio8 in 3 loco:s/.*Nyní tedy/Nyní tedy/s
+
+[Lectio9 in 6 loco]
+Čtení svatého Evangelia podle Matouše
+!Mat. 25:1-13
+Za onoho času řekl Ježíš svým učedníkům toto podobenství: Podobné bude království nebeské deseti pannám, které vzaly své lampy a vyšly naproti ženichovi a nevěstě. A další.
+_
+Homilie svatého Jana Zlatoústého.
+!Homilie 79. na Matouše.
+Pán řekl veliké věci o panenství: „někteří nežijí v manželství, protože se ho sami vzdali pro království nebeské,“ a „kdo může pochopit, pochop.“ A dobře věděl, že panenství je chováno mezi lidmi ve velké úctě, neboť je to věc nadpřirozeně vznešená. Víme však, že ani ve starém Zákoně je dávní svatí muži nepěstovali, ani v novém Zákoně není žádným zákonem přikázáno jako nutnost. Pán tedy panenství nenařídil, nýbrž svým věrným je dovolil, pokud si tak budou přát.
+
+[Lectio10 in 6 loco]
+Protože tedy panenství byla velká věc a u mnohých bylo chováno ve velké úctě, řekl Pán toto podobenství, aby ten, kdo žije v čistotě, se nepovažoval za zcela dokonalého a ostatní věci nezanedbával. Aby ukázal, že panenství, i když má všechno ostatní, pokud chybí dobra milosrdenství, bude onen člověk zavržen spolu s cizoložníky. A zaslouženě se tak stane takovému nemilosrdnému nelidovi. Cizoložník je totiž přemožen touhou po těle, tento však touhou po penězích.	
+	
+
+[Lectio11 in 6 loco]
+Touha tělesná však není rovna touze po penězích, ale ta tělesná je mnohem ostřejší a naléhavější. Když bojujeme se slabším nepřítelem, o to méně jsme hodni smilování, pokud jsme přemoženi. Proto Pán nazývá ony panny pošetilými, protože poté, co zvítězily ve větším boji, v tom snadnějším vše ztratily.	
+	
+
+[Lectio12 in 6 loco]
+Samotné lampy Pán na tomto místě nazývá příbytkem panenství a posvátnou čistotou, olej pak dobrotou a almužnou, vydanou na pomoc potřebným. Když se ženich zpozdil, na všechny padla ospalost a usnuli. Pán tím ukázal, že mezitím neuplynulo zrovna málo času, aby učedníky, kteří očekávali, že jeho království přijde brzy, odvedl od tohoto názoru. Oni v to totiž doufali, třebaže to Pán často popíral.

@@ -1,9 +1,5 @@
-[Rank]
-S. Gulielmi Abbatis;;Duplex;;3;;vide C4c
-
-[Rule]
-vide C4c;
-Gloria
+[Officium]
+Św. Wilhelma Opata
 
 [Comment]
 # 25 VI – Św. Wilhelma, Opata
@@ -13,30 +9,27 @@ Gloria
 
 Msza wspólna nr 23 Os iusti, z wyjątkiem kolekty
 
+[Name]
+Wilhelma
+
 [Introitus]
-@Commune/C4c:Introitus
+@Commune/C5b:Introitus
 
 [Oratio]
 Boże, który dla ułatwienia drogi zbawienia zapewniłeś naszej słabości przykład i pomoc w swoich Świętych, daj nam tak czcić zasługi św. Opata Wilhelma, byśmy pozyskali jego orędownictwo i zdążali jego śladami.
 $Per Dominum
 
 [Lectio]
-@Commune/C4c:Lectio
+@Commune/C5b:Lectio
 
 [Graduale]
-@Commune/C4c:Graduale
+@Commune/C5b:Graduale
 
 [Evangelium]
-@Commune/C4c:Evangelium
+@Commune/C5b:Evangelium
 
 [Offertorium]
-@Commune/C4c:Offertorium
-
-[Secreta]
-@Commune/C4c:Secreta
+@Commune/C5b:Offertorium
 
 [Communio]
-@Commune/C4c:Communio
-
-[Postcommunio]
-@Commune/C4c:Postcommunio
+@Commune/C5b:Communio

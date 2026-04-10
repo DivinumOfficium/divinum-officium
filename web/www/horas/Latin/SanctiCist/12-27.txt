@@ -1,0 +1,100 @@
+@Sancti/12-27
+
+[Rule]
+12 lectiones
+
+[Invit]
+@SanctiOP/12-27
+
+[Lectio1]
+@Sancti/12-27:Lectio1:s/-5/-3/ s/4 .*//s
+
+[Lectio2]
+@Sancti/12-27:Lectio1:s/.*// s/-5/-7/ s/1-/4-/ s/^1 .*4 /4 /sm
+@Sancti/12-27:Lectio2:s/!.*// s/8 .*//s
+
+[Lectio3]
+@Sancti/12-27:Lectio2:s/6-/8-/ s/6 .*8 /8 /s
+
+[Lectio4]
+@Sancti/12-27:Lectio3
+
+[Responsory1]
+@Sancti/12-27:Responsory4
+
+[Responsory2]
+@Sancti/12-27::1-2
+V. Qui testimónium pérhibuit verbo Dei, et testimónium Jesu Christi, quæcúmque vidit.
+@Sancti/12-27::4
+
+[Responsory3]
+@Sancti/12-27:Responsory1:1-2
+V. Múlier, ecce fílius tuus; ad discípulum autem: Ecce Mater tua.
+@Sancti/12-27:Responsory1:4
+
+[Responsory4]
+@SanctiM/12-27:Responsory8
+
+[Lectio5]
+@Sancti/12-27:Lectio4
+
+[Responsory5]
+@SanctiOP/12-27:Responsory6
+
+[Lectio6]
+@Sancti/12-27:Lectio5:s/Interfécto .*//s
+
+[Responsory6]
+@Sancti/12-27:Responsory5
+
+[Lectio7]
+@Sancti/12-27:Lectio5:s/.* Interfécto /Interfécto /s
+
+[Responsory7]
+@SanctiM/12-27:Responsory4:s/Pósui/Ponam/
+
+[Lectio8]
+@Sancti/12-27:Lectio6
+
+[Responsory8]
+@Sancti/12-27:Responsory7
+
+[Lectio9]
+@Sancti/12-27:Lectio7:s/Una declínat .*//s
+
+[Responsory9]
+@Sancti/12-27:Responsory8:1:s/(qui|jenž|který|who) .*//
+@Sancti/12-27:Responsory1:2
+@Sancti/12-27:Responsory1:1:s/R\. /V. /
+@Sancti/12-27:Responsory1:4
+
+[Lectio10]
+@Sancti/12-27:Lectio7:s/.* Una declínat /Una declínat /s s/$/~/
+@Sancti/12-27:Lectio8:s/Una flagellátur .*//s
+
+[Responsory10]
+@Sancti/12-27:Responsory3
+
+[Lectio11]
+@Sancti/12-27:Lectio8:s/.* Una flagellátur /Una flagellátur /s s/$/~/
+@Sancti/12-27:Lectio9:s/Tota .*//s
+
+[Responsory11]
+R. Virgo est eléctus a Dómino atque inter céteros magis diléctus, † qui supra pectus ejus recúmbens Evangélii fluénta de ipso sacro domínici péctoris fonte potávit, et verbi Dei grátiam 
+* In toto terrárum orbe diffúdit.
+V. Quasi unus ex paradísi flumínibus Evangelísta Joánnes verbi Dei grátiam,
+R. In toto terrárum orbe diffúdit.
+
+[Lectio12]
+@Sancti/12-27:Lectio9:s/.* Tota /Tota /s
+
+[Responsory12]
+@Sancti/12-27:Responsory6:1-2
+V. Misit Dóminus manus suam, et tétigit os ejus:
+@Sancti/12-27:Responsory6:4
+
+[Evangelium]
+@Sancti/12-27
+
+[Ant Vespera 3]
+@Sancti/12-27:Ant Laudes:s/$/_/gm s/_/;;109/ s/_/;;112/ s/_/;;115/ s/_/;;125/ s/_//

@@ -1,0 +1,10 @@
+[Lectio1]
+@Tempora/Quad2-1::s/V Žalmech .*//
+
+[Lectio2]
+@Tempora/Quad2-1:Lectio1:s/.* (V Žalmech)/$1/s s/$/~/
+@Tempora/Quad2-1:Lectio2:s/Co tedy .*//
+
+[Lectio3]
+@Tempora/Quad2-1:Lectio2:s/.* (Co tedy)/$1/ s/$/~/
+@Tempora/Quad2-1:Lectio3:s/Předpověděl .*//

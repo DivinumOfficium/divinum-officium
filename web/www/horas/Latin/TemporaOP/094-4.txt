@@ -1,0 +1,25 @@
+@Tempora/094-4
+
+[Lectio1]
+@Tempora/094-3::1-5 s/ induítque.*/./
+
+[Responsory1]
+@TemporaOP/093-0
+
+[Lectio2]
+@Tempora/094-3::1
+@Tempora/094-3:Lectio1:5 s/.* (induítque)/3 \u$1/
+4 Cui étiam Dóminus cóntulit splendórem: quóniam omnis ista composítio non ex libídine, sed ex virtúte pendébat: et ídeo Dóminus hanc in illam pulchritúdinem ampliávit, ut incomparábili decóre ómnium óculis apparéret.
+
+[Responsory2]
+@TemporaOP/093-1
+
+[Lectio3]
+!Jdt 10:5-
+5 Impósuit ítaque abræ suæ ascopéram vini, et vas ólei, et poléntam, et pálathas, et panes, et cáseum, et profécta est.
+6 Cumque veníssent ad portam civitátis, invenérunt exspectántem Ozíam et presbýteros civitátis.
+7 Qui cum vidíssent eam, stupéntes miráti sunt nimis pulchritúdinem ejus.
+8 Nihil tamen interrogántes eam, dimisérunt transíre.
+
+[Responsory3]
+@TemporaOP/093-0:Responsory2

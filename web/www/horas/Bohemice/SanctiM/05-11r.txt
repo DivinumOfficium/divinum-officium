@@ -1,0 +1,33 @@
+[Lectio5]
+@Sancti/05-01:Lectio4
+
+[Lectio6]
+@Sancti/05-01:Lectio5:s/Cum autem .*//s
+
+[Lectio7]
+@Sancti/05-01:Lectio5:s/.* Cum autem /Cum autem /s
+
+[Lectio8]
+@Sancti/05-01:Lectio6
+
+[Lectio9]
+@Sancti/05-01:Lectio7:s/Créditis, .*//s
+
+[Lectio10]
+@Sancti/05-01:Lectio7:s/.* Créditis, /Créditis, /s s/$/~/
+@Sancti/05-01:Lectio8:s/Sed quid .*//s
+
+[Lectio11]
+@Sancti/05-01:Lectio8:s/.* Sed quid /Sed quid /s
+
+[Lectio12]
+@Sancti/05-01:Lectio9
+
+[Responsory12]
+R. Tak dlouho jsem s vámi, a vy jste mě nepoznali?
+* Filipe, kdo vidí mě, vidí i mého Otce, alleluja: † Nevěříte, že já jsem v Otci a Otec ve mě? † alleluja, alleluja.
+V. Pane, ukaž nám Otce, a bude nám to stačit.
+R. Filipe, kdo vidí mě, vidí i mého Otce, alleluja: † Nevěříte, že já jsem v Otci a Otec ve mě? † alleluja, alleluja.
+
+[Evangelium]
+@Sancti/05-01

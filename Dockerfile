@@ -1,5 +1,4 @@
 # --- STAGE 1: Build Info (Adopted from Master) ---
-# We keep this from master to ensure the team still gets their build metadata
 FROM public.ecr.aws/docker/library/alpine:latest AS gitinfo
 RUN apk add git
 COPY .git /build/

@@ -1,0 +1,56 @@
+@Tempora/Nat30
+
+[Officium] (rubrica 1963)
+Die VI infra Octavam Nativitatis
+
+[Rank] (rubrica 1963)
+;;Semiduplex II classis;;5;;ex Sancti/12-25
+
+[Rule]
+Psalmi Dominica
+Antiphonas horas
+
+[Ant Matutinum]
+@TemporaM/Nat1-0tt
+
+[Lectio1]
+@Tempora/Nat30:Lectio7
+
+[Responsory1]
+@SanctiM/12-25:Responsory11
+
+[Lectio2]
+@Tempora/Nat30:Lectio8
+
+[Responsory2]
+@Sancti/12-25:Responsory8:1-2
+@SanctiM/12-25:Responsory11:1 s/^R./V./
+@Sancti/12-25:Responsory8:4
+
+[Lectio3]
+@Tempora/Nat30:Lectio9
+
+[Responsory3]
+@Tempora/Nat1-0:Responsory8
+
+[MM Capitulum]
+@Psalterium/Special/Matutinum Special:MM Capitulum Nat:1-4
+@Sancti/12-25:Versum 2
+
+[Commemoratio 2] (rubrica altovadensis)
+@Sancti/12-25:Octava
+
+[Commemoratio 2] (rubrica tridentina nisi rubrica altovadensis)
+@Sancti/12-25:Octava
+@Sancti/12-26:Octava
+@Sancti/12-27:Octava
+@Sancti/12-28:Octava
+
+[Commemoratio 3] (rubrica altovadensis)
+@Sancti/12-25:Octava
+
+[Commemoratio 3] (rubrica tridentina nisi rubrica altovadensis)
+@Sancti/12-25:Octava
+@Sancti/12-26:Octava
+@Sancti/12-27:Octava
+@Sancti/12-28:Octava

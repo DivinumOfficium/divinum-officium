@@ -1,0 +1,25 @@
+@CommuneM/C10
+
+[Ant 1] (nisi rubrica cisterciensis)
+@Sancti/01-01:Ant 3
+
+[Oratio] (nisi rubrica cisterciensis)
+@Sancti/01-01
+
+[Ant Laudes] (rubrica tridentina nisi rubrica cisterciensis)
+@Sancti/01-01:Ant Vespera:s/;;.*//g
+
+[Ant 2] (nisi rubrica cisterciensis)
+@Sancti/01-01:Ant 2
+
+[Ant Prima] (nisi rubrica cisterciensis)
+@Sancti/01-01:Ant Vespera:1
+
+[Ant Tertia] (nisi rubrica cisterciensis)
+@Sancti/01-01:Ant Vespera:2
+
+[Ant Sexta] (nisi rubrica cisterciensis)
+@Sancti/01-01:Ant Vespera:3
+
+[Ant Nona] (nisi rubrica cisterciensis)
+@Sancti/01-01:Ant Vespera:5

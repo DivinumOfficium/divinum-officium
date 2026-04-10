@@ -1,0 +1,28 @@
+@Tempora/101-0
+
+[Responsory Vespera 1]
+@Tempora/101-0:Responsory6:1-4
+&Gloria
+@Tempora/101-0:Responsory6:4 s/.*, (.)/R. \u\1/
+
+[Lectio1]
+@Tempora/101-0::1-5 s/-7/-3/
+
+[Responsory1]
+@Tempora/101-0
+
+[Lectio2]
+@Tempora/101-0::1 s/8-11/4-8/
+@Tempora/101-0:Lectio1:6-9
+@Tempora/101-0::2
+
+[Responsory2]
+@Tempora/101-0:Responsory6:1-4
+
+[Lectio3]
+@Tempora/101-0:Lectio2:!2 s/8-/9-/
+
+[Responsory3]
+@Tempora/101-1:Responsory2
+&Gloria
+R. In pópulo.

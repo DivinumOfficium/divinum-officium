@@ -1,20 +1,30 @@
-[Rank]
-In Octava S. Stephani.;;Simplex;;1.1;;vide Sancti/12-26
+[Officium]
+Szent István első vértanú nyolcada
 
-[Rank1960]
-Die Secunda Januarii;;Feria;;1.2;;vide Sancti/01-01
+[Introitus]
+@Sancti/12-26:Introitus
 
-[RankTrident]
-In Octava Sancti Stephani.;;Duplex;;3;;ex Sancti/12-26
+[Oratio]
+Mindenható örök Isten, ki Szent István levita vérében a vértanúság első gyümölcsét megszentelted, add, hogy ő legyen a mi közbenjárónk, aki üldözőiért is könyörgött a mi Urunk Jézus Krisztusnál, Fiadnál.
+$Qui tecum
 
-[Rule]
-ex Sancti/12-26;
-Gloria
-Prefatio=Nat
+[Lectio]
+@Sancti/12-26:Lectio
 
-[Oratio] (rubrica Divino aut rubrica Tridentina aut rubrica Monastica)
-Grant us, we beseech You, O Lord, to imitate what we celebrate, so that we may~
-learn to love even our enemies; because we keep the anniversary of the death of~
-Him Who knew how to plead even for His persecutors with our Lord, Jesus Christ,~
-Your Son,
-$Per Dominum
+[Graduale]
+@Sancti/12-26:Graduale
+
+[Evangelium]
+@Sancti/12-26:Evangelium
+
+[Offertorium]
+@Sancti/12-26:Offertorium
+
+[Secreta]
+@Sancti/12-26:Secreta
+
+[Communio]
+@Sancti/12-26:Communio
+
+[Postcommunio]
+@Sancti/12-26:Postcommunio

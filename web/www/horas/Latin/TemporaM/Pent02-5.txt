@@ -1,38 +1,120 @@
-[Rank]
-Feria Sexta infra Hebdomadam II post Octavam Pentecostes;;Feria;;1
+@Tempora/Pent02-5
 
 [Rule]
-Oratio Dominica
+12 lectiones
+Psalmi Dominica
+Antiphonas horas
+
+[Ant Vespera]
+@Tempora/Pent02-5::s/115/129/
+
+[Doxology]
+Glória tibi Dómine,
+Qui Corde fundis grátiam,
+Cum Patre, et Sancto Spíritu,
+In sempitérna sǽcula.
+Amen.
+
+[AntMatutinumM]
+Gustáte * et vidéte, quóniam suávis est Dóminus: † beátus vir, qui sperat in eo.;;33
+Dóminus * dabit benignitátem, † loquétur pacem in plebem suam.;;84
+Suávis * et mitis es, Dómine, † et multæ misericórdiæ omnibus invocántibus te.;;85
+Secúndum multitúdinem * dolórum meórum in Corde meo, † consolatiónes tuæ lætificavérunt ánimam meam.;;93
+
+[Ant Matutinum 3N]
+Confitémini Dómino, * et invocáte nomen ejus: † notas fácite in pópulis adinventiónes ejus.
+
+[Ant Matutinum]
+@Tempora/Pent02-5::1
+@:AntMatutinumM:1
+@Tempora/Pent02-5::2-3
+@Tempora/Pent02-5::4-5
+@:AntMatutinumM:2-4
+@Tempora/Pent02-5::7-9
+;;221;223(1-8);223(9-16)
 
 [Lectio1]
-De libro primo Regum.
-!1 Sam 8:4-6
-4 Congregati ergo universi majores natu Isra�l, venerunt ad Samuelem in Ramatha.
-5 Dixeruntque ei: Ecce tu senuisti, et filii tui non ambulant in viis tuis: constitue nobis regem, ut judicet nos, sicut et universae habent nationes.
-6 Displicuit sermo in oculis Samuelis, eo quod dixissent: Da nobis regem, ut judicet nos. Et oravit Samuel ad Dominum.
-
-
-[Responsory1]
-@TemporaM/Pent01-2:Responsory1
+@Tempora/Pent02-5
 
 [Lectio2]
-!1 Sam 8:7-9
-7 Dixit autem Dominus ad Samuelem: Audi vocem populi in omnibus quae loquuntur tibi: non enim te abjecerunt, sed me, ne regnem super eos.
-8 Juxta omnia opera sua quae fecerunt, a die qua eduxi eos de �gypto usque ad diem hanc: sicut dereliquerunt me, et servierunt diis alienis, sic faciunt etiam tibi.
-9 Nunc ergo vocem eorum audi: verumtamen contestare eos, et praedic eis jus regis, qui regnaturus est super eos.
-
-
-[Responsory2]
-@TemporaM/Pent01-2:Responsory2
+@Tempora/Pent02-5
 
 [Lectio3]
-!1 Sam 8:10-14
-10 Dixit itaque Samuel omnia verba Domini ad populum, qui petierat a se regem.
-11 Et ait: Hoc erit jus regis, qui imperaturus est vobis: filios vestros tollet, et ponet in curribus suis: facietque sibi equites et praecursores quadrigarum suarum,
-12 et constituet sibi tribunos, et centuriones, et aratores agrorum suorum, et messores segetum, et fabros armorum et curruum suorum.
-13 Filias quoque vestras faciet sibi unguentarias, et focarias, et panificas.
-14 Agros quoque vestros, et vineas, et oliveta optima tollet, et dabit servis suis.
-
+@Tempora/Pent02-5::1-4 s/3;.*/3/
 
 [Responsory3]
-@TemporaM/Pent01-2:Responsory3
+R. Auferam cor lapídeum de carne vestra, et dabo vobis cor cárneum.
+* Et spíritum meum ponam in médio vestri.
+V. Effúndam super vos aquam vivam, et mundabímini ab ómnibus inquinaméntis vestris.
+R. Et spíritum meum ponam in médio vestri.
+
+[Lectio4]
+@Tempora/Pent02-5:Lectio3:s/31:1-3; // s/1 .*31/31/s
+
+[Responsory4]
+@Tempora/Pent02-5:Responsory3
+
+[Lectio5]
+@Tempora/Pent02-5:Lectio4:s/ Próximis.*//s
+
+[Responsory5]
+@Tempora/Pent02-5:Responsory4
+
+[Lectio6]
+Nulli vero in hac propagáda devotióne cessit ordo monásticus, et inter omnes, tunc témporis, éminent Elphiáne vírgines Gertrúdis et Mechtíldis, ex quarum vitæ actis operibúsque perspícuum est, quanto erga divínum Cor amóre flagráverint.~
+@Tempora/Pent02-5:Lectio4:s/.*(Próximis)/$1/s
+
+[Responsory6]
+R. Gratificávit nos Deus in dilécto Fílio suo,
+* In quo habémus redemptiónem per sánguinem ejus, redemptiónem peccatórum.
+V. Det nobis Dóminus illuminátos óculos cordis nostri in agnitióne ejus.
+R. In quo habémus redemptiónem per sánguinem ejus, redemptiónem peccatórum.
+
+[Lectio7]
+@Tempora/Pent02-5:Lectio5:s/ Quot.*//s
+
+[Responsory7]
+@Tempora/Pent02-5:Responsory5
+
+[Lectio8]
+@Tempora/Pent02-5:Lectio6
+
+[Responsory8]
+@Tempora/Pent02-5:Responsory6
+
+[Lectio9]
+@Tempora/Pent02-5:Lectio7
+
+[Responsory9]
+@Tempora/Pent02-5:Responsory7
+
+[Lectio10]
+@Tempora/Pent02-5:Lectio8:s/ Hoc.*//s
+
+[Responsory10]
+@Tempora/Quad6-0:Responsory1
+
+[Lectio11]
+@Tempora/Pent02-5:Lectio8:s/.*(Hoc)/$1/s s/$/~/
+@Tempora/Pent02-5:Lectio9:s/ Quis.*//s
+
+[Responsory11]
+R. Sicut diléxit me pater et ego diléxi vos:
+* Manéte in dilectióne mea.
+V. Si præcépta mea servavéritis, manébitis in dilectióne mea, † sicut et ego Patris mei præcépta servávi, et máneo in ejus dilectióne.
+R. Manéte in dilectióne mea.
+
+[Lectio12]
+@Tempora/Pent02-5:Lectio9:s/.*(Quis)/$1/s
+
+[Responsory12]
+@Tempora/Pent02-5:Responsory8
+
+[Responsory TertiaM]
+@:Versum 1
+
+[Responsory SextaM]
+@Tempora/Pent02-5:Nocturn 2 Versum
+
+[Responsory NonaM]
+@Tempora/Pent02-5:Nocturn 3 Versum

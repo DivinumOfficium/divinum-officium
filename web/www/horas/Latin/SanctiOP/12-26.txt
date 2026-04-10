@@ -1,0 +1,104 @@
+@Sancti/12-26
+
+[Rule]
+ex C2a;
+Psalmi Dominica
+Psalmi minores ex Psalterio
+9 lectiones
+no Psalm5
+
+[Ant Matutinum]
+Beátus Stéphanus jugi legis Dei meditatióne roborátus, tamquam lignum fructiferum secus salutárium aquárum plantátum decúrsus, fructum martýrii in témpore suo dedit primus.;;1
+Constitútus a Deo prædicátor præceptórum ejus, in timóre sancto illi servíre stúduit: officióque fidéliter perácto, in montem sanctum ejus ascéndere dignus fuit.;;2
+In tribulatióne lápidum se preméntium pósitus, míllia pópuli se circumdántis non tímuit: quia susceptórem suum Jesum, ut eum salvum fáceret, exsúrgere in cælo vidit.;;3
+Lúmine vultus tui, Dómine, insignitus Protomártyr Stéphanus, sacrifícium justitiæ seípsum tibi sacrificávit: ideóque in lætitia cordis, in pace obdórmiens requiéscit.;;4
+Benedictiónis tuæ, Dómine, múnere justificátus et scuto tuæ protectiónis in passióne munítus, nóminis sui corónam Stéphanus a te percipere méruit.;;5
+O quam admirábile est nomen tuum, Dómine Deus noster, pro quo beátus Stéphanus passus, glória et honóre a te est coronátus, et super cælos dono tuæ magnífícéntiæ exaltátus!;;8
+In Dómino Deo suo confísus fortis athléta Stéphanus, lápidum fórtiter sustínuit ictus: et idcírco ad montem virtútum transmigrávit victoriósus.;;10
+Sine mácula beátus Stéphanus ingréssus est, Dómine, in tabernáculum tuum: et, quia operátus est justítiam, requiéscit in monte sancto tuo.;;14
+Dómine, virtus et lætítia rectórum: quóniam tu prævenísti diléctum tibi Stéphanum dono gratúitæ benedictiónis, te primum secútus est morte gloriósæ passiónis: unde cum coróna martýrii dedísti ei vitam in sæculum sæculi.;;20
+
+[Lectio1]
+@Sancti/12-26::1-6 s/-6/-4/
+
+[Responsory1]
+@Sancti/12-26:Responsory1::1-2
+V. Cum esset plenus Spíritu Sancto beátus Stéphanus.
+@Sancti/12-26:Responsory1::4
+
+[Lectio2]
+@Sancti/12-26::1 s/7-.*/5-7/
+@Sancti/12-26:Lectio1:7-8
+@Sancti/12-26::2
+
+[Responsory2]
+@Sancti/12-26::s/V. (.)/V. Stéphanus autem \l$1/
+
+[Lectio3]
+@Sancti/12-26:Lectio2:1 s/7-.*/8-11/
+@Sancti/12-26:Lectio2:3-5
+11 Tunc summisérunt viros, qui dícerent se audivísse eum dicéntem verba blasphémiæ in Móysen et in Deum.
+
+[Responsory3]
+@Sancti/12-26::1-4
+&Gloria
+@Sancti/12-26::2 s/.* a /R. A /
+
+[Lectio4]
+@Sancti/12-26::s/\. [^\.]+.$/./
+
+[Responsory4]
+@Sancti/12-26::1-3 s/\n\*// s/ ne /\n* Ne /
+@Sancti/12-26::2 s/.*: (.)/R. \u$1/
+
+[Lectio5]
+@Sancti/12-26:Lectio4:s/.*\. //s s/$/~/
+@Sancti/12-26::s/ Heri præsépis.*//
+
+[Responsory5]
+@Sancti/12-26::1-3 s/\n\*// s/ (invocántem)/\n* \u$1/
+@Sancti/12-26::2 s/\*/R./
+
+[Lectio6]
+@Sancti/12-26:Lectio5:s/.* (?=Heri præsépis)// s/$/~/
+@Sancti/12-26::s/ Per.*//
+
+[Responsory6]
+R. Stéphanus servus Dei, quem lapidábant Judæi, vidit cælos apértos: vidit et introívit:
+* Beátus homo, cui cæli patébant.
+V. Cum igitur saxórum crepitántium túrbine quaterétur, inter æthéreos aulæ cæléstis sinus divína ei cláritas fulsit.
+R. Beátus homo, cui cæli patébant.
+
+[Lectio7]
+@Sancti/12-26::s/.* Simúlque o/O/ s/$/~/
+@Sancti/12-26:Lectio8:s/\..*/./
+
+[Responsory7]
+@Sancti/12-26:Responsory6
+
+[Lectio8]
+@Sancti/12-26::s/.* (?=In divérsis)//
+
+[Responsory9]
+R. Sancte Dei pretióse Protomártyr Stéphane, qui virtúte caritátis circumfúltus úndique, Dóminum pro inimico exorásti pópulo:
+* Funde preces Pro devóto tibi nunc collégio. 
+V. Ut tuo propitiátus intervéntu, Dóminus nos purgátos a peccátis jungat cæli cívibus.
+R. Funde preces Pro devóto tibi nunc collégio. 
+&Gloria
+R. Pro devóto tibi nunc collégio. 
+
+[Ant 2]
+@Sancti/12-26:Ant 3C
+
+[Capitulum Sexta]
+!Act. 7:55
+v. Cum esset Stéphanus plenus Spíritu Sancto, inténdens in cælum, vidit glóriam Dei, et Jesum stantem a dextris Dei.
+$Deo gratias
+
+[Capitulum Nona]
+!Act. 7:59
+v. Pósitis autem génibus, beátus Stéphanus clamávit voce magna, dicens: Dómine, ne státuas illis hoc peccátum.
+$Deo gratias
+
+[Ant 3]
+O quam gloriósus est beátus Stéphanus Martyr et Levíta, qui ante Apóstolos regna cæléstia possidére méruit et ad Patris déxteram Fílium vidére!

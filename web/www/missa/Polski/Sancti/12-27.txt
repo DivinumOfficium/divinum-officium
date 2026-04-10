@@ -1,13 +1,5 @@
-[Rank]
-S. Joannis Apostoli et Evangelistae;;Duplex II Class cum octava simplici;;5.3
-
-[Rank1960]
-S. Joannis Apostoli et Evangelistae;;Duplex II class;;5
-
-[Rule]
-Gloria
-Credo
-Prefatio=Nat
+[Officium]
+Św. Jana Apostoła i Ewangelisty
 
 [Comment]
 # 27 XII – Św. Jana, Apostoła i Ewangelisty
@@ -23,11 +15,6 @@ Prefatio=Nat
 Oświecaj łaskawie Twój Kościół, o Panie, aby dzięki naukom św. Jana, Twojego Apostoła i Ewangelisty, osiągnął dobra wiekuiste.
 $Per Dominum
 
-[Commemoratio Oratio]
-!W Oktawie Narodzenia
-Dozwól, prosimy Cię, wszechmogący Boże, aby nowe narodzenie się w ciele Jednorodzonego Syna Twego wyzwoliło nas z jarzma grzechu, w którym nas trzyma dawna niewola.
-$Per eundem
-
 [Lectio]
 Czytanie z Księgi Syracydesa.
 !Syr 15:1-6
@@ -40,18 +27,18 @@ V. Jeno: «Chcę, aby on został, aż przyjdę; ty pójdź za mną». Alleluja, 
 !J 21:24
 V. Właśnie ów uczeń daje świadectwo o tym, a wiemy, że świadectwo jego jest prawdziwe. Alleluja.
 
-[Tractus]
-!Ps 111:1-3
-Błogosławiony mąż, który boi się Pana i wielką radość znajduje w Jego nakazach.
-V. Potomstwo jego będzie potężne na ziemi, dozna błogosławieństwa pokolenie prawych.
-V. Zasoby i bogactwa będą w jego domu, a hojność jego będzie trwała zawsze.
-
 [GradualeP]
 Alleluja, alleluja
 !J 21:24
 Właśnie ów uczeń daje świadectwo o tym, a wiemy, że świadectwo jego jest prawdziwe.
 !Ps 91:13
 Sprawiedliwy zakwitnie jak palma, rozrośnie się jak cedr na Libanie. Alleluja.
+
+[Tractus]
+!Ps 111:1-3
+Błogosławiony mąż, który boi się Pana i wielką radość znajduje w Jego nakazach.
+V. Potomstwo jego będzie potężne na ziemi, dozna błogosławieństwa pokolenie prawych.
+V. Zasoby i bogactwa będą w jego domu, a hojność jego będzie trwała zawsze.
 
 [Evangelium]
 Ciąg dalszy ++ Ewangelii świętej według Jana.
@@ -66,11 +53,6 @@ Sprawiedliwy zakwitnie jak palma, rozrośnie się jak cedr na Libanie. Alleluja.
 Przyjmij, Panie, dary, które Ci składamy w uroczystość św. Jana. Ufamy, że jego wstawiennictwo przyczyni się do naszego wyzwolenia.
 $Per Dominum
 
-[Commemoratio Secreta]
-!W Oktawie Narodzenia
-Uświęć, Panie, złożone dary przez nowe narodzenie Jedynego Syna Twojego i oczyść nas ze zmazy naszych grzechów.
-$Per eundem
-
 [Communio]
 !J 21:23
 Rozeszła się tedy ta wieść między braćmi, że uczeń ów nie umrze. Ale Jezus nie powiedział: «Nie umrze», jeno: «Chcę, aby on został, aż przyjdę».
@@ -78,8 +60,3 @@ Rozeszła się tedy ta wieść między braćmi, że uczeń ów nie umrze. Ale Je
 [Postcommunio]
 Pokrzepieni niebieskim pokarmem i napojem, błagamy Cię pokornie, Boże nasz, niech nas bronią modlitwy tego, w którego święto przyjęliśmy te dary.
 $Per Dominum
-
-[Commemoratio Postcommunio]
-!W Oktawie Narodzenia
-Wszechmogący Boże, narodzony dzisiaj Zbawiciel świata przywrócił nam synostwo Boże; spraw, prosimy, aby nam udzielił daru nieśmiertelności:
-$Qui tecum

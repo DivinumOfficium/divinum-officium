@@ -1,19 +1,8 @@
-[Rank]
-Sonntag Septuagesima;;Semiduplex;;5.6
-
-[Rank1960]
-Sonntag Septuagesima;;Semiduplex;;5
-
-[Capitulum Vespera]
-!1 Kor 9,24
-v. Brüder! Wisset ihr nicht, dass die Renner in der Wettbahn zwar alle rennen, dass aber nur einer den Preis gewinnt? Also werdet Renner, dass ihr Gewinner werdet.
-$Deo gratias
+[Officium]
+Sonntag Septuagesima
 
 [Ant 1]
 Der Herr sprach * zu Adam: Von dem Baum, der in der Mitte des Paradieses steht, sollst du nicht essen; sobald du davon genießest, wirst du sterben.
-
-[Versum 1]
-@Psalterium/Major Special:Day6 Versum 3
 
 [Oratio]
 Wir bitten dich, o Herr, erhöre gnädig die Bitten deines Volkes, damit wir, die wir in berechtigter Weise für unsere Sünden gezüchtigt werden, zum Ruhme für deine Majestät durch deine Barmherzigkeit davon befreit werden.
@@ -42,7 +31,7 @@ R. Nach seinem Vorbild und ihm ähnlich.
 
 [Lectio2]
 !Gen 1,9-19
-9 Und Gott sprach: Es sammle sich das Wasser, so unter dem Hummel ist, an einem Ort, und es erscheine das Trockene! Und also geschah es.
+9 Und Gott sprach: Es sammle sich das Wasser, so unter dem Himmel ist, an einem Ort, und es erscheine das Trockene! Und also geschah es.
 10 Und Gott nannte das Trockene Erde, und die Ansammlungen des Wassers nannte er Meer. Und Gott sah, dass es gut war
 11 und sprach: Es lasse die Erde Gras sprossen, das grünt und Samen hervorbringt, und Fruchtbäume, die da Früchte tragen nach ihrer Art, in denen selbst ihr Same sich findet auf Erden. Und also geschah es.
 12 Und die Erde ließ sprossen das Gras, das grünet und Samen hervorbringt nach seiner Art, und Fruchtbäume, die ihren Samen haben nach ihrer Art. Und Gott sah, dass es gut war.
@@ -152,23 +141,23 @@ O Gott, mein Gott, * nach dir späh ich beim frühsten Morgenschimmer, denn du b
 Du bist gepriesen, * der du thronest auf dem Firmament des Himmels, und alles Lobs auf ewig würdig, o unser Gott.
 O lobt * den Herrn, ihr vom Himmel.
 
-[Capitulum Laudes]
-@:Capitulum Vespera
+[Capitulum Laudes] (nisi rubrica praedicatorum)
+!1 Kor 9,24
+v. Brüder! Wisset ihr nicht, daß die Renner in der Wettbahn zwar alle rennen, daß aber nur einer den Preis gewinnt? Also werdet Renner, daß ihr Gewinner werdet.
+$Deo gratias
+
+[Versum 2] (nisi rubrica cisterciensis)
+V. O Herr, du bist die Zuflucht uns geworden.
+R. Durch alle Zeiten und Geschlechter.
 
 [Ant 2]
 Es verhält sich * mit dem himmlischen Reiche wie mit einem Hausvater, der am frühsten Morgen ausging, um Arbeiter in seinem Weinberg zu dingen, spricht der Herr.
-
-[Versum 2]
-@Psalterium/Major Special:Day02 Versum 2
 
 [Ant Prima]
 Nachdem er eine Vereinbarung * getroffen hatte mit den Arbeiters bezüglich eines Denars für den Tag, sandte er sie in seinen Weinberg.
 
 [Ant Tertia]
 Geht auch ihr * in meinen Weinberg, und was recht ist, will ich euch geben.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Ant Sexta]
 Was steht ihr hier * den ganzen Tag müßig? Sie antworteten und sprachen: Es hat uns niemand gedungen.
@@ -188,6 +177,3 @@ $Deo gratias
 
 [Ant 3]
 Es sagte der Hausherr * zu den Arbeitern: Was steht ihr hier den ganzen Tag müßig? Sie aber antworteten und sprachen: Weil uns niemand gedungen hat. Geht auch ihn in meinen Weinberg und was recht ist, das will ich euch geben.
-
-[Versum 3]
-@Psalterium/Major Special:Day0 Versum 3

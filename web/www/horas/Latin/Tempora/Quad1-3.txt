@@ -1,13 +1,10 @@
+[Officium]
+Feria Quarta Quattuor Temporum Quadragesimæ
+
 [Rank]
-Feria Quarta Quattuor Temporum Quadragesimæ;;Feria major;;2
-
-[Rank1960]
-Feria Quarta Quattuor Temporum Quadragesimæ;;Feria major;;4
-
-[RankNewcal]
-Feria IV infra Hebdomadam I in Quadragesima;;Feria major;;2
-
-[Rule]
+;;Feria major;;2.1
+(sed rubrica 196 aut rubrica 1930)
+;;Feria major;;4.9
 
 [Lectio1]
 Léctio sancti Evangélii secúndum Matthǽum
@@ -33,7 +30,7 @@ Céterum Jonæ signum, ut typus Domínicæ passiónis, ita étiam grávium, quæ
 [Responsory3]
 R. Abscóndite eleemósynam in sinu páuperum, et ipsa orábit pro vobis ad Dóminum:
 * Quia sicut aqua extínguit ignem, ita eleemósyna extínguit peccátum.
-V. Date eleemósynam, et ecce omnia munda sunt vobis.
+V. Date eleemósynam, et ecce ómnia munda sunt vobis.
 R. Quia sicut aqua extínguit ignem, ita eleemósyna extínguit peccátum.
 &Gloria
 R. Quia sicut aqua extínguit ignem, ita eleemósyna extínguit peccátum.

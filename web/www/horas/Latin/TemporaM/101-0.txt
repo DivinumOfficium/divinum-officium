@@ -1,7 +1,49 @@
 @Tempora/101-0
 
+[Lectio1]
+@Tempora/101-0:Lectio1:s/-7/-3/ s/4 .*//s
+
+[Lectio2]
+@Tempora/101-0:Lectio1:s/.*!/!/s s/1-/4-/ s/1 [^M].*4 /4 /s
+
+[Lectio3]
+@Tempora/101-0:Lectio2:
+
+[Lectio4]
+@Tempora/101-0:Lectio3
+
+[Responsory4]
+@Tempora/101-1:Responsory1
+
+[Lectio5]
+@Tempora/101-0:Lectio4
+
+[Responsory5]
+@Tempora/101-0:Responsory4
+
+[Lectio6]
+@Tempora/101-0:Lectio5
+
+[Responsory6]
+@Tempora/101-0:Responsory5
+
+[Lectio7]
+@Tempora/101-0:Lectio6:s/Quanta .*//s
+
+[Responsory7]
+@Tempora/101-0:Responsory6
+
+[Lectio8]
+@Tempora/101-0:Lectio6:s/.* Quanta /Quanta /s
+
 [Responsory8]
-@TemporaM/Pent03-0:Responsory8
+@Tempora/101-1:Responsory2
 
 [Responsory9]
-@TemporaM/Pent03-0:Responsory9
+@Tempora/101-0:Responsory7
+
+[Responsory10]
+@Tempora/101-1:Responsory3
+
+[Responsory11]
+@Tempora/101-2:Responsory1

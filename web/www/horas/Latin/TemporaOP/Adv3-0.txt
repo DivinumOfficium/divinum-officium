@@ -1,0 +1,50 @@
+@Tempora/Adv3-0
+
+[Capitulum Laudes]
+@Psalterium/Special/Minor Special:Adv Tertia
+
+[Responsory Vespera 1]
+@Tempora/Adv3-0:Responsory3
+
+[Invit]
+Súrgite vigilémus, veníte, adorémus: * Quia nescítis horam quando véniet Dóminus.
+
+[In Finem Lectio]
+@TemporaOP/Quad5-0
+
+[Lectio1]
+@Tempora/Adv3-2::1
+!Isa 30:15-17
+15 Hæc dicit Dóminus Deus sanctus Israël: Si revertámini et quiescátis, salvi éritis: in siléntio et in spe erit fortitúdo vestra. Et noluístis:
+16 et dixístis: Nequáquam, sed ad equos fugiémus: ídeo fugiétis. Et super velóces ascendémus: ídeo velocióres erunt, qui persequéntur vos.
+17 Mille hómines a fácie terróris uníus: et a fácie terróris quinque fugiétis, donec relinquámini quasi malus navis in vértice montis, et quasi signum super collem.
+@:In Finem Lectio
+
+[Responsory1]
+@Tempora/Adv3-0::1-3 s/\n\* (.)/ \l$1/ s/: Rex/:\n* Rex/
+@Tempora/Adv3-0::2 s/.*: /R. /
+
+[Lectio2]
+@Tempora/Adv3-2:Lectio1:s/-20/-22/ s/18 E/18 Proptérea e/ s/: et erunt.*/./
+
+[Responsory2]
+@Tempora/Adv3-0:Responsory3
+
+[Lectio3]
+!Isa 30:21-22
+@Tempora/Adv3-2:Lectio1:5 s/.*: (.)/20 \u$1/
+21 Et aures tuæ áudient verbum post tergum monéntis: Hæc est via, ambuláte in ea, et non declinétis neque ad déxteram, neque ad sinístram.
+22 Et contaminábis láminas sculptílium argénti tui, et vestiméntum conflátilis auri tui, et dispérges ea sicut immundítiam menstruátæ.
+@:In Finem Lectio
+
+[Lectio7]
+@Tempora/Adv3-0::s/ Sed.*/~/
+@Tempora/Adv3-0:Lectio8:s/\..*/./
+
+[Responsory3]
+@Tempora/Adv3-0:Responsory8:1-2
+@Tempora/Adv3-6:Responsory1:4 s/R/V/
+@Tempora/Adv3-0:Responsory8:2 s/\*/R./
+&Gloria
+@Tempora/Adv3-0:Responsory8:2 s/\*/R./
+@Tempora/Adv3-0:Responsory8:1

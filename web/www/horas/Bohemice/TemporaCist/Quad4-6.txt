@@ -1,0 +1,12 @@
+[Lectio1]
+@Tempora/Quad4-6:Lectio1:s/Manichejci .*//
+
+[Lectio2]
+@Tempora/Quad4-6:Lectio1:s/.* (?=Manichejci )//s s/$/~/
+@Tempora/Quad4-6:Lectio2:s/Nemysleme .*//
+
+[Lectio3]
+@Tempora/Quad4-6:Lectio2:s/.* (?=Nemysleme)// s/Všechno .*//
+
+[Ant 2]
+Já jsem * světlo světa; kdo mě následuje, nebude kráčet v temnotách, ale bude mít světlo života, praví Pán.

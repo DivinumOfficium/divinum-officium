@@ -1,0 +1,98 @@
+@SanctiM/05-03
+
+[Rule]
+12 lectiones
+Psalmi Dominica
+
+[Ant Vespera]
+@TemporaCist/Pasc0-0
+
+[Responsory Vespera]
+@Sancti/05-03:Responsory Breve Sexta:1-4
+
+[Ant 1]
+O Crux benedícta! * quia in te pepéndit Salvátor mundi, et in te triumphávit Rex Angelórum, allelúia.
+
+[Invit]
+@CommuneCist/C2p:Invit 3L
+
+[Ant Matutinum]
+@CommuneCist/C2p::1-5
+;;14
+@CommuneCist/C2p::7:s/;;14/;;22/
+;;26
+;;75
+;;95
+;;96
+;;97
+@CommuneCist/C2p::13:s/;;.*/;;246;247;248/
+
+[Lectio2]
+@Sancti/05-03::s/5-/8-/ s/5 .*8/8/s
+
+[Responsory4]
+@SanctiM/09-14::s/crux/Crux/g
+
+[Lectio5]
+@Sancti/05-03:Lectio4
+
+[Lectio6]
+@Sancti/05-03:Lectio5
+
+[Lectio7]
+@Sancti/05-03:Lectio6:s/Clavos.*//s
+
+[Lectio8]
+@Sancti/05-03:Lectio6:s/.*(Clavos)/$1/s
+
+[Responsory5]
+@Sancti/05-03:Responsory4
+
+[Responsory6]
+@Sancti/05-03:Responsory5
+
+[Responsory7]
+@Sancti/05-03:Responsory6
+
+[Responsory8]
+@SanctiM/09-14
+
+[Lectio9]
+@Sancti/05-03:Lectio7:s/Et iste.*//s
+
+[Lectio10]
+@Sancti/05-03:Lectio7:s/.* (Et iste)/$1/s s/$/~/
+@Sancti/05-03:Lectio8:s/Respóndit .*//s
+
+[Lectio11]
+@Sancti/05-03:Lectio8:s/.* (?=Respóndit )// s/Inténdat .*//
+
+[Lectio12]
+@Sancti/05-03:Lectio8:s/.*(Int.ndat)/$1/s
+
+[Responsory9]
+@Sancti/05-03:Responsory7
+
+[Responsory10]
+V. O Crux gloriósa, o Crux adoránda, o lignum pretiósum, et admirábile signum!
+* Per quod et diábolus est victus, et mundus Christi sánguine redémptus, allelúia, allelúia.
+V. Adorémus Crucis signáculum, per quod salútis súmpsimus sacraméntum:
+R. Per quod et diábolus est victus, et mundus Christi sánguine redémptus, allelúia, allelúia.
+
+[Responsory11]
+@SanctiM/09-14::s/† //g
+
+[Responsory12]
+@SanctiM/09-14
+
+[Ant Laudes]
+@TemporaCist/Pasc0-0
+
+[Responsory Laudes]
+@Sancti/05-03:Responsory Breve Tertia:1-4
+
+[Ant 2]
+Ecce Crucem Dómini, * fúgite, partes advérsæ, vicit Leo de tribu Juda, radix David, allelúia.
+
+[Ant 3]
+O Crux splendídior * cunctis astris, mundo célebris, homínibus multum amábilis, sánctior univérsis; quæ sola fuísti digna portáre taléntum mundi, dulce lignum, dulces clavos, dúlcia ferens póndera; salva præséntem catérvam in tuis hódie láudibus congregátam. (Allelúia, allelúia, allelúia.)

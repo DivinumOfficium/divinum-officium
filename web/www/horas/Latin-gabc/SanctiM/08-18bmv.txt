@@ -1,0 +1,31 @@
+[Ant Matutinum]
+@Sancti/08-15t::3 s/;;\d+//
+;;
+;;
+;;
+;;
+;;
+@Sancti/08-15t::6 s/;;\d+//
+;;
+;;
+;;
+;;
+;;
+
+[Ant Matutinum] (rubrica 1930)
+@Sancti/08-15t::7 s/;;\d+//
+(sed feria 2 aut feria 3)
+@Sancti/08-15t::3 s/;;\d+//
+;;
+;;
+;;
+;;
+;;
+@CommuneM/C11:AntMatutinumM:1 s/;;\d+//
+(sed feria 2 aut feria 3)
+@Sancti/08-15t::6 s/;;\d+//
+;;
+;;
+;;
+;;
+;;

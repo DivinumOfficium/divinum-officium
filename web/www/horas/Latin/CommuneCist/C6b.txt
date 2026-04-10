@@ -1,0 +1,32 @@
+@CommuneCist/C6-1
+
+[Officium]
+@Commune/C6b
+
+[Versum 1]
+@Commune/C6b
+
+[Ant 1]
+@Commune/C6b
+
+[Oratio]
+@Commune/C6b
+
+[Nocturn 1 Versum]
+@Commune/C6:Versum 1
+
+[Versum 2]
+@:Versum 1
+
+[Ant 2]
+@:Ant 1
+
+[Capitulum Nona]
+@:Lectio Prima
+$Deo gratias
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+@:Ant 1

@@ -1,0 +1,100 @@
+[Officium]
+sv. Jáchyma, Otce Nejblahoslavenější Panny Marie
+
+[Hymnus Vespera]
+Jáchyme, k tvojí chvále teď pospíchá
+Tento náš sbor, když slavíme tvůj svátek
+S srdcem oddaným, zpíváme, že z tebe
+Milost nám vzešla.
+_
+Běda nám zmínit, že neplodnost tvojí
+Ženy kdys přineslo mnoho bolesti;
+Raduj se, že pak tuto hanbu smyla
+Přesvatá dívka.
+_
+Panna všech panen dělá světu, z něhož
+Vzešla, vždy radost, porodí však toho,
+Jenž smrt přemohl, a - tím nám všem dává
+Života dary.
+_
+Dlouhá tě řada králů a vévodů
+Předchází, když zde počítáme otce,
+Kteří z dávna čekají Spasitele,
+Tys jeho dědem.
+_
+Ó šťastný Děde svého Stvořitele.
+Mezi starými ještě dražší otče!
+Ty mocný, prosím, naše přepokorné
+Přijímej prosby.
+_
+Ať Boha Otce, také Syna jeho,
+i tebe, Ducha, stejně nadšeného
+zpěvu ať ohlas, Boha jediného,
+na věky slaví.
+Amen.
+
+[Hymnus Matutinum]
+@:Hymnus Vespera
+
+[Lectio5]
+@Sancti/08-16:Lectio4:s/Jméno Jáchym .*//
+
+[Lectio6]
+@Sancti/08-16:Lectio4:s/.* (Jméno Jáchym )/$1/s
+
+[Lectio7]
+@Sancti/08-16:Lectio5:1-2
+@Sancti/08-16:Lectio6:s/Ó přesvatá .*//
+
+[Lectio8]
+@Sancti/08-16:Lectio6:s/.* (Ó přesvatá )/$1/s
+
+[Lectio9]
+@Sancti/08-16:Lectio7:s/Ve skutečnosti .*//
+
+[Lectio10]
+@Sancti/08-16:Lectio7:s/.* (Ve skutečnosti )/$1/s s/$/~/
+@Sancti/08-16:Lectio8:s/Opět z.*//
+
+[Lectio11]
+@Sancti/08-16:Lectio8:s/.* (Opět z)/$1/
+
+[Lectio12]
+@Sancti/08-16:Lectio9:s/Avšak .*//
+
+[Hymnus Laudes]
+Jezu, otcovská jasnosti,
+Jistá naděje věřících,
+Dědu tvému my vzdáváme
+Zbožné chvály a zpívání.
+_
+Jej z mnohých sám sis vyvolil,
+Jež osvědčili svatost svou,
+By z Davidova potomstva
+Tvou Matku na svět přivedli.
+_
+Narozen z rodu Jišaje,
+Věrný to syn Abraháma,
+Vzácnou ctností on zaskvěl se,
+Krále, knížata předešel.
+_
+Anně byl manžel předobrý,
+Vyzkoušen pak Božím poslem;
+A z dětí žádnou radost mít, 
+I tuto bědu snášel rád.
+_
+Hanba se v radost mění hned,
+Když Maria se narodí;
+Nebo když roste, prospívá,
+A Bohu když se zasvětí.
+_
+Naplň prosící radostí,
+Když světa radost ty vytváříš,
+Dej Jáchyme, ať v nebeských
+S tebou se těšíme plesech.
+_
+Jenž z Marie ses narodil,
+Ježíši, tobě sláva buď,
+S Otcem i svatým Duchem,
+Ty navždy vládneš věkům všem.
+Amen.

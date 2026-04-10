@@ -1,0 +1,13 @@
+[Lectio9]
+@Tempora/Pent12-0:Lectio7:s/Isajáš,.*//s
+
+[Lectio10]
+@Tempora/Pent12-0:Lectio7:s/.* Isajáš,/Isajáš,/s s/$/~/
+@Tempora/Pent12-0:Lectio8:s/Zatímco.*//s
+
+[Lectio11]
+@Tempora/Pent12-0:Lectio8:s/.* Zatímco/Zatímco/s s/$/~/
+@Tempora/Pent12-0:Lectio9:s/Znalec.*//s
+
+[Lectio12]
+@Tempora/Pent12-0:Lectio9:s/.* Znalec/Znalec/s

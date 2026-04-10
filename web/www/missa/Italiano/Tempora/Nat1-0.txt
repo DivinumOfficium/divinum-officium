@@ -1,13 +1,5 @@
-nk]
-Dominica Infra Octavam Nativitatis;;Semiduplex;;5;;ex Sancti/12-25
-
-[Rank1960]
-Dominica Infra Octavam Nativitatis;;Semiduplex;;5.5;;ex Sancti/12-25
-
-[Rule]
-Gloria
-Credo
-Prefatio=Nat
+[Officium]
+Dominica Infra Octavam Nativitatis
 
 [Introitus]
 !Sap 18:14-15.
@@ -21,10 +13,9 @@ v. Mentre tutto era immerso in profondo silenzio, e la notte era a metà del suo
 Onnipotente e sempiterno Iddio, indirizza i nostri atti secondo il tuo beneplacito, affinché possiamo abbondare in opere buone, in nome del tuo diletto Figlio:
 $Qui tecum
 
-[Commemoratio Oratio]
-!Pro Octava Nativitatis:
-Concedine, onnipotente Iddio, che la nuova nascita del tuo Unigenito secondo al carne liberi noi, che l’antica schiavitù tiene sotto il giogo del peccato.
-$Per eundem
+[Commemoratio Oratio] (nisi rubrica 1960)
+!Per l'Ottava del Natale.
+@Sancti/12-25m3:Oratio
 
 [Lectio]
 Lettura della Lettera del B. Paolo Ap. ai Gàlati.
@@ -51,10 +42,9 @@ Iddio ha consolidato la terra, che non vacillerà: il tuo trono, o Dio, è stabi
 Concedi, Te ne preghiamo, o Dio onnipotente, che questa offerta, presentata alla tua maestà, ci ottenga la grazia di una fervida pietà e ci assicuri il possesso della eternità beata.
 $Per Dominum
 
-[Commemoratio Secreta]
-!Pro Octava Nativitatis:
-Santifica, Signore, con la nuova nascita del tuo Unigenito, i doni offerti, e purifica noi dalle macchie dei nostri peccati.
-$Per eundem
+[Commemoratio Secreta] (nisi rubrica 1960)
+!Per l'Ottava del Natale.
+@Sancti/12-25m3:Secreta
 
 [Communio]
 !Matt 2:20
@@ -64,7 +54,6 @@ Prendi il bambino e sua madre, e va nella terra di Israele: quelli che volevano 
 Per l’efficacia di questo mistero, o Signore, siano distrutti i nostri vizii e compiuti i nostri giusti desiderii.
 $Per Dominum
 
-[Commemoratio Postcommunio]
-!Pro Octava Nativitatis:
-Fa’, te ne preghiamo, o Dio, che il Salvatore del mondo, oggi nato, come è l’autore della nostra divina rigenerazione, così ci sia anche datore dell’immortalità:
-$Qui tecum
+[Commemoratio Postcommunio] (nisi rubrica 1960)
+!Per l'Ottava del Natale.
+@Sancti/12-25m3:Postcommunio

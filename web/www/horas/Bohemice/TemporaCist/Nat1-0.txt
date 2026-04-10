@@ -1,0 +1,56 @@
+[Comment]
+This file is to be used when the Sunday falls on Dec 29.
+
+[Ant Matutinum]
+@SanctiCist/12-25::6:s/98/20/
+;;21
+@Tempora/Epi1-0:Ant 3:s/$/;;22/
+;;23
+Když se narodil Pán, * chór Andělů zpíval tato slova: Sláva na výsostech Bohu, a na zemi pokoj lidem dobré vůle.;;24
+;;25
+@SanctiCist/12-25::2:s/86/26/
+;;27
+@SanctiCist/12-25:Ant Vespera 3:2:s/110/28/
+;;29
+@SanctiCist/12-25:Ant Vespera 3:3:s/111/30/
+;;31
+@SanctiCist/12-25::7
+
+[Lectio5]
+@Tempora/Nat1-0:Lectio4:s/Obě .*//s
+
+[Lectio6]
+@Tempora/Nat1-0:Lectio4:s/.* Obě /Obě /s s/$/~/
+@Tempora/Nat1-0:Lectio5:s/Nikdo .*//s
+
+[Lectio7]
+@Tempora/Nat1-0:Lectio5:s/.* Nikdo /Nikdo /s s/$/~/
+@Tempora/Nat1-0:Lectio6:s/To, co .*//s
+
+[Lectio8]
+@Tempora/Nat1-0:Lectio6:s/.* To, co /To, co /s
+
+[Lectio9]
+@Tempora/Nat1-0:Lectio7
+
+[Lectio10]
+@Tempora/Nat1-0:Lectio8:s/Totiž .*//s
+
+[Lectio11]
+@Tempora/Nat1-0:Lectio8:s/.* Totiž /Totiž /s
+
+[Lectio12]
+@Tempora/Nat1-0:Lectio9
+
+[Ant Laudes] 
+Zrodila matka * Krále, jehož jméno je věčné, a mateřské radosti spojila s panenskou ctí: a nebylo před ní podobné nalezeno, ani její následovnice, alleluja.
+Anděl * řekl pastýřům: „Zvěstuji vám velikou radost: dnes se vám narodil Spasitel světa, alleluja.“
+Shromáždilo se * s Andělem množství nebeských zástupů, které chválily <i>Boha</i> těmito slovy: „Sláva na výsostech Bohu, a na zemi pokoj lidem dobré vůle, alleluja.“
+Pastýři * si řekli mezi sebou: „Pojďme do Betléma, abychom uzřeli toto Slovo, které se stalo <i>tělem</i>, jež nám Pán ukázal, alleluja.“
+A přišli * ve spěchu: a nalezli Marii i Josefa, a nemluvňátko položené v jeslích, alleluja.
+
+[Versum 2]
+@:Versum 1
+
+[Versum 3]
+@:Versum 1

@@ -1,0 +1,34 @@
+[Lectio5]
+@Sancti/07-25:Lectio4
+
+[Lectio6]
+@Sancti/07-25:Lectio5:s/Pak se vrátil .*//s
+
+[Lectio7]
+@Sancti/07-25:Lectio5:s/.* Pak se vrátil /Pak se vrátil /s
+
+[Lectio8]
+@Sancti/07-25:Lectio6
+(sed rubrica cisterciensis)
+@Sancti/07-25:Lectio6:s/, kde je .* právě// s/tedy .* přenesení, //
+
+[Lectio9]
+@Sancti/07-25:Lectio7:s/Je totiž jasné.*//s
+(sed rubrica cisterciensis)
+@Sancti/07-25:Lectio7:s/Z tohoto důvodu.*//s
+
+[Lectio10]
+@Sancti/07-25:Lectio7:s/.* Je totiž jasné/Je totiž jasné/s s/$/~/
+@Sancti/07-25:Lectio8:s/Oni totiž chtěli.*//s
+
+[Lectio10] (rubrica cisterciensis)
+@Sancti/07-25:Lectio7:s/.* Pravili:/Pravili:/s s/$/~/
+@Sancti/07-25:Lectio8:s/Oni totiž chtěli.*//s
+
+[Lectio11]
+@Sancti/07-25:Lectio8:s/.* Oni totiž chtěli/Oni totiž chtěli/s
+
+[Lectio12]
+@Sancti/07-25:Lectio9
+(sed rubrica cisterciensis)
+@Sancti/07-25:Lectio9:s/Všimni si však.*//

@@ -1,0 +1,21 @@
+[Lectio2]
+@Tempora/Epi4-0:Lectio2:s/-14/-11/ s/12 .*//s
+
+[Lectio3]
+@Tempora/Epi4-0:Lectio2:s/8-/12-/ s/8 .*12 /12 /s
+
+[Lectio5]
+@Tempora/Epi4-0:Lectio4:s/Tot ígitur .*//s
+
+[Lectio6]
+@Tempora/Epi4-0:Lectio4:s/.* Tot ígitur /Tot ígitur /s s/$/~/
+@Tempora/Epi4-0:Lectio5:s/Vanitáti quippe.*//s
+
+[Lectio7]
+@Tempora/Epi4-0:Lectio5:s/.* Vanitáti /Vanitáti /s
+
+[Lectio10]
+@Tempora/Epi4-0:Lectio8:s/Tunc .*//s
+
+[Lectio11]
+@Tempora/Epi4-0:Lectio8:s/.* Tunc /Tunc /s

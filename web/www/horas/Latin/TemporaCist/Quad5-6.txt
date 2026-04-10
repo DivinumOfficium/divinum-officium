@@ -1,0 +1,23 @@
+@Tempora/Quad5-6
+
+[Lectio1]
+@Tempora/Quad5-6:Lectio1:s/Quando .*// s/occísum!/occísum?/
+
+[Lectio2]
+@Tempora/Quad5-6:Lectio1:s/.* (?=Quando )//s s/$/~/
+@Tempora/Quad5-6:Lectio2:s/Rami .*//
+
+[Lectio3]
+@Tempora/Quad5-6:Lectio3:s/.* (?=Quam )// 
+
+[Responsory1]
+@TemporaCist/Quad5-0:Responsory4
+
+[Responsory2]
+@TemporaCist/Quad5-0:Responsory5
+
+[Responsory3]
+@TemporaCist/Quad5-0:Responsory6
+
+[Ant 2]
+Pater juste, * mundus te non cognóvit: ego autem novi te, quia tu me misísti.

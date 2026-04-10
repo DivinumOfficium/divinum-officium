@@ -1,8 +1,13 @@
-[Rank]
-Octava Sanctissimi Corporis Christi cum Octava privilegiata II ordinis;;Duplex majus;;5;;ex Tempora/Pent01-4
+[Officium]
+In Octava Sanctissimi Corporis Christi
 
-[Rank1960]
-Feria V infra Hebdomadam II post Octavam Pentecostes;;Feria;;1
+[Officium] (rubrica 196 aut rubrica 1955)
+Feria V infra Hebdomadam II post Octavam Pentecostes
+
+[Rank]
+;;Duplex majus;;6.3;;ex Tempora/Pent01-4
+(sed rubrica 196 aut rubrica 1955)
+;;Feria;;1
 
 [Rule]
 ex Tempora/Pent01-4;

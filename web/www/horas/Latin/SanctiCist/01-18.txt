@@ -1,0 +1,87 @@
+@Sancti/01-18
+
+[Rule]
+12 lectiones
+Psalmi Dominica
+
+[Lectio1]
+@Sancti/02-22::1-4:s/-5/-2/
+
+[Lectio2]
+@Sancti/02-22:Lectio1:2:s/1-/3-/
+@Sancti/02-22:Lectio1:5-7
+
+[Lectio3]
+@SanctiM/01-18:Lectio2
+
+[Lectio4]
+@SanctiM/01-18:Lectio3
+
+[Responsory1]
+@Sancti/02-22:Responsory7
+
+[Responsory2]
+@SanctiCist/06-29:Responsory2
+
+[Responsory3]
+@Sancti/02-22
+
+[Responsory4]
+@SanctiCist/06-29:Responsory4
+
+[Lectio5]
+@SanctiM/01-18
+
+[Lectio6]
+@SanctiM/01-18
+
+[Lectio7]
+@SanctiM/01-18
+
+[Lectio8]
+@SanctiM/01-18
+
+[Responsory5]
+@Sancti/06-29:Responsory4
+
+[Responsory6]
+@SanctiCist/06-29:Responsory6
+
+[Responsory7]
+@Sancti/06-29:Responsory5
+
+[Responsory8]
+@SanctiCist/06-29:Responsory8
+
+[Lectio9]
+@SanctiM/01-18
+
+[Lectio10]
+@Sancti/01-18:Lectio7:s/.* Sed Petrus /Sed Petrus /s s/$/~/
+
+[Lectio11]
+@Sancti/01-18:Lectio8:s/O in .*//
+
+[Lectio12]
+@Sancti/01-18:Lectio8:s/.* (O in )/$1/
+
+[Responsory9]
+@SanctiCist/06-29
+
+[Responsory10]
+@Sancti/02-22:Responsory2
+
+[Responsory11]
+@Sancti/02-22:Responsory6
+
+[Responsory12]
+@SanctiCist/06-29
+
+[Evangelium]
+@Sancti/01-18
+
+[Versum 2]
+@Sancti/02-22
+
+[Versum 3]
+@Sancti/02-22

@@ -1,0 +1,26 @@
+[Lectio5]
+@Sancti/01-18:Lectio4:s/At that.*//s
+
+[Lectio6]
+@Sancti/01-18:Lectio4:s/.*At that/At that/s s/$/~/
+@Sancti/01-18:Lectio5:s/O most.*//s
+
+[Lectio94]
+@Sancti/01-18:Lectio4:s/At that.*//s
+@Sancti/01-18:Lectio5:s/.*(O most.*). The.*/$1. /s
+@Sancti/01-18:Lectio6
+
+[Lectio7]
+@Sancti/01-18:Lectio5:s/.*O most/O most/s
+
+[Lectio9]
+@Sancti/01-18:Lectio7:s/Peter had.*//s
+
+[Lectio10]
+@Sancti/01-18:Lectio7:s/.*Peter had/Peter had/s
+
+[Lectio11]
+@Sancti/01-18:Lectio8:s/God bless.*//s
+
+[Lectio12]
+@Sancti/01-18:Lectio8:s/.*?God bless/God bless/s

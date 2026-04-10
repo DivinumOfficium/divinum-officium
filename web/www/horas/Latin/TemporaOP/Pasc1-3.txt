@@ -1,0 +1,48 @@
+[Rank]
+@Tempora/Pasc1-3
+
+[Rule]
+no Te Deum
+
+[Lectio1]
+De libro Apocalýpsis beáti Joánnis Apóstoli
+!Apo 2:18-20
+18 Ángelo Thyatíræ Ecclésiæ scribe: Hæc dicit Fílius Dei, qui habet óculos tamquam flammam ignis, et pedes ejus símiles aurichálco:
+19 Novi ópera tua, et fidem, et caritátem tuam, et ministérium, et patiéntiam tuam, et ópera tua novíssima plura prióribus.
+20 Sed hábeo advérsus te pauca: quia permíttis mulíerem Jézabel, quæ se dicit prophéten, docére, et sedúcere servos meos, fornicári, et manducáre de idolóthytis.
+
+[Responsory1]
+@Tempora/Pasc3-1::1-2
+@Commune/C8:Capitulum Laudes:2 s/v/R/ s/ornátam// s/parátam sicut/ornátam tamquam/
+@Tempora/Pasc3-1::2 s/\*/R./
+
+[Lectio2]
+!Apo 2:23-26
+23 Vobis autem dico,
+24 et céteris qui Thyatíræ estis: quicúmque non habent doctrínam hanc, et qui non cognovérunt altitúdines Sátanæ, quemádmodum dicunt, non mittam super vos áliud pondus:
+25 tamen id quod habétis, tenéte donec véniam.
+26 Et qui vícerit, et custodíerit usque in finem ópera mea, dabo illi potestátem super gentes,
+
+[Responsory2]
+@Tempora/Pasc3-2:Responsory1:1-2 s/:\s*\n\* (.)/, \l$1/ s/, (et.*)/,\n* \u$1/
+V. Ab intus, in fímbriis áureis, circumamícta varietátibus.
+@Tempora/Pasc3-2:Responsory1:1-2 s/:\s*\n\* (.)/, \l$1/ s s/.*, (et.*)/R. \u$1/
+
+[Lectio3]
+!Apo 3:1
+1 Et Ángelo Ecclésiæ Sardis scribe: Hæc dicit qui habet septem spíritus Dei, et septem stellas: Scio ópera tua, quia nomen habes quod vivas, et mórtuus es.
+2 Esto vígilans, et confírma cétera, quæ moritúra erant. Non enim invénio ópera tua plena coram Deo meo.
+3 In mente ergo habe quáliter accéperis, et audíeris, et serva, et pœniténtiam age. Si ergo non vigiláveris, véniam ad te tamquam fur et néscies qua hora véniam ad te.
+
+[Responsory3]
+@Tempora/Pasc3-2:Responsory2:1-2
+V. Coróna áurea super caput ejus, expréssa signo sanctitátis.
+@Tempora/Pasc3-2:Responsory2:2 s/\*/R./
+&Gloria
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^(.*)(, .*)./R. $1$2$2./
+
+[Ant 2]
+@Tempora/Pasc1-0:Ant 3C
+
+[Ant 3]
+@Tempora/Pasc2-0:Ant 1C

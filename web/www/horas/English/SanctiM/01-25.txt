@@ -1,0 +1,23 @@
+[Lectio5]
+@Sancti/01-25:Lectio4:s/ to come.*/to come./
+
+[Lectio6]
+@Sancti/01-25:Lectio4:3 s/.*to come. // s/$/~/
+@Sancti/01-25:Lectio5:s/Paul.*/Paul./
+
+[Lectio7]
+@Sancti/01-25:Lectio5:s/.*Paul.//
+
+[Lectio9]
+@Commune/C1:Lectio7 in 2 loco:s/ He taugh.*//
+
+[Lectio10]
+@Commune/C1:Lectio7 in 2 loco:s/.*He taugh/He taugh/s s/$/~/
+@Commune/C1:Lectio8 in 2 loco:s/ Nevertheless.*//
+
+[Lectio11]
+@Commune/C1:Lectio8 in 2 loco:s/.*Nevertheless/Nevertheless/ s/$/~/
+@Commune/C1:Lectio9 in 2 loco:s/But it.*//g
+
+[Lectio12]
+@Commune/C1:Lectio9 in 2 loco:s/.* But it/But it/g

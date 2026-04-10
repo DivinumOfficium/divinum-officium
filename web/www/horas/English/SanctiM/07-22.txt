@@ -1,0 +1,15 @@
+[Lectio7]
+@Sancti/07-22:Lectio6:s/ As we.*//s
+
+[Lectio8]
+@Sancti/07-22:Lectio6:s/.* As we/As we/s
+
+[Lectio9]
+@Sancti/07-22:Lectio7:s/She.*//s
+
+[Lectio10]
+@Sancti/07-22:Lectio7:s/.*She/She/s s/$/~/
+@Sancti/07-22:Lectio8:s/The.*//s
+
+[Lectio11]
+@Sancti/07-22:Lectio8:s/.* The/The/s

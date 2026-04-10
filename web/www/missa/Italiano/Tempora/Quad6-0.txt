@@ -1,5 +1,5 @@
-[Rank]
-Dominica in Palmis;;I classis Semiduplex;;6
+[Officium]
+Dominica in Palmis
 
 [Rule]
 no Gloria
@@ -91,7 +91,7 @@ o Signore, rimedio della nostra salute.
 $Per Dominum
 _
 _
-v. Preghiamo. O Dio, che raduni le cose disperse e conservi quelle radunate; che benedicesti il popolo uscito incontro a Gesù con rami in mano; degnati di bene + dire anche questi rami di palma e di olivo, che i tuoi servi prendono con fede in onore del tuo nome; affinché rechino la tua benedizione a quanti abitano nei luoghi in cui sono portati; e, allontanata cosi ogni avversità, la tua destra protegga coloro che sono stati redenti da Gesù Cristo, tuo Figlio, Signore nostro.
+v. Preghiamo. O Dio, che raduni le cose disperse e conservi quelle radunate; che benedicesti il popolo uscito incontro a Gesù con rami in mano; degnati di bene + dire anche questi rami di palma e di olivo, che i tuoi servi prendono con fede in onore del tuo nome; affinché rechino la tua benedizione a quanti abitano nei luoghi in cui sono portati; e, allontanata così ogni avversità, la tua destra protegga coloro che sono stati redenti da Gesù Cristo, tuo Figlio, Signore nostro.
 $Qui tecum
 _
 _
@@ -220,6 +220,12 @@ V. Voi che temete il Signore, lodatelo: voi tutti, o prole di Giacobbe. glorific
 V. Sarà chiamata col nome del Signore la generazione che verrà; e i cieli annunzieranno la giustizia di lui.
 V. Al popolo che sorgerà, e che sarà opera del Signore.
 
+[Evangelium]
+@:Evangelium1
+@:Evangelium2
+@:Evangelium3
+@:Evangelium4
+
 [Evangelium1]
 Passione di nostro Signore Gesù Cristo secondo san Matteo.
 !Matt 26:1-75; 27:1-66.
@@ -241,14 +247,8 @@ S. Il Signore ti sia nel cuore e sulle labbra, affinché in modo degno e conveni
 _
 v. Il giorno dopo, successivo a quello della Parasceve, si radunarono i capi dei sacerdoti e i farisei presso Pilato, e gli dissero: «Signore, ci siamo rammentati che quel seduttore, quand'era vivo disse: «Dopo tre giorni io resusciterò». Comanda dunque che ne sia custodito il sepolcro fino al terzo giorno, perché non vengano i suoi discepoli a rubarlo, e dicano poi al popolo: Egli è risorto da morte. Questo ultimo inganno sarebbe peggiore del primo». Disse loro Pilato: «Avete le guardie; andate e custodite il sepolcro come vi pare». Ed essi partirono, e coi soldati resero sicuro il sepolcro, e ne sigillarono la pietra.
 
-[Evangelium]
-@:Evangelium1
-@:Evangelium2
-@:Evangelium3
-@:Evangelium4
-
 [Offertorium]
-!Ps 68:21-22.
+!Ps 68:21-22
 Oltraggio e dolore mi spezzano il cuore; attendevo compassione da qualcuno, e non ci fu; qualcuno che mi consolasse e non lo trovai: per cibo mi diedero del fiele e assetato mi hanno dato da bere dell'aceto.
 
 [Secreta]
@@ -256,8 +256,8 @@ Concedi, te ne preghiamo, o Signore, che quest'ostia offerta alla presenza della
 $Per Dominum
 
 [Communio]
-!Matt 26:42.
-Padre mio, se non è possibile che questo calice passi senza chi lo beva, sia fatta la tua volontà.
+!Matt 26:42
+Padre mio, se non è possibile che questo calice passi senza chi io beva, sia fatta la tua volontà.
 
 [Postcommunio]
 O Signore, per l’efficacia di questo sacramento, siano purgati i nostri vizi e appagati i nostri giusti desideri.  

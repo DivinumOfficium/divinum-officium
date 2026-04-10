@@ -1,0 +1,55 @@
+@Tempora/Quad5-0
+
+[Responsory Vespera 1]
+@Tempora/Quad5-0:Responsory2
+&Gloria
+@Tempora/Quad5-0:Responsory2:1
+
+[Invit]
+@Psalterium/Special/Matutinum Special:Invit Quad5_
+
+[In Finem Lectio]
+r. Hæc dicit Dóminus Deus: Convertímini ad me, et salvi éritis.
+$Deo gratias
+
+[Lectio1]
+@Tempora/Quad5-0::1-7 s/-6/-5/
+@:In Finem Lectio
+
+[Lectio2]
+@Tempora/Quad5-0::1 s/7-13/6-15/
+@Tempora/Quad5-0:Lectio1:8
+@Tempora/Quad5-0::2-8
+@Tempora/Quad5-0:Lectio3:2-3 s/: et.*/./
+@:In Finem Lectio
+
+[Responsory2]
+@Tempora/Quad5-1::1-3 s/\n\* (.)/ \l$1/ s/: /:\n* /
+@Tempora/Quad5-1::1-2 s/\n\* (.)/ \l$1/ s/.*?: /R. /
+
+[Lectio3]
+
+[Lectio7]
+@Tempora/Quad5-0::s/ Cæléstem.*//
+
+[Responsory3]
+@Tempora/Quad5-0:Responsory6
+
+[Capitulum Laudes]
+@Psalterium/Special/Major Special:Quad5 Vespera
+
+[Ant 2]
+Quis ex vobis árguet me de peccáto? Si veritátem dico vobis, quare non créditis mihi? Qui ex Deo est, verba Dei audit: proptérea vos non audítis, quia ex Deo non estis. 
+
+[Evangelium]
+@Tempora/Quad5-0
+
+[Capitulum Sexta]
+@Psalterium/Special/Prima Special:Quad5
+$Deo gratias
+
+[Capitulum Nona]
+@Psalterium/Special/Minor Special:Quad5 Sexta_
+
+[Ant 3]
+@Tempora/Quad5-0:Ant Nona

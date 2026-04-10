@@ -1,0 +1,146 @@
+[resurrectionis]
+{initial-style:0;%%(c4) V/. Be(g')ne(e)di(f)cá(ed)mus(c.) Dó(ghG'FEgv.f!hj)mi(ivHG'h)no,(i.) (;) al(ji~)le(hvGF)lú(gf~){ia},(ede.) (,) al(gf~)le(evDCde)lú(fvED){ia}.(c.) (::) R/. De(gef)o(evDC.) grá(ghG'FEgv.f!hj)ti(ivHG'h)as,(i.) (;) al(ji~)le(hvGF)lú(gf~){ia},(ede.) (,) al(gf~)le(evDCde)lú(fvED){ia}.(c.) (::)}
+
+[solemnis1]
+{initial-style:0;%%(f3) V/. Be(fc)ne(ef)di(f)cá(f)mus(f_e) Dó(fhF'Ef.)(,)(hif/ge/fgf.)(,)(hjI//F'hvG'EC'ef)mi(fe)no.(fhG'Ef.) (::) R/. De(fc/ef)o(f_e) grá(fhF'Ef.)(,)(hif/ge/fgf.)(,)(hjI//F'hvG'EC'ef)ti(fe)as.(fhG'Ef.) (::)}
+(sed rubrica monastica)
+{initial-style:0;%%(f3) V/. Be(fc)ne(ef)di(f)cá(f)mus(fe) Dó(f_gF'Ef./,/hif'/ge./fgf./,/hjI!F'_/hvG'EC.ef)mi(fe)no.(f_0hG'Ef.) (::) R/. De(fc/ef)o(fe) grá(f_gF'Ef./,/hif'/ge./fgf./,/hjI/F'_/hvG'EC.ef)ti(fe)as.(f_0hG'Ef.) (::)}
+
+[solemnis2]
+{initial-style:0;%%(c4) V/. Be(j')ne(i)di(g')cá(h)mus(g.) Dó(ef!gvv//deDC.)(,)(jvIG'hg.ef!gvv//deDC.)(,)(cdefe)mi(dc)no.(c.) (::) R/. De(jvIG'h)o(gv.ef!gvv//deDC.) (,) (jvIG'hg.ef!gvv//deDC.) (,) grá(cdefe)ti(dc)as.(c.) (::)}
+(sed rubrica monastica)
+{initial-style:0;%%(c4) V/. Be(f)ne(fe)di(ffvE'C)cá(ef)mus(f.) (,)Dó(fh!ijjvjvI'GF'___!gwhGF)mi(fef)no.(f.) (::) R/. De(fe/ffvE'Cef)o(f.) (,) grá(fh!ijjvjvI'GF'___!gwhGF)ti(fef)as.(f.) (::)}
+
+[solemnis3]
+{initial-style:0;%%(c4) V/. Be(f)ne(f)di(gh)cá(ixhgivHF'gffd!ewf)mus(f.) (,) Dó(ixf!gwhg/ih)mi(gf)no.(f.) (::) R/. De(fgh)o(ixhgivHF'gffd!ewf.) (,) grá(ixf!gwhg/ih)ti(gf)as.(f.) (::)}
+(sed rubrica monastica)
+{initial-style:0;%%(c4) V/. Be(g)ne(g)di(hi)cá(i_hjvIG'hggeg.higge/fg)mus(g.) Dó(gh!ij)mi(hg)no.(g.) (::) R/. De(gh!ivih/jvIG'hggeg.higge/fg)o(g.) grá(gh!ij)ti(hg)as.(g.) (::)}
+
+[solemnis31] (rubrica monastica)
+{initial-style:0;%%(c4) V/. Be(g)ne(g)di(h')cá(g)mus(jj) Dó(jkJ'IGhfg./,/ghgj.jkJ'IGhfgge/fvEDC.cd!efE'C)mi(dc)no.(c.) (::) R/. De(ghg)o(jj) grá(jkJ'IGhfg./,/ghgj.jkJ'IGhfgge/fvEDC.cd!efE'C)ti(dc)as(c.) (::)}
+
+[minus solemnis1]
+@:solemnis1
+(sed rubrica monastica)
+@:minus solemnis3
+
+[minus solemnis2]
+@:solemnis2
+(sed rubrica monastica)
+{initial-style:0;%%(c4) V/. Be(g)ne(g)di(hj)cá(j)mus(jh/jkjjo/ghf.) Dó(h_ijvIH'G)mi(fg)no.(g.) (::) R/. De(g!hj)o(jh/jkj/jo/ghf.) (,) grá(h_ijvIH'G)ti(fg)as.(g.) (::)}
+
+[minus solemnis3]
+@:solemnis3
+(sed rubrica monastica)
+{initial-style:0;%%(c4) V/. Be(g)ne(g)di(hi)cá(i)mus(ig/ijH'GFg.) (,) Dó(gikvkjkvJI'Gijh'hg)mi(fg)no.(g.) (::) R/. De(g!hi)o(ig/ijH'GFg.) (,) grá(gikvkjkvJI'Gijh'hg)ti(fg)as.(g.) (::)}
+
+[festivus major1]
+@:festivus1
+(sed rubrica monastica)
+@:festivus major3
+
+[festivus major2]
+@:festivus2
+(sed rubrica monastica)
+{initial-style:0;%%(c4) V/. Be(g)ne(g)di(gffo)cá(df!gh)mus(g_') (,) Dó(gj/jvIH'GF/hiH'G)mi(fg)no.(g.) (::) R/. De(gffo/df!gh)o(g_') (,) grá(gj/jvIH'GF/hiH'G)ti(fg)as.(g.) (::)}
+
+[festivus major3]
+@:festivus3
+(sed rubrica monastica)
+{initial-style:0;%%(f3) V/. Be(fe)ne(f)di(hg)cá(h_0iHF'E)mus(f.) (,) Dó(j_ijvIH'GF.ghf)mi(ef)no.(f.) (::) R/. De(fefhg/h_0iHF'E)o(f.) (,) grá(j_ijvIH'GF.ghf)ti(ef)as.(f.) (::)}
+
+[festivus1]
+{initial-style:0;%%(f3) V/. Be(fe)ne(f)di(hg)cá(hiHF'E)mus(f.) (,) Dó(j_ijvIH'GF.ghf)mi(ef)no.(f.) (::) R/. De(fefhg/hiHF'E)o(f.) (,) grá(j_ijvIH'GF.ghf)ti(ef)as.(f.) (::)}
+
+[festivus1] (rubrica monastica)
+@:festivus3
+
+[festivus2]
+{initial-style:0;%%(c4) V/. Be(j)ne(hgh')di(ixi)cá(hvGF'g)mus(f.) (,) Dó(ixjkJH'ij./f!gwh/ih)mi(gf)no.(f.) (::) R/. De(j)o(ixhgh'ivH'GF'gf.0) (,) grá(ixjkJH'ij./f!gwh/ih)ti(gf)as.(f.) (::)}
+
+[festivus2] (rubrica monastica)
+{initial-style:0;%%(c4) V/. Be(h!ij)ne(i)di(j)cá(ih)mus(g_f) Dó(ghG'F)mi(ef)no.(f.) (::) R/. De(h!ijI'H)o(g_f) grá(ghG'F)ti(ef)as.(f.) (::)}
+
+[festivus3]
+{initial-style:0;%%(c4) V/. Be(ghg'g)ne(f)di(hj)cá(jvvI'HG'F)mus(hih') Dó(g)mi(fg)no.(g.) (::) R/. De(ghggf)o(hj) grá(jvvI'HG'F//hiH'G)ti(fg)as.(g.) (::)}
+
+[festivus3] (rubrica monastica)
+{initial-style:0;%%(c4) V/. Be(d)ne(h')di(g)cá(h)mus(ijIG.) Dó(hi/jh)mi(gh)no.(h.) (::) R/. De(dhgh)o(ijIG.) grá(hi/jh)ti(gh)as.(h.) (::)}
+
+[festivus minor1]
+@:festivus minor3
+
+[festivus minor2]
+{initial-style:0;%%(c4) V/. Be(ixfg!hi)ne(h)di(gh)cá(fe)mus(d) Dó(fvED'e)mi(cd)no.(d.) (::) R/. De(ixfg!hi)o(h/ghF'ED) grá(fvED'e)ti(cd)as.(d.) (::)}
+(sed rubrica 1960 aut rubrica monastica)
+@:festivus minor3
+
+[festivus minor3]
+{initial-style:0;%%(c4) V/. Be(h)ne(g')di(h)cá(gf)mus(e_[oh:h]d) Dó(gh!jvIH')mi(g)no.(h.) (::) R/. De(h_ghvGF)o(e_[oh:h]d) grá(gh!jvIH')ti(g)as.(h.) (::)}
+(sed rubrica monastica)
+{initial-style:0;%%(c4) V/. Be(h)ne(g)di(h')cá(g)mus(d.) Dó(fvED')mi(c)no.(d.) (::) R/. De(hg!hg)o(d.) grá(fvED')ti(c)as.(d.) (::)}
+
+[festivus 8vam priv1]
+@:festivus minor1
+(sed rubrica monastica)
+@:festivus 8vam priv3
+
+[festivus 8vam priv2]
+@:festivus minor2
+(sed rubrica monastica)
+@:festivus 8vam priv3
+
+[festivus 8vam priv3]
+@:festivus minor3
+(sed rubrica monastica)
+{initial-style:0;%%(c3) V/. Be(h)ne(h)di(h)cá(h_0iG'F)mus(ef) Dó(gf!gh)mi(fe)no.(e.) (::) R/. De(h_0iG'F)o(ef) grá(gf!gh)ti(fe)as.(e.) (::)}
+
+[festivus BMV]
+{initial-style:0;%%(c4) V/. Be(df!gh)ne(g')di(f)cá(e.)mus(d.) Dó(fvDC'd//cd!fg)mi(f)no.(ed..) (::) R/. De(df!ghG'F)o(ed..fvDC'd//cd) grá(fg)ti(f)as.(ed..) (::)}
+(sed rubrica monastica)
+{initial-style:0;%%(c4) V/. Be(df)ne(g')di(h)cá(gf)mus(e_d//fvDC'd//cd) Dó(fg)mi(f)no.(ed..) (::) R/. De(df!ghG'F)o(e_d//fvDC'd//cd) grá(fg)ti(f)as.(ed..) (::)}
+
+[BMV sabbato]
+{initial-style:0;%%(c4) V/. Be(g')ne(f)di(e')cá(f)mus(d) Dó(fhg) mi(fg)no.(g.) (::) R/. De(gvFE'f)o(d)  grá(fhg)ti(fg)as.(g.) (::)}
+(sed rubrica monastica)
+{initial-style:0;%%(c4) V/. Be(g)ne(g')di(e)cá(fe)mus(d) Dó(fhg) mi(fg)no.(g.) (::) R/. De(ge/fe)o(d)  grá(fhg)ti(fg)as.(g.) (::)}
+
+[dominicalis minor]
+{initial-style:0;%%(c4) V/. Be(ixhi)ne(h')di(g)cá(h.)mus(d.) (,) Dó(ixfgh!ivHGfvED)mi(cd)no.(d.) (::) R/. De(ixhi)o(hg/hd..) (,) grá(ixfgh!ivHGfvED)ti(cd)as.(d.) (::)}
+
+[dominicalis major]
+{initial-style:0;%%(c4) V/. Be(f)ne(f')di(g)cá(gv_[oh:h]FE)mus(d_c) Dó(ixf!gwhg/hih)mi(gf)no.(f.) (::) R/. De(fggvFE)o(d_c) grá(ixf!gwhg/hih)ti(gf)as.(f.) (::)}
+(sed rubrica monastica)
+{initial-style:0;%%(c4) V/. Be(e)ne(h')di(i)cá(hg)mus(gh) Dó(gvFE)mi(de)no.(e.) (::) R/. De(eh'1!ivH'G)o(gh) grá(gvFE)ti(de)as.(e.) (::)}
+
+[simplicis]
+{initial-style:0;%%(c4) V/. Be(h')ne(g)di(h)cá(gg)mus(d.) Dó(fvED')mi(c)no.(d.) (::) R/. De(hgh/g'g)o(d.) grá(fvED')ti(c)as.(d.) (::)}
+(sed rubrica monastica)
+@:simplicis3
+
+[simplicis2] (rubrica monastica)
+{initial-style:0;%%(c4) V/. Be(d)ne(e)di(f)cá(gh)mus(g) Dó(fe)mi(de)no.(e.) (::) R/. De(gh)o(g) grá(fe)ti(de)as.(e.) (::)}
+
+[simplicis3] (rubrica monastica)
+{initial-style:0;%%(c4) V/. Be(f)ne(g)di(f')cá(g)mus(f') Dó(d)mi(cd)no.(d.) (::) R/. De(f!gfg)o(f') grá(d)ti(cd)as.(d.) (::)}
+
+[ferialis major]
+{initial-style:0;%%(c4) V/. Be(h')ne(h)di(h)cá(fh)mus(h.) Dó(gh)mi(g)no.(gvFE.) (::) R/. De(h')o(h) grá(gh)ti(g)as.(gvFE.) (::)}
+(sed rubrica monastica)
+{initial-style:0;%%(c4) V/. Be(h)ne(h)di(h)cá(fh)mus(h) Dó(gh)mi(g)no.(gvFE.) (::) R/. De(h)o(h) grá(gh)ti(g)as.(gvFE.) (::)}
+
+[ferialis]
+@:ferialis major
+(sed rubrica monastica)
+@:simplicis
+
+[ferialis2] (rubrica monastica)
+@:simplicis2
+
+[ferialis3] (rubrica monastica)
+@:simplicis3
+
+[paschalis]
+{initial-style:0;%%(c3) V/. Be(e)ne(g')di(h)cá(i)mus(i.) Dó(hi_/ji__ig.ivHG'FEfgf')mi(f)no.(e.) (::) R/. De(e.g!hwi)o(hi_/ji__ig.ivHG'FE) grá(fgf')ti(f)as.(e.) (::)}
+(sed rubrica monastica)
+{initial-style:0;%%(c3) V/. Be(e)ne(g')di(h)cá(i)mus(i) Dó(hi_/ji__ig.ivHG'FEfgf')mi(f)no.(e.) (::) R/. De(e.g!hwi)o(hi_/ji__ig.ivHG'FE) grá(fgf')ti(f)as.(e.) (::)}

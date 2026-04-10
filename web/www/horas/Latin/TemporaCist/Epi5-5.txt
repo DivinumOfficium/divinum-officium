@@ -1,0 +1,20 @@
+@Tempora/Epi5-5
+
+[Lectio1]
+@Tempora/Epi5-6
+
+[Lectio2]
+@Tempora/Epi5-6::1-4:s/-11/-12/
+@Tempora/Epi5-6:Lectio3:2:s/Tu autem .*//
+
+[Lectio3]
+@Tempora/Epi5-6:Lectio3:s/12 .* (Tu autem)/12 $1/
+
+[Responsory1]
+@TemporaCist/Epi1-1
+
+[Responsory2]
+@TemporaCist/Epi1-1
+
+[Responsory3]
+@TemporaCist/Epi1-1

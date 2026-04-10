@@ -1,0 +1,38 @@
+@Tempora/Quad6-2
+
+[Rule]
+Antiphonas horas
+Psalmi Feria
+
+[Lectio1]
+@Tempora/Quad6-2::1-5:s/-20/-17/
+
+[Lectio2]
+@Tempora/Quad6-2:Lectio1:2-8:s/15-/18-/ s/15 .*18/18/s
+
+[Lectio3]
+@Tempora/Quad6-2:Lectio2:1-4:s/-4/-3/
+
+[Responsory1]
+@TemporaCist/Quad6-0:Responsory9
+
+[Responsory2]
+@Tempora/Quad6-4:Responsory8:1-2
+V. Dormíte jam, et requiéscite; ecce appropinquábit, qui me traditúrus est:
+@Tempora/Quad6-4:Responsory8:4
+
+[Responsory3]
+@TemporaCist/Quad6-0:Responsory10
+
+[Ant Laudes]
+Vide, Dómine, * et consídera, quóniam tríbulor: velóciter exáudi me.
+Discérne causam meam, * Dómine: ab hómine iníquo et dolóso éripe me.
+Dum tribulárer, * clamávi ad Dóminum de ventre ínferi, et exaudívit me.
+Dixérunt ímpii: * Opprimámus virum justum, quóniam contrárius est opéribus nostris.
+Potestátem hábeo * ponéndi ánimam meam, et íterum suméndi eam. 
+
+[Ant 2]
+Nemo * tollit a me ánimam meam, sed ego pono eam, et íterum sumo eam. 
+
+[Ant 3]
+Animæ impiórum * fremébant advérsum me, et gravátum est cor meum super eos.

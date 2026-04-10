@@ -1,18 +1,5 @@
-[Rank]
-Dominica III Post Pascha;;Semiduplex;;5;;
-
-[Rule]
-9 Lectiones
-Duplex
-Una Antiphona
-
-[Capitulum Vespera]
-!1 Pet 2:11
-v. Carissimi: Io vi scongiuro che, come forestieri e pellegrini, vi asteniate dai desideri carnali che fan guerra all'anima.
-$Deo gratias
-
-[Versum 1]
-@Tempora/Pasc1-0:Versum 1
+[Officium]
+Dominica III Post Pascha
 
 [Ant 1]
 Fra poco * non mi vedrete più, dice il Signore: e fra un altro poco mi vedrete, perché me ne vo al Padre, alleluia, alleluia.
@@ -20,6 +7,10 @@ Fra poco * non mi vedrete più, dice il Signore: e fra un altro poco mi vedrete,
 [Oratio]
 O Dio, che mostri agli erranti la luce della tua verità affinché possano ritornare sulla via della giustizia: dà a quanti si professano di essere cristiani, e di rigettare ciò che è contrario a questo nome, e di praticare ciò che gli è conforme.
 $Per Dominum
+
+[Commemoratio]
+!Commemorazione per l'Ottava di San Giuseppe
+@Tempora/Pasc2-3:Oratio
 
 [Lectio1]
 Incomincia il libro dell'Apocalisse dell'Apostolo san Giovanni
@@ -104,7 +95,7 @@ R. E la fragranza delle sue vesti sorpassa tutti gli aromi, alleluia, alleluia.
 [Lectio7]
 Lettura del santo Vangelo secondo Giovanni
 !Giovanni 16:16-22
-In quell' occasione: Gesù disse ai suoi discepoli: Fra un poco non mi vedrete più: e fra un altro poco mi vedrete: perché me ne vo al Padre. Eccetera.
+In quell'occasione: Gesù disse ai suoi discepoli: Fra un poco non mi vedrete più: e fra un altro poco mi vedrete: perché me ne vo al Padre. Eccetera.
 _
 Omelia di sant'Agostino Vescovo
 !Trattato 101 su Giovanni, verso la fine
@@ -136,16 +127,8 @@ Questo poco tempo ci sembra lungo, perché dura ancora; quando sarà finito, com
 v. Carissimi: Io vi scongiuro che, come forestieri e pellegrini, vi asteniate dai desideri carnali che fan guerra all'anima.
 $Deo gratias
 
-[Versum 2]
-@Tempora/Pasc1-0:Versum 2
-
 [Ant 2]
 Fra un poco, * non mi vedrete più, dice il Signore: e fra un altro poco, mi vedrete: perché me ne vo al Padre, alleluia, alleluia.
-
-[Capitulum Tertia]
-!1 Pet 2:11
-v. Carissimi: Io vi scongiuro che, come forestieri e pellegrini, vi asteniate dai desideri carnali che fan guerra all'anima.
-$Deo gratias
 
 [Capitulum Sexta]
 !1 Pet 2:13-14
@@ -157,12 +140,5 @@ $Deo gratias
 v. Servi, siate sottomessi ai padroni avendo per loro tutta la deferenza, non solo se son buoni e miti, ma anche se sono esigenti. Perché questa è cosa di merito, in Gesù Cristo Signor nostro.
 $Deo gratias
 
-[Versum 3]
-@Tempora/Pasc1-0:Versum 1
-
 [Ant 3]
 In verità * vi dico che voi piangerete e vi lamenterete: il mondo invece godrà, e voi sarete nella tristezza, ma la vostra tristezza si cambierà in gioia, alleluia.
-
-[Commemoratio]
-!Commemorazione per l'Ottava di San Giuseppe
-@Tempora/Pasc2-3:Oratio

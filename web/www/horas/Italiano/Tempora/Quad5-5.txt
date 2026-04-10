@@ -1,14 +1,5 @@
-[Rank]
-Septem Dolorum Beatae Mariae Virgine;;Duplex majus;;4
-
-[Rank1960]
-Septem Dolorum Beatae Mariae Virgine;;Commemoratio;;1
-
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-9 lectiones
-Gloria responsory
+[Officium]
+Septem Dolorum Beatae Mariae Virgine
 
 [Ant Vespera]
 Me ne andrò al monte * della mirra e al colle dell'incenso.;;115
@@ -17,17 +8,12 @@ Dov'è andato * il tuo diletto, o bellissima fra le donne? dove s'è portato il 
 Mazzetto di mirra * è per me il mio diletto, egli riposerà sul mio seno.;;140
 Sostenetemi coi fiori, confortatemi colle mele, perché io languisco di amore.;;141
 
-[Capitulum Vespera]
-!Isa 53:1-2
-v. Chi ha creduto alla nostra parola? e il braccio del Signore a chi s'è fatto vedere? Egli spunterà dinanzi a lui come un virgulto, e come un germoglio da arida terra.
-$Deo gratias
-
 [Hymnus Vespera]
 v. Stava la Madre addolorata
 e in pianto accanto alla croce,
 mentre vi pendeva il Figlio.
 _
-L' anima sua gemente,
+L'anima sua gemente,
 contristata e dolente,
 era trafitta come da spada.
 _
@@ -60,9 +46,15 @@ fammi sentire la veemenza del tuo dolore,
 ond'io pianga con te.
 _
 Fa che arda così il mio cuore
-nell' amare Cristo Dio,
+nell'amare Cristo Dio,
 ch'io gli piaccia.
 Amen.
+
+[Doxology]
+Gesù, a te sia gloria,
+che hai sofferto per i tuoi servi,
+col Padre e lo Spirito Santo,
+nei secoli infiniti.
 
 [Versum 1]
 V. Prega per noi, Vergine addoloratissima.
@@ -85,15 +77,6 @@ _
 $Oremus
 Signore sii benevolo con il tuo popolo; affinché, rigettando quel che non ti piace, senta piuttosto le attrattive dei tuoi comandamenti.
 $Per Dominum
-
-[Doxology]
-Gesù, a te sia gloria,
-che hai sofferto per i tuoi servi,
-col Padre e lo Spirito Santo,
-nei secoli infiniti.
-
-[Versum Prima]
-Che ha sofferto per la nostra salvezza.
 
 [Invit]
 Ricordando i dolori della Vergine gloriosa, il Signore ch'ha sofferto per noi, * Venite, adoriamolo.
@@ -120,16 +103,22 @@ Amen.
 Insorsero i re della terra, * e i principi cospirarono insieme contro il Signore e contro il suo Cristo.;;2
 Colla mia voce * gridai al Signore, ed egli mi esaudì dal suo santo monte.;;3
 Il mio cuore s'è fatto * come cera che si squaglia in mezzo alle mie viscere.;;12
-V. M'ha ridotta desolata.
-R. Tutto il giorno a disfarmi nel dolore.
 I miei nemici * m'imprecaron mali [dicendo] : Quando morrà, e perirà il suo nome?;;40
 O Dio, t'ho esposto * la mia vita: tu hai messo le mie lacrime al tuo cospetto.;;55
 I figli degli uomini * hanno per denti lance e frecce: e la loro lingua è spada affilata.;;56
-V. La mia faccia è gonfia dal pianto.
-R. E le mie pupille si sono ottenebrate.
 Tesero il loro arco, * cosa amara, per saettare di nascosto l'innocente.;;63
 Son divenuto * come un uomo senza aiuto, io che tra i morti libero [scendo].;;87
 Egli m'ha ripiena d'amarezza, * m'ha inebriata d'assenzio.;;108
+
+[Nocturn 1 Versum]
+V. M'ha ridotta desolata.
+R. Tutto il giorno a disfarmi nel dolore.
+
+[Nocturn 2 Versum]
+V. La mia faccia è gonfia dal pianto.
+R. E le mie pupille si sono ottenebrate.
+
+[Nocturn 3 Versum]
 V. O Dio, t'ho esposto la mia vita.
 R. Tu hai messo le mie lacrime nel tuo cospetto.
 
@@ -178,7 +167,7 @@ R. Perché eletto vergine da lui, restò sempre vergine.
 [Lectio4]
 Sermone di san Bernardo Abate
 !Sermone sulle 12 stelle
-Il martirio della Vergine ci è rivelato tanto dalla profezia di Simeone quanto dalla storia medesima della passione del Signore. «Egli è posto (disse il santo vegliardo del bambino Gesù) per segno di contradizione; e anche a tè (rivolto poi a Maria) trapasserà l'anima una spada» (Luc. 2,34). Sì, o Madre beata, essa ha veramente trapassato l'anima tua. Perché non passando che per questa, ha potuto penetrare la carne del tuo Figlio. E certo dopo che quel tuo Gesù ebbe reso lo spirito, la lancia crudele, aprendogli il costato, non giunse già all'anima di lui, sibbene trapassò l' anima tua. Infatti l'anima di lui non c'era più là, ma la tua non se ne poteva distaccare.
+Il martirio della Vergine ci è rivelato tanto dalla profezia di Simeone quanto dalla storia medesima della passione del Signore. «Egli è posto (disse il santo vegliardo del bambino Gesù) per segno di contradizione; e anche a tè (rivolto poi a Maria) trapasserà l'anima una spada» (Luc. 2,34). Sì, o Madre beata, essa ha veramente trapassato l'anima tua. Perché non passando che per questa, ha potuto penetrare la carne del tuo Figlio. E certo dopo che quel tuo Gesù ebbe reso lo spirito, la lancia crudele, aprendogli il costato, non giunse già all'anima di lui, sibbene trapassò l'anima tua. Infatti l'anima di lui non c'era più là, ma la tua non se ne poteva distaccare.
 
 [Responsory4]
 R. Si fece buio, allorché Giudei ebbero crocifisso Gesù, e verso le quindici Gesù con gran voce gridò: Dio mio, perché m'hai abbandonato? 
@@ -303,60 +292,45 @@ $Per Dominum
 !Isa 53:8
 v. Chi spiegherà la generazione di lui? egli è stato reciso dalla terra dei viventi: per le scelleraggini del mio popolo io l'ho colpito.
 
-[Capitulum Tertia]
-!Isa 53:1-2
-v. Chi ha creduto alla nostra parola? e il braccio del Signore a chi s'è fatto vedere? Egli spunterà dinanzi a lui come un virgulto, e come un germoglio da arida terra.
-$Deo gratias
+[Versum Prima]
+Che ha sofferto per la nostra salvezza.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. M'ha ridotta * Desolata.
 R. M'ha ridotta * Desolata.
 V. Tutto il giorno a disfarmi nel dolore.
 R. M'ha ridotta.
 &Gloria
 R. M'ha ridotta * Desolata.
-_
-V. La mia faccia è gonfia dal pianto.
-R. E le mie pupille si sono ottenebrate.
 
 [Capitulum Sexta]
 !Isa 53:5
 v. Egli fu ferito per le nostre iniquità, stritolato per le nostre scelleratezze: su lui pesò il castigo che ci porta la pace, e per le sue piaghe noi siamo stati guariti.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. La mia faccia * È gonfia dal pianto. 
 R. La mia faccia * È gonfia dal pianto. 
 V. E le mie pupille si sono ottenebrate.
 R. È gonfia dal pianto.
 &Gloria
 R. La mia faccia * È gonfia dal pianto. 
-_
-V. O Dio, ti ho esposto la mia vita.
-R. Tu hai messo le mie lacrime nel tuo cospetto.
 
 [Capitulum Nona]
 !Isa 53:8
 v. Chi spiegherà la generazione di lui? egli è stato reciso dalla terra dei viventi: per le scelleraggini del mio popolo io l'ho colpito.
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. O Dio, la mia vita * Ti ho esposto.
 R. O Dio, la mia vita * Ti ho esposto.
 V. Tu hai messo le mie lacrime nel tuo cospetto.
 R. Ti ho esposto.
 &Gloria
 R. O Dio, la mia vita * Ti ho esposto.
-_
-V. Prega per noi, Vergine addoloratissima.
-R. Affinché siam fatti degni delle promesse di Cristo.
-
-[Versum 3]
-V. Prega per noi, Vergine addoloratissima.
-R. Affinché siam fatti degni delle promesse di Cristo.
 
 [Ant 3]
- Gesù vedendo * la Madre ritta presso la croce, e il discepolo amato da lui, dice a sua Madre: Donna, ecco il tuo figlio. Poi dice al discepolo: Ecco la madre tua.
+Gesù vedendo * la Madre ritta presso la croce, e il discepolo amato da lui, dice a sua Madre: Donna, ecco il tuo figlio. Poi dice al discepolo: Ecco la madre tua.
 
 [Commemoratio 3]
 !Commemorazione del Venerdì della Settimana di Passione

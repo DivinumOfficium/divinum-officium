@@ -1,0 +1,15 @@
+[Lectio5]
+@Sancti/07-29:Lectio4: s/ Ma.*//
+
+[Lectio6]
+@Sancti/07-29:Lectio4: s/.* Ma/Ma/
+@Sancti/07-29:Lectio5: s/ Maddalena.*//
+
+[Lectio7]
+@Sancti/07-29:Lectio5: s/.* Maddalena/Maddalena/
+
+[Lectio10]
+@Sancti/07-29:Lectio8: s/ Certo.*//
+
+[Lectio11]
+@Sancti/07-29:Lectio8: s/.* Certo/Certo/

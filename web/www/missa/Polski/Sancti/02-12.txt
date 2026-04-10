@@ -1,12 +1,5 @@
-[Rank]
-Ss. Septem Fundat. Ord. Servorum B. M. V.;;Duplex;;3;;vide C5
-
-[RankNewcal]
-Seven blessed fathers;;Duplex optional;;2;;vide C5
-
-[Rule]
-vide C5;;
-Gloria
+[Officium]
+7-miu Św. Założycieli Zgromadzenia Służebników NMP
 
 [Comment]
 # 12 II – Siedmiu Założycieli Zakonu Serwitów N. M. P., Wyznawców
@@ -23,7 +16,7 @@ Panie, Panie nasz, jak przedziwne Twe imię po wszystkiej ziemi.
 v. Sprawiedliwi wysławiali Twoje święte imię, Panie, i zwycięską rękę Twoją jednomyślnie wychwalali: bo mądrość otworzyła usta nieme i języki niemowląt uczyniła wymownymi.
 
 [Oratio]
-Panie Jezu Chryste, który dla odnawiania pamięci o boleściach Najświętszej Matki Twojej przez siedmiu świętych Ojców obdarzyłeś Śwój Kościół nowym zakonem Jej sług, daj nam tak łączyć się z ich świętymi łzami, abyśmy wraz z nimi doznawali także radości:
+Panie Jezu Chryste, który dla odnawiania pamięci o boleściach Najświętszej Matki Twojej przez siedmiu świętych Ojców obdarzyłeś swój Kościół nowym zakonem Jej sług, daj nam tak łączyć się z ich świętymi łzami, abyśmy wraz z nimi doznawali także radości:
 $Qui vivis
 
 [Lectio]
@@ -51,14 +44,14 @@ V. Idą i płaczą, niosąc ziarno na zasiew.
 V. Przyjdą z radością, niosąc swoje snopy.
 
 [Evangelium]
-@Commune/C4c:Evangelium
+@Commune/C5b:Evangelium
 
 [Offertorium]
 !Iz 56:7
 Przywiodę ich na świętą górę moją, i uweselę ich w moim domu modlitwy; ich całopalenia i ofiary będą mi przyjemne na moim ołtarzu.
 
 [Secreta]
-Przyjmij, Panie, ofiarę, którą Ci składamy i za wstawiennictwem Twoich świętych spraw, abyśmy służyli Tobie swobonym umysłem i pałali miłością ku Bolesnej Dziewicy, Matce Twojego Syna.
+Przyjmij, Panie, ofiarę, którą Ci składamy i za wstawiennictwem Twoich świętych spraw, abyśmy służyli Tobie swobodnym umysłem i pałali miłością ku Bolesnej Dziewicy, Matce Twojego Syna.
 $Per eundem
 
 [Communio]
@@ -68,4 +61,3 @@ Ja was wybrałem ze świata, abyście poszli i owoc przynieśli, i żeby owoc wa
 [Postcommunio]
 Gdyś nas, panie, zasilił niebieski Sakramentem, błagamy Cię, abyśmy naśladując przykład tych, których święto obchodzimy, wiernie stali pod krzyżem Jezusa wraz z Maryją, Matką Jego, i dzięki temu mogli zakosztować owoców Jego Odkupienia.
 $Per eundem
-

@@ -1,12 +1,20 @@
-[Rank]
-S. Catharinæ Virginis et Martyris;;Duplex;;3;;vide C6b
+[Officium]
+S. Catharinæ Virginis et Martyris
 
-[RankNewcal]
-S. Catharinæ Virginis et Martyris;;Duplex optional;;2;;vide C6b
+[Rank]
+;;Duplex;;3;;vide C6
+(sed rubrica 1930 aut rubrica 1963)
+;;Simplex;;1.1;;vide C6
+(sed rubrica cisterciensis)
+;;Semiduplex;;2.2;;vide C6
 
 [Rule]
-vide C6b;
+vide C6;
 9 lectiones
+
+[Name]
+Catharínæ
+Postcommunio=Catharína
 
 [Oratio]
 Deus, qui dedísti legem Móysi in summitáte montis Sínai, et in eódem loco per sanctos Angelos tuos corpus beátæ Catharínæ Vírginis et Mártyris tuæ mirabíliter collocásti: præsta, quǽsumus; ut, ejus méritis et intercessióne, ad montem, qui Christus est, perveníre valeámus:
@@ -16,7 +24,7 @@ $Qui tecum
 Catharina, nobilis virgo Alexandrina, a prima ætate stúdia liberalium artium cum fidei ardore conjungens, brevi ad eam sanctitátis et doctrinæ perfectiónem pervenit, ut, decem et octo annos nata, eruditíssimum quemque superaret. Quæ cum Maximíni jussu multos, propter christianæ religiónis professiónem varie tormentis cruciatos, ad supplícium rapi vidéret, non dubitanter ipsum adiit Maximinum, eique nefariam immanitátem objíciens, sapientíssimis ratiónibus Christi fidem ad salútem necessariam esse affirmavit.
 
 [Lectio5]
-Cujus prudéntiam Maximinus admiratus, retineri eam jubet, accersitis undique doctíssimis homínibus, magnisque propositis præmiis, qui convictam Catharinam a Christi fide ad idolórum cultum perduxissent. Quod contra áccidit. Nam plures philosophi, qui ad eam coarguéndam convenerant, vi ac subtilitate ejus disputatiónis tanto Jesu Christi amore sunt incénsi, ut pro illo mori non dubitaverint. Quam ob rem Maximinus blanditiis ac promissis Catharinam de senténtia dedúcere aggréditur; verum, id frustra fíeri intélligens, verbéribus affectam plumbátisque contusam, dies undecim sine cibo ac potu inclusam tenet in carcere.
+Cujus prudéntiam Maximinus admiratus, retineri eam jubet, accersitis undique doctíssimis homínibus, magnisque propositis præmiis, qui convictam Catharinam a Christi fide ad idolórum cultum perduxissent. Quod contra áccidit. Nam plures philosophi, qui ad eam coarguéndam convenerant, vi ac subtilitate ejus disputatiónis tanto Jesu Christi amóre sunt incénsi, ut pro illo mori non dubitaverint. Quam ob rem Maximinus blanditiis ac promissis Catharinam de senténtia dedúcere aggréditur; verum, id frustra fíeri intélligens, verbéribus affectam plumbátisque contusam, dies undecim sine cibo ac potu inclusam tenet in carcere.
 
 [Lectio6]
 Quo témpore Maximíni uxor et Porphyrius belli dux, visendæ Vírginis causa carcerem ingressi, et ejusdem prædicatióne in Jesum Christum credéntes, póstea martyrio coronáti sunt. Interim Catharina edúcitur e custódia; et rota expedítur, crebris et acutis præfixa gládiis, ut Vírginis corpus crudelíssime dilacerarétur. Quæ máchina, brevi Catharinæ oratióne, confracta est; eoque miraculo multi Christi fidem suscepérunt. Ipse Maximinus, in impietáte et crudelitate obstinatior, Catharinam secúri pércuti imperat. Quæ, fortiter dato cápite, ad duplicátum virginitátis et martyrii præmium evolávit septimo Kalendas Decembris; cujus corpus ab Angelis in Sina, Arábiæ monte, mirabíliter collocátum est.

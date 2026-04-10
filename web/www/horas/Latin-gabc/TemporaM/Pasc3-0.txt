@@ -1,0 +1,34 @@
+[Lectio3]
+@Tempora/Pasc3-0:Lectio3:1-5 s/-19/-15/
+
+[Lectio4]
+@Tempora/Pasc3-0:Lectio3:1 s/12-/16-/
+@Tempora/Pasc3-0:Lectio3:6-10
+
+[Lectio5]
+@Tempora/Pasc3-0:Lectio4:s/Locútus .*//s
+
+[Lectio6]
+@Tempora/Pasc3-0:Lectio4:s/.* Locútus /Locútus /s s/$/~/
+@Tempora/Pasc3-0:Lectio5:s/Contra .*//s
+
+[Lectio7]
+@Tempora/Pasc3-0:Lectio5:s/.* Contra /Contra /s s/$/~/
+@Tempora/Pasc3-0:Lectio6:s/Majóra .*//s
+
+[Lectio8]
+@Tempora/Pasc3-0:Lectio6:s/.* Majóra /Majóra /s
+
+[Lectio9]
+@Tempora/Pasc3-0:Lectio7:s/Ac per .*//s
+
+[Lectio10]
+@Tempora/Pasc3-0:Lectio7:s/.* Ac per /Ac per /s s/$/~/
+@Tempora/Pasc3-0:Lectio8:s/Quod .*//s
+
+[Lectio11]
+@Tempora/Pasc3-0:Lectio8:s/.* Quod /Quod /s s/$/~/
+@Tempora/Pasc3-0:Lectio9:s/Non ergo .*//s
+
+[Lectio12]
+@Tempora/Pasc3-0:Lectio9:s/.* Non ergo /Non ergo /s

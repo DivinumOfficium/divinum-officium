@@ -1,0 +1,41 @@
+@SanctiCist/01-18
+
+[Officium]
+In Cathedra S. Petri Apostoli
+
+[Rank]
+;;Semiduplex;;2.2;;ex C4
+
+[Rule]
+Psalmi Dominica
+12 lectiones
+Sub unica concl
+
+[Hymnus Matutinum]
+@Sancti/02-22:HymnusM Vespera
+
+[Lectio5]
+@Sancti/02-22:Lectio4:s/ergo/ígitur/
+
+[Lectio6] 
+@Sancti/02-22:Lectio5:s/Benedíctus.*//
+
+[Lectio7] 
+@Sancti/02-22:Lectio5:s/.* (Benedíctus)/$1/ s/$/~/
+@Sancti/02-22:Lectio6:s/ Cum.*//
+
+[Lectio8]
+@Sancti/02-22:Lectio6:s/.*Cum/Cum/
+
+[Lectio9]
+@Sancti/02-22:Lectio7:s/Qui cum .*//
+
+[Lectio10]
+@Sancti/02-22:Lectio7:s/.* (Qui cum )/$1/s
+
+[Lectio11] 
+@Sancti/02-22:Lectio8:s/Et super .*//
+
+[Lectio12] 
+@Sancti/02-22:Lectio8:s/.* (Et super )/$1/ s/$/~/
+@Sancti/02-22:Lectio9:s/Et sicut .*//

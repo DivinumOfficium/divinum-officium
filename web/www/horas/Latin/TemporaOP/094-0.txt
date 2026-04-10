@@ -1,0 +1,24 @@
+@Tempora/094-0
+
+[Ant 1]
+@Tempora/093-0
+
+[Lectio1]
+@Tempora/094-0::1-5 s/-4/-3/ s/;$/./
+
+[Responsory1]
+@TemporaOP/093-0
+
+[Lectio2]
+@Tempora/094-0::1-4 s/-9/-7/ s/; .*//
+
+[Responsory2]
+@TemporaOP/093-0
+
+[Lectio3]
+@Tempora/094-0::!2-5 s/1:10-12; // s/1-3/2-5/
+4 Quod dictum cum placuísset ómnibus, vocávit Nabuchodónosor rex Holoférnem príncipem milítiæ suæ,
+5 et dixit ei: Egrédere advérsus omne regnum occidéntis, et contra eos præcípue, qui contempsérunt impérium meum.
+
+[Responsory3]
+@TemporaOP/Pent01-0:Responsory Vespera 1

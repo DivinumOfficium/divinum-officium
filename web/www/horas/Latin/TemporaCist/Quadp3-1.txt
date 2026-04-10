@@ -1,0 +1,20 @@
+@Tempora/Quadp3-1
+
+[Lectio1]
+@Tempora/Quadp3-1::1-6:s/-6/-4/
+
+[Lectio2]
+@Tempora/Quadp3-1:Lectio1:s/1-6/5-7/ s/.*5/5/s
+@Tempora/Quadp3-1:Lectio2:2:s/Eo autem .*//
+
+[Lectio3]
+@Tempora/Quadp3-1:Lectio2:1-4:s/-11/-9/ s/.* (Eo autem)/7 $1/s
+
+[Responsory1]
+@TemporaCist/Quadp3-0
+
+[Responsory2]
+@TemporaCist/Quadp3-0
+
+[Responsory3]
+@TemporaCist/Quadp3-0

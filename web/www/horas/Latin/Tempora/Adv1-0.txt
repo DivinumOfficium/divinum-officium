@@ -1,27 +1,25 @@
+[Officium]
+Dominica I Adventus
+
 [Rank]
-Dominica I Adventus;;Semiduplex;;6
+;;Semiduplex;;6.9
 
 [Rule]
 9 lectiones
 Antiphonas horas
 
 [Ant Vespera]
-In illa die * stillábunt montes dulcédinem, et colles fluent lac et mel, allelúja.
-Jucundáre, * fília Sion, et exsúlta satis, fília Jerúsalem, allelúja.
-Ecce Dóminus véniet, * et omnes Sancti ejus cum eo: et erit in die illa lux magna, allelúja.
-Omnes sitiéntes, * veníte ad aquas: quǽrite Dóminum, dum inveníri potest, allelúja.
-Ecce véniet * Prophéta magnus, et ipse renovábit Jerúsalem, allelúja.
+@:Ant Laudes
+(sed rubrica tridentina aut rubrica praedicatorum omittuntur)
 
-[Capitulum Vespera]
-!Rom 13:11
-v. Fratres: Hora est jam nos de somno súrgere: nunc enim própior est nostra salus, quam cum credídimus.
-$Deo gratias.
+[Versum 1]
+@Psalterium/Special/Major Special:Adv Versum 3
 
 [Ant 1]
 Ecce nomen Dómini * venit de longínquo, et cláritas ejus replet orbem terrárum.
 
 [Oratio]
-Excíta, quǽsumus, Dómine, poténtiam tuam, et veni: ut ab imminéntibus peccatórum nostrórum perículis, te mereámur protegénte éripi, te liberánte salvári:
+Excita, quǽsumus, Dómine, poténtiam tuam, et veni: ut ab imminéntibus peccatórum nostrórum perículis, te mereámur protegénte éripi, te liberánte salvári:
 $Qui vivis
 
 [Lectio1]
@@ -53,7 +51,7 @@ R. Et omnis pópulus, tribus, et linguæ sérvient ei.
 
 [Lectio3]
 !Isa 1:7-9
-7 Terra vestra desérta, civitátes vestræ succénsæ igni: regiónem vestram coram vobis aliéni dévorant, et desolábitur sicut in vastitáte hóstili. 
+7 Terra vestra desérta, civitátes vestræ succénsæ igni: regiónem vestram coram vobis aliéni dévorant, et desolábitur sicut in vastitáte hostíli. 
 8 Et derelinquétur fília Sion ut umbráculum in vínea, et sicut tugúrium in cucumerário, et sicut cívitas quæ vastátur.
 9 Nisi Dóminus exercítuum reliquísset nobis semen, quasi Sódoma fuissémus, et quasi Gomórrha símiles essémus.
 
@@ -82,11 +80,11 @@ Ad cujus advéntum omnem hóminem cónvenit præparári: ne quem aut ventri déd
 [Responsory5]
 R. Salvatórem exspectámus, Dóminum Jesum Christum, 
 * Qui reformábit corpus humilitátis nostræ configurátum córpori claritátis suæ.  
-V. Sóbrie, et juste, et pie vivámus in hoc sæculo, exspectántes beátam spem, et advéntum glóriæ magni Dei.
+V. Sóbrie, et juste, et pie vivámus in hoc sǽculo, exspectántes beátam spem, et advéntum glóriæ magni Dei.
 R. Qui reformábit corpus humilitátis nostræ configurátum córpori claritátis suæ. 
 
 [Lectio6]
-Quamvis enim sine ánima nihil caro desíderet, et inde accípiat sensus, unde sumit et motus: ejúsdem tamen est ánimæ, quædam sibi súbditæ negáre substántiæ, et interióri judício ab inconveniéntibus exterióra frenáre: ut a corpóreis cupiditátibus sæpius líbera, in aula mentis possit divínæ vacáre sapiéntiæ: ubi omni strépitu terrenárum silénte curárum, in meditatiónibus sanctis, et in delíciis lætétur ætérnis.
+Quamvis enim sine ánima nihil caro desíderet, et inde accípiat sensus, unde sumit et motus: ejúsdem tamen est ánimæ, quædam sibi súbditæ negáre substántiæ, et interióri judício ab inconveniéntibus exterióra frenáre: ut a corpóreis cupiditátibus sǽpius líbera, in aula mentis possit divínæ vacáre sapiéntiæ: ubi omni strépitu terrenárum silénte curárum, in meditatiónibus sanctis, et in delíciis lætétur ætérnis.
 
 [Responsory6]
 R. Obsecro, Dómine, mitte quem missúrus es: vide afflictiónem pópuli tui: 
@@ -132,24 +130,30 @@ R. Et hoc est nomen quod vocábunt eum:
 R. Dóminus justus noster.
 
 [Ant Laudes]
-@:Ant Vespera
+In illa die * stillábunt montes dulcédinem, et colles fluent lac et mel, allelúja.
+Jucundáre, * fília Sion, et exsúlta satis, fília Jerúsalem, allelúja.
+Ecce Dóminus véniet, * et omnes Sancti ejus cum eo: et erit in die illa lux magna, allelúja.
+Omnes sitiéntes, * veníte ad aquas: quǽrite Dóminum, dum inveníri potest, allelúja.
+Ecce véniet * Prophéta magnus, et ipse renovábit Jerúsalem, allelúja.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Rom 13:11
+v. Fratres: Hora est jam nos de somno súrgere: nunc enim própior est nostra salus, quam cum credídimus.
+$Deo gratias.
 
 [Ant 2]
 Spíritus Sanctus * in te descéndet, María: ne tímeas, habébis in útero Fílium Dei, allelúja.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
+[Capitulum Sexta] (nisi rubrica praedicatorum)
+@Psalterium/Special/Major Special:Feria Laudes
 
-[Capitulum Sexta]
-@Psalterium/Major Special:Day1 Laudes
-
-[Capitulum Nona]
+[Capitulum Nona] (nisi rubrica praedicatorum)
 !Rom 13:13-14
 v. Sicut in die honéste ambulémus, non in comessatiónibus et ebrietátibus, non in cubílibus et impudicítiis, non in contentióne et æmulatióne; sed induímini Dóminum Jesum Christum.
 $Deo gratias
+
+[Ant Vespera 3]
+@:Ant Laudes
 
 [Ant 3]
 Ne tímeas, María, * invenísti enim grátiam apud Dóminum: ecce concípies, et páries fílium, allelúja.

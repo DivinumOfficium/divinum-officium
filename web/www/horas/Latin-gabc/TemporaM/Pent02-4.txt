@@ -1,0 +1,21 @@
+[Lectio6]
+@Tempora/Pent02-4:Lectio5: s/Nam in.*//
+
+[Lectio7]
+@Tempora/Pent02-4:Lectio5: s/.*(Nam in)/$1/
+
+[Lectio8]
+@Tempora/Pent02-4:Lectio6
+(sed rubrica cisterciensis)
+@Tempora/Pent02-4:Lectio6:s/.*(Erant et)/$1/
+
+[Lectio9]
+@Tempora/Pent02-4:Lectio7: s/Símili .*//
+
+[Lectio10]
+@Tempora/Pent02-4:Lectio7: s/.*(Símili)/$1/s
+
+[Lectio11]
+@Tempora/Pent02-4:Lectio8
+(sed rubrica cisterciensis)
+@Tempora/Pent02-4:Lectio8:s/Quando .*//

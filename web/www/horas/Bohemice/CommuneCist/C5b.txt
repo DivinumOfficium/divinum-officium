@@ -1,0 +1,11 @@
+[Lectio9]
+@Commune/C1:Lectio7:s/Ježíš jim.*//
+
+[Lectio10]
+@Commune/C1:Lectio7:s/.*Ježíš jim/Ježíš jim/
+
+[Lectio11]
+@Commune/C1:Lectio8:s/ To místo .*//s
+
+[Lectio12]
+@Commune/C1:Lectio8:s/.* To místo /To místo /s

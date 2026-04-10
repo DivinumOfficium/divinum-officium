@@ -1,0 +1,82 @@
+[Ant Vespera]
+@Sancti/06-30::s/$/_/gm s/_/;;109/ s/_/;;112/ s/_/;;115/ s/_/;;138/ s/_//
+
+[AntMatutinumM]
+Třikrát jsem byl bit holemi, * jednou kamenován, a třikrát jsem přežil ztroskotání lodi pro jméno Kristovo.;;97
+Milost Boží * ve mě nepřebývala zbytečně, avšak jeho milost ve mě navždy zůstane.;;98
+Postačí ti, * Pavle, má milost; neboť má moc se završuje v (tvé) slabosti.;;100
+Hle, já vás posílám * jako ovce mezi vlky, praví Pán; buďte proto prozíraví jako hadi, ale prostí jako holubice.;;253;254;255
+Jdi, Ananiáši, * a vyhledej Šavla, on se totiž modlí; neboť je mou vyvolenou nádobou, aby přinesl mé jméno k Národům, králům a synům israelským.;;253;254;255
+
+[Lectio3]
+@Sancti/06-30:Lectio2:!2-4 s/5-8/8-11/
+@Sancti/06-30::2-4 s/\. A .*//
+
+[Lectio4]
+@Sancti/06-30:Lectio3:!2-3 s/9-/11-/ s/ .*?(?= A)//
+
+[Responsory4]
+R. Slyšeli jste totiž o mém jednání ještě když jsem byl Židem, neboť jsem byl úspěšnější
+* Než mnoho mých vrstevníků v mém rodu. 
+V. Horlil jsem ještě více po svých otcovských tradicích.
+R. Než mnoho mých vrstevníků v mém rodu. 
+
+[Lectio5]
+@Sancti/06-30:Lectio4:s/ Pohleďte.*//s
+
+[Responsory5]
+@Sancti/06-30:Responsory4
+
+[Lectio6]
+@Sancti/06-30:Lectio4:s/.* (?=Pohleďte)//s
+
+[Responsory6]
+@Sancti/06-30:Responsory5
+
+[Lectio7]
+@Sancti/06-30:Lectio5
+
+[Responsory7]
+@Sancti/06-30:Responsory6
+
+[Lectio8]
+@Sancti/06-30:Lectio6
+
+[Responsory8]
+R. Vím, komu jsem uvěřil, a jsem si jistý, že má moc zachovat můj poklad.
+* Do onoho dne, spravedlivý soudce.
+V. Uložena je mi koruna spravedlnosti, kterou mi nasadí Hospodin.
+R. Do onoho dne, spravedlivý soudce.
+
+[Lectio9]
+@Sancti/06-30:Lectio7
+
+[Responsory9]
+@Sancti/06-30:Responsory7
+
+[Lectio10]
+@Sancti/06-30:Lectio8:s/Idcírco.*//
+
+[Responsory10]
+@Sancti/06-30:Responsory8
+(sed rubrica cisterciensis)
+@Sancti/06-30:Responsory5
+
+[Lectio11]
+@Sancti/06-30:Lectio8:s/.* (?=Idcírco)// s/$/~/
+@Sancti/06-30:Lectio9:s/ Nam.*//
+
+[Responsory11]
+R. Veliký je svatý Pavel, nádoba vyvolená, a vpravdě je hoden oslavení.
+* Neboť si zasloužil zaujmout dvanáctý trůn.
+V. Kristus jej z nebe zavolal, srazil k zemi a z pronásledovatele se stal nádobou vyvolenou.
+R. Neboť si zasloužil zaujmout dvanáctý trůn.
+
+[Lectio12]
+@Sancti/06-30:Lectio9:s/.* (?=Nam)//
+
+[Responsory12]
+R. Žít je pro mě Kristus, a zemřít výhra;
+* Chlubit se mi náleží pouze v kříži mého Pána Ježíše Krista.
+V. Skrze něj je mi svět ukřižován, a já světu.
+R. Chlubit se mi náleží pouze v kříži mého Pána Ježíše Krista.

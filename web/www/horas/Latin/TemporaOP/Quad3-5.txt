@@ -1,0 +1,30 @@
+@Tempora/Quad3-5
+
+[Lectio1]
+@Tempora/Quad3-5::s/ Ipse .*//
+
+[Responsory1]
+@TemporaOP/Quad3-2:Responsory1
+
+[Lectio2]
+@Tempora/Quad3-5:Lectio1:s/.* (?=Ipse)//s s/$/~/
+@Tempora/Quad3-5::s/ Quid .*//
+
+[Responsory2]
+@Tempora/Quad3-0:Responsory6
+
+[Lectio3]
+@Tempora/Quad3-5:Lectio2:s/.* (?=Quid)// s/$/~/
+@Tempora/Quad3-5::s/ Quóties.*//
+
+[Responsory3]
+@Tempora/Quad3-0:Responsory8
+
+[Ant 2]
+@Tempora/Quad3-5:Ant 3
+
+[Oratio 2]
+@Tempora/Quad3-5:Oratio 3
+
+[Ant 3]
+Veri adoratóres adorábunt Patrem in spíritu et veritáte.

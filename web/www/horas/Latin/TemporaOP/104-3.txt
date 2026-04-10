@@ -1,0 +1,20 @@
+@Tempora/104-3
+
+[Lectio1]
+@Tempora/105-1:Lectio1Tridentina:!3-5 s/7-/10-/
+
+[Responsory1]
+@Tempora/101-1:Responsory1
+
+[Lectio2]
+@Tempora/105-1:Lectio2Tridentina:1-6 s/-19/-17/
+
+[Responsory2]
+@Tempora/101-1:Responsory3
+
+[Lectio3]
+@Tempora/105-1:Lectio2Tridentina:!2-6 s/13-19/18-21/
+@Tempora/105-1:Lectio3Tridentina:2-3 s/: et .*/./
+
+[Responsory3]
+@TemporaOP/101-0

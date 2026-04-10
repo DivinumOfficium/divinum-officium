@@ -1,0 +1,125 @@
+[Source]
+Lấy từ sách Ca vịnh theo ngày
+Lấy từ sách Ca vịnh theo mùa
+Lấy từ phần riêng theo mùa
+Lấy từ phần riêng các thánh
+Lấy từ phần chung các thánh
+Quanh năm
+Ca vịnh và Câu xướng ngày Chủ nhật
+Ngoại lịch
+
+[Preces]
+phải có
+phải bỏ
+đặc biệt
+
+[Prima_Special]
+ngày lễ
+ngày thường
+
+[Suffragium]
+phải bỏ
+quanh năm
+mùa Phục sinh
+nghi tiết Tridentinô
+nghi tiết Xitô
+altovadense
+
+[Lectio]
+Nhớ ngày thường
+Nhớ ngày Chúa nhật
+Nhớ vị thánh
+Nhớ ngày Áp lễ Ba Vua
+
+[Martyrologium]
+đọc trước cho hôm sau
+
+[Menses]
+tháng Tám
+tháng Chín
+tháng Mười
+tháng Mười một
+tháng Mười hai
+
+[Festa]
+không có
+bậc lễ Đơn
+bậc lễ bán Kép
+(sed rubrica 1955)
+bậc lễ Đơn
+bậc lễ Kép
+bậc lễ Kép cả
+(sed rubrica 1570)
+bậc lễ Kép
+bậc lễ Kép bậc Nhì
+bậc lễ Kép bậc Nhất
+bậc lễ Kép bậc Nhất
+
+[Festa] (rubrica 196)
+Ngày thường
+Bậc IV
+Bậc III
+Bậc III
+Bậc III
+Bậc II
+Bậc I
+Bậc I
+
+[Festa] (rubrica cisterciensis)
+none
+iij. Lect. et M.
+xij. Lect. et M.
+MM. min.
+MM. maj.
+Serm. min.
+Serm. maj.
+Serm. maj.
+
+[Dominicae]
+bậc lễ Kép bậc Nhất
+Chủ nhật bậc lễ bán Kép bậc Nhất
+Chủ nhật bậc lễ bán Kép bậc Nhì
+Chủ nhật bậc lễ bán Kép mừng trước
+(sed rubrica Tridentina)
+Chủ nhật bậc lễ Đơn mừng trước
+Chủ nhật bậc lễ bán Kép mọn
+
+[Feriae]
+Ngày thường
+Ngày thường
+Ngày thường cả
+(sed rubrica Monastic.*Divino)
+Ngày thường ưu tiên bậc III
+Ngày thường cả
+(sed rubrica Monastic.*Divino)
+Ngày thường ưu tiên bậc II
+Ngày thường cả
+(sed rubrica Monastic.*Divino)
+Ngày thường ưu tiên bậc II
+Ngày thường cả
+Ngày thường cả
+Ngày thường cả
+
+[Vigilia]
+Kinh Canh thức
+
+[Dies Octavæ]
+Tuần Bát nhật
+
+[ordinis]
+bậc
+
+[classis]
+bậc
+
+[privilegiata]
+ưu tiên
+
+[bissextal note]
+{Trong năm nhuận tháng Hai có} 29, {và Lễ thánh Matthia làm ngày} 25,
+(rubrica 195)
+{lại Lễ thánh Gabriel Đức Mẹ Sầu Bi ngày} 28 {tháng Hai,}
+{và đọc hai lần} Sexto Kalendas, {nghĩa là ngày} 24 {và ngày} 25 {và chữ Nhật, đã dùng trong tháng Giêng, thì đổi ra chữ trước; như là, nếu trong tháng Giêng chữ Nhật là} A, {thì đổi ra chữ trước, là} g {vân vân; và chữ} f {dùng hai lần,} 24 {và} 25.
+
+[nigra19 note]
+{Số Epacta} 19 {đen này chẳng bao giờ dùng, trừ khi năm ấy gặp Số Vàng}

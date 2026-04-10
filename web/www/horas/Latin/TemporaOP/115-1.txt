@@ -1,0 +1,29 @@
+@Tempora/115-1
+
+[In Finem Lectio]
+@TemporaOP/Quad5-0
+
+[Lectio1]
+@Tempora/115-1::1-5 s/-4/-3/ s/;$/./
+@:In Finem Lectio
+
+[Responsory1]
+@Tempora/Pent01-0
+
+[Lectio2]
+@Tempora/115-1::1
+@Tempora/115-1:Lectio1:6 s/$/~/
+@Tempora/115-1::2-4 s/4 // s/ Indignátio.*//
+@:In Finem Lectio
+
+[Responsory2]
+@Tempora/111-0
+
+[Lectio3]
+@Tempora/115-1::1 s/7-10/6-9/
+@Tempora/115-1:Lectio2:4 s/.* (?=Indignátio)/6 /
+@Tempora/115-1::2-4
+@:In Finem Lectio
+
+[Responsory3]
+@Tempora/111-0

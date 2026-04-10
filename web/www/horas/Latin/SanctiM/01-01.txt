@@ -1,148 +1,100 @@
-[Rank]
-In Circumcisione Domini;;Duplex II classis;;5.1;;ex SanctiM/12-25
+@Sancti/01-01
+
+[Rank] (rubrica 1963)
+Die Octavæ Nativitatis Domini;;Duplex I classis;;7;;ex SanctiM/12-25
 
 [Rule]
-ex SanctiM/12-25;
-Psalmi Dominica
-Antiphonas Horas
-9 lectiones
+12 lectiones
+no Commemoratio
+(sed rubrica cisterciensis omittitur)
+Lectio1 TempNat
 
-[Ant Vespera]
-O admirabile commercium: * Creator generis humani animatum corpus sumens, de Virgine nasci dignatus est: et procedens homo sine semine, largitus est nobis suam Deitatem.;;109
-Quando natus es * ineffabiliter ex Virgine, tunc impletae sunt Scripturae: sicut pluvia in vellus descendisti, ut salvum faceres genus humanum: te laudamus Deus noster.;;112
-Rubum quem viderat Moyses * incombustum, conservatam agnovimus tuam laudabilem virginitatem: Dei Genetrix, intercede pro nobis.;;121
-Ecce Maria genuit * nobis Salvatorem, quem Joannes videns exclamavit, dicens: Ecce Agnus Dei, ecce qui tollit peccata mundi, alleluia.;;126
-
-[Capitulum Vespera]
-@Sancti/01-01:Capitulum Vespera
-_
-R.br. Verbum caro factum est, * Alleluia, alleluia.
-R. Verbum caro factum est, * Alleluia, alleluia.
-V. Et habitavit in nobis.
-R. Alleluia, alleluia.
-&Gloria
-R. Verbum caro factum est, * Alleluia, alleluia.
+[Responsory Vespera 1]
+@Sancti/12-25:Responsory Breve Tertia
+(sed rubrica cisterciensis)
+@SanctiCist/12-25:Responsory4
+(sed rubrica Barroux)
+@Commune/C11:Responsory1
 
 [Versum 1]
-V. Notum fecit Dominus, alleluia.
-R. Salutare suum, alleluia.
+@Sancti/12-25:Versum 2
 
-[Ant 1]
-@Sancti/01-01:Ant 1
+[AntMatutinumM]
+Suscépimus, * Deus, misericórdiam tuam † in médio templi tui.;;47
+Oriétur * in diébus Dómini abundántia pacis, † et dominábitur.;;71
+Véritas * de terra orta est, † et justítia de cælo prospéxit.;;84
 
-[Oratio]
-@Sancti/01-01:Oratio
+[Ant Matutinum 3N]
+Beátus * venter qui te portávit, et beata úbera, † quæ te lactavérunt Dóminum et Salvatórem mundi, allelúja.;;263;264;265
 
 [Ant Matutinum]
-Dominus dixit * ad me Filius meus es tu, ego hodie genui te;;2
-In sole posuit * tabernaculum suum: et ipse tamquam sponsus procedens de thalamo suo;;18
-Elevamini * portae aeternales, et introibit Rex gloriae;;23
-Speciosus forma * prae filiis hominum, diffusa est gratia in labiis tuis;;44
-Suscepimus Deus * misericordiam tuam in medio templi tui;;47
-Orietur * in diebus Domini abundantia pacis, et dominabitur;;71
-V. Tamquam sponsus.
-R. Dominus procedens de thalamo suo.
-Veritas * de terra orta est, et justitia de caelo prospexit;;84
-Homo natus est * in ea, et ipse fundavit eam Altissimus;;86
-Exsultabunt omnia ligna silvarum * ante faciem Domini, quoniam venit;;95
-In principio * et ante saecula Deus erat Verbum, et ipse natus est hodie Salvator mundi;;96
-Ante luciferum genitus * et ante saecula, Dominus Salvator noster hodie nasci dignatus est;;97
-Nato Domino * Angelorum chorus canebat, dicens: Salus Deo nostro, sedenti super thronum, et Agno;;98
-V. Speciosus forma prae filiis hominum.
-R. Diffusa est gratia in labiis tuis.
-Beatus venter * qui te portavit, et beata ubera quae te lactaverunt Dominum et Salvatorem mundi, alleluia.;;263;264;265
-V. Notum fecit Dominus, alleluia.
-R. Salutare suum, alleluia.
-
-[Lectio1]
-@Sancti/01-01:Lectio1
-
-[Responsory1]
-@Sancti/01-01:Responsory1
-
-[Lectio2]
-@Sancti/01-01:Lectio2
-
-[Responsory2]
-@Sancti/01-01:Responsory2
-
-[Lectio3]
-@Sancti/01-01:Lectio3
-
-[Responsory3]
-@Sancti/01-01:Responsory3
-
-[Lectio4]
-@Sancti/01-01:Lectio4
+@Sancti/01-01::1-4
+@:AntMatutinumM
+@Sancti/01-01::5-9
+;;263;264;265
 
 [Responsory4]
-@Sancti/01-01:Responsory4
+R. Hic qui advénit, nemo scit nomen ejus nisi ipse solus: † vocátur verbum Dómini habens vestem præcláram:
+* Et omnis chorus Angelórum in albis sequúntur eum.
+V. Oculi ejus velut flamma ignis: † et in cápite ejus diadémata multa.
+R. Et omnis chorus Angelórum in albis sequúntur eum.
 
 [Lectio5]
-@Sancti/01-01:Lectio5
+@Sancti/01-01:Lectio4
 
 [Responsory5]
-@Sancti/01-01:Responsory5
+@Sancti/01-01:Responsory4
 
 [Lectio6]
-@Sancti/01-01:Lectio6
+@Sancti/01-01:Lectio5:s/Et simíliter .*//s
 
 [Responsory6]
-@Sancti/01-01:Responsory6
+@Sancti/01-01:Responsory5
 
 [Lectio7]
-@Sancti/01-01:Lectio7
+@Sancti/01-01:Lectio5:s/.* Et simíliter /Et simíliter /s s/$/~/
+@Sancti/01-01:Lectio6:s/Déitas .*//s
 
 [Responsory7]
-R. Sancta et immaculata virginitas, quibus te laudibus efferam nescio:
-* Quia quem caeli capere non poterant, tuo gremio contulisti.
-V. Benedicta tu in mulieribus, et benedictus fructus ventris tui.
-R. Quia quem caeli capere non poterant, tuo gremio contulisti.
+@Sancti/01-01:Responsory6
 
 [Lectio8]
-@Sancti/01-01:Lectio8
+@Sancti/01-01:Lectio6:s/.* Déitas /Déitas /s
 
 [Responsory8]
-@Sancti/01-01:Responsory8
+R. In própria venit, et sui eum non recepérunt: † quotquot autem recepérunt eum, dedit eis potestátem fílios Dei fíeri:
+* Qui non ex sanguínibus, neque ex voluntáte carnis, neque ex voluntáte viri, sed ex Deo nati sunt.
+V. Si autem filii, et herédes: † herédes, quidem Dei, coherédes autem Christi.
+R. Qui non ex sanguínibus, neque ex voluntáte carnis, neque ex voluntáte viri, sed ex Deo nati sunt.
 
 [Lectio9]
-@Sancti/01-01:Lectio9
+@Sancti/01-01:Lectio7:s/Vides .*//s
 
 [Responsory9]
-R. O Regem caeli, cui talia famulantur obsequentia: stabulo ponitur, qui~
-cintinet mundum
-* Jacet in praesepio, et in caelis regnat
-V. Natus et nobis hodie Salvator, qui est Christus Dominus, in civitate David
-R. Jacet in praesepio, et in caelis regnat
-&Gloria
-R. Jacet in praesepio, et in caelis regnat
+@Sancti/12-25:Responsory6
 
-[Ant Laudes]
-@Sancti/01-01:Ant Laudes
+[Lectio10]
+@Sancti/01-01:Lectio7:s/.* Vides /Vides /s s/$/~/
+@Sancti/01-01:Lectio8:s/Dénique .*//s
 
-[Capitulum Laudes]
-@:Capitulum Vespera
+[Responsory10]
+@Sancti/01-01:Responsory8
 
-[Versum 2]
-@Sancti/01-01:Versum 2
+[Lectio11]
+@Sancti/01-01:Lectio8:s/.* Dénique /Dénique /s s/$/~/
+@Sancti/01-01:Lectio9:s/Nam si .*//s
 
-[Ant 2]
-@Sancti/01-01:Ant 2
+[Responsory11]
+R. Párvulus natus est nobis, et fílius datus est nobis, † et factus est principátus super húmerum ejus:
+* Et vocábitur Admirábilis, Deus Fortis.
+V. Multiplicabitur ejus imperium, † et pacis non erit finis.
+R. Et vocábitur Admirábilis, Deus Fortis.
 
-[Capitulum Tertia]
-@Sancti/01-01:Capitulum Vespera
+[Lectio12]
+@Sancti/01-01:Lectio9:s/.* Nam si /Nam si /s
 
-[Capitulum Sexta]
-@Sancti/01-01:Capitulum Sexta
+[Responsory12]
+@Tempora/Nat1-0:Responsory8
 
-[Capitulum Nona]
-@Sancti/01-01:Capitulum Nona
-
-[Ant 3]
-@Sancti/01-01:Ant 3
-
-[LectioE]
-Sequentia sancti Evangelii secundum Lucam
-!Luc 2:21
-2:21 Postquam consummati sunt dies octo, ut circumcideretur puer: vocatum est~
-nomen ejus Jesus, quod vocatum est ab Angelo, priusquam in utero conciperetur.
+[Responsory Laudes]
+@Sancti/12-25:Responsory Breve Sexta

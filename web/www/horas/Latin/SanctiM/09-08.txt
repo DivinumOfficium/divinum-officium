@@ -1,0 +1,97 @@
+@Sancti/09-08
+
+[Rule]
+12 lectiones
+Doxology=Nat
+
+[Responsory Vespera 1] (rubrica Barroux)
+@Sancti/09-08:Responsory2
+
+[Responsory Vespera] (nisi rubrica cisterciensis)
+@CommuneM/C10
+
+[Ant Matutinum 3N]
+Hódie * nata est beáta Virgo María ex progénie David: † per quam salus mundi credéntibus appáruit.
+
+[Lectio1]
+@Sancti/08-15t:Lectio1:s/-4/-3/ s/.4 .*//s
+
+[Lectio2]
+@Sancti/08-15t:Lectio1:s/.*!/!/s s/1-4/4-6/ s/1 .*4 /4 /s
+@Sancti/08-15t:Lectio2:s/!.*// s/7 .*//s
+
+[Lectio3]
+@Sancti/08-15t:Lectio2:s/5-9/7-10/ s/5 .*7 /7 /s
+@Sancti/08-15t:Lectio3:s/!.*// s/11 .*//s
+
+[Lectio4]
+@Sancti/08-15t:Lectio3:s/10-/11-/ s/10 .*11 /11 /s
+
+[Responsory4]
+R. Regáli ex progénie Maria exórta refúlget;
+* Cujus précibus nos adjuvári, mente et spíritu devotíssime póscimus.
+V. Corde et ánimo Christo canámus glóriam in hac sacra solemnitáte præcélsæ Genetrícis Dei Virginis Mariæ.
+R. Cujus précibus nos adjuvári, mente et spíritu devotíssime póscimus.
+
+[Lectio5]
+@Sancti/09-12:Lectio4:s/Ipsa est.*//s
+
+[Responsory5]
+@Sancti/09-08:Responsory4
+
+[Lectio6]
+@Sancti/09-12:Lectio4:s/.*Ipsa est/Ipsa est/s
+
+[Responsory6]
+@Sancti/09-08:Responsory5
+
+[Lectio7]
+@Sancti/09-12:Lectio5
+
+[Responsory7]
+@Sancti/09-08:Responsory6
+
+[Lectio8]
+@Sancti/09-12:Lectio6:s/ - .*//s
+
+[Responsory8]
+R. Corde et ánimo Christo canámus glóriam in hac sacra solemnitáte præcélsæ Genetrícis Dei Virginis Mariæ,
+* Ut ipsa pro nobis intercédat ad Dóminum.
+V. Cum jucunditáte Nativitátem beátæ Mariæ celebrémus.
+R. Ut ipsa pro nobis intercédat ad Dóminum.
+
+[Lectio9]
+@Sancti/09-08:Lectio7:s/Fílii .*//s
+
+[Responsory9]
+@Sancti/09-08:Responsory7
+
+[Lectio10]
+@Sancti/09-08:Lectio7:s/.* Fílii/Fílii/s
+
+[Responsory10]
+@Sancti/09-08:Responsory8
+
+[Lectio11]
+@Sancti/09-08:Lectio8:s/Judas .*//s
+
+[Responsory11]
+R. Nativitátem hodiérnam perpétuæ Vírginis Dei Genetrícis Maríæ solémniter celebrémus.
+* Qua celsitúdo throni procéssit.
+V. Regáli ex progénie María exórta refúlget.
+R. Qua celsitúdo throni procéssit.
+
+[Lectio12]
+@Sancti/09-08:Lectio8:s/.* Judas/Judas/s
+
+[Responsory12]
+@Commune/C11:Responsory1
+
+[Responsory Laudes]
+@CommuneM/C10
+
+[Responsory Laudes] (rubrica cisterciensis)
+@CommuneCist/C10
+
+[Commemoratio 2] (rubrica cisterciensis)
+@Sancti/09-08cc:Oratio

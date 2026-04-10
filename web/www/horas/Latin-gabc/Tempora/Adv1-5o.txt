@@ -1,0 +1,15 @@
+[Lectio1]
+@Tempora/Adv1-5::s/-3/-4/
+@Tempora/Adv1-5:Lectio2:2
+
+[Lectio2]
+@Tempora/Adv1-5::1 s/4-7/5-8/
+@Tempora/Adv1-5::3-6
+@Tempora/Adv1-5:Lectio3:2
+
+[Lectio3]
+@Tempora/Adv1-5::s/8-10.*9/9-13\n9/s
+@Tempora/Adv1-5:Lectio3:3-4
+11 Et dixi: Usquequo, Dómine? Et dixit: Donec desoléntur civitátes absque habitatóre, et domus sine hómine, et terra relinquétur desérta.
+12 Et longe fáciet Dóminus hómines, et multiplicábitur quæ derelícta fúerat in médio terræ.
+13 Et adhuc in ea decimátio, et convertétur, et erit in ostensiónem sicut terebínthus, et sicut quercus quæ expándit ramos suos: semen sanctum erit id quod stéterit in ea.

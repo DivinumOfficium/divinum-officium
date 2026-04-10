@@ -1,0 +1,23 @@
+@Tempora/Quad2-2
+
+[Lectio1]
+@Tempora/Quad2-2::s/Quod .*//
+
+[Lectio2]
+@Tempora/Quad2-2:Lectio1:s/.* (Quod )/$1/s s/$/~/
+@Tempora/Quad2-2:Lectio2:s/Notándum .*//
+
+[Lectio3]
+@Tempora/Quad2-2:Lectio2:s/.* (?=Notándum )//
+
+[Responsory1]
+@TemporaCist/Quad2-0:Responsory4
+
+[Responsory2]
+@TemporaCist/Quad2-0:Responsory5
+
+[Responsory3]
+@TemporaCist/Quad2-0:Responsory6
+
+[Ant 3]
+Qui major est vestrum, * erit miníster vester: quia omnis qui se exáltat, humiliábitur, dicit Dóminus.

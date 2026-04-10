@@ -1,10 +1,12 @@
+[Officium]
+Feria Secunda infra Hebdomadam I in Quadragesima
+
 [Rank]
-Feria Secunda infra Hebdomadam I in Quadragesima;;Feria major;;2.9
-
-[Rank](rubrica 1960)
-Feria Secunda infra Hebdomadam I in Quadragesima;;Feria major;;3
-
-[Rule]
+;;Feria major;;2.1
+(sed rubrica 1930)
+;;Feria major;;4.9
+(sed rubrica 196)
+;;Feria major;;3.9
 
 [Lectio1]
 Léctio sancti Evangélii secúndum Matthǽum
@@ -25,7 +27,7 @@ An forte ibunt in ignem ætérnum, qui ópera misericórdiæ non fecérunt: et n
 @Tempora/Quad1-0:Responsory2
 
 [Lectio3]
-Neque illud dici hic póterit, in quo nonnúlli seípsos sedúcunt, ignem ætérnum dictum, non ipsam combustiónem ætérnam. Per ignem quippe, qui ætérnus erit, transitúros arbitrántur eos, quibus propter fidem mórtuam per ignem promíttunt salútem: ut vidélicet ipse ignis ætérnus sit, combústio vero eórum, hoc est, operátio ignis, nos sit in eos ætérna: cum et hoc prǽvidens Dóminus senténtiam suam conclúsit ita dicens: Sic ibunt illi in combustiónem ætérnam, justi autem in vitam ætérnam. Erit ergo ætérna combústio, sicut ignis: et eos in illam itúros Véritas dicit, quorum non fidem, sed bona ópera defuísse declarávit.
+Neque illud dici hic póterit, in quo nonnúlli seípsos sedúcunt, ignem ætérnum dictum, non ipsam combustiónem ætérnam. Per ignem quippe, qui ætérnus erit, transitúros arbitrántur eos, quibus propter fidem mórtuam per ignem promíttunt salútem: ut vidélicet ipse ignis ætérnus sit, combústio vero eórum, hoc est, operátio ignis, non sit in eos ætérna: cum et hoc prǽvidens Dóminus senténtiam suam conclúsit ita dicens: Sic ibunt illi in combustiónem ætérnam, justi autem in vitam ætérnam. Erit ergo ætérna combústio, sicut ignis: et eos in illam itúros Véritas dicit, quorum non fidem, sed bona ópera defuísse declarávit.
 
 [Responsory3]
 @Tempora/Quad1-0:Responsory3

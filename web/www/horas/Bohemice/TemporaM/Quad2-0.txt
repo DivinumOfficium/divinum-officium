@@ -1,0 +1,48 @@
+
+[Ant Matutinum 3N]
+Postavme zde tři stany: † tobě jeden, Mojžíšovi jeden a Eliášovi jeden.;;269;270;271
+
+[Responsory4]
+R. Vstaň, otče, a pojez z toho, co tvůj syn ulovil. † Jak jsi mohl něco tak rychle najít, můj synu?
+* Byla to vůle Boží, otče, že mi rychle přišlo do cesty, co jsem chtěl.
+V. Já jsem Esau, tvůj jednorozený: † udělal jsem, jak jsi mi přikázal.
+R. Byla to vůle Boží, otče, že mi rychle přišlo do cesty, co jsem chtěl.
+
+[Lectio5]
+@Tempora/Quad2-0:Lectio4:s/Neboť .*//s
+
+[Lectio6]
+@Tempora/Quad2-0:Lectio4:s/.* Neboť /Neboť /s s/$/~/
+@Tempora/Quad2-0:Lectio5:s/Lépe .*//s
+
+[Lectio7]
+@Tempora/Quad2-0:Lectio5:s/.* Lépe /Lépe /s
+
+[Lectio8]
+@Tempora/Quad2-0:Lectio6
+
+[Responsory8]
+R. Když Jakub spal, viděl žebřík postavený na zemi, † a jeho vrchol se dotýkal nebe, a Andělé po něm vystupovali a sestupovali;
+* A jakmile se probudil ze sna, řekl: † Vpravdě je toto dům Boží.
+V. Vzal Jakub kamen, položil si jej pod hlavu, † a když usnul, viděl ve snu vztyčený žebřík.
+R. A jakmile se probudil ze sna, řekl: † Vpravdě je toto dům Boží.
+
+[Lectio9]
+@Tempora/Quad2-0:Lectio7:s/Neboť na .*//s
+
+[Lectio10]
+@Tempora/Quad2-0:Lectio7:s/.* Neboť na /Neboť na /s s/$/~/
+@Tempora/Quad2-0:Lectio8:s/ Toto je můj Syn, kterého .*//s
+
+[Lectio11]
+@Tempora/Quad2-0:Lectio8:s/.* Toto je můj Syn, kterého /Toto je můj Syn, kterého /s s/$/~/
+@Tempora/Quad2-0:Lectio9:s/ Toto je můj Syn, který .*//s
+
+[Lectio12]
+@Tempora/Quad2-0:Lectio9:s/.* Toto je můj Syn, který /Toto je můj Syn, který /s
+
+[Responsory12]
+R. Modlil se Jakub a řekl: † Hospodine, jenž jsi mi řekl, navrať se do své rodné země,
+* Vytrhni mě z rukou mého bratra, neboť se jej velmi bojím.
+V. Bože, před jehož zrakem kráčeli moji otcové, † Hospodine, jenž mě paseš od mého mládí.
+R. Vytrhni mě z rukou mého bratra, neboť se jej velmi bojím.

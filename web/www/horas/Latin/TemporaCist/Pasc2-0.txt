@@ -1,0 +1,83 @@
+@Tempora/Pasc2-0
+
+[Rule]
+12 lectiones
+
+[Ant 1]
+Hæc autem scripta sunt, * ut credátis quia Jesus est Christus Fílius Dei, et ut credéntes vitam habeátis in nómine ipsíus, allelúia.
+
+[Lectio1]
+@Tempora/Pasc1-1::1-5:s/-8/-3/
+
+[Lectio2]
+@Tempora/Pasc1-1:Lectio1:2-7:s/1-8/4-5/ s/1 .*4/4/s
+
+[Lectio3]
+@Tempora/Pasc1-1:Lectio1:2-10:s/1-/6-/ s/1 .*6/6/s
+
+[Lectio4]
+@Tempora/Pasc1-1:Lectio2:1-5:s/-14/-12/ s/Jerosólymam .*/Jerosólymam./
+
+[Responsory2]
+@TemporaCist/Pasc1-0
+
+[Responsory3]
+@TemporaCist/Pasc1-0
+
+[Responsory4]
+@TemporaCist/Pasc1-0
+
+[Lectio5]
+@Tempora/Pasc2-0:Lectio4
+
+[Lectio6]
+@Tempora/Pasc2-0:Lectio5:s/In fractióne .*//s
+
+[Lectio7]
+@Tempora/Pasc2-0:Lectio5:s/.* In fractióne /In fractióne /s
+
+[Lectio8]
+@Tempora/Pasc2-0:Lectio6:s/et apparuísset.*discórdes: //
+
+[Responsory5]
+@TemporaCist/Pasc1-0
+
+[Responsory6]
+@TemporaCist/Pasc1-0
+
+[Responsory7]
+@TemporaCist/Pasc1-0:Responsory1
+
+[Responsory8]
+@TemporaCist/Pasc1-0
+
+[Lectio9]
+@Tempora/Pasc2-0:Lectio7:s/Bonus pastor pro.*//s
+
+[Lectio10]
+@Tempora/Pasc2-0:Lectio7:s/.* Bonus /Bonus /s s/$/~/
+@Tempora/Pasc2-0:Lectio8:s/Primum .*//s
+
+[Lectio11]
+@Tempora/Pasc2-0:Lectio8:s/.* Primum /Primum /s
+
+[Lectio12]
+@Tempora/Pasc2-0:Lectio9:s/Mercenárius quippe.*//
+
+[Responsory9]
+@TemporaCist/Pasc1-0
+
+[Responsory10]
+@TemporaCist/Pasc1-0
+
+[Responsory11]
+@TemporaCist/Pasc1-0
+
+[Responsory12]
+@TemporaCist/Pasc1-0
+
+[Ant 2]
+@Tempora/Pasc2-0:Ant 3
+
+[Ant 3]
+@Tempora/Pasc2-0:Ant 1:s/, véritas, et vita/ et véritas/

@@ -1,0 +1,21 @@
+@Tempora/103-5
+
+[Lectio1]
+@Tempora/104-3::1-4 s/-25/-24/
+
+[Responsory1]
+@Tempora/101-0:Responsory3:1-4
+
+[Lectio2]
+@Tempora/104-3::1 s/26-29/25-26/
+@Tempora/104-3:Lectio1:5
+@Tempora/104-3::2
+
+[Responsory2]
+@Tempora/101-0:Responsory4
+
+[Lectio3]
+@Tempora/104-3:Lectio2:!2 s/26-/27-/
+
+[Responsory3]
+@Tempora/101-0:Responsory7

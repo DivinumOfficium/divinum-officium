@@ -1,0 +1,9 @@
+[Lectio5]
+@Sancti/10-18:Lectio4:s/Drugą .*//s
+
+[Lectio6]
+@Sancti/10-18:Lectio4:s/.* Drugą /Drugą /s s/$/~/
+@Sancti/10-18:Lectio5:s/, ale .*/./s
+
+[Lectio7]
+@Sancti/10-18:Lectio5:s/.*, ale /Ale /s

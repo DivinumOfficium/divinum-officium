@@ -1,0 +1,20 @@
+@Tempora/Pent09-3
+
+[Lectio1]
+@Tempora/Pent08-2::1-4 s/ His.*// s/-4/-2/
+
+[Responsory1]
+@Tempora/Pent01-3:Responsory3
+
+[Lectio2]
+@Tempora/Pent08-2:Lectio1:2 s/1-/2-/
+@Tempora/Pent08-2:Lectio1:4-6 s/.* (?=His)/4 /
+
+[Responsory2]
+@Tempora/Pent01-3:Responsory1
+
+[Lectio3]
+@Tempora/Pent08-2:Lectio2:1-4 s/-8/-7/
+
+[Responsory3]
+@TemporaOP/Pent01-3

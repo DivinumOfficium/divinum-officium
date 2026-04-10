@@ -1,10 +1,47 @@
-[Rank]
-Ss. Xystus et socios papae martyr;;Simplex;;1.1;;vide C3
+[AntMatutinumM]
+Behold a bright cloud overshadowed them: And the voice of the father said: This is my Son.;;45
+Peter and those that were with him, rejoiced to see the glory of God.;;46
+And Peter answering, said to Jesus: Lord, it is good for us to be here: if you will, let us make here three tabernacles.;;47
 
-[Rule]
-vide C3;
+[Ant Matutinum 3N]
+Today at the voice of the father, the Lord was transfigured, and Moses and Elijah were present in splendor, and they spoke of his death that he should accomplish.
 
-[Oratio]
-O Lord, we beseech thee, that the feast of thy blessed Martyrs and Bishops Syxtus and companions may keep us, and their worshipful prayers commend us. 
-$Per Dominum
+[Responsory4]
+R. Jesus took up Peter and James, and John his brother 
+* and he brought them up into a high mountain, there being transfigured, he showed them the brightness of his glory.
+V. That seeing his Passion they might not be disturbed, but might more strongly hold the faith.
+R. And he brought them up into a high mountain, there being transfigured, he showed them the brightness of his glory.
 
+[Lectio5]
+@Sancti/08-06:Lectio4:s/But .*//;
+
+[Lectio6]
+@Sancti/08-06:Lectio4:s/.*But /But /s s/$/~/
+@Sancti/08-06:Lectio5:s/What .*//s
+
+[Lectio7]
+@Sancti/08-06:Lectio5:s/.*What /What /s
+
+[Responsory8]
+R. Today the Lord Jesus took three of the disciples up a mountain to pray, and entering the heights alone, was transfigured before them whilst he prayed, 
+* And his garments became shining and exceeding white as snow.
+V. In order that he might have the testimony of the law and the prophets, Elias and Moses were seen in majesty in that place.
+R. And his garments became shining and exceeding white as snow.
+
+[Lectio10]
+@Sancti/08-06:Lectio8:s/But .*//s
+
+[Lectio11]
+@Sancti/08-06:Lectio8:s/.*But /But /s
+
+[Responsory11]
+R. And as they came down from the mountain, Jesus charged them, saying: Tell the vision to no man, 
+* till the Son of man be risen from the dead.
+V. Lest his death be in some way hindered if this vision was immediately divulged to the people.
+R. Till the Son of man be risen from the dead.
+
+[Responsory12]
+R. And while he prayed, the shape of his countenance was altered, and his raiment became white and glittering: 
+* And two men were talking with him, Moses and Elias, appearing in majesty.
+V. And they spoke of his death, that he should accomplish in Jerusalem.
+R. And two men were talking with him, Moses and Elias, appearing in majesty.

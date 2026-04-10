@@ -1,5 +1,12 @@
+[Officium]
+S. Gregorii Nazianzeni Episcopi Confessoris et Ecclesiæ Doctoris
+(sed rubrica tridentina)
+S. Gregorii Nazianzeni Episcopi Confessoris
+
 [Rank]
-S. Gregorii Nazianzeni Episcopi Confessoris Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+;;Duplex;;3;;vide C4a
+(sed rubrica tridentina)
+;;Duplex;;3;;vide C4
 
 [Rule]
 vide C4a;
@@ -7,11 +14,9 @@ Gloria
 CredoDA
 
 [Name]
-Gregóri
-
-[Oratio]
-Deus, qui pópulo tuo ætérnæ salútis beátum Gregórium minístrum tribuísti: præsta, quǽsumus; ut quem Doctórem vitæ habúimus in terris, intercessórem habére mereámur in cælis.
-$Per Dominum.
+Gregórium
+Secreta=Gregórii
+Postcommunio=Gregórius
 
 [Lectio]
-@Commune/C4a:Lectio1
+@Commune/C4a:Lectio in 2 loco

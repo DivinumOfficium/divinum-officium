@@ -1,0 +1,41 @@
+[Lectio2]
+@Tempora/Pent04-0:Lectio1:2 s/1-/4-/
+(sed rubrica cisterciensis)
+@Tempora/Pent04-0:Lectio1:2 s/1-7/3-5/
+@Tempora/Pent04-0:Lectio1:6-9
+(sed rubrica cisterciensis)
+@Tempora/Pent04-0:Lectio1:5-7:s/Jeho pancíř.*//
+
+[Lectio3] (rubrica cisterciensis)
+@Tempora/Pent04-0:Lectio1:2 s/1-7/5-7/
+@Tempora/Pent04-0:Lectio1:7-9:s/.* Jeho /5 Jeho /
+
+[Lectio5]
+@Tempora/Pent04-0:Lectio4:s/Totiž .*//s
+
+[Lectio6]
+@Tempora/Pent04-0:Lectio4:s/.* Totiž /Totiž /s s/$/~/
+@Tempora/Pent04-0:Lectio5:s/Ďábel .*//s
+
+[Lectio7]
+@Tempora/Pent04-0:Lectio5:s/.* Ďábel /Ďábel /s
+
+[Lectio8]
+@Tempora/Pent04-0:Lectio6
+
+[Lectio9]
+@Tempora/Pent04-0:Lectio7:s/Tam tedy .*//s
+(sed rubrica cisterciensis)
+@Tempora/Pent04-0:Lectio7:s/Ryby .*//s
+
+[Lectio10]
+@Tempora/Pent04-0:Lectio7:s/.* Tam tedy /Tam tedy /s s/$/~/
+(sed rubrica cisterciensis)
+@Tempora/Pent04-0:Lectio7:s/.* Ryby /Ryby /s s/$/~/
+@Tempora/Pent04-0:Lectio8:s/A i když .*//s
+
+[Lectio11]
+@Tempora/Pent04-0:Lectio8:s/.* A i když /A i když /s
+
+[Lectio12]
+@Tempora/Pent04-0:Lectio9

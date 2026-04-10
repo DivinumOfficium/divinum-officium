@@ -1,0 +1,74 @@
+@Sancti/08-01
+
+[Rule]
+12 lectiones
+
+[Lectio1]
+@Sancti/08-01::1-6 s/-5/-4/
+
+[Lectio2]
+@Sancti/08-01::1 s/6-8/5-7/
+@Sancti/08-01:Lectio1:7
+@Sancti/08-01::2-3
+
+[Lectio3]
+@Sancti/08-01::1 s/9-11/8-9/
+@Sancti/08-01:Lectio2:4
+@Sancti/08-01::2
+
+[Lectio4]
+@Sancti/08-01:Lectio3:!2 s/9-/10-/
+
+[Responsory4]
+@SanctiM/06-29
+
+[Lectio5]
+@Sancti/08-01:Lectio4:s/\. Eudócia.*//
+
+[Responsory5]
+@Sancti/08-01:Responsory4
+
+[Lectio6]
+@Sancti/08-01:Lectio4:s/.*\. (?=Eudócia)// s/$/~/
+@Sancti/08-01:Lectio5:s/ Quo .*//
+
+[Responsory6]
+@Sancti/08-01:Responsory5
+
+[Lectio7]
+@Sancti/08-01:Lectio5:s/.* (?=Quo)// s/$/~/
+@Sancti/08-01:Lectio6:s/ Quo in .*//
+
+[Responsory7]
+@Sancti/08-01:Responsory6
+
+[Lectio8]
+@Sancti/08-01:Lectio6:s/.* (?=Quo in)//
+
+[Responsory8]
+@SanctiM/06-29
+
+[Lectio9]
+@Sancti/08-01:Lectio7:s/ De .*//
+
+[Responsory9]
+@Sancti/08-01:Responsory7
+
+[Lectio10]
+@Sancti/08-01:Lectio7:s/.* (?=De )//s s/ Mérito.*//
+
+[Responsory10]
+@Sancti/08-01:Responsory8
+
+[Lectio11]
+@Sancti/08-01:Lectio7:s/.* (?=Mérito)//s s/$/~/
+@Sancti/08-01:Lectio8:s/ Si ad .*//
+
+[Responsory11]
+@SanctiM/06-29
+
+[Lectio12]
+@Sancti/08-01:Lectio8:s/.* (?=Si ad)//
+
+[Responsory12]
+@SanctiM/06-29

@@ -1,42 +1,6 @@
-[Rank]
-S. Elisabeth Viduae;;Duplex;;3;;vide C7a
-
-[Rule]
-CPapaM=Pontianus;
-vide C7a;
-Gloria
+[Officium]
+St. Elizabeth, Widow
 
 [Oratio]
-O merciful God, enlighten the hearts of Your faithful people, and through the~
-glorious prayers of blessed Elizabeth, make us look upon worldly prosperity as~
-nought, and ever rejoice in heavenly consolation.
+O merciful God, enlighten the hearts of Your faithful people, and through the glorious prayers of blessed Elizabeth, make us look upon worldly prosperity as nought, and ever rejoice in heavenly consolation.
 $Per Dominum
-
-[Secreta]
-O Lord, may the offerings of Your devoted people be pleasing to You in honor of~
-Your saints, through whose merits they know they have received help in time of~
-trial.
-$Per Dominum
-
-[Postcommunio]
-You have filled Your people, O Lord, with sacred gifts; ever comfort us, we~
-beseech You, by the intercession of her whose festival we are celebrating.
-$Per Dominum
-
-[Commemoratio Oratio]
-!For St. Pontianus
-@Commune/C2c:Oratio:s/N\./Pontianus/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Oratio Gregem
-
-[Commemoratio Secreta]
-!For St. Pontianus
-@Commune/C2c:Secreta:s/N\./Pontianus/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Secreta Gregem
-
-[Commemoratio Postcommunio]
-!For St. Pontianus
-@Commune/C2c:Postcommunio:s/N\./Pontianus/
-(sed communi Summorum Pontificum dicitur)
-@Commune/C4b:Postcommunio Gregem

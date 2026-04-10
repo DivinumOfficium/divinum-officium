@@ -1,0 +1,25 @@
+[Rank]
+Stolce sv. Petra v Antiochii
+
+[Lectio6] 
+@Sancti/02-22:Lectio5:s/Požehnán .*//
+
+[Lectio7]
+@Sancti/02-22:Lectio5:s/.* (Požehnán )/$1/ s/$/~/
+@Sancti/02-22:Lectio6:s/ Když.*//
+
+[Lectio8] 
+@Sancti/02-22:Lectio6:s/.*Když/Když/
+
+[Lectio9]
+@Sancti/02-22:Lectio7:s/Když .*//
+
+[Lectio10]
+@Sancti/02-22:Lectio7:s/.* (Když )/$1/s
+
+[Lectio11] 
+@Sancti/02-22:Lectio8:s/A na .*//
+
+[Lectio12] 
+@Sancti/02-22:Lectio8:s/.* (A na )/$1/ s/$/~/
+@Sancti/02-22:Lectio9:s/A jako .*//

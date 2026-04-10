@@ -1,0 +1,5 @@
+[Lectio5]
+@Sancti/12-15:Lectio4:s/My.*//s
+
+[Lectio6]
+@Sancti/12-15:Lectio4:s/.*(My)/$1/s

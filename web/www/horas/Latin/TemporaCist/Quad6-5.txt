@@ -1,0 +1,27 @@
+@Tempora/Quad6-5
+
+[Rule]
+Matutinum Romanum
+Omit Incipit Invitatorium Hymnus Capitulum Lectio Commemoratio Antiphona finalis Preces Suffragium Conclusion Martyrologium De Officium Capituli
+Limit Benedictiones, Oratio
+9 lectiones 1960
+Capitulum Versum 2 ad Laudes tantum
+Feria
+
+[Oratio]
+@Tempora/Quad6-5
+
+[Ant Laudes]
+@Tempora/Quad6-5::s/\n/_/smg s/_/;;50\n/ s/_/;;142\n/ s/_/;;62;66\n/ s/_/;;225\n/ s/$/;;148;149;150\n/s
+
+[Special Prima]
+@TemporaCist/Quad6-4::s/6-4/6-5/
+
+[Special Tertia]
+@TemporaCist/Quad6-4::s/6-4/6-5/
+
+[Special Sexta]
+@TemporaCist/Quad6-4::s/6-4/6-5/
+
+[Special Nona]
+@TemporaCist/Quad6-4::s/6-4/6-5/

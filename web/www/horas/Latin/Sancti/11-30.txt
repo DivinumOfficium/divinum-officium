@@ -1,8 +1,12 @@
-[Rank]
-S. Andreæ Apostoli;;Duplex 2 classis;;5.1;;ex C1
+[Officium]
+S. Andreæ Apostoli
 
-[Rank1960]
-S. Andreæ Apostoli;;Duplex 2 classis;;5;;ex C1
+[Rank]
+;;Duplex 2 classis;;5.1;;ex C1
+(sed rubrica 196)
+;;Duplex 2 classis;;5;;ex C1
+(sed rubrica cisterciensis)
+;;Duplex majus;;4;;ex C1
 
 [Rule]
 ex C1;
@@ -19,13 +23,18 @@ Andréas Christi fámulus, * dignus Dei Apóstolus, germánus Petri, et in passi
 Maximílla Christo amábilis * tulit corpus Apóstoli, óptimo loco cum aromátibus sepelívit.
 Qui persequebántur justum, * demersísti eos, Dómine, in inférno, et in ligno crucis dux justi fuísti.
 
-[Capitulum Vespera]
-!Rom 10:10-11
-v. Fratres: Corde enim créditur ad justítiam, ore autem conféssio fit ad salútem. Dicit enim Scriptúra: Omnis, qui credit in illum, non confundétur.
-$Deo gratias
+[Ant Vespera] (rubrica cisterciensis)
+Diléxit * Andréam Dóminus in odórem suavitátis, allelúia.
+Bíduo vivens * pendébat in cruce pro Christi nómine beátus Andréas, et docébat pópulum.
+Non me permíttas, Dómine, * fámulum tuum a te separári, tempus est, ut commendétur terræ corpus meum.
+Maximílla Christo amábilis * tulit corpus Apóstoli, óptimo loco cum aromátibus sepelívit.
+Qui persequebántur justum, * demersísti eos, Dómine, in inférno, et in ligno crucis dux justi fuísti.
 
 [Ant 1]
 Unus ex duóbus, * qui secúti sunt Dóminum, erat Andréas, frater Simónis Petri, allelúja.
+
+[Ant 1] (rubrica cisterciensis)
+Ambulans Jesus * juxta mare Galilææ vidit Petrum et Andréam fratrem ejus, et ait illis: Veníte post me, fáciam vos fíeri piscatóres hóminum: at illi, relíctis rétibus et navi, secúti sunt eum.
 
 [Oratio]
 Majestátem tuam, Dómine, supplíciter exorámus: ut, sicut Ecclésiæ tuæ beátus Andréas Apóstolus éxstitit prædicátor et rector; ita apud te sit pro nobis perpétuus intercéssor. 
@@ -35,18 +44,12 @@ $Per Dominum
 Vidit Dóminus * Petrum et Andréam, et vocávit eos.;;18
 Veníte post me, * dicit Dóminus, fáciam vos fíeri piscatóres hóminum.;;33
 Relíctis rétibus suis, * secúti sunt Dóminum Redemptórem.;;44
-V. In omnem terram exívit sonus eórum.
-R. Et in fines orbis terræ verba eórum.
 Dignum sibi Dóminus * computávit Mártyrem, quem vocávit Apóstolum, dum esset in mari, allelúja.;;46
 Diléxit Andréam * Dóminus in odórem suavitátis.;;60
 Bíduo vivens * pendébat in cruce beátus Andréas pro Christi nómine, et docébat pópulum.;;63
-V. Constítues eos príncipes super omnem terram.
-R. Mémores erunt nóminis tui, Dómine.
 Non me permíttas, Dómine, * fámulum tuum a te separári: tempus est ut commendétur terræ corpus meum, et me ad te veníre jubéas.;;74
 Andréas vero rogábat pópulum, * ut non impedíret passiónem ipsíus.;;96
 Accipe me ab homínibus * et redde me magístro meo: ut per te me recípiat, qui per te me redémit, allelúja.;;98
-V. Nimis honoráti sunt amíci tui, Deus.
-R. Nimis confortátus est principátus eórum.
 
 [Lectio1]
 De Epístola beáti Pauli Apóstoli ad Romános
@@ -76,7 +79,7 @@ R. Veníte post me, fáciam vos fíeri piscatóres hóminum.
 [Responsory2]
 R. Mox ut vocem Dómini prædicántis audívit beátus Andréas, relíctis rétibus, quorum usu actúque vivébat, 
 * Ætérnæ vitæ secútus est prǽmia largiéntem.
-V. Hic est qui pro amore Christi pepéndit in cruce, et pro lege ejus sustínuit passiónem.
+V. Hic est qui pro amóre Christi pepéndit in cruce, et pro lege ejus sustínuit passiónem.
 R. Ætérnæ vitæ secútus est prǽmia largiéntem.
 
 [Lectio3]
@@ -97,7 +100,7 @@ R. Súscipe discípulum ejus, qui pepéndit in te magíster meus Christus.
 R. Súscipe discípulum ejus, qui pepéndit in te magíster meus Christus.
 
 [Lectio4]
-Andréas Apóstolus, Bethsáidæ natus, qui est Galilǽæ vicus, frater Petri, discípulus Joánnis Baptistæ, cum eum de Christo dicéntem audísset: Ecce Agnus Dei; secútus Jesum, fratrem quoque suum ad eúndem perdúxit. Cum póstea una cum fratre piscarétur in mari Galilǽæ, ambo a prætereúnte Christo Dómino ante álios Apóstolos vocáti illis verbis: Veníte post me, fáciam vos fíeri piscatóres hóminum; nullam interponéntes moram, et relíctis rétibus, secúti sunt eum. Post cujus passiónem et resurrectiónem, Andréas, cum in Scýthiam Európæ, quæ ei província ad Christi fidem dísseminandam obtígerat, venísset, deinde Epírum ac Thráciam peragrásset; doctrína et miráculis innumerábiles hómines ad Christum convértit. Post, Patras Achájæ proféctus, et in ea urbe plúrimis ad veritátem evangélicam perdúctis, Ægéam procónsulem, prædicatióni evangelicæ resisténtem, libérrime increpávit, quod, qui judex hóminum habéri vellet, Christum Deum ómnium júdicem, a dæmónibus elúsus, non agnósceret.
+Andréas Apóstolus, Bethsáidæ natus, qui est Galilǽæ vicus, frater Petri, discípulus Joánnis Baptistæ, cum eum de Christo dicéntem audísset: Ecce Agnus Dei; secútus Jesum, fratrem quoque suum ad eúndem perdúxit. Cum póstea una cum fratre piscarétur in mari Galilǽæ, ambo a prætereúnte Christo Dómino ante álios Apóstolos vocáti illis verbis: Veníte post me, fáciam vos fíeri piscatóres hóminum; nullam interponéntes moram, et relíctis rétibus, secúti sunt eum. Post cujus passiónem et resurrectiónem, Andréas, cum in Scýthiam Európæ, quæ ei província ad Christi fidem disseminándam obtígerat, venísset, deínde Epírum ac Thráciam peragrásset; doctrína et miráculis innumerábiles hómines ad Christum convértit. Post, Patras Achájæ proféctus, et in ea urbe plúrimis ad veritátem evangélicam perdúctis, Ægéam procónsulem, prædicatióni evangélicæ resisténtem, libérrime increpávit, quod, qui judex hóminum habéri vellet, Christum Deum ómnium júdicem, a dæmónibus elúsus, non agnósceret.
 
 [Responsory4]
 R. Homo Dei ducebátur ut crucifígerent eum: pópulus autem clamábat voce magna, dicens: 
@@ -106,21 +109,21 @@ V. Cumque dúcerent eum ut crucifigerétur, factus est concúrsus populórum cla
 R. Innocens ejus sanguis sine causa damnátur.
 
 [Lectio5]
-Tum Ægéas irátus, Désine, inquit, Christum jactáre, cui simília verba nihil profuérunt, quóminus a Judǽis crucifigerétur. Andréam vero de Christo nihilóminus líbere prædicántem quod pro salúte humani géneris se crucifigéndum obtulísset, ímpia oratióne interpéllat, ac demum hortátur, ut sibi cónsulens, diis velit immoláre. Cui Andréas: Ego omnipoténti Deo, qui unus et verus est, ímmolo quotídie, non taurórum carnes, nec hircórum sánguinem, sed immaculátum Agnum in altári; cujus carnem posteáquam omnis pópulus credéntium manducáverit, Agnus, qui sacrificátus est, ínteger perservérat et vivus. Quam ob rem ira accénsus Ægéas, jubet eum in cárcerem detrúdi unde pópulus Andréam fácile liberásset, nisi ipse sedásset multitúdinem, veheméntius rogans, ne se ad optatíssimam martýrii corónam properántem impedírent.
+Tum Ægéas irátus, Désine, inquit, Christum jactáre, cui simília verba nihil profuérunt, quóminus a Judǽis crucifigerétur. Andréam vero de Christo nihilóminus líbere prædicántem quod pro salúte humáni géneris se crucifigéndum obtulísset, ímpia oratióne interpéllat, ac demum hortátur, ut sibi cónsulens, diis velit immoláre. Cui Andréas: Ego omnipoténti Deo, qui unus et verus est, ímmolo cotídie, non taurórum carnes, nec hircórum sánguinem, sed immaculátum Agnum in altári; cujus carnem posteáquam omnis pópulus credéntium manducáverit, Agnus, qui sacrificátus est, ínteger persevérat et vivus. Quam ob rem ira accénsus Ægéas, jubet eum in cárcerem detrúdi unde pópulus Andréam fácile liberásset, nisi ipse sedásset multitúdinem, veheméntius rogans, ne se ad optatíssimam martýrii corónam properántem impedírent.
 
 [Responsory5]
-R. O bona crux, quæ decórem et pulchritúdinem de membris Dómini suscepísti; accipe me ab homínibus, et redde me magístro meo: 
+R. O bona crux, quæ decórem et pulchritúdinem de membris Dómini suscepísti; áccipe me ab homínibus, et redde me magístro meo: 
 * Ut per te me recípiat, qui per te me redémit.
 V. Beátus Andréas expánsis mánibus ad cælum orábat, dicens: Salva me, bona crux.
 R. Ut per te me recípiat, qui per te me redémit.
 
 [Lectio6]
-Igitur paulo post in tribúnal prodúctum, cum Ægéas crucis extolléntem mystéria sibíque suam impietátem exprobrántem diútius ferre non posset, in crucem tolli, et Christi mortem imitári jussit. Addúctus Andréas ad locum martýrii, cum crucem vidísset, longe exclamáre cœpit: O bona crux, quæ decórem ex membris Dómini suscepísti, diu desíderata, sollícite amáta, sine intermissióne quæsíta, et aliquándo cupiénti ánimo præparáta: áccipe me ab homínibus, et redde me magístro meo; ut per te me recípiat, qui per te me redémit. Itaque cruci affíxus est: in qua bíduum vivus pendens, et Christi fidem prædicáre numquam intermíttens, ad eum migrávit, cujus mortis similitúdinem concupíerat. Quæ ómnia presbýteri et diáconi Achájæ, qui ejus passiónem scripsérunt, se ita ut commemoráta sunt, audísse et vidísse testántur. Ejus ossa primum Constantíno imperatóre Constantinópolim, deinde Amálphim transláta sunt. Caput, Pio secúndo Pontífice, Romam allátum, in basílica sancti Petri collocátum est.
+Igitur paulo post in tribúnal prodúctum, cum Ægéas crucis extolléntem mystéria sibíque suam impietátem exprobrántem diútius ferre non posset, in crucem tolli, et Christi mortem imitári jussit. Addúctus Andréas ad locum martýrii, cum crucem vidísset, longe exclamáre cœpit: O bona crux, quæ decórem ex membris Dómini suscepísti, diu desideráta, sollícite amáta, sine intermissióne quæsíta, et aliquándo cupiénti ánimo præparáta: áccipe me ab homínibus, et redde me magístro meo; ut per te me recípiat, qui per te me redémit. Itaque cruci affíxus est: in qua bíduum vivus pendens, et Christi fidem prædicáre nunquam intermíttens, ad eum migrávit, cujus mortis similitúdinem concupíerat. Quæ ómnia presbýteri et diáconi Achájæ, qui ejus passiónem scripsérunt, se ita ut commemoráta sunt, audísse et vidísse testántur. Ejus ossa primum Constantíno imperatóre Constantinópolim, deínde Amálphim transláta sunt. Caput, Pio secúndo Pontífice, Romam allátum, in basílica sancti Petri collocátum est.
 
 [Responsory6]
 R. Expándi manus meas tota die in cruce ad pópulum non credéntem, sed contradicéntem mihi: 
 * Qui ámbulant vias non bonas, sed post peccáta sua.
-V. Deus ultiónum Dóminus, Deus ultiónum líbere egit: exaltáre, qui júdicas terram, redde retributiónem supérbis.
+V. Deus ultiónum Dóminus, Deus ultiónum líbere egit: exaltáre, qui júdicas terram; redde retributiónem supérbis.
 R. Qui ámbulant vias non bonas, sed post peccáta sua.
 &Gloria
 R. Qui ámbulant vias non bonas, sed post peccáta sua.
@@ -132,7 +135,7 @@ In illo témpore: Ambulans Jesus juxta mare Galilǽæ, vidit duos fratres, Simó
 _
 Homilía sancti Gregórii Papæ
 !Homilia 5 in Evangelia
-Audístis, fratres caríssimi, quia ad uníus jussiónis vocem Petrus et Andréas relíctis rétibus secúti sunt Redemptórem. Nulla vero hunc fácere adhuc mirácula víderant, nihil ab eo de prǽmio ætérnæ retributiónis audíerant: et tamen ad unum Dómini præcéptum hoc quod possidére videbántur, oblíti sunt. Quanta nos ejus mirácula vidémus, quot flagéllis afflígimur, quántis minárum asperitátibus deterrémur, et tamen vocántem sequi contémnimus.
+Audístis, fratres caríssimi, quia ad uníus jussiónis vocem Petrus et Andréas relíctis rétibus secúti sunt Redemptórem. Nulla vero hunc fácere adhuc mirácula víderant, nihil ab eo de prǽmio ætérnæ retributiónis audíerant: et tamen ad unum Dómini præcéptum hoc quod possidére videbántur, oblíti sunt. Quanta nos ejus mirácula vidémus, quot flagéllis afflígimur, quantis minárum asperitátibus deterrémur, et tamen vocántem sequi contémnimus.
 
 [Responsory7]
 R. Orávit sanctus Andréas, dum respíceret in cælum, et voce magna clamávit et dixit: Tu es Deus meus, quem vidi: ne me patiáris ab ímpio júdice depóni:
@@ -141,7 +144,7 @@ V. Tu es magíster meus Christus, quem diléxi, quem cognóvi, quem conféssus s
 R. Quia virtútem sanctæ crucis agnóvi.
 
 [Lectio8]
-In cælo jam sedet, qui de conversióne nos ádmonet; jam jugo fidei colla géntium súbdidit, jam mundi glóriam strávit, jam ruínis ejus crebrescéntibus, distrícti sui judícii diem propínquantem denúntiat: et tamen supérba mens nostra adhuc non vult hoc sponte desérere, quod cotídie perdit invíta. Quid ergo, fratres caríssimi, quid in ejus judício dictúri sumus, qui ab amore præséntis sǽculi nec præcéptis fléctimur, nec verbéribus emendámur?
+In cælo jam sedet, qui de conversióne nos ádmonet; jam jugo fídei colla géntium súbdidit, jam mundi glóriam stravit, jam ruínis ejus crebrescéntibus, distrícti sui judícii diem propinquántem denúntiat: et tamen supérba mens nostra adhuc non vult hoc sponte desérere, quod cotídie perdit invíta. Quid ergo, fratres caríssimi, quid in ejus judício dictúri sumus, qui ab amóre præséntis sǽculi nec præcéptis fléctimur, nec verbéribus emendámur?
 
 [Responsory8]
 R. Videns crucem Andréas exclamávit, dicens: O crux admirábilis, o crux desiderábilis, o crux quæ per totum mundum rútilas: 
@@ -152,24 +155,27 @@ R. Súscipe discípulum Christi, ac per te me recípiat, qui per te móriens me 
 R. Súscipe discípulum Christi, ac per te me recípiat, qui per te móriens me redémit.
 
 [Lectio9]
-Sed fortásse áliquis tácitis sibi cogitatiónibus dicat: Ad vocem Domínicam utérque iste piscátor quid, aut quantum dimísit, qui pene nihil hábuit? Sed hac in re, fratres caríssimi, afféctum debémus potius pensáre quam censum. Multum relíquit, qui sibi nihil retínuit: multum relíquit, qui quantúmlibet parum, totum deséruit. Certe nos et hábita cum amore póssidemus, et ea, quæ mínime habémus, ex desidério quǽrimus. Multum ergo Petrus et Andréas dimísit, quando utérque étiam desidéria habéndi derelíquit.
+Sed fortásse áliquis tácitis sibi cogitatiónibus dicat: Ad vocem Domínicam utérque iste piscátor quid, aut quantum dimísit, qui pene nihil hábuit? Sed hac in re, fratres caríssimi, afféctum debémus pótius pensáre quam censum. Multum relíquit, qui sibi nihil retínuit: multum relíquit, qui quantúmlibet parum, totum deséruit. Certe nos et hábita cum amóre possidémus, et ea, quæ mínime habémus, ex desidério quǽrimus. Multum ergo Petrus et Andréas dimísit, quando utérque étiam desidéria habéndi derelíquit.
 &teDeum
+
+[Versum 0]
+V. Diléxit Andréam Dóminus.
+R. In odórem suavitátis.
 
 [Ant Laudes]
 @:Ant Vespera
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Rom 10:10-11
+v. Fratres: Corde enim créditur ad justítiam, ore autem conféssio fit ad salútem. Dicit enim Scriptúra: Omnis, qui credit in illum, non confundétur.
+$Deo gratias
 
 [Ant 2]
-Concéde nobis * hóminem justum, redde nobis hóminem sanctum: ne interfícias hóminem Deo cárum, justum, mansuétum et pium.
+Concéde nobis * hóminem justum, redde nobis hóminem sanctum: ne interfícias hóminem Deo carum, justum, mansuétum et pium.
 
 [Lectio Prima]
 !Rom 10:16-18
 v. Isaías enim dicit: Dómine, quis crédidit audítui nostro? Ergo fides ex audítu, audítus autem per verbum Christi. Sed dico: Numquid non audiérunt? Et quidem in omnem terram exívit sonus eórum, et in fines orbis terræ verba eórum.
-
-[Capitulum Tertia]
-@:Capitulum Vespera
 
 [Capitulum Sexta]
 !Rom 10:12-13

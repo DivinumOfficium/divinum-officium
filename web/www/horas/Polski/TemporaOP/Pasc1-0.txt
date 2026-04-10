@@ -1,0 +1,9 @@
+[Lectio1]
+@Tempora/Pasc1-0:Lectio7:s/ Przez.*//
+
+[Lectio2]
+@Tempora/Pasc1-0:Lectio7:s/.*(?=Przez)//s s/$/~/
+@Tempora/Pasc1-0:Lectio8:s/ W ten.*//
+
+[Lectio3]
+@Tempora/Pasc1-0:Lectio8:s/.*(?=W ten)// s/ Przedstawił.*//

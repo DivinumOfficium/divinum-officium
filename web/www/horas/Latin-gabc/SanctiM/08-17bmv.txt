@@ -1,0 +1,17 @@
+[Ant Matutinum]
+@Sancti/08-15t::3 s/;;\d+//
+(sed feria 2)
+@Sancti/08-15t::1 s/;;\d+//
+;;
+;;
+;;
+;;
+;;
+@Sancti/08-15t::6 s/;;\d+//
+(sed feria 2)
+@Sancti/08-15t::2 s/;;\d+//
+;;
+;;
+;;
+;;
+;;

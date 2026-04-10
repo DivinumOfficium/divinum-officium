@@ -1,7 +1,51 @@
 @Tempora/111-0
 
+[Lectio1]
+@Commune/C1a:Lectio1:s/-4/-3/ s/4 .*//s
+
+[Lectio2]
+@Commune/C1a:Lectio1:s/.*!/!/s s/-4/-6/ s/1-/4-/ s/1 .*4 /4 /s
+@Commune/C1a:Lectio2:s/!.*// s/7 .*//s
+
+[Lectio3]
+@Commune/C1a:Lectio2:s/5-/7-/ s/5 .*7 /7 /s
+
+[Lectio4]
+@Commune/C1a:Lectio3
+
+[Responsory4]
+@Tempora/111-1:Responsory1
+
+[Lectio5]
+@Tempora/111-0:Lectio4
+
+[Responsory5]
+@Tempora/111-0:Responsory4
+
+[Lectio6]
+@Tempora/111-0:Lectio5:s/Unde .*//s
+
+[Responsory6]
+@Tempora/111-0:Responsory5
+
+[Lectio7]
+@Tempora/111-0:Lectio5:s/.* Unde /Unde /s s/$/~/
+@Tempora/111-0:Lectio6:s/Continuávit .*//s
+
+[Responsory7]
+@Tempora/111-0:Responsory6
+
+[Lectio8]
+@Tempora/111-0:Lectio6:s/.* Continuávit /Continuávit /s
+
 [Responsory8]
-@TemporaM/Pent03-0:Responsory8
+@Tempora/111-1:Responsory2
 
 [Responsory9]
-@TemporaM/Pent03-0:Responsory9
+@Tempora/111-0:Responsory7
+
+[Responsory10]
+@Tempora/111-1:Responsory3
+
+[Responsory11]
+@Tempora/111-3:Responsory1

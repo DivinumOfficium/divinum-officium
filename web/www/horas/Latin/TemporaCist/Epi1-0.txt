@@ -1,0 +1,136 @@
+@Tempora/Epi1-0
+
+[Rule]
+12 lectiones
+Psalmi Dominica
+Antiphonas horas
+Doxology=EpiT
+
+[Ant Vespera] 
+Jacob autem * génuit Joseph virum Maríæ; de qua natus est Jesus, qui vocátur Christus.;;109
+Angelus Dómini * appáruit in somnis Joseph, dicens: Joseph, fili David, noli timére accípere Maríam cónjugem tuam; quod enim in ea natum est, de Spíritu Sancto est.;;112
+Pastóres venérunt * festinántes, et invenérunt Maríam, et Joseph, et Infántem pósitum in præsépio.;;121
+Mirabántur omnes * in verbis grátiæ, quæ procedébant de ore ipsíus, et decébant: Nonne hic est fílius Joseph?;;126
+Magi, intrántes domum, * invenérunt Púerum cum María, matre ejus.
+
+[Commemoratio]
+@Tempora/Epi1-0a:Oratio
+(sed die Baptismatis)
+
+[Ant MatutinumC]
+Suscípiens Jesum * in ulnas suas Símeon, exclamávit, et dixit: Tu es vere lumen ad illuminatiónem géntium.;;23
+Erat Pater Jesu, * et Mater mirántes super his, quæ dicebántur de illo: et benedíxit illis Símeon.;;44
+
+[Ant Matutinum]
+@SanctiM/03-19:AntMatutinumM:1:s/23/8/ s/,? †/,/
+@Tempora/Epi1-0::1:s/;;8/;;18/
+@:Ant MatutinumC:1-2
+@Tempora/Epi1-0::2-4:s/;;18/;;45/ s/;;23/;;47/ s/;;44/;;84/
+@Tempora/Epi1-0::5:s/;;45/;;86/ 
+@Tempora/Epi1-0::6:s/;;86/;;95/
+@Tempora/Epi1-0::7:s/;;95/;;96/
+@Tempora/Epi1-0a:Ant 1:s/$/;;97/
+@Tempora/Epi1-0:Ant Vespera 3:1:s/;;109/;;98/
+@Tempora/Epi1-0:Ant Vespera 3:2:s/;;.*/;;249;250;251/
+
+[Nocturn 1 Versum] 
+V. Propter nos egénus factus est cum esset dives.
+R. Ut illíus inópia nos dívites essémus.
+
+[Nocturn 2 Versum] 
+@Tempora/Epi1-0
+
+[Nocturn 3 Versum] 
+@Tempora/Epi1-0:Versum 2
+
+[Lectio3]
+@Tempora/Epi1-0::1-5:s/;.*//
+
+[Lectio4]
+@Tempora/Epi1-0:Lectio3:s/22 .*1 /1 /s s/3:.*4/4/
+
+[Responsory4]
+R. Hóstiam et oblatiónem noluísti,
+* Corpus autem aptásti mihi.
+V. In cápite libri scriptum est de me, ut fáciam, Deus, voluntátem tuam.
+R. Corpus autem aptásti mihi.
+
+[Lectio5]
+De Sermóne sancti Ambrósii Epíscopi.
+!Exp. in Ps. 36, et 61.
+Súbditus esto Dómino, et óbsecra eum. Christus faciéndo voluntátem Patris, legem implévit. Et ídeo finis est legis et plenitúdo est charitátis; quia díligens Patrem, afféctum omnem ejus adhíbuit voluntáti. Dénique pro pietáte erat non pro infirmitáte Joseph et Maríæ paréntibus súbditus. Suscépit ítaque compassiónem nostram suscépit et subjectiónem. Quod enim subjécit sibi ómnia, suum est: quod subjéctus est, nostrum est. Anima, inquit, súbdita, non divínitas, ánima subjécta, non Dei virtus. Per ipsam ergo obediéntia, per ipsam humílitas: quæ tamen non ad infirmitátem poténtiæ suscépta sunt, sed ad magistérium disciplínae. 
+	
+[Lectio6]
+Quasi homo ergo ex his, quæ passus est, dídicit obediéntiam, ut consummarétur in carne et per obediéntiæ transfúsam in nos successiónem causa fíeret nobis salútis ætérnæ, quibus ante per inobediéntiæ hæreditátem primus ille Adam causa factus est mortis. Subjéctio ergo magistérium virtútis humánæ, non divínæ imminútio potestátis est. 	
+
+[Lectio7]
+Nam si illum minórem Fílium et inæquálem Patri dicunt, quia erat súbditus Patri Deo; numquid et matre ídeo minor, quia súbditus erat matri? Lectum est enim de Joseph et María: et erat súbditus illis. Sed píetas ómnibus nobis non dispéndio, sed increménto est; per quam ómnibus nobis Dóminus Jesus fidem infúdit et grátiam, ut nos spíritu fidéli súbditos Patri fáciat Deo. 
+
+[Lectio8]
+!Ibid. in Ps. 118, nn. 32. et 34.
+Dénique, si considerémus, in paradíso defécit humílitas, et ídeo venit de cœlo. In paradíso orta est inobediéntia, et ídeo obediéntia cum Salvatóre descéndit. Inflabátur caro, unde subjéctio mansuetúdinis inveníri non póterat in terris. Véniens Dóminus Jesus primum se exinanívit, non rapínam arbitrátus esse se æquálem Deo, formam servi sibi accípiens, et spécie invéntus ut homo, humiliávit semetípsum factus obédiens usque ad mortem. Dicat ergo: júvenis sum et despéctus: quia Christus in páupere atque despécto mundum redémit, quia Christus humilitáte diábolum vicit.
+
+[Responsory5]
+@Tempora/Epi1-0:Responsory4
+
+[Responsory6]
+@Tempora/Epi1-0:Responsory5
+
+[Responsory7]
+@Tempora/Epi1-0:Responsory6
+
+[Responsory8]
+R. Pauper sum ego, et in labóribus,
+* A juventúte mea.
+V. Exaltátus autem, humiliátus sum et conturbátus.
+R. A juventúte mea.
+
+[Lectio9]
+@Tempora/Epi1-0:Lectio7
+
+[Lectio10]
+@Tempora/Epi1-0:Lectio8:s/Quóties .*//
+
+[Lectio11]
+@Tempora/Epi1-0:Lectio8:s/.* (?=Quóties )// s/$/~/
+@Tempora/Epi1-0:Lectio9:s/Séquitur .*//
+
+[Lectio12]
+@Tempora/Epi1-0:Lectio9:s/.* (?=Séquitur )// 
+
+[Responsory9]
+@Tempora/Epi1-0:Responsory7
+
+[Responsory10]
+@Tempora/Epi1-0:Responsory8
+
+[Responsory11]
+R. Propter nos egénus factus est; 
+* Cum esset dives.
+V. Ut illíus inópia nos dívites essémus.
+R. Cum esset dives.
+
+[Responsory12]
+R. Docébit nos Dóminus 
+* Vias suas.
+V. Et ambulábimus in sémitis ejus.
+R. Vias suas.
+
+[Ant Laudes]
+@:Ant Vespera 3:s/;;.*//g
+
+[Versum 2] 
+@Tempora/Epi1-0:Versum 1
+
+[Ant Vespera 3] 
+Fili, * quid fecísti nobis sic? Ecce pater tuus et ego doléntes quærebámus te. Quid est quod me quærebátis? nesciebátis quia in his, quæ Patris mei sunt, opórtet me esse?;;109
+Descéndit Jesus * cum eis, et venit Názareth, et erat súbditus illis.;;112
+Et Jesus proficiébat * sapiéntia, et ætate, et grátia apud Deum et hómines.;;121
+Mirábantur omnes * in verbis grátiæ, quæ procedébat de ore ipsíus, et dicébant: Nonne hic est fílius Joseph?;;126
+Et dicébant: * Unde huic sapiéntia hæc, et virtútes? Nonne hic est fabri fílius?;;147
+
+[Versum 3]
+@Tempora/Epi1-0:Versum 1
+
+[Commemoratio 3] 
+@Tempora/Epi1-0a:Oratio

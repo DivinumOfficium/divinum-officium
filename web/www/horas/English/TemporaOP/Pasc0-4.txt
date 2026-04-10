@@ -1,0 +1,16 @@
+[Lectio1]
+@Tempora/Pasc0-4::s/ , and.*/./s
+
+[Responsory1]
+@TemporaOP/Pasc0-1
+
+[Lectio2]
+@Tempora/Pasc0-4:Lectio1:s/.*, and/And/s s/$/~/
+@Tempora/Pasc0-4::s/ And.*//
+
+[Responsory2]
+@TemporaOP/Pasc0-1
+
+[Lectio3]
+@Tempora/Pasc0-4:Lectio2:s/.*And/And/s s/$/~/
+@Tempora/Pasc0-4::s/ She.*//

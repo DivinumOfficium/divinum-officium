@@ -1,0 +1,38 @@
+@Tempora/Pasc1-0
+
+[Rule]
+12 lectiones
+
+[Ant Matutinum 3N]
+Alleluja, * neplač, Maria, alleluja: † Pán vstal z mrtvých, † alleluja, alleluja.
+
+
+[Lectio5]
+@TemporaM/Pasc0-1::s/Maxima/Ambrože/ s/Homilie LVII; O Velikonocích III/Řeč 52. na Žalm 117. ze dne Posvátné Paschy./
+
+[Lectio6]
+@TemporaM/Pasc0-1
+
+[Lectio7]
+@TemporaM/Pasc0-1
+
+[Lectio8]
+@TemporaM/Pasc0-1
+
+[Lectio9]
+@Tempora/Pasc1-0:Lectio7:s/Avšak .*//s
+
+[Lectio10]
+@Tempora/Pasc1-0:Lectio7:s/.* (?=Avšak )//s s/$/~/
+
+[Lectio11]
+@Tempora/Pasc1-0:Lectio8:s/Avšak .*//s
+
+[Lectio12]
+@Tempora/Pasc1-0:Lectio8:s/.* (?=Avšak )//s
+
+[Ant 2]
+Po osmi dnech * vešel Pán zavřenými dveřmi a řekl jim: „Pokoj vám,” alleluja, alleluja.
+
+[Ant 3]
+Mnohá totiž * i další znamení učil Ježíš před zrakem svých učedníků, alleluja, ovšem ta nejsou v této knize zapsána, alleluja.

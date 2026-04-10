@@ -1,0 +1,56 @@
+[AntM Matutinum]
+Terra * trémuit et quiévit, † dum exsúrgeret in judício Deus, allelúja.;;29
+Nolíte expavéscere: * Jesum quǽritis Nazarénum, crucifíxum: surréxit, non est hic, allelúja.;;243;244;245
+
+[Lectio1]
+@Tempora/Nat03::1-6 s/1-5/2-4/ s/1.*Absit. /2 /s
+
+[Lectio2]
+@Tempora/Nat03::1 s/6-11/5-7/
+@Tempora/Nat03:Lectio1:7
+@Tempora/Nat03::2-3
+
+[Lectio3]
+@Tempora/Nat03:Lectio2:s/6-11/8-10/ s/6 .*8/8/s s/.11 .*//s
+
+[Lectio4]
+@Tempora/Nat03:Lectio2:s/6-11/11-13/ s/6 .*11/11/s
+@Tempora/Nat03:Lectio3:2-3
+
+[Lectio5]
+Sermo sancti Gregórii Nazianzéni
+!Sermone 2. de Paschale
+Pascha Dómini, Pascha, iterúmque Pascha dicam in honórem Trinitátis. Hæc nobis festívitatum festívitas, et celebritátum celébritas, tanto céteris ómnibus, non solum humánis et humi defíxis, sed iis étiam quæ ipsíus Christi sunt ac propter ipsum celebrántur, antecéllens, quanto sol stellis antecéllit. Heri agnus mactabátur, et postes ungebántur, luxítque primogénita Aegýptus, ac nos exterminátor prætériit, (signáculum quippe terróri ipsi ac veneratióni fuit), pretiosóque Sánguine protécti sumus.
+
+[Lectio6]
+Hódie Aegýptum omníno fúgimus, et amaruléntum illum dóminum pharaónem, et acérbos præféctos: ac luto et láterum confectióne liberáti sumus: nec quisquam est, qui nos Dómino Deo nostro éxitus festum celebráre prohíbeat, et quidem celebráre, non in ferménto véteri malítiæ et nequítiæ, sed in ázymis sinceritátis et veritátis, nihil Aegyptíaci atque imi ferménti nobíscum feréntes. Heri cum Christo in crucem angébar: hódie simul gloríficor. Heri commoriébar: hódie simul vivíficor. Heri consepeliébar: hódie simul resúrgo.
+
+[Lectio7]
+At vero ei, qui pro nobis passus est ac resurréxit, múnera offerámus. Aurum fortásse me dícere putátis, aut argéntum, aut textúras, aut perlúcidos et ingéntis prétii lápides, fluxam fragilémque terræ matériam, humíque manéntem, cujúsque majórem partem ímprobi fere póssident, et servi rerum terrenárum ac mundi príncipis?  Immo vero nosmetípsos offerámus, hoc est, opes Deo caríssimas, maximéque congruéntes.  Imáginis decus imágini reddámus, dignitátem nostrum agnoscámus, exemplar nostrum honóre prosequámur, mystérii vim intellegámus, et pro quo Christus morte functus est. Simus ut Christus quoque sicut nos.  Efficiámur dii propter ipsum, quóniam quoque propter nos homo factus est.
+
+[Lectio8]
+Assúmpsit, quod detérius erat, ut det, quod pæstántius est: mendícus factus est, ut nos illíus mendicitáte ditémur: servi formam suscépit nos in libertátem asserámur. Descéndit, ut evehámur: tentátus est, vincámus: contémptus: ut nos glória affíciat: mórtuus est, ut salútem nobis áfferat: ascéndit ut eos, qui in peccáti lapsu iacébant, ad seípsum trahat. Omnia quíspiam donet, ómnia ei, qui seípsum redemptiónis prétium pro nobis, ac culpæ nostræ succidáneum dedit, ófferat. Nihil autem datúrus est tantum, quantum si seípsum obtúlerit hujus mystérii ratiónem probe intelligéntem; ac propter illum ómnia factus fúerit, quacúmque ipse propter nos factus est.
+
+[Lectio9]
+@Tempora/Pasc0-0:Lectio1:s/ Illæ.*//s
+
+[Lectio10]
+@Tempora/Pasc0-0:Lectio1:s/.*Illæ/Illæ/s s/$/~/
+@Tempora/Pasc0-0:Lectio2:s/ Quia.*//s
+
+[Lectio11]
+@Tempora/Pasc0-0:Lectio2:s/.*Quia/Quia/s
+
+[Capitulum Laudes]
+!1 Cor 5:7
+{(c3) Fra(h)tres:(h.) (,) Ex(h)pur(h)gá(h)te(h) ve(h)tus(h) fer(h)mén(h)tum,(f.) †(;) ut(h) si(h)tis(h) no(h)va(h) con(h)spér(h)si(h)o,(h) sic(h)ut(h) es(g)tis(f) á(h)zy(hr)mi.(h.) *(;) Et(h)e(h)nim(h) Pas(h)cha(h) nos(h)trum(h) im(h)mo(h)lá(h)tus(h) est(h) Chris(f)tus.(ef..) (::)}
+$Deo gratias
+
+[Versum 2]
+{initial-style:0;%%(c3) V/. Hæc(h) di(h)es,(h) quam(h) fé(h)cit(h) Do(hi)mi(h)nus,(h_') (,) al(h)le(fe)lú(f_0h)ja.(hiH'Ghih.ghG'FE'fggf.) (::) 
+R/. Ex(h)sul(h)té(h)mus(h) et(h) læ(h)té(h)mur(h) in(h) e(hi)a,(h_') (,) al(h)le(fe)lú(f_0h)ja.(hiH'Ghih.ghG'FE'fggf.) (::)}
+
+[Capitulum Sexta]
+!1 Cor 5:8
+{(c3) I(h)ta(h)que(h) e(h)pu(h)lé(h)mur:(f.) †(;) non(h) in(h) fer(h)mén(h)to(h) vé(h)te(h)ri,(h) ne(h)que(h) in(h) fer(h)mén(h)to(h) ma(h)lí(h)ti(h)æ(h) et(g) ne(f)quí(h)ti(hr)æ:(h.) *(;) sed(h) in(h) á(h)zy(h)mis(h) sin(h)ce(h)ri(h)tá(h)tis(h) et(h) ve(h)ri(h)tá(f)tis.(ef..) (::)}
+$Deo gratias

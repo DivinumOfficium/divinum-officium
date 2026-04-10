@@ -1,0 +1,7 @@
+[Lectio2]
+@Tempora/Epi2-2:Lectio3:1:s/11-15/12-14/
+@Tempora/Epi2-2:Lectio3:3-5:s/úsudku\: .*/úsudku./
+
+[Lectio3]
+@Tempora/Epi2-2:Lectio3:1:s/11-/14-/
+@Tempora/Epi2-2:Lectio3:5-6:s/.* (Jeden )/14 $1/

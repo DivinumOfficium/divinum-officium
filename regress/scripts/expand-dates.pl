@@ -6,8 +6,8 @@ use warnings;
 use DateTime;
 use List::MoreUtils qw(zip);
 
-while (<>)
-{
+while (<>) {
+
   # Strip comments and ignore blank lines.
   s/#.*//;
   next unless $_;
@@ -19,18 +19,17 @@ while (<>)
   print;
 }
 
-sub expand_dates
-{
+sub expand_dates {
+
   my @keys = ('month', 'day', 'year');
-  my @start_mdy = @_[0..2];
-  my @end_mdy   = @_[3..5];
+  my @start_mdy = @_[0 .. 2];
+  my @end_mdy = @_[3 .. 5];
   my $rover = DateTime->new(zip(@keys, @start_mdy));
-  my $end   = DateTime->new(zip(@keys, @end_mdy));
+  my $end = DateTime->new(zip(@keys, @end_mdy));
 
   my @dates;
 
-  while ($rover <= $end)
-  {
+  while ($rover <= $end) {
     push @dates, $rover->mdy('-');
     $rover->add(days => 1);
   }

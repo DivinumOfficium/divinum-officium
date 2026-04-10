@@ -1,0 +1,26 @@
+@Tempora/Quadp3-4
+
+[Lectio1]
+@Tempora/Quadp3-4::s/\. Je[sz]us.*/./
+
+[Responsory1]
+@TemporaOP/Quadp3-0
+
+[Lectio2]
+@Tempora/Quadp3-4:Lectio1:s/.* (?=Je[sz]us)//s s/$/~/
+@Tempora/Quadp3-4::s/ Non.*//
+
+[Responsory2]
+@TemporaOP/Quadp3-1
+
+[Responsory3]
+@TemporaOP/Quadp3-0:Responsory2
+
+[Capitulum Laudes]
+@Psalterium/Special/Minor Special:Quad Tertia
+
+[Capitulum Sexta]
+@Psalterium/Special/Minor Special:Quad Sexta
+
+[Capitulum Nona]
+@Psalterium/Special/Minor Special:Quad Nona

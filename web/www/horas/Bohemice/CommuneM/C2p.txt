@@ -1,0 +1,51 @@
+[Officium]
+Společné texty k jednomu Mučedníkovi v době velikonoční
+
+[Lectio1]
+Z knihy Moudrosti
+!Moudrosti 5:1-4
+1 Tehdy spravedliví stanou ve velké důvěře před těmi, kteří je sužovali, a jejich trápením jen pohrdali.
+2 Až to hříšníci uvidí, zneklidní hrozným strachem a budou bez sebe nad nenadálou spásou spravedlivého.
+3 Navzájem si řeknou plni výčitek a se vzdycháním v úzkosti duše:
+4 „To jsou ti, jimž jsme se kdysi posmívali, stíhali je svou pohanou. Jejich život jsme pokládali za bláznovství a jejich konec za bezectný.
+
+[Lectio2]
+!Moudrosti 5:5-7;14
+5 Jak byl připočítán k Božím synům, se svatými sdílí jejich osud!
+6 To my jsme zbloudili z cesty pravdy, světlo spravedlnosti nám nesvítilo a nevzešlo nám slunce.
+7 Unavili jsme se na stezkách nepravosti a zhouby, procházeli jsme neschůdnými pouštěmi a nepoznali cestu Páně.
+14 Takové věci budou říkat v podsvětí ti, kteří zhřešili.
+
+[Lectio3]
+!Moudrosti 5:16-17
+16 Spravedliví však žijí navěky, jejich odměna je u Pána a Nejvyšší o ně pečuje. 
+17 Proto obdrží velkolepé království a nádhernou korunu z ruky Pána, který je bude chránit pravicí a ramenem je zaštítí.
+
+[Lectio4]
+!Moudrosti 5:18-21
+18 Za zbraň si vezme svou horlivost a k pokoření nepřátel vyzbrojí tvorstvo.
+19 Jako krunýř si obleče spravedlnost a nasadí si jako přílbu soud bez přetvářky.
+20 Jako štít uchopí nepřemožitelnou svatost.
+21 Jak oštěp naostří neúprosný hněv, svět s ním půjde do boje proti pošetilcům.
+
+[Lectio10]
+@Commune/C2p:Lectio8:s/Avšak když .*//s
+
+[Lectio11]
+@Commune/C2p:Lectio8:s/.* Avšak když /Avšak když /s s/$/~/
+@Commune/C2p:Lectio9:s/Jsou ale snad .*//s
+
+[Responsory11]
+R. Zazářili spravedliví jako lilium:
+* A jako růže v Jerichu pokvetou před Pánem, alleluja.
+V. Spravedliví však budou žít navěky, a u Hospodina je jejich odplata.
+R. A jako růže v Jerichu pokvetou před Pánem, alleluja.
+
+[Lectio12]
+@Commune/C2p:Lectio9:s/.* Jsou ale snad /Jsou ale snad /s
+
+[Responsory12]
+R. Radujte se, spravedliví, v Hospodinu, alleluja:
+* Upřímným náleží chvála, alleluja, alleluja.
+V. Zpívejte mu novou píseň; povznášejte hlasy v dobrých chvalozpěvech.
+R. Upřímným náleží chvála, alleluja, alleluja.

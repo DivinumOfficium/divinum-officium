@@ -1,0 +1,15 @@
+[Lectio1]
+@Tempora/Adv1-1::s/-18/-20/
+@Tempora/Adv1-1:Lectio2:2-3
+
+[Lectio2]
+@Tempora/Adv1-1:Lectio2:1 s/19-23/21-26/
+@Tempora/Adv1-1:Lectio2:4-5
+@Tempora/Adv1-1:Lectio3:2-4:s/: post.*/./
+
+[Lectio3]
+@Tempora/Adv1-1:Lectio3:1 s/24-28/26-31/
+@Tempora/Adv1-1:Lectio3:4-6:s/.*: post/26 Post/s
+29 Confundéntur enim ab idólis quibus sacrificavérunt, et erubescétis super hortis quos elegerátis,
+30 cum fuéritis velut quercus defluéntibus fóliis, et velut hortus absque aqua.
+31 Et erit fortitúdo vestra ut favílla stuppæ, et opus vestrum quasi scintílla, et succendétur utrúmque simul, et non erit qui exstínguat.

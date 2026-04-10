@@ -1,7 +1,5 @@
-@Tempora/101-0
+[Lectio7]
+@Tempora/101-0:Lectio6:s/What valour.*//s
 
-[Responsory8]
-@TemporaM/Pent03-0:Responsory8
-
-[Responsory9]
-@TemporaM/Pent03-0:Responsory9
+[Lectio8]
+@Tempora/101-0:Lectio6:s/.* What /What /s

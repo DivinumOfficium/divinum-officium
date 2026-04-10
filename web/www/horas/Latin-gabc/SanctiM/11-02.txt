@@ -1,0 +1,47 @@
+[Special Tertia]
+#Psalmi
+&psalm(119)
+(sed feria secunda)
+&psalm(118,105,112)
+&psalm(120)
+(sed feria secunda)
+&psalm(118,113,120)
+&psalm(121)
+(sed feria secunda)
+&psalm(118,121,128)
+
+&special('Oratio mortuorum')
+
+&special('Conclusio')
+
+[Special Sexta]
+#Psalmi
+&psalm(122)
+(sed feria secunda)
+&psalm(118,129,136)
+&psalm(123)
+(sed feria secunda)
+&psalm(118,137,144)
+&psalm(124)
+(sed feria secunda)
+&psalm(118,145,152)
+
+&special('Oratio mortuorum')
+
+&special('Conclusio')
+
+[Special Nona]
+#Psalmi
+&psalm(125)
+(sed feria secunda)
+&psalm(118,153,160)
+&psalm(126)
+(sed feria secunda)
+&psalm(118,161,168)
+&psalm(127)
+(sed feria secunda)
+&psalm(118,169,176)
+
+&special('Oratio mortuorum')
+
+&special('Conclusio')

@@ -1,0 +1,26 @@
+@Tempora/Pent06-5
+
+[Lectio1]
+De libro secúndo Regum
+!2 Reg 7:4-6
+1 Factum est autem cum sedísset rex in domo sua, et Dóminus dedísset ei réquiem úndique ab univérsis inimícis suis,
+2 dixit ad Nathan prophétam: Vidésne quod ego hábitem in domo cédrina, et arca Dei pósita sit in médio péllium?
+3 Dixítque Nathan ad regem: Omne quod est in corde tuo, vade, fac: quia Dóminus tecum est.
+
+[Responsory1]
+@TemporaOP/Pent01-2
+
+[Lectio2]
+@Tempora/Pent05-5:Lectio1:!1 s/-6/-7/ s/4 /4 Factum est autem in illa nocte: /
+@Tempora/Pent05-5:Lectio2:2 s/, numquid.*/./
+
+[Responsory2]
+@TemporaOP/Pent03-2:Responsory2
+
+[Lectio3]
+@Tempora/Pent05-5:Lectio2:1-4 s/-11/-9/ s/.*, (numquid)/7 \u$1/ s/, et .*/./
+
+[Responsory3]
+@TemporaOP/Pent03-2:Responsory3
+
+

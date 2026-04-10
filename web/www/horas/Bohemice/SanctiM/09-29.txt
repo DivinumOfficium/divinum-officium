@@ -1,0 +1,95 @@
+
+[AntMatutinumM]
+Svatý Michaeli, Archanděli, chraň nás v boji, * abychom nezahynuli v hrozném soudu, alleluja.;;89
+Stál Anděl podél chrámového oltáře, * měl zlatou kadidelnici ve své ruce.;;98
+Dobrořečte Hospodinu, všichni jeho Anděléů * dobrořečte, jeho služebníci, jež konáte jeho vůli; † dobrořečte Hospodinu.;;102
+
+[Ant Matutinum 3N]
+Michael, Gabriel, * Cherubíni a Serafíni, jež nepřestávají každý den volat, a říkat: † Hoden jsi, Hospodine, přimout slávu, alleluja.
+
+[Lectio2]
+@Sancti/05-08::s/-8/-6/ s/7 .*//s
+
+[Lectio3]
+@Sancti/05-08:Lectio2:s/4-8/7-9/ s/4 .*7 /7 /s
+@Sancti/05-08:Lectio3:s/!.*// s/10 .*//s
+
+[Lectio4]
+@Sancti/05-08:Lectio3:s/9-/10-/ s/9 .*10 /10 /s
+
+[Responsory4]
+R. Tebe, svatý Hospodine na výsostech, chválí všichni Andělé, a říkají:
+* Tobě patří chvála a čest, Hospodine.
+V. Cherubíni a Serafíni provolávají "Svatý", † a každý nebeský řád říká.
+R. Tobě patří chvála a čest, Hospodine.
+
+[Lectio5]
+@Sancti/09-29:Lectio4
+
+[Lectio6]
+@Sancti/09-29:Lectio5:s/ Totiž.*//s
+
+[Lectio7]
+@Sancti/09-29:Lectio5:s/.* Totiž/Totiž/s
+
+[Lectio8]
+@Sancti/09-29:Lectio6
+
+[Responsory8]
+R. Michael a jeho Andělé bojovali s ďáblem;
+* A onen dávný nepřítel byl jimi přemožen.
+V. Stala se veliká bitva na nebi; † Michael a jeho Andělé bojovali s drakem.
+R. A onen dávný nepřítel byl jimi přemožen.
+
+[Lectio9]
+@Sancti/09-29:Lectio7
+
+[Lectio10]
+@Sancti/09-29:Lectio8:s/ Pán.*//
+
+[Lectio11]
+@Sancti/09-29:Lectio8:s/.* Pán/Pán/
+
+[Responsory11]
+R. Nyní potvrzena je spása, a moc, a království našeho Boha a moc jeho Krista (Pomazaného),
+* Neboť vyhozen byl pomlouvač našich bratří, † jenž je pomlouval před tváří našeho Boha dnem i nocí, † alleluja, alleluja.
+V. Proto se radují nebesa, a ti, kdo je obývají.
+R. Neboť vyhozen byl pomlouvač našich bratří, † jenž je pomlouval před tváří našeho Boha dnem i nocí, † alleluja, alleluja.
+
+[Lectio12]
+@Sancti/09-29:Lectio9
+
+[Responsory12]
+R. Věrné je to slovo, a veškeré důvěry hodné: † Archanděl Michael, jenž bojoval s ďáblem;
+* Milostí Boží se Michael stal vítězem na nebesích, a ďábel, odvěký nepřítel, utrpěl velikou porážku.
+V. Radují se Andělé, veselí se Archandělé z Michaela, Božího posla.
+R. Milostí Boží se Michael stal vítězem na nebesích, a ďábel, odvěký nepřítel, utrpěl velikou porážku.
+
+[Ant Laudes] (rubrica cisterciensis)
+@Sancti/09-29:Ant Vespera
+
+[Responsory Laudes]
+@Sancti/05-08:Responsory Breve Nona
+(sed rubrica cisterciensis)
+@Sancti/05-08:Responsory Breve Tertia
+
+[Responsory TertiaM]
+@:Versum 1
+(sed rubrica cisterciensis)
+@Sancti/05-08:Nocturn 1 Versum:s/, all?el[uú][ij]a//g
+
+[Responsory SextaM]
+@Sancti/05-08:Nocturn 2 Versum_
+(sed rubrica cisterciensis)
+@Sancti/05-08:Nocturn 2 Versum:s/, all?el[uú][ij]a//g
+
+[Responsory NonaM]
+@:Versum 3
+(sed rubrica cisterciensis)
+@Sancti/05-08:Nocturn 3 Versum:s/, all?el[uú][ij]a//g
+
+[Ant Vespera 3] (nisi rubrica cisterciensis)
+@Sancti/05-08:Ant Vespera:s/\.$/;;109/ s/\.$/;;110/ s/\.$/;;111/ s/\.$/;;137/
+
+[Ant 3] (rubrica cisterciensis)
+@Sancti/09-29

@@ -1,0 +1,18 @@
+@Sancti/06-13
+
+[Ant 1] (rubrica cisterciensis)
+@Commune/C4a::s/N\./Antoníne/
+
+[Lectio5] (rubrica cisterciensis)
+@Sancti/06-13:Lectio4:s/Zanedlouho.*//
+
+[Lectio6] (rubrica cisterciensis)
+@Sancti/06-13:Lectio4:s/.*(Zanedlouho)/$1/ s/$/~/
+@Sancti/06-13:Lectio5:s/Poté přijal.*//
+
+[Lectio7] (rubrica cisterciensis)
+@Sancti/06-13:Lectio5:s/.*(Poté přijal)/$1/ s/$/~/
+@Sancti/06-13:Lectio6:s/Prošel mnoho.*//
+
+[Lectio8] (rubrica cisterciensis)
+@Sancti/06-13:Lectio6:s/.*(Prošel mnoho)/$1/

@@ -1,12 +1,13 @@
+[Officium]
+S. Remigii Episcopi et Confessoris
+
 [Rank]
-S. Remigii Episcopi Confessoris;;Simplex;;1.1;;vide C4
+;;Simplex;;1.1;;vide C4
 
 [Rule]
 vide C4;
 Suffragium=Maria3;Papa;Ecclesia;;
 
-[Oratio]
-Da, quǽsumus omnipotens Deus: ut beati Remigii Confessoris tui atque Pontificis~
-veneranda solemnitas, et devotionem nobis augeat et salutem.
-$Per Dominum
-
+[Name]
+Remígii
+Postcommunio=Remígio

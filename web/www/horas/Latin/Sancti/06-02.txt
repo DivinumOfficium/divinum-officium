@@ -1,8 +1,10 @@
-[Rank]
-Ss. Marcellini, Petri, atque Erasmi Martyrum;;Simplex;;1.1;;vide C3
+[Officium]
+Ss. Marcellini, Petri, atque Erasmi, Episcopi, Martyrum
 
-[RankNewcal]
-Ss. Marcellini, Petri, atque Erasmi Martyrum;;Duplex optional;;2;;vide C3
+[Rank]
+;;Simplex;;1.1;;vide C3
+(sed rubrica cisterciensis)
+;;Commemoratio;;1;;vide C3
 
 [Rule]
 vide C3;

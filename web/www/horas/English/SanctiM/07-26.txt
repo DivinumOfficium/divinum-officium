@@ -1,0 +1,13 @@
+[Lectio5]
+@Sancti/07-26:Lectio4:s/ Let.*//
+
+[Lectio6]
+@Sancti/07-26:Lectio4:s/.* (?=Let)//s s/$/~/
+@Sancti/07-26:Lectio5:s/ Let us.*//
+
+[Lectio7]
+@Sancti/07-26:Lectio5:s/.* (?=Let us)// s/$/~/
+@Sancti/07-26:Lectio6:s/ We .*//
+
+[Lectio8]
+@Sancti/07-26:Lectio6:s/.* (?=We)//

@@ -1,8 +1,12 @@
-[Rank]
-Feria VI post Cineres;;Feria major;;2.9
+[Officium]
+Feria VI post Cineres
 
-[Rank](rubrica 1960)
-Feria VI post Cineres;;Feria major;;3
+[Rank]
+;;Feria major;;2.1
+(sed rubrica 1930)
+;;Feria major;;4.9
+(sed rubrica 196)
+;;Feria major;;3.9
 
 [Rule]
 Preces Feriales
@@ -13,7 +17,7 @@ Léctio sancti Evangélii secúndum Matthǽum
 In illo témpore: Dixit Jesus discípulis suis: Audístis quia dictum est: Díliges próximum tuum, et ódio habébis inimícum tuum. Et réliqua.
 _
 Homilía sancti Hierónymi Presbýteri
-!Lib 1 Comm. in cap. 5 et 6 Matth.
+!Lib. 1 Comm. in cap. 5 et 6 Matth.
 Ego autem dico vobis: Dilígite inimícos vestros; benefácite his qui odérunt vos. Multi præcépta Dei, imbecillitáte sua, non Sanctórum víribus æstimántes, putant esse impossibília quæ præcépta sunt: et dicunt suffícere virtútibus, non odísse inimícos: céterum dilígere, plus prǽcipi, quam humána natúra patiátur. Sciéndum est ergo, Christum non impossibília præcípere, sed perfécta. Quæ fecit David in Saul, et in Absalom: Stéphanus quoque Martyr pro inimícis lapidántibus deprecátus est: et Paulus anáthema cupit esse pro persecutóribus suis. Hæc autem Jesus et dócuit et fecit, dicens: Pater, ignósce illis: quod enim fáciunt, nésciunt.
 
 [Responsory1]
@@ -31,9 +35,6 @@ Ex quibus ómnibus collígitur hypócritas esse, qui quódlibet fáciunt ut ab h
 [Responsory3]
 @Tempora/Quadp3-0:Responsory6
 
-[Versum 2]
-@Tempora/Quadp3-4:Versum 2
-
 [Ant 2]
 Cum facis * eleemósynam nésciat sinístra tua quid fáciat déxtera tua.
 
@@ -41,11 +42,16 @@ Cum facis * eleemósynam nésciat sinístra tua quid fáciat déxtera tua.
 Inchoáta jejúnia, quǽsumus, Dómine, benígno favóre proséquere: ut observántiam, quam corporáliter exhibémus, méntibus étiam sincéris exercére valeámus.
 $Per Dominum
 
-[Versum 3]
-@Tempora/Quadp3-3:Versum 3
+[Ant 3_]
+Tu autem cum oráveris, * intra in cubículum tuum: et clauso óstio, ora Patrem tuum.
+
+[Ant 3C]
+Quare jejunávimus, * et non aspexísti? humiliávimus ánimas nostras, et nescísti?
 
 [Ant 3]
-Tu autem cum oráveris, * intra in cubículum tuum: et clauso óstio, ora Patrem tuum.
+@:Ant 3_
+(sed rubrica cisterciensis)
+@:Ant 3C
 
 [Oratio 3]
 Tuére, Dómine, pópulum tuum et ab ómnibus peccátis cleménter emúnda: quia nulla ei nocébit advérsitas, si nulla ei dominétur iníquitas.

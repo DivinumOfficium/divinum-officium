@@ -1,0 +1,18 @@
+@Tempora/083-0
+
+[Responsory1]
+@TemporaOP/081-0
+
+[Lectio2]
+@Tempora/083-0::1-4 s/-8/-7/
+
+[Responsory2]
+@Tempora/081-0:Responsory3
+
+[Lectio3]
+@Tempora/083-0::1 s/9-/8-/
+@Tempora/083-0:Lectio2:5
+@Tempora/083-0::2-4 s/, quóniam.*//
+
+[Responsory3]
+@TemporaOP/Pent01-0:Responsory Vespera 1

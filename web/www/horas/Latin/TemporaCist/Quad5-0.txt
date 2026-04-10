@@ -1,0 +1,104 @@
+@Tempora/Quad5-0
+
+[Rule]
+12 lectiones
+
+[Ant Matutinum 3N]
+@TemporaM/Quad5-0::s/† //
+
+[Lectio2]
+@Tempora/Quad5-0:Lectio2:1-5:s/-13/-10/
+
+[Lectio3]
+@Tempora/Quad5-0:Lectio2:s/7-/11-/ s/7 .*11/11/s
+
+[Lectio4]
+@Tempora/Quad5-0:Lectio3:s/-19/-16/ s/17 .*//s
+
+[Responsory2]
+@Tempora/Quad5-0::1-2
+@Tempora/Quad5-0:Responsory3:3
+@Tempora/Quad5-0::4
+
+[Responsory3]
+R. Qui custodiébant ánimam meam, consílium fecérunt in unum, dicéntes: 
+* Deus derelíquit eum, persequímini et comprehéndite eum: quia non est qui líberet eum: Deus meus, ne elongéris a me: Deus meus, in adjutórium meum inténde.
+@Tempora/Quad5-1:Responsory2:3
+R. Deus derelíquit eum, persequímini et comprehéndite eum: quia non est qui líberet eum: Deus meus, ne elongéris a me: Deus meus, in adjutórium meum inténde.
+
+[Responsory4]
+@Tempora/Quad5-2:Responsory1
+&Gloria
+@Tempora/Quad5-2:Responsory1:1-2 s/\n/ /
+
+[Lectio5]
+@Tempora/Quad5-0:Lectio4
+
+[Lectio6]
+@Tempora/Quad5-0:Lectio5:s/Nec dubit.re .*//s
+
+[Lectio7]
+@Tempora/Quad5-0:Lectio5:s/.* Nec dubit.re /Nec dubitáre /s s/$/~/
+@Tempora/Quad5-0:Lectio6:s/Beátus .*//s
+
+[Lectio8]
+@Tempora/Quad5-0:Lectio6:s/.* Beátus /Beátus /s
+
+[Responsory5]
+@Tempora/Quad5-0:Responsory4
+
+[Responsory6]
+@Tempora/Quad5-2:Responsory3:1-2
+V. Ne tradíderis me in ánimas tribulántium me: quóniam insurrexérunt in me testes iníqui:
+@Tempora/Quad5-2:Responsory3:4
+
+[Responsory7]
+@Tempora/Quad5-1:Responsory1
+
+[Responsory8]
+@Tempora/Quad5-0:Responsory7
+&Gloria
+@Tempora/Quad5-0:Responsory7:1-2 s/\n/ /s
+
+[Lectio9]
+@Tempora/Quad5-0:Lectio7:s/Si enim .*//s
+
+[Lectio10]
+@Tempora/Quad5-0:Lectio7:s/.* (?=Si enim )//s s/$/~/
+@Tempora/Quad5-0:Lectio8:s/Nam .*//s
+
+[Lectio11]
+@Tempora/Quad5-0:Lectio8:s/.* (?=Nam )//s s/$/~/
+
+[Lectio12]
+@Tempora/Quad5-0:Lectio9:s/Quia .*//s
+
+[Responsory9]
+@Tempora/Quad5-0:Responsory8
+
+[Responsory10]
+@Tempora/Quad5-0:Responsory6
+
+[Responsory11]
+@Tempora/Quad5-0:Responsory5
+
+[Responsory12]
+@Tempora/Quad5-1:Responsory3
+
+[Ant 2]
+@Tempora/Quad5-0:Ant Prima
+
+[Ant Prima]
+@Tempora/Quad5-0:Ant 3
+
+[Ant Tertia]
+@Tempora/Quad5-0:Ant Laudes:3
+
+[Ant Sexta]
+@Tempora/Quad5-0:Ant Laudes:4
+
+[Ant Nona]
+@Tempora/Quad5-0:Ant Laudes:5
+
+[Ant 3]
+@Tempora/Quad5-0:Ant Nona

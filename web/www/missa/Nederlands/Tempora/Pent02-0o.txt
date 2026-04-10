@@ -1,0 +1,48 @@
+[Officium]
+Dominica II. Post Pentecosten
+
+[Rule]
+ex Tempora/Pent01-4
+Gloria
+Credo
+Prefatio=Nat
+Prefatio1960=Trinitate
+
+[Introitus]
+@Tempora/Pent02-0
+
+[Oratio]
+@Tempora/Pent02-0
+
+[Commemoratio Oratio]
+!Pro Octava SSmi. Corporis Christi
+@Tempora/Pent01-4:Oratio
+
+[Lectio]
+@Tempora/Pent02-0
+
+[Graduale]
+@Tempora/Pent02-0
+
+[Evangelium]
+@Tempora/Pent02-0
+
+[Offertorium]
+@Tempora/Pent02-0
+
+[Secreta]
+@Tempora/Pent02-0
+
+[Commemoratio Secreta]
+!Pro Octava Ssmi Corporis Christi
+@Tempora/Pent01-4:Secreta
+
+[Communio]
+@Tempora/Pent02-0
+
+[Postcommunio]
+@Tempora/Pent02-0
+
+[Commemoratio Postcommunio]
+!Pro Octava Ssmi Corporis Christi.
+@Tempora/Pent01-4:Postcommunio

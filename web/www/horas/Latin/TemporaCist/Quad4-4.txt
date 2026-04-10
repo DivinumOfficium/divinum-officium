@@ -1,0 +1,16 @@
+@Tempora/Quad4-4
+
+[Lectio2]
+@Tempora/Quad4-4::s/Quid .*//
+
+[Lectio3]
+@Tempora/Quad4-4:Lectio2:s/.* (?=Quid )//
+
+[Responsory1]
+@TemporaCist/Quad4-0:Responsory10
+
+[Responsory2]
+@TemporaCist/Quad4-0:Responsory11
+
+[Responsory3]
+@TemporaCist/Quad4-0:Responsory12

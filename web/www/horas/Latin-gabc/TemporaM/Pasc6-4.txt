@@ -1,0 +1,40 @@
+[Lectio1]
+@Tempora/Pasc6-4::1-8 s/-8/-6/
+
+[Lectio1] (rubrica tridentina)
+@Tempora/Pasc6-3::1-5 s/-5/-3/
+
+[Lectio2]
+@Tempora/Pasc6-4:Lectio2:1 s/9-14/7-10/
+@Tempora/Pasc6-4:Lectio1:9-10
+@Tempora/Pasc6-4:Lectio2:2-3
+
+[Lectio2] (rubrica tridentina)
+@Tempora/Pasc6-3:Lectio1:2 s/1-5/4-6a/
+@Tempora/Pasc6-3:Lectio1:6-7
+@Tempora/Pasc6-3:Lectio2:2 s/\. .*/./
+
+[Lectio3]
+@Tempora/Pasc6-4:Lectio2:1 s/9-/11-/
+@Tempora/Pasc6-4:Lectio2:4-7
+
+[Lectio3] (rubrica tridentina)
+@Tempora/Pasc6-3:Lectio2:1 s/6/6b/
+@Tempora/Pasc6-3:Lectio2:2 s/6 .*?\./6 /
+@Tempora/Pasc6-3:Lectio2:3-5
+
+[Lectio5]
+@Tempora/Pasc6-4:Lectio4: s/Ascénsio .*//
+
+[Lectio6]
+@Tempora/Pasc6-4:Lectio4: s/.* Ascénsio/Ascénsio/s
+
+[Lectio10]
+@Tempora/Pasc6-4:Lectio8: s/Ecce, .*//
+
+[Lectio11]
+@Tempora/Pasc6-4:Lectio8: s/.* Ecce,/Ecce,/
+@Tempora/Pasc6-4:Lectio9: s/Desidéria .*//
+
+[Lectio12]
+@Tempora/Pasc6-4:Lectio9: s/.* Desidéria/Desidéria/

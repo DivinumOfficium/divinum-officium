@@ -1,11 +1,8 @@
-[Rank]
-In Nativitatis Domini in aurora;;Duplex I Classis;;6.5
+[Officium]
+In Nativitatis Domini in aurora
 
-[Rule]
-Gloria
-Credo
-Prefatio=Nat
-celebranda aut missa prima aut missa secunda aut missa tertia
+[Rank]
+;;Duplex I Classis;;6.5
 
 [Comment]
 # 25 XII – Boże Narodzenie — Msza o Świcie
@@ -74,5 +71,4 @@ $Per eundem
 
 [Commemoratio Postcommunio]
 !Wspomnienie św. Anastazji
-Nasyciłeś, Panie, rodzinę Twoją świętymi darami: wzmacniaj nas stale za wstawiennictwem tej, której uroczystość obchodzimy.
-$Per Dominum
+@Commune/C6b:Postcommunio

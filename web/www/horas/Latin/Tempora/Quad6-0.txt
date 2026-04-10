@@ -1,14 +1,22 @@
+[Officium]
+Dominica in Palmis
+
 [Rank]
-Dominica in Palmis;;I classis Semiduplex;;6
+;;I classis Semiduplex;;6.91
 
 [Rule]
 9 lectiones
+Symbolum Athanasium(rubrica tridentina)
 
 [Ant 1]
-Scriptum est enim: * Percútiam pastórem, et dispergéntur oves gregis: postquam autem resurréxero, præcédam vos in Galilǽam: ibi me vidébitis, dicit Dóminus.
+Pater juste, * mundus te non cognóvit: ego autem novi te, quia tu me misísti.
+
+[Ant 1] (rubrica praedicatorum)
+Clarífica me, Pater, * apud temetípsum claritáte, quam hábui, priúsquam mundus fíeret.
 
 [Oratio]
-@Tempora/Quad5-6:Oratio 3
+Omnípotens sempitérne Deus, qui humáno géneri, ad imitándum humilitátis exémplum, Salvatórem nostrum carnem súmere, et crucem subíre fecísti: concéde propítius; ut et patiéntiæ ipsíus habére documénta, et resurrectiónis consórtia mereámur.
+$Per eumdem
 
 [Lectio1]
 De Jeremía Prophéta
@@ -16,7 +24,7 @@ De Jeremía Prophéta
 12 Obstupéscite, cæli, super hoc, et, portæ ejus, desolámini veheménter, dicit Dóminus.
 13 Duo enim mala fecit pópulus meus: Me dereliquérunt fontem aquæ vivæ, et fodérunt sibi cistérnas, cistérnas dissipátas, quæ continére non valent aquas. 
 14 Numquid servus est Israël, aut vernáculus? Quare ergo factus est in prædam? 
-15 Super eum rugiérunt leones, et dedérunt vocem suam, posuérunt terram ejus in solitúdinem: civitátes ejus exústæ sunt, et non est qui hábitet in eis. 
+15 Super eum rugiérunt leónes, et dedérunt vocem suam, posuérunt terram ejus in solitúdinem: civitátes ejus exústæ sunt, et non est qui hábitet in eis. 
 16 Fílii quoque Mémpheos et Taphnes constupravérunt te usque ad vérticem. 
 17 Numquid non istud factum est tibi, quia dereliquísti Dóminum Deum tuum eo témpore, quo ducébat te per viam?
 
@@ -31,7 +39,7 @@ R. Judicásti causam meam, et liberásti me, Dómine, Deus meus.
 18 Et nunc quid tibi vis in via Ægýpti, ut bibas aquam túrbidam? et quid tibi cum via Assyriórum, ut bibas aquam flúminis? 
 19 Arguet te malítia tua, et avérsio tua increpábit te. Scito, et vide quia malum et amárum est reliquísse te Dóminum Deum tuum, et non esse timórem mei apud te, dicit Dóminus Deus exercítuum. 
 20 A sǽculo confregísti jugum meum, rupísti víncula mea, et dixísti: Non sérviam. In omni enim colle sublími, et sub omni ligno frondóso, tu prosternebáris méretrix. 
-21 Ego autem plantávi te víneam electam, omne semen verum: quómodo ergo convérsa es mihi in pravum, vínea aliéna? 
+21 Ego autem plantávi te víneam eléctam, omne semen verum: quómodo ergo convérsa es mihi in pravum, vínea aliéna? 
 22 Si láveris te nitro, et multiplicáveris tibi herbam borith, maculáta es in iniquitáte tua coram me, dicit Dóminus Deus.
 
 [Responsory2]
@@ -67,7 +75,7 @@ V. Factus sum in derísum omni pópulo meo, cánticum eórum tota die.
 R. Vide, Dómine, iniquitátes illórum: et júdica causam ánimæ meæ, defénsor vitæ meæ.
 
 [Lectio5]
-Dicénte enim prophéta: Quǽrite Dóminum, et confirmámini, quǽrite fáciem ejus semper: némini præsuméndum est, quod totum quod quærit, invenérit, ne désinat propinquáre, qui cessárit accédere. Quid autem inter ómnia ópera Dei, in quibus humánæ admiratiónis fatigátur inténtio, ita contemplatiónem mentis nostræ et obléctat et súperat, sicut pássio Salvatóris? Qui ut humánum genus vínculis mortíferæ prævaricatiónis absólveret, et sæviénti diábolo poténtiam suæ majestátis occúluit, et infirmitátem nostræ humilitátis objécit. Si enim crudélis et supérbus inimícus consílium misericórdiæ Dei nosse potuísset, Judæórum ánimos mansuetúdine pótius temperáre, quam injústis ódiis studuísset accéndere: ne ómnium captivórum amítteret servitútem, dum nihil sibi debéntis perséquitur libertátem.
+Dicénte enim prophéta: Quǽrite Dóminum, et confirmámini, quǽrite fáciem ejus semper: némini præsuméndum est, quod totum quod quærit, invénerit, ne désinat propinquáre, qui cessárit accédere. Quid autem inter ómnia ópera Dei, in quibus humánæ admiratiónis fatigátur inténtio, ita contemplatiónem mentis nostræ et obléctat et súperat, sicut pássio Salvatóris? Qui ut humánum genus vínculis mortíferæ prævaricatiónis absólveret, et sæviénti diábolo poténtiam suæ majestátis occúluit, et infirmitátem nostræ humilitátis objécit. Si enim crudélis et supérbus inimícus consílium misericórdiæ Dei nosse potuísset, Judæórum ánimos mansuetúdine pótius temperáre, quam injústis ódiis studuísset accéndere: ne ómnium captivórum amítteret servitútem, dum nihil sibi debéntis perséquitur libertátem.
 
 [Responsory5]
 R. Salvum me fac, Deus, quóniam intravérunt aquæ usque ad ánimam meam: ne avértas fáciem tuam a me:
@@ -129,7 +137,9 @@ Cum Angelis * et púeris fidéles inveniámur, triumphatóri mortis clamántes: 
 Confundántur * qui me persequúntur, et non confúndar ego, Dómine, Deus meus.
 
 [Capitulum Laudes]
-@Tempora/Quad5-6:Capitulum Vespera
+!Phil 2:5-7
+v. Fratres: Hoc enim sentíte in vobis, quod et in Christo Jesu: qui, cum in forma Dei esset, non rapínam arbitrátus est esse se æquálem Deo: sed semetípsum exinanívit, formam servi accípiens, in similitúdinem hóminum factus, et hábitu invéntus ut homo.
+$Deo gratias
 
 [Ant 2]
 Turba multa, * quæ convénerat ad diem festum, clamábat Dómino: Benedíctus qui venit in nómine Dómini: Hosánna in excélsis.
@@ -138,10 +148,7 @@ Turba multa, * quæ convénerat ad diem festum, clamábat Dómino: Benedíctus q
 Púeri Hebræórum * tolléntes ramos olivárum, obviavérunt Dómino clamántes et dicéntes: Hosánna in excélsis.
 
 [Ant Tertia]
-Púeri Hebræórum * vestiménta prosternébant in via, et clamábant, dicéntes: Hosánna Fílio David: benedíctus qui venit in nómine Domini.
-
-[Capitulum Tertia]
-@:Capitulum Laudes
+Púeri Hebræórum * vestiménta prosternébant in via, et clamábant, dicéntes: Hosánna Fílio David: benedíctus qui venit in nómine Dómini.
 
 [Ant Sexta]
 Tibi revelávi * causam meam, defénsor vitæ meæ, Dómine, Deus meus.
@@ -159,11 +166,8 @@ Invocábo * nomen tuum, Dómine: ne avértas fáciem tuam a clamóre meo.
 v. In nómine Jesu omne genu flectátur cæléstium, terréstrium, et infernórum: et omnis lingua confiteátur, quia Dóminus Jesus Christus in glória est Dei Patris.
 $Deo gratias
 
-[Capitulum Vespera]
-@:Capitulum Laudes
-
 [Ant 3]
-Pater juste, * mundus te non cognóvit: ego autem novi te, quia tu me misísti.
+Scriptum est enim: * Percútiam pastórem, et dispergéntur oves gregis: postquam autem resurréxero, præcédam vos in Galilǽam: ibi me vidébitis, dicit Dóminus.
 
-[Ant 3](rubrica 1960)
-@:Ant 1
+[Ant 3] (rubrica praedicatorum)
+Cœpérunt * omnes turbæ descendéntium gaudéntes laudáre Deum voce magna super ómnibus quas víderant virtútibus, dicéntes: Benedíctus qui venit Rex in nómine Dómini, pax in cœlo et glória in excélsis.

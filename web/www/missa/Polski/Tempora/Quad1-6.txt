@@ -1,11 +1,5 @@
-[Rank]
-Sabbato Quattuor Temporum Quadrigeismæ;;Feria major;;2
-
-[Rank] (si rubrica 1960)
-Sabbato Quattuor Temporum Quadrigesimæ;;Feria major;;3
-
-[Rank] (si rubrica innovata)
-Sabbato infra Hebdomadam I in Quadragesima;;Feria major;;2
+[Officium]
+Sabbato Quattuor Temporum Quadrigeismæ
 
 [Rule]
 no Gloria
@@ -20,7 +14,7 @@ LectioL5
 ! Stacja u Św. Piotra
 ! 2 klasy
 ! Szaty fioletowe
-Obchód Suchych Dni kończył się zawsze wigilią, czyli czuwaniem na molitwie przez całą noc z soboty na niedzielę. Pozostałością wigilii są lekcje i modlitwy dzisiejszej Mszy świętej. Podkreślają one, że Kościół jest dziedzicem obietnic danych Izraelowi. Chrystus – nowy Mojżesz zawarł nowe i wieczne przymierze między swoim ludem i Bogiem. Przymierze to zapewnia nam szczególną opiekę Bożą, ale nakłada na nas obowiązek wierności. Zjawienie się Mojżesza i Eliasza przy Przemienieniu Pańskim było potwierdzeniem, że w Nim wypełniły się proroctwa Starego Testamentu.
+Obchód Suchych Dni kończył się zawsze wigilią, czyli czuwaniem na modlitwie przez całą noc z soboty na niedzielę. Pozostałością wigilii są lekcje i modlitwy dzisiejszej Mszy świętej. Podkreślają one, że Kościół jest dziedzicem obietnic danych Izraelowi. Chrystus – nowy Mojżesz zawarł nowe i wieczne przymierze między swoim ludem i Bogiem. Przymierze to zapewnia nam szczególną opiekę Bożą, ale nakłada na nas obowiązek wierności. Zjawienie się Mojżesza i Eliasza przy Przemienieniu Pańskim było potwierdzeniem, że w Nim wypełniły się proroctwa Starego Testamentu.
 W scenie Przemienienia występują trzej posłańcy Boga, którzy zostawili nam przykłady 40-dniowego postu, przytaczane w liturgii kończącego się tygodnia. Za ich wzorem przez post i modlitwę dążymy do przemienienia naszych dusz i do chwały niebieskiej.
 We Mszy konwentualnej oraz we Mszy ze święceniami odczytuje się wszystkie modlitwy i lekcje. Natomiast w innych Mszach po pierwszym graduale można odmówić Dominus vobiscum i drugą modlitwę bez Flectamus genua, po czym bezpośrednio czyta się szóstą lekcję.
 
@@ -31,10 +25,6 @@ v. Niech dojdzie do Ciebie moja modlitwa, nakłoń ucha Swego na prośbę moją,
 Panie Boże, Zbawicielu mój, podczas dnia wołam i w nocy żalę się przed Tobą.
 &Gloria
 v. Niech dojdzie do Ciebie moja modlitwa, nakłoń ucha Swego na prośbę moją, Panie.
-
-[Oratio]
-Prosimy Cię, Panie, wejrzyj miłościwie na Twój lud i odwróć odeń chłostę Twego zagniewania.
-$Per Dominum
 
 [LectioL1]
 Czytanie z Księgi Powtórzonego Prawa.
@@ -124,6 +114,10 @@ Błogosławiony jesteś, Panie, Boże ojców naszych: i chwalebny, i sławny na 
 
 [OratioL5]
 Boże, któryś złagodził płomień ognia dla trzech młodzieńców, spraw łaskawie, aby nas, sług Twoich, nie pożarł płomień namiętności.
+$Per Dominum
+
+[Oratio]
+Prosimy Cię, Panie, wejrzyj miłościwie na Twój lud i odwróć odeń chłostę Twego zagniewania.
 $Per Dominum
 
 [Lectio]

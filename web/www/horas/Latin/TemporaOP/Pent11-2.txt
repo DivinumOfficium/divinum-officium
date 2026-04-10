@@ -1,0 +1,23 @@
+@Tempora/Pent11-2
+
+[Lectio1]
+@Tempora/Pent10-6::1-6 s/-5/-4/ s/, confregítque.*/./
+
+[Responsory1]
+@TemporaOP/Pent01-2
+
+[Lectio2]
+@Tempora/Pent10-6::1 s/5-8/4-6/
+@Tempora/Pent10-6:Lectio1:6-7 s/.* (confregítque)/4 \u$1/ s/$/~/
+@Tempora/Pent10-6::2-3 s/5 //
+
+[Responsory2]
+@TemporaOP/Pent03-2:Responsory2
+
+[Lectio3]
+@Tempora/Pent10-6::1 s/5-8/4-6/
+@Tempora/Pent10-6:Lectio2:4-5
+@Tempora/Pent10-6::2-3
+
+[Responsory3]
+@TemporaOP/Pent03-2:Responsory3

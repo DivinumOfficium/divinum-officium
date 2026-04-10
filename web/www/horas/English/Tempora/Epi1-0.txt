@@ -1,13 +1,5 @@
-[Rank]
-Sanctae Familiae Jesu Mariae Joseph;;Duplex majus;;3.9
-(sed rubrica 1960)
-Sanctae Familiae Jesu Mariae Joseph;;Duplex II classis;;5
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-No Sunday Commemoratio
+[Officium]
+Sanctae Familiae Jesu Mariae Joseph
 
 [Ant Vespera]
 And Jacob * begot Joseph the husband of Mary, of whom was born Jesus, who is called Christ.;;109
@@ -15,11 +7,6 @@ The angel of the Lord * appeared to Joseph in his sleep, saying: Joseph, son of 
 The shepherds came * with haste; and they found Mary and Joseph, and the infant lying in the manger.;;121
 The Magi, entering into the house, * found the child with Mary his mother.;;126
 His father * and mother were wondering at those things which were spoken concerning him.;;147
-
-[Capitulum Vespera]
-!Luke 2:51
-v. Jesus went down with Mary and Joseph, and came to Nazareth, and was subject to them.
-$Deo gratias
 
 [Hymnus Vespera]
 v. O highest hope of mortals,
@@ -33,14 +20,14 @@ Whose breast gave milk to Jesus,
 Whose arms thy God embraced;
 _
 And thou of all men chosen
-To guard the Virginís fame,
-To whom Godís Son refused not
-A Fatherís gracious name;
+To guard the Virgin‚Äôs fame,
+To whom God‚Äôs Son refused not
+A Father‚Äôs gracious name;
 _
-Born for the nationís healing,
-Of Jesseís lineage high,
+Born for the nation‚Äôs healing,
+Of Jesse‚Äôs lineage high,
 Behold the suppliants kneeling,
-O hear the sinnersí cry!
+O hear the sinners‚Äô cry!
 _
 The sun returned to evening,
 Dusks all the twilight air:
@@ -64,9 +51,6 @@ who parents dost obey;
 Praise to the sovereign Father
 and Paraclete for aye. 
 
-[Versum Prima]
-Who subdued yourself to Mary and Joseph.
-
 [Versum 1]
 V. Blessed are they that dwell in thy house, O Lord.
 R. They shall praise thee for ever and ever.
@@ -77,6 +61,10 @@ The Word was made flesh, * and dwelt among us, full of grace and truth; and of h
 [Oratio]
 Lord Jesus Christ, who subject to Mary and Joseph, didst consecrate family life by thy unspeakable virtues, aid us by their united intercession to profit by the examples of thy Holy Family, and attain to their everlasting companionship:
 $Qui vivis
+
+[Commemoratio]
+!Commemoratio Sunday in Octava Epiphaniae
+@Tempora/Epi1-0a:Oratio:s/V\. .*/V. All they from Saba shall come. Alleluia./ s/R\. .*/R. They shall bring gold and incense. Alleluia./
 
 [Invit]
 Christ, Son of God, subject to Mary and Joseph, * O come, let us worship Him.
@@ -90,29 +78,29 @@ _
 And shall we sing the ancestry
 Of Jesus, Son of God most High?
 Or the heroic names retrace 
-Of Davidís race?
+Of David‚Äôs race?
 _
 Sweeter is lowly Nazareth, 
-Where Jesus drew His childish breathó 
+Where Jesus drew His childish breath‚Äî 
 Sweeter the singing that endears
 His hidden years.
 _
 An Angel leads the pilgrim band 
 From Egypt to their native land, 
-Where Jesus clings to Josephís arm,
+Where Jesus clings to Joseph‚Äôs arm,
 Secure from harm.
 _
-ìAnd the Child grew in wisdomís ken
-And years and grace with God and men;î
-And in His fatherís humble art 
+‚ÄúAnd the Child grew in wisdom‚Äôs ken
+And years and grace with God and men;‚Äù
+And in His father‚Äôs humble art 
 Took share and part.
 _
-"With toil", saith He, ìmy limbs are wet,
-Prefiguring the Bloody Sweat:î 
+‚ÄúWith toil‚Äù, saith He, ‚Äúmy limbs are wet,
+Prefiguring the Bloody Sweat:‚Äù 
 Ah! how He bears our chastisement
 With sweet content!
 _
-At Josephís bench, at Jesusí side, 
+At Joseph‚Äôs bench, at Jesus‚Äô side, 
 The Mother sits, the Virgin-Bride; 
 Happy, if she may cheer their hearts
 With loving arts.
@@ -122,31 +110,37 @@ Of want and toil and suffering,
 Pity the needy and obscure
 Lot of the poor.
 _
-Banish the ìpride of lifeî from all
+Banish the ‚Äúpride of life‚Äù from all
 Whom ampler wealth and joys befall:
 Be every heart with love repaid 
 That seeks your aid.
 _
 Glory to Thee, Jesu dear, 
 Model of holy living here! 
-Who reigníst, with Sire and Holy Ghost,
-Oíer heavenís host.
+Who reign‚Äôst, with Sire and Holy Ghost,
+O‚Äôer heaven‚Äôs host.
 Amen.
 
 [Ant Matutinum]
 When his parents * brought the Child Jesus, then Simeon took him up in his arms, and blessed God.;;8
 When they had performed * all things according to the Law of the Lord, they returned into Galilee, to their own city Nazareth.;;18
 And the Child grew, * and waxed strong in spirit, filled with wisdom, and the grace of God was upon him.;;23
-V. He was rich, yet for our sakes he became poor.
-R. That we through his poverty might be rich.
 When Joseph arose, * he took the young Child and his Mother by night, and departed into Egypt.;;44
 And the Angel of the Lord * said in a dream to Joseph in Egypt, Arise, and take the young Child and his Mother, and go into the land of Israel.;;45
 And he came * and dwelt in a city called Nazareth, that it might be fulfilled which was spoken by the Prophets: He shall be called a Nazarene.;;86
-V. The Lord shall teach us of his ways.
-R. And we will walk in his paths.
 Now the parents of Jesus * went to Jerusalem every year at the Feast of the Passover.;;95
 And when they returned, * the Child Jesus tarried behind in Jerusalem, and his parents knew not of it.;;96
 But when they found him not, * they turned back again to Jerusalem, seeking him.;;97
+
+[Nocturn 1 Versum]
+V. He was rich, yet for our sakes he became poor.
+R. That we through his poverty might be rich.
+
+[Nocturn 2 Versum]
+V. The Lord shall teach us of his ways.
+R. And we will walk in his paths.
+
+[Nocturn 3 Versum]
 V. I am poor and needy, and in agony from my youth up.
 R. Thy terrors have I suffered with a troubled mind.
 
@@ -198,7 +192,7 @@ R. That he might be merciful.
 
 [Lectio4]
 From the Apostolic Letters of Pope Leo XIII
-!Breve ´ Neminem fugit ª 14 junii 1892
+!Breve ¬´ Neminem fugit ¬ª 14 junii 1892
 When God in his mercy determined to accomplish the work of man's renewal, which same had so many long ages awaited, he appointed and ordained this work on such wise that its very beginning might shew to the world the august spectacle of a Family which was known to be divinely constituted; that therein all men might behold a perfect model, as well of domestic life as of every virtue and pattern of holiness: for such indeed was the Holy Family of Nazareth. There in secret dwelt the Sun of Righteousness, until the time when he should shine out in full splendour in the sight of all nations. There Christ, our God and Saviour, lived with his Virgin Mother, and with that most holy man Joseph, who held to him the place of father. No one can doubt that in this Holy Family was displayed every virtue which can be called forth by an ordinary home life, with its mutual services of charity, its holy intercourse, and its practices of godly piety, since the Holy Family was destined to be a pattern to all others. For that very reason was it established by the merciful designs of Providence, namely, that every Christian, in every walk of life and in every place, might easily, if he would but give heed to it, have before him a motive and a pattern for the good life.
 
 [Responsory4]
@@ -217,7 +211,7 @@ V. I am poor and needy, and in agony from my youth up.
 R. But the Son of Man hath not where to lay his head.
 
 [Lectio6]
-From the foregoing it is evident how natural and fitting it was that devotion to the Holy Family should in due time have grown up amongst Catholics; and once begun, that it should spread far and wide. Proof of this lieth first in the sodalities instituted under the Ìnvocation of the Holy Family; then in the unique honours bestowed upon it; and above all, by the privileges and favours granted to this devotion by our predecessors to stimulate fervour and piety in its regard. This devotion was already held in great esteem in the seventeenth century. Widely propagated in Italy, France, and Belgium, it spread over almost the whole of Europe; thence, crossing the wide ocean, through Canada it made is way in the Americas, and finding favour there, became very flourishing. Indeed, among Christian families, nothing more salutary nor efficacious can be imagined than the example of the Holy Family, where are to be found all domestic virtues in perfection and completeness. When Jesus, Mary, and Joseph are invoked in the home, charity is likely to be maintained in the family through their example and heavenly entreaty; a good influence is thus exerted over conduct; the practice of virtue is thus incited; and thus the hardships which are everywhere wont to harass mankind, are both mitigated and made easier to bear. To increase devotion to the Holy Family, Pope Leo XIII prescribed that Christian families should be consecrated thereto. Benedict XV extended the Mass and Office to the whole Church.
+From the foregoing it is evident how natural and fitting it was that devotion to the Holy Family should in due time have grown up amongst Catholics; and once begun, that it should spread far and wide. Proof of this lieth first in the sodalities instituted under the √≠nvocation of the Holy Family; then in the unique honours bestowed upon it; and above all, by the privileges and favours granted to this devotion by our predecessors to stimulate fervour and piety in its regard. This devotion was already held in great esteem in the seventeenth century. Widely propagated in Italy, France, and Belgium, it spread over almost the whole of Europe; thence, crossing the wide ocean, through Canada it made is way in the Americas, and finding favour there, became very flourishing. Indeed, among Christian families, nothing more salutary nor efficacious can be imagined than the example of the Holy Family, where are to be found all domestic virtues in perfection and completeness. When Jesus, Mary, and Joseph are invoked in the home, charity is likely to be maintained in the family through their example and heavenly entreaty; a good influence is thus exerted over conduct; the practice of virtue is thus incited; and thus the hardships which are everywhere wont to harass mankind, are both mitigated and made easier to bear. To increase devotion to the Holy Family, Pope Leo XIII prescribed that Christian families should be consecrated thereto. Benedict XV extended the Mass and Office to the whole Church.
 
 [Responsory6]
 R. Being in the form of God, he made himself of no reputation, 
@@ -264,6 +258,11 @@ Jesus went down * with them, and came to Nazareth, and was subject to them.
 And Jesus advanced * in wisdom, and age, and grace with God and men.
 And they said: * How came this man by this wisdom and miracles? Is not this the carpenter's son?
 
+[Capitulum Laudes]
+!Luke 2:51
+v. Jesus went down with Mary and Joseph, and came to Nazareth, and was subject to them.
+$Deo gratias
+
 [Hymnus Laudes]
 O house of Nazareth the blest, 
 Fair hostess of the Lord,
@@ -276,7 +275,7 @@ No dearer spot, no ampler worth
 Than erst was found in thee!
 _
 We know thy humble tenement
-Was heavenís hermitage:
+Was heaven‚Äôs hermitage:
 Celestial heralds came and went
 In endless embassage.
 _
@@ -308,7 +307,7 @@ Amen.
 
 [Versum 2]
 V. All thy children shall be taught of the Lord.
-R. and great shall be the peace of thy children.
+R. And great shall be the peace of thy children.
 
 [Ant 2]
 Enlighten us, O Lord, * by the example of thy family, and direct our feet into the way of peace.
@@ -317,43 +316,37 @@ Enlighten us, O Lord, * by the example of thy family, and direct our feet into t
 !Phil 2:7
 v. But emptied himself, taking the form of a servant, being made in the likeness of men, and in habit found as a man.
 
-[Responsory Tertia]
+[Versum Prima]
+Who subdued yourself to Mary and Joseph.
+
+[Responsory Breve Tertia]
 R.br. For our sake he became poor, * Being rich.
 R. For our sake he became poor, * Being rich.
 V. That through his poverty we might be rich.
 R. Being rich.
 &Gloria
 R. For our sake he became poor, * Being rich.
-_
-V. The Lord will teach us his ways.
-R. And we will walk in his paths.
 
 [Capitulum Sexta]
 !Rom 5:19
 v. For as by the disobedience of one man, many were made sinners; so also by the obedience of one, many shall be made just.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. The Lord * Will teach us his ways.
 R. The Lord * Will teach us his ways.
 V. And we will walk in his paths.
 R. Will teach us his ways.
 &Gloria
 R. The Lord * Will teach us his ways.
-_
-V. I am poor, and in labours from my youth.
-R. And being exalted have been humbled and troubled.
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. I am poor, and in labours * from my youth.
 R. I am poor, and in labours * from my youth.
 V. And being exalted have been humbled and troubled.
 R. From my youth.
 &Gloria
 R. I am poor, and in labours * from my youth.
-_
-V. All thy children shall be taught of the Lord
-R. R. And great shall be the peace of thy children.
 
 [Ant Vespera 3]
 After three days, * they found him in the temple, sitting in the midst of the doctors, hearing them, and asking them questions.;;109
@@ -364,7 +357,3 @@ And they said: * How came this man by this wisdom and miracles? Is not this the 
 
 [Ant 3]
 But Mary * kept all these words, pondering them in her heart.
-
-[Commemoratio]
-!Commemoratio Sunday in Octava Epiphaniae
-@Tempora/Epi1-0a:Oratio:s/V\. .*/V. All they from Saba shall come. Alleluia./ s/R\. .*/R. They shall bring gold and incense. Alleluia./

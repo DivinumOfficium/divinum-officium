@@ -1,138 +1,128 @@
-[Rank]
-Feria IV Cinerum;;Feria Privilegiata;;6
-
-[Rule]
-no Gloria
-Prefatio=Quadragesima
-Suffragium=Sanctorum;Vivis;;
-Super populum
-Prelude
-(rubrica 1960) omit incipit
+[Officium]
+Hamvazószerda
 
 [Prelude]
-#Blessing of the Ashes
+#A hamu megáldása
 !Antiphona.
-!Ps 68:17
-v. Hear me, O Lord, for thy mercy is kind; look upon me according to the multitude of thy tender mercies, O Lord.
-!Ps 68:2
-Save me, O God: for the waters are come in even unto my soul. 
+!Zsolt 68, 17
+v. Hallgass meg, Uram, hisz irgalmad kegyes: tekints reám nagy könyörületedben, Uram.
+!Zsolt 68, 2
+Szabadíts meg engem, Istenem: mert a vizek (a szenvedések) lelkemig hatolnak.
 &Gloria
-v. Hear me, O Lord, for thy mercy is kind; look upon me according to the multitude of thy tender mercies, O Lord.
+v. Hallgass meg, Uram, hisz irgalmad kegyes: tekints reám nagy könyörületedben, Uram.
 _
 _
-P. The Lord be with you.
-R. And with your spirit.
-v. Let us pray. 
-Almighty, everlasting God, spare those who are repentant, be merciful to those who pray to You, and graciously send Your holy angel from heaven to bless and hallow these ashes, that they may be a wholesome remedy for all who humbly implore Your holy Name; who accuse themselves by acknowledging their sins, who weep for their evil deeds in the sight of Your divine mercy; who humbly and earnestly seek Your fatherly love. Grant to us who call upon Your holy Name, that all who are sprinkled with these ashes for the forgiveness of their sins, may receive health for their bodies and salvation for their souls. Through Christ our Lord.
+!Deinde Sacerdos in cornu Epistolæ, non vertens se ad populum, manibus junctis (quod servatur etiam in orationibus omnium benedictionum quoad manus junctas) dicit:
+V. Az Úr legyen veletek.
+R. És a te lelkeddel.
+v. Könyörögjünk.
+Örök mindenható Isten, bocsáss meg a bűnbánóknak, könyörülj az esedezőkön, és méltóztassál leküldeni a mennyből szent angyalodat, hogy meg + áldja és meg + szentelje ezt a hamut mindazok gyógyító orvosságául, akik szent nevedet alázattal segítségül hívják, bűneik tudatában magukat vádolják, isteni jóságodnak színe előtt vétkeiket megsíratják, vagy kegyes irgalmadért alázattal leborulva esdekelnek, és engedd, hogy a te szent neved segítségül hívására mindazok, akiket ezzel meghintenek, bűneik bocsánatának megszerzésére testi épséget és lelki oltalmat nyerjenek. A mi Urunk Krisztus által.
+R. Amen.
 _
 _
-v. Let us pray. 
-O God, You Who desire not the death but the repentance of sinners, look graciously upon the weakness of our human nature, and in Your fatherly love mercifully bless these ashes which are to be placed upon our heads as a sign of humility and a pledge of Your forgiveness. We know that we are but ashes, and because of our wickedness must return to dust. May we obtain from Your mercy the pardon of all our sins and the rewards promised to those who repent. Through Christ our Lord.
+v. Könyörögjünk.
+Isten, ki nem kívánod a bűnös halálát, hanem bűnbánatát, tekintsd kegyelmesen az emberi természet gyarlóságát, s méltóztassá jóságodnál fogva meg + áldani ezt a hamut, mellyel alázatosságunk nyilvánítására és bűneink bocsánatának mergérdemlésére fejünket behintjük: hogy akik elismerjük, hogy porból lettünk és gonoszságunk vétsége miatt ismét porrá leszünk, minden bűnünk bocsánatát és a bűnbánóknak ígért jutalmakat irgalmadból megnyerni méltók legyünk. A mi Urunk Krisztus által.
+R. Amen.
 _
 _
-v. Let us pray. 
-O God, You Who are moved by our acts of humility and appeased by our works of penance, turn Your ear lovingly to our prayers, and by the ashes sprinkled upon the heads of Your servants mercifully pour forth upon them the grace of Your blessing, fill them with the spirit of repentance and truly grant what they ask for in the right way; and may whatever You grant remain fixed and unchanged always. Through Christ our Lord.
+v. Könyörögjünk.
+Isten, kit az alázatosság megkérlel s az elégtétel kiengesztel, hallgasd meg kegyelmesen könyörgésünket és áraszd kegyesen e hamuval meghintett szolgáid fejére áldásod kegyelmét: hogy őket a töredelmesség szellemével eltöltsd, és nekik, amiért igazán folyamodnak, sikeresen megadjad és amit megkaptak, azt akaratod támogatásával sértetlenül és állandóan bírják. A mi Urunk Krisztus által.
+R. Amen.
 _
 _
-v. Let us pray. 
-Almighty, everlasting God, Who bestowed upon the people of Nineve, who repented in sackcloth and ashes, Your merciful remedies, graciously grant that we may so imitate their outward behavior as inwardly to obtain Your forgiveness. Through Christ our Lord.
+v. Könyörögjünk.
+Örök mindenható Isten, ki Ninive hamuban és szőrköntösben vezeklő lakosainak bűneit megbocsátottad: engedd kegyelmesen, hogy úgy utánozhassuk őket külső viseletükben, hogy bűneink bocsánatát megnyerjük
+$Per Dominum
+(sed rubrica 1960 dicuntur)
+A mi Urunk Krisztus által.
+R. Amen.
 _
 _
-!:Postea Celebrans, imposito incenso in thuribulo, ter aspergit cineres aqua benedícta, dicendo Antiphonam Aspérges, sine cantu et sine Psalmo, et ter adolet incenso. Deinde dignior Sacerdos ex Clero accedens ad Altare, imponit cineres Celebranti non genuflexo. Si vero non adsit alius Sacerdos, ipsemet Celebrans, genibus flexis coram Altari, sibi ipsi cineres imponit in capite, nihil dicens, et cantatur statim a choro:
+!Postea Celebrans, imposito incenso in thuribulo, ter aspergit cineres aqua benedícta, dicendo Antiphonam Aspérges, sine cantu et sine Psalmo, et ter adolet incenso. Deinde dignior Sacerdos ex Clero accedens ad Altare, imponit cineres Celebranti non genuflexo. Si vero non adsit alius Sacerdos, ipsemet Celebrans, genibus flexis coram Altari, sibi ipsi cineres imponit in capite, nihil dicens, et cantatur statim a choro:
 !Antiphona.
-!Joel 2:13
-Let us change our garment for ashes and sackcloth: let us fast and lament before the Lord: for our God is plenteous in mercy to forgive sins.
+!Joel 2, 13
+Öltözzünk hamuba és szőrköntösbe: böjtöljünk és siránkozzunk az Úr előtt; mert fölötte irgalmas a mi Istenünk bűneink megbocsátására.
 _
 _
-!:Alia Antiph.
-!Joel 2:17
-Between the porch and the altar the priests the Lord's ministers shall weep, and shall say: Spare, O Lord, spare thy people: and shut not the mouths of them that sing to thee, O Lord?
+!Másik Antiph.
+!Joel 2, 17
+Sírjanak az előcsarnok és az oltár között a papok, az Úr szolgái, és mondják: Könyörülj, Uram! könyörülj népeden és ne némítsd el a téged énekkel dicsőítők száját, Uram! 
 _
 _
 !Responsorium
-!Esther 13; Joel 2
-Let us amend for the better in those things in which we have sinned through ignorance: lest suddenly overtaken by the day of death, we seek space for penance, and are not able to find it. Hear O Lord, and have mercy: for we have sinned against thee.
-!Ps 78:9
-Help us, O God, our saviour: and for the glory of thy name, O Lord, deliver us: and forgive us our sins for thy name's sake: O Lord deliver us. Listen, O Lord.
-V. Glory be to the Father, and to the Son, * and to the Holy Ghost. Listen, O Lord.
-!:Sacerdos vero, dum cantantur Antiphonć et Responsorium, detecto capite, primo imponit cineres digniori Sacerdoti, a quo ipse accepit, deinde Ministris paratis, genibus flexis coram Altari, dicens:
-!:Imposition of the Ashes.
-!Gen. 3:19 
-Remember, man, that you are dust and into dust you shall return.
+!Eszter 13; Joel 2
+Javítsuk meg, amit tudatlanságból vétettünk, nehogy hirtelen meglepjen a halál és hiába óhajtsunk időt a bűnbánatra, mert azt meg nem nyerhetjük - * Figyelj, Uram! reánk és könyörülj rajtunk; mert vétkeztünk ellened
+!Zsolt 78, 9
+V. Segíts rajtunk, szabadító Istenünk: és neved dicsőségéért ments meg, Uram! minket. Figyelj, Uram, reánk és könyörülj rajtunk; mert vétkeztünk ellened.
+V. Dicsőség az Atyának és Fiúnak és Szentlélek Istennek. Figyelj, Uram, reánk és könyörülj rajtunk; mert vétkeztünk ellened.
+!Sacerdos vero, dum cantantur Antiphonæ et Responsorium, detecto capite, primo imponit cineres digniori Sacerdoti, a quo ipse accepit, deinde Ministris paratis, genibus flexis coram Altari, dicens:
+!Ter 3:19
+El ne feledd ember, hogy por vagy és vissza kell térned a porba.
 _
 _
-P. The Lord be with you. 
-R. And with your spirit.
-v. Let us pray. 
-Grant us, O Lord, to take up our duty as soldiers of Christ by holy fasting that we, who are going to struggle with the evil spirits, may be protected by the help of self-restraint. Through Christ our Lord.
+!Postea veniunt alii, primo Clerus per ordinem, deinde populus: et genibus flexis ante Altare, singulatim recipiunt cinerem a Sacerdote, ut dictum est de Ministris. Completa cinerum impositione, Sacerdos dicit:
+V. Az Úr legyen veletek.
+R. És a te lelkeddel.
+v. Könyörögjünk!
+Engedd, nekünk, Urunk, hogy a gonosz szellemek ellen való keresztény küzdelmet a szent böjttel kezdjük meg és e harcban az önmegtartóztatás segítsége szilárdítson meg minket. A mi Urunk, Krisztus által.
+R. Amen.
 
 [Introitus]
-!Wis 11:24-25, 27.
-v. You have mercy on all, O Lord, and hate none of the things which You have~
-made, overlooking the sins of men for the sake of repentance, and sparing them:~
-because You are the Lord our God.
-!Ps 56:2
-Have pity on me, O God; have pity on me, for in You I take refuge.
+!Bölcs 11, 24-25; 11, 27
+v. Könyörülsz mindenen, URam, és mit sem utálsz abból, amit alkottál; elnézed az emberek bűneit a bűnbánatért és megbocsátasz nekik; mert te vagy a mi Urunk Istenünk.
+!Zsolt 56, 2
+Könyörülj rajtam, Isten, könyörülj rajtam; mert benned bízik lelkem!
 &Gloria
-v. You have mercy on all, O Lord, and hate none of the things which You have~
-made, overlooking the sins of men for the sake of repentance, and sparing them:~
-because You are the Lord our God.
+v. Könyörülsz mindenen, URam, és mit sem utálsz abból, amit alkottál; elnézed az emberek bűneit a bűnbánatért és megbocsátasz nekik; mert te vagy a mi Urunk Istenünk.
 
 [Oratio]
-Grant, O Lord, that Your faithful people may, with true piety, undertake the~
-time-honored custom of fasting and may carry it out with unwavering devotion.
+Engedd, Urunk, híveidnek, hogy a böjtnek tiszteletreméltó ünnepeit mind illő kegyelettel kezdjék, mind biztos áhítattal végezzék.
 $Per Dominum
 
 [Lectio]
 Olvasmány Joel próféta könyvéből
-!Joel 2:12-19
-v. Ezt mondja az Úr: Késedelem nélkül térjetek vissza hozzám teljes szívetekből, böjtölve, sírva és gyászolva.  A szíveteket szaggassátok meg, ne a ruhátokat. Térjetek vissza az Úrhoz, a ti Istenetekhez, mert jóságos és irgalmas, nagy a türelme és csupa könyörület; utálja a gonoszságot.  Ki tudja, hátha visszatér és újra megbocsát, s áldás fakad a nyomában, étel- és italáldozat az Úr, a ti Istenetek számára?  Fújjátok meg a harsonát a Sionon, rendeljetek el böjtöt, hirdessetek ünnepet,  gyűjtsétek egybe a népet, hívjátok össze a gyülekezetet! Gyűjtsétek egybe a véneket, hívjátok össze a gyermekeket, meg a csecsemőket! Jöjjön elő hálószobájából az ifjú férj, nászházából az új asszony!  Sírjanak a papok, az Úr szolgái az előcsarnok és az oltár között, és mondják: "Könyörülj, Uram, népeden, ne hagyd, hogy gyalázat érje örökségedet, s ne csúfolhassák őket a népek! Ne mondhassák a népek körében: Hol van az Istenük?"  Ekkor az Úr féltékeny szeretetre gyulladt országa iránt, és megkegyelmezett népének.  Az Úr válaszolt népének és ezeket mondta: "Nézzétek, küldök nektek gabonát, újbort és olajat, úgy, hogy jóllakhattok velük. Nem hagyom többé, hogy a népek között gyalázat érjen benneteket. 
+!Jo 2:12-19
+v. Ezt mondja az Úr: Késedelem nélkül térjetek vissza hozzám teljes szívetekből, böjtölve, sírva és gyászolva.  A szíveteket szaggassátok meg, ne a ruhátokat. Térjetek vissza az Úrhoz, a ti Istenetekhez, mert jóságos és irgalmas, nagy a türelme és csupa könyörület; utálja a gonoszságot.  Ki tudja, hátha visszatér és újra megbocsát, s áldás fakad a nyomában, étel- és italáldozat az Úr, a ti Istenetek számára?  Fújjátok meg a harsonát a Sionon, rendeljetek el böjtöt, hirdessetek ünnepet,  gyűjtsétek egybe a népet, hívjátok össze a gyülekezetet! Gyűjtsétek egybe a véneket, hívjátok össze a gyermekeket, meg a csecsemőket! Jöjjön elő hálószobájából az ifjú férj, nászházából az új asszony!  Sírjanak a papok, az Úr szolgái az előcsarnok és az oltár között, és mondják: „Könyörülj, Uram, népeden, ne hagyd, hogy gyalázat érje örökségedet, s ne csúfolhassák őket a népek! Ne mondhassák a népek körében: Hol van az Istenük?”  Ekkor az Úr féltékeny szeretetre gyulladt országa iránt, és megkegyelmezett népének.  Az Úr válaszolt népének és ezeket mondta: „Nézzétek, küldök nektek gabonát, újbort és olajat, úgy, hogy jóllakhattok velük. Nem hagyom többé, hogy a népek között gyalázat érjen benneteket.
 
 [Graduale]
-!Ps 56:2, 4.
-Have pity on me, O God; have pity on me, for in You I take refuge.
-V. He has sent from heaven and saved me; He has made those a reproach who~
-trample upon me.
+!Zsolt 56, 2; 56, 4
+Könyörülj rajtam, Isten, könyörülj rajtam: mert beléd vetem bizodalmamat.
+V. Az égből küld szabadulást nekem és gyalázatba taszítja, kik taposnak rajtam.
 _
 !Tractus
-!Ps 102:10
-O Lord, deal with us not according to our sins, nor requite us according to our~
-crimes.
-V. Ps 78:8-9 O Lord, remember not against us the iniquities of the past; may~
-Your compassion quickly come to us, for we are brought very low. (kneel)
-V. Help us, O God, our Saviour, because of the glory of Your Name, O Lord;~
-deliver us and pardon our sins for Your Names sake.
+!Zsolt 102, 10
+Uram! ne elkövetett bűneink szerint, és ne gonoszságaink szerint fizess nekünk.
+!Zsolt 78, 8-9
+Uram! ne emlékezzél meg régi gonoszságainkról: siessen elénk irgalmasságod; mert felette szegények lettünk. (Hic genuflectitur) 
+V. Segíts minket, szabadító Istenünk; és neved dicsőségéért ments meg, Uram! minket: és bocsásd meg nevedért bűneinket.
 
 [Evangelium]
 Evangélium + szent Máté Apostol kőnyvéből
-!Matt. 6:16-21
-v. Amikor böjtöltök, ne öltsetek olyan ábrázatot, mint a képmutatók, akik komorrá változtatják arcukat, hogy lássák böjtölésük! Bizony mondom nektek: megkapták jutalmukat.  Te, amikor böjtölsz, kend meg fejedet és mosd meg arcodat,  hogy ne lássák rajtad az emberek, hogy böjtölsz, hanem csak Atyád, aki a rejtekben is ott van! Akkor Atyád, aki a rejtekben is lát, megjutalmaz.  Ne gyűjtsetek magatoknak kincset a földön, ahol moly rágja és rozsda marja, s ahol betörnek és ellopják a tolvajok!  A mennyben gyűjtsetek kincset, ahol nem rágja moly és nem marja rozsda, s ahol nem törnek be és nem lopják el a tolvajok!  Ahol a kincsed, ott a szíved is. 
+!Mt 6:16-21
+v. Amikor böjtöltök, ne öltsetek olyan ábrázatot, mint a képmutatók, akik komorrá változtatják arcukat, hogy lássák böjtölésük! Bizony mondom nektek: megkapták jutalmukat.  Te, amikor böjtölsz, kend meg fejedet és mosd meg arcodat,  hogy ne lássák rajtad az emberek, hogy böjtölsz, hanem csak Atyád, aki a rejtekben is ott van! Akkor Atyád, aki a rejtekben is lát, megjutalmaz.  Ne gyűjtsetek magatoknak kincset a földön, ahol moly rágja és rozsda marja, s ahol betörnek és ellopják a tolvajok!  A mennyben gyűjtsetek kincset, ahol nem rágja moly és nem marja rozsda, s ahol nem törnek be és nem lopják el a tolvajok!  Ahol a kincsed, ott a szíved is.
 
 [Offertorium]
-!Ps 29:2-3
-I will extol you, O Lord, for You drew me clear and did not let my enemies~
-rejoice over me. O Lord, I cried out to You and You healed me.
+!Zsolt 29, 2-3
+Magasztallak, Uram! mert fölemeltél engem, és nem engedted, hogy elleneim örüljenek fölöttem: Uram! hozzád kiáltottam és meggyógyítottál engem.
 
 [Secreta]
-O Lord, we beseech You, make us truly fit to offer these gifts by which we~
-celebrate the beginning of this venerable observance.
+Tégy minket, kérünk Urunk, megfelelő módon alkalmassá ez adományok bemutatására, amelyekkel e szent idő misztériumának kezdetét ünnepeljük.
 $Per Dominum
 
 [Communio]
-!Ps 1:2-3
-He who shall meditate day and night on the law of the Lord shall yield his fruit~
-in due season.
+!Zsolt 1, 2-3
+Ki éjjel-nappal az Úr törvényéről elmélkedik, gyümölcsét idejében meghozza.
 
 [Postcommunio]
-May the sacrament that we have received, O Lord, give us help, that our fast may~
-be pleasing to You and may profit us as a healing remedy.
+Nyújtsanak, Urunk, nekünk segélyt a magunkhoz vett szentségek, hogy böjtjeink előtted kedvesek legyenek, nekünk pedig orvoslásunkra szolgáljanak.
 $Per Dominum
 
 [Super populum]
-!Prayer over the people
-v. Let us pray.
-v. Bow your heads to God.
-v. Look graciously O Lord, upon those who bow down before Your divine majesty,~
-that they, being fed by Your holy gift, may always be nourished by help from~
-heaven.
+!Deinde Sacerdos absolute dicit:
+!Oratio super populum  
+v. Könyörögjünk.
+!Et Diaconus, si in officio Diaconatus serviat versus ad populum, junctis manibus, dicit. Alioquin ipse Sacerdos, stans in eodem loco ante librum, et non vertens se ad populum.
+v. Alázzátok meg fejeteket Isten előtt.
+_
+v. Tekints, Urunk, kegyesen azokra, akik szent Fölséged előtt megalázzák magukat, hogy kiket isteni adomány táplál, mennyei segítség is gyámolítsa.
 $Per Dominum

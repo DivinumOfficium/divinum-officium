@@ -1,0 +1,15 @@
+[Lectio7]
+@Sancti/07-22:Lectio6:s/ Gdy tedy.*//
+
+[Lectio8]
+@Sancti/07-22:Lectio6:s/.*Gdy tedy/Gdy tedy/
+
+[Lectio9]
+@Sancti/07-22:Lectio7:s/Wiedziała.*//
+
+[Lectio10]
+@Sancti/07-22:Lectio7:s/.*Wiedziała/Wiedziała/s s/$/~/
+@Sancti/07-22:Lectio8:s/Że.*//
+
+[Lectio11]
+@Sancti/07-22:Lectio8:s/.* Że/Że/

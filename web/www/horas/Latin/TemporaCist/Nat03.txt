@@ -1,0 +1,34 @@
+@Tempora/Nat03
+
+[Rule]
+vide SanctiCist/01-01
+Feria Te Deum
+
+[Lectio1]
+@Tempora/Nat04::1-4:s/-3/-2/
+
+[Responsory1]
+@Sancti/12-25:Responsory6
+
+[Lectio2]
+@Tempora/Nat04::1:s/4-6/3-4/
+@Tempora/Nat04:Lectio1:5
+@Tempora/Nat04::2
+
+[Responsory2]
+@SanctiCist/12-25:Responsory9
+
+[Lectio3]
+@Tempora/Nat04:Lectio2:1:s/4-/5-/
+@Tempora/Nat04:Lectio2:3-4
+
+[Responsory3]
+@SanctiCist/12-25:Responsory10
+
+[MM Capitulum]
+@Tempora/Nat1-0:Capitulum Sexta
+_
+@SanctiCist/12-25:Nocturn 2 Versum
+
+[Ant Laudes]
+@Sancti/01-01

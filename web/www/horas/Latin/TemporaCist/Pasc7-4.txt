@@ -1,0 +1,28 @@
+@Tempora/Pasc7-4
+
+[Rule]
+Psalmi Feria
+no prima vespera
+
+[Invit]
+@Tempora/Pasc7-0:Versum 1:1:s/V\. // s/(.)(llel[uú][ij]a)/\* \u$1$2/
+
+[Ant Matutinum]
+@TemporaCist/Pasc7-0:Ant MatutinumC:s/;;.*//
+;;
+;;
+;;
+;;
+;;
+@TemporaCist/Pasc0-0:AntC Matutinum
+;;
+;;
+;;
+;;
+;;
+
+[Benedictio]
+@TemporaCist/Pasc7-1
+
+[Ant 3]
+Egréssi * duódecim Apóstoli circuíbant per castélla evangelizántes, et curantes ubíque, allelúia, allelúia.

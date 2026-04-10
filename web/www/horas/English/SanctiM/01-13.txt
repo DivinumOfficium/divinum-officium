@@ -1,0 +1,15 @@
+[Lectio7]
+@Sancti/01-13:Lectio6:s/And the .*//s
+
+[Lectio8]
+@Sancti/01-13:Lectio6:s/.*And the/And the/s
+
+[Lectio10]
+@Sancti/01-13:Lectio8:s/For .*//s
+
+[Lectio11]
+@Sancti/01-13:Lectio8:s/.*For /For /s
+@Sancti/01-13:Lectio9:s/Some .*//s
+
+[Lectio12]
+@Sancti/01-13:Lectio9:s/.*Some /Some /s

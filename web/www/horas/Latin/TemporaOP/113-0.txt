@@ -1,0 +1,17 @@
+@Tempora/113-0
+
+[Ant 1]
+@Tempora/114-0
+
+[Lectio2]
+@Tempora/113-0::1-4 s/-9/-7/
+
+[Responsory2]
+@Tempora/111-0:Responsory3
+
+[Lectio3]
+@Tempora/113-0:Lectio2:!2-4 s/5-9/8-10/
+@Tempora/113-0::2
+
+[Responsory3]
+@TemporaOP/Pent01-0:Responsory6

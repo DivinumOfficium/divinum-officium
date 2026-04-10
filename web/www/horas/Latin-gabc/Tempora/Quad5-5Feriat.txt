@@ -1,0 +1,10 @@
+[Lectio1]
+@Tempora/Quad5-5Feria::s/$/~/
+@Tempora/Quad5-5Feria:Lectio2:s/ Hoc.*//
+
+[Lectio2]
+@Tempora/Quad5-5Feria:Lectio2:s/.*Hoc/Hoc/ s/$/~/
+@Tempora/Quad5-5Feria:Lectio3
+
+[Lectio3]
+Potest autem movere, quomodo dicatur pontifex anni illius, cum Deus unum constituerit summum sacerdotem: cui mortuo unus succederet. Sed intellegendum est, per ambitiones et contentiones inter Judaeos postea constitutum ut plures essent, et per annos singulos vicibus ministrarent. Nam et de Zacharia hoc dicitur: Factum est autem, cum sacerdotio fungeretur in ordine vicis suae ante Deum, secundum consuetudinem sacerdotii, sorte exijt ut incensum poneret, ingressus in templum domini. Hinc apparet plures eos fuisse, et vices suas habuisse: nam incensum non licebat ponere nisi summo sacerdoti 71. Et forte etiam unum annum plures administrabant, quibus alio anno alii succedebant, ex quibus sorte exibat quis, incensum poneret.

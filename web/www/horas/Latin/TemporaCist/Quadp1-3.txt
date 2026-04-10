@@ -1,0 +1,21 @@
+@Tempora/Quadp1-3
+
+[Lectio1]
+@Tempora/Quadp1-1::1-4:s/-31/-28/
+
+[Lectio2]
+@Tempora/Quadp1-1:Lectio1:2-6:s/27-31/29-30/ s/27 .*29 /29 /s
+
+[Lectio3]
+@Tempora/Quadp1-0:Lectio1:2:s/27-31/31-Gen 2:2/
+@Tempora/Quadp1-0:Lectio1:7
+@Tempora/Quadp1-0:Lectio2:2-3
+
+[Responsory1]
+@TemporaCist/Quadp1-0:Responsory7
+
+[Responsory2]
+@TemporaCist/Quadp1-0:Responsory8
+
+[Responsory3]
+@TemporaCist/Quadp1-0:Responsory9

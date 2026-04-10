@@ -1,8 +1,11 @@
+[Officium]
+S. Sabbæ Abbatis
+
 [Rank]
-S. Sabbæ Abbatis;;Simplex;;1.1;;vide C5
+;;Simplex;;1.1;;vide C5b
 
 [Rule]
-vide C5;
+vide C5b;
 
-[Oratio]
-@Commune/C5:Oratio1:s/N\./Sabbæ/
+[Name]
+Sabbæ

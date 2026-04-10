@@ -1,0 +1,500 @@
+[Invit]
+Dominica = {name:Dominum qui fecit nos;annotation:4.E;mode:4;book:Liber nocturnalis, 1930, p. 33;%%(c4) Do(f)mi(fe)num(dc) qui(d) fe(fg)cit(fe) nos(d/de) *(:) ve(cd)ni(fe)te(f) a(gh)do(g)re(de)mus.(e.) (::)};;4
+Feria II = {name:Venite Exsultemus Domino Ad Invit;annotation:4.c;mode:4;book:Liber nocturnalis, 1930, p. 38;%%(c4) Ve(e)ni(ed!ew!f)te(efd//ed/dc) *(,) e(e)xul(f)te(gf)mus(gf) Do(efe)mi(de)no.(e.) (::)};;4cfer
+Feria III = {name:Jubilemus Deo;annotation:4.c;mode:4;book:Liber nocturnalis, 1930, p. 41;%%(c4) Ju(e)bi(e)le(e)mus(e) De(ed!ew!f)o(efd//ed/dc) *(,) sa(e)lu(f)ta(gf)ri(gf) no(e.)stro.(e.) (::)};;4cfer
+Feria IV = {name:Deum magnum Dominum;annotation:4.c;mode:4;book:Liber nocturnalis, 1930, p. 44;%%(c4) De(e)um(e) mag(e)num(e) Do(ed!ew!f)mi(f)num(efd/ed!dc) (,) * ve(ef)ni(g)te(f) a(efe)do(e)re(de)mus.(e.) (::)};;4cfer
+Feria V = {name:Regem magnum;annotation:4.c;mode:4;book:Liber nocturnalis, 1930, p. 47;%%(c4) Re(e)gem(e) mag(e)num(e) Do(ed!ew!f)mi(f)num(efd//ed/dc) (,) * ve(ef)ni(g)te(f) a(efe)do(e)re(de)mus.(e.) (::)};;4cfer
+Feria VI = {name:Dominum Deum nostrum;annotation:4.c;mode:4;book:Liber nocturnalis, 1930, p. 50;%%(c4) Do(e)mi(e)num(e) De(e)um(e) no(ed!ew!f)strum(efd//ed/dc) *(,) ve(ef)ni(g)te(f) a(efe)do(e)re(de)mus.(e.) (::)};;4cfer
+Sabbato = {name:Populus Domini;annotation:4.c;mode:4;book:Liber nocturnalis, 1930, p. 54;%%(c4) Po(e)pu(e)lus(e) Do(ef)mi(e)ni(e) et(e) o(e)ves(e) pas(e)cu(e)ae(e) e(ed!ewf)jus(efd/ed/dc) (,) * Ve(ef)ni(g)te(f) a(efe)do(e)re(de)mus.(e.) (::)};;4cfer
+Invit 1 = {name:Adoremus Dominum quoniam;annotation:4.;mode:4;book:Liber nocturnalis, 1930, p. 31;%%(c4) A(f)do(fe)re(dc)mus(d) Do(fg)mi(fe)num(d/de) (:) * quo(d)ni(cd)am(fe) ip(f)se(gh) fe(g)cit(de) nos.(e) (::)};;4
+
+[Invit Trid_]
+Dominica={name:Adoremus Dominum qui fecit;annotation:2.;mode:2;transcriber:Ryan Carey;%%(f3) AD(f)O(hih)RÉ(fh)MUS(ghffe) Dó(fh)mi(h)num,(hhg) (:) * Qui(f) fe(ghf)cit(ef) nos.(f) (::)};;2
+Feria II={name:Venite Exultemus;annotation:6.;mode:6;transcriber:Ryan Carey;%%(c4) VE(f)NÍ(fg)TE,(fe/fg!hvhg) *(:) Ex(f)ul(gh)té(g)mus(fd) Dó(fg)mi(g)no.(f) (::)};;6
+Feria III={name:Jubilemus Deo;annotation:6.;mode:6;transcriber:Ryan Carey;%%(c4) JU(f)BI(f)LÉ(g)MUS(fe) De(fgh)o(ghg) <v>\greheightstar</v>(:) Sa(f)lu(gh)tá(gf/gvFD)ri(f) nos(g)tro.(f) (::)};;6
+Feria IV={name:In manu tua;annotation:6.;mode:6;transcriber:Ryan Carey;%%(c4) IN(f) ma(f)nu(f) tu(fg)a(fe) Dó(f)mi(g)ne(ghg) (:) * Om(f)nes(gh) fi(ghGF)nes(g) ter(g)ræ.(f.) (::)};;6
+Feria V={name:Dominum qui fecit;annotation:6.;mode:6;transcriber:Ryan Carey;%%(c4) DÓ(f)MI(f)NUM(fg)  qui(fe) fe(f)cit(g) nos,(gh) (:) * Ve(h)ní(f)te,(gh) ad(ghGF)o(g)ré(g)mus.(f) (::)};;6
+Feria VI={name:Adoremus Dominum Quoniam;annotation:6.;mode:6;transcriber:Ryan Carey;%%(c4) AD(f)O(f)RÉ(fg)MUS(fe) Dó(f)mi(g)num,(gh) (:) * Quón(h)i(f)am(gh) ip(g)se(fd) fe(fg)cit(g) nos.(f) (::)};;6
+Sabbato={name:Dominum Deum nostrum;annotation:6.;mode:6;transcriber:Ryan Carey;%%(c4) DÓ(f)MI(f)NUM(fg) De(fe)um(f) nos(g)trum(gh) (:) * Ve(h)ní(f)te(gh) ad(ghGF)o(g)ré(g)mus.(f)  (::)};;6
+
+[Invit Adv]
+{name:Regem venturum Dominum;annotation:2.;mode:2;book:Liber nocturnalis, 1930, p. 57;%%(f3) Re(f!gwh)gem(fe) ven(f)tú(h)rum(g) Dó(hi)mi(hg)num(g) *(,) Ve(ij)ní(hg)te(fe) a(hi)do(hg)ré(f.)mus.(f.) (::)};;2
+
+[Invit Adv3]
+{name:Prope est iam Dominus;annotation:2.;mode:2;book:Liber nocturnalis, 1930, p. 57;%%(f3) Pro(f!gwh)pe(fe) est(f) jam(hg) Dó(hi)mi(hg)nus(g) *(,) Ve(ij)ní(hg)te(fe) a(hi)do(hg)ré(f)mus.(f) (::)};;2
+
+[Invit Quad]
+{name:Non sit vobis;annotation:4.d;mode:4;book:Liber nocturnalis, 1930, p. 79;transcriber:faj-munich;%%(c4) Non(c) sit(d) vo(f)bis(f) va(fg)num(f.) ma(f)ne(e) súr(fg)ge(f)re(f) an(g)te(e) lu(f)cem:(ded/dc) *(;) Qui(ce!fg)a(g) pro(g)mí(g)sit(g) Dó(gh)mi(g)nus(g) co(g)ró(hg)nam(f) vi(g)gi(gf)lán(e)ti(e)bus.(e.) (::)};;4d
+
+[Invit Quad5_]
+{name:Non sit vobis;annotation:4.c;mode:4;book:Liber nocturnalis, 1930, p. 80;transcriber:faj-munich;%%(c4) Hó(cd!ef.)di(ed)e,(d) si(f) vo(f)cem(f) Dó(fe)mi(dc)ni(d) au(f)di(f)é(ef!gf)ri(e)tis,(dde.) *(;) No(cd)lí(f)te(e) ob(f)du(g)rá(gg)re(f) cor(gh)da(gf) ves(e.)tra.(e.) (::)};;4
+
+[Invit Pasch_]
+{name:Surrexit Dominus vere;annotation:6.;mode:4;book:Liber nocturnalis, 1930, p. 83;transcriber:faj-munich;%%(c4) Sur(d)ré(ffg)xit(f) Dó(g)mi(fe)nus(f) ve(gh)re,(ixhivggf.) *(;) Al(fgh)le(ghffvED)lú(f/hgh)ja.(gf..) (::)};;6
+
+[Day0 Hymnus]
+{:H-MatDom1:}v. Nocte surgéntes vigilémus omnes,
+Semper in psalmis meditémur, atque
+Voce concórdi Dómino canámus
+Dúlciter hymnos.
+_
+Ut pio Regi páriter canéntes,
+Cum suis Sanctis mereámur aulam
+Íngredi cæli, simul et perénnem
+Dúcere vitam.
+_
+Præstet hoc nobis Déitas beáta
+Patris, ac Nati, paritérque Sancti
+Spíritus, cujus résonat per omnem
+Glória mundum.
+Amen.
+
+[Day0 HymnusM]
+@:Day0 Hymnus:s/Voce concórdi/Víribus totis/ s/perénnem/beátam/ s/résonat/réboat/
+
+[Day0 Hymnus1M]
+v. Primo diérum ómnium,
+Quo mundus extat cónditus,
+Vel quo resúrgens Cónditor
+Nos morte victa líberat.
+_
+Pulsis procul torpóribus
+Surgámus omnes ócius,
+Et nocte quærámus pium
+Sicut prophétam nóvimus.
+_
+Nostras preces ut áudiat,
+Suámque dextram pórrigat:
+Et expiátos sórdibus
+Reddat polórum sédibus.
+_
+Ut quique sacratíssimo
+Hujus diéi témpore
+Horis quiétis psállimus,
+Donis beátis múneret.
+_
+Jam nunc patérna cláritas
+Te postulámus áffatim:
+Absit libído sórdidans
+Et omnis actus nóxius.
+_
+Ne fœda sit, vel lúbrica
+Compágo nostri córporis,
+Per quem Avérni ígnibus
+Ipsi cremémur ácrius.
+_
+Ob hoc Redémptor, quǽsumus,
+Ut probra nostra díluas,
+Vitæ perénnis cómmoda
+Nobis benígne cónferas.
+_
+Quo carnis actu éxsules
+Effécti ipsi cælibes,
+Ut præstolámur cérnui,
+Melos canámus glóriæ.
+_
+* Præsta, Pater piíssime,
+Patríque compar Únice,
+Cum Spíritu Paráclito
+Regnans per omne sǽculum.
+Amen.
+
+[Day0 Hymnus1]
+{:H-MatDom4:}v. Primo die, quo Trínitas
+Beáta mundum cóndidit,
+Vel quo resúrgens Cónditor
+Nos, morte victa, líberat:
+_
+Pulsis procul torpóribus,
+Surgámus omnes ócius,
+Et nocte quærámus Deum,
+Prophéta sicut prǽcipit:
+_
+Nostras preces ut áudiat
+Suámque dextram pórrigat,
+Et expiátos sórdibus
+Reddat polórum sédibus:
+_
+Ut, quique sacratíssimo
+Hujus diéi témpore
+Horis quiétis psállimus,
+Donis beátis múneret.
+_
+Jam nunc, patérna cláritas,
+Te postulámus áffatim:
+Absint faces libídinis,
+Et omnis actus nóxius.
+_
+Ne fœda sit, vel lúbrica
+Compágo nostri córporis,
+Ob cujus ignes ígnibus
+Avérnus urat ácrius.
+_
+Mundi Redémptor, quǽsumus,
+Tu probra nostra díluas;
+Nobísque largus cómmoda
+Vitæ perénnis cónferas.
+_
+* Præsta, Pater piíssime,
+Patríque compar Únice,
+Cum Spíritu Paráclito
+Regnans per omne sǽculum.
+Amen.
+
+[Day1 HymnusM]
+@:Day1 Hymnus:s/omni témpore/in perpetuum/
+
+[Day1 Hymnus]
+{:H-MatFeria:}v. Somno reféctis ártubus,
+Spreto cubíli, súrgimus:
+Nobis, Pater, canéntibus
+Adésse te depóscimus.
+_
+Te lingua primum cóncinat,
+Te mentis ardor ámbiat:
+Ut áctuum sequéntium
+Tu, Sancte, sis exórdium.
+_
+Cedant tenébræ lúmini,
+Et nox diúrno síderi,
+Ut culpa, quam nox íntulit,
+Lucis labáscat múnere.
+_
+Precámur iídem súpplices,
+Noxas ut omnes ámputes,
+Et ore te canéntium
+Laudéris omni témpore.
+_
+* Præsta, Pater piíssime,
+Patríque compar Únice,
+Cum Spíritu Paráclito
+Regnans per omne sǽculum.
+Amen.
+
+[Day2 Hymnus]
+{:H-MatFeria:}v. Consors patérni lúminis,
+Lux ipse lucis, et dies,
+Noctem canéndo rúmpimus:
+Assíste postulántibus.
+_
+Aufer ténebras méntium,
+Fuga catérvas dǽmonum,
+Expélle somnoléntiam,
+Ne pigritántes óbruat.
+_
+Sic, Christe, nobis ómnibus
+Indúlgeas credéntibus,
+Ut prosit exorántibus,
+Quod præcinéntes psállimus.
+_
+* Præsta, Pater piíssime,
+Patríque compar Únice,
+Cum Spíritu Paráclito
+Regnans per omne sǽculum.
+Amen.
+
+[Day3 HymnusM]
+@:Day3 Hymnus:s/culpis ómnibus/tu criminibus/
+
+[Day3 Hymnus]
+{:H-MatFeria:}v. Rerum Creátor óptime,
+Rectórque noster, áspice:
+Nos a quiéte nóxia
+Mersos sopóre líbera.
+_
+Te, sancte Christe, póscimus,
+Ignósce culpis ómnibus:
+Ad confiténdum súrgimus,
+Morásque noctis rúmpimus.
+_
+Mentes manúsque tóllimus,
+Prophéta sicut nóctibus
+Nobis geréndum prǽcipit,
+Paulúsque gestis cénsuit.
+_
+Vides malum, quod fécimus:
+Occúlta nostra pándimus:
+Preces geméntes fúndimus,
+Dimítte quod peccávimus.
+_
+* Præsta, Pater piíssime,
+Patríque compar Únice,
+Cum Spíritu Paráclito
+Regnans per omne sǽculum.
+Amen.
+
+[Day4 Hymnus]
+{:H-MatFeria:}v. Nox atra rerum cóntegit
+Terræ colóres ómnium:
+Nos confiténtes póscimus
+Te, juste judex córdium.
+_
+Ut áuferas piácula,
+Sordésque mentis ábluas:
+Donésque, Christe, grátiam,
+Ut arceántur crímina.
+_
+Mens ecce torpet ímpia,
+Quam culpa mordet nóxia:
+Obscúra gestit tóllere,
+Et te, Redémptor, quǽrere.
+_
+Repélle tu calíginem
+Intrínsecus quam máxime,
+Ut in beáto gáudeat
+Se collocári lúmine.
+_
+* Præsta, Pater piíssime,
+Patríque compar Únice,
+Cum Spíritu Paráclito
+Regnans per omne sǽculum.
+Amen.
+
+[Day5 HymnusM]
+@:Day5 Hymnus:s/vúlnerum\./ómnium./ s/ómnium/vúlnerum/ s/astet/adsit/
+
+[Day5 Hymnus]
+{:H-MatFeria:}v. Tu, Trinitátis Unitas,
+Orbem poténter quæ regis,
+Atténde laudis cánticum,
+Quod excubántes psállimus.
+_
+Nam léctulo consúrgimus
+Noctis quiéto témpore,
+Ut flagitémus ómnium
+A te medélam vúlnerum.
+_
+Quo fraude quidquid dǽmonum
+In nóctibus delíquimus,
+Abstérgat illud cǽlitus
+Tuæ potéstas glóriæ.
+_
+Ne corpus astet sórdidum,
+Nec torpor instet córdium,
+Ne críminis contágio
+Tepéscat ardor spíritus.
+_
+Ob hoc, Redémptor, quǽsumus,
+Reple tuo nos lúmine,
+Per quod diérum círculis
+Nullis ruámus áctibus.
+_
+* Præsta, Pater piíssime,
+Patríque compar Únice,
+Cum Spíritu Paráclito
+Regnans per omne sǽculum.
+Amen.
+
+[Day6 HymnusM]
+v. Summæ Deus cleméntiæ,
+Mundíque Factor máchinæ,
+Unus potentiáliter,
+Trinúsque personáliter:
+_
+Nostros pius cum cánticis
+Fletus benígne súscipe:
+Quo corde puro sórdibus
+Te perfruámur lárgius.
+_
+Lumbos, jecúrque mórbidum
+Adúre igni cóngruo,
+Accíncti ut sint pérpetim,
+Luxu remóto péssimo.
+_
+Ut quique horas nóctium
+Nunc concinéndo rúmpimus,
+Donis beátæ pátriæ
+Ditémur omnes áffatim
+_
+* Præsta, Pater piíssime,
+Patríque compar Únice,
+Cum Spíritu Paráclito
+Regnans per omne sǽculum.
+Amen.
+
+[Day6 Hymnus]
+{:H-MatFeria:}v. Summæ Parens cleméntiæ,
+Mundi regis qui máchinam,
+Uníus et substántiæ,
+Trinúsque persónis Deus:
+_
+Nostros pius cum cánticis
+Fletus benígne súscipe:
+Ut corde puro sórdium
+Te perfruámur lárgius.
+_
+Lumbos, jecúrque mórbidum
+Flammis adúre cóngruis,
+Accíncti ut artus éxcubent,
+Luxu remóto péssimo.
+_
+Quicúmque ut horas nóctium
+Nunc concinéndo rúmpimus,
+Ditémur omnes áffatim
+Donis beátæ pátriæ.
+_
+* Præsta, Pater piíssime,
+Patríque compar Únice,
+Cum Spíritu Paráclito
+Regnans per omne sǽculum.
+Amen.
+
+[HymnusM Adv]
+{gabc:Psalterium/Adventu/hy--verbum_supernum_prodiens_a_--hymni_antiqui}
+
+[Hymnus Adv]
+{gabc:Psalterium/Adventu/hy--verbum_supernum_prodiens--sandhofe}
+
+[HymnusM Quad]
+{gabc:Psalterium/Quadragesima/hy--ex_more_docti_mystico--solesmes_1934}
+
+[Hymnus Quad]
+{gabc:Psalterium/Quadragesima/hy--ex_more_docti_mystico--sandhofe}
+
+[HymnusM Quad5]
+{gabc:Psalterium/Passionis/hy--pange_lingua--solesmes_1934}
+
+[Hymnus Quad5]
+{gabc:Psalterium/Passionis/hy--pange_lingua..._lauream--sandhofe}
+
+[HymnusM Pasch]
+{gabc:Psalterium/Pascha/hy--rex_sempiterne_domine--monastic}
+
+[Hymnus Pasch]
+{gabc:Psalterium/Pascha/hy--rex_sempiterne_coelitum--sandhofe}
+
+[MM LB Pasch]
+!Osea 6:1-3
+v. Veníte, et revertámur ad Dóminum, quia ipse cepit, et sanábit nos; percútiet, et curábit nos. Vivificábit nos post duos dies; in die tértia suscitábit nos, et vivémus in conspéctu ejus. Sciémus, sequemúrque, ut cognoscámus Dóminum.
+$Tu autem
+_
+@Psalterium/Minor Special:Responsory Pasch Nona:s/._.*//s
+
+[MM LB1]
+!Lam 2:19
+v. Consúrge, lauda in nocte in princípio vigiliárum: effúnde sicut aquam cor tuum ante conspéctum Dómini: leva ad eum manus tuas.
+$Tu autem
+_
+R.br. Benedícam Dóminum * In omni témpore.
+R. Benedícam Dóminum * In omni témpore.
+V. Semper laus ejus in ore meo.
+R. In omni témpore.
+&Gloria
+R. Benedícam Dóminum * In omni témpore.
+
+[MM LB2_]
+!Prov 3:19-20
+v. Dóminus sapiéntia fundávit terram: stabilívit cælos prudéntia. Sapiéntia illíus erupérunt abýssi, et nubes rore concréscunt.
+$Tu autem
+_
+R.br. Deus, in nómine tuo * salvum me fac.
+R. Deus, in nómine tuo * salvum me fac.
+V. Et in misericórdia tua líbera me.
+R. Salvum me fac.
+&Gloria
+R. Deus, in nómine tuo * salvum me fac.
+
+[MM LB3_]
+!Sap 1:1-2
+v. Dilígite justítiam, qui judicátis terram. Sentíte de Dómino in bonitáte, et in simplicitáte cordis quǽrite illum: quóniam invenítur ab his qui non tentant illum, appáret autem eis qui fidem habent in illum.
+$Tu autem
+_
+R.br. In te, Dómine, sperávi: * non confúndar in ætérnum.
+R. In te, Dómine, sperávi: * non confúndar in ætérnum.
+V. In justítia tua líbera me, et éripe me.
+R. Non confúndar in ætérnum.
+&Gloria
+R. In te, Dómine, sperávi: * non confúndar in ætérnum.
+
+[MM LB4_]
+!Sap 3:9
+v. Qui confídunt in illo intélligent veritátem, et fidéles in dilectióne acquiéscent illi: quóniam donum et pax est eléctis ejus.
+$Tu autem
+_
+R.br. Exsultáte Deo, * adjutóri nostro.
+R. Exsultáte Deo, * adjutóri nostro.
+V. Jubiláte Deo Jacob.
+R. Adjutóri nostro.
+&Gloria
+R. Exsultáte Deo, * adjutóri nostro.
+
+[MM LB5]
+!Sap 1:6-7
+v. Benígnus est enim spíritus sapiéntiæ, et non liberábit malédicum a lábiis suis: quóniam renum illíus testis est Deus, et cordis illíus scrutátor est verus, et linguæ ejus audítor. Quóniam Spíritus Dómini replévit orbem terrárum, et hoc quod cóntinet ómnia, sciéntiam habet vocis.
+$Tu autem
+_
+R.br. Misericórdias tuas Dómine * in ætérnum cantábo.
+R. Misericórdias tuas Dómine * in ætérnum cantábo.
+V. In generatióne et progénie.
+R. In ætérnum cantábo.
+&Gloria
+R. Misericórdias tuas Dómine * in ætérnum cantábo.
+
+[MM LB6_]
+!Eccl 12:2-3
+v. Bénefac justo, et invénies retributiónem magnam: et si non ab ipso, certe a Dómino. Non est enim ei bene qui assíduus est in malis, et eleemósynas non danti: quóniam et Altíssimus ódio habet peccatóres, et misértus est pœniténtibus.
+$Tu autem
+_
+
+R.br. Dómine, * exáudi oratiónem meam.
+R. Dómine, * exáudi oratiónem meam.
+V. Et clamor meus ad te véniat.
+R. Exáudi oratiónem meam.
+&Gloria
+R. Dómine, * exáudi oratiónem meam.
+
+[MM Capitulum_]
+!1 Cor 16:13-14
+v. Vigiláte, state in fide, viríliter ágite, et confortámini. Ómnia vestra in caritáte fiant.
+$Deo gratias
+_
+V. Beáti hábitant in domo tua, Dómine.
+R. In sǽcula sæculórum laudábunt te.
+
+[MM Capitulum Adv_]
+!Titus 2:12-13
+v. Sóbrie, et juste, et pie vivámus in hoc sǽculo, exspectántes beátam spem, et advéntum glóriæ magni Dei, et Salvatóris nostri Jesu Christi.
+$Deo gratias
+_
+V. Veni, Dómine, et noli tardáre.
+R. Reláxa facínora plebi tuæ.
+
+[MM Capitulum Nat]
+!Isa 9:6
+v. Párvulus enim natus est nobis, et fílius datus est nobis, et factus est principátus super húmerum ejus: et vocábitur nomen ejus, Admirábilis, Consiliárius, Deus, Fortis, Pater futúri sǽculi, Princeps pacis.
+$Deo gratias
+_
+V. Vidérunt omnes fines terræ, allelúja.
+R. Salutáre Dei nostri, allelúja.
+
+[MM Capitulum Epi]
+!Isa 60:4-5
+v. Fílii tui de longe vénient et fíliæ tuæ de látere surgent. Tunc vidébis, et áfflues; mirábitur et dilatábitur cor tuum: quando convérsa fúerit ad te multitúdo maris; fortitúdo géntium vénerit tibi.
+$Deo gratias
+_
+V. Tria sunt múnera quæ obtulérunt Magi Dómino.
+R. Aurum, thus et myrrham.
+
+[MM Capitulum Quad]
+!Isa 1:16-18
+v. Lavámini, mundi estóte: auférte malum cogitatiónum vestrárum ab óculis meis: quiéscite ágere pervérse, díscite benefácere: quǽrite judícium, subveníte opprésso, judicáte pupíllo, deféndite víduam. Et veníte, et argúite me, dicit Dóminus.
+$Deo gratias
+_
+V. In mánibus portábunt te.
+R. Ne forte offéndas ad lápidem pedem tuum.
+
+[MM Capitulum Quad5]
+!Jer 11:18-19
+v. Tu autem Dómine demonstrásti mihi, et cognóvi: tunc ostendísti mihi stúdia eórum. Et ego quasi agnus mansuétus, qui portátur ad víctimam.
+$Deo gratias
+_
+V. Éripe me, Dómine, ab hómine malo.
+R. A viro iníquo éripe me.
+
+[MM Capitulum Pasch]
+!Rom 6:4
+v. Consepúlti enim sumus cum illo per baptísmum in mortem: ut quómodo Christus surréxit a mórtuis per glóriam Patris, ita et nos in novitáte vitæ ambulémus.
+$Deo gratias
+_
+V. Resurréxit Dóminus, allelúja.
+R. Sicut dixit vobis, allelúja.

@@ -1,0 +1,23 @@
+@Tempora/Epi4-2
+
+[Lectio1]
+@Tempora/Epi3-1::1-6 s/-6/-4/
+
+[Responsory1]
+@TemporaOP/Epi1-2
+
+[Lectio2]
+@Tempora/Epi3-1::1 s/7-10/5-8/
+@Tempora/Epi3-1:Lectio1:7-8
+@Tempora/Epi3-1::2-3
+
+[Responsory2]
+@TemporaOP/Epi1-2
+
+[Lectio3]
+@Tempora/Epi3-1::1 s/11-14/9-12/
+@Tempora/Epi3-1:Lectio2:4-5
+@Tempora/Epi3-1::2-3
+
+[Responsory3]
+@TemporaOP/Epi1-2

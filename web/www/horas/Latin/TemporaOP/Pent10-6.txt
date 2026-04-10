@@ -1,0 +1,22 @@
+@Tempora/Pent09-6
+
+[Lectio1]
+@Tempora/Pent09-5::1-4 s/-3/-2/
+
+[Responsory1]
+@Tempora/Pent01-3:Responsory3
+
+[Lectio2]
+@Tempora/Pent09-5::1 s/4-6/3-5/
+@Tempora/Pent09-5:Lectio1:5
+@Tempora/Pent09-5::2-3 s/ Dixítque.*//
+
+[Responsory2]
+@Tempora/Pent01-3:Responsory1
+
+[Lectio3]
+@Tempora/Pent09-5:Lectio2:1 s/4-/5-/
+@Tempora/Pent09-5:Lectio2:3-4 s/.* (?=Dixítque)/5 /
+
+[Responsory3]
+@TemporaOP/Pent01-3

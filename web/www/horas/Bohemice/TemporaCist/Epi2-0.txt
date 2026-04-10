@@ -1,0 +1,67 @@
+[Invit]
+Postavme se před tvář Hospodinovu; * A v žalmech mu zajásejme.
+
+[Responsory1]
+@Tempora/Epi2-0::s/temnoty\./temnoty, a řekl jsem:/
+
+[Responsory4]
+R. Ukázal jsi mi, Hospodine, cesty života, naplnil jsi mě radostí ze své tváře;
+* Potěšením z tvé pravice až do konce.
+V. Zachovej mě, Hospodine, neboť v tebe doufám; řekl jsem Hospodinu: můj Bůh jsi ty.
+R. Potěšením z tvé pravice až do konce.
+
+[Lectio5]
+@Tempora/Epi2-0:Lectio4:s/Avšak přece .*//
+
+[Lectio6]
+@Tempora/Epi2-0:Lectio4:s/.* (Avšak přece)/$1/s
+
+[Lectio7]
+@Tempora/Epi2-0:Lectio5:s/To, co .*//
+
+[Lectio8]
+@Tempora/Epi2-0:Lectio5:s/.* (To, co )/$1/ s/$/~/
+@Tempora/Epi2-0:Lectio6:s/Ostatně, .*//s
+
+[Responsory5]
+R. Budu tě milovat, Hospodine, má sílo; 
+* Hospodin je má skála, i mé útočiště.
+V. Chválím a vzývám Hospodina, a budu v bezpečí před svými nepřáteli.
+R. Hospodin je má skála, i mé útočiště.
+
+[Responsory6]
+@Tempora/Epi2-0::1-2
+V. V jeho ruce jsou všechny končiny země; a výšiny horské jsou jeho;
+@Tempora/Epi2-0::4
+
+[Responsory7]
+@Tempora/Epi2-0::1-2
+V. Ani se mi nebudou vysmívat moji nepřátelé; totiž všichni, kdo se k tobě obracejí, nebudou zklamáni.
+@Tempora/Epi2-0::4
+
+[Responsory8]
+R. Nechť uslyším, Hospodine, zvuk tvé chvály; 
+* Abych mohl vyprávět o všech tvých divech.
+V. Hospodine, zamiloval jsem si krásu tvého domu, a místo, kde přebývá tvá sláva;
+R. Abych mohl vyprávět o všech tvých divech.
+
+[Lectio9]
+@Tempora/Epi2-0:Lectio7
+
+[Lectio10]
+@Tempora/Epi2-0:Lectio8:s/Avšak ani .*//s
+
+[Lectio11]
+@Tempora/Epi2-0:Lectio8:s/.* Avšak ani /Avšak ani /s
+
+[Lectio12]
+@Tempora/Epi2-0:Lectio9
+
+[Responsory11]
+@TemporaM/Epi2-0::s/, neboť .* zhřešil//
+
+[Responsory12]
+R. Ukryl jsem jako zlato své hříchy; a skryl jsem v záhybu svého oděvu svou nepravost; 
+* Smiluj se nade mnou, Bože, pro své veliké milosrdenství.
+V. Jen proti tobě jsem zhřešil, a co je před tebou zlé jsem spáchal.
+R. Smiluj se nade mnou, Bože, pro své veliké milosrdenství.

@@ -1,0 +1,36 @@
+[Name]
+Anežko
+
+[Ant Vespera]
+Když Anežka vstoupila * do místa nepravosti, nalezla tam připraveného Anděla Páně.;;109
+Mám totiž s sebou * strážce mého těla, Anděla Páně.;;112
+Svým prstenem mě přijal za svou * můj Pán Ježíš Kristus, a jako nevěstu mě ozdobil korunou.;;121
+Dobročeřím ti, * Otče mého Pána Ježíše Krista, neboť skrze tvého Syna byl uhašen oheň po mém boku.;;126
+Radujte se spolu se mnou * a jásejte, neboť se všemi těmito jsem přijala trůn světla.;;146
+
+[Ant 1]
+Kristova Panna * se ani hrůzou netřásla, ani lichotkami nenechala svést.
+
+[AntMatutinumM]
+Po její pravici stál * jako Beránek bělostnější než sníh, Kristus si ji zasvětil jako nevěstu a Mučednici.;;96
+Poslal Hospodin * svého Anděla, a vysvobodil mě z hořícího ohně, a nebyla jsem spálena.;;97
+Již v objetích Kristových * čistých jsem ponořena, a s jeho tělem jsem sjednocena.;;98
+
+[Lectio5]
+@Sancti/01-21:Lectio4:s/Jméno .*//
+
+[Lectio6]
+@Sancti/01-21:Lectio4:s/.* (Jméno )/$1/s s/$/~/
+@Sancti/01-21:Lectio5:s/Netřásla .*//
+
+[Lectio7]
+@Sancti/01-21:Lectio5:s/.* (Netřásla )/$1/s s/Nový .*//
+
+[Lectio8]
+@Sancti/01-21:Lectio5:s/.* (Nový )/$1/s s/$/~/
+@Sancti/01-21:Lectio6:s/Jakou .*//
+
+[Responsory9]
+@Sancti/01-21:Responsory4:1-2
+V. Ozdobil náramkem nesmírné ceny mou pravici a mé hrdlo ověsil drahými kameny.
+@Sancti/01-21:Responsory4:4

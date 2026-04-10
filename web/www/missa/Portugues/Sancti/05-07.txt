@@ -1,13 +1,15 @@
-[Rank]
-S. Stanislai Episcopi Martyri;;Duplex;;3;;vide C2
+[Officium]
+S. Stanislai Episcopi Martyri
 
-[Rule]
+[Name]
+Estanislau
 
 [Introitus]
-@Commune/C2p:Introitus
+@Commune/C2ap:Introitus
 
 [Oratio]
-@Sancti/05-08pl:Oratio
+Ó Deus, em cuja honra o glorioso Pontífice Estanislau sucumbiu sob o gládio dos ímpios, permiti, Vos suplicamos, que todos aqueles que implorarem o seu socorro obtenham efeito salutar em seus pedidos.
+$Per Dominum.
 
 [Lectio]
 @Commune/C2p:Lectio
@@ -21,11 +23,5 @@ S. Stanislai Episcopi Martyri;;Duplex;;3;;vide C2
 [Offertorium]
 @Commune/C2p:Offertorium
 
-[Secreta]
-@Sancti/05-08pl:Secreta
-
 [Communio]
 @Commune/C2p:Communio
-
-[Postcommunio]
-@Sancti/05-08pl:Postcommunio

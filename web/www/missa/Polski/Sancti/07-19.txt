@@ -1,9 +1,5 @@
-[Rank]
-S. Vincentii a Paulo Confessoris;;Duplex;;3;;vide C5
-
-[Rule]
-vide C5
-Gloria
+[Officium]
+Św. Wincentego a Paulo Wyznawcy
 
 [Comment]
 # 19 VII – Św. Wincentego a Paulo, Wyznawcy
@@ -13,30 +9,12 @@ Gloria
 
 Msza wspólna nr 22 Iustus ut palma, z wyjątkiem kolekty i Ewangelii
 
-[Introitus]
-@Commune/C5b:Introitus
+[Name]
+Wincentego
 
 [Oratio]
 Boże, który obdarowałeś św. Wincentego apostolską gorliwością dla głoszenia Ewangelii ubogim i podniesienia blasku stanu duchownego, spraw, prosimy, abyśmy czcząc jego zasługi, starali się naśladować przykład jego cnót.
 $Per Dominum
 
-[Lectio]
-@Commune/C5b:Lectio
-
-[Graduale]
-@Commune/C5b:Graduale
-
 [Evangelium]
 @Sancti/04-25:Evangelium
-
-[Offertorium]
-@Commune/C5b:Offertorium
-
-[Secreta]
-@Commune/C5b:Secreta
-
-[Communio]
-@Commune/C5b:Communio
-
-[Postcommunio]
-@Commune/C5b:Postcommunio

@@ -1,0 +1,5 @@
+[Ant Vespera]
+@Sancti/09-08::s/Natívitas/Visitatio/g s/Nativitátem/visitatiónem/
+
+[Ant Laudes]
+@Sancti/09-08:Ant Vespera:s/Natívitas/Visitatio/g s/Nativitátem/visitatiónem/ s/;;.*//g

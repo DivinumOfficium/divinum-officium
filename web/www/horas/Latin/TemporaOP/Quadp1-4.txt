@@ -1,0 +1,29 @@
+@Tempora/Quadp1-4
+
+[Lectio1]
+@Tempora/Quadp1-3:Lectio1:1
+@Tempora/Quadp1-3:Lectio3:1-4
+
+[Responsory1]
+@TemporaOP/Quadp1-0
+
+[Lectio2]
+@Tempora/Quadp1-3:Lectio3:1 s/-20/-19/
+@Tempora/Quadp1-3:Lectio3:5-7
+
+[Responsory2]
+@TemporaOP/Quadp1-1
+
+[Lectio3]
+@Tempora/Quadp1-4:Lectio1:2 s/4:/3:20; 4:/ s/-7/-2/
+@Tempora/Quadp1-3:Lectio3:8
+@Tempora/Quadp1-4:Lectio1:3-4
+
+[Responsory3]
+@TemporaOP/Quadp1-0:Responsory Vespera 1
+
+[Ant 2]
+@Tempora/Quadp1-1:Ant 3
+
+[Ant 3]
+@TemporaOP/Quadp1-1

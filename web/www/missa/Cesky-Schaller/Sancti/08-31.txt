@@ -1,0 +1,40 @@
+[Rank]
+S. Raymundi Nonnati Confessoris;;Duplex;;3;;vide C5
+
+[Rule]
+vide C5
+Gloria
+
+[Comment]
+# Sv. Raymunda Nonnata, vyznavače
+! 3 třídy
+! Bílá barva
+✝ 1240 v Cardoně ve Španělsku
+
+[Introitus]
+@Commune/C5:Introitus
+
+[Oratio]
+Bože, jenž jsi svatého Raymunda,vyznavače.svého, učinil obdivuhodným ve vykupování věrných svých ze zajetí nevěřících, uděl nám na jeho přimluvu, abychom, osvobozeni jsouce z pout hříchů, svobodnou myslí plnili, co se tobě líbí.
+$Per Dominum
+
+[Lectio]
+@Commune/C5:Lectio
+
+[Graduale]
+@Commune/C5:Graduale
+
+[Evangelium]
+@Commune/C5:Evangelium
+
+[Offertorium]
+@Commune/C5:Offertorium
+
+[Secreta]
+@Commune/C5:Secreta
+
+[Communio]
+@Commune/C5:Communio
+
+[Postcommunio]
+@Commune/C5:Postcommunio

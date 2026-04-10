@@ -1,0 +1,42 @@
+[Ant Matutinum 3N]
+Ego * glóriam meam non quæro: † est qui quærat, et júdicet.
+
+[Lectio3]
+@Tempora/Quad5-0:Lectio3:s/-19/-16/ s/17 .*//s
+
+[Lectio4]
+@Tempora/Quad5-0:Lectio3:s/14-/17-/ s/14.*17/17/s
+
+[Responsory4]
+@Tempora/Quad5-1:Responsory1
+&Gloria
+@Tempora/Quad5-1:Responsory1:1-2 s/\n/ /
+
+[Lectio6]
+@Tempora/Quad5-0:Lectio5:s/Nec dubit.re .*//s
+
+[Lectio7]
+@Tempora/Quad5-0:Lectio5:s/.* Nec dubit.re /Nec dubitáre /s s/$/~/
+@Tempora/Quad5-0:Lectio6:s/Beátus .*//s
+
+[Lectio8]
+@Tempora/Quad5-0:Lectio6:s/.* Beátus /Beátus /s
+
+[Responsory8]
+@Tempora/Quad5-1:Responsory2
+&Gloria
+@Tempora/Quad5-1:Responsory2:1-2 s/\n/ /s
+
+[Lectio9]
+@Tempora/Quad5-0:Lectio7:s/Cæléstem .*//s
+
+[Lectio10]
+@Tempora/Quad5-0:Lectio7:s/.* Cæléstem /Cæléstem /s s/$/~/
+@Tempora/Quad5-0:Lectio8:s/Hi profecto .*//s
+
+[Lectio11]
+@Tempora/Quad5-0:Lectio8:s/.* Hi profecto /Hi profecto /s s/$/~/
+@Tempora/Quad5-0:Lectio9:s/Accepta .*//s
+
+[Lectio12]
+@Tempora/Quad5-0:Lectio9:s/.* Accepta /Accepta /s

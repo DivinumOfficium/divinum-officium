@@ -1,0 +1,21 @@
+@Tempora/Quad2-1
+
+[Lectio1]
+@Tempora/Quad2-1::s/In Psalmis .*//
+
+[Lectio2]
+@Tempora/Quad2-1:Lectio1:s/.* (In Psalmis)/$1/s s/$/~/
+@Tempora/Quad2-1:Lectio2:s/Dénique .*//
+
+[Lectio3]
+@Tempora/Quad2-1:Lectio2:s/.* (Dénique)/$1/ s/$/~/
+@Tempora/Quad2-1:Lectio3:s/Prænuntiávit .*//
+
+[Responsory1]
+@TemporaCist/Quad2-0
+
+[Responsory2]
+@TemporaCist/Quad2-0
+
+[Responsory3]
+@TemporaCist/Quad2-0

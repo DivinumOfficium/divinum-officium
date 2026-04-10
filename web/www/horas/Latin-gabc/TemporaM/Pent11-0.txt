@@ -1,0 +1,30 @@
+[Lectio1]
+@Tempora/Pent11-0:Lectio1:
+@Tempora/Pent11-0:Lectio2:s/!.*//:s/4 .*//s
+
+[Lectio2]
+@Tempora/Pent11-0:Lectio2:s/-7/-6/ :s/7 .*//s
+
+[Lectio3]
+@Tempora/Pent11-0:Lectio2:s/-7/-8/ s/4-/7-/ s/[^!]4 .*7 /\n7 /s
+@Tempora/Pent11-0:Lectio3:s/!.*//:s/9 .*//s
+
+[Lectio5]
+@Tempora/Pent11-0:Lectio4:s/Convertítque .*//s
+
+[Lectio6]
+@Tempora/Pent11-0:Lectio4:s/.* Convertítque /Convertítque /s s/$/~/
+@Tempora/Pent11-0:Lectio5:s/Nóverat .*//s
+
+[Lectio7]
+@Tempora/Pent11-0:Lectio5:s/.* Nóverat /Nóverat /s
+
+[Lectio9]
+@Tempora/Pent11-0:Lectio7:s/Dígitos .*//s
+
+[Lectio10]
+@Tempora/Pent11-0:Lectio7:s/.* Dígitos /Dígitos /s s/$/~/
+@Tempora/Pent11-0:Lectio8:s/Qui suspíciens .*//s
+
+[Lectio11]
+@Tempora/Pent11-0:Lectio8:s/.* Qui suspíciens /Qui suspíciens /s

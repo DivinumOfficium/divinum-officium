@@ -1,0 +1,46 @@
+[Ant Matutinum 3N]
+Miserére mei, Fili David! † Quid vis ut fáciam tibi? Dómine, ut vídeam.
+V. Exaltáre Dómine in virtúte tua.
+R. Cantábimus et psallémus virtútes tuas.
+
+[Lectio1]
+@Tempora/Quadp3-0:Lectio1:s/-6/-5/ s/ Cumque.*//s
+
+[Lectio2]
+@Tempora/Quadp3-0:Lectio1:s/-6/-8/ s/1-/5-/ s/1 .*(Cumque) /5 $1/s 
+@Tempora/Quadp3-0:Lectio2:s/!.*// s/9 .*//s
+
+[Lectio3]
+@Tempora/Quadp3-0:Lectio2:s/7-/9-/ s/7.*9/9/s
+
+[Responsory4]
+R. Dixit Dóminus ad Abram: † Sara uxor tua páriet tibi fílium 
+* Et vocábis nomen ejus Isaac.
+V. Revértens véniam ad te témpore isto, vita cómite, † et habébit fílium Sara uxor tua.
+R. Et vocábis nomen ejus Isaac.
+
+[Lectio5]
+@Tempora/Quadp3-0:Lectio4:s/Ea enim .*//s
+
+[Lectio6]
+@Tempora/Quadp3-0:Lectio4:s/.* Ea enim /Ea enim /s s/$/~/
+@Tempora/Quadp3-0:Lectio5:s/Sed sicut .*//s
+
+[Lectio7]
+@Tempora/Quadp3-0:Lectio5:s/.* Sed sicut /Sed sicut /s
+
+[Responsory8]
+R. Visitávit Dóminus Saram, sicut promíserat et implévit quæ locútus est: † concepítque et péperit fílium in senectúte sua 
+* Témpore quo prædíxerat ei Deus.
+V. Vocavítque Abraham nomen fílii sui quem génuit ei Sara, Isaac.
+R. Témpore quo prædíxerat ei Deus.
+
+[Lectio10]
+@Tempora/Quadp3-0:Lectio8:s/Cæcum .*//s
+
+[Lectio11]
+@Tempora/Quadp3-0:Lectio8:s/.* Cæcum /Cæcum /s s/$/~/
+@Tempora/Quadp3-0:Lectio9:s/Dum ígitur .*//s
+
+[Lectio12]
+@Tempora/Quadp3-0:Lectio9:s/.* Dum ígitur /Dum ígitur /s

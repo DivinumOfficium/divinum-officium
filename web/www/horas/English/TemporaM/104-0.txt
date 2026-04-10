@@ -1,7 +1,9 @@
-@Tempora/104-0
+[Lectio5]
+@Tempora/104-0:Lectio4:s/But in .*//s
 
-[Responsory8]
-@TemporaM/Pent03-0:Responsory8
+[Lectio6]
+@Tempora/104-0:Lectio4:s/.* But in /But in /s s/$/~/
+@Tempora/104-0:Lectio5:s/However, .*//s
 
-[Responsory9]
-@TemporaM/Pent03-0:Responsory9
+[Lectio7]
+@Tempora/104-0:Lectio5:s/.* However, /However, /s

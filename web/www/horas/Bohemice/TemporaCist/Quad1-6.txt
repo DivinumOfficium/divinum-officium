@@ -1,0 +1,11 @@
+@Tempora/Quad1-6
+
+[Lectio1]
+@Tempora/Quad1-6::s/Neboť jedno .*//
+
+[Lectio2]
+@Tempora/Quad1-6:Lectio1:s/.* (Neboť jedno )/$1/s s/$/~/
+@Tempora/Quad1-6:Lectio2:s/Nato Apoštol .*//
+
+[Lectio3]
+@Tempora/Quad1-6:Lectio2:s/.* (Nato Apoštol)/$1/

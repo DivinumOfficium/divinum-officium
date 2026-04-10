@@ -1,8 +1,11 @@
-[Rank]
-In Ascensione Domini;;Duplex I classis cum Octava Privilegiata III classis;;7
+[Officium]
+In Ascensione Domini
 
-[Rank1960]
-In Ascensione Domini;;Duplex I classis;;7
+[Rank]
+;;Duplex I classis cum Octava Privilegiata III classis;;7
+
+[Rank] (rubrica 196)
+;;Duplex I classis;;7
 
 [Rule]
 Psalmi Dominica
@@ -12,18 +15,13 @@ Duplex
 Doxology=Asc
 Psalm5 vespera=116
 No Commemoratio
-			
+
 [Ant Vespera]
 Viri Galilǽi, * quid aspícitis in cælum? Hic Jesus qui assúmptus est a vobis in cælum, sic véniet, allelúja.
 Cumque intueréntur * in cælum eúntem illum, dixérunt, allelúja.
 Elevátis mánibus, * benedíxit eis, et ferebátur in cælum, allelúja.
 Exaltáte Regem regum, * et hymnum dícite Deo, allelúja.
 Vidéntibus illis, * elevátus est, et nubes suscépit eum in cælo, allelúja.
-
-[Capitulum Vespera]
-!Act. 1:1-2
-v. Primum quidem sermónem feci de ómnibus, o Theóphile, quæ cœpit Jesus fácere et docére usque in diem, qua præcípiens Apóstolis per Spíritum Sanctum, quos elégit, assúmptus est.
-$Deo gratias
 
 [Hymnus Vespera]
 {:H-Salutishumanæsator:}v. Salútis humánæ Sator,
@@ -52,17 +50,51 @@ Sis lacrimárum gáudium,
 Sis dulce vitæ prǽmium.
 Amen.
 
-[Versum 1]
+[HymnusM Vespera]
+v. Jesu nostra redémptio,
+Amor et desidérium,
+Deus Creátor ómnium,
+Homo in fine témporum:
+_
+Quæ te vicit cleméntia,
+Ut ferres nostra crímina,
+Crudélem mortem pátiens,
+Ut nos a morte tólleres!
+_
+Inférni claustra pénetrans,
+Tuos captívos rédimens,
+Victor triúmpho nóbili
+Ad dextram Patris résidens.
+_
+Ipsa te cogat píetas,
+Ut mala nostra súperes
+Parcénd[o], et voti cómpotes
+Nos tuo vultu sáties.
+_
+Tu esto nostrum gáudium,
+Qui es futúrus prǽmium,
+Sit nostra in te glória,
+Per cuncta semper sǽcula.
+Amen.
+
+[Versum 1_]
 V. Ascéndit Deus in jubilatióne, allelúja.
 R. Et Dóminus in voce tubæ, allelúja.
+
+[Versum 1]
+@:Versum 1_
+(sed rubrica praedicatorum)
+@:Versum 1OP
+
+[Versum 1OP]
+V. Eleváta est, magnificéntia tua, allelúja.
+R. Super cælos, Deus, allelúja.
 
 [Ant 1]
 Pater, * manifestávi nomen tuum homínibus quos dedísti mihi: nunc autem pro eis rogo, non pro mundo, quia ad te vénio, allelúja.
 
 [Oratio]
-Concéde, quǽsumus, omnípotens Deus: ut, qui hodiérna die Unigénitum tuum,~
-Redemptórem nostrum, ad cælos ascendísse crédimus; ipsi quoque mente in~
-cæléstibus habitémus.
+Concéde, quǽsumus, omnípotens Deus: ut, qui hodiérna die Unigénitum tuum, Redemptórem nostrum, ad cælos ascendísse crédimus; ipsi quoque mente in cæléstibus habitémus.
 $Per eumdem
 
 [Invit]
@@ -110,28 +142,46 @@ Cum Patre, et almo Spíritu,
 In sempitérna sǽcula.
 Amen.
 
+[HymnusM Matutinum]
+@:Hymnus Matutinum:s/Cui mors.*ómnium:/Quo mors solúta déperit,\nDatur triúmphum grátiæ.\n_\nScandens tribúnal déxteræ\nPatris, potéstas ómnium\nColláta Jesu cǽlitus,\nQuæ non erat humánitus:/s s/Peccat caro, mundat/Culpat caro, purgat/ s/Sis ipse/Tu esto/ s/prǽmium,/prǽditum:/
+
 [Ant Matutinum]
 Eleváta est * magnificéntia tua super cælos, Deus, allelúja.;;8
 Dóminus in templo * sancto suo, Dóminus in cælo, allelúja.;;10
 A summo cælo * egréssio ejus, et occúrsus ejus usque ad summum ejus, allelúja.;;18
-V. Ascéndit Deus in jubilatióne, allelúja.
-R. Et Dóminus in voce tubæ, allelúja.
 Exaltáre, Dómine, * in virtúte tua: cantábimus et psallémus, allelúja.;;20
 Exaltábo te, * Dómine, quóniam suscepísti me, allelúja.;;29
 Ascéndit Deus * in jubilatióne, et Dóminus in voce tubæ, allelúja.;;46
-V. Ascéndens Christus in altum, allelúja.
-R. Captívam duxit captivitátem, allelúja.
 Nimis exaltátus est, * allelúja: super omnes deos, allelúja.;;96
 Dóminus in Sion, * allelúja: magnus et excélsus, allelúja.;;98
 Dóminus in cælo, * allelúja: parávit sedem suam, allelúja.;;102
+
+[Nocturn 1 Versum]
+@:Versum 1
+
+[Nocturn 2 Versum_]
+V. Ascéndens Christus in altum, allelúja.
+R. Captívam duxit captivitátem, allelúja.
+
+[Nocturn 2 Versum]
+@:Nocturn 2 Versum_
+(sed rubrica praedicatorum)
+@:Versum 1_
+
+[Nocturn 3 Versum_]
 V. Ascéndo ad Patrem meum, et Patrem vestrum, allelúja.
 R. Deum meum, et Deum vestrum, allelúja.
+
+[Nocturn 3 Versum]
+@:Nocturn 3 Versum_
+(sed rubrica praedicatorum)
+@:Nocturn 2 Versum_
 
 [Lectio1]
 Incipit liber Actuum Apostolórum
 !Act. 1:1-5
 1 Primum quidem sermónem feci de ómnibus, o Theóphile, quæ cœpit Jesus fácere, et docére,
-2 usque in diem, qua præcípiens Apóstolis per Spíritum Sanctum, quos elégit, assumptus est:
+2 usque in diem, qua præcípiens Apóstolis per Spíritum Sanctum, quos elégit, assúmptus est:
 3 quibus et prǽbuit seípsum vivum post passiónem suam in multis arguméntis, per dies quadragínta appárens eis, et loquens de regno Dei.
 4 Et convéscens, præcépit eis ab Jerosólymis ne discéderent, sed exspectárent promissiónem Patris, quam audístis (inquit) per os meum:
 5 quia Joánnes quidem baptizávit aqua, vos autem baptizabímini Spíritu Sancto non post multos hos dies.
@@ -177,7 +227,8 @@ Sermo sancti Leónis Papæ
 Post beátam et gloriósam resurrectiónem Dómini nostri Jesu Christi, qua verum Dei templum, Judáica impietáte resolútum, divína in tríduo poténtia suscitávit, quadragenárius hódie, dilectíssimi, sanctórum diérum explétus est númerus, sacratíssima ordinatióne dispósitus, et ad utilitátem nostræ eruditiónis impénsus: ut, dum a Dómino in hoc spátio mora præséntiæ corporális exténditur, fides resurrectiónis documéntis necessáriis munirétur. Mors enim Christi multum discipulórum corda turbáverat: et de supplício crucis, de emissióne spíritus, de exanimáti córporis sepultúra gravátis mœstitúdine méntibus, quidam diffidéntiæ torpor obrépserat.
 
 [Responsory4]
-R. Tempus est, ut revértar ad eum, qui me misit, dicit Dóminus: nolíte contristári, nec turbétur cor vestrum: * Rogo pro vobis Patrem, ut ipse vos custódiat, allelúja, allelúja.
+R. Tempus est, ut revértar ad eum, qui me misit, dicit Dóminus: nolíte contristári, nec turbétur cor vestrum:
+* Rogo pro vobis Patrem, ut ipse vos custódiat, allelúja, allelúja.
 V. Nisi ego abíero, Paráclitus non véniet: cum assúmptus fúero, mittam vobis eum.
 R. Rogo pro vobis Patrem, ut ipse vos custódiat, allelúja, allelúja.
 
@@ -208,9 +259,7 @@ In illo témpore: Recumbéntibus úndecim discípulis, appáruit illis Jesus: et
 _
 Homilía sancti Gregórii Papæ
 !Homilia 29 in Evangelia
-Quod resurrectiónem Domínicam discípuli tarde credidérunt, non tam illórum infírmitas, quam nostra, ut ita dicam, futúra fírmitas fuit. Ipsa namque resurréctio illis dubitántibus per multa arguménta monstráta est: quæ dum nos legéntes agnóscimus, quid áliud quam de illórum dubitatióne solidámur? Minus enim mihi María Magdaléne prǽstitit, quæ cítius crédidit, quam Thomas, qui diu dubitávit. Ille étenim dubitándo, vúlnerum cicatríces tétigit, et de nostro péctore dubitatiónis vulnus amputávit.~
-(rubrica 1570)
-@:AdInsinuandum
+Quod resurrectiónem Domínicam discípuli tarde credidérunt, non tam illórum infírmitas, quam nostra, ut ita dicam, futúra fírmitas fuit. Ipsa namque resurréctio illis dubitántibus per multa arguménta monstráta est: quæ dum nos legéntes agnóscimus, quid áliud quam de illórum dubitatióne solidámur? Minus enim mihi María Magdaléne prǽstitit, quæ cítius crédidit, quam Thomas, qui diu dubitávit. Ille étenim dubitándo, vúlnerum cicatríces tétigit, et de nostro péctore dubitatiónis vulnus amputávit.
 
 [Responsory7]
 R. Ego rogábo Patrem, et álium Paráclitum dabit vobis,
@@ -218,18 +267,8 @@ R. Ego rogábo Patrem, et álium Paráclitum dabit vobis,
 V. Si enim non abíero, Paráclitus non véniet ad vos: si autem abíero, mittam eum ad vos.
 R. Ut máneat vobíscum in ætérnum, Spíritum veritátis, allelúja.
 
-[AdInsinuandum]
-Ad insinuándam quoque veritátem Domínicæ resurrectiónis, notándum nobis est quid Lucas réferat, dicens: Convéscens, præcépit eis ab Jerosólymis ne discéderent. Et post pauca: Vidéntibus illis, elevátus est, et nubes suscépit eum ab óculis eórum.~
-
 [Lectio8]
-@:AdInsinuandum
-(rubrica 1570 omittitur)
-Notáte verba, signáte mystéria. Convéscens elevátus est. Comédit, et ascéndit: ut vidélicet per efféctum comestiónis, véritas patésceret carnis. Marcus vero, priúsquam cælum Dóminus ascéndat, eum de cordis atque infidelitátis durítia increpásse discípulos mémorat. Qua in re quid considerándum est, nisi quod idcírco Dóminus tunc discípulos increpávit, cum eos corporáliter relíquit, ut verba, quæ recédens díceret, in corde audiéntium árctius impréssa remanérent? ~
-(rubrica 1570)
-@:Increpata
-
-[Increpata]
-Increpáta ígitur eórum durítia, quid admonéndo dicat, audiámus: Eúntes in mundum univérsum, prædicáte Evangélium omni creatúræ. Numquid, fratres mei, sanctum Evangélium vel insensátis rebus, vel brutis animálibus fúerat prædicándum, ut de eo discípulis dicátur: Prædicáte omni creatúræ? Sed omnis creatúræ nómine signátur homo.
+Ad insinuándam quoque veritátem Domínicæ resurrectiónis, notándum nobis est quid Lucas réferat, dicens: Convéscens, præcépit eis ab Jerosólymis ne discéderent. Et post pauca: Vidéntibus illis, elevátus est, et nubes suscépit eum ab óculis eórum. Notáte verba, signáte mystéria. Convéscens elevátus est. Comédit, et ascéndit: ut vidélicet per efféctum comestiónis, véritas patésceret carnis. Marcus vero, priúsquam cælum Dóminus ascéndat, eum de cordis atque infidelitátis durítia increpásse discípulos mémorat. Qua in re quid considerándum est, nisi quod idcírco Dóminus tunc discípulos increpávit, cum eos corporáliter relíquit, ut verba, quæ recédens díceret, in corde audiéntium árctius impréssa remanérent?
 
 [Responsory8]
 R. Ponis nubem ascénsum tuum, Dómine:
@@ -240,21 +279,22 @@ R. Qui ámbulas super pennas ventórum, allelúja.
 R. Qui ámbulas super pennas ventórum, allelúja.
 
 [Lectio9]
-@:Increpata
-(rubrica 1570 omittitur)
-Omnis autem creatúræ áliquid habet homo. Habet namque commúne esse cum lapídibus, vívere cum arbóribus, sentíre cum animálibus, intellégere cum Angelis. Si ergo commúne habet áliquid cum omni creatúra homo, juxta áliquid omnis creatúra est homo. Omni ergo creatúræ prædicátur Evangélium, cum soli hómini prædicátur.
-(sed rubrica 1570 dicitur)
-prædicatur: quia ille uidelicet docetur propter quem in terra cuncta creata sunt, et a quo omnia per quandam similitudinem aliena non sunt. Potest étiam omnis creaturæ nomine omnis natio Gentium designari. Ante etenim dictum fuerat: In viam Gentium ne abieritis: nunc autem dicitur, Prædicate omni creaturæ. Ut scilicet prius a Judæa apostolorum repulsa prædicatio, tunc nobis in adjutorium fieret, cum hanc illa ad damnationis suæ testimonium superba repulisset. Sed cum discipulos ad prædicandum ueritas mittit, quid aliud in mundo facit, nisi granum seminis spargit? et pauca grana mittit in semine, ut multarum messium fruges recipiat ex nostra fide? neque etenim in universo mundo tanta fidelium messis exurgeret, si de manu domini superationalem terram illa electa grana prædicantium non uenissent.
+Increpáta ígitur eórum durítia, quid admonéndo dicat, audiámus: Eúntes in mundum univérsum, prædicáte Evangélium omni creatúræ. Numquid, fratres mei, sanctum Evangélium vel insensátis rebus, vel brutis animálibus fúerat prædicándum, ut de eo discípulis dicátur: Prædicáte omni creatúræ? Sed omnis creatúræ nómine signátur homo. Omnis autem creatúræ áliquid habet homo. Habet namque commúne esse cum lapídibus, vívere cum arbóribus, sentíre cum animálibus, intellégere cum Angelis. Si ergo commúne habet áliquid cum omni creatúra homo, juxta áliquid omnis creatúra est homo. Omni ergo creatúræ prædicátur Evangélium, cum soli hómini prædicátur.
 &teDeum
 
 [Ant Laudes]
 @:Ant Vespera
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Act. 1:1-2
+v. Primum quidem sermónem feci de ómnibus, o Theóphile, quæ cœpit Jesus fácere et docére usque in diem, qua præcípiens Apóstolis per Spíritum Sanctum, quos elégit, assúmptus est.
+$Deo gratias
 
 [Hymnus Laudes]
 @:Hymnus Vespera
+
+[HymnusM Laudes]
+@:HymnusM Vespera
 
 [Versum 2]
 V. Dóminus in cælo, allelúja.
@@ -268,81 +308,80 @@ Ant. Ascéndo ad Patrem meum, * et Patrem vestrum: Deum meum, et Deum vestrum, a
 _
 V. Dóminus in cælo, allelúja.
 R. Parávit sedem suam, allelúja.
+(sed rubrica cisterciensis loco hæc versus dicitur)
+V. Ascéndit Deus in jubilatióne, allelúia.
+R. Et Dóminus in voce tubæ, allelúia.
 _
 $Oremus
-Concéde, quǽsumus, omnípotens Deus: ut, qui hodiérna die Unigénitum tuum,~
-Redemptórem nostrum, ad cælos ascendísse crédimus; ipsi quoque mente in~
-cæléstibus habitémus.
+Concéde, quǽsumus, omnípotens Deus: ut, qui hodiérna die Unigénitum tuum, Redemptórem nostrum, ad cælos ascendísse crédimus; ipsi quoque mente in cæléstibus habitémus.
 $Per eumdem
 
 [Lectio Prima]
 !Act. 1:11
 v. Viri Galilǽi, quid statis aspiciéntes in cælum? Hic Jesus qui assúmptus est a vobis in cælum, sic véniet, quemádmodum vidístis eum eúntem in cælum.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Ascéndit Deus in jubilatióne, * Allelúja, allelúja.
 R. Ascéndit Deus in jubilatióne, * Allelúja, allelúja.
 V. Et Dóminus in voce tubæ.
 R. Allelúja, allelúja.
 &Gloria
 R. Ascéndit Deus in jubilatióne, * Allelúja, allelúja.
-_
-V. Ascéndens Christus in altum, allelúja.
-R. Captívam duxit captivitátem, allelúja.
+
+[Versum Tertia]
+@:Nocturn 2 Versum
 
 [Capitulum Sexta]
 !Act. 1:4-5
 v. Et convéscens, præcépit eis, ab Jerosólymis ne discéderent, sed exspectárent promissiónem Patris, quam audístis (inquit) per os meum: quia Joánnes quidem baptizávit aqua, vos autem baptizabímini Spíritu Sancto non post multos hos dies.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Ascéndens Christus in altum, * Allelúja, allelúja.
 R. Ascéndens Christus in altum, * Allelúja, allelúja.
 V. Captívam duxit captivitátem.  
 R. Allelúja, allelúja.
 &Gloria
 R. Ascéndens Christus in altum, * Allelúja, allelúja.
-_
-V. Ascéndo ad Patrem meum, et Patrem vestrum, allelúja.
-R. Deum meum, et Deum vestrum, allelúja.
+
+[Versum Sexta]
+@:Nocturn 3 Versum
 
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Ascéndo ad Patrem meum, et Patrem vestrum, * Allelúja, allelúja.
 R. Ascéndo ad Patrem meum, et Patrem vestrum, * Allelúja, allelúja.
 V. Deum meum, et Deum vestrum.
 R. Allelúja, allelúja.
 &Gloria
 R. Ascéndo ad Patrem meum, et Patrem vestrum, * Allelúja, allelúja.
-_
-V. Dóminus in cælo, allelúja.
-R. Parávit sedem suam, allelúja.
+
+[Versum Nona]
+@:Versum 2
 
 [Versum 3]
 @:Versum 1
-(sed rubrica Tridentina)
+(sed rubrica tridentina)
 @:Versum 2
 
 [Ant 3]
 O Rex glóriæ, * Dómine virtútum, qui triumphátor hódie super omnes cælos ascendísti, ne derelínquas nos órphanos; sed mitte promíssum Patris in nos, Spíritum veritátis, allelúja.
 
 [Octava 3]
-Ant. O Rex glóriæ, * Dómine virtútum, qui triumphator hódie super omnes cælos ascendísti, ne derelínquas nos órphanos; sed mitte promissum Patris in nos, Spíritum veritátis, allelúja.
+Ant. O Rex glóriæ, * Dómine virtútum, qui triumphátor hódie super omnes cælos ascendísti, ne derelínquas nos órphanos; sed mitte promíssum Patris in nos, Spíritum veritátis, allelúja.
 _
 V. Ascéndit Deus in jubilatióne, allelúja.
 R. Et Dóminus in voce tubæ, allelúja.
-(sed rubrica Tridentina loco hæc versus dicitur)
+(sed rubrica tridentina loco hæc versus dicitur)
 V. Dóminus in cælo, allelúja.
 R. Parávit sedem suam, allelúja.
+(sed rubrica cisterciensis loco hæc versus dicitur)
+V. Ascéndens Christus in altum, allelúia.
+R. Captívam duxit captivitátem, allelúia.
 _
 $Oremus
-Concéde, quǽsumus, omnípotens Deus: ut, qui hodiérna die Unigénitum tuum,~
-Redemptórem nostrum, ad cælos ascendísse crédimus; ipsi quoque mente in~
-cæléstibus habitémus.
+Concéde, quǽsumus, omnípotens Deus: ut, qui hodiérna die Unigénitum tuum, Redemptórem nostrum, ad cælos ascendísse crédimus; ipsi quoque mente in cæléstibus habitémus.
 $Per eumdem

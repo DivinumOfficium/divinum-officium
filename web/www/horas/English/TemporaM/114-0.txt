@@ -1,7 +1,5 @@
-@Tempora/114-0
+[Lectio6]
+@Tempora/114-0:Lectio5:s/If we .*//s
 
-[Responsory8]
-@TemporaM/Pent03-0:Responsory8
-
-[Responsory9]
-@TemporaM/Pent03-0:Responsory9
+[Lectio7]
+@Tempora/114-0:Lectio5:s/.* If we /If we /s

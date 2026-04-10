@@ -1,0 +1,26 @@
+@Tempora/Pasc5-5
+
+[Rule]
+ex TemporaCist/Pasc5-4;
+Doxology=Asc
+Psalmi Feria
+
+[Invit]
+@CommuneCist/C2p:Invit 3L
+
+[Ant Matutinum]
+@TemporaCist/Pasc5-4::1:s/;;.*//
+;;
+;;
+;;
+;;
+;;
+@TemporaCist/Pasc0-0:AntC Matutinum
+;;
+;;
+;;
+;;
+;;
+
+[Benedictio]
+Sancta Christi Ascénsio, † sit nobis salus et protéctio. †

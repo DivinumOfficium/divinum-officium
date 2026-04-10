@@ -1,0 +1,29 @@
+@Tempora/114-5
+
+[In Finem Lectio]
+@TemporaOP/Quad5-0
+
+[Lectio1]
+@Tempora/114-5::1-5 s/-4/-3/ s/; .*/./
+@:In Finem Lectio
+
+[Responsory1]
+@TemporaOP/111-2
+
+[Lectio2]
+@Tempora/114-5::1 s/5-7/3-5/
+@Tempora/114-5:Lectio1:5-6 s/.*; (.)/3 \u$1/
+@Tempora/114-5::2
+@:In Finem Lectio
+
+[Responsory2]
+@Tempora/111-0:Responsory5
+
+[Lectio3]
+@Tempora/114-5::1 s/8-11/6-8/
+@Tempora/114-5:Lectio2:3-4
+@Tempora/114-5::2
+@:In Finem Lectio
+
+[Responsory3]
+@Tempora/111-0:Responsory6

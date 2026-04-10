@@ -1,0 +1,99 @@
+[Ant 1]
+O jak * slavné je království, v němž se spolu s Kristem radují Neviňátka, oděna v bílé štóly následují Beránka, kamkoliv jde.
+
+[Invit]
+Podivuhodnému Bohu v jeho Svatých, * Pojďte a klanějme se.
+
+[Lectio1]
+@Sancti/12-28:Lectio1
+
+[Lectio2]
+@Sancti/12-28:Lectio2:s/-20/-19/ s/20 .*//s
+
+[Lectio3]
+@Sancti/12-28:Lectio2:s/-20/-21/ s/18-/20-/ s/18 .*20 /20 /s
+@Sancti/12-28:Lectio3:s/!.*// s/22 .*//s
+
+[Lectio4]
+@Sancti/12-28:Lectio3:s/21-/22-/ s/21 .*22 /22 /s
+
+[Responsory1]
+R. Pod oltářem Božím jsem uslyšel hlas zabitých, jež pravili: Proč nemstíš naši krev? A obdrželi božskou odpověď: 
+* Ještě maličký čas vydržte, dokud se nenaplní počet vyšich bratrů.
+V. A každému z nich bylo dáno bílé roucho, a bylo řečeno:
+R. Ještě maličký čas vydržte, dokud se nenaplní počet vyšich bratrů.
+
+[Responsory4]
+@Sancti/12-28:Responsory5:s/každý/celý/g
+
+[Lectio5]
+@Sancti/12-28:Lectio4:s/Neboť, .*//s
+
+[Lectio6]
+@Sancti/12-28:Lectio4:s/.* Neboť, /Neboť, /s s/$/~/
+@Sancti/12-28:Lectio5:s/Právem .*//s
+
+[Lectio7]
+@Sancti/12-28:Lectio5:s/.* Právem /Právem /s
+
+[Responsory5]
+R. To jsou ti, kteří neposkvrnili svá roucha. Budou se mnou kráčet v bělostném oděvu, 
+* Neboť jsou hodni.
+V. A nevymažu jejich jména z knihy života.
+R. Neboť jsou hodni.
+
+[Responsory6]
+R. To jsou ti, kteří nedošli poskvrnění se ženami; jsou totiž panicové, 
+* A následují Beránka, kamkoliv půjde.
+@Sancti/12-28:Responsory6:1:s/R\. /V. / s/Isti/Hi/
+R. Ale následují Beránka, kamkoliv půjde.
+
+[Responsory8]
+R. Korunoval je Hospodin korunou spravedlnosti,
+* Neboť trpěli pro Hospodina, a následovali Beránka.
+V. ~
+@Sancti/12-28:Ant Vespera 3C:3:s/\* //
+R. Neboť trpěli pro Hospodina, a následovali Beránka.
+
+[Ant Matutinum 3N]
+Sto čtyřicet * čtyři tisíc těch, kteří byli vykoupeni ze země, to jsou ti, jež se ženami nedošli poskvrnění. Zůstali totiž panici, a proto vládnou spolu s Bohem, a Beránkem bez poskvrny.
+
+[Lectio9]
+@Sancti/12-28:Lectio7
+
+[Lectio10]
+@Sancti/12-28:Lectio8
+
+[Lectio11]
+@Sancti/12-28:Lectio9:s/Odpovíme .*//s
+
+[Lectio12]
+@Sancti/12-28:Lectio9:s/.* Odpovíme /Odpovíme /s
+
+[Responsory9]
+@SanctiM/12-28:Responsory4:1-2:s/Uviděl/Hle, uviděl/
+@Sancti/12-28:Responsory7:1:s/R\. /V. /
+@SanctiM/12-28:Responsory4:4
+
+[Responsory10]
+R. Pod trůnem Božím Svatí volali:
+* Pomsti naši krev, náš Bože.
+@Sancti/12-28:Responsory8:1:s/R\. /V. / s/interfectórum/occisórum/
+R. Pomsti naši krev, náš Bože.
+
+[Responsory11]
+R. Budou se mnou kráčet v bělostném oděvu, neboť jsou hodni;
+* A nevymažu jejich jména z knihy života.
+@Sancti/12-28:Responsory6:3
+R. A nevymažu jejich jména z knihy života.
+
+[Responsory12]
+R. Sto čtyřicet čtyři tisíc těch, kteří byli vykoupeni ze země, to jsou ti, jež se ženami nedošli poskvrnění. Zůstali totiž panici;
+* A proto vládnou spolu s Bohem, a Beránek Boží je s nimi.
+@Sancti/12-28:Responsory7:3
+R. A proto vládnou spolu s Bohem, a Beránek Boží je s nimi.
+
+[Ant Vespera 3]
+@Sancti/12-25::s/129/131/
+(sed rubrica cisterciensis)
+@Sancti/12-28:Ant Vespera 3C

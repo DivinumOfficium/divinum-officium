@@ -1,0 +1,17 @@
+[Lectio3]
+@Tempora/Pasc2-3:Lectio3:s/-49/-45a/ s/ Egréssus.*//s
+
+[Lectio4]
+@Tempora/Pasc2-3:Lectio3::s/44-/45b-/ s/44.*Egréssus/45 Egréssus/s
+
+[Lectio7]
+@Tempora/Pasc2-3:Lectio6:s/Mem.*//s
+
+[Lectio8]
+@Tempora/Pasc2-3:Lectio6:s/.* Mem/Mem/s
+
+[Lectio11]
+@Tempora/Pasc2-3:Lectio9:s/Neque.*//s
+
+[Lectio12]
+@Tempora/Pasc2-3:Lectio9:s/.*Neque/Neque/s

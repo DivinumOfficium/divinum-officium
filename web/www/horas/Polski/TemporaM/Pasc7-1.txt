@@ -1,0 +1,9 @@
+[Lectio9]
+@Tempora/Pasc7-1:Lectio1:s/ Jeszcze.*//s
+
+[Lectio10]
+@Tempora/Pasc7-1:Lectio1:s/.*(Jeszcze)/$1/s s/$/~/
+@Tempora/Pasc7-1:Lectio2:s/ A wyrok.*//s
+
+[Lectio11]
+@Tempora/Pasc7-1:Lectio2:s/.*(A wyrok)/$1/s s/$/~/

@@ -16,22 +16,21 @@ my $help = 0;
 
 my $debug = defined $ENV{DEBUG};
 
-sub saydo($)
-{
-    my $command = shift;
-    print STDERR "DEBUG: saydo('$command')" if $debug;
+sub saydo($) {
+  my $command = shift;
+  print STDERR "DEBUG: saydo('$command')" if $debug;
 
-    print STDERR $command if $verbose;
+  print STDERR $command if $verbose;
 
-    system $command unless $trial;
-    die "fatal: failed $command.\n" unless $? == 0;
+  system $command unless $trial;
+  die "fatal: failed $command.\n" unless $? == 0;
 }
 
-sub main()
-{
-    # Process command line
+sub main() {
 
-    my $USAGE = <<END;
+  # Process command line
+
+  my $USAGE = <<END;
 Usage: release_web [options] tag
 Release divinumofficium project from svn to live web site.
 Parameters:
@@ -45,82 +44,76 @@ Options:
     --help          this
 END
 
-    my $result = GetOptions(
-        'verbose!' => \$verbose,
-        'trial!' => \$trial,
-        'log=s' => \$log,
-        'source=s' => \$source,
-        'target=s' => \$target,
-        'help' => \$help,
-        'tag=s' => \$tag,
-        'debug' => \$debug,
-    ) or eval 
-    {
-        print STDERR $USAGE;
-        exit -1;
+  my $result = GetOptions(
+    'verbose!' => \$verbose,
+    'trial!' => \$trial,
+    'log=s' => \$log,
+    'source=s' => \$source,
+    'target=s' => \$target,
+    'help' => \$help,
+    'tag=s' => \$tag,
+    'debug' => \$debug,
+    )
+    or eval {
+      print STDERR $USAGE;
+      exit -1;
     };
 
-    if ( $help )
-    {
-        print STDOUT $USAGE;
-        exit 0;
-    }
+  if ($help) {
+    print STDOUT $USAGE;
+    exit 0;
+  }
 
-    unless ( @ARGV == 1 )
-    {
-        print STDERR "error: specify exactly one tag.";
-        print STDERR $USAGE;
-        exit -2;
-    }
+  unless (@ARGV == 1) {
+    print STDERR "error: specify exactly one tag.";
+    print STDERR $USAGE;
+    exit -2;
+  }
 
-    print "This is the release installer for the Divinum Officium Project.";
-    printf 'Options chosen: %sverbose, %strial'."\n\n",
-        $verbose ? "" : "no",
-        $trial ? "" : "no";
+  print "This is the release installer for the Divinum Officium Project.";
+  printf 'Options chosen: %sverbose, %strial' . "\n\n", $verbose ? "" : "no", $trial ? "" : "no";
 
-    die "error: cannot find directory $target\n" unless -d $target;
-    print "info: installing to : $target";
+  die "error: cannot find directory $target\n" unless -d $target;
+  print "info: installing to : $target";
 
-    $tag = $ARGV[0];
+  $tag = $ARGV[0];
 
-    # Read log file
-    my $log_data;
-    if ( -f $log )
-    {
-        open LOG, "<$log" or die "error: cannot read log file $log\n";
-        { local $/; $log_data = <LOG> } # slurp
-        close LOG;
-    }
-    else
-    {
-        $log_data = '';
-    }
-    open LOG, ">>$log" or die "error: cannot write log file $log\n";
+  # Read log file
+  my $log_data;
 
-    # Check sanity
-    my @previous = ($log_data =~ /INSTALLED (.*)/g);
-    die "error: cannot determine currently installed version\n" unless @previous;
+  if (-f $log) {
+    open LOG, "<$log" or die "error: cannot read log file $log\n";
+    { local $/; $log_data = <LOG> }    # slurp
+    close LOG;
+  } else {
+    $log_data = '';
+  }
+  open LOG, ">>$log" or die "error: cannot write log file $log\n";
 
-    print "info: most recently installed version is $previous[-1]";
+  # Check sanity
+  my @previous = ($log_data =~ /INSTALLED (.*)/g);
+  die "error: cannot determine currently installed version\n" unless @previous;
 
-    # Get tags
-    print "info: discovering current tags...";
-    my @tags = `svn ls $source/$tag`;
-    die "error: cannot access $source/$tag\n" unless $? == 0 && @tags;
+  print "info: most recently installed version is $previous[-1]";
 
-    print "Found @tags";
+  # Get tags
+  print "info: discovering current tags...";
+  my @tags = `svn ls $source/$tag`;
+  die "error: cannot access $source/$tag\n" unless $? == 0 && @tags;
 
-    die;
+  print "Found @tags";
 
-    my @urls;
-    foreach my $url ( @urls )
-    {
-        next unless $url =~ /\/$tag\/(.*)$/;
-        my $path = $1;
-        saydo "svn export $url $target/$path";
-    }
+  die;
 
-    print LOG "INSTALLED $source/$tag";
+  my @urls;
+
+  foreach my $url (@urls) {
+    next unless $url =~ /\/$tag\/(.*)$/;
+    my $path = $1;
+    saydo "svn export $url $target/$path";
+  }
+
+  print LOG "INSTALLED $source/$tag";
 }
 
 main();

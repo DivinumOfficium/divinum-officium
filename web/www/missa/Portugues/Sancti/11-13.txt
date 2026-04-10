@@ -1,39 +1,32 @@
-[Rank]
-S. Didaci Confessoris;;Semiduplex;;2;;vide C5b
-
-[Rule]
-vide C5b;
-Gloria
+[Officium]
+S. Diogo, Confessor
 
 [Comment]
 # 13 XI – S. Diogo, Confessor
 ! Comemoração
 ! Paramentos brancos
 
+[Name]
+Diogo
+
 [Introitus]
-@Commune/C5b:Introitus
+@Commune/C5-1:Introitus
 
 [Oratio]
 Ó Deus omnipotente e sempiterno, que com admirável providência escolheis o que há de mais fraco no mundo para confundir os fortes, concedei propício à nossa humildade que, pelas piedosas preces do B. Diogo, vosso Confessor, mereçamos ser elevados à glória eterna nos céus.
 $Per Dominum
 
 [Lectio]
-@Commune/C5b:Lectio
+@Commune/C5-1:Lectio
 
 [Graduale]
-@Commune/C5b:Graduale
+@Commune/C5-1:Graduale
 
 [Evangelium]
-@Commune/C5b:Evangelium
+@Commune/C5-1:Evangelium
 
 [Offertorium]
-@Commune/C5b:Offertorium
-
-[Secreta]
-@Commune/C5b:Secreta
+@Commune/C5-1:Offertorium
 
 [Communio]
-@Commune/C5b:Communio
-
-[Postcommunio]
-@Commune/C5b:Postcommunio
+@Commune/C5-1:Communio

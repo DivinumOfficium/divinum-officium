@@ -1,0 +1,25 @@
+@Tempora/Quad3-5
+
+[Lectio1]
+@Tempora/Quad3-5::s/Ipse .*//
+
+[Lectio2]
+@Tempora/Quad3-5:Lectio2:s/Infírmum .*//
+
+[Lectio3]
+@Tempora/Quad3-5:Lectio2:s/.* (?=Infírmum )//
+
+[Responsory1]
+@TemporaCist/Quad3-0:Responsory1
+
+[Responsory2]
+@TemporaCist/Quad3-0:Responsory2
+
+[Responsory3]
+@TemporaCist/Quad3-0:Responsory3
+
+[Ant 2]
+Qui bíberit aquam, * quam ego do, dicit Dóminus Samaritánæ, fiet in eo fons aquæ saliéntis in vitam ætérnam.
+
+[Ant 3]
+@Tempora/Quad3-5:Ant 2

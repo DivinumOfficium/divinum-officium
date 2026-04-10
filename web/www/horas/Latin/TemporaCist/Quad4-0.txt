@@ -1,0 +1,110 @@
+@Tempora/Quad4-0
+
+[Rule]
+12 lectiones
+
+[Invit]
+Pópulus Dómini, et oves páscuæ ejus, * Veníte, adorémus eum.
+
+[Ant Matutinum 3N]
+De quinque pánibus * et duóbus píscibus satiávit Dóminus quinque míllia hóminum.;;269;270;271
+
+[Lectio1]
+@Tempora/Quad4-0:Lectio1:1-5:s/-6/-3/
+
+[Lectio2]
+@Tempora/Quad4-0:Lectio1:2-8:s/1-/4-/ s/1 .*4/4/s
+
+[Lectio3]
+@Tempora/Quad4-0:Lectio2:1-3:s/-10/-8/
+
+[Lectio4]
+@Tempora/Quad4-0:Lectio2:s/7-10/9-12/ s/7 .*9/9/s
+@Tempora/Quad4-0:Lectio3:2-3
+
+[Responsory1]
+R. Locútus est Dóminus ad Móysen, dicens: Descénde in Ægýptum, et dic Pharaóni ut dimíttat pópulum meum:
+* Indurátum est cor Pharaónis: non vult dimíttere pópulum meum, nisi in manu forti.
+V. Videns vidi afflictiónem pópuli mei in Ægypto, et gémitum eórum audívi, et descéndi liberáre eos.
+R. Indurátum est cor Pharaónis: non vult dimíttere pópulum meum, nisi in manu forti.
+
+[Responsory3]
+@Tempora/Quad4-0:Responsory3:1-2
+V. Currus Pharaónis et exércitum ejus projécit in mare.
+@Tempora/Quad4-0:Responsory3:4
+
+[Responsory4]
+R. In mari viæ tuæ, et sémitæ tuæ in aquis multis: deduxísti sicut oves pópulum tuum
+* In manu Móysi et Aaron.
+@Tempora/Quad4-0:Responsory4:3
+R. In manu Móysi et Aaron.
+
+[Lectio5]
+@Tempora/Quad4-0:Lectio4:s/Quadragínta .*//s
+
+[Lectio6]
+@Tempora/Quad4-0:Lectio4:s/.* Quadragínta /Quadragínta /s s/$/~/
+@Tempora/Quad4-0:Lectio5:s/Ex .*//s
+
+[Lectio7]
+@Tempora/Quad4-0:Lectio5:s/.* Ex/Ex/s s/Quod .*//
+
+[Lectio8]
+@Tempora/Quad4-0:Lectio6:s/.* (?=Jejúnium Elíam )//
+
+[Responsory5]
+@Tempora/Quad4-0:Responsory5:1-2
+V. Clamavérunt fílii Israël in angústia sua ad te, Dómine, et misísti eis Salvatórem.
+@Tempora/Quad4-0:Responsory5:4
+
+[Responsory6]
+R. Ecce mitto Angelum meum, qui præcédat te, et custódiat semper: obsérva et audi vocem meam, et inimícus ero inimícis tuis, et affligéntes te afflígam:
+* Et præcédet te Angelus meus.
+@Tempora/Quad4-0:Responsory8:3
+R. Et præcédet te Angelus meus.
+
+[Responsory7]
+@Tempora/Quad4-0:Responsory6
+
+[Responsory8]
+@Tempora/Quad4-0:Responsory7:1-2
+V. Descendit Móyses de monte, portans duas tábulas lapídeas in mánibus suis scriptas utrásque dígito Dei.
+@Tempora/Quad4-0:Responsory7:4
+
+[Lectio9]
+@Tempora/Quad4-0:Lectio7
+
+[Lectio10]
+@Tempora/Quad4-0:Lectio8:s/Fecit .*//s
+
+[Lectio11]
+@Tempora/Quad4-0:Lectio8:s/.* Fecit /Fecit /s
+
+[Lectio12]
+@Tempora/Quad4-0:Lectio9:s/Nec .*//
+
+[Responsory9]
+@Tempora/Quad4-1:Responsory2
+
+[Responsory10]
+@Tempora/Quad4-0:Responsory9
+
+[Responsory11]
+R. Vos, qui transitúri estis Jordánem, ædificáte altáre Dómino de lapídibus, quos ferrum non tétigit:
+* Et offérte super illud holocáusta, et hóstias pacíficas Deo vestro.
+@Tempora/Quad4-1:Responsory1:3
+R. Et offérte super illud holocáusta, et hóstias pacíficas Deo vestro.
+
+[Responsory12]
+@Tempora/Quad4-2:Responsory2:1-2
+V. Pópule meus, quid feci tibi, aut quid moléstus fui? Respónde mihi: quóniam ego edúxi te de terra Ægypti:
+@Tempora/Quad4-2:Responsory2:4
+
+[Ant Prima]
+@Tempora/Quad4-0:Ant Sexta
+
+[Ant Sexta]
+@Psalterium/Psalmi/Psalmi minor:Quad:4:s/4 = //
+
+[Ant Nona]
+@Psalterium/Psalmi/Psalmi minor:Quad:5:s/5 = //

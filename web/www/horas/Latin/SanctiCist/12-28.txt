@@ -1,0 +1,114 @@
+@Sancti/12-28
+
+[Rule]
+12 lectiones
+
+[Ant 1] 
+O quam * gloriósum est regnum, in quo cum Christo gaudent Innocéntes, amícti stolis albis sequúntur Agnum quocúmque íerit.
+
+[Invit]
+Mirábilem Deum in Sanctis suis, * Veníte adorémus.
+
+[Lectio1]
+@Sancti/12-28:Lectio1
+
+[Lectio2]
+@Sancti/12-28:Lectio2:s/-20/-19/ s/20 .*//s
+
+[Lectio3]
+@Sancti/12-28:Lectio2:s/-20/-21/ s/18-/20-/ s/18 .*20 /20 /s
+@Sancti/12-28:Lectio3:s/!.*// s/22 .*//s
+
+[Lectio4]
+@Sancti/12-28:Lectio3:s/21-/22-/ s/21 .*22 /22 /s
+
+[Responsory1]
+R. Sub altáre Dei audívi voces occisórum dicéntium: Quare non deféndis sánguinem nostrum? Et accepérunt divínum respónsum: 
+* Adhuc sustinéte módicum tempus, donec impleátur númerus fratrum vestrórum.
+V. Et datæ sunt illis síngulæ stolæ albæ, et dictum est eis:
+R. Adhuc sustinéte módicum tempus, donec impleátur númerus fratrum vestrórum.
+
+[Responsory2]
+@Sancti/12-28:Responsory4
+
+[Responsory4]
+@Sancti/12-28:Responsory5:s/cotídie/tota die/g
+
+[Lectio5]
+@Sancti/12-28:Lectio4:s/Nam, .*//s
+
+[Lectio6]
+@Sancti/12-28:Lectio4:s/.* Nam, /Nam, /s s/$/~/
+@Sancti/12-28:Lectio5:s/Digne .*//s
+
+[Lectio7]
+@Sancti/12-28:Lectio5:s/.* Digne /Digne /s
+
+[Lectio8]
+@Sancti/12-28:Lectio6
+
+[Responsory5]
+R. Isti sunt, qui non inquinavérunt vestiménta sua: Ambulábunt mecum in albis,
+* Quia digni sunt.
+V. Et non delébo nómina eórum de libro vitæ:
+R. Quia digni sunt.
+
+[Responsory6]
+R. Hi sunt, qui cum muliéribus non sunt coinquináti: Vírgines enim sunt, 
+* Et sequúntur Agnum quocúmque íerit.
+@Sancti/12-28:Responsory6:1:s/R\. /V. / s/Isti/Hi/
+R. Et sequúntur Agnum quocúmque íerit.
+
+[Responsory7]
+@Sancti/12-28:Responsory7:1-2
+@SanctiM/12-28:Responsory12:1:s/R\. /V. / s/$/~/
+@SanctiM/12-28:Responsory12:2:s/\* //
+@Sancti/12-28:Responsory7:4
+
+[Responsory8]
+R. Coronávit eos Dóminus coróna justítiæ,
+* Quia passi sunt pro Dómino, et sequúntur Agnum.
+V. ~
+@Sancti/12-28:Ant Vespera 3C:3:s/\* //
+R. Quia passi sunt pro Dómino, et sequúntur Agnum.
+
+[Ant Matutinum 3N]
+Centum quadragínta * quátuor míllia, qui empti sunt de terra, hi sunt, qui cum muliéribus non sunt coinquináti, Vírgines enim sunt, ídeo regnant cum Deo, et Agno sine mácula.
+
+[Lectio9]
+@Sancti/12-28:Lectio7
+
+[Lectio10]
+@Sancti/12-28:Lectio8
+
+[Lectio11]
+@Sancti/12-28:Lectio9:s/Respondébimus .*//s
+
+[Lectio12]
+@Sancti/12-28:Lectio9:s/.* Respondébimus /Respondébimus /s
+
+[Responsory9]
+@SanctiM/12-28:Responsory4:1-2:s/Vidi/Ecce vidi/
+@Sancti/12-28:Responsory7:1:s/R\. /V. /
+@SanctiM/12-28:Responsory4:4
+
+[Responsory10]
+R. Sub throno Dei Sancti clamant: 
+* Víndica sánguinem nostrum, Deus noster.
+@Sancti/12-28:Responsory8:1:s/R\. /V. / s/interfectórum/occisórum/
+R. Víndica sánguinem nostrum, Deus noster.
+
+[Responsory11]
+R. Ambulábunt mecum in albis, quóniam digni sunt:
+* Et non delébo nómina eórum de libro vitæ.
+@Sancti/12-28:Responsory6:3
+R. Et non delébo nómina eórum de libro vitæ.
+
+[Responsory12]
+R. Centum quadragínta quátuor míllia, qui empti sunt de terra, hi sunt, qui cum muliéribus non sunt coinquináti: Vírgines enim permansérunt:
+* Ideo regnant cum Deo, et Agno sine mácula.
+@Sancti/12-28:Responsory7:3
+R. Ideo regnant cum Deo, et Agno sine mácula.
+
+[Ant Vespera 3]
+@Sancti/12-28:Ant Vespera 3C

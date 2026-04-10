@@ -1,0 +1,12 @@
+[Lectio1]
+@Tempora/Pasc4-0:Lectio7:s/, but.*/./
+
+[Lectio2]
+@Tempora/Pasc4-0:Lectio7:s/.*, but/But/s s/$/~/
+@Tempora/Pasc4-0:Lectio8:s/ But.*//
+
+[Lectio3]
+@Tempora/Pasc4-0:Lectio8:s/.*(?=But)// s/$/~/
+@Tempora/Pasc4-0:Lectio9:s/ This.*//
+
+

@@ -1,0 +1,11 @@
+[Lectio6]
+@Tempora/Pasc5-0:Lectio5:s/Itaque .*//s
+
+[Lectio7]
+@Tempora/Pasc5-0:Lectio5:s/.* Itaque /Itaque /s
+
+[Lectio10]
+@Tempora/Pasc5-0:Lectio8:s/Ita sane .*//s
+
+[Lectio11]
+@Tempora/Pasc5-0:Lectio8:s/.* Ita sane /Ita sane /s

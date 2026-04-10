@@ -1,7 +1,7 @@
 version: '3.5'
 
-# This docker-compose file is for running local development
-
+# This docker-compose file is for running local development.
+#
 # to update the base image, run 'docker-compose build'
 # and then run 'docker-compose up' to create the development environmet
 # with the current code bind-mounted into the container for fast development
@@ -12,6 +12,6 @@ services:
       context: ./
       dockerfile: Dockerfile
     volumes:
-      - ./web:/var/www/web
+      - ./web:/var/www/web:Z
     ports:
-      - 8080:8080
+      - 8080:80

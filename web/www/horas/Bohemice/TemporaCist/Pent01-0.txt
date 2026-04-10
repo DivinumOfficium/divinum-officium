@@ -1,0 +1,80 @@
+[Responsory Vespera 1]
+R. Čest, síla a moc budiž Trojici v Jednotě, Jednotě v Trojici. 
+* Po časy věčných věků.
+V. Trojici světlo věčné, Jednotě budiž sláva navěky.
+R. Po časy věčných věků.
+
+[AntMatutinumC]
+Chvála, * sláva, moudrost, díky, čest, moc a síla <i>přísluší</i> našemu Bohu na věčné věky! Amen.;;63
+Tobě patří chvála, * tobě sláva, tobě díkůvzdání na věčné věky, ó blažená Trojice.;;97
+
+[Nocturn 1 Versum]
+V. Požehnán buď Pán Bůh Israele.
+R. Jenž sám koná zázraky.
+
+[Nocturn 2 Versum]
+V. Požehnej nás Bůh, náš Bůh.
+R. Požehnej nás Bůh.
+
+[Responsory4]
+R. Veliký je Hospodin, a veliká je jeho moc;
+* A jeho moudrost nemá míry.
+V. Veliký je Hospodin a vší chvály hodný, a jeho vznešenost nemá konce.
+R. A jeho moudrost nemá míry.
+
+[Lectio5]
+@Tempora/Pent01-0:Lectio4:s/Avšak Trojice .*//s
+
+[Lectio6]
+@Tempora/Pent01-0:Lectio4:s/.* (?=Avšak Trojice )//s s/$/~/
+@Tempora/Pent01-0:Lectio5:s/Protože .*//s
+
+[Lectio7]
+@Tempora/Pent01-0:Lectio5:s/.* (?=Protože)//s s/$/~/
+@Tempora/Pent01-0:Lectio6:s/Žádný .*//s
+
+[Lectio8]
+@Tempora/Pent01-0:Lectio6:s/.* (?=Žádný)//s
+
+[Responsory8] 
+@Tempora/Pent01-0:Responsory7:1-2
+V. Dobrořečme Bohu nebes, a přede všemi živými;
+@Tempora/Pent01-0:Responsory7:4
+
+[Lectio9]
+@Tempora/Pent01-0:Lectio7:s/My totiž .*//s
+
+[Lectio10]
+@Tempora/Pent01-0:Lectio7:s/.* (?=My totiž)//s s/$/~/
+@Tempora/Pent01-0:Lectio8a:s/A proto .*//s
+
+[Lectio11]
+@Tempora/Pent01-0:Lectio8a:s/.* (?=A proto )//s s/Toto tedy.*//s
+
+[Lectio12]
+@Tempora/Pent01-0:Lectio8a:s/.* (?=Toto tedy)//s
+
+[Responsory9]
+R. Boha se boj a jeho přikázání dodržuj;
+* Toto má dělat každý člověk.
+V. Těm, kdo se bojí Boha, nic nechybí, ani těm, kdo jej vpravdě milují;
+R. Toto má dělat každý člověk.
+
+[Responsory10]
+R. Tobě patří chvála, tobě sláva, tobě díkůvzdání;
+* Na věčné věky, ó blažená Trojice.
+V. A požehnané je svaté jméno tvé slávy; a chvályhodné a nanejvýš vznešené;
+R. Na věčné věky, ó blažená Trojice.
+
+[Ant Laudes] 
+Ó blažená, * a požehnaná, a slavná Trojice, Otec, a Syn, a Duch svatý; tobě buď chvála, tobě sláva, tobě díkůvzdání.
+Ó blažená, * požehnaná a slavná Jednoto, Otče, Synu a Duchu Svatý, smiluj se, smiluj se, smiluj se nad námi.
+Ó pravá, * svrchovaná, věčná Trojice, Otče, Synu a Duchu Svatý, tobě chvála, tobě sláva, tobě díkůvzdání.
+Ó pravá, * svrchovaná, věčná Jednoto, Otče, Synu a Duchu Svatý, smiluj se, smiluj se, smiluj se nad námi.
+Tebe právem chválí, * tebe uctívají, tebe oslavují všechna tvá stvoření, ó blahoslavená Trojice.
+
+[Responsory Laudes]
+R.br. Požehnej nás Bůh, náš Bůh, * Požehnej nás Bůh.
+R. Požehnej nás Bůh, náš Bůh, * Požehnej nás Bůh.
+V. A ať jsou v bázni před ním všechny končiny země.
+R. Požehnej nás Bůh.

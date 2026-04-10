@@ -1,18 +1,8 @@
 [Rank]
 Fest der Beschneidung des Herrn;;Duplex II classis;;5.1;;ex Sancti/12-25
 
-[Rank1960]
+[Rank] (rubrica 196)
 Oktavtag der Geburt des Herrn;;Duplex I classis;;6;;ex Sancti/12-25
-
-[RankNewcal]
-Oktavtag der Geburt des Herrn;;Duplex I classis;;6;;ex Sancti/12-25
-
-[Rule]
-ex Sancti/12-25;
-Psalmi Dominica
-Antiphonas Horas
-9 lectiones 1960
-no commemoratio
 
 [Ant Vespera]
 O staunenswerter Tauschhandel! * Der Schöpfer des Menschengeschlechtes hat einen lebendigen Leib von der Jungfrau erhalten und sich herabgelassen, ihr Kind zu werden, und während er so, auf wunderbare Weise empfangen, aus ihr als Mensch hervorging, hat er uns dafür geschenkt seine Gottheit.;;109
@@ -21,49 +11,23 @@ Im Dornstrauch, den Moses sah * und der nicht verbrannte, erkennen wir die Unver
 Die Wurzel Jesse hat einen frischen Trieb bekommen, * aufgegangen aus Jakob ist der Stern, die Jungfrau hat den Erlöser geboren. Wir preisen dich, unser Gott.;;126
 O seht doch! Maria hat * uns den Erlöser geboren, von dem Johannes beim ersten Anblick verkündigt: Das ist das Gotteslamm, das ist der, welcher die Sünden der Welt tilgt, alleluja.;;147
 
-[Capitulum Vespera]
-!Tit 2,11-12
-v. Klar geworden ist die Güte des unser Heil wirkenden Gottes allen Menschen und leitet uns an, dass wir ablegen alles Gott Missfallende und alle weltlichen Wünsche, und dass wir verständig und rechtschaffen und gottgefällig in dieser Welt leben.
-$Deo gratias
-
-[Versum 1]
-@Tempora/Nat1-0:Versum 1
-
 [Ant 1]
 Entsprechend seiner übergroßen * Liebe, mit der uns Gott liebt, hat er seinen Sohn gesandt, auf dass er ähnlich werde dem Leibe, dem sonst die Sünde anhaftet, alleluja.
 
 [Oratio]
-O Gott, der du der ewigen Glückseligkeit Segen auf Grund der mit Mutterwürde ausgestatteten Jungfräulichkeit der heiligen Jungfrau Maria dem menschenlichen Geschlecht verliehen hast, verleihe uns, wir bitten dich, die Gnade, dass wir derjenigen Fürsprache für uns empfinden, durch die wir würdig geworden sind, den Urheber des Lebens zu bekommen, unsern Herrn, Jesus Christus, deinen Sohn,
+O Gott, der du der ewigen Glückseligkeit Segen auf Grund der mit Mutterwürde ausgestatteten Jungfräulichkeit der heiligen Jungfrau Maria dem menschenlichen Geschlecht verliehen hast, verleihe uns, wir bitten dich, die Gnade, daß wir derjenigen Fürsprache für uns empfinden, durch die wir würdig geworden sind, den Urheber des Lebens zu bekommen, unsern Herrn, Jesus Christus, deinen Sohn,
 $Qui tecum
 
 [Ant Matutinum]
 So spricht der Herr * zu mir: Mein Sohn bist du, heute lasse ich dich aus meinem Schoß hervorgehen.;;2
 Dem Sonnenball hat er bereitet * sein Zelt: und der tritt wie ein Bräutigam hervor aus seinem Brautgemache.;;18
 Macht euch höher, * ihr aus alter Zeit stammenden Pforten, dass hindurchkommt der erhabene König.;;23
-V. Wie ein Bräutigam.
-R. Ist der Herr, der aus seinem Brautgemach heraustritt.
 O Schönster an Pracht du * unter den Edlen, welch liebliche Anmut dein Antlitz umfließt.;;44
 Homo natus est * in ea, et ipse fundavit eam Altissimus.;;86
 Exsultabunt omnia ligna * silvarum ante faciem Domini, quoniam venit.;;95
-V. O Schönster an Pracht du unter den Edlen!
-R. Welch liebliche Anmut dein Antlitz umfließt!
 Im Anfang * und vor allen Zeiträumen war Gott das Wort, und der ist heute als Heiland der Welt geboren.;;96
 Vor dem Morgenleuchten gezeugt * und vor allen Zeiträumen, hat der Herr, unser Heiland, heute sich gewürdigt, geboren zu werden.;;97
 Als der Herr geboren war, * sang der Chor der Engel: Heil unserem Gott, ihm, der auf dem Throne sitzt, und dem Lamme.;;98
-V. Bekanntgemacht hat der Herr, alleluja.
-R. Sein Heil, alleluja.
-
-[Lectio1]
-De Epistola beati Pauli Apostoli ad Romanos.
-!Rom 4:1-8
-1 Quid ergo dicemus invenisse Abraham patrem nostrum secundum carnem?
-2 Si enim Abraham ex operibus justificatus est, habet gloriam, sed non apud Deum.
-3 Quid enim dicit Scriptura? Credidit Abraham Deo, et reputatum est illi ad justitiam.
-4 Ei autem qui operatur, merces non imputatur secundum gratiam, sed secundum debitum.
-5 Ei vero qui non operatur, credenti autem in eum, qui justificat impium, reputatur fides ejus ad justitiam secundum propositum gratiae Dei.
-6 Sicut et David dicit beatitudinem hominis, cui Deus accepto fert justitiam sine operibus:
-7 Beati, quorum remissae sunt iniquitates, et quorum tecta sunt peccata.
-8 Beatus vir, cui non imputavit Dominus peccatum.
 
 [Responsory1]
 R. Seht da, das Lamm Gottes, seht den, der das Sündenelend der Welt tilgt; seht den, von dem ich euch gesagt habe: Der nach mir kommt, ist einer, der mir voran ist,
@@ -71,26 +35,11 @@ R. Seht da, das Lamm Gottes, seht den, der das Sündenelend der Welt tilgt; seht
 V. Wer von der Erde stammt, redet Irdisches; wer vom Himmel kommt, der steht über allen.
 R. Dem ich nicht wert bin, die Schuhriemen aufzulösen.
 
-[Lectio2]
-!Rom 4:9-12
-9 Beatitudo ergo haec in circumcisione tantum manet, an etiam in praeputio? Dicimus enim quia reputata est Abrahae fides ad justitiam.
-10 Quomodo ergo reputata est? in circumcisione, an in praeputio? Non in circumcisione, sed in praeputio.
-11 Et signum accepit circumcisionis, signaculum justitiae fidei, quae est in praeputio: ut sit pater omnium credentium per praeputium, ut reputetur et illis ad justitiam:
-12 et sit pater circumcisionis non iis tantum, qui sunt ex circumcisione, sed et iis qui sectantur vestigia fidei, quae est in praeputio patris nostri Abrahae.
-
 [Responsory2]
 R. Ein geheiligter Tag ist uns heute aufgestrahlt; kommt, Völker, und betet den Herrn an;
 * Denn heute ist ein großes Licht auf die Welt herabgestiegen.
 V. Das ist ein Tag, den der Herr gemacht hat; an diesem Tag lasst uns hüpfen und jubeln.
 R. Denn heute ist ein großes Licht auf die Welt herabgestiegen.
-
-[Lectio3]
-!Rom 4:13-17
-13 Non enim per legem promissio Abrahae, aut semini ejus ut haeres esset mundi: sed per justitiam fidei.
-14 Si enim qui ex lege, heredes sunt: exinanita est fides, abolita est promissio.
-15 Lex enim iram operatur. Ubi enim non est lex, nec praevaricatio.
-16 Ideo ex fide, ut secundum gratiam firma sit promissio omni semini, non ei qui ex lege est solum, sed et ei qui ex fide est Abrahae, qui pater est omnium nostrum
-17 (sicut scriptum est: Quia patrem multarum gentium posui te) ante Deum, cui credidit, qui vivificat mortuos, et vocat ea quae non sunt, tamquam ea quae sunt:
 
 [Responsory3]
 R. Es sei gepriesen, der da kommt im Namen des Herrn, der als Gott und Herr kommt und vor uns aufleuchtet,
@@ -140,9 +89,6 @@ Auslegung vom heiligen Bischof Ambrosius.
 !Buch 2 zu Lk Kap. 2
 Es wird als am Kinde die Beschneidung vorgenommen. Wer ist denn jenes Kind anders als das, von dem gesagt ist: „Ein Kind ist uns geboren, ein Sohn ist uns geschenkt“? Er hat sich unter das Gesetz des Alten Bundes gestellt, um denjenigen, die unter dem Alten Bunde waren, Segen zu bringen. - „Um ihn dem Herrn darzustellen.“ Was das heißt: in Jerusalem dem Herrn dargestellt werden, würde ich erklären, wenn ich es nicht in den Anmerkungen zu Isaias früher erklärt hätte. Derjenige nämlich, der in Bezug auf die Laster beschnitten ist, der wird als würdig erachtet, vor das Auge des Herrn zu kommen; denn „der Gnadenblick des Herrn ruht auf den Gottestreuen“. Man sieht, wie die ganze Reihe der Verordnungen der alten Zeit ein Bild der Zukunft war; denn auch die Beschneidung ist ein Bild der Reinigung von den Sünden.
 
-[Responsory7]
-@Tempora/Nat1-0:Responsory5
-
 [Lectio8]
 Aber weil infolge einer zur Sünde geneigten Begierlichkeit die Gebrechlichkeit des menschlichen Leibes und Geistes in böse Anlagen verwickelt ist, denen sie nicht entrinnen kann, deshalb wurde durch die Beschneidung am achten Tage die im Zeitalter der Auferstehung erwartete Reinigung von der ganzen Schuld vorgebildet. Diese Bedeutung hat nämlich der Satz: Alles Männliche, was den Mutterschoß öffnet, wird als dem Herrn heilig gelten. Mit den Worten des alttestamentlichen Gesetzes nämlich wurde der von einer Jungfrau Geborene verheißen; und der war wahrhaftig heilig, weil ohne Makel. Dass er übrigens derjenige ist, der durch das Gesetz bezeichnet wird, zeigen in derselben Weise klar die vom Engel wieder aufgenommenen Worte: „Was Heiliges geboren wird, das wird Gottes Sohn sein.“
 
@@ -158,27 +104,13 @@ R. Den Heiland der Welten, den König der Engel hat allein die Jungfrau mit Milc
 Unter allen vom Weibe Geborenen ist nämlich in jeder Beziehung heilig der Herr Jesus, der die Versuchung durch die irdische Sündhaftigkeit, infolge der Neuartigkeit seiner makellosen Geburt, nicht gefühlt und mit seiner himmlischen Majestät von sich ferngehalten hat. Denn wenn wir uns an den Buchstaben halten, wie kann alles Männliche heilig sein, da es doch nicht verborgen ist, dass viele sehr verbrecherisch gewesen sind? Ist etwa Achab ein Heiliger? Sind die lügenhaften Wahrsager Heilige, die auf Bitten des Elias das vom Himmel kommende als Strafer des Unrechts fallende Feuer vertilgt hat? Aber der war heilig, den als Vorbild des künftigen heiligen Geschehens die wohlgemeinten Vorschriften des göttlichen Gesetzes andeuteten; deshalb, weil er allein, um durch eine neue Geburt ein Gottesvolk zu schaffen, der heiligen jungfräulichen Kirche den geheimnisvoll gebärenden mit makelloser Fruchtbarkeit ausgestatteten Mutterschoß öffnen sollte.
 &teDeum
 
-[Ant Laudes]
-O staunenswerter Tauschhandel! * Der Schöpfer des Menschengeschlechtes hat einen lebendigen Leib von der Jungfrau erhalten und sich herabgelassen, ihr Kind zu werden, und während er so, auf wunderbare Weise empfangen, aus ihr als Mensch hervorging, hat er uns dafür geschenkt seine Gottheit.
-Als du geboren wurdest * in staunenswerter Weise aus der Jungfrau, da erfüllte sich die Schrift: wie der Tau auf das Vlies bist du herabgestiegen, um das Menschengeschlecht zu retten. Wir preisen dich, unser Gott.
-Im Dornstrauch, den Moses sah * und der nicht verbrannte, erkennen wir die Unversehrtheit deiner glorreichen Jungfrauschaft, o Gottesmutter, bitte doch für uns.
-Die Wurzel Jesse hat einen frischen Trieb bekommen, * aufgegangen aus Jakob ist der Stern, die Jungfrau hat den Erlöser geboren. Wir preisen dich, unser Gott.
-O seht doch! Maria hat * uns den Erlöser geboren, von dem Johannes beim ersten Anblick verkündigt: Das ist das Gotteslamm, das ist der, welcher die Sünden der Welt tilgt, alleluja.
-
 [Capitulum Laudes]
-@:Capitulum Vespera
-
-[Versum 2]
-@:Versum 1
+!Tit 2,11-12
+v. Klar geworden ist die Güte des unser Heil wirkenden Gottes allen Menschen und leitet uns an, dass wir ablegen alles Gott Missfallende und alle weltlichen Wünsche, und dass wir verständig und rechtschaffen und gottgefällig in dieser Welt leben.
+$Deo gratias
 
 [Ant 2]
 Ein staunenswertes Geheimnis * wird heute geklärt: Naturen bekommen ein neues Sein, Gott ist Mensch geworden; das, was er war, ist er geblieben; und was er nicht war, hat er angenommen; ohne eine Vermischung oder Teilung zu dulden.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
 [Ant 3]
 Ein großes, uns Segen bringendes * Geheimnis: Ein Gottestempel ist der Schoß derjenigen geworden, die mit keinem Manne umgeht: ohne Befleckung ist geblieben er, der von ihr Fleisch angenommen hat; alle Völker mögen kommen und rufen: Ehre sei dir, o Herr.
-
-[Capitulum Vespera 3]
-@:Capitulum Vespera

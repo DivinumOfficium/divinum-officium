@@ -1,0 +1,15 @@
+@Sancti/08-09t
+
+[Commemoratio]
+ 
+
+[Lectio1]
+@Sancti/08-09t::s/Nam,.*//s
+
+[Lectio2]
+@Sancti/08-09t:Lectio1:s/.* Nam,/Nam,/s s/$/~/
+@Sancti/08-09t:Lectio2:s/Quid vero.*//s
+
+[Lectio3]
+@Sancti/08-09t:Lectio2:s/.* Quid vero/Quid vero/s s/$/~/
+@Sancti/08-09t:Lectio3:s/Ad se.*//s

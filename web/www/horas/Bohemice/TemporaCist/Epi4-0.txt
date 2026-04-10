@@ -1,0 +1,30 @@
+[Ant 1] 
+Bratři, víte, * že jste chrámem Božím, a Duch Boží ve vás přebývá; pokud však někdo znesvětí tento chrám, Pán jej zničí; chrám Boží je totiž svatý a tím chrámem jste vy, alleluja.
+
+[Lectio5]
+@Tempora/Epi4-0:Lectio4:s/Ovšem .*//s
+
+[Lectio6]
+@Tempora/Epi4-0:Lectio4:s/.* Ovšem /Ovšem /s s/$/~/
+@Tempora/Epi4-0:Lectio5:s/Tvorstvo.*//s
+
+[Lectio7]
+@Tempora/Epi4-0:Lectio5:s/.* Tvorstvo /Tvorstvo /s
+
+[Lectio8]
+@Tempora/Epi4-0:Lectio6:s/A proto .*//
+
+[Lectio9]
+@Tempora/Epi4-0:Lectio7
+
+[Lectio10]
+@Tempora/Epi4-0:Lectio8:s/Tehdy .*//s
+
+[Lectio11]
+@Tempora/Epi4-0:Lectio8:s/.* Tehdy /Tehdy /s
+
+[Lectio12]
+@Tempora/Epi4-0:Lectio9
+
+[Ant 3]
+Ježíš povstal, * a rozkázal větrům a moři, a nastal veliký klid, a všichni se podivili.

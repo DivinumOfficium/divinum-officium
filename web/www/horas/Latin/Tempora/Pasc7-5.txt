@@ -1,20 +1,22 @@
-[Rank]
-Feria Sexta Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
+[Officium]
+Feria Sexta Quattuor Temporum Pentecostes
 
 [Rank]
-Feria Sexta Quattuor Temporum Pentecostes;;Semiduplex I classis;;6;;ex Pasc7-0
-
-[RankNewcal]
-Feria VI post Pentecostes;;Feria;;1;;
+;;Semiduplex I classis;;6.9;;ex Pasc7-0
 
 [Rule]
 ex Pasc7-0;
 1 nocturn;
 Psalmi Dominica;
+(sed rubrica cisterciensis) 
+Psalmi Feria
 Antiphonas horas
-Hymnus Tertia
 Feria Te Deum
 no93
+
+[Oratio]
+Da, quǽsumus, Ecclésiæ tuæ, miséricors Deus: ut, Sancto Spíritu congregáta, hostíli nullátenus incursióne turbétur.
+$Per Dominum eiusdem
 
 [Ant Matutinum]
 @Tempora/Pasc7-0::s/V\. .*/V. Spíritus Paráclitus, allelúja.\nR. Docébit vos ómnia, allelúja./s
@@ -29,7 +31,7 @@ Homilía sancti Ambrósii Epíscopi
 Non otiósa hujus paralýtici, nec angústa medicína est, quando Dóminus et orásse præmíttitur; non útique propter suffrágium, sed propter exémplum. Imitándi enim spécimen dedit, non precándi ámbitum requisívit. Et conveniéntibus ex omni Galilǽa, et Judǽa, et Jerúsalem, legis doctóribus, inter ceterórum remédia debílium, paralýtici istíus medicína descríbitur. Primum ómnium, quod ante díximus, unusquísque æger peténdæ precatóres salútis debet adhibére, per quos nostræ vitæ compágo resolúta, actuúmque nostrórum clauda vestígia, verbi cæléstis remédio reforméntur.
 
 [Responsory1]
-R. Non vos me elégistis, sed ego elégi vos, et pósui vos: 
+R. Non vos me elegístis, sed ego elégi vos, et pósui vos: 
 * Ut eátis, et fructum afferátis, et fructus vester máneat, allelúja, allelúja.
 V. Sicut misit me Pater, et ego mitto vos.
 R. Ut eátis, et fructum afferátis, et fructus vester máneat, allelúja, allelúja.
@@ -43,7 +45,7 @@ R. Spíritus Dómini replévit orbem terrárum:
 V. Omnium est enim ártifex, omnem habens virtútem, ómnia prospíciens.
 R. Et hoc quod cóntinet ómnia, sciéntiam habet vocis, allelúja, allelúja.
 &Gloria
-R. Et hoc quod cóntinet omnia, scientiam habet vocis, allelúja, allelúja.
+R. Et hoc quod cóntinet ómnia, sciéntiam habet vocis, allelúja, allelúja.
 
 [Lectio3]
 Disce, qui júdicas, ignóscere: disce, qui æger es, impetráre. Si grávium peccatórum diffídis véniam, ádhibe precatóres, ádhibe Ecclésiam, quæ pro te precétur, cujus contemplatióne, quod tibi Dóminus negáre posset, ignóscat. Et quamvis históriæ fidem non debeámus omíttere, ut vere paralýtici istíus corpus credámus esse sanátum: cognósce tamen interióris hóminis sanitátem, cui peccáta donántur. Cum Judǽi ásserunt peccáta a solo Deo posse concédi, Deum útique eum confiténtur; suóque judício perfídiam suam produnt, qui opus ástruunt, ut persónam negent.
@@ -51,10 +53,8 @@ Disce, qui júdicas, ignóscere: disce, qui æger es, impetráre. Si grávium pe
 
 [Ant 2]
 Dixit Jesus: * Ut sciátis autem quia Fílius hóminis habet potestátem in terra dimitténdi peccáta, ait paralýtico: Tibi dico, surge: tolle lectum tuum, et vade in domum tuam, allelúja.
-
-[Oratio]
-Da, quǽsumus, Ecclésiæ tuæ, miséricors Deus: ut, Sancto Spíritu congregáta, hostíli nullátenus incursióne turbétur.
-$Per Dominum eiusdem
+(sed rubrica cisterciensis aut rubrica praedicatorum)
+Factum est * in una diérum, et Jesus sedébat docens, et erant Pharisæi sedéntes, et legis doctóres qui vénerant ex omni castéllo Galilææ, et Judææ, et Jerúsalem, et virtus erat Dómini ad sanándum eos, allelúia, allelúia.
 
 [Ant 3]
 Paráclitus autem * Spíritus Sanctus, quem mittet Pater in nómine meo, ille vos docébit ómnia, et súggeret vobis ómnia, quæcúmque díxero vobis, allelúja.

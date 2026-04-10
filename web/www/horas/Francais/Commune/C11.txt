@@ -1,77 +1,100 @@
-[Name]
-In Festis Beatae Mariae Virginis
+[Officium]
+Aux fêtes de la Bienheureuse Vierge Marie
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Doxology=Nat
+[Missa]
+Salve Sancta Parens
 
-[Ant Vespera]
-Pendant que le Roi * se reposait, mon nard a exhalé une suave odeur.;;109
+[Ant VesperaBMV]
 Sa main gauche * est sous ma tête ; et sa droite m’embrassera.;;112
-Je suis noire, * mais je suis belle, filles de Jérusalem : c’est pour quoi le Roi m’a aimée et m’a introduite dans le lieu de son repos.;;121
-Déjà l’hiver est passé, * la pluie a cessé, elle s’est retirée, levez- vous, mon amie, et venez.;;126
 Toute belle * vous avez été faite, Sainte Mère de Dieu, et vous êtes pleine de douceur au milieu de vos délices.;;147
 
-[Capitulum Vespera]
-@Commune/C10:Capitulum Vespera
-
 [Hymnus Vespera]
-@Commune/C10:Hymnus Vespera
+/:La première strophe de l’Hymne suivante est dite à genoux.:/
+v. Salut, étoile de la mer,
+Mère de Dieu féconde,
+Salut, ô toujours Vierge,
+Porte heureuse du ciel !
+_
+Vous qui de Gabriel
+Avez reçu l’Ave,
+Fondez-nous dans la paix,
+Changeant le nom d’Ève.
+_
+Délivrez les captifs,
+Éclairez les aveugles,
+Chassez loin tous nos maux,
+Demandez tous les biens.
+_
+Montrez en vous la Mère,
+Vous-même offrez nos vœux
+Au Dieu qui, né pour nous,
+Voulut naître de vous.
+_
+O Vierge incomparable,
+Vierge douce entre toutes,
+Affranchis du péché,
+Rendez-nous doux et chastes.
+_
+Donnez une vie pure,
+Préparez un chemin sûr,
+Pour que voyant Jésus
+Notre liesse soit éternelle.
+_
+Louange à Dieu le Père,
+Gloire au Christ souverain,
+Louange au Saint-Esprit,
+Aux trois un seul hommage.
+Ainsi soit-il.
 
 [Versum 1]
 V. Rendez-moi digne de vous louer, Vierge sainte.
-R.  Donnez-moi de la force contre vos ennemis.
+R. Donnez-moi de la force contre vos ennemis.
 
 [Ant 1]
 Sainte Marie, * secourez les malheureux, venez en aide aux faibles, consolez les affligés, priez pour tout le peuple, intervenez en faveur du clergé [16], intercédez pour les femmes consacrées par vœu : qu’ils éprouvent tous votre assistance, ceux qui célèbrent votre sainte fête.
+
+[Oratio]
+Seigneur notre Dieu, accordez, s’il vous plaît, à nous vos serviteurs, de jouir d’une perpétuelle santé de l’âme et du corps : et grâce à la glorieuse intercession de la bienheureuse Marie toujours Vierge, d’être délivrés des tristesses du temps présent, puis de goûter les joies éternelles.
+$Per Dominum
 
 [Invit]
 Sainte Marie, Mère de Dieu et Vierge, * Intercédez pour nous.
 
 [Hymnus Matutinum]
-{:H-Quemterra:}v. Celui que terre, mer, astres 
-vénèrent, adorent, annoncent, 
-Celui qui régit ce triple monde, 
+{:H-Quemterra:}v. Celui que terre, mer, astres
+vénèrent, adorent, annoncent,
+Celui qui régit ce triple monde,
 Marie le porte caché dans son sein.
 _
-Celui que lune, soleil et toutes choses 
-servent en tout temps, 
-est porté par les entrailles d’une jeune vierge, 
+Celui que lune, soleil et toutes choses
+servent en tout temps,
+est porté par les entrailles d’une jeune vierge,
 toute pénétrée de la grâce céleste.
 _
-La bienheureuse mère, par la grâce, 
-dans l’arche de son sein, 
-renferme l’Artisan suprême 
+La bienheureuse mère, par la grâce,
+dans l’arche de son sein,
+renferme l’Artisan suprême
 qui tient le monde dans sa main
 _
-Bienheureuse, à la parole d’un messager du ciel, 
-féconde par le Saint-Esprit, 
-et son sein donne au monde 
+Bienheureuse, à la parole d’un messager du ciel,
+féconde par le Saint-Esprit,
+et son sein donne au monde
 le désiré des nations.
 _
-* O Jésus, gloire à vous 
-qui êtes né de la Vierge, 
-ainsi qu’au Père et à l’Esprit nourricier, 
-dans les siècles éternels. 
+* O Jésus, gloire à vous
+qui êtes né de la Vierge,
+ainsi qu’au Père et à l’Esprit nourricier,
+dans les siècles éternels.
 Ainsi soit-il.
 
-[Ant Matutinum]
+[Ant MatutinumBMV]
 Vous êtes bénie * entre les femmes et le fruit de votre sein est béni.;;8
 Comme une myrrhe * de choix vous avez exhalé un parfum suave, ô sainte Mère de Dieu.;;18
 Devant le trône * de cette Vierge, chantez-nous souvent de doux cantiques qui nous rappellent ses saintes actions.;;23
-V. Dans votre gloire et votre beauté.
-R. Avancez heureusement, avancez et régnez.
-Dans votre dignité * et votre beauté, avancez, avancez avec succès et régnez.;;44
-Dieu la protège * de son regard : Dieu est au milieu d’elle, elle ne sera pas ébranlée.;;45
 Comme celui de tous ceux qui possèdent la vraie joie, * notre refuge est en vous, sainte Mère de Dieu.;;86
-V. Dieu la protège de son regard.
-R. Dieu est au milieu d’elle, elle ne sera pas ébranlée.
 Réjouissez-vous, Vierge Marie : * vous seule avez détruit toutes les hérésies dans le monde entier.;;95
 Rendez-moi digne * de vous louer, ô Vierge sainte ; donnez-moi de la force contre vos ennemis.;;96
 Après l’enfantement, * ô Vierge vous êtes demeurée dans votre intégrité première ; Mère de Dieu, intercédez pour nous.;;97
-V. Dieu l’a élue et choisie avec prédilection.
-R. Il l’a fait habiter dans son tabernacle.
 
 [Lectio1]
 Des Proverbes de Salomon.
@@ -79,7 +102,7 @@ Des Proverbes de Salomon.
 Moi, sagesse, j’habite dans le conseil, et je suis présente aux savantes pensées. La crainte du Seigneur hait le mal : l’arrogance et l’orgueil, une voie dépravée, et une langue double, je les déteste. A moi est le conseil et l’équité : à moi est la prudence, à moi est la force. Par moi les rois règnent et les législateurs décrètent des choses justes. Par moi les princes commandent, et les puissants rendent la justice. Moi, j’aime ceux qui m’aiment et ceux qui dès le matin veillent pour me chercher me trouveront.
 
 [Responsory1]
-R. Sainte et immaculée virginité, je ne sais par quelles louanges vous exalter :  
+R. Sainte et immaculée virginité, je ne sais par quelles louanges vous exalter :
 * Car vous avez porté dans votre sein celui que les cieux ne peuvent contenir.
 V. Vous êtes bénie entre les femmes, et le fruit de votre sein est béni.
 R. Car vous avez porté dans votre sein celui que les cieux ne peuvent contenir.
@@ -95,11 +118,11 @@ V. Toutes les générations me diront bienheureuse, parce que Dieu a regardé so
 R. Et de mes entrailles j’ai enfanté le Dieu-Homme.
 
 [Lectio3]
-!Prov 8:34-36; 9:1-5
+!Prov 8:34-36 ; 9:1-5
 Bienheureux l’homme qui m’écoute, et qui veille tous les jours à l’entrée de ma demeure, et se tient en observation auprès de ma porte. Celui qui me trouvera, trouvera la vie et puisera le salut dans le Seigneur : mais celui qui péchera contre moi blessera son âme. Tous ceux qui me haïssent aiment la mort. La sagesse s’est bâti une maison, elle a taillé sept colonnes. Elle a immolé ses victimes, mêlé le vin, et dressé sa table. Elle a envoyé ses servantes pour appeler ses conviés à la forteresse et aux murs de la cité. Si quelqu’un est tout petit, qu’il vienne à moi. Et à des insensés elle a dit : Venez, mangez mon pain et buvez le vin que je vous ai mêlé.
 
 [Responsory3]
-R. Vous êtes bienheureuse, ô Vierge Marie, qui avez porté le Seigneur Créateur du monde: 
+R. Vous êtes bienheureuse, ô Vierge Marie, qui avez porté le Seigneur Créateur du monde :
 * Vous avez engendré Celui qui vous a faite, et vous demeurez Vierge à jamais.
 V. Je vous salue, Marie, pleine de grâce, le Seigneur est avec vous.
 R. Vous avez engendré Celui qui vous a faite, et vous demeurez Vierge à jamais.
@@ -112,7 +135,7 @@ Sermon de saint Jean Chrysostome.
 Le Fils de Dieu s’est choisi pour mère, non pas une femme riche et opulente, mais cette bienheureuse Vierge dont l’âme était ornée de vertus. Comme la Bienheureuse Marie surpassait en pureté le reste de l’humanité, c’est pour cette raison qu’elle conçut dans son sein le Christ notre Seigneur. En recourant à cette très sainte Vierge, Mère de Dieu, nous obtiendrons les bienfaits de son patronage. Ainsi, vous toutes qui êtes vierges, réfugiez-vous auprès de la Mère du Seigneur. Sa protection vous conservera cette vertu dans toute sa beauté, dans tout son prix, dans toute son intégrité.
 
 [Responsory4]
-R. Comme un cèdre, je me suis élevée sur le Liban, et comme un cyprès sur la montagne de Sion: comme la myrrhe de choix, 
+R. Comme un cèdre, je me suis élevée sur le Liban, et comme un cyprès sur la montagne de Sion : comme la myrrhe de choix,
 * J’ai exhalé une odeur suave.
 V. Et comme le cinnamome et le baume aromatique.
 R. J’ai exhalé une odeur suave.
@@ -130,8 +153,8 @@ R. Les filles de Sion l’ont vue et l’ont dite bienheureuse, et les reines l�
 Elle est la Mère de Celui qui a été engendré du Père avant tout commencement et que les Anges et les hommes reconnaissent pour le Seigneur de toutes choses. Voulez-vous savoir combien cette Vierge l’emporte sur les puissances du ciel ? Ces puissances se tiennent devant Dieu en se voilant la face, avec crainte et tremblement : Marie, elle, offre la nature humaine à Celui qu’elle a enfanté. C’est par Elle aussi que nous obtenons le pardon de nos péchés. Salut, donc, ô Mère, ô ciel, ô jeune fille, ô Vierge, ô trône ! De notre Église vous êtes l’honneur, la gloire et l’appui. Priez sans cesse pour nous Jésus, votre Fils et notre Seigneur ; afin que, par vous, nous trouvions miséricorde au jour du jugement, et que nous puissions obtenir les biens réservés à ceux qui aiment Dieu, par la grâce et la bonté de notre Seigneur Jésus-Christ, à qui soient comme au Père et à l’Esprit-Saint, gloire, honneur et empire, maintenant et toujours dans les siècles des siècles. Ainsi soit-il.
 
 [Responsory6]
-R. Le Seigneur a aimé la fille de Jérusalem, parée de colliers: 
-*  Et les filles de Sion, la voyant, l’ont proclamée la plus heureuse, disant: * C’est un parfum répandu que votre nom.
+R. Le Seigneur a aimé la fille de Jérusalem, parée de colliers :
+* Et les filles de Sion, la voyant, l’ont proclamée la plus heureuse, disant : * C’est un parfum répandu que votre nom.
 V. La reine s’est tenue debout à votre droite, dans un vêtement d’or, couverte d’ornements variés.
 R. Et les filles de Sion, la voyant, l’ont proclamée la plus heureuse, disant :
 &Gloria
@@ -142,7 +165,7 @@ Lecture du saint Évangile selon saint Luc.
 !Luc 11:27-28
 En ce temps-là : Jésus parlant aux foules, une femme, élevant la voix d’au milieu de la foule lui dit : Heureux le sein qui vous a porté. Et le reste.
 _
-	Homélie de saint Bède le Vénérable, Prêtre. 
+Homélie de saint Bède le Vénérable, Prêtre.
 !Lib 4. cap. 49. in Luc. 11.
 Cette femme fit bien voir la grandeur de sa dévotion et de sa foi. Tandis que les Scribes et les Pharisiens tentent le Seigneur et blasphèment contre lui, elle reconnaît avec tant de sincérité son incarnation, elle la proclame avec tant d’assurance qu’elle confond tout à la fois la calomnie dont les principaux d’entre les Juifs tâchaient alors de noircir le Fils de Dieu, et la perfidie des hérétiques qui devaient s’élever dans la suite des temps. De même qu’à cette époque les Juifs, blasphémant contre l’ouvrage du Saint-Esprit, niaient que Jésus-Christ fût le vrai Fils de Dieu, consubstantiel au Père ; ainsi les hérétiques devaient-ils plus tard, en niant que Marie, toujours Vierge, eût par l’opération du Saint-Esprit, fourni de sa propre chair au Fils de Dieu la matière de ses membres humains, prétendre qu’il ne faut pas le reconnaître pour le vrai fils de l’homme et de la même substance que sa mère.
 
@@ -156,10 +179,10 @@ R. Car c’est de vous qu’est sorti le soleil de justice, le Christ notre Dieu
 Mais si la chair que le Verbe de Dieu a prise en s’incarnant, n’est pas formée de celle de la Vierge sa Mère, c’est sans motif qu’on appelle heureux le sein qui l’a porté et les mamelles qui l’ont allaité. L’Apôtre a dit : « Dieu a envoyé son Fils, formé d’une femme soumise à la loi ». Il ne faut pas écouter ceux qui pensent qu’il faut lire : Né d’une femme assujettie à la loi ; mais on doit lire : « Formé d’une femme », parce qu’ayant été conçu dans le sein d’une Vierge, il n’a pas tiré sa chair de rien ; mais de la chair de sa mère. Autrement il ne serait pas appelé avec vérité, fils de l’homme puisqu’il ne tirerait pas son origine de l’humanité. Élevons donc, nous aussi, la voix contre Eutychès, avec l’Église catholique, dont cette femme était la figure, élevons aussi notre esprit au-dessus de la foule, et disons au Sauveur : « Heureux le sein qui vous a porté, et les mamelles que vous avez sucées ». Car elle est vraiment une Mère heureuse, celle qui, selon l’expression d’un auteur, « a enfanté le Roi qui gouverne dans tous les siècles le ciel et la terre ».
 
 [Responsory8]
-R. Toutes les générations me diront bienheureuse, 
+R. Toutes les générations me diront bienheureuse,
 * Car le Seigneur, lui qui est puissant, m’a fait de grandes choses, et son nom est saint.
-V. Et misericórdia ejus a progénie in progénies timéntibus eum.
-R. Et sa miséricorde se répand d’âge en âge sur ceux qui le craignent.
+V. Et sa miséricorde se répand d’âge en âge sur ceux qui le craignent.
+R. Car le Seigneur, lui qui est puissant, m’a fait de grandes choses, et son nom est saint.
 &Gloria
 R. Car le Seigneur, lui qui est puissant, m’a fait de grandes choses, et son nom est saint.
 
@@ -167,48 +190,120 @@ R. Car le Seigneur, lui qui est puissant, m’a fait de grandes choses, et son n
 « Heureux plutôt ceux qui écoutent la parole de Dieu et qui la gardent ! » Le Sauveur approuve éminemment ce qu’avait dit cette femme, quand il affirme que non seulement celle qui a mérité d’engendrer corporellement le Verbe de Dieu, mais aussi tous ceux qui s’efforcent de concevoir spirituellement le même Verbe par l’audition de la foi, de l’enfanter et de le nourrir par la pratique des bonnes œuvres, soit dans leur cœur, soit en celui de leur prochain, sont véritablement heureux. Certes, la Mère de Dieu est bienheureuse d’avoir servi dans le temps, et contribué à l’incarnation du Verbe ; mais elle est encore plus heureuse d’avoir mérité, en l’aimant toujours, de le garder en elle éternellement.
 &teDeum
 
-[Ant Laudes]
-@:Ant Vespera:s/;;.*//g
+[Versum 0]
+V. Priez pour nous, sainte Mère de Dieu.
+R. Afin que nous devenions dignes des promesse de Jésus-Christ.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Sir 24:14
+v. Dès le commencement et avant tous les siècles, j’ai été créée, et dans la suite des âges je ne cesserai point d’être ; et, dans la demeure sainte, j’ai exercé devant lui mon ministère.
+$Deo gratias.
 
 [Hymnus Laudes]
-@Commune/C10:Hymnus Laudes
-
-[Versum 2]
-@Commune/C10:Versum 1
+{:Ogloriosavirginum:}v. O la plus glorieuse des vierges,
+élevée au-dessus des astres,
+vous nourrissez du lait de votre sein
+Celui qui vous a créée, devenu petit enfant.
+_
+Vous nous rendez par votre auguste Fils,
+ce dont Ève nous avait malheureusement privés :
+vous ouvrez les portes du ciel
+pour y faire entrer ceux qui pleurent.
+_
+Vous êtes la porte du grand Roi,
+et son palais, éclatant de lumière :
+Nations rachetées, célébrez toutes la vie
+qui nous est donnée par cette Vierge.
+_
+* O Jésus, gloire à vous
+qui êtes né de la Vierge,
+ainsi qu’au Père et à l’Esprit nourricier,
+dans les siècles éternels.
+Ainsi soit-il.
 
 [Ant 2]
 Vous êtes bienheureuse, * Marie, vous qui avez cru : car ce qui vous a été dit par le Seigneur s’accomplira en vous, alléluia.
 
-[Oratio]
-@Commune/C10:Oratio
-
 [Lectio Prima]
-@Commune/C10:Lectio Prima
-
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
-@Commune/C10:Responsory Tertia
+!Sir 24:19-20
+v. Comme la canelle et le baume odorant, dans les places publiques j'ai exhalé mon parfum ; comme la myrrhe choisie j'ai répandu une odeur suave.
 
 [Capitulum Sexta]
-@Commune/C10:Capitulum Sexta
-
-[Responsory Sexta]
-@Commune/C10:Responsory Sexta
-
-[Capitulum Nona]
-@:Lectio Prima
-$Deo gratias
-
-[Responsory Nona]
-@Commune/C10:Responsory Nona
-
-[Versum 3]
-@:Versum 1
+!Sir 24:15-16
+v. Et ainsi j'ai eu une demeure fixe dans Sion, et j'ai trouvé le repos dans la cité sainte ; et Jérusalem est le siège de mon empire. Et j'ai poussé mes racines dans le peuple glorifié, dans la portion de mon Dieu, dans son héritage, et dans l'assemblée entière des Saints est ma demeure.
+$Deo gratias.
 
 [Ant 3]
 Elles me diront bienheureuse, * toutes les générations, parce que Dieu a regardé son humble servante.
+
+[Introitus]
+!Sedulius.
+Nous vous saluons, ô Mère sainte, vous qui avez mis au monde le Roi qui règne sur le ciel et la terre, dans les siècles des siècles.
+!Ps 44:2
+De mon cœur jaillit un beau poème, je dis mes œuvres au Roi.
+&Gloria
+Nous vous saluons, ô Mère sainte, vous qui avez mis au monde le Roi qui règne sur le ciel et la terre, dans les siècles des siècles.
+
+[Introitus] (tempore paschali)
+!Sedulius.
+v. Nous vous saluons, ô Mère sainte, vous qui avez mis au monde le Roi qui règne sur le ciel et la terre, dans les siècles des siècles, alléluia, alléluia.
+!Ps 44:2
+De mon cœur jaillit un beau poème, je dis mes œuvres au Roi.
+&Gloria
+v. Nous vous saluons, ô Mère sainte, vous qui avez mis au monde le Roi qui règne sur le ciel et la terre, dans les siècles des siècles, alléluia, alléluia.
+
+[Oratio] (ad missam)
+Accordez-nous, Seigneur, une heureuse santé de l'âme et du corps, et par la glorieuse intercession de la bienheureuse Marie toujours vierge, délivrez-nous des tristesses de la vie présente, et conduisez-nous à la joie de l'éternité.
+$Per Dominum
+
+[Lectio]
+Lecture du livre de la Sagesse.
+!Eccli 24:14-16
+Dès l'origine, avant tous les siècles, il m'a créée, et jusqu'à la fin des temps je ne cesserai d'exister ; en sa présence j'ai officié dans le saint tabernacle. Ainsi je me suis établie en Sion ; dans la cité sainte j'ai trouvé mon repos ; Jérusalem est le siège de ma puissance. J'ai poussé mes racines chez un peuple prévenu d'honneur, dans la portion du Seigneur, dans son héritage, et j'ai fixé mon séjour dans l'assemblée des saints.
+
+[Graduale]
+Vous êtes digne de toute bénédiction et de toute vénération, ô Vierge Marie, vous qui, sans avoir rien perdu de votre intégrité corporelle, êtes devenue la mère du Sauveur.
+V. Ô Vierge, Mère de Dieu, celui que l'univers entier ne peut contenir, devenu homme, s'est enfermé dans votre sein. Alléluia, alléluia.
+V. Après l'enfantement, ô Vierge, vous êtes demeurée inviolée. Ô Mère de Dieu intercédez pour nous. Alléluia.
+
+[Graduale] (tempore Adventus)
+Vous êtes digne de toute bénédiction et de toute vénération, ô Vierge Marie, vous qui, sans avoir rien perdu de votre intégrité corporelle, êtes devenue la mère du Sauveur.
+V. Ô Vierge, Mère de Dieu, celui que l'univers entier ne peut contenir, devenu homme, s'est enfermé dans votre sein. Alléluia, alléluia.
+!Luc 1:28
+Je vous salue, Marie, pleine de grâces, le Seigneur est avec vous. Vous êtes bénie parmi les femmes. Alléluia.
+
+[GradualeP]
+Allelúja, allelúja
+!Num 17:8
+v. La tige de Jessé a fleuri, la Vierge a enfanté un Dieu et un homme. Dieu a rendu la paix, en réconciliant en lui-même le plus bas et le plus élevé. Alléluia.
+!Luc 1:28
+Je vous salue, Marie, pleine de grâce, le Seigneur est avec vous, vous êtes bénie entre toutes les femmes. Alléluia.
+
+[Tractus]
+Vous êtes digne de toute bénédiction et de toute vénération, ô Vierge Marie, vous qui, sans avoir rien perdu de votre intégrité corporelle, êtes devenue la mère du Sauveur.
+V. Ô Vierge, Mère de Dieu, celui que l'univers entier ne peut contenir, devenu homme, s'est enfermé dans votre sein.
+!
+Réjouissez-vous, ô Vierge Marie, à vous seule vous avez anéanti toutes les hérésies.
+V. Vous qui avez cru aux paroles de l'Archange Gabriel.
+V. Car vous avez enfanté un Dieu et un homme, et arpès l'enfantement, ô Vierge, vous êtes demeurée inviolée.
+V. Mère de Dieu, intercédez pour nous.
+
+[Evangelium]
+Suite du ++ saint Évangile selon saint Luc.
+!Luc 11:27-28
+En ce temps-là, Jésus parlait aux foules, quand une femme éleva la voix du milieu de la foule et lui dit : « Heureux le ventre qui t'a porté, et les seins qui t'ont allaité ! » Mais lui répondit : « Heureux bien plutôt ceux qui écoutent la Parole de Dieu et qui la gardent. »
+
+[Offertorium]
+!Luc 1:28; 1:42
+Je vous salue, Marie, pleine de grâce, le Seigneur est avec vous, vous êtes bénie entre toutes les femmes, et le fruit de vos entrailles est béni. (Alléluia.)
+
+[Secreta]
+Que par votre bonté, Seigneur, et par l'intercession de la bienheureuse Marie toujours vierge, l'offrande de ce sacrifice nous procure, pour l'éternité comme pour la vie présente, le bonheur et la paix.
+$Per Dominum
+
+[Communio]
+Heureuses les entrailles de la Vierge Marie, qui ont porté le Fils du Père éternel. (Alléluia.)
+
+[Postcommunio]
+Ayant reçu ces moyens de salut, nous vous demandons, Seigneur, d'être toujours et partout assurés de la protecion de la bienheureuse Vierge Marie, en l'honneur de qui nous avons offert ce sacrifice à votre Majesté.
+$Per Dominum

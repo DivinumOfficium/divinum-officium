@@ -1,0 +1,21 @@
+@Tempora/084-0
+
+[Ant 1]
+@Tempora/085-0:Ant 1C
+
+[Responsory1]
+@TemporaOP/081-0
+
+[Lectio2]
+@Tempora/084-0::1-5 s/-10/-9/
+
+[Responsory2]
+@Tempora/081-0:Responsory3
+
+[Lectio3]
+@Tempora/084-0::1 s/11-15/10-14/
+@Tempora/084-0:Lectio2:6
+@Tempora/084-0::2-5 s/; .*/./
+
+[Responsory3]
+@TemporaOP/Pent01-0:Responsory Vespera 1

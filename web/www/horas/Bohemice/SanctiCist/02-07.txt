@@ -1,0 +1,10 @@
+[Lectio2]
+@Sancti/02-07:Lectio4:s/$/~/
+@Sancti/02-07:Lectio5:s/Byl .*//
+
+[Lectio3]
+@Sancti/02-07:Lectio5:s/.* (Byl )/$1/ s/mučednictví, .*/mučednictví./ s/$/~/
+@Sancti/02-07:Lectio6:s/Jeho .*//
+
+[Responsory3]
+@CommuneCist/C5:Responsory12

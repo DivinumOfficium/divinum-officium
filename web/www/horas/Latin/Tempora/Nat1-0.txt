@@ -1,27 +1,34 @@
-[Rank]
-Dominica Infra Octavam Nativitatis;;Semiduplex;;5;;ex Sancti/12-25
+[Officium]
+Dominica Infra Octavam Nativitatis
 
-[Rank](rubrica 1960)
-Dominica Infra Octavam Nativitatis;;Semiduplex;;6;;ex Sancti/12-25
+[Rank]
+;;Semiduplex;;5;;ex Sancti/12-25
+
+[Rank] (rubrica 196)
+;;Semiduplex;;5.4;;ex Sancti/12-25
+
+[Rank] (rubrica tridentina)
+;;Semiduplex;;2.93;;ex Sancti/12-25
 
 [Rule]
 9 lectiones
 ex Sancti/12-25 
-Lectio1 Sancti
 Psalmi Dominica
-no commemoratio (rubrica 1960)
+Lectio1 OctNat
 
 [Ant Vespera]
 @Sancti/12-25:Ant Vespera 3
 
-[Capitulum Vespera]
-!Gal 4:1-2
-v. Fratres: Quanto témpore heres párvulus est, nihil differt a servo, cum sit dóminus ómnium: sed sub tutóribus et actóribus est usque ad præfínitum tempus a patre.
-$Deo gratias
+[Responsory Vespera 1]
+@Sancti/12-25:Responsory Breve Tertia
 
 [Versum 1]
 V. Verbum caro factum est, allelúja.
 R. Et habitávit in nobis, allelúja.
+
+[Versum 1] (rubrica cisterciensis)
+V. Notum fecit Dóminus.
+R. Salutáre suum.
 
 [Ant 1]
 Dum médium siléntium * tenérent ómnia, et nox in suo cursu médium iter perágeret, omnípotens Sermo tuus, Dómine, a regálibus sédibus venit, allelúja.
@@ -30,21 +37,22 @@ Dum médium siléntium * tenérent ómnia, et nox in suo cursu médium iter per�
 Omnípotens sempitérne Deus, dírige actus nostros in beneplácito tuo: ut in nómine dilécti Fílii tui mereámur bonis opéribus abundáre:
 $Qui tecum
 
-[Commemoratio 2] (rubrica Divino aut rubrica Tridentina aut rubrica Monastica)
+[Commemoratio] (rubrica divino aut rubrica altovadensis)
 @Sancti/12-25:Octava
 
-[Commemoratio 3] (rubrica Divino aut rubrica Tridentina aut rubrica Monastica)
+[Commemoratio] (rubrica tridentina nisi rubrica altovadensis)
 @Sancti/12-25:Octava
+@Sancti/12-26:Octava
+@Sancti/12-27:Octava
+@Sancti/12-28:Octava
 
 [Responsory3](rubrica 1960)
-@Sancti/12-25:Responsory4
-&Gloria
-R. Beáta Virgo, cujus víscera meruérunt portáre Dóminum Christum.
+@Sancti/12-25:Responsory3
 
 [Lectio4]
 Sermo sancti Leónis Papæ
 !Sermo 9 de Nativ. Dom.
-Excédit quidem, dilectíssimi, multúmque superéminet humáni elóquii facultátem divini operis magnitúdo: et inde óritur difficultas fándi, unde adest rátio non tacendi. Quia in Christo Jesu Fílio Dei non solum ad divinam esséntiam, sed étiam ad humanam spectat natúram quod dictum est per prophétam: Generatiónem ejus quis enárrabit? Utrámque enim substántiam in unam convenísse persónam, nisi fides credat, sermo non explicat. Et ideo numquam materia déficit laudis, quia numquam sufficit copia laudatóris.
+Excédit quidem, dilectíssimi, multúmque superéminet humáni elóquii facultátem divini operis magnitúdo: et inde óritur difficultas fandi, unde adest rátio non tacendi. Quia in Christo Jesu Fílio Dei non solum ad divinam esséntiam, sed étiam ad humanam spectat natúram quod dictum est per prophétam: Generatiónem ejus quis enarrábit? Utrámque enim substántiam in unam convenísse persónam, nisi fides credat, sermo non explicat. Et ideo numquam materia déficit laudis, quia numquam sufficit copia laudatóris.
 
 [Responsory4]
 @Sancti/12-25:Responsory5
@@ -68,7 +76,7 @@ In illo témpore: Erat Joseph, et María mater Jesu, mirántes super his, quæ d
 _
 Homilía sancti Ambrósii Epíscopi
 !Lib. 2 in cap. 2 Lucæ, prope finem
-Vides úberem in omnes grátiam, Dómini generatióne diffúsam, et prophetíam incrédulis negátam esse, non justis. Ecce et Símeon prophétat, in ruínam et resurrectiónem plurimórum venísse Dóminum Jesum Christum, ut justórum, iniquorúmque merita discérnat; et pro nostrórum qualitáte factórum, judex verus et justus aut supplícia decérnat, aut prǽmia.
+Vides úberem in omnes grátiam, Dómini generatióne diffúsam, et prophetíam incrédulis negátam esse, non justis. Ecce et Símeon prophétat, in ruínam et resurrectiónem plurimórum venísse Dóminum Jesum Christum, ut justórum, iniquorúmque mérita discérnat; et pro nostrórum qualitáte factórum, judex verus et justus aut supplícia decérnat, aut prǽmia.
 
 [Responsory7]
 @Sancti/12-25:Responsory8
@@ -81,15 +89,17 @@ R. O Regem cæli, cui talia famulántur obsequia: stábulo pónitur, qui cóntin
 * Jacet in præsépio, et in cælis regnat.
 V. Natus est nobis hódie Salvator, qui est Christus Dóminus, in civitáte David.
 R. Jacet in præsépio, et in cælis regnat.
-&Gloria.
+&Gloria
 R. Jacet in præsépio, et in cælis regnat.
 
 [Lectio9]
-Prophetávit itaque Simeon, prophetáverat virgo, prophetáverat copuláta conjugio; prophétare debuit étiam vidua, ne qua aut proféssio deésset, aut sexus. Et ideo Anna et stipendiis viduitátis, et móribus talis inducitur, ut digna plane fuísse credátur, quæ Redemptórem ómnium venisse nuntiáret. Cujus merita cum álibi descripsérimus, cum viduas hortarémur, hoc loco, quóniam ad alia properamus, non putámus iteránda.
+Prophetávit ítaque Simeon, prophetáverat virgo, prophetáverat copuláta conjugio; prophétare debuit étiam vidua, ne qua aut proféssio deésset, aut sexus. Et ideo Anna et stipendiis viduitátis, et móribus talis inducitur, ut digna plane fuísse credátur, quæ Redemptórem ómnium venisse nuntiáret. Cujus mérita cum álibi descripsérimus, cum víduas hortarémur, hoc loco, quóniam ad ália properámus, non putámus iteránda.
 &teDeum
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Gal 4:1-2
+v. Fratres: Quanto témpore heres párvulus est, nihil differt a servo, cum sit dóminus ómnium: sed sub tutóribus et actóribus est usque ad præfínitum tempus a patre.
+$Deo gratias
 
 [Versum 2]
 @:Versum 1
@@ -97,21 +107,17 @@ Prophetávit itaque Simeon, prophetáverat virgo, prophetáverat copuláta conju
 [Ant 2]
 @:Ant 1
 
-[Lectio Prima] (rubrica Divino aut rubrica Tridentina aut rubrica Monastica)
+[Lectio Prima]
 !Gal 4:7
 v. Itaque jam non est servus, sed fílius: quod si fílius, et hæres per Deum.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Capitulum Sexta]
+[Capitulum Sexta] (nisi rubrica praedicatorum)
 !Gal 4:4-5
-v. At ubi venit plenitúdo témporis, misit Deus Fílium suum factum ex mulíere, factum sub lege, ut eos, qui sub lege erant, redímeret, ut adoptiónem filiórum recipéremus.
+v. At ubi venit plenitúdo témporis, misit Deus Fílium suum factum ex mulíere, factum sub lege, ut eos, qui sub lege erant, redímeret, ut adoptiónem filiórum reciperémus.
 $Deo gratias
 
-[Capitulum Nona]
-!Gal 4:7
-v. Itaque jam non est servus, sed fílius: quod si fílius, et hæres per Deum.
+[Capitulum Nona] (nisi rubrica praedicatorum)
+@:Lectio Prima
 $Deo gratias
 
 [Versum 3]
@@ -119,3 +125,12 @@ $Deo gratias
 
 [Ant 3]
 Puer Jesus * proficiébat ætáte et sapiéntia coram Deo et homínibus.
+
+[Commemoratio 3] (rubrica divino aut rubrica altovadensis)
+@Sancti/12-25:Octava
+
+[Commemoratio 3] (rubrica tridentina nisi rubrica altovadensis)
+@Sancti/12-25:Octava
+@Sancti/12-26:Octava
+@Sancti/12-27:Octava
+@Sancti/12-28:Octava

@@ -1,5 +1,10 @@
+[Officium]
+Feria III infra Hebdomadam Sexagesimæ
+
 [Rank]
-Feria III infra Hebdomadam Sexagesimæ;;Feria;;1
+;;Feria;;1
+(sed rubrica 1930)
+;;Feria major;;2.1
 
 [Rule]
 Oratio Dominica
@@ -21,7 +26,7 @@ De libro Génesis
 6 Cumque transíssent quadragínta dies, apériens Noë fenéstram arcæ, quam fécerat, dimísit corvum,
 7 qui egrediebátur, et non revertebátur, donec siccaréntur aquæ super terram.
 8 Emísit quoque colúmbam post eum, ut vidéret si jam cessássent aquæ super fáciem terræ.
-9 Quæ cum non invenísset ubi requiésceret pes eius, revérsa est ad eum in arcam.
+9 Quæ cum non invenísset ubi requiésceret pes ejus, revérsa est ad eum in arcam.
 
 [Responsory2]
 @Tempora/Quadp2-0:Responsory5
@@ -36,5 +41,5 @@ De libro Génesis
 [Responsory3]
 @Tempora/Quadp2-0:Responsory6
 
-[Ant 3]
+[Ant 3] (nisi rubrica cisterciensis)
 Semen est * verbum Dei, sator autem Christus: omnis qui invénit eum, manébit in ætérnum.

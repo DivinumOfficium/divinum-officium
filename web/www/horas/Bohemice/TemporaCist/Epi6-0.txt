@@ -1,0 +1,18 @@
+[Lectio5]
+@Tempora/Epi6-0:Lectio4:s/A toto .*//s
+
+[Lectio6]
+@Tempora/Epi6-0:Lectio4:s/.* A toto/A toto/s
+
+[Lectio9]
+@Tempora/Epi6-0:Lectio7:s/Člověkem, .*//s
+
+[Lectio10]
+@Tempora/Epi6-0:Lectio7:s/.* Člověkem,/Člověkem,/s s/$/~/
+@Tempora/Epi6-0:Lectio8:s/Hlásání .*//s
+
+[Lectio11]
+@Tempora/Epi6-0:Lectio8:s/.* Hlásání/Hlásání/s
+
+[Lectio12]
+@Tempora/Epi6-0:Lectio9:s/Větvemi .*//

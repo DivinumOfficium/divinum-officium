@@ -1,0 +1,45 @@
+[Lectio1]
+@Tempora/Pent07-0::1-5 s/-5/-3/
+
+[Lectio2]
+@Tempora/Pent07-0:Lectio1:2-6 s/1-4/4-6/ s/1 .*4/4/s
+@Tempora/Pent07-0:Lectio2:2-3 s/ Erat.*//s
+
+[Lectio3]
+@Tempora/Pent07-0:Lectio2:s/5-/6-/ s/5.*(Erat)/6 $1/s
+(sed rubrica cisterciensis)
+@Tempora/Pent07-0:Lectio3:1-5:s/11-15/11-14/
+
+[Lectio5]
+@Tempora/Pent07-0:Lectio4:s/Expónat .*//s
+(sed rubrica cisterciensis)
+@Tempora/Pent07-0:Lectio4:s/.*(Expónat)/$1/
+
+[Lectio6]
+@Tempora/Pent07-0:Lectio4:s/.* Expónat /Expónat /s
+(sed rubrica cisterciensis)
+@Tempora/Pent07-0:Lectio5
+
+[Lectio7]
+@Tempora/Pent07-0:Lectio5
+(sed rubrica cisterciensis)
+@Tempora/Pent07-0:Lectio6:s/Senéctus.*//
+
+[Lectio8]
+@Tempora/Pent07-0:Lectio6
+(sed rubrica cisterciensis)
+@Tempora/Pent07-0:Lectio6:s/.*(Senéctus)/$1/
+
+[Lectio9]
+@Tempora/Pent07-0:Lectio7:s/Regnum .*//s
+
+[Lectio10]
+@Tempora/Pent07-0:Lectio7:s/.* Regnum /Regnum /s s/$/~/
+@Tempora/Pent07-0:Lectio8:s/Multi .*//s
+
+[Lectio11]
+@Tempora/Pent07-0:Lectio8:s/.* Multi /Multi /s s/$/~/
+@Tempora/Pent07-0:Lectio9:s/De nostro .*//s
+
+[Lectio12]
+@Tempora/Pent07-0:Lectio9:s/.* De nostro /De nostro /s

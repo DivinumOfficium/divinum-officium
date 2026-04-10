@@ -1,0 +1,27 @@
+[Rank]
+Stolce sv. Petra v Antiochii
+
+[Lectio6] (rubrica 1617)
+@Sancti/02-22:Lectio5:s/Požehnán .*//
+
+[Lectio94]
+@Sancti/01-18:Lectio4:s/At that.*//s
+@Sancti/01-18:Lectio5:s/.*(O most.*). The.*/$1. /s
+@Sancti/01-18:Lectio6
+
+[Lectio7] (rubrica 1617)
+@Sancti/02-22:Lectio5:s/.* (Požehnán )/$1/ s/$/~/
+@Sancti/02-22:Lectio6:s/ Když.*//
+
+[Lectio8] (rubrica 1617)
+@Sancti/02-22:Lectio6:s/.*Když/Když/
+
+[Lectio10] (rubrica 1617)
+@Sancti/02-22:Lectio8:s/ A na této.*//
+
+[Lectio11] (rubrica 1617)
+@Sancti/02-22:Lectio8:s/.* A na této/A na této/ s/$/~/
+@Sancti/02-22:Lectio9:s/ Tato pravomoc.*//
+
+[Lectio12] (rubrica 1617)
+@Sancti/02-22:Lectio9:s/.*Tato pravomoc/Tato pravomoc/

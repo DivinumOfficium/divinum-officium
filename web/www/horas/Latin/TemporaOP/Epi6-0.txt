@@ -1,0 +1,23 @@
+@Tempora/Epi6-0
+
+[Ant 1]
+@TemporaM/Epi2-0:Responsory11:1-2 s/R. // s/\n\* (.)/, \l$1/
+
+[Lectio1]
+@Tempora/Epi4-0::1-8 s/-7/-6/
+
+[Lectio2]
+@Tempora/Epi4-0::1 s/8-14/7-11/
+@Tempora/Epi4-0:Lectio1:9
+@Tempora/Epi4-0::2-5
+
+[Responsory2]
+@TemporaOP/Epi2-0
+
+[Lectio3]
+@Tempora/Epi4-0::1 s/15-18/12-16/
+@Tempora/Epi4-0:Lectio2:6-8
+@Tempora/Epi4-0::2-3
+
+[Responsory3]
+@TemporaOP/Pent01-0:Responsory Vespera 1

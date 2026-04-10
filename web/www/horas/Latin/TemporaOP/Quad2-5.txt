@@ -1,0 +1,21 @@
+@Tempora/Quad2-5
+
+[Lectio1]
+@Tempora/Quad2-5::s/ Multis .*//
+
+[Responsory1]
+@TemporaOP/Quad2-2
+
+[Lectio2]
+@Tempora/Quad2-5:Lectio1:s/.* (?=Multis)//s s/$/~/
+@Tempora/Quad2-5::s/ Unde.*//
+
+[Responsory2]
+@Tempora/Quad2-0:Responsory4
+
+[Lectio3]
+@Tempora/Quad2-5:Lectio2:s/.* Unde/Dénique/ s/$/~/
+@Tempora/Quad2-5::s/ Itaque.*//
+
+[Responsory3]
+@Tempora/Quad2-0:Responsory5

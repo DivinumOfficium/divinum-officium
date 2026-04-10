@@ -1,14 +1,5 @@
-[Rank]
-Pretiosissimi Sanguinis Domini Nostri Jesu Christi;;Duplex I classis;;6;;
-
-[Rule]
-proprium
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Psalm5 Vespera=116
-Psalm5 Vespera3=147
-Festum Domini
+[Officium]
+Most Precious Blood of Our Lord Jesus Christ
 
 [Ant Vespera]
 Who is this that * cometh from Edom, with dyed garments from Bozrah? this, that is glorious in His apparel?
@@ -16,11 +7,6 @@ I that speak * in righteousness, mighty to save.
 He was clothed * with a vesture dipped in blood, and His name is called The Word of God.
 Wherefore art Thou * red in thine apparel, and thy garments like him that treadeth in the wine-vat?
 I have trodden * the wine-press alone, and of the people there was none with Me.
-
-[Capitulum Vespera]
-!Heb 9:11-12
-v. Brethren, Christ being come an High Priest of good things to come, by a greater and more perfect tabernacle, not made with hands, that is to say, not of this building neither by the blood of goats and calves, but by His Own Blood, He entered in once into the Holy Place, having obtained eternal redemption.
-$Deo gratias
 
 [Hymnus Vespera]
 v. With glad and joyous strains now let each street resound,
@@ -121,16 +107,22 @@ Amen.
 And when eight days were accomplished * for the circumcising of the child, His Name was called Jesus.;;2
 And being in an agony * He prayed more earnestly, and His Sweat was as it were great drops of Blood falling down to the ground.;;3
 Judas, which had betrayed Him, * repented himself, and brought again the thirty pieces of silver, saying: I have sinned, in that I have betrayed the innocent Blood.;;15
-V. Lord, Thou hast redeemed us.
-R. By thy Blood.
 Pilate, * willing to content the people, delivered Jesus, when he had scourged Him, to be crucified.;;22
 When Pilate saw * that he could prevail nothing, he took water, and washed his hands before the multitude, saying: I am innocent of the Blood of this just Person.;;29
 Then answered * all the people and said: His Blood be on us, and on our children.;;63
-V. The blood of Jesus Christ, the Son of God.
-R. Cleanseth us from all sin.
 Then came Jesus forth, * wearing the crown of thorns, and the purple robe. And Pilate saith unto them: Behold the Man.;;73
 And He, bearing His Cross, * went forth into a place called the place of a Skull, where they crucified Him.;;87
-But when they came to Jesus, and saw that He was dead already, * they brake not His legs but one of the soldiers with a spear pierced His Side, and forth with came thereout Blood and Water.;;93
+But when they came to Jesus, and saw that He was dead already, * they brake not His legs but one of the soldiers with a spear pierced His Side, and forthwith came thereout Blood and Water.;;93
+
+[Nocturn 1 Versum]
+V. Lord, Thou hast redeemed us.
+R. By thy Blood.
+
+[Nocturn 2 Versum]
+V. The blood of Jesus Christ, the Son of God.
+R. Cleanseth us from all sin.
+
+[Nocturn 3 Versum]
 V. Christ loved us.
 R. And washed us from our sins in His Own Blood.
 
@@ -194,12 +186,12 @@ V. But with the Precious Blood of Christ, as of a lamb without spot.
 R. Ye know that ye were not redeemed with corruptible things, as silver and gold.
 
 [Lectio5]
-The statues of monarchs, mindless and speechless images though they be, have sometimes been an helpful refuge to men endowed with soul and reason, not because they are works of the brazier's skill, but because the likeness they bear is a King's. And just so did this unconscious blood deliver the lives of men, not because it was blood, but because it foreshadowed the shedding of the Blood of Jesus. On that night in Egypt, when the destroying Angel saw the blood upon the lintel and on the two side-posts, he passed over the door, and came not in unto the house. Even so now much more will the destroyer of souls flee away when he seeth, not the lintel and the two side-posts sprinkled with the blood of a lamb, but the mouth of the faithful Christian, the living dwelling of the Holy Ghost, shining with the blood of the True Messiah. If the Angel let the type be, how shall not the enemy quail before the Reality? Wouldest thou hear more of the power of that Blood I am willing. Consider from what source it welleth, from what fountain it springeth. Its fountain is the Heart of the Lord, pierced for us upon the Cross. Then came the soldiers, and brake the legs of the first, and of the other which was crucified with Him but when they came to Jesus, and saw that He was dead already, they brake not His Legs, but one of the soldiers with a spear pierced His Side, and forthwith came thereout Blood and Water, (John xix, 32-34,) whereof One is a figure of Baptism, and the other of the Sacrament (of the Altar.) One of the soldiers with a spear pierced His Side the veil of the Temple of His Body was rent in twain. (John ii. 19-21, Matth. xxvii. 51.) O how glorious is the treasure that is laid open to me therein How noble the riches that it is my joy there to have found!
+The statues of monarchs, mindless and speechless images though they be, have sometimes been an helpful refuge to men endowed with soul and reason, not because they are works of the brazier's skill, but because the likeness they bear is a King's. And just so did this unconscious blood deliver the lives of men, not because it was blood, but because it foreshadowed the shedding of the Blood of Jesus. On that night in Egypt, when the destroying Angel saw the blood upon the lintel and on the two side-posts, he passed over the door, and came not in unto the house. Even so now much more will the destroyer of souls flee away when he seeth, not the lintel and the two side-posts sprinkled with the blood of a lamb, but the mouth of the faithful Christian, the living dwelling of the Holy Ghost, shining with the blood of the True Messiah. If the Angel let the type be, how shall not the enemy quail before the Reality? Wouldest thou hear more of the power of that Blood I am willing. Consider from what source it welleth, from what fountain it springeth. Its fountain is the Heart of the Lord, pierced for us upon the Cross. Then came the soldiers, and brake the legs of the first, and of the other which was crucified with Him but when they came to Jesus, and saw that He was dead already, they brake not His Legs, but one of the soldiers with a spear pierced His Side, and forthwith came thereout Blood and Water, (John xix, 32-34,) whereof One is a figure of Baptism, and the other of the Sacrament (of the Altar.) One of the soldiers with a spear pierced His Side and the veil of the Temple of His Body was rent in twain. (John ii. 19-21, Matth. xxvii. 51.) O how glorious is the treasure that is laid open to me therein! How noble the riches that it is my joy there to have found!
 
 [Responsory5]
 R. Ye are bought with a great price, therefore:
 * Glorify God and bear Him in your body.
-V. Ye are bought with a price be not ye the servants of men.
+V. Ye are bought with a price; be not ye the servants of men.
 R. Glorify God and bear Him in your body.
 
 [Lectio6]
@@ -220,7 +212,7 @@ At that time: When Jesus had received the vinegar, He said: It is finished. And 
 _
 Homily by St. Augustine, Bishop of Hippo
 !120th Tract on John
-One of the soldiers with a spear pierced His Side, and forthwith came thereout Blood and Water. The Evangelist speaketh carefully. He saith not that he smote the Side, nor yet that he wounded It, nor yet anything else, but pierced pierced It, to fling wide the entrance unto life, whence flow the Sacraments of the Church, those Sacraments without which there is no entrance unto the life which is life indeed. That Blood which was shed there was shed for the remission of sins, that Water is the water that mantleth in the cup of salvation. Therein are we washed, and thereof do we drink. Of this was it a type when it was said unto Noah: The door of the ark shalt thou set in the side thereof and of every living thing of all flesh shalt thou bring into the ark to keep them alive. (Gen. vi. 16, 19.) A figure this of the Church. Thus was it that the first woman was made from the side of her husband while he slept, and she was called (Eve, which is, being interpreted,) Life, because she was the mother of all living. (Gen. iii. 20.) This name set forth a great good, before it became associated with the bitter fruit of a great evil. And here we have the Second Adam bowing His Head, and the deep sleep of death falling upon Him upon the Cross, and He sleepeth, that the Lord God may take a thing out of His side, and may make thereof a wife for Him. O what a death was His, which quickeneth the dead! What is cleaner than His Blood? What more health-giving than His wounding?
+One of the soldiers with a spear pierced His Side, and forthwith came thereout Blood and Water. The Evangelist speaketh carefully. He saith not that he smote the Side, nor yet that he wounded It, nor yet anything else, but pierced It, to fling wide the entrance unto life, whence flow the Sacraments of the Church, those Sacraments without which there is no entrance unto the life which is life indeed. That Blood which was shed there was shed for the remission of sins, that Water is the water that mantleth in the cup of salvation. Therein are we washed, and thereof do we drink. Of this was it a type when it was said unto Noah: The door of the ark shalt thou set in the side thereof and of every living thing of all flesh shalt thou bring into the ark to keep them alive. (Gen. vi. 16, 19.) A figure this of the Church. Thus was it that the first woman was made from the side of her husband while he slept, and she was called (Eve, which is, being interpreted,) Life, because she was the mother of all living. (Gen. iii. 20.) This name set forth a great good, before it became associated with the bitter fruit of a great evil. And here we have the Second Adam bowing His Head, and the deep sleep of death falling upon Him upon the Cross, and He sleepeth, that the Lord God may take a thing out of His side, and may make thereof a wife for Him. O what a death was His, which quickeneth the dead! What is cleaner than His Blood? What more health-giving than His wounding?
 
 [Responsory7]
 R. This is He That came by Water and Blood, even Jesus Christ;
@@ -230,7 +222,7 @@ R. Not by Water only, but by Water and Blood.
 
 [Lectio8]
 !Enarr. in Psalm 95, n. 5
-Then were being held bondsmen to the devil, slaves to evil spirits. But they have been redeemed from that bondage. They had been able to sell themselves, but they were not able to redeem themselves. A Redeemer came and paid the price for them. He shed His Blood, and at that cost bought the world. Ye ask what He bought Look what He paid, and ye shall see what He bought. Christ's Blood was the price. What is His Blood worth? What, but the whole world What but all men They are very unthankful for His redemption, or very proud, who say that It is only precious enough to buy the Africans, or that they themselves are so precious that It was shed only for them. Let there be an end to such conceit, an end to such vainglory. What He paid, He paid for all.
+Then were being held bondsmen to the devil, slaves to evil spirits. But they have been redeemed from that bondage. They had been able to sell themselves, but they were not able to redeem themselves. A Redeemer came and paid the price for them. He shed His Blood, and at that cost bought the world. Ye ask what He bought? Look what He paid, and ye shall see what He bought. Christ's Blood was the price. What is His Blood worth? What, but the whole world? What, but all men? They are very unthankful for His redemption, or very proud, who say that It is only precious enough to buy the Africans, or that they themselves are so precious that It was shed only for them. Let there be an end to such conceit, an end to such vainglory. What He paid, He paid for all.
 
 [Responsory8]
 R. God hath predestinated us unto the adoption of children by Jesus Christ;
@@ -251,6 +243,11 @@ These are they which came out of great tribulation, * and have washed their robe
 Therefore are they before the throne of God, * and serve Him day and night.
 And they overcame the dragon * by the Blood of the Lamb, and by the word of their testimony.
 Blessed are they * that wash their robes in the Blood of the Lamb.
+
+[Capitulum Laudes]
+!Heb 9:11-12
+v. Brethren, Christ being come an High Priest of good things to come, by a greater and more perfect tabernacle, not made with hands, that is to say, not of this building neither by the blood of goats and calves, but by His Own Blood, He entered in once into the Holy Place, having obtained eternal redemption.
+$Deo gratias
 
 [Hymnus Laudes]
 v. Hail, holy wounds of Jesus, hail,
@@ -306,50 +303,41 @@ R. We shall be saved from wrath through Him.
 [Ant 2]
 The blood shall be * to you for a token, saith the Lord, and when I see the Blood I will pass over you, and the plague shall not be upon you to destroy you.
 
+[Lectio Prima]
+!Heb 9:19-20
+v. Moses took the blood of calves and goats, with water, and scarlet wool and hyssop, and sprinkled both the book itself and all the people, saying: This is the blood of the testament, which God hath enjoined unto you.
+
 [Versum Prima]
 Thou, who redeemed us with your blood.
 
-[Lectio Prima]
-!Heb 9:19-20
-v. Moses he took the blood of calves and goats, with water, and scarlet wool and hyssop, and sprinkled both the book itself and all the people, saying: This is the blood of the testament, which God hath enjoined unto you.
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Lord, Thou hast redeemed us * by thy Blood.
 R. Lord, Thou hast redeemed us * by thy Blood.
 V. Out of every kindred, and tongue, and people.
 R. By thy Blood.
 &Gloria
 R. Lord, Thou hast redeemed us * by thy Blood.
-_
-V. The Blood of Jesus Christ, the Son of God
-R. Cleanseth us from all sin.
 
 [Capitulum Sexta]
 !Heb 9:13-14
 v. If the blood of bulls and of goats, and the ashes of an heifer, sprinkling the unclean, sanctifieth to the purifying of the flesh, how much more shall the Blood of Christ, Who through the Holy Spirit offered Himself without spot to God, purge our conscience from dead works, to serve the living God?
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. The Blood of Jesus Christ, the Son of God, * cleanseth us.
 R. The Blood of Jesus Christ, the Son of God, * cleanseth us.
 V. From all sin.
 R. Cleanseth us.
 &Gloria
 R. The Blood of Jesus Christ, the Son of God, * cleanseth us.
-_
-V. Christ loved us.
-R. And washed us from our sins in His Own Blood.
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Christ loved us, and washed us from our sins * in His Own Blood.
 R. Christ loved us, and washed us from our sins * in His Own Blood.
 V. And hath made us unto our God and Father a kingdom and priests.
 R. In His Own Blood.
 &Gloria
 R. Christ loved us, and washed us from our sins * in His Own Blood.
-_
-V. Being justified by the Blood of Christ.
-R. We shall be saved from wrath through Him.
 
 [Versum 3]
 V. We therefore pray thee, help thy servants.

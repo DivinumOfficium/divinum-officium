@@ -1,8 +1,12 @@
-[Rank]
-Feria V post Cineres;;Feria major;;2.9
+[Officium]
+Feria V post Cineres
 
-[Rank](rubrica 1960)
-Feria V post Cineres;;Feria major;;3
+[Rank]
+;;Feria major;;2.1
+(sed rubrica 1930)
+;;Feria major;;4.9
+(sed rubrica 196)
+;;Feria major;;3.9
 
 [Rule]
 Preces Feriales
@@ -23,7 +27,7 @@ V. Dómine, non sum dignus ut intres sub tectum meum: sed tantum dic verbo, et s
 R. Amen dico tibi, ego véniam, et curábo eum.
 
 [Lectio2]
-Si enim hoc ita gestum est, quómodo erit verum, quod Matthǽus narrat: Accéssit ad eum quidam centúrio, cum ipse non accésserit, sed amícos misérit: nisi diligénter adverténtes intellegámus Matthǽum non omnímodo deseruísse usitátum morem loquéndi? Non solum enim dícere solémus, accessísse áliquem étiam antequam pervéniat illuc, quo dícitur accessísse: unde étiam dícimus: Parum accéssit, vel multum accéssit eo, quo áppetit perveníre: verum étiam ipsam perventiónem cujus adipiscéndi causa accéditur, dícimus plerúmque factam, etsi eum, ad quem pérvenit, non vídeat ille qui pérvenit, cum per amícum pérvenit ad áliquem, cujus ei favor est necessárius. Quod ita ténuit consuetúdo, ut jam étiam vulgo perventóres appelléntur, qui poténtium quorúmlibet tamquam inaccessíbiles ánimos, per conveniéntium personárum interpositiónem, ambitiónis arte pertíngunt.
+Si enim hoc ita gestum est, quómodo erit verum, quod Matthǽus narrat: Accéssit ad eum quidam centúrio, cum ipse non accésserit, sed amícos míserit: nisi diligénter adverténtes intellegámus Matthǽum non omnímodo deseruísse usitátum morem loquéndi? Non solum enim dícere solémus, accessísse áliquem étiam antequam pervéniat illuc, quo dícitur accessísse: unde étiam dícimus: Parum accéssit, vel multum accéssit eo, quo áppetit perveníre: verum étiam ipsam perventiónem cujus adipiscéndi causa accéditur, dícimus plerúmque factam, etsi eum, ad quem pérvenit, non vídeat ille qui pérvenit, cum per amícum pérvenit ad áliquem, cujus ei favor est necessárius. Quod ita ténuit consuetúdo, ut jam étiam vulgo perventóres appelléntur, qui poténtium quorúmlibet tamquam inaccessíbiles ánimos, per conveniéntium personárum interpositiónem, ambitiónis arte pertíngunt.
 
 [Responsory2]
 @Tempora/Quadp3-0:Responsory2
@@ -34,19 +38,12 @@ Non ergo absúrde Matthǽus, étiam quod vulgo possit intéllegi, per álios fac
 [Responsory3]
 @Tempora/Quadp3-0:Responsory3
 
-[Versum 2]
-V. Repléti sumus mane misericórdia tua.
-R. Exsultávimus, et delectáti sumus.
-
 [Ant 2]
 Dómine, * puer meus jacet paralýticus in domo, et male torquétur: Amen dico tibi, ego véniam, et curábo eum.
 
 [Oratio 2]
 Deus, qui culpa offénderis, pæniténtia placáris: preces pópuli tui supplicántis propítius réspice; et flagélla tuæ iracúndiæ, quæ pro peccátis nostris merémur, avérte.
 $Per Dominum
-
-[Versum 3]
-@Tempora/Quadp3-3:Versum 3
 
 [Ant 3]
 Dómine, * non sum dignus ut intres sub tectum meum: sed tantum dic verbo, et sanábitur puer meus.

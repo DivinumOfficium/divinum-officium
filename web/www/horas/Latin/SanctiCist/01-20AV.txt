@@ -1,0 +1,25 @@
+@Sancti/01-20
+
+[Officium]
+SS. Fabiani et Sebastiani, Martyrum
+
+[Rank]
+;;Duplex;;3;;ex C3
+
+[Rule]
+vide C3;
+12 lectiones
+Psalmi Dominica
+in 3 Nocturno Lectiones ex Commune in 2 loco
+
+[Lectio5]
+@Sancti/01-20:Lectio4:s/in persecutióne Décii // s/coronátus,.*/coronátur./
+
+[Lectio6]
+@Sancti/01-20:Lectio5:s/In illis .*//
+
+[Lectio7]
+@Sancti/01-20:Lectio5:s/.* (In illis )/$1/
+
+[Lectio8]
+@Sancti/01-20:Lectio6:s/Ejus corpus .*//

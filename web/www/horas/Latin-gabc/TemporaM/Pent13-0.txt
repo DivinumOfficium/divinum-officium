@@ -1,0 +1,13 @@
+[Lectio9]
+@Tempora/Pent13-0:Lectio7:s/Quæréndum.*//s
+
+[Lectio10]
+@Tempora/Pent13-0:Lectio7:s/.* Quæréndum/Quæréndum/s s/$/~/
+@Tempora/Pent13-0:Lectio8:s/Nulla.*//s
+
+[Lectio11]
+@Tempora/Pent13-0:Lectio8:s/.* Nulla/Nulla/s s/$/~/
+@Tempora/Pent13-0:Lectio9:s/Hi.*//s
+
+[Lectio12]
+@Tempora/Pent13-0:Lectio9:s/.* Hi/Hi/s

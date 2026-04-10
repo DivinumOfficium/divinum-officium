@@ -1,0 +1,30 @@
+[Rank]
+@Tempora/Pasc5-1
+
+[Rule]
+no Te Deum
+
+[Lectio1]
+@Tempora/Pasc6-2:Lectio1:1
+@Tempora/Pasc6-2:Lectio2:!2-4 s/7-/10-/
+
+[Responsory1]
+@Tempora/Pasc4-0
+
+[Lectio2]
+@Tempora/Pasc6-2:Lectio3:1-4 s/-21/-17/
+
+[Responsory2]
+@Tempora/Pasc4-0
+
+[Lectio3]
+@Tempora/Pasc6-2:Lectio3:!2-4 s/15-/18-/
+
+[Responsory3]
+@TemporaOP/Pasc4-0
+
+[Ant 2]
+@Tempora/Pasc5-1
+
+[Ant 3]
+Omnis qui petit áccipit: et qui quærit, ínvenit: et pulsánti aperiétur, allelúja.

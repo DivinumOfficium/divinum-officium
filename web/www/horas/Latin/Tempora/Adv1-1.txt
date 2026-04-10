@@ -1,5 +1,10 @@
+[Officium]
+Feria II infra Hebdomadam I Adventus
+
 [Rank]
-Feria II infra Hebdomadam I Adventus;;Feria major;;2
+;;Feria major;;2.1
+(sed rubrica cisterciensis)
+;;Feria major;;1.15
 
 [Rule]
 Oratio Dominica
@@ -47,8 +52,19 @@ R. Nam in illa die stillábunt montes dulcédinem, et colles fluent lac et mel, 
 &Gloria
 R. Nam in illa die stillábunt montes dulcédinem, et colles fluent lac et mel, dicit Dóminus.
 
+[Ant Laudes] (rubrica cisterciensis)
+@Tempora/Adv1-0
+
 [Ant 2]
 Angelus Dómini * nuntiávit Maríæ, et concépit de Spíritu Sancto, allelúja.
 
-[Ant 3]
+[Ant 3_]
 Leva, Jerúsalem, * óculos tuos, et vide poténtiam regis: ecce Salvátor venit sólvere te a vínculo.
+
+[Ant 3C]
+Jerúsalem, * réspice ad Oriéntem, et vide, allelúia.
+
+[Ant 3]
+@:Ant 3_
+(sed rubrica cisterciensis aut rubrica praedicatorum)
+@:Ant 3C

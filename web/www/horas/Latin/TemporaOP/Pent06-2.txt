@@ -1,0 +1,22 @@
+@Tempora/Pent06-2
+
+[Lectio1]
+@Tempora/Pent05-3::1 s/-7/-3/
+@Tempora/Pent05-3:Lectio3:1-4 s/, unxerúntque.*/./
+
+[Responsory1]
+@TemporaOP/Pent01-2
+
+[Lectio2]
+@Tempora/Pent05-3:Lectio3:!2-3 s/1-7/3-6/ s/.*, (unxerúntque)/3 \u$1/ s/, dictúmque.*/./s
+
+[Responsory2]
+@TemporaOP/Pent03-2:Responsory2
+
+[Lectio3]
+@Tempora/Pent05-3:Lectio3:!2-6 s/1-7/6-8/ s/.*, (dictúmque)/6 \u$1/
+8 Proposúerat enim David in die illa prǽmium, qui percussísset Jebusǽum, et tetigísset dómatum fístulas, et abstulísset cæcos et claudos odiéntes ánimam David. Idcírco dícitur in provérbio: Cæcus et claudus non intrábunt in templum.
+
+[Responsory3]
+@TemporaOP/Pent03-2:Responsory3
+

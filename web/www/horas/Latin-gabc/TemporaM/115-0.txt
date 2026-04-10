@@ -1,0 +1,15 @@
+[Lectio1]
+@Tempora/115-0:Lectio1:s/-3/-2/ s/3 .*//s
+
+[Lectio2]
+@Tempora/115-0:Lectio1:2-5 s/-3/-5/ s/1-/3-/ s/1 .*3 /3 /s
+@Tempora/115-0:Lectio2:s/!.*// s/6 .*//s s/Quod .*//s
+
+[Lectio3]
+@Tempora/115-0:Lectio2:s/4-/5-/ s/4 .*Quod/5 Quod/s
+
+[Lectio5]
+@Tempora/115-0:Lectio4:s/Mox illis .*//s
+
+[Lectio6]
+@Tempora/115-0:Lectio4:s/.* Mox illis /Mox illis /s

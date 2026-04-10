@@ -1,5 +1,8 @@
+[Officium]
+Feria IV infra Hebdomadam IV Adventus
+
 [Rank]
-Feria IV infra Hebdomadam IV Adventus;;Feria major;;2
+;;Feria major;;2.1
 
 [Rule]
 Oratio Dominica
@@ -9,14 +12,14 @@ De Isaía Prophéta
 !Isa 51:1-3
 1 Audíte me, qui sequímini quod justum est, et quǽritis Dóminum: atténdite ad petram unde excísi estis, et ad cavérnam laci, de qua præcísi estis. 
 2 Atténdite ad Abraham patrem vestrum, et ad Saram, quæ péperit vos, quia unum vocávi eum, et benedíxi ei, et multiplicávi eum. 
-3 Consolábitur ergo Dóminus Sion, et consolábitur omnes ruínas ejus: et ponet desértum ejus quasi delícias, et solitúdinem ejus quasi hortum Dómini. Gaudium et lætítia inveniétur in ea, gratiárum actio et vox laudis.
+3 Consolábitur ergo Dóminus Sion, et consolábitur omnes ruínas ejus: et ponet desértum ejus quasi delícias, et solitúdinem ejus quasi hortum Dómini. Gáudium et lætítia inveniétur in ea, gratiárum áctio et vox laudis.
 
 [Responsory1]
 @Tempora/Adv4-0:Responsory7
 
 [Lectio2]
 !Isa 51:4-6
-4 Atténdite ad me, pópule meus, et tribus mea, me audíte: quia lex a me éxiet, et judícium meum in lumem populórum requiéscet. 
+4 Atténdite ad me, pópule meus, et tribus mea, me audíte: quia lex a me éxiet, et judícium meum in lucem populórum requiéscet. 
 5 Prope est justus meus, egréssus est salvátor meus, et brácchia mea pópulos judicábunt: me ínsulæ exspectábunt, et brácchium meum sustinébunt. 
 6 Leváte in cælum óculos vestros, et vidéte sub terra deórsum: quia cæli sicut fumus liquéscent, et terra sicut vestiméntum atterétur, et habitatóres ejus sicut hæc interíbunt: Salus autem mea in sempitérnum erit, et justítia mea non defíciet.
 
@@ -31,5 +34,11 @@ De Isaía Prophéta
 [Responsory3]
 @Tempora/Adv4-0:Responsory9
 
+[Ant Laudes] (rubrica cisterciensis)
+@Tempora/Adv4-0
+
 [Ant 2]
 Ponam in Sion * salútem, et in Jerúsalem glóriam meam, allelúja.
+
+[Ant 2] (rubrica cisterciensis)
+Non auferétur * sceptrum de Juda, et dux de fémore ejus, donec véniat qui mitténdus est: et ipse erit expectátio Géntium.

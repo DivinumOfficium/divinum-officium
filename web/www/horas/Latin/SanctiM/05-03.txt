@@ -1,37 +1,92 @@
-[Rank]
-Ss. Alexandri et Sociorum Martyrum;;Simplex;;1.1;;vide C3
+@Sancti/05-03
 
 [Rule]
-vide C3;
+12 lectiones
+Psalmi Dominica
 
-[Ant 2]
-Filiae Jerusalem, * venite, et videte Martyres cum coronis, quibus coronavit eos~
-Dominus in die solemnitatis et laetitiae, alleluia, alleluia
+[Ant Matutinum]
+@Sancti/05-03::1
+;;2
+;;4
+;;5
+;;8
+;;14
+@Sancti/05-03::4 s/4/22/
+;;26
+;;75
+;;95
+;;96
+;;97
+@Sancti/05-03::7 s/;;95/;;246;247;248/
 
-[Versum 2]
-V. Pretiosa in conspectu Domini, alleluia.
-R. Mors sanctorum ejus, alleluia.
+[Lectio3]
+@Sancti/05-03::1-6 s/-15/-12/
 
-[Oratio]
-Praesta quaesumus omnipotens Deus: ut qui sanctorum tuorum Alexandri, Eventii,~
-Theoduli, atque Juvenalis natalitia colimus, a cunctis malis imminentibus, eorum~
-intercessionibus liberemur.
-$Per Dominum.
+[Lectio4]
+@Sancti/05-03:Lectio3:s/.*!/!/s s/9-/13-/ s/9.*13/13/s
 
-[Lectio93]
-Alexander Romanus, Adriano imperatore regens Ecclesiam, magnam partem Romanae~
-nobilitatis ad Christum convertit. Is constituit, ut tantummodo panis et vinum~
-in mysterio offerretur: vinum autem aqua misceri jussit, propter sanguinem et~
-aquam, quae ex Jesu Christi latere profluxerunt: et in Canone Missse addidit:~
-Qui pridie quam pateretur. Idem decrevit, ut aqua benedicta sale admixto,~
-perpetuo in ecclesia asservaretur, et in cubiculis adhiberetur ad fugandos~
-daemones. Sedit annos decem, menses quinque, et dies viginti, vitae sanctitate~
-et salutaribus institutis illustris. Martyrio coronatus est una cum Eventio et~
-Theodulo presbyteris, sepultusque est via Nomentana, tertio ab Urbe lapide,~
-eodem in loco ubi securi percussus fuerat; creatis diverso tempore mense~
-Decembri presbyteris sex, diaconis duobus, et episcopis per diversa loca~
-quinque. Eorum corpora postea in Urbem translata, in ecclesia sanctae Sabinae~
-condita sunt. In eumdem diem incidit beata mors sancti Juvenalis Narniensis~
-episcopi: qui cum plurimos in ea urbe sanctitate et doctrina Christo peperisset,~
-clarus miraculis in pace quievit, ibique honorifice sepultus est.
-&teDeum
+[Responsory4]
+@SanctiM/09-14
+
+[Lectio5]
+@Sancti/05-03:Lectio4
+
+[Responsory5]
+@Sancti/05-03:Responsory4
+
+[Lectio6]
+@Sancti/05-03:Lectio5
+
+[Responsory6]
+@Sancti/05-03:Responsory5
+
+[Lectio7]
+@Sancti/05-03:Lectio6:s/Clavos.*//s
+
+[Responsory7]
+@Sancti/05-03:Responsory6
+
+[Lectio8]
+@Sancti/05-03:Lectio6:s/.*(Clavos)/$1/s
+
+[Responsory8]
+@SanctiM/09-14
+
+[Lectio9]
+@Sancti/05-03:Lectio7:s/Et de.*//s
+
+[Responsory9]
+@Sancti/05-03:Responsory7
+
+[Lectio10]
+@Sancti/05-03:Lectio7:s/.* (Et de)/$1/s
+
+[Responsory10]
+@Sancti/05-03:Responsory8
+
+[Lectio11]
+@Sancti/05-03:Lectio8:s/Int.ndat.*//s
+
+[Responsory11]
+@SanctiM/09-14
+
+[Lectio12]
+@Sancti/05-03:Lectio8:s/.*(Int.ndat)/$1/s
+
+[Responsory12]
+@SanctiM/09-14
+
+[Responsory TertiaM]
+@Sancti/05-03:Versum 1
+
+[Responsory SextaM]
+@Sancti/05-03:Versum 2
+
+[Responsory NonaM]
+@Sancti/05-03:Nocturn 3 Versum
+
+[Versum 3] (nisi rubrica cisterciensis)
+@Sancti/05-03:Versum 1
+
+[Evangelium]
+@Sancti/05-03

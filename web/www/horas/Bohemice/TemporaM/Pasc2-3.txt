@@ -1,0 +1,46 @@
+@Tempora/Pasc2-3
+
+[Officium]
+Slavnost svatého Josefa, Snoubence Nejblahoslavenější Panny Marie, Vyznavače a Patrona Všeobecné Církve
+
+[Lectio3]
+@Tempora/Pasc2-3:Lectio3:s/-49/-45a/ s/ Tak byl.*//s
+
+[Lectio4]
+@Tempora/Pasc2-3:Lectio3::s/44-/45b-/ s/44.*Tak byl/45 Tak byl/s
+
+[Lectio5]
+@Tempora/Pasc2-3:Lectio4
+
+[Lectio6]
+@Tempora/Pasc2-3:Lectio5
+
+[Lectio7]
+@Tempora/Pasc2-3:Lectio6:s/Pamatuj.*//s
+
+[Lectio8]
+@Tempora/Pasc2-3:Lectio6:s/.* Pamatuj/Pamatuj/s
+
+[Lectio9]
+@Tempora/Pasc2-3:Lectio7
+
+[Lectio10]
+@Tempora/Pasc2-3:Lectio8
+
+[Lectio11]
+@Tempora/Pasc2-3:Lectio9:s/Není.*//s
+
+[Lectio12]
+@Tempora/Pasc2-3:Lectio9:s/.*Není/Není/s
+
+[Responsory TertiaM] (nisi rubrica cisterciensis)
+@Tempora/Pasc2-3:Nocturn 1 Versum
+
+[Responsory SextaM] (nisi rubrica cisterciensis)
+@Tempora/Pasc2-3:Versum Sexta
+
+[Responsory NonaM] (nisi rubrica cisterciensis)
+@Tempora/Pasc2-3:Versum Nona
+
+[Evangelium]
+@Tempora/Pasc2-3

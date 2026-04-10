@@ -1,0 +1,23 @@
+[Lectio1]
+@Tempora/113-0:Lectio1:
+@Tempora/113-0:Lectio2:s/!.*// s/5 .*//s
+
+[Lectio2]
+@Tempora/113-0:Lectio2:s/-9/-7/ s/8 .*//s
+
+[Lectio3]
+@Tempora/113-0:Lectio2:s/-9/-10/ s/5-/8-/ s/5 .*8 /8 /s
+@Tempora/113-0:Lectio3:s/!.*// s/11 .*//s
+
+[Lectio4]
+@Tempora/113-0:Lectio3:s/10-/11-/ s/10 .*11 /11 /s
+
+[Lectio6]
+@Tempora/113-0:Lectio5:s/Et ne .*//s
+
+[Lectio7]
+@Tempora/113-0:Lectio5:s/.* Et ne /Et ne /s s/$/~/
+@Tempora/113-0:Lectio6:s/Magna .*//s
+
+[Lectio8]
+@Tempora/113-0:Lectio6:s/.* Magna /Magna /s

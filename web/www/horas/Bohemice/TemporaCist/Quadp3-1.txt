@@ -1,0 +1,6 @@
+[Lectio2]
+@Tempora/Quadp3-1:Lectio1:s/1-6/5-7/ s/.*5/5/s
+@Tempora/Quadp3-1:Lectio2:2:s/Tehdy .*//
+
+[Lectio3]
+@Tempora/Quadp3-1:Lectio2:1-4:s/-11/-9/ s/.* (Tehdy)/7 $1/s

@@ -1,10 +1,10 @@
 [parameters]
-$pope='(nomen Papae),(name of Pope)';;
-$bishop='(nomen Episcopi),(name of Bishop)';;
+$pope='Leone,Leo';;
+$bishop='(nomen Episcopi in casu ablativus),(name of Bishop)';;
 $lang1='Latin';;
 $whitebground='1';;
-$blackfont='black';;
-$smallblack='-1 black';;
+$blackfont='';;
+$smallblack='-1';;
 $redfont=' italic red';;
 $initiale='+2 bold italic red';;
 $largefont='+1 bold italic red';;
@@ -12,26 +12,28 @@ $smallfont='1 red';;
 $titlefont='+1 red';;
 $screenheight='1024';;
 $textwidth='100';;
+$nofancychars='0';;
+$building='0';;
+$langfb='English'
 
 [parameterscheck]
-ttobcccccccnn
+ttobcccccccnnbbt
 
 [general]
-$version1='Rubrics 1960';;
-$version2='New Mass';;
-$testmode='regular';;
+$version='Rubrics 1960 - 1960';;
 $lang2='English';;
-$votive=' ';;
+$votive='Hodie';;
 $rubrics='1';;
 $solemn='0';;
 
 [generalcheck]
-oooobb
+ooobb
 
 [generalc]
-$version='Rubrics 1960';;
+$version1='Rubrics 1960 - 1960';;
+$version2='New Mass';;
 $lang1='Latin';;
-$lang2='English';;
+$lang2='Latin';;
 
 [generalccheck]
-ooo
+oooo

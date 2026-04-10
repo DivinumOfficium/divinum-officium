@@ -1,0 +1,38 @@
+[Lectio5]
+@Sancti/01-13:Lectio4
+
+[Lectio6]
+@Sancti/01-13:Lectio5:s/Jan Křtitel .*//s
+
+[Lectio7]
+@Sancti/01-13:Lectio5:s/.* (Jan Křtitel)/$1/s s/$/~/
+@Sancti/01-13:Lectio6:s/Duch .*//s
+
+[Lectio8]
+@Sancti/01-13:Lectio6:s/.*Duch /Duch /s
+
+[Lectio9]
+@Sancti/01-13:Lectio7
+
+[Lectio10]
+@Sancti/01-13:Lectio8:s/Neboť .*//s
+
+[Lectio11]
+@Sancti/01-13:Lectio8:s/.*Neboť /Neboť /s s/$/~/
+@Sancti/01-13:Lectio9:s/Někteří .*//s
+
+[Lectio12]
+@Sancti/01-13:Lectio9:s/.*Někteří /Někteří /s
+
+[Ant Laudes]
+Starého člověka * chtěl obnovit Spasitel, a přišel tedy ke křtu, aby přirozenost, která byla poskvrněna, vodou obnovil: a oděl nás tím neporušitelným hávem.
+Tebe, jenž v duchu * a ohni očišťuješ lidské neduhy, Boha a Spasitele, všichni oslavujeme.
+Jan Křtitel se zalekl, * a neodvážil se dotknout temene svatého Božího, avšak volal s obavami: Posvěť mě, Spasiteli.
+Hlavu zlého draka * Spasitel rozdrtil v řece Jordánu a všechny vytrhl z jeho moci.
+Veliké tajemství * se dnes zjevuje: Stvořitel všeho v Jordánu smývá naše zločiny.
+
+[Ant 2]
+Předchůdce * Jan jásá, když v Jordánu pokřtil Pána; celý okrsek zemský propukl v jásot; a v posvěcených vodách byly odpuštěny naše hříchy; k němu všichni volejme: Smiluj se nad námi.
+
+[Ant 3]
+Prameny vod * byly posvěceny, když se Kristus zjevil ve slávě. Okrsky světa, nabírejte vodu z pramenů Spasitelových; dnes totiž posvětil Kristus, náš Bůh, všechno tvorstvo.

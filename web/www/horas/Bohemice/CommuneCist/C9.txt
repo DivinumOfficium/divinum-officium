@@ -1,0 +1,55 @@
+[Ant 1]
+Slyšel jsem * hlas z nebe, který pravil: Blažení mrtví, kteří umírají v Pánu.
+
+[Oratio_Cist]
+v. Bože, jemuž vlastní jest vždy se smilovat a ušetřit: buď milostiv duším svých služebníků a služebnic, a odpusť všechny jejich hříchy; aby vysvobozeny z pout smrtelnosti zasloužily si přejít do života věčného. 
+v. Bože, jenž v hojnosti uděluješ slitování, a miluješ spásu člověka: žádáme tvou slitovnost, abys udělil bratrům, příbuzným a dobrodincům naší kongregace, kteří odešli z tohoto světa, za neustávajících přímluv blahoslavené Marie, vždy Panny, spolu se všemi tvými Svatými, dojíti k přebývání ve věčné blaženosti.
+v. Bože, všech věrných Stvořiteli a Vykupiteli, duším svých služebníků a služebnic uděl odpuštění všech hříchů; aby odpuštění, o něž vždy žádaly, pro zbožné prosby obdrželi. 
+v. Jenž žiješ a kraluješ na věky věkův.
+R. Amen.
+
+[Nocturn 1 Versum]
+V. Duše má je velmi znepokojena. 
+R. Avšak ty, Hospodine, přispěj jí na pomoc.
+
+[Nocturn 2 Versum]
+V. Obrať se, Hospodine, a vysvoboď mou duši.
+R. Uzdrav mě pro své milosrdenství.
+
+[Nocturn 3 Versum]
+V. Na věčnou paměť budou spravedliví.
+R. Nebudou se bát, že uslyší něco zlého.
+
+[Responsory3 Versum]
+V. A můj zrak už se neobrací, aby viděl dobro.
+
+[Responsory5]
+@Commune/C9:Responsory6:1-2
+V. Nevstupuj v soud se svými služebníky, Hospodine.
+@Commune/C9:Responsory6:4
+
+[Responsory6]
+@Commune/C9:Responsory91:1:s/, neboť.*/./
+@Commune/C9:Responsory91:1-2:s/.*, neboť/* Neboť/ s/viděli\;.* neboť/viděli, neboť/s
+@Commune/C9:Responsory91:3
+@Commune/C9:Responsory91:1-2:s/.*, neboť/R. Neboť/ s/viděli\;.* neboť/viděli, neboť/s
+$Requiem
+@Commune/C9:Responsory91:1-2:s/.*, neboť/R. Neboť/ s/viděli\;.* neboť/viděli, neboť/s
+
+[Responsory8]
+@Commune/C9::1:s/; proto.*/./
+@Commune/C9::1-2:s/.*; proto/* Proto/ s/vznešenost.* Abys/Vznešenost, abys/s 
+@Commune/C9::3:s/očisti\./očisti, neboť před tebou samotným jsem zhřešil./
+@Commune/C9::1-2:s/.*; proto/* Proto/ s/vznešenost.* Abys/Vznešenost, abys/s
+
+[Lectio9]
+!2. kniha Makabejská, 12:43-46
+43 Přemocný muž Juda uspořádal sbírku podle soupisu mužů; vybralo se při ní dva tisíce drachem stříbra a ty poslal do Jerusaléma, aby byla přinesena oběť za hřích. Takové jednání bylo jistě dobré a šlechetné — vždyť přitom myslel na vzkříšení!
+44 (Kdyby totiž nevěřil, že padlí vstanou z mrtvých, bylo by zbytečné a směšné modlit se za mrtvé.)
+45 Ale on myslel na nádhernou odměnu, která je uchována těm, kdo zemřou ve zbožnosti,
+46 a to byla opravdu svatá a zbožná myšlenka. Proto dal vykonat smírnou oběť za mrtvé, aby byli zbaveni hříchu.
+
+[Ant Laudes]
+@Commune/C9:Ant Laudes_:1-3 s/;;62/;;62;66/ 
+Vysvobodil jsi, Hospodine, * mou duši, aby nezahynula.;;222
+@Commune/C9:Ant Laudes_:5 s/;;150/;;148;149;150/

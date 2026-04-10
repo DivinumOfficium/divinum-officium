@@ -1,0 +1,19 @@
+@Tempora/Quad1-1
+
+[Lectio1]
+@Tempora/Quad1-1::s/Nam profécto, .*//
+
+[Lectio2]
+@Tempora/Quad1-1:Lectio1:s/.* (Nam profécto,)/$1/s
+
+[Lectio3]
+@Tempora/Quad1-1:Lectio2
+
+[Responsory1]
+@TemporaCist/Quad1-0
+
+[Responsory2]
+@TemporaCist/Quad1-0
+
+[Responsory3]
+@TemporaCist/Quad1-0

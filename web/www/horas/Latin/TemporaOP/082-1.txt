@@ -1,0 +1,25 @@
+[Lectio1]
+@Tempora/082-2::1 s/9-13/10-12/
+@Tempora/082-2:Lectio2:1
+@Tempora/082-2:Lectio2:3-5
+
+[Responsory1]
+@TemporaOP/081-0
+
+[Lectio2]
+@Tempora/082-2::1 s/9-13/13-15/
+@Tempora/082-2::6
+@Tempora/082-2:Lectio3:2-3
+
+[Responsory2]
+@Tempora/081-0
+
+[Lectio3]
+@Tempora/082-2::!2-3 s/14-17/16-19/
+18 Dixi in corde meo de fíliis hóminum, ut probáret eos Deus, et osténderet símiles esse béstiis.
+19 Idcírco unus intéritus est hóminis et jumentórum, et æqua utriúsque condítio.
+
+[Responsory3]
+@Tempora/081-0:Responsory3:1-4
+&Gloria
+@Tempora/081-0:Responsory3:2 s/.* (omni)/R. \u$1/

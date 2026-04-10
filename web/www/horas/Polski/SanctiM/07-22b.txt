@@ -1,0 +1,30 @@
+[Lectio7]
+@Sancti/07-22:Lectio6:s/ Gdy tedy.*//
+
+[Lectio8]
+@Sancti/07-22:Lectio6:s/.*Gdy tedy/Gdy tedy/
+
+[Lectio9]
+@Sancti/07-22:Lectio7:s/Wiedziała.*//
+
+[Lectio10]
+@Sancti/07-22:Lectio7:s/.*Wiedziała/Wiedziała/s s/$/~/
+@Sancti/07-22:Lectio8:s/Że.*//
+
+[Lectio11]
+@Sancti/07-22:Lectio8:s/.* Że/Że/
+
+[Capitulum Laudes]
+!Pnp 3:1-2
+v. Na łóżku mojem w nocy szukałam tego, którego miłuje dusza moja: szukałam go, a nie nalazłam. Wstanę a obieżę miasto: po ulicach i po rynkach szukać będę, którego miłuje dusza moja.
+$Deo gratias
+
+[Capitulum Sexta]
+!Pnp 3:3-4
+v. Zaliście widzieli, którego miłuje dusza moja? Maluczko odszedłszy od nich, nalazłam tego, którego miłuje dusza moja. Poimałam go i nie puszczę go.
+$Deo gratias
+
+[Capitulum NonaM]
+!Pnp 8:6
+v. Przyłóż mię, jako pieczęć do serca twego, jako pieczęć do ramienia twego; bo mocna jest jako śmierć miłość, twarda jako piekło rzewliwość: pochodnie jéj pochodnie ognia i płomieniów.
+$Deo gratias

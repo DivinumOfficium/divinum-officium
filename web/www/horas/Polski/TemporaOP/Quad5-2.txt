@@ -1,0 +1,16 @@
+[Lectio1]
+@Tempora/Quad5-2::s/ Pozostając.*//
+
+[Responsory1]
+@Tempora/Quad5-0:Responsory4:1-2
+V. Boże, Boże mój, wejrzyj na mnię.
+@Tempora/Quad5-0:Responsory4:4
+
+[Lectio2]
+@Tempora/Quad5-2:Lectio1:s/.* (?=Pozostając)//s s/$/~/
+@Tempora/Quad5-2
+
+[Responsory2]
+@Tempora/Quad5-0:Responsory7:1-2
+V. A którzy mi szukali złego, mówili marności: a zdrady cały dzień wymyślali.
+@Tempora/Quad5-0:Responsory7:4

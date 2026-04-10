@@ -1,0 +1,38 @@
+[Officium]
+S. Joannis Chrysostomi Episcopi Confessoris Ecclesiae Doctoris
+
+[Comment]
+Sv. Jana Zlatoústého, biskupa, vyznavače a Učitele Církve
+! Barva bílá
+✝ 407 v Komaně v Pontu
+
+[Name]
+Jana Zlatoústého
+Postcommunio=Jan Zlatoústý
+
+[Oratio]
+Milost nebeská, prosíme, Pane, nechť obšťastňuje Církev tvou, kterou jsi chtěl osvítiti slavnými zásluhami a naukami svatého Jana Zlatoústého, vyznavače tvého a biskupa.
+$Per Dominum.
+
+[Introitus]
+@Commune/C4a:Introitus
+
+[Lectio]
+@Commune/C4a:Lectio
+
+[Graduale]
+!Sir 44,16
+Hle, kněz veliký, jenž ve dnech svých Bohu se líbil.
+!Sir 44,20
+Nikdo nebyl nalezen, jenž by podobně jako on zachovával zákona Nejvyššího. Aleluja, aleluja.
+!Jak 1,12
+Blahoslavený člověk, jenž snáší pokušení, neboť když bude zkušen, obdrží korunu života. Aleluja.
+
+[Evangelium]
+@Commune/C4a:Evangelium
+
+[Offertorium]
+@Commune/C4a:Offertorium
+
+[Communio]
+@Commune/C4a:Communio

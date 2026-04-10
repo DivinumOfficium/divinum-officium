@@ -1,16 +1,19 @@
-[Rank]
-S. Isidori Episc. Confessoris et Ecclesiæ Doctoris;;Duplex;;3;;vide C4a
+[Officium]
+S. Isidori Episcopi Confessoris et Ecclesiæ Doctoris
 
-[Name]
-Isidore
+[Rank]
+;;Duplex;;3;;vide C4a
+(sed rubrica 1960 aut rubrica innovata)
+;;Duplex;;2.1;;vide C4a
+(sed rubrica 1963)
+;;Simplex;;1.1;;vide C4
 
 [Rule]
 vide C4a;
 Gloria
-CredoDa
+CredoDA
 
-[Oratio]
-Deus, qui pópulo tuo ætérnæ salútis beátum Isidórum minístrum tribuísti:~
-præsta quǽsumus; ut, quem Doctórem vitæ habúimus in terris, intercessórem~
-habére mereámur in cælis.
-$Per Dominum
+[Name]
+Isidórum
+Secreta=Isidóri
+Postcommunio=Isidórus

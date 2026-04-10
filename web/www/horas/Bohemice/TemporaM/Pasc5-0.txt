@@ -1,0 +1,30 @@
+
+[Lectio3]
+@Tempora/Pasc5-5:Lectio1
+
+[Lectio4]
+@Tempora/Pasc5-5:Lectio2
+
+[Lectio5]
+@Tempora/Pasc5-0:Lectio4
+
+[Lectio6]
+@Tempora/Pasc5-0:Lectio5:s/Takže .*//s
+
+[Lectio7]
+@Tempora/Pasc5-0:Lectio5:s/.* (?=Takže )//s
+
+[Lectio8]
+@Tempora/Pasc5-0:Lectio6
+
+[Lectio9]
+@Tempora/Pasc5-0:Lectio7
+
+[Lectio10]
+@Tempora/Pasc5-0:Lectio8:s/Takto .*//s
+
+[Lectio11]
+@Tempora/Pasc5-0:Lectio8:s/.* (?=Takto )//s
+
+[Lectio12]
+@Tempora/Pasc5-0:Lectio9

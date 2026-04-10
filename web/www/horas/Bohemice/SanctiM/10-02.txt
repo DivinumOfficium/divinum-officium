@@ -1,0 +1,115 @@
+
+[AntMatutinumM]
+Stál Anděl * podél chrámového oltáře, měl zlatou kadidelnici ve své ruce.;;95
+Pošli, Hospodine, * dobrého Anděla před námi v bázni před tvou paží, aby se báli ti, kdo nás nenávidí.;;97
+Můj Anděl * je s vámi, praví Hospodine; on sám pak bude střežit vaše duše.;;98
+
+[Ant Matutinum 3N]
+Hle, já * pošlu svého Anděla, jenž připraví mou cestu před tebou.
+
+[Ant Matutinum]
+@Sancti/10-02::1-6
+@Sancti/10-02::7 s/95/89/
+@:AntMatutinumM:1
+@Sancti/10-02::8
+@:AntMatutinumM:2-3
+@Sancti/10-02::9
+;;266;267;268
+
+[Lectio1]
+@Sancti/10-02:Lectio1:
+
+[Lectio2]
+@Sancti/10-02:Lectio2
+
+[Lectio3]
+!Zach 1:13-16
+13 Nato odpověděl Hospodin andělovi, který se mnou mluvil, dobrotivými, utěšujícími slovy.
+14 Anděl, který se mnou mluvil, mi řekl: 'Ohlas toto: Tak praví Hospodin zástupů: Horlím pro Jerusalém a Sión velkou horlivostí,
+15 ale velmi se hněvám na zpupné pohany, kteří překročili míru, když já jsem se hněval jen málo.
+16 Proto tak praví Hospodin: S milosrdenstvím se zase obrátím k Jerusalému, můj dům bude v něm vystaven – praví Hospodin zástupů – znovu bude natažen měřický provaz v Jerusalémě.
+
+[Lectio4]
+@Sancti/10-02:Lectio3
+
+[Responsory4]
+R. Uviděl Jákob † žebřík státi nad zemi, a jeho vrchol se dotýkal nebe, a Andělé Boží po něm vystupovali, a Hospodina, kterak se opíral o žebřík a pravil sám pro sebe:
+* Já jsem Hospodin, tvůj Bůh a tvůj ochránce, neboť přicházíš.
+V. Vycházeli Jákobovi vstříc Andělé Boží, a když je uviděl, pravil: Toto je tábor Boží, skrze nějž mi pomáhá Boh, když praví.
+R. Já jsem Hospodin, tvůj Bůh a tvůj ochránce, neboť přicházíš.
+
+[Lectio5]
+@Sancti/10-02:Lectio4:s/ Nejvyšší .*//
+
+[Responsory5]
+@Sancti/10-02:Responsory4
+
+[Lectio6]
+@Sancti/10-02:Lectio4:s/.* (Nejvyšší)/$1/s
+
+[Responsory6]
+@Sancti/10-02:Responsory5
+
+[Lectio94]
+@Sancti/10-02:Lectio4
+
+[Lectio7]
+@Sancti/10-02:Lectio5
+
+[Responsory7]
+@Sancti/10-02:Responsory6
+
+[Lectio8]
+@Sancti/10-02:Lectio6
+
+[Responsory8]
+@Sancti/05-08:Responsory2
+
+[Lectio9]
+@Sancti/10-02:Lectio7:s/ Je tedy.*//
+
+[Responsory9]
+@Sancti/10-02:Responsory7
+
+[Lectio10]
+@Sancti/10-02:Lectio7:s/.* (?=Je tedy)//s s/$/~/
+@Sancti/10-02:Lectio8:s/ Proto .*//
+
+[Responsory10]
+@Sancti/10-02:Responsory8
+
+[Lectio11]
+@Sancti/10-02:Lectio8:s/.* (?=Proto)// s/$/~/
+@Sancti/10-02:Lectio9:s/ Proto i.*//
+
+[Responsory11]
+R. Když uslyšíš † můj hlas, a uděláš vše, co říkám, budu nepřítelem tvým nepřátelům, a stíhat ty, kdo tě trápí.
+* A půjde před tebou můj Anděl.
+V. A dovede tě do země, kterou jsem slíbil tvým praotcům.
+R. A půjde před tebou můj Anděl.
+
+[Lectio12]
+@Sancti/10-02:Lectio9:s/.* (?=Proto i)//
+
+[Responsory12]
+@Sancti/05-08:Responsory3
+
+[MM Capitulum]
+@Sancti/10-02:Capitulum Sexta
+_
+@Sancti/05-08:Versum Tertia
+
+[Responsory Laudes]
+@Sancti/05-08:Responsory Breve Tertia
+
+[Responsory TertiaM]
+@Sancti/05-08:Versum 1
+
+[Responsory SextaM]
+@Sancti/05-08:Versum Tertia
+
+[Responsory NonaM]
+@:Versum 3
+
+[Ant Vespera 3]
+@Sancti/05-08:Ant Vespera:s/$/_/gm s/_/;;109/ s/_/;;110/ s/_/;;111/ s/_/;;137/ s/_//

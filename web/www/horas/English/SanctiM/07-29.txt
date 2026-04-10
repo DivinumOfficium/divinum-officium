@@ -1,0 +1,15 @@
+[Lectio5]
+@Sancti/07-29:Lectio4: s/\, but by.*/./
+
+[Lectio6]
+@Sancti/07-29:Lectio4: s/.* but by/But by/
+@Sancti/07-29:Lectio5: s/ Mary.*//
+
+[Lectio7]
+@Sancti/07-29:Lectio5: s/.* Mary/Mary/
+
+[Lectio10]
+@Sancti/07-29:Lectio8: s/ He had.*//
+
+[Lectio11]
+@Sancti/07-29:Lectio8: s/.* He had/He had/

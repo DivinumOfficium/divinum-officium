@@ -1,0 +1,6 @@
+[Lectio1]
+@Sancti/12-10bmv:Lectio4:s/$/~/
+@Sancti/12-10bmv:Lectio5:s/It hath.*//s
+
+[Lectio2]
+@Sancti/12-10bmv:Lectio5:s/.*(It hath)/$1/s

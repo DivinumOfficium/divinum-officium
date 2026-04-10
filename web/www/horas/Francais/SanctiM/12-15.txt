@@ -1,0 +1,15 @@
+[Lectio5]
+@Sancti/12-15:Lectio4:s/Prenant.*//s
+
+[Lectio6]
+@Sancti/12-15:Lectio4:s/.*(Prenant)/$1/s
+
+[Lectio9]
+@Sancti/12-15:Lectio7:s/Salut.*//s
+
+[Lectio10]
+@Sancti/12-15:Lectio7:s/.*(Salut)/$1/s s/$/~/
+@Sancti/12-15:Lectio8:s/C\’est.*//s
+
+[Lectio11]
+@Sancti/12-15:Lectio8:s/.*(C\’est)/$1/s

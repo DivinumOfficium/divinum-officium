@@ -1,0 +1,24 @@
+[Lectio1]
+@Tempora/081-6
+
+[Responsory1]
+@Tempora/081-0:Responsory5:1-3 s/\n\* (.*): (.)/ \l$1:\n* \u$2/
+@Tempora/081-0:Responsory5:2 s/.*: (.)/R. \u$1/
+
+[Lectio2]
+@Tempora/081-6::1-5
+
+[Responsory2]
+R. Magna enim sunt judícia tua, Dómine, et inenarrabília verba tua:
+* Magnificásti pópulum tuum et honorásti.
+V. Deduxísti sicut oves pópulum tuum in manu Móysi et Aaron.
+R. Magnificásti pópulum tuum et honorásti.
+
+[Lectio3]
+@Tempora/081-6::1
+@Tempora/081-6:Lectio2:6
+@Tempora/081-6::2-5
+
+[Responsory3]
+@Tempora/081-0:Responsory6:1-5
+@Tempora/081-0:Responsory6:2 s/.*, (.)/R. \u$1/

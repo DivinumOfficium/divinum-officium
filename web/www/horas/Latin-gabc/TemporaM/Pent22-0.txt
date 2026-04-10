@@ -1,0 +1,13 @@
+[Lectio9]
+@Tempora/Pent22-0:Lectio7:s/Igitur .*//s
+
+[Lectio10]
+@Tempora/Pent22-0:Lectio7:s/.* Igitur /Igitur /s s/$/~/
+@Tempora/Pent22-0:Lectio8:s/Pharisǽi .*//s
+
+[Lectio11]
+@Tempora/Pent22-0:Lectio8:s/.* Pharisǽi /Pharisǽi /s s/$/~/
+@Tempora/Pent22-0:Lectio9:s/Porro .*//s
+
+[Lectio12]
+@Tempora/Pent22-0:Lectio9:s/.* Porro /Porro /s

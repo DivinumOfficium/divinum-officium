@@ -1,0 +1,115 @@
+@Sancti/01-25
+
+[Rule]
+ex Sancti/06-30;
+12 lectiones
+Sub unica concl
+
+[Rule] (rubrica 196)
+Sub unica concl
+
+[AntMatutinumM]
+@SanctiM/06-30
+
+[Ant Matutinum]
+@SanctiM/06-30
+
+[Responsory1]
+@Sancti/06-30
+
+[Responsory2]
+@Sancti/06-30
+
+[Lectio3]
+@Sancti/01-25::1-4 s/16/12/
+(sed rubrica 1963 omittitur)
+
+[Responsory3]
+@Sancti/06-30
+
+[Lectio4]
+@Sancti/01-25:Lectio3:1 s/10-/13-/
+@Sancti/01-25:Lectio3:5-8
+
+[Lectio4] (rubrica 196)
+@Sancti/01-25:Lectio3
+
+[Responsory4]
+@SanctiM/06-30
+
+[Lectio5]
+@Sancti/01-25:Lectio4:s/ Erat.*//
+
+[Responsory5]
+@Sancti/06-30:Responsory4
+
+[Lectio6]
+@Sancti/01-25:Lectio4:3 s/.* Erat/Erat/ s/$/~/
+@Sancti/01-25:Lectio5:s/erat.*/erat./
+
+[Responsory6]
+@Sancti/06-30:Responsory5
+
+[Lectio7]
+@Sancti/01-25:Lectio5:s/.*erat.//
+
+[Responsory7]
+@Sancti/06-30:Responsory6
+
+[Lectio8]
+@Sancti/01-25:Lectio6
+
+[Responsory8]
+@SanctiM/06-30
+
+[Lectio9]
+@Commune/C1:Lectio7 in 2 loco:s/ In hac.*//
+
+[Responsory9]
+@Sancti/06-30:Responsory7
+
+[Lectio10]
+@Commune/C1:Lectio7 in 2 loco:s/.*In hac/In hac/s s/$/~/
+@Commune/C1:Lectio8 in 2 loco:s/ Nemo.*//
+
+[Responsory10]
+@Sancti/06-30:Responsory8
+
+[Lectio11]
+@Commune/C1:Lectio8 in 2 loco:s/.*Nemo/Nemo/ s/$/~/
+@Commune/C1:Lectio9 in 2 loco:s/Sciéndum.*//g
+
+[Responsory11]
+@SanctiM/06-30
+
+[Lectio12]
+@Commune/C1:Lectio9 in 2 loco:s/.* Sciéndum/Sciéndum/g
+
+[Responsory12]
+@SanctiM/06-30
+
+[MM Capitulum]
+@Sancti/01-25:Capitulum Sexta
+_
+@Commune/C1:Nocturn 2 Versum
+
+[Capitulum Laudes]
+@Sancti/01-25
+
+[Versum 2]
+@Sancti/06-30:Versum 1
+
+[Ant 2] (nisi rubrica cisterciensis)
+@Sancti/06-30
+
+[Responsory TertiaM] (nisi rubrica cisterciensis)
+@Commune/C1:Versum 1
+
+[Ant Vespera 3]
+@Sancti/01-25::s/125/138/
+
+[Ant Vespera 3] (rubrica cisterciensis)
+@Sancti/01-25:Ant Vespera:s/$/_/gm s/_/;;109/ s/_/;;112/ s/_/;;115/ s/_/;;125/ s/_//
+
+[Versum 3]
+@Sancti/06-30:Versum 1

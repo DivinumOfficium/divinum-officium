@@ -1,0 +1,18 @@
+[Lectio7]
+@Sancti/07-22:Lectio6:s/ As.*//s
+
+[Lectio8]
+@Sancti/07-22:Lectio6:s/.* As/As/s
+
+[Lectio9]
+@Sancti/07-22:Lectio7:s/She.*//s
+
+[Lectio10]
+@Sancti/07-22:Lectio7:s/.*She/She/s s/$/~/
+@Sancti/07-22:Lectio8:s/When .*//s
+
+[Lectio11]
+@Sancti/07-22:Lectio8:s/.* When/When/s
+
+[Ant 3]
+A woman * in the city, which was a sinner, brought an alabaster box of ointment, and stood at the Lord's feet, behind him, weeping, and began to wash his feet with tears, and did wipe them with the hairs of her head.

@@ -1,0 +1,23 @@
+@Tempora/Epi2-3
+
+[Lectio1]
+@Tempora/Epi2-2::1-2:s/1-4/10-11/
+@Tempora/Epi2-2:Lectio2:6
+@Tempora/Epi2-2:Lectio3:2
+
+[Lectio2]
+@Tempora/Epi2-2:Lectio3:1:s/11-15/12-14/
+@Tempora/Epi2-2:Lectio3:3-5:s/nos\: .*/nos./
+
+[Lectio3]
+@Tempora/Epi2-2:Lectio3:1:s/11-/14-/
+@Tempora/Epi2-2:Lectio3:5-6:s/.* æstimántes/14 Æstimántes/
+
+[Responsory1]
+@TemporaCist/Epi1-1
+
+[Responsory2]
+@TemporaCist/Epi1-1
+
+[Responsory3]
+@TemporaCist/Epi1-1

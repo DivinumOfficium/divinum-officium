@@ -1,0 +1,85 @@
+@CommuneCist/C5
+
+[Officium]
+@Commune/C5b
+
+[Oratio]
+@Commune/C5b
+
+[Lectio1]
+@CommuneM/C4:Lectio1 in 2 loco
+
+[Lectio2]
+@CommuneM/C4:Lectio2 in 2 loco
+
+[Lectio3]
+@CommuneM/C4:Lectio3 in 2 loco
+
+[Lectio4]
+@CommuneM/C4:Lectio4 in 2 loco
+
+[Lectio9]
+@Commune/C1:Lectio7:s/Jesus autem.*//
+
+[Lectio10]
+@Commune/C1:Lectio7:s/.*Jesus autem/Jesus autem/
+
+[Lectio11]
+@Commune/C1:Lectio8:s/ Locus .*//s
+
+[Lectio12]
+@Commune/C1:Lectio8:s/.* Locus /Locus /s
+
+[Evangelium]
+@Commune/C5b
+
+[Lectio9 in 2 loco]
+@CommuneM/C5b
+
+[Lectio10 in 2 loco]
+@CommuneM/C5b
+
+[Lectio11 in 2 loco]
+@CommuneM/C5b
+
+[Lectio12 in 2 loco]
+@CommuneM/C5b
+
+[Lectio9 in 3 loco]
+@CommuneM/C5b
+
+[Lectio10 in 3 loco]
+@CommuneM/C5b
+
+[Lectio11 in 3 loco]
+@CommuneM/C5b
+
+[Lectio12 in 3 loco]
+@CommuneM/C5b
+
+[Evangelium in 3 loco]
+@CommuneM/C5b
+
+[Lectio9 in 4 loco]
+@CommuneM/C5b
+
+[Lectio10 in 4 loco]
+@CommuneM/C5b
+
+[Lectio11 in 4 loco]
+@CommuneM/C5b
+
+[Lectio12 in 4 loco]
+@CommuneM/C5b
+
+[Lectio9 in 5 loco]
+@CommuneM/C5b
+
+[Lectio10 in 5 loco]
+@CommuneM/C5b
+
+[Lectio11 in 5 loco]
+@CommuneM/C5b
+
+[Lectio12 in 5 loco]
+@CommuneM/C5b

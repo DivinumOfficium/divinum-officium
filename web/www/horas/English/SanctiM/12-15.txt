@@ -1,0 +1,15 @@
+[Lectio5]
+@Sancti/12-15:Lectio4:s/The knowledge.*//s
+
+[Lectio6]
+@Sancti/12-15:Lectio4:s/.*(The knowledge)/$1/s
+
+[Lectio9]
+@Sancti/12-15:Lectio7:s/Hail.*//s
+
+[Lectio10]
+@Sancti/12-15:Lectio7:s/.*(Hail)/$1/s s/$/~/
+@Sancti/12-15:Lectio8:s/There hath.*//s
+
+[Lectio11]
+@Sancti/12-15:Lectio8:s/.*(There hath)/$1/s

@@ -1,0 +1,8 @@
+[Lectio5]
+@Commune/C1a:Lectio4:s/Tvář tedy.*//s
+
+[Lectio6]
+@Commune/C1a:Lectio4:s/.*Tvář tedy/Tvář tedy/s
+
+[Lectio12]
+@Commune/C1a:Lectio9:s/Jemu tedy.*//

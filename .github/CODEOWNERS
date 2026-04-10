@@ -1,0 +1,6 @@
+
+# These files relate to how the application is deployed and run - requires infra team approval before merge
+
+Dockerfile @DivinumOfficium/infrastructure-team
+docker @DivinumOfficium/infrastructure-team
+.github/ @DivinumOfficium/infrastructure-team

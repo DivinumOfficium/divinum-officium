@@ -1,0 +1,30 @@
+@Tempora/Pent07-0
+
+[Ant 1]
+@Tempora/Pent05-0:Ant 1C
+
+[Lectio1]
+@Tempora/Pent05-6::1-4 s/-4/-2/
+
+[Responsory1]
+@Tempora/Pent01-1:Responsory2
+
+[Lectio2]
+@Tempora/Pent05-6::1 s/5-11/3-6/
+@Tempora/Pent05-6:Lectio1:5-6
+@Tempora/Pent05-6::2
+@Tempora/Pent05-6::3 s/\. .*/./
+
+[Responsory2]
+@TemporaOP/Pent03-0
+
+[Lectio3]
+@Tempora/Pent05-6:Lectio2:1 s/5-11/6-9/
+@Tempora/Pent05-6:Lectio2:3 s/.*?\. /6 /
+@Tempora/Pent05-6:Lectio2:4-6
+
+[Lectio7]
+@Tempora/Pent07-0::s/ Regnum .*//
+
+[Responsory3]
+@TemporaOP/Pent01-0:Responsory Vespera 1

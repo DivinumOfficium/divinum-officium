@@ -1,0 +1,113 @@
+@Tempora/Quadp1-0
+
+[Rule]
+12 lectiones
+Psalmi Feria
+Invit5
+
+[Ant 1]
+Fratres, * exístimo enim quod non sunt condígnæ passiónes hujus témporis ad futúram glóriam, quæ revelábitur in nobis, allelúia.
+
+[Invit]
+Quóniam Deus magnus Dóminus: * Et Rex magnus super omnes deos.
+
+[Ant Matutinum 3N]
+Multi * enim sunt vocáti, pauci vero elécti.
+
+[Lectio1]
+@Tempora/Quadp1-0:Lectio1:1-7:s/-8/-5/
+
+[Lectio2]
+@Tempora/Quadp1-0:Lectio1:2-10:s/1-/6-/ s/1 .*6 /6 /s
+
+[Lectio3]
+@Tempora/Quadp1-0:Lectio2:1-4:s/-19/-11/
+
+[Lectio4]
+@Tempora/Quadp1-0:Lectio2:1-6:s/9-19/12-13/ s/9 .*12 /12 /s
+
+[Responsory1]
+@Tempora/Quadp1-0:Responsory2
+
+[Responsory2]
+@Tempora/Quadp1-0:Responsory1:s/creávit Deus/fecit Deus/ s/fecit in/creávit in/
+
+[Responsory3]
+R. Igitur perfécti sunt cæli et terra, et omnis ornátus eórum: complevítque Deus die séptimo opus suum, quod fécerat: et requiévit
+* Ab omni ópere quod patrárat.
+V. Et benedíxit Deus diéi séptimo, et sanctificávit illum, quia in ipso cessáverat
+R. Ab omni ópere quod patrárat.
+
+[Responsory4]
+@Tempora/Quadp1-0:Responsory3
+
+[Lectio5]
+@Tempora/Quadp1-0:Lectio4:s/Hinc .*//s
+
+[Lectio6]
+@Tempora/Quadp1-0:Lectio4:s/.* Hinc /Hinc /s
+
+[Lectio7]
+@Tempora/Quadp1-0:Lectio5
+
+[Lectio8]
+@Tempora/Quadp1-0:Lectio6
+
+[Responsory5]
+@Tempora/Quadp1-0:Responsory4
+
+[Responsory6]
+@Tempora/Quadp1-0:Responsory7
+
+[Responsory7]
+@Tempora/Quadp1-0:Responsory5
+
+[Responsory8]
+@Tempora/Quadp1-0:Responsory6:1-2
+V. Hoc nunc os ex óssibus meis, et caro de carne mea:
+@Tempora/Quadp1-0:Responsory6:2:s/\* /R. /
+
+[Lectio9]
+@Tempora/Quadp1-0:Lectio7:s/Qui habet .*//
+
+[Lectio10]
+@Tempora/Quadp1-0:Lectio7:s/.* (Qui habet)/$1/s s/$/~/
+@Tempora/Quadp1-0:Lectio8:s/Mane étenim .*//
+
+[Lectio11]
+@Tempora/Quadp1-0:Lectio8:s/.* (Mane étenim)/$1/ s/$/~/
+
+[Lectio12]
+@Tempora/Quadp1-0:Lectio9:s/Operátor .*//s
+
+[Responsory9]
+@Tempora/Quadp1-1:Responsory1
+
+[Responsory10]
+R. In sudóre vultus tui vescéris pane tuo, dixit Dóminus ad Adam: cum operátus fúeris terram,
+* Non dabit fructus suos: sed spinas, et tríbulos germinábit tibi.
+V. Pro eo quod obedísti voci uxóris tuæ, plusquam meæ, maledícta terra in ópere tuo.
+R. Non dabit fructus suos: sed spinas, et tríbulos germinábit tibi.
+
+[Responsory11]
+@Tempora/Quadp1-0:Responsory8:1-2
+V. Chérubim collocávit Dóminus, et flámmeum gládium atque versátilem, ad custodiéndam viam ligni vitæ, et ait:
+@Tempora/Quadp1-0:Responsory8:4
+
+[Responsory12]
+@Tempora/Quadp1-0:Responsory9:s/Maledíctus/Nunc ergo maledíctus/
+
+[Ant Laudes]
+Cor contrítum * et humiliátum, Deus, non despícies.
+
+[Responsory Laudes]
+R.br. Adjútor meus esto, Deus, * Ne derelínquas me.
+R. Adjútor meus esto, Deus, * Ne derelínquas me.
+V. Neque despícias me, Deus, salutáris meus.
+R. Ne derelínquas me.
+
+[Ant Tertia]
+@Tempora/Quadp1-0:Ant Sexta
+
+[Ant Sexta]
+@Tempora/Quadp1-0:Ant Tertia

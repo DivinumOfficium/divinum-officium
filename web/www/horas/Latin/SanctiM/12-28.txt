@@ -1,68 +1,101 @@
-[Rank]
-Die quarta post Nativitatem Domini;;Feria;;1;;
+@Sancti/12-28
 
 [Rule]
+12 lectiones
 
-[Oratio]
-Omnipotens sempiterne Deus, dirige actus nostros in beneplacito tuo: ut in~
-nomine dilecti Filii tui mereamur bonis operibus abundare
-$Qui tecum
+[Ant 1] (rubrica cisterciensis)
+O quam * gloriósum est regnum, in quo cum Christo gaudent Innocéntes, amícti stolis albis sequúntur Agnum quocúmque íerit.
+
+[AntMatutinumM]
+Isti * sunt, qui venérunt ex magna tribulatióne, † et lavérunt stolas suas in sánguine Agni.;;33
+Si coram * homínibus torménta passi sunt, † spes electórum est immortális in ætérnum.;;60
+
+[Ant Matutinum 3N]
+Innocéntium * pássio, Christi exsultátio: † Heródes confúsus est qui eos persecútus est.
+
+[Ant Matutinum]
+@Commune/C3::1-2
+@CommuneM/C3:AntMatutinumM:1
+@Commune/C3::4-7
+@:AntMatutinumM:1
+@Commune/C3::9
+@:AntMatutinumM:2
+@CommuneM/C3:AntMatutinumM:3-4
+;;259;254;255
 
 [Lectio1]
-De Jeremia Propheta.
-!Jer 31:15-17
-15 Haec dicit Dominus: Vox in excelso audita est lamentationis: luctus, et~
-fletus Rachel plorantis filios suos, et nolentis consolari super eis, quia non~
-sunt.
-16 Haec dicit Dominus: Quiescat vox tua a ploratu, et oculi tui a lacrimis, quia~
-est merces operi tuo, ait Dominus, et revertentur de terra inimici:
-17 et est spes novissimis tuis, ait Dominus, et revertentur filii ad terminos~
-suos.
-
-[Responsory1]
-R. Centum quadraginta quatuor millia, qui empti sunt de terra, hi sunt qui cum~
-mulieribus non sunt coinquinati:
-* Virgines enim permanserunt, ideo regnant cum Deo, et Agnus Dei cum illis.
-V. Isti sunt qui venerunt ex magna tribulatione, et laverunt stolas suas in~
-sanguine Agni.
-R. Virgines enim permanserunt, ideo regnant cum Deo, et Agnus Dei cum illis.
+@Sancti/12-28:Lectio1
 
 [Lectio2]
-!Jer 31:18-20
-18 Audiens audivi Ephraim transmigrantem: Castigasti me, et eruditus sum, quasi~
-juvenculus indomitus: converte me, et convertar, quia tu Dominus Deus meus.
-19 Postquam enim convertisti me, egi p�nitentiam: et postquam ostendisti mihi,~
-percussi femur meum. Confusus sum, et erubui, quoniam sustinui opprobrium~
-adolescentiae meae.
-20 Si filius honorabilis mihi Ephraim, si puer delicatus ! quia ex quo locutus~
-sum de eo, adhuc recordabor ejus. Idcirco conturbata sunt viscera mea super eum:~
-miserans miserebor ejus, ait Dominus.
-
-[Responsory2]
-R. Sub altare Dei audivi voces occisorum dicentium:
-* Quare non defendis sanguinem nostrum? Et acceperunt divinum responsum: Adhuc~
-sustinete modicum tempus, donec impleatur numerus fratrum vestrorum.
-V. Vidi sub altare Dei animas interfectorum propter verbum Dei, et propter~
-testimonium quod habebant, et clamabant voce magna, dicentes.
-R. Quare non defendis sanguinem nostrum? Et acceperunt divinum responsum: Adhuc~
-sustinete modicum tempus, donec impleatur numerus fratrum vestrorum.
+@Sancti/12-28:Lectio2:s/-20/-19/ s/20 .*//s
 
 [Lectio3]
-!Jer 31:21-23
-21 Statue tibi speculam; pone tibi amaritudines; dirige cor tuum in viam rectam~
-in qua ambulasti: revertere, virgo Isra�l, revertere ad civitates tuas istas.
-22 Usquequo deliciis dissolveris, filia vaga? quia creavit Dominus novum super~
-terram: femina circumdabit virum.
-23 Haec dicit Dominus exercituum, Deus Isra�l: Adhuc dicent verbum istud in~
-terra Juda et in urbibus ejus, cum convertero captivitatem eorum: Benedicat tibi~
-Dominus, pulchritudo justitiae, mons sanctus:
+@Sancti/12-28:Lectio2:s/-20/-21/ s/18-/20-/ s/18 .*20 /20 /s
+@Sancti/12-28:Lectio3:s/!.*// s/22 .*//s
 
-[Responsory3]
-R. Adoraverunt viventem in saecula saeculorum,
-* Mittentes coronas suas ante thronum Domini Dei sui.
-V. Et ceciderunt in conspectu throni in facies suas: et benedixerunt viventem in~
-saecula saeculorum.
-R. Mittentes coronas suas ante thronum Domini Dei sui.
-&Gloria
-R. Mittentes coronas suas ante thronum Domini Dei sui.
+[Lectio4]
+@Sancti/12-28:Lectio3:s/21-/22-/ s/21 .*22 /22 /s
 
+[Responsory4]
+R. Vidi Agnum stantem supra montem Sion, † et cum eo Sanctórum míllia:
+* Et habébant nomen ejus, et nomen Patris ejus scriptum in fróntibus suis.
+V. Hi sunt, qui tolléntes crucem suam, sequúntur agnum ubíque.
+R. Et habébant nomen ejus et nomen Patris ejus scriptum in fróntibus suis.
+
+[Lectio5]
+@Sancti/12-28:Lectio4:s/Nam, .*//s
+
+[Responsory5]
+@Sancti/12-28:Responsory4
+
+[Lectio6]
+@Sancti/12-28:Lectio4:s/.* Nam, /Nam, /s s/$/~/
+@Sancti/12-28:Lectio5:s/Digne .*//s
+
+[Responsory6]
+@Sancti/12-28:Responsory5
+
+[Lectio7]
+@Sancti/12-28:Lectio5:s/.* Digne /Digne /s
+
+[Responsory7]
+@Sancti/12-28:Responsory6
+
+[Lectio8]
+@Sancti/12-28:Lectio6
+
+[Responsory8]
+R. Ambulábunt mecum in albis, quia digni sunt
+* Et non delébo nómina eórum de libro vitæ.
+V. Hi sunt, qui cum muliéribus non sunt coinquináti: † vírgines enim sunt.
+R. Et non delébo nómina eórum de libro vitæ.
+
+[Lectio9]
+@Sancti/12-28:Lectio7
+
+[Responsory9]
+@Sancti/12-28:Responsory7
+
+[Lectio10]
+@Sancti/12-28:Lectio8
+
+[Responsory10]
+@Sancti/12-28:Responsory8
+
+[Lectio11]
+@Sancti/12-28:Lectio9:s/Respondébimus .*//s
+
+[Responsory11]
+R. Isti, qui amícti sunt stolis albis, qui sunt, et unde venérunt? † Et dixit mihi:
+* Hi sunt, qui venérunt de tribulatióne magna, † et lavérunt stolas suas, et dealbavérunt eas in sánguine Agni.
+V. Vidi sub altáre Dei ánimas interfectórum propter verbum Dei, † et propter testimónium quod habébant.
+R. Hi sunt, qui venérunt de tribulatióne magna, † et lavérunt stolas suas, et dealbavérunt eas in sánguine Agni.
+
+[Lectio12]
+@Sancti/12-28:Lectio9:s/.* Respondébimus /Respondébimus /s
+
+[Responsory12]
+R. Sub throno Dei Sancti clamant: † Víndica sánguinem nostrum,
+* Deus noster.
+V. Víndicta Dómine sánguinem Sanctórum tuórum qui effúsus est.
+R. Deus noster.

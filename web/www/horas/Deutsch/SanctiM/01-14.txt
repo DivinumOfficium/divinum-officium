@@ -1,0 +1,6 @@
+[Lectio10]
+@Commune/C4a:Lectio8 in 2 loco:s/$/~/
+@Commune/C4a:Lectio9 in 2 loco:s/Aber.*//s
+
+[Lectio11]
+@Commune/C4a:Lectio9 in 2 loco:s/.*(Aber)/$1/s

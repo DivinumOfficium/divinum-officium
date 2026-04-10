@@ -1,23 +1,28 @@
+[Officium]
+Feria IV Quattuor Temporum in Adventu
+(sed rubrica 196 aut rubrica 1930)
+Feria IV Quattuor Temporum Adventus
+
 [Rank]
-Feria IV Quattuor Temporum in Adventu;;Feria major;;2
-
-[Rank1960]
-Feria IV Quattuor Temporum Adventus;;Feria major;;4
-
-[RankNewcal]
-Feria IV infra Hebdomadam III Adventus;;Feria major;;2
+;;Feria major;;2.1
+(sed rubrica 196 aut rubrica 1930)
+;;Feria major;;4.9
 
 [Rule]
 Preces Feriales
+
+[Oratio]
+Præsta, quǽsumus, omnípotens Deus: ut redemptiónis nostræ ventúra solémnitas et præséntis nobis vitæ subsídia cónferat, et ætérnæ beatitúdinis prǽmia largiátur.
+$Per Dominum.
 
 [Lectio1]
 @Sancti/03-25:Lectio7
 
 [Responsory1]
 R. Clama in fortitúdine, qui annúntias pacem in Jerúsalem: 
-* Dic civitátibus Judæ, et habitatóribus Sion: Ecce Deus noster, quem exspectábimus, advéniet.
+* Dic civitátibus Judæ, et habitatóribus Sion: Ecce Deus noster, quem exspectabámus, advéniet.
 V. Supra montem excélsum ascénde tu, qui evangelízas Sion, exálta in fortitúdine vocem tuam.
-R. Dic civitátibus Judæ, et habitatóribus Sion: Ecce Deus noster, quem exspectábimus, advéniet.
+R. Dic civitátibus Judæ, et habitatóribus Sion: Ecce Deus noster, quem exspectabámus, advéniet.
 
 [Lectio2]
 @Sancti/03-25:Lectio8
@@ -29,7 +34,7 @@ V. Adorábunt eum omnes reges terræ, omnes gentes sérvient ei.
 R. Et erit omnis terra posséssio ejus.
 
 [Lectio3]
-Tanti namque mandáti mystérium non hóminis fuit, sed Angeli ore proméndum. Hódie primum audítur: Spíritus Sanctus supervéniet in te. Et audítur, et créditur. Dénique, Ecce, inquit, ancílla Dómini: contíngat mihi secúndum verbum tuum. Vide humilitátem, vide devotiónem. Ancíllam se dicit Dómini, quæ mater elígitur: nec repentíno exaltáta promísso est.
+@Sancti/03-25:Lectio9
 
 [Responsory3]
 R. Modo véniet Dominátor Dóminus: 
@@ -41,10 +46,6 @@ R. Et nomen ejus Emmánuel vocábitur.
 
 [Ant 2]
 Missus est Gábriel * Angelus ad Maríam Vírginem desponsátam Joseph.
-
-[Oratio]
-Præsta, quǽsumus, omnípotens Deus: ut redemptiónis nostræ ventúra solémnitas et præséntis nobis vitæ subsídia cónferat, et ætérnæ beatitúdinis prǽmia largiátur.
-$Per Dominum.
 
 [Ant 3]
 Ecce ancílla Dómini: * fiat mihi secúndum verbum tuum.

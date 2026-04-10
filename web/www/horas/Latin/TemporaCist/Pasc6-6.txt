@@ -1,0 +1,45 @@
+@Tempora/Pasc6-6
+
+[Rule]
+ex TemporaCist/Pasc5-4;
+Doxology=Asc
+Psalmi Feria
+no secunda vespera
+
+[Oratio]
+@Tempora/Pasc6-0
+
+[Invit]
+@CommuneCist/C2p:Invit 3L
+
+[Ant Matutinum]
+@TemporaCist/Pasc5-5
+
+[Benedictio]
+@TemporaCist/Pasc5-5
+
+[MM Capitulum]
+@:Capitulum Sexta
+_
+@TemporaCist/Pasc5-4:Nocturn 2 Versum
+
+[Capitulum Laudes]
+@Tempora/Pasc6-0
+
+[Versum 2]
+@Tempora/Pasc6-0
+
+[Ant 2]
+@Tempora/Pasc6-0:Ant 1
+
+[Capitulum Sexta]
+@Tempora/Pasc6-0
+
+[Capitulum Nona]
+@Tempora/Pasc6-0
+
+[Versum 3]
+@Tempora/Pasc6-0
+
+[Ant 3]
+@Tempora/Pasc6-0:Ant 3

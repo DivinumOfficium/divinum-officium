@@ -1,0 +1,141 @@
+@Sancti/01-06
+
+[Rule]
+12 lectiones
+Psalmi Dominica
+Doxology=Epi
+Festum Domini
+
+[Responsory Vespera 1]
+@Sancti/01-06:Responsory4
+
+[HymnusM Matutinum]
+@Sancti/01-06:HymnusM Vespera
+
+[AntMatutinumM]
+Suscépimus, * Deus, misericórdiam tuam, † in médio templi tui.;;47
+Homo natus est * in ea, et ipse fundávit eam Altíssimus.;;86
+Notum * fecit Dóminus allelúja; † salutáre suum, allelúja.;;97
+Tria sunt * múnera quæ obtulérunt Magi Dómino, aurum, thus et myrrham: Fílio Dei, Regi magno, allelúja.;;98
+
+[Ant Matutinum 3N]
+Lux de luce * apparuísti, Christ, cui Magi múnera ófferunt, allelúia, allelúia, allelúia.
+
+[Ant Matutinum]
+@Sancti/01-06::1-6
+Vidéntes stellam Magi, * gavísi sunt gáudio magno, et intrántes domum obtulérunt Dómino aurum, thus, et myrrham.;;86
+Christo datus est * principátus et honor regni: omnis pópulus, tribus et linguæ sérvient ei in ætérnum.;;91
+Adoráte Dóminum, * allelúja: in aula sancta ejus, allelúja.;;95
+Adoráte Dóminum, * allelúja: omnes Angeli ejus, allelúja.;;96
+Vídimus stellam ejus * in Oriénte, et vénimus cum munéribus adoráre eum.;;97
+Tria sunt * múnera quæ obtulérunt Magi Dómino, aurum, thus et myrrham: Fílio Dei, Regi magno, allelúia.;;98
+;;263;264;265
+
+[Nocturn 2 Versum]
+@Sancti/01-06:Versum 1_
+
+[Nocturn 3 Versum]
+@Sancti/01-06::s/, allel[uú][ij]a//g
+
+[Lectio1]
+@Sancti/01-06:Lectio1
+
+[Lectio2]
+@Sancti/01-06:Lectio2:s/-6/-3/ s/4 .*//s
+
+[Lectio3]
+@Sancti/01-06:Lectio2:s/1-/4-/ s/1 .*4 /4 /s
+
+[Lectio4]
+@Sancti/01-06:Lectio3
+
+[Responsory2]
+R. Omnes de Saba vénient, aurum et thus deferéntes, et 
+* Laudem Dómino annuntiántes.
+@Sancti/01-06:Responsory5:3
+R. Laudem Dómino annuntiántes.
+
+[Responsory3]
+@Sancti/01-06:Responsory4
+
+[Responsory4]
+@SanctiM/01-06:Responsory11
+
+[Lectio5]
+@Sancti/01-06:Lectio4:s/Jam tunc .*//s
+
+[Responsory5]
+R. Interrogábat Magos Heródes: Quod signum vidístis super natum Regem? Stellam magnam fulgéntem, 
+* Cujus splendor illúminat mundum, et nos cognóvimus et vénimus adoráre Dóminum.
+V. Vídimus enim stellam ejus in Oriénte.
+R. Cujus splendor illúminat mundum, et nos cognóvimus et vénimus adoráre Dóminum.
+
+[Lectio6]
+@Sancti/01-06:Lectio4:s/.* Jam tunc /Jam tunc /s
+
+[Responsory6]
+R. Magi véniunt ab Oriénte Jerosólymam, quæréntes, et dicéntes: 
+* Ubi est qui natus est, cujus stellam vídimus, et vénimus adoráre Dóminum?
+V. Cum natus esset Jesus in Béthlehem Juda in diébus Herodis regis, ecce Magi ab Oriénte venérunt Jerosolymam, dicéntes:
+R. Ubi est qui natus est, cujus stellam vídimus, et vénimus adoráre Dóminum?
+
+[Lectio7]
+@Sancti/01-06:Lectio5
+
+[Responsory7]
+R. Stella, quam víderant Magi in Oriénte, antecedébat eos, donec venírent ad locum, ubi puer erat: vidéntes autem eam,
+* Gavísi sunt gáudio magno.
+V. Et intrántes domum, invenérunt púerum cum María matre ejus, et procidéntes adoravérunt eum.
+R. Gavísi sunt gáudio magno.
+
+[Lectio8]
+@Sancti/01-06:Lectio6:s/Honorétur .*//
+
+[Responsory8]
+@SanctiM/01-06:Responsory12
+
+[Lectio9]
+@Sancti/01-06:Lectio7:s/Quia vidélicet.*//s
+
+[Responsory9]
+@Sancti/01-06:Responsory1InfraOctavam
+
+[Lectio10]
+@Sancti/01-06:Lectio7:s/.* Quia vidélicet/Quia vidélicet/s
+
+[Responsory10]
+@SanctiM/01-06:Responsory4:1-2:s/descéndit/appáriut/
+@SanctiCist/12-25:Responsory1:3
+@SanctiM/01-06:Responsory4:4:s/descéndit/appáriut/
+
+[Lectio11]
+@Sancti/01-06:Lectio8
+
+[Responsory11]
+R. Vidéntes stellam Magi, gavísi sunt gáudio magno, et intrántes domum invenérunt púerum cum María matre ejus, et procidéntes adoravérunt eum: 
+* Et apértis thesáuris suis obtulérunt ei múnera, aurum, thus, et myrrham.
+V. Ab Oriénte venérunt Magi in Béthlehem adoráre Dóminum.
+R. Et apértis thesáuris suis obtulérunt ei múnera, aurum, thus, et myrrham.
+
+[Lectio12]
+@Sancti/01-06:Lectio9:s/Et tamen .*//
+
+[Responsory12]
+@Sancti/01-06:Responsory2
+
+[Evangelium]
+@Sancti/01-06
+
+[Responsory TertiaM] (nisi rubrica cisterciensis)
+@Sancti/01-06:Versum 1:s/\.$/, allelúja./gm
+
+[Capitulum Sexta] (rubrica cisterciensis)
+@Sancti/01-06::s/\: fílii.*|Zdaleka.*//
+
+[Responsory SextaM] (nisi rubrica cisterciensis)
+@Sancti/01-06:Versum Tertia
+
+[Responsory NonaM]
+@Sancti/01-06:Nocturn 3 Versum
+(sed rubrica cisterciensis)
+@Sancti/01-06:Nocturn 3 Versum:s/, allel[úu][ij]a//gi

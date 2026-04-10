@@ -1,0 +1,36 @@
+@Tempora/Adv1-0
+
+[Responsory Vespera 1]
+R. Missus est Gábriel Angelus ad Maríam Vírginem desponsátam Joseph, núntians ei verbum: et expavéscit Virgo de lúmine. Ne tímeas, María, invenísti grátiam apud Dóminum: ecce concípies, et páries,
+* Et vocábitur Altíssimi Fílius.
+V. Dabit ei Dóminus Deus sedem David, patris ejus, et regnábit in domo Jacob in ætérnum.
+R. Et vocábitur Altíssimi Fílius.
+&Gloria
+R. Et vocábitur Altíssimi Fílius.
+
+[Invit]
+Ecce venit Rex: * Occurrámus óbviam Salvatóri nostro.
+
+[In Finem Lectio]
+@TemporaOP/Quad5-0
+
+[Lectio1]
+@Tempora/Adv1-0
+@:In Finem Lectio
+
+[Responsory2]
+@Tempora/Adv1-0:Responsory3:1-3 s/\n\* (.)/ \l$1/ s/(et vocábitur)/\n* \u$1/
+@Tempora/Adv1-0:Responsory3:4 s/.* (et vocábitur)/R. \u$1/
+
+[Lectio3]
+@Tempora/Adv1-0
+@:In Finem Lectio
+
+[Responsory3]
+@TemporaM/Adv1-0:Responsory11
+&Gloria
+@TemporaM/Adv1-0:Responsory11:1
+
+[Capitulum Laudes]
+@Psalterium/Special/Minor Special:Adv Tertia
+

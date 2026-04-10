@@ -1,0 +1,38 @@
+[parameters]
+$pope='(nomen Papae),(name of Pope)';;
+$bishop='(nomen Episcopi),(name of Bishop)';;
+$lang1='Latin';;
+$whitebground='1';;
+$blackfont='black';;
+$smallblack='82 black';;
+$redfont=' italic red';;
+$initiale='150 bold italic red';;
+$largefont='113 bold italic red';;
+$smallfont='63 red';;
+$titlefont='113 red';;
+$screenheight='1024';;
+$textwidth='80';;
+$nofancychars='0';;
+$building='0';;
+
+[parameterscheck]
+ttobcccccccnnbb
+
+[general]
+$version='Rubrics 1960 - 1960';;
+$lang2='English';;
+$votive='Hodie';;
+$rubrics='1';;
+$solemn='0';;
+
+[generalcheck]
+ooobb
+
+[generalc]
+$version1='Rubrics 1960 - 1960';;
+$version2='New Mass';;
+$lang1='Latin';;
+$lang2='Latin';;
+
+[generalccheck]
+oooo

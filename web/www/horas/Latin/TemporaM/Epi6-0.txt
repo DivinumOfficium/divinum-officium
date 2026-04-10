@@ -1,177 +1,65 @@
-[Rank]
-Dominica VI Post Epiphaniam;;Semiduplex;;5
+@Tempora/Epi6-0
 
 [Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Symbolum Athanasium
-
-[Versum 1]
-V. Dirigatur Domine oratio mea.
-R. Sicut incensum in conspectu tuo.
-
-[Ant 1]
-Suscépit Deus * Israël, púerum suum: sicut locútus est ad Abraham, et semen ejus usque in sãculum.
-
-[Oratio]
-Praesta quaesumus omnipotens Deus: ut semper rationabilia meditantes; quae tibi~
-sunt placita, et dictis exsequamur et factis
-$Per Dominum
-
-[Lectio1]
-Incipit epistola ad Hebraeos
-!Heb 1:1-4
-1 Multifariam, multisque modis olim Deus loquens patribus in prophetis:
-2 novissime, diebus istis locutus est nobis in Filio, quem constituit haeredem~
-universorum, per quem fecit et saecula:
-3 qui cum sit splendor gloriae, et figura substantiae ejus, portansque omnia~
-verbo virtutis suae, purgationem peccatorum faciens, sedet ad dexteram~
-majestatis in excelsis:
-4 tanto melior angelis effectus, quanto differentius prae illis nomen~
-hereditavit.
-
-[Responsory1]
-@TemporaM/Epi2-0:Responsory1
+12 lectiones
 
 [Lectio2]
-!Heb 1:5-9
-5 Cui enim dixit aliquando angelorum: Filius meus es tu, ego hodie genui te? Et~
-rursum: Ego ero illi in patrem, et ipse erit mihi in filium?
-6 Et cum iterum introducit primogenitum in orbem terrae, dicit: Et adorent eum~
-omnes angeli Dei.
-7 Et ad angelos quidem dicit: Qui facit angelos suos spiritus, et ministros suos~
-flammam ignis.
-8 Ad Filium autem: Thronus tuus Deus in saeculum saeculi: virga aequitatis,~
-virga regni tui.
-9 Dilexisti justitiam, et odisti iniquitatem: propterea unxit te Deus, Deus tuus,~
-oleo exultationis prae participibus tuis.
-
-[Responsory2]
-@TemporaM/Epi2-0:Responsory2
+@Tempora/Epi6-0:Lectio2:s/-9/-6/ s/7 .*//s
 
 [Lectio3]
-!Heb 1:10-14
-10 Et: Tu in principio, Domine, terram fundasti: et opera manuum tuarum sunt~
-caeli.
-11 Ipsi peribunt, tu autem permanebis, et omnes ut vestimentum veterascent:
-12 et velut amictum mutabis eos, et mutabuntur: tu autem idem ipse es, et anni~
-tui non deficient.
-13 Ad quem autem angelorum dixit aliquando: Sede a dextris meis, quoadusque~
-ponam inimicos tuos scabellum pedum tuorum?
-14 Nonne omnes sunt administratorii spiritus, in ministerium missi propter eos,~
-qui hereditatem capient salutis?
-
-[Responsory3]
-@TemporaM/Epi2-0:Responsory3
+@Tempora/Epi6-0:Lectio2:s/5-/7-/ s/5 .*7/7/s
 
 [Lectio4]
-Sermo sancti Athanasii Episcopi.
-!Orat. 2. contra Arianos, post medium.
-Si personam, rem, tempus apostolici dicti cognoscerent haeretici, numquam humana~
-in Deitatem transferentes, tam impie et stulte adversus Christum sese~
-habuissent. Id intueri licebit, si initium lectionis denuo repetitum probe~
-excipias. Dicit enim Apostolus: Multifariam, multisque modis olim Deus locutus~
-est patribus nostris per Prophetas: ultimis autem diebus locutus est nobis in~
-Filio. Atque ita paulo post dicit: Perfecta ab eo nostrorum peccatorum~
-purificatione, ipsum sedere ad dexteram majestatis in excelsis, tanto meliorem~
-Angelis factura, quanto praestantius nomen prae illis sortitus est. De eo igitur~
-tempore, quo nobis per Filium locutus est, cura peccatorum purgatio fieret,~
-apostolicum dictum mentionem facit. Quando autem nobis locutus est in Filio, aut~
-quando purgatio peccatorum facta, aut quando natus est homo, nisi post Prophetas,~
-idque in ultimis diebus?
+@Tempora/Epi6-0:Lectio3
 
 [Responsory4]
-@TemporaM/Epi2-0:Responsory4
+@TemporaM/Epi2-0
 
 [Lectio5]
-Deinde cum narratio instituta esset de humana Verbi dispensatione, deque~
-ultimis temporibus: consequenter commemoravit, Deum neque superioribus aetatibus~
-tacuisse, sed locutum est per Prophetas: et postquam Prophetae suo officio~
-perfuncti sunt, et lex per Angelos pronuntiata est, et Filius etiam ad nos~
-descendit, et ad ministrandum accessit; tunc demum necessario subintulit: Tanto~
-melior Angelis factus: ostendere volens, quanto Filius prae servo excellit,~
-tanto functione officioque servorum, Filii administrationem meliorem fuisse.
+@Tempora/Epi6-0:Lectio4:s/Atque .*//s
 
 [Responsory5]
-@TemporaM/Epi2-0:Responsory5
+@Tempora/Epi2-0:Responsory4
 
 [Lectio6]
-Functionem igitur discernens Apostolus, tum veterem, tum novam, magna dicendi~
-libertate utitur, ad Judaeos scribens et loquens. Propter hoc igitur non in~
-universum ex propria comparationis ratione dixit, quod major aut honoratior~
-esset: ne quis quasi de ejusdem generis, et cura eo communibus rebus haec verba~
-intelligeret: sed ideo meliorem illum dixit, ut discrimen naturae Filii ad res~
-creatas indicaret.
+@Tempora/Epi6-0:Lectio4:s/.* Atque/Atque/s
 
 [Responsory6]
-@TemporaM/Epi2-0:Responsory6
+@Tempora/Epi2-0:Responsory5
 
 [Lectio7]
-Lectio sancti Evangelii secundum Matthaeum.
-!Matt 13:31-35
-In illo tempore: Dixit Jesus turbis parabolam hanc: Simile est regnum caelorum~
-grano sinapis, quod accipiens homo seminavit in agro suo. Et reliqua.
-_
-Homilia S. Hieronymi Presbyteri.
-!Lib. 2. Comm. in cap. 13. Matth.
-Regnum caelorum praedicatio Evangelii est, et notitia Scripturarum, quae ducit~
-ad vitam, et de qua dicitur ad Judaeos: Auferetur a vobis regnum Dei, et dabitur~
-genti facienti fructus ejus. Simile est ergo hujuscemodi regnum grano sinapis,~
-quod accipiens homo seminavit in agro suo. Homo qui seminat in agro suo, a~
-plerisque Salvator intelligitur, quod in animis credentium seminet: ab aliis~
-ipse homo seminans in agro suo, hoc est in semetipso, et in corde suo.
+@Tempora/Epi6-0:Lectio5
 
 [Responsory7]
-@TemporaM/Epi2-0:Responsory7
+@Tempora/Epi2-0:Responsory6
 
 [Lectio8]
-Quis est iste qui seminat, nisi sensus noster, et animus, qui suscipiens granum~
-praedicationis, et fovens sementem, humore fidei facit in agro sui pectoris~
-pullulare? Praedicatio Evangelii minima est omnibus disciplinis. Ad primam~
-quippe doctrinam, fidem non habet veritatis, hominem Deum, Christum mortuum, et~
-scandalum crucis praedicans. Confer hujuscemodi doctrinam dogmatibus~
-philosophorum, et libris eorum, et splendori eloquentiae, et compositioni~
-sermonum: et videbis quanto minor sit ceteris seminibus sementis Evangelii.
+@Tempora/Epi6-0:Lectio6
 
 [Responsory8]
-@TemporaM/Epi2-0:Responsory8
+@TemporaM/Epi2-0
 
 [Lectio9]
-Sed illa cum creverint, nihil mordax, nihil vividum, nihil vitale demonstrant:~
-sed totum flaccidum marcidumque et mollitum ebullit in olera et in herbas, quae~
-cito arescunt et corruunt. Haec autem praedicatio, quae parva videbatur in~
-principio, cum vel in anima credentis, vel in toto mundo sata fuerit, non~
-exsurgit in olera, sed crescit in arborem: ita ut volucres caeli (quas vel~
-animas credentium, vel fortitudines, Dei servitio mancipatas, sentire debemus)~
-veniant et habitent in ramis ejus. Ramos puto evangelicae arboris, quae de grano~
-sinapis creverit, dogmatum esse diversitates, in quibus supradictarum volucrum~
-unaquaeque requiescit.
+@Tempora/Epi6-0:Lectio7:s/Homo .*//s
 
 [Responsory9]
-@TemporaM/Pent01-0:Responsory8
+@Tempora/Epi2-0:Responsory7
 
-[Versum 2]
-V. Dominus regnavit, decorem induit.
-R. Induit Dominus fortitudinem, et praecinxit se virtute.
+[Lectio10]
+@Tempora/Epi6-0:Lectio7:s/.* Homo/Homo/s s/$/~/
+@Tempora/Epi6-0:Lectio8:s/PrÃ¦dicÃ¡tio .*//s
 
-[Ant 2]
-Simile est * regnum caelorum grano sinapis, quod minimum est omnibus seminibus:~
-cum autem creverit, majus est omnibus oleribus.
+[Responsory10]
+@TemporaM/Epi2-0:Responsory10
 
-[Ant 3]
-Simile est * regnum caelorum fermento, quod acceptum mulier abscondit in farinae~
-satis tribus, donec fermentatum est totum.
+[Lectio11]
+@Tempora/Epi6-0:Lectio8:s/.* PrÃ¦dicÃ¡tio/PrÃ¦dicÃ¡tio/s
 
-[LectioE]
-v. Sequentia Sancti Evangelii secundum Matthaeum
-!Matt 13:31-35
-13:31 Aliam parabolam proposuit eis dicens: Simile est regnum caelorum grano~
-sinapis, quod accipiens homo seminavit in agro suo:
-13:32 quod minimum quidem est omnibus seminibus: cum autem creverit, majus est~
-omnibus oleribus, et fit arbor, ita ut volucres caeli veniant, et habitent in~
-ramis ejus.
-13:33 Aliam parabolam locutus est eis : Simile est regnum cælorum fermento, quod acceptum mulier abscondit in farinæ satis tribus, donec fermentatum est totum. 
-13:34 Hæc omnia locutus est Jesus in parabolis ad turbas : et sine parabolis non loquebatur eis : 
-13:35 ut impleretur quod dictum erat per prophetam dicentem : Aperiam in parabolis os meum ; eructabo abscondita a constitutione mundi.
-$Te decet
+[Responsory11]
+@TemporaM/Epi2-0
+
+[Lectio12]
+@Tempora/Epi6-0:Lectio9
+
+[Responsory12]
+@Tempora/Pent01-0:Responsory8

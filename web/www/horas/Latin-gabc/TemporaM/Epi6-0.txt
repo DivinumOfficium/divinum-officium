@@ -1,0 +1,21 @@
+[Lectio2]
+@Tempora/Epi6-0:Lectio2:s/-9/-6/ s/7 .*//s
+
+[Lectio3]
+@Tempora/Epi6-0:Lectio2:s/5-/7-/ s/5 .*7/7/s
+
+[Lectio5]
+@Tempora/Epi6-0:Lectio4:s/Atque .*//s
+
+[Lectio6]
+@Tempora/Epi6-0:Lectio4:s/.* Atque/Atque/s
+
+[Lectio9]
+@Tempora/Epi6-0:Lectio7:s/Homo .*//s
+
+[Lectio10]
+@Tempora/Epi6-0:Lectio7:s/.* Homo/Homo/s s/$/~/
+@Tempora/Epi6-0:Lectio8:s/Prædicátio .*//s
+
+[Lectio11]
+@Tempora/Epi6-0:Lectio8:s/.* Prædicátio/Prædicátio/s

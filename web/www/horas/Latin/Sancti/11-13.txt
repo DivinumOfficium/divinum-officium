@@ -1,8 +1,13 @@
+[Officium]
+S. Didaci Confessoris
+
 [Rank]
-S. Didaci Confessoris;;Semiduplex;;2;;vide C5
+;;Semiduplex;;2.2;;vide C5-1
+(sed rubrica innovata)
+;;Simplex;;1.1;;vide C5-1
 
 [Rule]
-vide C5;mtv
+vide C5-1;mtv
 9 lectiones
 
 [Oratio]
@@ -10,7 +15,7 @@ Omnípotens sempitérne Deus, qui dispositióne mirábili infírma mundi éligis
 $Per Dominum
 
 [Lectio4]
-Dídacus, Hispanus, ex oppido sancti Nicolai de Portu diœcesis Hispalénsis, ab ineunte ætate, pii sub sacerdotis disciplína, sanctioris vitæ, solitaria in ecclésia, tirocinium exercuit. Deinde, ut firmius Deo se conjungeret, in convéntu de Arizzáfa fratrum Minórum (quos Observántes vocant) sancti Francisci regulam in statu laicali proféssus est. Magna ibi alacritate húmilis obediéntiæ et regularis observantiæ jugum subiens, contemplatióni in primis déditus, mira Dei luce perfundebátur, adeo ut de rebus cæléstibus, litterárum expers, mirándum in modum et plane divinitus loquerétur.
+Dídacus, Hispanus, ex oppido sancti Nicolai de Portu diœcesis Hispalénsis, ab ineunte ætate, pii sub sacerdotis disciplína, sanctioris vitæ, solitaria in ecclésia, tirocinium exercuit. Deínde, ut firmius Deo se conjungeret, in convéntu de Arizzáfa fratrum Minórum (quos Observántes vocant) sancti Francisci regulam in statu laicali proféssus est. Magna ibi alacritate húmilis obediéntiæ et regularis observantiæ jugum subiens, contemplatióni in primis déditus, mira Dei luce perfundebátur, adeo ut de rebus cæléstibus, litterárum expers, mirándum in modum et plane divinitus loquerétur.
 
 [Lectio5]
 Canariis in insulis, ubi frátribus sui ordinis præfuit, multa perpéssus, martyrii æstuans desidério, plures infidéles verbo et exemplo ad Christi fidem convértit. Romam veniens anno jubilæi, Nicolao quinto Pontifice, ægrotórum curæ in convéntu Aræ cæli destinátus, eo caritátis afféctu munus hoc exercuit, ut, Urbe annonæ inópia laborante, ægrotis tamen, quorum aliquándo úlcera étiam lambéndo abstergebat, nihil pénitus necessarii defécerit. Eximia quoque fides et grátia curatiónum in eo eluxit, cum lámpadis, quæ collucebat ante imáginem beatíssimæ Dei Genitrícis, quam summa devotióne colebat, oleo ægros inungens, signo crucis impresso, multórum morbos mirabíliter sanaverit.
@@ -23,10 +28,10 @@ Dídacus, Hispánus, ex óppido sancti Nicolái de Portu diœcésis Hispalénsis
 &teDeum
 
 [Lectio7]
-@Commune/C5:Lectio71
+@Commune/C5:Lectio7 in 2 loco
 
 [Lectio8]
-@Commune/C5:Lectio81
+@Commune/C5:Lectio8 in 2 loco
 
 [Lectio9]
-@Commune/C5:Lectio91
+@Commune/C5:Lectio9 in 2 loco

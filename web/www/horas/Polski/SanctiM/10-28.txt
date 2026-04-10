@@ -1,0 +1,9 @@
+[Lectio9]
+@Sancti/10-28:Lectio7:s/A słowa.*//s
+
+[Lectio10]
+@Sancti/10-28:Lectio7:s/.*A słowa/A słowa/s s/$/~/
+@Sancti/10-28:Lectio8:s/Polecając.*//s
+
+[Lectio11]
+@Sancti/10-28:Lectio8:s/.*Polecając/Polecając/s

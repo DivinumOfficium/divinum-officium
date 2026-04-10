@@ -1,0 +1,85 @@
+[Responsory Vespera]
+R.br. {gabc:Tempora/Pascha/rb--spiritus_paraclitus--solesmes_1934}
+
+[Ant Matutinum]
+@Tempora/Pasc7-0::1 s/47/1/
+;;8
+;;18
+;;23
+;;26
+;;28
+@Tempora/Pasc7-0::4-5
+@Tempora/Pasc7-0::2 s/67/32/
+;;45
+;;46
+;;47
+;;95
+;;97
+@Tempora/Pasc7-0:Versum Tertia
+@Tempora/Pasc7-0::3 s/103/243;244;245/
+@Tempora/Pasc7-0:Versum 1
+
+[Lectio1]
+@Tempora/Pasc1-2::1-7 s/-8/-5/ s/Et cum/Cum/
+
+[Lectio2]
+@Tempora/Pasc1-2:Lectio1:2 s/1-8/6-11/
+@Tempora/Pasc1-2:Lectio1:8-10
+9 Parthi, et Medi, et Ælamítæ, et qui hábitant Mesopotámiam, Judǽam, et Cappadóciam, Pontum, et Asiam,
+10 Phrýgiam, et Pamphýliam, Ægýptum, et partes Líbyæ quæ est circa Cyrénen: et ádvenæ Románi,
+11 Judǽi quoque, et Prosélyti, Cretes, et Arabes: audívimus eos loquéntes nostris linguis magnália Dei.
+
+[Lectio3]
+!Act. 2:12-15
+12 Stupébant autem omnes, et mirabántur ad ínvicem, dicéntes: Quidnam vult hoc esse?
+13 Alii autem irridéntes dicébant: Quia musto pleni sunt isti.
+@Tempora/Pasc1-2:Lectio2:2-3
+
+[Lectio4]
+@Tempora/Pasc1-2:Lectio2:s/14-/16-/ s/14.*16 /16 \u/s
+
+[Lectio5]
+Sermo Sancti Leónis Papæ
+!Sermo LXXV: de Pentecoste I; cap. I
+Hodiérnam solemnitátem, dilectíssimi, in precípuis festis esse venerándam, ómnium Catholicórum corda cognóscunt. Nec dúbium est, quanta huic diéi reveréntia debeátur, quem Spíritus Sanctus excellentíssimo sui múneris miráculo consecrávit.
+
+[Lectio6]
+Nam ab illo die, quo Dóminus super omnem altitudinem cælórum ad déxteram Dei Patris concessúrus ascéndit, décimus iste est, qui ab eiúsdem resurrectióne quinquagésimus nobis in eo, a quo cœpit, illúxit magna mystéria véterum sacramentórum in se cóntinens et novórum; quibus manifestíssime declarátur, et grátiam prænuntiátam fuísse per legem et legem implétam esse per grátiam.
+
+[Lectio7]
+Sicut enim Hebrǽo quondam pópulo ab Ægýptiis liberáto, quinquagésimo die post immolatiónem agni, Lex data est in monte Sina; ita post passiónem, qua verus Dei Agnus occísus est, quinquagésimo a resurrectióne ipsíus die in Apóstolos plebómque credéntium, Spíritus Sanctus illápsus est, ut fácile díligens Christiánus agnóscat, inítia véteris Testaménti evangélicis ministrásse princípiis, et ab eódem Spíritu cónditum fœdus secúndum, a quo primum fúerat institútum.
+
+[Lectio8]
+Ab hoc ígitur die tuba evangélicæ prædicatiónis intónuit: ab hoc die imbres charísmatum, flúmina benedictiónum, omne desértum et univérsam áridam rigavérunt: quóniam ad renovándam fáciem terræ Spíritus Dei ferebátur super aquas; et ad véteres ténebras abigéndas, novæ lucis fúlgura coruscábant, cum micántium splendóre linguárum, et verbum Dómini lúcidum, et elóquium conciperétur ignítum, cui ad creándum intelléctum, consummandúmque peccátum, et efficácia illuminándi, et vis inésset uréndi.
+
+[Lectio9]
+@Tempora/Pasc7-0:Lectio1:s/ Qui ergo.*//s
+
+[Lectio10]
+@Tempora/Pasc7-0:Lectio1:s/.*(Qui ergo)/$1/s s/$/~/
+@Tempora/Pasc7-0:Lectio2:s/ Vere.*//s
+
+[Lectio11]
+@Tempora/Pasc7-0:Lectio2:s/.*(Vere)/$1/s s/$/~/
+@Tempora/Pasc7-0:Lectio3:s/ Certe.*//s
+
+[Lectio12]
+@Tempora/Pasc7-0:Lectio3:s/.*(Certe)/$1/s
+
+[MM Capitulum]
+!Act. 2:2
+{(c3) Fac(h)tus(h) est(h) re(h)pén(h)te(h) de(h) cæ(h)lo(h) so(h)nus,(f.) †(;) tam(h)quam(h) ad(h)ve(h)ni(h)én(h)tis(h) spí(h)ri(h)tus(h) ve(g)he(f)mén(h hr)tis,(h.) *(;) et(h) re(h)plé(h)vit(h) to(h)tam(h) do(h)mum(h) u(h)bi(h) e(h)rant(h) se(h)dén(f)tes.(ef..) (::)}
+$Deo gratias
+_
+@Tempora/Pasc7-0:Versum 3
+
+[RV1]
+Responsorium. Repléti sunt omnes Spíritu sancto, et cœpérunt loqui, prout Spíritus sanctus dabat éloqui illos: * Et convénit multitúdo dicéntium, allelúia.
+V. Loquebántur váriis linguis Apóstoli magnália Dei:
+R. Et convénit multitúdo dicéntium, allelúia.
+
+[Ant Laudes]
+@Tempora/Pasc7-0:Ant Vespera:s/;;.*//
+
+[Responsory Laudes]
+R.br. {gabc:Tempora/Pascha/rb--spiritus_domini_replevit--solesmes}

@@ -1,0 +1,138 @@
+@Tempora/Pent02-0
+
+[Rule]
+12 lectiones
+ex TemporaCist/Pent01-4; 
+Doxology=Corp
+Psalmi Feria
+
+[Ant Vespera]
+@Tempora/Pent01-4
+
+[Responsory Vespera]
+@TemporaCist/Pent01-4
+
+[Versum 1]
+V. Panem cœli dedit eis.
+R. Panem Angelórum manducávit homo.
+
+[Ant 1]
+Cognovérunt omnes * a Dan usque Bersabée, quod fidélis Sámuel Prophéta esset Dómini.
+
+[Invit]
+@TemporaCist/Pent01-4
+
+[AntMatutinumC]
+Novus Abel, * Christus, hóstiam gratam pro nobis ófferens Deo Patri, novum dedicávit in suo Sánguine testaméntum.;;20
+Parátur * nobis mensa Dómini advérsus omnes qui tríbulant nos.;;22
+Ædificávit Noë * altáre Dómino, ófferens super illud holocáusta: odoratúsque Dóminus odórem suavitátis, benedíxit ei.;;24
+Introdúcens Joseph * domum fratres suos, instrúxit convívium, et appósito pane comédit, et bibit cum eis.;;26
+Recédant * legis vétera, dum nova supervéniunt: nam pro manna dato pátribus in desérto, Christus nobis sub spécie panis próprium Corpus dedit.;;28
+Figúram * agni typici términat verus Agnus, dum pro nostræ viæ solátio, sub panis ázymi spécie nobis datur.;;30
+
+[Ant Matutinum]
+@:AntMatutinumC:1
+;;21
+@:AntMatutinumC:2
+;;23
+@:AntMatutinumC:3
+;;25
+@TemporaCist/Pent01-4:Responsory TertiaM
+@:AntMatutinumC:4
+;;27
+@:AntMatutinumC:5
+;;29
+@:AntMatutinumC:6
+;;31
+@TemporaCist/Pent01-4:Responsory SextaM
+;;272;214;273
+@TemporaCist/Pent01-4:Responsory NonaM
+
+[Ant Matutinum 3N]
+@Psalterium/Psalmi/Psalmi minor:Pasch:4
+
+[Lectio1]
+@Tempora/Pent01-1
+
+[Lectio2]
+@Tempora/Pent01-1::s/: porro.*/./s
+
+[Lectio3]
+@Tempora/Pent01-1:Lectio2:s/4-8/7-9/ s/4 .*: porro/7 Porro/s
+@Tempora/Pent01-1:Lectio3:2:s/Et Heli.*//s
+
+[Lectio4]
+@Tempora/Pent01-1:Lectio3:s/.*(Et Heli)/9 $1/s
+
+[Responsory1]
+@TemporaCist/Pent01-4
+
+[Responsory2]
+@TemporaCist/Pent01-4
+
+[Responsory3]
+@TemporaCist/Pent01-4
+
+[Responsory4]
+@TemporaCist/Pent01-4
+
+[Lectio5]
+@Tempora/Pent02-0:Lectio4:s/Si enim.*//
+
+[Lectio6]
+@Tempora/Pent02-0:Lectio4:s/.*(Si enim)/$1/s
+
+[Lectio7]
+@Tempora/Pent02-0:Lectio5:s/ Quaprópter .*//s
+
+[Lectio8]
+@Tempora/Pent02-0:Lectio5:s/.*(Quaprópter)/$1/s
+
+[Responsory5]
+@TemporaCist/Pent01-4
+
+[Responsory6]
+@TemporaCist/Pent01-4
+
+[Responsory7]
+@TemporaCist/Pent01-4
+
+[Responsory8]
+@TemporaCist/Pent01-4
+
+[Lectio9]
+@Tempora/Pent02-0:Lectio7:s/In illis .*//s
+
+[Lectio10]
+@Tempora/Pent02-0:Lectio7:s/.* (In illis)/$1/s s/$/~/
+@Tempora/Pent02-0:Lectio8:s/Proínde .*//s
+
+[Lectio11]
+@Tempora/Pent02-0:Lectio8:s/.* (Proínde)/$1/s
+
+[Lectio12]
+@Tempora/Pent02-0:Lectio9:s/Fastídio.*//
+
+[Responsory9]
+@TemporaCist/Pent01-4
+
+[Responsory10]
+@TemporaCist/Pent01-4
+
+[Responsory11]
+@TemporaCist/Pent01-4
+
+[Responsory12]
+@Tempora/Pent02-0:Responsory8
+
+[Ant Laudes]
+@Psalterium/Psalmi/Psalmi minor:Pasch
+
+[Versum 2]
+@:Versum 1
+
+[Versum 3]
+@:Versum 1
+
+[Responsory Laudes]
+@TemporaCist/Pent01-4

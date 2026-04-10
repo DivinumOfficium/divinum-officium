@@ -1,0 +1,23 @@
+@Tempora/Pent03-3Feria
+
+[Lectio1]
+@Tempora/Pent03-0:Lectio1:1-5
+
+[Responsory1]
+@Tempora/Pent01-3:Responsory3
+
+[Lectio2]
+@Tempora/Pent03-0::1 s/22-25/21-22/
+@Tempora/Pent03-0:Lectio1:6
+@Tempora/Pent03-0::2
+
+[Responsory2]
+@Tempora/Pent01-3:Responsory1
+
+[Lectio3]
+@Tempora/Pent03-0:Lectio2:1 s/22-25/23-24/
+@Tempora/Pent03-0:Lectio2:3-4
+
+[Responsory3]
+@TemporaOP/Pent01-3
+

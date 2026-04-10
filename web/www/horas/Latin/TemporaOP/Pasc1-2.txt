@@ -1,0 +1,30 @@
+[Rank]
+@Tempora/Pasc1-2
+
+[Rule]
+no Te Deum
+
+[Lectio1]
+@Tempora/Pasc3-1::1-6 s/-7/-4/
+
+[Responsory1]
+@Tempora/Pasc3-0:Responsory4
+
+[Lectio2]
+@Tempora/Pasc3-1::1-4 s/-11/-10/ s/ Esto.*//
+
+[Responsory2]
+@Tempora/Pasc3-0:Responsory5:s/fortem,//
+
+[Lectio3]
+@Tempora/Pasc3-1::1-4 s/-17/-17/ s/, qui docébat.*/./
+
+[Responsory3]
+@Tempora/Pasc3-1:Responsory2:1-5
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^(.*).$/R. $1, \l$1/
+
+[Ant 2]
+@Tempora/Pasc1-0:Ant 3C
+
+[Ant 3]
+@Tempora/Pasc2-0:Ant 1C

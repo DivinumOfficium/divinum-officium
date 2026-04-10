@@ -1,0 +1,13 @@
+@Tempora/Quad1-5
+
+[Lectio1]
+@Tempora/Quad1-5::s/Chci, abyste .*//
+
+[Lectio2]
+@Tempora/Quad1-5:Lectio3:s/.* láska naplňuje/Láska naplňuje/s s/Příznačně i.*//
+
+[Lectio3]
+@Tempora/Quad1-5:Lectio3:s/.* (Příznačně i)/$1/
+
+[Ant 3] (rubrica cisterciensis)
+Pane, * nemám nikoho, kdo by, když se pohne voda, mě odnesl do rybníčku.

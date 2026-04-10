@@ -1,0 +1,36 @@
+@Tempora/Pent08-0
+
+[Ant 1]
+@Tempora/Pent07-0:Ant 1C
+
+[Lectio1]
+@Tempora/Pent07-0::1-5 s/-4/-3/
+
+[Responsory1]
+@Tempora/Pent01-1:Responsory2
+
+[Lectio2]
+@Tempora/Pent07-0::1 s/5-8/4-7/
+@Tempora/Pent07-0:Lectio1:6
+@Tempora/Pent07-0::2-4
+
+[Responsory2]
+@TemporaOP/Pent03-0
+
+[Lectio3]
+!3 Reg 1:8-10
+8 Sadoc vero sacérdos, et Banájas fílius Jójadæ, et Nathan prophéta, et Sémei et Rei, et robur exércitus David non erat cum Adonía.
+9 Immolátis ergo Adonías ariétibus et vítulis, et univérsis pínguibus, juxta lápidem Zóheleth, qui erat vicínus fonti Rogel, vocávit univérsos fratres suos fílios regis, et omnes viros Juda servos regis.
+10 Nathan autem prophétam, et Banaíam, et robústos quosque, et Salomónem fratrem suum non vocávit.
+
+[Lectio7]
+@Tempora/Pent08-0::1-4
+Homilía sancti Hierónymi Presbyteri
+!Epist. 151 ad Algasiam, q. 6, t. 3
+Víllicus próprie villaæ gubernátor est: œcónomus autem tam pecuniæ quam frugum et ómnium, quæ dóminus póssidet, dispensátor est. Iste igitur dispensátor accusátus est apud dóminum suum, quod dissipáret substántiam ejus. Quo vocáto, dixit: Quid hoc áudio de te? Redde ratiónem dispensatiónis tuæ: neque enim in ea ultra dispensábis. Qui dixit in semetípso: Quid fáciam, quia dóminus meus aufert a me dispensatiónem? fódere non váleo, mendicáre erubésco.
+
+[Responsory3]
+@TemporaOP/Pent01-0:Responsory Vespera 1
+
+[Ant 2]
+@Tempora/Pent08-0::s/Ait /Dixit /

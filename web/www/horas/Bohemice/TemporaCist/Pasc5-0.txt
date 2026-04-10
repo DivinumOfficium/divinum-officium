@@ -1,0 +1,27 @@
+[Lectio5]
+@Tempora/Pasc5-0:Lectio4:s/Nyní .*//
+
+[Lectio6]
+@Tempora/Pasc5-0:Lectio4:s/.* (?=Nyní )//s s/$/~/
+@Tempora/Pasc5-0:Lectio5:s/Jako .*//s
+
+[Lectio7]
+@Tempora/Pasc5-0:Lectio5:s/.* (?=Jako )//s
+
+[Lectio8]
+@Tempora/Pasc5-0:Lectio6:s/Chceš .*//
+
+[Lectio9]
+@Tempora/Pasc5-0:Lectio7
+
+[Lectio10]
+@Tempora/Pasc5-0:Lectio8:s/Takto .*//s
+
+[Lectio11]
+@Tempora/Pasc5-0:Lectio8:s/.* (?=Takto )//s
+
+[Lectio12]
+@Tempora/Pasc5-0:Lectio9:s/.* aby vaše/Aby vaše/
+
+[Ant 2]
+Zatím * jste neprosili o nic v mém jménu; proste, a dostanete, alleluja.

@@ -1,0 +1,26 @@
+[Ant Vespera]
+@Sancti/09-08::s/Narodziny/Nawiedzenie/g s/naro/nawie/
+
+[Responsory1]
+@Sancti/09-08::s/się narodziła/nawiedziła Elżbietę/ s/Naro/Nawie/
+
+[Responsory2]
+@Sancti/09-08::s/Naro/Nawie/g
+
+[Responsory3]
+@Sancti/09-08::s/Naro/Nawie/
+
+[Responsory4]
+@Sancti/09-08::s/Narodziny/Nawiedzenie/ s/się narodziła/nawiedziła Elżbietę/
+
+[Responsory5]
+@Sancti/09-08::s/Naro/Nawie/
+
+[Responsory6]
+@Sancti/09-08::s/Naro/Nawie/
+
+[Responsory8]
+@Commune/C12:Responsory3:s/wspomnienie/święte Nawiedzenie/
+
+[Ant Laudes]
+@Sancti/09-08:Ant Vespera:s/Narodziny/Nawiedzenie/g s/naro/nawie/ s/;;.*//g

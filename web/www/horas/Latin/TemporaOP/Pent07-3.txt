@@ -1,0 +1,23 @@
+@Tempora/Pent07-3
+
+[Lectio1]
+@Tempora/Pent06-3:Lectio1:1-4 s/-3/-2/
+
+[Responsory1]
+@Tempora/Pent01-3:Responsory3
+
+[Lectio2]
+@Tempora/Pent06-3::1 s/-6/-5/
+@Tempora/Pent06-3:Lectio1:5 s/$/~/
+@Tempora/Pent06-3::2-4 s/3 //
+
+[Responsory2]
+@Tempora/Pent01-3:Responsory1
+
+[Lectio3]
+@Tempora/Pent06-3::1 s/7-10/6-8/
+@Tempora/Pent06-3:Lectio2:5
+@Tempora/Pent06-3::2-3
+
+[Responsory3]
+@TemporaOP/Pent01-3

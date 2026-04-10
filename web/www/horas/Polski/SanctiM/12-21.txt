@@ -1,0 +1,16 @@
+[Lectio7]
+@Commune/C1:Lectio5:s/Bo .*//
+
+[Lectio8]
+@Commune/C1:Lectio5:s/.* Bo/Bo/ s/$/~/
+O tym tu Pasterzu Kościoła, u którego najświątobliwszego ciała zasiadamy - jaki był przed przybyciem Ducha ułomny i jaki bojaźliwy — niech zapytana opowie odźwierna. Samym tylko głosem niewiasty porażony, bojąc się umierać, zaparł się Życia.
+
+[Lectio9]
+@Sancti/12-21:Lectio7:s/Więcej .*//s
+
+[Lectio10]
+@Sancti/12-21:Lectio7:s/.* Więcej /Więcej /s s/$/~/
+@Sancti/12-21:Lectio8:s/Dotknąwszy .*//s
+
+[Lectio11]
+@Sancti/12-21:Lectio8:s/.* Dotknąwszy /Dotknąwszy /s

@@ -1,0 +1,25 @@
+[Lectio1]
+@Tempora/Pasc6-0:Lectio1:1-5 s/-5/-3/
+
+[Lectio2]
+@Tempora/Pasc6-0:Lectio1:s/.*// s/1-5/4-7/ s/[^!]1 .*4 /\n4 /s
+@Tempora/Pasc6-0:Lectio2:2-3
+
+[Lectio3]
+@Tempora/Pasc6-0:Lectio2:s/6-/8-/ s/6 .*8 /8 /s
+
+[Lectio5]
+@Tempora/Pasc6-0:Lectio4:s/Omnes .*//s
+
+[Lectio6]
+@Tempora/Pasc6-0:Lectio4:s/.* Omnes /Omnes /s s/$/~/
+@Tempora/Pasc6-0:Lectio5:s/Ascensiónis .*//s
+
+[Lectio7]
+@Tempora/Pasc6-0:Lectio5:s/.* Ascensiónis /Ascensiónis /s
+
+[Lectio11]
+@Tempora/Pasc6-0:Lectio9:s/Quid .*//s
+
+[Lectio12]
+@Tempora/Pasc6-0:Lectio9:s/.* Quid /Quid /s

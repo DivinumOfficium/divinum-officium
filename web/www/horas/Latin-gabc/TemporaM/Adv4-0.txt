@@ -1,0 +1,31 @@
+[Lectio1]
+@Tempora/Adv4-0:Lectio1:s/-7/-4/ s/5 .*//s
+
+[Lectio2]
+@Tempora/Adv4-0:Lectio1:2-9 s/1-/5-/ s/1 .*5 /5 /s
+@Tempora/Adv4-0:Lectio2:s/!.*// s/8 .*//s
+
+[Lectio3]
+@Tempora/Adv4-0:Lectio2:s/7-/8-/ s/7 .*8 /8 /s
+
+[Responsory4]
+R. Parátus esto, Israël, in occúrsum Dómini, quóniam venit
+* Formans montes et creans spíritus, † et annúntians in homínibus Christum secúndum advéntum suum.
+V. Ecce Dominátor Dominus, cum virtúte véniet.
+R. Formans montes et creans spíritus, † et annúntians in homínibus Christum secúndum advéntum suum.
+
+[Lectio7]
+@Tempora/Adv4-0:Lectio6:s/Diligéndo .*//s
+
+[Lectio8]
+@Tempora/Adv4-0:Lectio6:s/.* Diligéndo /Diligéndo /s
+
+[Lectio10]
+@Tempora/Adv4-0:Lectio8:s/Ut enim .*//s
+
+[Lectio11]
+@Tempora/Adv4-0:Lectio8:s/.* Ut enim /Ut enim /s s/$/~/
+@Tempora/Adv4-0:Lectio9:s/Neque .*//s
+
+[Lectio12]
+@Tempora/Adv4-0:Lectio9:s/.* Neque /Neque /s

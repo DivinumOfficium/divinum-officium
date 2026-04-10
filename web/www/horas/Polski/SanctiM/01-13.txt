@@ -1,0 +1,9 @@
+[Lectio10]
+@Sancti/01-13:Lectio8:s/Gdyby .*//s
+
+[Lectio11]
+@Sancti/01-13:Lectio8:s/.*Gdyby /Gdyby /s s/$/~/
+@Sancti/01-13:Lectio9:s/Jedni .*//s
+
+[Lectio12]
+@Sancti/01-13:Lectio9:s/.*Jedni /Jedni /s

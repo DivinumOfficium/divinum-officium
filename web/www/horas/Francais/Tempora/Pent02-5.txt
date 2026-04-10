@@ -1,28 +1,12 @@
-[Rank]
-Sanctissimi Cordis Domini Nostri Jesu Christi;;Duplex I classis cum Octava privilegiata III ordinis;;6
-
-[Rank1960]
-Sanctissimi Cordis Domini Nostri Jesu Christi;;Duplex I classis;;6
-
-[Rule]
-9 lectiones
-Psalmi Dominica
-Antiphonas horas
-Doxology=Heart
-Prima=53
-Festum Domini
+[Officium]
+Sacratissimi Cordis Domini Nostri Jesu Christi
 
 [Ant Vespera]
 Par votre joug suave * régnez, Seigneur, au milieu de vos ennemis.;;109
-Le Seigneur miséricordieux * et compatissant : Il a donné une nourriture à ceux qui le craignent..;;110
+Le Seigneur miséricordieux * et compatissant : Il a donné une nourriture à ceux qui le craignent.;;110
 Elle s’est levée * dans les ténèbres, la lumière pour les hommes droits : le Seigneur est miséricordieux et compatissant.;;111
 Que rendrai-je * au Seigneur, pour tous les biens qu’Il m’a faits ?;;115
 Auprès du Seigneur * est la miséricorde : et en lui une rédemption abondante.;;129
-
-[Capitulum Vespera]
-!Eph 3:8-9
-v. Mes frères : à moi le plus petit de tous les saints, a été accordée cette grâce d’annoncer parmi les Gentils les richesses incommensurables du Christ ; et de mettre en lumière devant tous quelle est l’économie du mystère caché dès l’origine des siècles en Dieu.
-$Deo gratias
 
 [Hymnus Vespera]
 v. Voici comment la cohorte orgueilleuse
@@ -67,6 +51,16 @@ Le feu, * Je suis venu l’apporter sur la terre, et que désiré-je, sinon qu�
 Dieu, dans le Cœur de Votre Fils blessé par nos péchés, daignez nous prodiguer les trésors infinis de son amour : faites, nous vous en supplions, qu’en Lui rendant l’hommage de notre dévotion et de notre piété, nous remplissions aussi dignement envers Lui le devoir de la réparation.
 $Per eumdem
 
+[Octava 1]
+!Mémoire de l'Octave du très Saint Cœur de notre Seigneur Jésus Christ
+v. Le feu, * Je suis venu l’apporter sur la terre, et que désiré-je, sinon qu’il soit allumé ?
+_
+V. Prenez sur vous mon joug et apprenez de moi.
+R. Que je suis doux et humble de Cœur.
+_
+Dieu, dans le Cœur de Votre Fils blessé par nos péchés, daignez nous prodiguer les trésors infinis de son amour : faites, nous vous en supplions, qu’en Lui rendant l’hommage de notre dévotion et de notre piété, nous remplissions aussi dignement envers Lui le devoir de la réparation.
+$Per eumdem
+
 [Invit]
 Le Cœur de Jésus blessé par son amour pour nous, * Venez, adorons.
 
@@ -106,25 +100,27 @@ Amen.
 Les pensées * de son Cœur subsistent de génération en génération.;;32
 En Vous * est la source de la vie ; Vous nous ferez boire au torrent de vos délices, Seigneur.;;35
 L’homme * de ma paix, qui mangeait mes pains, a fait éclater sa trahison contre moi.;;40
-V. Prenez sur vous mon jour et apprenez de moi.
-R. Que je suis doux et humble de Cœur.
 Le Roi de toute la terre * c’est Dieu ; Il régnera sur les Nations.;;46;
 Lorsque s’angoissait * mon Cœur, Vous m’avez élevé sur la pierre.;;60
 Selon la multitude * des douleurs dans mon Cœur, Vos consolations ont rempli de joie mon âme.;;93
-V. Moi, j’ai dit : Seigneur, ayez pitié de moi.
-R. Guérissez mon âme, car j’ai péché contre Vous.
 Vous qui aimez le Seigneur, * célébrez la mémoire de sa sanctification.;;96
 Tous les confins * de la terre ont vu le salut de notre Dieu.;;97
 Je Vous chanterai * parmi les nations, car votre miséricorde est plus grande que les cieux.;;107
+
+[Nocturn 2 Versum]
+V. Moi, j’ai dit : Seigneur, ayez pitié de moi.
+R. Guérissez mon âme, car j’ai péché contre Vous.
+
+[Nocturn 3 Versum]
 V. Il a institué un mémorial de ses merveilles, lui, le Seigneur miséricordieux.
 R. Il a donné une nourriture à ceux qui le craignent.
 
 [Lectio1]
 Du Prophète Jérémie
 !Jer 24:5-7
-5 Voici ce que dit le Seigneur, le Dieu d’Israël : Je distinguerai pour leur bien les captifs de Juda, que J’ai envoyés de ce lieu dans le pays des Chaldéens.
-6 Je les regarderai d’un œil favorable, et Je les ramènerai dans ce pays ; Je les bâtirai, et Je ne les détruirai pas ; Je les planterai, et Je ne les arracherai pas.
-7 Je leur donnerai un cœur pour qu’ils connaissent que Je suis le Seigneur ; ils seront mon peuple, et Je serai leur Dieu, parce qu’ils reviendront à moi de tout leur cœur.
+5 Voici ce que dit le Seigneur, le Dieu d'Israël : De même que ces figues sont bonnes, ainsi Je distinguerai pour leur bien les captifs de Juda, que J'ai envoyés de ce lieu dans le pays des Chaldéens.
+6 Je les regarderai d'un œil favorable, et Je les ramènerai dans ce pays ; Je les bâtirai, et Je ne les détruirai pas ; Je les planterai, et Je ne les arracherai pas.
+7 Je leur donnerai un cœur pour qu'ils connaissent que Je suis le Seigneur ; ils seront Mon peuple, et Je serai leur Dieu, parce qu'ils reviendront à Moi de tout leur cœur.
 
 [Responsory1]
 R. Je ferai avec eux une alliance éternelle, et Je ne cesserai pas de leur faire du bien, et Je mettrai ma crainte dans leur cœur,
@@ -133,31 +129,31 @@ V. Et Je me réjouirai à leur sujet, lorsque Je leur aurai fait du bien de tout
 R. Afin qu’ils ne se retirent pas de moi.
 
 [Lectio2]
-!Jer 30:18-19; 30:21-24
-18 Ainsi parle le Seigneur : Voici, Je ferai revenir les captifs des tentes de Jacob ; J’aurai compassion de ses toits ; la ville sera rebâtie sur sa colline, et le temple sera rétabli tel qu’il était.
-19 Du milieu d’eux sortiront les louanges et les cris de joie.
-21 Son chef sera tiré de son sein, et un Prince sortira du milieu de lui ; Je L’appliquerai moi-même, et Il s’approchera de Moi. Car quel est celui qui appliquera son cœur à s’approcher de Moi ? dit le Seigneur.
-22 Vous serez mon peuple, et Je serai votre Dieu.
-23 Voici que le tourbillon du Seigneur, sa fureur impétueuse, sa tempête prête à fondre, va se reposer sur la tête des impies.
-24 Le Seigneur ne détournera pas sa colère de son indignation, jusqu’à ce qu’il ait exécuté et accompli les pensées de son Cœur ; au dernier jour vous comprendrez ces choses.
+!Jer 30:18-19 ; 30:21-24
+18 Ainsi parle le Seigneur : Voici, Je ferai revenir les captifs des tentes de Jacob ; J'aurai compassion de ses toits ; la ville sera rebâtie sur sa colline, et le temple sera rétabli tel qu'il était;
+19 du milieu d'eux sortiront les louanges et les cris de joie.
+21 Son chef sera tiré de son sein, et un Prince sortira du milieu de lui ; Je L'appliquerai Moi-même, et Il S'approchera de Moi. Car quel est celui qui appliquera son cœur à s'approcher de Moi ? dit le Seigneur.
+22 Vous serez Mon peuple, et Je serai votre Dieu.
+23 Voici que le tourbillon du Seigneur, Sa fureur impétueuse, Sa tempête prête à fondre, va se reposer sur la tête des impies.
+24 Le Seigneur ne détournera pas Sa colère et Son indignation, jusqu'à ce qu'il ait exécuté et accompli les pensées de Son cœur ; au dernier jour vous les comprendrez.
 
 [Responsory2]
-R. Si mon ennemi m’avait maudit, je l’aurais supporté, 
+R. Si mon ennemi m’avait maudit, je l’aurais supporté,
 * Mais toi, qui ne faisais qu’un avec moi, qui avec moi partageais les doux mets de ma table.
 V. Et si celui qui me haïssait avait parlé de moi avec insolence, peut-être me serais-je caché de lui.
 R. Mais toi, qui ne faisais qu’un avec moi, qui avec moi partageais les doux mets de ma table.
 
 [Lectio3]
-!Jer 31:1-3; 31:31-33
-1 En ce temps-là, dit le Seigneur, Je serai le Dieu de toutes les familles d’Israël, et ils seront mon peuple.
-2 Ainsi parle le Seigneur : mon peuple, qui avait échappé au glaive, a trouvé grâce dans le désert ; Israël ira à son repos.
-3 De loin le Seigneur m’est apparu. Je t’ai aimé d’un amour éternel ; c’est pourquoi Je t’ai attiré par compassion.
-31 Les jours viennent, dit le Seigneur, où Je ferai une nouvelle alliance avec la maison d’Israël et la maison de Juda,
-32 Non selon l’alliance que J’ai contractée avec leurs pères, le jour où Je les pris par la main pour les faire sortir du pays d’Égypte, alliance qu’ils ont violée ; aussi leur ai-Je fait sentir mon pouvoir, dit le Seigneur.
-33 Mais voici l’alliance que Je ferai avec la maison d’Israël après ces jours-là, dit le Seigneur : Je mettrai ma loi dans leurs entrailles, et Je l’écrirai dans leur cœur, et Je serai leur Dieu, et ils seront mon peuple.
+!Jer 31:1-3 ; 31:31-33
+1 En ce temps-là, dit le Seigneur, Je serai le Dieu de toutes les familles d'Israël, et ils seront Mon peuple.
+2 Ainsi parle le Seigneur : Mon peuple, qui avait échappé au glaive, a trouvé grâce dans le désert ; Israël ira à son repos.
+3 De loin le Seigneur m'est apparu. Je t'ai aimé d'un amour éternel ; c'est pourquoi Je t'ai attiré par compassion.
+31 Les jours viennent, dit le Seigneur, où Je ferai une nouvelle alliance avec la maison d'Israël et la maison de Juda,
+32 non selon l'alliance que J'ai contractée avec leurs pères, le jour où Je les pris par la main pour les faire sortir du pays d'Egypte, alliance qu'ils ont violée ; aussi leur ai-Je fait sentir Mon pouvoir, dit le Seigneur.
+33 Mais voici l'alliance que Je ferai avec la maison d'Israël après ces jours-là, dit le Seigneur : Je mettrai Ma loi dans leurs entrailles, et Je l'écrirai dans leur cœur, et Je serai leur Dieu, et ils seront Mon peuple ;
 
 [Responsory3]
-R. Lorsque nous étions morts par nos péchés, Dieu nous a rendu la vie dans le Christ, 
+R. Lorsque nous étions morts par nos péchés, Dieu nous a rendu la vie dans le Christ,
 * A cause de l’amour extrême dont Il nous a aimés.
 V. Afin de montrer dans les siècles à venir les richesses surabondantes de sa grâce.
 R. A cause de l’amour extrême dont Il nous a aimés.
@@ -165,7 +161,6 @@ R. A cause de l’amour extrême dont Il nous a aimés.
 R. A cause de l’amour extrême dont Il nous a aimés.
 
 [Lectio4]
-!De la lettre encyclique du Pape Pie XI
 Parmi les merveilleux développements de la doctrine sacrée et de la piété, par lesquels les desseins de la divine Sagesse se manifestent de jour en jour plus clairement à l’Église, il n’en est guère de plus remarquable que la progression triomphale du culte du Sacré-Cœur de Jésus. En effet très souvent au cours des premiers temps, des Pères, des Docteurs, des Saints ont célébré l’amour de notre Rédempteur. La blessure ouverte au côté du Christ, ils l’ont appelée la source mystique de toutes les grâces. Mais, à partir du moyen âge, depuis qu’une piété plus affective envers la très sainte Humanité du Sauveur commença à toucher les fidèles, les âmes contemplatives pénétraient par cette plaie jusqu’au Cœur lui-même, blessé par amour pour les hommes. Et depuis lors cette contemplation devint chez quelques grands saints tellement familière qu’il n’est point de région ni d’ordre religieux où l’on n’en trouve à cette époque des témoignages insignes. Enfin, dans des temps plus proches de nous, et particulièrement à l’époque où des hérétiques, sous le prétexte d’une fausse piété, essayaient de détourner les chrétiens de la très sainte Eucharistie, on commença à rendre un culte public au Sacré-Cœur, grâce surtout à saint Jean Eudes, qui, à juste titre, est appelé l’auteur du culte liturgique des Sacrés-Cœurs de Jésus et de Marie.
 
 [Responsory4]
@@ -201,7 +196,7 @@ En ce temps-là : Ce jour étant celui de la Préparation, afin que les corps ne
 _
 Homélie de saint Bonaventure, Évêque
 !Livre de l'Arbre de Vie, num. 30
-Une disposition de Dieu permit à un des soldats d’ouvrir d’un coup de lance le cœur sacré de Jésus. Ainsi, l’Église serait tirée du côté du Christ endormi sur la croix. En même temps, serait réalisée la parole de l’Écriture : "Ils regarderont vers celui qu’ils ont transpercé". Le sang et l’eau, prix de notre salut, s’écoulèrent de cette blessure du cœur, comme d’une source mystérieuse, pour donner aux sacrements de l’Église la puissance de conférer la vie de la grâce et pour être le breuvage de "cette source d’eau vive jaillissant en vie éternelle" que goûteraient les âmes qui vivent dans le Christ. Lève-toi donc, ô amie du Christ, ne cesse pas de veiller, applique ici tes lèvres pour "puiser l’eau aux sources du salut".
+Une disposition de Dieu permit à un des soldats d’ouvrir d’un coup de lance le cœur sacré de Jésus. Ainsi, l’Église serait tirée du côté du Christ endormi sur la croix. En même temps, serait réalisée la parole de l’Écriture : « Ils regarderont vers celui qu’ils ont transpercé» . Le sang et l’eau, prix de notre salut, s’écoulèrent de cette blessure du cœur, comme d’une source mystérieuse, pour donner aux sacrements de l’Église la puissance de conférer la vie de la grâce et pour être le breuvage de « cette source d’eau vive jaillissant en vie éternelle» que goûteraient les âmes qui vivent dans le Christ. Lève-toi donc, ô amie du Christ, ne cesse pas de veiller, applique ici tes lèvres pour « puiser l’eau aux sources du salut» .
 
 [Responsory7]
 R. Moi, quand J’aurai été élevé de terre,
@@ -276,88 +271,8 @@ R. Aux sources du Sauveur.
 [Ant 2]
 Ces choses ont été faites * afin que l’Ecriture fût accomplie : Ils contempleront Celui qu’ils ont transpercé.
 
-[Lectio Prima]
-!Eph 3:17-19
-v. Enracinés et fondés dans la charité, puissiez-vous comprendre, avec tous les saints, quelle est la largeur et la longueur, la hauteur et la profondeur, connaître cette charité du Christ qui surpasse toute connaissance, de sorte que vous soyez remplis de toute la plénitude de Dieu.
-
-[Capitulum Tertia]
-!Eph 3:8-9
-v. Mes frères : à moi le plus petit de tous les saints, a été accordée cette grâce d’annoncer parmi les Gentils les richesses incommensurables du Christ ; et de mettre en lumière devant tous quelle est l’économie du mystère caché dès l’origine des siècles en Dieu.
-$Deo gratias
-
-[Responsory Tertia]
-R.br. Prenez sur vous mon joug * Et apprenez de moi.
-R. Prenez sur vous mon joug * Et apprenez de moi.
-V. Que je suis doux et humble de Cœur.
-R. Et apprenez de moi.
-&Gloria
-R. Prenez sur vous mon joug * Et apprenez de moi.
-_
-V. Moi, j’ai dit : Seigneur, ayez pitié de moi.
-R. Guérissez mon âme, car j’ai péché contre Vous.
-
-[Capitulum Sexta]
-!Eph 3:14-17
-v. C'est pourquoi je fléchis les genoux devant le Père de notre Seigneur Jésus-Christ, pour qu'il vous donne, selon la richesse de sa gloire, d'être armés de puissance, par son Esprit, pour que se fortifie en vous l'homme intérieur. Que le Christ habite dans vos coeurs par la foi.
-$Deo gratias
-
-[Responsory Sexta]
-R.br. Moi, j’ai dit : Seigneur, * Ayez pitié de moi.
-R. Moi, j’ai dit : Seigneur, * Ayez pitié de moi.
-V. Guérissez mon âme, car j’ai péché contre Vous.
-R. Ayez pitié de moi.
-&Gloria
-R. Moi, j’ai dit : Seigneur, * Ayez pitié de moi.
-_
-V. Il a institué un mémorial de ses merveilles, lui, le Seigneur miséricordieux.
-R. Il a donné une nourriture à ceux qui le craignent.
-
-[Capitulum Nona]
-!Eph 3:17-19
-v. Enracinés et fondés dans la charité, puissiez-vous comprendre, avec tous les saints, quelle est la largeur et la longueur, la hauteur et la profondeur, connaître cette charité du Christ qui surpasse toute connaissance, de sorte que vous soyez remplis de toute la plénitude de Dieu.
-$Deo gratias
-
-[Responsory Nona]
-R.br. Il a institué un mémorial de ses merveilles * Le Seigneur miséricordieux.
-R. Il a institué un mémorial de ses merveilles * Le Seigneur miséricordieux.
-V. Il a donné une nourriture à ceux qui le craignent.
-R. Le Seigneur miséricordieux.
-&Gloria
-R. Il a institué un mémorial de ses merveilles * Le Seigneur miséricordieux.
-_
-V. Vous puisez avec joie les eaux.
-R. Aux sources du Sauveur.
-
-[Ant Vespera 3]
-Un des soldats * lui ouvrit le côté avec une lance, et aussitôt il en sortit du sang et de l’eau.;;109
-Jésus se tenait debout * et criait, en disant : Si quelqu’un a soif, qu’il vienne à Moi, et qu’il boive.;;110
-D’un amour éternel * Dieu nous a aimé, c’est pourquoi, élevé de terre, Il nous a attiré à son Cœur, par compassion.;;115
-Venez à Moi * vous tous qui êtes fatigués et qui êtes chargés, et Je vous soulagerai.;;127
-Fils, * donne-moi ton cœur, et que tes yeux gardent mes voies.;;147
-
-[Versum 3]
-V. Vous puisez avec joie les eaux.
-R. Aux sources du Sauveur.
-
-[Ant 3]
-Étant ensuite venus à Jésus * et Le voyant déjà mort, ils ne Lui rompirent pas les jambes, mais un des soldats Lui ouvrit le côté avec une lance, et aussitôt il en sortit du sang et de l’eau.
-
-[Oratio 3]
-Daignez accorder, Dieu tout-puissant : à nous qui nous glorifions dans le très saint Cœur de votre Fils bien aimé, et qui célébrons les bienfaits solennels de sa charité envers nous ; que nous trouvions notre joie dans leur accomplissement et dans les fruits qu’ils ont produits.
-$Per Dominum
-
-[Octava 1]
-!Mémoire de l'Octave du très Saint Coeur de notre Seigneur Jésus Christ
-v. Le feu, * Je suis venu l’apporter sur la terre, et que désiré-je, sinon qu’il soit allumé ?
-_
-V. Prenez sur vous mon joug et apprenez de moi.
-R. Que je suis doux et humble de Cœur.
-_
-Dieu, dans le Cœur de Votre Fils blessé par nos péchés, daignez nous prodiguer les trésors infinis de son amour : faites, nous vous en supplions, qu’en Lui rendant l’hommage de notre dévotion et de notre piété, nous remplissions aussi dignement envers Lui le devoir de la réparation.
-$Per eumdem
-
 [Octava 2]
-!Mémoire de l'Octave du très Saint Coeur de notre Seigneur Jésus Christ
+!Mémoire de l'Octave du très Saint Cœur de notre Seigneur Jésus Christ
 v. Ces choses ont été faites * afin que l’Ecriture fût accomplie : Ils contempleront Celui qu’ils ont transpercé.
 _
 V. Vous puisez avec joie les eaux.
@@ -366,8 +281,60 @@ _
 Dieu, dans le Cœur de Votre Fils blessé par nos péchés, daignez nous prodiguer les trésors infinis de son amour : faites, nous vous en supplions, qu’en Lui rendant l’hommage de notre dévotion et de notre piété, nous remplissions aussi dignement envers Lui le devoir de la réparation.
 $Per eumdem
 
+[Lectio Prima]
+!Eph 3:17-19
+v. Enracinés et fondés dans la charité, puissiez-vous comprendre, avec tous les saints, quelle est la largeur et la longueur, la hauteur et la profondeur, connaître cette charité du Christ qui surpasse toute connaissance, de sorte que vous soyez remplis de toute la plénitude de Dieu.
+
+[Responsory Breve Tertia]
+R.br. Prenez sur vous mon joug * Et apprenez de moi.
+R. Prenez sur vous mon joug * Et apprenez de moi.
+V. Que je suis doux et humble de Cœur.
+R. Et apprenez de moi.
+&Gloria
+R. Prenez sur vous mon joug * Et apprenez de moi.
+
+[Capitulum Sexta]
+!Eph 3:14-17
+v. C'est pourquoi je fléchis les genoux devant le Père de notre Seigneur Jésus-Christ, pour qu'il vous donne, selon la richesse de sa gloire, d'être armés de puissance, par son Esprit, pour que se fortifie en vous l'homme intérieur. Que le Christ habite dans vos cœurs par la foi.
+$Deo gratias
+
+[Responsory Breve Sexta]
+R.br. Moi, j’ai dit : Seigneur, * Ayez pitié de moi.
+R. Moi, j’ai dit : Seigneur, * Ayez pitié de moi.
+V. Guérissez mon âme, car j’ai péché contre Vous.
+R. Ayez pitié de moi.
+&Gloria
+R. Moi, j’ai dit : Seigneur, * Ayez pitié de moi.
+
+[Capitulum Nona]
+!Eph 3:17-19
+v. Enracinés et fondés dans la charité, puissiez-vous comprendre, avec tous les saints, quelle est la largeur et la longueur, la hauteur et la profondeur, connaître cette charité du Christ qui surpasse toute connaissance, de sorte que vous soyez remplis de toute la plénitude de Dieu.
+$Deo gratias
+
+[Responsory Breve Nona]
+R.br. Il a institué un mémorial de ses merveilles * Le Seigneur miséricordieux.
+R. Il a institué un mémorial de ses merveilles * Le Seigneur miséricordieux.
+V. Il a donné une nourriture à ceux qui le craignent.
+R. Le Seigneur miséricordieux.
+&Gloria
+R. Il a institué un mémorial de ses merveilles * Le Seigneur miséricordieux.
+
+[Ant Vespera 3]
+Un des soldats * lui ouvrit le côté avec une lance, et aussitôt il en sortit du sang et de l’eau.;;109
+Jésus se tenait debout * et criait, en disant : Si quelqu’un a soif, qu’il vienne à Moi, et qu’il boive.;;110
+D’un amour éternel * Dieu nous a aimé, c’est pourquoi, élevé de terre, Il nous a attiré à son Cœur, par compassion.;;115
+Venez à Moi * vous tous qui êtes fatigués et qui êtes chargés, et Je vous soulagerai.;;127
+Fils, * donne-moi ton cœur, et que tes yeux gardent mes voies.;;147
+
+[Ant 3]
+Étant ensuite venus à Jésus * et Le voyant déjà mort, ils ne Lui rompirent pas les jambes, mais un des soldats Lui ouvrit le côté avec une lance, et aussitôt il en sortit du sang et de l’eau.
+
+[Oratio 3]
+Protecteur de ceux qui espèrent en vous, Dieu sans qui rien ne vaut, rien n'est saint, multipliez sur nous votre miséricorde, afin que gouvernés et conduits par vous, nous passions au milieu des biens temporels sans perdre les biens éternels.
+$Per Dominum
+
 [Octava 3]
-!Mémoire de l'Octave du très Saint Coeur de notre Seigneur Jésus Christ
+!Mémoire de l'Octave du très Saint Cœur de notre Seigneur Jésus Christ
 v. Étant ensuite venus à Jésus * et Le voyant déjà mort, ils ne Lui rompirent pas les jambes, mais un des soldats Lui ouvrit le côté avec une lance, et aussitôt il en sortit du sang et de l’eau.
 _
 V. Vous puisez avec joie les eaux.

@@ -1,0 +1,22 @@
+[Lectio6]
+@Sancti/05-06:Lectio5:s/ Píše však.*//
+
+[Lectio7]
+@Sancti/05-06:Lectio5:s/.* (?=Píše však)// s/$/~/
+@Sancti/05-06:Lectio6:s/ Ten první,.*//
+
+[Lectio8]
+@Sancti/05-06:Lectio6:s/.* (?=Ten první,)//
+
+[Lectio9]
+@Sancti/05-06:Lectio7:s/vládcem.*/vládcem./
+
+[Lectio10]
+Matka synů Zebedeových žádá v ženském omylu a v záchvatu zbožnosti, neví však, co žádá. Není nijak zvláštní, že je nařčena z nevědomosti, vždyť i o Petrovi je psáno, když chtěl postavit tři stany, že nevěděl, co říká.~
+@Sancti/05-06:Lectio8:s/Kalichem .*//
+
+[Lectio11]
+@Sancti/05-06:Lectio8:s/.* (?=Kalichem )//
+
+[Lectio12]
+@Sancti/05-06:Lectio9

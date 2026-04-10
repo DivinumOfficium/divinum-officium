@@ -1,0 +1,46 @@
+[Ant Matutinum 3N]
+Jděte i vy na mou vinici, † a dám vám, co bude spravedlivé.
+V. Zajásej Hospodine ve své moci.
+R. Opěvovat a oslavovat budeme tvé mocné skutky.
+
+[Responsory4]
+R. Tak byla tedy dokončena nebesa i země, i vše, co je zdobí;
+* Zakončil tedy Bůh sedmého dne své dílo, které vykonal, † a odpočinul od veškerého díla, které započal.
+V. A požehnal Bůh sedmému dni, a posvětil jej, neboť v něm ustal od veškeré své práce.
+R. Zakončil tedy Bůh sedmého dne své dílo, které vykonal, † a odpočinul od veškerého díla, které započal.
+
+[Lectio5]
+@Tempora/Quadp1-0:Lectio4:s/Odsud .*//s
+
+[Lectio6]
+@Tempora/Quadp1-0:Lectio4:s/.* Odsud /Odsud /s
+
+[Lectio7]
+@Tempora/Quadp1-0:Lectio5
+
+[Lectio8]
+@Tempora/Quadp1-0:Lectio6
+
+[Responsory8]
+R. Řekl Hospodin Adamovi: † ze stromu, který je uprostřed zahrady, nesmíš jíst;
+* Jakmile z něj pojíš, zajisté zemřeš.
+V. Přikázal mu Hospodin, řka: † Z každého stromu rajské zahrady můžeš jíst; ze stromu poznání dobrého a zlého však jíst nesmíš.
+R. Jakmile z něj pojíš, zajisté zemřeš.
+
+[Lectio9]
+@Tempora/Quadp1-0:Lectio7
+
+[Lectio10]
+@Tempora/Quadp1-0:Lectio8
+
+[Lectio11]
+@Tempora/Quadp1-0:Lectio9:s/Dělníkem .*//s
+
+[Lectio12]
+@Tempora/Quadp1-0:Lectio9:s/.* Dělníkem /Dělníkem /s
+
+[Ant Tertia] (rubrica cisterciensis)
+@Tempora/Quadp1-0:Ant Sexta
+
+[Ant Sexta] (rubrica cisterciensis)
+@Tempora/Quadp1-0:Ant Tertia

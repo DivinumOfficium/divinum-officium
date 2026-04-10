@@ -1,0 +1,22 @@
+@Tempora/Pent09-5
+
+[Lectio1]
+@Tempora/Pent08-4::1-2 s/12:1-5/11:43;12:1-3/
+@Tempora/Pent08-3:Lectio3:5
+@Tempora/Pent08-4::3-5 s/ Venit ergo.*//
+
+[Responsory1]
+@TemporaOP/Pent01-2
+
+[Lectio2]
+@Tempora/Pent08-4:Lectio1:2 s/1-/3-/
+@Tempora/Pent08-4:Lectio1:5-7 s/.* (?=Venit)/3 /
+
+[Responsory2]
+@TemporaOP/Pent03-2:Responsory2
+
+[Lectio3]
+@Tempora/Pent08-4:Lectio2:1-4 s/-8/-7/
+
+[Responsory3]
+@TemporaOP/Pent03-2:Responsory3

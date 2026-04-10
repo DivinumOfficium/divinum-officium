@@ -1,27 +1,12 @@
 [Rank]
 Objawienie Pańskie;;Duplex I classis;;7
 
-[Rule]
-Psalmi Dominica
-Antiphonas horas
-Special Matutinum Incipit
-Doxology=Epi
-9 lectiones
-Psalm5 Vespera=116
-Psalm5 Vespera3=113
-Festum Domini
-
-[Ant Vespera]
+[Ant Laudes]
 Przed jutrzenką * i przed wiekami zrodzony Pan, Zbawiciel nasz, dziś światu się ukazał.
 Przyszła światłość twoja, * Jeruzalem, a sława Pańska weszła nad tobą i będą chodzić narodowie w światłości Twojej, alleluja.
 Otworzywszy skarby swe * ofiarowali Mu Mędrcy dary, złoto, kadzidło i mirrę, alleluja.
 Morza i rzeki * błogosławcie Pana. źródła śpiewajcie hymn Panu, alleluja.
 Gwiazda ta, * jak płomień jaśnieje, wskazując Króla Królów; trzej Królowie ujrzeli ją i złożyli dary wielkiemu Królowi.
-
-[Capitulum Vespera]
-!Iz 60:1
-v. Wstań, oświeć się Jeruzalem, bo przyszła światłość twoja, a sława Pańska weszła nad tobą.
-$Deo gratias
 
 [Hymnus Vespera]
 {:H-CrudelisHerodes:}v. Dlaczego lękasz się przyjścia Boga
@@ -44,13 +29,13 @@ Woda w stągwiach kamiennych czerwienieje,
 Posłuszna rozkazowi staje się winem,
 Zmieniając naturę swoją.
 _
-O Jezu, któryś się poganom objawił,
+* O Jezu, któryś się poganom objawił,
 Niech Ci będzie chwała
 Wraz z Ojcem i z Duchem Świętym.
 Na wieki wieków.
 Amen.
 
-[Versum 1]
+[Versum 1_]
 V. Królowie Tarsis i wyspy przyniosą dary.
 R. Królowie arabscy i Saba przywiozą upominki.
 
@@ -68,37 +53,45 @@ Chrystus się nam objawił * Pójdźmy z pokłonem.
 Przynoście Panu * synowie Boży, kłaniajcie się Panu na dworze świętym jego.;;28
 Bystrość rzeki * rozwesela, alleluja, miasto Boże, alleluja.;;45
 Śpiewajcież Bogu naszemu, * śpiewajcie: śpiewajcie królowi naszemu, śpiewajcie, mądrze.;;46
-V. Wszystka ziemia niechaj ci się kłania, i niechaj ci śpiewa.
-R. Niech Psalm śpiewa imieniowi twemu, Panie.
 Wszystka ziemia niechaj ci się kłania, * i niechaj ci śpiewa: niech Psalm śpiewa imieniowi twemu, Panie.;;65
 Królowie Tarsis * i wyspy przyniosą dary, Panu.;;71
 Wszyscy narodowie, * któreśkolwiek stworzył, przyjdą, a pokłonią się przed tobą, Panie.;;85
-V. Królowie Tarsis i wyspy przyniosą dary.
-R. Królowie arabscy i Saba przywiozą upominki.
-Człowiek narodził się * w nim: a sam je Najwyższy ugruntował.;;86
-(Sed die Epiphaniæ dicitur)
+@SanctiM/01-06:AntMatutinumM:2
+(sed die Epiphaniæ dicitur)
 Pójdźcie, pokłońmy się, mu, albowiem on jest Panem, Bogiem naszym.;;94
 Kłaniajcie się Panu, * alleluja: na dworze świętym jego, alleluja.;;95
 Kłaniajcie się Bogu, * alleluja: wszyscy aniołowie jego, alleluja.;;96
+
+[Nocturn 1 Versum]
+V. Wszystka ziemia niechaj ci się kłania, i niechaj ci śpiewa.
+R. Niech Psalm śpiewa imieniowi twemu, Panie.
+
+[Nocturn 3 Versum]
 V. Kłaniajcie się Panu, alleluja.
 R. Na dworze świętym jego, alleluja.
 
 [Lectio1]
 Z proroka Izajasza
 !Iz 55:1-4
-1 Wszyscy pragnący pójdźcie do wód, i którzy nie macie srebra, kwapcie się, kupujcie, a jedzcie! chodźcie, kupujcie bez srebra, i bez żadnej zamiany wino i mleko.
+1 Wszyscy pragnący pójdźcie do wód, i którzy nie macie srebra, kwapcie się, kupujcie, a jedzcie, chodźcie, kupujcie bez srebra, i bez żadnej zamiany wino i mleko.
 2 Przecz odważacie srebro nie za chleb, a pracę wasze nie za nasycenie? Słuchajcie słuchając mię, a jedzcie dobro, a rozkoszować będzie w tłustości dusza wasza.
 3 Nakłońcie ucha swego, a przyjdźcie do mnie: słuchajcie, i żyć będzie dusza wasza: i uczynię z wami przymierze wieczne, miłosierdzia Dawidowe wierne.
 4 Otom go dał świadkiem narodom, wodzem i nauczycielem narodom.
 
 [Lectio2]
 !Iz 60:1-6
-1 Wstań, oświeć się, Jeruzalem! bo przyszła światłość twoja, a sława Pańska weszła nad tobą.
+1 Wstań, oświeć się, Jeruzalem, bo przyszła światłość twoja, a sława Pańska weszła nad tobą.
 2 Bo oto ciemności okryją ziemię, i mrok narody; ale nad tobą wnidzie Pan, a sława jego nad tobą, widziana będzie.
 3 I będą chodzić narodowie w światłości twojej, a królowie w jasności wejścia twojego.
 4 Podnieś wokoło oczy twoje, a oglądaj: ci wszyscy zgromadzili się, przyszli do ciebie: synowie twoi zdaleka przyjdą, a córki twoje z boku powstaną.
 5 Tedy oglądasz i opływać będziesz: zadziwi się i rozszerzy się serce twoje, gdy się obróci ku tobie zgraja morska, moc poganów przyjdzie do ciebie.
 6 Obfitość wielbłądów okryje cię, wielbłądowie prędcy Madyan i Epha: wszyscy z Saby przyjdą, złoto i kadzidło przynosząc, a chwałę Panu opowiadając.
+
+[Responsory2]
+R. W postaci gołębicy, Duch Święty ukazał się, i głos Ojca słyszany był:
+* Ten jest Syn mój miły, w którymem sobie dobrze upodobał.
+V. Otworzyły się nad nim niebiosa, i głos Ojca zagrzmiał.
+R. Ten jest Syn mój miły, w którymem sobie dobrze upodobał.
 
 [Lectio3]
 !Iz 61:10-11; 62:1
@@ -108,11 +101,17 @@ Z proroka Izajasza
 
 [Responsory3]
 R. Królowie Tarsis i wyspy przyniosą dary:
-* Królowie arabscy i Saba przywiozą upominki.
+* Królowie arabscy i Saba przywiozą Panu Bogu upominki.
 V. Wszyscy z Saby przyjdą, złoto i kadzidło przynosząc.
-R. Królowie arabscy i Saba przywiozą upominki.
+R. Królowie arabscy i Saba przywiozą Panu Bogu upominki.
 &Gloria
-R. Królowie arabscy i Saba przywiozą upominki.
+R. Królowie arabscy i Saba przywiozą Panu Bogu upominki.
+
+[Responsory4]
+R. Oświeć się, oświeć Jeruzalem, bo przyszła światłość twoja: 
+* A sława Pańska weszła nad tobą.
+V. I będą chodzić narodowie w światłości twojej, a królowie w jasności wejścia twojego.
+R. A sława Pańska weszła nad tobą.
 
 [Responsory5]
 R. Wszyscy z Saby przyjdą, złoto i kadzidło przynosząc, a chwałę Panu opowiadając.
@@ -121,12 +120,12 @@ V. Królowie Tarsis i wyspy przyniosą dary, królowie arabscy i Saba przywiozą
 R. Alleluja, alleluja, alleluja.
 
 [Responsory6]
-R. Oto Mędrcy ze wschodu słońca przybyli do Jerozolimy, mówiąc: Gdzie jest, który się narodził, widzieliśmy gwiazdę jego?
-* I przyjechaliśmy pokłonić się jemu.
+R. Oto Mędrcy ze wschodu słońca przybyli do Jerozolimy, mówiąc: Gdzie jest, który się narodził, widzieliśmy gwiazdę jego?
+* I przyjechaliśmy pokłonić się Panu.
 V. Widzieliśmy gwiazdę jego na wschód słońca.
-R. I przyjechaliśmy pokłonić się jemu.
+R. I przyjechaliśmy pokłonić się Panu.
 &Gloria
-R. I przyjechaliśmy pokłonić się jemu.
+R. I przyjechaliśmy pokłonić się Panu.
 
 [Lectio7]
 Czytanie Ewangelii świętej według św. Mateusza
@@ -158,31 +157,36 @@ R. A otworzywszy skarby swe, ofiarowali Mu dary: złoto, kadzidło i mirrę.
 Wszystkie bowiem żywioły świadczyły, iż przybył ich Twórca. Jeśli o nich powiem według ludzkiego sposobu mówienia, to: niebiosa poznały Go jako Boga i zaraz gwiazdę wysłały. Morze Go poznało, gdyż pod Jego stopami stało się zdatne, by po nim można było chodzić. Ziemia go poznała, drżąc przy Jego śmierci. Słońce poznało, ukryło bowiem tedy promienie swego światła. Skały i mury poznały, ponieważ pokruszyły się przy Jego zgonie. Poznał Go świat podziemny, gdyż oddał tych, których trzymał jako umarłych. A jednak tego Pana, którego, jak powiedzieliśmy, wszystkie żywioły odczuwały, niewierne serca Żydów jako Boga wcale nie uznają i twardsze od skał nie chcą się skruszyć do pokuty.
 &teDeum
 
+[Capitulum Laudes]
+!Iz 60:1
+v. Wstań, oświeć się Jeruzalem, bo przyszła światłość twoja, a sława Pańska weszła nad tobą.
+$Deo gratias
+
 [Hymnus Laudes]
 {:H-Osolamagnarum:}v. O jedyne ponad wielkie miasta
-większe Betleem, któremu przypadło
-zrodzić przewodnika zbawienia
-wcielonego z nieba.
+Większe Betleem, któremu przypadło
+Zrodzić przewodnika zbawienia
+Wcielonego z nieba.
 _
 O którym gwiazda, tarczę słoneczną
-przewyższająca pięknością i blaskiem,
-oznajmia światu, że przyszedł
+Przewyższająca pięknością i blaskiem,
+Oznajmia światu, że przyszedł
 Bóg w ciele ziemskiem.
 _
-Skoro Go Magowie ujrzeli,
-wykładają dary wschodnie:
-i w pokłonię z modłami ofiarują Mu
-kadzidło, mirrę i złoto królewskie.
+Skoro Go Mędrcy ujrzeli,
+Wykładają dary wschodnie:
+I w pokłonię z modłami ofiarują Mu
+Kadzidło, mirrę i złoto królewskie.
 _
 Króla i Boga oznajmiają
-skarb i pachnąca woń
-sabejskiego kadzidła,
-a proch mirry zwiastuje jego grób.
+Skarb i pachnąca woń
+Sabejskiego kadzidła,
+A proch mirry zwiastuje jego grób.
 __
 Jezu, Tobie niechaj będzie chwała,
-który objawiłeś się poganom,
-z Ojcem i dobroczynnym Duchem
-po nieskończone wieki.
+Który objawiłeś się poganom,
+Z Ojcem i dobroczynnym Duchem
+Po nieskończone wieki.
 Amen.
 
 [Versum 2]
@@ -190,20 +194,21 @@ V. Kłaniajcie się Bogu, alleluja.
 R. Wszyscy aniołowie jego, alleluja.
 
 [Ant 2]
-Dzisiaj * z niebieskim oblubieńcem złączon jest Kościół, bo w Jordanie zmył Chrystus winy jego: pospieszają z darami Magowie na gody, a z wody w wino zmienionej radują się ucztujący, alleluja.
+Dzisiaj * z niebieskim oblubieńcem złączon jest Kościół, bo w Jordanie zmył Chrystus winy jego: pospieszają z darami Mędrcy na gody, a z wody w wino zmienionej radują się ucztujący, alleluja.
 
 [Lectio Prima]
 !Iz 60:6
 v. Wszyscy z Saby przyjdą, złoto i kadzidło przynosząc, a chwałę Panu opowiadając.
 
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Królowie Tarsis i wyspy przyniosą dary, * Alleluja, alleluja.
 R. Królowie Tarsis i wyspy przyniosą dary, * Alleluja, alleluja.
 V. Królowie arabscy i Saba przywiozą upominki.
 R. Alleluja, alleluja.
 &Gloria
 R. Królowie Tarsis i wyspy przyniosą dary, * Alleluja, alleluja.
-_
+
+[Versum Tertia]
 V. Wszyscy z Saby przyjdą, alleluja.
 R. Złoto i kadzidło przynosząc, alleluja.
 
@@ -212,27 +217,21 @@ R. Złoto i kadzidło przynosząc, alleluja.
 v. Podnieś wokoło oczy twoje, a oglądaj: ci wszyscy zgromadzili się, przyszli do ciebie: synowie twoi zdaleka przyjdą, a córki twoje z boku powstaną.
 $Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Wszyscy z Saby przyjdą, * Alleluja, alleluja.
 R. Wszyscy z Saby przyjdą, * Alleluja, alleluja.
 V. Złoto i kadzidło przynosząc.
 R. Alleluja, alleluja.
 &Gloria
 R. Wszyscy z Saby przyjdą, * Alleluja, alleluja.
-_
-V. Kłaniajcie się Panu, alleluja.
-R. Na dworze świętym jego, alleluja.
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Kłaniajcie się Panu, * Alleluja, alleluja.
 R. Kłaniajcie się Panu, * Alleluja, alleluja.
 V. Na dworze świętym jego.
 R. Alleluja, alleluja.
 &Gloria
 R. Kłaniajcie się Panu, * Alleluja, alleluja.
-_
-V. Kłaniajcie się Bogu, alleluja.
-R. Wszyscy aniołowie jego, alleluja.
 
 [Ant 3]
-Potrójny cud * święcimy w dniu dzisiejszym: dziś gwiazda przy wiodła Królów do żłóbka: dziś woda w wino się przemieniła na godach: dziś Chrystus chciał być ochrsczonym przez Jana, by nas zbawić. Alleluja.
+Potrójny cud * święcimy w dniu dzisiejszym: dziś gwiazda przywiodła Królów do żłóbka: dziś woda w wino się przemieniła na godach: dziś Chrystus chciał być ochrzczonym przez Jana, by nas zbawić, alleluja.

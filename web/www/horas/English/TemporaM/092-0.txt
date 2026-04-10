@@ -1,7 +1,5 @@
-@Tempora/092-0
+[Lectio5]
+@Tempora/092-0:Lectio4:s/But an .*//s
 
-[Responsory8]
-@TemporaM/Pent03-0:Responsory8
-
-[Responsory9]
-@TemporaM/Pent03-0:Responsory9
+[Lectio6]
+@Tempora/092-0:Lectio4:s/.* But an /But an /s

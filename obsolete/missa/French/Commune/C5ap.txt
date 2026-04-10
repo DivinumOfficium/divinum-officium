@@ -1,0 +1,42 @@
+[Name]
+Commun d'un confesseur Docteur Temps Pascal; In medio
+
+[Rule]
+Gloria
+
+[Introitus]
+@Commune/C5a:Introitus
+
+[Oratio]
+@Commune/C5a:Oratio
+$Per Dominum.
+
+[Lectio]
+@Commune/C5a:Lectio
+
+[Graduale]
+@Commune/C5a:Graduale
+
+[Evangelium]
+@Commune/C5a:Evangelium
+
+[Offertorium]
+@Commune/C5a:Offertorium
+
+[Secreta] !Pro Doctore pontifice
+@Commune/C5a:Secreta
+
+[Secreta1] Pro Doctore non Pontifice.
+@Commune/C5a:Secreta1
+
+[Communio]
+@Commune/C5a:Communio
+
+[Postcommunio] Pro Doctore Pontifice.
+@Commune/C5a:Postcommunio
+
+[Postcommunio1] Pro Doctore non Pontifice.
+@Commune/C5a:Postcommunio1
+
+[Lectio1]
+@Commune/C5a:Lectio1

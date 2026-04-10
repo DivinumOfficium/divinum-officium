@@ -4,13 +4,10 @@ use utf8;
 # Name : Laszlo Kiss
 # Date : 01-20-08
 # Divine Office Kalendarium
-package horas;
+package main;
 
-#1;
-#use warnings;
-#use strict fs";
-#use strict "subs";
-#use warnings FATAL=>qw(all);
+# use warnings;
+# use strict;
 
 use POSIX;
 use FindBin qw($Bin);
@@ -20,17 +17,20 @@ use CGI::Carp qw(fatalsToBrowser);
 use File::Basename;
 use Time::Local;
 
-#use DateTime;
 use locale;
-$error = '';
-$debug = '';
+use lib "$Bin/..";
+use DivinumOfficium::Main qw(liturgical_color);
+use DivinumOfficium::Directorium qw(dirge);
+use DivinumOfficium::Date qw(ydays_to_date);
+use DivinumOfficium::RunTimeOptions qw(check_version);
 
 #*** common variables arrays and hashes
-#filled  getweek()
-our @dayname;    #0=Adv|{Nat|Epi|Quadp|Quad|Pass|Pent 1=winner|2=commemoratio/scriptura
+our $error;
+our $debug;
 
-#filled by getrank()
-our $winner;     #the folder/filename for the winner of precedence
+#filled by occurence()
+our @dayname;         #0=Adv|{Nat|Epi|Quadp|Quad|Pass|Pent 1=winner|2=commemoratio/scriptura
+our $winner;          #the folder/filename for the winner of precedence
 our $commemoratio;    #the folder/filename for the commemorated
 our $scriptura;       #the folder/filename for the scripture reading (if winner is sancti)
 our $commune;         #the folder/filename for the used commune
@@ -43,264 +43,252 @@ our %winner;          #the hash of the winner
 our %commemoratio;    #the hash of the commemorated
 our %scriptura;       #the hash for the scriptura
 our %commune;         # the hash of the commune
-our (%winner2, %commemoratio2, %commune2);    #same for 2nd column
-our $rule;                                    # $winner{Rank}
-our $communerule;                             # $commune{Rank}
-our $duplex;                                  #1= simplex 2=semiduplex, 3=duplex 0=rest
-                                              #4 = duplex majus, 5=duplex II class 6=duplex I class 7=higher
-our ($dirge, $initia);
-our $sanctiname = 'Sancti';
-our $temporaname = 'Tempora';
-our $communename = 'Commune';
+our $rule;            # $winner{Rank}
+our $communerule;     # $commune{Rank}
+our $duplex;          #1= simplex 2=semiduplex, 3=duplex 0=rest
+                      #4 = duplex majus, 5=duplex II class 6=duplex I class 7=higher
+our $initia;
+our $dayofweek;
 
-require "$Bin/do_io.pl";
+our $border;
+our $smallblack;
+our $smallfont;
+
+require "$Bin/../DivinumOfficium/SetupString.pl";
 require "$Bin/horascommon.pl";
-require "$Bin/dialogcommon.pl";
-require "$Bin/webdia.pl";
 require "$Bin/specmatins.pl";
-require "$Bin/horas.pl";
-require "$Bin/specials.pl";
+require "$Bin/../DivinumOfficium/dialogcommon.pl";
+require "$Bin/webdia.pl";
+require "$Bin/../DivinumOfficium/setup.pl";
+require "$Bin/monastic.pl";
 
-if (-e "$Bin/monastic.pl") { require "$Bin/monastic.pl"; }
 binmode(STDOUT, ':encoding(utf-8)');
-$q = new CGI;
+our $q = new CGI;
 
 #*** get parameters
-getini('horas');    #files, colors
-$setupsave = strictparam('setup');
-$setupsave =~ s/\~24/\"/g;
-$date1 = strictparam('date1');
-$browsertime = strictparam('browsertime');
-$Readings = strictparam('readings');
+our $compare = strictparam('compare') || 0;
+my $officium = strictparam('officium') || 'officium.pl';
 
-#internal script, cookies
-%dialog = %{setupstring($datafolder, '', 'horas.dialog')};
+if ($compare) {
+  $officium = "C$officium" unless $officium =~ /^[PC]/;
+} else {
+  $officium =~ s/^C//;
+}
+
+# use the right date arg
+my $date_arg = $officium =~ /Pofficium/ ? 'date1' : 'date';
+
+my $officium_name = $officium =~ /missa/ ? 'missa' : 'horas';
+getini("horas");    #files, colors
+
+my $ckname =
+  ($officium_name =~ /officium/) ? "${officium_name}go" : ($compare) ? "${officium_name}gc" : "${officium_name}g";
+my $csname = $compare ? 'generalc' : 'general';
+
+my $setupsave = strictparam('setup');
+loadsetup($setupsave);
 
 if (!$setupsave) {
-  %setup = %{setupstring($datafolder, '', 'horas.setup')};
-} else {
-  %setup = split(';;;', $setupsave);
+  getcookies("${officium_name}p", 'parameters');
+  getcookies($ckname, $csname);
 }
-$officium = strictparam('officium');
-if (!$setupsave && !getcookies('horasp', 'parameters')) { setcookies('horasp', 'parameters'); }
-$ckname = ($officium =~ /officium/) ? 'horasgo' : ($Ck) ? 'horasgc' : 'horasg';
-$csname = ($Ck) ? 'generalc' : 'general';
-if (!$setupsave && !getcookies($ckname, $csname)) { setcookies($ckname, $csname); }
-$setup{'parameters'} = clean_setupsave($setup{'parameters'});
-eval($setup{'parameters'});
-eval($setup{"$csname"});
+
+set_runtime_options($csname);         #$expand, $version, $lang2
+our $votive = 'Hodie';
+set_runtime_options('parameters');    # priest, lang1 ... etc
 
 #*** saves parameters
-$setupsave = printhash(\%setup, 1);
+$setupsave = savesetup(1);
 $setupsave =~ s/\r*\n*//g;
-$setupsave =~ s/\"/\~24/g;
-$hora = '';
-precedence();    #for today
-$odate = $date1;
-$command = strictparam('command');
-if ($command =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|Past)/i) { $command = "pray$1"; }
 
-if ($officium =~ /brevi/) {
-  $version = 'Divino Afflatu';
-  @versions = ($version);
+our $version1 = check_version(our $version) || (error("Unknown version: $version1") && 'Rubrics 1960 - 1960');
+our $version2 = check_version($version2) || '';
+if ($version1 eq $version2) { $version2 = 'Divino Afflatu - 1954'; }
+if ($version1 eq $version2) { $version2 = 'Rubrics 1960 - 1960'; }
+
+my ($xmonth, $xday, $xyear) = split('-', strictparam($date_arg) || gettoday());
+our $kmonth = strictparam('kmonth') || $xmonth;
+our $kyear = strictparam('kyear') || $xyear;
+
+my $mode = $kmonth == 15 ? 'kal' : 'ordo';
+require "$Bin/kalendar/$mode.pl";
+
+if (strictparam('format') eq 'ical') {
+  require "$Bin/kalendar/ical.pl";
+  ical_output();
 } else {
-  $version = strictparam('version');
-  @versions = (
-    'pre Trident Monastic',
-    'Trident 1570',
-    'Trident 1910',
-    'Divino Afflatu',
-    'Reduced 1955',
-    'Rubrics 1960',
-    '1960 Newcalendar'
-  );
+  html_output($mode);
 }
-if (!$version) { $version = ($version1) ? $version1 : 'Rubrics 1960'; }
-setmdir($version);
-$testmode = strictparam('testmode');
-$kmonth = strictparam('kmonth');
-$kyear = strictparam('kyear');
-if (!$kmonth) { $kmonth = $month; }
-if (!$kyear) { $kyear = $year; }
-@origyear = split('-', gettoday());
-@monthnames = (
-  'Januarius', 'Februarius', 'Martius', 'Aprilis', 'Majus', 'Junius',
-  'Julius', 'Augustus', 'September', 'October', 'November', 'December'
-);
-@monthlength = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
-$title = "Kalendarium: $monthnames[$kmonth-1] $kyear";
-@daynames = ('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
 
-#*** generate HTML
-htmlHead($title, 2);
-print << "PrintTag";
-<BODY VLINK=$visitedlink LINK=$link BACKGROUND="$htmlurl/horasbg.jpg" >
-<FORM ACTION="kalendar.pl" METHOD=post TARGET=_self>
-<INPUT TYPE=HIDDEN NAME=setup VALUE="$setupsave">
-<INPUT TYPE=HIDDEN NAME=date1 VALUE="$date1">
-<INPUT TYPE=HIDDEN NAME=kmonth VALUE=$kmonth>
-<INPUT TYPE=HIDDEN NAME=kyear VALUE=$kyear>
-<INPUT TYPE=HIDDEN NAME=date VALUE="$odate">
-<INPUT TYPE=HIDDEN NAME=command VALUE="$command">
-<INPUT TYPE=HIDDEN NAME=officium VALUE="$officium">
-<INPUT TYPE=HIDDEN NAME=browsertime VALUE="$browsertime">
-<INPUT TYPE=HIDDEN NAME=readings VALUE="0">
+# End of program
 
-<P ALIGN=CENTER>
-PrintTag
+#entries 13 (placeholder) and 14 (actually) are added for the Whole Year (Totus) Option
+use constant MONTHNAMES => qw/''
+  Januarius Februarius Martius Aprilis Maius Junius
+  Julius Augustus September October November December/;
+use constant MONTHLENGTH => ('', 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31, '', 365);
+use constant DAYNAMES => qw/Dom. F.II F.III F.IV F.V F.VI Sabb./;
 
-for ($i = $kyear - 9; $i <= $kyear; $i++) {
-  $yn = sprintf("%02i", $i);
-  print "<A HREF=# onclick=\"setky($yn)\">$yn</A>&nbsp;&nbsp;&nbsp;\n";
-}
-print "<A HREF=# onclick=\"callbrevi();\"><FONT COLOR=maroon>Hodie</FONT></A>&nbsp;&nbsp;&nbsp;\n";
+# output html table with entries
 
-for ($i = $kyear + 1; $i <= $kyear + 10; $i++) {
-  $yn = sprintf("%02i", $i);
-  print "<A HREF=# onclick=\"setky($yn)\">$yn</A>&nbsp;&nbsp;&nbsp;\n";
-}
-print "<BR><BR></FONT>\n";
-print "$version : <FONT COLOR=MAROON SIZE=+1><B><I>$title</I></B></FONT>\n";
-print "<BR><BR>\n";
+sub kalendar_table {
+  my ($kyear, $kmonth, $mode) = @_;
+  my $background = (our $whitebground) ? ' class="contrastbg"' : '';
+  my $cols;
+  my $output = qq(<P ALIGN="CENTER">\n<TABLE BORDER="$border" WIDTH="90%" CELLPADDING="3" $background>\n);
 
-for ($i = 1; $i <= 12; $i++) {
-  $mn = substr($monthnames[$i - 1], 0, 3);
-  print "<A HREF=# onclick=\"setkm($i)\">$mn</A>\n";
-  if ($i < 12) { print "&nbsp;&nbsp;&nbsp;\n" }
-}
-print << "PrintTag";
-<P ALIGN=CENTER>
-<TABLE BORDER=$border WIDTH=90% CELLPADDING=3>
-<TR><TH>Dies</TH><TH>de Tempore</TH><TH>Sanctorum</TH><TH>d.h.</TH><TR>
-PrintTag
-$to = $monthlength[$kmonth - 1];
-if ($kmonth == 2 && leapyear($kyear)) { $to++; }
+  if ($mode eq 'kal') {
+    $kmonth = 14;
+    $kyear = 1977;
+    $output .= "<TR><TH>C.E.</TH><TH>D.L.</TH><TH></TH><TH>Dies</TH><TH></TH></TR>\n";
+    $cols = 5 + $compare;
+  } else {
+    $output .= "<TR><TH>Dies</TH><TH>de Tempore</TH><TH>Sanctorum</TH><TH>Vespera</TH><TH>d.h.</TH></TR>\n";
+    $cols = 5;
 
-for ($cday = 1; $cday <= $to; $cday++) {
-  my $date1 = sprintf("%02i-%02i-%04i", $kmonth, $cday, $kyear);
-  $d1 = sprintf("%02i", $cday);
-  $winner = $commemoratio = $scriptura = $commemoratio1 = '';
-  %winner = %commemoratio = %scriptura = %commemoratio1 = {};
-  $initia = 0;
-  $laudesonly = '';
-  precedence($date1);    #for the daily item
-  @c1 = split(';;', $winner{Rank});
-  @c2 =
-    (exists($commemoratio{Rank})) ? split(';;', $commemoratio{Rank})
-    : (
-    exists($scriptura{Rank})
-      && ($c1[3] !~ /ex C[0-9]+[a-z]*/i
-      || ($version =~ /trident/i && $c1[2] !~ /vide C[0-9]/i))
-    ) ? split(';;', "Scriptura: $scriptura{Rank}")
-    : (exists($scriptura{Rank})) ? split(';;', "Tempora: $scriptura{Rank}")
-    : splice(@c2, @c2);
-  $smallgray = "1 maroon";
-  $c1 = $c2 = '';
-
-  if (@c1) {
-    my @cf = undef;
-    @cf = split('~', setheadline($c1[0], $c1[2]));
-    $c1 =
-        ($c1[3] =~ /(C1[0-9])/) ? setfont(' blue', $cf[0])
-      : (($c1[2] > 4 || ($c1[0] =~ /Dominica/i)) && $c1[1] !~ /feria/i) ? setfont($redfont, $cf[0])
-      : setfont($blackfont, $cf[0]);
-    $c1 = "<B>$c1</B>" . setfont($smallgray, "&nbsp;&nbsp;$cf[1]");
+    #    $output .= "<TR><TH>Dies</TH><TH>de Tempore</TH><TH>Sanctorum</TH><TH>d.h.</TH></TR>\n";
+    #    $cols = 4;
   }
 
-  if (@c2) {
-    my @cf = undef;
-    @cf = split('~', setheadline($c2[0], $c2[2]));
-    $c2 =
-        ($c2[3] =~ /(C1[0-9])/) ? setfont(' blue', $cf[0])
-      : ($c2[2] > 4) ? setfont($redfont, $cf[0])
-      : setfont($blackfont, $cf[0]);
-    $c2 = "<I>$c2</I>" . setfont($smallgray, "&nbsp;&nbsp;$cf[1]");
-  }
-  if ($winner =~ /sancti/i) { ($c2, $c1) = ($c1, $c2); }
+  my $to = (MONTHLENGTH)[$kmonth];
+  if (($kmonth == 2 || $kmonth == 14) && leapyear($kyear)) { $to++; }    # in February or for the whole year (14)
 
-  #elsif ($c2) {$c2 .= $laudesonly;}
-  $c1 =~ s/Hebdomadam/Hebd/i;
-  $c1 =~ s/Quadragesima/Quadr/i;
-  if ($dirge) { $c1 .= setfont($smallblack, ' dirge'); }
-  if ($version !~ /1960/ && $initia) { $c1 .= setfont($smallfont, ' *I*'); }
+  for my $cday (1 .. $to) {
+    my $date1;
+    my $d1;
 
-  if (!$c2 && $dayname[2]) {
-    $c2 = setfont($smallblack, $dayname[2]);
-  } elsif (!$c1 && $dayname[2]) {
-    $c1 = setfont($smallblack, $dayname[2]);
-  }
+    if ($kmonth < 13) {                                                  # loop over the days of a single month
+      $date1 = sprintf("%02i-%02i-%04i", $kmonth, $cday, $kyear);
+      $d1 = $cday;
+    } else {                                                             # loop over all days of the year
+      my ($yday, $ymonth, $yyear) = ydays_to_date($cday, $kyear);
+      $date1 = sprintf("%02i-%02i-%04i", $ymonth, $yday, $yyear);
+      $d1 = sprintf("%02i", $yday);
 
-  if ($version !~ /1955|1960/ && $winner{Rule} =~ /\;mtv/i) {
-    $c2 .= setfont($smallblack, ' m.t.v.');
-  }
+      if ($yday == 1) {    # add extra headline at the start of a new month
+        $output .= note('bissextal') if $ymonth == 3 && $mode eq 'kal';
+        my $ms =
+            $mode eq 'kal'
+          ? $ymonth == 1
+            ? (MONTHNAMES)[$ymonth]
+            : qq(<A ID="@{[substr((MONTHNAMES)[$ymonth], 0, 3)]}">@{[(MONTHNAMES)[$ymonth]]}</A> <A HREF="#top">^</A>)
+          : qq(<A HREF=# onclick=\"setkm($ymonth)\">@{[(MONTHNAMES)[$ymonth]]} $kyear</A>);
+        $output .= qq(<TR><TH COLSPAN="$cols" ALIGN="CENTER">$ms</TH></TR>);
+      }
+    }
 
-  if ( $version !~ /1960/
-    && $winner =~ /Sancti/
-    && exists($winner{Lectio1})
-    && $winner{Lectio1} !~ /\@Commune/i
-    && $winner{Lectio1} !~ /\!(Matt|Mark|Luke|John)\s+[0-9]+\:[0-9]+\-[0-9]+/i)
-  {
-    $c2 .= setfont($smallfont, " *L1*");
+    $output .= '<TR>'
+      . join('',
+      map { '<TD' . (length($_) < 20 || $_ =~ /\<A/ ? ' ALIGN="CENTER"' : '') . ">$_</TD>" } table_row($date1, $cday),
+      ) . "</TR>\n";
   }
-  if (!$c1) { $c1 = "<P ALIGN=CENTER>_</P>"; }
-  if (!$c2) { $c2 = "<P ALIGN=CENTER>_</P>"; }
-  print << "PrintTag";
-<TR><TD ALIGN=CENTER><A HREF=# onclick="callbrevi(\'$date1\');">$d1</FONT></A></TD>
-<TD>$c1</TD>
-<TD>$c2</TD>
-<TD ALIGN=CENTER>$daynames[$dayofweek]</FONT></TD>
-</TR>
-PrintTag
+  $output .= note('nigra19') if $mode eq 'kal';
+  $output =~ s/{(.+?)}/ setfont('maroon', $1) /ge;
+  $output . "</TABLE></P>\n";
 }
-print << "PrintTag";
-</TABLE><BR>
-PrintTag
-@chv = splice(@chv, @chv);
-for ($i = 0; $i < @versions; $i++) { $chv[$i] = $version =~ /$versions[$i]/ ? 'SELECTED' : ''; }
-my $vsize = @versions;
-print "<SELECT NAME=version SIZE=$vsize onchange=\"document.forms[0].submit();\">\n";
-for ($i = 0; $i < @versions; $i++) { print "<OPTION $chv[$i] VALUE=\"$versions[$i]\">$versions[$i]\n"; }
-print "</SELECT>\n";
 
-#  my $sel10 = (!$testmode || $testmode =~ /regular/i) ? 'SELECTED' : '';
-#  my $sel12 = ($testmode =~ /^Season$/i) ? 'SELECTED' : '';
-#  my $sel13 = ($testmode =~ /Saint/i) ? 'SELECTED' : '';
-#  print << "PrintTag";
-#&nbsp;&nbsp;&nbsp;
-#<SELECT NAME=testmode SIZE=3 onclick=\"document.forms[0].submit();\">
-#<OPTION $sel10 VALUE='regular'>regular
-#<OPTION $sel12 VALUE='Season'>Season
-#<OPTION $sel13 VALUE='Saint'>Saint
-#</SELECT>
-#PrintTag
-if ($savesetup > 1) { print "&nbsp;&nbsp;&nbsp;<A HREF=# onclick=\"readings();\">Readings</A>"; }
-if ($error) { print "<P ALIGN=CENTER><FONT COLOR=red>$error</FONT></P>\n"; }
-if ($debug) { print "<P ALIGN=center><FONT COLOR=blue>$debug</FONT></P>\n"; }
-print << "PrintTag";
-</FORM>
-</BODY></HTML>
+# print html page
+sub html_output {
+  my ($mode) = @_;
+
+  print html_header();
+  print kalendar_table($kyear, $kmonth, $mode);
+
+  print "<P ALIGN='CENTER'>\n";
+  print htmlInput('version', $version1, 'options', 'versions', "document.forms[0].submit()");
+  print htmlInput('version2', $version2, 'options', 'versions', "document.forms[0].submit()") if $compare;
+  print "</P><P ALIGN='CENTER'>\n" . bottom_links_menu() . "</P>\n";
+
+  # if ($Readings) { Readings(); } # not reachable
+  if ($compare) {
+    print qq(<P ALIGN="CENTER"><A HREF="#" onclick="callkalendar(0, '$mode')">Single Calendar</A>\n);
+  } else {
+    print qq(<P ALIGN="CENTER"><A HREF="#" onclick="callkalendar(1, '$mode')">Compare Calendars</A>\n);
+  }
+
+  if ($mode eq 'ordo') {
+    my $tyear;
+    ($tyear = gettoday()) =~ s/.*-//;
+    my $iyear = $tyear != $kyear ? "&kyear=$kyear" : '';
+    print "&nbsp;&nbsp;&nbsp;<A HREF='$ENV{PATH_INFO}?format=ical&version=$version1$iyear'>iCal</A>";
+  }
+
+  my $date1 = strictparam('date1');
+  my $browsertime = strictparam('browsertime');
+
+  # my $Readings = strictparam('readings'); # unused
+
+  (my $command = strictparam('command')) =~ s/^pray//;
+
+  if ($command =~ /(Ante|Matutinum|Laudes|Prima|Tertia|Sexta|Nona|Vespera|Completorium|Past)/i) {
+    $command = "pray" . ($compare ? $1 : $command);    # Cofficium can't use Plures
+  }
+
+  print <<"PrintTag";
+</P>
+<INPUT TYPE="HIDDEN" NAME="setup" VALUE="$setupsave">
+<INPUT TYPE="HIDDEN" NAME="date1" VALUE="$date1">
+<INPUT TYPE="HIDDEN" NAME="kmonth" VALUE=$kmonth>
+<INPUT TYPE="HIDDEN" NAME="date" VALUE="$date1">
+<INPUT TYPE="HIDDEN" NAME="command" VALUE="$command">
+<INPUT TYPE="HIDDEN" NAME="officium" VALUE="$officium">
+<INPUT TYPE="HIDDEN" NAME="browsertime" VALUE="$browsertime">
+<INPUT TYPE="HIDDEN" NAME="compare" VALUE="$compare">
+<INPUT TYPE="HIDDEN" NAME="readings" VALUE="0">
 PrintTag
-if ($Readings) { Readings(); }
+
+  htmlEnd();
+}
 
 #*** horasjs()
 # javascript functions called by htmlhead
 sub horasjs {
-  print << "PrintTag";
-
-<SCRIPT TYPE='text/JavaScript' LANGUAGE='JavaScript1.2'>
-
+  qq(
 function callbrevi(date) {
   if (!date) date = '';
   var officium = "$officium";
   if (!officium || !officium.match('.pl')) officium = "officium.pl";
-  document.forms[0].date.value = date;
-  document.forms[0].action = officium;
+  document.forms[0].$date_arg.value = date;
+  document.forms[0].action = ((officium.match(/missa/)) ? '../missa/' : '' ) + officium;
   document.forms[0].target = "_self"
   document.forms[0].submit();
 }
 
+//calls missa
+function callmissa() {
+  document.forms[0].action = "../missa/missa.pl";
+  if (document.forms[0].command.value != "") {
+    document.forms[0].command.value = "praySanctaMissa"
+  }
+  document.forms[0].target = "_self"
+  document.forms[0].submit();
+}
+
+//calls compare kalendar
+function callkalendar(c,m) {
+  document.forms[0].action = 'kalendar.pl';
+  if (m == 'kal') { document.forms[0].kmonth.value = 15; }
+  document.forms[0].compare.value = c;
+  document.forms[0].target = "_self"
+  document.forms[0].submit();
+}
+
+function prevnext(d) {
+  document.forms[0].kyear.value = parseInt(document.forms[0].kyear.value) + d;
+}
+
 function setkm(km) {
   document.forms[0].kmonth.value = km;
+  if (km == -1) {
+    document.forms[0].kmonth.value = 12;
+    document.forms[0].kyear.value--;
+  }
+  else {
+    if (km == 13) {
+      document.forms[0].kmonth.value = 1;
+      document.forms[0].kyear.value++;
+    }
+  }
   document.forms[0].submit();
 }
 
@@ -313,35 +301,39 @@ function readings() {
   document.forms[0].readings.value = 1;
   document.forms[0].submit();
 }
-</SCRIPT>
-PrintTag
+)
 }
 
-sub Readings {
-  my @months = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
-  my @days = ('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
-  my $savehora = $hora;
-  $hora = 'Laudes';
-  print "<TABLE>\n";
-  print "<TR><TD COLSPAN=3 ALIGN=CENTER><I>Readings $kmonth-$kyear</I></TD></TR>\n";
+sub horasjsend() {
 
-  for (my $kday = 1; $kday <= $months[$kmonth - 1]; $kday++) {
-    my $date1 = sprintf("%02i-%02i-%04i", $kmonth, $kday, $kyear);
-    $d1 = sprintf("%02i", $kday);
-    $winner = $commemoratio = $scriptura = '';
-    %winner = %commemoratio = %scriptura = {};
-    $initia = 0;
-    precedence($date1);    #for the daily item
-    my $line = "$d1 $days[$dayofweek] : ";
-    if ($dayofweek == 0) { $line = "<B>$line</B>"; }
-    $line = "<TR><TD>$line</TD><TD>";
-
-    foreach $i (1, 2, 3) {
-      my $w = lectio($i, 'Latin');
-      if ($w =~ /!([0-9]*\s*[a-z]+ [0-9]+:[0-9]+)/i) { $line .= "$1, " }
-    }
-    print "$line</TD><TD><I>$dayname[1]</I><\TD><\TR>>\n";
-  }
-  print "<\TABLE>\n";
-  $hora = $savehora;
+  # Gregorian Chant (GABC) functionality:
+  # Empty but necessary function to mask the corresponding one from horasjs.pl!
 }
+
+# below function is unused
+# sub Readings {
+#   my @months = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+#   my @days = ('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
+#   $hora = 'Laudes';
+#   print "<TABLE>\n";
+#   print "<TR><TD COLSPAN=3 ALIGN=CENTER><I>Readings $kmonth-$kyear</I></TD></TR>\n";
+#
+#   for (my $kday = 1; $kday <= $months[$kmonth - 1]; $kday++) {
+#     my $date1 = sprintf("%02i-%02i-%04i", $kmonth, $kday, $kyear);
+#     my $d1 = sprintf("%02i", $kday);
+#     $winner = $commemoratio = $scriptura = '';
+#     %winner = %commemoratio = %scriptura = {};
+#     $initia = 0;
+#     precedence($date1);    #for the daily item
+#     my $line = "$d1 $days[$dayofweek] : ";
+#     if ($dayofweek == 0) { $line = "<B>$line</B>"; }
+#     $line = "<TR><TD>$line</TD><TD>";
+#
+#     foreach my $i (1, 2, 3) {
+#       my $w = lectio($i, 'Latin');
+#       if ($w =~ /!([0-9]*\s*[a-z]+ [0-9]+:[0-9]+)/i) { $line .= "$1, " }
+#     }
+#     print "$line</TD><TD><I>$dayname[1]</I></TD></TR>\n";
+#   }
+#   print "</TABLE>\n";
+# }

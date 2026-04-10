@@ -1,0 +1,14 @@
+[Lectio1]
+@Tempora/Pasc0-0::s/ Niewiasty.*//
+
+[Responsory1]
+@Tempora/Pasc0-0::1-2 s/\n\*// s/: już/.\n* Już/
+@Tempora/Pasc1-0:Responsory2:1 s/^R/V/ s/ (?=Już)/\nR. /
+
+[Lectio2]
+@Tempora/Pasc0-0:Lectio1:s/.*Niewiasty/Niewiasty/s s/$/~/
+@Tempora/Pasc0-0::s/ Blask.*//
+
+[Lectio3]
+@Tempora/Pasc0-0:Lectio2:s/.*Blask/Blask/ s/$/~/
+@Tempora/Pasc0-0::s/ Posłuchajmy.*//

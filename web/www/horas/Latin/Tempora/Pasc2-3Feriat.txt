@@ -1,1 +1,14 @@
 @Tempora/Pasc2-3Feria
+
+[Lectio1]
+@Tempora/Pasc2-3Feria::1-7 s/-24/-21/
+
+[Lectio2]
+@Tempora/Pasc2-3Feria::1 s/25-31/22-27/
+@Tempora/Pasc2-3Feria:Lectio1:8-10
+@Tempora/Pasc2-3Feria::2-4
+
+[Lectio3]
+@Tempora/Pasc2-3Feria::1 s/32-38/28-35/
+@Tempora/Pasc2-3Feria:Lectio2:5-8
+@Tempora/Pasc2-3Feria::2-5

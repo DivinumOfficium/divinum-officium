@@ -1,11 +1,10 @@
-[Rank]
-Feria Secunda in Rogationibus;;Feria;;2;;ex Pasc5-1
+[Officium]
+Feria Secunda in Rogationibus
 
-[RankNewcal]
-Feria Secunda infra Hebdomadam V post Octavam Paschæ;;Feria;;1
+[Rank]
+;;Feria;;1
 
 [Rule]
-ex Pasc5-1;
-no Gloria
+Gloria
 no Credo
 Suffr=Maria3;Ecclesiæ,Papa;;

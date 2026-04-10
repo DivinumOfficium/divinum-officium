@@ -1,0 +1,78 @@
+@Tempora/Nat30
+
+[Rule]
+Psalmi Feria
+3 Lectiones
+Antiphonas horas
+
+[Ant Matutinum] 
+@SanctiCist/12-25::6:s/;;98//
+;;
+@Tempora/Epi1-0:Ant 3
+;;
+Nato Dómino, * Angelórum chorus canébat, dicens: Glória in excélsis Deo, et in terra pax homínibus bonæ voluntátis.
+;;
+Allelúia, * allelúia, allelúia.
+
+[Lectio1]
+Léctio sancti Evangélii secúndum Lucam. 
+!Cap. 2. 
+In illo témpore: Erat Joseph, et María mater Jesu, mirántes super his, quæ dicebántur de illo. Et réliqua.
+_
+Homilía sancti Ambrósii Epíscopi.
+!Lib. 2 in Cap. 2. Lucæ.
+Vides úberem in omnes grátiam, Dómini generatióne diffúsam, et prophetíam incrédulis negátam esse, non justis. Ecce et Símeon prophétat, in ruínam et resurrectiónem plurimórum venisse Dóminum Jesum Christum, ut justórum, iníquorúmque merita discérnat; et pro nostrórum qualitate factórum, judex verus et justus aut supplícia decérnat, aut præmia.
+	
+[Lectio2]
+Et tuam ipsíus ánimam pertransíbit gládius. Nec líttera, nec história docet, ex hac vita Maríam corporális necis passióne migrásse. Non enim ánima, sed corpus materiáli gládio transverberátur. Et ídeo prudéntiam Maríæ haud ignáram mystérii cœléstis osténdit.
+	
+[Lectio3]
+Vivum enim verbum Dei, et válidum, et acútius omni gládio acutíssimo, pénetrans usque ad divisiónem ánimæ et spíritus, ártuum quoque et medullárum, cogitatiónes cordis et secréta scrutátur animórum, quia nuda et apérta sunt ómnia Dei Fílio, quem consciéntiæ secréta non fallunt.
+
+[Responsory1]
+R. Nésciens Mater Virgo virum, péperit sine dolóre Salvatórem sæculórum. 
+* Ipsum Regem Angelórum, sola Virgo lactábat úbere de cælo pleno.
+V. ~
+@Commune/C11:Communio
+R. Ipsum Regem Angelórum, sola Virgo lactábat úbere de cælo pleno.
+
+[Responsory2]
+@Sancti/01-01:Responsory5
+
+[Responsory3]
+@Tempora/Nat1-0:Responsory8
+
+[MM Capitulum]
+@Tempora/Nat1-0:Capitulum Sexta
+_
+@SanctiCist/12-25:Nocturn 2 Versum
+
+[Ant 2] 
+@:Ant 1
+
+[Responsory SextaM] 
+@SanctiCist/12-25:Nocturn 2 Versum
+
+[Responsory NonaM] 
+@SanctiCist/12-25:Nocturn 3 Versum
+
+[Ant 3]
+@Tempora/Nat1-0
+
+[Commemoratio 2] (rubrica altovadensis)
+@Sancti/12-25:Octava
+
+[Commemoratio 2] (rubrica tridentina nisi rubrica altovadensis)
+@Sancti/12-25:Octava
+@Sancti/12-26:Octava
+@Sancti/12-27:Octava
+@Sancti/12-28:Octava
+
+[Commemoratio 3] (rubrica altovadensis)
+@Sancti/12-25:Octava
+
+[Commemoratio 3] (rubrica tridentina nisi rubrica altovadensis)
+@Sancti/12-25:Octava
+@Sancti/12-26:Octava
+@Sancti/12-27:Octava
+@Sancti/12-28:Octava

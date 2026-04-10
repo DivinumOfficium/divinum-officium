@@ -1,0 +1,47 @@
+@Tempora/Nat1-0
+
+[Rank]
+Dominica Infra Octavam Nativitatis;;Semiduplex;;5.4;;ex SanctiOP/12-25
+
+[Rule]
+Psalmi minores ex Psalterio
+
+[Capitulum Laudes]
+@Sancti/12-25:Capitulum Laudes
+
+[Responsory Vespera 1]
+
+
+[Versum 1]
+@Sancti/12-25:Nocturn 1 Versum
+
+[Ant 1]
+@Sancti/12-25:Ant LaudesC:4
+
+[In Finem Lectio]
+@TemporaOP/Quad5-0
+
+[Lectio1]
+@Sancti/12-25
+@:In Finem Lectio
+
+[Lectio2]
+@Sancti/12-25
+
+[Responsory2]
+@SanctiM/12-25:Responsory4:1-3 s/\n\*// s/, ([A-Z])/,\n* $1/
+@SanctiM/12-25:Responsory4:2 s/.*, (?=[A-Z])/R. /
+
+[Lectio3]
+@Sancti/12-25
+@:In Finem Lectio
+
+[Responsory3]
+@SanctiOP/12-25:Responsory9:1-4
+
+[Lectio7]
+@Tempora/Nat1-0::s/$/~/
+@Tempora/Nat1-0:Lectio8:s/\..*/./
+
+[Versum 2]
+@Sancti/12-25:Versum 1C

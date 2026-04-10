@@ -1,10 +1,5 @@
-[Rank]
-S. Lini Papae et Martyris;;Semiduplex;;2;;vide C4b
-
-[Rule]
-OPapaM=Linum;
-vide C4b;
-Gloria
+[Officium]
+Św. Lina Papieża i Męczennika
 
 [Comment]
 # 23 IX – Św. Linusa, Papieża i Męczennika
@@ -15,13 +10,13 @@ Gloria
 Msza wspólna nr 8 Si diligis.
 
 Wspomnienie św. Tekli
-Św. Tekla, dziewica z Małej Azji, poniosła męczeństwo za Chrystusa około roku 100. Kult jej rozpoczął się w II wieku. 
+Św. Tekla, dziewica z Małej Azji, poniosła męczeństwo za Chrystusa około roku 100. Kult jej rozpoczął się w II wieku.
+
+[Name]
+Lina
 
 [Introitus]
 @Commune/C4b:Introitus
-
-[Oratio]
-@Commune/C4b:Oratio
 
 [Lectio]
 @Commune/C4b:Lectio
@@ -35,24 +30,5 @@ Wspomnienie św. Tekli
 [Offertorium]
 @Commune/C4b:Offertorium
 
-[Secreta]
-@Commune/C4b:Secreta
-
 [Communio]
 @Commune/C4b:Communio
-
-[Postcommunio]
-@Commune/C4b:Postcommunio
-
-[Commemoratio Oratio]
-! Wspomnienie św. Tekli
-Prosimy Cię, wszechmogący Boże, spraw, abyśmy obchodząc narodziny dla nieba świętej Tekli, Twojej Dziewicy i Męczennicy, radowali się z dorocznej uroczystości i korzystali z przykładu tak wielkiej wiary.
-$Per Dominum
-
-[Commemoratio Secreta]
-! Wspomnienie św. Tekli
-@Commune/C6:Secreta
-
-[Commemoratio Postcommunio]
-! Wspomnienie św. Tekli
-@Commune/C6:Postcommunio

@@ -1,0 +1,167 @@
+[Ant VesperaBMV]
+{name:Laeva ejus;annotation:4.A*;mode:4;book:The Liber Usualis, 1961, p. 1258;transcriber:Andrew Hinkley;%%(c3) LAe(e')va(f) e(h_i)jus(i.) *(,) sub(h_i) cá(j)pi(i')te(h) me(i.)o,(i.) (;) et(i) déx(f')te(i)ra(g') il(h)lí(f_e)us(f_e) (,) am(d')ple(e)xá(gxf_g)bi(h')tur(h) me.(f.) (::) ^_T. P._^ Al(d_e)le(f_h)lú(f.){ja}.(f.) (::)};;112;;4-alt-Astar
+{name:Speciosa facta es;annotation:4.A*;mode:4;book:The Liber Usualis, 1961, p. 1259;transcriber:Andrew Hinkley;%%(c3) SPe(e)ci(f')ó(h)sa(h') fa(h)cta(ij) es(i.) *(,) et(h_i) su(j_h)á(i.)vis(i.) (;) in(f') de(i)lí(h')ci(g)is(h) tu(f_e)is,(f_e) (,) san(d')cta(e) De(f')i(h) Gé(f')ni(f)trix.(f.) (::) ^_T. P._^ Al(d_e)le(f_h)lú(f.){ja}.(f.) (::)};;147;;4-alt-Astar
+
+[Ant VesperaBMV] (rubrica monastica)
+{name:Laeva ejus;annotation:4.A*;mode:4;book:Antiphonale Monasticum, 1934, p. 707;%%(c3) LÆ(e)va(f) e(h_i)jus(i') *(,) sub(i) cá(h_i)pi(j)te(ih) me(i.)o,(i.) (;) et(i) déx(f')te(i)ra(h') il(g)lí(f_e)us(f_e) (,) am(d')plex(e)á(gxf_g)bi(h')tur(g) me.(f.) (::) ^_T. P._^ Al(d_e)le(f_h)lú(f.)ja.(f.) (::)};;112;;4-alt-Astar
+{name:Speciosa facta es;annotation:4.A*;mode:4;book:Antiphonale Monasticum, 1934, p. 708;transcriber:Frado;%%(c3) Spe(e)ci(f')ó(h)sa(h') fa(h)cta(ij) es(ii) *(,) et(h_i) su(j_h)á(i.)vis(i.) (;) in(f') de(i)lí(h')ci(g)is(f) tu(f_e)is,(f_e) (,) san(d')cta(e) De(f')i(h) Gé(f)ni(ef)trix. (f.) (::) ^_T.P._^  Al(d_e)le(f_h)lú(f.)ia(f.) (::)};;147;;4-alt-Astar
+
+[Hymnus Vespera]
+!Prima stropha sequentis hymni dicitur flexis genibus.
+{gabc:Commune/C11/hy--ave_maris_stella--solesmes_1934}
+(sed tonus festivus)
+{gabc:Commune/C11/hy--ave_maris_stella_another_chant--solesmes_1961.1}
+(sed tonus in solemnitatibus)
+{gabc:Commune/C11/hy--ave_maris_stella_in_solemnitatibus--solesmes_1934}
+
+[Versum 1]
+{initial-style:0;%%(c3) V/. Di(h)gná(h)re(h) me(h) lau(h)dá(h)re(h) te,(h) Vir(h)go(h) sa(h)crá(h hr)ta.(g_'/hvGF'E!fgf.) (::)
+R/. Da(h) mi(h)hi(h) vir(h)tú(h)tem(h) con(h)tra(h) hos(h)tes(h) tu(h hr)os.(g_'/hvGF'E!fgf.) (::)}
+
+[Ant 1]
+{name:Sancta Maria...festivitatem;annotation:4.E;mode:4;transcriber:iaquobus;%%(c4) SAn(e!fwg)cta(dc) Ma(de)rí(e)a,(e.) *(,) suc(gh)cúr(hg)re(ed) mí(e!fw!gv_[oh:h]FE)se(de)ris,(e.) (;) ju(h)va(g) pu(fe)sil(d)lá(efe)ni(de)mes,(e.) (;) ré(ed)fo(dc)ve(c) flé(e!fw!gv_[oh:h]FE)bi(de)les :(e.) (:) o(d!f'h)ra(g) pro(fe) pó(dc)pu(df)lo,(efED.) (;) in(d)tér(dh)ve(ixhih)ni(g) pro(gh) cle(gf)ro,(ed..) (;) in(d)ter(fh)cé(h)de(g) pro(fe) de(dc)vó(df)to(efE'D) (,) fe(fh)mí(hvGF')ne(g)o(gf) se(e.)xu :(e.) (:) sén(c)ti(df)ant(fd) o(e_[uh:l]f)mnes(g) tu(gh)um(gf) ju(de)vá(dd)men,(c.) *(;) qui(cd)cúm(fe)que(fg) cé(gh)le(g)brant(g'_[oh:h]) (,) tu(g)am(g) so(g)lé(gh)mnem(g') fe(gf)sti(g)vi(ghg)tá(e.)tem.(e.) (::) _^T. P.^_ Al(g)le(gf)lú(e.)ja.(e.) (::)};;4E
+(sed rubrica monastica)
+{name:Sancta Maria;annotation:1.D;mode:1;transcriber:faj-munich;%%(c4) SAn(cd~)cta(d) Ma(d)rí(fd__!ev_DC'd)a,(d_c) *(,) suc(f_e)cúr(g_0h)re(e_d) mí(fgf)se(ed/fd)ris,(d.) (;) ju(dh'1iv)va(h_g) pu(h)sil(gf~)lá(g_0h)ni(fv_ED)mes,(d.) (;) ré(c_0d)fo(dg_1hv)ve(e_d) flé(fgf)bi(ed/fd)les:(d.) (:) o(c)ra(d) pro(fe) pó(f)pu(d_0eDC')lo,(d_c) (;) in(c)tér(d>)ve(f_0gF'E)ni(g_0h) pro(ddc) cle(dfE'D)ro,(d.) (;) in(h)ter(gf~)cé(ghg')de(h_/i/ih_') pro(f) de(gh)vó(g_0hFD___)to(fv_EC') (,) fe(e)mí(gh)ne(ed)o(fe) se(d.)xu :(d.) (:) sén(c)ti(d)ant(fe~) o(f>)mnes(d') tu(g)um(c>') ju(d)vá(fd/ec)men,(c.) *(;) qui(f)cúm(gh)que(hg!hiHGgo) cé(f)le(g_0hGF'g)brant(g_f) (,) tu(e)am(g) sanc(g_0h)tam(f') fe(f)sti(fe)vi(c)tá(efd___)tem.(d.) (::) _^T. P.^_ Al(c)le(ce)lú(d.)ja.(d.) (::)};;1D
+
+[Oratio]
+{(c3)Con(h)cé(h)de(h) nos(h) fá(h)mu(h)los(h) tu(h)os,(h) quǽ(h)su(h)mus,(h) Dó(h)mi(h)ne(h) De(h)us,(h) per(h)pé(h)tu(h)a(h) men(h)tis(h) et(h) cór(h)po(h)ris(h) sa(h)ni(h)tá(h)te(h) gau(h)dé(h)re:(f.) †(,) et,(h) glo(h)ri(h)ó(h)sa(h) be(h)á(h)tæ(h) Ma(h)rí(h)æ(h) sem(h)per(h) Vír(h)gi(h)nis(h) in(h)ter(h)ces(g)si(f)ó(h hr)ne,(h.) *(;) a(h) præ(h)sén(h)ti(h) li(h)be(h)rá(h)ri(h) tris(h)tí(h)ti(h)a,(h) et(h) æ(h)tér(h)na(h) pér(h)fru(h)i(h) læ(h)tí(h)ti(dr)a.(d.) (::)}
+$Per Dominum
+
+[Invit]
+{name:Domum Dei;annotation:7.;mode:7;book:Liber Responsorialis, 1895, p. 245;transcriber:faj-munich;%%(c3) San(e)cta(ehg) Ma(h)rí(ih!ij)a,(i) (;) De(i!jk)i(j) Gé(j)ni(i)trix(h) Vir(h!ijhhg)go,(e/fhe/feed) *(:) In(d)ter(fh~)cé(hikvJIH)de(ig!hiHGFh) pro(e) no(efgvFEf)bis.(fe) (::) ^_T. P._^ Al(e)le(e@fde)lú(ef/hfg)ja.(fe) (::)};;7
+
+[Hymnus Matutinum]
+{:H-Quemterra:}v. Quem terra, pontus, sídera
+Colunt, adórant, prædicant,
+Trinam regéntem máchinam,
+Claustrum Maríæ bájulat.
+_
+Cui luna, sol, et ómnia
+Desérviunt per témpora,
+Perfúsa cæli grátia,
+Gestant puéllæ víscera.
+_
+Beáta Mater múnere,
+Cujus supérnus ártifex
+Mundum pugíllo cóntinens,
+Ventris sub arca clausus est.
+_
+Beáta cæli núntio,
+Fœcúnda sancto Spíritu,
+Desiderátus géntibus,
+Cujus per alvum fusus est.
+_
+* Jesu, tibi sit glória,
+Qui natus es de Vírgine,
+Cum Patre, et almo Spíritu
+In sempitérna sǽcula.
+Amen.
+
+[Ant MatutinumBMV]
+Benedícta tu * in muliéribus, et benedíctus fructus ventris tui.;;8
+Sicut myrrha * elécta, odórem dedísti suavitátis, sancta Dei Génetrix.;;18
+Ante torum * hujus Vírginis frequentáte nobis dúlcia cántica drámatis.;;23
+Sicut lætántium * ómnium nostrum habitátio est in te, sancta Dei Génetrix.;;86
+Gaude, María Virgo: * cunctas hǽreses sola interemísti in univérso mundo.;;95
+Dignáre me * laudáre te, Virgo sacráta: da mihi virtútem contra hostes tuos.;;96
+Post partum, * Virgo, invioláta permansísti: Dei Génetrix, intercéde pro nobis.;;97
+
+[Responsory1]
+R. Sancta et immaculáta virgínitas, quibus te láudibus éfferam, néscio: 
+* Quia quem cæli cápere non póterant, tuo grémio contulísti.
+V. Benedícta tu in muliéribus, et benedíctus fructus ventris tui.
+R. Quia quem cæli cápere non póterant, tuo grémio contulisti.
+
+[Responsory2]
+R. Congratulámini mihi, omnes qui dilígitis Dóminum: quia cum essem párvula, plácui Altíssimo, 
+* Et de meis viscéribus génui Deum et hóminem.
+V. Beátam me dicent omnes generatiónes, quia ancíllam húmilem respéxit Deus.
+R. Et de meis viscéribus génui Deum et hóminem.
+
+[Responsory3]
+R. Beáta es, Virgo María, quæ Dóminum portásti, Creatórem mundi: 
+* Genuísti qui te fecit, et in ætérnum pérmanes Virgo.
+V. Ave, María, grátia plena; Dóminus tecum.
+R. Genuísti qui te fecit, et in ætérnum pérmanes Virgo.
+&Gloria
+R. Genuísti qui te fecit, et in ætérnum pérmanes Virgo.
+
+[Responsory4]
+R. Sicut cedrus exaltáta sum in Líbano, et sicut cypréssus in monte Sion: quasi myrrha elécta, 
+* Dedi suavitátem odóris.
+V. Et sicut cinnamómum et bálsamum aromatízans.
+R. Dedi suavitátem odóris.
+
+[Responsory5]
+R. Quæ est ista quæ procéssit sicut sol, et formósa tamquam Jerúsalem? 
+* Vidérunt eam fíliæ Sion, et beátam dixérunt, et regínæ laudavérunt eam.
+V. Et sicut dies verni circúmdabant eam flores rosárum et lília convállium.
+R. Vidérunt eam fíliæ Sion, et beátam dixérunt, et regínæ laudavérunt eam.
+
+[Responsory6]
+R. Ornátam monílibus fíliam Jerúsalem Dóminus concupívit: 
+* Et vidéntes eam fíliæ Sion, beatíssimam prædicavérunt, dicéntes: * Unguéntum effúsum nomen tuum.
+V. Astitit regína a dextris tuis in vestítu deauráto, circúmdata varietáte.
+R. Et vidéntes eam fíliæ Sion, beatíssimam prædicavérunt, dicéntes:
+&Gloria
+R. Unguéntum effúsum nomen tuum.
+
+[Responsory7]
+R. Felix namque es, sacra Virgo María, et omni laude digníssima:
+* Quia ex te ortus est sol justítiæ, Christus, Deus noster.
+V. Ora pro pópulo, intérveni pro clero, intercéde pro devóto femíneo sexu: séntiant omnes tuum juvámen, quicúmque célebrant tuam sanctam festivitátem.
+R. Quia ex te ortus est sol justítiæ, Christus, Deus noster.
+
+[Responsory8]
+R. Beátam me dicent omnes generatiónes, 
+* Quia fecit mihi Dóminus magna qui potens est, et sanctum nomen ejus.
+V. Et misericórdia ejus a progénie in progénies timéntibus eum.
+R. Quia fecit mihi Dóminus magna qui potens est, et sanctum nomen ejus.
+&Gloria
+R. Quia fecit mihi Dóminus magna qui potens est, et sanctum nomen ejus.
+
+[Versum 0]
+{initial-style:0;%%(c3) V/. O(h)ra(h) pro(h) no(h)bis(h) san(h)cta(h) De(h)i(h) Gé(h)ne(fr)trix.(f.) (::)
+R/. Ut(h) dig(h)ni(h) ef(h)fi(h)ci(h)á(h)mur(h) pro(h)mis(h)si(h)ó(h)ni(h)bus(h) Chris(h)ti.(f.) (::)}
+
+[Ant Laudes]
+@Commune/C7:Ant Vespera:1 s/;;\d+;;/;;;;/g
+@:Ant VesperaBMV:1 s/;;\d+;;/;;;;/g
+@Commune/C6:Ant Matutinum:7 s/;;\d+;;/;;;;/g
+@Commune/C7:Ant Vespera:3 s/;;\d+;;/;;;;/g
+@:Ant VesperaBMV:2 s/;;\d+;;/;;;;/g
+
+[Capitulum Laudes]
+!Sir 24:14
+{(c3) Ab(h) in(h)í(h)ti(h)o(h) et(h) an(h)te(h) sǽ(h)cu(h)la(h) cre(h)á(h)ta(f) sum,(f.) †(;) et(h) us(h)que(h) ad(h) fu(h)tú(h)rum(h) sǽ(h)cu(h)lum(g) non(f) dé(h)si(h)nam,(h.) *(;) et(h) in(h) ha(h)bi(h)ta(h)ti(h)ó(h)ne(h) sanc(h)ta(h) co(h)ram(h) ip(h)so(h) mi(h)nis(h)trá(f)vi.(ef..) (::)}
+$Deo gratias
+
+[Hymnus Laudes]
+{gabc:Commune/C11/hy--o_gloriosa_virginum--solesmes_1961.1}
+
+[HymnusM Laudes]
+{gabc:Commune/C11/hy--o_gloriosa_domina--solesmes_1934}
+
+[Ant 2]
+{name:Beata es Maria;annotation:8.G;mode:8;book:Liber antiphonarius, 1960, p. [123] & Liber antiphonarius, 1960, p. 233 & Liber antiphonarius, 1960, p. 769;transcriber:Andrew Hinkley;%%(c4) BE(g)á(gj)ta(hg) es(h') *() Ma(f)rí(g_h)a,(g_h) (,) quae(gf) cre(g)di(h)dí(hk)sti:(jkj.) (;) per(h)fi(i')ci(j)én(hg~)tur(h') in(g) te(g'_) (,) quae(g) di(g_h)cta(f_e) sunt(d) ti(e_f)bi(gh) a(h') Dó(g)mi(fg)no,(gv_FD') al(f)le(fg)lú(g.)ia.(g.) (::)};;8G
+(sed tempore gesimæ aut tempore passionis)
+{name:Beata es Maria;annotation:8.G;mode:8;book:Liber antiphonarius, 1960, p. [123] & Liber antiphonarius, 1960, p. 233 & Liber antiphonarius, 1960, p. 769;transcriber:Andrew Hinkley;%%(c4) BE(g)á(gj)ta(hg) es(h') *() Ma(f)rí(g_h)a,(g_h) (,) quae(gf) cre(g)di(h)dí(hk)sti:(jkj.) (;) per(h)fi(i')ci(j)én(hg~)tur(h') in(g) te(g'_) (,) quae(g) di(g_h)cta(f_e) sunt(d) ti(e_f)bi(gh) a(h') Dó(g)mi(fg)no.(g.) (::)};;8G
+
+[Ant 2] (rubrica monastica)
+{name:Beata es Maria;annotation:8.G;mode:8;book:Antiphonale Monasticum, 1934, p. 207 & Antiphonale Monasticum, 1934, p. 709 & Antiphonale Monasticum, 1934, p. 953;transcriber:Frado;%%(c4) BE(g)á(gj)ta(hg) es(h') Ma(f)rí(g_h)a,(gh..) *(,) quæ(gf) cre(g)di(h)dí(hk)sti :(jkj.) (;) per(h>')fi(i)ci(j')én(h)tur(h') in(g) te(g'_) (,) quæ(g) di(g_h)cta(f_e) sunt(d) ti(e_f)bi(gh) a(h') Dó(g)mi(fg)no,(gv_FD'_) al(f)le(fg)lú(g.)ja(g.) (::)};;8G
+(sed tempore gesimæ aut tempore passionis)
+{name:Beata es Maria;annotation:8.G;mode:8;book:Antiphonale Monasticum, 1934, p. 207 & Antiphonale Monasticum, 1934, p. 709 & Antiphonale Monasticum, 1934, p. 953;transcriber:Frado;%%(c4) BE(g)á(gj)ta(hg) es(h') Ma(f)rí(g_h)a,(gh..) *(,) quæ(gf) cre(g)di(h)dí(hk)sti :(jkj.) (;) per(h>')fi(i)ci(j')én(h)tur(h') in(g) te(g'_) (,) quæ(g) di(g_h)cta(f_e) sunt(d) ti(e_f)bi(gh) a(h') Dó(g)mi(fg)no.(g.) (::)};;8G
+
+[Lectio Prima]
+!Sir 24:19-20
+{(c3) In(h) pla(h)té(h)is(h) sic(h)ut(h) cin(h)na(h)mó(h)mum(h) et(h) bál(h)sa(h)mum(h) a(h)ro(h)ma(h)tí(h)zans(h) o(h)dó(h)rem(h) de(h)di:(f.) †(;) qua(h)si(h) myr(h)rha(g) e(f)léc(h)ta,(h.) *(;) de(h)di(h) su(h)a(h)vi(h)tá(h)tem(h) o(h)dó(f)ris.(ef..) (::)}
+
+[Capitulum Sexta]
+!Sir 24:15-16
+{(c3) Et(h) sic(h) in(h) Si(h)on(h) fir(h)má(h)ta(h) sum,(h) et(h) in(h) ci(h)vi(h)tá(h)te(h) sanc(h)ti(h)fi(h)cá(h)ta(h) si(h)mí(h)li(h)ter(h) re(h)qui(h)é(h)vi,(h) et(h) in(h) Je(h)rú(h)sa(h)lem(h) pot(h)és(h)tas(h) me(h)a.(f.) †(;) Et(h) ra(h)di(h)cá(h)vi(h) in(h) pó(h)pu(h)lo(h) ho(h)no(h)ri(h)fi(h)cá(h)to,(h) et(h) in(h) par(h)te(h) De(h)i(h) me(h)i(h) he(h)ré(h)di(h)tas(g) il(f)lí(h)us,(h.) *(;) et(h) in(h) ple(h)ni(h)tú(h)di(h)ne(h) sanc(h)tó(h)rum(h) de(h)tén(h)ti(h)o(h) me(f)a.(ef..) (::)}
+$Deo gratias
+
+[Ant 3]
+{name:Beatam me dicent;annotation:8.G;mode:8;book:The Liber Usualis, 1961, p. 1263;transcriber:Andrew Hinkley;%%(c4) BE(g)á(gj)tam(h) me(g') di(h)cent(gf~) *(,) o(g_[uh:l]h)mnes(g'_[oh:h]) ge(h)ne(gf)ra(g)ti(gh)ó(f.)nes,(f.) (;) qui(f)a(g') an(f)cíl(g')lam(h) hú(j_k)mi(j)lem(ji/jkj.) (,) re(h'_)spé(j)xit(i) De(g.)us.(g.) (::) _^T. P.^_ Al(hi)le(h)lú(g.){ia}.(g.) (::)};;8G
+(sed rubrica monastica)
+{name:Beatam me dicent;office-part:Antiphona;mode:8;book:Antiphonale Monasticum, 1934, p. 957;transcriber:Matthias Bry;%%(c4)BE(g)á(gj)tam(h>) me(g') di(h)cent(gf~) *() om(g_h)nes(g_') ge(h)ne(gf)ra(g)ti(gh)ó(f.)nes,(f.) (;) qui(f)a(g') an(f)cíl(g')lam(h) hú(j_k)mi(j)lem(ji/jkj.) (,) re(h’_)spé(j)xit(i') † De(g.)us(g.) (::) _^T. P.^_ † De(g)us,(g_h) al(i>)le(hi)lú(g.)ja.(g.) (::)};;8G

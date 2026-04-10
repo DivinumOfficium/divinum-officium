@@ -1,0 +1,23 @@
+@Tempora/Quad1-2
+
+[Lectio1]
+@Tempora/Quad1-2::s/Arefécit .*//
+
+[Lectio2]
+@Tempora/Quad1-2:Lectio1:s/.* (Arefécit)/$1/s s/$/~/
+@Tempora/Quad1-2:Lectio2:s/Et quidem .*//
+
+[Lectio3]
+@Tempora/Quad1-2:Lectio3:s/Si enim .*//
+
+[Responsory1]
+@TemporaCist/Quad1-0:Responsory4
+
+[Responsory2]
+@TemporaCist/Quad1-0:Responsory5
+
+[Responsory3]
+@TemporaCist/Quad1-0:Responsory6
+
+[Ant 3]
+Abiit * Jesus foras extra civitátem in Bethániam: ibíque docébat eos de regno Dei.

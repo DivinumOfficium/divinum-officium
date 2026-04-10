@@ -1,0 +1,40 @@
+@CommuneCist/C1
+
+[Lectio1]
+@CommuneM/C1a
+
+[Lectio2]
+@CommuneM/C1a
+
+[Lectio3]
+@CommuneM/C1a
+
+[Lectio4]
+@CommuneM/C1a
+
+[Lectio5]
+@Commune/C1a:Lectio4:s/Fácies ítaque.*//s
+
+[Lectio6]
+@Commune/C1a:Lectio4:s/.*Fácies ítaque/Fácies ítaque/s
+
+[Lectio7]
+@CommuneM/C1a
+
+[Lectio8]
+@CommuneM/C1a
+
+[Lectio9]
+@CommuneM/C1a
+
+[Lectio10]
+@CommuneM/C1a
+
+[Lectio11]
+@CommuneM/C1a
+
+[Lectio12]
+@Commune/C1a:Lectio9:s/Ei ergo.*//
+
+[Evangelium]
+@Sancti/10-18

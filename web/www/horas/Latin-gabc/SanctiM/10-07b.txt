@@ -1,0 +1,2 @@
+[Ant Laudes]
+@Sancti/10-07::s/\.$/, allelúja./mg s/[:;]/, allelúja$&/ s/allelúja, allelúja/allelúja/

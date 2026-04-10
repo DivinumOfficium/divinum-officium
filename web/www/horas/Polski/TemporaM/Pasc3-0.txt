@@ -1,0 +1,6 @@
+[Lectio9]
+@Tempora/Pasc3-0:Lectio7:s/I nie .*//s
+
+[Lectio10]
+@Tempora/Pasc3-0:Lectio7:s/.* I nie /I nie /s s/$/~/
+@Tempora/Pasc3-0:Lectio8:s/But He .*//s

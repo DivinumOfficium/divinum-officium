@@ -1,0 +1,19 @@
+[Lectio5]
+@Sancti/08-24:Lectio4:s/Ale .*//s
+
+[Lectio6]
+@Sancti/08-24:Lectio4:s/.* Ale /Ale /s s/$/~/
+@Sancti/08-24:Lectio5:s/Co .*//s
+
+[Lectio7]
+@Sancti/08-24:Lectio5:s/.* Co/Co/s
+
+[Lectio9]
+@Sancti/08-24:Lectio7:s/Modli .*//s
+
+[Lectio10]
+@Sancti/08-24:Lectio7:s/.* Modli /Modli /s s/$/~/
+@Sancti/08-24:Lectio8:s/Co .*//s
+
+[Lectio11]
+@Sancti/08-24:Lectio8:s/.* Co /Co /s

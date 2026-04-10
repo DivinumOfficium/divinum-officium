@@ -1,8 +1,14 @@
-[Rank]
-Feria Tertia Majoris Hebdomadæ;;Feria privilegiata;;6
+[Officium]
+Feria Tertia Majoris Hebdomadæ
 
-[Rank] (rubrica 1955 aut rubrica 1960)
-Feria Tertia Hebdomadæ Sanctæ;;Feria privilegiata;;6
+[Officium] (rubrica 1955 aut rubrica 196)
+Feria Tertia Hebdomadæ Sanctæ
+
+[Rank]
+;;Feria privilegiata;;6.9
+
+[Rank] (rubrica 1955 aut rubrica 196)
+;;Feria privilegiata;;7
 
 [Rule]
 Antiphonas horas
@@ -16,7 +22,7 @@ De Jeremía Prophéta
 17 Et Dóminus exercítuum, qui plantávit te, locútus est super te malum: pro malis domus Israël et domus Juda, quæ fecérunt sibi ad irritándum me, libántes Báalim. 
 18 Tu autem, Dómine, demonstrásti mihi, et cognóvi: tunc ostendísti mihi stúdia eórum.
 19 Et ego quasi agnus mansuétus, qui portátur ad víctimam: et non cognóvi quia cogitavérunt super me consília, dicéntes: Mittámus lignum in panem ejus, et eradámus eum de terra vivéntium, et nomen ejus non memorétur ámplius. 
-20 Tu autem, Dómine Sabaoth, qui júdicas juste, et probas renes et corda, vídeam ultiónem tuam ex eis: tibi enim revelávi causam meam.
+20 Tu autem, Dómine Sábaoth, qui júdicas juste, et probas renes et corda, vídeam ultiónem tuam ex eis: tibi enim revelávi causam meam.
 
 [Responsory1]
 R. Contumélias et terróres passus sum ab eis, qui erant pacífici mei, et custodiéntes latus meum, dicéntes: Decipiámus eum, et prævaleámus illi: sed tu, Dómine, mecum es tamquam bellátor fortis. 
@@ -29,7 +35,7 @@ R. Cadant in oppróbrium sempitérnum, ut vídeam vindíctam in eis, quia tibi r
 1 Justus quidem tu es, Dómine, si dispútem tecum: verúmtamen justa loquar ad te: Quare via impiórum prosperátur: bene est ómnibus, qui prævaricántur, et iníque agunt?
 2 Plantásti eos, et radícem misérunt: profíciunt et fáciunt fructum: prope es tu ori eórum, et longe a rénibus eórum. 
 3 Et tu, Dómine, nosti me, vidísti me, et probásti cor meum tecum: cóngrega eos quasi gregem ad víctimam, et sanctífica eos in die occisiónis. 
-4 Usquéquo lugébit terra, et herba omnis regiónis siccábitur propter malítiam habitántium in ea? Consúmptum est ánimal et vólucre, quóniam dixérunt: Non vidébit novíssima nostra.
+4 Usquequo lugébit terra, et herba omnis regiónis siccábitur propter malítiam habitántium in ea? Consúmptum est ánimal et vólucre, quóniam dixérunt: Non vidébit novíssima nostra.
 
 [Responsory2]
 R. Deus Israël, propter te sustínui impropérium, opéruit reveréntia fáciem meam, extráneus factus sum frátribus meis, et hospes fíliis matris meæ: 
@@ -63,8 +69,11 @@ Dixérunt ímpii: * Opprimámus virum justum, quóniam contrárius est opéribus
 [Ant 2]
 Ante diem festum * Paschæ, sciens Jesus quia venit hora ejus, cum dilexísset suos, in finem diléxit eos.
 
+[Ant 2] (rubrica praedicatorum)
+Nemo * tollit a me ánimam meam, sed ego pono eam, et íterum sumo eam. 
+
 [Oratio 2]
-Omnípotens sempitérne Deus: da nobis ita Domínicæ passiónis sacraménta perágere; ut indulgéntiam percípere meréamur.
+Omnípotens sempitérne Deus: da nobis ita Domínicæ passiónis sacraménta perágere; ut indulgéntiam percípere mereámur.
 $Per eumdem
 
 [Ant 3]

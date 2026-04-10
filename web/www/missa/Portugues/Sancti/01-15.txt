@@ -1,73 +1,46 @@
-[Rank]
-S. Pauli Primi Eremitae et Confessoris;;Duplex;;3;;vide C5
-
-[Rank1570]
-S. Pauli Primi Eremitae et Confessoris;;Semiduplex;;2;;vide C5
-
-[Rule]
-vide C5;
-Gloria
+[Officium]
+S. Pauli Primi Eremitae et Confessoris
 
 [Comment]
-# 15 I – Św. Pawła, Pierwszego Pustelnika, Wyznawcy
+# 15 I – S. Paulo, 1.º Eremita, Confessor
 ! 3 classe
 ! Paramentos brancos
-Św. Paweł w 15 roku życia udał się na pustynię i tam przeżył 98 lat na modlitwie i surowej pokucie. Zmarł w roku 341. Św. Hieronim napisał jego życiorys, który pociągnął wielu czytelników do naśladowania świętego Pustelnika. Św. Paweł jest patronem Zakonu Paulinów.
 
-Wspomnienie świętego Maura, Opata. Św. Maur, syn senatora Eutychesa, w młodym wieku został oddany na wychowanie św. Benedyktowi. Odznaczył się wzorowym posłuszeństwem i wkrótce stał się jego pomocnikiem w zarządzie klasztoru. We Francji zachowuje się pobożne podanie, że św. Maur przeszczepił regułę św. Benedykta do Galii.
+[Name]
+Paulo
 
 [Introitus]
 !Sl 91:13-14
-v. Sprawiedliwy zakwitnie jak palma, rozrośnie się jak cedr na Libanie, zasadzony w domu Pańskim, w przedsionkach Boga naszego.
+v. O justo florescerá, como a palmeira, e multiplicar-se-á, como o cedro do Líbano, plantado na casa do Senhor e nos átrios da casa do nosso Deus.
 !Sl 91:2
-Dobrze jest wysławiać Pana i śpiewać imieniu Twemu, o Najwyższy.
+É bom louvar o Senhor: e cantar hinos em honra do vosso nome, ó Altíssimo!
 &Gloria
-v. Sprawiedliwy zakwitnie jak palma, rozrośnie się jak cedr na Libanie, zasadzony w domu Pańskim, w przedsionkach Boga naszego.
-
-[Oratio]
-Boże, który co roku uweselasz nas uroczystością św. Pawła, Twojego Wyznawcy, spraw łaskawie, abyśmy naśladowali czyny tego, którego narodziny dla nieba obchodzimy. 
-$Per Dominum
-
-[Commemoratio Oratio]
-!Comemoração św. Maura
-Prosimy Cię, Panie, niech nas Tobie poleca wstawiennictwo świętego Maura Opata, abyśmy za jego przyczyną otrzymali to, czego nie zdołamy wyjednać naszymi zasługami. 
-$Per Dominum
+v. O justo florescerá, como a palmeira, e multiplicar-se-á, como o cedro do Líbano, plantado na casa do Senhor e nos átrios da casa do nosso Deus.
 
 [Lectio]
-@Sancti/10-19:Lectio
+Lição da Ep.ª do B. Ap.º Paulo aos Filipenses.
+!Fl 3:7-12
+Meus irmãos: As cousas que considerava ganho tive-as depois como perda, meditando em Cristo. E, na verdade, considero tudo como perda, pelo melhor conhecimento que tenho de Jesus Cristo, meu Senhor, por amor de quem renunciei a todas as cousas, considerando-as como poeira, a fim de que ganhe a Cristo e me encontre com Ele, não com a minha própria justiça (a que vem da Lei), mas com aquela que nasce da fé em Jesus Cristo (a justiça que vem de Deus pela fé), para que o conheça a Ele, assim como ao mystério da sua Ressurreição, e tome parte nos seus sofrimentos, havendo-me confortado com sua morte, a fim de que possa de algum modo conseguir a ressurreição dos mortos. Não que eu a tenha alcançado, isto é, me haja tornado já perfeito; mas prossigo o caminho para ver se alcanço o fim para que fui predestinado por Jesus Cristo.
 
 [Graduale]
 !Sl 91:13; 91:14
-V. Sprawiedliwy zakwitnie jak palma, rozrośnie się jak cedr na Libanie w domu Pańskim.
+V. O justo florescerá, como a palmeira, e crescerá, como o cedro do Líbano, na casa do Senhor.
 !Sl 91:3
-V. By głosić z rana Twoje miłosierdzie, a wierność Twoją nocami. Aleluia, aleluia.
+V. Para publicar de manhã a vossa misericórdia; e de noite a vossa verdade. Aleluia, aleluia.
 !Oz 14:6
-Sprawiedliwy wyrośnie jak lilia i kwitnąć będzie przed Panem na wieki. Aleluia.
+O justo germinará, como o lírio, e florescerá eternamente na presença do Senhor. Aleluia.
 
 [Evangelium]
 @Sancti/02-24:Evangelium
 
 [Offertorium]
 !Sl 20:2-3
-Z potęgi Twej, Panie, weseli, się sprawiedliwy, i z pomocy Twojej bardzo się cieszy: spełniłeś pragnienie jego serca.
-
-[Secreta]
-@Commune/C5:Secreta
-
-[Commemoratio Secreta]
-!Comemoração św. Maura
-Prosimy Cię, Panie, niech święty Maur, Opat, wybłaga, by dary ofiarne złożone na świętym ołtarzu posłużyły nam ku zbawieniu. 
-$Per Dominum
+Com o vosso poder, ó Senhor, se alegrará o justo, o qual exultará de alegria, vendo-se salvo por Vós. Concedestes-lhe, Senhor, o desejo da sua alma.
 
 [Communio]
 !Sl 63:11
-Sprawiedliwy weseli się w Panu i do Niego się ucieka, a wszyscy prawego serca się chlubią.
+O justo alegrar-se-á no Senhor e n’Ele esperará: e serão louvados todos os que possuem coração recto.
 
 [Postcommunio]
-Pokrzepieni niebieskim pokarmem i napojem, błagamy Cię pokornie, Boże nasz, niech nas bronią modlitwy tego, w którego święto przyjęliśmy te dary.
-$Per Dominum
-
-[Commemoratio Postcommunio]
-!Comemoração św. Maura
-Gdy przyjęliśmy Twój Sakrament, o Panie, niech nas wspomaga orędownictwo świętego Maura, Opata, abyśmy naśladowali jego wzorowe życie i doznali skutków jego wstawiennictwa.
+Fortalecidos com o alimento e com a bebida celestiais, Vos suplicamos humildemente, ó nosso Deus, que nos protejam as preces daquele em cuja memória os recebemos.
 $Per Dominum

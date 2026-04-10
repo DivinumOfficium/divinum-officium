@@ -1,0 +1,32 @@
+[Ant Matutinum 3N]
+Satiávit Dóminus quinque míllia hóminum de quinque pánibus et duóbus píscibus.;;269;270;271
+
+[Lectio1]
+@Tempora/Quad4-0:Lectio1:
+@Tempora/Quad4-0:Lectio2:s/!.*// s/7.*//s
+
+[Lectio2]
+@Tempora/Quad4-0:Lectio2:s/-10/-8/ s/9.*//s
+
+[Lectio3]
+@Tempora/Quad4-0:Lectio2:s/7-10/9-12/ s/7.*9/9/s
+@Tempora/Quad4-0:Lectio3:s/!.*// s/13.*//s
+
+[Lectio4]
+@Tempora/Quad4-0:Lectio3:s/11-/13-/ s/11.*13/13/s
+
+[Lectio5]
+@Tempora/Quad4-0:Lectio4:s/Quas .*//s
+
+[Lectio6]
+@Tempora/Quad4-0:Lectio4:s/.* Quas /Quas /s s/$/~/
+@Tempora/Quad4-0:Lectio5:s/Quid .*//s
+
+[Lectio7]
+@Tempora/Quad4-0:Lectio5:s/.* Quid Esau/Quid Esau/s
+
+[Lectio10]
+@Tempora/Quad4-0:Lectio8:s/Fecit .*//s
+
+[Lectio11]
+@Tempora/Quad4-0:Lectio8:s/.* Fecit /Fecit /s

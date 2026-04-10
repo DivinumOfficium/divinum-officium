@@ -1,13 +1,5 @@
-[Rank]
-Ss. Innocentium;;Duplex II class cum octava simplici;;5.2;;ex C3
-
-[Rank1960]
-Ss. Innocentium;;Duplex II class;;5;;ex C2
-
-[Rule]
-no Gloria
-Credo
-Prefatio=Nat
+[Officium]
+Św. Młodzianków
 
 [Comment]
 # 28 XII – Świętych Młodzianków
@@ -28,11 +20,6 @@ v. Z ust dzieci i niemowląt zgotowałeś sobie chwałę, Boże, wbrew przeciwni
 Boże, święci Młodziankowie obwieścili Twą chwałę nie słowami, lecz śmiercią; racz wyniszczyć w nas wszystkie źródła grzechów, abyśmy całym życiem wyznawali wiarę w Ciebie, którą głosimy słowami.
 $Per Dominum
 
-[Commemoratio Oratio]
-!W Oktawie Narodzenia
-Dozwól, prosimy Cię, wszechmogący Boże, aby nowe narodzenie się w ciele Jednorodzonego Syna Twego wyzwoliło nas z jarzma grzechu, w którym nas trzyma dawna niewola.
-$Per eundem
-
 [Lectio]
 Czytanie z Księgi Apokalipsy świętego Jana Apostoła.
 !Ap 14:1-5
@@ -46,18 +33,18 @@ V. Sidło się podarło, a my zostaliśmy uwolnieni. Wspomożenie nasze w imieni
 !Ps 112:1
 Chwalcie, o dziatki, Pana, chwalcie imię Pańskie. Alleluja.
 
-[Tractus]
-!Ps 78:3; 78:10
-Krew Świętych rozlali jak wodę wokół Jeruzalem.
-V. I nie było komu pogrzebać.
-V. Pomścij, o Panie, krew Świętych Twoich, którą wylano na ziemi.
-
 [GradualeP]
 Alleluja, alleluja
 !Ps 112:1
 Chwalcie, o dziatki, Pana, chwalcie imię Pańskie. Alleluja, alleluja.
 !Syr 39:19
 V. Panie, Święci Twoi zakwitną jak lilia i jak woń olejku przed Tobą. Alleluja.
+
+[Tractus]
+!Ps 78:3; 78:10
+Krew Świętych rozlali jak wodę wokół Jeruzalem.
+V. I nie było komu pogrzebać.
+V. Pomścij, o Panie, krew Świętych Twoich, którą wylano na ziemi.
 
 [Evangelium]
 Ciąg dalszy ++ Ewangelii świętej według Mateusza.
@@ -72,11 +59,6 @@ Dusza nasza niby ptak wyrwała się z sidła łowców. Sidło się podarło, a m
 Niechaj nie braknie nam, Panie, pobożnej modlitwy Świętych Twoich: niech ona uczyni miłymi nasze dary, a nam zawsze wyjedna Twoje przebaczenie.
 $Per Dominum
 
-[Commemoratio Secreta]
-!W Oktawie Narodzenia
-Uświęć, Panie, złożone dary przez nowe narodzenie Jedynego Syna Twojego i oczyść nas ze zmazy naszych grzechów.
-$Per eundem
-
 [Communio]
 !Mt 2:18
 !x!Rachel, która opłakiwała zaginionych synów, Józefa i Beniamina, jest symbolem zbolałych matek betlejemskich.
@@ -85,8 +67,3 @@ Głos usłyszano w Rama, płacz i jęk wielki: Rachel opłakująca synów swoich
 [Postcommunio]
 Spożyliśmy, Panie, poświęcone Tobie dary. Spraw, prosimy, aby dzięki modlitwom Twoich Świętych przyniosły nam pomoc w życiu doczesnym i przyszłym.
 $Per Dominum
-
-[Commemoratio Postcommunio]
-!W Oktawie Narodzenia
-Wszechmogący Boże, narodzony dzisiaj Zbawiciel świata przywrócił nam synostwo Boże; spraw, prosimy, aby nam udzielił daru nieśmiertelności:
-$Qui tecum

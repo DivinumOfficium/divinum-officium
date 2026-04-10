@@ -1,21 +1,5 @@
-[Rank]
-Dominica I Adventus;;Semiduplex;;6
-
-[Rule]
-9 lectiones
-Antiphonas horas
-
-[Ant Vespera]
-Aquel día * los montes destilarán dulzura, y las colinas manarán leche y miel. Aleluya.
-Alégrate, * hija de Sión, canta, hija de Jerusalén. Aleluya.
-Mirad: vendrá el Señor, * y todos sus ángeles con Él. Aquel día habrá una gran luz. Aleluya.
-Los que tenéis sed, * venid por agua. Buscad al Señor mientras se le encuentra. Aleluya.
-Vendrá * el gran Profeta, y renovará a Jerusalén. Aleluya.
-
-[Capitulum Vespera]
-!Rom 13:11
-v. Hermanos: Daos cuenta del momento: ya es hora de que despertéis del sueño, porque ahora nuestra salvación está más cerca que cuando vinimos a la fe.
-$Deo gratias.
+[Officium]
+Dominica I Adventus
 
 [Ant 1]
 He aquí que el nombre del Señor * viene de lejos, y su resplandor iluminará toda la tierra.
@@ -48,8 +32,6 @@ R. Mirando desde lejos, he aquí que veo acercarse el poder de Dios, y la niebla
 [Responsory2]
 R. Miraba en la visión de la noche y he aquí que en las nubes del cielo venía el Hijo del Hombre, y le fue dado el reino y el honor 
 * Y todos los pueblos, tribus y lenguas le servirán. 
-V. Su poderío es poderío eterno, el cual no le será arrebatado. 
-R. Y todos los pueblos, tribus y lenguas le servirán.
 V. Su poderío es poderío eterno, el cual no le será arrebatado. 
 R. Y todos los pueblos, tribus y lenguas le servirán.
 
@@ -100,7 +82,7 @@ R. Y líbranos.
 
 [Lectio7]
 Santo Evangelio según San Lucas
-!Lc 21, 25-33
+!Lc 21:25-33
 En aquel tiempo: Dijo Jesús a sus discípulos: Se verán fenómenos prodigiosos en el sol, la luna y las estrellas, y en la tierra estarán consternadas las gentes. Y lo que sigue.  
 _
 Homilía de San Gregorio, Papa.
@@ -124,7 +106,7 @@ R. Y decid a las islas que están lejos: Nuestro Salvador vendrá.
 
 [Lectio9]
 Levantarse unos pueblos contra otros, y demás calamidades, vemos en nuestros tiempos mucho más de lo que leemos en los libros. Ya sabéis cuántas ciudades han destruido los terremotos.  En cuanto a las pestes, las sufrimos sin cesar. Las señales en el sol, la luna y las estrellas, aún no las vemos tan manifiestas, mas según las mudanzas que del aire experimentamos, creer podemos que no están muy lejanas.
-	
+
 [Responsory9]
 R. He aquí que vienen los días, dice el Señor, en los que haré aparecer el linaje justo de David: y reinará el Rey, y será sabio y hará juicio y justicia en la tierra. 
 * Y este es el nombre con que le llamarán. * Nuestro Señor justo. 
@@ -134,22 +116,22 @@ R. Y este es el nombre con que le llamarán.
 R. Nuestro Señor justo.
 
 [Ant Laudes]
-@:Ant Vespera
+Aquel día * los montes destilarán dulzura, y las colinas manarán leche y miel. Aleluya.
+Alégrate, * hija de Sión, canta, hija de Jerusalén. Aleluya.
+Mirad: vendrá el Señor, * y todos sus ángeles con Él. Aquel día habrá una gran luz. Aleluya.
+Los que tenéis sed, * venid por agua. Buscad al Señor mientras se le encuentra. Aleluya.
+Vendrá * el gran Profeta, y renovará a Jerusalén. Aleluya.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Rom 13:11
+v. Hermanos: Daos cuenta del momento: ya es hora de que despertéis del sueño, porque ahora nuestra salvación está más cerca que cuando vinimos a la fe.
+$Deo gratias.
 
 [Ant 2]
 El Espíritu Santo * vendrá sobre ti, María. No temas, concebirás en tu vientre al Hijo de Dios. Aleluya.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Capitulum Sexta]
-@Psalterium/Major Special:Day1 Laudes
-
 [Capitulum Nona]
-!Rom 13, 13-14
+!Rom 13:13-14
 v. Andemos como en pleno día: con dignidad; nada de comilonas ni borracheras; nada de prostitución ni lujuria; nada de riñas ni pendencias. Vestíos del Señor Jesucristo.
 $Deo gratias
 

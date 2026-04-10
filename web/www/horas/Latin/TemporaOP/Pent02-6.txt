@@ -1,0 +1,9 @@
+@Tempora/Pent02-6Feria
+
+[Lectio1]
+@Tempora/Pent02-3::!3-5 s/ 6.*; (7:1)/$1-2/
+@Tempora/Pent02-3:Lectio2:2
+
+[Lectio2]
+@Tempora/Pent02-3:Lectio2:!2
+@Tempora/Pent02-3:Lectio3:2-4 s/ Quod.*//

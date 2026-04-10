@@ -1,0 +1,6 @@
+[Lectio9]
+@Tempora/Pent14-0:Lectio7:s/Hebrajczycy.*//s
+
+[Lectio10]
+@Tempora/Pent14-0:Lectio7:s/.* Hebrajczycy/Hebrajczycy/s s/$/~/
+@Tempora/Pent14-0:Lectio8:s/Of.*//s

@@ -1,0 +1,37 @@
+[Lectio4]
+@Tempora/Pent06-0:Lectio3:s/10-/13-/ s/10 .*13 /13 /s
+(sed rubrica cisterciensis)
+@Tempora/Pent06-0:Lectio3:s/-16/-13/ s/Nátan řekl .*//s
+
+[Lectio5]
+@Tempora/Pent06-0:Lectio4:s/Koho .*//s
+
+[Lectio6]
+@Tempora/Pent06-0:Lectio4:s/.* Koho /Koho /s s/$/~/
+@Tempora/Pent06-0:Lectio5:s/Jiní .*//s
+
+[Lectio6] (rubrica cisterciensis)
+@Tempora/Pent06-0:Lectio4:s/.* Koho /Koho /s
+
+[Lectio7]
+@Tempora/Pent06-0:Lectio5:s/.* Jiní /Jiní /s
+(sed rubrica cisterciensis)
+@Tempora/Pent06-0:Lectio5:s/Avšak .*//s
+
+[Lectio8]
+@Tempora/Pent06-0:Lectio6
+(sed rubrica cisterciensis)
+@Tempora/Pent06-0:Lectio5:s/.*(Avšak)/$1/s
+
+[Lectio9]
+@Tempora/Pent06-0:Lectio7:s/Takové lidi.*//s
+
+[Lectio10]
+@Tempora/Pent06-0:Lectio7:s/.* Takové lidi/Takové lidi/s s/$/~/
+@Tempora/Pent06-0:Lectio8:s/Proto .*//s
+
+[Lectio11]
+@Tempora/Pent06-0:Lectio8:s/.* Proto /Proto /s
+
+[Lectio12]
+@Tempora/Pent06-0:Lectio9

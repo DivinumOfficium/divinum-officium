@@ -1,0 +1,34 @@
+
+[Ant 1]
+Ó požehnaný Kříži! * neboť na tobě visel Spasitel světa, a v tobě zvítězil Král Andělů, alleluja.
+
+[Lectio7]
+@Sancti/05-03:Lectio6:s/Hřeby,.*//s
+
+[Lectio8]
+@Sancti/05-03:Lectio6:s/.*(Hřeby,)/$1/s
+
+[Lectio9]
+@Sancti/05-03:Lectio7:s/A on .*//s
+
+[Lectio10]
+@Sancti/05-03:Lectio7:s/.* (A on )/$1/s s/$/~/
+@Sancti/05-03:Lectio8:s/Odpověděl .*//s
+
+[Lectio11]
+@Sancti/05-03:Lectio8:s/.* (?=Odpověděl )// s/Pohleďte .*//s
+
+[Lectio12]
+@Sancti/05-03:Lectio8:s/.*(Pohleďte )/$1/s
+
+[Responsory10]
+V. Ó slavný Kříži, ó úctyhodný Kříži, ó předrahé dřevo, a obdivuhodné znamení!
+* Skrze něž ďábel byl přemožen, a svět Kristovou krví vykoupen, alleluja, alleluja.
+V. Klanějme se znamení Kříže, skrze něž jsme přijali tajemství spásy;
+R. Skrze něž ďábel byl přemožen, a svět Kristovou krví vykoupen, alleluja, alleluja.
+
+[Ant 2]
+Hle, Kříž Páně, * prchejte, nepřátelské končiny, zvítězil lev z kmene Juda, kořen Davidův, alleluja.
+
+[Ant 3]
+Ó Kříži, zářivější * než všechny hvězdy, slavnější než svět, lidem velmi milý, svatý více než vše na světě; ty jediný jsi byl hoden nést to nejlepší na světě; sladké dřevo, sladké hřeby, nesly sladké břemeno, uzdrav zástup zde stojící, shromážděný ke tvé chvále. (Alleluja, alleluja, alleluja.)

@@ -1,11 +1,12 @@
+[Officium]
+S. Joseph Sponsi B.M.V. Confessoris
+
 [Rank]
-S. Joseph Sponsi B.M.V. Confessoris;;Duplex I classis;;6.1;;
-
-[Rank1960]
-S. Joseph Sponsi B.M.V. Confessoris;;Duplex I classis;;6;;
-
-[Rank1570]
-S. Joseph Sponsi B.M.V. Confessoris;;Duplex;;3;;
+;;Duplex I classis;;6.1;;
+(sed rubrica 1570 aut rubrica 1617)
+;;Duplex;;3;;
+(sed rubrica 1960 aut rubrica innovata)
+;;Duplex I classis;;6;;
 
 [Rule]
 proper
@@ -16,15 +17,10 @@ Psalm5 Vespera=116
 
 [Ant Vespera]
 Jacob autem * génuit Joseph, virum Maríæ, de qua natus est Jesus, qui vocátur Christus.;;109
-Missus est * Angelus Gabriel a Deo ad Vírginem desponsátam viro, cui nomen erat Joseph, de domo David, et nomen Vírginis María.;;110
+Missus est * Angelus Gábriel a Deo ad Vírginem desponsátam viro, cui nomen erat Joseph, de domo David, et nomen Vírginis María.;;110
 Cum esset desponsáta * Mater Jesu María Joseph, ántequam convenírent, invénta est in útero habens de Spíritu Sancto.;;111
 Joseph vir ejus, * cum esset justus, et nollet eam tradúcere, vóluit occúlte dimíttere eam.;;112
 Angelus Dómini * appáruit Joseph, dicens: Joseph, fili David, noli timére accípere Maríam cónjugem tuam; quod enim in ea natum est, de Spíritu Sancto est: páriet autem fílium, et vocábis nomen ejus Jesum.;;116
-
-[Capitulum Vespera]
-!Prov 28:20; 27:18
-v. Vir fidélis multum laudábitur. Et, qui custos est Dómini sui, glorificábitur.
-$Deo gratias 
 
 [Hymnus Vespera]
 v. Te, Joseph, célebrent ágmina cǽlitum,
@@ -61,8 +57,7 @@ R. Et príncipem omnis possessiónis suæ.
 Exsúrgens Joseph a somno, * fecit sicut præcépit ei Angelus Dómini, et accépit cónjugem suam.
 
 [Oratio]
-Sanctíssimæ Genetrícis tuæ spónsi, quǽsumus, Dómine, méritis adjuvémur; ut quod~
-possibílitas nostra non óbtinet, ejus nobis intercessióne donétur.
+Sanctíssimæ Genetrícis tuæ sponsi, quǽsumus, Dómine, méritis adjuvémur; ut quod possibílitas nostra non óbtinet, ejus nobis intercessióne donétur.
 $Qui vivis
 
 [Invit]
@@ -79,8 +74,8 @@ Vírginis sponsum, voluítque Verbi
 Te patrem dici, dedit et minístrum
 Esse salútis.
 _
-Tu Redemptórem stabulo jacéntem,
-Quem chorus Vatum cécinit futurum,
+Tu Redemptórem stábulo jacéntem,
+Quem chorus Vatum cécinit futúrum,
 Aspicis gaudens, humilísque natum
 Numen adóras.
 _
@@ -91,24 +86,29 @@ Se tibi subdit.
 _
 Laus sit excélsæ Tríadi perénnis,
 Quæ tibi præbens súperos honóres,
-Det tuis nobis meritis beátæ
+Det tuis nobis méritis beátæ
 Gáudia vitæ.
 Amen.
 
 [Ant Matutinum]
 Ascéndit Joseph, * a Galilǽa de civitáte Názareth in Judǽam, in civitátem David, quæ vocátur Béthlehem, ut profiterétur cum María.;;1
 Venérunt pastóres * festinántes; et invenérunt Maríam, et Joseph, et Infántem pósitum in præsépio.;;2
-Ecce Angelus Dómini * appáruit in somnis Joseph, dicens: Surge, et áccipe Puerum et Matrem ejus, et fuge in Ægýptum.;;3
-V. Constítuit eum dóminum domus suæ.
-R. Et príncipem omnis possessiónis suæ.
-Consúrgens Joseph, * accépit Puerum et Matrem ejus nocte, et secéssit in Ægýptum; et erat ibi usque ad óbitum Heródis.;;4
-Defúncto Heróde, * Angelus Dómini appáruit in somnis Joseph in Ægýpto, dicens: Surge, et áccipe Puerum et Matrem ejus, et vade in terram Israël; defúncti sunt enim qui quærébant ánimam Pueri.;;5
-Accépit Joseph * Puerum et Matrem ejus, et venit in terram Israël.;;8
+Ecce Angelus Dómini * appáruit in somnis Joseph, dicens: Surge, et áccipe Púerum et Matrem ejus, et fuge in Ægýptum.;;3
+Consúrgens Joseph, * accépit Púerum et Matrem ejus nocte, et secéssit in Ægýptum; et erat ibi usque ad óbitum Heródis.;;4
+Defúncto Heróde, * Angelus Dómini appáruit in somnis Joseph in Ægýpto, dicens: Surge, et áccipe Púerum et Matrem ejus, et vade in terram Israël; defúncti sunt enim qui quærébant ánimam Púeri.;;5
+Accépit Joseph * Púerum et Matrem ejus, et venit in terram Israël.;;8
+Audiens Joseph, * quod Archeláus regnáret in Judǽa pro Heróde patre suo, tímuit illo ire.;;14
+Admónitus in somnis, * Joseph secéssit in partes Galilǽæ: et véniens habitávit in civitáte, quæ vocátur Názareth; ut adimplerétur quod dictum est per prophétas: Quóniam Nazarǽus vocábitur.;;20
+Erat Pater Jesu * et Mater mirántes super his, quæ dicebántur de illo; et benedíxit illis Símeon.;;23
+
+[Nocturn 1 Versum]
+@:Versum 1
+
+[Nocturn 2 Versum]
 V. Magna est glória ejus in salutári tuo.
 R. Glóriam et magnum decórem impónes super eum.
-Audiens Joseph, * quod Archeláus regnaret in Judǽa pro Heróde patre suo, tímuit illo ire.;;14
-Admónitus in sómnis, * Joseph secéssit in partes Galilǽæ: et véniens habitávit in civitáte, quæ vocátur Názareth; ut adimplerétur quod dictum est per prophétas: Quóniam Nazarǽus vocábitur.;;20
-Erat Pater Jesu * et Mater mirántes super his, quæ dicebántur de illo; et benedíxit illis Símeon.;;23
+
+[Nocturn 3 Versum]
 V. Justus germinábit sicut lílium.
 R. Et florébit in ætérnum ante Dóminum.
 
@@ -124,26 +124,26 @@ De libro Génesis
 [Responsory1]
 R. Fuit Dóminus cum Joseph, et dedit ei grátiam in conspéctu príncipis cárceris: 
 * Qui trádidit in manu illíus univérsos vinctos.
-V. Quidquid fiébat, sub ipso erat: Dóminus enim erat cum illo, et ómnia ópera ejus dirigebat.
+V. Quidquid fiébat, sub ipso erat: Dóminus enim erat cum illo, et ómnia ópera ejus dirigébat.
 R. Qui trádidit in manu illíus univérsos vinctos.
 
 [Lectio2]
 !Gen 41:37-40
-37 Plácuit Pharaóni consílium et cunctis minístris eius:
+37 Plácuit Pharaóni consílium et cunctis minístris ejus:
 38 locutúsque est ad eos: Num inveníre potérimus talem virum, qui spíritu Dei plenus sit?
 39 Dixit ergo ad Joseph: Quia osténdit tibi Deus ómnia quæ locútus es, numquid sapientiórem et consímilem tui inveníre pótero?
-40 Tu eris super domum meam, et ad tui oris impérium cunctus pópulus obédiet: uno tantum regni sólio te præcédam. 
+40 Tu eris super domum meam, et ad tui oris impérium cunctus pópulus obédiet: uno tantum regni sólio te præcédam.
 
 [Responsory2]
 R. Esuriénte terra Ægýpti, clamávit pópulus ad regem, aliménta petens. Quibus ille respóndit: 
 * Ite ad Joseph, et quidquid vobis díxerit, fácite.
-V. Crescébat quotídie fames in omni terra, aperuítque Joseph univérsa hórrea, et vendébat Ægýptiis.
+V. Crescébat cotídie fames in omni terra, aperuítque Joseph univérsa hórrea, et vendébat Ægýptiis.
 R. Ite ad Joseph, et quidquid vobis díxerit, fácite.
 
 [Lectio3]
 !Gen 41:41-44
 41 Dixítque rursus Phárao ad Joseph: Ecce, constítui te super univérsam terram Ægýpti.
-42 Tulítque ánnulum de manu sua, et dedit eum in manu eius: vestivítque eum stola býssina, et collo torquem áuream circumpósuit.
+42 Tulítque ánnulum de manu sua, et dedit eum in manu ejus: vestivítque eum stola býssina, et collo torquem áuream circumpósuit.
 43 Fecítque eum ascéndere super currum suum secúndum, clamánte præcóne, ut omnes coram eo genu flécterent, et præpósitum esse scirent univérsæ terræ Ægýpti.
 44 Dixit quoque rex ad Joseph: Ego sum Phárao: absque tuo império non movébit quisquam manum aut pedem in omni terra Ægýpti.
 
@@ -161,30 +161,30 @@ Sermo sancti Bernárdi Abbátis
 Quis et qualis homo fúerit beátus Joseph, cónice ex appellatióne, qua, licet dispensatória, méruit honorári ádeo, ut pater Dei et dictus et créditus sit; cónice et ex próprio vocábulo, quod augméntum non dúbitas interpretári. Simul et meménto magni illíus quondam Patriárchæ vénditi in Ægýpto; et scito ipsíus istum non solum vocábulum fuísse sortítum, sed et castimóniam adéptum, innocéntiam assecútum et grátiam.
 
 [Responsory4]
-R. Ascéndit Joseph a Galilǽa de civitáte Názareth in Judæam, in civitátem David, quæ vocátur Béthlehem: 
+R. Ascéndit Joseph a Galilǽa de civitáte Názareth in Judǽam, in civitátem David, quæ vocátur Béthlehem: 
 * Eo quod esset de domo et família David.
-V. Ut profiterétur cum Maria desponsáta sibi uxore.
+V. Ut profiterétur cum María desponsáta sibi uxóre.
 R. Eo quod esset de domo et família David.
 
 [Lectio5]
-Síquidem ille Joseph, fratérna ex invídia vénditus et ductus in Ægýptum, Christi venditiónem præfigurávit: iste Joseph, Herodiánam invídiam fúgiens, Christum in Ægýptum portávit. Ille dómino suo fidem servans, dominæ nóluit commiscéri: iste Dominam suam, Dómini sui matrem, vírginem agnóscens et ipse cóntinens, fidéliter custodívit. Illi data est intellegéntia in mystériis somniórum: isti datum est cónscium fíeri atque partícipem cæléstium sacramentórum.
+Síquidem ille Joseph, fratérna ex invídia vénditus et ductus in Ægýptum, Christi venditiónem præfigurávit: iste Joseph, Herodiánam invídiam fúgiens, Christum in Ægýptum portávit. Ille dómino suo fidem servans, dóminæ nóluit commiscéri: iste Dóminam suam, Dómini sui matrem, vírginem agnóscens et ipse cóntinens, fidéliter custodívit. Illi data est intellegéntia in mystériis somniórum: isti datum est cónscium fíeri atque partícipem cæléstium sacramentórum.
 
 [Responsory5]
-R. Surge, et áccipe Puerum et Matrem ejus, et fuge in Ægýptum; 
+R. Surge, et áccipe Púerum et Matrem ejus, et fuge in Ægýptum; 
 * Et esto ibi, usque dum dicam tibi.
 V. Ut adimplerétur quod dictum est a Dómino per prophétam dicéntem: Ex Ægýpto vocávi Fílium meum.
 R. Et esto ibi, usque dum dicam tibi.
 
 [Lectio6]
-Ille fruménta servávit non sibi, sed omni pópulo: iste Panem vivum e cælo servándum accépit tam sibi quam toti mundo. Non est dubium, quin bonus et fidélis homo fúerit iste Joseph, cui Mater desponsáta est Salvatóris. Fidélis, inquam, servus, et prudens, quem constítuit Dóminus suæ Matris solátium, suæ carnis nutrítium, solum dénique in terris magni consílii coadjutórem fidelíssimum.
+Ille fruménta servávit non sibi, sed omni pópulo: iste Panem vivum e cælo servándum accépit tam sibi quam toti mundo. Non est dúbium, quin bonus et fidélis homo fúerit iste Joseph, cui Mater desponsáta est Salvatóris. Fidélis, inquam, servus, et prudens, quem constítuit Dóminus suæ Matris solátium, suæ carnis nutrítium, solum dénique in terris magni consílii coadjutórem fidelíssimum.
 
 [Responsory6]
 R. Cum indúcerent púerum Jesum paréntes ejus, ut fácerent secúndum consuetúdinem legis pro eo, 
-* Accépit eum Simeon in ulnas suas, et benedíxit Deum.
+* Accépit eum Símeon in ulnas suas, et benedíxit Deum.
 V. Et erat Pater ejus et Mater mirántes super his, quæ dicebántur de illo.
-R. Accépit eum Simeon in ulnas suas, et benedíxit Deum.
+R. Accépit eum Símeon in ulnas suas, et benedíxit Deum.
 &Gloria
-R. Accépit eum Simeon in ulnas suas, et benedíxit Deum.
+R. Accépit eum Símeon in ulnas suas, et benedíxit Deum.
 
 [Lectio7]
 @Sancti/12-24:Lectio1
@@ -192,7 +192,7 @@ R. Accépit eum Simeon in ulnas suas, et benedíxit Deum.
 [Responsory7]
 R. Dicit Mater Jesu ad illum: Fili, quid fecísti nobis sic?
 * Ecce pater tuus et ego doléntes quærebámus te.
-V. Et ait ad illos: Quid est, quod me quærebátis? nesciebátis, quia in his quæ Patris mei sunt, oportet me esse?
+V. Et ait ad illos: Quid est, quod me quærebátis? nesciebátis, quia in his quæ Patris mei sunt, opórtet me esse?
 R. Ecce pater tuus et ego doléntes quærebámus te.
 
 [Lectio8]
@@ -208,17 +208,22 @@ R. Et erat súbditus illis.
 
 [Lectio9]
 @Sancti/12-24:Lectio3
-&teDeum 
+&teDeum
+
+[Versum 0]
+@:Versum 1
 
 [Ant Laudes]
 Ibant paréntes Jesu * per omnes annos in Jerúsalem, in die solémni Paschæ.
 Cum redírent, * remánsit puer Jesus in Jerúsalem, et non cognovérunt paréntes ejus.
-Non inveniéntes * Jesum, regréssi sunt in Jerúsalem requiréntes eum; et post tríduum invenérunt illum in templo sedéntem in medio doctórum, audiéntem et interrogántem eos.
+Non inveniéntes * Jesum, regréssi sunt in Jerúsalem requiréntes eum; et post tríduum invenérunt illum in templo sedéntem in médio doctórum, audiéntem et interrogántem eos.
 Dixit Mater ejus * ad illum: Fili, quid fecísti nobis sic? Ecce pater tuus, et ego doléntes quærebámus te.
 Descéndit Jesus * cum eis, et venit Názareth, et erat súbditus illis.
 
 [Capitulum Laudes]
-@:Capitulum Vespera
+!Prov 28:20; 27:18
+v. Vir fidélis multum laudábitur. Et, qui custos est Dómini sui, glorificábitur.
+$Deo gratias
 
 [Hymnus Laudes]
 v. Iste, quem læti cólimus, fidéles,
@@ -248,58 +253,55 @@ Omne per ævum.
 Amen.
 
 [Versum 2]
-V. Os justi meditábitur sapiéntiam.
-R. Et lingua ejus loquétur judícium.
+@Commune/C5:Nocturn 2 Versum
 
 [Ant 2]
 Ipse Jesus * erat incípiens quasi annórum trigínta, ut putabátur, fílius Joseph.
 
 [Lectio Prima]
 !Sap 10:10
-v. Prófugum justum dedúxit Sapiéntia per vias rectas, et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum; honestávit illum in labóribus, et complévit labóres illíus. 
+v. Prófugum justum dedúxit Sapiéntia per vias rectas, et osténdit illi regnum Dei, et dedit illi sciéntiam sanctórum; honestávit illum in labóribus, et complévit labóres illíus.
 
-[Capitulum Tertia]
-@:Capitulum Vespera
-
-[Responsory Tertia]
+[Responsory Breve Tertia]
 R.br. Constítuit eum * Dóminum domus suæ.
 R. Constítuit eum * Dóminum domus suæ.
 V. Et príncipem omnis possessiónis suæ.
 R. Dóminum domus suæ.
 &Gloria
 R. Constítuit eum * Dóminum domus suæ.
-_
-V. Magna est glória ejus in salutári tuo.
-R. Glóriam et magnum decórem impónes super eum.
+
+[Versum Tertia]
+@:Nocturn 2 Versum
 
 [Capitulum Sexta]
 !Sir 45:1; 45:4
 v. Diléctus Deo et homínibus, cujus memória in benedictióne est. In fide et lenitáte ipsíus sanctum fecit illum, et elégit eum ex omni carne.
-$Deo gratias 
+$Deo gratias
 
-[Responsory Sexta]
+[Responsory Breve Sexta]
 R.br. Magna est glória ejus * In salutári tuo.
 R. Magna est glória ejus * In salutári tuo.
 V. Glóriam et magnum decórem impónes super eum.
 R. In salutári tuo.
 &Gloria
 R. Magna est glória ejus * In salutári tuo.
-_
-V. Justus germinábit sicut lílium.
-R. Et florébit in ætérnum ante Dóminum.
+
+[Versum Sexta]
+@:Nocturn 3 Versum
 
 [Capitulum Nona]
 @:Lectio Prima
 $Deo gratias 
 
-[Responsory Nona]
+[Responsory Breve Nona]
 R.br. Justus germinábit * Sicut lílium.
 R. Justus germinábit * Sicut lílium.
 V. Et florébit in ætérnum ante Dóminum.
 R. Sicut lílium.
 &Gloria
 R. Justus germinábit * Sicut lílium.
-_
+
+[Versum Nona]
 V. Plantátus in domo Dómini.
 R. In átriis domus Dei nostri.
 
@@ -310,5 +312,5 @@ R. In átriis domus Dei nostri.
 V. Glória et divítiæ in domo ejus.
 R. Et justítia ejus manet in sǽculum sǽculi.
 
-[Ant 3] 
+[Ant 3]
 Ecce fidélis servus * et prudens, quem constítuit Dóminus super famíliam suam.

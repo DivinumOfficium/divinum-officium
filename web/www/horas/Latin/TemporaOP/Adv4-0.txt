@@ -1,0 +1,33 @@
+@Tempora/Adv4-0
+
+[Capitulum Laudes]
+@TemporaOP/Adv1-0
+
+[Responsory Vespera 1]
+@Tempora/Adv4-0:Responsory2
+
+[Invit]
+Ecce jam venit plenitúdo témporis, in quo misit Deus Fílium suum natum de Vírgine, factum sub lege: * Veníte, adorémus.
+
+[In Finem Lectio]
+@TemporaOP/Quad5-0
+
+[Lectio1]
+@Tempora/Adv4-3
+@:In Finem Lectio
+
+[Lectio2]
+@Tempora/Adv4-3
+
+[Responsory2]
+@Tempora/Adv4-0:Responsory3
+
+[Lectio3]
+@Tempora/Adv4-3
+@:In Finem Lectio
+
+[Responsory3]
+@Tempora/Adv1-2:Responsory1
+&Gloria
+@Tempora/Adv1-2:Responsory1:2 s/\*/R./
+@Tempora/Adv1-2:Responsory1:1

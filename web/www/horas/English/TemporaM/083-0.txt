@@ -1,7 +1,9 @@
-@Tempora/083-0
+[Lectio6]
+@Tempora/083-0:Lectio5:s/If therefore .*//s
 
-[Responsory8]
-@TemporaM/Pent03-0:Responsory8
+[Lectio7]
+@Tempora/083-0:Lectio5:s/.* If therefore/If therefore/s s/$/~/
+@Tempora/083-0:Lectio6:s/The Lord.*//s
 
-[Responsory9]
-@TemporaM/Pent03-0:Responsory9
+[Lectio8]
+@Tempora/083-0:Lectio6:s/.* Whosoever/Whosoever/s

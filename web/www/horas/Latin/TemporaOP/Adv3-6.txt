@@ -1,0 +1,30 @@
+@Tempora/Adv3-6
+
+[Lectio1]
+@Tempora/Adv3-6::s/ Quia autem.*//
+
+[Responsory1]
+@Tempora/Adv3-5::1-2 s/\n\* (.)/ \l$1/ s/ ad/\n* Ad/
+V. Ex Sion spécies decóris ejus: Deus noster véniet.
+@Tempora/Adv3-5::2 s/.* ad/R. Ad/
+
+[Lectio2]
+@Tempora/Adv3-6:Lectio1:s/.* (?=Quia autem)//s s/$/~/
+@Tempora/Adv3-6::s/ Apte .*//
+
+[Responsory2]
+@Tempora/Adv3-5:Responsory3:1-2
+V. Ecce dominátor Dóminus cum virtúte véniet.
+@Tempora/Adv3-5:Responsory3:2 s/\*/R./
+
+[Lectio3]
+@Tempora/Adv3-6:Lectio2:s/.* (?=Apte)// s/$/~/
+@Tempora/Adv3-6::s/\..*/./
+
+[Responsory3]
+@Tempora/Adv3-6:Responsory2
+&Gloria
+R. In sǽcula.
+
+[Ant 2]
+Omnis vallis implébitur, et omnis mons et collis humiliábitur: et vidébit omnis caro salutáre Dei.

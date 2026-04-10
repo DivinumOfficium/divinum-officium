@@ -1,0 +1,13 @@
+@Tempora/Nat05o
+
+[Rule]
+vide SanctiM/01-01
+Feria Te Deum
+
+[Lectio1]
+@Tempora/Nat04::s/3/4/ s/\n3 / ¶\n3 /
+@Tempora/Nat04:Lectio2:2
+
+[Lectio2]
+@Tempora/Nat04::1 s/4/5/
+@Tempora/Nat04::3-4

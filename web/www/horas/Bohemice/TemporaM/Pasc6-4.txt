@@ -1,0 +1,25 @@
+
+[Lectio5]
+@Tempora/Pasc6-4:Lectio4: s/Nanebevstoupení Páně tedy .*//
+
+[Lectio6]
+@Tempora/Pasc6-4:Lectio4: s/.* (?=Nanebevstoupení Páně tedy )//s
+
+[Lectio7]
+@Tempora/Pasc6-4:Lectio5
+
+[Lectio8]
+@Tempora/Pasc6-4:Lectio6
+
+[Lectio9]
+@Tempora/Pasc6-4:Lectio7
+
+[Lectio10]
+@Tempora/Pasc6-4:Lectio8: s/Hle, aby .*//
+
+[Lectio11]
+@Tempora/Pasc6-4:Lectio8: s/.* (?=Hle, aby )// s/$/~/
+@Tempora/Pasc6-4:Lectio9: s/Vyhýbejme .*//
+
+[Lectio12]
+@Tempora/Pasc6-4:Lectio9: s/.* (?=Vyhýbejme )//

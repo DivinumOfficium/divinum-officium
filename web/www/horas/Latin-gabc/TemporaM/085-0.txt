@@ -1,0 +1,27 @@
+[Lectio1]
+@Tempora/085-0:Lectio1:1-6 s/-5/-4/
+
+[Responsory1]
+R. In princípio Deus ántequam terram fáceret, † priúsquam abýssos constitúeret, priúsquam prodúceret fontes aquárum,
+* Antequam montes collocaréntur, ante omnes colles generávit me Dóminus.
+V. Quando præparábat cælos, áderam, cum eo cuncta compónens.
+R. Antequam montes collocaréntur, ante omnes colles generávit me Dóminus.
+
+[Lectio2]
+@Tempora/085-0::1 s/6-11/5-9/
+@Tempora/085-0:Lectio1:7
+@Tempora/085-0::2-5
+
+[Lectio3]
+@Tempora/085-0::1 s/12-16/10-12/
+@Tempora/085-0:Lectio2:6-7
+@Tempora/085-0::2
+
+[Lectio4]
+@Tempora/085-0:Lectio3:!2 s/12-/13-/
+
+[Lectio7]
+@Tempora/085-0:Lectio6:s/Sed.*//s
+
+[Lectio8]
+@Tempora/085-0:Lectio6:s/.* Sed/Sed/s

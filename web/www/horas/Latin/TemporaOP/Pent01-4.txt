@@ -1,0 +1,87 @@
+@Tempora/Pent01-4
+
+[Ant Vespera]
+@Tempora/Pent01-4::1 s/(?:;;.*)/;;112;116;145;146;147/
+
+[Responsory Vespera 1]
+@Tempora/Pent02-0:Responsory8
+
+[Capitulum Laudes]
+@Tempora/Pent01-4::s/.* (?=Dóminus)/v. / s/: hoc fácite.*/./
+
+[Ant 41]
+Allelúja. Panis quem ego dédero, allelúja, caro mea est pro mundi vita, allelúja, allelúja.
+
+[Lectio1]
+De libro Exodi
+!Exod 12:1-8
+1 Dixit quoque Dóminus ad Móysen et Aaron in terra Ægýpti:
+2 Mensis iste, vobis princípium ménsium: primus erit in ménsibus anni.
+3 Loquímini ad univérsum cœtum filiórum Israël, et dícite eis: Décima die mensis hujus tollat unusquísque agnum per famílias et domos suas.
+4 Sin autem minor est númerus ut suffícere possit ad vescéndum agnum, assúmet vicínum suum qui junctus est dómui suæ, juxta númerum animárum quæ suffícere possunt ad esum agni.
+5 Erit autem agnus absque mácula, másculus, annículus: juxta quem ritum tollétis et hædum.
+6 Et servábitis eum usque ad quartam décimam diem mensis hujus: immolabítque eum univérsa multitúdo filiórum Israël ad vésperam.
+7 Et sument de sánguine ejus, ac ponent super utrúmque postem, et in superlimináribus domórum, in quibus cómedent illum.
+8 Et edent carnes nocte illa assas igni, et ázymos panes cum lactúcis agréstibus.
+
+[Lectio2]
+!Exod 16:10-16
+10 Cum loquerétur Aaron ad omnem cœtum filiórum Israël, respexérunt ad solitúdinem: et ecce glória Dómini appáruit in nube.
+11 Locútus est autem Dóminus ad Móysen, dicens:
+12 Audívi murmuratiónes filiórum Israël. Lóquere ad eos: Véspere comedétis carnes, et mane saturabímini pánibus: scietísque quod ego sum Dóminus Deus vester.
+13 Factum est ergo véspere, et ascéndens cotúrnix, coopéruit castra: mane quoque ros jácuit per circúitum castrórum.
+14 Cumque operuísset superfíciem terræ, appáruit in solitúdine minútum, et quasi pilo tusum in similitúdinem pruínæ super terram.
+15 Quod cum vidíssent fílii Israël, dixérunt ad ínvicem: Manhu? quod signíficat: Quid est hoc? ignorábant enim quid esset. Quibus ait Móyses: Iste est panis quem Dóminus dedit vobis ad vescéndum.
+
+[Lectio3]
+De libro tértio Regum
+!3 Reg 19:3-8
+3 Venit Elías in Bersabée Juda, et dimísit ibi púerum suum,
+4 et perréxit in desértum, viam uníus diéi. Cumque venísset, et sedéret subter unam juníperum, petívit ánimæ suæ ut morerétur, et ait: Súfficit mihi, Dómine: tolle ánimam meam: neque enim mélior sum quam patres mei.
+5 Proiecítque se, et obdormívit in umbra juníperi: et ecce ángelus Dómini tétigit eum, et dixit illi: Surge, et cómede.
+6 Respéxit, et ecce ad caput suum subcinerícius panis, et vas aquæ: comédit ergo, et bibit, et rursum obdormívit.
+7 Reversúsque est ángelus Dómini secúndo, et tétigit eum, dixítque illi: Surge, cómede: grandis enim tibi restat via.
+8 Qui cum surrexísset, comédit et bibit, et ambulávit in fortitúdine cibi illíus quadragínta diébus et quadragínta nóctibus usque ad montem Dei Horeb.
+
+[Responsory3]
+@Tempora/Pent01-4::1-4
+&Gloria
+@Tempora/Pent01-4::4 s/ .* (usque)/ \u$1/
+
+[Lectio4]
+@Tempora/Pent01-4::s/ Ut.*//
+
+[Responsory4]
+@TemporaM/Pent01-4:
+
+[Lectio5]
+@Tempora/Pent01-4:Lectio4:s/.* (?=Ut)//s s/$/~/
+@Tempora/Pent01-4::s/ Manducátur .*//
+
+[Responsory5]
+@Tempora/Pent01-4:Responsory4
+
+[Lectio6]
+@Tempora/Pent01-4:Lectio5:s/.* (?=Manducátur)// s/$/~/
+@Tempora/Pent01-4::s/ Suavitátem .*//
+
+[Responsory6]
+@Tempora/Pent01-4:Responsory5
+
+[Lectio7]
+@Tempora/Pent01-4::s/ Dénique .*//
+
+[Lectio8]
+@Tempora/Pent01-4:Lectio7:s/.* (?=Dénique)//s s/$/~/
+@Tempora/Pent01-4
+
+[Responsory9]
+@TemporaM/Pent01-4:Responsory8:1-4
+&Gloria
+@TemporaM/Pent01-4:Responsory8:4 s/.* (.*)/R. \u$1/
+
+[Ant Vespera 3]
+@Tempora/Pent01-4:Ant Laudes:1 s/(?:;;.*)?$/;;109;110;115;127;147/
+
+[Ant 43]
+@:Ant 41

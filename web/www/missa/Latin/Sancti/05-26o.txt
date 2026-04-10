@@ -1,25 +1,19 @@
+[Officium]
+S. Eleutherii Papæ et Martyris
+
 [Rank]
-S. Eleutherii Papæ et Martyris;;Simplex;;1.1;;vide C2
+;;Simplex;;1.1;;vide C2b
 
 [Rule]
-vide C2;
+vide C2b;
 Gloria
 
-[Oratio]
-Gregem tuum, Pastor ætérne, placátus inténde: et, per beátum Eleuthérium~
-Mártyrem tuum atque Summum Pontíficem, perpétua protectióne custódi; quem totíus~
-Ecclésiæ præstitísti esse pastórem.
-$Per Dominum
+[Name]
+Eleuthérii
+(sed communi Summorum Pontificum)
+Eleuthérium
+Secreta=Eleuthérii
+Postcommunio=Eleuthério
 
-[Secreta]
-Oblátis munéribus, quǽsumus, Dómine, Ecclésiam tuam benígnus illúmina: ut, et~
-gregis tui profíciat ubique succéssus, et grati fiant nómini tuo, te gubernánte,~
-pastóres.
-$Per Dominum
-
-[Postcommunio]
-Refectióne sancta enutrítam gubérna, quǽsumus, Dómine, tuam placátus Ecclésiam:~
-ut, poténti moderatióne dirécta, et increménta libertátis accípiat et in~
-religiónis integritáte persístat.
-$Per Dominum
-
+[Postcommunio] (nisi communi Summorum Pontificum)
+@Commune/C2a-1

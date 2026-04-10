@@ -1,7 +1,43 @@
 @Tempora/082-0
 
+[Lectio3]
+@Tempora/082-0:Lectio3:s/17/14/ s/.15 .*//s
+
+[Lectio4]
+@Tempora/082-0:Lectio3:s/12/15/ s/12 .*15/15/s
+
+[Responsory4]
+@Tempora/081-1:Responsory1
+
+[Lectio5]
+@Tempora/082-0:Lectio4
+
+[Responsory5]
+@Tempora/081-0:Responsory4
+
+[Lectio6]
+@Tempora/082-0:Lectio5
+
+[Responsory6]
+@Tempora/081-0:Responsory5
+
+[Lectio7]
+@Tempora/082-0:Lectio6:s/Nos .*//s
+
+[Responsory7]
+@Tempora/081-0:Responsory6
+
+[Lectio8]
+@Tempora/082-0:Lectio6:s/.* Nos/Nos/s
+
 [Responsory8]
-@TemporaM/Pent03-0:Responsory8
+@Tempora/081-1:Responsory2
 
 [Responsory9]
-@TemporaM/Pent03-0:Responsory9
+@Tempora/081-0:Responsory7
+
+[Responsory10]
+@Tempora/081-1:Responsory3
+
+[Responsory11]
+@Tempora/081-2:Responsory1

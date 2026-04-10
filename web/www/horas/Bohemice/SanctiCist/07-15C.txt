@@ -1,0 +1,20 @@
+[Officium]
+sv. Jindřicha <i>II.,</i> Císaře a Vyznavače
+
+[Lectio2] (rubrica 1951)
+@Sancti/07-15:Lectio4:s/$/~/
+@Sancti/07-15:Lectio5:s/Byl však chráněn.*//
+
+[Lectio3] (rubrica 1951)
+@Sancti/07-15:Lectio5:s/.*Byl však chráněn/Byl chráněn/ s/$/~/
+@Sancti/07-15:Lectio6
+
+[Lectio5]
+@Sancti/07-15:Lectio4:s/Biskupa .*//
+
+[Lectio6]
+@Sancti/07-15:Lectio4:s/.*\. (Biskupa)/$1/ s/$/~/
+@Sancti/07-15:Lectio5:s/Byl zvyklý.*//
+
+[Lectio7]
+@Sancti/07-15:Lectio5:s/.*(Byl zvyklý)/$1/

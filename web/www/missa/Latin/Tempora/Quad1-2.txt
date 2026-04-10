@@ -1,5 +1,8 @@
+[Officium]
+Feria Tertia infra Hebdomadam I in Quadragesima
+
 [Rank]
-Feria Tertia infra Hebdomadam I in Quadragesima;;Feria major;;2
+;;Feria major;;2.1
 
 [Rule]
 no Gloria
@@ -46,8 +49,7 @@ $Per Dominum
 Cum invocárem te, exaudísti me, Deus justítiæ meæ: in tribulatióne dilatásti me: miserére mihi, Dómine, et exáudi oratiónem meam.
 
 [Postcommunio]
-Quǽsumus, omnípotens Deus: ut illíus salutáris capiámus efféctum, cujus per hæc mystéria pignus accépimus.
-$Per Dominum
+@Tempora/Epi5-0:Postcommunio
 
 [Super populum]
 !Oratio super Populum

@@ -1,0 +1,101 @@
+@Sancti/12-28r
+
+[Rule]
+Antiphonas minores ex Psalterio
+
+[Invit]
+Veníte, adorémus Regem regum, * Qui beátis Martýribus corónam dedit glóriæ.
+
+[Ant Matutinum]
+Novit Dóminus vias Innocéntium, qui non stetérunt in viis peccatórum.;;1
+Rex terræ infrémuit advérsus Christum: quia Rex in Sion constitútus super Innocentium millia regnat.;;2
+Deus iudex iustus, iúídica nos secúndum innocéntiam nostram.;;7
+Ex ore infántium, Deus, et lacténtium laude perfécta déstruis inimícum.;;8
+Iudicábit Dóminus pupillum et víduam, et pluet super peccatóres láqueos ignis.;;10
+Mortis usúras rex ímpius exégit super Innocéntes: sed illi requiéscunt in monte sancto Dei: malígnus ad níhilum est dedúctus.;;14
+Quis ascéndet aut quis stabit in loco sancto Dei? Innocens mánibus et mundo corde.;;23
+Innocéntes adhæsérunt mihi, quorum pedes avúlsi sunt a láqueo mortis.;;24
+Filio regis datum est iudícium, ut salvet innocéntes fílios páuperum: et humiliábit Heródem calumniatórem.;;71
+
+[HymnusM Matutinum]
+@Commune/C3:HymnusM Vespera:21-30
+
+[In Finem Lectio]
+@TemporaOP/Quad5-0
+
+[Lectio1]
+@Sancti/12-28
+@:In Finem Lectio
+
+[Responsory1]
+@Sancti/12-28:Responsory2:1-2 s/\n\*// s/: $/:\n* $1/
+V. Et datæ sunt illis singulæ stolæ albæ: et dictum est illis.
+@Sancti/12-28:Responsory2:2 s/.*:/R. /
+
+[Lectio2]
+@Sancti/12-28
+@:In Finem Lectio
+
+[Responsory2]
+@Sancti/12-28:Responsory4:1-2
+@Sancti/12-28:Responsory5:3
+@Sancti/12-28:Responsory4:4
+
+[Lectio3]
+@Sancti/12-28
+@:In Finem Lectio
+
+[Lectio4]
+@Sancti/12-28::s/refúdit/effúlsit/
+
+[Responsory4]
+@Sancti/12-28:Responsory5
+
+[Lectio5]
+@Sancti/12-28::s/.*?\. // s/$/~/
+@Sancti/12-28:Lectio6:s/\. .*/./
+
+[Responsory5]
+@Sancti/12-28:Responsory7:1-2
+@Sancti/12-28:Versum 3:s/\nR.//
+@Sancti/12-28:Responsory7:4
+
+[Lectio6]
+!Idem, Serm. 9 de Sanct.
+Quam beáta ætas, quæ necdum Christum potest loqui et iam pro Christo merétur occidi! Nondum opportúna vúlneri et iam idónea passióni! Quam feliciter nati, quibus in primo nascéndi limine, ætérna vita óbviam venit! Incurrunt quidem, inter ipsa primórdia accéptæ lucis, perículum et finem salútis: sed de ipso prótinus fine cápiunt princípia æternitátis. Immatúri quidem vidéntur ad mortem: sed felíciter moriúntur ad vitam.
+
+[Responsory7]
+@Sancti/12-28:Responsory8:1-2 s/\n\* /\l$1/ s/ /$1\n* \u$2/
+@Sancti/12-28:Responsory8:3
+@Sancti/12-28:Responsory8:2 s/.*, /R. \u$1/
+
+[Responsory8]
+@Sancti/12-28:Ant Laudes:5 s/^/R. / s/\* // s/:/\n* /
+@Sancti/12-28:Responsory2:1 s/R/V/ s/ clamántium et $1/
+@Sancti/12-28:Ant Laudes:5 s/^/R. / s/.*: /R. /
+
+[Responsory9]
+@Sancti/12-28:Responsory1:1-2 s/\n\* , /\l$1,\n* \u$2/ s/cum illis/in illis/
+@Sancti/12-28:Responsory7:3
+@Sancti/12-28:Responsory1:2 s/.*?, /R. \u$1/ s/cum illis/in illis/
+&Gloria
+R. In illis.
+
+[HymnusM Laudes]
+v. Catérva matrum pérsonat 
+Collísa deflens pígnora, 
+Quorum tyránnus mília 
+Christo sacrávit víctimas.
+_
+@Psalterium/Doxologies:NatT
+
+[Versum 2]
+V. Mirábilis Deus.
+R. In sanctis suis.
+
+[HymnusM Vespera]
+@Commune/C3::21-30
+
+[Versum 3]
+@Commune/C3:Versum 1
+

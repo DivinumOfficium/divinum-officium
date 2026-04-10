@@ -1,7 +1,50 @@
 @Tempora/081-0
 
+[Lectio2]
+@Tempora/081-0::s/14/12/ s/.13.*//s
+
+[Lectio3]
+@Tempora/081-0:Lectio2:s/7/13/ s/14/16/ s/7.*13 /13 /s
+@Tempora/081-0:Lectio3:s/!.*19// s/17 .*//s
+
+[Lectio4]
+@Tempora/081-0:Lectio3:s/15/17/ s/19/22/ s/15 .*17/17/s
+20 Sapiéntia foris prǽdicat: in platéis dat vocem suam:
+21 in cápite turbárum clámitat: in fóribus portárum urbis profert verba sua, dicens:
+22 Usquequo, párvuli, dilígitis infántiam, et stulti ea quæ sibi sunt nóxia cúpient, et imprudéntes odíbunt sciéntiam?
+
+[Responsory4]
+@Tempora/081-1:Responsory1
+
+[Lectio5]
+@Tempora/081-0:Lectio4:s/ Síquidem.*//s
+
+[Responsory5]
+@Tempora/081-0:Responsory4
+
+[Lectio6]
+@Tempora/081-0:Lectio4:s/.* Síquidem/Síquidem/s
+
+[Responsory6]
+@Tempora/081-0:Responsory5
+
+[Lectio7]
+@Tempora/081-0:Lectio5
+
+[Responsory7]
+@Tempora/081-0:Responsory6
+
+[Lectio8]
+@Tempora/081-0:Lectio6
+
 [Responsory8]
-@TemporaM/Pent03-0:Responsory8
+@Tempora/081-1:Responsory2
 
 [Responsory9]
-@TemporaM/Pent03-0:Responsory9
+@Tempora/081-0:Responsory7
+
+[Responsory10]
+@Tempora/081-1:Responsory3
+
+[Responsory11]
+@Tempora/081-2:Responsory1

@@ -1,0 +1,91 @@
+@Tempora/Pasc4-0
+
+[Rule]
+12 lectiones
+
+[Ant 1]
+@TemporaOP/Pasc3-0:Ant 3
+
+[Lectio1]
+@Tempora/Pasc4-0:Lectio1:1-6 s/-6/-4/
+
+[Lectio2]
+@Tempora/Pasc4-0:Lectio1:2-8 s/1-6/5-7/ s/1 .*5 /5 /s
+@Tempora/Pasc4-0:Lectio2:3
+
+[Lectio3]
+@Tempora/Pasc4-0:Lectio2:s/6-/8-/ s/6 .*8 /8 /s
+
+[Lectio4]
+@Tempora/Pasc4-0:Lectio3
+
+[Responsory3]
+@Tempora/Pasc4-0::1-2
+V. Qui timétis Dóminum, laudáte eum: univérsum semen Jacob, glorificáte eum.
+@Tempora/Pasc4-0::4
+
+[Responsory4]
+@Tempora/Pasc4-0::1-2:s/eccl/Eccl/
+@TemporaOP/Pasc4-2:Responsory2:3
+@Tempora/Pasc4-0::4
+
+[Lectio5]
+@Tempora/Pasc4-0:Lectio4:s/.* Nec/Non/ s/Hanc .*//s
+
+[Lectio6]
+@Tempora/Pasc4-0:Lectio4:s/.* (?=Hanc )//s s/$/~/
+@Tempora/Pasc4-0:Lectio5:s/Est enim .*//s
+
+[Lectio7]
+@Tempora/Pasc4-0:Lectio5:s/.* Est enim /Est enim /s
+
+[Lectio8]
+@Tempora/Pasc4-0:Lectio6
+
+[Responsory5]
+@Tempora/Pasc4-0::1-2
+V. Vide humilitátem meam, et éripe me, quia legem tuam non sum oblítus:
+@Tempora/Pasc4-0::4
+
+[Responsory8]
+@TemporaM/Pasc4-0:Responsory11:s/† //
+
+[Lectio9]
+@Tempora/Pasc4-0:Lectio7
+
+[Lectio10]
+@Tempora/Pasc4-0:Lectio8:s/Sed quid .*//s
+
+[Lectio11]
+@Tempora/Pasc4-0:Lectio8:s/.* Sed quid /Sed quid /s
+
+[Lectio12]
+@Tempora/Pasc4-0:Lectio9
+
+[Responsory9]
+@TemporaM/Pasc4-0:Responsory12:s/† //
+
+[Responsory10]
+R. Cantáte Deo, allelúia:
+* Psalmum dícite ei, allelúia.
+V. Date glóriam laudi ejus:
+R. Psalmum dícite ei, allelúia.
+
+[Responsory11]
+@Tempora/Pasc4-0:Responsory8:1-2
+@Commune/C5:Tractus:4:s/^/V. /
+@Tempora/Pasc4-0:Responsory8:4
+
+[Responsory12]
+R. Dicant nunc, qui redémpti sunt, allelúia, a Dómino,
+* Allelúia, allelúia.
+@Tempora/Pasc4-1:Responsory1:3
+R. Allelúia, allelúia.
+&Gloria
+R. Allelúia, allelúia.
+
+[Ant 2]
+Vado ad eum * qui misit me: sed quia hæc locútus sum vobis, tristítia implévit cor vestrum, allelúia.
+
+[Ant 3]
+@TemporaOP/Pasc4-1:Ant 2

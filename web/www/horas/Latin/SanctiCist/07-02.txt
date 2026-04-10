@@ -1,0 +1,169 @@
+@Sancti/07-02
+
+[Rule]
+12 lectiones
+Doxology=Nat
+
+[Responsory Vespera 1] 
+R.  Magníficat ánima mea Dóminum: et exsultávit spíritus meus in Deo, salutári meo. 
+* Quia respéxit humilitátem ancíllæ suæ. 
+V. Ecce enim ex hoc beátam me dicent omnes generatiónes.
+R. Quia respéxit humilitátem ancíllæ suæ. 
+
+[Responsory Vespera] 
+R.br. Visitátio tua, * Dei Génitrix Virgo.
+R. Visitátio tua, * Dei Génitrix Virgo.
+V. Gáudium annuntiávit univérso mundo. 
+R. Dei Génitrix Virgo.
+
+[Ant 1] 
+O quanta vis * amóris illibátæ tunc mentem accénderat Vírginis, ut in Spíritu sancto rapta jubiláret: Magnificat ánima mea Dóminum.
+
+[Oratio] 
+Omnípotens sempitérne Deus, qui ex abundántia charitátis, beátam Maríam tuo Fílio fœcundátam ad salutatiónem Elísabeth inspirásti: ↊ præsta quæsumus; * ut per ejus Visitatiónem donis cœléstibus repleámur, ↊ et ab ómnibus adversitátibus eruámur.
+$Per eumdem
+
+[Invit]
+Ave María, grátia plena, Dóminus tecum. * Benedícta tu in muliéribus.
+
+[Ant Matutinum 3N]
+Gaude María * Mater Christi, quæ singulári privilégio meruísti portáre Christum Dóminum.
+
+[Lectio1]
+@Sancti/07-02:Lectio1:1-7 s/-7/-5/
+
+[Lectio2]
+@Sancti/07-02:Lectio1:2-9 s/1-7/6-9/ s/1 .*6 /6 /s
+@Sancti/07-02:Lectio2:2-3
+
+[Lectio3]
+@Sancti/07-02:Lectio2:s/8-/10-/ s/8 .*10 /10 /s
+
+[Lectio4]
+@Sancti/07-02:Lectio3
+
+[Responsory2] 
+R. En diléctus meus lóquitur mihi: 
+* Intra præcórdia mea dat vocem suam.
+V. Quam dúlcia fáucibus meis elóquia tua, Dómine, super mel ori meo.
+R. Intra præcórdia mea dat vocem suam.
+
+[Responsory3]
+R. Ibo ad montem myrrhæ festinánter, et vidébo verbum hoc,
+* Quod factum est in áuribus meis ab Angelo salutánte.
+V. Viam mandatórum tuórum cucúrri, juxta verbum tuum.
+R. Quod factum est in áuribus meis ab Angelo salutánte.
+
+[Responsory4]
+R. Vox túrturis audíta est, surge, própera, amíca mea, et veni, colúmba mea, in foramínibus petræ, in cavérna macériæ.
+* Osténde mihi fáciem tuam, sonet vox tua in áuribus meis.
+V. Vox enim tua dulcis, et fácies tua decóra.
+R. Osténde mihi fáciem tuam, sonet vox tua in áuribus meis.
+
+[Lectio5]
+@Sancti/07-02:Lectio4:s/prædicábo cognitiónem.*//
+
+[Lectio6]
+@Sancti/07-02:Lectio5:s/Accéssit, inquit,.*//
+
+[Lectio7]
+@Sancti/07-02:Lectio6:s/Vídeo, .*//s
+
+[Lectio8]
+@Sancti/07-02:Lectio6:s/.* Vídeo, /Vídeo, /s
+
+[Responsory5]
+@Sancti/07-02:Responsory4
+
+[Responsory6] 
+R. Felíces matres, sed et nati felicióres:
+* Et quæ géssere felícia facta fuére.
+V. Felix domus, felix família, quibus sunt visa tot mirabília.
+R. Et quæ géssere felícia facta fuére.
+
+[Responsory7] 
+R. O dies omni voto recolénda! o dies omni stúdio veneránda!
+* In qua tot mísero fulsérunt gáudia mundo.
+V. Hæc dies quam fecit Dóminus, exultémus et lætémur in ea.
+R. In qua tot mísero fulsérunt gáudia mundo.
+
+[Responsory8] 
+R. O præclára stella maris, Virgo Mater singuláris, quæ cognátam visitásti, Joánnem illuminásti prole præclaríssima:
+* Te præcámur in hoc festo, sis solámen omni mœsto, fuga mortem, confer sortem nobis in cœli pátria.
+V. Ad te clamant omnes rei, larga datrix sanctæ spei, o fons indefíciens.
+R. Te præcámur in hoc festo, sis solámen omni mœsto, fuga mortem, confer sortem nobis in cœli pátria.
+
+[Lectio9]
+@Sancti/07-02:Lectio7:s/Vide distinctiónem.*//s
+
+[Lectio10]
+@Sancti/07-02:Lectio7:s/.*(Vide distinctiónem)/$1/s s/Exsultávit infans.*//s
+
+[Lectio11]
+@Sancti/07-02:Lectio7:s/.*(Exsultávit infans)/$1/s s/$/~/
+@Sancti/07-02:Lectio8:s/Mansit autem.*//s
+
+[Lectio12] 
+@Sancti/07-02:Lectio8:s/.*(Mansit autem)/$1/s s/$/~/
+@Sancti/07-02:Lectio9:s/Ungebátur ítaque.*//
+
+[Responsory9]
+R. Speciósas fílias cumulántes divítias,
+* Thesáuro ventris grávidi transcéndit Mater Dómini.
+V. Exúlta, et lauda, habitátio Sion, quia magnus in médio tui Sanctus Israël.
+R. Thesáuro ventris grávidi transcéndit Mater Dómini.
+
+[Responsory10] 
+R. Ait autem María: Fecit mihi magna qui potens est: 
+* Et sanctum nomen ejus.
+V. Et misericórdia ejus, a progénie in progénies timéntibus eum.
+R. Et sanctum nomen ejus.
+
+[Responsory11] 
+@SanctiM/07-02:Responsory4
+
+[Responsory12]
+R. Suscépit Israël púerum suum, recordátus misericórdiæ suæ.
+* Sicut locútus est Ábraham, et sémini ejus in sæcula.
+V. Jurávit Dóminus David veritátem, de fructu ventris tui ponam super sedem tuam.
+R. Sicut locútus est Ábraham, et sémini ejus in sæcula.
+
+[Ant Laudes] 
+In Maríæ * Vírginis útero paráta sedes tua, Deus, a sæculo.
+Júbilet Deo * omnis terra, et cœlestis Hierarchía sérviat ei.
+Fecit Dóminus *  poténtiam in bráchio suo, dispérsit supérbos mente cordis sui.
+Depósuit poténtes * de sede, et exaltávit húmiles.
+Esuriéntes implévit bonis * et dívites dimísit inánes.
+
+[Capitulum Laudes] 
+!Cant. 2:8-9
+v. Ecce iste venit sáliens in móntibus, § transíliens colles: * símilis est diléctus meus cápreæ, hinnulóque cervórum.
+$Deo gratias
+
+[Versum 2]
+@:Versum 1
+
+[Ant 2] 
+Benedíctus * Dóminus, Deus Israël, quia visitávit, et fecit redemptiónem plebis suæ, sicut locútus est per os sanctórum
+
+[Commemoratio 2] 
+@Sancti/07-02cc:Oratio
+
+[Commemoratio 3] (nisi rubrica altovadensis)
+@Sancti/07-02oct:Oratio
+
+[Capitulum Sexta] 
+!Cant. 2:10-12
+v. Surge, própera, amíca mea, colúmba mea, formósa mea, et veni. * Jam enim hiems tránsiit, § imber ábiit, et recéssit. * Flores apparuérunt in terra nostra, § tempus putatiónis advénit.
+$Deo gratias
+
+[Capitulum Nona] 
+!Cant. 2:13
+v. Vox túrturis audíta est in terra nostra: § ficus prótulit grossos suos: * víneæ floréntes dedérunt odórem suum.
+$Deo gratias
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3] 
+Magníficet * Dóminum totum genus fidélium, cóncrepet harmónica laude cohors Angélica in Maríæ gáudia.

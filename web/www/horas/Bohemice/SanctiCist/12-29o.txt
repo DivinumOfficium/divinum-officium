@@ -1,0 +1,35 @@
+@Sancti/12-29
+
+[Rule]
+ex C2a-1;
+12 lectiones
+
+[Name]
+Tomáše
+
+[Lectio5]
+@Sancti/12-29:Lectio4:s/Poté byli jeho .*//
+
+[Lectio6]
+@Sancti/12-29:Lectio5: s/Když v bezpečí.*//s
+
+[Lectio7]
+@Sancti/12-29:Lectio5: s/.* Když v bezpečí/Když v bezpečí/s s/$/~/
+@Sancti/12-29:Lectio6: s/Když se klerici .*//s
+
+[Lectio8]
+@Sancti/12-29:Lectio6: s/.* Když se klerici/Když se klerici/s
+
+[Lectio9]
+@Sancti/12-29:Lectio7: s/Když nám .*//s
+
+[Lectio10]
+@Sancti/12-29:Lectio7: s/.* Když nám/Když nám/s s/$/~/
+@Sancti/12-29:Lectio8: s/Proto pravil.*//s
+
+[Lectio11]
+@Sancti/12-29:Lectio8: s/.* Proto pravil/Proto pravil/s s/$/~/
+@Sancti/12-29:Lectio9: s/Neboť když .*//s
+
+[Lectio12]
+@Sancti/12-29:Lectio9: s/.* Neboť když/Neboť když/s

@@ -1,0 +1,32 @@
+@Tempora/Adv1-3
+
+[In Finem Lectio]
+@TemporaOP/Quad5-0
+
+[Lectio1]
+@Tempora/Adv1-4::1
+@Tempora/Adv1-4:Lectio2:1-4 s/-4/-3/
+@:In Finem Lectio
+
+[Responsory1]
+@Tempora/Adv1-0:Responsory7:1-3 s/\n\* (.)/\l$1/ s/ (Admirábilis)/\n* $1/
+@Tempora/Adv1-0:Responsory7:2 s/.* (?=Admirábilis)/R. /
+
+[Lectio2]
+@Tempora/Adv1-4::1 s/1-4/4-6/
+@Tempora/Adv1-4:Lectio2:5
+@Tempora/Adv1-4:Lectio3:2-3
+@:In Finem Lectio
+
+[Responsory2]
+@Tempora/Adv1-0:Responsory6:1-3 s/\n\* // s/. (\S+) \* (.)/:\n* \u$1 \l$2/
+@Tempora/Adv1-0:Responsory6:2 s/.* (\S+) \* (.)/R. \u$1 \l$2/
+
+[Lectio3]
+@Tempora/Adv1-4o::1-3
+@:In Finem Lectio
+
+[Responsory3]
+@TemporaM/Adv1-0:Responsory11
+&Gloria
+@TemporaM/Adv1-0:Responsory11:4 s/.*: (?:† )?/R. /

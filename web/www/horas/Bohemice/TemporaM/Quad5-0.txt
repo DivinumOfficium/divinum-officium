@@ -1,0 +1,29 @@
+[Ant Matutinum 3N]
+Já * nehledám svou vlastní slávu; † avšak je někdo, kdo ji hledá, a bude soudit.
+
+[Lectio5]
+@Tempora/Quad5-0:Lectio4
+
+[Lectio6]
+@Tempora/Quad5-0:Lectio5:s/Nesmíme .*//s
+
+[Lectio7]
+@Tempora/Quad5-0:Lectio5:s/.* Nesmíme /Nesmíme /s s/$/~/
+@Tempora/Quad5-0:Lectio6:s/Job, .*//s
+
+[Lectio8]
+@Tempora/Quad5-0:Lectio6:s/.* Job, /Job, /s
+
+[Lectio9]
+@Tempora/Quad5-0:Lectio7:s/Sama .*//s
+
+[Lectio10]
+@Tempora/Quad5-0:Lectio7:s/.* Sama /Sama /s s/$/~/
+@Tempora/Quad5-0:Lectio8:s/Tito .*//s
+
+[Lectio11]
+@Tempora/Quad5-0:Lectio8:s/.* Tito /Tito /s s/$/~/
+@Tempora/Quad5-0:Lectio9:s/Poslechněme .*//s
+
+[Lectio12]
+@Tempora/Quad5-0:Lectio9:s/.* Poslechněme /Poslechněme /s

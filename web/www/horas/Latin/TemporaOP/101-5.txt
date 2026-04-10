@@ -1,0 +1,24 @@
+@Tempora/101-5
+
+[Lectio1]
+De libro primo Machabæórum
+!1 Mac 2:17-18
+17 Et respondéntes qui missi erant ab Antíocho, dixérunt Mathathíæ: Princeps et claríssimus, et magnus es in hac civitáte, et ornátus fíliis et frátribus.
+18 Ergo accéde prior, et fac jussum regis, sicut fecérunt omnes gentes, et viri Juda, et qui remansérunt in Jerúsalem: et eris tu, et fílii tui, inter amícos regis, et amplificátus auro, et argénto, et munéribus multis.
+
+[Responsory1]
+@Tempora/101-0:Responsory3:1-4
+
+[Lectio2]
+@Tempora/101-3:Lectio1:2-5 s/-22/-21/ s/:$/./
+
+[Responsory2]
+@Tempora/101-0:Responsory4
+
+[Lectio3]
+@Tempora/101-3:Lectio2:1
+@Tempora/101-3:Lectio1:6
+@Tempora/101-3:Lectio2:2-3
+
+[Responsory3]
+@Tempora/101-0:Responsory7

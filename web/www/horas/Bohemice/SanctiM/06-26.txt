@@ -1,0 +1,12 @@
+[Officium]
+sv. Jana a Pavla, Mučedníků
+
+[Lectio6] (rubrica cisterciensis)
+@Sancti/06-26:Lectio5:s/Oni byli.*//
+
+[Lectio7] (rubrica cisterciensis)
+@Sancti/06-26:Lectio5:s/.*(Oni byli)/$1/ s/$/~/
+@Sancti/06-26:Lectio6:s/Jejich smrt.*//
+
+[Lectio8] (rubrica cisterciensis)
+@Sancti/06-26:Lectio6:s/.*(Jejich smrt)/$1/

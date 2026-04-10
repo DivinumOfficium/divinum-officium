@@ -1,0 +1,11 @@
+[Lectio3]
+@Tempora/Pasc2-3::s/49/45/ s/ Wyjechał.*//s
+
+[Lectio4]
+@Tempora/Pasc2-3:Lectio3:s/44-49/45-49/ s/44.* (Wyjechał)/45 $1/s
+
+[Responsory7]
+R. Wysłuchaj, † głos mój, którym wołam do ciebie: 
+* Zmiłuj się nademną, a wysłuchaj mię, alleluja.
+V. Bądź pomocnikiem moim: nie opuszczaj mię.
+R. Zmiłuj się nademną, a wysłuchaj mię, alleluja.

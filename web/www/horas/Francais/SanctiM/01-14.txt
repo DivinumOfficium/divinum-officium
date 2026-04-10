@@ -1,0 +1,16 @@
+[Lectio5]
+@Sancti/01-14:Lectio4:s/Aussi.*//s
+
+[Lectio6]
+@Sancti/01-14:Lectio4:s/.*(Aussi)/$1/s s/$/~/
+@Sancti/01-14:Lectio5:s/Mais.*//s
+
+[Lectio7]
+@Sancti/01-14:Lectio5:s/.*(Mais)/$1/s
+
+[Lectio10]
+@Commune/C4a:Lectio8 in 2 loco:s/$/~/
+@Commune/C4a:Lectio9 in 2 loco:s/L\’homme,.*//s
+
+[Lectio11]
+@Commune/C4a:Lectio9 in 2 loco:s/.*(L\’homme,)/$1/s

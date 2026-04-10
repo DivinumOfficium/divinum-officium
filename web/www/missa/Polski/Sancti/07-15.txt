@@ -1,9 +1,5 @@
-[Rank]
-S. Henrici Imperatoris Confessoris;;Semiduplex;;2;;vide C5
-
-[Rule]
-vide C5;
-Gloria
+[Officium]
+Św. Henryka Cesarza i Wyznawcy
 
 [Comment]
 # 15 VII – Św. Henryka, Cesarza i Wyznawcy
@@ -32,13 +28,5 @@ $Per Dominum
 [Offertorium]
 @Commune/C5:Offertorium
 
-[Secreta]
-@Commune/C5:Secreta
-
 [Communio]
 @Commune/C5:Communio
-
-[Postcommunio]
-@Commune/C5:Postcommunio
-
-
