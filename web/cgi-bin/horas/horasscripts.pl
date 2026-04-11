@@ -228,7 +228,7 @@ sub handleverses {
         s/<b>(.*?)<\/b>([\,\.\:\;]?)\(ixi\)(.*?)\(hr\)(.*?)\(h\)/$1$2(h)$3(h)<i>$4<\/i>(g)/;
       }
     } elsif ($_[2] =~ /[12]/) {
-      if ($_[3] =~ /^\dD?$/) {
+      if ($_[3] =~ /^\dD?$/i) {
 
         # 1D:     hr g f 'gh gr gvFED.  (Ant. Monast. '1D*')
         # 2D:     hr g   'e  fr f.
@@ -237,11 +237,11 @@ sub handleverses {
         # 2Dm:    hr g   er 'ef f.
         s/\(e fr\)/(ef)/;
         s/(<b>.*?<\/b>[\,\.\:\;]?)\(e\)(.*?)\(fr\)/$1(er[ocb:1{])<b>$2<\/b>(ef[ocb:0}])/;
-      } elsif ($_[3] =~ /1D\-/) {
+      } elsif ($_[3] =~ /1D\-/i) {
 
         # 1D-:    hr g f 'g  gr gvFED.   (Ant. Monast. '1D')
         s/(\>[\,\.\:\;]?)\(gh(.*?)gr\)/$1(g$2gr)/g;
-      } elsif ($_[3] =~ /1D2/) {
+      } elsif ($_[3] =~ /1D2/i) {
 
         # 1D2:    hr g f gr 'gf d.
         s/\(gh gr\)(.*?)\(gvFED\.\)/(gf)$1(d.)/;
@@ -273,7 +273,7 @@ sub handleverses {
         }
       }
     } elsif ($_[2] =~ /[78]/) {
-      if ($_[3] =~ /7a|8G$/) {
+      if ($_[3] =~ /7a|8G$/i) {
 
         # 7a:   ir 'j ir 'h hr gf..
         # 8G:   jr i j 'h gr g.
