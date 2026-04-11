@@ -1,0 +1,61 @@
+@CommuneOP/C2
+
+[Officium]
+Commune Unius Martyris non Pontificis
+
+[Oratio]
+Adésto, Dómine, supplicatiónibus nostris: ut, qui ex iniquitáte nostra reos nos esse cognóscimus, beáti N. Mártyris tui intercessióne liberémur.
+$Per Dominum
+
+[Oratio altera]
+Præsta, quǽsumus, omnípotens Deus: ut, qui beáti N, Mártyris tui, natalítia cólimus, a cunctis malis imminéntibus, ejus intercessióne, liberémur.
+$Per Dominum
+
+[Lectio1]
+De Epístola beáti Pauli Apóstoli ad Romános
+!Rom 8:18-21
+18 Exístimo enim quod non sunt condígnæ passiónes hujus témporis ad futúram glóriam, quæ revelábitur in nobis.
+19 Nam exspectátio creatúræ revelatiónem filiórum Dei exspéctat.
+20 Vanitáti enim creatúra subiécta est non volens, sed propter eum, qui subiécit eam in spe:
+21 quia et ipsa creatúra liberábitur a servitúte corruptiónis in libertátem glóriæ filiórum Dei.
+
+[Lectio2]
+!Rom 8:22-25
+22 Scimus enim quod omnis creatúra ingemíscit, et párturit usque adhuc.
+23 Non solum autem illa, sed et nos ipsi primítias spíritus habéntes: et ipsi intra nos gémimus adoptiónem filiórum Dei exspectántes, redemptiónem córporis nostri.
+24 Spe enim salvi facti sumus. Spes autem, quæ vidétur, non est spes: nam quod videt quis, quid sperat?
+25 Si autem quod non vidémus, sperámus: per patiéntiam exspectámus.
+
+[Lectio3]
+!Rom 8:26
+26 Simíliter autem et Spíritus ádiuvat infirmitátem nostram: nam quid orémus, sicut opórtet, nescímus: sed ipse Spíritus póstulat pro nobis gemítibus inenarrabílibus.
+27 Qui autem scrutátur corda, scit quid desíderet Spíritus: quia secúndum Deum póstulat pro sanctis.
+28 Scimus autem quóniam diligéntibus Deum ómnia cooperántur in bonum, iis qui secúndum propósitum vocáti sunt sancti.
+
+[Lectio4]
+@Commune/C2::s/ Audi.*//
+
+[Lectio5]
+@Commune/C2::s/.* gloriósus/Gloriósus/ s/ Hujus.*//
+
+[Lectio6]
+@Commune/C2
+
+[Lectio7]
+Léctio sancti Evangélii secúndum Joánnem
+!Joannes 12:24-26
+In illo témpore: Dixit Jesus discípulis suis: Amen, amen dico vobis, nisi granum fruménti cadens in terram, mórtuum fúerit, ipsum solum manet. Et réliqua.
+_
+Homilía sancti Augustíni Epíscopi
+!Tract. 51 in Joannem, sub medium
+Ipse Dóminus Jesus erat granum mortificándum et multiplicándum; mortificándum infidelitáte Judæórum, multiplicándum fide populórum. Jam vero exhórtans ad passiónis suæ sectánda vestígia, Qui amat, inquit, ánimam suam, perdet eam. Quod duóbus modis intéllegi potest. Qui amat, perdet; id est, si amas, perdes. Si cupis vitam tenére in Christo, noli mortem timére pro Christo. Item álio modo: Qui amat ánimam suam, perdet eam; noli amáre, ne perdas; noli amáre in hac vita, ne perdas in ætérna vita.
+
+[Lectio8]
+Hoc autem, quod postérius dixi, magis habére vidétur evangélicus sensus; séquitur enim: Et qui odit ánimam suam in hoc mundo, in vitam ætérnam custódit eam. Ergo, quod supra dictum est, Qui amat, subintellégitur in hoc mundo, in vitam ætérnam ipse custódit eam. Magna et mira senténtia, quemádmodum sit hóminis in ánimam suam amor ut péreat, ódium ne péreat. Si male amáveris, tunc odísti; si bene óderis, tunc amásti.~
+(sed rubrica praedicatorum omititur)
+Felíces, qui odérunt custodiéndo, ne perdant amándo.
+
+[Lectio9]
+Cum ergo causæ articulus venerit, ut hæc conditio proponatur, aut faciendum esse contra Dei præceptum, aut ex hac vita emigrandum; quorum duorum homo si cogatur alterum eligere, comminante mortem persecutore, ibi eligat Deo dilecto emori, quam offenso vivere. Ibi oderit in hoc mundo animam suam, ut in vitam ætérnam custodiat eam.~
+(sed rubrica praedicatorum omititur)
+Si quis mihi ministrat, me sequatur. Quid est, Me sequatur, nisi, Me imitetur? Christus enim pro nobis passus est, ait Apostolus Petrus, relinquens nobis exemplum, ut sequamur vestigia ejus.

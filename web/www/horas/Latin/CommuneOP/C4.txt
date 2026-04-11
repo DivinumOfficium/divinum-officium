@@ -1,0 +1,124 @@
+@Commune/C4
+
+[Ant Vespera]
+@CommuneM/C4:Responsory11:1 s/R. // s/;.*/.;;112;116;145;146;147/
+
+[Responsory Vespera 1]
+R. Sancte N., Christi Conféssor, audi rogántes sérvulos.
+* Et impetrátam nobis cælitus Tu defer indulgéntiam.
+V. O sante N., sidus áureum, Dómini grátia servórum gémitus sólita súscipe cleméntia.
+R. Et impetrátam nobis cælitus Tu defer indulgéntiam.
+&Gloria
+R. Tu defer indulgéntiam.
+
+[Ant 1]
+Conféssor Dómini N., astántem plebem corróbora sancta intercessióne: ut, qui vitiórum póndere prémimur, beatitúdinis tuæ glória sublevémur, et te duce ætérna præmia consequámur.
+
+[Nocturn 2 Versum]
+@Commune/C4:Versum 2
+
+[Nocturn 3 Versum]
+@Commune/C2:Versum 2
+
+[Lectio2]
+@Commune/C4::1-5 s/-11/-9/
+
+[Responsory2]
+@Commune/C5
+
+[Lectio3]
+@Commune/C4::1-6 s/-8/-5/
+
+[Responsory3]
+@CommuneM/C4:Responsory11:1-3 s/\n\*// s/;\W+(.)/\n* \u$1/
+@CommuneM/C4:Responsory11:1 s/.*† (.)/\nR. \u$1/
+&Gloria
+@CommuneM/C4:Responsory11:2 s/\*/R./
+
+[Responsory4]
+@CommuneCist/C4:Responsory9
+
+[Responsory5]
+@Commune/C4:Responsory7
+
+[Lectio6]
+@Commune/C4::s/ Dicit.*/~/
+Illius ergo, in quantum póssumus, vestígiis insistámus, quibus per illam nimis arctam viam ad cæli ampla festinans, qua cum sequerémur, osténdit.
+
+[Responsory6]
+@:Responsory Vespera 1
+
+[Lectio7]
+@CommuneM/C4:Lectio9 in 2 loco:s/ Parátos.*//
+
+[Responsory7]
+R. Justus ut palma florébit in domo Dómini, sicut cedrus Líbani multiplicábitur: plantátus in domo Dómini.
+* In átriis domus Dei nostrii florébit.
+V. Glória et divítiæ in domo ejus, et justítia ejus manet in sǽculum sǽculi.
+R. In átriis domus Dei nostrii florébit.
+
+[Lectio8]
+@CommuneM/C4:Lectio9 in 2 loco:s/.* (?=Parátos)//s s/$/~/
+@CommuneM/C4:Lectio10 in 2 loco:2:s/ Hunc.*//
+
+[Responsory8]
+R. Justum dedúxit Dóminus per vias rectas, et osténdit illi regnum Dei, et dedit illi sciéntiam Sanctórum:
+* Honestávit illum in labóribus, et complévit labóres illíus.
+V. Immortális est enim memória illíus, quóniam apud Deum nota est, et apud hómines.
+R. Honestávit illum in labóribus, et complévit labóres illíus.
+
+[Lectio9]
+@CommuneM/C4:Lectio10 in 2 loco:2:s/.* (?=Hunc)// s/$/~/
+@CommuneM/C4:Lectio11 in 2 loco
+
+[Responsory9]
+@Commune/C4:Responsory8:1-4
+&Gloria
+@Commune/C4:Responsory8:4 s/.*, (.)/R. \u$1/
+
+[Ant Laudes]
+@Commune/C5
+
+[Capitulum Laudes]
+!Sir 45:1-2
+v. Diléctus Deo et homínibus, cujus memória in benedictióne est: símilem illum fecit in glória sanctórum.
+$Deo gratias
+
+[HymnusM Laudes]
+@:Hymnus Laudes:s/Perpes coróna Prǽsulum/Coróna confiténtium/ s/Indúlgeas precántibus/Nostris favéto précibus/ s/Hujus/Cujus/ s/Æternitátis prǽmio/Cum Ángelis cæléstibus/ s/Potítur inter Ángelos/Lætus potítur prǽmiis/ s/Nunc, et per omne sǽculum/Et nunc, et in perpétuum/
+
+[Versum 2]
+@CommuneCist/C2:Versum 1
+
+[Capitulum Sexta]
+@Commune/C5:Capitulum Sexta:s/trádidit/tradet/ s/Dóminum/Deum/
+
+[Responsory Breve Sexta]
+@CommuneCist/C5
+&Gloria
+@CommuneCist/C5::2
+
+[Capitulum Nona]
+@Commune/C5:Lectio Prima
+$Deo gratias
+
+[Ant Vespera 3]
+@Commune/C5:Ant Vespera:1 s/$/;;109;111;112;115;125/
+
+[Ant 3]
+@Commune/C5:Ant 1
+
+[Lectio7 in 2 loco]
+Léctio sancti Evangélii secúndum Matthǽum
+!Matt 25:14-23
+In illo témpore: Dixit Jesus discípulis suis parábolam hanc: Homo péregre proficíscens, vocávit servos suos, et trádidit illis bona sua. Et réliqua.
+_
+Homilía sancti Hilárii Epíscopi
+!Comment. in Matth. 25
+Divísio quidem pecuniæ inæquális est, sed non ad dividentem referénda divérsitas est. Ait enim unumquémque secúndum virtútem suam accepisse. Patrem famílias seipsum esse signíficat. Peregrinatiónis tempus pæniténtiæ spátium est, quo in cælis a dextris Dei ássidens, potestátem univérso géneri humáno fidei atque operatiónis evangélicæ permisit.
+
+[Lectio8 in 2 loco]
+Igitur unusquisque secúndum fidei suæ mensúram taléntum, id est, Evangélii prædicatiónem, a prædicánte suscépit. Hæc enim incorrúpta substántia est: hoc Christi patrimónium ætérnis herédibus reservátum. Sed servus ille, qui quinque talénta accépit, pópulus ex Lege credéntium est: ex qua proféctus, méritum ipsíus recte probéque perfunctus evangélicæ Fidei operatióne duplicávit.
+
+[Lectio9 in 2 loco]
+In ratióne autem ponénda judícii exámen est: quo cæléstis verbi usus et réditus dispensáti talénti postulátur. Igitur cui erant quinque commissa, dómino revérso de quinque decem óbtulit, talis scilicet in Fide repértus, qualis in Lege: qui decem verbórum quinque libris Móysi præceptórum obediéntiam per grátiam evangélicæ justificatiónis expléverit. Igitur jubétur in gaudium Dómini introire, id est, in honórem glóriæ Christi recipitur.

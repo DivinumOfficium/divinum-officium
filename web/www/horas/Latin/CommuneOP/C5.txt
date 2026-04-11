@@ -1,0 +1,68 @@
+@CommuneOP/C4
+
+[Officium]
+Commune Confessoris non pontificis
+
+[Lectio1]
+@CommuneOP/C4a
+
+[Lectio2]
+@CommuneOP/C4a
+
+[Lectio3]
+@CommuneOP/C4a
+
+[Lectio4]
+@Commune/C5::s/ Et .*//
+
+[Lectio5]
+@Commune/C5:Lectio6:s/ Étenim.*//
+
+[Lectio6]
+Sermo sancti Ephræm Syri, Diáconi
+!Encomio in S. Basil.
+Sapiens hic et fidélis N. vere gressus est virtútum, liber laudum, vita miraculórum: qui in carne grádiens, spiritu incedébat; communémque cum áliis in terra vitam degens, supérna contemplabátur: beryllium plectrum mýsticæ citharæ regiónem sanctórum Angelórum obléctans: certus agnus matricis vitæ, Spiritus Sancti agrum ac hortum illústrans, desidério atque amore exsúltans, ac florem ex ima radice pretiosíssimæ crucis decérpens: membrána pulchra divinæ sapiéntiæ, quæ de cælo divinas impressiónes accépit.
+
+[Lectio7]
+Léctio sancti Evangélii secúndum Matthǽum
+!Matt 11:25-30
+In illo témpore: Respóndens Jesus dixit: Confíteor tibi, Pater, Dómine cæli et terræ, quia abscondísti hæc a sapiéntibus et prudéntibus, et revelásti ea párvulis. Et réliqua.
+_
+Homilia sancti Joánnis Chrysostomi
+!Hom. 39 in Matth.
+Quod hic, Confiteor, dixit, idem valet quod Grátias ago. Grátias, inquit, tibi ago, quóniam a prudéntibus et sapiéntibus hæc celásti. An igitur perditióne illórum gaudére ipsum dicémus, et quóniam illi hæc non didicére? Mínime. Non ergo quia sapiéntes non cognovérunt, gaudet: sed quia párvuli percepérunt, lætátur. Ita et Paulus dicit: Grátias ago Deo meo, quóniam fuístis servi peccáti: obedístis autem ex corde in quam tráditi estis formam doctrinæ. Non ergo Paulus proptérea gaudet, quia erant servi peccáti; sed quia, cum essent hujusmodi, veritátis cultóres facti sunt.
+
+[Lectio8]
+Prudentes autem hic scribas et pharisæos appéllat: quibus verbis alacrióres reddit discípulos: cum intelligant illa se piscatóres esse consecútos, a quibus illi summi, ut videbántur, viri excidérunt.  Cum autem Sapiéntes díxerit: non illam veram laudábilem sapiéntiam intélligit: sed hanc quæ sæculári doctrina præstátur.  Idcirco étiam non dixit, Stultis revelásti, sed Párvulis: quasi non formátis adhuc, sed simplicibus.
+
+[Lectio9]
+Ita osténdit non indigne illos, sed jure his rebus fuísse privátos: ac per ómnia nos docet flatum supérbiæ omnino esse fugiéndum ac simplicitátem æmulándam. Quod Paulus amplióribus verbis scribit, dicens: Si quis in vobis vidétur in hoc sæculo sápiens esse, is fiat stultus, ut sápiens efficiátur: sic enim grátia Dei monstrátur. Cur vero grátias agit Patri, cum ipse illud fécerit? Sicut orat et intercédit pro nobis ad Deum, magnam erga nos declárans caritátem, sic étiam et hoc ex caritátis fervóre péragit.
+
+[Lectio7 in 2 loco]
+@Commune/C5:Lectio7:s/ Sed quia .*//
+
+[Lectio8 in 2 loco]
+@Commune/C5:Lectio7:s/.* (?=Sed quia)//s
+
+[Lectio9 in 2 loco]
+@Commune/C5:Lectio8:s/ Sed.*//
+
+[Lectio7 in 3 loco]
+@Commune/C5:Lectio7 in 2 loco:s/ Ideóque.*//
+
+[Lectio8 in 3 loco]
+@Commune/C5:Lectio8 in 2 loco:s/ Unde.*//
+
+[Lectio9 in 3 loco]
+@Commune/C5:Lectio9 in 2 loco:s/: cum.*?;//
+
+[Lectio7 in 4 loco]
+@Commune/C1a:Lectio7:s/ aliquándo.*(?= binos)// s/ Nemo.*/~/
+@Commune/C1a:Lectio8:s/ Bene.*//
+
+[Lectio8 in 4 loco]
+@Commune/C1a::s/.* (?=Bene)// s/$/~/
+@Commune/C1a:Lectio9:s/ Hinc fíliis.*//
+
+[Lectio9 in 4 loco]
+@Commune/C1a::s/.* (?=Hinc fíliis)//

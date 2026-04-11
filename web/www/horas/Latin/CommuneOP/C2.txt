@@ -1,0 +1,149 @@
+@Commune/C2
+
+[Ant Vespera 1]
+@Commune/C2a-1:Introitus:2 s/$/;;112;116;145;146;147/
+
+[Responsory Vespera 1]
+R. Gloriósus Dei amicus N., Jesu Dómini confessióne fundátus, inter tormentórum supplícia stetit impertérritus:
+* Ac demum, triumpháli morte insígnis, Cælos petívit sánguine laureátus.
+V. Felíci commércio, pro terrénis cæléstia, pro peritúris ætérna commútans.
+R. Ac demum, triumpháli morte insígnis, Cælos petívit sánguine laureátus.
+&Gloria
+R. Cælos petívit sánguine laureátus.
+
+[Ant 1]
+@CommuneCist/C2:Ant 3
+
+[Oratio]
+Lætétur Ecclésia tua, Deus, beáti N. Mártyris tui confísa suffrágiis: atque, ejus précibus gloriósis, et devóta permáneat et secúra consístat.
+$Per Dominum
+
+[Oratio altera]
+@Commune/C2a:Oratio altera
+
+[Invit]
+Regem sempitérnum veníte adorémus: * Qui Mártyrem suum digne pro méritis coronávit, in cælis.
+(sed die 3 lectionum)
+@Commune/C2
+
+[Lectio1]
+@Tempora/Pasc2-3Feria::1-7 s/-24/-21/
+
+[Lectio2]
+@Tempora/Pasc2-3Feria:Lectio1:2 s/17-/22-/
+@Tempora/Pasc2-3Feria:Lectio1:8-10
+
+[Responsory2]
+R. Posuísti, Dómine, super caput ejus corónam de lápide pretióso: vitam pétiit a te, et tribuísti ei
+* In sǽculum sǽculi.
+V. Magna est glória ejus in salutári tuo: glóriam et magnum decórem impónes super eam.
+R. In sǽculum sǽculi.
+
+[Lectio3]
+@Tempora/Pasc2-3Feria:Lectio2:1-5 s/-31/-28/
+
+[Responsory3]
+@CommuneM/C2:Responsory11:1-2
+V. Quóniam eleváta est magnificéntia tua, super cælos.
+@CommuneM/C2:Responsory11:4
+
+[Lectio4]
+Sermo sancti Augustíni, Epíscopi
+!Ex Serm. 3 de S. Cypr.
+Fácile est honórem Mártyris celebráre: magnum est fidem atque patiéntiam Mártyris imitári. Hoc sic agámus, ut illud optémus: illud sic celebrémus, ut hoc pótius diligámus. Quid laudémus in fide Mártyris? Quia usque ad mortem certávit pro veritáte, et ídeo vicit. Blandiéntem mundum contémpsit, sæviénti non cessit: ideo victor ad Deum accéssit.
+
+[Responsory4]
+R. Beátus vir qui suffert tentatiónem, quóniam, cum probátus fúerit, accípiet corónam vitæ,
+* Quam repromísit Deus diligéntibus se.
+V. Hic accipiet benedictiónem a Dómino et misericórdiam.
+R. Quam repromísit Deus diligéntibus se.
+
+[Lectio5]
+Abundant in isto sæculo erróres et terróres: beatíssimus Martyr erróres sapiéntia, terróres patiéntia superávit. Magnum est, quod fecit: secútus Agnum, leónem vicit. Quando persecútor sæviébat, leo fremébat: sed, quia Agnus sursum attendebátur, qui morte mortem destrúxit, ligno pepéndit, sánguinem fudit, redémit mundum: leo deórsum calcabátur.
+
+[Responsory5]
+R. Dómine, prævenísti eum in benedictiónibus dulcédinis: posuísti in cápite ejus
+* Corónam de lápide pretióso.
+V. Vitam pétiit a te, et tribuísti ei Dómine.
+R. Corónam de lápide pretióso.
+
+[Lectio6]
+Beátus hic Martyr, dum inexpugnabili firmitáte certaminis sui adversárium vicit, vincéndi céteris viam fecit: non brevi compéndio vúlnerum victor, sed, adhæréntibus diu et permanentibus pœnis, longæ colluctatiónis miráculo triumphátor. Custódia cárceris septus, in nervo ac ferro fuit: sed pósito in vinculis córpore, solútus ac liber spiritus mansit. Caro famis ac sitis diuturnitáte contábuit: sed ánimam fide et virtúte vivéntem nutriméntis spiritálibus Deus pavit.
+
+[Responsory6]
+R. Hic est vere Martyr, qui pro Christi nómine sánguinem suum fudit:
+* Qui minas júdicum non tímuit, nec terrénæ dignitátis glóriam quæsivit, Sed ad cæléstia regna pervénit.
+V. Justum deduxit Dóminus per vias rectas, et osténdit illi regnum Dei.
+R. Qui minas júdicum non tímuit, nec terrénæ dignitátis glóriam quæsivit, Sed ad cæléstia regna pervénit.
+&Gloria
+R. Sed ad cæléstia regna pervénit.
+
+[Responsory7]
+@Commune/C2:Responsory6
+
+[Responsory8]
+@Commune/C2:Responsory7:1-2 s/\n\* (.)/ \l$1/ s/(.*), (.)/$1\n* \u$2/
+@Commune/C2:Responsory7:3
+@Commune/C2:Responsory7:2 s/.*, (.)/R. \u$1/
+
+[Responsory9]
+@:Responsory Vespera 1
+
+[Versum 2]
+V. Coróna áurea super caput ejus.
+R. Expréssa signo sanctitátis.
+
+[Ant 2]
+@Commune/C2:Ant 3
+
+[Capitulum Sexta]
+!Sap 10:12
+v. Custodívit illum ab inimícis, et a seductóribus tutávit illum, et certámen forte dedit illi, ut vínceret.
+$Deo gratias
+
+[Capitulum Nona]
+!Sir 4:33
+v. Pro justítia agonizáre pro ánima tua, et usque ad mortem certa pro justítia.
+$Deo gratias
+
+[Ant Vespera 3]
+@Commune/C2:Ant Vespera:1 s/$/;;109;111;112;115;125/
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+Iste est qui pro lege Dei sui morti se trádidit: non dubitávit mori: ab iníquis interféctus est, et in ætérnum vivit cum Christo: Agnum secútus est, et accépit palmam.
+
+[Lectio7 in 2 loco]
+Léctio sancti Evangélii secúndum Matthǽum
+!Matt 16:24-27
+In illo témpore: Dixit Jesus discípulis suis: Si quis vult post me veníre, ábneget semetípsum, et tollat crucem suam, et sequátur me. Et réliqua.
+_
+Homilia sancti Joannis Chrysostomi
+!Homil. 56 in Matth.
+Quemádmodum qui lúdicrum instituit agónem, si cui athletārum amicitiae vínculo iūngitur, numquam eum, nisi descēderit in certāmen, coronābit: qui proprium illius vidēlicet labōrem desīderat, et quo magis eum dīligit, eo magis victōrem vidēre cupit: sic etiam Christus, quos maxime diligit, eos non solum auxilio suo, verum etiam et a seipsis vult comprobāri. Minime autem onerōsam orātiōnem reddit, quia non sibi solis hæc commīnēre, sed commūniter universō terrārum orbi propōnit, dicens: Si quis vult, sive vir, sive mulier, sive princeps, sive subditus, hanc viam ingrediātur.
+
+[Lectio8 in 2 loco]
+Et sermo quidem unum quid significāre vidētur, tria vero continet: abnegātiōnem tui ipsius, et ut crucem accipias, et tērtio ut Christum sequāris: quōrum duo coniūncta sunt, unum per seipsum separātim pōnitur.  Considerémus ígitur prius, quidnam sit álium abnegáre: tunc recte perspícies, quid sit abnegáre téipsum.  R. viii. Coróna áurea super caput ejus, éxpressa signo sanctitátis, glória honōris * Et opus fortitūdinis. Y. Quóniam prævenísti eum in benedictionibús dulcédinís: posuísti in cápite ejus corónam de lápide pretiośo. Et opus fortitūdinis.
+
+[Lectio9 in 2 loco]
+Quid ígitur abnegáre teípsum? Quid ígitum abnegáre álium? Qui álium jam abnegávit, fratrem puta, aut servum, aut quemvis álium, si cædi eum virgis vídeat, si arcéri vínculis, quidquid áliud mali pati eum conspéxerit, non occúrrit, non auxiliátur, non fléctitur, nec prorsus ullo modo movétur, ceu ille qui pénitus ab illo alienātus est. Sic ígitur nullo nos pacto córpori nostro pærcere vult, ut neque si cædit, neque si pellit, neque si úritur, nec si quid áliud huiúsmodi pátuit, ei parcámus.
+
+[Lectio7 in 3 loco]
+@Commune/C2p:Lectio7
+
+[Lectio8 in 3 loco]
+@Commune/C2p:Lectio8
+
+[Lectio9 in 3 loco]
+@Commune/C2p:Lectio9:s/ Sed.*//
+
+[Lectio7 in 4 loco]
+@Sancti/09-28:Lectio7
+
+[Lectio8 in 4 loco]
+@Sancti/09-28:Lectio8
+
+[Lectio9 in 4 loco]
+@Sancti/09-28:Lectio9
