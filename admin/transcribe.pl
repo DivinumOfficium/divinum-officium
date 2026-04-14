@@ -30,6 +30,8 @@ my $convert = Encode::find_encoding('utf-8');
 my $rule;
 my $rank;
 
+my %learned;
+
 while (my $line = <>) {
   chomp $line;
   eval { $line = $convert->decode($line, Encode::FB_CROAK); 1 }
@@ -55,6 +57,7 @@ while (my $line = <>) {
 
       # Denormalize accents but not case.
       # This handles the difference between María and mária.
+      my $originalword = $word;
 
       $word =~ tr/áéíóúÁÉÍÓÚ/aeiouAEIOU/;
       $word =~ s/[æǽ]/ae/g;
@@ -80,6 +83,9 @@ while (my $line = <>) {
             $replacement = $a1 . substr($replacement, 1);
           }
           $word = $replacement;
+        } else {
+          $learned{$word} = $originalword if $originalword =~ /[áéíóúÁÉÍÓÚǽǼ]/;
+          $word = $originalword;
         }
       }
     } continue {
@@ -102,4 +108,13 @@ while (my $line = <>) {
   }
 } continue {
   print $line;
+}
+
+if (%larned) {
+  print "\n Learned words:\n";
+
+  foreach my $entry (sort keys %learned) {
+
+    print lc($entry) . "\t" . lc($learned{$entry});
+  }
 }
