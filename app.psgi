@@ -19,7 +19,23 @@ $ENV{PERL5LIB} = join(':', "$base_dir/web/cgi-bin", $ENV{PERL5LIB} || ());
 use lib "/var/www/web/cgi-bin";
 use lib "/var/www/web";
 
+
 builder {
+
+# --- BOT FIREWALL (Hard Block) ---
+    # If the UA matches, we exit immediately with a 403, saving CPU.  Will replace with more refined Cloudflare rules if this becomes a problem.
+    enable sub {
+    my $app = shift;
+    sub {
+        my $env = shift;
+        # Block the specific fake Chrome version seen in the logs
+        if (($env->{HTTP_USER_AGENT} || '') =~ /Chrome\/142\.0/) {
+            return [403, ['Content-Type' => 'text/plain'], ['Forbidden']];
+        }
+        return $app->($env);
+    };
+    };
+
     # 1. The Asset Mounts
     mount "/www" => Plack::App::File->new(root => "$base_dir/web/www")->to_app;
 
