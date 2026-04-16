@@ -72,6 +72,14 @@ builder {
                 "User-agent: PerplexityBot\n" .
                 "Disallow: /\n\n" .
 
+                # Block Ahrefs (SEO Crawler)
+                "User-agent: AhrefsBot\n" .
+                "Disallow: /\n\n" .
+
+                # Block Barkrowler (SEO Crawler)
+                "User-agent: Barkrowler\n" .
+                "Disallow: /\n\n" .
+
                 # Allow regular Search Engines (Google, Bing, DuckDuckGo)
                 "User-agent: *\n" .
                 "Disallow:\n"
