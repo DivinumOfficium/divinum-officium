@@ -23,7 +23,7 @@ use lib "/var/www/web";
 builder {
 
 # --- BOT FIREWALL (Hard Block) ---
-    # If the UA matches, we exit immediately with a 403, saving CPU.
+    # If the UA matches, we exit immediately with a 403, saving CPU.  Will replace with more refined Cloudflare rules if this becomes a problem.
     enable sub {
     my $app = shift;
     sub {
