@@ -57,7 +57,7 @@
 				<LI><span class=prma>Tabulae</span> contains the transfer tables and is found in the top-level folder <CODE>~/</CODE> only.<BR />
 					File <CODE>data.txt</CODE> provides map information for officium versions used in files in below directories:
 					<UL>
-						<LI><CODE>Kalendaria</CODE> sanctoral kalendar files.
+						<LI><CODE>Kalendaria</CODE> sanctoral kalendar files for the <B>Calendarium Generale</B>.
 							<UL>
 								<LI>Lines starting with <code>*</code> or <CODE>#-</CODE> signs are comments.</LI>
 								<LI>Other lines are divided into multiple parts by the <CODE>=</CODE> char. Within the second section, multiple offices can be assigned to a single day, the latter ones by way of commemoration. These are divided by the <CODE>~</CODE> char.<BR />
@@ -67,8 +67,12 @@
 							<CODE>01-11=01-11~01-11cc=Sexta die infra Octavam Epiphaniae=2=S. Hygini Pap&aelig; et Martyris=1=</CODE> <BR />
 							On January 11, there is the office contained in file <CODE>01-11</CODE> (the 6th day of the octave of the Epiphany) with a commemoration of S. Hyginus Pope and Martyr contained in the separate file <CODE>01-11cc</CODE>.
 						</LI>
-						<LI><CODE>Tempora</CODE> perpetually-transfers of the Tempora (Divino Afflatu is used as base).</LI>
-						<LI><CODE>Transfer</CODE> transfers based on Easter date.
+						<LI><CODE>Tempora</CODE> perpetual transfers
+							 <UL>
+								 <LI><CODE>Generale.txt</CODE> of the Tempora for the General Calendar (Divino Afflatu is used as base).</LI>
+								 <LI><CODE>Dioecese.txt</CODE> implementing the regional calendar of a Dioecese <I>(e.g. Urbis.txt)</I></LI>
+							</UL></LI>
+						<LI><CODE>Transfer</CODE> transfers based on Easter date. The files on the top folder are for the General transfers; for regional calendars these go into respective subfolders <I>(e.g. ~/Tabulae/Transfer/Urbis)</I>
 							<UL>
 								<LI>Lines starts with '#-' signs are comments.</LI>
 								<LI>Other lines are divided in three parts: before '=' char, between '=' and ';;', and after ';;'.</LI>
@@ -83,7 +87,7 @@
 							<CODE>dirge1=01-23 02-03 02-20;;1570</CODE><BR />
 							lists days where Officium Defunctorum is read after Vespera and Laudes. (dirge1 is for January and February, dirge2 and dirge3 for remaining months the latter being used for July to December in the general files applicable by Dominical letter).<BR /><BR />
 							<CODE>Hy05-18=1;;DA</CODE><BR />
-							marks days where major hymns should be altered according rule XX.3. (1 means merge hymns in Matutinum, 2 - shift hymns)
+							marks days where major hymns should be altered according rule XX.3. (1 means merge hymns in Matutinum, 2 - shift hymns, 3 - shift hymns with merging hymns in Laudes)
 						</LI>
 						<LI><CODE>Stransfer</CODE> as above but for transfers of Matutinums readings.</LI>
 						Meaning is shown in examples from files <CODE>e.txt</CODE>:<BR />
@@ -269,6 +273,15 @@
 						<TR><TD><B>C12</B> : Little Office of the Blessed Virgin Mary</TD><TD><B>other</B> : reference to Proper office</TD></TR>
 						<TR><TD><B>-1</B> added to the name : Alternative Mass/Oration</TD><TD><B>p</B> added to the name : Eastertime Office</TD></TR>
 					</TABLE>
+					<LI><span class=prma>Votive Offices (Vn)</span> refer to the Officia Votiva per annum:</LI>
+					<TABLE BORDER=0 ALIGN=CENTER WIDTH=100%>
+						<TR><TD><B>V2</B> : de Sanctis Angelis (Feria II)</TD></TR>
+						<TR><TD><B>V3</B> : de Sanctis Apostolis (Feria III)</TD><TD><B>V3u</B> : de Ss. Apostolis Petro et Paule (Rom&aelig;)</TD></TR>
+						<TR><TD><B>V4</B> : de S. Joseph Sponso B. M. V. (Feria IV)</TD></TR>
+						<TR><TD><B>V5</B> : de Ss. Eucharisti&aelig; Sacramento (Feria V)</TD></TR>
+						<TR><TD><B>V6</B> : de Passione D. N. J. C. (Feria VI)</TD></TR>
+						<TR><TD><B>V7</B> : de Immaculata Conceptione B. M. V. (Sabbato)</TD></TR>
+					</TABLE>
 				</UL>
 				
 				<A NAME='exceptions'></A>
@@ -317,6 +330,7 @@ Antiphones horas
 					<TR><TD><span class=prma>limit&nbsp;<I>group list</I></span></TD><TD COLSPAN=3>Special (hard coded) rules for the named items (on all Souls and Triduum Sacrum).</TD></TR>
 					<TR><TD><span class=prma>Minores sine antiphona</span></TD><TD COLSPAN=3>Minor hours are prayed without an antiphon (e.g., Triduum).</TD></TR>
 					<TR><TD><span class=prma>Lectio1 tempora<br />Lectio1 OctNat</span></TD><TD COLSPAN=2>Replacing 1st Nocturn readings according to the rules in the Octaves of Epiphany and Nativity.</TD><TD>Sancti/01-07<BR/>Sancti/12-31</TD></TR>
+					<TR><TD><span class=prma>Lectio1 Quad</span></TD><TD COLSPAN=2>The provided 1st Nocturn readings are used only in Quadragesima.</TD><TD>Sancti/04-13</TD></TR>
 					<TR><TD><span class=prma>scriptura1960</span></TD><TD COLSPAN=2>Under Rubrics 1960, 1st Nocturn lessons are taken from occuring scripture.</TD><TD>Sancti/08-29</TD></TR>
 					<TR><TD><span class=prma>No <I>ordinal</I> vespera</span></TD><TD>Prevents a feast to win or be commemorated at second/first vespers</TD><TD>no secunda vespera</TD><TD>Sancti/01-12</TD></TR>
 					<TR><TD><span class=prma>(OC)Papa(e))(CMD)=<I>name</I></span></TD><TD>Provides the name for a C(onfessor), M(artyr), or D(octor) Pope(s) in the O(ffice) or C(ommemorated)</TD><TD>OPapaM=Hyg&iacute;num;<BR>CPapaC=Marcum;</TD><TD>deprecated</TD></TR>
