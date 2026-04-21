@@ -273,7 +273,7 @@ sub psalmi_matutinum {
     $prefix .= ' ' . translate('et Psalmi', $lang);
   }
 
-  if ($dayname[0] =~ /Pasc[1-6]/i && $votive !~ /C9|C12/ && ($version !~ /Praedicatorum/ || $winner =~ /Tempora/)) {
+  if ($dayname[0] =~ /Pasc[1-6]/i && $votive !~ /C9|C12/) {
     @psalmi = ant_matutinum_paschal(\@psalmi, $lang, length($w));
   }
 
