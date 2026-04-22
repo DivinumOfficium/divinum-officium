@@ -952,8 +952,7 @@ sub lectio : ScriptFunc {
       || ($num == 4 && $rule =~ /12 lect/i && exists($scriptura{"Lectio3"}))
     )                                                   # or for Monastic if we have to split the lessons at the ¶ mark
     && ($version !~ /trident/i || $rank < 5)
-    )
-  {                                                     # but not in Tridentinum Duplex II. vel I. classis
+  ) {                                                   # but not in Tridentinum Duplex II. vel I. classis
     %w = (columnsel($lang)) ? %scriptura : %scriptura2;
 
     my $infile = initiarule($month, $day, $year);
@@ -1067,8 +1066,7 @@ sub lectio : ScriptFunc {
 
     # Simplex: also look when last lectio has been diverged to Lectio 4
     || (($ltype1960 == LT1960_SANCTORAL || $rank < 2) && $winner =~ /Sancti/i && $num == 4)
-    )
-  {    # 9th lesson diverged to Legend of Commemorated Saint
+  ) {    # 9th lesson diverged to Legend of Commemorated Saint
     %w = (columnsel($lang)) ? %winner : %winner2;
     my $L9winnerflag = 0;
 
@@ -1496,8 +1494,7 @@ sub responsory_gloria {
       && $num % $rpn == ($rpn - 1)             # before last
       && tedeum_required($num + 1)             # when there is Te Deum after last
     )
-    )
-  {                                            # let's add the Gloria
+  ) {                                          # let's add the Gloria
 
     if ($lang =~ /gabc/ && $w =~ /\{.*\}/) {
       if ($w =~ /\_\s\{gabc:/) {
