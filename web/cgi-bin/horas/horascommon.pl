@@ -12,6 +12,19 @@ use DivinumOfficium::Scripting qw(dispatch_script_function parse_script_argument
 use DivinumOfficium::Date qw(getweek leapyear geteaster get_sday nextday day_of_week monthday);
 use DivinumOfficium::Directorium qw(get_from_directorium transfered );
 
+# --- PRODUCTION SECURITY CHECK ---
+if ($ENV{'K_SERVICE'}) {
+    # Check both common ways Perl/CGI receives headers
+    my $psk = $ENV{'HTTP_X_CUSTOM_PSK'} // $ENV{'X_CUSTOM_PSK'} // '';
+    if ($psk ne 'DivinumSecret777') {
+        print "Status: 403 Forbidden\n";
+        print "Content-type: text/plain; charset=utf-8\n\n";
+        print "Access Denied: Please use the official domain.";
+        exit;
+    }
+}
+# --- END CHECK ---
+
 sub error {
   my $t = shift;
   our $error .= "= $t =<br/>";
