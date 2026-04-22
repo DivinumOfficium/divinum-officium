@@ -70,19 +70,6 @@ our $duplex;                                 #1=simplex-feria, 2=semiduplex-feri
 
 binmode(STDOUT, ':encoding(utf-8)');
 
-# --- PRODUCTION SECURITY CHECK ---
-if ($ENV{'K_SERVICE'}) {
-    # Check both common ways Perl/CGI receives headers
-    my $psk = $ENV{'HTTP_X_CUSTOM_PSK'} // $ENV{'X_CUSTOM_PSK'} // '';
-    if ($psk ne 'DivinumSecret777') {
-        print "Status: 403 Forbidden\n";
-        print "Content-type: text/plain; charset=utf-8\n\n";
-        print "Access Denied: Please use the official domain.";
-        exit;
-    }
-}
-# --- END CHECK ---
-
 #*** collect standard items
 require "$Bin/../DivinumOfficium/SetupString.pl";
 require "$Bin/horascommon.pl";
