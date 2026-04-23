@@ -1678,6 +1678,8 @@ sub precedence {
       } elsif ($dayname[0] =~ /(Quadp|Quad)/i && $version !~ /Praedicatorum/) {
         $vtv = 'C12Q';
       }
+    } elsif ($dayname[0] =~ /Pasc/ && $vtv =~ /C[1-3]/) {
+      $vtv .= 'p';
     }
     $winner = subdirname('Commune', $version) . "$vtv.txt";
     $commemoratio = $commemoratio1 = $cwinner = $scriptura = $commune = '';
