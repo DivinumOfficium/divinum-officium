@@ -517,7 +517,11 @@ sub occurrence {
       $officename[2] =~ s/:/ ad Laudes tantum:/ if ($srank[2] >= 5 && $saint{'Commemoratio 2'} || $version =~ /196/);
     }
 
-    if (($hora =~ /matutinum/i || (!$officename[2] && $hora !~ /Vespera|Completorium/i)) && $rank < 7 && $trank[0]) {
+    if ( ($hora =~ /matutinum/i || (!$officename[2] && $hora !~ /Vespera|Completorium/i))
+      && $rank < 7
+      && $trank[0]
+      && !$missa)
+    {
       my %scrip = %{officestring('Latin', $tname)};
 
       if (
@@ -549,8 +553,9 @@ sub occurrence {
         $officename[2] = "Tempora: $trank[0]";
       }
       $scriptura = $tname;
+    } elsif ($missa) {
+      $scriptura = $tname;
     }
-
   } else {    # winner is Tempora
     if ($hora !~ /Vespera/i && $trank[2] < ($version =~ /cist/i ? 1.25 : 1.5) && $transfervigil)
     {         # Vigil transfered to an empty or Simplex only day

@@ -1,18 +1,12 @@
 [Officium]
 S. Petri Nolasci Confessoris
 
+[Introitus]
+@Commune/C5-1
+
 [Oratio]
 God, Gij hebt als een voorbeeld van uw liefde op goddelijke wijze de heilige Petrus ingegeven uw Kerk te verrijken met een nieuwe kloosterfamilie tot vrijkoping van de gelovigen. Wil ons op zijn voorspraak bevrijden uit de slavernij van de zonden en in het hemelse vaderland een blijvende vrijheid doen genieten.
 $Qui vivis
-
-[Secreta]
-@Commune/C5
-
-[Postcommunio]
-@Commune/C5
-
-[Introitus]
-@Commune/C5-1
 
 [Lectio]
 @Commune/C5-1
@@ -26,5 +20,11 @@ $Qui vivis
 [Offertorium]
 @Commune/C5-1
 
+[Secreta]
+@Commune/C5
+
 [Communio]
 @Commune/C5-1
+
+[Postcommunio]
+@Commune/C5

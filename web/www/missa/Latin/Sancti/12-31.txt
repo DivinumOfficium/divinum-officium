@@ -1,12 +1,6 @@
 [Officium]
 S. Silvestri Papæ et Confessoris
 
-[Name]
-Silvéstri
-(sed rubrica 196)
-Silvéstrum
-Postcommunio=Silvéstro
-
 [Rank]
 ;;Duplex;;3;;vide C4b
 
@@ -16,6 +10,12 @@ Gloria
 Credo
 Prefatio=Nat
 Evangelium non appropriatum
+
+[Name]
+Silvéstri
+(sed rubrica 196)
+Silvéstrum
+Postcommunio=Silvéstro
 
 [Oratio]
 @Commune/C4b

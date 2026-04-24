@@ -7,14 +7,14 @@ Chair of St. Peter the Apostle
 [Introitus]
 @Commune/C2a
 
-[Oratio Petri]
-O God, who together with the keys of the kingdom of heaven didst bestow on thy blessed Apostle Peter the pontifical power of binding and loosing, grant that by the aid of this intercession, we may be released from the bonds of our sins.
-$Qui vivis
-
 [Oratio Pauli]
 !Commemoration of St. Paul
 O God, Who taught vast numbers of the Gentiles by the preaching of the blessed Apostle Paul, grant, we beseech You, that by honoring his memory, we may enjoy the benefit of his patronal intercession with You.
 $Per Dominum
+
+[Oratio Petri]
+O God, who together with the keys of the kingdom of heaven didst bestow on thy blessed Apostle Peter the pontifical power of binding and loosing, grant that by the aid of this intercession, we may be released from the bonds of our sins.
+$Qui vivis
 
 [GradualeP]
 Alleluia, alleluia.
@@ -31,18 +31,18 @@ _
 !Tractus
 @Commune/Coronatio
 
-[Secreta Petri]
-We beseech You, O Lord, may the prayer of the blessed Apostle, Peter, recommend the petitions and offerings of Your Church, so that what we celebrate in his honor may obtain forgiveness for us.
-$Per Dominum
-
 [Secreta Pauli]
 !For St. Paul
 @Sancti/01-25:Secreta Pauli
 
-[Postcommunio Petri]
-O Lord, may the gift we offer bring us joy, that as we praise Your wondrous work in Your Apostle Peter, so through him may we share Your generous forgiveness.
+[Secreta Petri]
+We beseech You, O Lord, may the prayer of the blessed Apostle, Peter, recommend the petitions and offerings of Your Church, so that what we celebrate in his honor may obtain forgiveness for us.
 $Per Dominum
 
 [Postcommunio Pauli]
 !For St. Paul
 @Sancti/01-25:Postcommunio Pauli
+
+[Postcommunio Petri]
+O Lord, may the gift we offer bring us joy, that as we praise Your wondrous work in Your Apostle Peter, so through him may we share Your generous forgiveness.
+$Per Dominum

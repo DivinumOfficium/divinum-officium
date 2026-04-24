@@ -335,13 +335,25 @@ sub oratio {
     $retvalue .= $addconclusio;
     return resolve_refs($retvalue, $lang);
   }
-  $rule .= $1 if ($winner =~ /Sancti/i && $duplex < 3 && $scriptura && $scriptura{Rule} =~ /(Suffr.*?=.*?;;)/i);
-  $rule .= $1 if ($winner =~ /Sancti/i && $duplex < 3 && $commemoratio && $commemoratio{Rule} =~ /(Suffr.*?=.*?;;)/i);
+  $rule .= $1
+    if ( $winner =~ /Sancti/i
+      && $duplex < 3
+      && $scriptura
+      && $scriptura{Rule} =~ /(Suffr.*?=.*?;;)/i
+      && $winner{Rule} !~ /Suffr.*;;/
+      && $commemoratio{Rule} !~ /Suffr.*;;/);
+  $rule .= $1
+    if ( $winner =~ /Sancti/i
+      && $duplex < 3
+      && $commemoratio
+      && $commemoratio{Rule} =~ /(Suffr.*?=.*?;;)/i
+      && $winner{Rule} !~ /Suffr.*;;/);
 
   if ($rule =~ /Suffr.*?=(.*?);;/i) {
     my $sf = $1;
+    $sf =~ s/Maria2\;(Ecclesiæ|Papa)\,/Sanctorum;Maria3,$1,/ if ($month > 2 || ($month == 2 && $day > 1));
     my @sf = split(';', $sf);
-    my %sf = %{setupstring($lang, 'Ordo/Suffragium.txt')};
+    my %suffr = %{setupstring($lang, 'Ordo/Suffragium.txt')};
     my ($sf1, @sf1);
 
     foreach $sf (@sf) {
@@ -350,8 +362,10 @@ sub oratio {
       last if $ctotalnum > 2;
       @sf1 = split(',', $sf);
       my $i = ($dayofweek % @sf1);
-      $sf1[$i] = 'Sanctorum' if ($sf1[$i] =~ /Maria2/i && ($month > 2 || ($month == 2 && $day > 1)));
-      $retvalue .= "_\n" . delconclusio($sf{"$type $sf1[$i]"});
+      my $adlibitum = $suffr{'ad libitum'};
+      $adlibitum =~ s/\s*$//;
+      $suffr{"$type $sf1[$i]"} =~ s/(\!.*)$/$1 ($adlibitum)/m if @sf1 == 3;
+      $retvalue .= "_\n" . delconclusio($suffr{"$type $sf1[$i]"});
     }
   }
   $retvalue .= $addconclusio;
@@ -704,10 +718,8 @@ sub setalleluia {
 # versions 1956 and 1960 exclude from Ordinarium
 sub checksuffragium {
   if ($rule =~ /no suffragium/i) { return 0; }
-  if (!$dayname[0] || $dayname[0] =~ /Quad5/i) { return 0; }    #christmas, passiontime omit
   if ($winner =~ /sancti/i && $rank >= 3 && $seasonalflag && $winner !~ /01-05/) { return 0; }
   if ($commemoratio =~ /sancti/i && $commemoratio{Rank} =~ /;duplex/i && $seasonalflag) { return 0; }
-  if ($winner{Rank} =~ /octav/i && $winner{Rank} !~ /post Octavam/i) { return 0; }
   if ($duplex > 2 && $version !~ /trident/i && $seasonalflag) { return 0; }
   return 1;
 }
@@ -953,18 +965,25 @@ sub Credo {
   our @commemoentries;
   my $flag = 1;
 
-  if ( $dayofweek == 0
+  if (
+       $dayofweek == 0
     || ($rank >= 5 && $winner =~ /Sancti/ && $winner{Rank} !~ /Vigil/i)
-    || ($winner{Rank} =~ /Octav/i && $winner{Rank} !~ /post Octavam/i)
-    || ($commemoratio{Rank} =~ /Octav/i && $commemoratio{Rank} !~ /post Octavam/i && $version !~ /196/))
-  {
+    || ($winner{Rank} =~ /Octav/i && $winner{Rank} !~ /post Octavam/i && $winner{Rank} !~ /Simplex/i)
+    || ( $commemoratio{Rank} =~ /Octav/i
+      && $commemoratio{Rank} !~ /post Octavam/i
+      && $commemoratio{Rank} !~ /Simplex/i
+      && $version !~ /196/)
+  ) {
     $flag = 0;
   } elsif (@commemoentries) {
     foreach my $commemo (@commemoentries) {
       if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
       my %c = %{setupstring('Latin', $commemo)};
 
-      if ($c{Rank} =~ /Octav/i && $c{Rank} !~ /post Octavam/ && $version !~ /196/) {
+      if ( (($c{Rank} =~ /Octav/i && $c{Rank} !~ /post Octavam/) || $c{Rule} =~ /Credo/i)
+        && $c{Rank} !~ /Simplex/i
+        && $version !~ /196/)
+      {
         $flag = 0;
         last;
       }

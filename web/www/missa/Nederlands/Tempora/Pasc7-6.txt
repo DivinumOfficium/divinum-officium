@@ -1,14 +1,20 @@
 [Officium]
 Sabbato Quattuor Temporum Pentecostes
 
-[Rule]
-no Gloria
-(rubrica 1960 et missa brevior) LectioL1
-(rubrica 1960) celebranda aut forma longior aut forma brevior
-LectioL5
-Sequentia
-Credo
-Prefatio=Spiritu=hodierna die;
+[Graduale](missa brevior)
+Alleluia.
+V. (Hier maakt men een kniebuiging.) Kom, Heilige Geest, vervul de harten van uw gelovigen en ontsteek in hen het vuur van uw liefde.
+
+[GradualeL1](missa brevior)
+Alleluia.
+!Joann 6:64
+Het is de Geest, die levend maakt. Het vlees draagt daartoe niets bij.
+_
+#Gloria
+v. Eer aan God in den hoge, en op aarde vrede aan de mensen van goede wil. Wij loven U. Wij zegenen U. Wij aanbidden U. Wij verheerlijken U. Wij danken U om uw grote heerlijkheid. Heer, God, Koning in de hemel, God, almachtige Vader. Heer, enige Zoon, Jezus Christus. Heer God, Lam Gods, Zoon van de Vader. Gij, die de zonden van de wereld wegneemt, ontferm U over ons. Gij, die de zonden van de wereld wegneemt, aanvaard ons gebed. Gij, die zetelt aan de rechterhand van de Vader, ontferm U over ons. Want Gij alleen zijt heilig, Gij alleen de Heer, Gij alleen de Allerhoogste, Jezus Christus, met de Heilige Geest + in de heerlijkheid van God de Vader. Amen.
+
+[Sequentia](missa longior)
+@Tempora/Pasc7-0:Sequentia::s/Alleluia.//
 
 [Introitus]
 !Rom 5:5
@@ -28,14 +34,6 @@ $Deo gratias
 Alleluia.
 !Joann 6:64
 Het is de Geest, die levend maakt. Het vlees draagt daartoe niets bij.
-
-[GradualeL1](missa brevior)
-Alleluia.
-!Joann 6:64
-Het is de Geest, die levend maakt. Het vlees draagt daartoe niets bij.
-_
-#Gloria
-v. Eer aan God in den hoge, en op aarde vrede aan de mensen van goede wil. Wij loven U. Wij zegenen U. Wij aanbidden U. Wij verheerlijken U. Wij danken U om uw grote heerlijkheid. Heer, God, Koning in de hemel, God, almachtige Vader. Heer, enige Zoon, Jezus Christus. Heer God, Lam Gods, Zoon van de Vader. Gij, die de zonden van de wereld wegneemt, ontferm U over ons. Gij, die de zonden van de wereld wegneemt, aanvaard ons gebed. Gij, die zetelt aan de rechterhand van de Vader, ontferm U over ons. Want Gij alleen zijt heilig, Gij alleen de Heer, Gij alleen de Allerhoogste, Jezus Christus, met de Heilige Geest + in de heerlijkheid van God de Vader. Amen.
 
 [OratioL1]
 Wij vragen U, Heer, dat de Heilige Geest in ons doe opvlammen het vuur, dat onze Heer Jezus Christus in de wereld wierp en fel wilde doen branden.
@@ -116,15 +114,8 @@ Broeders, nu wij door het geloof gerechtvaardigd zijn, laten wij nu de vrede bew
 Looft de Heer, alle volkeren. Alle naties, verheerlijkt Hem.
 V. Want zijn barmhartigheid blijft ons verzekerd en de trouw des Heren duurt eeuwig.
 
-[Graduale](missa brevior)
-Alleluia.
-V. (Hier maakt men een kniebuiging.) Kom, Heilige Geest, vervul de harten van uw gelovigen en ontsteek in hen het vuur van uw liefde.
-
 [Sequentia]
 @Tempora/Pasc7-0:Sequentia
-
-[Sequentia](missa longior)
-@Tempora/Pasc7-0:Sequentia::s/Alleluia.//
 
 [Evangelium]
 Vervolg ++ van het heilig Evangelie volgens Lucas
