@@ -2070,7 +2070,7 @@ sub spell_var {
     $t =~ s/(c)([aá]r[ií])(t|ss)/$1h$2$3/gi if $version =~ /cist/i;
     $t =~ s/>([aá]r[ií])(t|ss)/>h$1$2/gi if $version =~ /cist/i;
     $t =~ s/>aríssim/>haríssim/gi if $version =~ /cist/i;
-    $t =~ s/(A|a)b(i|í)ci/$1bj$2ci/gi if $version =~ /cist/i;
+    $t =~ s/\b(pro|pró|ab|ad|e)(i|í)ci/$1j$2ci/gi if $version =~ /cist/i;
   }
   return $t;
 }
