@@ -1,7 +1,7 @@
 @Tempora/Pasc5-4
 
 [Officium]
-Feria V in Octava Ascensionis
+In Octava Ascensionis
 
 [Officium] (rubrica 196 aut rubrica 1955)
 Feria V post Ascensionem
@@ -17,3 +17,6 @@ Feria V post Ascensionem
 ex Tempora/Pasc5-4;
 Gloria
 Suffr=Maria3;Ecclesiæ,Papa;;
+
+[Evangelium]
+@Tempora/Pasc5-5

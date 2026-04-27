@@ -20,14 +20,6 @@ Dómine, probásti me et cognovísti me: tu cognovísti sessiónem meam et resur
 &Gloria
 v. Scio, cui crédidi, et certus sum, quia potens est depósitum meum serváre in illum diem, justus judex.
 
-[Oratio]
-@:Oratio Pauli
-(deinde dicuntur semper)
-_
-$Oremus
-(sed rubrica 196 omittuntur)
-@:Oratio Petri
-
 [Oratio Pauli]
 Deus, qui univérsum mundum beáti Pauli Apóstoli prædicatióne docuísti: da nobis, quǽsumus; ut, qui ejus hódie Conversiónem cólimus, per ejus ad te exémpla gradiámur.
 $Per Dominum
@@ -35,6 +27,14 @@ $Per Dominum
 [Oratio Petri]
 !Pro S. Petro
 @Sancti/02-22:Oratio Petri
+
+[Oratio]
+@:Oratio Pauli
+(deinde dicuntur semper)
+_
+$Oremus
+(sed rubrica 196 omittuntur)
+@:Oratio Petri
 
 [Lectio]
 Léctio Actuum Apostolórum
@@ -66,13 +66,6 @@ V. Intercéde pro nobis ad Deum, qui te elégit.
 !Ps 138:17
 Mihi autem nimis honoráti sunt amíci tui, Deus: nimis confortátus est principátus eórum.
 
-[Secreta]
-@:Secreta Pauli
-(deinde dicuntur semper)
-_
-(sed rubrica 196 omittuntur)
-@:Secreta Petri
-
 [Secreta Pauli]
 Apóstoli tui Pauli précibus, Dómine, plebis tuæ dona sanctífica: ut, quæ tibi tuo grata sunt institúto, gratióra fiant patrocínio supplicántis.
 $Per Dominum
@@ -81,16 +74,15 @@ $Per Dominum
 !Pro S. Petro
 @Sancti/02-22:Secreta Petri
 
-[Communio]
-@Commune/C5-1
-
-[Postcommunio]
-@:Postcommunio Pauli
+[Secreta]
+@:Secreta Pauli
 (deinde dicuntur semper)
 _
-$Oremus
 (sed rubrica 196 omittuntur)
-@:Postcommunio Petri
+@:Secreta Petri
+
+[Communio]
+@Commune/C5-1
 
 [Postcommunio Pauli]
 Sanctificáti, Dómine, salutári mystério: quǽsumus; ut nobis ejus non desit orátio, cujus nos donásti patrocínio gubernári.
@@ -99,3 +91,11 @@ $Per Dominum
 [Postcommunio Petri]
 !Pro S. Petro
 @Sancti/02-22:Postcommunio Petri
+
+[Postcommunio]
+@:Postcommunio Pauli
+(deinde dicuntur semper)
+_
+$Oremus
+(sed rubrica 196 omittuntur)
+@:Postcommunio Petri
