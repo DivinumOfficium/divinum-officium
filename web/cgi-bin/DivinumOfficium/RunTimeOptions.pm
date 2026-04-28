@@ -14,8 +14,15 @@ BEGIN {
 
 sub unequivocal {
   my ($value, $tablename) = @_;
-  my @values_array = main::getdialog($tablename);
 
+  # Diagnostic Logging: If it's empty, report who called it
+  if (!defined $value || $value eq '') {
+    my (undef, $filename, $line, $subname) = caller(1);
+    warn "[DEBUG] unequivocal called with empty value. Called by: $subname at $filename line $line";
+    return;
+  }
+
+  my @values_array = main::getdialog($tablename);
   my @r = grep {/$value/} @values_array;
 
   if (@r == 1) {
