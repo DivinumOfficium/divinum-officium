@@ -1,0 +1,20 @@
+@Sancti/08-02o
+
+[Officium]
+S. Stephani I Papæ et Martyris
+
+[Rank]
+;;Duplex;;3;;vide C2b-1
+
+[Rule]
+vide C2b-1;
+9 lectiones
+
+[Lectio4]
+@Sancti/08-02o:Lectio4:s/Sed\,.*//
+
+[Lectio5]
+@Sancti/08-02o:Lectio4:s/.*?(Sed)/$1/ s/Quare\,.*//
+
+[Lectio6]
+@Sancti/08-02o:Lectio4:s/.*?(Quare)/$1/

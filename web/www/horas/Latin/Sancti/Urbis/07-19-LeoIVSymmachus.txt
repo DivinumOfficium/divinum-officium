@@ -1,0 +1,26 @@
+[Officium]
+Ss. Leonis IV et Symmachi Pontificum et Confessorum
+
+[Rank]
+;;Duplex;;3;;vide aliquibus locis/C4b-3
+
+[Rule]
+vide aliquibus locis/C4b-3;
+9 lectiones
+
+[Name]
+Leónis et Sýmmachi
+(sed communi Summorum Pontificum)
+Leónem et Sýmmachum
+
+[Lectio4]
+@Sancti/Urbis/07-17-LeoIV::s/$/~/
+@Sancti/Urbis/07-17-LeoIV:Lectio5
+
+[Lectio5]
+@Sancti/Urbis/07-17-LeoIV:Lectio6:s/$~/
+@Sancti/Urbis/07-19-Symmachus:Lectio4
+
+[Lectio6]
+@Sancti/Urbis/07-19-Symmachus:Lectio5:s/$/~/
+@Sancti/Urbis/07-19-Symmachus:Lectio6

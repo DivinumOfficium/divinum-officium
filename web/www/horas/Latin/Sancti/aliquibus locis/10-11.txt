@@ -1,0 +1,38 @@
+@Sancti/10-11
+
+[Rank]
+;;Duplex majus;;4;;ex C11
+
+[Rule]
+ex C11;
+9 lectiones
+Psalmi Dominica
+Antiphonas horas
+Doxology=Nat
+
+[Ant Vespera]
+Beáta es, * Virgo María, quæ ómnium portásti Creatórem.;;109
+Genuísti, * qui te fecit, et in ætérnum pérmanes Virgo.;;112
+Beátam me dicent * omnes generatiónes, qui ancíllam húmilem respéxit Dóminus.;;121
+Fecit mihi magna * qui potens est, sanctum nomen ejus.;;126
+Vidérunt eam * fíliæ Sion, et beátam dixérunt, et regínæ laudavérunt eam.;;147
+
+[Nocturn 3 Versum]
+V. Fecit mihi magna qui potens est.
+R. Misericórdia ejua a progénie in progénies timéntibus eum.
+
+[Lectio6]
+Oportuit ut primam Genitrícis integritátem nascentis incorruptio custodíret, et complacitum sibi claustrum pudóris et sanctitátis hospitium divíni Spíritus virtus infúsa serváret, quæ statuerat dejecta erigere, confracta solidare, et superandis carnis illécebris multiplicatam pudicitiæ donare virtútem; ut virgínitas, quæ in áliis non póterat salva esse generando, fíeret áliis imitabilis renascendo. Hoc ipsum autem, quod Christus nasci eligit ex Vírgine, nonne appáret altíssimæ fuísse ratiónis, ut scílicet humáno géneri natam salútem diábolus ignoraret, et spirituali latente concéptu, quem non álium vidéret quam álios, non áliter créderet natum esse quam céteros? Quod ut fíeret, editus est Christus ex Vírgine, quam Spíritus sanctus fœcundavit; et cum in ómnibus matribus non fiat sine peccáti sorde conceptio, hæc inde purgationem traxit, unde concépit.
+
+[Lectio8] (feria 1)
+@Sancti/10-11::s/$/~/
+@Sancti/10-11:Lectio9
+
+[Ant Laudes]
+@:Ant Vespera:s/;;.*//gm
+
+[Ant 2]
+@Commune/C11:Ant 1:s/sanctam festivitátem/admirábilem Maternitátem/
+
+[Versum 3]
+@:Versum 1
