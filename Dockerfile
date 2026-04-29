@@ -38,6 +38,7 @@ RUN cpanm --notest \
     Plack::App::CGIBin \
     CGI::Compile \
     CGI::Emulate::PSGI \
+    Plack::App::WrapCGI \
     CGI::Session
 
 # 3. Process management
