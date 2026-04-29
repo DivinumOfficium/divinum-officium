@@ -1,46 +1,37 @@
 use strict;
 use warnings;
 use Plack::Builder;
-use Plack::App::CGIBin;
+use Plack::App::WrapCGI;
 use Plack::App::File;
 use Cwd qw(abs_path);
 use File::Basename qw(dirname);
 
-use lib "/usr/local/lib/site_perl";
-use lib "/usr/share/perl5";
-
-# --- HOTFIX: Fix missing return_405 method in Perl 5.42 / Plack 1.005x ---
-# This prevents the "Can't locate object method" crash in Cloud Run.
-{
-    no strict 'refs';
-    if (!defined &{"Plack::App::CGIBin::return_405"}) {
-        *{"Plack::App::CGIBin::return_405"} = sub {
-            my $self = shift;
-            return [ 405, ['Content-Type' => 'text/plain'], ['405 Method Not Allowed'] ];
-        };
-    }
-}
-
-# Hardcoded for the Docker environment to ensure stability
+# --- ENVIRONMENT SETUP ---
 my $base_dir = "/var/www";
+my $cgi_dir  = "$base_dir/web/cgi-bin";
 
-$ENV{WWWROOT} = "$base_dir/web";
-$ENV{PERL5LIB} = join(':', "$base_dir/web/cgi-bin", $ENV{PERL5LIB} || ());
-
-# Inject the library paths directly into the Perl controller
+# Set the library paths for the new $dioecesis / PR #5143 logic
 use lib "/var/www/web/cgi-bin";
 use lib "/var/www/web";
 
+$ENV{WWWROOT}  = "$base_dir/web";
+$ENV{PERL5LIB} = join(':', $cgi_dir, $ENV{PERL5LIB} || ());
+
+# Helper to wrap a CGI script safely
+sub wrap_cgi {
+    my $script_path = shift;
+    return Plack::App::WrapCGI->new(
+        script  => $script_path,
+        execute => 1 
+    )->to_app;
+}
 
 builder {
-
-# --- BOT FIREWALL (Hard Block) ---
-    # If the UA matches, we exit immediately with a 403, saving CPU.
+    # 1. BOT FIREWALL
     enable sub {
         my $app = shift;
         sub {
             my $env = shift;
-            # Block the specific fake Chrome version seen in the logs
             if (($env->{HTTP_USER_AGENT} || '') =~ /Chrome\/142\.0/) {
                 return [403, ['Content-Type' => 'text/plain'], ['Forbidden']];
             }
@@ -48,82 +39,50 @@ builder {
         };
     };
 
-    # 1. The Asset Mounts
+    # 2. STATIC ASSETS
     mount "/www" => Plack::App::File->new(root => "$base_dir/web/www")->to_app;
 
-    # 2. CGI Wrapper
-    my $cgi_wrapper = sub {
-        my $file = shift;
-        chdir dirname(abs_path($file)) if -f $file;
-        return 1;
+    # 3. EXPLICIT SCRIPT MOUNTS
+    # These handle the primary entry points specifically to avoid any path ambiguity.
+    mount "/cgi-bin/missa/missa.pl"    => wrap_cgi("$cgi_dir/missa/missa.pl");
+    mount "/missa/missa.pl"            => wrap_cgi("$cgi_dir/missa/missa.pl");
+    mount "/cgi-bin/horas/officium.pl" => wrap_cgi("$cgi_dir/horas/officium.pl");
+    mount "/horas/officium.pl"         => wrap_cgi("$cgi_dir/horas/officium.pl");
+
+    # 4. CGI SAFETY NET (CATCH-ALL)
+    # If the app calls a script not explicitly listed (like a popup or helper script), 
+    # this block will attempt to find and wrap it dynamically.
+    mount "/cgi-bin" => sub {
+        my $env = shift;
+        my $path = $env->{PATH_INFO} || '';
+        my $full_path = "$cgi_dir$path";
+
+        if (-f $full_path && -x $full_path) {
+            return wrap_cgi($full_path)->($env);
+        }
+        return [404, ['Content-Type' => 'text/plain'], ["Script not found: $path"]];
     };
 
-    # 3. The Script Mounts
-    my $horas_app = Plack::App::CGIBin->new(
-        root => "$base_dir/web/cgi-bin/horas",
-        exec_cb => $cgi_wrapper
-    )->to_app;
-
-    my $missa_app = Plack::App::CGIBin->new(
-        root => "$base_dir/web/cgi-bin/missa",
-        exec_cb => $cgi_wrapper
-    )->to_app;
-
-    mount "/cgi-bin/horas" => $horas_app;
-    mount "/horas"         => $horas_app;
-    mount "/cgi-bin/missa" => $missa_app;
-    mount "/missa"         => $missa_app;
-
-    # --- Robots.txt Handler ---
+    # 5. ROBOTS.TXT
     mount "/robots.txt" => sub {
-        return [
-            200, 
-            ['Content-Type' => 'text/plain'], 
-            [
-                # Block Meta (Facebook/Instagram AI)
-                "User-agent: Meta-ExternalAgent\n" .
-                "Disallow: /\n\n" .
-                
-                # Block OpenAI (ChatGPT / GPTBot)
-                "User-agent: GPTBot\n" .
-                "Disallow: /\n\n" .
-                
-                # Block Common Crawl (Used by many smaller AI models)
-                "User-agent: CCBot\n" .
-                "Disallow: /\n\n" .
-                
-                # Block Anthropic (Claude)
-                "User-agent: anthropic-ai\n" .
-                "Disallow: /\n\n" .
-
-                # Block Perplexity AI
-                "User-agent: PerplexityBot\n" .
-                "Disallow: /\n\n" .
-
-                # Block Ahrefs (SEO Crawler)
-                "User-agent: AhrefsBot\n" .
-                "Disallow: /\n\n" .
-
-                # Block Barkrowler (SEO Crawler)
-                "User-agent: Barkrowler\n" .
-                "Disallow: /\n\n" .
-
-                # Allow regular Search Engines (Google, Bing, DuckDuckGo)
-                "User-agent: *\n" .
-                "Disallow:\n"
-            ]
-        ];
+        return [200, ['Content-Type' => 'text/plain'], ["User-agent: *\nDisallow: /cgi-bin/\n"]];
     };
 
-    # 4. The Root Handler
+    # 6. ROOT / FALLBACK HANDLER
     mount "/" => sub {
         my $env = shift;
         my $path = $env->{PATH_INFO} || '';
 
+        # Serve index.html if root is requested
         if ($path eq '/' || $path eq '') {
-            return Plack::App::File->new(file => "$base_dir/web/index.html")->call($env);
+            foreach my $file ("$base_dir/web/index.html", "$base_dir/web/www/index.html") {
+                if (-f $file) {
+                    return Plack::App::File->new(file => $file)->call($env);
+                }
+            }
         }
 
+        # Serve other static files (css, js, images) from the web root
         return Plack::App::File->new(root => "$base_dir/web")->call($env);
     };
 };
