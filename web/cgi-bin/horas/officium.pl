@@ -103,7 +103,7 @@ if (!$searchvalue) { $searchvalue = '0'; }
 
 our $caller = strictparam('caller');
 our $expandind = 0;
-
+print "Content-type: text/html; charset=utf-8\n\n" if $officium ne 'Pofficium.pl' ; #<= uncomment for debuggin "Internal Server Errors"
 $setupsave = strictparam('setup');
 loadsetup($setupsave);
 
@@ -124,6 +124,7 @@ $version = check_version($version) || (error("Unknown version: $version") && 'Ru
 $lang1 = check_language($lang1) || (error("Unknown language: $lang1") && 'Latin');
 $lang2 = check_language($lang2) || 'English';
 $langfb = check_language($langfb) || 'English';
+$dioecesis ||= 'Generale';
 
 # option Pius XII psalter changes Latin to Latin-Bea
 if ($psalmvar) {
