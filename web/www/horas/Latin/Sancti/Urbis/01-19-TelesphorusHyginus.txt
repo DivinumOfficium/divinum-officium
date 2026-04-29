@@ -1,0 +1,22 @@
+[Officium]
+Ss. Telesphori et Hygini Pontificum et Martyrum
+
+[Rank]
+;;Duplex;;3;;vide C3b
+
+[Name]
+Telésphori et Hygíni
+(sed communi Summorum Pontificum)
+Telésphorum et Hygínum
+
+[Lectio4]
+@Sancti/Urbis/01-05cc::s/$/~/
+@Sancti/Urbis/01-05cc:Lectio5
+
+[Lectio5]
+@Sancti/Urbis/01-05cc:Lectio6:s/$/~/
+@Sancti/Urbis/01-11cc:Lectio4
+
+[Lectio6]
+@Sancti/Urbis/01-11cc:Lectio5:s/$/~/
+@Sancti/Urbis/01-11cc

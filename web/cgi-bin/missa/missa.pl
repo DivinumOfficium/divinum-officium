@@ -81,7 +81,7 @@ $q = new CGI;
 #get parameters
 getini('missa');    #files, colors
 
-our ($version, $lang1, $lang2, $langfb, $column);
+our ($version, $lang1, $lang2, $langfb, $column, $dioecesis);
 our %translate;     #translation of the skeleton label for 2nd language
 our $testmode;
 our $votive;

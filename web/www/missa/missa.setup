@@ -22,18 +22,20 @@ ttobcccccccnnbbt
 [general]
 $version='Rubrics 1960 - 1960';;
 $lang2='English';;
+$dioecesis='Generale';;
 $votive='Hodie';;
 $rubrics='1';;
 $solemn='0';;
 
 [generalcheck]
-ooobb
+oooobb
 
 [generalc]
 $version1='Rubrics 1960 - 1960';;
 $version2='New Mass';;
 $lang1='Latin';;
 $lang2='Latin';;
+$dioecesis='Generale';;
 
 [generalccheck]
-oooo
+ooooo

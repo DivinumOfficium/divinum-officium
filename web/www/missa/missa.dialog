@@ -19,6 +19,7 @@ Building script~>$building~>Checkbutton~>15;;
 [general]
 Version~>$version~>Optionmenu~>versions;;
 Language 2~>$lang2~>Optionmenu~>languages;;
+Dioecesis~>$dioecesis~>Optionmenu~>dioecesis;;
 Votive~>$votive~>Optionmenu~>votives;;
 
 [generalc]
@@ -32,6 +33,9 @@ Latin,Čeština/Bohemice,Čeština - Schaller/Cesky-Schaller,Deutsch,English,Esp
 
 [versions]
 Tridentine - 1570,Tridentine - 1910,Divino Afflatu - 1939,Divino Afflatu - 1954,Reduced - 1955,Rubrics 1960 - 1960,1965-1967,Rubrics 1960 - 2020 USA/Rubrics 1960 Newcalendar
+
+[dioecesis]
+Calendarium Generale/Generale,Diœcesis Urbis seu Romana/Urbis
 
 [communes]
 C1,Commune Apostolorum, 
@@ -74,7 +78,8 @@ C9,Officium defunctorum,
 C10,Beata Maria in Sabbato,
 C11,Commune Beatae Mariae Virginis,
 C12,Officium parvum Beatae Mariae Virginis
-
+V4,Votiva de S. Joseph Sponso BMV (Feria IV, Missa Adjutor)
+V6,Votiva de Passione DNJC (Feria VI, Missa Humiliavit)
 
 [Rank Sancti]
 1=Simplex
@@ -103,14 +108,14 @@ Commune Plurium Martyrum: Sapientiam Sanctorum/C3a,
 Commune Plurium Martyrum: Salus autem/C3a-1,
 Commune Plurium Martyrum (Summorum Pontificum): Si diligis/C3b,
 Commune Plurium Martyrum Tempore Paschali: Sancti tui/C3p,
-Commune Confessoris Pontificis:Statuit/C4,
-Commune Confessoris Pontificis:Sacerdotes/C4-1,
+Commune Confessoris Pontificis: Statuit/C4,
+Commune Confessoris Pontificis: Sacerdotes/C4-1,
 Commune Doctoris Pontificis: In medio/C4a,
 Commune Confessoris (Summi Pontificis): Si diligis/C4b,
 Commune Confessoris non pontificis: Os justi/C5,
 Commune Confessoris non pontificis: Justus/C5-1,
 Commune Doctoris non Pontificis: In medio/C5a,
-Commune Abbatis: Os iusti (altera)/C5b,
+Commune Abbatis: Os justi (altera)/C5b,
 Commune Unius Virginis et Martyris: Loquebar/C6,
 Commune Unius Virginis et Martyris: Me exspectaverunt/C6-1,
 Commune Unius Virginis tantum: Dilexisti/C6a,
@@ -122,5 +127,7 @@ Commune Plurium non Virginum Martyrum: Me exspectaverunt (altera)/C7b,
 Dedicationis Ecclesiae: Terribilis/C8,
 Defunctorum quotidianis: Requiem aeternam/C9,
 In Festis Beatae Mariae Virginis: Salve Sancte Parens/C11,
+Votiva de S. Joseph Sponso BMV: Adjutor (pro Feria IV)/V4,
+Votiva de Passione DNJC: Humiliavit (pro Feria VI)/V6,
 Votiva in Creatione et Coronatione Papae et in die anniversarii/Coronatio,
 Pro Propagatione Fidei/Propaganda

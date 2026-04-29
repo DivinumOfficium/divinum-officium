@@ -29,10 +29,11 @@ bbtbbbtcccccnnbbbbbttb
 $expand='tota';;
 $version='Rubrics 1960 - 1960';;
 $lang2='English';;
+$dioecesis='Generale';;
 $votive='Hodie';;
 
 [generalcheck]
-oooo
+ooooo
 
 [generalc]
 $expand='tota';;
@@ -40,6 +41,7 @@ $version='Divino Afflatu';;
 $version2='Rubrics 1960 - 1960';;
 $langc='Latin';;
 $accented='plain';;
+$dioecesis='Generale';;
 
 [generalccheck]
-ooooo
+oooooo

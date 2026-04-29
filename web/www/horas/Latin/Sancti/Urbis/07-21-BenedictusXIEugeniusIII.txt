@@ -1,0 +1,30 @@
+[Officium]
+Bb. Benedicti XI et Eugenii III Pontificum et Confessorum
+
+[Rank]
+;;Duplex;;3;;vide aliquibus locis/C4b-3
+
+[Rule]
+vide aliquibus locis/C4b-3
+9 lectiones
+
+[Name]
+Benedícti et Eugénii
+(sed communi Summorum Pontificum)
+Benedíctum et Eugénium
+
+[Oratio]
+Deus, qui beátum Benedíctum Pontíficem benedictionis tuæ grátia ad cælum sublevasti: pópulum tuum, quǽsumus, nova benedictióne sanctifica; et a cunctis malis imminentibus, ejus méritis et précibus, tua virtúte defende.
+$Per Dominum
+
+[Lectio4]
+@Sancti/Urbis/07-07-BenedictusXI:: s/$/~/
+@Sancti/Urbis/07-07-BenedictusXI:Lectio5
+
+[Lectio5]
+@Sancti/Urbis/07-07-BenedictusXI:Lectio6: s/$/~/
+@Sancti/Urbis/07-08-EugeniusIII:Lectio4
+
+[Lectio6]
+@Sancti/Urbis/07-08-EugeniusIII:Lectio5: s/$/~/
+@Sancti/Urbis/07-08-EugeniusIII:Lectio6

@@ -1,0 +1,26 @@
+[Officium]
+Ss. Nicolai I et Deusdedit I Pontificum et Confessorum
+
+[Rank]
+;;Duplex;;3;;vide aliquibus locis/C4b-3
+
+[Rule]
+vide aliquibus locis/C4b-3
+9 lectiones
+
+[Name]
+Nicolái et Deúsdedit
+(sed communi Summorum Pontificum)
+Nicoláum et Deúsdedit
+
+[Lectio4]
+@Sancti/Urbis/11-13-NicolaiI:: s/$/~/
+@Sancti/Urbis/11-13-NicolaiI:Lectio5
+
+[Lectio5]
+@Sancti/Urbis/11-13-NicolaiI:Lectio6: s/$/~/
+@Sancti/Urbis/11-14-Deusdedit:Lectio4
+
+[Lectio6]
+@Sancti/Urbis/11-14-Deusdedit:Lectio5: s/$/~/
+@Sancti/Urbis/11-14-Deusdedit:Lectio6
