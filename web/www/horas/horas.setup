@@ -28,8 +28,8 @@ bbtbbbtcccccnnbbbbbttb
 [general]
 $expand='tota';;
 $version='Rubrics 1960 - 1960';;
-$dioecesis='Generale';;
 $lang2='English';;
+$dioecesis='Generale';;
 $votive='Hodie';;
 
 [generalcheck]
@@ -39,11 +39,9 @@ ooooo
 $expand='tota';;
 $version='Divino Afflatu';;
 $version2='Rubrics 1960 - 1960';;
-$dioecesis='Generale';;
 $langc='Latin';;
-$votive='Hodie';;
 $accented='plain';;
-
+$dioecesis='Generale';;
 
 [generalccheck]
-ooooooo
+oooooo
