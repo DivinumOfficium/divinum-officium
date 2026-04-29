@@ -9,6 +9,18 @@ use File::Basename qw(dirname);
 use lib "/usr/local/lib/site_perl";
 use lib "/usr/share/perl5";
 
+# --- HOTFIX: Fix missing return_405 method in Perl 5.42 / Plack 1.005x ---
+# This prevents the "Can't locate object method" crash in Cloud Run.
+{
+    no strict 'refs';
+    if (!defined &{"Plack::App::CGIBin::return_405"}) {
+        *{"Plack::App::CGIBin::return_405"} = sub {
+            my $self = shift;
+            return [ 405, ['Content-Type' => 'text/plain'], ['405 Method Not Allowed'] ];
+        };
+    }
+}
+
 # Hardcoded for the Docker environment to ensure stability
 my $base_dir = "/var/www";
 
@@ -23,17 +35,17 @@ use lib "/var/www/web";
 builder {
 
 # --- BOT FIREWALL (Hard Block) ---
-    # If the UA matches, we exit immediately with a 403, saving CPU.  Will replace with more refined Cloudflare rules if this becomes a problem.
+    # If the UA matches, we exit immediately with a 403, saving CPU.
     enable sub {
-    my $app = shift;
-    sub {
-        my $env = shift;
-        # Block the specific fake Chrome version seen in the logs
-        if (($env->{HTTP_USER_AGENT} || '') =~ /Chrome\/142\.0/) {
-            return [403, ['Content-Type' => 'text/plain'], ['Forbidden']];
-        }
-        return $app->($env);
-    };
+        my $app = shift;
+        sub {
+            my $env = shift;
+            # Block the specific fake Chrome version seen in the logs
+            if (($env->{HTTP_USER_AGENT} || '') =~ /Chrome\/142\.0/) {
+                return [403, ['Content-Type' => 'text/plain'], ['Forbidden']];
+            }
+            return $app->($env);
+        };
     };
 
     # 1. The Asset Mounts
@@ -62,7 +74,7 @@ builder {
     mount "/cgi-bin/missa" => $missa_app;
     mount "/missa"         => $missa_app;
 
-    # --- NEW: Robots.txt Handler ---
+    # --- Robots.txt Handler ---
     mount "/robots.txt" => sub {
         return [
             200, 
