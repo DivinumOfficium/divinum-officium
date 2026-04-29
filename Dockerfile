@@ -12,7 +12,7 @@ RUN echo "{" > /build/buildinfo && \
     echo "}" >> /build/buildinfo
 
 # --- STAGE 2: Final Container ---
-FROM public.ecr.aws/docker/library/perl:5.42-slim AS final
+FROM public.ecr.aws/docker/library/perl:5.42S-slim AS final
 LABEL maintainer="Thomas Randall <thomas.james.randall@gmail.com>"
 
 # 1. System dependencies (Removed libcap2-bin)
@@ -38,6 +38,7 @@ RUN cpanm --notest \
     Plack::App::CGIBin \
     CGI::Compile \
     CGI::Emulate::PSGI \
+    Plack::App::WrapCGI \
     CGI::Session
 
 # 3. Process management
