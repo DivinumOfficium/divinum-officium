@@ -1,0 +1,63 @@
+@Sancti/07-17
+
+[Rank]
+;;Duplex;;3;;vide C5
+
+[Rule]
+vide C5;mtv
+9 lectiones
+
+[Oratio]
+Deus, qui beátum Aléxium Confessórem tuum in mundi contémptu mirábilem effecísti: præsta quǽsumus; ut, intercessiónis ejus auxílio, fidéles tui terréna despíciant, et ad cæléstia semper aspírent.
+$Per Dominum
+
+[Lectio4]
+Alexius Romanus, Euphemiani senatóris filius, piissime ac liberalissime in paterna domo a teneris annis educatus, assiduo christianarum virtutum exercitio adeo in Jesu Christi amórem exarsit, ut secum statúerit familiae nobilitatem, patrimónii amplitudinem, mundi illecebras et voluptates ejúsdem imitationipostponere. Quare priraa nuptiarum nocte ductam parentum voto conjugem peculiari Dei monitu intactam reliquit.
+
+[Lectio5]
+Clam itaque e domo abscódens, illustrium orbis terrae ecclesiarum peregrinationem suscepit. In quo institúto cum ignotus septemdecim annos transegisset, aliquando apud Edessam Syriæ urbem per imaginem sanctissimee Mariae Virginis ejus nomine divulgato, ut inanem mundi gloriam declinaret, inde navi discessit: mox ad Portum Romanum appúlsus, ac patri, Deo ita disponénte, obviam factus, ab eodem in propria domo tamquam alienus pauper hospitio receptus est.
+
+[Lectio6]
+Hoc in loco, ut nova mundum arte delúderet, durum certamen aggressus, inter uxoris et parentum diutinos questus, inter famulorum contemptum, per decem et septem annos admirandae virtútis et invictae patientiae exemplum se praebuit, soli Deo notus. Post mortem scripto suo agnitus, in quo nomen, genus, et totius vitæ cursus continebantur, Innocentio primo Pontífice Máximo, ad ecclésiam sancti Bonifacii, quae etiam sancti Alexii nomine appellatur, summo honore delatus est, ubi ad hanc usque diem pia fidelium veneratione colitur. Ejus diem festum senatus Romanus, ut débitam erga tam insignem concivem suum pietatem osténderet, a Summo Pontifice Clemente decimo secúndo ritu solemnióri Romæ et in ejus districtu celebrandum impetravit.
+
+[Lectio7]
+@SanctiM/07-18M:Lectio9: s/\!In.*?\n/!Declam. in Evang. hujus verb.\n/
+
+[Lectio8]
+@SanctiM/07-18M:Lectio10:2
+
+[Lectio9]
+@SanctiM/07-18M:Lectio11:2
+
+[Introitus]
+!Gen 12:1
+v. Egrédere de terra tua, et de cognatióne tua, et de domo patris tui, et veni in terram quam monstrábo tibi.
+!Ps 44:11-12
+Oblivíscere pópulum tuum, et domum patris tui: et concupíscet rex decórem tuum.
+&Gloria
+v. Egrédere de terra tua, et de cognatióne tua, et de domo patris tui, et veni in terram quam monstrábo tibi.
+
+[Graduale]
+!Jer 12:7
+Relíqui domum meam.
+!Ps 72:28
+V. Quia bonum mihi est adhærére Deo: pónere in Dómino Deo spem meam.
+Allelúja, allelúja.
+!Ps 5:8; 131:14
+V. Introíbo in domum tuam: hæc réquies mea in sǽculum sǽculi: hic habitábo, quóniam elégi eam. Allelúja.
+
+[Offertorium]
+!Gen 32:9
+Revértere in terram tuam, et in locum nativitátis tuæ: et benefáciam tibi.
+
+[Secreta]
+Propítius esto, Dómine, supplicatiónibus nostris: et, intercessióne beáti Aléxii Confessóris tui, ómnium nostrum ad te corda convérte; ut, a mundánis cupiditátibus expedíti, te solum pura mente sectémur.
+$Per Dominum
+
+[Communio]
+!Job 19:15 et Ps 26:10
+Inquilíni domus meæ et ancíllæ meæ sicut aliénum habuérunt me, et quasi peregrínus fui in óculis eórum: Dóminus autem assúmpsit me.
+
+[Postcommunio]
+Súmpsimus, Dómine, sacri dona mystérii humíliter deprecántes: ut beátum Aléxium Confessórem tuum, quem admirábilem in mundi contémptu prædicámus in terris, intercessórem habére mereámur in cælis.
+$Per Dominum

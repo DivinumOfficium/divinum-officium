@@ -1,0 +1,413 @@
+[Officium]
+Officium votivum de Passione Domini Nostri Jesu Christi
+(sed ad missam)
+Missa votiva de Passione Domini Nostri Jesu Christi
+
+[Rank]
+;;Semiduplex;;2.2
+
+[Rule]
+9 lectiones
+Psalmi Dominica
+Antiphonas horas
+Lectio1 Quad
+Prefatio=Quad5
+
+[Ant Vespera]
+@Tempora/Quad6-4
+
+[Hymnus Vespera]
+Mœrentes óculi spargite lácrimas
+Et luctu resonent íntima córdium,
+Illátas refero Numini ab ímpiis
+Pœnas et fera vúlnera.
+_
+Accincta heu! gladiis turba satellitum.
+Arreptum Dóminum fústibus impetit,
+Nunc cædit cólaphis, nunc quatit horridis
+Divínum Caput íctibus.
+_
+Haud finis sceleri; tráditur improbo
+Christus carnifici; nec mora, barbarus
+In Regem superum non timet, ímpio
+Ausu, vertere déxteram.
+_
+Audíte o Pópuli, Numen amábile,
+Manánte ex húmeris úndique sánguine,
+Lictoris rabidi sústinet impetum,
+Et vocem premit ínnocens.
+_
+Quis non illacrimet! Iam nova condidi:
+Torménta indomitæ Gentis iníquitas.
+Infigit cerebro; proh dolor! efferis
+Sertum vepribus asperum.
+_
+Heu crimen! tráhitur funibus improbis
+Funesti Dóminus supplicii ad locum;
+Illic oppétiit, fúnere spíritum
+Patri restituens suo.
+_
+Passo pro miseris tam fera vúlnera
+In terris resonet débita glória;
+Sacrumque assídue Nomen in æthera
+Humánum genus efferat. 
+Amen.
+
+[Versum 1]
+V. Oblátus est quia ipse vóluit.
+R. Et livóre ejus sanáti sumus.
+
+[Ant 1]
+@Tempora/Quad6-6:Ant Laudes:5
+
+[Oratio]
+Dómine Jesu Christe, qui de cœlis ad terram de sinu Patris descendisti, et sánguinem tuum pretiósum in remissiónem peccatórum nostrórum fudisti: te humíliter deprecámur; ut in die judícii, ad déxteram tuam audíre mereámur: Veníte benedícti: 
+$Qui vivis
+
+[Doxology]
+Sit laus Patri, ac Paráclito,
+Natóque Patris único
+Nostræ dedit qui pródigus
+Prétium salútis sánguinem.
+Amen
+
+[Invit]
+Christum Regem crucifíxum, * Veníte adorémus.
+
+[Hymnus Matutinum]
+Áspice, infami Deus ipse ligno
+Pendet, effuso madidus cruóre;
+Áspice, immiti manus alma clavo
+Finditur alte.
+_
+Hunc, velut pravi scéleris minístrum;
+Inter indignos médium latrones,
+Cerne; crudelis fuit ista gentis
+Dira volúntas.
+_
+Pallet heu! vultus; caput ecce lapsum
+Flectitur; clausis óculis, Redémptor
+Spíritum sacro, méritis onustum,
+Fundit ab ore.
+_
+O cor, æs durum superas, gemendo,
+Ni scelus tergas; tua culpa Christum
+Stipiti affixit; tua culpa morti
+Súbdidit atræ.
+_
+Sit Deo ætérnum decus omne in ævum,
+Qui pius nostri géneris Redémptor,
+Críminis labem miseris nocentem
+Sánguine tersit. 
+Amen.
+
+[AntMatutinum_]
+Multiplicáti sunt qui tríbulant me; multi insúrgunt advérsum me.;;3
+Inimíci mei dixérunt mala mihi: Quando moriétur, et períbit nomen ejus?;;40
+Conculcavérunt me inimíci mei tota die; advérsum me omnes cogitatiónes eórum in malum.;;55
+Fílii hóminum dentes eórum arma et sagíttæ, et lingua eórum gládius acútus.;;56
+Intendérunt arcum rem amáram, ut sagíttent in occúltis immaculátum.;;63
+
+[Ant Matutinum]
+@Tempora/Quad6-5::1
+@:AntMatutinum_:1
+@Tempora/Quad6-5::3
+@:AntMatutinum_:2
+@Tempora/Quad6-5::5
+@:AntMatutinum_:3-5
+@Tempora/Quad6-6::9
+
+[Nocturn 1 Versum]
+@:Versum 1
+
+[Nocturn 2 Versum]
+V. Próprio Fílio suo non pepércit Deus.
+R. Sed pro nobis ómnibus trádidit illum.
+
+[Nocturn 3 Versum]
+V. Factus est obédiens usque ad mortem.
+R. Mortem autem crucis.
+
+[Lectio1]
+De Epistola beati Pauli Apostoli ad Romanos.
+!Rm 5:8-11,17
+8 Comméndat caritátem suam Deus in nobis: quóniam cum adhuc peccatóres essémus, secúndum tempus,
+9 Christus pro nobis mórtuus est: multo ígitur magis nunc iustificáti in sánguine ipsíus, salvi érimus ab ira per ipsum.
+10 Si enim cum inimíci essémus, reconciliáti sumus Deo per mortem Fílii eius: multo magis reconciliáti, salvi érimus in vita ipsíus.
+11 Non solum autem: sed et gloriámur in Deo per Dóminum nostrum Jesum Christum, per quem nunc reconciliatiónem accépimus.
+17 Si enim uníus delícto mors regnávit per unum: multo magis abundántiam grátiæ, et donatiónis, et justítiæ accipiéntes, in vita regnábunt per unum Jesum Christum.
+
+[Responsory1]
+R. Vínea mea elécta, ego te plantávi, dicit Dóminus: et tu facta es mihi nimis amára:
+* Quia parásti crucem Salvatóri tuo.
+V. Pópule meus, quid feci tibi, aut in quo contristávi te? respónde mihi.
+R. Quia parásti crucem Salvatóri tuo.
+
+[Lectio2]
+!Rm 5:18-21
+18 Igitur sicut per uníus delíctum in omnes hómines in condemnatiónem: sic et per uníus justítiam in omnes hómines in justificatiónem vitæ.
+19 Sicut enim per inobediéntiam uníus hóminis, peccatóres constitúti sunt multi: ita et per uníus obeditiónem, justi constituéntur multi.
+20 Lex autem subintrávit ut abundáret delíctum. Ubi autem abundávit delíctum, superabundávit grátia:
+21 ut sicut regnávit peccátum in mortem: ita et grátia regnet per justítiam in vitam ætérnam, per Jesum Christum Dóminum nostrum.
+
+[Responsory2]
+R. Ego edúxi te de Ægýpto, demérso Pharaóne in Mare Rubrum, et ante te præívi in colúmna nubis:
+* Et tu me tradidísti princípibus sacerdótum, et me duxísti ad prætórium Piláti.
+V. Pópule meus, quid feci tibi, aut in quo contristávi te? respónde mihi.
+R. Et tu me tradidísti princípibus sacerdótum, et me duxísti ad prætórium Piláti.
+
+[Lectio3]
+!Rm 6:1-8
+1 Quid ergo dicémus? permanébimus in peccáto ut grátia abúndet?
+2 Absit. Qui enim mórtui sumus peccáto, quómodo adhuc vivémus in illo?
+3 an ignorátis quia quicúmque baptizáti sumus in Christo Jesu, in morte ipsíus baptizáti sumus?
+4 Consepúlti enim sumus cum illo per baptísmum in mortem: ut quómodo Christus surréxit a mórtuis per glóriam Patris, ita et nos in novitáte vitæ ambulémus.
+5 Si enim complantáti facti sumus similitúdini mortis eius: simul et resurrectiónis érimus.
+6 Hoc sciéntes, quia vetus homo noster simul crucifíxus est, ut destruátur corpus peccáti, et ultra non serviámus peccáto.
+7 Qui enim mórtuus est, justificátus est a peccáto.
+8 Si autem mórtui sumus cum Christo, crédimus quia simul étiam vivémus cum Christo.
+
+[Responsory3]
+R. Ego propter te flagellávi Ægýptum cum primogénitis suis: 
+* Et tu me flagellátum tradidísti,
+* Qui tamquam agnus coram tondénte se obmútui, et non apérui os meum. 
+V. Pópule meus, quid feci tibi, aut in quo contristávi te? respónde mihi.
+R. Et tu me flagellátum tradidísti.
+&Gloria
+R. Qui tamquam agnus coram tondénte se obmútui, et non apérui os meum. 
+
+[Lectio4]
+Sermo sancti Bernárdi Abbátis
+!Feria 4. Hebdom. S. Serm. de Passione Domini
+In passióne domínica, fratres, tria specialiter convénit intuéri: opus, modum, causam. Nam in ópere quidem patiéntia, in modo humílitas, in causa cáritas commendatur. Patiéntia autem singuláris, quod vidélicet: cum supra dorsum ejus fabricarent peccatóres; cum sic extenderetur in ligno, ut dinumerarentur ómnia ossa ejus; cum fortíssimum illud propugnaculum, quod custódit Israël, lindique foraretur; cum foderéntur manus ejus et pedes, sicut agnus ad occisionem ductus sit et tamquam ovis coram tondénte non apéruit os suum. Non advérsus Patrem
+murmurans, a quo missus fúerat; non advérsus humánum genus, pro quo, quæ non rapuit, exsolvebat; non dénique vel contra pópulum ipsum peculiárem sibi, a quo pro tantis benefíciis tanta mala recipiebat.
+
+[Responsory4]
+R. Ego propter te Chananæorum reges perciissi, et dedi tibi sceptrum regále:
+* Et tu dedísti cápiti meo spineam corónam, et percussísti arundine caput meum.
+V. Pópule meus, quid feci tibi, aut in quo contristávi te? respónde mihi.
+R. Et tu dedísti cápiti meo spineam corónam, et percussísti arundine caput meum.
+
+[Lectio5]
+Modum ipsum, si diligénter attendas, non modo mitem, sed et húmilem corde cognosces. Nempe in humilitáte judícium ejus sublatum est, cum nec ad tantas blasphemias, nec ad falsissima, quæ sibi objiciebantur crímina respónderet. Vídimus, inquit, eum et non erat ei aspectus, nec speciosum forma præ fíliis hóminum, sed oppróbrium hóminum et tamquam leprosum, novissimum virórum, plane virum dolórum a Deo percussum et humiliátum; ita ut nulla esset ei spécies, neque decor. O novissimum et altíssimum! O húmilem et sublimem! Oppróbrium hóminum et glóriam Angelórum! Nemo illo sublimior, neque humilior. Dénique sputis illitus est, oppróbriis saturatus est, morte turpissima condemnátus est, cum sceleratis deputatus est. Nihílque merebitur vel ista humílitas, quæ hunc habet modum; imo quæ tam est ultra modum? Sicut est patiéntia singuláris, sic et humílitas admirábilis; utráque sine exémplo.
+
+[Responsory5]
+R. Ego duxi te per desértum quadragínta annis, et manna cibavi te:
+* Et tu me cecidisti alapis et flagéllis.
+V. Pópule meus, quid feci tibi, aut in quo contristávi te? respónde mihi.
+R. Et tu me cecidisti alapis et flagéllis.
+
+[Lectio6]
+Utrámque tamen magnífice causa ipsa comméndat, nimírum cáritas est. Propter nímiam enim caritátem suam, qua diléxit nos Deus, ut servum redímeret, nec Pater Fílio, nec sibi Fílius ipse pepércit. Vere nímiam, quia et hæc mensúram excedit, modum superat, plane supereminens univérsis. Majórem, inquit, caritátem nemo habet, quam ut ánimam suam ponat quis pro amícis suis. Tu majórem habuisti Dómine, ponens eam étiam pro inimícis. Cum enim adhuc inimíci essémus, per mortem tuam et tibi reconciliati sumus et Patri. Quænam ergo ália vidébitur esse, vel fuísse, vel fore huic símilis caritáti? Vix pro justo quis móritur. Tu pro injustis passus es, moriens propter delícta nostra, qui venisti justificare gratis peccatóres, servos fácere fratres, captívos cohæredes, éxsules reges.
+
+[Responsory6]
+R. Ego exaltávi te magna virtúte:
+* Et tu me suspendisti in patibulo crucis,
+* In qua expándi manus meas ad pópulum non credentem et contradicentem.
+V. Pópule meus, quid feci tibi, aut in quo contristávi te? respónde mihi.
+R. Et tu me suspendisti in patibulo crucis.
+&Gloria
+R. In qua expándi manus meas ad pópulum non credentem et contradicentem.
+
+[Lectio7]
+Léctio sancti Evangélii secúndum Joánnem.
+!Joann 19:28-35
+In illo témpore: Sciens Jesus, quia ómnia consummáta sunt, ut consummaretur Scriptúra, dixit: Sitio. Et réliqua.
+_
+Homilía sancti Cyrílli Epíscopi Alexandríni
+!Comment. in Joannem. Lib. 12., cap. 35
+Cum truculenter ómnia impietáte Judæórum essent perácta, nec quidquam ad summam crudelitátem deesset, tandem sanctíssima caro Christi naturale quid pátitur. Multis enim, ac váriis dolóribus exsiccata, siti torquétur. Multum enim possunt dolóres ad commovendam sitim; innatum enim calorem exagitantes, vel, quod in profunditate humidum est, consumunt et igneis ardoribus dolentis víscera urunt. Sicut ígitur ceteras passi6nes, sic hanc étiam sponte Christus perpéssus est. Bibere ígitur petit: illi autem ádeo longe ab omni humanitate aberant, ut pro juvante potu atque jucundo nocentem et acerbum attulerint, et humanitátem, qua moveri videbantur, in impietátem converterint. Nam cum petenti dabant, caritátis hábitum suscípere videbantur; sed non est possíbile mentíri Scripturam, in qua ex persóna Christi dícitur: Et dedérunt in escam meam fel, et in siti mea potavérunt me acéto.
+
+[Responsory7]
+R. Ego te potavi aqua salútis de petra: 
+* Et tu me potásti felle et acéto.
+V. Pópule meus, quid feci tibi, aut in quo contristávi te? respónde mihi.
+R. Et tu me potásti felle et acéto.
+
+[Lectio8]
+!ibid., cap. 36
+Cum ergo accepísset Jesus acetum, dixit: Consummatum est: et inclináto cápite trádidit spíritum. Consummatum jam esse Salvátor dicit, quia sæviendi Judæórum potéstas in ipsum per mortem suam términum hábuit. Quid enim non excogitarunt, aut quid supremæ in humanitátis relictum sibi est? Quis cædendi, quis contumeliandi modus non adhíbitus? Mérito ígitur consummatum esse, ait. Cumque tempus jam esset, ut étiam spirítibus apud ínferos prædicáret (venit enim, ut tam vivórum quam mortuórum dominaretur) mortem pro nobis suscépit: et hanc natúræ nostræ própriam passiónem sponte súbiit secúndum carnem, quamvis, ut Deus vita naturaliter sit, ut spoliatis inferis, primítiæ dormientium, et primogénitus (ut Scriptúræ dicunt) mortuórum factus, recursum ad vitam natúræ nostræ largiretur.
+
+[Responsory8]
+R. Ego ante te apérui mare:
+* Et tu aperuísti láncea latus Salvatori tuo,
+* Qui redémit mundum in sánguine suo. 
+V. Pópule meus, quid feci tibi, aut in quo contristávi te? respónde mihi.
+R. Et tu aperuísti láncea latus Salvatori tuo.
+&Gloria
+R. Qui redémit mundum in sánguine suo. 
+
+[Lectio9]
+Inclinávit ígitur caput. Áccidit enim morientibus, vigore carnis jam consumpto et ánima, quæ corpus retinet, abeunte, inclinatio cápitis. Quamóbrem verbis hoc modo usus Evangelísta est. Sic et tradidisse spíritum, a consuetúdine nostra sibi dictum est; multi enim sic exstingui, et mori dicúntur. Quamvis mihi videátur ídeo non simplíciter mórtuum esse, sed tradidisse spíritum Evangelísta dixísse; quia in manus Dei Patris ánimam suam commendávit, ut ipse dixit: Pater! in manus tuas comméndo spíritum meum. Quod nobis magnæ spei fundaméntum, atque oríginem præbet.
+
+[Ant Laudes]
+Fui flagellátus * tota die, et castigátio mea in matutínis.
+Veni ad montem myrrhæ * et ad collem thuris; tamquam agnus ad occisionem ductus, obmútui, et non apérui os meum.
+Fodérunt manus meas * et pedes meos: dinumeravérunt ómnia ossa mea.
+Consolantem me * quæsívi, et non invéni: dedérunt in escam meam fel, et in siti mea potavérunt me acéto.
+Cum accepísset Jesus * acetum, dixit: Consummatum est; et inclináto cápite, emísit spíritum.
+
+[Capitulum Laudes]
+!Philipp 2
+Fratres: Hoc enim sentite in vobis, quod et in Christo Jesu: qui cum in forma Dei esset, non rapínam arbitrátus est esse se æquálem Deo: sed semetípsum exinanívit, formam servi accípiens, in similitúdinem hóminum factus, et hábitu invéntus ut homo. Humiliávit semetípsum, factus obédiens
+usque ad mortem, mortem autem crucis.
+$Deo gratias
+
+[Hymnus Laudes]
+Sævo dolórum turbine
+Iactatur, atris óbrutus
+Pœnis, acerba sustinens,
+Redémptor affixus Cruci.
+_
+Pedes manúsque horribili
+Clavi cruentant vúlnere;
+Cor, vultus, artus, pectora
+Sacro redundant sánguine.
+_
+Flet, orat, et clamans obit;
+Cor Matris ictum concídit;
+Heu Mater! Heu Fili! dolor
+Ingrata frangat pectora.
+_
+Montes, sepúlcra, saxaque
+Scinduntur; arva, flúmina,
+Rupes, et æquor contremunt,
+Templique velum scinditur.
+_
+Sol, luna, cælum, sidera
+Plangunt, et Orbis ingemit.
+O vos viri, vos párvuli,
+Nuptæ, puéllæ, plangite,
+_
+Adstate mœrentes Cruci,
+Pedes beátos ungite,
+Lavate fletu, tergite
+Comis, et ore lambite.
+_
+Tu, caritátis victima,
+Ut nostra tollas crímina,
+Nobis salubri perficis
+Adoptiónem Sánguine.
+_
+Nostra ergo pax et gáudium,
+Sis vita, Iesu, et prǽmium,
+Sis ductor et lux in via,
+Merces, coróna in Pátria. 
+Amen.
+
+[Versum 2]
+V. Ipse vulnerátus est propter iniquitátes nostras.
+R. Et attrítus est propter scélera nostra.
+
+[Ant 2]
+Ad Jesum autem * cum veníssent, ut vidérunt eum jam mórtuum, non fregérunt ejus crura; sed unus mílitum láncea latus ejus apéruit, et contínuo exívit sanguis et aqua.
+
+[Versum Prima]
+Qui pro nobis pati dignátus es.
+
+[Lectio Prima]
+!Is 53
+Generatiónem ejus quis enarrabit? Quia abscissus est de terra vivéntium: propter scelus pópuli mei percússi eum.
+
+[Responsory Breve Tertia]
+R.br. Oblátus est, * Quia ipse vóluit.
+R. Oblátus est, * Quia ipse vóluit.
+V. Et livóre ejus sanáti sumus.
+R. Quia ipse vóluit.
+&Gloria
+R. Oblátus est, * Quia ipse vóluit.
+
+[Versum Tertia]
+@:Nocturn 2 Versum
+
+[Capitulum Sexta]
+!Zach 13
+Quid sunt plagæ istæ in médio mánuum tuárum? Et dicet: His plagatus sum in domo eórum qui diligebant me.
+$Deo gratias
+
+[Responsory Breve Sexta]
+R.br. Próprio Fílio suo * Non pepércit Deus.
+R. Próprio Fílio suo * Non pepércit Deus.
+V. Sed pro nobis ómnibus trádidit illum.
+R. Non pepércit Deus.
+&Gloria
+R. Próprio Fílio suo * Non pepércit Deus.
+
+[Versum Sexta]
+@:Nocturn 3 Versum
+
+[Capitulum Nona]
+@:Lectio Prima
+$Deo gratias
+
+[Responsory Breve Nona]
+R.br. Factus est obédiens: * Usque ad mortem.
+R. Factus est obédiens: * Usque ad mortem.
+V. Mortem autem crucis.
+R. Usque ad mortem.
+&Gloria
+R. Factus est obédiens: * Usque ad mortem.
+
+[Versum Nona]
+@:Versum 2
+
+[Versum 3]
+@:Versum 2
+
+[Ant 3]
+Deponens Joseph * corpus Jesu involvit sindone, et pósuit eum in monuménto exciso. Fuit planctus magnus in illa die; mulíeres autem sedéntes contra sepulchrum dolebant, sicut doleri solet in morte primogeniti.
+
+[Introitus]
+!Philipp 2:8-9
+v. Humiliávit semetípsum Dóminus Jesus Christus usque ad moretemm mortem autem crucis: propter quod et Deus exaltávit illum, et donávit illi nomen, quod est susper omne nomen. (Allelúja, allelúja.)
+!Ps 88:2
+Misericórdias Dómini in ætérnum cantábo: in generatiónem et generatiónem annuntiábo veritátem tuam in ore meo.
+&Gloria
+v. Humiliávit semetípsum Dóminus Jesus Christus usque ad moretemm mortem autem crucis: propter quod et Deus exaltávit illum, et donávit illi nomen, quod est susper omne nomen. (Allelúja, allelúja.)
+
+[Lectio]
+Léctio Zacharíæ Prophétæ.
+!Zach. 12:10-11; 13:6-7
+Hæc dicit Dóminus: Effúndam super domum David et super habitatóres Jerúsalem spíritum grátiæ et precum: et aspícient ad me quem confixérunt, et plangent eum planctu quasi super unigénitum, et dolébunt super eum, ut doléri solet in morte primogéniti. In die illa, magnus erit planctus in Jerúsalem, et dicétur: Quid sunt plagæ istæ in médio mánuum tuárum? Et dicet: His plagátus sum in domo eórum, qui diligébant me. Frámea, suscitáre super pastórem meum, et super virum cohæréntem mihi, dicit Dóminus exercítuum: pércute pastórem, et dispergéntur oves: ait Dóminus omnípotens.
+
+[Graduale]
+!Ps 68:21-22
+Impropérium exspectávit cor meum et misériam: et sustínui, qui simul mecum contristarétur, et non fuit: consolántem me quæsívi, et non invéni.
+V. Dedérunt in escam meam fel, et in siti mea potavérunt me acéto.
+Allelúja, allelúja.
+V. Ave, Rex noster: tu solus nostros es miserátus erróres: Patri obœdiens, ductus es ad crucifigéndum, ut agnus mansúetus ad occisiónem. Allelúja.
+
+[Tractus]
+!Ps 68:21-22
+Impropérium exspectávit cor meum et misériam: et sustínui, qui simul mecum contristarétur, et non fuit: consolántem me quæsívi, et non invéni.
+V. Dedérunt in escam meam fel, et in siti mea potavérunt me acéto.
+!Tractus Is. 53:4-5
+Vere languóres nostros ipse tulit et dolóres nostros ipse portávit.
+V. Et nos putávimus eum quasi leprósum et percússum a Deo et humiliátum.
+V. Ipse autem vulnerátus est propter iniquitátes nostras, attrítus est propter scélera nostra.
+V. Disciplína pacis nostræ super eum: et livóre ejus sanáti sumus.
+
+[GradualeP]
+Allelúja, allelúja.
+V. Ave, Rex noster: tu solus nostros es miserátus erróres: Patri obœdiens, ductus es ad crucifigéndum, ut agnus mansúetus ad occisiónem. Allelúja.
+V. Tibi glória, hosánna: tibi triúmphus et victória: tibi summæ laudis et honóris coróna. Allelúja.
+
+[Evangelium]
+Sequéntia ++ sancti Evangélii secúndum Joánnem
+!Joann 19:28-35
+In illo témpore: Sciens Jesus, quia ómnia consummáta sunt, ut consummarétur Scriptúra, dixit: Sítio. Vas ergo erat pósitum acéto plenum. Illi autem spóngiam plenam acéto, hyssópo circumponéntes, obtulérunt ori ejus. Cum ergo accepísset Jesus acétum, dixit: Consummátum est. Et inclináto cápite trádidit spíritum. Judǽi ergo (quóniam Parascéve erat), ut non remanérent in cruce córpora sábbato (erat enim magnus dies ille sábbati), rogavérunt Pilátum, ut frangeréntur eórum crura et tolleréntur. Venérunt ergo mílites: et primi quidem fregérunt crura et altérius, qui crucifíxus est cum eo. Ad Jesum autem cum veníssent, ut vidérunt eum jam mórtuum, non fregérunt ejus crura, sed unus mílitum láncea latus ejus apéruit, et contínuo exívit sanguis et aqua. Et qui vidit, testimónium perhíbuit: et verum est testimónium ejus.
+
+[Offertorium]
+Insurrexérunt in me viri iníqui: absque misericórdia quæsiérunt me interfícere: et non pepercérunt in fáciem meam spúere: lánceis suis vulneravérunt me, et concússa sunt ómnia ossa mea. (Allelúja.)
+
+[Secreta]
+Oblátum tibi, Dómine, sacrifícium, intercedénte unigéniti Fílii tui passióne, vivíficet nos semper et múniat: 
+$Qui tecum
+
+[Communio]
+!Ps 21:17-18
+Fodérunt manus meas et pedes meos: dinumeravérunt ómnia ossa mea. (Allelúja.)
+
+[Postcommunio]
+Dómine Jesu Christe, Fili Dei vivi, qui hora sexta pro redemptióne mundi Crucis patíbulum ascendísti, et sánguinem tuum pretiósum in remissiónem peccatórum nostrórum fudísti: te humíliter deprecámur; ut, post óbitum nostrum, paradísi jánuas nos gaudénter introíre concédas: 
+$Qui vivis

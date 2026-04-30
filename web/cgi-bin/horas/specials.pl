@@ -5,7 +5,7 @@ use utf8;
 # Divine Office fills the chapters from ordinarium
 $a = 4;
 
-use DivinumOfficium::Directorium qw(dirge);
+use DivinumOfficium::Directorium qw(get_from_directorium dirge);
 
 require "$Bin/specials/capitulis.pl";
 require "$Bin/specials/hymni.pl";
@@ -385,7 +385,7 @@ sub specials {
 
     # Set special conclusion when Office of the Dead follows.
     if ($item =~ /Conclusio/ && $commune !~ /C9/i && $votive !~ /C9/i) {
-      my $dirge = dirge($version, $hora, $day, $month, $year);
+      my $dirge = dirge($version, $hora, $day, $month, $year, $dioecesis);
 
       if (($dirge || ($winner{Rule} =~ /Vesperae Defunctorum/ && $vespera == 3))
         && $hora eq 'Vespera')
@@ -627,7 +627,7 @@ sub getseant {
 
   my $key = sprintf("seant%02i-%02i", $month, $day);
 
-  if (my ($d) = get_from_directorium('stransfer', $version, $year, $key)) {
+  if (my ($d) = get_from_directorium('stransfer', $version, $key, $year)) {
     my %w = %{setupstring($lang, "Tempora/$d.txt")};
     $w = $w{'Ant 3'};
   }

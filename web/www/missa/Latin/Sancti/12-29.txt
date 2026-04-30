@@ -1,11 +1,6 @@
 [Officium]
 S. Thomæ Cantuariensis Episcopi et Martyris
 
-[Name]
-Thomas
-Secreta=Thoma
-Postcommunio=Thoma
-
 [Rank]
 ;;Duplex;;3;;vide C2-1
 (sed rubrica 1570 aut rubrica 1888 aut rubrica 1617)
@@ -19,6 +14,11 @@ Gloria
 Credo
 Prefatio=Nat
 Evangelium non appropriatum
+
+[Name]
+Thomas
+Secreta=Thoma
+Postcommunio=Thoma
 
 [Introitus]
 v. Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre beáti Thomæ Mártyris: de cujus passióne gaudent Angeli et colláudant Fílium Dei.

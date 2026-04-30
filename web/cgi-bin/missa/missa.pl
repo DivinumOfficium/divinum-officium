@@ -81,7 +81,7 @@ $q = new CGI;
 #get parameters
 getini('missa');    #files, colors
 
-our ($version, $lang1, $lang2, $langfb, $column);
+our ($version, $lang1, $lang2, $langfb, $column, $dioecesis);
 our %translate;     #translation of the skeleton label for 2nd language
 our $testmode;
 our $votive;
@@ -135,10 +135,6 @@ $solemn = strictparam('solemn');
 
 $only = ($lang1 =~ /$lang2/) ? 1 : 0;
 
-# save parameters
-precedence();    #fills our hashes et variables
-setsecondcol();
-
 #prepare main pages
 $title = "Sancta Missa";
 
@@ -146,6 +142,10 @@ $title = "Sancta Missa";
 #generate HTML
 $background = ($whitebground) ? ' class="contrastbg"' : '';
 htmlHead($title, 'startup()');
+
+# save parameters
+precedence();    #fills our hashes et variables
+setsecondcol();
 
 if ($command =~ /setup(.*)/is) {
   $pmode = 'setup';

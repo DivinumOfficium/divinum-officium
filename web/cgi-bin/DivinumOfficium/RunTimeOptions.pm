@@ -14,11 +14,11 @@ BEGIN {
 
 sub unequivocal {
   my ($value, $tablename) = @_;
-  return unless $value; # The fix
+
+  return unless $value;
 
   my @values_array = main::getdialog($tablename);
 
-  # now safe because $value is guaranteed to be defined
   my @r = grep {/$value/} @values_array;
 
   if (@r == 1) {

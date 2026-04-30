@@ -1,14 +1,20 @@
 [Officium]
 Sabbato Quattuor Temporum Pentecostes
 
-[Rule]
-no Gloria
-(rubrica 1960) celebranda aut forma longior aut forma brevior
-(rubrica 1960 et missa brevior) LectioL1
-LectioL5
-Sequentia
-Credo
-Prefatio=Spiritu
+[Graduale](missa brevior)
+Alleluia. 
+V. (Kneel.) Come, O Holy Spirit, fill the hearts of Your faithful; and kindle in them the fire of Your love.
+
+[GradualeL1](missa brevior)
+Alleluia.
+!John 6:64
+It is the Spirit that gives life; but the flesh profits nothing.
+_
+#Gloria
+v. Glory be to God on high, and on earth peace to men of good will. We praise Thee. We bless Thee. We adore Thee. We glorify Thee. We give Thee thanks for Thy great glory. O Lord God, heavenly King, God the Father almighty. O Lord Jesus Christ, the only begotten Son. O Lord God, Lamb of God, Son of the Father. Who takest away the sins of the world, have mercy on us. Who takest away the sins of the world, receive our prayer. Who sittest at the right hand of the Father, have mercy on us. For Thou only art holy. Thou only art the Lord. Thou only art most high, O Jesus Christ. Together with the Holy Ghost + in the glory of God the Father. Amen.
+
+[Sequentia](missa longior)
+@Tempora/Pasc7-0:Sequentia::s/Alleluia.//
 
 [Introitus]
 !Rom 5:5.
@@ -28,14 +34,6 @@ $Deo gratias
 Alleluia.
 !John 6:64
 It is the Spirit that gives life; but the flesh profits nothing.
-
-[GradualeL1](missa brevior)
-Alleluia.
-!John 6:64
-It is the Spirit that gives life; but the flesh profits nothing.
-_
-#Gloria
-v. Glory be to God on high, and on earth peace to men of good will. We praise Thee. We bless Thee. We adore Thee. We glorify Thee. We give Thee thanks for Thy great glory. O Lord God, heavenly King, God the Father almighty. O Lord Jesus Christ, the only begotten Son. O Lord God, Lamb of God, Son of the Father. Who takest away the sins of the world, have mercy on us. Who takest away the sins of the world, receive our prayer. Who sittest at the right hand of the Father, have mercy on us. For Thou only art holy. Thou only art the Lord. Thou only art most high, O Jesus Christ. Together with the Holy Ghost + in the glory of God the Father. Amen.
 
 [OratioL1]
 May the Holy Spirit, we beseech You, O Lord, inflame us with that fire which our Lord Jesus Christ cast upon the earth and desired that it be fanned into flame.
@@ -116,15 +114,8 @@ Brethren: Having been justified by faith, let us have peace with God through our
 !Ps 116:1-2
 Praise the Lord, all you nations; glorify Him, all you peoples! For steadfast is His kindness toward us, and the fidelity of the Lord endures forever.
 
-[Graduale](missa brevior)
-Alleluia. 
-V. (Kneel.) Come, O Holy Spirit, fill the hearts of Your faithful; and kindle in them the fire of Your love.
-
 [Sequentia]
 @Tempora/Pasc7-0:Sequentia
-
-[Sequentia](missa longior)
-@Tempora/Pasc7-0:Sequentia::s/Alleluia.//
 
 [Evangelium]
 Continuation + of the Holy Gospel according to Luke

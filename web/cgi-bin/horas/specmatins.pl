@@ -6,7 +6,7 @@ use utf8;
 # Divine Office Matins subroutines
 use FindBin qw($Bin);
 use lib "$Bin/..";
-use DivinumOfficium::Directorium qw(get_from_directorium hymnmerge hymnshift);
+use DivinumOfficium::Directorium qw(get_from_directorium hymnmerge hymnshift hymnshiftmerge);
 
 # Defines ScriptFunc and ScriptShortFunc attributes.
 use DivinumOfficium::Scripting;
@@ -153,15 +153,19 @@ sub hymnusmatutinum {
   my $lang = shift;
   my $hymn = '';
   my $name = 'Hymnus';
+  our $dioecesis;
+
   $name .= checkmtv($version, \%winner) unless (exists($winner{'Hymnus Matutinum'}));
   my ($h, $c) = getproprium("$name Matutinum", $lang, 1);
 
   if ($h) {
-    if (hymnshift($version, $day, $month, $year)) {  # if 1st Vesper hymn has been omitted due to concurrent II. Vespers
+    if ( hymnshift($version, $day, $month, $year, $dioecesis)
+      || hymnshiftmerge($version, $day, $month, $year, $dioecesis))
+    {    # if 1st Vesper hymn has been omitted due to concurrent II. Vespers
       my ($h1, $c1) = getproprium("$name Vespera", $lang, 1);
       $h = $h1;
       setbuild2("Hymnus shifted");
-    } elsif (hymnmerge($version, $day, $month, $year)) {    # if also 2nd Vesper been omitted
+    } elsif (hymnmerge($version, $day, $month, $year, $dioecesis)) {    # if also 2nd Vesper been omitted
       my ($h1, $c1) = getproprium("$name Vespera", $lang, 1);
       $h =~ s/^(v. )//;
       $h1 =~ s/\_(?!.*\_).*/\_\n$h/s;    # find the Doxology as last verse since e.g. Venantius(05-18) has a proper one
@@ -471,7 +475,7 @@ sub cujus_q {
 
   my $j = 0;                                                                             # "Cujus …, ipse"
   if (/(virgin|vidu[aæ]|poenitentis|pœnitentis|C6|C7)/i) { $j += 2 unless /C[2-5]/; }    # "Cujus …, ipsa"
-  if (/(?:ss\.|sanctorum|sociorum)/i) { $j++; }                                          # "Quorum / Quarum"
+  if (/(?:ss\.|bb\.|sanctorum|sociorum)/i) { $j++; }                                          # "Quorum / Quarum"
 
   $j;
 }
@@ -500,7 +504,7 @@ sub get_absolutio_et_benedictiones {
 
         # Replace Benediction 8 (or 11 for Monastic)
       } elsif (
-        $winner{Rank} =~ /(?:\bss?\.|b\.|sanctorum)/i    # sancti
+        $winner{Rank} =~ /(?:\bss?\.|\bbb?\.|sanctorum)/i    # sancti
         || (
           $commune =~ /C11|08-15|09-08|12-08/            # + fest. BMV + 8es
           && $version !~ /Cist/i
@@ -1412,7 +1416,7 @@ sub tedeum_required {
     )
     && $rule !~ /no Te Deum/
     && $commune !~ /C9/
-    && ($winner !~ /(?:Adv|Quad)/ || $version =~ /^Monastic/)
+    && ($winner !~ /^Tempora.*(?:Adv|Quad)/ || $version =~ /^Monastic/)
     && (
          (!$dayofweek && $dayname[1] !~ /(Vigilia)/)
       || ($winner =~ /Sancti|Commune/i && $dayname[1] !~ /(Vigilia)/)           # Commune = Votive
@@ -1598,13 +1602,18 @@ sub ant_matutinum_paschal {
 #*** initiarule($month, $day, $year)
 # returns the key from the proper Str$ver$year table for the date
 sub initiarule {
+
+  our $version, $dioecesis;
   my $month = shift;
   my $day = shift;
   my $year = shift;
 
   my $key = sprintf("%02i-%02i", $month, $day);
 
-  return get_from_directorium('stransfer', $version, $key, $year);
+  my $initfile = get_from_directorium('stransfer', $version, $key, $year, $dioecesis);
+
+  $initfile =~ s/;;.*$//;    # remove dioecesis flag
+  return $initfile;
 }
 
 #*** resolveitable(\%w, $file, $lang)

@@ -1,15 +1,6 @@
 [Officium]
 Sabbato Quattuor temporum Pentecostes
 
-[Rule]
-no Gloria
-(rubrica 1960 et missa brevior) LectioL1
-(rubrica 1960) celebranda aut forma longior aut forma brevior
-LectioL5
-Sequentia
-Credo
-Prefatio=Spiritu
-
 [Comment]
 # Sobota Suchych Dni po Zesłaniu Ducha Świętego
 ! Stacja u Św. Piotra
@@ -17,6 +8,18 @@ Prefatio=Spiritu
 ! Szaty czerwone
 Teksty dzisiejszej Mszy św. pozwalają nam ogarnąć znaczenie obchodu Pięćdziesiątnicy w Starym i Nowym Testamencie. W Starym Testamencie było to dziękczynienie za dary doczesne, w Nowym Testamencie dziękujemy za dar nie stworzony, którym jest Duch Święty. W szczególny sposób podkreśla dzisiejsza Msza św. zamieszkanie Ducha Świętego w naszych duszach (ant. na wejście, 1 kolekta, 1 i 6 lekcja). Jego obecność uśmierza płomień namiętności i rozpala ogień miłości Bożej.
 We Mszy konwentualnej oraz we Mszy ze święceniami odczytuje się wszystkie modlitwy i lekcje. Natomiast w innych Mszach po 1 Alleluja można odmówić Gloria, Dominus vobiscum i drugą modlitwę, po czym bezpośrednio czyta się 6 lekcję, a po niej 2 Alleluja ze Środy Suchych Dni po Zesłaniu Ducha Świętego i Sekwencję Veni, Sancte Spiritus z Alleluja na końcu.
+
+[Graduale](missa brevior)
+Alleluja
+V. (Tu się przyklęka) Przyjdź, Duchu Święty, napełnij serca Twych wiernych i zapal w nich ogień Twojej miłości.
+
+[GradualeL1](missa brevior)
+Alleluja.
+!J 6:64
+Duch jest tym, który ożywia, ciało nic nie pomoże.
+_
+#Gloria
+v. Chwała na wysokości Bogu, a na ziemi pokój ludziom dobrej woli. Chwalimy Cię. Błogosławimy Cię. Wielbimy Cię.Wysławiamy Cię. Dzięki Ci składamy, bo wielka jest chwała Twoja. Panie Boże, Królu nieba, Boże Ojcze wszechmogący. Panie, Synu Jednorodzony, Jezu Chryste. Panie Boże, Baranku Boży, Synu Ojca. Który gładzisz grzechy świata, zmiłuj się nad nami. Który gładzisz grzechy świata, przyjm błaganie nasze. Który siedzisz po prawicy Ojca, zmiłuj się nad nami. Albowiem tylko Tyś jest święty. Tylko Tyś jest Panem. Tylko Tyś Najwyższy, Jezu Chryste. Z Duchem Świętym + w chwale Boga Ojca. Amen.
 
 [Introitus]
 !Rz 5:5
@@ -37,14 +40,6 @@ $Deo gratias
 Alleluja.
 !J 6:64
 Duch jest tym, który ożywia, ciało nic nie pomoże.
-
-[GradualeL1](missa brevior)
-Alleluja.
-!J 6:64
-Duch jest tym, który ożywia, ciało nic nie pomoże.
-_
-#Gloria
-v. Chwała na wysokości Bogu, a na ziemi pokój ludziom dobrej woli. Chwalimy Cię. Błogosławimy Cię. Wielbimy Cię.Wysławiamy Cię. Dzięki Ci składamy, bo wielka jest chwała Twoja. Panie Boże, Królu nieba, Boże Ojcze wszechmogący. Panie, Synu Jednorodzony, Jezu Chryste. Panie Boże, Baranku Boży, Synu Ojca. Który gładzisz grzechy świata, zmiłuj się nad nami. Który gładzisz grzechy świata, przyjm błaganie nasze. Który siedzisz po prawicy Ojca, zmiłuj się nad nami. Albowiem tylko Tyś jest święty. Tylko Tyś jest Panem. Tylko Tyś Najwyższy, Jezu Chryste. Z Duchem Świętym + w chwale Boga Ojca. Amen.
 
 [OratioL1]
 Prosimy Cię, Panie, niech Duch Święty zapali nas tym ogniem, który Pan nasz Jezus Chrystus zesłał na ziemię, pragnąc, by mocno rozgorzał:
@@ -132,10 +127,6 @@ Bracia: Usprawiedliwieni z wiary, pokój wobec Boga zachowajmy przez Pana naszeg
 !Ps 116:1-2
 Chwalcie Pana, wszystkie narody, wysławiajcie Go, wszystkie ludy.
 V. Bo miłosierdzie Jego nad nami utwierdzone, a wierność Pańska trwa na wieki.
-
-[Graduale](missa brevior)
-Alleluja
-V. (Tu się przyklęka) Przyjdź, Duchu Święty, napełnij serca Twych wiernych i zapal w nich ogień Twojej miłości.
 
 [Sequentia]
 @Tempora/Pasc7-0:Sequentia

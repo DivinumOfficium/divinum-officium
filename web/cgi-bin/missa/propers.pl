@@ -335,13 +335,25 @@ sub oratio {
     $retvalue .= $addconclusio;
     return resolve_refs($retvalue, $lang);
   }
-  $rule .= $1 if ($winner =~ /Sancti/i && $duplex < 3 && $scriptura && $scriptura{Rule} =~ /(Suffr.*?=.*?;;)/i);
-  $rule .= $1 if ($winner =~ /Sancti/i && $duplex < 3 && $commemoratio && $commemoratio{Rule} =~ /(Suffr.*?=.*?;;)/i);
+  $rule .= $1
+    if ( $winner =~ /Sancti/i
+      && $duplex < 3
+      && $scriptura
+      && $scriptura{Rule} =~ /(Suffr.*?=.*?;;)/i
+      && $winner{Rule} !~ /Suffr.*;;/
+      && $commemoratio{Rule} !~ /Suffr.*;;/);
+  $rule .= $1
+    if ( $winner =~ /Sancti/i
+      && $duplex < 3
+      && $commemoratio
+      && $commemoratio{Rule} =~ /(Suffr.*?=.*?;;)/i
+      && $winner{Rule} !~ /Suffr.*;;/);
 
   if ($rule =~ /Suffr.*?=(.*?);;/i) {
     my $sf = $1;
+    $sf =~ s/Maria2\;(Ecclesiæ|Papa)\,/Sanctorum;Maria3,$1,/ if ($month > 2 || ($month == 2 && $day > 1));
     my @sf = split(';', $sf);
-    my %sf = %{setupstring($lang, 'Ordo/Suffragium.txt')};
+    my %suffr = %{setupstring($lang, 'Ordo/Suffragium.txt')};
     my ($sf1, @sf1);
 
     foreach $sf (@sf) {
@@ -350,8 +362,10 @@ sub oratio {
       last if $ctotalnum > 2;
       @sf1 = split(',', $sf);
       my $i = ($dayofweek % @sf1);
-      $sf1[$i] = 'Sanctorum' if ($sf1[$i] =~ /Maria2/i && ($month > 2 || ($month == 2 && $day > 1)));
-      $retvalue .= "_\n" . delconclusio($sf{"$type $sf1[$i]"});
+      my $adlibitum = $suffr{'ad libitum'};
+      $adlibitum =~ s/\s*$//;
+      $suffr{"$type $sf1[$i]"} =~ s/(\!.*)$/$1 ($adlibitum)/m if @sf1 == 3;
+      $retvalue .= "_\n" . delconclusio($suffr{"$type $sf1[$i]"});
     }
   }
   $retvalue .= $addconclusio;
@@ -386,7 +400,7 @@ sub setcc {
   if ($c{Rank} =~ /Dominica/i && $code < 10) {
     $key = 10;
   }    #Dominica=10
-  elsif ($c{Rank} =~ /;;Feria/i && $s{Rank} =~ /;;[23456]/) {
+  elsif ($c{Rank} =~ /;;Feria/i && $c{Rank} =~ /;;[23456]/) {
     $key = 50;
   }    #Feria major=50
   elsif ($c{Rank} =~ /infra Octav/i) {
@@ -498,7 +512,7 @@ sub getcommemoratio {
     my $file = $2;
     if ($file =~ /^C[0-9]+$/ && $dayname[0] =~ /Pasc/i) { $file .= 'p'; }
     $file = "$file.txt";
-    if ($file =~ /^C/) { $file = "Commune/$file"; }
+    if ($file =~ /(?:[a-z\s]*\/)?C[0-9]+/) { $file = "Commune/$file"; }
     %c = %{setupstring($lang, $file)};
   } else {
     %$c = {};
@@ -573,7 +587,7 @@ sub getproprium {
     if (
         !$w
       && $commune =~ /Sancti/i
-      && ( $commune{Rank} =~ /;;ex\s*(C[0-9a-z]+)/i
+      && ( $commune{Rank} =~ /;;ex\s*((?:[a-z\s]*\/)?C[0-9a-z]+)/i
         || $commune{Rank} =~ /;;ex\s*(Sancti\/.*?)\s/i)
     ) {
       my $fn = $1;
@@ -606,9 +620,15 @@ sub getfromcommune {
   my $buildflag = shift;
   my $c = '';
 
-  if ($commemoratio{Rule} =~ /ex\s*(C[0-9]+[a-z]*)/) { $c = $1; }
-  if ($commemoratio{Rule} =~ /vide\s*(C[0-9]+[a-z]*|Sancti\/.*?|Tempora\/.*?)(\s|\;)/ && $flag) { $c = $1; }
-  if ($hora =~ /Prima/i && $rule =~ /(ex|vide)\s*(C[0-9]+[a-z]*|Sancti\/.*?|Tempora\/.*?)(\s|\;)/) { $c = $2; }
+  if ($commemoratio{Rule} =~ /ex\s*((?:[a-z\s]*\/)?C[0-9]+[a-z]*)/) { $c = $1; }
+
+  if ($commemoratio{Rule} =~ /vide\s*((?:[a-z\s]*\/)?C[0-9]+[a-z]*|Sancti\/.*?|Tempora\/.*?)(\s|\;)/ && $flag) {
+    $c = $1;
+  }
+
+  if ($hora =~ /Prima/i && $rule =~ /(ex|vide)\s*((?:[a-z\s]*\/)?C[0-9]+[a-z]*|Sancti\/.*?|Tempora\/.*?)(\s|\;)/) {
+    $c = $2;
+  }
   if (!$c) { return; }
 
   if ($c =~ /^C/) {
@@ -704,10 +724,8 @@ sub setalleluia {
 # versions 1956 and 1960 exclude from Ordinarium
 sub checksuffragium {
   if ($rule =~ /no suffragium/i) { return 0; }
-  if (!$dayname[0] || $dayname[0] =~ /Quad5/i) { return 0; }    #christmas, passiontime omit
   if ($winner =~ /sancti/i && $rank >= 3 && $seasonalflag && $winner !~ /01-05/) { return 0; }
   if ($commemoratio =~ /sancti/i && $commemoratio{Rank} =~ /;duplex/i && $seasonalflag) { return 0; }
-  if ($winner{Rank} =~ /octav/i && $winner{Rank} !~ /post Octavam/i) { return 0; }
   if ($duplex > 2 && $version !~ /trident/i && $seasonalflag) { return 0; }
   return 1;
 }
@@ -950,14 +968,32 @@ sub GloriaM {
 }
 
 sub Credo {
+  our @commemoentries;
   my $flag = 1;
-  if ($dayofweek == 0) { $flag = 0; }
-  if ($rank >= 5 && $winner =~ /Sancti/ && $winner{Rank} !~ /Vigil/i) { $flag = 0; }
 
-  if ( ($winner{Rank} =~ /Octav/i && $winner{Rank} !~ /post Octavam/i)
-    || ($commemoratio{Rank} =~ /Octav/i && $commemoratio{Rank} !~ /post Octavam/i && $version !~ /196/))
-  {
+  if (
+       $dayofweek == 0
+    || ($rank >= 5 && $winner =~ /Sancti/ && $winner{Rank} !~ /Vigil/i)
+    || ($winner{Rank} =~ /Octav/i && $winner{Rank} !~ /post Octavam/i && $winner{Rank} !~ /Simplex/i)
+    || ( $commemoratio{Rank} =~ /Octav/i
+      && $commemoratio{Rank} !~ /post Octavam/i
+      && $commemoratio{Rank} !~ /Simplex/i
+      && $version !~ /196/)
+  ) {
     $flag = 0;
+  } elsif (@commemoentries) {
+    foreach my $commemo (@commemoentries) {
+      if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
+      my %c = %{setupstring('Latin', $commemo)};
+
+      if ( (($c{Rank} =~ /Octav/i && $c{Rank} !~ /post Octavam/) || $c{Rule} =~ /Credo/i)
+        && $c{Rank} !~ /Simplex/i
+        && $version !~ /196/)
+      {
+        $flag = 0;
+        last;
+      }
+    }
   }
 
   if ($rule =~ /no Credo/i) {
@@ -1032,6 +1068,22 @@ sub prefatio : ScriptFunc {
 
   my $lang = shift;
   my %pr = %{setupstring($lang, 'Ordo/Prefationes.txt')};
+  my %prw = (columnsel($lang)) ? %winner : %winner2;
+
+  unless ($rule =~ /Prefatio=/i || $communerule =~ /Prefatio/i) {
+    foreach my $commemo (@commemoentries) {
+      if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
+      my %comlat = %{setupstring('Latin', $commemo)};
+      my %com = %{setupstring($lang, $commemo)};
+
+      if ($com{Rule} =~ /Prefatio=([a-z0-9]+)(=.*?;)?/i || $comlat{Rule} =~ /Prefatio=([a-z0-9]+)(=.*?;)?/i) {
+        $rule .= "\nPrefatio=$1$2";
+        $prw{Rule} .= "\nPrefatio=$1$2";
+        last;
+      }
+    }
+  }
+
   my $name =
       ($version =~ /(1955|196)/ && $rule =~ /Prefatio1960=([a-z0-9]+)/i) ? $1
     : ($rule =~ /Prefatio=([a-z0-9]+)/i || $communerule =~ /Prefatio=([a-z0-9]+)/i) ? $1
@@ -1049,7 +1101,7 @@ sub prefatio : ScriptFunc {
     : ($dayofweek == 0) ? 'Trinitate'
     : 'Communis';
   my $pref = $pr{$name};
-  my %prw = (columnsel($lang)) ? %winner : %winner2;
+
   my $rr = $prw{Rule};
 
   if ($rr =~ /prefatio=(.*?)=(.*?);/i) {
@@ -1202,7 +1254,7 @@ sub Ultimaev : ScriptFunc {
     if (!(-e "$datafolder/$lang/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
     %comlat = %{officestring('Latin', $commemo)};
     %com = $lang eq 'Latin' ? %comlat : %{officestring($lang, $commemo)};
-    if (exists($com{Evangelium}) && $com{Rule} !~ /Evangelium non appropriatum/i) { last; }
+    if (exists($com{Evangelium}) && $comlat{Rule} !~ /Evangelium non appropriatum/i) { last; }
   }
 
   # Before Divino Afflatu, only Sundays, Ferias with proper Gospel and Vigil were commemorated
