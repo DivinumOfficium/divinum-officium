@@ -1,0 +1,18 @@
+@Sancti/06-06
+
+[Lectio5]
+@Sancti/06-06:Lectio4:s/Potens ígitur.*//
+
+[Lectio6]
+@Sancti/06-06:Lectio4:s/.*(Potens ígitur)/$1/s s/$/~/ 
+@Sancti/06-06:Lectio5:s/Cum vero.*//
+
+[Lectio7]
+@Sancti/06-06:Lectio5:s/.*(Cum vero)/$1/s s/$/~/
+@Sancti/06-06:Lectio6:s/Archiepíscopus.*//
+
+[Lectio8]
+@Sancti/06-06:Lectio6:s/.*(Archiepíscopus)/$1/
+
+[Responsory8] (tempore paschali)
+@CommuneCist/C5
