@@ -1,88 +1,62 @@
 use strict;
 use warnings;
+use File::Basename;
+use File::Spec;
 use Plack::Builder;
-use Plack::App::WrapCGI;
+use Plack::App::CGIBin;
 use Plack::App::File;
-use Cwd qw(abs_path);
-use File::Basename qw(dirname);
 
-# --- ENVIRONMENT SETUP ---
-my $base_dir = "/var/www";
-my $cgi_dir  = "$base_dir/web/cgi-bin";
+my $app_root = "/var/www";
 
-# Set the library paths for the new $dioecesis / PR #5143 logic
-use lib "/var/www/web/cgi-bin";
-use lib "/var/www/web";
+# Set library paths once at startup, not per-request
+$ENV{PERL5LIB} = join(':', 
+    "$app_root/web/cgi-bin",
+    "$app_root/web/DivinumOfficium"
+);
 
-$ENV{WWWROOT}  = "$base_dir/web";
-$ENV{PERL5LIB} = join(':', $cgi_dir, $ENV{PERL5LIB} || ());
+# PRE-LOAD: These stay in memory (Persistent)
+my $cgi_app = Plack::App::CGIBin->new(
+    root => "$app_root/web/cgi-bin",
+    exec_cb => sub { 1 }
+)->to_app;
 
-# Helper to wrap a CGI script safely
-sub wrap_cgi {
-    my $script_path = shift;
-    return Plack::App::WrapCGI->new(
-        script  => $script_path,
-        execute => 1 
-    )->to_app;
-}
+my $static_app = Plack::App::File->new(root => "$app_root/web")->to_app;
 
 builder {
-    # 1. BOT FIREWALL
+    # 1. Setup Environment once per request
     enable sub {
         my $app = shift;
         sub {
             my $env = shift;
-            if (($env->{HTTP_USER_AGENT} || '') =~ /Chrome\/142\.0/) {
-                return [403, ['Content-Type' => 'text/plain'], ['Forbidden']];
+
+            # Handle Root Redirect
+            if ($env->{PATH_INFO} eq '/' || $env->{PATH_INFO} eq '') {
+                $env->{PATH_INFO} = '/index.html';
             }
+
             return $app->($env);
         };
     };
 
-    # 2. STATIC ASSETS
-    mount "/www" => Plack::App::File->new(root => "$base_dir/web/www")->to_app;
-
-    # 3. EXPLICIT SCRIPT MOUNTS
-    # These handle the primary entry points specifically to avoid any path ambiguity.
-    mount "/cgi-bin/missa/missa.pl"    => wrap_cgi("$cgi_dir/missa/missa.pl");
-    mount "/missa/missa.pl"            => wrap_cgi("$cgi_dir/missa/missa.pl");
-    mount "/cgi-bin/horas/officium.pl" => wrap_cgi("$cgi_dir/horas/officium.pl");
-    mount "/horas/officium.pl"         => wrap_cgi("$cgi_dir/horas/officium.pl");
-
-    # 4. CGI SAFETY NET (CATCH-ALL)
-    # If the app calls a script not explicitly listed (like a popup or helper script), 
-    # this block will attempt to find and wrap it dynamically.
-    mount "/cgi-bin" => sub {
+    # 2. THE DISPATCHER: Routes CGI requests vs static files
+    sub {
         my $env = shift;
-        my $path = $env->{PATH_INFO} || '';
-        my $full_path = "$cgi_dir$path";
 
-        if (-f $full_path && -x $full_path) {
-            return wrap_cgi($full_path)->($env);
-        }
-        return [404, ['Content-Type' => 'text/plain'], ["Script not found: $path"]];
-    };
+        if ($env->{PATH_INFO} =~ m|^/cgi-bin/|) {
+            # Fix CWD for the script so relative file paths in CGI scripts work.
+            # Note: chdir() is global per-worker — acceptable under low concurrency
+            # but may cause intermittent path issues under heavy parallel load.
+            my $script_path = File::Spec->catfile("$app_root/web", $env->{PATH_INFO});
+            my $script_dir = dirname($script_path);
+            chdir($script_dir) if -d $script_dir;
 
-    # 5. ROBOTS.TXT
-    mount "/robots.txt" => sub {
-        return [200, ['Content-Type' => 'text/plain'], ["User-agent: *\nDisallow: /cgi-bin/\n"]];
-    };
+            # Strip '/cgi-bin' so CGIBin finds the file relative to its root
+            $env->{PATH_INFO} =~ s|^/cgi-bin||;
 
-    # 6. ROOT / FALLBACK HANDLER
-    mount "/" => sub {
-        my $env = shift;
-        my $path = $env->{PATH_INFO} || '';
-
-        # Serve index.html if root is requested
-        if ($path eq '/' || $path eq '') {
-            foreach my $file ("$base_dir/web/index.html", "$base_dir/web/www/index.html") {
-                if (-f $file) {
-                    return Plack::App::File->new(file => $file)->call($env);
-                }
-            }
+            return $cgi_app->($env);
         }
 
-        # Serve other static files (css, js, images) from the web root
-        return Plack::App::File->new(root => "$base_dir/web")->call($env);
+        # Otherwise, serve as a static file
+        return $static_app->($env);
     };
 };
