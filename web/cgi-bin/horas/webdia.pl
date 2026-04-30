@@ -568,7 +568,7 @@ sub setcell {
     # Merge Absolutio, Benedictio and remove redundant Amen.
     $text =~
       s/\(([fd])\.\) \(\:\:\)\}(?:\s|\_|\<br\/\>)*\{(?:initial\-style\:0\;\%\%)\(c[34]\) (R\/. A\([gh]\.?\)men)/($1.) (::) $2/gs;
-    $text =~ s/(?<=R\/.\s?A\([defgh]\.?\)men\.\([defgh]\.?\) \(\:\:\))\s?R\/. A\([gh]\.?\)men\.\([gh]\.?\) \(\:\:\)//g;
+    $text =~ s/(R\/.\s?A\([defgh]\.?\)men\.\([defgh]\.?\) \(\:\:\))\s?R\/. A\([gh]\.?\)men\.\([gh]\.?\) \(\:\:\)/$1/g;
 
     # Merge Chapter, Lectio brevis, and Martyrolgium with Deo gratias / Tu autem / Et álibi
     $text =~

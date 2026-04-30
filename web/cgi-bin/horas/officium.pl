@@ -103,7 +103,8 @@ if (!$searchvalue) { $searchvalue = '0'; }
 
 our $caller = strictparam('caller');
 our $expandind = 0;
-print "Content-type: text/html; charset=utf-8\n\n" if $officium ne 'Pofficium.pl' ; #<= uncomment for debuggin "Internal Server Errors"
+
+#print "Content-type: text/html; charset=utf-8\n\n" if $officium ne 'Pofficium.pl';         #<= uncomment for debuggin "Internal Server Errors"
 $setupsave = strictparam('setup');
 loadsetup($setupsave);
 
