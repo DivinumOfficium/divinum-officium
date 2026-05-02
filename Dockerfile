@@ -78,4 +78,4 @@ EXPOSE 8080
 
 ENTRYPOINT ["/usr/local/bin/dumb-init", "--"]
 
-CMD ["starman", "--port", "8080", "--host", "0.0.0.0", "--workers", "10", "--preload-app", "/var/www/app.psgi"]
+CMD ["starman", "--port", "8080", "--host", "0.0.0.0", "--workers", "20", "--preload-app", "/var/www/app.psgi"]
