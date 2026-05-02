@@ -685,7 +685,7 @@ sub postprocess_vr(\$$) {
   return unless $$vr;
 
   if (alleluia_required($dayname[0], $votive)) {
-    my ($versicle, $response) = split(/(?=^\s*R\.)/m, $$vr);
+    my ($versicle, $response) = split(/(?=^\s*R\/?\.)/m, $$vr);
     ensure_single_alleluia(\$versicle, $lang);
     ensure_single_alleluia(\$response, $lang);
     $$vr = $versicle . "\n" . $response;
