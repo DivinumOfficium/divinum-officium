@@ -1,0 +1,77 @@
+@CommuneOP/C7
+
+[Officium]
+Commune non Virginum non Martyrum
+
+[Ant Vespera]
+@Commune/C6:Ant Vespera:3 s/;;.*/.;;112;116;145;146;147/
+
+[Responsory Vespera 1]
+@Commune/C7:Responsory6
+
+[Capitulum Laudes]
+@Commune/C7a
+
+[Invit]
+Laudémus Deum nostrum * In solemnitáte sancæ N..
+
+[Lectio1]
+@Commune/C7a
+
+[Responsory1]
+@CommuneOP/C7:Responsory5
+
+[Lectio2]
+@Commune/C7a
+
+[Lectio3]
+@Commune/C7a
+
+[Lectio4]
+@Commune/C7
+
+[Responsory4]
+R. Accínxit fortitúdine lumbos suos, et roborávit bráchium suum: gustávit et vidit quia bona est negotiátio ejus:
+* Non exstinguétur in nocte lucérna ejus.
+V. Lucérna pédibus meis verbum tuum, et lumen sémitis meis.
+R. Non exstinguétur in nocte lucérna ejus.
+
+[Lectio5]
+@Commune/C7
+
+[Responsory5]
+R. Manum suam apéruit ínopi, et palmas suas exténdit ad páuperem.
+* Non timébit dómui suæ a frigóribus nívium.
+V. Dispersit dedit pauperibus: justitia ejus manet in seculum sæculi.
+R. Non timébit dómui suæ a frigóribus nívium.
+
+[Lectio6]
+@Commune/C7
+
+[Lectio7]
+@Commune/C7
+
+[Lectio8]
+@Commune/C7::s/ cum.*Sic autem/ sed ut sic/ s/;.*//
+
+[Responsory8]
+R. Date ei de fructu mánuum suárum:
+* Et laudent eam in portis ópera ejus.
+V. Labóres mánuum tuárum quia manducábis, beátus es, et bene tibi erit.
+R. Et laudent eam in portis ópera ejus.
+
+[Lectio9]
+@Commune/C7
+
+[Responsory9]
+@Commune/C7:Responsory6
+
+[Capitulum Sexta]
+@Commune/C7a
+
+[Capitulum Nona]
+@Commune/C7a:Lectio Prima
+$Deo gratias
+
+
+

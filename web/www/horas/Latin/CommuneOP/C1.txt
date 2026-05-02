@@ -1,0 +1,63 @@
+@Commune/C1
+
+[Ant Vespera 1]
+@Commune/C1:Ant 3:s/$/;;112;116;145;146;147/
+
+[Responsory Vespera 1]
+R. Vos estis lux mundi, dicit Dóminus:
+* Qui in patiéntia vestra possidébitis ánimas vestras.
+V. Et ego dispóno vobis, sicut dispósuit mihi Pater meus regnum, ut edátis, et bibátis super mensam meam in regno meo.
+R. Qui in patiéntia vestra possidébitis ánimas vestras.
+&Gloria
+R. Possidébitis ánimas vestras.
+
+[Invit]
+@CommuneCist/C1
+
+[HymnusM Matutinum]
+@Commune/C1:HymnusM Vespera
+
+[Ant Matutinum]
+@Commune/C1::1-6
+@CommuneCist/C1::10
+@CommuneCist/C1::11 s/, \S*?$/.;;74/
+@Commune/C1::9 s/, \S*?$/, quæ dedit illis.;;98/
+
+[Responsory5]
+@Commune/C1:Responsory6
+
+[Responsory6]
+@:Responsory Vespera 1
+
+[Responsory7]
+@Commune/C1:Responsory8:1-2
+@Commune/C1:Responsory7:3
+@Commune/C1:Responsory8:4
+
+[Responsory8]
+@CommuneM/C1:Responsory11:1-2
+@Commune/C1p:Responsory8:3  s/, s.*$/./
+@CommuneM/C1:Responsory11:4
+
+[Responsory9]
+R. Gregem tuum, Pastor ætérne, non déseras, sed per beátos Apóstolos tuos
+* Perpétua defensióne custódias.
+V. Prótege, Dómine, pópulum tuum, et Apostolórum tuórum patrocinio confidéntem.
+R. Perpétua defensióne custódias.
+
+[Capitulum Laudes]
+@Commune/C1::s/v. \p{L}+./v./
+
+[HymnusM Laudes]
+@:Hymnus Matutinum:s/Palmas et hymnos débitos/Laudes feréntes débitas/ s/tyránnum cónterit/triúmphat príncipem/ s/In his triúmphat Fílius,.(.*?Spíritus,)/$1\nExsúltat in his Fílius,/s s/\*.*//s
+@:HymnusMMatutinumUS
+Amen.
+
+[Ant Vespera 3]
+@:Ant Laudes:1 s/$/;;109;112;115;125;138/
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+In regeneratióne, cum séderit Fílius hóminis in sede majestátis suæ, sedébitis et vos, judicántes duódecim tribus Israël, dicit Dóminus.
