@@ -24,10 +24,6 @@ De Epístola prima beáti Pauli Apóstoli ad Corínthios
 15 invenímur autem et falsi testes Dei: quóniam testimónium díximus advérsus Deum quod suscitáverit Christum, quem non suscitávit, si mórtui non resúrgunt.
 16 Nam si mórtui non resúrgunt, neque Christus resurréxit.
 
-[Lectio3] (rubrica 196)
-@:Lectio11: s/$/~/
-@:Lectio12
-
 [Lectio4]
 !1Cor 15:17-22
 17 Quod si Christus non resurréxit, vana est fides vestra: adhuc enim estis in peccátis vestris.
@@ -53,14 +49,6 @@ Igitur, fratres, omnes in hac die sancta exsultáre debémus; nullus se a commú
 
 [Lectio9]
 @Tempora/Pasc0-1:Lectio1:s/ De se.*//s
-
-[Lectio10]
-@Tempora/Pasc0-1:Lectio1:s/.*De se/De se/s s/$/~/
-@Tempora/Pasc0-1:Lectio2:s/Prob.ndi.*//s
-
-[Lectio11]
-@Tempora/Pasc0-1:Lectio2:s/.*Prob.ndi/Probándi/s s/$/~/
-@Tempora/Pasc0-1:Lectio3:s/Mensam .*//s
 
 [Lectio12]
 @Tempora/Pasc0-1:Lectio3: s/.* Mensam/Mensam/s

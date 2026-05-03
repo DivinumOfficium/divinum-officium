@@ -7,10 +7,6 @@
 [Lectio5]
 @Tempora/Epi4-0:Lectio4:s/Tot ígitur .*//s
 
-[Lectio6]
-@Tempora/Epi4-0:Lectio4:s/.* Tot ígitur /Tot ígitur /s s/$/~/
-@Tempora/Epi4-0:Lectio5:s/Vanitáti quippe.*//s
-
 [Lectio7]
 @Tempora/Epi4-0:Lectio5:s/.* Vanitáti /Vanitáti /s
 

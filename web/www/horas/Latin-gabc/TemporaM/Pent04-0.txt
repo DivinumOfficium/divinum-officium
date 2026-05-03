@@ -19,10 +19,6 @@
 [Lectio5]
 @Tempora/Pent04-0:Lectio4:s/Ante .*//s
 
-[Lectio6]
-@Tempora/Pent04-0:Lectio4:s/.* Ante /Ante /s s/$/~/
-@Tempora/Pent04-0:Lectio5:s/Alligátus .*//s
-
 [Lectio7]
 @Tempora/Pent04-0:Lectio5:s/.* Alligátus /Alligátus /s
 
@@ -30,12 +26,6 @@
 @Tempora/Pent04-0:Lectio7:s/Ibi adhuc .*//s
 (sed rubrica cisterciensis)
 @Tempora/Pent04-0:Lectio7:s/Pisces .*//s
-
-[Lectio10]
-@Tempora/Pent04-0:Lectio7:s/.* Ibi adhuc /Ibi adhuc /s s/$/~/
-(sed rubrica cisterciensis)
-@Tempora/Pent04-0:Lectio7:s/.* Pisces /Pisces /s s/$/~/
-@Tempora/Pent04-0:Lectio8:s/Et si .*//s
 
 [Lectio11]
 @Tempora/Pent04-0:Lectio8:s/.* Et si /Et si /s

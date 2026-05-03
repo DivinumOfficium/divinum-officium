@@ -32,10 +32,6 @@
 [Lectio9]
 @Tempora/Pent02-0:Lectio7:s/In illis .*//s
 
-[Lectio10]
-@Tempora/Pent02-0:Lectio7:s/.* (In illis)/$1/s s/$/~/
-@Tempora/Pent02-0:Lectio8:s/Proínde .*//s
-
 [Lectio11]
 @Tempora/Pent02-0:Lectio8:s/.* (Proínde)/$1/s
 

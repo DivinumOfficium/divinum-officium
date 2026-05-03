@@ -475,7 +475,7 @@ sub cujus_q {
 
   my $j = 0;                                                                             # "Cujus …, ipse"
   if (/(virgin|vidu[aæ]|poenitentis|pœnitentis|C6|C7)/i) { $j += 2 unless /C[2-5]/; }    # "Cujus …, ipsa"
-  if (/(?:ss\.|bb\.|sanctorum|sociorum)/i) { $j++; }                                          # "Quorum / Quarum"
+  if (/(?:ss\.|bb\.|sanctorum|sociorum)/i) { $j++; }                                     # "Quorum / Quarum"
 
   $j;
 }
@@ -506,7 +506,7 @@ sub get_absolutio_et_benedictiones {
       } elsif (
         $winner{Rank} =~ /(?:\bss?\.|\bbb?\.|sanctorum)/i    # sancti
         || (
-          $commune =~ /C11|08-15|09-08|12-08/            # + fest. BMV + 8es
+          $commune =~ /C11|08-15|09-08|12-08/                # + fest. BMV + 8es
           && $version !~ /Cist/i
         )
       ) {
