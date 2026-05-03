@@ -1,15 +1,3 @@
-[Lectio3]
-@Tempora/091-0:Lectio3:s/-11/-8/ s/9 .*//s
-
-[Lectio4]
-@Tempora/091-0:Lectio3:s/6-/9-/ s/6 .*9 /9 /s
-
-[Lectio7]
-@Tempora/091-0:Lectio6:s/Dicátur .*//s
-
-[Lectio8]
-@Tempora/091-0:Lectio6:s/.* Dicátur /Dicátur /s
-
 [Responsory10]
 R. Numquid supplántat judícium? aut Omnípotens subvértit quodiiustum est? † Líbera me, Dómine, et pone me juxta te:
 * Et cujúsvis manus pugnet contra me.

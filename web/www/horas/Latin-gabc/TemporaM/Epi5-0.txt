@@ -15,19 +15,11 @@
 [Lectio6]
 @Tempora/Epi5-0:Lectio5:s/Ecce .*//s
 
-[Lectio7]
-@Tempora/Epi5-0:Lectio5:s/.* Ecce /Ecce /s s/$/~/
-@Tempora/Epi5-0:Lectio6:s/Quid .*//s
-
 [Lectio8]
 @Tempora/Epi5-0:Lectio6:s/.* Quid /Quid /s
 
 [Lectio10]
 @Tempora/Epi5-0:Lectio8:s/At illi, .*//s
-
-[Lectio11]
-@Tempora/Epi5-0:Lectio8:s/.* At illi, /At illi, /s s/$/~/
-@Tempora/Epi5-0:Lectio9:s/Aliud .*//s
 
 [Lectio12]
 @Tempora/Epi5-0:Lectio9:s/.* Aliud /Aliud /s

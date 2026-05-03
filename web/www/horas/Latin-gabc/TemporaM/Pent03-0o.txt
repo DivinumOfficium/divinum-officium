@@ -16,10 +16,6 @@
 [Lectio5]
 @Tempora/Pent03-0o:Lectio4:s/ Oleum .*//
 
-[Lectio6]
-@Tempora/Pent03-0o:Lectio4:s/.* (?=Oleum)//s s/$/~/
-@Tempora/Pent03-0o:Lectio5:s/ Ungátur .*//
-
 [Lectio7]
 @Tempora/Pent03-0o:Lectio5:s/.* (?=Ungátur)//
 
@@ -27,16 +23,6 @@
 @Tempora/Pent03-0:Lectio7:s/Quamvis .*//s
 (sed rubrica cisterciensis)
 @Tempora/Pent03-0:Lectio7:s/dedignári:.*/dedignári./s
-
-[Lectio10]
-@Tempora/Pent03-0:Lectio7:s/.* Quamvis /Quamvis /s s/$/~/
-(sed rubrica cisterciensis)
-@Tempora/Pent03-0:Lectio7:s/.* sed áliud/Sed áliud/s s/$/~/
-@Tempora/Pent03-0:Lectio8:s/Præpónunt .*//s
-
-[Lectio11]
-@Tempora/Pent03-0:Lectio8:s/.* Præpónunt /Præpónunt /s s/$/~/
-@Tempora/Pent03-0:Lectio9:s/De quorum .*//s
 
 [Lectio12]
 @Tempora/Pent03-0:Lectio9:s/.* De quorum /De quorum /s

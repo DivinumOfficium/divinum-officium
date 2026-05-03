@@ -12,21 +12,6 @@
 {gabc:tenebrae/an--custodi_me_a_laqueo--solesmes_1961.1};;140;;7a
 {gabc:tenebrae/an--considerabam_ad_dexteram--solesmes_1934};;141;;7a
 
-[Oratio Matutinum]
-Réspice, quǽsumus, Dómine, super hanc famíliam tuam, pro qua Dóminus noster Jesus Christus non dubitávit mánibus tradi nocéntium, et crucis subíre torméntum:
-!Et sub silentio concluditur
-$Qui tecum sine cantu
-
-[Oratio Vespera]
-/:sine cantu:/
-v. Christus factus est pro nobis obédiens usque ad mortem.
-$Pater totum secreto
-!aliquantulum altius
-_
-&psalm(50)
-(sed rubrica 1955 aut rubrica 196 omittitur)
-@Tempora/Quad6-4:Oratio Matutinum
-
 [Oratio]
 {(c4) CHri(ffg)stus(f.) *(,) fa(fg)ctus(f) est(f') pro(f) no(ghF'ED.g_[oh:h]e/fg)bis(f.) (;) ob(f)é(hf/gh!jj/kjk)di(jij)ens(h_g) (,) us(h!jjh)que(f.) ad(ixfiH'Gh) mor(f_[oh:h]g_[oh:h]f_[oh:h])tem.(f.) (::)}
 (sed hora vespera)
@@ -37,6 +22,16 @@ _
 &psalm(50)
 (sed rubrica 1955 aut rubrica 196 omittitur)
 @:Oratio Matutinum
+
+[Oratio Vespera]
+/:sine cantu:/
+v. Christus factus est pro nobis obédiens usque ad mortem.
+$Pater totum secreto
+!aliquantulum altius
+_
+&psalm(50)
+(sed rubrica 1955 aut rubrica 196 omittitur)
+@Tempora/Quad6-4:Oratio Matutinum
 
 [Prelude Vespera] (rubrica 1955 aut rubrica 196)
 !Vesperæ ab iis qui Missæ vespertinæ in Cena Domini intersunt, hodie non dicuntur.
@@ -67,66 +62,37 @@ R/. Et(h) de(h) ma(h)nu(h) con(h)tra(h) le(h)gem(h) a(h)gén(h)tis(h) et(i') in(
 {initial-style:0;%%(c4) V/. Ex(h)súr(i')ge,(h) Dó(g')mi(g.)ne.(g.) (::)
 R/. Et(h) jú(h)di(h)ca(h) cau(i')sam(h) me(g.)am.(g.) (::)}
 
-[Lectio1]
-!Lam 1:1-5 
-{gabc:tenebrae/coena/va--incipit_lamentatio_jeremiae_prophetae--solesmes}
-
 [Responsory1]
 {gabc:tenebrae/coena/re--in_monte_oliveti--solesmes_1961}
-
-[Lectio2]
-!Lam 1:6-9
-{gabc:tenebrae/coena/va--vau_et_egressus_est--solesmes}
 
 [Responsory2]
 {gabc:tenebrae/coena/re--tristis_est--solesmes_1961}
 
-[Lectio3]
-!Lam 1:10-14
-{gabc:tenebrae/coena/va--jod_manum_suam_misit--solesmes}
-
 [Responsory3]
 {gabc:tenebrae/coena/re--ecce_vidimus_--solesmes_1961.1}
-
-[Lectio4]
-!In Psalmum 54 ad 1 versum
-{gabc:tenebrae/coena/lesson-cena-4}
 
 [Responsory4]
 {gabc:tenebrae/coena/re--amicus_meus}
 
-[Lectio5]
-{gabc:tenebrae/coena/lesson-cena-5}
-
 [Responsory5]
 {gabc:tenebrae/coena/re--judas_mercator}
-
-[Lectio6]
-{gabc:tenebrae/coena/lesson-cena-6}
 
 [Responsory6]
 {gabc:tenebrae/coena/re--unus_ex_discipulis}
 
-[Lectio7]
-!1 Cor 11:17-22
-{gabc:tenebrae/coena/lesson-cena-7}
-
 [Responsory7]
 {gabc:tenebrae/coena/re--eram_quasi_agnus}
-
-[Lectio8]
-!1 Cor 11:23-26
-{gabc:tenebrae/coena/lesson-cena-8}
 
 [Responsory8]
 {gabc:tenebrae/coena/re--una_hora}
 
-[Lectio9]
-!1 Cor 11:27-34
-{gabc:tenebrae/coena/lesson-cena-9}
-
 [Responsory9]
 {gabc:tenebrae/coena/re--seniores}
+
+[Oratio Matutinum]
+Réspice, quǽsumus, Dómine, super hanc famíliam tuam, pro qua Dóminus noster Jesus Christus non dubitávit mánibus tradi nocéntium, et crucis subíre torméntum:
+!Et sub silentio concluditur
+$Qui tecum sine cantu
 
 [Ant Laudes]
 {gabc:tenebrae/coena/an--justificeris_domine};;;;8G
