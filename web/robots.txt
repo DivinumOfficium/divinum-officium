@@ -1,2 +1,11 @@
 User-agent: *
 Crawl-delay: 10
+
+User-agent: Googlebot
+Disallow: /cgi-bin/
+
+User-agent: bingbot
+Disallow: /cgi-bin/
+
+User-agent: Applebot
+Disallow: /cgi-bin/
