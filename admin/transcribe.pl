@@ -110,7 +110,7 @@ while (my $line = <>) {
   print $line;
 }
 
-if (%larned) {
+if (%learned) {
   print "\n Learned words:\n";
 
   foreach my $entry (sort keys %learned) {
