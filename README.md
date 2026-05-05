@@ -38,7 +38,10 @@ brackets. Please browse the files in the aforementioned directories for
 examples.
 
 ## Architecture: Plack / Starman
+
 To improve performance and reduce server overhead, this project uses **Plack/Starman**. Unlike traditional CGI, which spawns a new process for every request, Starman keeps a persistent pool of workers to handle traffic more efficiently.
+
+For a detailed walkthrough of how the liturgical calendar is generated and served — including the full-year (Totus) ordo cache — see [How the Calendar Works](docs/how-the-calendar-works.md).
 
 ## Docker
 

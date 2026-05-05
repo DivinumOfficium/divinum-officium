@@ -29,6 +29,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libplack-perl \
     perl-modules \
     wget \
+    cron \
+    python3 \
     && rm -rf /var/lib/apt/lists/*
 
 # 2. Plack Stack — pin Plack to 1.0050 which reverts the breaking return_405 change
@@ -58,24 +60,38 @@ WORKDIR /var/www
 # 4. Copy code and set permissions
 COPY web /var/www/web
 COPY app.psgi /var/www/app.psgi
+COPY warm-ordo-cache.sh /usr/local/bin/warm-ordo-cache.sh
 COPY --from=gitinfo /build/buildinfo /var/www/web/buildinfo
 
 RUN find /var/www/web -type d -exec chmod 755 {} + && \
     find /var/www/web -type f -exec chmod 644 {} + && \
     find /var/www/web/cgi-bin -type f -name "*.pl" -exec chmod +x {} + && \
+    chmod +x /usr/local/bin/warm-ordo-cache.sh && \
+    mkdir -p /var/www/web/ordo-cache && \
     chown -R www-data:www-data /var/www
 
 # 5. Internalize URLs
 RUN grep -rl 'divinumofficium.com' /var/www/web | xargs sed -i 's|https\?://divinumofficium\.com/|/|g'
 
-# 6. Clear any debug environment that might have leaked in
+# 6. Set up nightly cron job to warm the ordo cache at 2:00 AM UTC
+# Runs as www-data, logs to /var/log/ordo-cache-warm.log
+RUN echo "0 2 * * * www-data BASE_URL=http://localhost:8080 /usr/local/bin/warm-ordo-cache.sh >> /var/log/ordo-cache-warm.log 2>&1" \
+    > /etc/cron.d/ordo-cache && \
+    chmod 644 /etc/cron.d/ordo-cache
+
+# 7. Clear any debug environment that might have leaked in
 ENV PERL5OPT=""
 ENV PERL5DB=""
 ENV PERLDB_OPTS=""
 
-USER www-data
-EXPOSE 8080
+USER root
 
 ENTRYPOINT ["/usr/local/bin/dumb-init", "--"]
 
-CMD ["starman", "--port", "8080", "--host", "0.0.0.0", "--workers", "20", "--preload-app", "/var/www/app.psgi"]
+# Start cron, then warm the ordo cache in the background after a 15 second
+# delay to allow Starman to fully start before requests are made.
+# Cache will be ready within ~75 seconds of container startup.
+CMD ["/bin/bash", "-c", \
+    "cron && \
+     (sleep 15 && BASE_URL=http://localhost:8080 /usr/local/bin/warm-ordo-cache.sh >> /var/log/ordo-cache-warm.log 2>&1) & \
+     starman --port 8080 --host 0.0.0.0 --workers 10 --preload-app --user www-data --group www-data /var/www/app.psgi"]
