@@ -7,6 +7,13 @@ Una antiphona
 [Ant Vespera]
 Allelúia, * allelúia, allelúia, allelúia, allelúia, allelúia, allelúia, allelúia, allelúia, allelúia.
 
+[Hymnus Vespera]
+@Commune/C1p:HymnusM Vespera:1-2
+@Commune/C1p:Hymnus Vespera:3
+@Commune/C1p:HymnusM Vespera:4-13
+@Commune/C1p:Hymnus Vespera:14
+@Commune/C1p:HymnusM Vespera:15-30
+
 [Versum 1]
 @Commune/C1:Nocturn 3 Versum:s/\.$/, allelúia./gm s/(\s\w+\,)/,$1/
 
@@ -15,6 +22,9 @@ Allelúia, * allelúia, allelúia, allelúia, allelúia, allelúia, allelúia, a
 
 [Invit]
 Allelúia, allelúia, allelúia, * Allelúia, allelúia, allelúia.
+
+[Hymnus Matutinum]
+@:Hymnus Vespera
 
 [Ant Matutinum]
 Allelúia, * allelúia, allelúia, allelúia, allelúia, allelúia, allelúia, allelúia, allelúia.;;18

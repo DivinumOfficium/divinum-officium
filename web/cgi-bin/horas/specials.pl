@@ -722,7 +722,7 @@ sub checksuffragium {
     || ($octavcount || $commemoratio{Rank} =~ /octav/i)
 
     # Cistercian: minor Feasts of Apostles
-    || $version =~ /cist/i && $commune =~ /C1a?$/i
+    || $version =~ /cist/i && $commune =~ /C1a?/i
 
     # Cistercian: S. Augustine and Decollatio S. J.
     || $version =~ /cist/i && $winner =~ /08-2[89]/i
