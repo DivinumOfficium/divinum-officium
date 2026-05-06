@@ -107,6 +107,7 @@ sub geteaster {
 # returns true if year is leap
 sub leapyear {
   my $year = shift;
+  return 0 unless $year;
   !(($year % 4) or !($year % 100) and ($year % 400));
 }
 
@@ -359,5 +360,4 @@ sub date_to_days {
   if ($ret < -141427) { error("Date before the Gregorian Calendar!"); }
   return $ret;
 }
-
 1;
