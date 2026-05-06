@@ -1,7 +1,7 @@
 @Sancti/12-12n
 
-[Hymnus Matutinum]
-@Sancti/12-08::s/Jesu, tibi sit glória/Glória tibi Dómine/ s/almo/Sancto/
+[HymnusM Matutinum]
+@Sancti/12-08:Hymnus Matutinum:s/Jesu, tibi sit glória/Glória tibi Dómine/ s/almo/Sancto/
 
 [Ant Laudes]
 @Sancti/12-12n:Ant Vespera:1 s/;.*//
@@ -21,8 +21,8 @@ R. Inter nébulas glóriæ.
 &Gloria
 R. Quasi arcus refúlgens inter nébulas glóriæ. 
 
-[Hymnus Laudes]
-@Sancti/08-15
+[HymnusM Laudes]
+@Sancti/08-15:Hymnus Laudes
 
 [Versum 2]
 @Commune/C10
