@@ -16,8 +16,9 @@ Ascéndens Christus in altum, captívam duxit captivitátem, dedit dona homínib
 &Gloria
 @Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. / s/,.*/./
 
-[Hymnus Vespera]
-@:HymnusM Matutinum
+[HymnusM Vespera]
+@Tempora/Pasc5-4:Hymnus Matutinum:1-25 s/Cui mors.*ómnium:/Quo mors solúta déperit,\nDatur triúmphum grátiæ.\n_\nScandens tribúnal déxteræ\nPatris, potéstas ómnium\nColláta Jesu cǽlitus,\nQuæ non erat humánitus:/s s/Peccat caro, mundat/Culpat caro, purgat/ s/Sis ipse/Tu esto/ s/prǽmium,/prǽditum:/
+@Tempora/Pasc5-4:Hymnus Matutinum:36-40
 
 [Oratio]
 @TemporaOP/Pasc5-3:Oratio 2
@@ -29,7 +30,7 @@ Ascéndens Christus in altum, captívam duxit captivitátem, dedit dona homínib
 @Psalterium/Special/Minor Special:Ant 4 Asc
 
 [HymnusM Matutinum]
-@:Hymnus Matutinum:!26-35 s/Cui mors.*ómnium:/Quo mors solúta déperit,\nDatur triúmphum grátiæ.\n_\nScandens tribúnal déxteræ\nPatris, potéstas ómnium\nColláta Jesu cǽlitus,\nQuæ non erat humánitus:/s s/Peccat caro, mundat/Culpat caro, purgat/ s/Sis ipse/Tu esto/ s/prǽmium,/prǽditum:/
+@Tempora/Pasc5-4:Hymnus Matutinum:!26-35 s/Cui mors.*ómnium:/Quo mors solúta déperit,\nDatur triúmphum grátiæ.\n_\nScandens tribúnal déxteræ\nPatris, potéstas ómnium\nColláta Jesu cǽlitus,\nQuæ non erat humánitus:/s s/Peccat caro, mundat/Culpat caro, purgat/ s/Sis ipse/Tu esto/ s/prǽmium,/prǽditum:/
 
 [Ant Matutinum]
 @Tempora/Pasc5-4::1-3

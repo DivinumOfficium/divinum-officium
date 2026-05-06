@@ -12,15 +12,10 @@ Psalmi Dominica
 @Sancti/10-DU:Responsory Breve Sexta
 
 [Hymnus Vespera]
-@Sancti/10-DU::1-35
-@Sancti/10-DU:Doxology:s/Jesu, tibi sit glória/Glória tibi, Dómine/ s/almo/Sancto/
-
-[Doxology]
-@Sancti/10-DU::s/Jesu, tibi sit glória/Glória tibi, Dómine/ s/almo/Sancto/
+@Sancti/10-DU
 
 [Hymnus Matutinum]
-@Sancti/10-DU::1-30
-@Sancti/10-DU:Doxology:s/Jesu, tibi sit glória/Glória tibi, Dómine/ s/almo/Sancto/
+@Sancti/10-DU
 
 [AntMatutinumM]
 Hic est Deus, * Deus noster in ætérnum: ipse reget nos in sǽcula.;;47
@@ -96,8 +91,8 @@ R. Et ea, quæ sub ipso erant, replébant templum.
 [Responsory Laudes] (rubrica cisterciensis)
 @Sancti/10-DU:Responsory Breve Tertia
 
-[Hymnus Laudes]
-@Sancti/10-DU::1-30
+[HymnusM Laudes]
+@Sancti/10-DU:Hymnus Laudes:1-30
 @:Doxology
 
 [Responsory TertiaM]
