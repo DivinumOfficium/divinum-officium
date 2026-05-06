@@ -1,8 +1,8 @@
 [Lectio3]
-@Tempora/Pasc2-3::s/-49/-45/ s/ Then.*//s
+@Tempora/Pasc2-3::s/-49/-45a/ s/ Then.*//s
 
 [Lectio4]
-@Tempora/Pasc2-3:Lectio3:s/44-/45-/ s/.* Then/45 Then/s
+@Tempora/Pasc2-3:Lectio3:s/44-/45b-/ s/44.* Then/45 Then/s
 
 [Lectio7]
 @Tempora/Pasc2-3:Lectio6:s/Therefore.*//s
