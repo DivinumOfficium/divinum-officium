@@ -696,12 +696,12 @@ sub setupstring($$%) {
         }
       }
     }
+  }
 
-    # This is left over from rebase
-    # Safeguard [Rank] to allow changing Rank and inherit Officium via section inclusions
-    #if (exists($sections{'Officium'})) {
-    #  $sections{'Officium'} =~ s/\s+$//;
-    #  $sections{'Rank'} =~ s/^.*?;;/$sections{'Officium'};;/;
+  # Safeguard [Rank] to allow changing Rank and inherit Officium via section inclusions
+  if (exists($sections{'Officium'})) {
+    $sections{'Officium'} =~ s/\s+$//;
+    $sections{'Rank'} =~ s/^.*?;;/$sections{'Officium'};;/;
   }
 
   return \%sections;
