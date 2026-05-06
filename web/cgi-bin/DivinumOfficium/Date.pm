@@ -360,5 +360,4 @@ sub date_to_days {
   if ($ret < -141427) { error("Date before the Gregorian Calendar!"); }
   return $ret;
 }
-
 1;
