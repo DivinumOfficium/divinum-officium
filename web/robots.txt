@@ -33,6 +33,7 @@ Disallow: /
 
 User-agent: *
 Crawl-delay: 10
+Disallow: /cgi-bin/
 
 User-agent: Googlebot
 Disallow: /cgi-bin/
