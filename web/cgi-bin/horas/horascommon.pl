@@ -1550,18 +1550,18 @@ sub precedence {
   $date1 =~ s/\//\-/g;
   ($month, $day, $year) = split('-', $date1);
 
-  our $dayofweek = day_of_week($day, $month, $year);
-
   if ($month < 1 || $month > 12 || $day < 1 || $day > 31) {
     error("Wrong date $date1 using today");
-    $date1 = '';
+    $date1 = gettoday();
+    ($month, $day, $year) = split('-', $date1);
   } elsif (sprintf("%04d%02d%02d", $year, $month, $day) < '15821015') {
     error("Date $date1 is before Gregorian calendar using today.");
-    $date1 = '';
+    $date1 = gettoday();
+    ($month, $day, $year) = split('-', $date1);
   }
-
   if (!$date1) { ($month, $day, $year) = split('-', gettoday()); }
 
+  our $dayofweek = day_of_week($day, $month, $year);
   @dayname = (getweek($day, $month, $year, 0, $missa), '', '');
 
   $C10 = 'C10';

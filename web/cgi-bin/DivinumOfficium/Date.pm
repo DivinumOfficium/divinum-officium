@@ -115,6 +115,7 @@ sub leapyear {
 sub day_of_week {
   my ($day, $month, $year) = @_;
 
+  return undef unless $day && $month && $year > 0;
   ($year * 365 + int(($year - 1) / 4) - int(($year - 1) / 100) + int(($year - 1) / 400) - 1 + date_to_ydays(@_)) % 7;
 }
 
