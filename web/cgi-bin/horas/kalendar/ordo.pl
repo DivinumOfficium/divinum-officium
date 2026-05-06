@@ -9,10 +9,18 @@ sub ordo_entry {
   our $dioecesis = $dioe;
   our ($day, $month, $year, $dayname, %scriptura, @commemoentries);
 
-  precedence($date);
+  # Speeding up Ordo by calling occurrence and concurrence directly instead of precedence:
+  our ($winner, $commemoratio, $commemoratio1, $commune, $scriptura);
+  our (%winner, %commemoratio, %commemoratio1, %commune, %scriptura);
+
+  my ($tmonth, $tday, $tyear) = split('-', $date);
+  our $dayofweek = day_of_week($tday, $tmonth, $tyear);
+  @dayname = (getweek($tday, $tmonth, $tyear, 0, 0), '', '');
+  occurrence($tday, $tmonth, $tyear, $version, $dioecesis, 0);    # Replacing precedence()
+  %winner = %{officestring($lang1, $winner, 0)};
 
   my ($h1, $h2) = split(/\s*~\s*/, setheadline());
-  return "$h1, $h2" if $winneronly;    # finish here for ical
+  return "$h1, $h2" if $winneronly;                               # finish here for ical
 
   my ($c1, $c2);
   $c1 = "<B>" . setfont(liturgical_color($h1), $h1) . "</B>" . setfont('1 maroon', "&ensp;$h2");
@@ -77,7 +85,7 @@ sub ordo_entry {
   our $hora;
   my $temphora = $hora;
   $hora = 'Vespera';
-  precedence($date);
+  concurrence($tday, $tmonth, $tyear, $version, $dioecesis);    # Replacing precedence()
   $hora = $temphora;
   my $cv = $dayname[2];
   $cv =~ s/.*?(Vespera|A capitulo|$)/$1/;
