@@ -107,6 +107,7 @@ sub geteaster {
 # returns true if year is leap
 sub leapyear {
   my $year = shift;
+  return 0 unless $year;
   !(($year % 4) or !($year % 100) and ($year % 400));
 }
 
