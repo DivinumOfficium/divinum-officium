@@ -234,16 +234,22 @@ sub occurrence {
       @commemoentries = grep { $_ !~ /02-23o/ } @commemoentries;
     }
 
-    if (checklatinfile(\$sfile) || $tempTransfer !~ /Tempora/) {
-      $sname = "$sfile.txt";
-      if ($caller && $hora =~ /(Matutinum|Laudes)/i) { $sname =~ s/11-02t/11-02/; }    # special for All Souls day
+    if ($sfile && checklatinfile(\$sfile) || $tempTransfer !~ /Tempora/) {
+      if ($sfile) {
+        $sname = "$sfile.txt";
+        if ($caller && $hora =~ /(Matutinum|Laudes)/i) { $sname =~ s/11-02t/11-02/; }    # special for All Souls day
 
-      %saint = %{setupstring('Latin', $sname)};
-      $srank = $saint{Rank};
-      @srank = split(";;", $srank);
+        %saint = %{setupstring('Latin', $sname)};
+        $srank = $saint{Rank};
+        @srank = split(";;", $srank);
+      } else {
+        %saint = ();
+        $srank = '';
+        @srank = ();
+      }
 
       # If a Sanctoral feast has been side as per the temporal cycle, e.g. Spineæ Coronæ DNJC
-      if ($tempTransfer !~ /Tempora/) {
+      if (%tempTransfer && $tempTransfer !~ /Tempora/) {
         $tempTransfer = subdirname('Sancti', $version) . "$tempTransfer";
 
         if (checklatinfile(\$tempTransfer)) {
@@ -1216,7 +1222,7 @@ sub concurrence {
     } elsif ($flcrank == $flrank) {    # "flattend ranks" are equal => a capitulo
       $commemoratio = $winner;
       %commune =
-        ($version =~ /trident/i || $flrank >= 5)
+        ($version =~ /trident/i || $flrank >= 5) && $commune
         ? %{officestring($lang1, $commune, 0)}
         : ();                          #  Commune psalms only in Trident or Dpx I./II.cl
       $tomorrowname[2] = "Commemoratio: $wrank[0]";
@@ -1229,7 +1235,7 @@ sub concurrence {
 
       if ($antecapitulum) {
         my %winner2 = %{officestring($lang2, $winner, 0)};
-        my %commune2 = %{officestring($lang2, $commune, 0)};
+        my %commune2 = $commune ? %{officestring($lang2, $commune, 0)} : ();
         $antecapitulum2 =
             (exists($winner2{'Ant Vespera 3'})) ? $winner2{'Ant Vespera 3'}
           : (exists($winner2{'Ant Vespera'})) ? $winner2{'Ant Vespera'}
