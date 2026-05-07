@@ -1673,17 +1673,6 @@ sub precedence {
     }
   }
 
-  #	if ($commemoratio1) {
-  #		my $flag = ($commemoratio1 =~ /tempora/i && $tvesp == 1) ? 1 : 0;
-  #		%commemoratio1 = %{officestring($lang1, $commemoratio1, $flag)};
-  #
-  #		if ($version =~ /196/ && $winner{Rule} =~ /Festum Domini/ && $commemoratio1{Rule} =~ /Festum Domini/) {
-  #			$commemoratio1 = '';
-  #			%commemoratio1 = {};
-  #			$dayname[2] = '';
-  #		}
-  #	}
-
   # only short readings in monastic summer
   $scriptura = ''
     if ( $version =~ /monastic/i

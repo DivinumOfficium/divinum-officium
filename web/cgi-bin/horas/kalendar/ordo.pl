@@ -12,11 +12,13 @@ sub ordo_entry {
   # Speeding up Ordo by calling occurrence and concurrence directly instead of precedence:
   our ($winner, $commemoratio, $commemoratio1, $commune, $scriptura);
   our (%winner, %commemoratio, %commemoratio1, %commune, %scriptura);
-  our $chantTone;
+  our ($C10, $chantTone);
 
   ($month, $day, $year) = split('-', $date);
   our $dayofweek = day_of_week($day, $month, $year);
   @dayname = (getweek($day, $month, $year, 0, 0), '', '');
+  $C10 = 'C10';
+
   occurrence($day, $month, $year, $version, $dioecesis, 0);    # Replacing precedence()
   %winner = %{officestring($lang1, $winner, 0)};
   setChantTone() if ($lang1 =~ /gabc/i);    # GABC: set ChantTone depending on the solemnity of the day
@@ -42,9 +44,23 @@ sub ordo_entry {
   if ($c2 && @commemoentries > ($winner =~ /Tempora/i && $commemoentries[0] !~ /Tempora/ ? 0 : 1)) {
     for my $ind (($winner =~ /Tempora/i && $commemoentries[0] !~ /Tempora/ ? 0 : 1) .. @commemoentries - 1) {
       my %com = %{setupstring('Latin', "$commemoentries[$ind].txt")};
-      my $comname = $com{Rank};
-      $comname =~ s/\;\;.*//;
-      $c2 .= " <I>&amp; " . setfont(liturgical_color($comname), " $comname") . "</I>" if $comname;
+      my @comRank = split(';;', $com{Rank});
+
+      # 1960: No Commemoration of Festum Domini on Festum Domini and Vigil of Peter and Paul on Sunday
+      last
+        if (
+          $version =~ /196/
+          && ( ($winner{Rule} =~ /Festum Domini/ && $commemoratio{Rule} =~ /Festum Domini/i)
+            || (($commemoratio =~ /06-28r?/i || $winner{Rule} =~ /No Sunday commemoratio/i) && $dayofweek == 0))
+        );
+
+      # No Commemoration of Common Octaves on feasts Duplex I. or II. classis
+      next if ($comRank[2] < 2.1 && $comRank[0] =~ /Infra Octav/i && $rank >= 5 && $winner =~ /Sancti/i);
+
+      $c2 .= " <I>&amp; " . setfont(liturgical_color($comRank[0]), " $comRank[0]") . "</I>" if $comRank[0];
+
+      # Under the 1960 rubrics, on II. cl and higher days, allow at most one commemoration.
+      last if ($version =~ /1960/ && $rank >= 5 || ($rank >= 4 && $winner{Rank} =~ /Feria|Sabbato/i));
     }
   }
 
