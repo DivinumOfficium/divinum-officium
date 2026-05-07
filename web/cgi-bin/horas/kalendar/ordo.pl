@@ -12,15 +12,17 @@ sub ordo_entry {
   # Speeding up Ordo by calling occurrence and concurrence directly instead of precedence:
   our ($winner, $commemoratio, $commemoratio1, $commune, $scriptura);
   our (%winner, %commemoratio, %commemoratio1, %commune, %scriptura);
+  our $chantTone;
 
-  my ($tmonth, $tday, $tyear) = split('-', $date);
-  our $dayofweek = day_of_week($tday, $tmonth, $tyear);
-  @dayname = (getweek($tday, $tmonth, $tyear, 0, 0), '', '');
-  occurrence($tday, $tmonth, $tyear, $version, $dioecesis, 0);    # Replacing precedence()
+  ($month, $day, $year) = split('-', $date);
+  our $dayofweek = day_of_week($day, $month, $year);
+  @dayname = (getweek($day, $month, $year, 0, 0), '', '');
+  occurrence($day, $month, $year, $version, $dioecesis, 0);    # Replacing precedence()
   %winner = %{officestring($lang1, $winner, 0)};
+  setChantTone() if ($lang1 =~ /gabc/i);    # GABC: set ChantTone depending on the solemnity of the day
 
   my ($h1, $h2) = split(/\s*~\s*/, setheadline());
-  return "$h1, $h2" if $winneronly;                               # finish here for ical
+  return "$h1, $h2" if $winneronly;         # finish here for ical
 
   my ($c1, $c2);
   $c1 = "<B>" . setfont(liturgical_color($h1), $h1) . "</B>" . setfont('1 maroon', "&ensp;$h2");
@@ -85,7 +87,7 @@ sub ordo_entry {
   our $hora;
   my $temphora = $hora;
   $hora = 'Vespera';
-  concurrence($tday, $tmonth, $tyear, $version, $dioecesis);    # Replacing precedence()
+  concurrence($day, $month, $year, $version, $dioecesis);    # Replacing precedence()
   $hora = $temphora;
   my $cv = $dayname[2];
   $cv =~ s/.*?(Vespera|A capitulo|$)/$1/;
