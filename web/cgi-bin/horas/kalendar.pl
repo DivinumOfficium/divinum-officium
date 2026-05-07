@@ -107,9 +107,12 @@ our $dioecesis = strictparam('dioecesis') || 'Generale';
 if ($version1 eq $version2) { $version2 = 'Divino Afflatu - 1954'; }
 if ($version1 eq $version2) { $version2 = 'Rubrics 1960 - 1960'; }
 
+# Safeguarding the date argument
 my ($xmonth, $xday, $xyear) = split('-', strictparam($date_arg) || gettoday());
 our $kmonth = strictparam('kmonth') || $xmonth;
 our $kyear = strictparam('kyear') || $xyear;
+$kmonth = $xmonth unless ($kmonth > 0 && $kmonth < 16);
+$kyear = $xyear unless ($kyear > 1582);
 
 my $mode = $kmonth == 15 ? 'kal' : 'ordo';
 require "$Bin/kalendar/$mode.pl";
@@ -118,7 +121,7 @@ if (strictparam('format') eq 'ical') {
   require "$Bin/kalendar/ical.pl";
   ical_output();
 } else {
-  html_output($mode);
+  html_output($kyear, $kmonth, $mode);
 }
 
 # End of program
@@ -190,7 +193,7 @@ sub kalendar_table {
 
 # print html page
 sub html_output {
-  my ($mode) = @_;
+  my ($kyear, $kmonth, $mode) = @_;
 
   print html_header();
   print kalendar_table($kyear, $kmonth, $mode);
