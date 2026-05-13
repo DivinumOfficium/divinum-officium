@@ -14,3 +14,7 @@ standalone/tools/epubgen2/output
 # dev tools
 .idea
 .DS_Store
+
+# Python build environment
+tools/.venv
+__pycache__/

@@ -76,6 +76,10 @@ $viewport_tag
     }
     .contrastbg { background: white; }
     .nigra { color: black; }
+    .lw .gloss { display: none; }
+    body.interlinear .lw .gloss { display: inline; font-size: 0.85em; color: #9b7fc7; }
+    body.interlinear .lw.learned .gloss { display: none; }
+    body.interlinear .lw { cursor: pointer; }
 
 PrintTag
 
@@ -123,12 +127,13 @@ PrintTag
 PrintTag
   }
 
+  my $interlinear_class = (our $interlinear) ? ' class="interlinear"' : '';
   print <<"PrintTag";
   </STYLE>
   <TITLE>$title</TITLE>
 $horasjs
 </HEAD>
-<BODY $onload onresize="layoutChant()">
+<BODY$interlinear_class $onload onresize="layoutChant()">
 <FORM ACTION="$officium" METHOD="post" TARGET="_self">
 PrintTag
 }
@@ -690,6 +695,10 @@ sub setcell {
       push(@ctext2, $text);
     }
     return if $missa || $singleCell;
+  }
+
+  if ((our $interlinear) && $lang =~ /Latin/i && $lang !~ /gabc/i) {
+    $text = apply_interlinear($text);
   }
 
   # Actually Print cell and close it

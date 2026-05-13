@@ -28,6 +28,7 @@ use DivinumOfficium::Main qw(vernaculars liturgical_color);
 use DivinumOfficium::LanguageTextTools
   qw(prayer translate load_languages_data omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
 use DivinumOfficium::RunTimeOptions qw(check_version check_language);
+use DivinumOfficium::Lexicon qw(apply_interlinear);
 
 $error = '';
 $debug = '';
@@ -260,6 +261,12 @@ sub headline {
 <A HREF="#" onclick="callkalendar('kalendar');">Kalendarium</A>
 &ensp;
 <A HREF="#" onclick="pset('parameters')">Options</A>
+&ensp;
+<!-- interlinear controls (re-enable in missa.pl if needed)
+<A HREF="#" id="interlinear-toggle" onclick="toggleInterlinear()">${\(our $interlinear ? 'Interlinear: on' : 'Interlinear: off')}</A>
+&ensp;
+<A HREF="#" onclick="resetLearnedWords()">Reset learned</A>
+-->
 $numsel
 </P>
 PrintTag
@@ -270,6 +277,40 @@ PrintTag
 sub horasjs {
   qq(
 //position
+function applyLearnedWords() {
+  var learned = JSON.parse(localStorage.getItem('learnedWords') || '[]');
+  document.querySelectorAll('.lw').forEach(function(el) {
+    if (learned.indexOf(el.childNodes[0].textContent.toLowerCase()) !== -1) {
+      el.classList.add('learned');
+    }
+  });
+}
+
+function dismissGloss(el) {
+  var word = el.childNodes[0].textContent.toLowerCase();
+  var learned = JSON.parse(localStorage.getItem('learnedWords') || '[]');
+  var idx = learned.indexOf(word);
+  if (idx === -1) {
+    learned.push(word);
+  } else {
+    learned.splice(idx, 1);
+  }
+  localStorage.setItem('learnedWords', JSON.stringify(learned));
+  var hidden = idx === -1;
+  document.querySelectorAll('.lw').forEach(function(e) {
+    if (e.childNodes[0].textContent.toLowerCase() === word) {
+      e.classList.toggle('learned', hidden);
+    }
+  });
+}
+
+function resetLearnedWords() {
+  localStorage.removeItem('learnedWords');
+  document.querySelectorAll('.lw.learned').forEach(function(el) {
+    el.classList.remove('learned');
+  });
+}
+
 function startup() {
   var i = 1;
   while (i <= $searchvalue) {
@@ -277,6 +318,16 @@ function startup() {
     i++;
     if (a) a.scrollIntoView();
   }
+  applyLearnedWords();
+  function handleGlossTap(e) {
+    var lw = e.target.closest && e.target.closest('.lw');
+    if (lw && document.body.classList.contains('interlinear')) {
+      e.preventDefault();
+      dismissGloss(lw);
+    }
+  }
+  document.addEventListener('click', handleGlossTap);
+  document.addEventListener('touchend', handleGlossTap);
 }
 
 //prepare position
@@ -396,6 +447,18 @@ function prevnext(ch) {
 	  if (m > 12) {y++; m = 1;}
   }
   document.forms[0].date.value = m + "-" + d + "-" + y;
+}
+
+function toggleInterlinear() {
+  var on = document.body.classList.toggle('interlinear');
+  var toggle = document.getElementById('interlinear-toggle');
+  if (toggle) { toggle.textContent = on ? 'Interlinear: on' : 'Interlinear: off'; }
+  var form = document.querySelector('form');
+  if (form) {
+    var data = new FormData(form);
+    data.set('interlinear', on ? '1' : '0');
+    fetch(form.action, { method: 'POST', body: data });
+  }
 }
 )
 }
