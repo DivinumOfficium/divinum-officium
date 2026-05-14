@@ -1,5 +1,6 @@
 #!/usr/bin/perl
 use utf8;
+use DivinumOfficium::Lexicon qw(apply_interlinear);
 
 # Name : Laszlo Kiss
 # Date : 01-11-04
