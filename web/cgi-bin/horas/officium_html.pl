@@ -47,6 +47,12 @@ sub headline {
 $date1
 <A HREF="Pofficium.pl?date1=$date1&command=next&version=$version&lang2=$lang2&votive=$votive">
 &uarr;</A>
+&ensp;
+<!-- interlinear controls (re-enable in officium_html.pl if needed)
+<A HREF="#" id="interlinear-toggle" onclick="toggleInterlinear()">${\(our $interlinear ? 'Interlinear: on' : 'Interlinear: off')}</A>
+&ensp;
+<A HREF="#" onclick="resetLearnedWords()">Reset learned</A>
+-->
 PrintTag
   } else {
     $output .= par_c(<<"PrintTag");
@@ -65,6 +71,12 @@ $compone
 <A HREF="#" onclick="callkalendar('kalendar');">Kalendarium</A>
 &ensp;
 <A HREF="#" onclick="pset('parameters')">Options</A>
+&ensp;
+<!-- interlinear controls (re-enable in officium_html.pl if needed)
+<A HREF="#" id="interlinear-toggle" onclick="toggleInterlinear()">${\(our $interlinear ? 'Interlinear: on' : 'Interlinear: off')}</A>
+&ensp;
+<A HREF="#" onclick="resetLearnedWords()">Reset learned</A>
+-->
 PrintTag
   }
 }

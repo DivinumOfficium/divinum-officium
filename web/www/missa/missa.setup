@@ -14,10 +14,11 @@ $screenheight='1024';;
 $textwidth='100';;
 $nofancychars='0';;
 $building='0';;
-$langfb='English'
+$langfb='English';;
+$interlinear='0'
 
 [parameterscheck]
-ttobcccccccnnbbt
+ttobcccccccnnbbtb
 
 [general]
 $version='Rubrics 1960 - 1960';;
