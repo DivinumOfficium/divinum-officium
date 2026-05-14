@@ -15,7 +15,8 @@ $textwidth='100';;
 $nofancychars='0';;
 $building='0';;
 $langfb='English';;
-$interlinear='0'
+$interlinear='0';;
+$glossfont=''
 
 [parameterscheck]
 ttobcccccccnnbbtb

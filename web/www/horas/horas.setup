@@ -21,7 +21,8 @@ $noflexa='1';;
 $langfb='English';;
 $testmode='Proper';;
 $singleCell='1';;
-$interlinear='0'
+$interlinear='0';;
+$glossfont=''
 
 [parameterscheck]
 bbtbbbtcccccnnbbbbbttbb
