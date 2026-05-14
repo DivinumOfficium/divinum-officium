@@ -23,3 +23,17 @@ Add or update the word in `lexicon_overrides.json` using the lowercase inflected
 Use `/` to separate multiple meanings (`"health/salvation"`). Include accented forms if the text uses them (`sǽculum` alongside `saeculum`).
 
 Note: some glosses may be incorrect or missing, particularly for less common inflected forms.
+
+## Compiled lexicon
+
+The server uses `latin_lexicon.storable` (a Storable binary, not in git) rather than parsing the JSON at runtime. Rebuild it from the repo root after any change to either JSON file:
+
+```bash
+perl lexicon-tools/build_lexicon_storable.pl
+```
+
+When using Docker, the storable is baked into the image at build time — changes to the JSON files require a full rebuild:
+
+```bash
+docker compose build && docker compose up -d
+```

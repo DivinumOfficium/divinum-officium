@@ -11,10 +11,14 @@ my $app_root = "/var/www";
 my $cache_dir = "$app_root/web/ordo-cache";
 
 # Set library paths once at startup, not per-request
-$ENV{PERL5LIB} = join(':', 
+$ENV{PERL5LIB} = join(':',
     "$app_root/web/cgi-bin",
     "$app_root/web/DivinumOfficium"
 );
+
+unshift @INC, "$app_root/web/cgi-bin";
+require DivinumOfficium::Lexicon;
+DivinumOfficium::Lexicon::preload();
 
 # PRE-LOAD: These stay in memory (Persistent)
 my $cgi_app = Plack::App::CGIBin->new(
