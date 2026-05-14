@@ -59,9 +59,13 @@ WORKDIR /var/www
 
 # 4. Copy code and set permissions
 COPY web /var/www/web
+COPY lexicon-tools /var/www/lexicon-tools
 COPY app.psgi /var/www/app.psgi
+
 COPY warm-ordo-cache.sh /usr/local/bin/warm-ordo-cache.sh
 COPY --from=gitinfo /build/buildinfo /var/www/web/buildinfo
+
+RUN perl /var/www/lexicon-tools/build_lexicon_storable.pl
 
 RUN find /var/www/web -type d -exec chmod 755 {} + && \
     find /var/www/web -type f -exec chmod 644 {} + && \

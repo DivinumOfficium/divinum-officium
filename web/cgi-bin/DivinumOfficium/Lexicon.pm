@@ -4,10 +4,11 @@ use strict;
 use warnings;
 use utf8;
 use JSON::PP;
+use Storable qw(retrieve);
 use File::Basename;
 use Exporter 'import';
 
-our @EXPORT_OK = qw(apply_interlinear);
+our @EXPORT_OK = qw(apply_interlinear preload);
 
 my %_lexicon;
 my $_loaded = 0;
@@ -15,31 +16,40 @@ my $_loaded = 0;
 sub _load_lexicon {
   return if $_loaded;
   my $base_file = $ENV{LEXICON_PATH}
-    || dirname(__FILE__) . '/data/latin_lexicon.json';
+    || dirname(__FILE__) . '/../../../lexicon-tools/latin_lexicon.json';
   my $override_file = $ENV{LEXICON_OVERRIDE_PATH}
-    || dirname(__FILE__) . '/data/lexicon_overrides.json';
+    || dirname(__FILE__) . '/../../../lexicon-tools/lexicon_overrides.json';
 
-  if (-f $base_file) {
+  (my $storable_file = $base_file) =~ s/\.json$/.storable/;
+
+  if (-f $storable_file) {
+    my $ref = retrieve($storable_file);
+    %_lexicon = %$ref;
+  }
+  elsif (-f $base_file) {
     open(my $fh, '<:raw', $base_file) or die "Cannot open $base_file: $!";
     my $json = do { local $/; <$fh> };
     %_lexicon = %{decode_json($json)};
-  }
 
-  if (-f $override_file) {
-    open(my $fh, '<:raw', $override_file) or die "Cannot open $override_file: $!";
-    my $json = do { local $/; <$fh> };
-    my $overrides = decode_json($json);
+    if (-f $override_file) {
+      open($fh, '<:raw', $override_file) or die "Cannot open $override_file: $!";
+      $json = do { local $/; <$fh> };
+      my $overrides = decode_json($json);
 
-    while (my ($k, $v) = each %$overrides) {
-      if ($v eq '') {
-        delete $_lexicon{$k};
-      } else {
-        $_lexicon{$k} = $v;
+      while (my ($k, $v) = each %$overrides) {
+        if ($v eq '') {
+          delete $_lexicon{$k};
+        }
+        else {
+          $_lexicon{$k} = $v;
+        }
       }
     }
   }
   $_loaded = 1;
 }
+
+sub preload { _load_lexicon() }
 
 sub apply_interlinear {
   my ($text) = @_;

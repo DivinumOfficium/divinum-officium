@@ -18,3 +18,9 @@ standalone/tools/epubgen2/output
 # Python build environment
 tools/.venv
 __pycache__/
+
+# Compiled lexicon (rebuild with: perl lexicon-tools/build_lexicon_storable.pl)
+web/cgi-bin/DivinumOfficium/data/*.storable
+
+# Ordo cache
+web/ordo-cache/
