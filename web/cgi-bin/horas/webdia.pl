@@ -33,6 +33,11 @@ PrintTag
 
   my $is_mobile = ($officium eq 'Pofficium.pl');
   my $viewport_tag = $is_mobile ? '  <META NAME="viewport" CONTENT="width=device-width, initial-scale=0.75">' : '';
+  my $gf = our $glossfont;
+  my $gloss_color = ($gf =~ /(\#[0-9a-fA-F]+)\s*$/ || $gf =~ /([a-zA-Z]+)\s*$/) ? $1 : '';
+  $gloss_color = '' if $gloss_color eq 'italic' || $gloss_color eq 'bold';
+  my $gloss_weight = ($gf =~ /\bbold\b/) ? 'bold' : 'normal';
+  my $gloss_style  = ($gf =~ /\bitalic\b/) ? 'italic' : 'normal';
 
   print <<"PrintTag";
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -77,7 +82,7 @@ $viewport_tag
     .contrastbg { background: white; }
     .nigra { color: black; }
     .lw .gloss { display: none; }
-    body.interlinear .lw .gloss { display: inline; font-size: 0.85em; color: #9b7fc7; }
+    body.interlinear .lw .gloss { display: inline; font-size: 0.85em; color: $gloss_color; font-weight: $gloss_weight; font-style: $gloss_style; }
     body.interlinear .lw.learned .gloss { display: none; }
     body.interlinear .lw { cursor: pointer; }
 

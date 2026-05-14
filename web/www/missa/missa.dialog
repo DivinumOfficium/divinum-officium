@@ -15,7 +15,8 @@ Screen height~>$screenheight~>Entry~>12;;
 Text width percent~>$textwidth~>Entry~>12;;
 Don't use fancy characters~>$nofancychars~>Checkbutton;;
 Building script~>$building~>Checkbutton~>15;;
-Interlinear~>$interlinear~>Checkbutton~>~>17
+Interlinear~>$interlinear~>Checkbutton~>~>17;;
+Interlinear font~>$glossfont~>Entry~>12~>18
 
 [general]
 Version~>$version~>Optionmenu~>versions;;
