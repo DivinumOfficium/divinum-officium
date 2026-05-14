@@ -94,4 +94,4 @@ ENTRYPOINT ["/usr/local/bin/dumb-init", "--"]
 CMD ["/bin/bash", "-c", \
     "cron && \
      (sleep 15 && BASE_URL=http://localhost:8080 /usr/local/bin/warm-ordo-cache.sh >> /var/log/ordo-cache-warm.log 2>&1) & \
-     starman --port 8080 --host 0.0.0.0 --workers 10 --preload-app --user www-data --group www-data /var/www/app.psgi"]
+     starman --port 8080 --host 0.0.0.0 --workers 20 --preload-app --user www-data --group www-data /var/www/app.psgi"]
