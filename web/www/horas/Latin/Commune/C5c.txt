@@ -3,6 +3,10 @@
 [Officium]
 Commune plurium Confessorum non Pontificum
 
+[Oratio]
+Deus, qui nos beatórum N. et N. Confessórum tuórum ánnua solemnitáte lætíficas: concéde propítius; ut quórum natalítiæ cólimus, étiam actiónes imitémur.
+$Per Dominum.
+
 [Lectio1]
 @Commune/C4c
 
@@ -11,10 +15,6 @@ Commune plurium Confessorum non Pontificum
 
 [Lectio3]
 @Commune/C4c
-
-[Oratio]
-Deus, qui nos beatórum N. et N. Confessórum tuórum ánnua solemnitáte lætíficas: concéde propítius; ut quórum natalítiæ cólimus, étiam actiónes imitémur.
-$Per Dominum.
 
 [Lectio4]
 @Commune/C5::s/Beáti N\./Beatórum N. et N./ s/cujus/quórum/ s/ipsíus/ipsiórum/
