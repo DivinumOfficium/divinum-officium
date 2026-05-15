@@ -25,8 +25,7 @@ sub _load_lexicon {
   if (-f $storable_file) {
     my $ref = retrieve($storable_file);
     %_lexicon = %$ref;
-  }
-  elsif (-f $base_file) {
+  } elsif (-f $base_file) {
     open(my $fh, '<:raw', $base_file) or die "Cannot open $base_file: $!";
     my $json = do { local $/; <$fh> };
     %_lexicon = %{decode_json($json)};
@@ -39,8 +38,7 @@ sub _load_lexicon {
       while (my ($k, $v) = each %$overrides) {
         if ($v eq '') {
           delete $_lexicon{$k};
-        }
-        else {
+        } else {
           $_lexicon{$k} = $v;
         }
       }
