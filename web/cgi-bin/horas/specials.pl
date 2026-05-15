@@ -439,7 +439,7 @@ sub setcomment {
 #*** getproprium($name, $lang, $flag, $buidflag)
 # returns $name item from tempora or sancti file
 # if $flag and no item in the proprium checks commune
-# if buildflag is set adds a composing libe to building scrip
+# if buildflag is set adds a composing line to building scrip
 sub getproprium {
 
   my $name = shift;
@@ -624,7 +624,6 @@ sub getantvers {
 sub getseant {
   my $lang = shift;
   my $w = '';
-
   my $key = sprintf("seant%02i-%02i", $month, $day);
 
   if (my ($d) = get_from_directorium('stransfer', $version, $key, $year)) {

@@ -11,6 +11,7 @@ Minores sine Antiphona;
 Capitulum Versum 2;
 Psalmi Dominica
 Prima=53
+(rubrica Bavariae)Matutinum Romanum
 
 [Ant Vespera]
 @:Ant Laudes
@@ -55,6 +56,11 @@ $Pater noster
 
 [Invit]
 Surréxit Dóminus vere, * Allelúja.
+
+[Prelude Matutinum] (rubrica 1955 aut rubrica 1960)
+!Cum solemnis vigiliæ paschalis celebratio locum obtineat officii nocturni dominicæ Resurrectionis, Matutino ejusdem dominicæ Resurrectionis omisso, statim inter Missarum vigiliæ solemnia, post communionem, cantatur Laudes. Officium dominicæ Resurrectionis prosequitur deínde cum Prima.
+_
+!Qui vero solemni vigiliæ paschali non interfuerunt, tenentur dicere Matutinum et Laudes dominicæ Resurrectionis.
 
 [Ant Matutinum]
 Ego sum qui sum, * et consílium meum non est cum ímpiis, sed in lege Dómini volúntas mea est, allelúja.;;1
@@ -120,8 +126,3 @@ Véspere autem sábbati * quæ lucéscit in prima sábbati, venit María Magdal�
 [Ant 43]
 Allelúja, allelúja, allelúja, allelúja.
 Hæc dies * quam fecit Dóminus: exsultémus et lætémur in ea.
-
-[Prelude Matutinum] (rubrica 1955 aut rubrica 1960)
-!Cum solemnis vigiliæ paschalis celebratio locum obtineat officii nocturni dominicæ Resurrectionis, Matutino ejusdem dominicæ Resurrectionis omisso, statim inter Missarum vigiliæ solemnia, post communionem, cantatur Laudes. Officium dominicæ Resurrectionis prosequitur deínde cum Prima.
-_
-!Qui vero solemni vigiliæ paschali non interfuerunt, tenentur dicere Matutinum et Laudes dominicæ Resurrectionis.

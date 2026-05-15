@@ -1145,9 +1145,8 @@ sub lectio : ScriptFunc {
                       #if ($winner{Rule} =~ /9 lectiones/i && exists($winner{Responsory9})) { $cflag = 0; }
                       #if ($winner{Rule} !~ /9 lectiones/i && exists($winner{Responsory3})) { $cflag = 0; }
 
-    if (!$L9winnerflag
-      && $commemoratio =~ /sancti/i
-      && $commemoratio{Rank} =~ /S\. /i
+    if ( !$L9winnerflag
+      && ($commemoratio =~ /sancti/i && $commemoratio{Rank} =~ /S\. /i || $commemoratio{Rank} =~ /infra octavam/i)
       && ($winner !~ /tempora/i || $winner{Rank} < 5)
       && ($version !~ /1955/ || $comrank > 4)
       && $version !~ /Cist/i
@@ -1157,7 +1156,7 @@ sub lectio : ScriptFunc {
       my $ji = exists($w{"Lectio94"}) ? 94 : 93;
       $wc = $w{"Lectio94"};
 
-      if (!$wc && $w{Rank} !~ /infra octav/i && $version !~ /Monastic/) {
+      if (!$wc && $commemoratio{Rank} !~ /infra octav/i && $version !~ /Monastic/) {
         $wc = '';
 
         for ($ji = 4; $ji < 7; $ji++) {
@@ -1174,7 +1173,7 @@ sub lectio : ScriptFunc {
         $jc = 93;
       }
 
-      if (!$wc && $w{Rank} =~ /infra octav/i && $version !~ /Monastic/) {
+      if (!$wc && $commemoratio{Rank} =~ /infra octav/i && $version !~ /Monastic/) {
         if (my $commemo1 = $commemoentries[1]) {
           %w = %{setupstring($lang, $commemo1 . ".txt")};
           $wc = $w{Lectio94} || ($w{Lectio4} . $w{Lectio5} . $w{Lectio6}) || $w{Lectio93};

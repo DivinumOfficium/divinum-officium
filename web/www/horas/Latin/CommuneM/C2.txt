@@ -145,6 +145,9 @@ R. Et laudabúntur omnes recti corde.
 [Lectio12 in 2 loco]
 @Commune/C2:Lectio9 in 2 loco:s/\&teDeum .*//s
 
+[Evangelium in 2 loco]
+@Commune/C2-1
+
 [Lectio9 in 3 loco]
 @Sancti/09-28:Lectio7:s/Ubíque .*//s
 
@@ -158,6 +161,9 @@ R. Et laudabúntur omnes recti corde.
 [Lectio12 in 3 loco]
 @Sancti/09-28:Lectio9:s/\&teDeum .*//s
 
+[Evangelium in 3 loco]
+@Commune/C2a
+
 [Lectio9 in 4 loco]
 @Commune/C2:Lectio7 in 4 loco:s/Et quod .*//s
 
@@ -169,12 +175,6 @@ R. Et laudabúntur omnes recti corde.
 
 [Lectio12 in 4 loco]
 @Commune/C2:Lectio9 in 4 loco:s/\&teDeum .*//s
-
-[Evangelium in 2 loco]
-@Commune/C2-1
-
-[Evangelium in 3 loco]
-@Commune/C2a
 
 [Evangelium in 4 loco]
 @Commune/C2a-1:Evangelium

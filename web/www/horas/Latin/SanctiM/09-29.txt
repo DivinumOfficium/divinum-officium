@@ -1,3 +1,6 @@
+@Sancti/05-08
+
+[Officium]
 @Sancti/09-29
 
 [Rule]
@@ -7,17 +10,17 @@ Psalmi Dominica
 [Ant Vespera] (rubrica cisterciensis)
 @Sancti/09-29
 
-[Responsory Vespera 1] (rubrica Barroux)
-@Sancti/05-08:Responsory3
-
 [Responsory Vespera] (rubrica cisterciensis)
 @Sancti/08-06:Responsory Laudes
 
-[HymnusM Matutinum]
+[Responsory Vespera 1] (rubrica Barroux)
+@Sancti/05-08:Responsory3
+
+[Hymnus Matutinum]
 @:HymnusM Vespera
 
 [AntMatutinumM]
-Sancte Míchaël Archángele, defénde nos in proélio, * ut non pereámus in treméndo judício, allelúja.;;89
+Sancte Míchaël Archángele, defénde nos in prœ́lio, * ut non pereámus in treméndo judício, allelúja.;;89
 Stetit Angelus juxta aram templi, * habens thuríbulum áureum in manu sua.;;98
 Benedícite Dóminum, omnes Angeli ejus: * benedícite, minístri ejus, qui fácitis voluntátem ejus: † benedícite Dóminum.;;102
 
@@ -113,7 +116,7 @@ R. Grátia Dei ille victor in cælis éxstitit et ille hostis antíquus pátuit 
 @Sancti/05-08:Responsory Breve Tertia
 
 [Responsory TertiaM]
-@Sancti/05-08:Versum 1
+@:Versum 1
 (sed rubrica cisterciensis)
 @Sancti/05-08:Nocturn 1 Versum:s/, all?el[uú][ij]a//g
 
@@ -123,7 +126,7 @@ R. Grátia Dei ille victor in cælis éxstitit et ille hostis antíquus pátuit 
 @Sancti/05-08:Nocturn 2 Versum:s/, all?el[uú][ij]a//g
 
 [Responsory NonaM]
-@Sancti/05-08:Versum 3
+@:Versum 3
 (sed rubrica cisterciensis)
 @Sancti/05-08:Nocturn 3 Versum:s/, all?el[uú][ij]a//g
 
