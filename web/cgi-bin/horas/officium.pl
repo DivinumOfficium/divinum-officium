@@ -120,6 +120,7 @@ set_runtime_options('general' . ($Ck ? 'c' : ''));    #$expand, $version, $lang2
 set_runtime_options('parameters');                    # priest, lang1 ... etc
 
 our $interlinear = 0 unless $setupsave || strictparam('interlinear') ne '';
+$glossfont = '' if $glossfont =~ /^[btonc]+$/;
 
 if ($command =~ s/changeparameters//) { getsetupvalue($command); }
 

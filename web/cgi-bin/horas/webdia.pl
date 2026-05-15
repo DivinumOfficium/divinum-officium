@@ -394,6 +394,7 @@ sub getcookies {
       # $error = "Cookie $cname mismatch $name need $check has $param<br/>== $sti[-1]";
       return 0;
     }
+    pop @sti;    # remove check string so it never maps to a param slot
     setsetup($name, @sti);
     return 1;
   }
