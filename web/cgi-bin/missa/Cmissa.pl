@@ -111,6 +111,8 @@ if (!$setupsave) {
 set_runtime_options('generalc');      #$expand, $version, $lang2
 set_runtime_options('parameters');    # priest, lang1 ... etc
 
+our $interlinear = 0 unless $setupsave || strictparam('interlinear') ne '';
+
 if ($command eq 'changeparameters') { getsetupvalue($command); }
 
 #print "Content-type: text/html; charset=utf-8\n\n"; #<= uncomment for debuggin "Internal Server Errors"
