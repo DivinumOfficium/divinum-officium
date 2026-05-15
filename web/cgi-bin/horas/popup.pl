@@ -86,6 +86,9 @@ if (!$setupsave) {
 set_runtime_options('general');       #$expand, $version, $lang2
 set_runtime_options('parameters');    # priest, lang1 ... etc
 
+our $interlinear = 0 unless $setupsave || strictparam('interlinear') ne '';
+$glossfont = '' if $glossfont =~ /^[btonc]+$/;
+
 $popup = strictparam('popup');
 
 if ($popup !~ /^[\$\&][\&\w ]+$/) {
