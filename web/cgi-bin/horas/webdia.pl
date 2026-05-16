@@ -707,8 +707,11 @@ sub setcell {
     return if $missa || $singleCell;
   }
 
-  if ((our $interlinear) && (our $interlinear) ne 'disabled'
-      && $lang =~ /Latin/i && $lang !~ /gabc/i) {
+  if ( (our $interlinear)
+    && (our $interlinear) ne 'disabled'
+    && $lang =~ /Latin/i
+    && $lang !~ /gabc/i)
+  {
     $text = apply_interlinear($text);
   }
 
