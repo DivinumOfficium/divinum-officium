@@ -236,7 +236,11 @@ document.addEventListener('DOMContentLoaded', function() {
   applyLearnedWords();
   function handleGlossTap(e) {
     var lw = e.target.closest && e.target.closest('.lw');
-    if (lw && document.body.classList.contains('interlinear')) {
+    if (!lw) return;
+    if (document.body.classList.contains('interlinear-hint')) {
+      e.preventDefault();
+      lw.classList.toggle('revealed');
+    } else if (document.body.classList.contains('interlinear-all')) {
       e.preventDefault();
       dismissGloss(lw);
     }

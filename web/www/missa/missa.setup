@@ -15,11 +15,11 @@ $textwidth='100';;
 $nofancychars='0';;
 $building='0';;
 $langfb='English';;
-$interlinear='0';;
+$interlinear='disabled';;
 $glossfont=''
 
 [parameterscheck]
-ttobcccccccnnbbtbt
+ttobcccccccnnbbtot
 
 [general]
 $version='Rubrics 1960 - 1960';;

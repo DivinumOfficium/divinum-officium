@@ -21,11 +21,11 @@ $noflexa='1';;
 $langfb='English';;
 $testmode='Proper';;
 $singleCell='1';;
-$interlinear='0';;
+$interlinear='disabled';;
 $glossfont=''
 
 [parameterscheck]
-bbtbbbtcccccnnbbbbbttbbt
+bbtbbbtcccccnnbbbbbttbot
 
 [general]
 $expand='tota';;
