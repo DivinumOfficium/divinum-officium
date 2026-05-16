@@ -21,7 +21,7 @@ Title font~>$titlefont~>Entry~>12~>12;;
 Screen height~>$screenheight~>Entry~>12~>13;;
 Text width percent~>$textwidth~>Entry~>12~>14;;
 Testmode~>$testmode~>Optionmenu~>testmodes~>21;;
-Interlinear~>$interlinear~>Checkbutton~>~>23;;
+Interlinear~>$interlinear~>Optionmenu~>interlinearmodes~>23;;
 Interlinear font~>$glossfont~>Entry~>12~>24
 
 [general]
@@ -120,3 +120,6 @@ Votiva/V6,Officium votivum de Passione DNJC (Missa Humiliavit)
 
 [testmodes]
 Proper,Temporal,Sanctoral
+
+[interlinearmodes]
+Disabled/disabled,Hint only/hint,All words/all

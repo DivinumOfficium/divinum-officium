@@ -83,9 +83,11 @@ $viewport_tag
     .contrastbg { background: white; }
     .nigra { color: black; }
     .lw .gloss { display: none; }
-    body.interlinear .lw .gloss { display: inline; font-size: 0.85em; color: $gloss_color; font-weight: $gloss_weight; font-style: $gloss_style; }
-    body.interlinear .lw.learned .gloss { display: none; }
-    body.interlinear .lw { cursor: pointer; }
+    body.interlinear-hint .lw { cursor: pointer; }
+    body.interlinear-hint .lw.revealed .gloss { display: inline; font-size: 0.85em;${\($gloss_color ? " color: $gloss_color;" : '')} font-weight: $gloss_weight; font-style: $gloss_style; }
+    body.interlinear-all .lw .gloss { display: inline; font-size: 0.85em;${\($gloss_color ? " color: $gloss_color;" : '')} font-weight: $gloss_weight; font-style: $gloss_style; }
+    body.interlinear-all .lw.learned .gloss { display: none; }
+    body.interlinear-all .lw { cursor: pointer; }
 
 PrintTag
 
@@ -133,7 +135,8 @@ PrintTag
 PrintTag
   }
 
-  my $interlinear_class = (our $interlinear) ? ' class="interlinear"' : '';
+  my $mode = (our $interlinear) // 'disabled';
+  my $interlinear_class = ($mode eq 'hint' || $mode eq 'all') ? qq( class="interlinear-$mode") : '';
   print <<"PrintTag";
   </STYLE>
   <TITLE>$title</TITLE>
@@ -704,7 +707,8 @@ sub setcell {
     return if $missa || $singleCell;
   }
 
-  if ((our $interlinear) && $lang =~ /Latin/i && $lang !~ /gabc/i) {
+  if ((our $interlinear) && (our $interlinear) ne 'disabled'
+      && $lang =~ /Latin/i && $lang !~ /gabc/i) {
     $text = apply_interlinear($text);
   }
 

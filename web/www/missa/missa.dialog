@@ -15,7 +15,7 @@ Screen height~>$screenheight~>Entry~>12;;
 Text width percent~>$textwidth~>Entry~>12;;
 Don't use fancy characters~>$nofancychars~>Checkbutton;;
 Building script~>$building~>Checkbutton~>15;;
-Interlinear~>$interlinear~>Checkbutton~>~>17;;
+Interlinear~>$interlinear~>Optionmenu~>interlinearmodes~>17;;
 Interlinear font~>$glossfont~>Entry~>12~>18
 
 [general]
@@ -133,3 +133,6 @@ Votiva de S. Joseph Sponso BMV: Adjutor (pro Feria IV)/V4,
 Votiva de Passione DNJC: Humiliavit (pro Feria VI)/V6,
 Votiva in Creatione et Coronatione Papae et in die anniversarii/Coronatio,
 Pro Propagatione Fidei/Propaganda
+
+[interlinearmodes]
+Disabled/disabled,Hint only/hint,All words/all
