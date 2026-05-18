@@ -249,7 +249,7 @@ sub occurrence {
       }
 
       # If a Sanctoral feast has been side as per the temporal cycle, e.g. Spineæ Coronæ DNJC
-      if (%tempTransfer && $tempTransfer !~ /Tempora/) {
+      if ($tempTransfer && $tempTransfer !~ /Tempora/) {
         $tempTransfer = subdirname('Sancti', $version) . "$tempTransfer";
 
         if (checklatinfile(\$tempTransfer)) {
