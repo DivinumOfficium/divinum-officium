@@ -1,9 +1,3 @@
-@TemporaM/Pasc5-5
-
-[Officium]
-@Tempora/Pasc6-1
-
-[Rank]
 @Tempora/Pasc6-1
 
 [Rule]
@@ -44,3 +38,17 @@ No prima Vespera
 
 [Responsory3]
 @Tempora/Pasc5-4:Responsory3
+
+[MM Capitulum] (rubrica tridentina aut rubrica divino)
+@Tempora/Pasc5-4:Capitulum Sexta
+_
+@Tempora/Pasc5-4:Nocturn 2 Versum
+
+[Capitulum Laudes] (rubrica 1963)
+@TemporaM/Pasc5-5
+
+[Capitulum Sexta] (rubrica 1963)
+@TemporaM/Pasc5-5
+
+[Capitulum Nona] (rubrica 1963)
+@TemporaM/Pasc5-5
