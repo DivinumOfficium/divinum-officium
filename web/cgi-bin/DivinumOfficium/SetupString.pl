@@ -567,7 +567,9 @@ sub setupstring($$%) {
   }
 
   # missa uses comments and Commune files from horas dir
-  $basedir =~ s/missa/horas/g if (index($basedir, 'missa') >= 0 && $fname =~ /Comment.txt$|C\d/);
+  $basedir =~ s/missa/horas/g
+    if (index($basedir, 'missa') >= 0 && $fname =~ /Comment.txt$|C\d/)
+    || (!(-e "$basedir/$lang/$fname") && -e "$basedir/../horas/$lang/$fname");
 
   my $fullpath = "$basedir/$lang/$fname";
   our ($missa);
@@ -785,7 +787,7 @@ sub checkfile {
   my $file = shift;
   our $datafolder;
 
-  my $redirect = $datafolder =~ /missa/i && $file =~ /C1[a-z]?/ ? '/../horas' : '';
+  my $redirect = index($datafolder, "missa") >= 0 && $file =~ /C1[a-z]?/ ? '/../horas' : '';
 
   if (-e "$datafolder$redirect/$lang/$file") {
     return "$datafolder$redirect/$lang/$file";
@@ -833,6 +835,7 @@ sub checklatinfile {
   # OCist => OSB (a.k.a. "M")
   # OSB & OP => Roman
   -e "$datafolder$redirect/Latin/$file.txt"
+    || -e "$datafolder/../horas/Latin/$file.txt"
     || $file =~ s/(Sancti|Tempora|Commune)(?:Cist)(.*)/$1M$2/
     && (-e "$datafolder$redirect/Latin/$file.txt")
     && ($$file_ref = "$file$txt")
