@@ -1750,8 +1750,8 @@ sub precedence {
     } else {
 
       # Redirections for Paschaltide and Votive offices
-      $vtv .= 'p' if ($dayname[0] =~ /Pasc/ && $vtv =~ /C[1-3]/);    # Enable Commune T.P.
-      $vtv =~ s/^V/Votiva\/V/;                                       # Re-direct to subdirectory for Votive offices
+      $vtv .= 'p' if ($dayname[0] =~ /Pasc/ && $vtv =~ /C[1-3](?!\d)/);   # Enable Commune T.P.
+      $vtv =~ s/^V/Votiva\/V/;                                            # Re-direct to subdirectory for Votive offices
 
       if ($commemoratio =~ /Tempora/) {
 
