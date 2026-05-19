@@ -352,7 +352,7 @@ sub gregor {
   } elsif ($lang =~ /Polski/i) {
     return ("Roku Pańskiego $year");
   } elsif ($lang =~ /Francais/i) {
-    return ("L'année du Seigneur $year, le $gday" . "e jour de la Lune");
+    return ("L’année du Seigneur $year, le $gday" . "e jour de la Lune");
   } elsif ($lang =~ /Italiano/i) {
     return ("Anno del Signore $year, $day $months_it[$month - 1], Luna $gday");
   } elsif ($lang =~ /Bohemice/i) {
