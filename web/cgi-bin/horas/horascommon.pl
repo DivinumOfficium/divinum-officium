@@ -215,6 +215,7 @@ sub occurrence {
         }
       }
     }
+
     $sfile = shift @commemoentries;    # get the filename for the Sanctoral office from the Kalendarium
 
     if ($permTransfer && $permTransfer =~ /Sancti/ && !transfered($permTransfer, $year, $version, $dioecesis)) {
@@ -246,6 +247,22 @@ sub occurrence {
         %saint = ();
         $srank = '';
         @srank = ();
+      }
+
+      # Remove Octaves during Quadragesima
+      if ($srank[0] =~ /in.*octava/i && $tname =~ /Quad\d|Quadp3\-[3-6]/) {
+        $sfile = shift @commemoentries;
+
+        if (checklatinfile(\$sfile)) {
+          $sname = "$sfile.txt";
+          %saint = %{setupstring('Latin', $sname)};
+          $srank = $saint{Rank};
+          @srank = split(";;", $srank);
+        } else {
+          $srank = '';
+          %saint = {};
+          @srank = ();
+        }
       }
 
       # If a Sanctoral feast has been side as per the temporal cycle, e.g. Spineæ Coronæ DNJC
@@ -400,7 +417,6 @@ sub occurrence {
       $sname = '';
       @srank = ();
     }
-
   }
 
   # In Festo Sanctae Mariae Sabbato according to the rubrics.

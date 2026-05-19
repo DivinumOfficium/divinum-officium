@@ -452,6 +452,7 @@ sub psalmi_major {
 
   if ($antecapitulum) {
     $w = columnsel($lang) ? $antecapitulum : $antecapitulum2;
+    $c = 3;
     setbuild2('Antiphonas ante Capitulum de praecedenti');
   } elsif ($w) {
     setbuild2("Antiphonas $winner");
@@ -614,6 +615,7 @@ sub psalmi_major {
   if ( alleluia_required($dayname[0], $votive)
     && $lang !~ /gabc/i
     && (!exists($winner{"Ant $hora"}) || $commune =~ /C10/)
+    && !$antecapitulum
     && $communetype !~ /ex/i
     && ($version !~ /Trident/ || $hora eq 'Vespera')
     && ($version !~ /Monastic/ || $hora ne 'Laudes' || $winner{Rank} !~ /Dominica/i))
