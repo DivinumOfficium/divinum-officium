@@ -1,14 +1,13 @@
+@Tempora/Pasc6-0
+(sed rubrica 196 aut rubrica cisterciensis omittitur)
+
 [Officium]
 Sabbato in Vigilia Pentecostes
 
 [Rank]
 ;;I classis Semiduplex;;6.9;;ex Tempora/Pasc5-4
-
-[Rank] (rubrica 196)
+(sed rubrica 196)
 ;;I classis Semiduplex;;6;;vide Tempora/Pasc5-4
-
-[Rank] (rubrica Newcal)
-Sabbato in Vigilia Pentecostes;;I classis Semiduplex;;6;;vide Tempora/Pasc5-4
 
 [Rule]
 ex Tempora/Pasc5-4;
@@ -128,7 +127,7 @@ Post promissiónem Spíritus Sancti, ne quisquam putáret, quod ita eum Dóminus
 @:Lectio9_2
 (sed rubrica 1570 omittitur)
 
-[Capitulum Laudes](rubrica 1960)
+[Capitulum Laudes] (rubrica 1960)
 @Tempora/Pasc5-4
 
 [Versum 2]
@@ -142,3 +141,10 @@ Post promissiónem Spíritus Sancti, ne quisquam putáret, quod ita eum Dóminus
 
 [Ant 2] (rubrica 1960)
 @Tempora/Pasc5-4:Ant 2
+
+[Commemoratio 2]
+ 
+
+[Commemoratio 3]
+ 
+
