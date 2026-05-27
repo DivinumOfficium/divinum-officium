@@ -230,18 +230,26 @@ sub psalmi_minor {
     }
 
     if ( ($rule =~ /Psalmi\s*(?:minores)*\s*Dominica/i || $communerule =~ /Psalmi\s*(?:minores)*\s*Dominica/i)
-      && $version !~ /Trident/i
       && $rule !~ /Psalmi\s*(?:minores)*\s*ex Psalterio/i
       && !($version =~ /1955|196/ && $rank < 6 && $dayofweek > 0))
     {
-      $feastflag = 1;
+      $feastflag = $version !~ /Trident|Monastic/i ? 1 : 2;
     }
     if ($version =~ /1955|1960/ && $rank < 6) { $feastflag = 0; }
     if ($winner{Rank} =~ /Dominica/i && $dayname[0] !~ /Nat|Pasc6/i) { $feastflag = 0; }
 
-    if ($feastflag) {
+    if ($feastflag == 1) {
       $prefix = translate("Psalmi Dominica, antiphonae", $lang) . ' ';
       setbuild2('Psalmi dominica');
+    } elsif ($feastflag == 2) {
+
+      $prefix = translate("Antiphona", $lang) . ' ';
+
+      if ($version =~ /Monastic/i || $hora !~ /Prima/) {
+        setbuild2('Psalmi ex Psalterio');
+      } else {
+        setbuild2('Tantum tres Psalmi');
+      }
     }
   } else {
     $ant = '' if $version =~ /^Monastic/;
@@ -301,6 +309,7 @@ sub psalmi_minor {
     && $dayofweek == 0
     && ( $dayname[0] =~ /(Adv|Pent01|Pasc1)/i
       || checksuffragium()
+      || ($dayname[0] =~ /Epi[2-6]|Quad|Pasc[1-5]|Pent0[3-9]|Pent[12]/i && $version =~ /trident/i)
       || ($dayname[0] =~ /Adv|Epi[2-6]|Quad|Pasc[1-5]|Pent/i && $version =~ /cist/i))
     && ($winner =~ /Tempora/i || $version !~ /cist/i)
   ) {

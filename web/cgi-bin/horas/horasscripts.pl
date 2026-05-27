@@ -229,7 +229,7 @@ sub handleverses {
       }
     } elsif ($_[2] =~ /[12]/) {
       if ($_[3] =~ /1D\-/i) {
-        
+
         # 1D-:    hr g f 'g  gr gvFED.   (Ant. Monast. '1D')
         s/(\>[\,\.\:\;]?)\(gh(.*?)gr\)/$1(g$2gr)/g;
       } elsif ($_[3] =~ /^\dD?$/i) {
