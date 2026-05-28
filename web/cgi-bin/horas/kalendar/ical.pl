@@ -31,7 +31,7 @@ EOH
     my ($yday, $ymonth, $yyear) = ydays_to_date($cday, $kyear);
     my ($dtstart) = sprintf("%04i%02i%02i", $yyear, $ymonth, $yday);
     my $day = sprintf("%02i-%02i-%04i", $ymonth, $yday, $yyear);
-    my ($e) = ordo_entry($day, $version1, '', 'winneronly');
+    my ($e) = ordo_entry($day, $version1, '', '', 'winneronly');
     $e = abbreviate_entry($e);
     my $uid = uuid();
     $output .= <<"EOE";
