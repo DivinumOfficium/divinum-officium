@@ -1025,7 +1025,9 @@ sub concurrence {
       @ccommemoentries = ();
     } else {
       $vespera = 3;
-      $dayname[2] = '' unless $dayname[2] =~ /Dominica|Advent|Quadr|Pass|Asc/i;
+      $dayname[2] = ''
+        unless $dayname[2] =~ /Dominica|Advent|Quadr|Pass|Asc/i
+        || ($comrank >= 2.1 && $dayname[2] !~ /ad Laudes|Rogatio/i);
 
       if ($sanctoraloffice) {
         $dayname[2] .= "<br/>Vespera de Officio occurente" unless $version =~ /1955|196/;
