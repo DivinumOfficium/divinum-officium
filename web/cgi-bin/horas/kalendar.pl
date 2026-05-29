@@ -120,9 +120,6 @@ require "$Bin/kalendar/$mode.pl";
 if (strictparam('format') eq 'ical') {
   require "$Bin/kalendar/ical.pl";
   ical_output();
-} elsif (strictparam('format') eq 'ical_comm') {
-  require "$Bin/kalendar/ical.pl";
-  ical_comm_output();
 } else {
   html_output($kyear, $kmonth, $mode);
 }
@@ -221,8 +218,6 @@ sub html_output {
     my $iyear = $tyear != $kyear ? "&kyear=$kyear" : '';
     print
       "&nbsp;&nbsp;&nbsp;<A HREF='$ENV{PATH_INFO}?format=ical&version=$version1&dioecesis=$dioecesis$iyear'>iCal</A>";
-    print
-      "&nbsp;&nbsp;&nbsp;&nbsp;<A HREF='$ENV{PATH_INFO}?format=ical_comm&version=$version1&dioecesis=$dioecesis$iyear'>iCal with Commemorations</A>";
   }
 
   my $date1 = strictparam('date1');
