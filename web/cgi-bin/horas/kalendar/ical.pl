@@ -8,6 +8,14 @@ sub uuid {
   scalar <$fh>;
 }
 
+# If uuid() fails due to environment let's produce a standardised UID instead
+sub fallbackUID {
+  my ($dateString, $ver, $dioe) = @_;
+  $ver =~ s/[\s\-]//gi;
+  $dateString =~ /(\d{2})\-(\d{2})\-(\d{4})/;
+  return "$3$1$2T120000Z-$ver:$dioe\@divinumofficium.com";
+}
+
 # prepare ical output
 sub ical_output {
   my ($output) = <<"EOH";
@@ -28,12 +36,15 @@ EOH
   my ($dtstamp) = sprintf("%04i%02i%02iT%02i%02i%02i", @date);
 
   for my $cday (1 .. $to) {
+
     my ($yday, $ymonth, $yyear) = ydays_to_date($cday, $kyear);
     my ($dtstart) = sprintf("%04i%02i%02i", $yyear, $ymonth, $yday);
     my $day = sprintf("%02i-%02i-%04i", $ymonth, $yday, $yyear);
     my ($e) = ordo_entry($day, $version1, '', '', 'winneronly');
+    my ($e) = ordo_entry($day, $version1, $dioecesis, '', 'winneronly');
+
     $e = abbreviate_entry($e);
-    my $uid = uuid();
+    my $uid = uuid() || fallbackUID($day, $version1, $dioecesis);
     $output .= <<"EOE";
 BEGIN:VEVENT
 UID:$uid
