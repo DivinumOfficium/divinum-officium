@@ -24,8 +24,8 @@ sub ordo_entry {
   setChantTone() if ($lang1 =~ /gabc/i);    # GABC: set ChantTone depending on the solemnity of the day
 
   my ($h1, $h2) = split(/\s*~\s*/, setheadline());
-  return "$h1, $h2" if $winneronly =~ /winneronly/;     # finish here for ical
-  return "$h1 ($h2)" if $winneronly =~ /winnerupd/;     # finish here for ical_comm
+  return "$h1, $h2" if $winneronly =~ /winneronly/;    # finish here for ical
+  return "$h1 ($h2)" if $winneronly =~ /winnerupd/;    # finish here for ical_comm
 
   my ($c1, $c2);
   $c1 = "<B>" . setfont(liturgical_color($h1), $h1) . "</B>" . setfont('1 maroon', "&ensp;$h2");
@@ -65,7 +65,7 @@ sub ordo_entry {
     }
   }
 
-  return "$c2" if $winneronly =~ /comm/i; # finish here for ical_comm - comm
+  return "$c2" if $winneronly =~ /comm/i;    # finish here for ical_comm - comm
 
   $c2 =~ s/Hebdomadam/Hebd/i;
   $c2 =~ s/Quadragesima/Quadr/i;

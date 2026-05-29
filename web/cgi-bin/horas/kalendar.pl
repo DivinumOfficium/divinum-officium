@@ -122,7 +122,7 @@ if (strictparam('format') eq 'ical') {
   ical_output();
 } elsif (strictparam('format') eq 'ical_comm') {
   require "$Bin/kalendar/ical.pl";
-  ical_comm_output();
+  ical_comm_output($officium);
 } else {
   html_output($kyear, $kmonth, $mode);
 }
