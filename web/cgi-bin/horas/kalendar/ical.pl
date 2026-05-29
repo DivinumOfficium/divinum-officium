@@ -58,6 +58,7 @@ EOE
 
 # prepare ical output with commemorations
 sub ical_comm_output {
+  my $officium = shift;
   my ($output) = <<"EOH";
 Content-Type: text/calendar; charset=utf-8
 Content-Disposition: attachment; filename="$version1 - $kyear.ics"
@@ -76,11 +77,13 @@ EOH
   my ($dtstamp) = sprintf("%04i%02i%02iT%02i%02i%02i", @date);
 
   for my $cday (1 .. $to) {
+
     my ($yday, $ymonth, $yyear) = ydays_to_date($cday, $kyear);
     my ($dtstart) = sprintf("%04i%02i%02i", $yyear, $ymonth, $yday);
     my $day = sprintf("%02i-%02i-%04i", $ymonth, $yday, $yyear);
     my ($e) = ordo_entry($day, $version1, $dioecesis, '', 'winnerupd');
     my ($d) = ordo_entry($day, $version1, $dioecesis, '', 'comm');
+
     $e = abbreviate_entry($e);
     my $version1_url = $version1 =~ s/ /\%20/gr;
     my $version1_uid = $version1 =~ s/ //gr;
@@ -94,13 +97,12 @@ DTSTART;VALUE=DATE:$dtstart
 SUMMARY:$e
 DESCRIPTION:$d
 $d_html
-URL:https://divinumofficium.com/cgi-bin/horas/Pofficium.pl?date1=$day&version=$version1_url
+URL:https://divinumofficium.com/cgi-bin/horas/$officium?date1=$day&version=$version1_url&dioecesis=$dioecesis
 END:VEVENT
 EOE
   }
   print "${output}END:VCALENDAR\n";
 }
-
 
 # abbreviate entries for ical
 sub abbreviate_entry {
@@ -148,22 +150,22 @@ sub abbreviate_entry {
 
 # Splits the X-ALT-DESC line to be maximum of 75 characters long (ICS format requirement)
 sub format_ics_html {
-    my ($html_string) = @_;   
-    my $full_line = "X-ALT-DESC;FMTTYPE=text/html:" . $html_string;
-    
-    #  The first line can be up to 75 characters.
-    #  Subsequent lines can only be up to 74 characters + leading space 
-    my @folded_lines;
-    
-    if ($full_line =~ s/^(.{1,75})//) {
-        push @folded_lines, $1;
-    }
-    
-    while ($full_line =~ s/^(.{1,74})//) {
-        push @folded_lines, " " . $1;
-    }
-    
-    return join("\r\n", @folded_lines);
+  my ($html_string) = @_;
+  my $full_line = "X-ALT-DESC;FMTTYPE=text/html:" . $html_string;
+
+  #  The first line can be up to 75 characters.
+  #  Subsequent lines can only be up to 74 characters + leading space
+  my @folded_lines;
+
+  if ($full_line =~ s/^(.{1,75})//) {
+    push @folded_lines, $1;
+  }
+
+  while ($full_line =~ s/^(.{1,74})//) {
+    push @folded_lines, " " . $1;
+  }
+
+  return join("\r\n", @folded_lines);
 }
 
 1;
