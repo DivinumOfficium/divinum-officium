@@ -30,6 +30,11 @@ Conféssor Dómini N., astántem plebem corróbora sancta intercessióne: ut, qu
 @Commune/C4::1-6 s/-8/-5/
 
 [Responsory3]
+@Commune/C4:Responsory8:1-4
+&Gloria
+@Commune/C4:Responsory8:4 s/.*?, (.)/R. \u$1/
+
+[Responsory3] (rule 9 leciones)
 @CommuneM/C4:Responsory11:1-3 s/\n\*// s/;\W+(.)/\n* \u$1/
 @CommuneM/C4:Responsory11:1 s/.*† (.)/\nR. \u$1/
 &Gloria
@@ -120,5 +125,3 @@ Divísio quidem pecuniæ inæquális est, sed non ad dividentem referénda divé
 [Lectio8 in 2 loco]
 Igitur unusquisque secúndum fidei suæ mensúram taléntum, id est, Evangélii prædicatiónem, a prædicánte suscépit. Hæc enim incorrúpta substántia est: hoc Christi patrimónium ætérnis herédibus reservátum. Sed servus ille, qui quinque talénta accépit, pópulus ex Lege credéntium est: ex qua proféctus, méritum ipsíus recte probéque perfunctus evangélicæ Fidei operatióne duplicávit.
 
-[Lectio9 in 2 loco]
-In ratióne autem ponénda judícii exámen est: quo cæléstis verbi usus et réditus dispensáti talénti postulátur. Igitur cui erant quinque commissa, dómino revérso de quinque decem óbtulit, talis scilicet in Fide repértus, qualis in Lege: qui decem verbórum quinque libris Móysi præceptórum obediéntiam per grátiam evangélicæ justificatiónis expléverit. Igitur jubétur in gaudium Dómini introire, id est, in honórem glóriæ Christi recipitur.
