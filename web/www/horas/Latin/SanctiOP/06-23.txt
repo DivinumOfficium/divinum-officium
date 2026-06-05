@@ -1,0 +1,11 @@
+@Sancti/06-23
+
+[Lectio1]
+@Sancti/06-23::s/ Sic.*//
+
+[Lectio2]
+@Sancti/06-23:Lectio1:s/.* (?=Sic)//s s/$/~/
+@Sancti/06-23::s/ Tales.*//
+
+[Lectio3]
+@Sancti/06-23:Lectio2:s/.* (?=Tales)// s/$/~/
