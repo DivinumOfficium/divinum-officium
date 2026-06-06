@@ -693,6 +693,7 @@ sub getcommemoratio {
     $file = "$file.txt";
     if ($file =~ /^C/) { $file = subdirname('Commune', $version) . "$file"; }
     %c = %{setupstring($lang, $file)};
+    $c{'Versum 3'} = $c{'Versum 1'} if $cwinner =~ /C10/ && $file =~ /C6/;    # GitHub #5293
 
     if ($c{Rank} =~ /;;(ex|vide)\s+(.*)\s*$/i) {
 
@@ -709,6 +710,7 @@ sub getcommemoratio {
         $c{"Ant $i"} ||= $c2{"Ant $i"};
         $c{"Versum $i"} ||= $c2{"Versum $i"};
       }
+      $c{'Versum 3'} = $c{'Versum 1'} if $cwinner =~ /C10/ && $file =~ /C6/;    # GitHub #5293
     }
   } else {
     %c = {};

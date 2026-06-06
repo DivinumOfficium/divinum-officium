@@ -1043,7 +1043,7 @@ sub concurrence {
       $cvespera = 0;
       @ccommemoentries = ();
     }
-  } elsif (!$sanctoraloffice && !$csanctoraloffice) {
+  } elsif (!$sanctoraloffice && !$csanctoraloffice && $cwinner !~ /C10/) {
 
     # two "concurrent" Tempora
     if ($crank >= $rank || $tempora{Rule} =~ /No secunda vespera/i) {
