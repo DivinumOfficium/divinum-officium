@@ -899,14 +899,7 @@ sub concurrence {
     $cwrank[2] = $crank = $version =~ /altovadensis/i ? 3.9 : $version =~ /trident/i ? 2.9 : 4.9;
   }
 
-  if ( $cwrank[0] =~ /in.*octava|Vigilia Pent/i
-    && ($wrank[0] =~ /Dominica/i || ($winner =~ /Sancti/ && $wrank !~ /in.*octava/i))
-    && $version =~ /divino/i)
-  {
-
-    # Commemoration of resumed Octave on Sunday from 1st Vespers (Divino only)
-    $octvespera = 1;
-  } elsif ($cwrank[0] =~ /Dominica/i && $trank[0] =~ /in.*octava/i
+  if ($cwrank[0] =~ /Dominica/i && $trank[0] =~ /in.*octava/i
     || ($cwrank[0] =~ /infra.*octav/i && $version =~ /Trident/))
   {
 
@@ -915,6 +908,13 @@ sub concurrence {
 
     # On Saturday in Cist. rite, it's always from 1st Vespers
     $octvespera = 1 if $version =~ /cist/i && $dayofweek == 6;
+  } elsif ($cwrank[0] =~ /in.*octava|Vigilia Pent/i
+    && ($wrank[0] =~ /Dominica/i || ($winner =~ /Sancti/ && $wrank !~ /in.*octava/i))
+    && $version =~ /divino/i)
+  {
+
+    # Commemoration of resumed Octave on Sunday from 1st Vespers (Divino only)
+    $octvespera = 1;
   }
 
   if ($ctrank[0] =~ /(?<!De )Dominica|Trinitatis/i
