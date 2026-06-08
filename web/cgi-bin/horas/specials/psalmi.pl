@@ -307,6 +307,7 @@ sub psalmi_minor {
     && $hora eq 'Prima'
     && ($dayname[0] =~ /(Epi|Pent)/i || $version !~ /Divino/i)
     && $dayofweek == 0
+    && $rule !~ /Non dicitur Quicumque/i
     && ( $dayname[0] =~ /(Adv|Pent01|Pasc1)/i
       || checksuffragium()
       || ($dayname[0] =~ /Epi[2-6]|Quad|Pasc[1-5]|Pent0[3-9]|Pent[12]/i && $version =~ /trident/i)
