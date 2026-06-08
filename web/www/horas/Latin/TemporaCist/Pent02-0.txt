@@ -4,10 +4,11 @@
 12 lectiones
 ex TemporaCist/Pent01-4; 
 Doxology=Corp
+Non dicitur Quicumque
 Psalmi Feria
 
 [Ant Vespera]
-@Tempora/Pent01-4
+@TemporaCist/Pent01-4
 
 [Responsory Vespera]
 @TemporaCist/Pent01-4
@@ -18,9 +19,6 @@ R. Panem Angelórum manducávit homo.
 
 [Ant 1]
 Cognovérunt omnes * a Dan usque Bersabée, quod fidélis Sámuel Prophéta esset Dómini.
-
-[Invit]
-@TemporaCist/Pent01-4
 
 [AntMatutinumC]
 Novus Abel, * Christus, hóstiam gratam pro nobis ófferens Deo Patri, novum dedicávit in suo Sánguine testaméntum.;;20

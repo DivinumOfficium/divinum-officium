@@ -66,6 +66,7 @@ sub capitulum_prima {
       && $version !~ /196[03]/
       && $winner{Rank} =~ /Feria|Vigilia/i
       && $winner{Rank} !~ /Vigilia Epi/i
+      && !($winner{Rank} =~ /in.*Oct/i && $version =~ /Cist/i)
       && (!$commune || $commune !~ /C10/)
       && ($rank < 3 || $dayname[0] =~ /Quad6/ || $winner =~ /Quadp3-3/)
       && $dayname[0] !~ /Pasc/i) ? 'Feria' : 'Dominica';
