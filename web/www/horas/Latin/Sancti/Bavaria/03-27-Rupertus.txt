@@ -1,0 +1,40 @@
+[Officium]
+S. Ruperti Episcopi et Confessoris
+
+[Rank]
+;;Duplex;;3;;vide C4
+(sed dioecesis passaviensis)
+;;Duplex majus;;4;;vide C4
+
+[Rule]
+vide C4;
+9 lectiones
+
+[Name]
+Rupérti
+
+[Oratio]
+Exáudi, quǽsumus, Dómine, preces nostras, quas in beáti Rupérti Confessóris tui atque Pontificis solemnitáte deférimus: et, qui tibi digne méruit famulári, ejus intercedéntibus méritis, ab ómnibus nos absólve peccátis.
+$Per Dominum
+
+[Lectio4_]
+Rupértus, Vangionénsis (hódie Wormatiénsis) ecclésiæ epíscopus, regnante Childebérto secundo Francorum rege, tanta humilitátis, mansuetúdinis, castitátis, prudéntiæ ceterarúmque ómnium virtútum laude prǽditus fuit, ut genus suum a Francórum régibus ductum exímia in Deum fide ac pietate illustrarit. Is cum plenus Spiritu Sancto óptimam vivéndi formam seípsum gregi suo exhibéret, vita et factis probans, quidquid sermóne docuísset, religiónem precándi assiduitáte, prudentiam dandis consíliis, justítiam feréndis sententiis, abstinéntiam corpus perpétuis jejúniis macerándo mirífice confirmávit: adeóque largus et benignus erga ínopes fuit, ut hoc solum suum existimárit, quod in míseros et egénos contulisset.
+
+[Lectio4]
+@:Lectio4_
+(sed dioecesis monacensis)
+@:Lectio4_:s/\(.*?\)//
+
+[Lectio5]
+Quam magnus autem fructus ex hac illíus vita in ceteros promanáverit, multi non solum e vicínis, sed étiam longínquis regiónibus pópuli, ejus ope in salútis viam tradúcti testántur. Théodo imprímis, Baváriæ dux, illíus sanctitátis et miraculórum fama audíta misit ad eum legátos primários viros rogavítque, ut suas diciónes invísere eásque ac se sanctæ fídei lúmine collustráre vellet. At ille, licet multis persecutiónibus fatigátus esset, pium ac sanctum opus non recusávit; paulo ígitur post Théodo a Rupérto una cum multis selectíssimis procéribus ac étiam magna hóminum multitúdine baptizátus est.
+
+[Lectio6]
+Rupértus vero, cum episcopálem sedem ad lacum Wallersee constituísset templúmque in honórem beáti Petri apostolórum príncipis ad Juvávium flúvium in loco, qui Salisbúrgum dícitur, clericórum ministériis aliísque rebus necessáriis instrúctum primus erexísset, ánimum statim ad réliquam gentem Baváriæ sacra Christi religióne imbuéndam convértit: eámque duódecim viris óperæ et labórum sóciis sibi adjúnctis ad cathólicam fidem Deo tandem pios ejus conátus adjuvánte tradúxit. Cujus rei gratia factum est, ut Bavarórum apóstolus merúerit appellári. Cum dénique jactis passim multárum ecclesiárum fundaméntis episcopátum plúrimis annis summa cum laude gessísset, sacrosánctæ Missa sacrifício ipso domínico resurrectiónis die peracto ac discipulórum animis patérna hortatióne firmátis, cælésti vita perpetuo perfruitúrus migrávit ad Dóminum.
+
+[Secreta]
+Sancti Rupérti, Confessóris tui atque Pontíficis, quǽsumus, Dómine, ánnua sollémnitas pietáti tua nos reddat accéptos: ut, per hæc piæ placatiónis offícia, et illum beáta retribútio comitétur, et nobis grátiæ tua dona conciliet.
+$Per Dominum
+
+[Postcommunio]
+Deus, fidelium remunerator animárum: præsta; ut beati Rupérti Confessóris tui atque Pontíficis, cujus venerándam celebrámus festivitátem, précibus indulgéntiam consequámur.
+$Per Dominum

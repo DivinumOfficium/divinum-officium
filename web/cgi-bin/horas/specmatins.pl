@@ -1611,7 +1611,7 @@ sub initiarule {
 
   my $initfile = get_from_directorium('stransfer', $version, $key, $year, $dioecesis);
 
-  $initfile =~ s/;;.*$//;    # remove dioecesis flag
+  $initfile =~ s/(XX-XX)?;;.*$//;    # remove dioecesis flag and dioecesis cancellation overwrites
   return $initfile;
 }
 
