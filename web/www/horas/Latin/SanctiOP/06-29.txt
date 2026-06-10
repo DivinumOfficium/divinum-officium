@@ -81,14 +81,14 @@ Amen.
 
 [Responsory Breve Tertia]
 @Commune/C1::1 s/\* (.)/ \l$1/ s/$/ * ~/
-@Psalterium/Common/Prayers:Alleluja Duplex
+@Psalterium/Common/Prayers:Alleluia Duplex
 @Commune/C1::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluja Duplex
+@Psalterium/Common/Prayers:Alleluia Duplex
 @Commune/C1::3
-@Psalterium/Common/Prayers:Alleluja Duplex:s/^/R. /
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
 &Gloria
 @Commune/C1::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluja Duplex
+@Psalterium/Common/Prayers:Alleluia Duplex
 
 [Capitulum Sexta]
 !Act. 12:7
@@ -97,28 +97,28 @@ $Deo gratias
 
 [Responsory Breve Sexta]
 @Commune/C1::1 s/\* (.)/ \l$1/ s/$/ * ~/
-@Psalterium/Common/Prayers:Alleluja Duplex
+@Psalterium/Common/Prayers:Alleluia Duplex
 @Commune/C1::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluja Duplex
+@Psalterium/Common/Prayers:Alleluia Duplex
 @Commune/C1::3
-@Psalterium/Common/Prayers:Alleluja Duplex:s/^/R. /
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
 &Gloria
 @Commune/C1::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluja Duplex
+@Psalterium/Common/Prayers:Alleluia Duplex
 
 [Capitulum Nona]
 @Sancti/08-01:Lectio3:!2-3 s/9-// s/.*?: /v. /
 
 [Responsory Breve Nona]
 @Commune/C1::1 s/\* (.)/ \l$1/ s/$/ * ~/
-@Psalterium/Common/Prayers:Alleluja Duplex
+@Psalterium/Common/Prayers:Alleluia Duplex
 @Commune/C1::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluja Duplex
+@Psalterium/Common/Prayers:Alleluia Duplex
 @Commune/C1::3
-@Psalterium/Common/Prayers:Alleluja Duplex:s/^/R. /
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
 &Gloria
 @Commune/C1::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluja Duplex
+@Psalterium/Common/Prayers:Alleluia Duplex
 
 [Ant Vespera 3]
 @Sancti/06-29:Ant Vespera:1 s/$/;;109;112;115;125;138/

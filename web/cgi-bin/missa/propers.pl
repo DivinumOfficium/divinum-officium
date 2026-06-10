@@ -1038,6 +1038,7 @@ sub graduale : ScriptFunc {
 sub evangelium : ScriptFunc {
   my $lang = shift;
   my $t = getitem('Evangelium', $lang);
+  $t =~ s/\s*¶//;
   our ($rule, $version);
 
   if ($t && $t !~ /^\s*$/) {
