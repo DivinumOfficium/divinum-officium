@@ -150,6 +150,7 @@ sub occurrence {
     if ($tempTransfer =~ /\~/) {
       my @tr = split('~', $tempTransfer);
       $tempTransfer = shift @tr;
+      $tday = shift @tr if $tr[0] =~ /Tempora/i;
       @transfers = @transfers || @tr;
     }
 
@@ -1134,7 +1135,7 @@ sub concurrence {
 
     if (
       # On Saturday, 1st Vespers gets commemorated in Festis I. cl. github #3907
-      ($rank >= (($version =~ /19(?:55|6)/ && $dayofweek < 6) ? 6 : 7) && $crank < 6)
+      ($rank >= (($version =~ /19(?:55|6)/ && $version !~ /Barroux/ && $dayofweek < 6) ? 6 : 7) && $crank < 6)
 
       # Rubr. 1960: on a II. cl Sunday nothing at 1st Vespers in concurrence with a Feast of the Lord
       || ( $version =~ /196/
