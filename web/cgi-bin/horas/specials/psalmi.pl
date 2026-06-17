@@ -482,7 +482,7 @@ sub psalmi_major {
   if (
     (
          $rule =~ /Psalmi Dominica/i
-      || ($version =~ /cist/i && $winner =~ /Sancti/i && $rank >= 2.2)
+      || ($version =~ /cist/i && (($winner =~ /Sancti/i && $rank >= 2.2) || $antecapitulum))
       || ($commune{Rule} && $commune{Rule} =~ /Psalmi Dominica/i)
     )
     && ($antiphones[0] !~ /\;\;\s*[0-9]+/)
