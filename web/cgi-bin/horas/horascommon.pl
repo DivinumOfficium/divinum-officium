@@ -1907,12 +1907,12 @@ sub setheadline {
 
     # GABC: If Chant is selected as the main language (in options) display ChantTone in Headline
     our $chantTone;
-    $winner{Rank} =~ /^(.*?)\;/;
-    return ($1 || $winner{Rank}) . " ~ " . rankname($lang1) . " : Tonus $chantTone";
+    $winner{Rank} =~ /^(?<officium>.*?)\;/;
+    return ($+{'officium'} || $winner{Rank}) . " ~ " . rankname($lang1) . " : Tonus $chantTone";
   }
 
-  $winner{Rank} =~ /^(.*?)\;/;
-  ($1 || $winner{Rank}) . " ~ " . rankname($lang1);
+  $winner{Rank} =~ /^(?<officium>.*?)\;/;
+  ($+{'officium'} || $winner{Rank}) . " ~ " . rankname($lang1);
 }
 
 #*** rankname($lang);
