@@ -1,0 +1,41 @@
+@Sancti/06-26
+
+[Rule]
+ex C3;
+12 lectiones
+Psalmi Dominica
+in 3 Nocturno Lectiones ex Commune in 3 loco;
+
+[Ant 1]
+Gaudent in cœlis * ánimæ Sanctórum, qui Christi vestígia sunt secúti: et quia pro ejus amóre sánguinem suum fudérunt, ídeo cum Christo exúltant sine fine.
+
+[Oratio]
+@Sancti/06-26
+
+[Lectio5]
+@Sancti/06-26:Lectio4
+
+[Lectio6]
+@Sancti/06-26:Lectio5:s/Qui, ut.*//
+
+[Lectio7]
+@Sancti/06-26:Lectio5:s/.*(Qui, ut)/$1/ s/$/~/
+@Sancti/06-26:Lectio6:s/Verum eórum.*//
+
+[Lectio8]
+@Sancti/06-26:Lectio6:s/.*(Verum eórum)/$1/
+
+[Responsory8]
+@CommuneCist/C3
+
+[Ant Laudes]
+@CommuneCist/C3
+
+[Ant 2]
+@Sancti/06-26:Ant 3
+
+[Ant Vespera 3]
+@CommuneCist/C3
+
+[Ant 3]
+@Sancti/06-26:Ant 2
