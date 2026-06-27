@@ -1,0 +1,46 @@
+@Sancti/07-26
+
+[Lectio1]
+!De libro Ecclesiástici
+!Eccli 26:16-21
+16 Grátia mulíeris sédulæ delectábit virum suum, et ossa illíus impinguábit.
+17 Disciplína illíus datum Dei est.
+18 Múlier sensáta et tácita, non est immutátio erudítæ ánimæ.
+19 Grátia super grátiam, múlier sancta et pudoráta.
+20 Omnis autem ponderátio non est digna continéntis ánimæ.
+21 Sicut sol óriens mundo in altíssimis Dei, sic mulíeris bonæ spécies in ornaméntum domus ejus.
+
+[Responsory1]
+@CommuneOP/C7:Responsory5:s/N\./Annæ//
+
+[Lectio2]
+De Epístola prima beáti Petri Apóstoli
+!1 Pet 3:1-6
+1 Mulíeres súbditæ sint viris suis: ut et si qui non credunt verbo, per mulíerum conversatiónem sine verbo lucrifíant:
+2 considerántes in timóre castam conversatiónem vestram.
+3 Quarum non sit extrínsecus capillatúra, aut circumdátio auri, aut induménti vestimentórum cultus:
+4 sed qui abscónditus est cordis homo, in incorruptibilitáte quiéti, et modésti spíritus, qui est in conspéctu Dei lócuples.
+5 Sic enim aliquándo et sanctæ mulíeres, sperántes in Deo, ornábant se, subiéctæ própriis viris.
+6 Sicut Sara obediébat Abrahæ, dóminum eum vocans.
+
+[Lectio3]
+De Epístola prima beáti Pauli Apóstoli ad Timótheum
+!1 Tim 2:8-12
+8 Volo ergo viros oráre in omni loco, levántes puras manus sine ira et disceptatióne.
+9 Simíliter et mulíeres in hábitu ornáto, cum verecúndia et sobrietáte ornántes se, et non in tortis crínibus, aut auro, aut margarítis, vel veste pretiósa:
+10 sed quod decet mulíeres, promitténtes pietátem per ópera bona.
+11 Múlier in siléntio discat cum omni subiectióne.
+12 Docére autem mulíeri non permítto, neque dominári in virum: sed esse in siléntio.
+
+[Lectio4]
+@Sancti/07-26::s/\. [^.]+\.$/./
+
+[Lectio5]
+@Sancti/07-26:Lectio4:s/.+\. //s s/$/~/
+@Sancti/07-26::s/ Cónsonam.*//
+
+[Lectio6]
+@Sancti/07-26::s/\. [^.]+\.$/./
+
+[Oratio]
+Deus, qui beátam Annam, Genetrícis tuæ matrem, ad cæléstis vitæ gáudia extulísti: fac nos, quæsumus, gloriósus ejus méritis ad ætérnam pertíngere beatitúdinem, ex cujus salutári puerpério pro salúte mundi humanam natúram assúmere dignátus es: Qui vivis.

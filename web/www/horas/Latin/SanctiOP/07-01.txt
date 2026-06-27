@@ -1,0 +1,49 @@
+@Sancti/07-01
+
+[Ant Vespera]
+@Sancti/07-01::1 s/$/;;112;116;145;146;147/
+
+[Responsory Vespera 1]
+@Tempora/Pasc3-0:Responsory1:s/, allel..a//g
+
+[Responsory9]
+@Tempora/Pasc3-0:Responsory1:s/, allel..a//g
+
+[Capitulum Laudes]
+@Sancti/07-01::s/v. .*?: /v./
+
+[Responsory Breve Tertia]
+@Sancti/07-01::1 s/\* (.)/ \l$1/ s/$/ * ~/
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Sancti/07-01::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Sancti/07-01::3
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
+&Gloria
+@Sancti/07-01::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+
+[Responsory Breve Sexta]
+@Sancti/07-01::1 s/\* (.)/ \l$1/ s/$/ * ~/
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Sancti/07-01::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Sancti/07-01::3
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
+&Gloria
+@Sancti/07-01::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+
+[Responsory Breve Nona]
+@Sancti/07-01::1 s/\* (.)/ \l$1/ s/$/ * ~/
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Sancti/07-01::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Sancti/07-01::3
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
+&Gloria
+@Sancti/07-01::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+
+[Ant Vespera 3]
+@Sancti/07-01:Ant Laudes:1 s/$/;;109;110;111;112;147/
