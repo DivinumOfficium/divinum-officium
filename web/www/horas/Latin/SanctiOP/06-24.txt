@@ -110,15 +110,7 @@ V. Vicíni quoque et cognáti ejus vénérunt circumcidere puerum, et sciscitát
 @Sancti/06-24:Capitulum Laudes
 
 [Responsory Breve Sexta]
-@Commune/C2::1 s/\* (.)/ \l$1/ s/$/ * ~/
-@Psalterium/Common/Prayers:Alleluia Duplex
-@Commune/C2::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluia Duplex
-@Commune/C2::3
-@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
-&Gloria
-@Commune/C2::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluia Duplex
+@Commune/C2
 
 [Versum Sexta]
 @Commune/C2:Nocturn 3 Versum
@@ -129,15 +121,7 @@ V. Vicíni quoque et cognáti ejus vénérunt circumcidere puerum, et sciscitát
 $Deo gratias
 
 [Responsory Breve Nona]
-@Commune/C2::1 s/\* (.)/ \l$1/ s/$/ * ~/
-@Psalterium/Common/Prayers:Alleluia Duplex
-@Commune/C2::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluia Duplex
-@Commune/C2::3
-@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
-&Gloria
-@Commune/C2::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluia Duplex
+@Commune/C2
 
 [Versum Nona]
 @CommuneOP/C2:Versum 2

@@ -2,13 +2,17 @@
 S. Dominici Confessoris Patris Nostri
 
 [Rank]
-;;Duplex;;6;;vide C4
+;;Duplex;;6;;vide C5
 
 [Rule]
-vide C4;
+vide C5;
 9 lectiones
 Psalmi Dominica
 Antiphonas horas
+Responsory Breve cum Alleluja
+
+[Responsory Vespera 1]
+@:Responsory9
 
 [Ant Vespera]
 Gaude felix parens Hispánia, novæ prolis dans mundo gáudia: sed tu magis plaude Bonónia, tanti Patris dotáta glória: lauda tota Mater Ecclésia, novæ laudis agens solémnia.;;112;116;145;146;147
@@ -93,12 +97,13 @@ Liber carnis vínculo cælum introívit, ubi pleno póculo gustat quod sitívit.
 @Commune/C5:Versum 1
 
 [Nocturn 2 Versum]
-@Commune/C5
+@Commune/C4:Versum 2
 
 [Nocturn 3 Versum]
 @Commune/C2a:Versum 2
 
 [Lectio1]
+De Epístola prima beáti Pauli Apóstoli ad Corínthios
 !1 Cor 1:20-25
 20 Nonne stultam fecit Deus sapiéntiam hujus mundi?
 21 Nam quia in Dei sapiéntia non cognóvit mundus per sapiéntiam Deum: plácuit Deo per stultítiam prædicatiónis salvos fácere credéntes.
@@ -114,6 +119,7 @@ V. Ad hoc convívium tam permagníficum elégit núntium sanctum Domínicum.
 R. Promíttens várias vite delícias.
 
 [Lectio2]
+De Epístola secúnda ad Corínthios
 !2 Cor 4:1-4
 1 Habéntes administratiónem, juxta quod misericórdiam consecúti sumus, non defícimus,
 2 sed abdicámus occúlta dedécoris, non ambulántes in astútia, neque adulterántes verbum Dei, sed in manifestatióne veritátis commendántes nosmetípsos ad omnem consciéntiam hóminum coram Deo.
@@ -142,7 +148,6 @@ V. Ter in flammas libéllus tráditus, ter exívit illǽsus pénitus.
 R. Sic error vincitur, Fides extóllitur.
 
 [Lectio4]
-
 !Ex Theodorico de Apoldia, S. Antonino et aliis gestorúm ejus auctoribus
 Sanctssimus Pater Dominicus Calaróge in Hispánia ex nobilíssima Guzmanórum família natus est. Hujus mater grávida sibi visa est per quiétam continére in alvo cátulum, qui facem ore préferens, orbem terrárum incénderet: quo sómnio significabátur fore ut splendóre sanctitátis ac doctrína ejus gentes ad christiánam pietátem inflammaréntur. Post liberálium ártium ac theologíe stúdia, ex quibus singulárem sibi eruditiónem comparávit, primum Oxoménsis Ecclésie canónicus reguláris fuit: deínde claríssimum Praedicatórum órdinem, unde innúmera totíus sanctitátis et doctrínæ exémpla in Ecclésiam promanárunt, instítuit, ab Honório tértio Summo Pontífice confirmátum anno salútis millésimo ducentésimo décimo sexto.
 
@@ -209,8 +214,7 @@ Fulget in choro vírginum doctor veritátis, sertum honóris géminum gerens cum
 
 [Capitulum Laudes]
 !Eccli. 50:6-7
-v. Quasi stella matutína in médio nébulæ, et quasi luna plena in diébus suis lucet: et quasi sol refúlgens, sic ille effúlsit in templo Dei.
-$Deo gratias
+Quasi stella matutína in médio nébulæ, et quasi luna plena in diébus suis lucet: et quasi sol refúlgens, sic ille effúlsit in templo Dei.
 
 [Hymnus Laudes]
 Hymnum novæ lætítiæ
@@ -242,48 +246,13 @@ Amen.
 [Ant 2]
 Carnis viror, mentis martýrium, mundum replens linguæ præcónium, pauper Christi, post cursus státium, vitæ tibi mercántur pr<sp>'ae</sp>mium.
 
-[Responsory Breve Tertia]
-R.br. Amávit eum Dóminus et ornávit eum, * Allelúja, allelúja.
-R. Amávit eum Dóminus et ornávit eum, * Allelúja, allelúja.
-V. Stolam glóriæ índuit eum.
-R. Allelúja, allelúja.
-&Gloria
-R. Amávit eum Dóminus et ornávit eum, * Allelúja, allelúja.
-
-[Versum Tertia]
-@Commune/C4:Versum 2
-
 [Capitulum Sexta]
-!Is 59:21
-v. Spíritus meus, qui est in te, et verba mea quæ pósui in ore tuo, non recédent de ore tuo et de ore séminis tui, dicit Dóminus, ámodo et usque in sempitérnum.
-$Deo gratias
-
-[Responsory Breve Sexta]
-R.br. Justum dedúxit Dóminus per vias rectas, * Allelúja, allelúja.
-R. Justum dedúxit Dóminus per vias rectas, * Allelúja, allelúja.
-V. Et osténdit illi regnum Dei.
-R. Allelúja, allelúja.
-&Gloria
-R. Justum dedúxit Dóminus per vias rectas, * Allelúja, allelúja.
-
-[Versum Sexta]
-@Commune/C2a:Versum 2
+!Isa 59:21
+Spíritus meus, qui est in te, et verba mea quæ pósui in ore tuo, non recédent de ore tuo et de ore séminis tui, dicit Dóminus, ámodo et usque in sempitérnum.
 
 [Capitulum Nona]
 !Mal 2:6
-v. Lex veritátis fuit in ore ejus, et iníquitas non est invénta in lábiis ejus: in pace et in æquitáte ambulávit mecum, et multos avértit ab iniquitáte.
-
-[Responsory Breve Nona]
-R.br. Justus ut palma florébit in domo Dómini, * Allelúja, allelúja.
-R. Justus ut palma florébit in domo Dómini, * Allelúja, allelúja.
-V. Sicut cedrus Líbani multiplicábitur.
-R. Allelúja, allelúja.
-&Gloria
-R. Justus ut palma florébit in domo Dómini, * Allelúja, allelúja.
-
-[Versum Nona]
-V. Justus germinábit sicut lílium:
-R. Et florébit in ætérnum ante Dóminum.
+Lex veritátis fuit in ore ejus, et iníquitas non est invénta in lábiis ejus: in pace et in æquitáte ambulávit mecum, et multos avértit ab iniquitáte.
 
 [Ant Vespera 3]
 @:Ant Laudes:1 s/$/;;109;111;112;115;125/

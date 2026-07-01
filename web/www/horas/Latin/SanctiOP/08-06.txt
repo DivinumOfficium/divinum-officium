@@ -1,0 +1,70 @@
+@Sancti/08-06
+
+[Ant Vespera]
+@Sancti/08-06:Ant Vespera:1 s/$/;;112;116;145;146;147/
+
+[Responsory Vespera 1]
+R. Dum oráret Jesus, facta est spécies vultus ejus áltera, et vestitus ejus albus refúlgens: et duo viri loquebántur cum illo,
+* Móyses et Elías visi In majestáte.
+V. Dicébant autem excéssu ejus, quem completúrus erat in Jerúsalem.
+R. Móyses et Elías visi In majestáte.
+&Gloria
+R. In maiestáte.
+
+[Hymnus Vespera]
+@Sancti/08-06:Hymnus Vespera:1-20 s/Oculos/Vultus/ s/Populíque/Plebísque/
+@Psalterium/Doxologies:EpiT
+
+[Ant 1]
+@Sancti/08-06::s/$/~/
+@Psalterium/Common/Prayers:Alleluja Simplex
+
+[Invit]
+Summum Regem glóriæ, Christum adorémus: * Et pro dono grátiæ ejus jubilémus.
+
+[Hymnus Matutinum]
+@:Hymnus Vespera
+
+[Lectio5]
+@Sancti/08-06::s/ Astipulántur.*//
+
+[Responsory5]
+@Sancti/08-06::1-2 s/\n\* (.*); (.)/\1\n* \u\2/
+@Sancti/08-06::3
+@Sancti/08-06::2 s/.*; (.)/R. \u\1/
+
+[Lectio6]
+@Sancti/08-06:Lectio5:s/.* (?=Astipulántur)// s/$/~/
+@Sancti/08-06::s/ Unde.*//
+
+[Responsory6]
+@Sancti/08-06::1-4
+&Gloria
+@Sancti/08-06::4 s/.* (\S+ \S+)$/R. \u\1/
+
+[Lectio8]
+@Sancti/08-06::s/ Hoc.*//
+
+[Lectio9]
+Primos ígitur Apostolórum seórsum assúmpsit. Et addúxit in montem: et transfigurátus est ante eos. Et resplénduit fácies ejus sicut sol: vestiménta vero ejus facta sunt alba sicut nix. Quam ob rem hos accépit? Quia excellentiôres ceteris videlicet erant. Et Petrus quidem, quia valde Christum diligébat, idcirco præstábat; Joánnes vero, qui nímium diligebátur, ac Jacóbus a respónso, quod dedit cum fratre interrogátus, dicens, Póssumus hunc cálicem bíbere.
+
+[Responsory9]
+@:Responsory Vespera 1
+
+[Responsory Breve Tertia]
+@SanctiCist/03-24:Responsory Vespera:1-4
+&Gloria
+@SanctiCist/03-24:Responsory Vespera:2
+
+[Responsory Breve Sexta]
+@Commune/C2:Responsory Breve Tertia
+
+[Responsory Breve Nona]
+@Commune/C2
+
+[Ant Vespera 3]
+@Sancti/08-06:Ant Vespera:1 s/$/;;109;110;111;112;116/
+
+[Ant 3]
+@Sancti/08-06::s/$/~/
+@Psalterium/Common/Prayers:Alleluja Simplex
