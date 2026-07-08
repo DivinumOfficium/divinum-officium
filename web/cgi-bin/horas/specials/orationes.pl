@@ -52,7 +52,7 @@ sub oratio {
     $rule .= "Oratio Dominica\n";
   }
 
-  if ( ($rule =~ /Oratio Dominica/i && (!exists($winner{Oratio}) || $hora eq 'Vespera'))
+  if ($rule =~ /Oratio Dominica/i
     || ($winner{Rank} =~ /Quattuor/i && $dayname[0] !~ /Pasc7/i && $version !~ /196|cist/i && $hora eq 'Vespera'))
   {
     my $name = "$dayname[0]-0";
