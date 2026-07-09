@@ -2,33 +2,33 @@
 /:Ezután csak a «Pater Noster» szólal meg némán, hacsak nem következik azonnal újabb óra.:/
 
 [Pater post V_]
-/:És ha így véget ér a Hivatal, csak a «Pater Noster» hangzik el némán.:/
+/:És ha így véget ér az imaóra, csak a «Pater Noster» hangzik el némán.:/
 
 [Secreto_]
 /:csendben:/
 
 [Secreto a Laudibus]
-/:Ha Matins és Lauds elválik, akkor némán kimondják::/
+/:Ha Matutínum és a Laudes külön mondatok, akkor némán imádkozzák::/
 (sed rubrica monastica)
-/:Simplex lakomákon és fergeteges napokon, és ha a Matins elkülönül a Lauds-tól, az ember csendben kezdődik::/
+/:Simplex napokon és ünnepeken, és ha a Matutinum elkülönül a Laudestől, csendben kezdődik::/
 
 [Clara voce_]
-/:Ezután hallható hangon elhangzik a vers::/
+/:Ezután fennhangon elhangzik a vers::/
 
 [Secus absolute]
 /:Egyébként az óra közvetlenül a következőképpen kezdődik::/
 (sed rubrica ^Trident)
-/:A himnusz után «Te Deum laudamus» vagy az utolsó reszponzórium elhangzott, az óra közvetlenül a következőképpen kezdődik::/
+/:A himnusz után «Te Deum laudamus» vagy az utolsó responzórium elhangzott, az imaóra közvetlenül a következőképpen kezdődik::/
 
 [Matutinum]
-!Agyd ki a többit, kivéve ha a %Laudest% külön imádkozod.
+!Hagyd ki a többit, kivéve ha a %Laudest% külön imádkozod.
 (sed rubrica tridentina)
-!A himnusz után Te Deum laudamus vagy a kilencedik vagy a harmadik reszponzórium elmondása után az ember közvetlenül a %Laudest%-szal kezdődik, a karácsony éjszakája kivételével: ebben az oratio imádkozik, majd a karácsonyi mise. a megfelelő helyen megünnepeljük.
+!A himnusz után Te Deum laudamus vagy a kilencedik vagy a harmadik responzórium elmondása után közvetlenül a %Laudessel% kezdődik, a karácsony éjszakája kivételével: ebben az oratio imádkozik, majd a karácsonyi mise. a megfelelő helyen megünnepeljük.
 
 [Matutinum] (rubrica monastica)
-!Agyd ki a többit, kivéve ha a %Laudest% külön imádkozod.
+!Hagyd ki a többit, kivéve ha a %Laudest% külön imádkozod.
 (sed rubrica tridentina aut rubrica divino)
-!Agyd ki a többit az Offices of 12 lessons-ban, kivéve ha a %Laudest% külön imádkozod. Simplex ünnepeken és lázas napokon (legyen az három vagy egy felolvasás) mindig a következőket imádkozzák.
+!Hagyd ki a többit az Offices of 12 lessons-ban, kivéve ha a %Laudest% külön imádkozod. Simplex ünnepeken és lázas napokon (legyen az három vagy egy felolvasás) mindig a következőket imádkozzák.
 
 [Deinde secreto]
 /:Ezután némán kimondják:/
