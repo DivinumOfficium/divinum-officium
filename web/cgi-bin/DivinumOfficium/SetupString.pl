@@ -586,7 +586,7 @@ sub setupstring($$%) {
     # Not yet in cache, so open it and add it.
     my ($base_sections, $new_sections) = ({}, {});
 
-    if ($lang eq $main::langfb) {
+    if ($lang eq $main::langfb && $lang ne 'Latin') {
 
       # fallback langauage layers on top of Latin.
       my $baselang = $calledlang =~ /\.\.\/missa/ ? '../missa/Latin' : 'Latin';
