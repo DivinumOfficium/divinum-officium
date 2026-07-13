@@ -191,10 +191,12 @@ sub martyrologium {
     if ($lang =~ /Latin/i) {
       $a[0] .= " $luna";
     } else {
+      $d =~ s/^0+//;
     FINDDATE:
       {
         foreach (@a) {
-          last FINDDATE if s/^U[p]+on.*?$mo[, ]*/$luna /i;
+          last FINDDATE if s/^U[p]+on.*?$mo[, ]*/$luna /i;               # English
+          last FINDDATE if s/^(Le(?: même)? $d .*?\,)/$1 \L$luna, /i;    # French
         }
 
         # Put $luna at the start if and only if we didn't find a
