@@ -4,9 +4,12 @@ Eucharistici Cordis Jesu
 Doxologia=Iesu, tibi glória / Qui Corde fundis grátiam, / Cum Patre, et almo Spíritu, / In sempitérna sáecula. Amen.
 Vesperae=CordisJesuEucharistici
 
+
+[Rule]
+proper
+
 [Oratio]
-Dómine Iesu Christe, qui divítias amóris tui erga hómines effúndens, Eucharístiæ Sacraméntum condidísti: da nobis, quǽsumus; ut amantíssimum Cor tuum dilígere, et tanto Sacraménto digne semper uti valeámus: Qui vivis et regnas cum Deo Patre in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.
-R. Amen.
+Dómine Iesu Christe, qui divítias amóris tui erga hómines effúndens, Eucharístiæ Sacraméntum condidísti: da nobis, quǽsumus; ut amantíssimum Cor tuum dilígere, et tanto Sacraménto digne semper uti valeámus: $Qui vivis
 
 [Lectio3]
 Sermo sancti Alfónsi Maríæ Epíscopi.
@@ -15,17 +18,14 @@ O si nobis datum esset amórem comprehéndere, qui in Corde Iesu ardet erga nos!
 
 [Ant Laudes]
 Desidério desiderávi * hoc pascha manducáre vobíscum, ántequam pátiar.
-
 Veníte, * comédite panem meum, et bíbite vinum, quod míscui vobis.
-
 Caro mea * vere est cibus, et sanguis meus vere est potus.
-
 O quam bonus * et suávis est, Dómine, spíritus tuus, allelúia.
-
 Lætábor * super pópulo meo, cum bene eis fécero in toto corde meo, et in tota anima mea.
 
 [Capitulum Laudes]
-Fratres: Mihi ómnium sanctórum mínimo data est grátia hæc, in géntibus evangelizáre investigábiles divítias Christi, et illumináre omnes quæ sit dispensátio sacraménti abscónditi a sǽculis in Deo, qui ómnia creávit.
+v. Fratres: Mihi ómnium sanctórum mínimo data est grátia hæc, in géntibus evangelizáre investigábiles divítias Christi, et illumináre omnes quæ sit dispensátio sacraménti abscónditi a sǽculis in Deo, qui ómnia creávit.
+$Deo gratias
 
 [Hymnus Laudes]
 E Corde Iesu pródiit
@@ -66,41 +66,50 @@ R. Ad redamándum Cor suum, allelúia.
 Sciens Iesus * quia venit hora eius ut tránseat ex hoc mundo ad Patrem: cum dilexísset suos, qui erant in mundo, in finem diléxit eos, alleluia.
 
 [Capitulum Tertia]
-Fratres: Mihi ómnium sanctórum mínimo data est grátia hæc, in géntibus evangelizáre investigábiles divítias Christi, et illumináre omnes quæ sit dispensátio sacraménti abscónditi a sǽculis in Deo, qui ómnia creávit.
+v. Fratres: Mihi ómnium sanctórum mínimo data est grátia hæc, in géntibus evangelizáre investigábiles divítias Christi, et illumináre omnes quæ sit dispensátio sacraménti abscónditi a sǽculis in Deo, qui ómnia creávit.
+$Deo gratias
 
 [Responsory Breve Tertia]
 R.br. De bono thesáuro Cordis sui profert bonum. * Allelúia, allelúia.
-V. De bono.
+R. De bono thesáuro Cordis sui profert bonum. * Allelúia, allelúia.
 V. Implens cibo et laetítia corda nostra.
-R. Allelúia, allellúia.
-V. Glória Patri, et Fílio, et Spirítui Sancto.
-R. De bono.
+R. Allelúia, allelúia.
+&Gloria
+R. De bono thesáuro Cordis sui profert bonum. * Allelúia, allelúia.
+
+[Versum Tertia]
 V. Inebriabúntur ab ubertáte domus tuae, allelúia.
 R. Et torrente voluptátis tuae potábis eos, allelúia.
 
 [Capitulum Sexta]
-Hæc dicit Dóminus: Ecce ego declinábo super Ierúsalem quase fúvium pacis, et quase torréntem inundántem gloriam géntium, quam sugétis: ad úbera portabímini, et super génua blandiéntur vobis.
+v. Hæc dicit Dóminus: Ecce ego declinábo super Ierúsalem quase fúvium pacis, et quase torréntem inundántem gloriam géntium, quam sugétis: ad úbera portabímini, et super génua blandiéntur vobis.
+$Deo gratias
 
 [Responsory Breve Sexta]
 R.br. Inebriabúntur ab ubertáte domus tuae, * Allelúia, allelúia.
-V. Inebriabúntur.
+R. Inebriabúntur ab ubertáte domus tuae, * Allelúia, allelúia.
 V. Et torrente voluptátis tuae potábis eos.
 R. Allelúia, allelúia.
-V. Glória Patri, et Fílio, et Spirítui Sancto.
-R. Inebriabúntur.
+&Gloria
+R. Inebriabúntur ab ubertáte domus tuae, * Allelúia, allelúia.
+
+[Versum Sexta]
 V. Inebriabo animam sacerdótum pinguédine, allelúia.
 R. Et pópulus meus bonis méis adimplébitur, allelúia.
 
 [Capitulum Nona]
-Lauda, fília Sion: iúbila, Is- rael: lætáre et exsúlta in omni corde, fília Ierúsalem: Rex Israel Dóminus in médio tui.
+v. Lauda, fília Sion: iúbila, Is- rael: lætáre et exsúlta in omni corde, fília Ierúsalem: Rex Israel Dóminus in médio tui.
+$Deo gratias
 
 [Responsory Breve Nona]
 R.br. Inebriabo animam sacerdótum pinguédine. * Allelúia, allelúia.
-V. Inebriábo.
+R. Inebriabo animam sacerdótum pinguédine. * Allelúia, allelúia.
 V. Et pópulus meus bonis méis adimplébitur, allelúia.
 R. Allelúia, allelúia.
-V. Glória Patri, et Fílio, et Spirítui Sancto.
-R. Inebriábo.
+&Gloria
+R. Inebriabo animam sacerdótum pinguédine. * Allelúia, allelúia.
+
+[Versum Nona]
 V. Cáritas Christi urget nos, allelúia.
 R. Ad redamándum Cor suum, allelúia.
 

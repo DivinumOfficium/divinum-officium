@@ -1,11 +1,17 @@
-[Rank]
+[Officium]
 Sancti Ioannis de Britto Martyr
-3 classis
-Commune unius Martyris
+
+[Rank]
+;;Duplex;;3;;
+(sed rubrica 1960 aut rubrica innovata)
+;;Duplex;;3;;
+
+
+[Rule]
+proper
 
 [Oratio]
-Deus, qui ad fidem cathólicam apud Indos propagándam, beátum Ioánnem Mártyrem tuum invicta constántia roborásti: ipsius méritis et intercessióne concede; ut qui triúmphi ejus memóriam recólimus, étiam fídei exémpla imitémur. Per Dóminum nostrum Iesum Christum Fílium tuum, qui tecum vivit et regnat in unitáte Spíritus Sancti Deus, per ómnia sǽcula sæculórum.
-R. Amen.
+Deus, qui ad fidem cathólicam apud Indos propagándam, beátum Ioánnem Mártyrem tuum invicta constántia roborásti: ipsius méritis et intercessióne concede; ut qui triúmphi ejus memóriam recólimus, étiam fídei exémpla imitémur. Per Dóminum nostrum Iesum Christum Fílium tuum, $Qui tecum
 
 [Commemoratio 1]
 Sancti Andreae Corsini Episcopi et Confessoris
