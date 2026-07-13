@@ -1,0 +1,26 @@
+@Sancti/06-26
+
+[Responsory1]
+R. Beáti Mártires Christi Joánnēs et Paulus dixérunt Juliáno: Nobis álius non est nisi unus Deus,
+* Pater et Fílius et Spíritus Sanctus.
+V. Una fides, unum baptísma, unus spíritus erat in eis.
+R. Pater et Fílius et Spíritus Sanctus.
+
+[Responsory2]
+@Commune/C3:Responsory8 in 2 loco
+
+[Responsory3]
+@CommuneCist/C1:Responsory12 duo
+&Gloria
+@CommuneCist/C1:Responsory12 duo:4 s/.*, (.)/R. \u$1/
+
+[Ant 2]
+@:Responsory1:1-2 s/R. // s/\n\*// s/\.$/~/
+@Psalterium/Common/Prayers:Alleluia Simplex
+
+[Ant Vespera 3]
+@Sancti/06-26:Ant Laudes:1 s/$/;;109;111;112;115;125/
+
+[Ant 3]
+@Sancti/06-26::s/\.$/~/
+@Psalterium/Common/Prayers:Alleluia Simplex

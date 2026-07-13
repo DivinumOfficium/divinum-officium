@@ -307,6 +307,7 @@ sub psalmi_minor {
     && $hora eq 'Prima'
     && ($dayname[0] =~ /(Epi|Pent)/i || $version !~ /Divino/i)
     && $dayofweek == 0
+    && $rule !~ /Non dicitur Quicumque/i
     && ( $dayname[0] =~ /(Adv|Pent01|Pasc1)/i
       || checksuffragium()
       || ($dayname[0] =~ /Epi[2-6]|Quad|Pasc[1-5]|Pent0[3-9]|Pent[12]/i && $version =~ /trident/i)
@@ -451,6 +452,7 @@ sub psalmi_major {
 
   if ($antecapitulum) {
     $w = columnsel($lang) ? $antecapitulum : $antecapitulum2;
+    $c = 3;
     setbuild2('Antiphonas ante Capitulum de praecedenti');
   } elsif ($w) {
     setbuild2("Antiphonas $winner");
@@ -480,7 +482,7 @@ sub psalmi_major {
   if (
     (
          $rule =~ /Psalmi Dominica/i
-      || ($version =~ /cist/i && $winner =~ /Sancti/i && $rank >= 2.2)
+      || ($version =~ /cist/i && (($winner =~ /Sancti/i && $rank >= 2.2) || $antecapitulum))
       || ($commune{Rule} && $commune{Rule} =~ /Psalmi Dominica/i)
     )
     && ($antiphones[0] !~ /\;\;\s*[0-9]+/)
@@ -613,6 +615,7 @@ sub psalmi_major {
   if ( alleluia_required($dayname[0], $votive)
     && $lang !~ /gabc/i
     && (!exists($winner{"Ant $hora"}) || $commune =~ /C10/)
+    && !$antecapitulum
     && $communetype !~ /ex/i
     && ($version !~ /Trident/ || $hora eq 'Vespera')
     && ($version !~ /Monastic/ || $hora ne 'Laudes' || $winner{Rank} !~ /Dominica/i))

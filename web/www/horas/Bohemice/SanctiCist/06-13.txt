@@ -1,0 +1,18 @@
+@Sancti/06-13
+
+[Ant 1]
+@Commune/C4a::s/N\./Antoníne/
+
+[Lectio5]
+@Sancti/06-13:Lectio4:s/Zanedlouho.*//
+
+[Lectio6]
+@Sancti/06-13:Lectio4:s/.*(Zanedlouho)/$1/ s/$/~/
+@Sancti/06-13:Lectio5:s/Poté přijal.*//
+
+[Lectio7]
+@Sancti/06-13:Lectio5:s/.*(Poté přijal)/$1/ s/$/~/
+@Sancti/06-13:Lectio6:s/Prošel mnoho.*//
+
+[Lectio8]
+@Sancti/06-13:Lectio6:s/.*(Prošel mnoho)/$1/

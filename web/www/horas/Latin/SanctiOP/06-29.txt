@@ -1,0 +1,127 @@
+@Sancti/06-29
+
+[Capitulum Laudes]
+@Sancti/06-29:Capitulum Sexta
+
+[Ant Vespera]
+@Sancti/02-22:Responsory7:1-2 s/R. // s/\n\*/ / s/$/;;112;116;145;146;147/
+
+[Responsory Vespera 1]
+@:Responsory3
+
+[Versum 1]
+@Sancti/06-29:Versum 0
+
+[Ant 1]
+@SanctiCist/06-29:Ant Matutinum:11 s/;;.*//
+
+[Oratio 1]
+@Sancti/06-28r:Oratio
+
+[Invit]
+Christum Regem regum adorémus Dóminum, * Qui martyrio crucis beátum glorificávit Petrum Apóstolum.
+
+[Ant Matutinum]
+In platéis ponebántur infirmi in léctulis, ut, veniente Petro, saltem umbra illíus obumbráret quemquam illórum, et liberaréntur ab infirmitátibus suis.;;18
+Ait Petrus principibus sacerdotum: Jesum, quem vos interemístis, suspendentes in ligno, hunc Deus suscitávit: et Principem et Salvátorem exaltávit ad dandam pæniténtiam in remissionem peccatórum.;;33
+Petrus Apóstolus dixit paralytico: Ænéa, sanet te Dóminus Jesus Christus: surge et sterne tibi. Qui continuo surrexit: et omnes, qui viderunt, convérsi sunt ad Dóminum.;;44
+Factum est autem ut quædam discipula, nómine Tabítha, plena opéribus bonis et eleemósynis, infirmáta morerétur: misérunt autem discipuli ad Petrum, rogántes: Ne pigritéris venire usque ad nos.;;46
+Adveniénte Petro, circumstetérunt illum omnes víduæ flentes et ostendéntes túnicas et vestes, quas faciébat illis Dorcas.;;60
+Ponens Petrus génu sua orávit, et convérsus ad corpus dixit: Tabítha, surge. At illa apéruit óculos: et viso Petro resédit: dansque illi manum eréxit eam, et sanctis ac víduis assignávit vivam.;;63
+Cornélius centú-rio, vir religiósus ac timens Deum, vidit maniféste Angelum Dei dicéntem sibi: Cornéli, mitte et accérsi Simónem, qui cognominá-tur Petrus: hic dicet tibi quid te opórteat fácere.;;74
+Apériens Petrus os suum dixit: In veri-táte cómperi quóniam non est personárum accéptor Deus, sed in omni gente, qui timet Deum et ope-rátur justítiam, accéptus est illi.;;96
+Adhuc loquente Petro, cécidit Spíritus Sanctus super omnes qui audiébant verbum: et erant; loquéntes linguis et ma-gnificántes Deum. Tunc Petrus jussit eos baptizári in nómine Dómini Jesu Christi.;;98
+
+[Responsory3]
+@Sancti/06-29:Responsory Vespera 1
+&Gloria
+@Sancti/06-29:Responsory Vespera 1:4 s/.*; (.)/R. \u$1/
+
+[Responsory4]
+@Sancti/06-29::1 s/$/~/
+@Sancti/06-29::2 s/\* // s/, (.*)/,\n* \u$1/
+@Sancti/06-29::3
+@Sancti/06-29::4 s/.*?, (.)/R. \u$1/
+
+[Responsory5]
+@Sancti/02-22:Responsory4:1-2
+V. Tibi enim a Dómino colláta est potéstas ligándi atque solvéndi.
+@Sancti/02-22:Responsory4:4
+
+[Responsory6]
+@Sancti/06-29:Responsory5
+
+[Responsory7]
+@Sancti/06-29:Responsory8
+
+[Responsory8]
+@Sancti/06-29:Responsory7:1 s/(.*,) (.)/$1\n* \u$2/ s/$/~/
+@Sancti/06-29:Responsory7:2 s/\* //
+V. Simon, ecce Satan expetivit vos ut cribráret sicut triticum: ego autem rogávi pro te.
+@Sancti/06-29:Responsory7:1-2 s/\n\* // s/.*, (.)/R. \u$1/
+
+[Responsory9]
+@SanctiCist/06-29:Responsory4:1-2
+@SanctiM/06-29:Responsory12:3
+@SanctiCist/06-29:Responsory4:4
+&Gloria
+@SanctiCist/06-29:Responsory4:4 s/.* (.*) (.*)$/R. \u$1 $2/
+
+[HymnusM Laudes]
+v. Olivæ binæ pietátis únicae,
+Fide devótos, spe robústos máxime,
+Fonte replétos caritátis géminæ,
+Post mortem carnis impetráte vivere.
+_
+Sit Trinitáti sempitérna glória,
+Honor, potéstas atque jubilátio,
+In unitáte, cui manet impérium
+Ex tunc et modo per ætérna sácula.
+Amen.
+
+[Responsory Breve Tertia]
+@Commune/C1::1 s/\* (.)/ \l$1/ s/$/ * ~/
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Commune/C1::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Commune/C1::3
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
+&Gloria
+@Commune/C1::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+
+[Capitulum Sexta]
+!Act. 12:7
+v. Angelus Dómini ástitit, et lumen refúlsit in habitáculo, percussóque látere Petri excitávit eum dicens: Surge velóciter. Et cecidérunt caténæ de má nibus ejus.
+$Deo gratias
+
+[Responsory Breve Sexta]
+@Commune/C1::1 s/\* (.)/ \l$1/ s/$/ * ~/
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Commune/C1::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Commune/C1::3
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
+&Gloria
+@Commune/C1::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+
+[Capitulum Nona]
+@Sancti/08-01:Lectio3:!2-3 s/9-// s/.*?: /v. /
+
+[Responsory Breve Nona]
+@Commune/C1::1 s/\* (.)/ \l$1/ s/$/ * ~/
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Commune/C1::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Commune/C1::3
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
+&Gloria
+@Commune/C1::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+
+[Ant Vespera 3]
+@Sancti/06-29:Ant Vespera:1 s/$/;;109;112;115;125;138/
+
+[Ant 3]
+@Sancti/07-03oct:Ant 2

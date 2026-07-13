@@ -1,0 +1,146 @@
+@Sancti/06-24
+
+[Ant Vespera]
+@Sancti/06-24:Ant 1:s/$/;;112;116;145;146;147/
+
+[Capitulum Laudes]
+!Jer 1:5
+v. Priúsquam te formárem in útero, novi te: et ántequam exíres de vulva, sanctificávi te, et prophétam in géntibus dedi te.
+
+[Responsory Vespera 1]
+@SanctiM/06-24:Responsory8_:1-2
+@Sancti/06-24:Responsory2:3
+@SanctiM/06-24:Responsory8_:4
+&Gloria
+@SanctiM/06-24:Responsory8_:4
+
+[Ant 1]
+@SanctiM/06-24:AntMatutinumMC:2
+
+[Oratio 1]
+@Sancti/06-23:Oratio
+
+[Nocturn 1 Versum]
+@Commune/C2:Versum 1
+
+[Lectio1]
+@Sancti/06-24::!3-5 s/1-5/4-8/
+@Sancti/06-24:Lectio2:2-4
+
+[Lectio2]
+Léctio Isaíæ Prophétæ
+!Is 49 1-3,5
+1 Audíte ínsulæ, et atténdite, pópuli de longe: Dóminus ab útero vocávit me: de ventre matris meæ recordátus est nóminis mei.
+2 Et pósuit os meum quasi gládium acútum, in umbra manus suæ protéxit me, et pósuit me sicut sagíttam eléctam: in pháretra sua abscóndit me.
+3 Et dixit mihi: Servus meus es tu Israël, quia in te gloriábor.
+5 Et nunc dicit Dóminus, formans me ex útero servum sibi, ut redúcam Jacob ad eum, et Israël non congregábitur: et glorificátus sum in óculis Dómini, et Deus meus factus est fortitúdo mea.
+
+[Responsory2]
+@Sancti/06-24::1-2
+V. Erat quidem infecunda corpore, sed servata mysterio: caruitque sterilitatis opprobrio, gignendo filium de cælo promissum.
+@Sancti/06-24::4
+
+[Lectio3]
+!Is 40:1-4
+1 Consolámini, consolámini pópule meus, dicit Deus vester.
+2 Loquímini ad cor Jerúsalem, et advocáte eam, quóniam compléta est malítia ejus, dimíssa est iníquitas illíus: suscépit de manu Dómini duplícia pro ómnibus peccátis suis.
+3 Vox clamántis in desérto: Paráte viam Dómini, rectas fácite in solitúdine sémitas Dei nostri.
+4 Omnis vallis exaltábitur, et omnis mons et collis humiliábitur, et erunt prava in dirécta, et áspera in vias planas.
+
+[Responsory3]
+@Sancti/06-24::1-2
+@Sancti/06-24:Ant Matutinum:5 s/^/V. / s/\* // s/;;.*//
+@Sancti/06-24::4
+
+[Nocturn 2 Versum]
+@Commune/C2:Nocturn 2 Versum
+
+[Lectio4]
+@Sancti/06-24::s/ Joánnes autem.*//
+
+[Responsory4]
+@Sancti/06-24::1-2
+V. Ne timeas, Zachária, quóniam exaudita est orátio tua: et Élisabeth uxor tua pariet tibi filium.
+@Sancti/06-24::4
+
+[Lectio5]
+@Sancti/06-24:Lectio4:s/.* (?=Joánnes autem)//s s/$/~/
+@Sancti/06-24::s/ Ergo.*//
+
+[Responsory5]
+@Sancti/06-24::1-2 s/\n\* (.)/ \l$1/ s/demonstrávit, (.*)/demonstrábat,\n* \u$1/ s/illuminávit/illuminábat/
+@Sancti/06-24:Responsory1:3
+@Sancti/06-24::2 s/.*, (.*)/R. \u$1/ s/illuminávit/illuminábat/
+
+[Lectio6]
+@Sancti/06-24:Lectio5:s/.* (?=Ergo)// s/$/~/
+@Sancti/06-24::s/ De .*//
+
+[Responsory6]
+@Sancti/06-24::1-2 s/\n\* (.)/ \u$1/ s/: (.)/:\n* \u$1/
+V. Vicíni quoque et cognáti ejus vénérunt circumcidere puerum, et sciscitáti sunt cum quo nómine vocarétur.
+@Sancti/06-24::1-2 s/\n\* (.)/ \u$1/ s/.*?: (.)/R. \u$1/
+&Gloria
+@Sancti/06-24::2 s/\*/R./
+
+[Nocturn 3 Versum]
+@Commune/C2:Nocturn 3 Versum
+
+[Lectio7]
+@Sancti/06-24::s/ Et ídeo in Evangélio.*//
+
+[Lectio8]
+@Sancti/06-24:Lectio7:s/.* (?=Et ídeo in Evangélio)//s s/$/~/
+@Sancti/06-24::s/ Et.*//
+
+[Lectio9]
+@Sancti/06-24:Lectio8:s/.* (?=Et)// s/$/~/
+@Sancti/06-24::s/ Sic Jacob.*//
+
+[Versum 2]
+@CommuneOP/C2:Versum 2
+
+[Responsory Breve Tertia]
+@Sancti/08-06:Responsory Breve Sexta
+
+[Versum Tertia]
+@Commune/C2:Nocturn 2 Versum
+
+[Capitulum Sexta]
+@Sancti/06-24:Capitulum Laudes
+
+[Responsory Breve Sexta]
+@Commune/C2::1 s/\* (.)/ \l$1/ s/$/ * ~/
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Commune/C2::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Commune/C2::3
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
+&Gloria
+@Commune/C2::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+
+[Versum Sexta]
+@Commune/C2:Nocturn 3 Versum
+
+[Capitulum Nona]
+@:Lectio2:2 s/1-3,5/2/
+@:Lectio2:4 s/2 \w+ (.)/v. \u$1/ s/:.*/./
+$Deo gratias
+
+[Responsory Breve Nona]
+@Commune/C2::1 s/\* (.)/ \l$1/ s/$/ * ~/
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Commune/C2::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+@Commune/C2::3
+@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
+&Gloria
+@Commune/C2::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
+@Psalterium/Common/Prayers:Alleluia Duplex
+
+[Versum Nona]
+@CommuneOP/C2:Versum 2
+
+[Ant Vespera 3]
+@Sancti/06-24:Ant Laudes:1 s/$/;;109;111;112;115;125/

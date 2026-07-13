@@ -1,5 +1,165 @@
 [Officium]
-Ss. John, O.P. and Companions, Mm.
+Ss. Joannis O. P. et Sociorum Martyrum
 
 [Rank]
 ;;Duplex;;3;;vide C3
+
+[Invit]
+Deum, qui suos Mártýres ætérnis corónis decorávit, * Veníte, adorémus.
+
+[Hymnus Matutinum]
+v. Hæresum surgunt nova monstra: crescit
+Militum Christi pietas et ardor,
+Scútaque invíctæ fidei tenéntes,
+Fórtiter instant.
+_
+Tu, Deus, clamant, hómini parásti
+Cælicum panem, solidáque in arce,
+Christe, tu Petro fidei dedísti
+Esse Magistrum.
+_
+Jam phalanx pergit generósa morti
+Obviam; Jesum vocat hic, Mariám
+Alter implórat, moriénte Matrem
+Ore salútans.
+_
+Sic diem fortes óbeunt suprémum,
+Hostis insáni fera vis triúmphat,
+Membra spargúntur temeráta, terram
+Sanguis inúndat.
+_
+Sit Patri virtus, honor et potéstas,
+Fílio sit laus párilis per ævum,
+Flámini sancto résonent perénni
+Cántica voce.
+Amen.
+
+[Ant Matutinum]
+Non abiérunt in consílio impiórum, sed in lege Dómini fuit volúntas eórum.;;1
+Super Sion, montem sanctum Dómini, prædicábant præcéptum ejus.;;2
+Oculi Dómini in páuperes respíciunt, quóniam justus Dóminus et justítias diléxit.;;10
+Habitábunt in tabernáculo Dei, et requiéscent victóres in monte sancto ejus.;;14
+Dóminus pars hereditátis eórum et cálicis eórum: ipse est qui restítuit hereditátem eis.;;15
+Ascéndent in montem Dómini et stabunt in loco sancto ejus: et accípient benedictiónem a Dómino.;;23
+Oculi Dómini super justos, ut éruat a morte ánimas eórum.;;32
+Juxta est Dóminus iis qui tribuláto sunt corde, et húmiles spíritu salvábít: rédimet Dóminus ánimas servórum suórum.;;33
+Dóminus virtútum nobiscum: suscéptor noster Deus Jacob.;;45
+
+[Lectio1]
+@Tempora/083-1::s/-6/-8/ s/autem //
+@Tempora/083-1:Lectio2:2-3
+
+[Sap 5 15]
+15 quóniam spes ímpii tamquam lanúgo est quæ a vento tóllitur, et tamquam spuma grácilis quæ a procélla dispérgitur, et tamquam fumus qui a vento diffúsus est, et tamquam memória hóspitis uníus diéi prætereúntis.
+
+[Lectio2]
+@CommuneM/C2p:Lectio1:s/-4/-7; 14-17/ s/(\d) (.)/$1 Tunc \l$2/
+@CommuneM/C2p:Lectio2:!1
+@:Sap 5 15
+@CommuneM/C2p:Lectio3:!1
+
+[Lectio94]
+Sæculum dēcimum sextum, Calvinianæ pravitātis tumultibus memorābile, insigne christiānæ fortitudinis in Hollāndia tulit exēplum. Novēdecim quippe mārtyres, Gorcomiēses nuncupāti, pro asserēda reāli Cōrporis Christi in Eucharistia præsēntia et Romāni Pontificis primātu, gloriōse certārunt. His adnumerātur Joānnes Germānus ordinis Prædicatōrum, cœnōbii Coloniēsis alūmus. Is cum, superiōrum nutu, Hornariēsem in Hollāndia parōciam administrāret atque infāntuli baptizāndi grātia oppidum Gorcom adiret, a satellitibus deprehēsus et in carcerem coniēctus, ceterōrum sacerdotum et religiosōrum pro causa fidei ibi jam degēntium sortis pārticeps factus est. Vāriis ludibriis et tormētis per dies noctēsque plūrimas exagitāta est eōrum constantia. Deinde in navem impōsiti seminūdi Brilam adducūntur, incredibilia in itinere a militibus, nautis et hærētica plebe passi. Tandem trahi appēnsi, adstrictis lāqueo fāucibus, martýrii palmam accepērunt die nono iūlii anni millésimi quingentésimi septuagésimi secūdi. Mirāculis claros Pius nonus Sanctōrum fastis adscripsit.
+
+[Responsory3]
+R. Audita est quasi vox turbārum multārum in cælo dicēntium: Allelúja:
+* Salus et glória et virtus Deo nostro In sæcula sæculōrum.
+V. Quia vera et justa sunt judicia ejus, et vindicāvit sāguinem servōrum suōrum.
+R. Salus et glória et virtus Deo nostro In sæcula sæculōrum.
+&Gloria
+R. In sæcula sæculōrum.
+
+[Ant Laudes]
+Induit Dóminus Sanctos suos fortitudine, et testimónia ejus credibilia facta sunt nimis.
+Oves páscae Dómini introiērunt portas ejus in confessiōe et átria ejus in hymnis.
+Lábiis exsultatiōnis laudābunt Dóminum: obstrúctum est os loquēntium iniqua.
+Benedícite, sacerdótes Dómini, Dóminum: laudáte et superexaltáte eum in sǎcula.
+Exsultábunt Sancti in glória, et lætabúntur in cubílibus suis.
+
+[Capitulum Laudes]
+!Ap 12:11
+v. Sancti vicérunt propter sánguinem Agni et propter verbum testimónii sui: et non dilexérunt ánimas suas usque ad mortem.
+$Deo gratias
+
+[Hymnus Laudes]
+Nocte jam pulsa, rutilántis astra
+Splendor illústrat púgilum triúmphos,
+Qui modo in campo cecidére fortes
+Gorcomiénsi.
+_
+Astra conscéndunt: Deus ipse lætos
+Excipit cæli dómibus, supréma
+Luce donándos, Deus ipse merces
+Factus in ævum.
+_
+Plaudit et tellus celebrátque sanctum
+Mártyrum nomen: vólitat per oras
+Fama victórum, meritósque digna
+Laude repéndit.
+_
+O triumpháli redimita serto
+Mártyrum Christi veneránda proles,
+Huc tuis adsis memor, ac poténti
+Nos prece salva.
+_
+Sit Patri virtus, honor et potéstas,
+Fílio sit laus párilis per ævum,
+Flámini sancto résonent perénni
+Cántica voce.
+Amen.
+
+[Ant 2]
+Dóminus, Deus Israél, visitávit et fecit redemptionem servórum suórum: glorificávit nomen eórum in ætérnum, et eréxit cornu salútis nobis.
+
+[Oratio]
+Deus, qui beatórum Mártyrum tuórum Joánnis et sociórum ejus gloriósum pro fide tua certámen æternitátis láurea decorásti: concéde propítius ut, eórum méritis et imitatione certátes in terris, cum ipsis coronári mereámur in cælis.
+$Per Dominum
+
+[Evangelium]
+Secúndum Lucam
+!Cap. 6
+In illo témpore: Dixit Jesus discipulis suis: Beáti éritis, cum vos óderint hómines et cum separáverint vos, et exprobráverint et eiécerint nomen vestrum tamquam malum propter Filium hominis.
+
+[Capitulum Sexta]
+@CommuneM/C2p:Lectio3:!2 s/16-// s/17 Ideo/v. Justi/
+
+[Capitulum Nona]
+!He 12:22-23
+v. Accessístis ad Sion montem, et civitátem Dei vivéntis, Jerúsalem cæléstem, et multórum míllium angelórum frequéntiam, et Ecclésiam primitivórum, qui conscrípti sunt in cælis.
+$Deo gratias
+
+[Ant Vespera 3]
+@:Ant Laudes:1 s/$/;;109;112;115;125;139/
+
+[Hymnus Vespera]
+v. Mártýrum virtus valídumque robur,
+Palma victórum, decus et coróná,
+Christe Rex, tanti mémorurum triúmphi
+Vócibus adsis.
+_
+Hac die sacra pópulus fidélis
+Míletes Christi, fidei colúmna,
+Agmen invíctum celebráre digno
+Cármine gestit.
+_
+Inter hos noster júbilans triúmphum
+Ordo præclári récolit Joánnis,
+Qui suam pastor bonus immolávit
+Pro grege vitam.
+_
+Férvidi sacro pietátis igne,
+Pábulum præbent pópulo salútis:
+Nec minæ terrent: Deus ipse corda
+Próvidus afflat.
+_
+Sit Patri virtus, honor et potéstas,
+Filio sit laus párilis per ævum,
+Flámini sancto résonent perénni
+Cántica voce.
+Amen.
+
+[Versum 3]
+@Commune/C2:Versum 0:s/N\./Joánnes cum sóciis tuis/
+
+[Ant 3]
+Exaltávit Dóminus húmiles servos suos, et suscepit eos in tabernácula sancta, recordátus misericórdiæ suæ.

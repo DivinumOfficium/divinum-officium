@@ -1,0 +1,23 @@
+[Officium]
+S. Bathonis Confessoris
+
+[Rank]
+;;Simplex;;1.1;;vide C5
+
+[Rule]
+vide C5;
+
+[Name]
+Bathónis
+
+[Versum 1]
+@Commune/C5:Versum 2
+
+[Ant 1]
+@Commune/C5:Ant 2
+
+[Versum 2]
+@Commune/C5:Versum 1
+
+[Ant 2]
+@Commune/C5:Ant 1

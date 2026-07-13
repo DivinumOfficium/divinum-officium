@@ -1,0 +1,28 @@
+@Tempora/Pent02-3
+
+[Rule]
+ex TemporaCist/Pent01-4;
+Doxology=CorpT
+Psalmi Feria 
+no secunda vespera
+
+[Ant Matutinum] 
+@TemporaCist/Pent01-5
+
+[MM Capitulum]
+@TemporaCist/Pent01-5
+
+[MM LB]
+@TemporaCist/Pent01-5
+
+[Nocturn 1 Versum]
+@TemporaCist/Pent01-4:Responsory TertiaM
+
+[Ant 2]
+@TemporaCist/Pent01-5
+
+[Ant 3]
+@TemporaCist/Pent01-5
+
+[Ant Vespera 3]
+@TemporaCist/Pent01-5

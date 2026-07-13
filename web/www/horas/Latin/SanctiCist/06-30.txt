@@ -1,7 +1,8 @@
 @Sancti/06-30
 
-[Rule] (nisi rubrica 1963)
+[Rule]
 12 lectiones
+no prima vespera
 
 [Ant Vespera] 
 @:Ant Laudes:s/$/_/gm s/_/;;109/ s/_/;;112/ s/_/;;115/ s/_/;;125/ s/_//

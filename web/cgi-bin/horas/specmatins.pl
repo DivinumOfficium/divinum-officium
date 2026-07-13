@@ -207,8 +207,16 @@ sub nocturn {
   our ($version);
 
   if ($num) {
-    push(@s, '!' . translate('Nocturn', $lang) . ' ' . ('I' x $num));
+
+    # Multiple Nocturns
+    if ($lang eq 'Francais') {
+      push(@s, '!' . ('I' x $num) . ($num > 1 ? 'e ' : 'er ') . translate('Nocturn', $lang));
+    } else {
+      push(@s, '!' . translate('Nocturn', $lang) . ' ' . ('I' x $num));
+    }
   } else {
+
+    # Single Nocturn
     push(@s, '!' . translate('Ad Nocturnum', $lang));
   }
 
@@ -1611,7 +1619,7 @@ sub initiarule {
 
   my $initfile = get_from_directorium('stransfer', $version, $key, $year, $dioecesis);
 
-  $initfile =~ s/;;.*$//;    # remove dioecesis flag
+  $initfile =~ s/(XX-XX)?;;.*$//;    # remove dioecesis flag and dioecesis cancellation overwrites
   return $initfile;
 }
 

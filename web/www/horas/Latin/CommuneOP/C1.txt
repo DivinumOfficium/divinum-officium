@@ -23,6 +23,11 @@ R. Possidébitis ánimas vestras.
 @CommuneCist/C1::11 s/, \S*?$/.;;74/
 @Commune/C1::9 s/, \S*?$/, quæ dedit illis.;;98/
 
+[Responsory1]
+@Commune/C1::1-2
+@Commune/C1:Ant 1:s/^/R. // s/\* // s/(.+?,) (.+?),.*/$1 $2./
+@Commune/C1::2 s/\*/R./
+
 [Responsory5]
 @Commune/C1:Responsory6
 

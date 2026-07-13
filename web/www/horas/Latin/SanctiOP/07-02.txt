@@ -1,0 +1,143 @@
+@Sancti/07-02
+
+[Lectio1]
+@Sancti/07-02::1-8 s/-7/-6/
+
+[Responsory1]
+@SanctiM/07-02:Responsory8
+
+[Lectio2]
+@Sancti/07-02::1 s/8-13/7-9/
+@Sancti/07-02:Lectio1:9
+@Sancti/07-02::2-3
+
+[Responsory2]
+R. Gloriósæ Virginis Mariæ Visitatiónem digníssimam recolámus:
+* Cujus Dóminus humilitátem respéxit: quæ Angelo nuntiánte concépit Redemptórem mundi.
+V. Hódie visitávit Elísabeth beáta Virgo María ex progénie David.
+R. Cujus Dóminus humilitátem respéxit: quæ Angelo nuntiánte concépit Redemptórem mundi.
+
+[Lectio3]
+@Sancti/07-02:Lectio2:!2-3 s/8-13/10-14/
+@Sancti/07-02::2-3
+
+[Responsory3]
+R. Stirps Jesse virgam produxit, virgáque florem:
+* Et super hunc florem Requíescit Spíritus almus.
+V. Virgo Dei Génetrix virga est: flos Fílius ejus.
+R. Et super hunc florem Requíescit Spíritus almus.
+&Gloria
+R. Requíescit Spíritus almus.
+
+[Lectio4]
+@Sancti/07-02::s/ Sum.*//
+
+[Responsory4]
+R. Visitatio gloriósæ Virginis Mariæ ex sémine Abrahæ, ortæ de tribu Juda, clara ex stirpe David:
+* Cujus vita ínclita cunctas illústrat Ecclésias.
+V. Regáli ex progénie Maríá exórta refulget.
+R. Cujus vita ínclita cunctas illústrat Ecclésias.
+
+[Lectio5]
+@Sancti/07-02:Lectio4:s/.* (?=Sum)//s s/$/~/
+@Sancti/07-02::s/; nondum.*//
+
+[Responsory5]
+R. Visitatio tua, Dei Génatrix Virgo, gáudium annuntiávit univérso mundo:
+* Ex te enim ortus est Sol justítiæ, Christus Deus noster, qui solvens maledictiónem dedit benedictiónem, et confúndens mortem donávit nobis vitam sempitérnam.
+V. Felix namque es, quæ sola Genetrícis dignitatem obtinuísti, et virginálem pudicitiam non amisísti.
+R. Ex te enim ortus est Sol justítiæ, Christus Deus noster, qui solvens maledictiónem dedit benedictiónem, et confúndens mortem donávit nobis vitam sempitérnam.
+
+[Lectio6]
+@Sancti/07-02:Lectio5:s/.*; (nondum)/\u$1/ s/$/~/
+
+[Responsory6]
+R. Ad nutum Dómini nostrum ditántis honórem,
+* Sicut spina rosam, génuít Judæa Mariam. 
+V. Ut vitium virtus operíret, grátia culpam.
+R. Sicut spina rosam, génuít Judæa Mariam. 
+
+[Lectio7]
+@Sancti/07-02::s/ Istæ.*//
+
+[Responsory7]
+@SanctiM/09-08:Responsory4
+
+[Lectio8]
+@Sancti/07-02:Lectio7:s/.* (?=Istæ)//s s/$/~/
+@Sancti/07-02::s/ Mansit.*//
+
+[Responsory8]
+@SanctiCist/09-08:Responsory6:1-2 s/ V.rginis//
+@SanctiM/09-08:Responsory8:3 s/Nativitátem beátæ /Visitatiónem sancte /
+@SanctiCist/09-08:Responsory6:4 s/ V.rginis//
+
+[Lectio9]
+@Sancti/07-02:Lectio8:s/.* (?=Mansit)// s/$/~/
+@Sancti/07-02
+
+[Responsory9]
+@Commune/C11:Responsory7:s/ festivitátem/Visitatiónem/
+&Gloria
+@Commune/C11:Responsory7:4 s/.*?, (.)/R. \u$1/
+
+[Ant Laudes]
+@Sancti/12-08o:Ant Vespera:s/;;.*//g s/Conceptio/Visitatio/g s/beatæ/sanctæ/
+
+[Capitulum Laudes]
+@SanctiCist/07-02:Capitulum Sexta:s/\* //g s/§ // s/, §.*/./
+
+[Versum 2]
+@CommuneOP/C7
+
+[Ant 2]
+Visitatiónem hodiérnam perpétuæ Vírginis Genitrícis Dei Maríæ solémniter celebrémus, qua celsitúdo throni procéssit, allelúja.
+
+[Oratio]
+v. Omnípotens et misericors Deus, maiestatem tuam suppliciter exorámus: ut, sicut Unigénitum tuum per Visitationem et salutationem Genetrícis ejus púero clauso in útero revelásti, ita, méritis ejusdem Genetrícis et précibus, ipsum nos fácias reveláta facie perpétuo contemplári:
+$Qui tecum
+
+[Responsory Breve Tertia]
+R. Sancta Dei Génatrix,
+* Virgo semper Mariá. Sancta Dei Génatrix.
+V. Intercéde pro nobis ad Dóminum Deum nostrum.
+R. Virgo semper Mariá. Sancta Dei Génatrix.
+&Gloria
+R. Sancta Dei Génatrix.
+
+[Versum Tertia]
+@Commune/C12:Verse Nona
+
+[Capitulum Sexta]
+!Cant 2:8-9
+v. Ecce diléctus meus venit sáliens in móntibus, transiliens colles: similis est cápreæ hinnulóque cervórum.
+$Deo gratias
+
+[Responsory Breve Sexta]
+@Sancti/10-07
+
+[Versum Sexta]
+@Sancti/10-07
+
+[Capitulum Nona]
+!Ct 2:14
+v. Osténde mihi fáciem tuam, sonet vox tua in áuribus meis: vox enim tua dulcis, et fácies tua decóra.
+$Deo gratias
+
+[Responsory Breve Nona]
+@Sancti/10-07
+
+[Versum Nona]
+@CommuneOP/C10:Versum 2
+
+[Ant Vespera 3]
+@SanctiOP/07-02:Responsory4:1 s/R. // s/.$/;;109;112;121;126;147/
+
+[Versum 3]
+@Commune/C11:Versum 0
+
+[Ant 3]
+@Sancti/09-08::s/Natívitas/Visitátio/
+
+[Ant Completorium3]
+@CommuneOP/C12:Ant Completorium

@@ -13,11 +13,6 @@ Antiphonas Horas
 
 [Ant Vespera] (rubrica tridentina aut rubrica divino)
 @TemporaM/Pent01-4:Ant Vespera 3
-(sed rubrica cisterciensis)
-@Tempora/Pent01-4
-
-[Ant Matutinum] (rubrica cisterciensis)
-@TemporaM/Pent01-4
 
 [Lectio1]
 @TemporaM/Pent01-4
@@ -42,8 +37,6 @@ Antiphonas Horas
 
 [Lectio8]
 @Tempora/Pent02-4:Lectio6
-(sed rubrica cisterciensis)
-@Tempora/Pent02-4:Lectio6:s/.*(Erant et)/$1/
 
 [Lectio9]
 @Tempora/Pent02-4:Lectio7: s/Símili .*//
@@ -53,15 +46,9 @@ Antiphonas Horas
 
 [Lectio11]
 @Tempora/Pent02-4:Lectio8
-(sed rubrica cisterciensis)
-@Tempora/Pent02-4:Lectio8:s/Quando .*//
 
 [Lectio12]
 @Tempora/Pent02-4:Lectio9
-
-[Lectio12] (rubrica cisterciensis)
-@Tempora/Pent02-4:Lectio8:s/.*(Quando)/$1/ s/$/~/
-@Tempora/Pent02-4:Lectio9:s/Sedat .*//
 
 [Evangelium]
 @Tempora/Pent01-4
