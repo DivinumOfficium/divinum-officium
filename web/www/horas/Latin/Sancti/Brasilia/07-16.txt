@@ -1,18 +1,12 @@
 [Officium]
-Beatae Mariae Virginis de Monte Carmelo
+Beatæ Mariæ Virginis de Monte Carmelo
 
-[Rank]
-;;Duplex;;3;;ex C11
-(sed rubrica 1960 aut rubrica innovata)
-;;Duplex;;3;;ex C11
+[Rank] (rubrica 196)
+;;Simplex;;;vide C11
 
-
-[Rule]
-ex C11;
-proper
-Psalmi Dominica
-Antiphonas Horas
-Doxology=Nat
+[Ant 2]
+Caput tuum * ut Carnélus, et comae cápitis tui sicut púrpura Regis vincta canálibus, allelúja.
 
 [Oratio]
-Deus, qui beatíssimæ semper Vírginis et Genetrícis tuæ Maríæ singulári título Carméli órdinem decorásti: concéde propítius; ut, cujus hódie Commemoratiónem solémni celebrámus offício, ejus muníti præsídiis, ad gáudia sempitérna perveníre mereámur: $Qui vivis
+Deus, qui beatíssimæ semper Vírginis et Genetrícis tuæ Maríæ singulári título Carméli órdinem decorásti: concéde propítius; ut, cujus hódie Commemoratiónem solémni celebrámus offício, ejus muníti præsídiis, ad gáudia sempitérna perveníre mereámur:
+$Qui vivis
