@@ -195,8 +195,10 @@ sub martyrologium {
     FINDDATE:
       {
         foreach (@a) {
-          last FINDDATE if s/^U[p]+on.*?$mo[, ]*/$luna /i;               # English
-          last FINDDATE if s/^(Le(?: même)? $d .*?\,)/$1 \L$luna, /i;    # French
+          last FINDDATE if s/^U[p]+on.*?$mo[, ]*/$luna /i;                                                    # English
+          last FINDDATE if s/^(Le(?: même)? $d .*?\,)/$1 \L$luna, /i;                                         # French 1
+          last FINDDATE if s/^((?:Le $d des|La veille des|Aux) (?:ides|calendes|nones).*)/$1, \L$luna, /i;    # French 2
+          last if /^\s*\_\s*/;
         }
 
         # Put $luna at the start if and only if we didn't find a
@@ -355,7 +357,7 @@ sub gregor {
   } elsif ($lang =~ /Polski/i) {
     return ("Roku Pańskiego $year");
   } elsif ($lang =~ /Francais/i) {
-    return ("L’année du Seigneur $year, le $gday" . "e jour de la Lune");
+    return ("Le $gday" . "e jour de la Lune, l’année du Seigneur $year");
   } elsif ($lang =~ /Italiano/i) {
     return ("Anno del Signore $year, $day $months_it[$month - 1], Luna $gday");
   } elsif ($lang =~ /Bohemice/i) {
