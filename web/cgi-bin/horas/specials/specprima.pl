@@ -191,13 +191,12 @@ sub martyrologium {
     if ($lang =~ /Latin/i) {
       $a[0] .= " $luna";
     } else {
-      $d =~ s/^0+//;
     FINDDATE:
       {
         foreach (@a) {
           last FINDDATE if s/^U[p]+on.*?$mo[, ]*/$luna /i;                                                    # English
-          last FINDDATE if s/^(Le(?: même)? $d .*?\,)/$1 \L$luna, /i;                                         # French 1
-          last FINDDATE if s/^((?:Le $d des|La veille des|Aux) (?:ides|calendes|nones).*)/$1, \L$luna, /i;    # French 2
+          last FINDDATE if s/^(Le(?: même)? \d+ .*?\,)/$1 \L$luna, /i;                                        # French 1
+          last FINDDATE if s/^((?:Le \d+ des|La veille des|Aux) (?:ides|calendes|nones).*)/$1, \L$luna : /i;  # French 2
           last if /^\s*\_\s*/;
         }
 
