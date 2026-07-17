@@ -194,9 +194,9 @@ sub martyrologium {
     FINDDATE:
       {
         foreach (@a) {
-          last FINDDATE if s/^U[p]+on.*?$mo[, ]*/$luna /i;                                                    # English
-          last FINDDATE if s/^(Le(?: même)? \d+ .*?\,)/$1 \L$luna, /i;                                        # French 1
-          last FINDDATE if s/^((?:Le \d+ des|La veille des|Aux) (?:ides|calendes|nones).*)/$1, \L$luna : /i;  # French 2
+          last FINDDATE if s/^U[p]+on.*?$mo[, ]*/$luna /i;                                                   # English
+          last FINDDATE if s/^(Le(?: même)? \d+ .*?\,)/$1 \l$luna, /i;                                       # French 1
+          last FINDDATE if s/^((?:Le \d+ des|La veille des|Aux) (?:ides|calendes|nones).*)/$1, \l$luna/i;    # French 2
           last if /^\s*\_\s*/;
         }
 
