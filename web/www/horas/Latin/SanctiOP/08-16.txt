@@ -1,0 +1,25 @@
+@Sancti/08-16
+
+[Lectio4]
+@Sancti/08-16::s/ Anna rursus.*//
+
+[Lectio5]
+@Sancti/08-16::s/.* O /O / s/$/~/
+@Sancti/08-16:Lectio6:s/ Pudóre.*//
+
+[Lectio6]
+@Sancti/08-16::s/.* O /O / s/$/~/
+O castíssimum rationalium túrturum par! Juxta natúræ legem castitáte serváta, quæ supra natúram erant accipere meruistis, et, ad justítiam seminántes, fructum vitæ messuistis.
+
+[Responsory6]
+@CommuneOP/C4:Responsory Vespera 1:s/N\./Joachim/g
+
+[Lectio7]
+@Sancti/09-15t::s/ Hæc.*//
+
+[Lectio8]
+@Sancti/09-15t:Lectio7:s/.* (Hæc) igitur/$1 /s s/$/~/
+@Sancti/09-15t::s/ Quantum.*//
+
+[Lectio9]
+@Sancti/09-15t:Lectio8:s/.* (Quantum) enim/$1/
