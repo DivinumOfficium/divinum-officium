@@ -26,6 +26,8 @@ sub capitulum_major {
   # Shorter pause at Flexa in Ant. Monasticum
   $capit =~ s/†\(\;\)/†(,)/g if $lang eq 'Latin-gabc' && $version =~ /monastic/i;
 
+  _format_capitulum(\$capit) unless $lang eq 'Latin-gabc';
+
   if ($vespera == 1 && $version =~ /Ordo Praedicatorum/) {
     $capit .= "\n_\n" . monastic_major_responsory($lang);
   }
@@ -243,13 +245,28 @@ sub capitulum_minor {
   $name = "Capitulum $hora";
   $name =~ s/Tertia/Laudes/ if ($hora eq 'Tertia' && $votive !~ /C12/);
   my ($w, $c) = getproprium($name, $lang, 1);
+  $capit = $w || $capit;
 
   if ($hora ne 'Completorium') {
     setcomment($label, 'Source', $w ? $c : $comment, $lang);
   }
 
+  _format_capitulum(\$capit) unless $lang eq 'Latin-gabc';
+
   # return adjoining responsory
-  ($w || $capit) . "\n_\n" . minor_reponsory($lang);
+  $capit . "\n_\n" . minor_reponsory($lang);
+}
+
+### _format_capitulum($textref)
+# add initial (v.) & $Deo gratias if neccessary
+sub _format_capitulum {
+  my $textref = shift;
+  my @lines = split(/\n/, $$textref);
+
+  $lines[1] =~ s/^(?:[vV]\.\s*)?/v. /;
+  push @lines, '$Deo gratias' unless index($lines[-1], '$Deo gratias') == 0;
+
+  $$textref = join("\n", @lines);
 }
 
 1;
