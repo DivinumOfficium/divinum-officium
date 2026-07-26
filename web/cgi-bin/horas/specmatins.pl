@@ -1101,7 +1101,7 @@ sub lectio : ScriptFunc {
       && ($homilyflag == 1 || exists($commemoratio{"Lectio$j0"}))
       && $comrank > 1
       && $version !~ /Cist/i
-      && ($rank > 4 || ($rank >= 3 && $version =~ /Trident/i) || $homilyflag == 1))
+      && ($rank > 4 || ($rank >= 3 && $version =~ /Trident/i) || $homilyflag == 1 || $votive ne 'Hodie'))
 
       #  || exists($commemoratio{Lectio1}) removed as it results in a wrong commemoration of Die infra 8vam (e.g., 2024-04-23)
     {
