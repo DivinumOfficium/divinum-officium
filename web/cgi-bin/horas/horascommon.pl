@@ -1827,7 +1827,7 @@ sub precedence {
 
         # Make Votive Matutinum fully Sanctoral (Duplex, 3 Nocturns) irrespective of rank of the day
         $rule .= "\n9 lectiones";
-        $rank = 4;
+        $rank = 4.91;
         $duplex = 3;
       }
 
