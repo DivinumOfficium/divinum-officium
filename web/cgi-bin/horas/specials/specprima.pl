@@ -142,48 +142,29 @@ sub martyrologium {
 
   our ($version, $year, $month, $day, $dayofweek);
 
-  my $t = '';    # Title and Comment is now set in specials.pl for #Martyrolgium
+  my $dir = 'Martyrologium';
+  $dir .= '1570' if $version =~ /1570/;
+  $dir .= '1960' if $version =~ /1960|Newcal/;
+  $dir .= '1955R' if $version =~ /1955/;
+  $dir = substr($dir, 0, 13) unless -e "$datafolder/$lang/$dir";
 
-  my $a = getweek($day, $month, $year, 1) . "-" . (($dayofweek + 1) % 7);
-  my %a = %{setupstring($lang, "Martyrologium/Mobile.txt")};
+  my $mobile = do {
+    my $a = getweek($day, $month, $year, 1) . "-" . (($dayofweek + 1) % 7);
+    $a = '10-DU' if ($version !~ /1570|1617|1888|1910/ && $month == 10 && $dayofweek == 6 && $day > 23 && $day < 31);
+    $a = 'Defuncti' if $winner{Rank} =~ /ex C9/i;
+    $a = 'DefunctiM' if ($month == 11 && $day == 14 && $version =~ /Monastic/);
+    my %a = %{setupstring($lang, "$dir/Mobile.txt")};
+    $a{$a};
+  };
 
-  if ($version =~ /1570/ && $lang =~ /Latin/i) {
-    %a = %{setupstring($lang, "Martyrologium1570/Mobile.txt")};
-  }
+  my ($m, $d) = split('-', nextday($month, $day, $year));
+  my $fname = "$datafolder/$lang/$dir/$m-$d.txt";
+  $fname = checkfile($lang, "Martyrologium/$m-$d.txt") unless -e $fname;
 
-  if ($version =~ /1960|Newcal/ && $lang =~ /Latin/i) {
-    %a = %{setupstring($lang, "Martyrologium1960/Mobile.txt")};
-  }
-
-  if ($version =~ /1955/ && $lang =~ /Latin/i) {
-    %a = %{setupstring($lang, "Martyrologium1955R/Mobile.txt")};
-  }
-  my $mobile = '';
-  my $hd = 0;
-  if (exists($a{$a})) { $mobile = "$a{$a}\n"; }
-  if ($month == 10 && $dayofweek == 6 && $day > 23 && $day < 31 && exists($a{'10-DU'})) { $mobile = $m{'10-DU'}; }
-  if ($a =~ /Pasc0\-1/i) { $hd = 1; }
-  if ($winner{Rank} =~ /ex C9/i && exists($a{'Defuncti'})) { $mobile = $a{'Defuncti'}; $hd = 1; }
-  if ($month == 11 && $day == 14 && $version =~ /Monastic/i) { $mobile = $a{'DefunctiM'}; $hd = 1; }
-
-  #if ($month == 12 && $day == 25 && exists($a{'Nativity'})) {$mobile = $a{'Nativity'}; $hd = 1;}
-  if ($hd == 1) { $t = "v. $mobile" . "_\n$t"; $mobile = ''; }
-  my $fname = nextday($month, $day, $year);
-  my ($m, $d) = split('-', $fname);
-  my $y = ($m == 1 && $d == 1) ? $year + 1 : $year;
-
-  if ($version =~ /1570/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1570/$fname.txt")) {
-    $fname = "$datafolder/Latin/Martyrologium1570/$fname.txt";
-  } elsif ($version =~ /1960|Newcal/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1960/$fname.txt")) {
-    $fname = checkfile($lang, "Martyrologium1960/$fname.txt");    # GABC: Allow for 'Latin-gabc'
-  } elsif ($version =~ /1955/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1955R/$fname.txt")) {
-    $fname = "$datafolder/Latin/Martyrologium1955R/$fname.txt";
-  } else {
-    $fname = checkfile($lang, "Martyrologium/$fname.txt");
-  }
+  my $output;
 
   if (my @a = do_read($fname)) {
-    my ($luna, $mo) = _luna($m, $d, $y, $lang);
+    my $luna = _luna($m, $d, $m == 1 && $d == 1 ? $year + 1 : $year, $lang);
 
     if ($lang =~ /Latin/i) {
       $a[0] .= " $luna";
@@ -191,8 +172,9 @@ sub martyrologium {
     FINDDATE:
       {
         foreach (@a) {
-          last FINDDATE if s/^U[p]+on.*?$mo[, ]*/$luna /i;                                                   # English
-          last FINDDATE if s/^Dnia \d+-go \S+ (.)/${luna}v. \u$1/;                                           # Polski
+          last FINDDATE if s/^Upon the \d+ ?.. day of \S+/$luna /i;                                          # English
+          last FINDDATE if s/^Dnia \d+-go \S+ (.)/${luna}r. \u$1/;                                           # Polski
+          last FINDDATE if s/^\d+\. (?:\(\d+.\) )?\S+/${luna}/;                                              # Bohemice
           last FINDDATE if s/^(Le(?: même)? \d+ .*?\,)/$1 \l$luna, /i;                                       # French 1
           last FINDDATE if s/^((?:Le \d+ des|La veille des|Aux) (?:ides|calendes|nones).*)/$1, \l$luna/i;    # French 2
           last if /^\s*\_\s*/;
@@ -203,29 +185,14 @@ sub martyrologium {
         unshift(@a, $luna, "_\n");
       }
     }
-    my $prefix = "v. ";
 
-    # In Czech Martyrology, first two lines in each file are superfluous, therefore deleting.
-    my $line_c = 0;
-
-    foreach my $line (@a) {
-      if (length($line) > 3 && $line !~ /^\/\:/ && $line !~ /\([\,\;\:]+[zZ]?\)/)
-      {    # allowing /:rubrics:/ in Martyrology
-        $t .= "$prefix$line\n" unless $lang =~ /Bohemice/i && $line_c < 3 && $line_c != 0;
-      } else {
-        $t .= "$line\n" unless $lang =~ /Bohemice/i && $line_c < 3;
-      }
-      $prefix = "r. ";
-      $line_c++;
-
-      if ($mobile && $line =~ /\_/) {
-        $t .= "$prefix$mobile";
-        $mobile = '';
-      }
-    }
+    $output = join("\n", map { length($_) > 4 && !/^\/:/ ? "r. $_" : $_ } @a) . "\n";
+    $output =~ s/^r/v/;
+    $output =~ s/\_/"r. $mobile"/e if $mobile;
+    $output =~ s/\_\n//g;
   }
-  $t .= prayer('Conclmart', $lang);
-  return $t;
+
+  $output . prayer('Conclmart', $lang);
 }
 
 sub _luna_table {
@@ -308,7 +275,7 @@ sub _number_suffix {
 sub _luna {
   my ($month, $day, $year, $lang) = @_;
 
-  my $gday = _luna_day($month, $day, $year);
+  my $lday = _luna_day($month, $day, $year);
   $day += 0;
 
   if ($lang =~ /Latin/i) {
@@ -323,43 +290,38 @@ sub _luna {
       'vicésima nona', 'tricésima',
     );
 
-    return ("Luna $ordinals[$gday-1]. Anno Dómini $year\n", ' ');
-  } elsif ($lang =~ /Polski/i) {
+    "Luna $ordinals[$lday-1]. Anno Dómini $year\n";
+  } elsif ($lang =~ /Polski/) {
     my @months_pl = (
       'stycznia', 'lutego', 'marca', 'kwietnia', 'maja', 'czerwca',
       'lipca', 'sierpnia', 'września', 'października', 'listopada', 'grudnia',
     );
-    return ("Roku Pańskiego $year, ${day}-go $months_pl[$month - 1], ${gday}-go dnia księżyca.\n_\n");
-  } elsif ($lang =~ /Francais/i) {
-    return ("Le $gday" . "e jour de la Lune, l’année du Seigneur $year");
-  } elsif ($lang =~ /Italiano/i) {
+
+    "Roku Pańskiego $year, ${day}-go $months_pl[$month - 1], ${lday}-go dnia księżyca.\n_\n";
+  } elsif ($lang =~ /Francais/) {
+    "Le $lday" . "e jour de la Lune, l’année du Seigneur $year";
+  } elsif ($lang =~ /Italiano/) {
     my @months_it = (
       'Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno',
       'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre',
     );
 
-    return ("Anno del Signore $year, $day $months_it[$month - 1], Luna $gday");
-  } elsif ($lang =~ /Bohemice/i) {
+    "Anno del Signore $year, $day $months_it[$month - 1], Luna $lday";
+  } elsif ($lang =~ /Bohemice/) {
     my @months_cz = (
       'ledna', 'února', 'března', 'dubna', 'května', 'června',
       'července', 'srpna', 'září', 'října', 'listopadu', 'prosince',
     );
 
-    return ("Léta Páně $year, $day. $months_cz[$month - 1], $gday. dne věku měsíce.");
+    "Léta Páně $year, $day. $months_cz[$month - 1], $lday. dne věku měsíce.";
   } else {
     my @months = (
       'January', 'February', 'March', 'April', 'May', 'June',
       'July', 'August', 'September', 'October', 'November', 'December',
     );
 
-    return (
-      "$months[$month - 1] $day"
-        . _number_suffix($day)
-        . " $year, the $gday"
-        . _number_suffix($gday)
-        . " day of the Moon,",
-      $months[$month - 1]
-    );
+    sprintf("$months[$month - 1] $day%s $year, the $lday%s day of the Moon,",
+      _number_suffix($day), _number_suffix($lday),);
   }
 }
 
