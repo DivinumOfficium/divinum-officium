@@ -190,6 +190,8 @@ sub martyrologium {
     $output =~ s/^r/v/;
     $output =~ s/\_/"r. $mobile"/e if $mobile;
     $output =~ s/\_\n//g;
+
+    $output = join("\n", @a) . "\n" if $lang eq 'Latin-gabc';
   }
 
   $output . prayer('Conclmart', $lang);
