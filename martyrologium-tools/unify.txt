@@ -1,0 +1,218 @@
+# Editions sometimes word the same elogium differently. Nothing here is
+# guessed: decompose.py only merges two entries by itself when they are
+# word for word the same once accents are folded. Everything else keeps a
+# key of its own until a line below says otherwise.
+#
+#     <day> <version> <key> <same-as>   merge <key> into <same-as>
+#    -<day> <version> <key>             confirmed a separate elogium
+#
+# e.g.  08-19 1570 Ludovici-Tolosani Ludovici
+#
+# Undecided entries are listed each run in reports/unify-pending.txt, with
+# the wording and everything else already keyed for that day, ready to be
+# copied here.
+
+# --- reviewed by hand ---
+01-01 1570 Almachii-2 Almachii
+01-01 1960 Circumcisio Circumcisio-Octava
+-01-01 1960 Octava-Nativitatis    # 1960 splits the base entry in two; Circumcisio keeps the key
+01-04 1570 Titi-2 Titi
+01-06 1570 Andreae-Corsini-2 Andreae-Corsini
+01-06 1570 Epiphania-2 Epiphania
+01-07 1570 Relatio-Aegypto-2 Relatio-Aegypto
+01-11 1570 Hygini-2 Hygini
+01-11 1570 Palaemonis Palamonis
+01-12 1570 Satyri-2 Satyri
+01-13 1570 Remigii-Hic-2 Remigii-Hic
+01-13 1955R Commemoratio-Baptismatis Octava-Epiphaniae
+01-14 1570 Macrinae-2 Macrinae
+-01-18 1570 Petri-2    # one line for both the Chair of Peter and Prisca
+01-18 1960 Priscae-2 Priscae
+01-21 1570 Agnetis-2 Agnetis
+01-25 1570 Ananiae-2 Ananiae
+01-26 1570 Polycarpi-Smyrnensis-2 Polycarpi-Smyrnensis
+01-27 1960 Angelae-Merici-2 Angelae-Merici
+01-28 1570 Jacobi-2 Jacobi
+02-02 1570 Aproniani-Commentariensis-3 Aproniani-Commentariensis
+02-02 1955R Aproniani-Commentariensis-2 Aproniani-Commentariensis
+02-02 1955R Catharinae-Ricciis-2 Catharinae-Ricciis
+02-03 1570 Anscharii-Hamburgensis-2 Anscharii-Hamburgensis
+02-05 1570 Albuini-2 Albuini
+02-08 1570 Dionysii-Emiliani Dionysii-Aemiliani
+02-09 1570 Apolloniae-2 Apolloniae
+02-18 1570 Maximi-Claudii-2 Maximi-Claudii
+02-21 1570 Petri-Mavimeni-2 Petri-Mavimeni
+02-23 1570 Matthiae-3 Matthiae-2
+02-23 1570 Matthiae-4 Matthiae-Item
+02-23 1570 Polycarpi-3 Polycarpi
+02-23 1955R Prima-Sexto Matthiae-Item
+02-23 1960 In-Bissextili-2 Matthiae-Item
+02-24 1570 Joannis-2 Joannis
+02-26 1570 Alexandri-2 Alexandri
+03-07 1570 Pauli-3 Pauli
+03-12 1570 Petri-2 Petri
+03-16 1570 Abrahae-2 Abrahae
+03-16 1570 Cyriaci-2 Cyriaci
+03-16 1570 In-Lycaonia-2 In-Lycaonia
+03-20 1960 Joachim-2 Joachim
+03-26 1570 Ludgeri Ludgeri-Monasteriensis
+04-05 1570 In-Africa-4 In-Africa
+04-05 1955R In-Africa-2 In-Africa
+04-05 1960 In-Africa-3 In-Africa
+04-11 1570 Philippi-2 Philippi
+04-21 1570 Simeonis-Seleuciae-2 Simeonis-Seleuciae
+04-22 1570 Eodem-2 Eodem
+04-22 1570 Leonidas Leonidae
+05-01 1570 Philippi-Jacobi-2 Philippi-Jacobi
+-05-01 1955R Joseph-Opificis    # new feast
+05-01 1955R Pii-Quinti-2 Pii-Quinti
+05-03 1960 Alexandri-Eventii Alexandri-Primi
+05-05 1570 Geruntii-2 Geruntii
+05-05 1570 Hilarii-2 Hilarii
+05-05 1570 Theodori-3 Theodori
+05-05 1955R Theodori-2 Theodori
+05-06 1570 Joannis-2 Joannis
+05-06 1570 Joannis-Damasceni Damasci-Joannis
+05-08 1570 Michaelis-Archangeli-2 Michaelis-Archangeli
+05-09 1570 Andreae-Lucae-2 Andreae-Lucae
+05-12 1570 Philippi-2 Philippi
+05-17 1570 Restitutae-2 Restitutae
+05-23 1570 Desiderii-2 Desiderii
+05-24 1570 Susannae-Marcianae Item-Susannae
+05-25 1570 Leonis-2 Leonis
+05-26 1570 Eleutherii-2 Eleutherii
+05-27 1570 Ranulphi Ranulfi
+05-28 1570 Thecuae-Palaestina-2 Thecuae-Palaestina
+06-03 1570 Olivae-2 Olivae
+06-06 1570 Philippi Caesareae-Palaestina
+06-16 1570 Tychonis-2 Tychonis
+-06-17 1960 Gregorii-Barbadici    # new feast
+-06-18 1960 Gregorii-Barbadici    # new feast
+06-22 1570 Paulini Ambrosius-Hieronymus
+-06-23 1570 Joannis-Baptistae-2    # one line for both the Vigil and John the Presbyter
+06-28 1570 Petri-Pauli-2 Petri-Pauli
+06-28 1960 Irenaei-2 Irenaei
+07-01 1570 Julii-Aaron-2 Julii-Aaron
+-07-03 1960 Irenaei    # new commemoration
+07-04 1570 Elisabeth-Lusitanorum-2 Elisabeth-Lusitanorum
+07-06 1570 Luciae-2 Luciae
+07-08 1570 Eugenii-Tertii Vincentii-Anastasii
+07-14 1570 Bonaventurae-2 Bonaventurae
+07-14 1570 Justi-2 Justi
+07-16 1570 Raineldis-Sociorum-2 Raineldis-Sociorum
+07-16 1960 Commemoratio-Carmelo Festum-Carmelo
+07-18 1570 Symphorosae-2 Symphorosae
+07-19 1570 Aureae-2 Aureae
+-07-21 1955R Laurentii    # new feast
+07-22 1955R Laurentii-2 Laurentii
+07-23 1570 Birgittae-2 Birgittae
+07-27 1570 Caelestini-Primi-2 Caelestini-Primi
+07-28 1570 Victoris-Primi-3 Victoris-Primi
+-07-28 1955R Victoris-Primi-2    # one line for both Victor I and Innocent I
+07-29 1570 Simplicii-Faustini Felicis-Simplicii
+07-29 1960 Felicis-Simplicii-2 Felicis-Simplicii
+08-01 1570 Antiochiae-Machabaeorum-2 Antiochiae-Machabaeorum
+08-04 1960 Joannis-Baptistae-2 Joannis-Baptistae
+08-09 1570 Firmi-Rustici-2 Firmi-Rustici
+08-12 1570 Euplii Eupli
+08-15 1960 Assumptio-Genetricis Assumptio-Genitricis
+08-16 1960 Joachim-2 Joachim
+08-17 1570 Myronis-2 Myronis
+08-18 1570 Hermae-Serapionis-2 Hermae-Serapionis
+08-18 1570 Marytrum-Flori Flori-Lauri
+08-19 1570 Andreae-Tribuni-2 Andreae-Tribuni
+08-19 1570 Donati In-Sigisterico
+08-19 1570 Julii-Senatoris-2 Julii-Senatoris
+08-19 1570 Ludovici-Tolosani Ludovici
+08-19 1570 Mariani-2 Mariani
+08-19 1570 Timothei-2 Timothei
+08-20 1570 Bernardi-2 Bernardi
+08-20 1570 Leovigildi-Christophori-2 Leovigildi-Christophori
+08-20 1570 Lucii-Senatoris-2 Lucii-Senatoris
+08-20 1570 Manetii-2 Manetii
+08-20 1570 Maximi-2 Maximi
+08-20 1570 Porphyrii Romae-Porphyrii
+08-20 1570 Severi-Memnonis-2 Severi-Memnonis
+08-21 1570 Anastasii Anastasii-Cornicularii
+08-21 1570 Bassae-2 Bassae
+08-21 1570 Cyriacae-2 Cyriacae
+08-21 1570 Euprepii-2 Euprepii
+08-21 1570 Luxorii-Ciselli-2 Luxorii-Ciselli
+08-21 1570 Privati-2 Privati
+08-22 1570 Hippolyti-2 Hippolyti
+08-22 1955R Festum-Immaculati-2 Festum-Immaculati
+08-24 1570 Bartholomaei-2 Bartholomaei
+08-24 1570 Carthagine-Valeriani-2 Carthagine-Valeriani
+08-26 1570 Irenaei-Abundii-2 Irenaei-Abundii
+08-28 1570 Moysis-Aethiopis-2 Moysis-Aethiopis
+08-31 1570 Paulini-2 Paulini
+09-01 1570 Atgidii Aegidii
+09-01 1570 Prisci-3 Prisci-2
+09-05 1570 Romuli-2 Romuli
+09-07 1570 Joannis Nicomediae-Joannis
+-09-08 1570 Nativitas-Genitricis-2    # one line for both the Nativity and Hadrian
+09-08 1960 Nativitas-Genetricis Nativitas-Genitricis
+09-14 1570 Cypriani-Carthaginensis-2 Cypriani-Carthaginensis
+09-14 1570 Joannis-Constantinopolitani-2 Joannis-Constantinopolitani
+-09-15 1570 Festum-Septem-2    # one line for both the Octave and the Seven Sorrows
+09-15 1955R Festum-Septem-2 Festum-Septem
+09-16 1570 Abundii-Abundantii-2 Abundii-Abundantii
+09-17 1570 Socratis-Stephani-2 Socratis-Stephani
+09-18 1570 Sophiae-Irenae Item-Sophiae
+09-19 1570 Susannae-2 Susannae
+09-21 1955R Jonae-2 Jonae
+09-23 1570 Lini-2 Lini
+09-24 1570 Gerardi-Morisenae-2 Gerardi-Morisenae
+09-24 1955R Commemoratio-Mercede Festum-Mercede
+09-26 1570 Eusebii-2 Eusebii
+10-01 1570 Piatonis-2 Piatonis
+10-01 1570 Remigii-Rhemensis-2 Remigii-Rhemensis
+10-02 1955R Angelorum-Custodum-2 Angelorum-Custodum
+10-04 1570 Francisci-2 Francisci
+10-04 1570 Marci-Marciani-2 Marci-Marciani
+10-07 1570 Marcelli-Apuleji-3 Marcelli-Apuleji
+10-07 1960 Marcelli-Apuleji-2 Marcelli-Apuleji
+10-07 1960 Sergii-Bacchi-2 Sergii-Bacchi
+10-07 1960 Victoria-2 Victoria
+10-08 1570 Pelagiae-2 Pelagiae
+-10-08 1960 Sergii-Bacchi    # new commemoration
+10-09 1570 Publiae-2 Publiae
+10-12 1570 Edistii-2 Edistii
+10-14 1570 Fortunatae-2 Fortunatae
+10-14 1570 Justi-2 Justi
+10-15 1570 Hedwigis-Polonorum-2 Hedwigis-Polonorum
+10-20 1570 Caprasii-2 Caprasii
+10-22 1570 Cordulae-2 Cordulae
+10-23 1570 Servandi-Germani-2 Servandi-Germani
+-10-23 1960 Antonii-Claret    # new feast
+10-24 1960 Antonii-Claret-2 Antonii-Claret
+10-27 1570 Elesbaan-2 Elesbaan
+10-27 1570 Simonis-Judae-2 Simonis-Judae
+10-27 1570 Vincentii-Sabinae-2 Vincentii-Sabinae
+10-31 1570 Vigilia-Sanctorum-2 Vigilia-Sanctorum
+11-01 1570 Genitricis Bonifatius-Papa
+11-03 1570 Quarti-2 Quarti
+11-10 1570 Tryphonis-Respicii-2 Tryphonis-Respicii
+11-12 1570 Didaci-2 Didaci
+11-12 1570 Rufi-2 Rufi
+11-15 1570 Eugenii-Toletani-2 Eugenii-Toletani
+11-24 1570 Chrysogoni-2 Chrysogoni
+11-25 1570 Moysis Moysis-Presbyteris
+11-29 1570 Andreae-2 Andreae
+12-02 1570 Nonni-2 Nonni
+12-03 1570 Claudii-Tribuni-2 Claudii-Tribuni
+12-05 1570 Crispinae-2 Crispinae
+12-10 1570 Pauli-2 Pauli
+12-14 1570 Spiridionis In-Cypro
+12-19 1570 Nemesii Alexandriae-Nemesii
+12-20 1570 Alexandriae-Ammonis-2 Alexandriae-Ammonis
+12-20 1570 Thomae-2 Thomae
+12-23 1570 Theoduli-Saturnini-2 Theoduli-Saturnini
+12-24 1570 Vigilia-Nativitatis-2 Vigilia-Nativitatis
+12-27 1570 Joannis-2 Joannis
+12-31 1570 Sabiniani-Potentiani-2 Sabiniani-Potentiani
+02-02 1570 Aproniani-Commentariensis-2 Aproniani-Commentariensis
+04-05 1570 In-Africa-2 In-Africa
+04-05 1960 In-Africa-2 In-Africa
+05-05 1570 Theodori-2 Theodori
+10-07 1570 Marcelli-Apuleji-2 Marcelli-Apuleji

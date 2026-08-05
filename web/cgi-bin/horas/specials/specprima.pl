@@ -158,12 +158,20 @@ sub martyrologium {
   };
 
   my ($m, $d) = split('-', nextday($month, $day, $year));
-  my $fname = "$datafolder/$lang/$dir/$m-$d.txt";
-  $fname = checkfile($lang, "Martyrologium/$m-$d.txt") unless -e $fname;
+
+  # pool files are in the Martyrologium folders, the old flat files under
+  # source/ where they still serve gabc
+  my @a = martyrologium_elogia($lang, "$m-$d");
+
+  unless (@a) {
+    my $fname = "$datafolder/$lang/$dir/source/$m-$d.txt";
+    $fname = checkfile($lang, "Martyrologium/source/$m-$d.txt") unless -e $fname;
+    @a = do_read($fname);
+  }
 
   my $output;
 
-  if (my @a = do_read($fname)) {
+  if (@a) {
     my $luna = _luna($m, $d, $m == 1 && $d == 1 ? $year + 1 : $year, $lang);
 
     if ($lang =~ /Latin/i) {
@@ -195,6 +203,402 @@ sub martyrologium {
   }
 
   $output . prayer('Conclmart', $lang);
+}
+
+#*** martyrologium_elogia($lang, $mmdd)
+# builds the day's martyrology from the elogia pool files
+#
+# <Lang>/Martyrologium/MM-DD.txt is the whole day in reading order:
+# [Titulus], optional [Separatio], then one section per entry. A value
+# starting with '=' is escaped ('=_' is a literal _, '=' alone a blank).
+#
+# Martyrologium{1955R,1960,1570}/MM-DD.txt holds only that version's changes:
+#   [Key]              empty  entry deleted
+#   [Key]              value  value overridden, stays put
+#   [Key post Other]   value  placed after Other
+#   [Key ante Other]   empty  moved before Other, keeps its value
+# [MM-DD:Key] is a reference to that day's entry. 1570 Latin values are
+# derived by deaccenting the base ones unless overridden.
+#
+# The vernacular always keeps its own order; the Latin only decides which
+# entries the version has. With $martyrfallback set, entries the language
+# never mentions are filled from the other column ($lang1).
+#
+# Returns () for gabc or when there is no pool file, and the caller reads
+# the old flat files instead.
+sub martyrologium_elogia {
+  my ($lang, $mmdd) = @_;
+  our ($version, $datafolder, $langfb, $lang1, $martyrfallback);
+
+  return () if $lang =~ /gabc/i;
+
+  my $inherits = $martyrfallback && $lang1 && lc $lang1 ne lc $lang;
+  my $vdir =
+      $version =~ /1960|Newcal/ ? 'Martyrologium1960'
+    : $version =~ /1955/        ? 'Martyrologium1955R'
+    : $version =~ /1570/        ? 'Martyrologium1570'
+    :                             '';
+
+  my $lbase = _elogia_read("$datafolder/Latin/Martyrologium/$mmdd.txt");
+  return () unless $lbase;
+  my $lover = $vdir ? _elogia_read("$datafolder/Latin/$vdir/$mmdd.txt") : undef;
+
+  if ($lang =~ /^Latin$/i && !$inherits) {
+    my ($keys, undef) = _elogia_merge($lbase, $lover);
+    my @lines = _elogia_head($lbase, $lover, $vdir eq 'Martyrologium1570');
+
+    foreach my $key (@$keys) {
+      my $text = _elogia_value($key, $lbase, $lover, 'Latin', $vdir, $mmdd);
+      return () unless defined $text;
+      push @lines, _elogia_lines($text);
+    }
+    return @lines;
+  }
+
+  my $vbase = _elogia_read("$datafolder/$lang/Martyrologium/$mmdd.txt");
+
+  unless ($vbase) {
+    my $src = _elogia_lang($lang, $mmdd);
+    return $src ? martyrologium_elogia($src, $mmdd) : ();
+  }
+  my $vover = $vdir ? _elogia_read("$datafolder/$lang/$vdir/$mmdd.txt") : undef;
+  my $fallback;
+
+  if ($inherits) {
+    my $src = _elogia_lang($lang1, $mmdd);
+    $fallback = _elogia_source($src, $vdir, $lbase, $lover, $mmdd)
+      if $src && lc $src ne lc $lang;
+  }
+
+  # nothing to merge: render the day as stored
+  unless ($vover || $fallback) {
+    my @lines = _elogia_head($vbase, undef);
+    foreach my $e (@{$vbase->{entries}}) {
+      next if $e->{value} eq '';
+      push @lines, _elogia_lines($e->{value});
+    }
+    return @lines;
+  }
+
+  # the Latin says which entries the version has, the language says where
+  my ($lkeys) = _elogia_merge($lbase, $lover);
+  my ($vkeys) = _elogia_merge($vbase, $vover);
+  my %in_version = map { $_ => 1 } @$lkeys;
+  my %latin_known = map { $_->{key} => 1 } @{$lbase->{entries}};
+  $latin_known{$_} = 1 for @$lkeys;
+
+  # a key the language mentions is never filled in: empty means deleted
+  my %vmentions;
+  $vmentions{$_->{key}} = 1 for @{$vbase->{entries}};
+
+  if ($vover) {
+    $vmentions{$_->{key}} = 1 for @{$vover->{entries}};
+  }
+
+  my @order = @$lkeys;
+
+  if ($fallback) {
+    my ($fkeys) = _elogia_merge($fallback->{base}, $fallback->{over});
+    @order = @{_elogia_union(\@order, $fkeys)};
+  }
+
+  my (@lines, @slots, %rendered);
+  push @lines, _elogia_head($vbase, $vover,
+    $lang =~ /^Latin$/i && $vdir eq 'Martyrologium1570');
+
+  foreach my $key (@$vkeys) {
+
+    # dropped by this version (suppressed octave, feast moved to another day)
+    next if $latin_known{$key} && !$in_version{$key};
+    my $text = _elogia_value($key, $vbase, $vover, $lang, $vdir, $mmdd);
+    next unless defined $text && $text ne '';
+    push @slots, {key => $key, lines => [_elogia_lines($text)]};
+    $rendered{$key} = 1;
+  }
+
+  # entries the language's day does not carry, placed after the nearest
+  # preceding entry both arrangements have
+  my %fills;
+  my $anchor = "\0START";
+
+  foreach my $key (@order) {
+    if ($rendered{$key}) { $anchor = $key; next; }
+    my $text = _elogia_value($key, $vbase, $vover, $lang, $vdir, $mmdd);
+
+    if ($fallback && !(defined $text && $text ne '') && !$vmentions{$key}) {
+      my $t = _elogia_value($key, $fallback->{base}, $fallback->{over},
+        $fallback->{lang}, $vdir, $mmdd);
+
+      if (defined $t && $t ne '') {
+
+        # webdia.pl only spell_var's a Latin column, so Latin text put in
+        # another column has to be done here
+        $t = main::spell_var($t)
+          if $fallback->{lang} =~ /^Latin$/i && defined &main::spell_var;
+        $text = $t;
+      }
+    }
+    next unless defined $text && $text ne '';
+    push @{$fills{$anchor}}, [_elogia_lines($text)];
+  }
+
+  push @lines, map { @$_ } @{$fills{"\0START"} || []};
+  foreach my $slot (@slots) {
+    push @lines, @{$slot->{lines}};
+    push @lines, map { @$_ } @{$fills{$slot->{key}} || []};
+  }
+  return @lines;
+}
+
+#*** _elogia_union($a, $b)
+# both key lists, keeping the order of the first and slotting each key only
+# in the second after whatever it follows there
+sub _elogia_union {
+  my ($a, $b) = @_;
+  my %have = map { $_ => 1 } @$a;
+  my @out = @$a;
+  my $after;
+
+  foreach my $key (@$b) {
+    if ($have{$key}) { $after = $key; next; }
+    my $at = @out;
+
+    if (defined $after) {
+      for my $i (0 .. $#out) { $at = $i + 1 if $out[$i] eq $after; }
+    } else {
+      $at = 0;
+    }
+    splice(@out, $at, 0, $key);
+    $have{$key} = 1;
+    $after = $key;
+  }
+  return \@out;
+}
+
+#*** _elogia_lang($lang, $mmdd)
+# which language's pool actually answers for this one, the same order
+# checkfile() uses: itself, then the parent of a hyphenated name
+# (Latin-Bea -> Latin), then the fallback language.  undef if none has it.
+sub _elogia_lang {
+  my ($lang, $mmdd) = @_;
+  our ($datafolder, $langfb);
+  return undef unless $lang && $lang !~ /gabc/i;
+
+  while (1) {
+    return $lang if -e "$datafolder/$lang/Martyrologium/$mmdd.txt";
+    last unless $lang =~ s/-[^-]+$//;
+  }
+  return $langfb
+    if $langfb && -e "$datafolder/$langfb/Martyrologium/$mmdd.txt";
+  return undef;
+}
+
+#*** _elogia_source($lang, $vdir, $lbase, $lover, $mmdd)
+# the pool files to read a fallback value out of
+sub _elogia_source {
+  my ($lang, $vdir, $lbase, $lover, $mmdd) = @_;
+  our $datafolder;
+  return {lang => 'Latin', base => $lbase, over => $lover}
+    if $lang =~ /^Latin$/i;
+  my $base = _elogia_read("$datafolder/$lang/Martyrologium/$mmdd.txt")
+    or return undef;
+  return {
+    lang => $lang,
+    base => $base,
+    over => $vdir ? _elogia_read("$datafolder/$lang/$vdir/$mmdd.txt") : undef,
+  };
+}
+
+#*** _elogia_read($file)
+# Parses a pool day file into
+#   { titulus, separatio, has_sep, entries => [ {key, rel, anchor, value} ],
+#     bykey => {key => value} }
+# Not setupstring: file order is meaningful and these per-language files
+# must not inherit another language's sections through layering.
+sub _elogia_read {
+  my $file = shift;
+  return undef unless -e $file;
+
+  my %d = (titulus => undef, separatio => undef, has_sep => 0, entries => [], bykey => {});
+  my ($raw, @buf);
+
+  my $flush = sub {
+    return unless defined $raw;
+    pop @buf while @buf && $buf[-1] !~ /\S/;
+    my $value = join("\n", @buf);
+    my ($key, $rel, $anchor) = ($raw, undef, undef);
+    $rel = $2, $anchor = $3, $key = $1 if $raw =~ /^(\S+)\s+(ante|post)\s+(\S+)$/;
+
+    if ($key eq 'Titulus') {
+      $d{titulus} = $value;
+    } elsif ($key eq 'Separatio') {
+      $d{separatio} = $value;
+      $d{has_sep} = 1;
+    } else {
+      push @{$d{entries}}, {key => $key, rel => $rel, anchor => $anchor, value => $value};
+      $d{bykey}{$key} = $value unless exists $d{bykey}{$key};
+    }
+  };
+
+  foreach my $line (do_read($file)) {
+    if ($line =~ /^\[([^\]]+)\]\s*$/) {
+      $flush->();
+      $raw = $1;
+      @buf = ();
+    } elsif (defined $raw) {
+      push @buf, $line;
+    }
+  }
+  $flush->();
+  return \%d;
+}
+
+#*** _elogia_merge($base, $overlay)
+# applies a version's deltas to the base order, returns (\@keys, \%deleted)
+sub _elogia_merge {
+  my ($base, $over) = @_;
+  my @base_keys = map { $_->{key} } @{$base->{entries}};
+  return (\@base_keys, {}) unless $over;
+
+  my (%deleted, %moved, @anchored);
+
+  foreach my $e (@{$over->{entries}}) {
+    if (defined $e->{rel}) {
+      $moved{$e->{key}} = 1;
+      push @anchored, $e;
+    } elsif ($e->{value} eq '') {
+      $deleted{$e->{key}} = 1;
+    }
+  }
+  my @keys = grep { !$deleted{$_} && !$moved{$_} } @base_keys;
+
+  # loop until every anchor resolves: anchors may point at each other
+  my @pending = @anchored;
+
+  while (@pending) {
+    my @rest;
+
+    foreach my $e (@pending) {
+      my $i = -1;
+
+      for my $j (0 .. $#keys) {
+        if ($keys[$j] eq $e->{anchor}) { $i = $j; last; }
+      }
+
+      if ($i >= 0) {
+        splice(@keys, ($e->{rel} eq 'ante' ? $i : $i + 1), 0, $e->{key});
+      } else {
+        push @rest, $e;
+      }
+    }
+    last if @rest == @pending && do { push @keys, map { $_->{key} } @rest; 1 };
+    @pending = @rest;
+  }
+
+  my %have = map { $_ => 1 } @keys;
+  my %inbase = map { $_ => 1 } @base_keys;
+
+  foreach my $e (@{$over->{entries}}) {
+    next if defined $e->{rel} || $e->{value} eq '' || $inbase{$e->{key}} || $have{$e->{key}};
+    push @keys, $e->{key};
+    $have{$e->{key}} = 1;
+  }
+  return (\@keys, \%deleted);
+}
+
+#*** _elogia_head($base, $overlay)
+# the day's title lines and separator
+sub _elogia_head {
+  my ($base, $over, $deaccent) = @_;
+  my $titulus;
+
+  if ($over && defined $over->{titulus}) {
+    $titulus = $over->{titulus};
+  } else {
+    $titulus = $base->{titulus};
+    $titulus = _deaccent($titulus) if $deaccent && defined $titulus;
+  }
+  return () unless defined $titulus;
+  $titulus =~ s/[\r\n]+$//;
+  my @lines = split(/\n/, $titulus);
+  @lines = ($titulus) unless @lines;
+
+  my $sep = $base->{has_sep} ? $base->{separatio} : '_';
+  $sep = $over->{separatio} if $over && $over->{has_sep};
+  push @lines, $sep if defined $sep && $sep ne '';
+  return @lines;
+}
+
+#*** _elogia_value($key, $base, $overlay, $lang, $vdir, $mmdd)
+# one key's text: version override, else base, else the referenced day.
+# undef when this language has no value for it.
+sub _elogia_value {
+  my ($key, $base, $over, $lang, $vdir, $mmdd) = @_;
+  our $datafolder;
+
+  if ($over) {
+    my $v = $over->{bykey}{$key};
+    return $v if defined $v && $v ne '';
+    return undef if defined $v && !_elogia_anchored($over, $key);
+  }
+
+  if ($key =~ /^(\d\d-\d\d):(.+)$/) {
+    my ($d2, $k2) = ($1, $2);
+
+    # text stored here wins; the Latin leaves these empty
+    my $own = $base->{bykey}{$key};
+    return $own if defined $own && $own ne '';
+
+    return undef if $d2 eq $mmdd;
+    my $ob = _elogia_read("$datafolder/$lang/Martyrologium/$d2.txt");
+    return undef unless $ob;
+
+    # that day's version file may reword it, but a deletion there
+    # does not apply here
+    my $oo = $vdir ? _elogia_read("$datafolder/$lang/$vdir/$d2.txt") : undef;
+
+    if ($oo) {
+      my $ov = $oo->{bykey}{$k2};
+      return $ov if defined $ov && $ov ne '';
+    }
+    my $bv = $ob->{bykey}{$k2};
+    return undef unless defined $bv && $bv ne '';
+    $bv = _deaccent($bv) if $lang =~ /^Latin$/i && $vdir eq 'Martyrologium1570';
+    return $bv;
+  }
+
+  my $v = $base->{bykey}{$key};
+  return undef unless defined $v;
+  $v = _deaccent($v) if $lang =~ /^Latin$/i && $vdir eq 'Martyrologium1570';
+  return $v;
+}
+
+# true when the overlay anchors this key, so empty means keep the text
+sub _elogia_anchored {
+  my ($over, $key) = @_;
+
+  foreach my $e (@{$over->{entries}}) {
+    return defined $e->{rel} if $e->{key} eq $key;
+  }
+  return 0;
+}
+
+# a value's lines, with the '=' escape removed
+sub _elogia_lines {
+  my $v = shift;
+  return map { my $l = $_; $l =~ s/^=//; $l } split(/\n/, $v, -1);
+}
+
+sub _deaccent {
+  my $s = shift;
+  require Unicode::Normalize;
+  $s = Unicode::Normalize::NFKD($s);
+  $s =~ s/\p{Mn}//g;
+  $s =~ s/\x{e6}/ae/g;
+  $s =~ s/\x{c6}/Ae/g;
+  $s =~ s/\x{153}/oe/g;
+  $s =~ s/\x{152}/Oe/g;
+  return $s;
 }
 
 sub _luna_table {

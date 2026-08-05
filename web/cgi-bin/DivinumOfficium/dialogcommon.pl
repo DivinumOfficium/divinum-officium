@@ -84,7 +84,9 @@ sub set_runtime_options {
     if ($p ne '') {
       setsetupvalue($name, $parpos - 1, $p);
     } else {
-      $p = substr($setupt[$parpos - 1], index($setupt[$parpos - 1], '=') + 2, -1);
+      my $raw = $setupt[$parpos - 1];
+      $raw =~ s/\s+$//;
+      $p = substr($raw, index($raw, '=') + 2, -1);
     }
     $$parvalue = $p;
   }
