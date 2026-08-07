@@ -1,0 +1,31 @@
+@Tempora/Quadp3-5
+
+[Lectio1]
+@Tempora/Quadp3-5::s/: Stéphanus.*/./
+
+[Responsory1]
+@TemporaOP/Quadp3-0:Responsory Vespera 1
+
+[Lectio2]
+@Tempora/Quadp3-5:Lectio1:s/.*: (?=Stéphanus)//s s/$/~/
+@Tempora/Quadp3-5::s/ Qui tuba.*//
+
+
+[Responsory2]
+@TemporaOP/Quadp3-2
+
+[Lectio3]
+@Tempora/Quadp3-5:Lectio2:s/.* (?=Qui tuba)//s s/$/~/
+@Tempora/Quadp3-5::s/ Unde.*//
+
+[Responsory3]
+@TemporaOP/Quadp3-2
+
+[Capitulum Laudes]
+@Psalterium/Special/Minor Special:Quad Tertia
+
+[Capitulum Sexta]
+@Psalterium/Special/Minor Special:Quad Sexta
+
+[Capitulum Nona]
+@Psalterium/Special/Minor Special:Quad Nona

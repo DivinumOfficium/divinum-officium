@@ -13,40 +13,11 @@ Laus Deo Patri, * parilíque Proli et tibi, Sancte, stúdio perénni, Spíritus,
 @:AntMatutinumM
 ;;266;267;268
 
-[Lectio1]
-@Tempora/Pent01-0:Lectio1:1-5 s/-4/-3/
-
-[Lectio2]
-@Tempora/Pent01-0::1 s/5-8/4-6/
-@Tempora/Pent01-0:Lectio1:6
-@Tempora/Pent01-0:Lectio2:2-3
-
-[Lectio3]
-@Tempora/Pent01-0:Lectio2:!2-3 s/5-8/7-9/
-@Tempora/Pent01-0:Lectio3:2
-
-[Lectio4]
-@Tempora/Pent01-0:Lectio3:!2 s/9-/10-/
-
 [Responsory4]
 R. Glória Patri, genitǽque Proli, † et tibi compar utriúsque semper Spíritus alme, Deus unus,
 * Omni témpore sæcli.
 V. Da gaudiórum prǽmia da gratiárum múnera, † dissólve litis víncula astrínge pacis fœdera.
 R. Omni témpore sæcli.
-
-[Lectio5]
-@Tempora/Pent01-0:Lectio4:s/Sed Trínitas .*//s
-
-[Lectio6]
-@Tempora/Pent01-0:Lectio4:s/.* (Sed Trínitas)/$1/s s/$/~/
-@Tempora/Pent01-0:Lectio5:s/Sed quia .*//s
-
-[Lectio7]
-@Tempora/Pent01-0:Lectio5:s/.* (Sed quia)/$1/s s/$/~/
-@Tempora/Pent01-0:Lectio6:s/Nullus .*//s
-
-[Lectio8]
-@Tempora/Pent01-0:Lectio6:s/.* (Nullus)/$1/s
 
 [Responsory8]
 R. Honor, virtus et potéstas et impérium sit Trinitáti in unitáte, † unitáti in Trinitáte,
@@ -54,27 +25,14 @@ R. Honor, virtus et potéstas et impérium sit Trinitáti in unitáte, † unit�
 V. Benedícat nos Deus, Deus noster, benedícat nos Deus.
 R. In perénni sæculórum témpore.
 
-[Lectio9]
-@Tempora/Pent01-0:Lectio7:s/Non enim .*//s
-
-[Lectio10]
-@Tempora/Pent01-0:Lectio7:s/.* (Non enim)/$1/s s/$/~/
-@Tempora/Pent01-0:Lectio8a:s/Et ídeo .*//s
-
 [Responsory10]
 R. O beáta Trínitas, te laudámus te benedícimus te adorámus: † auge in nobis fidem auge spem auge caritátem,
 * O beáta Trínitas.
 V. Tibi laus, tibi glória, tibi gratiárum áctio in sǽcula sempitérna.
 R. O beáta Trínitas.
 
-[Lectio11]
-@Tempora/Pent01-0:Lectio8a:s/.* (Et ídeo)/$1/s s/Hoc enim.*//s
-
 [Responsory11]
 R. Te Deum Patrem ingénitum, te Fílium unigénitum, te Spíritum Sanctum Paráclitum, Sanctam et indivíduam Trinitátem, † toto corde et ore confitémur, laudámus, atque benedícimus:
 * Tibi glória in sǽcula.
 V. Quóniam magnus es tu, et fáciens mirabília, tu es Deus solus.
 R. Tibi glória in sǽcula.
-
-[Lectio12]
-@Tempora/Pent01-0:Lectio8a:s/.* (Hoc enim)/$1/s

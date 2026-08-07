@@ -28,6 +28,7 @@ use DivinumOfficium::Main qw(vernaculars liturgical_color);
 use DivinumOfficium::LanguageTextTools
   qw(prayer translate load_languages_data omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
 use DivinumOfficium::RunTimeOptions qw(check_version check_language);
+use DivinumOfficium::Lexicon qw(apply_interlinear);
 
 $error = '';
 $debug = '';
@@ -81,7 +82,7 @@ $q = new CGI;
 #get parameters
 getini('missa');    #files, colors
 
-our ($version, $lang1, $lang2, $langfb, $column);
+our ($version, $lang1, $lang2, $langfb, $column, $dioecesis);
 our %translate;     #translation of the skeleton label for 2nd language
 our $testmode;
 our $votive;
@@ -109,6 +110,8 @@ if (!$setupsave) {
 set_runtime_options('general');       #$expand, $version, $lang2
 set_runtime_options('parameters');    # priest, lang1 ... etc
 
+$glossfont = '' if $glossfont =~ /^[btonc]+$/;
+
 if ($command eq 'changeparameters') { getsetupvalue($command); }
 
 #print "Content-type: text/html; charset=utf-8\n\n"; <= uncomment for debuggin "Internal Server Errors"
@@ -135,10 +138,6 @@ $solemn = strictparam('solemn');
 
 $only = ($lang1 =~ /$lang2/) ? 1 : 0;
 
-# save parameters
-precedence();    #fills our hashes et variables
-setsecondcol();
-
 #prepare main pages
 $title = "Sancta Missa";
 
@@ -146,6 +145,10 @@ $title = "Sancta Missa";
 #generate HTML
 $background = ($whitebground) ? ' class="contrastbg"' : '';
 htmlHead($title, 'startup()');
+
+# save parameters
+precedence();    #fills our hashes et variables
+setsecondcol();
 
 if ($command =~ /setup(.*)/is) {
   $pmode = 'setup';
@@ -230,6 +233,7 @@ print <<"PrintTag";
 <INPUT TYPE=HIDDEN NAME=first VALUE="$first">
 <INPUT TYPE=HIDDEN NAME=Propers VALUE="$Propers">
 <INPUT TYPE=HIDDEN NAME=compare VALUE=0>
+<INPUT TYPE="HIDDEN" NAME="kmonth" VALUE="">
 </FORM>
 </BODY></HTML>
 PrintTag
@@ -256,7 +260,15 @@ sub headline {
 &ensp;
 <A HREF="#" onclick="callkalendar();">Ordo</A>
 &ensp;
+<A HREF="#" onclick="callkalendar('kalendar');">Kalendarium</A>
+&ensp;
 <A HREF="#" onclick="pset('parameters')">Options</A>
+&ensp;
+<!-- interlinear controls (re-enable in missa.pl if needed)
+<A HREF="#" id="interlinear-toggle" onclick="toggleInterlinear()">${\(our $interlinear ? 'Interlinear: on' : 'Interlinear: off')}</A>
+&ensp;
+<A HREF="#" onclick="resetLearnedWords()">Reset learned</A>
+-->
 $numsel
 </P>
 PrintTag
@@ -267,6 +279,40 @@ PrintTag
 sub horasjs {
   qq(
 //position
+function applyLearnedWords() {
+  var learned = JSON.parse(localStorage.getItem('learnedWords') || '[]');
+  document.querySelectorAll('.lw').forEach(function(el) {
+    if (learned.indexOf(el.childNodes[0].textContent.toLowerCase()) !== -1) {
+      el.classList.add('learned');
+    }
+  });
+}
+
+function dismissGloss(el) {
+  var word = el.childNodes[0].textContent.toLowerCase();
+  var learned = JSON.parse(localStorage.getItem('learnedWords') || '[]');
+  var idx = learned.indexOf(word);
+  if (idx === -1) {
+    learned.push(word);
+  } else {
+    learned.splice(idx, 1);
+  }
+  localStorage.setItem('learnedWords', JSON.stringify(learned));
+  var hidden = idx === -1;
+  document.querySelectorAll('.lw').forEach(function(e) {
+    if (e.childNodes[0].textContent.toLowerCase() === word) {
+      e.classList.toggle('learned', hidden);
+    }
+  });
+}
+
+function resetLearnedWords() {
+  localStorage.removeItem('learnedWords');
+  document.querySelectorAll('.lw.learned').forEach(function(el) {
+    el.classList.remove('learned');
+  });
+}
+
 function startup() {
   var i = 1;
   while (i <= $searchvalue) {
@@ -274,6 +320,20 @@ function startup() {
     i++;
     if (a) a.scrollIntoView();
   }
+  applyLearnedWords();
+  function handleGlossTap(e) {
+    var lw = e.target.closest && e.target.closest('.lw');
+    if (!lw) return;
+    if (document.body.classList.contains('interlinear-hint')) {
+      e.preventDefault();
+      lw.classList.toggle('revealed');
+    } else if (document.body.classList.contains('interlinear-all')) {
+      e.preventDefault();
+      dismissGloss(lw);
+    }
+  }
+  document.addEventListener('click', handleGlossTap);
+  document.addEventListener('touchend', handleGlossTap);
 }
 
 //prepare position
@@ -335,8 +395,11 @@ function parchange() {
 }
 
 //calls kalendar
-function callkalendar() {
+function callkalendar(mode) {
   document.forms[0].action = '../horas/kalendar.pl';
+  if (mode == 'kalendar') {
+    document.forms[0].kmonth.value = 15;
+  }
   document.forms[0].target = "_self"
   document.forms[0].submit();
 }
@@ -390,6 +453,18 @@ function prevnext(ch) {
 	  if (m > 12) {y++; m = 1;}
   }
   document.forms[0].date.value = m + "-" + d + "-" + y;
+}
+
+function toggleInterlinear() {
+  var on = document.body.classList.toggle('interlinear');
+  var toggle = document.getElementById('interlinear-toggle');
+  if (toggle) { toggle.textContent = on ? 'Interlinear: on' : 'Interlinear: off'; }
+  var form = document.querySelector('form');
+  if (form) {
+    var data = new FormData(form);
+    data.set('interlinear', on ? '1' : '0');
+    fetch(form.action, { method: 'POST', body: data });
+  }
 }
 )
 }

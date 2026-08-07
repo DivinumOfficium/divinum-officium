@@ -1,0 +1,22 @@
+@Tempora/Quad1-5
+
+[Lectio1]
+@Tempora/Quad1-5::s/Inténtos .*//
+
+[Lectio2]
+@Tempora/Quad1-5:Lectio3:s/.* cáritas implet/Cháritas implet/s s/Mérito .*//
+
+[Lectio3]
+@Tempora/Quad1-5:Lectio3:s/.* (Mérito )/$1/
+
+[Responsory1]
+@TemporaCist/Quad1-0:Responsory1
+
+[Responsory2]
+@TemporaCist/Quad1-0:Responsory2
+
+[Responsory3]
+@TemporaCist/Quad1-0:Responsory3
+
+[Ant 3] (rubrica cisterciensis)
+Dómine, * non hábeo hóminem, ut, cum mota fúerit aqua, mittat me in piscínam.

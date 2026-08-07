@@ -1,0 +1,25 @@
+@Tempora/Quad3-4
+
+[Lectio1]
+@Tempora/Pasc7-6::s/: sed.*/./s
+
+[Responsory1]
+@Tempora/Quad3-0:Responsory1
+
+[Lectio2]
+@Tempora/Pasc7-6:Lectio1:s/.*: (sed)/\u$1/s s/$/~/
+@Tempora/Pasc7-6::s/ Non.*//
+
+[Responsory2]
+@Tempora/Quad3-0
+
+[Lectio3]
+@Tempora/Pasc7-6:Lectio2:s/.* (?=Non)// s/$/~/
+@Tempora/Quad3-4:Lectio3::s/: deínde.*/./
+
+[Responsory3]
+@TemporaOP/Quad3-0:Responsory2
+
+[Oratio 2]
+Concéde, quæsumus, omnipotens Deus: ut jejuniórum nobis sancta devótio et purificatiónem tribuat, et maiestáti tuæ nos reddat accéptos.
+$Per Dominum

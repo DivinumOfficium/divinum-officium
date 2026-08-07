@@ -1,0 +1,85 @@
+@Tempora/Epi5-0
+
+[Rule]
+12 lectiones
+Invit2
+
+[Ant 1]
+@Tempora/Epi4-0
+
+[Invit]
+@TemporaCist/Epi2-0
+
+[Lectio1]
+@Tempora/Epi5-0
+
+[Lectio2]
+@Tempora/Epi5-0::1-4:s/-11/-7/
+
+[Lectio3]
+@Tempora/Epi5-0:Lectio2:s/5-/8-/ s/5 .*8 /8 /s
+
+[Lectio4]
+@Tempora/Epi5-0:Lectio3:s/12-/15-/ s/12.*15 /15 /s
+
+[Responsory1]
+@TemporaCist/Epi2-0
+
+[Responsory2]
+@TemporaCist/Epi2-0
+
+[Responsory3]
+@TemporaCist/Epi2-0
+
+[Responsory4]
+@TemporaCist/Epi2-0
+
+[Lectio5]
+@Tempora/Epi5-0:Lectio4
+
+[Lectio6]
+@Tempora/Epi5-0:Lectio5:s/Ecce .*//s
+
+[Lectio7]
+@Tempora/Epi5-0:Lectio5:s/.* Ecce /Ecce /s s/$/~/
+@Tempora/Epi5-0:Lectio6:s/Quid .*//s
+
+[Lectio8]
+@Tempora/Epi5-0:Lectio6:s/.* Quid /Quid /s
+
+[Responsory5]
+@TemporaCist/Epi2-0
+
+[Responsory6]
+@TemporaCist/Epi2-0
+
+[Responsory7]
+@TemporaCist/Epi2-0
+
+[Responsory8]
+@TemporaCist/Epi2-0
+
+[Lectio9]
+@Tempora/Epi5-0:Lectio7
+
+[Lectio10]
+@Tempora/Epi5-0:Lectio8:s/At illi, .*//s
+
+[Lectio11]
+@Tempora/Epi5-0:Lectio8:s/.* At illi, /At illi, /s s/$/~/
+@Tempora/Epi5-0:Lectio9:s/Aliud .*//s
+
+[Lectio12]
+@Tempora/Epi5-0:Lectio9:s/.* Aliud /Aliud /s
+
+[Responsory9]
+@TemporaCist/Epi2-0
+
+[Responsory10]
+@TemporaCist/Epi2-0
+
+[Responsory11]
+@TemporaCist/Epi2-0
+
+[Responsory12]
+@TemporaCist/Epi2-0

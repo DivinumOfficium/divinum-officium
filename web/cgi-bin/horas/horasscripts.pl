@@ -228,7 +228,11 @@ sub handleverses {
         s/<b>(.*?)<\/b>([\,\.\:\;]?)\(ixi\)(.*?)\(hr\)(.*?)\(h\)/$1$2(h)$3(h)<i>$4<\/i>(g)/;
       }
     } elsif ($_[2] =~ /[12]/) {
-      if ($_[3] =~ /^\dD?$/) {
+      if ($_[3] =~ /1D\-/i) {
+
+        # 1D-:    hr g f 'g  gr gvFED.   (Ant. Monast. '1D')
+        s/(\>[\,\.\:\;]?)\(gh(.*?)gr\)/$1(g$2gr)/g;
+      } elsif ($_[3] =~ /^\dD?$/i) {
 
         # 1D:     hr g f 'gh gr gvFED.  (Ant. Monast. '1D*')
         # 2D:     hr g   'e  fr f.
@@ -237,11 +241,7 @@ sub handleverses {
         # 2Dm:    hr g   er 'ef f.
         s/\(e fr\)/(ef)/;
         s/(<b>.*?<\/b>[\,\.\:\;]?)\(e\)(.*?)\(fr\)/$1(er[ocb:1{])<b>$2<\/b>(ef[ocb:0}])/;
-      } elsif ($_[3] =~ /1D\-/) {
-
-        # 1D-:    hr g f 'g  gr gvFED.   (Ant. Monast. '1D')
-        s/(\>[\,\.\:\;]?)\(gh(.*?)gr\)/$1(g$2gr)/g;
-      } elsif ($_[3] =~ /1D2/) {
+      } elsif ($_[3] =~ /1D2/i) {
 
         # 1D2:    hr g f gr 'gf d.
         s/\(gh gr\)(.*?)\(gvFED\.\)/(gf)$1(d.)/;
@@ -273,7 +273,7 @@ sub handleverses {
         }
       }
     } elsif ($_[2] =~ /[78]/) {
-      if ($_[3] =~ /7a|8G$/) {
+      if ($_[3] =~ /7a|8G$/i) {
 
         # 7a:   ir 'j ir 'h hr gf..
         # 8G:   jr i j 'h gr g.
@@ -298,7 +298,7 @@ sub handleverses {
       } elsif ($_[3] =~ /8c/) {
 
         # 8c:   jr h j 'k jr j.
-        s/(<i>.*?<\/i>[\,\.\:\;]?)\(i\)(.*?)\(h([.\s]*?)gr\)(.*?)\(g\.\)/$1(h)$2(k$3jr)$4(j.)/;
+        s/(<i>.*?<\/i>[\,\.\:\;]?)\(i\)(.*?)\(h(.*?)gr\)(.*?)\(g\.\)/$1(h)$2(k$3jr)$4(j.)/;
       } else {
 
         # 8G*:  jr i j 'h gr gh..     (Ant. Monast.: '8a')
@@ -368,7 +368,7 @@ sub handleverses {
         s/\(i\.\)/(ih..)/ if $_[3] =~ /a$/;
       } else {
 
-        my $fin = $_[3] =~ /a/ ? 'gh..' : 'g.';
+        my $fin = $_[3] =~ /g/ ? 'g.' : 'gh..';
         s/(.*)\(j(.*?)jr\)(.*?)\(i\.\)/$1(h$2gr)$3($fin)/;
 
         if ($_[3] =~ /antiquo/) {
@@ -501,7 +501,7 @@ sub psalm : ScriptFunc {
         # redirect Monastic tones to the correct files acc. to Roman
         map {
           s/8a/8Gstar/;
-          s/1D$/1D-/;
+          s/1D(?!star)/1D-/;
           s/1Dstar/1D/;
           s/1g4/1g3/;
           s/1g3\-monasticus/1g3m/;

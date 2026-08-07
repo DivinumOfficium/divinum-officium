@@ -1,0 +1,151 @@
+@Sancti/09-08
+
+[Rule]
+12 lectiones
+Doxology=Nat
+
+[Ant Vespera] 
+Natívitas est hódie * sanctæ Maríæ Vírginis, cujus vita ínclita cunctas illústrat Ecclésias.;;109
+Cum jucunditáte * Nativitátem beátæ Maríæ celebrémus, ut ipsa pro nobis intercédat ad Dóminum Jesum Christum.;;112
+Regáli ex progénie * María exórta refúlget; cujus précibus nos adjuvári, mente et spíritu devotíssime póscimus.;;121
+Corde et ánimo * Christo canámus glóriam in hac sacra solemnitáte præcélsæ Genetrícis Dei Maríæ.;;126
+Natívitas gloriósæ * Vírginis Maríæ ex sémine Abrahæ, ortæ de tribu Juda, clara ex stirpe David.
+
+[Responsory Vespera 1]
+R. Beáta progénies, unde Christus natus est. 
+* O quam gloriósa est mater, quæ cæli Regínam génuit!
+V. Regáli ex progénie María exórta refúlget.
+R. O quam gloriósa est mater, quæ cæli Regínam génuit!
+
+[Responsory Vespera] 
+R.br. Natívitas tua, * Dei Génitrix Virgo. 
+R. Natívitas tua, * Dei Génitrix Virgo. 
+V. Gáudium annuntiávit univérso mundo.
+R. Dei Génitrix Virgo. 
+
+[Ant Matutinum 3N]
+Beáta progénies, * unde Christus natus est: o quam gloriósa est mater, quæ cæli Regínam génuit!
+
+[Invit]
+@SanctiCist/07-02
+
+[Lectio1]
+@Sancti/08-15t:Lectio1:s/-4/-3/ s/.4 .*//s
+
+[Lectio2]
+@Sancti/08-15t:Lectio1:s/.*!/!/s s/1-4/4-6/ s/1 .*4 /4 /s
+@Sancti/08-15t:Lectio2:s/!.*// s/7 .*//s
+
+[Lectio3]
+@Sancti/08-15t:Lectio2:s/5-9/7-10/ s/5 .*7 /7 /s
+@Sancti/08-15t:Lectio3:s/!.*// s/11 .*//s
+
+[Lectio4]
+@Sancti/08-15t:Lectio3:s/10-/11-/ s/10 .*11 /11 /s
+
+[Responsory1]
+R. Natívitas tua, Dei Génetrix Virgo, gáudium annuntiávit univérso mundo: ex te enim ortus est sol justítiæ, Christus Deus noster: 
+* Qui, solvens maledictiónem, dedit benedictiónem; et confúndens mortem, donávit nobis vitam sempitérnam.
+@CommuneM/C11:Responsory12:3
+R. Qui, solvens maledictiónem, dedit benedictiónem; et confúndens mortem, donávit nobis vitam sempitérnam.
+
+[Responsory3]
+@Sancti/09-08:Responsory1:1-2
+@Sancti/09-08:Responsory3:3
+@Sancti/09-08:Responsory1:4
+
+[Responsory4]
+@CommuneM/C11:Responsory11
+
+[Lectio5]
+@Sancti/09-08:Lectio4:s/Præcísum .*//s
+
+[Lectio6]
+@Sancti/09-08:Lectio4:s/.* (Præcísum )/$1/s s/$/~/
+@Sancti/09-08:Lectio5:s/Auctrix.*//
+
+[Lectio7]
+@Sancti/09-08:Lectio5:s/.* (Auctrix)/$1/ s/$/~/
+@Sancti/09-08:Lectio6:s/Audíte.*//
+
+[Lectio8]
+@Sancti/09-08:Lectio6:s/.* (Audíte)/$1/
+
+[Responsory5]
+@Sancti/09-08:Responsory3:1-2
+@Sancti/09-08:Responsory4:3
+@Sancti/09-08:Responsory3:4
+
+[Responsory6]
+R. Corde et ánimo Christo canámus glóriam,
+* In hac sacra solemnitáte præcélsæ Genetrícis Dei Virginis Mariæ.
+V. Omnes páriter congregáti Dóminum collaudémus,
+R. In hac sacra solemnitáte præcélsæ Genetrícis Dei Virginis Mariæ.
+
+[Responsory7]
+@SanctiM/09-08:Responsory4
+
+[Responsory8]
+@CommuneCist/C7:Responsory4
+
+[Lectio9]
+@Sancti/09-08:Lectio7:s/Fílii .*//s
+
+[Responsory9]
+@SanctiM/09-08:Responsory11:1-2
+@SanctiM/09-08:Responsory3:1:s/R\./V./
+@SanctiM/09-08:Responsory11:4
+
+[Lectio10]
+@Sancti/09-08:Lectio7:s/.* Fílii/Fílii/s s/$/~/
+@Sancti/09-08:Lectio8:s/Judas .*//s
+
+[Responsory10]
+@CommuneCist/C7:Responsory7
+
+[Lectio11]
+@Sancti/09-08:Lectio8:s/.* Judas/Judas/s
+
+[Responsory11]
+@Sancti/09-08:Responsory4:1-2
+@Sancti/09-08:Versum 1:1
+@Sancti/09-08:Responsory4:4
+
+[Lectio12]
+Quærat díligens lector et dicat: Cum Joseph non sit pater Domini Salvatóris, quid pértinet ad Dóminum generatiónis ordo dedúctus usque ad Joseph? Cui respondébimus primum, non esse consuetúdinis scripturárum, ut mulíerum in generatiónibus ordo texátur. Deínde‚ ex una tribu fuísse Joseph et Maríam: unde ex lege eam accípere cogebátur ut propínquam: et quod simul censéntur in Béthlehem, ut de una vidélicet stirpe generáti.
+
+[Responsory12]
+@:Responsory Vespera 1
+
+[Evangelium]
+@Sancti/09-08
+
+[Ant Laudes]
+@:Ant Vespera:s/;;.*//g
+
+[Capitulum Laudes]
+!Eccli. 24, 17-18
+v. Ego quasi vitis fructificávi suavitátem odóris: § et flores mei fructus honóris et honestátis. * Ego mater pulchræ dilectiónis, et timóris, et agnitiónis, et sanctæ spei.
+$Deo gratias
+
+[Responsory Laudes]
+@CommuneM/C10
+
+[Responsory Laudes]
+@CommuneCist/C10
+
+[Commemoratio 2] 
+@Sancti/09-08cc:Oratio
+
+[Capitulum Sexta]
+!Eccli. 24, 19-20
+v. Transíte ad me, omnes qui concupíscitis me, et a generatiónibus meis implémini: § spíritus enim meus super mel dulcis, et hæréditas mea super mel et favum: * memória mea in generatiónes sæculórum.
+$Deo gratias
+
+[Capitulum Nona] 
+!Eccli. 24, 21-22
+v. Qui edunt me, adhuc esúrient: § et qui bibunt me, adhuc sítient. * Qui audit me, non confundétur: § et qui operántur in me, non peccábunt. * Qui elúcidant me, vitam ætérnam habébunt.
+$Deo gratias
+
+[Ant 3]
+@Sancti/08-15t:Ant 1:s/quo/quæ/ s/\?/\,/ s/kam/jež/ s/když se převelice/a převelice se/

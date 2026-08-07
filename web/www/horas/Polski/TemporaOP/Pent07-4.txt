@@ -1,0 +1,10 @@
+[Lectio1]
+Z Drugiej Księgi Królewskiej
+!2 Sm 15:12-14
+12 Przyzwał téż Absalom Achitophel Gilończyka, radnego pana Dawidowego, z miasta jego Gilon. A gdy ofiarował ofiary, stało się sprzysiężenie silne, a ludu zbiegającego się przybywało z Absalomem.
+@Tempora/Pent06-4::3-4 s/: kwapcie.*/./
+
+[Lectio2]
+@Tempora/Pent06-4::1 s/16-18/14-16/
+@Tempora/Pent06-4:Lectio1:4-5 s/.* (kwapcie)/14 \u$1/
+@Tempora/Pent06-4::2

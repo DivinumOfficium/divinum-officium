@@ -1,0 +1,80 @@
+@Sancti/07-22
+
+[Officium]
+S. Mariæ Magdalenæ
+
+[Rank]
+;;Duplex;;3;;vide C7a
+
+[Invit]
+Ætérnum trinúmque Deum laudémus et unum, * Qui sibi Mariam transvéxit in æthera sanctam.
+
+[HymnusM Matutinum]
+@Sancti/07-22:HymnusM Vespera
+
+[Ant Matutinum]
+Cum discubuisset in domo Simónis Dóminus Jesus, mundi glória, múlter, quæ erat in civitáte peccátrix, nardi odorífera exhibuit unguénta.;;8
+Secus pedes Dómini astans, incessánte, crine solúto, diva vestigia osculabátur lácrimis plena.;;18
+Irrigábat igitur Domínicos Jesu pedes: fracto quoque alabástro, præcípui odóribus fragrâbat domus omnis: atque capillórum officio detergébat.;;23
+Simon autem intra se inquit: Si esset prophéta, sciret profecto quæ et qualis est, quæ tangit eum: quia peccátrix est.;;44
+Et convérsus Dóminus, dixit: Postquam venit in domum tuam, non cessat, crine fuso, hæc meos osculári pedes.;;45
+Quóniam multum diléxeras, dimíssa scito tibi peccámina: et fide, qua polles, sacra in pace remíttito.;86
+Satagébat igitur Martha soror Mariæ Magdalénæ circa ministéria: quæ sedens secus pedes Dómini audiébat verba oris ejus.;;95
+Non est, Martha inquit, tibi curæ quod soror mea me relíquit solam ministráre? jube illi ut me ádiuvet.;;96
+Et respóndens dixit illi Dóminus: Unum est necesse: María óptimam sibi partem elégit, quæ non auferétur ab ea.;;97
+
+[Responsory1]
+R. Lætétur omnes sæculum in solemnitate sanctæ Mariæ Magdalænæ,
+* Quam Jesus ætérnus amor diléxit plúrimum.
+V. Hæc Mariá fuit illa Dómino gratíssima, quæ unguénto pretióso pedes unxit Dómini.
+R. Quam Jesus ætérnus amor diléxit plúrimum.
+
+[Lectio2]
+@Sancti/07-22::s/-4/-7/
+@Sancti/07-22:Lectio3:!1
+
+[Responsory2]
+R. Felix Maria unxit pedes Dómini Jesu et extérsit capillis suis:
+* Et domus impléta est ex odóre unguénti.
+V. Mixtum rorem bálsami fracto fudit alabástro, quæ unguénto pretióso pedes unxit Dómini.
+R. Et domus impléta est ex odóre unguénti.
+
+
+[Responsory3]
+R. Gloriósa hujus diéi solémnia devóta celebrémus omnes veneratióne, qua beáta María Magdaléna
+* Cælos méruit ascéndere. 
+V. Consummáto cursu præséntis vitæ, cælésti evocáta pietáte.
+R Cælos méruit ascéndere. 
+
+[Ant Laudes]
+Láudibus excélsis omnis mundus exsúltet in solemnitáte sanctæ Mariæ Magdalænæ.
+Hæc corde compúncta venit, ad pedes Jesu accésit: illos lácrimis rigávit et capíllis cápitis sui tersit.
+Intercéde, súpplíca assídue pro nobis Jesu Dómino, María Magdaléna.
+O bone Jesu, laus tibi! Remisísti peccatríci multa peccámina, quia te diléxit multum.
+María ergo unxit pedes Jesu et extérsit capíllis suis: et domus impléta est ex odóre unguénti.
+
+[Versum 2]
+V. Dimissa sunt ei peccata multa.
+R. Quoniam dilexit multum.
+
+[Ant 2]
+O mundi lampas et margarita præfulgida, quæ resurrectionem Christi nuntiando Apostolorum Apóstola fieri meruisti, María Magdaléna, semper pia exoratrix pro nobis adsis ad Deum, qui te elégit.
+
+[Oratio]
+v. Largire nobis, clementissime Pater: ut, sicut beáta María Magdaléna, Dóminum nostrum Jesum Christum super ómnia diligendo, suorum obtinuit véniam peccatorum, ita nobis, apud misericórdiam tuam, sempitérnam impetret beatitúdinem.
+$Per eundem
+
+[Capitulum Sexta]
+@Commune/C7a:Lectio1:2 s/10-17/17-18/
+@Commune/C7a:Lectio1:10 s/\d+/v./ s/$/~/
+@Commune/C7a:Lectio2:2 s/\d+ //
+$Deo gratias
+
+[Ant Vespera 3]
+@:Ant Laudes:1 s/$/;;109;112;121;126;147/
+
+[Versum 3]
+@Sancti/07-22:Versum 0
+
+[Ant 3]
+@SanctiM/07-22b:Ant 1

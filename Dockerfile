@@ -1,56 +1,101 @@
+# --- STAGE 1: Build Info ---
 FROM public.ecr.aws/docker/library/alpine:latest AS gitinfo
-
 RUN apk add git
 COPY .git /build/
 WORKDIR /build
 
-# Write build info to be available at $url/buildinfo
-RUN echo "{" > /build/buildinfo
-RUN echo "  \"build-date\": \"`date +%s`\"," >> /build/buildinfo
-RUN echo "  \"build-date-human\": \"`date`\"," >> /build/buildinfo
-RUN echo "  \"commit\": \"`git rev-parse HEAD`\"," >> /build/buildinfo
-RUN echo "  \"branch\": \"`git rev-parse --abbrev-ref HEAD`\"" >> /build/buildinfo
-RUN echo "}" >> /build/buildinfo
+RUN echo "{" > /build/buildinfo && \
+    echo "  \"build-date\": \"$(date +%s)\", " >> /build/buildinfo && \
+    echo "  \"build-date-human\": \"$(date)\", " >> /build/buildinfo && \
+    echo "  \"commit\": \"$(git rev-parse HEAD)\", " >> /build/buildinfo && \
+    echo "  \"branch\": \"$(git rev-parse --abbrev-ref HEAD)\"" >> /build/buildinfo && \
+    echo "}" >> /build/buildinfo
 
-# Final container
-FROM public.ecr.aws/docker/library/perl:5.42-slim AS final
+# --- STAGE 2: Final Container ---
+FROM perl:5.40-slim AS final
+LABEL maintainer="Thomas Randall <thomas.james.randall@gmail.com>"
 
-# Set envs
-ENV APACHE_RUN_USER=www-data \
-    APACHE_RUN_GROUP=www-data \
-    APACHE_LOCK_DIR=/var/lock/apache2 \
-    APACHE_LOG_DIR=/var/log/apache2 \
-    APACHE_PID_FILE=/var/run/apache2/apache2.pid \
-    APACHE_SERVER_NAME=localhost
-
-# Install packages
-RUN apt-get update && apt-get install -y \
-    curl \
-    wget \
-    apache2 \
+# 1. System dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    libperl-dev \
+    libssl-dev \
+    zlib1g-dev \
+    libcgi-pm-perl \
     libcgi-session-perl \
+    libhttp-message-perl \
+    liburi-perl \
+    libwww-perl \
+    libplack-perl \
+    perl-modules \
+    wget \
+    cron \
+    python3 \
     && rm -rf /var/lib/apt/lists/*
 
-# Get dumb-init to use a proper init system
-RUN wget -O /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.2.2/dumb-init_1.2.2_amd64 && \
+# 2. Plack Stack — pin Plack to 1.0050 which reverts the breaking return_405 change
+RUN cpanm --notest \
+    MIYAGAWA/Plack-1.0050.tar.gz \
+    Starman \
+    Plack::App::CGIBin \
+    CGI::Compile \
+    CGI::Emulate::PSGI \
+    CGI::Session
+
+# 3. Process management — detect arch so this works on both x86_64 and ARM
+RUN ARCH=$(uname -m) && \
+    if [ "$ARCH" = "x86_64" ]; then \
+        DUMB_INIT_ARCH="x86_64"; \
+    elif [ "$ARCH" = "aarch64" ]; then \
+        DUMB_INIT_ARCH="aarch64"; \
+    else \
+        echo "Unsupported architecture: $ARCH" && exit 1; \
+    fi && \
+    wget -O /usr/local/bin/dumb-init \
+        "https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_${DUMB_INIT_ARCH}" && \
     chmod +x /usr/local/bin/dumb-init
 
-# Load config files
-COPY docker/apache/ports.conf /etc/apache2/ports.conf
-COPY docker/apache/apache2.conf /etc/apache2/apache2.conf
-
-# Set permissionsso apache can write to logs without root
-RUN mkdir -p /var/run/apache2 /var/lock/apache2 /var/log/apache2 ; chown -R www-data:www-data /var/lock/apache2 /var/log/apache2 /var/run/apache2
-
-# Copy in code
 WORKDIR /var/www
-COPY --chown=www-data:www-data web /var/www/web
 
-# Write build info to be available at $url/buildinfo
+# 4. Copy code and set permissions
+COPY web /var/www/web
+COPY lexicon-tools /var/www/lexicon-tools
+COPY app.psgi /var/www/app.psgi
+
+COPY warm-ordo-cache.sh /usr/local/bin/warm-ordo-cache.sh
 COPY --from=gitinfo /build/buildinfo /var/www/web/buildinfo
 
-# Expose default port
-EXPOSE 80
+RUN perl /var/www/lexicon-tools/build_lexicon_storable.pl
+
+RUN find /var/www/web -type d -exec chmod 755 {} + && \
+    find /var/www/web -type f -exec chmod 644 {} + && \
+    find /var/www/web/cgi-bin -type f -name "*.pl" -exec chmod +x {} + && \
+    chmod +x /usr/local/bin/warm-ordo-cache.sh && \
+    mkdir -p /var/www/web/ordo-cache && \
+    chown -R www-data:www-data /var/www
+
+# 5. Internalize URLs
+RUN grep -rl 'divinumofficium.com' /var/www/web | xargs sed -i 's|https\?://divinumofficium\.com/|/|g'
+
+# 6. Set up nightly cron job to warm the ordo cache at 2:00 AM UTC
+# Runs as www-data, logs to /var/log/ordo-cache-warm.log
+RUN echo "0 2 * * * www-data BASE_URL=http://localhost:8080 /usr/local/bin/warm-ordo-cache.sh >> /var/log/ordo-cache-warm.log 2>&1" \
+    > /etc/cron.d/ordo-cache && \
+    chmod 644 /etc/cron.d/ordo-cache
+
+# 7. Clear any debug environment that might have leaked in
+ENV PERL5OPT=""
+ENV PERL5DB=""
+ENV PERLDB_OPTS=""
+
+USER root
 
 ENTRYPOINT ["/usr/local/bin/dumb-init", "--"]
-CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]
+
+# Start cron, then warm the ordo cache in the background after a 15 second
+# delay to allow Starman to fully start before requests are made.
+# Cache will be ready within ~75 seconds of container startup.
+CMD ["/bin/bash", "-c", \
+    "cron && \
+     (sleep 15 && BASE_URL=http://localhost:8080 /usr/local/bin/warm-ordo-cache.sh >> /var/log/ordo-cache-warm.log 2>&1) & \
+     starman --port 8080 --host 0.0.0.0 --workers 20 --preload-app --user www-data --group www-data /var/www/app.psgi"]

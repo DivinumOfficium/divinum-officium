@@ -1,0 +1,36 @@
+[Responsory3]
+R. Ty, kdo číhali na mou duši, se spolu poradili a řekli: 
+* Bůh jej opustil; pronásledujme jej a zajměme, neboť není, kdo by jej osvobodil; Bože můj, nevzdaluj se ode mě; Bože můj, k pomocí mé pohlédni.
+@Tempora/Quad5-1:Responsory2:3
+R. Bůh jej opustil; pronásledujme jej a zajměme, neboť není, kdo by jej osvobodil; Bože můj, nevzdaluj se ode mě; Bože můj, k pomocí mé pohlédni.
+
+[Lectio5]
+@Tempora/Quad5-0:Lectio4
+
+[Lectio6]
+@Tempora/Quad5-0:Lectio5:s/Nesmíme .*//s
+
+[Lectio7]
+@Tempora/Quad5-0:Lectio5:s/.* Nesmíme /Nesmíme /s s/$/~/
+@Tempora/Quad5-0:Lectio6:s/Job, .*//s
+
+[Lectio8]
+@Tempora/Quad5-0:Lectio6:s/.* Job, /Job, /s
+
+[Responsory6]
+@Tempora/Quad5-2:Responsory3:1-2
+V. Nevydávej mě choutkám mých protivníků, vždyť povstali proti mně falešní svědci;
+@Tempora/Quad5-2:Responsory3:4
+
+[Lectio9]
+@Tempora/Quad5-0:Lectio7:s/Pokud tedy .*//s
+
+[Lectio10]
+@Tempora/Quad5-0:Lectio7:s/.* (?=Pokud tedy )//s s/$/~/
+@Tempora/Quad5-0:Lectio8:s/Je totiž .*//s
+
+[Lectio11]
+@Tempora/Quad5-0:Lectio8:s/.* (?=Je totiž )//s s/$/~/
+
+[Lectio12]
+@Tempora/Quad5-0:Lectio9:s/Poněvadž .*//s

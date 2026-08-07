@@ -1,0 +1,114 @@
+[Officium]
+@Tempora/Epi1-1
+
+[Rank]
+;;Feria;;1;;
+
+[Rule]
+3 Lectiones
+Oratio Dominica
+
+[Lectio1]
+@Tempora/Epi1-5
+
+[Lectio2]
+@Tempora/Epi1-5::1-5:s/-10/-7/
+
+[Lectio3]
+@Tempora/Epi1-5:Lectio3:1:s/11-13/8-12/
+@Tempora/Epi1-5:Lectio2:6-8
+@Tempora/Epi1-5:Lectio3:2-3:s/Nunc cognósco.*//
+
+[Responsory1]
+@Tempora/Epi2-1:Responsory3
+(sed feria 3)
+@:Responsory1F3
+(sed feria 4)
+@:Responsory1F4
+(sed feria 5)
+@Tempora/Epi2-4:Responsory3
+(sed feria 6)
+@:Responsory1F6
+
+[Responsory2]
+@:Responsory2F2
+(sed feria 3)
+@Tempora/Epi2-3:Responsory2
+(sed feria 4)
+@:Responsory2F4
+(sed feria 5)
+@:Responsory2F5
+(sed feria 6)
+@:Responsory2F6
+
+[Responsory3]
+@:Responsory3F2
+(sed feria 3)
+@:Responsory3F3
+(sed feria 4)
+@Tempora/Epi2-4:Responsory2:s/magnitúdinem/magnificéntiam/
+(sed feria 5)
+@:Responsory3F5
+(sed feria 6)
+@:Responsory3F6
+
+[Responsory1F3]
+@Tempora/Epi2-3:Responsory1:1-2
+V. Miserére mei, Deus, miserére mei, quóniam in te confídit ánima mea:
+@Tempora/Epi2-3:Responsory1:4
+
+[Responsory1F4]
+R. Exáudi, Deus, deprecatiónem meam: inténde oratióni meæ:
+* A fínibus terræ ad te clamávi, Dómine.
+V. Dum anxiarétur cor meum, in petra exaltásti me, et deduxísti me.
+R. A fínibus terræ ad te clamávi, Dómine.
+
+[Responsory1F6]
+@Tempora/Epi2-5:Responsory1:1-2
+@Tempora/Epi2-5:Responsory2:4:s/R\./V./ s/liberásti/eripuísti/
+@Tempora/Epi2-5:Responsory1:4
+
+[Responsory2F2]
+R. Delectáre in Dómino: 
+* Et dabit tibi petitiónes cordis tui.
+V. Revéla Dómino viam tuam, et spera in eo, et ipse fáciet.
+R. Et dabit tibi petitiónes cordis tui.
+
+[Responsory2F4]
+R. Deus, in te sperávi, Dómine, non confúndar in ætérnum: 
+* In justítia tua líbera me, et éripe me.
+V. Esto mihi in Deum protectórem, et in locum munítum, ut salvum me fácias.
+R. In justítia tua líbera me, et éripe me.
+
+[Responsory2F5]
+R. Mihi autem adhærére Deo bonum est,
+* Pónere in Dómino Deo spem meam.
+V. Fiat cor meum immaculátum, ut non confúndar.
+R. Pónere in Dómino Deo spem meam.
+
+[Responsory2F6]
+@Tempora/Epi2-5:Responsory2:1-2
+V. Deus, iníqui insurrexérunt super me, et fortes quæsiérunt ánimam meam:
+@Tempora/Epi2-5:Responsory2:4
+
+[Responsory3F2]
+R. Auribus pércipe, Deus, lácrimas meas: 
+* Ne síleas a me, remítte mihi, quóniam íncola ego sum apud te, et peregrínus.
+V. Dixi: Custódiam vias meas, ut non delínquam in lingua mea.
+R. Ne síleas a me, remítte mihi, quóniam íncola ego sum apud te, et peregrínus.
+
+[Responsory3F3]
+@Tempora/Epi2-3:Responsory3:1-2
+V. Eripe me de inimícis meis Deus meus, et ab insurgéntibus in me líbera me.
+@Tempora/Epi2-3:Responsory3:4
+
+[Responsory3F5]
+R. Devastávit víneam tuam aper de silva, et singuláris ferus depástus est in eam: vide, Dómine, et éxcita poténtiam tuam:
+* Ne péreat quod plantávit déxtera tua.
+V. Dómine, Deus virtútum, convértere, réspice de cœlo et vide, et vísita víneam istam:
+R. Ne péreat quod plantávit déxtera tua.
+
+[Responsory3F6]
+@Tempora/Epi2-5:Responsory3:1-2
+V. Deus ultiónum Dóminus, Deus ultiónum líbere egit.
+@Tempora/Epi2-5:Responsory3:4

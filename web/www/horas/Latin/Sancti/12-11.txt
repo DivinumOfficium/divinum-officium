@@ -7,7 +7,7 @@ S. Damasi Papæ et Confessoris
 ;;Duplex;;3;;vide C4b
 (sed rubrica innovata)
 ;;Semiduplex;;2.5;;vide C4b
-(sed rubrica monastica nisi rubrica 1617)
+(sed rubrica ^Monastica nisi rubrica 1617)
 ;;Simplex;;1.1;;vide C4b
 
 [Rule]

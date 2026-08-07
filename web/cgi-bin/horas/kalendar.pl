@@ -20,7 +20,7 @@ use Time::Local;
 use locale;
 use lib "$Bin/..";
 use DivinumOfficium::Main qw(liturgical_color);
-use DivinumOfficium::Directorium qw(dirge);
+use DivinumOfficium::Directorium qw(get_from_directorium dirge);
 use DivinumOfficium::Date qw(ydays_to_date);
 use DivinumOfficium::RunTimeOptions qw(check_version);
 
@@ -103,12 +103,16 @@ $setupsave =~ s/\r*\n*//g;
 
 our $version1 = check_version(our $version) || (error("Unknown version: $version1") && 'Rubrics 1960 - 1960');
 our $version2 = check_version($version2) || '';
+our $dioecesis = strictparam('dioecesis') || 'Generale';
 if ($version1 eq $version2) { $version2 = 'Divino Afflatu - 1954'; }
 if ($version1 eq $version2) { $version2 = 'Rubrics 1960 - 1960'; }
 
+# Safeguarding the date argument
 my ($xmonth, $xday, $xyear) = split('-', strictparam($date_arg) || gettoday());
 our $kmonth = strictparam('kmonth') || $xmonth;
 our $kyear = strictparam('kyear') || $xyear;
+$kmonth = $xmonth unless ($kmonth > 0 && $kmonth < 16);
+$kyear = $xyear unless ($kyear > 1582);
 
 my $mode = $kmonth == 15 ? 'kal' : 'ordo';
 require "$Bin/kalendar/$mode.pl";
@@ -116,8 +120,11 @@ require "$Bin/kalendar/$mode.pl";
 if (strictparam('format') eq 'ical') {
   require "$Bin/kalendar/ical.pl";
   ical_output();
+} elsif (strictparam('format') eq 'ical_comm') {
+  require "$Bin/kalendar/ical.pl";
+  ical_comm_output($officium);
 } else {
-  html_output($mode);
+  html_output($kyear, $kmonth, $mode);
 }
 
 # End of program
@@ -189,14 +196,16 @@ sub kalendar_table {
 
 # print html page
 sub html_output {
-  my ($mode) = @_;
+  my ($kyear, $kmonth, $mode) = @_;
 
   print html_header();
   print kalendar_table($kyear, $kmonth, $mode);
 
   print "<P ALIGN='CENTER'>\n";
   print htmlInput('version', $version1, 'options', 'versions', "document.forms[0].submit()");
+  print htmlInput('dioecesis', $dioecesis, 'options', 'dioecesis', "document.forms[0].submit()") unless $compare;
   print htmlInput('version2', $version2, 'options', 'versions', "document.forms[0].submit()") if $compare;
+  print htmlInput('dioecesis', $dioecesis, 'options', 'dioecesis', "document.forms[0].submit()") if $compare;
   print "</P><P ALIGN='CENTER'>\n" . bottom_links_menu() . "</P>\n";
 
   # if ($Readings) { Readings(); } # not reachable
@@ -210,7 +219,10 @@ sub html_output {
     my $tyear;
     ($tyear = gettoday()) =~ s/.*-//;
     my $iyear = $tyear != $kyear ? "&kyear=$kyear" : '';
-    print "&nbsp;&nbsp;&nbsp;<A HREF='$ENV{PATH_INFO}?format=ical&version=$version1$iyear'>iCal</A>";
+    print
+      "&nbsp;&nbsp;&nbsp;<A HREF='$ENV{PATH_INFO}?format=ical&version=$version1&dioecesis=$dioecesis$iyear'>iCal</A>";
+    print
+      "&nbsp;&nbsp;&nbsp;&nbsp;<A HREF='$ENV{PATH_INFO}?format=ical_comm&version=$version1&dioecesis=$dioecesis$iyear'>iCal with Commemorations</A>";
   }
 
   my $date1 = strictparam('date1');

@@ -7,9 +7,5 @@
 [Lectio10]
 @Tempora/Pasc3-3:Lectio8:s/ Joseph ergo.*//s
 
-[Lectio11]
-@Tempora/Pasc3-3:Lectio8:s/.* Joseph ergo/Joseph ergo/s s/$/~/s
-@Tempora/Pasc3-3:Lectio9:s/\; tamquam.*/./s
-
 [Lectio12]
 @Tempora/Pasc3-3:Lectio9:s/.* tamquam/Tamquam/s

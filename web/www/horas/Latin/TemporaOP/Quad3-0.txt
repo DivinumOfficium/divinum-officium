@@ -1,0 +1,52 @@
+@Tempora/Quad3-0
+
+[Responsory Vespera 1]
+R. Loquens Ioseph frátribus suis dixit:
+* Pax vobis, nolite timére: Pro salúte enim vestra misit me Dóminus ante vos.
+V. Elevavítque vocem cum fletu, quam audiérunt Ægypti omnísque domus Pharaónis. Et dixit frátribus suis.
+R. Pax vobis, nolite timére: Pro salúte enim vestra misit me Dóminus ante vos.
+&Gloria
+R. Pro salúte enim vestra misit me Dóminus ante vos.
+
+[Lectio1]
+@Tempora/Quad3-0::1-5 s/-10/-4/
+
+[Lectio2]
+@Tempora/Quad3-0:Lectio1:2 s/2-10/5-8/
+@Tempora/Quad3-0:Lectio1:6-9
+
+[Responsory2]
+@Tempora/Quad3-0:Responsory4:1-2
+V. Congregátis autem cunctis líberis ejus ut delinírent dolórem patris, nóluit eos audíre, sed dixit.
+@Tempora/Quad3-0:Responsory4:4
+
+[Lectio3]
+@Tempora/Quad3-0:Lectio1:2 s/2-10/9-11/
+@Tempora/Quad3-0:Lectio1:10-11
+@Tempora/Quad3-0:Lectio2:2
+
+[Responsory3]
+@:Responsory Vespera 1
+@:Responsory Vespera 1:1 s/$/~/
+@:Responsory Vespera 1:2
+
+[Lectio7]
+@Tempora/Quad3-0::s/ Quidam.*//s
+
+[Capitulum Laudes]
+@Tempora/Quad1-0::s/.*?: /v. /
+
+[Ant 2]
+@Tempora/Quad3-0:Ant Prima:s/ Je.us//
+
+[Ant Prima]
+@Tempora/Quad3-0:Ant Tertia
+
+[Ant Tertia]
+@Tempora/Quad3-0:Ant 2:s/Cum/Dum/
+
+[Capitulum Sexta]
+@Tempora/Quad1-0
+
+[Capitulum Nona]
+@TemporaOP/Quad1-0

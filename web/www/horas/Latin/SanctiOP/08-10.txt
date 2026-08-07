@@ -1,0 +1,97 @@
+@Sancti/08-10
+
+[Rule]
+Antiphonas feries
+
+[Ant Vespera]
+@Sancti/08-10:Ant Vespera:2 s/$/;;112;116;145;146;147/
+
+[Responsory Vespera 1]
+@Sancti/08-10:Responsory6
+
+[Ant 1]
+@Sancti/08-10:Ant 3
+
+[Oratio 1]
+@Sancti/08-09t:Oratio
+
+[Invit]
+@Commune/C2
+
+[Hymnus Matutinum]
+@Commune/C2
+
+[Ant Matutinum]
+@Sancti/08-10::1-4
+@Sancti/08-10::6 s/;;.*/;;5/
+@Sancti/08-10::5 s/;;.*/;;8/
+@Sancti/08-10::7-9 s/14/10/
+
+[Lectio2]
+@Sancti/08-10::1-6 s/-13/-12/
+
+[Responsory2]
+@Sancti/08-10:Responsory4
+
+[Lectio3]
+@Sancti/08-10::1 s/14-/13-/
+@Sancti/08-10:Lectio2:7
+@Sancti/08-10::2-5
+
+[Responsory3]
+@Sancti/08-10:Responsory5:1-4
+&Gloria
+@Sancti/08-10:Responsory5:2 s/.*; (.)/R. \u\1/
+
+[Lectio4]
+@Sancti/08-11oct::s/$/~/
+@Sancti/08-11oct:Lectio5:s/ Beati.*//
+
+[Responsory4]
+@Sancti/08-10:Responsory6
+
+[Lectio5]
+@Sancti/08-11oct::s/.*(?=Beati)// s/$/~/
+@Sancti/08-11oct:Lectio6:s/.*(?=Quo)// s/ Hoc.*//
+
+[Responsory5]
+@Sancti/08-10:Ant Matutinum:7 s/;;.*// s/^/R./
+@Sancti/08-10:Responsory3:2
+V. Carnífices vero urgéntes ministrábant carbónes subter cratem férream.
+@Sancti/08-10:Responsory3:4
+
+[Lectio6]
+@Sancti/08-11oct::s/.* (?=Hoc)// s/$/~/
+In quantum enim in illo fidei ardor fervet, in tantum supplicii flamma frígescit. Corporáli enim beátus Lauréntius labórat incéndio: sed divínus Salvatóris ardor materiálem tyránni restínxit ardórem. Quamvis enim in favillam membra solvántur, fidei tamen fortitúdo non sólvitur. Corpóris quidem detriméntum sústinet, sed lucrum salutis acquirit.
+
+[Responsory6]
+@SanctiM/08-10:Responsory4
+
+[Responsory7]
+@Sancti/08-10::1-2 s/\n\* (.)/ \l$1/ s/ (te Dóminum)/\n* \u\1/
+V. Accusátus non negávi nomen sanctum tuum, et interrogátus.
+@Sancti/08-10::2 s/.* (te Dóminum)/R. \u\1/
+
+[Lectio8]
+@Sancti/08-10::s/ Felíces.*//
+
+[Responsory8]
+@SanctiM/08-10:Responsory12
+
+[Lectio9]
+Cum ergo causæ artículus vénerit, ut hæc conditio proponatur, aut faciendum esse contra Dei præceptum aut ex hac vita emigrandum: quorum duorum homo si cogatur alterum eligere, comminante mortem persecutore: ibi eligat Deo dilecto émori quam offénso vivere. Ibi óderit in hoc mundo animam suam, ut in vitam ætérnam custódiat eam.
+
+[Responsory9]
+@SanctiM/08-10:Responsory8
+
+[Capitulum Laudes]
+@Commune/C2
+
+[Versum 2]
+@CommuneOP/C2
+
+[Ant Vespera 3]
+@Sancti/08-10:Ant Vespera:1 s/$/;;109;111;112;115;125/
+
+[Ant 3]
+@Sancti/08-10:Ant 1

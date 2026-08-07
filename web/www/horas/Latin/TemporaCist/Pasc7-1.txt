@@ -1,0 +1,29 @@
+@Tempora/Pasc7-1
+
+[Rule]
+No commemoratio
+Psalmi Dominica 
+no prima vespera
+
+[Invit]
+@Tempora/Pasc7-0:Versum 1:1:s/V\. // s/(.)(llel[uú][ij]a)/\* \u$1$2/
+
+[Ant Matutinum]
+@TemporaCist/Pasc7-0:Ant MatutinumC:s/;;.*//
+;;
+;;
+;;
+;;
+;;
+@TemporaCist/Pasc0-0:AntC Matutinum
+;;
+;;
+;;
+;;
+;;
+
+[Benedictio]
+Spíritus sancti grátia † illúminet sensus et corda nostra. †
+
+[Ant 3]
+Non enim misit Deus * Fílium suum in mundum, ut júdicet mundum, sed ut salvétur mundus per ipsum, allelúia.

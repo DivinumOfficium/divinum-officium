@@ -1,0 +1,18 @@
+@Tempora/Quad2-3
+
+[Lectio1]
+@Tempora/Quad2-3::s/ Qui .*//
+
+[Responsory1]
+@Tempora/Quad2-0:Responsory6
+
+[Responsory2]
+@Tempora/Quad2-0:Responsory7:1-2 s/\n\*// s/ (Et)/\n* $1/
+V. Nequáquam vocáberis Jacob, sed Israël erit nomen tuum.
+@Tempora/Quad2-0:Responsory7:2 s/.* (?=Et .*)/R. /
+
+[Responsory3]
+@TemporaM/Quad2-0:Responsory12
+
+[Ant 3]
+@TemporaCist/Quad2-3

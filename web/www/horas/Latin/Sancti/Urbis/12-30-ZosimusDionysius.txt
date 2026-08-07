@@ -1,0 +1,25 @@
+[Officium]
+Ss. Zosimi et Dionysii Pontificum et Confessorum
+
+[Rank]
+;;Duplex;;3;;vide aliquibus locis/C4b-3
+
+[Rule]
+vide aliquibus locis/C4b-3;
+9 lectiones
+Lectio1 OctNat
+
+[Name]
+Zósimi et Dionysii
+(sed communi Summorum Pontificum)
+Zósimum et Dionysium
+
+[Lectio4]
+@Sancti/Urbis/02-09-Zosimus
+
+[Lectio5]
+@Sancti/Urbis/02-09-Zosimus:: s/$/~/
+@Sancti/Urbis/02-09-Zosimus:Lectio6
+
+[Lectio6]
+@Sancti/Urbis/02-03-Dionysius:Lectio4

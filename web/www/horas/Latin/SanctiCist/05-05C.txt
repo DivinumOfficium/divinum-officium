@@ -6,6 +6,23 @@ S. Sacerdotis, Episcopi et Confessoris
 
 [Rule]
 vide C4;mtv
+3 lectiones
 
-[Oratio]
-@Commune/C4::s/N./Sacérdotis/
+[Name]
+Sacérdotis
+
+[Lectio2]
+Martínus qui et Sacérdos appellátur, nóbilis Hispánus, Abbáti Blásio in monastério de Cántavos offértur a matre. Cisterciénsi indutus hábitu, et professióne facta post mortem Blásii, et monastérii in Hortam translatiónem, júvenis eléctus est in Abbátem. Factus vero post annos círciter vigínti Saguntínus Epíscopus, Clerum suum reformávit, Canonicos régulis astrínxit, Ecclésiæ suæ jura túitus est, captivórum liberatiónem non omíttens. 
+
+[Lectio3]
+Post annos septem in Pontificátu transáctos, de Papæ licéntia cessit, et Hortam rédiens, privátam ibi vitam, sed virtútum glória coruscántem duxit. Morbo dénique pressus, cum ex Ovísa in próprium monastérium deflécteret, in Cétoca óppido mórtuus est, corpúsque ejus Hortam reportátum quamplúrimis fulsit miráculis, ex quibus illud admirándum, et probátum, quod Angelus caput de córpore extráxerit, Saguntúmque Canónicis detúlerit, die quinta Maji, quo die festívitas ejus celebrátur.  
+
+[Responsory1]
+@CommuneCist/C5:Responsory4
+
+[Responsory2]
+@CommuneCist/C5:Responsory8
+
+[Responsory3]
+@CommuneCist/C4:Responsory12
+

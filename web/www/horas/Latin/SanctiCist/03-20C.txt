@@ -1,7 +1,15 @@
 @Sancti/08-16
 
+[Officium]
+S. Joachim, Patris B.M.V.
+
 [Rank]
-S. Joachim, Patris B.M.V.;;MM. maj.;;4;;ex C5
+;;Duplex;;4;;ex C5
+
+[Rule]
+ex C5
+12 lectiones
+in 1 Nocturno Lectiones ex Commune in 2 loco;
 
 [Hymnus Vespera]
 Ad tuas laudes, Jóachim, propínquat
@@ -34,6 +42,41 @@ Et tibi compar utriúsque semper,
 Spíritus alme, Deus unus omni
 Témpore secli.
 Amen.
+
+[Hymnus Matutinum]
+@:Hymnus Vespera
+
+[Lectio5]
+@Sancti/08-16:Lectio4:s/Jóachim enim .*//
+
+[Lectio6]
+@Sancti/08-16:Lectio4:s/.* (Jóachim enim )/$1/s
+
+[Lectio7]
+@Sancti/08-16:Lectio5:1-2
+@Sancti/08-16:Lectio6:s/O beátum .*//
+
+[Lectio8]
+@Sancti/08-16:Lectio6:s/.* (O beátum )/$1/s
+
+[Lectio9]
+@Sancti/08-16:Lectio7:s/Verum, hoc demum .*//
+
+[Lectio10]
+@Sancti/08-16:Lectio7:s/.* (Verum, hoc demum )/$1/s s/$/~/
+@Sancti/08-16:Lectio8:s/Rursus, .*//
+
+[Lectio11]
+@Sancti/08-16:Lectio8:s/.* (Rursus, )/$1/
+
+[Lectio12]
+@Sancti/08-16:Lectio9:s/Verum, .*//
+
+[Responsory12]
+@Commune/C4:Responsory8
+
+[Evangelium]
+@Sancti/08-16
 
 [Hymnus Laudes]
 Jesu patérna cláritas,

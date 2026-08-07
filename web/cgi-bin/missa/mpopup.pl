@@ -56,6 +56,8 @@ if (!$setupsave) {
 set_runtime_options('general');       #$expand, $version, $lang2
 set_runtime_options('parameters');    # priest, lang1 ... etc
 
+$glossfont = '' if $glossfont =~ /^[btonc]+$/;
+
 $popup = strictparam('popup');
 $background = ($whitebground) ? ' class="contrastbg"' : '';
 $only = ($lang1 && $lang1 =~ /$lang2/) ? 1 : 0;
@@ -101,4 +103,10 @@ sub gettext {
   $text =~ s/#/!/g;
   $text = resolve_refs($text, $lang);
   return $text;
+}
+
+sub horasjsend() {
+
+  # Gregorian Chant (GABC) functionality:
+  # Empty but necessary function to mask the corresponding one from horasjs.pl!
 }

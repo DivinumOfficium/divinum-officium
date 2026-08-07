@@ -1,5 +1,17 @@
 [Officium]
-S. Germani Ep et Conf
+S. Germani Antisiodorensis Episcopi et Confesoris
 
 [Rank]
 ;;Simplex;;1.1;;vide C4
+
+[Name]
+Germáni
+
+[Ant 2]
+@CommuneCist/C4:Ant Vespera:4
+
+[Versum 2]
+@Commune/C2
+
+[Oratio]
+@Commune/C4-1

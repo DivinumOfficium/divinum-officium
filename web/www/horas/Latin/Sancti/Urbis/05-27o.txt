@@ -1,0 +1,18 @@
+@Sancti/05-27o
+
+[Rank]
+;;Duplex;;3;;vide C2b-1
+
+[Rule]
+vide C2b-1;
+9 lectiones
+
+[Lectio4]
+@Sancti/05-27o:Lectio2:s/Sed illud.*//s
+
+[Lectio5]
+@Sancti/05-27o:Lectio2:s/.*(Sed illud)/$1/ s/$/~/
+@Sancti/05-27o:Lectio3:s/Quod iniquissimo.*//s
+
+[Lectio6]
+@Sancti/05-27o:Lectio3:s/.*(Quod iniquissimo)/$1/s

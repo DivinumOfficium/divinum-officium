@@ -1,0 +1,23 @@
+@Tempora/Quad4-4
+
+[Lectio1]
+@Tempora/Quad4-4::s/: quæ.*//
+
+[Responsory1]
+@TemporaOP/Quad4-0
+
+[Lectio2]
+@Tempora/Quad4-4:Lectio1:s/.*: (quæ)/\u$1/s s/$/~/
+@Tempora/Quad4-4::s/ Quid.*//
+
+[Responsory2]
+@Tempora/Quad4-0
+
+[Lectio3]
+@Tempora/Quad4-4:Lectio2:s/.* (?=Quid)// s/$/~/
+
+[Responsory3]
+@Tempora/Quad4-0:Responsory3
+
+[Ant 2]
+Accéssit Jesus, * et tétigit lóculum. Hi autem qui portábant, stetérunt. Et ait: Adoléscens, tibi dico, surge. Et resédit qui erat mórtuus, et cœpit loqui.

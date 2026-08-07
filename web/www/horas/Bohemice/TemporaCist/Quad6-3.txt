@@ -1,0 +1,35 @@
+@Tempora/Quad6-3
+
+[Lectio1]
+@Tempora/Quad6-3::1-7:s/-18/-17/
+
+[Lectio2]
+@Tempora/Quad6-3::1-5:s/-18/-16/
+
+[Lectio3]
+@Tempora/Quad6-3:Lectio2:s/13-18/17-20/ s/13 .*17/17/s
+@Tempora/Quad6-3::2-3
+
+[Responsory1]
+R. Shromáždění lidí mě obklíčila; a neoplácel jsem těm, kdo mi působili zlo; ať se stráví, Hospodine, nepravost hříšníků,
+* Ale spravedlivého veď.
+V. Ty však, Hospodine, jsi mým pomocníkem, mou slávou, a pozvedáš mou hlavu.
+R. Ale spravedlivého veď. 
+
+[Responsory2]
+@Tempora/Quad6-4:Responsory7:1-2
+V. Zaslechl jsem totiž urážky mnohých, a hrůzu lidí kolem mě, kteří říkali:
+@Tempora/Quad6-4:Responsory7:4
+
+[Ant Laudes] 
+Vysvoboď mě * od prolití krve, Bože, můj Bože: a zajásá můj jazyk nad tvou spravedlností.
+Urážky * a hrůzy trpěl jsem od nich: avšak Hospodin je se mnou jako silný válečník.
+Všichni moji nepřátelé * slyšeli o mém zlu: Hospodine, zaradovali se, neboť ty jsi to učinil.
+Smluvili se * mí nepřátelé, a pravili: Vymažeme jej ze země živých.
+Služka řekla * Petrovi: Ty jsi opravdu s nich; neboť i tvá řeč to jasně ukazuje.
+
+[Ant 2]
+Tak dlouho * jsem byl s vámi a učil v chrámě, a nezajali jste mě, a hle, nyní mě zbičovaného vedete k ukřižování.
+
+[Ant 3]
+Každý den * jsem u vás učil v chrámě, a nezajali jste mě, a hle, nyní mě zbičovaného vedete k ukřižování.

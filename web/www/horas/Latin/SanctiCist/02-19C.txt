@@ -1,6 +1,25 @@
+[Officium]
+B. Bonifacii, Episcopi et Confessoris
+
 [Rank]
-B. Bonifacii, Episcopi et Confessoris;;iij. Lect. et M.;;1.2;;vide C4
+;;Simplex;;1.2;;vide C4
+
+[Rule]
+vide C4
+3 Lectiones
 
 [Oratio]
 Quæsumus, omnípotens Deus, ut beátus Bonifácius, Conféssor tuus atque Póntifex, cujus hódie festa percólimus, tuum pro nobis implóret auxílium: ut a nostris reátibus absolúti a cunctis étiam perículis eruámur.
 $Per Dominum
+
+[Lectio1]
+@CommuneCist/C4:Lectio1
+
+[Lectio2]
+Bonifácius Bruxéllis in Bélgio natus, cum ab ineúnte ætáte multárum virtútum, sed in primis castimóniæ mira specímina daret, quanta esset a Deo prævéntus grátia, ad quantam præordinátus sanctitátem, adhuc puer ostendébat. Adoléscens cum philosophíæ ac theologíæ addíscéndis Parísiis óperam daret, vigíliis, jejúniis, cilício accéptum cœlitus donum illibátum custodívit, ac précibus assídue insístens, sciéntiam Sanctorum rectámque vitæ normam a Dómino consecútus est. Postquam Sacerdótio initiátus sacras disciplínas per novem annos públice cum laude docuísset, ad Episcopátum Lausannénsem ob vitæ méritum et doctrínæ excelléntiam evéctus, tamquam in excélso loco constitútus, fulgentióres virtútum rádios suis súbditis transfúdit; et exémplis ac verbis prædicans, multos e vitiórum cœno ad salútis viam redúxit. At cum in reformándis Cleri móribus gravíssimas ærúmnas et persecutiónes constantíssime pertulísset, fractus tandem labóribus, ab Innocéntio quarto multis précibus et lácrymis, ut a pastoráli cura eximerétur, obtínuit.
+
+[Lectio3]
+Tanto ónere solútus, Bonifácius Bruxéllas regréssus, in propínquo Monastério Ordinis Cisterciénsis, Cámera sanctæ Mariæ nuncupáto, religiósum hábitum índuit, ibidémque sanctitáte ac dono miraculórum et spíritu prophético clarus, necnon dæmónibus terribilis, quos ab obséssis corpóribus, précibus vel sola mánuum impositióne ejiciébat, beátæ Maríæ Vírginis mónitu, usque ad óbitum permánsit. Octódecim ígitur annis piíssime in religióne transáctis, beátus Bonifácius, gravi morbo corréptus, Evangélio mánibus assúmpto, in has voces erúpit: Hæc ego dídici, hac ab Ecclésia accépi, in his vixi, in his credo, in his spero, et mori cúpio. Quibus prolátis, vir sanctus die décima nona Februárii anno millésimo ducentésimo sexagésimo quinto obdormívit in Dómino.
+
+[Responsory3]
+@CommuneCist/C4:Responsory12

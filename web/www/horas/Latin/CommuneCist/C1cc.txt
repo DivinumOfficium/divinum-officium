@@ -1,0 +1,20 @@
+[Officium]
+Commune Plurium Martyrum Commemoratum
+
+[Versum 1]
+@Commune/C1
+
+[Ant 1]
+@CommuneCist/C1
+
+[Versum 2]
+@Commune/C1:Versum 1
+
+[Ant 2]
+@CommuneCist/C1
+
+[Ant 3]
+@CommuneCist/C1
+
+[Versum 3]
+@Commune/C1:Versum 1

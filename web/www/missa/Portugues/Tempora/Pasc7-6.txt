@@ -1,20 +1,23 @@
 [Officium]
 Sabbato Quattuor Temporum Pentecostes
 
-[Rule]
-no Gloria
-(rubrica 1960) celebranda aut forma longior aut forma brevior
-(rubrica 1960 et missa brevior) LectioL1
-LectioL5
-Sequentia
-Credo
-Prefatio=Spiritu
-
 [Comment]
 # Sábado das Têmporas de Pentecostes
 ! Estação em São Pedro
 ! 1 classe
 ! Paramentos vermelhos
+
+[Graduale](missa brevior)
+Aleluia. 
+V. (Genuflecte-se.) Vinde, ó Espírito Santo: enchei os corações dos vossos fiéis e acendei neles o fogo do vosso amor.
+
+[GradualeL1](missa brevior)
+Aleluia.
+!Jo 6:64
+O Espírito é que dá a vida; pois a carne não dá nenhum proveito.
+_
+#Gloria
+v. Glória a Deus nas alturas e paz na terra aos homens de boa vontade. Nós Vos louvamos. Nós Vos bendizemos. Nós Vos adoramos. Nós Vos glorificamos. Nós Vos damos graças pela vossa imensa glória. Ó Senhor Deus, Rei dos céus, Deus Pai todo-o-poderoso. Senhor Jesus Cristo, Filho Unigénito, Senhor Deus, Cordeiro de Deus, Filho de Deus Pai. Vós que tirais os pecados do mundo, tende misericórdia de nós. Vós, que tirais os pecados do mundo, atendei à nossa súplica. Vós, que estais sentado à direita do Pai, tende misericórdia de nós. Só Vós sois o Santo; só Vós, o Senhor; só Vós, o Altíssimo, Jesus Cristo: com o Espírito Santo ++ na glória de Deus Pai. Amen.
 
 [Introitus]
 !Rm 5:5.
@@ -34,14 +37,6 @@ $Deo gratias
 Aleluia.
 !Jo 6:64
 O Espírito é que dá a vida; pois a carne não dá nenhum proveito.
-
-[GradualeL1](missa brevior)
-Aleluia.
-!Jo 6:64
-O Espírito é que dá a vida; pois a carne não dá nenhum proveito.
-_
-#Gloria
-v. Glória a Deus nas alturas e paz na terra aos homens de boa vontade. Nós Vos louvamos. Nós Vos bendizemos. Nós Vos adoramos. Nós Vos glorificamos. Nós Vos damos graças pela vossa imensa glória. Ó Senhor Deus, Rei dos céus, Deus Pai todo-o-poderoso. Senhor Jesus Cristo, Filho Unigénito, Senhor Deus, Cordeiro de Deus, Filho de Deus Pai. Vós que tirais os pecados do mundo, tende misericórdia de nós. Vós, que tirais os pecados do mundo, atendei à nossa súplica. Vós, que estais sentado à direita do Pai, tende misericórdia de nós. Só Vós sois o Santo; só Vós, o Senhor; só Vós, o Altíssimo, Jesus Cristo: com o Espírito Santo ++ na glória de Deus Pai. Amen.
 
 [OratioL1]
 Senhor, Vos suplicamos, fazei que o Espírito Santo nos abrase com aquele fogo que Cristo enviou à terra e quer ardentemente que permaneça aceso.
@@ -95,7 +90,6 @@ $Per Dominum
 Lição do Profeta Daniel.
 !Dn 3:47-51.
 Naqueles dias, o Anjo do Senhor desceu à fornalha com Azarias e os seus companheiros e afastou da fornalha as chamas do fogo, soprando no meio delas como que um vento de orvalho. As chamas do fogo, porém, cresceram acima da fornalha quarenta e nove côvados; e, saindo fora dela, queimaram os Caldeus, ministros do rei, que estavam perto da fornalha a atiçar o fogo, e não queimaram nenhum dos três jovens, nem os feriram, nem lhes causaram qualquer incómodo! Então, estes três jovens louvavam, glorificavam e bendiziam Deus na fornalha, em voz uníssona, dizendo:
-$Deo Gratias
 
 [GradualeL5]
 Aleluia.
@@ -116,16 +110,12 @@ $Per Dominum eiusdem
 [Lectio]
 Lição da Ep.ª do B. Ap.º Paulo aos Romanos.
 !Rm. 5:1-5.
-Meus irmãos: Estando já justificados pela fé, tenhamos paz com Deus por nosso Senhor Jesus Cristo, por quem devemos ter acesso pela fé a esta graça, na qual permaneceremos firmes e alegres na esperança de alcançarmos a glória dos filhos de Deus. E não somente na esperança, mas também devemos ter glória nas tribulações, sabendo que a tribulação produz a paciência, a paciência produz a provação, e a provação a esperança. Ora a esperança nunca engana, porque o amor de Deus está espalhado nos nossos corações pelo Espírito Santo, que nos foi dado.
+Meus irmãos: Estando já justificados pela fé, tenhamos paz com Deus por Nosso Senhor Jesus Cristo, por quem devemos ter acesso pela fé a esta graça, na qual permaneceremos firmes e alegres na esperança de alcançarmos a glória dos filhos de Deus. E não somente na esperança, mas também devemos ter glória nas tribulações, sabendo que a tribulação produz a paciência, a paciência produz a provação, e a provação a esperança. Ora a esperança nunca engana, porque o amor de Deus está espalhado nos nossos corações pelo Espírito Santo, que nos foi dado.
 
 [Graduale]
 !Sl 116:1-2
 Ó nações, louvai todas o Senhor: glorificai-O, ó povos.
 V. Porquanto é grande a sua misericórdia para connosco: e a verdade do Senhor permanece para sempre.
-
-[Graduale](missa brevior)
-Aleluia. 
-V. (Genuflecte-se.) Vinde, ó Espírito Santo: enchei os corações dos vossos fiéis e acendei neles o fogo do vosso amor.
 
 [Sequentia]
 @Tempora/Pasc7-0:Sequentia

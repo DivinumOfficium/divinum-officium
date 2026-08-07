@@ -1,0 +1,20 @@
+@Sancti/06-20
+
+[Rank]
+;;Duplex;;3;;vide C2b
+
+[Rule]
+vide C2b;
+9 lectiones
+
+[Lectio4]
+@Sancti/06-20:Lectio93:s/Quam ob.*//s
+
+[Lectio5]
+@Sancti/06-20:Lectio93:s/.*Quam ob rem/Quamóbrem/s
+
+[Lectio6]
+@Sancti/Urbis/05-25o:Lectio5:s/Urbáni/Silvérii/s
+
+[Responsory8]
+@Commune/C2b:Responsory8 non Effusorum

@@ -8,6 +8,8 @@ Feria V post Ascensionem
 ;;Duplex majus;;4.2;;ex Tempora/Pasc5-4
 (sed rubrica 1570)
 ;;Duplex;;3.1;;ex Tempora/Pasc5-4
+(sed rubrica cisterciensis)
+;;Duplex;;2.99;;ex TemporaCist/Pasc5-4
 (sed rubrica 196 aut rubrica 1955)
 ;;Feria;;1;;vide Tempora/Pasc5-4
 

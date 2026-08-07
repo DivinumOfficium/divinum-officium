@@ -25,13 +25,13 @@ sub vernaculars {
 sub liturgical_color {
   $_ = shift;
   return 'blue' if (/(?:Beat|Sanct)(?:ae|æ) Mari/ && !/Vigil/);
-  return 'red' if (/(?:Vigilia Pentecostes|Quattuor Temporum Pentecostes|Decollatione|Martyr)/i);
+  return 'red' if (/(?:Vigilia Pentecostes|Quattuor Temporum Pentecostes|Decollatione|Martyr|Reliquia)/i);
   return 'grey' if (/(?:Defunctorum|Parasceve|Morte)/i);
   return 'black' if (/^In Vigilia Ascensionis|^In Vigilia Epiphaniæ/);
   return 'purple'
     if (
     /(?:Vigilia|Quattuor|Rogatio|Passion|Palmis|gesim|(?:Majoris )?Hebdomadæ(?: Sanctæ)?|Sabbato Sancto|Dolorum|Ciner|Adventus)/i
-    );
+      && !/commemoratione|votivum/i);
   return 'black' if (/(?:Conversione|Dedicatione|Cathedra|oann|Pasch|Confessor|Ascensio|Cena)/i);
   return 'green' if (/(?:Pentecosten(?!.*infra octavam)|Epiphaniam|post octavam)/i);
   return 'red' if (/(?:Pentecostes|Evangel|Innocentium|Sanguinis|Cruc|Apostol)/i);

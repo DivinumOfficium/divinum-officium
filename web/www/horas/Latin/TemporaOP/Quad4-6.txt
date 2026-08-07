@@ -1,0 +1,24 @@
+@Tempora/Quad4-6
+
+[Lectio1]
+@Tempora/Quad4-6::s/ Manichǽi.*//
+
+[Responsory1]
+@TemporaOP/Quad4-3
+
+[Lectio2]
+@Tempora/Quad4-6:Lectio1:s/.* (?=Manichǽi)//s s/$/~/
+@Tempora/Quad4-6::s/ Non arbitrémur.*//
+
+[Responsory2]
+@TemporaCist/Quad4-0:Responsory6
+
+[Lectio3]
+Non est Dóminus Christus sol factus, sed per quem sol factus est.~
+@Tempora/Quad4-6::s/ Advértite.*//
+
+[Responsory3]
+@Tempora/Quad4-1:Responsory2
+
+[Ant 2]
+@TemporaCist/Quad4-6

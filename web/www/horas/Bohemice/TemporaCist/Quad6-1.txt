@@ -1,0 +1,21 @@
+[Lectio2]
+@Tempora/Quad6-1::s/Chtěl .*//
+
+[Lectio3]
+@Tempora/Quad6-1:Lectio2:s/.* (?=Chtěl )// s/$/~/
+@Tempora/Quad6-1:Lectio3:s/Dům .*// 
+
+[Responsory1]
+R. Řekli si bezbožníci, když nepřemýšleli správně: Obkličme spravedlivého, neboť se staví proti našim skutkům; sliboval, že zná Boha, nazývá se Božím Synem, a chlubí se, že má Boha za otce. Pohleďme, zda jsou jeho řeči pravdivé; a jestli je opravdu Syn Boží, vysvobodí jej Bůh z našich rukou;
+* Odsuďme ho k té nejpotupnější smrti.
+V. Muži bezbožní řekli: Pojďme nespravedlivě utlačovat muže spravedlivého, a o jeho majetek budeme metat los;
+R. Odsuďme ho k té nejpotupnější smrti.
+
+[Responsory2]
+R. Muži bezbožní řekli: Pojďme nespravedlivě utlačovat muže spravedlivého, a pohltíme jej živého jako peklo; vymažeme jeho paměť na zemi; a o jeho majetek budeme metat los mezi sebou; tito vrazi si totiž shromažďovali zlo jako poklad; nemoudří a zlí nenávidí moudrost;
+* A nečistými se stávají ve svých myšlenkách.
+V. Řekli si bezbožníci, když nepřemýšleli správně: Obkličme spravedlivého, neboť se staví proti našim skutkům;
+R. A nečistými se stávají ve svých myšlenkách.
+
+[Ant 3]
+Vzpomeň si * na mě, Pane, a ochraň mě od těch, kteří mě pronásledují.

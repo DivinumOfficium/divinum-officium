@@ -1,0 +1,10 @@
+[Lectio1]
+@Tempora/Quadp3-4::s/Avšak když .* synagogu.“// s/přátele se vzkazem.*/přátele./
+
+[Lectio2]
+@Tempora/Quadp3-4::s/Nejen totiž .*// s/$/~/ 
+@Tempora/Quadp3-4:Lectio3:s/Je třeba .*//
+
+[Lectio3]
+@Tempora/Quadp3-4::s/.* (Je třeba )/$1/
+

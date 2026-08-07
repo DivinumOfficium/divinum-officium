@@ -1,0 +1,26 @@
+@Tempora/Quad2-4
+
+[Lectio1]
+@Tempora/Quad2-4::s/ In.*//
+
+[Responsory1]
+@Tempora/Quad2-0
+
+[Lectio2]
+@Tempora/Quad2-4:Lectio1:s/.* (?=In)//s s/$/~/
+@Tempora/Quad2-4::s/ Sed .*//
+
+[Responsory2]
+@Tempora/Quad2-0::1-2
+@TemporaCist/Quad2-0::3
+@Tempora/Quad2-0::4
+
+[Lectio3]
+@Tempora/Quad2-4:Lectio2:s/.* (?=Sed)// s/$/~/
+@Tempora/Quad2-4::s/ At .*//
+
+[Ant 2]
+Pater Abraham, miserére mei, et mitte Lázarum ut intíngat extrémum dígiti sui in aquam, ut refrigeret linguam meam.
+
+[Ant 3]
+@Tempora/Quad2-4:Ant 2

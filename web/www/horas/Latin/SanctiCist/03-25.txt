@@ -1,0 +1,151 @@
+@Sancti/03-25
+
+[Rule]
+12 lectiones
+Doxology=Nat
+Ant Matutinum 12 special
+
+[Ant Vespera] (tempore paschali)
+@CommuneCist/C6
+
+[Responsory Vespera 1]
+@Sancti/03-25:Responsory2
+
+[Responsory Vespera]
+@CommuneCist/C11:Responsory Laudes
+
+[Versum 1]
+V. Angelus Dómini nuntiávit Maríæ. (Allelúia.)
+R. Et concépit de Spíritu Sancto. (Allelúia.)
+
+[Ant 1]
+Ecce concípies * in útero, et páries Fílium, et vocábis nomen ejus Jesum: hic erit magnus, et Fílius Altíssimi vocábitur. (Allelúia.)
+
+[Invit]
+Ave, María, grátia plena, Dóminus tecum: * Benedícta tu in muliéribus.
+(sed tempore paschali)
+@CommuneCist/C1p
+
+[Ant Matutinum]
+@Sancti/03-25:Ant Vespera:1-2:s/;;109/;;8/ s/;;112/;;18/
+@Sancti/08-15:Ant Matutinum:3
+@Sancti/03-25:Ant 2:s/$/;;44/
+@TemporaCist/Adv3-3:Ant Prima:s/$/;;45/
+@Tempora/Adv2-0:Ant Laudes:1:s/, allel[uú][ij]a./.;;47/
+@Sancti/03-25:Ant Vespera:3-5:s/;;121/;;84/ s/;;126/;;86/ s/;;147/;;95/
+@Commune/C11:Ant 2:s/, allel[uú][ij]a./.;;96/
+@Psalterium/Psalmi/Psalmi major:Day2 Laudes3:2:s/$/;;97/
+@Commune/C12A:Ant Matutinum 9:s/;;97/;;98/
+;;249;250;251/
+
+[Ant Matutinum] (tempore paschali)
+@CommuneCist/C6
+
+[Nocturn 1 Versum]
+V. Ave María, grátia plena. (Allelúia.) 
+R. Dóminus tecum. (Allelúia.)
+
+[Nocturn 2 Versum]
+@Commune/C10:Versum 2
+
+[Ant Matutinum 3N]
+@Tempora/Adv3-0:Ant 2:s/, allel[uú][ij]a//
+(sed tempore paschali)
+@CommuneCist/C6:Ant Matutinum:13
+
+[Lectio3]
+@Tempora/Adv4-0:Lectio1:2-5 s/-7/-3/
+
+[Lectio4]
+@Tempora/Adv4-0:Lectio1:2-9 s/1-/4-/ s/1.*4/4/s
+
+[Responsory3]
+@Tempora/Adv3-6:Responsory2:1-2
+@Commune/C10a:Communio:2:s/^/V. /
+@Tempora/Adv3-6:Responsory2:4
+
+[Responsory4]
+@Sancti/03-25:Responsory3
+
+[Lectio5]
+@Sancti/03-25:Lectio4
+
+[Lectio6]
+@Sancti/03-25:Lectio5
+
+[Lectio7]
+@Sancti/03-25:Lectio6
+
+[Lectio8]
+Verax namque misericórdia Dei, cum ad reparándum humánum genus ineffabíliter ei multa suppéterent, hanc potíssimum consuléndi viam elégit, qua ad destruéndum opus diáboli non virtúte uterétur poténtiæ, sed ratióne justítiæ. Nam supérbia hostis antíqui non inmérito sibi in omnes hómines jus tyránnicum vindicábat, nec indébito dominátu premébat, quos a mandáto Dei spontáneos in obséquium suæ voluntátis illéxerat. Non ítaque juste amítteret originálem humáni géneris servitútem, nisi de eo quod subégerat vincerétur.
+
+[Responsory5]
+@TemporaCist/Adv1-0:Responsory7
+
+[Responsory6]
+@Tempora/Adv3-0:Responsory6
+
+[Responsory7]
+@Sancti/03-25:Responsory5
+
+[Responsory8]
+@TemporaCist/Adv4-0:Responsory5
+
+[Lectio9]
+@Sancti/03-25:Lectio7
+
+[Responsory9]
+@Tempora/Adv4-0:Responsory9
+
+[Lectio10]
+Et bene utrúmque pósuit Scriptúra, ut et desponsáta esset, et virgo: virgo, ut expers virílis consórtii viderétur: desponsáta, ne temerátæ virginitátis adurerétur infámia, cujus gravis alvus corruptélæ viderétur insigne præférre. Máluit autem Dóminus áliquos de suo ortu quam de matris pudóre dubitáre. Sciébat enim téneram esse vírginis verecúndiam, et lúbricam famam pudóris: nec putávit ortus sui fidem matris injúriis adstruéndam.
+
+[Lectio11]
+@Sancti/03-25:Lectio8
+
+[Lectio12]
+@Sancti/03-25:Lectio9
+
+[Responsory9]
+@Tempora/Adv4-0:Responsory9
+
+[Responsory10]
+@Tempora/Adv3-4:Responsory3
+
+[Responsory11]
+@Tempora/Adv3-5:Responsory1
+
+[Responsory12]
+@Sancti/03-25:Responsory8:1-2
+V. Gabriélem Archángelum crédumis divínitus te esse affátum: úterum tuum de Spíritu Sancto crédimus impregnátum: erubéscat Judǽus ínfelix, qui dicit Christum ex Joseph sémine esse natum:
+@Sancti/03-25:Responsory8:4
+
+[Ant Laudes] (tempore paschali)
+@Psalterium/Psalmi/Psalmi minor:Pasch
+
+[Capitulum Laudes]
+@Sancti/03-25:Capitulum Laudes:s/virgo/Virgo/
+
+[Versum 2]
+@:Versum 1
+
+[Ant 2]
+Egrediétur virga * de radíce Jesse, et replébitur omnis terra glória Dómini, et vidébit omnis caro salutáre Dei. (Allelúia, allelúia.) 
+
+[Ant Tertia] (nisi tempore paschali)
+@:Ant 1
+
+[Responsory TertiaM] 
+@:Nocturn 1 Versum
+
+[Ant Sexta] (nisi tempore paschali)
+@Sancti/03-25:Ant Vespera:3
+
+[Responsory SextaM] 
+@:Nocturn 2 Versum
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+Spíritus sanctus * in te descéndet‚ María, ne tímeas, habébis in útero Fílium Dei. (Allelúia.)

@@ -1,0 +1,22 @@
+@Sancti/06-11
+
+[Lectio1]
+@Sancti/06-11::1-5 s/-47/-45/
+
+[Lectio2]
+@Sancti/06-11::1 s/48-52/46-48/
+@Sancti/06-11:Lectio1:6-7
+@Sancti/06-11::2
+
+[Responsory2]
+@Commune/C1:Responsory3
+
+[Lectio3]
+@Sancti/06-11:Lectio2:!2 s/48-/49-/
+
+[Responsory3]
+@CommuneOP/C1:Responsory9
+
+[Oratio]
+Quæsumus, omnipotens Deus: ut beátus Bárnabas Apóstolus tuum pro nobis implóret auxílium; ut, a nostris reátibus absolúti, a cunctis étiam perículis eruámur.
+$Per Dominum

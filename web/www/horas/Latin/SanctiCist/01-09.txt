@@ -1,0 +1,49 @@
+@Sancti/01-09
+
+[Rank]
+Tertia die non impedita infra Octavam Epiphaniæ;;Semiduplex;;2;;ex SanctiCist/01-06
+
+[Rule]
+@SanctiCist/01-07
+
+[Ant Matutinum]
+@SanctiCist/01-07
+
+[Lectio1]
+@Tempora/Epi1-1:Lectio1:1-4:s/-5/-2/
+
+[Responsory1]
+@SanctiCist/01-06:Responsory7
+
+[Lectio2] 
+@Tempora/Epi1-1:Lectio1:2:s/1-/3-/
+@Tempora/Epi1-1:Lectio1:5-7
+
+[Responsory2]
+@SanctiM/01-06:Responsory12
+
+[Lectio3]
+@Tempora/Epi1-1:Lectio2
+
+[Responsory3]
+@Sancti/01-06:Responsory1InfraOctavam
+
+[Ant 1]
+@Sancti/01-06:Ant 1
+
+[Versum 1] 
+@Sancti/01-06:Versum 1C
+
+[Versum 2]
+@Sancti/01-06:Versum 1
+
+[Ant 2]
+@Sancti/01-06:Ant 1_:s/Magi vidéntes \* stellam,/Magi \* vidérunt stellam, et/i s/, allel[úu][ij]a//
+
+[Versum 3]
+@Sancti/01-06:Versum 1C
+
+[Ant 3]
+@Sancti/01-06
+(sed feria 7)
+@Sancti/01-06:Ant 1

@@ -1,9 +1,31 @@
+[Officium]
+SS. Tiburtii, Valeriani, et Maximi, Martyrum.
+
 [Rank]
-Ss. Tiburtii, Valeriani, et Maximi, Martyrum;;iij. Lect. et M.;;1.2;;vide C3
+;;iij. Lect. et M.;;1.2;;vide C3
 
 [Rule]
 vide C3;
+3 lectiones
 
 [Oratio]
 Beatórum Mártyrum tuórum Tibúrtii, Valeriáni et Máximi, nos, quæsumus, Dómine, festa tueántur: § et eórum comméndet orátio veneránda. 
 $Per Dominum.
+
+[Lectio1]
+@CommuneCist/C2p
+
+[Lectio2]
+Valeriánus Románus, nóbili génere ortus, Alexándro Sevéro imperatóre, hortátu beátæ Cæciliæ Virginis, quam sibi uxórem despónderat, una cum Tibúrtio fratre a sancto Urbáno Papa baptizátur. Quos ubi præféctus Urbis Almáchius Christiános esse cognóvit, accersítos gráviter reprehéndit: atque ubi Christum Deum constánter confiténtes videt, virgis cædi jubet.
+
+[Lectio3]
+Sed cum verbéribus cogi non possent, ut Jovis simulácrum veneraréntur, ad quartum ab Urbe lápidem secúri feriúntur. Quorum virtútem admirátus Máximus præfécti cubiculárius, qui eos ad supplícium perdúxerat, Christiánum se esse proféssus est, cum multis áliis, qui paulo post plumbátis contúsi, omnes ex diáboli minístris, Christi Dómini Mártyres evasérunt.
+
+[Responsory1]
+@CommuneCist/C2p:Responsory5
+
+[Responsory2]
+@CommuneCist/C2p:Responsory6
+
+[Responsory3]
+@CommuneCist/C2p:Responsory8

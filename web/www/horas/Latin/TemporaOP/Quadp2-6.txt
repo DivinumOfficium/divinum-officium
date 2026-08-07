@@ -1,0 +1,22 @@
+@Tempora/Quadp2-6
+
+[Lectio1]
+@Tempora/Quadp2-5::1
+@Tempora/Quadp2-5:Lectio2
+
+[Responsory1]
+@Tempora/Quadp2-0:Responsory6
+
+[Lectio2]
+@Tempora/Quadp2-5:Lectio3:1-4
+
+[Responsory2]
+@TemporaOP/Quadp2-0:Responsory Vespera 1
+
+[Lectio3]
+@Tempora/Quadp2-5:Lectio3:!2-4 s/5-8/8-10/
+9 Et idcírco vocátum est nomen ejus Babel, quia ibi confúsum est lábium univérsæ terræ: et inde dispérsit eos Dóminus super fáciem cunctárum regiónum.
+@Tempora/Quadp2-6:Lectio1:3
+
+[Ant 2]
+@Tempora/Quadp2-2:Ant 3

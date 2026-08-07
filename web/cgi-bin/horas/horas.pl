@@ -224,14 +224,14 @@ sub Septuagesima_vesp {
 # Determines whether the Gloria at the end of the psalms should be omitted
 # owing to the Triduum.
 sub triduum_gloria_omitted() {
-  our (@dayname, $dayofweek, $tvesp);
+  our (@dayname, $dayofweek, $vespera);
 
   # TODO: A much more elegant check would be to see what *today's office* is,
   # checking for Quad6-[456], but this information is not reliably available.
   return
        $dayname[0] =~ /Quad6/i
     && $dayofweek > 3
-    && $tvesp != 1;
+    && $vespera != 1;
 }
 
 #*** getantcross($psalmline, $antline)
@@ -685,7 +685,7 @@ sub postprocess_vr(\$$) {
   return unless $$vr;
 
   if (alleluia_required($dayname[0], $votive)) {
-    my ($versicle, $response) = split(/(?=^\s*R\.)/m, $$vr);
+    my ($versicle, $response) = split(/(?=^\s*R\/?\.)/m, $$vr);
     ensure_single_alleluia(\$versicle, $lang);
     ensure_single_alleluia(\$response, $lang);
     $$vr = $versicle . "\n" . $response;
@@ -702,7 +702,9 @@ sub postprocess_short_resp(\@$) {
 
   return $capit if $lang =~ /gabc/i;    # GABC: Deactivated
 
-  if (alleluia_required($dayname[0], $votive)) {
+  if (alleluia_required($dayname[0], $votive)
+    || ($rule =~ /Responsory Breve cum Alleluja/ && $hora =~ /Tertia|Sexta|Nona/))
+  {
     my $rlines = 0;
 
     for (@$capit) {
@@ -714,7 +716,7 @@ sub postprocess_short_resp(\@$) {
         } elsif (/^R\./) {
           ensure_double_alleluia(\$_, $lang);
         }
-      } elsif (/^[VR]\./) {
+      } elsif (/^[VR]\./ && $rule !~ /Responsory Breve cum Alleluja/) {
 
         # V/R following short responsory.
         ensure_single_alleluia(\$_, $lang);

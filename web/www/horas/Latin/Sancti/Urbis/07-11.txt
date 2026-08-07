@@ -1,0 +1,21 @@
+@Sancti/07-11
+
+[Rank]
+;;Duplex;;3;;vide C2b
+
+[Rule]
+vide C2b;
+9 lectiones
+
+[Lectio4]
+@Sancti/07-11:Lectio93:s/Exstant.*//
+
+[Lectio5 extensio]
+quod póstea ab ejus successoribus Romanis Pontifícibus confirmátum est; quibus id máxime curæ fuit, ut totíus Ecclésiæ epíscopi in pascháli clebritate uniformes essent.
+
+[Lectio5]
+@Sancti/07-11:Lectio93:s/.*(Exstant)/$1/ s/\. Pudentis.*/, ~/
+@:Lectio5 extensio
+
+[Lectio6]
+@Sancti/07-11:Lectio93:s/.*(Pudentis)/$1/

@@ -14,6 +14,9 @@ BEGIN {
 
 sub unequivocal {
   my ($value, $tablename) = @_;
+
+  return unless $value;
+
   my @values_array = main::getdialog($tablename);
 
   my @r = grep {/$value/} @values_array;

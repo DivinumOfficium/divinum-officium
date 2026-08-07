@@ -563,6 +563,16 @@ _
 V. Deliver me, O Lord, from the evil man. 
 R. Rescue me from the unjust man.
 
+[MM Capitulum Quad] (rubrica cisterciensis)
+@Tempora/Quad1-0:Capitulum Laudes
+_
+@Psalterium/Special/Minor Special:Responsory Quad TertiaM_
+
+[MM Capitulum Quad5] (rubrica cisterciensis)
+@Tempora/Quad6-0:Capitulum Sexta:s/(v\. .*?\.) .*/$1/ s/-9//
+_
+@Psalterium/Special/Minor Special:Responsory Quad5 SextaC_
+
 [MM Capitulum Pasch]
 !Rom 6:4
 v. For we are buried together with him by baptism into death; that as Christ is risen from the dead by the glory of the Father, so we also may walk in newness of life.

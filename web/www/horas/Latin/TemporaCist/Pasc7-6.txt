@@ -1,0 +1,28 @@
+@Tempora/Pasc7-6
+
+[Rule]
+Psalmi Feria
+no prima vespera
+
+[Invit]
+@Tempora/Pasc7-0:Versum 1:1:s/V\. // s/(.)(llel[uú][ij]a)/\* \u$1$2/
+
+[Ant Matutinum]
+@TemporaCist/Pasc7-0:Ant MatutinumC:s/;;.*//
+;;
+;;
+;;
+;;
+;;
+@TemporaCist/Pasc0-0:AntC Matutinum
+;;
+;;
+;;
+;;
+;;
+
+[Benedictio]
+@TemporaCist/Pasc7-1
+
+[Ant 2] 
+Hi qui linguis * loquúntur novis, Galilæi sunt, et serpentes tollent, allelúia.

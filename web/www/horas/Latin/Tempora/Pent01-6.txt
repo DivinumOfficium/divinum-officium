@@ -9,7 +9,7 @@ Sabbato infra Hebdomadam I post Octavam Pentecostes
 (sed rubrica tridentina nisi rubrica cisterciensis)
 ;;Semiduplex IIS class;;2.9;;ex Tempora/Pent01-4
 (sed rubrica cisterciensis)
-;;Semiduplex;;2.1;;ex Tempora/Pent01-4
+;;Semiduplex;;2.1;;ex TemporaCist/Pent01-4
 (sed rubrica 196 aut rubrica 1955)
 ;;Feria;;1
 
@@ -22,7 +22,7 @@ Doxology=Corp
 De libro primo Regum
 !1 Reg 3:1-7
 1 Puer autem Sámuel ministrábat Dómino coram Heli, et sermo Dómini erat pretiósus in diébus illis: non erat vísio manifésta.
-2 Factus est ergo in quadam, Heli jacébat in loco suo, et óculi ejus caligáverant, nec póterant vidére.
+2 Factus est ergo in quadam die, Heli jacébat in loco suo, et óculi ejus caligáverant, nec póterant vidére.
 3 Lucérna Dei ántequam exstinguerétur, Sámuel dormiébat in templo Dómini, ubi erat arca Dei.
 4 Et vocávit Dóminus Sámuel, qui respóndens ait: Ecce ego.
 5 Et cucúrrit ad Heli et dixit: Non vocávi: revértere et dormi. Et ábiit et dormívit.
@@ -81,12 +81,3 @@ Ergo spíritus est qui vivíficat; spíritus enim facit viva membra: nec viva me
 [Lectio9]
 Hæc dicúntur, ut amémus unitátem et timeámus separatiónem. Nihil enim sic debet formidáre Christiánus quam separári a córpore Christi. Si enim separátur a córpore Christi, non est membrum ejus, non vegetátur Spíritu ejus. Quisquis autem, inquit Apóstolus, Spíritum Christi non habet, hic non est ejus. Spíritus ergo est, qui vivíficat, caro autem non prodest quidquam. Verba, quæ ego locútus sum vobis, spíritus et vita sunt. Quid est, Spíritus et vita sunt? Spiritáliter intelligénda sunt. Intellexísti spiritáliter? Spíritus et vita sunt. Intellexísti carnáliter? Etiam sic illa spíritus et vita sunt, sed tibi non sunt.
 &teDeum
-
-[Ant 2] (rubrica cisterciensis)
-@Tempora/Pent01-5
-
-[Ant Vespera 3] (rubrica cisterciensis)
-@Tempora/Pent01-5
-
-[Ant 3] (rubrica cisterciensis)
-@Tempora/Pent01-5

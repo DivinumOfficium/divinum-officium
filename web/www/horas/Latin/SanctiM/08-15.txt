@@ -7,11 +7,11 @@ In Assumptione Beatæ Mariæ Virginis;;Duplex I classis cum Octava Communi;;6;;e
 12 lectiones
 Doxology=Nat
 
-[Responsory Vespera 1] (rubrica Barroux)
-@Sancti/08-15t:Responsory1
-
 [Responsory Vespera] (rubrica cisterciensis)
 @Sancti/08-15t:Responsory Breve Tertia
+
+[Responsory Vespera 1] (rubrica Barroux)
+@Sancti/08-15t:Responsory1
 
 [Hymnus Vespera]
 @Sancti/08-15:Hymnus Vespera:s/Jesu, tibi sit glória/Glória tibi, Dómine/
@@ -76,7 +76,7 @@ Ascéndit Christus * super cœlos, et præparávit suæ castíssimæ Matri immor
 [Hymnus Laudes]
 @Sancti/08-15
 (sed rubrica cisterciensis)
-@Commune/C11
+@Commune/C11:HymnusM Laudes
 
 [Versum 2] (rubrica cisterciensis)
 @:Versum 1
@@ -87,12 +87,12 @@ Ascéndit Christus * super cœlos, et præparávit suæ castíssimæ Matri immor
 [Capitulum Sexta]
 @Sancti/08-15
 (sed rubrica cisterciensis)
-@Sancti/01-23AV
+@SanctiCist/01-23AV
 
 [Capitulum Nona]
 @Sancti/08-15
 (sed rubrica cisterciensis)
-@Sancti/01-23AV
+@SanctiCist/01-23AV
 
 [Hymnus Vespera 3] (nisi rubrica cisterciensis)
 @Commune/C11:Hymnus Vespera

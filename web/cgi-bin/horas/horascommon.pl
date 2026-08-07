@@ -18,7 +18,7 @@ sub error {
 }
 
 sub occurrence {
-  my ($day, $month, $year, $version, $tomorrow) =
+  my ($day, $month, $year, $version, $dioecesis, $tomorrow) =
     @_;    # sort out occurence for the day or the next day in case of $tomorrow
 
   # globals readonly
@@ -40,6 +40,8 @@ sub occurrence {
   my $trank = '';
   my $srank = '';
   my $transfer;
+  my $permTransfer;
+  my $tempTransfer;
   my $transfered;
 
   # Get the respective strings for Sanctoral office and Transfers
@@ -61,38 +63,74 @@ sub occurrence {
 
   my @officename = ($weekname, '', '');
 
-  # look for permanent Transfers assigned to the day of the year (as of 2023-5-22 only 12-12n in Newcal version)
-  my $transfertemp = get_from_directorium('tempora', $version, $sday);
+  # look for permanent Transfers assigned to the day of the year
+  # For local calendars, these entries supersede the Calendarium Generale
+  $permTransfer = get_from_directorium('tempora', $version, $sday, 0, $dioecesis);
+  $permTransfer =~ s/;;.*//;    # strip dioecesis flag and discard
 
-  if ($transfertemp && $transfertemp !~ /tempora/i) {
-    $transfertemp = subdirname('Sancti', $version) . "$transfertemp";    # add path to Sancti folder if necessary
-  } elsif ($transfertemp && $version =~ /monastic/i) {
-    $transfertemp = subdirname('Tempora', $version) . ($transfertemp =~ s/Tempora[^\/]\///r);
+  if ($permTransfer =~ s/::([a-g])//) {
+
+    my $litdom = $1;
+    my @easter = geteaster($year);
+    my $easter = $easter[1] * 100 + $easter[0];
+
+    my $letter = ($easter - 319 + ($easter[1] == 4 ? 1 : 0)) % 7;
+    my @letters = ('a', 'b', 'c', 'd', 'e', 'f', 'g');
+
+    if (leapyear($year) && $sday =~ /^(?:01|02-[01]|02-2[01239])/) {
+      $permTransfer = '' unless $litdom =~ $letters[$letter - 6];
+    } else {
+      $permTransfer = '' unless $litdom =~ $letters[$letter];
+    }
+
   }
+  my @permTransfer = split("~", $permTransfer);
 
-  # get annual transfers if applicable depending on the day of Easter
-  my $transfers = get_from_directorium('transfer', $version, $sday, $year);
-  my @transfers = split("~", $transfers);
-
-  foreach $transfer (@transfers) {
-    if ($transfer) {
-      if ($transfer !~ /tempora/i) {
-        $transfer = subdirname('Sancti', $version) . $transfer;
-      } else {
-        $transfer = subdirname('Tempora', $version) . ($transfer =~ s/Tempora\///r);
+  foreach $permTransfer (@permTransfer) {
+    if ($permTransfer) {
+      if ($permTransfer !~ /tempora/i) {
+        $permTransfer = subdirname('Sancti', $version) . "$permTransfer";    # add path to Sancti folder if necessary
+      } elsif ($version =~ /monastic/i) {
+        $permTransfer = subdirname('Tempora', $version) . ($permTransfer =~ s/Tempora[^\/]\///r);
       }
     }
   }
+  $permTransfer = shift @permTransfer;
 
-  # handle the case of a transferred vigil which does not have its own file "mm-ddv"
-  if ($transfers[0] =~ /v$/ && !(-e "$datafolder/Latin/$transfers[0].txt")) {
-    unless (leapyear($year) && $transfers[0] =~ /02-23v/) {
-      $transfervigil = shift @transfers;
-      $transfervigil =~ s/v$/\.txt/;
+  # get annual transfers if applicable depending on the day of Easter
+  my $transfers = get_from_directorium('transfer', $version, $sday, $year, $dioecesis);
+  $transfers =~ s/;;(.*)//;    # strip dioecesis flag
+  my $transferSource = $1;     # and safe it for later
+  my @transfers = split("~", $transfers);
+
+  if ($transfers) {
+    foreach my $tr (@transfers) {
+      if ($tr) {
+        if ($tr !~ /tempora/i) {
+          $tr = subdirname('Sancti', $version) . "$tr";    # add path to Sancti folder if necessary
+        } else {
+          $tr = subdirname('Tempora', $version) . ($tr =~ s/Tempora\///r);
+        }
+      }
     }
-    $transfer = '';
-  } else {
-    $transfer = shift @transfers;
+
+    # Discard local permanent transfer only if local annual transfer
+    # but keep the former if general transfer only
+    if ($transferSource) {
+      $permTransfer = '';
+      @permTransfer = ();
+    }
+
+    # handle the case of a transferred vigil which does not have its own file "mm-ddv"
+    if ($transfers[0] =~ /v$/ && !(-e "$datafolder/Latin/$transfers[0].txt")) {
+      unless (leapyear($year) && $transfers[0] =~ /02-23v/) {
+        $transfervigil = shift @transfers;
+        $transfervigil =~ s/v$/\.txt/;
+      }
+      $transfer = '';
+    } else {
+      $transfer = shift @transfers;
+    }
   }
 
   if ($testmode eq 'Sanctoral') {
@@ -100,16 +138,29 @@ sub occurrence {
   } else {
 
     #handle Temporal
-
     $tday = subdirname('Tempora', $version) . "$weekname" . (($weekname !~ /Nat/i) ? "-$dayofweek" : "");
 
-    # look for permanent Transfers assigned to the Temporal, most prominently the Ferias in the Octaves of S. Joseph, Corpus Christi, Ssmi Cordis
-    $tfile = get_from_directorium('tempora', $version, $tday) || $tday;
+    # look for permanent Transfers assigned to the Temporal,
+    # in General: most prominently the Ferias in the Octaves of S. Joseph, Corpus Christi, Ssmi Cordis
+    # in local calendars: Feasts like SSmi Spineæ etc.
+    $tempTransfer = get_from_directorium('transfer', $version, $tday, $year, $dioecesis)
+      || get_from_directorium('tempora', $version, $tday, 0, $dioecesis);
+    $tempTransfer =~ s/;;.*//;    # strip dioecesis flag and discard
 
-    if ($transfertemp && $transfertemp =~ /tempora/i && !transfered($transfertemp, $year, $version)) {
+    if ($tempTransfer =~ /\~/) {
+      my @tr = split('~', $tempTransfer);
+      $tempTransfer = shift @tr;
+      $tday = shift @tr if $tr[0] =~ /Tempora/i;
+      @transfers = @transfers || @tr;
+    }
+
+    $tfile = $tempTransfer =~ /Tempora/i ? $tempTransfer : $tday;
+
+    if ($permTransfer && $permTransfer =~ /tempora/i && !transfered($permTransfer, $year, $version)) {
 
       # in case a Temporal office has been transfered by means of assigning it to a specific day of the year
-      $tfile = $transfertemp;
+      # (faj-munich: should be obsolte?)
+      $tfile = $permTransfer;
     } elsif ($transfer =~ /tempora/i) {
 
       # also if in that specific year depending on the day of Easter
@@ -165,20 +216,18 @@ sub occurrence {
         }
       }
     }
+
     $sfile = shift @commemoentries;    # get the filename for the Sanctoral office from the Kalendarium
 
-    if ($transfertemp && $transfertemp =~ /Sancti/ && !transfered($transfertemp, $year, $version)) {
-      $sfile = $transfertemp;
+    if ($permTransfer && $permTransfer =~ /Sancti/ && !transfered($permTransfer, $year, $version, $dioecesis)) {
+      $sfile = $permTransfer;
+      @commemoentries = @permTransfer;
     } elsif ($transfer =~ /Sancti/) {
       $sfile = $transfer;
       @commemoentries = @transfers;
-    } elsif ($sfile && transfered($sfile, $year, $version)) {
+    } elsif ($sfile && transfered($sfile, $year, $version, $dioecesis)) {
       $transfered = $sfile;
       $sfile = '';
-    } elsif ($transfer =~ /tempora/i && @transfers) {
-      foreach my $tr (@transfers) {
-        push(@commemoentries, $tr);
-      }
     }
 
     # prevent duplicate vigil of St. Mathias in leap years
@@ -187,13 +236,60 @@ sub occurrence {
       @commemoentries = grep { $_ !~ /02-23o/ } @commemoentries;
     }
 
-    if (checklatinfile(\$sfile)) {
-      $sname = "$sfile.txt";
-      if ($caller && $hora =~ /(Matutinum|Laudes)/i) { $sname =~ s/11-02t/11-02/; }    # special for All Souls day
+    if ($sfile && checklatinfile(\$sfile) || $tempTransfer !~ /Tempora/) {
+      if ($sfile) {
+        $sname = "$sfile.txt";
+        if ($caller && $hora =~ /(Matutinum|Laudes)/i) { $sname =~ s/11-02t/11-02/; }    # special for All Souls day
 
-      %saint = %{setupstring('Latin', $sname)};
-      $srank = $saint{Rank};
-      @srank = split(";;", $srank);
+        %saint = %{setupstring('Latin', $sname)};
+        $srank = $saint{Rank};
+        @srank = split(";;", $srank);
+      } else {
+        %saint = ();
+        $srank = '';
+        @srank = ();
+      }
+
+      # Remove Octaves during Quadragesima
+      if ($srank[0] =~ /in.*octava/i && $tname =~ /Quad\d|Quadp3\-[3-6]/) {
+        $sfile = shift @commemoentries;
+
+        if (checklatinfile(\$sfile)) {
+          $sname = "$sfile.txt";
+          %saint = %{setupstring('Latin', $sname)};
+          $srank = $saint{Rank};
+          @srank = split(";;", $srank);
+        } else {
+          $srank = '';
+          %saint = {};
+          @srank = ();
+        }
+      }
+
+      # If a Sanctoral feast has been side as per the temporal cycle, e.g. Spineæ Coronæ DNJC
+      if ($tempTransfer && $tempTransfer !~ /Tempora/) {
+        $tempTransfer = subdirname('Sancti', $version) . "$tempTransfer";
+
+        if (checklatinfile(\$tempTransfer)) {
+          my %tempTransfer = %{setupstring('Latin', "$tempTransfer.txt")};
+          my $tTrank = $tempTransfer{Rank};
+          my @tTrank = split(";;", $tTrank);
+
+          if ($tTrank[2] >= $srank[2]) {
+
+            # If the moveable feast outranks the immovable, commemorate the latter
+            unshift @commemoentries, $sfile;
+            $sname = "$tempTransfer.txt";
+            %saint = %tempTransfer;
+            $srank = $tTrank;
+            @srank = @tTrank;
+          } else {
+
+            # If the moveable feast doesn't outrank the immovable, commemorate the former
+            unshift @commemoentries, $tempTransfer;
+          }
+        }
+      }
 
       if ($tomorrow) {
         $svesp = 1;
@@ -270,7 +366,7 @@ sub occurrence {
         || (
           $trank !~ /Dominica(?!.*Trinitatis)|Feria|Sabbato|In Octava/i && (
             ($trank[2] >= 6 && $srank[2] < 2.1)    # on Duplex I. cl nothing of Simplex and common octaves
-            || ($trank[2] >= 5 && $srank[2] == 2 && $srank[2] =~ /infra octavam/i)
+            || ($trank[2] >= 5 && $srank[2] == 2 && $srank[2] =~ /infra octavam|post Octavam Asc|Vigilia Pent/i)
           )
         )                                          # on Duplex II. cl nothing of common octaves
         || (
@@ -321,9 +417,7 @@ sub occurrence {
       %saint = {};
       $sname = '';
       @srank = ();
-      @commemoentries = ();
     }
-
   }
 
   # In Festo Sanctae Mariae Sabbato according to the rubrics.
@@ -456,24 +550,32 @@ sub occurrence {
       $commemoratio = "$transferedC.txt";
       my %tc = %{setupstring('Latin', "$transferedC.txt")};
       my @cr = split(";;", $tc{Rank});
-      $comrank = $cr[2];
-      $cvespera = $svesp;
-      $officename[2] = "Commemoratio: $cr[0]";
 
-      if ($version =~ /196/i) {
-        $officename[2] =~ s/:/ ad Laudes tantum:/ if $cr[2] < 6;
-      } elsif ($version !~ /trident/i && $srank[2] >= 6) {
-        $officename[2] =~ s/:/ ad Laudes tantum:/ if $cr[2] < 4.2 && $cr[2] != 2.1 && $srank[0] !~ /infra octavam/i;
-      } elsif ($srank[2] >= 6 && $srank[0] !~ /in.*octava/i && $cr[2] < 3.1 && $cr[2] != 2.999) {
+      # Pre-1960: Simplex have no 2nd Vespers
+      unless ($version !~ /196/ && $svesp == 3 && $cr[2] < 2) {
+        $comrank = $cr[2];
+        $cvespera = $svesp;
+        $officename[2] = "Commemoratio: $cr[0]";
 
-        # for Tridentine:  either Transfer or no Commemoration in Duplex I. cl. (of Sanctoral) unless dies 8va
-        $commemoratio = '';
-        $comrank = 0;
-        @commemoentries = ();
-        $officename[2] = '';
-      } else {
-        $officename[2] =~ s/:/ ad Laudes \& Matutinum:/
-          if $srank[2] >= 5 && $cr[2] < 2 && $srank[0] !~ /infra octavam/i;
+        if ($version =~ /196/i) {
+          $officename[2] =~ s/:/ ad Laudes tantum:/ if $cr[2] < 6;
+        } elsif ($version !~ /trident/i && $srank[2] >= 6) {
+          $officename[2] =~ s/:/ ad Laudes tantum:/
+            if $cr[2] < 4.2 && $cr[2] != 2.1 && $srank[0] !~ /infra octavam|post Octavam Asc|Vigilia Pent/i;
+        } elsif ($srank[2] >= 6
+          && $srank[0] !~ /in.*octava|post Octavam Asc|Vigilia Pent/i
+          && $cr[2] < 3.1
+          && $cr[2] != 2.999)
+        {
+
+          # for Tridentine:  either Transfer or no Commemoration in Duplex I. cl. (of Sanctoral) unless dies 8va
+          $commemoratio = '';
+          $comrank = 0;
+          @commemoentries = ();
+          $officename[2] = '';
+        } elsif ($srank[2] >= 5 && $cr[2] < 2 && $srank[0] !~ /infra octavam|post Octavam Asc|Vigilia Pent/i) {
+          $officename[2] =~ s/:/ ad Laudes \& Matutinum:/;
+        }
       }
     } elsif ($transfered) {    #&& !$vflag)
       if ($hora !~ /Vespera|Completorium/i) {
@@ -517,11 +619,15 @@ sub occurrence {
       $officename[2] =~ s/:/ ad Laudes tantum:/ if ($srank[2] >= 5 && $saint{'Commemoratio 2'} || $version =~ /196/);
     }
 
-    if (($hora =~ /matutinum/i || (!$officename[2] && $hora !~ /Vespera|Completorium/i)) && $rank < 7 && $trank[0]) {
+    if ( ($hora =~ /matutinum/i || (!$officename[2] && $hora !~ /Vespera|Completorium/i))
+      && $rank < 7
+      && $trank[0]
+      && !$missa)
+    {
       my %scrip = %{officestring('Latin', $tname)};
 
       if (
-           !(exists($saint{"Lectio1"}) && ($saint{Rule} !~ /Lectio1 Quad/i || $dayname[0] =~ /Quad(\d|p3\-[3456])/i))
+           !(exists($saint{"Lectio1"}) && ($saint{Rule} !~ /Lectio1 Quad/i || $tname =~ /Quad(\d|p3\-[3456])/i))
         && exists($scrip{Lectio1})
         && $scrip{Lectio1} !~ /evangelii/i
         && ( $saint{Rank} !~ /\;\;ex /
@@ -539,7 +645,7 @@ sub occurrence {
           %tscrip = %{officestring('Latin', $tsfile)};
           $tsrank = $tscrip{Rank} || $tscrip{Scriptura};
           $tsrank =~ s/\s*;;.*|\s*$//s;
-          $officename[2] = "Tempora: $trank[0] (Scriptura ut in: $tsrank)";
+          $officename[2] = "Tempora: $trank[0] (Scriptura ut in: $tsrank)" if $tsfile !~ $tfile && $tsrank;
         } elsif ($version !~ /monastic/i || $tname !~ /(?:Pasc|Pent)/ || $month > 10) {
           $officename[2] = "Tempora: $trank[0]";
         } else {
@@ -549,8 +655,9 @@ sub occurrence {
         $officename[2] = "Tempora: $trank[0]";
       }
       $scriptura = $tname;
+    } elsif ($missa) {
+      $scriptura = $tname;
     }
-
   } else {    # winner is Tempora
     if ($hora !~ /Vespera/i && $trank[2] < ($version =~ /cist/i ? 1.25 : 1.5) && $transfervigil)
     {         # Vigil transfered to an empty or Simplex only day
@@ -631,7 +738,8 @@ sub occurrence {
         $officename[2] =~ s/:/ ad Laudes tantum:/
           if $srank[2] < 4.2
           && $srank[2] != 2.1
-          && $trank[0] !~ /infra octavam|cinerum|majoris hebd|in Octava|Albis|Quattuor Temporum Pentecostes/i
+          && $trank[0] !~
+          /infra octavam|Vigilia Pent|cinerum|majoris hebd|in Octava|Albis|Quattuor Temporum Pentecostes/i
           && $tname !~ /Adv|Quad/i;
       } elsif ($laudesonly) {
         $officename[2] =~ s/:/ $laudesonly:/;
@@ -639,7 +747,7 @@ sub occurrence {
         $officename[2] =~ s/:/ ad Laudes \& Matutinum:/
           if $trank[2] >= 5
           && $srank[2] < 2
-          && $trank[0] !~ /infra octavam|cinerum|majoris hebd|in Octava|Albis/i
+          && $trank[0] !~ /infra octavam|Vigilia Pent|cinerum|majoris hebd|in Octava|Albis/i
           && $tname !~ /Adv|Quad/i;
       }
 
@@ -663,12 +771,12 @@ sub occurrence {
           $officename[2] =~ s/:/ $laudesonly:/ if ($trank[2] >= 5 && $cr[2] < 2) || ($climit1960 == 2);
         } elsif ($version !~ /trident/i && $trank[2] >= 6) {
           $officename[2] =~ s/:/ ad Laudes tantum:/
-            if $cr[2] < 4.2 && $cr[2] != 2.1 && $trank[0] !~ /infra octavam|cinerum|majoris hebd/i;
+            if $cr[2] < 4.2 && $cr[2] != 2.1 && $trank[0] !~ /infra octavam|Vigilia Pent|cinerum|majoris hebd/i;
         } elsif ($laudesonly) {
           $officename[2] =~ s/:/ $laudesonly:/;
         } else {
           $officename[2] =~ s/:/ ad Laudes \& Matutinum:/
-            if $trank[2] >= 5 && $cr[2] < 2 && $trank[0] !~ /infra octavam|cinerum|majoris hebd/i;
+            if $trank[2] >= 5 && $cr[2] < 2 && $trank[0] !~ /infra octavam|Vigilia Pent|cinerum|majoris hebd/i;
         }
       } else {
         $commemoratio = '';
@@ -732,7 +840,7 @@ sub occurrence {
 }
 
 sub concurrence {
-  my ($day, $month, $year, $version) = @_;    # sort out concurrence for the day and the next day
+  my ($day, $month, $year, $version, $dioecesis) = @_;    # sort out concurrence for the day and the next day
 
   # globals readonly
   our ($hora, $missa, $caller, $datafolder, $lang2);
@@ -753,7 +861,7 @@ sub concurrence {
   our ($missanumber, $votive, $lang1);
   our $datafolder;
 
-  occurrence($day, $month, $year, $version, 1);    # get next day's office
+  occurrence($day, $month, $year, $version, $dioecesis, 1);    # get next day's office
   $cwinner = $winner;
   $crank = $rank;
   my $ccomrank = $comrank;
@@ -770,7 +878,7 @@ sub concurrence {
   my %cwinner = $csanctoraloffice ? %csaint : %ctempora;
   my @cwrank = $csanctoraloffice ? @csrank : @ctrank;
 
-  occurrence($day, $month, $year, $version, 0);    # get today's office
+  occurrence($day, $month, $year, $version, $dioecesis, 0);    # get today's office
   %winner = $sanctoraloffice ? %saint : %tempora;
   my @wrank = $sanctoraloffice ? @srank : @trank;
 
@@ -795,7 +903,7 @@ sub concurrence {
 
     # Dies Octavae privilegiatae (post-Divino) and Octavae Festorum Domini, si primaria fuerint et solemniora (pre-Divino)
     # give way at 2nd Vespers to Duplex I. et II. classis only!
-    $rank = $wrank[2] = 4.99;
+    $rank = $wrank[2] = 4.99 unless $version =~ /Cist/i;
   }
 
   if ( $cwrank[0] =~ /Dominica/i
@@ -808,32 +916,42 @@ sub concurrence {
     $cwrank[2] = $crank = $version =~ /altovadensis/i ? 3.9 : $version =~ /trident/i ? 2.9 : 4.9;
   }
 
-  if ( $cwrank[0] =~ /in.*octava/i
+  if ($cwrank[0] =~ /Dominica/i && $trank[0] =~ /in.*octava/i
+    || ($cwrank[0] =~ /infra.*octav/i && $version =~ /Trident/))
+  {
+
+    # Commemoration of Octave on Saturday from 2nd Vespers
+    $octvespera = 3 unless $version =~ /196/;
+
+    # On Saturday in Cist. rite, it's always from 1st Vespers
+    $octvespera = 1 if $version =~ /cist/i && $dayofweek == 6;
+  } elsif ($cwrank[0] =~ /in.*octava|Vigilia Pent/i
     && ($wrank[0] =~ /Dominica/i || ($winner =~ /Sancti/ && $wrank !~ /in.*octava/i))
     && $version =~ /divino/i)
   {
 
     # Commemoration of resumed Octave on Sunday from 1st Vespers (Divino only)
     $octvespera = 1;
-  } elsif ($cwrank[0] =~ /Dominica/i && $trank[0] =~ /in.*octava/i
-    || ($cwrank[0] =~ /infra.*octav/i && $version =~ /Trident/))
-  {
-
-    # Commemoration of Octave on Saturday from 2nd Vespers
-    $octvespera = 3;
-
-    # On Saturday in Cist. rite, it's always from 1st Vespers
-    $octvespera = 1 if $version =~ /cist/i && $dayofweek == 6;
   }
 
   if ($ctrank[0] =~ /(?<!De )Dominica|Trinitatis/i
-    && !($version =~ /19(?:55|6)|altovadensis/i && $ctrank[0] =~ /Dominica Resurrectionis|Dominica/i))
+    && !($version =~ /19(?:55|6)|altovadensis/i && $ctrank[0] =~ /Dominica Resurrectionis/i))
   {
 
     # if tomorrow is a Sunday, get rid of today's tempora completely; necessary Commemorations are handled in the Sunday database file
     if ($sanctoraloffice && $srank[0] !~ /infra octavam Nativitatis$/i) {
       if ($commemoentries[0] =~ /tempora/i) {
         shift @commemoentries;
+
+        if (@commemoentries) {
+          $commemoratio = $commemoentries[0];
+          my %tc = %{setupstring('Latin', $commemoratio)};
+          my @cr = split(";;", $tc{Rank});
+          $comrank = $cr[2];
+        } else {
+          $commemoratio = '';
+          $comrank = 0;
+        }
       }
     } else {
       %winner = {};
@@ -865,10 +983,10 @@ sub concurrence {
       && $cwinner{Rank} !~ /in Vigilia Epi|in octava|infra octavam|Dominica|C10/i)
 
     # before DA infra octavam always gets commemorated as at 2nd Vespers; after DA also when the office is of the octave
-    || ( $cwinner{Rank} =~ /infra octavam/i
+    || ( $cwinner{Rank} =~ /infra octavam|Vigilia Pent/i
       && $cwinner{Rank} !~ /Dominica/i
       && ($version =~ /trident/i || $sanctoraloffice == $csanctoraloffice)
-      && $winner{Rank} =~ /infra octavam|Quat.*Pent|Dominica (Resurrectionis|Pentecostes)/i)
+      && $winner{Rank} =~ /infra octavam|post Octavam Asc|Quat.*Pent|Dominica (Resurrectionis|Pentecostes)/i)
 
     # infra 8vam Pasch & Pent
     || ($weekname =~ /Pasc[07]/i && $cwinner{Rank} !~ /Dominica/i)
@@ -924,7 +1042,9 @@ sub concurrence {
       @ccommemoentries = ();
     } else {
       $vespera = 3;
-      $dayname[2] = '' unless $dayname[2] =~ /Dominica|Advent|Quadr|Pass/i;
+      $dayname[2] = ''
+        unless $dayname[2] =~ /Dominica|Advent|Quadr|Pass|Asc/i
+        || ($comrank >= 2.1 && $dayname[2] !~ /ad Laudes|Rogatio/i);
 
       if ($sanctoraloffice) {
         $dayname[2] .= "<br/>Vespera de Officio occurente" unless $version =~ /1955|196/;
@@ -940,7 +1060,7 @@ sub concurrence {
       $cvespera = 0;
       @ccommemoentries = ();
     }
-  } elsif (!$sanctoraloffice && !$csanctoraloffice) {
+  } elsif (!$sanctoraloffice && !$csanctoraloffice && $cwinner !~ /C10/) {
 
     # two "concurrent" Tempora
     if ($crank >= $rank || $tempora{Rule} =~ /No secunda vespera/i) {
@@ -1015,7 +1135,7 @@ sub concurrence {
 
     if (
       # On Saturday, 1st Vespers gets commemorated in Festis I. cl. github #3907
-      ($rank >= (($version =~ /19(?:55|6)/ && $dayofweek < 6) ? 6 : 7) && $crank < 6)
+      ($rank >= (($version =~ /19(?:55|6)/ && $version !~ /Barroux/ && $dayofweek < 6) ? 6 : 7) && $crank < 6)
 
       # Rubr. 1960: on a II. cl Sunday nothing at 1st Vespers in concurrence with a Feast of the Lord
       || ( $version =~ /196/
@@ -1075,6 +1195,7 @@ sub concurrence {
         && !($cwinner =~ /07-01/ && $trank[0] =~ /Sangu|Cor[dp]/))
       {
         # privilidged Feria, Dominica, or infra 8vam only
+        # except for Saturdays at 1st Vespers of the Sunday
         # no Commemoration of the Octaves of Ssmi Corporis and Ssmi Cordis on Precious Blood #4586
         $dayname[2] .= "<br/>Vespera de sequenti; commemoratio de off. priv. tantum";
       } else {
@@ -1129,7 +1250,7 @@ sub concurrence {
     } elsif ($flcrank == $flrank) {    # "flattend ranks" are equal => a capitulo
       $commemoratio = $winner;
       %commune =
-        ($version =~ /trident/i || $flrank >= 5)
+        ($version =~ /trident/i || $flrank >= 5) && $commune
         ? %{officestring($lang1, $commune, 0)}
         : ();                          #  Commune psalms only in Trident or Dpx I./II.cl
       $tomorrowname[2] = "Commemoratio: $wrank[0]";
@@ -1142,7 +1263,7 @@ sub concurrence {
 
       if ($antecapitulum) {
         my %winner2 = %{officestring($lang2, $winner, 0)};
-        my %commune2 = %{officestring($lang2, $commune, 0)};
+        my %commune2 = $commune ? %{officestring($lang2, $commune, 0)} : ();
         $antecapitulum2 =
             (exists($winner2{'Ant Vespera 3'})) ? $winner2{'Ant Vespera 3'}
           : (exists($winner2{'Ant Vespera'})) ? $winner2{'Ant Vespera'}
@@ -1191,7 +1312,9 @@ sub concurrence {
       $cvespera = 1;
       $dayname[2] .= "<br/>Vespera de præcedenti; commemoratio de sequenti";
 
-      if ($cwinner{Rank} =~ /infra octavam/i || $ccommemoentries[0] =~ /infra octavam/i) {
+      if ( $cwinner{Rank} =~ /infra octavam|post Octavam Asc|Vigilia Pent/i
+        || $ccommemoentries[0] =~ /infra octavam|post Octavam Asc|Vigilia Pent/i)
+      {
         my @comentries = ();
         my %cstr = ();
 
@@ -1199,7 +1322,9 @@ sub concurrence {
           if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
           %cstr = %{officestring('Latin', $commemo, 0)};
 
-          unless (!%cstr || ($cstr{Rank} =~ /infra octavam/i && $cstr{Rank} !~ /Dominica/i)) {
+          unless (!%cstr
+            || ($cstr{Rank} =~ /infra octavam|post Octavam Asc|Vigilia Pent/i && $cstr{Rank} !~ /Dominica/i))
+          {
             push(@comentries, $commemo);
           }
         }
@@ -1228,9 +1353,11 @@ sub concurrence {
       if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
       %cstr = %{officestring('Latin', $commemo, 1)};
 
-      if (($commemo =~ /tempora/i || $cstr{Rank} =~ /infra octavam/i) && $cstr{Rank} !~ /Dominica/i) {
-        next;
-      }    # no superseded Tempora or day within octave can have 1st vespers unless a Sunday
+      if (($commemo =~ /tempora/i || $cstr{Rank} =~ /infra octavam|post Octavam Asc|Vigilia Pent/i)
+        && $cstr{Rank} !~ /Dominica/i)
+      {
+        next;    # no superseded Tempora or day within octave can have 1st vespers unless a Sunday
+      }
 
       if (%cstr) {
         my @cr = split(";;", $cstr{Rank});
@@ -1284,9 +1411,15 @@ sub concurrence {
     @comentries = ();
 
     foreach $commemo (@commemoentries) {
-      if ($commemo =~ /tempora/i && $trank[2] != 1.15 && ($trank[2] < 2 || $trank[0] =~ /Rogatio|Quattuor.*Sept/i)) {
-        next;
-      }    # Feria minor and Vigils have no Vespers if superseded
+      if (
+           $commemo =~ /tempora/i
+        && $trank[2] != 1.15
+        && ( $trank[2] < 2
+          || $trank[0] =~ /Rogatio|Quattuor.*Sept/i
+          || ($trank[0] =~ /infra Octavam (.*)/i && $ctrank[0] =~ /in Octava (.*)/i && $1 eq $2))
+      ) {
+        next;    # Feria minor and Vigils and dies infra 8vam preceding Die in 8va have no Vespers if superseded
+      }
       if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
       %cstr = %{officestring('Latin', $commemo, 0)};
 
@@ -1295,7 +1428,7 @@ sub concurrence {
 
         unless (($cr[2] < $ranklimit && !($cr[2] == 1.15 || $cr[2] == 2.1 || $cr[2] == 2.99 || $cr[2] == 3.9))
           || $cstr{Rule} =~ /No secunda vespera/i
-          || $cr[0] =~ /De VII di/i)
+          || $cr[0] =~ /De VII di|Die VII infra/i)
         {
           push(@comentries, $commemo);
         }    # sort out (Semi-)duplex and infra 8vam communis except for Feria major / Dominica major
@@ -1350,7 +1483,7 @@ sub extract_common {
   my ($communetype, $commune);
   our ($datafolder);
 
-  if ($common_field =~ /^(ex|vide)\s*(C[0-9]+[a-z]*\-*[12]*)/i) {
+  if ($common_field =~ /^(ex|vide)\s*(?!Sancti)((?:[a-z\s]*\/)?C[0-9]+[a-z]*\-*[123]*)/i) {
 
     # Genuine common.
     $communetype = $1;
@@ -1359,7 +1492,7 @@ sub extract_common {
 
     if ($paschal_tide) {
       my $divfolder = $datafolder;
-      $divfolder =~ s/missa/horas/g if $commune =~ /C[1-5](?!\d)[a-z]?/;
+      $divfolder =~ s/missa/horas/g if $commune =~ /C\d(?![3-9])[a-z]?/;
       my $paschal_fname = "$divfolder/Latin/" . subdirname('Commune', $version) . "$commune" . 'p.txt';
       my $temp_fname = $paschal_fname;    # temp_fname solution to be removed again once CommuneCist is filled
       $temp_fname =~ s/Cist/M/;
@@ -1453,7 +1586,7 @@ sub precedence {
   our (%tempora, %saint, %ctempora, %csaint) = () x 2;
 
   # globals read only
-  our ($hora, $version, $missa, $missanumber, $votive, $lang1, $lang2);
+  our ($hora, $version, $missa, $missanumber, $votive, $lang1, $lang2, $dioecesis);
   our ($vespera, $cvespera, $tvesp, $svesp, $rank);
   our $datafolder;
 
@@ -1463,18 +1596,18 @@ sub precedence {
   $date1 =~ s/\//\-/g;
   ($month, $day, $year) = split('-', $date1);
 
-  our $dayofweek = day_of_week($day, $month, $year);
-
   if ($month < 1 || $month > 12 || $day < 1 || $day > 31) {
     error("Wrong date $date1 using today");
-    $date1 = '';
+    $date1 = gettoday();
+    ($month, $day, $year) = split('-', $date1);
   } elsif (sprintf("%04d%02d%02d", $year, $month, $day) < '15821015') {
     error("Date $date1 is before Gregorian calendar using today.");
-    $date1 = '';
+    $date1 = gettoday();
+    ($month, $day, $year) = split('-', $date1);
   }
-
   if (!$date1) { ($month, $day, $year) = split('-', gettoday()); }
 
+  our $dayofweek = day_of_week($day, $month, $year);
   @dayname = (getweek($day, $month, $year, 0, $missa), '', '');
 
   $C10 = 'C10';
@@ -1488,9 +1621,9 @@ sub precedence {
 
   ### Get the relevant Office and Commemorations
   if ($hora =~ /vespera|completorium/i && $votive !~ /C12/i) {
-    concurrence($day, $month, $year, $version);
+    concurrence($day, $month, $year, $version, $dioecesis);
   } else {
-    occurrence($day, $month, $year, $version, 0);
+    occurrence($day, $month, $year, $version, $dioecesis, 0);
   }
 
   $duplex = 0;
@@ -1586,17 +1719,6 @@ sub precedence {
     }
   }
 
-  #	if ($commemoratio1) {
-  #		my $flag = ($commemoratio1 =~ /tempora/i && $tvesp == 1) ? 1 : 0;
-  #		%commemoratio1 = %{officestring($lang1, $commemoratio1, $flag)};
-  #
-  #		if ($version =~ /196/ && $winner{Rule} =~ /Festum Domini/ && $commemoratio1{Rule} =~ /Festum Domini/) {
-  #			$commemoratio1 = '';
-  #			%commemoratio1 = {};
-  #			$dayname[2] = '';
-  #		}
-  #	}
-
   # only short readings in monastic summer
   $scriptura = ''
     if ( $version =~ /monastic/i
@@ -1614,15 +1736,7 @@ sub precedence {
     }
   }
 
-  #Epiphany days for 1955|1960
-  #if ($version =~ /(1955|1960)/ && $month == 1 && $day > 6 && $day < 13 && $winner{Rank} =~ /Die/i	&&
-  #		exists($scriptura{Rank}))
-  #	{$winner{Rank} = $scriptura{Rank}; $winner2{Rank} = $scriptura2{Rank};}
-
-  #no transfervigil if emberday
-  #if ( $winner{Rank} =~ /Quat[t]*uor/i
-  #|| $commemoratio{Rank} =~ /Quat[t]*uor/i
-  #|| $scriptura{Rank} =~ /Quat[t]*uor/i)
+  # no transfervigil if emberday
   if (emberday()) {
     $transfervigil = '';
   }
@@ -1637,8 +1751,6 @@ sub precedence {
 
       if ($a[0] =~ /$b[0]/i) {
         $commune{Responsory7} = $commune{Responsory7c};
-
-        # $commune2{Responsory7} = $commune2{Responsory7c};
       }
     }
 
@@ -1649,31 +1761,61 @@ sub precedence {
     }
 
     if ($winner{Rank} =~ /\;\;ex\s/
-      || ($version =~ /Trident/i && $rank =~ /\;\;(ex|vide)/i && $duplex > 1))
+      || ($version =~ /Trident/i && $winner{Rank} =~ /\;\;(ex|vide)/i && $duplex > 1))
     {
       $communerule = $commune{Rule};
     }
   }
 
   if (my $vtv = $votive ne 'Hodie' ? $votive : '') {
-    if ($vtv =~ /C12/i && $version !~ /cist/i) {
-      if ( ($month == 12 && ($day == 24 && $hora =~ /Vespera|Completorium/ || ($day > 24)))
-        || $month == 1
-        || ($month == 2 && $day < 3))
-      {
-        $vtv = 'C12N';
-      } elsif ($dayname[0] =~ /adv/i || ($winner =~ /03-25/i && $version !~ /Praedicatorum/)) {
-        $vtv = 'C12A';
-      } elsif ($dayname[0] =~ /(Quadp|Quad)/i && $version !~ /Praedicatorum/) {
-        $vtv = 'C12Q';
+    if ($vtv =~ /C12/i) {
+
+      # C12: Officium parvum BMV
+      # Redirection for Advent, Nativitytide (post partum), and post Septuag.
+      unless ($version =~ /cist/i) {
+        if ( ($month == 12 && ($day == 24 && $hora =~ /Vespera|Completorium/ || ($day > 24)))
+          || $month == 1
+          || ($month == 2 && $day < 3))
+        {
+          $vtv = 'C12N';
+        } elsif ($dayname[0] =~ /adv/i || ($winner =~ /03-25/i && $version !~ /Praedicatorum/)) {
+          $vtv = 'C12A';
+        } elsif ($dayname[0] =~ /(Quadp|Quad)/i && $version !~ /Praedicatorum/) {
+          $vtv = 'C12Q';
+        }
+      }
+      $commemoratio = $commemoratio1 = $cwinner = $scriptura = $commune = '';
+      %commemoratio = %commemoratio1 = %cwinner = %scriptura = %commune = {};
+      @commemoentries = @ccommemoentries = ();
+    } else {
+
+      # Redirections for Paschaltide and Votive offices
+      $vtv .= 'p' if ($dayname[0] =~ /Pasc/ && $vtv =~ /C[1-3](?!\d)/);   # Enable Commune T.P.
+      $vtv =~ s/^V/Votiva\/V/;                                            # Re-direct to subdirectory for Votive offices
+
+      if ($commemoratio =~ /Tempora/) {
+
+        # Keep the 9th lesson from the Sunday or Feria (typically in Lent)
+        push(@commemoentries, $winner);
+      } else {
+
+        # Put the Sanctoral winner of the day as first to be commemorated.
+        unshift(@commemoentries, $winner);
+        $commemoratio = $winner;
+        %commemoratio = %winner;
       }
     }
+
+    # Update winner, rule, and rank information
     $winner = subdirname('Commune', $version) . "$vtv.txt";
-    $commemoratio = $commemoratio1 = $cwinner = $scriptura = $commune = '';
     %winner = %{setupstring($lang1, $winner)};
-    %commemoratio = %commemoratio1 = %cwinner = %scriptura = %commune = {};
-    @commemoentries = @ccommemoentries = ();
     $rule = $winner{Rule};
+
+    if ($winner{Rank}) {
+      my @vrank = split(';;', $winner{Rank});
+      $rank = $vrank[2];
+      $duplex = $vrank[1] !~ /duplex/i ? 1 : $vrank[1] =~ /semiduplex/i ? 2 : 3;
+    }
 
     if ($vtv =~ /C12/i) {
       $commune = subdirname('Commune', $version) . "C11.txt";
@@ -1681,11 +1823,11 @@ sub precedence {
       %commune = %{setupstring($lang1, $commune)};
     } else {
 
-      if ($version =~ /^Trident|^Divino/i) {
+      if ($version =~ /^Trident|^Divino/i && $vtv !~ /Votiva/) {
 
         # Make Votive Matutinum fully Sanctoral (Duplex, 3 Nocturns) irrespective of rank of the day
         $rule .= "\n9 lectiones";
-        $rank = 4;
+        $rank = 4.91;
         $duplex = 3;
       }
 
@@ -1765,12 +1907,12 @@ sub setheadline {
 
     # GABC: If Chant is selected as the main language (in options) display ChantTone in Headline
     our $chantTone;
-    $winner{Rank} =~ /^(.*?)\;/;
-    return ($1 || $winner{Rank}) . " ~ " . rankname($lang1) . " : Tonus $chantTone";
+    $winner{Rank} =~ /^(?<officium>.*?)\;/;
+    return ($+{'officium'} || $winner{Rank}) . " ~ " . rankname($lang1) . " : Tonus $chantTone";
   }
 
-  $winner{Rank} =~ /^(.*?)\;/;
-  ($1 || $winner{Rank}) . " ~ " . rankname($lang1);
+  $winner{Rank} =~ /^(?<officium>.*?)\;/;
+  ($+{'officium'} || $winner{Rank}) . " ~ " . rankname($lang1);
 }
 
 #*** rankname($lang);
@@ -2055,8 +2197,9 @@ sub spell_var {
     $t =~ s/(allelú)ja/$1ia/gi if $version =~ /cist/i;
     $t =~ s/(c)(æ|ae)l/$1œl/gi if $version =~ /cist/i;
     $t =~ s/(c)([aá]r[ií])(t|ss)/$1h$2$3/gi if $version =~ /cist/i;
+    $t =~ s/>([aá]r[ií])(t|ss)/>h$1$2/gi if $version =~ /cist/i;
     $t =~ s/>aríssim/>haríssim/gi if $version =~ /cist/i;
-    $t =~ s/(A|a)b(i|í)ci/$1bj$2ci/gi if $version =~ /cist/i;
+    $t =~ s/\b(pro|pró|ab|ad|e)(i|í)ci/$1j$2ci/gi if $version =~ /cist/i;
   }
   return $t;
 }
@@ -2151,15 +2294,12 @@ sub gettempora {
     $tname = 'Pasch';
   }
 
-  if ($caller eq 'Lectio brevis Prima') {
-    $tname = 'Feria'
-      if ($version !~ /196|cist/i && $dayofweek >= 3 && $dayname[0] eq 'Quadp3');
-    $tname = 'Per Annum'
-      unless $tname && $version !~ /cist/i;
+  if ($caller eq 'Lectio brevis Prima' && $version !~ /cist/i) {
+    $tname ||= 'Per Annum';
   }
 
   if ($caller eq 'Hymnus major' && !$tname) {
-    $tname = ($version !~ /cist/i || ($hora eq 'Vespera' && $dayofweek == 6)) ? "Day$dayofweek" : 'Day0';
+    $tname = ($version !~ /cist|praedicatorum/i || ($hora eq 'Vespera' && $dayofweek == 6)) ? "Day$dayofweek" : 'Day0';
   }
 
   if ($caller =~ /^Capitulum|major$/ && !$tname) {    # caller is Capitulum major/minor or getfrompsalterium

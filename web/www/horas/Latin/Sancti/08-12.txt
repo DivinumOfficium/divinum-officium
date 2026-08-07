@@ -3,7 +3,7 @@ S. Claræ Virginis
 
 [Rank]
 ;;Duplex;;3;;vide C6a
-(sed rubrica 1570 aut rubrica monastica)
+(sed rubrica 1570 aut rubrica ^Monastica)
 ;;Simplex;;1.1;;vide C6a
 
 [Rule]

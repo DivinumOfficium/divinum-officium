@@ -1,0 +1,81 @@
+
+[Invit]
+Alleluja, alleluja, alleluja * Alleluja, alleluja, alleluja.
+
+[AntC Matutinum]
+Alleluja, * alleluja, alleluja, alleluja, alleluja, alleluja, alleluja, alleluja.
+
+[Lectio1]
+@Tempora/Nat03::1-6 s/1-5/2-4/ s/1.*Absit. /2 /s
+
+[Responsory1]
+R. Anděl Páně sestoupil z nebe, a když přišel, odvalil kámen, a posadil se na něj, a řekl ženám: Nebojte se: vím totiž, že hledáte ukřižovaného;
+* Právě vstal z mrtvých; pojďte a pohleďte na místo, kam položili Pána, alleluja.
+V. Anděl Páně promluvil k ženám a řekl: Koho hledáte? Hledáte snad Ježíše?
+R. Právě vstal z mrtvých; pojďte a pohleďte na místo, kam položili Pána, alleluja.
+
+[Responsory2]
+@Tempora/Pasc1-0:Responsory2:1-2
+V. Hle, předejde vás do Galileje, tam jej uvidíte, jak vám řekl;
+@Tempora/Pasc1-0:Responsory2:4
+
+[Responsory5]
+R. Když vstal Ježíš, náš Pán, z mrtvých, stanul uprostřed svých učedníků, a řekl: Pokoj vám, alleluja.
+* Zaradovali se učedníci, když uviděli Pána, alleluja.
+@TemporaCist/Pasc1-3:Ant 2:s/^/V. / s/. allel.*/./ s/\* //
+R. Zaradovali se učedníci, když uviděli Pána, alleluja.
+
+[Responsory6]
+@Tempora/Pasc0-5:Responsory2:1-2
+V. Kristus vstal z mrtvých a již nezemře, smrt nad ním již nemá vládu;
+@Tempora/Pasc0-5:Responsory2:4
+
+[Lectio7]
+@TemporaM/Pasc0-0::s/dary\..* duši/dary/
+
+[Lectio8]
+@TemporaM/Pasc0-0::s/Nikdo .*//
+
+[Lectio9]
+@Tempora/Pasc0-0:Lectio1:s/ Tak tedy .*//s
+
+[Lectio10]
+@Tempora/Pasc0-0:Lectio1:s/.* Tak tedy / Tak tedy /s 
+
+[Lectio11]
+@Tempora/Pasc0-0:Lectio2:s/Anděl se zjevil .*//s
+
+[Lectio12]
+@Tempora/Pasc0-0:Lectio2:s/.* (?=Anděl se zjevil )//s
+
+[Responsory9]
+R. Pokud jste vstali z mrtvých s Kristem, hledejte věci nadzemské, kde Kristus sedí po pravici Boží;
+* Poznejte věci nadzemské a ne pozemské, alleluja.
+V. Jste totiž mrtví a váš život je ukryt s Kristem.
+R. Poznejte věci nadzemské a ne pozemské, alleluja.
+
+[Capitulum Laudes]
+!1 Cor 5:7
+v. Bratři: Vyčištěte a vyhoďte starý kvas, abyste se mohli stát novým těstem, neboť jste nekvašení. Neboť Kristus náš velikonoční beránek je obětován.
+$Deo gratias
+
+[Versum 2]
+V. Toto je den, který učinil Pán. 
+R. Jásejme a radujme se v něm.
+
+[Capitulum Sexta]
+!1 Cor 5:8
+v. Proto hodujme, ne se starým kvasem, ani s kvasem zloby a nepravosti; ale s nekvašeným chlebem upřímnosti a pravdy.
+$Deo gratias
+
+[Capitulum Nona]
+!1 Col 3:1-2
+v. Když jste s Kristem byli vzkříšeni, usilujte o to, co pochází shůry, kde sedí Kristus po Boží pravici. Na to myslete, co pochází shůry, ne na to, co je na zemi.
+$Deo gratias
+
+[Ant Vespera]
+Alleluja, * alleluja, alleluja, alleluja, alleluja, alleluja, alleluja, alleluja, alleluja, alleluja.
+
+[Ant 3]
+Kristus, když vstal * z mrtvých, již neumírá, smrt nad ním již nemá žádnou moc, když tedy žije, žije Bohu, alleluja, alleluja.
+

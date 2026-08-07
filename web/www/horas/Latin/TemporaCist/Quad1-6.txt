@@ -1,0 +1,20 @@
+@Tempora/Quad1-6
+
+[Lectio1]
+@Tempora/Quad1-6::s/Nam unum .*//
+
+[Lectio2]
+@Tempora/Quad1-6:Lectio1:s/.* (Nam unum )/$1/s s/$/~/
+@Tempora/Quad1-6:Lectio2:s/Ubi Petrus .*//
+
+[Lectio3]
+@Tempora/Quad1-6:Lectio2:s/.* (Ubi Petrus)/$1/
+
+[Responsory1]
+@TemporaCist/Quad1-0:Responsory4
+
+[Responsory2]
+@TemporaCist/Quad1-0:Responsory5
+
+[Responsory3]
+@TemporaCist/Quad1-0:Responsory6

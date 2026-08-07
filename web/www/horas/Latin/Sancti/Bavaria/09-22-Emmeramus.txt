@@ -1,0 +1,54 @@
+[Officium] 
+S. Emmerami Episcopi et Martyris
+(sed dioecesis ratisbonensis)
+S. Emmerami Episcopi et Martyris, Patroni minus principalis Diœcesis
+
+[Rank]
+;;Semiduplex;;2.2;;vide C2-1
+(sed dioecesis ratisbonensis)
+;;Duplex majus;;4;;ex C2
+
+[Rule]
+vide C2-1;
+(sed dioecesis monacensis)
+vide C2-1;mtv
+(sed dioecesis ratisbonensis)
+ex C2;
+9 lectiones
+(dioecesis ratisbonensis)Psalmi Dominica
+(dioecesis ratisbonensis)Antiphonas horas
+In 3 Nocturno lectiones ex C2 in 1 loco
+
+[Name]
+Emmerámi
+Postcommunio=Emmerámo
+
+[Lectio4] 
+Emmerámus, in Aquitánia natus, a pueritia mundum cum concupiscéntiis suis despiciens, in sacris litteris et pietatis exercítiis contínuus, relícta pátria evangélii prædicándi stúdio in Germániam proficíscitur; et cum ipse illius gentis linguam non nosset, per intérpretem multis in locis fidem docet. Ratisbónam deínde véniens, a Theodóne, Bojariórum duce, ultérius proficísci non permíttitur. Episcopi igitur fidélis et prudéntis offício in Bojária per triénnium perfúngitur, póstea peregrinațiónem ad apostolórum visitánda límina símulans, a Theodóne dimittitur. Prásciens autem ille, se flagitii ab álio commissi falso insimulári, índeque sibi duríssimam mortem instáre, in itínere loco quodam solitário consístit, et optátum temporális vitæ finem exspéctat. Insecútus eum Lantpértus Theodónis fílius, tertio tandem die deprehendit, ac innocentem immáni crudelitáte invádit, dígitos ei articulátim præcídi, óculos evélli, nares et aures amputari, linguam resecari, pedes cum palmis detruncari, et his atrocióra in sanctum epíscopum procurat: qui Deo in tantis cruciaméntis grátias agéndo, paulo post spíritum réddidit. Sanctitátem ipsíus et innocéntiam plúrima, quæ vivus et post mortem fecit, mirácula declárant. Corpus ejus Ratisbónam relátum in monastério sub ipsius nómine célebri requiéscit.
+
+[Lectio4] (dioecesis ratisbonensis)
+Emmerámus, in Aquitánia honéstis et christiánis paréntibus natus, puer liberálibus disciplínis erudítus, amóre Christi, posthábitis, qua apud mortales magna sunt, ejus præcéptis et mónitis se totum conformávit. Itaque pietate, religione, animi lúmine præcéllens ad Pictaviénsem evéhitur episcopátum, quem præcláris quoque institútis et méritis insigniter illustravit. Martýrii ínterim subeúndi desidério divínitus incénsus, percépto, Hunnos sive Aváros nondum probe præcéptis christiánis imbútos, ei optatis potiúndi occásio visa. Hinc dimísso episcopátu ad illos proficiscitur, si ánimos a veritáte aliénos vel nutántes ad salutárem Christi religiónem posset revocáre. In itínere passim per Germániam de pietate verba faciébat, Vitális intérpretis usus ópera. Ratisbónam venit, Theodóni Baváriæ duci consílium áperit, constituísse Hunnos Christo lucrifácere, vel certe vitam in egrégio conátu pónere. Sed áliud causátur Théodo: cleménter reluctántem rétinet; simul instat, ut recens a Rupérto prǽsule hic disseminátæ fídei plantas cæléstis doctrínæ rivis irrigáre velit. Recéntibus ítaque in orthodóxa fide Bojis per triénnium magno cum fructu et ardóre spíritus christiána mystéria explanávit; utque perseverárent, sollicite inculcávit.
+
+[Lectio5] 
+@Commune/C2:Lectio4
+
+[Lectio5] (dioecesis ratisbonensis)
+His ita gestis divíno spiritu afflátus, iter Romam religiónis nómine adórnat. Intérea Uta Theodónis filia, a Sigibáldo primária, nobilitátis júvene violáta, noxæ rea próditur: quod stuprum fassa absénti Emmerámo ímputat. Id ubi Landbértus frater rescívit, soróris contumélia accénsus Emmerámum inséquitur, et ut Helfendórfii (loco inter Isaram et Œnum) brevi assecútus, statis ecclésia précibus una cum cléricis vacántem réperit; mox productum acérbe irrídens satellitibus excarnificándum tradit. Sævítum per ómnia membra, óculi éruti, lingua, aures, nares, manus pedésque, et quæ honéste haud nomi néntur, amputáta. Emmerámus ínterim summos inter dolóres non vocem modo, sed et vultum et gémitus compréssit, Deum láudibus et précibus continénter vénerans: multis vicíssim signis divínitus éditis, Núminis in eum propensióne comprobáta.
+
+[Lectio6] 
+@Commune/C2:Lectio5
+
+[Lectio6] (dioecesis ratisbonensis)
+Apparuérunt improvíso équites ignóti duo exímia spécie, qui de præcísis ártubus multum sciscitáti, repértos asportárunt, nec póstea conspécti sunt. Jam cómites, sub initium metu dilápsi, redíerant: lácerum ergo et semivívum corpus revériti Acháimum devéhere próperant. Novem pássuum mílibus progréssis, cum tria restárent, Emmerámus primum ejulásse audítus, de curru depósitus, lucis splendóre perfúsus, quæ moriéntis ore progréssa et recta in cælum lata, spectántium óculos more fúlminis perstrínxit. Cadáver deínde Ratisbónam annuénte principe, máxima celebritáte delátum est. Is, ut insóntis pontíficis cædes áliquo piáculo luerétur, ædem magníficam illic sancti Benedícti mónachis dicátam ædificat: tum Uta in Itáliam, Landbérto aliórsum relegátis.
+
+[Lectio] (dioecesis ratisbonensis)
+@Commune/C2a
+
+[Evangelium]
+@Commune/C2
+
+[Secreta]
+@Commune/C2
+
+[Postcommunio]
+@Commune/C2

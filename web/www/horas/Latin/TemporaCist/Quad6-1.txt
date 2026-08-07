@@ -1,0 +1,36 @@
+@Tempora/Quad6-1
+
+[Rule]
+Antiphonas horas
+Psalmi Feria
+
+[Lectio1]
+@Tempora/Quad6-1
+
+[Lectio2]
+@Tempora/Quad6-1::s/Quærébas .*//
+
+[Lectio3]
+@Tempora/Quad6-1:Lectio2:s/.* (?=Quærébas )// s/$/~/
+@Tempora/Quad6-1:Lectio3:s/Domus .*// 
+
+[Responsory1]
+R. Dixérunt ímpii apud se, non recte cogitántes: Circumveniámus justum, quóniam contrárius est opéribus nostris: promíttit se sciéntiam Dei habére, Fílium Dei se nóminat, et gloriátur patrem se habére Deum: videámus si sermónes illíus veri sunt: et si est vere Fílius Dei, líberet eum de mánibus nostris:
+* Morte turpíssima condemnémus eum.
+V. Viri ímpii dixérunt: Opprimámus virum justum injúste, et de spóliis ejus sortem mittámus:
+R. Morte turpíssima condemnémus eum.
+
+[Responsory2]
+R. Viri ímpii dixérunt: Opprimámus virum justum injúste, et deglutiámus eum tamquam inférnus vivum: auferámus memóriam illíus de terra: et de spóliis ejus sortem mittámus inter nos: ipsi enim homicídæ thesaurizavérunt sibi malum: insipiéntes et malígni odérunt sapiéntiam:
+* Et rei facti sunt in cogitatiónibus suis.
+V. Dixérunt ímpii apud se, non recte cogitántes: Circumveniámus justum, quóniam contrárius est opéribus nostris:
+R. Et rei facti sunt in cogitatiónibus suis.
+
+[Responsory3]
+@Tempora/Quad6-0:Responsory4
+
+[Ant 2] 
+@Tempora/Quad6-1:Ant 3
+
+[Ant 3]
+Recordáre * mei, Dómine, et tuére me ab his, qui persequúntur me.

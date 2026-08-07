@@ -1,0 +1,12 @@
+[Lectio1]
+@Tempora/Quad3-2::s/Čím .*//
+
+[Lectio2]
+@Tempora/Quad3-2:Lectio1:s/.* (?=Čím )//s s/$/~/
+@Tempora/Quad3-2:Lectio2:s/Neboť Apoštol .*//
+
+[Lectio3]
+@Tempora/Quad3-2:Lectio3:s/.* (?=Kdo z nás )//
+
+[Ant 3]
+Neříkám tobě, Petře, * že máš odpustit sedmkrát, ale až sedmdesát sedmkrát.

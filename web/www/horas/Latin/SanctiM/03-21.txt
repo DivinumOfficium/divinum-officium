@@ -15,9 +15,6 @@ Patronus
 [Ant Vespera]
 @:Ant Laudes
 
-[Responsory Vespera 1] (rubrica Barroux)
-@:Responsory9
-
 [Responsory Vespera]
 R.br. Sancte Pater Benedícte, * Intercéde pro nobis.
 R. Sancte Pater Benedícte, * Intercéde pro nobis.
@@ -26,11 +23,18 @@ R. Intercéde pro nobis.
 &Gloria
 R. Sancte Pater Benedícte, * Intercéde pro nobis.
 
+[Responsory Vespera 1] (rubrica Barroux)
+@:Responsory9
+
 [Hymnus Vespera]
 v. Láudibus cives résonent canóris,
 Templa solémnes moduléntur hymnos:
 Hac die summi Benedíctus arcem
-Scandit olympi.
+(sed tempore paschali nisi rubrica 1960)
+Aurea summi Benedíctus arce
+Scandit olýmpi.
+(sed tempore paschali nisi rubrica 1960)
+Gaudet olýmpi.
 _
 Ille floréntes peragébat annos,
 Cum puer dulcis pátriæ penátes
@@ -61,9 +65,17 @@ Amen.
 [Ant 1]
 Exsúltet ómnium * turba fidélium pro glória almi Patris Benedícti; læténtur præcípue catérvæ monachórum, celebrántes ejus festa in terris, de cujus societáte sancti congáudent in cælis.
 
-[Oratio]
+[Oratio_]
 Omnípotens sempitérne Deus, qui hodiérna die carnis edúctum ergástulo sanctíssimum Confessórem tuum Benedíctum sublevásti ad cælum: † concéde, quǽsumus, hæc festa tuis fámulis celebrántibus cunctórum véniam delictórum; * ut, qui exsultántibus ánimis ejus claritáti congáudent, ipso apud te interveniénte, consociéntur et méritis.
 $Per Dominum
+
+[Oratio]
+@:Oratio_
+(sed tempore paschali nisi rubrica 1960 omittitur)
+@:OratioP
+
+[OratioP]
+@:Oratio_:s/hodiérna die //
 
 [Hymnus Matutinum]
 v. Quidquid antíqui cecinére vates,
@@ -233,6 +245,9 @@ R. Via, recto oriéntis trámite ab ejus cella in cælum usque tendebátur; † 
 V. Quibus ipse ait: † Hæc est via, qua diléctus Dómini Benedíctus cælos ascéndit.
 R. Illi autem se nescíre proféssi sunt.
 
+[Evangelium]
+@Commune/C5b
+
 [Ant Laudes]
 Fuit vir * vitæ venerábilis, grátia Benedíctus et nómine, qui ab ipso puerítiæ suæ témpore cor gerens seníle, ætátem móribus tránsiens, nulli ánimum voluptáti dedit.
 Beátus vir Benedíctus * plus appétiit mala mundi pérpeti, quam laudes; pro Deo labóribus fatigári, quam vitæ hujus favóribus extólli.
@@ -287,6 +302,5 @@ $Deo gratias
 
 [Ant 3]
 Hodie * sanctus Benedíctus per viam Oriéntis recto trámite vidéntibus discípulis cælum ascéndit: hódie eréctis mánibus inter verba oratiónis exspirávit hódie in glória ab Angelis suscéptus est.
-
-[Evangelium]
-@Commune/C5b
+(sed tempore paschali nisi rubrica 1960)
+Sanctus Benedíctus * per viam Oriéntis recto trámite vidéntibus discípulis cælum ascéndit: et eréctis mánibus inter verba oratiónis exspirávit: et in glória ab Angelis suscéptus est, allelúja.

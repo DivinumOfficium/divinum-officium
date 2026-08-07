@@ -226,9 +226,15 @@ R. Qui pro nobis pepéndit in ligno, allelúja.
 V. Ipse liberávit me de láqueo venántium.
 R. Et a verbo áspero.
 
+[Quad 1 Versum] (rubrica cisterciensis)
+@Psalterium/Special/Minor Special:Responsory Quad TertiaC_
+
 [Quad5 1 Versum]
 V. Érue a frámea, Deus, ánimam meam.
 R. Et de manu canis únicam meam.
+
+[Quad5 1 Versum] (rubrica cisterciensis)
+@Psalterium/Special/Minor Special:Responsory Quad5 TertiaC_
 
 [Pasch 1 Versum_]
 V. Surréxit Dóminus de sepúlcro, allelúja.
@@ -243,9 +249,15 @@ R. Qui pro nobis pepéndit in ligno, allelúja.
 V. Scápulis suis obumbrábit tibi.
 R. Et sub pennis ejus sperábis.
 
+[Quad 2 Versum] (rubrica cisterciensis)
+@Psalterium/Special/Minor Special:Responsory Quad TertiaM_
+
 [Quad5 2 Versum]
 V. De ore leónis líbera me, Dómine.
 R. Et a córnibus unicórnium humilitátem meam.
+
+[Quad5 2 Versum] (rubrica cisterciensis)
+@Psalterium/Special/Minor Special:Responsory Quad5 SextaC_
 
 [Pasch 2 Versum]
 V. Surréxit Dóminus vere, allelúja.
@@ -254,6 +266,9 @@ R. Et appáruit Simóni, allelúja.
 [Quad 3 Versum]
 V. Scuto circúmdabit te véritas ejus.
 R. Non timébis a timóre noctúrno.
+
+[Quad 3 Versum] (rubrica cisterciensis)
+@Psalterium/Special/Minor Special:Versum Quad Tertia
 
 [Quad5 3 Versum]
 V. Ne perdas cum ímpiis, Deus, ánimam meam.
@@ -267,6 +282,8 @@ R. Viso Dómino, allelúja.
 @:Pasch 3 Versum_
 (sed rubrica praedicatorum)
 @:Pasch 1 Versum_
+(sed rubrica cisterciensis)
+@Psalterium/Special/Minor Special:Responsory Pasch NonaC_
 
 [Quad 6 Versum]
 V. Scuto circúmdabit te véritas ejus.
@@ -485,7 +502,7 @@ Beátam me dicent * omnes generatiónes, quia ancíllam húmilem respéxit Deus.
 ;;31
 V. Egrediétur Dóminus de loco sancto suo.
 R. Véniet ut salvet pópulum suum.
-Allelúia, * allelúia, allelúia.;;240;241;242
+Ecce, jam venit * plenitúdo témporis, in quo misit Deus Fílium suum in terras.;;240;241;242
 V. Exaltáre Dómine in virtúte tua.
 R. Cantábimus et psallémus virtútes tuas.
 
@@ -509,6 +526,26 @@ R. Et appáruit Simóni, allelúja.
 Allelúja, * allelúja, allelúja.;;243;244;245
 V. Gavísi sunt discípuli, allelúja.
 R. Viso Dómino, allelúja.
+
+[Paschm0] (rubrica cisterciensis)
+@TemporaCist/Pasc0-0:AntC Matutinum:s/$/;;20/
+;;21
+;;22
+;;23
+;;24
+;;25
+V. Surréxit Dóminus de sepúlcro, allelúia.
+R. Qui pro nobis pepéndit in ligno, allelúia.
+@TemporaCist/Pasc0-0:AntC Matutinum:s/$/;;26/
+;;27
+;;28
+;;29
+;;30
+;;31
+V. Surréxit Dóminus vere, allelúia.
+R. Et appáruit Simóni, allelúia.
+@Psalterium/Psalmi/Psalmi minor:Pasch:5:s/$/;;243;244;245/
+@Psalterium/Special/Minor Special:Responsory Pasch NonaM
 
 [Cantm Fest]
 ;;246;247;248
@@ -677,6 +714,21 @@ Jesum qui crucifíxus est * quǽritis, allelúja; non est hic: surréxit enim, s
 V. Gavísi sunt discípuli, allelúja.
 R. Viso Dómino, allelúja. 
 Veníte * et vidéte locum ubi pósitus erat Dóminus, allelúja, allelúja.
+;;
+;;
+;;
+;;
+;;
+
+[Daym Pasch] (rubrica cisterciensis)
+@TemporaCist/Pasc0-0:AntC Matutinum
+;;
+;;
+;;
+;;
+;;
+@:Paschm0:7-8
+@TemporaCist/Pasc0-0:AntC Matutinum
 ;;
 ;;
 ;;

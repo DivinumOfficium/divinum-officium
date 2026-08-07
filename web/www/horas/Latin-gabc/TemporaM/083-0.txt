@@ -17,9 +17,5 @@
 [Lectio6]
 @Tempora/083-0:Lectio5:s/Si.*//s
 
-[Lectio7]
-@Tempora/083-0:Lectio5:s/.* Si/Si/s s/$/~/
-@Tempora/083-0:Lectio6:s/Dénique.*//s
-
 [Lectio8]
 @Tempora/083-0:Lectio6:s/.* Dénique/Dénique/s

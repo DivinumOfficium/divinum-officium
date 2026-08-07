@@ -1,0 +1,17 @@
+@Tempora/Quad3-6
+
+[Lectio1]
+@Tempora/Quad3-6::s/ Nunc.*//
+
+[Lectio2]
+@Tempora/Quad3-6:Lectio1:s/.* (?=Nunc)//s s/$/~/
+@Tempora/Quad3-6
+
+[Responsory2]
+@Tempora/Quad3-1:Responsory1
+
+[Lectio3]
+@Tempora/Quad3-6::s/ Ergo.*laudabátur.//
+
+[Responsory3]
+@TemporaOP/Quad3-0:Responsory Vespera 1

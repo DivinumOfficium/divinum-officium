@@ -1,0 +1,47 @@
+@Tempora/Quad4-0
+
+[Responsory Vespera 1]
+@Tempora/Quad4-1:Responsory2
+
+[Lectio1]
+@Tempora/Quad4-0::1-7 s/-6/-5/
+
+[Responsory1]
+@TemporaCist/Quad4-0::1-2 s/:\n\* (.)/: \l$1/ s/(?:\S+ ){2}\S+$/\n* \u$&/
+@TemporaCist/Quad4-0::3 s/eos/eum/
+@TemporaCist/Quad4-0::2 s/.* ((?:\S+ ){2}\S+)$/R. \u$1/
+
+[Lectio2]
+@Tempora/Quad4-0::1 s/7-10/6-8/
+@Tempora/Quad4-0:Lectio1:8
+@Tempora/Quad4-0::2-3 s/, ad.*/./
+
+[Responsory2]
+@Tempora/Quad4-0:Responsory3
+
+[Lectio3]
+@Tempora/Quad4-0:Lectio2:1 s/7-10/9-8/
+@Tempora/Quad4-0:Lectio2:4-5
+@Tempora/Quad4-0::2-3
+
+[Responsory3]
+@Tempora/Quad4-1:Responsory2
+&Gloria
+@Tempora/Quad4-1:Responsory2:4
+@Tempora/Quad4-1:Responsory2:1 s/$/~/
+@Tempora/Quad4-1:Responsory2:2
+
+[Capitulum Laudes]
+@Tempora/Quad1-0::s/.*?: /v. /
+
+[Capitulum Sexta]
+@Tempora/Quad1-0
+
+[Capitulum Nona]
+@TemporaOP/Quad1-0
+
+[Ant 2]
+Abiit Jesus trans mare Galilǽæ, quod est Tiberíadis: et sequebátur eum multitúdo magna, quia vidébant signa, quæ faciébat super his qui infirmabántur. Súbiit ergo in montem Jesus et ibi sedébat cum discípulis suis. Erat autem próximum Pascha dies festus Judæórum.
+
+[Ant 3]
+@Tempora/Quad4-0:Ant 2

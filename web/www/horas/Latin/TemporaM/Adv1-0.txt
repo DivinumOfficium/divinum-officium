@@ -2,7 +2,6 @@
 
 [Rule]
 12 lectiones
-(rubrica cisterciensis) Psalmi Feria
 
 [Lectio1]
 @Tempora/Adv1-0:Lectio1
@@ -15,10 +14,6 @@
 
 [Lectio4]
 @Tempora/Adv1-0o:Lectio3:1-3 s/-15/-11/ s/.$/./
-
-[Responsory1] (rubrica cisterciensis)
-@Tempora/Adv1-0:Responsory1:1-3
-V. Excita, Dómine, poténtiam tuam, et veni: ut salvos fácias nos. * Qui regnatúrus es in pópulo Israël.
 
 [Responsory4] (nisi rubrica cisterciensis)
 @Tempora/Adv1-1:Responsory1
@@ -34,16 +29,12 @@ V. Excita, Dómine, poténtiam tuam, et veni: ut salvos fácias nos. * Qui regna
 
 [Responsory6]
 @Tempora/Adv1-0:Responsory5
-(sed rubrica cisterciensis)
-@Tempora/Adv1-0:Responsory8
 
 [Lectio7]
 @Tempora/Adv1-0:Lectio6
 
 [Responsory7]
 @Tempora/Adv1-0:Responsory6
-(sed rubrica cisterciensis)
-@Tempora/Adv1-0:Responsory7
 
 [Lectio8]
 @Tempora/Adv1-0o:Lectio5:2
@@ -51,32 +42,17 @@ V. Excita, Dómine, poténtiam tuam, et veni: ut salvos fácias nos. * Qui regna
 [Responsory8]
 @Tempora/Adv1-1:Responsory2
 
-[Responsory8] (rubrica cisterciensis)
-@Tempora/Adv1-0:Responsory6:1-2
-V. Meménto nostri, Dómine, in beneplácito pópuli tui, vísita nos in salutári tuo:
-@Tempora/Adv1-0:Responsory6:2:s/\*/R./
-
 [Lectio9]
 @Tempora/Adv1-0:Lectio7
 
 [Responsory9]
 @Tempora/Adv1-0:Responsory7
 
-[Responsory9] (rubrica cisterciensis)
-@Tempora/Adv1-1:Responsory2:1-2
-V. Ecce dominátor Dóminus cum virtúte véniet.
-@Tempora/Adv1-1:Responsory2:4
-
 [Lectio10]
 @Tempora/Adv1-0:Lectio8
 
 [Responsory10]
 @Tempora/Adv1-0:Responsory8
-
-[Responsory10] (rubrica cisterciensis)
-@Tempora/Adv1-1:Responsory3:1-2
-V. Ego véniam, dicit Dóminus, et sanábo contritiónem pópuli mei.
-@Tempora/Adv1-1:Responsory3:4
 
 [Lectio11]
 @Tempora/Adv1-0:Lectio9
@@ -87,17 +63,8 @@ R. Ecce dies véniunt, dicit Dóminus, † et suscitábo David germen justum: �
 V. In diébus illis salvábitur Juda, et Israël habitábit confidénter.
 R. Et hoc est nomen quod vocábunt eum: † Dóminus justus noster.
 
-[Responsory11] (rubrica cisterciensis)
-@Tempora/Adv1-2:Responsory1
-
 [Lectio12]
 Confúsio autem maris et flúctuum necdum nova exórta est. Sed cum multa prænuntiáta jam compléta sint, dúbium non est quin sequántur étiam pauca, quæ restant: quia sequéntium rerum certitúdo est præteritárum exhibítio. Hæc nos, fratres caríssimi, idcírco dícimus, ut ad cautélæ stúdium vestræ mentes evígilent, ne securitáte tórpeant, ne ignorántia languéscant, sed semper eas et timor sollícitet, et in bono ópere sollicitúdo confírmet.
 
 [Responsory12]
 @Tempora/Adv1-1:Responsory3
-
-[Responsory12] (rubrica cisterciensis)
-R. Confortámini manus fatigátæ, et génua dissolúta roborámini: qui pusíllo ánimo estis mente convaléscite, me timéte, dicit Dóminus, quia vénio,
-* Dirúmpere jugum captivitátis vestræ.
-V. Cívitas Jerúsalem, noli flere, qui cito véniet salus tua. 
-R. Dirúmpere jugum captivitátis vestræ.

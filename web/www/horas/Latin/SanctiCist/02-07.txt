@@ -1,0 +1,19 @@
+@Sancti/02-07
+
+[Rule]
+vide C5b;mtv
+3 lectiones
+
+[Lectio1]
+@CommuneCist/C5:Lectio1 in 2 loco
+
+[Lectio2]
+@Sancti/02-07:Lectio4:s/$/~/
+@Sancti/02-07:Lectio5:s/Magno .*//
+
+[Lectio3]
+@Sancti/02-07:Lectio5:s/.* (Magno )/$1/ s/flagrávit, .*/flagrávit./ s/$/~/
+@Sancti/02-07:Lectio6:s/Ejus .*//
+
+[Responsory3]
+@CommuneCist/C5:Responsory12

@@ -1,0 +1,26 @@
+[Ant 1] 
+Bratři, * oslavujte a noste Pána na svém těle, alleluja.
+
+[Lectio6]
+@Tempora/Epi3-0:Lectio5:s/A proto .*//s
+
+[Lectio7]
+@Tempora/Epi3-0:Lectio5:s/.* A proto /A proto /s
+
+[Lectio8]
+@Tempora/Epi3-0:Lectio6:s/Ovšem .*//
+
+[Lectio9]
+@Tempora/Epi3-0:Lectio7:s/A za zmínku .*//
+
+[Lectio10]
+@Tempora/Epi3-0:Lectio8:s/A Ježíš .*//s
+
+[Lectio11]
+@Tempora/Epi3-0:Lectio8:s/.* A Ježíš /A Ježíš /s
+
+[Lectio12]
+@Tempora/Epi3-0:Lectio9:s/A zároveň, .*//
+
+[Ant 3] 
+Pane, * můj služebník leží doma ochrnutý, a velmi se trápí. Amen, pravím tobě, já přijdu a uzdravím jej.

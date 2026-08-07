@@ -1,0 +1,105 @@
+@Tempora/Quad3-0
+
+[Rule]
+12 lectiones
+
+[Invit]
+Veníte adorémus Dóminum Deum nostrum: * Qui fecit nos.
+
+[Ant Matutinum 3N]
+@Tempora/Quad3-0:Ant Nona:s/$/;;269;270;271/
+
+[Lectio1]
+@Tempora/Quad3-0:Lectio1:s/-10/-4/ s/5.*//s
+
+[Lectio2]
+@Tempora/Quad3-0:Lectio1:2-9:s/2-10/5-8/ s/2 .*5/5/s
+
+[Lectio3]
+@Tempora/Quad3-0:Lectio1:2-11:s/2-/9-/ s/2 .*9/9/s
+
+[Lectio4]
+@Tempora/Quad3-0:Lectio2:1-5:s/-20/-14/ s/Missus .*//
+
+[Responsory2]
+R. Dixit Judas frátribus suis: Ecce Ismaëlítæ tránseunt; veníte, venumdétur,
+* Et manus nostræ non polluántur: caro enim et frater noster est.
+@Tempora/Quad3-0::3
+R. Et manus nostræ non polluántur: caro enim et frater noster est.
+
+[Responsory3]
+@Tempora/Quad3-0:Responsory4:1-2
+V. Vide, si túnic  fílii tui sit, an non: et cum vidísset pater, ait:
+@Tempora/Quad3-0:Responsory4:4
+
+[Responsory4]
+R. Igitur Joseph ductus est in Ægýptum, fuítque Dóminus cum eo:
+* Per quem erat vir in cunctis próspere agens.
+V. Misértus enim est Deus illíus, et ómnia ejus ópera dirigébat,
+R. Per quem erat vir in cunctis próspere agens.
+
+[Lectio5]
+@Tempora/Quad3-0:Lectio4:s/Justum .*//s
+
+[Lectio6]
+@Tempora/Quad3-0:Lectio4:s/.* Justum /Justum /s s/$/~/
+@Tempora/Quad3-0:Lectio5:s/Sed ea .*//s
+
+[Lectio7]
+@Tempora/Quad3-0:Lectio5:s/.* Sed ea /Sed ea /s s/$/~/
+@Tempora/Quad3-0:Lectio6:s/Jure .*//s
+
+[Lectio8]
+@Tempora/Quad3-0:Lectio6:s/.* Jure /Jure /s
+
+[Responsory5]
+@Tempora/Quad3-0:Responsory6
+
+[Responsory6]
+@Tempora/Quad3-1:Responsory1:s/Súmite de óptimis terræ frúgibus/Tóllite de frúgibus terræ/
+
+[Responsory7]
+@Tempora/Quad3-1:Responsory2
+
+[Lectio9]
+@Tempora/Quad3-0:Lectio7:s/Quidam .*//s
+
+[Lectio10]
+@Tempora/Quad3-0:Lectio7:s/.* Quidam /Quidam /s s/$/~/
+@Tempora/Quad3-0:Lectio8:s/Et álii .*//s
+
+[Lectio11]
+@Tempora/Quad3-0:Lectio8:s/.* Et álii /Et álii /s s/$/~/
+
+[Lectio12]
+@Tempora/Quad3-0:Lectio9:s/Si autem sátanas.*//s
+
+[Responsory9]
+@Tempora/Quad3-0:Responsory7
+
+[Responsory10]
+@Tempora/Quad3-1:Responsory3
+
+[Responsory11]
+@Tempora/Quad3-2:Responsory1
+
+[Responsory12]
+R. Salus nostra in manu tua est, Dómine: réspiciat super nos misericórdia tua,
+* Ut secúri serviámus regi.
+V. Venérunt quoque Ægýptii ad Joseph, dicéntes: Da nobis aliménta, ut vívere possímus.
+R. Ut secúri serviámus regi.
+
+[Ant 2]
+@Tempora/Quad3-0:Ant Tertia
+
+[Ant Prima]
+@Tempora/Quad3-0:Ant 2
+
+[Ant Tertia]
+@Tempora/Quad3-0:Ant Sexta
+
+[Ant Sexta]
+@Tempora/Quad3-0:Ant Nona
+
+[Ant Nona]
+@Psalterium/Psalmi/Psalmi minor:Quad:5:s/5 = //

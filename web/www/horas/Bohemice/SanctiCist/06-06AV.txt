@@ -1,0 +1,13 @@
+[Lectio5] 
+@Sancti/06-06:Lectio4:s/Mocný tedy.*//
+
+[Lectio6]
+@Sancti/06-06:Lectio4:s/.*(Mocný tedy)/$1/s s/$/~/ 
+@Sancti/06-06:Lectio5:s/Když však.*//
+
+[Lectio7]
+@Sancti/06-06:Lectio5:s/.*(Když však)/$1/s s/$/~/
+@Sancti/06-06:Lectio6:s/Stal se.*//
+
+[Lectio8]
+@Sancti/06-06:Lectio6:s/.*(Stal se)/$1/

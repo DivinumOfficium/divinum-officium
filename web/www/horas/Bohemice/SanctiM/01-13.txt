@@ -1,0 +1,15 @@
+[Lectio7]
+@Sancti/01-13:Lectio6:s/Duch .*//s
+
+[Lectio8]
+@Sancti/01-13:Lectio6:s/.*Duch /Duch /s
+
+[Lectio10]
+@Sancti/01-13:Lectio8:s/Neboť .*//s
+
+[Lectio11]
+@Sancti/01-13:Lectio8:s/.*Neboť /Neboť /s s/$/~/
+@Sancti/01-13:Lectio9:s/Někteří .*//s
+
+[Lectio12]
+@Sancti/01-13:Lectio9:s/.*Někteří /Někteří /s

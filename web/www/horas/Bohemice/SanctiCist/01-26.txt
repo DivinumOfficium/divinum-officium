@@ -1,0 +1,5 @@
+[Lectio2]
+@Sancti/01-26:Lectio4:s/Když .*//
+
+[Lectio3]
+@Sancti/01-26:Lectio4:s/.* (Když )/$1/s

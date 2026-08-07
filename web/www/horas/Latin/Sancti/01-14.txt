@@ -11,9 +11,8 @@ S. Hilarii Episcopi Confessoris
 ;;Simplex;;1.1;;vide C4a
 (sed rubrica innovata)
 ;;Duplex optional;;2;;vide C4a
-
-[Rank] (rubrica 1963 nisi rubrica Barroux)
-S. Hilarii Episcopi Confessoris Ecclesiæ Doctoris;;Simplex;;1.1;;vide C4
+(sed rubrica Barroux)
+;;Duplex;;3;;vide C4a
 
 [Rule]
 vide C4a;mtv
@@ -39,10 +38,10 @@ Ant=Hilári
 @Tempora/Epi2-0:Responsory3
 
 [Lectio4]
-Hilarius, in Aquitania nobili genere natus, doctrina et eloquéntia excelluit. Qui primum in matrimonio quasi mónachi vitam egit: deínde propter singulares virtútes Pictavórum epíscopus creátur: quod munus episcopale sic gessit, ut a fidelibus summam laudem consequerétur. Quo témpore, cum terróribus, bonórum spoliatióne, exsílio, et omni crudelitate Constantius imperátor Catholicos vexáret, nisi ad Arianas partes transírent; Hilarius tamquam firmíssimum murum se Ariánis opponens, illórum furórem in se concitávit. Itaque multis petítus insídiis, tandem dolo Saturnini Arelaténsis epíscopi, de synodo Biterrénsi in Phrygiam relegátus est: ubi et mortuum suscitávit, et libros duódecim scripsit de Trinitáte contra Ariános.
+Hilárius, in Aquitánia nóbili génere natus, doctrína et eloquéntia excélluit. Qui primum in matrimónio quasi mónachi vitam egit: deínde propter singuláres virtútes Pictavórum epíscopus creátur: quod munus episcopále sic gessit, ut a fidélibus summam laudem consequerétur. Quo témpore, cum terróribus, bonórum spoliatióne, exsílio, et omni crudelitáte Constántius imperátor Cathólicos vexáret, nisi ad Ariánas partes transírent; Hilárius tamquam firmíssimum murum se Ariánis oppónens, illórum furórem in se concitávit. Itaque multis petítus insídiis, tandem dolo Saturníni Arelaténsis epíscopi, de sýnodo Biterrénsi in Phrýgiam relegátus est: ubi et mórtuum suscitávit, et libros duódecim scripsit de Trinitáte contra Ariános.
 
 [Lectio5]
-Quadriennio post coacto concílio ad Seleucíam, Isauriæ urbem, Hilarius adesse compulsus est: ac deínde Constantinopolim profectus, ubi extremum fidei periculum animadvértit, tribus libellis publice datis, audiéntiam imperatóris poposcit, ut de fide cum adversariis coram disputaret. Verum cum Ursacius et Valens Ariáni epíscopi, quos Hilarius scriptis confutarat, præsentis eruditiónem pertimescerent, Constantio persuasérunt, ut spécie honoris eum in suum episcopátum restitúeret. Tunc Hilárium e prælio hæreticórum revertentem, ut inquit sanctus Hieronymus, Galliárum ecclésia complexa est: quem ad episcopátum secutus est Martinus, qui postea Turonénsi præfuit ecclésiæ; tantumque illo doctore profecit, quantum ejus postea sanctitas declarávit.
+Quadriénnio post coácto concílio ad Seléuciam, Isáuriæ urbem, Hilárius adésse compúlsus est: ac deínde Constantinópolim proféctus, ubi extrémum fídei perículum animadvértit, tribus libéllis públice datis, audiéntiam imperatóris popóscit, ut de fide cum adversáriis coram disputáret. Verum cum Ursácius et Valens Ariáni epíscopi, quos Hilárius scriptis confutárat, præséntis eruditiónem pertiméscerent, Constántio persuasérunt, ut spécie honóris eum in suum episcopátum restitúeret. Tunc Hilárium e prǽlio hæreticórum reverténtem, ut inquit sanctus Hierónymus, Galliárum ecclésia cómplexa est: quem ad episcopátum secútus est Martínus, qui póstea Turonénsi prǽfuit ecclésiæ; tantúmque illo doctóre profécit, quantum ejus póstea sánctitas declarávit.
 
 [Lectio6]
 @Sancti/01-14:Lectio6beginning
@@ -52,10 +51,10 @@ Quadriennio post coacto concílio ad Seleucíam, Isauriæ urbem, Hilarius adesse
 @Sancti/01-14:Lectio6beginning
 
 [Lectio6beginning]
-Magna deinceps tranquillitate Pictavórum ecclésiam administrávit: Galliámque universam adduxit, ut Arianórum impietátem condemnaret. Multos libros scripsit mira eruditióne; quos omnes sanctus Hieronymus ad Lætam, sine ulla erroris suspicióne legi posse testátur illis verbis: Hilarii libros inoffenso decurrat pede. Migrávit in cælum Idibus Januarii, Valentiniáno et Valénte imperatóribus, anno post Christum natum trecentésimo sexagesimo nono.
+Magna deínceps tranquillitáte Pictavórum ecclésiam administrávit: Galliámque univérsam addúxit, ut Arianórum impietátem condemnáret. Multos libros scripsit mira eruditióne; quos omnes sanctus Hierónymus ad Lætam, sine ulla erróris suspicióne legi posse testátur illis verbis: Hilárii libros inoffénso decúrrat pede. Migrávit in cælum Idibus Januárii, Valentiniáno et Valénte imperatóribus, anno post Christum natum trecentésimo sexagésimo nono.
 
 [Lectio6recentaddition]
-Eum a multis Pátribus et conciliis insignem Ecclésiæ Doctórem nuncupátum, atque uti talem in aliquot diœcesibus cultum, tandem instante synodo Burdigalénsi Pius nonus Pontifex maximus, ex sacrórum Rituum Congregatiónis consulto, universalis Ecclésiæ Doctórem declarávit et confirmávit, ac ipsíus festo die Missam et Offícium de Doctóribus ab ómnibus recitari jussit.
+Eum a multis Pátribus et concíliis insígnem Ecclésiæ Doctórem nuncupátum, atque uti talem in áliquot diœcésibus cultum, tandem instánte sýnodo Burdigalénsi Pius nonus Póntifex máximus, ex sacrórum Rítuum Congregatiónis consúlto, universális Ecclésiæ Doctórem declarávit et confirmávit, ac ipsíus festo die Missam et Offícium de Doctóribus ab ómnibus recitári jussit.
 
 [Lectio94]
 Hilárius, in Aquitánia nóbili génere natus, doctrína et eloquéntia excélluit. Pictavórum epíscopus creátus, tale munus sic gessit, ut a fidélibus summam laudem consequerétur. Ob cathólicam fidem, quam strénue propugnávit, quadriénnio apud Phrýgiam relegátus, inter ália mirácula, mórtuum suscitávit. Duódecim libros scripsit de Trinitáte contra Ariános, et Gálliam univérsam addúxit, ut Arianórum impietátem condemnáret. Multos libros scripsit mira eruditióne; quos omnes sanctus Hierónymus ad Lætam sine ulla erróris suspicióne legi posse testátur illis verbis: Hilárii libros inoffénso decúrrat pede. Migrávit in cælum idibus januárii, anno trecentésimo sexagésimo nono. Eum Pius nonus Póntifex máximus, instánte sýnodo Burdigalénsi, Doctórem universális Ecclésiæ declarávit et confirmávit.

@@ -1,0 +1,22 @@
+@Tempora/Quad1-5
+
+[Lectio1]
+@Tempora/Quad1-5::s/ Quadragenárius.*//
+
+[Responsory1]
+@Tempora/Quad1-0:Responsory6:1-2
+@Tempora/Quad1-0:Responsory2:3
+@Tempora/Quad1-0:Responsory6:4
+
+[Lectio2]
+@Tempora/Quad1-5:Lectio1:s/.* (?=Quadragenárius)//s s/ Nam.*// s/$/~/
+@Tempora/Quad1-5::s/ et illícitis.*/./ s/$/~/
+@Tempora/Quad1-5:Lectio3:s/.*, (cáritas .* númerus\.).*/\u\1/
+
+[Responsory2]
+@TemporaCist/Quad1-0:Responsory10
+
+[Lectio3]
+@Tempora/Quad1-5:Lectio3:s/.* númerus\. // s/ Mérito.*commendátur\.//
+[Responsory3]
+@Tempora/Quad1-3

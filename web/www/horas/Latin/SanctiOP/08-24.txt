@@ -1,0 +1,36 @@
+@Sancti/08-24
+
+[Lectio1]
+De Epístola ad Ephésios
+!Eph 2:4-7
+4 Deus autem, qui dives est in misericórdia, propter nímiam caritátem suam, qua diléxit nos,
+5 et cum essémus mórtui peccátis, convivificávit nos in Christo cuius grátia estis salváti,
+6 et conresuscitávit, et consedére fecit in cæléstibus in Christo Iesu:
+7 ut osténderet in sǽculis superveniéntibus abundántes divítias grátiæ suæ, in bonitáte super nos in Christo Iesu.
+
+[Lectio2]
+!Eph 2:8-12
+8 Grátia enim estis salváti per fidem, et hoc non ex vobis: Dei enim donum est:
+9 non ex opéribus, ut ne quis gloriétur.
+10 Ipsíus enim sumus factúra, creáti in Christo Iesu in opéribus bonis, quæ præparávit Deus ut in illis ambulémus.
+11 Propter quod mémores estóte quod aliquándo vos gentes in carne, qui dicímini præpútium ab ea quæ dícitur circumcísio in carne, manu facta:
+12 quia erátis illo in témpore sine Christo, alienáti a conversatióne Israël, et hóspites testamentórum, promissiónis spem non habéntes, et sine Deo in hoc mundo.
+
+[Lectio3]
+!Eph 2:13-16
+13 Nunc autem in Christo Iesu, vos, qui aliquándo erátis longe, facti estis prope in sánguine Christi.
+14 Ipse enim est pax nostra, qui fecit útraque unum, et médium paríetem macériæ solvens, inimicítias in carne sua,
+15 legem mandatórum decrétis evácuans, ut duos condat in semetípso in unum novum hóminem, fáciens pacem:
+16 et reconcíliet ambos in uno córpore, Deo per crucem, interfíciens inimicítias in semetípso.
+
+[Lectio7]
+@Sancti/08-24::s/ Orat.*//
+
+[Lectio8]
+@Sancti/08-24:Lectio7:s/.* (?=Orat)//s s/$/~/
+@Sancti/08-24::s/ Quid te.*//
+
+[Lectio9]
+@Sancti/08-24:Lectio8:s/.* (?=Quid te)// s/$/~/
+@Sancti/08-24::s/ Simul.*//
+

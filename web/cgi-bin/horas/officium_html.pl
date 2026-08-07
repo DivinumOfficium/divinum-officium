@@ -38,7 +38,7 @@ sub headline {
     if ($vers =~ /1962/);
   $output .=
     "<H2><FONT COLOR='RED'>Please note that 'Ad Matutinum' for this version ($vers) is still incomplete and under construction.</FONT></H2>\n"
-    if ($vers =~ /1617/ || ($vers =~ /Cist/i && ($month < 6 || $month > 7))) && $hora =~ /Matutinum/;
+    if ($vers =~ /1617/ || ($vers =~ /Cist/i && $month > 7)) && $hora =~ /Matutinum/;
 
   if ($variant eq 'P') {
     $output .= par_c(<<"PrintTag");
@@ -47,6 +47,12 @@ sub headline {
 $date1
 <A HREF="Pofficium.pl?date1=$date1&command=next&version=$version&lang2=$lang2&votive=$votive">
 &uarr;</A>
+&ensp;
+<!-- interlinear controls (re-enable in officium_html.pl if needed)
+<A HREF="#" id="interlinear-toggle" onclick="toggleInterlinear()">${\(our $interlinear ? 'Interlinear: on' : 'Interlinear: off')}</A>
+&ensp;
+<A HREF="#" onclick="resetLearnedWords()">Reset learned</A>
+-->
 PrintTag
   } else {
     $output .= par_c(<<"PrintTag");
@@ -62,7 +68,15 @@ $compone
 &ensp;
 <A HREF="#" onclick="callkalendar();">Ordo</A>
 &ensp;
+<A HREF="#" onclick="callkalendar('kalendar');">Kalendarium</A>
+&ensp;
 <A HREF="#" onclick="pset('parameters')">Options</A>
+&ensp;
+<!-- interlinear controls (re-enable in officium_html.pl if needed)
+<A HREF="#" id="interlinear-toggle" onclick="toggleInterlinear()">${\(our $interlinear ? 'Interlinear: on' : 'Interlinear: off')}</A>
+&ensp;
+<A HREF="#" onclick="resetLearnedWords()">Reset learned</A>
+-->
 PrintTag
   }
 }

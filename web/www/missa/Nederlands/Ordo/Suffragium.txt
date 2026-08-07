@@ -29,15 +29,15 @@ Moge deze communie, o Heer, ons reinigen van onze misslagen en door de voorspraa
 $Per eundem
 
 [Oratio Maria3]
-!de S. Maria (vel ad libitum)
+!de S. Maria
 @Commune/C10:Oratio
 
 [Secreta Maria3]
-!de S. Maria (vel ad libitum)
+!de S. Maria
 @Commune/C10:Secreta
 
 [Postcommunio Maria3]
-!de S. Maria (vel ad libitum)
+!de S. Maria
 @Commune/C10:Postcommunio
 
 [Oratio Ecclesiæ]
@@ -57,17 +57,17 @@ $Per Dominum
 
 [Oratio Papa]
 !Pro papa
-God, Herder en Bestuurder van alle gelovigen, zie goedgunstig neer op uw dienaar N., die Gij tot herder over uw Kerk hebt willen aanstellen. Laat hem, vragen wij U, met woord en daad hen helpen aan wier hoofd hij staat, opdat hij met de hem toevertrouwde kudde tot het eeuwig leven gerake.
+God, Herder en Bestuurder van alle gelovigen, zie goedgunstig neer op uw dienaar Leo, die Gij tot herder over uw Kerk hebt willen aanstellen. Laat hem, vragen wij U, met woord en daad hen helpen aan wier hoofd hij staat, opdat hij met de hem toevertrouwde kudde tot het eeuwig leven gerake.
 $Per Dominum
 
 [Secreta Papa]
 !Pro papa
-Wij vragen U, Heer, laat U door de offergaven verzoenen en leid uw dienaar N., die Gij als herder over uw Kerk hebt gewild, onder uw voortdurende bescherming.
+Wij vragen U, Heer, laat U door de offergaven verzoenen en leid uw dienaar Leo, die Gij als herder over uw Kerk hebt gewild, onder uw voortdurende bescherming.
 $Per Dominum
 
 [Postcommunio Papa]
 !Pro papa
-Wij vragen U, Heer, dat het ontvangen van dit Sacrament ons moge beschermen en uw dienaar N., die Gij als herder aan het hoofd van uw Kerk hebt gewild, met de hem toevertrouwde kudde altijd behoeden.
+Wij vragen U, Heer, dat het ontvangen van dit Sacrament ons moge beschermen en uw dienaar Leo, die Gij als herder aan het hoofd van uw Kerk hebt gewild, met de hem toevertrouwde kudde altijd behoeden.
 $Per Dominum
 
 [Oratio Sanctorum]
@@ -114,3 +114,6 @@ $Per Dominum
 !Pro vivis et mortuis
 Wij vragen U, almachtige en barmhartige God, mogen de Sacramenten, die wij genuttigd hebben, ons reinigen, en laat het Sacrament, dank zij de voorspraak van al uw heiligen, ons niet schuldig stellen aan straf, maar een heilzame voorspraak zijn tot vergeving. Moge het onze zonden afwissen, de zwakken kracht schenken, een beveiliging zijn tegen alle gevaren van de wereld. Moge het voor de levende en overleden gelovigen vergiffenis betekenen van alle zonden.
 $Per Dominum
+
+[ad libitum]
+vel ad libitum

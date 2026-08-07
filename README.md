@@ -37,6 +37,12 @@ sections, with each section beginning with its name enclosed in square
 brackets. Please browse the files in the aforementioned directories for
 examples.
 
+## Architecture: Plack / Starman
+
+To improve performance and reduce server overhead, this project uses **Plack/Starman**. Unlike traditional CGI, which spawns a new process for every request, Starman keeps a persistent pool of workers to handle traffic more efficiently.
+
+For a detailed walkthrough of how the liturgical calendar is generated and served — including the full-year (Totus) ordo cache — see [How the Calendar Works](docs/how-the-calendar-works.md).
+
 ## Docker
 
 ### Production
@@ -52,8 +58,7 @@ You can also use Docker Compose to load a copy of the container in one command:
 docker-compose -f docker-compose-prod.yml up -d
 ```
 
-This will download Divinum Officium, and run a local copy on your system, bound to
-`localhost`, port 80.
+This will download Divinum Officium, and run a local copy on your system. It maps your local port 80 to the container's port 8080.
 
 When you are done, stop the container by running:
 
@@ -72,8 +77,7 @@ your system. Run the following command in root directory of project:
 docker-compose up
 ```
 
-This starts the web server and you can visit the website on
-`http://localhost:8080`. It will mount the current web directory into the container
+This starts the web server on http://localhost:8080 (mapping to internal port 8080). It will mount the current web directory into the container
 so that you can change files and do live-changes without restarting the container.
 
 #### MIT License

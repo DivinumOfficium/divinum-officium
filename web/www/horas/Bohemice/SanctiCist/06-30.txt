@@ -1,32 +1,36 @@
+[Ant Vespera] 
+@:Ant Laudes:s/$/_/gm s/_/;;109/ s/_/;;112/ s/_/;;115/ s/_/;;125/ s/_//
+
 [AntMatutinumM]
-Ter virgis cæsus sum, * semel lapidátus sum, ter naufrágium pértuli pro Christo Dómino.;;97
-Grátia Dei * sum id quod sum: et grátia ejus in me vácua non fuit.;;98
-Súfficit tibi, * Paule, grátia mea: nam virtus mea in infirmitáte perfícitur.;;100
-Ecce ego † mitto vos sicut oves in médio lupórum, dicit Dóminus: estóte ergo prudéntes sicut serpéntes, et símplices sicut colúmbæ.;;253;254;255
-Běž, Ananiáši, * a najdi Saula, hle, on se již modlí; neboť je to má vyvolená nádoba, aby přinesl mé jméno k Pohanům a králům a synům israelským.;;253;254;255
+Třikrát jsem byl bit holemi, * jednou kamenován, a třikrát jsem přežil ztroskotání lodi pro jméno Kristovo.;;97
+Milost Boží * ve mě nepřebývala zbytečně, avšak jeho milost ve mě navždy zůstane.;;98
+Postačí ti, * Pavle, má milost; neboť má moc se završuje v (tvé) slabosti.;;100
+Hle, já vás posílám * jako ovce mezi vlky, praví Pán; buďte proto prozíraví jako hadi, ale prostí jako holubice.;;253;254;255
+Jdi, Ananiáši, * a vyhledej Šavla, on se totiž modlí; neboť je mou vyvolenou nádobou, aby přinesl mé jméno k Národům, králům a synům israelským.;;253;254;255
 
-[Responsory2] (rubrica cisterciensis)
-@:Responsory8_
-
-[Lectio3] (rubrica cisterciensis)
+[Lectio3] 
 @Sancti/06-30:Lectio2:1:s/5-8/6-8/
 @Sancti/06-30:Lectio2:3-5
 
 [Lectio4]
-@Sancti/06-30:Lectio3:!2-3 s/9-/11-/ s/ .*?(?= Et)//
-(sed rubrica cisterciensis)
 @Sancti/06-30:Lectio3:1-5:s/9-13/9-12/
 
-[Responsory4_]
-R. Slyšeli jste totiž o mém jednání ještě když jsem byl Židem, neboť jsem byl úspěšnější
-* Než mnoho mých vrstevníků v mém rodu. 
-V. Horlil jsem ještě více po mých otcovských tradicích.
-R. Než mnoho mých vrstevníků v mém rodu. 
+[Responsory1]
+R. Ten, jenž působil * v Petrovi během Apoštolátu, působil i mně mezi Pohany; a oni tak poznali milost,
+* Která mi byla dána.
+@Sancti/06-30::3
+R. Která mi byla dána.
 
-[Responsory4]
-@:Responsory4_
-(sed rubrica cisterciensis)
-@:Responsory12_
+[Responsory2] 
+R. Vím, komu jsem uvěřil, a jsem si jistý, že má moc zachovat můj poklad do onoho dne.
+* Spravedlivý soudce.
+V. Uložena je mi koruna spravedlnosti, kterou mi nasadí Hospodin v onen den.
+R. Spravedlivý soudce.
+
+[Responsory3]
+@Sancti/06-30:Responsory2:1-2
+V. Milostí Boží jsem to, co jsem, a jeho milost ve mě nebyla zbytečná.
+@Sancti/06-30:Responsory2:4
 
 [Lectio5]
 @Sancti/06-30:Lectio4:s/ Pohleďte.*//s
@@ -34,39 +38,34 @@ R. Než mnoho mých vrstevníků v mém rodu.
 [Lectio6]
 @Sancti/06-30:Lectio4:s/.* (?=Pohleďte)//s
 
-[Responsory6] (rubrica cisterciensis)
-R. Když se však zalíbilo tomu, jenž si mě oddělil z lůna mé matky a povolal mě svou milostí, aby zjevil svého Syna skrze mě,
-* Abych jej hlásal mezi Pohany.
-V. Ihned jsem se neradil s tělem a krví, ani jsem nešel do Jerusaléma k předchůdcům svým Apoštolům,
-R. Abych jej hlásal mezi Pohany.
-
 [Lectio7]
 @Sancti/06-30:Lectio5
 
 [Lectio8]
 @Sancti/06-30:Lectio6
 
-[Responsory8_]
-R. Vím, komu jsem uvěřil, a jsem si jistý, že má moc zachovat můj poklad.
-* Do onoho dne, spravedlivý soudce.
-V. Uložena je mi koruna spravedlnosti, kterou mi nasadí Hospodin.
-R. Do onoho dne, spravedlivý soudce.
+[Responsory6] 
+R. Když se však zalíbilo tomu, jenž si mě oddělil z lůna mé matky a povolal mě svou milostí, aby zjevil svého Syna skrze mě,
+* Abych jej hlásal mezi Pohany.
+V. Ihned jsem se neradil s tělem a krví, ani jsem nešel do Jerusaléma k předchůdcům svým Apoštolům,
+R. Abych jej hlásal mezi Pohany.
+
+[Responsory7]
+R. Uložena je pro mě koruna spravedlnosti, kterou mi nasadí v onen den Hospodin,
+* Spravedlivý soudce.
+V. Vím, komu jsem uvěřil, a jsem si jistý, že má moc zachovat můj poklad do onoho dne.
+R. Spravedlivý soudce.
 
 [Responsory8]
-@:Responsory8_
-(sed rubrica cisterciensis)
-@:Responsory8C
-
-[Responsory8C]
 R. Saul však čím dál více nabýval síly, a uváděl v rozpak Židy, kteří přebývali v Damašku,
-* Tvrdil, že on je Kristus, Pomazaný.
+* Tvrdil, že on (Ježíš) je Kristus, Pomazaný.
 V. A hned, jak vešel Pavel do synagogy, hlásal Ježíše,
-R. Tvrdil, že on je Kristus, Pomazaný.
+R. Tvrdil, že on (Ježíš) je Kristus, Pomazaný.
 
 [Lectio9]
 @Sancti/06-30:Lectio7
 
-[Responsory9] (rubrica cisterciensis)
+[Responsory9] 
 R. Aby mne nevynášela velikost zjevení, dán mi byl trn do těla, posel satanův, jenž mne má políčkovat, a třikrát jsem prosil Pána, aby byl ode mne odňat; avšak Pán mi řekl: Stačí ti, Pavle, má milost.
 * Neboť ctnost se zdokonaluje ve slabosti.
 V. Rád se tedy budu chlubit ve svých slabostech, aby ve mě přebývala síla Kristova.
@@ -82,27 +81,24 @@ R. Neboť ctnost se zdokonaluje ve slabosti.
 [Responsory11]
 R. Veliký je svatý Pavel, nádoba vyvolená, a vpravdě je hoden oslavení.
 * Neboť si zasloužil zaujmout dvanáctý trůn.
-V. Kristus jej z nebe zavolal, srazil k zemi a z pronásledovatele se stal nádobou vyvolenou.
-(sed rubrica cisterciensis)
 V. Milost nebeského požehnání nám vyprošuje svatý Pavel, nádoba vyvolená.
 R. Neboť si zasloužil zaujmout dvanáctý trůn.
 
 [Lectio12]
 @Sancti/06-30:Lectio9:s/.* (?=Neboť)//
 
-[Responsory12_]
-R. Žít je pro mě Kristus, a zemřít výhra;
-* Chlubit se mi náleží pouze v kříži mého Pána Ježíše Krista.
-V. Skrze něj je mi svět ukřižován, a já světu.
-R. Chlubit se mi náleží pouze v kříži mého Pána Ježíše Krista.
-
 [Responsory12]
-@:Responsory12_
-(sed rubrica cisterciensis)
-@:Responsory12C
-
-[Responsory12C]
 R. Svatý Pavle Apoštole, hlasateli pravdy a Učiteli Národů,
 * Přimlouvej se za nás u Boha, který si tě vyvolil,
 V. Abychom hodnými byli učiněni milosti Boží.
 R. Přimlouvej se za nás u Boha, který si tě vyvolil.
+
+[Ant Laudes]
+Já jsem zasadil, * Apollo zaléval, Bůh však dával vzrůst, alleluja.
+Milost Boží * ve mě nepřebývala zbytečně, avšak jeho milost ve mě navždy zůstane.
+Třikrát jsem byl bit holemi, * jednou kamenován, a třikrát jsem přežil ztroskotání lodi pro jméno Kristovo.
+V Damašku, * místodržitel lidu u krále Arety mě chtěl zajmout; bratři mě však přes zeď spustili v koši, a tak jsem unikl jeho rukám ve jménu Páně.
+Rád se budu chlubit * ve svých slabostech, aby ve mě přebývala síla Kristova.
+
+[Ant 2]
+Mé Evangelium, * které je zvěstováno, není ode mě, ani jsem je nepřijal od žádného člověka, nýbrž skrze zjevení našeho Pána Ježíše Krista.

@@ -30,6 +30,7 @@ my %subjects = (
   officio => sub { $dayname[1]; },
   ad => sub { our $missa ? 'missam' : our $hora; },
   mense => sub { our $month },    # mense is not perfect eg. 1 matches also 10 11 12
+  dioecesis => sub { our $dioecesis },
 
   # GABC subjects
   tonus => sub {$chantTone},
@@ -70,6 +71,7 @@ my %stopword_weights;
 my %backscoped_stopwords;
 my $stopwords_regex;
 my $scope_regex;
+my $conditional_regex;
 
 BEGIN {
   # Main stopwords. These have implicit backward scope.
@@ -104,6 +106,7 @@ BEGIN {
 	\b
 	)?
 	/ix;
+  $conditional_regex = qr/\(\s*($stopwords_regex\b)*(.*?)($scope_regex)?\s*\)/o;
 }
 
 # We have four types of scope (in each direction):
@@ -126,13 +129,6 @@ sub evaluate_conditional($) {
     $expression .= ($token =~ /[a-z_]/) ? "$conditional_values{$token}" : $token;
   }
   return eval $expression;
-}
-
-#*** conditional_regex()
-#	Returns a regex that matches conditionals, capturing stopwords,
-#	the condition itself and scope keywords, in that order.
-sub conditional_regex() {
-  return qr/\(\s*($stopwords_regex\b)*(.*?)($scope_regex)?\s*\)/o;
 }
 
 sub parse_conditional($$$) {
@@ -198,6 +194,7 @@ sub get_tempus_id {
       : 'Septuagesimæ'
     : /^Quad(\d)/ && $1 < 5 ? 'Quadragesimæ'
     : /^Quad/ ? 'Passionis'
+    : /^Pasc0/ && $vesp_or_comp && $dayofweek == 6 ? 'Vigilia Paschalis'
     : /^Pasc0/ ? 'Octava Paschæ'
     : /^Pasc(\d)/ && ($1 < 5 || ($1 == 5 && ($dayofweek < 3 || (!$vesp_or_comp && $dayofweek == 3))))
     ? 'post Octavam Paschæ'
@@ -222,12 +219,15 @@ sub get_tempus_id {
 sub get_dayname_for_condition {
   our ($day, $month, $year, $winner, $version, $commemoratio);
   our $hora;
+  our $rule;
   my $vesp_or_comp = ($hora =~ /Vespera/i) || ($hora =~ /Completorium/i);
   return 'Epiphaniæ' if ($month == 1 && ($day == 6 || ($day == 5 && $vesp_or_comp)));
   return 'Baptismatis Domini' if ($month == 1 && ($day == 13 || ($day == 12 && $vesp_or_comp)));
+  return 'Tridui Sacri' if $winner =~ /Quad6\-[456]/;
   return 'in Cœna Domini' if $winner =~ /Quad6\-4/;
   return 'in Parasceve' if $winner =~ /Quad6\-5/;
   return 'Sabbato Sancto' if $winner =~ /Quad6\-6/;
+  return 'Vigilia Paschalis' if $winner =~ /Pasc0\-0/ && $vesp_or_comp && $dayofweek == 6;
   return 'regis DNJC' if ($winner =~ /10\-DU/ || $commemoratio =~ /10\-DU/);
   return 'Omnium Defunctorum'
     if (
@@ -243,6 +243,11 @@ sub get_dayname_for_condition {
   return 'transfigurationis' if ($month == 8 && ($day == 6 || ($day == 5 && $vesp_or_comp)));
   return 'septem doloris' if $winner =~ /09-15$|09-DT|Quad5-5$/;
   return 'Nativitatis' if $winner =~ /12-25/;
+  return 'post Dominicam infra Octavam Epiphaniæ' if $dayname[0] =~ /Epi1-[1-6]/;
+  return 'post Epi1-0' if $dayname[0] =~ /Epi1-[1-6]/;
+  return 'Bernardi' if $winner =~ /08-20|00-VB/;
+  return '3 lectionum' if $winner{Rule} =~ /3 lectio/i;
+  return '3 lect' if $winner{Rule} =~ /3 lectio/i;
   return '';
 }
 
@@ -297,12 +302,21 @@ AUTEM: for (split /\baut\b/, $condition) {
   return ($vero = 0);
 }
 
+my $InclusionRegex = qr/^\s*\@
+([^\n:]+)?                    # Filename (self-reference if omitted).
+(?::([^\n:]+?))?              # Optional keywords.
+[^\S\n\r]*                    # Ignore trailing whitespace.
+(?::(.*))?                    # Optional substitutions.
+$
+\n?                           # Eat up to one newline.
+/mx;
+
 #*** setupstring_parse_file($fullpath, $basedir, $lang)
 # Loads the database file from $fullpath and returns a reference to
 # a hash whose keys are the section headings and whose values are
 # their contents. $basedir and $lang are used for inclusions only.
 sub setupstring_parse_file($$$) {
-  my ($fullpath, $basedir, $lang) = @_;
+  my ($fullpath, $fname, $lang) = @_;
 
   my @filelines = do_read($fullpath) or return '';
 
@@ -311,7 +325,6 @@ sub setupstring_parse_file($$$) {
 
   # Regex for matching conditionals, which we shall embed into our own
   # regexes for parsing lines.
-  my $conditional_regex = conditional_regex();
   my %sections;
   my $key = '__preamble';
   my $use_this_section = 1;
@@ -319,7 +332,7 @@ sub setupstring_parse_file($$$) {
   foreach my $line (@filelines) {
 
     # Check for a new section.
-    if ($line =~ /$sectionregex(?:\s*$conditional_regex)?/o) {
+    if (substr($line, 0, 1) eq '[' && $line =~ /$sectionregex(?:\s*$conditional_regex)?/o) {
 
       # If we have a conditional clause, it had better be true.
       my $section_condition = $3;
@@ -334,6 +347,16 @@ sub setupstring_parse_file($$$) {
         $use_this_section = 0;
       }
     } elsif ($use_this_section) {
+
+      # Fill missing info in substitute rules
+
+      $line =~ s/$InclusionRegex/
+      '@' .
+      ($1 || $fname) . ':' .   # Filename.
+      ($2 || $key) .           # Keyword.
+      ($3 ? ":$3" : '');       # Substitutions.
+      /ge if (substr($line, 0, 1) eq '@') && $key ne '__preamble';
+
       push @{$sections{$key}}, $line;
     }
   }
@@ -347,20 +370,19 @@ sub setupstring_parse_file($$$) {
   return \%sections;
 }
 
+my $blankline_regex = qr/^\s*_?\s*$/;
+
 ### process_conditional_lines(@lines)
 # Returns the array resulting from processing conditional directives in the
 # array @lines of lines.
 sub process_conditional_lines {
 
-  my $conditional_regex = conditional_regex();
   my @output;
   use constant 'COND_NOT_YET_AFFIRMATIVE' => 0;
   use constant 'COND_AFFIRMATIVE' => 1;
   use constant 'COND_DUMMY_FRAME' => 2;
   my @conditional_stack = ([COND_AFFIRMATIVE, SCOPE_NEST]);
   my @conditional_offsets = (-1);
-  my $blankline_regex = qr/^\s*_?\s*$/;
-  my $conditional_regex = conditional_regex();
 
   foreach (@_) {
 
@@ -469,7 +491,7 @@ sub process_conditional_lines {
 sub do_inclusion_substitutions(\$$) {
   my ($text, $subs) = @_;
 
-  while ($subs =~ m{(?:s/(?<s>[^/]*)/(?<r>[^/]*)/(?<f>[gism]*))|(?:(?<n>\!?)(?<b>\d+)(-(?<e>\d+))?)}g) {
+  while ($subs =~ m{(?:s/(?<s>[^/]*)/(?<r>[^/]*)/(?<f>[gism]*))|(?:(?<n>\!?)(?<b>\d+)(-(?<e>\d+))?)}go) {
     if ($+{b}) {
       my $s = $+{b} - 1;
       my $l = $+{e} ? $+{e} - $s : 1;
@@ -496,7 +518,7 @@ sub get_loadtime_inclusion($$$$$$$) {
 
   # Adjust offices of apostles & martyrs in Paschaltide to use the special common.
   # Github #525: Safeguard against infinite loops: exclude Hymnus, Oratio, and Lectio which are partially copied from "extra Tempus Paschalis"
-  if ( $dayname[0] =~ /Pasc/i
+  if ( index($dayname[0], 'Pasc') >= 0
     && !$missa
     && $callerfname !~ /C[123]/
     && $section !~ /Hymnus|Oratio|Lectio|Secreta|Postcommunio|Versum/i)
@@ -517,37 +539,41 @@ sub get_loadtime_inclusion($$$$$$$) {
   return "$ftitle:$section is missing!";
 }
 
+my %_cache_latin_name;
+
 #*** setupstring($lang, $fname, %params)
 # Loads the database file from path "$basedir/$lang/$fname" through
 # the cache. Inclusions are performed according to the value of
 # $params{'resolve@'}. If omitted, the default is RESOLVE_ALL.
 sub setupstring($$%) {
-  my ($lang, $fname, %params) = @_;
+
+  my ($lang, $ofname, %params) = @_;
+  my $fname = $ofname;
   my $basedir = our $datafolder;
   my $calledlang = $lang;
   our $error;
 
-  if ($lang =~ /\.\.\/missa\/(.+)/) {    # For Monastic look-up of Evangelium, prevent __preamble from
-    $lang = $1;                          # horas file to contaminate missa structure which could lead
-    $basedir =~ s/horas/missa/g;         # to infinite cycles github #525
+  if ((my $i = index($lang, '../missa')) >= 0) {    # For Monastic look-up of Evangelium, prevent __preamble from
+    $lang = substr($lang, $i + 9);                  # horas file to contaminate missa structure which could lead
+    $basedir =~ s/horas/missa/g;                    # to infinite cycles github #525
   }
 
-  if ($fname =~ /Comment.txt$|C\d(?![3-9])[a-z]?/) {
-    $basedir =~ s/missa/horas/g;         # missa uses comments from horas dir
+  # modifies $fname if fallback to Roman folder from Monastic or OP is used in Latin
+  if (exists($_cache_latin_name{$ofname})) {
+    $fname = $_cache_latin_name{$ofname};
+  } else {
+    checklatinfile(\$fname);
+    $_cache_latin_name{$ofname} = $fname;
   }
 
-  checklatinfile(\$fname);    # modifies $fname if fallback to Roman folder from Monastic or OP is used in Latin
+  # missa uses comments and Commune files from horas dir
+  $basedir =~ s/missa/horas/g
+    if (index($basedir, 'missa') >= 0 && $fname =~ /Comment.txt$|C\d/)
+    || (!(-e "$basedir/$lang/$fname") && -e "$basedir/../horas/$lang/$fname");
 
   my $fullpath = "$basedir/$lang/$fname";
   our ($missa);
-  my $inclusionregex = qr/^\s*\@
-	([^\n:]+)?                    # Filename (self-reference if omitted).
-	(?::([^\n:]+?))?              # Optional keywords.
-	[^\S\n\r]*                    # Ignore trailing whitespace.
-	(?::(.*))?                    # Optional substitutions.
-	$
-	\n?                           # Eat up to one newline.
-	/mx;
+
   our $version;
 
   $setupstring_caches_by_version{$version} = {} unless (exists $setupstring_caches_by_version{$version});
@@ -560,7 +586,7 @@ sub setupstring($$%) {
     # Not yet in cache, so open it and add it.
     my ($base_sections, $new_sections) = ({}, {});
 
-    if ($lang eq $main::langfb) {
+    if ($lang eq $main::langfb && $lang ne 'Latin') {
 
       # fallback langauage layers on top of Latin.
       my $baselang = $calledlang =~ /\.\.\/missa/ ? '../missa/Latin' : 'Latin';
@@ -579,16 +605,16 @@ sub setupstring($$%) {
     }
 
     # Get the top layer.
-    $new_sections = setupstring_parse_file($fullpath, $basedir, $lang) if (-e $fullpath);
+    $new_sections = setupstring_parse_file($fullpath, $fname =~ s/\.txt$//r, $lang) if (-e $fullpath);
 
     if (%$new_sections) {
 
       # Fill in missing "pre-Urban hymn translations to avoid being overwritten by Latin
       # GABC: deactivated as pre-Urban Hymnody should not be overwritten by post-Urban at all
-      foreach my $seckey (keys(%{$new_sections})) {
-        if ($seckey =~ /Hymnus(.*?) (.*)/) {
-          unless ($lang =~ /gabc/i || exists(${$new_sections}{"Hymnus$1M $2"})) {
-            ${$new_sections}{"Hymnus$1M $2"} = ${$new_sections}{$seckey};
+      unless ($lang =~ /^Latin(?:-gabc)?$/) {
+        foreach my $seckey (keys(%{$new_sections})) {
+          if ($seckey =~ /^Hymnus (.*)/ && !exists(${$new_sections}{"HymnusM $1"})) {
+            ${$new_sections}{"HymnusM $1"} = ${$new_sections}{$seckey};
           }
         }
       }
@@ -630,9 +656,9 @@ sub setupstring($$%) {
 
   # Do whole-file inclusions.
   unless ($params{'resolve@'} == RESOLVE_NONE) {
-    while ($sections{'__preamble'} =~ /$inclusionregex/gc) {
+    while (index($sections{'__preamble'}, '@') >= 0 && $sections{'__preamble'} =~ /$InclusionRegex/gc) {
       my $incl_fname .= "$1.txt";
-      if ($fullpath =~ /$incl_fname/) { warn "Cyclic dependency in whole-file inclusion: $fullpath"; last; }
+      if (index($fullpath, $incl_fname) >= 0) { warn "Cyclic dependency in whole-file inclusion: $fullpath"; last; }
       my $incl_sections =
         setupstring($calledlang, $incl_fname, 'resolve@' => RESOLVE_WHOLEFILE)
         ;    # ensure daisy-chain (especially for Monastic)
@@ -646,19 +672,24 @@ sub setupstring($$%) {
     # Iterate over all sections, resolving inclusions. We make sure we
     # do [Rule] first, if it exists: we need to use the rule to work
     # out some subsequent substitutions.
-    foreach my $key ((exists $sections{'Rule'}) ? 'Rule' : (), sort(keys(%sections))) {
-      if ( ($key !~ /Commemoratio/ && ($key !~ /LectioE|Evangelium/i || $sections{$key} =~ /Commune/))
+    foreach my $key ((exists $sections{'Rule'}) ? 'Rule' : (), keys(%sections)) {
+      if (
+        (
+          index($key, 'Commemoratio') < 0
+          && (index($key, 'LectioE') < 0 && index($key, 'Evangelium') < 0 || index($sections{$key}, 'Commune') >= 0)
+        )
         || $missa
-        || $basedir =~ /missa/)
-      {
+        || index($basedir, 'missa') >= 0
+      ) {
         my $iiij = 0;
         my $iiiT = $sections{$key};
 
         while (
-          $sections{$key} =~ s/$inclusionregex/
+          index($sections{$key}, '@') >= 0
+          && $sections{$key} =~ s/$InclusionRegex/
 				get_loadtime_inclusion(\%sections, $basedir, $calledlang,
 				$1,             # Filename.
-				$2 ? $2 : $key, # Keyword.
+				$2 || $key,     # Keyword.
 				$3,             # Substitutions.
 				$fname)         # Caller's filename.
 				/ge
@@ -672,23 +703,14 @@ sub setupstring($$%) {
         }
       }
     }
-  } else {
-
-    # We're not resolving section inclusions, but we still need to parse
-    # them to fill in implicit file- and section names, so that
-    # daisy-chained references will work as expected.
-    my ($fbasename) = ($fname =~ /(.*)\.txt/);
-
-    foreach my $key (keys %sections) {
-      $sections{$key} =~ s/$inclusionregex/
-			'@' .
-			($1 ? $1 : $fbasename) . ':' .   # Filename.
-			($2 ? $2 : $key) .               # Keyword.
-			($3 ? ":$3" : '') .              # Substitutions.
-			"\n"
-			/ge;
-    }
   }
+
+  # Safeguard [Rank] to allow changing Rank and inherit Officium via section inclusions
+  if (exists($sections{'Officium'})) {
+    $sections{'Officium'} =~ s/\s+$//;
+    $sections{'Rank'} =~ s/^.*?;;/$sections{'Officium'};;/;
+  }
+
   return \%sections;
 }
 
@@ -765,7 +787,7 @@ sub checkfile {
   my $file = shift;
   our $datafolder;
 
-  my $redirect = $datafolder =~ /missa/i && $file =~ /C1[a-z]?/ ? '/../horas' : '';
+  my $redirect = index($datafolder, "missa") >= 0 && $file =~ /C1[a-z]?/ ? '/../horas' : '';
 
   if (-e "$datafolder$redirect/$lang/$file") {
     return "$datafolder$redirect/$lang/$file";
@@ -775,8 +797,27 @@ sub checkfile {
     return checkfile($temp, $file);
   } elsif (-e "$datafolder$redirect/$main::langfb/$file") {
     return "$datafolder$redirect/$main::langfb/$file";
-  } else {
+  } elsif ($redirect || $datafolder =~ /horas/i) {
     return "$datafolder$redirect/Latin/$file";
+  } else {
+
+    # While Commune files get auto-re-directed from missa to horas, for all other files we use
+    # a dynamic re-direction if and only if the corresponding missa file does not exist.
+    # By checking this re-direct last, a vernacular file in the corresponding horas folder is not taking
+    # precedence over a fallback language file in the missa directories.
+    $redirect = '/../horas';
+
+    if (-e "$datafolder$redirect/$lang/$file") {
+      return "$datafolder$redirect/$lang/$file";
+    } elsif ($lang =~ /-/) {
+      my $temp = $lang;
+      $temp =~ s/-[^-]+$//;
+      return checkfile($temp, $file);
+    } elsif (-e "$datafolder$redirect/$main::langfb/$file") {
+      return "$datafolder$redirect/$main::langfb/$file";
+    } else {
+      return "$datafolder$redirect/Latin/$file";
+    }
   }
 }
 
@@ -787,12 +828,14 @@ sub checklatinfile {
   our $datafolder;
   my $txt = $file =~ s/\.txt$// ? '.txt' : '';
 
-  my $redirect = $datafolder =~ /missa/i && $file =~ /C1[a-z]?/ ? '/../horas' : '';
+  my $redirect = index($datafolder, "missa") >= 0 && $file =~ /C1[a-z]?/ ? '/../horas' : '';
 
   # Hierarchy for Folder dependency:
+  # Roman Missa => Roman Horas
   # OCist => OSB (a.k.a. "M")
   # OSB & OP => Roman
   -e "$datafolder$redirect/Latin/$file.txt"
+    || -e "$datafolder/../horas/Latin/$file.txt"
     || $file =~ s/(Sancti|Tempora|Commune)(?:Cist)(.*)/$1M$2/
     && (-e "$datafolder$redirect/Latin/$file.txt")
     && ($$file_ref = "$file$txt")

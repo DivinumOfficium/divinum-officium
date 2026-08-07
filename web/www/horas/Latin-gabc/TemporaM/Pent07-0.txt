@@ -33,13 +33,5 @@
 [Lectio9]
 @Tempora/Pent07-0:Lectio7:s/Regnum .*//s
 
-[Lectio10]
-@Tempora/Pent07-0:Lectio7:s/.* Regnum /Regnum /s s/$/~/
-@Tempora/Pent07-0:Lectio8:s/Multi .*//s
-
-[Lectio11]
-@Tempora/Pent07-0:Lectio8:s/.* Multi /Multi /s s/$/~/
-@Tempora/Pent07-0:Lectio9:s/De nostro .*//s
-
 [Lectio12]
 @Tempora/Pent07-0:Lectio9:s/.* De nostro /De nostro /s

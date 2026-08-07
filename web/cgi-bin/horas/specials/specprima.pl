@@ -63,11 +63,12 @@ sub capitulum_prima {
 
   my $key =
     (    $dayofweek > 0
-      && $version !~ /196/
+      && $version !~ /196[03]/
       && $winner{Rank} =~ /Feria|Vigilia/i
       && $winner{Rank} !~ /Vigilia Epi/i
+      && !($winner{Rank} =~ /in.*Oct/i && $version =~ /Cist/i)
       && (!$commune || $commune !~ /C10/)
-      && ($rank < 3 || $dayname[0] =~ /Quad6/)
+      && ($rank < 3 || $dayname[0] =~ /Quad6/ || $winner =~ /Quadp3-3/)
       && $dayname[0] !~ /Pasc/i) ? 'Feria' : 'Dominica';
 
   my $capit = $brevis{$key} . "\n\$Deo gratias\n_\n";
@@ -141,51 +142,29 @@ sub martyrologium {
 
   our ($version, $year, $month, $day, $dayofweek);
 
-  my $t = '';    # Title and Comment is now set in specials.pl for #Martyrolgium
+  my $dir = 'Martyrologium';
+  $dir .= '1570' if $version =~ /1570/;
+  $dir .= '1960' if $version =~ /1960|Newcal/;
+  $dir .= '1955R' if $version =~ /1955/;
+  $dir = substr($dir, 0, 13) unless -e "$datafolder/$lang/$dir";
 
-  my $a = getweek($day, $month, $year, 1) . "-" . (($dayofweek + 1) % 7);
-  my %a = %{setupstring($lang, "Martyrologium/Mobile.txt")};
+  my $mobile = do {
+    my $a = getweek($day, $month, $year, 1) . "-" . (($dayofweek + 1) % 7);
+    $a = '10-DU' if ($version !~ /1570|1617|1888|1910/ && $month == 10 && $dayofweek == 6 && $day > 23 && $day < 31);
+    $a = 'Defuncti' if $winner{Rank} =~ /ex C9/i;
+    $a = 'DefunctiM' if ($month == 11 && $day == 14 && $version =~ /Monastic/);
+    my %a = %{setupstring($lang, "$dir/Mobile.txt")};
+    $a{$a};
+  };
 
-  if ($version =~ /1570/ && $lang =~ /Latin/i) {
-    %a = %{setupstring($lang, "Martyrologium1570/Mobile.txt")};
-  }
+  my ($m, $d) = split('-', nextday($month, $day, $year));
+  my $fname = "$datafolder/$lang/$dir/$m-$d.txt";
+  $fname = checkfile($lang, "Martyrologium/$m-$d.txt") unless -e $fname;
 
-  if ($version =~ /1960|Newcal/ && $lang =~ /Latin/i) {
-    %a = %{setupstring($lang, "Martyrologium1960/Mobile.txt")};
-  }
-
-  if ($version =~ /1955/ && $lang =~ /Latin/i) {
-    %a = %{setupstring($lang, "Martyrologium1955R/Mobile.txt")};
-  }
-  my $mobile = '';
-  my $hd = 0;
-  if (exists($a{$a})) { $mobile = "$a{$a}\n"; }
-  if ($month == 10 && $dayofweek == 6 && $day > 23 && $day < 31 && exists($a{'10-DU'})) { $mobile = $m{'10-DU'}; }
-  if ($a =~ /Pasc0\-1/i) { $hd = 1; }
-  if ($winner{Rank} =~ /ex C9/i && exists($a{'Defuncti'})) { $mobile = $a{'Defuncti'}; $hd = 1; }
-  if ($month == 11 && $day == 14 && $version =~ /Monastic/i) { $mobile = $a{'DefunctiM'}; $hd = 1; }
-
-  #if ($month == 12 && $day == 25 && exists($a{'Nativity'})) {$mobile = $a{'Nativity'}; $hd = 1;}
-  if ($hd == 1) { $t = "v. $mobile" . "_\n$t"; $mobile = ''; }
-  my $fname = nextday($month, $day, $year);
-  my ($m, $d) = split('-', $fname);
-  my $y = ($m == 1 && $d == 1) ? $year + 1 : $year;
-
-  if ($version =~ /1570/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1570/$fname.txt")) {
-    $fname = "$datafolder/Latin/Martyrologium1570/$fname.txt";
-  } elsif ($version =~ /1960|Newcal/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1960/$fname.txt")) {
-    $fname = checkfile($lang, "Martyrologium1960/$fname.txt");    # GABC: Allow for 'Latin-gabc'
-  } elsif ($version =~ /1955/ && $lang =~ /Latin/i && (-e "$datafolder/Latin/Martyrologium1955R/$fname.txt")) {
-    $fname = "$datafolder/Latin/Martyrologium1955R/$fname.txt";
-  } else {
-    $fname = checkfile($lang, "Martyrologium/$fname.txt");
-  }
+  my $output;
 
   if (my @a = do_read($fname)) {
-    my ($luna, $mo) =
-      ($year >= 1900 && $year < 2200)
-      ? gregor($m, $d, $y, $lang)
-      : luna($m, $d, $y, $lang);
+    my $luna = _luna($m, $d, $m == 1 && $d == 1 ? $year + 1 : $year, $lang);
 
     if ($lang =~ /Latin/i) {
       $a[0] .= " $luna";
@@ -193,7 +172,12 @@ sub martyrologium {
     FINDDATE:
       {
         foreach (@a) {
-          last FINDDATE if s/^U[p]+on.*?$mo[, ]*/$luna /i;
+          last FINDDATE if s/^Upon the \d+ ?.. day of \S+/$luna /i;                                          # English
+          last FINDDATE if s/^Dnia \d+-go \S+ (.)/${luna}r. \u$1/;                                           # Polski
+          last FINDDATE if s/^\d+\. (?:\(\d+.\) )?\S+/${luna}/;                                              # Bohemice
+          last FINDDATE if s/^(Le(?: même)? \d+ .*?\,)/$1 \l$luna, /i;                                       # French 1
+          last FINDDATE if s/^((?:Le \d+ des|La veille des|Aux) (?:ides|calendes|nones).*)/$1, \l$luna/i;    # French 2
+          last if /^\s*\_\s*/;
         }
 
         # Put $luna at the start if and only if we didn't find a
@@ -201,167 +185,146 @@ sub martyrologium {
         unshift(@a, $luna, "_\n");
       }
     }
-    my $prefix = "v. ";
 
-    # In Czech Martyrology, first two lines in each file are superfluous, therefore deleting.
-    my $line_c = 0;
+    $output = join("\n", map { length($_) > 4 && !/^\/:/ ? "r. $_" : $_ } @a) . "\n";
+    $output =~ s/^r/v/;
+    $output =~ s/\_/"r. $mobile"/e if $mobile;
+    $output =~ s/\_\n//g;
 
-    foreach my $line (@a) {
-      if (length($line) > 3 && $line !~ /^\/\:/ && $line !~ /\([\,\;\:]+[zZ]?\)/)
-      {    # allowing /:rubrics:/ in Martyrology
-        $t .= "$prefix$line\n" unless $lang =~ /Bohemice/i && $line_c < 3 && $line_c != 0;
-      } else {
-        $t .= "$line\n" unless $lang =~ /Bohemice/i && $line_c < 3;
-      }
-      $prefix = "r. ";
-      $line_c++;
-
-      if ($mobile && $line =~ /\_/) {
-        $t .= "$prefix$mobile";
-        $mobile = '';
-      }
-    }
+    $output = join("\n", @a) . "\n" if $lang eq 'Latin-gabc';
   }
-  $t .= prayer('Conclmart', $lang);
-  return $t;
+
+  $output . prayer('Conclmart', $lang);
 }
 
-sub luna {
+sub _luna_table {
 
-  my ($month, $day, $year, $lang) = @_;
-  my $epact2008 = 23;
-  my $edays = date_to_days(1, 0, 2008);
-  my $lunarmonth = 29.53059;
-  my @months = (
-    'January', 'February', 'March', 'April', 'May', 'June',
-    'July', 'August', 'September', 'October', 'November', 'December',
-  );
-  my @months_it = (
-    'Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno',
-    'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre',
-  );
-  my @months_cz = (
-    'ledna', 'února', 'března', 'dubna', 'května', 'června',
-    'července', 'srpna', 'září', 'října', 'listopadu', 'prosince',
-  );
-  my @ordinals = (
-    'prima', 'secúnda', 'tértia', 'quarta',
-    'quinta', 'sexta', 'séptima', 'octáva',
-    'nona', 'décima', 'undécima', 'duodécima',
-    'tértia décima', 'quarta décima', 'quinta décima', 'sexta décima',
-    'décima séptima', 'duodevicésima', 'undevicésima', 'vicésima',
-    'vicésima prima', 'vicésima secúnda', 'vicésima tértia', 'vicésima quarta',
-    'vicésima quinta', 'vicésima sexta', 'vicésima séptima', 'vicésima octáva',
-    'vicésima nona', 'tricésima',
-  );
-  my $sfx1 = (($day % 10) == 1) ? 'st' : (($day % 10) == 2) ? 'nd' : (($day % 10) == 3) ? 'rd' : 'th';
-  my $t = (date_to_days($day, $month - 1, $year) - $edays + $epact2008);
+  # return luna day for year day and letter as in tables printed in Martyrolgia
+  # a  b  c  d  e  f  g  h  i  k  l  m  n  p  q  r  s  t  u   A  B  C  D  E  R  F  G  H  M  N  P # R is F black
+  # 2, 3, 4, 5, 6, 7, 8, 9,10,11,12,13,14,15,16,17,18,19,20, 21,22,23,24,25,26,26,27,28,29,30, 1 # Die  1 ianuarii
+  # 3, 4, 5, 6, 7, 8, 9,10,11,12,13,14,15,16,17,18,19,20,21, 22,23,24,25,26,27,27,28,29,30, 1, 2 # Die  2 ianuarii
+  # ...
+  #12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,  1, 2, 3, 4, 5, 6, 6, 7, 8, 9,10,11 # Die 31 decembris
 
-  $mult = floor($t / $lunarmonth);
-  $dist = floor($t - $mult * $lunarmonth - .25);
-  if ($dist <= 0) { $dist = 30 + $dist; }
-  my $sfx2 = (($dist % 10) == 1) ? 'st' : (($dist % 10) == 2) ? 'nd' : (($dist % 10) == 3) ? 'rd' : 'th';
-  $day = $day + 0;
+  my ($yday, $letter) = @_;
 
-  if ($lang =~ /Latin/i) {
-    return ("Luna $ordinals[$dist-1]. Anno $year\n", ' ');
-  } elsif ($lang =~ /Italiano/i) {
-    return ("$day $months_it[$month - 1] $year, Luna $gday");
-  } elsif ($lang =~ /Česky/i) {
-    return ("Dne $day $months_cz[$month - 1] $year, $gday. dne stáří měsíce.");
+  my $all_martyrologium_letters = 'abcdefghiklmnpqrstuABCDERFGHMNP';
+  my $letter_position = index($all_martyrologium_letters, $letter) + 1;
+  my $m = $yday < 36 ? 30 : (($yday - 35) % 59 || 59) < 29 ? 29 : 30;
+  my $i = $yday % 59 < 36 ? $letter_position : $letter_position - 1;
+
+  if ($yday % 59 < 36) {
+    $i -= 1 if $letter_position > 25;
+    $i += 1 if ($letter_position == 25 && $yday % 59 == 35);
   } else {
-    return ("$months[$month - 1] $day$sfx1 $year. The $dist$sfx2 day of the Moon.", $months[$month - 1]);
+    $i -= 2 if $letter_position > 25;
   }
+
+  if ($yday > 58) {
+    $i -= 1 if ($letter_position > 25 && $yday % 59 < 5);
+    $i -= 1 if ($letter_position == 26 && $yday % 59 == 5);
+  }
+
+  ($i - 1 + ($yday % 59)) % $m + 1;
 }
 
-sub gregor {
+# finds luna day
+sub _luna_day {
+  my ($month, $day, $year) = @_;
 
-  my ($month, $day, $year, $lang) = @_;
-  my $golden = $year % 19;
-  my @epact = (29, 10, 21, 2, 13, 24, 5, 16, 27, 8, 19, 30, 11, 22, 3, 14, 25, 6, 17);
-  my @om = (30, 29, 30, 29, 30, 29, 30, 29, 30, 29, 30, 29, 30, 100);
-  my @firstmonth = (2, 21, 10, 29, 18, 7, 26, 15, 4, 23, 12, 1, 20, 9, 28, 17, 6, 25, 14);
-  my $leapday;    # only set in the last days of February in a leap year
+  # Lit. Mart. for Aur. num.
+  my $letters4aurea = '';
 
-  if ($golden == 18) {
-    $om[12] = 29;
+  if ($year < 1582) {
+    main::error('Unreachable');
+  } elsif ($year < 1700) {
+    $letters4aurea = 'amDdqGgtNkBbnEerHhu';
+  } elsif ($year < 1900) {
+    $letters4aurea = 'PlCcpFfsMiAamDdqGgt';
+  } elsif ($year < 2200) {
+    $letters4aurea = 'NkBbnEerHhuPlCcpRfs';
+  }    # R is F black
+  elsif ($year < 2300) {
+    $letters4aurea = 'MiAamDdqGgtNkBbnEer';
   } else {
-    $om[12] = 30;
-  }
-  if (leapyear($year) && ($month > 2)) { $om[1] = 30; }    # || ($month == 2 && $day > 24)
-  if ($golden == 0) { unshift(@om, 30); }
-  if ($golden == 8 || $golden == 11) { unshift(@om, 30); }
-
-  if (leapyear($year) && $month == 2 && $day >= 24) {
-    $leapday = ($day + 1) % 30;                            #  24->25, 25->26, "29"->0
-    if ($day == 29) { $day = 24; }
+    main::error('Unreachable');
   }
 
-  my $t = date_to_days($day, $month - 1, $year);
-  my @d = days_to_date($t);
-  my $yday = $d[7];
-  my $num = -$epact[$golden] - 1;
-  my $i = 0;
+  my $aur_num = $year % 19 + 1;
+  my $letter_for_aurea = substr($letters4aurea, $aur_num - 1, 1);
+  my $yday = DivinumOfficium::Date::date_to_ydays($day, $month, $year);
+  $yday -= 1 if (leapyear($year) && ($month > 2 || $month == 2 && $day > 23));
 
-  while ($num < $yday) {
-    $num += $om[$i];
-    $i++;
-  }
-  my $gday;
-  $num -= $om[$i - 1];
-  $gday = $yday - $num;
-  my @ordinals = (
-    'prima', 'secúnda', 'tértia', 'quarta',
-    'quinta', 'sexta', 'séptima', 'octáva',
-    'nona', 'décima', 'undécima', 'duodécima',
-    'tértia décima', 'quarta décima', 'quinta décima', 'sexta décima',
-    'décima séptima', 'duodevicésima', 'undevicésima', 'vicésima',
-    'vicésima prima', 'vicésima secúnda', 'vicésima tértia', 'vicésima quarta',
-    'vicésima quinta', 'vicésima sexta', 'vicésima séptima', 'vicésima octáva',
-    'vicésima nona', 'tricésima',
-  );
-  my @months = (
-    'January', 'February', 'March', 'April', 'May', 'June',
-    'July', 'August', 'September', 'October', 'November', 'December',
-  );
-  my @months_it = (
-    'Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno',
-    'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre',
-  );
-  my @months_cz = (
-    'ledna', 'února', 'března', 'dubna', 'května', 'června',
-    'července', 'srpna', 'září', 'října', 'listopadu', 'prosince',
-  );
-  $day = $leapday || $day;    # recover English date in Leap Years
-  my $sfx1 =
-      ($day > 3 && $day < 21) ? 'th'
-    : (($day % 10) == 1) ? 'st'
-    : (($day % 10) == 2) ? 'nd'
-    : (($day % 10) == 3) ? 'rd'
+  my $luna = _luna_table($yday, $letter_for_aurea);
+  $luna -= 1
+    if ( $aur_num == 1
+      && $month == 1
+      && $letter_for_aurea ne 'P'
+      && $day + _luna_table(1, $letter_for_aurea) < 32);
+
+  $luna;
+}
+
+sub _number_suffix {
+  my ($n) = @_;
+      ($n > 3 && $n < 21) ? 'th'
+    : (($n % 10) == 1) ? 'st'
+    : (($n % 10) == 2) ? 'nd'
+    : (($n % 10) == 3) ? 'rd'
     : 'th';
-  my $sfx2 =
-      ($gday > 3 && $gday < 21) ? 'th'
-    : (($gday % 10) == 1) ? 'st'
-    : (($gday % 10) == 2) ? 'nd'
-    : (($gday % 10) == 3) ? 'rd'
-    : 'th';
-  $day = $day + 0;
+}
+
+sub _luna {
+  my ($month, $day, $year, $lang) = @_;
+
+  my $lday = _luna_day($month, $day, $year);
+  $day += 0;
 
   if ($lang =~ /Latin/i) {
-    return ("Luna $ordinals[$gday-1] Anno Dómini $year\n", ' ');
-  } elsif ($lang =~ /Polski/i) {
-    return ("Roku Pańskiego $year");
-  } elsif ($lang =~ /Francais/i) {
-    return ("L'année du Seigneur $year, le $gday$sfx2 jour de la Lune");
-  } elsif ($lang =~ /Italiano/i) {
-    return ("Anno del Signore $year, $day $months_it[$month - 1], Luna $gday");
-  } elsif ($lang =~ /Bohemice/i) {
-    return ("Léta Páně $year, $day. $months_cz[$month - 1], $gday. dne věku měsíce.");
-  } else {
-    return ("$months[$month - 1] $day$sfx1 $year, the $gday$sfx2 day of the Moon,", $months[$month - 1]);
-  }
+    my @ordinals = (
+      'prima', 'secúnda', 'tértia', 'quarta',
+      'quinta', 'sexta', 'séptima', 'octáva',
+      'nona', 'décima', 'undécima', 'duodécima',
+      'tértia décima', 'quarta décima', 'quinta décima', 'sexta décima',
+      'décima séptima', 'duodevicésima', 'undevicésima', 'vicésima',
+      'vicésima prima', 'vicésima secúnda', 'vicésima tértia', 'vicésima quarta',
+      'vicésima quinta', 'vicésima sexta', 'vicésima séptima', 'vicésima octáva',
+      'vicésima nona', 'tricésima',
+    );
 
-  #return sprintf("%02i", $gday);
+    "Luna $ordinals[$lday-1]. Anno Dómini $year\n";
+  } elsif ($lang =~ /Polski/) {
+    my @months_pl = (
+      'stycznia', 'lutego', 'marca', 'kwietnia', 'maja', 'czerwca',
+      'lipca', 'sierpnia', 'września', 'października', 'listopada', 'grudnia',
+    );
+
+    "Roku Pańskiego $year, ${day}-go $months_pl[$month - 1], ${lday}-go dnia księżyca.\n_\n";
+  } elsif ($lang =~ /Francais/) {
+    "Le $lday" . "e jour de la Lune, l’année du Seigneur $year";
+  } elsif ($lang =~ /Italiano/) {
+    my @months_it = (
+      'Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno',
+      'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre',
+    );
+
+    "Anno del Signore $year, $day $months_it[$month - 1], Luna $lday";
+  } elsif ($lang =~ /Bohemice/) {
+    my @months_cz = (
+      'ledna', 'února', 'března', 'dubna', 'května', 'června',
+      'července', 'srpna', 'září', 'října', 'listopadu', 'prosince',
+    );
+
+    "Léta Páně $year, $day. $months_cz[$month - 1], $lday. dne věku měsíce.";
+  } else {
+    my @months = (
+      'January', 'February', 'March', 'April', 'May', 'June',
+      'July', 'August', 'September', 'October', 'November', 'December',
+    );
+
+    sprintf("$months[$month - 1] $day%s $year, the $lday%s day of the Moon,",
+      _number_suffix($day), _number_suffix($lday),);
+  }
 }
 
 1;

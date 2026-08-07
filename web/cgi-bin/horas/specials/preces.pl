@@ -40,8 +40,9 @@ sub preces {
 
     if ($commemoratio) {
       my @r = split(';;', $commemoratio{Rank});
+      my $ranklimit = $version =~ /^Trident/ ? 7 : 3;
 
-      if ($r[2] >= 3 || $commemoratio{Rank} =~ /Octav/i || checkcommemoratio(\%commemoratio) =~ /octav/i) {
+      if ($r[2] >= $ranklimit || $commemoratio{Rank} =~ /Octav/i || checkcommemoratio(\%commemoratio) =~ /octav/i) {
         $dominicales = 0;
       } elsif (@commemoentries) {
         foreach my $commemo (@commemoentries) {
@@ -50,7 +51,7 @@ sub preces {
           my %c = %{officestring('Latin', $commemo, 0)};
           my @cr = split(";;", $c{Rank});
 
-          if ($cr[2] >= 3 || $c{Rank} =~ /Octav/i || checkcommemoratio(\%c) =~ /octav/i) {
+          if ($cr[2] >= $ranklimit || $c{Rank} =~ /Octav/i || checkcommemoratio(\%c) =~ /octav/i) {
             $dominicales = 0;
           }
         }

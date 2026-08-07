@@ -2,23 +2,23 @@
 V. Spravedliví žijí navěky, alleluja.
 R. A u Pána je jejich odměna, alleluja.
 
-[Invit]
+[Invit 3L]
 Alleluja, alleluja, * Alleluja.
 
 [Ant Matutinum]
-Alleluja, * alleluja, Alleluja.;;1
+Alleluja, * alleluja, alleluja, alleluja, alleluja, alleluja, alleluja, alleluja, alleluja.;;1
 ;;2
 ;;4
 ;;5
 ;;8
 ;;10
-Alleluja, * alleluja, Alleluja.;;14
+Alleluja, * alleluja, alleluja, alleluja, alleluja, alleluja, alleluja, alleluja.;;14
 ;;20
 ;;23
 ;;63
 ;;64
 ;;91
-Alleluja, * alleluja, Alleluja.;;256;257;258
+Alleluja, * alleluja, alleluja, alleluja, alleluja, alleluja, alleluja.;;256;257;258
 
 [Lectio6]
 @Commune/C2p:Lectio5 in 2 loco:s/Neporazitelnou .*//
@@ -36,10 +36,11 @@ R. A nedotknou se jich útrapy smrti, alleluja, alleluja.
 [Lectio8]
 @Commune/C2p:Lectio6 in 2 loco:s/.*Drahocenná je tato/Drahocenná je tato/
 
-[Responsory8]
-@CommuneM/C1p:Responsory9
+[Lectio10]
+@Commune/C2p:Lectio8:s/Avšak .*//s
 
 [Lectio11]
+@Commune/C2p:Lectio8:s/.* (?=Avšak )//s s/$/~/
 @Commune/C2p:Lectio9:s/Kristus je.*//s
 
 [Lectio12]

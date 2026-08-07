@@ -330,7 +330,7 @@ Abyśmy w końcu jednak mogli
 Podobać się Tobie tutaj i na zawsze.
 _
 Spraw, błogosławiona Trójco,
-dozwól, istotna Jedności:
+Dozwól, istotna Jedności:
 By obowiązek postu
 Był sługom twoim owocny.
 Amen.
@@ -377,6 +377,53 @@ Równa Ojcu i Synowi,
 Takaż cześć Pocieszycielowi:
 Jednego i Troistego imię
 Niechaj wysławia wszechświat.
+Amen.
+
+[HymnusM Pasch]
+v. Królu z wieków królujący,
+Stwórco świata wszechmogący,
+Któryś jeszcze z przedwieczności,
+Syn z Ojcem był w swej jedności.
+_
+Tyś z początku świata tego
+Adama stworzył pierwszego,
+Któregoś duchem ozdobnym
+Obdarzył, sobie podobnym.
+_
+Tego szatan zwiódł nędznego
+Zdrajca narodu ludzkiego,
+Aleś postać jego przyjął,
+Abyś mu go z mocy wyjął.
+_
+A wykupiłeś człowieka
+Jakoś był przejrzał od wieka,
+Ciałem się z nami zjednoczyć,
+A do Boga nas przyłączyć.
+_
+Ciebie z Panny narodzony
+Lęka się świat na wsze strony,
+Przez Cię i my wierzym stale,
+Że wstaniem ku wiecznej chwale.
+_
+Tyś nas przez chrzest z grzechów omył,
+Czartowską władzą uskromił,
+A wyzwoliwszy z więzienia,
+Uspokoiłeś sumienia.
+_
+Tyś raczył wytrwać krzyż srogi,
+By nie zginął człek ubogi;
+Odkupiłeś zdrowie jego
+Wylawszy swą krew dla niego.
+_
+Prosim Cię, Panie wszechmocny,
+W ten czas święty wielkanocny,
+Racz nas uchronić każdego
+Przypadku niebezpiecznego.
+_
+Chwała Tobie, Chryste Panie
+Za Twe święte zmartwychwstanie,
+Co z Ojcem i Duchem społecznie
+Teraz i zawsze i wiecznie.
 Amen.
 
 [Hymnus Pasch]
@@ -547,6 +594,16 @@ $Deo gratias
 _
 V. Wyrwij mię, Panie, od człowieka złego
 R. Od męża złośliwego wyrwij mię.
+
+[MM Capitulum Quad] (rubrica cisterciensis)
+@Tempora/Quad1-0:Capitulum Laudes
+_
+@Psalterium/Special/Minor Special:Responsory Quad TertiaM_
+
+[MM Capitulum Quad5] (rubrica cisterciensis)
+@Tempora/Quad6-0:Capitulum Sexta:s/(v\. .*?\.) .*/$1/ s/-9//
+_
+@Psalterium/Special/Minor Special:Responsory Quad5 SextaC_
 
 [MM Capitulum Pasch]
 !Rz 6:4

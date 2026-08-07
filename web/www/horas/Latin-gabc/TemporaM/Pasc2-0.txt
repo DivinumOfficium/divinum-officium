@@ -14,9 +14,5 @@
 [Lectio9]
 @Tempora/Pasc2-0:Lectio7:s/Bonus pastor pro.*//s
 
-[Lectio10]
-@Tempora/Pasc2-0:Lectio7:s/.* Bonus /Bonus /s s/$/~/
-@Tempora/Pasc2-0:Lectio8:s/Primum .*//s
-
 [Lectio11]
 @Tempora/Pasc2-0:Lectio8:s/.* Primum /Primum /s

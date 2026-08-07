@@ -1,0 +1,160 @@
+@TemporaM/Pasc0-0
+
+[Rule]
+Psalmi Dominica
+Antiphonas horas
+12 lectiones
+
+[Invit]
+Allelúia, allelúia, allelúia, * Allelúia, allelúia, allelúia.
+
+[Ant Matutinum]
+@:AntC Matutinum:s/$/;;1/
+;;2
+;;8
+;;15
+;;23
+;;27
+@Psalterium/Special/Minor Special:Responsory Pasch TertiaM
+@:AntC Matutinum:s/$/;;29/
+;;63
+;;65
+;;75
+;;87
+;;107
+@Psalterium/Special/Minor Special:Responsory Pasch SextaM
+@Psalterium/Psalmi/Psalmi minor:Pasch:5:s/$/;;243;244;245/
+@Psalterium/Special/Minor Special:Responsory Pasch NonaM
+
+[AntC Matutinum]
+Allelúia, * allelúia, allelúia, allelúia, allelúia, allelúia, allelúia, allelúia.
+
+[Lectio1]
+@Tempora/Nat03::1-6 s/1-5/2-4/ s/1.*Absit. /2 /s
+
+[Lectio2]
+@Tempora/Nat03::1 s/6-11/5-7/
+@Tempora/Nat03:Lectio1:7
+@Tempora/Nat03::2-3
+
+[Lectio3]
+@Tempora/Nat03:Lectio2:s/6-11/8-10/ s/6 .*8/8/s s/.11 .*//s
+
+[Lectio4]
+@Tempora/Nat03:Lectio2:s/6-11/11-13/ s/6 .*11/11/s
+@Tempora/Nat03:Lectio3:2-3
+
+[Responsory1]
+R. Angelus Dómini descéndit de cœlo, et accédens revólvit lápidem, et super eum sedit, et dixit muliéribus: Nolíte timére: scio enim quia crucifíxum quǽritis:
+* Jam surréxit: veníte, et vidéte locum, ubi pósitus erat Dóminus, allelúja.
+V. Angelus Dómini locútus est muliéribus, dicens: Quem quǽritis? an Jesum quǽritis?
+R. Jam surréxit: veníte, et vidéte locum, ubi pósitus erat Dóminus, allelúja.
+
+[Responsory2]
+@Tempora/Pasc1-0:Responsory2:1-2
+V. Ecce præcédet vos in Galilǽam, ibi eum vidébitis, sicut dixit vobis:
+@Tempora/Pasc1-0:Responsory2:4
+
+[Responsory3]
+@Tempora/Pasc0-0:Responsory2:s/s(.)bbat/S$1bbat/g
+
+[Responsory4]
+@SanctiCist/07-22C:Responsory1
+
+[Lectio5]
+@TemporaM/Pasc0-0
+
+[Lectio6]
+@TemporaM/Pasc0-0
+
+[Lectio7]
+@TemporaM/Pasc0-0::s/offerámus.* vero/offerámus,/
+
+[Lectio8]
+@TemporaM/Pasc0-0::s/Nihil .*//
+
+[Responsory5]
+R. Surgens Jesus Dóminus noster, stans in médio discipulórum suórum, dixit: Pax vobis, allelúja:
+* Gavísi sunt discípuli viso Dómino, allelúja.
+@TemporaCist/Pasc1-3:Ant 2:s/^/V. / s/. allel.*/./ s/\* //
+R. Gavísi sunt discípuli viso Dómino, allelúja.
+
+[Responsory6]
+@Tempora/Pasc0-5:Responsory2:1-2
+V. Christus resúrgens ex mórtuis, jam non móritur, mors illi ultra non dominábitur:
+@Tempora/Pasc0-5:Responsory2:4
+
+[Responsory7]
+@Tempora/Pasc0-2:Responsory1:s/resurr/Resurr/g
+
+[Responsory8]
+@SanctiCist/07-22C:Responsory9
+
+[Lectio9]
+@Tempora/Pasc0-0:Lectio1:s/ Et nos .*//s
+
+[Lectio10]
+@Tempora/Pasc0-0:Lectio1:s/.*Et nos /Et nos /s
+
+[Lectio11]
+@Tempora/Pasc0-0:Lectio2:s/Qui stola .*//s
+
+[Lectio12]
+@Tempora/Pasc0-0:Lectio2:s/.* (?=Qui stola )//s
+
+[Responsory9]
+R. Si consurrexístis cum Christo, quæ sursum sunt quǽrite, ubi Christus est in déxtera Dei sedens:
+* Quæ sursum sunt sápite, non quæ super terram, allelúia.
+V. Mórtui enim estis, et vita vestra est abscóndita cum Christo.
+R. Quæ sursum sunt sápite, non quæ super terram, allelúia.
+
+[Responsory10]
+@Tempora/Pasc0-3:Responsory1:1-2:s/leo/Leo/g
+@TemporaOP/Pasc0-3:Responsory1:2
+@Tempora/Pasc0-3:Responsory1:4
+
+[Responsory11]
+@TemporaOP/Pasc0-2:Responsory1
+
+[Responsory12]
+@SanctiCist/07-22C:Responsory12
+
+[Ant Laudes]
+@Psalterium/Psalmi/Psalmi minor:Pasch
+
+[Capitulum Laudes]
+!1 Cor 5:7
+v. Fratres: Expurgáte vetus ferméntum, ut sitis nova conspérsio, sicut estis ázymi. Etenim Pascha nostrum immolátus est Christus.
+$Deo gratias
+
+[Versum 2]
+V. Hæc dies, quam fecit Dominus.
+R. Exsultémus et lætémur in ea.
+
+[Responsory TertiaM]
+@:Versum 2
+
+[Capitulum Sexta]
+!1 Cor 5:8
+v. Itaque epulémur: non in ferménto véteri, neque in ferménto malítiæ et nequítiæ: sed in ázymis sinceritátis et veritátis.
+$Deo gratias
+
+[Responsory SextaM]
+@:Versum 2
+
+[Capitulum Nona]
+@Psalterium/Special/Prima Special:Pasch
+$Deo gratias
+
+[Responsory NonaM]
+@:Versum 2
+
+[Ant Vespera]
+Allelúia, * allelúia, allelúia, allelúia, allelúia, allelúia, allelúia, allelúia, allelúia, allelúia.
+
+[Versum 3]
+@:Versum 2
+
+[Ant 3]
+Christus * resúrgens ex mórtuis, jam non móritur, mors illi ultra non dominábitur, quod enim vivit, vivit Deo, allelúia, allelúia.
+

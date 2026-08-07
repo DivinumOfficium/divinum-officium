@@ -6,4 +6,4 @@ services:
   web:
     image: ghcr.io/divinumofficium/divinum-officium:master
     ports:
-      - 80:80
+      - "80:8080" # Changed from 80:80

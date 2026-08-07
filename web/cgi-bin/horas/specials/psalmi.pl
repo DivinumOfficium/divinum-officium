@@ -119,7 +119,7 @@ sub psalmi_minor {
     }
     $ant = chompd($psalmi[$i]);
     $psalms = chompd($psalmi[$i + 1]);
-    if (($version =~ /1960/ && $psalms =~ /117/ && $laudes == 2) || $rule =~ /Prima=53/i) { $psalms =~ s/117/53/; }
+    if (($version =~ /196/ && $psalms =~ /117/ && $laudes == 2) || $rule =~ /Prima=53/i) { $psalms =~ s/117/53/; }
   }
   setbuild('Psalterium/Psalmi/Psalmi minor', "$hora Day$dayofweek", 'Psalmi ord');
   my $comment = 0;
@@ -140,7 +140,7 @@ sub psalmi_minor {
     }
 
     my %w = columnsel($lang) ? %winner : %winner2;
-    $ant = $w{"Ant Completorium$vespera"} || $ant;
+    $ant = $w{"Ant Completorium$vespera"} || $w{'Ant Completorium'} || $ant;
   }
 
   if ($winner =~ /tempora/i || $dayname[0] =~ /pasc/i) {
@@ -230,18 +230,26 @@ sub psalmi_minor {
     }
 
     if ( ($rule =~ /Psalmi\s*(?:minores)*\s*Dominica/i || $communerule =~ /Psalmi\s*(?:minores)*\s*Dominica/i)
-      && $version !~ /Trident/i
       && $rule !~ /Psalmi\s*(?:minores)*\s*ex Psalterio/i
       && !($version =~ /1955|196/ && $rank < 6 && $dayofweek > 0))
     {
-      $feastflag = 1;
+      $feastflag = $version !~ /Trident|Monastic/i ? 1 : 2;
     }
     if ($version =~ /1955|1960/ && $rank < 6) { $feastflag = 0; }
     if ($winner{Rank} =~ /Dominica/i && $dayname[0] !~ /Nat|Pasc6/i) { $feastflag = 0; }
 
-    if ($feastflag) {
+    if ($feastflag == 1) {
       $prefix = translate("Psalmi Dominica, antiphonae", $lang) . ' ';
       setbuild2('Psalmi dominica');
+    } elsif ($feastflag == 2) {
+
+      $prefix = translate("Antiphona", $lang) . ' ';
+
+      if ($version =~ /Monastic/i || $hora !~ /Prima/) {
+        setbuild2('Psalmi ex Psalterio');
+      } else {
+        setbuild2('Tantum tres Psalmi');
+      }
     }
   } else {
     $ant = '' if $version =~ /^Monastic/;
@@ -286,7 +294,7 @@ sub psalmi_minor {
     }
 
     # prima psalm set for laudes 2 sunday
-    if ($hora eq 'Prima' && $laudes == 2 && $dayname[1] =~ /Dominica/i && $version !~ /1960/) {
+    if ($hora eq 'Prima' && $laudes == 2 && $dayname[1] =~ /Dominica/i && $version !~ /196/) {
       $psalm[0] = 99;
       unshift(@psalm, 92);
       setbuild2("First psalms #99 and  #92");
@@ -299,9 +307,11 @@ sub psalmi_minor {
     && $hora eq 'Prima'
     && ($dayname[0] =~ /(Epi|Pent)/i || $version !~ /Divino/i)
     && $dayofweek == 0
-    && ( $dayname[0] =~ /(Adv|Pent01)/i
+    && $rule !~ /Non dicitur Quicumque/i
+    && ( $dayname[0] =~ /(Adv|Pent01|Pasc1)/i
       || checksuffragium()
-      || ($dayname[0] =~ /Adv|Epi|Quad|Pasc|Pent/i && $version =~ /cist/i))
+      || ($dayname[0] =~ /Epi[2-6]|Quad|Pasc[1-5]|Pent0[3-9]|Pent[12]/i && $version =~ /trident/i)
+      || ($dayname[0] =~ /Adv|Epi[2-6]|Quad|Pasc[1-5]|Pent/i && $version =~ /cist/i))
     && ($winner =~ /Tempora/i || $version !~ /cist/i)
   ) {
     push(@psalm, 234);
@@ -442,6 +452,7 @@ sub psalmi_major {
 
   if ($antecapitulum) {
     $w = columnsel($lang) ? $antecapitulum : $antecapitulum2;
+    $c = 3;
     setbuild2('Antiphonas ante Capitulum de praecedenti');
   } elsif ($w) {
     setbuild2("Antiphonas $winner");
@@ -471,7 +482,7 @@ sub psalmi_major {
   if (
     (
          $rule =~ /Psalmi Dominica/i
-      || ($version =~ /cist/i && $rank >= 2.2)
+      || ($version =~ /cist/i && (($winner =~ /Sancti/i && $rank >= 2.2) || $antecapitulum))
       || ($commune{Rule} && $commune{Rule} =~ /Psalmi Dominica/i)
     )
     && ($antiphones[0] !~ /\;\;\s*[0-9]+/)
@@ -604,6 +615,7 @@ sub psalmi_major {
   if ( alleluia_required($dayname[0], $votive)
     && $lang !~ /gabc/i
     && (!exists($winner{"Ant $hora"}) || $commune =~ /C10/)
+    && !$antecapitulum
     && $communetype !~ /ex/i
     && ($version !~ /Trident/ || $hora eq 'Vespera')
     && ($version !~ /Monastic/ || $hora ne 'Laudes' || $winner{Rank} !~ /Dominica/i))

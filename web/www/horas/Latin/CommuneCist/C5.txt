@@ -25,6 +25,9 @@ Beátus vir, * qui métuit Dóminum, allelúia, in mandátis ejus cupit nimis, a
 [Invit] (tempore paschali)
 @CommuneCist/C2p
 
+[Invit 3L] (tempore paschali)
+@CommuneCist/C2p
+
 [Ant Matutinum]
 @CommuneCist/C4
 
@@ -76,7 +79,9 @@ R. Sicut cedrus Líbani multiplicábitur.
 @:Lectio7 in 2 loco
 
 [Responsory7]
-@CommuneM/C5:Responsory8
+@CommuneM/C5:Responsory8:1-2
+@CommuneM/C5:Responsory4:4:s/R\./V./
+@CommuneM/C5:Responsory8:4
 
 [Lectio8]
 @:Lectio8 in 2 loco
@@ -182,7 +187,7 @@ For Office of 3 Lessons (Simplex)
 @:Responsory12
 
 [Lectio1 in 2 loco]
-@Commune/C5:Lectio1
+@Commune/C5:Lectio1:s/eccl/Eccl/
 
 [Lectio2 in 2 loco]
 @Commune/C5:Lectio2:s/ 32:28; 33:1-3// s/28 .*//s

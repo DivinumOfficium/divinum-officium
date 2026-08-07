@@ -37,6 +37,9 @@ In patiéntia vestra * possidébitis ánimas vestras.;;253;254;255
 [Nocturn 1 Versum]
 @Commune/C1:Versum 1
 
+[Nocturn 2 Versum]
+@Commune/C1::s/prínc/Prínc/g
+
 [Nocturn 3 Versum]
 @Commune/C1:Versum 2
 
@@ -90,6 +93,11 @@ R. In omnem terram exívit sonus eórum:
 * Et in fines orbis terræ verba eórum.
 V. Non sunt loquélæ neque sermónes, quorum non audiántur voces eórum.
 R. Et in fines orbis terræ verba eórum.
+
+[Responsory10]
+@Commune/C1:Responsory8:1-2
+@Commune/C3:Ant Vespera 3:2:s/^/V. / s/\* // s/;;.*//
+@Commune/C1:Responsory8:4
 
 [Responsory11]
 R. Vos estis, qui permansístis mecum in tentatiónibus meis, dicit Dóminus, et ego dispóno vobis regnum:

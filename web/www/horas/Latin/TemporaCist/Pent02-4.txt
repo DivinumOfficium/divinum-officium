@@ -1,0 +1,49 @@
+@Tempora/Pent02-4
+
+[Rule]
+ex TemporaCist/Pent01-4
+12 lectiones
+Doxology=Corp
+Psalmi Dominica
+Feria Te Deum
+Antiphonas Horas
+
+[Lectio1]
+@TemporaCist/Pent01-4
+
+[Lectio2]
+@TemporaCist/Pent01-4
+
+[Lectio3]
+@TemporaCist/Pent01-4
+
+[Lectio4]
+@TemporaCist/Pent01-4
+
+[Lectio5]
+@Tempora/Pent02-4:Lectio4
+
+[Lectio6]
+@Tempora/Pent02-4:Lectio5: s/Nam in.*//
+
+[Lectio7]
+@Tempora/Pent02-4:Lectio5: s/.*(Nam in)/$1/
+
+[Lectio8]
+@Tempora/Pent02-4:Lectio6:s/.*(Erant et)/$1/
+
+[Lectio9]
+@Tempora/Pent02-4:Lectio7: s/Símili .*//
+
+[Lectio10]
+@Tempora/Pent02-4:Lectio7: s/.*(Símili)/$1/s
+
+[Lectio11]
+@Tempora/Pent02-4:Lectio8:s/Quando .*//
+
+[Lectio12]
+@Tempora/Pent02-4:Lectio8:s/.*(Quando)/$1/ s/$/~/
+@Tempora/Pent02-4:Lectio9:s/Sedat .*//
+
+[Evangelium]
+@Tempora/Pent01-4

@@ -65,7 +65,7 @@ sub gethymn {
 }
 
 sub hymnusmajor {
-  our ($hora, $version, $vespera, @dayname, %winner, $day, $month, $year);
+  our ($hora, $version, $vespera, @dayname, %winner, $day, $month, $year, $dioecesis);
   my $lang = shift;
   my $hymn = '';
   my $name = 'Hymnus';
@@ -77,10 +77,17 @@ sub hymnusmajor {
         || exists($winner{'Hymnus Vespera'}))
     );
 
-  if (hymnshift($version, $day, $month, $year)) {
+  if (hymnshift($version, $day, $month, $year, $dioecesis)) {
     $name .= ' Matutinum' if $hora eq 'Laudes';
     $name .= ' Laudes' if $hora eq 'Vespera';
     setbuild2("Hymnus shifted");
+  } elsif (hymnshiftmerge($version, $day, $month, $year, $dioecesis) && $hora eq 'Laudes') {
+    ($hymn, $cr) = getproprium("$name Laudes", $lang, 1);
+    my ($h1, $c1) = getproprium("$name Matutinum", $lang, 1);
+    $hymn =~ s/^(v. )//;
+    $h1 =~ s/\_(?!.*\_).*/\_\n$hymn/s;    # find the Doxology as last verse since e.g. Venantius(05-18) has a proper one
+    $hymn = $h1;
+    setbuild2("Hymnus merged");
   } else {
     $name .= " $hora";
   }
@@ -101,6 +108,7 @@ sub hymnusmajor {
     $name .= ' hiemalis'
       if (
            $name =~ /Day0/i
+        && $version !~ /praedicatorum/i
         && ($name =~ /Laudes/i || $version =~ /cist/i || $lang =~ /gabc/i)
         && ( $dayname[0] =~ /Epi[2-6]/
           || $dayname[0] =~ /Epi1/i && $version =~ /cist/i

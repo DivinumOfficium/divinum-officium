@@ -1,14 +1,20 @@
 [Officium]
 Sabbato Quattuor Temporum Pentecostes
 
-[Rule]
-no Gloria
-(rubrica 1960) celebranda aut forma longior aut forma brevior
-(rubrica 1960 et missa brevior) LectioL1
-LectioL5
-Sequentia
-Credo
-Prefatio=Spiritu
+[Graduale](missa brevior)
+Alleluia. 
+V. (Kneel.) Come, O Holy Spirit, fill the hearts of Your faithful; and kindle in them the fire of Your love.
+
+[GradualeL1](missa brevior)
+Alleluia.
+!John 6:64
+It is the Spirit that gives life; but the flesh profits nothing.
+_
+#Gloria
+v. Glory be to God on high, and on earth peace to men of good will. We praise Thee. We bless Thee. We adore Thee. We glorify Thee. We give Thee thanks for Thy great glory. O Lord God, heavenly King, God the Father almighty. O Lord Jesus Christ, the only begotten Son. O Lord God, Lamb of God, Son of the Father. Who takest away the sins of the world, have mercy on us. Who takest away the sins of the world, receive our prayer. Who sittest at the right hand of the Father, have mercy on us. For Thou only art holy. Thou only art the Lord. Thou only art most high, O Jesus Christ. Together with the Holy Ghost + in the glory of God the Father. Amen.
+
+[Sequentia](missa longior)
+@Tempora/Pasc7-0:Sequentia::s/Alleluia.//
 
 [Introitus]
 !Rom 5:5.
@@ -28,14 +34,6 @@ $Deo gratias
 Alleluia.
 !John 6:64
 It is the Spirit that gives life; but the flesh profits nothing.
-
-[GradualeL1](missa brevior)
-Alleluia.
-!John 6:64
-It is the Spirit that gives life; but the flesh profits nothing.
-_
-#Gloria
-v. Glory be to God on high, and on earth peace to men of good will. We praise Thee. We bless Thee. We adore Thee. We glorify Thee. We give Thee thanks for Thy great glory. O Lord God, heavenly King, God the Father almighty. O Lord Jesus Christ, the only begotten Son. O Lord God, Lamb of God, Son of the Father. Who takest away the sins of the world, have mercy on us. Who takest away the sins of the world, receive our prayer. Who sittest at the right hand of the Father, have mercy on us. For Thou only art holy. Thou only art the Lord. Thou only art most high, O Jesus Christ. Together with the Holy Ghost + in the glory of God the Father. Amen.
 
 [OratioL1]
 May the Holy Spirit, we beseech You, O Lord, inflame us with that fire which our Lord Jesus Christ cast upon the earth and desired that it be fanned into flame.
@@ -74,7 +72,7 @@ $Per Dominum
 [LectioL4]
 Lesson from the book of Leviticus
 !Lev. 26:3-12. 
-In those days, the Lord said to Moses. Speak to the Israelites, and tell them: If you live in accordance with My precepts and are careful to observe My commandments, I will give you rain in due season, so that the land will bear its crops, and the trees their fruit; your threshing will last till vintage time, and your vintage till the time for sowing, and you will have food to eat in abundance, so that you may dwell securely in your land. I will establish peace in the land, that you may lie down to rest without anxiety. I will rid the country of ravenous beasts, and keep the sword of war from sweeping across your land. You will rout your enemies and lay them low with your sword. Five of you will but a hundred of your foes to flight, and a hundred of you will chase ten thousand of them, till they are cut down by your sword. I will look with favor upon you, and make you fruitful and numerous, as I carry out My covenant with you. So much of the old crops will you have stored up for food that you will have to discard them to make room for the new. I will set My Dwelling among you, and will not disdain you. Ever present in your midst, I will be your God, and you will be My people, says the Lord almighty.
+In those days, the Lord said to Moses. Speak to the Israelites, and tell them: If you live in accordance with My precepts and are careful to observe My commandments, I will give you rain in due season, so that the land will bear its crops, and the trees their fruit; your threshing will last till vintage time, and your vintage till the time for sowing, and you will have food to eat in abundance, so that you may dwell securely in your land. I will establish peace in the land, that you may lie down to rest without anxiety. I will rid the country of ravenous beasts, and keep the sword of war from sweeping across your land. You will rout your enemies and lay them low with your sword. Five of you will put a hundred of your foes to flight, and a hundred of you will chase ten thousand of them, till they are cut down by your sword. I will look with favor upon you, and make you fruitful and numerous, as I carry out My covenant with you. So much of the old crops will you have stored up for food that you will have to discard them to make room for the new. I will set My Dwelling among you, and will not disdain you. Ever present in your midst, I will be your God, and you will be My people, says the Lord almighty.
 $Deo gratias
 
 [GradualeL4]
@@ -89,7 +87,6 @@ $Per Dominum
 Lesson from the book of Daniel
 !Dan. 3:47-51.
 In those days, the Angel of the Lord went down into the furnace with Azaria and his companions, drove the fiery flames out of the furnace, and made the inside of the furnace as though a dew-laden breeze were blowing through it. And the flames rose forty-nine cubits above the furnace, and spread out, burning the Chaldeans nearby, the king’s men who were stoking the furnace. And the fire in no way touched them or caused them pain or harm. Then these three in the furnace with one voice sang, glorifying and blessing God:
-$Deo Gratias
 
 [GradualeL5]
 Alleluia.
@@ -116,15 +113,8 @@ Brethren: Having been justified by faith, let us have peace with God through our
 !Ps 116:1-2
 Praise the Lord, all you nations; glorify Him, all you peoples! For steadfast is His kindness toward us, and the fidelity of the Lord endures forever.
 
-[Graduale](missa brevior)
-Alleluia. 
-V. (Kneel.) Come, O Holy Spirit, fill the hearts of Your faithful; and kindle in them the fire of Your love.
-
 [Sequentia]
 @Tempora/Pasc7-0:Sequentia
-
-[Sequentia](missa longior)
-@Tempora/Pasc7-0:Sequentia::s/Alleluia.//
 
 [Evangelium]
 Continuation + of the Holy Gospel according to Luke

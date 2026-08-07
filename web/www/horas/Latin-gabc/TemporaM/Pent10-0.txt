@@ -17,9 +17,5 @@
 [Lectio10]
 @Tempora/Pent10-0:Lectio8:s/ Publicánus.*//
 
-[Lectio11]
-@Tempora/Pent10-0:Lectio8:s/.*? Publicánus/Publicánus/ s/$/~/
-@Tempora/Pent10-0:Lectio9:s/Adhuc .*//
-
 [Lectio12]
 @Tempora/Pent10-0:Lectio9:s/.*? Adhuc/Adhuc/

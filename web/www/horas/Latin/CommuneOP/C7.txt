@@ -1,0 +1,112 @@
+@CommuneOP/C6
+
+[Officium]
+Commune Unius non Virginis Martyris
+
+[Ant Vespera]
+@Commune/C7:Ant Vespera:1 s/;;.*/.;;112;116;145;146;147/
+
+[Responsory Vespera 1]
+@CommuneOP/C6:Responsory4
+
+[HymnusM Vespera]
+@:HymnusM Matutinum
+
+[Oratio]
+@Commune/C7a:Oratio:s/N. /N. Vírginis /
+
+[Invit]
+Laudémus Deum nostrum * In confessióne beátæ N..
+
+[HymnusM Matutinum]
+@Commune/C7
+
+[AntMatutinum8]
+Exsultavérunt fíliæ Judæ propter judícia tua, Dómine.;;96
+
+[Ant Matutinum]
+@Commune/C6::1
+@CommuneCist/C6::7 s/;;.*/;;18/
+@Commune/C6:Ant Vespera:5 s/;;.*/;;23/
+@Commune/C6:Ant Matutinum:4
+@Commune/C6:Ant Matutinum:5
+@Commune/C7:Ant Matutinum2:1 s/;;.*/;;86/
+@CommuneCist/C6:Ant Matutinum:9
+@:AntMatutinum8
+@Commune/C6:Ant Vespera:3 s/;;.*/;;97/
+
+[Lectio4]
+@Commune/C7:Lectio4 in 2 loco
+
+[Responsory5]
+R. Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre beátæ N.,
+* De cujus solemnitáte gaudent Angeli, et colláudant Fílium Dei.
+V. Conféssio et pulchritúdo in conspéctu ejus, sánctitas et magnificéntia in sanctificatióne ejus.
+R. De cujus solemnitáte gaudent Angeli, et colláudant Fílium Dei.
+
+[Lectio5]
+@Commune/C7:Lectio5 in 2 loco
+
+[Lectio6]
+@Commune/C7:Lectio6 in 2 loco
+
+[Responsory6]
+@Commune/C6a:Responsory1
+
+[Nocturn 3 Versum]
+@Commune/C6:Nocturn 2 Versum
+
+[Responsory7]
+@CommuneOP/C6a:Responsory4
+
+[Responsory8]
+@Commune/C7:Responsory6
+
+[Responsory9]
+@Commune/C7:Responsory8:1-4
+&Gloria
+@Commune/C7:Responsory8:4 s/.*?, .*?, (.)/R. \u$1/
+
+[Ant Laudes]
+Grátia super grátiam múlier sancta et pudorráta: omnis autem ponderátio non est digna continéntis ánimæ.
+Sicut sol óriens mundo in altíssimis Dei, sic mulieris bonæ spécies in ornaméntum domus suæ.
+Fundaménta ætérna supra petram sólidam, sic mandáta Dei in corde mulieris sanctæ.
+Colúmnæ áureæ super bases argénteas, et pedes firmí super plantas stábilis mulieris.
+Ædificátio civitátis confirmábit nomen, et super hanc múlier immaculáta computábitur.
+
+[HymnusM Laudes]
+v. Pia mater et húmilis,
+Natúræ memor frágilis,
+In hujus vitæ flúctibus
+Nos rege tuis précibus.
+_
+Te deprecámur, lárgius
+Nostris ut adáuge sénsibus
+Nescíre prorsus ómnia
+Corruptiónis vúlnera.
+_
+Sit Christe, Rex piíssime,
+Tibi, Patríque glória,
+Cum Spíritu Paráclito,
+Nunc, et per omne sǽculum.
+Amen.
+
+[Versum 2]
+V. Elégit eam Deus, et præelégit eam.
+R. Et habitáre eam fecit in tabernáculo suo.
+
+[Ant 2]
+Manum suam * apéruit ínopi, et palmas suas exténdit ad páuperem, fortitúdo et decor induméntum ejus, et ridébit in die novíssimo.
+
+[Capitulum Sexta]
+@Commune/C7
+
+[Capitulum Nona]
+@Commune/C7:Lectio Prima
+$Deo gratias
+
+[Ant Vespera 3]
+@CommuneOP/C7:Ant Laudes:1 s/$/;;109;112;121;126;147/
+
+[Ant 3]
+Accínxit fortitúdine lumbos suos, et roborávit bráchium suum: gustávit, et vidit, quia bona est negotiátio ejus: non exstinguétur in nocte lucérna ejus.

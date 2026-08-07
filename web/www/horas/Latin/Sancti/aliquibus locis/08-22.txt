@@ -1,0 +1,240 @@
+@SanctiCist/08-22C
+
+[Officium]
+Purissimi Cordis Beatæ Mariæ Virginis
+
+[Rank]
+;;Duplex majus;;4;;ex C11
+
+[Rule]
+ex C11;
+9 lectiones
+Doxology=Nat
+Gloria
+Credo
+
+[Ant Vespera]
+Trahe me, * post te currémus in odórem ungientórum tuórum.;;109
+Diléctus meus * lóquitur mihi: Surge, própera, amica mea.;;112
+Fulcíte * me flóribus, stipáte me malis, quia amóre lángueo.;;121
+Adjúro vos * fíliæ Jerúsalem, ne suscitétis diléctam, quoadúsque ipsa velit.;;126
+Ego dórmio, * et cor meum vígilat.;;147
+
+[Oratio]
+@Sancti/08-22::s/immaculáti/puríssimi/
+
+[Invit]
+@Commune/C10
+
+[Ant Matutinum]
+Benedícta tu * inter mulíeres, et benedíctus fructus ventris tui.;;8
+Et ait María: * Magníficat ánima mea Dóminum, et exsultávit spíritus meus in Deo salutári meo.;;18
+Quia respéxit humilitátem ancíllæ suæ: ecce enim ex hoc beátam me dicent omnes genereationes.;;23
+Beáta quæ credidísti, quóniam perficientur ea quæ dicta sunt tibi a Dómino.;;44
+Fecit mihi magna qui potens est, et sanctum nomen ejus.;;45
+Fecit poténtiam in bráchio suo: dispérsit supérbos mente cordis sui.;;86
+Unde hoc mihi, ut véniat Mater Dómini mei ad me?;;95
+Misericórdia ejus a progénie in progénies timéntibus eum.;;96
+Suscépit Israël púerum suum, recordátus misericórdiæ suæ.;;97
+
+[Nocturn 1 Versum]
+V. Ánima mea liquefácta est.
+R. Ut locútus est diléctus.
+
+[Nocturn 2 Versum]
+V. Fortis est ut mors dilectio.
+R. Dura sicut inférnus æmulatio.
+
+[Nocturn 3 Versum]
+V. Ego dilécto meo.
+R. Et ad me conversio ejus.
+
+[Lectio1]
+@Sancti/08-18bmv::1-3 s/1-4/1,3,4,9,11-12/
+@Sancti/08-18bmv::5-6
+@Sancti/08-18bmv:Lectio2:4
+@Sancti/08-18bmv:Lectio3:2-3 s/et odor.*// s/ soror.*(fons)/, $1/
+
+[Responsory1]
+R. Deduc me Dómine in via tua, et ingrédiar in veritáte tua: lætétur cor meum,
+* Ut tímeat nomen tuum.
+V. Pone me ut signaculum super cor tuum, ut signaculum super bráchium tuum.
+R. Ut tímeat nomen tuum.
+
+[Lectio2]
+!Cant. 5:1-2,5-6
+1 Veni in hortum meum soror mea sponsa, méssui myrrham meam cum aromátibus meis: comédi favum cum melle meo.
+2 Vox dilécti mei pulsántis: Aperi mihi soror mea, amíca mea, colúmba mea, immaculáta mea: quia caput meum plenum est rore, et cincínni mei guttis nóctium.
+5 Surréxi ut aperírem dilécto meo: manus meæ stillavérunt myrrham, et dígiti mei pleni myrrha probatíssima.
+6 Apérui dilécto meo, at ille declináverat, atque transíerat. Anima mea liquefácta est, ut locútus est.
+
+[Responsory2]
+R. In Domino gaudébo, et exsultabo in Deo Jesu meo: Deus Dóminus fortitúdo mea,
+* Super excélsa dedúcet me.
+V. Læva ejus sub cápite meo, et déxtera illíus amplexábitur me.
+R. Super excélsa dedúcet me.
+
+[Lectio3]
+!Cant. 5:9-10,16-17 6:3,8
+9 Qualis est diléctus tuus ex dilécto, o pulchérrima mulíerum? qualis est diléctus tuus ex dilécto, quia sic adiurásti nos?
+10 Diléctus meus cándidus et rubicúndus: eléctus ex míllibus,
+16 totus desiderábilis. Talis est diléctus meus, et ipse est amícus meus, fíliæ Jerúsalem.
+17 Quo ábiit diléctus tuus, o pulchérrima mulíerum? quo declinávit diléctus tuus? et quærémus eum tecum.
+3 Pulchra es amíca mea, suávis, et decóra sicut Ierúsalem: terríbilis ut castrórum ácies ordináta.
+8 Una est colúmba mea, perfécta mea, una est matris suæ, elécta genetríci suæ. Vidérunt eam fíliæ, et beatíssimam prædicavérunt: regínæ laudavérunt eam.
+
+[Responsory3]
+R. Invéni grátiam apud óculos tuos Dómine mi,
+* Qui consolátus es me, et locútus es ad cor ancíllæ tuæ.
+V. In toto corde meo, exquisívi te: ne repéllas me a mandátis tuis.
+R. Qui consolátus es me, et locútus es ad cor ancíllæ tuæ.
+&Gloria
+R. Qui consolátus es me, et locútus es ad cor ancíllæ tuæ.
+
+[Responsory4]
+R. Ego diligéntes me díligo, et qui mane vígilant ad me, invénient me. Mecum sunt divítiæ et glória:
+* Opes supérbæ et justítia.
+V. Ut ditem diligéntes me, et thesaúros eórum répleam.
+R. Opes supérbæ et justítia.
+
+[Responsory5]
+R. Ego mater pulchræ dilectiónis, et timóris, et agnitiónis, et sanctæ spei: in me grátia omnis viæ et veritátis:
+* In me omnis spes vitæ et virtútis.
+V. Transíte ad me omnes qui concupscitis me, et a generatiónibus meis implémini.
+R. In me omnis spes vitæ et virtútis.
+
+[Responsory6]
+Beátus homo qui audit me, et qui vígilat ad fores meas quotídie, et obsérvat ad postes óstii mei.
+* Qui me invénerit, invéniet vitam, et haúriet salútem a Dómino.
+V. Qui autem im me peccáverit, lædet ánimam suam: omnes qui me odérunt, díligunt mortem.
+R. Qui me invénerit, invéniet vitam, et haúriet salútem a Dómino.
+&Gloria
+R. Qui me invénerit, invéniet vitam, et haúriet salútem a Dómino.
+
+[Lectio7]
+Léctio sancti Evangélii secúndum Lucam
+!Luc 2:48-51
+In illo témpore: Dixit Mater Jesu ad illum: Fili, quid fecísti nobis sic? Ecce, pater tuus et ego doléntes quærebámus te. Et réliqua.
+_
+De Homilía venerábilis Bedæ Presbýteri
+!In Homilía Hiem. de Témpore, Domin. I. post Epiph.
+Mater ejus, inquit Evangelísta, conservabat ómnia verba hæc in corde suo. Ómnia quæ de Dómino vel a Dómino dicta sive acta cognóverat Mater Virgo, diligentius in corde retinebat, sollícite cuncta memóriæ commendabat, ut cum demum tempus prædicandæ, sive scribendæ Incarnationis ejus adveniret, sufficienter univérsa, prout essent gesta, posset explicare quærentibus. Imitémur et nos, fratres mei, piam Dómini Matrem, ipsi quoque ómnia verba et facta Dómini ac Salvatóris nostri fixa in corde conservando.
+
+[Responsory7]
+R. Aquæ multæ non potúérunt exstínguere caritátem:
+* Neque flúmina óbruent eam.
+V. Si déderit homo omnem substántiam domus suæ pro dilectióne, quasi nihil despíciet eam.
+R. Neque flúmina óbruent eam.
+
+[Lectio8 ferialis]
+Horum Dómini verbórum et actorum meditatióne diurna et nocturna importunos inanium nocentiumque cogitationum repellamus incursus: horum crebra collatione et nos et próximos nostros a fabulis supervacuis et male dulcoratis detractionum collóquiis castigare, atque ad divínæ frequentiam laudis accendere curemus.
+
+[Lectio8]
+@:Lectio8 ferialis
+(sed feria 1 dicuntur)
+@:Lectio8 ferialis:s/$/~/
+@:Lectio9
+
+[Responsory8]
+R. Spíritus meus super mel dulcis, et hærédita mea super mel et favum. Qui audit me, non confundétur:
+* Et qui operántur in me, non peccábunt.
+V. Qui elúcidant me, vitam ætérnam habébunt.
+R. Et qui operántur in me, non peccábunt.
+&Gloria
+R. Et qui operántur in me, non peccábunt.
+
+[Lectio9]
+Si enim, fratres caríssimi, in futúri beatitúdine sǽculi habitáre in domo Dómini, ac perpétuo illum laudare desideramus, opórtet nimírum et in hoc sǽculo, quod in futúro quærámus, sollícite præmonstramus: frequentando vidélicet Ecclésiæ límina, et non solum in ea laudes Dómini canendo, sed et in omni loco dominatiónis ejus ea, quæ ad laudem gloriamque Conditóris nostri proficiant, verbis páriter ac factis ostendendo.
+
+[Ant Laudes]
+@:Ant Vespera:s/;;\d+//gs
+
+[Ant 2]
+Extollens vocem * quædam múlier de turba, dixit illi: Beátus venter qui te portávit, et úbera quæ suxisti.
+
+[Lectio Prima]
+@:Capitulum Nona:1-2 s/[\§\*]//gs
+
+[Responsory Breve Tertia]
+R.br. Anima mea * Liquefácta est.
+R. Anima mea * Liquefácta est.
+V. Ut locútus est diléctus.
+R. Liquefácta est.
+&Gloria
+R. Anima mea * Liquefácta est.
+
+[Versum Tertia]
+@:Nocturn 2 Versum
+
+[Responsory Breve Sexta]
+R.br. Fortis est * Ut mors diléctio.
+R. Fortis est * Ut mors diléctio.
+V. Dura sicut inférnus æmulátio.
+R. Ut mors diléctio.
+&Gloria
+R. Fortis est * Ut mors diléctio.
+
+[Versum Sexta]
+@:Nocturn 3 Versum
+
+[Responsory Breve Nona]
+R.br. Ego * Dilécto meo.
+R. Ego * Dilécto meo.
+V. Et ad me convérsio ejus.
+R. Dilécto meo.
+&Gloria
+R. Ego * Dilécto meo.
+
+[Versum Nona]
+@:Versum 2
+
+[Introitus]
+!Ps. 44:14-15
+v. Omnis glória ejus fíliæ Regis ab intus, in fímbrús áureis, circumamícta varietátibus: adducántur Regi Vírgines post eam, próximæ ejus afferéntur tibi. (Allelúja, allelúja.)
+!Ps. ibid. 2
+v. Eructávit cor meum verbum bonum: dico ego ópera mea Regi.
+&Gloria
+Omnis glória ejus fíliæ Regis ab intus, in fímbrús áureis, circumamícta varietátibus: adducántur Regi Vírgines post eam, próximæ ejus afferéntur tibi. (Allelúja, allelúja.)
+
+[Lectio]
+Léctio libri Sapiéntiæ
+!Cant. 8:6-7
+v. Pone me ut signáculum super Cor tuum, ut signáculum super bráchium tuum: quia fortis est ut mors diléctio, dura sicut inférnus æmulátio: lámpades ejus lámpades ignis atque flammárum. Aquæ multæ non potuérunt exstínguere caritátem, nec flúmina óbruent illam: si déderit homo omnem substántiam domus suæ pro dilectióne, quasi nihil despíciet eam.
+
+[Graduale]
+!Sap. 7:25-26
+Nihil inquinátum in eam incúrrit: candor est lucis ætérnæ, et spéculum sine mácula Dei majestátis, et imágo bonitátis illíus.
+!Cant. 6:2
+V. Ego dilécto meo, et diléctus meus mihi, qui páscitur inter lília.
+v. Allelúja, allelúja.
+!Luc. 1:46-47
+V. Magníficat ánima mea Dóminum: et exsultávit spíritus meus in Deo, salutári meo. Allelúja.
+
+[GradualeP]
+Allelúja, allelúja.
+@:Graduale:1-2
+Allelúja.
+@:Graduale:3-4 s/$/~/
+Allelúja.
+
+[Tractus]
+@:Graduale:1-4
+!Luc. 1:46-48
+V. Magníficat ánima mea Dóminum: et exsultávit spíritus meus in Deo, salutári meo.
+V. Quia respéxit humilitátem ancíllæ suæ: ecce enim, ex hoc beátam me dicent omnes generatiónes.
+
+[Evangelium]
+Léctio sancti Evangélii secúndum Lucam
+!Luc 2:48-51
+v. In illo témpore: Dixit Mater Jesu ad illum: Fili, quid fecísti nobis sic? Ecce, pater tuus et ego doléntes quærebámus te. Et ait ad illos: Quid est, quod me quærebátis? Nesciebátis, quia in his, quæ Patris mei sunt, opórtet me esse? Et ipsi non intellexérunt verbum, quod locútus est ad eos. Et descéndit cum eis, et venit Názareth: et erat súbditus illis. Et Mater ejus conservábat ómnia verba hæc in corde suo.
+
+[Offertorium]
+!Judith 15:11
+Quia fecísti viríliter et confortátum est cor tuum, ídeo et manus Dómini confortávit te et eris benedícta in ætérnum. (Allelúja.)
+
+[Communio]
+!Cant. 2:3
+Sub umbra illíus, quem desideráveram, sedi, et fructus ejus dulcis gútturi meo. (Allelúja.)
+
+[Postcommunio]
+@Sancti/08-22::s/immaculáti/puríssimi/

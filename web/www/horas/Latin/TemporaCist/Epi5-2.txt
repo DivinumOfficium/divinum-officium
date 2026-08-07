@@ -1,0 +1,21 @@
+@Tempora/Epi5-2
+
+[Lectio1]
+@Tempora/Epi5-2::1-6:s/-5/-4/ s/,$/./
+
+[Lectio2]
+@Tempora/Epi5-2::1-4:s/-9/-8/ s/6 .* admóneo/6 Admóneo/
+
+[Lectio3]
+@Tempora/Epi5-2:Lectio2:1:s/6-9/9-11/
+@Tempora/Epi5-2:Lectio2:5
+@Tempora/Epi5-2:Lectio3:2-3
+
+[Responsory1]
+@TemporaCist/Epi1-1
+
+[Responsory2]
+@TemporaCist/Epi1-1
+
+[Responsory3]
+@TemporaCist/Epi1-1

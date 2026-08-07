@@ -1,0 +1,14 @@
+@Tempora/Quad1-2
+
+[Lectio1]
+@Tempora/Quad1-2::s/Pán nechal .*//
+
+[Lectio2]
+@Tempora/Quad1-2:Lectio1:s/.* (Pán nechal)/$1/s s/$/~/
+@Tempora/Quad1-2:Lectio2:s/A jistě .*//
+
+[Lectio3]
+@Tempora/Quad1-2:Lectio3:s/Vždyť jestliže .*//
+
+[Ant 3] 
+Odešel * Ježíš ven z města do Bethánie; a tam učil lid o království Božím.

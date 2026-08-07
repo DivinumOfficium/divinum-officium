@@ -28,6 +28,11 @@ Psalmi Feria (rubrica cisterciensis)
 [Lectio5]
 @Tempora/Pasc6-0:Lectio4:s/Omnes .*//s
 
+[Lectio5] (rubrica 196)
+Sermo sancti Cæsarii Episcopi
+!Sermo 210; de Ascensione Domini, n. 1-3
+@Tempora/Pasc6-0:Lectio4:3 s/Omnes .*//s
+
 [Lectio6]
 @Tempora/Pasc6-0:Lectio4:s/.* Omnes /Omnes /s s/$/~/
 @Tempora/Pasc6-0:Lectio5:s/Ascensiónis .*//s
@@ -37,6 +42,9 @@ Psalmi Feria (rubrica cisterciensis)
 
 [Lectio8]
 @Tempora/Pasc6-0:Lectio6
+
+[Lectio8] (rubrica 196)
+@Tempora/Pasc6-0:Lectio6_:s/quidquid .*/hoc habéto negótium, ad hoc te ávoca, insta huic óperi, munda cor./
 
 [Lectio9]
 @Tempora/Pasc6-0:Lectio7

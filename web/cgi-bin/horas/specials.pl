@@ -5,7 +5,7 @@ use utf8;
 # Divine Office fills the chapters from ordinarium
 $a = 4;
 
-use DivinumOfficium::Directorium qw(dirge);
+use DivinumOfficium::Directorium qw(get_from_directorium dirge);
 
 require "$Bin/specials/capitulis.pl";
 require "$Bin/specials/hymni.pl";
@@ -168,6 +168,7 @@ sub specials {
       if ( $version =~ /Cist/i
         && $winner{Rank} =~ /Feria|Vigilia|infra oct/i
         && $dayname[0] =~ /Pent|Epi/i
+        && $dayofweek > 0
         && $month > 5
         && $month < 11)
       {
@@ -278,7 +279,10 @@ sub specials {
     }
 
     if ($item =~ /Suffragium/i && $hora =~ /^(?:Laudes|Vespera)$/) {
-      if (!checksuffragium() || $dayname[0] =~ /(Quad5|Quad6)/i) {
+      if ( !checksuffragium()
+        || ($version !~ /Cist/i && $dayname[0] =~ /Quad5/i)
+        || $dayname[0] =~ /Quad6/i)
+      {
         setcomment($label, 'Suffragium', 0, $lang);
         push(@s, "\n");
         setbuild1($item, 'omit');
@@ -381,7 +385,7 @@ sub specials {
 
     # Set special conclusion when Office of the Dead follows.
     if ($item =~ /Conclusio/ && $commune !~ /C9/i && $votive !~ /C9/i) {
-      my $dirge = dirge($version, $hora, $day, $month, $year);
+      my $dirge = dirge($version, $hora, $day, $month, $year, $dioecesis);
 
       if (($dirge || ($winner{Rule} =~ /Vesperae Defunctorum/ && $vespera == 3))
         && $hora eq 'Vespera')
@@ -435,7 +439,7 @@ sub setcomment {
 #*** getproprium($name, $lang, $flag, $buidflag)
 # returns $name item from tempora or sancti file
 # if $flag and no item in the proprium checks commune
-# if buildflag is set adds a composing libe to building scrip
+# if buildflag is set adds a composing line to building scrip
 sub getproprium {
 
   my $name = shift;
@@ -531,7 +535,7 @@ sub checkmtv {
   my $version = shift;
   my $winner = shift;
   my %winner = %$winner;
-  ($version =~ /1955|196/ || $winner{Rule} =~ /\;mtv/i) && $winner{Rule} =~ /C[45]/ ? '1' : '';
+  ($version =~ /1955|196[03]/ || $winner{Rule} =~ /\;mtv/i) && $winner{Rule} =~ /C[45]/ ? '1' : '';
 }
 
 #*** getanthoras($lang)
@@ -620,10 +624,9 @@ sub getantvers {
 sub getseant {
   my $lang = shift;
   my $w = '';
-
   my $key = sprintf("seant%02i-%02i", $month, $day);
 
-  if (my ($d) = get_from_directorium('stransfer', $version, $year, $key)) {
+  if (my ($d) = get_from_directorium('stransfer', $version, $key, $year)) {
     my %w = %{setupstring($lang, "Tempora/$d.txt")};
     $w = $w{'Ant 3'};
   }
@@ -718,7 +721,7 @@ sub checksuffragium {
     || ($octavcount || $commemoratio{Rank} =~ /octav/i)
 
     # Cistercian: minor Feasts of Apostles
-    || $version =~ /cist/i && $commune =~ /C1a?$/i
+    || $version =~ /cist/i && $commune =~ /C1a?/i
 
     # Cistercian: S. Augustine and Decollatio S. J.
     || $version =~ /cist/i && $winner =~ /08-2[89]/i
@@ -734,6 +737,8 @@ sub checksuffragium {
 
   if ($commemoratio) {
     my @r = split(';;', $commemoratio{Rank});
+
+    $ranklimit = 7 if $version =~ /^Trident/;
 
     return 0
       if $r[2] >= $ranklimit

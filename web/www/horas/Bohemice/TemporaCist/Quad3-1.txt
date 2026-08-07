@@ -1,0 +1,6 @@
+[Lectio2]
+@Tempora/Quad3-1:Lectio2:s/Ne proto,.*// s/$/~/
+@Tempora/Quad3-1:Lectio3:s/(.)/\l$1/ s/Tato spásná .*//
+
+[Lectio3]
+@Tempora/Quad3-1:Lectio3:s/.* (?=Tato spásná )// s/Řekli jsme .*//

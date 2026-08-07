@@ -1,0 +1,21 @@
+@Sancti/06-06
+
+[Rule]
+vide C4;
+3 lectiones
+
+[Lectio2]
+@Sancti/06-06:Lectio4:s/Potens .*// s/eccl/Eccl/g
+
+[Lectio3]
+@Sancti/06-06:Lectio5:s/, ab epíscopo .*discéderet// s/, trédecim sóciis aggregátis,// s/, divínitus .*// s/eccl/Eccl/g s/$/~/
+@Sancti/06-06:Lectio6:s/^/ et / s/tandem \(licet relúctans\) // s/eccl/Eccl/g
+
+[Responsory1]
+@CommuneCist/C4:Responsory2
+
+[Responsory2]
+@CommuneCist/C4:Responsory5
+
+[Responsory3]
+@CommuneCist/C4:Responsory8

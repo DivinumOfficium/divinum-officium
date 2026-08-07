@@ -3,15 +3,29 @@ use utf8;
 
 # prepare one day entry in ordo
 sub ordo_entry {
-  my ($date, $ver, $compare, $winneronly) = @_;
+  my ($date, $ver, $dioe, $compare, $winneronly) = @_;
 
   our $version = $ver;
+  our $dioecesis = $dioe;
   our ($day, $month, $year, $dayname, %scriptura, @commemoentries);
 
-  precedence($date);
+  # Speeding up Ordo by calling occurrence and concurrence directly instead of precedence:
+  our ($winner, $commemoratio, $commemoratio1, $commune, $scriptura);
+  our (%winner, %commemoratio, %commemoratio1, %commune, %scriptura);
+  our ($C10, $chantTone);
+
+  ($month, $day, $year) = split('-', $date);
+  our $dayofweek = day_of_week($day, $month, $year);
+  @dayname = (getweek($day, $month, $year, 0, 0), '', '');
+  $C10 = 'C10';
+
+  occurrence($day, $month, $year, $version, $dioecesis, 0);    # Replacing precedence()
+  %winner = %{officestring($lang1, $winner, 0)};
+  setChantTone() if ($lang1 =~ /gabc/i);    # GABC: set ChantTone depending on the solemnity of the day
 
   my ($h1, $h2) = split(/\s*~\s*/, setheadline());
-  return "$h1, $h2" if $winneronly;    # finish here for ical
+  return "$h1, $h2" if $winneronly =~ /winneronly/;    # finish here for ical
+  return "$h1 ($h2)" if $winneronly =~ /winnerupd/;    # finish here for ical_comm
 
   my ($c1, $c2);
   $c1 = "<B>" . setfont(liturgical_color($h1), $h1) . "</B>" . setfont('1 maroon', "&ensp;$h2");
@@ -28,14 +42,30 @@ sub ordo_entry {
   $c2 .= "<I>" . setfont(liturgical_color($h2), " $h2") . "</I>" if $h2;
   $c2 .= "<I>" . setfont($smallblack, " $scripturaUt") . "</I>" if $scripturaUt;
 
-  if ($c2 && @commemoentries > ($winner =~ /Tempora/i ? 0 : 1)) {
-    for my $ind (($winner =~ /Tempora/i ? 0 : 1) .. @commemoentries - 1) {
+  if ($c2 && @commemoentries > ($winner =~ /Tempora/i && $commemoentries[0] !~ /Tempora/ ? 0 : 1)) {
+    for my $ind (($winner =~ /Tempora/i && $commemoentries[0] !~ /Tempora/ ? 0 : 1) .. @commemoentries - 1) {
       my %com = %{setupstring('Latin', "$commemoentries[$ind].txt")};
-      my $comname = $com{Rank};
-      $comname =~ s/\;\;.*//;
-      $c2 .= " <I>&amp; " . setfont(liturgical_color($comname), " $comname") . "</I>" if $comname;
+      my @comRank = split(';;', $com{Rank});
+
+      # 1960: No Commemoration of Festum Domini on Festum Domini and Vigil of Peter and Paul on Sunday
+      last
+        if (
+          $version =~ /196/
+          && ( ($winner{Rule} =~ /Festum Domini/ && $commemoratio{Rule} =~ /Festum Domini/i)
+            || (($commemoratio =~ /06-28r?/i || $winner{Rule} =~ /No Sunday commemoratio/i) && $dayofweek == 0))
+        );
+
+      # No Commemoration of Common Octaves on feasts Duplex I. or II. classis
+      next if ($comRank[2] < 2.1 && $comRank[0] =~ /Infra Octav/i && $rank >= 5 && $winner =~ /Sancti/i);
+
+      $c2 .= " <I>&amp; " . setfont(liturgical_color($comRank[0]), " $comRank[0]") . "</I>" if $comRank[0];
+
+      # Under the 1960 rubrics, on II. cl and higher days, allow at most one commemoration.
+      last if ($version =~ /1960/ && $rank >= 5 || ($rank >= 4 && $winner{Rank} =~ /Feria|Sabbato/i));
     }
   }
+
+  return "$c2" if $winneronly =~ /comm/i;    # finish here for ical_comm - comm
 
   $c2 =~ s/Hebdomadam/Hebd/i;
   $c2 =~ s/Quadragesima/Quadr/i;
@@ -66,7 +96,7 @@ sub ordo_entry {
     $c2 = '' unless $c2 =~ /Commemoratio|Scriptura/;
   }
 
-  if (dirge($version, 'Laudes', $day, $month, $year)) { $c1 .= setfont($smallblack, ' dirge'); }
+  if (dirge($version, 'Laudes', $day, $month, $year, $dioecesis)) { $c1 .= setfont($smallblack, ' dirge'); }
   if ($version !~ /1960/ && $initia) { $c1 .= setfont($smallfont, ' *I*'); }
 
   if ($version !~ /1955|196/ && $winner{Rule} =~ /\;mtv/i) {
@@ -76,7 +106,7 @@ sub ordo_entry {
   our $hora;
   my $temphora = $hora;
   $hora = 'Vespera';
-  precedence($date);
+  concurrence($day, $month, $year, $version, $dioecesis);    # Replacing precedence()
   $hora = $temphora;
   my $cv = $dayname[2];
   $cv =~ s/.*?(Vespera|A capitulo|$)/$1/;
@@ -91,13 +121,13 @@ sub ordo_entry {
 # prepare row
 sub table_row {
   my ($date) = shift;
-  our ($version1, $compare, $version2, $dayofweek);
+  our ($version1, $compare, $version2, $dayofweek, $dioecesis);
 
   my $d = substr($date, 3, 2) + 0;
-  my ($c1, $c2, $cv) = ordo_entry($date, $version1, $compare);
+  my ($c1, $c2, $cv) = ordo_entry($date, $version1, $dioecesis, $compare);
 
   if ($compare) {
-    my ($c21, $c22, $cv2) = ordo_entry($date, $version2, $compare);
+    my ($c21, $c22, $cv2) = ordo_entry($date, $version2, $dioecesis, $compare);
     $c1 .= "<br/>$c21";
     $c2 .= "<br/>$c22";
     $cv .= "<br/>$cv2";

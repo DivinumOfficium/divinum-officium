@@ -11,8 +11,8 @@ Antiphonas horas
 [Responsory Vespera 1] (rubrica cisterciensis)
 @:RV1
 
-[Hymnus Vespera] (rubrica cisterciensis)
-@Tempora/Pasc7-0:Hymnus Laudes
+[HymnusM Vespera] (rubrica cisterciensis)
+@Tempora/Pasc7-0:HymnusM Laudes
 
 [Ant Matutinum]
 @Tempora/Pasc7-0::1 s/47/1/
@@ -122,9 +122,11 @@ V. Loquebántur váriis linguis Apóstoli magnália Dei:
 R. Et convénit multitúdo dicéntium, allelúia.
 
 [Ant Laudes]
-@Tempora/Pasc7-0:Ant Vespera:s/;;.*//
+@Tempora/Pasc7-0:Ant Vespera
+(sed rubrica Barroux)
+@Tempora/Pasc7-0:Ant Vespera:s/in eódem loco/dicéntes/ s/allelúja, allelúja./allelúja./
 
-[Hymnus Laudes] (rubrica cisterciensis)
+[HymnusM Laudes] (rubrica cisterciensis)
 @Tempora/Pasc7-0:HymnusM Matutinum:21-46
 
 [Responsory TertiaM]
@@ -132,10 +134,6 @@ R. Et convénit multitúdo dicéntium, allelúia.
 
 [Responsory SextaM]
 @Tempora/Pasc7-0:Versum Tertia
-(sed rubrica cisterciensis)
-@Tempora/Pasc7-0:Versum Sexta
 
 [Responsory NonaM]
 @Tempora/Pasc7-0:Versum 1
-(sed rubrica cisterciensis)
-@Tempora/Pasc7-0:Versum Tertia

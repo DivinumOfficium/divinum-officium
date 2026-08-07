@@ -1,0 +1,52 @@
+@Sancti/07-25
+
+[Ant Vespera]
+O beáte Jacóbe, ómnium corde et ore laudánde, o patróné singuláris et amábilis, intercède pro nobis ad Dóminum.;;112;116;145;146;147
+
+[Ant 1]
+O lux et decus Hispániæ, sanctíssime Jacóbe, qui inter Apóstolos primátum tenes, primus eórum mátyrio laureátus: o singuláre præsidium, qui meruísti vidére Redemptórem nostrum adhuc mortálem in Deitate transformátum, exáudi preces servórum tuórum et intercède pro nostra salute omniúmque populórum.
+
+[Lectio1]
+De Epístola beáti Pauli Apóstoli ad Ephésios
+!Eph 3:5-7
+5 Áliis generatiónibus non est ágnitum fíliis hóminum, sícuti nunc revelátum est sanctis apóstolis ejus et prophétis in Spíritu,
+6 gentes esse coherédes, et concorporáles, et compartícipes promissiónis ejus in Christo Jesu per Evangélium:
+7 cujus factus sum miníster secúndum donum grátiæ Dei, quæ data est mihi secúndum operatiónem virtútis ejus.
+
+[Lectio2]
+!Eph 3:8-12
+8 Mihi ómnium sanctórum mínimo data est grátia hæc, in géntibus evangelizáre investigábiles divítias Christi,
+9 et illumináre omnes, quæ sit dispensátio sacraménti abscónditi a sǽculis in Deo, qui ómnia creávit:
+10 ut innotéscat principátibus et potestátibus in cæléstibus per Ecclésiam, multifórmis sapiéntia Dei,
+11 secúndum præfinitiónem sæculórum, quam fecit in Christo Jesu Dómino nostro:
+12 in quo habémus fidúciam, et accéssum in confidéntia per fidem ejus.
+
+[Lectio3]
+!Eph 3:13-17
+13 Propter quod peto ne deficiátis in tribulatiónibus meis pro vobis: quæ est glória vestra.
+14 Hujus rei grátia flecto génua mea ad Patrem Dómini nostri Jesu Christi,
+15 ex quo omnis patérnitas in cælis et in terra nominátur,
+16 ut det vobis secúndum divítias glóriæ suæ, virtúte corroborári per Spíritum ejus in interiórem hóminem,
+17 Christum habitáre per fidem in córdibus vestris.
+
+[Lectio7f]
+Respóndens autem Jesus, dixit eis: Néscitis quid petátis.
+
+[Lectio7]
+@Sancti/05-06::s/.* (quia post)/\u\1/ s/$/~/
+@SanctiCist/05-06:Lectio10:1:s/$/~/
+@:Lectio7f
+
+[Lectio8f]
+Ait illis: Cálicem quidem meum bibétis.
+
+[Lectio8]
+@Sancti/05-06::s/$/~/
+@:Lectio8f
+
+[Lectio9]
+@Sancti/05-06::s/, quem.*//
+
+[Commemoratio 2]
+!Memoria Ss. Christophori et Cucuphatis Mm.
+@CommuneOP/C3a:Oratio:s/N\. et N\./Christóphorum et Cucuphátém/

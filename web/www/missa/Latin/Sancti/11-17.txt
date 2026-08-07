@@ -8,14 +8,14 @@ S. Gregorii Thaumaturgi Episcopi et Confessoris
 (sed rubrica 196)
 ;;Duplex;;3;;vide C4
 
-[Name]
-Gregórii
-Postcommunio=Gregório
-
 [Rule]
 Evangelium non appropriatum
 vide C4;
 Gloria
+
+[Name]
+Gregórii
+Postcommunio=Gregório
 
 [Evangelium]
 Sequéntia ++ sancti Evangélii secúndum Marcum

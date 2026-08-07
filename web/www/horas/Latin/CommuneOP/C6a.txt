@@ -1,0 +1,51 @@
+@CommuneOP/C6
+
+[Officium]
+Commune Virginum tantum
+
+[HymnusM Matutinum]
+@Commune/C6:HymnusM Matutinum:1-4 s/trophǽum/beátæ/
+@Commune/C6:HymnusM Matutinum:15-25
+
+[Lectio1]
+@Commune/C6::1-6 s/-31/-28/ s/ Ego.*//
+
+[Responsory1]
+@CommuneCist/C6:Responsory6
+
+[Lectio2]
+@Commune/C6:Lectio1:2 s/25-/28-/
+@Commune/C6:Lectio1:6-10 s/.* (?=Ego)/28 /
+
+[Lectio3]
+@Commune/C6:Lectio2:1-4 s/-35/-34/
+
+[Lectio4]
+Sermo sancti Augustini Episcopi
+!Lib. de Virginit.
+In festo Virginis praedicanda est virginitas.  Hoc in isto sermone suscepimus. Adiuvet Christus Virginis Filius et Virginum sponsus: virginali utero corporalitæ natus, virginali connubio spiritualiter coniugatus. Cum igitur universa Ecclesia virgo sit, sicut dicit Apostolus, quanto digna sunt honore membra, quæ hæc custodiunt etiam in ipsa carne, quæ ipsa tota custodit in fide! Nulla ergo fecunditas carnis sanctæ virginitati, etiam carnis, comparari potest.
+
+[Responsory4]
+R. Hanc amávi et exquisivi sponsam mihi assúmere,
+* Et amátor factus sum formæ illíus.
+V. Fortitúdo et decor induméntum ejus, et ridébit in die novíssimo.
+R. Et amátor factus sum formæ illíus.
+
+[Lectio5]
+Illa autem Virgo coniugatæ mérito præpónitur, quæ nec multitúdine amándam proponit, sed Speciórum forma præ filiis hóminum sic amávit, ut, quia eum sicut Maria concipére carné non posset, ei corde conceptó carnem ætiam íntegram custodíret. Cedat virginitáti omnis fecúnditatis carnis, omnis pudicítia coniugális. Illa non est in potestáte: ista non est in æternitáte. Fecunditátem carnálem non habet libérum arbítrium: pudicítia coniúgalem non habet cælum.
+
+[Lectio6]
+Profécto habébunt magnum áliquid præter céteros in illa communi immortalitáte, qui habent áliquid jam non carnis in carne. Cum enim dixísset Dóminus de spadónibus, Dabo eis in domo mea locum nominátum multo meliorem quam filiorum atque filiarum: continuo subiecit: Nomen aeternum dabo eis; quod utique gloririam quandam propriam excellentemque significat.
+
+[Lectio7]
+@Commune/C6::s/ Ecce.*//
+
+[Lectio8]
+@Commune/C6:Lectio7:s/.* (?=Ecce)//s s/$/~/
+@Commune/C6::s/ Sed sciéndum.*//
+
+[Lectio9]
+@Commune/C6::s/.* (?=Sunt)//
+
+[HymnusM Vespera]
+@:HymnusM Matutinum

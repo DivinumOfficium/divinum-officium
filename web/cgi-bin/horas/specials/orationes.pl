@@ -52,11 +52,11 @@ sub oratio {
     $rule .= "Oratio Dominica\n";
   }
 
-  if ( ($rule =~ /Oratio Dominica/i && (!exists($winner{Oratio}) || $hora eq 'Vespera'))
+  if ($rule =~ /Oratio Dominica/i
     || ($winner{Rank} =~ /Quattuor/i && $dayname[0] !~ /Pasc7/i && $version !~ /196|cist/i && $hora eq 'Vespera'))
   {
     my $name = "$dayname[0]-0";
-    if ($name =~ /(?:Epi1|Nat)/i && $version !~ /Monastic/) { $name = 'Epi1-0a'; }
+    if ($name =~ /(?:Epi1|Nat)/i && $version ne 'Monastic - 1930') { $name = 'Epi1-0a'; }
     %w = %{setupstring($lang, subdirname('Tempora', $version) . "$name.txt")};
   }
 
@@ -178,6 +178,8 @@ sub oratio {
             push(@s, '$Kyrie', '$pater secreto', "_");
           }
         }
+      } elsif ($winner =~ /C12/ && $version !~ /19[56]|cist/i) {
+        push(@s, '$Kyrie');
       }
 
       if ($priest) {
@@ -309,6 +311,7 @@ sub oratio {
               && $winner =~ /Sancti/i
               && $winner !~ /08\-14|06\-23|06\-28|08\-09/)
           ) {
+            setbuild2("Discarded from winner: $ic");
             next;
           }
           if ($ic !~ /^!/) { $ic = "!$ic"; }
@@ -316,11 +319,15 @@ sub oratio {
           my $key = ($ic =~ /$sundaystring/i)
             ? (
               $version !~ /trident/i
-              ? 3000                                  # Sundays are all privilegde commemorations under DA
+              ? 3000                                  # Sundays are all privilegded commemorations under DA
               : $version !~ /altovadensis/i ? 7100    # Dom. min.
               : 6100                                  # Sundays are below MM.maj. commemorations for Altovado
             )
-            : ($ic =~ /$octavestring/i) ? $ccind + 7900
+            : ($ic =~ /$octavestring/i) ? (
+              (!$cwinner && $octvespera && $version =~ /divino|1906/i)
+              ? 1000                                  # Concurrent Octaves commemorated on Sunday night are privilegded
+              : $ccind + 7900
+            )
             : $ccind + 9900;
           $cc{$key} = $ic;
           setbuild2("Commemorated from winner: $key");
@@ -458,7 +465,7 @@ sub oratio {
         if (!(-e "$datafolder/$lang/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
         %c = %{officestring('Latin', $commemo, 0)};
 
-        if ($c{Rank} =~ /in.*octavam/i && $octvespera) {
+        if ($c{Rank} =~ /in.*octavam|post Octavam Asc/i && $octvespera) {
           $c = getcommemoratio($commemo, $octvespera, $lang);
           setbuild2("Substitute Commemoratio of Octave to $octvespera");
         } else {
@@ -618,7 +625,17 @@ sub delconclusio {
   my $ostr = shift;
   my $conclusio = shift;
 
-  if ($ostr =~ s/^(\$(?!Oremus).*?(\n|$)((_|\s*)(\n|$))*)//m) {
+  if ($ostr =~ /\$Per/s && $ostr =~ /\$Qui/s && $version !~ /196/) {
+    if ($ostr =~ /(.*?)(\n\$Per [^\n\r]*?\s*)$/s) {
+      $conclusio = $2;
+      $ostr = $1;
+      $ostr =~ s/\$Qui [^\n\r]*\s*//;
+    } elsif ($ostr =~ /(.*?)(\n\$Qui [^\n\r]*?\s*)$/s) {
+      $conclusio = $2;
+      $ostr = $1;
+      $ostr =~ s/\$Per [^\n\r]*\s*//;
+    }
+  } elsif ($ostr =~ s/^(\$(?!Oremus).*?(\n|$)((_|\s*)(\n|$))*)//m) {
     $conclusio = $1;
   }
 
@@ -676,6 +693,7 @@ sub getcommemoratio {
     $file = "$file.txt";
     if ($file =~ /^C/) { $file = subdirname('Commune', $version) . "$file"; }
     %c = %{setupstring($lang, $file)};
+    $c{'Versum 3'} = $c{'Versum 1'} if $cwinner =~ /C10/ && $file =~ /C6/;    # GitHub #5293
 
     if ($c{Rank} =~ /;;(ex|vide)\s+(.*)\s*$/i) {
 
@@ -692,6 +710,7 @@ sub getcommemoratio {
         $c{"Ant $i"} ||= $c2{"Ant $i"};
         $c{"Versum $i"} ||= $c2{"Versum $i"};
       }
+      $c{'Versum 3'} = $c{'Versum 1'} if $cwinner =~ /C10/ && $file =~ /C6/;    # GitHub #5293
     }
   } else {
     %c = {};
@@ -771,14 +790,11 @@ sub getcommemoratio {
   postprocess_ant($a, $lang);
   my $v = $w{"Versum $ind"};
 
-  if (!$v && $wday =~ /tempora/i) {
-    $v = getfrompsalterium('Versum', $ind, $lang);
-  }
-
   if ($winner =~ /Epi1\-0a|01\-12t/) {
     my %w = columnsel($lang) ? %winner : %winner2;
     $v = $vespera == 1 && $day == 10 ? $c{'Versum 2'} : $c{'Versum Tertia'};
   }
+
   $v ||=
        $w{'Versum ' . (4 - $ind)}
     || $c{"Versum $ind"}
@@ -830,7 +846,9 @@ sub vigilia_commemoratio {
   my %w = %{setupstring($lang, $fname)};
   my @wrank = split(';;', $w{Rank});
 
-  if ($w{Rank} =~ /Vigili/i) {
+  my $vigilString = &translate("Vigil", $lang);
+
+  if ($w{Rank} =~ /$vigilString/i) {
     $w = $w{Oratio};
 
     if (!$w && $w{Rank} =~ /(?:ex|vide) C1v/) {
@@ -843,7 +861,7 @@ sub vigilia_commemoratio {
   }
   if (!$w) { return ''; }
   my $c = "!" . &translate('Commemoratio', $lang) . ": " . &translate("Vigilia", $lang) . "\n";
-  if ($w{Rank} =~ /Vigili/i) { $c =~ s/\:.*/: $wrank[0]/; }
+  if ($w{Rank} =~ /$vigilString/i) { $c =~ s/\:.*/: $wrank[0]/; }
   if ($w =~ /(\!.*?\n)(.*)/s) { $c = $1; $w = $2; }
   my %p = %{setupstring($lang, 'Psalterium/Special/Major Special.txt')};
   my $a = $p{"Feria Ant 2"};       #$p{"Day$dayofweek Ant 2"};

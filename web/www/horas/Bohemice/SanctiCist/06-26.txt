@@ -1,0 +1,15 @@
+[Officium]
+sv. Jana a Pavla, Mučedníků
+
+[Ant 1]
+V nebi se radují * duše Svatých, jež následovali v Kristových stopách; a protože pro jeho lásku prolili svou krev, proto s Kristem jásají bez konce.
+
+[Lectio6]
+@Sancti/06-26:Lectio5:s/Oni byli.*//
+
+[Lectio7]
+@Sancti/06-26:Lectio5:s/.*(Oni byli)/$1/ s/$/~/
+@Sancti/06-26:Lectio6:s/Jejich smrt.*//
+
+[Lectio8]
+@Sancti/06-26:Lectio6:s/.*(Jejich smrt)/$1/

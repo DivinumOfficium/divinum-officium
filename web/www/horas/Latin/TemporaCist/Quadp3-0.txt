@@ -1,0 +1,123 @@
+@Tempora/Quadp3-0
+
+[Rule]
+12 lectiones
+Psalmi Feria
+Invit5
+
+[Ant 1]
+Vobis datum est * nosse mystérium regni Dei: céteris autem in parábolis, dixit Jesus descípulis suis.
+
+[Invit]
+@TemporaCist/Quadp1-0
+
+[Ant Matutinum 3N]
+Transeúnte Domino, * clamábat cæcus ad eum: Miserére mei, Fili David.
+
+[Lectio1]
+@Tempora/Quadp2-0:Lectio1:1
+@Tempora/Quadp2-0:Lectio3:1-6:s/-15/-13/ s/9 .*? (No[eéèë] )/9 $1/ s/coram me: .*/coram me./
+
+[Lectio2]
+@Tempora/Quadp2-0:Lectio3:s/9-/13-/ s/9 .* coram me: repléta/13 Repléta/s
+
+[Lectio3]
+16 Fenéstram in arca fácies, et in cúbito consummábis summitem ejus: óstium autem arcæ pones ex látere: deórsum, cœnácula, et trístega fácies in ea. 
+17 Ecce ego addúcam aquas dilúvii super terram, ut interfíciam omnem carnem, in qua spíritus vitæ est subter cœlum: univérsa quæ in terra sunt, consuméntur.
+
+[Lectio4]
+@Tempora/Quadp3-0:Lectio1:2-6:s/eo Lot: .*/eo Lot./
+
+[Responsory1]
+R. Quadragínta dies et noctes apérti sunt cæli, et ex omni carne habénte spíritum vitæ 
+* Ingréssa sunt in arcam, et clausit a foris óstium Dóminus.
+V. Noë vero, et fílii ejus, uxor ejus, et uxóres filiórum ejus.
+R. Ingréssa sunt in arcam, et clausit a foris óstium Dóminus.
+
+[Responsory2]
+@Tempora/Quadp2-0:Responsory4
+
+[Responsory3]
+@Tempora/Quadp2-0:Responsory6:s/Arcum meum ponam/Ponam arcum meum/
+
+[Responsory4]
+@Tempora/Quadp2-0:Responsory5
+
+[Lectio5]
+@Tempora/Quadp3-0:Lectio4:s/Ea enim .*//s
+
+[Lectio6]
+@Tempora/Quadp3-0:Lectio4:s/.* Ea enim /Ea enim /s s/$/~/
+@Tempora/Quadp3-0:Lectio5:s/Sed sicut .*//s
+
+[Lectio7]
+@Tempora/Quadp3-0:Lectio5:s/.* Sed sicut /Sed sicut /s
+
+[Lectio8]
+@Tempora/Quadp3-0:Lectio6
+
+[Responsory5]
+@Tempora/Quadp3-0:Responsory1:s/magnificábo .* benedíctus/multiplicábo te/
+
+[Responsory6]
+@Tempora/Quadp3-0:Responsory2:1-2
+V. Cumque sublevásset óculos, apparuérunt ei tres viri stantes juxta eum. 
+@Tempora/Quadp3-0:Responsory2:4
+
+[Responsory7]
+R. Tentávit Dóminus Abraham, et dixit ad eum: Tolle fílium tuum, quem díligis, Isaac, et offer illum ibi in holocáustum,
+* Super unum móntium, quem díxero tibi.
+@Sancti/02-22:Responsory8:3
+R. Super unum móntium, quem díxero tibi.
+
+[Responsory8]
+@Tempora/Quadp3-0:Responsory4:s/eo/novi/g
+
+[Lectio9]
+@Tempora/Quadp3-0:Lectio7:s/Sed quia .*//s
+
+[Lectio10]
+@Tempora/Quadp3-0:Lectio7:s/.* (Sed quia)/$1/s
+
+[Lectio11]
+@Tempora/Quadp3-0:Lectio8:s/Cæcum .*//s
+
+[Lectio12]
+@Tempora/Quadp3-0:Lectio8:s/.* (Cæcum )/$1/s
+
+[Responsory9]
+@Tempora/Quadp3-0:Responsory6
+
+[Responsory10]
+R. Veni hódie ad fontem aquæ, et orávi Dóminum, dicens: Dómine, Deus Abraham,
+* Tu prósperum fecísti desidérium meum.
+@Tempora/Quadp3-0:Responsory7:3
+R. Tu prósperum fecísti desidérium meum.
+
+[Responsory11]
+@Tempora/Quadp3-0:Responsory9:1-2:s/$/~/
+@Tempora/Quadp3-0:Responsory9:3:s/\* // s/Dómine/Rabbóni/
+@Tempora/Quadp3-0:Responsory9:4-5:s/duci/addúci/ s/$/~/
+@Tempora/Quadp3-0:Responsory9:3:s/\* // s/Dómine/Rabbóni/
+
+[Responsory12]
+@Tempora/Quadp3-4:Responsory1
+
+[Ant Laudes]
+Déxtera Dómini * virtútem fáciat, ut cum impúlsus fúero, cadéntem me suscípiat.
+
+[Responsory Laudes]
+@TemporaCist/Quadp1-0
+
+[Ant 2]
+Cæcus sedébat * secus viam, et clamábat: Miserére mei, fili David.
+
+[Ant Prima]
+Tradétur Géntibus * ad illudéndum, et flagellándum, et crucifigéndum.
+
+[Ant Tertia]
+Ecce ascéndimus * Jerosólymam, et consummabúntur ómnia, quæ scripta sunt per Prophétas de Fílio hóminis.
+
+[Ant Sexta]
+Iter faciénte * Jesu, dum appropinquáret Jericho, cæcus clamábat ad eum, ut lumen recípere mererétur.
+

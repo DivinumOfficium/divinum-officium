@@ -1,0 +1,26 @@
+[Officium]
+Ss. Siricii I et Gelasii I Pontificum et Confessorum
+
+[Rank]
+;;Duplex;;3;;vide aliquibus locis/C4b-3
+
+[Rule]
+vide aliquibus locis/C4b-3
+9 lectiones
+
+[Name]
+Sirícii et Gelásii
+(sed communi Summorum Pontificum)
+Sirícium et Gelásium
+
+[Lectio4]
+@Sancti/Urbis/10-31-Siricius:: s/$/~/
+@Sancti/Urbis/10-31-Siricius:Lectio5
+
+[Lectio5]
+@Sancti/Urbis/10-31-Siricius:Lectio6: s/$/~/
+@Sancti/Urbis/11-29-GelasiusI:Lectio4
+
+[Lectio6]
+@Sancti/Urbis/11-29-GelasiusI:Lectio5: s/$/~/
+@Sancti/Urbis/11-29-GelasiusI:Lectio6

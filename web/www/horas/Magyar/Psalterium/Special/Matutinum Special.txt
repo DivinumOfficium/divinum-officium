@@ -424,3 +424,13 @@ $Deo gratias
 _
 V. Kezeikben hordoznak téged.
 R. Hogy kőbe ne üssed lábadat.
+
+[MM Capitulum Quad] (rubrica cisterciensis)
+@Tempora/Quad1-0:Capitulum Laudes
+_
+@Psalterium/Special/Minor Special:Responsory Quad TertiaM_
+
+[MM Capitulum Quad5] (rubrica cisterciensis)
+@Tempora/Quad6-0:Capitulum Sexta:s/(v\. .*?\.) .*/$1/ s/-9//
+_
+@Psalterium/Special/Minor Special:Responsory Quad5 SextaC_

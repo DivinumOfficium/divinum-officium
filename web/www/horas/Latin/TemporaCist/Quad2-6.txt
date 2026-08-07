@@ -1,0 +1,17 @@
+@Tempora/Quad2-6
+
+[Lectio2]
+@Tempora/Quad2-6:Lectio2:s/Non invideámus .*//
+
+[Lectio3]
+@Tempora/Quad2-6:Lectio2:s/.* (Non invideámus)/$1/ s/$/~/
+@Tempora/Quad2-6:Lectio3:s/Opus .*//
+
+[Responsory1]
+@TemporaCist/Quad2-0:Responsory4
+
+[Responsory2]
+@TemporaCist/Quad2-0:Responsory5
+
+[Responsory3]
+@TemporaCist/Quad2-0:Responsory6

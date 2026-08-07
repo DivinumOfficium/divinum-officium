@@ -1,0 +1,9 @@
+[Lectio1]
+@Tempora/Quad3-3::s/Praví: .*//
+
+[Lectio2]
+@Tempora/Quad3-3:Lectio1:s/.* (?=Praví: )//s s/$/~/
+@Tempora/Quad3-3:Lectio2:s/Úcta .*//
+
+[Lectio3]
+@Tempora/Quad3-3:Lectio2:s/.* (?=Úcta )//

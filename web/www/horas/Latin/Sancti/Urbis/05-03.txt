@@ -1,0 +1,7 @@
+@Sancti/05-03
+
+[Lectio8]
+@Sancti/05-03::s/Inténdat.*//
+
+[Lectio9]
+@Sancti/05-03:Lectio8:s/.* Inténdat/Inténdat/

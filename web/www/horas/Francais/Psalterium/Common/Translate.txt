@@ -20,10 +20,10 @@ Gloire soit au Père
 Donnez-leur, Seigneur
 
 [Alleluia]
-Alleluia.
+Alléluia.
 
 [Laus tibi]
-Louange à Vous Seigneur, Roi d'éternelle gloire.
+Louange à Vous Seigneur, Roi d’éternelle gloire.
 
 [Dominus vobiscum]
 Le Seigneur soit avec vous.
@@ -59,7 +59,7 @@ Seigneur Vous ouvrirez
 Bénissons le Seigneur
 
 [Benedicamus Domino1]
-Bénissons le Seigneur, alleluia, alleluia
+Bénissons le Seigneur, alléluia, alléluia
 
 [Fidelium animae]
 Que par la miséricorde de Dieu
@@ -92,7 +92,7 @@ Vous qui étant
 Qui, avec Vous,
 
 [Sacrosancta]
-A la Très Sainte
+À la Très Sainte
 
 [Benedictio]
 Bénédiction
@@ -113,13 +113,13 @@ Leçon
 Avant
 
 [Divinum Officium]
-L'Office Divin
+L’Office Divin
 
 [Post]
 Après
 
 [Commemoratio]
-Commémoraison
+Commémoraison de
 
 [Antiphonae]
 Antiennes
@@ -146,7 +146,7 @@ Antienne finale à la très Sainte Vierge Marie
 Que le secours divin
 
 [Kyrie]
-Seigneur ayez pitié
+Seigneur, ayez pitié
 
 [Dominica]
 Dimanche
@@ -154,11 +154,17 @@ Dimanche
 [Octava]
 Octave
 
+[Nocturn]
+Nocturne
+
+[Ad Nocturnum]
+Au Nocturne
+
 [Adjutorium nostrum]
 Notre secours est
 
 [Requiescant]
-Qu'ils reposent
+Qu’ils reposent
 
 [A_porta_inferi]
 Des portes
@@ -167,7 +173,7 @@ Des portes
 Verset (à la place du Capitule)
 
 [secreto]
-silencieusement
+Silencieusement
 
 [Pretiosa]
 Elle est précieuse
@@ -176,7 +182,7 @@ Elle est précieuse
 J’ai dit …
 
 [Preces dominicales primae]
-J'implore Votre …
+J’implore Votre …
 
 [Preces dominicales secundae]
 Seigneur, daignez …
@@ -218,13 +224,19 @@ Salut, ô Reine
 #Psaumes avec lectures
 
 [#De Officio Capituli]
-#L'Office du Chapitre
+#L’Office du Chapitre
+
+[#Martyrologium]
+#Martyrologe
 
 [#Capitulum Hymnus Versus]
-#Capitule Hymne Versets
+#Capitule Hymne Verset
+
+[#Capitulum Responsorium Versus]
+#Capitule Répons Verset
 
 [#Capitulum Versus]
-#Capitule Versets
+#Capitule Verset
 
 [#Canticum]
 #Cantique

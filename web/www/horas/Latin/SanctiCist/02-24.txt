@@ -1,0 +1,43 @@
+@Sancti/02-24
+
+[Rule]
+12 lectiones
+
+[Lectio1]
+@Sancti/02-24:Lectio1:s/-18/-17/ s/18 .*//s
+
+[Lectio2]
+@Sancti/02-24:Lectio1:2-6 s/-18/-20/ s/15-/18-/ s/15 .*18 /18 /s
+@Sancti/02-24:Lectio2:s/!.*// s/21 .*//s
+
+[Lectio3]
+@Sancti/02-24:Lectio2:s/-22/-23/ s/19-/21-/ s/19 .*21 /21 /s
+@Sancti/02-24:Lectio3:s/!.*// s/24 .*//s
+
+[Lectio4]
+@Sancti/02-24:Lectio3:s/23-/24-/ s/23 .*24 /24 /s
+
+[Lectio5]
+@CommuneCist/C1
+
+[Lectio6]
+@CommuneCist/C1
+
+[Lectio7]
+@CommuneCist/C1
+
+[Lectio8]
+@CommuneCist/C1
+
+[Lectio9]
+@Sancti/02-24:Lectio7:s/Tóllite .*//s
+
+[Lectio10]
+@Sancti/02-24:Lectio7:s/.* Tóllite /Tóllite /s s/$/~/
+@Sancti/02-24:Lectio8:s/Et quantam .*//s
+
+[Lectio11]
+@Sancti/02-24:Lectio8:s/.* Et quantam /Et quantam /s
+
+[Lectio12]
+@Sancti/02-24:Lectio9:s/Nam, qui .*//

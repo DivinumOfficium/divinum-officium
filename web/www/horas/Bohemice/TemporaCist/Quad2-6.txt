@@ -1,0 +1,6 @@
+[Lectio2]
+@Tempora/Quad2-6:Lectio2:s/Nezáviďme .*//
+
+[Lectio3]
+@Tempora/Quad2-6:Lectio2:s/.* (Nezáviďme)/$1/ s/$/~/
+@Tempora/Quad2-6:Lectio3:s/Jsi dílem .*//

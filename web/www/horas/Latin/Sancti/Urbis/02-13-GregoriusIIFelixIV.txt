@@ -1,0 +1,25 @@
+[Officium]
+Ss. Gregorii II et Felicis IV Pontificum et Confessorum
+
+[Rank]
+;;Duplex;;3;;vide aliquibus locis/C4b-3
+
+[Rule]
+vide aliquibus locis/C4b-3;
+9 lectiones
+
+[Name]
+Gregórii et Felícis
+(sed communi Summorum Pontificum)
+Gregórium et Felícem
+
+[Lectio4]
+@Sancti/Urbis/02-13-GregoriusII::s/$/~/
+@Sancti/Urbis/02-13-GregoriusII:Lectio5
+
+[Lectio5]
+@Sancti/Urbis/02-13-GregoriusII:Lectio6
+
+[Lectio6]
+@Sancti/Urbis/01-30-FelixIV:Lectio4:s/$/~/
+@Sancti/Urbis/01-30-FelixIV:Lectio5

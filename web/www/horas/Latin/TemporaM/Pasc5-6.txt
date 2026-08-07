@@ -1,7 +1,7 @@
-@TemporaM/Pasc5-5
-
-[Rank]
 @Tempora/Pasc5-6
+
+[Rule]
+@TemporaM/Pasc5-5
 
 [Ant Matutinum]
 @Tempora/Pasc5-4::3 s/;;.*//
@@ -39,3 +39,12 @@
 @Tempora/Pasc5-4:Capitulum Sexta
 _
 @Tempora/Pasc5-4:Nocturn 2 Versum
+
+[Capitulum Laudes] (rubrica 1963)
+@TemporaM/Pasc5-5
+
+[Capitulum Sexta] (rubrica 1963)
+@TemporaM/Pasc5-5
+
+[Capitulum Nona] (rubrica 1963)
+@TemporaM/Pasc5-5

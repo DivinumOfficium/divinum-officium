@@ -1,0 +1,23 @@
+[Officium]
+S. Erasmi Episcopi et Martyrum
+
+[Rank]
+;;Simplex;;1.1;;vide C2
+
+[Rule]
+vide C2;
+
+[Name]
+Erásmi
+
+[Versum 1] (tempore paschali)
+@Commune/C2p:Versum 2
+
+[Ant 1] (tempore paschali)
+@Commune/C2p:Ant 2
+
+[Versum 2] (tempore paschali)
+@Commune/C2p:Versum 1
+
+[Ant 2] (tempore paschali)
+@Commune/C2p:Ant 1

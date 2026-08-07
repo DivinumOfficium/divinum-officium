@@ -1,0 +1,25 @@
+@Tempora/Quad4-3
+
+[Lectio1]
+@Tempora/Quad4-3::s/Si enim .*//
+
+[Lectio2]
+@Tempora/Quad4-3:Lectio1:s/.* (?=Si enim )//s 
+
+[Lectio3]
+@Tempora/Quad4-3:Lectio2:s/Lavit .*//
+
+[Responsory1]
+@TemporaCist/Quad4-0:Responsory7
+
+[Responsory2]
+@TemporaCist/Quad4-0:Responsory8
+
+[Responsory3]
+@TemporaCist/Quad4-0:Responsory9
+
+[Ant 2]
+Rabbi, quis peccávit * hic, aut paréntes ejus, quod cæcus nascerétur? Respóndit Jesus, et dixit: Neque hic peccávit, neque paréntes ejus: sed ut manifesténtur ópera Dei in illo.
+
+[Ant 3]
+Dixi vobis jam, * et audístis, lutum mihi pósuit ille qui dícitur Jesus.

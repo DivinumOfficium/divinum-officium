@@ -1,0 +1,63 @@
+[Officium]
+Feria ij. infra hebdomadam Resurrectionis
+
+[Rank]
+;;Duplex I classis;;7;;
+
+[Rule] 
+No commemoratio
+(feria 2 aut feria 3) Psalmi Dominica 
+no prima vespera
+
+[Oratio]
+@Tempora/Pasc0-1
+
+[Benedictio]
+Sancta Christi Resurréctio, † sit nobis salus et protéctio. †
+
+[MM Capitulum]
+!2 Cor 5, 14-15
+v. Cháritas Christi urget nos: æstimántes hoc, quóniam si unus pro ómnibus mórtuus est, * ergo omnes mórtui sunt: et pro ómnibus mórtuus est Christus: † ut, et qui vivunt, jam non sibi vivant, * sed ei, qui pro ipsis mórtuus est, et resurréxit.
+$Deo gratias
+_
+@Psalterium/Special/Minor Special:Versum Pasch Tertia
+
+[Ant Laudes]
+@TemporaCist/Pasc0-0
+
+[Capitulum Laudes]
+@TemporaCist/Pasc0-0
+
+[Versum 2]
+@TemporaCist/Pasc0-0
+
+[Ant 2]
+Qui sunt hi sermónes * quos confértis ad ínvicem ambulántes, et estis tristes? allelúia, allelúia. Respóndens unus, cui nomen Cléophas, dixit ei: Tu solus peregrínus es in Jerúsalem, et non cognovísti quæ facta sunt in illa his diébus? allelúia. Quibus ille dixit: Quæ? Et dixérunt: De Jesu Nazaréno, qui fuit vir Prophéta, potens in ópere et sermóne coram Deo, et omni pópulo, allelúia, allelúia.
+
+[Responsory TertiaM]
+@TemporaCist/Pasc0-0:Versum 2
+
+[Capitulum Sexta]
+@TemporaCist/Pasc0-0
+
+[Responsory SextaM]
+@TemporaCist/Pasc0-0:Versum 2
+
+[Capitulum Nona]
+@TemporaCist/Pasc0-0
+
+[Responsory NonaM]
+@TemporaCist/Pasc0-0:Versum 2
+
+[Ant Vespera 3] (feria 2 aut feria 3)
+@TemporaCist/Pasc0-0:Ant Vespera:s/$/;;109/
+;;110
+;;111
+;;112
+
+[Versum 3]
+@TemporaCist/Pasc0-0:Versum 2
+
+[Ant 3] 
+Nonne cor nostrum * ardens erat in nobis de Jesu, dum loquerétur nobis in via? allelúia.
+

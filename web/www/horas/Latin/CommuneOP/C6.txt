@@ -1,0 +1,154 @@
+@Commune/C6
+
+[Ant Vespera]
+@CommuneCist/C6:Ant Matutinum:11 s/;;.*/.;;112;116;145;146;147/
+
+[Responsory Vespera 1]
+@Commune/C7:Responsory8::1-4
+&Gloria
+@Commune/C7:Responsory8::4 s/ (?:.*?, .*?,) (.)/ \u$1/
+
+[Versum 1]
+@Commune/C6:Versum 2
+
+[Ant 1]
+Ista est Virgo sapiens, quam Dominus vigilantem invenit: quae accepta lampade sumpsit secum oleum, et veniente Domino introivit cum eo ad nuptias.
+
+[Oratio]
+@Commune/C6-1:Oratio
+
+[Oratio alia]
+Omnípotens sempitérne Deus, qui infírma mundi éligis, ut fórtia quæque confúndas: concéde propítius; ut, qui beátæ N. Vírginis et Mártyris tuæ solémnia cólimus, ejus apud te patrocínia sentiámus.
+
+[Invit]
+Agnum, sponsum Vírginum, * Veníte, adorémus Dóminum Jesum Christum.
+
+[Invit minor]
+@Commune/C6:Invit
+
+[AntMatutinum9]
+Hæc est Virgo sápiens, * atque gloriósa, quia Dóminus ómnium diléxit eam.;;97
+
+[Ant Matutinum]
+@Commune/C6:Ant Matutinum:2 s/;;.*/;;8/
+@CommuneM/C6:AntMatutinumM:1 s/;;.*/;;18/
+@Commune/C6:Ant Matutinum:1 s/;;.*/;;23/
+@Commune/C6:Ant Matutinum:4
+@Commune/C6:Ant Matutinum:5
+@Commune/C7:Ant Matutinum2:1 s/;;.*/;;86/
+@CommuneCist/C6:Ant Matutinum:9
+@CommuneCist/C6:Ant Matutinum:6 s/;;.*/;;96/
+@:AntMatutinum9
+
+[Nocturn 1 Versum]
+@Commune/C6:Versum 2
+
+[Lectio1]
+@Commune/C6:Lectio1 in 2 loco
+
+[Lectio2]
+@Commune/C6:Lectio2 in 2 loco
+
+[Responsory2]
+@Commune/C6:Responsory4:1-2
+@Commune/C6a-1:Tractus:3
+@Commune/C6:Responsory4:4
+
+[Lectio3]
+@Commune/C6:Lectio3 in 2 loco
+
+[Responsory3]
+@Commune/C6::1-4
+&Gloria
+@Commune/C6::4 s/.*?, (.)/R. \u$1/
+
+[Lectio4]
+Sermo sancti Máximi Episcopi
+!Homil. de S. Agnete
+Cum in toto mundo virgineus flos Mariæ immarcescíbiles corónas innéctat, et sceptrígeram pudóris aulam immaculáto consérvet afféctu: eo usque intégritas perseverávit ad palmam, ut in puéllis trophæum sanctitátis arríperet, et per vestígia Matris Vírgínis ad cæléstem thálamum perveníret. O quam imitábile virginíbus, Virgo, tui amóris tradidísti exémplum, contemnéndo mundi divítias, exsecrándo carnis concupiscéntias, et solam Christi pulchritudininem adamándo!
+
+[Responsory4]
+R. Grata facta est a Dómino in certámine, quia apud Deum et apud hómines glorificáta est: in conspéctu princípum loquebátur sapiéntiam,
+* Et Dóminus ómnium diléxit eam.
+V. Erécta namque in virtútis cúlmine, torménta derísit, práemia calcávit.
+R. Et Dóminus ómnium diléxit eam.
+
+[Lectio5]
+Beatíssima hæc Virgo magnum de se pudicitiæ excitávit exemplum, cum virginitátem prætulit vitæ, trophæum crucis Christi arrīpuit, et tam contra libidínes quam étiam contra supplicia univérsa, fide pótius armáta quam ferro, fórtiter dimicicávit et vicit. Nescit amáre áliquid quod transit: et dum nimis virginitátem díligit, nec ludíbria, nec flammas, nec supplícia, nec carnífices méuit: postrémo nec gládium furéntis percussóris expávit.
+
+[Responsory5]
+R. Hæc est Virgo sapiens, quam Dominus vigilantem invenit: quae accepta lampade sumpsit secum oleum:
+* Et veniente Domino introivit cum eo ad nuptias.
+V. Ista est una de número prudéntum, quæ aptávit lámpades suas.
+R. Et veniente Domino introivit cum eo ad nuptias.
+
+[Lectio6]
+Veni jam, Virgo, ad thálamum, quem quæssísti: ut sponsam te virgínítas immaculáta cómprobet Christi, et Mártyrem conféssio probáta consígnet. Felix catérva vírginum, quibus stúdium est tuæ sequi confessiónis vestígia! Itaque o splendída Christo, pulchra Dei Fílio, et ómnibus Angelis atque Archángelis grata: ut nostri meminísse dignéris, quibus póssumus, précibus exorámus: ut nobis ille tríbuat peccatórum indulgéntiam, qui tibi tuórum ómnium labórum trádidit palmam.
+
+[Responsory6]
+@CommuneCist/C6:Responsory8
+
+[Lectio7]
+@Commune/C7::s/; quem.*/.~/
+@Commune/C7:Lectio8:s/ Deprædári.*//
+
+[Responsory7]
+R. Audívi vocem de cælo veniéntem: veníte, omnes virgines sapientíssimæ,
+* Oleum recóndite in vasis vestris, dum sponsus advénerit.
+V. Média nocte clamor factus est: Ecce sponsus venit.
+R. Oleum recóndite in vasis vestris, dum sponsus advénerit.
+
+[Lectio8]
+@Commune/C7::s/.* (?=Deprædári)// s/, cum.*/:~/
+sed ut sic sit opus in público, quá tenus intentio máneat in occulto. Rursum cæléste regnum negotiatóri hómini símile dícitur, qui bonas margaritas quærit, sed unam pretiosam învenit, quam vidélicet invéntam, omnia vendens, emit: quia qui cælestis vitæ dulcédinem, in quantum possib ilítas admíttit, perfécte cognóverit: ea, quæ in terrénis amáverat, libénter cuncta derelínquit.
+
+[Responsory8]
+@Commune/C6a:Responsory1
+
+[Lectio9]
+Recte per Salomónem dícitur: Fortis est ut mors diléctio: quia, sicut mors corpus interimit, sic ab amore rerum corporalium æternæ vitæ cáritas occidit. Nam quem perfecte absorbuérit, ad terræna foris desidéria velut insensibile reddit. Nec enim Sancta hæc, cujus hodie natalitia celebrámus, mori pro Dímino potuisset in córporé, si prius a terrēnis desidēriis mórtua non fuisset in mente.  Erętus namque in virtútis culmine ánimus tormenta despēxit, præmia calcávit.  Quid inter hæc nos barbáti et débiles dícimus, qui ire ad regna cælstia puéllas per ferrum vidémus, quos ira súperat, superbia inflat, ambitio pertúrbat, luxuria ínquitat? Qui si adipisci regna cælórum per bella persecutionum non possumus, hoc ipsum nobis turpe sit, quod Deum núlomus saltem per paccem sequi.
+
+[Responsory9]
+@Commune/C7:Responsory8:1-4
+&Gloria
+@Commune/C7:Responsory8:4 s/.*, (.)/R. \u$1/
+
+[Capitulum Laudes]
+@Commune/C7
+
+[Versum 2]
+@Commune/C6b:Versum 1
+
+[Ant 2]
+@Commune/C6:Responsory1:3 s/V. //
+
+[Responsory Breve Tertia]
+@Commune/C6:Responsory2:1-2 s/\*/V./ s/ (in) /\n* \u$1 / 
+@Commune/C6:Responsory2:1 s/.* (in) /R. \u$1 / 
+&Gloria
+@Commune/C6:Responsory2:1
+
+[Versum Tertia]
+@Commune/C6:Versum 1
+
+[Responsory Breve Sexta]
+@Commune/C6:Responsory Breve Tertia
+
+[Versum Sexta]
+@Commune/C6:Nocturn 2 Versum
+
+[Capitulum Nona]
+@Commune/C6a:Lectio Prima
+$Deo gratias
+
+[Responsory Breve Nona]
+@Commune/C6:Responsory Breve Sexta
+
+[Ant Vespera 3]
+@Commune/C6:Ant Vespera:1 s/;.*/;;109;112;121;126;147/
+
+[Hymnus Vespera]
+@Commune/C6:HymnusM Matutinum
+
+[Ant 3]
+@CommuneM/C6:AntMatutinumM:3 s/;;.*//

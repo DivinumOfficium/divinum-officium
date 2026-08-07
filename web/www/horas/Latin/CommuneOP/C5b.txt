@@ -1,0 +1,17 @@
+@CommuneOP/C4
+
+[Officium]
+Commune Abbatis
+
+[Oratio]
+@Commune/C5b
+
+[Lectio7]
+@Commune/C1::s/ Non.*//
+
+[Lectio8]
+@Commune/C1:Lectio7:s/.* (?=Non)//s s/$/~/
+@Commune/C1::s/ Et.*//
+
+[Lectio9]
+@Commune/C1:Lectio8:s/.* (?=Et)// s/$/~/

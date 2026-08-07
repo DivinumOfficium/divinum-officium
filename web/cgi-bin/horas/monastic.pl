@@ -87,6 +87,7 @@ sub psalmi_matutinum_monastic {
     my $i = $dayofweek || 1;
     my $src = 'Psalterium';
     if ($i > 3) { $i -= 3; }
+    if ($version =~ /cist/i) { $i = 1; }
 
     if ($name ne 'Asc') {
       ($psalmi[6], $psalmi[7]) = split("\n", $psalmi{"$name $i Versum"});
@@ -115,6 +116,16 @@ sub psalmi_matutinum_monastic {
   {
     my %com = columnsel($lang) ? %commune : %commune2;
     ($psalmi[6], $psalmi[7]) = split("\n", $com{"Nocturn 1 Versum"});
+    setbuild("$commune", "Nocturn 1 Versum", 'subst');
+  }
+
+  #** CIST: change of versicle for Simplex feast (iij. Lect. et M.)
+  if ( $version =~ /Cist/i
+    && exists($winner{'Nocturn 1 Versum'})
+    && $winner{Rule} =~ /3 lectio/i)
+  {
+    my %wa = (columnsel($lang)) ? %winner : %winner2;
+    ($psalmi[6], $psalmi[7]) = split("\n", $wa{"Nocturn 1 Versum"});
     setbuild("$commune", "Nocturn 1 Versum", 'subst');
   }
 
@@ -182,7 +193,7 @@ sub psalmi_matutinum_monastic {
       || ($dayname[1] =~ /in Vigilia (?:Pent|Epi)/i && $version !~ /196/)
 
     )
-    && !($dayname[0] =~ /Pasc0/ && $dayofweek > 2)
+    && !($dayname[0] =~ /Pasc0/ && ($dayofweek > 2 && $version !~ /Cist/i))
   ) {
 
     if (exists($winner{'Ant Matutinum'})) {
@@ -196,7 +207,10 @@ sub psalmi_matutinum_monastic {
 
         if ($i == 0 || $i == 8) {
           $p = "$p[$i]$p";
-        } elsif ($version =~ /Cist/i && ($i == 2 || $i == 4)) {
+        } elsif ($version =~ /Cist/i
+          && $dayname[0] !~ /Pasc/
+          && ($i == 2 || $i == 4))
+        {
 
           # CIST: there are three Ant. for first Nocturn
           if ($i == 4 && ($dayofweek == 1 || $dayofweek == 4)) {
@@ -285,8 +299,8 @@ sub psalmi_matutinum_monastic {
       setbuild2("Lectio unica de Sancto");
     }
     push(@s, "\n");
-  } elsif ($dayname[0] =~ /(Pasc[1-6]|Pent)/i
-    && $winner{Rank} !~ /quat(t?)uor|Dominica/i
+  } elsif ($dayname[0] =~ /(Pasc[0-7]|Pent)/i
+    && $winner{Rank} !~ /quat(t?)uor.*(Adv|Quad)|Dominica/i
     && $rule !~ /(3|12) lectiones/
     && $version =~ /Cist/i
     && ($winner =~ /Tempora/i || $winner{Rank} =~ /Vigil|infra Oct/i))
@@ -409,20 +423,28 @@ sub absolutio_benedictio {
     @a = split("\n", $m{Benedictio});
     $abs = $a[0];
     $ben = $a[3];
-    setbuild2('Special benedictio');
+    setbuild2('Special benedictio B.M.V.');
   } else {
     my %ben = %{setupstring($lang, 'Psalterium/Benedictions.txt')};
     my $i = dayofweek2i();
     my %w = (columnsel($lang)) ? %winner : %winner2;
-    @a = split(/\n/, $ben{"Nocturn $i"});
     my @abs = split(/\n/, $ben{Absolutiones});
+
+    @a = split(/\n/, $ben{"Nocturn $i"});
+
     $abs = $abs[dayofweek2i() - 1];
     $ben = $a[3 - ($i == 3)];
+
+    # CIST: proper Benedictions on summer Ferias
+    if ($dayofweek != 0 && $version =~ /Cist/i) {
+      my @ben_feria = split("\n", $ben{Feria});
+      $ben = $ben_feria[$dayofweek - 1];
+    }
 
     # CIST: some days have their proper Benedictio
     if (exists($w{Benedictio}) && $version =~ /Cist/i) {
       $ben = $w{Benedictio};
-      setbuild2('Special Benedictio ex proprio');
+      setbuild2('Benedictio ex proprio');
     }
   }
 
@@ -466,7 +488,7 @@ sub legend_monastic {
       $resp = "Responsory for ne lesson not found!";
     }
   }
-  $resp = responsory_gloria($resp, 3);
+  $resp = responsory_gloria($resp, 3, $lang);
   matins_lectio_responsory_alleluia($resp, $lang) if alleluia_required($dayname[0], $votive);
   push(@s, $resp);
 }
@@ -500,6 +522,10 @@ sub brevis_monastic {
   }
   $lectio =~ s/&Gloria1?/&Gloria1/;
   $lectio =~ s/&Gloria.*//s if $version =~ /Cist/i;
+
+  # In Cistercian books, the asterisks in R.br. are always red
+  $lectio =~ s{(R\..*)\*}{$1<FONT COLOR="RED">*</FONT>}g if $version =~ /Cist/i;
+
   if ($lectio) { $lectio = "#Lectio brevis\n$lectio" }
   push(@s, $lectio);
 }
@@ -518,7 +544,7 @@ sub lectioE {
     $evang .= " in $1 loco" if $1 > 1;
   }
 
-  $win =~ s/(?:M|OP)//g;    # no M or OP folder in missa
+  $win =~ s/(?:M|OP|Cist)//g;    # no M or OP folder in missa
   my %missa = %{setupstring("../missa/$lang", $win)};
 
   if (exists($w{Evangelium})) {    #** get evangelium from Winner
@@ -570,7 +596,18 @@ sub lectioE {
   @e = grep { !/^!/ } @e;     # remove rubrics
   $e[0] =~ s/^(v. )?/v. /;    # add initial to text
 
-  join("\n", "v. $begin", join(' ', @e));
+  if ($version =~ /Praedicatorum/) {    # cut on ¶ mark
+    $e[0] =~ s/\s*¶.*//s;
+  } else {                              # remove ¶ mark
+    $e[0] =~ s/\s*¶//s;
+  }
+
+  # In the CIST version, before the Gospel reading, there is a Dominus vobiscum dialog
+  if ($version =~ /Cist/i) {
+    join("\n", Dominus_vobiscum($lang), "\n", "v. $begin", join(' ', @e));
+  } else {
+    join("\n", "v. $begin", join(' ', @e));
+  }
 }
 
 sub lectioE_required {
@@ -587,9 +624,9 @@ sub regula_vel_evangelium {
   my %r = %{setupstring($lang, 'Regula/OrdoPraedicatorum.txt')};
 
   if (lectioE_required()) {
-    my %b = %{setupstring($lang, 'Psalterium/Benedictions.txt')};
-    my @b = split /\n/, $b{'Nocturn 3'};
-    push @output, $b[1], '$Amen';
+    my $b = prayer('Divinum auxilium', $lang);
+    my @b = split /\n/, $b;
+    push @output, $b[0], '$Amen';
     push @output, lectioE($lang);
   } else {
     push @output, $r{Benedictio}, '$Amen';

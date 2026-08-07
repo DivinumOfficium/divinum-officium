@@ -3,6 +3,9 @@
 [Rule]
 12 lectiones
 
+[Responsory Vespera]
+@:Responsory Breve Tertia
+
 [Responsory Vespera 1]
 R.br. Hódie sciétis * Quia véniet Dóminus.
 R. Hódie sciétis * Quia véniet Dóminus.
@@ -14,8 +17,10 @@ R. Hódie sciétis * Quia véniet Dóminus.
 [Responsory Vespera 1] (rubrica Barroux)
 @:RV1:s/Responsorium. O Juda/R. Judæa/ s/ \*/\n*/
 
-[Responsory Vespera]
-@:Responsory Breve Tertia
+[RV1]
+Responsorium. O Juda et Jerúsalem, nolíte timére: * Cras egrediémini, et Dóminus erit vobíscum.
+V. Constántes estóte, vidébitis auxílium Dómini super vos.
+R. Cras egrediémini, et Dóminus erit vobíscum.
 
 [AntMatutinumM]
 Elevámini, * portæ æternáles, † et introíbit Rex glóriæ.;;23
@@ -112,10 +117,8 @@ R. Hoc erat in princípio apud Deum.
 [Responsory12]
 @Sancti/12-25:Responsory8
 
-[RV1]
-Responsorium. O Juda et Jerúsalem, nolíte timére: * Cras egrediémini, et Dóminus erit vobíscum.
-V. Constántes estóte, vidébitis auxílium Dómini super vos.
-R. Cras egrediémini, et Dóminus erit vobíscum.
+[Evangelium]
+@Sancti/09-08
 
 [Responsory TertiaM]
 @Sancti/12-25:Versum Nona
@@ -125,6 +128,3 @@ R. Cras egrediémini, et Dóminus erit vobíscum.
 
 [Responsory NonaM]
 @Sancti/12-25:Versum Sexta
-
-[Evangelium]
-@Sancti/09-08

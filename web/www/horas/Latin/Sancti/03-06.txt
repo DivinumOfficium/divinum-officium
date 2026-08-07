@@ -3,7 +3,7 @@ Ss. Perpetuæ et Felicitatis Martyrum
 
 [Rank]
 ;;Duplex;;3;;vide C7b
-(rubrica innovata)
+(sed rubrica innovata)
 ;;Duplex;;3.91;;vide C7b
 
 [Rule]
@@ -15,7 +15,7 @@ Quarum festum
 Perpétuæ et Felicitátis
 
 [Invit]
-@Commune/C7b::s/N\. et N\./Perpétuæ et Felicitátis./
+@Commune/C7b::s/N\. et N\./Perpétuæ et Felicitátis/
 
 [Lectio1] (rubrica innovata)
 @Commune/C6:Lectio1 in 2 loco

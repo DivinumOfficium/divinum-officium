@@ -1,5 +1,27 @@
-[Rank]
-S. Stephani Abbatis;;iij. Lect. et M.;;1.2;;vide C5b
+[Officium]
+S. Stephani, Abbatis
 
-[Oratio]
-@Commune/C5b::s/N\./Stéphani/
+[Rank]
+;;Simplex;;1.2;;vide C5b
+
+[Rule]
+vide C5b;mtv
+3 lectiones
+
+[Name]
+Stéphani
+
+[Lectio1]
+@CommuneCist/C5:Lectio1S2
+
+[Lectio2]
+Stéphanus Grandimonténsis Ordinis institútor, apud Arvérnos illústri loco natus, a patre viro pio in Itáliam ductus, Milóni Beneventáno Archiepíscopo educándus tráditur. Cujus magistério edóctus, exemplísque eremitárum de Calábria permótus in Aquitániam de summi Pontíficis licéntia revérsus est, et in monte nemoróso, qui Murétum dicitur, sedem fixit. Ibi vitam instítuit puritáte quidem, tantum Angélicæ próximam‚ quantum severitáte supra humánam conversatiónem eréctam.
+
+[Lectio3]
+Hinc cum lucérna accénsa latére non posset sub módio, nonnúlli se ad eum adjunxérunt‚ quibus ómnium virtútum exémplar absolutíssimum se præbuit. Multis de sæculo viam salútis indicávit. Imparem se Sacerdótio réputans Diaconátus tantum offício functus est. Humilitátis ac virginitátis dono præcéllens‚ miri odóris fragrántiam spirábat. Demum cum in Muréti solitúdine quinquagínta annos explevisset, discípulos adhortátus, susceptísque Sacramentórum subsidiis in Dómino requiévit Idibus Februárii: Quem Clemens tértius Sanctórum número adscrípsit.
+
+[Responsory2]
+@CommuneCist/C5:Responsory3
+
+[Responsory3]
+@CommuneCist/C5:Responsory4

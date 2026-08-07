@@ -5,12 +5,14 @@ Sanctæ Familiæ Jesu Mariæ Joseph
 ;;Duplex majus;;5.61
 (sed rubrica 1960)
 ;;Duplex II classis;;5
+(sed rubrica cisterciensis)
+;;Duplex II classis;;4.1
 
 [Rule]
 9 lectiones
 Psalmi Dominica
-Antiphonas horas
-(rubrica 1960)No Sunday Commemoratio
+(nisi rubrica 1962) Antiphonas horas
+(rubrica 196)No Sunday Commemoratio
 Festum Domini
 
 [Ant Vespera]
@@ -391,6 +393,3 @@ Et dicébant: * Unde huic sapiéntia hæc, et virtútes? Nonne hic est fabri fí
 
 [Ant 3]
 María autem * conservábat ómnia verba hæc, cónferens in corde suo.
-
-[Commemoratio 3] (rubrica cisterciensis)
-@Tempora/Epi1-0a:Oratio

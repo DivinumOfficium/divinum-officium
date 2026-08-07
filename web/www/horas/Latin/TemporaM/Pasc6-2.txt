@@ -1,7 +1,7 @@
-@TemporaM/Pasc5-5
-
-[Rank]
 @Tempora/Pasc6-2
+
+[Rule]
+@TemporaM/Pasc5-5
 
 [Oratio] (rubrica 196)
 @Tempora/Pasc6-0
@@ -37,3 +37,17 @@
 
 [Responsory3]
 @Tempora/Pasc5-4:Responsory6
+
+[MM Capitulum] (rubrica tridentina aut rubrica divino)
+@Tempora/Pasc5-4:Capitulum Sexta
+_
+@Tempora/Pasc5-4:Nocturn 2 Versum
+
+[Capitulum Laudes] (rubrica 1963)
+@TemporaM/Pasc5-5
+
+[Capitulum Sexta] (rubrica 1963)
+@TemporaM/Pasc5-5
+
+[Capitulum Nona] (rubrica 1963)
+@TemporaM/Pasc5-5

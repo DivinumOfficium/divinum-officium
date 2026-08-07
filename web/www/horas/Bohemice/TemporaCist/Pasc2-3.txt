@@ -1,0 +1,31 @@
+@Tempora/Pasc2-3
+
+[Officium]
+Slavnost svatého Josefa, Snoubence Nejblahoslavenější Panny Marie, Vyznavače a Patrona Všeobecné Církve
+
+[Lectio2]
+@Tempora/Pasc2-3:Lectio1:2-7:s/1-6/4-5/ s/1 .*4/4/s s/ a Boží požehnání.*/./s
+
+[Lectio5]
+@Tempora/Pasc2-3:Lectio4
+
+[Lectio6]
+@Tempora/Pasc2-3:Lectio5
+
+[Lectio7]
+@Tempora/Pasc2-3:Lectio6:s/Pamatuj.*//s
+
+[Lectio8]
+@Tempora/Pasc2-3:Lectio6:s/.* Pamatuj/Pamatuj/s
+
+[Lectio9]
+@Tempora/Pasc2-3:Lectio7:s/Adopce, .*//
+
+[Lectio10]
+@Tempora/Pasc2-3:Lectio7:s/.* (?=Adopce, )//s
+
+[Evangelium]
+@Tempora/Pasc2-3
+
+[Versum 3]
+@:Versum 1

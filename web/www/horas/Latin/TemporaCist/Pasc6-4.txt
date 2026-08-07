@@ -1,0 +1,89 @@
+@Tempora/Pasc6-4
+
+[Rule]
+ex TemporaCist/Pasc5-4;
+12 lectiones
+Psalmi Dominica
+Feria Te Deum
+Antiphonas Horas
+Doxology=Asc
+
+[Invit]
+@CommuneCist/C2p:Invit 3L
+
+[Lectio1] 
+@Tempora/Pasc6-3::1-5 s/-5/-3/
+
+[Lectio2] 
+@Tempora/Pasc6-3:Lectio1:2 s/1-5/4-6a/
+@Tempora/Pasc6-3:Lectio1:6-7
+@Tempora/Pasc6-3:Lectio2:2 s/\. .*/./
+
+[Lectio3] 
+@Tempora/Pasc6-3:Lectio2:1 s/6/6b/
+@Tempora/Pasc6-3:Lectio2:2 s/6 .*?\./6 /
+@Tempora/Pasc6-3:Lectio2:3-5
+
+[Lectio4] 
+@Tempora/Pasc6-3:Lectio3
+
+[Responsory1]
+@TemporaCist/Pasc5-4
+
+[Responsory2]
+@TemporaCist/Pasc5-4
+
+[Responsory3]
+@TemporaCist/Pasc5-4
+
+[Responsory4]
+@TemporaCist/Pasc5-4
+
+[Lectio5]
+@Tempora/Pasc6-4:Lectio4: s/Ascénsio .*//
+
+[Lectio6]
+@Tempora/Pasc6-4:Lectio4: s/.* (?=Ascénsio )//s
+
+[Lectio7]
+@Tempora/Pasc6-4:Lectio5:s/Dum .*//
+
+[Lectio8]
+@Tempora/Pasc6-4:Lectio5:s/.* (?=Dum )//
+
+[Responsory5]
+@TemporaCist/Pasc5-4
+
+[Responsory6]
+@TemporaCist/Pasc5-4
+
+[Responsory7]
+@TemporaCist/Pasc5-4
+
+[Responsory8]
+@TemporaCist/Pasc5-4
+
+[Lectio9]
+@Tempora/Pasc6-4:Lectio7
+
+[Lectio10]
+@Tempora/Pasc6-4:Lectio8: s/Ecce, .*//
+
+[Lectio11]
+@Tempora/Pasc6-4:Lectio8: s/.* (?=Ecce, )// s/$/~/
+@Tempora/Pasc6-4:Lectio9: s/Desidéria .*//
+
+[Lectio12]
+@Tempora/Pasc6-4:Lectio9: s/.* (?=Desidéria )//
+
+[Responsory9]
+@TemporaCist/Pasc5-4
+
+[Responsory10]
+@TemporaCist/Pasc5-4
+
+[Responsory11]
+@TemporaCist/Pasc5-4
+
+[Responsory12]
+@TemporaCist/Pasc5-4

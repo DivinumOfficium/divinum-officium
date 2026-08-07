@@ -1,0 +1,21 @@
+[Responsory5]
+R. Panno israelská, navrať se do svých měst, jak dlouho se budeš v bolesti odvracet?
+* Zrodíš Hospodina, Spasitele, novou oběť v zemi; * Lidé budou kráčet ve spáse.
+V. Věčnou láskou jsem si tě zamiloval; proto jsem tě přitáhl ve svém slitování.
+R. Zrodíš Hospodina, Spasitele, novou oběť v zemi.
+
+[Lectio7]
+@Tempora/Adv4-0:Lectio6:s/For His .*//s
+
+[Lectio8]
+@Tempora/Adv4-0:Lectio6:s/.* For His /For His /s
+
+[Lectio10]
+@Tempora/Adv4-0:Lectio8:s/The former .*//s
+
+[Lectio11]
+@Tempora/Adv4-0:Lectio8:s/.* The former /The former /s s/$/~/
+@Tempora/Adv4-0:Lectio9:s/He that .*//s
+
+[Lectio12]
+@Tempora/Adv4-0:Lectio9:s/.* He that /He that /s

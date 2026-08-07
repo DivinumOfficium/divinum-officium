@@ -38,8 +38,8 @@ De Joéle Prophéta
 28 Et erit post hæc: effúndam spíritum meum super omnem carnem, et prophetábunt fílii vestri et fíliæ vestræ: senes vestri sómnia somniábunt, et júvenes vestri visiónes vidébunt.
 
 [Lectio3] (rubrica 196)
-@:Lectio11: s/$/~/
-@:Lectio12
+@:Lectio11:s/$/~/
+@Tempora/Pasc7-2:Lectio3
 
 [Responsory3] (rubrica 196)
 @Tempora/Pasc7-3:Responsory1
@@ -73,7 +73,7 @@ Et quómodo córpora trium puerórum ignis non exússit, sed camínus in rorem v
 @Tempora/Pasc7-2:Lectio2:s/ Fuérunt.*//s
 
 [Lectio11]
-@Tempora/Pasc7-2:Lectio2:s/.*(?=Fuérunt)//
+@Tempora/Pasc7-2:Lectio2:s/.*(?=Fuérunt)/~/
 
 [Lectio12]
 @Tempora/Pasc7-2:Lectio3

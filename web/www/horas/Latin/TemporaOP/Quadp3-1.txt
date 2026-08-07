@@ -1,0 +1,34 @@
+@Tempora/Quadp3-1
+
+[Lectio1]
+@Tempora/Quadp3-1::1-6 s/-6/-4/
+
+[Responsory1]
+@TemporaOP/Quadp3-0
+
+[Lectio2]
+@Tempora/Quadp3-1::1 s/7-11/5-7/
+@Tempora/Quadp3-1:Lectio1:7-8
+@Tempora/Quadp3-1::2
+
+[Responsory2]
+R. Reverténti Abram a cæde quátuor regum, occurrit rex Salem Melchísedech, ófferens panem et vinum, erat enim Dei sacerdos:
+* Et benedíxit illi.
+V. Benedíctus Abram Deo altíssimo, qui creávit cælum et terram.
+R. Et benedíxit illi.
+
+[Lectio3]
+@Tempora/Quadp3-1:Lectio2:1 s/7-11/8-9; 11/
+@Tempora/Quadp3-1:Lectio2:3-4
+@Tempora/Quadp3-1:Lectio2:6
+
+[Responsory3]
+@TemporaOP/Quadp3-0:Responsory2
+
+[Ant 2]
+@Tempora/Quad2-3:Ant 3
+
+[Ant 3]
+@Tempora/Pent18-0::s/.*: \S+ (.)/\u$1/
+
+
