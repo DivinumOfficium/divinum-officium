@@ -1,0 +1,103 @@
+@Sancti/09-29
+
+[Ant Vespera]
+@SanctiCist/09-29:Ant Vespera:2 s/$/;;112;116;145;146;147/
+
+[Responsory Vespera 1]
+@SanctiM/09-29:Responsory4
+&Gloria
+@SanctiM/09-29:Responsory4:4 s/R. \S+ \S+ \S+ (.)/R. \u$1/
+
+[Ant Matutinum]
+@Sancti/05-08:Ant Vespera:1 s/$/;;5/
+@Sancti/09-29:Ant Matutinum:3 s/14/8/
+@Sancti/09-29:Ant Matutinum:4 s/18/10/
+@Sancti/09-29:Ant Matutinum:5 s/23/14/
+@Sancti/09-29:Ant Matutinum:6 s/33/29/
+@Sancti/09-29:Ant Matutinum:7 s/95/46/ s/, allelúja, allelúja/ suscipiéndis/
+@Sancti/09-29:Ant Matutinum:1 s/8/96/
+@Sancti/09-29:Ant Matutinum:8 s/96/98/
+@Sancti/09-29:Ant Matutinum:2 s/10/102/
+
+[Responsory3]
+@Sancti/05-08:Responsory4
+&Gloria
+@Sancti/05-08:Responsory4:4 s/.*, (.)/R. \u$1/
+
+[Lectio4]
+@Sancti/09-29::s/ Qui.*//
+
+[Responsory4]
+@Sancti/05-08:Responsory5:1-2
+V. Data est potéstas Archángelo Michaéli super ánimas sanctórum.
+@Sancti/05-08:Responsory5:4
+
+[Lectio5]
+@Sancti/09-29:Lectio4:s/.* (?=Qui)//s s/$/~/
+@Sancti/09-29::s/ Unde.*//
+
+[Responsory5]
+@SanctiCist/05-08:Responsory3:1
+@SanctiCist/05-08:Responsory3:2 s/\. .*/./
+@SanctiCist/05-08:Responsory3:3-4
+
+[Lectio6]
+@Sancti/09-29:Lectio5:s/.* facit\. // s/$/~/
+@Sancti/09-29::s/; .*/./
+
+[Responsory6]
+@SanctiM/09-29:Responsory12
+&Gloria
+@SanctiM/09-29:Responsory12:4 s/.* et /R. Et /
+
+[Lectio7]
+@Sancti/09-29::s/ Vidénsque.*//
+
+[Responsory7]
+@Sancti/05-08::1-2
+@CommuneM/C2p:Responsory12:3
+@Sancti/05-08::4
+
+[Lectio8]
+Nisi efficiámini sicut párvuli, non intrábitis in regnum cælorum. Non præcipitur Apóstolis ut ætatem hábeant parvulorum, sed ut innocéntiam: et quod illi per annos possident, hi possideant per indústriam: ut malitia, non sapiéntia, párvuli sint. Quicumque ergo humiliáverit se sicut párvulus iste, hic est maior in regno cælorum. Sicut iste párvulus (cujus vobis exémplum tríbuo) non persevérat in iracúndia, non læsus méminit, non videns pulchram mulierem delectátur, non áliud cogitat et áliud loquitur: sic et vos, nisi talem habueritis innocéntiam et ánimi puritatem, non potéritis regnum cælorum intráre.
+
+[Responsory8]
+@Sancti/05-08:Responsory3:1-2
+@Tempora/Epi2-5:Responsory1:3
+@Sancti/05-08:Responsory3:4
+
+[Lectio9]
+@Sancti/09-29::s/.* dicens: //
+
+[Responsory9]
+@SanctiM/09-29:Responsory4
+&Gloria
+@SanctiM/09-29:Responsory4:4 s/R. \S+ \S+ \S+ (.)/R. \u$1/
+
+[Ant Laudes]
+@Sancti/05-08:Ant Vespera:2
+@SanctiCist/09-29:Ant Vespera:2
+@Sancti/05-08:Ant Vespera:3
+@Sancti/05-08:Ant Vespera:4
+@Sancti/05-08:Ant Vespera:5
+
+[Capitulum Sexta]
+@Sancti/05-08:Lectio Prima
+
+[Capitulum Nona]
+@Sancti/05-08:Capitulum Sexta
+
+[Ant Vespera 3]
+@Sancti/05-08:Ant Vespera::2 s/$/;;109;110;111;112;137/
+
+[Versum 3]
+@Sancti/05-08:Versum 1
+
+[Ant 3]
+@SanctiCist/09-29:Ant Matutinum 3N
+
+
+
+
+
+
