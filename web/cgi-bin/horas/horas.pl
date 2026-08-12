@@ -702,7 +702,9 @@ sub postprocess_short_resp(\@$) {
 
   return $capit if $lang =~ /gabc/i;    # GABC: Deactivated
 
-  if (alleluia_required($dayname[0], $votive)) {
+  if (alleluia_required($dayname[0], $votive)
+    || ($rule =~ /Responsory Breve cum Alleluja/ && $hora =~ /Tertia|Sexta|Nona/))
+  {
     my $rlines = 0;
 
     for (@$capit) {
@@ -714,7 +716,7 @@ sub postprocess_short_resp(\@$) {
         } elsif (/^R\./) {
           ensure_double_alleluia(\$_, $lang);
         }
-      } elsif (/^[VR]\./) {
+      } elsif (/^[VR]\./ && $rule !~ /Responsory Breve cum Alleluja/) {
 
         # V/R following short responsory.
         ensure_single_alleluia(\$_, $lang);

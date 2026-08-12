@@ -29,7 +29,7 @@ v. Priúsquam te formárem in útero, novi te: et ántequam exíres de vulva, sa
 
 [Lectio2]
 Léctio Isaíæ Prophétæ
-!Is 49 1-3,5
+!Is 49:1-3,5
 1 Audíte ínsulæ, et atténdite, pópuli de longe: Dóminus ab útero vocávit me: de ventre matris meæ recordátus est nóminis mei.
 2 Et pósuit os meum quasi gládium acútum, in umbra manus suæ protéxit me, et pósuit me sicut sagíttam eléctam: in pháretra sua abscóndit me.
 3 Et dixit mihi: Servus meus es tu Israël, quia in te gloriábor.
@@ -110,15 +110,7 @@ V. Vicíni quoque et cognáti ejus vénérunt circumcidere puerum, et sciscitát
 @Sancti/06-24:Capitulum Laudes
 
 [Responsory Breve Sexta]
-@Commune/C2::1 s/\* (.)/ \l$1/ s/$/ * ~/
-@Psalterium/Common/Prayers:Alleluia Duplex
-@Commune/C2::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluia Duplex
-@Commune/C2::3
-@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
-&Gloria
-@Commune/C2::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluia Duplex
+@Commune/C2
 
 [Versum Sexta]
 @Commune/C2:Nocturn 3 Versum
@@ -129,15 +121,7 @@ V. Vicíni quoque et cognáti ejus vénérunt circumcidere puerum, et sciscitát
 $Deo gratias
 
 [Responsory Breve Nona]
-@Commune/C2::1 s/\* (.)/ \l$1/ s/$/ * ~/
-@Psalterium/Common/Prayers:Alleluia Duplex
-@Commune/C2::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluia Duplex
-@Commune/C2::3
-@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
-&Gloria
-@Commune/C2::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluia Duplex
+@Commune/C2
 
 [Versum Nona]
 @CommuneOP/C2:Versum 2

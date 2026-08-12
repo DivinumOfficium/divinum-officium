@@ -624,9 +624,9 @@ sub regula_vel_evangelium {
   my %r = %{setupstring($lang, 'Regula/OrdoPraedicatorum.txt')};
 
   if (lectioE_required()) {
-    my %b = %{setupstring($lang, 'Psalterium/Benedictions.txt')};
-    my @b = split /\n/, $b{'Nocturn 3'};
-    push @output, $b[1], '$Amen';
+    my $b = prayer('Divinum auxilium', $lang);
+    my @b = split /\n/, $b;
+    push @output, $b[0], '$Amen';
     push @output, lectioE($lang);
   } else {
     push @output, $r{Benedictio}, '$Amen';

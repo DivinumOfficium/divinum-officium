@@ -140,7 +140,7 @@ sub psalmi_minor {
     }
 
     my %w = columnsel($lang) ? %winner : %winner2;
-    $ant = $w{"Ant Completorium$vespera"} || $ant;
+    $ant = $w{"Ant Completorium$vespera"} || $w{'Ant Completorium'} || $ant;
   }
 
   if ($winner =~ /tempora/i || $dayname[0] =~ /pasc/i) {

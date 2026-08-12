@@ -34,7 +34,7 @@ Conféssor Dómini N., astántem plebem corróbora sancta intercessióne: ut, qu
 &Gloria
 @Commune/C4:Responsory8:4 s/.*?, (.)/R. \u$1/
 
-[Responsory3] (rule 9 leciones)
+[Responsory3] (rule 9 lectiones)
 @CommuneM/C4:Responsory11:1-3 s/\n\*// s/;\W+(.)/\n* \u$1/
 @CommuneM/C4:Responsory11:1 s/.*† (.)/\nR. \u$1/
 &Gloria
@@ -81,6 +81,10 @@ R. Honestávit illum in labóribus, et complévit labóres illíus.
 &Gloria
 @Commune/C4:Responsory8:4 s/.*, (.)/R. \u$1/
 
+[Versum 0]
+V. Ora pro nobis, beáte N..
+R. Ut digni efficiámur promissióibus Christi.
+
 [Ant Laudes]
 @Commune/C5
 
@@ -107,6 +111,14 @@ $Deo gratias
 @Commune/C5:Lectio Prima
 $Deo gratias
 
+[Responsory Breve Nona]
+R.br. Justus ut palma florébit * In domo Dómini.
+R. Justus ut palma florébit * In domo Dómini.
+V. Sicut cedrus Líbani multiplicábitur.
+R. In domo Dómini.
+&Gloria
+R. Justus ut palma florébit * In domo Dómini.
+
 [Ant Vespera 3]
 @Commune/C5:Ant Vespera:1 s/$/;;109;111;112;115;125/
 
@@ -125,3 +137,5 @@ Divísio quidem pecuniæ inæquális est, sed non ad dividentem referénda divé
 [Lectio8 in 2 loco]
 Igitur unusquisque secúndum fidei suæ mensúram taléntum, id est, Evangélii prædicatiónem, a prædicánte suscépit. Hæc enim incorrúpta substántia est: hoc Christi patrimónium ætérnis herédibus reservátum. Sed servus ille, qui quinque talénta accépit, pópulus ex Lege credéntium est: ex qua proféctus, méritum ipsíus recte probéque perfunctus evangélicæ Fidei operatióne duplicávit.
 
+[Lectio9 in 2 loco]
+In ratióne autem ponénda judícii exámen est: quo cæléstis verbi usus et réditus dispensáti talénti postulátur. Igitur cui erant quinque commissa, dómino revérso de quinque decem óbtulit, talis scilicet in Fide repértus, qualis in Lege: qui decem verbórum quinque libris Móysi præceptórum obediéntiam per grátiam evangélicæ justificatiónis expléverit. Igitur jubétur in gaudium Dómini introire, id est, in honórem glóriæ Christi recipitur.

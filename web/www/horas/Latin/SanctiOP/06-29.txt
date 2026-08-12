@@ -79,46 +79,13 @@ In unitáte, cui manet impérium
 Ex tunc et modo per ætérna sácula.
 Amen.
 
-[Responsory Breve Tertia]
-@Commune/C1::1 s/\* (.)/ \l$1/ s/$/ * ~/
-@Psalterium/Common/Prayers:Alleluia Duplex
-@Commune/C1::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluia Duplex
-@Commune/C1::3
-@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
-&Gloria
-@Commune/C1::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluia Duplex
-
 [Capitulum Sexta]
 !Act. 12:7
 v. Angelus Dómini ástitit, et lumen refúlsit in habitáculo, percussóque látere Petri excitávit eum dicens: Surge velóciter. Et cecidérunt caténæ de má nibus ejus.
 $Deo gratias
 
-[Responsory Breve Sexta]
-@Commune/C1::1 s/\* (.)/ \l$1/ s/$/ * ~/
-@Psalterium/Common/Prayers:Alleluia Duplex
-@Commune/C1::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluia Duplex
-@Commune/C1::3
-@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
-&Gloria
-@Commune/C1::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluia Duplex
-
 [Capitulum Nona]
 @Sancti/08-01:Lectio3:!2-3 s/9-// s/.*?: /v. /
-
-[Responsory Breve Nona]
-@Commune/C1::1 s/\* (.)/ \l$1/ s/$/ * ~/
-@Psalterium/Common/Prayers:Alleluia Duplex
-@Commune/C1::1 s/\* (.)/ \l$1/ s/$/ * ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluia Duplex
-@Commune/C1::3
-@Psalterium/Common/Prayers:Alleluia Duplex:s/^/R. /
-&Gloria
-@Commune/C1::1 s/\* (.)/ \l$1/ s/$/* ~/ s/br.//
-@Psalterium/Common/Prayers:Alleluia Duplex
 
 [Ant Vespera 3]
 @Sancti/06-29:Ant Vespera:1 s/$/;;109;112;115;125;138/

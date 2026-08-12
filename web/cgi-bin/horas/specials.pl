@@ -535,7 +535,7 @@ sub checkmtv {
   my $version = shift;
   my $winner = shift;
   my %winner = %$winner;
-  ($version =~ /1955|196/ || $winner{Rule} =~ /\;mtv/i) && $winner{Rule} =~ /C[45]/ ? '1' : '';
+  ($version =~ /1955|196[03]/ || $winner{Rule} =~ /\;mtv/i) && $winner{Rule} =~ /C[45]/ ? '1' : '';
 }
 
 #*** getanthoras($lang)
