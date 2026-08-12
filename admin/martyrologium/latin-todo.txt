@@ -13,14 +13,12 @@
 # print between the entries.  Rebuilding keeps every decision already here.
 
 
-# ---------------- English (102) ----------------
+# ---------------- English (76) ----------------
  01-07 Raymundi-Penafort          elogium   +1 At Barcelona (in the year 1275), holy Raymond of Pehafuerte, of 
  01-14 Juliani-Sabae              elogium   +1 In Syria, holy Julian of Saba, the elder, who in the time of the
  01-26 Bathildis-Reginae          elogium   +1 In the country of Paris, (in the year 685,) holy Bathildes, Quee
  01-30 Felicis-Quarti-Papae       elogium   +1 At Rome, holy Pope Felix (IV, Pope in 526, died in 530,) who lab
  02-01 Ephraem-Syri               elogium   +2 Upon the same day, holy Ephrem, Deacon of the church of Edessa, 
--02-01 Linea                      spacer       = 
--02-08 Linea                      spacer       = 
  02-12 Modesti-Levitae            elogium   +1 At Benevento, the holy martyr Modestus the Levite. 
  02-13 Catharinae-Ricciae         elogium   +1 At Prati, in Tuscany, Catherine de Ricci, a Virgin of Florence, 
  02-13 Gregorii-Secundi-Papae     elogium   +1 At Rome, [in the year 731,] the holy Pope Gregory II, who sharpl
@@ -29,12 +27,9 @@
  02-16 Porphyrii-Seleuci          elogium   +1 After whom holy Porphyry, the servant of the martyr Pamphilus, a
  02-16 Translatio-Julianae        elogium   +1 On the same day is commemorated at Camee in Campania the transla
  02-21 Maximiani-Ravennatis       elogium   +1 At Ravenna, [in the year 556,] the holy Confessor Maximian. 
--02-23 Linea                      spacer       = 
  02-25 Felicis-Tertii-Papae       elogium   +1 At Rome, [in the year 492,] the holy Pope Felix III, who was the
--03-02 Linea                      spacer       = 
  03-02 Simplicii-Papae            elogium      At Rome, [about the year 483,] the holy Confessor Pope Simpliciu
  03-09 Cyrilli-Methodii           elogium   +1 In Moravia, [in the ninth century,] the holy Cyril, Bishop [of M
--03-13 Linea                      spacer       = 
  03-15 Zachariae-Papae            elogium   +1 At Rome, holy Pope Zachary, who governed the Church of God with 
  03-22 Catharinae-Genuensis       elogium   +1 At Genoa, the holy widow Katherine, eminent for her contempt of 
  03-22 Catharinae-Suecae          elogium   +1 In Sweden, the holy Virgin Katherine, daughter of holy Bridget, 
@@ -43,7 +38,6 @@
  04-06 Caelestini-Primi-Papae     elogium   +1 At Rome, the holy Confessor, Pope Celestine [I, in the years 422
  04-06 Celsi-Ardmachani           elogium   +1 In Ireland, the holy Confessor Kelly, Archbishop of Armagh, [in 
  04-06 Xysti-Primi-Papae          elogium   +2 At Rome, the blessed martyr, Pope Sixtus I, who ruled the Church
--04-08 Linea                      spacer       = 
  04-27 Anastasii-Primi-Papae      elogium   +2 At Rome, blessed Pope Anastasius [I, in the year 401,] a man ver
  04-27 Egberti-Presbyteri         elogium   +1 We keep the feast of the holy Priest and monk Egbert, a man of m
  05-05 Conversio-Augustini        elogium   +1 On this day is also commemorated, at Milan, the conversion of ho
@@ -59,8 +53,7 @@
  05-31 Angelae-Merici             elogium      At Brescia, the holy Virgin Angela Merici, Foundress of the reli
  06-07 Maximini-Aquensis          elogium      At Aix, in Gaul, holy Maximin, first Bishop of that city.
  06-15 Bernardi-Menthonensis      elogium      At Valais, [in the year 1008,] the holy Confessor Bernard of Men
- 06-15 Philippi-Nerii             elogium      St. Philip Neri, of whom mention is made in the Martyrology for 
--06-15 Upon-June                  heading      Upon the same 15th day of June, were born into the better life: 
+ 06-15 Philippi-Nerii             heading      St. Philip Neri, of whom mention is made in the Martyrology for 
  06-16 Joannis-Francisci-Regis    elogium      At the village of La Louvesc, in the Diocese of Vienne, in the A
  06-17 Botulphi-Abbatis           elogium      In England, the holy Abbot Botolph. 
  06-25 Antidii-Vesontionensis     elogium      At Besançon, in Gaul, the holy martyr Antidius, Bishop of Besanç
@@ -68,244 +61,89 @@
  07-01 Theobaldi-Vicentini        elogium      At Vicenza, [in the eleventh century,] the holy Hermit Theobald,
  07-04 Flaviani-Eliae             elogium      On the same day, holy Flavian, second Patriarch of Antioch, and 
  07-05 Michaelis-Sanctis          elogium      On the same day is commemorated the holy Confessor Michael de Sa
--07-06 Linea                      spacer       = 
  07-07 Petri-Fourier              elogium      At Gray, in Burgundy, blessed Peter Foreri, a Canon Regular of t
--07-09 Upon-July                  heading      Upon the same 9th day of July, were born into the better life: 
- 07-09 Willibaldi-Eystettensis    elogium      Holy Confessor Willibald, first Bishop of Eichstätt, in Saxony, 
--08-01 Upon                       heading      Upon the same day, were born into the better life: 
+ 07-09 Willibaldi-Eystettensis    heading      Holy Confessor Willibald, first Bishop of Eichstätt, in Saxony, 
  08-18 Clarae-Montisfalconis      elogium      At Montefalco, in Umbria, [in the year 1308,] the blessed Virgin
  08-23 Sidonii-Arvernensis        elogium      At Clermont, in Auvergne, [in the fifth century,] holy Sidonius,
  08-26 Rosae-Limanae              elogium      At Lima, in the kingdom of Peru, holy Rose of St. Mary, a Virgin
--08-27 Linea                      spacer       = 
--09-04 Upon-September             heading      Upon the same 4th day of September, were born into the better li
--09-05 Upon-September             heading      Upon the same 5th day of September, were born into the better li
  09-09 Petri-Claver               elogium   +2 At Cartagena, in South America, (in the year 1654,) the holy Con
  09-09 Sergii-Primi-Papae         elogium   +1 At Rome, (in the year 701,) the holy Confessor Pope Sergius I. 
  09-10 Hilarii-Papae              elogium   +2 At Rome, (in the fifth century,) the blessed Confessor Pope Hila
--09-17 Upon-September             heading      Upon the same 17th day of September, were born into the better l
  09-20 Susannae-Marthae           elogium   +1 Also, (in the fourth century, at Beyt Jabryn, in Palestine,) the
  09-25 Anathalonis                elogium   +1 On the same day, holy Anathalon; he was a disciple of the blesse
  09-25 Pacifici                   elogium   +1 At San Severino, in the March of Ancona, (in the year 1721) the 
  10-02 Thomae-Herefordensis       elogium   +1 At Hereford, in England, the holy Confessor Thomas, Bishop of th
  10-03 Thomae-Herefordensis       elogium      On the morrow we keep the feast of the holy Confessor Thomas, Bi
  10-05 Froilani-Legionensis       elogium   +1 At Leon, (in the year 1006,) in Spain, holy Froilan, Bishop of t
--10-09 Upon                       heading      Upon the same day, were born into the better life: 
  10-13 Septem-Martyrum-Ceutensium elogium   +1 At Ceuta, in Morocco, (in the year 1221,) seven holy martyrs bel
  10-17 Andreae-Cretensis          elogium   +1 At Constantinople, the holy monk Andrew of Crete. He was often b
- 10-17 Hedwigis-Polonorum         elogium   +1 On the morrow we keep the feast of the holy widow Iadwiga, Grand
--10-17 Upon-October               heading      Upon the same 17th day of October, were born into the better lif
+ 10-17 Hedwigis-Polonorum         heading   +1 On the morrow we keep the feast of the holy widow Iadwiga, Grand
  10-17 Victoris-Capuani           elogium   +1 At Capua, (in the same sixth century,) holy Victor, Bishop (of t
--10-21 Linea                      spacer       = 
  10-23 Petri-Paschasii            elogium   +1 At Granada, in Spain, is commemorated the blessed martyr Peter P
  10-25 Bonifatii-Primi-Papae      elogium   +1 At Rome, the holy Confessor Pope Boniface I. 
  10-26 Bernwardi-Hildesheimensis  elogium   +1 At Hildesheim, in Saxony, the holy Confessor Bernward, Bishop (o
  10-26 Quodvultdei-Carthaginensis elogium   +1 On the same day, holy Quod-Vult-Deus, Bishop of Carthage, whom t
  10-28 Gaudiosi-Neapolitani       elogium   +1 At Naples, holy Gaudiosus, Bishop (of Abitina,) in Africa, who c
  10-30 Alfonsi-Rodriguez          elogium   +2 At Palma, in Majorca, (in the year 1617,) the holy Confessor Alp
--11-02 Linea                      no names  +1 _
--11-02 Linea-2                    spacer       = 
--11-06 Linea                      spacer       = 
--11-09 Linea                      spacer       = 
  11-12 Theodori-Studitae          elogium   +1 Likewise at Constantinople, holy Theodore, of the monastery whic
--11-22 Linea                      spacer       = 
  11-23 Joannis-Boni               elogium   +1 At Mantua, blessed John Boni, of the Order of Hermits of Saint A
--11-24 Upon-November              heading      Upon the same 24th day of November, were born into the better li
  11-28 Gregorii-Tertii-Papae      elogium   +1 At Rome, the blessed Pope Gregory III., who passed to heaven fam
--12-25 Linea                      no names  +1 _
--12-25 Linea-2                    spacer       = 
--12-25 Upon-December              heading      Upon the same 25th day of December were born into the better lif
  12-26 Et-Alibi-Plurimorum        no names  +1 And in diverse places an exceeding great multitude of holy Marty
  12-28 Theodori-Sanctificati      elogium   +1 In Egypt, the holy monk Theodore (the Sanctified, Abbot from 348
 
-# ---------------- Espanol (586) ----------------
--01-01 Fiesta-Santisimo           calendar     Fiesta del Santísimo Nombre de Jesús D. 2ª cl. Blanco
+# ---------------- Espanol (132) ----------------
  01-02 Adalardi-Corbeiensis       elogium      En el monasterio de Corbie, en la Galia Ambianense (hoy Francia)
--01-02 S-Adelardo                 calendar     S. Adelardo
--01-03 Sta-Genoveva               calendar     Sta. Genoveva
--01-04 S-Gregorio                 calendar     S. Gregorio de Langres
--01-05 S-Telesforo                calendar     S. Telesforo, Papa y Mártir. S. - Rojo
--01-06 Hallaron-Nino              elogium      Hallaron al Niño con María, su Madre, y prosternándose lo adorar
--01-08 San-Apolinar               calendar     San Apolinar
  01-09 Hadriani-Cantuariensis     elogium      En la ciudad de Canterbury, en Inglaterra, san Adriano, abad, el
--01-09 San-Adriano                calendar     San Adriano
--01-10 San-Pablo                  calendar     San Pablo primer ermitaño
--01-11 San-Higinio                calendar     San Higinio
--01-12 San-Arcadio                elogium      San Arcadio se retiró a la soledad durante la persecución, mas n
--01-13 Conmemoracion-Bautismo     calendar     Conmemoración del Bautismo de Nuestro Señor Jesucristo. Blanco
--01-13 Estaba-San                 elogium      Estaba San Juan Bautista en las orillas del Jordán bautizando y 
+ 01-13 Commemoratio-Baptismatis   elogium   +1 Estaba San Juan Bautista en las orillas del Jordán bautizando y 
  01-13 Godefridi-Cappenbergensis  elogium      En el monasterio de Ilbenstad, en Alemania, san Godofredo, que, 
--01-14 S-Felix                    calendar     S. Felix, Presb. y Márt. S. - Rojo
--01-14 S-Hilario                  calendar     S. Hilario, Ob., Conf. y Doct. D. - Blanco
--01-15 S-Pablo                    calendar     S. Pablo, primer Ermitaño. D. - Blanco
--01-16 Este-Espana                heading      Este mismo día en España:
--01-16 S-Fulgencio                calendar     S. Fulgencio, Ob., Conf. y Doct.
--01-16 S-Marcelo                  calendar     S. Marcelo, Papa y Mártir Sd. - Blanco
--01-17 S-Antonio                  calendar     S. Antonio (Antón), Abad. D. - Blanco
--01-18 Era-Iglesia                elogium      Era antigua costumbre en la Iglesia de Occidente festejar el ani
--01-19 Apenas-Dinamarca           elogium      Apenas ascendido al trono de Dinamarca, obtuvo este rey insignes
--01-19 Ejemplo-San                elogium      Ejemplo de familias cristianas, San Mario, su mujer Marta y sus 
--01-19 El                         heading      El mismo día:
--01-19 Pidamos-Senor              elogium      Pidamos por su intercesión que nos dé el Señor gozar de la paz e
--01-20 Fabian                     elogium      Fabián era un laico cuando fue elegido para suceder al Papa Ante
--01-20 Sebastian-Diocleciano      elogium      Sebastián, condenado por Diocleciano a ser atravesado con flecha
--01-20 Stos-Fabian                calendar     Stos. Fabián, Papa, y Sebastián, Mártir. D. - Rojo
--01-21 Santa-Ines                 calendar     Santa Inés, Virgen y Mártir. D. - Rojo
--01-22 Stos-Vicente               calendar     Stos. Vicente y Anastasio, Mártires. Sd. - Rojo
--01-23 S-Raimundo                 calendar     S. Raimundo de Peñafort, Conf. D. - Blanco.
--01-24 S-Timoteo                  calendar     S. Timoteo, Obispo y Mártir. D. - Rojo.
--01-25 Conversion-S               calendar     Conversión de S. Pablo, Apóstol. Dm. - Blanco.
--01-25 San-Pablo                  elogium      San Pablo es derribado en el camino a Damasco, y de perseguidor 
--01-26 Policarpo-Roma             elogium      Policarpo va a Roma a consultar al Papa Aniceto, y es recibido p
--01-26 S-Policarpo                calendar     S. Policarpo, Obispo y Mártir D. - Rojo
--01-27 S-Juan                     calendar     S. Juan Crisóstomo, Ob. Conf. y Doctor de la Iglesia D. - Blanco
--01-28 S-Pedro                    calendar     S. Pedro Nolasco, Confesor D. - Blanco
--01-28 San-Pedro                  elogium      San Pedro Nolasco fue toda su vida un modelo de caridad. Consagr
--01-29 S-Francisco                elogium      S. Francisco de sales, Obispo, Confesor y Doctor. D. - Banco.
--01-30 Santa-Martina-2            elogium      Santa Martina, virgen romana, quedó huérfana a una edad todavía 
--01-30 Santa-Martina-2-3          calendar     Santa Martina, Virgen y Mártir Sd. - Rojo.
--01-31 S-Juan                     calendar     S. Juan Bosco, Confesor D. - Blanco
--02-01 San-Cecilio                calendar     San Cecilio, Obispo y Mártir
--02-01 San-Cecilio-2              elogium      San Cecilio fue el primer obispo de Granada cuando, bajo la domi
--02-02 Purificacion-Bieneventurada calendar     Purificación de la Bieneventurada Virgen María, D. 2ª. cl. - Bla
--02-03 San-Blas                   calendar     San Blas, Obispo y Mártir
--02-04 S-Andres                   calendar     S. Andrés Corsini, Obispo y Confesor D. - Blanco.
--02-05 Sta-Agueda                 calendar     Sta. Agueda, Virgen y Mártir
--02-06 San-Tito                   elogium      San Tito nació gentil y parece que fue convertido por san Pablo,
--02-07 San-Romualdo               calendar     San Romualdo, Abad
--02-08 S-Juan                     calendar     S. Juan de Mata, Confesor
--02-09 El                         heading      El mismo día:
--02-09 S-Cirilo                   calendar     S. Cirilo de Alejandría, Ob. Conf. y Doctor de la Iglesia D. - B
--02-09 Santa-Apolonia             calendar     Santa Apolonia, Virgen y Mártir
--02-10 Santa-Escolastica          calendar     Santa Escolástica, Virgen
+ 02-01 Caecilii-Granatensis       elogium      San Cecilio fue el primer obispo de Granada cuando, bajo la domi
  02-11 Aparicion-Inmaculada       elogium      Aparición de la Inmaculada.
  02-13 Martiniani-Atheniensis     elogium      En Atenas, en Grecia, san Martiniano, que había abrazado la vida
--02-13 S-Martiniano               calendar     S. Martiniano, Ermitaño
--02-14 San-Valentin               calendar     San Valentín, Presbítero y Mártir
  02-15 Claudii-Colombiere         elogium      En Paray-le-Monial, de Borgoña, en Francia, san Claudio La Colom
--02-15 Santos-Faustino            calendar     Santos Faustino y Jovita, Mártires.
--02-16 Santa-Juliana              calendar     Santa Juliana, Virgen y Mártir
--02-17 San-Alejo                  calendar     San Alejo, Confesor
--02-18 San-Simeon                 calendar     San Simeón, Obispo y Mártir
--02-19 San-Gabino                 calendar     San Gabino, Mártir
--02-20 Santos-Martires            calendar     Santos Mártires en número desconocido
--02-21 San-Severiano              calendar     San Severiano
  02-22 La-Catedra                 elogium      La Cátedra de San Pedro en Antioquía
--02-23 San-Pedro                  calendar     San Pedro Damián, obispo, confesor y doctor. D. - Blanco
  02-24 Vigilia-Matthiae           elogium      Vigilia de San Matías Apóstol
  02-25 Matthiae-Apostoli          elogium      En Judea, el nacimiento para el cielo de san Matías, Apóstol, al
--02-25 San-Matias                 calendar     San Matías, Apóstol.
--02-26 San-Nestor                 calendar     San Nestor, Obispo y Mártir
--02-27 El-Espana                  heading      El mismo día en España:
--02-27 San-Gabriel                calendar     San Gabriel de la Dolorosa, Confesor
--02-27 San-Leandro                calendar     San Leandro, Obispo, Confesor y Doctor de la Iglesia. Blanco
--02-28 Santos-Martires            calendar     Santos Mártires Macario, Rufino, Justo y Teófilo.
  02-29 Antoniae-Florentinae       elogium      En L’Aquila, en el Abruzo, beata Antonia de Florencia, viuda, de
  02-29 Augusti-Chapdelaine        elogium      En la ciudad de Xilinxian, en la provincia china de Guangxi, san
  02-29 Hilarii-Papae              elogium      En Roma, en la vía Tiburtina, sepultura de san Hilario, papa, qu
  02-29 Osualdi-Wigorniensis       elogium      En Worchester, en Inglaterra, san Osvaldo, obispo, que fue prime
--02-29 San-Hilario                calendar     San Hilario papa
  03-02 Caroli-Boni                elogium      En Brujas, en Flandes, beato Carlos Bono, el cual, siendo prínci
--03-04 San-Casimiro               calendar     San Casimiro, Confesor
--03-05 San-Focas                  calendar     San Focas, Mártir.
--03-06 Santas-Perpetua            calendar     Santas Perpetua y Felicidad, Mártires
--03-07 Santo-Tomas                calendar     Santo Tomás de Aquino, Confesor y Doctor
--03-08 San-Juan                   calendar     San Juan de Dios, Confesor
--03-09 Santa-Francisca            calendar     Santa Francisca Romana, Viuda.
--03-10 Los-Cuarenta-2             elogium      Los Cuarenta Santos Mártires, de cuyo triunfo se hizo mención el
--03-11 San-Eutimio                calendar     San Eutimio
--03-12 San-Gregorio               calendar     San Gregorio I, Pontifice, Confesor y Doctor de la Iglesia
  03-13 Agnelli-Pisani             elogium      Beato Agnello o Ángelo de Pisa, Presbítero..
  03-13 Petri-Cavensis             elogium      Beato Pedro II de Cava, Abad.
--03-13 San-Geraldo                calendar     San Geraldo de Mayo, Abad.
--03-14 Admirable                  elogium      ¡Admirable espectáculo! una reina enseña a sus súbditos las verd
  03-14 Jacobi-Neapolitani         elogium      Beato Jaime, Arzobispo de Nápoles.
--03-14 San-Eustaquio              calendar     San Eustaquio, Mártir
  03-15 Placidi-Riccardi           elogium      Beato Plácido Riccardi, Monje Benedictino.
  03-15 Raymundi-Fiterensis        elogium      En la villa de Ciruelos, en la región española de Castilla la Nu
--03-15 San-Especioso              calendar     San Especioso, Monje.
--03-15 San-Raimundo               calendar     San Raimundo de Fitero, Abad
--03-15 Santa-Lucrecia             calendar     Santa Lucrecia, Virgen y Mártir.
  03-16 Joannis-Amias              elogium      Beato Juan Amías, Mártir.
  03-16 Joannis-Vicentini          elogium      Beato Juan, Obispo de Vicenza, Mártir.
  03-16 Roberti-Dalby              elogium      Beato Roberto Dalby, Mártir .
--03-16 San-Taciano                calendar     San Taciano, Diácono y Compañeros Mártires.
--03-16 Santa-Eusebia              calendar     Santa Eusebia, Abadesa.
  03-16 Torelli-Eremitae           elogium      Beato Torello, Ermitaño.
--03-17 San-Patricio               calendar     San Patricio, Obispo y Confesor
--03-18 San-Cirilo                 calendar     San Cirilo de Jerusalén, Obispo, Confesor y Doctor
--03-20 San-Arquipo                calendar     San Arquipo
--03-21 San-Benito                 calendar     San Benito, Abad
--03-24 San-Gabriel                calendar     San Gabriel, Arcángel
--03-25 Y-Angel                    elogium      Y habiendo entrado el Ángel a donde estaba María, le dijo: Dios 
--03-26 San-Gastulo                calendar     San Gástulo, Mártir
--03-27 San-Juan-2                 calendar     San Juan Damasceno, Confesor y Doctor de la Iglesia
--03-28 San-Juan-2                 calendar     San Juan de Capistrano, Confesor
--03-29 San-Cirilo                 calendar     San Cirilo, Diácono y Mártir
--03-30 Los-Santisima              elogium      Los siete dolores de la Santísima Virgen que han suscitado mayor
- 03-30 Septem-Dolorum             elogium      Los siete Dolores de la Virgen María
--03-31 San-Amos                   calendar     San Amós, Profeta
+ 03-30 Septem-Dolorum             elogium      Los siete Dolores de la Virgen María Los siete dolores de la San
  04-02 Joannis-Costa              elogium      Beato Juancito (Costa), Pastor y Mártir
  04-02 Joannis-Payne              elogium      Beato Juan Payne, Mártir.
- 04-02 Leopoldi-Gaiche            elogium      Beato Leopoldo de Gaiche, Sacerdote de la Primera Orden
--04-02 San-Abbondio               calendar     San Abbondio, Obispo.
--04-02 San-Apiano                 calendar     San Apiano o Amfiano, Mártir.
--04-02 San-Francisco              calendar     San Francisco de Paula, Confesor
+ 04-02 Leopoldi-Gaiche            elogium      Beato Leopoldo de Gaiche, Sacerdote de la Primera Orden San Abbo
  04-03 Gandulphi-Binascensis      elogium      Beato Gandolfo de Binasco, Franciscano.
  04-03 Joannis-Pena               elogium      Beato Juan de Peña, Franciscano .
--04-03 San-Jose                   calendar     San José El "Himnógrafo", Monje.
--04-03 San-Sixto                  calendar     San Sixto I, Papa
--04-03 Santa-Agape                calendar     Santa Ágape, Virgen y Mártir.
--04-03 Santa-Quionia              calendar     Santa Quionia, (Con Santa Ágape).
--04-04 San-Isidoro                calendar     San Isidoro de Sevilla, Obispo, Confesor y Doctor
--04-04 Santa-Gema                 calendar     Santa Gema Galgani, Virgen.
--04-05 San-Vicente                calendar     San Vicente Ferrer, Confesor
  04-06 Catharinae-Pallanza        elogium      Beata Catalina de Pallanza.
  04-06 Notkeri-Balbuli            elogium      Beato Notkero Balbulo, Monje.
--04-06 San-Celestino              calendar     San Celestino, Papa.
--04-06 San-Eutiquio               calendar     San Eutiquio de Constantinopla.
--04-06 San-Guillermo              elogium      San Guillermo nació en París y fue educado en el monasterio de S
--04-06 San-Guillermo-2            calendar     San Guillermo de Eskill, Abad.
--04-06 San-Prudencio              calendar     San Prudencio de Troyes, Obispo.
  04-07 Alexandri-Rawlins          elogium      Beato Alejandro Rawlins.
  04-07 Eduardi-Oldcorne           elogium      Beato Eduardo Oldcorne, Mártir (Con Beato Rodolfo).
--04-07 El-Iglesia                 elogium      El glorioso y antiquísimo historiador de la Iglesia San Egesipo 
  04-07 Gulielmi-Scili             elogium      Beato Guillermo Scili.
  04-07 Henrici-Walpole            elogium      Beato Enrique Walpole, Mártir.
- 04-07 Hermanni-Josephi           elogium      Beato Germán José, Sacerdote.
+ 04-07 Hermanni-Josephi           elogium      Beato Germán José, Sacerdote. San Jorge El Joven.
  04-07 Radulphi-Ashley            elogium      Beato Rodolfo Ashley, Mártir.
  04-07 Radulphi-Martyris          elogium      Beato Rodolfo, Mártir.
--04-07 San-Jorge                  calendar     San Jorge El Joven.
  04-07 Ursulinae                  elogium      Beata Ursulina.
  04-08 Clementis-Auximani         elogium      Beato Clemente de Osimo.
--04-08 Este                       elogium      Este santo estaba devorado de celo por la casa de Dios. Siendo o
  04-08 Juliae-Billiart            elogium      Beata Julia Billiart.
  04-08 Juliani-Sancti-Augustini   elogium      Beato Julián de San Agustín.
--04-08 San-Fructuoso              calendar     San Fructuoso de Braga, Obispo y Confesor.
--04-08 San-Gualterio              calendar     San Gualterio o Walterio de Pontoise, Abad.
  04-09 Antonii-Pavoni             elogium      Beato Antonio Pavoni, Mártir.
--04-09 San-Esiquio                calendar     San Esiquio, Mártir.
--04-09 San-Lorenzo                calendar     San Lorenzo de Irlanda, Obispo.
--04-09 Santa-Casilda              calendar     Santa Casilda, Virgen
--04-09 Santa-Casilda-2            elogium      Santa Casilda llevaba comida a los cristianos que el rey, su pad
+ 04-09 Casildae-Toletanae         elogium      Santa Casilda llevaba comida a los cristianos que el rey, su pad
  04-09 Ubaldi-Florentini          elogium      Beato Ubaldo de Florencia.
- 04-10 Antonii-Neyrot             elogium      Beato Antonio Neyrot, Mártir.
+ 04-10 Antonii-Neyrot             elogium      Beato Antonio Neyrot, Mártir. San Bademo, Abad. San Beocca, Abad
  04-10 Marci-Fantucci             elogium      Beato Marcos Fantucci.
- 04-10 Martyrum-Danorum           elogium      Los Mártires de los Daneses.
--04-10 San-Bademo                 calendar     San Bademo, Abad.
--04-10 San-Beocca                 calendar     San Beocca, Abad.
--04-10 San-Fulberto               calendar     San Fulberto de Chartres, Obispo.
--04-10 San-Hector                 calendar     San Héctor, Abad.
--04-10 San-Hedda                  calendar     San Hedda, Mártir.
--04-10 San-Macario                calendar     San Macario, Obispo y Confesor
--04-10 San-Paterno                calendar     San Paterno de Abdinghof.
--04-10 San-Pompeyo                calendar     San Pompeyo, Mártir.
--04-10 San-Teodoro                calendar     San Teodoro, Mártir.
--04-10 San-Terencio               calendar     San Terencio, Mártir.
--04-10 San-Zenon                  calendar     San Zenón, Mártir.
--04-11 El-San                     elogium      El gran San León sobrepujó a todos sus contemporáneos en prudenc
- 04-11 Georgii-Gervase            elogium      Beato Jorge Gervasio, Mártir.
+ 04-10 Martyrum-Danorum           elogium      Los Mártires de los Daneses. San Paterno de Abdinghof.
+ 04-11 Georgii-Gervase            elogium      Beato Jorge Gervasio, Mártir. Santa Godeberta.
  04-11 Rainerii-Inclusi           elogium      Beato Rainerio El Emparedado.
--04-11 Santa-Godeberta            calendar     Santa Godeberta.
  04-12 Andreae-Hibernon           elogium      Beato Andrés Hibernon.
  04-12 Andreae-Montisregalis      elogium      Beato Andrés de Montereale.
  04-12 Angeli-Clavasiensis        elogium      Beato Angel de Chivasso.
@@ -315,165 +153,43 @@
  04-12 Leonardi-Abbatis           elogium      Beato Leonardo, Abad.
  04-12 Leonis-Secundi             elogium      Beato León II .
  04-12 Marini-Abbatis             elogium      Beato Marino, Abad.
--04-12 San-Alfiero                calendar     San Alfiero y compañeros, Abades de la Cava.
--04-12 San-Leon                   calendar     San León I de Lucca, Abad.
--04-12 San-Sabas                  elogium      San Sabas era godo de nacimiento. Como rehusara comer carne inmo
  04-12 Simeonis                   elogium      Beato Simeón.
  04-13 Edmundi-Catherick          elogium      Beato Edmundo Catherick, Mártir (Con San Juan Lockwood).
  04-13 Idae-Boloniensis           elogium      Beata Ida de Boulogne, Matrona.
  04-13 Jacobi-Certaldensis        elogium      Beato Jacobo Certaldo, Abad.
  04-13 Joannis-Lockwood           elogium      Beato Juan Lockwood, Mártir.
  04-13 Margaritae-Castellanae     elogium      Beata Margarita Citta-di-Castello.
--04-13 San-Carpo                  calendar     San Carpo, Mártir.
--04-13 San-Hermenegildo           calendar     San Hermenegildo, Rey y Mártir
--04-13 San-Papilo                 calendar     San Papilo, Mártir (Con San Carpo).
  04-14 Lanvini                    elogium      Beato Lanvino.
- 04-14 Lidvinae-Schiedamensis     elogium      Beata Liduvina de Schiedman, Virgen.
+ 04-14 Lidvinae-Schiedamensis     elogium      Beata Liduvina de Schiedman, Virgen. San Antonio, Mártir. San Ju
  04-14 Martyrum-Lithuaniae        elogium      Mártires de Lituania (Ver Juan, Antonio y Eustacio).
--04-14 San-Antonio                calendar     San Antonio, Mártir.
--04-14 San-Bernardo               calendar     San Bernardo de Tirón, Abad.
--04-14 San-Eustacio               calendar     San Eustacio, Mártir.
--04-14 San-Juan                   calendar     San Juan, Mártir.
--04-14 San-Justino                calendar     San Justino, Mártir
--04-15 San-Paterno                calendar     San Paterno de Ceredigion.
--04-15 Santa-Luisa                calendar     Santa Luisa de Marillac, Viuda
--04-15 Santa-Una                  calendar     Santa Una.
  04-16 Archangeli-Bononiensis     elogium      Beato Arcángel de Bolonia.
--04-16 Benito                     elogium      Benito pasó la mayor parte de su vida haciendo peregrinaciones. 
  04-16 Gulielmi-Politiensis       elogium      Beato Guillermo de Polizzi.
--04-16 San-Cremencio              calendar     San Cremencio, Mártir (Ver Optato).
--04-16 San-Dragon                 calendar     San Dragón.
--04-16 San-Magno                  calendar     San Magno de Orkney, Mártir.
--04-16 San-Optato                 calendar     San Optato, Mártir.
--04-16 Santa-Engracia             calendar     Santa Engracia y sus 18 Compañeros, Mártires.
--04-16 Santo-Toribio              calendar     Santo Toribio de Liébana.
  04-17 Annae-Mariae-Jesu          elogium      Beata Ana María de Jesús, Virgen.
  04-17 Clarae-Pisanae             elogium      Beata Clara de Pisa, Viuda.
  04-17 Rudolphi-Bernensis         elogium      Beato Rodolfo de Berna, Mártir.
--04-17 San-Aniceto                calendar     San Aniceto, Papa y Mártir
  04-18 Andreae-Hibernon           elogium      Beato Andrés Hibernón, Fraile.
- 04-18 Andreae-Hibernon-2         elogium      Beato Andrés Hibernón, Fraile.
+ 04-18 Andreae-Hibernon-2         elogium      Beato Andrés Hibernón, Fraile. Santa Antia, Mártir.
  04-18 Mariae-Incarnationis       elogium      Beata María de la Encarnación, Viuda.
--04-18 San-Eleuterio              calendar     San Eleuterio, Obispo y Mártir
--04-18 Santa-Antia                calendar     Santa Antia, Mártir.
  04-19 Bernardi-Poenitentis       elogium      Beato Bernardo El Penitente.
  04-19 Jacobi-Ducket              elogium      Beato Jaime Ducket, Mártir.
--04-19 San-Usmaro                 calendar     San Usmaro, Abad.
--04-19 Tanta-San                  elogium      Tanta era la humildad de San León IX, que confesó públicamente s
  04-20 Hugonis-Anziacensis        elogium      Beato Hugo de Anzy.
--04-20 Santa-Hildegunda           calendar     Santa Hildegunda.
  04-20 Simonis-Tudertini          elogium      Beato Simón de Todi.
--04-21 San-Beunon                 calendar     San Beunón, Abad.
--04-21 San-Simeon                 calendar     San Simeón Barsabas.
--04-21 San-Simeon-2               calendar     San Simeón Barsabas, Mártir.
  04-22 Francisci-Fabrianensis     elogium      Beato Francisco de Fabriano.
--04-22 San-Alejandro              calendar     San Alejandro, Mártir.
--04-22 Santa-Oportuna             calendar     Santa Oportuna.
  04-23 Aegidii-Assisiensis        elogium      Beato Gil de Asís.
--04-23 Es-Santo                   no names     Es un Santo oriental, cuya devoción se extendió del oriente haci
  04-23 Helenae-Utinensis          elogium      Beata Elena de Udine.
--04-23 San-Aquileo                calendar     San Aquileo, Mártir.
--04-24 San-Fidel                  elogium      San Fidel de Sigmaringa nació en Sigmaringa (Suabia, Alemania) e
--04-24 San-Guillermo              calendar     San Guillermo Firmato.
  04-25 Joannis-Valentinensis      elogium      Beato Juan I de Valence.
--04-25 San-Heribaldo              calendar     San Heribaldo de Auxerre.
--04-25 San-Marcos                 calendar     San Marcos, Evangelista
  04-26 Aldae-Senensis             elogium      Beata Alda o Aldobrandesca.
--04-26 San-Esteban                calendar     San Esteban de Perm.
--04-26 San-Marcelino              elogium      San Marcelino, sucesor de San Cayo, gobernó a la Iglesia con tan
--04-26 San-Pascasio               calendar     San Pascasio Radberto, Abad.
--04-26 Santa-Franca               calendar     Santa Franca de Piacenza.
--04-27 San-Pedro-2                calendar     San Pedro Canisio, Confesor y Doctor
--04-28 San-Pablo                  calendar     San Pablo de la Cruz, Confesor
--04-29 San-Pedro-2                calendar     San Pedro de Verona, Mártir
--04-30 Santa-Catalina-2           calendar     Santa Catalina de Siena, Virgen
--05-01 La-Iglesia                 elogium      La Iglesia cristianizó en otro tiempo las fiestas paganas, usand
  05-02 Conradi-Seldemburensis     elogium      Beato Conrado de Seldemburem.
--05-02 San-Atanasio               calendar     San Atanasio, Obispo, Confesor y Doctor D. - Blanco
--05-02 San-Waldeberto             calendar     San Waldeberto, Abad.
--05-02 Santa-Mafalda              calendar     Santa Mafalda o Matilde, Monja.
--05-02 Santa-Zoe                  calendar     Santa Zoe, Mártir.
--05-03 Invencion-Hallazgo         calendar     Invención o Hallazgo de la Santa Cruz D. 2ª. cl. - Rojo
--05-04 Santa-Monica               calendar     Santa Mónica, Viuda D. - Blanco
--05-05 San-Pio                    calendar     San Pío V, Papa y Confesor D. - Blanco
--05-06 San-Juan                   calendar     San Juan "junto a la Puerta Latina". Dm. - Rojo
--05-07 San-Estanislao-2           calendar     San Estanislao, obispo y Mártir D. - Rojo
--05-08 Aparicion-San              calendar     Aparición de San Miguel Arcángel Dm. - Blanco
--05-09 San-Gregorio               calendar     San Gregorio Nacianceno, Obispo, Confesor y Doctor D. - Blanco
--05-10 El                         heading      El mismo día:
  05-10 Joannis-Avilae             elogium      Memoria de san Juan de Ávila, presbítero, que falleció en Montil
--05-10 San-Antonino               calendar     San Antonino (Antolín), Obispo y Confesor D. - Blanco
--05-10 Santo-Maestro              calendar     Santo Maestro Juan de Ávila, Confesor D. - Blanco
--05-11 Santiago-Senor             elogium      Santiago, primo del Señor, fue tan venerado entre los judíos, qu
--05-11 Santos-Felipe              calendar     Santos Felipe y Santiago, Apóstoles D. - Rojo
--05-12 Santos-Nereo               calendar     Santos Nereo, Domitila y Pancracio, Mártires Sd. - Rojo
--05-13 San-Roberto-2              calendar     San Roberto Belarmino, Obispo, Confesor y Doctor de la Iglesia. 
--05-14 San-Bonifacio              calendar     San Bonifacio, Mártir S. - Rojo
--05-15 San-Juan-2                 calendar     San Juan Bautista de la Salle, Confesor D. - Blanco
--05-16 San-Ubaldo                 calendar     San Ubaldo, Obispo y confesor Sd. - Blanco
--05-17 San-Pascual                calendar     San Pascual Bailón, Confesor D. - Blanco
--05-18 San-Venancio               calendar     San Venancio, Mártir D. - Rojo
--05-19 San-Pedro                  calendar     San Pedro Celestino (Celestino V), Papa y confesor D. - Blanco
--05-20 San-Bernardino             calendar     San Bernardino de Siena, Confesor Sd. - Blanco
+ 05-11 Jacobi-Apostoli            elogium      Santiago, primo del Señor, fue tan venerado entre los judíos, qu
  05-21 Benevenuti-Mareni          elogium      En Recanati, en la región del Piceno, en Italia, beato Bienvenid
--05-22 Santa-Julia                calendar     Santa Julia, Virgen y Mártir
--05-23 Aparicion-Apostol          calendar     Aparición del Apóstol Santiago Rojo
--05-23 Cuenta-Ramiro              elogium      Cuenta la tradición, que el rey Ramiro I de Asturias se niega a 
+ 05-23 Apparitio-Jacobi           elogium      Cuenta la tradición, que el rey Ramiro I de Asturias se niega a 
  05-24 Traslacion-Santo           elogium      Traslación de Santo Domingo de Guzmán, Confesor
--05-25 San-Gregorio               calendar     San Gregorio VII, Papa y Confesor D. - Blanco
--05-26 San-Felipe                 calendar     San Felipe Neri, Confesor D. - Blanco
--05-27 San-Beda-2                 calendar     San Beda el Venerable, Confesor y Doctor de la Iglesia D. - Blan
--05-28 San-Agustin                calendar     San Agustín de Cantórbery, Obispo y Confesor D. - Blanco
--05-29 Santa-Maria-2              calendar     Santa María Magdalena de Pazzis, Virgen Sd. - Blanco
--05-30 San-Felix-2                calendar     San Félix I, Papa y Mártir S. - Rojo
  05-31 Mariae-Reginae             elogium      Memoria de la Bienaventurada Virgen María, Reina, que engendró a
--06-01 Santa-Angela               calendar     Santa Ángela Mérici, Virgen
--06-02 Oracion-Oh                 elogium      Oración: Oh Dios, que todos los años nos dais un nuevo motivo de
--06-02 Santos-Marcelino           calendar     Santos Marcelino, Pedro y Erasmo, Obispos y Mártires - Rojo.
--06-03 Santa-Clotilde             calendar     Santa Clotilde, Reina
--06-04 San-Francisco              calendar     San Francisco Caracciolo, confesor Dom. - Blanco
--06-05 San-Bonifacio              calendar     San Bonifacio, Obispo y Mártir D. - Rojo
--06-06 San-Norberto               calendar     San Norberto, Obispo y Confesor D. - Blanco
--06-07 San-Pablo                  calendar     San Pablo, Obispo
--06-08 San-Maximino               calendar     San Maximino, Obispo
  06-09 Florentii-Juliani          elogium      En Perusa, los santos Mártires Florencio, Julián, Ciriaco, Marce
  06-09 Sanctii-Cordubensis        elogium      En Córdoba de España, san Sancho, joven, el cual, durante la per
--06-09 Santos-Primo               calendar     Santos Primo y Feliciano, Mártires Sd. - Rojo
  06-09 Zenaidis-Sociarum          elogium      En Cesarea de Palestina, el suplicio de las santas Zenaida, Ciri
--06-10 Santa-Margarita            calendar     Santa Margarita, Reina de Escocia. Sd. - Blanco
--06-11 San-Bernabe                calendar     San Bernabé, Apóstol Dm. - - Rojo
--06-12 San-Juan-2                 calendar     San Juan de Sahagún, Confesor D. - Blanco
--06-13 San-Antonio                calendar     San Antonio de Padua, Confesor D. - Blanco
--06-14 San-Basilio                calendar     San Basilio el Grande, Obispo, Confesor y Doctor D. - Blanco
--06-15 El                         heading      El mismo día:
--06-15 Fiesta-Sacratisimo         calendar     Fiesta del Sacratísimo Corazón de Jesús. D. Iª. cl. con octava p
--06-15 La-Corazon                 elogium      La devoción al Corazón de Jesús ha existido desde los primeros t
--06-15 Oracion-Dignaos            elogium      Oración: Dignaos, Señor, por la intercesión de vuestros santos m
--06-15 Patrono                    elogium      Patrono de los actores, comediantes, bailarines; perros; quienes
--06-15 San-Vito                   elogium      San Vito fue bautizado a la edad de doce años, a escondidas de s
--06-15 Santos-Vito                calendar     Santos Vito, Modesto y Crescencia, Mártires S. _ Blanco 
--06-16 San-Aureo                  calendar     San Aureo, Obispo, Justina su hermana y otros Mártires
--06-18 San-Efren                  calendar     San Efrén, Diácono, confesor y Doctor de la Iglesia, D. - Blanco
--06-19 Santa-Juliana              calendar     Santa Juliana de Falconeri, Virgen D. - Blanco
--06-20 San-Silverio               calendar     San Silverio, Papa y Mártir. S. - Rojo
--06-21 San-Luis                   calendar     San Luis Gonzaga, Confesor D. - Blanco
--06-22 San-Paulino                calendar     San Paulino de Nola, Obispo D. - Blanco
--06-24 Natividad-San              calendar     Natividad de San Juan Bautista D. Iª. cl. c. oct. común - Blanco
--06-25 San-Guillermo              calendar     San Guillermo, Abad D. - Blanco
--06-26 Santos-Juan                calendar     Santos Juan y Pablo, Mártires D. - Rojo
--06-27 San-Crescente              calendar     San Crescente
--06-28 San-Ireneo                 calendar     San Ireneo, Obispo y Mártir D. - Rojo
--06-29 Oracion-Oh                 elogium      Oración: Oh Dios, que habéis consagrado este día con el martirio
--06-29 San-Pablo                  elogium      San Pablo: n. alrededor del año 9 en Tarso de Cilicia; † decapit
--06-29 San-Pablo-2                elogium      San Pablo: Patrono de los escritores y autores; periodistas y pe
--06-29 San-Pedro-2                elogium      San Pedro: Patrono del papado y de los Papas; Iglesia Universal;
--06-29 San-Pedro-3                elogium      San Pedro, el Príncipe de los Apóstoles, y San Pablo, el Doctor 
--06-29 Santos-Pedro               calendar     Santos Pedro y Pablo, Apóstoles D. Iª. cl. c. oct. común - Rojo
--06-30 Conmemoracion-San          calendar     Conmemoración de San Pablo Dm. - Rojo
--07-01 La-Preciosisima            calendar     La Preciosísima Sangre de Nuestro Señor Jesucristo D. I cl. - Ro
--07-02 Visitacion-Bienaventurada  calendar     Visitación de la Bienaventurada Virgen María a su prima Santa Is
--07-03 San-Leon                   calendar     San León II, Papa y Confesor Blanco
--07-04 Dia-Santos                 calendar     Día 6º infraoctava de los Santos Apóstoles. Sd - Rojo
+ 06-15 Festum-Cordis-Jesu         calendar     La devoción al Corazón de Jesús ha existido desde los primeros t
  07-04 Eduardi-Fulthrop           elogium      Beato Eduardo Fulthrop, Mártir.
  07-04 Gasparis-Bono              elogium      Beato Gaspar Bono, Confesor.
  07-04 Gulielmi-Andleby           elogium      Beato Guillermo Andleby, Mártir.
@@ -482,202 +198,21 @@
  07-04 Joannis-Carey              elogium      Juan Carey, Mártir.
  07-04 Joannis-Cornelii           elogium      Beato Juan Cornelio, Mártir.
  07-04 Patricii-Salmon            elogium      Patricio Salmon, Mártir.
--07-04 San-Alberto                calendar     San Alberto Quadrelli de Rivolta, Obispo.
--07-04 San-Andres                 calendar     San Andrés de Creta, Obispo.
--07-04 San-Bernardino             calendar     San Bernardino Realino, Sacerdote.
--07-04 San-Odon                   calendar     San Odón de Canterbury, Obispo.
--07-04 Santa-Berta                calendar     Santa Berta, Viuda.
  07-04 Thomae-Bosgrave            elogium      Tomás Bosgrave, Mártir.
  07-04 Thomae-Warcop              elogium      Beato Tomás Warcop, Mártir.
  07-04 Ubaldi-Burgensis           elogium      Beato Ubaldo de Borgo Sansepulcro, Sacerdote.
--07-05 San-Antonio                calendar     San Antonio María Zacaría, Confesor de la fe D. - Blanco
--07-06 San-Isaias                 calendar     San Isaías, Profeta
--07-07 Santos-Cirilo              calendar     Santos Cirilo, Monje y Metodio, Obispo, Confesores de la fe D. -
--07-08 Santa-Isabel-2             calendar     Santa Isabel, Reina de Portugal, Viuda S. - Blanco
--07-09 San-Zenon-2                calendar     San Zenón, Mártir
--07-10 Los-Siete                  calendar     Los Siete Santos Hermanos, Mártires - Rufina y Segunda, Vírgenes
--07-11 Ademas-Transito            elogium      Además del Tránsito o Muerte de San Benito, del día 21 de marzo,
--07-11 San-Pio                    calendar     San Pío I, Papa y Mártir D. - Rojo
  07-11 Translatio-Benedicti       elogium   +1 En la Orden Benedictina: La translación de las reliquias de San 
--07-12 San-Juan                   calendar     San Juan Gualberto, Abad D. - Blanco
--07-13 San-Anacleto               calendar     San Anacleto, Papa y Mártir Sd. - Rojo
--07-14 San-Buenaventura           calendar     San Buenaventura, Obispo, Confesor de la Fe y Doctor de la Igles
--07-15 San-Enrique-2              calendar     San Enrique, Emperador y Confesor de la Fe. Sd. - Blanco
--07-16 Es                         elogium      Es una piadosa creencia que aquellos que llevan el escapulario d
--07-17 Alfonso-VIII               elogium      Alfonso VIII de Castilla, queriendo asestar un golpe decisivo a 
--07-17 En-Espana                  heading      En España: 
--07-17 San-Alejo                  calendar     San Alejo, Confesor de la Fe Sd. - Blanco
--07-17 San-Alejo-2                elogium      San Alejo dejó a su esposa el mismo día de su casamiento y se re
- 07-17 Triumphus-Crucis           no names     El Triunfo de la Santa Cruz
--07-18 San-Camilo                 calendar     San Camilo de Lelis, Confesor de la Fe. D. - Blanco
--07-19 San-Vicente                calendar     San Vicente de Paúl, Confesor de la Fe. D. - Blanco
--07-20 San-Jeronimo               calendar     San Jerónimo Emiliani, Confesor de la Fe. D. - Blanco
--07-21 Santa-Praxedes             calendar     Santa Práxedes, Virgen D. - Blanco
--07-22 Santa-Maria                calendar     Santa María Magdalena, Penitente D. - Blanco
--07-23 San-Apolinar               calendar     San Apolinar, Obispo y Mártir. D. - Rojo
--07-24 Santa-Cristina             calendar     Santa Cristina, Virgen y Mártir D. - Rojo
--07-25 Santiago-Mayor             calendar     Santiago el Mayor, Apóstol D I cl. - Rojo
--07-26 Santa-Ana                  calendar     Santa Ana, Madre de María Santísima. D-2 cl. - Blanco
--07-27 San-Pantaleon              calendar     San Pantaleón, Mártir S. - Rojo
--07-28 Santos-Nazario             calendar     Santos Nazario y Celso, Mártires Sd. - Rojo
--07-30 Santos-Abdon               calendar     Santos Abdón y Senén, Mártires S. - Rojo
--07-31 San-Ignacio                calendar     San Ignacio de Loyola, Presbítero y confesor de la Fe , Dm. - Bl
--08-01 Octava-Santiago            calendar     Octava de Santiago Apóstol, Dm - Rojo
--08-01 San-Pedro                  calendar     San Pedro ad Vincula Dm. - Blanco
--08-02 San-Alfonso                calendar     San Alfonso María de Ligorio, Obispo, Confesor y Doctor de la Ig
--08-03 Invencion-San              calendar     Invención o hallazgo del cuerpo de San Esteban, Protomártir, Sd.
--08-04 Santo-Domingo-2            calendar     Santo Domingo de Guzmán, Presbítero, Fundador y Confesor de la F
--08-05 Dedicacion-Santa           calendar     Dedicación de Santa María de las Nieves (Basílica de Santa María
--08-06 Transfiguracion-Nuestro    calendar     Transfiguración de Nuestro Señor Jesucristo D. 2ª. cl. - Blanco
--08-07 San-Cayetano               calendar     San Cayetano, Presbítero y confesor de la Fe D. - Blanco
--08-08 Largo-Esmeragdo            elogium      Largo, Esmeragdo y otros veinte cristianos padecieron juntos. Su
--08-08 Oracion-Oh                 elogium      Oración: Oh Dios, que todos los años nos proporcionáis un nuevo 
--08-08 San-Ciriaco                elogium      San Ciriaco era diácono de la Iglesia romana durante el pontific
--08-08 San-Juan                   calendar     San Juan María Vianney, Presbítero y Confesor de la Fe D. - Blan
--08-09 Vigilia-San                calendar     Vigilia de San Lorenzo, Diácono y Mártir S. - Morado
--08-10 San-Lorenzo                calendar     San Lorenzo, Diácono y Mártir 2ª. cl. c. Oct. simple. - Rojo
--08-11 Santos-Tiburcio            calendar     Santos Tiburcio y Susana, Mártires S. - Rojo
--08-12 Santa-Clara-2              calendar     Santa Clara, Virgen, D. - Blanco
--08-13 De-Ponciano                elogium      De san Ponciano sabemos mucho menos que de su compañero de marti
--08-13 Santos-Pociano             calendar     Santos Pociano, Papa, Hipólito y Casiano, Mártires S. - Rojo
--08-14 Vigilia-Asuncion           calendar     Vigilia de la Asunción de la Santísima Virgen María a los cielos
--08-15 La-Asuncion                calendar     La Asunción de Nuestra Señora D. Iª. cl. octava común. - Blanco
--08-16 Una-II                     elogium      Una antigua tradición, que arranca del siglo II, atribuye los no
--08-18 Asuncion-Nuestra           calendar     4º día de la infraoctava de la Asunción de Nuestra Señora de Asu
--08-18 San-Agapito                calendar     San Agapito, Mártir
--08-19 San-Juan                   calendar     San Juan Eudes, Presbítero, Fundador y confesor de la Fe D. - Bl
--08-20 San-Bernardo               calendar     San Bernardo, Abad y Doctor de la Iglesia D. - Blanco
--08-21 Santa-Juana-2              calendar     Santa Juana Francisca Fremiot de Chantal. Viuda
--08-22 Inmaculado-Corazon         calendar     Inmaculado Corazón de la Bienaventurada Virgen María Dm. - Blanc
--08-23 San-Felipe-2               calendar     San Felipe Benizi, Presbítero Confesor de la Fe. D. - Blanco
--08-24 San-Bartolome              calendar     San Bartolomé, Apóstol D. 2ª. cl. - Rojo
--08-25 San-Luis                   calendar     San Luis, Rey, Confesor de la Fe Sd. - Blanco
--08-26 San-Ceferino               calendar     San Ceferino, Papa, Mártir S. - Rojo
--08-27 San-Jose                   calendar     San José de Calasanz, Presbítero y confesor de la Fe, D. - Blanc
--08-28 San-Agustin                calendar     San Agustín, Obispo, confesor y Doctor de la Iglesia, D. - Blanc
--08-29 Degollacion-San            calendar     Degollación de San Juan Bautista Dm. - Rojo
--08-30 Santa-Rosa-2               calendar     Santa Rosa de Santa María (Rosa de Lima), Virgen D. - Blanco
--08-31 San-Ramon                  calendar     San Ramón Nonato, Presbítero cardenal y confesor de la Fe D. - B
--09-01 San-Gil                    calendar     San Gil (Egidio), Abad, S. - Blanco
--09-02 San-Esteban-2              calendar     San Esteban, Rey de Hungria, Confesor de la Fe S. cl. - Blanco
--09-03 San-Pio                    calendar     San Pío X, Papa
--09-04 San-Moises                 calendar     San Moisés, Legislador y Profeta
--09-05 San-Lorenzo                calendar     San Lorenzo Justiniano, Obispo y confesor de la Fe, Sd. - Blanco
--09-06 San-Eleuterio              calendar     San Eleuterio, Abad
--09-07 Santa-Regina               calendar     Santa Regina, Virgen y Mártir
--09-09 Santos-Doroteo             calendar     Santos Doroteo y Gorgonio, Mártires S. - Rojo
--09-10 San-Nicolas                calendar     San Nicolás de Tolentino, Presbítero Confesor de la Fe, D. - Bla
--09-11 Santos-Proto               calendar     Santos Proto y Jacinto, Mártires, S. - Rojo
--09-12 Santisimo-Nombre           calendar     Santísimo Nombre de María Dm. - Blanco
--09-13 San-Felipe                 calendar     San Felipe
--09-14 Exaltacion-Santa           calendar     Exaltación de la Santa Cruz Dm. - Rojo
--09-16 Santos-Cornelio            calendar     Santos Cornelio, Papa y Cipriano, Obispo, Mártires
--09-17 Las-Llagas                 calendar     Las Llagas de San Francisco de Asís D. - Blanco
--09-18 San-Jose                   calendar     San José de Cupertino, Presbítero y Confesor de la Fe, D. - Blan
--09-19 San-Jenaro                 calendar     San Jenaro, Obispo y Compañeros, Mártires D. - Rojo
--09-20 Santos-Eustaquio           calendar     Santos Eustaquio y Compañeros Mártires, Sd. - Rojo
--09-21 San-Mateo                  calendar     San Mateo, Apóstol Evangelista, D. 2ª. cl. - Rojo
--09-22 Santo-Tomas                calendar     Santo Tomás de Villanueva, Religioso, obispo y confesor de la Fe
--09-23 San-Lino                   calendar     San Lino. Papa Mártir, Sd. - Rojo
--09-24 Nuestra-Senora             calendar     Nuestra Señora de la Merced, S. - Blanco
--09-25 San-Fermin                 calendar     San Fermín, Obispo mártir, S. - Rojo
+ 07-17 Triumphus-Crucis           elogium      El Triunfo de la Santa Cruz Alfonso VIII de Castilla, queriendo 
+ 08-13 Pontiani-Papae             elogium      De san Ponciano sabemos mucho menos que de su compañero de marti
  09-25 Vincentii-Strambi          elogium      En Roma, el nacimiento de san Vicente María Strambi, Obispo de M
--09-26 Santos-Cipriano            calendar     Santos Cipriano y Justina, Virgen y Mártires, S. - Rojo
--09-27 Santos-Cosme               calendar     Santos Cosme y Damián, Mártires, Sd. - Rojo
--09-28 San-Wenceslao              calendar     San Wenceslao, Duque, Mártir, Sd. - Rojo
--09-29 Dedicacion-San             calendar     Dedicación de San Miguel Arcángel, D. Iª cl. - Blanco
--09-30 San-Jeronimo               calendar     San Jerónimo, Presbítero, Confesor y Doctor de la Iglesia., D. -
--10-01 El                         heading      El mismo día: 
--10-01 El-Santo                   calendar     El Santo Ángel Custodio de España, Dm. - Blanco
--10-01 San-Remigio-2              calendar     San Remigio, Obispo y Confesor de la Fe, S. - Blanco
--10-01 Sobre-Mons                 elogium      Sobre esta devoción Mons. Eijo Garay escribió en 1917, cuando er
--10-02 Santos-Angeles             calendar     Santos Ángeles de la Guarda, Dm. - Blanco
--10-03 Santa-Teresa               calendar     Santa Teresa del Niño Jesús, Virgen, D. - Blanco
--10-04 San-Francisco              calendar     San Francisco de Asís, Diácono, Fundador y Confesor de la Fe, Dm
--10-05 Santos-Placido             calendar     Santos Plácido y compañeros Mártires, Sd. - Rojo
--10-06 San-Bruno                  calendar     San Bruno, Presbítero, Fundador y confesor de la Fe, D. - Blanco
--10-07 Nuestra-Senora             calendar     Nuestra Señora, la Virgen del Rosario, D. 2ª. cl. - Blanco
--10-08 Santa-Brigida-2            calendar     Santa Brígida, Viuda D. - Blanco
--10-09 San-Juan                   calendar     San Juan Leonardi, Presbítero, Fundador y Confesor de la Fe, D. 
--10-10 San-Francisco-2            calendar     San Francisco de Borja, Presbítero y Confesor de la Fe, Sd. - Bl
--10-11 La-Divina                  calendar     La Divina Maternidad de María Nuestra Señora, D. 2ª. cl. - Blanc
  10-12 Mariae-Columnae            elogium      Fiesta de Nuestra Señora del Pilar. Según una venerada tradición
--10-12 Nuestra-Senora             calendar     Nuestra Señora del Pilar, D. 2ª. cl. - Blanco
--10-13 San-Eduardo-2              calendar     San Eduardo, Rey y Confesor de la Fe, Sd. - Blanco
--10-14 San-Calixto                calendar     San Calixto, Papa y Mártir, D. - Rojo
--10-15 Santa-Teresa               calendar     Santa Teresa de Jesús, Virgen y Fundadora, D. - Blanco
  10-16 Agilei-Carthaginensis      elogium      En Cartago, san Agileo, Mártir, en cuya fiesta predicó san Agust
  10-16 Aureliae-Argentinensis     elogium      En Estrasburgo, santa Aurelia, Virgen.
  10-16 Brunonis-Ruthenorum        elogium      En Prusia, san Bruno, Obispo de los Rutenos y Mártir, que, predi
--10-16 Santa-Eduvigis             calendar     Santa Eduvigis, Viuda, Sd. Blanco
--10-17 Santa-Margarita            calendar     Santa Margarita María de Alacoque, Virgen, D. - Blanco
--10-18 San-Lucas                  calendar     San Lucas Evangelista, D. 2ª. cl. - Rojo
--10-19 San-Pedro-2                calendar     San Pedro de Alcántara, Presbítero y Confesor de la Fe, D. - Bla
--10-20 San-Juan-2                 calendar     San Juan de Kety (Cancio), Presbítero y confesor de la Fe, D. - 
--10-21 El                         heading      El mismo día: 
--10-21 San-Hilarion               calendar     San Hilarión, Abad, Sd. - Blanco
--10-21 Santa-Ursula               calendar     Santa Úrsula y Compañeras, Vírgenes y Mártires
--10-22 Santa-Maria                calendar     Santa María Salomé, Madre de los Apóstoles, Santiago y Juan, Sd.
--10-23 San-Antonio-2              calendar     San Antonio María Claret, Obispo y confesor de la Fe, Blanco
--10-24 San-Rafael                 calendar     San Rafael, Arcángel, Dm. - Blanco
--10-25 Santos-Crisanto            calendar     Santos Crisanto y Daría, Mártires, S. - Rojo
--10-26 San-Evaristo               calendar     San Evaristo, Papa y Mártir, S, - Rojo
--10-27 Vigilia-Santos             calendar     Vigilia de los Santos Simón y Judas Tadeo, Apóstoles, S. - Morad
--10-28 San-Simon                  calendar     San Simón el Cananeo y San Judas Tadeo, Apóstoles D. 2ª. cl. - R
--10-29 San-Narciso                calendar     San Narciso Patriarca de Jerusalén, Obispo y Confesor de la Fe, 
--10-30 San-Alonso                 calendar     San Alonso Rodríguez, Religioso Confesor de la Fe, Sd. - Blanco
--11-01 Fiesta-Todos               calendar     Fiesta de Todos los Santos, D. Iª. cl. oct. Blanco
--11-02 Conmemoracion-Fieles       calendar     Conmemoración de todos los Fieles Difuntos, D. - Negro
--11-03 San-Carlos                 calendar     San Carlos Borromeo, Cardenal
--11-04 San-Carlos-2               calendar     San Carlos Borromeo, Obispo y Confesor de la Fe, D. - Blanco
--11-05 El                         heading      El mismo día:
--11-05 Fiestas-Sagradas           calendar     Fiestas de las Sagradas Reliquias, Dm. - Rojo Después de haber c
--11-06 San-Severo                 calendar     San Severo, Obispo y Mártir.
--11-07 San-Prosdocimo             calendar     San Prosdócimo, Obispo
--11-08 Octava-Todos               calendar     Octava de Todos los Santos, Dm -Blanco
--11-09 Dedicacion-Archibasilica   calendar     Dedicación de la Archibasílica del Santísimo Salvador (San Juan 
--11-10 San-Andres                 calendar     San Andrés Avelino, Presbítero y confesor de la Fe, D. - Blanco
--11-11 San-Martin                 calendar     San Martín, Obispo y Confesor de la Fe, D. - Blanco
--11-12 San-Martin-2               calendar     San Martín I, Papa y Mártir, Sd. - Rojo
--11-13 San-Diego                  calendar     San Diego, Religioso y Confesor de la Fe, Sd. - Blanco
--11-14 San-Josafat                calendar     San Josafat, Obispo y Mártir, D. - Rojo
--11-15 San-Alberto                calendar     San Alberto Magno, Religioso, Obispo, Confesor de la Fe y Doctor
--11-16 Santa-Gertrudis            calendar     Santa Gertrudis, Virgen, D. - Blanco
--11-17 San-Gregorio               calendar     San Gregorio Taumaturgo, Obispo y Confesor de la Fe, Sd. - Blanc
--11-18 Dedicacion-Basilicas       calendar     Dedicación de las Basílicas de los Santos Pedro y Pablo, Dm. - B
--11-19 Santa-Isabel               calendar     Santa Isabel de Hungría, Reina y Viuda, D. - Blanco
--11-20 San-Felix                  calendar     San Félix de Valois, Presbítero y confesor de la Fe, D. - Blanco
--11-21 La-Presentacion            calendar     La Presentación de la Santísima Virgen María, Dm. - Blanco
--11-22 Santa-Cecilia-2            calendar     Santa Cecilia, Virgen y Mártir, D. - Rojo
--11-23 San-Clemente               calendar     San Clemente I, Papa y Mártir, D. - Rojo
--11-24 San-Juan                   calendar     San Juan de la Cruz, Religioso, Presbítero, Confesor de la Fe y 
--11-25 Santa-Catalina             calendar     Santa Catalina, Virgen y Mártir, D. - Rojo
--11-26 San-Silvestre              calendar     San Silvestre Gozzolino, Abad, D. - Blanco
--11-27 Fiesta-Medalla             calendar     Fiesta de la Medalla Milagrosa, Blanco
--11-27 La-Nov                     elogium      La tarde el 27 de Nov. de 1830, sábado víspera del primer doming
--11-28 San-Sostenes               calendar     San Sóstenes
--11-29 El                         heading      El mismo día: 
--11-29 San-Saturnino              calendar     San Saturnino, Mártir S. - Rojo
--11-30 San-Andres                 calendar     San Andrés, Apóstol, D. 2 cl. - Rojo
--12-01 Santo-Profeta              calendar     Santo Profeta Nahum
--12-02 Santa-Bibiana              calendar     Santa Bibiana Virgen y Mártir, Sd. - Rojo
--12-03 San-Francisco              calendar     San Francisco Javier Religioso, Presbítero y Confesor de la Fe, 
--12-04 San-Pedro-2                calendar     San Pedro Crisólogo, Obispo, Confesor de la Fe y Doctor de la St
--12-05 San-Sabas                  calendar     San Sabas, Abad, S. - Blanco
--12-06 San-Nicolas                calendar     San Nicolás de Bari, Obispo y Confesor de la Fe, D. - Blanco
--12-07 San-Ambrosio-2             calendar     San Ambrosio, Obispo, Confesor de la Fe y Doctor de la S.M. Igle
--12-08 La-Inmaculada-2            calendar     La Inmaculada Concepción de la Bienaventurada Siempre Virgen Mar
--12-09 Santa-Leocadia             calendar     Santa Leocadia
--12-10 San-Melquiades-2           calendar     San Melquíades, Papa Mártir, Sd. - Rojo
--12-11 San-Damaso                 calendar     San Dámaso I, Papa y Confesor de la Fe, Sd. - Blanco
--12-12 En-Hispanoamerica          calendar     En Hispanoamérica: Nuestra Señora de Guadalupe, D. I cl. - Blanc
- 12-12 Infra-Octavam-Conceptionis elogium      De la infraoctava de la Inmaculada
+ 11-27 Apparitio-Immaculatae      elogium      La tarde el 27 de Nov. de 1830, sábado víspera del primer doming
+ 12-12 Infra-Octavam-Conceptionis calendar     De la infraoctava de la Inmaculada En Hispanoamérica: Nuestra Se
  12-12 Mariae-Guadalupensis       elogium      La Bienaventurada Virgen María de Guadalupe en México, cuyo gran
--12-13 Santa-Lucia                calendar     Santa Lucía, Virgen y Mártir, D. - Rojo
- 12-14 Infra-Octavam-Conceptionis elogium      Infraoctava de la Inmaculada 
--12-14 San-Juan                   calendar     San Juan de la Cruz, Presbítero y Confesor
--12-16 San-Eusebio-2              calendar     San Eusebio de Verceli, Obispo y Mártir, Sd. - Rojo
--12-18 Expectacion-Parto          calendar     Expectación del Parto de la Bienaventurada Virgen María, Dm. - B
+ 12-14 Infra-Octavam-Conceptionis elogium      Infraoctava de la Inmaculada San Juan de la Cruz, Presbítero y C
  12-18 Exspectatio-Partus         elogium      Nuestra Señora de la Esperanza, La Expectación del Parto de la B
  12-18 O-Adonai                   elogium      O Adonai - Oh Señor.
  12-18 O-Clavis-David             elogium      O Clavis - Oh llave de David / liberación de Israel.
@@ -686,26 +221,11 @@
  12-18 O-Radix-Jesse              elogium      O Radix Jesse - Oh Raiz de Jese.
  12-18 O-Rex-Gentium              elogium      O Rex Gentium - Oh Rey de las naciones.
  12-18 O-Sapientia                elogium      O Sapientia - Oh Sabiduria.
--12-18 Oracion-Dios               elogium      Oración: Dios y Señor nuestro, que en el parto de la Virgen Marí
--12-19 San-Atanasio               calendar     San Atanasio I, Papa
--12-20 San-Ceferino               calendar     San Ceferino, Papa y Mártir
--12-21 Santo-Tomas                calendar     Santo Tomás Apóstol D. 2 cl. - Rojo
--12-23 Santa-Victoria             calendar     Santa Victoria
--12-24 San-Juan                   calendar     San Juan Cancio, Presbítero y Confesor
--12-24 Vigilia-Navidad            calendar     Vigilia de Navidad S -Morado
--12-25 Augusto                    elogium      Augusto, señor del mundo, había ordenado un censo general y prep
--12-25 Natividad-Senor            calendar     Natividad del Señor, D. I.ª. cl. c. oc. privil. tercer ord. - Bl
--12-26 San-Esteban                calendar     San Esteban Protomártir, D. 2ª. cl. c. octava simple. – Rojo
--12-27 San-Juan                   calendar     San Juan Apóstol y Evangelista, D. 2ª. cl. c. octava simple. – B
  12-27 Statio-Mariae-Majoris      elogium      Estación en Santa María la Mayor
--12-28 Los-Santos                 calendar     Los Santos Inocentes Mártires, D. 2ª. cl. c. octava simple. – Mo
  12-28 Statio-Pauli               elogium      Estación de San Pablo Extramuros
--12-29 Santo-Tomas                calendar     Santo Tomás de Cantórbery, Obispo y Mártir, D. - Rojo
- 12-30 Infra-Octavam-Nativitatis  elogium      Dia 6º Infraoctava de Navidad
--12-30 Traslacion-Santiago        calendar     Traslación de Santiago Apóstol, Dm. - Rojo. Patrón de España 
--12-31 San-Silvestre              calendar     San Silvestre I, Papa y Confesor de la Fe, D. - Blanco
+ 12-30 Infra-Octavam-Nativitatis  calendar     Dia 6º Infraoctava de Navidad Traslación de Santiago Apóstol, Dm
 
-# ---------------- Francais (78) ----------------
+# ---------------- Francais (20) ----------------
  01-26 Domitillae-Sorensis        elogium      À Sora, en Campanie, sainte Domitilla, vierge et martyre, qui fu
  01-26 Felicis-Januarii           elogium      À Rome, sous l'empereur Claude, les saints martyrs Felix et Janv
  01-26 Gaudentii-Mediolanensis    elogium      À Milan, saint Gaudence, évêque et confesseur, qui brilla par sa
@@ -716,88 +236,27 @@
  01-27 Gildae-Abbatis             elogium      À Pontoise, en France, saint Gildas, abbé et ermite, réputé pour
  01-27 Petri-Caesariensis         elogium      À Césarée de Cappadoce, en Turquie, saint Pierre, évêque et mart
  02-03 Septem-Mulierum            no names     Avant lui, sept femmes, qui recueillaient les gouttes de son san
--02-05 Linea                      spacer       =
--02-05 Linea-2                    spacer       =
--02-05 Linea-3                    spacer       =
--02-05 Linea-4                    spacer       =
--02-05 Linea-5                    spacer       =
--02-05 Linea-6                    spacer       =
--02-11 Le                         heading      Le même 11 février, sont nés dans l'éternelle vie :
--02-11 Linea                      spacer       =
--02-11 Linea-2                    no names     _
--02-20 En                         heading      En ce même 20 février, sont également nés à la vie meilleure :
  03-02 Cleonici-Eutropii          elogium      De même, les saints soldats Cléonicus, Eutrope et Basileiscus, q
  03-02 Hemiterii-Cheledonii       elogium      En Espagne, les saints martyrs Hemiterius [ou Madir] et Chélidoi
  03-02 Marini-Asterii             elogium      À Césarée, en Palestine, pendant la persécution sous l'empereur 
  03-02 Titiani-Brixiensis         elogium      À Brescia, [en 526,] le saint confesseur Titian, évêque de cette
  05-13 Petri-Regalati             elogium      À Valladolid, [en 1456,] le saint Confesseur Pierre Régalati, un
--05-29 Linea                      no names     _ 
--05-30 Linea                      no names     _ 
--09-02 Le                         heading      Le même 2 septembre, sont nés dans la vie éternelle :
--09-02 Linea                      spacer       =
--09-02 Linea-2                    no names     _
--09-03 Le                         heading      Le même 3 septembre, sont nés dans la vie éternelle :
--09-03 Linea                      spacer       =
--09-03 Linea-2                    no names     _
--10-09 Le                         heading      Le même jour, sont nés à la vie éternelle :
--10-09 Linea                      no names     _
--10-12 Le                         heading      Le même 12 octobre, sont nés à la vie éternelle :
--10-12 Linea                      spacer       =
--10-12 Linea-2                    no names     _
--10-13 Le                         heading      Le même 13 octobre, sont nés à la vie éternelle :
--10-13 Linea                      spacer       =
--10-13 Linea-2                    no names     _
--10-17 Le-2                       heading      Le même 17 octobre, sont nés dans la vie éternelle :
--10-17 Linea                      spacer       =
--10-17 Linea-2                    no names     _
--10-20 Le                         heading      Le même 20 octobre, sont nés dans la vie éternelle :
--10-20 Linea                      spacer       =
--10-20 Linea-2                    no names     _
- 10-20 Octava-Eduardi             elogium      Le lendemain est l'Octave du saint Confesseur Edward.
--11-13 Le                         heading      Le même 13 novembre, sont nés dans la vie éternelle :
--11-13 Linea                      spacer       =
--11-13 Linea-2                    no names     _
- 11-14 Erconvaldi-Londinensis     elogium      Le lendemain, en Angleterre, nous célébrons la fête de saint Erc
--11-14 Le                         heading      Le même 14 novembre, sont nés dans la vie éternelle :
--11-14 Linea                      spacer       =
--11-14 Linea-2                    spacer       =
- 11-15 Gertrudis                  elogium      Le lendemain, nous célébrons la fête de la sainte Vierge Gertrud
--11-15 Le                         heading      Le même 15 novembre, sont nés dans la vie éternelle :
--11-15 Linea                      spacer       =
--11-15 Linea-2                    spacer       =
--11-17 Linea                      spacer       =
--11-18 Le                         heading      Le même 18 novembre, sont nés dans la vie éternelle :
--11-18 Linea                      spacer       =
--11-18 Linea-2                    no names     _
--11-21 Le                         heading      Le même 21 novembre, sont nés dans la vie éternelle :
--11-21 Linea                      spacer       =
--11-21 Linea-2                    no names     _
- 11-27 Gregorii-Thaumaturgi       elogium      Le lendemain, nous célébrons la fête du saint Confesseur Grégoir
--11-27 Le                         heading      Le même 27 novembre, sont nés dans la vie éternelle :
--11-27 Linea                      spacer       =
--11-27 Linea-2                    no names     _
- 11-28 Josaphat                   elogium      Le lendemain, nous célébrons la fête du saint martyr Josaphat, a
--11-28 Le                         heading      Le même 28 novembre, sont nés dans la vie éternelle :
--11-28 Linea                      spacer       =
--11-28 Linea-2                    no names     _
--11-29 Le                         heading      Le même 29 novembre, sont nés dans la vie éternelle :
--11-29 Linea                      spacer       =
--11-29 Linea-2                    no names     _
--12-25 Le                         heading      Le même 25 décembre sont nés dans la vie éternelle :
+ 10-20 Octava-Eduardi             heading      Le lendemain est l'Octave du saint Confesseur Edward. Le même 20
+ 11-14 Erconvaldi-Londinensis     heading      Le lendemain, en Angleterre, nous célébrons la fête de saint Erc
+ 11-15 Gertrudis                  heading      Le lendemain, nous célébrons la fête de la sainte Vierge Gertrud
+ 11-27 Gregorii-Thaumaturgi       heading      Le lendemain, nous célébrons la fête du saint Confesseur Grégoir
+ 11-28 Josaphat                   heading      Le lendemain, nous célébrons la fête du saint martyr Josaphat, a
 
-# ---------------- Polski (154) ----------------
+# ---------------- Polski (136) ----------------
 -01-01 Elogium                    dots         ‥
 -01-11 Elogium                    dots         ‥
 -01-18 Elogium                    dots         ‥
--01-31 Dnia                       heading      Dnia 31-go stycznia 
 -01-31 Elogium                    dots         ‥
 -02-02 Elogium                    dots         ‥
--02-04 Elogium                    dots      +1 ‥
+-02-04 Elogium                    dots         ‥
 -02-04 Elogium-2                  dots         ‥
--02-05 Elogium                    dots      +1 ‥
+-02-05 Elogium                    dots         ‥
 -02-06 Elogium                    dots         ‥
--02-09 Dnia                       heading      Dnia 9-go lutego
--02-11 Dnia                       heading      Dnia 11-go lutego.
 -02-14 Elogium                    dots         ‥
 -02-14 Elogium-2                  dots         ‥
 -02-23 Elogium                    dots         ‥
@@ -806,10 +265,8 @@
 -02-23 Elogium-4                  dots         ‥
 -02-23 Elogium-5                  dots         ‥
 -02-23 Elogium-6                  dots         ‥
--02-24 Dnia                       heading      Dnia 24-go lub 25-go w roku przestępnym.
 -02-25 Elogium                    dots         ‥
 -02-26 Elogium                    dots         ‥
--02-27 Dnia                       heading      Dnia 27-go lutego.
 -03-01 Elogium                    dots         ‥
 -03-06 Elogium                    dots         ‥
 -03-07 Elogium                    dots         ‥
@@ -822,8 +279,6 @@
 -03-23 Elogium                    dots         ‥
 -03-25 Elogium                    dots         ‥
 -04-05 Elogium                    dots         ‥
--04-06 Dnia                       heading      Dnia 6-go kwietnia 
--04-06 Elogium                    dots         ‥
 -04-09 Elogium                    dots         ‥
 -04-11 Elogium                    dots         ‥
 -04-16 Elogium                    dots         ‥
@@ -833,7 +288,6 @@
 -04-22 Elogium                    dots         ‥
 -04-24 Elogium                    dots         ‥
 -04-26 Elogium                    dots         ‥
--04-27 Dnia                       heading      Dnia 27-go kwietnia 
 -04-27 Elogium                    dots         ‥
 -04-28 Elogium                    dots         ‥
 -04-29 Elogium                    dots         ‥
@@ -841,7 +295,6 @@
 -05-01 Elogium                    dots         ‥
 -05-04 Elogium                    dots         ‥
 -05-11 Elogium                    dots         ‥
--05-13 Dnia                       heading      Dnia 13-go maja 
 -05-13 Elogium                    dots         ‥
 -05-14 Elogium                    dots         ‥
 -05-14 Elogium-2                  dots         ‥
@@ -864,7 +317,6 @@
 -06-11 Elogium                    dots         ‥
 -06-11 Elogium-2                  dots         ‥
 -06-11 Elogium-3                  dots         ‥
--06-18 Dnia                       heading      Dnia 18-go czerwca 
 -06-22 Elogium                    dots         ‥
 -06-23 Elogium                    dots         ‥
 -06-24 Elogium                    dots         ‥
@@ -886,10 +338,8 @@
 -08-06 Elogium                    dots         ‥
 -08-09 Elogium                    dots         ‥
 -08-13 Elogium                    dots         ‥
--08-16 Dnia                       heading      Dnia 16-go sierpnia
 -08-16 Elogium                    dots         ‥
 -08-17 Elogium                    dots         ‥
--08-19 Dnia                       heading      Dnia 19-go sierpnia 
 -08-19 Elogium                    dots         ‥
 -08-20 Elogium                    dots         ‥
 -08-22 Elogium                    dots         ‥
@@ -906,7 +356,6 @@
 -08-28 Elogium                    dots         ‥
 -08-29 Elogium                    dots         ‥
 -09-01 Elogium                    dots         ‥
--09-03 Dnia                       heading      Dnia 3-go września 
  09-07 Reginae-Virginis           elogium      W obwodzie Autunu męczeństwo św. Reginy, Dziewicy, która musiała
 -09-10 Elogium                    dots         ‥
 -09-16 Elogium                    dots         ‥
@@ -915,22 +364,17 @@
 -09-19 Elogium                    dots         ‥
 -09-30 Elogium                    dots         ‥
 -10-02 Elogium                    dots         ‥
--10-03 Dnia                       heading      Dnia 3-go października 
 -10-03 Elogium                    dots         ‥
 -10-11 Elogium                    dots         ‥
 -10-14 Elogium                    dots         ‥
 -10-16 Elogium                    dots         ‥
--10-17 Dnia                       heading      Dnia 17-go października
 -10-18 Elogium                    dots         ‥
 -10-20 Elogium                    dots         ‥
 -10-23 Elogium                    dots         ‥
--10-24 Dnia                       heading      Dnia 24-go października 
 -10-24 Elogium                    dots         ‥
 -10-26 Elogium                    dots         ‥
 -11-01 Elogium                    dots         ‥
--11-03 Dnia                       heading      Dnia 3-go listopada 
 -11-12 Elogium                    dots         ‥
--11-15 Dnia                       heading      Dnia 15-go listopada 
 -11-19 Elogium                    dots         ‥
 -11-27 Elogium                    dots         ‥
 -12-08 Elogium                    dots         ‥
@@ -941,8 +385,7 @@
 -12-22 Elogium                    dots         ‥
 -12-31 Elogium                    dots         ‥
 
-# ---------------- Bohemice (166) ----------------
- 01-13 Commemoratio-Baptismatis   elogium      Památka Křtu našeho Pána Ježíše Krista. † 
+# ---------------- Bohemice (156) ----------------
  01-13 Lenogisili                 elogium      Tentýž den v oblasti kolem Bussy (Francie) svatý kněz a vyznavač
  01-14 Cleri-Diaconi              elogium      V Antiochii svatý diákon Clerus. †
  01-14 Guarini-Alpensis           elogium      V klášteře Panny Marie v Aulps u Allo­brogů svatý Guarini, + žák
@@ -960,25 +403,20 @@
  02-02 Surgentes-Oratio           elogium      Povstaneme a v úkloně se v duchu pomodlíme 
  02-03 Aelredi-Abbatis            elogium      Svatý Aelred, opat a vyznavač, jehož odchod do nebeské vlasti sl
  02-03 Deodati-Episcopi           elogium      V Lagnieu (ve Francii) došel k cíli své pozemské cesty svatý bis
--02-03 Elogium                    heading      3. února 
  02-03 Tryphonis-Martyris         elogium      V Niceji za časů císaře Decia utrpení svatého Tryfona. † 
  02-04 Polycarpi-Smyrnensis       elogium      Svatý biskup a mučedník Polykarp. + Jeho památku vzpomínáme dvac
  02-06 Raymundi-Fiterensis        elogium      Svatý Raymund, opat a vyznavač. Jeho památku vzpomínáme prvního 
--02-07 Elogium                    heading      7. února 
  02-08 Salomonis-Cordubensis      elogium      V Cordobě svatý mučedník Šalamoun. † 
  02-11 Euphrasiae-Alexandrinae    elogium      V Alexandrii se rozžehnala se světem svatá panna Eufrasie, + jež
  02-12 Macarii-Rufini             elogium      Tentýž den doputovali na konec své po­zemské pouti svatí mučední
  02-13 Stephani-Grandimontensis   elogium      V oblasti kolem Limoges završil své pozemské putování svatý Štěp
  02-14 Conradi-Confessoris        elogium      Svatý vyznavač Konrád, o jehož životě se pojednává sedmnáctého b
  02-15 Septem-Mulierum            elogium      V Sebaste v Arménii sedmero svatých žen, + jež zachytávaly krůpě
--02-17 Elogium                    heading      17. února 
  02-19 Bonifatii-Lausannensis     elogium      V klášteře Camera B. Mariae u Bru­selu svatý biskup Bonifác z La
--02-19 Elogium                    heading      19. února 
  02-20 Caji-Victoris              elogium      V Římě svatí Gajus, Viktor a Panthamia. † 
  02-24 Inventio-Capitis-Praecursoris elogium      Za panování císaře Marciána byla po­prvé nalezena hlava předchůd
  02-29 Commemoratio-Plurimorum    no names     Památka velkého počtu svatých mu­čedníků a vyznavačů, taktéž sva
  02-29 Deo-Gratias                elogium      R. Bohu díky.
--02-29 V                          heading      V přestupném roce se 24. února ohlašuje jenom: 
  03-01 Leonis-Martyris            elogium      Dále utrpení svatého mučedníka Lea. † 
  03-05 Aegidii-Narbonensis        elogium      V Narbonne v Galii svatý Aegidius. † 
  03-06 Juliani-Toletani           elogium      V Toledu uložení svatého biskupa Juliá­na, + jehož obyvatelé toh
@@ -992,7 +430,6 @@
  03-19 Caloceri-Martyris          elogium      V Brixenu svatý mučedník Kalokeri + 
  03-19 Theodori-Episcopi          elogium      Dále svatý biskup Theodorus. † 
  03-25 Ave-Maria                  elogium      AVE MARIA.
--03-29 Elogium                    heading      29. března 
  04-01 Dedicatio-Trium-Fontium    elogium      V Římě u Aquas Salvias vysvěcení kláš­tera Tres Fontane papežem 
  04-05 Amphiani-Martyris          elogium      U Cesreje svatý mučedník Amfián. †
  04-05 Julianae-Villariensis      elogium      V cisterciáckém klášteře Villers v Brabantu památka svaté Julián
@@ -1052,9 +489,7 @@
  08-26 Eleutherii-Autissiodorensis elogium      V Auxerre svatý biskup Eleuthrius. †
  08-27 Georgii-Aurelii            elogium      V ten samý den svatý jáhen Jiří, + jakož i Aurelius, Felix, Natá
  08-31 Josephi-Calasanctii        elogium      Svatý Josef z Calasanzy, * jeho úmrtí je připomínáno sedmadvacát
--09-04 Elogium                    no names     +
  09-06 Sanctiani-Augustini        elogium      V Sens svatí mučedníci Sanctianus a Augustýn. †
--09-08 Narozeni-Nejblahoslavenejsi elogium      Narození Nejblahoslavenější vždy Panny a Bohorodičky Marie. † 
  09-08 Surgentes-Oratio           elogium      Stoupneme si a pomodlíme se skloněni potichu AVE MARIA.
  09-13 Lidorii-Turonensis         elogium      V Tour svatý biskup Lidorius. †
  09-15 Nominis-Mariae             elogium      Svátek Nejsvětějšího jména Marie. + Ten byl papežem Innocencem X
@@ -1063,7 +498,6 @@
  09-20 Eulogii-Cordubensis        elogium      V Cordobě blahoslavený kněz Eulogius, kvůli vyznávání Krista byl
  09-23 Liberii-Papae              elogium      V Římě svatý papež a vyznavač Libe­rius. †
  10-02 Sereni-Trecensis           elogium      V Troyes v klášteře svatého Bertina sva­tý vyznavač Serenus, * k
--10-04 Elogium                    heading      4. říjen
  10-06 Balbinae-Virginis          elogium      V Římě svatá panna Balbina. †
  10-08 Martini-Paradisi           elogium      Ve Španělsku svatý opat Martin z cisterciáckého opatství Para­di
  10-12 Epionis-Presbyteri         elogium      V Bourges svatý kněz Epion. †

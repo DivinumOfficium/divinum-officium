@@ -70,7 +70,7 @@ sub classify {
   return ('', 'calendar')
     if /\b(Blanco|Rojo|Morado|Verde|Negro)\b/
     || /\b\d\s*[\x{aa}a]?\s*cl\./
-    || /\bDm\.|\bSd\.\s|\bS\.\s+-/;
+    || /\bDm\.|\bSd\.\s|\b[SD]\.\s+-/;
   return ('', 'calendar')
     if /^(?:S|Sta|Sto|St)\.\s/ && length() < 60;
   return ('', 'calendar')
@@ -204,14 +204,20 @@ foreach my $day (all_days()) {
     my (@keep, $last, $changed);
 
     foreach my $name (@{$pool->{order}}) {
-      if ($join{$day}{$name} && defined $last) {
+
+      # a section worded for one recension carries its qualifier in the
+      # name, and the file asks about the entry, not about the wording
+      (my $bare = $name) =~ s/\]\s*\(.*$//;
+
+      if ($join{$day}{$bare} && defined $last) {
         $pool->{sections}{$last} .= "\n" . $pool->{sections}{$name};
+        delete $pool->{sections}{$name};
         $joined++;
         $changed = 1;
         next;
       }
       push @keep, $name;
-      $last = $name unless $name eq 'Titulus' || $name eq 'Separatio';
+      $last = $name unless $bare eq 'Titulus' || $bare eq 'Separatio';
     }
     next unless $changed;
     $pool->{order} = \@keep;

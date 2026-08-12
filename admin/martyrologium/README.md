@@ -66,14 +66,21 @@ until the Latin value is added. There are hundreds of these, and
 -01-01 Fiesta-Santisimo   # Espanol: Fiesta del Santísimo Nombre... 2ª cl. Blanco
 ```
 
-The ones marked `-` are not elogia. The printed books put their own
-furniture between the entries: the Spanish edition prints the day's
-calendar with its rank and color and a page of devotional comment, the
-Polish one a date heading and a leader-dot where it omits an entry - and
-that belongs to the language printing it. A line marked `<` is the rest of
-the entry above it, wrapped, and is joined back on. `latin_todo.pl --apply`
-reads the file rather than its own opinion, so a wrong call is fixed by
-moving one character.
+A line marked `<` is not an entry but the rest of the one above it, and is
+joined back onto it. Most of what the books print is like this: the Spanish
+edition follows many an elogium with a note on the saint, his patronage or
+the collect of his Mass, and prints the day's calendar — the feast, its
+rank and its colour — under the date. None of it is martyrology and none of
+it will ever have a Latin name, but it is the book's own words and it
+belongs where the book puts it, so it goes into the entry above or into
+`[Titulus]` rather than being dropped.
+
+What is left marked `-` is the leader-dot the Polish book prints in place
+of an entry it leaves out. The reader loses nothing by it: the entry is
+still named, so the column falls back and shows it.
+
+`latin_todo.pl --apply` reads the file rather than its own opinion, so a
+wrong call is fixed by moving one character.
 
 Filling one in is the whole job: write the Latin into its empty section.
 Nothing else has to change, because every language already names it.
