@@ -22,11 +22,10 @@ $langfb='English';;
 $testmode='Proper';;
 $singleCell='1';;
 $interlinear='disabled';;
-$glossfont='';;
-$martyrfallback='0'
+$glossfont=''
 
 [parameterscheck]
-bbtbbbtcccccnnbbbbbttbotb
+bbtbbbtcccccnnbbbbbttbot
 
 [general]
 $expand='tota';;

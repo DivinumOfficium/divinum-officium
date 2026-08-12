@@ -1,6 +1,51 @@
 [Titulus]
 Séptimo Kaléndas Mártii
 
+[Martyrologium]
+
+@:Matthiae
+(rubrica 1955 aut rubrica 1960 aut rubrica Newcal omittitur)
+
+@:Matthiae-2
+(rubrica 1955 aut rubrica 1960 aut rubrica Newcal omittitur)
+
+@:Petri-Damiani
+
+@:Polycarpi
+
+@:Sireni
+
+@:Septuaginta-Duorum-Martyrum
+
+@:Marthae
+
+@:Lazari
+
+@:Felicis
+
+@:Polycarpi-2
+
+@:Florentii
+
+@:Romanae
+
+@:Milburgis
+
+(rubrica 1960 aut rubrica Newcal dicitur)
+@:Elogium-7
+
+@:In-Bissextili
+(rubrica 1960 aut rubrica Newcal omittitur)
+
+(rubrica 1570 dicitur)
+@:Matthiae-3
+
+@:Matthiae-Item
+(rubrica 1570 omittitur)
+
+@:Secunda-Sexto
+(rubrica 1960 aut rubrica Newcal omittitur)
+
 [Matthiae]
 /:In anno Bissextili omittitur: Vigília sancti Matthíæ Apóstoli; quia transfertur in sequentem diem, quæ est 24.:/
 
@@ -13,10 +58,13 @@ Sancti Petri Damiáni, ex Ordine Camaldulénsi, Cardinális et Epíscopi Ostién
 [Polycarpi]
 Smyrnæ natális sancti Polycárpi, qui, beáti Joánnis Apóstoli discípulus, et ab eo ejúsdem civitátis Epíscopus ordinátus, totíus Asiæ Princeps fuit. Póstea, sub Marco Antoníno et Lúcio Aurélio Cómmodo, sedénte Procónsule et univérso pópulo in theátro advérsus eum personánte, igni tráditus est; et, cum ab igne mínime læderétur, martýrii corónam, gládio confóssus, accépit. Cum illo étiam álii duódecim, qui ex Philadélphia vénerant, in eádem Smyrnénsi urbe, martýrio consummáti sunt. Ipsíus tamen Polycárpi festum séptimo Kaléndas Februárii celebrátur.
 
-[Apud-Sirmium]
+[Polycarpi] (rubrica 1570)
+Smyrnae natalis sancti Polycarpi, qui, beati Joannis Apostoli discipulus, et ab eo ejusdem civitatis Episcopus ordinatus, totius Asiae Princeps fuit. Postea, sub Marco Antonino et Lucio Aurelio Commodo, sedente Proconsule et universo populo in theatro adversus eum personante, igni traditus est; et, cum ab igne minime laederetur, martyrii coronam, gladio confossus, accepit. Cum illo etiam alii duodecim, qui ex Philadelphia venerant, in eadem Smyrnensi urbe, martyrio consummati sunt. Ipsius tamen Polycarpi festum septimo Kalendas Februare celebratur.
+
+[Sireni]
 Apud Sírmium beáti Siréni, Mónachi et Mártyris, qui, jubénte Maximiáno Imperatóre, reténtus est, et, cum se Christiánum esse confiterétur, cápite obtruncátus.
 
-[Ibidem]
+[Septuaginta-Duorum-Martyrum]
 Ibídem natális sanctórum septuagínta duórum Mártyrum, qui, martýrii certámen in præfáta urbe consummántes, mansúra percepérunt regna.
 
 [Marthae]
@@ -40,11 +88,23 @@ Tudérti, in Umbria, sanctæ Románæ Vírginis, quæ, a sancto Silvéstro Papa 
 [Milburgis]
 In Anglia sanctæ Milbúrgis Vírginis, fíliæ Regis Merciórum.
 
+[Elogium-7] (rubrica 1960 aut rubrica Newcal)
+_
+
 [In-Bissextili]
 /:In anno Bissextili bis pronuntiatur Sexto Kaléndas Mártii, et eadem Luna, scilicet die 24 et 25.:/
 
+[Matthiae-3] (rubrica 1570)
+/:Prima die, id est 24, hoc modo: Sexto Kalendas Martii. Luna..., quota fuerit.  Deinde: Vigilia sancti Matthiae Apostoli. :/
+
 [Matthiae-Item]
 /:Prima die, id est 24, hoc modo: Sexto Kaléndas Mártii. Luna..., quota fuerit.  Deinde: Vigília sancti Matthíæ Apóstoli. Item commemorátio plurimórum sanctórum Mártyrum et Confessórum, atque sanctárum Vírginum. :/
+
+[Matthiae-Item] (rubrica 1955)
+/:Prima die, id est 24, hoc modo: Sexto Kaléndas Mártii. Luna..., quota fuerit.  Deinde: Commemorátio plurimórum sanctórum Mártyrum et Confessórum, atque sanctárum Vírginum. :/
+
+[Matthiae-Item] (rubrica 1960 aut rubrica Newcal)
+/:In anno Bissextili bis pronuntiatur Sexto Kaléndas Mártii, et eadem Luna, scilicet die 24 et 25. Prima die, id est 24, hoc modo: Sexto Kaléndas Mártii. Luna..., quota fuerit.  Deinde: Commemorátio plurimórum sanctórum Mártyrum et Confessórum, atque sanctárum Vírginum. Secunda die, id est 25: Sexto Kaléndas Mártii. Luna... In Judǽa..., et cetera, ut in sequenti Lectione.:/
 
 [Secunda-Sexto]
 /:Secunda die, id est 25: Sexto Kaléndas Mártii. Luna... In Judǽa..., et cetera, ut in sequenti Lectione.:/
