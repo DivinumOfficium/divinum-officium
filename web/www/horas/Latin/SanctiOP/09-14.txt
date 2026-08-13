@@ -1,0 +1,197 @@
+@Sancti/09-14
+
+[Rule]
+Psalmi minores ex Psalterio
+
+[Ant Vespera]
+O Crux admirábilis, evacuátio vúlneris, restitútio sanitátis!;;112;116;145;146;147
+
+[Capitulum Laudes]
+@Sancti/05-03:Capitulum Sexta
+
+[Responsory Vespera 1]
+R. Per tuam Crucem salva nos, Christe Redémptor, qui mortem nostram moriéndó destruxisti,
+* Et vitam resurgéndo reparásti.
+V. Miserére nostri, Jesu benígne, qui passus es cleménter pro nobis.
+R. Et vitam resurgéndo reparásti.
+
+[Hymnus Vespera]
+@:Hymnus Matutinum
+
+[Ant 1]
+@Sancti/09-14:Ant 1C:s/sústinet/sustínuit/
+
+[Hymnus Matutinum]
+Salve, Crux sancta, salve, mundi glória,
+Vera spes nostra, vera ferens gáudia,
+Signum salútis, salus in perículis,
+Vitále lignum vitam ferens ómnium.
+_
+Te adorándam, te Crucem vivificam,
+Per te redépti, dulce decus sæculi,
+Semper laudámus, semper tibi cánimus:
+Per lignum servi, per te sumus liberi.
+_
+Sit Deo Patri laus in Cruce Filii,
+Sit coæquális laus Sancto Spirítui:
+Cívibus summis gáudium sit Angelis,
+Honor sit mundo Crucis Exaltátio.
+Amen.
+
+[Oratio]
+@Sancti/09-14::s/prǽmia in cælo mereámur/in cælo prǽmia consequámur/
+
+[Invit]
+Regem Dóminum, qui per Crucis mystérium redémit mundum, * Veníte, adorémus.
+
+[AntMatutinumOP]
+Crucem tuam adorámus, Dómine, et sanctam resurrectioném tuam laudámus et glorificámus: ecce enim propter Crucem venit gáudium in univérsó mundo.;;95
+Crux alma fulget, per quam salus réddita est mundo: Crux vincit, Crux regnat, Crux repéllit omne crimen, allelúja.;;96
+
+[Ant Matutinum]
+@Sancti/05-03:Ant Matutinum:7 s/;;.*/;;8/
+@Sancti/05-03:Responsory6:1 s/R. // s/$/;;20/
+@Psalterium/Special/Major Special:Suffragium Feriale:3 s/Ant. // s/$/;;23/
+@Sancti/Brasilia/05-03:Ant Vespera:2 s/$/;;29/
+@Sancti/09-14:Ant Matutinum:9 s/;;.*/;;46/
+@SanctiCist/05-03:Responsory10:3 s/V. // s/:$/;;65/
+@SanctiM/09-14:Responsory11:1-2 s/R. // s/\n\* (.)/ \l$1/ s/$/;;75/
+@:AntMatutinumOP:1
+@:AntMatutinumOP:2
+
+[Nocturn 2 Versum]
+@SanctiM/09-14:Responsory8:1-2 s/R/V/ s/\*/R./
+
+[Nocturn 3 Versum]
+@Sancti/05-03:Versum 2
+
+[Lectio1]
+@Sancti/09-14:Lectio1:1
+@Sancti/09-14:Lectio2:s/-6/-9/ s/(?<=4 ).*?\.//
+@Sancti/09-14:Lectio3:!1
+
+[Responsory1]
+@Sancti/05-03:Responsory7:s/sola //g
+
+[Lectio2]
+De Epístola beáti Pauli Apóstoli ad Gálatas
+@Tempora/Epi3-1:Lectio2:!2 s/7-10/8-12/
+@Tempora/Epi3-1:Lectio3:!1
+
+[Responsory2]
+@Sancti/05-03:Responsory6
+
+[Lectio3]
+@Sancti/05-03:Lectio2
+
+[Responsory3]
+@SanctiCist/05-03:Responsory10:1-3 s/V\./R./ s/. al\S+, al.*/!/
+@SanctiCist/05-03:Responsory10:4 s/. al\S+, al.*/!/
+&Gloria
+@SanctiCist/05-03:Responsory10:4 s/. al\S+, al.*/!/ s/.*, (.)/R. \u$1/
+
+[Responsory4]
+@SanctiM/09-14:Responsory12:s/, al\S+$/./mg
+
+[Responsory5]
+@Sancti/05-03:Responsory2
+
+[Responsory6]
+@SanctiM/09-14:Responsory11
+
+[Lectio7]
+Léctio sancti Evangélii secúndum Joánnem
+!Joann. 12:31-36
+In illo témpore: Dixit Jesus turbis Judæórum: Nunc judícium est mundi: nunc princeps hujus mundi eiciétur foras. Et réliqua.
+_
+Homília sancti Augustini Episcopi
+!Tract. 52 in Joann.
+Possidébat diábolus genus humánum et reos suppliciórum tenébat chirographo peccatórum. Dominabátur in córdibus infidélium: ad creatúram coléndam, desérto Creatóre, decéptos captívosque pertrahébat. Per Christi autem fidem, quæ morte ejus et resurrectione firmáta est, per ejus sanguinem, qui in remissionem fusus est peccatórum, millia credéntium a dominátu liberántur diáboli, Christi córpori copulántur, et sub tanto cápite, uno ejus spíritu fidélia membra vegetántur. Hoc vocat Judícium, hanc discretiónem, hanc a suis redémtis diáboli expulsiónem.
+
+[Responsory7]
+@Sancti/09-14:Ant 3:s/^/R. / s/ \* (.)/\n* \u$1/ s/, al\S+$/!/
+@:Ant Vespera:s/^/V. / s/;;.*//
+@Sancti/09-14:Ant 3:s/.*\* (.)/R. \u$1/ s/, al\S+$/!/
+
+[Lectio8]
+Nunc, inquit, princeps hujus mundi eiciétur foras. Prædicébat Dóminus, quod sciébat post passióem et glorificatióem suam per univérsum mundum multos pópulos creditúros, in quorum córdibus diábolus intus erat: cui quando ex fide renúntiant, eícitur foras. Absit autem ut diábolum mundi príncipem ita dictum existimémus, ut eum cælo et terræ dominári posse credámus. Sed mundus appellátur in malis homínibus, qui toto terrárum orbe diffúsi sunt. Sic ergo dictum est, Princeps hujus mundi, id est Princeps malórum ómnium, qui hábitant in mundo.
+
+[Responsory8]
+@Sancti/09-14:Responsory Breve Sexta:2-3 s/\* (.)/\l$1/ s/V./*/
+@SanctiM/09-14:Responsory11:1 s/R/V/
+@Sancti/09-14:Responsory Breve Sexta:3 s/V./R./
+
+[Lectio9]
+Et ego, inquit, si exaltátus fuéro a terra, ómnia traham post me. Non autem dixit: Omnes: sed, Omnia: non enim ómnium est fides. Non itaque hoc ad universitátem hóminum rétulit, sed ad creatúræ integritátem, id est spíritum et ánimam et corpus. Aut si per Omnia ipsi hómines intelligéendi sunt, ómnia prædestináta ad salutem póssumus dicere: aut certe ómnia hóminum génera, ab excelsíssimis usque ad humíllimos, a rege usque ad mendícum. Omnia, inquit, traham post me, ut sim caput eórum, et illi membra mea.
+
+[Responsory9]
+@:Responsory Vespera 1
+
+[AntLaudes5]
+Crux benedícta nitet, Dóminus qua carne pepéndit atque cruóre suo vúlnera nostra lavit.
+
+[Ant Laudes]
+@Sancti/05-03:Ant Vespera:1
+@Sancti/05-03:Ant Vespera:3
+@Sancti/05-03:Ant Vespera:4
+@:Ant Vespera:s/;;.*//
+@:AntLaudes5
+
+[Hymnus Laudes]
+Originále crimen necans in Cruce,
+Nos a privátis, Christe, munda máculis:
+Humanitátem miserátus frágitilem,
+Per Crucem sanctam lapsis dona véniam.
+_
+Prótege, salva, benedic, sanctifica
+Pópulum cunctum Crucis per signáculum:
+Morbo avérte córporis et ánimæ:
+Hoc contra signum nulum stet perículum.
+_
+Sit Deo Patri laus in Cruce Filii,
+Sit coæquális laus Sancto Spíritui:
+Cívibus summis gáudium sit Angelis,
+Honor sit mundo Crucis Exaltátio.
+Amen.
+
+[Versum 2]
+V. Tuam Crucem adorámus, Dómine.
+R. Tuam gloriósam recólimus passiónem.
+
+[Ant 2]
+@Sancti/05-03::s/ in ætérnum/, allelúja/
+
+[Versum Tertia]
+@SanctiM/09-14:Responsory8:1-2 s/R/V/ s/\*/R./
+
+[Capitulum Sexta]
+!1 Co; 1:18
+Verbum crucis pereúntibus stultítia est: iis autem qui salvi fiunt, id est nobis, virtus Dei est.
+
+[Responsory Breve Sexta]
+@SanctiM/09-14:Responsory8:1 s/ (\S+ \S+ \S+) (.)/br. $1 * \u$2/
+@SanctiM/09-14:Responsory8:1 s/ (\S+ \S+ \S+) (.)/ $1 * \u$2/
+@SanctiM/09-14:Responsory8:2
+@SanctiM/09-14:Responsory8:1 s/ (\S+ \S+ \S+) (.)/ \u$2/
+&Gloria
+@SanctiM/09-14:Responsory8:1 s/ (\S+ \S+ \S+) (.)/ $1 * \u$2/
+
+[Versum Sexta]
+@Sancti/05-03:Versum 2
+
+[Capitulum Nona]
+@SanctiOP/08-04:Lectio1:2
+@SanctiOP/08-04:Lectio1:6-7 s/\d+ (.)/\u$1/ s/.\n\d+/:/
+
+[Responsory Breve Nona]
+@Sancti/09-14:Responsory Breve Sexta
+
+[Versum Nona]
+@SanctiOP/09-14:Versum 2
+
+[Ant Vespera 3]
+@Sancti/05-03:Ant Vespera:1 s/$/;;109;110;111;112;116/
+
+[Ant 3]
+@SanctiCist/05-03:Ant 1
+
