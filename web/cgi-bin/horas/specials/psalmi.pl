@@ -555,6 +555,7 @@ sub psalmi_major {
   if ($version =~ /^Ordo Praedicatorum/ && @antiphones == 1) {    #  psalmi ad Vesperam sub una antiphopna
     $lim = 1;
     @psalmi = ();
+    $p[0] =~ s/;;\d.*/;;112;116;145;146;147/ if $vespera == 1;    # first vesp. has same psalms always
   }
 
   if (@antiphones) {

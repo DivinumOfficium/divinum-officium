@@ -1,33 +1,7 @@
 @Sancti/10-24
 
 [Hymnus Vespera]
-Tibi Christe splendor Patris,
-Vita, virtus c6rdium,
-In conspéctu Angel6rum
-Votis, voce psallimus:
-Alternantes concrepando
-Melos damus vócibus.
-_
-Collaudamus venerantes
-Omnes cœli príncipes,
-Sed præcípue fidelem
-Medicum, et cómitem
-Raphælem, in virtúte
-Alligantem dæmonem.
-_
-Quo custóde procul pelle,
-Rex Christe piíssime,
-Omne nefas inimíci:
-Mundo corde et córpore
-Paradíso redde tuo
-Nos sola cleméntia.
-_
-Glóriam Patri melodis
-Personemus vócibus:
-Glóriam Christo canámus,
-Glóriam Paráclito:
-Qui trinus, et unus Deus
-Exstat ante ssecula. Amen.
+@Sancti/05-08:HymnusM Vespera:s/mílites/príncipes/ s/Primátem/fidélem/ s/Cæléstis exércitus:/Médicum et cómitem/ s/Michaélem/Raphaélem/ s/Conteréntem zábulum/Alligántem dǽmonem/
 
 [Ant 1]
 @Sancti/10-24::s/\, al.*a\.\s$//
@@ -62,26 +36,12 @@ Sed quia ipsa ánima non eum nóverat, a quo sananda erat, et óculos habébat i
 Et cum esset médicus et animárum et córporum, et qui venísset sanare omnes ánimas crediturorum, de illis languentibus unum elégit, quem sanaret, ut unitátem significaret. Si mediocri corde, et quasi humáno captu et ingénio consideremus faciéntem, et quod ad potestátem pértinet, non magnum áliquid perfécit; et quod ad benignitátem, parum fecit. Tot jacebant, et unus curatus est, cum posset uno verbo omnes erigere.
 
 [Hymnus Laudes]
-v. Christe, sanctórum decus Angelórum,
-Rector humáni géneris et auctor,
-Nobis sacratum tríbue benígnus
-Scandere cœlum.
-_
+@Sancti/05-08:HymnusM Laudes:1-5 s/ætérnum/sacrátum/
 Angelum nobis medicum salútis,
 Mitte de cælis Raphaël, ut omnes
 Sanet ægrótos, pariterque nostros
 Dirigat actus.
-_
-Hinc Dei nostri Génitrix María,
-Totus et nobis chorus Angelórum
-Semper assistat, simul et micantis
-Régia cæli.
-_
-Præstet hoc nobis Deitas beáta
-Patris, ac Nati, pariterque Sancti
-Spíritus, cujus reboat in omni
-Glória mundo.
-Amen.
+@Sancti/05-08:HymnusM Laudes:20-30
 
 [Ant 2]
 @Sancti/10-24

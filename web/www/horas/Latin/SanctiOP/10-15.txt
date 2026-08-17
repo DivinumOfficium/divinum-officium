@@ -1,0 +1,123 @@
+@Sancti/10-15
+
+[Invit]
+@Commune/C6
+
+[Ant Matutinum]
+Quæ est ista, quæ ascéndit per désértum sicut vírgula fumi ex aromátibus myrrhæ et thuris?                  ;;8
+En diléctus meus lóquitur mihi: Surge, própera, amíca mea, columba mea, et veni.                            ;;18
+Revértere, revértere, Sunamítis: revértere, revértere, ut intueámur te.                                     ;;23
+Vidi Dóminum, qui dedit corónam decóris in cápite meo.                                                      ;;44
+Induit me Gènetrix Dómini vestiméntis salútis, et datum est mihi ut coopériar býssino splendénti et candido.;;45
+Ego autem in Dómino gaudébo, et exsultábo in Deo Jesu meo.                                                  ;;86
+Glória Líbani data est ei, decor Carméli et Saron: ipsi vidébunt glóriam Dómini et decórem Dei nostri.      ;;95
+Dómine, prævenísti eam in benedictiónibus dulcedínis: posuísti in cápite ejus corónam de lápidе pretióso.   ;;96
+Os suum apéruit sapiéntiæ, et lex cleméntiæ in lingua ejus.                                                 ;;97
+
+[Nocturn 3 Versum]
+V. Deus præcínxit me virtúte.
+R. Et pósuit immaculátam viam meam.
+
+[Lectio1]
+@Tempora/083-3::1
+@Tempora/083-3:Lectio2:s/-10/-14/ s/7 \S+ \S+ (.)/7 \u$1/
+@Tempora/083-3:Lectio3:!1
+
+[Respóndens1]
+R. Habitábit in solitúdine judícium, et justítia in Carmel sedébit. Et erit opus justítæ pax:
+* Et cultus justítæ siléntium, et securitas usque in sempitérnum.
+V. Et sedébit pópulus meus in pulchritúdine pacis et in tabernáculis fidúciæ.
+R. Et cultus justítæ siléntium, et securitas usque in sempitérnum.
+
+[Lectio2]
+!Sap 7:21-27
+21 Ómnium enim ártifex dócuit me sapiéntia.
+22 Est enim in illa spíritus intelligéntiæ, sanctus, únicus, múltiplex, subtílis, disértus, móbilis, incoinquinátus, certus, suávis, amans bonum, acútus, quem nihil vetat, benefáciens,
+23 humánus, benígnus, stábilis, certus, secúrus, omnem habens virtútem, ómnia prospíciens, et qui cápiat omnes spíritus, intelligíbilis, mundus, subtílis.
+24 Omnibus enim mobílibus mobílior est sapiéntia: attíngit autem ubíque propter suam mundítiam.
+25 Vapor est enim virtútis Dei, et emanátio quædam est claritátis omnipoténtis Dei sincéra, et ídeo nihil inquinátum in eam incúrrit:
+26 candor est enim lucis ætérnæ, et spéculum sine mácula Dei maiestátis, et imágo bonitátis illíus.
+27 Et cum sit una, ómnia potest: et in se pérmanens ómnia ínnovat: et per natiónes in ánimas sanctas se transfert: amícos Dei et prophétas constítuit.
+
+[Responsory2]
+R. Audi, fília, et vide, et inclina aurem tuam,
+* Quia deinceps ut vera sponsa meum zelábis honórem.
+V. Sponsábo te mihi in justitia et judicio et in misericórdia et misératióibus.
+R. Quia deinceps ut vera sponsa meum zelábis honórem.
+
+[Responsory3]
+R. Super salutem et speciem diléxi sapiéntiam, et propósui pro luce habére illam:
+* Quóniam inexstinguibile est lumen illíus.
+V. Lætáta sum in ómnibus, quóniam antecedébat me ista sapiéntia.
+R. Quóniam inexstinguibile est lumen illíus.
+
+[AntLaudes]
+Sitivit in te, Dómine, ánima sponsæ tuæ, et lætáta est in his quæ dicta sunt illi.
+Lætáre, Terésia, in eo qui te fecit: quóniam benedíxit Dóminus fíliis tuis, et ádipe fruménti sátiat te.
+
+[Ant Laudes]
+@Commune/C6:Ant Vespera:1 s/;;.*//
+@Commune/C7a:Lectio3::8 s/31 //
+@:AntLaudes:1
+@Commune/C6:Ant Matutinum:8 s/;;.*//
+@:AntLaudes:2
+
+[Capitulum Laudes]
+@Tempora/083-3:Lectio2:1 s/-10/-8/
+@Tempora/083-3:Lectio2:2 s/7 \S+ \S+ (.)/\u$1/ s/$/~/
+@Tempora/083-3:Lectio2:3 s/8 //
+
+[Ant 2]
+Dedit ei Dóminus sapiéntiam et prudentiam multam nimis et latitúdinem cordis, quasi arénam quæ est in litore maris.
+
+[Evangelium]
+@Sancti/10-04
+
+[Responsory Breve Tertia]
+R. Tibi dixit cor meum, * Exquisivit te facies mea.
+R. Tibi dixit cor meum, * Exquisivit te facies mea.
+V. Faciem tuam, Domine, requiram. 
+R. Exquisivit te facies mea.
+&Gloria
+R. Tibi dixit cor meum, * Exquisivit te facies mea.
+
+[Versum Tertia]
+V. Anima mea exsultabit in Domino.
+R. Et delectabitur super salutari suo.
+
+[Capitulum Sexta]
+@Tempora/083-3:Lectio2:!2-4 s/10 //
+
+[Responsory Breve Sexta]
+@SanctiM/10-03b:Responsory Vespera
+
+[Versum Sexta]
+V. Apud me oratio Deo vitæ meæ.
+R. Dicam Deo: Susceptor meus es.
+
+[Capitulum Nona]
+@Tempora/083-3:Lectio3:1 s/-14/-12/
+@Tempora/083-3:Lectio3:2 s/11 // s/$/~/
+@Tempora/083-3:Lectio3:3 s/12 // s/lætátus/lætáta/ s/, [^,]*$/./
+
+[Responsory Breve Nona]
+R. Apud me oratio * Deo vitæ meæ.
+R. Apud me oratio * Deo vitæ meæ.
+V. Dicam Deo: Susceptor meus es.
+R. Deo vitæ meæ.
+&Gloria
+R. Apud me oratio * Deo vitæ meæ.
+
+[Versum Nona]
+V. Passer invenit sibi domum.
+R. Et turtur nidum sibi, ubi ponat pullos suos.
+
+[Ant Vespera 3]
+@CommuneOP/C6
+
+[Versum 3]
+V. Obliviscere pópulum tuum et domum patris tui.
+R. Et concupiscet Rex decórem tuum.
+
+[Ant 3]
+@Commune/C4a:Lectio3:5 s/14 //
