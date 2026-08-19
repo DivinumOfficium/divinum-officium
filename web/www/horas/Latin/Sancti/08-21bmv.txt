@@ -4,10 +4,14 @@ Septima die infra Octavam Assumptionis Beatæ Mariæ Virginis
 Sexta die infra Octavam Assumptionis Beatæ Mariæ Virginis
 
 [Rank]
-;;Semiduplex;;2;;ex Sancti/08-15
+;;Semiduplex;;2;;vide Sancti/08-15t
+(sed rubrica 1954 aut rubrica 196)
+;;Semiduplex;;2;;vide Sancti/08-15
 
 [Rule]
-ex Sancti/08-15;
+vide Sancti/08-15t;
+(sed rubrica 1954 aut rubrica 196)
+vide Sancti/08-15;
 9 lectiones
 No secunda vespera
 
