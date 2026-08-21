@@ -791,11 +791,17 @@ sub replaceNdot {
     $name = $c{Name};
   }
 
-  # Safeguard against Secreta / Postcommunio from missa; switch for Doctor Antiphone
+  # Safeguard against Secreta / Postcommunio from missa; switch for Doctor Antiphone or Viduae Invit
   my @name = split("\n", $name);
 
   if ($s =~ /^[OÓ],?\s|O Doctor optime/ && $name =~ /Ant\=/) {
+
+    # Doctor Antiphone: Casus vocativus
     @name = grep(/Ant\=/, @name);
+  } elsif ($s =~ /^L..*N\.\./ && $name =~ /Invit\=/) {
+
+    # Viduæ Invitatorium: Casus genetivus
+    @name = grep(/Invit\=/, @name);
   } else {
     @name = grep(/Oratio\=/, @name) unless $name !~ /Oratio\=/;
   }
