@@ -724,9 +724,9 @@ sub setalleluia {
 # versions 1956 and 1960 exclude from Ordinarium
 sub checksuffragium {
   if ($rule =~ /no suffragium/i) { return 0; }
-  if ($winner =~ /sancti/i && $rank >= 3 && $seasonalflag && $winner !~ /01-05/) { return 0; }
-  if ($commemoratio =~ /sancti/i && $commemoratio{Rank} =~ /;duplex/i && $seasonalflag) { return 0; }
-  if ($duplex > 2 && $version !~ /trident/i && $seasonalflag) { return 0; }
+  if ($winner =~ /sancti/i && $rank >= 3 && $testmode ne 'Temporal' && $winner !~ /01-05/) { return 0; }
+  if ($commemoratio =~ /sancti/i && $commemoratio{Rank} =~ /;duplex/i && $testmode ne 'Temporal') { return 0; }
+  if ($duplex > 2 && $version !~ /trident/i && $testmode ne 'Temporal') { return 0; }
   return 1;
 }
 
