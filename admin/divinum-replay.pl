@@ -1,5 +1,28 @@
 #!/usr/bin/perl
-
+#
+# divinum-replay.pl - regression-test tool: replay saved Divinum
+# Officium requests and diff the results against a fresh fetch.
+#
+# This is the companion tool to admin/divinum-get.pl: divinum-get
+# downloads pages and saves each one, together with its URL and
+# cookies, as a "test case" file; divinum-replay reads those files,
+# re-issues the same request (optionally against a different --base
+# server), and reports any differences between the saved and the new
+# response.
+#
+# Differences can be narrowed using --filter=[+|-]FILTER, where FILTER
+# is one of a fixed set of categories (kalendar, hymns, titles, psalms,
+# antiphons, html, accents, case, ij, site, urls, punctuation, spacing,
+# cookies): '-' drops that category from comparison (ignore it), '+'
+# restricts comparison to only that category (ignore everything else).
+# See --help / $USAGE below for the full option and filter reference.
+#
+# By default (--baulk), once a difference is found in the day's
+# kalendar/title data (detected via title_hash, below), any further
+# differences for that same file are assumed to be a cascading effect
+# of the same underlying calendar/computus change and are not
+# individually reported - the file is still counted as a failure.
+#
 use utf8;
 use open ':encoding(UTF-8)';
 use warnings;
@@ -191,7 +214,10 @@ foreach my $file (@testfiles) {
         next;
       }
 
-      # Ingest newly received cookies.
+      # Ingest newly received cookies: read back the jar file curl
+      # wrote via -c $new_jar_fn (curl's own Netscape-style format;
+      # the header-style branch below is kept for robustness/parity
+      # with the parsing in admin/divinum-get.pl).
       my %new_cookies = ();
       open $new_jar_h, "<$new_jar_fn";
 
@@ -200,13 +226,16 @@ foreach my $file (@testfiles) {
 
         if (/^Set-Cookie:\s*(.*)$/) {
 
-          # Header-style jar
+          # Header-style jar: raw "Set-Cookie: a=1; b=2" HTTP header
+          # lines; split on ';' and keep only the NAME=VALUE pairs.
           for (split /;/, $1) {
             $new_cookies{$1} = $2 if /^\s*(\w+)=(\S*)\s*$/;
           }
         } elsif (/\t/) {
 
-          # Netscape-style jar: ignore hostname etc
+          # Netscape-style jar: tab-separated fields (domain, flag,
+          # path, secure, expiry, name, value). Only name (field 6)
+          # and value (field 7) are kept; other fields are ignored.
           my @c = split /\t/;
           $new_cookies{$c[5]} = $c[6] if @c > 6;
         }
@@ -232,6 +261,16 @@ foreach my $file (@testfiles) {
       }
 
       # Ignore specified differences.
+      #
+      # Each branch below implements one FILTER category. $ignore is
+      # true for a '-FILTER' (drop this category from comparison) and
+      # false for a '+FILTER' (keep only this category). Most branches
+      # rewrite @old_result/@new_result in place: content that should
+      # be excluded from comparison is normalized away (e.g. lowercased,
+      # accents stripped) or replaced with the sentinel string "...",
+      # which is stripped from both arrays just below this loop before
+      # diffing. Some categories (case, ij, accents) only make sense as
+      # '-FILTER' and warn if given as '+FILTER'.
       foreach (@filter) {
         my $ignore = /-/;
 
@@ -413,6 +452,13 @@ foreach my $file (@testfiles) {
             if (defined $old && defined $new) {
               my $kal = show_change($old, $new);
 
+              # show_change() returns true iff this changed pair was
+              # itself kalendar/title data. In that case, if --baulk
+              # is on and the pre-computed kalendar hashes differ
+              # (i.e. this really is a calendar/computus change, not
+              # just a spelling difference filtered out by title_hash),
+              # stop reporting further diffs for this file: they are
+              # presumed to cascade from this one root difference.
               last DIFF if $baulk && $kal && $old_kal ne $new_kal;
             } elsif (defined $old) {
               print "REMOVED $old\n";
