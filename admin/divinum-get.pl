@@ -1,4 +1,44 @@
 #!/usr/bin/perl
+#
+# divinum-get.pl - fetch Divinum Officium web pages and save them as
+# "test case" files for later replay.
+#
+# This is the companion tool to admin/divinum-replay.pl: divinum-get
+# downloads pages from a divinumofficium.com-style server (by default
+# http://divinumofficium.com/, overridable with --base) and writes each
+# response, together with the URL used, any cookies sent/received, and
+# an optional timestamp, into a single output file. divinum-replay then
+# re-issues those saved requests to check whether the server's output
+# has changed.
+#
+# Three modes of operation (mutually exclusive, see --help for the full
+# option reference):
+#
+#   1. By prayer/hour and rubric version: --prayer=PRAYER --version=VERSION
+#      Builds the appropriate cgi-bin URL for the requested Office hour
+#      (or Mass) under the given rubric version, for each date in the
+#      --from/--to range.
+#   2. By explicit path: --path=URL
+#      Uses the given URL (relative to --base) as-is, for each date in
+#      the --from/--to range.
+#   3. Refresh existing test cases: --update FILE [FILE..]
+#      Re-reads the URL (and previously sent/received cookies) out of
+#      each existing test-case FILE and re-fetches it, overwriting the
+#      file with the new response. Dates and --path/--prayer are not
+#      used in this mode.
+#
+# Each output "test case" file has the format:
+#   line 1: "DIVINUM OFFICIUM TEST CASE" plus an optional timestamp
+#   line 2: the exact URL that was fetched
+#   following lines (optional): "Cookie:NAME=VALUE" for cookies sent,
+#     and/or "Set-Cookie:NAME=VALUE" for cookies received
+#   remainder: the raw response body
+#
+# Downloads are performed by shelling out to curl. Output filenames are
+# auto-generated from the request path/query (see resource_to_filename)
+# unless --update is given, in which case the original filename is
+# reused.
+#
 use utf8;
 use open ':encoding(UTF-8)';
 use warnings;
@@ -25,7 +65,7 @@ my $to;
 
 my @prayers = ('Matutinum', 'Laudes', 'Prima', 'Tertia', 'Sexta', 'Nona', 'Vespera', 'Completorium', 'SanctaMissa');
 my $prayers = join(' ', @prayers);
-my %prayers = map (($_, $_), @prayers);
+my %prayers = map(($_, $_), @prayers);
 
 my @versions = (
   'Trident 1570',
@@ -40,7 +80,7 @@ my $versions = join('|', @versions);
 
 my @actions = ('pray', 'kalendar', 'popup');
 my $actions = join(' ', @actions);
-my %actions = map (($_, $_), @actions);
+my %actions = map(($_, $_), @actions);
 
 my $prayer;
 my $action = 'pray';
@@ -128,7 +168,7 @@ Downloaded files are named by summarizing their path and query.
 To replay tests, use divinum-replay.
 USAGE
 
-my $version_arg;    # possibly  abbreviated
+my $version_arg;    # possibly abbreviated
 GetOptions(
   'prayer=s' => \$prayer,
   'action=s' => \$action,
@@ -302,18 +342,24 @@ if ($update) {
 if ($jar) {
   open COOKIES, "<$jar" or die "Cannot read $jar.\n";
 
+  # A cookie jar file can be in either of two formats; each line is
+  # tried against both so both can appear in the same file.
   for (<COOKIES>) {
     chomp;
 
     if (/^Set-Cookie:\s*(.*)$/) {
 
-      # Header-style jar
+      # Header-style jar: raw "Set-Cookie: a=1; b=2" HTTP header lines.
+      # Split on ';' and keep only the NAME=VALUE pairs.
       for (split /;/, $1) {
         $snd_cookies{$1} = $2 if /^\s*(\w+)=(\S*)\s*$/;
       }
     } elsif (/\t/) {
 
-      # Netscape-style jar: ignore hostname etc
+      # Netscape-style jar: tab-separated fields as produced by
+      # curl -c/-b (domain, flag, path, secure, expiry, name, value).
+      # Only the name (field 6) and value (field 7) are kept; the
+      # hostname, path, and other fields are deliberately ignored.
       my @c = split /\t/;
       $snd_cookies{$c[5]} = $c[6] if @c > 6;
     }
@@ -325,7 +371,7 @@ if ($jar) {
 # Except for $update, when the $path will be adjusted too.
 
 my $update_base_path = $url->path;
-$update_base_path =~ s {/$} {};
+$update_base_path =~ s{/$} {};
 
 #print STDERR "UBP: '$update_base_path'\n";
 
@@ -434,20 +480,22 @@ while (
     print OUT "Cookie:$_=$snd_cookies{$_}\n";
   }
 
-  # Received cookies next if any.
+  # Received cookies next if any: read back the jar file curl wrote
+  # via -c $rcv_jar_fn and transcribe each cookie as a Set-Cookie:
+  # line, so a later --update run can resend it if requested.
   open $rcv_jar_h, "<$rcv_jar_fn";
 
   for (<$rcv_jar_h>) {
     chomp;
 
-    # Header-style jar?
+    # Header-style jar? (see the --jar parsing above for format notes)
     if (/^Set-Cookie:\s*(.*)$/) {
       for (split /;/, $1) {
         print OUT "Set-Cookie:$1=$2\n" if /^\s*(\w+)=(\S*)\s*$/;
       }
     }
 
-    # Netscape-style jar: ignore hostname etc?
+    # Netscape-style jar: ignore hostname etc? (curl -c writes this format)
     elsif (/\t/) {
       my @c = split /\t/;
       print OUT "Set-Cookie:$c[5]=$c[6]\n" if @c > 6;
@@ -468,21 +516,24 @@ while (
   }
 }
 
-# Ad hoc conversion of resource identifier to mnemonic filename.
+# Ad hoc conversion of resource identifier to mnemonic filename, used
+# to name output files when not in --update mode. Not reversible and
+# not guaranteed unique; it merely strips boilerplate (the cgi-bin
+# prefix, .pl extensions, known parameter names, and punctuation) so
+# the remaining words can be joined with '-' into a readable name.
 sub resource_to_filename($) {
   my $resource = shift;
 
   # Remove common path, param name, punctuation, etc,
   # and join the result using -.
-  $resource =~ s {cgi-bin} {};
-  $resource =~ s {^/*} {};
-  $resource =~ s {\.pl} {}g;
-  $resource =~ s {command=(pray|setup)} {}g;
-  $resource =~ s {\w+=} {}g;
-  $resource =~ s {%[0-9a-f][0-9a-f]} { }i;    # cheap urldecode : absolutely works
-  $resource =~ s {^\W*} {};
+  $resource =~ s{cgi-bin} {};
+  $resource =~ s{^/*} {};
+  $resource =~ s{\.pl} {}g;
+  $resource =~ s{command=(pray|setup)} {}g;
+  $resource =~ s{\w+=} {}g;
+  $resource =~ s{%[0-9a-f][0-9a-f]} { }i;    # cheap urldecode : absolutely works
+  $resource =~ s{^\W*} {};
 
   my $result = join('-', split(/\W+/, $resource)) || 'index';
   return $result;
-
 }
