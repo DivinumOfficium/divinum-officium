@@ -308,6 +308,7 @@ sub dirge {
 # Rule XX.3
 sub hymnmerge {
   my ($version, $day, $month, $year, $dioecesis) = @_;
+  $dioecesis //= '';
 
   get_from_directorium("transfer", $version, sprintf("Hy%s", get_sday($month, $day, $year)), $year, $dioecesis) =~
     /1(\;\;$dioecesis)?/;
@@ -318,6 +319,7 @@ sub hymnmerge {
 # Rule XX.3
 sub hymnshift {
   my ($version, $day, $month, $year, $dioecesis) = @_;
+  $dioecesis //= '';
 
   get_from_directorium("transfer", $version, sprintf("Hy%s", get_sday($month, $day, $year)), $year, $dioecesis) =~
     /2(\;\;$dioecesis)?/;
@@ -328,6 +330,7 @@ sub hymnshift {
 # Rule XX.3
 sub hymnshiftmerge {
   my ($version, $day, $month, $year, $dioecesis) = @_;
+  $dioecesis //= '';
 
   get_from_directorium("transfer", $version, sprintf("Hy%s", get_sday($month, $day, $year)), $year, $dioecesis) =~
     /3(\;\;$dioecesis)?/;
