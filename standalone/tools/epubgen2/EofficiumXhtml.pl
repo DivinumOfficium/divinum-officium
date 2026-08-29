@@ -90,6 +90,7 @@ require "$Bin/horasjs.pl";
 use lib "$Bin/../../../web/cgi-bin";
 use DivinumOfficium::LanguageTextTools qw(load_languages_data);
 use DivinumOfficium::RunTimeOptions qw(check_version check_language);
+use DivinumOfficium::Date qw(prevnext);
 
 binmode(STDOUT, ':encoding(utf-8)');
 
@@ -412,18 +413,3 @@ PrintTag
 
 }
 
-sub prevnext {
-  my $date1 = shift;
-  my $inc = shift;
-
-  $date1 =~ s/\//\-/g;
-  my ($month, $day, $year) = split('-', $date1);
-
-  my $d = date_to_days($day, $month - 1, $year);
-
-  my @d = days_to_date($d + $inc);
-  $month = $d[4] + 1;
-  $day = $d[3];
-  $year = $d[5] + 1900;
-  return sprintf("%02i-%02i-%04i", $month, $day, $year);
-}
