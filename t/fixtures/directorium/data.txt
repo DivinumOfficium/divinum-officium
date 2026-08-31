@@ -1,0 +1,4 @@
+version,kalendar,transfer,stransfer,base,transferbase
+Fixture Base,base,base,base
+Fixture Derived,derived,derived,derived,Fixture Base,Fixture TBase
+Fixture TBase,base,tbaseversion,tbaseversion

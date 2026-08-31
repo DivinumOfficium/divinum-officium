@@ -18,7 +18,12 @@ BEGIN {
 
 ### private vars
 
-my $datafolder = "$Bin/../../www/Tabulae";
+# The data directory normally lives relative to the invoking script's
+# location ($Bin, via FindBin), i.e. web/cgi-bin/<something>/../../www/Tabulae.
+# DIRECTORIUM_DATA_PATH lets tests (see t/DivinumOfficium/Directorium.t) point
+# this at a small fixture directory instead, so they don't depend on, or
+# break from, changes to the real liturgical data in web/www/Tabulae.
+my $datafolder = $ENV{DIRECTORIUM_DATA_PATH} || "$Bin/../../www/Tabulae";
 my %_data;
 my %_dCACHE;    # cache everything mainly for kalendar.pl
 
@@ -68,6 +73,16 @@ sub load_transfer_file {
 }
 
 sub load_kalendar {
+
+  # TODO: check if this is a bug:
+  # get_from_directorium() may call this as load_kalendar($version, $year,
+  # $dioecesis) when trying to populate a diocese-specific cache entry, but
+  # $year and $dioecesis are silently discarded here, and $cache_key below is
+  # always the general (non-diocese) key. This means diocese-specific
+  # kalendar overrides never actually get cached or looked up: lookups always
+  # fall through to the general calendar. This looks unintentional, but is
+  # left as-is here (see t/DivinumOfficium/Directorium.t for a test that
+  # documents this rather than asserting incorrect behavior as correct).
   my ($version) = @_;
   die "Can't load kalendar for empty version" unless $version;
   die "Can't load kalendar for unknown version $version" unless defined $_data{$version};
@@ -258,6 +273,15 @@ sub transfered {
     $dioecesis = '';
   }
 
+  # TODO: check if this is a bug:
+  # %transfer here is whatever was left in scope from the last iteration
+  # of the "foreach my $cache_key (@cache_key)" loop above (the
+  # transfer:$version:$year table), not the tempora:$version hash being
+  # iterated by this loop. The $transfer{$key} guard below therefore checks
+  # an unrelated hash keyed by a different keyspace, which looks like an
+  # unintentional stale-variable reuse rather than deliberate logic. Left
+  # as-is here (see t/DivinumOfficium/Directorium.t, which does not attempt
+  # to exercise this loop's guard as if it were reliable).
   while (my ($key, $val) = each %{$_dCACHE{"tempora:$version"}}) {
     next if $key =~ /dirge/;
 
