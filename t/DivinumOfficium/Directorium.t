@@ -14,7 +14,7 @@ use lib 'web/cgi-bin';
 use DivinumOfficium::Directorium qw(get_from_directorium transfered check_coronatio dirge hymnmerge hymnshift);
 use Test::Simple tests => 32;
 
-# Not covered here (documented gap, no fixture data set up for these):
+# TODO: Not covered here (documented gap, no fixture data set up for these):
 #   - get_from_directorium() for the 'tempora'/'stransfer' subjects directly
 #     (only 'kalendar' and 'transfer' are exercised below).
 #   - hymnshiftmerge().
