@@ -293,8 +293,8 @@ sub oratio {
   our @commemoentries;
 
   foreach my $commemo (@commemoentries) {
-    if (!(-e "$datafolder/$lang/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
-    my %c = %{setupstring($lang, $commemo)};
+    if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
+    my %c = %{setupstring('Latin', $commemo)};
 
     if (
       $commemo
