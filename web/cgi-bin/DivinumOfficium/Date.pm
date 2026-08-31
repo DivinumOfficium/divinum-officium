@@ -17,6 +17,7 @@ use Time::Local;
 
 #*** getweek($flag)
 # returns $week string list using date1 = mm-dd-yyy string as parameter
+# e.g.: 20,2,2016 -> 'Quad1'; 4,4,2016 -> 'Pasc1'
 # next day if $flag
 sub getweek {
   my ($day, $month, $year, $tomorrow, $missa) = @_;
@@ -105,6 +106,13 @@ sub geteaster {
 
 #*** leapyear($year)
 # returns true if year is leap
+# TODO: add robustness & input validation test
+#
+# Given the purpose of this application, we only need to implement the Gregorian leap year rules,
+# meaning this function is to be used for years from 1582 onward.
+# The Gregorian rules are:
+# - Every year that is exactly divisible by 4 is a leap year, except for years that are exactly divisible by 100,
+# but these centurial years are leap years if they are exactly divisible by 400.
 sub leapyear {
   my $year = shift;
   return 0 unless $year;
@@ -166,7 +174,7 @@ sub nextday {
 
 #*** monthday($day, $month, $year, $version, $tomorrow)
 # returns an empty string or mmn-d format
-# e.g. 081-1 for monday after the firs Sunday of August
+# e.g. 081-1 for monday after the first Sunday of August
 sub monthday {
   my ($day, $month, $year, $modernstyle, $tomorrow) = @_;
   return '' if $month < 7;
