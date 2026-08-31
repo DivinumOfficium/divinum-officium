@@ -16,6 +16,9 @@ BEGIN {
 #*** vernaculars($basedir)
 # Returns a list of available vernacular languages for the datafiles rooted at
 # $basedir.
+# TODO: vernaculars() seems to be dead code (nothing calls it since d08ac5615d)
+# TODO: Remove this function and the test, or rework it to enumerate the actual language dirs from the filesystem
+# TODO: instead of reading a static file.
 sub vernaculars {
   my $basedir = shift;
   my @lines = do_read("$basedir/Linguae.txt") or croak q(Couldn't load language list.);
