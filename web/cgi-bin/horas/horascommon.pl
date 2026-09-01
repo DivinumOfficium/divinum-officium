@@ -477,7 +477,7 @@ sub occurrence {
   # Dispose of some cases in which the office can't be sanctoral:
   if ( !$srank[2]
     || ($version =~ /19(?:55|6)|Monastic.*Divino/i && $srank[2] <= 1.1)
-    || $trank[0] =~ /Sanctæ Mariaæ Sabbato/i)
+    || $trank[0] =~ /Sanctæ Mariæ Sabbato/i)
   {
     # if we have no sanctoral office, or it was reduced to a commemoration by Cum nostra or its our Lady on Saturday
     $sanctoraloffice = 0;    # Office is temporal
