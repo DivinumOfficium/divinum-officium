@@ -3,7 +3,7 @@ use warnings;
 
 use DivinumOfficium::Main qw(vernaculars liturgical_color);
 
-use Test::Simple tests => 31;
+use Test2::V0;
 
 # We're assuming here that the test is invoked from the parent of the t/
 # directory.
@@ -20,18 +20,13 @@ my %vernaculars;
 @vernaculars{@vernaculars} = ();
 
 # Sanity checks on the available languages.
-ok(scalar(@vernaculars) == scalar(keys(%vernaculars)), 'No dups');
+is(scalar(@vernaculars), scalar(keys(%vernaculars)), 'No dups');
 ok(exists($vernaculars{'English'}), 'Has English');
 ok(exists($vernaculars{'Italiano'}), 'Has Italian');
 ok(!exists($vernaculars{'Latin'}), 'No Latin');
 
 # Make sure failing to load the file is fatal.
-{
-
-  package DivinumOfficium::Main;
-  use Test::Carp;
-  does_croak(\&::vernaculars, 'non/est/hic');
-}
+like(dies { vernaculars('non/est/hic') }, qr/Couldn't load language list/, 'croaks on a bad path');
 
 ### liturgical_color
 # liturgical_color() sets $_ = shift and then runs a fixed sequence of
@@ -48,129 +43,132 @@ ok(!exists($vernaculars{'Latin'}), 'No Latin');
 ## Group A: one representative match per branch/color, chosen to avoid
 ## incidentally tripping an earlier branch.
 
-ok(liturgical_color('In Nativitate Domini') eq 'black', 'No keywords matched falls through to the default black');
+is(liturgical_color('In Nativitate Domini'), 'black', 'No keywords matched falls through to the default black');
 
-ok(liturgical_color("Beatae Mariae") eq 'blue', 'Blue: "Beatae Mariae"');
-ok(liturgical_color("Sanct\x{e6} Mari\x{e6}") eq 'blue', 'Blue: the ae-ligature spelling is also recognized');
+is(liturgical_color("Beatae Mariae"), 'blue', 'Blue: "Beatae Mariae"');
+is(liturgical_color("Sanct\x{e6} Mari\x{e6}"), 'blue', 'Blue: the ae-ligature spelling is also recognized');
 
-ok(liturgical_color('Officium Defunctorum') eq 'grey', 'Grey: "Defunctorum"');
+is(liturgical_color('Officium Defunctorum'), 'grey', 'Grey: "Defunctorum"');
 
-ok(liturgical_color('In Vigilia Ascensionis Domini') eq 'black', 'Black (anchored): "^In Vigilia Ascensionis"');
+is(liturgical_color('In Vigilia Ascensionis Domini'), 'black', 'Black (anchored): "^In Vigilia Ascensionis"');
 
-ok(liturgical_color('Dominica Septuagesima') eq 'purple', 'Purple: "gesim" (Septuagesima/Sexagesima/Quinquagesima)');
+is(liturgical_color('Dominica Septuagesima'), 'purple', 'Purple: "gesim" (Septuagesima/Sexagesima/Quinquagesima)');
 
-ok(liturgical_color('In Dedicatione Ecclesiae') eq 'black', 'Black: "Dedicatione"');
+is(liturgical_color('In Dedicatione Ecclesiae'), 'black', 'Black: "Dedicatione"');
 
-ok(liturgical_color('In Festo Pentecosten') eq 'green', 'Green: bare "Pentecosten"');
+is(liturgical_color('In Festo Pentecosten'), 'green', 'Green: bare "Pentecosten"');
 
 # Isolated from every earlier branch (no Mari/Vigilia/Martyr/etc.), so this
 # can only be reached via the final red branch's "Innocentium" alternative.
-ok(liturgical_color('In Festo Sanctorum Innocentium') eq 'red', 'Red: "Innocentium", reached only via the last branch');
+is(liturgical_color('In Festo Sanctorum Innocentium'), 'red', 'Red: "Innocentium", reached only via the last branch');
 
 ## Group B: guards/exceptions on individual branches.
 
 # Blue's Marian pattern is explicitly suppressed for a Vigil; this falls all
 # the way through to purple's (case-insensitive, unguarded) "Vigilia".
-ok(
-  liturgical_color('In Vigilia Assumptionis Beatae Mariae Virginis') eq 'purple',
-  'Blue\'s Vigil exception sends a Marian vigil to purple instead',
+is(
+  liturgical_color('In Vigilia Assumptionis Beatae Mariae Virginis'),
+  'purple', 'Blue\'s Vigil exception sends a Marian vigil to purple instead',
 );
 
 # Purple's Advent keyword is suppressed by the "commemoratione" exception.
-ok(
-  liturgical_color('In Commemoratione Adventus Domini') eq 'black',
-  'Purple\'s commemoratione exception excludes "Adventus" here',
+is(
+  liturgical_color('In Commemoratione Adventus Domini'),
+  'black', 'Purple\'s commemoratione exception excludes "Adventus" here',
 );
 
 # Purple's Rogation keyword is suppressed by the "votivum" exception.
-ok(liturgical_color('In festo Rogationis votivum') eq 'black', 'Purple\'s votivum exception excludes "Rogatio" here');
+is(liturgical_color('In festo Rogationis votivum'), 'black', 'Purple\'s votivum exception excludes "Rogatio" here');
 
 # Green's negative lookahead only looks *forward* from the match position:
 # "Pentecosten" followed later by "infra octavam" is excluded from green...
-ok(
-  liturgical_color('In Pentecosten infra octavam') eq 'black',
-  'Green\'s lookahead excludes "Pentecosten" when "infra octavam" follows it',
+is(
+  liturgical_color('In Pentecosten infra octavam'),
+  'black', 'Green\'s lookahead excludes "Pentecosten" when "infra octavam" follows it',
 );
 
 # ...but if "infra octavam" precedes "Pentecosten" instead, the lookahead
 # (which only checks what comes after) does not exclude it.
-ok(
-  liturgical_color('Dominica infra octavam Pentecosten') eq 'green',
-  'Green\'s lookahead does not look backwards, so preceding text does not exclude it',
+is(
+  liturgical_color('Dominica infra octavam Pentecosten'),
+  'green', 'Green\'s lookahead does not look backwards, so preceding text does not exclude it',
 );
 
 ## Group C: case-sensitivity and orthography quirks worth pinning down.
 
 # Blue's pattern has no /i flag, so it is case-sensitive.
-ok(liturgical_color('beatae mariae') eq 'black',
-  'Blue\'s pattern is case-sensitive; an all-lowercase match falls through');
+is(
+  liturgical_color('beatae mariae'),
+  'black', 'Blue\'s pattern is case-sensitive; an all-lowercase match falls through',
+);
 
 # Black's anchored Vigil pattern has no /i flag either; a lowercase variant
 # instead falls through to purple's case-insensitive "Vigilia".
-ok(
-  liturgical_color('in vigilia ascensionis') eq 'purple',
-  'The anchored black Vigil pattern is case-sensitive; lowercase falls through to purple',
+is(
+  liturgical_color('in vigilia ascensionis'),
+  'purple', 'The anchored black Vigil pattern is case-sensitive; lowercase falls through to purple',
 );
 
 # Purple's Holy Week pattern only recognizes the ae-ligature
 # spelling ("Hebdomadae Sanctae" with ae-ligature characters), unlike blue's
 # Marian pattern which accepts both the ligature and the plain "ae" digraph.
-ok(
-  liturgical_color("Feria II Hebdomad\x{e6} Sanct\x{e6}") eq 'purple',
-  'Purple: the ae-ligature spelling of "Hebdomadae Sanctae" is recognized',
+is(
+  liturgical_color("Feria II Hebdomad\x{e6} Sanct\x{e6}"),
+  'purple', 'Purple: the ae-ligature spelling of "Hebdomadae Sanctae" is recognized',
 );
-ok(
-  liturgical_color('Feria II Hebdomadae Sanctae') eq 'black',
-  'Purple\'s Holy Week pattern does not recognize the plain "ae" digraph spelling',
+is(
+  liturgical_color('Feria II Hebdomadae Sanctae'),
+  'black', 'Purple\'s Holy Week pattern does not recognize the plain "ae" digraph spelling',
 );
 
 ## Group D: priority between branches that could both match the same input.
 
 # A Marian feast that is also a martyr is blue, not red: blue is checked
 # first.
-ok(liturgical_color('In Festo Sanctae Mariae Martyris') eq 'blue', 'Blue takes priority over red\'s "Martyr"');
+is(liturgical_color('In Festo Sanctae Mariae Martyris'), 'blue', 'Blue takes priority over red\'s "Martyr"');
 
 # Our Lady of Sorrows ("Dolorum") is a purple keyword, but a Marian feast
 # titled with it is still blue: blue is checked before purple.
-ok(liturgical_color('Septem Dolorum Beatae Mariae Virginis') eq 'blue', 'Blue takes priority over purple\'s "Dolorum"');
+is(liturgical_color('Septem Dolorum Beatae Mariae Virginis'), 'blue', 'Blue takes priority over purple\'s "Dolorum"');
 
 # Red's specific compound "Quattuor Temporum Pentecostes" is checked before
 # purple's bare "Quattuor", so the more specific Pentecost Ember Days phrase
 # wins; a bare "Quattuor" with no "Pentecostes" correctly falls through to
 # purple instead.
-ok(
-  liturgical_color('Feria IV Quattuor Temporum Pentecostes') eq 'red',
-  'Red\'s specific "Quattuor Temporum Pentecostes" takes priority over purple\'s bare "Quattuor"',
+is(
+  liturgical_color('Feria IV Quattuor Temporum Pentecostes'),
+  'red', 'Red\'s specific "Quattuor Temporum Pentecostes" takes priority over purple\'s bare "Quattuor"',
 );
-ok(
-  liturgical_color('Quattuor Temporum Septembris') eq 'purple',
-  'A bare "Quattuor" (no "Pentecostes") falls through to purple as expected',
+is(
+  liturgical_color('Quattuor Temporum Septembris'),
+  'purple', 'A bare "Quattuor" (no "Pentecostes") falls through to purple as expected',
 );
 
 # Red's "Decollatione" is checked before black's "oann", even though a
 # beheading-of-St-John feast name would match both.
-ok(
-  liturgical_color('In Decollatione S. Ioannis Baptistae') eq 'red',
-  'Red\'s "Decollatione" takes priority over black\'s "oann"'
+is(
+  liturgical_color('In Decollatione S. Ioannis Baptistae'),
+  'red', 'Red\'s "Decollatione" takes priority over black\'s "oann"',
 );
 
 # Grey's "Parasceve" is checked before purple's "Passion".
-ok(
-  liturgical_color('Passionis tempore in Parasceve') eq 'grey',
-  'Grey\'s "Parasceve" takes priority over purple\'s "Passion"'
+is(
+  liturgical_color('Passionis tempore in Parasceve'),
+  'grey', 'Grey\'s "Parasceve" takes priority over purple\'s "Passion"',
 );
 
 # Black's "Cathedra"/"Conversione" are checked before red's "Apostol", even
 # though feasts of an Apostle's Chair/Conversion would match both.
-ok(
-  liturgical_color('In Cathedra S. Petri Apostoli') eq 'black',
-  'Black\'s "Cathedra" takes priority over red\'s "Apostol"'
+is(
+  liturgical_color('In Cathedra S. Petri Apostoli'),
+  'black', 'Black\'s "Cathedra" takes priority over red\'s "Apostol"',
 );
 
 # Green's "Pentecosten" (accusative, n-ending) and red's "Pentecostes"
 # (s-ending) are distinct substrings that never overlap.
-ok(
-  liturgical_color('Dominica infra octavam Pentecostes') eq 'red',
-  'Red\'s "Pentecostes" (s-ending) is a distinct match from green\'s "Pentecosten" (n-ending)',
+is(
+  liturgical_color('Dominica infra octavam Pentecostes'),
+  'red', 'Red\'s "Pentecostes" (s-ending) is a distinct match from green\'s "Pentecosten" (n-ending)',
 );
 
+done_testing;

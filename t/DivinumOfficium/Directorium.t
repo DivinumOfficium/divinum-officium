@@ -12,7 +12,7 @@ BEGIN {
 
 use lib 'web/cgi-bin';
 use DivinumOfficium::Directorium qw(get_from_directorium transfered check_coronatio dirge hymnmerge hymnshift);
-use Test::Simple tests => 32;
+use Test2::V0;
 
 # TODO: Not covered here (documented gap, no fixture data set up for these):
 #   - get_from_directorium() for the 'tempora'/'stransfer' subjects directly
@@ -24,8 +24,8 @@ use Test::Simple tests => 32;
 
 ### check_coronatio - pure function, no I/O.
 
-ok(check_coronatio(18, 5) eq 'Commune/Coronatio', '18 May is Coronatio');
-ok(check_coronatio(19, 5) eq '', 'Other dates are not Coronatio');
+is(check_coronatio(18, 5), 'Commune/Coronatio', '18 May is Coronatio');
+is(check_coronatio(19, 5), '', 'Other dates are not Coronatio');
 
 ### get_from_directorium('kalendar', ...)
 # t/fixtures/directorium/data.txt defines three fictional versions: 'Fixture
@@ -34,16 +34,16 @@ ok(check_coronatio(19, 5) eq '', 'Other dates are not Coronatio');
 # 'tbase', fallback).
 
 # Kalendaria/derived.txt directly overrides 02-02.
-ok(get_from_directorium('kalendar', 'Fixture Derived', '02-02') eq '02-02-derived', 'Direct override in derived.txt');
+is(get_from_directorium('kalendar', 'Fixture Derived', '02-02'), '02-02-derived', 'Direct override in derived.txt');
 
 # 01-01 isn't in derived.txt; it's inherited from the base version's
 # Kalendaria/base.txt via the 'base' column in data.txt.
-ok(
-  get_from_directorium('kalendar', 'Fixture Derived', '01-01') eq '01-01-base',
-  "Falls back to the base version's kalendar",
+is(
+  get_from_directorium('kalendar', 'Fixture Derived', '01-01'),
+  '01-01-base', "Falls back to the base version's kalendar",
 );
 
-ok(get_from_directorium('kalendar', 'Fixture Derived', '99-99') eq '', 'Unknown key returns an empty string');
+is(get_from_directorium('kalendar', 'Fixture Derived', '99-99'), '', 'Unknown key returns an empty string');
 
 ### transfered
 # Transfer/409.txt contains '09-09=01-15;;derived', tagged for the
@@ -52,52 +52,51 @@ ok(get_from_directorium('kalendar', 'Fixture Derived', '99-99') eq '', 'Unknown 
 # leap-year file-splitting logic in Directorium::load_transfers) has Easter
 # on 9 April.
 
-ok(
-  transfered('Sancti/01-15', 2023, 'Fixture Derived') eq '09-09',
-  '15 Jan is transferred to 09-09 per the fixture data',
-);
-ok(transfered('Sancti/01-16', 2023, 'Fixture Derived') eq '', 'Untransferred dates return an empty string');
+is(transfered('Sancti/01-15', 2023, 'Fixture Derived'), '09-09',
+  '15 Jan is transferred to 09-09 per the fixture data',);
+is(transfered('Sancti/01-16', 2023, 'Fixture Derived'), '', 'Untransferred dates return an empty string');
 
 # The 'Sancti(M|Cist|OP)?/' prefix is stripped regardless of which variant is
 # used, and a bare/unprefixed date string works the same way.
-ok(transfered('SanctiM/01-15', 2023, 'Fixture Derived') eq '09-09', 'SanctiM/ prefix is stripped like Sancti/');
-ok(transfered('SanctiCist/01-15', 2023, 'Fixture Derived') eq '09-09', 'SanctiCist/ prefix is stripped like Sancti/');
-ok(transfered('SanctiOP/01-15', 2023, 'Fixture Derived') eq '09-09', 'SanctiOP/ prefix is stripped like Sancti/');
-ok(transfered('01-15', 2023, 'Fixture Derived') eq '09-09', 'A bare, unprefixed date string works the same way');
-ok(transfered('Sancti/', 2023, 'Fixture Derived') eq '', 'A string that strips down to empty returns empty');
+is(transfered('SanctiM/01-15', 2023, 'Fixture Derived'), '09-09', 'SanctiM/ prefix is stripped like Sancti/');
+is(transfered('SanctiCist/01-15', 2023, 'Fixture Derived'), '09-09', 'SanctiCist/ prefix is stripped like Sancti/');
+is(transfered('SanctiOP/01-15', 2023, 'Fixture Derived'), '09-09', 'SanctiOP/ prefix is stripped like Sancti/');
+is(transfered('01-15', 2023, 'Fixture Derived'), '09-09', 'A bare, unprefixed date string works the same way');
+is(transfered('Sancti/', 2023, 'Fixture Derived'), '', 'A string that strips down to empty returns empty');
 
 # '01-30=01-30;;derived': the value starts with its own key, so the
 # self-referential guard ($val !~ /^$key/) must prevent this from ever being
 # reported as a transfer, even though the value otherwise matches.
-ok(
-  transfered('Sancti/01-30', 2023, 'Fixture Derived') eq '',
-  'Self-referential entries are never reported as transfers'
-);
+is(transfered('Sancti/01-30', 2023, 'Fixture Derived'), '',
+  'Self-referential entries are never reported as transfers',);
 
 # '05-06=01-21v;;derived': the trailing 'v' marks this as a votive entry,
 # which the ($transfer{$key} !~ /v\s*$/i) guard must exclude.
-ok(transfered('Sancti/01-21', 2023, 'Fixture Derived') eq '', 'Votive-suffixed entries are excluded');
+is(transfered('Sancti/01-21', 2023, 'Fixture Derived'), '', 'Votive-suffixed entries are excluded');
 
 # 'dirge1=03-03;;derived' would otherwise match a query for 03-03, but keys
 # matching /(dirge|Hy)/i must be skipped entirely when scanning for
 # transfers.
-ok(transfered('Sancti/03-03', 2023, 'Fixture Derived') eq '',
-  'dirge/Hy-named keys are excluded from transfer matching');
+is(transfered('Sancti/03-03', 2023, 'Fixture Derived'), '', 'dirge/Hy-named keys are excluded from transfer matching',);
 
 # '05-07=Tempora/Epi3;;derived' points at a Tempora season without the
 # 'Epi1-0' exception, so it must be skipped; '05-08=Tempora/Epi1-0;;derived'
 # has the exception and so must NOT be skipped.
-ok(transfered('Epi3', 2023, 'Fixture Derived') eq '',
-  'Entries pointing at Tempora (without the Epi1-0 exception) are skipped');
-ok(transfered('Epi1-0', 2023, 'Fixture Derived') eq '05-08',
-  'Entries pointing at Tempora with the Epi1-0 exception are not skipped');
+is(
+  transfered('Epi3', 2023, 'Fixture Derived'),
+  '', 'Entries pointing at Tempora (without the Epi1-0 exception) are skipped',
+);
+is(
+  transfered('Epi1-0', 2023, 'Fixture Derived'),
+  '05-08', 'Entries pointing at Tempora with the Epi1-0 exception are not skipped',
+);
 
 # '10-10=02-25;;tbaseversion' only exists tagged for 'Fixture TBase', which is
 # only reachable via the recursive 'tbase' (transferbase) fallback once
 # 'Fixture Derived' itself has no matching entry.
-ok(
-  transfered('Sancti/02-25', 2023, 'Fixture Derived') eq '10-10',
-  'Falls back through the transferbase chain to Fixture TBase'
+is(
+  transfered('Sancti/02-25', 2023, 'Fixture Derived'),
+  '10-10', 'Falls back through the transferbase chain to Fixture TBase',
 );
 
 ### dirge
@@ -128,9 +127,9 @@ ok(dirge('Fixture Derived', 'Laudes', 3, 3, 2023), "Generale's own dirge date is
 ### get_from_directorium('transfer', ...) with a $dioecesis
 # Transfer/TestDioc/409.txt also has '11-11=05-20;;derived'.
 
-ok(
-  get_from_directorium('transfer', 'Fixture Derived', '11-11', 2023, 'TestDioc') eq '05-20;;TestDioc',
-  'Diocese-specific transfer entries are found, tagged with the diocese name',
+is(
+  get_from_directorium('transfer', 'Fixture Derived', '11-11', 2023, 'TestDioc'),
+  '05-20;;TestDioc', 'Diocese-specific transfer entries are found, tagged with the diocese name',
 );
 
 # NB: the equivalent diocese-override lookup for the 'kalendar' subject does
@@ -149,3 +148,5 @@ ok(!hymnshift('Fixture Derived', 5, 5, 2023, ''), 'Hymnshift does not apply when
 
 ok(hymnshift('Fixture Derived', 9, 5, 2023, ''), 'Hymnshift applies on its own recorded date');
 ok(!hymnmerge('Fixture Derived', 9, 5, 2023, ''), 'Hymnmerge does not apply when hymnshift does instead');
+
+done_testing;
