@@ -1,5 +1,5 @@
 [Officium]
-Officium parvum Beatæ Maríæ Virginis
+Officium parvum Beatæ Mariæ Virginis
 
 [Rank]
 ;;Simplex;;1;;ex C11
@@ -14,6 +14,8 @@ Votive nocturn
 Psalmi Dominica
 Antiphonas horas
 Feria Te Deum
+(sed tempore post septuagesimam)
+no Te Deum
 
 [Capitulum Vespera]
 @Commune/C10:Capitulum Laudes
@@ -115,10 +117,10 @@ _
 16 Et radicávi in pópulo honorificáto, et in parte Dei mei heréditas illíus, et in plenitúdine sanctórum deténtio mea.
 
 [Responsory2]
-R. Beata es, Virgo María, quæ Dominum portasti, Creatorem mundi:
-* Genuisti qui te fecit, et in æternum permanes Virgo.
-V. Ave María, gratia plena, Dominus tecum.
-R. Genuisti qui te fecit, et in æternum permanes Virgo.
+R. Beáta es, Vírgo María, quæ Dóminum portásti, Creatórem mundi:
+* Genuísti qui te fecit, et in ætérnum pérmanes Virgo.
+V. Ave María, grátia plena, Dóminus tecum.
+R. Genuísti qui te fecit, et in ætérnum pérmanes Virgo.
 
 [Lectio3]
 !Sir 24:17-20
@@ -504,8 +506,11 @@ Clausus Joánnes sénserat.
 @:Hymnus Completorium_C
 @:HymnusM minor:s/.*?\_/_/s
 
-[Ant Completorium]
+[Ant Completorium_]
 Ant. Sub tuum præsídium * confúgimus, sancta Dei Génetrix: nostras deprecatiónes ne despícias in necessitátibus, sed a perículis cunctis libera nos semper, Virgo gloriósa et benedícta.
+
+[Ant Completorium]
+@:Ant Completorium_
 (sed tempore paschali)
 @Commune/C10:Ant 1_Pasch:s/^/Ant. /
 

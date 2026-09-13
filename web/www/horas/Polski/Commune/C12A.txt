@@ -1,8 +1,5 @@
 [Officium]
-Małe oficjum ku czci Najświętszej Marji Panny
-
-[Rank]
-Małe oficjum ku czci Najświętszej Marji Panny w czasie Adwentu;;Simplex;;1
+Małe oficjum ku czci Najświętszej Marji Panny w czasie Adwentu
 
 [Commemoratio]
 !Wspomnienie Wszystkich Świętych
@@ -14,8 +11,8 @@ v. Sumienia nasze prosimy Cię, Panie, Swem nawiedzeniem oczyść, iżby przycho
 $Qui tecum
 (sed rubrica 1955 aut rubrica 1960 omittitur)
 
-[Ant Matutinum]
-@Commune/C11::s/Porodziwszy Syna.*\./Anioł Pański * zwiastował Pannie Maryi, i poczęła z Ducha Świętego./
+[Ant Matutinum 9]
+Anioł Pański * zwiastował Pannie Maryi, i poczęła z Ducha Świętego.;;97
 
 [Lectio1]
 !Łk 1:26-28
