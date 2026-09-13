@@ -1,9 +1,3 @@
-[Officium]
-Officium parvum Beatae Mariae Virginis
-
-[Rank]
-Officium parvum Beatae Mariae Virginis tempore Adventi;;Simplex;;1
-
 [Commemoratio]
 !Conmemoración de los Santos
 Ant. He aquí que el Señor vendrá y todos sus santos con Él: y habrá en aquel día una gran luz. Aleluya.
@@ -14,8 +8,8 @@ v. Dígnate, Señor, purificar nuestras conciencias con tu visitación, a fin de
 $Qui tecum
 (se omite en las rúbricas de 1955 y 1960)
 
-[Ant Matutinum]
-@Commune/C11::s/Después del parto.*\./El Ángel del Señor \* anunció a María, la cual concibió por obra del Espíritu Santo./
+[Ant Matutinum 9]
+El Ángel del Señor * anunció a María, la cual concibió por obra del Espíritu Santo.;;97
 
 [Lectio1]
 !Lc 1:26-28

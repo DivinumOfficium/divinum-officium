@@ -10,10 +10,12 @@ $Per Dominum
 (sed rubrica 1955 aut rubrica 196 omittitur)
 
 [Hymnus minor_]
+
 #Hymnus
 {gabc:Commune/C12/hy--memento_rerum_conditor--solesmes}
 
 [HymnusM minor]
+
 #Hymnus
 {gabc:Commune/C12/hy--memento_salutis_auctor--solesmes_1934}
 
@@ -274,6 +276,7 @@ $Deus in adjutorium
 &psalm('130,in,dir')
 (rubrica cisterciensis) @Sancti/12-25:Ant Vespera:3 s/^/Ant. / s/;;.*//
 
+(deinde dicitur)
 @:Hymnus minor
 (sed rubrica cisterciensis omittitur)
 
@@ -289,9 +292,15 @@ _
 (deinde dicitur)
 
 #Canticum: Nunc dimittis
-@:Ant Completorium
+@:Ant Completorium_
+(sed tempore paschali)
+@Commune/C10:Ant 1_Pasch:s/^/Ant. / s/\*\(\).*/(::)\}/
 &psalm('233,7a')
-@:Ant Completorium
+(sed tempore paschali)
+&psalm('233,1D2')
+@:Ant Completorium_
+(sed tempore paschali)
+@Commune/C10:Ant 1_Pasch:s/^/Ant. / s/;;.*//
 (sed rubrica cisterciensis omittitur)
 
 #Oratio
@@ -335,10 +344,8 @@ Quem Gábriel prædíxerat,
 Quem matris alvo géstiens,
 Clausus Joánnes sénserat.
 
-[Ant Completorium]
+[Ant Completorium_]
 Ant. {name:Sub tuum praesidium;annotation:7.a;mode:7;book:Liber antiphonarius, 1960, p. [134];transcriber:Andrew Hinkley;%%(c3) SUB(e') tu(e)um(g') prae(h)sí(i')di(i)um(g') con(h)fú(ij)gi(j)mus,(i.) *(,) san(i)cta(i) De(h')i(f) Gé(h')ni(h)trix :(g.) (;) no(e')stras(e) de(g')pre(h)ca(i')ti(h)ó(i_[uh:l]j)nes(i.) (,) ne(j) de(i)spí(h')ci(f)as(g_[uh:l]h) in(ih) ne(f)ces(g')si(f)tá(e')ti(e)bus :(e.) (:) sed(f) a(d') per(f)í(h')cu(g)lis(f) cun(hi)ctis(i.) (,) lí(i)be(i)ra(h') nos(h) sem(iji)per,(hg/hih.) (;) Vir(f')go(e) glo(f')ri(h)ó(hi)sa(h_g) (,) et(fe) be(f!gwh_f)ne(g_[oh:h]f)dí(e.)cta.(e.) (::)}
-(sed tempore paschali)
-@Commune/C10:Ant 1_Pasch:s/^/Ant. /
 
 [Capitulum Completorium_]
 !Sir 24:24
