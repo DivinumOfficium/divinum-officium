@@ -1620,7 +1620,7 @@ sub precedence {
     : '';
 
   ### Get the relevant Office and Commemorations
-  if ($hora =~ /vespera|completorium/i && $votive !~ /C12/i) {
+  if ($hora =~ /vespera|completorium/i) {
     concurrence($day, $month, $year, $version, $dioecesis);
   } else {
     occurrence($day, $month, $year, $version, $dioecesis, 0);
@@ -1784,8 +1784,8 @@ sub precedence {
           $vtv = 'C12Q';
         }
       }
-      $commemoratio = $commemoratio1 = $cwinner = $scriptura = $commune = '';
-      %commemoratio = %commemoratio1 = %cwinner = %scriptura = %commune = {};
+      $commemoratio = $commemoratio1 = $cwinner = $scriptura;
+      %commemoratio = %commemoratio1 = %cwinner = %scriptura;
       @commemoentries = @ccommemoentries = ();
     } else {
 
@@ -1810,6 +1810,7 @@ sub precedence {
     $winner = subdirname('Commune', $version) . "$vtv.txt";
     %winner = %{setupstring($lang1, $winner)};
     $rule = $winner{Rule};
+    $rule =~ s/no Te Deum/Feria Te Deum/ if $commune =~ /C11/;
 
     if ($winner{Rank}) {
       my @vrank = split(';;', $winner{Rank});

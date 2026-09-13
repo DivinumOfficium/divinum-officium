@@ -12,8 +12,8 @@ Officium parvum Beatae Mariae Virginis Tempora Nativitatis;;Simplex;;1
 [Ant 1]
 @Sancti/01-01:Ant 3
 
-[Oratio]
-@Sancti/01-01
+[Oratio 1]
+@Sancti/01-01:Oratio
 
 [Minor final]
 #Oratio
@@ -26,6 +26,9 @@ Officium parvum Beatae Mariae Virginis Tempora Nativitatis;;Simplex;;1
 
 [Ant 2]
 @Sancti/01-01
+
+[Oratio 2]
+@Sancti/01-01:Oratio
 
 [Special Prima]
 @:Minor intro
