@@ -5,7 +5,7 @@
 Pai nosso
 
 [Ave Maria]
-Avé Maria
+Ave Maria
 
 [Credo]
 Credo
@@ -249,3 +249,134 @@ Salve Rainha
 
 [#Commemoratio defunctorum]
 #Comemoração dos defuntos
+
+[Pater noster Et]
+@:Pater noster
+
+[Credo Carnis]
+@:Credo
+
+[Requiem2]
+@:Requiem
+
+[Deusinadjutorium]
+@:Deus in adjutorium
+
+[Benedicamus Domino]
+@:Benedicamus_Domino
+
+[Benedicamus Domino alleluia]
+@:Benedicamus Domino1
+
+[Benedicamus Domino alleluja]
+@:Benedicamus Domino1
+
+[Aportainferi]
+@:A_porta_inferi
+
+[Sacrosanctaea]
+@:Sacrosancta
+
+[Defunctorum]
+@:#Commemoratio defunctorum: s/#//
+
+[Pater totum secreto_]
+/:tudo em silêncio:/
+
+[Pater totum secreto]
+@:Pater noster
+@:Pater totum secreto_
+
+[Pater post]
+@:Pater totum secreto
+
+[Pater post V]
+@:Pater totum secreto
+
+[Deus in adjutorium iij_]
+/:três vezes:/
+
+[Deus in adjutorium iij]
+@:Deus in adjutorium
+@:Deus in adjutorium iij_
+
+[Pater Ave L_]
+/:rubrica de Laudes:/
+
+[MLitany]
+@:Kyrie
+…
+@:Pater noster
+
+[Oratio Domine_]
+Senhor Deus
+
+[Oratio Domine]
+@:Domine exaudi
+…
+@:Oremus
+…
+@:Oratio Domine_
+
+[Oratio Domine] (rubrica ^Monastic)
+@:MLitany
+…
+@:Domine exaudi
+…
+@:Oremus
+…
+@:Oratio Domine_
+
+[Vigilia]
+Vigília
+
+[Litaniae]
+Litanias
+
+[Benedictio mensae]
+Bênção da mesa
+
+[Nocturn]
+Noturno
+
+[Ad Nocturnum]
+Ao Noturno
+
+[Octava]
+Oitava
+
+[Dominica]
+Domingo
+
+[Psalmi graduales]
+Salmos graduais
+
+[Septem psalmi paenitentiales]
+Sete salmos penitenciais
+
+[Ordo Commendationis Animae]
+Rito de Encomendação da Alma
+
+[Itinerarium]
+Itinerário
+
+[Benedicite]
+Bendizei
+
+[benedictio Prima2]
+O Senhor nos abençoe
+
+[Requiescant]
+Descansem
+
+[A_porta_inferi]
+Da porta do inferno
+
+[Respice]
+Olhai
+
+[Pretiosa]
+Preciosa
+
+[Versus in loco]
+Versículo (em lugar do Capítulo)
