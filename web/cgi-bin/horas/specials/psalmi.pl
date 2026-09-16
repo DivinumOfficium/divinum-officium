@@ -430,6 +430,7 @@ sub psalmi_major {
   }
 
   my @p;
+  my ($w, $c);
 
   if ($rule =~ /Psalmi ex Psalterio/) {
 
@@ -440,7 +441,6 @@ sub psalmi_major {
   } else {
 
     # Look for Antiphones de tempore or Sancti
-    my ($w, $c);
     my %w = columnsel($lang) ? %winner : %winner2;
 
     if ($hora eq 'Vespera' && $vespera == 3) {
