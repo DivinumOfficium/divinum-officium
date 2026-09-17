@@ -54,9 +54,21 @@ R. E que o meu clamor chegue até Vós.
 [Confiteor_]
 v. Eu me confesso a Deus, todo-poderoso, à bem-aventurada sempre Virgem Maria, ao bem-aventurado S. Miguel Arcanjo, ao bem-aventurado S. João Baptista, aos Santos Apóstolos S. Pedro e S. Paulo, e a todos os santos: que pequei muitas vezes por pensamentos, palavras e obras: /:bate no próprio peito:/ Por minha culpa, por minha culpa, por minha tão grande culpa. Portanto rogo à bem-aventurada sempre Virgem Maria, ao bem-aventurado S. Miguel Arcanjo, ao bem-aventurado S. João Baptista, aos Santos Apóstolos S. Pedro e S. Paulo, e a todos os Santos, que rogueis a Deus, Nosso Senhor, por mim.
 
+[Confiteor] (rubrica Monastica)
+@:Confiteor_:s/Paulo,/Paulo, ao bem-aventurado S. Bento, nosso Pai,/g
+
+[Confiteor] (rubrica cisterciensis)
+@:Confiteor_:s/Paulo,/Paulo, ao bem-aventurado S. Bernardo, nosso Pai,/g
+
+[Confiteor] (rubrica Ordo Praedicatorum)
+v. Eu me confesso a Deus omnipotente, e à bem-aventurada sempre Virgem Maria, e ao bem-aventurado S. Domingos, nosso Pai, e a todos os Santos: que pequei muitas vezes por pensamentos, palavras, obras e omissões, por minha culpa: peço à bem-aventurada sempre Virgem Maria, e ao bem-aventurado S. Domingos, nosso Pai, e a todos os Santos, que roguem por mim.
+
 [Misereatur]
 v. Compadeça-se de vós o Senhor omnipotente; vos perdoe os pecados e guie até à vida eterna.
 Amém.
+
+[Misereatur] (rubrica Ordo Praedicatorum)
+v. Compadeça-se de mim Deus omnipotente, e perdoe-me todos os meus pecados, livre-me de todo o mal, salve-me e confirme-me em toda a obra boa, e conduza-me à vida eterna. Amém.
 
 [Indulgentiam]
 v. Que o Senhor + omnipotente e misericordioso nos conceda o perdão, a absolvição e a remissão dos nossos pecados.
@@ -187,6 +199,9 @@ $Amen
 [Oremus]
 v. Oremos
 
+[Te decet]
+v. A Vós convém o louvor, + a Vós convém o hino: a Vós a glória, a Deus Pai, e ao Filho, com o Espírito Santo, pelos séculos dos séculos. Amém.
+
 [Kyrie]
 v. Senhor, tem piedade de nós. Cristo, tem piedade de nós. Senhor, tem piedade de nós.
 
@@ -249,8 +264,14 @@ Benedictio. Que Deus Todo-Poderoso nos conceda uma noite tranquila e no fim da v
 [Benedictio Completorium2]
 Benedictio. Abençoe e nos guarde o Senhor omnipotente e misericordioso, + Pai, Filho e Espírito Santo.
 
+[Benedictio Completorium2] (rubrica Ordo Praedicatorum)
+Benedictio. A bênção de Deus omnipotente, + Pai, e Filho, e Espírito Santo, desça sobre nós e permaneça para sempre.
+
 [Jube domne]
 V. Conceda-nos, Senhor, a Sua bênção.
+
+[Lectio regulae]
+Leitura da Regra de Nosso Pai São Bento, Capítulo n.º
 
 [Amen]
 R. Amém.
