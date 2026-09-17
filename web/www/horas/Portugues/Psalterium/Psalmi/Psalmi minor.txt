@@ -19,15 +19,15 @@ Dominica = Aleluia, * guiai-me, Senhor, pela senda dos vossos mandamentos, alelu
 118(33-48),118(49-64),118(65-80)
 Feria II = O Senhor é minha luz * e minha salvação.
 26(1-6), 26(7-14), 27
-Feria III = O Senhor ouviu * a minha súplica: o Senhor aceitou a minha oração.
+Feria III = Olhou para mim * o Senhor, e ouviu a minha súplica.
 39(2-9), 39(10-14), 39(15-18)
-Feria IV = Pois eis que Deus é o meu ajudador: * e o Senhor é o protetor da minha alma.
+Feria IV = Deus vem em meu auxílio: * e o Senhor é o protector da minha vida.
 53, 54(2-16), 54(17-24)
 Feria V = Quão bom é Deus * para Israel, para os que são de coração puro!
 72(1-9), 72(10-17), 72(18-28)
-Feria VI = Desperta o teu poder, Senhor, * e vem salvar-nos.
+Feria VI = Mostrai, Senhor, * o vosso poder, para nos salvar.
 79(2-8), 79(9-20), 81
-Sabato = Chegue a minha oração até Ti, Senhor: * não escondas de mim a tua face.
+Sabbato = O meu clamor, * Senhor, chegue até Vós: não aparteis de mim o vosso rosto.
 101(2-13), 101(14-23), 101(24-29)
 
 [Sexta]
@@ -155,6 +155,13 @@ Sabbato = Chegue a minha oração * à vossa presença, Senhor.
 4 =
 5 = Pelas armas da justiça, * pelo poder de Deus, provemo-nos a nós mesmos por uma grande paciência.
 
+[Quad] (rubrica cisterciensis)
+1 =
+2 = Guardai * para vós tesouros no céu, onde nem a ferrugem nem a traça os destroem.
+3 = Não só de pão * vive o homem, mas de toda a palavra que procede da boca de Deus.
+4 = Provemo-nos a nós mesmos * por uma grande paciência e muitos jejuns, pelas armas da justiça.
+5 = Pelas armas da justiça, * pelo poder de Deus, provemo-nos a nós mesmos por uma grande paciência.
+
 [Quad5_]
 1 = Livra-me, Senhor, * e põe-me junto de Ti; então quem quer que seja, lute contra mim.
 2 = Tu julgaste, Senhor, * a minha causa. És o defensor da minha vida, meu Senhor e meu Deus.
@@ -177,7 +184,7 @@ Aleluia, * aleluia, aleluia.
 Aleluia, * aleluia, aleluia, aleluia, aleluia, aleluia, aleluia.
 
 [Tridentinum]
-Prima Dominica=Aleluia * aleluia, aleluia.;;53,117,118(1-16),118(17-32)
+Prima Dominica=Aleluia, * aleluia, aleluia.;;53,117,118(1-16),118(17-32)
 Prima Dominica SQP=;;53,92,118(1-16),118(17-32)
 Prima Feria II= Bem-aventurados * aqueles que andam na lei do Senhor.;;53,23,118(1-16),118(17-32)
 Prima Feria III= Bem-aventurados * aqueles que andam na lei do Senhor.;;53,24,118(1-16),118(17-32)
@@ -185,30 +192,38 @@ Prima Feria IV= Bem-aventurados * aqueles que andam na lei do Senhor.;;53,25,118
 Prima Feria V= Bem-aventurados * aqueles que andam na lei do Senhor.;;53,22,118(1-16),118(17-32)
 Prima Feria VI= Bem-aventurados * aqueles que andam na lei do Senhor.;;53,21,118(1-16),118(17-32)
 Prima Sabbato= Bem-aventurados * aqueles que andam na lei do Senhor.;;53,118(1-16),118(17-32)
-Prima Festis=Aleluia * Aleluia, aleluia.;;53,118(1-16),118(17-32)
+Prima Festis=Aleluia, * aleluia, aleluia.;;53,118(1-16),118(17-32)
 Tertia Dominica=Aleluia, * aleluia, aleluia.;;118(33-48),118(49-64),118(65-80)
-Tertia Feria=Guia-me * pela senda dos teus mandamentos.;;118(33-48),118(49-64),118(65-80)
-Sexta Dominica=Aleluia * aleluia, aleluia.;;118(81-96), 118(97-112), 118(113-128)
-Sexta Feria=Ajuda-me, * e serei salvo, ó Senhor.;;118(81-96), 118(97-112), 118(113-128)
-Nona Dominica=Aleluia * aleluia, aleluia.;;118(129-144), 118(145-160), 118(161-176)
-Nona Feria=Olha para mim * e compadece-te de mim, ó Senhor.;;118(129-144), 118(145-160), 118(161-176)
+Tertia Feria=Guiai-me * pela senda dos vossos mandamentos.;;118(33-48),118(49-64),118(65-80)
+Sexta Dominica=Aleluia, * aleluia, aleluia.;;118(81-96), 118(97-112), 118(113-128)
+Sexta Feria=Ajudai-me, * e serei salvo, Senhor.;;118(81-96), 118(97-112), 118(113-128)
+Nona Dominica=Aleluia, * aleluia, aleluia.;;118(129-144), 118(145-160), 118(161-176)
+Nona Feria=Olhai para mim, * e compadecei-Vos de mim, Senhor.;;118(129-144), 118(145-160), 118(161-176)
 Completorium=Tende compaixão * de mim, Senhor, e escutai a minha oração.;;4,30(2-6),90,133
 
 [Monastic_]
-Prima Dominica=Aleluia * aleluia, aleluia (aleluia);;118(1-8),118(9-16),118(17-24),118(25-32)
-Prima Feria II=Servi ao Senhor com temor, * e exultai-lhe com tremor.;;1,2,6
-Prima Feria III=Deus é um juiz justo * forte e paciente; até quando irá durar sua ira?;;7,8,9(2-19)
-Prima Feria IV=Ergue-Te, Senhor * não triunfe o homem.;;9(20-39),10,11
-Prima Feria V=Cantarei ao Senhor, * pelos bens que me deu.;;12,13,14
-Prima Feria VI=Dos meus bens não precisas; * guarda-me, Senhor, em Ti espero.;;15,16,17(2-25)
-Prima Sabbato=Viva o Senhor! * Bendito seja Deus, meu Salvador!;;17(26-51),18,19
-Prima Festis=Aleluia * aleluia, aleluia (aleluia);;118(1-8),118(9-16),118(17-24),118(25-32)
-Tertia Dominica=Aleluia * aleluia, aleluia (aleluia);;118(33-40),118(41-48),118(49-56)
-Tertia Feria II=Ajuda-me, Senhor * para que eu seja salvo.;;118(105-112),118(113-120),118(121-128)
-Tertia Feria=Clamei ao Senhor, * e Ele me ouviu.;;119,120,121
-Sexta Dominica=Aleluia * aleluia, aleluia (aleluia);;118(57-64),118(65-72),118(73-80)
-Sexta Feria II=Olha para mim, * Senhor, e compadece-Te de mim.;;118(129-136),118(137-144),118(145-152)
-Sexta Feria=Tu que habitas * nos céus, tem piedade de nós.;;122,123,124
-Nona Dominica=Aleluia * aleluia, aleluia (aleluia);;118(81-88),118(89-96),118(97-104)
-Nona Feria II=Estende a tua mão, * Senhor, a socorrer-me, pois optei pelos teus mandamentos.;;118(153-160),118(161-168),118(169-176)
-Nona Feria=Bem aventurados * os que temem o Senhor;;125,126,127
+Prima Dominica=Aleluia, * aleluia, aleluia (aleluia);;118(1-8),118(9-16),118(17-24),118(25-32)
+Prima Feria II=Servi o Senhor * com temor: e com tremor alegrai-vos n’Ele.;;1,2,6
+Prima Feria III=Deus é um juiz justo, * forte e paciente: ira-se todos os dias porventura?;;7,8,9(2-19)
+Prima Feria IV=Levantai-Vos, Senhor, * não triunfe o homem.;;9(20-39),10,11
+Prima Feria V=Cantarei ao Senhor, * que bem me fez.;;12,13,14
+Prima Feria VI=Dos meus bens * não tendes necessidade; em Vós esperei, guardai-me, Senhor.;;15,16,17(2-25)
+Prima Sabbato=Viva o Senhor, * e bendito seja o Deus da minha salvação.;;17(26-51),18,19
+Prima Festis=Aleluia, * aleluia, aleluia (aleluia);;118(1-8),118(9-16),118(17-24),118(25-32)
+Tertia Dominica=Aleluia, * aleluia, aleluia (aleluia);;118(33-40),118(41-48),118(49-56)
+Tertia Feria II=Ajudai-me, * e serei salvo, Senhor.;;118(105-112),118(113-120),118(121-128)
+Tertia Feria=Clamei ao Senhor, * e ouviu-me.;;119,120,121
+Sexta Dominica=Aleluia, * aleluia, aleluia (aleluia);;118(57-64),118(65-72),118(73-80)
+Sexta Feria II=Olhai para mim, * e compadecei-Vos de mim, Senhor.;;118(129-136),118(137-144),118(145-152)
+Sexta Feria=Vós que habitais * nos céus, tende piedade de nós.;;122,123,124
+Nona Dominica=Aleluia, * aleluia, aleluia (aleluia);;118(81-88),118(89-96),118(97-104)
+Nona Feria II=Estendei a vossa mão, * Senhor, para me salvar: porque escolhi os vossos mandamentos.;;118(153-160),118(161-168),118(169-176)
+(sed rubrica Barroux)
+Nona Feria II=Estendei a vossa mão, * Senhor, para me salvardes, porque desejei os vossos mandamentos.;;118(153-160),118(161-168),118(169-176)
+Nona Feria=Bem-aventurados todos * os que temem o Senhor.;;125,126,127
+
+[Cistercian_]
+Prima Feria II=Servi * o Senhor com temor.;;1,2,6
+Prima Feria III=Senhor * Deus meu, em Vós esperei.;;7,8,9(2-19)
+Prima Feria V=Iluminai * os meus olhos, Senhor.;;12,13,14
+Prima Feria VI=Guardai-me, * Senhor, porque em Vós esperei.;;15,16,17(2-25)

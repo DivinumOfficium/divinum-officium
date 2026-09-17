@@ -71,6 +71,58 @@ Ao filho seu também,
 Ao Espírito igualmente,
 Agora e sempre. Amém.
 
+[HymnusM Day0 Laudes hiemalis_]
+v. Ó eterno Criador de todas as coisas,
+Que governais a noite e o dia,
+E aos tempos dais os seus tempos,
+Para nos aliviar do tédio.
+_
+Já canta o arauto do dia,
+Vigilante na noite profunda,
+Luz nocturna para os viandantes,
+Que separa a noite da noite.
+_
+Por ele despertada, a estrela da manhã
+Livra o céu da escuridão;
+Por ele toda a turba dos vagabundos
+Abandona o caminho do mal.
+_
+Por ele o navegante recobra as forças,
+E amansam-se as ondas do mar:
+Por ele a própria Pedra da Igreja,
+Ao seu canto, lava a sua culpa.
+_
+Levantemo-nos, pois, com diligência:
+O galo desperta os que jazem,
+E repreende os sonolentos;
+O galo acusa os que negam.
+_
+Ao cantar do galo volta a esperança,
+Aos enfermos é restituída a saúde,
+O punhal do ladrão é embainhado,
+Aos caídos regressa a fé.
+_
+Jesus, olhai para os que vacilam,
+E, olhando-nos, corrigi-nos:
+Se olhais, desfazem-se as quedas,
+E com o pranto a culpa se apaga.
+_
+Vós, ó Luz, brilhai nos nossos sentidos,
+E dissipai o sono da mente:
+Que a Vós primeiro cante a nossa voz,
+E a Vós cumpramos os nossos votos.
+_
+A Deus Pai seja a glória,
+E ao seu único Filho,
+Com o Espírito Paráclito,
+Agora e para sempre.
+Amém.
+
+[HymnusM Day0 Laudes hiemalis]
+@:HymnusM Day0 Laudes hiemalis_
+(sed rubrica cisterciensis)
+@:HymnusM Day1 Laudes
+
 [Dominica Versum 2_]
 V. O Senhor reina vestido de majestade.
 R. O Senhor revestiu-se de fortaleza e cingiu-se de poder.
@@ -118,8 +170,8 @@ Louvor, honra e vitória
 Agora e sempre. Amém.
 
 [Dominica Versum 3]
-V. Eleve-se, Senhor, a minha oração.
-R. Como incenso em tua presença.
+V. Suba direita, Senhor, a minha oração.
+R. Como incenso na vossa presença.
 
 [Feria Laudes]
 !Rom 13:12-13
@@ -322,17 +374,30 @@ Bendito * seja o Senhor, Deus de Israel.
 [Feria3 Ant 2]
 O Senhor suscitou-nos * a força da salvação na casa do servo Davi.
 
+[Feria3C Ant 2]
+Salvai-nos * dos nossos inimigos, e da mão de todos os que nos odeiam livrai-nos, Senhor.
+
 [Feria4 Ant 2]
-Senhor, * livra-nos das mãos de todos os que nos odeiam.
+Da mão de todos * os que nos odeiam, livrou-nos o Senhor.
+(sed rubrica tridentina aut rubrica monastica)
+Da mão de todos * os que nos odeiam, livrai-nos, Senhor.
 
 [Feria5 Ant 2]
 Em santidade * sirvamos o Senhor, e nos livrará dos nossos inimigos.
+
+[Feria5C Ant 2]
+Para dar o conhecimento * ao vosso povo, Senhor, para a remissão dos seus pecados.
 
 [Feria6 Ant 2]
 Pelas entranhas * da misericórdia do nosso Deus, nos visitou do alto este Sol nascente.
 
 [Feria7 Ant 2]
-Ilumina, Senhor * os que jazem nas trevas; e dirige os nossos pés no caminho da paz, ó Deus de Israel.
+Iluminai, Senhor, * os que jazem nas trevas e na sombra da morte, e dirigi os nossos pés no caminho da paz.
+(sed rubrica tridentina aut rubrica monastica)
+Iluminai, Senhor, * os que jazem nas trevas: e dirigi os nossos pés no caminho da paz, ó Deus de Israel.
+
+[Feria7C Ant 2]
+No caminho da paz * dirigi-nos, Senhor.
 
 [Responsory Feria Vespera_]
 R.br. Bendirei o Senhor * em todos os tempos.
@@ -342,13 +407,26 @@ R. Em todos os tempos.
 &Gloria
 R. Bendirei o Senhor * em todos os tempos.
 
+[Responsory Feria Vespera_C]
+R.br. O nosso auxílio * está no nome do Senhor.
+R. O nosso auxílio * está no nome do Senhor.
+V. Que fez o céu e a terra.
+R. Está no nome do Senhor.
+&Gloria
+R. O nosso auxílio * está no nome do Senhor.
+
+[Responsory Feria Vespera]
+@:Responsory Feria Vespera_
+(sed rubrica cisterciensis)
+@:Responsory Feria Vespera_C
+
 [Responsory Feria Vespera] (feria 7)
-R.br. Grande é o nosso Senhor, e grande é o seu poder.
-R. Grande é o nosso Senhor, e grande é o seu poder.
-V. E de sua sabedoria não há número.
+R.br. Grande é o nosso Senhor, * e grande é o seu poder.
+R. Grande é o nosso Senhor, * e grande é o seu poder.
+V. E a sua sabedoria não tem número.
 R. E grande é o seu poder.
 &Gloria
-R. Grande é o nosso Senhor, e grande é o seu poder.
+R. Grande é o nosso Senhor, * e grande é o seu poder.
 
 [Hymnus Day1 Vespera]
 v. Ó Deus, que organizando
@@ -480,9 +558,12 @@ Ao Espírito também,
 Louvor, honra e vitória
 Agora e sempre. Amém.
 
+[Feria Versum 3]
+@:Dominica Versum 3
+
 [Feria Versum 3] (feria 7)
-V. Suba a Ti, Senhor, nossa oração vespertina.
-R. E desça sobre nós a tua misericórdia.
+V. Suba até Vós, Senhor, a oração vespertina.
+R. E desça sobre nós a vossa misericórdia.
 
 [Feria2 Ant 3]
 Glorifica * minha alma ao Senhor, porque Deus pôs os olhos sobre a minha humildade.
@@ -491,21 +572,36 @@ Glorifica * minha alma ao Senhor, porque Deus pôs os olhos sobre a minha humild
 @:Feria3 Ant 3:s/em (Deus)/no Senhor $1/
 
 [Feria3 Ant 3]
-Exulte * o meu espírito em Deus meu Salvador.
+Exultou * o meu espírito em Deus, meu Salvador.
+(sed rubrica tridentina aut rubrica monastica)
+Exulte * o meu espírito em Deus, meu Salvador.
+
+[Feria3C Ant 3]
+Olhastes * para a minha humildade, Senhor, meu Deus.
 
 [Feria4 Ant 3]
 O Senhor considerou * a minha pequenez, e cumpriu em mim grandes desígnios, Aquele que é poderoso.
 
+[Feria4C Ant 3]
+Porque fez * em mim grandes coisas o Senhor, que é poderoso, e santo é o seu nome.
+
 [Feria5 Ant 3]
-Mostra, ó Deus * o poder do Teu braço: dispersa os soberbos, e exalta os humildes.
+Manifestou Deus * a força do seu braço: dispersou os soberbos nos pensamentos do seu coração.
+(sed rubrica tridentina aut rubrica monastica)
+Manifestai, ó Deus, * a força do vosso braço: dispersai os soberbos, e exaltai os humildes.
 
 [Feria6 Ant 3]
-Depôs os poderosos, * que perseguem os santos, e exaltou os humildes, que confessam a Cristo.
+Derrubou o Senhor * os poderosos do trono, e exaltou os humildes.
+(sed rubrica tridentina aut rubrica monastica)
+Derrubou os poderosos, * que perseguem os Santos: e exaltou os humildes, que confessam a Cristo.
+
+[Feria6C Ant 3]
+@:Feria7 Ant 3:s/, a fim de exaltar/: exaltou/
 
 [Feria7 Ant 3]
-Tomou sob a sua proteção * Israel seu servo, como dissera a Abraão e à sua posteridade.
+Deus tomou sob a sua protecção * Israel, seu servo, como dissera a Abraão e à sua posteridade para sempre.
 (sed rubrica tridentina aut rubrica monastica)
-Tomou sob a sua proteção * Israel seu servo, como dissera a Abraão e à sua posteridade, a fim de exaltar para sempre os humildes.
+Deus tomou sob a sua protecção * Israel, seu servo, como dissera a Abraão e à sua posteridade, a fim de exaltar para sempre os humildes.
 
 [Adv Laudes_]
 !Isa 2:3
@@ -804,17 +900,22 @@ Do mundo o preço pendeu;
 Balança foste do corpo
 Que o duro inferno venceu.
 _
-!A estrofe seguinte deve-se sempre dizer de joelhos, e a última jamais se altera.
+!A estrofe seguinte diz-se de joelhos.
 _
-Ave, ó Cruz, doce esperança,
-Concede aos réus remissão
-Por um aumento de graça
-Enquanto passa a Paixão.
+Ave, ó Cruz, única esperança,
+Na glória da exaltação,
+(sed tempore Passionis)
+Neste tempo da Paixão,
+(sed tempore Paschali)
+Na pascal exultação,
+Aos pios aumenta a graça,
+Aos réus concede o perdão.
 _
-Louvor a Ti, ó Trindade,
-À qual toda a carne vem:
-Aos que pela Cruz salvaste,
-Concede a coroa. Amém.
+Ó Trindade, fonte de salvação,
+Que todo o espírito Vos louve:
+Aos que concedeis a vitória da Cruz,
+Acrescentai o prémio.
+Amém.
 
 [Quad5 Versum 3_]
 V. Tira-me, Senhor, das mãos do homem mau.
@@ -855,6 +956,85 @@ Louvor ao que da morte
 Ressuscitado vem,
 Ao Pai e ao Paráclito
 Eternamente. Amém.
+
+[HymnusM Pasch Laudes_]
+v. Rutila a aurora da luz,
+O céu ressoa de louvores,
+O mundo, exultante, rejubila,
+O inferno, gemendo, uiva:
+_
+Quando aquele Rei fortíssimo,
+Quebradas as forças da morte,
+Calcando aos pés o tártaro,
+Livra da pena os míseros.
+_
+Aquele que, encerrado pela pedra,
+É guardado por soldados,
+Triunfando em nobre cortejo,
+Ressurge vencedor da morte.
+_
+Cessados já os gemidos
+E as dores do inferno,
+Porque ressuscitou o Senhor,
+Clama o Anjo resplandecente.
+_
+Pedimo-Vos, ó Autor de todas as coisas,
+Nesta alegria pascal,
+De todo o assalto da morte
+Defendei o vosso povo.
+_
+Glória a Vós, Senhor,
+Que ressuscitastes dos mortos,
+Com o Pai e o Espírito Santo,
+Pelos séculos eternos.
+Amém.
+
+[HymnusM Pasch LaudesOP_]
+v. Com palavras suaves, o Anjo
+Predisse às mulheres:
+Na Galileia o Senhor
+Será visto muito em breve.
+_
+Enquanto elas vão, apressadas,
+Dizer isto aos Apóstolos,
+Vendo-O vivo,
+Beijam os pés do Senhor.
+_
+Sabendo isto, os discípulos
+Vão depressa à Galileia
+Para ver o rosto
+Desejado do Senhor.
+_
+Com clara alegria pascal
+Brilha o sol sobre o mundo com o seu raio,
+Quando já os Apóstolos a Cristo
+Contemplam com os olhos do corpo.
+_
+Vendo as chagas que lhes mostra,
+Refulgentes na carne de Cristo,
+Que o Senhor ressuscitou
+Proclamam publicamente.
+_
+Ó Cristo, Rei clementíssimo,
+Possuí os nossos corações:
+Para que os louvores devidos
+Vos rendamos em todo o tempo.
+_
+Pedimo-Vos, ó Autor de todas as coisas,
+Nesta alegria pascal,
+De todo o assalto da morte
+Defendei o vosso povo.
+_
+Glória a Vós, Senhor,
+Que ressuscitastes dos mortos,
+Com o Pai e o Espírito Santo,
+Pelos séculos eternos.
+Amém.
+
+[HymnusM Pasch Laudes]
+@:HymnusM Pasch Laudes_
+(sed rubrica praedicatorum)
+@:HymnusM Pasch LaudesOP_
 
 [Pasch Versum 2_]
 V. Em tua ressurreição, ó Cristo, aleluia.

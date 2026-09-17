@@ -1,21 +1,34 @@
 [Invit]
 Dominica = Ao Senhor, que nos criou, * Vinde, adoremos.
-Feria II = Vinde, * Exultemos o Senhor.
+Feria II = Vinde, * Exultemos no Senhor.
 Feria III = Cantemos alegres a Deus, * Nosso Salvador.
 Feria IV = Ao Senhor, o grande Deus, * Vinde, adoremos.
 Feria V = Ao Senhor, o grande Rei, * Vinde, adoremos.
 Feria VI = Ao Senhor, nosso Deus, * Vinde, adoremos.
 Sabbato = Povo do Senhor e ovelhas do seu pasto: * Vinde, adoremos.
 Invit 1 = Adoremos o Senhor, * Porque Ele nos criou.
+(sed rubrica praedicatorum)
+Invit 1 = Vinde, exultemos no Senhor: * Cantemos alegres a Deus, nosso Salvador.
 
-[Invit Trid]
+[Invit Trid_]
 Dominica = Adoremos o Senhor, * Que nos criou.
-Feria II = Vinde, * Exultemos o Senhor.
+Feria II = Vinde, * Exultemos no Senhor.
 Feria III = Cantemos alegres a Deus, * Nosso Salvador.
 Feria IV = Na vossa mão, Senhor, * Estão todos os confins da terra.
 Feria V = Ao Senhor, que nos criou, * Vinde, adoremos.
 Feria VI = Adoremos o Senhor, * Porque Ele nos criou.
 Sabbato = Ao Senhor, nosso Deus, * Vinde, adoremos.
+
+[Invit TridC]
+@:Invit Trid_:1-4
+@:Invit Trid_:6:s/VI =/V =/
+@:Invit Trid_:5:s/V =/VI =/
+@:Invit Trid_:7
+
+[Invit Trid]
+@:Invit Trid_
+(sed rubrica cisterciensis)
+@:Invit TridC
 
 [Invit Adv]
 Ao Senhor, o Rei que há-de vir, * Vinde, adoremos.
@@ -29,8 +42,16 @@ Não vos seja em vão levantar-vos de manhã antes da luz: * Porque o Senhor pro
 [Invit Quad5_]
 Hoje, se ouvirdes a voz do Senhor, * Não endureçais os vossos corações.
 
-[Invit Pasch]
+[Invit Quad5 OP]
+Adoremos o Senhor, * Que nos remiu pela Cruz.
+
+[Invit Pasch_]
 Ressuscitou verdadeiramente o Senhor, * Aleluia.
+
+[Invit Pasch]
+@:Invit Pasch_
+(sed rubrica praedicatorum aut rubrica cisterciensis)
+Aleluia, aleluia, * Aleluia.
 
 [Day0 Hymnus]
 v. Levantando-nos de noite, vigiemos todos,
@@ -50,7 +71,54 @@ Por todo o mundo.
 Amém.
 
 [Day0 Hymnus1M]
-@:Day0 Hymnus1
+v. No primeiro de todos os dias,
+Em que o mundo foi criado,
+Ou em que o Criador, ressurgindo,
+Vencida a morte, nos liberta.
+_
+Afastados para longe os torpores,
+Levantemo-nos todos prontamente,
+E de noite busquemos o Deus piedoso,
+Como sabemos que fez o Profeta.
+_
+Para que Ele ouça as nossas preces
+E estenda a sua dextra,
+E, purificados das imundícies,
+Nos restitua às moradas dos céus.
+_
+Para que a nós, que no sacratíssimo
+Tempo deste dia
+Salmodiamos nas horas do repouso,
+Nos recompense com dons bem-aventurados.
+_
+Já agora, ó claridade paterna,
+Com instância Vos suplicamos:
+Afaste-se a luxúria que mancha,
+E toda a acção nociva.
+_
+Que não seja imunda nem lasciva
+A compleição do nosso corpo,
+Pela qual, nos fogos do Averno,
+Nós mesmos ardamos mais cruelmente.
+_
+Por isso, ó Redentor, Vos pedimos
+Que laveis as nossas torpezas,
+E os bens da vida perene
+Benignamente nos concedais.
+_
+Para que, exilados das obras da carne,
+Tornados nós mesmos castos,
+Enquanto, prostrados, esperamos,
+Cantemos o cântico da glória.
+_
+* Concedei-o, ó Pai piíssimo,
+E Vós, Unigénito igual ao Pai,
+Que com o Espírito Paráclito
+Reinais por todos os séculos.
+Amém.
+
+[Day0 Hymnus1M] (rubrica cisterciensis)
+@Psalterium/Special/Major Special:HymnusM Day0 Laudes hiemalis_
 
 [Day0 Hymnus1]
 v. No primeiro dia, em que a Trindade
@@ -230,7 +298,31 @@ Reinais por todos os séculos.
 Amém.
 
 [Day6 HymnusM]
-@:Day6 Hymnus
+v. Ó Deus de suma clemência,
+E Criador da máquina do mundo,
+Uno em poder,
+E Trino nas Pessoas:
+_
+Piedoso, com os nossos cânticos
+Recebei benignamente as nossas lágrimas:
+Para que, com o coração puro de manchas,
+Mais plenamente gozemos de Vós.
+_
+Os lombos e o fígado enfermo
+Abrasai com fogo conveniente,
+Para que estejam sempre cingidos,
+Afastada a péssima luxúria.
+_
+Para que nós, que as horas da noite
+Agora rompemos cantando,
+Com os dons da pátria bem-aventurada
+Sejamos todos abundantemente enriquecidos.
+_
+* Concedei-o, ó Pai piíssimo,
+E Vós, Unigénito igual ao Pai,
+Que com o Espírito Paráclito
+Reinais por todos os séculos.
+Amém.
 
 [Day6 Hymnus]
 v. Pai de suma clemência,
@@ -260,7 +352,31 @@ Reinais por todos os séculos.
 Amém.
 
 [HymnusM Adv]
-@:Hymnus Adv
+v. Ó Verbo do alto, que procedeis,
+Que outrora saístes do Pai,
+E, nascido, socorreis o mundo
+No curso declinante do tempo.
+_
+Iluminai agora os corações,
+E abrasai-os com o vosso amor;
+Para que, ouvido o anúncio,
+Seja enfim expulso o que é lúbrico.
+_
+E quando depois vierdes como Juiz
+Perscrutar os actos do coração,
+Dando a retribuição pelo que está oculto,
+E aos justos o reino pelas boas obras,
+_
+Não sejamos enfim oprimidos pelos males
+Segundo a qualidade do crime;
+Mas, participantes com os bem-aventurados,
+Sejamos para sempre celestes.
+_
+Louvor, honra, poder, glória
+A Deus Pai e ao Filho,
+E juntamente ao Santo Paráclito,
+Pelos séculos dos séculos.
+Amém.
 
 [Hymnus Adv]
 v. Ó Verbo do alto, que procedeis
@@ -287,6 +403,68 @@ _
 E a Vós, ó Espírito Santo,
 Como foi, seja perpetuamente,
 Por todos os séculos, a glória.
+Amém.
+
+[HymnusM Quad]
+@:Hymnus Quad:s/o que é nocivo/o que é péssimo/ 1-20
+@:Hymnus Quad:s/prostrados:/prostrados,/ 24
+@:Hymnus Quad:s/com voz suplicante/também cada um/ 23
+@:Hymnus Quad:22
+@:Hymnus Quad:s/vingadora,/vingadora:/ 21
+@:Hymnus Quad:25-45
+
+[HymnusM Quad] (rubrica Praedicatorum)
+Ó Dispensador do supremo prémio,
+Que sois a única esperança do mundo,
+Atendei às preces dos servos
+Que devotamente clamam a Vós.
+_
+A nossa consciência
+Mostra que Vos ofendeu gravemente:
+Pedimo-Vos que a purifiqueis
+De todos os pecados.
+_
+Se recusais, quem o concederá?
+Perdoai, porque sois poderoso:
+Que Vos roguemos com coração puro,
+Concedei-nos, Senhor, Vos pedimos.
+_
+Aceitai, pois, agora o nosso jejum,
+Vós que o consagrastes:
+Pelo qual misticamente
+Recebamos os sacramentos pascais.
+_
+Conceda-nos isto a suma
+Trindade na Divindade:
+Na qual é glorificado um só
+Deus por todos os séculos.
+Amém.
+
+[HymnusM Quad] (rubrica cisterciensis)
+Ó Dispensador do supremo prémio,
+Única esperança do mundo perdido:
+Atendei às preces dos servos
+Que choram a vossos pés.
+_
+A nossa consciência, diante de Vós,
+Acusa-nos de graves culpas:
+Pedimo-Vos que a purifiqueis
+De todos os pecados.
+_
+Se recusais, quem o concederá?
+Perdoai, porque sois benigno:
+Se Vos rogamos com coração piedoso,
+Certamente o deveis pela vossa promessa.
+_
+Aceitai, pois, o místico
+Jejum que consagrastes:
+Para que dignamente
+Recebamos os sacramentos pascais.
+_
+Conceda-nos isto a suma
+Trindade na Divindade:
+Na qual é glorificado um só
+Deus por todos os séculos.
 Amém.
 
 [Hymnus Quad]
@@ -337,7 +515,14 @@ Os dons dos jejuns.
 Amém.
 
 [HymnusM Quad5]
-@:Hymnus Quad5
+@:Hymnus Quad5:s/a láurea/a batalha/ s/Se precipitou na morte/Caiu na morte/ s/E as mãos e os pés de Deus/E as mãos, os pés e as pernas/ s/Sempiterna.*//s
+Glória e honra a Deus,
+Em tudo Altíssimo,
+Uma só ao Pai e ao Filho,
+E ao ínclito Paráclito:
+A quem pertencem o louvor e o poder
+Pelos séculos eternos.
+Amém.
 
 [Hymnus Quad5]
 v. Canta, ó língua, a láurea
@@ -384,13 +569,54 @@ Louve o universo inteiro.
 Amém.
 
 [HymnusM Pasch]
-@:Hymnus Pasch:1-15
+v. Ó Rei eterno, Senhor,
+Criador de todas as coisas,
+Que éreis antes dos séculos
+Sempre Filho com o Pai:
+_
+Vós que, no princípio do mundo,
+Formastes o homem Adão:
+A quem destes um rosto
+Semelhante à vossa imagem.
+_
+A quem o diabo enganara,
+O inimigo do género humano,
+Cuja forma corporal
+Vos dignastes assumir:
+_
 Para redimirdes o homem,
 Que já antes havíeis formado:
 E nos unirdes a Deus,
 Pela comunhão da carne.
-@:Hymnus Pasch:15-35
-@Psalterium/Doxologies:PaschT
+_
+Perante quem, nascido da Virgem,
+Treme toda a alma:
+Por quem também nós, com mente devota,
+Cremos que havemos de ressurgir.
+_
+Vós que no Baptismo
+Nos destes o perdão,
+A nós que éramos retidos,
+Atados pelas cadeias da consciência.
+_
+Vós que a Cruz, pelo homem,
+Vos dignastes tomar:
+Destes o vosso sangue,
+Preço da nossa salvação.
+_
+Pedimo-Vos, ó Autor de todas as coisas,
+Nesta alegria pascal,
+De todo o assalto da morte
+Defendei o vosso povo.
+_
+Glória a Vós, Senhor,
+Que ressuscitastes dos mortos,
+Com o Pai e o Espírito Santo,
+Pelos séculos eternos.
+Amém.
+
+[HymnusM Pasch] (rubrica praedicatorum)
+@Psalterium/Special/Major Special:HymnusM Pasch Laudes_
 
 [Hymnus Pasch]
 v. Ó Rei eterno dos habitantes do céu,
@@ -434,12 +660,46 @@ Ressuscitou, e ao Paráclito,
 Pelos séculos sempiternos.
 Amém.
 
+[HymnusM Pasch] (rubrica cisterciensis)
+v. Que o coro da nova Jerusalém
+Entoe a nova doçura do canto,
+Celebrando com sóbrias alegrias
+A festa pascal,
+_
+Na qual Cristo, Leão invencível,
+Ressurgindo, esmagado o dragão,
+Enquanto clama com voz viva,
+Desperta da morte os defuntos.
+_
+A presa que devorara
+Restituiu o ímpio tártaro:
+Livres do cativeiro,
+Seguem a Jesus as multidões.
+_
+Ele triunfa esplendidamente,
+E, digno de grandeza,
+Da terra e do céu a pátria
+Faz uma só república.
+_
+A Ele, o Rei, cantando, súplices,
+Roguemos nós, seus soldados,
+Que no seu claríssimo
+Palácio nos dê lugar.
+_
+Pelos séculos que não conhecem fim,
+Ao Pai supremo seja a glória,
+E a honra, com o Filho
+E o Espírito Paráclito.
+Amém.
+
 [MM LB Pasch]
 !Osea 6:1-3
 v. Vinde e convertamo-nos ao Senhor, pois Ele mesmo nos tomou, e nos sarará; ferirá, e nos curará. Depois de dois dias nos dará a vida; ao terceiro dia nos ressuscitará e viveremos na sua presença. Conheceremos e seguiremos, a fim de conhecermos o Senhor.
 $Tu autem
 _
 @Psalterium/Special/Minor Special:Responsory breve Pasch Nona
+(sed rubrica cisterciensis)
+@Psalterium/Special/Minor Special:Responsory breve Pasch TertiaOP_
 
 [MM LB1]
 !Lam 2:19
@@ -453,7 +713,7 @@ R. A toda a hora.
 &Gloria
 R. Bendirei o Senhor * A toda a hora.
 
-[MM LB2]
+[MM LB2_]
 !Prov 3:19-20
 v. O Senhor fundou a terra com a sabedoria: estabeleceu os céus com a prudência. Pela sua sabedoria brotaram os abismos, e as nuvens se adensam com o orvalho.
 $Tu autem
@@ -465,7 +725,19 @@ R. Salvai-me.
 &Gloria
 R. Ó Deus, por vosso nome * Salvai-me.
 
-[MM LB3]
+[MM LB2C]
+@:MM LB2_:1-4
+R.br. Tende piedade de mim, ó Deus, * Tende piedade de mim.
+R. Tende piedade de mim, ó Deus, * Tende piedade de mim.
+V. Porque em Vós confia a minha alma.
+R. Tende piedade de mim.
+
+[MM LB2]
+@:MM LB2_
+(sed rubrica cisterciensis)
+@:MM LB2C
+
+[MM LB3_]
 !Sap 1:1-2
 v. Amai a justiça, vós que julgais a terra. Pensai do Senhor com bondade, e buscai-O na simplicidade do coração: porque é encontrado pelos que O não tentam, e aparece aos que têm fé n’Ele.
 $Tu autem
@@ -477,17 +749,41 @@ R. Não seja jamais confundido.
 &Gloria
 R. Em Vós, ó Senhor, tenho esperado: * Não seja jamais confundido.
 
-[MM LB4]
+[MM LB3C]
+@:MM LB3_:1-4
+R.br. Deus é admirável * Nos seus santos.
+R. Deus é admirável * Nos seus santos.
+V. Ele mesmo dará poder e fortaleza ao seu povo.
+R. Nos seus santos.
+
+[MM LB3]
+@:MM LB3_
+(sed rubrica cisterciensis)
+@:MM LB3C
+
+[MM LB4_]
 !Sap 3:9
 v. Os que confiam n’Ele compreenderão a verdade, e os fiéis no amor repousarão n’Ele: porque o dom e a paz são para os seus eleitos.
 $Tu autem
 _
-R.br. Exultai-vos louvando a Deus, * Nosso protector.
-R. Exultai-vos louvando a Deus, * Nosso protector.
+R.br. Exultai louvando a Deus, * Nosso protector.
+R. Exultai louvando a Deus, * Nosso protector.
 V. Cantai com alegria ao Deus de Jacob.
 R. Nosso protector.
 &Gloria
-R. Exultai-vos louvando a Deus, * Nosso protector.
+R. Exultai louvando a Deus, * Nosso protector.
+
+[MM LB4C]
+@:MM LB4_:1-4
+R.br. Nós Vos louvaremos, ó Deus, * Nós Vos louvaremos.
+R. Nós Vos louvaremos, ó Deus, * Nós Vos louvaremos.
+V. E invocaremos o vosso nome.
+R. Nós Vos louvaremos.
+
+[MM LB4]
+@:MM LB4_
+(sed rubrica cisterciensis)
+@:MM LB4C
 
 [MM LB5]
 !Sap 1:6-7
@@ -501,7 +797,7 @@ R. Cantarei eternamente.
 &Gloria
 R. As vossas misericórdias, Senhor, * Cantarei eternamente.
 
-[MM LB6]
+[MM LB6_]
 !Eccli 12:2-3
 v. Faz bem ao justo, e acharás grande recompensa: e, se não for dele, certamente será do Senhor. Porque não vai bem àquele que é assíduo no mal e que não dá esmolas: porque também o Altíssimo odeia os pecadores, e compadece-se dos penitentes.
 $Tu autem
@@ -513,13 +809,50 @@ R. Ouvi a minha oração.
 &Gloria
 R. Senhor, * Ouvi a minha oração.
 
-[MM Capitulum]
+[MM LB6C]
+@:MM LB6_:1-4
+R.br. A misericórdia do Senhor * Sobre os que O temem.
+R. A misericórdia do Senhor * Sobre os que O temem.
+V. Desde a eternidade e até à eternidade.
+R. Sobre os que O temem.
+
+[MM LB6]
+@:MM LB6_
+(sed rubrica cisterciensis)
+@:MM LB6C
+
+[MM Capitulum_]
 !1 Cor 16:13-14
 v. Vigiai, permanecei firmes na fé, portai-vos virilmente e fortalecei-vos. Tudo o que fazeis seja feito na caridade.
 $Deo gratias
 _
 V. Bem-aventurados os que moram na vossa casa, Senhor.
 R. Pelos séculos dos séculos Vos louvarão.
+
+[Nocturn 2 Versum Feria6]
+V. O Senhor é grande em Sião.
+R. E está elevado sobre todos os povos.
+
+[Nocturn 2 Versum Sabbato]
+V. Enviou a sua palavra e sarou-os.
+R. E livrou-os da destruição.
+
+[MM Capitulum]
+@:MM Capitulum_
+
+[MM Capitulum] (rubrica cisterciensis)
+@:MM Capitulum_:1-4
+@Psalterium/Special/Minor Special:Versum Dominica Tertia
+(sed feria 3)
+@Psalterium/Psalmi/Psalmi matutinum:Daya3:7-8
+(sed feria 4)
+@Psalterium/Psalmi/Psalmi matutinum:Daya4:7-8
+(sed feria 5)
+@Tempora/Epi1-0:Versum 1
+(sed feria 6)
+@:Nocturn 2 Versum Feria6
+(sed feria 7)
+@:Nocturn 2 Versum Sabbato
 
 [MM Capitulum Adv_]
 !Titus 2:12-13
@@ -542,8 +875,11 @@ R. A salvação do nosso Deus, aleluia.
 v. Os teus filhos virão de longe e as tuas filhas surgirão ao teu lado. Então verás e estarás na abundância; o teu coração admirar-se-á e dilatar-se-á, quando a multidão do mar se converter a ti e a força das nações vier a ti.
 $Deo gratias
 _
+(nisi rubrica cisterciensis)
 V. Três são os dons que os Magos ofereceram ao Senhor.
 R. Ouro, incenso e mirra.
+(sed rubrica cisterciensis)
+@Sancti/01-06:Versum 1_
 
 [MM Capitulum Quad]
 !Isa 1:16-18
@@ -577,4 +913,8 @@ v. Porque fomos sepultados com Ele pelo baptismo na morte, a fim de que, assim c
 $Deo gratias
 _
 V. Ressuscitou o Senhor, aleluia.
+(sed rubrica cisterciensis)
+@Psalterium/Special/Minor Special:Versum Pasch Tertia:1
 R. Como vos disse, aleluia.
+(sed rubrica cisterciensis)
+@Psalterium/Special/Minor Special:Versum Pasch Tertia:2

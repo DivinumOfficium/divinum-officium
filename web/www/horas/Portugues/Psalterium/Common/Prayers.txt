@@ -22,7 +22,7 @@ V. O nosso auxílio está + no nome do Senhor,
 R. Que fez o céu e a terra.
 
 [Converte nos]
-V. Converte-nos, +++ ó Deus, nosso salvador:
+V. Convertei-nos, +++ ó Deus, nosso salvador:
 R. E afastai de nós a vossa indignação.
 
 [Dominus det]
@@ -35,10 +35,15 @@ R. Como era no princípio, agora e sempre, * e por todos os séculos dos século
 
 [Gloria1]
 V. Glória ao Pai, e ao Filho, * e ao Espírito Santo.
+(sed rubrica cisterciensis)
+V. Glória ao Pai, e ao Filho, <FONT COLOR=red>*</FONT> e ao Espírito Santo.
 
 [Requiem]
 V. Dai-lhes, Senhor, * o eterno descanso.
 R. E a luz perpétua * lhes brilhe.
+
+[Requiem] (rubrica cisterciensis)
+V. Dai-lhes, Senhor, o eterno descanso, * e a luz perpétua lhes brilhe.
 
 [Alleluia]
 v. Aleluia.
@@ -53,6 +58,9 @@ R. E que o meu clamor chegue até Vós.
 
 [Confiteor_]
 v. Eu me confesso a Deus, todo-poderoso, à bem-aventurada sempre Virgem Maria, ao bem-aventurado S. Miguel Arcanjo, ao bem-aventurado S. João Baptista, aos Santos Apóstolos S. Pedro e S. Paulo, e a todos os santos: que pequei muitas vezes por pensamentos, palavras e obras: /:bate no próprio peito:/ por minha culpa, por minha culpa, por minha tão grande culpa. Portanto rogo à bem-aventurada sempre Virgem Maria, ao bem-aventurado S. Miguel Arcanjo, ao bem-aventurado S. João Baptista, aos Santos Apóstolos S. Pedro e S. Paulo, e a todos os Santos, que rogueis a Deus, Nosso Senhor, por mim.
+
+[Confiteor]
+@:Confiteor_
 
 [Confiteor] (rubrica Monastica)
 @:Confiteor_:s/Paulo,/Paulo, ao bem-aventurado S. Bento, nosso Pai,/g
@@ -177,7 +185,7 @@ _
 /:e em silêncio:/ Pai nosso. /:e o:/ Ave Maria.
 
 [Conclmart]
-V. And elsewhere many other holy martyrs, confessors, and holy virgins.
+V. E noutros lugares, de muitos outros santos Mártires e Confessores, e de santas Virgens.
 $Deo gratias.
 
 [Pretiosa]
@@ -189,12 +197,12 @@ $Amen
 [DefunctV]
 &Dominus_vobiscum
 &Benedicamus_Domino
-! After Vespers of the day, %Vespers of the Dead% are said.
+! Depois das Vésperas do dia, dizem-se as %Vésperas dos Defuntos%.
 
 [DefunctM]
 &Dominus_vobiscum
 &Benedicamus_Domino
-! After Lauds of the day, %Matins and Lauds of the Dead% are said.
+! Depois das Laudes do dia, dizem-se as %Matinas e Laudes dos Defuntos%.
 
 [Oremus]
 v. Oremos.
@@ -208,7 +216,9 @@ v. Senhor, tende piedade de nós. Cristo, tende piedade de nós. Senhor, tende p
 [Divinum auxilium]
 (rubrica 1963)/:Se se houver de sair do coro, conclui-se dizendo::/
 O auxílio divino + permaneça sempre connosco.
-E com nossos irmãos ausentes. Amém.
+E com os nossos irmãos ausentes. Amém.
+(sed rubrica cisterciensis)
+E com os nossos irmãos ausentes.
 
 [Alleluia Simplex]
 , aleluia.
@@ -246,14 +256,17 @@ V. Abençoai-nos.
 R. Deus.
 
 [commemoratio omnium_]
-R.br. Commemoration of all brothers, friends of our Order, and our benefactors.
+R.br. Comemoração de todos os irmãos e familiares da nossa Ordem, e dos nossos benfeitores.
+
+[commemoratio omnium_C]
+/:Depois diz o Leitor::/ Comemoração de todos os irmãos, familiares e benfeitores defuntos da nossa Ordem.
 
 [Requiescant]
 V. Descansem em paz.
 R. Amém.
 
 [deus veniae_]
-v. O God the giver of pardon, and the lover of human salvation, we beseech thy clemency: that thou grant the brethren of our congregation, kinsfolk, and benefactors, which are departed out of this world, blessed Mary ever Virgin making intercession with all the saints, to come to the fellowship of eternal blessedness.
+v. Ó Deus, que perdoais aos pecadores e desejais a salvação dos homens, imploramos a vossa clemência: que, por intercessão da bem-aventurada Maria, sempre Virgem, e de todos os vossos Santos, concedais aos irmãos da nossa congregação, parentes e benfeitores, que saíram deste mundo, chegar à comunhão da eterna bem-aventurança.
 
 [oratio_Domine]
 v. Senhor, Deus omnipotente, que nos fizeste chegar ao começo deste dia, salva-nos hoje com o teu poder, a fim de que não tombemos em nenhum pecado, mas sempre por pensamentos, palavras e obras observemos a tua justiça.
