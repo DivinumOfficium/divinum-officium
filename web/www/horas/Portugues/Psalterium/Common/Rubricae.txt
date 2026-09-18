@@ -1,5 +1,5 @@
 [Pater secreto]
-/:«Pai Nosso» é dito silenciosamente até «E não nos deixeis cair em tentação: »:/
+/:«Pai Nosso» é dito silenciosamente até «E não nos deixeis cair em tentação:»:/
 
 
 [Credo secreto]
@@ -11,8 +11,16 @@
 [Pater post V_]
 /:E se assim o Ofício termina, apenas «Pai Nosso» é dito silenciosamente.:/
 
+[Ant Maria post]
+/:Se se houver de sair do Coro: recitado este, acrescenta-se «Que o Senhor nos dê» e diz-se imediatamente uma das Antífonas finais da Bem-aventurada Virgem Maria, com o seu Versículo e Oração. <i>(como nas Laudes)</i>:/
+
 [Secreto_]
 /:silenciosamente:/
+
+[Secreto_C]
+/:No Coro, terminado o Ofício Parvo de Nossa Senhora, diz-se silenciosamente::/
+(sed die Tridui Sacri)
+/:Terminado em particular o Ofício Parvo de Nossa Senhora, no Coro diz-se silenciosamente::/
 
 [Secreto a Laudibus]
 /:Se Matinas e Laudes são separadas, então é dito silenciosamente::/
@@ -41,13 +49,26 @@
 /:Depois disso é dito silenciosamente:/
 
 [PAC ad Completorium]
-/:Se logo após as Completas são rezadas as Matinas, então «Pai Nosso, Ave Maria» e «Credo,» são rezadas duas vezes, uma vez para o final do Ofício do dia anterior, e para o início do Ofício de nas próximas.:/
+/:Se logo após as Completas se seguirem as Matinas, então «Pai Nosso, Ave Maria» e «Credo» dizem-se duas vezes: uma pelo fim do Ofício do dia precedente, e outra pelo início do Ofício do dia seguinte.:/
+
+[DefunctV]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! Depois das Vésperas do dia, dizem-se as %Vésperas dos Defuntos%.
+
+[DefunctM]
+&Dominus_vobiscum
+&Benedicamus_Domino
+! Depois das Laudes do dia, dizem-se as %Matinas e Laudes dos Defuntos%.
 
 [Martyrologium] (rubrica monastica)
 /:Então o Martirológio é lido em côro.:/
 
 [Regula] (rubrica monastica)
 /:Mesmo fora do Côro, é louvável ler a Regra Santa; de outro modo, uma Leitura Breve é rezada:/
+
+[Regula ante] (rubrica cisterciensis)
+/:Na Sala do Capítulo lê-se um capítulo, ou parte de um capítulo, da Regra de S. Bento.:/
 
 [examen]
 /:Segue-se um exame de consciência, ou um Pai Nosso em silêncio.:/
@@ -57,3 +78,12 @@
 
 [Preces flexis genibus]
 /:de joelhos:/
+
+[Antiphona]
+/:entoa-se somente quando o Ofício é cantado:/
+
+[Jube]
+/:Fora do Coro, quando o Ofício é recitado por uma só pessoa, diz-se: «Dignai-Vos, Senhor, dar a bênção»; e acrescenta-se a Bênção correspondente.:/
+
+[NonaAdjuncta]
+/:A nona leitura do Ofício ou se omite ou se junta à oitava leitura.:/
