@@ -4,8 +4,73 @@ Sanctæ Mariæ Sabbato
 [Missa]
 Salve Sancta Parens (a Trinitate usque ad Adventum)
 
+[Hymnus Vespera]
+@Commune/C11
+
+[Versum 1]
+@Commune/C6:Versum 2
+(sed commune C6)
+@:Versum 2
+
+[Ant 1_]
+Bem-aventurada Mãe * e Virgem intacta, gloriosa Rainha do mundo, intercedei por nós junto do Senhor.
+
+[Ant 1_Pasch]
+Rainha do céu, * alegrai-vos, aleluia; porque Aquele que merecestes trazer em vosso seio, aleluia, ressuscitou, como disse, aleluia: rogai a Deus por nós, aleluia.
+
+[Ant 1]
+@:Ant 1_
+(sed tempore paschali)
+@:Ant 1_Pasch
+
+[Invit]
+Ave, Maria, cheia de graça, * o Senhor é convosco.
+
 [Benedictio]
 Pelas preces e méritos da bem-aventurada sempre Virgem Maria e de todos os Santos, nos conduza o Senhor ao reino dos céus.
 Com o seu santo Filho nos abençoe a Virgem Maria.
 A santa Virgem das virgens interceda por nós junto do Senhor.
 Pela Virgem Mãe nos conceda o Senhor a salvação e a paz.
+
+[Ant Laudes] (rubrica tridentina)
+@Commune/C11
+
+[Capitulum Laudes]
+@Commune/C11
+
+[Hymnus Laudes]
+@Commune/C11
+
+[HymnusM Laudes]
+@Commune/C11
+
+[Versum 2]
+V. Bendita sois vós entre as mulheres.
+R. E bendito é o fruto do vosso ventre.
+
+[Ant 2_]
+Bem-aventurada Mãe de Deus, Maria, * Virgem perpétua, templo do Senhor, sacrário do Espírito Santo, só vós, sem exemplo, agradastes a nosso Senhor Jesus Cristo: rogai pelo povo, intervinde pelo clero, intercedei pelo devoto sexo feminino.
+
+[Ant 2]
+@:Ant 2_
+(sed tempore paschali)
+@:Ant 1_Pasch
+
+[Lectio Prima]
+@Commune/C11
+
+[Capitulum Sexta]
+@Commune/C11
+
+[Responsory Breve Sexta]
+@Commune/C6
+
+[Versum Sexta]
+@Commune/C6:Nocturn 3 Versum
+
+[Capitulum Nona]
+@Commune/C11:Lectio Prima
+$Deo gratias
+
+[Responsory Breve Nona]
+@Commune/C6

@@ -1,9 +1,77 @@
 [Missa]
 Salve Sancta Parens
 
+[Ant Vespera]
+@Commune/C7::1
+@:Ant VesperaBMV:1
+@Commune/C6:Ant Matutinum:7 s/95/121/
+@Commune/C7::3 s/121/126/
+@:Ant VesperaBMV:2
+
+[Ant VesperaBMV]
+A sua mão esquerda * está debaixo da minha cabeça, e a sua direita abraçar-me-á.;;112
+Formosa * vos tornastes, e suave nas vossas delícias, ó santa Mãe de Deus.;;147
+
+[Hymnus Vespera]
+/:A primeira estrofe do hino seguinte diz-se de joelhos.:/
+v. Ave, estrela do mar,
+Mãe benigna de Deus,
+E sempre Virgem,
+Feliz porta do céu.
+_
+Recebendo aquele Ave
+Da boca de Gabriel,
+Firmai-nos na paz,
+Mudando o nome de Eva.
+_
+Soltai as cadeias aos culpados,
+Dai luz aos cegos,
+Afastai os nossos males,
+Pedi para nós todos os bens.
+_
+Mostrai que sois Mãe:
+Receba por vós as nossas preces
+Aquele que, nascido por nós,
+Quis ser vosso Filho.
+_
+Virgem singular,
+Mansa entre todas,
+A nós, livres das culpas,
+Fazei-nos mansos e castos.
+_
+Concedei-nos uma vida pura,
+Preparai-nos um caminho seguro,
+Para que, vendo Jesus,
+Nos alegremos sempre convosco.
+_
+Louvor seja a Deus Pai,
+Glória a Cristo Altíssimo
+E ao Espírito Santo:
+Aos Três uma só honra.
+Amém.
+
+[HymnusM Vespera]
+@:Hymnus Vespera
+
+[Versum 1]
+V. Permiti que eu vos louve, ó Virgem sagrada.
+R. Dai-me força contra os vossos inimigos.
+
+[Ant 1]
+Santa Maria, * socorrei os miseráveis, ajudai os pusilânimes, reanimai os que choram, rogai pelo povo, intervinde pelo clero, intercedei pelo devoto sexo feminino: sintam o vosso auxílio todos os que celebram a vossa santa festividade.
+
 [Oratio]
 Concedei aos vossos servos, Senhor Deus, Vos suplicamos, o gozo da perpétua saúde da alma e do corpo, e que pela gloriosa intercessão da B. Maria, sempre Virgem, sejamos livres das tristezas dos tempos presentes e alcancemos o gozo da eterna alegria.
 $Per Dominum
+
+[Nocturn 1 Versum]
+@Commune/C6:Versum 1
+
+[Nocturn 2 Versum]
+@Commune/C6
+
+[Nocturn 3 Versum]
+@Commune/C6
 
 [Introitus]
 ! Sedulius
@@ -67,3 +135,93 @@ $Per Dominum
 [Versum 0]
 V. Rogai por nós, santa Mãe de Deus.
 R. Para que sejamos dignos das promessas de Cristo.
+
+[Ant Laudes]
+@Commune/C7:Ant Vespera:1 s/;;.*//g
+@:Ant VesperaBMV:1 s/;;.*//g
+@Commune/C6:Ant Matutinum:7 s/;;.*//
+@Commune/C7:Ant Vespera:3 s/;;.*//
+@:Ant VesperaBMV:2 s/;;.*//
+
+[Capitulum Laudes]
+!Sir 24:14
+v. Fui criada desde o princípio, antes de todos os séculos, e não deixarei de existir até ao século futuro, e na morada santa exerci perante Ele o meu ministério.
+$Deo gratias.
+
+[Hymnus Laudes]
+v. Ó gloriosa entre as virgens,
+Sublime entre os astros,
+Aquele que vos criou, pequenino,
+Nutris com o leite do vosso seio.
+_
+O que a triste Eva nos tirou,
+Vós o restituís pelo vosso bendito Fruto;
+Para que entrem nos astros os que choram,
+Abris as portas do céu.
+_
+Vós sois a porta do excelso Rei
+E a morada fulgente da luz:
+A vida dada pela Virgem,
+Aplaudi-a, ó povos redimidos.
+_
+* Ó Jesus, a Vós seja a glória,
+Que nascestes da Virgem,
+Com o Pai e o almo Espírito,
+Pelos séculos eternos.
+Amém.
+
+[HymnusM Laudes]
+v. Ó gloriosa Senhora,
+Excelsa acima dos astros:
+Aquele que vos criou, providente,
+Amamentastes ao sagrado peito.
+_
+O que a triste Eva nos tirou,
+Vós o restituís pelo vosso bendito Fruto;
+Para que entrem nos astros os que choram,
+Fostes feita a janela do céu.
+_
+Vós sois a porta do excelso Rei,
+E a entrada fulgente da luz:
+A vida dada pela Virgem,
+Aplaudi-a, ó povos redimidos.
+_
+Glória a Vós, Senhor,
+Que nascestes da Virgem,
+Com o Pai e o Espírito Santo,
+Pelos séculos eternos.
+Amém.
+
+[Ant 2]
+Bem-aventurada sois, * ó Maria, que acreditastes: cumprir-se-ão em vós as coisas que vos foram ditas da parte do Senhor, aleluia.
+
+[Lectio Prima]
+!Sir 24:19-20
+v. Nas praças, como o cinamomo e o bálsamo aromático, exalei perfume: como mirra escolhida, espalhei um odor suave.
+
+[Capitulum Sexta]
+!Sir 24:15-16
+v. E assim fui firmada em Sião, e repousei igualmente na cidade santificada, e em Jerusalém está o meu poder. E arraiguei-me num povo glorioso, e na porção do meu Deus, que é a sua herança, e a minha morada é na assembleia plena dos santos.
+$Deo gratias.
+
+[Responsory Breve Sexta]
+@Commune/C6
+
+[Capitulum Nona]
+@:Lectio Prima
+$Deo gratias
+
+[Responsory Breve Nona]
+@Commune/C6
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+Todas as gerações * me chamarão bem-aventurada, porque Deus pôs os olhos na sua humilde escrava.
+
+[Ant 43] (rubrica Ordo Praedicatorum)
+De coração e de alma cantemos glória a Cristo, nesta sagrada solenidade da excelsa Mãe de Deus, Maria.
+
+[Ant 44] (rubrica Ordo Praedicatorum)
+@:Ant 43

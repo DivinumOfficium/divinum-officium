@@ -1,12 +1,34 @@
 [Officium]
 Commune Plurium Virginum Martyrum
 
+[Versum 1]
+V. Após ela as virgens serão apresentadas ao Rei.
+R. As suas companheiras ser-Vos-ão conduzidas.
+
+[Ant 1]
+Virgens prudentes, * preparai as vossas lâmpadas: eis que chega o esposo, saí ao seu encontro.
+
 [Comment]
 # 25 – 2 Virgens Mártires – Me Exspectaverunt
 
 [Oratio]
 Senhor, nosso Deus, dignai-Vos conceder-nos a graça de incessantemente venerarmos com devoção a vitória das vossas Santas Virgens e Mártires N. e N., a fim de que, já que não podemos celebrar dignamente os seus méritos, ao menos possamos oferecer-lhes as nossas humildes homenagens.
 $Per Dominum
+
+[Nocturn 1 Versum]
+@Commune/C6:Versum 1
+
+[Versum 2]
+@:Versum 1
+
+[Ant 2]
+@:Ant 1
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+@:Ant 1
 
 [Secreta]
 Senhor, dignai-Vos volver os vossos olhares para estas ofertas, que depositamos nos vossos altares para celebrar a festa das vossas Santas Virgens e Mártires N. e N., a fim de que, assim como lhes concedestes a glória, assim nos concedais o perdão dos nossos pecados.
