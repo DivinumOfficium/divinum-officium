@@ -34,18 +34,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python3 \
     && rm -rf /var/lib/apt/lists/*
 
-# 2. Plack Stack — pin Plack to 1.0050 which reverts the breaking return_405 change
-# Cpanel::JSON::XS pinned to 4.51 and installed FIRST: the 4.52 upload on CPAN is
-# corrupted/truncated (see https://github.com/rurban/Cpanel-JSON-XS/issues/257),
-# so it must already be satisfied before Plack's dependency chain reaches it
-RUN cpanm --notest \
-    RURBAN/Cpanel-JSON-XS-4.51.tar.gz \
-    MIYAGAWA/Plack-1.0050.tar.gz \
-    Starman \
-    Plack::App::CGIBin \
-    CGI::Compile \
-    CGI::Emulate::PSGI \
-    CGI::Session
+# 2. Plack stack from cpanfile
+COPY cpanfile /tmp/cpanfile
+RUN cpanm --notest App::cpm && \
+    cpm install -g --cpanfile /tmp/cpanfile
 
 WORKDIR /var/www
 
