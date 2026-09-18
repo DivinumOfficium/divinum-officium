@@ -24,3 +24,7 @@ web/cgi-bin/DivinumOfficium/data/*.storable
 
 # Ordo cache
 web/ordo-cache/
+
+# Local files (to avoid accidental commit of sensitive data or irrelevant files)
+sandbox.pl
+Dockerfile.dock
