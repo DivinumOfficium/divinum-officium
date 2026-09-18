@@ -84,3 +84,12 @@ v. Concedei, Vos suplicamos, Deus omnipotente, que nós, oprimidos pelo peso dos
 $Per Christum
 _
 $Fidelium animae
+
+[Ant Finalis Cist]
+$rubrica CompletBMV2
+@:Postpentecost:s/V\..*//s s/$/ (Aleluia.)/s
+_
+@Commune/C10:Invit:s/(.*)[\.\,\:] \*.*/V. $1. (Aleluia.)/
+@Commune/C10:Invit:s/.*\* (.*)\./R. \u$1. (Aleluia.)/
+_
+@:Postpentecost::s/.*\_.//s
