@@ -1,6 +1,9 @@
 [Missa]
 Rorate coeli (in Adventu)
 
+[Oratio]
+@Commune/C12:Oratio 2
+
 [Introitus]
 !Is 45:8
 v. Ó céus, derramai dessas alturas o vosso orvalho: e que as nuvens chovam o Justo! Abra-se a terra e floresça o Salvador!
@@ -8,6 +11,10 @@ v. Ó céus, derramai dessas alturas o vosso orvalho: e que as nuvens chovam o J
 Abençoastes, Senhor, a vossa terra e acabastes com a escravidão de Jacob.
 &Gloria
 v. Ó céus, derramai dessas alturas o vosso orvalho: e que as nuvens chovam o Justo! Abra-se a terra e floresça o Salvador!
+
+[Oratio] (ad missam)
+@Commune/C12:Oratio 2:1
+$Per eundem
 
 [Graduale]
 !Sl 23:7, 3 - 4.

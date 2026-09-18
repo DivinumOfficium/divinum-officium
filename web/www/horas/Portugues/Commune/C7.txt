@@ -4,6 +4,79 @@ Commune Unius non Virginis Martyris
 [Missa]
 Me exspectaverunt (altera)
 
+[Ant Vespera]
+Enquanto o Rei estava * reclinado à sua mesa, o meu nardo exalou um perfume suave.;;109
+Ao odor * dos vossos perfumes corremos: as donzelas amaram-vos sobremaneira.;;112
+Já passou o inverno, * a chuva cessou e foi-se: levantai-vos, minha amiga, e vinde.;;121
+Vinde, minha eleita, * e porei em vós o meu trono, aleluia.;;126
+Esta é formosa * entre as filhas de Jerusalém.;;147
+
+[Hymnus Vespera]
+v. A mulher forte, de peito varonil,
+Louvemos todos nós,
+Que pela glória da santidade
+Refulge ilustre em toda a parte.
+_
+Ela, ferida de santo amor,
+Enquanto o amor nocivo do mundo
+Abomina, para as coisas celestes
+Percorreu o árduo caminho.
+_
+Domando a carne com jejuns,
+E com o doce alimento
+Da oração nutrindo a alma,
+Goza das alegrias do céu.
+_
+Ó Cristo Rei, força dos fortes,
+Que só Vós operais grandes coisas,
+Pela sua intercessão, Vos pedimos,
+Ouvi benigno os que Vos suplicam.
+_
+* A Deus Pai seja a glória,
+E ao seu único Filho,
+Com o Espírito Paráclito,
+Agora e por todos os séculos.
+Amém.
+
+[HymnusM Vespera]
+@:Hymnus Vespera:s/de santo amor/do amor de Cristo/
+
+[Oratio]
+@Commune/C6::s/Virgem e // s/N\./N./
+
+[Ant Laudes]
+@:Ant Vespera:s/;;.*//g
+
+[Capitulum Laudes]
+!Sir 51:1-3
+v. Quero glorificar-Vos, Senhor e Rei; quero louvar-Vos, ó Deus, meu salvador. Quero glorificar o vosso nome, porque fostes o meu sustentáculo e protector, e livrastes o meu corpo da perdição.
+$Deo gratias
+
+[Hymnus Laudes]
+@:Hymnus Vespera
+
+[HymnusM Laudes]
+@:HymnusM Vespera
+
+[Ant 2]
+Dai-lhe * do fruto das suas mãos, e louvem-na as suas obras às portas da cidade.
+
+[Lectio Prima]
+!Sir 51:8; 51:12
+v. Minha alma louvará o Senhor até à morte, porque Vós, Senhor, nosso Deus, livrais aqueles que esperam em Vós, e os salvais das mãos da angústia.
+
+[Capitulum Sexta]
+!Sir 51:4-5
+v. Livrastes-me, segundo a grandeza da misericórdia do vosso nome, dos que rugiam prestes a devorar-me, das mãos dos que procuravam tirar-me a vida, e das muitas aflições que me cercavam.
+$Deo gratias.
+
+[Capitulum Nona]
+@:Lectio Prima
+$Deo gratias.
+
+[Ant 3]
+Abriu a sua mão * ao indigente e estendeu os seus braços ao pobre, e não comeu o pão na ociosidade.
+
 [GradualeP]
 Aleluia, aleluia.
 !Sl 44:5

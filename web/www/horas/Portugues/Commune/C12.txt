@@ -1,3 +1,492 @@
+[Capitulum Vespera]
+@Commune/C10:Capitulum Laudes
+
+[Versum 1]
+@Commune/C11:Versum 2
+(sed rubrica cisterciensis)
+@:Versum 2
+
+[Ant 1]
+@Commune/C10
+(sed rubrica cisterciensis)
+@CommuneCist/C11
+
+[Oratio 1]
+@Commune/C11:Oratio:s/^/v. /
+(sed rubrica cisterciensis)
+@Commune/C11:Oratio:s/^/v. / s/$/~/m s/Per Dominum/Per Christum\n\$Amen/
+
+[Commemoratio]
+!Comemoração dos Santos
+Ant. Todos os Santos de Deus, dignai-vos interceder pela nossa salvação e pela de todos.
+V. Alegrai-vos no Senhor e exultai, ó justos.
+R. E gloriai-vos, todos os que sois rectos de coração.
+$Oremus
+v. Protegei, Senhor, o vosso povo e, confiado no patrocínio dos vossos Apóstolos Pedro e Paulo e dos outros Apóstolos, conservai-o com perpétua defesa.
+v. Todos os vossos Santos, Senhor, Vos pedimos, nos ajudem em toda a parte, para que, enquanto recordamos os seus méritos, sintamos o seu patrocínio; e concedei a vossa paz aos nossos tempos, e afastai da vossa Igreja toda a maldade; disponde na prosperidade da vossa salvação o caminho, as acções e as vontades, nossas e de todos os vossos servos; retribuí aos nossos benfeitores com os bens sempiternos, e concedei a todos os fiéis defuntos o descanso eterno.
+$Per Dominum
+(sed rubrica 1955 aut rubrica 196 omittitur)
+
+[Hymnus minor_]
+
+#Hymnus
+v. Lembrai-Vos, ó Criador de todas as coisas,
+De que outrora do nosso corpo,
+Nascendo do sagrado seio da Virgem,
+Tomastes a forma.
+_
+r. Maria, Mãe da graça,
+Doce Mãe da clemência,
+Protegei-nos do inimigo
+E recebei-nos na hora da morte.
+_
+@Psalterium/Doxologies:Nat: s/^/r. /
+
+[Hymnus minor]
+@:Hymnus minor_
+(sed rubrica 1570 aut rubrica monastica aut rubrica praedicatorum)
+@:HymnusM minor
+
+[HymnusM minor]
+
+#Hymnus
+v. Lembrai-Vos, ó Autor da salvação,
+De que outrora do nosso corpo,
+Nascendo da Virgem ilibada,
+Tomastes a forma.
+_
+r. Maria, Mãe da graça,
+Mãe de misericórdia,
+Protegei-nos do inimigo
+E recebei-nos na hora da morte.
+_
+@Psalterium/Doxologies:NatT: s/^/r. /
+
+[Nocturn 1 Versum]
+@Commune/C6:Versum 2
+(sed rubrica cisterciensis)
+@Commune/C10:Invit: s/^/V. / s/\*/\nR./
+
+[Nocturn 2 Versum]
+@Commune/C6:Versum 2
+(sed rubrica cisterciensis)
+@Commune/C10:Invit: s/^/V. / s/\*/\nR./
+
+[Nocturn 3 Versum]
+@Commune/C6:Versum 2
+(sed rubrica cisterciensis)
+@Commune/C10:Invit: s/^/V. / s/\*/\nR./
+
+[Lectio1]
+!Sir 24:11-13
+11 Em todas as coisas procurei repouso, e habitarei na herança do Senhor.
+12 Então o Criador de todas as coisas deu-me as suas ordens e falou-me; e Aquele que me criou repousou no meu tabernáculo.
+13 E disse-me: Habita em Jacob, recebe a tua herança em Israel, e lança raízes entre os meus eleitos.
+
+[Lectio2]
+!Sir 24:15-16
+15 E assim fui firmada em Sião, e na cidade santificada igualmente repousei, e em Jerusalém está o meu poder.
+16 E lancei raízes num povo honrado, e na porção do meu Deus, que é a sua herança, e a minha morada é na plena assembleia dos santos.
+
+[Lectio3]
+!Sir 24:17-20
+17 Elevei-me como o cedro no Líbano, e como o cipreste no monte Sião:
+18 elevei-me como a palmeira em Cades, e como as plantações de rosas em Jericó:
+19 como formosa oliveira nos campos, e como o plátano junto à água nas praças me elevei.
+20 Como o cinamomo e o bálsamo aromático, exalei perfume: como mirra escolhida, espalhei um odor suave:
+&teDeum
+
+[Minor final]
+
+#Conclusio
+&Dominus_vobiscum
+&Benedicamus_Domino
+$Fidelium animae
+
+$rubrica Pater post
+$Pater noster
+(sed rubrica 1955 aut rubrica 196 omittitur)
+
+[Minor final] (rubrica cisterciensis)
+
+#Conclusio
+$Dulce nomen
+
+[Minor intro]
+#Incipit
+$Ave Maria
+(sed rubrica cisterciensis)
+$Ave Maria Parvum
+(sed rubrica 1955 aut rubrica 196 omittitur)
+$Deus in adjutorium
+(deinde dicitur)
+&Alleluia
+(sed rubrica cisterciensis omittitur)
+
+[Versum 0]
+@Commune/C10
+
+[Ant Laudes]
+Maria foi assunta ao céu: * alegram-se os Anjos e, louvando, bendizem o Senhor.
+A Virgem Maria foi assunta * ao tálamo celeste, onde o Rei dos reis Se senta em trono de estrelas.
+Ao odor * dos vossos perfumes corremos: as donzelas amaram-vos sobremaneira.
+Bendita * sois vós, ó filha, do Senhor: porque por vós participámos do fruto da vida.
+Formosa sois * e graciosa, ó filha de Jerusalém: terrível como um exército em ordem de batalha.
+
+[Capitulum Laudes]
+!Cant 6:8
+v. Viram-na as filhas de Sião e proclamaram-na beatíssima, e as rainhas louvaram-na.
+$Deo gratias
+
+[Versum 2]
+@Commune/C10
+(sed rubrica cisterciensis)
+@CommuneM/C10:MM Capitulum:s/.*(V\.)/$1/s
+
+[Ant 2]
+@Commune/C10
+(sed rubrica cisterciensis)
+@Commune/C10:Ant 2_
+
 [Oratio 2]
-Ó Deus, que, segunda a anunciação do Anjo, quisestes que o vosso Verbo assumisse a carne humana no seio da bem-aventurada Virgem Maria, concedei aos vossos suplicantes que os que crêem que Ela é verdadeira Mãe de Deus, sejam amparados na vossa presença com o auxílio das suas preces.
+Ó Deus, que, segundo a anunciação do Anjo, quisestes que o vosso Verbo assumisse a carne humana no seio da bem-aventurada Virgem Maria, concedei aos vossos suplicantes que nós, que cremos que ela é verdadeira Mãe de Deus, sejamos amparados na vossa presença com o auxílio das suas preces.
 $Per eumdem
+
+[Special Prima]
+@:Minor intro
+@:Hymnus minor
+
+#Psalmi
+@:Ant Laudes:1 s/^/Ant. /
+(sed rubrica cisterciensis)
+@Sancti/01-01:Ant Vespera:2 s/^/Ant. / s/;;.*// 
+&psalm(53)
+(sed rubrica cisterciensis et feria 2 aut rubrica cisterciensis et feria 4 aut rubrica cisterciensis et feria 6)
+&psalm(118,1,8)
+
+&psalm(84)
+(sed rubrica cisterciensis et feria 2 aut rubrica cisterciensis et feria 4 aut rubrica cisterciensis et feria 6)
+&psalm(118,9,16)
+
+&psalm(116)
+(sed rubrica cisterciensis et feria 2 aut rubrica cisterciensis et feria 4 aut rubrica cisterciensis et feria 6)
+&psalm(118,17,24)
+(deinde rubrica cisterciensis et feria 2 aut rubrica cisterciensis et feria 4 aut rubrica cisterciensis et feria 6 dicuntur)
+
+&psalm(118,25,32)
+(deinde dicitur semper)
+_
+@:Ant Laudes:1 s/^/Ant. /
+(sed rubrica cisterciensis)
+@Sancti/01-01:Ant Vespera:2 s/^/Ant. / s/;;.*// 
+
+#Capitulum Versus
+@:Capitulum Prima
+(sed rubrica cisterciensis)
+@Commune/C11:Capitulum Laudes
+_
+@Commune/C11:Versum 1
+(sed rubrica cisterciensis)
+@Commune/C11:Versum 0
+
+#Oratio
+@:Pre oratio
+@:Oratio Prima
+(sed rubrica cisterciensis)
+@:Oratio 2: s/$/~/m s/Per eumdem/Per eumdem Christum\n\$Amen/
+
+@:Minor final
+
+[Capitulum Prima]
+!Cant 6:9
+v. Quem é esta que avança como a aurora ao romper, formosa como a lua, escolhida como o sol, terrível como um exército em ordem de batalha?
+$Deo gratias
+
+[Oratio Prima]
+v. Ó Deus, que Vos dignastes escolher o palácio virginal da bem-aventurada Maria para nele habitardes, concedei-nos, Vos pedimos, que, munidos da sua defesa, nos façais participar com alegria na sua comemoração.
+$Qui vivis
+
+[Special Tertia]
+@:Minor intro
+@:Hymnus minor
+
+#Psalmi
+@:Ant Laudes:2 s/^/Ant. /
+(sed rubrica cisterciensis)
+@Sancti/01-01:Ant Vespera:3 s/^/Ant. / s/;;.*//
+&psalm(119)
+(sed rubrica cisterciensis et feria 2 aut rubrica cisterciensis et feria 4 aut rubrica cisterciensis et feria 6)
+&psalm(118,33,40)
+(sed rubrica cisterciensis et feria 3 aut rubrica cisterciensis et feria 5 aut rubrica cisterciensis et feria 7)
+&psalm(118,105,112)
+
+&psalm(120)
+(sed rubrica cisterciensis et feria 2 aut rubrica cisterciensis et feria 4 aut rubrica cisterciensis et feria 6)
+&psalm(118,41,48)
+(sed rubrica cisterciensis et feria 3 aut rubrica cisterciensis et feria 5 aut rubrica cisterciensis et feria 7)
+&psalm(118,113,120)
+
+&psalm(121)
+(sed rubrica cisterciensis et feria 2 aut rubrica cisterciensis et feria 4 aut rubrica cisterciensis et feria 6)
+&psalm(118,49,56)
+(sed rubrica cisterciensis et feria 3 aut rubrica cisterciensis et feria 5 aut rubrica cisterciensis et feria 7)
+&psalm(118,121,128)
+_
+@:Ant Laudes:2 s/^/Ant. /
+(sed rubrica cisterciensis)
+@Sancti/01-01:Ant Vespera:3 s/^/Ant. / s/;;.*//
+
+#Capitulum Versus
+@:Capitulum Tertia
+(sed rubrica cisterciensis)
+@Sancti/08-15t:Capitulum Laudes
+_
+@Commune/C11:Versum 2
+(sed rubrica cisterciensis)
+@:Nocturn 1 Versum
+
+#Oratio
+@:Pre oratio
+@:Oratio Tertia
+(sed rubrica cisterciensis)
+@:Oratio 1
+@:Minor final
+
+[Capitulum Tertia]
+!Sir 24:15
+@:Lectio2:2 s/^15/v./
+$Deo gratias
+
+[Oratio Tertia]
+@Sancti/01-01:Oratio
+
+[Special Sexta]
+@:Minor intro
+@:Hymnus minor
+
+#Psalmi
+@:Ant Laudes:3 s/^/Ant. /
+(sed rubrica cisterciensis)
+@Sancti/01-01:Ant Vespera:4 s/^/Ant. / s/;;.*//
+&psalm(122)
+(sed rubrica cisterciensis et feria 2 aut rubrica cisterciensis et feria 4 aut rubrica cisterciensis et feria 6)
+&psalm(118,57,64)
+(sed rubrica cisterciensis et feria 3 aut rubrica cisterciensis et feria 5 aut rubrica cisterciensis et feria 7)
+&psalm(118,129,136)
+
+&psalm(123)
+(sed rubrica cisterciensis et feria 2 aut rubrica cisterciensis et feria 4 aut rubrica cisterciensis et feria 6)
+&psalm(118,65,72)
+(sed rubrica cisterciensis et feria 3 aut rubrica cisterciensis et feria 5 aut rubrica cisterciensis et feria 7)
+&psalm(118,137,144)
+
+&psalm(124)
+(sed rubrica cisterciensis et feria 2 aut rubrica cisterciensis et feria 4 aut rubrica cisterciensis et feria 6)
+&psalm(118,73,80)
+(sed rubrica cisterciensis et feria 3 aut rubrica cisterciensis et feria 5 aut rubrica cisterciensis et feria 7)
+&psalm(118,145,152)
+_
+@:Ant Laudes:3 s/^/Ant. /
+(sed rubrica cisterciensis)
+@Sancti/01-01:Ant Vespera:4 s/^/Ant. / s/;;.*//
+
+#Capitulum Versus
+@:Capitulum Sexta
+(sed rubrica cisterciensis)
+@:Capitulum Tertia
+_
+@Commune/C10:Versum 2
+
+#Oratio
+@:Pre oratio
+@:Oratio Sexta
+(sed rubrica cisterciensis)
+@Sancti/01-01:Oratio: s/^/v. / s/Qui tecum/Amen/
+@:Minor final
+
+[Capitulum Sexta]
+!Sir 24:16
+@:Lectio2:3 s/^16/v./
+$Deo gratias
+
+[Oratio Sexta]
+v. Concedei, ó Deus misericordioso, protecção à nossa fraqueza, a fim de que, celebrando a memória da santa Mãe de Deus, nos levantemos, com o auxílio da sua intercessão, das nossas iniquidades.
+$Per eumdem
+
+[Special Nona]
+@:Minor intro
+@:Hymnus minor
+
+#Psalmi
+@:Ant Laudes:5 s/^/Ant. /
+(sed rubrica cisterciensis)
+@Sancti/01-01:Ant Vespera:5 s/^/Ant. / s/;;.*//
+&psalm(125)
+(sed rubrica cisterciensis et feria 2 aut rubrica cisterciensis et feria 4 aut rubrica cisterciensis et feria 6)
+&psalm(118,81,88)
+(sed rubrica cisterciensis et feria 3 aut rubrica cisterciensis et feria 5 aut rubrica cisterciensis et feria 7)
+&psalm(118,153,160)
+
+&psalm(126)
+(sed rubrica cisterciensis et feria 2 aut rubrica cisterciensis et feria 4 aut rubrica cisterciensis et feria 6)
+&psalm(118,89,96)
+(sed rubrica cisterciensis et feria 3 aut rubrica cisterciensis et feria 5 aut rubrica cisterciensis et feria 7)
+&psalm(118,161,168)
+
+&psalm(127)
+(sed rubrica cisterciensis et feria 2 aut rubrica cisterciensis et feria 4 aut rubrica cisterciensis et feria 6)
+&psalm(118,97,104)
+(sed rubrica cisterciensis et feria 3 aut rubrica cisterciensis et feria 5 aut rubrica cisterciensis et feria 7)
+&psalm(118,169,176)
+_
+@:Ant Laudes:5 s/^/Ant. /
+(sed rubrica cisterciensis)
+@Sancti/01-01:Ant Vespera:5 s/^/Ant. / s/;;.*//
+
+#Capitulum Versus
+@:Capitulum Nona
+(sed rubrica cisterciensis)
+@:Capitulum Sexta
+_
+@:Verse Nona
+
+#Oratio
+@:Pre oratio
+@:Oratio Nona
+(sed rubrica cisterciensis)
+@:Oratio Nona:s/$/~/m s/Qui tecum/Qui tecum in\n\$Amen/
+@:Minor final
+
+[Capitulum Nona]
+@Commune/C11:Lectio Prima
+$Deo gratias
+
+[Oratio Nona]
+v. Perdoai, Senhor, Vos pedimos, os delitos dos vossos servos, para que nós, que não Vos podemos agradar pelas nossas acções, sejamos salvos pela intercessão da Mãe do vosso Filho, Nosso Senhor:
+$Qui tecum
+
+[Verse Nona]
+V. Depois do parto, ó Virgem, permanecestes intacta.
+R. Intercedei por nós, ó Mãe de Deus.
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+@:Ant 1
+
+[Special Completorium]
+#Incipit
+(deinde dicitur)
+$Ave Maria
+(sed rubrica 1955 aut rubrica 196 omittitur)
+$Converte nos
+$Deus in adjutorium
+(deinde dicitur)
+&Alleluia
+(sed rubrica cisterciensis omittitur)
+
+#Psalmi
+(rubrica cisterciensis) @Sancti/12-25:Ant Vespera:3 s/^/Ant. / s/;;.*//
+&psalm(128)
+(sed rubrica cisterciensis)
+&psalm(12)
+
+&psalm(129)
+(sed rubrica cisterciensis)
+&psalm(128)
+
+&psalm(130)
+(rubrica cisterciensis) @Sancti/12-25:Ant Vespera:3 s/^/Ant. / s/;;.*//
+
+@:Hymnus minor
+(sed rubrica cisterciensis omittitur)
+
+#Capitulum Versus
+(sed rubrica cisterciensis)
+#Capitulum Hymnus Versus
+@:Capitulum Completorium
+(rubrica cisterciensis dicuntur semper)
+_
+@:Hymnus Completorium
+_
+@Psalterium/Common/Prayers:Conclusio cisterciensis:3-4
+(deinde dicitur)
+
+#Canticum: Nunc dimittis
+@:Ant Completorium
+&psalm(233)
+@:Ant Completorium
+(sed rubrica cisterciensis omittitur)
+
+#Oratio
+@:Pre oratio
+@:Oratio Completorium
+(sed rubrica cisterciensis)
+@:Oratio Sexta: s/$/~/m s/Per eumdem/Per eumdem Christum\n\$Amen/
+
+#Conclusio
+(deinde dicitur)
+&Dominus_vobiscum
+&Benedicamus_Domino
+$Benedictio Completorium2
+R. Amém.
+(sed rubrica cisterciensis loco hujus versus dicitur)
+$Dulce nomen
+(deinde dicitur)
+
+#Antiphona finalis B.M.V.
+$ant Salve Regina
+(sed tempore post Epiphaniam aut Septuagesimæ aut Quadragesimæ aut Passionis dicitur)
+$ant Ave Regina caelorum
+(sed Adventus aut Nativitatis aut Epiphaniæ aut post partum dicitur)
+$ant Alma Redemptoris Mater
+(sed Paschali)
+$ant Regina caeli
+(sed rubrica cisterciensis)
+@Psalterium/Mariaant:Ant Finalis Cist
+(deinde dicitur)
+&Divinum_auxilium
+(rubrica cisterciensis)$Fidelium animae
+
+$Pater noster
+$Ave Maria
+$Credo
+(sed rubrica 1955 aut rubrica 196 aut rubrica cisterciensis omittitur)
+
+[Hymnus Completorium_C]
+v. Deu à luz a Mãe
+Aquele que Gabriel predissera,
+Aquele que, exultando no seio materno,
+João, ainda encerrado, pressentira.
+
+[Hymnus Completorium] (rubrica cisterciensis)
+@:Hymnus Completorium_C
+@:HymnusM minor:s/.*?\_/_/s
+
+[Ant Completorium_]
+Ant. À vossa protecção * recorremos, santa Mãe de Deus: não desprezeis as nossas súplicas nas nossas necessidades, mas livrai-nos sempre de todos os perigos, ó Virgem gloriosa e bendita.
+
+[Ant Completorium]
+@:Ant Completorium_
+(sed tempore paschali)
+@Commune/C10:Ant 1_Pasch:s/^/Ant. /
+
+[Capitulum Completorium_]
+!Sir 24:24
+v. Eu sou a mãe do belo amor, e do temor, e do conhecimento, e da santa esperança.
+$Deo gratias
+_
+V. Rogai por nós, santa Mãe de Deus.
+R. Para que sejamos dignos das promessas de Cristo.
+
+[Capitulum Completorium]
+@:Capitulum Completorium_
+(sed rubrica cisterciensis dicuntur)
+@:Lectio3:1 s/17-//
+@:Lectio3:5 s/^20/v./
+$Deo gratias
+
+[Oratio Completorium]
+v. Senhor, Vos pedimos que a gloriosa intercessão da bem-aventurada e gloriosa sempre Virgem Maria nos proteja e nos conduza à vida eterna.
+$Per Dominum

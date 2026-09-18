@@ -4,12 +4,101 @@ Officium Defunctorum
 [Missa]
 Missa Defunctorum quotidianis: Requiem aeternam
 
+[Ant Vespera]
+Agradarei ao Senhor * na região dos vivos.;;114
+Ai de mim, Senhor, * porque o meu desterro se prolongou.;;119
+O Senhor te guarde de todo o mal: * o Senhor guarde a tua alma.;;120
+Se observardes * as nossas iniquidades, Senhor: ó Senhor, quem subsistirá?;;129
+Não desprezeis, * Senhor, as obras de vossas mãos.;;137
+
+[Versum 1]
+V. Ouvi uma voz do céu que me dizia:
+R. Bem-aventurados os mortos que morrem no Senhor.
+
+[Ant 1]
+Tudo * o que o Pai me dá virá a mim; e o que vem a mim não o lançarei fora.
+
+[Oratio 1]
+@:Oratio_a_porta
+@:Oratio_Fid
+
+[Oratio_a_porta]
+$Pater noster Et
+_
+&psalm(145)
+(sed rubrica 1955 aut rubrica 1960 aut rubrica monastica aut die Omnium Defunctorum omittitur)
+$A porta inferi
+
+[Oratio_Fid]
+$Oremus
+v. Ó Deus, Criador e Redentor de todos os fiéis, concedei às almas dos vossos servos e servas a remissão de todos os seus pecados, a fim de que, pelas nossas piedosas súplicas, alcancem o perdão que sempre desejaram.
+$Qui vivis
+
+[Oratio1]
+v. Absolvei, Senhor, Vos pedimos, a alma do vosso servo N., para que, morto para o mundo, viva para Vós; e os pecados que cometeu, vivendo entre os homens, pela fragilidade da carne, apagai-os Vós com o perdão da vossa misericordiosíssima bondade.
+$Per Dominum
+
+[Conclusio]
+V. Dai-lhes, Senhor, o eterno descanso.
+R. E a luz perpétua lhes brilhe.
+V. Descansem em paz.
+R. Amém.
+
+[Ant Laudes_]
+Exultarão no Senhor * os ossos humilhados.;;50
+Ouvi, Senhor, * a minha oração: a Vós toda a carne virá.;;64
+A vossa dextra * me acolheu, Senhor.;;62
+Da porta do inferno * livrai, Senhor, a minha alma.;;222
+Todo o espírito * louve o Senhor.;;150
+
+[Ant Laudes]
+@:Ant Laudes_
+(sed rubrica tridentina)
+@:Ant Laudes_:s/;;62/;;62;66/ s/;;150/;;148;149;150/
+
+[Versum 2]
+@:Versum 1
+
+[Ant 2]
+Eu sou * a ressurreição e a vida: quem crê em mim, ainda que esteja morto, viverá; e todo aquele que vive e crê em mim não morrerá eternamente.
+
+[Oratio 2]
+@:Oratio_a_porta:s/145/129/s
+@:Oratio_Fid
+
+[Oratio 21]
+$Pater noster Et
+&psalm(129)
+_
+$A porta inferi
+_
+@:Oratio_Fid
+
+[Oratio2]
+v. Ó Deus, Senhor das misericórdias, concedei às almas dos vossos servos e servas, cujo aniversário de falecimento comemoramos, o lugar do refrigério, a bem-aventurança do repouso e o esplendor da luz.
+$Per Dominum
+
+[Versum 3]
+@:Versum 1
+
 [Introitus]
 !4 Ezd 2:34; 2:35
 v. Dai-lhes, Senhor, o eterno repouso, e que lhes resplandeça a luz perpétua.
 !Sl 64:2-3
 A Vós, Senhor, dirigimos estes hinos em Sião: e oferecemos estes votos em Jerusalém: ouvi a minha oração: todas as criaturas devem comparecer ante Vós.
 v. Dai-lhes, Senhor, o eterno repouso, e que lhes resplandeça a luz perpétua.
+
+[Oratio] (ad missam)
+Ó Deus, Criador e Redentor de todos os fiéis, concedei às almas dos vossos servos e servas a remissão de todos os seus pecados, a fim de que, pelas nossas piedosas súplicas, alcancem o perdão que sempre desejaram.
+$Qui vivis
+
+[Oratio1] (ad missam)
+Ó Deus, que, entre os Sacerdotes apostólicos, fizestes brilhar os vossos servos com a dignidade pontifical ou sacerdotal, concedei, Vos pedimos, que sejam também associados para sempre à sua companhia.
+$Per Dominum
+
+[Oratio2] (ad missam)
+Ó Deus, que perdoais aos pecadores e desejais a salvação dos homens, imploramos a vossa clemência, por intercessão da bem-aventurada Maria, sempre Virgem, e de todos os Santos, em favor dos nossos irmãos, parentes e benfeitores, que saíram deste mundo, a fim de que alcancem a bem-aventurança eterna.
+$Per Dominum.
 
 [Graduale]
 !4 Ezdr 2:34-35

@@ -1,0 +1,156 @@
+[Ant Vespera]
+@Sancti/03-25
+
+[Capitulum Vespera]
+@:Capitulum Laudes
+
+[Versum 1]
+@Commune/C6:Versum 2
+
+[Ant 1]
+@Tempora/Adv1-0:Ant 2
+
+[Oratio]
+@Commune/C12:Oratio 2
+
+[Commemoratio]
+!Comemoração dos Santos
+Ant. Eis que o Senhor virá, e todos os seus Santos com Ele: e haverá naquele dia uma grande luz, aleluia.
+V. Eis que o Senhor aparecerá sobre uma nuvem branca.
+R. E com Ele milhares de Santos.
+$Oremus
+v. Purificai, Senhor, Vos pedimos, as nossas consciências com a vossa visita, para que Jesus Cristo, vosso Filho, Nosso Senhor, ao vir com todos os Santos, encontre em nós uma morada preparada para Si:
+$Qui tecum
+(sed rubrica 1955 aut rubrica 1960 omittitur)
+
+[Nocturn 1 Versum]
+@Commune/C6:Versum 2
+
+[Nocturn 2 Versum]
+@Commune/C6:Versum 2
+
+[Nocturn 3 Versum]
+@Commune/C6:Versum 2
+
+[Minor final]
+#Oratio
+@Commune/C12:Pre oratio
+@:Oratio
+@Commune/C12:Minor final
+
+[Ant Laudes]
+@Sancti/03-25:Ant Vespera:s/;;.*//g
+
+[Capitulum Laudes]
+@Sancti/03-25:Lectio Prima
+$Deo gratias
+
+[Versum 2]
+@Commune/C10
+
+[Ant 2]
+@Tempora/Adv1-0:Ant 2
+
+[Special Prima]
+@Commune/C12:Minor intro
+@Commune/C12:Hymnus minor
+
+#Psalmi
+@Sancti/03-25:Ant Vespera:1 s/^/Ant. / s/;;.*//
+&psalm(53)
+
+&psalm(84)
+
+&psalm(116)
+_
+@Sancti/03-25:Ant Vespera:1 s/^/Ant. / s/;;.*//
+
+#Capitulum
+@Sancti/03-25:Capitulum Laudes
+_
+@Commune/C11:Versum 1
+@:Minor final
+
+[Special Tertia]
+@Commune/C12:Minor intro
+@Commune/C12:Hymnus minor
+
+#Psalmi
+@Sancti/03-25:Ant Vespera:2 s/^/Ant. / s/;;.*//
+&psalm(119)
+
+&psalm(120)
+
+&psalm(121)
+_
+@Sancti/03-25:Ant Vespera:2 s/^/Ant. / s/;;.*//
+
+#Capitulum
+@Sancti/03-25:Lectio Prima
+$Deo gratias
+_
+@Commune/C11:Versum 2
+@:Minor final
+
+[Special Sexta]
+@Commune/C12:Minor intro
+@Commune/C12:Hymnus minor
+
+#Psalmi
+@Sancti/03-25:Ant Vespera:3 s/^/Ant. / s/;;.*//
+&psalm(122)
+
+&psalm(123)
+
+&psalm(124)
+_
+@Sancti/03-25:Ant Vespera:3 s/^/Ant. / s/;;.*//
+
+#Capitulum
+@Sancti/03-25:Capitulum Sexta
+_
+@Commune/C12:Versum 2
+@:Minor final
+
+[Special Nona]
+@Commune/C12:Minor intro
+@Commune/C12:Hymnus minor
+
+#Psalmi
+@Sancti/03-25:Ant Vespera:5 s/^/Ant. / s/;;.*//
+&psalm(125)
+
+&psalm(126)
+
+&psalm(127)
+_
+@Sancti/03-25:Ant Vespera:5 s/^/Ant. / s/;;.*//
+
+#Capitulum
+@Sancti/03-25:Capitulum Laudes
+_
+@Psalterium/Mariaant:Advent:8-9
+@:Minor final
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+@:Ant 1
+
+[Special Completorium]
+@Commune/C12::s/(#Capitulum Versus).*/$1\n/s
+@Sancti/03-25:Capitulum Laudes
+_
+@Psalterium/Mariaant:Advent:8-9
+
+#Canticum: Nunc dimittis
+@Tempora/Adv1-0:Ant 2:s/^/Ant. /
+&psalm(233)
+@Tempora/Adv1-0:Ant 2:s/^/Ant. /
+
+#Oratio
+@Commune/C12:Pre oratio
+@:Oratio
+
+@Commune/C12::s/.*(.#Conclusio)/$1/s
