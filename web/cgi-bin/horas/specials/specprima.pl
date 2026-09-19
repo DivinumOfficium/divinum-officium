@@ -177,6 +177,7 @@ sub martyrologium {
           last FINDDATE if s/^\d+\. (?:\(\d+.\) )?\S+/${luna}/;                                              # Bohemice
           last FINDDATE if s/^(Le(?: même)? \d+ .*?\,)/$1 \l$luna, /i;                                       # French 1
           last FINDDATE if s/^((?:Le \d+ des|La veille des|Aux) (?:ides|calendes|nones).*)/$1, \l$luna/i;    # French 2
+          last FINDDATE if s/^((?:Nas?|Nos?) .*(?:Calendas|Nonas|Idos) de \S+\.)$/$1 $luna/;                 # Portugues
           last if /^\s*\_\s*/;
         }
 
@@ -293,6 +294,41 @@ sub _luna {
     );
 
     "Luna $ordinals[$lday-1]. Anno Dómini $year\n";
+  } elsif ($lang =~ /Portugues/) {
+    my @ordinals = (
+      'primeira',
+      'segunda',
+      'terceira',
+      'quarta',
+      'quinta',
+      'sexta',
+      'sétima',
+      'oitava',
+      'nona',
+      'décima',
+      'undécima',
+      'duodécima',
+      'décima terceira',
+      'décima quarta',
+      'décima quinta',
+      'décima sexta',
+      'décima sétima',
+      'décima oitava',
+      'décima nona',
+      'vigésima',
+      'vigésima primeira',
+      'vigésima segunda',
+      'vigésima terceira',
+      'vigésima quarta',
+      'vigésima quinta',
+      'vigésima sexta',
+      'vigésima sétima',
+      'vigésima oitava',
+      'vigésima nona',
+      'trigésima',
+    );
+
+    "Lua $ordinals[$lday-1]. Ano do Senhor de $year";
   } elsif ($lang =~ /Polski/) {
     my @months_pl = (
       'stycznia', 'lutego', 'marca', 'kwietnia', 'maja', 'czerwca',
