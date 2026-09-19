@@ -17,6 +17,7 @@ LABEL maintainer="Thomas Randall <thomas.james.randall@gmail.com>"
 
 # 1. System dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    dumb-init \
     build-essential \
     libperl-dev \
     libssl-dev \
@@ -45,19 +46,6 @@ RUN cpanm --notest \
     CGI::Compile \
     CGI::Emulate::PSGI \
     CGI::Session
-
-# 3. Process management — detect arch so this works on both x86_64 and ARM
-RUN ARCH=$(uname -m) && \
-    if [ "$ARCH" = "x86_64" ]; then \
-        DUMB_INIT_ARCH="x86_64"; \
-    elif [ "$ARCH" = "aarch64" ]; then \
-        DUMB_INIT_ARCH="aarch64"; \
-    else \
-        echo "Unsupported architecture: $ARCH" && exit 1; \
-    fi && \
-    wget -O /usr/local/bin/dumb-init \
-        "https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_${DUMB_INIT_ARCH}" && \
-    chmod +x /usr/local/bin/dumb-init
 
 WORKDIR /var/www
 
@@ -94,7 +82,7 @@ ENV PERLDB_OPTS=""
 
 USER root
 
-ENTRYPOINT ["/usr/local/bin/dumb-init", "--"]
+ENTRYPOINT ["/usr/bin/dumb-init", "--"]
 
 # Start cron, then warm the ordo cache in the background after a 15 second
 # delay to allow Starman to fully start before requests are made.

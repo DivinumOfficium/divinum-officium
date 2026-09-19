@@ -16,7 +16,7 @@ jobs:
       - name: Set up Perl
         uses: shogo82148/actions-setup-perl@v1
         with:
-          perl-version: '5.28'
+          perl-version: '5.40'
 
       - name: Install perltidy
         run: cpanm Perl::Tidy
