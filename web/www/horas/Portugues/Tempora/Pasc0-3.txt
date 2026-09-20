@@ -1,2 +1,25 @@
 [Officium]
 Die IV infra octavam Paschae
+
+[Oratio]
+Ó Deus, que nos alegrais anualmente com a celebração da solenidade da Ressurreição do Senhor, permiti benigno que, celebrando nós estas festas neste tempo, mereçamos alcançar os gozos eternos.
+$Per eumdem
+
+[Ant Matutinum]
+@Tempora/Pasc0-0::s/^V\..*//sm
+V. Alegraram-se os discípulos, aleluia.
+R. Vendo o Senhor, aleluia.
+
+[Ant 2]
+Lançai * a rede à direita da barca, e achareis, aleluia.
+
+[Ant 3_]
+Disse Jesus * a seus discípulos: Trazei alguns dos peixes que agora pescastes. E subiu Simão Pedro, e puxou a rede para terra, cheia de grandes peixes, aleluia.
+
+[Ant 3C]
+Esta foi já a terceira vez * que Jesus Se manifestou, depois de ter ressuscitado dos mortos, aleluia.
+
+[Ant 3]
+@:Ant 3_
+(sed rubrica cisterciensis)
+@:Ant 3C
