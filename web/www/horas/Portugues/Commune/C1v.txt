@@ -1,0 +1,15 @@
+[Oratio 1 loco]
+Concedei-nos, ó Deus omnipotente, Vos pedimos, que a venerável solenidade do vosso bem-aventurado Apóstolo N., que nos preparamos para celebrar, aumente em nós a devoção e a salvação.
+$Per Dominum
+
+[Oratio 2 loco]
+Pedimo-Vos, ó Deus omnipotente, que o bem-aventurado Apóstolo N., cuja festa nos preparamos para celebrar, implore para nós o vosso auxílio, a fim de que, absolvidos dos nossos pecados, sejamos também livres de todos os perigos.
+$Per Dominum
+
+[Oratio]
+@:Oratio 1 loco
+(sed commune C4)
+@:Oratio 2 loco
+
+[Oratio pro Evangelistae]
+@:Oratio 1 loco:s/(Apóstolo)/$1 e Evangelista/

@@ -4,38 +4,150 @@ Commune Unius Virginis et Martyris
 [Missa]
 Loquebar
 
+[Ant Vespera]
+Esta é uma virgem sábia, * e uma do número das prudentes.;;109
+Esta é uma virgem sábia, * que o Senhor encontrou vigilante.;;112
+Esta é a que não conheceu * o leito do pecado: terá o seu fruto na visitação das almas santas.;;121
+Vinde, minha eleita, * e porei em vós o meu trono, aleluia.;;126
+Esta é formosa * entre as filhas de Jerusalém.;;147
+
+[Hymnus Vespera]
+v. Ó Jesus, coroa das virgens,
+A quem concebeu aquela Mãe
+Que, só ela, virgem deu à luz,
+Acolhei clemente estes votos.
+_
+Vós que caminhais entre os lírios,
+Rodeado de coros de virgens,
+Esposo adornado de glória,
+Que às esposas dais o prémio.
+_
+Para onde quer que vades, as virgens
+Vos seguem e, com louvores,
+Correm cantando após Vós
+E fazem ressoar doces hinos.
+_
+Suplicantes Vos rogamos
+Que aos nossos sentidos concedais
+A graça de ignorar inteiramente
+Todas as feridas da corrupção.
+_
+* Poder, honra, louvor e glória
+A Deus Pai com o Filho,
+Juntamente com o Santo Paráclito,
+Pelos séculos dos séculos.
+Amém.
+
+[HymnusM Vespera]
+@:Hymnus Vespera:s/caminhais/apascentais/ s/Suplicantes/Com mais instância/ s/concedais/aumenteis/ s/Poder, honra, louvor/Louvor, honra, poder/ s/Pai com o Filho/Pai e ao Filho/
+
+[Versum 1]
+V. Na vossa majestade e no vosso esplendor.
+R. Caminhai, avançai vitoriosamente e reinai.
+
+[Ant 1]
+Vinde, Esposa de Cristo, * recebei a coroa que o Senhor vos preparou para sempre.
+
 [Comment]
 # 24 – 1 Virgens Mártires – Loquebar
 
 [Oratio]
-Deus, que entre outras maravilhas do teu poder deste também ao sexo frágil a vitória do martírio, concede caminharmos para Ti, imitando o exemplo da tua Virgem e Mártir N., de quem celebramos a festa.
+Ó Deus, que entre outros milagres do vosso poder permitistes que o sexo frágil alcançasse a vitória do martírio, concedei-nos propício que, venerando o nascimento da vossa B. Virgem e Mártir N., caminhemos para Vós, imitando os seus exemplos.
 $Per Dominum
+
+[Ant Matutinum]
+Ó quão formosa * é a geração casta, com glória!;;8
+Diante do tálamo * desta Virgem, fazei ressoar para nós os doces cânticos do drama.;;18
+Voltai, * voltai, ó Sulamite; voltai, para que vos contemplemos.;;23
+Na vossa majestade * e no vosso esplendor, caminhai, avançai vitoriosamente e reinai.;;44
+Deus a ajudará * com o seu semblante: Deus está no meio dela, ela não será abalada.;;45
+As muitas águas * não puderam extinguir a caridade.;;47
+Sou morena, * mas formosa, ó filhas de Jerusalém; por isso o Rei me amou e me introduziu no seu aposento.;;95
+Atraí-me após Vós, * correremos ao odor dos vossos perfumes: o vosso nome é óleo derramado.;;96
+Vinde, Esposa de Cristo, * recebei a coroa que o Senhor vos preparou para sempre.;;97
 
 [Nocturn 2 Versum]
 V. Deus a ajudará com o seu semblante.
 R. Deus está no meio dela, ela não será abalada.
 
 
+[Nocturn 3 Versum]
+V. Deus escolheu-a e predestinou-a.
+R. Fá-la habitar no seu tabernáculo.
+
+[Versum 0]
+V. Rogai por nós, bem-aventurada N..
+R. Para que sejamos dignos das promessas de Cristo.
+
+[Ant Laudes]
+@:Ant Vespera: s/;;.*//g
+
 [Capitulum Laudes]
 !2 Cor 10:17-18
 v. Irmãos: Quem se gloriar, glorie-se no Senhor, Pois não será aprovado aquele que a si mesmo se recomenda, mas aquele a quem Deus recomenda.
 $Deo gratias
 
+[Hymnus Laudes]
+@Commune/C6:Hymnus Vespera
+
+[HymnusM Laudes]
+@Commune/C6:HymnusM Vespera
+
 [Versum 2]
-V. A graça espalhou-se em teus lábios.
-R. Para a fazer morar em seu tabernáculo.
+V. A graça derramou-se nos vossos lábios.
+R. Por isso vos abençoou Deus para sempre.
 
 [Ant 2]
 O reino dos céus é também semelhante a um mercador * que busca pérolas preciosas, e, tendo encontrado uma de grande preço, vai, vende tudo o que tem, e a compra.
 
 
+[Lectio Prima]
+!Sir 51:13-14
+v. Senhor, meu Deus, elevastes a minha morada acima da terra, e roguei-Vos que me livrásseis da morte que me ameaçava. Supliquei ao Senhor, Pai do meu Senhor, que me não abandone sem socorro no dia da minha aflição e no tempo dos soberbos.
+
 [Responsory Breve Tertia]
-R.br. Com tua formosura * E tua beleza.
-R. Com tua formosura * E tua beleza.
-V. Avança, triunfa e reina.
-R. E tua beleza.
+R.br. Na vossa majestade * e no vosso esplendor.
+R. Na vossa majestade * e no vosso esplendor.
+V. Caminhai, avançai vitoriosamente e reinai.
+R. E no vosso esplendor.
 &Gloria
-R. Com tua formosura * E tua beleza.
+R. Na vossa majestade * e no vosso esplendor.
+
+[Capitulum Sexta]
+!2 Cor 11:2
+v. Estou zeloso de vós com o zelo de Deus; pois desposei-vos com um único esposo, para vos apresentar a Cristo como virgem casta.
+$Deo gratias
+
+[Responsory Breve Sexta]
+R.br. Deus a ajudará * com o seu semblante.
+R. Deus a ajudará * com o seu semblante.
+V. Deus está no meio dela, ela não será abalada.
+R. Com o seu semblante.
+&Gloria
+R. Deus a ajudará * com o seu semblante.
+
+[Responsory Breve Sexta] (tempore paschali)
+R.br. Deus a ajudará com o seu semblante, * aleluia, aleluia.
+R. Deus a ajudará com o seu semblante, * aleluia, aleluia.
+V. Deus está no meio dela, ela não será abalada.
+R. Aleluia, aleluia.
+&Gloria
+R. Deus a ajudará com o seu semblante, * aleluia, aleluia.
+
+[Capitulum Nona]
+@:Lectio Prima
+$Deo gratias
+
+[Responsory Breve Nona]
+R.br. Deus escolheu-a * e predestinou-a.
+R. Deus escolheu-a * e predestinou-a.
+V. Fá-la habitar no seu tabernáculo.
+R. E predestinou-a.
+&Gloria
+R. Deus escolheu-a * e predestinou-a.
+
+[Ant 3]
+@:Ant 1
 
 [Introitus]
 !Sl 118:46-47

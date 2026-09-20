@@ -1,8 +1,30 @@
 [Officium]
 Commune plurimarum non Virginum Martyrum
 
+[Versum 1]
+V. De glória e de honra coroaste-las, Senhor.
+R. E lhes destes o poder sobre as obras de vossas mãos.
+
+[Ant 1]
+Delas é, pois, * o reino dos céus, que desprezaram a vida do mundo, e chegaram aos prémios do reino, e lavaram as suas vestes no sangue do Cordeiro.
+
 [Oratio]
 @Commune/C6b::s/Virgens e // s/N\. e N\./N. e N./
+
+[Nocturn 1 Versum]
+@Commune/C6:Versum 1
+
+[Versum 2]
+@:Versum 1
+
+[Ant 2]
+@:Ant 1
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+@:Ant 1
 
 [Secreta]
 @Commune/C6b::s/Virgens e // s/N\. e N\./N. e N./

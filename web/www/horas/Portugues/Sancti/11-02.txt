@@ -1,0 +1,29 @@
+[Oratio mortuorum1]
+#Oratio
+@Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
+$Oremus
+v. Sede propício, Senhor, Vos pedimos, às almas de todos os vossos servos e servas, pelas quais suplicantes imploramos a vossa majestade, para que, por estes ofícios de piedosa súplica, mereçam chegar ao descanso eterno.
+$Per Dominum
+
+[Conclusio]
+!Conclusão especial
+&Gloria
+V. Descansem em paz.
+R. Amém.
+
+[Special Completorium]
+$Confiteor
+$Misereatur
+$Indulgentiam
+
+&psalm(122)
+
+&psalm(141)
+
+&psalm(142)
+
+&psalm(233)
+
+&special('Oratio mortuorum1', 'Portugues')
+
+&special('Conclusio', 'Portugues')

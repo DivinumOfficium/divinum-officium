@@ -1,8 +1,8 @@
 [Pater noster]
-v. Pai Nosso, que estais nos céus, santificado seja o vosso Nome, venha a nós o vosso Reino; seja feita a vossa vontade assim na terra como no Céu. O pão nosso de cada dia nos dai hoje; Perdoai-nos as nossas dívidas, assim como nós perdoamos aos nossos devedores; e não nos deixeis cair em tentação; mas livrai-nos do mal. Amém.
+v. Pai Nosso, que estais nos céus, santificado seja o vosso Nome, venha a nós o vosso Reino; seja feita a vossa vontade assim na terra como no Céu. O pão nosso de cada dia nos dai hoje; perdoai-nos as nossas dívidas, assim como nós perdoamos aos nossos devedores; e não nos deixeis cair em tentação; mas livrai-nos do mal. Amém.
 
 [Pater noster Et]
-v. Pai Nosso, que estais nos céus, santificado seja o vosso Nome, venha a nós o vosso Reino; seja feita a vossa vontade assim na terra como no Céu. O pão nosso de cada dia nos dai hoje; Perdoai-nos as nossas dívidas, assim como nós perdoamos aos nossos devedores:
+v. Pai Nosso, que estais nos céus, santificado seja o vosso Nome, venha a nós o vosso Reino; seja feita a vossa vontade assim na terra como no Céu. O pão nosso de cada dia nos dai hoje; perdoai-nos as nossas dívidas, assim como nós perdoamos aos nossos devedores:
 V. E não nos deixeis cair em tentação:
 R. Mas livrai-nos do mal.
 
@@ -22,23 +22,28 @@ V. O nosso auxílio está + no nome do Senhor,
 R. Que fez o céu e a terra.
 
 [Converte nos]
-V. Converte-nos, +++ ó Deus, nosso salvador:
-R. E afasta de nós a tua indignação.
+V. Convertei-nos, +++ ó Deus, nosso salvador:
+R. E afastai de nós a vossa indignação.
 
 [Dominus det]
 V. Que o Senhor nos dê a Sua paz,
 R. e a vida eterna. Amém
 
 [Gloria]
-V. Glória ao Pai, e ao Filho e * ao Espírito Santo.
+V. Glória ao Pai, e ao Filho, * e ao Espírito Santo.
 R. Como era no princípio, agora e sempre, * e por todos os séculos dos séculos. Amém.
 
 [Gloria1]
-V. Glória ao Pai, e ao Filho e * ao Espírito Santo.
+V. Glória ao Pai, e ao Filho, * e ao Espírito Santo.
+(sed rubrica cisterciensis)
+V. Glória ao Pai, e ao Filho, <FONT COLOR=red>*</FONT> e ao Espírito Santo.
 
 [Requiem]
 V. Dai-lhes, Senhor, * o eterno descanso.
 R. E a luz perpétua * lhes brilhe.
+
+[Requiem] (rubrica cisterciensis)
+V. Dai-lhes, Senhor, o eterno descanso, * e a luz perpétua lhes brilhe.
 
 [Alleluia]
 v. Aleluia.
@@ -46,17 +51,32 @@ v. Louvado sejais, ó Senhor, Rei da glória eterna.
 
 [Dominus]
 V. O Senhor esteja convosco.
-R. E com o teu espírito
+R. E com o vosso espírito.
 V. Senhor, ouvi a minha oração.
 R. E que o meu clamor chegue até Vós.
-!passar segunda Senhor, ouvi a minha oração.
+!omite-se o segundo «Senhor, ouvi a minha oração»
 
 [Confiteor_]
-v. Eu me confesso a Deus, todo-poderoso, à bem-aventurada sempre Virgem Maria, ao bem-aventurado S. Miguel Arcanjo, ao bem-aventurado S. João Baptista, aos Santos Apóstolos S. Pedro e S. Paulo, e a todos os santos: que pequei muitas vezes por pensamentos, palavras e obras: /:bate no próprio peito:/ Por minha culpa, por minha culpa, por minha tão grande culpa. Portanto rogo à bem-aventurada sempre Virgem Maria, ao bem-aventurado S. Miguel Arcanjo, ao bem-aventurado S. João Baptista, aos Santos Apóstolos S. Pedro e S. Paulo, e a todos os Santos, que rogueis a Deus, Nosso Senhor, por mim.
+v. Eu me confesso a Deus, todo-poderoso, à bem-aventurada sempre Virgem Maria, ao bem-aventurado S. Miguel Arcanjo, ao bem-aventurado S. João Baptista, aos Santos Apóstolos S. Pedro e S. Paulo, e a todos os santos: que pequei muitas vezes por pensamentos, palavras e obras: /:bate no próprio peito:/ por minha culpa, por minha culpa, por minha tão grande culpa. Portanto rogo à bem-aventurada sempre Virgem Maria, ao bem-aventurado S. Miguel Arcanjo, ao bem-aventurado S. João Baptista, aos Santos Apóstolos S. Pedro e S. Paulo, e a todos os Santos, que rogueis a Deus, Nosso Senhor, por mim.
+
+[Confiteor]
+@:Confiteor_
+
+[Confiteor] (rubrica Monastica)
+@:Confiteor_:s/Paulo,/Paulo, ao bem-aventurado S. Bento, nosso Pai,/g
+
+[Confiteor] (rubrica cisterciensis)
+@:Confiteor_:s/Paulo,/Paulo, ao bem-aventurado S. Bernardo, nosso Pai,/g
+
+[Confiteor] (rubrica Ordo Praedicatorum)
+v. Eu me confesso a Deus omnipotente, e à bem-aventurada sempre Virgem Maria, e ao bem-aventurado S. Domingos, nosso Pai, e a todos os Santos: que pequei muitas vezes por pensamentos, palavras, obras e omissões, por minha culpa: peço à bem-aventurada sempre Virgem Maria, e ao bem-aventurado S. Domingos, nosso Pai, e a todos os Santos, que roguem por mim.
 
 [Misereatur]
-v. Compadeça-se de vós o Senhor omnipotente; vos perdoe os pecados e guie até à vida eterna.
+v. Compadeça-se de nós Deus omnipotente, e, perdoados os nossos pecados, conduza-nos à vida eterna.
 Amém.
+
+[Misereatur] (rubrica Ordo Praedicatorum)
+v. Compadeça-se de mim Deus omnipotente, e perdoe-me todos os meus pecados, livre-me de todo o mal, salve-me e confirme-me em toda a obra boa, e conduza-me à vida eterna. Amém.
 
 [Indulgentiam]
 v. Que o Senhor + omnipotente e misericordioso nos conceda o perdão, a absolvição e a remissão dos nossos pecados.
@@ -66,11 +86,15 @@ Amém.
 V. Abri, Senhor, ++ os meus lábios.
 R. E a minha boca anunciará o vosso louvor.
 
+[Dulce nomen]
+V. O doce nome de Nosso Senhor Jesus Cristo e da sua Mãe santíssima seja bendito pelos séculos dos séculos.
+R. Amém.
+
 [Deus in adjutorium]
 V. Deus, + vinde em meu auxílio.
 R. Senhor, apressai-Vos em socorrer-me.
-V. Glória ao Pai, e ao Filho e ao Espírito Santo.
-R. Como era no princípio, agora e sempre, e por todos os séculos dos séculos. Amém.
+v. Glória ao Pai, e ao Filho, * e ao Espírito Santo.
+Como era no princípio, agora e sempre, * e por todos os séculos dos séculos. Amém.
 
 [Tu autem_]
 V. E Vós, Senhor, tende misericórdia de nós.
@@ -101,11 +125,11 @@ Pelo mesmo Cristo Nosso Senhor
 Que convosco vive e reina por todos os séculos dos séculos.
 
 [Per Dominum]
-r. Por Nosso Senhor Jesus, vosso Filho, que convosco vive e reina em unidade do Espírito Santo, Deus, por todos os séculos dos séculos.
+r. Por Nosso Senhor Jesus Cristo, vosso Filho, que convosco vive e reina em unidade do Espírito Santo, Deus, por todos os séculos dos séculos.
 R. Amém.
 
 [Per Dominum eiusdem]
-r. Por Nosso Senhor Jesus, vosso Filho, que convosco vive e reina em unidade do mesmo Espírito Santo, Deus, por todos os séculos dos séculos.
+r. Por Nosso Senhor Jesus Cristo, vosso Filho, que convosco vive e reina em unidade do mesmo Espírito Santo, Deus, por todos os séculos dos séculos.
 R. Amém.
 
 [Qui cum Patre]
@@ -118,15 +142,15 @@ R. Amém.
 
 [Qui vivis]
 r. Ó Vós, que viveis e reinais com Deus Pai em unidade do Espírito Santo, Deus, por todos os séculos dos séculos.
-R. Amém
+R. Amém.
 
 [Qui tecum]
 r. Que convosco vive e reina em unidade do Espírito Santo, Deus, por todos os séculos dos séculos.
-R. Amém
+R. Amém.
 
 [Qui tecum eiusdem]
 r. Que convosco vive e reina em unidade do mesmo Espírito Santo, Deus, por todos os séculos dos séculos.
-R. Amém
+R. Amém.
 
 [Te Deum]
 v. Vos louvamos, ó Deus, e reconhecemos por Senhor. * A Vós, ó Pai eterno, toda a terra adora.
@@ -165,7 +189,7 @@ _
 /:e em silêncio:/ Pai nosso. /:e o:/ Ave Maria.
 
 [Conclmart]
-V. And elsewhere many other holy martyrs, confessors, and holy virgins.
+V. E noutros lugares, muitos outros santos Mártires e Confessores, e santas Virgens.
 $Deo gratias.
 
 [Pretiosa]
@@ -177,23 +201,28 @@ $Amen
 [DefunctV]
 &Dominus_vobiscum
 &Benedicamus_Domino
-! After Vespers of the day, %Vespers of the Dead% are said.
+! Depois das Vésperas do dia, dizem-se as %Vésperas dos Defuntos%.
 
 [DefunctM]
 &Dominus_vobiscum
 &Benedicamus_Domino
-! After Lauds of the day, %Matins and Lauds of the Dead% are said.
+! Depois das Laudes do dia, dizem-se as %Matinas e Laudes dos Defuntos%.
 
 [Oremus]
-v. Oremos
+v. Oremos.
+
+[Te decet]
+v. A Vós convém o louvor, + a Vós convém o hino: a Vós a glória, a Deus Pai, e ao Filho, com o Espírito Santo, pelos séculos dos séculos. Amém.
 
 [Kyrie]
-v. Senhor, tem piedade de nós. Cristo, tem piedade de nós. Senhor, tem piedade de nós.
+v. Senhor, tende piedade de nós. Cristo, tende piedade de nós. Senhor, tende piedade de nós.
 
 [Divinum auxilium]
-(rubrica 1963)/:Ao se retirar do côro, depois da última hora:/
-O auxílio divino + permaneça sempre conosco.
-E com nossos irmãos ausentes. Amém.
+(rubrica 1963)/:Se se houver de sair do coro, conclui-se dizendo::/
+O auxílio divino + permaneça sempre connosco.
+E com os nossos irmãos ausentes. Amém.
+(sed rubrica cisterciensis)
+E com os nossos irmãos ausentes.
 
 [Alleluia Simplex]
 , aleluia.
@@ -203,10 +232,10 @@ Aleluia, aleluia.
 
 [Aportainferi]
 V. Da porta do inferno.
-R. Libera, ó Senhor, suas almas!
+R. Livrai, Senhor, as suas almas.
 
 [Oratio Visita_]
-v. Visita, Senhor, esta casa e afasta as ciladas do inimigo; habitem nela os teus anjos, que nos guardem em paz, e tua bênção permaneça conosco para sempre.
+v. Visitai, Senhor, Vos pedimos, esta casa, e afastai para longe dela todas as ciladas do inimigo; habitem nela os vossos santos Anjos, que nos guardem em paz; e a vossa bênção esteja sempre sobre nós.
 
 [respice]
 V. Lançai os olhos, Senhor, sobre os vossos servos e que a vossa glória resplandeça sobre os seus filhos.
@@ -231,26 +260,48 @@ V. Abençoai-nos.
 R. Deus.
 
 [commemoratio omnium_]
-R.br. Commemoration of all brothers, friends of our Order, and our benefactors.
+R.br. Comemoração de todos os irmãos e familiares da nossa Ordem, e dos nossos benfeitores.
+
+[commemoratio omnium_C]
+/:Depois diz o Leitor::/ Comemoração de todos os irmãos, familiares e benfeitores defuntos da nossa Ordem.
 
 [Requiescant]
-V. May they rest in peace.
-R. Amém
+V. Descansem em paz.
+R. Amém.
 
 [deus veniae_]
-v. O God the giver of pardon, and the lover of human salvation, we beseech thy clemency: that thou grant the brethren of our congregation, kinsfolk, and benefactors, which are departed out of this world, blessed Mary ever Virgin making intercession with all the saints, to come to the fellowship of eternal blessedness.
+v. Ó Deus, que perdoais aos pecadores e desejais a salvação dos homens, imploramos a vossa clemência: que, por intercessão da bem-aventurada Maria, sempre Virgem, e de todos os vossos Santos, concedais aos irmãos da nossa congregação, parentes e benfeitores, que saíram deste mundo, chegar à comunhão da eterna bem-aventurança.
 
 [oratio_Domine]
 v. Senhor, Deus omnipotente, que nos fizeste chegar ao começo deste dia, salva-nos hoje com o teu poder, a fim de que não tombemos em nenhum pecado, mas sempre por pensamentos, palavras e obras observemos a tua justiça.
 
 [Benedictio Completorium_]
-Benedictio. Que Deus Todo-Poderoso nos conceda uma noite tranquila e no fim da vida uma morte santa.
+Benedictio. Conceda-nos o Senhor omnipotente uma noite tranquila e um fim perfeito.
 
 [Benedictio Completorium2]
-Benedictio. Abençoe e nos guarde o Senhor omnipotente e misericordioso, + Pai, Filho e Espírito Santo.
+Benedictio. Abençoe-nos e guarde-nos o Senhor omnipotente e misericordioso, + Pai, e Filho, e Espírito Santo.
+
+[Benedictio Completorium2] (rubrica Ordo Praedicatorum)
+Benedictio. A bênção de Deus omnipotente, + Pai, e Filho, e Espírito Santo, desça sobre nós e permaneça para sempre.
 
 [Jube domne]
-V. Conceda-nos, Senhor, a Sua bênção.
+(rubrica divino)$rubrica Jube
+V. Dignai-vos, padre, dar a bênção.
+(sed rubrica 1960 dicitur)
+V. Dignai-Vos, Senhor, dar a bênção.
+
+[Conclusio cisterciensis]
+Ant. O Espírito Santo descerá sobre vós, Maria: não temais, tereis no vosso seio o Filho de Deus.
+_
+V. Eis aqui a escrava do Senhor.
+R. Faça-se em mim segundo a vossa palavra.
+_
+$Oremus
+v. Alegrai-nos e ajudai-nos, Deus omnipotente e misericordioso, a nós que celebramos as alegrias da Conceição do Senhor; e que a piedosa Mãe de Deus, Maria sempre Virgem (em cuja veneração fazemos esta comemoração), nos alcance em todas as nossas necessidades a graça do Espírito Santo e o alívio. Pelo mesmo Cristo, nosso Senhor.
+$Amen
+
+[Lectio regulae]
+Leitura da Regra de Nosso Pai São Bento, Capítulo n.º
 
 [Amen]
 R. Amém.
