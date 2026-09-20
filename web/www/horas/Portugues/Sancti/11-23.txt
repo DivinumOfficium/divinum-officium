@@ -4,5 +4,34 @@ S. Clemente, Papa e Mártir
 [Name]
 Clemente
 
+[Ant Vespera]
+Orando * São Clemente, apareceu-lhe o Cordeiro de Deus.;;109
+Não pelos meus méritos * o Senhor me enviou a vós, para ser participante das vossas coroas.;;110
+Vi sobre o monte * o Cordeiro de pé, de sob cujo pé mana uma fonte viva.;;111
+De sob cujo pé * mana uma fonte viva: a corrente do rio alegra a cidade de Deus.;;112
+Todas as gentes * em redor acreditaram em Cristo Senhor.;;116
+
+[Ant 1]
+Oremos todos * ao Senhor Jesus Cristo, para que abra aos seus confessores a veia de uma fonte.
+
+[Oratio] (nisi communi Summorum Pontificum)
+Ó Deus, que nos alegrais com a solenidade anual do B. Clemente, vosso Mártir e Pontífice, visto que celebramos o seu nascimento, concedei-nos propício que imitemos também a virtude da sua paixão.
+$Per Dominum
+
 [Versum 0]
 @Commune/C2a::s/N\./Clemente/
+
+[Ant Laudes]
+@:Ant Vespera:s/;;.*//g
+
+[Ant 2]
+Tendo tomado o caminho para o mar, * o povo clamava em alta voz: Senhor Jesus Cristo, salvai-o; e Clemente, com lágrimas, dizia: Recebei, Pai, o meu espírito.
+
+[Ant 2] (rubrica cisterciensis)
+Oremos todos * ao Senhor Jesus Cristo, para que nos mostre o corpo do seu Mártir.
+
+[Ant Vespera 3]
+@:Ant Vespera:s/116/115/
+
+[Ant 3]
+Destes, Senhor, * uma habitação ao vosso Mártir Clemente no mar, preparada à maneira de um templo de mármore por mãos angélicas: dando um caminho ao povo da terra, para que anunciem as vossas maravilhas.

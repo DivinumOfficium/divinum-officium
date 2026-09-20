@@ -1,9 +1,55 @@
 [Officium]
 Santa Cecília, Virgem e Mártir
 
+[Ant Vespera]
+Enquanto os órgãos tocavam, * Cecília cantava ao Senhor, dizendo: Seja o meu coração imaculado, para que eu não seja confundida.;;109
+Valeriano * encontrou Cecília, no seu quarto, orando com um Anjo.;;112
+Cecília, * vossa serva, Senhor, serve-Vos, industriosa como a abelha.;;121
+Bendigo-Vos, * Pai de meu Senhor Jesus Cristo, porque, por vosso Filho, o fogo se extinguiu do meu lado.;;126
+Pedi ao Senhor * três dias de trégua, para consagrar a minha casa em igreja.;;147
+
+[Ant Vespera] (rubrica cisterciensis)
+Enquanto os órgãos tocavam, * Cecília cantava ao Senhor, dizendo: Seja o meu coração imaculado, para que eu não seja confundida.;;109
+Há um segredo, * Valeriano, que vos quero dizer: tenho um Anjo de Deus por amante, que com grande zelo guarda o meu corpo.;;112
+Valeriano * encontrou Cecília, no seu quarto, orando com um Anjo.;;121
+Bendigo-Vos, * Pai de meu Senhor Jesus Cristo, porque, por vosso Filho, o fogo se extinguiu do meu lado.;;126
+Cecília, * vossa serva, Senhor, serve-Vos, industriosa como a abelha.;;147
+
+[Ant 1]
+Há um segredo, * Valeriano, que vos quero dizer: tenho um Anjo de Deus por amante, que com grande zelo guarda o meu corpo.
+
+[Ant 1] (rubrica cisterciensis)
+A gloriosa Virgem * trazia sempre o Evangelho de Cristo no seu peito, e não cessava, nem de dia nem de noite, das conversas divinas e da oração.
+
 [Oratio]
 Ó Deus, que nos alegrais com a solenidade anual da B. Cecília, vossa Virgem e Mártir, dignai-Vos permitir que, honrando-a com estes cultos, imitemos também os exemplos da sua piedosa vida.
 $Per Dominum
 
+[Ant Matutinum]
+A virgem Cecília * vencia Almáquio, e chamava Tibúrcio e Valeriano às coroas do martírio.;;8
+De mãos estendidas * orava ao Senhor, para que a livrasse dos inimigos.;;18
+Com o cilício * Cecília domava os seus membros, e implorava a Deus com gemidos.;;23
+Senhor Jesus Cristo, * semeador do casto conselho, recebei os frutos das sementes que semeastes em Cecília.;;44
+A bem-aventurada Cecília * disse a Tibúrcio: Hoje vos reconheço como meu parente, porque o amor de Deus vos fez desprezador dos ídolos.;;45
+Seja, Senhor, * o meu coração e o meu corpo imaculados, para que eu não seja confundida.;;47
+Cremos que Cristo * Filho de Deus é verdadeiro Deus, que escolheu para si tal serva.;;95
+Nós, conhecendo * o seu santo nome, de modo algum o podemos negar.;;96
+Então Valeriano * partiu e, pelo sinal que tinha recebido, encontrou Santo Urbano.;;97
+
 [Versum 0]
 @Commune/C6::s/N\./Cecília/
+
+[Ant Laudes]
+@:Ant Vespera:s/;;.*//g
+
+[Ant 2]
+Quando a aurora * ia terminando, Cecília exclamou, dizendo: Eia, soldados de Cristo, rejeitai as obras das trevas e revesti-vos das armas da luz.
+
+[Ant 2] (rubrica 1960)
+Quando a aurora * ia terminando, Cecília exclamou, dizendo: Eia, soldados de Cristo, rejeitai as obras das trevas e revesti-vos das armas da luz.
+
+[Ant Vespera 3]
+@:Ant Vespera
+
+[Ant 3]
+A gloriosa Virgem * trazia sempre o Evangelho de Cristo no seu peito, e não cessava, nem de dia nem de noite, das conversas divinas e da oração.
