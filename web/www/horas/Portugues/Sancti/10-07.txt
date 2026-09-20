@@ -1,0 +1,249 @@
+[Ant Vespera]
+Quem é esta, * formosa como a pomba, como a roseira plantada nas margens das ribeiras?;;109
+Virgem poderosa, * como a torre de David: mil escudos pendem dela, toda a armadura dos valentes.;;112
+Ave, Maria, * cheia de graça; o Senhor é convosco: bendita sois vós entre as mulheres.;;121
+Abençoou-vos o Senhor * com o seu poder, porque por vós aniquilou os nossos inimigos.;;126
+Viram-na * as filhas de Sião florescer em flores de rosas, e proclamaram-na beatíssima.;;147
+
+[Hymnus Vespera]
+v. O Núncio da corte celeste,
+Revelando os segredos da Divindade,
+Saúda, cheia de graça,
+A Virgem Mãe de Deus.
+_
+A Virgem visita a Mãe de João,
+Sua parente consanguínea,
+O qual, encerrado no seio, jubiloso,
+Anuncia estar presente Cristo.
+_
+O Verbo, que antes dos séculos
+Saiu da mente do Pai,
+Do seio da Virgem Mãe
+Nasce, Menino mortal.
+_
+O Menino é apresentado no templo,
+E o Legislador obedece à Lei:
+Aqui o Redentor, resgatado
+Por um preço humilde, se imola.
+_
+Aquele que já chorava perdido,
+Logo a Mãe alegre encontra
+O Filho, explicando aos doutos
+Coisas para eles desconhecidas.
+_
+@Psalterium/Doxologies:Nat
+
+[HymnusM Vespera]
+@Sancti/10-07:Hymnus Vespera:s/Nat/NatT/s
+
+[Versum 1]
+V. Rainha do Santíssimo Rosário, rogai por nós.
+R. Para que sejamos dignos das promessas de Cristo.
+
+[Ant 1]
+Bem-aventurada sois, * ó Virgem Maria, Mãe de Deus, que acreditastes no Senhor; cumpriram-se em vós as coisas que vos foram ditas; intercedei por nós junto do Senhor, nosso Deus.
+
+[Oratio]
+Ó Deus, cujo Filho Unigénito, pela sua vida, morte e ressurreição, nos alcançou os prémios da salvação eterna, fazei, Vos rogamos, que, honrando nós estes mystérios pelo Santíssimo Rosário da Bem-aventurada Virgem Maria, imitemos o que contêm e obtenhamos o que prometem.
+$Per eumdem
+
+[Invit]
+Celebremos a Solenidade do Rosário da Virgem Maria: * Adoremos Cristo, seu Filho e Senhor.
+
+[Hymnus Matutinum_]
+v. No monte plantado de oliveiras,
+O Redentor, orando, prostra-se,
+Entristece-se, teme, desfalece,
+Manando suor de sangue.
+_
+Entregue pelo traidor,
+Deus é arrastado para os suplícios,
+E, atado com duros laços,
+É açoitado com flagelos sangrentos.
+_
+Tecida de agudos espinhos,
+A coroa da afronta
+Vestido de esquálida púrpura,
+Coroa o Rei da glória.
+_
+A cruz de peso três vezes árduo,
+Suando, arquejando, tombando,
+Até ao cimo do monte
+É compelido, à força, a carregá-la.
+_
+Pregado ao escuro madeiro,
+Inocente entre malfeitores,
+Orando pelos seus algozes,
+Exangue, exala o espírito.
+_
+@Psalterium/Doxologies:Nat
+
+[Hymnus Matutinum]
+@:Hymnus Matutinum_
+
+[Hymnus Matutinum] (rubrica 196)
+@Sancti/10-07:Hymnus Vespera:s/\@Psalterium.*//s
+@Sancti/10-07:Hymnus Matutinum_:s/^v. //
+
+[HymnusM Matutinum]
+@Sancti/10-07:Hymnus Matutinum_:s/v. // s/Nat/NatT/
+
+[HymnusM Matutinum] (rubrica 196)
+@Sancti/10-07:Hymnus Vespera: s/\@Psalterium.*//s
+@Sancti/10-07:Hymnus Matutinum_:s/v. // s/Nat/NatT/
+
+[Ant Matutinum]
+O Anjo Gabriel * anunciou a Maria: e ela concebeu do Espírito Santo.;;8
+Entrou Maria * em casa de Zacarias, e saudou Isabel.;;18
+Deu à luz * o seu Filho primogénito, e reclinou-O na manjedoura.;;23
+Quando * seus pais levaram Jesus, para O apresentarem ao Senhor, Simeão recebeu-O em seus braços, e louvou a Deus.;;44
+Buscando a Jesus, * seus pais encontraram-n’O, depois de três dias, no meio dos doutores.;;45
+Começou a entristecer-Se, * e o seu suor tornou-se, no horto, como gotas de sangue.;;86
+Tomou * Pilatos a Jesus, e açoitou-O.;;95
+Os soldados, tecendo uma coroa * de espinhos, puseram-Lha sobre a cabeça.;;96
+O império da cruz * está sobre o seu ombro: reinou Deus pelo lenho.;;97
+
+[Nocturn 1 Versum]
+V. Santa Mãe de Deus, sempre Virgem Maria.
+R. Intercedei por nós junto do Senhor, nosso Deus.
+
+[Nocturn 2 Versum]
+V. Depois do parto, ó Virgem, permanecestes intacta.
+R. Intercedei por nós, ó Mãe de Deus.
+
+[Nocturn 3 Versum]
+V. Formosa vos tornastes, e suave.
+R. Nas vossas delícias, ó santa Mãe de Deus.
+
+[Versum 0]
+@:Versum 1
+
+[Ant Laudes]
+Alegrai-vos, * Virgem Mãe; ressuscitou Cristo do sepulcro.
+Subiu Deus * com júbilo, e o Senhor com a voz da trombeta.
+O Espírito do Senhor * encheu todo o universo.
+Foi assunta * Maria ao céu: alegram-se os Anjos e, louvando, bendizem o Senhor, aleluia.
+Foi exaltada * a Virgem Maria sobre os coros dos Anjos, e na sua cabeça está uma coroa de doze estrelas.
+
+[Capitulum Laudes]
+!Sir 24:25; 39:17
+v. Em mim reside toda a graça dos caminhos e da verdade; em mim reside toda a esperança da vida e da virtude! Eu floresci, como a roseira plantada nas margens das ribeiras!
+$Deo gratias
+
+[Hymnus Laudes]
+v. Já vencida a morte, vitorioso,
+Cristo regressa dos infernos,
+E, quebrados os laços da culpa,
+Abre os umbrais do céu.
+_
+Depois de Se ter mostrado bastante aos mortais,
+Ascende às regiões celestes,
+E assenta-Se à direita do Pai,
+Consorte da glória paterna.
+_
+Aquele que já prometera aos seus,
+Havendo de dar o Espírito Santo,
+Em línguas ígneas de amor
+Derrama-O sobre os discípulos entristecidos.
+_
+Livre do peso da carne,
+A Virgem é elevada até aos astros,
+Recebida com o júbilo do céu
+E os cânticos dos Anjos.
+_
+Doze estrelas cingem
+A fronte da alma Mãe:
+Próxima ao trono do Filho,
+Impera sobre todas as criaturas.
+_
+@Psalterium/Doxologies:Nat
+
+[Versum 2]
+V. Deus escolheu-a e predestinou-a.
+R. E fê-la habitar no seu tabernáculo.
+
+[Ant 2]
+Celebremos devotamente * a solenidade de hoje do Santíssimo Rosário de Maria, Mãe de Deus, para que ela interceda por nós junto do Senhor Jesus Cristo.
+
+[Lectio Prima]
+!Sir 24:17-18
+v. Elevei-me como o cedro no Líbano, e como o cipreste no monte Sião: elevei-me como a palmeira em Cades, e como as plantações de rosas em Jericó.
+
+[Responsory Breve Tertia]
+R.br. Santa Mãe de Deus, * sempre Virgem Maria.
+R. Santa Mãe de Deus, * sempre Virgem Maria.
+V. Intercedei por nós junto do Senhor, nosso Deus.
+R. Sempre Virgem Maria.
+&Gloria
+R. Santa Mãe de Deus, * sempre Virgem Maria.
+
+[Versum Tertia]
+@:Nocturn 2 Versum
+
+[Capitulum Sexta]
+!Sir 39:19
+v. Fazei despontar a vossa flor, como um lírio; exalai o vosso perfume; lançai ramos graciosos; cantai hinos de louvor; e bendizei o Senhor nas suas obras.
+$Deo gratias
+
+[Responsory Breve Sexta]
+R.br. Depois do parto, ó Virgem, * permanecestes intacta.
+R. Depois do parto, ó Virgem, * permanecestes intacta.
+V. Intercedei por nós, ó Mãe de Deus.
+R. Permanecestes intacta.
+&Gloria
+R. Depois do parto, ó Virgem, * permanecestes intacta.
+
+[Versum Sexta]
+@:Nocturn 3 Versum
+
+[Capitulum Nona]
+@:Lectio Prima
+$Deo gratias
+
+[Responsory Breve Nona]
+R.br. Formosa vos tornastes, * e suave.
+R. Formosa vos tornastes, * e suave.
+V. Nas vossas delícias, ó santa Mãe de Deus.
+R. E suave.
+&Gloria
+R. Formosa vos tornastes, * e suave.
+
+[Versum Nona]
+@:Versum 2
+
+[Hymnus Vespera 3]
+v. A vós, jubilosa de alegrias,
+A vós, ferida de dores,
+A vós, revestida de glória perpétua,
+Ó Virgem Mãe, celebramos.
+_
+Ave, transbordante de alegria,
+Quando concebeis, quando visitais;
+E dais à luz, ofereceis, encontrais,
+Ó Mãe bem-aventurada, o vosso Filho.
+_
+Ave, dolorosa, e no mais íntimo
+Do coração, a agonia, os açoites,
+Os espinhos e a cruz do Filho
+Padecestes, ó princesa dos mártires.
+_
+Ave, nos triunfos do Filho,
+Nos fogos do Paráclito,
+Na honra e luz do reino,
+Rainha resplandecente de glória.
+_
+Vinde, ó povos, colhei
+Destes mistérios as rosas,
+E tecei coroas para a ínclita
+Mãe do belo amor.
+_
+@Psalterium/Doxologies:Nat
+
+[HymnusM Vespera 3]
+@Sancti/10-07:Hymnus Vespera 3:s/Nat/NatT/s
+
+[Versum 3]
+@:Versum 1
+
+[Ant 3]
+Bem-aventurada Mãe * e Virgem intacta, gloriosa Rainha do mundo, sintam o vosso auxílio todos os que celebram a vossa solenidade do Santíssimo Rosário.
