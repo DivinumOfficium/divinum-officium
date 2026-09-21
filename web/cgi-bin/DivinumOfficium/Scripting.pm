@@ -1,5 +1,6 @@
 # Module for processing hour scripts.
 package DivinumOfficium::Scripting;
+
 use strict;
 use warnings;
 use Carp;
