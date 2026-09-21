@@ -1,0 +1,25 @@
+@Sancti/10-01
+
+[Name]
+@Sancti/10-01::s/Postcommunio.*/Postcommunio=Remígii
+
+[Ant 1]
+@Commune/C4:Ant 2
+
+[Versum 1]
+@Commune/C4:Nocturn 2 Versum
+
+[Oratio]
+@Commune/C4-1
+
+[Ant 2]
+@Commune/C4:Ant 1
+
+[Versum 2]
+@Commune/C4:Versum 1
+
+[Secreta]
+@Commune/C4-1
+
+[Postcommunio]
+@Commune/C4-1

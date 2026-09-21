@@ -1,0 +1,59 @@
+[Officium]
+In Translatione S. Wolfgangi Episcopi et Confessoris
+
+[Rank]
+;;Duplex;;3;;vide C4
+
+[Rule]
+vide C4;mtv
+9 lectiones
+In 3 Nocturno lectiones ex C5 in 1 loco
+Credo
+
+[Comment]
+(d. ass. e 7 hujus)
+
+[Name]
+Wolfgángum
+Secreta=Wolfgángo
+Postcommunio=Wolfgángi
+
+[Oratio]
+Santi Pontificis tui, Dómine, et Patris nostri Wolfgángi sollemnitátem nobis celebrántibus tríbue: ut, sicut translatiónem ejus devotíssime cólimus; ita et actus ejus fidéliter imitémur. 
+$Per Dominum
+
+[Lectio4]
+Sancto Wolfgángo Pupíngæ in Austria anno nongentésimo nonagésimo quarto prídie Kaléndas Novémbris mórtuo, supervéniens, ut moriturus prædixerat, Hartvícus Salisburgénsis archiepíscopus, ejus sacrum cadáver curávit, ac primum ibi in oratório sancti Othmári illíus intestína decénter cóndidit, réliquum vero corpus spátio septem diérum advérso Danúbio Ratisbónam advéxit, ab omni clero populóque, ac præsértim a paupéribus et víduis, commúnem miserórum patrem deplorántibus, honorífice suscéptum: quod postquam in Cathedráli sancti Petri ecclésia sollémnibus exsequiárum offíciis honorátum, et per ómnia, qua reformávit, cœnóbia reverénter circumlatum est, tandem in célebri sancti Emmerámi ecclésia tumulátum fuit.
+
+[Lectio5]
+Exáctis a morte quinquagínta octo annis et percrebrescéntibus per omnem vicíniam miráculis, cum sanctus Leo nonus per instántiam serenissimi imperatóris Henríci ad partes Germániæ visitándas, ac præcípue ad urbem Ratisbónam ad venerábile corpus beáti Wolfgángi ejúsdem urbis episcopi transferéndum evocatus esset, atque cum imperatóre et magna episcopórum ac príncipum multitúdine Ratisbónam perveníret, ómnibus diligénter examinátis et inspéctis, beátum Confessórem e sepúlcro levávit, et consuéta Sanctórum veneratióne coléndum edíxit: tum sacrum ejus corpus novo túmulo impósitum, in occidentáli ejúsdem ecclésiæ crypta, post eam, quam ipse dedicavit, aram, septima Octóbris venerabúndus repósuit, et muro inclúsit.
+
+[Lectio6]
+Cum autem in memorata crypta ara nova, qua média erat, construerétur, tumba antíqua repérta fuit: hanc rite clausam Wolfgángus secúndus Ratisbonénsis episcopus præséntibus plúribus prælátis alisque téstibus anno millésimo sexcentésimo duodécimo apéruit, et in ea, una cum antíqua lámina plúmbea sancti Wolfgángi nomen reférénte, et magno Leónis numísmate, et deauráta cruce sacras exúvias invénit, eásque annuénte et sacras étiam pœnárum condonatiónes largiénte Paulo quinto summo Pontífice anno sequénti in Cathedrálem basílicam (ubi et pars sacri cápitis reserváta fuit) et post octiduána sollémnia, præsénte immensa populi multitúdine celebrata, duodécima Maji in priorem cryptam tránstulit, et post aram médiam muro inséruit.
+
+[Introitus]
+@Commune/C2::1-2
+!Ps 88:2
+Misericórdias Dómini in ætérnum cantábo.
+&Gloria
+@Commune/C2::6
+
+[Lectio]
+@Sancti/08-04
+
+[Graduale]
+@Sancti/12-07
+
+[Evangelium]
+@Commune/C5
+
+[Secreta]
+Hóstias, quǽsumus, Dómine, quas tuæ majestáti consecrándas offérimus, interveniénte beáto Wolfgángo, Confessóre tuo atque Pontífice, ad perpétuam atque præséntem fac nobis proveníre salútem.
+$Per Dominum
+
+[Communio]
+@Commune/C4-1
+
+[Postcommunio]
+Tua sancta sméntes, quǽsumus, Dómine, Deus noster: ut beáti Wolfgángi, Confessóris tui atque Pontíficis, nos fóveant continuáta præsidia.
+$Per Dominum

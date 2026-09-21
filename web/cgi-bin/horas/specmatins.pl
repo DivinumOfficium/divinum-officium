@@ -1055,7 +1055,7 @@ sub lectio : ScriptFunc {
        $version !~ /196/
     && $commune !~ /C10/
     && $rule !~ /no93/i
-    && $winner{Rank} !~ /Octav.*(Epi|Corp)/i
+    && $winner{Rank} !~ /Octav.*(Epiphan|Corp)/i
     && (
 
       # Tridentine: Commemoratio Sancti unless there is a 9th Responsory
@@ -1154,7 +1154,7 @@ sub lectio : ScriptFunc {
                       #if ($winner{Rule} !~ /9 lectiones/i && exists($winner{Responsory3})) { $cflag = 0; }
 
     if ( !$L9winnerflag
-      && ($commemoratio =~ /sancti/i && $commemoratio{Rank} =~ /S\. /i || $commemoratio{Rank} =~ /infra octavam/i)
+      && ($commemoratio =~ /sancti/i && $commemoratio{Rank} =~ /[SB]\. /i || $commemoratio{Rank} =~ /infra octavam/i)
       && ($winner !~ /tempora/i || $winner{Rank} < 5)
       && ($version !~ /1955/ || $comrank > 4)
       && $version !~ /Cist/i
@@ -1207,7 +1207,7 @@ sub lectio : ScriptFunc {
         }
       }
     }
-    if ($winner{Rank} =~ /Octav.*(Epi|Corp)/i && $w !~ /!.*Vigil/i) { $w = $wo; }
+    if ($winner{Rank} =~ /Octav.*(Epiphan|Corp)/i && $w !~ /!.*Vigil/i) { $w = $wo; }
     ;    #*** if removed from top
     if (exists($w{'Lectio Vigilia'})) { $w = $w{'Lectio Vigilia'}; }
 
