@@ -1,0 +1,52 @@
+[Officium]
+S. Wolfgangi Episcopi et Confessoris
+(sed dioecesis Ratisbonensis)
+S. Wolfgangi Episcopi et Confessoris, Patroni principalis Civitatis et Diœcesis
+
+[Rank]
+;;Duplex;;3;;vide C4-1
+(sed dioecesis monacensis et rubrica 1960)
+;;Simplex;;1.1;;vide C4-1
+(sed dioecesis Ratisbonensis)
+;;Duplex I classis;;6;;ex C4
+
+[Rule]
+vide C4-1
+(sed dioecesis Ratisbonensis)
+ex C4-1
+(deinde dicitur)
+9 lectiones
+(sed dioecesis monacensis et rubrica 1960 omittitur)
+Gloria
+(dioecesis Ratisbonensis)Psalmi Dominica
+(dioecesis Ratisbonensis)Antiphonas horas
+(dioecesis Ratisbonensis)Credo
+
+[Name]
+Wolfgángum
+Secreta=Wolfgángi
+Postcommunio=Wolfgángi
+
+[Oratio]
+Deus, qui nobis ætérnæ salútis beátum Wolfgángum Epíscopum minístrum tribuísti: præsta, quǽsumus; ut, quem doctórem vitæ habúimus in terris, intercessórem habére mereámur in cælis.
+$Per Dominum
+
+[Lectio4]
+Wolfgángus, nóbili in Suévia génere prognátus, rerum exterarum fuit et sui contémptor egregius, solum ex ánimo Deum querens: honores amplíssimos ab Henríco Trevirénsium epíscopo sibi oblátos recusávit; illóque demórtuo, pollicitatiónibus aliórum contémptis, monásticam tandem vitam, cujus semper desidério flagráverat, est ampléxus. Sacris ordínibus a beáto Udalríco initiátus, cum in Pannóniam prædicándi Evangélii causa se prius contulísset, propter conjúnctam in eo exímia cum pietáte prudéntiam, Ottónis imperatóris stúdio, totiúsque cleri et pópuli acclamatióne, ecclésiæ Ratisbonénsi rite præfícitur.
+
+[Lectio5_]
+Suscépto episcopatus múnere, gregem Dómini verbo pavit, et exémplo, sanctissimísque ecclésiam temperávit institútis. Monastério sancti Emmerámi, quod jam diu epíscopi administráverant, restitútis provéntibus, magno illíus bono, insignem virum Romuáldum præpósuit. Sancti moniálium cœnóbium, quod ipse fundaverat, tam sancte instituit, ut collapsa in alis disciplina eo exémplo sit fácile restauráta, novoque pietatis odóre capta Brígida, Baváriæ ducis filia, sponsum Christum secúta, ad sacras se virgines aggregarit. Bohémis, quo ampliora apud illos fides increménta cáperet, contémpto suæ ecclésiæ detriménto, rejéctis aliórum consíliis, próprium dari epíscopum libentíssime permísit.
+
+[Lectio5]
+@:Lectio5_
+(sed dioecesis ratisbonensis)
+@:Lectio5_: s/Bohémis.*//
+
+[Lectio6_]
+Egrégiam viri sanctitátem comprobarunt energúmeni, et váriis languóribus oppréssi, quos precatióne sanávit. Divíno afflátus instinctu, sanctum Henrícum imperatorem regnaturum, fratrem ipsius Brunónem ad episcopatum promótum iri, e soróribus álteram regínam, abbatíssam álteram fore prædíxit. Dénique cum vigínti et ámplius annis in séduli Pastóris múnere peráctis, extrémum sibi diem imminére intelligeret, quæ ex usitáta liberalitáte supérerant, per manus páuperum præmísit, sacráque Eucharístiæ viático præmunítus, in sancti Othmári æde, uti divínitus antea tuturum acceperat, sanctíssimam vitam pari morte conclúsit, Ratisbónæ in templo sancti Emmerámi sepúltus.
+
+[Lectio6]
+@:Lectio6_
+(sed dioecesis ratisbonensis dicuntur)
+@:Lectio5_: s/.*(Bohémis)/$1/ s/$/~/
+@:Lectio6_: s/(præmísit).*/in cæli gazophylácium $1./

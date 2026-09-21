@@ -171,7 +171,10 @@ for my $ver (1 .. @versions) {
     : $version =~ /1888|1906/ ? 4
     : $version =~ /196/ ? 6
     : 5;
-  my $ranklimit2 = $version =~ /1888|1906/ ? 2.2 : $ranklimit;
+  my $ranklimit2 =
+      $version =~ /1888|1906/ ? 2.2
+    : $version =~ /196/ ? 5
+    : $ranklimit;
 
   for my $cday (1 .. $to) {
     my ($day, $month, $year) = ydays_to_date($cday, $kyear);
