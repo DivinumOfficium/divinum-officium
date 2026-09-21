@@ -4,14 +4,12 @@ use utf8;
 use strict;
 use warnings;
 use Carp;
-use DivinumOfficium::FileIO qw(do_read);
+use Exporter qw(import);
 
-BEGIN {
-  require Exporter;
-  our $VERSION = 1.00;
-  our @ISA = qw(Exporter);
-  our @EXPORT_OK = qw(vernaculars liturgical_color);
-}
+our $VERSION = 1.00;
+our @EXPORT_OK = qw(vernaculars liturgical_color);
+
+use DivinumOfficium::FileIO qw(do_read);
 
 #*** vernaculars($basedir)
 # Returns a list of available vernacular languages for the datafiles rooted at

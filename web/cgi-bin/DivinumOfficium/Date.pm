@@ -3,14 +3,14 @@ package DivinumOfficium::Date;
 use strict;
 use warnings;
 use POSIX qw/floor/;
+use Exporter qw(import);
 
-BEGIN {
-  require Exporter;
-  our $VERSION = 1.00;
-  our @ISA = qw(Exporter);
-  our @EXPORT_OK =
-    qw(getweek leapyear geteaster get_sday nextday day_of_week monthday prevnext ydays_to_date date_to_days date_to_ydays days_to_date);
-}
+our $VERSION = 1.00;
+our @EXPORT_OK = qw(
+  getweek leapyear geteaster get_sday nextday
+  day_of_week monthday prevnext
+  ydays_to_date date_to_days date_to_ydays days_to_date
+);
 
 use FindBin qw($Bin);
 use Time::Local;

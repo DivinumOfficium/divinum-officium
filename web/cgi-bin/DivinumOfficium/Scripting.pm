@@ -4,15 +4,14 @@ use strict;
 use warnings;
 use Carp;
 use Attribute::Handlers;
+use Exporter qw(import);
 
-BEGIN {
-  require Exporter;
-  our $VERSION = 1.00;
-  our @ISA = qw(Exporter);
-  our @EXPORT_OK = qw(
-    dispatch_script_function
-    parse_script_arguments);
-}
+our $VERSION = 1.00;
+our @EXPORT_OK = qw(
+  dispatch_script_function
+  parse_script_arguments
+);
+
 use FindBin qw($Bin);
 use lib "$Bin/..";
 my %script_functions;
