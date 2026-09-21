@@ -2,15 +2,13 @@ package DivinumOfficium::FileIO;
 use strict;
 use warnings;
 use utf8;
+use Exporter qw(import);
 
 # Text-based IO for Divinum Officium Project.
 #
-BEGIN {
-  require Exporter;
-  our $VERSION = 1.00;
-  our @ISA = qw(Exporter);
-  our @EXPORT_OK = qw(do_read do_write);
-}
+
+our $VERSION = 1.00;
+our @EXPORT_OK = qw(do_read do_write);
 
 # do_read(filename)
 #

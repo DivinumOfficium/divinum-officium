@@ -3,15 +3,14 @@ package DivinumOfficium::LanguageTextTools;
 # use strict;
 # use warnings;
 use utf8;
+use Exporter qw(import);
 
-BEGIN {
-  require Exporter;
-  our $VERSION = 1.00;
-  our @ISA = qw(Exporter);
-  our @EXPORT_OK = qw(prayer rubric prex translate load_languages_data
-    omit_regexp suppress_alleluia process_inline_alleluias
-    alleluia_ant ensure_single_alleluia ensure_double_alleluia);
-}
+our $VERSION = 1.00;
+our @EXPORT_OK = qw(
+  prayer rubric prex translate load_languages_data
+  omit_regexp suppress_alleluia process_inline_alleluias
+  alleluia_ant ensure_single_alleluia ensure_double_alleluia
+);
 
 ### private vars
 #

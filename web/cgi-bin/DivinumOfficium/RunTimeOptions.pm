@@ -2,13 +2,10 @@ package DivinumOfficium::RunTimeOptions;
 use utf8;
 use strict;
 use warnings;
+use Exporter qw(import);
 
-BEGIN {
-  require Exporter;
-  our $VERSION = 1.00;
-  our @ISA = qw(Exporter);
-  our @EXPORT_OK = qw(check_version check_horas check_language);
-}
+our $VERSION = 1.00;
+our @EXPORT_OK = qw(check_version check_horas check_language);
 
 # private
 

@@ -6,15 +6,13 @@ use warnings;
 use FindBin qw($Bin);
 use lib "$Bin/..";
 
+use Exporter qw(import);
+
+our $VERSION = 1.00;
+our @EXPORT_OK = qw(get_from_directorium transfered check_coronatio dirge hymnmerge hymnshift hymnshiftmerge);
+
 use DivinumOfficium::FileIO qw(do_read);
 use DivinumOfficium::Date qw(leapyear geteaster get_sday nextday);
-
-BEGIN {
-  require Exporter;
-  our $VERSION = 1.00;
-  our @ISA = qw(Exporter);
-  our @EXPORT_OK = qw(get_from_directorium transfered check_coronatio dirge hymnmerge hymnshift hymnshiftmerge);
-}
 
 ### private vars
 
