@@ -1,2 +1,20 @@
 [Officium]
 Die III infra octavam Paschae
+
+[Oratio]
+Ó Deus, que aumentais incessantemente a vossa Igreja com novos filhos, concedei aos vossos servos a graça de mostrarem, pela sã conduta de sua vida, o efeito do sacramento que receberam pela fé.
+$Per Dominum
+
+[Ant Matutinum]
+@Tempora/Pasc0-0::s/^V\..*//sm
+V. Ressuscitou o Senhor, verdadeiramente, aleluia.
+R. E apareceu a Simão, aleluia.
+
+[Ant 2]
+Pôs-se Jesus * no meio dos seus discípulos, e disse-lhes: A paz seja convosco, aleluia, aleluia.
+
+[Ant 3]
+Vede as minhas mãos * e os meus pés, pois sou Eu mesmo, aleluia, aleluia.
+
+[Ant 3] (rubrica cisterciensis)
+Ofereceram * os discípulos ao Senhor um bocado de peixe assado, e um favo de mel, aleluia, aleluia.
