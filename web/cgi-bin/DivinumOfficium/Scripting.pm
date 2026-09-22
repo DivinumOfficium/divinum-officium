@@ -51,7 +51,8 @@ sub UNIVERSAL::ScriptFunc : ATTR(CODE,BEGIN) {&script_attr_handler}
 sub UNIVERSAL::ScriptShortFunc : ATTR(CODE,BEGIN) {&script_attr_handler}
 
 sub script_attr_handler {
-  my ($pkg, $symbol_ref, $code_ref, $attr, $name_override) = @_;
+  #   $pkg,  $symbol_ref, $code_ref, $attr, $name_override
+  my (undef, $symbol_ref, $code_ref, $attr, $name_override) = @_;
   my %params = ('short' => ($attr eq 'ScriptShortFunc'));
 
   if ($name_override || ref($symbol_ref) eq 'GLOB') {
