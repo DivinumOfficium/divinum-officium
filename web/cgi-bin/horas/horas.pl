@@ -140,8 +140,17 @@ sub resolve_refs {
 
     #red prefix
     if ($line =~ /^(R\.br\.|R\.|V\.|Ant\.|Benedictio\.|Absolutio\.|Responsorium\.)(.*)/) {
-      my $h = setvrbar($1);
+      # «R.br.» is engine syntax rather than something to read: postprocess_short_resp
+      # opens a flip-flop range on it to place the Paschal Alleluias. Drop the «br.»
+      # for display only, so the line reads as the plain response it is while the
+      # source text keeps the marker the Alleluia logic depends on.
+      # Capture BOTH halves before substituting: a successful s/// resets $1 and
+      # $2, so touching $h first would leave $l undef and silently swallow the
+      # responsory text. (setvrbar is safe only because a sub restores them.)
+      my $h = $1;
       my $l = $2;
+      $h =~ s/^R\.br\./R./;
+      $h = setvrbar($h);
 
       $h =~ s/(Benedictio|Absolutio)/ translate($1, $lang) /e;
       $line = setfont($redfont, $h) . $l;
