@@ -4,8 +4,8 @@ use utf8;
 use FindBin qw($Bin);
 use lib "$Bin/..";
 
-# Defines ScriptFunc and ScriptShortFunc attributes.
-#use horas::Scripting;
+# Defines ScriptFunc attributes.
+use DivinumOfficium::Scripting;
 
 #*** translate_cz()
 # translates a line from Latin to Czech

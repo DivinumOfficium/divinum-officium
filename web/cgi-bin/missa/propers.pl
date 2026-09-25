@@ -10,7 +10,7 @@ use lib "$Bin/..";
 
 use DivinumOfficium::Directorium qw(check_coronatio);
 
-# Defines ScriptFunc and ScriptShortFunc attributes.
+# Defines ScriptFunc attributes.
 use DivinumOfficium::Scripting;
 $a = 4;
 

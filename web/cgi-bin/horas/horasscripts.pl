@@ -11,7 +11,7 @@ use DivinumOfficium::LanguageTextTools
   qw(prayer translate omit_regexp suppress_alleluia process_inline_alleluias alleluia_ant ensure_single_alleluia ensure_double_alleluia);
 use DivinumOfficium::Date qw(date_to_days days_to_date);
 
-# Defines ScriptFunc and ScriptShortFunc attributes.
+# Defines ScriptFunc attributes.
 use DivinumOfficium::Scripting;
 my $precesferiales;
 $a = 1;

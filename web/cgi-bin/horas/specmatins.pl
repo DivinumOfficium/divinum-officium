@@ -8,7 +8,7 @@ use FindBin qw($Bin);
 use lib "$Bin/..";
 use DivinumOfficium::Directorium qw(get_from_directorium hymnmerge hymnshift hymnshiftmerge);
 
-# Defines ScriptFunc and ScriptShortFunc attributes.
+# Defines ScriptFunc attributes.
 use DivinumOfficium::Scripting;
 $a = 4;
 
