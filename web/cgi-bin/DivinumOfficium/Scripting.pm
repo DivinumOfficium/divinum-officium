@@ -17,47 +17,35 @@ use FindBin qw($Bin);
 use lib "$Bin/..";
 my %script_functions;
 
-#*** sub register_script_function($function_name, $code_ref, %params)
+#*** sub register_script_function($function_name, $code_ref)
 # Registers a new script function (the sort invoked with & in the scripts).
 # $function_name is the name to be used in scripts in order to invoke it, and
-# $code_ref is a reference to the Perl sub that should handle it. By default
-# the handler for the long form is set; if $params{short} is true, the short
-# handler is set instead.
+# $code_ref is a reference to the Perl sub that should handle it.
 #
 # This subroutine is intended to be called in response to the presence of an
 # appropriate attribute on some other subroutine.
 sub register_script_function {
-  my ($function_name, $code_ref, %params) = @_;
-  $script_functions{$function_name}{$params{'short'} ? 'shortfunc' : 'func'} = $code_ref;
+  my ($function_name, $code_ref) = @_;
+  $script_functions{$function_name} = $code_ref;
 }
 
-# Glue between Attribute::Handlers and our scripting mechanism. We define two
-# attributes:
+# Glue between Attribute::Handlers and our scripting mechanism.
 #
-# - ScriptFunc(func_name): registers the sub as a handler for a scripting
+# ScriptFunc(func_name): registers the sub as a handler for a scripting
 #   function with name func_name.
-# - ScriptShortFunc(func_name): registers the sub as a handler for the short
-#   text of a scripting function.
 #
-# In both cases, omitting func_name causes the name of the sub to be used. This
-# is probably more useful for ScriptFunc than for ScriptShortFunc.
-#
-# Defining two handlers of the same type (i.e. long or short) for the same
-# scripting function results in undefined behaviour.
 # TODO: Having these in UNIVERSAL is heavy-handed. Is there a way to declare
 # these in the calling package? (Exporting subsequently is too late, as
 # Attribute::Handlers has already run by then.)
 sub UNIVERSAL::ScriptFunc : ATTR(CODE,BEGIN) {&script_attr_handler}
-sub UNIVERSAL::ScriptShortFunc : ATTR(CODE,BEGIN) {&script_attr_handler}
 
 sub script_attr_handler {
 
   #   $pkg,  $symbol_ref, $code_ref, $attr, $name_override
-  my (undef, $symbol_ref, $code_ref, $attr, $name_override) = @_;
-  my %params = ('short' => ($attr eq 'ScriptShortFunc'));
+  my (undef, $symbol_ref, $code_ref, undef, $name_override) = @_;
 
   if ($name_override || ref($symbol_ref) eq 'GLOB') {
-    register_script_function($name_override || *{$symbol_ref}{NAME}, $code_ref, %params);
+    register_script_function($name_override || *{$symbol_ref}{NAME}, $code_ref);
   } else {
     croak "Unexpected script attribute handler state without symbol table entry.";
   }
@@ -77,7 +65,7 @@ sub dispatch_script_function {
   if (!exists($script_functions{$function_name})) {
     croak "Invalid script function $function_name.";
   }
-  my $code_ref = $script_functions{$function_name}{'func'};
+  my $code_ref = $script_functions{$function_name};
   croak "No handler registered for $function_name."
     unless ref($code_ref) eq 'CODE';
   return $code_ref->(@args);

@@ -69,9 +69,8 @@ is([parse_script_arguments('foo')], [undef],
 
 ### register_script_function / dispatch_script_function
 
-# register_script_function() isn't exported (it's meant to be driven via the
-# :ScriptFunc/:ScriptShortFunc attributes below), but it's still a plain sub
-# in the package, so it can be called by its fully-qualified name.
+# register_script_function() isn't exported (it's meant to be driven via the :ScriptFunc attributes below),
+# but it's still a plain sub in the package, so it can be called by its fully-qualified name.
 DivinumOfficium::Scripting::register_script_function('TestDispatch', sub { return "got:@_" });
 
 is(dispatch_script_function('TestDispatch', 'a', 'b'),
@@ -81,17 +80,6 @@ like(
   dies { dispatch_script_function('NoSuchScriptFunction') },
   qr/Invalid script function NoSuchScriptFunction/,
   'Dispatching an unregistered function name is fatal',
-);
-
-# Registering only a "short" handler leaves the (only ever consulted) 'func'
-# slot empty. This also demonstrates that the short-function mechanism is
-# unreachable: dispatch_script_function() never looks at 'shortfunc'.
-DivinumOfficium::Scripting::register_script_function('ShortOnly', sub { return 'x' }, short => 1);
-
-like(
-  dies { dispatch_script_function('ShortOnly') },
-  qr/No handler registered for ShortOnly/,
-  'A function registered only as a short-form handler has no dispatchable code',
 );
 
 ### The real :ScriptFunc attribute mechanism
