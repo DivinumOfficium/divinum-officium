@@ -10,7 +10,7 @@ use utf8;
 use FindBin qw($Bin);
 use lib "$Bin/..";
 
-# Defines ScriptFunc and ScriptShortFunc attributes.
+# Defines ScriptFunc attributes.
 use DivinumOfficium::Scripting;
 my $a = 4;
 
