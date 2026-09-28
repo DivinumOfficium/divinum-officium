@@ -541,17 +541,18 @@ sub get_loadtime_inclusion($$$$$$$) {
 
 my %_cache_latin_name;
 
-#*** setupstring($lang, $fname, %params)
-# Loads the database file from path "$basedir/$lang/$fname" through
-# the cache. Inclusions are performed according to the value of
-# $params{'resolve@'}. If omitted, the default is RESOLVE_ALL.
-sub setupstring($$%) {
+#*** setupstring_layers($lang, $ofname)
+# Resolves a (language, file name) pair into the four values that setupstring()
+# needs to locate the file on disk: the language directory, the file name, the
+# base directory and the resulting path. Kept separate so that a caller can ask
+# "where would this language's own copy of this file live?" without loading and
+# merging every layer above it.
+# Returns ($lang, $fname, $basedir, $fullpath).
+sub setupstring_layers($$) {
 
-  my ($lang, $ofname, %params) = @_;
+  my ($lang, $ofname) = @_;
   my $fname = $ofname;
   my $basedir = our $datafolder;
-  my $calledlang = $lang;
-  our $error;
 
   if ((my $i = index($lang, '../missa')) >= 0) {    # For Monastic look-up of Evangelium, prevent __preamble from
     $lang = substr($lang, $i + 9);                  # horas file to contaminate missa structure which could lead
@@ -571,7 +572,127 @@ sub setupstring($$%) {
     if (index($basedir, 'missa') >= 0 && $fname =~ /Comment.txt$|C\d/)
     || (!(-e "$basedir/$lang/$fname") && -e "$basedir/../horas/$lang/$fname");
 
-  my $fullpath = "$basedir/$lang/$fname";
+  return ($lang, $fname, $basedir, "$basedir/$lang/$fname");
+}
+
+#*** section_in_own_layer($lang, $ofname, $section)
+# Answers whether the translation in $lang has a section of its own for
+# $section in $ofname, i.e. whether the text it contributes is really written in
+# $lang rather than borrowed from the fallback language or from Latin. A section
+# that is only another @-inclusion does not count: the question is whether the
+# translation exists here, not whether it delegates somewhere.
+# Self-references must be passed as $ofname; callers normalize an empty
+# reference target to the file being merged.
+sub section_in_own_layer($$$) {
+
+  my ($lang, $ofname, $section) = @_;
+
+  return 0 if !$lang || $lang eq 'Latin' || !$ofname;
+  $ofname .= '.txt' unless $ofname =~ /\.txt$/;
+
+  my ($l, $f, $fullpath) = (setupstring_layers($lang, $ofname))[0, 1, 3];
+
+  return 0 unless -e $fullpath;
+  my $own = setupstring_parse_file($fullpath, $f =~ s/\.txt$//r, $l);
+  return 0 unless exists $own->{$section};
+  return 0 if $own->{$section} !~ /\S/;
+  return 0 if $own->{$section} =~ /^\s*\@[^\n]*\s*$/m;
+  return 1;
+}
+
+#*** pure_inclusion($text)
+# True when the body of a section is nothing but @-inclusion directives, i.e.
+# the section does not carry a text of its own but points at other propers.
+# Leading !-rubric lines are the section's own scripture citation, and the
+# referenced section brings a citation of its own, so they are not held against
+# it. Blank lines are ignored. A section carrying any other line is not a bare
+# reference.
+sub pure_inclusion($) {
+  my ($text) = @_;
+  return 0 unless defined $text;
+  1 while $text =~ s/^\s*![^\n]*\n//;
+  my $any = 0;
+  for my $line (split /\n/, $text) {
+    next if $line =~ /^\s*$/;
+    return 0 unless $line =~ /^\s*\@[^\n]*$/;
+    $any = 1;
+  }
+  return $any;
+}
+
+# Sections whose value drives day selection, ranking, rule guards or the
+# display name. These are never taken from the Latin layer by reference: their
+# fallback-language value is the meaningful one.
+my $not_a_proper = qr/^(?:__preamble|Rank|Rule|Officium|Name)$/;
+
+#*** prefer_latin_inclusion(\%new, \%base, $calledlang, $latinlang, $ofname)
+# The fallback language is allowed to translate a proper by writing the text out
+# in full where Latin only holds a reference to another proper. When the
+# requested language has nothing of its own for that section, taking the
+# fallback's text drops the requested language out of a proper it does have
+# elsewhere - so before doing that, look at the Latin section: if it is a bare
+# reference and the proper it points at exists in the requested language, keep
+# the reference instead, so that it resolves in the requested language.
+# A section may consist of several @-directives; every one of them then has to
+# be satisfiable in the requested language, otherwise the whole section is left
+# to the fallback language.
+# The references are carried over together with their substitutions: they encode
+# data transforms (stripping psalm numbers, renumbering) that must survive
+# whichever language the reference resolves in.
+# Every structural key is left to the fallback language, and a reference the
+# requested language cannot satisfy is left alone as well.
+sub prefer_latin_inclusion {
+
+  my ($new, $base, $calledlang, $latinlang, $ofname) = @_;
+
+  return unless $calledlang && $calledlang ne $latinlang;
+  return unless %$base;
+
+  my $latin_sections = setupstring($latinlang, $ofname, 'resolve@' => RESOLVE_NONE);
+  return unless %$latin_sections;
+
+  # An @-directive names its file without the extension.
+  (my $selfname = $ofname) =~ s/\.txt$//;
+
+  foreach my $key (keys %$base) {
+    next if $key =~ $not_a_proper;
+    next if $new->{$key};
+    next unless pure_inclusion($latin_sections->{$key});
+
+    # Only worth it if every referenced proper is actually present in the
+    # requested language; otherwise the fallback translation is all there is.
+    my @refs;
+    for my $line (split /\n/, $latin_sections->{$key}) {
+      next if $line =~ /^\s*$/;
+      next if $line =~ /^\s*!/;
+      unless ($line =~ /$InclusionRegex/) { @refs = (); last; }
+      my ($file, $section) = ($1 || $selfname, $2 || $key);
+      unless (section_in_own_layer($calledlang, $file, $section)) { @refs = (); last; }
+      push @refs, $line;
+    }
+    next unless @refs;
+
+    # The fallback language already satisfies the section by reference, with
+    # substitutions of its own: it resolves in the requested language as it is,
+    # so taking the Latin reference would only replace its language-adapted
+    # substitutions (e.g. names) with the Latin ones.
+    next if pure_inclusion($base->{$key});
+
+    $new->{$key} = join("\n", @refs) . "\n";
+  }
+}
+
+#*** setupstring($lang, $fname, %params)
+# Loads the database file from path "$basedir/$lang/$fname" through
+# the cache. Inclusions are performed according to the value of
+# $params{'resolve@'}. If omitted, the default is RESOLVE_ALL.
+sub setupstring($$%) {
+
+  my ($calledlang, $ofname, %params) = @_;
+  our $error;
+
+  my ($lang, $fname, $basedir, $fullpath) = setupstring_layers($calledlang, $ofname);
+
   our ($missa);
 
   our $version;
@@ -585,12 +706,18 @@ sub setupstring($$%) {
 
     # Not yet in cache, so open it and add it.
     my ($base_sections, $new_sections) = ({}, {});
+    my $latinlang = $calledlang =~ /\.\.\/missa/ ? '../missa/Latin' : 'Latin';
+
+    # The Latin-reference rule only makes sense for a language which is neither
+    # Latin itself nor the fallback language: for those the layer below already
+    # *is* Latin, so there is nothing to prefer and their own pages must not
+    # change.
+    my $check_latin_inclusion = ($lang && $lang ne 'Latin' && $lang ne $main::langfb && $lang !~ /-/);
 
     if ($lang eq $main::langfb && $lang ne 'Latin') {
 
       # fallback langauage layers on top of Latin.
-      my $baselang = $calledlang =~ /\.\.\/missa/ ? '../missa/Latin' : 'Latin';
-      $base_sections = setupstring($baselang, $fname, 'resolve@' => RESOLVE_NONE);
+      $base_sections = setupstring($latinlang, $fname, 'resolve@' => RESOLVE_NONE);
     } elsif ($lang =~ /-/) {
 
       # If $lang contains dash, the part before the last dash is taken as a new fallback
@@ -619,6 +746,13 @@ sub setupstring($$%) {
         }
       }
 
+      # The fallback language may have written out a proper in full where Latin
+      # only refers to another one; prefer the Latin reference when it resolves
+      # in the language we are actually rendering. This has to happen before the
+      # layer below is merged in, while the gaps are still gaps.
+      prefer_latin_inclusion($new_sections, $base_sections, $calledlang, $latinlang, $fname)
+        if $check_latin_inclusion;
+
       # Fill in the missing things from the layer below.
       unless (${$new_sections}{'__preamble'} eq ${$base_sections}{'__preamble'}) {
         ${$new_sections}{'__preamble'} .= "\n${$base_sections}{'__preamble'}";
@@ -642,7 +776,14 @@ sub setupstring($$%) {
       }
 
     } else {
-      $new_sections = $base_sections;
+
+      # No file of its own: the fallback language provides everything, but a
+      # Latin reference to a proper the fallback wrote out in full can still be
+      # satisfied in the requested language, so let it win where it can.
+      $new_sections = {};
+      prefer_latin_inclusion($new_sections, $base_sections, $calledlang, $latinlang, $fname)
+        if $check_latin_inclusion;
+      ${$new_sections}{$_} ||= ${$base_sections}{$_} foreach (keys(%{$base_sections}));
     }
     return '' unless %$new_sections;
 
