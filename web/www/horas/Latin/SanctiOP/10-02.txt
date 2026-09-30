@@ -1,0 +1,24 @@
+@Sancti/10-02
+
+[Rule]
+Antiphonas feria
+
+[Responsory2]
+@Sancti/10-02:Responsory3
+
+[Responsory3]
+@Sancti/05-08:Responsory3:1-2
+@Tempora/Pasc4-0:Responsory7:3
+@Sancti/05-08:Responsory3:4
+
+[Versum 2]
+@Sancti/05-08:Versum Nona
+
+[Capitulum Nona]
+@Sancti/10-02:Lectio Prima:s/^(?:v. )?\p{L}\S* (.)/\u$1/m
+
+[Ant Vespera 3]
+@Sancti/10-02:Ant Vespera::1 s/$/;;109;110;111;112;137/
+
+[Versum 3]
+@Sancti/05-08:Versum 1
