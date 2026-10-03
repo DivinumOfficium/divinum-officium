@@ -1,0 +1,35 @@
+[Officium]
+De Sancto N.
+
+[Rank]
+;;Duplex;;1.1
+
+[Rule]
+Gloria
+Credo
+
+[Name]
+Sancti N.
+
+[Introitus]
+!Sap 18:14-15.
+@Tempora/Nat1-0
+
+[Oratio]
+@Tempora/Nat1-0
+
+[Graduale]
+@Tempora/Nat1-0:Graduale:s/Alfa/Beta/
+
+[Epistula]
+@Tempora/Nat1-0:Oratio
+@Tempora/Nat1-0:Graduale:s/Alfa/Beta/
+
+[Communio]
+@Tempora/Nat1-0
+
+[Lectio]
+@Commune/C3a
+
+[Alleluia]
+@Tempora/Nat1-0:Alleluia:s/Alpha/Beta/
