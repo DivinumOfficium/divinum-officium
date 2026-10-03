@@ -610,20 +610,9 @@ sub section_in_own_layer($$$) {
 sub pure_inclusion($) {
   my ($text) = @_;
   return 0 unless defined $text;
-  1 while $text =~ s/^\s*![^\n]*\n//;
-  my $any = 0;
-  for my $line (split /\n/, $text) {
-    next if $line =~ /^\s*$/;
-    return 0 unless $line =~ /^\s*\@[^\n]*$/;
-    $any = 1;
-  }
-  return $any;
+  return 1 if $text =~ /^(?:(?:\s*![^\n]*\n|[^\S\n]*\n)*\s*\@[^\n]*(?:\n(?:\s*\@[^\n]*))*)\s*$/s;
+  return 0;
 }
-
-# Sections whose value drives day selection, ranking, rule guards or the
-# display name. These are never taken from the Latin layer by reference: their
-# fallback-language value is the meaningful one.
-my $not_a_proper = qr/^(?:__preamble|Rank|Rule|Officium|Name)$/;
 
 #*** prefer_latin_inclusion(\%new, \%base, $calledlang, $latinlang, $ofname)
 # The fallback language is allowed to translate a proper by writing the text out
@@ -654,6 +643,11 @@ sub prefer_latin_inclusion {
   # An @-directive names its file without the extension.
   (my $selfname = $ofname) =~ s/\.txt$//;
 
+  # Sections whose value drives day selection, ranking, rule guards or the
+  # display name. These are never taken from the Latin layer by reference: their
+  # fallback-language value is the meaningful one.
+  my $not_a_proper = qr/^(?:__preamble|Rank|Officium|Name)$/;
+
   foreach my $key (keys %$base) {
     next if $key =~ $not_a_proper;
     next if $new->{$key};
@@ -662,6 +656,7 @@ sub prefer_latin_inclusion {
     # Only worth it if every referenced proper is actually present in the
     # requested language; otherwise the fallback translation is all there is.
     my @refs;
+
     for my $line (split /\n/, $latin_sections->{$key}) {
       next if $line =~ /^\s*$/;
       next if $line =~ /^\s*!/;
