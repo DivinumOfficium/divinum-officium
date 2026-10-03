@@ -1,0 +1,24 @@
+@Sancti/10-24
+
+[TODO]
+No lectio from Legends
+
+[Hymnus Vespera]
+@Sancti/aliquibus locis/10-24
+
+[Hymnus Matutinum]
+@:Hymnus Vespera
+
+[Responsory3]
+@SanctiM/09-29:Responsory4
+&Gloria
+@SanctiM/09-29:Responsory4:4 s/.* (\S+ \S+ \S+$)/R. \u$1/
+
+[Hymnus Laudes]
+@Sancti/05-08:HymnusM Laudes:1-5
+@Sancti/aliquibus locis/10-24::2-5
+@Sancti/05-08:HymnusM Laudes:20-30
+
+[Ant Vespera 3]
+@:Ant Vespera::1 s/$/;;109;110;111;112;137/
+

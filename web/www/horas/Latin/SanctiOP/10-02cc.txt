@@ -1,0 +1,11 @@
+[Officium]
+Ss. Leodegarii Episcopi et Martyris
+
+[Rank]
+;;Simplex;;1.1;;vide C2
+
+[Ant 2]
+@Commune/C2:Ant 3
+
+[Oratio]
+@CommuneOP/C2::s/N. (\S+ \S+)/Leodegárii $1 atque Pontíficis/

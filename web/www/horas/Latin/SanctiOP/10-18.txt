@@ -1,0 +1,33 @@
+@Sancti/10-18
+
+[Lectio1]
+@Commune/C1a
+
+[Lectio2]
+@Commune/C1a::s/\. [^.]*\././
+
+[Lectio3]
+@Commune/C1a::1
+@Commune/C1a:Lectio2:6 s/.*?\./9/
+@Commune/C1a::2-4
+
+[Lectio4]
+Ex S. Hieron. de Script. eccl. et ex aliis antiquis Patribus
+@Sancti/10-18::2-3 s/fuit/fuit discipulus ac/ s/Et .*// s/$/~/
+Nam de ipso Paulum intellexisse plerique sanctorum Patrum affírmant. In Acháie Bœotiǽque pártibus Evangélium conscripsísse sanctus Hierónymus refert.
+
+[Lectio5]
+Aliud quoque édedit volúmen egrégium, quod Acta Apostolórum prænotátur: cujus história usque ad biénnium Romæ commorántis Pauli pervénit, id est usque ad quartum Nerónis annum. Ex quo intelligimus in eadem Urbe librum esse compósitum. Evangélium quidem, sicut ab Apóstolis audierat, scripsit: quod in principio sui volúminis apérte declárat. Acta vero Apostolórum, sicut viderat ipse, compósuit.
+
+[Lectio6]
+Evangélium prædicasse in Dalmátia, Gallia, Itália ac Macedónia sanctus Epiphánius prodit. Insuper arte pingéndi præstantem, Christi ac sacræ Deiparæ Apostolorumque Petri et Pauli effigies manu, penicillo coloribúsque
+
+[Lectio7]
+@Commune/C1a::1-6
+Dóminus et Salvátor noster, fratres carissimi, binos in prædicatiónem discipulos mittit: quia duo sunt præcépta caritátis, Dei videlicet amor et próximi: et minus quam inter duos caritas habéri non potest. Ecce enim binos ad prædicándum discipulos Dóminus mittit: quatenus hoc nobis tácitus innuat, quia qui caritatem erga alterum non habet, prædicatiónis officium suscipere nullatenus debet.
+
+[Lectio8]
+Bene autem dicitur quia misit eos ante fácies suam in omnem civitatem et locum quo erat ipse venturus. Prædicatóres enim suos Dóminus séquitur: quia prædicatió prævenit, et tunc ad mentis nostræ habitáculum Dóminus venit, quando verba exhortatiónis præcurrunt, atque per hæc veritas in mente suscipitur. Hinc namque eisdem prædicatóribus Isaías dicit: Paráte viam Dómini: rectas fácite sémitas Dei nostri.
+
+[Lectio9]
+Hinc illis Psalmista ait: Iter fácite ei, qui ascéndit super occásum. Super occásum namque Dóminus ascéndit: quia unde in passiône occúbuit, inde maiórem suam glóriam resurgéndo manifestávit. Super occásum videlicet ascéndit: quia mortem, quam pertulit, resurgéndo calcávit. Ei ergo, qui ascéndit super occásum, iter fácimus, cum nos ejus glóriam vestris mentibus prædicamus: ut eas et ipse post véniens per amoris sui præsentiam illústret.
