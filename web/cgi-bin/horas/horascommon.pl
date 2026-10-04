@@ -916,7 +916,7 @@ sub concurrence {
     $cwrank[2] = $crank = $version =~ /altovadensis/i ? 3.9 : $version =~ /trident/i ? 2.9 : 4.9;
   }
 
-  if ($cwrank[0] =~ /Dominica/i && $trank[0] =~ /in.*octava/i
+  if ($cwrank[0] =~ /Dominica/i && $trank[0] =~ /infra.*octava/i
     || ($cwrank[0] =~ /infra.*octav/i && $version =~ /Trident/))
   {
 
@@ -925,8 +925,8 @@ sub concurrence {
 
     # On Saturday in Cist. rite, it's always from 1st Vespers
     $octvespera = 1 if $version =~ /cist/i && $dayofweek == 6;
-  } elsif ($cwrank[0] =~ /in.*octava|Vigilia Pent/i
-    && ($wrank[0] =~ /Dominica/i || ($winner =~ /Sancti/ && $wrank !~ /in.*octava/i))
+  } elsif ($cwrank[0] =~ /infra.*octava|Vigilia Pent/i
+    && ($wrank[0] =~ /Dominica/i || ($winner =~ /Sancti/ && $wrank !~ /infra.*octava/i))
     && $version =~ /divino/i)
   {
 
@@ -1312,18 +1312,19 @@ sub concurrence {
       $cvespera = 1;
       $dayname[2] .= "<br/>Vespera de præcedenti; commemoratio de sequenti";
 
-      if ( $cwinner{Rank} =~ /infra octavam|post Octavam Asc|Vigilia Pent/i
-        || $ccommemoentries[0] =~ /infra octavam|post Octavam Asc|Vigilia Pent/i)
+      if ( $cwinner{Rank} =~ /infra octavam (.*?)\;|post Octavam Asc|Vigilia Pent/i
+        || $ccommemoentries[0] =~ /infra octavam (.*?)\;|post Octavam Asc|Vigilia Pent/i)
       {
         my @comentries = ();
         my %cstr = ();
+        my $octave = $1;
 
         foreach $commemo (@commemoentries) {
           if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
           %cstr = %{officestring('Latin', $commemo, 0)};
 
           unless (!%cstr
-            || ($cstr{Rank} =~ /infra octavam|post Octavam Asc|Vigilia Pent/i && $cstr{Rank} !~ /Dominica/i))
+            || ($cstr{Rank} =~ /infra octavam $octave|post Octavam Asc|Vigilia Pent/i && $cstr{Rank} !~ /Dominica/i))
           {
             push(@comentries, $commemo);
           }
@@ -1449,7 +1450,14 @@ sub concurrence {
       if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
       %cstr = %{officestring('Latin', $commemo, 1)};
 
-      if (($commemo =~ /tempora/i || $cstr{Rank} =~ /infra octavam/i) && $cstr{Rank} !~ /Dominica/i) {
+      if (
+        (
+          $commemo =~ /tempora/i || ($cstr{Rank} =~ /infra octavam/i
+            && $cwrank[0] !~ /infra octavam/i
+            && $srank[0] !~ /In Commemoratio.*Defunctorum/)
+        )
+        && $cstr{Rank} !~ /Dominica/i
+      ) {
         next;    # no superseded Tempora or day within octave can have 1st vespers unless a Sunday
       }
 
