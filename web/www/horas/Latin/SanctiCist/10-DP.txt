@@ -1,0 +1,139 @@
+@Sancti/10-07
+
+[Rank]
+Solemnitas SS. Rosarii Beatæ Mariæ Virginis;;Duplex 2 classis;;4.1;;ex C11
+
+[Rule]
+ex C11;
+12 lectiones
+Psalmi Dominica
+Antiphonas horas
+Doxology=NatT
+
+[Ant Vespera]
+Hæc est Regína Vírginum, * quæ génuit Regem velut rosa decóra Virgo: Dei Génitrix, per quam repérimus Deum et hóminem: alma Virgo intercéde pro nobis ómnibus.;;109
+Quasi palma * exaltáta sum in Cades, et quasi plantátio rosæ in Jéricho.;;112
+Quasi sol refúlgens, * sic illa effúlsit in templo Dei: quasi arcus refúlgens inter nébulas glóriæ, et quasi flos rosárum in diébus vernis.;;121
+Floréte flores * quasi lílium, et date odórem, et frondéte in grátiam, et collaudáte cánticum, et benedícite Dóminum in opéribus suis.;;126
+
+[Responsory Vespera]
+R.br. Date nómini ejus magnificéntiam: * Cantáte illi in voce labiórum vestrórum.
+R. Date nómini ejus magnificéntiam: * Cantáte illi in voce labiórum vestrórum.
+V. In cánticis labiórum, et cítharis.
+R. Cantáte illi in voce labiórum vestrórum.
+
+[Ant 1]
+Speciósa facta es * et suávis in delíciis tuis, sancta Dei Génitrix, quam vidéntes fíliæ Sion vernántem in flóribus rosárum, et líliis convállium, beatíssimam prædicavérunt, et regínæ laudavérunt eam.
+
+[Ant Matutinum]
+@Sancti/10-07::s/86/47/ s/95/84/ s/96/86/ s/97/95/
+@Sancti/10-07:Ant Laudes:1:s/\.?$/, allelúia.;;96/
+@Sancti/10-07:Ant Laudes:2:s/\.?$/, allelúia.;;97/
+@Sancti/10-07:Ant Laudes:3:s/\.?$/, allelúia.;;98/
+;;249;250;251
+
+[Ant Matutinum 3N]
+@Sancti/10-07:Ant Laudes:4
+
+[Lectio1]
+@Sancti/10-07::1-7
+
+[Lectio2]
+@Sancti/10-07:Lectio1:2 s/11-16/16-19/
+@Sancti/10-07:Lectio1:8
+@Sancti/10-07:Lectio2:2-4
+
+[Lectio3]
+@Sancti/10-07:Lectio2:1:s/17-22/20-23/
+@Sancti/10-07:Lectio2:5-7
+@Sancti/10-07:Lectio3:2
+
+[Lectio4]
+@Sancti/10-07:Lectio3:1:s/24-/25-/
+@Sancti/10-07:Lectio3:3-9
+
+[Lectio5]
+@Sancti/10-07:Lectio4
+
+[Lectio6]
+@Sancti/10-07:Lectio5
+
+[Lectio7]
+@Sancti/10-07:Lectio6:s/ Quam .*// s/ A z toho důvodu.*//
+
+[Lectio8]
+@Sancti/10-07:Lectio6:s/.* (?=Quam)// s/.* (?=A z toho důvodu)//
+
+[Lectio9]
+Léctio sancti Evangélii secúndum Matthaeum. 
+!Matth. 1:1-6
+Liber generatiónis Jesu Christi, fílii David, fílii Abraham. Abraham génuit Isaac. Isaac autem génuit Jacob. Et réliqua.
+_
+Homilía sancti Hierónymi Presbyteri.
+!Lib. 1. Comment. in Matthæum.
+In Isaía légimus: Generatiónem ejus quis enarrábit? Non ergo putémus Evangelístam Prophétæ esse contrárium, ut quod ille impossíbile dixit effátu, hic narráre incípiat: quia ibi de generatióne Divinitátis‚ hic de Incarnatióne est dictum. A carnálibus autem cœpit, ut per hóminem‚ Deum díscere incipiámus. Fílii David, fílii Abraham. Ordo præpósterus, sed necessário commutátus. Si enim primum posuísset Abraham, et póstea David, rursus ei repeténdus fúerat Abraham, ut generatiónis séries texerétur. 
+
+[Responsory9]
+R. Obaudíte me, divíni fructus, et quasi rosa plantáta super rivos aquárum fructificáte: 
+* Quasi Líbanus odórem suavitátis habéte.
+V. Floréte flores, quasi lílium, et date odórem, et frondéte in grátiam.
+R. Quasi Líbanus odórem suavitátis habéte.
+
+[Lectio10]
+Ideo autem céteris prætermíssis, horum fílium nuncupávit, quia ad hos tantum facta est de Christo repromíssio. Ad Abraham: In sémine, inquit, tuo benedicéntur omnes Gentes, quod est Christus. Ad David: De fructu ventris tui ponam super sedem tuam. Judas autem génuit Phares et Zaram de Thamar. Notándum, in genealogía Salvatóris nullam sanctárum assúmi mulíerum, sed eas, quas Scriptúra reprehéndit: ut, qui propter peccatóres vénerat, de peccatóribus nascens, ómnium peccáta deléret. Unde et in consequéntibus Ruth Moabítis pónitur, et Bethsabée uxor Uríæ.
+
+[Responsory10]
+R. Favus distíllans lábia tua, sponsa, mel et lac sub lingua tua: 
+* Et odor vestimentórum tuórum sicut odor thuris.
+V. Hortus conclúsus soror mea, sponsa, hortus conclúsus, fons signátus.
+R. Et odor vestimentórum tuórum sicut odor thuris.
+
+[Lectio11]
+Jacob autem génuit Joseph. Hunc locum objécit nobis Juliánus Augústus de dissonántia Evangelistárum, cur Evangelísta Mat-thæus Joseph díxerit fílium Jacob et Lucas eum fílium appellárit Heli; non intéllegens consuetúdinem Scripturárum, quod alter secúndum natúram, alter secúndum legem ei pater sit. Scimus enim hoc per Móysen, Deo jubénte, præcéptum, ut, si frater aut propínquus absque líberis mórtuus fúerit, álius accípiat uxórem ad suscitándum semen fratris vel propínqui sui.
+
+[Responsory11]
+R. Qui audit me, non confundétur, et qui operántur in me, non peccábunt: 
+* Qui elúcidant me, vitam ætérnam habébunt.
+V. In me grátia omnis viæ et veritátis, in me omnis spes vitæ et virtútis.
+R. Qui elúcidant me, vitam ætérnam habébunt.
+
+[Lectio12]
+Virum Maríæ. Cum virum audíeris, suspício tibi non súbeat nuptiárum; sed recordáre consuetúdinis Scripturárum, quod sponsi viri, et sponsæ vocéntur uxóres. Quærat díligens lector et dicat: Cum Joseph non sit pater Domini Salvatóris, quid pértinet ad Dóminum generatiónis ordo dedúctus usque ad Joseph? Cui respondébimus primum, non esse consuetúdinis scripturárum, ut mulíerum in generatiónibus ordo texátur. Deínde‚ ex una tribu fuísse Joseph et Maríam: unde ex lege eam accípere cogebátur ut propínquam: et quod simul censéntur in Béthlehem, ut de una vidélicet stirpe generáti.
+
+[Responsory12]
+R. Ego in altíssimis hábito: 
+* Et thronus meus in colúmna nubis. 
+V. Ego ex ore Altíssimi prodívi, primogénita ante omnem creatúram.
+R. Et thronus meus in colúmna nubis.
+
+[Evangelium]
+Inítium sancti Evangélii secúndum Matthaeum. 
+!Matth. 1:1-6
+Liber generatiónis Jesu Christi, fílii David, fílii Abraham. Abraham génuit Isaac. Isaac autem génuit Jacob. Jacob autem génuit Judam et fratres ejus. Judas autem génuit Phares et Zaram de Thamar. Phares autem génuit Esron. Esron autem génuit Aram. Aram autem génuit Amínadab. Amínadab autem génuit Naásson. Naásson autem génuit Salmon. Salmon autem génuit Booz de Rahab. Booz autem génuit Obed ex Ruth. Obed autem génuit Jesse. Jesse autem génuit David regem. David autem rex génuit Salomónem ex ea, quæ fuit Uriæ. Sálomon autem génuit Róboam. Róboam autem génuit Abíam. Abías autem génuit Asa. Asa autem génuit Jósaphat. Jósaphat autem génuit Joram. Joram autem génuit Ozíam. Ozías autem génuit Jóatham. Jóatham autem génuit Achaz. Achaz autem génuit Ezechíam. Ezechías autem génuit Manássen. Manásses autem génuit Amon. Amon autem génuit Josíam. Josías autem génuit Jechoníam et fratres ejus in transmigratióne Babylónis. Et post transmigratiónem Babylónis: Jechonías génuit Saláthiel. Saláthiel autem génuit Zoróbabel. Zoróbabel autem génuit Abiud. Abiud autem génuit Elíacim. Elíacim autem génuit Azor. Azor autem génuit Sadoc. Sadoc autem génuit Achim. Achim autem génuit Eliud. Eliud autem génuit Eleázar. Eleázar autem génuit Mathan. Mathan autem génuit Jacob. Jacob autem génuit Joseph, virum Maríæ, de qua natus est Jesus, qui vocátur Christus.
+
+[Ant Laudes]
+Ego flos campi, * et lílium convállium: sicut lílium inter spinas, sic amíca mea inter fílias.
+Ego quasi vitis * frunctificávi suavitátem odóris, et flores mei fructus honóris et honestátis.
+Manus meæ * stillavérunt myrrham, et dígiti mei pleni myrrha probatíssima.
+Quæ est ista, * quæ progréditur quasi auróra consúrgens, pulchra ut luna, elécta ut sol, terríbilis ut castrórum ácies ordináta?
+@Sancti/10-07::5
+
+[Responsory Laudes]
+R.br. Quasi storax, et gálbanus, et úngula, et gutta, et quasi Líbanus non incísus:
+* Vaporávi habitatiónem meam.
+V. Quasi bálsamum non mixtum.
+R. Vaporávi habitatiónem meam.
+
+[Capitulum Laudes]
+!Eccli 39:17-18
+v. Obaudíte me, divíni fructus, § et quasi rosa plantáta super rivos aquárum fructificáte, * quasi Líbanus odórem suavitátis habéte.
+$Deo gratias
+
+[Responsory TertiaM]
+@:Nocturn 1 Versum
+
+[Responsory SextaM]
+@:Nocturn 2 Versum
+
+[Responsory NonaM]
+@:Nocturn 3 Versum
