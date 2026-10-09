@@ -1,0 +1,24 @@
+@Tempora/Epi6-0
+[Officium]
+Domingo VI sobrante después de Epifanía
+
+[Rule]
+Gloria
+Credo
+Prefatio=Trinitate
+Suffr=Sanctorum;Maria3,Ecclesiæ,Papa;;
+
+[Rank]
+;;Semiduplex;;5
+
+[Introitus]
+@Tempora/Pent23-0:Introitus
+
+[Graduale]
+@Tempora/Pent23-0:Graduale
+
+[Offertorium]
+@Tempora/Pent23-0:Offertorium
+
+[Communio]
+@Tempora/Pent23-0:Communio
