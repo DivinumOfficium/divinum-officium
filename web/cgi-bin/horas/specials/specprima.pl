@@ -142,28 +142,21 @@ sub martyrologium {
 
   our ($version, $year, $month, $day, $dayofweek);
 
-  my $dir = 'Martyrologium';
-  $dir .= '1570' if $version =~ /1570/;
-  $dir .= '1960' if $version =~ /1960|Newcal/;
-  $dir .= '1955R' if $version =~ /1955/;
-  $dir = substr($dir, 0, 13) unless -e "$datafolder/$lang/$dir";
-
   my $mobile = do {
     my $a = getweek($day, $month, $year, 1) . "-" . (($dayofweek + 1) % 7);
     $a = '10-DU' if ($version !~ /1570|1617|1888|1910/ && $month == 10 && $dayofweek == 6 && $day > 23 && $day < 31);
     $a = 'Defuncti' if $winner{Rank} =~ /ex C9/i;
     $a = 'DefunctiM' if ($month == 11 && $day == 14 && $version =~ /Monastic/);
-    my %a = %{setupstring($lang, "$dir/Mobile.txt")};
+    my %a = %{setupstring($lang, "Martyrologium/Mobile.txt")};
     $a{$a};
   };
 
   my ($m, $d) = split('-', nextday($month, $day, $year));
-  my $fname = "$datafolder/$lang/$dir/$m-$d.txt";
-  $fname = checkfile($lang, "Martyrologium/$m-$d.txt") unless -e $fname;
+  my @a = martyrologium_elogia($lang, "$m-$d");
 
   my $output;
 
-  if (my @a = do_read($fname)) {
+  if (@a) {
     my $luna = _luna($m, $d, $m == 1 && $d == 1 ? $year + 1 : $year, $lang);
 
     if ($lang =~ /Latin/i) {
@@ -175,6 +168,7 @@ sub martyrologium {
           last FINDDATE if s/^Upon the \d+ ?.. day of \S+/$luna /i;                                          # English
           last FINDDATE if s/^Dnia \d+-go \S+ (.)/${luna}r. \u$1/;                                           # Polski
           last FINDDATE if s/^\d+\. (?:\(\d+.\) )?\S+/${luna}/;                                              # Bohemice
+          last FINDDATE if s/^\d+ de \S+/${luna}/i;                                                          # Espanol
           last FINDDATE if s/^(Le(?: même)? \d+ .*?\,)/$1 \l$luna, /i;                                       # French 1
           last FINDDATE if s/^((?:Le \d+ des|La veille des|Aux) (?:ides|calendes|nones).*)/$1, \l$luna/i;    # French 2
           last FINDDATE if s/^((?:Nas?|Nos?) .*(?:Calendas|Nonas|Idos) de \S+\.)$/$1 $luna/;                 # Portugues
@@ -196,6 +190,288 @@ sub martyrologium {
   }
 
   $output . prayer('Conclmart', $lang);
+}
+
+#*** martyrologium_elogia($lang, $mmdd)
+# the day's lines: the title, the separator, then the entries named by the
+# [Martyrologium] index in the order it gives them.
+#
+# setupstring does most of the work.  It applies the version conditionals
+# in the file and lays the language over its fallback and over the Latin,
+# so an entry nobody has translated yet still appears, in the language of
+# the nearest layer that has it.
+#
+# The index is resolved here rather than left to setupstring's @ handling
+# so that an entry the Latin has never carried can still be listed: the
+# Latin column simply prints nothing for it.
+sub martyrologium_elogia {
+  my ($lang, $mmdd) = @_;
+  our $version;
+
+  my $s = setupstring($lang, "Martyrologium/$mmdd.txt", 'resolve@' => RESOLVE_NONE)
+    or return ();
+
+  # an index that this version has emptied still leaves the day its title
+  return () unless defined $s->{Martyrologium};
+
+  # the 1570 martyrology is printed without accents throughout
+  my $plain = $lang =~ /^Latin/i && $version =~ /1570/;
+
+  my @index = grep { /\S/ } split(/\n/, $s->{Martyrologium});
+  my @lines = _heading($s, $lang, $mmdd, $plain, \@index);
+
+  # blank lines only keep the conditionals in the index apart; a line that
+  # is not a reference is text in its own right, which is how the chant
+  # books carry a day whose elogia cannot be told apart
+  my @entries;
+
+  foreach my $line (@index) {
+    unless (substr($line, 0, 1) eq '@') {
+      push @entries, _elogia_lines($line, $plain);
+      next;
+    }
+    my $text = _elogia_entry($s, $lang, $mmdd, $line);
+
+    # A language whose book says this entry inside another one keeps a
+    # note of where instead of a translation: the words are on the page
+    # already, under that other key, so nothing is put here.  A note
+    # pointing at an entry this version has not got is no note at all,
+    # and is passed over in silence rather than printed.
+    next if defined $text && $text =~ /^\s*\@\S+\s*$/;
+    push @entries, _elogia_lines($text, $plain);
+  }
+  return @lines unless @entries;
+
+  # and it can leave the day without a title: a title that says 'upon the
+  # same day' says it about the feast announced above it, so when the
+  # index no longer keeps that announcement at the head of the day the
+  # title has nothing left to be about.  The date is put back at the top
+  # by the caller, which is where it comes from in any case.
+  return @entries unless @lines;
+
+  # a version can leave a day with nothing but its title, and then there is
+  # nothing for the separator to separate
+  my $sep = exists $s->{Separatio} ? _chomped($s->{Separatio}) : '_';
+  push @lines, $sep if $sep ne '';
+  return (@lines, @entries);
+}
+
+#*** _heading($sections, $lang, $mmdd, $plain, \@index)
+# The day's title, which may call for entries by name.
+#
+# Some books announce the day's feast above the rule and then say 'upon
+# the same day, were born into the better life' below it.
+# Whether it belongs up there is the Latin's to say, and it says it by
+# where it puts the entry: the call is answered only while the index
+# still keeps that entry at the head of the day.  A version that moves it
+# down leaves the title without it, and it falls in among the elogia
+# wherever the index now has it.  A version that has not the entry at all
+# simply has nothing to announce, and keeps the rest of its title.
+# @index is emptied of whatever the title took, so that nothing is said
+# twice.
+sub _heading {
+  my ($s, $lang, $mmdd, $plain, $index) = @_;
+  my @title = split(/\n/, $s->{Titulus} // '');
+  my @out;
+  my $at = 0;    # how far into the index the title has eaten
+
+  foreach my $line (@title) {
+    unless (substr($line, 0, 1) eq '@') {
+      push @out, _elogia_lines($line, $plain);
+      next;
+    }
+
+    # setupstring writes both the title's reference and the index's in the
+    # same full form, so the one is found by the other.
+    (my $want = $line) =~ s/\s+$//;
+    my ($where) = grep { ($index->[$_] =~ s/\s+$//r) eq $want } $at .. $#$index;
+
+    # a version that has not the entry at all has no feast to announce,
+    # and the rest of the title stands without the announcement
+    next unless defined $where;
+
+    my $said = sub {
+      my $l = $index->[shift];
+      return substr($l, 0, 1) eq '@'
+        ? _elogia_lines(_elogia_entry($s, $lang, $mmdd, $l), $plain)
+        : _elogia_lines($l, $plain);
+    };
+
+    # but a version that keeps it and puts it lower down has moved the
+    # feast in among the elogia, and then 'upon the same day' has nothing
+    # left to be about and goes with it.  Entries this column prints
+    # nothing for are stepped over on the way: an entry no language in
+    # the chain has translated comes out as nothing at all, and a title
+    # thrown away on account of it would be thrown away over a line
+    # nobody can see.
+    last if grep { $said->($_) } $at .. $where - 1;
+    push @out, $said->($where);
+    $at = $where + 1;
+  }
+  splice(@$index, 0, $at) if $at;
+  $out[0] = _unsame($out[0], $lang) if @out;
+  return @out;
+}
+
+# What 'the same day' is said back to, by language, when it opens the
+# heading with nothing above it to be the same as: the book announced
+# nothing, or this version has dropped the feast it announced.  Upon the
+# same 3rd day of January' then says the date over again under the date
+# itself, so it is put the way a book with nothing to announce prints it,
+# 'Upon the 3rd day of January', which the date line takes the place of.
+# 'On the same day' in an announcement means the morrow it is announcing.
+my %_UNSAME = (
+  English => [
+    [qr/^(?:Upon|On) the same (?:the )?(\d.*?\b(?:was|were)) also\b/ => sub { "Upon the $1" }],
+    [qr/^(?:Upon|On) the same (?:the )?(?=\d)/ => sub { 'Upon the ' }],
+    [qr/^(Upon|On) the same day\b/ => sub { "$1 the morrow" }],
+    [qr/^(Upon|On) the morrow also\b/ => sub { "$1 the morrow" }],
+  ],
+  Francais => [[qr/^Le même (?=\d)/ => sub { 'Le ' }]],
+);
+
+#*** _unsame($line, $lang)
+# The heading's first line, without a 'same' that has nothing to refer to.
+sub _unsame {
+  my ($line, $lang) = @_;
+  (my $base = $lang) =~ s/-.*$//;
+
+  foreach my $rule (@{$_UNSAME{$base} || []}) {
+    my ($re, $to) = @$rule;
+    return $line if $line =~ s/$re/$to->()/e;
+  }
+  return $line;
+}
+
+#*** _elogia_entry($sections, $lang, $mmdd, $line)
+# the text an index line points at: '@:Key' in this day, or
+# '@Martyrologium/MM-DD:Key' in another one
+sub _elogia_entry {
+  my ($s, $lang, $mmdd, $line) = @_;
+
+  if ($line =~ m{^\@(Martyrologium/(\d\d-\d\d)):(.+)$}) {
+    my $other = setupstring($lang, "$1.txt", 'resolve@' => RESOLVE_NONE)
+      or return undef;
+    return _elogia_own_first($other, $lang, $2, $3);
+  }
+  return $line =~ /^\@:(.+)$/ ? _elogia_own_first($s, $lang, $mmdd, $1) : undef;
+}
+
+#*** _elogia_own_first($sections, $lang, $mmdd, $key)
+# The entry's text, from the nearest language that has one of its own.
+#
+# setupstring lays a language over its fallback and both over the Latin,
+# so a gap anywhere is filled from below and in the end always from the
+# Latin.  A column falls back as far as the reader's fallback language
+# and stops.
+sub _elogia_own_first {
+  my ($s, $lang, $mmdd, $key) = @_;
+  my $value = $s->{$key};
+
+  # the Latin column prints the Latin
+  return $value if $lang =~ /^Latin/i;
+
+  foreach my $layer (_elogia_chain($lang)) {
+    my @mine = @{_elogia_own($layer, $mmdd)->{$key} || []};
+    next unless @mine;
+
+    # setupstring settled on one of this layer's own wordings.  compared
+    # chomped: it keeps the blank line before the next section and works
+    # the conditionals inside a line, so the two are rarely byte for byte.
+    if (defined $value) {
+      my $seen = _chomped($value);
+
+      foreach my $text (@mine) {
+        return $value if _chomped($text) eq $seen;
+      }
+    }
+    return $mine[0];
+  }
+  return undef;
+}
+
+#*** _elogia_chain($lang)
+# The languages a column may draw on: itself, the parent of a hyphenated
+# name, and the reader's fallback language.
+sub _elogia_chain {
+  my $lang = shift;
+  our $langfb;
+  my (@out, %seen);
+
+  for (my $l = $lang; ; ) {
+    push @out, $l unless $seen{$l}++;
+    last unless $l =~ s/-[^-]+$//;
+  }
+  push @out, $langfb if $langfb && !$seen{$langfb}++;
+  return @out;
+}
+
+my %_own_cache;
+
+#*** _elogia_own($lang, $mmdd)
+# {key => [every wording this language's own file gives it]}, conditional
+# sections included, which setupstring drops before we could see them.
+sub _elogia_own {
+  my ($lang, $mmdd) = @_;
+  our $datafolder;
+  my $id = "$lang\0$mmdd";
+  return $_own_cache{$id} if $_own_cache{$id};
+  my %own;
+  my $file = "$datafolder/$lang/Martyrologium/$mmdd.txt";
+
+  if (-e $file) {
+    my ($key, @buf);
+
+    my $flush = sub {
+      return unless defined $key;
+      pop @buf while @buf && $buf[-1] !~ /\S/;
+      push @{$own{$key}}, join("\n", @buf) . "\n" if @buf;
+    };
+
+    foreach my $line (do_read($file)) {
+      $line =~ s/[\r\n]+$//;
+
+      if ($line =~ /^\s*\[([^\]]+)\]/) {
+        $flush->();
+        $key = $1;
+        @buf = ();
+      } elsif (defined $key) {
+        push @buf, $line;
+      }
+    }
+    $flush->();
+  }
+  return $_own_cache{$id} = \%own;
+}
+
+# a section's lines, without the '=' that escapes a structural one, and
+# without the accents when the version prints none
+sub _elogia_lines {
+  my ($text, $plain) = @_;
+  return () unless defined $text && $text =~ /\S/;
+  $text = _deaccent($text) if $plain;
+  return map { my $l = $_; $l =~ s/^=//; $l } split(/\n/, _chomped($text), -1);
+}
+
+# setupstring ends every section with a newline; the trailing spaces on a
+# line belong to the text and have to survive
+sub _chomped {
+  my $t = shift;
+  return '' unless defined $t;
+  $t =~ s/\n+$//;
+  return $t;
+}
+
+sub _deaccent {
+  my $s = shift;
+  require Unicode::Normalize;
+  $s = Unicode::Normalize::NFKD($s);
+  $s =~ s/\p{Mn}//g;
+  $s =~ s/\x{e6}/ae/g;
+  $s =~ s/\x{c6}/Ae/g;
+  $s =~ s/\x{153}/oe/g;
+  $s =~ s/\x{152}/Oe/g;
+  return $s;
 }
 
 sub _luna_table {
@@ -345,6 +621,13 @@ sub _luna {
     );
 
     "Anno del Signore $year, $day $months_it[$month - 1], Luna $lday";
+  } elsif ($lang =~ /Espanol/) {
+    my @months_es = (
+      'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
+      'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre',
+    );
+
+    "Año del Señor $year, $day de $months_es[$month - 1], Luna $lday";
   } elsif ($lang =~ /Bohemice/) {
     my @months_cz = (
       'ledna', 'února', 'března', 'dubna', 'května', 'června',
