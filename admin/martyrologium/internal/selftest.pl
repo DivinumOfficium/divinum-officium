@@ -412,6 +412,50 @@ print "a version's wording does not displace the base\n";
   is([MartyrLib::pool_render($pool) eq $raw ? 'yes' : 'no'], 'yes', 'and it writes back unchanged');
 }
 
+# The book comes in a day to a page.  Word marks a new page three ways,
+# and a paragraph's tab stops and Word's own layout breaks are not text;
+# a page that is one too many or too few would put every day after it on
+# the wrong date, so that must stop the import rather than shift it.
+print "a book is read a day to a page\n";
+{
+  require SourceLib;
+  require IO::Compress::Zip;
+  my $p = sub { qq{<w:p>$_[0]<w:r><w:t xml:space="preserve">$_[1]</w:t></w:r></w:p>} };
+  my $xml = '<?xml version="1.0" encoding="UTF-8"?><w:document><w:body>'
+    . $p->('', 'Kalendis') . '<w:p/>'
+    . $p->('<w:pPr><w:tabs><w:tab w:val="left" w:pos="720"/></w:tabs></w:pPr>', 'Romæ &amp; alibi')
+    . qq{<w:p><w:r><w:t>sancti</w:t></w:r><w:r><w:br/><w:t>Petri</w:t><w:lastRenderedPageBreak/></w:r></w:p>}
+    . qq{<w:p><w:r><w:br w:type="page"/></w:r></w:p>}
+    . $p->('', 'Quarto Nonas') . $p->('', '_') . $p->('', "Lugd\x{a0}uni")
+    . $p->('<w:pPr><w:pageBreakBefore/></w:pPr>', 'Tertio Nonas') . $p->('', '') . $p->('', 'Alibi')
+    . $p->('<w:pPr><w:sectPr><w:type w:val="nextPage"/></w:sectPr></w:pPr>', 'Item')
+    . $p->('', 'Pridie Nonas') . $p->('', '') . $p->('', 'Sola')
+    . '</w:body></w:document>';
+  utf8::encode($xml);
+  my $docx = "$tmp/03.docx";
+  IO::Compress::Zip::zip(\$xml => $docx, Name => 'word/document.xml')
+    or die "cannot write $docx\n";
+
+  my @pages = SourceLib::read_pages($docx);
+  is([scalar @pages], '4', 'a hard break, a paragraph starting a page and a section break each turn it');
+  is([SourceLib::page_lines($pages[0])], 'Kalendis | _ | Romæ & alibi | sancti Petri',
+    'the heading, then a paragraph to an elogium, wrapped lines joined');
+  is([SourceLib::page_lines($pages[1])], 'Quarto Nonas | _ | Lugd uni', 'a page with its own _ keeps it');
+  is([SourceLib::page_lines($pages[2])], 'Tertio Nonas | _ | Alibi | Item', 'a section ends on its last paragraph');
+
+  open(my $fh, '>:raw', "$tmp/year.txt") or die;
+  print $fh "Kalendis\n_\nuna\n\fQuarto Nonas\n\nduae\ntres\n\f";
+  close $fh;
+  @pages = SourceLib::read_pages("$tmp/year.txt");
+  is([scalar @pages], '2', 'plain text turns the page on a form feed, and a last one is not a page');
+  is([SourceLib::page_lines($pages[1])], 'Quarto Nonas | _ | duae | tres', 'and reads the same way');
+
+  my ($days) = eval { SourceLib::read_source($docx) };
+  is([$@ =~ /4 pages for 31 days/ ? 'refused' : "read: $@"], 'refused',
+    'a month short of pages is refused, the month taken from the name');
+  is([eval { SourceLib::read_source($docx, 2); 1 } ? 'read' : 'refused'], 'refused', 'and so is it as February');
+}
+
 remove_tree($tmp);
 printf "\n%d passed, %d failed\n", $pass, $fail;
 exit($fail ? 1 : 0);
