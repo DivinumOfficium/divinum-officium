@@ -23,8 +23,25 @@ perl verify.pl
 ```
 
 Any subset of the year is fine; import a month, look at it, come back to
-the rest. If what you have is twelve monthly files (`01.txt` .. `12.txt`),
-run `split_months.pl` in that folder first to cut them into days.
+the rest. The day files can be Word documents too (`MM-DD.docx`), and a
+folder can mix the two.
+
+If what you have is the book as it is printed, a day to a page, hand it
+in whole: one file for a month, or one for the year, in Word or in plain
+text with a form feed between pages.
+
+```
+perl import_translation.pl --lang Francais --src Janvier.docx --month 1 --replace
+perl import_translation.pl --lang Deutsch --src jahr.txt
+```
+
+Each page is the next day, so a month must have exactly as many pages as
+days (February has 29: the last is the leap day), and a year 366. A page
+opens on its heading, then a blank line or a `_`, then one elogium per
+paragraph. `--month` can be left out when the file's name starts with
+the month (`01.docx`). If what you have is twelve monthly files in the
+old style, without page breaks (`01.txt` .. `12.txt`), run
+`split_months.pl` in that folder first to cut them into days.
 
 The import keeps a copy of your files under
 `obsolete/martyrologium-source`, matches each line against the Latin, and
@@ -185,7 +202,8 @@ pair there when the import keeps missing a saint you know is the same.
 
 ```
 split_months.pl         monthly files -> day files
-import_translation.pl   day files -> the language's Martyrologium folder
+import_translation.pl   day files, or a month or year a day to a page
+                        (.txt or .docx) -> the language's Martyrologium folder
 verify.pl               nothing renders differently than it should
 latin_todo.pl           what the Latin owes; also joins wrapped entries
 latin-todo.txt          which entries are elogia and which are not
