@@ -1,0 +1,48 @@
+[Officium]
+En la Octava de San Esteban Protomártir
+
+[Rank]
+;;Simplex;;1.4;;vide Sancti/12-26
+(sed rubrica tridentina)
+;;Duplex;;3.1;;ex Sancti/12-26
+
+[Rule]
+vide Sancti/12-26;
+Feria Te Deum
+Comkey=70
+Lectio1 TempNat
+Gloria
+Prefatio=Nat
+Suffragium=Maria2;Papa,Ecclesiæ;;
+
+[Rule] (rubrica tridentina)
+ex Sancti/12-26;
+9 lectiones
+Psalmi Dominica
+Antiphonas Horas
+Feria Te Deum
+Psalm5 Vespera3=115
+Gloria
+Prefatio=Nat
+Credo
+
+[Oratio] (rubrica Divino aut rubrica Tridentina aut rubrica Monastica)
+@Sancti/12-26:Oratio1
+
+[Commemoratio Oratio] (rubrica tridentina)
+!Por San Juan Evangelista
+@Sancti/12-27:Oratio
+!Por los Santos Inocentes
+@Sancti/12-28:Oratio
+
+[Commemoratio Secreta] (rubrica tridentina)
+!Por San Juan Evangelista
+@Sancti/12-27:Secreta
+!Por los Santos Inocentes
+@Sancti/12-28:Secreta
+
+[Commemoratio Postcommunio] (rubrica tridentina)
+!Por San Juan Evangelista
+@Commune/C5:Postcommunio
+!Por los Santos Inocentes
+@Sancti/12-28:Postcommunio
