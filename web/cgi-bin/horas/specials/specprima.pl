@@ -127,7 +127,11 @@ sub get_prima_responsory {
     $key = 'Adv';
   }
 
-  if ($version =~ /196/ && $key =~ /Corp|Heart/) { $key = ''; }
+  if ($version =~ /196/ &&
+    ($key =~ /Corp|Heart/ || $key =~ /Nat/ && $winner{'Rank'} =~ /Dominica.*Post Pente/i))
+  {
+      $key = '';
+  }
   return '' unless $key;
 
   my %t = %{setupstring($lang, 'Psalterium/Special/Prima Special.txt')};
