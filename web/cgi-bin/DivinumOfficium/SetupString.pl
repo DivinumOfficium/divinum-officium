@@ -893,14 +893,18 @@ sub officestring($$;$) {
   my $m = 0;
   my $w = 0;
   if ($monthday =~ /([0-9][0-9])([0-9])\-[0-9]/) { $m = $1; $w = $2; }
-  my @weeks = ('I.', 'II.', 'III.', 'IV.', 'V.');
+
+  my %comment = %{setupstring($lang, 'Psalterium/Comment.txt')};
 
   if ($m) {
-    my %m = %{setupstring($lang, 'Psalterium/Comment.txt')};
-    my @months = split("\n", $m{Menses});
+    my @months = split("\n", $comment{Menses});
     $m = $months[$m - 8];
   }
-  if ($w) { $w = $weeks[$w - 1]; }
+
+  if ($w) {
+    my @weeks = split("\n", $comment{Hebdomadae});
+    $w = $weeks[$w - 1];
+  }
   $rank[0] .= " $w $m";
   $s{Rank} = join(';;', @rank);
   my %m = %{setupstring($lang, subdirname('Tempora', $version) . "$monthday.txt")};
