@@ -96,16 +96,11 @@ sub align {
     for my $i (0 .. $#$latin) {
       my ($m) = entry_score($latin->[$i][1], $body->[$j]);
       next unless $m >= 1;
-      push @candidates,
-        [-_round3(match_quality($latin->[$i][1], $body->[$j])), abs($i - $j), $i, $j];
+      push @candidates, [-_round3(match_quality($latin->[$i][1], $body->[$j])), abs($i - $j), $i, $j];
     }
   }
-  @candidates = sort {
-         $a->[0] <=> $b->[0]
-      || $a->[1] <=> $b->[1]
-      || $a->[2] <=> $b->[2]
-      || $a->[3] <=> $b->[3]
-  } @candidates;
+  @candidates =
+    sort { $a->[0] <=> $b->[0] || $a->[1] <=> $b->[1] || $a->[2] <=> $b->[2] || $a->[3] <=> $b->[3] } @candidates;
 
   my (%used_i, %used_j, %assign);
 
@@ -140,8 +135,12 @@ sub convert_day {
     pool_set($pool, 'Titulus', join("\n", @$heading));
     pool_set($pool, 'Separatio', $sep_line) if $nonstandard;
   }
-  my %stats = (aligned => 0, extras => 0, structural => 0,
-    nonstandard_separator => $nonstandard);
+  my %stats = (
+    aligned => 0,
+    extras => 0,
+    structural => 0,
+    nonstandard_separator => $nonstandard,
+  );
 
   for my $j (0 .. $#$body) {
     my $vline = $body->[$j];

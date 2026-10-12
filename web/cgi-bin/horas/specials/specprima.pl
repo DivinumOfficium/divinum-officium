@@ -127,10 +127,10 @@ sub get_prima_responsory {
     $key = 'Adv';
   }
 
-  if ($version =~ /196/ &&
-    ($key =~ /Corp|Heart/ || $key =~ /Nat/ && $winner{'Rank'} =~ /Dominica.*Post Pente/i))
+  if ($version =~ /196/
+    && ($key =~ /Corp|Heart/ || $key =~ /Nat/ && $winner{'Rank'} =~ /Dominica.*Post Pente/i))
   {
-      $key = '';
+    $key = '';
   }
   return '' unless $key;
 
@@ -221,7 +221,7 @@ sub martyrologium_elogia {
   # the 1570 martyrology is printed without accents throughout
   my $plain = $lang =~ /^Latin/i && $version =~ /1570/;
 
-  my @index = grep { /\S/ } split(/\n/, $s->{Martyrologium});
+  my @index = grep {/\S/} split(/\n/, $s->{Martyrologium});
   my @lines = _heading($s, $lang, $mmdd, $plain, \@index);
 
   # blank lines only keep the conditionals in the index apart; a line that
@@ -326,12 +326,12 @@ sub _heading {
 # 'On the same day' in an announcement means the morrow it is announcing.
 my %_UNSAME = (
   English => [
-    [qr/^(?:Upon|On) the same (?:the )?(\d.*?\b(?:was|were)) also\b/ => sub { "Upon the $1" }],
-    [qr/^(?:Upon|On) the same (?:the )?(?=\d)/ => sub { 'Upon the ' }],
-    [qr/^(Upon|On) the same day\b/ => sub { "$1 the morrow" }],
-    [qr/^(Upon|On) the morrow also\b/ => sub { "$1 the morrow" }],
+    [qr/^(?:Upon|On) the same (?:the )?(\d.*?\b(?:was|were)) also\b/ => sub {"Upon the $1"}],
+    [qr/^(?:Upon|On) the same (?:the )?(?=\d)/ => sub {'Upon the '}],
+    [qr/^(Upon|On) the same day\b/ => sub {"$1 the morrow"}],
+    [qr/^(Upon|On) the morrow also\b/ => sub {"$1 the morrow"}],
   ],
-  Francais => [[qr/^Le même (?=\d)/ => sub { 'Le ' }]],
+  Francais => [[qr/^Le même (?=\d)/ => sub {'Le '}]],
 );
 
 #*** _unsame($line, $lang)
@@ -402,7 +402,7 @@ sub _elogia_chain {
   our $langfb;
   my (@out, %seen);
 
-  for (my $l = $lang; ; ) {
+  for (my $l = $lang;;) {
     push @out, $l unless $seen{$l}++;
     last unless $l =~ s/-[^-]+$//;
   }
