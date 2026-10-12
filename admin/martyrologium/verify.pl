@@ -26,18 +26,16 @@ do "$FindBin::Bin/../../web/cgi-bin/DivinumOfficium/SetupString.pl"
   or die "failed to load SetupString.pl: " . ($@ || $!);
 do "$FindBin::Bin/../../web/cgi-bin/horas/specials/specprima.pl"
   or die "failed to load specprima.pl: " . ($@ || $!);
-*main::checklatinfile = sub { } unless defined &main::checklatinfile;
+*main::checklatinfile = sub { }
+
+  unless defined &main::checklatinfile;
 
 my @dmax = (31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
 my @days;
 for my $m (1 .. 12) { push @days, sprintf('%02d-%02d', $m, $_) for 1 .. $dmax[$m - 1] }
 
-my @versions = (
-  ['Divino Afflatu', ''],
-  ['Reduced 1955', '1955R'],
-  ['Rubrics 1960', '1960'],
-  ['Tridentine - 1570', '1570'],
-);
+my @versions =
+  (['Divino Afflatu', ''], ['Reduced 1955', '1955R'], ['Rubrics 1960', '1960'], ['Tridentine - 1570', '1570']);
 
 #*** respelt(\@a, \@b)
 # True when two renderings differ only in where the accents fell or which
@@ -99,7 +97,7 @@ sub norm {
 # be cut into pieces the day renders.
 sub covered {
   my ($line, $rendered) = @_;
-  my @piece = sort { length($b) <=> length($a) } grep { /\S/ } keys %$rendered;
+  my @piece = sort { length($b) <=> length($a) } grep {/\S/} keys %$rendered;
   return 0 unless @piece;
 
   # or the other way about: the book wrapped one elogium onto two lines and
@@ -138,12 +136,16 @@ for my $v (@versions) {
     my @pool = martyrologium_elogia('Latin', $day);
     $checked++;
 
-    if (join("\0", @pool) eq join("\0", @flat)) { $same++ }
-    elsif (respelt(\@pool, \@flat)) { $spelt++ }
-    else { $fail++; print "  Latin $day under $name differs\n" }
+    if (join("\0", @pool) eq join("\0", @flat)) {
+      $same++;
+    } elsif (respelt(\@pool, \@flat)) {
+      $spelt++;
+    } else {
+      $fail++;
+      print "  Latin $day under $name differs\n";
+    }
   }
-  printf "Latin    %-18s %3d/%d identical%s\n", $name, $same, scalar(@days),
-    $spelt ? " (+$spelt respelt)" : '';
+  printf "Latin    %-18s %3d/%d identical%s\n", $name, $same, scalar(@days), $spelt ? " (+$spelt respelt)" : '';
 }
 
 # A translated entry has to be reachable under at least one version.  Not
@@ -180,7 +182,7 @@ sub dropped {
         if ($l =~ /^\[([^\]]+)\]/) { $in_section = ($1 eq $key); next }
         push @body, $l if $in_section;
       }
-      $out{$lang}{norm($_)} = 1 foreach grep { /\S/ } @body;
+      $out{$lang}{norm($_)} = 1 foreach grep {/\S/} @body;
     }
   }
   return %out;
@@ -188,6 +190,7 @@ sub dropped {
 
 my @langs;
 opendir(my $root, $datafolder) or die "cannot read $datafolder";
+
 for my $name (sort readdir $root) {
   next if $name =~ /^\.|gabc|^Latin$/;
   push @langs, $name if -d "$legacy/$name/Martyrologium";

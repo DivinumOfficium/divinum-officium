@@ -38,12 +38,12 @@ my %STOP = map { $_ => 1 } (
     commemoratio festum vigilia octava translatio inventio
     dedicatio solemnitas passio depositio conversio ordinis
     sancti sanctae beati beatae beatorum
-    ),
+  ),
   qw(
     the le la les en a at in upon de del
     della di da du des au aux el los las un
     une il lo w na v u z o y e et
-    ),
+  ),
   qw(saint sainte saints st ste san santa santo sant sw sv sw. santi),
   qw(
     apostle apostles bishop archbishop pope king queen
@@ -53,7 +53,7 @@ my %STOP = map { $_ => 1 } (
     blessed holy feast solemnity vigil octave
     translation finding dedication commemoration church
     lord our lady god christ jesus mother
-    ),
+  ),
   qw(
     apotre apotres eveque archeveque pape roi reine
     vierge vierges martyre abbe abbesse pretre diacre
@@ -62,12 +62,12 @@ my %STOP = map { $_ => 1 } (
     bienheureuse fete solennite vigile invention dedicace
     memoire sont nes eternelle vie eglise seigneur
     notre dame dieu mere
-    ),
+  ),
   qw(
     apostol obispo papa rey reina virgen martir abad
     sacerdote confesor profeta viuda vescovo re regina
     vergine martire abate prete confessore iglesia chiesa
-    ),
+  ),
 );
 $STOP{$_} = 1 foreach keys %TITLE_STOPWORDS;
 
@@ -169,6 +169,7 @@ my @SAME_NAME = (
 # Joannes).  A stem can belong to more than one row (Joannes and Ioanna
 # both stem to 'ioan'), so a match is any overlap.
 my %NAME_GROUP;
+
 for my $i (0 .. $#SAME_NAME) {
   $NAME_GROUP{stem(normalize($_))}{$i} = 1 foreach split(' ', $SAME_NAME[$i]);
 }
@@ -289,6 +290,7 @@ sub proper_nouns {
     next if length($tok) < 3 || $tok !~ /^\p{Lu}/;
     my $low = lc deaccent($tok);
     my $key = stem(normalize($tok));
+
     # The exemption has to reach both lists.  A word is stopped either by
     # itself or by its stem, and a name that looks like a title -- Regina,
     # who is a saint and not a queen -- is usually stopped by itself, so

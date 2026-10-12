@@ -29,7 +29,13 @@ our @EXPORT_OK = qw(read_pages page_lines read_source docx_pages);
 
 my @DMAX = (31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
 
-my %ENTITY = (amp => '&', lt => '<', gt => '>', quot => '"', apos => "'");
+my %ENTITY = (
+  amp => '&',
+  lt => '<',
+  gt => '>',
+  quot => '"',
+  apos => "'",
+);
 
 sub _unxml {
   my $s = shift;
@@ -58,6 +64,7 @@ sub docx_pages {
 
   while ($xml =~ m{<w:p\b[^>]*?(?:/>|>(.*?)</w:p>)}gs) {
     my $p = defined $1 ? $1 : '';
+
     # the paragraph's own properties hold its tab stops, which are not text
     my $ppr = $p =~ s{(<w:pPr\b.*?</w:pPr>)}{}s ? $1 : '';
 
@@ -65,9 +72,12 @@ sub docx_pages {
 
     my $text = '';
 
-    while ($p =~ m{<w:t(?:\s[^>]*)?>([^<]*)</w:t>|<w:t\s*/>|(<w:br\b[^>]*/>)|(<w:cr\s*/>)|(<w:tab\s*/>)|(<w:noBreakHyphen\s*/>)}g) {
-      if (defined $1) { $text .= _unxml($1) }
-      elsif (defined $2) {
+    while ($p =~
+      m{<w:t(?:\s[^>]*)?>([^<]*)</w:t>|<w:t\s*/>|(<w:br\b[^>]*/>)|(<w:cr\s*/>)|(<w:tab\s*/>)|(<w:noBreakHyphen\s*/>)}g)
+    {
+      if (defined $1) {
+        $text .= _unxml($1);
+      } elsif (defined $2) {
         if ($2 =~ /w:type="page"/) {
           push @{$pages[-1]}, $text;
           push @pages, [];
@@ -75,10 +85,13 @@ sub docx_pages {
         } else {
           $text .= ' ';
         }
+      } elsif (defined $3) {
+        $text .= ' ';
+      } elsif (defined $4) {
+        $text .= "\t";
+      } elsif (defined $5) {
+        $text .= '-';
       }
-      elsif (defined $3) { $text .= ' ' }
-      elsif (defined $4) { $text .= "\t" }
-      elsif (defined $5) { $text .= '-' }
     }
     push @{$pages[-1]}, $text;
 
@@ -101,8 +114,11 @@ sub read_pages {
 
   if ($path =~ /\.docx$/i) {
     my $xml;
-    unzip($path => \$xml, Name => 'word/document.xml', BinModeOut => 1)
-      or die "$path: not a Word document ($UnzipError)\n";
+    unzip(
+      $path => \$xml,
+      Name => 'word/document.xml',
+      BinModeOut => 1,
+    ) or die "$path: not a Word document ($UnzipError)\n";
     utf8::decode($xml) or die "$path: word/document.xml is not UTF-8\n";
     @pages = docx_pages($xml);
 
@@ -128,7 +144,7 @@ sub read_pages {
   foreach my $pg (@pages) { s/\s+$// foreach @$pg }
 
   # a document that ends on a page break leaves an empty page after it
-  pop @pages while @pages && !grep { /\S/ } @{$pages[-1]};
+  pop @pages while @pages && !grep {/\S/} @{$pages[-1]};
   return @pages;
 }
 
@@ -160,7 +176,7 @@ sub page_lines {
     $sep = $lines[$cut] if $bare eq '_';
     $cut++ if $bare eq '_' || $bare eq '';
   }
-  my @body = grep { /\S/ } @lines[$cut .. $#lines];
+  my @body = grep {/\S/} @lines[$cut .. $#lines];
   return (@heading, $sep, @body);
 }
 
@@ -183,7 +199,7 @@ sub read_source {
   if (-d $src) {
     my %known = map { $_ => 1 } all_days();
     opendir(my $dh, $src) or die "cannot read $src: $!\n";
-    my @files = sort grep { /\.(txt|docx)$/i } readdir $dh;
+    my @files = sort grep {/\.(txt|docx)$/i} readdir $dh;
     closedir $dh;
     my %from;
 
@@ -222,20 +238,35 @@ sub read_source {
   } elsif (@pages == @all) {
     @dates = @all;
   } else {
-    die sprintf("%s: %d pages, which is not the year (%d); for a month, say which with --month\n",
-      $src, scalar @pages, scalar @all);
+    die sprintf(
+      "%s: %d pages, which is not the year (%d); for a month, say which with --month\n",
+      $src, scalar @pages,
+      scalar @all,
+    );
   }
 
   if (@pages != @dates) {
-    my @head = map { my ($h) = grep { /\S/ } @{$pages[$_]}; sprintf('    %3d  %s', $_ + 1, $h // '') }
-      0 .. $#pages;
-    die sprintf("%s: %d pages for %d days (%s to %s); each page has to be one day:\n%s\n",
-      $src, scalar @pages, scalar @dates, $dates[0], $dates[-1], join("\n", @head));
+    my @head = map {
+      my ($h) = grep {/\S/} @{$pages[$_]};
+      sprintf('    %3d  %s', $_ + 1, $h // '')
+    } 0 .. $#pages;
+    die sprintf(
+      "%s: %d pages for %d days (%s to %s); each page has to be one day:\n%s\n",
+      $src,
+      scalar @pages,
+      scalar @dates,
+      $dates[0], $dates[-1], join("\n", @head),
+    );
   }
 
   for my $i (0 .. $#dates) {
     my @lines = page_lines($pages[$i]);
-    if (@lines) { $days{$dates[$i]} = \@lines } else { $bad{$dates[$i]} = 'empty page' }
+
+    if (@lines) {
+      $days{$dates[$i]} = \@lines;
+    } else {
+      $bad{$dates[$i]} = 'empty page';
+    }
   }
   return (\%days, \%bad);
 }

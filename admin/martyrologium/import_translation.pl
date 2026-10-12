@@ -161,13 +161,13 @@ foreach my $day (sort keys %$pools) {
 foreach my $day (sort keys %$pools) {
   my $pool = $pools->{$day};
 
-  foreach my $name (grep { /^\d\d-\d\d:/ } @{$pool->{order}}) {
+  foreach my $name (grep {/^\d\d-\d\d:/} @{$pool->{order}}) {
     my ($d2, $k2) = $name =~ /^(\d\d-\d\d):(.+)$/;
     my $text = delete $pool->{sections}{$name};
     @{$pool->{order}} = grep { $_ ne $name } @{$pool->{order}};
 
-    my $to = $pools->{$d2} || ($others{$d2} ||=
-        -e elogia_path($lang, $d2) ? pool_read(elogia_path($lang, $d2), $d2) : pool_new($d2));
+    my $to = $pools->{$d2}
+      || ($others{$d2} ||= -e elogia_path($lang, $d2) ? pool_read(elogia_path($lang, $d2), $d2) : pool_new($d2));
     pool_set($to, $k2, $text);
     printf "  %s: %s is said from %s, and goes there\n", $day, $k2, $d2;
   }

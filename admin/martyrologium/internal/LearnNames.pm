@@ -50,8 +50,14 @@ sub _pairs_for {
       my @vb = proper_nouns($body->[$j]);
 
       # names the rules could not pair up
-      my @lrest = grep { my $x = $_; length($x) >= $MIN_LEN && !grep { cognate($x, $_) } @vb } @la;
-      my @vrest = grep { my $y = $_; length($y) >= $MIN_LEN && !grep { cognate($_, $y) } @la } @vb;
+      my @lrest = grep {
+        my $x = $_;
+        length($x) >= $MIN_LEN && !grep { cognate($x, $_) } @vb
+      } @la;
+      my @vrest = grep {
+        my $y = $_;
+        length($y) >= $MIN_LEN && !grep { cognate($_, $y) } @la
+      } @vb;
       next unless @lrest && @vrest;
 
       my %lseen = map { $_ => 1 } @lrest;
@@ -175,8 +181,7 @@ sub write_lexicon {
 
   foreach my $r (@$rows) {
     my ($l, $v, $c, $d) = @$r;
-    push @lines, sprintf('%s %s   # %s, %s  (%s/%s)',
-      $l, $v, $c, $d, ($rep->{$l} || $l), ($rep->{$v} || $v));
+    push @lines, sprintf('%s %s   # %s, %s  (%s/%s)', $l, $v, $c, $d, ($rep->{$l} || $l), ($rep->{$v} || $v));
   }
   open(my $fh, '>:raw', "$LEXDIR/$lang.txt") or die "$LEXDIR/$lang.txt: $!";
   my $text = join("\n", @lines) . "\n";
@@ -201,8 +206,7 @@ sub learn {
 
   for my $round (1 .. $rounds) {
     my ($pair, $lc, $vc, $rep) = _pairs_for($days);
-    my @rows = grep { !$veto{"$_->[0]\0$_->[1]"} && !$veto{"$_->[1]\0$_->[0]"} }
-      _select($pair, $lc, $vc);
+    my @rows = grep { !$veto{"$_->[0]\0$_->[1]"} && !$veto{"$_->[1]\0$_->[0]"} } _select($pair, $lc, $vc);
     $reps{$_} = $rep->{$_} foreach keys %$rep;
     my @new;
 

@@ -182,11 +182,15 @@ sub _group_and_count {
   for my $i ($hon + 1 .. $to) {
     my $w = lc deaccent($tokens->[$i]);
 
-    if ($w =~ /$NUMERAL/ || $w =~ /$MANY/) { push @run, [$i, $tokens->[$i]] }
-    elsif (!$group && $w =~ /$GROUP/) { $group = 1; push @run, [$i, $tokens->[$i]] }
+    if ($w =~ /$NUMERAL/ || $w =~ /$MANY/) {
+      push @run, [$i, $tokens->[$i]];
+    } elsif (!$group && $w =~ /$GROUP/) {
+      $group = 1;
+      push @run, [$i, $tokens->[$i]];
+    }
 
     # the run has ended: 'Mártyrum, urbis uníus cívium' counts no martyrs
-    elsif (@run) { last }
+    elsif (@run) {last}
   }
 
   # 'plurimórum sanctórum Mártyrum' puts the quantity before the honorific
@@ -195,6 +199,7 @@ sub _group_and_count {
       unshift @run, [$i, $tokens->[$i]] if lc(deaccent($tokens->[$i])) =~ /$MANY/;
     }
   }
+
   # Only a group AND a count says anything: 'forty-three monks' is what
   # the entry is, where a bare 'Martyrum' is what half the book is, and a
   # bare numeral is as likely to be the nine months of the Nativity as a
@@ -217,6 +222,7 @@ sub make_key {
   for my $i (0 .. $#tokens) {
     next unless lc(deaccent($tokens[$i])) =~ /$HONORIFIC/;
     $hon = $i;
+
     # A handful of saints are named for what is also a title -- Papas of
     # Lycaonia, Regina of Alise -- and are filtered out with the titles.
     # Nothing tells them apart from 'beátæ Maríæ Vírginis' by shape, so
@@ -246,7 +252,11 @@ sub make_key {
 
 sub pool_new {
   my $day = shift;
-  return {day => $day, sections => {}, order => []};
+  return {
+    day => $day,
+    sections => {},
+    order => [],
+  };
 }
 
 sub pool_set {

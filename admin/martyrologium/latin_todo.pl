@@ -46,7 +46,10 @@ my $TODO = "$TOOLS/latin-todo.txt";
 my @LANGS = qw(English Espanol Francais Italiano Polski Bohemice Portugues);
 
 my ($apply, $report);
-GetOptions('apply' => \$apply, 'report' => \$report) or die "bad options\n";
+GetOptions(
+  'apply' => \$apply,
+  'report' => \$report,
+) or die "bad options\n";
 die "usage: latin_todo.pl --report | --apply\n" unless $apply || $report;
 
 #*** classify($text, $lang)
@@ -158,23 +161,26 @@ EOT
       my ($day, $key, $id) = @$r;
       my $mark;
 
-      if (exists $was{$id}) { $mark = $was{$id}; $kept++ }
-      elsif ($why{$id} eq 'fragment') { $mark = '<' }
-      else { $mark = $why{$id} ? '-' : ' ' }
+      if (exists $was{$id}) {
+        $mark = $was{$id};
+        $kept++;
+      } elsif ($why{$id} eq 'fragment') {
+        $mark = '<';
+      } else {
+        $mark = $why{$id} ? '-' : ' ';
+      }
       $mark eq ' ' ? $yes++ : $no++;
       my $t = $text{$id};
       $t =~ s/\s+/ /g;
       my $also = @{$langs{$id}} > 1 ? ' +' . (@{$langs{$id}} - 1) : '';
-      $out .= sprintf("%s%s %-26s %-9s%-3s %.64s\n",
-        $mark, $day, $key, ($why{$id} || 'elogium'), $also, $t);
+      $out .= sprintf("%s%s %-26s %-9s%-3s %.64s\n", $mark, $day, $key, ($why{$id} || 'elogium'), $also, $t);
     }
   }
   open(my $fh, '>:raw', $TODO) or die "$TODO: $!";
   utf8::encode($out);
   print $fh $out;
   close $fh;
-  printf "%d entries: %d for the Latin to carry, %d not (%d decisions kept)\n",
-    $yes + $no, $yes, $no, $kept;
+  printf "%d entries: %d for the Latin to carry, %d not (%d decisions kept)\n", $yes + $no, $yes, $no, $kept;
   exit 0;
 }
 
@@ -186,9 +192,15 @@ foreach my $line (do_read_lines($TODO)) {
   next if $line =~ /^\s*#/ || $line !~ /\S/;
   my $mark = substr($line, 0, 1);
   $line =~ /(\d\d-\d\d)\s+(\S+)/ or next;
-  if ($mark eq '-') { $drop{$1}{$2} = 1 }
-  elsif ($mark eq '<') { $join{$1}{$2} = 1; $drop{$1}{$2} = 1 }
-  else { $want{$1}{$2} = 1 }
+
+  if ($mark eq '-') {
+    $drop{$1}{$2} = 1;
+  } elsif ($mark eq '<') {
+    $join{$1}{$2} = 1;
+    $drop{$1}{$2} = 1;
+  } else {
+    $want{$1}{$2} = 1;
+  }
 }
 
 # a tail marked '<' goes back onto the entry above it, in every language
@@ -254,6 +266,7 @@ sub after {
 foreach my $day (all_days()) {
   my $path = elogia_path('Latin', $day);
   next unless -e $path;
+
   my $pool = pool_read($path, $day);
   my %empty = map { $_->[0] => 1 }
     grep { !defined $_->[1] || $_->[1] !~ /\S/ } pool_entries($pool);
@@ -261,6 +274,7 @@ foreach my $day (all_days()) {
 
   my @new = grep { !$have{$_} } sort keys %{$want{$day} || {}};
   my @gone = grep { $empty{$_} } sort keys %{$drop{$day} || {}};
+
   next unless @new || @gone || $drop{$day};
 
   my $index = $pool->{sections}{Martyrologium} // '';
@@ -352,6 +366,7 @@ foreach my $day (all_days()) {
     push @out, "[$key]\n", "\n";
     $added++;
   }
+
   # Written the way it is read.  Tidying the blank lines by hand costs an
   # empty section the line that is its empty value, and then the file no
   # longer says what it said: it is read back one line short and written
