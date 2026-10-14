@@ -1,0 +1,83 @@
+[Officium]
+S. Joannis Berchmans, Confessoris
+
+[Rank]
+;;Duplex;;3;;vide C5
+
+[Rule]
+vide C5;mtv
+9 lectiones
+
+[Name]
+Joánnes
+
+[Oratio]
+Concéde, quǽsumus, famulis tuis, Dómine, Deus, ea innocéntiæ ac fidelitátis exémpla in tuo servítio sectári: quibus angélicus júvenis Joánnes ætátis suæ florem consecrávit. Per Dominum nostrum.
+$Per Dominum
+
+[Lectio4]
+Joánnes Berchmans Distémii, Brabantínæ diciónis óppido, piis honestísque paréntibus natus, a prima ætate morum innocéntia et mentis candóre præter humánum modum excélluit. In médiis sæculi blandiméntis adulescéntiam ab omni levitáte alieníssimam duxit, in Deum jam tum únice ferri visus, cui ut árctius adhæréret inter sodáles Societátis Jesu, quæ Stanisláum Kostka et Aloísium Gonzága haud ita pridem cælo transmiserat, admitti pétiit. Mechlíniæ tirocínio ínito nihil fuit religiósæ perfectiónis, quod non sibi intentíssima diligéntia conatúque assíduo. assequéndum proponeret: et vero paucórum ménsium tiro, plane dignus hábitus est, a quo non æquáles modo, sed étiam ætáte provectiores maturæ virtutis exémpla péterent. Romam cum venisset studiórum causa, et operaretur philosóphiæ in collégio Románo, sodáles sibi rédditum arbitrabántur Aloísium Gonzága; adeo sanctimóniam illius et vivéndi ratiónem omnem exprésserat.
+
+[Lectio5]
+Modéstia et sénsuum custódia ad miraculum spectabátur; ita semet gerere solitus, ut qui eum inspicerent, non dubitárent dicere, scriptas a beáto Ignátio leges de modestia, si quo interirent casu, in Joánne reperiéndas. Disciplina doméstica servantissimus ne tantillum quidem a religiósæ vita ratióne defléxit, illam crébrius usúrpans vocem: Mea máxima poniténtia vita commúnis. E tot sociórum número, quibúscum quotídie versabatur, nemo in illo quidquam notávit, quod reprehéndi posset: non supervacáneam aut parum considerátam vocem, non impetum ánimi, non afféctum repentinum, quales ratióni vulgo præcúrrunt. Tantam ejus virtutem exornábat mira dulcédo indolis et nativa ris species, e qua purissimæ mentis emicabat intégritas et quidam intuéntibus afflabatur amor pudicítiæ et castimóniæ. Virginitátem, quam Deo vovisse puérulum terunt, nullo carnis stimulo tentatam perpétuo custodívit. In Deíparam, quam a prima ætáte sibi in paréntem adsciverat, nullum unquam prætermisit officii aut obsequi genus, quo amórem erga illam suum et religionem testarétur; præcípuo vero cultu Immaculátum ejus Concéptum prosequebatur, cui propugnándo ex voti fórmula suo subscripta sánguine júgiter se adlaboratúrum promisit.
+
+[Lectio6]
+Studio animárum incénus sacras expeditiones prospectabat animo, quas olim suscipere pro Dei gloria cupiebat, cum in ipso juventútis flore, matúrus cælo, vívere désiit. Ex gravi morbo sensim defíciens, in commúni omnium mæróre hílari vultu gestiébat, quasi vero supérna beatitátis dulcédinem prægustaret. Ad hæc solári inviséntes, novíssimis síngulos hortári ad virtútem mónitis, eventura prænuntiare, quæ Dei instínctu ab eo dicta re ipsa compértum est. Sacrosáneto Christi córpore génibus humi flexis réfici vóluit, ac paulo ántequam moreretur, signum Jesu crucifíxi, beatæ Virginis Rosário implícitum, libéllo Regulárum Societátis impónens, Hæc tria, inquit, mihi caríssima: cum his libénter móriar. Ita qua prædixerat hora placidissimo éxitu decéssit, Idibus Augusti anno millésimo sexcentésimo vicésimo primo, annos natus vigínti duos, menses quinque. Funus ejus ómnium Ordinum concúrsu et láudibus celebrátum est, omnésque pro certo habuérunt, Joánnem ad sedes Beatórum, cum iis aliquándo in terris venerándum, evolasse. Commúnem hanc persuasiónem multa divinitus osténsa confirmárunt. Quare, biénnio ab ejus óbitu nondum elápso, de ipsíus virtútibus et miraculis judícium est institutum, quo ad éxitum perducto, Pius nonus eum beatórum Cǽlitum número accénsuit. Cum autem Joánnis mérita novis inde miráculis inclaruissent, Leo décimus tértius, quinquagésimo sacerdótii sui anno absolúto Sanctórum honóres eidem sollémniter decrévit.
+
+[Lectio7]
+Sequéntia ++ sancti Evangélii secúndum Matthǽum
+!Matt 19:16-21
+In illo témpore: Ecce, unus accedens ad Jesum, ait illi: Magíster bone, quid boni fáciam, ut hábeam vitam ætérnam? Et réliqua.
+_
+@Sancti/02-27:Lectio7:5
+!In Marc. cap. 10
+@Sancti/02-27:Lectio8:s/.*(H(?:æ|ae)c est.*?\.).*/$1 ~/
+Notándum sane, quod justítia legis suo témpore custodita non solum bona terræ verum étiam suis cultóribus vitam conferébat ætérnam. Et ille respóndens ait: ~
+@Sancti/02-27:Lectio8:s/.*(Mag[íi]ster.*?\.)$/$1 ~/
+@Sancti/02-27:Lectio9:s/Ad quam.*//
+
+[Lectio8]
+@Sancti/02-27:Lectio9:s/.*(Ad quam)/$1/ s/\&teDeum//
+
+
+[Evangelium]
+Sequéntia ++ sancti Evangélii secúndum Matthǽum
+!Matt 19:16-21
+In illo témpore: Ecce, unus accedens ad Jesum, ait illi: Magíster bone, quid boni fáciam, ut hábeam vitam ætérnam? Qui dixit ei: Quid me intérrogas de bono? Unus est bonus, Deus. Si autem vis ad vitam íngredi, serva mandáta. Dicit illi: Quæ? Jesus autem dixit: Non homicídium fácies: Non adulterábis: Non fácies furtum: Non falsum testimónium dices: Hónora patrem tuum et matrem tuam, et díliges próximum tuum sicut te ipsum. Dicit illi adoléscens: Omnia hæc custodívi a juventúte mea: quid adhuc mihi deest? Ait illi Jesus: Si vis perféctus esse, vade, vende, quæ habes, et da paupéribus, et habébis thesáurum in cœlo: et veni, séquere me.
+
+[Introitus]
+!Ps 118:167
+v. Custodívit ánima mea testimónia tua, Dómine: et diléxit ea veheménter.
+!Ps. ibid., 1
+Beáti immaculáti in via: qui ámbulant in lege Dómini.
+&Gloria
+v. Custodívit ánima mea testimónia tua, Dómine: et diléxit ea veheménter.
+
+[Lectio]
+Léctio libri Sapiéntiæ
+!Eccli 51:17-25, 27-28 et 35
+v. Confitébor et laudem dicam tibi, Dómine Rex, et benedícam nómini Dómini. Cum adhuc iúnior essem, priúsquam oberrárem, quæsívi sapiéntiam palam in oratióne mea. Ante templum postulábam pro illa, et usque in novíssimis inquíram eam: et efflóruit tamquam præcox uva. Lætátum est cor meum in ea: ambulávit pes meus iter rectum: a juventúte mea investigábam eam. Incliná vi módico aurem meam, et excépi illam. Multam invéni in meípso sapiéntiam, et multum proféci in ea. Danti mihi sapiéntiam, dabo glóriam. Consiliátus sum enim ut fácerem illam. Zelátus sum bonum, et non confúndar. Colluctáta est ánima mea in illa, et in faciéndo eam confirmátus sum. Animam meam diréxi ad illam, et in agnitióne invéni eam. Possédi cum ipsa cor ab inítio: propter hoc non derelínquar. Vidéte óculis vestris, quia módicum laborávi, et invéni mihi multam réquiem.
+
+[Graduale]
+!Sap. 4:13-14
+Consummatus in brevi explevit tempora multa.
+V. Placita enim erat Deo anima illius: propter hoc properavit educere illum de medio iniquitatum.
+Allelúja, allelúja.
+!ibid., 16
+V. Condémnat autem justus mórtuus vivos ímpios et juvéntus celérius consummáta longam vitam injústi. Allelúja.
+
+[Offertorium]
+!Ps 115:16-17
+O Dómine, quia ego servus tuus: ego servus tuus et fílius ancíllæ tuæ: dirupísti víncula mea, tibi sacrificábo hóstiam laudis.
+
+[Secreta]
+Réspice, miséricors Deus, dona, quæ offérimus, recoléntes ánimo caritátem: qua beátus Joánnes inter hæc mystéria flagrábat.
+$Per Dominum
+
+[Communio]
+!Cant 6:2; 3:4
+Ego dilécto meo, et diléctus meus mihi, qui páscitur inter lília. Invéni, quem díligit ánima mea: ténui eum, nec dimíttam.
+
+[Postcommunio]
+Cælésti épulo reféctis præsta nobis, quǽsumus, miséricors Deus: ut, beáti Joánnis vestígia sequéntes, viam mandatórum tuórum dilatáto corde currámus.
+$Per Dominum
