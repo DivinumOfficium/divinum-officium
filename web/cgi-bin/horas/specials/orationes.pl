@@ -465,12 +465,13 @@ sub oratio {
         if (!(-e "$datafolder/$lang/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
         %c = %{officestring('Latin', $commemo, 0)};
 
-        if ($c{Rank} =~ /in.*octavam|post Octavam Asc/i && $octvespera) {
-          $c = getcommemoratio($commemo, $octvespera, $lang);
-          setbuild2("Substitute Commemoratio of Octave to $octvespera");
-        } else {
-          $c = getcommemoratio($commemo, $cv, $lang);
-        }
+        #if ($c{Rank} =~ /in.*octavam|post Octavam Asc/i && $octvespera) {
+        #  $c = getcommemoratio($commemo, $octvespera, $lang);
+        #  setbuild2("Substitute Commemoratio of Octave to $octvespera");
+        #} else {
+        $c = getcommemoratio($commemo, $cv, $lang);
+
+        #}
         my $c2 = $cv == 2 ? vigilia_commemoratio($commemo, $lang) : '';
         $c ||= $c2;
         %c = %{officestring($lang, $commemo, 0)} unless $lang eq 'Latin';
