@@ -54,6 +54,11 @@ is(liturgical_color('In Vigilia Ascensionis Domini'), 'black', 'Black (anchored)
 
 is(liturgical_color('Dominica Septuagesima'), 'purple', 'Purple: "gesim" (Septuagesima/Sexagesima/Quinquagesima)');
 
+# Rose (optional, Gen. Rubr. 131): narrowly anchored Gaudete/Laetare titles,
+# ordered before purple's Adventus/gesim catch-all; violet remains valid.
+is(liturgical_color('Dominica III Adventus'), 'deeppink', 'Rose: Gaudete Sunday (optional; violet also valid)');
+is(liturgical_color('Dominica IV in Quadragesima'), 'deeppink', 'Rose: Laetare Sunday (optional; violet also valid)');
+
 is(liturgical_color('In Dedicatione Ecclesiae'), 'black', 'Black: "Dedicatione"');
 
 is(liturgical_color('In Festo Pentecosten'), 'green', 'Green: bare "Pentecosten"');

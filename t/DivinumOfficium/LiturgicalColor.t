@@ -31,6 +31,11 @@ use Test2::V0;
 
 is(liturgical_color('Dominica I Adventus'), 'purple', 'Advent Sunday is violet');
 
+# Rose is optional (Gen. Rubr. n.131); violet remains valid. Real [Officium]
+# titles from Tempora/Adv3-0.txt and Tempora/Quad4-0.txt.
+is(liturgical_color('Dominica III Adventus'), 'deeppink', 'Gaudete Sunday may use rose (optional)');
+is(liturgical_color('Dominica IV in Quadragesima'), 'deeppink', 'Laetare Sunday may use rose (optional)');
+
 ### Tempus Nativitatis (Christmastide) - white, except martyrs within it
 
 is(liturgical_color('In Nativitate Domini'), 'black', 'Christmas Day is white');

@@ -40,6 +40,12 @@ sub liturgical_color {
   # which does match here. So this branch is real, but reachable only for
   # that one rubrics version. See t/DivinumOfficium/LiturgicalColor.t.
   return 'black' if (/^In Vigilia Ascensionis|^In Vigilia Epiphaniæ/);
+
+  # NB: rose is optional (General Rubrics n.131: Gaudete/Laetare only, violet
+  # remains valid). Narrowly anchored to the two real [Officium] titles so no
+  # other day changes. 'deeppink' renders on light and dark backgrounds;
+  # maintainer may swap it for any other rose/hex.
+  return 'deeppink' if (/^Dominica III Adventus|^Dominica IV in Quadragesima/);
   return 'purple'
     if (
     /(?:Vigilia|Quattuor|Rogatio|Passion|Palmis|gesim|(?:Majoris )?Hebdomadæ(?: Sanctæ)?|Sabbato Sancto|Dolorum|Ciner|Adventus)/i
