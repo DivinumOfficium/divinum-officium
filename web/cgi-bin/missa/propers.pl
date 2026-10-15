@@ -1025,12 +1025,16 @@ sub graduale : ScriptFunc {
   my $lang = shift;
   my $t = '';
   $t = getitem('Graduale', $lang);
-
-  if (exists($winner{Sequentia})) {
-    $t .= "_\n!!Sequentia\n" . getitem('Sequentia', $lang);
-  } elsif ($communerule =~ /Sequentia/i && exists($commune{Sequentia})) {
-    my %c = columnsel($lang) ? %commune : %commune2;
-    $t .= "_\n!!Sequentia\n" . $c{Sequentia};
+  our $votive;
+  # Rubr. 321/470: Sequentia omittitur in Missis votivis; Dies Irae per n.399
+  my $votivaSinSeq = ($votive && $votive !~ /Defunct|C9/i);
+  unless ($votivaSinSeq) {
+    if (exists($winner{Sequentia})) {
+      $t .= "_\n!!Sequentia\n" . getitem('Sequentia', $lang);
+    } elsif ($communerule =~ /Sequentia/i && exists($commune{Sequentia})) {
+      my %c = columnsel($lang) ? %commune : %commune2;
+      $t .= "_\n!!Sequentia\n" . $c{Sequentia};
+    }
   }
   return $t;
 }
