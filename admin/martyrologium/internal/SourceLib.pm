@@ -187,8 +187,9 @@ sub page_lines {
 # text is taken as it is written, the way the tools always have; a Word
 # day file goes through page_lines, as it has paragraphs and not lines.
 #
-# A file holds a month or the year, one day to a page.  Which month is
-# --month, or the two digits its name starts with (01.docx); a file with
+# A file holds a month, several, or the year, one day to a page.  Which
+# months is --month, 3 or 3-5, or the two digits its name starts with
+# (01.docx, a month alone); a file with
 # a page for every day of the year is the year.  The pages must come out
 # to the days exactly, or nothing is read: a page too many or too few
 # puts every day after it on the wrong date.
@@ -233,8 +234,14 @@ sub read_source {
   }
 
   if ($month) {
-    die "--month must be 1 to 12\n" unless $month =~ /^\d+$/ && $month >= 1 && $month <= 12;
-    @dates = map { sprintf('%02d-%02d', $month, $_) } 1 .. $DMAX[$month - 1];
+    my ($from, $to) = $month =~ /^(\d+)(?:-(\d+))?$/ or die "--month is a month or a range, 3 or 3-5\n";
+    $to //= $from;
+    die "--month must be 1 to 12, the first not after the last\n"
+      unless $from >= 1 && $to <= 12 && $from <= $to;
+
+    foreach my $m ($from .. $to) {
+      push @dates, map { sprintf('%02d-%02d', $m, $_) } 1 .. $DMAX[$m - 1];
+    }
   } elsif (@pages == @all) {
     @dates = @all;
   } else {
