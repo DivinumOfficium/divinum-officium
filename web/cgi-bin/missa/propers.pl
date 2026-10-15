@@ -1249,6 +1249,9 @@ sub Ultimaev : ScriptFunc {
 
   my %win = columnsel($lang) ? %winner : %winner2;
   our @commemoentries;
+  our $absolutio;
+  # Rubr. 510e: no Last Gospel when absolution over coffin/catafalque follows
+  return '' if ($absolutio);
   my (%com, %comlat);
 
   foreach my $commemo (@commemoentries) {
