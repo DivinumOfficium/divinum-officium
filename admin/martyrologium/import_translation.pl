@@ -5,17 +5,19 @@
 # The translator writes plain files, one per day, as the martyrology has
 # always been stored: heading line, '_', then one elogium per line.  Name
 # them MM-DD.txt and point --src at the folder.  Or hand in the book as
-# it is printed, a day to a page: one document for a month or the year,
-# in plain text (pages broken by form feed) or Word.
+# it is printed, a day to a page: one document for a month, a few, or
+# the year, in plain text (pages broken by form feed) or Word.
 #
 #     perl import_translation.pl --lang Deutsch --src ~/deutsch
 #     perl import_translation.pl --lang Francais --src Janvier.docx --month 1
+#     perl import_translation.pl --lang Francais --src Mars-Avril-Mai.docx --month 3-5
 #
 #     --lang      folder under web/www/horas/
 #     --src       folder of MM-DD.txt / MM-DD.docx files, any subset of
 #                 the year; or one .txt or .docx, a day to a page
-#     --month     which month a one-month file is, when its name does not
-#                 start with it (01.docx); a file of 366 pages is the year
+#     --month     which months the file holds, 3 or 3-5; a one-month file
+#                 named for its month (01.docx) needs none, and a file of
+#                 366 pages is the year
 #     --replace   re-import days already there
 #
 # It keeps a copy of the files under obsolete/martyrologium-source, matches
@@ -54,13 +56,13 @@ my ($lang, $src, $month, $replace, $help);
 GetOptions(
   'lang=s' => \$lang,
   'src=s' => \$src,
-  'month=i' => \$month,
+  'month=s' => \$month,
   'replace' => \$replace,
   'help' => \$help,
 ) or die "bad options\n";
 
 if ($help || !$lang || !$src) {
-  die "usage: import_translation.pl --lang <Language> --src <folder|file> [--month N] [--replace]\n";
+  die "usage: import_translation.pl --lang <Language> --src <folder|file> [--month N|N-M] [--replace]\n";
 }
 
 #*** convert_all(\%days, \%skipped)
