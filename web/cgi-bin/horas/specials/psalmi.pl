@@ -396,6 +396,8 @@ sub psalmi_major {
   $prefix = translate('Psalmi et antiphonae', $lang) . ' ';
 
   my @antiphones;
+  my @p;
+  my ($w, $c);
 
   if ( ($hora eq 'Laudes' || ($hora eq 'Vespera' && $version =~ /1963/))
     && $month == 12
@@ -405,6 +407,7 @@ sub psalmi_major {
   {
     # TODO: is this really the case in Monastic 1963 Vespers throughout the week?
     @antiphones = split("\n", $psalmi{"Day$dayofweek Laudes3"});
+    $comment = 1;
 
     if ($dayofweek == 6 && $version =~ /Trident|Monastic/) {
       my $expectetur = $antiphones[3];    # save Expectetur
@@ -429,14 +432,11 @@ sub psalmi_major {
     setbuild2('Special Laudes antiphonas for week before vigil of Christmas');
   }
 
-  my @p;
-  my ($w, $c);
-
   if ($rule =~ /Psalmi ex Psalterio/) {
 
     # Do not look for proper Antiphones
     @p = ();
-    $comment = 1;
+    $comment = 0;
     setbuild2('Psalmi ex Psalterio');
   } else {
 
@@ -494,6 +494,7 @@ sub psalmi_major {
         || ($commune{Rule} && $commune{Rule} =~ /Psalmi Dominica/i)
       )
       && @antiphones
+      && $c
       && ($antiphones[0] !~ /\;\;\s*[0-9]+/)
       && ($rule !~ /Psalmi Feria|Psalmi ex Psalterio/i)
     ) {
