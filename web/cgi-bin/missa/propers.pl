@@ -1187,7 +1187,12 @@ sub AgnusHook {
 sub CheckQuiDixisti { our $votive =~ /Defunct|C9/i || our $rule =~ /no Qui Dixisti/i; }
 sub CheckPax { !(our $solemn) || our $votive =~ /Defunct|C9/i || our $rule =~ /no Pax/i; }
 sub CheckBlessing { our $votive =~ /Defunct|C9/i || our $rule =~ /no Benedictio/i; }
-sub CheckUltimaEv { our $rule =~ /no Ultima Evangelium/i; }
+
+# No UltimaEv on Corpus Christi if followed by procesion which is assumed after solemn mass.
+sub CheckUltimaEv {
+  our $rule =~ /no Ultima Evangelium/i
+    || (our $solemn && our $version =~ /196/ && our $winner =~ /Pent01\-4/);
+}
 
 sub communio : ScriptFunc {
   my $lang = shift;
@@ -1222,7 +1227,12 @@ sub itemissaest : ScriptFunc {
   my $lang = shift;
   my $text = prayer('IteMissa', $lang);
   my @text = split("\n", $text);
-  my $benedicamus = (gloriflag() && $version !~ /196/) || ($rule =~ /^\s*Benedicamus Domino\s*$/mi);
+
+  # Benedicamus Domino also in rubrics 1960 before Corpus Christi procession after Solemn Mass
+  my $benedicamus =
+       (gloriflag() && $version !~ /196/)
+    || ($rule =~ /^\s*Benedicamus Domino\s*$/mi)
+    || (our $solemn && $version =~ /196/ && our $winner =~ /Pent01\-4/);
 
   return ($dayname[0] =~ /Pasc0/i) ? "$text[2]\n$text[3]" :    # Ite, missa est, alleluia, alleluia.
     ($votive =~ /Defunct|C9/i) ? "$text[6]\n$text[7]" :        # Requiescant in pace.
