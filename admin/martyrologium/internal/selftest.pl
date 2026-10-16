@@ -67,6 +67,15 @@ Kaléndis Maii
 
 @Martyrologium/05-02:Elsewhere
 
+@:Only1570
+
+[OnlyTestlang]
+
+[Only1570]
+
+[Only1570] (rubrica 1570)
+latine solo 1570
+
 [Semper]
 latine semper
 
@@ -222,6 +231,9 @@ testlang reworded
 
 [OnlyTestlang]
 testlang only here
+
+[Only1570]
+testlang solo 1570
 EOT
 
 w('Testlang/Martyrologium/05-02.txt', <<'EOT');
@@ -336,13 +348,13 @@ is([grep {/only here/} render('Latin', '05-01', 'Divino Afflatu')], '', 'renders
 print "Testlang\n";
 is(
   [render('Testlang', '05-01', 'Divino Afflatu')],
-  'TESTLANG TITULUS | _ | testlang semper | testlang solo DA | testlang reworded | testlang only here | testlang elsewhere',
+  'TESTLANG TITULUS | _ | testlang semper | testlang solo DA | testlang reworded | testlang only here | testlang elsewhere | testlang solo 1570',
   'own text, own entry kept, own order ignored, and no Latin in the column',
 );
 
 is(
   [render('Testlang', '05-01', 'Rubrics 1960 - 1960')],
-  'TESTLANG TITULUS | _ | testlang semper | testlang solo 1960 | testlang reworded | testlang only here | testlang elsewhere',
+  'TESTLANG TITULUS | _ | testlang semper | testlang solo 1960 | testlang reworded | testlang only here | testlang elsewhere | testlang solo 1570',
   'the version rules come from the Latin index',
 );
 
@@ -353,8 +365,21 @@ is(
 );
 is(
   [render('Testother', '05-01', 'Divino Afflatu')],
-  'TESTLANG TITULUS | _ | testlang semper | testlang solo DA | testlang reworded | testlang only here | testlang elsewhere',
+  'TESTLANG TITULUS | _ | testlang semper | testlang solo DA | testlang reworded | testlang elsewhere',
   'a language with no martyrology of its own reads the fallback language',
+);
+is(
+  [grep {/only here/} render('Testother', '05-01', 'Divino Afflatu')],
+  '', 'but only for what the Latin says: the fallback\'s own entries stay its own',
+);
+is(
+  [grep {/1570/} render('Testother', '05-01', 'Tridentine - 1570')],
+  'testlang solo 1570',
+  'what the Latin says is asked of the version being read: 1570 has words for it',
+);
+is(
+  [grep {/1570/} render('Testother', '05-01', 'Divino Afflatu')],
+  '', 'and a version whose Latin is silent on it is not filled',
 );
 
 print "a day left with only its title\n";
