@@ -511,8 +511,10 @@ print "a book is read a day to a page\n";
     'refused', 'a month short of pages is refused, the month taken from the name',
   );
   is([eval { SourceLib::read_source($docx, 2); 1 } ? 'read' : 'refused'], 'refused', 'and so is it as February');
-  is([eval { SourceLib::read_source($docx, '1-2'); 1 } ? 'read' : $@ =~ /4 pages for 60 days/ ? 'refused' : $@],
-    'refused', 'and a run of months counts the days of all of them');
+  is(
+    [eval { SourceLib::read_source($docx, '1-2'); 1 } ? 'read' : $@ =~ /4 pages for 60 days/ ? 'refused' : $@],
+    'refused', 'and a run of months counts the days of all of them',
+  );
 }
 
 remove_tree($tmp);

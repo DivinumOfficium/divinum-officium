@@ -1026,8 +1026,10 @@ sub graduale : ScriptFunc {
   my $t = '';
   $t = getitem('Graduale', $lang);
   our $votive;
+
   # Rubr. 321/470: Sequentia omittitur in Missis votivis; Dies Irae per n.399
   my $votivaSinSeq = ($votive && $votive !~ /Defunct|C9/i);
+
   unless ($votivaSinSeq) {
     if (exists($winner{Sequentia})) {
       $t .= "_\n!!Sequentia\n" . getitem('Sequentia', $lang);
@@ -1264,6 +1266,7 @@ sub Ultimaev : ScriptFunc {
   my %win = columnsel($lang) ? %winner : %winner2;
   our @commemoentries;
   our $absolutio;
+
   # Rubr. 510e: no Last Gospel when absolution over coffin/catafalque follows
   return '' if ($absolutio);
   my (%com, %comlat);
