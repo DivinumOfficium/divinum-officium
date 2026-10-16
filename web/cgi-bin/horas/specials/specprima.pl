@@ -368,6 +368,11 @@ sub _elogia_entry {
 # so a gap anywhere is filled from below and in the end always from the
 # Latin.  A column falls back as far as the reader's fallback language
 # and stops.
+#
+# And the fallback fills only what the Latin itself says.  The Latin
+# decides which elogia the day has; an entry it has no words for is there
+# because some book has it, and it is that book's to print, not every
+# column's that falls back on it.
 sub _elogia_own_first {
   my ($s, $lang, $mmdd, $key) = @_;
   my $value = $s->{$key};
@@ -375,7 +380,12 @@ sub _elogia_own_first {
   # the Latin column prints the Latin
   return $value if $lang =~ /^Latin/i;
 
-  foreach my $layer (_elogia_chain($lang)) {
+  our $langfb;
+  my @chain = _elogia_chain($lang);
+  push @chain, $langfb
+    if $langfb && !(grep { $_ eq $langfb } @chain) && _elogia_latin_says($mmdd, $key);
+
+  foreach my $layer (@chain) {
     my @mine = @{_elogia_own($layer, $mmdd)->{$key} || []};
     next unless @mine;
 
@@ -395,19 +405,22 @@ sub _elogia_own_first {
 }
 
 #*** _elogia_chain($lang)
-# The languages a column may draw on: itself, the parent of a hyphenated
-# name, and the reader's fallback language.
+# The languages that are a column's own: itself, and the parent of a
+# hyphenated name.
 sub _elogia_chain {
   my $lang = shift;
-  our $langfb;
-  my (@out, %seen);
-
-  for (my $l = $lang;;) {
-    push @out, $l unless $seen{$l}++;
-    last unless $l =~ s/-[^-]+$//;
-  }
-  push @out, $langfb if $langfb && !$seen{$langfb}++;
+  my @out = ($lang);
+  push @out, $lang while $lang =~ s/-[^-]+$//;
   return @out;
+}
+
+#*** _elogia_latin_says($mmdd, $key)
+# Whether the Latin column, in this version, prints words for the entry.
+sub _elogia_latin_says {
+  my ($mmdd, $key) = @_;
+  my $latin = setupstring('Latin', "Martyrologium/$mmdd.txt", 'resolve@' => RESOLVE_NONE) or return 0;
+  my $text = $latin->{$key};
+  return defined $text && $text =~ /\S/ && $text !~ /^\s*\@\S+\s*$/;
 }
 
 my %_own_cache;
