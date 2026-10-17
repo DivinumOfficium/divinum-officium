@@ -170,7 +170,6 @@ sub martyrologium {
       {
         foreach (@a) {
           last FINDDATE if s/^Upon the \d+ ?.. day of \S+/$luna /i;                                          # English
-          last FINDDATE if s/^Dnia \d+-go \S+ (.)/${luna}r. \u$1/;                                           # Polski
           last FINDDATE if s/^\d+\. (?:\(\d+.\) )?\S+/${luna}/;                                              # Bohemice
           last FINDDATE if s/^\d+ de \S+/${luna}/i;                                                          # Espanol
           last FINDDATE if s/^(Le(?: même)? \d+ .*?\,)/$1 \l$luna, /i;                                       # French 1
@@ -624,11 +623,22 @@ sub _luna {
     "Lua $ordinals[$lday-1]. Ano do Senhor de $year";
   } elsif ($lang =~ /Polski/) {
     my @months_pl = (
-      'stycznia', 'lutego', 'marca', 'kwietnia', 'maja', 'czerwca',
-      'lipca', 'sierpnia', 'września', 'października', 'listopada', 'grudnia',
+      '', 'stycznia', 'lutego', 'marca', 'kwietnia', 'maja',
+      'czerwca', 'lipca', 'sierpnia', 'września', 'października', 'listopada',
+      'grudnia',
+    );
+    my @ordinals = (
+      '', 'pierwszego', 'drugiego', 'trzeciego',
+      'czwartego', 'piątego', 'szóstego', 'siódmego',
+      'ósmego', 'dziewiątego', 'dziesiątego', 'jedenastego',
+      'dwunastego', 'trzynastego', 'czternastego', 'piętnastego',
+      'szesnastego', 'siedemnastego', 'osiemnastego', 'dziewiętnastego',
+      'dwudziestego', 'dwudziestego pierwszego', 'dwudziestego drugiego', 'dwudziestego trzeciego',
+      'dwudziestego czwartego', 'dwudziestego piątego', 'dwudziestego szóstego', 'dwudziestego siódmego',
+      'dwudziestego ósmego', 'dwudziestego dziewiątego', 'trzydziestego', 'trzydziestego pierwszego',
     );
 
-    "Roku Pańskiego $year, ${day}-go $months_pl[$month - 1], ${lday}-go dnia księżyca.\n_\n";
+    "Roku Pańskiego $year, dnia $ordinals[$day] $months_pl[$month], $ordinals[$lday] dnia księżyca.\n_\n";
   } elsif ($lang =~ /Francais/) {
     "Le $lday" . "e jour de la Lune, l’année du Seigneur $year";
   } elsif ($lang =~ /Italiano/) {
