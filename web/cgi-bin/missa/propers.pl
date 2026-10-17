@@ -1028,7 +1028,7 @@ sub graduale : ScriptFunc {
   our $votive;
 
   # Rubr. 321/470: Sequentia omittitur in Missis votivis; Dies Irae per n.399
-  my $votivaSinSeq = ($votive && $votive !~ /Defunct|C9/i);
+  my $votivaSinSeq = ($votive && $votive ne 'Hodie' && $votive !~ /Defunct|C9/i);
 
   unless ($votivaSinSeq) {
     if (exists($winner{Sequentia})) {
