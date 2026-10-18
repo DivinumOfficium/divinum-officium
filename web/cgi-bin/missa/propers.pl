@@ -986,11 +986,12 @@ sub Credo {
       if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
       my %c = %{setupstring('Latin', $commemo)};
 
-      if ( (($c{Rank} =~ /Octav/i && $c{Rank} !~ /post Octavam/) || $c{Rule} =~ /Credo/i)
+      if ( (($c{Rank} =~ /Octav/i && $c{Rank} !~ /post Octavam/) || $c{Rule} =~ /(?<!no )Credo/i)
         && $c{Rank} !~ /Simplex/i
         && $version !~ /196/)
       {
         $flag = 0;
+        setbuild1("Credo", "ratione $commemo");
         last;
       }
     }

@@ -324,8 +324,8 @@ sub oratio {
               : 6100                                  # Sundays are below MM.maj. commemorations for Altovado
             )
             : ($ic =~ /$octavestring/i) ? (
-              (!$cwinner && $octvespera && $version =~ /divino|1906/i)
-              ? 1000                                  # Concurrent Octaves commemorated on Sunday night are privilegded
+              (!$cwinner && $octvespera && $version =~ /divino|1906/i && ($month < 12 || $day < 18))
+              ? $ccind + 1000                         # Concurrent Octaves commemorated on Sunday night are privilegded
               : $ccind + 7900
             )
             : $ccind + 9900;
@@ -434,6 +434,7 @@ sub oratio {
                 && $cwinner =~ /Sancti/i
                 && $cwinner !~ /08\-14|06\-23|06\-28|08\-09/)
             ) {
+              setbuild2("Discarded from concurrent: $ic");
               next;
             }
             if ($ic !~ /^!/) { $ic = "!$ic"; }
@@ -465,16 +466,10 @@ sub oratio {
         if (!(-e "$datafolder/$lang/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
         %c = %{officestring('Latin', $commemo, 0)};
 
-        #if ($c{Rank} =~ /in.*octavam|post Octavam Asc/i && $octvespera) {
-        #  $c = getcommemoratio($commemo, $octvespera, $lang);
-        #  setbuild2("Substitute Commemoratio of Octave to $octvespera");
-        #} else {
         $c = getcommemoratio($commemo, $cv, $lang);
 
-        #}
         my $c2 = $cv == 2 ? vigilia_commemoratio($commemo, $lang) : '';
         $c ||= $c2;
-        %c = %{officestring($lang, $commemo, 0)} unless $lang eq 'Latin';
 
         if ($c) {
           my @cr = split(";;", $c{Rank});
@@ -552,6 +547,7 @@ sub oratio {
                   && $version !~ /cist/i
                   && $commemo !~ /Pent02\-0/)
               ) {
+                setbuild2("Discarded from Commemorated: $ic");
                 next;
               }
               if ($ic !~ /^!/) { $ic = "!$ic"; }
