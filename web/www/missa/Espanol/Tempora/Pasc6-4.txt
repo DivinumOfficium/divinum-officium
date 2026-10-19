@@ -1,5 +1,15 @@
+@Tempora/Pasc5-4
+
 [Officium]
 Día octavo de la Ascensión
 
 [Officium] (rubrica 196 aut rubrica 1955)
 Jueves después de la Ascensión
+
+[Rule]
+ex Tempora/Pasc5-4;
+Gloria
+Suffr=Maria3;Ecclesiæ,Papa;;
+
+[Evangelium]
+@Tempora/Pasc5-5

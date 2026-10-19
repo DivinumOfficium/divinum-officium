@@ -1,5 +1,16 @@
+@Tempora/Pasc5-4
+
 [Officium]
 Sábado dentro de la Octava de la Ascensión
 
 [Officium] (rubrica 196 aut rubrica 1955)
 Sábado después de la Ascensión
+
+[Rule]
+Evangelium non appropriatum
+ex Tempora/Pasc5-4;
+Gloria
+Suffr=Maria3;Ecclesiæ,Papa;;
+
+[Evangelium]
+@Tempora/Pasc5-5
