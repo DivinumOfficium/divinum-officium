@@ -4,6 +4,9 @@ Cátedra de S. Pedro, Apóstol, en Antioquía
 [Officium] (rubrica 196 aut rubrica 1930)
 Cátedra de San Pedro, Apóstol
 
+[Introitus]
+@Commune/C2a
+
 [Oratio Pauli]
 !Commemoratio S. Pauli
 v. ¡Oh Dios, que instruiste al mundo entero con la predicación del apóstol San Pablo!; concédenos, a cuantos celebramos hoy su recuerdo, caminar hacia ti siguiendo sus ejemplos.
@@ -12,6 +15,17 @@ $Per Dominum
 [Oratio Petri]
 Oh Dios, que al entregar a tu Apóstol San Pedro las llaves del reino de los cielos, le otorgaste la potestad pontificia de atar y desatar; concédenos que, con el auxilio de su intercesión, nos libremos de las ataduras de nuestros pecados.
 $Qui vivis
+
+[GradualeP]
+@Commune/Coronatio
+
+[Tractus]
+!Ps 106:32; 106:31
+Ensálcenle en la asamblea del pueblo; alábenle en la junta de ancianos.
+V. Alaben al Señor por su misericordia y por sus maravillas en favor de los hijos de los hombres.
+_
+!Tractus
+@Commune/Coronatio
 
 [Secreta Pauli]
 !Por S. Pablo
