@@ -1,6 +1,12 @@
 [Officium]
 Domingo de Septuagésima
 
+[Rule]
+no Gloria
+Credo
+Prefatio=Trinitate
+Suffr=Maria2;Papa,Ecclesiæ;;
+
 [Introitus]
 !Ps 17:5-7
 v. Me cercaron angustias de muerte; dolores de infierno me rodearon: y en mi tribulación invoqué al señor, y Él oyó mi voz desde su santo templo.
@@ -43,6 +49,10 @@ En aquel tiempo, dijo Jesús a sus discípulos esta parábola: Pues el reino de 
 [Offertorium]
 !Ps 91:2
 Bueno es alabar al Señor y cantar salmos a tu nombre, ¡oh Altísimo!
+
+[Secreta]
+Te rogamos, Señor, que, recibidos nuestros dones y plegarias, nos purifiques con los misterios celestiales y nos escuches con clemencia.
+$Per Dominum
 
 [Communio]
 !Ps 30:17-18

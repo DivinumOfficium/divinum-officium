@@ -1,2 +1,16 @@
 [Officium]
 Miércoles en la semana I después de Pentecostés
+
+[Rule]
+no Gloria
+no Credo
+Suffr=Sanctorum;Maria3,Ecclesiæ,Papa;;
+
+[Oratio]
+@Tempora/Pent01-1:Oratio
+
+[Secreta]
+@Tempora/Pent01-1:Secreta
+
+[Postcommunio]
+@Tempora/Pent01-1:Postcommunio

@@ -1,6 +1,20 @@
 [Officium]
 Jueves Santo en la Cena del Señor
 
+[Rule]
+Gloria
+Prefatio=Quad5
+Communicantes
+Post Missam
+Maundi
+Ter miserere
+no Pax
+no Qui dixisti
+Benedicamus Domino
+no Benedictio
+no Ultima Evangelium
+celebranda aut de missa chrismatis aut missa in coena Domini
+
 [Post Missam]
 !!Pange Lingua
 ! Terminada la Misa, se procede enseguida a la solemne traslación y reserva del Sacramento, que se guarda en el copón para la comunión del día siguiente.
@@ -71,6 +85,33 @@ Comieron y adoraron todos los ricos de la tierra: ante Él caerán todos los que
 Y mi alma vivirá para Él: y mi descendencia le servirá.
 La generación venidera lo contará al Señor: y los cielos anunciarán su justicia a un pueblo que nacerá, al que hizo el Señor.
 Ant. Se repartieron mis vestiduras, y sobre mi túnica echaron suertes.
+
+[Introitus]
+@Tempora/Quad6-4
+
+[Oratio]
+@Tempora/Quad6-4
+
+[Lectio]
+@Tempora/Quad6-4
+
+[Graduale]
+@Tempora/Quad6-4
+
+[Evangelium]
+@Tempora/Quad6-4
+
+[Offertorium]
+@Tempora/Quad6-4
+
+[Secreta]
+@Tempora/Quad6-4
+
+[Communio]
+@Tempora/Quad6-4
+
+[Postcommunio]
+@Tempora/Quad6-4
 
 [Communicantes]
 En comunión y celebrando el día sacratísimo en que Nuestro Señor Jesucristo fue entregado por nosotros; y honrando en primer lugar la memoria de la gloriosa siempre Virgen María, Madre del mismo Dios y Señor nuestro Jesucristo; y también la de los bienaventurados Apóstoles y Mártires Pedro y Pablo, Andrés, Santiago, Juan, Tomás, Santiago, Felipe, Bartolomé, Mateo, Simón y Tadeo; Lino, Cleto, Clemente, Sixto, Cornelio, Cipriano, Lorenzo, Crisógono, Juan y Pablo, Cosme y Damián, y de todos tus Santos, por cuyos méritos y oraciones concede que en todo seamos defendidos con el auxilio de tu protección. (Junta las manos.) Por el mismo Cristo Señor nuestro. Amén.
