@@ -1087,7 +1087,7 @@ sub lectio : ScriptFunc {
     && $num == 8
     && ($rule =~ /Contract8/i || $version =~ /Trident/i)
     && !exists($winner{Responsory9})
-    && (exists($winner{Lectio93}) || exists($commemoratio{Lectio7}) || $homilyflag))
+    && (exists($winner{Lectio93}) || $homilyflag || (exists($commemoratio{Lectio7}) && $commeoratio =~ /tempora/i)))
   {
     if (exists($winner{Lectio8}) && exists($winner{Lectio9})) {
       my %win = (columnsel($lang)) ? %winner : %winner2;

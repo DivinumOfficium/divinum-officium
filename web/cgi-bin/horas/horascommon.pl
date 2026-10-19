@@ -709,13 +709,7 @@ sub occurrence {
       $laudesonly = ($missa) ? '' : ($climit1960 == 2) ? ' ad Laudes tantum' : '';
     }
 
-    if ( ($winner =~ /Epi1\-0a/ || ($winner =~ /Epi1\-0/ && $version =~ /altovadensis/i))
-      && ($hora =~ /laudes/i || ($vespera == 3 && $day != 12)))
-    {
-      unshift(@commemoentries, 'Sancti/01-06.txt');
-      $commemoratio = 'Sancti/01-06.txt';
-      $comrank = 5.6;
-    } elsif ($srank[2]
+    if ( $srank[2]
       && $climit1960
       && $tempora{Rule} !~ /omit.*? commemoratio/i
       && $tempora{Rule} !~ /No commemoratio/i)
@@ -801,6 +795,14 @@ sub occurrence {
     } else {
       $commemoratio = '';
       $comrank = 0;
+    }
+
+    if ( ($winner =~ /Epi1\-0a/ || ($winner =~ /Epi1\-0/ && $version =~ /altovadensis/i))
+      && ($hora =~ /laudes/i || ($vespera == 3 && $day != 12)))
+    {
+      unshift(@commemoentries, 'Sancti/01-06.txt');
+      $commemoratio = 'Sancti/01-06.txt';
+      $comrank = 5.6;
     }
 
     if (!$commemoratio && $sname) {    # if only a Vigil to be commemorated
