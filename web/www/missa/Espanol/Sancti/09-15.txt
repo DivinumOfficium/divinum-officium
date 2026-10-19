@@ -1,10 +1,34 @@
 [Rank]
 Los Siete Dolores de la Sma. Virgen María
 
+[Rule]
+ex C11;
+Gloria
+Sequentia
+Credo
+Prefatio=Maria=Transfixióne;
+
+[Introitus]
+@Tempora/Quad5-5:Introitus
+
+[Oratio]
+@Tempora/Quad5-5:Oratio
+
+[Lectio]
+@Tempora/Quad5-5:Lectio
+
 [Graduale]
 Dolorosa y llorosa ¡oh Virgen María! estás al pie de la cruz del Señor Jesús tu Hijo, el Redentor.
 V. ¡Oh Virgen Madre de Dios! aquel a quien el mundo entero no puede contener, el Autor de la vida hecho hombre, sufre este suplicio de la cruz. Aleluya, aleluya.
 V. Estaba dolorosa Santa María, la Reina del cielo y Señora del mundo junto a la cruz de N. S. Jesucristo.
+
+[GradualeP]
+@Tempora/Quad5-5:GradualeP
+
+[Tractus]
+Estaba dolorosa Santa María, la Reina del cielo y Señora del mundo, junto a la cruz de Nuestro Señor Jesucristo.
+!Lam 1:12
+V. Oh todos vosotros que pasáis por el camino, mirar y ved, si hay dolor como mi dolor.
 
 [Sequentia]
 Estaba la Madre de dolores
@@ -87,3 +111,15 @@ Cuando este cuerpo muera,
 haz que al alma se le dé
 la gloria del Paraíso.
 Amén. Aleluya.
+
+[Evangelium]
+@Tempora/Quad5-5:Evangelium
+
+[Secreta]
+@Tempora/Quad5-5:Secreta
+
+[Communio]
+@Tempora/Quad5-5:Communio
+
+[Postcommunio]
+@Tempora/Quad5-5:Postcommunio
