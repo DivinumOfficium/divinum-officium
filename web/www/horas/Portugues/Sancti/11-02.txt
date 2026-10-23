@@ -1,3 +1,13 @@
+[Initial]
+#Incipit specialis
+$Pater noster
+$Ave Maria
+(sed rubrica 1960 aut rubrica innovata omittuntur)
+
+[Oratio mortuorum]
+#Oratio
+@Commune/C9:Oratio 2
+
 [Oratio mortuorum1]
 #Oratio
 @Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
@@ -10,6 +20,80 @@ $Per Dominum
 &Gloria
 V. Descansem em paz.
 R. Amém.
+
+[Oratio mortuorum2]
+#Oratio
+@Commune/C9:Oratio_a_porta:s/&psalm.*\)//s
+_
+$Oremus
+v. Súplices, Senhor, derramamos as nossas preces pelas almas de todos os vossos servos e servas, para que, clemente, lhes perdoeis tudo o que contraíram no convívio humano, e, benigno, ponhais termo às suas penas.
+$Per Dominum
+
+[Special Prima]
+&special('Initial', 'Portugues')
+$Credo
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
+
+&psalm(87)
+
+&psalm(27)
+
+&psalm(31)
+
+&special('Oratio mortuorum2', 'Portugues')
+
+&special('#Martyrologium', 'Portugues')
+_
+V. Os justos ficarão em memória eterna.
+R. Não temerão ouvir notícias funestas.
+_
+$Oremus
+v. Ó Deus, que perdoais aos pecadores e desejais a salvação dos homens, imploramos a vossa clemência: concedei que as almas de todos os fiéis que saíram deste mundo, por intercessão da bem-aventurada Maria, sempre Virgem, e de todos os vossos Santos, cheguem à comunhão da eterna bem-aventurança. Por Cristo, nosso Senhor.
+$Amen
+
+&special('Conclusio', 'Portugues')
+
+[Special Tertia]
+&special('Initial', 'Portugues')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
+
+&psalm(37,1,11)
+
+&psalm(37,12,23)
+
+&psalm(55)
+
+&special('Oratio mortuorum', 'Portugues')
+
+&special('Conclusio', 'Portugues')
+
+[Special Sexta]
+&special('Initial', 'Portugues')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
+
+&psalm(69)
+
+&psalm(84)
+
+&psalm(85)
+
+&special('Oratio mortuorum', 'Portugues')
+
+&special('Conclusio', 'Portugues')
+
+[Special Nona]
+&special('Initial', 'Portugues')
+(sed rubrica 1955 aut rubrica 1960 aut rubrica innovata omittitur)
+
+&psalm(101,1,13)
+
+&psalm(101,14,23)
+
+&psalm(101,24,29)
+
+&special('Oratio mortuorum', 'Portugues')
+
+&special('Conclusio', 'Portugues')
 
 [Special Completorium]
 $Confiteor
