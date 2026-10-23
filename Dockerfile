@@ -1,5 +1,5 @@
 # --- STAGE 1: Build Info ---
-FROM public.ecr.aws/docker/library/alpine:latest AS gitinfo
+FROM alpine:3.22 AS gitinfo
 RUN apk add git
 COPY .git /build/
 WORKDIR /build
