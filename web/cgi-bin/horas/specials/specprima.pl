@@ -186,7 +186,7 @@ sub martyrologium {
 
     $output = join("\n", map { length($_) > 4 && !/^\/:/ ? "r. $_" : $_ } @a) . "\n";
     $output =~ s/^r/v/;
-    $output =~ s/\_/"r. $mobile"/e if $mobile;
+    $output =~ s/\_/"r. $mobile"/e if $mobile =~ /\S/;
     $output =~ s/\_\n//g;
 
     $output = join("\n", @a) . "\n" if $lang eq 'Latin-gabc';
