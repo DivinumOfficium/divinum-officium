@@ -1232,7 +1232,7 @@ sub lectio : ScriptFunc {
 
       while ($i < 7) {
         my $w1 = $w{"Lectio$i"};
-        if (!$w1 || $w1 =~ /\!/) { last; }
+        if (!$w1 || $w1 =~ /^\!/) { last; }
         if ($w =~ /(.*?)\_/s) { $w = $1; }
         $w .= $w1;
         $i++;
