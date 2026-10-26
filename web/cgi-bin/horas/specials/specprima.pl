@@ -160,8 +160,27 @@ sub martyrologium {
 
   my $output;
 
-  if (@a) {
-    my $luna = _luna($m, $d, $m == 1 && $d == 1 ? $year + 1 : $year, $lang);
+  # a translation whose book announces no title, on a day this version
+  # gives nothing to say but the closing line, still gives the date
+  if (@a || $lang !~ /^Latin/i) {
+
+    # the moon and the date are the calendar's, not the file's: in a leap
+    # year the 24th of February is read from 02-29 and the days after it
+    # from the file before (see get_sday)
+    my ($lm, $ld) = ($m, $d);
+    $ld = $d == 29 ? 24 : $d + 1 if $m == 2 && $d >= 24 && leapyear($year);
+    my $luna = _luna($lm, $ld, $m == 1 && $d == 1 ? $year + 1 : $year, $lang);
+
+    # a heading that names the day of the month names the file's day, which
+    # is not the day announced from the 24th of February of a leap year on.
+    # Only the heading: an elogium may name some other date.
+    if ($ld != $d) {
+      my $nth = $ld . _number_suffix($ld);
+      foreach (@a) {
+        last if /^\s*_\s*$/;
+        s/\b$d(?:st|nd|rd|th)( day of February)/$nth$1/;
+      }
+    }
 
     if ($lang =~ /Latin/i) {
       $a[0] .= " $luna";
@@ -169,11 +188,11 @@ sub martyrologium {
     FINDDATE:
       {
         foreach (@a) {
-          last FINDDATE if s/^Upon the \d+ ?.. day of \S+/$luna /i;                                          # English
+          last FINDDATE if s/^(?:Upon|On) the \d+ ?.. day of \S+/$luna /i;                                   # English
           last FINDDATE if s/^\d+\. (?:\(\d+.\) )?\S+/${luna}/;                                              # Bohemice
           last FINDDATE if s/^\d+ de \S+/${luna}/i;                                                          # Espanol
           last FINDDATE if s/^(Le(?: même)? \d+ .*?\,)/$1 \l$luna, /i;                                       # French 1
-          last FINDDATE if s/^((?:Le \d+ des|La veille des|Aux) (?:ides|calendes|nones).*)/$1, \l$luna/i;    # French 2
+          last FINDDATE if s/^((?:Le \d+ des|La veille des|Aux) (?:ides|calendes|nones).*?)[ \t]*$/$1, \l$luna/i;    # French 2
           last FINDDATE if s/^((?:Nas?|Nos?) .*(?:Calendas|Nonas|Idos) de \S+\.)$/$1 $luna/;                 # Portugues
           last if /^\s*\_\s*/;
         }
@@ -350,14 +369,26 @@ sub _unsame {
 # the text an index line points at: '@:Key' in this day, or
 # '@Martyrologium/MM-DD:Key' in another one
 sub _elogia_entry {
-  my ($s, $lang, $mmdd, $line) = @_;
+  my ($s, $lang, $mmdd, $line, $seen) = @_;
+  my ($day, $text);
 
   if ($line =~ m{^\@(Martyrologium/(\d\d-\d\d)):(.+)$}) {
     my $other = setupstring($lang, "$1.txt", 'resolve@' => RESOLVE_NONE)
       or return undef;
-    return _elogia_own_first($other, $lang, $2, $3);
+    ($day, $text) = ($2, _elogia_own_first($other, $lang, $2, $3));
+  } elsif ($line =~ /^\@:(.+)$/) {
+    ($day, $text) = ($mmdd, _elogia_own_first($s, $lang, $mmdd, $1));
+  } else {
+    return undef;
   }
-  return $line =~ /^\@:(.+)$/ ? _elogia_own_first($s, $lang, $mmdd, $1) : undef;
+
+  # A language's note pointing at another day is not a note of where the
+  # entry is said on this one: its book says it here as well, in the words
+  # it has given it there.
+  if (defined $text && $text =~ m{^\s*(\@Martyrologium/(\d\d-\d\d):\S+)\s*$} && $2 ne $day && !$seen) {
+    return _elogia_entry($s, $lang, $mmdd, $1, 1);
+  }
+  return $text;
 }
 
 #*** _elogia_own_first($sections, $lang, $mmdd, $key)
@@ -385,20 +416,53 @@ sub _elogia_own_first {
     if $langfb && !(grep { $_ eq $langfb } @chain) && _elogia_latin_says($mmdd, $key);
 
   foreach my $layer (@chain) {
-    my @mine = @{_elogia_own($layer, $mmdd)->{$key} || []};
-    next unless @mine;
+
+    my @all = @{_elogia_own($layer, $mmdd)->{$key} || []};
+    next unless @all;
+
+    # the wordings this version reads.  When there is none:
+    #
+    # A plain section left blank beside wordings qualified for an older
+    # book is a translation not yet brought up to date: the blank marks
+    # the work, and until it is done a later version reads the older
+    # wording.  An earlier one does not read a later book's, nor does
+    # anything read a blank section with nothing beside it; they are
+    # passed over for the fallback, as a blank section always was.
+    #
+    # With no plain section at all, a wording qualified for none but the
+    # older books is theirs alone -- it says what the others no longer
+    # do -- and the fallback is read instead.  One qualified for some
+    # other book (a translation of another recension) is still given.
+    my @mine = grep { defined $_->[1] && vero($_->[0]) } @all;
+    my $lent = !@mine;
+
+    unless (@mine) {
+      my $blank = grep { $_->[0] eq '' } @all;
+      my $this = _elogia_book();
+      @mine = grep {
+        my $book = _elogia_book($_->[0]);
+        defined $_->[1] && ($blank ? !$book || $book < $this : !$book)
+      } @all;
+      next unless @mine;
+    }
+
+    # a version's own wording takes the place of the plain one
+    my @qualified = grep { $_->[0] ne '' } @mine;
+    my @texts = map { $_->[1] } (@qualified ? @qualified : @mine);
 
     # setupstring settled on one of this layer's own wordings.  compared
     # chomped: it keeps the blank line before the next section and works
     # the conditionals inside a line, so the two are rarely byte for byte.
+    my $text = $texts[0];
+
     if (defined $value) {
       my $seen = _chomped($value);
-
-      foreach my $text (@mine) {
-        return $value if _chomped($text) eq $seen;
-      }
+      $text = $value if grep { _chomped($_) eq $seen } @texts;
     }
-    return $mine[0];
+
+    # a rubric goes with the book whose wording it is in: the kneeling and
+    # the Ave its ceremonies call for are not lent along with its words
+    return $lent ? _unrubric($text) : $text;
   }
   return undef;
 }
@@ -413,6 +477,35 @@ sub _elogia_chain {
   return @out;
 }
 
+my %_OLDER_BOOK = (1570 => 1, 1617 => 1, 1888 => 2, 1906 => 2);
+
+#*** _elogia_book([$condition])
+# Which of the older books a section's condition is for: 1, Gregory
+# XIII's (rubrica 1570, 1617); 2, Benedict XIV's (rubrica 1888, 1906),
+# or the later of the two when it names both; 0 when it names anything
+# else.  Without a condition, this version's book: 1, 2, or 3 for any
+# version after them.
+sub _elogia_book {
+  unless (@_) {
+    return vero('rubrica 1570 aut rubrica 1617') ? 1 : vero('rubrica 1888 aut rubrica 1906') ? 2 : 3;
+  }
+  my @books = map { $_OLDER_BOOK{$_} } (shift // '') =~ /\brubrica\s+(\S+)/g;
+  return 0 if !@books || grep { !$_ } @books;
+  return (sort { $b <=> $a } @books)[0];
+}
+
+#*** _unrubric($text)
+# The text without its rubrics: a line that is nothing but a rubric goes,
+# and a rubric inside a line goes with the space before it.
+sub _unrubric {
+  my $text = shift;
+  return $text unless defined $text && $text =~ m{/:};
+  my $end = $text =~ /\n\z/ ? "\n" : '';
+  my @lines = grep { !m{^\s*/:.*:/\s*$} } split(/\n/, _chomped($text));
+  s{\s*/:.*?:/}{}g foreach @lines;
+  return join("\n", @lines) . $end;
+}
+
 #*** _elogia_latin_says($mmdd, $key)
 # Whether the Latin column, in this version, prints words for the entry.
 sub _elogia_latin_says {
@@ -425,8 +518,10 @@ sub _elogia_latin_says {
 my %_own_cache;
 
 #*** _elogia_own($lang, $mmdd)
-# {key => [every wording this language's own file gives it]}, conditional
-# sections included, which setupstring drops before we could see them.
+# {key => [[condition, wording], ...]} for every wording this language's own
+# file gives it, conditional sections included, which setupstring drops
+# before we could see them.  A plain section's condition is ''; a blank
+# section's wording is undef.
 sub _elogia_own {
   my ($lang, $mmdd) = @_;
   our $datafolder;
@@ -436,20 +531,21 @@ sub _elogia_own {
   my $file = "$datafolder/$lang/Martyrologium/$mmdd.txt";
 
   if (-e $file) {
-    my ($key, @buf);
+    my ($key, $cond, @buf);
 
     my $flush = sub {
       return unless defined $key;
       pop @buf while @buf && $buf[-1] !~ /\S/;
-      push @{$own{$key}}, join("\n", @buf) . "\n" if @buf;
+      push @{$own{$key}}, [$cond, @buf ? join("\n", @buf) . "\n" : undef];
     };
 
     foreach my $line (do_read($file)) {
       $line =~ s/[\r\n]+$//;
 
-      if ($line =~ /^\s*\[([^\]]+)\]/) {
+      if ($line =~ /^\s*\[([^\]]+)\]\s*(?:\((.*)\))?/) {
         $flush->();
         $key = $1;
+        $cond = $2 // '';
         @buf = ();
       } elsif (defined $key) {
         push @buf, $line;
@@ -546,7 +642,11 @@ sub _luna_day {
   my $aur_num = $year % 19 + 1;
   my $letter_for_aurea = substr($letters4aurea, $aur_num - 1, 1);
   my $yday = DivinumOfficium::Date::date_to_ydays($day, $month, $year);
-  $yday -= 1 if (leapyear($year) && ($month > 2 || $month == 2 && $day > 23));
+
+  # the table is a common year's: in a leap year the 24th and 25th of
+  # February have the same moon, and every day after the 24th is a day
+  # behind the table
+  $yday -= 1 if (leapyear($year) && ($month > 2 || $month == 2 && $day > 24));
 
   my $luna = _luna_table($yday, $letter_for_aurea);
   $luna -= 1

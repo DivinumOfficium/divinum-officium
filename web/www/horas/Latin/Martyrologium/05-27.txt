@@ -2,13 +2,23 @@
 Sexto Kaléndas Júnii
 
 [Martyrologium]
+(rubrica Cisterciensis dicitur)
 @:Commemoratio-Religiosorum
 
-@:Bedae-Venerabilis
+(rubrica 1888 aut rubrica 1906 dicitur)
+@Martyrologium/05-25:Bedae-Venerabilis
 
+@:Bedae-Venerabilis
+(rubrica 1570 aut rubrica 1617 aut rubrica 1888 aut rubrica 1906 omittitur)
+
+(rubrica Cisterciensis dicitur)
 @:Translatio-Maximini
 
+(rubrica 1570 aut rubrica 1617 aut rubrica 1888 aut rubrica 1906 dicitur)
+@Martyrologium/05-18:Joannis-Primi
+
 @:Joannis-Primi
+(rubrica 1570 aut rubrica 1617 aut rubrica 1888 aut rubrica 1906 omittitur)
 
 @:Julii
 
@@ -18,12 +28,16 @@ Sexto Kaléndas Júnii
 
 @:Eutropii
 
+(rubrica 1570 aut rubrica 1617 dicitur)
+@Martyrologium/05-25:Bedae-Venerabilis
+
 @:Brunonis
+(rubrica 1570 aut rubrica 1617 aut rubrica 1888 aut rubrica 1906 omittitur)
 
 [Bedae-Venerabilis]
 Sancti Bedæ Venerábilis, Presbýteri, Confessóris et Ecclésiæ Doctóris; qui migrávit in cælum octávo Kaléndas Júnii.
 
-[Translatio-Maximini]
+[Translatio-Maximini] (rubrica Cisterciensis)
 
 
 [Joannis-Primi]
@@ -35,9 +49,6 @@ Doróstori, in Mýsia inferióre, pássio beáti Júlii, qui, témpore Alexándr
 [Ranulfi]
 In pago Atrebaténsi sancti Ranúlfi Mártyris.
 
-[Ranulfi] (rubrica 1570)
-In pago Atrebatensi sancti Ranulphi Martyris.
-
 [Restitutae]
 Apud Soram sanctæ Restitútæ, Vírginis et Mártyris; quæ, sub Aureliáno Imperatóre et Agáthio Procónsule, fídei certámine suscépto, dǽmonum ímpetus, paréntum blandítias et tortórum sævítiam superávit, ac demum, cum áliis Christiánis, cápite truncáta, martýrio decoráta est.
 
@@ -47,4 +58,4 @@ Aráusicæ, in Gálliis, sancti Eutrópii Epíscopi, virtútibus atque miráculi
 [Brunonis]
 Herbípoli, in Germánia, sancti Brunónis, Epíscopi et Confessóris.
 
-[Commemoratio-Religiosorum]
+[Commemoratio-Religiosorum] (rubrica Cisterciensis)

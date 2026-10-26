@@ -5,7 +5,7 @@ use utf8;
 #use warnings;
 use Carp;
 use DivinumOfficium::FileIO qw(do_read);
-use DivinumOfficium::Date qw(monthday);
+use DivinumOfficium::Date qw(monthday leapyear);
 
 # Read only global variables
 our $version, $datafolder;
@@ -30,6 +30,7 @@ my %subjects = (
   officio => sub { $dayname[1]; },
   ad => sub { our $missa ? 'missam' : our $hora; },
   mense => sub { our $month },    # mense is not perfect eg. 1 matches also 10 11 12
+  anno => sub { leapyear(our $year) ? 'bissextili' : 'communi' },
   dioecesis => sub { our $dioecesis },
 
   # GABC subjects
