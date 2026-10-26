@@ -123,6 +123,10 @@ if ($report) {
       foreach my $e (pool_entries(pool_read($path, $day))) {
         my ($key, $body) = @$e;
         next if $latin{$key} || !defined $body || $body !~ /\S/;
+
+        # a note pointing at another day has the words there, where the
+        # Latin has them too; its key here is left empty on purpose
+        next if $body =~ m{^\s*\@Martyrologium/\d\d-\d\d:\S+\s*$};
         my $id = "$day\0$key";
         push @{$langs{$id}}, $lang;
         next if $text{$id};
