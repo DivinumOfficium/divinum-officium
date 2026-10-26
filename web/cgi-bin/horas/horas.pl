@@ -240,7 +240,7 @@ sub triduum_gloria_omitted() {
 sub getantcross {
 
   my $psalmline = shift;
-  my $antline = shift;
+  my $antline = depunct(shift);    # remove punctuation immediately to not fail for French
   my @psalmline = split(' ', $psalmline);
   my @antline = split(' ', $antline);
   my $pind = 0;
@@ -254,10 +254,17 @@ sub getantcross {
     my $item1 = $psalmline[$pind];
     $pind++;
     $item1 = depunct($item1);
-    if (!$item1) { next; }
+
+    if (!$item1) {
+
+      # keep the punctuation (i.e., asterisk).
+      $psalmline .= " $psalmline[$pind-1]";
+      next;
+    }
+
     my $item2 = $antline[$aind];
     $aind++;
-    $item2 = depunct($item2);
+    $item2 = $item2;
     if (!$item2) { $pind--; next; }
     if ($item1 !~ /$item2/i) { return $psalmline1; }
     $psalmline .= " $psalmline[$pind-1]";

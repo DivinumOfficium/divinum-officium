@@ -874,12 +874,15 @@ sub lectio : ScriptFunc {
   }
   my $w = $w{"Lectio$num"};
 
-  if ($nocturn == 1 && $rule =~ /Lectio1 Quad/i && $dayname[0] !~ /Quad(\d|p3\-[3456])/i) {
+  if ($nocturn == 1 && ($rule =~ /Lectio1 Quad/i && $dayname[0] !~ /Quad(\d|p3\-[3456])/i)
+    || ($rule =~ /Lectio1 QT/i && $commemoratio{Rank} !~ /Quattuor/i))
+  {
 
     # For some Saints, the assigned I nocturn readings (from Commune) are valid in Quadragesima only;
     # in Septuag/Paschaltide, these get the Lessons from the occurent scripture instead (e.g., 04-13)
+    # The same holds true for some Saints in occurrence with Ember days only (e.g., 12-23-Hartmannus)
     $w = '';
-    $rule =~ s/in 1 Nocturno L.*loco//;
+    $rule =~ s/in 1 Nocturno L.*loco//i;
   }
 
   #  if ($nocturn == 1 && $commemoratio{Rank} =~ /Quattuor/i && $month == 9) {
@@ -1131,6 +1134,7 @@ sub lectio : ScriptFunc {
         my @comm = split("\n", $comm{'Lectio'});
         $comment = ($commemoratio{Rank} =~ /Feria/) ? $comm[0] : ($commemoratio =~ /01\-05\./) ? $comm[3] : $comm[1];
         $w = setfont($redfont, $comment) . "\n$wc";
+        $L9winnerflag = 1;
       }
     }
 
@@ -1149,19 +1153,17 @@ sub lectio : ScriptFunc {
         setbuild2("Lectio ultimo: Commemoratio pro Vigilia (#1)");
       }
     }
-    my $cflag = 1;    #*************  03-30-10
-                      #if ($winner{Rule} =~ /9 lectiones/i && exists($winner{Responsory9})) { $cflag = 0; }
-                      #if ($winner{Rule} !~ /9 lectiones/i && exists($winner{Responsory3})) { $cflag = 0; }
 
-    if ( !$L9winnerflag
-      && ($commemoratio =~ /sancti/i && $commemoratio{Rank} =~ /[SB]\. /i || $commemoratio{Rank} =~ /infra octavam/i)
+    if (
+      !$L9winnerflag
+      && ( ($commemoratio =~ /sancti/i && $commemoratio{Rank} =~ /[SB]\. /i || $commemoratio{Rank} =~ /infra octavam/i)
+        || ($commeoratio !~ /Sancti/i && $commemoentries[1] =~ /sancti/i))
       && ($winner !~ /tempora/i || $winner{Rank} < 5)
       && ($version !~ /1955/ || $comrank > 4)
       && $version !~ /Cist/i
-      && $cflag)
-    {
+    ) {
       %w = (columnsel($lang)) ? %commemoratio : %commemoratio2;
-      my $ji = exists($w{"Lectio94"}) ? 94 : 93;
+      my $jc = exists($w{"Lectio94"}) ? 94 : 93;
       $wc = $w{"Lectio94"};
 
       if (!$wc && $commemoratio{Rank} !~ /infra octav/i && $version !~ /Monastic/) {
@@ -1173,24 +1175,27 @@ sub lectio : ScriptFunc {
           if ($wc =~ /(.*?)\_/s) { $wc = $1; }
           $wc .= $w1;
         }
-        $ji = '4-6';
+        $jc = '4-6' if $wc;
       }
 
       if (!$wc) {
         $wc = $w{"Lectio93"};
-        $jc = 93;
+        $jc = 93 if $wc;
       }
 
-      if (!$wc && $commemoratio{Rank} =~ /infra octav/i && $version !~ /Monastic/) {
+      if ( !$wc
+        && ($commemoratio{Rank} =~ /infra octav/i || $commemoratio =~ /tempora/i)
+        && $version !~ /Monastic/)
+      {
         if (my $commemo1 = $commemoentries[1]) {
           %w = %{setupstring($lang, $commemo1 . ".txt")};
           $wc = $w{Lectio94} || ($w{Lectio4} . $w{Lectio5} . $w{Lectio6}) || $w{Lectio93};
-          setbuild2("entered $commemo1");
+          $jc = $commemo1 if $wc;
         }
       }
 
       if ($wc) {
-        setbuild2("Last lectio: Commemoratio from Sancti #$ji");
+        setbuild2("Last lectio: Commemoratio from Sancti #$jc");
 
         if ($wc !~ /^\!/) {    # add Commemoratio comment if not there already
           if (exists($w{Rank})) {
@@ -1227,7 +1232,7 @@ sub lectio : ScriptFunc {
 
       while ($i < 7) {
         my $w1 = $w{"Lectio$i"};
-        if (!$w1 || $w1 =~ /\!/) { last; }
+        if (!$w1 || $w1 =~ /^\!/) { last; }
         if ($w =~ /(.*?)\_/s) { $w = $1; }
         $w .= $w1;
         $i++;
@@ -1752,7 +1757,9 @@ sub StJamesRule {
   my %w1 = {};
   my $key;
 
-  if ($w{Rank} =~ /Dominica/i && prevdayl1($s)) {
+  my %latw = $lang1 eq 'Latin' ? %winner : %{setupstring('Latin', $winner)};
+
+  if ($latw{Rank} =~ /Dominica/i && prevdayl1($s)) {
 
     # On Dominica IV post Pascha & infra 8vam Ascensionis, if the previous day has had the incipit
     # already, then read from Monday instead.
@@ -1762,7 +1769,7 @@ sub StJamesRule {
     setbuild2("subst: Incipit from $s replaced by Monday readings to avoid repeat");
   }
 
-  if ($w{Rank} =~ /Jacobi|Joannis/ && $scriptura{Lectio1} =~ /!.*?($s) /i) {
+  if ($latw{Rank} =~ /Jacobi|Joannis/ && $scriptura{Lectio1} =~ /!.*?($s) /i) {
 
     # On Ss. Philippi et Jacobi, App & S. Joannis ante portam Latinam, if occuring scripture is
     # from the Apostel's epistels or revelation, then it is read

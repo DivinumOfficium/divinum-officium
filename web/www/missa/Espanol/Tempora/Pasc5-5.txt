@@ -1,5 +1,16 @@
+@Tempora/Pasc5-4
+
 [Officium]
 Viernes dentro de la Octava de la Ascensión
 
 [Officium] (rubrica 196 aut rubrica 1955)
 Viernes después de la Ascensión
+
+[Rule]
+Evangelium non appropriatum
+ex Tempora/Pasc5-4;
+Gloria
+Suffr=Maria3;Ecclesiæ,Papa;;
+
+[Evangelium]
+@Tempora/Pasc5-4::s/\!(?!M).*//

@@ -2,7 +2,39 @@
 Día VI de la Octava de Navidad
 
 [Officium] (rubrica 196)
-Die sexta post Nativitatem
+Día VI de la Octava de Navidad
+
+[Rule]
+ex Sancti/12-25m3;
+Gloria
+Credo
+Prefatio=Nat
 
 [Introitus]
 @Sancti/12-25m3:Introitus
+
+[Oratio]
+Concédenos, te rogamos, Dios todopoderoso, que el nuevo nacimiento en la carne de tu Unigénito nos libere, a quienes la antigua servidumbre mantiene bajo el yugo del pecado.
+$Per eundem
+
+[Lectio]
+@Sancti/12-25m2:Lectio
+
+[Graduale]
+@Sancti/12-25m3:Graduale
+
+[Evangelium]
+@Sancti/12-25m2:Evangelium
+
+[Offertorium]
+!Ps 88:12, 15
+Tuyos son los cielos y tuya es la tierra; el mundo y cuanto contiene tú lo cimentaste; la justicia y la equidad son el apoyo de tu trono.
+
+[Secreta]
+@Sancti/12-25m3:Secreta
+
+[Communio]
+@Sancti/01-01:Communio
+
+[Postcommunio]
+@Sancti/12-25m3:Postcommunio

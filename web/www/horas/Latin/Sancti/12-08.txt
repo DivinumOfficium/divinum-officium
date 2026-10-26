@@ -1,8 +1,10 @@
-[Rank]
-In Conceptione Immaculata Beatæ Mariæ Virginis;;Duplex I classis cum octava communi;;6.5;;ex C11
+[Officium]
+In Conceptione Immaculata Beatæ Mariæ Virginis
 
-[Rank] (rubrica 196)
-In Conceptione Immaculata Beatæ Mariæ Virginis;;Duplex I classis;;6.01;;ex C11
+[Rank]
+;;Duplex I classis cum octava communi;;6.5;;ex C11
+(sed rubrica 196)
+;;Duplex I classis;;6.01;;ex C11
 
 [Rule]
 ex C11;

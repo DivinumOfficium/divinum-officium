@@ -317,9 +317,11 @@ sub oratio {
         && ($winner{'Commemoratio Oratio'} !~ /Octav/i || $winner{'Commemoratio Oratio'} =~ /Octav.*?Nativ/i)
       )
       || !($version =~ /(1955|196)/ && $rank >= 5)
+      || world_mission_sunday()
     )
   ) {
     commemoratio('winner', $type, $lang);
+    commemoratio('propagatione', $type, $lang) if world_mission_sunday();
 
     if ($version !~ /196/ || $rank < 5) {
 
@@ -443,9 +445,15 @@ sub getcc {
 sub world_mission_sunday {
 
   # Instituted by Pope Pius XI. in 1926
-  $version =~ /Divino|1955|196/
-    && $winner{Rank} =~ /Dominica/i
-    && monthday($day, $month, $year, 1, 0) eq '104-0';
+  # GitHub: #5731 — pinning it to the penultimate Sunday
+  return
+       $version =~ /Divino|1955|196/
+    && $dayofweek == 0
+    && $month == 10
+    && $day >= 18
+    && $day <= 24;
+
+  #&& monthday($day, $month, $year, 1, 0) eq '104-0';
 }
 
 #*** commemoratio($item, $type, $lang)
@@ -474,7 +482,11 @@ sub commemoratio {
     %w = %{officestring($lang, $commemorated)};
     $code = 13;
     $ite = $commemoratio2;
+  } elsif ($item =~ /propagatione/i) {
+    $ite = 'Tempora/10-DUP.txt';
+    %w = %{officestring($lang, $ite)};
   }
+
   my $w = '';
   $w = $w{"Commemoratio $type"} if exists($w{"Commemoratio $type"});
   if ($version =~ /(1955|196)/ && ($w =~ /!.*?(Octav|Dominica)/i && $w !~ /Octav.*?Nativ/i)) { return ''; }
@@ -986,11 +998,12 @@ sub Credo {
       if (!(-e "$datafolder/Latin/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
       my %c = %{setupstring('Latin', $commemo)};
 
-      if ( (($c{Rank} =~ /Octav/i && $c{Rank} !~ /post Octavam/) || $c{Rule} =~ /Credo/i)
+      if ( (($c{Rank} =~ /Octav/i && $c{Rank} !~ /post Octavam/) || $c{Rule} =~ /(?<!no )Credo/i)
         && $c{Rank} !~ /Simplex/i
         && $version !~ /196/)
       {
         $flag = 0;
+        setbuild1("Credo", "ratione $commemo");
         last;
       }
     }
