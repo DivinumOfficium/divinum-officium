@@ -132,6 +132,8 @@ sub table_row {
     $c2 .= "<br/>$c22";
     $cv .= "<br/>$cv2";
   }
+  # optional "j" orthography for the Latin Ordo entries
+  ($c1, $c2) = map { jorth($_, 'Latin') } ($c1, $c2);
   (
     qq(<A HREF=# onclick="callbrevi('$date');">$d</A>),
     $c1, $c2,

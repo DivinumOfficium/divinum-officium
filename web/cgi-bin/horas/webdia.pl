@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 use utf8;
 use DivinumOfficium::Lexicon qw(apply_interlinear);
+use DivinumOfficium::Orthography qw(j_orthography is_plain_latin);
 
 # Name : Laszlo Kiss
 # Date : 01-11-04
@@ -9,6 +10,17 @@ use DivinumOfficium::Lexicon qw(apply_interlinear);
 #use strict "refs";
 #use strict "subs";
 my $a = 4;
+
+#*** jorth($text, $lang)
+# Applies the optional "j" orthography (consonantal i -> j: eius -> ejus,
+# Iesus -> Jesus) to a piece of display text, honoring the user's
+# 'jorthography' option and skipping non-Latin and chant (gabc) columns.
+# Idempotent and tag-safe; see DivinumOfficium::Orthography.
+sub jorth {
+  my ($text, $lang) = @_;
+  return $text unless (our $jorthography) && is_plain_latin($lang);
+  return j_orthography($text);
+}
 
 #*** htmlHead($title, $onload)
 # generate html head
@@ -720,6 +732,12 @@ sub setcell {
     return if $missa || $singleCell;
   }
 
+  # optional "j" orthography: convert the Latin display text *before* the
+  # interlinear glossing, so the English glosses are never exposed to the
+  # Latin rules. Lexicon lookups resolve j-spellings through their
+  # consonant-swap variants (DivinumOfficium::Lexicon).
+  $text = jorth($text, $lang);
+
   if ( (our $interlinear)
     && (our $interlinear) ne 'disabled'
     && $lang =~ /Latin/i
@@ -997,6 +1015,7 @@ sub html_dayhead {
     $output .= "</SPAN></I>\n";
   }
   $output =~ s/\s\&\s/ &amp; /;    # HTML - ampersand
+  $output = jorth($output, $lang1);    # optional "j" orthography for the Latin day title
   $output;
 }
 

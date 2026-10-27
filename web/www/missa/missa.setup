@@ -16,10 +16,11 @@ $nofancychars='0';;
 $building='0';;
 $langfb='English';;
 $interlinear='disabled';;
-$glossfont=''
+$glossfont='';;
+$jorthography='0'
 
 [parameterscheck]
-ttobcccccccnnbbtot
+ttobcccccccnnbbtotb
 
 [general]
 $version='Rubrics 1960 - 1960';;

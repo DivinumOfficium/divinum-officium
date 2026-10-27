@@ -120,6 +120,7 @@ $title =~ s/\'//g;
 $title =~ s/\(/ \(/;
 $title = translate(get_link_name($title), $lang1);
 $title =~ s/[\$\&]//;
+$title = jorth($title, $lang1);    # optional "j" orthography for the popup title
 $expand = 'tota';
 if ($popup =~ /\&/) { $popup =~ s/\s/\_/g; }
 $text = resolve_refs($popup, $lang1);

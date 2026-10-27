@@ -92,6 +92,10 @@ sub set_runtime_options {
   }
   $blackfont =~ s/black//;    # can't use black in contrast mode
   $smallblack =~ s/black//;
+
+  # the "j" orthography switch is a plain 0/1 flag, like the other Checkbutton
+  # options; anything else arriving via URL/cookie must not turn on the feature
+  $jorthography = ($jorthography && $jorthography eq '1') ? '1' : '0';
 }
 
 #*** version_displayname

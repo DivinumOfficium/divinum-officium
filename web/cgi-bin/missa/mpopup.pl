@@ -63,6 +63,7 @@ $background = ($whitebground) ? ' class="contrastbg"' : '';
 $only = ($lang1 && $lang1 =~ /$lang2/) ? 1 : 0;
 $title = "$popup";
 $title =~ s/[\$\&]//;
+$title = jorth($title, $lang1);    # optional "j" orthography for the popup title
 
 #$tlang = ($lang1 !~ /Latin/) ? $lang1 : $lang2;
 $text = gettext($popup, $lang1);
