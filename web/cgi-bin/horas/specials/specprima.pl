@@ -176,6 +176,7 @@ sub martyrologium {
     # Only the heading: an elogium may name some other date.
     if ($ld != $d) {
       my $nth = $ld . _number_suffix($ld);
+
       foreach (@a) {
         last if /^\s*_\s*$/;
         s/\b$d(?:st|nd|rd|th)( day of February)/$nth$1/;
@@ -188,12 +189,13 @@ sub martyrologium {
     FINDDATE:
       {
         foreach (@a) {
-          last FINDDATE if s/^(?:Upon|On) the \d+ ?.. day of \S+/$luna /i;                                   # English
-          last FINDDATE if s/^\d+\. (?:\(\d+.\) )?\S+/${luna}/;                                              # Bohemice
-          last FINDDATE if s/^\d+ de \S+/${luna}/i;                                                          # Espanol
-          last FINDDATE if s/^(Le(?: même)? \d+ .*?\,)/$1 \l$luna, /i;                                       # French 1
-          last FINDDATE if s/^((?:Le \d+ des|La veille des|Aux) (?:ides|calendes|nones).*?)[ \t]*$/$1, \l$luna/i;    # French 2
-          last FINDDATE if s/^((?:Nas?|Nos?) .*(?:Calendas|Nonas|Idos) de \S+\.)$/$1 $luna/;                 # Portugues
+          last FINDDATE if s/^(?:Upon|On) the \d+ ?.. day of \S+/$luna /i;                               # English
+          last FINDDATE if s/^\d+\. (?:\(\d+.\) )?\S+/${luna}/;                                          # Bohemice
+          last FINDDATE if s/^\d+ de \S+/${luna}/i;                                                      # Espanol
+          last FINDDATE if s/^(Le(?: même)? \d+ .*?\,)/$1 \l$luna, /i;                                   # French 1
+          last FINDDATE
+            if s/^((?:Le \d+ des|La veille des|Aux) (?:ides|calendes|nones).*?)[ \t]*$/$1, \l$luna/i;    # French 2
+          last FINDDATE if s/^((?:Nas?|Nos?) .*(?:Calendas|Nonas|Idos) de \S+\.)$/$1 $luna/;             # Portugues
           last if /^\s*\_\s*/;
         }
 
@@ -477,7 +479,12 @@ sub _elogia_chain {
   return @out;
 }
 
-my %_OLDER_BOOK = (1570 => 1, 1617 => 1, 1888 => 2, 1906 => 2);
+my %_OLDER_BOOK = (
+  1570 => 1,
+  1617 => 1,
+  1888 => 2,
+  1906 => 2,
+);
 
 #*** _elogia_book([$condition])
 # Which of the older books a section's condition is for: 1, Gregory
