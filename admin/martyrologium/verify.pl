@@ -286,7 +286,8 @@ for my $lang (@langs) {
 
     for my $v (@reach) {
       $version = $v->[0];
-      my @renders = leapish($day) ? in_years(sub { martyrologium_elogia($lang, $day) }) : ([martyrologium_elogia($lang, $day)]);
+      my @renders =
+        leapish($day) ? in_years(sub { martyrologium_elogia($lang, $day) }) : ([martyrologium_elogia($lang, $day)]);
       $new{norm($_)} = 1 foreach map {@$_} @renders;
     }
 

@@ -922,11 +922,11 @@ sub gloriflag {
   my $flag = 1;
   if ($dayofweek == 0) { $flag = 0; }
 
-  if ($rule =~ /no Gloria/i) {
+  if ($rule =~ /no Gloria/i || ($communerule =~ /no Gloria/i && $rule !~ /Gloria/i)) {
     $flag = 1;
   } elsif ($rule =~ /Gloria/ || $communerule =~ /Gloria/i) {
     $flag = 0;
-  } elsif ($votive && $votive =~ /Defunct|C9/i) {
+  } elsif ($votive && $votive =~ /Defunct|C9|C1v/i) {
     $flag = 1;
   } elsif ($winner =~ /Sancti/) {
     $flag = 0;
@@ -1009,7 +1009,7 @@ sub Credo {
     }
   }
 
-  if ($rule =~ /no Credo/i) {
+  if ($rule =~ /no Credo/i || ($communerule =~ /no Credo/i && $rule !~ /Credo/i)) {
     $flag = 1;
   } elsif ($rule =~ /Credo/i || $communerule =~ /Credo/i) {
     $flag = 0;
