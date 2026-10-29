@@ -1,0 +1,126 @@
+@Sancti/11-01
+
+[Rule]
+vide C3;
+9 lectiones
+Psalmi Dominica
+Antiphonas horas
+Responsory Breve cum Alleluja
+(deinde dicitur)
+Vesperae Defunctorum
+(sed feria 7 aut rubrica 196 omittitur)
+
+[Ant Vespera]
+@Sancti/11-01:Ant 3
+
+[Responsory Vespera 1]
+R. Concède nobis, Dómine, quaesumus, veniam delictorum: et intercedentibus Sanctis, quorum hódie solémnia celebramus, talem nobis tríbe devotionem, 
+* Ut ad eorum pervenire mereamur societatem.
+V. Adjuvent nos eorum mérita, quos própria impédiunt scélera: excuset intercessio, accusat quos áctio: et qui eis tribuisti caelésti palmam triúmphi, nobis véniam non déneges peccáti. 
+R. Ut ad eorum pervenire mereamur societatem.
+
+[HymnusM Vespera]
+@Sancti/11-01:HymnusM Laudes
+
+[Ant 1]
+@Sancti/11-01:Ant 2C
+
+[HymnusM Matutinum]
+@Sancti/11-01:HymnusM Laudes
+
+[Ant Matutinum]
+Adésto, Deus unus omnipotens, Pater et Filius et Spíritus Sanctus.;;8
+@CommuneCist/C11:Ant Matutinum:2
+Laudémus Dóminum, quem laudant Angeli, cui Chérubim et Séraphim Sanctus, Sanctus, Sanctus proclámant.;;102
+@Sancti/06-24:Ant Laudes:4 s/$/;;91/
+@Commune/C1:Ant 3:s/$/;;33/
+Isti sunt Sancti, qui pro Dei amóre minas hóminum contempsérunt: sancti Mártyres in regno cælórum exsúltant cum Angelis. O quam pretiósa est mors Sanctórum, qui assidue assistunt ante Dóminum, et ab invicem non sunt separáti!;;45
+Sint lumbi vestri præcincti, et lucérnæ ardéntes in manibus vestris, et vos símiles hominibus exspectántibus dómimum suum, quando revertátur a nuptiis.;;32
+Símile est regnum cælórum decem virgínibus, quæ accipiéntes lámpades suas exíerunt obviam sponso et sponsæ.;;44
+@SanctiM/11-01:Ant Matutinum 3N:s/$/;;83/
+
+[Lectio1]
+
+!Ex Sermóne Rabani vel Maxími Tarentíni
+Légimus in ecclesiásticis históriis quod sanctus Bonifátius Papa quartus a Phoca Cæsare impetrávit donári Ecclésiæ templum Romæ, quod ab antíquis Pántheon vocabátur. In hoc ígitur, elimináta omni spurcítia, fecit ecclésiam sanctæ Dei Genetrícis atque ómnium Mártyrum, ut exclúsa multitúdine dæmonum, plebs univérsa in cápite Kalendárum novémbrium, ad ecclésiam in honórem ómnium Sanctórum consecrátam conveníret. Crescénte ígitur religióne christiána, decrétum est ut per orbem terrárum memória ómnium Sanctórum ea die haberétur: ut, quod humána fragílitas in solemnitátibus eórum minus plene peregísset, in hac sancta observatióne solverétur. Nunc ergo in ómnium primórdiis Sanctórum, laudáre cóndecet eum, qui cunctos cóndidit Sanctos.
+
+[Responsory1]
+@TemporaOP/Pent01-0:Responsory9
+
+[Lectio2]
+Beáta Dei Génetrix et semper Virgo María, templum Dómini, sacrárium Spíritus Sancti, Virgo ante partum, Virgo in partu, Virgo post partum, præséntis solemnitátis diéi expers nullo modo credénda est. Hæc est enim, quæ Dei pópulum faciéndo monébat spérnere peritúri luxus sæculi, ac lenocínia mortális vitæ declináre: carnis quoque pudicítiam cum virginitátis honóre intra cordis hospítium observáre. Decébat eam, ómnium virtútum Regínam, fructum cunctis esse salútis perpétuæ: et sóciam Angelórum, omnes suis informáre exémplis. Unde et innumerábilis utriúsque sexus multitúdo ejus secúta est vestígia, relíctis nuptiárum cópulis.
+
+[Responsory2]
+@CommuneOP/C11:Responsory9
+
+[Lectio3]
+Princípium ac finis ómnis creatúræ, supérna cælórum regna Spíritibus angélicis ad laudem et glóriam atque honórem sui nóminis ac maiestátis, in perpétuum miro órdine collocávit. Novem autem esse Angelórum órdines ad Dei judícia ac ministéria complénda, testánte sacro elóquio, cognóvimus: quorum Principátus atque Potestátes subtíliter ac mirabíliter Dei omnipoténtis nutu distinguúntur. Talibúsque, a primórdio incipiéntis vitæ, beatórum Spírituum distinctiónibus supérna cælórum regna a Deo Conditóre in perpétuum mirabíliter collocáta subsístunt. His ómnibus, fratres caríssimi, tam decóris ac Deo diléctis Angelórum agmínibus, hujus diéi solemnitátem crédimus esse consecrátam.
+
+[Responsory3]
+@SanctiM/09-29:Responsory4
+&Gloria
+@SanctiM/09-29:Responsory4:4 s/.* (.*) (.*) (.*)/R. \u\1 \2 \3/
+
+[Lectio4]
+Solémnitas hæc non solum Angelórum spíritibus, verum Sanctis ómnibus, qui ab exórdio mundi creati sunt, dedicáta consístit. Quorum primi fuerunt Patriarchæ, patres Prophetárum et Apostolórum. Hi Deo digni invénti sunt, fide præclári, sapientes in ópere, reparatóres orbis, justitia insignes, longánimes in spe, obediéntes in præcéptis, créduli in promissionibus, susceptóres Angelórum effécti. Hos séquitur electio Prophetárum, cum quibus locútus est Deus et osténdit illis secréta sua. Quorum álíi in útero, álíi in puerítia, álíi in juventúte, álíi in senectúte sanctificáti invénti sunt, fide pleni, devotióne summi, indústria solértes, excellénti ingénio præditi: in exercitátione disciplinæ instrúcti, in sancta meditatióné assídui, metúque mortis intrépidi: verberántes tyránnos, peccáta pópuli plangéntes, multisque signis effulsére. Hos séquitur Joánnés Baptista, qui eódem Angelo, quo Christus, denuntiánté concéptus, exórdio baptísmatis primátum ténuit.
+
+[Responsory4]
+@SanctiM/06-24:Responsory8_:1-2
+@Sancti/06-24:Responsory2:3
+@SanctiM/06-24:Responsory8_:4
+
+[Lectio5]
+Séquitur duodénus Apostolorum númerus: quos ad componéndum novæ fidei fundaméntum, erigéndumque adhuc ténéræ statum Ecclésiæ providéntia divína ex ómnibus, quos capíebat mundus, elégit: ut in omnem terram exíret sonus eorum. Hi veræ viti, id est Christo, tamquam pálmities adhæsére: et eorum fructus in sempitérnum pèrmanens non marcéscit. Hi sunt, quibus locútus est Dóminus dicens: Vos estis lux mundi. Et: Non potest civitas abscondi supra montem pósita: neque accéndunt lucérnam et ponunt eam sub módio. Et iterum: Jam non dicam vos servos, sed amicos: quia quæcúmque audívi a Patre meo, nota feci vobis.
+
+[Responsory5]
+@CommuneM/C1:Responsory11:1-2
+@Commune/C1p:Responsory8:3 s/, [^,]*$/.\n/
+@CommuneM/C1:Responsory11:4
+
+[Lectio6]
+Apóstolis subjèctum est triumphále Mártirum nomen: qui per diversa tormentorum génera Christi passiónem imitabantur. Alii namque ferro perémpiti, alii flammis exústi, alii flagris verberáti, alii véctibus perforáti, alii cruciáti patíbulo, alii demérsi pélagi periculo, alii vivi decoriáti, alii vinculis mancipáti, alii linguis priváti, alii lapídibus óbruti, alii frigore afflícti, alii fame cruciáti: alii vero truncátis manibus, sive ceteris membris cæsis, spectáculum Angelis et hominibus facti, contumélias in pópulis nudi propter nomen Dómini portavérunt.
+
+[Responsory6]
+@CommuneOP/C3a:Responsory Vespera 1
+
+[Lectio7]
+Ipsis quoque Sacerdótibus atque Doctóribus sive Confessóribus hujus festivitatém diéi non ignótam esse crédimus: qui corda fidélium imbribus irrigárant cæléstibus, ut proférre immarcescibilem bonórum óperum fructum possent. Hi talénta sibi crédita cum usúra sine fraude amplificáre procuravérunt: quia bonum, quod didicére, subiectórum mentibus, arguendo, obsecrándo, increpándo insérere nitebantur. Horum mens lucidíssima, manus vero plenæ munditia sunt: eo quod sacrosáncta mystéria celebrántes, hostiam vivam Deo semetipsos offérre sine mácula pravi óperis non desístunt. Et, licet persecutórum non senserint gládium, tamen per vitæ méritum martyrio non privántur.
+
+[Responsory7]
+@Commune/C4:Responsory8
+
+[Lectio8]
+Virgines quoque sacræ ab hujus diéi solennitate non sunt separátæ. Hæ sunt enim, quæ spreta liberórum propágine, Sponso, qui in cælis est, perénni mente, actu, hábitu et gestu, sese applicáre maluérunt. Hæ sunt, quæ oratióibus instántes, jeiúniis adhæréntes, vigílias sacras amántes, elemosynas sectántes, páuperes recreántes, nudos vestientes, infirmos visitántes, in tribulatióne gaudéntes, in verbis calúmniæ vel contuméliæ patientes, in augménto suæ perfectiós humiles, in damno rerum temporálium Deo grátias agébant.
+
+[Responsory8]
+@CommuneOP/C6:Responsory7
+
+[Lectio9]
+Nos ergo, fratres, tantórum patrocinia intercessórum tota mentis intentióne quærámus: ut per temporália festa, quæ gérimus, eórum méritis interveniéntibus, ad ætérna pervenire valeámus. Tránseunt cuncta, quæ temporáliter festíve celebrántur. Curáte, qui his solennitatibus interestis, ne ab ætérna solennitate separémini. Quid enim prodest interesse festis hóminum, si deesse contingat festis Angelórum?
+
+[Responsory9]
+@:Responsory Vespera 1
+
+[Versum 0]
+V. Oráte pro nobis, omnes Sancti Dei.
+R. Ut digni eficiámur promissiónibus Christi.
+
+[HymnusM Laudes]
+@Sancti/11-01:HymnusM Vespera:1-30
+@Sancti/11-01:HymnusM Laudes:26-30
+
+[Versum 2]
+@Commune/C3:Versum 1
+
+[Capitulum Sexta]
+!Apo 7:3
+Audívi númerum signatórum, centum quadragínta quátuor míllia signáti, ex omni tribu filiórum Israël.
+
+[Capitulum Nona]
+@Sancti/11-01:Capitulum Sexta:s/Post hæc vidi/Vidi/ s/, in cons.*/./
+
+[Ant Vespera 3]
+@Sancti/11-01:Ant Vespera:1 s/$/;;109;111;112;115;125/
+
+[Ant 3]
+@Sancti/11-01:Ant 1C

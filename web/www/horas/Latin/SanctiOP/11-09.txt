@@ -1,0 +1,11 @@
+@Sancti/11-09
+
+[Lectio1]
+@Sancti/11-09::!3 s/9-11/10-12/
+@Sancti/11-09:Lectio2:2 s/:$/./
+
+[Lectio2]
+@Sancti/11-18o:Lectio1:!1
+
+[Lectio3]
+@Sancti/11-18o:Lectio2
