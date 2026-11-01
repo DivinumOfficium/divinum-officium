@@ -565,7 +565,8 @@ sub canticum {
 
   # Solemn vespers, i.e., on Duplex I. classis get the Magnificat in the solemn tone
   # The Benedictus in Tenebrae get their solemn tone in the database
-  $canticaTone =~ s/^(\d)/solemn$1/ if $hora eq 'Vespera' && $chantTone =~ /^solemnis|resurrectionis/;
+  $canticaTone =~ s/^(\d)/solemn$1/
+    if $hora eq 'Vespera' && $chantTone =~ /^solemnis|resurrectionis/ && $votive eq 'Hodie';
 
   # Standard: Add canticle number 230–232 to antiphone like "Antiphone;;230"
   # GABC: Re-assemble Antiphone in format "Antiphone;;'230,1D'"
