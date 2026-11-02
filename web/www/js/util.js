@@ -233,40 +233,47 @@ var regexOuter = /((([^\(\r\n]+)($|\())|\()([^\)]*)($|\))(?:(\s+)|(?=(?:\([^\)]*
 var regexHeaderEnd=/(?:^|\n)%%\s?\n/;
 var regexHeaderLine = /^([\w-_.]+):\s*((?:[^;\r\n]|;[ \t])*)(?:;|$)/i;
 var regexHeaderComment = /^%.*/;
+// A header written on one line ("name:Credo; mode:8; %% (c3) …"): a chant
+// file's lines joined with spaces, as webdia.pl interpolates them.
+var regexHeaderOneLine = /^\s*((?:[\w\-_.]+:(?:[^;\r\n]|;(?!\s+(?:[\w\-_.]+:|%%)))*;\s+)+)%%(?:\s|$)/;
 function GabcHeader(text){
   if(typeof(text)!='string') text='';
   this.comments=[];
   this.cValues={};
   this.original='';
+  var lines = [];
   var match=text.match(regexHeaderEnd);
   if(match){
     var txtHeader = this.original = text.slice(0,match.index+match[0].length);
-    var lines = txtHeader.split(/\r?\n/g);
-    for(var i=0; i < lines.length; ++i){
-      var line=lines[i],
-          match = regexHeaderLine.exec(line);
-      if(match){
-        var key = match[1].replace(/-([a-z])/g,function(a,letter) { return letter.toUpperCase(); });
-        if(this[match[1]]) {
-          var arrayName=match[1]+'Array';
-          if(!this[arrayName]){
-            this[arrayName] = [this[match[1]]];
-          }
-          this[arrayName].push(match[2]);
-        } else {
-          this[match[1]]=match[2];
+    lines = txtHeader.split(/\r?\n/g);
+  } else if((match = text.match(regexHeaderOneLine))){
+    this.original = match[0];
+    lines = match[1].trim().split(/;\s+(?=[\w\-_.]+:)/);
+  }
+  for(var i=0; i < lines.length; ++i){
+    var line=lines[i],
+        match = regexHeaderLine.exec(line);
+    if(match){
+      var key = match[1].replace(/-([a-z])/g,function(a,letter) { return letter.toUpperCase(); });
+      if(this[match[1]]) {
+        var arrayName=match[1]+'Array';
+        if(!this[arrayName]){
+          this[arrayName] = [this[match[1]]];
         }
-        if(key != match[1]) this[key] = this[match[1]];
-      } else if((match = regexHeaderComment.exec(line))){
-        if(line!='%%'){
-          match = regexHeaderLine.exec(line.slice(1));
-          if(match){
-            var key = match[1].replace(/-([a-z])/g,function(a,letter) { return letter.toUpperCase(); });
-            this.cValues[match[1]]=match[2];
-            if(key != match[1]) this.cValues[key] = match[2];
-          } else {
-            this.comments[i]=line;
-          }
+        this[arrayName].push(match[2]);
+      } else {
+        this[match[1]]=match[2];
+      }
+      if(key != match[1]) this[key] = this[match[1]];
+    } else if((match = regexHeaderComment.exec(line))){
+      if(line!='%%'){
+        match = regexHeaderLine.exec(line.slice(1));
+        if(match){
+          var key = match[1].replace(/-([a-z])/g,function(a,letter) { return letter.toUpperCase(); });
+          this.cValues[match[1]]=match[2];
+          if(key != match[1]) this.cValues[key] = match[2];
+        } else {
+          this.comments[i]=line;
         }
       }
     }
