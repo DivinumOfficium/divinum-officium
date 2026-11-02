@@ -4218,16 +4218,22 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	      do {
 	
-	        var line = new _ExsurgeChant.ChantLine(this);
-	
-	        line.buildFromChantNotationIndex(ctxt, currIndex, width);
+	        // a line that takes no notation (one wider than the width) is
+	        // built again wider, else the loop would never end
+	        var line;
+	        var lineWidth = width;
+	        do {
+	          line = new _ExsurgeChant.ChantLine(this);
+	          line.buildFromChantNotationIndex(ctxt, currIndex, lineWidth);
+	          lineWidth *= 2;
+	        } while (line.numNotationsOnLine === 0 && lineWidth > 0 && lineWidth <= width * 1024);
 	        currIndex = line.notationsStartIndex + line.numNotationsOnLine;
 	        line.performLayout(ctxt);
 	        this.lines.push(line);
 	
 	        line.bounds.y = -line.bounds.y + y;
 	        y += line.bounds.height + ctxt.staffInterval * 1.5;
-	      } while (currIndex < this.notations.length);
+	      } while (currIndex < this.notations.length && line.numNotationsOnLine > 0);
 	
 	      var lastLine = this.lines[this.lines.length - 1];
 	
