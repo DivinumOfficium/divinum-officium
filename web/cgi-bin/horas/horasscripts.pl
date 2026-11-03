@@ -428,6 +428,38 @@ sub handleverses {
   } @{$_[0]};
 }
 
+sub handleDoxologyIntonatio {
+  map {
+    if ($_[1] =~ /[16]/) {
+      s/\(h\)([\w\s]*?)\(h\)/(f)$1(gh)/;
+    } elsif ($_[1] =~ /2/) {
+      s/\(h\)([\w\s]*?)\(h\)/(e)$1(f)/;
+    } elsif ($_[1] =~ /3\-antiquo/) {
+      s/\(i\)([\w\s]*?)\(i\)/(g)$1(hi)/;
+    } elsif ($_[1] =~ /3/) {
+      s/\(j\)([\w\s]*?)\(j\)/(g)$1(hj)/;
+    } elsif ($_[1] =~ /4\-alt/) {
+      if ($_[2] =~ /antiquo/) {
+        s/\(i\)([\w\s]*?)\(i\)/(f)$1(hi)/;
+      } else {
+        s/\(i\)([\w\s]*?)\(i\)/(i)$1(hi)/;
+      }
+    } elsif ($_[1] =~ /4/) {
+      if ($_[2] =~ /antiquo/) {
+        s/\(h\)([\w\s]*?)\(h\)/(e)$1(gh)/;
+      } else {
+        s/\(h\)([\w\s]*?)\(h\)/(h)$1(gh)/;
+      }
+    } elsif ($_[1] =~ /5/) {
+      s/\(h\)([\w\s]*?)\(h\)/(d)$1(f)/;
+    } elsif ($_[1] =~ /7/) {
+      s/\(i\)([\w\s]*?)\(i\)/(hg)$1(hi)/;
+    } elsif ($_[1] =~ /8/) {
+      s/\(j\)([\w\s]*?)\(j\)/(g)$1(h)/;
+    }
+  } @{$_[0]};
+}
+
 #*** psalm($chapter, $lang, $antline)  or
 # psalm($chapter, $fromverse, $toverse, $lang, $antline)
 # if second arg is 1 omit gloria
@@ -619,10 +651,15 @@ sub psalm : ScriptFunc {
   if ($antline && $psnum != 232) {    # put dagger if needed
     $lines[0] =~ s/^\d+:\d+[a-z]? \K(.*)/ getantcross($1, $antline) /e;
     if ($lines[0] =~ s{/:\x{2021}:/$}{}) { $lines[1] =~ s{^\d+:\d+[a-z]? \K}{/:\x{2021}:/ }; }
-  } elsif (!$antline && $lang =~ /gabc/i && $psnum !~ /in Directum/) {
+  } elsif (!$antline
+    && ($version =~ /Monastic/i || ($version =~ /^Trident/ && $psnum =~ /(?:66|149|150)/))
+    && $lang =~ /gabc/i
+    && $psnum !~ /in Directum/)
+  {
 
-    # GABC: Remove consecutive Intonation if two or more Psalms are sung under the same Antiphone
-    $title .= ' sine intonatio';
+    # Monastic GABC: Remove consecutive Intonation if two or more Psalms are sung under the same Antiphone
+    # Roman: Only if the psalms are joined under the same Gloria patri.
+    $title .= ' sine intonatione';
     $lines[7] =~ /\((.*?)\)/;
     my $tenor = $1;
     $lines[6] =~ s/\)([\w\s\,\.\:]+\(.*?\)[\w\s\,\.\:]+)\(.*?\)/\)$1($tenor)/;
@@ -650,6 +687,9 @@ sub psalm : ScriptFunc {
       $fname =~ s/,/-/g;    # file name with dash not comma
       $fname = checkfile($lang, $fname);
       my (@lines) = do_read($fname);
+
+      handleDoxologyIntonatio(\@lines, $ffolder, $ftone)
+        if $psnum =~ /23[123]/ && $lang =~ /gabc/i && $ftone !~ /solemn/;
 
       foreach my $line (@lines) {
         $output =~ s/\}\n$/ \n$line\}\n/;
