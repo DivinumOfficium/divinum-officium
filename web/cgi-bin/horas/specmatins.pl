@@ -1232,7 +1232,7 @@ sub lectio : ScriptFunc {
 
       while ($i < 7) {
         my $w1 = $w{"Lectio$i"};
-        if (!$w1 || $w1 =~ /\!/) { last; }
+        if (!$w1 || $w1 =~ /^\!/) { last; }
         if ($w =~ /(.*?)\_/s) { $w = $1; }
         $w .= $w1;
         $i++;
@@ -1310,7 +1310,7 @@ sub lectio : ScriptFunc {
 
     if (!$s) {
       my %w = (columnsel($lang)) ? %winner : %winner2;
-      if ($winner =~ /C9/ && $na == 9) { $na = 91; }
+      if ($winner =~ /C9/ && $version !~ /Praedicatorum/ && $na == 9) { $na = 91; }
       if (exists($w{"Responsory$na"})) { $s = $w{"Responsory$na"}; }
 
       if (!$s) {
@@ -1757,7 +1757,9 @@ sub StJamesRule {
   my %w1 = {};
   my $key;
 
-  if ($w{Rank} =~ /Dominica/i && prevdayl1($s)) {
+  my %latw = $lang1 eq 'Latin' ? %winner : %{setupstring('Latin', $winner)};
+
+  if ($latw{Rank} =~ /Dominica/i && prevdayl1($s)) {
 
     # On Dominica IV post Pascha & infra 8vam Ascensionis, if the previous day has had the incipit
     # already, then read from Monday instead.
@@ -1767,7 +1769,7 @@ sub StJamesRule {
     setbuild2("subst: Incipit from $s replaced by Monday readings to avoid repeat");
   }
 
-  if ($w{Rank} =~ /Jacobi|Joannis/ && $scriptura{Lectio1} =~ /!.*?($s) /i) {
+  if ($latw{Rank} =~ /Jacobi|Joannis/ && $scriptura{Lectio1} =~ /!.*?($s) /i) {
 
     # On Ss. Philippi et Jacobi, App & S. Joannis ante portam Latinam, if occuring scripture is
     # from the Apostel's epistels or revelation, then it is read

@@ -1,0 +1,97 @@
+@Sancti/11-30
+
+[Ant Vespera]
+@Sancti/11-30:Ant 1
+
+[Responsory Vespera 1]
+@Sancti/11-30:Responsory4
+
+[Capitulum Laudes]
+@Commune/C1
+
+[Invit]
+Adorémus victoriosíssimum Regem Christum, * Qui victórem per crucis trophæum coronávit beátum Andréam Apóstolum.
+
+[AntM6]
+Christus me misit ad istam provínciam, ubi non parvum pópulum acquisívi.;;63
+
+[AntM7]
+Videns Andréas crucem, cum gáudio dicébat: Quia amátor tuus semper fui et desiderávi amplécti te, o bona crux.;;74
+
+[Ant Matutinum]
+@Sancti/11-30::1-3
+@Sancti/11-30::5 s/.;;60/, allelúja.;;46~/
+@Sancti/11-30::4 s/;;46/;;60/
+@:AntM6
+@:AntM7
+@Sancti/11-30::9 s/Acc.pe/Récipe/ s/, \S+\.\s*;;98/.;;96/
+@Sancti/11-30::6 s/;;63/;;98/
+
+[Lectio1]
+@Sancti/11-30::1-7 s/-9/-8/
+
+[Lectio2]
+@Sancti/11-30::!2-4s/10-15/13-17/
+@Sancti/11-30:Lectio3:2-3
+
+[R2V]
+V. Ad unius jussiónis vocem Petrus et Andréas, relíctis rétibus, secúti sunt Redemptórem.
+
+[Responsory2]
+@Sancti/11-30::1-2 s/\n\* (.*) (\S+) (\S+)\s*$/\l$1\n* \u$2 $3\n/
+@:R2V
+@Sancti/11-30::2 s/(.*) (\S+) (\S+)\s*$/R. \u$2 $3\n/
+
+[Lectio3]
+@Sancti/11-30::!2-3
+
+[Responsory3]
+@Sancti/11-30:Responsory4
+
+[Lectio4]
+@Sancti/11-30::s/, quod.*/./
+
+[Responsory4]
+@Sancti/11-30:Responsory3:s/, quam a longe aspíciens dixit/: aspíciens a longe vidit/
+
+[R5V]
+V. Secúrus et gaudens vénio ad te: ita et tu exsúltans suscípias me.
+
+[Responsory5]
+@Sancti/11-30::1-2
+@:R5V
+@Sancti/11-30::4
+
+[Lectio6]
+@Sancti/11-30::s/ Quæ.*//
+
+[Responsory6]
+R. Salve, crux, quæ in córpore Christi dedicáta es et ex membris ejus tamquam margarítis ornáta:
+* Súscipe discipulum ejus, qui pepéndit in te.
+V. O bona crux, diu desideráta et jam concupiscénti ánimo præparáta.
+R. Súscipe discipulum ejus, qui pepéndit in te.
+
+[R7V]
+V. Exaltáre, qui júdicas terram: redde retributiónem supérbis.
+
+[Responsory7]
+@Sancti/11-30:Responsory6:1-2
+@:R7V
+@Sancti/11-30:Responsory6:4
+
+[Responsory8]
+R. Diléxit Andréam Dóminus in odórem suavitátis: dum pendéret in cruce, dignum sibi computávit Mátyrem, quem vocávit Apóstolum, dum esset in mari:
+* Et ideo amicus Dei appellatus est.
+V. Vir iste in pópulo suo mitíssimus appáruit: sanctitáte autem et grátia plenus.
+R. Et ideo amicus Dei appellatus est.
+
+[Responsory9]
+R. Videns crucem Andréas exclamávit dicens:
+* O crux inenarrábilis, o crux inæstimábilis, o crux quæ per totum mundum fulges, Non me dimittas errántem, sicut ovem non habéntem pastórem.
+V. Bíduo vivens pendébat in cruce pro Christi nómine beátus Andréas, et docébat pópulum, et dicébat.
+R. O crux inenarrábilis, o crux inæstimábilis, o crux quæ per totum mundum fulges, Non me dimittas errántem, sicut ovem non habéntem pastórem.
+&Gloria
+R. Non me dimittas errántem, sicut ovem non habéntem pastórem.
+
+[Ant Vespera 3]
+@Sancti/11-30:Ant Vespera:1 s/$/;;109;112;115;125;138/
