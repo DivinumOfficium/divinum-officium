@@ -240,7 +240,7 @@ sub triduum_gloria_omitted() {
 sub getantcross {
 
   my $psalmline = shift;
-  my $antline = shift;
+  my $antline = depunct(shift);    # remove punctuation immediately to not fail for French
   my @psalmline = split(' ', $psalmline);
   my @antline = split(' ', $antline);
   my $pind = 0;
@@ -254,10 +254,17 @@ sub getantcross {
     my $item1 = $psalmline[$pind];
     $pind++;
     $item1 = depunct($item1);
-    if (!$item1) { next; }
+
+    if (!$item1) {
+
+      # keep the punctuation (i.e., asterisk).
+      $psalmline .= " $psalmline[$pind-1]";
+      next;
+    }
+
     my $item2 = $antline[$aind];
     $aind++;
-    $item2 = depunct($item2);
+    $item2 = $item2;
     if (!$item2) { $pind--; next; }
     if ($item1 !~ /$item2/i) { return $psalmline1; }
     $psalmline .= " $psalmline[$pind-1]";
@@ -558,7 +565,8 @@ sub canticum {
 
   # Solemn vespers, i.e., on Duplex I. classis get the Magnificat in the solemn tone
   # The Benedictus in Tenebrae get their solemn tone in the database
-  $canticaTone =~ s/^(\d)/solemn$1/ if $hora eq 'Vespera' && $chantTone =~ /^solemnis|resurrectionis/;
+  $canticaTone =~ s/^(\d)/solemn$1/
+    if $hora eq 'Vespera' && $chantTone =~ /^solemnis|resurrectionis/ && $votive eq 'Hodie';
 
   # Standard: Add canticle number 230–232 to antiphone like "Antiphone;;230"
   # GABC: Re-assemble Antiphone in format "Antiphone;;'230,1D'"

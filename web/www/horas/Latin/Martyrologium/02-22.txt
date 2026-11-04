@@ -2,8 +2,6 @@
 Octávo Kaléndas Mártii
 
 [Martyrologium]
-@:La-Catedra
-
 (rubrica 1960 aut rubrica Newcal dicitur)
 @Martyrologium/01-18:Petri
 
@@ -11,6 +9,7 @@ Octávo Kaléndas Mártii
 (rubrica 1960 aut rubrica Newcal omittitur)
 
 @:Petri-Damiani
+(rubrica 1570 aut rubrica 1617 aut rubrica 1888 aut rubrica 1906 omittitur)
 
 @:Aristionis
 
@@ -23,9 +22,10 @@ Octávo Kaléndas Mártii
 @:Paschasii
 
 @:Maximiani
+(rubrica 1570 aut rubrica 1617 aut rubrica 1888 aut rubrica 1906 omittitur)
 
 @:Margaritae
-(rubrica 1570 omittitur)
+(rubrica 1570 aut rubrica 1617 omittitur)
 
 [Petri]
 Antiochíæ Cáthedra sancti Petri Apóstoli, ubi primum discípuli cognomináti sunt Christiáni.
@@ -54,4 +54,5 @@ Ravénnæ sancti Maximiáni, Epíscopi et Confessóris.
 [Margaritae]
 Cortónæ, in Túscia, sanctæ Margarítæ, ex tértio Ordine sancti Francísci; quæ admirábili pæniténtia et ubérrimis lácrimis máculas anteáctæ vitæ indesinénter abstérsit. Ipsíus corpus, mirabíliter incorrúptum, suávem spirans odórem et crebris miráculis clarum, ibídem magno cum honóre cólitur.
 
-[La-Catedra]
+[Margaritae] (rubrica 1888 aut rubrica 1906)
+Cortónæ, in Túscia, sanctæ Margarítæ, Tértii Ordinis sancti Francísci, cujus corpus per quátuor et ámplius sǽcula mirabíliter incorrúptum, suávem spirans odórem, et crebris miráculis clarum, ibídem magno cum honóre cólitur.

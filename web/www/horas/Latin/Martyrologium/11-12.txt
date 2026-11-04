@@ -3,11 +3,16 @@ Prídie Idus Novémbris
 
 [Martyrologium]
 @:Martini-Primi
+(rubrica 1570 aut rubrica 1617 aut rubrica 1888 aut rubrica 1906 omittitur)
+
+(rubrica 1570 aut rubrica 1617 aut rubrica 1888 aut rubrica 1906 dicitur)
+@Martyrologium/09-16:Martini-Primi
 
 @:Josaphat
-(rubrica 1570 omittitur)
+(rubrica 1570 aut rubrica 1617 omittitur)
 
 @:Didaci
+(rubrica 1570 aut rubrica 1617 omittitur)
 
 @:Aurelii-Publii
 
@@ -23,11 +28,13 @@ Prídie Idus Novémbris
 
 @:Aemiliani
 
+(rubrica Cisterciensis dicitur)
 @:Leonii-Melodunensis
 
 @:Nili
 
-@:Theodori-Studitae
+(rubrica 1888 aut rubrica 1906 dicitur)
+@Martyrologium/11-11:Theodori-Studitae
 
 [Martini-Primi]
 Sancti Martíni Primi, Papæ et Mártyris, cujus dies natális sextodécimo Kaléndas Octóbris recensétur.
@@ -59,10 +66,8 @@ Colóniæ Agrippínæ deposítio sancti Cunibérti Epíscopi.
 [Aemiliani]
 Turiasóne, in Hispánia Tarraconénsi, beáti Æmiliáni Presbýteri, qui innúmeris miráculis cláruit; cujus admirábilem vitam sanctus Bráulio, Cæsaraugustánus Epíscopus, descrípsit.
 
-[Leonii-Melodunensis]
+[Leonii-Melodunensis] (rubrica Cisterciensis)
 
 
 [Nili]
 Constantinópoli sancti Nili Abbátis, qui, sub Theodósio junióre, ex Præfécto ejúsdem civitátis factus Mónachus, doctrína et sanctitáte cláruit.
-
-[Theodori-Studitae]

@@ -7,7 +7,8 @@ keys, so the columns line up entry for entry and a version rule like
 
 An entry a language has not translated is filled from the reader's
 fallback language. If nobody in that chain has it, it is left out rather
-than shown in Latin.
+than shown in Latin. An entry the Latin has no text for only shows in
+the language that has it.
 
 **If you are adding or fixing a translation, you only ever supply words.**
 Order, and which versions have what, come from the Latin.
@@ -147,6 +148,15 @@ So instead of a translation, write where it was already said:
 
 That entry then prints nothing and nothing is filled in for it.
 
+If your book *also* has the saint on another day, point at the Latin's
+day instead of copying the text. The Latin needs an empty key for it on
+that day. Example (Spanish 09-25):
+
+```
+[Vincentii-Strambi]
+@Martyrologium/01-01:Vincentii-Strambi
+```
+
 **5. Nothing.** Leaving a key out is fine and normal — the column falls
 back. Only write a note (4) when your book has already said it elsewhere.
 
@@ -162,6 +172,88 @@ Entries naming nobody are keyed by number and kind
 
 **One saint, one key.** If you find the same saint under two keys on a
 day, that is a bug: the two should be one, or one should be a note (4).
+
+**Use the Latin's day.** If your book has a saint on a different day
+from the Latin, put the text under the Latin's key on the Latin's day,
+and don't keep a copy on your book's day. A different notice (a feast
+kept that day, "mention is made upon the 24th") stays where it is.
+
+**Cistercian-only entries.** Mark both the index line and the Latin
+section, and leave the Latin empty until someone writes it:
+
+```
+(rubrica Cisterciensis dicitur)
+@:Alberici-Cisterciensis
+
+[Alberici-Cisterciensis] (rubrica Cisterciensis)
+```
+
+**Instructions are not entries.** "Kneel and say the Ave" and the like
+go inside the entry they follow, on their own line, as a rubric:
+
+```
+Narození Nejblahoslavenější vždy Panny a Bohorodičky Marie. †
+/:Stoupneme si a pomodlíme se skloněni potichu AVE MARIA.:/
+```
+
+## The older books
+
+| Versions | Rubric | Book |
+|---|---|---|
+| Tridentine 1570, Monastic 1617 | `rubrica 1570 aut rubrica 1617` | 1584 martyrology (1585 and 1589 printings) |
+| Tridentine 1888, Tridentine 1906 | `rubrica 1888 aut rubrica 1906` | 1902 Rome edition; Bute's English translates it |
+
+To make an older version match its book, in the Latin:
+
+- **Not in the book:** add `(rubrica 1570 aut rubrica 1617 omittitur)`
+  under the index line.
+- **Different wording:** add `[Key] (rubrica 1888 aut rubrica 1906)`
+  with the book's words.
+- **On a different day in the book:** omit it on the modern day, and on
+  the book's day refer to it, putting any different wording under the
+  modern key:
+
+```
+(rubrica 1570 aut rubrica 1617 aut rubrica 1888 aut rubrica 1906 dicitur)
+@Martyrologium/01-17:Juliani
+```
+
+- **Only in the book:** give it its own key, said only under the rubric.
+
+In a translation of an older book (such as Bute's English), put its
+text under the same rubric, `[Key] (rubrica 1888 aut rubrica 1906)`.
+Then:
+
+- If that text is still right for the modern versions, also add an
+  empty `[Key]`. Modern versions show the old text until someone
+  translates the modern one.
+- If it is wrong for them ("on the morrow", a feast on another day),
+  leave the empty `[Key]` out. Modern versions then fall back.
+
+An older version never shows text from a newer book.
+
+The files in `obsolete/martyrologium-source/Latin/Martyrologium1570` are
+a record of what 1570 shows, so `verify.pl` notices when it changes.
+
+## Leap years
+
+In a leap year, 24 February reads `02-29.txt` and 25-29 February read
+the file of the day before, so Matthias falls on the 25th by himself.
+
+For text that depends on the year, use `anno bissextili` (leap year) or
+`anno communi` (other years):
+
+```
+@:Matthiae-2
+(anno bissextili omittitur)
+```
+
+`verify.pl` checks such days in both kinds of year. To run the audit for
+a leap year:
+
+```
+perl -e 'our $year = 2028; $0 = "admin/martyrologium/audit.pl"; do "./admin/martyrologium/audit.pl"'
+```
 
 ## latin-todo.txt
 

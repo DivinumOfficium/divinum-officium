@@ -2,10 +2,12 @@
 Prídie Nonas Septémbris
 
 [Martyrologium]
-
 @:Moysis
 
 @:Candidae
+
+(rubrica 1570 aut rubrica 1617 aut rubrica 1888 aut rubrica 1906 dicitur)
+@Martyrologium/09-10:Candidae
 
 @:Marcelli
 
@@ -20,14 +22,18 @@ Prídie Nonas Septémbris
 @:Theodori-Oceani
 
 @:Bonifatii-Primi
+(rubrica 1570 aut rubrica 1617 aut rubrica 1888 aut rubrica 1906 omittitur)
 
 @:Marini
 
 @:Rosaliae-Panormitanae
-(rubrica 1570 omittitur)
+(rubrica 1570 aut rubrica 1617 omittitur)
 
 @:Rosae
-(rubrica 1570 omittitur)
+(rubrica 1570 aut rubrica 1617 aut rubrica 1888 aut rubrica 1906 omittitur)
+
+(rubrica 1570 aut rubrica 1617 aut rubrica 1888 aut rubrica 1906 dicitur)
+@Martyrologium/03-06:Rosae
 
 [Moysis]
 In monte Nebo, terræ Moab, sancti Móysis, legislatoris et Prophétæ.
@@ -55,6 +61,9 @@ Item sanctórum Mártyrum Theodóri, Oceáni, Ammiáni et Juliáni; qui sub Maxi
 
 [Bonifatii-Primi]
 Romæ sancti Bonifátii Primi, Papæ et Confessóris.
+
+[Bonifatii-Primi] (rubrica 1570 aut rubrica 1617 aut rubrica 1888 aut rubrica 1906)
+Romæ sancti Bonifátii Papæ et Confessóris.
 
 [Marini]
 Arímini sancti Maríni Diáconi.
