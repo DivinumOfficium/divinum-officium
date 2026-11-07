@@ -211,7 +211,7 @@ There are two works of mercy which free us, and which the Lord Himself hath brie
 &teDeum
 
 [Ant Laudes]
-@:Ant Vespera
+@:Ant Vespera:s/;;.*//g
 
 [Capitulum Laudes]
 !Řím. 11:33
