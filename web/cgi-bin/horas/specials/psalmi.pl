@@ -466,9 +466,12 @@ sub psalmi_major {
       setbuild2('Antiphonas ante Capitulum de praecedenti');
     } elsif ($w) {
       setbuild2("Antiphonas $winner");
-    } elsif (($communetype && $communetype =~ /ex/)
-      || ($version =~ /Trident/i && $hora eq 'Laudes' && $winner =~ /Sancti/))
-    {
+    } elsif (
+      ($communetype && $communetype =~ /ex/)
+      || ( $version =~ /Trident/i
+        && $winner =~ /Sancti/
+        && ($hora eq 'Laudes' || $rank >= 2))
+    ) {
       ($w, $c) = getproprium("Ant $hora", $lang, 1);
       setbuild2("Antiphona ex $commune") if $w;
     }
@@ -631,7 +634,7 @@ sub psalmi_major {
     && (!exists($winner{"Ant $hora"}) || $commune =~ /C10/)
     && !$antecapitulum
     && $communetype !~ /ex/i
-    && ($version !~ /Trident/ || $hora eq 'Vespera')
+    && ($version !~ /Trident/ || $hora eq 'Vespera' && ($rank < 2 || $winner !~ /Sancti/i))
     && ($version !~ /Monastic/ || $hora ne 'Laudes' || $winner{Rank} !~ /Dominica/i))
   {
     $psalmi[0] =~ s/.*(?=;;)/ alleluia_ant($lang) /e;
