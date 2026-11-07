@@ -70,20 +70,30 @@ sub ordo_entry {
   $c2 =~ s/Hebdomadam/Hebd/i;
   $c2 =~ s/Quadragesima/Quadr/i;
 
+  if ($version !~ /1955|196/ && $winner{Rule} =~ /\;mtv/i) {
+    $c1 .= setfont('1 black', ' m.t.v.');
+  }
+
+  my @wRank = split(';;', $winner{Rank});
+
   if (
        $version !~ /196/
     && $winner =~ /Sancti/
-    && (
-      (
-           exists($winner{Lectio1})
-        && $winner{Lectio1} !~ /\@Commune/i
-        && $winner{Lectio1} !~ /\!(Matt|Marc|Luc|Joannes)\s+[0-9]+\:[0-9]+\-[0-9]+/i
-      )
+    && $winner{Rule} !~ /Lectio1 tempora/i
+    && ( exists($winner{Lectio1})
       || $winner{Rule} =~ /In 1 nocturno lectiones ex C/i
-    )
+      || ($wRank[3] =~ /^ex/ && $wRank[2] >= 3.1 || $wRank[2] == 1.5))
     && !($winner{Rule} =~ /Lectio1 Quad/i && $dayname[0] !~ /Quad(\d|p3\-[3456])/i)
   ) {
-    $c1 .= setfont($smallfont, " *L1*");
+    if ( $winner{Lectio1} =~ /\!(Matt|Marc|Luc|Joannes)\s+[0-9]+\:[0-9]+\-[0-9]+/i
+      || $wRank[0] =~ /(Vigilia)/i)
+    {
+      $c1 .= setfont($smallfont, " *L1 Homilia*");
+    } elsif (exists($winner{Lectio1}) && $winner{Lectio1} !~ /\@Commune/i) {
+      $c1 .= setfont($smallfont, " *L1*");
+    } else {
+      $c1 .= setfont($smallfont, " *L1 ex Commune*");
+    }
   }
 
   if (substr($date, 0, 5) lt '12-24' && substr($date, 0, 5) gt '01-13') {
@@ -92,16 +102,12 @@ sub ordo_entry {
     ($c2, $c1) = ($c1, $c2) if $winner =~ /sancti/i;
   } else {
 
-    # inside Nat clear right column unless it is commemoratio of saint or scriptura
-    $c2 = '' unless $c2 =~ /Commemoratio|Scriptura/;
+    # inside Nat clear right column unless it is commemoratio of saint
+    $c2 = '' unless $c2 =~ /Commemoratio/;
   }
 
   if (dirge($version, 'Laudes', $day, $month, $year, $dioecesis)) { $c1 .= setfont($smallblack, ' dirge'); }
   if ($version !~ /1960/ && $initia) { $c1 .= setfont($smallfont, ' *I*'); }
-
-  if ($version !~ /1955|196/ && $winner{Rule} =~ /\;mtv/i) {
-    $c2 .= setfont($smallblack, ' m.t.v.');
-  }
 
   our $hora;
   my $temphora = $hora;

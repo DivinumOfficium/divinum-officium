@@ -911,7 +911,7 @@ sub lectio : ScriptFunc {
     && (
       (    $communetype =~ /^ex/i
         && $commune =~ /Tempora/i
-        && $rank > 3)    # either we have 'ex Tempora' on Duplex majus or higher
+        && $rank >= 3.1)    # either we have 'ex Tempora' on Duplex majus or higher
       || (
         (
           $nocturn == 1                        # or we are in the first nocturn
@@ -932,7 +932,7 @@ sub lectio : ScriptFunc {
       !$w
     && $winner =~ /sancti/i
     && $commune =~ /^C/
-    && ( ($communetype =~ /^ex/i && ($rank > 3 || ($version =~ /Cist/i && $rank > 2.2)))
+    && ( ($communetype =~ /^ex/i && ($rank >= 3.1 || $rank == 1.5 || ($version =~ /Cist/i && $rank > 2.2)))
       || ($rule =~ /in $nocturn Nocturno Lectiones ex/i))
   ) {
     my %com = (columnsel($lang)) ? %commune : %commune2;
@@ -1845,6 +1845,8 @@ sub getantmatutinum {
       @nocturns = ($i, 0);                 # Versicle for 1st Nocturn dep. on $dayofweek; No V&R for 2nd Noct.
       $target = 14;
     }
+  } elsif ($version =~ /Trident/i && $rank >= 2 && $winner =~ /Sancti/i) {
+    $flag = 1;
   }
 
   # Look up proper AntMatutinum and return if none

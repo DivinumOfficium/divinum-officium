@@ -619,7 +619,9 @@ sub occurrence {
       $officename[2] =~ s/:/ ad Laudes tantum:/ if ($srank[2] >= 5 && $saint{'Commemoratio 2'} || $version =~ /196/);
     }
 
-    if ( ($hora =~ /matutinum/i || (!$officename[2] && $hora !~ /Vespera|Completorium/i))
+    my $ittable = $missa ? '' : initiarule($month, $day, $year);
+
+    if ( ($hora =~ /matutinum/i || (!$hora && $ittable) || (!$officename[2] && $hora !~ /Vespera|Completorium/i))
       && $rank < 7
       && $trank[0]
       && !$missa)
@@ -634,7 +636,6 @@ sub occurrence {
           || ($version =~ /trident/i && $saint{Rank} !~ /\;\;(vide|ex) /i)
           || $saint{Rule} =~ /Lectio1 temp/i)
       ) {
-        my $ittable = initiarule($month, $day, $year);
 
         if ($ittable && $ittable !~ /\~[A]$/) {
 
@@ -645,11 +646,12 @@ sub occurrence {
           %tscrip = %{officestring('Latin', $tsfile)};
           $tsrank = $tscrip{Rank} || $tscrip{Scriptura};
           $tsrank =~ s/\s*;;.*|\s*$//s;
-          $officename[2] = "Tempora: $trank[0] (Scriptura ut in: $tsrank)" if $tsfile !~ $tfile && $tsrank;
+          $officename[2] ||= "Tempora: $trank[0]";
+          $officename[2] .= " (Scriptura ut in: $tsrank)" if $tsfile !~ $tfile && $tsrank;
         } elsif ($version !~ /monastic/i || $tname !~ /(?:Pasc|Pent)/ || $month > 10) {
-          $officename[2] = "Tempora: $trank[0]";
-        } else {
           $officename[2] = "Scriptura: $trank[0]";
+        } else {
+          $officename[2] = "Tempora: $trank[0]";
         }
       } else {
         $officename[2] = "Tempora: $trank[0]";
@@ -1496,7 +1498,6 @@ sub extract_common {
     # Genuine common.
     $communetype = $1;
     $commune = $2;
-    $communetype = 'ex' if ($version =~ /Trident/i && $office_rank >= 2);
 
     if ($paschal_tide) {
       my $divfolder = $datafolder;
