@@ -533,7 +533,7 @@ sub psalm : ScriptFunc {
         # redirect Monastic tones to the correct files acc. to Roman
         map {
           s/8a/8Gstar/;
-          s/1D(?!star)/1D-/;
+          s/1D(?!star|2)/1D-/;
           s/1Dstar/1D/;
           s/1g4/1g3/;
           s/1g3\-monasticus/1g3m/;
