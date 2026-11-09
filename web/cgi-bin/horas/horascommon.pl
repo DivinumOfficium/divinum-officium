@@ -2075,8 +2075,14 @@ sub setChantTone {
     #   II. cl.     => festivus
     #   III. cl.    => festivus minor
     #   IV. cl.     => ferialis
-    my @newtable =
-      ('none', 'ferialis', 'festivus minor', 'festivus minor', 'festivus minor', 'festivus', 'solemnis', 'solemnis');
+    my @newtable = (
+      'none', 'ferialis',
+      'festivus minor',
+      'festivus minor',
+      'festivus minor',
+      $version =~ /Barroux/ ? 'festivus major' : 'festivus',
+      'solemnis', 'solemnis'
+    );
 
     $chantTone = ($version !~ /196/) ? $tradtable[$rank] : $newtable[$rank];
 
