@@ -1094,7 +1094,7 @@ sub expand {
   # Make popup link if we shouldn't expand.
   if (
     $sigil ne '$rubrica '
-    && ($expand eq 'propria'
+    && ( ($expand eq 'propria' && $line !~ /Amen|Oremus/)
       || ($expand eq 'psalteria' && ($line =~ /^(?:[A-Z](?!men|remus)|pater_noster)/)))
   ) {
     $line =~ s/ solemnis// if $lang eq 'Latin-gabc';
