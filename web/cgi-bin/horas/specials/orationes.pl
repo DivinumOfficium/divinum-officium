@@ -62,15 +62,18 @@ sub oratio {
 
   if ($dayofweek > 0 && exists($winner{OratioW}) && $rank < 5) {
     $w = $w{OratioW};    # Ferias in 1st week after Pentecost only
-    setbuild2('Oratio de Dominica I post Pentecosten');
+    setbuild1('Oratio ord', 'Oratio de Dominica I post Pentecosten');
   } else {
     $w = $w{Oratio};
+    setbuild($winner, "Oratio", 'Oratio ord') if $w && ($hora ne 'Matutinum');
   }
 
   if ($hora eq 'Matutinum' && exists($winner{'Oratio Matutinum'})) {
     $w = $w{'Oratio Matutinum'};
+    setbuild($winner, "Oratio Matutinum", 'Oratio ord') if $w && ($hora ne 'Matutinum');
   } elsif (!$w || exists($winner{"Oratio $ind"})) {
     $w = $w{"Oratio $ind"};
+    setbuild($winner, "Oratio $ind", 'Oratio ord') if $w && ($hora ne 'Matutinum');
   }    # if none yet, look for Oratio of Vespers or Lauds according to ind
 
   if (!$w) {    # if none yet, look in commune.
@@ -79,8 +82,8 @@ sub oratio {
     $w = $c{"Oratio $i"};
     if (!$w) { $i = 4 - $i; $w = $c{"Oratio $i"}; }
     if (!$w) { $w = $c{Oratio}; }
+    setbuild($commune, "Oratio", 'Oratio ord') if $w && ($hora ne 'Matutinum');
   }
-  if ($hora ne 'Matutinum') { setbuild($winner, "Oratio $ind", 'Oratio ord'); }
   my $i = $ind;
 
   if (!$w) {    # if none yet:
@@ -109,7 +112,7 @@ sub oratio {
       $ti = " $ind";
       $w = $com{"Oratio $ind"};
     }
-    if ($w && $hora ne 'Matutinum') { setbuild2("$commune Oratio$ti"); }
+    setbuild($commune, "Oratio $ti", 'Oratio ord') if $w && ($hora ne 'Matutinum');
   }
 
   if ($winner =~ /Tempora/ && !$w) {    # if tempora, default to Sunday Oratio
@@ -311,7 +314,7 @@ sub oratio {
               && $winner =~ /Sancti/i
               && $winner !~ /08\-14|06\-23|06\-28|08\-09/)
           ) {
-            setbuild2("Discarded from winner: $ic");
+            setbuild2("omittitur ex Officio diei: $ic");
             next;
           }
           if ($ic !~ /^!/) { $ic = "!$ic"; }
@@ -330,7 +333,7 @@ sub oratio {
             )
             : $ccind + 9900;
           $cc{$key} = $ic;
-          setbuild2("Commemorated from winner: $key");
+          setbuild2("Commemoratio ex Officio diei: $key");
         }
       }
 
@@ -342,7 +345,7 @@ sub oratio {
           $ccind++;
           my $key = $ccind + 8500;    # 10000 - 1.5 * 1000
           $cc{$key} = $c;
-          setbuild2("Commemorated Vigil: $key");
+          setbuild2("Commemoratio Vigiliæ: $key");
         }
       }
     }
@@ -351,7 +354,11 @@ sub oratio {
 
       # add Concurrent Office
       if ($cwinner) {
-        setbuild1("Concurrent office Vesp-$cvespera:", "$cwinner");
+        if ($cvespera == 1) {
+          setbuild1(",,,Commemoratio de sequenti:", "$cwinner");
+        } else {
+          setbuild1(",,,Commemoratio de præcedenti:", "$cwinner");
+        }
 
         my $key = 0;    # let's start with lowest rank
         if (!(-e "$datafolder/$lang/$cwinner") && $cwinner !~ /txt$/i) { $cwinner =~ s/$/\.txt/; }
@@ -384,7 +391,7 @@ sub oratio {
           $cc{$key} = $c;
           setbuild2("Commemoratio: $key");
         } else {
-          setbuild2("nihil");
+          setbuild2("omittitur");
         }
 
         # add commemorated from cwinner
@@ -434,7 +441,7 @@ sub oratio {
                 && $cwinner =~ /Sancti/i
                 && $cwinner !~ /08\-14|06\-23|06\-28|08\-09/)
             ) {
-              setbuild2("Discarded from concurrent: $ic");
+              setbuild2("omittitur ex Officio concurrenti: $ic");
               next;
             }
             if ($ic !~ /^!/) { $ic = "!$ic"; }
@@ -448,7 +455,7 @@ sub oratio {
               )
               : $ccind + 9900;
             $cc{$key} = $ic;
-            setbuild2("Commemorated from Concurrent: $key");
+            setbuild2("Commemoratio ex Officio concurrenti: $key");
           }
         }
       }
@@ -457,11 +464,13 @@ sub oratio {
 
     # Add commemorated Offices of (tomorrow and) today
     foreach my $cv (@cvesp) {
-      setbuild1("Commemorations", "Vesp-$cv");
+      my $cvString = $cv == 2 ? 'Laudibus' : 'I Vesperis';
+      $cvString =~ s/I/II/ if $cv == 3;
       my @centries = $cv == 1 ? @ccommemoentries : @commemoentries;
 
-      foreach my $commemo (@centries) {
+      setbuild1(",,,Commemorationes in", $cvString) if @centries;
 
+      foreach my $commemo (@centries) {
         my $key = 0;    # let's start with lowest rank
         if (!(-e "$datafolder/$lang/$commemo") && $commemo !~ /txt$/i) { $commemo =~ s/$/\.txt/; }
         %c = %{officestring('Latin', $commemo, 0)};
@@ -490,9 +499,9 @@ sub oratio {
           $ccind++;
           $key = 10000 - $key + $ccind;    # reverse order
           $cc{$key} = $c;
-          setbuild2("$commemo: $key");
+          setbuild($commemo, $key, ",,,Commemoratio");
         } else {
-          setbuild2("$commemo: nihil");
+          setbuild2("$commemo: ommittitur");
           next;
         }
 
@@ -547,7 +556,7 @@ sub oratio {
                   && $version !~ /cist/i
                   && $commemo !~ /Pent02\-0/)
               ) {
-                setbuild2("Discarded from Commemorated: $ic");
+                setbuild2(",,,,,,omittitur ex $commemo: $ic");
                 next;
               }
               if ($ic !~ /^!/) { $ic = "!$ic"; }
@@ -562,7 +571,7 @@ sub oratio {
                 : ($ic =~ /$octavestring/i) ? $ccind + 7900
                 : $ccind + 9900;
               $cc{$key} = $ic;
-              setbuild2("Commemorated: $key");
+              setbuild2(",,,,,,Commemoratio ex $commemo: $key");
             }
           }
         }

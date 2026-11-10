@@ -637,7 +637,7 @@ sub occurrence {
           || $saint{Rule} =~ /Lectio1 temp/i)
       ) {
 
-        if ($ittable && $ittable !~ /\~[A]$/) {
+        if ($ittable && $ittable !~ /\~[AH]$/) {
 
           # If we have transferred scripture which is not coming "after" the actual day's
           # we put the source of the transferred Letio1 into the headline
@@ -823,7 +823,7 @@ sub occurrence {
         %tscrip = %{officestring('Latin', $tsfile)};
         $tsrank = $tscrip{Rank} || $tscrip{Scriptura};
         $tsrank =~ s/\s*;;.*|\s*$//s;
-        $officename[2] = "Scriptura ut in: $tsrank";
+        $officename[2] = @tsfile[-1] ne 'H' ? "Scriptura ut in: $tsrank" : "Historia ut in: $tsrank";
       }
     }
   }
@@ -2081,7 +2081,7 @@ sub setChantTone {
       'festivus minor',
       'festivus minor',
       $version =~ /Barroux/ ? 'festivus major' : 'festivus',
-      'solemnis', 'solemnis'
+      'solemnis', 'solemnis',
     );
 
     $chantTone = ($version !~ /196/) ? $tradtable[$rank] : $newtable[$rank];

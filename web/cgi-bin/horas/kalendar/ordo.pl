@@ -40,7 +40,6 @@ sub ordo_entry {
   ($c2, $h1, $h2) = ('', '', $h1) unless $h2;
   $c2 = setfont($smallblack, "$h1:") if $h1;
   $c2 .= "<I>" . setfont(liturgical_color($h2), " $h2") . "</I>" if $h2;
-  $c2 .= "<I>" . setfont($smallblack, " $scripturaUt") . "</I>" if $scripturaUt;
 
   if ($c2 && @commemoentries > ($winner =~ /Tempora/i && $commemoentries[0] !~ /Tempora/ ? 0 : 1)) {
     for my $ind (($winner =~ /Tempora/i && $commemoentries[0] !~ /Tempora/ ? 0 : 1) .. @commemoentries - 1) {
@@ -64,6 +63,7 @@ sub ordo_entry {
       last if ($version =~ /1960/ && $rank >= 5 || ($rank >= 4 && $winner{Rank} =~ /Feria|Sabbato/i));
     }
   }
+  $c2 .= "<I>" . setfont($smallblack, " $scripturaUt") . "</I>" if $scripturaUt;
 
   return "$c2" if $winneronly =~ /comm/i;    # finish here for ical_comm - comm
 
