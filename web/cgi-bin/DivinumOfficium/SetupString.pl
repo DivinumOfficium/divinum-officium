@@ -911,11 +911,7 @@ sub officestring($$;$) {
   my %m = %{setupstring($lang, subdirname('Tempora', $version) . "$monthday.txt")};
 
   foreach my $key (keys %m) {
-    if (($version =~ //i && $key =~ /Rank/i)) {
-      ;
-    } else {
-      $s{$key} = $m{$key};
-    }
+    $s{$key} = $m{$key};
   }
   return \%s;
 }
