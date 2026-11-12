@@ -686,6 +686,7 @@ sub getcommemoratio {
       || ( $rank[0] =~ /Infra Octav/i
         && $rank >= 5
         && $winner =~ /Sancti/i
+        && $winner{Rank} !~ /in.*Octava.*Epiphaniæ/i
         && ($wday ne $cwinner || $version !~ /Trident/))
     )
   ) {

@@ -145,7 +145,7 @@ sub kalendar_table {
   my $output = qq(<P ALIGN="CENTER">\n<TABLE BORDER="$border" WIDTH="90%" CELLPADDING="3" $background>\n);
 
   if ($mode eq 'kal') {
-    $kmonth = 14;
+    $kmonth = 14;    # print whole year
     $kyear = 1977;
     $output .= "<TR><TH>C.E.</TH><TH>D.L.</TH><TH></TH><TH>Dies</TH><TH></TH></TR>\n";
     $cols = 5 + $compare;
