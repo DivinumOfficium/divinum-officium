@@ -1750,34 +1750,26 @@ sub resolveitable {
 
     if ($initia && !$replace)
     {    # if we have an (unreplaced) inita on the day already (so we put the transferred afterwards)
-      $start =
-        (@file < 2) ? ($rule =~ /12 lect/ ? 4 : 3) : 2; # if we have one transferred place it no. at 3; otherwise at 2&3
+      $start = (@file < 2) ? $lim : 2;    # if we have one transferred place it last; otherwise at 2&3
 
-      if ($rule !~ /(9|12) lectiones/i && $winner =~ /Sancti/i) {
-        $lim = 1;
-        $start = 1;
-      }    # in a sanctoral of 3 lessons, only one transfer is allowed; and placed at the beginning
     }
-    $i = 1;    # here $i is used as a counter for how many files are transferred
+    $i = 1;                               # here $i is used as a counter for how many files are transferred
 
-    while (@file && $i <= $lim) {    # while we have more transferals and stay in the limit
+    while (@file && $i <= $lim) {         # while we have more transferals and stay in the limit
       $file = shift(@file);
 
       %winit = %{setupstring($lang, subdirname('Tempora', $version) . "$file.txt")};
-
-      #$w{"Lectio$start"} = $winit{"Lectio$i"};
-      #if (exists($winit{"Responsory$i"})) {$w{"Responsory$start"} = $winit{"Responsory$i"};}
       %w = tferifile(\%w, \%winit, $start, 1, $lang);
       $i++;
       $start++;
     }
 
-    $i = 2;    # from here $i is used as a counter for which Lectio$i gets appended
+    $i = 2;                               # from here $i is used as a counter for which Lectio$i gets appended
 
     while ($start <= $lim)
-    {          # only in case we put transfers "before", also transfer the remaining parts of the last initia
-               #$w{"Lectio$start"} = $winit{"Lectio$i"};
-               #if (exists($winit{"Responsory$i"})) {$w{"Responsory$start"} = $winit{"Responsory$i"};}
+    {    # only in case we put transfers "before", also transfer the remaining parts of the last initia
+         #$w{"Lectio$start"} = $winit{"Lectio$i"};
+         #if (exists($winit{"Responsory$i"})) {$w{"Responsory$start"} = $winit{"Responsory$i"};}
       %w = tferifile(\%w, \%winit, $start, $i, $lang);
       $i++;
       $start++;
@@ -1801,9 +1793,6 @@ sub resolveitable {
     $i = 1;
 
     while ($start < 4) {    # first fill the actual day's inita at their appropriate place
-
-      #$w{"Lectio$start"} = $winit{"Lectio$i"};
-      #if (exists($winit{"Responsory$i"})) {$w{"Responsory$start"} = $winit{"Responsory$i"};}
       %w = tferifile(\%w, \%winit, $start, $i, $lang);
       $i++;
       $start++;
@@ -1814,9 +1803,6 @@ sub resolveitable {
     while (@file && $i <= $lim) {    # second, fill the transfers beforehand
       $file = shift(@file);
       %winit = %{setupstring($lang, subdirname('Tempora', $version) . "$file.txt")};
-
-      #$w{"Lectio$start"} = $winit{"Lectio$i"};
-      #if (exists($winit{"Responsory$i"})) {$w{"Responsory$start"} = $winit{"Responsory$i"};}
       %w = tferifile(\%w, \%winit, $start, 1, $lang);
       $i++;
       $start++;

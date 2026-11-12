@@ -633,7 +633,6 @@ sub occurrence {
         && exists($scrip{Lectio1})
         && $scrip{Lectio1} !~ /evangelii/i
         && ( $saint{Rank} !~ /\;\;ex /
-          || ($version =~ /trident/i && $saint{Rank} !~ /\;\;(vide|ex) /i)
           || $saint{Rule} =~ /Lectio1 temp/i)
       ) {
 
