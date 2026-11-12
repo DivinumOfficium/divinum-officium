@@ -1332,7 +1332,7 @@ sub lectio : ScriptFunc {
       && !exists($winner{"Responsory$na"}))
     {
       my $i = dayofweek2i($dayofweek);
-      $na += (($i - 1) * $version =~ /Monastic/i ? 4 : 3);
+      $na += ($i - 1) * ($version =~ /Monastic/i ? 4 : 3);
       setbuild($commune{Rank}, "Responsoria in $i Nocturno", "subst") if $num == 1;
     }
 
