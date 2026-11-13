@@ -565,6 +565,12 @@ sub getanthoras {
     : 4;
   $ind++ if $ind < 3 && $version =~ /cist/i;    # Cistercian: shift by 1 except ad Nonam
   if (@ant > 3) { $ant = $ant[$ind]; }
+
+  if ($ant) {
+    my %comment = %{setupstring($lang, "Psalterium/Comment.txt")};
+    my @co = split("\n", $comment{"Source"});
+    setbuild("Antiphonas horas", $co[$c], "subst");
+  }
   return ($ant, $c);
 }
 

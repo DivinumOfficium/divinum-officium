@@ -2338,7 +2338,7 @@ sub gettempora {
 
   if ( $caller eq 'Doxology'
     || $caller eq 'Prima responsory'
-    || ($version =~ /monastic|196/i && $caller ne 'Psalmi minor' && $caller ne 'Nunc dimittis'))
+    || ($version =~ /monastic|196|1955/i && $caller ne 'Psalmi minor' && $caller ne 'Nunc dimittis'))
   {
     if ($dayname[0] =~ /^Nat/) {
       $tname = ($day >= 6 && $day < 13) ? 'Epi' : 'Nat';
