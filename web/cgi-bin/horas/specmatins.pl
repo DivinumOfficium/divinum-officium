@@ -800,25 +800,7 @@ sub lectio : ScriptFunc {
   }
 
   if ($nocturn == 1) {
-    if ( $version =~ /trident|monastic.*divino/i
-      && $version !~ /cist/i
-      && $winner{Rank} =~ /Dominica/i
-      && $month != 12
-      && $dayofweek > 0)
-    {
-
-      # Rubricæ generales IV. §4:
-      # … Tunc enim xxiv ponitur loco xxiii, et Officium xxiii ponitur in præcedenti Sabbato,
-      # quod non sit impeditum Festo novem Lectionum; alioquin in alia præcedenti die similiter non
-      # impedita, in qua fiat Officium de Feria, cum Commemoratione Festi Simplicis, si occurrat;
-      # et in ea legantur tres Lectiones de Homilia Dominicæ omissis Lectionibus Scripturæ illius Feriæ.
-      my $inum = $num + ($version =~ /Monastic/ ? 8 : 6);
-      $w{"Lectio$num"} = $w{"Lectio$inum"};
-      $w{"Lectio$num"} .= $w{"Lectio12"} if $inum == 11;
-      setbuild2("subst: Lectiones in I Nocturno de Homilia Dominicæ anticipiata") if $num == 1;
-      $homilyflag = 7;
-      $nocturn = 0;
-    } elsif ($rule =~ /Lectio1 (Oct|Temp)Nat/i) {
+    if ($rule =~ /Lectio1 (Oct|Temp)Nat/i) {
 
       #Lectio1 OctNat/TempNat: special rule for Dec 29 through Jan 05
       my %temp;
@@ -875,6 +857,24 @@ sub lectio : ScriptFunc {
         }
       }
       setbuild2("subst: Lectio$num tempora");
+    } elsif ($version =~ /trident|monastic.*divino/i
+      && $version !~ /cist/i
+      && $winner{Rank} =~ /Dominica/i
+      && $month != 12
+      && $dayofweek > 0)
+    {
+
+      # Rubricæ generales IV. §4:
+      # … Tunc enim xxiv ponitur loco xxiii, et Officium xxiii ponitur in præcedenti Sabbato,
+      # quod non sit impeditum Festo novem Lectionum; alioquin in alia præcedenti die similiter non
+      # impedita, in qua fiat Officium de Feria, cum Commemoratione Festi Simplicis, si occurrat;
+      # et in ea legantur tres Lectiones de Homilia Dominicæ omissis Lectionibus Scripturæ illius Feriæ.
+      my $inum = $num + ($version =~ /Monastic/ ? 8 : 6);
+      $w{"Lectio$num"} = $w{"Lectio$inum"};
+      $w{"Lectio$num"} .= $w{"Lectio12"} if $inum == 11;
+      setbuild2("subst: Lectiones in I Nocturno de Homilia Dominicæ anticipiata") if $num == 1;
+      $homilyflag = 7;
+      $nocturn = 0;
     } elsif ($num < 3
       && $version =~ /196/
       && $rule =~ /scriptura1960/i
