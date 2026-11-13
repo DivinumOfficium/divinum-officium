@@ -267,14 +267,19 @@ sub psalmi_matutinum {
     if ($dayofweek == 0) {
       foreach my $i (1 .. 3) {
         ($psalmi[($i - 1) * 5 + 3], $psalmi[($i - 1) * 5 + 4]) = split("\n", $psalmi{"$name $i Versum"}, 2);
+        setbuild("Matutinum Versus", "$name $dayofweek Versum", "subst");
       }
-      if ($version =~ /1960/) { ($psalmi[13], $psalmi[14]) = ($psalmi[3], $psalmi[4]); }
+
+      if ($version =~ /1960/) {
+        ($psalmi[13], $psalmi[14]) = ($psalmi[3], $psalmi[4]);
+        setbuild2("subst: diverge 3rd Nocturn to 1st (rubrics 1960)");
+      }
     } else {
       my $i = $dayofweek;
       $i -= 3 if $i > 3;
       ($psalmi[13], $psalmi[14]) = split("\n", $psalmi{"$name $i Versum"}, 2);
+      setbuild("Matutinum Versus", "$name $dayofweek Versum", "subst");
     }
-    setbuild2("Subst Matutitunun Versus $name $dayofweek");
   }
 
   my ($w, $c) = getantmatutinum($lang);
