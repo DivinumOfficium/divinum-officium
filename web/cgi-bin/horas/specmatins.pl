@@ -1003,20 +1003,26 @@ sub lectio : ScriptFunc {
     my %com = (columnsel($lang)) ? %commune : %commune2;
     my $lecnum = "Lectio$num";
 
-    if ($rule =~ qr/in $nocturn Nocturno Lectiones ex (Commune|C\d+[a-z]*) in (\d+) loco/i) {
+    if ($rule =~ qr/in $nocturn Nocturno Lectiones ex (Commun[ei]|C\d+[a-z]*) in (\d+) loco/i) {
       my $loco = $2;
-      %com = %{setupstring($lang, subdirname('Commune', $version) . "$1.txt")} unless ($1 eq 'Commune');
+      %com = %{setupstring($lang, subdirname('Commune', $version) . "$1.txt")} unless ($1 =~ /^Commun[ei]$/i);
       $lecnum .= " in $loco loco" if $loco > 1;
       $lect = $com{$lecnum};
 
       if ($w && $num % ($rule =~ /12 lectiones/i ? 4 : 3) == 1) {
-        setbuild2("Lectio$num in $loco loco ex $com{Officium}");
+        my $comName = $com{'Officium'};
+        $comName =~ s/Commune/ex Communi/;
+        $comName =~ s/^In/ut in/;
+        setbuild2("Lectio$num in $loco loco $comName");
       }
     } elsif (exists($com{$lecnum})) {
       $lect = $com{$lecnum};
 
       if ($lect && $num % ($rule =~ /12 lectiones/i ? 4 : 3) == 1) {
-        setbuild2("Lectio$num ex $commune{Officium}");
+        my $comName = $commune{Officium};
+        $comName =~ s/Commune/ex Communi/;
+        $comName =~ s/^In/ut in/;
+        setbuild2("Lectio$num $comName");
       }
     }
 
@@ -1050,7 +1056,7 @@ sub lectio : ScriptFunc {
       $lect = lectiones_ex3_fiunt4(\%scrip, $num);
       setbuild2("Lectiones ex 3 fiunt 4") if $num == 1;
     } else {
-      setbuild2("Lectiones in I nocturno ex scriptura") if ($lect = $scrip{"Lectio$num"}) && $num == 1;
+      setbuild2("Lectiones in I nocturno de Scriptura occurrente") if ($lect = $scrip{"Lectio$num"}) && $num == 1;
     }
 
     # More elegent fix #3932 and also #5033/#5027:
@@ -1083,7 +1089,10 @@ sub lectio : ScriptFunc {
     $lect = $c{"Lectio$num"};
 
     if ($lect && $num % ($rule =~ /12 lectiones/i ? 4 : 3) == 1) {
-      setbuild2("Lectiones in " . "I" x $nocturn . " Nocturno ex $commune{Officium}");
+      my $comName = $commune{Officium};
+      $comName =~ s/Commune/ex Communi/;
+      $comName =~ s/^In/ut in/;
+      setbuild2("Lectiones in " . "I" x $nocturn . " Nocturno $comName");
     }
 
     if (contract_scripture($num)) {

@@ -528,7 +528,7 @@ sub occurrence {
       $c =~ s/\n//sg;
       my %communesname = split(',', $c);
       $commune =~ /^.*(C\d.*)\.txt/;
-      $officename[1] .= " $communetype $communesname{$1} [$commune]";
+      $officename[1] .= "\n$communetype $communesname{$1} [$commune]";
     }
 
     if ($winner =~ /01-12t/ && $hora =~ /laudes/i) {
@@ -685,7 +685,7 @@ sub occurrence {
       my $c = getdialog('communes');
       $c =~ s/\n//sg;
       my %communesname = split(',', $c);
-      $officename[1] .= " $communetype $communesname{$commune} [$commune]";
+      $officename[1] .= "\n$communetype $communesname{$commune} [$commune]";
     }
 
     if ($version =~ /1960/ && $vespera == 1 && $rank >= 6 && $comrank < 5) {

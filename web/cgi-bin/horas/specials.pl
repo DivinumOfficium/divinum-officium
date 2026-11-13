@@ -28,9 +28,10 @@ sub specials {
   if ($column == 1) {
     my $r = $w{Rule};
     $r =~ s/\s*$//;
-    $r =~ s/\n/ /sg;
-    $buildscript =
-      setfont($largefont, "$hora $date1") . "\n" . setfont($smallblack, "$dayname[1] ~ $dayname[2] : $r") . "\n";
+    $r =~ s/\n/ : /sg;
+    $r = ":: $r ::" if $r;
+    $buildscript = setfont($largefont, "$hora $date1") . "\n" . setfont($smallblack, "$dayname[1]") . "\n";
+    $buildscript .= setfont($smallblack, "$dayname[2]\n $r") . "\n" if $dayname[2];
   }
 
   my $i = $hora eq 'Laudes' ? ' 2' : $hora eq 'Vespera' ? " $vespera" : '';
