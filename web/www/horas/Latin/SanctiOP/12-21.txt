@@ -1,0 +1,28 @@
+@Sancti/12-21
+
+[Lectio1]
+@Tempora/Epi1-1
+
+[Lectio2]
+@Tempora/Epi1-1::1-4 s/-9/-8/
+
+[Lectio3]
+@Tempora/Epi1-1::1 s/10-13/9-11/
+@Tempora/Epi1-1:Lectio2:5
+@Tempora/Epi1-1::2-3
+
+[Lectio6]
+@Commune/C1:Lectio5:s/ Quales.*//
+
+[Lectio7]
+@Sancti/12-21::s/Quid, .* (?=Non)//
+
+[Lectio8]
+@Sancti/12-21::s/ Dicit.*//
+
+[Lectio9]
+@Sancti/12-21:Lectio8:s/.* (?=Dicit)// s/$/~/
+@Sancti/12-21::s/ Vidéndo.*//
+
+[Ant 3]
+O Thoma Dídyme, qui Christum meruísti tángere: te præcibus rogámus altísonis, succúrrre nobis míseris, ne damnémur cum ímpiis in advéntu Júdicis.
