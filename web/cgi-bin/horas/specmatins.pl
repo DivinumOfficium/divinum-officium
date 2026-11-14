@@ -726,6 +726,21 @@ sub getC10readingname {
   return sprintf("Lectio M%02i%s", $month, ($version =~ /1963/i) ? $satnum : '');
 }
 
+#*** tempora_lesson_last($homilyflag, $j0)
+# true if the office commemorated is of the Tempora and its homily is read as
+# the last lesson ($j0: the commemoration's lesson that holds the homily)
+sub tempora_lesson_last {
+  my ($homilyflag, $j0) = @_;
+
+       ($commemoratio =~ /tempora/i && $commemoratio !~ /Nat(29|30|31)/i || $commemoratio =~ /01\-05\./)
+    && ($homilyflag == 1 || exists($commemoratio{"Lectio$j0"}))
+    && $comrank > 1
+    && $version !~ /Cist/i
+    && ($rank > 4 || ($rank >= 3 && $version =~ /Trident/i) || $homilyflag == 1 || ($votive && $votive ne 'Hodie'));
+
+  #  || exists($commemoratio{Lectio1}) removed as it results in a wrong commemoration of Die infra 8vam (e.g., 2024-04-23)
+}
+
 #*** lectio($num, $lang)
 # input $num=index number for the lectio(1-9 or 1-3) and language
 # print the appropriate lectio collected from the winner or commune
@@ -1092,7 +1107,7 @@ sub lectio : ScriptFunc {
     && $num == 8
     && ($rule =~ /Contract8/i || $version =~ /Trident/i)
     && !exists($winner{Responsory9})
-    && (exists($winner{Lectio93}) || $homilyflag || (exists($commemoratio{Lectio7}) && $commeoratio =~ /tempora/i)))
+    && (exists($winner{Lectio93}) || $homilyflag || ($version !~ /Monastic/i && tempora_lesson_last($homilyflag, 7))))
   {
     if (exists($winner{Lectio8}) && exists($winner{Lectio9})) {
       my %win = (columnsel($lang)) ? %winner : %winner2;
@@ -1104,9 +1119,16 @@ sub lectio : ScriptFunc {
       setbuild2("ex Lectiones 8 et 9 fit una");
     } elsif (!exists($winner{Lectio8}) && exists($commune{Lectio8})) {
       my %com = (columnsel($lang)) ? %commune : %commune2;
-      $lect = $com{Lectio8};
+      my $loco = '';
+
+      # the third nocturn's lessons from the Common the rule names, as above
+      if ($rule =~ qr/in 3 Nocturno Lectiones ex (Commune|C\d+[a-z]*) in (\d+) loco/i) {
+        %com = %{setupstring($lang, subdirname('Commune', $version) . "$1.txt")} unless ($1 eq 'Commune');
+        $loco = " in $2 loco" if $2 > 1;
+      }
+      $lect = $com{"Lectio8$loco"};
       $lect .= "\n\$rubrica NonaAdjuncta\n\/:«" unless $rule =~ /Contract8/i;
-      $lect .= $com{Lectio9};
+      $lect .= $com{"Lectio9$loco"};
       $lect =~ s/\&teDeum\n*//g;
       $lect =~ s/\s+$/»:\//s unless $rule =~ /Contract8/i;
       setbuild2("ex Lectiones 8 et 9 fit una");
@@ -1166,14 +1188,7 @@ sub lectio : ScriptFunc {
 
     $j0 = $homilyflag ? 1 : ($num == 12) ? 9 : 7;    # where to look for Homily
 
-    if ( ($commemoratio =~ /tempora/i && $commemoratio !~ /Nat(29|30|31)/i || $commemoratio =~ /01\-05\./)
-      && ($homilyflag == 1 || exists($commemoratio{"Lectio$j0"}))
-      && $comrank > 1
-      && $version !~ /Cist/i
-      && ($rank > 4 || ($rank >= 3 && $version =~ /Trident/i) || $homilyflag == 1 || ($votive && $votive ne 'Hodie')))
-
-      #  || exists($commemoratio{Lectio1}) removed as it results in a wrong commemoration of Die infra 8vam (e.g., 2024-04-23)
-    {
+    if (tempora_lesson_last($homilyflag, $j0)) {
       %w = (columnsel($lang)) ? %commemoratio : %commemoratio2;
       $lect_commem = $w{"Lectio$j0"};
 
