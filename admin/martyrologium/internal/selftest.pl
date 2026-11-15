@@ -289,6 +289,100 @@ testlang Bernardi romano more
 testlang Bernardi cisterciensi more
 EOT
 
+# A blank section means two things by where it stands.  Qualified for a
+# version, it says that version's book has nothing here: nothing printed,
+# nothing borrowed.  Plain, beside an older book's wording, it marks a
+# translation owed: later versions read the older wording meanwhile.
+w('Latin/Martyrologium/05-08.txt', <<'EOT');
+[Titulus]
+Octavo Idus Maii
+
+[Martyrologium]
+@:Annuntiatum
+
+@:Silens
+
+@:Vetus
+
+@:Ordinarium
+
+[Annuntiatum]
+latine annuntiatum
+
+[Silens]
+latine silens
+
+[Vetus]
+latine vetus
+
+[Ordinarium]
+latine ordinarium
+EOT
+
+w('Testlang/Martyrologium/05-08.txt', <<'EOT');
+[Titulus]
+@:Annuntiatum
+upon the same day, were born
+
+[Annuntiatum]
+testlang announced
+
+[Annuntiatum] (rubrica 1906)
+
+[Silens]
+testlang silent in 1906
+
+[Silens] (rubrica 1906)
+
+[Vetus]
+
+[Vetus] (rubrica 1906)
+testlang older wording
+
+[Ordinarium]
+testlang ordinarium
+EOT
+
+# A local calendar the Latin does not carry: the language's own sections
+# under a dioecesis condition, with no key in the Latin.  They go where the
+# language's file puts them, and a title may call one.
+w('Latin/Martyrologium/05-09.txt', <<'EOT');
+[Titulus]
+Septimo Idus Maii
+
+[Martyrologium]
+@:Primus
+
+@:Secundus
+
+[Primus]
+latine primus
+
+[Secundus]
+latine secundus
+EOT
+
+w('Testlang/Martyrologium/05-09.txt', <<'EOT');
+[Titulus]
+@:Localis-Festum
+upon the same day, were born
+
+[Localis-Festum] (dioecesis Testlandiae)
+testlang local feast
+
+[Primus]
+testlang primus
+
+[Localis] (dioecesis Testlandiae)
+testlang local entry
+
+[Secundus]
+testlang secundus
+
+[Cisterciensis-Solus] (rubrica Cisterciensis)
+testlang cistercian only
+EOT
+
 my ($pass, $fail) = (0, 0);
 
 sub render {
@@ -460,6 +554,52 @@ is(
   [render('Testlang', '05-07', 'Rubrics 1960 - 1960')],
   'upon the same day, were born | _ | testlang ordinary',
   'and a version that has it not keeps the rest of its title',
+);
+
+print "a local calendar the Latin does not carry\n";
+is(
+  [render('Testlang', '05-09', 'Rubrics 1960 - 1960')],
+  'testlang local feast | upon the same day, were born | _ | testlang primus | testlang local entry | testlang secundus',
+  'a diocese the settings do not offer is said on the general calendar, where the file puts it',
+);
+{
+  local $main::dioecesis = 'Monacensis';
+  is(
+    [render('Testlang', '05-09', 'Rubrics 1960 - 1960')],
+    'upon the same day, were born | _ | testlang primus | testlang secundus',
+    'and not for a reader of another diocese',
+  );
+}
+is(
+  [render('Latin', '05-09', 'Rubrics 1960 - 1960')],
+  'Septimo Idus Maii | _ | latine primus | latine secundus',
+  'the Latin knows nothing of it',
+);
+is(
+  [grep {/cistercian only/} render('Testlang', '05-09', 'Monastic Tridentinum Cisterciensis 1951')],
+  'testlang cistercian only',
+  'a Cistercian entry the Roman Latin does not carry is said in the Cistercian book',
+);
+is(
+  [grep {/cistercian only/} render('Testlang', '05-09', 'Rubrics 1960 - 1960')],
+  '', 'and in no other',
+);
+
+print "a blank section\n";
+is(
+  [render('Testlang', '05-08', 'Divino Afflatu')],
+  'testlang announced | upon the same day, were born | _ | testlang silent in 1906 | testlang older wording | testlang ordinarium',
+  'plain beside an older wording: a later version reads the older wording',
+);
+is(
+  [render('Testlang', '05-08', 'Tridentine - 1906')],
+  'upon the same day, were born | _ | testlang older wording | testlang ordinarium',
+  'qualified for this version: nothing is said, in the title or below it',
+);
+is(
+  [render('Testother', '05-08', 'Tridentine - 1906')],
+  'upon the same day, were born | _ | testlang older wording | testlang ordinarium',
+  'and nothing is borrowed for it from a fallback either',
 );
 
 # The tools read the same files, and a version's wording sits in a section
