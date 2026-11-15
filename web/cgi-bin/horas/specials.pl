@@ -335,7 +335,7 @@ sub specials {
           push(@s, '$ant Salve Regina');
         }
       }
-      push(@s, '&Divinum_auxilium');
+      push(@s, '&Divinum_auxilium') unless $version =~ /^Ordo Praedicatorum/;
       next;
     }
 
