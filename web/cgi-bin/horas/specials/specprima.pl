@@ -242,18 +242,20 @@ sub martyrologium_elogia {
   my $plain = $lang =~ /^Latin/i && $version =~ /1570/;
 
   my @index = grep {/\S/} split(/\n/, $s->{Martyrologium});
-  my @lines = _heading($s, $lang, $mmdd, $plain, \@index);
+  my $local = _elogia_local($lang, $mmdd);
+  my @lines = _heading($s, $lang, $mmdd, $plain, \@index, $local);
 
   # blank lines only keep the conditionals in the index apart; a line that
   # is not a reference is text in its own right, which is how the chant
   # books carry a day whose elogia cannot be told apart
-  my @entries;
+  my @entries;    # [key, lines...]
 
   foreach my $line (@index) {
     unless (substr($line, 0, 1) eq '@') {
-      push @entries, _elogia_lines($line, $plain);
+      push @entries, [undef, _elogia_lines($line, $plain)];
       next;
     }
+    my ($key) = $line =~ m{^\@(?:Martyrologium/$mmdd)?:(\S+?)\s*$};
     my $text = _elogia_entry($s, $lang, $mmdd, $line);
 
     # A language whose book says this entry inside another one keeps a
@@ -262,8 +264,30 @@ sub martyrologium_elogia {
     # pointing at an entry this version has not got is no note at all,
     # and is passed over in silence rather than printed.
     next if defined $text && $text =~ /^\s*\@\S+\s*$/;
-    push @entries, _elogia_lines($text, $plain);
+    push @entries, [$key, _elogia_lines($text, $plain)];
   }
+
+  # an entry of a local calendar the Latin does not carry goes after the
+  # entry it follows in the language's own file, or at the head of the day
+  # when nothing the day prints comes before it there
+  if (%$local) {
+    my @order = @{_elogia_order($lang, $mmdd)};
+
+    foreach my $i (0 .. $#order) {
+      next unless exists $local->{$order[$i]};
+      my $pos = 0;
+
+    ABOVE: foreach my $above (reverse @order[0 .. $i - 1]) {
+        foreach my $e (0 .. $#entries) {
+          next unless defined $entries[$e][0] && $entries[$e][0] eq $above;
+          $pos = $e + 1;
+          last ABOVE;
+        }
+      }
+      splice(@entries, $pos, 0, [$order[$i], _elogia_lines($local->{$order[$i]}, $plain)]);
+    }
+  }
+  @entries = map { my @l = @$_; shift @l; @l } @entries;
   return @lines unless @entries;
 
   # and it can leave the day without a title: a title that says 'upon the
@@ -280,6 +304,24 @@ sub martyrologium_elogia {
   return (@lines, @entries);
 }
 
+#*** _dioecesis_offered()
+# The dioceses the settings offer, by lower-case name, from the menu in
+# horas.dialog.
+my $_dioecesis_offered;
+
+sub _dioecesis_offered {
+  return $_dioecesis_offered if $_dioecesis_offered;
+  our $datafolder;
+  my (%offered, $in);
+
+  foreach my $line (eval { do_read("$datafolder/horas.dialog") }) {
+    if ($line =~ /^\s*\[(.*)\]\s*$/) { $in = $1 eq 'dioecesis'; next }
+    next unless $in && $line =~ /\S/;
+    $offered{lc((split m{/}, $_)[-1] =~ s/^\s+|\s+$//gr)} = 1 foreach split /,/, $line;
+  }
+  return $_dioecesis_offered = \%offered;
+}
+
 #*** _heading($sections, $lang, $mmdd, $plain, \@index)
 # The day's title, which may call for entries by name.
 #
@@ -294,7 +336,7 @@ sub martyrologium_elogia {
 # @index is emptied of whatever the title took, so that nothing is said
 # twice.
 sub _heading {
-  my ($s, $lang, $mmdd, $plain, $index) = @_;
+  my ($s, $lang, $mmdd, $plain, $index, $local) = @_;
   my @title = split(/\n/, $s->{Titulus} // '');
   my @out;
   my $at = 0;    # how far into the index the title has eaten
@@ -309,6 +351,14 @@ sub _heading {
     # same full form, so the one is found by the other.
     (my $want = $line) =~ s/\s+$//;
     my ($where) = grep { ($index->[$_] =~ s/\s+$//r) eq $want } $at .. $#$index;
+
+    # an entry of a local calendar the Latin does not carry is announced
+    # from the language's own file, while its calendar holds
+    unless (defined $where) {
+      my ($day, $key) = $want =~ m{^\@(?:Martyrologium/(\d\d-\d\d))?:(\S+)$};
+      push @out, _elogia_lines(delete $local->{$key}, $plain)
+        if $local && defined $key && ($day // $mmdd) eq $mmdd && exists $local->{$key};
+    }
 
     # a version that has not the entry at all has no feast to announce,
     # and the rest of the title stands without the announcement
@@ -422,6 +472,11 @@ sub _elogia_own_first {
     my @all = @{_elogia_own($layer, $mmdd)->{$key} || []};
     next unless @all;
 
+    # A section left blank for this very book says that its book has
+    # nothing here, though the Latin has: nothing is printed, and nothing
+    # is borrowed from the plain section or another language to fill it.
+    return undef if grep { $_->[0] ne '' && !defined $_->[1] && vero($_->[0]) } @all;
+
     # the wordings this version reads.  When there is none:
     #
     # A plain section left blank beside wordings qualified for an older
@@ -522,7 +577,7 @@ sub _elogia_latin_says {
   return defined $text && $text =~ /\S/ && $text !~ /^\s*\@\S+\s*$/;
 }
 
-my %_own_cache;
+my (%_own_cache, %_own_order);
 
 #*** _elogia_own($lang, $mmdd)
 # {key => [[condition, wording], ...]} for every wording this language's own
@@ -552,6 +607,7 @@ sub _elogia_own {
       if ($line =~ /^\s*\[([^\]]+)\]\s*(?:\((.*)\))?/) {
         $flush->();
         $key = $1;
+        push @{$_own_order{$id}}, $key unless grep { $_ eq $key } @{$_own_order{$id} || []};
         $cond = $2 // '';
         @buf = ();
       } elsif (defined $key) {
@@ -561,6 +617,53 @@ sub _elogia_own {
     $flush->();
   }
   return $_own_cache{$id} = \%own;
+}
+
+#*** _elogia_order($lang, $mmdd)
+# The keys of a language's day file, in the order the file has them.
+sub _elogia_order {
+  my ($lang, $mmdd) = @_;
+  _elogia_own($lang, $mmdd);
+  return $_own_order{"$lang\0$mmdd"} || [];
+}
+
+#*** _elogia_local($lang, $mmdd)
+# A language's entries that the Roman Latin does not carry: its own
+# sections for a key the Latin index of the day never names, under a
+# dioecesis condition (a local calendar) or a Cisterciensis one (the
+# Cistercian martyrology, whose Latin is not here).  The ones whose
+# condition holds, by key.
+#
+# A diocese the settings do not offer yet has no reader of its own, so
+# until it is offered the general calendar says its entries: on the
+# general calendar its name is read as the general calendar's.
+sub _elogia_local {
+  my ($lang, $mmdd) = @_;
+  return {} if $lang =~ /^Latin/i;
+  our $dioecesis;
+  my $here = $dioecesis || 'Generale';
+  local $dioecesis = $here;
+  my $offered = _dioecesis_offered();
+  my %latin;
+
+  foreach my $sec (@{_elogia_own('Latin', $mmdd)->{Martyrologium} || []}) {
+    my $text = $sec->[1] // '';
+    $latin{$1} = 1 while $text =~ /^\@:(\S+?)\s*$/mg;
+  }
+  my $own = _elogia_own($lang, $mmdd);
+  my %local;
+
+  foreach my $key (keys %$own) {
+    next if $latin{$key};
+    my ($hit) = grep {
+      defined $_->[1] && $_->[0] =~ /\b(?:dioecesis|Cisterciensis)\b/i && vero(
+        $_->[0] =~ s{\bdioecesis\s+(\w+)}{
+          $offered->{lc $1} || $dioecesis ne 'Generale' ? "dioecesis $1" : 'dioecesis Generale'
+        }gier)
+    } @{$own->{$key}};
+    $local{$key} = $hit->[1] if $hit;
+  }
+  return \%local;
 }
 
 # a section's lines, without the '=' that escapes a structural one, and

@@ -232,39 +232,6 @@ for my $v (@versions) {
 # it is right that Divino Afflatu no longer shows it.  What must not
 # happen is an entry that no version can reach, which means its key does
 # not exist in the Latin index at all.
-#*** dropped()
-# The text of every entry latin-todo.txt says the schema does not carry.
-#
-# Those keep their text in the language that prints them and no longer
-# render, because the Latin index decides what renders and they have no
-# key in it.  They are the printed books' own furniture: a calendar
-# line, a date heading, a leader-dot; so the flat file they came from
-# still has them and this check has to know they are gone on purpose.
-sub dropped {
-  my @langs = @_;
-  my %out;
-  my $todo = "$FindBin::Bin/latin-todo.txt";
-  return %out unless -e $todo;
-
-  foreach my $line (do_read("$todo")) {
-    next unless $line =~ /^-\s*(\d\d-\d\d)\s+(\S+)/;
-    my ($day, $key) = ($1, $2);
-
-    foreach my $lang (@langs) {
-      my $f = "$datafolder/$lang/Martyrologium/$day.txt";
-      next unless -e $f;
-      my ($in_section, @body);
-
-      foreach my $l (do_read($f)) {
-        if ($l =~ /^\[([^\]]+)\]/) { $in_section = ($1 eq $key); next }
-        push @body, $l if $in_section;
-      }
-      $out{$lang}{norm($_)} = 1 foreach grep {/\S/} @body;
-    }
-  }
-  return %out;
-}
-
 my @langs;
 opendir(my $root, $datafolder) or die "cannot read $datafolder";
 
@@ -273,8 +240,6 @@ for my $name (sort readdir $root) {
   push @langs, $name if -d "$legacy/$name/Martyrologium";
 }
 closedir $root;
-my %dropped = dropped(@langs);
-
 for my $lang (@langs) {
   my $lost = 0;
 
@@ -298,7 +263,6 @@ for my $lang (@langs) {
       # a heading line the renderer rewords when nothing above it is the
       # same day it speaks of (_unsame in specprima.pl)
       next if $new{norm(main::_unsame($raw, $lang))};
-      next if $dropped{$lang}{$line};
       next if covered($line, \%new);
       next if in_rubric($line, \%new);
       $lost++;
