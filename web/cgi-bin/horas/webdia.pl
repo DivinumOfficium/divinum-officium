@@ -990,18 +990,9 @@ sub html_dayhead {
   }
 
   if ($subhead) {
-    my ($pre, $main) = split(/: /, $subhead, 2);           # Split the pre-position from office title
-    my ($main, $vespera) = split(/\<br\/\>/, $main, 2);    # Split any Vespers information
-    $main =~ s/\(Scriptura ut in\: (.*)\)//;               # Save any Scripture transfer information
-    my $scripturaUt = $1;
+    my ($pre, $main) = split(/: /, $subhead, 2);    # Split the pre-position from office title
     $output .= "<br/>\n<I><SPAN STYLE=\"font-size:82%;\"><SPAN STYLE=\"color:maroon;\">$pre";
     $output .= ":</SPAN> " . setfont(liturgical_color($main, ''), $main) if $main;
-    $output .=
-      "<br/><SPAN STYLE=\"color:maroon;\">Scriptura ut in <\SPAN>"
-      . setfont(liturgical_color($scripturaUt, ''), $scripturaUt)
-      if $scripturaUt && $hora eq 'Matutinum';
-
-    #    $output .= "<br/><SPAN STYLE=\"color:maroon;\">$vesperOrdo<\SPAN>" if $vesperOrdo;
     $output .= "</SPAN></I>\n";
   }
 
