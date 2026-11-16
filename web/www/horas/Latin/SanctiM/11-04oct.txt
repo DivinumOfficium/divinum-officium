@@ -1,0 +1,48 @@
+@Sancti/11-04oct
+
+[Rule]
+@Sancti/11-04oct:: s/9 lect/3 lect/
+
+[Ant Matutinum_]
+@Sancti/11-01:Ant Matutinum:4 s/;;\d+//
+;;
+;;
+;;
+;;
+;;
+@Sancti/11-01:Ant Matutinum:5 s/;;\d+//
+;;
+;;
+;;
+;;
+;;
+
+[Ant Matutinum]
+@:Ant Matutinum_
+(sed feria 2 aut feria 3)
+@SanctiM/11-03oct
+
+[Lectio1]
+De Sermóne sancti Bedæ Venerábilis Presbýteri
+!Ex eadem Homilia 70
+(sed rubrica tridentina)
+!Ex Sermone 18. de Sanctis.
+De Rege autem, qui horum médius résidet, dicere, vox nulla suffcit: éffugit enim omnem sermónem, atque omnem sensum humána mentis excédit decus illud, illa pulchritúdo, illa virtus, illa glória, illa magnificéntia, illa majéstas. Ultra enim omnem Sanctórum est glóriam, ipsíus inæstimábilem adipísci conspectum, et splendore majestátis ejus irradiári. Sic enim quotídie oportéret nos torménta perférre, sic ipsam gehénnam parvo témpore toleráre, ut Christum vidére digni essémus in gloria veniéntem, et Sanctórum ejus número sociári.Nonhe erat dignum pati omne, quod triste est, ut tanti boni tantæque glóriæ partícipes haberémur?
+
+[Responsory1]
+@SanctiM/11-02oct
+
+[Lectio2]
+Quæ erit illa, fratres caríssimi, justórum glória, quam grandis Sanctórum lætítia, cum unaquæque fácies fulgébit ut sol, cum, ordínibus distínctis, pópulum suum Dóminus in regno Patris sui coperit recensére, et méritis atque opéribus singulórum præmia promíssa restitúere; pro terrénis cæléstia, pro temporálibus sempitérna, pro módicis magna præstáre; addúcere Sanctos in visiónem patérnæ glóriæ, et fácere in cæléstibus consedére, ut sit Deus ómnia in ómnibus; aternitatémque amatóribus suis et immortalitátem largiri; atque eos, quos sânguinis sui vivificatióne reparávit, dénuo ad paradísum redúcere; regna cælórum fide et veritáte suæ pollicitatiónis aperíre?
+
+[Responsory2]
+@SanctiM/11-02oct
+
+[Lectio3]
+Hæc hæreant fírmiter sénsibus nostris, hæc intelligantur plena fide, hæc toto corde diligántur, hæc indesinéntium óperum magnanimitáte acquirántur. Res pósita est in potestáte faciéntis, quia regnum calórum vim pátitur. Res ista, o homo, id est, regnum cæleste, allud non quærit pretium, nisi teípsum; tantum valet, quantum es tu: te da, et habébis illud. Quid turbáris de prétio? Christus semetípsum trádidit, ut acquíreret te in regnum Deo Patri: ita et tu teípsum da, ut sis regnum ejus, ac non regnet peccátum in mortali tuo córpore, sed spíritus in acquisitiónem vitæ.
+
+[Responsory3]
+@SanctiM/11-02oct
+
+[MM Capitulum]
+@CommuneM/C3
