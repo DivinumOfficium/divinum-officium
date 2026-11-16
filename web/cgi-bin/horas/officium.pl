@@ -204,7 +204,7 @@ if ( $date1 eq gettoday()
 
 # prepare title
 my $dayhead = setheadline();
-my $html_dayhead = html_dayhead($dayhead, $dayname[2]);
+my $html_dayhead = html_dayhead($dayhead, $dayname[2], $dayname[3]);
 
 if ($command =~ /kalendar/) {    # kalendar widget
   print "Access-Control-Allow-Origin: *\n";

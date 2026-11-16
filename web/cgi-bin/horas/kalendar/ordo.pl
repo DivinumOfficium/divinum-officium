@@ -114,8 +114,11 @@ sub ordo_entry {
   $hora = 'Vespera';
   concurrence($day, $month, $year, $version, $dioecesis);    # Replacing precedence()
   $hora = $temphora;
-  my $cv = $dayname[2];
-  $cv =~ s/.*?(Vespera|A capitulo|$)/$1/;
+  my $cv = $dayname[3];
+  $cv =~ s/.*?(A capitulo)/Vespera \l$1/;
+  $cv =~ s/.*?(Vespera|$)/$1/;
+  $cv =~ s/(era|itulo|uenti|memoratio|edenti|urente|ore|icio)/./gs;
+  $cv = setfont('1 maroon', $cv);
 
   if ($compare) {
     $c2 ||= '_';

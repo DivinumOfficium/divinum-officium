@@ -1017,7 +1017,7 @@ sub concurrence {
       && $version !~ /1955|196/
     ) {
       $vespera = 3;
-      $dayname[2] = $tomorrowname[2] . "<br/>Vespera de Officio occurente, Commemoratio Sanctorum crastinorum tantum";
+      $dayname[3] = $tomorrowname[3] = "Vespera de Officio occurente, Commemoratio Sanctorum crastinorum tantum";
       $cwrank = '';
       $ctname = '';
       %cwinner = {};
@@ -1031,9 +1031,9 @@ sub concurrence {
       $vespera = 3;
 
       if ($sanctoraloffice) {
-        $dayname[2] .= "<br/>Vespera de Officio occurente; nihil de sequenti";
+        $dayname[3] = "Vespera de Officio occurente; nihil de sequenti";
       } else {
-        $dayname[2] .= "<br/>Vespera de Tempore occurente; nihil de sequenti";
+        $dayname[3] = "Vespera de Tempore occurente; nihil de sequenti";
       }
       $cwrank = '';
       $csname = '';
@@ -1050,9 +1050,9 @@ sub concurrence {
         || ($comrank >= 2.1 && $dayname[2] !~ /ad Laudes|Rogatio/i);
 
       if ($sanctoraloffice) {
-        $dayname[2] .= "<br/>Vespera de Officio occurente" unless $version =~ /1955|196/;
+        $dayname[3] = "Vespera de Officio occurente" unless $version =~ /1955|196/;
       } else {
-        $dayname[2] .= "<br/>Vespera de Tempore occurente" unless $version =~ /1955|196/;
+        $dayname[3] = "Vespera de Tempore occurente" unless $version =~ /1955|196/;
       }
       $cwrank = '';
       $ctname = '';
@@ -1076,9 +1076,9 @@ sub concurrence {
 
         # Unless the next day is a genuine Duplex I. classis feast, Semiduplex saints get commemorated
         my $hodie = $comrank >= $ccomrank ? 'hodiernorum tantum' : 'tantum';
-        $tomorrowname[2] = $dayname[2] .= "<br/>Vespera de sequenti; Commemoratio Sanctorum $hodie";
+        $tomorrowname[3] = $dayname[3] = "Vespera de sequenti; Commemoratio Sanctorum $hodie";
       } else {
-        $tomorrowname[2] .= "<br/>Vespera de sequenti.";
+        $tomorrowname[3] = "Vespera de sequenti.";
         @commemoentries = ();
         $commemoratio = '';
       }
@@ -1091,7 +1091,7 @@ sub concurrence {
     } else {
       $vespera = 3;
       $tvesp = 3;
-      $dayname[2] .= "<br/>Vespera de Tempore præcedenti; nihil de sequenti";
+      $dayname[3] = "Vespera de Tempore præcedenti; nihil de sequenti";
       $ctrank = '';
       $ctname = '';
       %cwinner = {};
@@ -1153,7 +1153,7 @@ sub concurrence {
       # no commemoration of Precious Blood on the Feast of the Sacred Heart: Github #4586
       || ($winner =~ /Pent02-5/ && $cwinner =~ /07-01\./)
     ) {
-      $dayname[2] .= "<br/>Vespera de præcedenti; nihil de sequenti";
+      $dayname[3] = "Vespera de præcedenti; nihil de sequenti";
       $cwinner = '';
       %cwinner = ();
       $vespera = 3;
@@ -1200,9 +1200,9 @@ sub concurrence {
         # privilidged Feria, Dominica, or infra 8vam only
         # except for Saturdays at 1st Vespers of the Sunday
         # no Commemoration of the Octaves of Ssmi Corporis and Ssmi Cordis on Precious Blood #4586
-        $dayname[2] .= "<br/>Vespera de sequenti; commemoratio de off. priv. tantum";
+        $dayname[3] = "Vespera de sequenti; commemoratio de off. priv. tantum";
       } else {
-        $dayname[2] .= "<br/>Vespera de sequenti; nihil de præcedenti";
+        $dayname[3] = "Vespera de sequenti; nihil de præcedenti";
         $commemoratio = '';
         $comrank = 0;
         @commemoentries = ();
@@ -1228,7 +1228,7 @@ sub concurrence {
       $winner = $cwinner;
       $cwinner = $commemoratio;
       @dayname = @tomorrowname;
-      $dayname[2] .= "<br/>Vespera de sequenti; commemoratio de præcedenti Dominica";
+      $dayname[3] = "Vespera de sequenti; commemoratio de præcedenti Dominica";
       $rank = $crank;
       $commune = $ccommune;
       $communetype = $ccommunetype;
@@ -1248,7 +1248,7 @@ sub concurrence {
       $cvespera = 1;
       $commemoratio = $cwinner;
       $dayname[2] = "Commemoratio: $cwrank[0]";
-      $dayname[2] .= "<br/>Vespera de præcedenti; commemoratio de sequenti";
+      $dayname[3] = "Vespera de præcedenti; commemoratio de sequenti";
       $dayname[2] .= " Dominica" if $cwinner{Rank} =~ /Dominica/i;
     } elsif ($flcrank == $flrank) {    # "flattend ranks" are equal => a capitulo
       $commemoratio = $winner;
@@ -1295,7 +1295,7 @@ sub concurrence {
       $rank = $crank;
       $commune = $ccommune;
       $communetype = $ccommunetype;
-      $dayname[2] .= "<br/>A capitulo de sequenti; commemoratio de præcedenti";
+      $dayname[3] = "A capitulo de sequenti; commemoratio de præcedenti";
     } elsif ($crank > $rank) {    # tommorow is outranking today
       $vespera = 1;
       $commemoratio = $winner;
@@ -1307,13 +1307,13 @@ sub concurrence {
       $rank = $crank;
       $commune = $ccommune;
       $communetype = $ccommunetype;
-      $dayname[2] .= "<br/>Vespera de sequenti; commemoratio de præcedenti";
+      $dayname[3] = "Vespera de sequenti; commemoratio de præcedenti";
     } else {                      # today is outranking tomorrow
       $commemoratio = $cwinner;
       $dayname[2] = "Commemoratio: $cwrank[0]";
       $vespera = 3;
       $cvespera = 1;
-      $dayname[2] .= "<br/>Vespera de præcedenti; commemoratio de sequenti";
+      $dayname[3] = "Vespera de præcedenti; commemoratio de sequenti";
 
       if ( $cwinner{Rank} =~ /infra octavam (.*?)\;|post Octavam Asc|Vigilia Pent/i
         || $ccommemoentries[0] =~ /infra octavam (.*?)\;|post Octavam Asc|Vigilia Pent/i)
@@ -1337,9 +1337,7 @@ sub concurrence {
     }
   }
 
-  if ($hora =~ /completorium/i) {
-    $dayname[2] = '';
-  }
+  $dayname[3] = $dayname[2] = '' if $hora =~ /completorium/i;
 
   ### Restrict commemoration according to the respective rubrics
   if ($vespera == 3) {    # We have 2nd Vespers:
@@ -1740,9 +1738,9 @@ sub precedence {
   if ($scriptura) {
     %scriptura = %{officestring($lang1, $scriptura)};
 
-    if (!$dayname[2] && $scriptura !~ /Nat0[12345]/) {
-      $dayname[2] = "Scriptura: $scriptura{Rank}  $scriptura";
-      $dayname[2] =~ s/;;.*//s;
+    if (!$dayname[2] && !$dayname[3] && $scriptura !~ /Nat0[12345]/) {
+      $dayname[3] = "Scriptura: $scriptura{Rank}  $scriptura";
+      $dayname[3] =~ s/;;.*//s;
     }
   }
 
