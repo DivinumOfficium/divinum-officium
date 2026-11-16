@@ -1,6 +1,6 @@
 # Martyrologium
 
-Each elogium is stored once, under a key. The Latin file for a day lists
+Each Martyrologium is stored once, under a key. The Latin file for a day lists
 which entries the day has and in what order; every language uses the same
 keys, so the columns line up entry for entry and a version rule like
 "1960 drops this one" is written once instead of once per language.
