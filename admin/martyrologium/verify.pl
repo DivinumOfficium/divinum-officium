@@ -240,6 +240,7 @@ for my $name (sort readdir $root) {
   push @langs, $name if -d "$legacy/$name/Martyrologium";
 }
 closedir $root;
+
 for my $lang (@langs) {
   my $lost = 0;
 

@@ -640,6 +640,7 @@ sub _elogia_order {
 sub _elogia_local {
   my ($lang, $mmdd) = @_;
   return {} if $lang =~ /^Latin/i;
+
   our $dioecesis;
   my $here = $dioecesis || 'Generale';
   local $dioecesis = $here;
@@ -659,7 +660,8 @@ sub _elogia_local {
       defined $_->[1] && $_->[0] =~ /\b(?:dioecesis|Cisterciensis)\b/i && vero(
         $_->[0] =~ s{\bdioecesis\s+(\w+)}{
           $offered->{lc $1} || $dioecesis ne 'Generale' ? "dioecesis $1" : 'dioecesis Generale'
-        }gier)
+        }gier
+      )
     } @{$own->{$key}};
     $local{$key} = $hit->[1] if $hit;
   }
