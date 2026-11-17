@@ -1,6 +1,11 @@
 [Officium]
 Officium parvum Beatae Mariae Virginis
 
+[Oratio 1]
+@Commune/C11:Oratio:s/^/v. /
+(sed rubrica cisterciensis)
+@Commune/C11:Oratio:s/^/v. / s/$/~/m s/Per Dominum/Per Christum\n\$Amen/
+
 [Commemoratio]
 !Conmemoración de los Santos
 Ant. Santos todos del Señor, dignaos interceder por nuestra salvación y por la de todos los hombres.
