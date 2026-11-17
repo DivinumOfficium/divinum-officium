@@ -9,6 +9,11 @@ $Per Dominum
 Te suplicamos, omnipotente Dios, que el bienaventurado Apóstol N., cuya festividad prevenimos, implore tu auxilio en favor nuestro, de suerte que, libres de nuestras culpas, también nos veamos exentos de todos los peligros.
 $Per Dominum
 
+[Oratio]
+@:Oratio 1 loco
+(sed commune C4)
+@:Oratio 2 loco
+
 [Oratio pro Evangelistae]
 @:Oratio 1 loco:s/(Apóstol)/$1 y Evangelista/
 
@@ -27,10 +32,31 @@ Los preceptos del Señor son muchos, y no hay más que uno: muchos por la divers
 [Lectio3]
 Estos aman al prójimo, sí, pero, con todo, no consiguen aquellos premios sublimes de la caridad, porque el amor no lo ejercitan espiritualmente sino según la carne. Por lo cual, tras haber dicho el Señor: Este es mi precepto, que os améis lo unos a los otros; luego añadió: Como Yo os he amado. Como si dijera terminantemente: Amad con este mismo fin por el que Yo os he amado. En lo cual, debemos considerar atentamente, que el enemigo antiguo, procurando atraer nuestro pensamiento al amor de las cosas temporales, se sirve para nuestro mal de lo más débil que hay en las criaturas, tratando de arrebatarnos el bien que nosotros amamos.
 
+[Introitus]
+!Ps 51:10-11
+v. Mas yo, como oliva fructífera en la casa de Dios, esperé en la misericordia de mi Dios; y aguardaré tu nombre, porque es bueno ante tus santos.
+!Ps 51:3
+¿Por qué te glorías en la maldad, tú que eres poderoso en la iniquidad?
+&Gloria
+v. Mas yo, como oliva fructífera en la casa de Dios, esperé en la misericordia de mi Dios; y aguardaré tu nombre, porque es bueno ante tus santos.
+
+[Lectio]
+!Eccli 44:25-27; 45:2-4; 45:6-9
+
+[Graduale]
+!Ps 91:13-14
+El justo crece como la palma; y cual cedro del Líbano se eleva en la casa del Señor.
+!Ps 91:3
+V. Para anunciar por la mañana tu misericordia, y tu verdad por la noche.
+
 [Evangelium]
 Continuación ++ del Santo Evangelio según San Juan
 !Juan 15:12-16
 En aquel tiempo: Dijo Jesús a sus discípulos: El precepto mío es que os améis unos a otros, como yo os he amado. Nadie tiene amor más grande, que el que da su vida por sus amigos. Vosotros seréis mis amigos, si hacéis lo que yo os mando. Ya no os llamaré siervos, pues el siervo no sabe lo que hace su amo; os he llamado amigos porque os he hecho saber cuánto oí de mi Padre. No me habéis elegido vosotros a mí, sino que yo os he elegido y destinado para que vayáis y deis fruto, y vuestro fruto sea duradero, a fin de que cualquiera cosa que pidáis al Padre en mi nombre, os la conceda.
+
+[Offertorium]
+!Ps 8:6-7
+Le has coronado de gloria y de esplendor, y le has constituido sobre las obras de tus manos, Señor.
 
 [Secreta]
 Ofreciéndote estos sagrados misterios con reverencia de la alta dignidad del Apostolado, te rogamos, Señor, que por las oraciones del bienaventurado N., tu Apóstol, cuya fiesta prevenimos, pueda tu pueblo exponerte sus deseos y lograr lo que busca.
@@ -38,6 +64,10 @@ $Per Dominum
 
 [Secreta pro Evangelistae]
 @:Secreta:s/(Apóstol)/$1 y Evangelista/
+
+[Communio]
+!Ps 20:6
+Grande es su gloria, merced a tu protección; le rodeas de esplendor y de magnificencia, oh Señor.
 
 [Postcommunio]
 Te suplicamos, Señor, que por la intervención del apóstol san N., los misterios celebrados hoy en honor suyo nos aprovechen para remedio de nuestros males.
