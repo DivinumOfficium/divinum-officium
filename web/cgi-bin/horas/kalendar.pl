@@ -154,9 +154,6 @@ sub kalendar_table {
   } else {
     $output .= "<TR><TH>Dies</TH><TH>de Tempore</TH><TH>Sanctorum</TH><TH>Ordo brevis</TH><TH>d.h.</TH></TR>\n";
     $cols = 5;
-
-    #    $output .= "<TR><TH>Dies</TH><TH>de Tempore</TH><TH>Sanctorum</TH><TH>d.h.</TH></TR>\n";
-    #    $cols = 4;
   }
 
   my $to = (MONTHLENGTH)[$kmonth];

@@ -32,6 +32,7 @@ sub ordo_entry {
   $c1 =~ s/Hebdomadam/Hebd/i;
   $c1 =~ s/Quadragesima/Quadr/i;
 
+  # Genuine Commemoratio information only
   $c2 = $dayname[2];
   $c2 =~ s/Hebdomadam/Hebd/gi;
   $c2 =~ s/Quadragesima/Quadr/gi;
@@ -44,6 +45,7 @@ sub ordo_entry {
   $c2 = setfont($smallblack, "$h1:") if $h1;
   $c2 .= "<I>" . setfont(liturgical_color($h2), " $h2") . "</I>" if $h2;
 
+  # Extract and format Scriptura information
   $c3 = $dayname[3];
   $c3 =~ s/Hebdomadam/Hebd/i;
   $c3 =~ s/Quadragesima/Quadr/i;
@@ -60,6 +62,7 @@ sub ordo_entry {
   $c3 = setfont($smallblack, "$h1:") if $h1;
   $c3 .= "<I>" . setfont(liturgical_color($h2), " $h2") . "</I>" if $h2;
 
+  # Gather further Commemorations
   my $extraComm;
 
   if (@commemoentries > ($winner =~ /Tempora/i && $commemoentries[0] !~ /Tempora/ ? 0 : 1)) {
@@ -97,26 +100,37 @@ sub ordo_entry {
 
   if (substr($date, 0, 5) lt '12-24' && substr($date, 0, 5) gt '01-13') {
 
-    # outside Nat put Sancti winner in right column
     if ($winner =~ /sancti/i) {
+
+      # Outside Tempora Nativitatis aut Epihaniae
+      # We put Sancti winner from left in right column
+      # If the left column is now empty or the first Commemoration is from a Saint, we put the Temporal information left
+      # and append all the gathered Commemorations into the second column with the Sancti winner
       ($c2, $c1) = ($c1, $c2);
       ($c3, $c1) = ($c1, $c3) if !$c1 || $c1 =~ /Commemoratio/i && $commemoentries[0] !~ /Tempora/;
       $extraComm =~ s/^ <I>(.*?)&amp;<\/FONT>/$1Commemoratio:<\/FONT><I>/ unless $c3;
       $extraComm = $c3 . $extraComm;
     }
-    $c2 .= "<br /> $extraComm";
+    $c2 .= "<br /> $extraComm" if $extraComm;
 
   } else {
 
-    # inside Nat clear right column unless it is commemoratio of saint
+    # Inside Tempora Nativitatis we clear right column unless it is commemoratio of saint
+    # and put scripture information into the last column below
     $c2 = '' unless $c2 =~ /Commemoratio/;
     $scripturaUt = setfont('1 maroon', $1) . $c3 if $c3 =~ s/<FONT SIZE='-1' >(Scriptura:)<\/FONT>//;
     $c3 = '';
   }
 
   if (dirge($version, 'Laudes', $day, $month, $year, $dioecesis)) { $c1 .= setfont($smallblack, ' dirge'); }
-  if ($version !~ /1960/ && $initia) { $c1 .= setfont($smallfont, ' *I*'); }
 
+  if ($version !~ /1960/ && $initia) {
+
+    # We mark days that would have an Incipit even if superseded so we can spot and transfer the readings
+    $c1 .= setfont($smallfont, ' *I*');
+  }
+
+  # Gather Vesper information
   our $hora;
   my $temphora = $hora;
   $hora = 'Vespera';
@@ -126,11 +140,15 @@ sub ordo_entry {
   $cv =~ s/.*?(A capitulo)/Vespera \l$1/;
   $cv =~ s/.*?(Vespera|$)/$1/;
   $cv =~ s/(era|itulo|uenti|memoratio|edenti|urente|ore|icio)\.?/./gs;
-  $cv = setfont('1 maroon', $cv);
+  $cv = setfont('1 maroon', $cv) if $cv;
+
+  # Add Lectiones in primo Nocturno Information
+  $cv = "$scripturaUt<br/>$cv" if $scripturaUt;
 
   if ($compare) {
-    $c2 ||= '_';
-    $cv ||= '_';
+    $c1 ||= '&mdash;';
+    $c2 ||= '&mdash;';
+    $cv ||= '&mdash;';
   }
   return ($c1, $c2, $cv);
 }
@@ -145,9 +163,9 @@ sub table_row {
 
   if ($compare) {
     my ($c21, $c22, $cv2) = ordo_entry($date, $version2, $dioecesis, $compare);
-    $c1 .= "<br/>$c21";
-    $c2 .= "<br/>$c22";
-    $cv .= "<br/>$cv2";
+    $c1 .= "<br/><DIV style=\"padding-left:1em\">$c21</DIV>";
+    $c2 .= "<br/><DIV style=\"padding-left:1em\">$c22</DIV>";
+    $cv .= "<br/><DIV style=\"padding-left:1em\">$cv2</DIV>";
   }
   (
     qq(<A HREF=# onclick="callbrevi('$date');">$d</A>),
