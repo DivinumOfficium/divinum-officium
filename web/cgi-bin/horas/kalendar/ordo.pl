@@ -124,7 +124,7 @@ sub ordo_entry {
 
   if (dirge($version, 'Laudes', $day, $month, $year, $dioecesis)) { $c1 .= setfont($smallblack, ' dirge'); }
 
-  if ($version !~ /1960/ && $initia) {
+  if ($version !~ /1960/ && $initia && $rank < 7) {
 
     # We mark days that would have an Incipit even if superseded so we can spot and transfer the readings
     $c1 .= setfont($smallfont, ' *I*');
