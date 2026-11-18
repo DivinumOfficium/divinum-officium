@@ -5,9 +5,11 @@
 (sed rubrica cisterciensis)
 ;;Duplex majus;;4.1;;ex C8
 
+
 [Lectio7]
 @Sancti/11-18:Lectio5:2 s/$/~/
-@Sancti/11-18:Lectio6:s/ Bas.licam.*//
+@Sancti/11-18:Lectio6: s/Bas.licam.*//
 
 [Lectio8]
-@Sancti/11-18:Lectio6:s/.* (?=Bas.licam)//
+@Sancti/11-18:Lectio6: s/.*(Bas.licam)/$1/
+

@@ -1559,7 +1559,7 @@ sub gettype1960 {
     } elsif ($rank < 5) {
       $type = LT1960_SANCTORAL;
     }
-  } elsif ($version =~ /monastic/i && $votive !~ /(C9|Defunctorum)/i) {
+  } elsif ($version =~ /monastic/i && $votive !~ /(C9|Defunctorum)/i && $commune !~ /C9/) {
     if ($rank < 2 || ($dayname[1] =~ /(feria|vigilia|die)/i && $dayname[1] !~ /infra octavam/i)) {
       $type = LT1960_FERIAL;
     } elsif ($dayname[1] =~ /infra octavam/i) {
