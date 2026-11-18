@@ -1,0 +1,40 @@
+@Sancti/11-18o
+
+[Rule]
+12 lectiones
+
+[Lectio2]
+@Sancti/11-18o::1-3
+
+[Lectio3]
+@Sancti/11-18o::1 s/24-27/23-24/
+@Sancti/11-18o:Lectio2:4
+@Sancti/11-18o::2
+
+[Lectio4]
+@Sancti/11-18o:Lectio3:!2 s/24-/25-/
+
+[Lectio5]
+@Sancti/11-18o:Lectio4
+
+[Lectio6]
+@Sancti/11-18o:Lectio5
+
+[Lectio7]
+@Sancti/11-18o:Lectio6:s/ Cujus.*//
+
+[Lectio8]
+@Sancti/11-18o:Lectio6:s/.* (?=Cujus)//
+
+[Lectio9]
+@Sancti/11-18o:Lectio7
+
+[Lectio10]
+@Sancti/11-18o:Lectio8:s/ Sed.*//
+
+[Lectio11]
+@Sancti/11-18o:Lectio8:s/.* (?=Sed)// s/$/~/
+@Sancti/11-18o:Lectio9:s/ Per.*//
+
+[Lectio12]
+@Sancti/11-18o:Lectio9:s/.* (?=Per)//
