@@ -53,6 +53,7 @@ sub liturgical_color {
   return 'black' if (/(?:Conversione|Dedicatione|Cathedra|oann|Pasch|Confessor|Ascensio|Cena)/i);
   return 'green' if (/(?:Pentecosten(?!.*infra octavam)|Epiphaniam|post octavam)/i);
   return 'red' if (/(?:Pentecostes|Evangel|Innocentium|Sanguinis|Cruc|Apostol)/i);
+  return 'green' if (/(?:heri|cras|Augustis|Septembris|Octobris|Novembris|curr)/i);
   return 'black';
 }
 1;

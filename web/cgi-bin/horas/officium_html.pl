@@ -5,7 +5,7 @@ sub html_dayhead_c {
   my ($head, $version1, $version2) = @_;
   $version = $version2;
   precedence();
-  my $head2 = html_dayhead(setheadline(), $dayname[2]);
+  my $head2 = html_dayhead(setheadline(), $dayname[2], $dayname[3]);
   $version = $version1;
   '<TABLE CELLPADDING="5"><TR>'
     . "<TD ALIGN='RIGHT' VALIGN='TOP' WIDTH='50%' STYLE='border-right: 1pt solid red;'>$head</TD>"

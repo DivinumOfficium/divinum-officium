@@ -55,6 +55,8 @@ our $smallblack;
 our $smallfont;
 
 require "$Bin/../DivinumOfficium/SetupString.pl";
+require "$Bin/horas.pl";
+require "$Bin/specials.pl";
 require "$Bin/horascommon.pl";
 require "$Bin/specmatins.pl";
 require "$Bin/../DivinumOfficium/dialogcommon.pl";
@@ -150,11 +152,8 @@ sub kalendar_table {
     $output .= "<TR><TH>C.E.</TH><TH>D.L.</TH><TH></TH><TH>Dies</TH><TH></TH></TR>\n";
     $cols = 5 + $compare;
   } else {
-    $output .= "<TR><TH>Dies</TH><TH>de Tempore</TH><TH>Sanctorum</TH><TH>Vespera</TH><TH>d.h.</TH></TR>\n";
+    $output .= "<TR><TH>Dies</TH><TH>de Tempore</TH><TH>Sanctorum</TH><TH>Ordo brevis</TH><TH>d.h.</TH></TR>\n";
     $cols = 5;
-
-    #    $output .= "<TR><TH>Dies</TH><TH>de Tempore</TH><TH>Sanctorum</TH><TH>d.h.</TH></TR>\n";
-    #    $cols = 4;
   }
 
   my $to = (MONTHLENGTH)[$kmonth];

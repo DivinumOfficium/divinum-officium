@@ -580,10 +580,7 @@ is(
   'testlang cistercian only',
   'a Cistercian entry the Roman Latin does not carry is said in the Cistercian book',
 );
-is(
-  [grep {/cistercian only/} render('Testlang', '05-09', 'Rubrics 1960 - 1960')],
-  '', 'and in no other',
-);
+is([grep {/cistercian only/} render('Testlang', '05-09', 'Rubrics 1960 - 1960')], '', 'and in no other');
 
 print "a blank section\n";
 is(

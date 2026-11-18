@@ -817,34 +817,8 @@ sub lectio : ScriptFunc {
   if ($nocturn == 1) {
     if ($rule =~ /Lectio1 (Oct|Temp)Nat/i) {
 
-      #Lectio1 OctNat/TempNat: special rule for Dec 29 through Jan 05
-      my %temp;
-      setbuild2("subst: Lectiones in I Nocturno ex Tempora Nativitatis") if $num == 1;
+      %w = resolveTempNat(\%w, $lang, $num);
 
-      if ($month == 12 && $day < 29) {
-
-        # GitHub3539: in 1960 rubrics, Scripture on Sunday (26-28) comes from Nativity
-        %temp = %{officestring($lang, subdirname('Sancti', $version) . "12-25.txt")};
-      } else {
-
-        my $tfile =
-          subdirname('Tempora', $version) . sprintf("Nat%02i", $day) . ($version =~ /Trident/i ? "o.txt" : ".txt");
-        my $t = get_from_directorium('tempora', $version, $tfile);
-        $tfile = $t || $tfile;
-
-        %temp = %{officestring($lang, $tfile)};
-
-        if ($rule =~ /12 lectiones/) {
-          my %scrip = %temp;
-          $temp{"Lectio$_"} = lectiones_ex3_fiunt4(\%scrip, $_) foreach (1 .. 4);
-          $temp{"Responsory$num"} = $w{"Responsory$num"};
-          setbuild2("Lectiones ex 3 fiunt 4") if $num == 1;
-        }
-      }
-      $temp{'Lectio2'} .= $temp{'Lectio3'} if (contract_scripture(2));
-
-      $w{"Lectio$num"} = $temp{"Lectio$num"};
-      $w{"Responsory$num"} = $temp{"Responsory$num"};
     } elsif ($rule =~ /Lectio1 tempora/i && exists($scriptura{"Lectio1"})) {
 
       # Tridentine: De Dñica infra Oct. in quamcumque diem Octavæ inciderit, fit Officium
@@ -1003,20 +977,26 @@ sub lectio : ScriptFunc {
     my %com = (columnsel($lang)) ? %commune : %commune2;
     my $lecnum = "Lectio$num";
 
-    if ($rule =~ qr/in $nocturn Nocturno Lectiones ex (Commune|C\d+[a-z]*) in (\d+) loco/i) {
+    if ($rule =~ qr/in $nocturn Nocturno Lectiones ex (Commun[ei]|C\d+[a-z]*) in (\d+) loco/i) {
       my $loco = $2;
-      %com = %{setupstring($lang, subdirname('Commune', $version) . "$1.txt")} unless ($1 eq 'Commune');
+      %com = %{setupstring($lang, subdirname('Commune', $version) . "$1.txt")} unless ($1 =~ /^Commun[ei]$/i);
       $lecnum .= " in $loco loco" if $loco > 1;
       $lect = $com{$lecnum};
 
       if ($w && $num % ($rule =~ /12 lectiones/i ? 4 : 3) == 1) {
-        setbuild2("Lectio$num in $loco loco ex $com{Officium}");
+        my $comName = $com{'Officium'};
+        $comName =~ s/Commune/ex Communi/;
+        $comName =~ s/^In/ut in/;
+        setbuild2("Lectio$num in $loco loco $comName");
       }
     } elsif (exists($com{$lecnum})) {
       $lect = $com{$lecnum};
 
       if ($lect && $num % ($rule =~ /12 lectiones/i ? 4 : 3) == 1) {
-        setbuild2("Lectio$num ex $commune{Officium}");
+        my $comName = $commune{Officium};
+        $comName =~ s/Commune/ex Communi/;
+        $comName =~ s/^In/ut in/;
+        setbuild2("Lectio$num $comName");
       }
     }
 
@@ -1050,7 +1030,7 @@ sub lectio : ScriptFunc {
       $lect = lectiones_ex3_fiunt4(\%scrip, $num);
       setbuild2("Lectiones ex 3 fiunt 4") if $num == 1;
     } else {
-      setbuild2("Lectiones in I nocturno ex scriptura") if ($lect = $scrip{"Lectio$num"}) && $num == 1;
+      setbuild2("Lectiones in I nocturno de Scriptura occurrente") if ($lect = $scrip{"Lectio$num"}) && $num == 1;
     }
 
     # More elegent fix #3932 and also #5033/#5027:
@@ -1083,7 +1063,10 @@ sub lectio : ScriptFunc {
     $lect = $c{"Lectio$num"};
 
     if ($lect && $num % ($rule =~ /12 lectiones/i ? 4 : 3) == 1) {
-      setbuild2("Lectiones in " . "I" x $nocturn . " Nocturno ex $commune{Officium}");
+      my $comName = $commune{Officium};
+      $comName =~ s/Commune/ex Communi/;
+      $comName =~ s/^In/ut in/;
+      setbuild2("Lectiones in " . "I" x $nocturn . " Nocturno $comName");
     }
 
     if (contract_scripture($num)) {
@@ -1714,6 +1697,48 @@ sub ant_matutinum_paschal {
   @psalmi;
 }
 
+sub resolveTempNat {
+
+  my $w = shift;
+  my $lang = shift;
+  my $num = shift;
+  my $buildflag = shift;
+  my %w = %$w;
+
+  our ($month, $day, $version);
+
+  #Lectio1 OctNat/TempNat: special rule for Dec 29 through Jan 05
+  my %temp;
+  setbuild2("subst: Lectiones in I Nocturno ex Tempora Nativitatis") if $num == 1 && !$buildflag;
+
+  if ($month == 12 && $day < 29) {
+
+    # GitHub3539: in 1960 rubrics, Scripture on Sunday (26-28) comes from Nativity
+    %temp = %{officestring($lang, subdirname('Sancti', $version) . "12-25.txt")};
+  } else {
+
+    my $tfile =
+      subdirname('Tempora', $version) . sprintf("Nat%02i", $day) . ($version =~ /Trident/i ? "o.txt" : ".txt");
+    my $t = get_from_directorium('tempora', $version, $tfile);
+    $tfile = $t || $tfile;
+
+    %temp = %{officestring($lang, $tfile)};
+
+    if ($rule =~ /12 lectiones/) {
+      my %scrip = %temp;
+      $temp{"Lectio$_"} = lectiones_ex3_fiunt4(\%scrip, $_) foreach (1 .. 4);
+      $temp{"Responsory$num"} = $w{"Responsory$num"};
+      setbuild2("Lectiones ex 3 fiunt 4") if $num == 1;
+    }
+  }
+  $temp{'Lectio2'} .= $temp{'Lectio3'} if (contract_scripture(2));
+
+  $w{"Lectio$num"} = $temp{"Lectio$num"};
+  $w{"Responsory$num"} = $temp{"Responsory$num"};
+
+  return %w;
+}
+
 #*** initiarule($month, $day, $year)
 # returns the key from the proper Str$ver$year table for the date
 sub initiarule {
@@ -1800,7 +1825,7 @@ sub resolveitable {
     $lim = 1;      # in general allow 1 transfer and
     $start = 2;    # put the actual days in second place
 
-    if (@file > 1 && !($rule !~ /(9|12) lectiones/i && $winner =~ /Sancti/i)) {
+    if (@file > 1 && !($saint{Rule} !~ /(9|12) lectiones/i && $winner =~ /Sancti/i)) {
       $lim = 2;
       $start = 3;
     } # if there is more than 1 transferal which is not impeded by a Sanctoral office of 3 lections, allow 2 and put the actual day inita at 3

@@ -184,7 +184,7 @@ sub occurrence {
         $tvesp = $hora =~ /(Vespera|Completorium)/i ? 3 : 2;
         %tempora = %{officestring('Latin', $tname)};
         $trank = $tempora{Rank};
-        $initia = ($tempora{Lectio1} =~ /!.*? 1\:1\-/) ? 1 : 0;
+        $initia = ($weekname !~ /Nat/i || $version !~ /Trident/i) && ($tempora{Lectio1} =~ /!.*? 1\:1\-/) ? 1 : 0;
       }
       @trank = split(";;", $trank);
 
@@ -528,7 +528,7 @@ sub occurrence {
       $c =~ s/\n//sg;
       my %communesname = split(',', $c);
       $commune =~ /^.*(C\d.*)\.txt/;
-      $officename[1] .= " $communetype $communesname{$1} [$commune]";
+      $officename[1] .= "\n$communetype $communesname{$1} [$commune]";
     }
 
     if ($winner =~ /01-12t/ && $hora =~ /laudes/i) {
@@ -619,46 +619,19 @@ sub occurrence {
       $officename[2] =~ s/:/ ad Laudes tantum:/ if ($srank[2] >= 5 && $saint{'Commemoratio 2'} || $version =~ /196/);
     }
 
-    my $ittable = $missa ? '' : initiarule($month, $day, $year);
-
-    if ( ($hora =~ /matutinum/i || (!$hora && $ittable) || (!$officename[2] && $hora !~ /Vespera|Completorium/i))
+    if ( (!$hora || $hora =~ /matutinum/i || (!$officename[2] && $hora !~ /Vespera|Completorium/i))
       && $rank < 7
-      && $trank[0]
-      && !$missa)
+      && $trank[0])
     {
-      my %scrip = %{officestring('Latin', $tname)};
-
-      if (
-           !(exists($saint{"Lectio1"}) && ($saint{Rule} !~ /Lectio1 Quad/i || $tname =~ /Quad(\d|p3\-[3456])/i))
-        && exists($scrip{Lectio1})
-        && $scrip{Lectio1} !~ /evangelii/i
-        && ( $saint{Rank} !~ /\;\;ex /
-          || $saint{Rule} =~ /Lectio1 temp/i)
-      ) {
-
-        if ($ittable && $ittable !~ /\~[AH]$/) {
-
-          # If we have transferred scripture which is not coming "after" the actual day's
-          # we put the source of the transferred Letio1 into the headline
-          my @tsfile = split('~', $ittable);
-          my $tsfile = subdirname('Tempora', $version) . $tsfile[0] . ".txt";
-          %tscrip = %{officestring('Latin', $tsfile)};
-          $tsrank = $tscrip{Rank} || $tscrip{Scriptura};
-          $tsrank =~ s/\s*;;.*|\s*$//s;
-          $officename[2] ||= "Tempora: $trank[0]";
-          $officename[2] .= " (Scriptura ut in: $tsrank)" if $tsfile !~ $tfile && $tsrank;
-        } elsif ($version !~ /monastic/i || $tname !~ /(?:Pasc|Pent)/ || $month > 10) {
-          $officename[2] = "Scriptura: $trank[0]";
-        } else {
-          $officename[2] = "Tempora: $trank[0]";
-        }
-      } else {
-        $officename[2] = "Tempora: $trank[0]";
-      }
       $scriptura = $tname;
+      %scriptura = %{officestring('Latin', $tname)};
+      $officename[3] = "Tempora: $trank[0]\n" if $trank[0] && $officename[2] !~ /$trank[0]/i;
     } elsif ($missa) {
       $scriptura = $tname;
+    } elsif (exists($saint{Lectio1}) && $version !~ /196/) {
+      $officename[3] .= "L1 propria";
     }
+
   } else {    # winner is Tempora
     if ($hora !~ /Vespera/i && $trank[2] < ($version =~ /cist/i ? 1.25 : 1.5) && $transfervigil)
     {         # Vigil transfered to an empty or Simplex only day
@@ -685,7 +658,7 @@ sub occurrence {
       my $c = getdialog('communes');
       $c =~ s/\n//sg;
       my %communesname = split(',', $c);
-      $officename[1] .= " $communetype $communesname{$commune} [$commune]";
+      $officename[1] .= "\n$communetype $communesname{$commune} [$commune]";
     }
 
     if ($version =~ /1960/ && $vespera == 1 && $rank >= 6 && $comrank < 5) {
@@ -811,11 +784,34 @@ sub occurrence {
       if ($s{Rank} =~ /Vigil/i && exists($s{"Commemoratio 2"})) { $commemorated = $sname; }
     }
 
-    if (!($officename[2] || $missa)) {
+  }
 
-      my $ittable = initiarule($month, $day, $year);
+  if (
+    !$missa
+    && (!$hora
+      || $hora =~ /matutinum/i
+      || (!$officename[2] && $hora !~ /Vespera|Completorium/i && $saint{Rule} !~ /Lectio1 temp/i))
+    && $rank < 7
+    && $trank[0]
+  ) {
+    my $ittable = initiarule($month, $day, $year);
 
-      if ($ittable && $ittable !~ /\~[A]$/) {
+    if (
+      $version !~ /196/
+      && (
+        !$sanctoraloffice
+        || !(
+             (exists($saint{"Lectio1"}) || $saint{Rule} =~ /In 1 Nocturno lectiones ex/i)
+          && ($saint{Rule} !~ /Lectio1 Quad/i || $tname =~ /Quad(\d|p3\-[3456])/i)
+        )
+        && exists($scriptura{Lectio1})
+        && $scriptura{Lectio1} !~ /evangelii/i
+        && ( $saint{Rank} !~ /\;\;ex /
+          || $saint{Rule} =~ /Lectio1 temp/i)
+      )
+    ) {
+
+      if ($ittable && $ittable =~ /\~H$/) {
 
         # If we have transferred scripture which is not coming "after" the actual day's
         # we put the source of the transferred Letio1 into the headline
@@ -824,9 +820,87 @@ sub occurrence {
         %tscrip = %{officestring('Latin', $tsfile)};
         $tsrank = $tscrip{Rank} || $tscrip{Scriptura};
         $tsrank =~ s/\s*;;.*|\s*$//s;
-        $officename[2] = @tsfile[-1] ne 'H' ? "Scriptura ut in: $tsrank" : "Historia ut in: $tsrank";
+        $officename[3] .= "R1 de Historia ut in $tsrank\n";
+      } elsif ($ittable || $initia || ($winner =~ /Nat1-0|Nat30/ && $version =~ /Trident/i)) {
+        my ($lnum, $incipit, $source, $verbum);
+
+        my %tw = $sanctoraloffice ? %scriptura : %tempora;
+        %tw = resolveitable(\%tw, $ittable, 'Latin') if $ittable;
+        %tw = resolveTempNat(\%tw, 'Latin', 1, 'none') if $winner =~ /Nat1-0|Nat30/ && $version =~ /Trident/i;
+
+        my @tsfile = split('~', $ittable);
+
+        if (!$ittable || $ittable =~ /~A/) {
+          unshift(@tsfile, $tfile);
+        }
+
+        my $tweek = our $monthday =~ /^(\d+)/ ? $1 : $weekname;
+
+        while (!$lnum || $lnum < ($version =~ /monastic/ ? 4 : 3)) {
+
+          $lnum++;
+          $tw{"Lectio$lnum"} =~ /(?:([\w\s]+?)\n)?(?:\!([\d\s\w-:]+?)\n)?/s;
+          $incipit = $1;
+          $source = $2;
+          next unless $incipit;
+
+          my $tsfile = shift @tsfile;
+
+          $officename[3] .= "L$lnum $incipit";
+
+          if (!$tsfile || $tsfile =~ /^[ABRH]$/ || $tsfile eq $tfile) {
+            if ($trank[0] =~ /(Dominica|Feria|Sabbato)/) {
+              $officename[3] .= $sanctoraloffice ? " ex $1 curr.\n" : "\n";
+            }
+            next;
+          } elsif ($tsfile eq "$tweek-" . ($dayofweek - 1)) {
+            $officename[3] .= " ex heri\n";
+            next;
+          } elsif ($tsfile eq "$tweek-" . ($dayofweek + 1)) {
+            $officename[3] .= " e cras\n";
+            next;
+          }
+
+          # If we have transferred scripture which is not coming "after" the actual day's
+          # we put the source of the transferred Letio1 into the headline
+          $tsfile = subdirname('Tempora', $version) . $tsfile . ".txt";
+          %tscrip = %{officestring('Latin', $tsfile)};
+          $tsrank = $tscrip{Rank} || $tscrip{Scriptura};
+          $tsrank =~ s/\s*;;.*|\s*$//s;
+
+          $officename[3] .= " e $tsrank\n" if $tsfile !~ $tfile && $tsrank;
+        }
+      } elsif ((!$hora || $hora =~ /matutinum/i)
+        && ($version !~ /monastic/i || $tname !~ /(?:Pasc|Pent)/ || $month > 10))
+      {
+        $officename[3] =~ s/Tempora/Scriptura/;
+      }
+    } elsif (exists($saint{Lectio1}) && $version !~ /196/) {
+      $officename[3] .= "L1 propria";
+    } elsif ($version !~ /196/) {
+      if ( $saint{Rule} =~ /In 1 Nocturno Lectiones ex (Commun[ei]|C\d+[a-z]*)(?: in (\d+) loco)?/i
+        || $communetype eq 'ex')
+      {
+        my $loco = $2;
+        my $com = (!$1 || $1 =~ /^Commun[ei]$/i) ? $commune : subdirname('Commune', $version) . "$1.txt";
+        %com = %{setupstring('Latin', $com)};
+        my $comName = $com{'Officium'};
+        $comName =~ s/Vigilia/Homilia ut in Vigilia/;
+        $comName =~ s/Commune/ex Communi/;
+        $comName =~ s/^In/ut in/;
+        $officename[3] .= "L1 $comName";
+        $officename[3] .= " in $loco loco" if $loco > 1;
       }
     }
+
+    $officename[3] =~ s/propria/Homilia/
+      if $saint{Lectio1} =~ /\!(Matt|Marc|Luc|Joannes)\s+[0-9]+\:[0-9]+\-[0-9]+/i || $srank[0] =~ /(Vigilia)/i;
+
+    #    if ($commemoratio) {
+    #
+    #      my $l1 = lectio(9, 'Latin', 'none');
+    #      $error .= $l1;
+    #    }
   }
 
   if ($month == 1 && $day < 14 && $officename[0] !~ /Epi/i) { $officename[0] = "Nat$day"; }
@@ -1017,7 +1091,7 @@ sub concurrence {
       && $version !~ /1955|196/
     ) {
       $vespera = 3;
-      $dayname[2] = $tomorrowname[2] . "<br/>Vespera de Officio occurente, Commemoratio Sanctorum crastinorum tantum";
+      $dayname[3] = $tomorrowname[3] = "Vespera de Officio occurente, Commemoratio Sanctorum crastinorum tantum";
       $cwrank = '';
       $ctname = '';
       %cwinner = {};
@@ -1031,9 +1105,9 @@ sub concurrence {
       $vespera = 3;
 
       if ($sanctoraloffice) {
-        $dayname[2] .= "<br/>Vespera de Officio occurente; nihil de sequenti";
+        $dayname[3] = "Vespera de Officio occurente; nihil de sequenti";
       } else {
-        $dayname[2] .= "<br/>Vespera de Tempore occurente; nihil de sequenti";
+        $dayname[3] = "Vespera de Tempore occurente; nihil de sequenti";
       }
       $cwrank = '';
       $csname = '';
@@ -1050,9 +1124,9 @@ sub concurrence {
         || ($comrank >= 2.1 && $dayname[2] !~ /ad Laudes|Rogatio/i);
 
       if ($sanctoraloffice) {
-        $dayname[2] .= "<br/>Vespera de Officio occurente" unless $version =~ /1955|196/;
+        $dayname[3] = "Vespera de Officio occurente" unless $version =~ /1955|196/;
       } else {
-        $dayname[2] .= "<br/>Vespera de Tempore occurente" unless $version =~ /1955|196/;
+        $dayname[3] = "Vespera de Tempore occurente" unless $version =~ /1955|196/;
       }
       $cwrank = '';
       $ctname = '';
@@ -1076,9 +1150,9 @@ sub concurrence {
 
         # Unless the next day is a genuine Duplex I. classis feast, Semiduplex saints get commemorated
         my $hodie = $comrank >= $ccomrank ? 'hodiernorum tantum' : 'tantum';
-        $tomorrowname[2] = $dayname[2] .= "<br/>Vespera de sequenti; Commemoratio Sanctorum $hodie";
+        $tomorrowname[3] = $dayname[3] = "Vespera de sequenti; Commemoratio Sanctorum $hodie";
       } else {
-        $tomorrowname[2] .= "<br/>Vespera de sequenti.";
+        $tomorrowname[3] = "Vespera de sequenti.";
         @commemoentries = ();
         $commemoratio = '';
       }
@@ -1091,7 +1165,7 @@ sub concurrence {
     } else {
       $vespera = 3;
       $tvesp = 3;
-      $dayname[2] .= "<br/>Vespera de Tempore præcedenti; nihil de sequenti";
+      $dayname[3] = "Vespera de Tempore præcedenti; nihil de sequenti";
       $ctrank = '';
       $ctname = '';
       %cwinner = {};
@@ -1153,7 +1227,7 @@ sub concurrence {
       # no commemoration of Precious Blood on the Feast of the Sacred Heart: Github #4586
       || ($winner =~ /Pent02-5/ && $cwinner =~ /07-01\./)
     ) {
-      $dayname[2] .= "<br/>Vespera de præcedenti; nihil de sequenti";
+      $dayname[3] = "Vespera de præcedenti; nihil de sequenti";
       $cwinner = '';
       %cwinner = ();
       $vespera = 3;
@@ -1200,9 +1274,9 @@ sub concurrence {
         # privilidged Feria, Dominica, or infra 8vam only
         # except for Saturdays at 1st Vespers of the Sunday
         # no Commemoration of the Octaves of Ssmi Corporis and Ssmi Cordis on Precious Blood #4586
-        $dayname[2] .= "<br/>Vespera de sequenti; commemoratio de off. priv. tantum";
+        $dayname[3] = "Vespera de sequenti; commemoratio de off. priv. tantum";
       } else {
-        $dayname[2] .= "<br/>Vespera de sequenti; nihil de præcedenti";
+        $dayname[3] = "Vespera de sequenti; nihil de præcedenti";
         $commemoratio = '';
         $comrank = 0;
         @commemoentries = ();
@@ -1228,7 +1302,7 @@ sub concurrence {
       $winner = $cwinner;
       $cwinner = $commemoratio;
       @dayname = @tomorrowname;
-      $dayname[2] .= "<br/>Vespera de sequenti; commemoratio de præcedenti Dominica";
+      $dayname[3] = "Vespera de sequenti; commemoratio de præcedenti Dominica";
       $rank = $crank;
       $commune = $ccommune;
       $communetype = $ccommunetype;
@@ -1248,7 +1322,7 @@ sub concurrence {
       $cvespera = 1;
       $commemoratio = $cwinner;
       $dayname[2] = "Commemoratio: $cwrank[0]";
-      $dayname[2] .= "<br/>Vespera de præcedenti; commemoratio de sequenti";
+      $dayname[3] = "Vespera de præcedenti; commemoratio de sequenti";
       $dayname[2] .= " Dominica" if $cwinner{Rank} =~ /Dominica/i;
     } elsif ($flcrank == $flrank) {    # "flattend ranks" are equal => a capitulo
       $commemoratio = $winner;
@@ -1295,7 +1369,7 @@ sub concurrence {
       $rank = $crank;
       $commune = $ccommune;
       $communetype = $ccommunetype;
-      $dayname[2] .= "<br/>A capitulo de sequenti; commemoratio de præcedenti";
+      $dayname[3] = "A capitulo de sequenti; commemoratio de præcedenti";
     } elsif ($crank > $rank) {    # tommorow is outranking today
       $vespera = 1;
       $commemoratio = $winner;
@@ -1307,13 +1381,13 @@ sub concurrence {
       $rank = $crank;
       $commune = $ccommune;
       $communetype = $ccommunetype;
-      $dayname[2] .= "<br/>Vespera de sequenti; commemoratio de præcedenti";
+      $dayname[3] = "Vespera de sequenti; commemoratio de præcedenti";
     } else {                      # today is outranking tomorrow
       $commemoratio = $cwinner;
       $dayname[2] = "Commemoratio: $cwrank[0]";
       $vespera = 3;
       $cvespera = 1;
-      $dayname[2] .= "<br/>Vespera de præcedenti; commemoratio de sequenti";
+      $dayname[3] = "Vespera de præcedenti; commemoratio de sequenti";
 
       if ( $cwinner{Rank} =~ /infra octavam (.*?)\;|post Octavam Asc|Vigilia Pent/i
         || $ccommemoentries[0] =~ /infra octavam (.*?)\;|post Octavam Asc|Vigilia Pent/i)
@@ -1337,9 +1411,7 @@ sub concurrence {
     }
   }
 
-  if ($hora =~ /completorium/i) {
-    $dayname[2] = '';
-  }
+  $dayname[3] = $dayname[2] = '' if $hora =~ /completorium/i;
 
   ### Restrict commemoration according to the respective rubrics
   if ($vespera == 3) {    # We have 2nd Vespers:
@@ -1740,9 +1812,9 @@ sub precedence {
   if ($scriptura) {
     %scriptura = %{officestring($lang1, $scriptura)};
 
-    if (!$dayname[2] && $scriptura !~ /Nat0[12345]/) {
-      $dayname[2] = "Scriptura: $scriptura{Rank}  $scriptura";
-      $dayname[2] =~ s/;;.*//s;
+    if (!$dayname[2] && !$dayname[3] && $scriptura !~ /Nat0[12345]/) {
+      $dayname[3] = "Scriptura: $scriptura{Rank}  $scriptura";
+      $dayname[3] =~ s/;;.*//s;
     }
   }
 
