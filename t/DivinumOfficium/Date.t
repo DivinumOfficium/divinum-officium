@@ -51,6 +51,17 @@ is(join(',', ydays_to_date(366, 2024)), '31,12,2024', 'Day 366 round-trips to 31
 is(day_of_week(1, 1, 2024), 1, '1 Jan 2024 was a Monday');
 is(day_of_week(7, 1, 2024), 0, '7 Jan 2024 was a Sunday');
 is(day_of_week(0, 1, 2024), undef, 'Falsy day returns undef');
+is(day_of_week(29, 2, 2024), 4, '29 Feb 2024 was a Thursday');
+is(day_of_week('01', '01', '2024'), 1, 'Zero-padded numeric strings are accepted');
+is(day_of_week(29, 2, 2023), undef, '29 Feb is invalid in a non-leap year');
+is(day_of_week(31, 4, 2024), undef, '31 Apr is invalid');
+is(day_of_week(32, 1, 2024), undef, 'Day beyond the end of a month is invalid');
+is(day_of_week(1, 13, 2024), undef, 'Month beyond December is invalid');
+is(day_of_week(1, 0, 2024), undef, 'Month zero is invalid');
+is(day_of_week('abc', 1, 2024), undef, 'Non-numeric day is invalid');
+is(day_of_week(1, 'abc', 2024), undef, 'Non-numeric month is invalid');
+is(day_of_week(1, 1, '2024.5'), undef, 'Non-integer year is invalid');
+is(day_of_week(1, 1, undef), undef, 'Undefined year is invalid');
 
 ### get_sday
 # In leap years the internal folder day is shifted: 24 Feb is kept as the
@@ -72,7 +83,7 @@ is(nextday(2, 23, 2024), '02-29', 'In a leap year, the day after 23 Feb is folde
 is(nextday(2, 24, 2024), '02-24', 'In a leap year, the day after 24 Feb is folder 02-24 (real 25 Feb)');
 is(nextday(2, 28, 2024), '02-28', 'In a leap year, the day after 28 Feb is folder 02-28 (real 29 Feb)');
 is(nextday(2, 29, 2024), '03-01', 'In a leap year, the day after 29 Feb is folder 03-01');
-is(nextday(2, 28, 2023), '03-01', 'In a non-leap year, the day after 28 Feb is 1 Mar');
+is(nextday(2, 28, 2023), '03-01', 'In a non-leap year, the day after 28 Feb is folder 03-01');
 
 ### prevnext
 
