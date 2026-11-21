@@ -5,7 +5,7 @@ use utf8;
 #use warnings;
 use Carp;
 use DivinumOfficium::FileIO qw(do_read);
-use DivinumOfficium::Date qw(monthday);
+use DivinumOfficium::Date qw(monthday leapyear);
 
 # Read only global variables
 our $version, $datafolder;
@@ -30,6 +30,7 @@ my %subjects = (
   officio => sub { $dayname[1]; },
   ad => sub { our $missa ? 'missam' : our $hora; },
   mense => sub { our $month },    # mense is not perfect eg. 1 matches also 10 11 12
+  anno => sub { leapyear(our $year) ? 'bissextili' : 'communi' },
   dioecesis => sub { our $dioecesis },
 
   # GABC subjects
@@ -760,13 +761,14 @@ sub setupstring($$%) {
       if (@baserank) {
         my @newrank = split(';;', ${$new_sections}{Rank});
         my $office = ${$new_sections}{Officium};
-        $office =~ s/\s+$//;
+        $office =~ s/\s+$//s;
+        $newrank[0] =~ s/\s+$//s;
         $baserank[0] = $office || $newrank[0];
         ${$new_sections}{Rank} = join(';;', @baserank);
       } elsif (exists(${$new_sections}{Officium})) {
         my @newrank = split(';;', ${$new_sections}{Rank});
         $newrank[0] = ${$new_sections}{Officium};
-        $newrank[0] =~ s/\s+$//;
+        $newrank[0] =~ s/\s+$//s;
         ${$new_sections}{Rank} = join(';;', @newrank);
       }
 
@@ -843,7 +845,7 @@ sub setupstring($$%) {
 
   # Safeguard [Rank] to allow changing Rank and inherit Officium via section inclusions
   if (exists($sections{'Officium'})) {
-    $sections{'Officium'} =~ s/\s+$//;
+    $sections{'Officium'} =~ s/\s*$//s;
     $sections{'Rank'} =~ s/^.*?;;/$sections{'Officium'};;/;
   }
 
@@ -910,11 +912,7 @@ sub officestring($$;$) {
   my %m = %{setupstring($lang, subdirname('Tempora', $version) . "$monthday.txt")};
 
   foreach my $key (keys %m) {
-    if (($version =~ //i && $key =~ /Rank/i)) {
-      ;
-    } else {
-      $s{$key} = $m{$key};
-    }
+    $s{$key} = $m{$key};
   }
   return \%s;
 }

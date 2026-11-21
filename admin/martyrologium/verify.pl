@@ -37,6 +37,12 @@ for my $m (1 .. 12) { push @days, sprintf('%02d-%02d', $m, $_) for 1 .. $dmax[$m
 my @versions =
   (['Divino Afflatu', ''], ['Reduced 1955', '1955R'], ['Rubrics 1960', '1960'], ['Tridentine - 1570', '1570']);
 
+# A translation's entry may belong to a recension the Latin has no flat
+# files for: the Czech book is the Cistercian martyrology, and its own
+# elogia are said only under the Cistercian versions; the English book
+# is Benedict XIV's martyrology, which the 1888 and 1906 versions say.
+my @reach = (@versions, ['Monastic Tridentinum Cisterciensis 1951'], ['Tridentine - 1888'], ['Tridentine - 1906']);
+
 #*** respelt(\@a, \@b)
 # True when two renderings differ only in where the accents fell or which
 # quotation marks were set.
@@ -89,6 +95,24 @@ sub norm {
   return $l;
 }
 
+#*** in_rubric($line, $rendered)
+# A rubric -- rise, bow, say the Ave in silence -- is printed as one,
+# /:...:/, on a line of its own after the entry it goes with.  The flat
+# file has it at the end of the entry's own line, sometimes in brackets,
+# or broken over lines of its own; it is reached all the same.
+sub in_rubric {
+  my ($line, $new) = @_;
+  my @rubrics = map { m{^/:(.*?)\.?:/$} ? $1 : () } keys %$new;
+  (my $piece = $line) =~ s/[.()]+$//;
+
+  foreach my $rubric (@rubrics) {
+    return 1 if $piece ne '' && index($rubric, $piece) >= 0;
+    my $rest = $line;
+    return 1 if $rest =~ s/\s*\(?\Q$rubric\E\.?\)?\s*$// && $new->{norm($rest)};
+  }
+  return 0;
+}
+
 #*** covered($line, $rendered)
 # Some books print two elogia as one line.  The entry is then held as the
 # two the Latin names, and the day renders them where the Latin puts them,
@@ -124,6 +148,49 @@ sub covered {
   return $walk->($line);
 }
 
+#*** leapish($day)
+# Whether the day reads one way in a common year and another in a leap
+# year: its index asks which the year is.  The flat files print both, the
+# way the book does, leaving the reader to omit what the year does not have.
+sub leapish {
+  my $day = shift;
+  return scalar grep {/\banno\s+(?:bissextili|communi)\b/} do_read("$datafolder/Latin/Martyrologium/$day.txt");
+}
+
+#*** in_years($code)
+# What $code returns in a common year and in a leap year, one list each.
+# The year is asked when a file is read, so what was read for the one is
+# forgotten before the other.
+sub in_years {
+  my $code = shift;
+  our ($year, %setupstring_caches_by_version);
+  my @out;
+
+  for my $y (2027, 2028) {
+    ($year, %setupstring_caches_by_version) = ($y);
+    push @out, [$code->()];
+  }
+  ($year, %setupstring_caches_by_version) = ();
+  return @out;
+}
+
+#*** both_years(\@flat, @renders)
+# True when the flat file is the renders put together: each of them reads
+# in the flat file's order, and the flat file has nothing neither of them
+# says.
+sub both_years {
+  my ($flat, @renders) = @_;
+  my %said;
+
+  foreach my $r (@renders) {
+    my $i = 0;
+    foreach my $line (@$flat) { $i++ if $i < @$r && $line eq $r->[$i] }
+    return 0 if $i < @$r;
+    $said{$_} = 1 foreach @$r;
+  }
+  return !grep { !$said{$_} } @$flat;
+}
+
 my ($fail, $checked) = (0, 0);
 
 for my $v (@versions) {
@@ -133,8 +200,18 @@ for my $v (@versions) {
 
   for my $day (@days) {
     my @flat = do_read("$legacy/Latin/Martyrologium$sfx/$day.txt");
-    my @pool = martyrologium_elogia('Latin', $day);
     $checked++;
+
+    if (leapish($day)) {
+      if (both_years(\@flat, in_years(sub { martyrologium_elogia('Latin', $day) }))) {
+        $same++;
+      } else {
+        $fail++;
+        print "  Latin $day under $name differs\n";
+      }
+      next;
+    }
+    my @pool = martyrologium_elogia('Latin', $day);
 
     if (join("\0", @pool) eq join("\0", @flat)) {
       $same++;
@@ -155,39 +232,6 @@ for my $v (@versions) {
 # it is right that Divino Afflatu no longer shows it.  What must not
 # happen is an entry that no version can reach, which means its key does
 # not exist in the Latin index at all.
-#*** dropped()
-# The text of every entry latin-todo.txt says the schema does not carry.
-#
-# Those keep their text in the language that prints them and no longer
-# render, because the Latin index decides what renders and they have no
-# key in it.  They are the printed books' own furniture: a calendar
-# line, a date heading, a leader-dot; so the flat file they came from
-# still has them and this check has to know they are gone on purpose.
-sub dropped {
-  my @langs = @_;
-  my %out;
-  my $todo = "$FindBin::Bin/latin-todo.txt";
-  return %out unless -e $todo;
-
-  foreach my $line (do_read("$todo")) {
-    next unless $line =~ /^-\s*(\d\d-\d\d)\s+(\S+)/;
-    my ($day, $key) = ($1, $2);
-
-    foreach my $lang (@langs) {
-      my $f = "$datafolder/$lang/Martyrologium/$day.txt";
-      next unless -e $f;
-      my ($in_section, @body);
-
-      foreach my $l (do_read($f)) {
-        if ($l =~ /^\[([^\]]+)\]/) { $in_section = ($1 eq $key); next }
-        push @body, $l if $in_section;
-      }
-      $out{$lang}{norm($_)} = 1 foreach grep {/\S/} @body;
-    }
-  }
-  return %out;
-}
-
 my @langs;
 opendir(my $root, $datafolder) or die "cannot read $datafolder";
 
@@ -196,7 +240,6 @@ for my $name (sort readdir $root) {
   push @langs, $name if -d "$legacy/$name/Martyrologium";
 }
 closedir $root;
-my %dropped = dropped(@langs);
 
 for my $lang (@langs) {
   my $lost = 0;
@@ -207,9 +250,11 @@ for my $lang (@langs) {
     $checked++;
     my %new;
 
-    for my $v (@versions) {
+    for my $v (@reach) {
       $version = $v->[0];
-      $new{norm($_)} = 1 foreach martyrologium_elogia($lang, $day);
+      my @renders =
+        leapish($day) ? in_years(sub { martyrologium_elogia($lang, $day) }) : ([martyrologium_elogia($lang, $day)]);
+      $new{norm($_)} = 1 foreach map {@$_} @renders;
     }
 
     for my $raw (do_read($f)) {
@@ -219,8 +264,8 @@ for my $lang (@langs) {
       # a heading line the renderer rewords when nothing above it is the
       # same day it speaks of (_unsame in specprima.pl)
       next if $new{norm(main::_unsame($raw, $lang))};
-      next if $dropped{$lang}{$line};
       next if covered($line, \%new);
+      next if in_rubric($line, \%new);
       $lost++;
       print "  $lang $day: $line\n" if $lost <= 3;
     }

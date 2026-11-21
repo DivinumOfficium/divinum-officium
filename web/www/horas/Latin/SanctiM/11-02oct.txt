@@ -1,0 +1,53 @@
+@Sancti/11-02oct
+
+[Rule]
+@Sancti/11-02oct:: s/9 lect/3 lect/
+
+[Ant Matutinum]
+@Sancti/11-01::1 s/;;\d+//
+;;
+;;
+;;
+;;
+;;
+@Sancti/11-01::2 s/;;\d+//
+;;
+;;
+;;
+;;
+;;
+
+[Lectio1]
+@Sancti/11-02oct:Lectio4: s/^!.*/!Ex eadem Homilia 70/m
+(sed rubrica tridentina)
+@Sancti/11-02oct:Lectio4
+
+[Responsory1]
+@Sancti/11-01:Responsory1
+(sed feria 3 aut feria 6)
+@Sancti/11-01:Responsory5
+(sed feria 4 aut feria 7)
+@SanctiM/11-01:Responsory9
+
+[Lectio2]
+@Sancti/11-02oct:Lectio5
+
+[Responsory2]
+@Sancti/11-01:Responsory2
+(sed feria 3 aut feria 6)
+@Sancti/11-01:Responsory6
+(sed feria 4 aut feria 7)
+@SanctiM/11-01:Responsory10
+
+[Lectio3]
+@Sancti/11-02oct:Lectio6
+
+[Responsory3]
+@Sancti/11-01:Responsory3
+(sed feria 3 aut feria 6)
+@Sancti/11-01:Responsory7
+(sed feria 4 aut feria 7)
+@SanctiM/11-01:Responsory11
+
+[MM Capitulum]
+@CommuneM/C3

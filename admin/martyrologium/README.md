@@ -7,7 +7,8 @@ keys, so the columns line up entry for entry and a version rule like
 
 An entry a language has not translated is filled from the reader's
 fallback language. If nobody in that chain has it, it is left out rather
-than shown in Latin.
+than shown in Latin. An entry the Latin has no text for only shows in
+the language that has it.
 
 **If you are adding or fixing a translation, you only ever supply words.**
 Order, and which versions have what, come from the Latin.
@@ -48,6 +49,10 @@ cut them into days.
 The import keeps a copy of your files under
 `obsolete/martyrologium-source`, matches each line against the Latin, and
 gives it that Latin key. Lines it cannot match keep a key of their own.
+Only keys in the Latin index are printed, so such a line shows only if
+you add its key to the Latin (an `@:Key` line in the index and an empty
+`[Key]` section), or tag it: `[Key] (dioecesis Angliae)` for a local
+calendar, `[Key] (rubrica Cisterciensis)` for a Cistercian entry.
 To redo a language already in the tree, point `--src` at its files under
 `obsolete/martyrologium-source` and pass `--replace`.
 
@@ -74,6 +79,39 @@ Latin's index, which is what keeps the columns together.
 Values are the lines verbatim. A leading `=` escapes a line that would
 otherwise read as section grammar (`=_` is a literal `_`, `=` alone is a
 blank line, and a line opening with `(` needs it too).
+
+## Syntax at a glance
+
+In any language file:
+
+```
+[Key]                     the entry's text, in every version
+[Key] (rubrica 1960)      this text instead, in versions whose name has 1960
+                          ("aut" is "or": rubrica 1888 aut rubrica 1906)
+[Key] (rubrica 1906)      left empty: those versions print nothing here
+[Key]                     left empty next to an older version's text: later
+                          versions show the older text until it is translated
+@:Key                     in [Titulus]: announce that entry in the heading
+@:Other                   as an entry's text: said already inside [Other],
+                          so print nothing here
+@:Titulus                 as an entry's text: said already in the heading
+@Martyrologium/MM-DD:Key  as an entry's text: use the text from that day
+[Key] (dioecesis Angliae) an entry of a local calendar, with no Latin key:
+                          shown where this file puts it, for readers of
+                          that diocese, or on the general calendar while
+                          the settings don't offer that diocese
+[Key] (rubrica Cisterciensis)
+                          with no Latin key: a Cistercian entry, shown
+                          where this file puts it in the Cistercian versions
+```
+
+In the Latin `[Martyrologium]` list only:
+
+```
+@:Key                     the day has this entry, in this place
+(rubrica 1960 omittitur)  on the line under it: but not in these versions
+(rubrica 1960 dicitur)    on the line above it: only in these versions
+```
 
 ## The five things you can write
 
@@ -147,8 +185,27 @@ So instead of a translation, write where it was already said:
 
 That entry then prints nothing and nothing is filled in for it.
 
+If your book *also* has the saint on another day, point at the Latin's
+day instead of copying the text. The Latin needs an empty key for it on
+that day. Example (Spanish 09-25):
+
+```
+[Vincentii-Strambi]
+@Martyrologium/01-01:Vincentii-Strambi
+```
+
+If it was said in the day's heading, write `@:Titulus`.
+
 **5. Nothing.** Leaving a key out is fine and normal — the column falls
 back. Only write a note (4) when your book has already said it elsewhere.
+
+To print nothing for an entry in some versions, leave that version's
+section empty:
+
+```
+[Key] (rubrica 1888 aut rubrica 1906)
+
+```
 
 ## Keys
 
@@ -163,30 +220,86 @@ Entries naming nobody are keyed by number and kind
 **One saint, one key.** If you find the same saint under two keys on a
 day, that is a bug: the two should be one, or one should be a note (4).
 
-## latin-todo.txt
+**Use the Latin's day.** If your book has a saint on a different day
+from the Latin, put the text under the Latin's key on the Latin's day,
+and don't keep a copy on your book's day. A different notice (a feast
+kept that day, "mention is made upon the 24th") stays where it is.
 
-An elogium a translation has and the Latin has not still gets a Latin key
-so that it lines up and renders; its Latin section is left empty until
-someone writes the Latin. `latin-todo.txt` is the list of those, with the
-text of each so it can be read:
+**Cistercian-only entries.** They need nothing in the Latin. Tag the
+section in your language and it shows in the Cistercian versions, where
+your file puts it:
 
 ```
- 07-04 Procopii-Abbatis   # Bohemice: Svatého Prokopa, opata...
--01-01 Fiesta-Santisimo   # Espanol: Fiesta del Santísimo Nombre... 2ª cl. Blanco
+[Alberici-Cisterciensis] (rubrica Cisterciensis)
+V Citeaux ve Francii svatý Alberich...
 ```
 
-The first character is the decision. A space means the Latin ought to
-carry it. A `-` means it is not an elogium at all — a calendar line, a
-date heading, the leader-dot the Polish book prints where it omits an
-entry — and it stays where it is without rendering. A `<` means the line
-is not an entry but the rest of the one above it, and is joined back on.
+**Instructions are not entries.** "Kneel and say the Ave" and the like
+go inside the entry they follow, on their own line, as a rubric:
 
-`latin_todo.pl --apply` reads this file rather than its own opinion, so a
-wrong call is fixed by changing one character.
+```
+Narození Nejblahoslavenější vždy Panny a Bohorodičky Marie. †
+/:Stoupneme si a pomodlíme se skloněni potichu AVE MARIA.:/
+```
 
-**Filling one in is the whole job:** write the Latin into its empty
-section. Nothing else has to change, because every language already names
-it.
+## The older books
+
+| Versions | Rubric | Book |
+|---|---|---|
+| Tridentine 1570, Monastic 1617 | `rubrica 1570 aut rubrica 1617` | 1584 martyrology (1585 and 1589 printings) |
+| Tridentine 1888, Tridentine 1906 | `rubrica 1888 aut rubrica 1906` | 1902 Rome edition; Bute's English translates it |
+
+To make an older version match its book, in the Latin:
+
+- **Not in the book:** add `(rubrica 1570 aut rubrica 1617 omittitur)`
+  under the index line.
+- **Different wording:** add `[Key] (rubrica 1888 aut rubrica 1906)`
+  with the book's words.
+- **On a different day in the book:** omit it on the modern day, and on
+  the book's day refer to it, putting any different wording under the
+  modern key:
+
+```
+(rubrica 1570 aut rubrica 1617 aut rubrica 1888 aut rubrica 1906 dicitur)
+@Martyrologium/01-17:Juliani
+```
+
+- **Only in the book:** give it its own key, said only under the rubric.
+
+In a translation of an older book (such as Bute's English), put its
+text under the same rubric, `[Key] (rubrica 1888 aut rubrica 1906)`.
+Then:
+
+- If that text is still right for the modern versions, also add an
+  empty `[Key]`. Modern versions show the old text until someone
+  translates the modern one.
+- If it is wrong for them ("on the morrow", a feast on another day),
+  leave the empty `[Key]` out. Modern versions then fall back.
+
+An older version never shows text from a newer book.
+
+The files in `obsolete/martyrologium-source/Latin/Martyrologium1570` are
+a record of what 1570 shows, so `verify.pl` notices when it changes.
+
+## Leap years
+
+In a leap year, 24 February reads `02-29.txt` and 25-29 February read
+the file of the day before, so Matthias falls on the 25th by himself.
+
+For text that depends on the year, use `anno bissextili` (leap year) or
+`anno communi` (other years):
+
+```
+@:Matthiae-2
+(anno bissextili omittitur)
+```
+
+`verify.pl` checks such days in both kinds of year. To run the audit for
+a leap year:
+
+```
+perl -e 'our $year = 2028; $0 = "admin/martyrologium/audit.pl"; do "./admin/martyrologium/audit.pl"'
+```
 
 ## Names
 
@@ -207,8 +320,6 @@ split_months.pl         monthly files -> day files
 import_translation.pl   day files, or a month or year a day to a page
                         (.txt or .docx) -> the language's Martyrologium folder
 verify.pl               nothing renders differently than it should
-latin_todo.pl           what the Latin owes; also joins wrapped entries
-latin-todo.txt          which entries are elogia and which are not
 namelex/                name lists, one per language
 internal/selftest.pl    the rendering rules, on a made-up language
 ```

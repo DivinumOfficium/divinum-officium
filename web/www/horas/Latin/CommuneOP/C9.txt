@@ -1,0 +1,89 @@
+@Commune/C9
+
+[Rule]
+@Commune/C9
+Omit Invitatorium
+
+[Oratio]
+!In die obitus seu depositionis
+_
+!Pro Summo Pontifice
+v. Deus, qui inter summos sacerdótes fámulum tuum N. ineffábili tua dispositióne connumerári voluísti: præsta, quæsumus, ut, qui unigéniti Filii tui vices in terris gerébat, sanctórum tuórum Pontíficum consórtio perpétuo aggregétur.
+$Per eumdem
+_
+!Pro episcopo aut sacerdote
+v. Deus, qui inter apostólicos sacerdótes fámulum tuum N. pontificáli (vel sacerdotáli) fecísti dignitáte vigére, præsta, quæsumus, ut eórum quoque perpétuo aggregétur consórtio.
+$Per Dominum
+_
+!Pro uno defuncto
+v. Inclína, Dómine, aurem tuam ad preces nostras, quibus misericórdiam tuam súpplices deprecámur: ut ánimam fámuli tui N., quam de hoc sæculo migráre jussísti, in pacis ac lucis regióne constitúas, et Sanctórum tuórum júbeas esse consórtem.
+$Per Dominum
+_
+!Pro una defuncta
+v. Quæsumus, Dómine, pro tua pietáte miserére ánimæ fámulæ tuæ N.: et a contágiis mortalitátis exútam, in ætérnæ salvatiónis partem restitue.
+$Per Dominum
+_
+!Pro patre vel matre tantum
+v. Deus, qui nos patrem et matrem honoráre præcepísti, miserére cleménter ánimæ patris mei (vel matris meæ): eiúsque peccáta dimitte, meque eum (vel eam) in ætérnæ claritátis gáudio fac vidére.
+$Per Dominum
+_
+!In omni anniversario
+_
+!Pro pluribus
+v. Deus indulgentiárum, Dómine, da animábus famulórum famularúmque tuárum, quorum anniversárium depositiónis diem commemorámus, refrigerií sedem, quiétis beatitúdinem et lúminis claritátem.
+$Per Dominum
+_
+!Pro uno vel una
+Deus indulgentiárum, Dómine, da ánimæ fámuli tui N. (vel fámulæ tuæ N.), cujus anniversárium depositiónis diem commemorámus, refrigerií sedem, quiétis beatitúdinem et lúminis claritátem.
+$Per Dominum
+_
+/:Pro Summo Pontifice, episcopo et sacerdote, oratio conveniens ut supra.:/
+_
+!In Officio ordinario
+_
+!Pro defunctis fratribus, sororibus, familiaribus et benefactoribus
+Deus, véniae largitor et humánæ salútis auctor, quæsumus cleméntiam tuam: ut nostræ congregatiónis fratres, soróres, familiáres et benefactóres, qui ex hoc sáeculo transiérunt, beáta María semper Vírgine intercedénte cum ómnibus Sanctis tuis, ad perpétuæ beatitúdinis consórtium perveníre concédas.
+$Per Dominum
+_
+!Pro defunctis in genere
+Fidélium, Deus, ómnium cónditor et redémptor, animábus famulórum famularúmque tuárum remissiónem cunctórum tribue peccatórum: ut indulgéntiam, quam semper optavérunt, piis supplicatió nibus consequántur:
+$Qui vivis
+
+[Nocturn 2 Versum]
+@CommuneCist/C9:Nocturn 3 Versum
+
+[Responsory3]
+@Commune/C9::1-4
+
+[Responsory4]
+@Commune/C9:Responsory5:1-3 s/Hei/Heu/ s/\n\*// s/(in novíssimo)/\n* \u$1/
+@Commune/C9:Responsory5:2 s/.*(in novíssimo)/R. \u$1/
+
+[Responsory5]
+@Commune/C9:Responsory6:1-4
+
+[Responsory6]
+@Commune/C9:Responsory8:s/\n\* (.)/\l$1/ s/; (.)/;\n* \u$1/
+@Commune/C9:Responsory8:1 s/.*; (.)/R. \u$1/
+
+[Responsory8]
+@Commune/C9:Responsory4:1-2
+V. Et non revertétur óculus meus, ut vídeat bona.
+@Commune/C9:Responsory4:4
+
+[R9]
+V. Creatór ómnium rerum, Deus, qui me de limo terræ formásti et mirabíliter próprio sánguine redemísti, corpúsque meum, licet modo putréscat, de sepúlcro fácies in die judícií resuscitári: exáudi, exáudi me, ut ánimam meam in sinu Abrahæ collocári.
+
+[Responsory9]
+@Commune/C9::1
+@Commune/C9::2 s/, \*/:/
+@Commune/C9::5
+@Commune/C9::2 s/, \*.*/:/
+@Commune/C9::3 s/$/ – ~/
+@Commune/C9::2 s/. .*\* //
+@:R9
+@Commune/C9::1 s/$/~/
+@Commune/C9::2 s/\* //g
+
+[Ant 3]
+@CommuneCist/C9:Ant 1

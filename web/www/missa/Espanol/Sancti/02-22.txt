@@ -5,7 +5,7 @@ Cátedra de S. Pedro, Apóstol, en Antioquía
 Cátedra de San Pedro, Apóstol
 
 [Introitus]
-@Commune/C2a
+@Commune/C2
 
 [Oratio Pauli]
 !Commemoratio S. Pauli
@@ -15,6 +15,14 @@ $Per Dominum
 [Oratio Petri]
 Oh Dios, que al entregar a tu Apóstol San Pedro las llaves del reino de los cielos, le otorgaste la potestad pontificia de atar y desatar; concédenos que, con el auxilio de su intercesión, nos libremos de las ataduras de nuestros pecados.
 $Qui vivis
+
+[Oratio]
+@:Oratio Petri
+(deinde dicuntur semper)
+_
+$Oremus
+(sed rubrica 196 omittuntur)
+@:Oratio Pauli
 
 [GradualeP]
 @Commune/Coronatio
@@ -36,6 +44,13 @@ $Per Dominum
 Suplicamos, Señor, que la oración del Apóstol San Pedro recomiende las plegarias y las ofrendas de tu Iglesia; a fin de que el sacrificio que en su honor celebramos nos aproveche para obtener el perdón.
 $Per Dominum
 
+[Secreta]
+@:Secreta Petri
+(deinde dicuntur semper)
+_
+(sed rubrica 196 omittuntur)
+@:Secreta Pauli
+
 [Postcommunio Pauli]
 !Por S. Pablo
 @Sancti/01-25:Postcommunio Pauli
@@ -43,3 +58,11 @@ $Per Dominum
 [Postcommunio Petri]
 Alégrenos, Señor, el don ofrecido; para que, así como te proclamamos admirable en tu Apóstol Pedro, así por él recibamos la abundancia de tu indulgencia. 
 $Per Dominum
+
+[Postcommunio]
+@:Postcommunio Petri
+(deinde dicuntur semper)
+_
+$Oremus
+(sed rubrica 196 omittuntur)
+@:Postcommunio Pauli

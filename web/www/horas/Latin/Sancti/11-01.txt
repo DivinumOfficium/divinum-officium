@@ -113,11 +113,16 @@ Amen.
 [Doxology] (rubrica divino et mense 10 et feria 2)
 @Sancti/10-DU
 
-[Ant 1]
+[Ant 1_]
 Ángeli, * Archángeli, Throni et Dominatiónes, Principátus et Potestátes, Virtútes cælórum, Chérubim atque Séraphim, Patriárchæ et Prophétæ, sancti legis Doctóres, Apóstoli, omnes Christi Mártyres, sancti Confessóres, Vírgines Dómini, Anachorítæ, Sanctíque omnes, intercédite pro nobis.
 
-[Ant 1] (rubrica cisterciensis)
+[Ant 1C]
 Salvátor mundi * salva nos omnes: sancta Dei Génitrix, Virgo semper María, ora pro nobis: précibus quoque sanctórum Apostolórum, Mártyrum et Confessórum, atque sanctárum Vírginum supplíciter pétimus, ut a malis ómnibus eruámur, bonísque ómnibus nunc et semper pérfrui mereámur.
+
+[Ant 1]
+@:Ant 1_
+(sed rubrica cisterciensis)
+@:Ant 1C
 
 [Oratio]
 Omnípotens sempitérne Deus, qui nos ómnium Sanctórum tuórum mérita sub una tribuísti celebritáte venerári: quǽsumus; ut desiderátam nobis tuæ propitiatiónis abundántiam, multiplicátis intercessóribus, largiáris.
@@ -229,10 +234,6 @@ Nec mirum est, quod dantur præcépta majóra propter regnum cælórum, et minó
 [Lectio9]
 Quid ergo dicit? Beáti páuperes spíritu: quóniam ipsórum est regnum cælórum. Légimus scriptum de appetitióne rerum temporálium: Omnia vánitas, et præsúmptio spíritus. Præsúmptio autem spíritus, audáciam et supérbiam signíficat. Vulgo étiam magnos spíritus supérbi habére dicúntur: et recte, quandóquidem spíritus étiam ventus vocátur. Unde scriptum est: Ignis, grando, nix, glácies, spíritus procellárum. Quis vero nésciat supérbos inflátos dici, tamquam vento disténtos? Unde est étiam illud Apóstoli: Sciéntia inflat, cáritas vero ædíficat. Quaprópter recte hic intellegúntur páuperes spíritu, húmiles et timéntes Deum, id est, non habéntes inflántem spíritum.
 &teDeum
-
-[Versum 0]
-V.  Oráte pro nobis, omnes Sancti Dei.
-R. Ut digni eficiámur promissiónibus Christi.
 
 [Ant Laudes]
 @:Ant Vespera

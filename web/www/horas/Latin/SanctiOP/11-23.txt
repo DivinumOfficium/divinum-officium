@@ -1,0 +1,40 @@
+@Sancti/11-23
+
+[Responsory1]
+R. Orémus omnes ad Dóminum Jesum Christum, dixit beátus Clemens, ut confessóribus suis fontis venas apériat:
+* Ut de beneficiis ejus gratulémur.
+V. Qui percússit in desérto Sina petram, et fluxérunt aquæ in abundántia, ipse nobis láticem affluéntem impertiátur.
+R. Ut de beneficiis ejus gratulémur.
+
+[R2V]
+V. Cumque oratiónem complésset, et hinc inde circumspíceret, vidit supra montem Agnum stantem.
+
+[Responsory2]
+@Sancti/11-23:Responsory1o:1-2
+@:R2V
+@Sancti/11-23:Responsory1o:4
+
+[R3V]
+V. Hoc, Dómine, ad laudem et glóriam nóminis tui fieri volúisti.
+
+[Responsory3]
+@Sancti/11-23:Responsory3o:1-2 s/\n\* (.)/\l$1/ s/(.*,) (.)/$1\n* \u$2/
+@:R3V
+@Sancti/11-23:Responsory3o:2 s/.*, (.)/R. \u$1/
+
+[Versum 2]
+@CommuneOP/C2:Versum 2
+
+[Ant 2]
+Orémus omnes ad Dóminum Jesum Christum, ut confessóribus suis fontis venas apériat.
+
+[Evangelium]
+Secúndum Matthæum
+!Cap. 24
+In illo témpore: Dixit Jesus discípulis suis: Vigiláte, quia nescítis qua hora Dóminus vester ventúrus sit. Illud autem scitóte quóniam, si sciret paterfamilias qua hora fur ventúrus esset, vigiláret útique et non síneret pérfodi domum suam. Tu autem.
+
+[Ant Vespera 3]
+@Sancti/11-23:Ant Vespera:1 s/;;.*/;;109;111;112;115;125/
+
+[Ant 3]
+Invenérunt in modum templi marmórei habitáculum a Deo parátum.

@@ -109,7 +109,7 @@ sub geteaster {
 # TODO: add robustness & input validation test
 #
 # Given the purpose of this application, we only need to implement the Gregorian leap year rules,
-# meaning this function is to be used for years from 1582 onward.
+# meaning that this function is to be used for years from 1582 onward.
 # The Gregorian rules are:
 # - Every year that is exactly divisible by 4 is a leap year, except for years that are exactly divisible by 100,
 # but these centurial years are leap years if they are exactly divisible by 400.
@@ -120,11 +120,23 @@ sub leapyear {
 }
 
 #*** day_of_week($day, $month, $year)
-# day of week
+# day of week (0 = Sunday .. 6 = Saturday); returns undef for invalid dates.
 sub day_of_week {
   my ($day, $month, $year) = @_;
 
-  return undef unless $day && $month && $year > 0;
+  return undef
+    unless defined $day && defined $month && defined $year
+    && !ref($day) && !ref($month) && !ref($year)
+    && $day =~ /\A[0-9]+\z/
+    && $month =~ /\A[0-9]+\z/
+    && $year =~ /\A[0-9]+\z/
+    && $year > 0
+    && $month >= 1 && $month <= 12;
+
+  my @month_lengths = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+  $month_lengths[1]++ if leapyear($year);
+  return undef if $day < 1 || $day > $month_lengths[$month - 1];
+
   ($year * 365 + int(($year - 1) / 4) - int(($year - 1) / 100) + int(($year - 1) / 400) - 1 + date_to_ydays(@_)) % 7;
 }
 

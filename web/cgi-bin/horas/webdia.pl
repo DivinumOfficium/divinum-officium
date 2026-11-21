@@ -978,23 +978,36 @@ sub bottom_links_menu {
 #*** html_dayhead($head, $subhead)
 # return day headline in html
 sub html_dayhead {
-  my ($head, $subhead) = @_;
+  my ($head, $subhead, $ordoInfo) = @_;
 
-  my $output = setfont(liturgical_color($head), $head);
+  my $output;
+
+  if ($head =~ s/ ~ (.*)//) {
+    $output = setfont(liturgical_color($head), $head)
+      . "&emsp;<SPAN STYLE=\"font-size:82%;\"><SPAN STYLE=\"color:maroon;\">$1</SPAN></SPAN>";
+  } else {
+    $output = setfont(liturgical_color($head), $head);
+  }
 
   if ($subhead) {
-    my ($pre, $main) = split(/: /, $subhead, 2);           # Split the pre-position from office title
-    my ($main, $vespera) = split(/\<br\/\>/, $main, 2);    # Split any Vespers information
-    $main =~ s/\(Scriptura ut in\: (.*)\)//;               # Save any Scripture transfer information
-    my $scripturaUt = $1;
+    my ($pre, $main) = split(/: /, $subhead, 2);    # Split the pre-position from office title
     $output .= "<br/>\n<I><SPAN STYLE=\"font-size:82%;\"><SPAN STYLE=\"color:maroon;\">$pre";
     $output .= ":</SPAN> " . setfont(liturgical_color($main, ''), $main) if $main;
-    $output .= "<br/><SPAN STYLE=\"color:maroon;\">$vespera<\SPAN>" if $vespera;
-    $output .=
-      "<br/><SPAN STYLE=\"color:maroon;\">Scriptura ut in <\SPAN>"
-      . setfont(liturgical_color($scripturaUt, ''), $scripturaUt)
-      if $scripturaUt && $hora eq 'Matutinum';
     $output .= "</SPAN></I>\n";
+  }
+
+  if ($ordoInfo) {
+    $output .= "<br/>\n<I><SPAN STYLE=\"font-size:82%;\">";
+    my @ordoInfo = split("\n", $ordoInfo);
+
+    foreach my $oI (@ordoInfo) {
+      if ($oI =~ s/\:(.*)//) {
+        $output .= "<SPAN STYLE=\"color:maroon;\">$oI:</SPAN>" . setfont(liturgical_color($1), $1) . "<br/>";
+      } else {
+        $output .= "<SPAN STYLE=\"color:maroon;\">$oI</SPAN><br/>";
+      }
+    }
+    $output =~ s/(?:<br\/>)?$/<\/SPAN><\/I>/s;
   }
   $output =~ s/\s\&\s/ &amp; /;    # HTML - ampersand
   $output;
@@ -1094,7 +1107,7 @@ sub expand {
   # Make popup link if we shouldn't expand.
   if (
     $sigil ne '$rubrica '
-    && ($expand eq 'propria'
+    && ( ($expand eq 'propria' && $line !~ /Amen|Oremus/)
       || ($expand eq 'psalteria' && ($line =~ /^(?:[A-Z](?!men|remus)|pater_noster)/)))
   ) {
     $line =~ s/ solemnis// if $lang eq 'Latin-gabc';

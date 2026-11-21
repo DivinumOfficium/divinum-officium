@@ -2,16 +2,17 @@
 Séptimo Kaléndas Mártii
 
 [Martyrologium]
-
 @:Matthiae
-(rubrica 1955 aut rubrica 1960 aut rubrica Newcal omittitur)
+(anno communi aut rubrica 1955 aut rubrica 1960 aut rubrica Newcal omittitur)
 
 @:Matthiae-2
-(rubrica 1955 aut rubrica 1960 aut rubrica Newcal omittitur)
+(anno bissextili aut rubrica 1955 aut rubrica 1960 aut rubrica Newcal omittitur)
 
 @:Petri-Damiani
+(rubrica 1570 aut rubrica 1617 omittitur)
 
 @:Polycarpi
+(rubrica 1570 aut rubrica 1617 aut rubrica 1888 aut rubrica 1906 omittitur)
 
 @:Sireni
 
@@ -31,20 +32,17 @@ Séptimo Kaléndas Mártii
 
 @:Milburgis
 
-(rubrica 1960 aut rubrica Newcal dicitur)
+(rubrica 1960 et anno bissextili aut rubrica Newcal et anno bissextili dicitur)
 @:Elogium-7
 
 @:In-Bissextili
-(rubrica 1960 aut rubrica Newcal omittitur)
-
-(rubrica 1570 dicitur)
-@:Matthiae-3
+(anno communi aut rubrica 1960 aut rubrica Newcal omittitur)
 
 @:Matthiae-Item
-(rubrica 1570 omittitur)
+(anno communi omittitur)
 
 @:Secunda-Sexto
-(rubrica 1960 aut rubrica Newcal omittitur)
+(anno communi aut rubrica 1960 aut rubrica Newcal omittitur)
 
 [Matthiae]
 /:In anno Bissextili omittitur: Vigília sancti Matthíæ Apóstoli; quia transfertur in sequentem diem, quæ est 24.:/
@@ -54,6 +52,9 @@ Vigília sancti Matthíæ Apóstoli.
 
 [Petri-Damiani]
 Sancti Petri Damiáni, ex Ordine Camaldulénsi, Cardinális et Epíscopi Ostiénsis, Confessóris et Ecclésiæ Doctóris, qui evolávit in cælum prídie hujus diéi.
+
+[Petri-Damiani] (rubrica 1888 aut rubrica 1906)
+Favéntiæ sancti Petri Damiáni, Cardinális et Epíscopi Ostiénsis, doctrína et sanctitáte célebris, quem Leo Papa Duodécimus Ecclésiæ Doctórem declarávit.
 
 [Polycarpi]
 Smyrnæ natális sancti Polycárpi, qui, beáti Joánnis Apóstoli discípulus, et ab eo ejúsdem civitátis Epíscopus ordinátus, totíus Asiæ Princeps fuit. Póstea, sub Marco Antoníno et Lúcio Aurélio Cómmodo, sedénte Procónsule et univérso pópulo in theátro advérsus eum personánte, igni tráditus est; et, cum ab igne mínime læderétur, martýrii corónam, gládio confóssus, accépit. Cum illo étiam álii duódecim, qui ex Philadélphia vénerant, in eádem Smyrnénsi urbe, martýrio consummáti sunt. Ipsíus tamen Polycárpi festum séptimo Kaléndas Februárii celebrátur.
@@ -93,9 +94,6 @@ _
 
 [In-Bissextili]
 /:In anno Bissextili bis pronuntiatur Sexto Kaléndas Mártii, et eadem Luna, scilicet die 24 et 25.:/
-
-[Matthiae-3] (rubrica 1570)
-/:Prima die, id est 24, hoc modo: Sexto Kalendas Martii. Luna..., quota fuerit.  Deinde: Vigilia sancti Matthiae Apostoli. :/
 
 [Matthiae-Item]
 /:Prima die, id est 24, hoc modo: Sexto Kaléndas Mártii. Luna..., quota fuerit.  Deinde: Vigília sancti Matthíæ Apóstoli. Item commemorátio plurimórum sanctórum Mártyrum et Confessórum, atque sanctárum Vírginum. :/

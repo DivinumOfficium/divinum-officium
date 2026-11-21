@@ -143,7 +143,7 @@ sub abbreviate_entry {
   s/post Octavam/post Oct./;
   s/Augusti/Aug./;
   s/(Septem|Octo|Novem|Decem)bris/${1}b./;
-  s/\&amp; /&/g;
+  s/\&amp;\s?/&/g;
   s/\<.*?\>//g;
   $_;
 }

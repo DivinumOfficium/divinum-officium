@@ -186,7 +186,6 @@ sub minor_reponsory {
     $resp .= "\n_\n" if ($resp);
     $resp .= $capit{'Versum 4'};
   } else {
-    setbuild('Psalterium/Special/Minor Special', $name, 'Capitulum ord');
 
     $name = "Responsory $hora";
     $name .= 'M' if ($version =~ /Monastic/);    # getproprium subsitutes Nocturn 123 Versum only from Commune

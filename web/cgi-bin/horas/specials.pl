@@ -28,9 +28,10 @@ sub specials {
   if ($column == 1) {
     my $r = $w{Rule};
     $r =~ s/\s*$//;
-    $r =~ s/\n/ /sg;
-    $buildscript =
-      setfont($largefont, "$hora $date1") . "\n" . setfont($smallblack, "$dayname[1] ~ $dayname[2] : $r") . "\n";
+    $r =~ s/\n/ : /sg;
+    $r = ":: $r ::" if $r;
+    $buildscript = setfont($largefont, "$hora $date1") . "\n" . setfont($smallblack, "$dayname[1]") . "\n";
+    $buildscript .= setfont($smallblack, "$dayname[2]\n $r") . "\n" if $dayname[2];
   }
 
   my $i = $hora eq 'Laudes' ? ' 2' : $hora eq 'Vespera' ? " $vespera" : '';
@@ -335,7 +336,7 @@ sub specials {
           push(@s, '$ant Salve Regina');
         }
       }
-      push(@s, '&Divinum_auxilium');
+      push(@s, '&Divinum_auxilium') unless $version =~ /^Ordo Praedicatorum/;
       next;
     }
 
@@ -565,6 +566,12 @@ sub getanthoras {
     : 4;
   $ind++ if $ind < 3 && $version =~ /cist/i;    # Cistercian: shift by 1 except ad Nonam
   if (@ant > 3) { $ant = $ant[$ind]; }
+
+  if ($ant) {
+    my %comment = %{setupstring($lang, "Psalterium/Comment.txt")};
+    my @co = split("\n", $comment{"Source"});
+    setbuild("Antiphonas horas", $co[$c], "subst");
+  }
   return ($ant, $c);
 }
 

@@ -1,0 +1,160 @@
+@Commune/C8
+
+[Rule]
+@Commune/C8
+Responsory Breve cum Alleluja
+
+[Ant Vespera]
+@Commune/C8:Ant 1
+
+[Responsory Vespera 1]
+@CommuneM/C8:Responsory4:1-2
+@Commune/C8:Responsory6:3
+@CommuneM/C8:Responsory4:4
+&Gloria
+@CommuneM/C8:Responsory4:2 s/.*, (.)/R. \u$1/
+
+[Invit]
+Exsultémus Dómino Regi summo, * Qui suum sanctificávit tabernáculum. (Allelúja.)
+
+[AM8]
+Domum istam prótege, Dómine: et Angeli tui custódiant muros ejus.;;95
+
+[Ant Matutinum]
+@Commune/C8::1
+@Commune/C8::5 s/;;86/;;45/
+@CommuneCist/C8::12 s/;;98/;;47/
+@Commune/C8::4
+@Commune/C8::6 s/;;87/;;84/
+@Commune/C8::2 s/;;45/;;86/
+@Commune/C8::7
+@:AM8
+@Commune/C8:Responsory2:1 s/R. // s/.$/.;;96/
+
+[Lectio1]
+@Commune/C8::1-6
+
+[R1V]
+V. Obtulérunt sacrificium super altáre Dómini: et cecidérunt in fácies suas et adoravérunt eum.
+
+[Responsory1]
+@Commune/C8::1-2
+@:R1V
+@Commune/C8::4
+
+[Lectio2]
+@Commune/C8::1 s/6-9/5-6/
+@Commune/C8:Lectio1:7
+@Commune/C8::2
+
+[Responsory2]
+@Commune/C8::1-2 s/\n\*// s/(.*, )(\S+ \S+:)/$1\n* \u$2/
+@Commune/C8::3
+@Commune/C8::2 s/.*, (\S+ \S+:)/R. \u$1/
+
+[Lectio3]
+@Commune/C8:Lectio2:!2 s/6-/7-/
+
+[R3V]
+@Commune/C8:Ant Matutinum:5 s/^/V. / s/\* // s/et dixit.*/et ait./
+
+[Responsory3]
+@Commune/C8:Responsory6:1-2
+@:R3V
+@Commune/C8:Responsory6:4
+&Gloria
+@Commune/C8:Responsory6:4 :s/.*, (.)/R. \u$1/
+
+[Responsory4]
+@Commune/C8:Responsory3
+
+[Lectio5]
+@Commune/C8:Lectio5:s/.* (?=Et ídeo)// s/$/~/
+@Commune/C8:Lectio6:s/Si /Qui / s/a divíno.*humíliat/humíliter/
+
+[R5V]
+V. Mane surgens Jacob votum vovit Dómino, et dixit.
+
+[Responsory5]
+@Commune/C8::1-2 s/\n\* (\S+) (.)/$1\n* \u$2/
+@:R5V
+@Commune/C8::2 s/\* \S+ (.)/R. \u$1/
+
+[Lectio6]
+Si ad mensam cujusque potentis nemo praesumit cum vestibus inquinatis accedere, quanto magis a convivio aeterni Regis, id est ab altari Domini, debet se unusquisque invidiae vel odii veneno percussus, iracundiae furore repletus, cum reverentia et humilitate subtrahere? Propter illud, quod scriptum est: Vade prius reconciliari fratri tuo, et tunc veniens offers munus tuum. Et iterum: Amice, quomodo huc intrasti non habens vestem nuptialem?
+
+[R6V]
+@Psalterium/Common/Prayers:Dominus:3-4 s/.\nR. (.)/: \l$1/
+
+[Responsory6]
+@Commune/C8:Responsory4:1-2 s/\n\* (.)/\l$1/ s/dimítte/$&, Dómine,/ s/, Deus/:/ s/(.*), (.*)/$1\n* \u$2/ s/in loco isto\./nómini tuo./
+@:R6V
+@Commune/C8:Responsory4:2 s/(.*), (.*)/R. \u$2/ s/in loco isto/nómini tuo/
+
+[Responsory7]
+@Commune/C8:Responsory8:1-2
+@Commune/C8:Responsory5:3
+@Commune/C8:Responsory8:4
+
+[Lectio8]
+@Commune/C8::s/ Zachǽus.*//
+
+[Responsory8]
+@Commune/C8:Responsory7:1-2 s/\n\* (.)/\l$1/ s/: (.)/:\n* \u$1/
+@Commune/C8:Ant Vespera:1 s/^/V. / s/\* // s/;;.*//
+@Commune/C8:Responsory7:1-2 s/\n\* (.)/\l$1/ s/.*: (.)/R. \u$1/
+
+[Lectio9]
+@Commune/C8:Lectio8:s/.* (?=Zachǽus)/Et ecce vir nómine /
+
+[Responsory9]
+@CommuneM/C8:Responsory4:1-2
+@Commune/C8:Responsory6:3 s/de/quasi de gravi/
+@CommuneM/C8:Responsory4:4
+&Gloria
+@Commune/C8:Responsory6:4 :s/.*, (.)/R. \u$1/
+
+[Versum 0]
+V. Dómine diléxi decórem doums tuæ.
+R. Et locum habitatiónis glóriæ tuæ.
+
+[Ant Laudes]
+@Commune/C8:Ant Vespera:1
+@Commune/C8:Ant Vespera:3
+@Commune/C8:Ant Vespera:2
+@Commune/C8:Ant Vespera:4
+@Commune/C8:Ant Vespera:5
+
+[Ant 2]
+@Commune/C8:Responsory6:1-2 s/R. // s/\n\*//
+
+[Versum Tertia]
+@Commune/C8:Versum 1
+
+[Capitulum Sexta]
+@Commune/C8::1
+@Commune/C8::2 s/.*?: //
+
+[Responsory Breve Sexta]
+@Commune/C8:Responsory Breve Nona
+
+[Versum Sexta]
+@CommuneCist/C8:Nocturn 3 Versum
+
+[Capitulum Nona]
+@TemporaOP/Epi1-2:Lectio3:1-2 s/-15// s/11 //
+
+[Responsory Breve Nona]
+@Tempora/Epi1-0:Responsory2:s/R./R.br./
+&Gloria
+@Tempora/Epi1-0:Responsory2:4
+
+[Versum Nona]
+@Commune/C8:Nocturn 2 Versum
+
+[Ant Vespera 3]
+@Commune/C8:Ant Vespera:1 s/;;.*/;;115;121;126;146;147/
+
+[Ant 3]
+@Commune/C8:Ant 2
+

@@ -1,5 +1,8 @@
 @Sancti/08-21bmv
 
+[Rule]
+@Sancti/08-21bmv:: s/9 lect/3 lect/
+
 [Ant Matutinum]
 @CommuneM/C11:AntMatutinumM:2 s/;;\d+//
 ;;

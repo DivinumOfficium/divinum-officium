@@ -1,0 +1,35 @@
+@Sancti/11-08
+
+[Rule]
+@Sancti/11-08:: s/9 lect/12 lect/
+(rubrica divino)no93
+
+[Lectio5]
+@Sancti/11-08:Lectio4
+
+[Lectio6]
+@Sancti/11-08:Lectio5: s/Ad horum.*//
+
+[Lectio7]
+@Sancti/11-08:Lectio5: s/.*(Ad horum)/$1/ s/$/~/
+@Sancti/11-08:Lectio6: s/Triumphantes.*//
+
+[Lectio8]
+@Sancti/11-08:Lectio6: s/.*(Triumphantes)/$1/ s/$/~/
+
+[Lectio9]
+@Sancti/11-08:Lectio7: s/Nam ex.*//s
+
+[Lectio10]
+@Sancti/11-08:Lectio7:7 s/.*(Nam ex)/$1/s
+
+[Lectio11]
+@Sancti/11-08:Lectio8: s/Ubi autem.*//
+(sed rubrica tridentina)
+@Sancti/11-08:Lectio8
+
+[Lectio12]
+@Sancti/11-08:Lectio8: s/.*(Ubi autem)/$1/
+
+[Evangelium]
+@SanctiM/11-01
