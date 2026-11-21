@@ -125,13 +125,18 @@ sub day_of_week {
   my ($day, $month, $year) = @_;
 
   return undef
-    unless defined $day && defined $month && defined $year
-    && !ref($day) && !ref($month) && !ref($year)
+    unless defined $day
+    && defined $month
+    && defined $year
+    && !ref($day)
+    && !ref($month)
+    && !ref($year)
     && $day =~ /\A[0-9]+\z/
     && $month =~ /\A[0-9]+\z/
     && $year =~ /\A[0-9]+\z/
     && $year > 0
-    && $month >= 1 && $month <= 12;
+    && $month >= 1
+    && $month <= 12;
 
   my @month_lengths = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
   $month_lengths[1]++ if leapyear($year);

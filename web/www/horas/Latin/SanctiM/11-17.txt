@@ -1,0 +1,30 @@
+@Sancti/11-17
+
+[Rule] (rubrica 1617)
+vide C4;
+12 lectiones
+
+[Lectio5]
+@Sancti/11-17:Lectio4: s/Item.*//
+
+[Lectio6]
+@Sancti/11-17:Lectio4: s/.*(Item)/$1/ s/$/~/
+@Sancti/11-17:Lectio5: s/\, múltaque.*/./
+
+[Lectio7]
+@Sancti/11-17:Lectio5: s/.*(múltaque)/Multa/
+
+[Lectio8]
+@Sancti/11-17:Lectio6
+
+[Lectio9]
+@Sancti/11-17:Lectio7: s/Unde et.*//s
+
+[Lectio10]
+@Sancti/11-17:Lectio7:7 s/.*(Unde et)/$1/s
+
+[Lectio11]
+@Sancti/11-17:Lectio8
+
+[Lectio12]
+@Sancti/11-17:Lectio9

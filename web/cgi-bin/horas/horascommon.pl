@@ -836,7 +836,7 @@ sub occurrence {
 
         my $tweek = our $monthday =~ /^(\d+)/ ? $1 : $weekname;
 
-        while (!$lnum || $lnum < ($version =~ /monastic/ ? 4 : 3)) {
+        while (!$lnum || $lnum < ($version =~ /monastic/i ? 4 : 3)) {
 
           $lnum++;
           $tw{"Lectio$lnum"} =~ /(?:([\w\s]+?)\n)?(?:\!([\d\s\w-:]+?)\n)?/s;
