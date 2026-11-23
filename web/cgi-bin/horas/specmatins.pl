@@ -1473,7 +1473,7 @@ sub lectiones_ex3_fiunt4 {
   # split 3 lessons into 4
   my @scrips = ();
 
-  for my $l0 (1 .. 3) {
+  for my $l0 (1 .. 4) {
     if ($scrip{"Lectio$l0"} !~ /¶/) {
       my $cc = $scrip{"Lectio$l0"};
       push(@scrips, $cc);
@@ -1719,6 +1719,7 @@ sub resolveTempNat {
 
     my $tfile =
       subdirname('Tempora', $version) . sprintf("Nat%02i", $day) . ($version =~ /Trident/i ? "o.txt" : ".txt");
+    $tfile =~ s/o\.txt/.txt/ if $version =~ /Monastic/i && !-e ($tfile);
     my $t = get_from_directorium('tempora', $version, $tfile);
     $tfile = $t || $tfile;
 

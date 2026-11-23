@@ -805,7 +805,7 @@ sub occurrence {
           && ($saint{Rule} !~ /Lectio1 Quad/i || $tname =~ /Quad(\d|p3\-[3456])/i)
         )
         && exists($scriptura{Lectio1})
-        && $scriptura{Lectio1} !~ /evangelii/i
+        && $scriptura{Lectio1} !~ /evang[eé]lii/i
         && ( $saint{Rank} !~ /\;\;ex /
           || $saint{Rule} =~ /Lectio1 temp/i)
       )
@@ -821,12 +821,12 @@ sub occurrence {
         $tsrank = $tscrip{Rank} || $tscrip{Scriptura};
         $tsrank =~ s/\s*;;.*|\s*$//s;
         $officename[3] .= "R1 de Historia ut in $tsrank\n";
-      } elsif ($ittable || $initia || ($winner =~ /Nat1-0|Nat30/ && $version =~ /Trident/i)) {
+      } elsif ($ittable || $initia || ($winner =~ /Nat1-0|Nat30/ && $version =~ /^Trident/i)) {
         my ($lnum, $incipit, $source, $verbum);
 
         my %tw = $sanctoraloffice ? %scriptura : %tempora;
         %tw = resolveitable(\%tw, $ittable, 'Latin') if $ittable;
-        %tw = resolveTempNat(\%tw, 'Latin', 1, 'none') if $winner =~ /Nat1-0|Nat30/ && $version =~ /Trident/i;
+        %tw = resolveTempNat(\%tw, 'Latin', 1, 'none') if $winner =~ /Nat1-0|Nat30/ && $version =~ /^Trident/i;
 
         my @tsfile = split('~', $ittable);
 
