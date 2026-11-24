@@ -1,0 +1,26 @@
+[Lectio5]
+@Sancti/08-24:Lectio4:s/Když však .*//
+
+[Lectio6]
+@Sancti/08-24:Lectio4:s/.* (?=Když však )// s/$/~/
+@Sancti/08-24:Lectio5:s/Tato skutečnost .*//
+
+[Lectio7]
+@Sancti/08-24:Lectio5:s/.* (?=Tato skutečnost )//
+
+[Lectio8]
+@Sancti/08-24:Lectio6
+(sed rubrica cisterciensis)
+@Sancti/08-24:Lectio6_
+
+[Lectio9]
+@Sancti/08-24:Lectio7:s/Pán se .*//
+
+[Lectio10]
+@Sancti/08-24:Lectio7:s/.* (?=Pán se)//s
+
+[Lectio11]
+@Sancti/08-24:Lectio8:s/.* (?=Co je tedy)//
+
+[Lectio12]
+@Sancti/08-24:Lectio9

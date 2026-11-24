@@ -1,0 +1,8 @@
+[Name]
+Dominika
+
+[Lectio6]
+@Sancti/08-04:Lectio5:s/Vrátil se.*//
+
+[Lectio7]
+@Sancti/08-04:Lectio5:s/.* (?=Vrátil se)//
