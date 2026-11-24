@@ -1,0 +1,12 @@
+@SanctiM/08-04
+
+[Rule]
+vide C5;mtv
+12 lectiones
+in 1 Nocturno Lectiones ex Commune;
+
+[Lectio5]
+@Sancti/08-04:Lectio4:s/Veritátem .*//
+
+[Lectio8]
+@Sancti/08-04:Lectio6:s/Verum, .* (?=in febrem)/Tandem Bonóniæ /

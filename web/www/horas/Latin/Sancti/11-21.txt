@@ -1,8 +1,12 @@
-[Rank]
-In Præsentatione Beatæ Mariæ Virginis;;Duplex majus;;4;;ex C11
+[Officium]
+In Præsentatione Beatæ Mariæ Virginis
 
-[Rank] (rubrica 196)
-In Præsentatione Beatæ Mariæ Virginis;;Duplex;;3;;vide C11
+[Rank]
+;;Duplex majus;;4;;ex C11
+(sed rubrica cisterciensis)
+;;Serm. min.;;5;;ex C11
+(sed rubrica 196)
+;;Duplex;;3;;vide C11
 
 [Rule]
 vide C11;
