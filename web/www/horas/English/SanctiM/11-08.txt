@@ -1,0 +1,9 @@
+[Lectio6]
+@Sancti/11-08:Lectio5: s/O\, when.*//
+
+[Lectio7]
+@Sancti/11-08:Lectio5: s/.*(O\, when)/$1/ s/$/~/
+@Sancti/11-08:Lectio6: s/There triumph.*//
+
+[Lectio8]
+@Sancti/11-08:Lectio6: s/.*(There triumph)/$1/

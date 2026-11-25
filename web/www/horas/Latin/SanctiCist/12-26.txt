@@ -6,14 +6,27 @@
 [Lectio1]
 @Sancti/12-26:Lectio1:s/-6/-4/ s/5 .*//s
 
+[Responsory1]
+@SanctiM/12-26:Responsory11
+
 [Lectio2]
 @Sancti/12-26:Lectio1:2-20 s/1-6/5-7/ s/1 .*5 /5 /s
 @Sancti/12-26:Lectio2:2
+
+[Responsory2]
+@Sancti/12-26:Responsory1:1-2
+V. Cum autem esset plenus Spíritu Sancto, et fide, beátus Stéphanus:
+@Sancti/12-26:Responsory1:4
 
 [Lectio3]
 @Sancti/12-26:Lectio2:1:s/7-10\;7\:54/7-11/
 @Sancti/12-26:Lectio2:3-5
 11 Tunc summisérunt viros, qui dícerent se audivísse eum dicéntem verba blasphémiæ in Móysen et in Deum.
+
+[Responsory3]
+@Sancti/12-26:Responsory2:1-2
+V. Et concurréntes rapuérunt eum, et adduxérunt in concílium:
+@Sancti/12-26:Responsory2:4
 
 [Lectio4]
 !Act. 6:12-15;
@@ -21,19 +34,6 @@
 13 et statuérunt falsos testes, qui dícerent : Homo iste non cessat loqui verba advérsus locum sanctum, et legem:
 14 Audívimus enim eum dicéntem: Quóniam Jesus Nazarénus hic déstruet locum istum, et mutábit traditiónes, quas trádidit nobis Móyses.
 15 Et intuéntes eum omnes qui sedébant in concílio, vidérunt fáciem ejus tamquam fáciem Angeli.
-
-[Responsory1]
-@SanctiM/12-26:Responsory11
-
-[Responsory2]
-@Sancti/12-26:Responsory1:1-2
-V. Cum autem esset plenus Spíritu Sancto, et fide, beátus Stéphanus:
-@Sancti/12-26:Responsory1:4
-
-[Responsory3]
-@Sancti/12-26:Responsory2:1-2
-V. Et concurréntes rapuérunt eum, et adduxérunt in concílium:
-@Sancti/12-26:Responsory2:4
 
 [Responsory4]
 @Sancti/12-26::s/clamávit voce magna/beátus Stéphanus orábat/
@@ -100,8 +100,8 @@ R. Et cum hoc dixísset, obdormívit in Dómino.
 [Responsory12]
 @SanctiOP/12-26:Responsory9:1-4
 
-[Evangelium]
-@Sancti/12-26
-
 [Ant Vespera 3]
 @Sancti/12-26:Ant Laudes
+
+[Evangelium]
+@Sancti/12-26

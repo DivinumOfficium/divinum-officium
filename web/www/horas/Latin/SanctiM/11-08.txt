@@ -15,7 +15,7 @@
 @Sancti/11-08:Lectio6: s/Triumphantes.*//
 
 [Lectio8]
-@Sancti/11-08:Lectio6: s/.*(Triumphantes)/$1/ s/$/~/
+@Sancti/11-08:Lectio6: s/.*(Triumphantes)/$1/
 
 [Lectio9]
 @Sancti/11-08:Lectio7: s/Nam ex.*//s
