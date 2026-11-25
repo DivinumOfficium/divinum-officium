@@ -1,1 +1,17 @@
 @Sancti/12-11
+
+[Rule] (rubrica tridentina)
+vide C4-1;
+12 lectiones
+
+[Lectio5]
+@Sancti/12-11:Lectio4
+
+[Lectio6]
+@Sancti/12-11:Lectio5
+
+[Lectio7]
+@Sancti/12-11:Lectio6: s/Cum.*//
+
+[Lectio8]
+@Sancti/12-11:Lectio6: s/.*(Cum)/$1/

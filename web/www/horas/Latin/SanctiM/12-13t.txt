@@ -1,0 +1,51 @@
+@Sancti/12-13t
+
+[Rule]
+ex C6;
+12 lectiones;
+In 1 Nocturno lectiones ex Commune in 1 loco
+In 3 Nocturno lectiones ex Commune in 2 loco
+
+[Name]
+@Sancti/12-13
+
+[Oratio] (rubrica cisterciensis)
+@Sancti/12-13
+[Lectio5]
+@Sancti/12-13:Lectio4
+
+[Responsory4]
+@Commune/C6:Responsory7
+
+[Responsory5]
+@Commune/C6:Responsory1
+
+[Lectio6]
+@Sancti/12-13:Lectio5
+
+[Responsory6]
+@Commune/C6:Responsory2
+
+[Lectio7]
+@Sancti/12-13:Lectio6:s/ Quam ob.*//
+
+[Responsory7]
+@Commune/C6:Responsory3
+
+[Lectio8]
+@Sancti/12-13:Lectio6:s/.*Quam ob/Quam ob/
+
+[Responsory8]
+@CommuneM/C6:Responsory4
+
+[Responsory9]
+@Commune/C6:Responsory4
+
+[Responsory10]
+@Commune/C6:Responsory5
+
+[Responsory11]
+@Commune/C6:Responsory6
+
+[Responsory12]
+@CommuneM/C6:Responsory7
