@@ -1,0 +1,32 @@
+@Sancti/12-08
+
+[Rule]
+ex C11;
+Psalmi Dominica
+9 lectiones;
+Psalmi Dominica
+Antiphonas horas
+Doxology=NatT
+Responsory Breve cum Alleluja
+
+[Ant Vespera]
+@Sancti/12-08:Ant Vespera:1 s/;;.*//
+
+[Responsory Vespera 1]
+@SanctiM/12-08:Responsory4
+
+[Ant Completorium]
+@CommuneOP/C11
+
+[Ant 41]
+@CommuneOP/C11:Ant 4
+
+[Responsory9]
+@SanctiM/12-08:Responsory4
+
+[Versum 0]
+V. In Conceptióne tua immaculáta, Dei Génetrix Virgo.
+R. Cæli et terra laténtur.
+
+[Ant Vespera 3]
+@Sancti/12-08:Ant Vespera:1 s/;;.*$/;;109;112;121;126;147/
