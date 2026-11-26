@@ -1211,8 +1211,35 @@ sub concurrence {
     }
 
     if (
+      # Rubr. 1960 n. 105: a I. cl. feast of a Saint before a I. cl. Sunday are of the same class:
+      # 2nd Vespers of the feast in their entirety, commemoration of the Sunday
+      # (e.g. the Annunciation before Laetare, St. Joseph before a Sunday of Lent)
+      $version =~ /196/
+      && $rank >= 6
+      && $crank >= 6
+      && $crank > $rank
+      && $sanctoraloffice
+      && !$csanctoraloffice
+      && $cwrank[0] =~ /Dominica/i
+    ) {
+      $vespera = 3;
+      $cvespera = 1;
+      $commemoratio = $cwinner;
+      $dayname[2] = "Commemoratio: $cwrank[0]";
+      $dayname[3] = "Vespera de præcedenti; commemoratio de sequenti";
+      $dayname[2] .= " Dominica" if $cwinner{Rank} =~ /Dominica/i;
+    } elsif (
       # On Saturday, 1st Vespers gets commemorated in Festis I. cl. github #3907
       ($rank >= (($version =~ /19(?:55|6)/ && $version !~ /Barroux/ && $dayofweek < 6) ? 6 : 7) && $crank < 6)
+
+      # Rubr. 1960 nn. 104, 112 a: a I. cl. feast of the Lord before a lesser feast of the Lord:
+      # 2nd Vespers of the former, nothing of the latter (the Epiphany on a Saturday, the Holy Family)
+      || ( $version =~ /196/
+        && $rank >= 6
+        && $crank
+        && $crank < $rank
+        && $winner{Rule} =~ /Festum Domini/i
+        && $cwinner{Rule} =~ /Festum Domini/i)
 
       # Rubr. 1960: on a II. cl Sunday nothing at 1st Vespers in concurrence with a Feast of the Lord
       || ( $version =~ /196/
