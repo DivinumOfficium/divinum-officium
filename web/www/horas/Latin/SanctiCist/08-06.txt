@@ -1,0 +1,28 @@
+@SanctiM/08-06
+
+[Responsory Vespera]
+@Commune/C2:Responsory Breve Tertia
+
+[Responsory2]
+@Sancti/08-06::s/splendénte/splendénti/
+
+[Lectio8]
+@Sancti/08-06:Lectio6:s/(?<=ejus glória lætabátur\.)\s.*//s
+
+[Lectio11]
+@Sancti/08-06:Lectio8:s/^.*?Cum ígitur de/Cum ígitur de/s s/(?<=a melióribus confirmári\.)\s.*//s
+
+[Lectio12]
+@Sancti/08-06:Lectio8:s/^.*?Hoc étiam multo/Hoc étiam multo/s
+
+[Responsory12]
+R. Apud te, Dómine, est fons vitæ,
+* Et in lúmine tuo vidébimus lumen.
+V. Dómine, bonum est no hic esse; si vis, faciámus hic tria tabernácula.
+R. Et in lúmine tuo vidébimus lumen.
+
+[Responsory Laudes]
+R.br. Gloriósus apparuísti * In conspéctu Dómini.
+R. Gloriósus apparuísti * In conspéctu Dómini.
+V. Proptérea decórem índuit te Dóminus.
+R. In conspéctu Dómini.

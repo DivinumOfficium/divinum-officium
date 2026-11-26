@@ -1,0 +1,25 @@
+@SanctiM/08-06
+
+[Responsory Vespera]
+@Commune/C2:Responsory Breve Tertia
+
+[Lectio8]
+@Sancti/08-06:Lectio6:s/(?<=jeho zjevné slávy\.)\s.*//s
+
+[Lectio11]
+@Sancti/08-06:Lectio8:s/^.*?Když tedy/Když tedy/s s/(?<=věcech\.)\s.*//s
+
+[Lectio12]
+@Sancti/08-06:Lectio8:s/^.*?To/To/s
+
+[Responsory12]
+R. U tebe, Hospodine, je pramen života,
+* A ve tvém světle uvidíme světlo.
+V. Pane, dobře, že jsme zde; chceš-li, postavíme zde tři stany.
+R. A ve tvém světle uvidíme světlo.
+ 
+[Responsory Laudes]
+R.br. Slavným ses ukázal * Před tváří Hospodinovou.
+R. Slavným ses ukázal * Před tváří Hospodinovou.
+V. Proto tě Hospodin oděl krásou.
+R. Před tváří Hospodinovou.
