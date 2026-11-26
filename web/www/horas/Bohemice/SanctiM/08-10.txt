@@ -1,0 +1,40 @@
+[AntMatutinumM]
+Blažený Vavřinec * zvolal a řekl: Uctívám svého Boha a pouze jemu sloužím.;;23
+Rozdával, * a dával chudým, jeho spravedlnost trvá na věky věků.;;63
+Tvůj ochránce * jsem já, neboj se. Projdeš-li ohněm, plamen ti neublíží a nebude z tebe ani cítit oheň.;;91
+
+[Ant Matutinum 3N]
+Jestliže pšeničné zrno * nepadne do země a neodumře, zůstane jen ono samotné.
+
+[Lectio5]
+@Sancti/08-10:Lectio4:s/(?<=étiam veræ religiónis)\s.*//s
+
+[Lectio7]
+@Sancti/08-10:Lectio5:s/(?<=óbtinent, vehementióra succédunt\.)\s.*//s
+
+[Lectio8]
+@Sancti/08-10:Lectio6:s/(?<=dum ággeras pœnam\.)\s.*//s
+
+[Responsory4]
+R. Blažený Vavřinec řekl: Přinesl jsem sám sebe za oběť
+* V libou vůni.
+V. Vpravdě se raduji, že mi bylo dáno stát se Kristovou obětí.
+R. V libou vůni.
+
+[Responsory8]
+R. Jáhnu Vavřinci bylo dáno stát se obětí, neboť ani na roštu nezapřel Pána
+* A proto byl shledán obětí chvály.
+V. Když jej položili na rošt, nezapřel Boha, a když jej vystavili ohni, vyznal Krista.
+R. A proto byl shledán obětí chvály.
+
+[Responsory11]
+R. Blažený Vavřinec řekl: Poznej, ubožáku, jak veliká je moc Páně,
+* Neboť tyto žhavé uhlíky mi působí osvěžení místo bolesti.
+V. Hle, ubožáku, z jedné strany jsi mě už upekl. Obrať mě na druhou a jez.
+R. Neboť tyto žhavé uhlíky mi působí osvěžení místo bolesti.
+
+[Responsory12]
+R. Raduji se prostě, neboť dáno mi bylo stát se Kristovou obětí. Když mě obžalovali, nezapřel jsem, a když mě vyslýchali, vyznal jsem Krista.
+* I když mě opékají, vzdávám díky.
+V. Přinesl jsem sám sebe Bohu v oběť, v libou vůni.
+R. I když mě opékají, vzdávám díky.

@@ -1,0 +1,51 @@
+@SanctiM/08-10
+
+[Rule]
+ex C2a;
+12 lectiones
+Psalmi Dominica
+in 3 Nocturno Lectiones ex Commune in 5 loco
+
+[Ant Vespera]
+Vavřinec * vstoupil jako Mučedník, a vyznal jméno Pána Ježíše Krista.
+Vavřinec * vykonal dobré dílo, když znamením kříže slepým navracel zrak.
+Přilnula * duše má k tobě, neboť mé tělo bylo spáleno pro tebe, můj Bože.
+Poslal Pán * svého Anděla, a vysvobodil mě z ohnivých plamenů, a nebyl jsem upálen.
+Já jsem si získal * oběť Bohu ve vůni sladkosti.
+
+[Invit]
+Králi věčnému pojďte se poklonit; * Neboť korunoval svého Mučedníka Vavřince.
+
+[AntMatutinumC]
+Ó Hippolyte, * uvěříš-li v Pána Ježíše Krista, ukážu ti poklady a slíbím ti věčný život.;;63
+Blažený * Vavřinec řekl: Přinesl jsem sám sebe za oběť s libou vůní, alleluja.;;64
+Jáhen * Vavřinec, když byl opékán, nezapřel Hospodine.;;91
+
+[Lectio5]
+@Sancti/08-10:Lectio4:s/Tento člověk, .*//s
+
+[Lectio6]
+@Sancti/08-10:Lectio4:s/.* (?=Tento člověk, )//s
+
+[Lectio7]
+@Sancti/08-10:Lectio5:s/Poroučí, .*//s
+
+[Lectio8]
+@Sancti/08-10:Lectio6:s/Co z toho, .*//s
+
+[Responsory5]
+@Sancti/08-10:Responsory8:1-2
+V. Řekl: Jestliže svá slova potvrdíš skutky, učiním, k čemu mě vybízíš. Blažený Vavřinec mu odpověděl: Dej pouze svůj souhlas:
+@Sancti/08-10:Responsory8:4
+
+[Responsory7]
+@Sancti/08-10:Responsory3:1-2
+V. Katané však nepolevovali, a přisypali žhavé uhlíky pod železný rošt.
+@Sancti/08-10:Responsory3:4
+
+[Responsory9]
+@SanctiM/08-10:Responsory4:s/oběť/oběť Bohu/
+
+[Responsory10]
+@SanctiM/08-10:Responsory8:s/Jáhnu/Jáhnu Kristovu/
+
