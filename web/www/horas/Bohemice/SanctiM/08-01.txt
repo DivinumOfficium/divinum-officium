@@ -1,0 +1,54 @@
+
+[Responsory4]
+@SanctiM/06-29
+
+[Lectio5]
+@Sancti/08-01:Lectio4:s/\. Eudocia řetěz.*//
+
+[Responsory5]
+@Sancti/08-01:Responsory4
+
+[Lectio6]
+@Sancti/08-01:Lectio4:s/.*\. (?=Eudocia řetěz)// s/$/~/
+@Sancti/08-01:Lectio5:s/ Díky .*//
+
+[Responsory6]
+@Sancti/08-01:Responsory5
+
+[Lectio7]
+@Sancti/08-01:Lectio5:s/.* (?=Díky)// s/$/~/
+@Sancti/08-01:Lectio6:s/ Něco .*//
+
+[Responsory7]
+@Sancti/08-01:Responsory6
+
+[Lectio8]
+@Sancti/08-01:Lectio6:s/.* (?=Něco)//
+
+[Responsory8]
+@SanctiM/06-29
+
+[Lectio9]
+@Sancti/08-01:Lectio7:s/ O něm .*//
+
+[Responsory9]
+@Sancti/08-01:Responsory7
+
+[Lectio10]
+@Sancti/08-01:Lectio7:s/.* (?=O něm )//s s/ Po zásluze.*//
+
+[Responsory10]
+@Sancti/08-01:Responsory8
+
+[Lectio11]
+@Sancti/08-01:Lectio7:s/.* (?=Po zásluze)//s s/$/~/
+@Sancti/08-01:Lectio8:s/ Pokud byl .*//
+
+[Responsory11]
+@SanctiM/06-29
+
+[Lectio12]
+@Sancti/08-01:Lectio8:s/.* (?=Pokud byl)//
+
+[Responsory12]
+@SanctiM/06-29

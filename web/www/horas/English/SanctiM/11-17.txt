@@ -1,0 +1,15 @@
+[Lectio5]
+@Sancti/11-17:Lectio4: s/Moreover.*//
+
+[Lectio6]
+@Sancti/11-17:Lectio4: s/.*(Moreover)/$1/ s/$/~/
+@Sancti/11-17:Lectio5: s/\, and.*/./
+
+[Lectio7]
+@Sancti/11-17:Lectio5: s/.*(and)/He/
+
+[Lectio9]
+@Sancti/11-17:Lectio7: s/Mountains.*//s
+
+[Lectio10]
+@Sancti/11-17:Lectio7:7 s/.*(Mountains)/$1/s

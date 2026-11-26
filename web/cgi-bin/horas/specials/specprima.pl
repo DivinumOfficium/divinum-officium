@@ -730,6 +730,19 @@ sub _luna_table {
 }
 
 # finds luna day
+# The martyrology's index letter for the golden number $g in $year's
+# century: the Gregorian epact (Lilius, with Clavius' solar and lunar
+# equations), lettered as the tables letter it -- epact 0 is P, 1-19 are
+# a-u (no j, o), 20-29 are A-N (no I, J, K, L) -- with 25 written R ("F
+# black", 25*) when the golden number is above 11.
+sub _epact_letter {
+  my ($year, $g) = @_;
+  my $c = int($year / 100) + 1;
+  my $epact = (11 * ($g - 1) - int(3 * $c / 4) + int((8 * $c + 5) / 25) + 8) % 30;
+  return 'R' if $epact == 25 && $g > 11;
+  substr('Pabcdefghiklmnpqrstu' . 'ABCDEFGHMN', $epact, 1);
+}
+
 sub _luna_day {
   my ($month, $day, $year) = @_;
 
@@ -748,7 +761,11 @@ sub _luna_day {
   elsif ($year < 2300) {
     $letters4aurea = 'MiAamDdqGgtNkBbnEer';
   } else {
-    main::error('Unreachable');
+
+    # Beyond the printed tables: the index letters of the century from the
+    # Gregorian epact, which gives every letter of the tables above
+    # (1582-2299) when computed for their years.
+    $letters4aurea = join('', map { _epact_letter($year, $_) } 1 .. 19);
   }
 
   my $aur_num = $year % 19 + 1;

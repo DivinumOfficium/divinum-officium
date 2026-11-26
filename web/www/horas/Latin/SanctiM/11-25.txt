@@ -1,0 +1,18 @@
+@Sancti/11-25
+
+[Rule] (rubrica 1617)
+vide C6;
+12 lectiones
+
+[Lectio5]
+@Sancti/11-25:Lectio4
+
+[Lectio6]
+@Sancti/11-25:Lectio5: s/Quam.*//
+
+[Lectio7]
+@Sancti/11-25:Lectio5: s/.*Quam ob rem/Quamobrem/ s/$/~/
+@Sancti/11-25:Lectio6: s/Interim.*//
+
+[Lectio8]
+@Sancti/11-25:Lectio6: s/.*(Interim)/$1/

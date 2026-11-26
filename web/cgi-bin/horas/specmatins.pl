@@ -1473,7 +1473,7 @@ sub lectiones_ex3_fiunt4 {
   # split 3 lessons into 4
   my @scrips = ();
 
-  for my $l0 (1 .. 3) {
+  for my $l0 (1 .. 4) {
     if ($scrip{"Lectio$l0"} !~ /¶/) {
       my $cc = $scrip{"Lectio$l0"};
       push(@scrips, $cc);
@@ -1719,6 +1719,7 @@ sub resolveTempNat {
 
     my $tfile =
       subdirname('Tempora', $version) . sprintf("Nat%02i", $day) . ($version =~ /Trident/i ? "o.txt" : ".txt");
+    $tfile =~ s/o\.txt/.txt/ if $version =~ /Monastic/i && !-e ($tfile);
     my $t = get_from_directorium('tempora', $version, $tfile);
     $tfile = $t || $tfile;
 
@@ -1767,6 +1768,10 @@ sub resolveitable {
   my %w = %$w;
   my (%winit, @file, $lim, $start, $i);
 
+  our (%tempora, %saint);
+
+  my $wRule = $winner =~ /Tempora/ ? $tempora{Rule} : $saint{Rule};
+
   if ($file =~ /\~H$/) {
 
     # Tridentine: Transfer of Historia to Feria only
@@ -1786,12 +1791,12 @@ sub resolveitable {
     my $replace = $file =~ /\~R$/ ? 1 : 0;    # if we have a ~R(eplace) rule
     $file =~ s/~[ABR]$//;                     # remove ~A(fter) or ~B(efore) or ~R(eplace) from the end of the string
     @file = split('~', $file);                # gather the transfered intias
-    $lim = $rule =~ /12 lect/
-      ? 4                                                 # Monastic 3 Nocturns up to 4 transferals
-      : $rule =~ /9 lect/ || $winner =~ /tempora/i ? 3    # Roman 3 Nocturns or Tempora, allow up to 3 transferals
-      : $rule !~ /1 et 2 lect/ ? 2                        # Simplex with single lesson of Saint
-      : 1;                                                # Simplex with 2 lessons for Saint
-    $start = 1;                                           # in general, start at 1
+    $lim = $wRule =~ /12 lect/
+      ? 4                                                  # Monastic 3 Nocturns up to 4 transferals
+      : $wRule =~ /9 lect/ || $winner =~ /tempora/i ? 3    # Roman 3 Nocturns or Tempora, allow up to 3 transferals
+      : $wRule !~ /1 et 2 lect/ ? 2                        # Simplex with single lesson of Saint
+      : 1;                                                 # Simplex with 2 lessons for Saint
+    $start = 1;                                            # in general, start at 1
 
     if ($initia && !$replace)
     {    # if we have an (unreplaced) inita on the day already (so we put the transferred afterwards)
@@ -1825,10 +1830,14 @@ sub resolveitable {
     $lim = 1;      # in general allow 1 transfer and
     $start = 2;    # put the actual days in second place
 
-    if (@file > 1 && !($saint{Rule} !~ /(9|12) lectiones/i && $winner =~ /Sancti/i)) {
-      $lim = 2;
-      $start = 3;
-    } # if there is more than 1 transferal which is not impeded by a Sanctoral office of 3 lections, allow 2 and put the actual day inita at 3
+    if (@file > 1 && !($wRule !~ /(9|12) lectiones/i && $winner =~ /Sancti/i)) {
+
+      # if there is more than 1 transferal which is not impeded by a Sanctoral office of 3 lections,
+      # allow 2 or 3 and put the actual day inita after
+      $lim = $wRule =~ /12 lect/ ? 3 : 2;
+      $lim = (($lim + @file) - abs($lim - @file)) / 2;    # Minimum value function without external lib
+      $start = $lim + 1;
+    }
 
     if (exists($w{'Lectio2'})) {
       %winit = %w;
@@ -1837,7 +1846,7 @@ sub resolveitable {
     }
     $i = 1;
 
-    while ($start < 4) {    # first fill the actual day's inita at their appropriate place
+    while ($start < ($wRule =~ /12 lect/ ? 5 : 4)) {    # first fill the actual day's inita at their appropriate place
       %w = tferifile(\%w, \%winit, $start, $i, $lang);
       $i++;
       $start++;
@@ -1845,7 +1854,7 @@ sub resolveitable {
     $i = 1;
     $start = 1;
 
-    while (@file && $i <= $lim) {    # second, fill the transfers beforehand
+    while (@file && $i <= $lim) {                       # second, fill the transfers beforehand
       $file = shift(@file);
       %winit = %{setupstring($lang, subdirname('Tempora', $version) . "$file.txt")};
       %w = tferifile(\%w, \%winit, $start, 1, $lang);

@@ -1,0 +1,13 @@
+[Lectio5]
+@Sancti/11-12:Lectio4: s/This crime.*//
+
+[Lectio6]
+@Sancti/11-12:Lectio4: s/.*(This crime)/$1/ s/$/~/
+@Sancti/11-12:Lectio5: s/Olympius.*//
+
+[Lectio7]
+@Sancti/11-12:Lectio5: s/.*(Olympius)/$1/ s/$/~/
+@Sancti/11-12:Lectio6: s/By him.*//
+
+[Lectio8]
+@Sancti/11-12:Lectio5: s/.*(By him)/$1/

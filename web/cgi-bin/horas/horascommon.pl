@@ -805,7 +805,7 @@ sub occurrence {
           && ($saint{Rule} !~ /Lectio1 Quad/i || $tname =~ /Quad(\d|p3\-[3456])/i)
         )
         && exists($scriptura{Lectio1})
-        && $scriptura{Lectio1} !~ /evangelii/i
+        && $scriptura{Lectio1} !~ /evang[eé]lii/i
         && ( $saint{Rank} !~ /\;\;ex /
           || $saint{Rule} =~ /Lectio1 temp/i)
       )
@@ -821,12 +821,12 @@ sub occurrence {
         $tsrank = $tscrip{Rank} || $tscrip{Scriptura};
         $tsrank =~ s/\s*;;.*|\s*$//s;
         $officename[3] .= "R1 de Historia ut in $tsrank\n";
-      } elsif ($ittable || $initia || ($winner =~ /Nat1-0|Nat30/ && $version =~ /Trident/i)) {
+      } elsif ($ittable || $initia || ($winner =~ /Nat1-0|Nat30/ && $version =~ /^Trident/i)) {
         my ($lnum, $incipit, $source, $verbum);
 
         my %tw = $sanctoraloffice ? %scriptura : %tempora;
         %tw = resolveitable(\%tw, $ittable, 'Latin') if $ittable;
-        %tw = resolveTempNat(\%tw, 'Latin', 1, 'none') if $winner =~ /Nat1-0|Nat30/ && $version =~ /Trident/i;
+        %tw = resolveTempNat(\%tw, 'Latin', 1, 'none') if $winner =~ /Nat1-0|Nat30/ && $version =~ /^Trident/i;
 
         my @tsfile = split('~', $ittable);
 
@@ -836,7 +836,7 @@ sub occurrence {
 
         my $tweek = our $monthday =~ /^(\d+)/ ? $1 : $weekname;
 
-        while (!$lnum || $lnum < ($version =~ /monastic/ ? 4 : 3)) {
+        while (!$lnum || $lnum < ($version =~ /monastic/i ? 4 : 3)) {
 
           $lnum++;
           $tw{"Lectio$lnum"} =~ /(?:([\w\s]+?)\n)?(?:\!([\d\s\w-:]+?)\n)?/s;
@@ -1211,8 +1211,35 @@ sub concurrence {
     }
 
     if (
+      # Rubr. 1960 n. 105: a I. cl. feast of a Saint before a I. cl. Sunday are of the same class:
+      # 2nd Vespers of the feast in their entirety, commemoration of the Sunday
+      # (e.g. the Annunciation before Laetare, St. Joseph before a Sunday of Lent)
+      $version =~ /196/
+      && $rank >= 6
+      && $crank >= 6
+      && $crank > $rank
+      && $sanctoraloffice
+      && !$csanctoraloffice
+      && $cwrank[0] =~ /Dominica/i
+    ) {
+      $vespera = 3;
+      $cvespera = 1;
+      $commemoratio = $cwinner;
+      $dayname[2] = "Commemoratio: $cwrank[0]";
+      $dayname[3] = "Vespera de præcedenti; commemoratio de sequenti";
+      $dayname[2] .= " Dominica" if $cwinner{Rank} =~ /Dominica/i;
+    } elsif (
       # On Saturday, 1st Vespers gets commemorated in Festis I. cl. github #3907
       ($rank >= (($version =~ /19(?:55|6)/ && $version !~ /Barroux/ && $dayofweek < 6) ? 6 : 7) && $crank < 6)
+
+      # Rubr. 1960 nn. 104, 112 a: a I. cl. feast of the Lord before a lesser feast of the Lord:
+      # 2nd Vespers of the former, nothing of the latter (the Epiphany on a Saturday, the Holy Family)
+      || ( $version =~ /196/
+        && $rank >= 6
+        && $crank
+        && $crank < $rank
+        && $winner{Rule} =~ /Festum Domini/i
+        && $cwinner{Rule} =~ /Festum Domini/i)
 
       # Rubr. 1960: on a II. cl Sunday nothing at 1st Vespers in concurrence with a Feast of the Lord
       || ( $version =~ /196/
