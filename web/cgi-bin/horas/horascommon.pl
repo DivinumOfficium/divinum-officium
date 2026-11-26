@@ -1227,7 +1227,7 @@ sub concurrence {
       $commemoratio = $cwinner;
       $dayname[2] = "Commemoratio: $cwrank[0]";
       $dayname[3] = "Vespera de præcedenti; commemoratio de sequenti";
-      $dayname[2] .= " Dominica" if $cwinner{Rank} =~ /Dominica/i;
+      $dayname[3] .= " Dominica" if $cwinner{Rank} =~ /Dominica/i;
     } elsif (
       # On Saturday, 1st Vespers gets commemorated in Festis I. cl. github #3907
       ($rank >= (($version =~ /19(?:55|6)/ && $version !~ /Barroux/ && $dayofweek < 6) ? 6 : 7) && $crank < 6)
@@ -1350,7 +1350,7 @@ sub concurrence {
       $commemoratio = $cwinner;
       $dayname[2] = "Commemoratio: $cwrank[0]";
       $dayname[3] = "Vespera de præcedenti; commemoratio de sequenti";
-      $dayname[2] .= " Dominica" if $cwinner{Rank} =~ /Dominica/i;
+      $dayname[3] .= " Dominica" if $cwinner{Rank} =~ /Dominica/i;
     } elsif ($flcrank == $flrank) {    # "flattend ranks" are equal => a capitulo
       $commemoratio = $winner;
       %commune =
