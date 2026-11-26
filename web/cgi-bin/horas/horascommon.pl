@@ -2052,6 +2052,7 @@ sub rankname {
     && ($winner !~ /Pasc[07]-[1-6]/ || $dayofweek == 0))
   {
     my $i = $rank;
+    $i = 5 if $version =~ /196/ && $winner =~ /Pasc5-3/;    # II. classis - Vigilia Asc, ranked 4.95 to yield to II. cl. feasts
 
     if ($version =~ /19(?:55|6)/ && $winner !~ /Pasc5-3/ && $latname =~ /feria/i) { $i = 0 }    # 'Feria';
     if ($latname =~ /Sanctæ Fami/i && $version !~ /196/) { $i = 4; }                            # Duplex majus
