@@ -1098,6 +1098,8 @@ sub getrefs {
               $after = '';
             }
             $o = "\$Oremus\n" . $o;
+          } elsif ($o =~ /N\./) {
+            $o = replaceNdot($o, $lang, $name);
           }
 
           # Confessor-Popes have a common Magnificat antiphon at second Vespers.
