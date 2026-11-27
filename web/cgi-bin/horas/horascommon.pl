@@ -1938,7 +1938,7 @@ sub precedence {
         if ($version =~ /Trident|Divino/i) {
 
           # Make Votive Matutinum fully Sanctoral (Duplex majus, 3 Nocturns) irrespective of rank of the day
-          $rule .= "\n" . $version =~ /Monastic/i ? '12' : '9' . ' lectiones';
+          $rule .= "\n" . ($version =~ /Monastic/i ? '12' : '9') . ' lectiones' unless $rule =~ /(?:9|12) lectiones/i;
           $rank = 4.91;
           $duplex = 3;
         } elsif ($version =~ /196/) {
@@ -1946,7 +1946,7 @@ sub precedence {
           # Make Votive behave like I. classis such that we still provide access to the full Commune
           $rank = 6;
           $duplex = 3;
-          $rule .= "\n" . $version =~ /Monastic/i ? '12' : '9' . ' lectiones';
+          $rule .= "\n" . ($version =~ /Monastic/i ? '12' : '9') . ' lectiones' unless $rule =~ /(?:9|12) lectiones/i;
         }
       }
 
