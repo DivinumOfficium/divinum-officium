@@ -1290,7 +1290,7 @@ sub lectio : ScriptFunc {
     } else {
 
       # Contracted legend for commemoratio
-      my $w1 = %w;
+      my %w1 = %w;
       if ($version =~ /newcal/i && !exists($w{Lectio5})) { %w = (columnsel($lang)) ? %commune : %commune2; }
       my $i = 5;
 
