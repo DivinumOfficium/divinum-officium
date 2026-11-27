@@ -330,7 +330,7 @@ sub occurrence {
             && ($version !~ /196/ || $sname !~ /08\-09/))
 
           # Office of All Souls supersedes All Saints at Completorium from 1911 to 1959
-          || ( $version !~ /1960|Trident/
+          || ( $version !~ /196|Trident/
             && $hora =~ /Completorium/i
             && $month == 11
             && $day == 1
