@@ -1926,14 +1926,14 @@ sub StJamesRule {
 }
 
 sub prevdayl1 {
-  my @monthtab = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31.30, 31);
-  if (leapyear($year)) { $month[1] = 29; }
+  my @monthtab = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+  if (leapyear($year)) { $monthtab[1] = 29; }
   my $s = shift;
   my @s = split(',', $s);
   $s = $s[0];
   my $d = $day - 1;
   my $m = $month;
-  if ($day = 0) { $m--; $d = $monthtab[$m - 1]; }
+  if ($d == 0) { $m--; $d = $monthtab[$m - 1]; }
   my $kd = sprintf("%02i-%02i", $m, $d);
   my %w1 = %{setupstring($lang, subdirname('Sancti', $version) . "$kd.txt")};
   my $l = $w1{Lectio1};
